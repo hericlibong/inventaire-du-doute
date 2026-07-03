@@ -16,6 +16,32 @@ récit : les limites du projet sont affichées, pas cachées.
   faux positifs mesuré sur un échantillon vérifié à la main (voir phase 1). Le
   lexique de détection est versionné et public.
 
+## Méthode de vérification du détecteur (phase 1, T4-T5)
+
+La détection est vérifiée sur un échantillon de 206 notices jugées à la main
+par un humain, selon le protocole suivant :
+
+- **Tirage stratifié par famille de marqueur**, reproductible (graine aléatoire
+  fixée à 42, code : `src/build_sample.py`). Les familles rares sont
+  sur-représentées, les familles minuscules prises en entier — un tirage
+  proportionnel n'aurait montré presque que des « attribué à ». Quotas par
+  famille : attribué à 30, ? 25, atelier de 25, école de 20, manière de 15,
+  entourage de 15, genre de 15, suiveur de 10, présumé 4 (exhaustif),
+  d'après 15, copie 10, anciennement attribué 7 (exhaustif),
+  champ Ancienne_attribution 15.
+- **Une ligne = un marqueur sur une notice** (une notice à deux marqueurs peut
+  apparaître deux fois, chaque ligne se juge indépendamment).
+- Le vérificateur voit : un **extrait** fabriqué pour la lecture (fenêtre de
+  ±40 caractères autour du marqueur détecté, troncature signalée par « … »),
+  les **valeurs brutes complètes** des champs concernés (non tronquées), et le
+  lien vers la notice publique sur POP. Trois verdicts possibles :
+  vrai / faux / incertain, avec commentaire libre.
+- **Pondération obligatoire au bilan (T5)** : l'échantillon étant stratifié,
+  le taux de faux positifs global ne sera PAS la moyenne brute des 206 lignes.
+  Il sera calculé par famille, puis pondéré par le poids réel de chaque famille
+  dans la base (sinon les 4 « présumé » pèseraient autant que les
+  18 008 « attribué à »).
+
 ## Source
 
 Jeu de données « Collections des musées de France : base Joconde »,
