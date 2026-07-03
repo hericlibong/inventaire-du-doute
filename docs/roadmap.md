@@ -28,19 +28,20 @@ Chaque ⏸ est un point de validation utilisateur : on s'y arrête.
       (1 023 705 notices ; l'API n'en expose que 70,5 %)
 - [x] Taux de remplissage des champs auteur / école / ancienne attribution
 - [x] Répartition par domaine (périmètre pressenti : 583 346 notices, 57 %)
-- [ ] ⏸ Validation : chiffres présentés, choix du périmètre
-      (tout Joconde vs peinture/dessin/sculpture/estampe — les deux comptages fournis)
+- [x] ⏸ Validation : **validée le 2026-07-03** — choix du périmètre reporté à la
+      fin de T3 ; consigne : taux à deux dénominateurs (toutes notices /
+      notices avec Auteur non vide)
 
-### T3 — Détecteur v0 + taux de base
-- [ ] src/markers.py : lexique versionné des formules (attribué à, ?, école de,
-      atelier de, entourage de, suiveur de, manière de, anciennement attribué à,
-      présumé…), graphies multiples
-- [ ] « d'après » détecté mais classé à part ; « présumé » signalé suspect côté sujet
-- [ ] Application par chunks sur auteur, precisions_sur_l_auteur,
-      ancienne_attribution, ecole_pays
-- [ ] Taux de base global et par domaine, ventilation par famille de marqueur
-      → data/exports/comptages.csv
-- [ ] ⏸ Validation : présentation des taux et de la ventilation
+### T3 — Détecteur v0 + taux de base ✅ (en attente de validation)
+- [x] src/markers.py : lexique versionné, 13 familles, 3 catégories
+      (doute / copie / révision), graphies multiples, pièges intégrés
+- [x] « d'après » classé à part (copie) ; « présumé » marqué suspect
+- [x] Application par chunks ; champ Ancienne_attribution traité par présence
+      (pas de fouille texte, pour ne pas gonfler « attribué à »)
+- [x] Taux à deux dénominateurs : doute = 29 726 notices (2,90 % base /
+      3,53 % avec auteur) → data/exports/comptages.csv + comptages_domaines.csv
+- [ ] ⏸ Validation : taux présentés ; à décider — dénominateur à mettre en avant
+      et périmètre
 
 ### T4 — Échantillon de vérification
 - [ ] ~200 notices stratifiées par famille de marqueur (marqueurs rares

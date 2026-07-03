@@ -2,6 +2,19 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-03 — Méthode de comptage (T3, décision utilisateur)
+
+- **Tous les taux sont produits avec deux dénominateurs** : sur l'ensemble des
+  notices ET sur les seules notices dont `Auteur` est non vide. Motif : ~18 % des
+  notices n'ont pas d'auteur renseigné (archéologie, ethnologie…) ; un taux sur
+  la base entière dilue le phénomène, un taux sur les notices « avec auteur »
+  le mesure là où il peut exister. **Le choix du taux à mettre en avant sera
+  fait avec l'utilisateur à la validation de T3.**
+- Choix du périmètre (tout Joconde vs peinture/dessin/sculpture/estampe) reporté
+  à la fin de T3, au vu de la ventilation réelle du doute par domaine (T2 validée).
+- Rappel actif pour T3 : « école française » dans `Ecole_pays` = nationalité,
+  pas un doute ; le marqueur est « école de [artiste] », plutôt dans `Auteur`.
+
 ## 2026-07-03 — Décisions d'initialisation (phase 0)
 
 - **CSV complet = matière de référence de la phase 1.** C'est la source canonique

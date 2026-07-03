@@ -140,6 +140,57 @@ ethnologie 76 745 · céramique 57 141 · sculpture 50 139…
 **Périmètre pressenti** (au moins un domaine parmi peinture / dessin /
 sculpture / estampe) : **583 346 notices, 57,0 % de la base**.
 
+## T3 — Détecteur v0 et taux de base (2026-07-03)
+
+Lexique : `src/markers.py` (13 familles, 3 catégories : doute / copie / révision).
+Comptage : `src/count_markers.py` → `data/exports/comptages.csv` et
+`comptages_domaines.csv`.
+
+### Taux de base (les deux dénominateurs, décision utilisateur)
+
+| Agrégat | Notices | / toute la base | / notices avec auteur |
+|---|---|---|---|
+| Au moins un marqueur de **doute** | 29 726 | 2,90 % | 3,53 % |
+| « d'après » (copie, classé à part) | 22 564 | 2,20 % | 2,68 % |
+| Champ `Ancienne_attribution` renseigné (révision) | 27 266 | 2,66 % | 3,19 % |
+
+Périmètre peinture/dessin/sculpture/estampe : 23 939 notices avec doute
+sur 583 346 (4,10 %) — soit **80,5 % de tout le doute détecté**.
+
+### Ventilation du doute (familles principales)
+
+attribué à 18 008 · atelier de 5 558 · école de 2 865 · ? 2 731 ·
+manière de 703 · entourage de 503 · genre de 303 · suiveur de 80 · présumé 4.
+
+### Taux de doute par domaine (≥ 10 000 notices, top)
+
+peinture **6,00 %** · dessin 4,72 % · artisanat-industrie 4,55 % ·
+histoire 4,49 % · gallo-romain 3,92 % · … · sculpture 2,27 % · estampe 2,22 %.
+La peinture est bien le domaine le plus « douteux », mais le dessin fournit le
+plus gros volume (14 170 notices).
+
+### Constats et pièges rencontrés en construisant le détecteur
+
+- **Piège « ? » de dates (corrigé)** : dans `Auteur`, la parenthèse peut contenir
+  des dates incertaines — `Aquaviva Oscar (19..-19..?)`. Le motif exclut
+  désormais les parenthèses contenant un chiffre : 9 710 → 2 731 détections
+  (~72 % du signal brut était du bruit de dates !).
+- **Piège « école des Beaux-Arts » (corrigé)** : dans `Precisions_sur_l_auteur`,
+  les biographies citent les écoles-institutions. « école de » n'est plus cherché
+  que dans `Auteur` et `Ecole_pays` ; le qualificatif `(école)` — vu dans
+  `PALMA Giovane (école)` — est ajouté. Perte assumée : les « école de Rembrandt »
+  éventuels en texte libre de PAUT.
+- **« présumé » est quasi absent des champs auteur (4 cas)** : le piège annoncé
+  (« portrait présumé de X ») vit dans Titre/Sujet_represente, champs que le
+  détecteur ne fouille pas. Le garde-fou était le bon : ne pas fouiller ces champs.
+- **« anciennement attribué » en texte libre est rarissime (7 cas)** : cette
+  information passe par le champ dédié `Ancienne_attribution` (27 266). La
+  structure de la base est plus fiable que son texte.
+- **« ATELIER DE MOULAGE », « ATELIER DE ROME »** : « atelier de » peut être un
+  nom d'atelier de production (moulages de musées !), pas un doute sur un maître
+  → à surveiller de près en T4.
+- Graphies sans accent confirmées : « attribue à Fleuret » (sic) détecté.
+
 ## Pièges métier connus (à vérifier sur les données réelles)
 
 - « présumé » porte souvent sur le **sujet représenté** (« portrait présumé de X »),

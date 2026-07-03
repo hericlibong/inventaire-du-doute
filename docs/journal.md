@@ -2,6 +2,18 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-03 — T3 : détecteur v0 et taux de base
+
+- `src/markers.py` (lexique versionné, 13 familles) + `src/count_markers.py`.
+- Deux corrections en cours de route, repérées sur les exemples réels : le « ? »
+  de dates (72 % du signal brut de cette famille était du bruit !) et « école
+  des Beaux-Arts » dans les biographies. Détail dans `donnees.md`.
+- Résultat : 29 726 notices avec au moins un marqueur de doute (2,90 % de la
+  base, 3,53 % des notices avec auteur). « d'après » : 22 564 (à part).
+  Champ Ancienne_attribution : 27 266. La peinture est le domaine au taux le
+  plus élevé (6,00 %), le dessin le plus gros volume.
+- En attente : validation T3, choix du dénominateur vedette et du périmètre.
+
 ## 2026-07-03 — T2 : profilage du CSV complet
 
 - T1 validée. Consigne métier ajoutée à `donnees.md` : distinguer « école de
