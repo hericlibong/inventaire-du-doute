@@ -1,0 +1,11 @@
+# Données (1,1 Go, non versionnables — voir src/download.py pour les récupérer)
+data/raw/*
+!data/raw/.gitkeep
+
+# Environnement Python
+.venv/
+__pycache__/
+*.pyc
+
+# Divers
+.DS_Store

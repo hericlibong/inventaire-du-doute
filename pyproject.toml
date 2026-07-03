@@ -1,0 +1,10 @@
+[project]
+name = "inventaire-du-doute"
+version = "0.1.0"
+description = "Les mentions d'incertitude sur l'auteur dans la base Joconde — réutilisation de données ouvertes (data.gouv.fr)"
+requires-python = ">=3.11"
+dependencies = [
+    "pandas>=2.2",
+    "requests>=2.32",
+    "odfpy>=1.4",
+]
