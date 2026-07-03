@@ -14,17 +14,20 @@ Chaque ⏸ est un point de validation utilisateur : on s'y arrête.
 
 ## Phase 1 — Test go/no-go sur la qualité des données
 
-### T1 — Nomenclature et téléchargement ✅ (en attente de validation)
+### T1 — Nomenclature et téléchargement ✅
 - [x] Télécharger la nomenclature ODS et le CSV complet (src/download.py)
 - [x] Lire la nomenclature : tableau des champs (nom CSV ↔ nom API ↔ définition)
       dans docs/donnees.md
 - [x] Confirmer les champs liés à l'auteur et aux anciennes attributions
-- [ ] ⏸ Validation : synthèse des champs présentée
+- [x] ⏸ Validation : synthèse des champs — **validée le 2026-07-03**
+      (+ consigne T3 : distinguer « école de [artiste] » dans Auteur du champ
+      Ecole_pays qui indique une nationalité)
 
-### T2 — Profilage du CSV complet
-- [ ] Nombre réel de lignes, écart chiffré avec l'extrait API
-- [ ] Taux de remplissage des champs auteur / école / ancienne attribution
-- [ ] Répartition par domaine
+### T2 — Profilage du CSV complet ✅ (en attente de validation)
+- [x] Nombre réel de lignes, écart chiffré avec l'extrait API
+      (1 023 705 notices ; l'API n'en expose que 70,5 %)
+- [x] Taux de remplissage des champs auteur / école / ancienne attribution
+- [x] Répartition par domaine (périmètre pressenti : 583 346 notices, 57 %)
 - [ ] ⏸ Validation : chiffres présentés, choix du périmètre
       (tout Joconde vs peinture/dessin/sculpture/estampe — les deux comptages fournis)
 

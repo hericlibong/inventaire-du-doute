@@ -1,0 +1,42 @@
+Notices au total : 1 023 705
+Musées distincts (Code_Museofile) : 555
+
+Taux de remplissage des champs lus :
+  Auteur                         841 953 (82.2%)
+  Precisions_sur_l_auteur        457 756 (44.7%)
+  Ancienne_attribution            27 266 ( 2.7%)
+  Ecole_pays                     416 091 (40.6%)
+  Domaine                      1 023 337 (100.0%)
+  Denomination                   753 825 (73.6%)
+  Nom_officiel_musee           1 023 644 (100.0%)
+  Code_Museofile               1 023 705 (100.0%)
+  coordonnees                  1 021 753 (99.8%)
+
+Notices avec au moins un domaine du périmètre pressenti ['peinture'  'dessin'  'sculpture'  'estampe'] : 583 346 (57.0%)
+
+Domaines les plus fréquents (une notice peut en porter plusieurs) :
+  dessin                                300 156
+  arts graphiques                       152 140
+  estampe                               141 891
+  photographie                          109 472
+  archéologie                           105 889
+  peinture                               91 450
+  ethnologie                             76 745
+  céramique                              57 141
+  numismatique                           53 053
+  beaux-arts                             53 015
+  sculpture                              50 139
+  arts décoratifs                        49 031
+  vie domestique                         33 047
+  costume - accessoires du costume       26 703
+  art contemporain                       22 875
+  manuscrits  imprimés  reliure          22 125
+  croyances - coutumes                   20 111
+  néolithique                            19 369
+  gallo-romain                           14 614
+  architecture                           13 935
+  histoire                               13 727
+  vie militaire                          13 638
+  artisanat - industrie                  13 497
+  âge du fer                             13 071
+  vêtements et accessoires de vêtement    12 955

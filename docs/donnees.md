@@ -100,6 +100,46 @@ Lecture pandas validée : `pd.read_csv(sep='|', usecols=…, chunksize=…)` pas
 sans erreur sur les premières lignes ; le comptage complet et le profilage sont
 l'objet de T2.
 
+## T2 — Profil du CSV complet (2026-07-03)
+
+Obtenu par `src/profile_data.py` (rapport brut : `data/exports/profil.txt`).
+
+### Volumétrie
+
+- **1 023 705 notices**, 555 musées distincts (`Code_Museofile`).
+- Écart avec l'extrait API (721 629 notices le 2026-07-03) : **302 076 notices,
+  soit 29,5 % de la base absents de l'API**. L'annonce « + 1 000 000 » de
+  data.gouv est exacte ; le comptage de référence se fait bien sur le CSV.
+
+### Taux de remplissage des champs cœur
+
+| Champ | Renseigné | Taux |
+|---|---|---|
+| `Auteur` | 841 953 | 82,2 % |
+| `Precisions_sur_l_auteur` | 457 756 | 44,7 % |
+| `Ecole_pays` | 416 091 | 40,6 % |
+| `Ancienne_attribution` | 27 266 | 2,7 % |
+
+À noter : ~18 % des notices n'ont **pas** de champ Auteur. Une absence d'auteur
+n'est pas un marqueur d'incertitude au sens du projet (beaucoup d'objets
+archéologiques ou ethnologiques n'ont pas d'auteur attendu) — mais c'est un
+chiffre de contexte intéressant pour le récit.
+
+### Champs de contexte
+
+- `Domaine` : 100 % renseigné — le filtrage de périmètre est fiable.
+- `coordonnees` : **99,8 %** renseigné — la cartographie couvrira presque tout.
+- `Code_Museofile` : 100 % — les agrégats par musée (avec total versé) sont sûrs.
+
+### Répartition par domaine (multivalué : une notice peut compter plusieurs fois)
+
+Top : dessin 300 156 · arts graphiques 152 140 · estampe 141 891 ·
+photographie 109 472 · archéologie 105 889 · peinture 91 450 ·
+ethnologie 76 745 · céramique 57 141 · sculpture 50 139…
+
+**Périmètre pressenti** (au moins un domaine parmi peinture / dessin /
+sculpture / estampe) : **583 346 notices, 57,0 % de la base**.
+
 ## Pièges métier connus (à vérifier sur les données réelles)
 
 - « présumé » porte souvent sur le **sujet représenté** (« portrait présumé de X »),
@@ -107,3 +147,7 @@ l'objet de T2.
 - « d'après X » = le plus souvent copie assumée d'après un modèle → classé à part.
 - Graphies multiples attendues (« attribué à », « attr. », « ? »…) : saisies par
   des musées différents sur des décennies.
+- **`Ecole_pays` : « école française » = nationalité, pas un doute** (précision
+  utilisateur, 2026-07-03). Le marqueur de doute « école de [artiste] » se trouve
+  plutôt dans `Auteur`. Le détecteur (T3) devra distinguer « école de + nom
+  d'artiste » (doute) de « école + adjectif de nationalité » (classification).

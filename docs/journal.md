@@ -2,6 +2,17 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-03 — T2 : profilage du CSV complet
+
+- T1 validée. Consigne métier ajoutée à `donnees.md` : distinguer « école de
+  [artiste] » (doute, dans Auteur) de `Ecole_pays` (nationalité).
+- `src/profile_data.py` : parcours du CSV en une passe (~1 min).
+- Résultats clés : 1 023 705 notices, 555 musées ; l'extrait API omet 29,5 % de
+  la base ; Auteur renseigné à 82,2 % ; coordonnées à 99,8 % (carto quasi
+  intégrale possible) ; périmètre peinture/dessin/sculpture/estampe = 57 % de
+  la base. Détail dans `donnees.md`, rapport brut dans `data/exports/profil.txt`.
+- En attente : validation T2 et choix du périmètre.
+
 ## 2026-07-03 — T1 : téléchargement et nomenclature
 
 - Phase 0 validée par l'utilisateur ; seuils T5 confirmés ; titre adopté :
