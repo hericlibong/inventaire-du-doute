@@ -55,6 +55,14 @@ Pièges métier connus (ne pas les redécouvrir) :
 
 ## Méthode de travail
 
+- **Toute modification ou implémentation qui touche à l'approche doit être
+  documentée au moment où elle est faite** (dans `docs/methode-et-limites.md`
+  si elle relève de la méthode publiable, dans `docs/decisions.md` si c'est un
+  choix, dans `docs/donnees.md` si c'est un constat sur les données). L'approche
+  devra être expliquée, voire justifiée, publiquement : **elle fait partie de la
+  narration**. Un ajustement de regex, un champ exclu, un quota d'échantillon —
+  rien de tout cela n'est un détail technique : c'est du récit en réserve.
+
 - **Implémentation par petites étapes, validation fréquente de l'utilisateur.**
   Pas de grosses livraisons non relues. La roadmap et les points de validation
   sont dans `docs/decisions.md`.

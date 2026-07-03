@@ -2,6 +2,14 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-03 — Règle permanente : documenter tout ce qui touche à l'approche (décision utilisateur)
+
+Toute modification ou implémentation concernant l'approche (détection,
+échantillonnage, comptage, périmètre…) est documentée au moment où elle est
+faite. Motif : l'approche devra être expliquée et justifiée publiquement, et
+elle fait partie de la narration du projet — la fabrique du chiffre est une
+partie de l'histoire. Règle inscrite dans CLAUDE.md.
+
 ## 2026-07-03 — Validation T3 : dénominateur vedette et périmètre (décisions utilisateur)
 
 - **Le taux mis en avant est celui sur les notices avec auteur renseigné**
