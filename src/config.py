@@ -25,4 +25,4 @@ URL_API = (
 )
 
 # Gabarit du lien vers la notice publique sur POP (plateforme ouverte du patrimoine)
-URL_NOTICE_POP = "https://www.pop.culture.gouv.fr/notice/joconde/{reference}"
+URL_NOTICE_POP = "https://pop.culture.gouv.fr/notice/joconde/{reference}"

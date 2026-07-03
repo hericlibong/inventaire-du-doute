@@ -2,6 +2,18 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-03 — T4 : échantillon de vérification
+
+- T3 validée ; décisions consignées (taux vedette = notices avec auteur ;
+  comptage de référence sur toute la base, beaux-arts en angle) ; tâche
+  « recouvrements entre familles » ajoutée à la phase 2.
+- `src/build_sample.py` : 206 lignes tirées (stratifié, graine 42), familles
+  rares sur-représentées, « présumé » (4) et « anciennement attribué » (7)
+  pris en entier.
+- Liens POP testés (redirection www corrigée dans config.py).
+- Mode d'emploi rédigé : `docs/verification-echantillon.md`. En attente de la
+  vérification manuelle de l'utilisateur — T5 démarre au retour du CSV annoté.
+
 ## 2026-07-03 — T3 : détecteur v0 et taux de base
 
 - `src/markers.py` (lexique versionné, 13 familles) + `src/count_markers.py`.

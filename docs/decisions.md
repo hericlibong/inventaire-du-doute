@@ -2,6 +2,23 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-03 — Validation T3 : dénominateur vedette et périmètre (décisions utilisateur)
+
+- **Le taux mis en avant est celui sur les notices avec auteur renseigné**
+  (3,53 % au comptage v0) : c'est le doute mesuré là où un doute peut exister.
+  **Le taux sur la base entière (2,90 %) est toujours donné en second**, jamais
+  omis. C'est un choix d'écriture, pas de calcul : les deux chiffres restent
+  publiés côte à côte.
+- **Le comptage de référence porte sur toute la base** (la question centrale
+  vise « les musées de France », pas un domaine). **Les beaux-arts
+  (peinture/dessin/sculpture/estampe) sont l'angle éditorial** : ils
+  concentrent ~80 % du doute détecté. Les deux lectures s'emboîtent, on ne
+  choisit pas entre elles.
+- Pour la phase 2 : **chiffrer les recouvrements entre les trois familles**
+  (doute / d'après / ancienne attribution) — une même notice peut porter
+  plusieurs marqueurs, il ne faut jamais publier des chiffres qui
+  s'additionnent à tort. Tâche ajoutée à la roadmap.
+
 ## 2026-07-03 — Méthode de comptage (T3, décision utilisateur)
 
 - **Tous les taux sont produits avec deux dénominateurs** : sur l'ensemble des

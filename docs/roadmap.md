@@ -40,15 +40,17 @@ Chaque ⏸ est un point de validation utilisateur : on s'y arrête.
       (pas de fouille texte, pour ne pas gonfler « attribué à »)
 - [x] Taux à deux dénominateurs : doute = 29 726 notices (2,90 % base /
       3,53 % avec auteur) → data/exports/comptages.csv + comptages_domaines.csv
-- [ ] ⏸ Validation : taux présentés ; à décider — dénominateur à mettre en avant
-      et périmètre
+- [x] ⏸ Validation : **validée le 2026-07-03** — taux vedette = notices avec
+      auteur (base entière toujours en second) ; comptage de référence sur
+      toute la base, beaux-arts en angle éditorial
 
-### T4 — Échantillon de vérification
-- [ ] ~200 notices stratifiées par famille de marqueur (marqueurs rares
-      sur-représentés), graine aléatoire fixée
-- [ ] Export CSV tableur : référence, marqueur, champ source, extrait, titre,
-      auteur, musée, ville, lien POP, colonnes vides verdict / commentaire
-- [ ] Mode d'emploi court
+### T4 — Échantillon de vérification ✅ (vérification utilisateur en cours)
+- [x] 206 notices stratifiées par famille (rares sur-représentées, « présumé »
+      et « anciennement attribué » pris en entier), graine 42
+- [x] Export CSV tableur (data/exports/echantillon_verification.csv) :
+      famille, champ source, extrait, contexte, lien POP testé,
+      colonnes vides verdict / commentaire
+- [x] Mode d'emploi : docs/verification-echantillon.md
 - [ ] ⏸ Validation : vérification manuelle par l'utilisateur (à son rythme)
 
 ### T5 — Bilan go/no-go
@@ -60,6 +62,9 @@ Chaque ⏸ est un point de validation utilisateur : on s'y arrête.
 
 ## Phase 2 — Typologie et pipeline consolidé (esquisse, dépend du go/no-go)
 
+- [ ] Chiffrer les recouvrements entre les trois familles (doute / d'après /
+      ancienne attribution) : une même notice peut porter plusieurs marqueurs,
+      ne jamais publier des chiffres qui s'additionnent à tort (décision 2026-07-03)
 - [ ] Classification des formules par niveau de doute (échelle inspirée du décret Marcus)
 - [ ] Pipeline reproductible CSV → JSON légers agrégés (par musée avec total versé,
       par formule, par domaine)
