@@ -58,6 +58,48 @@ Lecture : la matière existe, et le champ dédié `ancienne_attribution` est plu
 riche que la mention textuelle. Ces chiffres sont des minima sur un extrait —
 le comptage de référence se fera sur le CSV complet (T3).
 
+## T1 — Structure du CSV et mapping des champs (2026-07-03)
+
+CSV téléchargé le 2026-07-03 (version du mercredi 2026-07-01 a priori) :
+**1,19 Go, 67 colonnes, séparateur `|`**, en-têtes identiques aux noms de champs
+de l'API. La nomenclature ODS liste 77 intitulés (dont des champs propres à la
+plateforme POP absents du CSV : crédits photo, copyright, historique…).
+Les champs multivalués utilisent `;` comme séparateur interne (ex. `Domaine` :
+`archéologie;gallo-romain;numismatique`).
+
+### Champs au cœur du projet (détection de l'incertitude)
+
+| Colonne CSV | Étiquette Joconde | Champ API | Définition (nomenclature) |
+|---|---|---|---|
+| `Auteur` | AUTR | `auteur` | Auteur — porte les qualificatifs entre parenthèses |
+| `Precisions_sur_l_auteur` | PAUT | `precisions_sur_l_auteur` | Précisions auteur (texte libre) |
+| `Ancienne_attribution` | ATTR | `ancienne_attribution` | Ancienne attribution — champ dédié |
+| `Ecole_pays` | ECOL | `ecole_pays` | École-pays |
+
+### Champs de garde-fou (piège « présumé » côté sujet)
+
+| Colonne CSV | Étiquette | Champ API |
+|---|---|---|
+| `Sujet_Represente` | REPR | `sujet_represente` |
+| `Precisions_sujets_representes` | PREP | `precisions_sujets_representes` |
+| `Titre` | TITR | `titre` |
+
+### Champs de contexte (périmètre, localisation, restitution)
+
+| Colonne CSV | Étiquette | Usage |
+|---|---|---|
+| `Reference` | REF | identifiant → lien POP `pop.culture.gouv.fr/notice/joconde/{ref}` |
+| `Domaine` | DOMN | périmètre (peinture, dessin, sculpture…) — multivalué `;` |
+| `Denomination` | DENO | type d'objet |
+| `Nom_officiel_musee` | NOMOFF | musée |
+| `Code_Museofile` | MUSEO | identifiant musée (jointure Muséofile possible) |
+| `Ville` / `Departement` / `Region` | VILLE_M / DPT / — | localisation administrative |
+| `coordonnees` | — (ajout POP) | lat, lon → cartographie sans géocodage |
+
+Lecture pandas validée : `pd.read_csv(sep='|', usecols=…, chunksize=…)` passe
+sans erreur sur les premières lignes ; le comptage complet et le profilage sont
+l'objet de T2.
+
 ## Pièges métier connus (à vérifier sur les données réelles)
 
 - « présumé » porte souvent sur le **sujet représenté** (« portrait présumé de X »),
