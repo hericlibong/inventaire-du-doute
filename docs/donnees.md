@@ -191,6 +191,33 @@ plus gros volume (14 170 notices).
   → à surveiller de près en T4.
 - Graphies sans accent confirmées : « attribue à Fleuret » (sic) détecté.
 
+## T5 — Pièges confirmés par la vérification manuelle (2026-07-04)
+
+206 lignes jugées par l'utilisateur (176 vrai / 28 faux / 2 incertain).
+Classes de faux positifs identifiées par ses commentaires :
+
+1. **Ateliers de production donnés comme auteurs assumés** : `Atelier de
+   Pistillus`, `ATELIER DU CENTRE DE LA GAULE (céramiste)`, `Atelier du jubé
+   de la cathédrale de Strasbourg` — l'atelier EST l'auteur, aucun doute.
+2. **Studios d'imprimeurs/photographes** : `Ateliers de reproductions
+   artistiques`, `Moulin (Atelier photographique)`.
+3. **Mentions biographiques dans Precisions_sur_l_auteur** : « entra dans
+   l'atelier de formation… », « il est un des suiveurs du Pérugin » — la bio
+   parle du parcours de l'artiste, pas de l'attribution de l'œuvre.
+4. **École nationale sous forme inversée** : `Hollande École de (École
+   hollandaise)` dans le champ Auteur — c'est le piège « école française »
+   de T1, sous un déguisement inattendu. Signal d'exclusion : la parenthèse
+   `(École …)` qui suit.
+5. **`?` de date de naissance** : `(?-1996)` — la correction T3 n'excluait que
+   les chiffres avant le `?`, pas après.
+6. **« présumé » sur une autre œuvre citée en bio** : « on lui attribue aussi
+   un portrait présumé de son époux ».
+7. Les faux positifs arrivent **en grappes** : un même auteur mal formaté
+   (Der Balian Sarkis) = toutes ses œuvres fausses. Corriger un motif élimine
+   des grappes entières.
+8. Curiosité à documenter : `anonyme (attribué)` — « attribué à… anonyme »
+   (traité en « incertain », hors calcul, décision utilisateur).
+
 ## Pièges métier connus (à vérifier sur les données réelles)
 
 - « présumé » porte souvent sur le **sujet représenté** (« portrait présumé de X »),

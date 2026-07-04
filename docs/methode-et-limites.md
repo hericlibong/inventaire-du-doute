@@ -41,6 +41,15 @@ par un humain, selon le protocole suivant :
   Il sera calculé par famille, puis pondéré par le poids réel de chaque famille
   dans la base (sinon les 4 « présumé » pèseraient autant que les
   18 008 « attribué à »).
+- **Verdicts « incertain » exclus du calcul des taux** (2 cas sur 206), mais
+  conservés et documentés.
+- **Résultat du premier cycle (2026-07-04)** : doute 17,0 % de faux positifs
+  pondérés, copie 0 %, révision 0 % → reformulation ciblée du lexique
+  (calcul : `src/evaluate_sample.py`, détail :
+  `data/exports/bilan_faux_positifs.csv`). La règle de jugement appliquée :
+  un marqueur ne compte que s'il qualifie l'attribution de l'œuvre de la
+  notice — pas s'il apparaît dans une biographie, un nom propre ou à propos
+  d'une autre œuvre.
 
 ## Source
 

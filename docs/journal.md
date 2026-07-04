@@ -2,6 +2,20 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-04 — T5 : bilan de la vérification manuelle
+
+- Échantillon annoté récupéré depuis Google Sheets (206/206 verdicts ; zéros
+  de tête des références restaurés — piège tableur à retenir).
+- Doctrine consignée : un marqueur ne compte que s'il qualifie l'attribution
+  de l'œuvre de la notice ; `(attribué, d'après)` → copie ;
+  `anonyme (attribué)` → incertain, hors calcul.
+- `src/evaluate_sample.py` : taux pondérés par le poids réel des familles.
+  Doute : **17,0 %** de faux positifs → tranche « reformulation ».
+  Copie et révision : **0 %**. Le problème est concentré (atelier de 64 %,
+  école de 20 %, ? 16 %) et chaque cause est identifiée.
+- Recommandation : reformulation ciblée du lexique (v1), recomptage,
+  mini-contrôle sur les familles corrigées. En attente : décision de phase.
+
 ## 2026-07-03 — T4 : échantillon de vérification
 
 - T3 validée ; décisions consignées (taux vedette = notices avec auteur ;

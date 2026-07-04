@@ -2,6 +2,52 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-04 — Bilan T5 : recommandation REFORMULATION (proposition, à valider)
+
+Verdict chiffré (détail : `data/exports/bilan_faux_positifs.csv`, calcul :
+`src/evaluate_sample.py`, taux pondérés par le poids réel des familles) :
+
+| Catégorie | Faux positifs pondérés | Lecture |
+|---|---|---|
+| doute | **17,0 %** | tranche « reformulation » (seuils : <10 go, 10–25 reformulation, >25 no-go) |
+| copie (« d'après ») | 0,0 % | impeccable |
+| révision (Ancienne_attribution) | 0,0 % | impeccable |
+
+Le 17 % n'est pas diffus : il est concentré dans des familles précises avec
+des causes identifiées et corrigeables :
+- **atelier de : 64 % de faux** (~3 600 notices) — trois causes : ateliers de
+  production donnés comme auteurs assumés (`Atelier de Pistillus`), studios
+  d'imprimeurs/photographes, mentions biographiques dans Précisions ;
+- **école de : 20 %** — la forme inversée `Hollande École de (École
+  hollandaise)` = école nationale, pas un doute (signal d'exclusion net :
+  la parenthèse `(École …)` qui suit) ;
+- **? : 16 %** — le `?` de date de naissance `(?-1996)` (la correction T3
+  n'excluait que les chiffres AVANT le `?`) ;
+- le reste tient très bien : attribué à 3,5 %, manière de 0 %, genre de 0 %.
+
+**Recommandation : ni go ni no-go — reformulation ciblée.**
+1. Lexique v1 : corriger les trois familles ci-dessus + intégrer la doctrine
+   (`(attribué, d'après)` → copie ; mentions biographiques hors jeu) ;
+2. recompter la base entière ;
+3. mini-contrôle manuel (~60-80 lignes, familles reformulées uniquement) ;
+4. si le doute pondéré passe sous 10 % → go définitif.
+La matière, elle, est validée : abondante, structurée, et deux catégories
+sur trois sortent sans aucune erreur.
+
+## 2026-07-04 — Doctrine de vérification (décisions utilisateur, T4→T5)
+
+Règle générale dégagée par la vérification manuelle des 206 lignes :
+**un marqueur ne compte que s'il qualifie l'attribution de l'œuvre de la
+notice** — pas s'il apparaît dans une biographie, dans un nom propre (atelier
+de production, studio d'imprimeur), ou à propos d'une autre œuvre citée.
+
+Deux points arbitrés explicitement :
+- **Qualificatifs combinés `(attribué, d'après)` : « d'après » l'emporte** —
+  la notice est une copie, elle sort de la catégorie doute.
+- **`anonyme (attribué)` : cas documenté tel quel**, ni vrai ni faux positif
+  (verdict « incertain », exclu du calcul des taux mais conservé et montré
+  comme curiosité de la base).
+
 ## 2026-07-03 — Règle permanente : documenter tout ce qui touche à l'approche (décision utilisateur)
 
 Toute modification ou implémentation concernant l'approche (détection,

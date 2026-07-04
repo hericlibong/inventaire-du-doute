@@ -44,20 +44,25 @@ Chaque ⏸ est un point de validation utilisateur : on s'y arrête.
       auteur (base entière toujours en second) ; comptage de référence sur
       toute la base, beaux-arts en angle éditorial
 
-### T4 — Échantillon de vérification ✅ (vérification utilisateur en cours)
+### T4 — Échantillon de vérification ✅
 - [x] 206 notices stratifiées par famille (rares sur-représentées, « présumé »
       et « anciennement attribué » pris en entier), graine 42
 - [x] Export CSV tableur (data/exports/echantillon_verification.csv) :
       famille, champ source, extrait, contexte, lien POP testé,
       colonnes vides verdict / commentaire
 - [x] Mode d'emploi : docs/verification-echantillon.md
-- [ ] ⏸ Validation : vérification manuelle par l'utilisateur (à son rythme)
+- [x] ⏸ Validation : vérification manuelle **rendue le 2026-07-04** — 206/206
+      verdicts (176 vrai / 28 faux / 2 incertain), 45 commentaires ; zéros de
+      tête des références restaurés après passage par Google Sheets
 
-### T5 — Bilan go/no-go
-- [ ] Réimport du CSV annoté, taux de faux positifs global et par marqueur
-- [ ] Liste des pièges de champ rencontrés
-- [ ] Recommandation argumentée dans docs/decisions.md
-      Seuils confirmés : **< 10 % = go, 10–25 % = reformulation, > 25 % = no-go**
+### T5 — Bilan go/no-go ✅ (en attente de la décision de phase)
+- [x] Réimport du CSV annoté (206/206), taux par famille et global pondéré
+      (src/evaluate_sample.py → data/exports/bilan_faux_positifs.csv)
+- [x] Liste des pièges confirmés (8 classes, docs/donnees.md)
+- [x] Recommandation argumentée dans docs/decisions.md :
+      doute 17,0 % pondéré → **REFORMULATION ciblée** (atelier de 64 %,
+      école de 20 %, ? 16 % — causes identifiées et corrigeables) ;
+      copie 0 %, révision 0 %
 - [ ] ⏸ Validation : décision de phase — fin de la phase 1
 
 ## Phase 2 — Typologie et pipeline consolidé (esquisse, dépend du go/no-go)
