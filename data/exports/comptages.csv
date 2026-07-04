@@ -1,14 +1,15 @@
 famille,libelle,categorie,suspect,notices,taux_toutes_notices,taux_auteur_renseigne
 d_apres,d'après (copie d'un modèle),copie,False,22564,0.02204,0.02679
 copie,copie,copie,True,280,0.00027,0.00033
-attribue,attribué à,doute,False,18008,0.01759,0.02138
-atelier_de,atelier de,doute,False,5558,0.00543,0.00657
-ecole_de,école de,doute,False,2865,0.0028,0.0034
-point_interrogation,? (point d'interrogation),doute,False,2731,0.00267,0.00324
+attribue,attribué à,doute,False,17926,0.01751,0.02128
+point_interrogation,? (point d'interrogation),doute,False,2213,0.00216,0.00263
+ecole_de,école de,doute,False,2093,0.00204,0.00249
+atelier_de,atelier (qualificatif de doute),doute,False,1759,0.00172,0.00209
 maniere_de,(à la) manière de,doute,False,703,0.00069,0.00083
 entourage_de,entourage de,doute,False,503,0.00049,0.0006
-genre_de,genre de,doute,True,303,0.0003,0.00036
+genre_de,genre de,doute,False,303,0.0003,0.00036
 suiveur_de,suiveur de,doute,False,80,8e-05,9e-05
 presume,présumé,doute,True,4,0.0,0.0
+atelier_nom,Atelier de X en nom d'auteur (écarté),ecarte,True,1123,0.0011,0.00133
 champ_ancienne_attribution,champ Ancienne_attribution renseigné,revision,False,27266,0.02663,0.03189
 anciennement_attribue,anciennement attribué à,revision,False,7,1e-05,1e-05

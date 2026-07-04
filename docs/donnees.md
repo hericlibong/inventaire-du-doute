@@ -191,6 +191,21 @@ plus gros volume (14 170 notices).
   → à surveiller de près en T4.
 - Graphies sans accent confirmées : « attribue à Fleuret » (sic) détecté.
 
+## Cycle v1 — Recomptage après reformulation (2026-07-04)
+
+| Agrégat | v0 | v1 | Δ |
+|---|---|---|---|
+| Au moins un marqueur de doute | 29 726 | **25 220** | −4 506 (bruit retiré) |
+| — taux base entière / avec auteur | 2,90 % / 3,53 % | **2,46 % / 2,99 %** | |
+| attribué à | 18 008 | 17 926 | −82 (doctrine « attribué, d'après ») |
+| ? | 2 731 | 2 213 | −518 (dates `(?-1996)`) |
+| école de | 2 865 | 2 093 | −772 (écoles nationales inversées) |
+| atelier (qualificatif) | 5 558 | **1 759** | la famille la plus corrigée |
+| Atelier de X en nom d'auteur (écarté) | — | 1 123 | population chiffrée à part |
+
+Le périmètre beaux-arts concentre 21 161 des 25 220 doutes (83,9 %).
+Peinture : 5,33 % de taux de doute (v0 : 6,00 %).
+
 ## T5 — Pièges confirmés par la vérification manuelle (2026-07-04)
 
 206 lignes jugées par l'utilisateur (176 vrai / 28 faux / 2 incertain).

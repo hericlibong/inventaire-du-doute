@@ -2,6 +2,32 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-04 — Lexique v1 : lire la convention, pas le mot (cycle validé par l'utilisateur)
+
+Principe directeur de la reformulation « atelier de » (validé explicitement) :
+**le doute Joconde s'écrit en qualificatif entre parenthèses après un nom**
+(« COROT (atelier) »), tandis que « Atelier de Pistillus » en nom d'auteur
+désigne un créateur assumé. On lit la convention d'écriture des conservateurs,
+plus le mot isolé. Choix assumé de **précision contre exhaustivité** : mieux
+vaut sous-compter en le disant que sur-compter en silence.
+
+Corrections v1 (détail en tête de `src/markers.py`) :
+1. « atelier » : qualificatif seulement, détection segment par segment ;
+   garde-fous : nom commençant par « atelier », rôles de production
+   (graveur, imprimeur, photographe…). La forme « Atelier de X » en nom
+   d'auteur part en catégorie « ecarte » (1 123 notices), chiffrée à part et
+   soumise au mini-contrôle : on vérifie qu'on ne jette pas de vrais doutes.
+2. « école de » : exclusion de la forme inversée « Hollande École de (École
+   hollandaise) » ; qualificatif « (école) » en fin de token seulement.
+3. « ? » : la parenthèse ne doit contenir aucun chiffre (« (?-1996) » exclu).
+4. Doctrine « (attribué, d'après) » → copie, implémentée en exclusion.
+
+Les verdicts humains de T4 sont figés en **tests automatiques**
+(`tests/test_markers.py`, 25 cas) : toute future retouche du lexique doit
+repasser devant eux. Recomptage v1 : doute = 25 220 notices (2,46 % base /
+2,99 % avec auteur). Mini-contrôle T4bis : 65 lignes
+(`data/exports/echantillon_recheck.csv`, graine 202607).
+
 ## 2026-07-04 — Bilan T5 : recommandation REFORMULATION (proposition, à valider)
 
 Verdict chiffré (détail : `data/exports/bilan_faux_positifs.csv`, calcul :

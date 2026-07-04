@@ -1,28 +1,28 @@
 domaine,notices_total,notices_doute,taux_doute
-peinture,91450,5482,0.05995
-dessin,300156,14170,0.04721
-artisanat - industrie,13497,614,0.04549
-histoire,13727,616,0.04488
-gallo-romain,14614,573,0.03921
-vie militaire,13638,459,0.03366
-croyances - coutumes,20111,623,0.03098
-beaux-arts,53015,1642,0.03097
-vie domestique,33047,975,0.0295
-céramique,57141,1561,0.02732
-costume - accessoires du costume,26703,702,0.02629
-arts décoratifs,49031,1275,0.026
-sculpture,50139,1137,0.02268
-estampe,141891,3154,0.02223
-musique - chant - danse,10856,240,0.02211
-architecture,13935,297,0.02131
-ethnologie,76745,968,0.01261
-photographie,109472,1042,0.00952
-art contemporain,22875,202,0.00883
-archéologie,105889,878,0.00829
-numismatique,53053,354,0.00667
-arts graphiques,152140,803,0.00528
-romain,10016,22,0.0022
-"manuscrits, imprimés, reliure",22125,34,0.00154
+peinture,91450,4872,0.05328
+dessin,300156,13446,0.0448
+histoire,13727,607,0.04422
+artisanat - industrie,13497,517,0.0383
+vie militaire,13638,443,0.03248
+croyances - coutumes,20111,587,0.02919
+beaux-arts,53015,1421,0.0268
+musique - chant - danse,10856,232,0.02137
+architecture,13935,293,0.02103
+arts décoratifs,49031,872,0.01778
+estampe,141891,2228,0.0157
+céramique,57141,894,0.01565
+vie domestique,33047,471,0.01425
+sculpture,50139,618,0.01233
+ethnologie,76745,927,0.01208
+photographie,109472,928,0.00848
+costume - accessoires du costume,26703,222,0.00831
+art contemporain,22875,57,0.00249
+numismatique,53053,109,0.00205
+archéologie,105889,168,0.00159
+romain,10016,15,0.0015
+gallo-romain,14614,20,0.00137
+"manuscrits, imprimés, reliure",22125,2,9e-05
+arts graphiques,152140,4,3e-05
 néolithique,19369,0,0.0
 âge du fer,13071,0,0.0
 vêtements et accessoires de vêtement,12955,0,0.0

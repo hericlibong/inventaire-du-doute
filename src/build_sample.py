@@ -11,8 +11,12 @@ L'utilisateur remplit les colonnes `verdict` et `commentaire` (mode d'emploi :
 docs/verification-echantillon.md). Une ligne = un marqueur sur une notice ;
 une notice portant deux marqueurs peut donc apparaître deux fois.
 
-Usage : uv run python src/build_sample.py  (~3 min)
+Usage : uv run python src/build_sample.py           (échantillon complet T4)
+        uv run python src/build_sample.py recheck   (mini-contrôle T4bis :
+        familles reformulées en v1 uniquement, graine différente)
 """
+
+import sys
 
 import pandas as pd
 
@@ -40,6 +44,17 @@ QUOTAS = {
     "champ_ancienne_attribution": 15,
 }
 
+# Mini-contrôle T4bis : uniquement les familles touchées par le lexique v1,
+# plus la population écartée (vérifier qu'on ne jette pas de vrais doutes).
+# Graine différente de T4 pour limiter le recouvrement avec le premier tirage.
+GRAINE_RECHECK = 202607
+QUOTAS_RECHECK = {
+    "atelier_de": 20,
+    "atelier_nom": 15,
+    "ecole_de": 15,
+    "point_interrogation": 15,
+}
+
 COLONNES = [
     "Reference", "Auteur", "Precisions_sur_l_auteur", "Ancienne_attribution",
     "Ecole_pays", "Domaine", "Titre", "Denomination",
@@ -55,7 +70,9 @@ def champ_et_extrait(famille: markers.Famille, ligne: pd.Series) -> tuple[str, s
         if pd.isna(valeur):
             continue
         valeur = str(valeur)
-        if not famille.motif:  # famille « présence de champ »
+        if famille.fonction or not famille.motif:
+            # détection sur mesure ou « présence de champ » : pas de motif à
+            # encadrer, on montre le début du champ
             return champ, valeur[:120]
         m = markers._COMPILES[famille.code].search(valeur)
         if m:
@@ -67,15 +84,22 @@ def champ_et_extrait(famille: markers.Famille, ligne: pd.Series) -> tuple[str, s
 
 
 def main() -> None:
+    recheck = len(sys.argv) > 1 and sys.argv[1] == "recheck"
+    quotas = QUOTAS_RECHECK if recheck else QUOTAS
+    graine = GRAINE_RECHECK if recheck else GRAINE
+    nom_sortie = (
+        "echantillon_recheck.csv" if recheck else "echantillon_verification.csv"
+    )
+
     # 1. Une passe sur le CSV : on garde toutes les notices détectées, par famille.
-    candidats = {code: [] for code in QUOTAS}
+    candidats = {code: [] for code in quotas}
     lus = 0
     morceaux = pd.read_csv(
         CHEMIN_CSV, sep="|", usecols=COLONNES, dtype=str, chunksize=TAILLE_MORCEAU
     )
     for morceau in morceaux:
         det = markers.detections(morceau)
-        for code in QUOTAS:
+        for code in quotas:
             trouves = morceau[det[code]]
             if len(trouves):
                 candidats[code].append(trouves)
@@ -87,8 +111,10 @@ def main() -> None:
     lignes = []
     for famille in markers.FAMILLES:
         code = famille.code
+        if code not in quotas:
+            continue
         pool = pd.concat(candidats[code]).drop_duplicates("Reference")
-        tirage = pool.sample(n=min(QUOTAS[code], len(pool)), random_state=GRAINE)
+        tirage = pool.sample(n=min(quotas[code], len(pool)), random_state=graine)
         print(f"  {famille.libelle:<40} {len(tirage):>3} tirées / {len(pool):,} détectées".replace(",", " "))
         for _, ligne in tirage.iterrows():
             champ, extrait = champ_et_extrait(famille, ligne)
@@ -113,7 +139,7 @@ def main() -> None:
 
     echantillon = pd.DataFrame(lignes)
     DOSSIER_EXPORTS.mkdir(parents=True, exist_ok=True)
-    destination = DOSSIER_EXPORTS / "echantillon_verification.csv"
+    destination = DOSSIER_EXPORTS / nom_sortie
     # utf-8-sig : accents corrects à l'ouverture directe dans Excel/LibreOffice
     echantillon.to_csv(destination, index=False, encoding="utf-8-sig")
     print(f"\n→ {len(echantillon)} lignes écrites dans {destination}")

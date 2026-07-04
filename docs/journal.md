@@ -2,6 +2,20 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-04 — Cycle v1 : reformulation du lexique
+
+- Lexique v1 écrit et testé : l'idée-force est de lire la convention
+  d'écriture (qualificatif entre parenthèses) plutôt que le mot. Détection
+  « atelier » segment par segment ; nouvelle catégorie « ecarte » pour la
+  population « Atelier de X » (1 123 notices), chiffrée au lieu d'être jetée
+  en silence.
+- Les 25 verdicts clés de l'utilisateur sont devenus des tests pytest :
+  le lexique a maintenant un contrat de non-régression humain.
+- Recomptage : doute 29 726 → 25 220 (−15 %). Familles corrigées :
+  atelier 5 558 → 1 759, école 2 865 → 2 093, ? 2 731 → 2 213.
+- Mini-lot T4bis généré : 65 lignes (graine 202607, distincte de T4).
+  En attente de la vérification utilisateur.
+
 ## 2026-07-04 — T5 : bilan de la vérification manuelle
 
 - Échantillon annoté récupéré depuis Google Sheets (206/206 verdicts ; zéros

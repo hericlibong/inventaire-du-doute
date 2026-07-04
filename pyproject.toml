@@ -8,3 +8,8 @@ dependencies = [
     "requests>=2.32",
     "odfpy>=1.4",
 ]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]

@@ -63,6 +63,21 @@ Chaque ⏸ est un point de validation utilisateur : on s'y arrête.
       doute 17,0 % pondéré → **REFORMULATION ciblée** (atelier de 64 %,
       école de 20 %, ? 16 % — causes identifiées et corrigeables) ;
       copie 0 %, révision 0 %
+- [x] ⏸ Validation : **décision du 2026-07-04 — cycle de reformulation lancé**
+      (recommandation suivie, approche « atelier » validée explicitement)
+
+### Cycle v1 — Reformulation ciblée (T3bis/T4bis)
+- [x] Lexique v1 : atelier lu comme convention (qualificatif vs nom d'auteur),
+      écoles nationales inversées exclues, `(?-1996)` exclu,
+      doctrine « (attribué, d'après) » implémentée
+- [x] Verdicts humains T4 figés en tests automatiques
+      (tests/test_markers.py, 25 cas, `uv run pytest`)
+- [x] Recomptage : doute = 25 220 (2,46 % base / 2,99 % avec auteur) ;
+      population « Atelier de X » écartée et chiffrée à part (1 123)
+- [x] Mini-lot de contrôle : 65 lignes, familles reformulées + population
+      écartée (data/exports/echantillon_recheck.csv, graine 202607)
+- [ ] ⏸ Vérification manuelle du mini-lot par l'utilisateur
+- [ ] Bilan T5bis : taux pondérés recalculés → si doute < 10 % : **GO**
 - [ ] ⏸ Validation : décision de phase — fin de la phase 1
 
 ## Phase 2 — Typologie et pipeline consolidé (esquisse, dépend du go/no-go)
