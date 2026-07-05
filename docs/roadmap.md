@@ -117,11 +117,11 @@ Chaque ⏸ est un point de validation utilisateur : on s'y arrête.
 Décision : Alençon = ouverture, incarnation de la limite (voir decisions.md).
 Sortie visée : data/exports/web/cas.json + docs/cas.md (récit éditorial).
 Sous-étapes (cocher au fil de l'eau, commit après chaque cas) :
-- [ ] P2-T4a — Liste des cas + schéma cas.json arrêtés (docs/cas.md)
-- [ ] P2-T4b — Cas « Alençon, l'absent » (via base régionale, non compté)
-- [ ] P2-T4c — Cas « Barla/Nice, le doute industriel » (monoculture, réel Joconde)
-- [ ] P2-T4d — Cas « Besançon, le vrai doute Géricault » (genre de + études Radeau)
-- [ ] P2-T4e — Cas « doute + révision » (l'objet le plus riche, P2-T1)
+- [x] P2-T4a — Liste des cas + schéma cas.json arrêtés (docs/cas.md)
+- [x] P2-T4b — Cas « Alençon, l'absent » (via base régionale, non compté)
+- [x] P2-T4c — Cas « Barla/Nice, le doute industriel » (monoculture, réel Joconde)
+- [x] P2-T4d — Cas « Besançon, le vrai doute Géricault » (genre de + études Radeau)
+- [x] P2-T4e — Cas « doute + révision » (l'objet le plus riche, P2-T1)
 - [ ] P2-T4f — 1 cas illustratif par niveau de l'échelle (si utile)
 - [ ] P2-T4g — Assemblage cas.json + relecture docs/cas.md
 - [ ] ⏸ Validation : choix et formulation des cas retenus
