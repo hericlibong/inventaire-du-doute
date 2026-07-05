@@ -87,10 +87,10 @@ Chaque ⏸ est un point de validation utilisateur : on s'y arrête.
 
 ## Phase 2 — Typologie et pipeline consolidé (EN COURS depuis le 2026-07-05)
 
-### P2-T1 — Recouvrements entre catégories
-- [ ] Chiffrer les recouvrements doute / copie / révision (une notice peut
-      porter plusieurs marqueurs — décision 2026-07-03 : jamais de chiffres
-      qui s'additionnent à tort) + recouvrements entre familles de doute
+### P2-T1 — Recouvrements entre catégories ✅ (en attente de validation)
+- [x] Venn doute / copie / révision chiffré (66 911 notices touchées, 6,54 % ;
+      doute + révision = 4 724) + co-occurrences familles de doute (marginales)
+      → src/count_overlaps.py, data/exports/recouvrements.json
 - [ ] ⏸ Validation : chiffres présentés, règles de non-addition arrêtées
 
 ### P2-T2 — Typologie du doute

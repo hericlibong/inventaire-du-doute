@@ -206,6 +206,35 @@ plus gros volume (14 170 notices).
 Le périmètre beaux-arts concentre 21 161 des 25 220 doutes (83,9 %).
 Peinture : 5,33 % de taux de doute (v0 : 6,00 %).
 
+## P2-T1 — Recouvrements entre catégories (2026-07-05)
+
+Source : `src/count_overlaps.py` → `data/exports/recouvrements.json`.
+
+**66 911 notices (6,54 % de la base) portent au moins un marqueur**, toutes
+catégories confondues. Répartition (chaque notice comptée une seule fois) :
+
+| Combinaison | Notices |
+|---|---|
+| révision seule | 19 873 |
+| doute seul | 19 690 |
+| copie seule | 19 279 |
+| **doute + révision** | **4 724** |
+| copie + révision | 2 539 |
+| doute + copie | 672 |
+| les trois | 134 |
+
+Contrôle de cohérence : 19 690 + 4 724 + 672 + 134 = 25 220 = total doute v1 ✓.
+
+Constats :
+- **Près d'1 doute sur 5 (19 %) porte aussi une ancienne attribution** : la
+  notice dit à la fois « on n'est pas sûr » et « on a déjà changé d'avis ».
+  Ce croisement est peut-être la matière narrative la plus riche du projet.
+- Les co-occurrences entre familles de doute sont marginales (max :
+  attribué × ? = 128 notices) — les familles sont presque disjointes, la
+  ventilation par famille est donc saine.
+- Les trois catégories ont des poids étonnamment proches (~19-20 000 chacune
+  en exclusif) : trois récits d'égale ampleur.
+
 ## T5 — Pièges confirmés par la vérification manuelle (2026-07-04)
 
 206 lignes jugées par l'utilisateur (176 vrai / 28 faux / 2 incertain).

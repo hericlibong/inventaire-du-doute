@@ -1,0 +1,114 @@
+{
+  "notices_base": 1023705,
+  "notices_au_moins_un_marqueur": 66911,
+  "venn": {
+    "revision": 19873,
+    "copie": 19279,
+    "doute": 19690,
+    "doute + revision": 4724,
+    "copie + revision": 2539,
+    "doute + copie": 672,
+    "doute + copie + revision": 134
+  },
+  "cooccurrence_doute": {
+    "attribue": {
+      "attribue": 17926,
+      "point_interrogation": 128,
+      "ecole_de": 20,
+      "atelier_de": 63,
+      "entourage_de": 21,
+      "suiveur_de": 4,
+      "maniere_de": 25,
+      "genre_de": 7,
+      "presume": 1
+    },
+    "point_interrogation": {
+      "attribue": 128,
+      "point_interrogation": 2213,
+      "ecole_de": 13,
+      "atelier_de": 55,
+      "entourage_de": 8,
+      "suiveur_de": 0,
+      "maniere_de": 7,
+      "genre_de": 1,
+      "presume": 0
+    },
+    "ecole_de": {
+      "attribue": 20,
+      "point_interrogation": 13,
+      "ecole_de": 2093,
+      "atelier_de": 1,
+      "entourage_de": 1,
+      "suiveur_de": 1,
+      "maniere_de": 2,
+      "genre_de": 1,
+      "presume": 0
+    },
+    "atelier_de": {
+      "attribue": 63,
+      "point_interrogation": 55,
+      "ecole_de": 1,
+      "atelier_de": 1759,
+      "entourage_de": 3,
+      "suiveur_de": 1,
+      "maniere_de": 0,
+      "genre_de": 3,
+      "presume": 0
+    },
+    "entourage_de": {
+      "attribue": 21,
+      "point_interrogation": 8,
+      "ecole_de": 1,
+      "atelier_de": 3,
+      "entourage_de": 503,
+      "suiveur_de": 2,
+      "maniere_de": 0,
+      "genre_de": 1,
+      "presume": 0
+    },
+    "suiveur_de": {
+      "attribue": 4,
+      "point_interrogation": 0,
+      "ecole_de": 1,
+      "atelier_de": 1,
+      "entourage_de": 2,
+      "suiveur_de": 80,
+      "maniere_de": 3,
+      "genre_de": 0,
+      "presume": 0
+    },
+    "maniere_de": {
+      "attribue": 25,
+      "point_interrogation": 7,
+      "ecole_de": 2,
+      "atelier_de": 0,
+      "entourage_de": 0,
+      "suiveur_de": 3,
+      "maniere_de": 703,
+      "genre_de": 2,
+      "presume": 0
+    },
+    "genre_de": {
+      "attribue": 7,
+      "point_interrogation": 1,
+      "ecole_de": 1,
+      "atelier_de": 3,
+      "entourage_de": 1,
+      "suiveur_de": 0,
+      "maniere_de": 2,
+      "genre_de": 303,
+      "presume": 0
+    },
+    "presume": {
+      "attribue": 1,
+      "point_interrogation": 0,
+      "ecole_de": 0,
+      "atelier_de": 0,
+      "entourage_de": 0,
+      "suiveur_de": 0,
+      "maniere_de": 0,
+      "genre_de": 0,
+      "presume": 4
+    }
+  }
+}
