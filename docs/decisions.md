@@ -2,6 +2,31 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-05 — Bilan T5bis : recommandation GO (proposition, à valider)
+
+Mini-contrôle T4bis rendu (65/65 verdicts). Résultats des familles reformulées :
+- **? : 0 faux sur 15** (16 % en v0) — corrigé ;
+- **« Atelier de X » écarté : 15/15 confirmés** — l'exclusion ne jette aucun
+  vrai doute, le choix précision-contre-exhaustivité est validé par les faits ;
+- **école de : 2/15 (13 %)** — restes : « École de Fontainebleau » (aire
+  artistique) et « Nouvelle École de Paris » (mouvement, champ Ecole_pays) ;
+- **atelier : 6/20 (30 %)** — restes : des ateliers-entreprises portant le
+  qualificatif « (atelier) » (VAUCANSON, JACQUEMIN Frères…). Signal net : les
+  faux vivent en ethnologie/artisanat, les vrais en peinture/dessin.
+
+Taux global pondéré (catégorie doute, calcul : src/evaluate_recheck.py) :
+- **5,7 % conservateur** (< 10 %) ; 3,3 % ajusté (le faux « attribué,
+  d'après » de T4 est prouvé exclu par les tests).
+
+**Recommandation : GO.** Le seuil de phase est franchi. Les faiblesses
+résiduelles sont localisées, chiffrées et publiables comme telles ; à traiter
+en phase 2 dans la typologie plutôt que par une nouvelle itération de regex :
+- la famille « atelier » (7 % du doute) sera marquée « fiabilité moindre,
+  sensible au domaine » — option : la restreindre aux domaines beaux-arts ;
+- « École de Fontainebleau / de Paris » : liste d'exclusion des écoles-lieux
+  consacrées, à trancher en construisant la typologie ;
+- taux par famille publiés avec le chiffre global (transparence).
+
 ## 2026-07-04 — Lexique v1 : lire la convention, pas le mot (cycle validé par l'utilisateur)
 
 Principe directeur de la reformulation « atelier de » (validé explicitement) :

@@ -2,6 +2,17 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-05 — T5bis : bilan du mini-contrôle → recommandation GO
+
+- Mini-lot annoté récupéré (onglet « echantillon_recheck » du même classeur
+  Google Sheets ; export xlsx pour lire le second onglet, zéros restaurés).
+- ? : 0/15 faux. « Atelier de X » écarté : 15/15 confirmés — on ne jette
+  aucun vrai doute. École : 2/15 (écoles-lieux consacrées). Atelier : 6/20
+  (ateliers-entreprises ; les faux vivent en ethnologie/artisanat, les vrais
+  en peinture/dessin — piste domaine pour la phase 2).
+- Doute pondéré : 5,7 % conservateur, 3,3 % ajusté → **seuil GO franchi**.
+- En attente : décision de phase (fin de la phase 1).
+
 ## 2026-07-04 — Cycle v1 : reformulation du lexique
 
 - Lexique v1 écrit et testé : l'idée-force est de lire la convention

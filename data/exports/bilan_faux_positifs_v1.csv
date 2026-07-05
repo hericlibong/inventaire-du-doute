@@ -1,0 +1,15 @@
+famille,categorie,source_verdicts,juges,faux,taux_faux_positifs,notices_base_v1,faux_estimes
+attribué à,doute,T4,29,1,0.0345,17926,618
+? (point d'interrogation),doute,T4bis,15,0,0.0,2213,0
+école de,doute,T4bis,15,2,0.1333,2093,279
+atelier (qualificatif de doute),doute,T4bis,20,6,0.3,1759,528
+Atelier de X en nom d'auteur (écarté),ecarte,T4bis,15,0,0.0,1123,0
+entourage de,doute,T4,15,1,0.0667,503,34
+suiveur de,doute,T4,10,1,0.1,80,8
+(à la) manière de,doute,T4,15,0,0.0,703,0
+genre de,doute,T4,15,0,0.0,303,0
+présumé,doute,T4,4,1,0.25,4,1
+d'après (copie d'un modèle),copie,T4,15,0,0.0,22564,0
+copie,copie,T4,9,0,0.0,280,0
+anciennement attribué à,revision,T4,7,0,0.0,7,0
+champ Ancienne_attribution renseigné,revision,T4,15,0,0.0,27266,0

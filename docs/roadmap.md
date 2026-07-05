@@ -76,9 +76,12 @@ Chaque ⏸ est un point de validation utilisateur : on s'y arrête.
       population « Atelier de X » écartée et chiffrée à part (1 123)
 - [x] Mini-lot de contrôle : 65 lignes, familles reformulées + population
       écartée (data/exports/echantillon_recheck.csv, graine 202607)
-- [ ] ⏸ Vérification manuelle du mini-lot par l'utilisateur
-- [ ] Bilan T5bis : taux pondérés recalculés → si doute < 10 % : **GO**
-- [ ] ⏸ Validation : décision de phase — fin de la phase 1
+- [x] ⏸ Vérification manuelle du mini-lot — **rendue le 2026-07-05** (65/65)
+- [x] Bilan T5bis (src/evaluate_recheck.py) : doute pondéré **5,7 %
+      conservateur / 3,3 % ajusté** → sous le seuil des 10 % ;
+      exclusion « Atelier de X » confirmée 15/15 ; restes localisés
+      (atelier 30 % famille, école 13 %) à traiter en phase 2 (typologie)
+- [ ] ⏸ Validation : décision de phase — recommandation **GO**
 
 ## Phase 2 — Typologie et pipeline consolidé (esquisse, dépend du go/no-go)
 
