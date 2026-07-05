@@ -60,9 +60,14 @@ le comptage de référence se fera sur le CSV complet (T3).
 
 ## T1 — Structure du CSV et mapping des champs (2026-07-03)
 
-CSV téléchargé le 2026-07-03 (version du mercredi 2026-07-01 a priori) :
-**1,19 Go, 67 colonnes, séparateur `|`**, en-têtes identiques aux noms de champs
-de l'API. La nomenclature ODS liste 77 intitulés (dont des champs propres à la
+CSV téléchargé le 2026-07-03. **Version confirmée** par les en-têtes HTTP du
+serveur (vérifié le 2026-07-05) : `Last-Modified: Wed, 01 Jul 2026 01:37:45 GMT`,
+`Content-Length: 1 191 002 260` octets (identique à l'octet à notre fichier),
+`ETag: 4cc723bb0c3aebdecd2245b7644fb00a`. **La photo de référence du projet est
+donc la version du mercredi 1er juillet 2026.** Le CSV est mis à jour chaque
+mercredi 6h : toute publication doit dater son chiffre (« données arrêtées au
+1er juillet 2026 »). Caractéristiques : **1,19 Go, 67 colonnes, séparateur `|`**,
+en-têtes identiques aux noms de champs de l'API. La nomenclature ODS liste 77 intitulés (dont des champs propres à la
 plateforme POP absents du CSV : crédits photo, copyright, historique…).
 Les champs multivalués utilisent `;` comme séparateur interne (ex. `Domaine` :
 `archéologie;gallo-romain;numismatique`).
