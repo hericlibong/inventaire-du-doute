@@ -87,17 +87,20 @@ Chaque ⏸ est un point de validation utilisateur : on s'y arrête.
 
 ## Phase 2 — Typologie et pipeline consolidé (EN COURS depuis le 2026-07-05)
 
-### P2-T1 — Recouvrements entre catégories ✅ (en attente de validation)
-- [x] Venn doute / copie / révision chiffré (66 911 notices touchées, 6,54 % ;
-      doute + révision = 4 724) + co-occurrences familles de doute (marginales)
+### P2-T1 — Recouvrements entre catégories ✅
+- [x] Venn doute / copie / révision chiffré + co-occurrences familles de doute
       → src/count_overlaps.py, data/exports/recouvrements.json
-- [ ] ⏸ Validation : chiffres présentés, règles de non-addition arrêtées
+- [x] ⏸ Validation : **règles de non-addition validées le 2026-07-05**
+      (chiffre vedette = doute seul ; union nommée ; Venn obligatoire ;
+      doute + révision promu objet éditorial)
 
-### P2-T2 — Typologie du doute
-- [ ] Proposition d'échelle du doute (inspirée du décret Marcus), à partir de
-      docs/familles.md ; y trancher : atelier restreint ou non aux beaux-arts,
-      écoles-lieux consacrées (Fontainebleau, Paris)
-- [ ] ⏸ Validation : l'échelle est un choix éditorial — décision utilisateur
+### P2-T2 — Typologie du doute ✅
+- [x] Échelle à 3 niveaux proposée et argumentée (docs/typologie.md)
+- [x] ⏸ Arbitrages rendus le 2026-07-05 : atelier restreint aux beaux-arts,
+      écoles-lieux écartées (liste versionnée), « ? » au niveau 1
+- [x] Lexique v2 implémenté + tests (35 cas) + recomptage complet :
+      **doute = 24 507** (2,39 % base / 2,91 % avec auteur) ;
+      Venn v2 : 66 420 touchées, doute + révision = 4 615
 
 ### P2-T3 — Pipeline d'exports pour la restitution
 - [ ] CSV → JSON légers agrégés : par musée (toujours avec total versé),

@@ -1,4 +1,4 @@
-"""Lexique des marqueurs d'incertitude sur l'auteur — version 1 (2026-07-04).
+"""Lexique des marqueurs d'incertitude sur l'auteur — version 2 (2026-07-05).
 
 Chaque « famille » regroupe une formule d'attribution (décret Marcus, méthode
 Joconde) et ses variantes de graphie. C'est un lexique versionné : toute
@@ -33,6 +33,18 @@ Corrections v1 (suite au bilan T5 — doute : 17 % de faux positifs pondérés) 
    dans la même parenthèse, « d'après » l'emporte — la notice est une copie,
    elle sort de « attribué à ».
 
+Arbitrages v2 (typologie P2-T2, décisions utilisateur du 2026-07-05) :
+1. « atelier » est restreint aux domaines beaux-arts : le contrôle T4bis a
+   montré que les faux (ateliers-entreprises) vivent en ethnologie/artisanat.
+   Hors beaux-arts, la détection bascule dans la famille écartée
+   « atelier_hors_beaux_arts » (chiffrée, pas supprimée). Cette règle exige
+   la colonne Domaine dans les données passées à detections().
+2. Écoles-lieux consacrées (Fontainebleau, Paris, Barbizon, Pont-Aven,
+   Nancy) : noms de mouvements, pas le sillage d'un maître — liste
+   d'exclusion versionnée ci-dessous, bascule en famille écartée
+   « ecole_lieu ».
+3. Le « ? » reste au niveau 1 de la typologie (identification fragile).
+
 Pièges v0 conservés : « ? » cherché uniquement dans Auteur (ailleurs = dates) ;
 « école française » sans « de » jamais compté ; Ancienne_attribution jamais
 fouillé au texte (sa présence est le marqueur) ; apostrophes droites et
@@ -47,6 +59,18 @@ import pandas as pd
 
 # Champs texte fouillés par défaut (hors Ancienne_attribution, voir plus haut).
 CHAMPS_TEXTE = ("Auteur", "Precisions_sur_l_auteur")
+
+# Domaines beaux-arts : périmètre de validité de la famille « atelier » (v2).
+BEAUX_ARTS = frozenset({
+    "peinture", "dessin", "sculpture", "estampe", "beaux-arts",
+    "arts graphiques", "miniature", "pastel",
+})
+
+# Écoles-lieux consacrées : mouvements artistiques, pas le sillage d'un
+# maître (arbitrage utilisateur 2026-07-05). Liste courte, amendable.
+MOTIF_ECOLE_LIEU = (
+    r"[ée]coles?\s+de\s+(?:fontainebleau|paris|barbizon|pont[- ]aven|nancy)"
+)
 
 # Rôles de production : « (atelier, graveur) » désigne un atelier-entreprise
 # (studio, imprimeur), pas un doute sur un maître (verdicts utilisateur T4).
@@ -125,15 +149,27 @@ FAMILLES = [
         # ou qualificatif « (école) » en fin de token
         r"[ée]coles?\s+(?:de\s+(?!\()|du\s|des\s|d['’])|\([^)]*\b[ée]coles?\s*[,)]",
         champs=("Auteur", "Ecole_pays"),
+        exclusion=MOTIF_ECOLE_LIEU,  # écoles-lieux consacrées → ecole_lieu
     ),
     Famille(
-        "atelier_de", "atelier (qualificatif de doute)", "doute",
+        "ecole_lieu", "école-lieu consacrée (écartée)", "ecarte",
+        MOTIF_ECOLE_LIEU,
+        champs=("Auteur", "Ecole_pays"),
+    ),
+    Famille(
+        "atelier_de", "atelier (qualificatif, beaux-arts)", "doute",
+        # restreint aux domaines beaux-arts en post-traitement (detections)
         motif="", champs=("Auteur",), fonction=_atelier_doute,
+    ),
+    Famille(
+        "atelier_hors_beaux_arts", "atelier hors beaux-arts (écarté)", "ecarte",
+        # alimentée par le post-traitement de detections(), jamais directement
+        motif="", champs=("Auteur",), fonction=lambda v: False,
     ),
     Famille(
         "atelier_nom", "Atelier de X en nom d'auteur (écarté)", "ecarte",
         motif="", champs=("Auteur",), fonction=_atelier_nom,
-        suspect=True,  # écarté par défaut ; mini-contrôle T4bis pour valider
+        suspect=True,  # écarté par défaut ; contrôle T4bis : confirmé 15/15
     ),
     Famille("entourage_de", "entourage de", "doute", r"\bentourage\b"),
     Famille("suiveur_de", "suiveur de", "doute", r"\bsuiveurs?\b"),
@@ -171,13 +207,27 @@ _EXCLUSIONS = {
 }
 
 
+def _dans_beaux_arts(domaine: object) -> bool:
+    """La notice a-t-elle au moins un domaine beaux-arts ? (champ multivalué ;)"""
+    if not isinstance(domaine, str):
+        return False
+    return any(d.strip().lower() in BEAUX_ARTS for d in domaine.split(";"))
+
+
 def detections(morceau: pd.DataFrame) -> pd.DataFrame:
     """Applique le lexique à un morceau du CSV.
 
     Renvoie un DataFrame de booléens aligné sur `morceau` : une colonne par
     code de famille, True si la notice porte le marqueur dans au moins un
     des champs de la famille.
+
+    Exige la colonne « Domaine » (restriction beaux-arts de « atelier », v2).
     """
+    if "Domaine" not in morceau.columns:
+        raise ValueError(
+            "detections() exige la colonne Domaine "
+            "(restriction beaux-arts de la famille atelier, lexique v2)"
+        )
     resultat = pd.DataFrame(index=morceau.index)
     for famille in FAMILLES:
         colonnes = []
@@ -196,4 +246,10 @@ def detections(morceau: pd.DataFrame) -> pd.DataFrame:
                 colonne = serie.notna()
             colonnes.append(colonne)
         resultat[famille.code] = pd.concat(colonnes, axis=1).any(axis=1)
+
+    # Post-traitement v2 : « atelier » n'est un doute qu'en beaux-arts ;
+    # ailleurs, la détection bascule dans la famille écartée dédiée.
+    beaux_arts = morceau["Domaine"].map(_dans_beaux_arts)
+    resultat["atelier_hors_beaux_arts"] = resultat["atelier_de"] & ~beaux_arts
+    resultat["atelier_de"] &= beaux_arts
     return resultat

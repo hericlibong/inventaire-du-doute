@@ -1,6 +1,26 @@
-# Typologie du doute — proposition P2-T2
+# Typologie du doute — VALIDÉE (P2-T2)
 
-**Statut : proposition soumise à arbitrage utilisateur (2026-07-05).**
+**Statut : validée par l'utilisateur le 2026-07-05** (trois arbitrages rendus :
+atelier restreint aux beaux-arts, écoles-lieux écartées, « ? » au niveau 1).
+Chiffres définitifs lexique v2 ci-dessous ; les volumes « avant arbitrage »
+dans les tableaux d'origine sont conservés pour l'historique.
+
+## Chiffres définitifs (lexique v2, 2026-07-05)
+
+| Niveau | Familles | Notices |
+|---|---|---|
+| 1 · « Presque lui » | attribué à 17 926 · ? 2 213 · présumé 4 | ~20 100 |
+| 2 · « Autour de lui » | école 1 871 · atelier (beaux-arts) 1 236 · entourage 503 · suiveur 80 | ~3 700 |
+| 3 · « Son style, sans lui » | manière 703 · genre 303 | ~1 000 |
+| **Doute total (union)** | | **24 507** (2,39 % base / 2,91 % avec auteur) |
+| Hors échelle : copie | d'après 22 564 · copie 280 | 22 844 |
+| Hors échelle : révision | champ ATTR 27 266 · formule 7 | 27 273 |
+| Hors échelle : écarté | Atelier de X 1 123 · atelier hors beaux-arts 523 · écoles-lieux 222 | 1 868 |
+
+Venn v2 : 66 420 notices portent au moins un marqueur (6,49 %) ;
+doute + révision = 4 615.
+
+---
 S'appuie sur docs/familles.md (fiabilités mesurées) et sur l'ordre des
 formules du décret Marcus (décret n° 81-255 du 3 mars 1981, sur les
 qualifications du marché de l'art, dont la méthode Joconde s'inspire).

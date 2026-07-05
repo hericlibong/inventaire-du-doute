@@ -17,6 +17,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 import markers  # noqa: E402
 
 # (valeur du champ Auteur, code famille, détection attendue)
+# Sauf mention contraire, Domaine = « peinture » (voir CAS_DOMAINE pour v2).
 CAS_JUGES = [
     # --- atelier : le doute est un qualificatif, pas un nom (T5, 64 % de faux en v0)
     ("ATELIER DE LYON (atelier)", "atelier_de", False),
@@ -49,15 +50,42 @@ CAS_JUGES = [
     # --- anciennement attribué ne compte pas comme attribué
     ("anciennement attribué à BOSSCHAERT Ambrosius", "attribue", False),
     ("anciennement attribué à BOSSCHAERT Ambrosius", "anciennement_attribue", True),
+    # --- v2 : écoles-lieux consacrées écartées (arbitrage 2026-07-05)
+    ("ECOLE DE FONTAINEBLEAU (verrier)", "ecole_de", False),
+    ("ECOLE DE FONTAINEBLEAU (verrier)", "ecole_lieu", True),
+    ("Abstraction;Nouvelle Ecole de Paris", "ecole_de", False),
+    ("école de Rembrandt", "ecole_lieu", False),
+]
+
+# v2 : « atelier » n'est un doute qu'en beaux-arts (arbitrage 2026-07-05).
+# (Auteur, Domaine, code famille, détection attendue)
+CAS_DOMAINE = [
+    ("COROT Jean-Baptiste Camille (atelier)", "peinture", "atelier_de", True),
+    ("COROT Jean-Baptiste Camille (atelier)", "peinture", "atelier_hors_beaux_arts", False),
+    ("MINELLE (atelier)", "tabletterie;ethnologie", "atelier_de", False),
+    ("MINELLE (atelier)", "tabletterie;ethnologie", "atelier_hors_beaux_arts", True),
+    ("Vignier Henri (atelier)", "céramique;ethnologie", "atelier_de", False),
+    # multivalué : un domaine beaux-arts suffit
+    ("DUPONT (atelier)", "peinture;ethnologie", "atelier_de", True),
 ]
 
 
-@pytest.mark.parametrize("valeur,code,attendu", CAS_JUGES)
-def test_cas_juge(valeur, code, attendu):
+def _detecter(valeur, domaine="peinture"):
     df = pd.DataFrame({
         "Auteur": [valeur],
         "Precisions_sur_l_auteur": [None],
         "Ancienne_attribution": [None],
         "Ecole_pays": [None],
+        "Domaine": [domaine],
     })
-    assert bool(markers.detections(df).loc[0, code]) == attendu
+    return markers.detections(df)
+
+
+@pytest.mark.parametrize("valeur,code,attendu", CAS_JUGES)
+def test_cas_juge(valeur, code, attendu):
+    assert bool(_detecter(valeur).loc[0, code]) == attendu
+
+
+@pytest.mark.parametrize("valeur,domaine,code,attendu", CAS_DOMAINE)
+def test_cas_domaine(valeur, domaine, code, attendu):
+    assert bool(_detecter(valeur, domaine).loc[0, code]) == attendu

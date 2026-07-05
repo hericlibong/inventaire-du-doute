@@ -1,21 +1,21 @@
 {
   "notices_base": 1023705,
-  "notices_au_moins_un_marqueur": 66911,
+  "notices_au_moins_un_marqueur": 66420,
   "venn": {
-    "revision": 19873,
-    "copie": 19279,
-    "doute": 19690,
-    "doute + revision": 4724,
+    "revision": 19982,
+    "copie": 19392,
+    "doute": 19199,
+    "doute + revision": 4615,
     "copie + revision": 2539,
-    "doute + copie": 672,
+    "doute + copie": 559,
     "doute + copie + revision": 134
   },
   "cooccurrence_doute": {
     "attribue": {
       "attribue": 17926,
       "point_interrogation": 128,
-      "ecole_de": 20,
-      "atelier_de": 63,
+      "ecole_de": 19,
+      "atelier_de": 46,
       "entourage_de": 21,
       "suiveur_de": 4,
       "maniere_de": 25,
@@ -25,8 +25,8 @@
     "point_interrogation": {
       "attribue": 128,
       "point_interrogation": 2213,
-      "ecole_de": 13,
-      "atelier_de": 55,
+      "ecole_de": 12,
+      "atelier_de": 44,
       "entourage_de": 8,
       "suiveur_de": 0,
       "maniere_de": 7,
@@ -34,9 +34,9 @@
       "presume": 0
     },
     "ecole_de": {
-      "attribue": 20,
-      "point_interrogation": 13,
-      "ecole_de": 2093,
+      "attribue": 19,
+      "point_interrogation": 12,
+      "ecole_de": 1871,
       "atelier_de": 1,
       "entourage_de": 1,
       "suiveur_de": 1,
@@ -45,14 +45,14 @@
       "presume": 0
     },
     "atelier_de": {
-      "attribue": 63,
-      "point_interrogation": 55,
+      "attribue": 46,
+      "point_interrogation": 44,
       "ecole_de": 1,
-      "atelier_de": 1759,
+      "atelier_de": 1236,
       "entourage_de": 3,
       "suiveur_de": 1,
       "maniere_de": 0,
-      "genre_de": 3,
+      "genre_de": 1,
       "presume": 0
     },
     "entourage_de": {
@@ -92,7 +92,7 @@
       "attribue": 7,
       "point_interrogation": 1,
       "ecole_de": 1,
-      "atelier_de": 3,
+      "atelier_de": 1,
       "entourage_de": 1,
       "suiveur_de": 0,
       "maniere_de": 2,

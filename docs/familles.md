@@ -27,16 +27,17 @@ la hiérarchisation fine par niveau de doute est l'objet de la phase 2.
 |---|---|---|---|---|
 | `attribue` | « attribué à », « attr. », `(attribué)` | œuvre donnée au maître sans certitude — le doute « classique » | 17 926 | **96,5 %** (T4, 1 faux/29) |
 | `point_interrogation` | `(?)` en qualificatif, sans chiffre | doute sec, non argumenté | 2 213 | **100 %** (T4bis, 0/15) |
-| `ecole_de` | « école de X », `(école)` | élève ou proche du maître, dans son sillage | 2 093 | **86,7 %** (T4bis, 2/15 — restes : écoles-lieux consacrées type Fontainebleau) |
-| `atelier_de` | `(atelier)` en qualificatif | exécutée dans l'atelier du maître, main incertaine | 1 759 | **70 %** (T4bis, 6/20 — restes : ateliers-entreprises ; faux concentrés hors beaux-arts) ⚠ |
+| `ecole_de` | « école de X », `(école)` | élève ou proche du maître, dans son sillage | 1 871 (v2) | 86,7 % mesurée avant exclusion des écoles-lieux (v2) — attendue plus haute |
+| `atelier_de` | `(atelier)` en qualificatif, beaux-arts seulement (v2) | exécutée dans l'atelier du maître, main incertaine | 1 236 (v2) | 70 % mesurée avant restriction beaux-arts (v2) — attendue ~90 % |
 | `maniere_de` | « (à la) manière de » | imitation du style, auteur inconnu | 703 | **100 %** (T4, 0/15) |
 | `entourage_de` | « entourage de » | cercle proche du maître | 503 | **93,3 %** (T4, 1/15) |
 | `genre_de` | « genre de » | proche de « manière de » | 303 | **100 %** (T4, 0/15) |
 | `suiveur_de` | « suiveur de » | influencé par le maître, parfois plus tardif | 80 | **90 %** (T4, 1/10) |
 | `presume` | « présumé » (champs auteur) | auteur supposé | 4 | 75 % (T4, 1/4 — famille marginale) |
 
-⚠ `atelier_de` : fiabilité moindre, sensible au domaine. Décision en phase 2
-(typologie) : restriction éventuelle aux domaines beaux-arts.
+Arbitrages v2 (2026-07-05, typologie validée) : `atelier_de` restreint aux
+beaux-arts ; écoles-lieux consacrées écartées. Volumes v2 reportés ci-dessus ;
+doute total v2 : **24 507**. Échelle à 3 niveaux : voir docs/typologie.md.
 
 ## Familles de la catégorie COPIE
 
@@ -54,11 +55,13 @@ Doctrine (2026-07-04) : `(attribué, d'après)` dans la même parenthèse → co
 | `champ_ancienne_attribution` | champ dédié ATTR renseigné | « on a cru que c'était X, on ne le croit plus » | 27 266 | **100 %** (T4, 0/15) |
 | `anciennement_attribue` | la formule en toutes lettres | idem, rarissime en texte | 7 | 100 % (T4, 0/7) |
 
-## Famille de la catégorie ECARTE
+## Familles de la catégorie ECARTE
 
-| Famille | Forme | Pourquoi écartée | Notices v1 | Contrôle |
+| Famille | Forme | Pourquoi écartée | Notices | Contrôle |
 |---|---|---|---|---|
 | `atelier_nom` | « Atelier de X » en nom d'auteur | l'atelier EST le créateur assumé (manufactures, studios) | 1 123 | exclusion confirmée **15/15** (T4bis) |
+| `atelier_hors_beaux_arts` | `(atelier)` hors domaines beaux-arts | ateliers-entreprises (ethnologie, artisanat) — verdicts T4bis | 523 (v2) | arbitrage 2026-07-05 |
+| `ecole_lieu` | « école de Fontainebleau / Paris / Barbizon / Pont-Aven / Nancy » | mouvements consacrés, pas le sillage d'un maître | 222 (v2) | arbitrage 2026-07-05 |
 
 ## Règles transverses
 

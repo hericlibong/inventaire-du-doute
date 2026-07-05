@@ -2,6 +2,23 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-05 — Typologie du doute validée + règles de non-addition (décisions utilisateur)
+
+**Règles de non-addition (P2-T1)** : le chiffre vedette reste le doute seul ;
+66 420 publiable uniquement comme « au moins une mention » (union nommée) ;
+les trois catégories ne se montrent ensemble qu'en diagramme à intersections ;
+le croisement doute + révision (4 615) devient un objet éditorial à part.
+
+**Typologie (P2-T2)** — échelle à 3 niveaux validée (« Presque lui »,
+« Autour de lui », « Son style, sans lui », voir docs/typologie.md), avec
+trois arbitrages :
+1. **atelier restreint aux beaux-arts** (523 notices hors → écartées) ;
+2. **écoles-lieux consacrées écartées** (liste versionnée : Fontainebleau,
+   Paris, Barbizon, Pont-Aven, Nancy — 222 notices) ;
+3. **« ? » au niveau 1** (identification fragile).
+Lexique v2 en conséquence ; nouveau doute total : **24 507** (2,39 % / 2,91 %).
+Tests étendus à 35 cas (dont restriction domaine).
+
 ## 2026-07-05 — Bilan T5bis : recommandation GO (proposition, à valider)
 
 Mini-contrôle T4bis rendu (65/65 verdicts). Résultats des familles reformulées :

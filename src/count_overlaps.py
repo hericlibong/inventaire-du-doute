@@ -24,7 +24,7 @@ from config import CHEMIN_CSV, DOSSIER_EXPORTS
 
 COLONNES = [
     "Reference", "Auteur", "Precisions_sur_l_auteur", "Ancienne_attribution",
-    "Ecole_pays",
+    "Ecole_pays", "Domaine",  # Domaine : exigé par le lexique v2 (atelier)
 ]
 TAILLE_MORCEAU = 200_000
 

@@ -1,26 +1,26 @@
 domaine,notices_total,notices_doute,taux_doute
-peinture,91450,4872,0.05328
-dessin,300156,13446,0.0448
-histoire,13727,607,0.04422
-artisanat - industrie,13497,517,0.0383
-vie militaire,13638,443,0.03248
-croyances - coutumes,20111,587,0.02919
-beaux-arts,53015,1421,0.0268
-musique - chant - danse,10856,232,0.02137
-architecture,13935,293,0.02103
-arts décoratifs,49031,872,0.01778
-estampe,141891,2228,0.0157
-céramique,57141,894,0.01565
-vie domestique,33047,471,0.01425
-sculpture,50139,618,0.01233
-ethnologie,76745,927,0.01208
-photographie,109472,928,0.00848
-costume - accessoires du costume,26703,222,0.00831
-art contemporain,22875,57,0.00249
-numismatique,53053,109,0.00205
-archéologie,105889,168,0.00159
-romain,10016,15,0.0015
-gallo-romain,14614,20,0.00137
+peinture,91450,4851,0.05305
+dessin,300156,13324,0.04439
+histoire,13727,604,0.044
+artisanat - industrie,13497,512,0.03793
+vie militaire,13638,432,0.03168
+croyances - coutumes,20111,574,0.02854
+beaux-arts,53015,1416,0.02671
+musique - chant - danse,10856,228,0.021
+architecture,13935,246,0.01765
+arts décoratifs,49031,772,0.01575
+estampe,141891,2198,0.01549
+vie domestique,33047,454,0.01374
+céramique,57141,785,0.01374
+sculpture,50139,617,0.01231
+ethnologie,76745,786,0.01024
+photographie,109472,922,0.00842
+costume - accessoires du costume,26703,101,0.00378
+numismatique,53053,105,0.00198
+archéologie,105889,148,0.0014
+romain,10016,13,0.0013
+gallo-romain,14614,17,0.00116
+art contemporain,22875,16,0.0007
 "manuscrits, imprimés, reliure",22125,2,9e-05
 arts graphiques,152140,4,3e-05
 néolithique,19369,0,0.0

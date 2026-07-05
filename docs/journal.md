@@ -2,6 +2,19 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-05 — P2-T1 et P2-T2 : recouvrements, typologie validée, lexique v2
+
+- P2-T1 : Venn chiffré, règles de non-addition validées par l'utilisateur.
+- P2-T2 : échelle à 3 niveaux validée (« Presque lui » / « Autour de lui » /
+  « Son style, sans lui »), trois arbitrages rendus (atelier → beaux-arts
+  seulement, écoles-lieux écartées, ? au niveau 1).
+- Lexique v2 : restriction par domaine (post-traitement dans detections(),
+  colonne Domaine désormais exigée), liste versionnée des écoles-lieux,
+  deux nouvelles familles écartées. 35 tests passent.
+- Recomptages : doute 25 220 → **24 507** ; écartés totaux 1 868 ;
+  Venn v2 : 66 420 touchées, doute + révision 4 615.
+- Prochaine étape : P2-T3, pipeline d'exports JSON pour la restitution.
+
 ## 2026-07-05 — GO : phase 1 close, ouverture de la phase 2
 
 - GO validé par l'utilisateur : la phase 1 (test go/no-go) est close.
