@@ -258,6 +258,32 @@ ailleurs dans Joconde — ex. Besançon (M0332), `Géricault (genre de)` sur un
 « Naufrage », plus de vraies études pour le Radeau. Le phénomène existe ; c'est
 Alençon qui manque, faute de versement.
 
+### Vérification approfondie (2026-07-05, à la demande de l'utilisateur)
+
+La section « beaux-arts » fait pourtant partie intégrante du musée
+(museedentelle.cu-alencon.fr) : l'absence de tableaux méritait un contrôle
+serré. Trois recherches convergentes sur le CSV complet :
+- par **code muséofile** `M0694` (toutes villes confondues) : **109 notices**,
+  toutes à Alençon → pas de second code caché ;
+- par **nom de musée contenant « dentelle »** : 109 notices, uniquement M0694 →
+  un seul établissement ;
+- domaines beaux-arts parmi ces 109 : **1 peinture, 2 beaux-arts, 3 sculpture,
+  0 estampe** — le reste est dentellerie/costume/textile.
+
+**Confirmation par source indépendante** : l'API du ministère
+(`data.culture.gouv.fr`, dataset `base-joconde-extrait`) renvoie
+**exactement 109** notices pour `code_museofile='M0694'`. Le chiffre est stable,
+ce n'est pas un artefact de notre CSV.
+
+**Est-ce possible / normal ? Oui.** Le versement dans Joconde est volontaire et
+souvent partiel : un musée numérise et verse d'abord une collection, pas
+forcément toutes. Ici la logique est même lisible — Alençon est mondialement
+connu pour son **Point d'Alençon** (dentelle, patrimoine immatériel UNESCO) :
+le musée a versé sa collection phare, la dentelle, et pas (encore) ses
+peintures. Ces dernières sont numérisées, mais dans la **base régionale de
+Normandie**, système distinct non agrégé à Joconde. C'est un cas d'école du
+versement sélectif — le socle même de la limite affichée du projet.
+
 ## P2-T1 — Recouvrements entre catégories (2026-07-05)
 
 Source : `src/count_overlaps.py` → `data/exports/recouvrements.json`.
