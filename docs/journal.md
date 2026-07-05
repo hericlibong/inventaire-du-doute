@@ -2,6 +2,18 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-05 — P2-T3 : pipeline d'exports + deux découvertes
+
+- src/build_exports.py : 4 JSON légers (provenance 0,5 Ko, niveaux 2 Ko,
+  musees 182 Ko, territoires 14 Ko). Provenance datée intégrée. Niveaux en
+  partition stricte (chaque doute au niveau le plus léger). Bug NaN→null corrigé.
+- Découverte 1 : le muséum de Nice = 5 791 doutes, tous « Barla (attribué à) »
+  (planches naturalistes), soit 23,6 % du doute national — un singleton qui
+  écrase le classement. Hors Barla : ~18 716. Décision utilisateur à prendre.
+- Découverte 2 : Alençon, le cas fondateur, a 109 notices versées et 0 doute —
+  preuve vivante de la limite « versements incomplets ». Matière pour P2-T4.
+- En attente : validation de la structure + arbitrage monoculture.
+
 ## 2026-07-05 — P2-T1 et P2-T2 : recouvrements, typologie validée, lexique v2
 
 - P2-T1 : Venn chiffré, règles de non-addition validées par l'utilisateur.

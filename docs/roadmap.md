@@ -102,10 +102,14 @@ Chaque ⏸ est un point de validation utilisateur : on s'y arrête.
       **doute = 24 507** (2,39 % base / 2,91 % avec auteur) ;
       Venn v2 : 66 420 touchées, doute + révision = 4 615
 
-### P2-T3 — Pipeline d'exports pour la restitution
-- [ ] CSV → JSON légers agrégés : par musée (toujours avec total versé),
-      par famille/niveau, par domaine, par département/région
-- [ ] ⏸ Validation : structure des JSON revue avant industrialisation
+### P2-T3 — Pipeline d'exports pour la restitution ✅ (en attente de validation)
+- [x] src/build_exports.py : CSV → 4 JSON légers dans data/exports/web/
+      (provenance, niveaux, musees avec total versé + coords, territoires)
+- [x] Provenance datée intégrée (version 2026-07-01, ETag)
+- [x] Partition des niveaux vérifiée (20 014 + 3 537 + 956 = 24 507)
+- [x] Deux découvertes remontées (docs/donnees.md) : monoculture Barla/Nice
+      (23,6 % du doute), Alençon absent des données (109 notices, 0 doute)
+- [ ] ⏸ Validation : structure des JSON + décision sur la monoculture
 
 ### P2-T4 — Cas racontables
 - [ ] Fiches des cas d'ouverture (dont Alençon, notice publique uniquement)

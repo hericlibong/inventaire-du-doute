@@ -211,6 +211,34 @@ plus gros volume (14 170 notices).
 Le périmètre beaux-arts concentre 21 161 des 25 220 doutes (83,9 %).
 Peinture : 5,33 % de taux de doute (v0 : 6,00 %).
 
+## P2-T3 — Deux découvertes majeures à l'export (2026-07-05)
+
+### 1. La monoculture de Nice fausse le chiffre national
+
+Le muséum d'histoire naturelle de Nice arrive **en tête du doute national**
+(5 791 notices, devant le Louvre) — et ces 5 791 doutes sont **un seul auteur**,
+`Barla Jean-Baptiste (1817-1896) (attribué à)` : des planches naturalistes
+(mycologie, botanique) où un catalogueur a appliqué « (attribué à) » à toute
+une collection. Classées en « dessin », elles passent le filtre beaux-arts.
+
+**À lui seul, ce cas = 23,6 % du doute national (5 791 / 24 507).** Or c'est un
+singleton : la 2e concentration (musée Westercamp, 382) est 15× plus petite,
+et après Barla tout est sous 2 %. Ce n'est pas un phénomène, c'est un artefact
+documentaire — un même geste de catalogage répété des milliers de fois.
+Hors cas Barla, le doute national tombe à **~18 716 notices**.
+
+Enjeu : ni la carte ni aucun classement ne doivent laisser un musée écraser
+tous les autres. Décision utilisateur requise (voir docs/decisions.md).
+
+### 2. Le cas Alençon est absent des données ouvertes
+
+Le musée des beaux-arts et de la dentelle d'Alençon (M0694), point d'entrée
+narratif du projet : **109 notices versées, 0 doute détecté**. Les tableaux
+liés au Radeau de la Méduse ne sont pas (ou pas détectablement) dans Joconde.
+Ce n'est pas un échec — c'est **l'illustration vivante de la limite centrale
+du projet** : les chiffres ne reflètent que ce qui a été versé, et Alençon n'a
+versé que 109 notices. À exploiter tel quel dans le récit (P2-T4).
+
 ## P2-T1 — Recouvrements entre catégories (2026-07-05)
 
 Source : `src/count_overlaps.py` → `data/exports/recouvrements.json`.

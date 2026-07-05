@@ -1,0 +1,797 @@
+{
+ "departements": [
+  {
+   "departement": "Paris",
+   "notices_versees": 451298,
+   "doute": 6094,
+   "musees": 37,
+   "part_doute": 0.0135
+  },
+  {
+   "departement": "Alpes-Maritimes",
+   "notices_versees": 14642,
+   "doute": 5831,
+   "musees": 23,
+   "part_doute": 0.3982
+  },
+  {
+   "departement": "Vosges",
+   "notices_versees": 12953,
+   "doute": 1171,
+   "musees": 7,
+   "part_doute": 0.0904
+  },
+  {
+   "departement": "Bas-Rhin",
+   "notices_versees": 24465,
+   "doute": 728,
+   "musees": 15,
+   "part_doute": 0.0298
+  },
+  {
+   "departement": "Doubs",
+   "notices_versees": 18775,
+   "doute": 726,
+   "musees": 8,
+   "part_doute": 0.0387
+  },
+  {
+   "departement": "Oise",
+   "notices_versees": 34044,
+   "doute": 713,
+   "musees": 12,
+   "part_doute": 0.0209
+  },
+  {
+   "departement": "Bouches-du-Rhône",
+   "notices_versees": 37462,
+   "doute": 638,
+   "musees": 18,
+   "part_doute": 0.017
+  },
+  {
+   "departement": "Côte-d'Or",
+   "notices_versees": 15293,
+   "doute": 575,
+   "musees": 12,
+   "part_doute": 0.0376
+  },
+  {
+   "departement": "Saône-et-Loire",
+   "notices_versees": 29699,
+   "doute": 547,
+   "musees": 13,
+   "part_doute": 0.0184
+  },
+  {
+   "departement": "Aube",
+   "notices_versees": 6406,
+   "doute": 469,
+   "musees": 3,
+   "part_doute": 0.0732
+  },
+  {
+   "departement": "Nord",
+   "notices_versees": 20853,
+   "doute": 353,
+   "musees": 17,
+   "part_doute": 0.0169
+  },
+  {
+   "departement": "Hauts-de-Seine",
+   "notices_versees": 23399,
+   "doute": 346,
+   "musees": 8,
+   "part_doute": 0.0148
+  },
+  {
+   "departement": "Seine-Maritime",
+   "notices_versees": 14909,
+   "doute": 331,
+   "musees": 24,
+   "part_doute": 0.0222
+  },
+  {
+   "departement": "Yvelines",
+   "notices_versees": 45460,
+   "doute": 330,
+   "musees": 9,
+   "part_doute": 0.0073
+  },
+  {
+   "departement": "Gironde",
+   "notices_versees": 13954,
+   "doute": 314,
+   "musees": 6,
+   "part_doute": 0.0225
+  },
+  {
+   "departement": "Tarn-et-Garonne",
+   "notices_versees": 9921,
+   "doute": 289,
+   "musees": 2,
+   "part_doute": 0.0291
+  },
+  {
+   "departement": "Isère",
+   "notices_versees": 4807,
+   "doute": 287,
+   "musees": 6,
+   "part_doute": 0.0597
+  },
+  {
+   "departement": "Haute-Loire",
+   "notices_versees": 3822,
+   "doute": 272,
+   "musees": 1,
+   "part_doute": 0.0712
+  },
+  {
+   "departement": "Marne",
+   "notices_versees": 3368,
+   "doute": 264,
+   "musees": 5,
+   "part_doute": 0.0784
+  },
+  {
+   "departement": "Loire-Atlantique",
+   "notices_versees": 8563,
+   "doute": 257,
+   "musees": 5,
+   "part_doute": 0.03
+  },
+  {
+   "departement": "Ille-et-Vilaine",
+   "notices_versees": 9734,
+   "doute": 248,
+   "musees": 4,
+   "part_doute": 0.0255
+  },
+  {
+   "departement": "Jura",
+   "notices_versees": 8354,
+   "doute": 224,
+   "musees": 10,
+   "part_doute": 0.0268
+  },
+  {
+   "departement": "Pyrénées-Atlantiques",
+   "notices_versees": 5804,
+   "doute": 211,
+   "musees": 5,
+   "part_doute": 0.0364
+  },
+  {
+   "departement": "Maine-et-Loire",
+   "notices_versees": 11083,
+   "doute": 192,
+   "musees": 5,
+   "part_doute": 0.0173
+  },
+  {
+   "departement": "Savoie",
+   "notices_versees": 1690,
+   "doute": 192,
+   "musees": 4,
+   "part_doute": 0.1136
+  },
+  {
+   "departement": "Val-d'Oise",
+   "notices_versees": 5219,
+   "doute": 187,
+   "musees": 8,
+   "part_doute": 0.0358
+  },
+  {
+   "departement": "Loiret",
+   "notices_versees": 5467,
+   "doute": 161,
+   "musees": 7,
+   "part_doute": 0.0294
+  },
+  {
+   "departement": "Calvados",
+   "notices_versees": 4946,
+   "doute": 156,
+   "musees": 6,
+   "part_doute": 0.0315
+  },
+  {
+   "departement": "Pas-de-Calais",
+   "notices_versees": 20504,
+   "doute": 154,
+   "musees": 6,
+   "part_doute": 0.0075
+  },
+  {
+   "departement": "Somme",
+   "notices_versees": 4845,
+   "doute": 151,
+   "musees": 4,
+   "part_doute": 0.0312
+  },
+  {
+   "departement": "Haute-Garonne",
+   "notices_versees": 7642,
+   "doute": 149,
+   "musees": 8,
+   "part_doute": 0.0195
+  },
+  {
+   "departement": "Haut-Rhin",
+   "notices_versees": 3220,
+   "doute": 141,
+   "musees": 7,
+   "part_doute": 0.0438
+  },
+  {
+   "departement": "Aisne",
+   "notices_versees": 14225,
+   "doute": 129,
+   "musees": 7,
+   "part_doute": 0.0091
+  },
+  {
+   "departement": "Sarthe",
+   "notices_versees": 2876,
+   "doute": 102,
+   "musees": 1,
+   "part_doute": 0.0355
+  },
+  {
+   "departement": "Seine-et-Marne",
+   "notices_versees": 3176,
+   "doute": 102,
+   "musees": 11,
+   "part_doute": 0.0321
+  },
+  {
+   "departement": "Finistère",
+   "notices_versees": 2511,
+   "doute": 94,
+   "musees": 6,
+   "part_doute": 0.0374
+  },
+  {
+   "departement": "Loire",
+   "notices_versees": 3305,
+   "doute": 91,
+   "musees": 5,
+   "part_doute": 0.0275
+  },
+  {
+   "departement": "Moselle",
+   "notices_versees": 3105,
+   "doute": 89,
+   "musees": 4,
+   "part_doute": 0.0287
+  },
+  {
+   "departement": "Nièvre",
+   "notices_versees": 4933,
+   "doute": 85,
+   "musees": 4,
+   "part_doute": 0.0172
+  },
+  {
+   "departement": "Meurthe-et-Moselle",
+   "notices_versees": 4789,
+   "doute": 77,
+   "musees": 7,
+   "part_doute": 0.0161
+  },
+  {
+   "departement": "Ain",
+   "notices_versees": 1914,
+   "doute": 69,
+   "musees": 2,
+   "part_doute": 0.0361
+  },
+  {
+   "departement": "Cher",
+   "notices_versees": 3084,
+   "doute": 69,
+   "musees": 8,
+   "part_doute": 0.0224
+  },
+  {
+   "departement": "Meuse",
+   "notices_versees": 11724,
+   "doute": 58,
+   "musees": 9,
+   "part_doute": 0.0049
+  },
+  {
+   "departement": "Mayenne",
+   "notices_versees": 2206,
+   "doute": 57,
+   "musees": 2,
+   "part_doute": 0.0258
+  },
+  {
+   "departement": "Loir-et-Cher",
+   "notices_versees": 5467,
+   "doute": 57,
+   "musees": 5,
+   "part_doute": 0.0104
+  },
+  {
+   "departement": "Manche",
+   "notices_versees": 3916,
+   "doute": 56,
+   "musees": 9,
+   "part_doute": 0.0143
+  },
+  {
+   "departement": "Gard",
+   "notices_versees": 5380,
+   "doute": 55,
+   "musees": 8,
+   "part_doute": 0.0102
+  },
+  {
+   "departement": "Val-de-Marne",
+   "notices_versees": 2351,
+   "doute": 53,
+   "musees": 3,
+   "part_doute": 0.0225
+  },
+  {
+   "departement": "Rhône",
+   "notices_versees": 3317,
+   "doute": 52,
+   "musees": 8,
+   "part_doute": 0.0157
+  },
+  {
+   "departement": "Vaucluse",
+   "notices_versees": 819,
+   "doute": 52,
+   "musees": 8,
+   "part_doute": 0.0635
+  },
+  {
+   "departement": "Eure",
+   "notices_versees": 4197,
+   "doute": 51,
+   "musees": 7,
+   "part_doute": 0.0122
+  },
+  {
+   "departement": "Aude",
+   "notices_versees": 1740,
+   "doute": 50,
+   "musees": 2,
+   "part_doute": 0.0287
+  },
+  {
+   "departement": "Yonne",
+   "notices_versees": 5750,
+   "doute": 46,
+   "musees": 3,
+   "part_doute": 0.008
+  },
+  {
+   "departement": "Haute-Saône",
+   "notices_versees": 1634,
+   "doute": 39,
+   "musees": 2,
+   "part_doute": 0.0239
+  },
+  {
+   "departement": "Vendée",
+   "notices_versees": 2128,
+   "doute": 35,
+   "musees": 5,
+   "part_doute": 0.0164
+  },
+  {
+   "departement": "Corse-du-Sud",
+   "notices_versees": 117,
+   "doute": 34,
+   "musees": 3,
+   "part_doute": 0.2906
+  },
+  {
+   "departement": "Pyrénées-Orientales",
+   "notices_versees": 2152,
+   "doute": 32,
+   "musees": 5,
+   "part_doute": 0.0149
+  },
+  {
+   "departement": "Tarn",
+   "notices_versees": 1407,
+   "doute": 30,
+   "musees": 3,
+   "part_doute": 0.0213
+  },
+  {
+   "departement": "Puy-de-Dôme",
+   "notices_versees": 4452,
+   "doute": 30,
+   "musees": 4,
+   "part_doute": 0.0067
+  },
+  {
+   "departement": "Indre-et-Loire",
+   "notices_versees": 3420,
+   "doute": 24,
+   "musees": 8,
+   "part_doute": 0.007
+  },
+  {
+   "departement": "Indre",
+   "notices_versees": 4623,
+   "doute": 21,
+   "musees": 6,
+   "part_doute": 0.0045
+  },
+  {
+   "departement": "Hérault",
+   "notices_versees": 1354,
+   "doute": 10,
+   "musees": 7,
+   "part_doute": 0.0074
+  },
+  {
+   "departement": "Hautes-Alpes",
+   "notices_versees": 421,
+   "doute": 10,
+   "musees": 1,
+   "part_doute": 0.0238
+  },
+  {
+   "departement": "Allier",
+   "notices_versees": 20,
+   "doute": 7,
+   "musees": 1,
+   "part_doute": 0.35
+  },
+  {
+   "departement": "Côtes-d'Armor",
+   "notices_versees": 1915,
+   "doute": 5,
+   "musees": 1,
+   "part_doute": 0.0026
+  },
+  {
+   "departement": "Morbihan",
+   "notices_versees": 8155,
+   "doute": 5,
+   "musees": 4,
+   "part_doute": 0.0006
+  },
+  {
+   "departement": "Lot-et-Garonne",
+   "notices_versees": 90,
+   "doute": 4,
+   "musees": 2,
+   "part_doute": 0.0444
+  },
+  {
+   "departement": "Gers",
+   "notices_versees": 407,
+   "doute": 4,
+   "musees": 2,
+   "part_doute": 0.0098
+  },
+  {
+   "departement": "Haute-Marne",
+   "notices_versees": 124,
+   "doute": 4,
+   "musees": 3,
+   "part_doute": 0.0323
+  },
+  {
+   "departement": "Corrèze",
+   "notices_versees": 49,
+   "doute": 3,
+   "musees": 1,
+   "part_doute": 0.0612
+  },
+  {
+   "departement": "Guadeloupe",
+   "notices_versees": 182,
+   "doute": 3,
+   "musees": 1,
+   "part_doute": 0.0165
+  },
+  {
+   "departement": "Landes",
+   "notices_versees": 614,
+   "doute": 3,
+   "musees": 1,
+   "part_doute": 0.0049
+  },
+  {
+   "departement": "La Réunion",
+   "notices_versees": 96,
+   "doute": 3,
+   "musees": 2,
+   "part_doute": 0.0312
+  },
+  {
+   "departement": "Aveyron",
+   "notices_versees": 1142,
+   "doute": 2,
+   "musees": 2,
+   "part_doute": 0.0018
+  },
+  {
+   "departement": "Essonne",
+   "notices_versees": 95,
+   "doute": 1,
+   "musees": 1,
+   "part_doute": 0.0105
+  },
+  {
+   "departement": "Creuse",
+   "notices_versees": 13,
+   "doute": 1,
+   "musees": 1,
+   "part_doute": 0.0769
+  },
+  {
+   "departement": "Dordogne",
+   "notices_versees": 34,
+   "doute": 1,
+   "musees": 3,
+   "part_doute": 0.0294
+  },
+  {
+   "departement": "Vienne",
+   "notices_versees": 1131,
+   "doute": 1,
+   "musees": 5,
+   "part_doute": 0.0009
+  },
+  {
+   "departement": "Alpes-de-Haute-Provence",
+   "notices_versees": 2348,
+   "doute": 0,
+   "musees": 6,
+   "part_doute": 0.0
+  },
+  {
+   "departement": "Charente",
+   "notices_versees": 7,
+   "doute": 0,
+   "musees": 2,
+   "part_doute": 0.0
+  },
+  {
+   "departement": "Charente-Maritime",
+   "notices_versees": 4,
+   "doute": 0,
+   "musees": 3,
+   "part_doute": 0.0
+  },
+  {
+   "departement": "Guyane",
+   "notices_versees": 79,
+   "doute": 0,
+   "musees": 1,
+   "part_doute": 0.0
+  },
+  {
+   "departement": "Eure-et-Loir",
+   "notices_versees": 3594,
+   "doute": 0,
+   "musees": 4,
+   "part_doute": 0.0
+  },
+  {
+   "departement": "Deux-Sèvres",
+   "notices_versees": 18,
+   "doute": 0,
+   "musees": 2,
+   "part_doute": 0.0
+  },
+  {
+   "departement": "Drôme",
+   "notices_versees": 4780,
+   "doute": 0,
+   "musees": 2,
+   "part_doute": 0.0
+  },
+  {
+   "departement": "Ardennes",
+   "notices_versees": 594,
+   "doute": 0,
+   "musees": 3,
+   "part_doute": 0.0
+  },
+  {
+   "departement": "Haute-Savoie",
+   "notices_versees": 518,
+   "doute": 0,
+   "musees": 2,
+   "part_doute": 0.0
+  },
+  {
+   "departement": "Haute-Vienne",
+   "notices_versees": 789,
+   "doute": 0,
+   "musees": 3,
+   "part_doute": 0.0
+  },
+  {
+   "departement": "Hautes-Pyrénées",
+   "notices_versees": 4,
+   "doute": 0,
+   "musees": 2,
+   "part_doute": 0.0
+  },
+  {
+   "departement": "Martinique",
+   "notices_versees": 53,
+   "doute": 0,
+   "musees": 2,
+   "part_doute": 0.0
+  },
+  {
+   "departement": "Lot",
+   "notices_versees": 42,
+   "doute": 0,
+   "musees": 2,
+   "part_doute": 0.0
+  },
+  {
+   "departement": "Haute-Corse",
+   "notices_versees": 33,
+   "doute": 0,
+   "musees": 1,
+   "part_doute": 0.0
+  },
+  {
+   "departement": "Orne",
+   "notices_versees": 171,
+   "doute": 0,
+   "musees": 2,
+   "part_doute": 0.0
+  },
+  {
+   "departement": "Territoire-de-Belfort",
+   "notices_versees": 130,
+   "doute": 0,
+   "musees": 1,
+   "part_doute": 0.0
+  },
+  {
+   "departement": "Territoire de Belfort",
+   "notices_versees": 116,
+   "doute": 0,
+   "musees": 2,
+   "part_doute": 0.0
+  },
+  {
+   "departement": "Seine-Saint-Denis",
+   "notices_versees": 693,
+   "doute": 0,
+   "musees": 4,
+   "part_doute": 0.0
+  },
+  {
+   "departement": "Var",
+   "notices_versees": 510,
+   "doute": 0,
+   "musees": 5,
+   "part_doute": 0.0
+  }
+ ],
+ "regions": [
+  {
+   "region": "Ile-de-France",
+   "notices_versees": 250031,
+   "doute": 6749,
+   "musees": 59,
+   "part_doute": 0.027
+  },
+  {
+   "region": "Provence-Alpes-Côte d'Azur",
+   "notices_versees": 46751,
+   "doute": 6513,
+   "musees": 46,
+   "part_doute": 0.1393
+  },
+  {
+   "region": "Grand Est",
+   "notices_versees": 70748,
+   "doute": 3001,
+   "musees": 63,
+   "part_doute": 0.0424
+  },
+  {
+   "region": "Bourgogne-Franche-Comté",
+   "notices_versees": 84684,
+   "doute": 2242,
+   "musees": 55,
+   "part_doute": 0.0265
+  },
+  {
+   "region": "Hauts-de-France",
+   "notices_versees": 94471,
+   "doute": 1500,
+   "musees": 46,
+   "part_doute": 0.0159
+  },
+  {
+   "region": "Auvergne-Rhône-Alpes",
+   "notices_versees": 28625,
+   "doute": 1000,
+   "musees": 35,
+   "part_doute": 0.0349
+  },
+  {
+   "region": "Pays-de-la-Loire",
+   "notices_versees": 26856,
+   "doute": 643,
+   "musees": 18,
+   "part_doute": 0.0239
+  },
+  {
+   "region": "Occitanie",
+   "notices_versees": 31191,
+   "doute": 621,
+   "musees": 43,
+   "part_doute": 0.0199
+  },
+  {
+   "region": "Normandie",
+   "notices_versees": 28139,
+   "doute": 594,
+   "musees": 48,
+   "part_doute": 0.0211
+  },
+  {
+   "region": "Nouvelle-Aquitaine",
+   "notices_versees": 22507,
+   "doute": 538,
+   "musees": 34,
+   "part_doute": 0.0239
+  },
+  {
+   "region": "Île-de-France",
+   "notices_versees": 281660,
+   "doute": 364,
+   "musees": 22,
+   "part_doute": 0.0013
+  },
+  {
+   "region": "Bretagne",
+   "notices_versees": 22315,
+   "doute": 352,
+   "musees": 15,
+   "part_doute": 0.0158
+  },
+  {
+   "region": "Centre-Val de Loire",
+   "notices_versees": 25655,
+   "doute": 332,
+   "musees": 38,
+   "part_doute": 0.0129
+  },
+  {
+   "region": "Corse",
+   "notices_versees": 150,
+   "doute": 34,
+   "musees": 4,
+   "part_doute": 0.2267
+  },
+  {
+   "region": "Provence-Alpes-Côte-d'Azur",
+   "notices_versees": 9451,
+   "doute": 18,
+   "musees": 15,
+   "part_doute": 0.0019
+  },
+  {
+   "region": "DROM",
+   "notices_versees": 410,
+   "doute": 6,
+   "musees": 6,
+   "part_doute": 0.0146
+  }
+ ]
+}

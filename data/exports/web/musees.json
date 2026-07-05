@@ -1,0 +1,11636 @@
+[
+ {
+  "code_museofile": "M7050",
+  "nom": "muséum d'histoire naturelle",
+  "ville": "Nice",
+  "departement": "Alpes-Maritimes",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "coord": [
+   43.70192,
+   7.27957
+  ],
+  "notices_versees": 6818,
+  "doute": 5791,
+  "part_doute": 0.8494,
+  "niveaux": [
+   5791,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M5031",
+  "nom": "musée du Louvre",
+  "ville": "Paris",
+  "departement": "Paris",
+  "region": "Ile-de-France",
+  "coord": [
+   48.86079,
+   2.33782
+  ],
+  "notices_versees": 142076,
+  "doute": 5602,
+  "part_doute": 0.0394,
+  "niveaux": [
+   3293,
+   1777,
+   532
+  ],
+  "copie": 5088,
+  "revision": 15898
+ },
+ {
+  "code_museofile": "M0537",
+  "nom": "musée de l'image",
+  "ville": "Epinal",
+  "departement": "Vosges",
+  "region": "Grand Est",
+  "coord": [
+   48.18363,
+   6.44599
+  ],
+  "notices_versees": 10378,
+  "doute": 1111,
+  "part_doute": 0.1071,
+  "niveaux": [
+   1111,
+   0,
+   0
+  ],
+  "copie": 279,
+  "revision": 74
+ },
+ {
+  "code_museofile": "M0332",
+  "nom": "musée des beaux-arts et d'archéologie",
+  "ville": "Besançon",
+  "departement": "Doubs",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   47.24005,
+   6.02294
+  ],
+  "notices_versees": 12879,
+  "doute": 705,
+  "part_doute": 0.0547,
+  "niveaux": [
+   573,
+   97,
+   35
+  ],
+  "copie": 535,
+  "revision": 1509
+ },
+ {
+  "code_museofile": "M0303",
+  "nom": "musée des beaux-arts et d’archéologie",
+  "ville": "Troyes",
+  "departement": "Aube",
+  "region": "Grand Est",
+  "coord": [
+   48.30064,
+   4.08003
+  ],
+  "notices_versees": 5809,
+  "doute": 469,
+  "part_doute": 0.0807,
+  "niveaux": [
+   455,
+   13,
+   1
+  ],
+  "copie": 300,
+  "revision": 250
+ },
+ {
+  "code_museofile": "M0022",
+  "nom": "musée Westercamp",
+  "ville": "Wissembourg",
+  "departement": "Bas-Rhin",
+  "region": "Grand Est",
+  "coord": [
+   49.03881,
+   7.94434
+  ],
+  "notices_versees": 3156,
+  "doute": 446,
+  "part_doute": 0.1413,
+  "niveaux": [
+   446,
+   0,
+   0
+  ],
+  "copie": 2,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M5052",
+  "nom": "musée Condé",
+  "ville": "Chantilly",
+  "departement": "Oise",
+  "region": "Hauts-de-France",
+  "coord": [
+   49.19413,
+   2.48512
+  ],
+  "notices_versees": 14769,
+  "doute": 406,
+  "part_doute": 0.0275,
+  "niveaux": [
+   268,
+   135,
+   3
+  ],
+  "copie": 916,
+  "revision": 351
+ },
+ {
+  "code_museofile": "M5011",
+  "nom": "musée national Magnin",
+  "ville": "Dijon",
+  "departement": "Côte-d'Or",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   47.32096,
+   5.04219
+  ],
+  "notices_versees": 2141,
+  "doute": 289,
+  "part_doute": 0.135,
+  "niveaux": [
+   216,
+   42,
+   31
+  ],
+  "copie": 166,
+  "revision": 662
+ },
+ {
+  "code_museofile": "M0607",
+  "nom": "musée Ingres Bourdelle",
+  "ville": "Montauban",
+  "departement": "Tarn-et-Garonne",
+  "region": "Occitanie",
+  "coord": [
+   44.01709,
+   1.35188
+  ],
+  "notices_versees": 9899,
+  "doute": 289,
+  "part_doute": 0.0292,
+  "niveaux": [
+   253,
+   20,
+   16
+  ],
+  "copie": 497,
+  "revision": 124
+ },
+ {
+  "code_museofile": "M5019",
+  "nom": "musée national de la céramique",
+  "ville": "Sèvres",
+  "departement": "Hauts-de-Seine",
+  "region": "Île-de-France",
+  "coord": [
+   48.81704,
+   2.20573
+  ],
+  "notices_versees": 17692,
+  "doute": 287,
+  "part_doute": 0.0162,
+  "niveaux": [
+   280,
+   7,
+   0
+  ],
+  "copie": 95,
+  "revision": 4
+ },
+ {
+  "code_museofile": "M0994",
+  "nom": "musée de Grenoble",
+  "ville": "Grenoble",
+  "departement": "Isère",
+  "region": "Auvergne-Rhône-Alpes",
+  "coord": [
+   45.19403,
+   5.73209
+  ],
+  "notices_versees": 3847,
+  "doute": 279,
+  "part_doute": 0.0725,
+  "niveaux": [
+   244,
+   15,
+   20
+  ],
+  "copie": 185,
+  "revision": 605
+ },
+ {
+  "code_museofile": "M0116",
+  "nom": "musée Crozatier",
+  "ville": "Le Puy-en-Velay",
+  "departement": "Haute-Loire",
+  "region": "Auvergne-Rhône-Alpes",
+  "coord": [
+   45.03867,
+   3.88346
+  ],
+  "notices_versees": 3822,
+  "doute": 272,
+  "part_doute": 0.0712,
+  "niveaux": [
+   264,
+   6,
+   2
+  ],
+  "copie": 191,
+  "revision": 101
+ },
+ {
+  "code_museofile": "M0170",
+  "nom": "écomusée de la communauté Le Creusot - Monceau-les-Mines",
+  "ville": "Le Creusot",
+  "departement": "Saône-et-Loire",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   46.80448,
+   4.42806
+  ],
+  "notices_versees": 10083,
+  "doute": 251,
+  "part_doute": 0.0249,
+  "niveaux": [
+   251,
+   0,
+   0
+  ],
+  "copie": 10,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0137",
+  "nom": "musée des beaux-arts",
+  "ville": "Dijon",
+  "departement": "Côte-d'Or",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   47.32136,
+   5.04287
+  ],
+  "notices_versees": 3913,
+  "doute": 240,
+  "part_doute": 0.0613,
+  "niveaux": [
+   179,
+   44,
+   17
+  ],
+  "copie": 229,
+  "revision": 445
+ },
+ {
+  "code_museofile": "M5077",
+  "nom": "musée national des châteaux de Versailles et de Trianon",
+  "ville": "Versailles",
+  "departement": "Yvelines",
+  "region": "Ile-de-France",
+  "coord": [
+   48.80454,
+   2.13405
+  ],
+  "notices_versees": 6487,
+  "doute": 238,
+  "part_doute": 0.0367,
+  "niveaux": [
+   150,
+   88,
+   0
+  ],
+  "copie": 748,
+  "revision": 323
+ },
+ {
+  "code_museofile": "M5002",
+  "nom": "musée des civilisations de l'Europe et de la Méditerranée",
+  "ville": "Marseille",
+  "departement": "Bouches-du-Rhône",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "coord": [
+   43.2969,
+   5.36107
+  ],
+  "notices_versees": 21571,
+  "doute": 236,
+  "part_doute": 0.0109,
+  "niveaux": [
+   151,
+   85,
+   0
+  ],
+  "copie": 358,
+  "revision": 2
+ },
+ {
+  "code_museofile": "M0743",
+  "nom": "musée des Beaux-Arts",
+  "ville": "Nantes",
+  "departement": "Loire-Atlantique",
+  "region": "Pays-de-la-Loire",
+  "coord": [
+   47.21928,
+   -1.5471
+  ],
+  "notices_versees": 5269,
+  "doute": 233,
+  "part_doute": 0.0442,
+  "niveaux": [
+   160,
+   26,
+   47
+  ],
+  "copie": 139,
+  "revision": 8
+ },
+ {
+  "code_museofile": "M0211",
+  "nom": "musée des beaux-arts",
+  "ville": "Rennes",
+  "departement": "Ille-et-Vilaine",
+  "region": "Bretagne",
+  "coord": [
+   48.10984,
+   -1.67498
+  ],
+  "notices_versees": 7987,
+  "doute": 197,
+  "part_doute": 0.0247,
+  "niveaux": [
+   104,
+   56,
+   37
+  ],
+  "copie": 1510,
+  "revision": 829
+ },
+ {
+  "code_museofile": "M1048",
+  "nom": "musée des beaux-arts",
+  "ville": "Chambéry",
+  "departement": "Savoie",
+  "region": "Auvergne-Rhône-Alpes",
+  "coord": [
+   45.5679,
+   5.91931
+  ],
+  "notices_versees": 1687,
+  "doute": 192,
+  "part_doute": 0.1138,
+  "niveaux": [
+   141,
+   49,
+   2
+  ],
+  "copie": 132,
+  "revision": 246
+ },
+ {
+  "code_museofile": "M0311",
+  "nom": "musée des Beaux-Arts de Reims",
+  "ville": "Reims",
+  "departement": "Marne",
+  "region": "Grand Est",
+  "coord": [
+   49.25344,
+   4.03092
+  ],
+  "notices_versees": 1988,
+  "doute": 180,
+  "part_doute": 0.0905,
+  "niveaux": [
+   175,
+   3,
+   2
+  ],
+  "copie": 77,
+  "revision": 195
+ },
+ {
+  "code_museofile": "M0729",
+  "nom": "musée des beaux-arts",
+  "ville": "Rouen",
+  "departement": "Seine-Maritime",
+  "region": "Normandie",
+  "coord": [
+   49.44496,
+   1.09391
+  ],
+  "notices_versees": 3484,
+  "doute": 175,
+  "part_doute": 0.0502,
+  "niveaux": [
+   142,
+   28,
+   5
+  ],
+  "copie": 174,
+  "revision": 375
+ },
+ {
+  "code_museofile": "M0065",
+  "nom": "musée des beaux-arts",
+  "ville": "Bordeaux",
+  "departement": "Gironde",
+  "region": "Nouvelle-Aquitaine",
+  "coord": [
+   44.83806,
+   -0.57941
+  ],
+  "notices_versees": 5213,
+  "doute": 174,
+  "part_doute": 0.0334,
+  "niveaux": [
+   133,
+   38,
+   3
+  ],
+  "copie": 259,
+  "revision": 239
+ },
+ {
+  "code_museofile": "M0748",
+  "nom": "musée des beaux-arts et galerie David-d'Angers",
+  "ville": "Angers",
+  "departement": "Maine-et-Loire",
+  "region": "Pays-de-la-Loire",
+  "coord": [
+   47.46966,
+   -0.55549
+  ],
+  "notices_versees": 8966,
+  "doute": 170,
+  "part_doute": 0.019,
+  "niveaux": [
+   129,
+   40,
+   1
+  ],
+  "copie": 209,
+  "revision": 189
+ },
+ {
+  "code_museofile": "M0347",
+  "nom": "musée des beaux-arts et d'archéologie",
+  "ville": "Dole",
+  "departement": "Jura",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   47.08906,
+   5.4882
+  ],
+  "notices_versees": 1157,
+  "doute": 165,
+  "part_doute": 0.1426,
+  "niveaux": [
+   133,
+   10,
+   22
+  ],
+  "copie": 126,
+  "revision": 93
+ },
+ {
+  "code_museofile": "M0917",
+  "nom": "musée Grobet-Labadié",
+  "ville": "Marseille",
+  "departement": "Bouches-du-Rhône",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "coord": [
+   43.30341,
+   5.39287
+  ],
+  "notices_versees": 1125,
+  "doute": 157,
+  "part_doute": 0.1396,
+  "niveaux": [
+   122,
+   35,
+   0
+  ],
+  "copie": 23,
+  "revision": 41
+ },
+ {
+  "code_museofile": "M0650",
+  "nom": "musée de l'hôtel Sandelin",
+  "ville": "Saint-Omer",
+  "departement": "Pas-de-Calais",
+  "region": "Hauts-de-France",
+  "coord": [
+   50.74901,
+   2.25452
+  ],
+  "notices_versees": 16513,
+  "doute": 152,
+  "part_doute": 0.0092,
+  "niveaux": [
+   138,
+   3,
+   11
+  ],
+  "copie": 109,
+  "revision": 719
+ },
+ {
+  "code_museofile": "M0657",
+  "nom": "musée des beaux-arts",
+  "ville": "Caen",
+  "departement": "Calvados",
+  "region": "Normandie",
+  "coord": [
+   49.18615,
+   -0.36122
+  ],
+  "notices_versees": 4143,
+  "doute": 149,
+  "part_doute": 0.036,
+  "niveaux": [
+   116,
+   30,
+   3
+  ],
+  "copie": 626,
+  "revision": 189
+ },
+ {
+  "code_museofile": "M0619",
+  "nom": "musée de la Chartreuse",
+  "ville": "Douai",
+  "departement": "Nord",
+  "region": "Hauts-de-France",
+  "coord": [
+   50.3744,
+   3.07548
+  ],
+  "notices_versees": 7522,
+  "doute": 148,
+  "part_doute": 0.0197,
+  "niveaux": [
+   59,
+   83,
+   6
+  ],
+  "copie": 368,
+  "revision": 337
+ },
+ {
+  "code_museofile": "M5057",
+  "nom": "musée de la musique",
+  "ville": "Paris",
+  "departement": "Paris",
+  "region": "Ile-de-France",
+  "coord": [
+   48.88931,
+   2.39381
+  ],
+  "notices_versees": 8184,
+  "doute": 146,
+  "part_doute": 0.0178,
+  "niveaux": [
+   143,
+   3,
+   0
+  ],
+  "copie": 13,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M5017",
+  "nom": "musée national du château de Pau",
+  "ville": "Pau",
+  "departement": "Pyrénées-Atlantiques",
+  "region": "Nouvelle-Aquitaine",
+  "coord": [
+   43.2947,
+   -0.37438
+  ],
+  "notices_versees": 3741,
+  "doute": 142,
+  "part_doute": 0.038,
+  "niveaux": [
+   95,
+   46,
+   1
+  ],
+  "copie": 927,
+  "revision": 17
+ },
+ {
+  "code_museofile": "M0172",
+  "nom": "musée des ursulines",
+  "ville": "Mâcon",
+  "departement": "Saône-et-Loire",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   46.30751,
+   4.83316
+  ],
+  "notices_versees": 9355,
+  "doute": 138,
+  "part_doute": 0.0148,
+  "niveaux": [
+   133,
+   3,
+   2
+  ],
+  "copie": 369,
+  "revision": 283
+ },
+ {
+  "code_museofile": "M0805",
+  "nom": "musée Gallé-Juillet",
+  "ville": "Creil",
+  "departement": "Oise",
+  "region": "Hauts-de-France",
+  "coord": [
+   49.26079,
+   2.47339
+  ],
+  "notices_versees": 2641,
+  "doute": 138,
+  "part_doute": 0.0523,
+  "niveaux": [
+   137,
+   0,
+   1
+  ],
+  "copie": 36,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0435",
+  "nom": "musée d'Art et d'Histoire Louis Senlecq",
+  "ville": "L'Isle-Adam",
+  "departement": "Val-d'Oise",
+  "region": "Ile-de-France",
+  "coord": [
+   49.11228,
+   2.21638
+  ],
+  "notices_versees": 1866,
+  "doute": 135,
+  "part_doute": 0.0723,
+  "niveaux": [
+   134,
+   1,
+   0
+  ],
+  "copie": 118,
+  "revision": 1
+ },
+ {
+  "code_museofile": "M0629",
+  "nom": "musée des Beaux-Arts",
+  "ville": "Lille",
+  "departement": "Nord",
+  "region": "Hauts-de-France",
+  "coord": [
+   50.62113,
+   3.06839
+  ],
+  "notices_versees": 2890,
+  "doute": 131,
+  "part_doute": 0.0453,
+  "niveaux": [
+   97,
+   34,
+   0
+  ],
+  "copie": 167,
+  "revision": 286
+ },
+ {
+  "code_museofile": "M0286",
+  "nom": "musée des beaux-arts",
+  "ville": "Orléans",
+  "departement": "Loiret",
+  "region": "Centre-Val de Loire",
+  "coord": [
+   47.90157,
+   1.90861
+  ],
+  "notices_versees": 2682,
+  "doute": 121,
+  "part_doute": 0.0451,
+  "niveaux": [
+   114,
+   5,
+   2
+  ],
+  "copie": 720,
+  "revision": 39
+ },
+ {
+  "code_museofile": "M0812",
+  "nom": "musée de Picardie",
+  "ville": "Amiens",
+  "departement": "Somme",
+  "region": "Hauts-de-France",
+  "coord": [
+   49.89041,
+   2.29597
+  ],
+  "notices_versees": 2372,
+  "doute": 116,
+  "part_doute": 0.0489,
+  "niveaux": [
+   110,
+   4,
+   2
+  ],
+  "copie": 1,
+  "revision": 19
+ },
+ {
+  "code_museofile": "M0562",
+  "nom": "musée des Augustins",
+  "ville": "Toulouse",
+  "departement": "Haute-Garonne",
+  "region": "Occitanie",
+  "coord": [
+   43.60056,
+   1.44589
+  ],
+  "notices_versees": 1380,
+  "doute": 111,
+  "part_doute": 0.0804,
+  "niveaux": [
+   94,
+   13,
+   4
+  ],
+  "copie": 70,
+  "revision": 259
+ },
+ {
+  "code_museofile": "M0066",
+  "nom": "musée des arts décoratifs et du design",
+  "ville": "Bordeaux",
+  "departement": "Gironde",
+  "region": "Nouvelle-Aquitaine",
+  "coord": [
+   44.83896,
+   -0.57969
+  ],
+  "notices_versees": 3576,
+  "doute": 110,
+  "part_doute": 0.0308,
+  "niveaux": [
+   107,
+   0,
+   3
+  ],
+  "copie": 89,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0161",
+  "nom": "musée Rolin",
+  "ville": "Autun",
+  "departement": "Saône-et-Loire",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   46.94572,
+   4.29922
+  ],
+  "notices_versees": 5756,
+  "doute": 104,
+  "part_doute": 0.0181,
+  "niveaux": [
+   81,
+   14,
+   9
+  ],
+  "copie": 52,
+  "revision": 9
+ },
+ {
+  "code_museofile": "M0770",
+  "nom": "musée de Tessé",
+  "ville": "Le Mans",
+  "departement": "Sarthe",
+  "region": "Pays-de-la-Loire",
+  "coord": [
+   48.01112,
+   0.20375
+  ],
+  "notices_versees": 2876,
+  "doute": 102,
+  "part_doute": 0.0355,
+  "niveaux": [
+   82,
+   14,
+   6
+  ],
+  "copie": 111,
+  "revision": 50
+ },
+ {
+  "code_museofile": "M0016",
+  "nom": "musée d'art moderne et contemporain de Strasbourg",
+  "ville": "Strasbourg",
+  "departement": "Bas-Rhin",
+  "region": "Grand Est",
+  "coord": [
+   48.57965,
+   7.73623
+  ],
+  "notices_versees": 12156,
+  "doute": 101,
+  "part_doute": 0.0083,
+  "niveaux": [
+   101,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 7
+ },
+ {
+  "code_museofile": "M0913",
+  "nom": "musée des beaux-arts",
+  "ville": "Marseille",
+  "departement": "Bouches-du-Rhône",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "coord": [
+   43.30472,
+   5.39404
+  ],
+  "notices_versees": 2260,
+  "doute": 100,
+  "part_doute": 0.0442,
+  "niveaux": [
+   82,
+   18,
+   0
+  ],
+  "copie": 79,
+  "revision": 125
+ },
+ {
+  "code_museofile": "M0013",
+  "nom": "cabinet des estampes et des dessins",
+  "ville": "Strasbourg",
+  "departement": "Bas-Rhin",
+  "region": "Grand Est",
+  "coord": [
+   48.58124,
+   7.75054
+  ],
+  "notices_versees": 2548,
+  "doute": 99,
+  "part_doute": 0.0389,
+  "niveaux": [
+   97,
+   1,
+   1
+  ],
+  "copie": 178,
+  "revision": 4
+ },
+ {
+  "code_museofile": "M0044",
+  "nom": "musée du papier peint",
+  "ville": "Rixheim",
+  "departement": "Haut-Rhin",
+  "region": "Grand Est",
+  "coord": [
+   47.74413,
+   7.39742
+  ],
+  "notices_versees": 1212,
+  "doute": 85,
+  "part_doute": 0.0701,
+  "niveaux": [
+   83,
+   2,
+   0
+  ],
+  "copie": 26,
+  "revision": 3
+ },
+ {
+  "code_museofile": "M5044",
+  "nom": "musée Rodin",
+  "ville": "Paris",
+  "departement": "Paris",
+  "region": "Ile-de-France",
+  "coord": [
+   48.85587,
+   2.31598
+  ],
+  "notices_versees": 13395,
+  "doute": 84,
+  "part_doute": 0.0063,
+  "niveaux": [
+   84,
+   0,
+   0
+  ],
+  "copie": 38,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M5013",
+  "nom": "musée national du château de Fontainebleau",
+  "ville": "Fontainebleau",
+  "departement": "Seine-et-Marne",
+  "region": "Ile-de-France",
+  "coord": [
+   48.40281,
+   2.69686
+  ],
+  "notices_versees": 1028,
+  "doute": 81,
+  "part_doute": 0.0788,
+  "niveaux": [
+   63,
+   17,
+   1
+  ],
+  "copie": 155,
+  "revision": 80
+ },
+ {
+  "code_museofile": "M1023",
+  "nom": "musée d'art et industrie",
+  "ville": "Saint-Etienne",
+  "departement": "Loire",
+  "region": "Auvergne-Rhône-Alpes",
+  "coord": [
+   45.43154,
+   4.38748
+  ],
+  "notices_versees": 2500,
+  "doute": 77,
+  "part_doute": 0.0308,
+  "niveaux": [
+   62,
+   15,
+   0
+  ],
+  "copie": 142,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0512",
+  "nom": "musée des Beaux-Arts",
+  "ville": "Nancy",
+  "departement": "Meurthe-et-Moselle",
+  "region": "Grand Est",
+  "coord": [
+   48.69351,
+   6.18243
+  ],
+  "notices_versees": 4646,
+  "doute": 75,
+  "part_doute": 0.0161,
+  "niveaux": [
+   71,
+   3,
+   1
+  ],
+  "copie": 210,
+  "revision": 22
+ },
+ {
+  "code_museofile": "M0207",
+  "nom": "musée des beaux-arts",
+  "ville": "Quimper",
+  "departement": "Finistère",
+  "region": "Bretagne",
+  "coord": [
+   47.99619,
+   -4.10196
+  ],
+  "notices_versees": 336,
+  "doute": 75,
+  "part_doute": 0.2232,
+  "niveaux": [
+   29,
+   9,
+   37
+  ],
+  "copie": 52,
+  "revision": 210
+ },
+ {
+  "code_museofile": "M0019",
+  "nom": "musée des Beaux-Arts",
+  "ville": "Strasbourg",
+  "departement": "Bas-Rhin",
+  "region": "Grand Est",
+  "coord": [
+   48.58123,
+   7.75198
+  ],
+  "notices_versees": 622,
+  "doute": 73,
+  "part_doute": 0.1174,
+  "niveaux": [
+   34,
+   37,
+   2
+  ],
+  "copie": 54,
+  "revision": 65
+ },
+ {
+  "code_museofile": "M0712",
+  "nom": "Château-musée",
+  "ville": "Dieppe",
+  "departement": "Seine-Maritime",
+  "region": "Normandie",
+  "coord": [
+   49.92391,
+   1.07176
+  ],
+  "notices_versees": 1613,
+  "doute": 71,
+  "part_doute": 0.044,
+  "niveaux": [
+   50,
+   21,
+   0
+  ],
+  "copie": 60,
+  "revision": 43
+ },
+ {
+  "code_museofile": "M0400",
+  "nom": "musée Lambinet",
+  "ville": "Versailles",
+  "departement": "Yvelines",
+  "region": "Ile-de-France",
+  "coord": [
+   48.80897,
+   2.13062
+  ],
+  "notices_versees": 1484,
+  "doute": 70,
+  "part_doute": 0.0472,
+  "niveaux": [
+   63,
+   7,
+   0
+  ],
+  "copie": 65,
+  "revision": 18
+ },
+ {
+  "code_museofile": "M0798",
+  "nom": "MUDO - musée de l'Oise",
+  "ville": "Beauvais",
+  "departement": "Oise",
+  "region": "Hauts-de-France",
+  "coord": [
+   49.43279,
+   2.08044
+  ],
+  "notices_versees": 3231,
+  "doute": 68,
+  "part_doute": 0.021,
+  "niveaux": [
+   54,
+   13,
+   1
+  ],
+  "copie": 24,
+  "revision": 35
+ },
+ {
+  "code_museofile": "M5060",
+  "nom": "musée d'Orsay",
+  "ville": "Paris",
+  "departement": "Paris",
+  "region": "Ile-de-France",
+  "coord": [
+   48.85916,
+   2.32367
+  ],
+  "notices_versees": 4111,
+  "doute": 67,
+  "part_doute": 0.0163,
+  "niveaux": [
+   62,
+   4,
+   1
+  ],
+  "copie": 29,
+  "revision": 13
+ },
+ {
+  "code_museofile": "M0963",
+  "nom": "musée de Brou",
+  "ville": "Bourg-en-Bresse",
+  "departement": "Ain",
+  "region": "Auvergne-Rhône-Alpes",
+  "coord": [
+   46.19655,
+   5.23652
+  ],
+  "notices_versees": 1251,
+  "doute": 66,
+  "part_doute": 0.0528,
+  "niveaux": [
+   63,
+   3,
+   0
+  ],
+  "copie": 36,
+  "revision": 78
+ },
+ {
+  "code_museofile": "M0533",
+  "nom": "musée de la faïence et des techniques faïencières",
+  "ville": "Sarreguemines",
+  "departement": "Moselle",
+  "region": "Grand Est",
+  "coord": [
+   49.10907,
+   7.07047
+  ],
+  "notices_versees": 2482,
+  "doute": 62,
+  "part_doute": 0.025,
+  "niveaux": [
+   62,
+   0,
+   0
+  ],
+  "copie": 177,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0766",
+  "nom": "musée du Vieux-Château",
+  "ville": "Laval",
+  "departement": "Mayenne",
+  "region": "Pays-de-la-Loire",
+  "coord": [
+   48.06865,
+   -0.77221
+  ],
+  "notices_versees": 1959,
+  "doute": 57,
+  "part_doute": 0.0291,
+  "niveaux": [
+   53,
+   4,
+   0
+  ],
+  "copie": 31,
+  "revision": 2
+ },
+ {
+  "code_museofile": "M0894",
+  "nom": "musée Granet",
+  "ville": "Aix-en-Provence",
+  "departement": "Bouches-du-Rhône",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "coord": [
+   43.49432,
+   5.41089
+  ],
+  "notices_versees": 391,
+  "doute": 57,
+  "part_doute": 0.1458,
+  "niveaux": [
+   47,
+   9,
+   1
+  ],
+  "copie": 7,
+  "revision": 5
+ },
+ {
+  "code_museofile": "M0915",
+  "nom": "musée Cantini",
+  "ville": "Marseille",
+  "departement": "Bouches-du-Rhône",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "coord": [
+   43.29238,
+   5.37814
+  ],
+  "notices_versees": 2016,
+  "doute": 56,
+  "part_doute": 0.0278,
+  "niveaux": [
+   43,
+   13,
+   0
+  ],
+  "copie": 10,
+  "revision": 10
+ },
+ {
+  "code_museofile": "M0638",
+  "nom": "musée des Beaux-Arts",
+  "ville": "Valenciennes",
+  "departement": "Nord",
+  "region": "Hauts-de-France",
+  "coord": [
+   50.35582,
+   3.53105
+  ],
+  "notices_versees": 1220,
+  "doute": 56,
+  "part_doute": 0.0459,
+  "niveaux": [
+   42,
+   6,
+   8
+  ],
+  "copie": 76,
+  "revision": 119
+ },
+ {
+  "code_museofile": "M0028",
+  "nom": "musée d'Unterlinden",
+  "ville": "Colmar",
+  "departement": "Haut-Rhin",
+  "region": "Grand Est",
+  "coord": [
+   48.07992,
+   7.35546
+  ],
+  "notices_versees": 1357,
+  "doute": 56,
+  "part_doute": 0.0413,
+  "niveaux": [
+   27,
+   29,
+   0
+  ],
+  "copie": 47,
+  "revision": 50
+ },
+ {
+  "code_museofile": "M0809",
+  "nom": "musée d'art et d'archéologie",
+  "ville": "Senlis",
+  "departement": "Oise",
+  "region": "Hauts-de-France",
+  "coord": [
+   49.20653,
+   2.58562
+  ],
+  "notices_versees": 4362,
+  "doute": 56,
+  "part_doute": 0.0128,
+  "niveaux": [
+   52,
+   4,
+   0
+  ],
+  "copie": 172,
+  "revision": 7
+ },
+ {
+  "code_museofile": "M0457",
+  "nom": "musée des beaux-arts",
+  "ville": "Nîmes",
+  "departement": "Gard",
+  "region": "Occitanie",
+  "coord": [
+   43.832,
+   4.36081
+  ],
+  "notices_versees": 510,
+  "doute": 52,
+  "part_doute": 0.102,
+  "niveaux": [
+   39,
+   13,
+   0
+  ],
+  "copie": 17,
+  "revision": 50
+ },
+ {
+  "code_museofile": "M0424",
+  "nom": "musée Adrien Mentienne",
+  "ville": "Bry-sur-Marne",
+  "departement": "Val-de-Marne",
+  "region": "Ile-de-France",
+  "coord": [
+   48.83706,
+   2.52092
+  ],
+  "notices_versees": 695,
+  "doute": 52,
+  "part_doute": 0.0748,
+  "niveaux": [
+   52,
+   0,
+   0
+  ],
+  "copie": 35,
+  "revision": 1
+ },
+ {
+  "code_museofile": "M1031",
+  "nom": "musée des beaux-arts",
+  "ville": "Lyon",
+  "departement": "Rhône",
+  "region": "Auvergne-Rhône-Alpes",
+  "coord": [
+   45.76718,
+   4.83358
+  ],
+  "notices_versees": 1147,
+  "doute": 49,
+  "part_doute": 0.0427,
+  "niveaux": [
+   46,
+   0,
+   3
+  ],
+  "copie": 16,
+  "revision": 5
+ },
+ {
+  "code_museofile": "M0536",
+  "nom": "musée départemental d'art ancien et contemporain",
+  "ville": "Epinal",
+  "departement": "Vosges",
+  "region": "Grand Est",
+  "coord": [
+   48.17326,
+   6.4466
+  ],
+  "notices_versees": 1461,
+  "doute": 48,
+  "part_doute": 0.0329,
+  "niveaux": [
+   36,
+   6,
+   6
+  ],
+  "copie": 36,
+  "revision": 109
+ },
+ {
+  "code_museofile": "M0155",
+  "nom": "musée de la faïence Frédéric Blandin",
+  "ville": "Nevers",
+  "departement": "Nièvre",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   46.98629,
+   3.15504
+  ],
+  "notices_versees": 2746,
+  "doute": 47,
+  "part_doute": 0.0171,
+  "niveaux": [
+   41,
+   2,
+   4
+  ],
+  "copie": 151,
+  "revision": 10
+ },
+ {
+  "code_museofile": "M0216",
+  "nom": "musée du château",
+  "ville": "Vitré",
+  "departement": "Ille-et-Vilaine",
+  "region": "Bretagne",
+  "coord": [
+   48.12588,
+   -1.2118
+  ],
+  "notices_versees": 553,
+  "doute": 47,
+  "part_doute": 0.085,
+  "niveaux": [
+   45,
+   2,
+   0
+  ],
+  "copie": 8,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M5012",
+  "nom": "musée de la Renaissance - château d'Ecouen",
+  "ville": "Ecouen",
+  "departement": "Val-d'Oise",
+  "region": "Ile-de-France",
+  "coord": [
+   49.01586,
+   2.37842
+  ],
+  "notices_versees": 1444,
+  "doute": 46,
+  "part_doute": 0.0319,
+  "niveaux": [
+   27,
+   19,
+   0
+  ],
+  "copie": 20,
+  "revision": 6
+ },
+ {
+  "code_museofile": "M0947",
+  "nom": "musée du Petit Palais",
+  "ville": "Avignon",
+  "departement": "Vaucluse",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "coord": [
+   43.95109,
+   4.80632
+  ],
+  "notices_versees": 458,
+  "doute": 46,
+  "part_doute": 0.1004,
+  "niveaux": [
+   26,
+   20,
+   0
+  ],
+  "copie": 2,
+  "revision": 299
+ },
+ {
+  "code_museofile": "M0312",
+  "nom": "musée Saint-Remi",
+  "ville": "Reims",
+  "departement": "Marne",
+  "region": "Grand Est",
+  "coord": [
+   49.24311,
+   4.04035
+  ],
+  "notices_versees": 277,
+  "doute": 40,
+  "part_doute": 0.1444,
+  "niveaux": [
+   36,
+   1,
+   3
+  ],
+  "copie": 1,
+  "revision": 40
+ },
+ {
+  "code_museofile": "M0354",
+  "nom": "musée départemental Albert Demard",
+  "ville": "Champlitte",
+  "departement": "Haute-Saône",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   47.61707,
+   5.51709
+  ],
+  "notices_versees": 1602,
+  "doute": 39,
+  "part_doute": 0.0243,
+  "niveaux": [
+   39,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 1
+ },
+ {
+  "code_museofile": "M0517",
+  "nom": "musée barrois",
+  "ville": "Bar-le-Duc",
+  "departement": "Meuse",
+  "region": "Grand Est",
+  "coord": [
+   48.7718,
+   5.15607
+  ],
+  "notices_versees": 527,
+  "doute": 39,
+  "part_doute": 0.074,
+  "niveaux": [
+   38,
+   1,
+   0
+  ],
+  "copie": 47,
+  "revision": 35
+ },
+ {
+  "code_museofile": "M0445",
+  "nom": "Palais-musée des Archevêques de Narbonne",
+  "ville": "Narbonne",
+  "departement": "Aude",
+  "region": "Occitanie",
+  "coord": [
+   43.18417,
+   3.00427
+  ],
+  "notices_versees": 1485,
+  "doute": 38,
+  "part_doute": 0.0256,
+  "niveaux": [
+   31,
+   6,
+   1
+  ],
+  "copie": 6,
+  "revision": 25
+ },
+ {
+  "code_museofile": "M5003",
+  "nom": "musée du Moyen Âge - thermes et hôtel de Cluny",
+  "ville": "Paris",
+  "departement": "Paris",
+  "region": "Île-de-France",
+  "coord": [
+   48.85044,
+   2.34455
+  ],
+  "notices_versees": 2486,
+  "doute": 38,
+  "part_doute": 0.0153,
+  "niveaux": [
+   10,
+   28,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0230",
+  "nom": "musée du Berry",
+  "ville": "Bourges",
+  "departement": "Cher",
+  "region": "Centre-Val de Loire",
+  "coord": [
+   47.08373,
+   2.39325
+  ],
+  "notices_versees": 595,
+  "doute": 38,
+  "part_doute": 0.0639,
+  "niveaux": [
+   38,
+   0,
+   0
+  ],
+  "copie": 5,
+  "revision": 2
+ },
+ {
+  "code_museofile": "M5008",
+  "nom": "musée franco-américain du château de Blérancourt",
+  "ville": "Blérancourt",
+  "departement": "Aisne",
+  "region": "Hauts-de-France",
+  "coord": [
+   49.52181,
+   3.15299
+  ],
+  "notices_versees": 648,
+  "doute": 36,
+  "part_doute": 0.0556,
+  "niveaux": [
+   5,
+   31,
+   0
+  ],
+  "copie": 15,
+  "revision": 3
+ },
+ {
+  "code_museofile": "M0776",
+  "nom": "musée municipal",
+  "ville": "La Roche-sur-Yon",
+  "departement": "Vendée",
+  "region": "Pays-de-la-Loire",
+  "coord": [
+   46.66927,
+   -1.42883
+  ],
+  "notices_versees": 1850,
+  "doute": 35,
+  "part_doute": 0.0189,
+  "niveaux": [
+   34,
+   1,
+   0
+  ],
+  "copie": 55,
+  "revision": 2
+ },
+ {
+  "code_museofile": "M0098",
+  "nom": "musée des Beaux-Arts",
+  "ville": "Pau",
+  "departement": "Pyrénées-Atlantiques",
+  "region": "Nouvelle-Aquitaine",
+  "coord": [
+   43.29725,
+   -0.36438
+  ],
+  "notices_versees": 1160,
+  "doute": 35,
+  "part_doute": 0.0302,
+  "niveaux": [
+   33,
+   2,
+   0
+  ],
+  "copie": 24,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0794",
+  "nom": "musée municipal",
+  "ville": "Soissons",
+  "departement": "Aisne",
+  "region": "Hauts-de-France",
+  "coord": [
+   49.38454,
+   3.32723
+  ],
+  "notices_versees": 8576,
+  "doute": 33,
+  "part_doute": 0.0038,
+  "niveaux": [
+   32,
+   1,
+   0
+  ],
+  "copie": 155,
+  "revision": 13
+ },
+ {
+  "code_museofile": "M0701",
+  "nom": "musée Municipal",
+  "ville": "Bernay",
+  "departement": "Eure",
+  "region": "Normandie",
+  "coord": [
+   49.08894,
+   0.59881
+  ],
+  "notices_versees": 855,
+  "doute": 33,
+  "part_doute": 0.0386,
+  "niveaux": [
+   26,
+   1,
+   6
+  ],
+  "copie": 21,
+  "revision": 8
+ },
+ {
+  "code_museofile": "M0329",
+  "nom": "musée d’ethnographie corse",
+  "ville": "Bastia",
+  "departement": "Corse-du-Sud",
+  "region": "Corse",
+  "coord": [
+   42.69315,
+   9.45058
+  ],
+  "notices_versees": 110,
+  "doute": 33,
+  "part_doute": 0.3,
+  "niveaux": [
+   23,
+   9,
+   1
+  ],
+  "copie": 6,
+  "revision": 34
+ },
+ {
+  "code_museofile": "M0725",
+  "nom": "musée des Traditions et Arts Normands",
+  "ville": "Martainville-Epreville",
+  "departement": "Seine-Maritime",
+  "region": "Normandie",
+  "coord": [
+   49.46021,
+   1.29225
+  ],
+  "notices_versees": 737,
+  "doute": 33,
+  "part_doute": 0.0448,
+  "niveaux": [
+   1,
+   32,
+   0
+  ],
+  "copie": 2,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0289",
+  "nom": "musée municipal",
+  "ville": "Pithiviers",
+  "departement": "Loiret",
+  "region": "Centre-Val de Loire",
+  "coord": [
+   48.17252,
+   2.255
+  ],
+  "notices_versees": 1144,
+  "doute": 32,
+  "part_doute": 0.028,
+  "niveaux": [
+   32,
+   0,
+   0
+  ],
+  "copie": 10,
+  "revision": 39
+ },
+ {
+  "code_museofile": "M0491",
+  "nom": "musée Hyacinthe Rigaud",
+  "ville": "Perpignan",
+  "departement": "Pyrénées-Orientales",
+  "region": "Occitanie",
+  "coord": [
+   42.69801,
+   2.89298
+  ],
+  "notices_versees": 731,
+  "doute": 32,
+  "part_doute": 0.0438,
+  "niveaux": [
+   28,
+   3,
+   1
+  ],
+  "copie": 16,
+  "revision": 34
+ },
+ {
+  "code_museofile": "M0790",
+  "nom": "musée d'art et d'archéologie du Pays de Laon",
+  "ville": "Laon",
+  "departement": "Aisne",
+  "region": "Hauts-de-France",
+  "coord": [
+   49.56321,
+   3.62678
+  ],
+  "notices_versees": 2042,
+  "doute": 31,
+  "part_doute": 0.0152,
+  "niveaux": [
+   16,
+   5,
+   10
+  ],
+  "copie": 9,
+  "revision": 1
+ },
+ {
+  "code_museofile": "M0594",
+  "nom": "musée Goya",
+  "ville": "Castres",
+  "departement": "Tarn",
+  "region": "Occitanie",
+  "coord": [
+   43.60481,
+   2.23989
+  ],
+  "notices_versees": 1257,
+  "doute": 30,
+  "part_doute": 0.0239,
+  "niveaux": [
+   19,
+   11,
+   0
+  ],
+  "copie": 40,
+  "revision": 16
+ },
+ {
+  "code_museofile": "M5051",
+  "nom": "musée de l'Ecole nationale supérieure des beaux-arts",
+  "ville": "Paris",
+  "departement": "Paris",
+  "region": "Ile-de-France",
+  "coord": [
+   48.84575,
+   2.33167
+  ],
+  "notices_versees": 618,
+  "doute": 30,
+  "part_doute": 0.0485,
+  "niveaux": [
+   27,
+   2,
+   1
+  ],
+  "copie": 19,
+  "revision": 21
+ },
+ {
+  "code_museofile": "M0121",
+  "nom": "musée d'art Roger-Quillot",
+  "ville": "Clermont-Ferrand",
+  "departement": "Puy-de-Dôme",
+  "region": "Auvergne-Rhône-Alpes",
+  "coord": [
+   45.79303,
+   3.07827
+  ],
+  "notices_versees": 309,
+  "doute": 30,
+  "part_doute": 0.0971,
+  "niveaux": [
+   21,
+   9,
+   0
+  ],
+  "copie": 51,
+  "revision": 27
+ },
+ {
+  "code_museofile": "M5005",
+  "nom": "musée des Arts Asiatiques Guimet",
+  "ville": "Paris",
+  "departement": "Paris",
+  "region": "Ile-de-France",
+  "coord": [
+   48.86425,
+   2.29375
+  ],
+  "notices_versees": 3203,
+  "doute": 30,
+  "part_doute": 0.0094,
+  "niveaux": [
+   29,
+   1,
+   0
+  ],
+  "copie": 17,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0094",
+  "nom": "musée Bonnat-Helleu, musée des Beaux-Arts de Bayonne",
+  "ville": "Bayonne",
+  "departement": "Pyrénées-Atlantiques",
+  "region": "Nouvelle-Aquitaine",
+  "coord": [
+   43.49211,
+   -1.4723
+  ],
+  "notices_versees": 449,
+  "doute": 30,
+  "part_doute": 0.0668,
+  "niveaux": [
+   17,
+   12,
+   1
+  ],
+  "copie": 4,
+  "revision": 32
+ },
+ {
+  "code_museofile": "M0189",
+  "nom": "musée municipal",
+  "ville": "Sens",
+  "departement": "Yonne",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   48.19783,
+   3.2845
+  ],
+  "notices_versees": 5544,
+  "doute": 29,
+  "part_doute": 0.0052,
+  "niveaux": [
+   27,
+   2,
+   0
+  ],
+  "copie": 28,
+  "revision": 5
+ },
+ {
+  "code_museofile": "M0803",
+  "nom": "musée Antoine Vivenel",
+  "ville": "Compiègne",
+  "departement": "Oise",
+  "region": "Hauts-de-France",
+  "coord": [
+   49.41741,
+   2.82153
+  ],
+  "notices_versees": 2486,
+  "doute": 29,
+  "part_doute": 0.0117,
+  "niveaux": [
+   16,
+   9,
+   4
+  ],
+  "copie": 33,
+  "revision": 14
+ },
+ {
+  "code_museofile": "M0162",
+  "nom": "musée Verger-Tarin",
+  "ville": "Autun",
+  "departement": "Saône-et-Loire",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   46.94904,
+   4.30297
+  ],
+  "notices_versees": 592,
+  "doute": 28,
+  "part_doute": 0.0473,
+  "niveaux": [
+   27,
+   1,
+   0
+  ],
+  "copie": 7,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0277",
+  "nom": "musée municipal",
+  "ville": "Vendôme",
+  "departement": "Loir-et-Cher",
+  "region": "Centre-Val de Loire",
+  "coord": [
+   47.79741,
+   1.06087
+  ],
+  "notices_versees": 1582,
+  "doute": 28,
+  "part_doute": 0.0177,
+  "niveaux": [
+   26,
+   1,
+   1
+  ],
+  "copie": 182,
+  "revision": 16
+ },
+ {
+  "code_museofile": "M5016",
+  "nom": "musée national des châteaux de Malmaison et de Bois Préau",
+  "ville": "Rueil-Malmaison",
+  "departement": "Hauts-de-Seine",
+  "region": "Ile-de-France",
+  "coord": [
+   48.87333,
+   2.1689
+  ],
+  "notices_versees": 1166,
+  "doute": 28,
+  "part_doute": 0.024,
+  "niveaux": [
+   25,
+   3,
+   0
+  ],
+  "copie": 112,
+  "revision": 7
+ },
+ {
+  "code_museofile": "M0271",
+  "nom": "château musées",
+  "ville": "Blois",
+  "departement": "Loir-et-Cher",
+  "region": "Centre-Val de Loire",
+  "coord": [
+   47.5856,
+   1.33167
+  ],
+  "notices_versees": 3099,
+  "doute": 27,
+  "part_doute": 0.0087,
+  "niveaux": [
+   23,
+   4,
+   0
+  ],
+  "copie": 21,
+  "revision": 60
+ },
+ {
+  "code_museofile": "M0151",
+  "nom": "musée de la Loire",
+  "ville": "Cosne-Cours-sur-Loire",
+  "departement": "Nièvre",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   47.41055,
+   2.92277
+  ],
+  "notices_versees": 2031,
+  "doute": 26,
+  "part_doute": 0.0128,
+  "niveaux": [
+   26,
+   0,
+   0
+  ],
+  "copie": 16,
+  "revision": 3
+ },
+ {
+  "code_museofile": "M0528",
+  "nom": "Maison du Verre et du Cristal",
+  "ville": "Meisenthal",
+  "departement": "Moselle",
+  "region": "Grand Est",
+  "coord": [
+   48.96493,
+   7.35244
+  ],
+  "notices_versees": 210,
+  "doute": 26,
+  "part_doute": 0.1238,
+  "niveaux": [
+   26,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0677",
+  "nom": "musée Thomas-Henry",
+  "ville": "Cherbourg-en-Cotentin",
+  "departement": "Manche",
+  "region": "Normandie",
+  "coord": [
+   49.6371,
+   -1.62306
+  ],
+  "notices_versees": 1699,
+  "doute": 25,
+  "part_doute": 0.0147,
+  "niveaux": [
+   17,
+   7,
+   1
+  ],
+  "copie": 66,
+  "revision": 26
+ },
+ {
+  "code_museofile": "M0307",
+  "nom": "musée municipal",
+  "ville": "Châlons-en-Champagne",
+  "departement": "Marne",
+  "region": "Grand Est",
+  "coord": [
+   48.95639,
+   4.3642
+  ],
+  "notices_versees": 467,
+  "doute": 24,
+  "part_doute": 0.0514,
+  "niveaux": [
+   16,
+   5,
+   3
+  ],
+  "copie": 121,
+  "revision": 24
+ },
+ {
+  "code_museofile": "M0563",
+  "nom": "musée Saint-Raymond - Musée d’Archéologie de Toulouse ",
+  "ville": "Toulouse",
+  "departement": "Haute-Garonne",
+  "region": "Occitanie",
+  "coord": [
+   43.6089,
+   1.44178
+  ],
+  "notices_versees": 1423,
+  "doute": 24,
+  "part_doute": 0.0169,
+  "niveaux": [
+   23,
+   1,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0745",
+  "nom": "musée Dobrée",
+  "ville": "Nantes",
+  "departement": "Loire-Atlantique",
+  "region": "Pays-de-la-Loire",
+  "coord": [
+   47.21179,
+   -1.56612
+  ],
+  "notices_versees": 2903,
+  "doute": 23,
+  "part_doute": 0.0079,
+  "niveaux": [
+   15,
+   8,
+   0
+  ],
+  "copie": 353,
+  "revision": 18
+ },
+ {
+  "code_museofile": "M0265",
+  "nom": "musée des beaux-arts",
+  "ville": "Tours",
+  "departement": "Indre-et-Loire",
+  "region": "Centre-Val de Loire",
+  "coord": [
+   47.3947,
+   0.694
+  ],
+  "notices_versees": 1045,
+  "doute": 22,
+  "part_doute": 0.0211,
+  "niveaux": [
+   12,
+   10,
+   0
+  ],
+  "copie": 53,
+  "revision": 39
+ },
+ {
+  "code_museofile": "M5041",
+  "nom": "musée Gustave Moreau",
+  "ville": "Paris",
+  "departement": "Paris",
+  "region": "Ile-de-France",
+  "coord": [
+   48.87788,
+   2.33438
+  ],
+  "notices_versees": 7365,
+  "doute": 21,
+  "part_doute": 0.0029,
+  "niveaux": [
+   21,
+   0,
+   0
+  ],
+  "copie": 205,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M1111",
+  "nom": "Petit Palais, musée des beaux-arts de la ville de Paris",
+  "ville": "Paris",
+  "departement": "Paris",
+  "region": "Île-de-France",
+  "coord": [
+   48.86609,
+   2.31376
+  ],
+  "notices_versees": 29502,
+  "doute": 21,
+  "part_doute": 0.0007,
+  "niveaux": [
+   0,
+   21,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0315",
+  "nom": "musée de l'Argonne Viard-Morel",
+  "ville": "Sainte-Menehould",
+  "departement": "Marne",
+  "region": "Grand Est",
+  "coord": [
+   49.09209,
+   4.898
+  ],
+  "notices_versees": 560,
+  "doute": 20,
+  "part_doute": 0.0357,
+  "niveaux": [
+   18,
+   2,
+   0
+  ],
+  "copie": 110,
+  "revision": 5
+ },
+ {
+  "code_museofile": "M5021",
+  "nom": "musée des arts décoratifs (Union centrale des arts décoratifs)",
+  "ville": "Paris",
+  "departement": "Paris",
+  "region": "Ile-de-France",
+  "coord": [
+   48.86322,
+   2.3333
+  ],
+  "notices_versees": 327,
+  "doute": 20,
+  "part_doute": 0.0612,
+  "niveaux": [
+   20,
+   0,
+   0
+  ],
+  "copie": 15,
+  "revision": 7
+ },
+ {
+  "code_museofile": "M0815",
+  "nom": "musée Danicourt",
+  "ville": "Péronne",
+  "departement": "Somme",
+  "region": "Hauts-de-France",
+  "coord": [
+   49.93019,
+   2.93573
+  ],
+  "notices_versees": 1817,
+  "doute": 20,
+  "part_doute": 0.011,
+  "niveaux": [
+   18,
+   2,
+   0
+  ],
+  "copie": 93,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0341",
+  "nom": "musée Sarret de Grozon",
+  "ville": "Arbois",
+  "departement": "Jura",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   46.9026,
+   5.77472
+  ],
+  "notices_versees": 841,
+  "doute": 20,
+  "part_doute": 0.0238,
+  "niveaux": [
+   12,
+   2,
+   6
+  ],
+  "copie": 91,
+  "revision": 8
+ },
+ {
+  "code_museofile": "M0381",
+  "nom": "château musée de Nemours",
+  "ville": "Nemours",
+  "departement": "Seine-et-Marne",
+  "region": "Ile-de-France",
+  "coord": [
+   48.26552,
+   2.69616
+  ],
+  "notices_versees": 668,
+  "doute": 19,
+  "part_doute": 0.0284,
+  "niveaux": [
+   19,
+   0,
+   0
+  ],
+  "copie": 42,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0134",
+  "nom": "musée des Beaux-Arts",
+  "ville": "Beaune",
+  "departement": "Côte-d'Or",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   47.02097,
+   4.83939
+  ],
+  "notices_versees": 448,
+  "doute": 17,
+  "part_doute": 0.0379,
+  "niveaux": [
+   9,
+   7,
+   1
+  ],
+  "copie": 24,
+  "revision": 33
+ },
+ {
+  "code_museofile": "M0689",
+  "nom": "musée Maritime de l'Ile Tatihou",
+  "ville": "Saint-Vaast-La-Hougue",
+  "departement": "Manche",
+  "region": "Normandie",
+  "coord": [
+   49.58765,
+   -1.26781
+  ],
+  "notices_versees": 160,
+  "doute": 17,
+  "part_doute": 0.1062,
+  "niveaux": [
+   13,
+   4,
+   0
+  ],
+  "copie": 1,
+  "revision": 1
+ },
+ {
+  "code_museofile": "M0184",
+  "nom": "musée d'art et d'histoire Saint-Germain",
+  "ville": "Auxerre",
+  "departement": "Yonne",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   47.80028,
+   3.57198
+  ],
+  "notices_versees": 177,
+  "doute": 17,
+  "part_doute": 0.096,
+  "niveaux": [
+   15,
+   2,
+   0
+  ],
+  "copie": 6,
+  "revision": 9
+ },
+ {
+  "code_museofile": "M0887",
+  "nom": "musée du palais Lascaris",
+  "ville": "Nice",
+  "departement": "Alpes-Maritimes",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "coord": [
+   43.69769,
+   7.27733
+  ],
+  "notices_versees": 101,
+  "doute": 17,
+  "part_doute": 0.1683,
+  "niveaux": [
+   5,
+   12,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0234",
+  "nom": "musée du château Charles VII",
+  "ville": "Mehun-sur-Yèvre",
+  "departement": "Cher",
+  "region": "Centre-Val de Loire",
+  "coord": [
+   47.14521,
+   2.21738
+  ],
+  "notices_versees": 839,
+  "doute": 17,
+  "part_doute": 0.0203,
+  "niveaux": [
+   3,
+   13,
+   1
+  ],
+  "copie": 44,
+  "revision": 4
+ },
+ {
+  "code_museofile": "M0348",
+  "nom": "musée du jouet",
+  "ville": "Moirans-en-Montagne",
+  "departement": "Jura",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   46.433,
+   5.72631
+  ],
+  "notices_versees": 622,
+  "doute": 17,
+  "part_doute": 0.0273,
+  "niveaux": [
+   17,
+   0,
+   0
+  ],
+  "copie": 5,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0525",
+  "nom": "musée de la Princerie",
+  "ville": "Verdun",
+  "departement": "Meuse",
+  "region": "Grand Est",
+  "coord": [
+   49.16106,
+   5.38244
+  ],
+  "notices_versees": 10654,
+  "doute": 16,
+  "part_doute": 0.0015,
+  "niveaux": [
+   15,
+   1,
+   0
+  ],
+  "copie": 28,
+  "revision": 16
+ },
+ {
+  "code_museofile": "M0208",
+  "nom": "musée départemental Breton",
+  "ville": "Quimper",
+  "departement": "Finistère",
+  "region": "Bretagne",
+  "coord": [
+   47.99513,
+   -4.1026
+  ],
+  "notices_versees": 659,
+  "doute": 16,
+  "part_doute": 0.0243,
+  "niveaux": [
+   15,
+   0,
+   1
+  ],
+  "copie": 2,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M5001",
+  "nom": "musée d’archéologie nationale (des origines à l’an mille) – Château de Saint-Germain-en-Laye",
+  "ville": "Saint-Germain-en-Laye",
+  "departement": "Yvelines",
+  "region": "Ile-de-France",
+  "coord": [
+   48.89788,
+   2.09494
+  ],
+  "notices_versees": 35897,
+  "doute": 16,
+  "part_doute": 0.0004,
+  "niveaux": [
+   16,
+   0,
+   0
+  ],
+  "copie": 11,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0250",
+  "nom": "musée George Sand et de la vallée noire",
+  "ville": "La Châtre",
+  "departement": "Indre",
+  "region": "Centre-Val de Loire",
+  "coord": [
+   46.58194,
+   1.98996
+  ],
+  "notices_versees": 1733,
+  "doute": 16,
+  "part_doute": 0.0092,
+  "niveaux": [
+   16,
+   0,
+   0
+  ],
+  "copie": 11,
+  "revision": 2
+ },
+ {
+  "code_museofile": "M0350",
+  "nom": "Viséum-musée de la lunette (collections du musée de la lunette et du musée Jourdain)",
+  "ville": "Hauts de Bienne",
+  "departement": "Jura",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   46.521,
+   6.02258
+  ],
+  "notices_versees": 386,
+  "doute": 15,
+  "part_doute": 0.0389,
+  "niveaux": [
+   9,
+   3,
+   3
+  ],
+  "copie": 26,
+  "revision": 11
+ },
+ {
+  "code_museofile": "M0793",
+  "nom": "musée des beaux-arts Antoine Lécuyer",
+  "ville": "Saint-Quentin",
+  "departement": "Aisne",
+  "region": "Hauts-de-France",
+  "coord": [
+   49.84989,
+   3.2854
+  ],
+  "notices_versees": 303,
+  "doute": 14,
+  "part_doute": 0.0462,
+  "niveaux": [
+   13,
+   1,
+   0
+  ],
+  "copie": 12,
+  "revision": 3
+ },
+ {
+  "code_museofile": "M0714",
+  "nom": "musée Louis Philippe",
+  "ville": "Eu",
+  "departement": "Seine-Maritime",
+  "region": "Normandie",
+  "coord": [
+   50.04914,
+   1.41837
+  ],
+  "notices_versees": 987,
+  "doute": 14,
+  "part_doute": 0.0142,
+  "niveaux": [
+   6,
+   7,
+   1
+  ],
+  "copie": 63,
+  "revision": 1
+ },
+ {
+  "code_museofile": "M0759",
+  "nom": "château-musée de Saumur",
+  "ville": "Saumur",
+  "departement": "Maine-et-Loire",
+  "region": "Pays-de-la-Loire",
+  "coord": [
+   47.25729,
+   -0.07192
+  ],
+  "notices_versees": 1685,
+  "doute": 14,
+  "part_doute": 0.0083,
+  "niveaux": [
+   14,
+   0,
+   0
+  ],
+  "copie": 2,
+  "revision": 9
+ },
+ {
+  "code_museofile": "M0811",
+  "nom": "Le Beffroi - musée Boucher de Perthes – Manessier",
+  "ville": "Abbeville",
+  "departement": "Somme",
+  "region": "Hauts-de-France",
+  "coord": [
+   50.10712,
+   1.83319
+  ],
+  "notices_versees": 180,
+  "doute": 14,
+  "part_doute": 0.0778,
+  "niveaux": [
+   8,
+   6,
+   0
+  ],
+  "copie": 41,
+  "revision": 4
+ },
+ {
+  "code_museofile": "M0072",
+  "nom": "musée des beaux-arts et d'archéologie",
+  "ville": "Libourne",
+  "departement": "Gironde",
+  "region": "Nouvelle-Aquitaine",
+  "coord": [
+   44.91449,
+   -0.24507
+  ],
+  "notices_versees": 858,
+  "doute": 13,
+  "part_doute": 0.0152,
+  "niveaux": [
+   5,
+   8,
+   0
+  ],
+  "copie": 13,
+  "revision": 7
+ },
+ {
+  "code_museofile": "M0064",
+  "nom": "musée d'Aquitaine",
+  "ville": "Bordeaux",
+  "departement": "Gironde",
+  "region": "Nouvelle-Aquitaine",
+  "coord": [
+   44.83554,
+   -0.5752
+  ],
+  "notices_versees": 4023,
+  "doute": 13,
+  "part_doute": 0.0032,
+  "niveaux": [
+   12,
+   1,
+   0
+  ],
+  "copie": 64,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0416",
+  "nom": "musée des Avelines - musée d’art et d’histoire de Saint-Cloud",
+  "ville": "Saint-Cloud",
+  "departement": "Hauts-de-Seine",
+  "region": "Ile-de-France",
+  "coord": [
+   48.8425,
+   2.20829
+  ],
+  "notices_versees": 650,
+  "doute": 13,
+  "part_doute": 0.02,
+  "niveaux": [
+   12,
+   1,
+   0
+  ],
+  "copie": 5,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0685",
+  "nom": "musée d'art et d'histoire",
+  "ville": "Saint-Lô",
+  "departement": "Manche",
+  "region": "Normandie",
+  "coord": [
+   49.11617,
+   -1.08757
+  ],
+  "notices_versees": 661,
+  "doute": 12,
+  "part_doute": 0.0182,
+  "niveaux": [
+   10,
+   2,
+   0
+  ],
+  "copie": 17,
+  "revision": 52
+ },
+ {
+  "code_museofile": "M0923",
+  "nom": "musée Ziem",
+  "ville": "Martigues",
+  "departement": "Bouches-du-Rhône",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "coord": [
+   43.40834,
+   5.05411
+  ],
+  "notices_versees": 2267,
+  "doute": 12,
+  "part_doute": 0.0053,
+  "niveaux": [
+   12,
+   0,
+   0
+  ],
+  "copie": 1,
+  "revision": 2
+ },
+ {
+  "code_museofile": "M0132",
+  "nom": "musée Bonaparte",
+  "ville": "Auxonne",
+  "departement": "Côte-d'Or",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   47.19096,
+   5.38377
+  ],
+  "notices_versees": 538,
+  "doute": 12,
+  "part_doute": 0.0223,
+  "niveaux": [
+   9,
+   3,
+   0
+  ],
+  "copie": 53,
+  "revision": 1
+ },
+ {
+  "code_museofile": "M0440",
+  "nom": "musée des beaux-arts",
+  "ville": "Carcassonne",
+  "departement": "Aude",
+  "region": "Occitanie",
+  "coord": [
+   43.21155,
+   2.35553
+  ],
+  "notices_versees": 255,
+  "doute": 12,
+  "part_doute": 0.0471,
+  "niveaux": [
+   8,
+   2,
+   2
+  ],
+  "copie": 22,
+  "revision": 13
+ },
+ {
+  "code_museofile": "M0150",
+  "nom": "musée d'Art et d'Histoire Romain Rolland",
+  "ville": "Clamecy",
+  "departement": "Nièvre",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   47.4606,
+   3.52082
+  ],
+  "notices_versees": 52,
+  "doute": 11,
+  "part_doute": 0.2115,
+  "niveaux": [
+   7,
+   2,
+   2
+  ],
+  "copie": 5,
+  "revision": 10
+ },
+ {
+  "code_museofile": "M0181",
+  "nom": "musée Greuze - hôtel-Dieu",
+  "ville": "Tournus",
+  "departement": "Saône-et-Loire",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   46.56214,
+   4.91084
+  ],
+  "notices_versees": 222,
+  "doute": 11,
+  "part_doute": 0.0495,
+  "niveaux": [
+   11,
+   0,
+   0
+  ],
+  "copie": 50,
+  "revision": 4
+ },
+ {
+  "code_museofile": "M0333",
+  "nom": "musée du temps",
+  "ville": "Besançon",
+  "departement": "Doubs",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   47.23598,
+   6.0268
+  ],
+  "notices_versees": 3571,
+  "doute": 11,
+  "part_doute": 0.0031,
+  "niveaux": [
+   10,
+   1,
+   0
+  ],
+  "copie": 212,
+  "revision": 8
+ },
+ {
+  "code_museofile": "M0810",
+  "nom": "musée de la vénerie",
+  "ville": "Senlis",
+  "departement": "Oise",
+  "region": "Hauts-de-France",
+  "coord": [
+   49.20702,
+   2.5851
+  ],
+  "notices_versees": 2560,
+  "doute": 10,
+  "part_doute": 0.0039,
+  "niveaux": [
+   8,
+   2,
+   0
+  ],
+  "copie": 18,
+  "revision": 3
+ },
+ {
+  "code_museofile": "M0866",
+  "nom": "musée départemental des Hautes-Alpes",
+  "ville": "Gap",
+  "departement": "Hautes-Alpes",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "coord": [
+   44.56262,
+   6.08557
+  ],
+  "notices_versees": 421,
+  "doute": 10,
+  "part_doute": 0.0238,
+  "niveaux": [
+   10,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0567",
+  "nom": "musée du vieux Toulouse",
+  "ville": "Toulouse",
+  "departement": "Haute-Garonne",
+  "region": "Occitanie",
+  "coord": [
+   43.60226,
+   1.44313
+  ],
+  "notices_versees": 339,
+  "doute": 10,
+  "part_doute": 0.0295,
+  "niveaux": [
+   10,
+   0,
+   0
+  ],
+  "copie": 18,
+  "revision": 4
+ },
+ {
+  "code_museofile": "M0418",
+  "nom": "MUS - musée d'histoire urbaine et sociale de Suresnes",
+  "ville": "Suresnes",
+  "departement": "Hauts-de-Seine",
+  "region": "Ile-de-France",
+  "coord": [
+   48.8683,
+   2.22194
+  ],
+  "notices_versees": 1088,
+  "doute": 9,
+  "part_doute": 0.0083,
+  "niveaux": [
+   9,
+   0,
+   0
+  ],
+  "copie": 10,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0796",
+  "nom": "musée Alexandre Dumas",
+  "ville": "Villers-Cotterêts",
+  "departement": "Aisne",
+  "region": "Hauts-de-France",
+  "coord": [
+   49.25301,
+   3.08969
+  ],
+  "notices_versees": 1005,
+  "doute": 9,
+  "part_doute": 0.009,
+  "niveaux": [
+   9,
+   0,
+   0
+  ],
+  "copie": 38,
+  "revision": 2
+ },
+ {
+  "code_museofile": "M0703",
+  "nom": "musée d'art, histoire et archéologie d'Évreux",
+  "ville": "Évreux",
+  "departement": "Eure",
+  "region": "Normandie",
+  "coord": [
+   49.024,
+   1.1502
+  ],
+  "notices_versees": 1181,
+  "doute": 9,
+  "part_doute": 0.0076,
+  "niveaux": [
+   5,
+   3,
+   1
+  ],
+  "copie": 4,
+  "revision": 1
+ },
+ {
+  "code_museofile": "M0144",
+  "nom": "musée municipal",
+  "ville": "Nuits-Saint-Georges",
+  "departement": "Côte-d'Or",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   47.13866,
+   4.9504
+  ],
+  "notices_versees": 3385,
+  "doute": 9,
+  "part_doute": 0.0027,
+  "niveaux": [
+   9,
+   0,
+   0
+  ],
+  "copie": 141,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0467",
+  "nom": "musée des beaux-arts",
+  "ville": "Béziers",
+  "departement": "Hérault",
+  "region": "Occitanie",
+  "coord": [
+   43.34143,
+   3.21053
+  ],
+  "notices_versees": 329,
+  "doute": 8,
+  "part_doute": 0.0243,
+  "niveaux": [
+   8,
+   0,
+   0
+  ],
+  "copie": 5,
+  "revision": 7
+ },
+ {
+  "code_museofile": "M1168",
+  "nom": "musée Estrine",
+  "ville": "Saint-Rémy-de-Provence",
+  "departement": "Bouches-du-Rhône",
+  "region": "Provence-Alpes-Côte-d'Azur",
+  "coord": [
+   43.7888,
+   4.83227
+  ],
+  "notices_versees": 622,
+  "doute": 8,
+  "part_doute": 0.0129,
+  "niveaux": [
+   5,
+   0,
+   3
+  ],
+  "copie": 10,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M5026",
+  "nom": "musée national de La Marine",
+  "ville": "Paris",
+  "departement": "Paris",
+  "region": "Ile-de-France",
+  "coord": [
+   48.86425,
+   2.29375
+  ],
+  "notices_versees": 1029,
+  "doute": 8,
+  "part_doute": 0.0078,
+  "niveaux": [
+   8,
+   0,
+   0
+  ],
+  "copie": 3,
+  "revision": 2
+ },
+ {
+  "code_museofile": "M0176",
+  "nom": "musée eucharistique du Hiéron",
+  "ville": "Paray-le-Monial",
+  "departement": "Saône-et-Loire",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   46.45182,
+   4.12302
+  ],
+  "notices_versees": 181,
+  "doute": 8,
+  "part_doute": 0.0442,
+  "niveaux": [
+   3,
+   5,
+   0
+  ],
+  "copie": 7,
+  "revision": 5
+ },
+ {
+  "code_museofile": "M7015",
+  "nom": "muséum d'histoire naturelle",
+  "ville": "Le Havre",
+  "departement": "Seine-Maritime",
+  "region": "Normandie",
+  "coord": [
+   49.48755,
+   0.10823
+  ],
+  "notices_versees": 445,
+  "doute": 8,
+  "part_doute": 0.018,
+  "niveaux": [
+   8,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M1106",
+  "nom": "musée Cernuschi, musée des arts de l'Asie de la ville de Paris",
+  "ville": "Paris",
+  "departement": "Paris",
+  "region": "Île-de-France",
+  "coord": [
+   48.87969,
+   2.31219
+  ],
+  "notices_versees": 5155,
+  "doute": 7,
+  "part_doute": 0.0014,
+  "niveaux": [
+   0,
+   7,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M5007",
+  "nom": "musée Hébert",
+  "ville": "Paris",
+  "departement": "Paris",
+  "region": "Ile-de-France",
+  "coord": [
+   48.84743,
+   2.32271
+  ],
+  "notices_versees": 1748,
+  "doute": 7,
+  "part_doute": 0.004,
+  "niveaux": [
+   7,
+   0,
+   0
+  ],
+  "copie": 74,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0417",
+  "nom": "musée du domaine départemental de Sceaux",
+  "ville": "Sceaux",
+  "departement": "Hauts-de-Seine",
+  "region": "Ile-de-France",
+  "coord": [
+   48.77471,
+   2.29902
+  ],
+  "notices_versees": 2310,
+  "doute": 7,
+  "part_doute": 0.003,
+  "niveaux": [
+   7,
+   0,
+   0
+  ],
+  "copie": 9,
+  "revision": 1
+ },
+ {
+  "code_museofile": "M0749",
+  "nom": "musée Pincé",
+  "ville": "Angers",
+  "departement": "Maine-et-Loire",
+  "region": "Pays-de-la-Loire",
+  "coord": [
+   47.47177,
+   -0.55184
+  ],
+  "notices_versees": 297,
+  "doute": 7,
+  "part_doute": 0.0236,
+  "niveaux": [
+   2,
+   3,
+   2
+  ],
+  "copie": 0,
+  "revision": 2
+ },
+ {
+  "code_museofile": "M0229",
+  "nom": "musée des arts décoratifs",
+  "ville": "Bourges",
+  "departement": "Cher",
+  "region": "Centre-Val de Loire",
+  "coord": [
+   47.08468,
+   2.39838
+  ],
+  "notices_versees": 125,
+  "doute": 7,
+  "part_doute": 0.056,
+  "niveaux": [
+   2,
+   5,
+   0
+  ],
+  "copie": 14,
+  "revision": 10
+ },
+ {
+  "code_museofile": "M0106",
+  "nom": "musée Anne de Beaujeu",
+  "ville": "Moulins-sur-Allier",
+  "departement": "Allier",
+  "region": "Auvergne-Rhône-Alpes",
+  "coord": [
+   46.56707,
+   3.33122
+  ],
+  "notices_versees": 20,
+  "doute": 7,
+  "part_doute": 0.35,
+  "niveaux": [
+   7,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 1
+ },
+ {
+  "code_museofile": "M0235",
+  "nom": "musée Saint-Vic",
+  "ville": "Saint-Amand-Montrond",
+  "departement": "Cher",
+  "region": "Centre-Val de Loire",
+  "coord": [
+   46.72066,
+   2.50665
+  ],
+  "notices_versees": 288,
+  "doute": 7,
+  "part_doute": 0.0243,
+  "niveaux": [
+   7,
+   0,
+   0
+  ],
+  "copie": 3,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0878",
+  "nom": "musée des beaux-arts",
+  "ville": "Menton",
+  "departement": "Alpes-Maritimes",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "coord": [
+   43.76666,
+   7.4884
+  ],
+  "notices_versees": 527,
+  "doute": 7,
+  "part_doute": 0.0133,
+  "niveaux": [
+   6,
+   1,
+   0
+  ],
+  "copie": 1,
+  "revision": 13
+ },
+ {
+  "code_museofile": "M0784",
+  "nom": "musée Jean de la Fontaine",
+  "ville": "Château-Thierry",
+  "departement": "Aisne",
+  "region": "Hauts-de-France",
+  "coord": [
+   49.04693,
+   3.40029
+  ],
+  "notices_versees": 1484,
+  "doute": 6,
+  "part_doute": 0.004,
+  "niveaux": [
+   5,
+   1,
+   0
+  ],
+  "copie": 461,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0715",
+  "nom": "Les Pêcheries, musée de Fécamp",
+  "ville": "Fécamp",
+  "departement": "Seine-Maritime",
+  "region": "Normandie",
+  "coord": [
+   49.76181,
+   0.36869
+  ],
+  "notices_versees": 907,
+  "doute": 6,
+  "part_doute": 0.0066,
+  "niveaux": [
+   5,
+   0,
+   1
+  ],
+  "copie": 14,
+  "revision": 3
+ },
+ {
+  "code_museofile": "M0949",
+  "nom": "bibliothèque-musée Inguimbertine",
+  "ville": "Carpentras",
+  "departement": "Vaucluse",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "coord": [
+   44.0543,
+   5.04548
+  ],
+  "notices_versees": 103,
+  "doute": 6,
+  "part_doute": 0.0583,
+  "niveaux": [
+   5,
+   1,
+   0
+  ],
+  "copie": 5,
+  "revision": 11
+ },
+ {
+  "code_museofile": "M1137",
+  "nom": "musée Mainssieux",
+  "ville": "Voiron",
+  "departement": "Isère",
+  "region": "Auvergne-Rhône-Alpes",
+  "coord": [
+   45.35605,
+   5.57965
+  ],
+  "notices_versees": 75,
+  "doute": 6,
+  "part_doute": 0.08,
+  "niveaux": [
+   2,
+   3,
+   1
+  ],
+  "copie": 1,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M1020",
+  "nom": "musée Joseph Déchelette",
+  "ville": "Roanne",
+  "departement": "Loire",
+  "region": "Auvergne-Rhône-Alpes",
+  "coord": [
+   46.03495,
+   4.06984
+  ],
+  "notices_versees": 40,
+  "doute": 6,
+  "part_doute": 0.15,
+  "niveaux": [
+   4,
+   1,
+   1
+  ],
+  "copie": 2,
+  "revision": 2
+ },
+ {
+  "code_museofile": "M0538",
+  "nom": "musée de la lutherie",
+  "ville": "Mirecourt",
+  "departement": "Vosges",
+  "region": "Grand Est",
+  "coord": [
+   48.58945,
+   6.50571
+  ],
+  "notices_versees": 109,
+  "doute": 6,
+  "part_doute": 0.055,
+  "niveaux": [
+   6,
+   0,
+   0
+  ],
+  "copie": 1,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0280",
+  "nom": "musée de la Marine de Loire",
+  "ville": "Châteauneuf-sur-Loire",
+  "departement": "Loiret",
+  "region": "Centre-Val de Loire",
+  "coord": [
+   47.86521,
+   2.21919
+  ],
+  "notices_versees": 626,
+  "doute": 6,
+  "part_doute": 0.0096,
+  "niveaux": [
+   5,
+   1,
+   0
+  ],
+  "copie": 20,
+  "revision": 1
+ },
+ {
+  "code_museofile": "M0540",
+  "nom": "musée Charles de Bruyères",
+  "ville": "Remiremont",
+  "departement": "Vosges",
+  "region": "Grand Est",
+  "coord": [
+   48.01614,
+   6.59329
+  ],
+  "notices_versees": 214,
+  "doute": 6,
+  "part_doute": 0.028,
+  "niveaux": [
+   5,
+   1,
+   0
+  ],
+  "copie": 1,
+  "revision": 5
+ },
+ {
+  "code_museofile": "M0617",
+  "nom": "musée de Flandre",
+  "ville": "Cassel",
+  "departement": "Nord",
+  "region": "Hauts-de-France",
+  "coord": [
+   50.79975,
+   2.48621
+  ],
+  "notices_versees": 41,
+  "doute": 6,
+  "part_doute": 0.1463,
+  "niveaux": [
+   5,
+   1,
+   0
+  ],
+  "copie": 9,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0196",
+  "nom": "musée d'art et d'histoire",
+  "ville": "Saint-Brieuc",
+  "departement": "Côtes-d'Armor",
+  "region": "Bretagne",
+  "coord": [
+   48.51214,
+   -2.76217
+  ],
+  "notices_versees": 1915,
+  "doute": 5,
+  "part_doute": 0.0026,
+  "niveaux": [
+   5,
+   0,
+   0
+  ],
+  "copie": 8,
+  "revision": 9
+ },
+ {
+  "code_museofile": "M7011",
+  "nom": "muséum d'histoire naturelle",
+  "ville": "Besançon",
+  "departement": "Doubs",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   47.23669,
+   6.0221
+  ],
+  "notices_versees": 192,
+  "doute": 5,
+  "part_doute": 0.026,
+  "niveaux": [
+   5,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M1011",
+  "nom": "musée hospitalier",
+  "ville": "Charlieu",
+  "departement": "Loire",
+  "region": "Auvergne-Rhône-Alpes",
+  "coord": [
+   46.1603,
+   4.17052
+  ],
+  "notices_versees": 608,
+  "doute": 5,
+  "part_doute": 0.0082,
+  "niveaux": [
+   5,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0720",
+  "nom": "Musée d'Art Moderne André Malraux - MuMa",
+  "ville": "Le Havre",
+  "departement": "Seine-Maritime",
+  "region": "Normandie",
+  "coord": [
+   49.4848,
+   0.10219
+  ],
+  "notices_versees": 511,
+  "doute": 5,
+  "part_doute": 0.0098,
+  "niveaux": [
+   5,
+   0,
+   0
+  ],
+  "copie": 3,
+  "revision": 4
+ },
+ {
+  "code_museofile": "M1104",
+  "nom": "musée Carnavalet - histoire de Paris",
+  "ville": "Paris",
+  "departement": "Paris",
+  "region": "Île-de-France",
+  "coord": [
+   48.85699,
+   2.36286
+  ],
+  "notices_versees": 152805,
+  "doute": 5,
+  "part_doute": 0.0,
+  "niveaux": [
+   1,
+   4,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0914",
+  "nom": "musée des arts décoratifs, de la faïence et de la mode",
+  "ville": "Marseille",
+  "departement": "Bouches-du-Rhône",
+  "region": "Provence-Alpes-Côte-d'Azur",
+  "coord": [
+   43.2586,
+   5.38417
+  ],
+  "notices_versees": 1143,
+  "doute": 5,
+  "part_doute": 0.0044,
+  "niveaux": [
+   4,
+   1,
+   0
+  ],
+  "copie": 7,
+  "revision": 54
+ },
+ {
+  "code_museofile": "M0919",
+  "nom": "musée d'archéologie méditerranéenne",
+  "ville": "Marseille",
+  "departement": "Bouches-du-Rhône",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "coord": [
+   43.30017,
+   5.3676
+  ],
+  "notices_versees": 1767,
+  "doute": 5,
+  "part_doute": 0.0028,
+  "niveaux": [
+   2,
+   1,
+   2
+  ],
+  "copie": 1,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0655",
+  "nom": "Tapisserie de Bayeux - MAHB musée d'art et d'histoire baron Gérard",
+  "ville": "Bayeux",
+  "departement": "Calvados",
+  "region": "Normandie",
+  "coord": [
+   49.27615,
+   -0.70306
+  ],
+  "notices_versees": 214,
+  "doute": 5,
+  "part_doute": 0.0234,
+  "niveaux": [
+   4,
+   1,
+   0
+  ],
+  "copie": 10,
+  "revision": 4
+ },
+ {
+  "code_museofile": "M0247",
+  "nom": "musée Bertrand",
+  "ville": "Châteauroux",
+  "departement": "Indre",
+  "region": "Centre-Val de Loire",
+  "coord": [
+   46.81374,
+   1.69426
+  ],
+  "notices_versees": 2029,
+  "doute": 5,
+  "part_doute": 0.0025,
+  "niveaux": [
+   5,
+   0,
+   0
+  ],
+  "copie": 26,
+  "revision": 1
+ },
+ {
+  "code_museofile": "M1222",
+  "nom": "musée de la Création Franche",
+  "ville": "Bègles",
+  "departement": "Gironde",
+  "region": "Nouvelle-Aquitaine",
+  "coord": [
+   44.80598,
+   -0.54349
+  ],
+  "notices_versees": 85,
+  "doute": 4,
+  "part_doute": 0.0471,
+  "niveaux": [
+   4,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0139",
+  "nom": "musée de la vie bourguignonne",
+  "ville": "Dijon",
+  "departement": "Côte-d'Or",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   47.31741,
+   5.03713
+  ],
+  "notices_versees": 3220,
+  "doute": 4,
+  "part_doute": 0.0012,
+  "niveaux": [
+   4,
+   0,
+   0
+  ],
+  "copie": 46,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0353",
+  "nom": "musée de la Grande Saline",
+  "ville": "Salins-les-Bains",
+  "departement": "Jura",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   46.93724,
+   5.87668
+  ],
+  "notices_versees": 1128,
+  "doute": 4,
+  "part_doute": 0.0035,
+  "niveaux": [
+   3,
+   1,
+   0
+  ],
+  "copie": 17,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M1107",
+  "nom": "musée Cognacq-Jay, musée du XVIIIe siècle de la ville de Paris",
+  "ville": "Paris",
+  "departement": "Paris",
+  "region": "Île-de-France",
+  "coord": [
+   48.85826,
+   2.36152
+  ],
+  "notices_versees": 788,
+  "doute": 4,
+  "part_doute": 0.0051,
+  "niveaux": [
+   0,
+   4,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0708",
+  "nom": "musée Blanche Hoschedé-Monet",
+  "ville": "Vernon",
+  "departement": "Eure",
+  "region": "Normandie",
+  "coord": [
+   49.09486,
+   1.48493
+  ],
+  "notices_versees": 1087,
+  "doute": 4,
+  "part_doute": 0.0037,
+  "niveaux": [
+   4,
+   0,
+   0
+  ],
+  "copie": 5,
+  "revision": 5
+ },
+ {
+  "code_museofile": "M0565",
+  "nom": "musée des Arts Précieux Paul-Dupuy",
+  "ville": "Toulouse",
+  "departement": "Haute-Garonne",
+  "region": "Occitanie",
+  "coord": [
+   43.5969,
+   1.44694
+  ],
+  "notices_versees": 1867,
+  "doute": 4,
+  "part_doute": 0.0021,
+  "niveaux": [
+   3,
+   1,
+   0
+  ],
+  "copie": 15,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0734",
+  "nom": "musée Flaubert et d'histoire de la médecine",
+  "ville": "Rouen",
+  "departement": "Seine-Maritime",
+  "region": "Normandie",
+  "coord": [
+   49.44523,
+   1.08174
+  ],
+  "notices_versees": 887,
+  "doute": 4,
+  "part_doute": 0.0045,
+  "niveaux": [
+   4,
+   0,
+   0
+  ],
+  "copie": 11,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0706",
+  "nom": "musée municipal",
+  "ville": "Louviers",
+  "departement": "Eure",
+  "region": "Normandie",
+  "coord": [
+   49.21565,
+   1.16855
+  ],
+  "notices_versees": 142,
+  "doute": 4,
+  "part_doute": 0.0282,
+  "niveaux": [
+   4,
+   0,
+   0
+  ],
+  "copie": 43,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0569",
+  "nom": "musée des Amériques - Auch",
+  "ville": "Auch",
+  "departement": "Gers",
+  "region": "Occitanie",
+  "coord": [
+   43.64717,
+   0.58748
+  ],
+  "notices_versees": 393,
+  "doute": 4,
+  "part_doute": 0.0102,
+  "niveaux": [
+   2,
+   2,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0889",
+  "nom": "musée départemental des arts asiatiques",
+  "ville": "Nice",
+  "departement": "Alpes-Maritimes",
+  "region": "Provence-Alpes-Côte-d'Azur",
+  "coord": [
+   43.66829,
+   7.21605
+  ],
+  "notices_versees": 1272,
+  "doute": 4,
+  "part_doute": 0.0031,
+  "niveaux": [
+   0,
+   4,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0730",
+  "nom": "musée de la céramique",
+  "ville": "Rouen",
+  "departement": "Seine-Maritime",
+  "region": "Normandie",
+  "coord": [
+   49.44554,
+   1.09385
+  ],
+  "notices_versees": 112,
+  "doute": 4,
+  "part_doute": 0.0357,
+  "niveaux": [
+   3,
+   1,
+   0
+  ],
+  "copie": 3,
+  "revision": 2
+ },
+ {
+  "code_museofile": "M0876",
+  "nom": "musée Fragonard",
+  "ville": "Grasse",
+  "departement": "Alpes-Maritimes",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "coord": [
+   43.65674,
+   6.92109
+  ],
+  "notices_versees": 54,
+  "doute": 4,
+  "part_doute": 0.0741,
+  "niveaux": [
+   4,
+   0,
+   0
+  ],
+  "copie": 1,
+  "revision": 2
+ },
+ {
+  "code_museofile": "M0138",
+  "nom": "musée archéologique",
+  "ville": "Dijon",
+  "departement": "Côte-d'Or",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   48.33248,
+   6.63824
+  ],
+  "notices_versees": 1291,
+  "doute": 4,
+  "part_doute": 0.0031,
+  "niveaux": [
+   4,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0087",
+  "nom": "musée municipal des beaux-arts",
+  "ville": "Agen",
+  "departement": "Lot-et-Garonne",
+  "region": "Nouvelle-Aquitaine",
+  "coord": [
+   44.20289,
+   0.61547
+  ],
+  "notices_versees": 24,
+  "doute": 3,
+  "part_doute": 0.125,
+  "niveaux": [
+   3,
+   0,
+   0
+  ],
+  "copie": 3,
+  "revision": 3
+ },
+ {
+  "code_museofile": "M0003",
+  "nom": "musée du Pays de Hanau - histoire et vies d’un territoire",
+  "ville": "Bouxwiller",
+  "departement": "Bas-Rhin",
+  "region": "Grand Est",
+  "coord": [
+   48.82498,
+   7.48292
+  ],
+  "notices_versees": 109,
+  "doute": 3,
+  "part_doute": 0.0275,
+  "niveaux": [
+   3,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0323",
+  "nom": "musée Municipal",
+  "ville": "Saint-Dizier",
+  "departement": "Haute-Marne",
+  "region": "Grand Est",
+  "coord": [
+   48.63791,
+   4.9485
+  ],
+  "notices_versees": 33,
+  "doute": 3,
+  "part_doute": 0.0909,
+  "niveaux": [
+   3,
+   0,
+   0
+  ],
+  "copie": 1,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M1016",
+  "nom": "musée d'Allard",
+  "ville": "Montbrison",
+  "departement": "Loire",
+  "region": "Auvergne-Rhône-Alpes",
+  "coord": [
+   45.60824,
+   4.06195
+  ],
+  "notices_versees": 60,
+  "doute": 3,
+  "part_doute": 0.05,
+  "niveaux": [
+   3,
+   0,
+   0
+  ],
+  "copie": 2,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M1061",
+  "nom": "musée Schoelcher",
+  "ville": "Pointe-à-Pitre",
+  "departement": "Guadeloupe",
+  "region": "DROM",
+  "coord": [
+   16.2377,
+   -61.53774
+  ],
+  "notices_versees": 182,
+  "doute": 3,
+  "part_doute": 0.0165,
+  "niveaux": [
+   3,
+   0,
+   0
+  ],
+  "copie": 12,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0164",
+  "nom": "musée Saint-Nazaire",
+  "ville": "Bourbon-Lancy",
+  "departement": "Saône-et-Loire",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   46.62407,
+   3.76855
+  ],
+  "notices_versees": 299,
+  "doute": 3,
+  "part_doute": 0.01,
+  "niveaux": [
+   2,
+   0,
+   1
+  ],
+  "copie": 1,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0964",
+  "nom": "musées des pays de l'Ain",
+  "ville": "Bourg-en-Bresse",
+  "departement": "Ain",
+  "region": "Auvergne-Rhône-Alpes",
+  "coord": [
+   46.19654,
+   5.21922
+  ],
+  "notices_versees": 663,
+  "doute": 3,
+  "part_doute": 0.0045,
+  "niveaux": [
+   2,
+   1,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0394",
+  "nom": "musée du jouet Pierre Pinel",
+  "ville": "Poissy",
+  "departement": "Yvelines",
+  "region": "Ile-de-France",
+  "coord": [
+   48.92843,
+   2.03789
+  ],
+  "notices_versees": 226,
+  "doute": 3,
+  "part_doute": 0.0133,
+  "niveaux": [
+   3,
+   0,
+   0
+  ],
+  "copie": 2,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0390",
+  "nom": "Musée du Domaine royal de Marly – Louveciennes-Marly-le-Roi",
+  "ville": "Marly-le-Roi",
+  "departement": "Yvelines",
+  "region": "Ile-de-France",
+  "coord": [
+   48.85957,
+   2.10948
+  ],
+  "notices_versees": 77,
+  "doute": 3,
+  "part_doute": 0.039,
+  "niveaux": [
+   3,
+   0,
+   0
+  ],
+  "copie": 12,
+  "revision": 1
+ },
+ {
+  "code_museofile": "M0095",
+  "nom": "musée Edmond Rostand",
+  "ville": "Cambo-les-Bains",
+  "departement": "Pyrénées-Atlantiques",
+  "region": "Nouvelle-Aquitaine",
+  "coord": [
+   43.36687,
+   -1.41606
+  ],
+  "notices_versees": 284,
+  "doute": 3,
+  "part_doute": 0.0106,
+  "niveaux": [
+   3,
+   0,
+   0
+  ],
+  "copie": 1,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0345",
+  "nom": "musée des Beaux-Arts",
+  "ville": "Lons-le-Saunier",
+  "departement": "Jura",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   46.67586,
+   5.55391
+  ],
+  "notices_versees": 30,
+  "doute": 3,
+  "part_doute": 0.1,
+  "niveaux": [
+   3,
+   0,
+   0
+  ],
+  "copie": 1,
+  "revision": 7
+ },
+ {
+  "code_museofile": "M5009",
+  "nom": "musée national du château de Compiègne",
+  "ville": "Compiègne",
+  "departement": "Oise",
+  "region": "Hauts-de-France",
+  "coord": [
+   49.41944,
+   2.83149
+  ],
+  "notices_versees": 1744,
+  "doute": 3,
+  "part_doute": 0.0017,
+  "niveaux": [
+   3,
+   0,
+   0
+  ],
+  "copie": 129,
+  "revision": 2
+ },
+ {
+  "code_museofile": "M0340",
+  "nom": "musée municipal",
+  "ville": "Pontarlier",
+  "departement": "Doubs",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   46.90422,
+   6.35458
+  ],
+  "notices_versees": 528,
+  "doute": 3,
+  "part_doute": 0.0057,
+  "niveaux": [
+   2,
+   1,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0165",
+  "nom": "musée Vivant Denon",
+  "ville": "Chalon-sur-Saône",
+  "departement": "Saône-et-Loire",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   46.78105,
+   4.85308
+  ],
+  "notices_versees": 2367,
+  "doute": 3,
+  "part_doute": 0.0013,
+  "niveaux": [
+   2,
+   1,
+   0
+  ],
+  "copie": 9,
+  "revision": 2
+ },
+ {
+  "code_museofile": "M0081",
+  "nom": "musée Despiau Wlérick",
+  "ville": "Mont-de-Marsan",
+  "departement": "Landes",
+  "region": "Nouvelle-Aquitaine",
+  "coord": [
+   43.8926,
+   -0.49889
+  ],
+  "notices_versees": 614,
+  "doute": 3,
+  "part_doute": 0.0049,
+  "niveaux": [
+   0,
+   3,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0872",
+  "nom": "musée des explorations du monde (MEM) ",
+  "ville": "Cannes",
+  "departement": "Alpes-Maritimes",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "coord": [
+   43.55152,
+   7.01003
+  ],
+  "notices_versees": 138,
+  "doute": 3,
+  "part_doute": 0.0217,
+  "niveaux": [
+   2,
+   1,
+   0
+  ],
+  "copie": 0,
+  "revision": 1
+ },
+ {
+  "code_museofile": "M0452",
+  "nom": "musée Cévenol",
+  "ville": "Le Vigan",
+  "departement": "Gard",
+  "region": "Occitanie",
+  "coord": [
+   43.989,
+   3.60693
+  ],
+  "notices_versees": 5,
+  "doute": 3,
+  "part_doute": 0.6,
+  "niveaux": [
+   3,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0432",
+  "nom": "musée du vieil Argenteuil",
+  "ville": "Argenteuil",
+  "departement": "Val-d'Oise",
+  "region": "Ile-de-France",
+  "coord": [
+   48.94691,
+   2.24933
+  ],
+  "notices_versees": 945,
+  "doute": 3,
+  "part_doute": 0.0032,
+  "niveaux": [
+   3,
+   0,
+   0
+  ],
+  "copie": 7,
+  "revision": 2
+ },
+ {
+  "code_museofile": "M0500",
+  "nom": "musée du cloître",
+  "ville": "Tulle",
+  "departement": "Corrèze",
+  "region": "Nouvelle-Aquitaine",
+  "coord": [
+   45.26765,
+   1.77079
+  ],
+  "notices_versees": 49,
+  "doute": 3,
+  "part_doute": 0.0612,
+  "niveaux": [
+   3,
+   0,
+   0
+  ],
+  "copie": 1,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0437",
+  "nom": "musée Jean-Jacques Rousseau",
+  "ville": "Montmorency",
+  "departement": "Val-d'Oise",
+  "region": "Ile-de-France",
+  "coord": [
+   48.98689,
+   2.32092
+  ],
+  "notices_versees": 21,
+  "doute": 3,
+  "part_doute": 0.1429,
+  "niveaux": [
+   2,
+   1,
+   0
+  ],
+  "copie": 1,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0010",
+  "nom": "musée de l'Image Populaire",
+  "ville": "Val de Moder",
+  "departement": "Bas-Rhin",
+  "region": "Grand Est",
+  "coord": [
+   48.84483,
+   7.61137
+  ],
+  "notices_versees": 215,
+  "doute": 3,
+  "part_doute": 0.014,
+  "niveaux": [
+   3,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 2
+ },
+ {
+  "code_museofile": "M0618",
+  "nom": "musée d'archéologie et d'histoire locale",
+  "ville": "Denain",
+  "departement": "Nord",
+  "region": "Hauts-de-France",
+  "coord": [
+   50.32761,
+   3.40097
+  ],
+  "notices_versees": 396,
+  "doute": 3,
+  "part_doute": 0.0076,
+  "niveaux": [
+   3,
+   0,
+   0
+  ],
+  "copie": 13,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0735",
+  "nom": "musée de l'Horlogerie",
+  "ville": "Saint-Nicolas-d'Aliermont",
+  "departement": "Seine-Maritime",
+  "region": "Normandie",
+  "coord": [
+   49.87964,
+   1.21979
+  ],
+  "notices_versees": 637,
+  "doute": 3,
+  "part_doute": 0.0047,
+  "niveaux": [
+   3,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0733",
+  "nom": "musée des antiquités de la Seine-Maritime",
+  "ville": "Rouen",
+  "departement": "Seine-Maritime",
+  "region": "Normandie",
+  "coord": [
+   49.44727,
+   1.09893
+  ],
+  "notices_versees": 795,
+  "doute": 3,
+  "part_doute": 0.0038,
+  "niveaux": [
+   1,
+   2,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0228",
+  "nom": "musée des beaux-arts",
+  "ville": "Vannes",
+  "departement": "Morbihan",
+  "region": "Bretagne",
+  "coord": [
+   47.65769,
+   -2.75756
+  ],
+  "notices_versees": 3073,
+  "doute": 3,
+  "part_doute": 0.001,
+  "niveaux": [
+   3,
+   0,
+   0
+  ],
+  "copie": 1,
+  "revision": 31
+ },
+ {
+  "code_museofile": "M1070",
+  "nom": "musée de Villèle",
+  "ville": "Saint-Gilles-les-Hauts",
+  "departement": "La Réunion",
+  "region": "DROM",
+  "coord": [
+   -21.05592,
+   55.26441
+  ],
+  "notices_versees": 86,
+  "doute": 2,
+  "part_doute": 0.0233,
+  "niveaux": [
+   2,
+   0,
+   0
+  ],
+  "copie": 5,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M1117",
+  "nom": "musée de la nacre et de la tabletterie",
+  "ville": "Méru",
+  "departement": "Oise",
+  "region": "Hauts-de-France",
+  "coord": [
+   49.23833,
+   2.13961
+  ],
+  "notices_versees": 1178,
+  "doute": 2,
+  "part_doute": 0.0017,
+  "niveaux": [
+   0,
+   2,
+   0
+  ],
+  "copie": 1,
+  "revision": 32
+ },
+ {
+  "code_museofile": "M0990",
+  "nom": "musée des antiquités gallo-romaines",
+  "ville": "Aoste",
+  "departement": "Isère",
+  "region": "Auvergne-Rhône-Alpes",
+  "coord": [
+   45.58761,
+   5.60661
+  ],
+  "notices_versees": 513,
+  "doute": 2,
+  "part_doute": 0.0039,
+  "niveaux": [
+   2,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M1039",
+  "nom": "musée des hospices civils de Lyon",
+  "ville": "Lyon",
+  "departement": "Rhône",
+  "region": "Auvergne-Rhône-Alpes",
+  "coord": [
+   45.76091,
+   4.83149
+  ],
+  "notices_versees": 1613,
+  "doute": 2,
+  "part_doute": 0.0012,
+  "niveaux": [
+   2,
+   0,
+   0
+  ],
+  "copie": 2,
+  "revision": 3
+ },
+ {
+  "code_museofile": "M0880",
+  "nom": "musée des beaux-arts Jules Chéret",
+  "ville": "Nice",
+  "departement": "Alpes-Maritimes",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "coord": [
+   43.69468,
+   7.24947
+  ],
+  "notices_versees": 224,
+  "doute": 2,
+  "part_doute": 0.0089,
+  "niveaux": [
+   2,
+   0,
+   0
+  ],
+  "copie": 2,
+  "revision": 5
+ },
+ {
+  "code_museofile": "M0212",
+  "nom": "musée de Bretagne",
+  "ville": "Rennes",
+  "departement": "Ille-et-Vilaine",
+  "region": "Bretagne",
+  "coord": [
+   48.10545,
+   -1.67492
+  ],
+  "notices_versees": 1018,
+  "doute": 2,
+  "part_doute": 0.002,
+  "niveaux": [
+   2,
+   0,
+   0
+  ],
+  "copie": 17,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0224",
+  "nom": "musée de la Compagnie des Indes",
+  "ville": "Port-Louis",
+  "departement": "Morbihan",
+  "region": "Bretagne",
+  "coord": [
+   47.70915,
+   -3.36258
+  ],
+  "notices_versees": 338,
+  "doute": 2,
+  "part_doute": 0.0059,
+  "niveaux": [
+   1,
+   1,
+   0
+  ],
+  "copie": 33,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0214",
+  "nom": "musée d'histoire de la ville et d’ethnographie du pays malouin",
+  "ville": "Saint-Malo",
+  "departement": "Ille-et-Vilaine",
+  "region": "Bretagne",
+  "coord": [
+   48.65074,
+   -2.02373
+  ],
+  "notices_versees": 176,
+  "doute": 2,
+  "part_doute": 0.0114,
+  "niveaux": [
+   2,
+   0,
+   0
+  ],
+  "copie": 4,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0205",
+  "nom": "musée ",
+  "ville": "Pont-Aven",
+  "departement": "Finistère",
+  "region": "Bretagne",
+  "coord": [
+   47.8555,
+   -3.74715
+  ],
+  "notices_versees": 1131,
+  "doute": 2,
+  "part_doute": 0.0018,
+  "niveaux": [
+   2,
+   0,
+   0
+  ],
+  "copie": 3,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0621",
+  "nom": "musée des beaux-arts",
+  "ville": "Dunkerque",
+  "departement": "Nord",
+  "region": "Hauts-de-France",
+  "coord": [
+   51.03733,
+   2.37552
+  ],
+  "notices_versees": 185,
+  "doute": 2,
+  "part_doute": 0.0108,
+  "niveaux": [
+   1,
+   1,
+   0
+  ],
+  "copie": 1,
+  "revision": 9
+ },
+ {
+  "code_museofile": "M0514",
+  "nom": "musée lorrain",
+  "ville": "Nancy",
+  "departement": "Meurthe-et-Moselle",
+  "region": "Grand Est",
+  "coord": [
+   46.98665,
+   3.15748
+  ],
+  "notices_versees": 79,
+  "doute": 2,
+  "part_doute": 0.0253,
+  "niveaux": [
+   2,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0710",
+  "nom": "maison des templiers",
+  "ville": "Caudebec-en-Caux",
+  "departement": "Seine-Maritime",
+  "region": "Normandie",
+  "coord": [
+   49.52535,
+   0.72597
+  ],
+  "notices_versees": 526,
+  "doute": 2,
+  "part_doute": 0.0038,
+  "niveaux": [
+   1,
+   1,
+   0
+  ],
+  "copie": 12,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0260",
+  "nom": "musée Lansyer",
+  "ville": "Loches",
+  "departement": "Indre-et-Loire",
+  "region": "Centre-Val de Loire",
+  "coord": [
+   47.12683,
+   0.99746
+  ],
+  "notices_versees": 1432,
+  "doute": 2,
+  "part_doute": 0.0014,
+  "niveaux": [
+   0,
+   1,
+   1
+  ],
+  "copie": 4,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0639",
+  "nom": "LaM, Lille Métropole musée d'art moderne, d'art contemporain et d'art brut",
+  "ville": "Villeneuve d'Ascq",
+  "departement": "Nord",
+  "region": "Hauts-de-France",
+  "coord": [
+   50.6375,
+   3.14859
+  ],
+  "notices_versees": 4785,
+  "doute": 2,
+  "part_doute": 0.0004,
+  "niveaux": [
+   2,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0628",
+  "nom": "centre historique minier, musée de la mine, centre d’archives, centre de culture scientifique de l’énergie",
+  "ville": "Lewarde",
+  "departement": "Nord",
+  "region": "Hauts-de-France",
+  "coord": [
+   50.33603,
+   3.16842
+  ],
+  "notices_versees": 398,
+  "doute": 2,
+  "part_doute": 0.005,
+  "niveaux": [
+   2,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0550",
+  "nom": "musée des beaux-arts Denys Puech",
+  "ville": "Rodez",
+  "departement": "Aveyron",
+  "region": "Occitanie",
+  "coord": [
+   44.34929,
+   2.57808
+  ],
+  "notices_versees": 1110,
+  "doute": 2,
+  "part_doute": 0.0018,
+  "niveaux": [
+   2,
+   0,
+   0
+  ],
+  "copie": 1,
+  "revision": 4
+ },
+ {
+  "code_museofile": "M0284",
+  "nom": "musée Girodet",
+  "ville": "Montargis",
+  "departement": "Loiret",
+  "region": "Centre-Val de Loire",
+  "coord": [
+   47.99753,
+   2.7372
+  ],
+  "notices_versees": 190,
+  "doute": 2,
+  "part_doute": 0.0105,
+  "niveaux": [
+   2,
+   0,
+   0
+  ],
+  "copie": 6,
+  "revision": 7
+ },
+ {
+  "code_museofile": "M0275",
+  "nom": "musée de Sologne",
+  "ville": "Romorantin-Lantenay",
+  "departement": "Loir-et-Cher",
+  "region": "Centre-Val de Loire",
+  "coord": [
+   47.35732,
+   1.74369
+  ],
+  "notices_versees": 17,
+  "doute": 2,
+  "part_doute": 0.1176,
+  "niveaux": [
+   2,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 1
+ },
+ {
+  "code_museofile": "M5027",
+  "nom": "musée national du sport",
+  "ville": "Nice",
+  "departement": "Alpes-Maritimes",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "coord": [
+   43.70383,
+   7.19106
+  ],
+  "notices_versees": 420,
+  "doute": 2,
+  "part_doute": 0.0048,
+  "niveaux": [
+   1,
+   0,
+   1
+  ],
+  "copie": 1,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M5030",
+  "nom": "musée de l'Orangerie des Tuileries",
+  "ville": "Paris",
+  "departement": "Paris",
+  "region": "Ile-de-France",
+  "coord": [
+   48.85987,
+   2.34681
+  ],
+  "notices_versees": 133,
+  "doute": 2,
+  "part_doute": 0.015,
+  "niveaux": [
+   2,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 2
+ },
+ {
+  "code_museofile": "M0524",
+  "nom": "musée Jeanne d'Arc",
+  "ville": "Vaucouleurs",
+  "departement": "Meuse",
+  "region": "Grand Est",
+  "coord": [
+   48.60265,
+   5.666
+  ],
+  "notices_versees": 41,
+  "doute": 2,
+  "part_doute": 0.0488,
+  "niveaux": [
+   1,
+   1,
+   0
+  ],
+  "copie": 2,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0012",
+  "nom": "musée du Château des Rohan",
+  "ville": "Saverne",
+  "departement": "Bas-Rhin",
+  "region": "Grand Est",
+  "coord": [
+   48.74196,
+   7.36279
+  ],
+  "notices_versees": 101,
+  "doute": 2,
+  "part_doute": 0.0198,
+  "niveaux": [
+   1,
+   1,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0060",
+  "nom": "musée de Sarlat et du Périgord noir",
+  "ville": "Sarlat-la-Canéda",
+  "departement": "Dordogne",
+  "region": "Nouvelle-Aquitaine",
+  "coord": [
+   44.89456,
+   1.23305
+  ],
+  "notices_versees": 32,
+  "doute": 1,
+  "part_doute": 0.0312,
+  "niveaux": [
+   1,
+   0,
+   0
+  ],
+  "copie": 1,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0089",
+  "nom": "musée du château",
+  "ville": "Nérac",
+  "departement": "Lot-et-Garonne",
+  "region": "Nouvelle-Aquitaine",
+  "coord": [
+   44.13504,
+   0.33999
+  ],
+  "notices_versees": 66,
+  "doute": 1,
+  "part_doute": 0.0152,
+  "niveaux": [
+   1,
+   0,
+   0
+  ],
+  "copie": 6,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0093",
+  "nom": "musée Basque et de l'Histoire de Bayonne",
+  "ville": "Bayonne",
+  "departement": "Pyrénées-Atlantiques",
+  "region": "Nouvelle-Aquitaine",
+  "coord": [
+   43.49109,
+   -1.47382
+  ],
+  "notices_versees": 170,
+  "doute": 1,
+  "part_doute": 0.0059,
+  "niveaux": [
+   1,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0529",
+  "nom": "musées de la Cour d'or",
+  "ville": "Metz",
+  "departement": "Moselle",
+  "region": "Grand Est",
+  "coord": [
+   49.12105,
+   6.17798
+  ],
+  "notices_versees": 303,
+  "doute": 1,
+  "part_doute": 0.0033,
+  "niveaux": [
+   0,
+   1,
+   0
+  ],
+  "copie": 2,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M1069",
+  "nom": "musée Léon Dierx",
+  "ville": "Saint-Denis de La Réunion",
+  "departement": "La Réunion",
+  "region": "DROM",
+  "coord": [
+   -20.8837,
+   55.45025
+  ],
+  "notices_versees": 10,
+  "doute": 1,
+  "part_doute": 0.1,
+  "niveaux": [
+   0,
+   1,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0376",
+  "nom": "musée Gatien Bonnet",
+  "ville": "Lagny-sur-Marne",
+  "departement": "Seine-et-Marne",
+  "region": "Ile-de-France",
+  "coord": [
+   48.87964,
+   2.70777
+  ],
+  "notices_versees": 65,
+  "doute": 1,
+  "part_doute": 0.0154,
+  "niveaux": [
+   1,
+   0,
+   0
+  ],
+  "copie": 1,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0378",
+  "nom": "musée Bossuet",
+  "ville": "Meaux",
+  "departement": "Seine-et-Marne",
+  "region": "Île-de-France",
+  "coord": [
+   48.93802,
+   2.87061
+  ],
+  "notices_versees": 102,
+  "doute": 1,
+  "part_doute": 0.0098,
+  "niveaux": [
+   1,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 1
+ },
+ {
+  "code_museofile": "M0171",
+  "nom": "musée municipal",
+  "ville": "Louhans-Châteaurenaud",
+  "departement": "Saône-et-Loire",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   46.87264,
+   5.27505
+  ],
+  "notices_versees": 116,
+  "doute": 1,
+  "part_doute": 0.0086,
+  "niveaux": [
+   1,
+   0,
+   0
+  ],
+  "copie": 3,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M1041",
+  "nom": "musée Paul Dini",
+  "ville": "Villefranche-sur-Saône",
+  "departement": "Rhône",
+  "region": "Auvergne-Rhône-Alpes",
+  "coord": [
+   45.99094,
+   4.72153
+  ],
+  "notices_versees": 324,
+  "doute": 1,
+  "part_doute": 0.0031,
+  "niveaux": [
+   1,
+   0,
+   0
+  ],
+  "copie": 1,
+  "revision": 2
+ },
+ {
+  "code_museofile": "M0159",
+  "nom": "musée Auguste Grasset",
+  "ville": "Varzy",
+  "departement": "Nièvre",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   47.35739,
+   3.38611
+  ],
+  "notices_versees": 104,
+  "doute": 1,
+  "part_doute": 0.0096,
+  "niveaux": [
+   1,
+   0,
+   0
+  ],
+  "copie": 6,
+  "revision": 1
+ },
+ {
+  "code_museofile": "M0902",
+  "nom": "Museon Arlaten",
+  "ville": "Arles",
+  "departement": "Bouches-du-Rhône",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "coord": [
+   43.54073,
+   4.67609
+  ],
+  "notices_versees": 826,
+  "doute": 1,
+  "part_doute": 0.0012,
+  "niveaux": [
+   1,
+   0,
+   0
+  ],
+  "copie": 1,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0903",
+  "nom": "musée camarguais",
+  "ville": "Arles",
+  "departement": "Bouches-du-Rhône",
+  "region": "Provence-Alpes-Côte-d'Azur",
+  "coord": [
+   43.67679,
+   4.61542
+  ],
+  "notices_versees": 2698,
+  "doute": 1,
+  "part_doute": 0.0004,
+  "niveaux": [
+   1,
+   0,
+   0
+  ],
+  "copie": 2,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0403",
+  "nom": "musée municipal Robert Dubois-Corneau",
+  "ville": "Brunoy",
+  "departement": "Essonne",
+  "region": "Ile-de-France",
+  "coord": [
+   48.70031,
+   2.50029
+  ],
+  "notices_versees": 95,
+  "doute": 1,
+  "part_doute": 0.0105,
+  "niveaux": [
+   0,
+   1,
+   0
+  ],
+  "copie": 2,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0320",
+  "nom": "Maison des Lumières Denis Diderot",
+  "ville": "Langres",
+  "departement": "Haute-Marne",
+  "region": "Grand Est",
+  "coord": [
+   47.86642,
+   5.33175
+  ],
+  "notices_versees": 22,
+  "doute": 1,
+  "part_doute": 0.0455,
+  "niveaux": [
+   1,
+   0,
+   0
+  ],
+  "copie": 2,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0338",
+  "nom": "musée de Plein Air des Maisons Comtoises",
+  "ville": "Nancray",
+  "departement": "Doubs",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   47.24298,
+   6.18963
+  ],
+  "notices_versees": 1083,
+  "doute": 1,
+  "part_doute": 0.0009,
+  "niveaux": [
+   1,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0339",
+  "nom": "musée Gustave Courbet",
+  "ville": "Ornans",
+  "departement": "Doubs",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   47.10487,
+   6.1477
+  ],
+  "notices_versees": 509,
+  "doute": 1,
+  "part_doute": 0.002,
+  "niveaux": [
+   1,
+   0,
+   0
+  ],
+  "copie": 17,
+  "revision": 5
+ },
+ {
+  "code_museofile": "M0411",
+  "nom": "musée français de la carte à jouer et galerie d'histoire de la ville",
+  "ville": "Issy-les-Moulineaux",
+  "departement": "Hauts-de-Seine",
+  "region": "Ile-de-France",
+  "coord": [
+   48.82277,
+   2.27345
+  ],
+  "notices_versees": 76,
+  "doute": 1,
+  "part_doute": 0.0132,
+  "niveaux": [
+   1,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0412",
+  "nom": "musée d'art et d'histoire",
+  "ville": "Meudon",
+  "departement": "Hauts-de-Seine",
+  "region": "Ile-de-France",
+  "coord": [
+   48.80641,
+   2.23489
+  ],
+  "notices_versees": 394,
+  "doute": 1,
+  "part_doute": 0.0025,
+  "niveaux": [
+   1,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M5046",
+  "nom": "musée national de la maison Bonaparte",
+  "ville": "Ajaccio",
+  "departement": "Corse-du-Sud",
+  "region": "Corse",
+  "coord": [
+   41.9177,
+   8.73795
+  ],
+  "notices_versees": 6,
+  "doute": 1,
+  "part_doute": 0.1667,
+  "niveaux": [
+   1,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0879",
+  "nom": "musée Jean Cocteau",
+  "ville": "Menton",
+  "departement": "Alpes-Maritimes",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "coord": [
+   43.77495,
+   7.50868
+  ],
+  "notices_versees": 537,
+  "doute": 1,
+  "part_doute": 0.0019,
+  "niveaux": [
+   1,
+   0,
+   0
+  ],
+  "copie": 8,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0852",
+  "nom": "musée Sainte-Croix",
+  "ville": "Poitiers",
+  "departement": "Vienne",
+  "region": "Nouvelle-Aquitaine",
+  "coord": [
+   46.58114,
+   0.34443
+  ],
+  "notices_versees": 185,
+  "doute": 1,
+  "part_doute": 0.0054,
+  "niveaux": [
+   1,
+   0,
+   0
+  ],
+  "copie": 4,
+  "revision": 1
+ },
+ {
+  "code_museofile": "M0465",
+  "nom": "musée de l'Ephèbe",
+  "ville": "Agde",
+  "departement": "Hérault",
+  "region": "Occitanie",
+  "coord": [
+   43.29805,
+   3.4767
+  ],
+  "notices_versees": 5,
+  "doute": 1,
+  "part_doute": 0.2,
+  "niveaux": [
+   0,
+   1,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0199",
+  "nom": "musée de la pêche",
+  "ville": "Concarneau",
+  "departement": "Finistère",
+  "region": "Bretagne",
+  "coord": [
+   47.8721,
+   -3.91548
+  ],
+  "notices_versees": 255,
+  "doute": 1,
+  "part_doute": 0.0039,
+  "niveaux": [
+   0,
+   1,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0816",
+  "nom": "musée-historial de la Grande Guerre",
+  "ville": "Péronne",
+  "departement": "Somme",
+  "region": "Hauts-de-France",
+  "coord": [
+   49.93212,
+   2.93599
+  ],
+  "notices_versees": 476,
+  "doute": 1,
+  "part_doute": 0.0021,
+  "niveaux": [
+   0,
+   1,
+   0
+  ],
+  "copie": 14,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0754",
+  "nom": "musée d'Art et d'Histoire",
+  "ville": "Cholet",
+  "departement": "Maine-et-Loire",
+  "region": "Pays-de-la-Loire",
+  "coord": [
+   47.05839,
+   -0.88228
+  ],
+  "notices_versees": 15,
+  "doute": 1,
+  "part_doute": 0.0667,
+  "niveaux": [
+   1,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0431",
+  "nom": "musée d'art contemporain du Val-de-Marne",
+  "ville": "Vitry-sur-Seine",
+  "departement": "Val-de-Marne",
+  "region": "Ile-de-France",
+  "coord": [
+   48.79282,
+   2.38707
+  ],
+  "notices_versees": 1636,
+  "doute": 1,
+  "part_doute": 0.0006,
+  "niveaux": [
+   1,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0722",
+  "nom": "musée Pierre Corneille",
+  "ville": "Petit-Couronne",
+  "departement": "Seine-Maritime",
+  "region": "Normandie",
+  "coord": [
+   49.38937,
+   1.0216
+  ],
+  "notices_versees": 33,
+  "doute": 1,
+  "part_doute": 0.0303,
+  "niveaux": [
+   0,
+   1,
+   0
+  ],
+  "copie": 10,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0732",
+  "nom": "musée Le Secq des Tournelles",
+  "ville": "Rouen",
+  "departement": "Seine-Maritime",
+  "region": "Normandie",
+  "coord": [
+   49.44515,
+   1.09452
+  ],
+  "notices_versees": 403,
+  "doute": 1,
+  "part_doute": 0.0025,
+  "niveaux": [
+   1,
+   0,
+   0
+  ],
+  "copie": 2,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0744",
+  "nom": "musée du Château des Ducs de Bretagne",
+  "ville": "Nantes",
+  "departement": "Loire-Atlantique",
+  "region": "Pays-de-la-Loire",
+  "coord": [
+   47.21635,
+   -1.54939
+  ],
+  "notices_versees": 38,
+  "doute": 1,
+  "part_doute": 0.0263,
+  "niveaux": [
+   1,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0476",
+  "nom": "musée Fabre",
+  "ville": "Montpellier",
+  "departement": "Hérault",
+  "region": "Occitanie",
+  "coord": [
+   43.61135,
+   3.88069
+  ],
+  "notices_versees": 283,
+  "doute": 1,
+  "part_doute": 0.0035,
+  "niveaux": [
+   1,
+   0,
+   0
+  ],
+  "copie": 6,
+  "revision": 2
+ },
+ {
+  "code_museofile": "M0503",
+  "nom": "musée d'Art et d'Archéologie",
+  "ville": "Guéret",
+  "departement": "Creuse",
+  "region": "Nouvelle-Aquitaine",
+  "coord": [
+   46.16584,
+   1.87076
+  ],
+  "notices_versees": 13,
+  "doute": 1,
+  "part_doute": 0.0769,
+  "niveaux": [
+   1,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0665",
+  "nom": "musée d'Art et d'Histoire",
+  "ville": "Lisieux",
+  "departement": "Calvados",
+  "region": "Normandie",
+  "coord": [
+   49.14458,
+   0.21933
+  ],
+  "notices_versees": 129,
+  "doute": 1,
+  "part_doute": 0.0078,
+  "niveaux": [
+   0,
+   1,
+   0
+  ],
+  "copie": 2,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0672",
+  "nom": "musée municipal",
+  "ville": "Vire Normandie",
+  "departement": "Calvados",
+  "region": "Normandie",
+  "coord": [
+   48.836,
+   -0.88824
+  ],
+  "notices_versees": 163,
+  "doute": 1,
+  "part_doute": 0.0061,
+  "niveaux": [
+   1,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0683",
+  "nom": "musée Richard Anacréon",
+  "ville": "Granville",
+  "departement": "Manche",
+  "region": "Normandie",
+  "coord": [
+   48.83855,
+   -1.60054
+  ],
+  "notices_versees": 265,
+  "doute": 1,
+  "part_doute": 0.0038,
+  "niveaux": [
+   1,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0686",
+  "nom": "musée du bocage normand, ferme du bois Jugan",
+  "ville": "Saint-Lô",
+  "departement": "Manche",
+  "region": "Normandie",
+  "coord": [
+   49.11465,
+   -1.07496
+  ],
+  "notices_versees": 7,
+  "doute": 1,
+  "part_doute": 0.1429,
+  "niveaux": [
+   1,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0705",
+  "nom": "musée Nicolas Poussin",
+  "ville": "Les Andelys",
+  "departement": "Eure",
+  "region": "Normandie",
+  "coord": [
+   49.24583,
+   1.42001
+  ],
+  "notices_versees": 103,
+  "doute": 1,
+  "part_doute": 0.0097,
+  "niveaux": [
+   1,
+   0,
+   0
+  ],
+  "copie": 3,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0635",
+  "nom": "musée de la Tour abbatiale",
+  "ville": "Saint-Amand-les-Eaux",
+  "departement": "Nord",
+  "region": "Hauts-de-France",
+  "coord": [
+   50.44871,
+   3.42767
+  ],
+  "notices_versees": 1034,
+  "doute": 1,
+  "part_doute": 0.001,
+  "niveaux": [
+   1,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0622",
+  "nom": "musée maritime et portuaire",
+  "ville": "Dunkerque",
+  "departement": "Nord",
+  "region": "Hauts-de-France",
+  "coord": [
+   51.03791,
+   2.37217
+  ],
+  "notices_versees": 106,
+  "doute": 1,
+  "part_doute": 0.0094,
+  "niveaux": [
+   1,
+   0,
+   0
+  ],
+  "copie": 2,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0633",
+  "nom": "musée Henri Boez",
+  "ville": "Maubeuge",
+  "departement": "Nord",
+  "region": "Hauts-de-France",
+  "coord": [
+   50.28041,
+   3.96768
+  ],
+  "notices_versees": 94,
+  "doute": 1,
+  "part_doute": 0.0106,
+  "niveaux": [
+   0,
+   1,
+   0
+  ],
+  "copie": 53,
+  "revision": 2
+ },
+ {
+  "code_museofile": "M0640",
+  "nom": "musée des Beaux-Arts",
+  "ville": "Arras",
+  "departement": "Pas-de-Calais",
+  "region": "Hauts-de-France",
+  "coord": [
+   50.29176,
+   2.77299
+  ],
+  "notices_versees": 6,
+  "doute": 1,
+  "part_doute": 0.1667,
+  "niveaux": [
+   1,
+   0,
+   0
+  ],
+  "copie": 1,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0643",
+  "nom": "musée de Boulogne-sur-Mer",
+  "ville": "Boulogne-sur-Mer",
+  "departement": "Pas-de-Calais",
+  "region": "Hauts-de-France",
+  "coord": [
+   50.72562,
+   1.61635
+  ],
+  "notices_versees": 877,
+  "doute": 1,
+  "part_doute": 0.0011,
+  "niveaux": [
+   1,
+   0,
+   0
+  ],
+  "copie": 1,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0520",
+  "nom": "musée d'art sacré de la Meuse",
+  "ville": "Saint-Mihiel",
+  "departement": "Meuse",
+  "region": "Grand Est",
+  "coord": [
+   48.88855,
+   5.54117
+  ],
+  "notices_versees": 21,
+  "doute": 1,
+  "part_doute": 0.0476,
+  "niveaux": [
+   1,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0023",
+  "nom": "musée de la bataille du 6 août 1870",
+  "ville": "Woerth",
+  "departement": "Bas-Rhin",
+  "region": "Grand Est",
+  "coord": [
+   48.93862,
+   7.74799
+  ],
+  "notices_versees": 1025,
+  "doute": 1,
+  "part_doute": 0.001,
+  "niveaux": [
+   1,
+   0,
+   0
+  ],
+  "copie": 1,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M5039",
+  "nom": "musée Jean-Jacques Henner",
+  "ville": "Paris",
+  "departement": "Paris",
+  "region": "Ile-de-France",
+  "coord": [
+   48.88305,
+   2.30769
+  ],
+  "notices_versees": 1490,
+  "doute": 1,
+  "part_doute": 0.0007,
+  "niveaux": [
+   1,
+   0,
+   0
+  ],
+  "copie": 33,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M5084",
+  "nom": "musée national de l'histoire et des cultures de l'immigration",
+  "ville": "Paris",
+  "departement": "Paris",
+  "region": "Île-de-France",
+  "coord": [
+   48.83675,
+   2.39039
+  ],
+  "notices_versees": 2492,
+  "doute": 1,
+  "part_doute": 0.0004,
+  "niveaux": [
+   0,
+   1,
+   0
+  ],
+  "copie": 2,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M7012",
+  "nom": "muséum d'histoire naturelle",
+  "ville": "Rouen",
+  "departement": "Seine-Maritime",
+  "region": "Normandie",
+  "coord": [
+   49.44727,
+   1.09893
+  ],
+  "notices_versees": 882,
+  "doute": 1,
+  "part_doute": 0.0011,
+  "niveaux": [
+   1,
+   0,
+   0
+  ],
+  "copie": 2,
+  "revision": 15
+ },
+ {
+  "code_museofile": "M5010",
+  "nom": "musée de la voiture et du tourisme (annexe du musée national du château de Compiègne)",
+  "ville": "Compiègne",
+  "departement": "Oise",
+  "region": "Hauts-de-France",
+  "coord": [
+   49.4111,
+   2.81806
+  ],
+  "notices_versees": 169,
+  "doute": 1,
+  "part_doute": 0.0059,
+  "niveaux": [
+   1,
+   0,
+   0
+  ],
+  "copie": 1,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0011",
+  "nom": "musée historique et industriel - musée du fer",
+  "ville": "Reichshoffen",
+  "departement": "Bas-Rhin",
+  "region": "Grand Est",
+  "coord": [
+   48.93223,
+   7.66481
+  ],
+  "notices_versees": 115,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 1,
+  "revision": 0
+ },
+ {
+  "code_museofile": "mode d'acquisition particulier",
+  "nom": "musée du Louvre",
+  "ville": "Paris",
+  "departement": "Paris",
+  "region": "Ile-de-France",
+  "coord": [
+   48.8599,
+   2.34093
+  ],
+  "notices_versees": 6,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0000",
+  "nom": null,
+  "ville": null,
+  "departement": null,
+  "region": null,
+  "coord": null,
+  "notices_versees": 2,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M7051",
+  "nom": "muséum d'histoire naturelle et de préhistoire",
+  "ville": "Nîmes",
+  "departement": "Gard",
+  "region": "Occitanie",
+  "coord": [
+   43.83798,
+   4.36371
+  ],
+  "notices_versees": 291,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 4
+ },
+ {
+  "code_museofile": "M7059",
+  "nom": "musée Frank A. Perret - mémorial de la catastrophe de 1902",
+  "ville": "Saint-Pierre de la Martinique",
+  "departement": "Martinique",
+  "region": "DROM",
+  "coord": [
+   14.7431,
+   -61.17599
+  ],
+  "notices_versees": 33,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M9007",
+  "nom": "musée de l’artillerie et de l’Infanterie",
+  "ville": "Draguignan",
+  "departement": "Var",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "coord": [
+   43.52965,
+   6.49506
+  ],
+  "notices_versees": 1,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M9013",
+  "nom": "musée de la Gendarmerie",
+  "ville": "Melun",
+  "departement": "Seine-et-Marne",
+  "region": "Île-de-France",
+  "coord": [
+   48.54648,
+   2.65158
+  ],
+  "notices_versees": 130,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M9036",
+  "nom": null,
+  "ville": null,
+  "departement": null,
+  "region": null,
+  "coord": null,
+  "notices_versees": 2,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0521",
+  "nom": "musée départemental Raymond Poincaré",
+  "ville": "Sampigny",
+  "departement": "Meuse",
+  "region": "Grand Est",
+  "coord": [
+   48.82758,
+   5.50824
+  ],
+  "notices_versees": 156,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0522",
+  "nom": "musée de la bière et du pays de Stenay",
+  "ville": "Stenay",
+  "departement": "Meuse",
+  "region": "Grand Est",
+  "coord": [
+   49.48769,
+   5.18679
+  ],
+  "notices_versees": 147,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 1,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0523",
+  "nom": "musée d'Argonne",
+  "ville": "Varennes-en-Argonne",
+  "departement": "Meuse",
+  "region": "Grand Est",
+  "coord": [
+   49.22606,
+   5.03307
+  ],
+  "notices_versees": 17,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0531",
+  "nom": "musée militaire et Erckmann-Chatrian",
+  "ville": "Phalsbourg",
+  "departement": "Moselle",
+  "region": "Grand Est",
+  "coord": [
+   48.76655,
+   7.25906
+  ],
+  "notices_versees": 110,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 2,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0539",
+  "nom": "musée Louis Français",
+  "ville": "Plombières-les-Bains",
+  "departement": "Vosges",
+  "region": "Grand Est",
+  "coord": [
+   47.9641,
+   6.45849
+  ],
+  "notices_versees": 10,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0541",
+  "nom": "musée Charles-Friry",
+  "ville": "Remiremont",
+  "departement": "Vosges",
+  "region": "Grand Est",
+  "coord": [
+   48.01517,
+   6.59003
+  ],
+  "notices_versees": 151,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 1
+ },
+ {
+  "code_museofile": "M0131",
+  "nom": "musée Alésia - centre d'interprétation",
+  "ville": "Alise-Sainte-Reine",
+  "departement": "Côte-d'Or",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   47.53659,
+   4.46959
+  ],
+  "notices_versees": 60,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M1123",
+  "nom": "musée Jadis Allevard",
+  "ville": "Allevard-les-Bains",
+  "departement": "Isère",
+  "region": "Auvergne-Rhône-Alpes",
+  "coord": [
+   45.39254,
+   6.07714
+  ],
+  "notices_versees": 216,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M1128",
+  "nom": "musée des sapeurs-pompiers de Lyon",
+  "ville": "Lyon",
+  "departement": "Rhône",
+  "region": "Auvergne-Rhône-Alpes",
+  "coord": [
+   45.79049,
+   4.79741
+  ],
+  "notices_versees": 10,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M1144",
+  "nom": null,
+  "ville": null,
+  "departement": null,
+  "region": null,
+  "coord": null,
+  "notices_versees": 1,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0245",
+  "nom": "musée de la chemiserie et de l'élégance masculine",
+  "ville": "Argenton-sur-Creuse",
+  "departement": "Indre",
+  "region": "Centre-Val de Loire",
+  "coord": [
+   46.58847,
+   1.51852
+  ],
+  "notices_versees": 31,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0248",
+  "nom": "musée de l'hospice Saint-Roch",
+  "ville": "Issoudun",
+  "departement": "Indre",
+  "region": "Centre-Val de Loire",
+  "coord": [
+   46.94541,
+   1.99438
+  ],
+  "notices_versees": 1,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 1
+ },
+ {
+  "code_museofile": "M0251",
+  "nom": "musée ornithologique",
+  "ville": "Le Blanc",
+  "departement": "Indre",
+  "region": "Centre-Val de Loire",
+  "coord": [
+   46.62796,
+   1.06283
+  ],
+  "notices_versees": 819,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0252",
+  "nom": "musée archéologique d'Argentomagus",
+  "ville": "Saint-Marcel",
+  "departement": "Indre",
+  "region": "Centre-Val de Loire",
+  "coord": [
+   46.6005,
+   1.51538
+  ],
+  "notices_versees": 10,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0255",
+  "nom": "Le Carroi, musée d'arts et d'histoire",
+  "ville": "Chinon",
+  "departement": "Indre-et-Loire",
+  "region": "Centre-Val de Loire",
+  "coord": [
+   47.16712,
+   0.23767
+  ],
+  "notices_versees": 185,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0259",
+  "nom": "musée départemental de préhistoire",
+  "ville": "Le Grand-Pressigny",
+  "departement": "Indre-et-Loire",
+  "region": "Centre-Val de Loire",
+  "coord": [
+   46.921,
+   0.80071
+  ],
+  "notices_versees": 209,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0262",
+  "nom": "musée Balzac",
+  "ville": "Saché",
+  "departement": "Indre-et-Loire",
+  "region": "Centre-Val de Loire",
+  "coord": [
+   47.2457,
+   0.54408
+  ],
+  "notices_versees": 36,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 5,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0015",
+  "nom": "musée archéologique",
+  "ville": "Strasbourg",
+  "departement": "Bas-Rhin",
+  "region": "Grand Est",
+  "coord": [
+   48.58123,
+   7.75198
+  ],
+  "notices_versees": 206,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 1
+ },
+ {
+  "code_museofile": "M0017",
+  "nom": "musée de l'Œuvre Notre-Dame",
+  "ville": "Strasbourg",
+  "departement": "Bas-Rhin",
+  "region": "Grand Est",
+  "coord": [
+   48.58098,
+   7.75139
+  ],
+  "notices_versees": 485,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 4
+ },
+ {
+  "code_museofile": "M0018",
+  "nom": "musée des Arts Décoratifs",
+  "ville": "Strasbourg",
+  "departement": "Bas-Rhin",
+  "region": "Grand Est",
+  "coord": [
+   48.58123,
+   7.75198
+  ],
+  "notices_versees": 164,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0020",
+  "nom": "musée historique",
+  "ville": "Strasbourg",
+  "departement": "Bas-Rhin",
+  "region": "Grand Est",
+  "coord": [
+   48.58009,
+   7.75056
+  ],
+  "notices_versees": 7,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0024",
+  "nom": "musée Sundgauvien",
+  "ville": "Altkirch",
+  "departement": "Haut-Rhin",
+  "region": "Grand Est",
+  "coord": [
+   47.62333,
+   7.2372
+  ],
+  "notices_versees": 2,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0025",
+  "nom": "musée gallo-romain",
+  "ville": "Biesheim",
+  "departement": "Haut-Rhin",
+  "region": "Grand Est",
+  "coord": [
+   48.04167,
+   7.54802
+  ],
+  "notices_versees": 494,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M5059",
+  "nom": "musée national de la Légion d'honneur et des ordres de chevalerie",
+  "ville": "Paris",
+  "departement": "Paris",
+  "region": "Ile-de-France",
+  "coord": [
+   48.86029,
+   2.32477
+  ],
+  "notices_versees": 62,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 3,
+  "revision": 1
+ },
+ {
+  "code_museofile": "M5061",
+  "nom": "Musée de l'Histoire de France",
+  "ville": "Paris",
+  "departement": "Paris",
+  "region": "Ile-de-France",
+  "coord": [
+   48.86008,
+   2.35741
+  ],
+  "notices_versees": 1,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M5064",
+  "nom": "musée Fragonard",
+  "ville": "Maisons-Alfort",
+  "departement": "Val-de-Marne",
+  "region": "Ile-de-France",
+  "coord": [
+   48.81278,
+   2.42336
+  ],
+  "notices_versees": 20,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0586",
+  "nom": "musée Saliès",
+  "ville": "Bagnères-de-Bigorre",
+  "departement": "Hautes-Pyrénées",
+  "region": "Occitanie",
+  "coord": [
+   43.06374,
+   0.14623
+  ],
+  "notices_versees": 2,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0591",
+  "nom": "musée Massey",
+  "ville": "Tarbes",
+  "departement": "Hautes-Pyrénées",
+  "region": "Occitanie",
+  "coord": [
+   43.23214,
+   0.07389
+  ],
+  "notices_versees": 2,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0601",
+  "nom": "musée du pays de Cocagne",
+  "ville": "Lavaur",
+  "departement": "Tarn",
+  "region": "Occitanie",
+  "coord": [
+   43.69832,
+   1.82076
+  ],
+  "notices_versees": 147,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 4,
+  "revision": 1
+ },
+ {
+  "code_museofile": "M0602",
+  "nom": "musée Raymond Lafage",
+  "ville": "Lisle-sur-Tarn",
+  "departement": "Tarn",
+  "region": "Occitanie",
+  "coord": [
+   43.85289,
+   1.81138
+  ],
+  "notices_versees": 3,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0605",
+  "nom": "musée Théodore Calbet",
+  "ville": "Grisolles",
+  "departement": "Tarn-et-Garonne",
+  "region": "Occitanie",
+  "coord": [
+   43.82765,
+   1.29474
+  ],
+  "notices_versees": 22,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0620",
+  "nom": "LAAC, Lieu d'art et d'action contemporaine",
+  "ville": "Dunkerque",
+  "departement": "Nord",
+  "region": "Hauts-de-France",
+  "coord": [
+   51.04527,
+   2.38324
+  ],
+  "notices_versees": 14,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0627",
+  "nom": "musée Henri Matisse",
+  "ville": "Le Cateau-Cambrésis",
+  "departement": "Nord",
+  "region": "Hauts-de-France",
+  "coord": [
+   50.10568,
+   3.54117
+  ],
+  "notices_versees": 338,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0631",
+  "nom": "musée de l'hospice Comtesse",
+  "ville": "Lille",
+  "departement": "Nord",
+  "region": "Hauts-de-France",
+  "coord": [
+   50.64105,
+   3.06294
+  ],
+  "notices_versees": 325,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 2,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0634",
+  "nom": "La Piscine - musée d'art et d'industrie André Diligent de Roubaix",
+  "ville": "Roubaix",
+  "departement": "Nord",
+  "region": "Hauts-de-France",
+  "coord": [
+   50.69303,
+   3.16791
+  ],
+  "notices_versees": 1428,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0542",
+  "nom": "musée Pierre Noël, musée de la vie dans les hautes Vosges",
+  "ville": "Saint-Dié-des-Vosges",
+  "departement": "Vosges",
+  "region": "Grand Est",
+  "coord": [
+   48.28874,
+   6.95046
+  ],
+  "notices_versees": 630,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 1
+ },
+ {
+  "code_museofile": "M0637",
+  "nom": "MUba Eugène Leroy Tourcoing",
+  "ville": "Tourcoing",
+  "departement": "Nord",
+  "region": "Hauts-de-France",
+  "coord": [
+   50.72459,
+   3.16288
+  ],
+  "notices_versees": 5,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0642",
+  "nom": "musée d'ethnologie régionale",
+  "ville": "Béthune",
+  "departement": "Pas-de-Calais",
+  "region": "Hauts-de-France",
+  "coord": [
+   50.53621,
+   2.64818
+  ],
+  "notices_versees": 66,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0644",
+  "nom": "musée des beaux-arts",
+  "ville": "Calais",
+  "departement": "Pas-de-Calais",
+  "region": "Hauts-de-France",
+  "coord": [
+   50.95672,
+   1.85187
+  ],
+  "notices_versees": 44,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 1
+ },
+ {
+  "code_museofile": "M0651",
+  "nom": "musée Henri Dupuis",
+  "ville": "Saint-Omer",
+  "departement": "Pas-de-Calais",
+  "region": "Hauts-de-France",
+  "coord": [
+   50.74835,
+   2.2512
+  ],
+  "notices_versees": 2998,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0658",
+  "nom": "musée de Normandie",
+  "ville": "Caen",
+  "departement": "Calvados",
+  "region": "Normandie",
+  "coord": [
+   49.18578,
+   -0.36257
+  ],
+  "notices_versees": 228,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0243",
+  "nom": "musée de l'histoire du Perche",
+  "ville": "Nogent-le-Rotrou",
+  "departement": "Eure-et-Loir",
+  "region": "Centre-Val de Loire",
+  "coord": [
+   48.32487,
+   0.80425
+  ],
+  "notices_versees": 561,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 7,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0511",
+  "nom": "musée du château",
+  "ville": "Lunéville",
+  "departement": "Meurthe-et-Moselle",
+  "region": "Grand Est",
+  "coord": [
+   48.58945,
+   6.50571
+  ],
+  "notices_versees": 9,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0266",
+  "nom": "musée du compagnonnage",
+  "ville": "Tours",
+  "departement": "Indre-et-Loire",
+  "region": "Centre-Val de Loire",
+  "coord": [
+   47.39627,
+   0.68646
+  ],
+  "notices_versees": 211,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 2
+ },
+ {
+  "code_museofile": "M0268",
+  "nom": "collections du musée de la société archéologique de Touraine",
+  "ville": "Tours",
+  "departement": "Indre-et-Loire",
+  "region": "Centre-Val de Loire",
+  "coord": [
+   47.39509,
+   0.68481
+  ],
+  "notices_versees": 195,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 12
+ },
+ {
+  "code_museofile": "M0273",
+  "nom": "musée de la Corbillière",
+  "ville": "Mer",
+  "departement": "Loir-et-Cher",
+  "region": "Centre-Val de Loire",
+  "coord": [
+   47.69772,
+   1.50359
+  ],
+  "notices_versees": 59,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0661",
+  "nom": "musée Eugène Boudin",
+  "ville": "Honfleur",
+  "departement": "Calvados",
+  "region": "Normandie",
+  "coord": [
+   49.42242,
+   0.23087
+  ],
+  "notices_versees": 69,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 2,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0673",
+  "nom": "musée municipal de l'Avranchin",
+  "ville": "Avranches",
+  "departement": "Manche",
+  "region": "Normandie",
+  "coord": [
+   48.6877,
+   -1.36338
+  ],
+  "notices_versees": 30,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0678",
+  "nom": "muséum Emmanuel-Liais",
+  "ville": "Cherbourg-en-Cotentin",
+  "departement": "Manche",
+  "region": "Normandie",
+  "coord": [
+   49.6429,
+   -1.63073
+  ],
+  "notices_versees": 880,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0682",
+  "nom": "musée d’Art et d’Histoire de Granville",
+  "ville": "Granville",
+  "departement": "Manche",
+  "region": "Normandie",
+  "coord": [
+   48.83725,
+   -1.60281
+  ],
+  "notices_versees": 67,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 1
+ },
+ {
+  "code_museofile": "M0684",
+  "nom": "musée Christian Dior",
+  "ville": "Granville",
+  "departement": "Manche",
+  "region": "Normandie",
+  "coord": [
+   48.83751,
+   -1.58837
+  ],
+  "notices_versees": 147,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0694",
+  "nom": "musée des beaux-arts et de la dentelle",
+  "ville": "Alençon",
+  "departement": "Orne",
+  "region": "Normandie",
+  "coord": [
+   48.43148,
+   0.08351
+  ],
+  "notices_versees": 109,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0695",
+  "nom": "musée du château de Flers",
+  "ville": "Flers",
+  "departement": "Orne",
+  "region": "Normandie",
+  "coord": [
+   48.76964,
+   -0.5149
+  ],
+  "notices_versees": 62,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0704",
+  "nom": "musée des instruments à vent",
+  "ville": "La Couture-Boussey",
+  "departement": "Eure",
+  "region": "Normandie",
+  "coord": [
+   48.90897,
+   1.38688
+  ],
+  "notices_versees": 762,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0566",
+  "nom": "Les Abattoirs, musée d'art moderne et contemporain",
+  "ville": "Toulouse",
+  "departement": "Haute-Garonne",
+  "region": "Occitanie",
+  "coord": [
+   43.60068,
+   1.429
+  ],
+  "notices_versees": 2108,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0571",
+  "nom": "musée archéologique",
+  "ville": "Eauze",
+  "departement": "Gers",
+  "region": "Occitanie",
+  "coord": [
+   43.86219,
+   0.10138
+  ],
+  "notices_versees": 14,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0576",
+  "nom": "musée Henri Martin",
+  "ville": "Cahors",
+  "departement": "Lot",
+  "region": "Occitanie",
+  "coord": [
+   44.44851,
+   1.43829
+  ],
+  "notices_versees": 12,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0578",
+  "nom": "musée Champollion – les Ecritures du monde",
+  "ville": "Figeac",
+  "departement": "Lot",
+  "region": "Occitanie",
+  "coord": [
+   44.60947,
+   2.0346
+  ],
+  "notices_versees": 30,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0232",
+  "nom": "musée des Meilleurs Ouvriers de France",
+  "ville": "Bourges",
+  "departement": "Cher",
+  "region": "Centre-Val de Loire",
+  "coord": [
+   47.08177,
+   2.39849
+  ],
+  "notices_versees": 7,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0233",
+  "nom": "musée Emile Chénon",
+  "ville": "Châteaumeillant",
+  "departement": "Cher",
+  "region": "Centre-Val de Loire",
+  "coord": [
+   46.5614,
+   2.19654
+  ],
+  "notices_versees": 238,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0236",
+  "nom": "musée municipal",
+  "ville": "Vierzon",
+  "departement": "Cher",
+  "region": "Centre-Val de Loire",
+  "coord": [
+   47.22519,
+   2.06064
+  ],
+  "notices_versees": 679,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0707",
+  "nom": "musée Alfred Canel",
+  "ville": "Pont-Audemer",
+  "departement": "Eure",
+  "region": "Normandie",
+  "coord": [
+   49.35675,
+   0.51577
+  ],
+  "notices_versees": 67,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 1,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0709",
+  "nom": "musée Municipal",
+  "ville": "Barentin",
+  "departement": "Seine-Maritime",
+  "region": "Normandie",
+  "coord": [
+   49.54522,
+   0.95207
+  ],
+  "notices_versees": 1,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0711",
+  "nom": "musée de la marine de Seine",
+  "ville": "Caudebec-en-Caux",
+  "departement": "Seine-Maritime",
+  "region": "Normandie",
+  "coord": [
+   49.52467,
+   0.72058
+  ],
+  "notices_versees": 10,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0468",
+  "nom": "musée du biterrois",
+  "ville": "Béziers",
+  "departement": "Hérault",
+  "region": "Occitanie",
+  "coord": [
+   43.33891,
+   3.21521
+  ],
+  "notices_versees": 53,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0472",
+  "nom": "musée archéologique",
+  "ville": "Lattes",
+  "departement": "Hérault",
+  "region": "Occitanie",
+  "coord": [
+   43.56666,
+   3.90858
+  ],
+  "notices_versees": 257,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0484",
+  "nom": "musée Paul Valéry",
+  "ville": "Sète",
+  "departement": "Hérault",
+  "region": "Occitanie",
+  "coord": [
+   43.39551,
+   3.6912
+  ],
+  "notices_versees": 3,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 1,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0488",
+  "nom": "musée d'Art Moderne",
+  "ville": "Céret",
+  "departement": "Pyrénées-Orientales",
+  "region": "Occitanie",
+  "coord": [
+   42.4858,
+   2.74849
+  ],
+  "notices_versees": 1161,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0492",
+  "nom": "musée des monnaies et médailles Joseph Puig",
+  "ville": "Perpignan",
+  "departement": "Pyrénées-Orientales",
+  "region": "Occitanie",
+  "coord": [
+   42.69945,
+   2.88326
+  ],
+  "notices_versees": 45,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0494",
+  "nom": "musée Casa Pairal",
+  "ville": "Perpignan",
+  "departement": "Pyrénées-Orientales",
+  "region": "Occitanie",
+  "coord": [
+   42.72796,
+   2.8967
+  ],
+  "notices_versees": 41,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0497",
+  "nom": "musée de Cerdagne",
+  "ville": "Sainte-Léocadie",
+  "departement": "Pyrénées-Orientales",
+  "region": "Occitanie",
+  "coord": [
+   42.43947,
+   2.00207
+  ],
+  "notices_versees": 174,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0505",
+  "nom": "musée des Beaux-Arts de Limoges – Palais de l'Evêché",
+  "ville": "Limoges",
+  "departement": "Haute-Vienne",
+  "region": "Nouvelle-Aquitaine",
+  "coord": [
+   45.82878,
+   1.26544
+  ],
+  "notices_versees": 8,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0506",
+  "nom": "musée départemental d'art contemporain",
+  "ville": "Rochechouart",
+  "departement": "Haute-Vienne",
+  "region": "Nouvelle-Aquitaine",
+  "coord": [
+   45.82252,
+   0.82051
+  ],
+  "notices_versees": 776,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0510",
+  "nom": "musée municipal des émaux et faïences",
+  "ville": "Longwy",
+  "departement": "Meurthe-et-Moselle",
+  "region": "Grand Est",
+  "coord": [
+   49.52538,
+   5.76195
+  ],
+  "notices_versees": 1,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0438",
+  "nom": "musée Tavet-Delacour",
+  "ville": "Pontoise",
+  "departement": "Val-d'Oise",
+  "region": "Ile-de-France",
+  "coord": [
+   49.05093,
+   2.09978
+  ],
+  "notices_versees": 115,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 2,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0450",
+  "nom": "musée Léon Alègre",
+  "ville": "Bagnols-sur-Cèze",
+  "departement": "Gard",
+  "region": "Occitanie",
+  "coord": [
+   44.16482,
+   4.62105
+  ],
+  "notices_versees": 274,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 6,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0455",
+  "nom": "musée de la Romanité",
+  "ville": "Nîmes",
+  "departement": "Gard",
+  "region": "Occitanie",
+  "coord": [
+   43.83762,
+   4.36282
+  ],
+  "notices_versees": 1507,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0458",
+  "nom": "musée du vieux Nîmes",
+  "ville": "Nîmes",
+  "departement": "Gard",
+  "region": "Occitanie",
+  "coord": [
+   43.8382,
+   4.35962
+  ],
+  "notices_versees": 216,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0459",
+  "nom": "Carré d'art - musée d'art contemporain",
+  "ville": "Nîmes",
+  "departement": "Gard",
+  "region": "Occitanie",
+  "coord": [
+   43.8379,
+   4.35616
+  ],
+  "notices_versees": 649,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0464",
+  "nom": "musée Pierre-de-Luxembourg",
+  "ville": "Villeneuve-lez-Avignon",
+  "departement": "Gard",
+  "region": "Occitanie",
+  "coord": [
+   43.96543,
+   4.7964
+  ],
+  "notices_versees": 1928,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 11,
+  "revision": 3
+ },
+ {
+  "code_museofile": "M0513",
+  "nom": "musée de l'Ecole de Nancy",
+  "ville": "Nancy",
+  "departement": "Meurthe-et-Moselle",
+  "region": "Grand Est",
+  "coord": [
+   48.68049,
+   6.16635
+  ],
+  "notices_versees": 44,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0718",
+  "nom": "musée de l'Ancien Havre",
+  "ville": "Le Havre",
+  "departement": "Seine-Maritime",
+  "region": "Normandie",
+  "coord": [
+   49.4888,
+   0.11447
+  ],
+  "notices_versees": 91,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0723",
+  "nom": "Ecomusée de la Basse-Seine",
+  "ville": "Notre-Dame-de-Bliquetuit",
+  "departement": "Seine-Maritime",
+  "region": "Normandie",
+  "coord": [
+   49.49752,
+   0.75735
+  ],
+  "notices_versees": 473,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 8,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0728",
+  "nom": "musée Industriel de la Corderie Vallois",
+  "ville": "Notre-Dame-de-Bondeville",
+  "departement": "Seine-Maritime",
+  "region": "Normandie",
+  "coord": [
+   49.49451,
+   1.04857
+  ],
+  "notices_versees": 142,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0731",
+  "nom": "musée Pierre Corneille",
+  "ville": "Rouen",
+  "departement": "Seine-Maritime",
+  "region": "Normandie",
+  "coord": [
+   49.44305,
+   1.08675
+  ],
+  "notices_versees": 2,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 1,
+  "revision": 1
+ },
+ {
+  "code_museofile": "M0736",
+  "nom": "musée Victor Hugo",
+  "ville": "Villequier",
+  "departement": "Seine-Maritime",
+  "region": "Normandie",
+  "coord": [
+   49.51195,
+   0.67337
+  ],
+  "notices_versees": 74,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 2,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0742",
+  "nom": "musée du Vignoble Nantais",
+  "ville": "Le Pallet",
+  "departement": "Loire-Atlantique",
+  "region": "Pays-de-la-Loire",
+  "coord": [
+   47.13441,
+   -1.32988
+  ],
+  "notices_versees": 280,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0747",
+  "nom": "écomusée",
+  "ville": "Saint-Nazaire",
+  "departement": "Loire-Atlantique",
+  "region": "Pays-de-la-Loire",
+  "coord": [
+   47.27381,
+   -2.19817
+  ],
+  "notices_versees": 73,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0227",
+  "nom": "musée d'histoire et d'archéologie",
+  "ville": "Vannes",
+  "departement": "Morbihan",
+  "region": "Bretagne",
+  "coord": [
+   47.65671,
+   -2.75773
+  ],
+  "notices_versees": 3344,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0231",
+  "nom": "musée Estève",
+  "ville": "Bourges",
+  "departement": "Cher",
+  "region": "Centre-Val de Loire",
+  "coord": [
+   47.08595,
+   2.3962
+  ],
+  "notices_versees": 313,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0186",
+  "nom": " musée de l'Avallonnais Jean Després",
+  "ville": "Avallon",
+  "departement": "Yonne",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   47.48697,
+   3.90679
+  ],
+  "notices_versees": 29,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 1,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0197",
+  "nom": "musée des Beaux-Arts",
+  "ville": "Brest",
+  "departement": "Finistère",
+  "region": "Bretagne",
+  "coord": [
+   48.38529,
+   -4.48996
+  ],
+  "notices_versees": 124,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0202",
+  "nom": "musée des Jacobins",
+  "ville": "Morlaix",
+  "departement": "Finistère",
+  "region": "Bretagne",
+  "coord": [
+   48.57724,
+   -3.82532
+  ],
+  "notices_versees": 6,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0800",
+  "nom": "musée archéologique de l'Oise",
+  "ville": "Vendeuil-Caply",
+  "departement": "Oise",
+  "region": "Hauts-de-France",
+  "coord": [
+   49.62716,
+   2.31692
+  ],
+  "notices_versees": 40,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 1
+ },
+ {
+  "code_museofile": "M0807",
+  "nom": "musée du Noyonnais",
+  "ville": "Noyon",
+  "departement": "Oise",
+  "region": "Hauts-de-France",
+  "coord": [
+   49.58185,
+   2.99974
+  ],
+  "notices_versees": 775,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 61,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0808",
+  "nom": "musée Jean Calvin",
+  "ville": "Noyon",
+  "departement": "Oise",
+  "region": "Hauts-de-France",
+  "coord": [
+   49.58167,
+   2.99844
+  ],
+  "notices_versees": 89,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 21,
+  "revision": 1
+ },
+ {
+  "code_museofile": "M0821",
+  "nom": "musée archéologique et historique",
+  "ville": "Angoulême",
+  "departement": "Charente",
+  "region": "Nouvelle-Aquitaine",
+  "coord": [
+   45.64781,
+   0.16084
+  ],
+  "notices_versees": 5,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0822",
+  "nom": "musée municipal du Cognac",
+  "ville": "Cognac",
+  "departement": "Charente",
+  "region": "Nouvelle-Aquitaine",
+  "coord": [
+   45.69574,
+   -0.32619
+  ],
+  "notices_versees": 2,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0238",
+  "nom": "musée des beaux-arts",
+  "ville": "Chartres",
+  "departement": "Eure-et-Loir",
+  "region": "Centre-Val de Loire",
+  "coord": [
+   48.44762,
+   1.48676
+  ],
+  "notices_versees": 195,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0239",
+  "nom": "conservatoire du machinisme et des pratiques agricoles",
+  "ville": "Mainvilliers",
+  "departement": "Eure-et-Loir",
+  "region": "Centre-Val de Loire",
+  "coord": [
+   48.4469,
+   1.47687
+  ],
+  "notices_versees": 106,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 2,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0241",
+  "nom": "musée d'art et d'histoire de Dreux",
+  "ville": "Dreux",
+  "departement": "Eure-et-Loir",
+  "region": "Centre-Val de Loire",
+  "coord": [
+   48.73347,
+   1.36807
+  ],
+  "notices_versees": 2732,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 3,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0765",
+  "nom": "musée archéologique départemental",
+  "ville": "Jublains",
+  "departement": "Mayenne",
+  "region": "Pays-de-la-Loire",
+  "coord": [
+   48.25553,
+   -0.49686
+  ],
+  "notices_versees": 247,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0422",
+  "nom": "musée d'art et d'histoire Paul Eluard",
+  "ville": "Saint-Denis",
+  "departement": "Seine-Saint-Denis",
+  "region": "Ile-de-France",
+  "coord": [
+   48.93234,
+   2.3558
+  ],
+  "notices_versees": 442,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 1,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0423",
+  "nom": "musée municipal",
+  "ville": "Saint-Ouen-sur-Seine",
+  "departement": "Seine-Saint-Denis",
+  "region": "Île-de-France",
+  "coord": [
+   48.91585,
+   2.33064
+  ],
+  "notices_versees": 28,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0434",
+  "nom": "musée Archéologique départemental du Val-d'Oise",
+  "ville": "Guiry-en-Vexin",
+  "departement": "Val-d'Oise",
+  "region": "Ile-de-France",
+  "coord": [
+   49.10859,
+   1.84939
+  ],
+  "notices_versees": 307,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0436",
+  "nom": "ARCHÉA, Archéologie en Pays de France",
+  "ville": "Louvres",
+  "departement": "Val-d'Oise",
+  "region": "Ile-de-France",
+  "coord": [
+   49.04112,
+   2.50695
+  ],
+  "notices_versees": 443,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0842",
+  "nom": "musée ethnographique et archéologique du Donjon",
+  "ville": "Niort",
+  "departement": "Deux-Sèvres",
+  "region": "Nouvelle-Aquitaine",
+  "coord": [
+   46.32489,
+   -0.46492
+  ],
+  "notices_versees": 12,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0846",
+  "nom": "musée municipal de l'hôtel de Sully",
+  "ville": "Châtellerault",
+  "departement": "Vienne",
+  "region": "Nouvelle-Aquitaine",
+  "coord": [
+   46.81393,
+   0.53624
+  ],
+  "notices_versees": 667,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0847",
+  "nom": "musée de la moto, de l'automobile et du vélo",
+  "ville": "Châtellerault",
+  "departement": "Vienne",
+  "region": "Nouvelle-Aquitaine",
+  "coord": [
+   46.81393,
+   0.53624
+  ],
+  "notices_versees": 104,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0848",
+  "nom": "musée archéologique et d'ethnographie locale",
+  "ville": "Chauvigny",
+  "departement": "Vienne",
+  "region": "Nouvelle-Aquitaine",
+  "coord": [
+   46.57104,
+   0.64785
+  ],
+  "notices_versees": 126,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0854",
+  "nom": "musée Rupert de Chièvres",
+  "ville": "Poitiers",
+  "departement": "Vienne",
+  "region": "Nouvelle-Aquitaine",
+  "coord": [
+   46.5806,
+   0.33797
+  ],
+  "notices_versees": 49,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 3,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0856",
+  "nom": "musée de la vallée",
+  "ville": "Barcelonnette",
+  "departement": "Alpes-de-Haute-Provence",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "coord": [
+   44.38761,
+   6.65508
+  ],
+  "notices_versees": 141,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 3
+ },
+ {
+  "code_museofile": "M0857",
+  "nom": "musée Gassendi",
+  "ville": "Digne-les-Bains",
+  "departement": "Alpes-de-Haute-Provence",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "coord": [
+   44.09265,
+   6.23508
+  ],
+  "notices_versees": 49,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0858",
+  "nom": "musée municipal",
+  "ville": "Forcalquier",
+  "departement": "Alpes-de-Haute-Provence",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "coord": [
+   43.96244,
+   5.77441
+  ],
+  "notices_versees": 23,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0859",
+  "nom": "musée de Salagon",
+  "ville": "Mane",
+  "departement": "Alpes-de-Haute-Provence",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "coord": [
+   43.93798,
+   5.76727
+  ],
+  "notices_versees": 581,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0861",
+  "nom": "musée départemental de préhistoire",
+  "ville": "Quinson",
+  "departement": "Alpes-de-Haute-Provence",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "coord": [
+   43.70985,
+   6.04073
+  ],
+  "notices_versees": 1504,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0863",
+  "nom": "musée gallo-romain - Sisteron",
+  "ville": "Sisteron",
+  "departement": "Alpes-de-Haute-Provence",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "coord": [
+   44.19473,
+   5.94217
+  ],
+  "notices_versees": 50,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0778",
+  "nom": "musée de l'abbaye Sainte-Croix",
+  "ville": "Les Sables d'Olonne",
+  "departement": "Vendée",
+  "region": "Pays-de-la-Loire",
+  "coord": [
+   46.49747,
+   -1.77731
+  ],
+  "notices_versees": 93,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0782",
+  "nom": "musée du Château",
+  "ville": "Noirmoutier-en-l'Ile",
+  "departement": "Vendée",
+  "region": "Pays-de-la-Loire",
+  "coord": [
+   46.99972,
+   -2.24313
+  ],
+  "notices_versees": 4,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0783",
+  "nom": "musée Milcendeau-Jean Yole",
+  "ville": "Soullans",
+  "departement": "Vendée",
+  "region": "Pays-de-la-Loire",
+  "coord": [
+   46.77769,
+   -1.90972
+  ],
+  "notices_versees": 170,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0787",
+  "nom": "Familistère de Guise",
+  "ville": "Guise",
+  "departement": "Aisne",
+  "region": "Hauts-de-France",
+  "coord": [
+   49.90365,
+   3.62653
+  ],
+  "notices_versees": 167,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 1,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0177",
+  "nom": "écomusée de la Bresse bourguignonne",
+  "ville": "Pierre-de-Bresse",
+  "departement": "Saône-et-Loire",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   46.88298,
+   5.2616
+  ],
+  "notices_versees": 101,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0877",
+  "nom": "musée international de la parfumerie",
+  "ville": "Grasse",
+  "departement": "Alpes-Maritimes",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "coord": [
+   43.65839,
+   6.922
+  ],
+  "notices_versees": 193,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 3,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0881",
+  "nom": "musée Masséna",
+  "ville": "Nice",
+  "departement": "Alpes-Maritimes",
+  "region": "Provence-Alpes-Côte-d'Azur",
+  "coord": [
+   43.69567,
+   7.25925
+  ],
+  "notices_versees": 11,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 1
+ },
+ {
+  "code_museofile": "M0883",
+  "nom": "musée archéologique de Cimiez",
+  "ville": "Nice",
+  "departement": "Alpes-Maritimes",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "coord": [
+   43.71922,
+   7.27512
+  ],
+  "notices_versees": 60,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0884",
+  "nom": "musée Matisse",
+  "ville": "Nice",
+  "departement": "Alpes-Maritimes",
+  "region": "Provence-Alpes-Côte-d'Azur",
+  "coord": [
+   43.72004,
+   7.27677
+  ],
+  "notices_versees": 248,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 4,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0885",
+  "nom": "musée de paléontologie de Terra Amata",
+  "ville": "Nice",
+  "departement": "Alpes-Maritimes",
+  "region": "Provence-Alpes-Côte-d'Azur",
+  "coord": [
+   43.69805,
+   7.28869
+  ],
+  "notices_versees": 77,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0888",
+  "nom": "musée d'art moderne et d'art contemporain",
+  "ville": "Nice",
+  "departement": "Alpes-Maritimes",
+  "region": "Provence-Alpes-Côte-d'Azur",
+  "coord": [
+   43.70177,
+   7.27898
+  ],
+  "notices_versees": 895,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0891",
+  "nom": "musée des merveilles",
+  "ville": "Tende",
+  "departement": "Alpes-Maritimes",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "coord": [
+   44.08885,
+   7.59322
+  ],
+  "notices_versees": 95,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0892",
+  "nom": "musée Magnelli - musée de la céramique",
+  "ville": "Vallauris",
+  "departement": "Alpes-Maritimes",
+  "region": "Provence-Alpes-Côte-d'Azur",
+  "coord": [
+   43.57997,
+   7.05289
+  ],
+  "notices_versees": 47,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0893",
+  "nom": "musée d'art et d'histoire",
+  "ville": "Villefranche-sur-Mer",
+  "departement": "Alpes-Maritimes",
+  "region": "Provence-Alpes-Côte-d'Azur",
+  "coord": [
+   43.70109,
+   7.31142
+  ],
+  "notices_versees": 33,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0895",
+  "nom": "musée de l'atelier de Paul Cézanne",
+  "ville": "Aix-en-Provence",
+  "departement": "Bouches-du-Rhône",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "coord": [
+   43.53782,
+   5.4466
+  ],
+  "notices_versees": 1,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0898",
+  "nom": "musée du vieil Aix",
+  "ville": "Aix-en-Provence",
+  "departement": "Bouches-du-Rhône",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "coord": [
+   43.53086,
+   5.44743
+  ],
+  "notices_versees": 1,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0900",
+  "nom": "musée Réattu",
+  "ville": "Arles",
+  "departement": "Bouches-du-Rhône",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "coord": [
+   43.67919,
+   4.6279
+  ],
+  "notices_versees": 389,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0825",
+  "nom": "musée des Beaux-Arts",
+  "ville": "La Rochelle",
+  "departement": "Charente-Maritime",
+  "region": "Nouvelle-Aquitaine",
+  "coord": [
+   46.16197,
+   -1.15155
+  ],
+  "notices_versees": 2,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0830",
+  "nom": "musée d'art et d'histoire",
+  "ville": "Rochefort",
+  "departement": "Charente-Maritime",
+  "region": "Nouvelle-Aquitaine",
+  "coord": [
+   45.93567,
+   -0.96252
+  ],
+  "notices_versees": 1,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0836",
+  "nom": "musée du Présidial",
+  "ville": "Saintes",
+  "departement": "Charente-Maritime",
+  "region": "Nouvelle-Aquitaine",
+  "coord": [
+   45.74623,
+   -0.63206
+  ],
+  "notices_versees": 1,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0841",
+  "nom": "musée Bernard d'Agesci",
+  "ville": "Niort",
+  "departement": "Deux-Sèvres",
+  "region": "Nouvelle-Aquitaine",
+  "coord": [
+   46.32106,
+   -0.45411
+  ],
+  "notices_versees": 6,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0561",
+  "nom": "Le Musée - Arts & Figures des Pyrénées Centrales",
+  "ville": "Saint-Gaudens",
+  "departement": "Haute-Garonne",
+  "region": "Occitanie",
+  "coord": [
+   43.1076,
+   0.72571
+  ],
+  "notices_versees": 62,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0564",
+  "nom": "musée Georges Labit",
+  "ville": "Toulouse",
+  "departement": "Haute-Garonne",
+  "region": "Occitanie",
+  "coord": [
+   43.59096,
+   1.4584
+  ],
+  "notices_versees": 2,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0515",
+  "nom": "musée d’art et d’histoire",
+  "ville": "Toul",
+  "departement": "Meurthe-et-Moselle",
+  "region": "Grand Est",
+  "coord": [
+   48.67854,
+   5.89134
+  ],
+  "notices_versees": 1,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0276",
+  "nom": "musée archéologique",
+  "ville": "Thésée",
+  "departement": "Loir-et-Cher",
+  "region": "Centre-Val de Loire",
+  "coord": [
+   47.32849,
+   1.30656
+  ],
+  "notices_versees": 710,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0281",
+  "nom": "musée d’art et d’archéologie",
+  "ville": "Châtillon-Coligny",
+  "departement": "Loiret",
+  "region": "Centre-Val de Loire",
+  "coord": [
+   47.82062,
+   2.84491
+  ],
+  "notices_versees": 175,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0282",
+  "nom": "château-musée de Gien : chasse, histoire et nature en Val-de-Loire",
+  "ville": "Gien",
+  "departement": "Loiret",
+  "region": "Centre-Val de Loire",
+  "coord": [
+   47.68592,
+   2.63009
+  ],
+  "notices_versees": 430,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 39,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0287",
+  "nom": "hôtel Cabu, musée d’histoire et d’archéologie",
+  "ville": "Orléans",
+  "departement": "Loiret",
+  "region": "Centre-Val de Loire",
+  "coord": [
+   47.90095,
+   1.90519
+  ],
+  "notices_versees": 220,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0291",
+  "nom": "musée Arthur Rimbaud",
+  "ville": "Charleville-Mézières",
+  "departement": "Ardennes",
+  "region": "Grand Est",
+  "coord": [
+   49.77603,
+   4.72061
+  ],
+  "notices_versees": 113,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0292",
+  "nom": "musée de l'Ardenne",
+  "ville": "Charleville-Mézières",
+  "departement": "Ardennes",
+  "region": "Grand Est",
+  "coord": [
+   49.77384,
+   4.72124
+  ],
+  "notices_versees": 470,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0296",
+  "nom": "musée du château-fort",
+  "ville": "Sedan",
+  "departement": "Ardennes",
+  "region": "Grand Est",
+  "coord": [
+   49.69535,
+   4.91907
+  ],
+  "notices_versees": 11,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 1,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0301",
+  "nom": "musée Camille Claudel",
+  "ville": "Nogent-sur-Seine",
+  "departement": "Aube",
+  "region": "Grand Est",
+  "coord": [
+   48.25364,
+   4.45829
+  ],
+  "notices_versees": 146,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0302",
+  "nom": "musée d'Art Moderne",
+  "ville": "Troyes",
+  "departement": "Aube",
+  "region": "Grand Est",
+  "coord": [
+   48.29964,
+   4.08074
+  ],
+  "notices_versees": 451,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 4,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0518",
+  "nom": "musée de la céramique et de l'ivoire",
+  "ville": "Commercy",
+  "departement": "Meuse",
+  "region": "Grand Est",
+  "coord": [
+   48.76331,
+   5.58962
+  ],
+  "notices_versees": 132,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0519",
+  "nom": "musée Jules Bastien-Lepage – musée de la fortification",
+  "ville": "Montmédy",
+  "departement": "Meuse",
+  "region": "Grand Est",
+  "coord": [
+   49.52359,
+   5.34851
+  ],
+  "notices_versees": 29,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0873",
+  "nom": "musée du Masque de fer et du Fort Royal",
+  "ville": "Cannes (Île Sainte-Marguerite)",
+  "departement": "Alpes-Maritimes",
+  "region": "Provence-Alpes-Côte-d'Azur",
+  "coord": [
+   43.52042,
+   7.04423
+  ],
+  "notices_versees": 6,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0875",
+  "nom": "musée d'art et d'histoire de Provence",
+  "ville": "Grasse",
+  "departement": "Alpes-Maritimes",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "coord": [
+   43.65761,
+   6.92251
+  ],
+  "notices_versees": 174,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 2,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0946",
+  "nom": "musée Calvet (et musée Lapidaire)",
+  "ville": "Avignon",
+  "departement": "Vaucluse",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "coord": [
+   43.94698,
+   4.80339
+  ],
+  "notices_versees": 7,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0956",
+  "nom": "musée-bibliothèque Pétrarque",
+  "ville": "Fontaine-de-Vaucluse",
+  "departement": "Vaucluse",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "coord": [
+   43.91753,
+   5.05654
+  ],
+  "notices_versees": 60,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 20,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0959",
+  "nom": "musée municipal",
+  "ville": "Orange",
+  "departement": "Vaucluse",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "coord": [
+   44.13589,
+   4.80753
+  ],
+  "notices_versees": 13,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0962",
+  "nom": "musée du cartonnage et de l'imprimerie",
+  "ville": "Valréas",
+  "departement": "Vaucluse",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "coord": [
+   44.38266,
+   4.98735
+  ],
+  "notices_versees": 58,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0986",
+  "nom": "musée de la chaussure",
+  "ville": "Romans",
+  "departement": "Drôme",
+  "region": "Auvergne-Rhône-Alpes",
+  "coord": [
+   45.0431,
+   5.05538
+  ],
+  "notices_versees": 4583,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0143",
+  "nom": "musée Buffon",
+  "ville": "Montbard",
+  "departement": "Côte-d'Or",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   47.62579,
+   4.33699
+  ],
+  "notices_versees": 20,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M09020",
+  "nom": "museon Arlaten",
+  "ville": "Arles",
+  "departement": "Bouches-du-Rhône",
+  "region": "Provence-Alpes-Côte-d'Azur",
+  "coord": [
+   43.54073,
+   4.67609
+  ],
+  "notices_versees": 103,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0309",
+  "nom": "musée du vin de Champagne et d’archéologie régionale",
+  "ville": "Epernay",
+  "departement": "Marne",
+  "region": "Grand Est",
+  "coord": [
+   49.0429,
+   3.96138
+  ],
+  "notices_versees": 76,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0321",
+  "nom": "musée d'art et d'histoire",
+  "ville": "Langres",
+  "departement": "Haute-Marne",
+  "region": "Grand Est",
+  "coord": [
+   47.86527,
+   5.33329
+  ],
+  "notices_versees": 69,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 4,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0324",
+  "nom": "musée palais Fesch",
+  "ville": "Ajaccio",
+  "departement": "Corse-du-Sud",
+  "region": "Corse",
+  "coord": [
+   41.92241,
+   8.73849
+  ],
+  "notices_versees": 1,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0334",
+  "nom": "musée Comtois",
+  "ville": "Besançon",
+  "departement": "Doubs",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   47.2335,
+   6.0319
+  ],
+  "notices_versees": 4,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0337",
+  "nom": "musée du château",
+  "ville": "Montbéliard",
+  "departement": "Doubs",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   47.50953,
+   6.80086
+  ],
+  "notices_versees": 9,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0409",
+  "nom": "musée Municipal d'Art et d'Histoire",
+  "ville": "Colombes",
+  "departement": "Hauts-de-Seine",
+  "region": "Ile-de-France",
+  "coord": [
+   48.92332,
+   2.25204
+  ],
+  "notices_versees": 23,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0420",
+  "nom": "musée de l'histoire vivante",
+  "ville": "Montreuil",
+  "departement": "Seine-Saint-Denis",
+  "region": "Ile-de-France",
+  "coord": [
+   48.86615,
+   2.46948
+  ],
+  "notices_versees": 139,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0867",
+  "nom": "musée Picasso",
+  "ville": "Antibes",
+  "departement": "Alpes-Maritimes",
+  "region": "Provence-Alpes-Côte-d'Azur",
+  "coord": [
+   43.58097,
+   7.12796
+  ],
+  "notices_versees": 1271,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0553",
+  "nom": "musée des arts et métiers",
+  "ville": "Salles-la-Source",
+  "departement": "Aveyron",
+  "region": "Occitanie",
+  "coord": [
+   44.43548,
+   2.51256
+  ],
+  "notices_versees": 32,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M1036",
+  "nom": "Lugdunum-musée et théâtres romains",
+  "ville": "Lyon",
+  "departement": "Rhône",
+  "region": "Auvergne-Rhône-Alpes",
+  "coord": [
+   45.76053,
+   4.82004
+  ],
+  "notices_versees": 104,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M1045",
+  "nom": "musée du docteur Faure",
+  "ville": "Aix-les-Bains",
+  "departement": "Savoie",
+  "region": "Auvergne-Rhône-Alpes",
+  "coord": [
+   45.69216,
+   5.91558
+  ],
+  "notices_versees": 1,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 1,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M1047",
+  "nom": "musée du Costume",
+  "ville": "Bourg-Saint-Maurice",
+  "departement": "Savoie",
+  "region": "Auvergne-Rhône-Alpes",
+  "coord": [
+   45.59705,
+   6.761
+  ],
+  "notices_versees": 1,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M1051",
+  "nom": "musée de l'académie du Val d'Isère",
+  "ville": "Moûtiers",
+  "departement": "Savoie",
+  "region": "Auvergne-Rhône-Alpes",
+  "coord": [
+   45.48342,
+   6.53278
+  ],
+  "notices_versees": 1,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M1052",
+  "nom": "musée-château",
+  "ville": "Annecy",
+  "departement": "Haute-Savoie",
+  "region": "Auvergne-Rhône-Alpes",
+  "coord": [
+   45.89726,
+   6.12492
+  ],
+  "notices_versees": 1,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 1,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M1057",
+  "nom": "musée de Thonon-les-Bains",
+  "ville": "Thonon-les-Bains",
+  "departement": "Haute-Savoie",
+  "region": "Auvergne-Rhône-Alpes",
+  "coord": [
+   46.37487,
+   6.48177
+  ],
+  "notices_versees": 517,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 4,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M1063",
+  "nom": "musée départemental Alexandre Franconie",
+  "ville": "Cayenne",
+  "departement": "Guyane",
+  "region": "DROM",
+  "coord": [
+   4.93818,
+   -52.33436
+  ],
+  "notices_versees": 79,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0918",
+  "nom": "musée d'histoire de Marseille",
+  "ville": "Marseille",
+  "departement": "Bouches-du-Rhône",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "coord": [
+   43.29817,
+   5.37416
+  ],
+  "notices_versees": 177,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 1,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0920",
+  "nom": "musée des Arts Africains, Océaniens et Amérindiens",
+  "ville": "Marseille",
+  "departement": "Bouches-du-Rhône",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "coord": [
+   43.30017,
+   5.3676
+  ],
+  "notices_versees": 87,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0921",
+  "nom": null,
+  "ville": null,
+  "departement": null,
+  "region": null,
+  "coord": [
+   43.29691,
+   5.36949
+  ],
+  "notices_versees": 1,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0927",
+  "nom": "musée des Saintes-Maries-de-la-Mer",
+  "ville": "Saintes-Maries-de-la-Mer",
+  "departement": "Bouches-du-Rhône",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "coord": [
+   43.45124,
+   4.42777
+  ],
+  "notices_versees": 18,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0931",
+  "nom": "MHAB, musée d’histoire et d’art de Bormes ",
+  "ville": "Bormes-les-Mimosas",
+  "departement": "Var",
+  "region": "Provence-Alpes-Côte-d'Azur",
+  "coord": [
+   43.15079,
+   6.34058
+  ],
+  "notices_versees": 13,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0937",
+  "nom": "musée municipal",
+  "ville": "Hyères",
+  "departement": "Var",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "coord": [
+   43.12,
+   6.13052
+  ],
+  "notices_versees": 246,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 1,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0941",
+  "nom": "musée de l'Annonciade",
+  "ville": "Saint-Tropez",
+  "departement": "Var",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "coord": [
+   43.27087,
+   6.63729
+  ],
+  "notices_versees": 247,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0943",
+  "nom": "musée d’art de Toulon – M.A.T.",
+  "ville": "Toulon",
+  "departement": "Var",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "coord": [
+   43.12597,
+   5.92725
+  ],
+  "notices_versees": 3,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 1,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0945",
+  "nom": "musée d'Apt",
+  "ville": "Apt",
+  "departement": "Vaucluse",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "coord": [
+   43.87574,
+   5.39769
+  ],
+  "notices_versees": 49,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0374",
+  "nom": "musée municipal",
+  "ville": "Crécy-la-Chapelle",
+  "departement": "Seine-et-Marne",
+  "region": "Ile-de-France",
+  "coord": [
+   48.85813,
+   2.90844
+  ],
+  "notices_versees": 44,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0377",
+  "nom": "musée Henri Chapu",
+  "ville": "Le Mée-sur-Seine",
+  "departement": "Seine-et-Marne",
+  "region": "Île-de-France",
+  "coord": [
+   48.53486,
+   2.63524
+  ],
+  "notices_versees": 94,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0379",
+  "nom": "musée de Melun",
+  "ville": "Melun",
+  "departement": "Seine-et-Marne",
+  "region": "Île-de-France",
+  "coord": [
+   48.5364,
+   2.65897
+  ],
+  "notices_versees": 232,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 4,
+  "revision": 2
+ },
+ {
+  "code_museofile": "M0380",
+  "nom": "musée municipal",
+  "ville": "Moret-Loing-et-Orvanne",
+  "departement": "Seine-et-Marne",
+  "region": "Ile-de-France",
+  "coord": [
+   48.37364,
+   2.81505
+  ],
+  "notices_versees": 9,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0384",
+  "nom": "musée des pays de Seine-et-Marne",
+  "ville": "Saint-Cyr-sur-Morin",
+  "departement": "Seine-et-Marne",
+  "region": "Ile-de-France",
+  "coord": [
+   48.90803,
+   3.18169
+  ],
+  "notices_versees": 769,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0389",
+  "nom": "musée de l'hôtel-Dieu",
+  "ville": "Mantes-la-Jolie",
+  "departement": "Yvelines",
+  "region": "Île-de-France",
+  "coord": [
+   48.99087,
+   1.7199
+  ],
+  "notices_versees": 174,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 2,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0396",
+  "nom": "musée départemental Maurice Denis",
+  "ville": "Saint-Germain-en-Laye",
+  "departement": "Yvelines",
+  "region": "Ile-de-France",
+  "coord": [
+   48.89249,
+   2.08754
+  ],
+  "notices_versees": 309,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0398",
+  "nom": "musée de la ville",
+  "ville": "Montigny-le-Bretonneux",
+  "departement": "Yvelines",
+  "region": "Ile-de-France",
+  "coord": [
+   48.78259,
+   2.04266
+  ],
+  "notices_versees": 769,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0399",
+  "nom": "Collections de la Fondation de Coubertin",
+  "ville": "Saint-Rémy-lès-Chevreuse",
+  "departement": "Yvelines",
+  "region": "Ile-de-France",
+  "coord": [
+   48.70156,
+   2.06099
+  ],
+  "notices_versees": 37,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0166",
+  "nom": "musée Nicéphore Niépce",
+  "ville": "Chalon-sur-Saône",
+  "departement": "Saône-et-Loire",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   46.78005,
+   4.85573
+  ],
+  "notices_versees": 108,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0168",
+  "nom": "musée du Prieuré Jean Laronze",
+  "ville": "Charolles",
+  "departement": "Saône-et-Loire",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   46.43241,
+   4.27987
+  ],
+  "notices_versees": 346,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 19,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0169",
+  "nom": "musée d'Art et d'Archéologie",
+  "ville": "Cluny",
+  "departement": "Saône-et-Loire",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   46.44065,
+   4.65917
+  ],
+  "notices_versees": 173,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0988",
+  "nom": "musée des beaux-arts",
+  "ville": "Valence",
+  "departement": "Drôme",
+  "region": "Auvergne-Rhône-Alpes",
+  "coord": [
+   44.93113,
+   4.88956
+  ],
+  "notices_versees": 197,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 2
+ },
+ {
+  "code_museofile": "M0991",
+  "nom": "musée de Bourgoin-Jallieu",
+  "ville": "Bourgoin-Jallieu",
+  "departement": "Isère",
+  "region": "Auvergne-Rhône-Alpes",
+  "coord": [
+   45.58659,
+   5.27916
+  ],
+  "notices_versees": 143,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M1014",
+  "nom": "musée de Feurs",
+  "ville": "Feurs",
+  "departement": "Loire",
+  "region": "Auvergne-Rhône-Alpes",
+  "coord": [
+   45.74419,
+   4.2198
+  ],
+  "notices_versees": 97,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M1032",
+  "nom": "musée Gadagne",
+  "ville": "Lyon",
+  "departement": "Rhône",
+  "region": "Auvergne-Rhône-Alpes",
+  "coord": [
+   45.76386,
+   4.82775
+  ],
+  "notices_versees": 34,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M1098",
+  "nom": "musée Tomi Ungerer",
+  "ville": "Strasbourg",
+  "departement": "Bas-Rhin",
+  "region": "Grand Est",
+  "coord": [
+   48.58575,
+   7.75503
+  ],
+  "notices_versees": 3475,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M1099",
+  "nom": "musée municipal",
+  "ville": "Elbeuf-sur-Seine",
+  "departement": "Seine-Maritime",
+  "region": "Normandie",
+  "coord": [
+   49.28555,
+   1.00648
+  ],
+  "notices_versees": 130,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M1100",
+  "nom": null,
+  "ville": null,
+  "departement": null,
+  "region": null,
+  "coord": null,
+  "notices_versees": 1,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M1101",
+  "nom": "musée d'art moderne de la ville de Paris",
+  "ville": "Paris",
+  "departement": "Paris",
+  "region": "Île-de-France",
+  "coord": [
+   48.8646,
+   2.29843
+  ],
+  "notices_versees": 10387,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M1102",
+  "nom": "maison de Balzac",
+  "ville": "Paris",
+  "departement": "Paris",
+  "region": "Île-de-France",
+  "coord": [
+   48.8554,
+   2.2808
+  ],
+  "notices_versees": 1598,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M1103",
+  "nom": "musée Bourdelle",
+  "ville": "Paris",
+  "departement": "Paris",
+  "region": "Île-de-France",
+  "coord": [
+   48.84302,
+   2.31883
+  ],
+  "notices_versees": 1190,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M1108",
+  "nom": "Palais Galliera, musée de la mode de la Ville de Paris",
+  "ville": "Paris",
+  "departement": "Paris",
+  "region": "Île-de-France",
+  "coord": [
+   48.86614,
+   2.29725
+  ],
+  "notices_versees": 28524,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M1109",
+  "nom": "musée de la Libération de Paris - musée du général Leclerc - musée Jean Moulin",
+  "ville": "Paris",
+  "departement": "Paris",
+  "region": "Île-de-France",
+  "coord": [
+   48.84061,
+   2.31977
+  ],
+  "notices_versees": 8890,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M1113",
+  "nom": "musée de la vie romantique",
+  "ville": "Paris",
+  "departement": "Paris",
+  "region": "Île-de-France",
+  "coord": [
+   48.8809,
+   2.33328
+  ],
+  "notices_versees": 1332,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M1114",
+  "nom": "maison de Victor Hugo",
+  "ville": "Paris",
+  "departement": "Paris",
+  "region": "Île-de-France",
+  "coord": [
+   48.85481,
+   2.36623
+  ],
+  "notices_versees": 17040,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M1115",
+  "nom": "musée Zadkine",
+  "ville": "Paris",
+  "departement": "Paris",
+  "region": "Île-de-France",
+  "coord": [
+   48.84279,
+   2.33346
+  ],
+  "notices_versees": 941,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M1116",
+  "nom": "musée de La Poste",
+  "ville": "Paris",
+  "departement": "Paris",
+  "region": "Ile-de-France",
+  "coord": [
+   48.84156,
+   2.3177
+  ],
+  "notices_versees": 48,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M1065",
+  "nom": "musée d'archéologie précolombienne et de préhistoire de Martinique",
+  "ville": "Fort-de-France",
+  "departement": "Martinique",
+  "region": "DROM",
+  "coord": [
+   14.60331,
+   -61.06867
+  ],
+  "notices_versees": 20,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0362",
+  "nom": "forge-musée",
+  "ville": "Etueffont",
+  "departement": "Territoire de Belfort",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   47.72257,
+   6.92084
+  ],
+  "notices_versees": 26,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0363",
+  "nom": "musée de la Chasse et de la Nature",
+  "ville": "Paris",
+  "departement": "Paris",
+  "region": "Ile-de-France",
+  "coord": [
+   48.86149,
+   2.35861
+  ],
+  "notices_versees": 20,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0364",
+  "nom": "musée d'Art et d'Histoire du Judaïsme",
+  "ville": "Paris",
+  "departement": "Paris",
+  "region": "Ile-de-France",
+  "coord": [
+   48.86095,
+   2.35561
+  ],
+  "notices_versees": 1,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M1156",
+  "nom": "musée archéologique",
+  "ville": "Saint-Romain-en-Gal",
+  "departement": "Rhône",
+  "region": "Auvergne-Rhône-Alpes",
+  "coord": [
+   45.52956,
+   4.87316
+  ],
+  "notices_versees": 11,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M1169",
+  "nom": "musée de l’abbaye / donations Guy Bardone-René Genis",
+  "ville": "Saint-Claude",
+  "departement": "Jura",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   46.38621,
+   5.86524
+  ],
+  "notices_versees": 1183,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M1171",
+  "nom": "musée de la Grande Guerre",
+  "ville": "Meaux",
+  "departement": "Seine-et-Marne",
+  "region": "Ile-de-France",
+  "coord": [
+   48.95528,
+   2.90146
+  ],
+  "notices_versees": 35,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M1180",
+  "nom": "musée Jean Garcin 39-45 : l'appel de la liberté",
+  "ville": "Fontaine-de-Vaucluse",
+  "departement": "Vaucluse",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "coord": [
+   43.92263,
+   5.1274
+  ],
+  "notices_versees": 71,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M1184",
+  "nom": "musée archéologique de Mariana – Prince Rainier III de Monaco",
+  "ville": "Lucciana",
+  "departement": "Haute-Corse",
+  "region": "Corse",
+  "coord": [
+   42.54277,
+   9.44262
+  ],
+  "notices_versees": 33,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M1195",
+  "nom": "musée de la carte postale",
+  "ville": "Baud",
+  "departement": "Morbihan",
+  "region": "Bretagne",
+  "coord": [
+   47.87505,
+   -3.01691
+  ],
+  "notices_versees": 1400,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M1205",
+  "nom": "musée Louis Médard",
+  "ville": "Lunel",
+  "departement": "Hérault",
+  "region": "Occitanie",
+  "coord": [
+   43.67546,
+   4.13366
+  ],
+  "notices_versees": 424,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M1208",
+  "nom": "musée d'art sacré",
+  "ville": "Dijon",
+  "departement": "Côte-d'Or",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   47.31756,
+   5.03728
+  ],
+  "notices_versees": 210,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 1,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M1213",
+  "nom": "musée Daubigny",
+  "ville": "Auvers-sur-Oise",
+  "departement": "Val-d'Oise",
+  "region": "Île-de-France",
+  "coord": [
+   49.07148,
+   2.17178
+  ],
+  "notices_versees": 78,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0120",
+  "nom": "musée Bargoin",
+  "ville": "Clermont-Ferrand",
+  "departement": "Puy-de-Dôme",
+  "region": "Auvergne-Rhône-Alpes",
+  "coord": [
+   45.77423,
+   3.0869
+  ],
+  "notices_versees": 3943,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 4,
+  "revision": 1
+ },
+ {
+  "code_museofile": "M0123",
+  "nom": "musée de céramique gallo-romaine",
+  "ville": "Lezoux",
+  "departement": "Puy-de-Dôme",
+  "region": "Auvergne-Rhône-Alpes",
+  "coord": [
+   45.82763,
+   3.38365
+  ],
+  "notices_versees": 198,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 4
+ },
+ {
+  "code_museofile": "M0127",
+  "nom": "musée Francisque Mandet",
+  "ville": "Riom",
+  "departement": "Puy-de-Dôme",
+  "region": "Auvergne-Rhône-Alpes",
+  "coord": [
+   45.89387,
+   3.11651
+  ],
+  "notices_versees": 2,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 1
+ },
+ {
+  "code_museofile": "M1075",
+  "nom": "cabinet d'un amateur - donation Maurice Jardot",
+  "ville": "Belfort",
+  "departement": "Territoire-de-Belfort",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   47.64244,
+   6.85547
+  ],
+  "notices_versees": 130,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M1076",
+  "nom": "musée de l'Assistance Publique - Hôpitaux de Paris",
+  "ville": "Paris",
+  "departement": "Paris",
+  "region": "Ile-de-France",
+  "coord": [
+   48.83881,
+   2.35601
+  ],
+  "notices_versees": 12,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M1088",
+  "nom": "musée du Véron",
+  "ville": "Savigny-en-Véron",
+  "departement": "Indre-et-Loire",
+  "region": "Centre-Val de Loire",
+  "coord": [
+   47.2097,
+   0.12443
+  ],
+  "notices_versees": 107,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M1092",
+  "nom": "musée Jules-Desbois",
+  "ville": "Noyant-Villages",
+  "departement": "Maine-et-Loire",
+  "region": "Pays-de-la-Loire",
+  "coord": [
+   47.43665,
+   0.15951
+  ],
+  "notices_versees": 120,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 2,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0361",
+  "nom": "musée d'art et d'histoire",
+  "ville": "Belfort",
+  "departement": "Territoire de Belfort",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   47.63757,
+   6.86707
+  ],
+  "notices_versees": 90,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 1,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M5015",
+  "nom": "musée de la porcelaine Adrien Dubouché à Limoges",
+  "ville": "Limoges",
+  "departement": "Haute-Vienne",
+  "region": "Nouvelle-Aquitaine",
+  "coord": [
+   45.83253,
+   1.25211
+  ],
+  "notices_versees": 5,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 3,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M5020",
+  "nom": null,
+  "ville": null,
+  "departement": null,
+  "region": null,
+  "coord": null,
+  "notices_versees": 1,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0029",
+  "nom": "musée Théodore Deck et des pays du Florival",
+  "ville": "Guebwiller",
+  "departement": "Haut-Rhin",
+  "region": "Grand Est",
+  "coord": [
+   47.90552,
+   7.2145
+  ],
+  "notices_versees": 128,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0037",
+  "nom": "musée de l'impression sur étoffes",
+  "ville": "Mulhouse",
+  "departement": "Haut-Rhin",
+  "region": "Grand Est",
+  "coord": [
+   47.74502,
+   7.34538
+  ],
+  "notices_versees": 26,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0047",
+  "nom": "musée de la société d’histoire “ les amis de Thann ”",
+  "ville": "Thann",
+  "departement": "Haut-Rhin",
+  "region": "Grand Est",
+  "coord": [
+   47.81228,
+   7.10174
+  ],
+  "notices_versees": 1,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0057",
+  "nom": "musée d'art et d'archéologie du Périgord",
+  "ville": "Périgueux",
+  "departement": "Dordogne",
+  "region": "Nouvelle-Aquitaine",
+  "coord": [
+   45.18604,
+   0.72395
+  ],
+  "notices_versees": 1,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0067",
+  "nom": "CAPC - musée d'art contemporain",
+  "ville": "Bordeaux",
+  "departement": "Gironde",
+  "region": "Nouvelle-Aquitaine",
+  "coord": [
+   44.84819,
+   -0.57214
+  ],
+  "notices_versees": 199,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M5024",
+  "nom": "musée de l'Air et de l'Espace",
+  "ville": "Le Bourget",
+  "departement": "Seine-Saint-Denis",
+  "region": "Ile-de-France",
+  "coord": [
+   48.94348,
+   2.43014
+  ],
+  "notices_versees": 84,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M5025",
+  "nom": "musée de l'armée",
+  "ville": "Paris",
+  "departement": "Paris",
+  "region": "Ile-de-France",
+  "coord": [
+   48.85822,
+   2.31289
+  ],
+  "notices_versees": 254,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 4,
+  "revision": 0
+ },
+ {
+  "code_museofile": "X0000",
+  "nom": null,
+  "ville": null,
+  "departement": null,
+  "region": null,
+  "coord": null,
+  "notices_versees": 52,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "m5077",
+  "nom": null,
+  "ville": null,
+  "departement": null,
+  "region": null,
+  "coord": null,
+  "notices_versees": 1,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 1,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0008",
+  "nom": "Maison de l'Archéologie des Vosges du Nord",
+  "ville": "Niederbronn-Les-Bains",
+  "departement": "Bas-Rhin",
+  "region": "Grand Est",
+  "coord": [
+   48.94744,
+   7.65043
+  ],
+  "notices_versees": 81,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M1121",
+  "nom": "Historial de la Vendée",
+  "ville": "Les Lucs-sur-Boulogne",
+  "departement": "Vendée",
+  "region": "Pays-de-la-Loire",
+  "coord": [
+   46.85997,
+   -1.49272
+  ],
+  "notices_versees": 11,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M5050",
+  "nom": "musée national d'art moderne (centre national d’art et de culture Georges Pompidou)",
+  "ville": "Paris",
+  "departement": "Paris",
+  "region": "Ile-de-France",
+  "coord": [
+   48.8608,
+   2.35222
+  ],
+  "notices_versees": 34,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M7048",
+  "nom": "muséum-Aquarium de Nancy",
+  "ville": "Nancy",
+  "departement": "Meurthe-et-Moselle",
+  "region": "Grand Est",
+  "coord": [
+   48.69507,
+   6.18847
+  ],
+  "notices_versees": 9,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M5067",
+  "nom": "musée national de l'éducation",
+  "ville": "Rouen",
+  "departement": "Seine-Maritime",
+  "region": "Normandie",
+  "coord": [
+   49.4414,
+   1.10167
+  ],
+  "notices_versees": 1027,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 1,
+  "revision": 1
+ },
+ {
+  "code_museofile": "M5028",
+  "nom": "musée national Fernand Léger",
+  "ville": "Biot",
+  "departement": "Alpes-Maritimes",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "coord": [
+   43.62071,
+   7.11232
+  ],
+  "notices_versees": 429,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 50,
+  "revision": 17
+ },
+ {
+  "code_museofile": "M5029",
+  "nom": "musée national Message biblique Marc Chagall",
+  "ville": "Nice",
+  "departement": "Alpes-Maritimes",
+  "region": "Provence-Alpes-Côte-d'Azur",
+  "coord": [
+   43.70922,
+   7.2688
+  ],
+  "notices_versees": 1012,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M5043",
+  "nom": "musée national Picasso - Paris",
+  "ville": "Paris",
+  "departement": "Paris",
+  "region": "Ile-de-France",
+  "coord": [
+   48.8597,
+   2.36264
+  ],
+  "notices_versees": 4029,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 1,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M5014",
+  "nom": "musée national de Préhistoire",
+  "ville": "Les Eyzies",
+  "departement": "Dordogne",
+  "region": "Nouvelle-Aquitaine",
+  "coord": [
+   44.93608,
+   1.01363
+  ],
+  "notices_versees": 1,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0133",
+  "nom": "musée du Vin de Bourgogne",
+  "ville": "Beaune",
+  "departement": "Côte-d'Or",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   47.02362,
+   4.83757
+  ],
+  "notices_versees": 28,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0136",
+  "nom": "musée du Châtillonnais",
+  "ville": "Châtillon-sur-Seine",
+  "departement": "Côte-d'Or",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   47.86379,
+   4.57463
+  ],
+  "notices_versees": 39,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 1,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M5004",
+  "nom": "musée Eugène Delacroix",
+  "ville": "Paris",
+  "departement": "Paris",
+  "region": "Ile-de-France",
+  "coord": [
+   48.85443,
+   2.33568
+  ],
+  "notices_versees": 22,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M7001",
+  "nom": "musée d'histoire naturelle et de géologie",
+  "ville": "Lille",
+  "departement": "Nord",
+  "region": "Hauts-de-France",
+  "coord": [
+   50.62664,
+   3.06655
+  ],
+  "notices_versees": 72,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M7013",
+  "nom": "muséum d'histoire naturelle",
+  "ville": "Toulouse",
+  "departement": "Haute-Garonne",
+  "region": "Occitanie",
+  "coord": [
+   43.59419,
+   1.44894
+  ],
+  "notices_versees": 461,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 1,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M7038",
+  "nom": "muséum d'Histoire Naturelle",
+  "ville": "Grenoble",
+  "departement": "Isère",
+  "region": "Auvergne-Rhône-Alpes",
+  "coord": [
+   45.18806,
+   5.73516
+  ],
+  "notices_versees": 13,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M7042",
+  "nom": "musée des Confluences ; musée Guimet ; muséum d'histoire naturelle",
+  "ville": "Lyon",
+  "departement": "Rhône",
+  "region": "Auvergne-Rhône-Alpes",
+  "coord": [
+   45.73319,
+   4.81804
+  ],
+  "notices_versees": 74,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0342",
+  "nom": "musée de la Vigne et du Vin",
+  "ville": "Arbois",
+  "departement": "Jura",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   46.90241,
+   5.77369
+  ],
+  "notices_versees": 582,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 1,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0346",
+  "nom": "musée d’archéologie",
+  "ville": "Lons-le-Saunier",
+  "departement": "Jura",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   46.68457,
+   5.57934
+  ],
+  "notices_versees": 2343,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0351",
+  "nom": "musée municipal",
+  "ville": "Poligny",
+  "departement": "Jura",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   46.82662,
+   5.7236
+  ],
+  "notices_versees": 82,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 0
+ },
+ {
+  "code_museofile": "M0357",
+  "nom": "musée Baron Martin",
+  "ville": "Gray",
+  "departement": "Haute-Saône",
+  "region": "Bourgogne-Franche-Comté",
+  "coord": [
+   47.44641,
+   5.59278
+  ],
+  "notices_versees": 32,
+  "doute": 0,
+  "part_doute": 0.0,
+  "niveaux": [
+   0,
+   0,
+   0
+  ],
+  "copie": 0,
+  "revision": 3
+ }
+]

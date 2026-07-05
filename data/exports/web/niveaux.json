@@ -1,0 +1,105 @@
+{
+ "notices_total": 1023705,
+ "notices_avec_auteur": 841953,
+ "doute_total": 24507,
+ "taux_doute_base": 0.02394,
+ "taux_doute_avec_auteur": 0.02911,
+ "niveaux": {
+  "1": {
+   "libelle": "Presque lui",
+   "notices": 20014
+  },
+  "2": {
+   "libelle": "Autour de lui",
+   "notices": 3537
+  },
+  "3": {
+   "libelle": "Son style, sans lui",
+   "notices": 956
+  }
+ },
+ "copie": 22624,
+ "revision": 27270,
+ "familles": {
+  "attribue": {
+   "libelle": "attribué à",
+   "categorie": "doute",
+   "notices": 17926
+  },
+  "point_interrogation": {
+   "libelle": "? (point d'interrogation)",
+   "categorie": "doute",
+   "notices": 2213
+  },
+  "ecole_de": {
+   "libelle": "école de",
+   "categorie": "doute",
+   "notices": 1871
+  },
+  "ecole_lieu": {
+   "libelle": "école-lieu consacrée (écartée)",
+   "categorie": "ecarte",
+   "notices": 222
+  },
+  "atelier_de": {
+   "libelle": "atelier (qualificatif, beaux-arts)",
+   "categorie": "doute",
+   "notices": 1236
+  },
+  "atelier_hors_beaux_arts": {
+   "libelle": "atelier hors beaux-arts (écarté)",
+   "categorie": "ecarte",
+   "notices": 523
+  },
+  "atelier_nom": {
+   "libelle": "Atelier de X en nom d'auteur (écarté)",
+   "categorie": "ecarte",
+   "notices": 1123
+  },
+  "entourage_de": {
+   "libelle": "entourage de",
+   "categorie": "doute",
+   "notices": 503
+  },
+  "suiveur_de": {
+   "libelle": "suiveur de",
+   "categorie": "doute",
+   "notices": 80
+  },
+  "maniere_de": {
+   "libelle": "(à la) manière de",
+   "categorie": "doute",
+   "notices": 703
+  },
+  "genre_de": {
+   "libelle": "genre de",
+   "categorie": "doute",
+   "notices": 303
+  },
+  "presume": {
+   "libelle": "présumé",
+   "categorie": "doute",
+   "notices": 4
+  },
+  "d_apres": {
+   "libelle": "d'après (copie d'un modèle)",
+   "categorie": "copie",
+   "notices": 22564
+  },
+  "copie": {
+   "libelle": "copie",
+   "categorie": "copie",
+   "notices": 280
+  },
+  "anciennement_attribue": {
+   "libelle": "anciennement attribué à",
+   "categorie": "revision",
+   "notices": 7
+  },
+  "champ_ancienne_attribution": {
+   "libelle": "champ Ancienne_attribution renseigné",
+   "categorie": "revision",
+   "notices": 27266
+  }
+ }
+}

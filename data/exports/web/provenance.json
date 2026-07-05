@@ -1,0 +1,12 @@
+{
+ "source": "Collections des musées de France : base Joconde",
+ "editeur": "Ministère de la Culture",
+ "licence": "Licence Ouverte 2.0",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb",
+ "version_donnee": "2026-07-01",
+ "empreinte_etag": "4cc723bb0c3aebdecd2245b7644fb00a",
+ "taille_octets": 1191002260,
+ "mise_a_jour_source": "chaque mercredi 06:00",
+ "date_generation_exports": "2026-07-05T11:48:16+00:00",
+ "lexique": "markers.py v2 (2026-07-05)"
+}
