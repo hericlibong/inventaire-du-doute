@@ -18,7 +18,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": true
  },
  {
   "code_museofile": "M5031",
@@ -39,7 +40,8 @@
    532
   ],
   "copie": 5088,
-  "revision": 15898
+  "revision": 15898,
+  "monoculture": false
  },
  {
   "code_museofile": "M0537",
@@ -60,7 +62,8 @@
    0
   ],
   "copie": 279,
-  "revision": 74
+  "revision": 74,
+  "monoculture": false
  },
  {
   "code_museofile": "M0332",
@@ -81,7 +84,8 @@
    35
   ],
   "copie": 535,
-  "revision": 1509
+  "revision": 1509,
+  "monoculture": false
  },
  {
   "code_museofile": "M0303",
@@ -102,7 +106,8 @@
    1
   ],
   "copie": 300,
-  "revision": 250
+  "revision": 250,
+  "monoculture": false
  },
  {
   "code_museofile": "M0022",
@@ -123,7 +128,8 @@
    0
   ],
   "copie": 2,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M5052",
@@ -144,7 +150,8 @@
    3
   ],
   "copie": 916,
-  "revision": 351
+  "revision": 351,
+  "monoculture": false
  },
  {
   "code_museofile": "M5011",
@@ -165,7 +172,8 @@
    31
   ],
   "copie": 166,
-  "revision": 662
+  "revision": 662,
+  "monoculture": false
  },
  {
   "code_museofile": "M0607",
@@ -186,7 +194,8 @@
    16
   ],
   "copie": 497,
-  "revision": 124
+  "revision": 124,
+  "monoculture": false
  },
  {
   "code_museofile": "M5019",
@@ -207,7 +216,8 @@
    0
   ],
   "copie": 95,
-  "revision": 4
+  "revision": 4,
+  "monoculture": false
  },
  {
   "code_museofile": "M0994",
@@ -228,7 +238,8 @@
    20
   ],
   "copie": 185,
-  "revision": 605
+  "revision": 605,
+  "monoculture": false
  },
  {
   "code_museofile": "M0116",
@@ -249,7 +260,8 @@
    2
   ],
   "copie": 191,
-  "revision": 101
+  "revision": 101,
+  "monoculture": false
  },
  {
   "code_museofile": "M0170",
@@ -270,7 +282,8 @@
    0
   ],
   "copie": 10,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0137",
@@ -291,7 +304,8 @@
    17
   ],
   "copie": 229,
-  "revision": 445
+  "revision": 445,
+  "monoculture": false
  },
  {
   "code_museofile": "M5077",
@@ -312,7 +326,8 @@
    0
   ],
   "copie": 748,
-  "revision": 323
+  "revision": 323,
+  "monoculture": false
  },
  {
   "code_museofile": "M5002",
@@ -333,7 +348,8 @@
    0
   ],
   "copie": 358,
-  "revision": 2
+  "revision": 2,
+  "monoculture": false
  },
  {
   "code_museofile": "M0743",
@@ -354,7 +370,8 @@
    47
   ],
   "copie": 139,
-  "revision": 8
+  "revision": 8,
+  "monoculture": false
  },
  {
   "code_museofile": "M0211",
@@ -375,7 +392,8 @@
    37
   ],
   "copie": 1510,
-  "revision": 829
+  "revision": 829,
+  "monoculture": false
  },
  {
   "code_museofile": "M1048",
@@ -396,7 +414,8 @@
    2
   ],
   "copie": 132,
-  "revision": 246
+  "revision": 246,
+  "monoculture": false
  },
  {
   "code_museofile": "M0311",
@@ -417,7 +436,8 @@
    2
   ],
   "copie": 77,
-  "revision": 195
+  "revision": 195,
+  "monoculture": false
  },
  {
   "code_museofile": "M0729",
@@ -438,7 +458,8 @@
    5
   ],
   "copie": 174,
-  "revision": 375
+  "revision": 375,
+  "monoculture": false
  },
  {
   "code_museofile": "M0065",
@@ -459,7 +480,8 @@
    3
   ],
   "copie": 259,
-  "revision": 239
+  "revision": 239,
+  "monoculture": false
  },
  {
   "code_museofile": "M0748",
@@ -480,7 +502,8 @@
    1
   ],
   "copie": 209,
-  "revision": 189
+  "revision": 189,
+  "monoculture": false
  },
  {
   "code_museofile": "M0347",
@@ -501,7 +524,8 @@
    22
   ],
   "copie": 126,
-  "revision": 93
+  "revision": 93,
+  "monoculture": false
  },
  {
   "code_museofile": "M0917",
@@ -522,7 +546,8 @@
    0
   ],
   "copie": 23,
-  "revision": 41
+  "revision": 41,
+  "monoculture": false
  },
  {
   "code_museofile": "M0650",
@@ -543,7 +568,8 @@
    11
   ],
   "copie": 109,
-  "revision": 719
+  "revision": 719,
+  "monoculture": false
  },
  {
   "code_museofile": "M0657",
@@ -564,7 +590,8 @@
    3
   ],
   "copie": 626,
-  "revision": 189
+  "revision": 189,
+  "monoculture": false
  },
  {
   "code_museofile": "M0619",
@@ -585,7 +612,8 @@
    6
   ],
   "copie": 368,
-  "revision": 337
+  "revision": 337,
+  "monoculture": false
  },
  {
   "code_museofile": "M5057",
@@ -606,7 +634,8 @@
    0
   ],
   "copie": 13,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M5017",
@@ -627,7 +656,8 @@
    1
   ],
   "copie": 927,
-  "revision": 17
+  "revision": 17,
+  "monoculture": false
  },
  {
   "code_museofile": "M0172",
@@ -648,7 +678,8 @@
    2
   ],
   "copie": 369,
-  "revision": 283
+  "revision": 283,
+  "monoculture": false
  },
  {
   "code_museofile": "M0805",
@@ -669,7 +700,8 @@
    1
   ],
   "copie": 36,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0435",
@@ -690,7 +722,8 @@
    0
   ],
   "copie": 118,
-  "revision": 1
+  "revision": 1,
+  "monoculture": false
  },
  {
   "code_museofile": "M0629",
@@ -711,7 +744,8 @@
    0
   ],
   "copie": 167,
-  "revision": 286
+  "revision": 286,
+  "monoculture": false
  },
  {
   "code_museofile": "M0286",
@@ -732,7 +766,8 @@
    2
   ],
   "copie": 720,
-  "revision": 39
+  "revision": 39,
+  "monoculture": false
  },
  {
   "code_museofile": "M0812",
@@ -753,7 +788,8 @@
    2
   ],
   "copie": 1,
-  "revision": 19
+  "revision": 19,
+  "monoculture": false
  },
  {
   "code_museofile": "M0562",
@@ -774,7 +810,8 @@
    4
   ],
   "copie": 70,
-  "revision": 259
+  "revision": 259,
+  "monoculture": false
  },
  {
   "code_museofile": "M0066",
@@ -795,7 +832,8 @@
    3
   ],
   "copie": 89,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0161",
@@ -816,7 +854,8 @@
    9
   ],
   "copie": 52,
-  "revision": 9
+  "revision": 9,
+  "monoculture": false
  },
  {
   "code_museofile": "M0770",
@@ -837,7 +876,8 @@
    6
   ],
   "copie": 111,
-  "revision": 50
+  "revision": 50,
+  "monoculture": false
  },
  {
   "code_museofile": "M0016",
@@ -858,7 +898,8 @@
    0
   ],
   "copie": 0,
-  "revision": 7
+  "revision": 7,
+  "monoculture": false
  },
  {
   "code_museofile": "M0913",
@@ -879,7 +920,8 @@
    0
   ],
   "copie": 79,
-  "revision": 125
+  "revision": 125,
+  "monoculture": false
  },
  {
   "code_museofile": "M0013",
@@ -900,7 +942,8 @@
    1
   ],
   "copie": 178,
-  "revision": 4
+  "revision": 4,
+  "monoculture": false
  },
  {
   "code_museofile": "M0044",
@@ -921,7 +964,8 @@
    0
   ],
   "copie": 26,
-  "revision": 3
+  "revision": 3,
+  "monoculture": false
  },
  {
   "code_museofile": "M5044",
@@ -942,7 +986,8 @@
    0
   ],
   "copie": 38,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M5013",
@@ -963,7 +1008,8 @@
    1
   ],
   "copie": 155,
-  "revision": 80
+  "revision": 80,
+  "monoculture": false
  },
  {
   "code_museofile": "M1023",
@@ -984,7 +1030,8 @@
    0
   ],
   "copie": 142,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0512",
@@ -1005,7 +1052,8 @@
    1
   ],
   "copie": 210,
-  "revision": 22
+  "revision": 22,
+  "monoculture": false
  },
  {
   "code_museofile": "M0207",
@@ -1026,7 +1074,8 @@
    37
   ],
   "copie": 52,
-  "revision": 210
+  "revision": 210,
+  "monoculture": false
  },
  {
   "code_museofile": "M0019",
@@ -1047,7 +1096,8 @@
    2
   ],
   "copie": 54,
-  "revision": 65
+  "revision": 65,
+  "monoculture": false
  },
  {
   "code_museofile": "M0712",
@@ -1068,7 +1118,8 @@
    0
   ],
   "copie": 60,
-  "revision": 43
+  "revision": 43,
+  "monoculture": false
  },
  {
   "code_museofile": "M0400",
@@ -1089,7 +1140,8 @@
    0
   ],
   "copie": 65,
-  "revision": 18
+  "revision": 18,
+  "monoculture": false
  },
  {
   "code_museofile": "M0798",
@@ -1110,7 +1162,8 @@
    1
   ],
   "copie": 24,
-  "revision": 35
+  "revision": 35,
+  "monoculture": false
  },
  {
   "code_museofile": "M5060",
@@ -1131,7 +1184,8 @@
    1
   ],
   "copie": 29,
-  "revision": 13
+  "revision": 13,
+  "monoculture": false
  },
  {
   "code_museofile": "M0963",
@@ -1152,7 +1206,8 @@
    0
   ],
   "copie": 36,
-  "revision": 78
+  "revision": 78,
+  "monoculture": false
  },
  {
   "code_museofile": "M0533",
@@ -1173,7 +1228,8 @@
    0
   ],
   "copie": 177,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0766",
@@ -1194,7 +1250,8 @@
    0
   ],
   "copie": 31,
-  "revision": 2
+  "revision": 2,
+  "monoculture": false
  },
  {
   "code_museofile": "M0894",
@@ -1215,7 +1272,8 @@
    1
   ],
   "copie": 7,
-  "revision": 5
+  "revision": 5,
+  "monoculture": false
  },
  {
   "code_museofile": "M0915",
@@ -1236,7 +1294,8 @@
    0
   ],
   "copie": 10,
-  "revision": 10
+  "revision": 10,
+  "monoculture": false
  },
  {
   "code_museofile": "M0638",
@@ -1257,7 +1316,8 @@
    8
   ],
   "copie": 76,
-  "revision": 119
+  "revision": 119,
+  "monoculture": false
  },
  {
   "code_museofile": "M0028",
@@ -1278,7 +1338,8 @@
    0
   ],
   "copie": 47,
-  "revision": 50
+  "revision": 50,
+  "monoculture": false
  },
  {
   "code_museofile": "M0809",
@@ -1299,7 +1360,8 @@
    0
   ],
   "copie": 172,
-  "revision": 7
+  "revision": 7,
+  "monoculture": false
  },
  {
   "code_museofile": "M0457",
@@ -1320,7 +1382,8 @@
    0
   ],
   "copie": 17,
-  "revision": 50
+  "revision": 50,
+  "monoculture": false
  },
  {
   "code_museofile": "M0424",
@@ -1341,7 +1404,8 @@
    0
   ],
   "copie": 35,
-  "revision": 1
+  "revision": 1,
+  "monoculture": false
  },
  {
   "code_museofile": "M1031",
@@ -1362,7 +1426,8 @@
    3
   ],
   "copie": 16,
-  "revision": 5
+  "revision": 5,
+  "monoculture": false
  },
  {
   "code_museofile": "M0536",
@@ -1383,7 +1448,8 @@
    6
   ],
   "copie": 36,
-  "revision": 109
+  "revision": 109,
+  "monoculture": false
  },
  {
   "code_museofile": "M0155",
@@ -1404,7 +1470,8 @@
    4
   ],
   "copie": 151,
-  "revision": 10
+  "revision": 10,
+  "monoculture": false
  },
  {
   "code_museofile": "M0216",
@@ -1425,7 +1492,8 @@
    0
   ],
   "copie": 8,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M5012",
@@ -1446,7 +1514,8 @@
    0
   ],
   "copie": 20,
-  "revision": 6
+  "revision": 6,
+  "monoculture": false
  },
  {
   "code_museofile": "M0947",
@@ -1467,7 +1536,8 @@
    0
   ],
   "copie": 2,
-  "revision": 299
+  "revision": 299,
+  "monoculture": false
  },
  {
   "code_museofile": "M0312",
@@ -1488,7 +1558,8 @@
    3
   ],
   "copie": 1,
-  "revision": 40
+  "revision": 40,
+  "monoculture": false
  },
  {
   "code_museofile": "M0354",
@@ -1509,7 +1580,8 @@
    0
   ],
   "copie": 0,
-  "revision": 1
+  "revision": 1,
+  "monoculture": false
  },
  {
   "code_museofile": "M0517",
@@ -1530,7 +1602,8 @@
    0
   ],
   "copie": 47,
-  "revision": 35
+  "revision": 35,
+  "monoculture": false
  },
  {
   "code_museofile": "M0445",
@@ -1551,7 +1624,8 @@
    1
   ],
   "copie": 6,
-  "revision": 25
+  "revision": 25,
+  "monoculture": false
  },
  {
   "code_museofile": "M5003",
@@ -1572,7 +1646,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0230",
@@ -1593,7 +1668,8 @@
    0
   ],
   "copie": 5,
-  "revision": 2
+  "revision": 2,
+  "monoculture": false
  },
  {
   "code_museofile": "M5008",
@@ -1614,7 +1690,8 @@
    0
   ],
   "copie": 15,
-  "revision": 3
+  "revision": 3,
+  "monoculture": false
  },
  {
   "code_museofile": "M0776",
@@ -1635,7 +1712,8 @@
    0
   ],
   "copie": 55,
-  "revision": 2
+  "revision": 2,
+  "monoculture": false
  },
  {
   "code_museofile": "M0098",
@@ -1656,7 +1734,8 @@
    0
   ],
   "copie": 24,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0794",
@@ -1677,7 +1756,8 @@
    0
   ],
   "copie": 155,
-  "revision": 13
+  "revision": 13,
+  "monoculture": false
  },
  {
   "code_museofile": "M0701",
@@ -1698,7 +1778,8 @@
    6
   ],
   "copie": 21,
-  "revision": 8
+  "revision": 8,
+  "monoculture": false
  },
  {
   "code_museofile": "M0329",
@@ -1719,7 +1800,8 @@
    1
   ],
   "copie": 6,
-  "revision": 34
+  "revision": 34,
+  "monoculture": false
  },
  {
   "code_museofile": "M0725",
@@ -1740,7 +1822,8 @@
    0
   ],
   "copie": 2,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0289",
@@ -1761,7 +1844,8 @@
    0
   ],
   "copie": 10,
-  "revision": 39
+  "revision": 39,
+  "monoculture": false
  },
  {
   "code_museofile": "M0491",
@@ -1782,7 +1866,8 @@
    1
   ],
   "copie": 16,
-  "revision": 34
+  "revision": 34,
+  "monoculture": false
  },
  {
   "code_museofile": "M0790",
@@ -1803,7 +1888,8 @@
    10
   ],
   "copie": 9,
-  "revision": 1
+  "revision": 1,
+  "monoculture": false
  },
  {
   "code_museofile": "M0594",
@@ -1824,7 +1910,8 @@
    0
   ],
   "copie": 40,
-  "revision": 16
+  "revision": 16,
+  "monoculture": false
  },
  {
   "code_museofile": "M5051",
@@ -1845,7 +1932,8 @@
    1
   ],
   "copie": 19,
-  "revision": 21
+  "revision": 21,
+  "monoculture": false
  },
  {
   "code_museofile": "M0121",
@@ -1866,7 +1954,8 @@
    0
   ],
   "copie": 51,
-  "revision": 27
+  "revision": 27,
+  "monoculture": false
  },
  {
   "code_museofile": "M5005",
@@ -1887,7 +1976,8 @@
    0
   ],
   "copie": 17,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0094",
@@ -1908,7 +1998,8 @@
    1
   ],
   "copie": 4,
-  "revision": 32
+  "revision": 32,
+  "monoculture": false
  },
  {
   "code_museofile": "M0189",
@@ -1929,7 +2020,8 @@
    0
   ],
   "copie": 28,
-  "revision": 5
+  "revision": 5,
+  "monoculture": false
  },
  {
   "code_museofile": "M0803",
@@ -1950,7 +2042,8 @@
    4
   ],
   "copie": 33,
-  "revision": 14
+  "revision": 14,
+  "monoculture": false
  },
  {
   "code_museofile": "M0162",
@@ -1971,7 +2064,8 @@
    0
   ],
   "copie": 7,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0277",
@@ -1992,7 +2086,8 @@
    1
   ],
   "copie": 182,
-  "revision": 16
+  "revision": 16,
+  "monoculture": false
  },
  {
   "code_museofile": "M5016",
@@ -2013,7 +2108,8 @@
    0
   ],
   "copie": 112,
-  "revision": 7
+  "revision": 7,
+  "monoculture": false
  },
  {
   "code_museofile": "M0271",
@@ -2034,7 +2130,8 @@
    0
   ],
   "copie": 21,
-  "revision": 60
+  "revision": 60,
+  "monoculture": false
  },
  {
   "code_museofile": "M0151",
@@ -2055,7 +2152,8 @@
    0
   ],
   "copie": 16,
-  "revision": 3
+  "revision": 3,
+  "monoculture": false
  },
  {
   "code_museofile": "M0528",
@@ -2076,7 +2174,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0677",
@@ -2097,7 +2196,8 @@
    1
   ],
   "copie": 66,
-  "revision": 26
+  "revision": 26,
+  "monoculture": false
  },
  {
   "code_museofile": "M0307",
@@ -2118,7 +2218,8 @@
    3
   ],
   "copie": 121,
-  "revision": 24
+  "revision": 24,
+  "monoculture": false
  },
  {
   "code_museofile": "M0563",
@@ -2139,7 +2240,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0745",
@@ -2160,7 +2262,8 @@
    0
   ],
   "copie": 353,
-  "revision": 18
+  "revision": 18,
+  "monoculture": false
  },
  {
   "code_museofile": "M0265",
@@ -2181,7 +2284,8 @@
    0
   ],
   "copie": 53,
-  "revision": 39
+  "revision": 39,
+  "monoculture": false
  },
  {
   "code_museofile": "M5041",
@@ -2202,7 +2306,8 @@
    0
   ],
   "copie": 205,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M1111",
@@ -2223,7 +2328,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0315",
@@ -2244,7 +2350,8 @@
    0
   ],
   "copie": 110,
-  "revision": 5
+  "revision": 5,
+  "monoculture": false
  },
  {
   "code_museofile": "M5021",
@@ -2265,7 +2372,8 @@
    0
   ],
   "copie": 15,
-  "revision": 7
+  "revision": 7,
+  "monoculture": false
  },
  {
   "code_museofile": "M0815",
@@ -2286,7 +2394,8 @@
    0
   ],
   "copie": 93,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0341",
@@ -2307,7 +2416,8 @@
    6
   ],
   "copie": 91,
-  "revision": 8
+  "revision": 8,
+  "monoculture": false
  },
  {
   "code_museofile": "M0381",
@@ -2328,7 +2438,8 @@
    0
   ],
   "copie": 42,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0134",
@@ -2349,7 +2460,8 @@
    1
   ],
   "copie": 24,
-  "revision": 33
+  "revision": 33,
+  "monoculture": false
  },
  {
   "code_museofile": "M0689",
@@ -2370,7 +2482,8 @@
    0
   ],
   "copie": 1,
-  "revision": 1
+  "revision": 1,
+  "monoculture": false
  },
  {
   "code_museofile": "M0184",
@@ -2391,7 +2504,8 @@
    0
   ],
   "copie": 6,
-  "revision": 9
+  "revision": 9,
+  "monoculture": false
  },
  {
   "code_museofile": "M0887",
@@ -2412,7 +2526,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0234",
@@ -2433,7 +2548,8 @@
    1
   ],
   "copie": 44,
-  "revision": 4
+  "revision": 4,
+  "monoculture": false
  },
  {
   "code_museofile": "M0348",
@@ -2454,7 +2570,8 @@
    0
   ],
   "copie": 5,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0525",
@@ -2475,7 +2592,8 @@
    0
   ],
   "copie": 28,
-  "revision": 16
+  "revision": 16,
+  "monoculture": false
  },
  {
   "code_museofile": "M0208",
@@ -2496,7 +2614,8 @@
    1
   ],
   "copie": 2,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M5001",
@@ -2517,7 +2636,8 @@
    0
   ],
   "copie": 11,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0250",
@@ -2538,7 +2658,8 @@
    0
   ],
   "copie": 11,
-  "revision": 2
+  "revision": 2,
+  "monoculture": false
  },
  {
   "code_museofile": "M0350",
@@ -2559,7 +2680,8 @@
    3
   ],
   "copie": 26,
-  "revision": 11
+  "revision": 11,
+  "monoculture": false
  },
  {
   "code_museofile": "M0793",
@@ -2580,7 +2702,8 @@
    0
   ],
   "copie": 12,
-  "revision": 3
+  "revision": 3,
+  "monoculture": false
  },
  {
   "code_museofile": "M0714",
@@ -2601,7 +2724,8 @@
    1
   ],
   "copie": 63,
-  "revision": 1
+  "revision": 1,
+  "monoculture": false
  },
  {
   "code_museofile": "M0759",
@@ -2622,7 +2746,8 @@
    0
   ],
   "copie": 2,
-  "revision": 9
+  "revision": 9,
+  "monoculture": false
  },
  {
   "code_museofile": "M0811",
@@ -2643,7 +2768,8 @@
    0
   ],
   "copie": 41,
-  "revision": 4
+  "revision": 4,
+  "monoculture": false
  },
  {
   "code_museofile": "M0072",
@@ -2664,7 +2790,8 @@
    0
   ],
   "copie": 13,
-  "revision": 7
+  "revision": 7,
+  "monoculture": false
  },
  {
   "code_museofile": "M0064",
@@ -2685,7 +2812,8 @@
    0
   ],
   "copie": 64,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0416",
@@ -2706,7 +2834,8 @@
    0
   ],
   "copie": 5,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0685",
@@ -2727,7 +2856,8 @@
    0
   ],
   "copie": 17,
-  "revision": 52
+  "revision": 52,
+  "monoculture": false
  },
  {
   "code_museofile": "M0923",
@@ -2748,7 +2878,8 @@
    0
   ],
   "copie": 1,
-  "revision": 2
+  "revision": 2,
+  "monoculture": false
  },
  {
   "code_museofile": "M0132",
@@ -2769,7 +2900,8 @@
    0
   ],
   "copie": 53,
-  "revision": 1
+  "revision": 1,
+  "monoculture": false
  },
  {
   "code_museofile": "M0440",
@@ -2790,7 +2922,8 @@
    2
   ],
   "copie": 22,
-  "revision": 13
+  "revision": 13,
+  "monoculture": false
  },
  {
   "code_museofile": "M0150",
@@ -2811,7 +2944,8 @@
    2
   ],
   "copie": 5,
-  "revision": 10
+  "revision": 10,
+  "monoculture": false
  },
  {
   "code_museofile": "M0181",
@@ -2832,7 +2966,8 @@
    0
   ],
   "copie": 50,
-  "revision": 4
+  "revision": 4,
+  "monoculture": false
  },
  {
   "code_museofile": "M0333",
@@ -2853,7 +2988,8 @@
    0
   ],
   "copie": 212,
-  "revision": 8
+  "revision": 8,
+  "monoculture": false
  },
  {
   "code_museofile": "M0810",
@@ -2874,7 +3010,8 @@
    0
   ],
   "copie": 18,
-  "revision": 3
+  "revision": 3,
+  "monoculture": false
  },
  {
   "code_museofile": "M0866",
@@ -2895,7 +3032,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0567",
@@ -2916,7 +3054,8 @@
    0
   ],
   "copie": 18,
-  "revision": 4
+  "revision": 4,
+  "monoculture": false
  },
  {
   "code_museofile": "M0418",
@@ -2937,7 +3076,8 @@
    0
   ],
   "copie": 10,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0796",
@@ -2958,7 +3098,8 @@
    0
   ],
   "copie": 38,
-  "revision": 2
+  "revision": 2,
+  "monoculture": false
  },
  {
   "code_museofile": "M0703",
@@ -2979,7 +3120,8 @@
    1
   ],
   "copie": 4,
-  "revision": 1
+  "revision": 1,
+  "monoculture": false
  },
  {
   "code_museofile": "M0144",
@@ -3000,7 +3142,8 @@
    0
   ],
   "copie": 141,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0467",
@@ -3021,7 +3164,8 @@
    0
   ],
   "copie": 5,
-  "revision": 7
+  "revision": 7,
+  "monoculture": false
  },
  {
   "code_museofile": "M1168",
@@ -3042,7 +3186,8 @@
    3
   ],
   "copie": 10,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M5026",
@@ -3063,7 +3208,8 @@
    0
   ],
   "copie": 3,
-  "revision": 2
+  "revision": 2,
+  "monoculture": false
  },
  {
   "code_museofile": "M0176",
@@ -3084,7 +3230,8 @@
    0
   ],
   "copie": 7,
-  "revision": 5
+  "revision": 5,
+  "monoculture": false
  },
  {
   "code_museofile": "M7015",
@@ -3105,7 +3252,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M1106",
@@ -3126,7 +3274,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M5007",
@@ -3147,7 +3296,8 @@
    0
   ],
   "copie": 74,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0417",
@@ -3168,7 +3318,8 @@
    0
   ],
   "copie": 9,
-  "revision": 1
+  "revision": 1,
+  "monoculture": false
  },
  {
   "code_museofile": "M0749",
@@ -3189,7 +3340,8 @@
    2
   ],
   "copie": 0,
-  "revision": 2
+  "revision": 2,
+  "monoculture": false
  },
  {
   "code_museofile": "M0229",
@@ -3210,7 +3362,8 @@
    0
   ],
   "copie": 14,
-  "revision": 10
+  "revision": 10,
+  "monoculture": false
  },
  {
   "code_museofile": "M0106",
@@ -3231,7 +3384,8 @@
    0
   ],
   "copie": 0,
-  "revision": 1
+  "revision": 1,
+  "monoculture": false
  },
  {
   "code_museofile": "M0235",
@@ -3252,7 +3406,8 @@
    0
   ],
   "copie": 3,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0878",
@@ -3273,7 +3428,8 @@
    0
   ],
   "copie": 1,
-  "revision": 13
+  "revision": 13,
+  "monoculture": false
  },
  {
   "code_museofile": "M0784",
@@ -3294,7 +3450,8 @@
    0
   ],
   "copie": 461,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0715",
@@ -3315,7 +3472,8 @@
    1
   ],
   "copie": 14,
-  "revision": 3
+  "revision": 3,
+  "monoculture": false
  },
  {
   "code_museofile": "M0949",
@@ -3336,7 +3494,8 @@
    0
   ],
   "copie": 5,
-  "revision": 11
+  "revision": 11,
+  "monoculture": false
  },
  {
   "code_museofile": "M1137",
@@ -3357,7 +3516,8 @@
    1
   ],
   "copie": 1,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M1020",
@@ -3378,7 +3538,8 @@
    1
   ],
   "copie": 2,
-  "revision": 2
+  "revision": 2,
+  "monoculture": false
  },
  {
   "code_museofile": "M0538",
@@ -3399,7 +3560,8 @@
    0
   ],
   "copie": 1,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0280",
@@ -3420,7 +3582,8 @@
    0
   ],
   "copie": 20,
-  "revision": 1
+  "revision": 1,
+  "monoculture": false
  },
  {
   "code_museofile": "M0540",
@@ -3441,7 +3604,8 @@
    0
   ],
   "copie": 1,
-  "revision": 5
+  "revision": 5,
+  "monoculture": false
  },
  {
   "code_museofile": "M0617",
@@ -3462,7 +3626,8 @@
    0
   ],
   "copie": 9,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0196",
@@ -3483,7 +3648,8 @@
    0
   ],
   "copie": 8,
-  "revision": 9
+  "revision": 9,
+  "monoculture": false
  },
  {
   "code_museofile": "M7011",
@@ -3504,7 +3670,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M1011",
@@ -3525,7 +3692,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0720",
@@ -3546,7 +3714,8 @@
    0
   ],
   "copie": 3,
-  "revision": 4
+  "revision": 4,
+  "monoculture": false
  },
  {
   "code_museofile": "M1104",
@@ -3567,7 +3736,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0914",
@@ -3588,7 +3758,8 @@
    0
   ],
   "copie": 7,
-  "revision": 54
+  "revision": 54,
+  "monoculture": false
  },
  {
   "code_museofile": "M0919",
@@ -3609,7 +3780,8 @@
    2
   ],
   "copie": 1,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0655",
@@ -3630,7 +3802,8 @@
    0
   ],
   "copie": 10,
-  "revision": 4
+  "revision": 4,
+  "monoculture": false
  },
  {
   "code_museofile": "M0247",
@@ -3651,7 +3824,8 @@
    0
   ],
   "copie": 26,
-  "revision": 1
+  "revision": 1,
+  "monoculture": false
  },
  {
   "code_museofile": "M1222",
@@ -3672,7 +3846,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0139",
@@ -3693,7 +3868,8 @@
    0
   ],
   "copie": 46,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0353",
@@ -3714,7 +3890,8 @@
    0
   ],
   "copie": 17,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M1107",
@@ -3735,7 +3912,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0708",
@@ -3756,7 +3934,8 @@
    0
   ],
   "copie": 5,
-  "revision": 5
+  "revision": 5,
+  "monoculture": false
  },
  {
   "code_museofile": "M0565",
@@ -3777,7 +3956,8 @@
    0
   ],
   "copie": 15,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0734",
@@ -3798,7 +3978,8 @@
    0
   ],
   "copie": 11,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0706",
@@ -3819,7 +4000,8 @@
    0
   ],
   "copie": 43,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0569",
@@ -3840,7 +4022,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0889",
@@ -3861,7 +4044,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0730",
@@ -3882,7 +4066,8 @@
    0
   ],
   "copie": 3,
-  "revision": 2
+  "revision": 2,
+  "monoculture": false
  },
  {
   "code_museofile": "M0876",
@@ -3903,7 +4088,8 @@
    0
   ],
   "copie": 1,
-  "revision": 2
+  "revision": 2,
+  "monoculture": false
  },
  {
   "code_museofile": "M0138",
@@ -3924,7 +4110,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0087",
@@ -3945,7 +4132,8 @@
    0
   ],
   "copie": 3,
-  "revision": 3
+  "revision": 3,
+  "monoculture": false
  },
  {
   "code_museofile": "M0003",
@@ -3966,7 +4154,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0323",
@@ -3987,7 +4176,8 @@
    0
   ],
   "copie": 1,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M1016",
@@ -4008,7 +4198,8 @@
    0
   ],
   "copie": 2,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M1061",
@@ -4029,7 +4220,8 @@
    0
   ],
   "copie": 12,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0164",
@@ -4050,7 +4242,8 @@
    1
   ],
   "copie": 1,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0964",
@@ -4071,7 +4264,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0394",
@@ -4092,7 +4286,8 @@
    0
   ],
   "copie": 2,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0390",
@@ -4113,7 +4308,8 @@
    0
   ],
   "copie": 12,
-  "revision": 1
+  "revision": 1,
+  "monoculture": false
  },
  {
   "code_museofile": "M0095",
@@ -4134,7 +4330,8 @@
    0
   ],
   "copie": 1,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0345",
@@ -4155,7 +4352,8 @@
    0
   ],
   "copie": 1,
-  "revision": 7
+  "revision": 7,
+  "monoculture": false
  },
  {
   "code_museofile": "M5009",
@@ -4176,7 +4374,8 @@
    0
   ],
   "copie": 129,
-  "revision": 2
+  "revision": 2,
+  "monoculture": false
  },
  {
   "code_museofile": "M0340",
@@ -4197,7 +4396,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0165",
@@ -4218,7 +4418,8 @@
    0
   ],
   "copie": 9,
-  "revision": 2
+  "revision": 2,
+  "monoculture": false
  },
  {
   "code_museofile": "M0081",
@@ -4239,7 +4440,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0872",
@@ -4260,7 +4462,8 @@
    0
   ],
   "copie": 0,
-  "revision": 1
+  "revision": 1,
+  "monoculture": false
  },
  {
   "code_museofile": "M0452",
@@ -4281,7 +4484,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0432",
@@ -4302,7 +4506,8 @@
    0
   ],
   "copie": 7,
-  "revision": 2
+  "revision": 2,
+  "monoculture": false
  },
  {
   "code_museofile": "M0500",
@@ -4323,7 +4528,8 @@
    0
   ],
   "copie": 1,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0437",
@@ -4344,7 +4550,8 @@
    0
   ],
   "copie": 1,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0010",
@@ -4365,7 +4572,8 @@
    0
   ],
   "copie": 0,
-  "revision": 2
+  "revision": 2,
+  "monoculture": false
  },
  {
   "code_museofile": "M0618",
@@ -4386,7 +4594,8 @@
    0
   ],
   "copie": 13,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0735",
@@ -4407,7 +4616,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0733",
@@ -4428,7 +4638,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0228",
@@ -4449,7 +4660,8 @@
    0
   ],
   "copie": 1,
-  "revision": 31
+  "revision": 31,
+  "monoculture": false
  },
  {
   "code_museofile": "M1070",
@@ -4470,7 +4682,8 @@
    0
   ],
   "copie": 5,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M1117",
@@ -4491,7 +4704,8 @@
    0
   ],
   "copie": 1,
-  "revision": 32
+  "revision": 32,
+  "monoculture": false
  },
  {
   "code_museofile": "M0990",
@@ -4512,7 +4726,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M1039",
@@ -4533,7 +4748,8 @@
    0
   ],
   "copie": 2,
-  "revision": 3
+  "revision": 3,
+  "monoculture": false
  },
  {
   "code_museofile": "M0880",
@@ -4554,7 +4770,8 @@
    0
   ],
   "copie": 2,
-  "revision": 5
+  "revision": 5,
+  "monoculture": false
  },
  {
   "code_museofile": "M0212",
@@ -4575,7 +4792,8 @@
    0
   ],
   "copie": 17,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0224",
@@ -4596,7 +4814,8 @@
    0
   ],
   "copie": 33,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0214",
@@ -4617,7 +4836,8 @@
    0
   ],
   "copie": 4,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0205",
@@ -4638,7 +4858,8 @@
    0
   ],
   "copie": 3,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0621",
@@ -4659,7 +4880,8 @@
    0
   ],
   "copie": 1,
-  "revision": 9
+  "revision": 9,
+  "monoculture": false
  },
  {
   "code_museofile": "M0514",
@@ -4680,7 +4902,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0710",
@@ -4701,7 +4924,8 @@
    0
   ],
   "copie": 12,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0260",
@@ -4722,7 +4946,8 @@
    1
   ],
   "copie": 4,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0639",
@@ -4743,7 +4968,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0628",
@@ -4764,7 +4990,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0550",
@@ -4785,7 +5012,8 @@
    0
   ],
   "copie": 1,
-  "revision": 4
+  "revision": 4,
+  "monoculture": false
  },
  {
   "code_museofile": "M0284",
@@ -4806,7 +5034,8 @@
    0
   ],
   "copie": 6,
-  "revision": 7
+  "revision": 7,
+  "monoculture": false
  },
  {
   "code_museofile": "M0275",
@@ -4827,7 +5056,8 @@
    0
   ],
   "copie": 0,
-  "revision": 1
+  "revision": 1,
+  "monoculture": false
  },
  {
   "code_museofile": "M5027",
@@ -4848,7 +5078,8 @@
    1
   ],
   "copie": 1,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M5030",
@@ -4869,7 +5100,8 @@
    0
   ],
   "copie": 0,
-  "revision": 2
+  "revision": 2,
+  "monoculture": false
  },
  {
   "code_museofile": "M0524",
@@ -4890,7 +5122,8 @@
    0
   ],
   "copie": 2,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0012",
@@ -4911,7 +5144,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0060",
@@ -4932,7 +5166,8 @@
    0
   ],
   "copie": 1,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0089",
@@ -4953,7 +5188,8 @@
    0
   ],
   "copie": 6,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0093",
@@ -4974,7 +5210,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0529",
@@ -4995,7 +5232,8 @@
    0
   ],
   "copie": 2,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M1069",
@@ -5016,7 +5254,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0376",
@@ -5037,7 +5276,8 @@
    0
   ],
   "copie": 1,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0378",
@@ -5058,7 +5298,8 @@
    0
   ],
   "copie": 0,
-  "revision": 1
+  "revision": 1,
+  "monoculture": false
  },
  {
   "code_museofile": "M0171",
@@ -5079,7 +5320,8 @@
    0
   ],
   "copie": 3,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M1041",
@@ -5100,7 +5342,8 @@
    0
   ],
   "copie": 1,
-  "revision": 2
+  "revision": 2,
+  "monoculture": false
  },
  {
   "code_museofile": "M0159",
@@ -5121,7 +5364,8 @@
    0
   ],
   "copie": 6,
-  "revision": 1
+  "revision": 1,
+  "monoculture": false
  },
  {
   "code_museofile": "M0902",
@@ -5142,7 +5386,8 @@
    0
   ],
   "copie": 1,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0903",
@@ -5163,7 +5408,8 @@
    0
   ],
   "copie": 2,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0403",
@@ -5184,7 +5430,8 @@
    0
   ],
   "copie": 2,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0320",
@@ -5205,7 +5452,8 @@
    0
   ],
   "copie": 2,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0338",
@@ -5226,7 +5474,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0339",
@@ -5247,7 +5496,8 @@
    0
   ],
   "copie": 17,
-  "revision": 5
+  "revision": 5,
+  "monoculture": false
  },
  {
   "code_museofile": "M0411",
@@ -5268,7 +5518,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0412",
@@ -5289,7 +5540,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M5046",
@@ -5310,7 +5562,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0879",
@@ -5331,7 +5584,8 @@
    0
   ],
   "copie": 8,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0852",
@@ -5352,7 +5606,8 @@
    0
   ],
   "copie": 4,
-  "revision": 1
+  "revision": 1,
+  "monoculture": false
  },
  {
   "code_museofile": "M0465",
@@ -5373,7 +5628,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0199",
@@ -5394,7 +5650,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0816",
@@ -5415,7 +5672,8 @@
    0
   ],
   "copie": 14,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0754",
@@ -5436,7 +5694,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0431",
@@ -5457,7 +5716,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0722",
@@ -5478,7 +5738,8 @@
    0
   ],
   "copie": 10,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0732",
@@ -5499,7 +5760,8 @@
    0
   ],
   "copie": 2,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0744",
@@ -5520,7 +5782,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0476",
@@ -5541,7 +5804,8 @@
    0
   ],
   "copie": 6,
-  "revision": 2
+  "revision": 2,
+  "monoculture": false
  },
  {
   "code_museofile": "M0503",
@@ -5562,7 +5826,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0665",
@@ -5583,7 +5848,8 @@
    0
   ],
   "copie": 2,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0672",
@@ -5604,7 +5870,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0683",
@@ -5625,7 +5892,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0686",
@@ -5646,7 +5914,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0705",
@@ -5667,7 +5936,8 @@
    0
   ],
   "copie": 3,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0635",
@@ -5688,7 +5958,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0622",
@@ -5709,7 +5980,8 @@
    0
   ],
   "copie": 2,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0633",
@@ -5730,7 +6002,8 @@
    0
   ],
   "copie": 53,
-  "revision": 2
+  "revision": 2,
+  "monoculture": false
  },
  {
   "code_museofile": "M0640",
@@ -5751,7 +6024,8 @@
    0
   ],
   "copie": 1,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0643",
@@ -5772,7 +6046,8 @@
    0
   ],
   "copie": 1,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0520",
@@ -5793,7 +6068,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0023",
@@ -5814,7 +6090,8 @@
    0
   ],
   "copie": 1,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M5039",
@@ -5835,7 +6112,8 @@
    0
   ],
   "copie": 33,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M5084",
@@ -5856,7 +6134,8 @@
    0
   ],
   "copie": 2,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M7012",
@@ -5877,7 +6156,8 @@
    0
   ],
   "copie": 2,
-  "revision": 15
+  "revision": 15,
+  "monoculture": false
  },
  {
   "code_museofile": "M5010",
@@ -5898,7 +6178,8 @@
    0
   ],
   "copie": 1,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0011",
@@ -5919,7 +6200,8 @@
    0
   ],
   "copie": 1,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "mode d'acquisition particulier",
@@ -5940,7 +6222,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0000",
@@ -5958,7 +6241,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M7051",
@@ -5979,7 +6263,8 @@
    0
   ],
   "copie": 0,
-  "revision": 4
+  "revision": 4,
+  "monoculture": false
  },
  {
   "code_museofile": "M7059",
@@ -6000,7 +6285,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M9007",
@@ -6021,7 +6307,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M9013",
@@ -6042,7 +6329,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M9036",
@@ -6060,7 +6348,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0521",
@@ -6081,7 +6370,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0522",
@@ -6102,7 +6392,8 @@
    0
   ],
   "copie": 1,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0523",
@@ -6123,7 +6414,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0531",
@@ -6144,7 +6436,8 @@
    0
   ],
   "copie": 2,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0539",
@@ -6165,7 +6458,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0541",
@@ -6186,7 +6480,8 @@
    0
   ],
   "copie": 0,
-  "revision": 1
+  "revision": 1,
+  "monoculture": false
  },
  {
   "code_museofile": "M0131",
@@ -6207,7 +6502,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M1123",
@@ -6228,7 +6524,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M1128",
@@ -6249,7 +6546,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M1144",
@@ -6267,7 +6565,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0245",
@@ -6288,7 +6587,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0248",
@@ -6309,7 +6609,8 @@
    0
   ],
   "copie": 0,
-  "revision": 1
+  "revision": 1,
+  "monoculture": false
  },
  {
   "code_museofile": "M0251",
@@ -6330,7 +6631,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0252",
@@ -6351,7 +6653,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0255",
@@ -6372,7 +6675,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0259",
@@ -6393,7 +6697,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0262",
@@ -6414,7 +6719,8 @@
    0
   ],
   "copie": 5,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0015",
@@ -6435,7 +6741,8 @@
    0
   ],
   "copie": 0,
-  "revision": 1
+  "revision": 1,
+  "monoculture": false
  },
  {
   "code_museofile": "M0017",
@@ -6456,7 +6763,8 @@
    0
   ],
   "copie": 0,
-  "revision": 4
+  "revision": 4,
+  "monoculture": false
  },
  {
   "code_museofile": "M0018",
@@ -6477,7 +6785,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0020",
@@ -6498,7 +6807,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0024",
@@ -6519,7 +6829,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0025",
@@ -6540,7 +6851,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M5059",
@@ -6561,7 +6873,8 @@
    0
   ],
   "copie": 3,
-  "revision": 1
+  "revision": 1,
+  "monoculture": false
  },
  {
   "code_museofile": "M5061",
@@ -6582,7 +6895,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M5064",
@@ -6603,7 +6917,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0586",
@@ -6624,7 +6939,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0591",
@@ -6645,7 +6961,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0601",
@@ -6666,7 +6983,8 @@
    0
   ],
   "copie": 4,
-  "revision": 1
+  "revision": 1,
+  "monoculture": false
  },
  {
   "code_museofile": "M0602",
@@ -6687,7 +7005,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0605",
@@ -6708,7 +7027,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0620",
@@ -6729,7 +7049,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0627",
@@ -6750,7 +7071,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0631",
@@ -6771,7 +7093,8 @@
    0
   ],
   "copie": 2,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0634",
@@ -6792,7 +7115,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0542",
@@ -6813,7 +7137,8 @@
    0
   ],
   "copie": 0,
-  "revision": 1
+  "revision": 1,
+  "monoculture": false
  },
  {
   "code_museofile": "M0637",
@@ -6834,7 +7159,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0642",
@@ -6855,7 +7181,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0644",
@@ -6876,7 +7203,8 @@
    0
   ],
   "copie": 0,
-  "revision": 1
+  "revision": 1,
+  "monoculture": false
  },
  {
   "code_museofile": "M0651",
@@ -6897,7 +7225,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0658",
@@ -6918,7 +7247,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0243",
@@ -6939,7 +7269,8 @@
    0
   ],
   "copie": 7,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0511",
@@ -6960,7 +7291,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0266",
@@ -6981,7 +7313,8 @@
    0
   ],
   "copie": 0,
-  "revision": 2
+  "revision": 2,
+  "monoculture": false
  },
  {
   "code_museofile": "M0268",
@@ -7002,7 +7335,8 @@
    0
   ],
   "copie": 0,
-  "revision": 12
+  "revision": 12,
+  "monoculture": false
  },
  {
   "code_museofile": "M0273",
@@ -7023,7 +7357,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0661",
@@ -7044,7 +7379,8 @@
    0
   ],
   "copie": 2,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0673",
@@ -7065,7 +7401,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0678",
@@ -7086,7 +7423,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0682",
@@ -7107,7 +7445,8 @@
    0
   ],
   "copie": 0,
-  "revision": 1
+  "revision": 1,
+  "monoculture": false
  },
  {
   "code_museofile": "M0684",
@@ -7128,7 +7467,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0694",
@@ -7149,7 +7489,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0695",
@@ -7170,7 +7511,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0704",
@@ -7191,7 +7533,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0566",
@@ -7212,7 +7555,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0571",
@@ -7233,7 +7577,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0576",
@@ -7254,7 +7599,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0578",
@@ -7275,7 +7621,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0232",
@@ -7296,7 +7643,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0233",
@@ -7317,7 +7665,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0236",
@@ -7338,7 +7687,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0707",
@@ -7359,7 +7709,8 @@
    0
   ],
   "copie": 1,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0709",
@@ -7380,7 +7731,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0711",
@@ -7401,7 +7753,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0468",
@@ -7422,7 +7775,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0472",
@@ -7443,7 +7797,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0484",
@@ -7464,7 +7819,8 @@
    0
   ],
   "copie": 1,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0488",
@@ -7485,7 +7841,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0492",
@@ -7506,7 +7863,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0494",
@@ -7527,7 +7885,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0497",
@@ -7548,7 +7907,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0505",
@@ -7569,7 +7929,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0506",
@@ -7590,7 +7951,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0510",
@@ -7611,7 +7973,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0438",
@@ -7632,7 +7995,8 @@
    0
   ],
   "copie": 2,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0450",
@@ -7653,7 +8017,8 @@
    0
   ],
   "copie": 6,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0455",
@@ -7674,7 +8039,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0458",
@@ -7695,7 +8061,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0459",
@@ -7716,7 +8083,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0464",
@@ -7737,7 +8105,8 @@
    0
   ],
   "copie": 11,
-  "revision": 3
+  "revision": 3,
+  "monoculture": false
  },
  {
   "code_museofile": "M0513",
@@ -7758,7 +8127,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0718",
@@ -7779,7 +8149,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0723",
@@ -7800,7 +8171,8 @@
    0
   ],
   "copie": 8,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0728",
@@ -7821,7 +8193,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0731",
@@ -7842,7 +8215,8 @@
    0
   ],
   "copie": 1,
-  "revision": 1
+  "revision": 1,
+  "monoculture": false
  },
  {
   "code_museofile": "M0736",
@@ -7863,7 +8237,8 @@
    0
   ],
   "copie": 2,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0742",
@@ -7884,7 +8259,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0747",
@@ -7905,7 +8281,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0227",
@@ -7926,7 +8303,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0231",
@@ -7947,7 +8325,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0186",
@@ -7968,7 +8347,8 @@
    0
   ],
   "copie": 1,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0197",
@@ -7989,7 +8369,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0202",
@@ -8010,7 +8391,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0800",
@@ -8031,7 +8413,8 @@
    0
   ],
   "copie": 0,
-  "revision": 1
+  "revision": 1,
+  "monoculture": false
  },
  {
   "code_museofile": "M0807",
@@ -8052,7 +8435,8 @@
    0
   ],
   "copie": 61,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0808",
@@ -8073,7 +8457,8 @@
    0
   ],
   "copie": 21,
-  "revision": 1
+  "revision": 1,
+  "monoculture": false
  },
  {
   "code_museofile": "M0821",
@@ -8094,7 +8479,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0822",
@@ -8115,7 +8501,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0238",
@@ -8136,7 +8523,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0239",
@@ -8157,7 +8545,8 @@
    0
   ],
   "copie": 2,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0241",
@@ -8178,7 +8567,8 @@
    0
   ],
   "copie": 3,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0765",
@@ -8199,7 +8589,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0422",
@@ -8220,7 +8611,8 @@
    0
   ],
   "copie": 1,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0423",
@@ -8241,7 +8633,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0434",
@@ -8262,7 +8655,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0436",
@@ -8283,7 +8677,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0842",
@@ -8304,7 +8699,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0846",
@@ -8325,7 +8721,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0847",
@@ -8346,7 +8743,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0848",
@@ -8367,7 +8765,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0854",
@@ -8388,7 +8787,8 @@
    0
   ],
   "copie": 3,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0856",
@@ -8409,7 +8809,8 @@
    0
   ],
   "copie": 0,
-  "revision": 3
+  "revision": 3,
+  "monoculture": false
  },
  {
   "code_museofile": "M0857",
@@ -8430,7 +8831,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0858",
@@ -8451,7 +8853,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0859",
@@ -8472,7 +8875,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0861",
@@ -8493,7 +8897,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0863",
@@ -8514,7 +8919,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0778",
@@ -8535,7 +8941,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0782",
@@ -8556,7 +8963,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0783",
@@ -8577,7 +8985,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0787",
@@ -8598,7 +9007,8 @@
    0
   ],
   "copie": 1,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0177",
@@ -8619,7 +9029,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0877",
@@ -8640,7 +9051,8 @@
    0
   ],
   "copie": 3,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0881",
@@ -8661,7 +9073,8 @@
    0
   ],
   "copie": 0,
-  "revision": 1
+  "revision": 1,
+  "monoculture": false
  },
  {
   "code_museofile": "M0883",
@@ -8682,7 +9095,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0884",
@@ -8703,7 +9117,8 @@
    0
   ],
   "copie": 4,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0885",
@@ -8724,7 +9139,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0888",
@@ -8745,7 +9161,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0891",
@@ -8766,7 +9183,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0892",
@@ -8787,7 +9205,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0893",
@@ -8808,7 +9227,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0895",
@@ -8829,7 +9249,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0898",
@@ -8850,7 +9271,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0900",
@@ -8871,7 +9293,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0825",
@@ -8892,7 +9315,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0830",
@@ -8913,7 +9337,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0836",
@@ -8934,7 +9359,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0841",
@@ -8955,7 +9381,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0561",
@@ -8976,7 +9403,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0564",
@@ -8997,7 +9425,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0515",
@@ -9018,7 +9447,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0276",
@@ -9039,7 +9469,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0281",
@@ -9060,7 +9491,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0282",
@@ -9081,7 +9513,8 @@
    0
   ],
   "copie": 39,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0287",
@@ -9102,7 +9535,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0291",
@@ -9123,7 +9557,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0292",
@@ -9144,7 +9579,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0296",
@@ -9165,7 +9601,8 @@
    0
   ],
   "copie": 1,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0301",
@@ -9186,7 +9623,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0302",
@@ -9207,7 +9645,8 @@
    0
   ],
   "copie": 4,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0518",
@@ -9228,7 +9667,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0519",
@@ -9249,7 +9689,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0873",
@@ -9270,7 +9711,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0875",
@@ -9291,7 +9733,8 @@
    0
   ],
   "copie": 2,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0946",
@@ -9312,7 +9755,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0956",
@@ -9333,7 +9777,8 @@
    0
   ],
   "copie": 20,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0959",
@@ -9354,7 +9799,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0962",
@@ -9375,7 +9821,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0986",
@@ -9396,7 +9843,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0143",
@@ -9417,7 +9865,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M09020",
@@ -9438,7 +9887,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0309",
@@ -9459,7 +9909,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0321",
@@ -9480,7 +9931,8 @@
    0
   ],
   "copie": 4,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0324",
@@ -9501,7 +9953,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0334",
@@ -9522,7 +9975,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0337",
@@ -9543,7 +9997,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0409",
@@ -9564,7 +10019,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0420",
@@ -9585,7 +10041,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0867",
@@ -9606,7 +10063,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0553",
@@ -9627,7 +10085,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M1036",
@@ -9648,7 +10107,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M1045",
@@ -9669,7 +10129,8 @@
    0
   ],
   "copie": 1,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M1047",
@@ -9690,7 +10151,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M1051",
@@ -9711,7 +10173,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M1052",
@@ -9732,7 +10195,8 @@
    0
   ],
   "copie": 1,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M1057",
@@ -9753,7 +10217,8 @@
    0
   ],
   "copie": 4,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M1063",
@@ -9774,7 +10239,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0918",
@@ -9795,7 +10261,8 @@
    0
   ],
   "copie": 1,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0920",
@@ -9816,7 +10283,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0921",
@@ -9837,7 +10305,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0927",
@@ -9858,7 +10327,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0931",
@@ -9879,7 +10349,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0937",
@@ -9900,7 +10371,8 @@
    0
   ],
   "copie": 1,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0941",
@@ -9921,7 +10393,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0943",
@@ -9942,7 +10415,8 @@
    0
   ],
   "copie": 1,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0945",
@@ -9963,7 +10437,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0374",
@@ -9984,7 +10459,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0377",
@@ -10005,7 +10481,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0379",
@@ -10026,7 +10503,8 @@
    0
   ],
   "copie": 4,
-  "revision": 2
+  "revision": 2,
+  "monoculture": false
  },
  {
   "code_museofile": "M0380",
@@ -10047,7 +10525,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0384",
@@ -10068,7 +10547,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0389",
@@ -10089,7 +10569,8 @@
    0
   ],
   "copie": 2,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0396",
@@ -10110,7 +10591,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0398",
@@ -10131,7 +10613,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0399",
@@ -10152,7 +10635,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0166",
@@ -10173,7 +10657,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0168",
@@ -10194,7 +10679,8 @@
    0
   ],
   "copie": 19,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0169",
@@ -10215,7 +10701,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0988",
@@ -10236,7 +10723,8 @@
    0
   ],
   "copie": 0,
-  "revision": 2
+  "revision": 2,
+  "monoculture": false
  },
  {
   "code_museofile": "M0991",
@@ -10257,7 +10745,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M1014",
@@ -10278,7 +10767,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M1032",
@@ -10299,7 +10789,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M1098",
@@ -10320,7 +10811,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M1099",
@@ -10341,7 +10833,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M1100",
@@ -10359,7 +10852,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M1101",
@@ -10380,7 +10874,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M1102",
@@ -10401,7 +10896,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M1103",
@@ -10422,7 +10918,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M1108",
@@ -10443,7 +10940,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M1109",
@@ -10464,7 +10962,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M1113",
@@ -10485,7 +10984,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M1114",
@@ -10506,7 +11006,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M1115",
@@ -10527,7 +11028,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M1116",
@@ -10548,7 +11050,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M1065",
@@ -10569,7 +11072,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0362",
@@ -10590,7 +11094,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0363",
@@ -10611,7 +11116,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0364",
@@ -10632,7 +11138,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M1156",
@@ -10653,7 +11160,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M1169",
@@ -10674,7 +11182,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M1171",
@@ -10695,7 +11204,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M1180",
@@ -10716,7 +11226,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M1184",
@@ -10737,7 +11248,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M1195",
@@ -10758,7 +11270,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M1205",
@@ -10779,7 +11292,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M1208",
@@ -10800,7 +11314,8 @@
    0
   ],
   "copie": 1,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M1213",
@@ -10821,7 +11336,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0120",
@@ -10842,7 +11358,8 @@
    0
   ],
   "copie": 4,
-  "revision": 1
+  "revision": 1,
+  "monoculture": false
  },
  {
   "code_museofile": "M0123",
@@ -10863,7 +11380,8 @@
    0
   ],
   "copie": 0,
-  "revision": 4
+  "revision": 4,
+  "monoculture": false
  },
  {
   "code_museofile": "M0127",
@@ -10884,7 +11402,8 @@
    0
   ],
   "copie": 0,
-  "revision": 1
+  "revision": 1,
+  "monoculture": false
  },
  {
   "code_museofile": "M1075",
@@ -10905,7 +11424,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M1076",
@@ -10926,7 +11446,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M1088",
@@ -10947,7 +11468,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M1092",
@@ -10968,7 +11490,8 @@
    0
   ],
   "copie": 2,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0361",
@@ -10989,7 +11512,8 @@
    0
   ],
   "copie": 1,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M5015",
@@ -11010,7 +11534,8 @@
    0
   ],
   "copie": 3,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M5020",
@@ -11028,7 +11553,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0029",
@@ -11049,7 +11575,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0037",
@@ -11070,7 +11597,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0047",
@@ -11091,7 +11619,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0057",
@@ -11112,7 +11641,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0067",
@@ -11133,7 +11663,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M5024",
@@ -11154,7 +11685,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M5025",
@@ -11175,7 +11707,8 @@
    0
   ],
   "copie": 4,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "X0000",
@@ -11193,7 +11726,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "m5077",
@@ -11211,7 +11745,8 @@
    0
   ],
   "copie": 1,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0008",
@@ -11232,7 +11767,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M1121",
@@ -11253,7 +11789,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M5050",
@@ -11274,7 +11811,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M7048",
@@ -11295,7 +11833,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M5067",
@@ -11316,7 +11855,8 @@
    0
   ],
   "copie": 1,
-  "revision": 1
+  "revision": 1,
+  "monoculture": false
  },
  {
   "code_museofile": "M5028",
@@ -11337,7 +11877,8 @@
    0
   ],
   "copie": 50,
-  "revision": 17
+  "revision": 17,
+  "monoculture": false
  },
  {
   "code_museofile": "M5029",
@@ -11358,7 +11899,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M5043",
@@ -11379,7 +11921,8 @@
    0
   ],
   "copie": 1,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M5014",
@@ -11400,7 +11943,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0133",
@@ -11421,7 +11965,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0136",
@@ -11442,7 +11987,8 @@
    0
   ],
   "copie": 1,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M5004",
@@ -11463,7 +12009,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M7001",
@@ -11484,7 +12031,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M7013",
@@ -11505,7 +12053,8 @@
    0
   ],
   "copie": 1,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M7038",
@@ -11526,7 +12075,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M7042",
@@ -11547,7 +12097,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0342",
@@ -11568,7 +12119,8 @@
    0
   ],
   "copie": 1,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0346",
@@ -11589,7 +12141,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0351",
@@ -11610,7 +12163,8 @@
    0
   ],
   "copie": 0,
-  "revision": 0
+  "revision": 0,
+  "monoculture": false
  },
  {
   "code_museofile": "M0357",
@@ -11631,6 +12185,7 @@
    0
   ],
   "copie": 0,
-  "revision": 3
+  "revision": 3,
+  "monoculture": false
  }
 ]

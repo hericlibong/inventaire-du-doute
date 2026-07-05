@@ -42,6 +42,17 @@ CODES_DOUTE = [c for codes in NIVEAUX.values() for c in codes]
 CODES_COPIE = [f.code for f in markers.FAMILLES if f.categorie == "copie"]
 CODES_REVISION = [f.code for f in markers.FAMILLES if f.categorie == "revision"]
 
+# Monoculture divulguée (décision utilisateur 2026-07-05) : le muséum d'histoire
+# naturelle de Nice concentre 23,6 % du doute national, tous « Barla (attribué
+# à) » — un artefact de catalogage. On ne l'exclut pas du chiffre vedette, on le
+# divulgue : un chiffre « hors ce cas » l'accompagne partout, et le musée est
+# marqué pour que la restitution puisse le signaler. Exception nommée et
+# documentée, pas un seuil automatique (voir docs/decisions.md).
+MONOCULTURE_CODE = "M7050"
+MONOCULTURE_LIBELLE = (
+    "Muséum d'histoire naturelle de Nice — planches de Barla (attribué à)"
+)
+
 COLONNES = [
     "Reference", "Auteur", "Precisions_sur_l_auteur", "Ancienne_attribution",
     "Ecole_pays", "Domaine", "Code_Museofile", "Nom_officiel_musee",
@@ -152,12 +163,21 @@ def main() -> None:
 
     # 2. niveaux (totaux globaux)
     doute_total = int((musees["niv1"] + musees["niv2"] + musees["niv3"]).sum())
+    ligne_mono = musees[musees["code"] == MONOCULTURE_CODE]
+    doute_mono = int(ligne_mono["doute"].sum())
     ecrire("niveaux.json", {
         "notices_total": total,
         "notices_avec_auteur": int(total_auteur),
         "doute_total": doute_total,
         "taux_doute_base": round(doute_total / total, 5),
         "taux_doute_avec_auteur": round(doute_total / total_auteur, 5),
+        "monoculture_divulguee": {
+            "code_museofile": MONOCULTURE_CODE,
+            "libelle": MONOCULTURE_LIBELLE,
+            "doute": doute_mono,
+            "part_du_doute_national": round(doute_mono / doute_total, 4),
+        },
+        "doute_hors_monoculture": doute_total - doute_mono,
         "niveaux": {
             "1": {"libelle": "Presque lui", "notices": int(musees["niv1"].sum())},
             "2": {"libelle": "Autour de lui", "notices": int(musees["niv2"].sum())},
@@ -188,6 +208,7 @@ def main() -> None:
             "niveaux": [int(r["niv1"]), int(r["niv2"]), int(r["niv3"])],
             "copie": int(r["copie"]),
             "revision": int(r["revision"]),
+            "monoculture": r["code"] == MONOCULTURE_CODE,
         })
     ecrire("musees.json", liste_musees)
 

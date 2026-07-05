@@ -4,6 +4,13 @@
  "doute_total": 24507,
  "taux_doute_base": 0.02394,
  "taux_doute_avec_auteur": 0.02911,
+ "monoculture_divulguee": {
+  "code_museofile": "M7050",
+  "libelle": "Muséum d'histoire naturelle de Nice — planches de Barla (attribué à)",
+  "doute": 5791,
+  "part_du_doute_national": 0.2363
+ },
+ "doute_hors_monoculture": 18716,
  "niveaux": {
   "1": {
    "libelle": "Presque lui",

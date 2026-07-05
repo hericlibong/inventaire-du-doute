@@ -2,6 +2,19 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-05 — Traitement de la monoculture Barla/Nice (décision utilisateur, P2-T3)
+
+Le muséum d'histoire naturelle de Nice (M7050) concentre 5 791 doutes, tous
+« Barla (attribué à) » — 23,6 % du doute national, un artefact de catalogage.
+**Décision : garder 24 507 comme chiffre vedette (rien n'est caché) ET
+divulguer partout le « hors ce cas : 18 716 ».**
+Mise en œuvre (src/build_exports.py, exception nommée, pas de seuil auto) :
+- `niveaux.json` porte `monoculture_divulguee` + `doute_hors_monoculture` ;
+- le musée concerné porte un drapeau `monoculture: true` dans `musees.json` ;
+- **règle de restitution : la carte se fonde sur `part_doute`, jamais sur le
+  doute brut** — aucun musée ne doit écraser les autres ;
+- Barla sera un cas raconté en P2-T4 (le geste de catalogage en série).
+
 ## 2026-07-05 — Typologie du doute validée + règles de non-addition (décisions utilisateur)
 
 **Règles de non-addition (P2-T1)** : le chiffre vedette reste le doute seul ;

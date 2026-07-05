@@ -109,7 +109,9 @@ Chaque ⏸ est un point de validation utilisateur : on s'y arrête.
 - [x] Partition des niveaux vérifiée (20 014 + 3 537 + 956 = 24 507)
 - [x] Deux découvertes remontées (docs/donnees.md) : monoculture Barla/Nice
       (23,6 % du doute), Alençon absent des données (109 notices, 0 doute)
-- [ ] ⏸ Validation : structure des JSON + décision sur la monoculture
+- [x] ⏸ Validation : structure validée + **monoculture divulguée** (chiffre
+      vedette 24 507 gardé, « hors cas Barla : 18 716 » intégré aux exports,
+      drapeau musée, carte sur part_doute) — 2026-07-05
 
 ### P2-T4 — Cas racontables
 - [ ] Fiches des cas d'ouverture (dont Alençon, notice publique uniquement)
