@@ -2,6 +2,16 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-05 — GO : phase 1 close, ouverture de la phase 2
+
+- GO validé par l'utilisateur : la phase 1 (test go/no-go) est close.
+- À sa demande, classification des familles consignée en document de
+  référence : `docs/familles.md` (14 familles, 4 catégories, sens des
+  formules, volumes v1, fiabilités mesurées par les deux contrôles humains).
+  Rôle déterminant attendu pour la typologie (P2-T2) et les visualisations.
+- Phase 2 détaillée dans la roadmap : P2-T1 recouvrements, P2-T2 typologie,
+  P2-T3 pipeline JSON, P2-T4 cas racontables. Première tâche : P2-T1.
+
 ## 2026-07-05 — T5bis : bilan du mini-contrôle → recommandation GO
 
 - Mini-lot annoté récupéré (onglet « echantillon_recheck » du même classeur

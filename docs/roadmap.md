@@ -81,17 +81,32 @@ Chaque ⏸ est un point de validation utilisateur : on s'y arrête.
       conservateur / 3,3 % ajusté** → sous le seuil des 10 % ;
       exclusion « Atelier de X » confirmée 15/15 ; restes localisés
       (atelier 30 % famille, école 13 %) à traiter en phase 2 (typologie)
-- [ ] ⏸ Validation : décision de phase — recommandation **GO**
+- [x] ⏸ Validation : **GO prononcé le 2026-07-05 — PHASE 1 CLOSE** ✅
+      Classification des familles consignée dans docs/familles.md
+      (document de référence pour la typologie et les visualisations)
 
-## Phase 2 — Typologie et pipeline consolidé (esquisse, dépend du go/no-go)
+## Phase 2 — Typologie et pipeline consolidé (EN COURS depuis le 2026-07-05)
 
-- [ ] Chiffrer les recouvrements entre les trois familles (doute / d'après /
-      ancienne attribution) : une même notice peut porter plusieurs marqueurs,
-      ne jamais publier des chiffres qui s'additionnent à tort (décision 2026-07-03)
-- [ ] Classification des formules par niveau de doute (échelle inspirée du décret Marcus)
-- [ ] Pipeline reproductible CSV → JSON légers agrégés (par musée avec total versé,
-      par formule, par domaine)
-- [ ] Fiches des cas racontables (dont Alençon, notice publique uniquement)
+### P2-T1 — Recouvrements entre catégories
+- [ ] Chiffrer les recouvrements doute / copie / révision (une notice peut
+      porter plusieurs marqueurs — décision 2026-07-03 : jamais de chiffres
+      qui s'additionnent à tort) + recouvrements entre familles de doute
+- [ ] ⏸ Validation : chiffres présentés, règles de non-addition arrêtées
+
+### P2-T2 — Typologie du doute
+- [ ] Proposition d'échelle du doute (inspirée du décret Marcus), à partir de
+      docs/familles.md ; y trancher : atelier restreint ou non aux beaux-arts,
+      écoles-lieux consacrées (Fontainebleau, Paris)
+- [ ] ⏸ Validation : l'échelle est un choix éditorial — décision utilisateur
+
+### P2-T3 — Pipeline d'exports pour la restitution
+- [ ] CSV → JSON légers agrégés : par musée (toujours avec total versé),
+      par famille/niveau, par domaine, par département/région
+- [ ] ⏸ Validation : structure des JSON revue avant industrialisation
+
+### P2-T4 — Cas racontables
+- [ ] Fiches des cas d'ouverture (dont Alençon, notice publique uniquement)
+- [ ] ⏸ Validation : choix des cas retenus pour le récit
 
 ## Phase 3 — Restitution (esquisse, forme arrêtée après la phase 1)
 
