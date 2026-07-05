@@ -2,6 +2,17 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-05 — Ouverture du récit : Alençon en incarnation de la limite (décision utilisateur, P2-T4)
+
+Le cas fondateur (Alençon) est absent de Joconde : le musée n'a versé que sa
+dentelle (109 notices), pas ses beaux-arts — vérifié et confirmé par l'API du
+ministère (docs/donnees.md). **Décision : en faire l'ouverture, assumée comme
+telle** — « le cas qui a inspiré ce projet est lui-même invisible dans
+l'inventaire national ». On l'illustre via la base régionale de Normandie
+(citée comme source secondaire d'illustration, jamais de comptage — la source
+canonique reste Joconde). Alençon devient la démonstration vivante de la limite
+« les chiffres ne reflètent que ce qui a été versé ».
+
 ## 2026-07-05 — Traitement de la monoculture Barla/Nice (décision utilisateur, P2-T3)
 
 Le muséum d'histoire naturelle de Nice (M7050) concentre 5 791 doutes, tous
