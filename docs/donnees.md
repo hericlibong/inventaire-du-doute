@@ -230,14 +230,33 @@ Hors cas Barla, le doute national tombe à **~18 716 notices**.
 Enjeu : ni la carte ni aucun classement ne doivent laisser un musée écraser
 tous les autres. Décision utilisateur requise (voir docs/decisions.md).
 
-### 2. Le cas Alençon est absent des données ouvertes
+### 2. Le cas Alençon est absent des données ouvertes — cause vérifiée (2026-07-05)
 
 Le musée des beaux-arts et de la dentelle d'Alençon (M0694), point d'entrée
-narratif du projet : **109 notices versées, 0 doute détecté**. Les tableaux
-liés au Radeau de la Méduse ne sont pas (ou pas détectablement) dans Joconde.
-Ce n'est pas un échec — c'est **l'illustration vivante de la limite centrale
-du projet** : les chiffres ne reflètent que ce qui a été versé, et Alençon n'a
-versé que 109 notices. À exploiter tel quel dans le récit (P2-T4).
+narratif du projet : **109 notices versées, 0 doute détecté**.
+
+**Cause établie par examen des données** : le musée n'a versé dans Joconde que
+sa collection de **dentelle** — les 109 notices sont à ~95 % dentellerie /
+costume / textile (titres réels : « Mouchoir », « Dessin pour feuille
+d'éventail »). **Aucun tableau.** Ses peintures — dont la « tête de gorgone »
+et « le naufragé » liées au cycle du Radeau — existent dans la **base régionale
+des musées de Normandie** (`collections.musees-normandie.fr`, base distincte),
+non reversée au niveau national.
+
+Recoupements confirmant l'absence :
+- sur les **525 notices Joconde mentionnant Géricault**, aucune à Alençon ;
+- sur **toutes** les notices au titre « gorgone/naufragé/méduse/radeau »,
+  aucune à Alençon.
+
+Correction d'une formulation antérieure trop rapide (« pas dans les données ») :
+la cause exacte est un **versement partiel** (dentelle versée, beaux-arts non).
+C'est **l'illustration vivante de la limite centrale du projet** : le cas
+fondateur est lui-même invisible dans l'open data nationale.
+
+Note utile pour le récit : le doute « à la Géricault » EST réel et détectable
+ailleurs dans Joconde — ex. Besançon (M0332), `Géricault (genre de)` sur un
+« Naufrage », plus de vraies études pour le Radeau. Le phénomène existe ; c'est
+Alençon qui manque, faute de versement.
 
 ## P2-T1 — Recouvrements entre catégories (2026-07-05)
 
