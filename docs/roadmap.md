@@ -123,7 +123,7 @@ Sous-étapes (cocher au fil de l'eau, commit après chaque cas) :
 - [x] P2-T4d — Cas « Besançon, le vrai doute Géricault » (genre de + études Radeau)
 - [x] P2-T4e — Cas « doute + révision » (l'objet le plus riche, P2-T1)
 - [ ] P2-T4f — 1 cas illustratif par niveau de l'échelle (si utile)
-- [ ] P2-T4g — Assemblage cas.json + relecture docs/cas.md
+- [x] P2-T4g — Assemblage cas.json + relecture docs/cas.md
 - [ ] ⏸ Validation : choix et formulation des cas retenus
 
 ## Phase 3 — Restitution (esquisse, forme arrêtée après la phase 1)

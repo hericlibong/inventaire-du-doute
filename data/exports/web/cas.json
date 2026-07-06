@@ -1,0 +1,100 @@
+[
+ {
+  "id": "alencon_absent",
+  "ordre": 1,
+  "titre_court": "Alençon, l'absent",
+  "angle": "Le cas qui a inspiré ce projet est invisible dans l'inventaire national : Alençon n'a versé que sa dentelle.",
+  "statut_donnee": "absent_de_joconde",
+  "musee": "musée des beaux-arts et de la dentelle",
+  "ville": "Alençon",
+  "notices": [],
+  "liens_externes": [
+   {
+    "libelle": "« tête de gorgone » (base régionale Normandie)",
+    "url": "https://collections.musees-normandie.fr/ark:/16418/mbd1160142"
+   },
+   {
+    "libelle": "« le naufragé » (base régionale Normandie)",
+    "url": "https://collections.musees-normandie.fr/ark:/16418/mbd1160140"
+   }
+  ]
+ },
+ {
+  "id": "nice_barla",
+  "ordre": 2,
+  "titre_court": "Nice, le doute industriel",
+  "angle": "5 791 notices « attribué à », un seul dessinateur (Barla) : 23,6 % du doute national tient à un geste de catalogage en série.",
+  "statut_donnee": "joconde",
+  "musee": "muséum d'histoire naturelle",
+  "ville": "Nice",
+  "notices": [
+   {
+    "reference": "70500001179",
+    "titre": "cnidaire",
+    "auteur": "Barla Jean-Baptiste (1817-1896) (attribué à)",
+    "ancienne_attribution": null,
+    "musee": "muséum d'histoire naturelle",
+    "ville": "Nice",
+    "lien_pop": "https://pop.culture.gouv.fr/notice/joconde/70500001179"
+   }
+  ]
+ },
+ {
+  "id": "besancon_gericault",
+  "ordre": 3,
+  "titre_court": "Besançon, le doute qui existe vraiment",
+  "angle": "Autour du Radeau de la Méduse, un même fonds montre toute l'échelle : « Géricault » d'un côté, « Géricault (attribué à) » de l'autre.",
+  "statut_donnee": "joconde",
+  "musee": "musée des beaux-arts et d'archéologie",
+  "ville": "Besançon",
+  "notices": [
+   {
+    "reference": "M0332014262",
+    "titre": "Deux études pour Le Radeau de la Méduse : homme nu tombant à la renverse (recto) ; étude d'homme allongé sur le ventre (verso)",
+    "auteur": "Géricault Théodore (1791-1824)",
+    "ancienne_attribution": null,
+    "musee": "musée des beaux-arts et d'archéologie",
+    "ville": "Besançon",
+    "lien_pop": "https://pop.culture.gouv.fr/notice/joconde/M0332014262"
+   },
+   {
+    "reference": "M0332013239",
+    "titre": "Etude d'un cheval mort",
+    "auteur": "Géricault Théodore (1791-1824) (attribué à)",
+    "ancienne_attribution": null,
+    "musee": "musée des beaux-arts et d'archéologie",
+    "ville": "Besançon",
+    "lien_pop": "https://pop.culture.gouv.fr/notice/joconde/M0332013239"
+   }
+  ]
+ },
+ {
+  "id": "louvre_clouet",
+  "ordre": 4,
+  "titre_court": "Le Louvre, l'archéologie d'un doute",
+  "angle": "Le champ « ancienne attribution » se lit comme un journal d'avis savants datés : l'attribution est une histoire, pas un verdict.",
+  "statut_donnee": "joconde",
+  "musee": "musée du Louvre",
+  "ville": "Paris",
+  "notices": [
+   {
+    "reference": "000PE000505",
+    "titre": "Pierre Forget, seigneur de Fresnes (1544-1610)",
+    "auteur": "CLOUET François (atelier)",
+    "ancienne_attribution": "CLOUET FRANCOIS (attribué en 1904) ; DECOURT LE PRESUME JEAN (DIMIER II)",
+    "musee": "musée du Louvre",
+    "ville": "Paris",
+    "lien_pop": "https://pop.culture.gouv.fr/notice/joconde/000PE000505"
+   },
+   {
+    "reference": "000PE000509",
+    "titre": "Portrait de femme inconnue",
+    "auteur": "CLOUET François (atelier)",
+    "ancienne_attribution": "ECOLE FRANCAISE 2E MOITIE 16E SIECLE (BRIERE) ; ANONYME LECURIEUX (DIMIER II)",
+    "musee": "musée du Louvre",
+    "ville": "Paris",
+    "lien_pop": "https://pop.culture.gouv.fr/notice/joconde/000PE000509"
+   }
+  ]
+ }
+]
