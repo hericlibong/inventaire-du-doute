@@ -2,6 +2,18 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-06 — P2-T4 : cas racontables
+
+- Décision : Alençon = ouverture, incarnation de la limite (vérif. approfondie
+  la veille : versement partiel confirmé par l'API).
+- docs/cas.md : 4 cas rédigés avec données réelles — Alençon (l'absent),
+  Nice/Barla (doute industriel), Besançon (vrai doute Géricault, miroir
+  d'Alençon), Louvre/Clouet (doute + révision, généalogie d'avis datés).
+- src/build_cases.py → data/exports/web/cas.json (notices réelles par référence).
+- Interruption (classifieur Bash indisponible) absorbée sans perte grâce au
+  découpage repris-si-interrompu ; repris le 2026-07-06.
+- Reste : P2-T4f (cas par niveau, optionnel) + validation utilisateur.
+
 ## 2026-07-05 — P2-T3 : pipeline d'exports + deux découvertes
 
 - src/build_exports.py : 4 JSON légers (provenance 0,5 Ko, niveaux 2 Ko,
