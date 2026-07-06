@@ -2,6 +2,19 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-06 — Direction de restitution (décision utilisateur, phase 3)
+
+**Application interactive soutenue par les données, matérialisée par une
+dataviz ou une série de dataviz.** Deux refus explicites :
+- **pas de scrollytelling / récit défilant** (jugé bancal, nécessiterait des
+  enquêtes ; éventuellement plus tard, pas maintenant) ;
+- **Alençon n'est pas le fil rouge ni le point de départ** — seulement
+  l'étincelle du projet, noté, non central. Ne plus le placer au centre.
+
+Corrige l'orientation « récit guidé » de docs/phase3-options.md : la colonne
+vertébrale n'est PAS narrative mais l'interaction avec les données elles-mêmes.
+Reste à définir la ou les dataviz (en cours).
+
 ## 2026-07-05 — Ouverture du récit : Alençon en incarnation de la limite (décision utilisateur, P2-T4)
 
 Le cas fondateur (Alençon) est absent de Joconde : le musée n'a versé que sa
