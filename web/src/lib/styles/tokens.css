@@ -1,0 +1,32 @@
+/*
+ * Tokens de style partagés — L'inventaire du doute.
+ * Un seul endroit pour les couleurs, notamment l'échelle du doute à 3 niveaux
+ * (voir docs/typologie.md). Les briques consomment ces variables, jamais des
+ * valeurs en dur, pour que l'échelle reste cohérente d'une dataviz à l'autre.
+ */
+
+:root {
+	/* Fond et encre */
+	--couleur-fond: #f7f4ef;
+	--couleur-encre: #1c1a17;
+	--couleur-encre-douce: #5c554c;
+	--couleur-trait: #ddd6ca;
+
+	/* Accent éditorial */
+	--couleur-accent: #7a4a2b;
+
+	/* Échelle du doute — du plus proche au plus lointain de l'auteur.
+	   Niveau 1 « Presque lui », 2 « Autour de lui », 3 « Son style, sans lui ». */
+	--niveau-1: #b8551f;
+	--niveau-2: #d98a3d;
+	--niveau-3: #e8c07a;
+
+	/* Catégories voisines (jamais additionnées au doute) */
+	--couleur-copie: #4a6b7a;
+	--couleur-revision: #6b5b7a;
+
+	/* Typographie et rythme */
+	--police-titre: Georgia, 'Times New Roman', serif;
+	--police-texte: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+	--largeur-max: 60rem;
+}

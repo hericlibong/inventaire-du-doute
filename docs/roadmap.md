@@ -127,9 +127,97 @@ Sous-étapes (cocher au fil de l'eau, commit après chaque cas) :
 - [x] P2-T4g — Assemblage cas.json + relecture docs/cas.md
 - [x] ⏸ Validation : **4 cas validés le 2026-07-06 — PHASE 2 CLOSE** ✅
 
-## Phase 3 — Restitution (esquisse, forme arrêtée après la phase 1)
+## Phase 3 — Restitution (EN COURS depuis le 2026-07-06)
 
-- [ ] Forme retenue : carte D3.js + récit guidé pressenti (coordonnées disponibles)
-- [ ] Page « méthode et limites » publiée au même rang que le récit
-- [ ] Front consommant les JSON exportés (statique si possible, Flask/FastAPI
-      seulement si besoin serveur avéré)
+Direction arrêtée (docs/decisions.md, 2026-07-06) : **application interactive
+portée par la dataviz**, PAS de scrollytelling, Alençon non central. Plusieurs
+dataviz d'égale importance, chacune une exploration différente. Front statique
+consommant les JSON exportés (pas de serveur sauf besoin avéré). Page « méthode
+et limites » au même rang que le reste.
+
+### P3-T0 — Socle SvelteKit (fait une seule fois)
+
+Stack arrêtée : **SvelteKit en build statique** (`adapter-static`), front isolé
+dans un dossier dédié, consommant les JSON de `data/exports/web/` (décision du
+2026-07-07, docs/decisions.md). Aucun serveur applicatif.
+
+Sous-étapes (cocher au fil de l'eau) :
+- [x] Échafaudage SvelteKit dans `web/` (adapter static câblé dans `vite.config.js`,
+      `prerender` à la racine) ; `web/node_modules/` ignoré par git
+- [x] Accès aux JSON : `npm run sync:data` (web/scripts/sync-data.js) copie
+      `data/exports/web/*.json` → `web/static/data/` (servis en `/data/…`),
+      dossier ignoré par git car généré (voir donnees.md)
+- [x] Coquille partagée : `+layout.svelte` (en-tête, nav « une brique = une route »,
+      briques à venir en placeholder), tokens de style dans `lib/styles/tokens.css`
+      (couleurs des 3 niveaux)
+- [x] « Hello data » : l'accueil pré-rend le chiffre vedette réel (24 507, hors
+      monoculture 18 716) depuis `niveaux.json` — `npm run build` OK, HTML statique
+      vérifié dans `web/build/`
+- [x] ⏸ **Validation du socle le 2026-07-07** — validé sur le fond ; réserve
+      indicative sur le style (« trop Claude normé », identité visuelle à
+      retravailler après les dataviz, voir decisions.md + mémoire)
+
+### P3-T1 — Entrée « par l'artiste » / « Les presque » (1re dataviz)
+
+- [x] Liste vedette V1 : critère « maître de référence + ≥ 20 doutes (hors
+      copie) », comptage canonique aligné sur markers.py (docs/decisions.md,
+      2026-07-07)
+- [x] Correction de repérage documentée (parenthèses vs champ entier ; écoles
+      nationales ; granularité du nom-pivot) — docs/donnees.md, 2026-07-07
+- [x] Désambiguïsation des familles (Fragonard = Jean-Honoré ; Bruegel/Cranach
+      l'Ancien retirés car < 20 une fois le maître isolé) → **27 maîtres**
+- [x] src/markers.py::famille_segment() + src/build_artistes.py →
+      data/exports/web/artistes.json (par maître : propre/doute/copie,
+      ventilation famille + niveau, musées, notices réelles POP)
+- [ ] ⏸ Réserve utilisateur : garder 27, ou réintégrer Bruegel/Cranach comme
+      « famille », ou échanger contre Jan Brueghel (~23)
+- [x] Front (route `/les-presque`) : fiche « presque » complète — échelle du
+      doute (composant `BarreNiveaux`), tableau des formules, copie en bande à
+      part, exemples avec liens POP ; liste des 27 maîtres filtrable. Build
+      statique vérifié (build/les-presque.html, données réelles pré-rendues)
+- [ ] Moteur de recherche sur **toute la base** (pas seulement les 27 vedettes) :
+      dépend d'un export « tous les noms + comptages » qui n'existe pas encore
+      (à produire côté pipeline). Pour l'instant : filtre sur les 27 vedettes
+- [~] Galaxie (`GalaxieMaitre.svelte`) construite puis **ABANDONNÉE dans cette vue**
+      le 2026-07-08 (voir decisions.md) : encodage « 1 bulle = 1 famille » → schéma
+      moléculaire, pas une constellation ; n'apporte rien qu'une barre ne montre
+      mieux. Réserve : « vraie constellation » (1 point = 1 œuvre) à retenter un
+      jour sur **branche séparée**, hors de cette vue
+- [ ] Intro/onboarding du site à revoir au bilan : un visiteur lambda ne comprend
+      pas encore l'objectif ni le fonctionnement (voir mémoire feedback)
+- [x] Garde-fou éditorial en place : chapô « voici comment les musées nuancent
+      autour d'un nom », copie isolée comme « copies assumées », aucun « trésor caché »
+
+#### Réorientation « Les presque » — trois angles (décision 2026-07-08)
+
+Cible : par maître, trois vues complémentaires — **le quoi / le combien / le où**.
+Ordre de construction retenu : **barres → carte** (détail conservé tel quel).
+
+- [x] **Détail** — *le quoi* (existant) : formules, exemples POP, copies à part.
+      Conservé en l'état ; labels trop techniques à reformuler **plus tard** (non
+      prioritaire)
+- [ ] **① Barres horizontales** — *le combien* (remplace la galaxie) : une barre
+      par famille de doute, longueur ∝ notices, horizontales (libellés longs),
+      couleurs des 3 niveaux. **Aucune donnée nouvelle** (`familles[].notices`).
+      Retire la galaxie de la vue
+- [ ] **Palier données** : enrichir `src/build_artistes.py` pour exporter, par
+      maître, les **musées détenteurs d'œuvres douteuses + comptes** (le champ
+      `musees` actuel confond ferme/copie/doute — inexploitable pour la carte) ;
+      idéalement ventilation famille/niveau par musée
+- [ ] **② Carte par maître** — *le où* : **D3-geo auto-hébergé** (décidé
+      2026-07-08), GeoJSON France + départements en open data dans `static/`,
+      **aucune tuile externe**, pré-rendable. 1 point = 1 **musée détenteur**
+      (grain honnête : l'œuvre est localisée par son musée), taille ∝ nb d'œuvres
+      douteuses de ce maître ; survol = titre/musée/formule ; zoom léger (d3-zoom).
+      Change à chaque maître, jamais de carte globale. Coords musées à 98,7 %
+      (7/555 sans coord → note « N non localisées »)
+- [ ] Caveat page méthode : taille d'un point = nb d'œuvres douteuses **de ce
+      maître** dans ce musée, **jamais** une comparaison de catalogage entre musées
+
+### Briques suivantes (ordre à confirmer)
+
+- [ ] Le décodeur de l'échelle du doute (clé de lecture, consomme niveaux.json)
+- [ ] Les révisions « on a cru → aujourd'hui » (Ancienne_attribution)
+- [ ] La carte, qualifiée (part_doute, jamais brut ; monoculture signalée) —
+      chapitre, pas socle (docs/phase3-options.md)
+- [ ] Page « méthode et limites »

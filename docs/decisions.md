@@ -2,6 +2,179 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-08 — « Les presque » : galaxie abandonnée, barres + carte par maître (décision utilisateur)
+
+Refonte de la 1re dataviz après examen de la v1 (galaxie + détail) et du document
+`docs/dataviz-les-presque.md`.
+
+**Galaxie abandonnée dans cette vue.** L'encodage retenu était « 1 bulle = 1
+famille » (4-5 ronds par maître) : un schéma moléculaire, pas une constellation ;
+l'œil compare mal des aires de disques ; la vue n'apportait rien qu'une barre ne
+montre mieux. La « vraie constellation » (1 point = 1 œuvre) est **reportée en
+réserve, sur une branche séparée** — hors périmètre de cette vue.
+
+**Trois angles complémentaires par maître** (le quoi / le combien / le où) :
+1. **Détail** (existant) — formules, exemples POP, copies à part. Conservé ;
+   labels trop techniques à reformuler plus tard (non prioritaire).
+2. **Barres horizontales** (remplace la galaxie) — une barre par famille, longueur
+   ∝ notices. Montre « la forme du doute » propre à chaque maître. Aucune donnée
+   nouvelle requise.
+3. **Carte par maître** (nouveau) — voir ci-dessous.
+
+**Pourquoi la carte devient possible ici alors qu'une carte globale était exclue.**
+Une carte de tous les doutes (~18 000 points) était écartée : trop dense et
+malhonnête (inviterait à comparer les musées sur des comptages bruts, interdit vu
+les versements inégaux). Une carte **par maître** lève le piège : quelques dizaines
+de points, et on ne compare plus les musées entre eux — on montre **où se disperse
+le doute autour d'un seul nom**. Angle neuf : la géographie du doute d'un maître.
+
+**Grain honnête retenu (constaté sur les données) :** une notice n'a pas de
+coordonnées propres, elle est localisée par son **musée détenteur**
+(`Code_Museofile` → coord dans `musees.json`, couverture 98,7 %). Donc **1 point =
+1 musée**, taille ∝ nb d'œuvres douteuses de ce maître. Mesure de dispersion :
+~1 doute/musée pour la plupart (doute très semé), seule concentration nette = Le
+Primatice (Fontainebleau). Caveat page méthode : la taille reflète le nombre
+d'œuvres douteuses **de ce maître** dans ce musée, jamais une comparaison de
+catalogage entre musées.
+
+**Dépendance données à traiter avant la carte :** le champ `musees` d'`artistes.json`
+confond ferme/copie/doute (« Raphaël 108 musées » pour 28 doutes) — inexploitable.
+Il faut enrichir `build_artistes.py` : par maître, la liste des **musées du doute
++ comptes**.
+
+**Technique de carte : D3-geo auto-hébergé** (arbitrage utilisateur 2026-07-08).
+GeoJSON France + départements en open data (licence ouverte, cité comme source
+secondaire d'affichage, jamais de comptage), dans `static/`, rendu SVG dans Svelte,
+**aucune tuile externe / aucun serveur**, pré-rendable. Écartés : Leaflet + tuiles
+OSM (dépendance live à un service tiers, hors esprit « source unique », réactive le
+réflexe de comparer les lieux) ; Leaflet sans tuiles (bancal, D3 fait mieux).
+
+**Ordre de construction retenu : barres → (palier données) → carte** (arbitrage
+utilisateur). Les barres d'abord car sans donnée nouvelle et retirent la galaxie
+tout de suite ; la carte ensuite car elle porte la dépendance données + le nouvel
+outil. Détail conservé en l'état.
+
+## 2026-07-07 — Style du front : rejet du look générique (remarque utilisateur, indicative)
+
+Socle P3-T0 validé sur le fond. **Remarque à titre indicatif, pas un arbitrage à
+appliquer maintenant** : l'utilisateur ne veut pas de la présentation générique
+que produit Claude par défaut (« toutes les applications créées par Claude ont la
+même allure »). Ce n'est pas le sujet au stade actuel (on construit les dataviz),
+mais c'est consigné pour plus tard.
+
+Conséquence pratique : les tokens et la mise en page actuels
+(`web/src/lib/styles/tokens.css`, coquille) sont **provisoires, fonctionnels**,
+non une direction artistique. Quand le style deviendra le sujet (après les
+dataviz), proposer une **identité visuelle affirmée et singulière**, pas les
+réglages par défaut. Ne pas investir dans le polish visuel d'ici là.
+
+## 2026-07-07 — Stack du front : SvelteKit retenu (décision utilisateur, phase 3)
+
+Le choix de socle laissé en suspens à P3-T0 (SvelteKit recommandé vs vanilla +
+Vite) est tranché : **SvelteKit**, en **build statique** (`adapter-static`,
+`prerender`). Aucun serveur applicatif : le front reste un site statique qui
+consomme les JSON déjà exportés dans `data/exports/web/` (règle non négociable
+« jamais la base entière dans l'application »).
+
+Pourquoi SvelteKit plutôt que du vanilla + Vite :
+- **Le routage intégré sert directement la structure éditoriale.** Chaque brique
+  (« Les presque », le décodeur de l'échelle, les révisions, la carte) et la page
+  « méthode et limites » deviennent des routes de même rang — la règle « méthode
+  au même rang que le reste » se lit dans l'arborescence du code.
+- **Composants + coquille partagée** (en-tête, navigation entre briques, tokens
+  de style des 3 niveaux) sans réinventer un système de gabarits à la main.
+- **Cohabite bien avec D3.js** : Svelte gère le DOM et l'état, D3 les échelles et
+  la géométrie ; pas de conflit de propriété du DOM si on laisse D3 calculer et
+  Svelte rendre.
+- **Reste lisible pour un développeur intermédiaire** (pièce de portfolio) : la
+  syntaxe Svelte est proche du HTML/CSS/JS, moins de cérémonie que React.
+
+Coût assumé : une chaîne de build Node à côté du pipeline Python (`uv`). Front
+isolé dans un dossier dédié (voir roadmap P3-T0). Les JSON restent la seule
+frontière entre le back Python et le front — aucun couplage au-delà.
+
+## 2026-07-07 — Export « Les presque » : désambiguïsation → liste vedette à 27 (mise en œuvre)
+
+Formalisation de l'entrée « par l'artiste » :
+- `src/markers.py` : ajout d'une fonction publique `famille_segment(segment,
+  en_beaux_arts)` — catégorise **un** segment du champ Auteur (copie > écarté >
+  doute > propre) en réutilisant les motifs du lexique v2, sans diverger.
+  35 tests toujours verts.
+- `src/build_artistes.py` → `data/exports/web/artistes.json` (44 Ko) : par maître,
+  `propre` / `doute` / `copie`, ventilation par famille **et** par niveau (échelle
+  P2-T2), nombre de musées, et une notice réelle par famille (lien POP).
+
+**Désambiguïsation des trois familles †** (annoncée « avant l'export »), faite
+sur les nom-pivots réels :
+- **Fragonard** : Jean-Honoré isolé = **31** doutes (son fils Alexandre-Évariste
+  = 3) → conservé.
+- **Cranach l'Ancien** (Lucas le Vieux + l'Ancien) = **17** → sous 20 (les 30
+  incluaient le fils, Lucas le Jeune, 13) → **retiré**.
+- **Bruegel l'Ancien** (Pieter I + le Vieux) ≈ **15** → sous 20 (les 51 étaient
+  surtout **Jan** Brueghel, ~23, un autre homme) → **retiré**.
+
+**Conséquence : la liste vedette publiée passe de 29 à 27 maîtres.** Ce n'est pas
+une exception au critère mais le critère ≥ 20 appliqué au bon niveau (le maître
+isolé, pas la famille). Réserve laissée à l'utilisateur, sans arbitrage par
+défaut (on garde les 27) : réintégrer Bruegel/Cranach comme « famille » assumée,
+ou échanger « Bruegel l'Ancien » contre **Jan Brueghel** (~23, qualifie seul).
+
+## 2026-07-07 — Liste vedette V1 : 29 maîtres de référence (décision utilisateur, phase 3)
+
+Première brique de l'entrée « par l'artiste » (« Les presque ») : une **sélection
+vedette** de maîtres mis en avant sur la page, distincte du moteur de recherche
+(qui, lui, porte sur tous les noms de la base).
+
+**Critère unique retenu : maître de référence ET ≥ 20 notices de doute (hors copie).**
+Le doute n'est pas exigé pour la notoriété, mais il l'est pour la mise en avant
+vedette : sans ≥ 20 « presque », il n'y a pas de matière à montrer. La curation
+de notoriété est assumée et publiable (panthéon lisible, primitifs → modernes) ;
+le seuil de 20 la rend non arbitraire.
+
+**Comment le doute est compté (la fabrique du chiffre).** Comptage **par segment**
+du champ `Auteur` (séparateur `;`), rattaché au nom-pivot (parenthèses retirées,
+casse/accents normalisés), avec les **regex réelles de `markers.py` v2** :
+copie (« d'après ») l'emporte ; familles écartées (atelier-nom, école-lieu,
+atelier hors beaux-arts) exclues ; sinon doute si une famille de doute matche ;
+sinon propre. Deux corrections de repérage décisives par rapport aux sondes
+initiales (parenthèses seules) :
+- le doute est cherché dans **tout le segment**, parenthèses ou non — une sonde
+  « entre parenthèses seulement » **sous-comptait** (ex. Ingres : « attribué à »
+  souvent écrit hors parenthèses → 13 devient **204**) ;
+- les **écoles nationales** « (école allemande/flamande) » ne comptent pas
+  (nationalité, pas « école de X ») — la sonde initiale **sur-comptait**
+  (ex. Dürer : 161 devient **19**).
+
+**Les 29 maîtres retenus** (doute canonique) :
+Le Brun 310 · Le Primatice 269 · Ingres 204 · Rembrandt 187 · Michel-Ange 172 ·
+Rubens 121 · François Clouet 105 · Annibale Carracci 86 · Rodin 81 · Boucher 78 ·
+Andrea del Sarto 63 · Guido Reni 60 · Léonard de Vinci 56 · Le Tintoret 53 ·
+Poussin 52 · Simon Vouet 51 · Bruegel l'Ancien 51† · Greuze 49 · Van Dyck 46 ·
+Le Corrège 46 · Pierre Mignard 43 · Véronèse 41 · Hyacinthe Rigaud 41 ·
+Géricault 40 · Fragonard 37† · Cranach 30† · Raphaël 28 · Ribera 21 · Titien 20.
+
+**Exclusions assumées — maîtres de référence sous le seuil** (le critère fait loi,
+choix « A » de l'utilisateur) : Dürer 19, Delacroix 17, Watteau 17, Corot 16,
+Jean Clouet 15, Holbein 15, Botticelli 15, Murillo 14, Courbet 11, Millet 11,
+puis ≤ 9 (Fra Angelico, Van Eyck, Zurbarán, Mantegna, Giotto, Goya, Vélasquez,
+Fouquet, Georges de La Tour, Chardin, Le Caravage, Houdon, Cézanne). **Les
+modernes ne sont pas doutés** (Manet, Monet, Degas, Van Gogh, Picasso : 0) —
+c'est un constat, pas un oubli.
+- **Trois des 20 noms présumés au départ tombent sous le seuil** après correction
+  du comptage : Dürer (19), Corot (16), **Jean Clouet (15)**. Ils sortent.
+  Vérifié : le doute « Clouet » est porté par **François Clouet (105)**, pas par
+  Jean (pas de réservoir « CLOUET sans prénom » qui le sauverait).
+
+**Caveat à traiter avant l'export `artistes.json`** — † trois entrées agrègent
+plusieurs personnes sous un même nom-pivot, à désambiguïser (prénom/génération) :
+**Bruegel** (l'Ancien / le Jeune / Jan), **Cranach** (l'Ancien / le Jeune),
+**Fragonard** (Jean-Honoré vs son fils Alexandre-Évariste, majoritaire en volume).
+Repérage à affiner, non cassé. Un raté connu sans effet ici : « Le Greco »
+(motif à corriger), de toute façon très sous le seuil.
+
+Chiffres indicatifs, susceptibles de légers écarts quand l'export officiel sera
+produit par le pipeline — mais la **méthode est déjà alignée sur `markers.py`**.
+
 ## 2026-07-06 — Direction de restitution (décision utilisateur, phase 3)
 
 **Application interactive soutenue par les données, matérialisée par une

@@ -2,6 +2,118 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-08 — Réorientation « Les presque » : galaxie abandonnée, barres + carte
+
+- Suite au brief utilisateur : galaxie abandonnée dans cette vue (schéma
+  moléculaire, pas une constellation ; « vraie constellation » reportée en réserve,
+  branche séparée). Remplacée par des **barres horizontales** (1 barre = 1 famille,
+  longueur ∝ notices). Ajout d'une **carte par maître** (nouveauté).
+- Faisabilité carte vérifiée sur données réelles : grain = musée détenteur
+  (coord via musees.json, 98,7 %) ; doute très dispersé (~1/musée, sauf Le
+  Primatice). Piège repéré : le champ `musees` d'artistes.json confond
+  ferme/copie/doute → export à enrichir avant la carte.
+- Arbitrages utilisateur : technique carte = **D3-geo auto-hébergé** (GeoJSON
+  France/départements open data, aucune tuile externe, pré-rendable) ; ordre =
+  **barres → carte**. Consigné dans decisions.md + roadmap.md (P3-T1 réorienté).
+- Rien implémenté (mode plan). Prochain palier : ① barres horizontales.
+
+## 2026-07-08 — Doc d'analyse de « Les presque »
+
+- Galaxie jugée **lisible** par l'utilisateur. Restent à travailler : le style
+  (identité propre, non générique), les labels (trop techniques) et le récit
+  (la forme actuelle s'éloigne de la vision « galaxie/constellation » voulue).
+- À sa demande, rédigé `docs/dataviz-les-presque.md` : document **autonome**
+  (compréhensible sans le code) décrivant la dataviz sur les plans technique et
+  esthétique, avec la synthèse des écarts intention ↔ réalisation et les
+  questions ouvertes. Destiné à être analysé de l'extérieur.
+- Rien changé au code : c'est un état des lieux pour décider de la suite.
+
+## 2026-07-07 — P3-T1 : galaxie + retour « incompréhensible »
+
+- Retour utilisateur fort : le front actuel est incompréhensible pour un visiteur
+  lambda (on ne sait pas ce que fait le site, son objectif, son fonctionnement ;
+  les fiches sont du jargon). Décision commune : **finir les tâches de la roadmap
+  puis faire un bilan compréhension**, ne pas tout refondre maintenant. Noté en
+  mémoire (feedback [[front-probleme-comprehension]]).
+- Galaxie construite (`lib/GalaxieMaitre.svelte`) et branchée en bascule
+  « Galaxie / Détail » sur `/les-presque` (galaxie par défaut). Maître au centre,
+  familles de doute en orbites (proche = probable, loin = doute fort), copies
+  « d'après » en anneau extérieur à part. Rendue auto-explicative pour attaquer
+  le problème de compréhension : titre en clair, centre légendé, orbites nommées,
+  note de lecture (« position indicative, pas une mesure d'authenticité »).
+- Intro de `/les-presque` réécrite en langage courant (mode d'emploi « 👉 choisissez
+  un maître… force du doute »). Build statique OK, une seule galaxie rendue.
+- Reste : regarder le rendu ; l'onboarding global du site (accueil) reste à revoir
+  au bilan.
+
+## 2026-07-07 — P3-T0 validé + P3-T1 : « Les presque » (1re dataviz)
+
+- Socle validé par l'utilisateur (sur le fond). Réserve indicative : le style est
+  jugé « trop Claude normé », générique ; identité visuelle à retravailler plus
+  tard (après les dataviz). Noté en mémoire (feedback) et decisions.md ; on n'y
+  touche pas maintenant.
+- 1re dataviz montée : route `/les-presque`. Composants réutilisables créés :
+  `lib/joconde.js` (lien POP aligné sur src/config.py, métadonnées des 3 niveaux)
+  et `lib/BarreNiveaux.svelte` (barre empilée du doute, avec/sans légende).
+- Fiche « presque » : échelle du doute, tableau des formules employées, bande
+  « d'après X » isolée (copies assumées, jamais comptées comme doute), exemples
+  réels avec liens POP. Liste des 27 maîtres filtrable à gauche.
+- Garde-fou éditorial en place (chapô « comment les musées nuancent », pas de
+  « trésor caché »). Build statique OK, données réelles vérifiées dans build/.
+- Limite assumée : le « moteur de recherche sur toute la base » (roadmap) n'est
+  pas fait — il faut d'abord un export de tous les noms + comptages (pas encore
+  produit). Pour l'instant le filtre porte sur les 27 vedettes.
+- Reste : validation utilisateur de « Les presque » ; réserve Bruegel/Cranach
+  toujours ouverte ; style à reprendre ; puis brique suivante.
+
+## 2026-07-07 — P3-T0 : socle SvelteKit monté (en attente de validation)
+
+- Échafaudage `sv create` dans `web/` : SvelteKit 2 / Svelte 5, JavaScript (pas
+  TS, choix lisibilité), adapter static. Surprise notée : la nouvelle version
+  câble l'adapter dans `vite.config.js` (`sveltekit({ adapter: adapter() })`),
+  pas dans un `svelte.config.js` — ce dernier n'existe pas, c'est normal.
+- Site entièrement pré-rendu : `export const prerender = true` à la racine.
+- Accès aux données : `npm run sync:data` copie `data/exports/web/*.json` vers
+  `web/static/data/` (servis en `/data/…`). Dossier généré, ignoré par git ;
+  à resynchroniser après chaque export du pipeline Python.
+- Coquille : `+layout.svelte` (en-tête, nav « une brique = une route », briques
+  futures en placeholder pour ne pas casser le pré-rendu), tokens de style
+  (`lib/styles/tokens.css`, couleurs des 3 niveaux).
+- « Hello data » : l'accueil pré-rend le chiffre vedette réel **24 507**
+  (+ 18 716 hors monoculture, provenance datée) depuis `niveaux.json`.
+- `npm run build` OK, chiffre vérifié dans le HTML statique de `web/build/`.
+- Reste : ⏸ validation utilisateur du socle avant la 1re dataviz (« Les presque »).
+
+## 2026-07-07 — Stack du front arrêtée : SvelteKit
+
+- Choix de socle tranché par l'utilisateur : **SvelteKit en build statique**
+  (`adapter-static`), front isolé dans un dossier dédié, consommant les JSON de
+  `data/exports/web/`. Aucun serveur (règle « jamais la base dans l'appli »).
+- Motifs consignés (docs/decisions.md) : routage = structure éditoriale (méthode
+  au même rang), coquille partagée par composants, bonne cohabitation avec D3,
+  lisible pour un dev intermédiaire.
+- Roadmap : P3-T0 réécrit en « Socle SvelteKit » avec sous-étapes
+  (échafaudage → accès aux JSON → coquille → hello data → ⏸ validation).
+- Prochaine action : monter le socle SvelteKit avant la 1re dataviz (« Les presque »).
+
+## 2026-07-07 — P3-T1 : entrée « par l'artiste » (liste vedette + export)
+
+- Ouverture de la phase 3 côté données : la 1re dataviz sera « Les presque »
+  (doute autour d'un maître connu). Critère de la liste vedette arrêté par
+  l'utilisateur : maître de référence + ≥ 20 doutes (hors copie), choix « A »
+  (le critère fait loi).
+- Correction de repérage majeure trouvée en chemin (docs/donnees.md) : le doute
+  s'écrit aussi HORS parenthèses (Ingres 13 → 204) et les « (école allemande) »
+  sont des nationalités, pas du doute (Dürer 161 → 19). Comptage refait avec les
+  regex réelles de markers.py, par segment.
+- Désambiguïsation des familles : Fragonard = Jean-Honoré (31, conservé) ;
+  Bruegel et Cranach l'Ancien retirés (< 20 une fois le maître isolé du fils).
+  Liste finale : **27 maîtres**.
+- Code : markers.py::famille_segment() (public, réutilise le lexique, 35 tests
+  verts) + src/build_artistes.py → data/exports/web/artistes.json (44 Ko).
+- Roadmap phase 3 réécrite (P3-T1 en cours). Reste : réserve Bruegel/Cranach à
+  trancher, puis le front de « Les presque ».
+
 ## 2026-07-06 — P2-T4 : cas racontables
 
 - Décision : Alençon = ouverture, incarnation de la limite (vérif. approfondie

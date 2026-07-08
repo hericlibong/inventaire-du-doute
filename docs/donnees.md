@@ -340,6 +340,64 @@ Classes de faux positifs identifiées par ses commentaires :
 8. Curiosité à documenter : `anonyme (attribué)` — « attribué à… anonyme »
    (traité en « incertain », hors calcul, décision utilisateur).
 
+## Phase 3 — Compter le doute PAR AUTEUR : deux corrections de repérage (2026-07-07)
+
+Constaté en construisant la liste vedette de l'entrée « par l'artiste »
+(voir docs/decisions.md, 2026-07-07). Compter le doute **autour d'un nom**
+(nom-pivot = segment du champ Auteur, parenthèses retirées) fait apparaître
+deux pièges qu'une première sonde artisanale a révélés — et que le détecteur
+canonique `markers.py` évite déjà :
+
+1. **Le qualificatif n'est pas toujours entre parenthèses.** Une sonde qui ne
+   lit le doute qu'entre parenthèses **sous-compte** : `INGRES Jean-Auguste-
+   Dominique attribué à` s'écrit souvent **hors parenthèses** (≈ 189 occurrences).
+   Effet mesuré pour Ingres : **13 doutes (parenthèses seules) → 204 (champ
+   entier)**. Règle : chercher le marqueur dans **tout le segment**, comme le
+   fait `markers.py` (`str.contains` sur le champ). Une détection par-auteur
+   doit reprendre cette logique, pas se limiter aux parenthèses.
+
+2. **Les écoles nationales se déguisent en « école ».** `(école allemande)`,
+   `(école flamande)`, `(école italienne)` sont des **nationalités**, pas
+   « école de [maître] ». Une sonde qui compte le mot « école » **sur-compte** :
+   pour Dürer, **161 (mot « école ») → 19 (canonique)**, l'écart étant
+   quasi entièrement des `(école allemande)`. Le motif `ecole_de` de v2 exige
+   « école **de** X » (ou `(école)` seul en fin de token) et exclut la forme
+   nationale — c'est le même piège « école française » de T1/T5, ici côté
+   comptage par auteur.
+
+**Granularité du nom-pivot (à traiter avant l'export `artistes.json`)** —
+le rattachement d'un doute à « un maître » n'est pas trivial :
+- **homonymes** : `BUGATTI Rembrandt` (le sculpteur, 82 notices) n'est pas
+  Rembrandt le peintre → exclusion explicite nécessaire ;
+- **familles sous un même nom** : Bruegel (l'Ancien / le Jeune / Jan),
+  Cranach (l'Ancien / le Jeune), Fragonard (Jean-Honoré vs son fils
+  Alexandre-Évariste, majoritaire en volume) — à désambiguïser par
+  prénom/génération ;
+- **variantes de graphie d'une même personne** : `LE PRIMATICE` = `PRIMATICCIO
+  FRANCESCO`, `LE TITIEN` = `VECELLIO TIZIANO` (français ↔ italien) — à
+  réconcilier, sous peine de fragmenter le comptage d'un maître ;
+- **absence de prénom** : `CLOUET (attribué à)` ne se rattache ni à Jean ni à
+  François. Vérifié pour Clouet : pas de réservoir « sans prénom » (le doute
+  Clouet est porté par François, 105, pas par Jean, 15).
+
+- **Formule non répertoriée repérée** : `(attribution incertaine)` (vu chez
+  Corot) — hors des familles du lexique v2. À examiner sur toute la base pour
+  décider si elle rejoint la famille « attribué à » (récit en réserve).
+
+## Circulation des JSON vers le front (P3-T0, 2026-07-07)
+
+Le front SvelteKit (dossier `web/`) est statique et ne lit **jamais** la base :
+il consomme uniquement les JSON agrégés de `data/exports/web/` (règle « jamais
+la base entière dans l'application »). Ces JSON sont des artefacts générés par le
+pipeline Python (`src/build_*.py`), donc **non versionnés** — ni côté `data/`,
+ni côté front.
+
+Frontière unique et sens de circulation : Python écrit `data/exports/web/*.json`
+→ `npm run sync:data` (web/scripts/sync-data.js) les copie dans
+`web/static/data/` → servis par le front en `/data/…`. Après tout nouvel export,
+resynchroniser. `web/static/data/` est dans le `.gitignore` du front. Aucun autre
+couplage back ↔ front que ces fichiers.
+
 ## Pièges métier connus (à vérifier sur les données réelles)
 
 - « présumé » porte souvent sur le **sujet représenté** (« portrait présumé de X »),

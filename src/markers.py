@@ -253,3 +253,45 @@ def detections(morceau: pd.DataFrame) -> pd.DataFrame:
     resultat["atelier_hors_beaux_arts"] = resultat["atelier_de"] & ~beaux_arts
     resultat["atelier_de"] &= beaux_arts
     return resultat
+
+
+# Familles de doute, ordonnées du niveau le plus léger au plus détaché
+# (échelle typologie P2-T2) : sert à choisir UNE famille quand un segment en
+# porterait plusieurs (co-occurrences quasi nulles, voir P2-T1).
+DOUTE_PAR_NIVEAU = (
+    "attribue", "point_interrogation", "presume",       # niveau 1
+    "ecole_de", "atelier_de", "entourage_de", "suiveur_de",  # niveau 2
+    "maniere_de", "genre_de",                            # niveau 3
+)
+
+
+def famille_segment(segment: str, en_beaux_arts: bool = True):
+    """Catégorise UN segment du champ Auteur, rattaché à un seul auteur.
+
+    Sert aux agrégats PAR AUTEUR (src/build_artistes.py) : « quel lien cette
+    notice affirme-t-elle avec ce nom ? ». Réutilise exactement les motifs de
+    detections() pour ne pas diverger du lexique. Renvoie (categorie, code) où
+    categorie ∈ {copie, ecarte, doute, propre} et code est la famille retenue
+    (None pour propre).
+
+    Ordre de résolution (doctrine T4/v2) : la copie l'emporte ; puis les
+    familles écartées ; puis le doute (famille la plus légère si plusieurs) ;
+    sinon propre. « atelier » ne vaut doute qu'en beaux-arts (v2). Le doute est
+    cherché dans TOUT le segment, parenthèses ou non (docs/donnees.md, 2026-07-07).
+    """
+    if _COMPILES["d_apres"].search(segment):
+        return "copie", "d_apres"
+    if _COMPILES["copie"].search(segment):
+        return "copie", "copie"
+    if _atelier_nom(segment):
+        return "ecarte", "atelier_nom"
+    if re.search(MOTIF_ECOLE_LIEU, segment, re.IGNORECASE):
+        return "ecarte", "ecole_lieu"
+    for code in DOUTE_PAR_NIVEAU:
+        if code == "atelier_de":
+            if _atelier_doute(segment):
+                return ("doute", "atelier_de") if en_beaux_arts \
+                    else ("ecarte", "atelier_hors_beaux_arts")
+        elif _COMPILES[code].search(segment):
+            return "doute", code
+    return "propre", None
