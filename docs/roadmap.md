@@ -196,10 +196,19 @@ Ordre de construction retenu : **barres → carte** (détail conservé tel quel)
 - [x] **Détail** — *le quoi* (existant) : formules, exemples POP, copies à part.
       Conservé en l'état ; labels trop techniques à reformuler **plus tard** (non
       prioritaire)
-- [ ] **① Barres horizontales** — *le combien* (remplace la galaxie) : une barre
-      par famille de doute, longueur ∝ notices, horizontales (libellés longs),
-      couleurs des 3 niveaux. **Aucune donnée nouvelle** (`familles[].notices`).
-      Retire la galaxie de la vue
+- [x] **① Barres horizontales** — livré puis **remplacé par un nuage de points**
+      le 2026-07-08 : les barres, normalisées à la largeur du conteneur et
+      n'affichant que les familles présentes, ne permettaient ni comparaison
+      entre maîtres ni lecture des volumes réels
+- [x] **①bis Nuage de points à grille fixe** — *le combien, comparable* : axe X =
+      8 familles de doute (ordre canonique, « présumé » absent des 27 retiré),
+      **mêmes colonnes pour tous** ; axe Y = volume, **plafond commun 240**
+      (calculé côté front = max famille sur les 27, « école de » Le Brun) ;
+      1 point/famille à la hauteur du volume, taille légèrement croissante
+      (la hauteur porte la mesure), couleur par famille groupée par niveau,
+      graduations 60/120/180/240, échelle linéaire, survol = compte exact.
+      `NuageFamilles.svelte`, bascule « Nuage / Détail ». Aucune donnée nouvelle.
+      Build statique vérifié
 - [ ] **Palier données** : enrichir `src/build_artistes.py` pour exporter, par
       maître, les **musées détenteurs d'œuvres douteuses + comptes** (le champ
       `musees` actuel confond ferme/copie/doute — inexploitable pour la carte) ;

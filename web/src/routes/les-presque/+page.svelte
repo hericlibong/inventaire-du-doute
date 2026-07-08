@@ -1,6 +1,6 @@
 <script>
 	import BarreNiveaux from '$lib/BarreNiveaux.svelte';
-	import BarresFamilles from '$lib/BarresFamilles.svelte';
+	import NuageFamilles from '$lib/NuageFamilles.svelte';
 	import { lienPop, nombre } from '$lib/joconde.js';
 	// Archive : la piste « galaxie » est conservée dans $lib/GalaxieMaitre.svelte
 	// (abandonnée dans cette vue, decisions.md 2026-07-08), non importée ici.
@@ -9,8 +9,14 @@
 	const meta = data.artistes;
 	const artistes = data.artistes.artistes;
 
-	// Deux regards sur la même donnée : les barres (le combien) ou le détail (le quoi).
-	let vue = $state('barres');
+	// Plafond COMMUN de l'axe Y du nuage : la plus grande valeur de famille sur
+	// tous les maîtres (≈ 240, « école de » Le Brun). Calculé ici, pas en dur.
+	const plafond = Math.max(
+		...artistes.flatMap((a) => a.familles.map((f) => f.notices))
+	);
+
+	// Deux regards sur la même donnée : le nuage (le combien) ou le détail (le quoi).
+	let vue = $state('nuage');
 
 	// Recherche/filtre sur les maîtres vedettes (moteur sur toute la base = plus
 	// tard, dépend d'un export de tous les noms — voir roadmap P3-T1).
@@ -37,11 +43,11 @@
 	pas tout à fait</strong>.
 </p>
 <p class="mode-emploi">
-	👉 Choisissez un maître dans la liste. Les barres montrent <strong>quelles
-	formules</strong> les musées emploient et <strong>en quelle quantité</strong> —
-	la couleur dit la <strong>force du doute</strong>, de « c'est probablement lui »
-	à « juste son style ». Ni révélation ni trésor caché : seulement ce que les
-	musées écrivent eux-mêmes.
+	👉 Choisissez un maître dans la liste. Le nuage montre <strong>quelles
+	formules</strong> les musées emploient et <strong>en quelle quantité</strong>,
+	sur une <strong>échelle commune à tous</strong> — plus un point est haut, plus
+	ce type de doute est fréquent. Ni révélation ni trésor caché : seulement ce que
+	les musées écrivent eux-mêmes.
 </p>
 <p class="critere">Les {artistes.length} maîtres retenus : {meta.critere}.</p>
 
@@ -80,8 +86,8 @@
 					({partDoute(maitre).toFixed(0)} %), dans {maitre.musees} musées.
 				</p>
 				<div class="bascule" role="tablist" aria-label="Choisir la vue">
-					<button role="tab" aria-selected={vue === 'barres'} class:actif={vue === 'barres'} onclick={() => (vue = 'barres')}>
-						Barres
+					<button role="tab" aria-selected={vue === 'nuage'} class:actif={vue === 'nuage'} onclick={() => (vue = 'nuage')}>
+						Nuage
 					</button>
 					<button role="tab" aria-selected={vue === 'fiche'} class:actif={vue === 'fiche'} onclick={() => (vue = 'fiche')}>
 						Détail
@@ -89,8 +95,8 @@
 				</div>
 			</header>
 
-			{#if vue === 'barres'}
-				<BarresFamilles {maitre} />
+			{#if vue === 'nuage'}
+				<NuageFamilles {maitre} {plafond} />
 			{:else}
 			<h3>L'échelle du doute</h3>
 			<BarreNiveaux niveaux={maitre.niveaux} hauteur="1.1rem" etiquettes={true} />

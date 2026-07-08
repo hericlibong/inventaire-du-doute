@@ -2,6 +2,45 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-08 — « Les presque » : barres → nuage de points à grille fixe (décision utilisateur)
+
+Les barres horizontales (livrées le jour même) corrigeaient la galaxie mais deux
+défauts à l'usage : (1) **pas de comparabilité entre maîtres** — chaque maître
+n'affiche que *ses* familles présentes, la grille change à chaque artiste, chaque
+graphe est un îlot ; (2) **pas de repère de mesure stable** — barres normalisées à
+la largeur du conteneur, donc une barre « pleine » d'un petit maître paraît aussi
+grande que celle d'un gros. On ne lit pas les volumes réels.
+
+**Décision : remplacer les barres par un nuage de points (scatter) sur une grille
+FIXE et COMMUNE.** C'est la grille stable qui rend les maîtres comparables —
+objectif éditorial central de la vue.
+- **Axe X** : les familles de doute, **toujours toutes, même ordre** (ordre
+  canonique du lexique v2). « Présumé » retiré : absent des 27 maîtres (colonne
+  vide par construction) → **8 colonnes**.
+- **Axe Y** : volume, de 0 à un **plafond commun = 240** (la plus grande valeur de
+  famille sur les 27, « école de » Le Brun). **Calculé côté front** depuis
+  `artistes.json` (max sur les 27), pas en dur, pas de dépendance pipeline.
+- **1 point par famille** à la hauteur de son volume ; zéro = pas de point ;
+  taille **légèrement** croissante avec le volume (appui, pas la mesure) ;
+  couleur par famille, groupée par teinte de niveau + libellés de niveau au-dessus
+  des groupes (la lecture « échelle du doute » survit) ; graduations
+  60/120/180/240 ; **échelle linéaire** (honnêteté des volumes) ; survol = compte
+  exact ; libellés d'axe raccourcis, technique complet au survol.
+
+**Justification de la forme (position sur Y commun plutôt que taille de bulle) :**
+l'œil compare précisément des **hauteurs sur une échelle commune**, mais **mal des
+aires de cercles**. L'échelle Y fixe et partagée permet de voir d'un coup que le
+doute autour de Le Brun (pic « école » à 240) est d'un autre ordre que celui
+d'Andrea del Sarto (« école » à 57) — les deux se lisent sur la même règle. Le
+grossissement léger ajoute une charge narrative (le volume « pèse ») sans remplacer
+la mesure. Compromis lisibilité/récit adapté au data-journalisme.
+
+**Coût assumé (signalé) :** les familles à faible volume et les petits maîtres
+collent au plancher sous un plafond à 240 — c'est la vérité (le doute se concentre
+sur « attribué à » + « école de ») ; contré par le cadrage (sous-titre disant le
+plafond, graduations, survol, plancher de taille de point), pas en trichant sur
+l'échelle. La galaxie reste archivée dans `lib/GalaxieMaitre.svelte`.
+
 ## 2026-07-08 — « Les presque » : galaxie abandonnée, barres + carte par maître (décision utilisateur)
 
 Refonte de la 1re dataviz après examen de la v1 (galaxie + détail) et du document

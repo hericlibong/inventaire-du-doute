@@ -2,6 +2,21 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-08 — « Les presque » : barres → nuage de points à grille fixe
+
+- Les barres livrées le matin ne permettaient ni comparaison entre maîtres (grille
+  changeante) ni lecture des volumes réels (normalisation à la largeur). Remplacées
+  par un **nuage de points sur grille fixe/commune** (decisions.md).
+- Vérifié sur données : 8 familles réelles chez les 27 (« présumé » absent → colonne
+  retirée) ; plafond Y commun = 240 (« école de » Le Brun), calculable côté front
+  (aucune modif pipeline). Coût assumé signalé : petits volumes/petits maîtres au
+  plancher — contré par le cadrage, pas en trichant sur l'échelle.
+- Implémenté sur la même branche `feat/les-presque-barres` : `NuageFamilles.svelte`
+  (axe X familles, axe Y volume plafonné, couleur/famille groupée par niveau,
+  graduations, survol), bascule « Nuage / Détail », `BarresFamilles.svelte` retiré
+  (remplacé, l'historique git le garde). Galaxie toujours archivée. Build OK.
+- Stop pour validation avant le palier données géo + carte.
+
 ## 2026-07-08 — Réorientation « Les presque » : galaxie abandonnée, barres + carte
 
 - Suite au brief utilisateur : galaxie abandonnée dans cette vue (schéma
