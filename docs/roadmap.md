@@ -209,6 +209,19 @@ Ordre de construction retenu : **barres → carte** (détail conservé tel quel)
       graduations 60/120/180/240, échelle linéaire, survol = compte exact.
       `NuageFamilles.svelte`, bascule « Nuage / Détail ». Aucune donnée nouvelle.
       Build statique vérifié
+- [x] **①ter Ajustement visuel du nuage** (retour 2026-07-09 : cohérent/lisible
+      mais **trop anonyme**) — fait :
+      - libellés de niveau retirés de la vue nuage (inutiles ici) ;
+      - **points plus gros** (rayon 6→16) + **grille resserrée** (viewBox compact) ;
+      - **portrait en regard du nuage** (maquette) : layout portrait ↔ nuage,
+        nuage sur petite grille → points plus présents. Illustration, pas une
+        source de comptage (précédent Alençon, decisions.md 2026-07-05) ;
+      - couleurs **repoussées** au palier style + légende des labels.
+- [ ] **①quater Portrait — vraies images** (après validation du layout maquette) :
+      sourcer 27 portraits **libres de droit** (Wikimedia Commons, PD ; cas Rodin =
+      photo PD type Nadar) ; **traitement uniforme** (N&B/duotone — relève du
+      style) ; **crédit/licence par image** ; **fallback** silhouette. Placeholder
+      actuel = `NuageFamilles.svelte` (silhouette inline)
 - [ ] **Palier données** : enrichir `src/build_artistes.py` pour exporter, par
       maître, les **musées détenteurs d'œuvres douteuses + comptes** (le champ
       `musees` actuel confond ferme/copie/doute — inexploitable pour la carte) ;

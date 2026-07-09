@@ -2,6 +2,32 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-09 — Retour sur le nuage : plus cohérent, mais trop anonyme
+
+Verdict utilisateur sur le nuage : **plus cohérent narrativement et plus lisible**
+que la galaxie et les barres — mais **manque de présence visuelle, trop anonyme**.
+À traiter (consigné, pas encore implémenté) :
+- **Retirer les libellés de niveau** (« Presque lui / Autour de lui / Son style ») :
+  jugés inutiles ici → à enlever.
+- **Ajustement proportionnel** : **points plus gros** + **grille plus resserrée**
+  (trop d'écart entre les points hauts/bas et gauche/droite) → viz plus dense,
+  plus forte.
+- **Couleurs : plus tard** (au moment du style + de la légende des labels) ;
+  aujourd'hui elles renforcent l'anonymat, on n'y touche pas maintenant.
+- **Idée à évaluer (portrait) :** placer un **portrait libre de droit du peintre**
+  (dessin/photo/gravure, via Wikimedia Commons) **en face** de la visualisation,
+  celle-ci sur une **plus petite grille** pour que les points soient plus présents.
+  Évaluation dans docs/roadmap.md + réponse à l'utilisateur (faisabilité PD,
+  cohérence des images, illustration ≠ source de comptage).
+
+Choix utilisateur : « ajustements + maquette portrait ». Implémenté (même branche) :
+libellés de niveau retirés, points plus gros (rayon 6→16), grille resserrée
+(viewBox compact), **layout portrait ↔ nuage** avec un **placeholder** (silhouette
+inline) pour juger les proportions avant de sourcer les vraies images. Build OK.
+Reste (①quater) : sourcer les 27 portraits PD + traitement uniforme + crédits +
+fallback, après validation du layout. Contrainte notée : sourcing réseau incertain
+dans l'environnement → images à fournir ou à tester le moment venu.
+
 ## 2026-07-08 — « Les presque » : barres → nuage de points à grille fixe
 
 - Les barres livrées le matin ne permettaient ni comparaison entre maîtres (grille
