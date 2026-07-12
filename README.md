@@ -24,13 +24,26 @@ Cas de réutilisation du jeu de données
 
 ## État du projet
 
-**Phase 1 en cours** : test go/no-go sur la qualité des données (taux de notices
-portant un marqueur d'incertitude, fiabilité du filtre sur un échantillon vérifié
-à la main). Suivi dans `docs/`.
+**Phase 3 en cours** : restitution web. Les phases 1 (test go/no-go sur la
+qualité des données) et 2 (typologie du doute, pipeline d'exports) sont
+terminées. Le front est une application statique SvelteKit (`web/`) qui
+consomme les JSON exportés par le pipeline Python ; la première entrée,
+« Les presque », est en place. Suivi détaillé dans `docs/roadmap.md`.
 
 ## Installation
+
+Pipeline de données :
 
 ```bash
 uv sync
 uv run python src/download.py   # télécharge le CSV (1,1 Go) et la nomenclature
+```
+
+Front (après avoir généré les exports) :
+
+```bash
+cd web
+npm install
+npm run sync:data   # copie data/exports/web/*.json vers web/static/data/
+npm run dev
 ```

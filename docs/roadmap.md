@@ -195,7 +195,8 @@ Ordre de construction retenu : **barres → carte** (détail conservé tel quel)
 
 - [x] **Détail** — *le quoi* (existant) : formules, exemples POP, copies à part.
       Conservé en l'état ; labels trop techniques à reformuler **plus tard** (non
-      prioritaire)
+      prioritaire). **Remplacé le 2026-07-11 par la vitrine « Œuvres »** (voir
+      ①septies)
 - [x] **① Barres horizontales** — livré puis **remplacé par un nuage de points**
       le 2026-07-08 : les barres, normalisées à la largeur du conteneur et
       n'affichant que les familles présentes, ne permettaient ni comparaison
@@ -217,11 +218,52 @@ Ordre de construction retenu : **barres → carte** (détail conservé tel quel)
         nuage sur petite grille → points plus présents. Illustration, pas une
         source de comptage (précédent Alençon, decisions.md 2026-07-05) ;
       - couleurs **repoussées** au palier style + légende des labels.
-- [ ] **①quater Portrait — vraies images** (après validation du layout maquette) :
-      sourcer 27 portraits **libres de droit** (Wikimedia Commons, PD ; cas Rodin =
-      photo PD type Nadar) ; **traitement uniforme** (N&B/duotone — relève du
-      style) ; **crédit/licence par image** ; **fallback** silhouette. Placeholder
-      actuel = `NuageFamilles.svelte` (silhouette inline)
+- [x] **①quater Portrait — vraies images** — fait (2026-07-09) : 27 portraits
+      sourcés sur Wikimedia Commons via Wikidata P18 (`web/scripts/source_portraits.py`),
+      **licence vérifiée fichier par fichier** (26 domaine public + 1 CC0), stockés
+      **en local** dans `static/portraits/`, manifeste `static/data/portraits.json`
+      (auteur, licence, source, regard). Crédit affiché en légende. 8 portraits
+      « regardant à droite » retournés pour regarder le nuage (gravures à texte
+      jamais retournées). Vignette de taille figée (fin des sauts). **Fallback**
+      silhouette conservé. Reste **différé (palier style)** : traitement uniforme
+      N&B/duotone
+- [x] **①quinquies Textes de la fiche maître** — fait (2026-07-09, mode plan
+      validé) : séparation des **trois natures de texte** (éditorial / mode d'emploi
+      unique en bulle « Comment lire » / mentions techniques), **vocabulaire interne
+      banni** de l'interface (notice→œuvre, niveau non affiché, « atelier de »),
+      **légendes de portrait normées**, chiffres racontés en français. Couche
+      éditoriale front `web/src/lib/editorial-maitres.js`. **Deux maîtres témoins**
+      écrits main et validés (François Clouet, Rembrandt) ; les 25 autres en **angle
+      dérivé** (repli). Règles gravées dans CLAUDE.md (dataviz + rédaction).
+      - [ ] **Reste** : écrire à la main les **25 bios + angles** restants (montée
+            en qualité, sous-étape éditoriale)
+      - [ ] **Reste (hors P3-T1, page d'accueil)** : reformuler `+page.svelte`
+            racine (« notices », « Détection : lexique », notation d'analyste) **en
+            gardant les deux dénominateurs** (règle 2026-07-03)
+- [x] **①sexies Labels du nuage** — fait (2026-07-10) : bulle « comment lire »
+      retirée ; **couche de libellés publics** `web/src/lib/familles-public.js`
+      (label + formule exacte + sens), axe **réordonné par distance** (option B),
+      labels publics (attribué à · nom (?) · son atelier · son cercle · de son
+      école · un suiveur · sa manière · dans son goût), **tooltips prudents**
+      (formule exacte entre guillemets + sens, sans jargon), **micro-légende**
+      statique « De gauche à droite, le lien au maître se desserre ». Règle
+      « Couche de libellé public obligatoire » gravée dans CLAUDE.md.
+      - [ ] **Reste** : « de son école » / « dans son goût » validés
+            provisoirement (perfectibles) ; réduire chapô/bio (plus tard) ;
+            ~~réutiliser la couche de traduction dans la vue Détail~~ (fait le
+            2026-07-11 : les kickers de la vitrine « Œuvres » réutilisent les
+            headers de familles-public.js)
+- [x] **①septies Vitrine « Œuvres »** — fait (2026-07-11, validé avant code) :
+      l'onglet « Détail » (échelle du doute + table des formules = redite du
+      graphique) devient **« Œuvres »** : cartes groupées par forme dans l'ordre
+      de l'axe, kicker = header public + pastille de la couleur du point,
+      **verbatim du champ auteur en exergue** (seule citation littérale de
+      l'application), lien « Voir la fiche publique → » (POP), copies « d'après »
+      en bloc distinct avec un exemple lié, mention POP unique en petit corps.
+      **Export enrichi** (`build_artistes.py`) : `code` de forme par exemple,
+      2 exemples pour la forme dominante, `exemple_copie` par maître — le front
+      ne re-parse jamais les extraits. `OeuvresMaitre.svelte` ; couleur par
+      famille centralisée dans `familles-public.js`
 - [ ] **Palier données** : enrichir `src/build_artistes.py` pour exporter, par
       maître, les **musées détenteurs d'œuvres douteuses + comptes** (le champ
       `musees` actuel confond ferme/copie/doute — inexploitable pour la carte) ;

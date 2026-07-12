@@ -1,13 +1,18 @@
 <script>
-	import BarreNiveaux from '$lib/BarreNiveaux.svelte';
+	import BarreFamilles from '$lib/BarreFamilles.svelte';
 	import NuageFamilles from '$lib/NuageFamilles.svelte';
-	import { lienPop, nombre } from '$lib/joconde.js';
+	import OeuvresMaitre from '$lib/OeuvresMaitre.svelte';
+	import PortraitMaitre from '$lib/PortraitMaitre.svelte';
+	import { nombre, deNom, musees } from '$lib/joconde.js';
+	import { oeuvres } from '$lib/familles-public.js';
+	import { bioMaitre } from '$lib/editorial-maitres.js';
 	// Archive : la piste « galaxie » est conservée dans $lib/GalaxieMaitre.svelte
 	// (abandonnée dans cette vue, decisions.md 2026-07-08), non importée ici.
 
 	let { data } = $props();
-	const meta = data.artistes;
 	const artistes = data.artistes.artistes;
+	// Manifeste des portraits (Commons) : source secondaire d'illustration.
+	const portraits = data.portraits;
 
 	// Plafond COMMUN de l'axe Y du nuage : la plus grande valeur de famille sur
 	// tous les maîtres (≈ 240, « école de » Le Brun). Calculé ici, pas en dur.
@@ -15,8 +20,9 @@
 		...artistes.flatMap((a) => a.familles.map((f) => f.notices))
 	);
 
-	// Deux regards sur la même donnée : le nuage (le combien) ou le détail (le quoi).
-	let vue = $state('nuage');
+	// Deux regards sur la même donnée : le graphique (les formes et volumes du
+	// doute) ou les œuvres (les cas concrets, avec les mots publiés).
+	let vue = $state('graphique');
 
 	// Recherche/filtre sur les maîtres vedettes (moteur sur toute la base = plus
 	// tard, dépend d'un export de tous les noms — voir roadmap P3-T1).
@@ -29,9 +35,8 @@
 	let selection = $state(artistes[0].nom);
 	const maitre = $derived(artistes.find((a) => a.nom === selection));
 
-	// Total d'attributions rattachées au nom (ferme + doute), pour situer le doute.
+	// Total d'attributions rattachées au nom (ferme + doute), pour situer le volume.
 	const totalNom = (a) => a.propre + a.doute;
-	const partDoute = (a) => (totalNom(a) ? (a.doute / totalNom(a)) * 100 : 0);
 </script>
 
 <h1>Les presque</h1>
@@ -43,13 +48,14 @@
 	pas tout à fait</strong>.
 </p>
 <p class="mode-emploi">
-	👉 Choisissez un maître dans la liste. Le nuage montre <strong>quelles
-	formules</strong> les musées emploient et <strong>en quelle quantité</strong>,
-	sur une <strong>échelle commune à tous</strong> — plus un point est haut, plus
-	ce type de doute est fréquent. Ni révélation ni trésor caché : seulement ce que
-	les musées écrivent eux-mêmes.
+	👉 Choisissez un maître dans la liste pour voir ce que les musées de France
+	disent de lui. Ni révélation ni trésor caché : seulement ce qu'ils écrivent
+	eux-mêmes.
 </p>
-<p class="critere">Les {artistes.length} maîtres retenus : {meta.critere}.</p>
+<p class="critere">
+	Les {artistes.length} maîtres retenus sont des noms de référence pour lesquels
+	les musées ont écrit au moins vingt fois un doute d'attribution.
+</p>
 
 <div class="grille">
 	<aside class="colonne-liste">
@@ -59,16 +65,15 @@
 		</label>
 		<ul class="maitres">
 			{#each liste as a (a.nom)}
-				<li>
-					<button
-						class="maitre"
-						class:actif={a.nom === selection}
-						onclick={() => (selection = a.nom)}
-					>
+				<!-- La jauge vit HORS du bouton : ses segments sont focusables
+				     (infobulle au survol/focus), or un élément interactif ne peut
+				     pas être imbriqué dans un <button> (2026-07-12). -->
+				<li class="rang" class:actif={a.nom === selection}>
+					<button class="maitre" onclick={() => (selection = a.nom)}>
 						<span class="nom">{a.nom}</span>
 						<span class="compte">{nombre(a.doute)}</span>
-						<BarreNiveaux niveaux={a.niveaux} hauteur="0.35rem" />
 					</button>
+					<BarreFamilles familles={a.familles} total={a.doute} nom={a.nom} hauteur="0.35rem" />
 				</li>
 			{:else}
 				<li class="vide">Aucun maître ne correspond.</li>
@@ -79,59 +84,49 @@
 	{#if maitre}
 		<section class="fiche">
 			<header>
+				<!-- Bloc profil : nom pleine largeur, puis portrait à GAUCHE + texte à
+				     DROITE (décision 2026-07-11, 2e disposition). Le profil est HORS de la
+				     zone d'onglet → portrait visible en Graphique comme en Détail, sans
+				     duplication ni saut au changement. -->
 				<h2>{maitre.nom}</h2>
-				<p class="resume">
-					<strong>{nombre(maitre.doute)}</strong> notices de doute sur
-					{nombre(totalNom(maitre))} attributions à ce nom
-					({partDoute(maitre).toFixed(0)} %), dans {maitre.musees} musées.
-				</p>
+				<div class="profil">
+					<div class="profil-portrait">
+						<PortraitMaitre {maitre} portrait={portraits[maitre.nom]} />
+					</div>
+					<div class="profil-texte">
+						{#if bioMaitre(maitre.nom)}
+							<p class="bio">{bioMaitre(maitre.nom)}</p>
+						{/if}
+						<!-- Deux blocs empilés où le CHIFFRE porte l'appui visuel (volume, puis
+						     dispersion) : la colonne pèse assez pour répondre au portrait, on
+						     obtient un vrai bloc de profil (décision 2026-07-11, disposition B).
+						     Le chiffre reste un repère de profil, pas la mesure — la vraie
+						     mesure est dans le graphe. -->
+						<p class="situation">
+							<span class="chiffre">{oeuvres(totalNom(maitre))}</span>
+							sous le nom {deNom(maitre.nom)}.
+						</p>
+						<p class="situation">
+							<span class="chiffre">{musees(maitre.musees)}</span>
+							où ces œuvres sont conservées.
+						</p>
+					</div>
+				</div>
+
 				<div class="bascule" role="tablist" aria-label="Choisir la vue">
-					<button role="tab" aria-selected={vue === 'nuage'} class:actif={vue === 'nuage'} onclick={() => (vue = 'nuage')}>
-						Nuage
+					<button role="tab" aria-selected={vue === 'graphique'} class:actif={vue === 'graphique'} onclick={() => (vue = 'graphique')}>
+						Graphique
 					</button>
-					<button role="tab" aria-selected={vue === 'fiche'} class:actif={vue === 'fiche'} onclick={() => (vue = 'fiche')}>
-						Détail
+					<button role="tab" aria-selected={vue === 'oeuvres'} class:actif={vue === 'oeuvres'} onclick={() => (vue = 'oeuvres')}>
+						Œuvres
 					</button>
 				</div>
 			</header>
 
-			{#if vue === 'nuage'}
+			{#if vue === 'graphique'}
 				<NuageFamilles {maitre} {plafond} />
 			{:else}
-			<h3>L'échelle du doute</h3>
-			<BarreNiveaux niveaux={maitre.niveaux} hauteur="1.1rem" etiquettes={true} />
-
-			<h3>Les formules employées</h3>
-			<table class="familles">
-				<thead>
-					<tr><th>Formule</th><th>Niveau</th><th class="num">Notices</th></tr>
-				</thead>
-				<tbody>
-					{#each maitre.familles as f (f.code)}
-						<tr>
-							<td>{f.libelle}</td>
-							<td>{f.niveau}</td>
-							<td class="num">{nombre(f.notices)}</td>
-						</tr>
-					{/each}
-				</tbody>
-			</table>
-
-			<div class="bande-copie">
-				<strong>{nombre(maitre.copie)}</strong> notices « d'après {maitre.nom} »
-				— des <em>copies assumées</em>, comptées à part : ce ne sont pas des doutes.
-			</div>
-
-			<h3>Quelques notices réelles</h3>
-			<ul class="exemples">
-				{#each maitre.exemples as ex (ex.reference)}
-					<li>
-						<a href={lienPop(ex.reference)} target="_blank" rel="noopener">{ex.titre}</a>
-						<span class="ex-meta">{ex.musee}, {ex.ville}</span>
-						<span class="ex-extrait">« {ex.extrait} »</span>
-					</li>
-				{/each}
-			</ul>
+				<OeuvresMaitre {maitre} />
 			{/if}
 		</section>
 	{/if}
@@ -195,13 +190,28 @@
 		overflow-y: auto;
 	}
 
+	/* La ligne (li) porte l'état (bordure, survol, sélection) ; le bouton ne
+	   couvre que nom + compte, la jauge est sa sœur (segments focusables —
+	   interdits à l'intérieur d'un <button>). */
+	.rang {
+		border-bottom: 1px solid var(--couleur-trait);
+		padding: 0.5rem 0.25rem 0.6rem;
+	}
+
+	.rang:hover {
+		background: rgba(122, 74, 43, 0.06);
+	}
+
+	.rang.actif {
+		background: rgba(184, 85, 31, 0.1);
+	}
+
 	.maitre {
 		width: 100%;
 		text-align: left;
 		background: none;
 		border: none;
-		border-bottom: 1px solid var(--couleur-trait);
-		padding: 0.5rem 0.25rem;
+		padding: 0;
 		cursor: pointer;
 		display: grid;
 		grid-template-columns: 1fr auto;
@@ -209,17 +219,8 @@
 		font: inherit;
 	}
 
-	.maitre :global(.barre) {
-		grid-column: 1 / -1;
-		margin-top: 0.25rem;
-	}
-
-	.maitre:hover {
-		background: rgba(122, 74, 43, 0.06);
-	}
-
-	.maitre.actif {
-		background: rgba(184, 85, 31, 0.1);
+	.rang :global(.barre) {
+		margin-top: 0.35rem;
 	}
 
 	.maitre .nom {
@@ -236,18 +237,79 @@
 		padding: 0.5rem 0;
 	}
 
+	.fiche {
+		/* conteneur de requête : le portrait passe sous le texte selon la largeur
+		   RÉELLE de la fiche (pas celle de l'écran), donc « plus tôt » quand l'aside
+		   comprime la colonne (décision 2026-07-11). */
+		container-type: inline-size;
+	}
+
+	/* Bloc profil : portrait (largeur bornée) à gauche, texte (largeur souple) à
+	   droite, centrés l'un par rapport à l'autre → bloc compact, pas de portrait
+	   qui flotte seul. */
+	.profil {
+		display: grid;
+		/* colonne texte bornée : elle « répond » au portrait, elle ne s'étale pas
+		   comme une phrase de page. justify-content: start → le bloc reste à gauche. */
+		grid-template-columns: 12rem minmax(0, 24rem);
+		justify-content: start;
+		gap: 1.75rem;
+		align-items: start; /* texte calé en HAUT du portrait, pas centré */
+		margin-top: 0.5rem;
+	}
+
+	.profil-portrait {
+		width: 12rem;
+		max-width: 100%;
+	}
+
+	/* Colonne de texte : blocs empilés, espacés, pour occuper la hauteur du portrait. */
+	.profil-texte {
+		display: flex;
+		flex-direction: column;
+		gap: 1.1rem;
+	}
+
+	.situation {
+		margin: 0;
+		font-size: 1.05rem;
+		line-height: 1.55;
+	}
+
+	/* Le chiffre en point d'appui : gros, en couleur d'accent, sur sa propre ligne,
+	   pour donner du poids à la colonne face au portrait. Repère de profil, pas la
+	   mesure principale (celle-ci reste dans le graphe). */
+	.chiffre {
+		display: block;
+		font-family: var(--police-titre);
+		font-size: 1.5rem;
+		font-weight: bold;
+		color: var(--couleur-accent);
+		line-height: 1.15;
+	}
+
+	/* Fiche étroite : une seule colonne — portrait puis texte, alignés à gauche
+	   (pas deux colonnes écrasées). Le seuil porte sur la largeur RÉELLE de la
+	   fiche, donc le passage se fait « plus tôt » quand l'aside comprime la colonne. */
+	@container (max-width: 32rem) {
+		.profil {
+			grid-template-columns: 1fr;
+			gap: 0.75rem;
+		}
+		.profil-portrait {
+			justify-self: start;
+		}
+	}
+
 	.fiche h2 {
 		font-family: var(--police-titre);
 		margin: 0;
 	}
 
-	.fiche h3 {
-		margin: 1.75rem 0 0.5rem;
-		font-size: 1.05rem;
-	}
-
-	.resume {
-		margin: 0.25rem 0 0;
+	.bio {
+		margin: 0;
+		color: var(--couleur-encre-douce);
+		font-style: italic;
 	}
 
 	.bascule {
@@ -271,56 +333,5 @@
 	.bascule button.actif {
 		background: var(--couleur-accent);
 		color: #fff;
-	}
-
-	.familles {
-		width: 100%;
-		border-collapse: collapse;
-		font-size: 0.95rem;
-	}
-
-	.familles th,
-	.familles td {
-		text-align: left;
-		padding: 0.35rem 0.5rem;
-		border-bottom: 1px solid var(--couleur-trait);
-	}
-
-	.familles .num {
-		text-align: right;
-		font-variant-numeric: tabular-nums;
-	}
-
-	.bande-copie {
-		margin-top: 1.25rem;
-		padding: 0.75rem 1rem;
-		border-left: 4px solid var(--couleur-copie);
-		background: rgba(74, 107, 122, 0.07);
-		font-size: 0.95rem;
-	}
-
-	.exemples {
-		list-style: none;
-		margin: 0.5rem 0 0;
-		padding: 0;
-		display: flex;
-		flex-direction: column;
-		gap: 0.75rem;
-	}
-
-	.exemples li {
-		display: flex;
-		flex-direction: column;
-	}
-
-	.exemples a {
-		color: var(--couleur-accent);
-		font-weight: 600;
-	}
-
-	.ex-meta,
-	.ex-extrait {
-		font-size: 0.85rem;
-		color: var(--couleur-encre-douce);
 	}
 </style>

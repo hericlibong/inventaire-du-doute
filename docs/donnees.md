@@ -398,6 +398,25 @@ Frontière unique et sens de circulation : Python écrit `data/exports/web/*.jso
 resynchroniser. `web/static/data/` est dans le `.gitignore` du front. Aucun autre
 couplage back ↔ front que ces fichiers.
 
+## Exemples d'œuvres dans artistes.json — structure enrichie (2026-07-11)
+
+Pour la vitrine « Œuvres » (décision du même jour), `build_artistes.py` exporte
+désormais, par maître :
+
+- `exemples` : jusqu'à 9 œuvres réelles, **une par famille de doute présente, deux
+  pour la famille dominante**, chacune avec son **`code` de famille** (le front ne
+  re-parse jamais les extraits), `reference` (lien POP), `titre`, `musee`, `ville`
+  et `extrait` (le segment du champ Auteur, **verbatim**). Ordre d'export = ordre
+  canonique de l'échelle (`DOUTE_PAR_NIVEAU`).
+- `exemple_copie` : une œuvre « d'après » (même structure, sans code), pour donner
+  une preuve au bloc « À part ». Présente pour les 27 maîtres.
+
+Les exemples sont les **premiers rencontrés dans le CSV**, pas choisis (voir
+methode-et-limites.md). Champs `titre`/`musee`/`ville` parfois absents dans la
+base → `null` dans le JSON, repli géré côté front (« Sans titre »). Les titres
+sont souvent saisis en capitales : affichés tels que publiés, jamais réécrits.
+Aucun comptage modifié par cet enrichissement (vérifié à la régénération).
+
 ## Pièges métier connus (à vérifier sur les données réelles)
 
 - « présumé » porte souvent sur le **sujet représenté** (« portrait présumé de X »),

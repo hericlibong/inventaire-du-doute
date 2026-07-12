@@ -2,6 +2,95 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-12 — Relecture de CLAUDE.md : remise en accord avec la réalité (fait)
+
+Revue complète demandée par l'utilisateur. Trois écarts corrigés dans CLAUDE.md :
+- la roadmap était annoncée dans `decisions.md` alors qu'elle vit dans
+  `docs/roadmap.md` depuis le 2026-07-03 ;
+- la stack affichait encore « à terme D3.js » : le front SvelteKit statique
+  (décision du 2026-07-07), les dataviz Svelte/SVG et `npm run sync:data`
+  sont désormais décrits ;
+- « `data/` n'est pas versionné » était imprécis : seul `data/raw/` est ignoré,
+  `data/exports/` est suivi par git (de même `web/static/data/`, généré, ignoré).
+
+Dans la foulée : README remis à jour (il annonçait encore « Phase 1 en cours »,
+installation du front ajoutée) et note d'orientation en tête de la section
+roadmap historique de `decisions.md` (esquisse phase 0 conservée comme trace).
+
+## 2026-07-10 — Nuage : labels publics, axe réordonné, tooltips prudents (fait)
+
+Chantier « labels » du nuage traité (deux tours de proposition, validés avant
+implémentation). Fait :
+- **Couche de traduction** `web/src/lib/familles-public.js` (label public + formule
+  exacte + sens), réutilisable par Détail plus tard.
+- **Labels publics** sur l'axe : attribué à · nom (?) · son atelier · son cercle ·
+  de son école · un suiveur · sa manière · dans son goût. Plus de « ? » seul.
+- **Axe réordonné** par distance au maître (option B, typologie.md) : la lecture
+  gauche-droite est désormais honnête.
+- **Micro-légende** statique (1 ligne) « De gauche à droite, le lien au maître se
+  desserre. » — remplace la bulle rejetée, aucun saut.
+- **Tooltips** réécrits : `label — « formule exacte » : sens prudent. N œuvres.`
+  Sans niveau/famille/marqueur. Vérifié (Le Brun/école = 240).
+- **CLAUDE.md** : règle « Couche de libellé public obligatoire ».
+
+Contrôlé par capture (ordre, pas de chevauchement même « dans son goût ») et
+`npm run build` OK. Périmètre tenu (nuage seul). Reste noté : accueil, Alençon
+dans CLAUDE.md, refonte Détail — non traités volontairement.
+
+## 2026-07-09 — Nuage : bulle « comment lire » rejetée + les labels à retravailler (à faire)
+
+Retour utilisateur : la bulle dépliable « Comment lire ce graphique » est **très
+mauvaise**, non validable. **Supprimée** (même branche). Deux défauts :
+- **technique** : le `<details>` en se dépliant pousse brutalement le bloc
+  graphe+portrait de 3-4 cm → saut de page inacceptable ;
+- **de fond** : expliquer le graphe dans un bloc à part, avec des indications
+  éparpillées, **complique la lecture**. Un graphe se lit sans notice : il lui
+  faut une bonne **légende** et des **labels clairs**, pas un mode d'emploi.
+
+Constat plus large assumé : « **de gros progrès à faire en narration** ».
+
+**Prochain chantier décidé (rien n'est encore fait) — retravailler les LABELS du
+nuage**, avant toute légende. Trois axes de travail donnés par l'utilisateur :
+1. **les noms** — aujourd'hui « attribué à », « ? », « école de », « atelier »,
+   « entourage », « suiveur », « manière de », « genre de » sont **jetés tels
+   quels** sur l'axe ;
+2. **leur valeur / signification** — le lecteur ne sait pas ce que veut dire
+   « attribué à », « manière de »… ; le sens n'est donné nulle part ;
+3. **leur forme et leur présentation** — labels mal mis en évidence ; cas criant :
+   le label « **?** » seul **n'a aucun sens** affiché ainsi.
+
+Ordre : on travaille les labels d'abord (noms + sens + présentation), la légende
+ensuite. La réflexion « forme de légende » (pistes groupée/à plat) est **en
+attente**, ne pas l'implémenter. Chapô/bio à réduire aussi, mais **plus tard**.
+
+## 2026-07-09 — Refonte des textes de « Les presque » : séparer les trois natures
+
+Constat utilisateur : les textes de la fiche maître étaient « n'importe quoi » —
+techniques, non publiables. Diagnostic partagé : le défaut est **structurel**, le
+mode d'emploi de la dataviz avait envahi l'éditorial. Trois natures de texte
+mélangées (éditorial / mode d'emploi / mentions techniques).
+
+Fait (mode plan validé, deux maîtres témoins jugés sur pièce avant généralisation) :
+- **Éditorial séparé** : nouveau `web/src/lib/editorial-maitres.js` (bio + angle
+  par maître, couche éditoriale du front, pas des données). Témoins écrits main :
+  **François Clouet** (doute proche, « atelier ») et **Rembrandt** (doute lointain,
+  « à la manière de »). Les 25 autres : angle **dérivé** de la famille dominante
+  (repli honnête). Chiffres racontés en français (`fractionEnMots`).
+- **Mode d'emploi sorti une seule fois** : bulle dépliable « Comment lire ce
+  graphique » à côté de la bascule ; retiré de chaque fiche (figcaption + lecture
+  du nuage supprimés). La mise en garde d'attribution y est déplacée.
+- **Légende de portrait normée** : sujet + auteur + source + licence (plus de note
+  de méthode déguisée en légende).
+- **Vocabulaire interne banni** de l'interface : notice→œuvre, plus de « niveau »
+  affiché, « atelier (qualificatif, beaux-arts) »→« atelier de », vue Détail
+  nettoyée (colonne « Niveau » retirée, « Œuvres »).
+- **CLAUDE.md** : ajout des blocs « Principes de dataviz » et « Principes de
+  rédaction » pour que ces règles s'appliquent d'office. Consigné dans decisions.md.
+
+Vérifié par captures (Le Brun = angle dérivé, Clouet, Rembrandt, vue Détail) et
+`npm run build` OK. Reste (P3-T1) : écrire les 25 bios/angles à la main ;
+reformuler l'accueil (« notices », « lexique ») en gardant les deux dénominateurs.
+
 ## 2026-07-09 — Retour sur le nuage : plus cohérent, mais trop anonyme
 
 Verdict utilisateur sur le nuage : **plus cohérent narrativement et plus lisible**

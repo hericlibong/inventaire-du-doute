@@ -30,7 +30,12 @@ from config import CHEMIN_CSV, DOSSIER_EXPORTS, URL_CSV
 
 DOSSIER_WEB = DOSSIER_EXPORTS / "web"
 TAILLE_MORCEAU = 200_000
-MAX_EXEMPLES = 6  # notices réelles conservées par maître (une par famille max)
+# Notices réelles conservées par maître pour la vitrine « Œuvres » : une par
+# famille présente, deux pour la famille dominante (decisions.md, 2026-07-11).
+# Les exemples sont les PREMIERS rencontrés dans le CSV, pas choisis à la main
+# (règle documentée dans methode-et-limites.md). 8 familles + 1 dominante = 9.
+MAX_EXEMPLES = 9
+EXEMPLES_PAR_FAMILLE = 2  # gardés au fil de l'eau ; la sortie n'en publie 2 que pour la dominante
 
 # Niveau de chaque famille de doute (échelle typologie P2-T2).
 NIVEAU_FAMILLE = {
@@ -102,7 +107,19 @@ def _trouve_maitre(pivot: str):
 
 def _vide() -> dict:
     return {"propre": 0, "doute": 0, "copie": 0, "musees": set(),
-            "familles": {}, "niveaux": {1: 0, 2: 0, 3: 0}, "exemples": {}}
+            "familles": {}, "niveaux": {1: 0, 2: 0, 3: 0},
+            "exemples": {}, "exemple_copie": None}
+
+
+def _exemple(ref, titre, musee, ville, segment) -> dict:
+    """Une notice réelle pour la vitrine : lien POP + les mots exacts du musée."""
+    return {
+        "reference": ref,
+        "titre": titre if isinstance(titre, str) else None,
+        "musee": musee if isinstance(musee, str) else None,
+        "ville": ville if isinstance(ville, str) else None,
+        "extrait": segment,
+    }
 
 
 def main() -> None:
@@ -136,19 +153,18 @@ def main() -> None:
                     a["propre"] += 1
                 elif categorie == "copie":
                     a["copie"] += 1
+                    # une notice réelle de copie « d'après », pour le bloc « À part »
+                    if a["exemple_copie"] is None and isinstance(ref, str):
+                        a["exemple_copie"] = _exemple(ref, titre, musee, ville, segment)
                 elif categorie == "doute":
                     a["doute"] += 1
                     a["familles"][famille] = a["familles"].get(famille, 0) + 1
                     a["niveaux"][NIVEAU_FAMILLE[famille]] += 1
-                    # une notice réelle par famille (lien POP), pour l'exemple
-                    if famille not in a["exemples"] and isinstance(ref, str):
-                        a["exemples"][famille] = {
-                            "reference": ref,
-                            "titre": titre if isinstance(titre, str) else None,
-                            "musee": musee if isinstance(musee, str) else None,
-                            "ville": ville if isinstance(ville, str) else None,
-                            "extrait": segment,
-                        }
+                    # jusqu'à 2 notices réelles par famille (les premières
+                    # rencontrées) ; la sortie n'en publie 2 que pour la dominante
+                    exs = a["exemples"].setdefault(famille, [])
+                    if len(exs) < EXEMPLES_PAR_FAMILLE and isinstance(ref, str):
+                        exs.append(_exemple(ref, titre, musee, ville, segment))
         print(f"\r  {total:,} notices lues".replace(",", " "), end="", flush=True)
     print()
 
@@ -157,6 +173,17 @@ def main() -> None:
         a = agg[nom]
         familles = {code: a["familles"][code]
                     for code in markers.DOUTE_PAR_NIVEAU if code in a["familles"]}
+        # Exemples pour la vitrine : ordre canonique des familles (le même que
+        # l'axe du graphique), code de famille EXPORTÉ avec chaque exemple (le
+        # front ne re-parse jamais les extraits), 2 exemples pour la dominante.
+        dominante = max(familles, key=familles.get) if familles else None
+        exemples = []
+        for code in markers.DOUTE_PAR_NIVEAU:
+            if code not in a["exemples"]:
+                continue
+            garde = 2 if code == dominante else 1
+            for ex in a["exemples"][code][:garde]:
+                exemples.append({"code": code, **ex})
         artistes.append({
             "nom": nom,
             "propre": a["propre"],
@@ -169,7 +196,8 @@ def main() -> None:
                  "niveau": NIVEAU_FAMILLE[code], "notices": n}
                 for code, n in familles.items()
             ],
-            "exemples": list(a["exemples"].values())[:MAX_EXEMPLES],
+            "exemples": exemples[:MAX_EXEMPLES],
+            "exemple_copie": a["exemple_copie"],
         })
     artistes.sort(key=lambda x: x["doute"], reverse=True)
 

@@ -15,14 +15,35 @@
 	/* Accent éditorial */
 	--couleur-accent: #7a4a2b;
 
-	/* Échelle du doute — du plus proche au plus lointain de l'auteur.
-	   Niveau 1 « Presque lui », 2 « Autour de lui », 3 « Son style, sans lui ». */
-	--niveau-1: #b8551f;
-	--niveau-2: #d98a3d;
-	--niveau-3: #e8c07a;
+	/* Grammaire couleur « boîte de pigments » (decisions.md, 2026-07-11) : une
+	   couleur STABLE par forme de doute, partout dans l'application (points du
+	   graphique + pastilles de la vitrine « Œuvres »). Pigments de peinture
+	   ancienne, teintes sourdes/patrimoniales, toutes lisibles sur le fond crème
+	   (contraste ≥ 3:1 vérifié) et LUMINOSITÉ ALTERNÉE le long de l'axe (sombre/clair) :
+	   deux formes voisines ne diffèrent jamais par la seule teinte — la luminosité
+	   survit au daltonisme (palette révisée 2026-07-12, chiffres deutan dans
+	   decisions.md). Température = distance au maître : rouges
+	   (niveau 1) → terreux qui bascule au froid (niveau 2) → pourprés (niveau 3). */
+	--forme-attribue: #9e2b12;            /* terre de Sienne brûlée */
+	--forme-point-interrogation: #cd7048; /* terre rose */
+	--forme-atelier: #b3821d;             /* ocre jaune */
+	--forme-entourage: #556327;           /* terre verte */
+	--forme-ecole: #3e6f9e;               /* bleu de smalt */
+	--forme-suiveur: #175c50;             /* vert-de-gris */
+	--forme-maniere: #7b5fb5;             /* violet minéral */
+	--forme-genre: #742e4f;               /* lie de vin */
 
-	/* Catégories voisines (jamais additionnées au doute) */
-	--couleur-copie: #4a6b7a;
+	/* Échelle du doute à 3 niveaux (jauges de la liste) — du plus proche au plus
+	   lointain de l'auteur. Chaque niveau = le pigment REPÈRE de sa zone, pour que
+	   la jauge à 3 niveaux soit une version résumée des 8 formes (même langue). */
+	--niveau-1: var(--forme-attribue);  /* Presque lui = le rouge */
+	--niveau-2: var(--forme-atelier);   /* Autour de lui = l'ocre */
+	--niveau-3: var(--forme-maniere);   /* Son style, sans lui = le violet */
+
+	/* Catégories voisines (jamais additionnées au doute). La copie « d'après » est
+	   NEUTRE (gris), hors de la gamme colorée du doute : une copie assumée n'est
+	   pas un doute, sa couleur le dit autant que le texte. */
+	--couleur-copie: #6b6f76;
 	--couleur-revision: #6b5b7a;
 
 	/* Typographie et rythme */

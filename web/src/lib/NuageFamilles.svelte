@@ -1,29 +1,30 @@
 <script>
-	import { NIVEAUX, nombre } from '$lib/joconde.js';
+	import { nombre } from '$lib/joconde.js';
+	import { FAMILLE_PUBLIC, ORDRE_FAMILLES, tooltipFamille, resumeFamille } from '$lib/familles-public.js';
+	import Infobulle from '$lib/Infobulle.svelte';
 
-	// « Le combien », comparable entre maîtres (decisions.md 2026-07-08), en regard
-	// d'un portrait du maître (maquette 2026-07-09 : portrait libre de droit à venir,
-	// ici un placeholder — l'idée est de donner de la présence à la visualisation).
-	// Scatter sur grille FIXE : axe X = familles (mêmes colonnes pour tous), axe Y =
-	// volume, plafond COMMUN. La hauteur porte la mesure, la taille l'accentue.
+	// « Le combien », comparable entre maîtres (decisions.md 2026-07-08). Scatter sur
+	// grille FIXE : axe X = familles (mêmes colonnes pour tous), axe Y = volume,
+	// plafond COMMUN. La hauteur porte la mesure. Le portrait du maître a été sorti
+	// d'ici (il appartient au header de fiche, décision 2026-07-11) → le graphe
+	// occupe désormais toute la largeur de sa zone.
 	let { maitre, plafond } = $props();
 
-	// Axe X : ordre canonique du lexique, « présumé » retiré (absent des 27).
-	// Libellés d'axe courts ; le libellé technique complet reste au survol.
-	const FAMILLES = [
-		{ code: 'attribue',            court: 'attribué à', niveau: 1, couleur: '#b8551f' },
-		{ code: 'point_interrogation', court: '?',          niveau: 1, couleur: '#e08a5a' },
-		{ code: 'ecole_de',            court: 'école de',   niveau: 2, couleur: '#c98a2e' },
-		{ code: 'atelier_de',          court: 'atelier',    niveau: 2, couleur: '#e0a94f' },
-		{ code: 'entourage_de',        court: 'entourage',  niveau: 2, couleur: '#b5934a' },
-		{ code: 'suiveur_de',          court: 'suiveur',    niveau: 2, couleur: '#8f7b3d' },
-		{ code: 'maniere_de',          court: 'manière de', niveau: 3, couleur: '#cbb06a' },
-		{ code: 'genre_de',            court: 'genre de',   niveau: 3, couleur: '#9a9b6b' }
-	];
+	// Axe X ordonné par distance narrative au maître (docs/typologie.md), labels
+	// publics et couleur stable par famille — tous deux depuis familles-public.js
+	// (source unique, partagée avec la vitrine « Œuvres »). Même ordre pour tous →
+	// l'axe se lit de gauche (presque lui) à droite (seulement son style).
+	const FAMILLES = ORDRE_FAMILLES.map((code) => ({
+		code,
+		label: FAMILLE_PUBLIC[code].label,
+		couleur: FAMILLE_PUBLIC[code].couleur
+	}));
 
 	// Géométrie SVG resserrée (retour 2026-07-09) : grille plus dense, points plus
-	// gros, viewBox compact pour tenir dans une colonne en regard du portrait.
-	const X0 = 30, X_LARG = 342, Y_HAUT = 10, Y_HAUTEUR = 226;
+	// gros, viewBox compact. `Y_HAUT` doit laisser AU MOINS le rayon max d'une bulle
+	// (16, au plafond) sous le bord haut, sinon le point à 240 est rogné : on prend
+	// 24 de marge en tête. `Y_BASE` reste à 236 (ligne de base et axe X inchangés).
+	const X0 = 30, X_LARG = 342, Y_HAUT = 24, Y_HAUTEUR = 212;
 	const Y_BASE = Y_HAUT + Y_HAUTEUR;
 	const pas = X_LARG / FAMILLES.length;
 	const colonneX = (i) => X0 + pas * (i + 0.5);
@@ -43,30 +44,41 @@
 				cy: y(fam.notices),
 				r: rayon(fam.notices),
 				notices: fam.notices,
-				libelle: fam.libelle
+				tt: tooltipFamille(f.code, maitre.nom, fam.notices),
+				resume: resumeFamille(f.code, maitre.nom, fam.notices)
 			};
 		}).filter(Boolean)
 	);
+
+	// Tooltip HTML custom (le <title> SVG natif, non stylable, est abandonné —
+	// décision 2026-07-10). `actif` porte les données à afficher + la position en
+	// pixels DANS le conteneur .graphe-hote, calculée depuis la position réelle du
+	// point à l'écran (le SVG a son propre repère viewBox, on ne peut pas y lire des
+	// px). `dessous` bascule le panneau sous le point quand il est trop haut, pour ne
+	// jamais déborder en tête de graphe. Le tooltip ne vit qu'au survol/focus : il
+	// disparaît dès qu'on quitte le point, il ne masque donc pas durablement le graphe.
+	let regardEl;
+	let actif = $state(null);
+
+	function montre(event, p) {
+		const cible = event.currentTarget.getBoundingClientRect();
+		const hote = regardEl.getBoundingClientRect();
+		const y = cible.top - hote.top;
+		actif = {
+			tt: p.tt,
+			x: cible.left + cible.width / 2 - hote.left,
+			y,
+			dessous: y < 90
+		};
+	}
+
+	function cache() {
+		actif = null;
+	}
 </script>
 
 <figure class="nuage">
-	<figcaption>
-		La <strong>forme du doute</strong> autour de {maitre.nom}, sur une échelle
-		<strong>commune à tous les maîtres</strong> (plafond {nombre(plafond)} : le
-		record, « école de » Le Brun). Un nuage bas = un doute modeste face au record.
-	</figcaption>
-
-	<div class="regard">
-		<!-- Placeholder du portrait (image libre de droit à sourcer — maquette) -->
-		<div class="portrait" aria-label="Portrait de {maitre.nom} (à venir)">
-			<svg viewBox="0 0 100 130" class="silhouette" role="img" aria-hidden="true">
-				<rect width="100" height="130" fill="#efe9df" />
-				<circle cx="50" cy="48" r="24" fill="#cdc3b2" />
-				<path d="M14 130 Q14 84 50 84 Q86 84 86 130 Z" fill="#cdc3b2" />
-			</svg>
-			<span class="portrait-legende">{maitre.nom}<br /><em>portrait libre de droit — à venir</em></span>
-		</div>
-
+	<div class="graphe-hote" bind:this={regardEl}>
 		<svg viewBox="0 0 380 300" class="graphe" role="img"
 			aria-label="Nuage des familles de doute pour {maitre.nom}, échelle commune">
 			<!-- graduations horizontales + valeurs -->
@@ -78,31 +90,50 @@
 			<line x1={X0} x2={X0 + X_LARG} y1={Y_BASE} y2={Y_BASE} class="base" />
 			<text x={X0 - 5} y={Y_BASE + 3} text-anchor="end" class="axe-y">0</text>
 
-			<!-- libellés de familles (axe X, inclinés) -->
+			<!-- libellés publics de familles (axe X, inclinés) -->
 			{#each FAMILLES as f, i (f.code)}
 				<text
 					x={colonneX(i)}
 					y={Y_BASE + 12}
 					text-anchor="end"
 					class="axe-x"
-					transform="rotate(-40 {colonneX(i)} {Y_BASE + 12})">{f.court}</text
+					transform="rotate(-42 {colonneX(i)} {Y_BASE + 12})">{f.label}</text
 				>
 			{/each}
 
-			<!-- points -->
+			<!-- points : survol/focus → tooltip HTML custom ; aria-label = repli
+			     textuel pour lecteur d'écran (le <title> natif a disparu). -->
 			{#each points as p (p.code)}
-				<circle cx={p.x} cy={p.cy} r={p.r} fill={p.couleur} fill-opacity="0.9" stroke="#fff" stroke-width="0.7">
-					<title>{p.libelle} — {NIVEAUX[p.niveau - 1].libelle} : {nombre(p.notices)} notices</title>
-				</circle>
+				<circle
+					cx={p.x}
+					cy={p.cy}
+					r={p.r}
+					style="fill: {p.couleur}"
+					fill-opacity="0.9"
+					stroke="#fff"
+					stroke-width="0.7"
+					class="point"
+					tabindex="0"
+					role="button"
+					aria-label={p.resume}
+					onmouseenter={(e) => montre(e, p)}
+					onmouseleave={cache}
+					onfocus={(e) => montre(e, p)}
+					onblur={cache}
+				/>
 			{/each}
 		</svg>
+
+		<!-- Infobulle partagée (Infobulle.svelte) : header / valeur / précision /
+		     mention type. Le contenu accessible passe par l'aria-label du point. -->
+		{#if actif}
+			<Infobulle tt={actif.tt} x={actif.x} y={actif.y} dessous={actif.dessous} />
+		{/if}
 	</div>
 
-	<p class="lecture">
-		La <strong>hauteur</strong> porte la mesure (nombre d'œuvres) ; la taille du
-		point ne fait que l'accentuer. Échelle linéaire, chiffres réels. Survolez un
-		point pour le compte exact.
-	</p>
+	<!-- Micro-légende : la logique de distance, en une ligne. Statique (jamais de
+	     bloc dépliable ni de mode d'emploi séparé — voir CLAUDE.md). -->
+	<figcaption class="gradient">De gauche à droite, le lien au maître se desserre.</figcaption>
 </figure>
 
 <style>
@@ -110,47 +141,30 @@
 		margin: 0;
 	}
 
-	figcaption {
-		font-size: 1rem;
-		max-width: 42rem;
-		margin-bottom: 0.75rem;
+	.graphe-hote {
+		position: relative; /* repère du tooltip HTML positionné en absolu */
 	}
 
-	.regard {
-		display: flex;
-		align-items: stretch;
-		gap: 1rem;
+	.point {
+		cursor: pointer;
+		transition: fill-opacity 0.12s ease;
 	}
 
-	.portrait {
-		flex: 0 0 30%;
-		max-width: 12rem;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: 0.5rem;
-		padding: 0.5rem;
-		border: 1px solid var(--couleur-trait);
-		border-radius: 3px;
-		background: #fff;
+	.point:hover,
+	.point:focus-visible {
+		fill-opacity: 1;
 	}
 
-	.silhouette {
-		width: 100%;
-		height: auto;
-		border-radius: 2px;
+	.point:focus-visible {
+		outline: 2px solid var(--couleur-encre);
+		outline-offset: 1px;
 	}
 
-	.portrait-legende {
-		font-size: 0.8rem;
-		text-align: center;
-		color: var(--couleur-encre-douce);
-		line-height: 1.3;
-	}
+	/* Les styles du panneau d'infobulle vivent dans Infobulle.svelte (partagé). */
 
 	.graphe {
-		flex: 1 1 auto;
-		min-width: 0;
+		display: block;
+		width: 100%;
 		height: auto;
 	}
 
@@ -176,21 +190,11 @@
 		fill: var(--couleur-encre);
 	}
 
-	.lecture {
+	.gradient {
+		margin: 0.5rem 0 0;
 		font-size: 0.8rem;
+		font-style: italic;
+		text-align: center;
 		color: var(--couleur-encre-douce);
-		max-width: 42rem;
-		margin: 0.75rem 0 0;
-	}
-
-	@media (max-width: 560px) {
-		.regard {
-			flex-direction: column;
-		}
-		.portrait {
-			flex-basis: auto;
-			max-width: 10rem;
-			align-self: flex-start;
-		}
 	}
 </style>

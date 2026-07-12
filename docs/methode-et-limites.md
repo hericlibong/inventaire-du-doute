@@ -51,6 +51,25 @@ par un humain, selon le protocole suivant :
   notice — pas s'il apparaît dans une biographie, un nom propre ou à propos
   d'une autre œuvre.
 
+## Les œuvres montrées en exemple (vitrine « Œuvres », 2026-07-11)
+
+Sur chaque fiche de maître, l'onglet « Œuvres » montre quelques cas concrets.
+Ces exemples sont **pris automatiquement dans la base, pas choisis à la main** :
+pour chaque forme de doute présente autour d'un nom, le pipeline retient la
+**première œuvre rencontrée** dans le fichier de référence (deux pour la forme
+la plus fréquente), plus une copie « d'après ». Ni tri, ni sélection éditoriale,
+ni recherche de la « meilleure » pièce : aucun risque de mise en scène.
+
+Conséquences assumées :
+- l'échantillon n'est **ni représentatif ni exhaustif** (jusqu'à 9 œuvres quand
+  un maître peut en compter des centaines) — c'est une illustration, jamais un
+  comptage ;
+- la citation affichée entre guillemets est le **contenu exact du champ auteur**
+  de la fiche Joconde (verbatim, capitales et abréviations comprises) ;
+- chaque exemple renvoie à sa **fiche publique sur POP** (plateforme ouverte du
+  patrimoine) ; cette fiche vit sa vie indépendamment de notre version de
+  référence du fichier et peut avoir été mise à jour depuis.
+
 ## Source
 
 Jeu de données « Collections des musées de France : base Joconde »,
