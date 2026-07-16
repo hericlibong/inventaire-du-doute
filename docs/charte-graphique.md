@@ -131,9 +131,12 @@ placard : `GalaxieMaitre` (abandonné).
 
 ### Découpage en zones (implémentation par petites étapes, validation à chaque)
 
-- **Prototype (en cours)** — BandeauMaitre + ChiffreVedette + onglets renommés
-  Profil / Œuvres / Musées, appliqués à une **fiche maître réelle**. Sans toucher
-  au répertoire, au nuage (pas de recadrage TroisTerritoires), ni à l'accueil.
+- **Prototype (fait le 2026-07-16 quinquies, ⏸ à valider)** — `BandeauMaitre` +
+  `ChiffreVedette` + onglets renommés Profil / Œuvres / Musées, appliqués à la
+  **fiche maître réelle**. Sans toucher au répertoire, au nuage (pas de recadrage
+  TroisTerritoires), ni à l'accueil. Deux points ouverts à l'arbitrage :
+  synthèse calculée réintroduite (factuelle) et plafond de `fractionEnMots`
+  (voir decisions.md 2026-07-16 quinquies).
 - Zone Répertoire · Zone TroisTerritoires · Zone « Comprendre les mentions » ·
   Zone Accueil-couverture (figure Joconde) · Zone Méthode — **après** le prototype,
   une par une.

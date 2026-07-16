@@ -2,6 +2,42 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-16 (quinquies) — Charte palier 3 : prototype du kit (BandeauMaitre, ChiffreVedette, onglets)
+
+Premier palier de code du kit de composants (charte §5), en prototype sur la fiche
+maître réelle. Trois décisions à consigner, dont une qui touche l'**approche
+éditoriale** (donc à valider) :
+
+1. **Onglets renommés** Graphique/Œuvres/Carte → **Profil · Œuvres · Musées**.
+   Motif : libellés éditoriaux (ce que le lecteur y trouve), pas des noms de forme
+   de dataviz. Mapping : *Profil* = le graphique des formes du doute (nuage),
+   *Œuvres* = les cas concrets, *Musées* = la carte géographique. État interne
+   `vue` aligné (`profil`/`oeuvres`/`musees`).
+
+2. **Synthèse calculée dans le bandeau — réintroduction assumée.** Le bloc de profil
+   avait perdu tout « angle » le 2026-07-10 (2e passe) : le paragraphe de situation
+   ne faisait plus que situer volume et dispersion. La charte du 2026-07-16 demande
+   une **« phrase de synthèse calculée »** dans BandeauMaitre. On la réintroduit,
+   mais **strictement factuelle** : elle nomme la **formule la plus fréquente** pour
+   ce maître (famille dominante d'artistes.json) et sa part, sans dire ce que la
+   formule « signifie ». Cohérent avec « on lit ce que les musées écrivent » : c'est
+   un constat de fréquence, pas une interprétation du doute (le sens reste aux
+   tooltips et au graphique). Le paragraphe volume/dispersion, lui, ne change pas.
+   **⏸ à valider** (formulation « Le plus souvent : « … », <part> des œuvres concernées »).
+
+3. **Limite de `fractionEnMots` à corriger.** Le helper plafonne à
+   « près des deux tiers » (seuil 62 %). Or la formule dominante peut monter bien
+   plus haut : *école de* Le Brun ≈ 240/310 = **77 %**, rendu « près des deux tiers »
+   → **sous-estimation**. Options si le point 2 est validé : ajouter des paliers
+   hauts au helper (« plus des trois quarts », « la grande majorité »…) OU réserver
+   `fractionEnMots` aux fractions basses/moyennes et traiter la dominante à part.
+   Non tranché ici (`fractionEnMots` est partagé, ne pas le modifier sans décision).
+
+Composants : `web/src/lib/ChiffreVedette.svelte` (grand nombre Fraunces tabulaire +
+légende), `web/src/lib/BandeauMaitre.svelte` (portrait agrandi + nom + synthèse +
+chiffres, seuil mono-colonne géré en `@container`). Périmètre tenu : ni répertoire,
+ni nuage, ni accueil touchés.
+
 ## 2026-07-16 (quater) — Chantier direction artistique & architecture éditoriale (cadrage, ⏸ à valider)
 
 Insertion d'un chantier de cadrage **plus haut niveau que le kit de composants** :

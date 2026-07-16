@@ -4,10 +4,8 @@
 	import OeuvresMaitre from '$lib/OeuvresMaitre.svelte';
 	import CarteMaitre from '$lib/CarteMaitre.svelte';
 	import LegendeFamilles from '$lib/LegendeFamilles.svelte';
-	import PortraitMaitre from '$lib/PortraitMaitre.svelte';
-	import { nombre, deNom, musees } from '$lib/joconde.js';
-	import { oeuvres } from '$lib/familles-public.js';
-	import { bioMaitre } from '$lib/editorial-maitres.js';
+	import BandeauMaitre from '$lib/BandeauMaitre.svelte';
+	import { nombre } from '$lib/joconde.js';
 	// Archive : la piste « galaxie » est conservée dans $lib/GalaxieMaitre.svelte
 	// (abandonnée dans cette vue, decisions.md 2026-07-08), non importée ici.
 
@@ -22,9 +20,11 @@
 		...artistes.flatMap((a) => a.familles.map((f) => f.notices))
 	);
 
-	// Deux regards sur la même donnée : le graphique (les formes et volumes du
-	// doute) ou les œuvres (les cas concrets, avec les mots publiés).
-	let vue = $state('graphique');
+	// Onglets de la fiche maître (libellés éditoriaux, charte §5) :
+	//   profil  — le graphique des formes et volumes du doute (NuageFamilles) ;
+	//   oeuvres — les cas concrets, avec les mots publiés (OeuvresMaitre) ;
+	//   musees  — où ces œuvres sont conservées, sur la carte (CarteMaitre).
+	let vue = $state('profil');
 
 	// Recherche/filtre sur les maîtres vedettes (moteur sur toute la base = plus
 	// tard, dépend d'un export de tous les noms — voir roadmap P3-T1).
@@ -36,9 +36,6 @@
 	// Maître sélectionné pour la fiche (le plus douté par défaut).
 	let selection = $state(artistes[0].nom);
 	const maitre = $derived(artistes.find((a) => a.nom === selection));
-
-	// Total d'attributions rattachées au nom (ferme + doute), pour situer le volume.
-	const totalNom = (a) => a.propre + a.doute;
 </script>
 
 <h1>Les presque</h1>
@@ -91,50 +88,24 @@
 
 	{#if maitre}
 		<section class="fiche">
-			<header>
-				<!-- Bloc profil : nom pleine largeur, puis portrait à GAUCHE + texte à
-				     DROITE (décision 2026-07-11, 2e disposition). Le profil est HORS de la
-				     zone d'onglet → portrait visible en Graphique comme en Détail, sans
-				     duplication ni saut au changement. -->
-				<h2>{maitre.nom}</h2>
-				<div class="profil">
-					<div class="profil-portrait">
-						<PortraitMaitre {maitre} portrait={portraits[maitre.nom]} />
-					</div>
-					<div class="profil-texte">
-						{#if bioMaitre(maitre.nom)}
-							<p class="bio">{bioMaitre(maitre.nom)}</p>
-						{/if}
-						<!-- Deux blocs empilés où le CHIFFRE porte l'appui visuel (volume, puis
-						     dispersion) : la colonne pèse assez pour répondre au portrait, on
-						     obtient un vrai bloc de profil (décision 2026-07-11, disposition B).
-						     Le chiffre reste un repère de profil, pas la mesure — la vraie
-						     mesure est dans le graphe. -->
-						<p class="situation">
-							<span class="chiffre">{oeuvres(totalNom(maitre))}</span>
-							sous le nom {deNom(maitre.nom)}.
-						</p>
-						<p class="situation">
-							<span class="chiffre">{musees(maitre.musees)}</span>
-							où ces œuvres sont conservées.
-						</p>
-					</div>
-				</div>
+			<!-- Bandeau « scène du maître » : portrait + nom + synthèse + chiffres.
+			     HORS de la zone d'onglet → visible sur les trois vues, sans saut au
+			     changement (charte §5, ancien header.profil absorbé). -->
+			<BandeauMaitre {maitre} portrait={portraits[maitre.nom]} />
 
-				<div class="bascule" role="tablist" aria-label="Choisir la vue">
-					<button role="tab" aria-selected={vue === 'graphique'} class:actif={vue === 'graphique'} onclick={() => (vue = 'graphique')}>
-						Graphique
-					</button>
-					<button role="tab" aria-selected={vue === 'oeuvres'} class:actif={vue === 'oeuvres'} onclick={() => (vue = 'oeuvres')}>
-						Œuvres
-					</button>
-					<button role="tab" aria-selected={vue === 'carte'} class:actif={vue === 'carte'} onclick={() => (vue = 'carte')}>
-						Carte
-					</button>
-				</div>
-			</header>
+			<div class="bascule" role="tablist" aria-label="Choisir la vue">
+				<button role="tab" aria-selected={vue === 'profil'} class:actif={vue === 'profil'} onclick={() => (vue = 'profil')}>
+					Profil
+				</button>
+				<button role="tab" aria-selected={vue === 'oeuvres'} class:actif={vue === 'oeuvres'} onclick={() => (vue = 'oeuvres')}>
+					Œuvres
+				</button>
+				<button role="tab" aria-selected={vue === 'musees'} class:actif={vue === 'musees'} onclick={() => (vue = 'musees')}>
+					Musées
+				</button>
+			</div>
 
-			{#if vue === 'graphique'}
+			{#if vue === 'profil'}
 				<NuageFamilles {maitre} {plafond} />
 			{:else if vue === 'oeuvres'}
 				<OeuvresMaitre {maitre} />
@@ -249,78 +220,10 @@
 	}
 
 	.fiche {
-		/* conteneur de requête : le portrait passe sous le texte selon la largeur
+		/* conteneur de requête : le bandeau passe en une colonne selon la largeur
 		   RÉELLE de la fiche (pas celle de l'écran), donc « plus tôt » quand l'aside
-		   comprime la colonne (décision 2026-07-11). */
+		   comprime la colonne (décision 2026-07-11 ; seuil géré dans BandeauMaitre). */
 		container-type: inline-size;
-	}
-
-	/* Bloc profil : portrait (largeur bornée) à gauche, texte (largeur souple) à
-	   droite, centrés l'un par rapport à l'autre → bloc compact, pas de portrait
-	   qui flotte seul. */
-	.profil {
-		display: grid;
-		/* colonne texte bornée : elle « répond » au portrait, elle ne s'étale pas
-		   comme une phrase de page. justify-content: start → le bloc reste à gauche. */
-		grid-template-columns: 12rem minmax(0, 24rem);
-		justify-content: start;
-		gap: 1.75rem;
-		align-items: start; /* texte calé en HAUT du portrait, pas centré */
-		margin-top: 0.5rem;
-	}
-
-	.profil-portrait {
-		width: 12rem;
-		max-width: 100%;
-	}
-
-	/* Colonne de texte : blocs empilés, espacés, pour occuper la hauteur du portrait. */
-	.profil-texte {
-		display: flex;
-		flex-direction: column;
-		gap: 1.1rem;
-	}
-
-	.situation {
-		margin: 0;
-		font-size: 1.05rem;
-		line-height: 1.55;
-	}
-
-	/* Le chiffre en point d'appui : gros, en couleur d'accent, sur sa propre ligne,
-	   pour donner du poids à la colonne face au portrait. Repère de profil, pas la
-	   mesure principale (celle-ci reste dans le graphe). */
-	.chiffre {
-		display: block;
-		font-family: var(--police-titre);
-		font-size: 1.5rem;
-		font-weight: bold;
-		color: var(--couleur-accent);
-		line-height: 1.15;
-	}
-
-	/* Fiche étroite : une seule colonne — portrait puis texte, alignés à gauche
-	   (pas deux colonnes écrasées). Le seuil porte sur la largeur RÉELLE de la
-	   fiche, donc le passage se fait « plus tôt » quand l'aside comprime la colonne. */
-	@container (max-width: 32rem) {
-		.profil {
-			grid-template-columns: 1fr;
-			gap: 0.75rem;
-		}
-		.profil-portrait {
-			justify-self: start;
-		}
-	}
-
-	.fiche h2 {
-		font-family: var(--police-titre);
-		margin: 0;
-	}
-
-	.bio {
-		margin: 0;
-		color: var(--couleur-encre-douce);
-		font-style: italic;
 	}
 
 	.bascule {

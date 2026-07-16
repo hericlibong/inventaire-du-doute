@@ -57,9 +57,15 @@ comme historique ; ce bloc est le cap qui prime.*
             **répertoire ↔ profil** dans « Explorer les maîtres » ; (4) **distance à
             la main du maître** = principe visuel central (3 territoires). ⏸ **à
             valider avant le palier 3.**
-      - [ ] Palier 3 — kit de composants unifié (cartes, onglets, légende, barres ;
+      - [~] Palier 3 — kit de composants unifié (cartes, onglets, légende, barres ;
             nombres en Public Sans tabulaire ; micro-légendes en italique Spectral)
             — **au service de l'architecture éditoriale ci-dessus**
+            - [x] **Prototype** (2026-07-16 quinquies, ⏸ à valider) — `BandeauMaitre`
+                  + `ChiffreVedette` + onglets Profil / Œuvres / Musées sur la fiche
+                  maître réelle. Ouverts : synthèse calculée (factuelle) + plafond
+                  `fractionEnMots` (decisions.md même date).
+            - [ ] Zones suivantes une par une : Répertoire · TroisTerritoires ·
+                  « Comprendre les mentions » · Accueil-couverture · Méthode.
 
 ### 2. En réserve (conservé, hors V1 publique)
 - [~] **Avant / après** (`/revisions`) — construit (onglets, anneau, prototype

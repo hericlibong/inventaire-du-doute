@@ -2,6 +2,30 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-16 (quinquies) — Charte, palier 3 : prototype BandeauMaitre + ChiffreVedette (fait, ⏸)
+
+Reprise après plantage machine : d'abord un commit de sauvegarde de tout le
+travail non versionné depuis « Les presque : vitrine » (rubrique Avant/après,
+Vue d'ensemble, charte paliers 1-2), `museum.zip` (backup local, 1,1 Go) exclu
+via `.gitignore`. Puis **prototype du kit** (charte §5) sur la fiche maître réelle,
+sans toucher au répertoire, au nuage ni à l'accueil :
+- **`ChiffreVedette.svelte`** — primitive : grand nombre (Fraunces tabulaire) +
+  légende courte.
+- **`BandeauMaitre.svelte`** — « scène du maître » : portrait **agrandi** (14 rem)
+  + nom + **phrase de synthèse calculée** + deux ChiffreVedette (œuvres sous le nom /
+  musées). Absorbe l'ancien bloc `header.profil` de `les-presque/+page.svelte`.
+- **Onglets renommés** Graphique/Œuvres/Carte → **Profil · Œuvres · Musées**
+  (libellés éditoriaux, charte §5) ; état interne `vue` : `profil`/`oeuvres`/`musees`.
+- CSS migré du `+page` vers le bandeau ; `build` OK ; vérifié par capture (Le Brun).
+
+Deux points laissés à l'arbitrage (decisions.md même date) : (1) la synthèse
+calculée **réintroduit** une phrase dérivée retirée le 2026-07-10 — assumée car
+purement factuelle (nomme la formule dominante, ne l'interprète pas) ; (2)
+`fractionEnMots` **plafonne à « près des deux tiers » (62 %)** alors que la mention
+dominante peut monter à ~77 % (école de Le Brun) → sous-estimation à corriger si
+validé. Reste : validation utilisateur, puis zones suivantes du kit (répertoire,
+TroisTerritoires, accueil…).
+
 ## 2026-07-16 (quater) — Chantier direction artistique & architecture éditoriale
 
 Cadrage de plus haut niveau inséré avant le kit de composants : repenser l'appli
