@@ -1,0 +1,116 @@
+{
+  "source": "Collections des musées de France : base Joconde",
+  "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb",
+  "version_donnee": "2026-07-01",
+  "lexique": "markers.py v2 (famille_segment, par segment du champ Auteur)",
+  "critere_27": "maître de référence ET ≥ 20 notices de doute (hors copie)",
+  "date_generation": "2026-07-15T15:32:05+00:00",
+  "message_central": "Dans l'ensemble de Joconde, « attribué à » domine fortement. Dans les 27 noms retenus, les liens plus indirects — école, atelier, manière — prennent plus de place.",
+  "note_methodo": "Les familles peuvent se recouvrir : on ne les additionne pas et on n'utilise pas de diagramme en anneau. Hors des 27 noms, seul le total par famille est publiable (pas de classement par nom). La monoculture divulguée (planches Barla, Nice) pèse une large part du doute national ; « global hors monoculture » permet de la neutraliser.",
+  "totaux": {
+    "doute_total": 24507,
+    "doute_dans_27": 2341,
+    "doute_hors_27": 22166,
+    "doute_hors_monoculture": 18716
+  },
+  "monoculture": {
+    "musee": "muséum d'histoire naturelle",
+    "ville": "Nice",
+    "libelle": "Muséum d'histoire naturelle de Nice — planches de Barla (attribué à)",
+    "doute": 5791,
+    "part_du_doute_national": 0.2363
+  },
+  "familles": [
+    {
+      "code": "attribue",
+      "libelle": "attribué à",
+      "niveau": 1,
+      "global": 17926,
+      "dans_27": 876,
+      "hors_27": 17050
+    },
+    {
+      "code": "point_interrogation",
+      "libelle": "? (point d'interrogation)",
+      "niveau": 1,
+      "global": 2213,
+      "dans_27": 25,
+      "hors_27": 2188
+    },
+    {
+      "code": "ecole_de",
+      "libelle": "école de",
+      "niveau": 2,
+      "global": 1871,
+      "dans_27": 919,
+      "hors_27": 952
+    },
+    {
+      "code": "atelier_de",
+      "libelle": "atelier (qualificatif, beaux-arts)",
+      "niveau": 2,
+      "global": 1236,
+      "dans_27": 230,
+      "hors_27": 1006
+    },
+    {
+      "code": "maniere_de",
+      "libelle": "(à la) manière de",
+      "niveau": 3,
+      "global": 703,
+      "dans_27": 181,
+      "hors_27": 522
+    },
+    {
+      "code": "entourage_de",
+      "libelle": "entourage de",
+      "niveau": 2,
+      "global": 503,
+      "dans_27": 77,
+      "hors_27": 426
+    },
+    {
+      "code": "genre_de",
+      "libelle": "genre de",
+      "niveau": 3,
+      "global": 303,
+      "dans_27": 25,
+      "hors_27": 278
+    },
+    {
+      "code": "suiveur_de",
+      "libelle": "suiveur de",
+      "niveau": 3,
+      "global": 80,
+      "dans_27": 8,
+      "hors_27": 72
+    }
+  ],
+  "niveaux": [
+    {
+      "niveau": 1,
+      "libelle": "Presque lui",
+      "global": 20014,
+      "dans_27": 901,
+      "global_hors_monoculture": 14223
+    },
+    {
+      "niveau": 2,
+      "libelle": "Autour de lui",
+      "global": 3537,
+      "dans_27": 1234,
+      "global_hors_monoculture": 3537
+    },
+    {
+      "niveau": 3,
+      "libelle": "Son style, sans lui",
+      "global": 956,
+      "dans_27": 206,
+      "global_hors_monoculture": 956
+    }
+  ],
+  "copies_dapres": {
+    "total": 22624,
+    "dont_d_apres": 22564
+  }
+}

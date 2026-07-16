@@ -45,7 +45,7 @@ NIVEAU_FAMILLE = {
 }
 
 COLONNES = ["Reference", "Auteur", "Domaine", "Code_Museofile",
-            "Nom_officiel_musee", "Ville", "Titre"]
+            "Nom_officiel_musee", "Ville", "Titre", "coordonnees"]
 
 # Liste vedette V1. Chaque maître : (motifs inclus, motifs exclus) sur le pivot
 # normalisé. Ordonnée par doute décroissant (mesuré 2026-07-07). Les deux
@@ -96,11 +96,23 @@ def _pivot(segment: str) -> str:
     return _sans_accents(re.sub(r"\s+", " ", sans_paren).strip(" ,;").upper())
 
 
+def _mot_entier(motif: str, pivot: str) -> bool:
+    """Le motif apparaît-il comme MOT ENTIER dans le pivot ? On a longtemps testé
+    par simple sous-chaîne (`motif in pivot`), ce qui rattachait à tort des noms
+    différents partageant une racine : « SERODINE » → Rodin, « VINCIDOR » → Vinci,
+    « SOLDYCK » → Van Dyck, « RIBERAT » → Ribera, « TINTORETTO Domenico » (le fils)
+    → Le Tintoret (decisions.md / donnees.md, 2026-07-13). Le test mot entier lève
+    l'ambiguïté ; les vraies notices restent prises (« Le Tintoret ou il Tintoretto »
+    contient bien le mot « Tintoret »). Frontières de mot sur le pivot déjà
+    normalisé (majuscules, sans accents)."""
+    return re.search(rf"\b{re.escape(motif)}\b", pivot) is not None
+
+
 def _trouve_maitre(pivot: str):
     for nom, inclus, exclus in MAITRES:
-        if any(e in pivot for e in exclus):
+        if any(_mot_entier(e, pivot) for e in exclus):
             continue
-        if any(i in pivot for i in inclus):
+        if any(_mot_entier(i, pivot) for i in inclus):
             return nom
     return None
 
@@ -108,7 +120,13 @@ def _trouve_maitre(pivot: str):
 def _vide() -> dict:
     return {"propre": 0, "doute": 0, "copie": 0, "musees": set(),
             "familles": {}, "niveaux": {1: 0, 2: 0, 3: 0},
-            "exemples": {}, "exemple_copie": None}
+            "exemples": {}, "exemple_copie": None,
+            # ventilation du doute SEUL par musée détenteur (carte par maître) :
+            # code -> {doute, nom, ville, coord, familles, niveaux}
+            "musees_doute": {},
+            # doute rattaché à aucun code musée (non cartographiable) : sert à
+            # boucler l'invariant de comptage. Attendu ~0.
+            "doute_sans_code": 0}
 
 
 def _exemple(ref, titre, musee, ville, segment) -> dict:
@@ -122,6 +140,19 @@ def _exemple(ref, titre, musee, ville, segment) -> dict:
     }
 
 
+def _lat_lon(valeur):
+    """« lat, lon » (champ Joconde, au grain musée) → (lat, lon) arrondis, ou
+    (None, None). On sépare lat et lon EXPLICITEMENT pour écarter tout risque
+    d'inversion côté carte D3-geo (decisions.md, 2026-07-12)."""
+    if not isinstance(valeur, str) or "," not in valeur:
+        return None, None
+    try:
+        lat, lon = (float(x) for x in valeur.split(",")[:2])
+    except ValueError:
+        return None, None
+    return round(lat, 5), round(lon, 5)
+
+
 def main() -> None:
     agg = {nom: _vide() for nom, *_ in MAITRES}
     total = 0
@@ -130,10 +161,10 @@ def main() -> None:
                            chunksize=TAILLE_MORCEAU)
     for morceau in morceaux:
         total += len(morceau)
-        for ref, aut, dom, code, musee, ville, titre in zip(
+        for ref, aut, dom, code, musee, ville, titre, coord in zip(
             morceau["Reference"], morceau["Auteur"], morceau["Domaine"],
             morceau["Code_Museofile"], morceau["Nom_officiel_musee"],
-            morceau["Ville"], morceau["Titre"],
+            morceau["Ville"], morceau["Titre"], morceau["coordonnees"],
         ):
             if not isinstance(aut, str):
                 continue
@@ -160,6 +191,27 @@ def main() -> None:
                     a["doute"] += 1
                     a["familles"][famille] = a["familles"].get(famille, 0) + 1
                     a["niveaux"][NIVEAU_FAMILLE[famille]] += 1
+                    # ventilation du doute par musée détenteur (carte par maître).
+                    # Alimentée UNIQUEMENT ici : jamais sur le ferme ni la copie.
+                    if isinstance(code, str) and code.strip():
+                        md = a["musees_doute"].get(code)
+                        if md is None:
+                            md = a["musees_doute"][code] = {
+                                "doute": 0,
+                                "nom": musee if isinstance(musee, str) else None,
+                                "ville": ville if isinstance(ville, str) else None,
+                                "coord": coord if isinstance(coord, str) else None,
+                                "familles": {}, "niveaux": {1: 0, 2: 0, 3: 0},
+                                # Première (et, si doute==1, unique) notice du musée :
+                                # sert à rendre les points « 1 œuvre » cliquables vers
+                                # POP (n'est exporté que dans ce cas, voir plus bas).
+                                "ref1": ref if isinstance(ref, str) else None,
+                                "titre1": titre if isinstance(titre, str) else None}
+                        md["doute"] += 1
+                        md["familles"][famille] = md["familles"].get(famille, 0) + 1
+                        md["niveaux"][NIVEAU_FAMILLE[famille]] += 1
+                    else:
+                        a["doute_sans_code"] += 1
                     # jusqu'à 2 notices réelles par famille (les premières
                     # rencontrées) ; la sortie n'en publie 2 que pour la dominante
                     exs = a["exemples"].setdefault(famille, [])
@@ -184,12 +236,60 @@ def main() -> None:
             garde = 2 if code == dominante else 1
             for ex in a["exemples"][code][:garde]:
                 exemples.append({"code": code, **ex})
+
+        # Musées du doute : 1 entrée = 1 musée détenteur, doute SEUL, trié.
+        musees_doute = []
+        for code, md in a["musees_doute"].items():
+            fam_liste = [{"code": c, "notices": md["familles"][c]}
+                         for c in markers.DOUTE_PAR_NIVEAU if c in md["familles"]]
+            niveaux = [md["niveaux"][1], md["niveaux"][2], md["niveaux"][3]]
+            lat, lon = _lat_lon(md["coord"])
+            # Invariants de comptage par musée : aucune ambiguïté possible.
+            assert sum(f["notices"] for f in fam_liste) == md["doute"], \
+                f"familles ≠ doute ({nom} / {code})"
+            assert sum(niveaux) == md["doute"], \
+                f"niveaux ≠ doute ({nom} / {code})"
+            entree = {
+                "code": code,
+                "nom": md["nom"],
+                "ville": md["ville"],
+                "lat": lat,
+                "lon": lon,
+                "doute": md["doute"],
+                "niveaux": niveaux,
+                "familles": fam_liste,
+            }
+            # Musée à UNE seule œuvre concernée : on joint la référence (et le titre
+            # s'il existe) de cette œuvre, pour rendre le point cliquable vers sa
+            # fiche publique POP. Les entrées multi-œuvres restent inchangées.
+            if md["doute"] == 1 and md["ref1"]:
+                entree["oeuvre_unique"] = {
+                    "reference": md["ref1"],
+                    "titre": md["titre1"],
+                }
+            musees_doute.append(entree)
+        musees_doute.sort(key=lambda m: m["doute"], reverse=True)
+        # Invariant par maître : doute cartographié + doute sans code = doute total.
+        assert (sum(m["doute"] for m in musees_doute) + a["doute_sans_code"]
+                == a["doute"]), f"somme musées ≠ doute maître ({nom})"
+
+        principal = musees_doute[0] if musees_doute else None
+        musee_principal = None if principal is None else {
+            "code": principal["code"],
+            "nom": principal["nom"],
+            "doute": principal["doute"],
+            "part": round(principal["doute"] / a["doute"], 3) if a["doute"] else 0,
+        }
+
         artistes.append({
             "nom": nom,
             "propre": a["propre"],
             "doute": a["doute"],
             "copie": a["copie"],
             "musees": len(a["musees"]),
+            "nb_musees_doute": len(musees_doute),
+            "musee_principal": musee_principal,
+            "doute_sans_musee": a["doute_sans_code"],
             "niveaux": [a["niveaux"][1], a["niveaux"][2], a["niveaux"][3]],
             "familles": [
                 {"code": code, "libelle": LIBELLE_FAMILLE[code],
@@ -198,6 +298,7 @@ def main() -> None:
             ],
             "exemples": exemples[:MAX_EXEMPLES],
             "exemple_copie": a["exemple_copie"],
+            "musees_doute": musees_doute,
         })
     artistes.sort(key=lambda x: x["doute"], reverse=True)
 
@@ -219,10 +320,14 @@ def main() -> None:
 
     print(f"\n{len(artistes)} maîtres exportés → {chemin} "
           f"({chemin.stat().st_size / 1024:.1f} Ko)")
-    print(f"{'maître':22} {'doute':>6} {'propre':>7} {'copie':>6} {'musées':>7}")
+    print(f"{'maître':22} {'doute':>6} {'propre':>7} {'copie':>6} "
+          f"{'mus.doute':>9} {'top %':>6}")
     for art in artistes:
+        part = art["musee_principal"]["part"] if art["musee_principal"] else 0
         print(f"{art['nom']:22} {art['doute']:>6} {art['propre']:>7} "
-              f"{art['copie']:>6} {art['musees']:>7}")
+              f"{art['copie']:>6} {art['nb_musees_doute']:>9} {part:>6.0%}")
+    total_sans_musee = sum(art["doute_sans_musee"] for art in artistes)
+    print(f"\nDoute sans code musée (non cartographiable) : {total_sans_musee}")
 
 
 if __name__ == "__main__":

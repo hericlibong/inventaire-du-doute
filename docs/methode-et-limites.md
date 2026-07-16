@@ -70,6 +70,36 @@ Conséquences assumées :
   patrimoine) ; cette fiche vit sa vie indépendamment de notre version de
   référence du fichier et peut avoir été mise à jour depuis.
 
+## La carte par maître : ce qu'elle montre (2026-07-12)
+
+Chaque fiche de maître peut montrer **où** sont conservées les œuvres dont
+l'attribution à ce maître est formulée avec prudence. Sur cette carte :
+
+- **un point = un musée détenteur**, pas une œuvre. **Tous les points ont la même
+  taille** : la carte montre *où* les œuvres concernées sont conservées, pas
+  *combien* par lieu. Le nombre exact, et sous quelles formules, se lit au survol
+  du point (et l'onglet « graphique » de la fiche donne la répartition d'ensemble).
+  Une taille variable a été testée puis écartée : l'échelle aurait été propre à
+  chaque maître (un « gros point » n'aurait pas voulu dire la même chose d'une
+  fiche à l'autre) et aurait gonflé de tout petits nombres ;
+- la carte montre une **dispersion**, pas un palmarès : elle ne compare pas les
+  musées entre eux et ne dit rien de l'importance d'une collection. Le doute est
+  souvent concentré dans un musée — c'est un fait de versement dans Joconde, pas un
+  jugement patrimonial ;
+- les points sont **localisés par leur musée** (coordonnées publiées dans
+  Joconde), jamais par l'œuvre elle-même.
+
+**Le fond de carte est une source secondaire d'illustration.** Ce sont les
+contours des régions françaises (IGN Admin Express 2018, via le projet
+france-geojson, Licence Ouverte), stockés localement — aucune tuile en ligne.
+**Aucun chiffre ne vient du fond** ; il ne sert qu'à situer les points.
+
+**Outre-mer.** Ce premier palier n'affiche que la France métropolitaine. Quand un
+maître a une œuvre douteuse conservée outre-mer, elle **reste comptée et présente
+dans les totaux**, mais n'apparaît pas sur le fond métropolitain : une mention le
+signale (par exemple « Hors cadre métropolitain : 1 œuvre conservée à
+Saint-Denis de La Réunion »). Un point hors carte n'est jamais un point exclu.
+
 ## Source
 
 Jeu de données « Collections des musées de France : base Joconde »,

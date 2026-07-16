@@ -2,6 +2,8 @@
 	import BarreFamilles from '$lib/BarreFamilles.svelte';
 	import NuageFamilles from '$lib/NuageFamilles.svelte';
 	import OeuvresMaitre from '$lib/OeuvresMaitre.svelte';
+	import CarteMaitre from '$lib/CarteMaitre.svelte';
+	import LegendeFamilles from '$lib/LegendeFamilles.svelte';
 	import PortraitMaitre from '$lib/PortraitMaitre.svelte';
 	import { nombre, deNom, musees } from '$lib/joconde.js';
 	import { oeuvres } from '$lib/familles-public.js';
@@ -41,20 +43,22 @@
 
 <h1>Les presque</h1>
 <p class="chapo">
-	Quand un musée n'est pas sûr qu'une œuvre soit d'un grand maître, il ne le cache
-	pas : il l'écrit. « Attribué à Rembrandt », « école de Poussin », « atelier de
-	Rubens », « Titien&nbsp;? »… Cette page rassemble, pour une trentaine de maîtres
-	célèbres, <strong>toutes les œuvres que les musées de France ne leur attribuent
-	pas tout à fait</strong>.
+	Ici, «&nbsp;Les presque&nbsp;» désigne les œuvres que les musées rapprochent d'un
+	grand artiste sans les lui attribuer tout à fait. Dans les notices, cela passe par
+	des formules comme «&nbsp;attribué à&nbsp;», «&nbsp;atelier de&nbsp;»,
+	«&nbsp;école de&nbsp;», «&nbsp;entourage de&nbsp;» : le nom du maître est présent,
+	mais accompagné d'une réserve.
+</p>
+<p class="chapo">
+	Cette rubrique rassemble {artistes.length} noms pour lesquels les musées de
+	France utilisent souvent ce type de mention : au moins vingt œuvres concernées
+	pour chacun. Pour chaque artiste, la jauge colorée donne un premier aperçu. Le
+	graphique détaille les formules employées, les œuvres montrent des exemples
+	concrets, et la carte indique où elles sont conservées en France.
 </p>
 <p class="mode-emploi">
-	👉 Choisissez un maître dans la liste pour voir ce que les musées de France
-	disent de lui. Ni révélation ni trésor caché : seulement ce qu'ils écrivent
-	eux-mêmes.
-</p>
-<p class="critere">
-	Les {artistes.length} maîtres retenus sont des noms de référence pour lesquels
-	les musées ont écrit au moins vingt fois un doute d'attribution.
+	Cette rubrique ne réattribue aucune œuvre. Elle reprend les mots publiés par les
+	musées dans leurs notices, avec leurs précautions.
 </p>
 
 <div class="grille">
@@ -79,6 +83,10 @@
 				<li class="vide">Aucun maître ne correspond.</li>
 			{/each}
 		</ul>
+		<!-- Clé des couleurs, commune aux trois vues : sous la liste, hors de la
+		     zone d'onglet (décision 2026-07-13). La liste scrolle dans son cadre,
+		     la légende reste visible. -->
+		<LegendeFamilles />
 	</aside>
 
 	{#if maitre}
@@ -120,13 +128,18 @@
 					<button role="tab" aria-selected={vue === 'oeuvres'} class:actif={vue === 'oeuvres'} onclick={() => (vue = 'oeuvres')}>
 						Œuvres
 					</button>
+					<button role="tab" aria-selected={vue === 'carte'} class:actif={vue === 'carte'} onclick={() => (vue = 'carte')}>
+						Carte
+					</button>
 				</div>
 			</header>
 
 			{#if vue === 'graphique'}
 				<NuageFamilles {maitre} {plafond} />
-			{:else}
+			{:else if vue === 'oeuvres'}
 				<OeuvresMaitre {maitre} />
+			{:else}
+				<CarteMaitre {maitre} />
 			{/if}
 		</section>
 	{/if}
@@ -138,17 +151,15 @@
 		max-width: 44rem;
 	}
 
+	.chapo:first-of-type {
+		font-size: 1.2rem;
+	}
+
 	.mode-emploi {
 		max-width: 44rem;
 		padding: 0.6rem 0.9rem;
 		background: rgba(122, 74, 43, 0.06);
 		border-radius: 4px;
-	}
-
-	.critere {
-		font-size: 0.85rem;
-		color: var(--couleur-encre-douce);
-		font-style: italic;
 	}
 
 	.grille {

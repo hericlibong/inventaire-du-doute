@@ -2,7 +2,7 @@
  "critere": "maître de référence ET ≥ 20 notices de doute (hors copie)",
  "lexique": "markers.py v2 (famille_segment, par segment du champ Auteur)",
  "version_donnee": "2026-07-01",
- "date_generation": "2026-07-11T13:59:09+00:00",
+ "date_generation": "2026-07-13T12:15:14+00:00",
  "source": "Collections des musées de France : base Joconde",
  "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb",
  "niveaux": {
@@ -17,6 +17,14 @@
    "doute": 310,
    "copie": 354,
    "musees": 64,
+   "nb_musees_doute": 19,
+   "musee_principal": {
+    "code": "M5031",
+    "nom": "musée du Louvre",
+    "doute": 276,
+    "part": 0.89
+   },
+   "doute_sans_musee": 0,
    "niveaux": [
     54,
     256,
@@ -96,7 +104,434 @@
     "musee": "musée des civilisations de l'Europe et de la Méditerranée",
     "ville": "Marseille",
     "extrait": "Le Brun Charles (d'après)"
-   }
+   },
+   "musees_doute": [
+    {
+     "code": "M5031",
+     "nom": "musée du Louvre",
+     "ville": "Paris",
+     "lat": 48.8599,
+     "lon": 2.34093,
+     "doute": 276,
+     "niveaux": [
+      37,
+      239,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 37
+      },
+      {
+       "code": "ecole_de",
+       "notices": 225
+      },
+      {
+       "code": "atelier_de",
+       "notices": 14
+      }
+     ]
+    },
+    {
+     "code": "M0332",
+     "nom": "musée des beaux-arts et d'archéologie",
+     "ville": "Besançon",
+     "lat": 47.24005,
+     "lon": 6.02294,
+     "doute": 7,
+     "niveaux": [
+      7,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 6
+      },
+      {
+       "code": "point_interrogation",
+       "notices": 1
+      }
+     ]
+    },
+    {
+     "code": "M5077",
+     "nom": "musée national des châteaux de Versailles et de Trianon",
+     "ville": "Versailles",
+     "lat": 48.80454,
+     "lon": 2.13405,
+     "doute": 4,
+     "niveaux": [
+      2,
+      2,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 2
+      },
+      {
+       "code": "ecole_de",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M0657",
+     "nom": "musée des beaux-arts",
+     "ville": "Caen",
+     "lat": 49.18615,
+     "lon": -0.36122,
+     "doute": 3,
+     "niveaux": [
+      0,
+      3,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 3
+      }
+     ]
+    },
+    {
+     "code": "M0211",
+     "nom": "musée des beaux-arts",
+     "ville": "Rennes",
+     "lat": 48.10984,
+     "lon": -1.67498,
+     "doute": 3,
+     "niveaux": [
+      0,
+      3,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 3
+      }
+     ]
+    },
+    {
+     "code": "M0729",
+     "nom": "musée des beaux-arts",
+     "ville": "Rouen",
+     "lat": 49.44496,
+     "lon": 1.09391,
+     "doute": 2,
+     "niveaux": [
+      0,
+      2,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M5013",
+     "nom": "musée national du château de Fontainebleau",
+     "ville": "Fontainebleau",
+     "lat": 48.39866,
+     "lon": 2.70176,
+     "doute": 2,
+     "niveaux": [
+      0,
+      2,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M0748",
+     "nom": "musée des beaux-arts et galerie David-d'Angers",
+     "ville": "Angers",
+     "lat": 47.46913,
+     "lon": -0.55437,
+     "doute": 2,
+     "niveaux": [
+      2,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      },
+      {
+       "code": "point_interrogation",
+       "notices": 1
+      }
+     ]
+    },
+    {
+     "code": "M0913",
+     "nom": "musée des beaux-arts",
+     "ville": "Marseille",
+     "lat": 43.30472,
+     "lon": 5.39404,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "000PE014799",
+      "titre": "AMPHITRITE, DIT AUTREFOIS NYMPHES DE FONTAINE"
+     }
+    },
+    {
+     "code": "M0629",
+     "nom": "musée des Beaux-Arts",
+     "ville": "Lille",
+     "lat": 50.62113,
+     "lon": 3.06839,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "000PE018974",
+      "titre": "PORTRAIT DIT DE VAUBAN"
+     }
+    },
+    {
+     "code": "M0065",
+     "nom": "musée des beaux-arts",
+     "ville": "Bordeaux",
+     "lat": 44.83806,
+     "lon": -0.57941,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "000PE025251",
+      "titre": "BACCHUS ET ARIANE"
+     }
+    },
+    {
+     "code": "M0798",
+     "nom": "MUDO - musée de l'Oise",
+     "ville": "Beauvais",
+     "lat": 49.43279,
+     "lon": 2.08044,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "000PE026535",
+      "titre": "CRUCIFIXION"
+     }
+    },
+    {
+     "code": "M0303",
+     "nom": "musée des beaux-arts et d’archéologie",
+     "ville": "Troyes",
+     "lat": 48.30064,
+     "lon": 4.08003,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "000PE033165",
+      "titre": "L'ERECTION DE LA CROIX"
+     }
+    },
+    {
+     "code": "M0607",
+     "nom": "musée Ingres Bourdelle",
+     "ville": "Montauban",
+     "lat": 44.01709,
+     "lon": 1.35188,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "atelier_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "06070000146",
+      "titre": "Allégorie à la gloire de Louis XIV"
+     }
+    },
+    {
+     "code": "M0803",
+     "nom": "musée Antoine Vivenel",
+     "ville": "Compiègne",
+     "lat": 49.41741,
+     "lon": 2.82153,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "atelier_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "08030000617",
+      "titre": "Christ en croix"
+     }
+    },
+    {
+     "code": "M0184",
+     "nom": "musée d'art et d'histoire Saint-Germain",
+     "ville": "Auxerre",
+     "lat": 47.80028,
+     "lon": 3.57198,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "01840000018",
+      "titre": "Le massacre des Innocents"
+     }
+    },
+    {
+     "code": "M0116",
+     "nom": "musée Crozatier",
+     "ville": "Le Puy-en-Velay",
+     "lat": 45.03867,
+     "lon": 3.88346,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "01160005166",
+      "titre": "Christ en croix"
+     }
+    },
+    {
+     "code": "M0994",
+     "nom": "musée de Grenoble",
+     "ville": "Grenoble",
+     "lat": 45.19403,
+     "lon": 5.73209,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "09940080570",
+      "titre": "L'Ordre rétabli dans les finances ; Dessin préparatoire pour la Galerie des Glaces à Versailles (Titre attribué)"
+     }
+    },
+    {
+     "code": "M0457",
+     "nom": "musée des beaux-arts",
+     "ville": "Nîmes",
+     "lat": 43.832,
+     "lon": 4.36081,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "M0457000773",
+      "titre": "Sans désignation"
+     }
+    }
+   ]
   },
   {
    "nom": "Le Primatice",
@@ -104,6 +539,14 @@
    "doute": 269,
    "copie": 274,
    "musees": 18,
+   "nb_musees_doute": 6,
+   "musee_principal": {
+    "code": "M5031",
+    "nom": "musée du Louvre",
+    "doute": 262,
+    "part": 0.974
+   },
+   "doute_sans_musee": 0,
    "niveaux": [
     142,
     127,
@@ -169,14 +612,158 @@
     "musee": "musée national Magnin",
     "ville": "Dijon",
     "extrait": "PRIMATICCIO Francesco (d'après)"
-   }
+   },
+   "musees_doute": [
+    {
+     "code": "M5031",
+     "nom": "musée du Louvre",
+     "ville": "Paris",
+     "lat": 48.8599,
+     "lon": 2.34093,
+     "doute": 262,
+     "niveaux": [
+      139,
+      123,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 139
+      },
+      {
+       "code": "ecole_de",
+       "notices": 123
+      }
+     ]
+    },
+    {
+     "code": "M0289",
+     "nom": "musée municipal",
+     "ville": "Pithiviers",
+     "lat": 48.17252,
+     "lon": 2.255,
+     "doute": 2,
+     "niveaux": [
+      2,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M0211",
+     "nom": "musée des beaux-arts",
+     "ville": "Rennes",
+     "lat": 48.10984,
+     "lon": -1.67498,
+     "doute": 2,
+     "niveaux": [
+      0,
+      2,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 1
+      },
+      {
+       "code": "entourage_de",
+       "notices": 1
+      }
+     ]
+    },
+    {
+     "code": "M5011",
+     "nom": "musée national Magnin",
+     "ville": "Dijon",
+     "lat": 47.32096,
+     "lon": 5.04219,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "00000068545",
+      "titre": "Petit génie volant"
+     }
+    },
+    {
+     "code": "M5051",
+     "nom": "musée de l'Ecole nationale supérieure des beaux-arts",
+     "ville": "Paris",
+     "lat": 48.84575,
+     "lon": 2.33167,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "50510020999",
+      "titre": "Sujet antique : une vieille en haillons s'entretenant avec une jeune femme ; Vertumne et Pomone"
+     }
+    },
+    {
+     "code": "M0619",
+     "nom": "musée de la Chartreuse",
+     "ville": "Douai",
+     "lat": 50.3744,
+     "lon": 3.07548,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "06190001401",
+      "titre": "La Belle Paule"
+     }
+    }
+   ]
   },
   {
    "nom": "Ingres",
-   "propre": 4467,
+   "propre": 4466,
    "doute": 204,
    "copie": 88,
    "musees": 46,
+   "nb_musees_doute": 3,
+   "musee_principal": {
+    "code": "M0607",
+    "nom": "musée Ingres Bourdelle",
+    "doute": 200,
+    "part": 0.98
+   },
+   "doute_sans_musee": 0,
    "niveaux": [
     195,
     9,
@@ -242,7 +829,82 @@
     "musee": "musée national des châteaux de Versailles et de Trianon",
     "ville": "Versailles",
     "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) (d'après)"
-   }
+   },
+   "musees_doute": [
+    {
+     "code": "M0607",
+     "nom": "musée Ingres Bourdelle",
+     "ville": "Montauban",
+     "lat": 44.01709,
+     "lon": 1.35188,
+     "doute": 200,
+     "niveaux": [
+      192,
+      8,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 191
+      },
+      {
+       "code": "point_interrogation",
+       "notices": 1
+      },
+      {
+       "code": "atelier_de",
+       "notices": 8
+      }
+     ]
+    },
+    {
+     "code": "M5031",
+     "nom": "musée du Louvre",
+     "ville": "Paris",
+     "lat": 48.86079,
+     "lon": 2.33782,
+     "doute": 3,
+     "niveaux": [
+      2,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 2
+      },
+      {
+       "code": "atelier_de",
+       "notices": 1
+      }
+     ]
+    },
+    {
+     "code": "M0915",
+     "nom": "musée Cantini",
+     "ville": "Marseille",
+     "lat": 43.29238,
+     "lon": 5.37814,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "000PE016750",
+      "titre": "PORTRAIT DE MARIE DE BEAUMONT"
+     }
+    }
+   ]
   },
   {
    "nom": "Rembrandt",
@@ -250,6 +912,14 @@
    "doute": 187,
    "copie": 117,
    "musees": 57,
+   "nb_musees_doute": 10,
+   "musee_principal": {
+    "code": "M5031",
+    "nom": "musée du Louvre",
+    "doute": 169,
+    "part": 0.904
+   },
+   "doute_sans_musee": 0,
    "niveaux": [
     1,
     21,
@@ -343,7 +1013,235 @@
     "musee": "musée Grobet-Labadié",
     "ville": "Marseille",
     "extrait": "Rembrandt (1606-1669) (dit, d'après)"
-   }
+   },
+   "musees_doute": [
+    {
+     "code": "M5031",
+     "nom": "musée du Louvre",
+     "ville": "Paris",
+     "lat": 48.86079,
+     "lon": 2.33782,
+     "doute": 169,
+     "niveaux": [
+      0,
+      8,
+      161
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 5
+      },
+      {
+       "code": "atelier_de",
+       "notices": 3
+      },
+      {
+       "code": "maniere_de",
+       "notices": 161
+      }
+     ]
+    },
+    {
+     "code": "M0207",
+     "nom": "musée des beaux-arts",
+     "ville": "Quimper",
+     "lat": 47.99619,
+     "lon": -4.10196,
+     "doute": 5,
+     "niveaux": [
+      0,
+      1,
+      4
+     ],
+     "familles": [
+      {
+       "code": "atelier_de",
+       "notices": 1
+      },
+      {
+       "code": "maniere_de",
+       "notices": 4
+      }
+     ]
+    },
+    {
+     "code": "M5052",
+     "nom": "musée Condé",
+     "ville": "Chantilly",
+     "lat": 44.2043,
+     "lon": 0.64865,
+     "doute": 3,
+     "niveaux": [
+      0,
+      3,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 3
+      }
+     ]
+    },
+    {
+     "code": "M0332",
+     "nom": "musée des beaux-arts et d'archéologie",
+     "ville": "Besançon",
+     "lat": 47.24005,
+     "lon": 6.02294,
+     "doute": 3,
+     "niveaux": [
+      1,
+      2,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      },
+      {
+       "code": "entourage_de",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M0657",
+     "nom": "musée des beaux-arts",
+     "ville": "Caen",
+     "lat": 49.18615,
+     "lon": -0.36122,
+     "doute": 2,
+     "niveaux": [
+      0,
+      2,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M0629",
+     "nom": "musée des Beaux-Arts",
+     "ville": "Lille",
+     "lat": 50.62113,
+     "lon": 3.06839,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "000PE017723",
+      "titre": "SALOMON SACRIFIANT AUX IDOLES"
+     }
+    },
+    {
+     "code": "M0065",
+     "nom": "musée des beaux-arts",
+     "ville": "Bordeaux",
+     "lat": 44.83806,
+     "lon": -0.57941,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "000PE025747",
+      "titre": "ETUDE DE NEGRE"
+     }
+    },
+    {
+     "code": "M0729",
+     "nom": "musée des beaux-arts",
+     "ville": "Rouen",
+     "lat": 49.44496,
+     "lon": 1.09391,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "00000058429",
+      "titre": "TETE D'HOMME"
+     }
+    },
+    {
+     "code": "M0019",
+     "nom": "musée des Beaux-Arts",
+     "ville": "Strasbourg",
+     "lat": 48.58123,
+     "lon": 7.75198,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "entourage_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "00190022506",
+      "titre": "Portrait d'homme ; Portrait de vieillard"
+     }
+    },
+    {
+     "code": "M0277",
+     "nom": "musée municipal",
+     "ville": "Vendôme",
+     "lat": 47.79211,
+     "lon": 1.06451,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "M0277002250",
+      "titre": "L'homme au casque d'or"
+     }
+    }
+   ]
   },
   {
    "nom": "Michel-Ange",
@@ -351,6 +1249,14 @@
    "doute": 172,
    "copie": 206,
    "musees": 63,
+   "nb_musees_doute": 9,
+   "musee_principal": {
+    "code": "M5031",
+    "nom": "musée du Louvre",
+    "doute": 160,
+    "part": 0.93
+   },
+   "doute_sans_musee": 0,
    "niveaux": [
     58,
     113,
@@ -430,7 +1336,204 @@
     "musee": "musée Hébert",
     "ville": "Paris",
     "extrait": "MICHEL-ANGE (dit, d'après)"
-   }
+   },
+   "musees_doute": [
+    {
+     "code": "M5031",
+     "nom": "musée du Louvre",
+     "ville": "Paris",
+     "lat": 48.86079,
+     "lon": 2.33782,
+     "doute": 160,
+     "niveaux": [
+      50,
+      110,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 50
+      },
+      {
+       "code": "ecole_de",
+       "notices": 110
+      }
+     ]
+    },
+    {
+     "code": "M0657",
+     "nom": "musée des beaux-arts",
+     "ville": "Caen",
+     "lat": 49.18615,
+     "lon": -0.36122,
+     "doute": 2,
+     "niveaux": [
+      1,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      },
+      {
+       "code": "ecole_de",
+       "notices": 1
+      }
+     ]
+    },
+    {
+     "code": "M0211",
+     "nom": "musée des beaux-arts",
+     "ville": "Rennes",
+     "lat": 48.10984,
+     "lon": -1.67498,
+     "doute": 2,
+     "niveaux": [
+      0,
+      2,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M0517",
+     "nom": "musée barrois",
+     "ville": "Bar-le-Duc",
+     "lat": 48.7718,
+     "lon": 5.15607,
+     "doute": 2,
+     "niveaux": [
+      2,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M0894",
+     "nom": "musée Granet",
+     "ville": "Aix-en-Provence",
+     "lat": 43.49432,
+     "lon": 5.41089,
+     "doute": 2,
+     "niveaux": [
+      2,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M5052",
+     "nom": "musée Condé",
+     "ville": "Chantilly",
+     "lat": 44.2043,
+     "lon": 0.64865,
+     "doute": 1,
+     "niveaux": [
+      0,
+      0,
+      1
+     ],
+     "familles": [
+      {
+       "code": "genre_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "00000077350",
+      "titre": "PORTRAIT D'ASDRUBALE MATTEI DI GIOVE"
+     }
+    },
+    {
+     "code": "M0347",
+     "nom": "musée des beaux-arts et d'archéologie",
+     "ville": "Dole",
+     "lat": 47.08906,
+     "lon": 5.4882,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "point_interrogation",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "M0347001723",
+      "titre": "Tête de femme : Le Silence"
+     }
+    },
+    {
+     "code": "M0307",
+     "nom": "musée municipal",
+     "ville": "Châlons-en-Champagne",
+     "lat": 48.95639,
+     "lon": 4.3642,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "03070000234",
+      "titre": "Attributs des arts"
+     }
+    },
+    {
+     "code": "M0729",
+     "nom": "musée des beaux-arts",
+     "ville": "Rouen",
+     "lat": 49.44496,
+     "lon": 1.09391,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "07290021327",
+      "titre": "Nature morte aux raisins"
+     }
+    }
+   ]
   },
   {
    "nom": "Rubens",
@@ -438,6 +1541,14 @@
    "doute": 121,
    "copie": 383,
    "musees": 76,
+   "nb_musees_doute": 19,
+   "musee_principal": {
+    "code": "M5031",
+    "nom": "musée du Louvre",
+    "doute": 95,
+    "part": 0.785
+   },
+   "doute_sans_musee": 0,
    "niveaux": [
     2,
     118,
@@ -531,7 +1642,434 @@
     "musee": "musée des civilisations de l'Europe et de la Méditerranée",
     "ville": "Marseille",
     "extrait": "Rubens Petrus Paulus (1577-1640) (d'après)"
-   }
+   },
+   "musees_doute": [
+    {
+     "code": "M5031",
+     "nom": "musée du Louvre",
+     "ville": "Paris",
+     "lat": 48.86079,
+     "lon": 2.33782,
+     "doute": 95,
+     "niveaux": [
+      0,
+      95,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 93
+      },
+      {
+       "code": "atelier_de",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M0629",
+     "nom": "musée des Beaux-Arts",
+     "ville": "Lille",
+     "lat": 50.62113,
+     "lon": 3.06839,
+     "doute": 3,
+     "niveaux": [
+      0,
+      3,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 1
+      },
+      {
+       "code": "atelier_de",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M0729",
+     "nom": "musée des beaux-arts",
+     "ville": "Rouen",
+     "lat": 49.44496,
+     "lon": 1.09391,
+     "doute": 3,
+     "niveaux": [
+      0,
+      3,
+      0
+     ],
+     "familles": [
+      {
+       "code": "atelier_de",
+       "notices": 3
+      }
+     ]
+    },
+    {
+     "code": "M5052",
+     "nom": "musée Condé",
+     "ville": "Chantilly",
+     "lat": 49.19413,
+     "lon": 2.48512,
+     "doute": 2,
+     "niveaux": [
+      0,
+      2,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 1
+      },
+      {
+       "code": "atelier_de",
+       "notices": 1
+      }
+     ]
+    },
+    {
+     "code": "M0743",
+     "nom": "musée des Beaux-Arts",
+     "ville": "Nantes",
+     "lat": 47.21928,
+     "lon": -1.5471,
+     "doute": 2,
+     "niveaux": [
+      0,
+      2,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M0211",
+     "nom": "musée des beaux-arts",
+     "ville": "Rennes",
+     "lat": 48.10984,
+     "lon": -1.67498,
+     "doute": 2,
+     "niveaux": [
+      0,
+      2,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M0619",
+     "nom": "musée de la Chartreuse",
+     "ville": "Douai",
+     "lat": 50.3744,
+     "lon": 3.07548,
+     "doute": 2,
+     "niveaux": [
+      0,
+      2,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 1
+      },
+      {
+       "code": "atelier_de",
+       "notices": 1
+      }
+     ]
+    },
+    {
+     "code": "M5077",
+     "nom": "musée national des châteaux de Versailles et de Trianon",
+     "ville": "Versailles",
+     "lat": 48.80454,
+     "lon": 2.13405,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "000PE013090",
+      "titre": "INCONNU"
+     }
+    },
+    {
+     "code": "M0913",
+     "nom": "musée des beaux-arts",
+     "ville": "Marseille",
+     "lat": 43.30472,
+     "lon": 5.39404,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "atelier_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "000PE014412",
+      "titre": "ISABELLE BRANDT DIT AUTREFOIS HELENE FOURMENT"
+     }
+    },
+    {
+     "code": "M0065",
+     "nom": "musée des beaux-arts",
+     "ville": "Bordeaux",
+     "lat": 44.83806,
+     "lon": -0.57941,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "000PE022064",
+      "titre": "VILLAGEOIS DANSANT DANS LA CAMPAGNE"
+     }
+    },
+    {
+     "code": "M0134",
+     "nom": "musée des Beaux-Arts",
+     "ville": "Beaune",
+     "lat": 47.02097,
+     "lon": 4.83939,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "000PE029518",
+      "titre": "LA SAGESSE TERRASSANT L'ENVIE"
+     }
+    },
+    {
+     "code": "M0207",
+     "nom": "musée des beaux-arts",
+     "ville": "Quimper",
+     "lat": 47.99619,
+     "lon": -4.10196,
+     "doute": 1,
+     "niveaux": [
+      0,
+      0,
+      1
+     ],
+     "familles": [
+      {
+       "code": "maniere_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "00000062803",
+      "titre": "ETUDE D'UN SUJET ALLEGORIQUE"
+     }
+    },
+    {
+     "code": "M0271",
+     "nom": "château musées",
+     "ville": "Blois",
+     "lat": 47.5856,
+     "lon": 1.33167,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "suiveur_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "M0271000139",
+      "titre": "Allégorie du Bon Gouvernement de la France, dit autrefois Portrait allégorique de Marie de Médicis"
+     }
+    },
+    {
+     "code": "M0332",
+     "nom": "musée des beaux-arts et d'archéologie",
+     "ville": "Besançon",
+     "lat": 47.24005,
+     "lon": 6.02294,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "atelier_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "M0332000980",
+      "titre": "Allégorie avec une vue d'Anvers"
+     }
+    },
+    {
+     "code": "M0562",
+     "nom": "musée des Augustins",
+     "ville": "Toulouse",
+     "lat": 43.60056,
+     "lon": 1.4459,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "05620001275",
+      "titre": "La Vierge, l'enfant Jésus et saint Jean"
+     }
+    },
+    {
+     "code": "M0776",
+     "nom": "musée municipal",
+     "ville": "La Roche-sur-Yon",
+     "lat": 46.66927,
+     "lon": -1.42883,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "07760001538",
+      "titre": "Femme et fillette"
+     }
+    },
+    {
+     "code": "M5011",
+     "nom": "musée national Magnin",
+     "ville": "Dijon",
+     "lat": 47.32096,
+     "lon": 5.04219,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "atelier_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "50110001607",
+      "titre": "La Mort d'Achille"
+     }
+    },
+    {
+     "code": "M0247",
+     "nom": "musée Bertrand",
+     "ville": "Châteauroux",
+     "lat": 46.81374,
+     "lon": 1.69426,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "02470000028",
+      "titre": "Le banquet de Térée"
+     }
+    },
+    {
+     "code": "M0894",
+     "nom": "musée Granet",
+     "ville": "Aix-en-Provence",
+     "lat": 43.49432,
+     "lon": 5.41089,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "08940004679",
+      "titre": "La Nature parée par les Trois Grâces"
+     }
+    }
+   ]
   },
   {
    "nom": "François Clouet",
@@ -539,6 +2077,14 @@
    "doute": 105,
    "copie": 55,
    "musees": 23,
+   "nb_musees_doute": 8,
+   "musee_principal": {
+    "code": "M5052",
+    "nom": "musée Condé",
+    "doute": 83,
+    "part": 0.79
+   },
+   "doute_sans_musee": 0,
    "niveaux": [
     5,
     100,
@@ -646,7 +2192,201 @@
     "musee": "musée du Louvre",
     "ville": "Paris",
     "extrait": "CLOUET François (d'après)"
-   }
+   },
+   "musees_doute": [
+    {
+     "code": "M5052",
+     "nom": "musée Condé",
+     "ville": "Chantilly",
+     "lat": 44.2043,
+     "lon": 0.64865,
+     "doute": 83,
+     "niveaux": [
+      2,
+      81,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      },
+      {
+       "code": "point_interrogation",
+       "notices": 1
+      },
+      {
+       "code": "ecole_de",
+       "notices": 1
+      },
+      {
+       "code": "atelier_de",
+       "notices": 80
+      }
+     ]
+    },
+    {
+     "code": "M5031",
+     "nom": "musée du Louvre",
+     "ville": "Paris",
+     "lat": 48.86079,
+     "lon": 2.33782,
+     "doute": 14,
+     "niveaux": [
+      1,
+      13,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      },
+      {
+       "code": "ecole_de",
+       "notices": 1
+      },
+      {
+       "code": "atelier_de",
+       "notices": 12
+      }
+     ]
+    },
+    {
+     "code": "M5017",
+     "nom": "musée national du château de Pau",
+     "ville": "Pau",
+     "lat": 43.2947,
+     "lon": -0.37438,
+     "doute": 2,
+     "niveaux": [
+      0,
+      2,
+      0
+     ],
+     "familles": [
+      {
+       "code": "atelier_de",
+       "notices": 1
+      },
+      {
+       "code": "suiveur_de",
+       "notices": 1
+      }
+     ]
+    },
+    {
+     "code": "M0748",
+     "nom": "musée des beaux-arts et galerie David-d'Angers",
+     "ville": "Angers",
+     "lat": 47.46913,
+     "lon": -0.55437,
+     "doute": 2,
+     "niveaux": [
+      0,
+      2,
+      0
+     ],
+     "familles": [
+      {
+       "code": "atelier_de",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M0729",
+     "nom": "musée des beaux-arts",
+     "ville": "Rouen",
+     "lat": 49.44496,
+     "lon": 1.09391,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "07290021285",
+      "titre": "Portrait de Jacqueline de Rohan, duchesse de Longueville"
+     }
+    },
+    {
+     "code": "M0161",
+     "nom": "Le Panoptique d'Autun, musée Rolin",
+     "ville": "Autun",
+     "lat": 46.94572,
+     "lon": 4.29922,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "01610012066",
+      "titre": "Portrait d'homme"
+     }
+    },
+    {
+     "code": "M0457",
+     "nom": "musée des beaux-arts",
+     "ville": "Nîmes",
+     "lat": 43.832,
+     "lon": 4.36081,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "M0457001362",
+      "titre": "Buste de femme"
+     }
+    },
+    {
+     "code": "M0332",
+     "nom": "musée des beaux-arts et d'archéologie",
+     "ville": "Besançon",
+     "lat": 47.24005,
+     "lon": 6.02294,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "entourage_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "M0332001041",
+      "titre": "Portrait présumé de François II (1544-1560)"
+     }
+    }
+   ]
   },
   {
    "nom": "Annibale Carracci",
@@ -654,6 +2394,14 @@
    "doute": 86,
    "copie": 226,
    "musees": 33,
+   "nb_musees_doute": 13,
+   "musee_principal": {
+    "code": "M5031",
+    "nom": "musée du Louvre",
+    "doute": 62,
+    "part": 0.721
+   },
+   "doute_sans_musee": 0,
    "niveaux": [
     20,
     64,
@@ -775,16 +2523,317 @@
     "musee": "musée Hébert",
     "ville": "Paris",
     "extrait": "CARRACCI Annibale (d'après)"
-   }
+   },
+   "musees_doute": [
+    {
+     "code": "M5031",
+     "nom": "musée du Louvre",
+     "ville": "Paris",
+     "lat": 48.86079,
+     "lon": 2.33782,
+     "doute": 62,
+     "niveaux": [
+      8,
+      54,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 8
+      },
+      {
+       "code": "atelier_de",
+       "notices": 1
+      },
+      {
+       "code": "entourage_de",
+       "notices": 53
+      }
+     ]
+    },
+    {
+     "code": "M5052",
+     "nom": "musée Condé",
+     "ville": "Chantilly",
+     "lat": 44.2043,
+     "lon": 0.64865,
+     "doute": 8,
+     "niveaux": [
+      0,
+      8,
+      0
+     ],
+     "familles": [
+      {
+       "code": "atelier_de",
+       "notices": 8
+      }
+     ]
+    },
+    {
+     "code": "M0332",
+     "nom": "musée des beaux-arts et d'archéologie",
+     "ville": "Besançon",
+     "lat": 47.24005,
+     "lon": 6.02294,
+     "doute": 5,
+     "niveaux": [
+      5,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 5
+      }
+     ]
+    },
+    {
+     "code": "M0913",
+     "nom": "musée des beaux-arts",
+     "ville": "Marseille",
+     "lat": 43.30472,
+     "lon": 5.39404,
+     "doute": 2,
+     "niveaux": [
+      2,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M0134",
+     "nom": "musée des Beaux-Arts",
+     "ville": "Beaune",
+     "lat": 47.02097,
+     "lon": 4.83939,
+     "doute": 1,
+     "niveaux": [
+      0,
+      0,
+      1
+     ],
+     "familles": [
+      {
+       "code": "maniere_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "000PE029379",
+      "titre": "CHANTEURS GROTESQUES"
+     }
+    },
+    {
+     "code": "M0619",
+     "nom": "musée de la Chartreuse",
+     "ville": "Douai",
+     "lat": 50.3744,
+     "lon": 3.07548,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "00000060729",
+      "titre": "ADAM ET EVE APRES LA CHUTE"
+     }
+    },
+    {
+     "code": "M0207",
+     "nom": "musée des beaux-arts",
+     "ville": "Quimper",
+     "lat": 47.99619,
+     "lon": -4.10196,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "entourage_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "00000102970",
+      "titre": "SAINT SEBASTIEN"
+     }
+    },
+    {
+     "code": "M0743",
+     "nom": "musée des Beaux-Arts",
+     "ville": "Nantes",
+     "lat": 47.21928,
+     "lon": -1.5471,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "point_interrogation",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "07430005039",
+      "titre": "La Sainte Famille avec saint Jean-Baptiste et sainte Elisabeth"
+     }
+    },
+    {
+     "code": "M0562",
+     "nom": "musée des Augustins",
+     "ville": "Toulouse",
+     "lat": 43.60056,
+     "lon": 1.4459,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "05620001443",
+      "titre": "Apollon"
+     }
+    },
+    {
+     "code": "M5011",
+     "nom": "musée national Magnin",
+     "ville": "Dijon",
+     "lat": 47.32096,
+     "lon": 5.04219,
+     "doute": 1,
+     "niveaux": [
+      0,
+      0,
+      1
+     ],
+     "familles": [
+      {
+       "code": "genre_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "50110000194",
+      "titre": "Bords de rivière avec pêcheur"
+     }
+    },
+    {
+     "code": "M0748",
+     "nom": "musée des beaux-arts et galerie David-d'Angers",
+     "ville": "Angers",
+     "lat": 47.46913,
+     "lon": -0.55437,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "point_interrogation",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "07480012427",
+      "titre": "Le repos pendant la fuite ; Allégorie (autre titre)"
+     }
+    },
+    {
+     "code": "M0491",
+     "nom": "musée Hyacinthe Rigaud",
+     "ville": "Perpignan",
+     "lat": 42.69801,
+     "lon": 2.89298,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "M0491001011",
+      "titre": "Etude de têtes d’apôtres"
+     }
+    },
+    {
+     "code": "M0286",
+     "nom": "musée des beaux-arts",
+     "ville": "Orléans",
+     "lat": 47.90157,
+     "lon": 1.90861,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "point_interrogation",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "02860008133",
+      "titre": "Vénus et l'Amour endormi"
+     }
+    }
+   ]
   },
   {
    "nom": "Rodin",
-   "propre": 13421,
-   "doute": 81,
+   "propre": 13404,
+   "doute": 80,
    "copie": 7,
-   "musees": 58,
+   "musees": 56,
+   "nb_musees_doute": 3,
+   "musee_principal": {
+    "code": "M5031",
+    "nom": "musée du Louvre",
+    "doute": 78,
+    "part": 0.975
+   },
+   "doute_sans_musee": 0,
    "niveaux": [
-    81,
+    80,
     0,
     0
    ],
@@ -793,7 +2842,7 @@
      "code": "attribue",
      "libelle": "attribué à",
      "niveau": 1,
-     "notices": 81
+     "notices": 80
     }
    ],
    "exemples": [
@@ -820,7 +2869,74 @@
     "musee": "musée Matisse",
     "ville": "Nice",
     "extrait": "Rodin Auguste (1840-1917) (d'après)"
-   }
+   },
+   "musees_doute": [
+    {
+     "code": "M5031",
+     "nom": "musée du Louvre",
+     "ville": "Paris",
+     "lat": 48.86079,
+     "lon": 2.33782,
+     "doute": 78,
+     "niveaux": [
+      78,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 78
+      }
+     ]
+    },
+    {
+     "code": "M5044",
+     "nom": "musée Rodin",
+     "ville": "Paris",
+     "lat": 48.85587,
+     "lon": 2.31598,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "000DE017259",
+      "titre": "FEMME NUE DE DOS, UN GENOU EN TERRE ET LES BRAS ECARTES"
+     }
+    },
+    {
+     "code": "M0417",
+     "nom": "musée du domaine départemental de Sceaux",
+     "ville": "Sceaux",
+     "lat": 48.77471,
+     "lon": 2.29902,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "04170004811",
+      "titre": "Mascaron ornant le buffet d'eau de la cascade (Inventaire)"
+     }
+    }
+   ]
   },
   {
    "nom": "Boucher",
@@ -828,6 +2944,14 @@
    "doute": 78,
    "copie": 120,
    "musees": 81,
+   "nb_musees_doute": 20,
+   "musee_principal": {
+    "code": "M5031",
+    "nom": "musée du Louvre",
+    "doute": 41,
+    "part": 0.526
+   },
+   "doute_sans_musee": 0,
    "niveaux": [
     29,
     48,
@@ -935,7 +3059,457 @@
     "musee": "musée Grobet-Labadié",
     "ville": "Marseille",
     "extrait": "Boucher François (1703-1770) (?, d'après)"
-   }
+   },
+   "musees_doute": [
+    {
+     "code": "M5031",
+     "nom": "musée du Louvre",
+     "ville": "Paris",
+     "lat": 48.86079,
+     "lon": 2.33782,
+     "doute": 41,
+     "niveaux": [
+      7,
+      34,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 7
+      },
+      {
+       "code": "ecole_de",
+       "notices": 31
+      },
+      {
+       "code": "atelier_de",
+       "notices": 3
+      }
+     ]
+    },
+    {
+     "code": "M0332",
+     "nom": "musée des beaux-arts et d'archéologie",
+     "ville": "Besançon",
+     "lat": 47.24005,
+     "lon": 6.02294,
+     "doute": 9,
+     "niveaux": [
+      6,
+      3,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 6
+      },
+      {
+       "code": "entourage_de",
+       "notices": 3
+      }
+     ]
+    },
+    {
+     "code": "M0457",
+     "nom": "musée des beaux-arts",
+     "ville": "Nîmes",
+     "lat": 43.832,
+     "lon": 4.36081,
+     "doute": 5,
+     "niveaux": [
+      5,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 5
+      }
+     ]
+    },
+    {
+     "code": "M0121",
+     "nom": "musée d'art Roger-Quillot",
+     "ville": "Clermont-Ferrand",
+     "lat": 45.79303,
+     "lon": 3.07827,
+     "doute": 3,
+     "niveaux": [
+      0,
+      3,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 1
+      },
+      {
+       "code": "atelier_de",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M0917",
+     "nom": "musée Grobet-Labadié",
+     "ville": "Marseille",
+     "lat": 43.30341,
+     "lon": 5.39287,
+     "doute": 2,
+     "niveaux": [
+      0,
+      2,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M0619",
+     "nom": "musée de la Chartreuse",
+     "ville": "Douai",
+     "lat": 50.3744,
+     "lon": 3.07548,
+     "doute": 2,
+     "niveaux": [
+      1,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      },
+      {
+       "code": "ecole_de",
+       "notices": 1
+      }
+     ]
+    },
+    {
+     "code": "M0629",
+     "nom": "musée des Beaux-Arts",
+     "ville": "Lille",
+     "lat": 50.62113,
+     "lon": 3.06839,
+     "doute": 2,
+     "niveaux": [
+      2,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M0172",
+     "nom": "musée des ursulines",
+     "ville": "Mâcon",
+     "lat": 46.30751,
+     "lon": 4.83316,
+     "doute": 2,
+     "niveaux": [
+      2,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M0211",
+     "nom": "musée des beaux-arts",
+     "ville": "Rennes",
+     "lat": 48.10984,
+     "lon": -1.67498,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "000DE016661",
+      "titre": "AMOUR"
+     }
+    },
+    {
+     "code": "M5077",
+     "nom": "musée national des châteaux de Versailles et de Trianon",
+     "ville": "Versailles",
+     "lat": 48.80454,
+     "lon": 2.13405,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "000PE013054",
+      "titre": "La diseuse de bonne aventure"
+     }
+    },
+    {
+     "code": "M0913",
+     "nom": "musée des beaux-arts",
+     "ville": "Marseille",
+     "lat": 43.30472,
+     "lon": 5.39404,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "000PE013616",
+      "titre": "LE LAPIN SAVANT"
+     }
+    },
+    {
+     "code": "M0065",
+     "nom": "musée des beaux-arts",
+     "ville": "Bordeaux",
+     "lat": 44.83806,
+     "lon": -0.57941,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "point_interrogation",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "000PE020181",
+      "titre": "L'ADORATION DES BERGERS"
+     }
+    },
+    {
+     "code": "M0657",
+     "nom": "musée des beaux-arts",
+     "ville": "Caen",
+     "lat": 49.18615,
+     "lon": -0.36122,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "000PE020930",
+      "titre": "Mercure confiant le jeune Bacchus aux nymphes du mont Nysa"
+     }
+    },
+    {
+     "code": "M5052",
+     "nom": "musée Condé",
+     "ville": "Chantilly",
+     "lat": 44.2043,
+     "lon": 0.64865,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "point_interrogation",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "50520001106",
+      "titre": "Portrait de Jean-Antoine Watteau (1684-1721)"
+     }
+    },
+    {
+     "code": "M0400",
+     "nom": "musée Lambinet",
+     "ville": "Versailles",
+     "lat": 48.80897,
+     "lon": 2.13062,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "atelier_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "04000000182",
+      "titre": "Erigone vaincue"
+     }
+    },
+    {
+     "code": "M0743",
+     "nom": "musée des Beaux-Arts",
+     "ville": "Nantes",
+     "lat": 47.21928,
+     "lon": -1.5471,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "07430005700",
+      "titre": "Amours dans les nuages"
+     }
+    },
+    {
+     "code": "M0155",
+     "nom": "musée de la faïence Frédéric Blandin",
+     "ville": "Nevers",
+     "lat": 46.98629,
+     "lon": 3.15504,
+     "doute": 1,
+     "niveaux": [
+      0,
+      0,
+      1
+     ],
+     "familles": [
+      {
+       "code": "genre_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "01550005410",
+      "titre": "Allégorie de l'été"
+     }
+    },
+    {
+     "code": "M0137",
+     "nom": "musée des beaux-arts",
+     "ville": "Dijon",
+     "lat": 47.32136,
+     "lon": 5.04287,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "atelier_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "01370000458",
+      "titre": "La Baigneuse surprise ; Le Fleuve Scamandre (autre titre)"
+     }
+    },
+    {
+     "code": "M0491",
+     "nom": "musée Hyacinthe Rigaud",
+     "ville": "Perpignan",
+     "lat": 42.69801,
+     "lon": 2.89298,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "M0491000988",
+      "titre": "Un jeune enfant"
+     }
+    },
+    {
+     "code": "M0503",
+     "nom": "musée d'Art et d'Archéologie",
+     "ville": "Guéret",
+     "lat": 46.16584,
+     "lon": 1.87076,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "05030002954",
+      "titre": "Jeune femme drapée entraînée par deux hommes"
+     }
+    }
+   ]
   },
   {
    "nom": "Andrea del Sarto",
@@ -943,6 +3517,14 @@
    "doute": 63,
    "copie": 97,
    "musees": 33,
+   "nb_musees_doute": 4,
+   "musee_principal": {
+    "code": "M5031",
+    "nom": "musée du Louvre",
+    "doute": 60,
+    "part": 0.952
+   },
+   "doute_sans_musee": 0,
    "niveaux": [
     5,
     57,
@@ -1022,7 +3604,101 @@
     "musee": "musée Crozatier",
     "ville": "Le Puy-en-Velay",
     "extrait": "ANDREA DEL SARTO (attribué, d'après)"
-   }
+   },
+   "musees_doute": [
+    {
+     "code": "M5031",
+     "nom": "musée du Louvre",
+     "ville": "Paris",
+     "lat": 48.86079,
+     "lon": 2.33782,
+     "doute": 60,
+     "niveaux": [
+      3,
+      57,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 3
+      },
+      {
+       "code": "ecole_de",
+       "notices": 57
+      }
+     ]
+    },
+    {
+     "code": "M0913",
+     "nom": "musée des beaux-arts",
+     "ville": "Marseille",
+     "lat": 43.30472,
+     "lon": 5.39404,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "000PE014694",
+      "titre": "SAINT JEAN L'EVANGELISTE"
+     }
+    },
+    {
+     "code": "M0347",
+     "nom": "musée des beaux-arts et d'archéologie",
+     "ville": "Dole",
+     "lat": 47.08906,
+     "lon": 5.4882,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "point_interrogation",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "M0347001723",
+      "titre": "Tête de femme : Le Silence"
+     }
+    },
+    {
+     "code": "M0341",
+     "nom": "musée Sarret de Grozon",
+     "ville": "Arbois",
+     "lat": 46.9026,
+     "lon": 5.77472,
+     "doute": 1,
+     "niveaux": [
+      0,
+      0,
+      1
+     ],
+     "familles": [
+      {
+       "code": "genre_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "M0341000307",
+      "titre": "Portrait d'un médecin"
+     }
+    }
+   ]
   },
   {
    "nom": "Guido Reni",
@@ -1030,6 +3706,14 @@
    "doute": 60,
    "copie": 175,
    "musees": 62,
+   "nb_musees_doute": 14,
+   "musee_principal": {
+    "code": "M5031",
+    "nom": "musée du Louvre",
+    "doute": 40,
+    "part": 0.667
+   },
+   "doute_sans_musee": 0,
    "niveaux": [
     23,
     31,
@@ -1137,188 +3821,346 @@
     "musee": "musée des civilisations de l'Europe et de la Méditerranée",
     "ville": "Marseille",
     "extrait": "Reni Guido (d'après)"
-   }
-  },
-  {
-   "nom": "Léonard de Vinci",
-   "propre": 127,
-   "doute": 56,
-   "copie": 208,
-   "musees": 36,
-   "niveaux": [
-    9,
-    47,
-    0
-   ],
-   "familles": [
+   },
+   "musees_doute": [
     {
-     "code": "attribue",
-     "libelle": "attribué à",
-     "niveau": 1,
-     "notices": 9
-    },
-    {
-     "code": "ecole_de",
-     "libelle": "école de",
-     "niveau": 2,
-     "notices": 46
-    },
-    {
-     "code": "atelier_de",
-     "libelle": "atelier (qualificatif, beaux-arts)",
-     "niveau": 2,
-     "notices": 1
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "50350110945",
-     "titre": "Les Ages de la vie : l'âge mûr, le travail",
-     "musee": "musée du Louvre",
+     "code": "M5031",
+     "nom": "musée du Louvre",
      "ville": "Paris",
-     "extrait": "VINCIDOR Tommaso (attribué à)"
+     "lat": 48.86079,
+     "lon": 2.33782,
+     "doute": 40,
+     "niveaux": [
+      17,
+      23,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 17
+      },
+      {
+       "code": "ecole_de",
+       "notices": 21
+      },
+      {
+       "code": "atelier_de",
+       "notices": 2
+      }
+     ]
     },
     {
-     "code": "ecole_de",
-     "reference": "000PE025605",
-     "titre": "PORTRAIT DE FEMME ; DIT LA BELLE FERRONNIERE",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "LEONARDO DI SER PIERO DA VINCI (école)"
+     "code": "M0619",
+     "nom": "musée de la Chartreuse",
+     "ville": "Douai",
+     "lat": 50.3744,
+     "lon": 3.07548,
+     "doute": 5,
+     "niveaux": [
+      0,
+      2,
+      3
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 2
+      },
+      {
+       "code": "genre_de",
+       "notices": 3
+      }
+     ]
     },
     {
-     "code": "ecole_de",
-     "reference": "000PE025607",
-     "titre": "LA VIERGE, L'ENFANT JESUS ET SAINT JEAN",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "LEONARDO DI SER PIERO DA VINCI (école)"
+     "code": "M0065",
+     "nom": "musée des beaux-arts",
+     "ville": "Bordeaux",
+     "lat": 44.83806,
+     "lon": -0.57941,
+     "doute": 2,
+     "niveaux": [
+      1,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "point_interrogation",
+       "notices": 1
+      },
+      {
+       "code": "ecole_de",
+       "notices": 1
+      }
+     ]
     },
     {
-     "code": "atelier_de",
-     "reference": "000PE025603",
-     "titre": "BACCHUS",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "VINCI Léonard de (dit, atelier)"
-    }
-   ],
-   "exemple_copie": {
-    "reference": "000DE011491",
-    "titre": null,
-    "musee": "musée Jean-Jacques Henner",
-    "ville": "Paris",
-    "extrait": "DE VINCI Léonard (d'après)"
-   }
-  },
-  {
-   "nom": "Le Tintoret",
-   "propre": 140,
-   "doute": 53,
-   "copie": 102,
-   "musees": 35,
-   "niveaux": [
-    44,
-    8,
-    1
-   ],
-   "familles": [
-    {
-     "code": "attribue",
-     "libelle": "attribué à",
-     "niveau": 1,
-     "notices": 44
+     "code": "M0121",
+     "nom": "musée d'art Roger-Quillot",
+     "ville": "Clermont-Ferrand",
+     "lat": 45.79303,
+     "lon": 3.07827,
+     "doute": 2,
+     "niveaux": [
+      0,
+      2,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 2
+      }
+     ]
     },
     {
-     "code": "ecole_de",
-     "libelle": "école de",
-     "niveau": 2,
-     "notices": 4
-    },
-    {
-     "code": "atelier_de",
-     "libelle": "atelier (qualificatif, beaux-arts)",
-     "niveau": 2,
-     "notices": 3
-    },
-    {
-     "code": "entourage_de",
-     "libelle": "entourage de",
-     "niveau": 2,
-     "notices": 1
-    },
-    {
-     "code": "maniere_de",
-     "libelle": "(à la) manière de",
-     "niveau": 3,
-     "notices": 1
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "000PE014515",
-     "titre": "SAINT BERNARD RESSUSCITANT UN MORT",
-     "musee": "musée des beaux-arts",
-     "ville": "Marseille",
-     "extrait": "ROBUSTI Jacopo (attribué à)"
-    },
-    {
-     "code": "attribue",
-     "reference": "000PE014515",
-     "titre": "SAINT BERNARD RESSUSCITANT UN MORT",
-     "musee": "musée des beaux-arts",
-     "ville": "Marseille",
-     "extrait": "LE TINTORET (dit, attribué à)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "000PE027107",
-     "titre": "JESUS QUERISSANT LES BOITEUX",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "ROBUSTI Jacopo (école)"
-    },
-    {
-     "code": "atelier_de",
-     "reference": "000PE027106",
-     "titre": "PORTRAIT D'HOMME",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "ROBUSTI Jacopo (atelier)"
-    },
-    {
-     "code": "entourage_de",
-     "reference": "01370014810",
-     "titre": "La Résurrection de Lazare",
-     "musee": "musée des beaux-arts",
+     "code": "M0137",
+     "nom": "musée des beaux-arts",
      "ville": "Dijon",
-     "extrait": "ROBUSTI Jacopo (entourage)"
+     "lat": 47.32136,
+     "lon": 5.04287,
+     "doute": 2,
+     "niveaux": [
+      0,
+      0,
+      2
+     ],
+     "familles": [
+      {
+       "code": "maniere_de",
+       "notices": 1
+      },
+      {
+       "code": "genre_de",
+       "notices": 1
+      }
+     ]
     },
     {
-     "code": "maniere_de",
-     "reference": "50350105681",
-     "titre": "Un apôtre guérissant des malades",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "ROBUSTI Jacopo (manière de)"
+     "code": "M0629",
+     "nom": "musée des Beaux-Arts",
+     "ville": "Lille",
+     "lat": 50.62113,
+     "lon": 3.06839,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "000PE019530",
+      "titre": "SAINT SEBASTIEN"
+     }
+    },
+    {
+     "code": "M0116",
+     "nom": "musée Crozatier",
+     "ville": "Le Puy-en-Velay",
+     "lat": 45.03867,
+     "lon": 3.88346,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "000PE031402",
+      "titre": "ECCE HOMO"
+     }
+    },
+    {
+     "code": "M0743",
+     "nom": "musée des Beaux-Arts",
+     "ville": "Nantes",
+     "lat": 47.21928,
+     "lon": -1.5471,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "atelier_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "07430004969",
+      "titre": "La Charité chrétienne"
+     }
+    },
+    {
+     "code": "M0132",
+     "nom": "musée Bonaparte",
+     "ville": "Auxonne",
+     "lat": 47.19096,
+     "lon": 5.38377,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "01320016849",
+      "titre": "Sainte Cécile"
+     }
+    },
+    {
+     "code": "M0491",
+     "nom": "musée Hyacinthe Rigaud",
+     "ville": "Perpignan",
+     "lat": 42.69801,
+     "lon": 2.89298,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "M0491001245",
+      "titre": "Tête de Saint Sébastien"
+     }
+    },
+    {
+     "code": "M0677",
+     "nom": "musée Thomas-Henry",
+     "ville": "Cherbourg-en-Cotentin",
+     "lat": 49.6371,
+     "lon": -1.62306,
+     "doute": 1,
+     "niveaux": [
+      0,
+      0,
+      1
+     ],
+     "familles": [
+      {
+       "code": "maniere_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "06770000303",
+      "titre": "Saint Pierre pleurant sa faute"
+     }
+    },
+    {
+     "code": "M0311",
+     "nom": "musée des Beaux-Arts de Reims",
+     "ville": "Reims",
+     "lat": 49.25344,
+     "lon": 4.03092,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "03110042175",
+      "titre": "La Vierge et l'Enfant Jésus"
+     }
+    },
+    {
+     "code": "M0994",
+     "nom": "musée de Grenoble",
+     "ville": "Grenoble",
+     "lat": 45.19403,
+     "lon": 5.73209,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "09940009040",
+      "titre": "Etude d'une tête d'homme barbu"
+     }
+    },
+    {
+     "code": "M0894",
+     "nom": "musée Granet",
+     "ville": "Aix-en-Provence",
+     "lat": 43.49432,
+     "lon": 5.41089,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "08940005128",
+      "titre": "Sainte Madeleine en extase (titre factice)"
+     }
     }
-   ],
-   "exemple_copie": {
-    "reference": "000PE020731",
-    "titre": "LE PARADIS",
-    "musee": "musée des Beaux-Arts",
-    "ville": "Lille",
-    "extrait": "ROBUSTI Jacopo (d'après)"
-   }
+   ]
   },
   {
    "nom": "Nicolas Poussin",
-   "propre": 327,
+   "propre": 326,
    "doute": 52,
    "copie": 313,
-   "musees": 63,
+   "musees": 62,
+   "nb_musees_doute": 12,
+   "musee_principal": {
+    "code": "M5031",
+    "nom": "musée du Louvre",
+    "doute": 38,
+    "part": 0.731
+   },
+   "doute_sans_musee": 0,
    "niveaux": [
     41,
     8,
@@ -1412,7 +4254,277 @@
     "musee": "musée Rodin",
     "ville": "Paris",
     "extrait": "POUSSIN Nicolas (d'après)"
-   }
+   },
+   "musees_doute": [
+    {
+     "code": "M5031",
+     "nom": "musée du Louvre",
+     "ville": "Paris",
+     "lat": 48.86079,
+     "lon": 2.33782,
+     "doute": 38,
+     "niveaux": [
+      34,
+      4,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 34
+      },
+      {
+       "code": "ecole_de",
+       "notices": 3
+      },
+      {
+       "code": "atelier_de",
+       "notices": 1
+      }
+     ]
+    },
+    {
+     "code": "M0729",
+     "nom": "musée des beaux-arts",
+     "ville": "Rouen",
+     "lat": 49.44496,
+     "lon": 1.09391,
+     "doute": 2,
+     "niveaux": [
+      2,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M0743",
+     "nom": "musée des Beaux-Arts",
+     "ville": "Nantes",
+     "lat": 47.21928,
+     "lon": -1.5471,
+     "doute": 2,
+     "niveaux": [
+      0,
+      0,
+      2
+     ],
+     "familles": [
+      {
+       "code": "genre_de",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M0132",
+     "nom": "musée Bonaparte",
+     "ville": "Auxonne",
+     "lat": 47.19096,
+     "lon": 5.38377,
+     "doute": 2,
+     "niveaux": [
+      0,
+      2,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M0913",
+     "nom": "musée des beaux-arts",
+     "ville": "Marseille",
+     "lat": 43.30472,
+     "lon": 5.39404,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "000PE014608",
+      "titre": "SUJET PASTORAL"
+     }
+    },
+    {
+     "code": "M0065",
+     "nom": "musée des beaux-arts",
+     "ville": "Bordeaux",
+     "lat": 44.83806,
+     "lon": -0.57941,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "000PE021910",
+      "titre": "SACRIFICE A PRIAPE"
+     }
+    },
+    {
+     "code": "M0211",
+     "nom": "musée des beaux-arts",
+     "ville": "Rennes",
+     "lat": 48.10984,
+     "lon": -1.67498,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "00000094644",
+      "titre": "PAYSAGE AUX RUINES ANTIQUES"
+     }
+    },
+    {
+     "code": "M5051",
+     "nom": "musée de l'Ecole nationale supérieure des beaux-arts",
+     "ville": "Paris",
+     "lat": 48.84575,
+     "lon": 2.33167,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "50510032134",
+      "titre": "Château fortifié sur un rocher"
+     }
+    },
+    {
+     "code": "M0350",
+     "nom": "Viséum-musée de la lunette (collections du musée de la lunette et du musée Jourdain)",
+     "ville": "Hauts de Bienne",
+     "lat": 46.521,
+     "lon": 6.02258,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "entourage_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "M0350002026",
+      "titre": "Paysage avec pêcheurs"
+     }
+    },
+    {
+     "code": "M0677",
+     "nom": "musée Thomas-Henry",
+     "ville": "Cherbourg-en-Cotentin",
+     "lat": 49.6371,
+     "lon": -1.62306,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "06770004144",
+      "titre": "Vue prise dans les environs de Rome"
+     }
+    },
+    {
+     "code": "M0512",
+     "nom": "musée des Beaux-Arts",
+     "ville": "Nancy",
+     "lat": 48.69351,
+     "lon": 6.18243,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "05120002906",
+      "titre": "Etudes de casques antiques"
+     }
+    },
+    {
+     "code": "M0341",
+     "nom": "musée Sarret de Grozon",
+     "ville": "Arbois",
+     "lat": 46.9026,
+     "lon": 5.77472,
+     "doute": 1,
+     "niveaux": [
+      0,
+      0,
+      1
+     ],
+     "familles": [
+      {
+       "code": "genre_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "M0341000308",
+      "titre": "Moïse sauvé des eaux"
+     }
+    }
+   ]
   },
   {
    "nom": "Simon Vouet",
@@ -1420,6 +4532,14 @@
    "doute": 51,
    "copie": 77,
    "musees": 41,
+   "nb_musees_doute": 18,
+   "musee_principal": {
+    "code": "M5031",
+    "nom": "musée du Louvre",
+    "doute": 21,
+    "part": 0.412
+   },
+   "doute_sans_musee": 0,
    "niveaux": [
     18,
     33,
@@ -1513,7 +4633,540 @@
     "musee": "musée du Louvre",
     "ville": "Paris",
     "extrait": "VOUET Simon (d'après)"
-   }
+   },
+   "musees_doute": [
+    {
+     "code": "M5031",
+     "nom": "musée du Louvre",
+     "ville": "Paris",
+     "lat": 48.8599,
+     "lon": 2.34093,
+     "doute": 21,
+     "niveaux": [
+      6,
+      15,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 6
+      },
+      {
+       "code": "ecole_de",
+       "notices": 15
+      }
+     ]
+    },
+    {
+     "code": "M0332",
+     "nom": "musée des beaux-arts et d'archéologie",
+     "ville": "Besançon",
+     "lat": 47.24005,
+     "lon": 6.02294,
+     "doute": 8,
+     "niveaux": [
+      3,
+      5,
+      0
+     ],
+     "familles": [
+      {
+       "code": "point_interrogation",
+       "notices": 3
+      },
+      {
+       "code": "atelier_de",
+       "notices": 5
+      }
+     ]
+    },
+    {
+     "code": "M0116",
+     "nom": "musée Crozatier",
+     "ville": "Le Puy-en-Velay",
+     "lat": 45.03867,
+     "lon": 3.88346,
+     "doute": 2,
+     "niveaux": [
+      2,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M0594",
+     "nom": "musée Goya",
+     "ville": "Castres",
+     "lat": 43.60481,
+     "lon": 2.23989,
+     "doute": 2,
+     "niveaux": [
+      2,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M0743",
+     "nom": "musée des Beaux-Arts",
+     "ville": "Nantes",
+     "lat": 47.21928,
+     "lon": -1.5471,
+     "doute": 2,
+     "niveaux": [
+      1,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      },
+      {
+       "code": "entourage_de",
+       "notices": 1
+      }
+     ]
+    },
+    {
+     "code": "M0803",
+     "nom": "musée Antoine Vivenel",
+     "ville": "Compiègne",
+     "lat": 49.41741,
+     "lon": 2.82153,
+     "doute": 2,
+     "niveaux": [
+      0,
+      2,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M0211",
+     "nom": "musée des beaux-arts",
+     "ville": "Rennes",
+     "lat": 48.10984,
+     "lon": -1.67498,
+     "doute": 2,
+     "niveaux": [
+      0,
+      2,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 1
+      },
+      {
+       "code": "atelier_de",
+       "notices": 1
+      }
+     ]
+    },
+    {
+     "code": "M0562",
+     "nom": "musée des Augustins",
+     "ville": "Toulouse",
+     "lat": 43.60056,
+     "lon": 1.4459,
+     "doute": 2,
+     "niveaux": [
+      0,
+      2,
+      0
+     ],
+     "familles": [
+      {
+       "code": "atelier_de",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M0770",
+     "nom": "musée de Tessé",
+     "ville": "Le Mans",
+     "lat": 48.01112,
+     "lon": 0.20375,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "000PE009665",
+      "titre": "SAINTE VERONIQUE"
+     }
+    },
+    {
+     "code": "M0657",
+     "nom": "musée des beaux-arts",
+     "ville": "Caen",
+     "lat": 49.18615,
+     "lon": -0.36122,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "000PE023056",
+      "titre": "L'Homme à la figue"
+     }
+    },
+    {
+     "code": "M5051",
+     "nom": "musée de l'Ecole nationale supérieure des beaux-arts",
+     "ville": "Paris",
+     "lat": 48.84575,
+     "lon": 2.33167,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "atelier_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "50510021364",
+      "titre": "Le Christ sauveur du monde"
+     }
+    },
+    {
+     "code": "M0181",
+     "nom": "musée Greuze - hôtel-Dieu",
+     "ville": "Tournus",
+     "lat": 46.56214,
+     "lon": 4.91084,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "point_interrogation",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "01810000027",
+      "titre": "La Présentation au temple ; Simeon ou le nunc dimitis. (ancien titre)"
+     }
+    },
+    {
+     "code": "M5011",
+     "nom": "musée national Magnin",
+     "ville": "Dijon",
+     "lat": 47.32096,
+     "lon": 5.04219,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "entourage_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "50110000275",
+      "titre": "Cérès, déesse des moissons"
+     }
+    },
+    {
+     "code": "M0307",
+     "nom": "musée municipal",
+     "ville": "Châlons-en-Champagne",
+     "lat": 48.95704,
+     "lon": 4.3637,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "atelier_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "03070000188",
+      "titre": "Sainte tenant la palme du martyre"
+     }
+    },
+    {
+     "code": "M0345",
+     "nom": "musée des Beaux-Arts",
+     "ville": "Lons-le-Saunier",
+     "lat": 46.67586,
+     "lon": 5.55391,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "M0345000311",
+      "titre": "Femme jouant du tambour basque"
+     }
+    },
+    {
+     "code": "M0072",
+     "nom": "musée des beaux-arts et d'archéologie",
+     "ville": "Libourne",
+     "lat": 44.91449,
+     "lon": -0.24507,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "entourage_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "M0072003317",
+      "titre": "Sainte Madeleine"
+     }
+    },
+    {
+     "code": "M0729",
+     "nom": "musée des beaux-arts",
+     "ville": "Rouen",
+     "lat": 49.44496,
+     "lon": 1.09391,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "07290021974",
+      "titre": "Adoration des Bergers"
+     }
+    },
+    {
+     "code": "M0137",
+     "nom": "musée des beaux-arts",
+     "ville": "Dijon",
+     "lat": 47.32136,
+     "lon": 5.04287,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "entourage_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "01370014859",
+      "titre": "Portrait d'un artiste ou d'un collectionneur"
+     }
+    }
+   ]
+  },
+  {
+   "nom": "Léonard de Vinci",
+   "propre": 114,
+   "doute": 50,
+   "copie": 208,
+   "musees": 35,
+   "nb_musees_doute": 2,
+   "musee_principal": {
+    "code": "M5031",
+    "nom": "musée du Louvre",
+    "doute": 49,
+    "part": 0.98
+   },
+   "doute_sans_musee": 0,
+   "niveaux": [
+    3,
+    47,
+    0
+   ],
+   "familles": [
+    {
+     "code": "attribue",
+     "libelle": "attribué à",
+     "niveau": 1,
+     "notices": 3
+    },
+    {
+     "code": "ecole_de",
+     "libelle": "école de",
+     "niveau": 2,
+     "notices": 46
+    },
+    {
+     "code": "atelier_de",
+     "libelle": "atelier (qualificatif, beaux-arts)",
+     "niveau": 2,
+     "notices": 1
+    }
+   ],
+   "exemples": [
+    {
+     "code": "attribue",
+     "reference": "50350228280",
+     "titre": "Homme nu, s'accrochant à une poutre",
+     "musee": "musée du Louvre",
+     "ville": "Paris",
+     "extrait": "VINCI Leonardo da (attribué à)"
+    },
+    {
+     "code": "ecole_de",
+     "reference": "000PE025605",
+     "titre": "PORTRAIT DE FEMME ; DIT LA BELLE FERRONNIERE",
+     "musee": "musée du Louvre",
+     "ville": "Paris",
+     "extrait": "LEONARDO DI SER PIERO DA VINCI (école)"
+    },
+    {
+     "code": "ecole_de",
+     "reference": "000PE025607",
+     "titre": "LA VIERGE, L'ENFANT JESUS ET SAINT JEAN",
+     "musee": "musée du Louvre",
+     "ville": "Paris",
+     "extrait": "LEONARDO DI SER PIERO DA VINCI (école)"
+    },
+    {
+     "code": "atelier_de",
+     "reference": "000PE025603",
+     "titre": "BACCHUS",
+     "musee": "musée du Louvre",
+     "ville": "Paris",
+     "extrait": "VINCI Léonard de (dit, atelier)"
+    }
+   ],
+   "exemple_copie": {
+    "reference": "000DE011491",
+    "titre": null,
+    "musee": "musée Jean-Jacques Henner",
+    "ville": "Paris",
+    "extrait": "DE VINCI Léonard (d'après)"
+   },
+   "musees_doute": [
+    {
+     "code": "M5031",
+     "nom": "musée du Louvre",
+     "ville": "Paris",
+     "lat": 48.86079,
+     "lon": 2.33782,
+     "doute": 49,
+     "niveaux": [
+      3,
+      46,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 3
+      },
+      {
+       "code": "ecole_de",
+       "notices": 45
+      },
+      {
+       "code": "atelier_de",
+       "notices": 1
+      }
+     ]
+    },
+    {
+     "code": "M0619",
+     "nom": "musée de la Chartreuse",
+     "ville": "Douai",
+     "lat": 50.3744,
+     "lon": 3.07548,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "00000060673",
+      "titre": "L'ENFANT JESUS ET LE BAPTISTE"
+     }
+    }
+   ]
   },
   {
    "nom": "Greuze",
@@ -1521,6 +5174,14 @@
    "doute": 49,
    "copie": 117,
    "musees": 52,
+   "nb_musees_doute": 19,
+   "musee_principal": {
+    "code": "M5031",
+    "nom": "musée du Louvre",
+    "doute": 21,
+    "part": 0.429
+   },
+   "doute_sans_musee": 0,
    "niveaux": [
     32,
     7,
@@ -1614,14 +5275,732 @@
     "musee": "cabinet des estampes et des dessins",
     "ville": "Strasbourg",
     "extrait": "GREUZE Jean-Baptiste (d'après)"
-   }
+   },
+   "musees_doute": [
+    {
+     "code": "M5031",
+     "nom": "musée du Louvre",
+     "ville": "Paris",
+     "lat": 48.86079,
+     "lon": 2.33782,
+     "doute": 21,
+     "niveaux": [
+      13,
+      2,
+      6
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 13
+      },
+      {
+       "code": "ecole_de",
+       "notices": 2
+      },
+      {
+       "code": "maniere_de",
+       "notices": 6
+      }
+     ]
+    },
+    {
+     "code": "M0332",
+     "nom": "musée des beaux-arts et d'archéologie",
+     "ville": "Besançon",
+     "lat": 47.24005,
+     "lon": 6.02294,
+     "doute": 4,
+     "niveaux": [
+      3,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 3
+      },
+      {
+       "code": "ecole_de",
+       "notices": 1
+      }
+     ]
+    },
+    {
+     "code": "M5077",
+     "nom": "musée national des châteaux de Versailles et de Trianon",
+     "ville": "Versailles",
+     "lat": 48.80454,
+     "lon": 2.13405,
+     "doute": 2,
+     "niveaux": [
+      0,
+      2,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M0913",
+     "nom": "musée des beaux-arts",
+     "ville": "Marseille",
+     "lat": 43.30472,
+     "lon": 5.39404,
+     "doute": 2,
+     "niveaux": [
+      2,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M0917",
+     "nom": "musée Grobet-Labadié",
+     "ville": "Marseille",
+     "lat": 43.30341,
+     "lon": 5.39287,
+     "doute": 2,
+     "niveaux": [
+      2,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M0594",
+     "nom": "musée Goya",
+     "ville": "Castres",
+     "lat": 43.60481,
+     "lon": 2.23989,
+     "doute": 2,
+     "niveaux": [
+      2,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "point_interrogation",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M0211",
+     "nom": "musée des beaux-arts",
+     "ville": "Rennes",
+     "lat": 48.10984,
+     "lon": -1.67498,
+     "doute": 2,
+     "niveaux": [
+      2,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M0181",
+     "nom": "musée Greuze - hôtel-Dieu",
+     "ville": "Tournus",
+     "lat": 46.56214,
+     "lon": 4.91084,
+     "doute": 2,
+     "niveaux": [
+      2,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M5011",
+     "nom": "musée national Magnin",
+     "ville": "Dijon",
+     "lat": 47.32096,
+     "lon": 5.04219,
+     "doute": 2,
+     "niveaux": [
+      0,
+      0,
+      2
+     ],
+     "familles": [
+      {
+       "code": "genre_de",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M0134",
+     "nom": "musée des Beaux-Arts",
+     "ville": "Beaune",
+     "lat": 47.02097,
+     "lon": 4.83939,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "000PE029512",
+      "titre": "PORTRAIT DE FEMME AGEE"
+     }
+    },
+    {
+     "code": "M0303",
+     "nom": "musée des beaux-arts et d’archéologie",
+     "ville": "Troyes",
+     "lat": 48.30064,
+     "lon": 4.08003,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "000PE033200",
+      "titre": "TETE DE BACCHANTE"
+     }
+    },
+    {
+     "code": "M0286",
+     "nom": "musée des beaux-arts",
+     "ville": "Orléans",
+     "lat": 47.90157,
+     "lon": 1.90861,
+     "doute": 1,
+     "niveaux": [
+      0,
+      0,
+      1
+     ],
+     "familles": [
+      {
+       "code": "genre_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "00000093370",
+      "titre": "TETE DE JEUNE FILLE"
+     }
+    },
+    {
+     "code": "M0638",
+     "nom": "musée des Beaux-Arts",
+     "ville": "Valenciennes",
+     "lat": 50.35582,
+     "lon": 3.53105,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "06380000157",
+      "titre": "Portrait de Jacques François Momal"
+     }
+    },
+    {
+     "code": "M1048",
+     "nom": "musée des beaux-arts",
+     "ville": "Chambéry",
+     "lat": 45.5679,
+     "lon": 5.91931,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "10480006080",
+      "titre": "Tête d'enfant"
+     }
+    },
+    {
+     "code": "M0161",
+     "nom": "musée Rolin",
+     "ville": "Autun",
+     "lat": 46.94572,
+     "lon": 4.29922,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "01610001204",
+      "titre": "Portrait de Johann-Georg Wille ; Portrait d'homme (autre titre)"
+     }
+    },
+    {
+     "code": "M0803",
+     "nom": "musée Antoine Vivenel",
+     "ville": "Compiègne",
+     "lat": 49.41741,
+     "lon": 2.82153,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "point_interrogation",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "08030002721",
+      "titre": "La boudeuse"
+     }
+    },
+    {
+     "code": "M0776",
+     "nom": "musée municipal",
+     "ville": "La Roche-sur-Yon",
+     "lat": 46.67017,
+     "lon": -1.43123,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "07760001112",
+      "titre": "Buste de femme de dos"
+     }
+    },
+    {
+     "code": "M0171",
+     "nom": "musée municipal",
+     "ville": "Louhans-Châteaurenaud",
+     "lat": 46.87264,
+     "lon": 5.27505,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "01710114791",
+      "titre": null
+     }
+    },
+    {
+     "code": "M0536",
+     "nom": "musée départemental d'art ancien et contemporain",
+     "ville": "Epinal",
+     "lat": 48.17326,
+     "lon": 6.4466,
+     "doute": 1,
+     "niveaux": [
+      0,
+      0,
+      1
+     ],
+     "familles": [
+      {
+       "code": "maniere_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "M0536030527",
+      "titre": "Portrait d'une paysanne dormant"
+     }
+    }
+   ]
+  },
+  {
+   "nom": "Le Tintoret",
+   "propre": 129,
+   "doute": 47,
+   "copie": 95,
+   "musees": 29,
+   "nb_musees_doute": 8,
+   "musee_principal": {
+    "code": "M5031",
+    "nom": "musée du Louvre",
+    "doute": 36,
+    "part": 0.766
+   },
+   "doute_sans_musee": 0,
+   "niveaux": [
+    38,
+    8,
+    1
+   ],
+   "familles": [
+    {
+     "code": "attribue",
+     "libelle": "attribué à",
+     "niveau": 1,
+     "notices": 38
+    },
+    {
+     "code": "ecole_de",
+     "libelle": "école de",
+     "niveau": 2,
+     "notices": 4
+    },
+    {
+     "code": "atelier_de",
+     "libelle": "atelier (qualificatif, beaux-arts)",
+     "niveau": 2,
+     "notices": 3
+    },
+    {
+     "code": "entourage_de",
+     "libelle": "entourage de",
+     "niveau": 2,
+     "notices": 1
+    },
+    {
+     "code": "maniere_de",
+     "libelle": "(à la) manière de",
+     "niveau": 3,
+     "notices": 1
+    }
+   ],
+   "exemples": [
+    {
+     "code": "attribue",
+     "reference": "000PE014515",
+     "titre": "SAINT BERNARD RESSUSCITANT UN MORT",
+     "musee": "musée des beaux-arts",
+     "ville": "Marseille",
+     "extrait": "ROBUSTI Jacopo (attribué à)"
+    },
+    {
+     "code": "attribue",
+     "reference": "000PE014515",
+     "titre": "SAINT BERNARD RESSUSCITANT UN MORT",
+     "musee": "musée des beaux-arts",
+     "ville": "Marseille",
+     "extrait": "LE TINTORET (dit, attribué à)"
+    },
+    {
+     "code": "ecole_de",
+     "reference": "000PE027107",
+     "titre": "JESUS QUERISSANT LES BOITEUX",
+     "musee": "musée du Louvre",
+     "ville": "Paris",
+     "extrait": "ROBUSTI Jacopo (école)"
+    },
+    {
+     "code": "atelier_de",
+     "reference": "000PE027106",
+     "titre": "PORTRAIT D'HOMME",
+     "musee": "musée du Louvre",
+     "ville": "Paris",
+     "extrait": "ROBUSTI Jacopo (atelier)"
+    },
+    {
+     "code": "entourage_de",
+     "reference": "01370014810",
+     "titre": "La Résurrection de Lazare",
+     "musee": "musée des beaux-arts",
+     "ville": "Dijon",
+     "extrait": "ROBUSTI Jacopo (entourage)"
+    },
+    {
+     "code": "maniere_de",
+     "reference": "50350105681",
+     "titre": "Un apôtre guérissant des malades",
+     "musee": "musée du Louvre",
+     "ville": "Paris",
+     "extrait": "ROBUSTI Jacopo (manière de)"
+    }
+   ],
+   "exemple_copie": {
+    "reference": "000PE020731",
+    "titre": "LE PARADIS",
+    "musee": "musée des Beaux-Arts",
+    "ville": "Lille",
+    "extrait": "ROBUSTI Jacopo (d'après)"
+   },
+   "musees_doute": [
+    {
+     "code": "M5031",
+     "nom": "musée du Louvre",
+     "ville": "Paris",
+     "lat": 48.86079,
+     "lon": 2.33782,
+     "doute": 36,
+     "niveaux": [
+      29,
+      6,
+      1
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 29
+      },
+      {
+       "code": "ecole_de",
+       "notices": 4
+      },
+      {
+       "code": "atelier_de",
+       "notices": 2
+      },
+      {
+       "code": "maniere_de",
+       "notices": 1
+      }
+     ]
+    },
+    {
+     "code": "M0913",
+     "nom": "musée des beaux-arts",
+     "ville": "Marseille",
+     "lat": 43.30472,
+     "lon": 5.39404,
+     "doute": 3,
+     "niveaux": [
+      3,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 3
+      }
+     ]
+    },
+    {
+     "code": "M5052",
+     "nom": "musée Condé",
+     "ville": "Chantilly",
+     "lat": 44.2043,
+     "lon": 0.64865,
+     "doute": 2,
+     "niveaux": [
+      2,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M0332",
+     "nom": "musée des beaux-arts et d'archéologie",
+     "ville": "Besançon",
+     "lat": 47.24005,
+     "lon": 6.02294,
+     "doute": 2,
+     "niveaux": [
+      1,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      },
+      {
+       "code": "atelier_de",
+       "notices": 1
+      }
+     ]
+    },
+    {
+     "code": "M0657",
+     "nom": "musée des beaux-arts",
+     "ville": "Caen",
+     "lat": 49.18615,
+     "lon": -0.36122,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "06570009240",
+      "titre": "La Vierge et l'Enfant entourés d'anges ; Triomphe de la Vierge"
+     }
+    },
+    {
+     "code": "M0619",
+     "nom": "musée de la Chartreuse",
+     "ville": "Douai",
+     "lat": 50.3744,
+     "lon": 3.07548,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "06190001407",
+      "titre": "Portrait d'un seigneur vénitien"
+     }
+    },
+    {
+     "code": "M0137",
+     "nom": "musée des beaux-arts",
+     "ville": "Dijon",
+     "lat": 47.32136,
+     "lon": 5.04287,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "entourage_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "01370014810",
+      "titre": "La Résurrection de Lazare"
+     }
+    },
+    {
+     "code": "M0116",
+     "nom": "musée Crozatier",
+     "ville": "Le Puy-en-Velay",
+     "lat": 45.03867,
+     "lon": 3.88346,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "01160004688",
+      "titre": "L'Annonciation"
+     }
+    }
+   ]
   },
   {
    "nom": "Van Dyck",
-   "propre": 350,
+   "propre": 343,
    "doute": 46,
    "copie": 253,
-   "musees": 63,
+   "musees": 62,
+   "nb_musees_doute": 21,
+   "musee_principal": {
+    "code": "M5031",
+    "nom": "musée du Louvre",
+    "doute": 16,
+    "part": 0.348
+   },
+   "doute_sans_musee": 0,
    "niveaux": [
     11,
     31,
@@ -1743,14 +6122,495 @@
     "musee": "musée des civilisations de l'Europe et de la Méditerranée",
     "ville": "Marseille",
     "extrait": "Van Dyck Antoine (d'après)"
-   }
+   },
+   "musees_doute": [
+    {
+     "code": "M5031",
+     "nom": "musée du Louvre",
+     "ville": "Paris",
+     "lat": 48.86079,
+     "lon": 2.33782,
+     "doute": 16,
+     "niveaux": [
+      3,
+      13,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 2
+      },
+      {
+       "code": "point_interrogation",
+       "notices": 1
+      },
+      {
+       "code": "ecole_de",
+       "notices": 13
+      }
+     ]
+    },
+    {
+     "code": "M0207",
+     "nom": "musée des beaux-arts",
+     "ville": "Quimper",
+     "lat": 47.99619,
+     "lon": -4.10196,
+     "doute": 3,
+     "niveaux": [
+      0,
+      1,
+      2
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 1
+      },
+      {
+       "code": "maniere_de",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M0019",
+     "nom": "musée des Beaux-Arts",
+     "ville": "Strasbourg",
+     "lat": 48.58123,
+     "lon": 7.75198,
+     "doute": 3,
+     "niveaux": [
+      0,
+      2,
+      1
+     ],
+     "familles": [
+      {
+       "code": "suiveur_de",
+       "notices": 2
+      },
+      {
+       "code": "maniere_de",
+       "notices": 1
+      }
+     ]
+    },
+    {
+     "code": "M0332",
+     "nom": "musée des beaux-arts et d'archéologie",
+     "ville": "Besançon",
+     "lat": 47.24005,
+     "lon": 6.02294,
+     "doute": 3,
+     "niveaux": [
+      3,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 3
+      }
+     ]
+    },
+    {
+     "code": "M0065",
+     "nom": "musée des beaux-arts",
+     "ville": "Bordeaux",
+     "lat": 44.83806,
+     "lon": -0.57941,
+     "doute": 2,
+     "niveaux": [
+      0,
+      2,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M0211",
+     "nom": "musée des beaux-arts",
+     "ville": "Rennes",
+     "lat": 48.10984,
+     "lon": -1.67498,
+     "doute": 2,
+     "niveaux": [
+      0,
+      2,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M0562",
+     "nom": "musée des Augustins",
+     "ville": "Toulouse",
+     "lat": 43.60056,
+     "lon": 1.4459,
+     "doute": 2,
+     "niveaux": [
+      0,
+      2,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 1
+      },
+      {
+       "code": "atelier_de",
+       "notices": 1
+      }
+     ]
+    },
+    {
+     "code": "M0619",
+     "nom": "musée de la Chartreuse",
+     "ville": "Douai",
+     "lat": 50.3744,
+     "lon": 3.07548,
+     "doute": 2,
+     "niveaux": [
+      0,
+      2,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M0629",
+     "nom": "musée des Beaux-Arts",
+     "ville": "Lille",
+     "lat": 50.62113,
+     "lon": 3.06839,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "atelier_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "000PE016621",
+      "titre": "LA VIERGE A L'ENFANT AVEC ALEXANDRE SCAGLIA"
+     }
+    },
+    {
+     "code": "M0116",
+     "nom": "musée Crozatier",
+     "ville": "Le Puy-en-Velay",
+     "lat": 45.03867,
+     "lon": 3.88346,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "000PE030271",
+      "titre": "PORTRAIT DU PEINTRE JAN WILDENS"
+     }
+    },
+    {
+     "code": "M0714",
+     "nom": "musée Louis Philippe",
+     "ville": "Eu",
+     "lat": 50.04914,
+     "lon": 1.41837,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "suiveur_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "07140001031",
+      "titre": "Marie de Médicis, reine de France + 1642 (Titre manuscrit)"
+     }
+    },
+    {
+     "code": "M0607",
+     "nom": "musée Ingres Bourdelle",
+     "ville": "Montauban",
+     "lat": 44.01709,
+     "lon": 1.35188,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "suiveur_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "06070000105",
+      "titre": "Portrait d'homme"
+     }
+    },
+    {
+     "code": "M5011",
+     "nom": "musée national Magnin",
+     "ville": "Dijon",
+     "lat": 47.32096,
+     "lon": 5.04219,
+     "doute": 1,
+     "niveaux": [
+      0,
+      0,
+      1
+     ],
+     "familles": [
+      {
+       "code": "genre_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "50110001610",
+      "titre": "La Vierge à l'Enfant"
+     }
+    },
+    {
+     "code": "M0677",
+     "nom": "musée Thomas-Henry",
+     "ville": "Cherbourg-en-Cotentin",
+     "lat": 49.63845,
+     "lon": -1.62544,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "06770000214",
+      "titre": "Méléagre présentant à Atalante la hure du sanglier de Calydon"
+     }
+    },
+    {
+     "code": "M0729",
+     "nom": "musée des beaux-arts",
+     "ville": "Rouen",
+     "lat": 49.44496,
+     "lon": 1.09391,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "atelier_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "07290021505",
+      "titre": "Portrait d'une dame âgée de 43 ans"
+     }
+    },
+    {
+     "code": "M1069",
+     "nom": "musée Léon Dierx",
+     "ville": "Saint-Denis de La Réunion",
+     "lat": -20.8837,
+     "lon": 55.45025,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "atelier_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "10690003855",
+      "titre": "Copie d'après atelier de Van Dick, Portrait de Van Opstal (titre factice) ; Ancien titre : L'Homme à la fraise"
+     }
+    },
+    {
+     "code": "M0311",
+     "nom": "musée des Beaux-Arts de Saint-Denis",
+     "ville": "Reims",
+     "lat": 49.25344,
+     "lon": 4.03092,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "03110042522",
+      "titre": "Étude de tête (titre attribué)"
+     }
+    },
+    {
+     "code": "M0303",
+     "nom": "musée des beaux-arts et d’archéologie",
+     "ville": "Troyes",
+     "lat": 48.30064,
+     "lon": 4.08003,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "atelier_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "03030002149",
+      "titre": "Portrait de Béatrice de Cusance (1614-1663)"
+     }
+    },
+    {
+     "code": "M0657",
+     "nom": "musée des beaux-arts",
+     "ville": "Caen",
+     "lat": 49.18615,
+     "lon": -0.36122,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "06570017304",
+      "titre": "Érasme"
+     }
+    },
+    {
+     "code": "M0457",
+     "nom": "musée des beaux-arts",
+     "ville": "Nîmes",
+     "lat": 43.832,
+     "lon": 4.36081,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "M0457000769",
+      "titre": "Sans désignation"
+     }
+    },
+    {
+     "code": "M0621",
+     "nom": "musée des beaux-arts",
+     "ville": "Dunkerque",
+     "lat": 51.03733,
+     "lon": 2.37552,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "atelier_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "06210000190",
+      "titre": "Achille parmi les filles de Lycodème (Titre) ; Achille se trahit devant Ulysse (Ancien titre)"
+     }
+    }
+   ]
   },
   {
    "nom": "Le Corrège",
-   "propre": 153,
+   "propre": 152,
    "doute": 46,
    "copie": 200,
-   "musees": 30,
+   "musees": 29,
+   "nb_musees_doute": 4,
+   "musee_principal": {
+    "code": "M5031",
+    "nom": "musée du Louvre",
+    "doute": 43,
+    "part": 0.935
+   },
+   "doute_sans_musee": 0,
    "niveaux": [
     3,
     43,
@@ -1816,7 +6676,101 @@
     "musee": "Château-musée",
     "ville": "Dieppe",
     "extrait": "Le Corrège (dit, d'après)"
-   }
+   },
+   "musees_doute": [
+    {
+     "code": "M5031",
+     "nom": "musée du Louvre",
+     "ville": "Paris",
+     "lat": 48.86079,
+     "lon": 2.33782,
+     "doute": 43,
+     "niveaux": [
+      1,
+      42,
+      0
+     ],
+     "familles": [
+      {
+       "code": "point_interrogation",
+       "notices": 1
+      },
+      {
+       "code": "ecole_de",
+       "notices": 42
+      }
+     ]
+    },
+    {
+     "code": "M0913",
+     "nom": "musée des beaux-arts",
+     "ville": "Marseille",
+     "lat": 43.30472,
+     "lon": 5.39404,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "000PE014737",
+      "titre": "FIGURE ALLEGORIQUE"
+     }
+    },
+    {
+     "code": "M0619",
+     "nom": "musée de la Chartreuse",
+     "ville": "Douai",
+     "lat": 50.3744,
+     "lon": 3.07548,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "00000060728",
+      "titre": "VIERGE A L'ENFANT ET SAINT JEROME"
+     }
+    },
+    {
+     "code": "M0277",
+     "nom": "musée municipal",
+     "ville": "Vendôme",
+     "lat": 47.79741,
+     "lon": 1.06087,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "point_interrogation",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "M0277002661",
+      "titre": "Portrait de jeune homme"
+     }
+    }
+   ]
   },
   {
    "nom": "Pierre Mignard",
@@ -1824,6 +6778,14 @@
    "doute": 43,
    "copie": 161,
    "musees": 54,
+   "nb_musees_doute": 16,
+   "musee_principal": {
+    "code": "M5077",
+    "nom": "musée national des châteaux de Versailles et de Trianon",
+    "doute": 11,
+    "part": 0.256
+   },
+   "doute_sans_musee": 0,
    "niveaux": [
     23,
     18,
@@ -1917,7 +6879,377 @@
     "musee": "musée des civilisations de l'Europe et de la Méditerranée",
     "ville": "Marseille",
     "extrait": "MIGNARD Pierre (d'après)"
-   }
+   },
+   "musees_doute": [
+    {
+     "code": "M5077",
+     "nom": "musée national des châteaux de Versailles et de Trianon",
+     "ville": "Versailles",
+     "lat": 48.80081,
+     "lon": 2.12307,
+     "doute": 11,
+     "niveaux": [
+      2,
+      9,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      },
+      {
+       "code": "point_interrogation",
+       "notices": 1
+      },
+      {
+       "code": "ecole_de",
+       "notices": 8
+      },
+      {
+       "code": "atelier_de",
+       "notices": 1
+      }
+     ]
+    },
+    {
+     "code": "M5031",
+     "nom": "musée du Louvre",
+     "ville": "Paris",
+     "lat": 48.8599,
+     "lon": 2.34093,
+     "doute": 9,
+     "niveaux": [
+      7,
+      2,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 7
+      },
+      {
+       "code": "atelier_de",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M0913",
+     "nom": "musée des beaux-arts",
+     "ville": "Marseille",
+     "lat": 43.30472,
+     "lon": 5.39404,
+     "doute": 6,
+     "niveaux": [
+      6,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 6
+      }
+     ]
+    },
+    {
+     "code": "M0607",
+     "nom": "musée Ingres Bourdelle",
+     "ville": "Montauban",
+     "lat": 44.01709,
+     "lon": 1.35188,
+     "doute": 3,
+     "niveaux": [
+      0,
+      1,
+      2
+     ],
+     "familles": [
+      {
+       "code": "atelier_de",
+       "notices": 1
+      },
+      {
+       "code": "genre_de",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M0137",
+     "nom": "musée des beaux-arts",
+     "ville": "Dijon",
+     "lat": 47.32136,
+     "lon": 5.04287,
+     "doute": 2,
+     "niveaux": [
+      2,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M0311",
+     "nom": "musée des Beaux-Arts de Saint-Denis",
+     "ville": "Reims",
+     "lat": 49.25344,
+     "lon": 4.03092,
+     "doute": 2,
+     "niveaux": [
+      1,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      },
+      {
+       "code": "atelier_de",
+       "notices": 1
+      }
+     ]
+    },
+    {
+     "code": "M0303",
+     "nom": "musée des beaux-arts et d’archéologie",
+     "ville": "Troyes",
+     "lat": 48.30064,
+     "lon": 4.08003,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "00000055990",
+      "titre": "Portrait d'homme"
+     }
+    },
+    {
+     "code": "M5052",
+     "nom": "musée Condé",
+     "ville": "Chantilly",
+     "lat": 44.2043,
+     "lon": 0.64865,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "00000077245",
+      "titre": "Dame inconnue"
+     }
+    },
+    {
+     "code": "M0286",
+     "nom": "musée des beaux-arts",
+     "ville": "Orléans",
+     "lat": 47.90157,
+     "lon": 1.90861,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "atelier_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "00000093332",
+      "titre": "Portrait de Louis XIV"
+     }
+    },
+    {
+     "code": "M0400",
+     "nom": "musée Lambinet",
+     "ville": "Versailles",
+     "lat": 48.80897,
+     "lon": 2.13062,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "atelier_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "04000001398",
+      "titre": "La famille du Grand Dauphin"
+     }
+    },
+    {
+     "code": "M0172",
+     "nom": "musée des ursulines",
+     "ville": "Mâcon",
+     "lat": 46.30751,
+     "lon": 4.83316,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "01720000928",
+      "titre": "Madame de Montespan et ses enfants"
+     }
+    },
+    {
+     "code": "M0271",
+     "nom": "château musées",
+     "ville": "Blois",
+     "lat": 47.5856,
+     "lon": 1.33167,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "M0271000077",
+      "titre": "Hélène Ferrand, marquise de Saint Germain Beaupré"
+     }
+    },
+    {
+     "code": "M0729",
+     "nom": "musée des beaux-arts",
+     "ville": "Rouen",
+     "lat": 49.44496,
+     "lon": 1.09391,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "07290022367",
+      "titre": "Tête de Christ"
+     }
+    },
+    {
+     "code": "M0003",
+     "nom": "musée du Pays de Hanau - histoire et vies d’un territoire",
+     "ville": "Bouxwiller",
+     "lat": 48.82498,
+     "lon": 7.48292,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "M0003020239",
+      "titre": "Godefroy de Bouillon soigné par l'ange (titre d'usage)"
+     }
+    },
+    {
+     "code": "M0012",
+     "nom": "musée du Château des Rohan",
+     "ville": "Saverne",
+     "lat": 48.74196,
+     "lon": 7.36279,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "atelier_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "M0012000004",
+      "titre": "Portrait du roi Louis XIV"
+     }
+    },
+    {
+     "code": "M0887",
+     "nom": "musée du palais Lascaris",
+     "ville": "Nice",
+     "lat": 43.69769,
+     "lon": 7.27733,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "atelier_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "08870000079",
+      "titre": "Portrait du Maréchal de Catinat de la Fauconnerie"
+     }
+    }
+   ]
   },
   {
    "nom": "Véronèse",
@@ -1925,6 +7257,14 @@
    "doute": 41,
    "copie": 141,
    "musees": 47,
+   "nb_musees_doute": 11,
+   "musee_principal": {
+    "code": "M5031",
+    "nom": "musée du Louvre",
+    "doute": 29,
+    "part": 0.707
+   },
+   "doute_sans_musee": 0,
    "niveaux": [
     16,
     25,
@@ -2004,7 +7344,258 @@
     "musee": "musée national des châteaux de Versailles et de Trianon",
     "ville": "Versailles",
     "extrait": "CALIARI Paolo (d'après)"
-   }
+   },
+   "musees_doute": [
+    {
+     "code": "M5031",
+     "nom": "musée du Louvre",
+     "ville": "Paris",
+     "lat": 48.86079,
+     "lon": 2.33782,
+     "doute": 29,
+     "niveaux": [
+      12,
+      17,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 12
+      },
+      {
+       "code": "ecole_de",
+       "notices": 1
+      },
+      {
+       "code": "atelier_de",
+       "notices": 16
+      }
+     ]
+    },
+    {
+     "code": "M0065",
+     "nom": "musée des beaux-arts",
+     "ville": "Bordeaux",
+     "lat": 44.83806,
+     "lon": -0.57941,
+     "doute": 2,
+     "niveaux": [
+      2,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M0913",
+     "nom": "musée des beaux-arts",
+     "ville": "Marseille",
+     "lat": 43.30472,
+     "lon": 5.39404,
+     "doute": 2,
+     "niveaux": [
+      0,
+      2,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M0629",
+     "nom": "musée des Beaux-Arts",
+     "ville": "Lille",
+     "lat": 50.62113,
+     "lon": 3.06839,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "atelier_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "000PE019542",
+      "titre": "Le Christ pleure par la Vierge et deux anges"
+     }
+    },
+    {
+     "code": "M5011",
+     "nom": "musée national Magnin",
+     "ville": "Dijon",
+     "lat": 47.32096,
+     "lon": 5.04219,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "00000069097",
+      "titre": "La Vierge et l'enfant sur un trône"
+     }
+    },
+    {
+     "code": "M5052",
+     "nom": "musée Condé",
+     "ville": "Chantilly",
+     "lat": 44.2043,
+     "lon": 0.64865,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "atelier_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "00000077344",
+      "titre": "MARS ET VENUS"
+     }
+    },
+    {
+     "code": "M1048",
+     "nom": "musée des beaux-arts",
+     "ville": "Chambéry",
+     "lat": 45.5679,
+     "lon": 5.91931,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "atelier_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "10500004947",
+      "titre": "Portrait de jeune femme"
+     }
+    },
+    {
+     "code": "M0657",
+     "nom": "musée des beaux-arts",
+     "ville": "Caen",
+     "lat": 49.18615,
+     "lon": -0.36122,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "06570007408",
+      "titre": "Le Départ des Israëlites ; Les Hébreux quittant l'Égypte"
+     }
+    },
+    {
+     "code": "M0329",
+     "nom": "musée d’ethnographie corse",
+     "ville": "Bastia",
+     "lat": 42.69315,
+     "lon": 9.45058,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "suiveur_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "03290005067",
+      "titre": "Vénus et Mars"
+     }
+    },
+    {
+     "code": "M0137",
+     "nom": "musée des beaux-arts",
+     "ville": "Dijon",
+     "lat": 47.32136,
+     "lon": 5.04287,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "atelier_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "01370014322",
+      "titre": "La Vierge apparaissant à saint Antoine, saint Paul ermite, saint Paul et saint Pierre"
+     }
+    },
+    {
+     "code": "M0176",
+     "nom": "musée eucharistique du Hiéron",
+     "ville": "Paray-le-Monial",
+     "lat": 46.45182,
+     "lon": 4.12302,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "atelier_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "01760000021",
+      "titre": "Le Repas à Emmaüs"
+     }
+    }
+   ]
   },
   {
    "nom": "Hyacinthe Rigaud",
@@ -2012,6 +7603,14 @@
    "doute": 41,
    "copie": 153,
    "musees": 70,
+   "nb_musees_doute": 19,
+   "musee_principal": {
+    "code": "M5077",
+    "nom": "musée national des châteaux de Versailles et de Trianon",
+    "doute": 14,
+    "part": 0.341
+   },
+   "doute_sans_musee": 0,
    "niveaux": [
     16,
     25,
@@ -2077,7 +7676,434 @@
     "musee": "musée national des châteaux de Versailles et de Trianon",
     "ville": "Versailles",
     "extrait": "RIGAUD Hyacinthe (dit, d'après)"
-   }
+   },
+   "musees_doute": [
+    {
+     "code": "M5077",
+     "nom": "musée national des châteaux de Versailles et de Trianon",
+     "ville": "Versailles",
+     "lat": 48.80454,
+     "lon": 2.13405,
+     "doute": 14,
+     "niveaux": [
+      0,
+      14,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 13
+      },
+      {
+       "code": "atelier_de",
+       "notices": 1
+      }
+     ]
+    },
+    {
+     "code": "M5031",
+     "nom": "musée du Louvre",
+     "ville": "Paris",
+     "lat": 48.86079,
+     "lon": 2.33782,
+     "doute": 4,
+     "niveaux": [
+      4,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 4
+      }
+     ]
+    },
+    {
+     "code": "M0657",
+     "nom": "musée des beaux-arts",
+     "ville": "Caen",
+     "lat": 49.18615,
+     "lon": -0.36122,
+     "doute": 3,
+     "niveaux": [
+      1,
+      2,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      },
+      {
+       "code": "ecole_de",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M0913",
+     "nom": "musée des beaux-arts",
+     "ville": "Marseille",
+     "lat": 43.30472,
+     "lon": 5.39404,
+     "doute": 2,
+     "niveaux": [
+      2,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M0917",
+     "nom": "musée Grobet-Labadié",
+     "ville": "Marseille",
+     "lat": 43.30341,
+     "lon": 5.39287,
+     "doute": 2,
+     "niveaux": [
+      1,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      },
+      {
+       "code": "ecole_de",
+       "notices": 1
+      }
+     ]
+    },
+    {
+     "code": "M0137",
+     "nom": "musée des beaux-arts",
+     "ville": "Dijon",
+     "lat": 47.32136,
+     "lon": 5.04287,
+     "doute": 2,
+     "niveaux": [
+      1,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      },
+      {
+       "code": "atelier_de",
+       "notices": 1
+      }
+     ]
+    },
+    {
+     "code": "M0452",
+     "nom": "musée Cévenol",
+     "ville": "Le Vigan",
+     "lat": 43.989,
+     "lon": 3.60693,
+     "doute": 2,
+     "niveaux": [
+      2,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M0770",
+     "nom": "musée de Tessé",
+     "ville": "Le Mans",
+     "lat": 48.01112,
+     "lon": 0.20375,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "000PE009680",
+      "titre": "PORTRAIT DU MARECHAL DE TESSE (1650-1725)"
+     }
+    },
+    {
+     "code": "M0303",
+     "nom": "musée des beaux-arts et d’archéologie",
+     "ville": "Troyes",
+     "lat": 48.30064,
+     "lon": 4.08003,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "00000056019",
+      "titre": "PORTRAIT D'HOMME"
+     }
+    },
+    {
+     "code": "M5052",
+     "nom": "musée Condé",
+     "ville": "Chantilly",
+     "lat": 44.2043,
+     "lon": 0.64865,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "00000077264",
+      "titre": "PORTRAIT D'HOMME"
+     }
+    },
+    {
+     "code": "M1048",
+     "nom": "musée des beaux-arts",
+     "ville": "Chambéry",
+     "lat": 45.5679,
+     "lon": 5.91931,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "atelier_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "10480002158",
+      "titre": "Louis XV enfant"
+     }
+    },
+    {
+     "code": "M0065",
+     "nom": "musée des beaux-arts",
+     "ville": "Bordeaux",
+     "lat": 44.83806,
+     "lon": -0.57941,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "atelier_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "000PE023379",
+      "titre": "Trois études de cuirasses"
+     }
+    },
+    {
+     "code": "M0784",
+     "nom": "musée Jean de la Fontaine",
+     "ville": "Château-Thierry",
+     "lat": 49.04693,
+     "lon": 3.40029,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "atelier_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "07840001024",
+      "titre": "Jean de La Fontaine"
+     }
+    },
+    {
+     "code": "M0729",
+     "nom": "musée des beaux-arts",
+     "ville": "Rouen",
+     "lat": 49.44496,
+     "lon": 1.09391,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "atelier_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "07290022339",
+      "titre": "Etude de cuirasse"
+     }
+    },
+    {
+     "code": "M0121",
+     "nom": "musée d'art Roger-Quillot",
+     "ville": "Clermont-Ferrand",
+     "lat": 45.79303,
+     "lon": 3.07827,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "atelier_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "M0121003071",
+      "titre": "Portrait de Mademoiselle de Charolais (ou de Blois)"
+     }
+    },
+    {
+     "code": "M0517",
+     "nom": "musée barrois",
+     "ville": "Bar-le-Duc",
+     "lat": 48.7718,
+     "lon": 5.15607,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "M0517000065",
+      "titre": "Portrait d'Alexis Piron (titre de l'inventaire, titre erroné) ; Portrait d'Antoine Coysevox (titre d'usage)"
+     }
+    },
+    {
+     "code": "M1016",
+     "nom": "musée d'Allard",
+     "ville": "Montbrison",
+     "lat": 45.60824,
+     "lon": 4.06195,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "10160000824",
+      "titre": "René François de Beauvau du Rivau"
+     }
+    },
+    {
+     "code": "M0703",
+     "nom": "musée d'art, histoire et archéologie d'Évreux",
+     "ville": "Évreux",
+     "lat": 49.024,
+     "lon": 1.1502,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "atelier_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "07030017687",
+      "titre": "Portrait d'Emmanuel-Théodose de la Tour d'Auvergne, Duc, d'Albert et de Bouillon"
+     }
+    },
+    {
+     "code": "M0949",
+     "nom": "bibliothèque-musée Inguimbertine",
+     "ville": "Carpentras",
+     "lat": 44.0543,
+     "lon": 5.04548,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "atelier_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "M0949000353",
+      "titre": "Portrait de l'abbé de Rancé"
+     }
+    }
+   ]
   },
   {
    "nom": "Géricault",
@@ -2085,6 +8111,14 @@
    "doute": 40,
    "copie": 44,
    "musees": 38,
+   "nb_musees_doute": 14,
+   "musee_principal": {
+    "code": "M0332",
+    "nom": "musée des beaux-arts et d'archéologie",
+    "doute": 18,
+    "part": 0.45
+   },
+   "doute_sans_musee": 0,
    "niveaux": [
     31,
     4,
@@ -2150,7 +8184,319 @@
     "musee": "musée du Louvre",
     "ville": "Paris",
     "extrait": "GERICAULT Théodore (d'après)"
-   }
+   },
+   "musees_doute": [
+    {
+     "code": "M0332",
+     "nom": "musée des beaux-arts et d'archéologie",
+     "ville": "Besançon",
+     "lat": 47.24005,
+     "lon": 6.02294,
+     "doute": 18,
+     "niveaux": [
+      13,
+      0,
+      5
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 13
+      },
+      {
+       "code": "genre_de",
+       "notices": 5
+      }
+     ]
+    },
+    {
+     "code": "M0729",
+     "nom": "musée des beaux-arts",
+     "ville": "Rouen",
+     "lat": 49.44496,
+     "lon": 1.09391,
+     "doute": 7,
+     "niveaux": [
+      7,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 7
+      }
+     ]
+    },
+    {
+     "code": "M5031",
+     "nom": "musée du Louvre",
+     "ville": "Paris",
+     "lat": 48.86079,
+     "lon": 2.33782,
+     "doute": 3,
+     "niveaux": [
+      0,
+      3,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 3
+      }
+     ]
+    },
+    {
+     "code": "M0137",
+     "nom": "musée des beaux-arts",
+     "ville": "Dijon",
+     "lat": 47.32136,
+     "lon": 5.04287,
+     "doute": 2,
+     "niveaux": [
+      2,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M5060",
+     "nom": "musée d'Orsay",
+     "ville": "Paris",
+     "lat": 48.85916,
+     "lon": 2.32367,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "000PE001307",
+      "titre": "LIONS COUCHES"
+     }
+    },
+    {
+     "code": "M0770",
+     "nom": "musée de Tessé",
+     "ville": "Le Mans",
+     "lat": 48.01112,
+     "lon": 0.20375,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "000PE009846",
+      "titre": "PORTRAIT D'UN JEUNE GARCON"
+     }
+    },
+    {
+     "code": "M0594",
+     "nom": "musée Goya",
+     "ville": "Castres",
+     "lat": 43.60481,
+     "lon": 2.23989,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "00000074301",
+      "titre": "JOCKEY AVEC DEUX CHEVAUX"
+     }
+    },
+    {
+     "code": "M5011",
+     "nom": "musée national Magnin",
+     "ville": "Dijon",
+     "lat": 47.32096,
+     "lon": 5.04219,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "50110000738",
+      "titre": "Tête de jeune homme"
+     }
+    },
+    {
+     "code": "M0607",
+     "nom": "musée Ingres Bourdelle",
+     "ville": "Montauban",
+     "lat": 44.01709,
+     "lon": 1.35188,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "06070001420",
+      "titre": "Académie d'homme"
+     }
+    },
+    {
+     "code": "M1048",
+     "nom": "musée des beaux-arts",
+     "ville": "Chambéry",
+     "lat": 45.5679,
+     "lon": 5.91931,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "10480003953",
+      "titre": "Cheval au galop"
+     }
+    },
+    {
+     "code": "M0915",
+     "nom": "musée Cantini",
+     "ville": "Marseille",
+     "lat": 43.29238,
+     "lon": 5.37814,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "000PE024365",
+      "titre": "ANON"
+     }
+    },
+    {
+     "code": "M0289",
+     "nom": "musée municipal",
+     "ville": "Pithiviers",
+     "lat": 48.17252,
+     "lon": 2.255,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "M0289002599",
+      "titre": "Cheval debout de profil vers la gauche (titre factice)"
+     }
+    },
+    {
+     "code": "M0311",
+     "nom": "musée des Beaux-Arts de Reims",
+     "ville": "Reims",
+     "lat": 49.25344,
+     "lon": 4.03092,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "03110005881",
+      "titre": "Napoléon donnant un ordre à un officier supérieur des Guides"
+     }
+    },
+    {
+     "code": "M0121",
+     "nom": "musée d'art Roger-Quillot",
+     "ville": "Clermont-Ferrand",
+     "lat": 45.79303,
+     "lon": 3.07827,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "M0121001933",
+      "titre": "Étude de tête d'homme"
+     }
+    }
+   ]
   },
   {
    "nom": "Fragonard",
@@ -2158,6 +8504,14 @@
    "doute": 31,
    "copie": 26,
    "musees": 42,
+   "nb_musees_doute": 11,
+   "musee_principal": {
+    "code": "M5031",
+    "nom": "musée du Louvre",
+    "doute": 14,
+    "part": 0.452
+   },
+   "doute_sans_musee": 0,
    "niveaux": [
     26,
     3,
@@ -2237,7 +8591,246 @@
     "musee": "musée des beaux-arts",
     "ville": "Bordeaux",
     "extrait": "Fragonard Jean-Honoré (1732-1806) (d'après)"
-   }
+   },
+   "musees_doute": [
+    {
+     "code": "M5031",
+     "nom": "musée du Louvre",
+     "ville": "Paris",
+     "lat": 48.86079,
+     "lon": 2.33782,
+     "doute": 14,
+     "niveaux": [
+      13,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 13
+      },
+      {
+       "code": "ecole_de",
+       "notices": 1
+      }
+     ]
+    },
+    {
+     "code": "M0917",
+     "nom": "musée Grobet-Labadié",
+     "ville": "Marseille",
+     "lat": 43.30341,
+     "lon": 5.39287,
+     "doute": 3,
+     "niveaux": [
+      3,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 3
+      }
+     ]
+    },
+    {
+     "code": "M0876",
+     "nom": "musée Fragonard",
+     "ville": "Grasse",
+     "lat": 43.65674,
+     "lon": 6.92109,
+     "doute": 3,
+     "niveaux": [
+      3,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 3
+      }
+     ]
+    },
+    {
+     "code": "M0913",
+     "nom": "musée des beaux-arts",
+     "ville": "Marseille",
+     "lat": 43.30472,
+     "lon": 5.39404,
+     "doute": 2,
+     "niveaux": [
+      2,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M0729",
+     "nom": "musée des beaux-arts",
+     "ville": "Rouen",
+     "lat": 49.44496,
+     "lon": 1.09391,
+     "doute": 2,
+     "niveaux": [
+      1,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      },
+      {
+       "code": "ecole_de",
+       "notices": 1
+      }
+     ]
+    },
+    {
+     "code": "M0445",
+     "nom": "Palais-musée des Archevêques de Narbonne",
+     "ville": "Narbonne",
+     "lat": 43.18417,
+     "lon": 3.00427,
+     "doute": 2,
+     "niveaux": [
+      2,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M0065",
+     "nom": "musée des beaux-arts",
+     "ville": "Bordeaux",
+     "lat": 44.83806,
+     "lon": -0.57941,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "000PE023112",
+      "titre": "Joueur de flûte"
+     }
+    },
+    {
+     "code": "M0607",
+     "nom": "musée Ingres Bourdelle",
+     "ville": "Montauban",
+     "lat": 44.01709,
+     "lon": 1.35188,
+     "doute": 1,
+     "niveaux": [
+      0,
+      0,
+      1
+     ],
+     "familles": [
+      {
+       "code": "maniere_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "06070000115",
+      "titre": "Sainte Famille"
+     }
+    },
+    {
+     "code": "M1048",
+     "nom": "musée des beaux-arts",
+     "ville": "Chambéry",
+     "lat": 45.5679,
+     "lon": 5.91931,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "10480007491",
+      "titre": "Le Jeu de la palette"
+     }
+    },
+    {
+     "code": "M5011",
+     "nom": "musée national Magnin",
+     "ville": "Dijon",
+     "lat": 47.32096,
+     "lon": 5.04219,
+     "doute": 1,
+     "niveaux": [
+      0,
+      0,
+      1
+     ],
+     "familles": [
+      {
+       "code": "genre_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "50110001194",
+      "titre": "Le petit montreur de singe savant"
+     }
+    },
+    {
+     "code": "M0536",
+     "nom": "musée départemental d'art ancien et contemporain",
+     "ville": "Epinal",
+     "lat": 48.17326,
+     "lon": 6.4466,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "M0536001628",
+      "titre": "Le Coche d’eau (recto) ; Personnage de dos drapé d’une cape (verso)"
+     }
+    }
+   ]
   },
   {
    "nom": "Raphaël",
@@ -2245,6 +8838,14 @@
    "doute": 28,
    "copie": 730,
    "musees": 108,
+   "nb_musees_doute": 10,
+   "musee_principal": {
+    "code": "M5031",
+    "nom": "musée du Louvre",
+    "doute": 10,
+    "part": 0.357
+   },
+   "doute_sans_musee": 0,
    "niveaux": [
     12,
     16,
@@ -2338,14 +8939,250 @@
     "musee": "musée des civilisations de l'Europe et de la Méditerranée",
     "ville": "Marseille",
     "extrait": "Raphaël (1483-1520) (d'après)"
-   }
+   },
+   "musees_doute": [
+    {
+     "code": "M5031",
+     "nom": "musée du Louvre",
+     "ville": "Paris",
+     "lat": 48.86079,
+     "lon": 2.33782,
+     "doute": 10,
+     "niveaux": [
+      4,
+      6,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 4
+      },
+      {
+       "code": "ecole_de",
+       "notices": 2
+      },
+      {
+       "code": "atelier_de",
+       "notices": 4
+      }
+     ]
+    },
+    {
+     "code": "M5052",
+     "nom": "musée Condé",
+     "ville": "Chantilly",
+     "lat": 44.2043,
+     "lon": 0.64865,
+     "doute": 5,
+     "niveaux": [
+      3,
+      2,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 3
+      },
+      {
+       "code": "atelier_de",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M0619",
+     "nom": "musée de la Chartreuse",
+     "ville": "Douai",
+     "lat": 50.3744,
+     "lon": 3.07548,
+     "doute": 4,
+     "niveaux": [
+      0,
+      4,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 4
+      }
+     ]
+    },
+    {
+     "code": "M0211",
+     "nom": "musée des beaux-arts",
+     "ville": "Rennes",
+     "lat": 48.10984,
+     "lon": -1.67498,
+     "doute": 2,
+     "niveaux": [
+      0,
+      2,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M0332",
+     "nom": "musée des beaux-arts et d'archéologie",
+     "ville": "Besançon",
+     "lat": 47.24005,
+     "lon": 6.02294,
+     "doute": 2,
+     "niveaux": [
+      1,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      },
+      {
+       "code": "entourage_de",
+       "notices": 1
+      }
+     ]
+    },
+    {
+     "code": "M5077",
+     "nom": "musée national des châteaux de Versailles et de Trianon",
+     "ville": "Versailles",
+     "lat": 48.80454,
+     "lon": 2.13405,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "000PE009022",
+      "titre": "SAINT JEAN L'EVANGELISTE A PATMOS"
+     }
+    },
+    {
+     "code": "M0303",
+     "nom": "musée des beaux-arts et d’archéologie",
+     "ville": "Troyes",
+     "lat": 48.30064,
+     "lon": 4.08003,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "point_interrogation",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "00000094096",
+      "titre": "PIERRE GREGOIRE HERLUISON (TITRE INSCRIT)"
+     }
+    },
+    {
+     "code": "M5013",
+     "nom": "musée national du château de Fontainebleau",
+     "ville": "Fontainebleau",
+     "lat": 48.40281,
+     "lon": 2.69686,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "50130000415",
+      "titre": "Portrait d'homme vêtu de noir"
+     }
+    },
+    {
+     "code": "M0139",
+     "nom": "musée de la vie bourguignonne",
+     "ville": "Dijon",
+     "lat": 47.31741,
+     "lon": 5.03713,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "01390035198",
+      "titre": null
+     }
+    },
+    {
+     "code": "M0914",
+     "nom": "musée des arts décoratifs, de la faïence et de la mode",
+     "ville": "Marseille",
+     "lat": 43.2586,
+     "lon": 5.38417,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "09140001370",
+      "titre": "Portrait de Henri IV"
+     }
+    }
+   ]
   },
   {
    "nom": "Ribera",
-   "propre": 65,
+   "propre": 59,
    "doute": 21,
    "copie": 27,
-   "musees": 46,
+   "musees": 45,
+   "nb_musees_doute": 15,
+   "musee_principal": {
+    "code": "M5031",
+    "nom": "musée du Louvre",
+    "doute": 3,
+    "part": 0.143
+   },
+   "doute_sans_musee": 0,
    "niveaux": [
     8,
     11,
@@ -2439,7 +9276,346 @@
     "musee": "musée de Brou",
     "ville": "Bourg-en-Bresse",
     "extrait": "Ribera Jusepe de (1591-1652) (d'après)"
-   }
+   },
+   "musees_doute": [
+    {
+     "code": "M5031",
+     "nom": "musée du Louvre",
+     "ville": "Paris",
+     "lat": 48.86079,
+     "lon": 2.33782,
+     "doute": 3,
+     "niveaux": [
+      1,
+      0,
+      2
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      },
+      {
+       "code": "genre_de",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M0812",
+     "nom": "musée de Picardie",
+     "ville": "Amiens",
+     "lat": 49.89041,
+     "lon": 2.29597,
+     "doute": 2,
+     "niveaux": [
+      1,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      },
+      {
+       "code": "atelier_de",
+       "notices": 1
+      }
+     ]
+    },
+    {
+     "code": "M0594",
+     "nom": "musée Goya",
+     "ville": "Castres",
+     "lat": 49.15731,
+     "lon": -1.23682,
+     "doute": 2,
+     "niveaux": [
+      1,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      },
+      {
+       "code": "ecole_de",
+       "notices": 1
+      }
+     ]
+    },
+    {
+     "code": "M0677",
+     "nom": "musée Thomas-Henry",
+     "ville": "Cherbourg-en-Cotentin",
+     "lat": 49.6371,
+     "lon": -1.62306,
+     "doute": 2,
+     "niveaux": [
+      0,
+      2,
+      0
+     ],
+     "familles": [
+      {
+       "code": "entourage_de",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M0619",
+     "nom": "musée de la Chartreuse",
+     "ville": "Douai",
+     "lat": 50.3744,
+     "lon": 3.07548,
+     "doute": 2,
+     "niveaux": [
+      0,
+      2,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M0798",
+     "nom": "MUDO - musée de l'Oise",
+     "ville": "Beauvais",
+     "lat": 49.43279,
+     "lon": 2.08044,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "000PE026599",
+      "titre": "SAINT JEROME ECRIVANT"
+     }
+    },
+    {
+     "code": "M0098",
+     "nom": "musée des Beaux-Arts",
+     "ville": "Pau",
+     "lat": 43.29725,
+     "lon": -0.36438,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "atelier_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "00980000808",
+      "titre": "Saint Jérôme"
+     }
+    },
+    {
+     "code": "M0607",
+     "nom": "musée Ingres Bourdelle",
+     "ville": "Montauban",
+     "lat": 44.01709,
+     "lon": 1.35188,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "06070000233",
+      "titre": "Saint Jérôme lisant"
+     }
+    },
+    {
+     "code": "M0332",
+     "nom": "musée des beaux-arts et d'archéologie",
+     "ville": "Besançon",
+     "lat": 47.24005,
+     "lon": 6.02294,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "M0332001175",
+      "titre": "Philosophe ou Architecte ; Héraclite (?)"
+     }
+    },
+    {
+     "code": "M0811",
+     "nom": "musée Boucher de Perthes",
+     "ville": "Abbeville",
+     "lat": 50.10712,
+     "lon": 1.83319,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "atelier_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "M0811000214",
+      "titre": "Saint François et l'enfant Jésus"
+     }
+    },
+    {
+     "code": "M0184",
+     "nom": "musée d'art et d'histoire Saint-Germain",
+     "ville": "Auxerre",
+     "lat": 47.80028,
+     "lon": 3.57198,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "01840000081",
+      "titre": "Une fileuse"
+     }
+    },
+    {
+     "code": "M0770",
+     "nom": "musée de Tessé",
+     "ville": "Le Mans",
+     "lat": 48.01112,
+     "lon": 0.20375,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "entourage_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "07700010824",
+      "titre": "Saint Jean l'Evangéliste ; Saint Jean écrivant l'Apocalypse"
+     }
+    },
+    {
+     "code": "M0445",
+     "nom": "Palais-musée des Archevêques de Narbonne",
+     "ville": "Narbonne",
+     "lat": 43.18417,
+     "lon": 3.00427,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "04450000800",
+      "titre": "Mendiant recroquevillé"
+     }
+    },
+    {
+     "code": "M0381",
+     "nom": "château musée de Nemours",
+     "ville": "Nemours",
+     "lat": 48.26552,
+     "lon": 2.69616,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "M0381002079",
+      "titre": "Portrait d'homme"
+     }
+    },
+    {
+     "code": "M0536",
+     "nom": "musée départemental d'art ancien et contemporain",
+     "ville": "Epinal",
+     "lat": 48.17326,
+     "lon": 6.4466,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "entourage_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "M0536000515",
+      "titre": "Saint Jérôme et l’ange sonnant la trompette du Jugement dernier"
+     }
+    }
+   ]
   },
   {
    "nom": "Titien",
@@ -2447,6 +9623,14 @@
    "doute": 20,
    "copie": 236,
    "musees": 42,
+   "nb_musees_doute": 6,
+   "musee_principal": {
+    "code": "M5031",
+    "nom": "musée du Louvre",
+    "doute": 12,
+    "part": 0.6
+   },
+   "doute_sans_musee": 0,
    "niveaux": [
     9,
     11,
@@ -2540,7 +9724,147 @@
     "musee": "musée national des châteaux de Versailles et de Trianon",
     "ville": "Versailles",
     "extrait": "VECELLIO Tiziano (d'après)"
-   }
+   },
+   "musees_doute": [
+    {
+     "code": "M5031",
+     "nom": "musée du Louvre",
+     "ville": "Paris",
+     "lat": 48.86079,
+     "lon": 2.33782,
+     "doute": 12,
+     "niveaux": [
+      4,
+      8,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 4
+      },
+      {
+       "code": "atelier_de",
+       "notices": 4
+      },
+      {
+       "code": "entourage_de",
+       "notices": 4
+      }
+     ]
+    },
+    {
+     "code": "M5052",
+     "nom": "musée Condé",
+     "ville": "Chantilly",
+     "lat": 44.2043,
+     "lon": 0.64865,
+     "doute": 3,
+     "niveaux": [
+      1,
+      2,
+      0
+     ],
+     "familles": [
+      {
+       "code": "point_interrogation",
+       "notices": 1
+      },
+      {
+       "code": "atelier_de",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M0065",
+     "nom": "musée des beaux-arts",
+     "ville": "Bordeaux",
+     "lat": 44.83806,
+     "lon": -0.57941,
+     "doute": 2,
+     "niveaux": [
+      2,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M1048",
+     "nom": "musée des beaux-arts",
+     "ville": "Chambéry",
+     "lat": 45.5679,
+     "lon": 5.91931,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "10500004900",
+      "titre": "Vierge à l'enfant avec trois saints : Ste Cécile, St Jean Baptiste et un évêque"
+     }
+    },
+    {
+     "code": "M0562",
+     "nom": "musée des Augustins",
+     "ville": "Toulouse",
+     "lat": 43.60056,
+     "lon": 1.4459,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "suiveur_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "05620000355",
+      "titre": "Sainte Famille"
+     }
+    },
+    {
+     "code": "M0333",
+     "nom": "musée du temps",
+     "ville": "Besançon",
+     "lat": 47.23598,
+     "lon": 6.0268,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "M0333000715",
+      "titre": "Portrait de Nicolas Perrenot de Granvelle"
+     }
+    }
+   ]
   }
  ]
 }

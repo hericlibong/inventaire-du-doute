@@ -3,6 +3,273 @@
 Tout ce qu'on apprend sur la base Joconde au fil du projet : structure, pièges,
 chiffres vérifiés. Chaque constat indique sa date et comment il a été obtenu.
 
+## Reconnaissance pour la « Vue d'ensemble » des formulations prudentes (2026-07-15)
+
+Tour d'horizon avant de cadrer une future section « Vue d'ensemble » du dossier
+« Les presque ». Chiffres croisés depuis les exports déjà validés (`artistes.json`,
+`niveaux.json`, `musees.json`) ; export dédié : `data/exports/web/vue_ensemble.json`
+(script `src/build_vue_ensemble.py`, cohérence vérifiée par `assert`).
+
+**Message central (à porter par la section).** Dans l'ensemble de Joconde,
+« attribué à » domine fortement (niveau 1 « Presque lui » = 20 014 / 24 507, 81,7 %,
+et encore 76 % une fois la monoculture de Nice retirée). **Dans les 27 noms
+retenus, le rapport s'inverse** : les liens plus indirects — école, atelier,
+manière (niveau 2 « Autour de lui ») — prennent le dessus (niveaux dans les 27 :
+901 / 1 234 / 206, soit 52,7 % de niveau 2). C'est ce **contraste** qui doit
+porter la vue.
+
+**Périmètre.** Les 27 noms ne pèsent que **2 341** des 24 507 doutes (≈ 9,6 %).
+La « Vue d'ensemble » parle donc d'un corpus dix fois plus grand que les 27.
+
+**Familles de doute (recouvrements possibles → jamais additionnées) — global /
+dans 27 / hors 27 :** attribué à 17 926 / 876 / 17 050 ; ? 2 213 / 25 / 2 188 ;
+école de 1 871 / 919 / 952 ; atelier 1 236 / 230 / 1 006 ; manière 703 / 181 / 522 ;
+entourage 503 / 77 / 426 ; genre 303 / 25 / 278 ; suiveur 80 / 8 / 72. (Famille
+`presume`, n=4, marginale, exclue de l'export.)
+
+**Monoculture divulguée.** Muséum d'histoire naturelle de Nice — planches Barla
+« attribué à » = **5 791** doutes (23,6 % du doute national), 100 % niveau 1, un
+naturaliste et non un maître de l'art. `doute_hors_monoculture` = 18 716. Le
+hors‑27 (22 166) en est largement composé.
+
+**Fiabilité du hors‑27.** Au niveau **famille**, fiable (fiabilités mesurées T4/
+T4bis : 86,7 % à 100 % selon la formule). Au niveau **« rattaché à un maître »,
+non validé** hors des 27 (seuls noms désambiguïsés). → publiable **par famille**,
+**jamais par nom** hors des 27 ; toujours distinguer « avec / sans monoculture ».
+
+**Copies « d'après » : tenues à part.** Catégorie distincte, jamais mêlée au
+doute : `d'après` 22 564 + `copie` 280 = **22 624**.
+
+**Domaines (réserve, avec caveat).** `comptages_domaines.csv` donne le doute par
+domaine (dessin 13 324, peinture 4 851, estampe 2 198…), mais le champ Domaine est
+**multi‑valué** : la somme (29 127) dépasse le total (24 507) → double‑comptage,
+à ne montrer qu'en parts indicatives. Hors export « Vue d'ensemble » pour l'instant.
+
+**Période : écartée en V1.** Non exportée pour le doute ; générable depuis
+`Millesime_de_creation` mais ~16 % de datables → trop lacunaire pour une frise
+honnête.
+
+**Top musées : laissés en réserve** pour cette section (données présentes dans
+`musees.json`/`territoires.json`, mais non incluses dans l'export à ce stade).
+
+## Le champ Ancienne_attribution au microscope (2026-07-13, audit avant rubrique « Révisions »)
+
+Scans complets du CSV (trois passes par morceaux) avant de cadrer la rubrique
+« Révisions ». Périmètre : notices où l'ancienne attribution **diffère** de
+l'auteur actuel après normalisation (parenthèses retirées, casse ignorée).
+
+**Volumes.** 27 266 notices ont le champ renseigné ; 26 846 ont aussi un
+auteur actuel ; **26 667 portent un nom différent** (98 % — le champ n'est
+presque jamais une redite). Destination de l'auteur actuel (classée au
+lexique v2, segment par segment) :
+
+| Destination | Notices | Part |
+|---|---|---|
+| un autre nom franc | 14 036 | 52,6 % |
+| anonyme | 5 824 | 21,8 % |
+| un autre nom, encore prudent (attribué, ?, école…) | 4 559 | 17,1 % |
+| anonyme + « d'après » (devenue copie) | 2 102 | 7,9 % |
+| copie seule | 128 | 0,5 % |
+| autre | 18 | 0,1 % |
+
+**Au moins cinq formats cohabitent dans le champ :**
+
+1. `NOM (ancienne attribution)` — le plus courant ;
+2. `NOM (attribué en 1869)` / `(attribué vers …)` — **attribution datée** :
+   1 551 notices (Louvre, Versailles, Orsay…) ;
+3. `NOM (CAT. 1938)` — référence de catalogue : 378 (musée Magnin surtout) ;
+4. **chaînes** `A (CAT. 1922) ; B (CAT. 1938)` — 5 798 notices ont ≥ 2
+   segments (jusqu'à 4 et plus) : de vraies chronologies d'attribution ;
+5. prose libre (« ATTRIBUTION FAITE PAR BENJAMIN COUILLEAUX EN 2012 ») — rare.
+
+Au total **1 907 notices (7,2 %) portent au moins une date fiable**, étalées
+de 1790 aux années 2000 → trop peu pour une frise vedette ; assez pour dater
+les cas qui le permettent.
+
+**Concentration** : 59,5 % musée du Louvre, 62,9 % domaine dessin — le
+phénomène est en grande partie le quotidien des cabinets d'arts graphiques.
+146 musées concernés ; hors Louvre : 10 805 notices.
+
+**Pièges — dont deux commis par notre propre audit rapide, corrigés le jour
+même** (la preuve que les contrôles type SERODINE/RODIN restent nécessaires) :
+
+- un motif trop large a pris les **années de vie** `(1452-1519)` pour des
+  dates de catalogue → seules formes fiables : `CAT. AAAA`, `INVENTAIRE`,
+  `attribué en AAAA` ;
+- « attribu » en sous-chaîne matche « attribution » — mot présent dans le
+  libellé même du champ ! → toujours `attribu[ée]` borné par `\b` ;
+- grands noms en sous-chaîne : « ÉCOLE CARAVAGESQUE » compté pour Caravage
+  (4 pollutions mesurées sur ~2 300 rattachements — faible ici, mais réel) →
+  **mot entier obligatoire**, comme pour les 27 maîtres ;
+- **23,1 % des anciennes attributions portaient déjà un doute** (« école
+  de », « ? », « attribué ») : l'« avant » n'était pas un verdict ;
+- « d'après » dans l'ancienne attribution : 1 198 cas (l'œuvre était déjà
+  tenue pour copie — avant/après de copiste, pas d'auteur) ;
+- noms proches avant/après **légitimes** (24 % partagent un token ≥ 4
+  lettres) : père/fils (WILLE Jean Georges → WILLE Pierre Alexandre),
+  graphies (PRIMATICE → PRIMATICCIO), même nom passé en « d'après » — à
+  afficher verbatim, jamais fusionner ;
+- **le dernier segment d'une chaîne peut être l'attribution actuelle**
+  (Bellechose, Louvre) : comparer segment par segment, jamais le champ entier ;
+- la **direction inverse existe** : « ANONYME, 18E SIECLE (CAT. 1938) » →
+  GUARDI — une œuvre peut gagner un nom (à chiffrer au pipeline) ;
+- extraction d'un nom lisible : fiable pour **59 %** des anciens noms (règle
+  stricte : premier segment, hors parenthèses, sans chiffre ni « ? » ni
+  « école », ≤ 45 caractères) et **99,5 %** des auteurs actuels.
+
+**Remplissage utile** (sur les 26 667) : Titre 96,5 %, Ville 100 %,
+Dénomination 34,8 %. Grands noms au **mot entier** dans les anciennes
+attributions : Vinci 511, Poussin 350, Rubens 236, Rembrandt 227, Le Brun 115,
+Fragonard 114, Watteau 107…
+
+## Images des œuvres : Joconde n'en fournit pas d'exploitable en droit (2026-07-14)
+
+Audit pour savoir si la rubrique « Avant / après » peut être illustrée
+(champs CSV + test POP réel).
+
+- **Le CSV ne porte aucune URL d'image ni chemin.** Il a `Presence_image`, un
+  **booléen** : sur le corpus révisions, **92 % = « oui »** (24 529 / 26 667),
+  8 % = « non ». C'est « une image existe sur POP », pas un droit d'usage.
+- `Source_de_la_representation` (remplie 5 %) décrit le **sujet** (Nouveau
+  Testament, mythologie…), pas la source du cliché. `Lien_site_associe`
+  (58 %) pointe vers le site du musée (ex. arts-graphiques.louvre.fr).
+- **Test POP** (notice `000DE023183`) : POP affiche bien l'image, servie
+  depuis un **bucket S3 interne**
+  (`popcorn-prd-perf-assets.s3.gra.io.cloud.ovh.net/joconde/{ref}/…`). Le
+  nom de fichier est le numéro d'inventaire.
+- **Droits** : POP n'affiche **aucune mention par œuvre** ; seulement « Licence
+  Etalab 2.0 sauf mention contraire » en pied de site. La Licence Ouverte
+  couvre les **métadonnées textuelles** de Joconde, **pas les photographies**,
+  dont les droits reviennent le plus souvent à chaque musée (« mention
+  contraire »).
+
+**Conclusion** : pas d'affichage d'image en V1. Reconstruire l'URL = hotlinker
+un CDN gouvernemental interne (instable) et on ne peut pas vérifier la licence
+cliché par cliché sur 26 667 œuvres (règle CLAUDE.md : image externe = source
+secondaire, licence vérifiée par fichier). La carte reste **textuelle + lien
+POP** ; illustration manuelle d'une poignée de cas via Wikimedia Commons
+possible plus tard (précédent des 27 portraits).
+
+## Périodes et types du corpus révisions (2026-07-14)
+
+Sur les 26 667 avant≠après : **domaine** dessin 63,5 %, peinture 23,8 %,
+beaux-arts 5,3 %, arts décoratifs 2 %, sculpture 1,4 %, estampe 0,6 %… — le
+dessin domine encore plus que dans la base (cabinets d'arts graphiques).
+**Datation de l'œuvre** : seulement **16,4 %** ont un millésime propre
+(4 375) — bien moins que la base (51,6 %), car les dessins sont peu datés ;
+ces datables se concentrent aux **16ᵉ–18ᵉ s.** (966 / 1 239 / 1 111). À
+distinguer de la **date de la révision** (« attribué en 1869 », « CAT. 1938 »),
+présente sur seulement **7,2 %** (1 907). Deux « dates » différentes, toutes
+deux trop rares pour porter une frise — assez pour dater des cas isolés.
+
+## Révisions : constats du pipeline (2026-07-14, build_revisions.py)
+
+Construction de l'export `revisions.json`. Ce que le pipeline a confirmé ou
+révélé (chiffres définitifs, à jour) :
+
+- **Types de passage** (partition validée par `assert`, somme = 26 667) : vers
+  un autre nom **14 056** (52,7 %), vers l'anonyme **5 824** (21,8 %), vers une
+  attribution prudente **4 557** (17,1 %), vers une copie **2 230** (8,4 %). Le
+  résidu (~18, ni nom ni anonyme ni copie — ex. « Atelier de X » écarté) est
+  rangé en « autre nom ».
+- **Direction inverse** (l'ancien label était anonyme, l'actuel porte un nom) :
+  **5 584** notices — presque autant que « vers l'anonyme » (5 824). Constat
+  éditorial fort : la base enregistre presque autant d'œuvres qui **gagnent**
+  un nom que d'œuvres qui en perdent un. Désamorce tout récit de « chute ».
+
+- **Deux styles de catalogage** dans le champ, à gérer au parsing :
+  1. *parenthétique* (Magnin, Crozatier…) : `NOM (ancienne attribution)`,
+     `NOM (CAT. 1938)` — propre ;
+  2. *prose préfixée* (Louvre surtout) : `ancienne attribution : NOM`,
+     `anciennes attributions : NOM ; NOM2` — le champ **répète son propre nom**
+     en préfixe. L'extraction naïve gardait « ancienne attribution : CARUCCI
+     Jacopo » comme « nom ». Corrigé : on retire le préfixe-artefact
+     (`anciennes? attributions? :`, `(anciennement) attribué à :`, `attr.`)
+     avant extraction, et on rejette `anonyme`/`école`/chiffre/« ? ».
+
+- **Le graphe « anciens noms fréquents » n'est PAS un classement fiable** — deux
+  contaminations mesurées :
+  1. *copie d'après* : beaucoup d'anciens labels disent déjà « copie d'après
+     X » (X n'a jamais été l'attribution). Michel-Ange : 233 bruts → **119**
+     hors copie. Rubens 236 → 197, Rembrandt 228 → 192, Poussin 350 → 316. Le
+     comptage retenu **exclut** les labels « d'après/copie ».
+  2. *effet mono-musée* : sur Michel-Ange, **202 des 233 viennent du seul
+     Louvre** (qui pèse déjà 59,5 % du corpus). Toute fréquence nationale de
+     noms est en partie une fréquence Louvre.
+  → Décision : les anciens noms servent de **filtre de navigation**, pas de
+  palmarès chiffré (comptage hors copie exporté quand même : Vinci 499,
+  Poussin 316, Rubens 197, Rembrandt 192, Titien 124, Le Brun…).
+
+- Rappel de rattachement **mot entier** confirmé utile : « TIZIANO » ajouté à
+  Titien (44 → 138), « BUONARROTI » à Michel-Ange (vérifié réel), sans capter
+  « ÉCOLE CARAVAGESQUE » pour Caravage.
+
+## Révisions : ce que la vérification manuelle a appris (2026-07-14 bis)
+
+80 lignes jugées par l'utilisateur. Enseignements sur les données (les choix de
+catégories sont dans decisions.md) :
+
+- **Deux structures de « ; » à ne pas confondre.** Le « ; » sépare des
+  hypothèses d'attribution SAUF quand il est **dans une parenthèse** : là il est
+  biographique (« DYCK Antoon van (Anvers, 1599 ; Blackfriars, 1641) » = une
+  seule attribution). Un découpage naïf comptait deux hypothèses. → découpage à
+  profondeur de parenthèses nulle.
+- **Une chaîne peut répéter le même nom.** « Champaigne (Villot) ; Champaigne
+  (Brière) » ou « Oudry (1869) ; Oudry (1912) ; Oudry (1930) » = un seul nom,
+  plusieurs sources/dates — pas « plusieurs noms ». Il faut compter les
+  hypothèses **distinctes**, pas les segments.
+- **Parenthèses imbriquées** (« Santi Di Tito (16e siècle (2e moitié), Italie) »)
+  et **parenthèse ouvrante orpheline** en tête (« (PIERRE DE CORTONE… ») :
+  saisies réelles qui cassent une extraction naïve.
+- **Le champ contient des notes de prose** (« Changement d'attribution »,
+  « Dessin réattribué par Antoine Schnapper », « X a rappelé la présence au
+  Salon… ») : ce ne sont pas des noms, à écarter de l'extraction et de la galerie.
+- **Des lieux ressemblent à des noms** (« anciennement attribué à
+  Midden-Beemster » — un lieu de naissance) : rare, non détectable à coup sûr ;
+  ces cas sont des chaînes/prose, donc hors galerie de toute façon.
+- **L'ancien label est souvent déjà prudent** : « attribué à », « école de »
+  dans l'avant. Un passage « attribué à Rosa → Rosa (école) » reste un vrai
+  cas « même nom, plus prudent » ; « école de Mazzuola → Mazzuola » est au
+  contraire une **confirmation** (moins de réserve), pas une mise en garde.
+- **Répartition définitive** (7 catégories, partition = 26 667) : autre nom
+  13 125 (49,2 %), plusieurs anciens noms 3 177 (11,9 %), mineur/complexe 3 222
+  (12,1 %), vers l'anonyme 3 371 (12,6 %), vers une copie 1 742 (6,5 %), même
+  nom plus prudent 1 062 (4,0 %), déjà une copie 968 (3,6 %). Direction inverse
+  (anonyme → un nom) : 5 283.
+
+## Le champ Region est dédoublé par l'accent (2026-07-13)
+
+`Île-de-France` (265 926 notices) et `Ile-de-France` (265 765) coexistent :
+la même région coupée en deux par une variante de graphie. À normaliser avant
+tout usage territorial du CSV. (Les exports actuels n'y passent pas : la
+carte par maître utilise les coordonnées des musées.)
+
+## Homonymes et racines de noms partagées (2026-07-13, signalé par un lecteur)
+
+Le champ `auteur` contient des noms différents qui **partagent une racine** avec un
+maître de la liste. Tant que le rattachement se faisait par sous-chaîne, ils étaient
+comptés à tort pour le maître (corrigé le même jour, voir decisions.md). Cas relevés
+par un scan de toute la base :
+
+- **SERODINE** Giovanni, **PERRODIN** Auguste-François → captés par « RODIN » ;
+- **VINCIDOR** Tommaso → capté par « VINCI » ;
+- **SOLDYCK**, **DYCKHOFF** → captés par « DYCK » (Van Dyck) ;
+- **RIBERAT**, **VALRIBERA** → captés par « RIBERA » ;
+- **POUSSINES**, **CORREGES** → captés par « POUSSIN », « CORREGE ».
+
+Cas particulier **père/fils** : « **Tintoretto Domenico** » (Domenico Tintoretto,
+1560-1635) est le fils de Jacopo Robusti dit **Le Tintoret** (1518-1594). Les deux
+partagent le nom italien ; seul Jacopo est dans la liste. Les vraies notices de
+Jacopo sont cataloguées « **Le Tintoret** ou il Tintoretto (Jacopo Robusti dit) » —
+le mot français « Tintoret » y figure, ce qui permet de les distinguer du fils.
+
+Coquilles de saisie observées : « **IIngres** » (double I) pour Ingres — non
+rattrapée par le test mot entier (perte assumée d'une notice en propre).
+
+Leçon : un nom d'auteur n'est pas un identifiant ; le rapprochement doit se faire sur
+le **mot entier**, et les homonymes proches (père/fils, racines communes) sont un
+piège récurrent de la base.
+
 ## Constats de l'exploration initiale (2026-07-03, via l'API Opendatasoft)
 
 ### L'écart de volumétrie entre portails est éclairci
@@ -416,6 +683,42 @@ methode-et-limites.md). Champs `titre`/`musee`/`ville` parfois absents dans la
 base → `null` dans le JSON, repli géré côté front (« Sans titre »). Les titres
 sont souvent saisis en capitales : affichés tels que publiés, jamais réécrits.
 Aucun comptage modifié par cet enrichissement (vérifié à la régénération).
+
+## Carte par maître — audit de dispersion (2026-07-12)
+
+Audit préalable au « palier données » de la carte (roadmap P3-T1). Scan du CSV
+complet, doute **seul** (ni ferme, ni copie) ventilé par musée détenteur, sur
+5 maîtres témoins. But : savoir si la donnée permet une carte honnête avant d'en
+coder une.
+
+Constats (chiffres mesurés le 2026-07-12) :
+
+- **Le champ `musees` d'`artistes.json` est inexploitable pour la carte** :
+  `build_artistes.py` l'alimente pour tout segment du maître, **catégories
+  confondues** (ferme + doute + copie). Le Brun y affiche 64 musées ; le doute
+  seul n'en concerne que 19. Il faut un décompte du doute par musée, à part.
+- **Concentration très forte.** Un seul musée porte l'essentiel du doute de
+  chaque maître : Le Brun 89 % au Louvre (276/310), Le Primatice 97 % au Louvre
+  (262/269), Ingres 98 % au musée Ingres Bourdelle de Montauban (200/204),
+  Rembrandt 90 % au Louvre (169/187), Rodin 96 % au Louvre (78/81 — et non au
+  musée Rodin). Une carte « taille ∝ nombre » donnera un point géant et une
+  poussière autour : à traiter au design (échelle en racine, taille plancher
+  visible, valeur au survol), et à assumer en légende — c'est une **dispersion**,
+  pas un palmarès.
+- **Peu de points pour certains maîtres** : Ingres 3 musées, Rodin 4, Le Primatice
+  6. Sous un seuil (~3 musées), une carte apporte peu : prévoir un repli (ne pas
+  afficher la carte, ou la remplacer par une mention « conservé surtout à … »).
+- **Couverture géographique bonne** : sur ces 5 maîtres, 0 musée sans coordonnées,
+  0 en outre-mer. Au global (`musees.json`), 548/555 musées géolocalisés ; les 7
+  sans coordonnées sont des **codes fantômes sans nom** (`M0000`, `X0000`…), pas
+  de vrais détenteurs. 6 musées en outre-mer (Guadeloupe, Réunion, Martinique,
+  Guyane) existent dans la base : à prévoir dans le fond de carte ou à écarter
+  explicitement.
+- **Les coordonnées sont au grain musée** : le champ `coordonnees` du CSV est
+  celui du musée (constant par `Code_Museofile`), porté sur chaque notice. Prendre
+  la première vue par code est correct et cohérent avec « 1 point = 1 musée ».
+  La source géo reste **secondaire** (localise le détenteur, jamais l'œuvre, et
+  ne compte rien).
 
 ## Pièges métier connus (à vérifier sur les données réelles)
 

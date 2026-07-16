@@ -24,11 +24,19 @@ Cas de réutilisation du jeu de données
 
 ## État du projet
 
-**Phase 3 en cours** : restitution web. Les phases 1 (test go/no-go sur la
-qualité des données) et 2 (typologie du doute, pipeline d'exports) sont
-terminées. Le front est une application statique SvelteKit (`web/`) qui
-consomme les JSON exportés par le pipeline Python ; la première entrée,
-« Les presque », est en place. Suivi détaillé dans `docs/roadmap.md`.
+**Phase 3 en cours — restitution web, recentrée sur « Les presque ».** Depuis le
+2026-07-15, la **première version publique** est centrée sur un seul dossier :
+**« Les presque »**, les œuvres que les musées rapprochent d'un grand maître sans
+les lui attribuer tout à fait. Les autres rubriques et formes de doute (dont
+« Avant / après ») **restent conservées et documentées dans le projet, mais hors
+du périmètre publiable initial**.
+
+Les phases 1 (test go/no-go sur la qualité des données) et 2 (typologie du doute,
+pipeline d'exports) sont terminées. Le front est une application statique
+SvelteKit (`web/`) qui consomme les JSON exportés par le pipeline Python ;
+l'exploration des 27 noms (graphique / œuvres / carte par maître) est en place, et
+un export « Vue d'ensemble » des formulations prudentes est prêt. Suivi détaillé
+et périmètre V1 dans `docs/roadmap.md` (bloc « ★ RECENTRAGE »).
 
 ## Installation
 

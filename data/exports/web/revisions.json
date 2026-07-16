@@ -1,0 +1,1037 @@
+{
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb",
+ "version_donnee": "2026-07-01",
+ "lexique": "markers.py v2 + revisions_classify.py (verdicts 2026-07-14)",
+ "date_generation": "2026-07-14T22:16:07+00:00",
+ "libelles_categorie": {
+  "autre_nom": "Un nom en remplace un autre",
+  "meme_nom": "Le nom demeure, avec réserve",
+  "anonyme": "Le nom n'est plus retenu",
+  "copie": "L'œuvre est reclassée comme copie",
+  "deja_copie": "L'ancienne attribution était déjà une copie",
+  "plusieurs_noms": "Plusieurs noms se succèdent",
+  "mineur": "Cas particuliers"
+ },
+ "categories_galerie": [
+  "anonyme",
+  "autre_nom",
+  "copie",
+  "meme_nom"
+ ],
+ "totaux": {
+  "revisions": 26667,
+  "categories": {
+   "autre_nom": 13125,
+   "meme_nom": 1062,
+   "anonyme": 3371,
+   "copie": 1742,
+   "deja_copie": 968,
+   "plusieurs_noms": 3177,
+   "mineur": 3222
+  },
+  "datees": 1907,
+  "non_datees": 24760,
+  "n_musees": 146,
+  "part_louvre": 0.595,
+  "part_dessin": 0.635,
+  "direction_inverse": 5283
+ },
+ "passages": [
+  {
+   "categorie": "autre_nom",
+   "libelle": "Un nom en remplace un autre",
+   "notices": 13125,
+   "galerie": true
+  },
+  {
+   "categorie": "meme_nom",
+   "libelle": "Le nom demeure, avec réserve",
+   "notices": 1062,
+   "galerie": true
+  },
+  {
+   "categorie": "anonyme",
+   "libelle": "Le nom n'est plus retenu",
+   "notices": 3371,
+   "galerie": true
+  },
+  {
+   "categorie": "copie",
+   "libelle": "L'œuvre est reclassée comme copie",
+   "notices": 1742,
+   "galerie": true
+  },
+  {
+   "categorie": "deja_copie",
+   "libelle": "L'ancienne attribution était déjà une copie",
+   "notices": 968,
+   "galerie": false
+  },
+  {
+   "categorie": "plusieurs_noms",
+   "libelle": "Plusieurs noms se succèdent",
+   "notices": 3177,
+   "galerie": false
+  },
+  {
+   "categorie": "mineur",
+   "libelle": "Cas particuliers",
+   "notices": 3222,
+   "galerie": false
+  }
+ ],
+ "domaines": [
+  {
+   "label": "dessin",
+   "notices": 16933
+  },
+  {
+   "label": "peinture",
+   "notices": 6359
+  },
+  {
+   "label": "beaux-arts",
+   "notices": 1409
+  },
+  {
+   "label": "arts décoratifs",
+   "notices": 523
+  },
+  {
+   "label": "céramique",
+   "notices": 412
+  },
+  {
+   "label": "sculpture",
+   "notices": 367
+  },
+  {
+   "label": "estampe",
+   "notices": 149
+  },
+  {
+   "label": "verrerie",
+   "notices": 142
+  },
+  {
+   "label": "miniature",
+   "notices": 103
+  },
+  {
+   "label": "photographie",
+   "notices": 52
+  }
+ ],
+ "siecles": [
+  {
+   "siecle": 5,
+   "notices": 2
+  },
+  {
+   "siecle": 6,
+   "notices": 2
+  },
+  {
+   "siecle": 10,
+   "notices": 2
+  },
+  {
+   "siecle": 12,
+   "notices": 3
+  },
+  {
+   "siecle": 13,
+   "notices": 5
+  },
+  {
+   "siecle": 14,
+   "notices": 145
+  },
+  {
+   "siecle": 15,
+   "notices": 350
+  },
+  {
+   "siecle": 16,
+   "notices": 966
+  },
+  {
+   "siecle": 17,
+   "notices": 1239
+  },
+  {
+   "siecle": 18,
+   "notices": 1111
+  },
+  {
+   "siecle": 19,
+   "notices": 475
+  },
+  {
+   "siecle": 20,
+   "notices": 75
+  }
+ ],
+ "anciens_noms": [
+  {
+   "id": "vinci",
+   "label": "Léonard de Vinci",
+   "notices": 499
+  },
+  {
+   "id": "poussin",
+   "label": "Nicolas Poussin",
+   "notices": 316
+  },
+  {
+   "id": "rubens",
+   "label": "Rubens",
+   "notices": 197
+  },
+  {
+   "id": "rembrandt",
+   "label": "Rembrandt",
+   "notices": 192
+  },
+  {
+   "id": "titien",
+   "label": "Titien",
+   "notices": 124
+  },
+  {
+   "id": "michel-ange",
+   "label": "Michel-Ange",
+   "notices": 119
+  },
+  {
+   "id": "watteau",
+   "label": "Watteau",
+   "notices": 110
+  },
+  {
+   "id": "fragonard",
+   "label": "Fragonard",
+   "notices": 108
+  },
+  {
+   "id": "le-brun",
+   "label": "Charles Le Brun",
+   "notices": 107
+  },
+  {
+   "id": "durer",
+   "label": "Dürer",
+   "notices": 86
+  },
+  {
+   "id": "mignard",
+   "label": "Mignard",
+   "notices": 81
+  },
+  {
+   "id": "tiepolo",
+   "label": "Tiepolo",
+   "notices": 62
+  },
+  {
+   "id": "raphael",
+   "label": "Raphaël",
+   "notices": 60
+  },
+  {
+   "id": "boucher",
+   "label": "François Boucher",
+   "notices": 57
+  },
+  {
+   "id": "botticelli",
+   "label": "Botticelli",
+   "notices": 34
+  }
+ ],
+ "cas": [
+  {
+   "reference": "000PE000272",
+   "titre": "La sibylle de Tibur",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "ancienne_brut": "ECOLE ITALIENNE 17E SIECLE (attribué en 1936)",
+   "auteur_brut": "CARON Antoine",
+   "ancien_nom": null,
+   "categorie": "autre_nom",
+   "libelle": "Un nom en remplace un autre",
+   "inverse": true,
+   "annee": 1936,
+   "domaine": "peinture",
+   "anciens_noms_ids": [],
+   "image_presente": true,
+   "image": {
+    "statut": "pending",
+    "url": null,
+    "alt": null,
+    "credit": null,
+    "licence": null,
+    "source": null
+   }
+  },
+  {
+   "reference": "000PE000070",
+   "titre": "Minerve remet à Hercule le décret qui a aboli les vices de l'ancien gouvernement",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "ancienne_brut": "ECOLE FRANCAISE 2E MOITIE 18E SIECLE (attribué en 1832)",
+   "auteur_brut": "Belle Clément (1722-1806)",
+   "ancien_nom": null,
+   "categorie": "autre_nom",
+   "libelle": "Un nom en remplace un autre",
+   "inverse": true,
+   "annee": 1832,
+   "domaine": "peinture",
+   "anciens_noms_ids": [],
+   "image_presente": true,
+   "image": {
+    "statut": "pending",
+    "url": null,
+    "alt": null,
+    "credit": null,
+    "licence": null,
+    "source": null
+   }
+  },
+  {
+   "reference": "000PE004358",
+   "titre": "LOUIS XV, ROI DE FRANCE ET DE NAVARRE (1710-1774)",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "ancienne_brut": "ECOLE FRANCAISE (attribué en 1832)",
+   "auteur_brut": "VAN LOO Louis Michel",
+   "ancien_nom": null,
+   "categorie": "autre_nom",
+   "libelle": "Un nom en remplace un autre",
+   "inverse": true,
+   "annee": 1832,
+   "domaine": "peinture",
+   "anciens_noms_ids": [],
+   "image_presente": true,
+   "image": {
+    "statut": "pending",
+    "url": null,
+    "alt": null,
+    "credit": null,
+    "licence": null,
+    "source": null
+   }
+  },
+  {
+   "reference": "000PE004360",
+   "titre": "LOUIS DE FRANCE, DAUPHIN (1729-1765)",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "ancienne_brut": "ECOLE FRANCAISE (attribué en 1832)",
+   "auteur_brut": "BELLE Alexis Simon",
+   "ancien_nom": null,
+   "categorie": "autre_nom",
+   "libelle": "Un nom en remplace un autre",
+   "inverse": true,
+   "annee": 1832,
+   "domaine": "peinture",
+   "anciens_noms_ids": [],
+   "image_presente": true,
+   "image": {
+    "statut": "pending",
+    "url": null,
+    "alt": null,
+    "credit": null,
+    "licence": null,
+    "source": null
+   }
+  },
+  {
+   "reference": "000DE025557",
+   "titre": "ASSAUT LORS DE LA PRISE DE LA GRENADE (4 JUILLET 1779)",
+   "musee": "musée franco-américain du château de Blérancourt",
+   "ville": "Blérancourt",
+   "ancienne_brut": "WILLE JEAN GEORGES (ancienne attribution)",
+   "auteur_brut": "WILLE Pierre Alexandre;WILLE le Fils (dit)",
+   "ancien_nom": "WILLE JEAN GEORGES",
+   "categorie": "autre_nom",
+   "libelle": "Un nom en remplace un autre",
+   "inverse": false,
+   "annee": null,
+   "domaine": "dessin",
+   "anciens_noms_ids": [],
+   "image_presente": true,
+   "image": {
+    "statut": "pending",
+    "url": null,
+    "alt": null,
+    "credit": null,
+    "licence": null,
+    "source": null
+   }
+  },
+  {
+   "reference": "00000068221",
+   "titre": "LE SERMENT DES HORACES",
+   "musee": "musée des beaux-arts",
+   "ville": "Rennes",
+   "ancienne_brut": "DAVID LOUIS, ECOLE DE (ancienne attribution)",
+   "auteur_brut": "CARAFFE Armand Charles",
+   "ancien_nom": "DAVID LOUIS",
+   "categorie": "autre_nom",
+   "libelle": "Un nom en remplace un autre",
+   "inverse": false,
+   "annee": null,
+   "domaine": "dessin",
+   "anciens_noms_ids": [],
+   "image_presente": true,
+   "image": {
+    "statut": "pending",
+    "url": null,
+    "alt": null,
+    "credit": null,
+    "licence": null,
+    "source": null
+   }
+  },
+  {
+   "reference": "00000070742",
+   "titre": "SCENE ANTIQUE D'APRES UNE PEINTURE DE POMPEI",
+   "musee": "musée des beaux-arts",
+   "ville": "Rennes",
+   "ancienne_brut": "DUCIS LOUIS (CHAUDET MME 1812)",
+   "auteur_brut": "CHAUDET Antoine Denis",
+   "ancien_nom": "DUCIS LOUIS",
+   "categorie": "autre_nom",
+   "libelle": "Un nom en remplace un autre",
+   "inverse": false,
+   "annee": null,
+   "domaine": "dessin",
+   "anciens_noms_ids": [],
+   "image_presente": true,
+   "image": {
+    "statut": "pending",
+    "url": null,
+    "alt": null,
+    "credit": null,
+    "licence": null,
+    "source": null
+   }
+  },
+  {
+   "reference": "00000082017",
+   "titre": "La Chapelle de Saint-Ignace à l'église du Gesu à Rome",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "ancienne_brut": "MIGNARD NICOLAS (ancienne attribution)",
+   "auteur_brut": "MARIOTTI Vincenzo (attribué)",
+   "ancien_nom": "MIGNARD NICOLAS",
+   "categorie": "autre_nom",
+   "libelle": "Un nom en remplace un autre",
+   "inverse": false,
+   "annee": null,
+   "domaine": "dessin",
+   "anciens_noms_ids": [
+    "mignard"
+   ],
+   "image_presente": true,
+   "image": {
+    "statut": "pending",
+    "url": null,
+    "alt": null,
+    "credit": null,
+    "licence": null,
+    "source": null
+   }
+  },
+  {
+   "reference": "00000076354",
+   "titre": "PORTRAIT DE MME ADELAIDE DE FRANCE, FILLE DE LOUIS XV",
+   "musee": "musée Condé",
+   "ville": "Chantilly",
+   "ancienne_brut": "LA TOUR MAURICE QUENTIN DE (ancienne attribution)",
+   "auteur_brut": "VALADE Jean",
+   "ancien_nom": "LA TOUR MAURICE QUENTIN DE",
+   "categorie": "autre_nom",
+   "libelle": "Un nom en remplace un autre",
+   "inverse": false,
+   "annee": null,
+   "domaine": "dessin",
+   "anciens_noms_ids": [],
+   "image_presente": true,
+   "image": {
+    "statut": "pending",
+    "url": null,
+    "alt": null,
+    "credit": null,
+    "licence": null,
+    "source": null
+   }
+  },
+  {
+   "reference": "000PE001316",
+   "titre": "Portrait d'homme  (Théodore Rousseau ?)",
+   "musee": "musée d'Orsay",
+   "ville": "Paris",
+   "ancienne_brut": "Daumier Honoré (attribué en 1925)",
+   "auteur_brut": "GOSSET DE GUINES Louis Alexandre (attribué);Gill André (dit, attribué)",
+   "ancien_nom": "Daumier Honoré",
+   "categorie": "autre_nom",
+   "libelle": "Un nom en remplace un autre",
+   "inverse": false,
+   "annee": 1925,
+   "domaine": "peinture",
+   "anciens_noms_ids": [],
+   "image_presente": true,
+   "image": {
+    "statut": "pending",
+    "url": null,
+    "alt": null,
+    "credit": null,
+    "licence": null,
+    "source": null
+   }
+  },
+  {
+   "reference": "000PE009696",
+   "titre": "SAINTE GENEVIEVE APAISANT LA PESTE DES ARDENTS ; DIT AUTREFOIS SAINT LEU IMPLORANT LA GUERISON DES PRISONNIERS",
+   "musee": "musée de Tessé",
+   "ville": "Le Mans",
+   "ancienne_brut": "BOULANGER LOUIS (CAT 1932)",
+   "auteur_brut": "DOYEN Gabriel François",
+   "ancien_nom": "BOULANGER LOUIS",
+   "categorie": "autre_nom",
+   "libelle": "Un nom en remplace un autre",
+   "inverse": false,
+   "annee": 1932,
+   "domaine": "peinture",
+   "anciens_noms_ids": [],
+   "image_presente": true,
+   "image": {
+    "statut": "pending",
+    "url": null,
+    "alt": null,
+    "credit": null,
+    "licence": null,
+    "source": null
+   }
+  },
+  {
+   "reference": "000PE009697",
+   "titre": "NATURE MORTE, COQ ET POULE ; DIT AUSSI DEUX COQS MORTS",
+   "musee": "musée de Tessé",
+   "ville": "Le Mans",
+   "ancienne_brut": "HONDECOETER MELCHIOR DE (CAT 1932)",
+   "auteur_brut": "VALLAYER-COSTER Anne",
+   "ancien_nom": "HONDECOETER MELCHIOR DE",
+   "categorie": "autre_nom",
+   "libelle": "Un nom en remplace un autre",
+   "inverse": false,
+   "annee": 1932,
+   "domaine": "peinture",
+   "anciens_noms_ids": [],
+   "image_presente": true,
+   "image": {
+    "statut": "pending",
+    "url": null,
+    "alt": null,
+    "credit": null,
+    "licence": null,
+    "source": null
+   }
+  },
+  {
+   "reference": "000PE012476",
+   "titre": "SAINT DIACRE (LAURENT ?)",
+   "musee": "musée du Petit Palais",
+   "ville": "Avignon",
+   "ancienne_brut": "GADDI TADDEO (CAMPANA, CORNU)",
+   "auteur_brut": "PIRES DA EVORA Alvaro;Alvaro DI PIERO (dit)",
+   "ancien_nom": "GADDI TADDEO",
+   "categorie": "autre_nom",
+   "libelle": "Un nom en remplace un autre",
+   "inverse": false,
+   "annee": null,
+   "domaine": "peinture",
+   "anciens_noms_ids": [],
+   "image_presente": true,
+   "image": {
+    "statut": "pending",
+    "url": null,
+    "alt": null,
+    "credit": null,
+    "licence": null,
+    "source": null
+   }
+  },
+  {
+   "reference": "000PE000384",
+   "titre": "PORTRAIT D'HOMME ; DIT AUTREFOIS PORTRAIT DU DUC DE ROANNEZ",
+   "musee": "musée municipal des beaux-arts",
+   "ville": "Agen",
+   "ancienne_brut": "CHAMPAIGNE PHILIPPE DE (attribué en 1890) ; CHAMPAIGNE PHILIPPE DE (C.P. P.)",
+   "auteur_brut": "Champaigne Philippe de (1602-1674) (attribué à)",
+   "ancien_nom": "CHAMPAIGNE PHILIPPE DE",
+   "categorie": "meme_nom",
+   "libelle": "Le nom demeure, avec réserve",
+   "inverse": false,
+   "annee": 1890,
+   "domaine": "peinture",
+   "anciens_noms_ids": [],
+   "image_presente": true,
+   "image": {
+    "statut": "pending",
+    "url": null,
+    "alt": null,
+    "credit": null,
+    "licence": null,
+    "source": null
+   }
+  },
+  {
+   "reference": "000PE012507",
+   "titre": "LA VIERGE ET L'ENFANT AVEC UN ANGE",
+   "musee": "musée du Petit Palais",
+   "ville": "Avignon",
+   "ancienne_brut": "BOTTICELLI SANDRO (MINET) ; BOTTICELLI SANDRO, ATELIER (NICOLLE, MESNIL)",
+   "auteur_brut": "BOTTICELLI Sandro (dit, école);FILIPEPI Alessandro Mariano (école);anonyme",
+   "ancien_nom": "BOTTICELLI SANDRO",
+   "categorie": "meme_nom",
+   "libelle": "Le nom demeure, avec réserve",
+   "inverse": false,
+   "annee": null,
+   "domaine": "peinture",
+   "anciens_noms_ids": [
+    "botticelli"
+   ],
+   "image_presente": true,
+   "image": {
+    "statut": "pending",
+    "url": null,
+    "alt": null,
+    "credit": null,
+    "licence": null,
+    "source": null
+   }
+  },
+  {
+   "reference": "00000069056",
+   "titre": "La Vierge lisant entourée d'anges",
+   "musee": "musée national Magnin",
+   "ville": "Dijon",
+   "ancienne_brut": "MARATTA (CAT. 1938)",
+   "auteur_brut": "MARATTA Carlo (atelier)",
+   "ancien_nom": "MARATTA",
+   "categorie": "meme_nom",
+   "libelle": "Le nom demeure, avec réserve",
+   "inverse": false,
+   "annee": 1938,
+   "domaine": "peinture",
+   "anciens_noms_ids": [],
+   "image_presente": true,
+   "image": {
+    "statut": "pending",
+    "url": null,
+    "alt": null,
+    "credit": null,
+    "licence": null,
+    "source": null
+   }
+  },
+  {
+   "reference": "00000077173",
+   "titre": "HENRI II, ROI DE FRANCE",
+   "musee": "musée Condé",
+   "ville": "Chantilly",
+   "ancienne_brut": "CLOUET FRANCOIS, ATELIER (AUBERT) ; CLOUET FRANCOIS, ATELIER (MALO)",
+   "auteur_brut": "CLOUET François (atelier)",
+   "ancien_nom": "CLOUET FRANCOIS",
+   "categorie": "meme_nom",
+   "libelle": "Le nom demeure, avec réserve",
+   "inverse": false,
+   "annee": null,
+   "domaine": "peinture",
+   "anciens_noms_ids": [],
+   "image_presente": true,
+   "image": {
+    "statut": "pending",
+    "url": null,
+    "alt": null,
+    "credit": null,
+    "licence": null,
+    "source": null
+   }
+  },
+  {
+   "reference": "06380000465",
+   "titre": "Escarmouche de cavaliers",
+   "musee": "musée des Beaux-Arts",
+   "ville": "Valenciennes",
+   "ancienne_brut": "Courtois Jacques, le Bourguignon (dit, ancienne attribution)",
+   "auteur_brut": "COURTOIS Jacques;LE BOURGUIGNON (dit, manière de)",
+   "ancien_nom": "Courtois Jacques",
+   "categorie": "meme_nom",
+   "libelle": "Le nom demeure, avec réserve",
+   "inverse": false,
+   "annee": null,
+   "domaine": "peinture",
+   "anciens_noms_ids": [],
+   "image_presente": true,
+   "image": {
+    "statut": "pending",
+    "url": null,
+    "alt": null,
+    "credit": null,
+    "licence": null,
+    "source": null
+   }
+  },
+  {
+   "reference": "50350508062",
+   "titre": "SAINT ANTOINE",
+   "musee": "musée Bonnat-Helleu, musée des Beaux-Arts de Bayonne",
+   "ville": "Bayonne",
+   "ancienne_brut": "ancienne attribution : CALLOT Jacques",
+   "auteur_brut": "CALLOT Jacques (école);anonyme",
+   "ancien_nom": "CALLOT Jacques",
+   "categorie": "meme_nom",
+   "libelle": "Le nom demeure, avec réserve",
+   "inverse": false,
+   "annee": null,
+   "domaine": "dessin",
+   "anciens_noms_ids": [],
+   "image_presente": true,
+   "image": {
+    "statut": "pending",
+    "url": null,
+    "alt": null,
+    "credit": null,
+    "licence": null,
+    "source": null
+   }
+  },
+  {
+   "reference": "M0347001694",
+   "titre": "Ruines Romaines avec personnages",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Dole",
+   "ancienne_brut": "ROBERT Hubert (Jeanne Magnin, 1920)",
+   "auteur_brut": "ROBERT Hubert (genre de);anonyme",
+   "ancien_nom": "ROBERT Hubert",
+   "categorie": "meme_nom",
+   "libelle": "Le nom demeure, avec réserve",
+   "inverse": false,
+   "annee": null,
+   "domaine": "peinture",
+   "anciens_noms_ids": [],
+   "image_presente": true,
+   "image": {
+    "statut": "pending",
+    "url": null,
+    "alt": null,
+    "credit": null,
+    "licence": null,
+    "source": null
+   }
+  },
+  {
+   "reference": "000DE023183",
+   "titre": "TETE D'ETUDE",
+   "musee": "musée Crozatier",
+   "ville": "Le Puy-en-Velay",
+   "ancienne_brut": "MICHEL-ANGE (ancienne attribution)",
+   "auteur_brut": "anonyme",
+   "ancien_nom": "MICHEL-ANGE",
+   "categorie": "anonyme",
+   "libelle": "Le nom n'est plus retenu",
+   "inverse": false,
+   "annee": null,
+   "domaine": "dessin",
+   "anciens_noms_ids": [
+    "michel-ange"
+   ],
+   "image_presente": true,
+   "image": {
+    "statut": "pending",
+    "url": null,
+    "alt": null,
+    "credit": null,
+    "licence": null,
+    "source": null
+   }
+  },
+  {
+   "reference": "000DE023181",
+   "titre": "TETE D'ETUDE",
+   "musee": "musée Crozatier",
+   "ville": "Le Puy-en-Velay",
+   "ancienne_brut": "VINCI LEONARD DE (ancienne attribution)",
+   "auteur_brut": "anonyme",
+   "ancien_nom": "VINCI LEONARD DE",
+   "categorie": "anonyme",
+   "libelle": "Le nom n'est plus retenu",
+   "inverse": false,
+   "annee": null,
+   "domaine": "dessin",
+   "anciens_noms_ids": [
+    "vinci"
+   ],
+   "image_presente": true,
+   "image": {
+    "statut": "pending",
+    "url": null,
+    "alt": null,
+    "credit": null,
+    "licence": null,
+    "source": null
+   }
+  },
+  {
+   "reference": "000DE025505",
+   "titre": "PORTRAIT DE BENJAMIN FRANKLIN",
+   "musee": "musée franco-américain du château de Blérancourt",
+   "ville": "Blérancourt",
+   "ancienne_brut": "VESTIER ANTOINE (ancienne attribution)",
+   "auteur_brut": "anonyme",
+   "ancien_nom": "VESTIER ANTOINE",
+   "categorie": "anonyme",
+   "libelle": "Le nom n'est plus retenu",
+   "inverse": false,
+   "annee": null,
+   "domaine": "dessin",
+   "anciens_noms_ids": [],
+   "image_presente": true,
+   "image": {
+    "statut": "pending",
+    "url": null,
+    "alt": null,
+    "credit": null,
+    "licence": null,
+    "source": null
+   }
+  },
+  {
+   "reference": "00000068517",
+   "titre": "DIVERSES FIGURES (VERSO)",
+   "musee": "musée national Magnin",
+   "ville": "Dijon",
+   "ancienne_brut": "ROSSO LE (CAT. 1938)",
+   "auteur_brut": "anonyme",
+   "ancien_nom": "ROSSO LE",
+   "categorie": "anonyme",
+   "libelle": "Le nom n'est plus retenu",
+   "inverse": false,
+   "annee": 1938,
+   "domaine": "dessin",
+   "anciens_noms_ids": [],
+   "image_presente": true,
+   "image": {
+    "statut": "pending",
+    "url": null,
+    "alt": null,
+    "credit": null,
+    "licence": null,
+    "source": null
+   }
+  },
+  {
+   "reference": "00000081804",
+   "titre": "Un Agonisant recevant les secours de la Religion",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "ancienne_brut": "MIGNARD PIERRE (ancienne attribution)",
+   "auteur_brut": "anonyme",
+   "ancien_nom": "MIGNARD PIERRE",
+   "categorie": "anonyme",
+   "libelle": "Le nom n'est plus retenu",
+   "inverse": false,
+   "annee": null,
+   "domaine": "dessin",
+   "anciens_noms_ids": [
+    "mignard"
+   ],
+   "image_presente": true,
+   "image": {
+    "statut": "pending",
+    "url": null,
+    "alt": null,
+    "credit": null,
+    "licence": null,
+    "source": null
+   }
+  },
+  {
+   "reference": "000PE004212",
+   "titre": "ATTELAGE DE BOEUFS",
+   "musee": "musée d'Orsay",
+   "ville": "Paris",
+   "ancienne_brut": "CAILLEBOTTE GUSTAVE (attribué en 1972)",
+   "auteur_brut": "anonyme",
+   "ancien_nom": "CAILLEBOTTE GUSTAVE",
+   "categorie": "anonyme",
+   "libelle": "Le nom n'est plus retenu",
+   "inverse": false,
+   "annee": 1972,
+   "domaine": "peinture",
+   "anciens_noms_ids": [],
+   "image_presente": true,
+   "image": {
+    "statut": "pending",
+    "url": null,
+    "alt": null,
+    "credit": null,
+    "licence": null,
+    "source": null
+   }
+  },
+  {
+   "reference": "000PE006104",
+   "titre": "INCONNU ; DIT AUTREFOIS CHARLES-LE-TEMERAIRE",
+   "musee": "musée national de la Légion d'honneur et des ordres de chevalerie",
+   "ville": "Paris",
+   "ancienne_brut": "VAN EYCK (attribué en 1834)",
+   "auteur_brut": "anonyme;DOSSO DOSSI (d'après);LUTERO Giovanni de (dit, d'après)",
+   "ancien_nom": "VAN EYCK",
+   "categorie": "copie",
+   "libelle": "L'œuvre est reclassée comme copie",
+   "inverse": false,
+   "annee": 1834,
+   "domaine": "peinture",
+   "anciens_noms_ids": [],
+   "image_presente": true,
+   "image": {
+    "statut": "pending",
+    "url": null,
+    "alt": null,
+    "credit": null,
+    "licence": null,
+    "source": null
+   }
+  },
+  {
+   "reference": "000PE006150",
+   "titre": "RAPHAËL ET SON MAITRE D'ARME",
+   "musee": "musée national du château de Fontainebleau",
+   "ville": "Fontainebleau",
+   "ancienne_brut": "RAPHAEL (attribué en 1832)",
+   "auteur_brut": "anonyme;MAZZOLA Francesco (d'après);PARMESAN (dit, d'après)",
+   "ancien_nom": "RAPHAEL",
+   "categorie": "copie",
+   "libelle": "L'œuvre est reclassée comme copie",
+   "inverse": false,
+   "annee": 1832,
+   "domaine": "peinture",
+   "anciens_noms_ids": [
+    "raphael"
+   ],
+   "image_presente": true,
+   "image": {
+    "statut": "pending",
+    "url": null,
+    "alt": null,
+    "credit": null,
+    "licence": null,
+    "source": null
+   }
+  },
+  {
+   "reference": "000PE016597",
+   "titre": "LE CONCERT DANS L'OEUF",
+   "musee": "musée des Beaux-Arts",
+   "ville": "Lille",
+   "ancienne_brut": "ECOLE FRANCAISE 15E SIECLE (attribué en 1893)",
+   "auteur_brut": "anonyme;BOSCH VAN AKEN Hieronimus (d'après);BOSCH Jérôme (dit, d'après)",
+   "ancien_nom": null,
+   "categorie": "copie",
+   "libelle": "L'œuvre est reclassée comme copie",
+   "inverse": false,
+   "annee": 1893,
+   "domaine": "peinture",
+   "anciens_noms_ids": [],
+   "image_presente": true,
+   "image": {
+    "statut": "pending",
+    "url": null,
+    "alt": null,
+    "credit": null,
+    "licence": null,
+    "source": null
+   }
+  },
+  {
+   "reference": "00000060255",
+   "titre": "Henri IV",
+   "musee": "musée national du château de Pau",
+   "ville": "Pau",
+   "ancienne_brut": "POURBUS FRANS II (ancienne attribution)",
+   "auteur_brut": "anonyme;POURBUS Frans II (?, d'après)",
+   "ancien_nom": "POURBUS FRANS II",
+   "categorie": "copie",
+   "libelle": "L'œuvre est reclassée comme copie",
+   "inverse": false,
+   "annee": null,
+   "domaine": "peinture",
+   "anciens_noms_ids": [],
+   "image_presente": true,
+   "image": {
+    "statut": "pending",
+    "url": null,
+    "alt": null,
+    "credit": null,
+    "licence": null,
+    "source": null
+   }
+  },
+  {
+   "reference": "00000102994",
+   "titre": "SAINTE CECILE REFUSANT DE SACRIFIER AUX IDOLES",
+   "musee": "musée des beaux-arts et galerie David-d'Angers",
+   "ville": "Angers",
+   "ancienne_brut": "Anonyme,France,17e siècle(Foucart-Walter,1986)",
+   "auteur_brut": "LE DOMINIQUIN (dit, d'après);ZAMPIERI Domenico (d'après);anonyme",
+   "ancien_nom": null,
+   "categorie": "copie",
+   "libelle": "L'œuvre est reclassée comme copie",
+   "inverse": false,
+   "annee": null,
+   "domaine": "peinture",
+   "anciens_noms_ids": [],
+   "image_presente": true,
+   "image": {
+    "statut": "pending",
+    "url": null,
+    "alt": null,
+    "credit": null,
+    "licence": null,
+    "source": null
+   }
+  },
+  {
+   "reference": "06070000248",
+   "titre": "La Femme à la rose",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "ancienne_brut": "BOUCHER François (ancienne attribution)",
+   "auteur_brut": "anonyme;ROTARI Pietro (d'après)",
+   "ancien_nom": "BOUCHER François",
+   "categorie": "copie",
+   "libelle": "L'œuvre est reclassée comme copie",
+   "inverse": false,
+   "annee": null,
+   "domaine": "peinture",
+   "anciens_noms_ids": [
+    "boucher"
+   ],
+   "image_presente": true,
+   "image": {
+    "statut": "pending",
+    "url": null,
+    "alt": null,
+    "credit": null,
+    "licence": null,
+    "source": null
+   }
+  }
+ ]
+}

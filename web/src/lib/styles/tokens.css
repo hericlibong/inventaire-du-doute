@@ -40,14 +40,51 @@
 	--niveau-2: var(--forme-atelier);   /* Autour de lui = l'ocre */
 	--niveau-3: var(--forme-maniere);   /* Son style, sans lui = le violet */
 
+	/* Carte par maître : couleur UNIQUE et stable des points, identique sur toutes
+	   les fiches (decisions.md 2026-07-12). La carte répond à « où, et combien » —
+	   le volume passe par la taille, pas par la couleur ; on n'encode donc pas le
+	   niveau ici (ce serait une mesure concurrente). Accent éditorial du projet,
+	   discret sur le fond crème et distinct des pigments du doute. */
+	--carte-point: var(--couleur-accent);
+
 	/* Catégories voisines (jamais additionnées au doute). La copie « d'après » est
 	   NEUTRE (gris), hors de la gamme colorée du doute : une copie assumée n'est
 	   pas un doute, sa couleur le dit autant que le texte. */
 	--couleur-copie: #6b6f76;
 	--couleur-revision: #6b5b7a;
 
-	/* Typographie et rythme */
-	--police-titre: Georgia, 'Times New Roman', serif;
-	--police-texte: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+	/* Typographie — ambiance « Catalogue savant » (docs/charte-graphique.md).
+	   Polices auto-hébergées, déclarées dans lib/styles/fonts.css (aucun CDN). */
+	--police-titre: 'Fraunces', Georgia, 'Times New Roman', serif;   /* titres, chiffres vedettes, verbatims courts */
+	--police-texte: 'Spectral', Georgia, serif;                       /* texte éditorial courant */
+	--police-ui: 'Public Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; /* UI, labels, données */
+
+	/* Échelle typographique (modulaire ~1.2, base 16 px) */
+	--taille-xs: 0.79rem;
+	--taille-s: 0.875rem;
+	--taille-base: 1rem;
+	--taille-m: 1.15rem;
+	--taille-l: 1.5rem;
+	--taille-xl: 2rem;
+	--taille-xxl: 2.75rem;
+
+	/* Espacement (échelle unique — fin des marges au jugé) */
+	--espace-1: 0.25rem;
+	--espace-2: 0.5rem;
+	--espace-3: 0.75rem;
+	--espace-4: 1rem;
+	--espace-5: 1.5rem;
+	--espace-6: 2.5rem;
+
+	/* Rayons, filets, surface, élévation, focus */
+	--rayon-s: 3px;
+	--rayon-m: 6px;
+	--couleur-trait-clair: #e9e3d8;
+	--filet: 1px solid var(--couleur-trait);
+	--filet-clair: 1px solid var(--couleur-trait-clair);
+	--surface-carte: #fffdf9;               /* blanc-papier, pas blanc pur */
+	--ombre-douce: 0 1px 2px rgba(28, 26, 23, 0.05), 0 2px 8px rgba(28, 26, 23, 0.04);
+	--focus-anneau: 2px solid var(--couleur-accent);
+
 	--largeur-max: 60rem;
 }

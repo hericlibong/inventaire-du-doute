@@ -56,7 +56,7 @@ export const FAMILLE_PUBLIC = {
 	atelier_de: {
 		label: 'son atelier',
 		header: 'Son atelier',
-		corps: 'Son atelier, pas forcément sa main.',
+		corps: 'Sorti de son atelier, pas forcément de sa main.',
 		mention: (nom) => `atelier ${deNom(nom)}`,
 		montrerMention: false,
 		couleur: 'var(--forme-atelier)'
@@ -133,6 +133,7 @@ export function tooltipFamille(code, nomMaitre, n) {
 	const f = FAMILLE_PUBLIC[code];
 	return {
 		header: f.header,
+		headerPastille: f.couleur, // pastille de la mention, dans la bande de tête
 		corps: f.corps,
 		valeur: oeuvres(n),
 		mentionType: f.montrerMention ? f.mention(nomMaitre) : null
