@@ -3,18 +3,21 @@
 	import { FAMILLE_PUBLIC, ORDRE_FAMILLES, oeuvres } from '$lib/familles-public.js';
 
 	// Vitrine « Œuvres » (décision 2026-07-11) : quelques cas concrets derrière
-	// les points du graphique. Chaque carte montre une œuvre réelle avec les MOTS
+	// les points du graphique. Chaque entrée montre une œuvre réelle avec les MOTS
 	// EXACTS publiés par son musée — l'extrait est la seule citation littérale de
-	// l'application (le tooltip du graphique, lui, affiche une mention reconstruite)
-	// — et un lien vers sa fiche publique POP. Les exemples sont pris
-	// automatiquement dans la base (les premiers rencontrés), pas choisis à la
-	// main : règle documentée dans docs/methode-et-limites.md. Le code de forme
-	// vient de l'export : le front ne re-parse JAMAIS les extraits.
+	// l'application — et un lien vers sa fiche publique POP. Les exemples sont pris
+	// automatiquement dans la base (les premiers rencontrés), pas choisis à la main :
+	// règle documentée dans docs/methode-et-limites.md. Le code de forme vient de
+	// l'export : le front ne re-parse JAMAIS les extraits.
+	//
+	// Direction B (2026-07-17) : composition éditoriale CONTINUE (entrées séparées
+	// par des filets, pas une grille de cartes blanches). Les mots publiés par les
+	// musées sont la matière : le verbatim est en tête de hiérarchie. Un emplacement
+	// média est réservé par entrée pour de futures reproductions — jamais inventé.
 	let { maitre } = $props();
 
-	// Cartes dans l'ordre de l'axe du graphique (l'export suit l'ordre de
-	// l'échelle, l'axe intercale école/atelier différemment → on retrie). Kicker
-	// et pastille = les mêmes mots et la même couleur que le point correspondant.
+	// Entrées dans l'ordre de l'axe du graphique. Kicker et pastille = les mêmes mots
+	// et la même couleur que le point correspondant.
 	const rang = (code) => ORDRE_FAMILLES.indexOf(code);
 	const cartes = $derived(
 		[...maitre.exemples]
@@ -36,27 +39,34 @@
 		Quelques exemples issus des fiches Joconde, avec les mots publiés par les musées.
 	</p>
 
-	<div class="cartes">
+	<ol class="entrees">
 		{#each cartes as c (c.reference)}
-			<article class="carte">
-				<p class="kicker">
-					<span class="pastille" style="background: {c.couleur}"></span>{c.header}
-				</p>
-				<p class="titre">{c.titre ?? 'Sans titre'}</p>
-				{#if lieu(c)}<p class="lieu">{lieu(c)}</p>{/if}
-				<p class="verbatim">«&nbsp;{c.extrait}&nbsp;»</p>
-				<a class="lien-fiche" href={lienPop(c.reference)} target="_blank" rel="noopener">
-					Voir la fiche publique →
-				</a>
-			</article>
+			<li class="entree">
+				<!-- Emplacement réservé pour une future reproduction (droits par œuvre à
+				     clarifier) : jamais une image inventée. -->
+				<div class="media" aria-hidden="true">
+					<span>reproduction<br />non affichée</span>
+				</div>
+				<div class="corps">
+					<p class="kicker">
+						<span class="pastille" style="background: {c.couleur}"></span>{c.header}
+					</p>
+					<h4 class="titre">{c.titre ?? 'Sans titre'}</h4>
+					{#if lieu(c)}<p class="lieu">{lieu(c)}</p>{/if}
+					<p class="verbatim" style="border-left-color: {c.couleur}">«&nbsp;{c.extrait}&nbsp;»</p>
+					<a class="lien-fiche" href={lienPop(c.reference)} target="_blank" rel="noopener">
+						Voir la fiche publique sur POP&nbsp;→
+					</a>
+				</div>
+			</li>
 		{/each}
-	</div>
+	</ol>
 
-	<!-- Copies « d'après », à part : des copies assumées, pas des doutes. Bloc
-	     distinct (couleur propre, hors gamme du doute), jamais mêlé aux cartes. -->
+	<!-- Copies « d'après », à part : des copies assumées, pas des doutes. Hors gamme
+	     du doute (couleur neutre), jamais mêlées aux entrées. -->
 	<div class="bande-copie">
 		<p class="copie-texte">
-			À part : <strong>{oeuvres(maitre.copie)}</strong> «&nbsp;d'après
+			À part&nbsp;: <strong>{oeuvres(maitre.copie)}</strong> «&nbsp;d'après
 			{maitre.nom}&nbsp;» — des copies assumées, pas des attributions incertaines.
 		</p>
 		{#if maitre.exemple_copie}
@@ -77,41 +87,63 @@
 
 <style>
 	.vitrine h3 {
-		margin: 1.5rem 0 0.25rem;
-		font-size: 1.05rem;
+		font-family: var(--police-titre);
+		margin: 0 0 0.15rem;
+		font-size: var(--taille-l);
 	}
 
 	.amorce {
-		margin: 0 0 1rem;
+		margin: 0 0 var(--espace-4);
 		color: var(--couleur-encre-douce);
-		font-size: 0.9rem;
+		font-size: var(--taille-s);
 	}
 
-	/* Vitrine en petits blocs, pas une table : cartes fluides, 2 colonnes max. */
-	.cartes {
-		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-		gap: 0.9rem;
-	}
-
-	.carte {
-		background: #fff;
-		border: 1px solid var(--couleur-trait);
-		border-radius: 4px;
-		padding: 0.75rem 0.85rem;
-		display: flex;
-		flex-direction: column;
-		gap: 0.35rem;
-	}
-
-	/* Kicker = le même mot et la même couleur que le point du graphique. La
-	   couleur est portée par la pastille (pas par le texte : certaines teintes
-	   claires manqueraient de contraste sur fond clair). */
-	.kicker {
+	/* Liste continue : entrées séparées par un filet, pas des cartes détachées. */
+	.entrees {
+		list-style: none;
 		margin: 0;
-		font-size: 0.72rem;
+		padding: 0;
+	}
+
+	.entree {
+		display: grid;
+		grid-template-columns: 7rem 1fr;
+		gap: var(--espace-5);
+		padding: var(--espace-4) 0;
+		border-top: var(--filet);
+	}
+
+	/* Emplacement média réservé : cadre neutre, pas une image. */
+	.media {
+		aspect-ratio: 4 / 5;
+		background: var(--surface-carte);
+		border: var(--filet);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.media span {
+		font-family: var(--police-ui);
+		font-size: 0.62rem;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		line-height: 1.35;
+		color: var(--couleur-trait);
+	}
+
+	.corps {
+		min-width: 0;
+	}
+
+	/* Kicker = le même mot et la même couleur que le point du graphique. */
+	.kicker {
+		margin: 0 0 0.2rem;
+		font-family: var(--police-ui);
+		font-size: var(--taille-xs);
 		font-weight: 600;
-		letter-spacing: 0.06em;
+		letter-spacing: 0.08em;
 		text-transform: uppercase;
 		color: var(--couleur-encre-douce);
 		display: flex;
@@ -126,51 +158,60 @@
 		flex: none;
 	}
 
-	/* Titres souvent en capitales dans la base : corps modéré pour qu'ils ne
-	   crient pas. On les affiche tels que publiés, on ne réécrit rien. */
+	/* Titre de l'œuvre : repère, sous le verbatim dans la hiérarchie. Souvent en
+	   capitales dans la base — corps modéré pour qu'il ne crie pas. */
 	.titre {
 		margin: 0;
+		font-family: var(--police-texte);
 		font-weight: 600;
-		font-size: 0.9rem;
-		line-height: 1.35;
+		font-size: 1rem;
+		line-height: 1.3;
 	}
 
 	.lieu {
-		margin: 0;
-		font-size: 0.8rem;
+		margin: 0.1rem 0 0;
+		font-size: var(--taille-s);
 		color: var(--couleur-encre-douce);
 	}
 
-	/* Le verbatim est la pièce centrale de la carte : les mots exacts du musée. */
+	/* Le verbatim est la MATIÈRE : les mots exacts du musée, en tête de hiérarchie,
+	   avec le liseré de couleur de la mention. */
 	.verbatim {
-		margin: 0.25rem 0 0;
+		margin: var(--espace-3) 0 var(--espace-3);
+		padding-left: var(--espace-3);
+		border-left: 3px solid var(--couleur-trait);
 		font-family: var(--police-titre);
-		font-size: 1rem;
-		line-height: 1.4;
+		font-size: 1.3rem;
+		line-height: 1.3;
 	}
 
 	.lien-fiche {
-		margin-top: auto;
-		padding-top: 0.4rem;
-		font-size: 0.8rem;
+		font-family: var(--police-ui);
+		font-size: var(--taille-s);
 		color: var(--couleur-accent);
+		text-decoration: none;
+		border-bottom: 1px solid transparent;
 	}
 
+	.lien-fiche:hover {
+		border-bottom-color: var(--couleur-accent);
+	}
+
+	/* Copies « d'après » : bloc distinct, couleur neutre, filet à gauche. */
 	.bande-copie {
-		margin-top: 1.25rem;
-		padding: 0.75rem 1rem;
-		border-left: 4px solid var(--couleur-copie);
-		background: rgba(74, 107, 122, 0.07);
-		font-size: 0.95rem;
+		margin-top: var(--espace-5);
+		padding-left: var(--espace-4);
+		border-left: 3px solid var(--couleur-copie);
 	}
 
 	.copie-texte {
 		margin: 0;
+		font-size: var(--taille-base);
 	}
 
 	.copie-exemple {
 		margin: 0.4rem 0 0;
-		font-size: 0.8rem;
+		font-size: var(--taille-s);
 		color: var(--couleur-encre-douce);
 	}
 
@@ -179,8 +220,18 @@
 	}
 
 	.mention-pop {
-		margin: 1rem 0 0;
-		font-size: 0.75rem;
+		margin: var(--espace-5) 0 0;
+		font-size: var(--taille-xs);
 		color: var(--couleur-encre-douce);
+	}
+
+	@media (max-width: 560px) {
+		.entree {
+			grid-template-columns: 5rem 1fr;
+			gap: var(--espace-4);
+		}
+		.verbatim {
+			font-size: 1.15rem;
+		}
 	}
 </style>
