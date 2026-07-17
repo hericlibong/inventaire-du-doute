@@ -64,8 +64,12 @@ comme historique ; ce bloc est le cap qui prime.*
                   + `ChiffreVedette` + onglets Profil / Œuvres / Musées sur la fiche
                   maître réelle. Ouverts : synthèse calculée (factuelle) + plafond
                   `fractionEnMots` (decisions.md même date).
-            - [ ] Zones suivantes une par une : Répertoire · TroisTerritoires ·
-                  « Comprendre les mentions » · Accueil-couverture · Méthode.
+            - [x] **Zone Répertoire** (2026-07-17) — `Repertoire.svelte` : recherche,
+                  tri Œuvres/A→Z, microprofils, sélection active à filet d'accent,
+                  repliable en mobile ; légende détaillée retirée (→ « Comprendre les
+                  mentions »).
+            - [ ] Zones suivantes une par une : TroisTerritoires · « Comprendre les
+                  mentions » · Accueil-couverture · Méthode.
 
 ### 2. En réserve (conservé, hors V1 publique)
 - [~] **Avant / après** (`/revisions`) — construit (onglets, anneau, prototype

@@ -2,6 +2,30 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-17 — Charte palier 3 : zone Répertoire (fait)
+
+Deuxième zone du kit (après le prototype bandeau) : la colonne de gauche d'« Explorer
+les maîtres » devient un **vrai outil de navigation**, séparé du profil (architecture
+§4). Nouveau composant **`Repertoire.svelte`** qui absorbe recherche + liste et ajoute :
+- **tri** par nombre d'œuvres concernées (défaut, ordre naturel du dossier) ou
+  **alphabétique** (A→Z, `localeCompare` fr) — petit segment de deux boutons ;
+- **microprofils colorés** conservés (jauge `BarreFamilles`, mêmes couleurs de familles) ;
+- **sélection active** renforcée : filet d'accent à gauche + fond soutenu + `aria-current`
+  (le filet transparent au repos évite tout saut de largeur) ;
+- **responsive** : sur mobile le répertoire se **replie** (bouton « Choisir un maître /
+  Masquer la liste »), replié d'emblée pour montrer le profil, refermé après le choix ;
+  matchMedia plutôt qu'un `<details>` natif (piège de réouverture, cf. 2026-07-13).
+
+La **légende détaillée des mentions** (`LegendeFamilles`) est **retirée** de sous la
+liste : elle rejoindra « Comprendre les mentions » (architecture §3). Le composant
+`LegendeFamilles.svelte` reste au dépôt pour cette reprise. `les-presque/+page.svelte`
+ne garde que `selection` (liée au répertoire), le CSS de liste a migré dans le
+composant. `build` OK ; vérifié par capture desktop + mobile. Piège de séance :
+`vite preview` lancé avant un rebuild sert un ancien manifeste (chunks CSS hachés en
+404 → page « déshabillée ») → **redémarrer le preview après un build**. Détail :
+decisions.md 2026-07-17. Reste (zones suivantes) : TroisTerritoires, « Comprendre les
+mentions », Accueil-couverture, Méthode.
+
 ## 2026-07-16 (quinquies) — Charte, palier 3 : prototype BandeauMaitre + ChiffreVedette (fait, ⏸)
 
 Reprise après plantage machine : d'abord un commit de sauvegarde de tout le

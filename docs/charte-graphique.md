@@ -101,7 +101,9 @@ pas un catalogue abstrait. Chaque primitive reste agnostique du dossier.
 
 **Navigation & profil**
 - **Repertoire** — colonne de gauche d'« Explorer les maîtres » (recherche + tri +
-  liste + microprofils) ; ne partage plus sa largeur avec une légende.
+  liste + microprofils) ; ne partage plus sa largeur avec une légende. **Fait le
+  2026-07-17** (`Repertoire.svelte` : tri Œuvres/A→Z, sélection active à filet
+  d'accent, repliable en mobile ; légende retirée de sous la liste).
 - **BandeauMaitre** — la « scène du maître » : portrait agrandi + nom + **phrase de
   synthèse calculée** + chiffres vedettes. (Nommé `BandeauMaitre` et **pas**
   `ProfilMaitre`, car « Profil » est un nom d'onglet — décision utilisateur.)
@@ -137,9 +139,9 @@ placard : `GalaxieMaitre` (abandonné).
   TroisTerritoires), ni à l'accueil. Deux points ouverts à l'arbitrage :
   synthèse calculée réintroduite (factuelle) et plafond de `fractionEnMots`
   (voir decisions.md 2026-07-16 quinquies).
-- Zone Répertoire · Zone TroisTerritoires · Zone « Comprendre les mentions » ·
-  Zone Accueil-couverture (figure Joconde) · Zone Méthode — **après** le prototype,
-  une par une.
+- Zone Répertoire **(faite le 2026-07-17)** · Zone TroisTerritoires · Zone
+  « Comprendre les mentions » · Zone Accueil-couverture (figure Joconde) · Zone
+  Méthode — **après** le prototype, une par une.
 
 ## 6. Application prioritaire à « Les presque »
 

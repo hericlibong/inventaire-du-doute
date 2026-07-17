@@ -1,11 +1,9 @@
 <script>
-	import BarreFamilles from '$lib/BarreFamilles.svelte';
 	import NuageFamilles from '$lib/NuageFamilles.svelte';
 	import OeuvresMaitre from '$lib/OeuvresMaitre.svelte';
 	import CarteMaitre from '$lib/CarteMaitre.svelte';
-	import LegendeFamilles from '$lib/LegendeFamilles.svelte';
 	import BandeauMaitre from '$lib/BandeauMaitre.svelte';
-	import { nombre } from '$lib/joconde.js';
+	import Repertoire from '$lib/Repertoire.svelte';
 	// Archive : la piste « galaxie » est conservée dans $lib/GalaxieMaitre.svelte
 	// (abandonnée dans cette vue, decisions.md 2026-07-08), non importée ici.
 
@@ -26,14 +24,9 @@
 	//   musees  — où ces œuvres sont conservées, sur la carte (CarteMaitre).
 	let vue = $state('profil');
 
-	// Recherche/filtre sur les maîtres vedettes (moteur sur toute la base = plus
-	// tard, dépend d'un export de tous les noms — voir roadmap P3-T1).
-	let recherche = $state('');
-	const liste = $derived(
-		artistes.filter((a) => a.nom.toLowerCase().includes(recherche.trim().toLowerCase()))
-	);
-
-	// Maître sélectionné pour la fiche (le plus douté par défaut).
+	// Maître sélectionné pour la fiche (le plus douté par défaut). La recherche, le
+	// tri et la liste vivent désormais dans le Répertoire (colonne de navigation) ;
+	// la page ne garde que la sélection, partagée avec la scène du maître.
 	let selection = $state(artistes[0].nom);
 	const maitre = $derived(artistes.find((a) => a.nom === selection));
 </script>
@@ -59,32 +52,10 @@
 </p>
 
 <div class="grille">
-	<aside class="colonne-liste">
-		<label class="recherche">
-			<span class="visuellement-cache">Filtrer les maîtres</span>
-			<input type="search" placeholder="Filtrer un nom…" bind:value={recherche} />
-		</label>
-		<ul class="maitres">
-			{#each liste as a (a.nom)}
-				<!-- La jauge vit HORS du bouton : ses segments sont focusables
-				     (infobulle au survol/focus), or un élément interactif ne peut
-				     pas être imbriqué dans un <button> (2026-07-12). -->
-				<li class="rang" class:actif={a.nom === selection}>
-					<button class="maitre" onclick={() => (selection = a.nom)}>
-						<span class="nom">{a.nom}</span>
-						<span class="compte">{nombre(a.doute)}</span>
-					</button>
-					<BarreFamilles familles={a.familles} total={a.doute} nom={a.nom} hauteur="0.35rem" />
-				</li>
-			{:else}
-				<li class="vide">Aucun maître ne correspond.</li>
-			{/each}
-		</ul>
-		<!-- Clé des couleurs, commune aux trois vues : sous la liste, hors de la
-		     zone d'onglet (décision 2026-07-13). La liste scrolle dans son cadre,
-		     la légende reste visible. -->
-		<LegendeFamilles />
-	</aside>
+	<!-- Colonne de navigation : recherche + tri + liste + microprofils. La légende
+	     détaillée des mentions n'est plus ici (elle rejoindra « Comprendre les
+	     mentions », architecture §3) : le répertoire est un pur outil de choix. -->
+	<Repertoire {artistes} bind:selection />
 
 	{#if maitre}
 		<section class="fiche">
@@ -144,79 +115,6 @@
 		.grille {
 			grid-template-columns: 1fr;
 		}
-	}
-
-	.recherche input {
-		width: 100%;
-		box-sizing: border-box;
-		padding: 0.5rem 0.6rem;
-		border: 1px solid var(--couleur-trait);
-		border-radius: 3px;
-		font: inherit;
-		background: #fff;
-	}
-
-	.visuellement-cache {
-		position: absolute;
-		width: 1px;
-		height: 1px;
-		overflow: hidden;
-		clip: rect(0 0 0 0);
-	}
-
-	.maitres {
-		list-style: none;
-		margin: 0.75rem 0 0;
-		padding: 0;
-		max-height: 32rem;
-		overflow-y: auto;
-	}
-
-	/* La ligne (li) porte l'état (bordure, survol, sélection) ; le bouton ne
-	   couvre que nom + compte, la jauge est sa sœur (segments focusables —
-	   interdits à l'intérieur d'un <button>). */
-	.rang {
-		border-bottom: 1px solid var(--couleur-trait);
-		padding: 0.5rem 0.25rem 0.6rem;
-	}
-
-	.rang:hover {
-		background: rgba(122, 74, 43, 0.06);
-	}
-
-	.rang.actif {
-		background: rgba(184, 85, 31, 0.1);
-	}
-
-	.maitre {
-		width: 100%;
-		text-align: left;
-		background: none;
-		border: none;
-		padding: 0;
-		cursor: pointer;
-		display: grid;
-		grid-template-columns: 1fr auto;
-		gap: 0.15rem 0.5rem;
-		font: inherit;
-	}
-
-	.rang :global(.barre) {
-		margin-top: 0.35rem;
-	}
-
-	.maitre .nom {
-		font-weight: 600;
-	}
-
-	.maitre .compte {
-		color: var(--niveau-1);
-		font-variant-numeric: tabular-nums;
-	}
-
-	.vide {
-		color: var(--couleur-encre-douce);
-		padding: 0.5rem 0;
 	}
 
 	.fiche {

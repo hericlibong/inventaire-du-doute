@@ -2,6 +2,40 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-17 — Charte palier 3 : zone Répertoire (colonne de navigation)
+
+Deuxième zone du kit. Choix consignés :
+
+1. **Un composant dédié `Repertoire.svelte`**, pour matérialiser la séparation
+   répertoire ↔ profil (architecture §4) : la page ne garde que `selection` (liée),
+   toute la logique de choix (recherche, tri, liste) vit dans le répertoire.
+
+2. **Tri : « Œuvres concernées » par défaut, « A→Z » en option.** Motif :
+   « trier par valeur, sauf ordre naturel » (CLAUDE.md) — le doute EST la valeur du
+   dossier, on garde donc l'ordre décroissant par défaut ; l'alphabétique n'est qu'une
+   aide pour retrouver un nom précis. Libellés publics (« Œuvres », pas « doute » ni
+   « notices »). Tri alphabétique sur le nom affiché complet (`localeCompare` fr).
+
+3. **Sélection active renforcée** : filet d'accent à gauche + fond soutenu +
+   `aria-current="true"`. Le filet est transparent au repos (réservé à l'actif) pour
+   ne pas décaler la largeur d'un rang quand il devient actif.
+
+4. **Retrait de la légende détaillée** (`LegendeFamilles`) de sous la liste. Elle
+   n'appartient pas au répertoire (outil de choix) : elle rejoindra « Comprendre les
+   mentions » (architecture §3), chapitre autonome sur le vocabulaire. Le composant
+   reste au dépôt pour cette reprise ; en attendant, les couleurs restent explicables
+   par les tooltips (jauges, graphique) — état transitoire assumé.
+
+5. **Responsive repliable** (architecture §4 « colonne fixe ou repliable ») : sur
+   mobile, un bouton replie/déplie le répertoire ; replié d'emblée pour donner la
+   priorité au profil, refermé après un choix. `matchMedia` en `$effect` plutôt qu'un
+   `<details>` natif (piège de réouverture selon la largeur, cf. 2026-07-13) ; en
+   pré-rendu l'effet ne tourne pas, l'état par défaut « déployé » sert le desktop.
+
+Note d'outillage (pas une décision de fond) : `vite preview` charge le manifeste du
+build à son démarrage — après un rebuild, **le redémarrer**, sinon il sert d'anciens
+chunks CSS hachés (404) et la page s'affiche sans ses styles de composant.
+
 ## 2026-07-16 (quinquies) — Charte palier 3 : prototype du kit (BandeauMaitre, ChiffreVedette, onglets)
 
 Premier palier de code du kit de composants (charte §5), en prototype sur la fiche
