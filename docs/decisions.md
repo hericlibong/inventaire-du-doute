@@ -2,6 +2,35 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-17 (septies) — Accueil = affiche interactive (nouvelle direction, prototype, accueil seul)
+
+Direction B jugée trop classique/rigide (« image de catalogue »). Nouvelle piste
+**limitée à l'accueil** : une **affiche interactive** à partir de deux illustrations
+fournies. Les pages intérieures **restent en Direction B** (comparaison des deux systèmes).
+Prototype à juger sur captures avant toute extension.
+
+Choix :
+- **Deux assets distincts, pas un seul recadré** : `<picture>` avec l'asset horizontal
+  (desktop / tablette paysage) et la composition verticale autonome (mobile / **tablette
+  portrait ≤ 1024 px**, via `orientation: portrait` — sans quoi l'horizontal se recadre
+  trop et la nav quitte la fiche). `object-fit: cover`, `object-position: center`.
+- **Textes et nav = HTML superposé**, jamais dans le bitmap. Titre (Fraunces, clair
+  légèrement froid) dans l'aplat sombre ; navigation en **annotations** reliées aux lignes
+  de la fiche claire (charbon), « Explorer les maîtres » en entrée principale ; routes
+  réelles (dont `/echelle`). Mention de source courte et discrète.
+- **Contraste par les zones** (clair sur aplat sombre / charbon sur fiche claire),
+  **aucun voile** couvrant l'image, pas de panneau opaque ni d'ombre forte.
+- **Interactions sobres** : déplacement ≤ 4 px, prolongement de la ligne, contraste,
+  ~180 ms ; focus clavier visible ; `aria-current` (Accueil) ; `prefers-reduced-motion`.
+- **Coquille** : masthead + spectre **masqués sur `/` uniquement**, `main` pleine largeur
+  (`main.pleine`). Le premier viewport est exclusivement la couverture ; le chiffre 24 507
+  et la source vivent **sous la ligne de flottaison**.
+- **Traçabilité** : `web/static/cover/` + `README.md` — illustrations générées pour le
+  projet, évoquant la **base de données Joconde** (archive/index/open data), **pas** Léonard
+  ni le tableau *La Joconde*. Outil de génération à préciser par l'auteur.
+
+Composants créés : `LandingCover.svelte`, `EditorialNavigation.svelte` (pas davantage).
+
 ## 2026-07-17 (sexies) — Direction B : refonte des pages restantes (modèle de travail, non validé)
 
 **Statut.** Direction B **non validée définitivement** : rendu jugé trop classique /

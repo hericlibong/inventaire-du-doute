@@ -11,6 +11,10 @@
 	const estActif = (href) =>
 		href === '/' ? $page.url.pathname === '/' : $page.url.pathname.startsWith(href);
 
+	// L'accueil est une couverture pleine page : la coquille (masthead + spectre) y est
+	// masquée et le contenu passe pleine largeur. Les pages intérieures gardent tout.
+	const estAccueil = $derived($page.url.pathname === '/');
+
 	// Navigation publique recentrée à QUATRE entrées actives (architecture-
 	// editoriale.md §2). Les rubriques en réserve (Les révisions, La carte) ne
 	// figurent plus ici : leur code et leurs données restent au dépôt, mais elles
@@ -29,6 +33,7 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
+{#if !estAccueil}
 <header>
 	<!-- La ligne de proximité en signature, tout en haut de chaque page (Direction B). -->
 	<Spectre hauteur="3px" />
@@ -55,8 +60,9 @@
 		</nav>
 	</div>
 </header>
+{/if}
 
-<main>
+<main class:pleine={estAccueil}>
 	{@render children()}
 </main>
 
@@ -173,6 +179,13 @@
 		max-width: var(--largeur-max);
 		margin: 0 auto;
 		padding: var(--espace-6) var(--espace-5);
+	}
+
+	/* Accueil : couverture pleine page, aucune contrainte ni marge. */
+	main.pleine {
+		max-width: none;
+		margin: 0;
+		padding: 0;
 	}
 
 	footer {

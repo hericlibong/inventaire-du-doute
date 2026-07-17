@@ -2,6 +2,38 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-17 (septies) — Accueil refondu en affiche interactive (nouvelle direction, prototype)
+
+Direction B jugée trop classique / catalogue. Nouvelle piste pour l'**accueil seulement** :
+une **affiche interactive** bâtie sur deux illustrations fournies par l'utilisateur
+(`images/accueil_01` horizontale desktop, `images/acceuil_02` verticale mobile). Les
+pages intérieures **restent en Direction B** pour comparer les deux systèmes.
+
+Fait :
+- Assets versés dans `web/static/cover/` (`accueil-desktop.png`, `accueil-mobile.png`)
+  + `README.md` de traçabilité (illustrations générées pour le projet, évoquent la
+  **base Joconde**, pas Léonard ni le tableau).
+- **`LandingCover.svelte`** : couverture plein écran (100svh, pleine largeur) via un vrai
+  `<picture>` à deux sources ; textes et navigation en **vrais éléments HTML superposés**
+  (jamais dans le bitmap). Titre clair dans l'aplat sombre, accroche + mention de source
+  discrètes ; **`EditorialNavigation.svelte`** = les 4 entrées en annotations reliées aux
+  lignes de la fiche (Explorer = entrée principale, poids supérieur ; routes réelles dont
+  `/echelle`). Contraste natif (clair/sombre), **aucun voile** ni panneau opaque.
+- Interactions : survol/focus = déplacement ≤ 4 px + prolongement de la ligne + contraste,
+  180 ms ; focus clavier visible ; `aria-current` sur Accueil ; `prefers-reduced-motion` ;
+  ordre de tabulation logique.
+- Coquille (`+layout`) : masthead + spectre **masqués sur `/` uniquement**, `main` en
+  pleine largeur ; les 4 pages intérieures gardent leur navigation.
+- Chiffre 24 507 + source relégués **sous la ligne de flottaison** (invisibles au chargement).
+
+Recadrage : le point faible était la **tablette en portrait** (l'asset horizontal s'y
+recadrait trop, la nav quittait la fiche) → bascule sur la **composition verticale en
+portrait ≤ 1024 px** (media `orientation: portrait`). Vérifié par capture sur 5 gabarits
+(16:9, desktop moins large, tablette portrait, téléphone étroit, téléphone haut) : visage
+jamais recouvert, nav sur ses zones, pas de scroll horizontal, couverture plein viewport ;
+pages intérieures intactes. `build` OK. Détail : decisions.md 2026-07-17 septies.
+Prochaine étape : juger l'accueil sur captures avant d'étendre la direction.
+
 ## 2026-07-17 (sexies) — Direction B menée à terme sur toutes les pages (fait)
 
 **Statut.** La Direction B n'est PAS validée définitivement : son rendu est jugé trop
