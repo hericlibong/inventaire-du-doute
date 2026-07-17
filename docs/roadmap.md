@@ -27,13 +27,16 @@ comme historique ; ce bloc est le cap qui prime.*
 - [ ] **Accueil / introduction** du dossier « Les presque » (expliquer « presque
       attribué », combien d'œuvres et de noms, comment lire les formules) — à
       repenser en **couverture éditoriale** (architecture-editoriale.md §3)
-- [ ] **Vue d'ensemble des formulations prudentes** (données prêtes :
-      `vue_ensemble.json` ; message central = contraste « attribué à » global vs
-      école/atelier/manière dans les 27 ; **barres, pas d'anneau**)
+- [x] **Vue d'ensemble des formulations prudentes** (2026-07-17 ter) — intégrée à
+      « Comprendre les mentions » : deux panneaux de **barres** à échelle commune
+      (Ensemble 24 507 vs 27 noms 2 341), `BarresMentions.svelte`, contraste
+      « attribué à » global vs école/atelier/manière dans les 27
 - [x] **Exploration des 27 noms** (rubrique interactive : graphique / œuvres /
       carte par maître) — en place, à intégrer à la charte
-- [ ] **Vocabulaire / clé de lecture des familles** (les 8 formules ; la légende
-      permanente en est la base, à étendre en vue autonome)
+- [x] **Vocabulaire / clé de lecture des familles** (2026-07-17 ter) — page autonome
+      « Comprendre les mentions » (route `/echelle`) : trois territoires + huit
+      mentions définies + vue d'ensemble ; réutilise `territoires.js` et
+      `familles-public.js`
 - [ ] **Méthode et limites** (page dédiée)
 - [ ] **Travail image / droits** (statuts open/authorized/pending/restricted ;
       voie Wikimedia fichier par fichier, comme les 27 portraits)
@@ -71,8 +74,14 @@ comme historique ; ce bloc est le cap qui prime.*
             - [x] **Zone TroisTerritoires** (2026-07-17 bis) — `territoires.js`
                   (primitive) + nuage recadré (bandes de fond, séparateurs, titres) +
                   clé de lecture rétablie. Données/points/couleurs/tooltips inchangés.
-            - [ ] Zones suivantes une par une : « Comprendre les mentions »
-                  (réutilise `territoires.js`) · Accueil-couverture · Méthode.
+            - [x] **Zone « Comprendre les mentions »** (2026-07-17 ter) — page
+                  autonome (route `/echelle`, libellé public provisoire), 4 parties,
+                  `BarresMentions.svelte` ; réutilise `territoires.js` +
+                  `familles-public.js`.
+            - [ ] Zones suivantes une par une : Accueil-couverture · Méthode.
+            - [ ] **Recentrage complet de la nav** à 4 entrées (retirer Révisions/Carte
+                  de la nav publique, « Les presque » → « Explorer les maîtres ») —
+                  amorcé (entrée « Comprendre les mentions » activée), à finir.
 
 ### 2. En réserve (conservé, hors V1 publique)
 - [~] **Avant / après** (`/revisions`) — construit (onglets, anneau, prototype

@@ -16,7 +16,7 @@
 	const briques = [
 		{ titre: 'Accueil', href: '/', prete: true },
 		{ titre: 'Les presque', href: '/les-presque', prete: true },
-		{ titre: "L'échelle du doute", href: '/echelle', prete: false },
+		{ titre: 'Comprendre les mentions', href: '/echelle', prete: true },
 		{ titre: 'Les révisions', href: '/revisions', prete: false },
 		{ titre: 'La carte', href: '/carte', prete: false },
 		{ titre: 'Méthode et limites', href: '/methode', prete: false }

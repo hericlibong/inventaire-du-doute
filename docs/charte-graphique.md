@@ -144,8 +144,10 @@ placard : `GalaxieMaitre` (abandonné).
   synthèse calculée réintroduite (factuelle) et plafond de `fractionEnMots`
   (voir decisions.md 2026-07-16 quinquies).
 - Zone Répertoire **(faite le 2026-07-17)** · Zone TroisTerritoires **(faite le
-  2026-07-17 bis)** · Zone « Comprendre les mentions » · Zone Accueil-couverture
-  (figure Joconde) · Zone Méthode — **après** le prototype, une par une.
+  2026-07-17 bis)** · Zone « Comprendre les mentions » **(faite le 2026-07-17 ter :
+  route `/echelle`, page autonome à 4 parties, `BarresMentions.svelte`)** · Zone
+  Accueil-couverture (figure Joconde) · Zone Méthode — **après** le prototype, une
+  par une.
 
 ## 6. Application prioritaire à « Les presque »
 

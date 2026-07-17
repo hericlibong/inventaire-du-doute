@@ -2,6 +2,39 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-17 (ter) — Zone « Comprendre les mentions » (page autonome du vocabulaire)
+
+Création du chapitre autonome prévu par l'architecture §3. Choix consignés :
+
+1. **Réutiliser la route `/echelle`**, pas en créer une concurrente. Le placeholder
+   « L'échelle du doute » devient la page du vocabulaire ; le libellé public passe à
+   **« Comprendre les mentions »** (provisoire — le recentrage complet de la nav à
+   4 entrées reste à faire, hors périmètre de cette tâche).
+
+2. **Barres, jamais d'anneau** (déjà acté 2026-07-15, ici appliqué). Deux panneaux
+   « petits multiples » à **échelle commune** (même `maxPart`) : l'ensemble de Joconde
+   (24 507) et les 27 noms (2 341). La comparaison de FORMES rend visible le
+   basculement (« attribué à » domine globalement ; école/atelier/manière montent dans
+   les 27). Une **troisième série** (hors 27) n'a pas été ajoutée : sa forme recopie
+   presque l'ensemble (22 166 sur 24 507), elle n'améliore pas la lecture.
+
+3. **Ne pas présenter les barres comme les parts exclusives d'un tout.** Les mentions
+   se recouvrent : aucune n'est empilée, chaque barre est une part indépendante des
+   œuvres concernées, et une note dit explicitement que « les parts ne s'additionnent
+   pas à 100 % ». Les copies « d'après » (22 564) sont nommées **à part** (pas un
+   doute). La concentration mono-musée (Nice/Barla) est **renvoyée à la page Méthode**
+   d'une phrase, sans en faire le récit de la page.
+
+4. **Sources uniques, aucun doublon.** Définitions = champ `corps` de
+   `familles-public.js` ; regroupement + annotations = `territoires.js` ; couleurs =
+   tokens de pigments. La formule type n'apparaît que là où `montrerMention` est vrai
+   (règle anti-répétition existante), avec un nom générique « un maître ». Aucun terme
+   interne (« famille », « niveau », « presque lui »…) dans la copie.
+
+Nouveaux fichiers : `web/src/routes/echelle/+page.{js,svelte}`, composant
+`web/src/lib/BarresMentions.svelte`. `vue_ensemble.json` ajouté à `sync:data`.
+Détail d'affichage : « <1 % » quand une part non nulle arrondirait à zéro.
+
 ## 2026-07-17 (bis) — Charte palier 3 : zone TroisTerritoires (principe visuel central)
 
 Rendre lisible, dans le graphique lui-même, la **distance à la main du maître**

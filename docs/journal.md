@@ -2,6 +2,32 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-17 (ter) — Zone « Comprendre les mentions » (page autonome, fait)
+
+Chapitre autonome sur le vocabulaire muséal de la prudence (architecture §3), qui
+**referme la boucle** ouverte par le retrait de la légende du répertoire. Route
+existante **`/echelle`** activée (placeholder « L'échelle du doute »), libellé public
+provisoire **« Comprendre les mentions »** (`prete: true`). Quatre parties :
+1. **Intro éditoriale** courte + phrase de prudence commune verbatim.
+2. **Trois territoires** : bande de progression continue (réutilise `territoires.js`,
+   mêmes tints, titres, annotations) + flèche « plus près / plus loin de sa main ».
+3. **Huit mentions** : liste scannable groupée par territoire, définition = `corps`
+   de `familles-public.js` (source unique), formule type affichée seulement où
+   `montrerMention` (nom générique « un maître »). Aucun libellé ni définition créé.
+4. **Vue d'ensemble chiffrée** (`vue_ensemble.json`) : deux panneaux de **barres**
+   (jamais d'anneau) à **échelle commune** — Ensemble (24 507) vs 27 noms (2 341) —
+   nouveau composant `BarresMentions.svelte`, groupé par territoire, couleurs stables,
+   % + effectifs affichés (« <1 % » si non nul mais arrondi à 0). Le basculement se
+   lit d'un coup d'œil : « attribué à » 73 % → 37 %, « de son école » → 39 %.
+
+Réserves respectées : mentions qui se recouvrent (pas de partition à 100 %, note
+explicite), copies « d'après » comptées à part (22 564), concentration mono-musée
+renvoyée à la page Méthode (pas de récit Nice/Barla ici). `vue_ensemble.json`
+synchronisé (`npm run sync:data`), `build` OK, vérifié desktop + mobile. Détail :
+decisions.md 2026-07-17 (ter). Reste (nav) : recentrage complet à 4 entrées (retirer
+Révisions/Carte de la nav publique, « Les presque » → « Explorer les maîtres ») —
+non fait ici, hors périmètre. Zones suivantes du kit : Accueil-couverture, Méthode.
+
 ## 2026-07-17 (bis) — Charte palier 3 : zone TroisTerritoires sur l'onglet Profil (fait)
 
 Le principe éditorial central — la distance à la main du maître — devient **visible
