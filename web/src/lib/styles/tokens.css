@@ -96,5 +96,19 @@
 	--ombre-douce: 0 1px 2px rgba(28, 26, 23, 0.05), 0 2px 8px rgba(28, 26, 23, 0.04);
 	--focus-anneau: 2px solid var(--couleur-accent);
 
-	--largeur-max: 60rem;
+	/* Direction B « la ligne de proximité » (docs/charte-graphique.md, direction
+	   arrêtée 2026-07-17) : le dégradé de la boîte de pigments, de la main du maître
+	   (chaud, à gauche) à sa seule influence (froid, à droite). Température = distance.
+	   Chaque pigment est posé au centre de sa station le long de l'axe des 8 mentions
+	   (i+0,5)/8. C'est la signature visuelle du projet, reprise dans la coquille et
+	   sur chaque page. */
+	--spectre: linear-gradient(90deg,
+		var(--forme-attribue) 6%, var(--forme-point-interrogation) 19%,
+		var(--forme-atelier) 31%, var(--forme-entourage) 44%,
+		var(--forme-ecole) 56%, var(--forme-suiveur) 69%,
+		var(--forme-maniere) 81%, var(--forme-genre) 94%);
+
+	/* Canevas élargi (Direction B occupe l'écran, fin de la colonne documentaire
+	   étroite). Le texte courant reste borné page par page (~44 rem). */
+	--largeur-max: 68rem;
 }

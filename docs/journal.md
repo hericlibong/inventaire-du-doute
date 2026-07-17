@@ -2,6 +2,27 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-17 (quinquies) — Direction artistique B « la ligne de proximité » : coquille + accueil (fait)
+
+Revue globale de direction artistique menée (planche de l'existant, diagnostic, trois
+directions maquettées avec vraies données/portraits/polices — A « le registre »,
+B « la ligne de proximité », C « coupures & verbatim » ; maquettes conservées dans le
+scratchpad). **Direction B retenue** par l'utilisateur (motifs : decisions.md 2026-07-17
+quinquies). Début de la refonte **par pages complètes**.
+
+Palier 1 livré :
+- **Token `--spectre`** (dégradé des 8 pigments, stations centrées, température = distance)
+  et **`Spectre.svelte`** (la ligne réutilisable, bande + libellés des trois territoires,
+  repli mobile corrigé).
+- **Coquille** (`+layout.svelte`) : filet brun de tête **remplacé par la ligne** (signature
+  sur toutes les pages) ; canevas élargi 60 → 68 rem.
+- **Accueil** (`+page.svelte`) recomposé : spectre à territoires, grand titre, CTA encre,
+  figure de données à 8 stations, chiffre en preuve secondaire ; textes validés inchangés.
+
+Pages non refondues (Explorer, Comprendre, Méthode) vérifiées intactes sous la nouvelle
+coquille. `build` OK, vérifié desktop + mobile. Détail : decisions.md 2026-07-17 quinquies.
+Suite : Explorer / Profil (portrait-origine + axe pleine largeur + folios).
+
 ## 2026-07-17 (quater) — Socle V1 bouclé : page Méthode + Accueil-couverture + nav à 4 entrées (fait)
 
 Fin des deux zones restantes du socle éditorial V1.

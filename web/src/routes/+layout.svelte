@@ -3,6 +3,7 @@
 	import '$lib/styles/fonts.css';
 	import favicon from '$lib/assets/favicon.svg';
 	import { page } from '$app/stores';
+	import Spectre from '$lib/Spectre.svelte';
 
 	let { children } = $props();
 
@@ -29,6 +30,8 @@
 </svelte:head>
 
 <header>
+	<!-- La ligne de proximité en signature, tout en haut de chaque page (Direction B). -->
+	<Spectre hauteur="3px" />
 	<div class="masthead">
 		<a class="marque" href="/">L'inventaire du doute</a>
 		<nav aria-label="Navigation principale">
@@ -104,8 +107,9 @@
 
 	/* --- Coquille « inventaire » (palier 2). Filet d'accent en tête, masthead
 	   aligné sur la colonne de contenu, nav en petites capitales. --- */
+	/* La signature n'est plus un filet brun mais la ligne de proximité (Spectre),
+	   posée en tête par le composant ci-dessus. */
 	header {
-		border-top: 3px solid var(--couleur-accent);
 		border-bottom: var(--filet);
 	}
 

@@ -2,6 +2,40 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-17 (quinquies) — Direction artistique retenue : B « la ligne de proximité » (+ coquille & accueil)
+
+Après la revue globale (planche de l'existant, diagnostic, trois directions maquettées
+avec vraies données/portraits/polices), la **Direction B « la ligne de proximité »**
+est retenue.
+
+**Pourquoi B.** Le diagnostic pointait une app « trop documentaire » : colonne centrée
+étroite, boîtes grises répétées, dataviz qui flotte, pages sans rôle visuel distinct,
+allure générique. B fait du **sujet la structure** : une ligne horizontale continue, de
+la main du maître (chaud) à sa seule influence (froid), organise chaque page ; les huit
+pigments en sont les stations. C'est la direction la plus **identifiable** (tirée de la
+donnée, pas d'une métaphore extérieure), elle **occupe l'écran**, donne un **rythme
+commun**, et réutilise le nuage horizontal déjà en place (donc moins de refonte dataviz).
+Emprunts prévus aux autres pistes : **verbatims-matière** + **portrait N&B** + infographies
+titrées/sourcées (dir. C, second choix), **folios/cotes** et traitement en « entrée »
+(dir. A). Directions A et C conservées en réserve de maquettes (scratchpad).
+
+**Implémentation, palier 1 — coquille + accueil.** Par pages complètes, jamais par
+microcomposants (consigne utilisateur).
+- **Token `--spectre`** (`tokens.css`) : dégradé des huit pigments, chaque couleur au
+  centre de sa station (i+0,5)/8, température = distance. Signature du projet.
+- **`Spectre.svelte`** : la ligne réutilisable (bande + libellés des trois territoires
+  en option, alignés sur les segments de l'axe ; repli mobile sans chevauchement).
+- **Coquille** (`+layout.svelte`) : le **filet brun de tête est remplacé par la ligne**
+  (spectre 3 px en signature sur toutes les pages) ; canevas élargi (`--largeur-max`
+  60 → **68 rem**) pour finir la colonne étroite (le texte courant reste borné page par page).
+- **Accueil** (`+page.svelte`) : recomposé — spectre à territoires en tête, grand titre
+  Fraunces, promesse, **CTA en encre** (plus un bouton de landing) + lien souligné ocre,
+  figure de données à 8 stations, chiffre 24 507 en **preuve secondaire**. Textes validés
+  inchangés (composition seule). La figure « Joconde » reste provisoire/remplaçable.
+
+Pages non encore refondues (Explorer, Comprendre, Méthode) : intactes et fonctionnelles
+sous la nouvelle coquille (vérifié). Décisions différées du bandeau maître non rouvertes.
+
 ## 2026-07-17 (quater) — Socle V1 : Méthode, Accueil-couverture, nav à 4 entrées
 
 Clôture du socle éditorial V1. Décisions :

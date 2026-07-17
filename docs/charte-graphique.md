@@ -10,6 +10,15 @@ Direction arrêtée le 2026-07-15 / 16 (proposition validée, ambiance typograph
 `tokens.css` et les composants devront s'y conformer. En cas d'écart, ce document
 fait foi et doit être mis à jour au même moment que le code.
 
+> **Direction de COMPOSITION retenue le 2026-07-17 : B « la ligne de proximité ».**
+> Après revue globale (trois directions maquettées), le parti de mise en page est acté :
+> le sujet devient la structure — une **ligne horizontale continue** (token `--spectre`,
+> composant `Spectre.svelte`), de la main du maître (chaud) à sa seule influence (froid),
+> organise chaque page ; les huit pigments en sont les stations. Emprunts prévus :
+> verbatims-matière + portrait N&B (dir. C), folios/cotes (dir. A). Typographie et pigments
+> inchangés (« Catalogue savant »). Refonte **par pages complètes**. Détail et motifs :
+> decisions.md 2026-07-17 (quinquies). Implémenté : coquille + accueil.
+
 ## 1. Concept et principes
 
 **Concept : un inventaire, pas un tableau de bord.** Le langage visuel d'un

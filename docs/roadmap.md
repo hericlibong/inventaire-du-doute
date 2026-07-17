@@ -87,9 +87,21 @@ comme historique ; ce bloc est le cap qui prime.*
                   actives (Accueil · Explorer les maîtres · Comprendre les mentions ·
                   Méthode) ; Révisions/Carte retirées de la nav publique (code conservé).
 
-  **Socle V1 bouclé.** Prochaine étape (hors « petites zones ») : **revue globale de
-  direction artistique et d'architecture visuelle** — captures de toutes les pages
-  principales + propositions de compositions complètes à l'échelle de l'application.
+  **Socle V1 bouclé.** Revue globale de direction artistique menée (planche de
+  l'existant + diagnostic + 3 directions maquettées). **Direction retenue :
+  B « la ligne de proximité »** (decisions.md 2026-07-17 quinquies).
+
+- [~] **Refonte Direction B — par pages complètes** (pas par microcomposants) :
+      - [x] **Coquille + tokens** (2026-07-17 quinquies) — token `--spectre`, composant
+            `Spectre.svelte`, signature en tête de page, canevas élargi (68 rem),
+            filet brun de tête remplacé par la ligne.
+      - [x] **Accueil** (2026-07-17 quinquies) — couverture à la ligne : spectre à
+            territoires, grand titre, CTA encre, figure de données à 8 stations,
+            chiffre en preuve secondaire.
+      - [ ] **Explorer / Profil** (portrait-origine + axe pleine largeur + folios).
+      - [ ] **Explorer / Œuvres + Musées** (même coquille ; verbatims ; carte pleine).
+      - [ ] **Comprendre les mentions** · **Méthode** (au même système).
+      - Emprunts prévus : verbatims-matière et portrait N&B (dir. C), folios/cotes (dir. A).
 
 ### 2. En réserve (conservé, hors V1 publique)
 - [~] **Avant / après** (`/revisions`) — construit (onglets, anneau, prototype
