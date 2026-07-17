@@ -98,10 +98,19 @@ comme historique ; ce bloc est le cap qui prime.*
       - [x] **Accueil** (2026-07-17 quinquies) — couverture à la ligne : spectre à
             territoires, grand titre, CTA encre, figure de données à 8 stations,
             chiffre en preuve secondaire.
-      - [ ] **Explorer / Profil** (portrait-origine + axe pleine largeur + folios).
-      - [ ] **Explorer / Œuvres + Musées** (même coquille ; verbatims ; carte pleine).
-      - [ ] **Comprendre les mentions** · **Méthode** (au même système).
-      - Emprunts prévus : verbatims-matière et portrait N&B (dir. C), folios/cotes (dir. A).
+      - [x] **Explorer / Profil** (2026-07-17 sexies) — en-tête compact, profil au 1er
+            écran, graphe élargi, onglets soulignés, folio discret.
+      - [x] **Explorer / Œuvres** (2026-07-17 sexies) — liste éditoriale continue,
+            verbatim en matière, emplacements média réservés.
+      - [x] **Explorer / Musées** (2026-07-17 sexies) — grande carte + flanc.
+      - [x] **Comprendre les mentions** (2026-07-17 sexies) — ligne une fois, 3 colonnes.
+      - [x] **Méthode** (2026-07-17 sexies) — sommaire en rail collant + colonne.
+      - Emprunt de la dir. C effectivement utilisé : verbatims-matière (Œuvres). Non
+        retenus à ce stade : portrait N&B, capitales/folios dominants.
+
+  **Direction B menée à terme = modèle de travail (NON validée).** Rendu jugé trop
+  classique/générique. Prochaine étape : critique globale de cette version, puis
+  nouvelle direction fondée sur un modèle visuel plus précis fourni par l'utilisateur.
 
 ### 2. En réserve (conservé, hors V1 publique)
 - [~] **Avant / après** (`/revisions`) — construit (onglets, anneau, prototype

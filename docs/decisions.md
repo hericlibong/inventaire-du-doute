@@ -2,6 +2,35 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-17 (sexies) — Direction B : refonte des pages restantes (modèle de travail, non validé)
+
+**Statut.** Direction B **non validée définitivement** : rendu jugé trop classique /
+générique. Menée jusqu'au bout pour obtenir une version complète et comparable — un
+**modèle de travail** pour une future direction fondée sur un modèle visuel plus précis.
+On n'a donc ni défendu ni enrichi l'esthétique ; pas de nouvel effet, folio ou ornement
+hors cadrage. Données et textes éditoriaux validés inchangés ; rubriques en réserve non
+réactivées.
+
+Choix de composition, par page (un commit chacun) :
+- **Profil** : en-tête compact pour faire remonter le profil au premier écran (les
+  textes validés sont conservés, seule leur mise en page change) ; répertoire resserré
+  pour élargir le graphe ; onglets soulignés ; folio/cote **discrets** (repère
+  secondaire, jamais un décor), tirés des données (rang + `musee_principal.code`).
+- **Œuvres** : abandon de la grille de cartes blanches au profit d'une liste continue à
+  filets ; le verbatim (mots exacts du musée) passe en tête de hiérarchie ; un
+  **emplacement média réservé** par entrée matérialise les futures reproductions sans en
+  inventer. Ordre par mention et bloc « d'après » conservés.
+- **Musées** : suppression du plafond 32 rem ; grande carte + flanc (légende, hors-cadre,
+  collant). Logique de projection, points fixes, liens POP et tooltips **inchangés**.
+- **Comprendre les mentions** : la ligne ne sert qu'une fois (les trois territoires) ;
+  définitions en trois colonnes ; comparaison chiffrée conservée (barres, échelle
+  commune, réserves de recouvrement).
+- **Méthode** : sommaire en rail collant + colonne de contenu ; **la ligne n'est pas
+  imposée** là où elle n'explique rien (consigne). Contenu validé intégralement conservé.
+
+Geste transversal : toutes les **boîtes grises arrondies** (précaution, « à part »,
+sommaire) deviennent des **filets** — cohérence Direction B, moins d'encadrés.
+
 ## 2026-07-17 (quinquies) — Direction artistique retenue : B « la ligne de proximité » (+ coquille & accueil)
 
 Après la revue globale (planche de l'existant, diagnostic, trois directions maquettées

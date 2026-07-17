@@ -2,6 +2,36 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-17 (sexies) — Direction B menée à terme sur toutes les pages (fait)
+
+**Statut.** La Direction B n'est PAS validée définitivement : son rendu est jugé trop
+classique / trop proche des conventions visuelles fréquentes. On la mène jusqu'au bout
+pour disposer d'une **version complète et comparable**, qui servira de modèle de travail
+à une nouvelle direction (fournie ensuite par l'utilisateur). Aucun nouvel effet, folio
+ou ornement hors cadrage ; textes validés et données inchangés.
+
+Cinq pages recomposées, un commit par page :
+- **Explorer / Profil** : en-tête de dossier compact (le profil apparaît au premier
+  écran), portrait-origine via le bandeau, graphe élargi (répertoire resserré), onglets
+  en soulignement (fin de la boîte), folio/cote discret.
+- **Explorer / Œuvres** : grille de cartes blanches → **liste éditoriale continue**
+  (entrées à filets) ; le **verbatim** du musée devient la matière (Fraunces, liseré de
+  la mention) ; hiérarchie titre / musée / verbatim / lien POP ; **emplacement média
+  réservé** par entrée (jamais d'image inventée).
+- **Explorer / Musées** : fin de la petite carte centrée à 32 rem → **grande carte**
+  (colonne large) + flanc légende/hors-cadre ; points fixes, POP et tooltips inchangés.
+- **Comprendre les mentions** : la ligne (Spectre) porte les territoires **une seule
+  fois** (pas de démonstration décorative) ; huit mentions en trois colonnes à filet
+  coloré ; comparaison ample ; barres/données/réserves conservées.
+- **Méthode** : sommaire numéroté en **rail collant** + contenu en colonne ; boîte grise
+  retirée ; la ligne n'est PAS imposée (elle n'explique rien ici).
+
+Toutes les boîtes grises arrondies remplacées par des filets. `build` OK à chaque page,
+vérifié desktop + mobile ; interactions (onglets, tri, tooltips, liens POP) préservées.
+Planche comparative complète produite (6 pages + 2 mobiles). Détail : decisions.md
+2026-07-17 sexies. Suite : critique globale de cette version, puis nouvelle proposition
+sur un modèle visuel plus précis fourni par l'utilisateur.
+
 ## 2026-07-17 (quinquies) — Direction artistique B « la ligne de proximité » : coquille + accueil (fait)
 
 Revue globale de direction artistique menée (planche de l'existant, diagnostic, trois
