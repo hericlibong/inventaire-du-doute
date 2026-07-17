@@ -121,6 +121,7 @@
 	<figcaption class="titre">Où sont conservées ces œuvres</figcaption>
 
 	{#if afficheCarte}
+	<div class="agencement">
 		<div class="scene" bind:this={regardEl}>
 			<svg viewBox="0 0 {W} {H}" role="img" aria-label="Carte des musées de France conservant des œuvres dont l’attribution à {maitre.nom} est incertaine">
 				<!-- Fond régions : illustration discrète, aucune donnée. -->
@@ -169,17 +170,20 @@
 			{/if}
 		</div>
 
-		<!-- Légende : un seul repère de point (présence). Le nombre d'œuvres par
-		     musée se lit au survol, pas dans la taille. -->
-		<div class="legende">
-			<svg class="repere" viewBox="0 0 {2 * R_POINT} {2 * R_POINT}" width={2 * R_POINT} height={2 * R_POINT} aria-hidden="true">
-				<circle cx={R_POINT} cy={R_POINT} r={R_POINT} class="point" />
-			</svg>
-			<p class="legende-texte">
-				Un point = un musée où au moins une œuvre concernée est conservée.
-				Passez sur un point pour voir combien, et sous quelles formules.
-			</p>
+		<div class="flanc">
+			<!-- Légende : un seul repère de point (présence). Le nombre d'œuvres par
+			     musée se lit au survol, pas dans la taille. -->
+			<div class="legende">
+				<svg class="repere" viewBox="0 0 {2 * R_POINT} {2 * R_POINT}" width={2 * R_POINT} height={2 * R_POINT} aria-hidden="true">
+					<circle cx={R_POINT} cy={R_POINT} r={R_POINT} class="point" />
+				</svg>
+				<p class="legende-texte">
+					Un point = un musée où au moins une œuvre concernée est conservée.
+					Passez sur un point pour voir combien, et sous quelles formules.
+				</p>
+			</div>
 		</div>
+	</div>
 	{:else if projetables.length === 1}
 		<p class="repli">
 			Ces œuvres sont conservées dans un seul lieu&nbsp;: {projetables[0].nom}, à
@@ -207,24 +211,45 @@
 </figure>
 
 <style>
-	/* Toute la carte tient dans une colonne bornée et centrée : titre, fond, légende
-	   et mentions s'alignent sur la même largeur (fini le titre à gauche d'un fond
-	   centré). */
+	/* Direction B : la carte occupe l'espace. Plus de colonne bornée à 32 rem —
+	   une grande carte à gauche, la légende et les mentions au flanc. */
 	.carte {
-		max-width: 32rem;
-		margin: 0 auto;
+		margin: 0;
 	}
 
 	.titre {
 		font-family: var(--police-titre);
-		font-size: 1.05rem;
-		line-height: 1.25;
+		font-size: var(--taille-l);
+		line-height: 1.2;
 		color: var(--couleur-encre);
-		margin: 0 0 0.7rem;
+		margin: 0 0 var(--espace-4);
+	}
+
+	/* Grande carte (colonne large) + flanc (légende, hors-cadre). */
+	.agencement {
+		display: grid;
+		grid-template-columns: minmax(0, 1.9fr) 1fr;
+		gap: var(--espace-6);
+		align-items: start;
 	}
 
 	.scene {
 		position: relative; /* repère du tooltip positionné en absolu */
+	}
+
+	.flanc {
+		position: sticky;
+		top: var(--espace-4);
+	}
+
+	@media (max-width: 720px) {
+		.agencement {
+			grid-template-columns: 1fr;
+			gap: var(--espace-4);
+		}
+		.flanc {
+			position: static;
+		}
 	}
 
 	svg {
@@ -275,11 +300,8 @@
 
 	.legende {
 		display: flex;
-		align-items: center;
+		align-items: baseline;
 		gap: 0.55rem;
-		margin-top: 0.9rem;
-		padding-top: 0.6rem;
-		border-top: 1px solid var(--couleur-trait);
 		flex-wrap: wrap;
 	}
 
