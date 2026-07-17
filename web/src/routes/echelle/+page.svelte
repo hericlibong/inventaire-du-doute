@@ -3,10 +3,14 @@
 	// prudence (architecture-editoriale.md §3). Referme la boucle laissée ouverte par
 	// le retrait de la légende détaillée du répertoire. Quatre parties : introduction,
 	// les trois territoires, les huit mentions, la vue d'ensemble chiffrée.
+	// Direction B (2026-07-17) : la ligne de proximité porte les territoires une seule
+	// fois (pas de démonstration décorative du spectre) ; hiérarchie et rythme
+	// retravaillés ; plus de boîte grise.
 	import { FAMILLE_PUBLIC } from '$lib/familles-public.js';
 	import { TERRITOIRES } from '$lib/territoires.js';
 	import { nombre } from '$lib/joconde.js';
 	import BarresMentions from '$lib/BarresMentions.svelte';
+	import Spectre from '$lib/Spectre.svelte';
 
 	let { data } = $props();
 	const vue = data.vue;
@@ -30,28 +34,28 @@
 		FAMILLE_PUBLIC[code].montrerMention ? FAMILLE_PUBLIC[code].mention('un maître') : null;
 </script>
 
-<h1>Comprendre les mentions</h1>
-
-<!-- 1. Introduction éditoriale ------------------------------------------------ -->
-<div class="intro">
-	<p class="chapo">
-		Un musée ne dit pas seulement qu'une œuvre est, ou n'est pas, d'un artiste. Quand
-		il hésite, il l'écrit — avec des mots choisis. Selon les cas, il note que l'œuvre
-		est sans doute de sa main, qu'elle sort de son atelier, qu'elle vient de son école,
-		ou qu'elle reprend seulement son style. Chaque formule dit une chose différente&nbsp;:
-		la <em>nature</em> du lien avec le nom de l'artiste, et sa <em>force</em>.
-	</p>
-	<p class="chapo">
-		Cette page réunit ces formules, les explique en clair, et montre lesquelles
-		reviennent le plus souvent.
-	</p>
+<header class="tete">
+	<h1>Comprendre les mentions</h1>
+	<div class="lead">
+		<p>
+			Un musée ne dit pas seulement qu'une œuvre est, ou n'est pas, d'un artiste. Quand
+			il hésite, il l'écrit — avec des mots choisis. Selon les cas, il note que l'œuvre
+			est sans doute de sa main, qu'elle sort de son atelier, qu'elle vient de son école,
+			ou qu'elle reprend seulement son style. Chaque formule dit une chose différente&nbsp;:
+			la <em>nature</em> du lien avec le nom de l'artiste, et sa <em>force</em>.
+		</p>
+		<p>
+			Cette page réunit ces formules, les explique en clair, et montre lesquelles
+			reviennent le plus souvent.
+		</p>
+	</div>
 	<p class="prudence">
 		Le projet reprend les formulations publiées par les musées&nbsp;; il ne réattribue
 		aucune œuvre.
 	</p>
-</div>
+</header>
 
-<!-- 2. Les trois territoires --------------------------------------------------- -->
+<!-- 2. Les trois territoires : la ligne, une fois, avec ses annotations -------- -->
 <section class="bloc">
 	<h2>Trois territoires, de la main du maître à sa seule influence</h2>
 	<p class="texte">
@@ -59,15 +63,14 @@
 		plus près de la main de l'artiste&nbsp;; à droite, il n'en reste que le style. Entre
 		les deux, tout son environnement.
 	</p>
-	<ol class="progression">
-		{#each TERRITOIRES as t (t.id)}
-			<li class="zone" data-zone={t.id}>
-				<span class="zone-titre">{t.titre}</span>
-				<span class="zone-note">{t.annotation}</span>
-			</li>
-		{/each}
-	</ol>
-	<p class="fleche"><span>plus près de sa main</span><span aria-hidden="true">→</span><span>plus loin de sa main</span></p>
+	<div class="ligne">
+		<Spectre hauteur="8px" zones />
+		<ol class="annot">
+			{#each TERRITOIRES as t (t.id)}
+				<li>{t.annotation}</li>
+			{/each}
+		</ol>
+	</div>
 </section>
 
 <!-- 3. Les huit mentions ------------------------------------------------------- -->
@@ -77,27 +80,29 @@
 		Voici les huit formules, dans l'ordre de cette ligne. La couleur de chacune est la
 		même partout dans le site.
 	</p>
-	{#each TERRITOIRES as t (t.id)}
-		<div class="mentions-zone">
-			<h3 class="zone-titre">{t.titre}</h3>
-			<dl class="mentions">
-				{#each t.codes as code (code)}
-					<div class="mention">
-						<dt>
-							<span class="pastille" style="background: {FAMILLE_PUBLIC[code].couleur}"></span>
-							<span class="lib">{FAMILLE_PUBLIC[code].label}</span>
-						</dt>
-						<dd>
-							{FAMILLE_PUBLIC[code].corps}
-							{#if formuleType(code)}
-								<span class="formule">Elle s'écrit par exemple «&nbsp;{formuleType(code)}&nbsp;».</span>
-							{/if}
-						</dd>
-					</div>
-				{/each}
-			</dl>
-		</div>
-	{/each}
+	<div class="mentions-cols">
+		{#each TERRITOIRES as t (t.id)}
+			<div class="mentions-zone" data-zone={t.id}>
+				<h3 class="zone-titre">{t.titre}</h3>
+				<dl class="mentions">
+					{#each t.codes as code (code)}
+						<div class="mention">
+							<dt>
+								<span class="pastille" style="background: {FAMILLE_PUBLIC[code].couleur}"></span>
+								<span class="lib">{FAMILLE_PUBLIC[code].label}</span>
+							</dt>
+							<dd>
+								{FAMILLE_PUBLIC[code].corps}
+								{#if formuleType(code)}
+									<span class="formule">Elle s'écrit par exemple «&nbsp;{formuleType(code)}&nbsp;».</span>
+								{/if}
+							</dd>
+						</div>
+					{/each}
+				</dl>
+			</div>
+		{/each}
+	</div>
 </section>
 
 <!-- 4. Vue d'ensemble chiffrée ------------------------------------------------- -->
@@ -127,31 +132,31 @@
 <style>
 	h1 {
 		font-family: var(--police-titre);
+		font-size: var(--taille-xl);
 	}
 
-	.intro {
-		max-width: 44rem;
+	.tete {
+		max-width: 46rem;
 	}
 
-	.chapo {
+	.lead p {
 		font-size: var(--taille-m);
 		line-height: 1.65;
+		margin: 0 0 var(--espace-3);
 	}
 
-	.chapo:first-child {
+	.lead p:first-child {
 		font-size: 1.2rem;
 	}
 
-	/* Phrase de prudence commune au projet : encart discret, registre « mention ». */
+	/* Prudence : plus une boîte grise (Direction B), un filet et de l'italique. */
 	.prudence {
 		margin-top: var(--espace-4);
-		padding: 0.6rem 0.9rem;
-		background: rgba(122, 74, 43, 0.06);
-		border-left: 3px solid var(--couleur-accent);
-		border-radius: var(--rayon-s);
+		border-left: 2px solid var(--couleur-accent);
+		padding-left: var(--espace-3);
+		font-style: italic;
 		font-size: var(--taille-s);
-		font-family: var(--police-ui);
-		color: var(--couleur-encre);
+		color: var(--couleur-encre-douce);
 	}
 
 	.bloc {
@@ -163,43 +168,54 @@
 	}
 
 	.texte {
-		max-width: 44rem;
+		max-width: 46rem;
 		line-height: 1.65;
 	}
 
-	/* --- Partie 2 : progression continue (une bande, pas trois cartes) --- */
-	.progression {
+	/* --- Partie 2 : la ligne (Spectre) + annotations alignées sur les territoires. --- */
+	.ligne {
+		margin-top: var(--espace-4);
+	}
+
+	.annot {
 		list-style: none;
-		margin: var(--espace-4) 0 var(--espace-2);
+		margin: var(--espace-3) 0 0;
 		padding: 0;
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap: 0;
-		border: var(--filet);
-		border-radius: var(--rayon-s);
-		overflow: hidden;
+		grid-template-columns: 2fr 3fr 3fr;
+		gap: var(--espace-4);
 	}
 
-	.progression .zone {
-		padding: var(--espace-4);
-		border-left: var(--filet);
-		display: flex;
-		flex-direction: column;
-		gap: 0.3rem;
+	.annot li {
+		font-family: var(--police-texte);
+		font-style: italic;
+		font-size: var(--taille-s);
+		line-height: 1.4;
+		color: var(--couleur-encre-douce);
+		padding-right: var(--espace-3);
 	}
 
-	.progression .zone:first-child {
-		border-left: none;
+	/* --- Partie 3 : trois colonnes de définitions, filet d'accent par territoire. --- */
+	.mentions-cols {
+		display: grid;
+		grid-template-columns: 2fr 3fr 3fr;
+		gap: var(--espace-6);
+		margin-top: var(--espace-4);
 	}
 
-	.zone[data-zone='plus-pres'] {
-		background: var(--territoire-pres);
+	.mentions-zone {
+		border-top: 3px solid var(--couleur-trait);
+		padding-top: var(--espace-3);
 	}
-	.zone[data-zone='autour'] {
-		background: var(--territoire-autour);
+
+	.mentions-zone[data-zone='plus-pres'] {
+		border-top-color: var(--forme-attribue);
 	}
-	.zone[data-zone='influence'] {
-		background: var(--territoire-influence);
+	.mentions-zone[data-zone='autour'] {
+		border-top-color: var(--forme-atelier);
+	}
+	.mentions-zone[data-zone='influence'] {
+		border-top-color: var(--forme-maniere);
 	}
 
 	.zone-titre {
@@ -209,57 +225,20 @@
 		letter-spacing: 0.04em;
 		text-transform: uppercase;
 		color: var(--couleur-encre);
-	}
-
-	.zone-note {
-		font-family: var(--police-texte);
-		font-style: italic;
-		color: var(--couleur-encre-douce);
-		line-height: 1.4;
-	}
-
-	/* Micro-légende de progression, en italique. */
-	.fleche {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		gap: var(--espace-3);
-		max-width: 30rem;
-		margin: 0.4rem 0 0;
-		font-family: var(--police-texte);
-		font-style: italic;
-		font-size: var(--taille-s);
-		color: var(--couleur-encre-douce);
-	}
-
-	.fleche span[aria-hidden] {
-		flex: 1;
-		text-align: center;
-		font-style: normal;
-		color: var(--couleur-trait);
-		letter-spacing: 0.3em;
-	}
-
-	/* --- Partie 3 : les huit mentions, définitions scannables (pas de cartes) --- */
-	.mentions-zone {
-		margin-top: var(--espace-4);
-	}
-
-	.mentions-zone .zone-titre {
 		margin: 0 0 var(--espace-2);
 	}
 
 	.mentions {
 		margin: 0;
-		max-width: 46rem;
 	}
 
 	.mention {
-		display: grid;
-		grid-template-columns: 9rem 1fr;
-		gap: 0.4rem 1rem;
-		padding: 0.5rem 0;
+		padding: var(--espace-3) 0;
 		border-top: var(--filet-clair);
+	}
+
+	.mention:first-of-type {
+		border-top: none;
 	}
 
 	.mention dt {
@@ -267,6 +246,7 @@
 		align-items: baseline;
 		gap: 0.5rem;
 		font-weight: 600;
+		margin-bottom: 0.15rem;
 	}
 
 	.mention dt .lib {
@@ -284,6 +264,7 @@
 	.mention dd {
 		margin: 0;
 		line-height: 1.5;
+		font-size: var(--taille-s);
 		color: var(--couleur-encre);
 	}
 
@@ -291,11 +272,10 @@
 		display: block;
 		margin-top: 0.15rem;
 		font-style: italic;
-		font-size: var(--taille-s);
 		color: var(--couleur-encre-douce);
 	}
 
-	/* --- Partie 4 : comparaison en barres, deux panneaux à échelle commune --- */
+	/* --- Partie 4 : comparaison en barres, deux panneaux à échelle commune. --- */
 	.comparaison {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -304,32 +284,19 @@
 	}
 
 	.reserve {
-		max-width: 46rem;
+		max-width: 50rem;
 		font-style: italic;
 		font-size: var(--taille-s);
 		color: var(--couleur-encre-douce);
 		line-height: 1.55;
 	}
 
-	/* --- Responsive --- */
-	@media (max-width: 640px) {
-		.progression {
-			grid-template-columns: 1fr;
-		}
-		.progression .zone {
-			border-left: none;
-			border-top: var(--filet);
-		}
-		.progression .zone:first-child {
-			border-top: none;
-		}
+	@media (max-width: 720px) {
+		.annot,
+		.mentions-cols,
 		.comparaison {
 			grid-template-columns: 1fr;
-			gap: var(--espace-5);
-		}
-		.mention {
-			grid-template-columns: 1fr;
-			gap: 0.2rem;
+			gap: var(--espace-4);
 		}
 	}
 </style>
