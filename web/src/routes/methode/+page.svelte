@@ -27,25 +27,32 @@
 	];
 </script>
 
-<h1>Méthode et limites</h1>
-<p class="chapo">
-	Cette page dit comment le projet lit la base Joconde, ce qu'il compte, et ce qu'il
-	ne prétend pas savoir. Elle est publiée au même rang que le reste&nbsp;: les limites
-	font partie du récit.
-</p>
-<p class="prudence">
-	Le projet reprend les formulations publiées par les musées&nbsp;; il ne réattribue
-	aucune œuvre.
-</p>
+<header class="tete">
+	<h1>Méthode et limites</h1>
+	<p class="chapo">
+		Cette page dit comment le projet lit la base Joconde, ce qu'il compte, et ce qu'il
+		ne prétend pas savoir. Elle est publiée au même rang que le reste&nbsp;: les limites
+		font partie du récit.
+	</p>
+	<p class="prudence">
+		Le projet reprend les formulations publiées par les musées&nbsp;; il ne réattribue
+		aucune œuvre.
+	</p>
+</header>
 
-<nav class="sommaire" aria-label="Sections de la page">
-	<ul>
-		{#each sommaire as [ancre, titre] (ancre)}
-			<li><a href="#{ancre}">{titre}</a></li>
-		{/each}
-	</ul>
-</nav>
+<!-- Deux zones : sommaire en rail (collant sur ordinateur) + contenu. La ligne de
+     proximité n'est PAS imposée ici : elle n'expliquerait rien (Méthode = texte,
+     filets, chiffres et sources). -->
+<div class="grille">
+	<nav class="sommaire" aria-label="Sections de la page">
+		<ol>
+			{#each sommaire as [ancre, titre], i (ancre)}
+				<li><a href="#{ancre}"><span class="num">{i + 1}</span>{titre}</a></li>
+			{/each}
+		</ol>
+	</nav>
 
+	<div class="contenu">
 <!-- 1. Périmètre ------------------------------------------------------------- -->
 <section id="perimetre">
 	<h2>Périmètre</h2>
@@ -172,62 +179,97 @@
 		situer les points.
 	</p>
 </section>
+	</div>
+</div>
 
 <style>
 	h1 {
 		font-family: var(--police-titre);
 	}
 
+	.tete {
+		max-width: 46rem;
+	}
+
+	h1 {
+		font-size: var(--taille-xl);
+	}
+
 	.chapo {
 		font-size: var(--taille-m);
-		max-width: 44rem;
 		line-height: 1.65;
 	}
 
+	/* Prudence : plus une boîte grise (Direction B), un filet et de l'italique. */
 	.prudence {
-		max-width: 44rem;
-		margin: var(--espace-4) 0;
-		padding: 0.6rem 0.9rem;
-		background: rgba(122, 74, 43, 0.06);
-		border-left: 3px solid var(--couleur-accent);
-		border-radius: var(--rayon-s);
-		font-family: var(--police-ui);
+		margin: var(--espace-4) 0 0;
+		border-left: 2px solid var(--couleur-accent);
+		padding-left: var(--espace-3);
+		font-style: italic;
 		font-size: var(--taille-s);
+		color: var(--couleur-encre-douce);
 	}
 
-	/* Sommaire : repères de lecture, pas un tableau de bord. */
+	/* Deux zones : rail de sommaire (collant sur ordinateur) + contenu. */
+	.grille {
+		display: grid;
+		grid-template-columns: 15rem 1fr;
+		gap: var(--espace-6);
+		margin-top: var(--espace-6);
+		align-items: start;
+	}
+
+	/* Sommaire : repères de lecture, pas un tableau de bord. Collant sur ordinateur. */
 	.sommaire {
-		margin: var(--espace-5) 0 var(--espace-6);
-		padding-bottom: var(--espace-3);
-		border-bottom: var(--filet);
+		position: sticky;
+		top: var(--espace-5);
 	}
 
-	.sommaire ul {
+	.sommaire ol {
 		list-style: none;
 		margin: 0;
 		padding: 0;
-		display: flex;
-		flex-wrap: wrap;
-		gap: var(--espace-2) var(--espace-4);
 		font-family: var(--police-ui);
 		font-size: var(--taille-s);
+		border-left: var(--filet);
+	}
+
+	.sommaire li + li {
+		margin-top: var(--espace-2);
 	}
 
 	.sommaire a {
+		display: flex;
+		gap: 0.6rem;
+		align-items: baseline;
 		color: var(--couleur-encre-douce);
 		text-decoration: none;
-		border-bottom: 1px solid var(--couleur-trait);
-		padding-bottom: 1px;
+		padding-left: var(--espace-3);
+		margin-left: -1px;
+		border-left: 2px solid transparent;
 	}
 
 	.sommaire a:hover {
-		color: var(--couleur-accent);
-		border-bottom-color: var(--couleur-accent);
+		color: var(--couleur-encre);
+		border-left-color: var(--couleur-accent);
+	}
+
+	.sommaire .num {
+		font-variant-numeric: tabular-nums;
+		color: var(--couleur-encre-douce);
+	}
+
+	.contenu {
+		max-width: 46rem;
+		min-width: 0;
 	}
 
 	section {
-		max-width: 44rem;
 		margin-bottom: var(--espace-6);
+	}
+
+	section:last-child {
+		margin-bottom: 0;
 	}
 
 	section h2 {
@@ -238,6 +280,29 @@
 
 	section p {
 		line-height: 1.7;
+	}
+
+	@media (max-width: 760px) {
+		.grille {
+			grid-template-columns: 1fr;
+			gap: var(--espace-4);
+		}
+		.sommaire {
+			position: static;
+		}
+		.sommaire ol {
+			display: flex;
+			flex-wrap: wrap;
+			gap: var(--espace-2) var(--espace-4);
+			border-left: none;
+		}
+		.sommaire li + li {
+			margin-top: 0;
+		}
+		.sommaire a {
+			padding-left: 0;
+			border-left: none;
+		}
 	}
 
 	strong {
