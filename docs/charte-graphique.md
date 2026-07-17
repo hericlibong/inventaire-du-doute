@@ -114,7 +114,11 @@ pas un catalogue abstrait. Chaque primitive reste agnostique du dossier.
 - **TroisTerritoires** — **primitive conceptuelle centrale** : ligne de proximité
   en 3 zones (au plus près / autour / dans son influence), fonds légers, familles
   chromatiques, annotations, volumes. Cadre commun au nuage, à la légende, à la
-  Vue d'ensemble, aux futures cartes d'œuvres.
+  Vue d'ensemble, aux futures cartes d'œuvres. **Fait le 2026-07-17 (bis)** : primitive
+  de données `territoires.js` (regroupement + annotations) + intégration dans le nuage
+  (bandes, séparateurs, titres) + clé de lecture. Réutilisable par « Comprendre les
+  mentions ». Une éventuelle extraction en composant SVG partagé reste ouverte (pas
+  nécessaire tant que seul le nuage la rend — decisions.md 2026-07-17 bis).
 - **Barre** — unifie `BarreFamilles` + `BarreNiveaux` (+ variante microprofil).
 - **Legende** — `LegendeFamilles` généralisée (pastille + label + nombres) ;
   contextuelle dans le profil, autonome dans « Comprendre les mentions ».
@@ -139,9 +143,9 @@ placard : `GalaxieMaitre` (abandonné).
   TroisTerritoires), ni à l'accueil. Deux points ouverts à l'arbitrage :
   synthèse calculée réintroduite (factuelle) et plafond de `fractionEnMots`
   (voir decisions.md 2026-07-16 quinquies).
-- Zone Répertoire **(faite le 2026-07-17)** · Zone TroisTerritoires · Zone
-  « Comprendre les mentions » · Zone Accueil-couverture (figure Joconde) · Zone
-  Méthode — **après** le prototype, une par une.
+- Zone Répertoire **(faite le 2026-07-17)** · Zone TroisTerritoires **(faite le
+  2026-07-17 bis)** · Zone « Comprendre les mentions » · Zone Accueil-couverture
+  (figure Joconde) · Zone Méthode — **après** le prototype, une par une.
 
 ## 6. Application prioritaire à « Les presque »
 

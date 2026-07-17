@@ -47,6 +47,16 @@
 	   discret sur le fond crème et distinct des pigments du doute. */
 	--carte-point: var(--couleur-accent);
 
+	/* Trois territoires de la « distance à la main du maître » (architecture-
+	   editoriale.md §5) : fonds TRÈS légers derrière les groupes de mentions, sur le
+	   graphe et dans « Comprendre les mentions ». Température = distance : lavis chaud
+	   (au plus près) → ocre (autour) → froid (dans son influence). Dérivés des
+	   pigments repères de chaque zone (attribué / atelier / manière), à opacité basse
+	   pour ne jamais concurrencer les points. */
+	--territoire-pres: rgba(158, 43, 18, 0.05);       /* d'après --forme-attribue */
+	--territoire-autour: rgba(179, 130, 29, 0.05);    /* d'après --forme-atelier */
+	--territoire-influence: rgba(123, 95, 181, 0.06); /* d'après --forme-maniere */
+
 	/* Catégories voisines (jamais additionnées au doute). La copie « d'après » est
 	   NEUTRE (gris), hors de la gamme colorée du doute : une copie assumée n'est
 	   pas un doute, sa couleur le dit autant que le texte. */

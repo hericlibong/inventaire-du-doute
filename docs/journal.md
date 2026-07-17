@@ -2,6 +2,34 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-17 (bis) — Charte palier 3 : zone TroisTerritoires sur l'onglet Profil (fait)
+
+Le principe éditorial central — la distance à la main du maître — devient **visible
+dans le graphique** (architecture §5). Les 8 mentions, déjà ordonnées par distance,
+se regroupent en **trois territoires contigus** : *Au plus près* (attribué à, nom ?) ·
+*Autour du maître* (atelier, cercle, école) · *Dans son influence* (suiveur, manière,
+goût). Correspondance exacte avec `ORDRE_FAMILLES` (plages 0-1 / 2-4 / 5-7).
+
+- **Primitive `territoires.js`** : source unique du regroupement + titre + annotation
+  courte par zone, réutilisable par la future rubrique « Comprendre les mentions ».
+  Ne redéfinit aucun libellé (labels/couleurs restent dans `familles-public.js`) ;
+  garde-fou dev qui vérifie l'alignement sur `ORDRE_FAMILLES`.
+- **`NuageFamilles`** recadré **sans toucher aux données, points, couleurs, tooltips** :
+  fonds très légers par zone (nouveaux tokens `--territoire-*`, température = distance),
+  séparateurs fins, titres de territoire en tête. Bandes contiguës, sans cadre → **une
+  seule ligne de proximité**, pas trois blocs.
+- **Clé de lecture rétablie** sous le graphe (la légende détaillée a quitté le
+  répertoire) : intro « de gauche à droite, le lien se desserre » + trois cellules
+  contiguës (titre, annotation, mentions à pastilles). Les **annotations vivent dans
+  la clé HTML** (le SVG ne sait pas revenir à la ligne → illisible en mobile).
+
+Vérifié par capture sur trois profils opposés : Ingres (dominante *attribué à*, gros
+point à gauche), Le Brun (*école*, au centre), Rembrandt (*manière*, à droite) — le
+volume principal change de territoire selon le maître. Mobile : répertoire replié,
+graphe lisible, clé empilée en trois blocs. `build` OK. Détail : decisions.md
+2026-07-17 (bis). Reste (zones suivantes) : « Comprendre les mentions » (réutilisera
+`territoires.js`), Accueil-couverture, Méthode.
+
 ## 2026-07-17 — Charte palier 3 : zone Répertoire (fait)
 
 Deuxième zone du kit (après le prototype bandeau) : la colonne de gauche d'« Explorer

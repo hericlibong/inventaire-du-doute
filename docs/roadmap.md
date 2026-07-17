@@ -68,8 +68,11 @@ comme historique ; ce bloc est le cap qui prime.*
                   tri Œuvres/A→Z, microprofils, sélection active à filet d'accent,
                   repliable en mobile ; légende détaillée retirée (→ « Comprendre les
                   mentions »).
-            - [ ] Zones suivantes une par une : TroisTerritoires · « Comprendre les
-                  mentions » · Accueil-couverture · Méthode.
+            - [x] **Zone TroisTerritoires** (2026-07-17 bis) — `territoires.js`
+                  (primitive) + nuage recadré (bandes de fond, séparateurs, titres) +
+                  clé de lecture rétablie. Données/points/couleurs/tooltips inchangés.
+            - [ ] Zones suivantes une par une : « Comprendre les mentions »
+                  (réutilise `territoires.js`) · Accueil-couverture · Méthode.
 
 ### 2. En réserve (conservé, hors V1 publique)
 - [~] **Avant / après** (`/revisions`) — construit (onglets, anneau, prototype

@@ -2,6 +2,43 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-17 (bis) — Charte palier 3 : zone TroisTerritoires (principe visuel central)
+
+Rendre lisible, dans le graphique lui-même, la **distance à la main du maître**
+(architecture §5). Choix consignés :
+
+1. **Regroupement, pas nouvelle nomenclature.** Les huit mentions restent celles de
+   `familles-public.js` (labels + couleurs, source unique) ; on ne fait que les
+   **grouper** en trois territoires, dans une primitive dédiée `territoires.js`
+   (titre + annotation courte par zone). Réutilisable telle quelle par « Comprendre
+   les mentions ». L'ordre de l'axe (`ORDRE_FAMILLES`) fait déjà correspondre chaque
+   territoire à une plage contiguë de colonnes (0-1 / 2-4 / 5-7) ; un garde-fou en
+   dev signale toute dérive entre les deux modules.
+
+2. **Une seule ligne de proximité, pas trois cartes.** Les territoires sont matérialisés
+   par des **fonds très légers contigus** (tokens `--territoire-pres/autour/influence`,
+   dérivés des pigments repères, température = distance), des **séparateurs fins** aux
+   frontières internes, et des **titres** en tête. Aucun cadre ni marge entre les zones :
+   le graphe reste un continuum gauche → droite. À éviter explicitement (architecture §8) :
+   l'effet « trois blocs décoratifs indépendants ».
+
+3. **Annotations éditoriales dans la clé HTML, pas dans le SVG.** Le texte SVG ne revient
+   pas à la ligne : une annotation par territoire y serait illisible en mobile. Les
+   annotations vivent donc dans la **clé de lecture** sous le graphe, qui **rétablit du
+   même coup la clé minimale** que la sortie de la légende du répertoire (2026-07-17)
+   avait retirée. La clé reprend les trois territoires (titre, annotation, mentions à
+   pastilles), en cellules contiguës qui rejouent les bandes du graphe.
+
+4. **Données, points, couleurs, tooltips inchangés.** Recadrage purement visuel : la
+   géométrie a été ajustée (bandeau de titres en tête, plot descendu) mais l'échelle
+   commune, les positions et l'infobulle harmonisée sont intactes. Accessibilité :
+   `aria-label` du graphe enrichi (les trois territoires), `aria-label` des points
+   conservé.
+
+Nouveaux fichiers : `web/src/lib/territoires.js` ; tokens `--territoire-*` dans
+`tokens.css`. Vérifié sur trois profils opposés (Ingres/Le Brun/Rembrandt : le volume
+principal tombe dans un territoire différent) et en mobile.
+
 ## 2026-07-17 — Charte palier 3 : zone Répertoire (colonne de navigation)
 
 Deuxième zone du kit. Choix consignés :
