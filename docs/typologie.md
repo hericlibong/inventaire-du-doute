@@ -13,8 +13,8 @@ dans les tableaux d'origine sont conservés pour l'historique.
 | 2 · « Autour de lui » | école 1 871 · atelier (beaux-arts) 1 236 · entourage 503 · suiveur 80 | ~3 700 |
 | 3 · « Son style, sans lui » | manière 703 · genre 303 | ~1 000 |
 | **Doute total (union)** | | **24 507** (2,39 % base / 2,91 % avec auteur) |
-| Hors échelle : copie | d'après 22 564 · copie 280 | 22 844 |
-| Hors échelle : révision | champ ATTR 27 266 · formule 7 | 27 273 |
+| Hors échelle : copie | d'après 22 564 · copie 280 (recouvrement) | **22 624** |
+| Hors échelle : révision | champ ATTR 27 266 · formule 7 (recouvrement) | **27 270** |
 | Hors échelle : écarté | Atelier de X 1 123 · atelier hors beaux-arts 523 · écoles-lieux 222 | 1 868 |
 
 Venn v2 : 66 420 notices portent au moins un marqueur (6,49 %) ;
@@ -67,8 +67,8 @@ inconnu et n'a probablement jamais approché le maître.
 ≈ 1 000 notices. Le doute maximal — il ne reste que le style.
 
 ### Hors échelle (racontés à part, jamais additionnés — règles P2-T1)
-- **copie** (« d'après », 22 844) : pas un doute, un statut assumé ;
-- **révision** (27 273) : le doute d'hier, tranché — dont 4 724 notices qui
+- **copie** (« d'après » 22 564 ; 22 624 copies au total) : pas un doute, un statut assumé ;
+- **révision** (27 270) : le doute d'hier, tranché — dont 4 724 notices qui
   cumulent doute actuel et révision passée ;
 - **écarté** (« Atelier de X » en nom, 1 123) : la preuve de rigueur.
 

@@ -2,6 +2,43 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-17 (quater) — Socle V1 bouclé : page Méthode + Accueil-couverture + nav à 4 entrées (fait)
+
+Fin des deux zones restantes du socle éditorial V1.
+
+**Page Méthode** (`/methode`, placeholder activé) : page unique et structurée qui
+rassemble les limites dispersées. Cinq sections nettes — Périmètre · Construction des
+données · Lire les chiffres · Limites · Sources et droits — avec un sommaire d'ancres.
+Tous les chiffres viennent des exports (aucun saisi à la main) : `niveaux.json`,
+`provenance.json`, `vue_ensemble.json`, `artistes.json`. Couvre les 13 points demandés
+(Joconde, formulation prudente, détection lexicale + vérification 206 notices, critère
+des 27 = seuil pas palmarès, recouvrements, copies à part, Nice/Barla + hors monoculture,
+versements incomplets, pièges d'identification par les noms + corrections, constater vs
+conclure, images/droits, version des données). Éditoriale, pas de FAQ ni de cartes.
+
+**Correction de données.** Divergence trouvée et résolue : `typologie.md` affichait la
+catégorie copie à **22 844** (somme naïve `d'après 22 564 + copie 280`, qui double-compte
+les recouvrements) alors que la source canonique (`niveaux.json` `copie`, `vue_ensemble`
+`copies_dapres.total`) donne **22 624** ; même correction pour révision (27 273 → **27 270**).
+Interface (Méthode, Comprendre les mentions) et docs reprennent désormais la valeur
+canonique : « d'après » = 22 564, copies au total = 22 624.
+
+**Accueil-couverture** : l'accueil devient une couverture éditoriale à deux zones —
+promesse à gauche (kicker, titre, sujet en une phrase, CTA « Explorer les 27 maîtres »,
+lien « Comprendre les mentions »), **figure de données** à droite (structure média
+ASSUMÉE et remplaçable : motif schématique d'index + les 8 pigments des mentions, pas
+Léonard ni le tableau, légende « composition provisoire »). Le chiffre **24 507** passe
+en **preuve secondaire** sous la couverture, avec renvoi à la Méthode ; le cas mono-musée
+quitte l'accueil (trop technique → Méthode). Hiérarchie forte titre → promesse → figure
+→ exploration → preuve chiffrée.
+
+**Nav publique recentrée à 4 entrées actives** : Accueil · Explorer les maîtres ·
+Comprendre les mentions · Méthode. « Les révisions » et « La carte » **retirées de la nav
+publique** (code et données conservés au dépôt, routes non liées). `build` OK, vérifié
+desktop + mobile, a11y (titres sémantiques, focus visibles, ancres). Détail : decisions.md
+2026-07-17 (quater). **Fin du développement par petites zones** : prochaine étape = revue
+globale de direction artistique et d'architecture visuelle (captures + compositions).
+
 ## 2026-07-17 (ter) — Zone « Comprendre les mentions » (page autonome, fait)
 
 Chapitre autonome sur le vocabulaire muséal de la prudence (architecture §3), qui

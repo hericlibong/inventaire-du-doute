@@ -24,9 +24,9 @@ comme historique ; ce bloc est le cap qui prime.*
 > items ci-dessous restent la liste des briques ; l'architecture dit comment elles
 > se regroupent et se hiérarchisent.
 
-- [ ] **Accueil / introduction** du dossier « Les presque » (expliquer « presque
-      attribué », combien d'œuvres et de noms, comment lire les formules) — à
-      repenser en **couverture éditoriale** (architecture-editoriale.md §3)
+- [x] **Accueil / introduction** (2026-07-17 quater) — refondu en **couverture
+      éditoriale** (architecture §3) : deux zones (promesse + figure de données
+      provisoire), chiffre 24 507 en preuve secondaire, renvoi Méthode
 - [x] **Vue d'ensemble des formulations prudentes** (2026-07-17 ter) — intégrée à
       « Comprendre les mentions » : deux panneaux de **barres** à échelle commune
       (Ensemble 24 507 vs 27 noms 2 341), `BarresMentions.svelte`, contraste
@@ -37,7 +37,9 @@ comme historique ; ce bloc est le cap qui prime.*
       « Comprendre les mentions » (route `/echelle`) : trois territoires + huit
       mentions définies + vue d'ensemble ; réutilise `territoires.js` et
       `familles-public.js`
-- [ ] **Méthode et limites** (page dédiée)
+- [x] **Méthode et limites** (2026-07-17 quater) — page dédiée `/methode`, 5 sections
+      (Périmètre · Construction des données · Lire les chiffres · Limites · Sources et
+      droits) ; chiffres lus depuis les exports ; divergence copies corrigée (22 624)
 - [ ] **Travail image / droits** (statuts open/authorized/pending/restricted ;
       voie Wikimedia fichier par fichier, comme les 27 portraits)
 - [~] **Charte graphique et refonte front** (identité visuelle propre — le socle
@@ -78,10 +80,16 @@ comme historique ; ce bloc est le cap qui prime.*
                   autonome (route `/echelle`, libellé public provisoire), 4 parties,
                   `BarresMentions.svelte` ; réutilise `territoires.js` +
                   `familles-public.js`.
-            - [ ] Zones suivantes une par une : Accueil-couverture · Méthode.
-            - [ ] **Recentrage complet de la nav** à 4 entrées (retirer Révisions/Carte
-                  de la nav publique, « Les presque » → « Explorer les maîtres ») —
-                  amorcé (entrée « Comprendre les mentions » activée), à finir.
+            - [x] **Zone Accueil-couverture** (2026-07-17 quater) — deux zones,
+                  figure de données provisoire, chiffre en preuve secondaire.
+            - [x] **Zone Méthode** (2026-07-17 quater) — page `/methode`, 5 sections.
+            - [x] **Recentrage complet de la nav** (2026-07-17 quater) — 4 entrées
+                  actives (Accueil · Explorer les maîtres · Comprendre les mentions ·
+                  Méthode) ; Révisions/Carte retirées de la nav publique (code conservé).
+
+  **Socle V1 bouclé.** Prochaine étape (hors « petites zones ») : **revue globale de
+  direction artistique et d'architecture visuelle** — captures de toutes les pages
+  principales + propositions de compositions complètes à l'échelle de l'application.
 
 ### 2. En réserve (conservé, hors V1 publique)
 - [~] **Avant / après** (`/revisions`) — construit (onglets, anneau, prototype

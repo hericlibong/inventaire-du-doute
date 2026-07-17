@@ -2,6 +2,45 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-17 (quater) — Socle V1 : Méthode, Accueil-couverture, nav à 4 entrées
+
+Clôture du socle éditorial V1. Décisions :
+
+1. **Page Méthode = une page unique, éditoriale.** Cinq sections (Périmètre ·
+   Construction des données · Lire les chiffres · Limites · Sources et droits) plutôt
+   qu'une FAQ ou une suite de cartes. Tous les chiffres sont **lus depuis les exports
+   canoniques** (jamais réécrits) : la page devient fausse si le pipeline change, mais
+   jamais incohérente avec lui.
+
+2. **Correction d'une divergence de données (source canonique qui fait foi).** La
+   catégorie « copie » était affichée à 22 844 dans `typologie.md` (somme naïve
+   `d'après 22 564 + copie 280`, qui ignore le recouvrement de 220 notices). La valeur
+   canonique dédupliquée est **22 624** (`niveaux.json` `copie`, `vue_ensemble`
+   `copies_dapres.total`). Corrigé dans `typologie.md` (+ révision 27 273 → **27 270**,
+   même cause). Règle retenue : **l'interface et les docs reprennent la valeur de
+   l'export**, pas une somme recalculée à la main. « d'après » seul reste 22 564.
+
+3. **Accueil = couverture éditoriale, le chiffre en preuve secondaire.** Deux zones
+   (promesse / figure). Le grand nombre (24 507) quitte le premier plan : il devient une
+   preuve sous la couverture, avec renvoi à la Méthode. Le cas mono-musée (Nice/Barla)
+   sort de l'accueil (trop technique) → Méthode uniquement (architecture §3).
+
+4. **Figure « Joconde » = figure de DONNÉES, provisoire et assumée.** Zone média
+   remplaçable : un motif schématique (rangées de « notices » + les 8 pigments des
+   mentions le long d'une ligne de proximité), pas une reproduction de *La Joconde* ni un
+   chapitre Léonard (architecture §6). Aucun visuel définitif imposé : la légende dit
+   « composition provisoire ». La direction artistique tranchera à la revue globale.
+
+5. **Nav publique recentrée à 4 entrées actives** : Accueil · Explorer les maîtres
+   (route `/les-presque`) · Comprendre les mentions (`/echelle`) · Méthode (`/methode`).
+   « Les révisions » et « La carte » **retirées de la nav publique** ; leur code et leurs
+   données restent au dépôt (routes non liées, réintégrables). Fin des entrées grisées
+   « à venir » (le champ `prete` et la branche sont conservés pour plus tard).
+
+Nouveaux fichiers : `web/src/routes/methode/+page.{js,svelte}`, accueil refondu
+(`web/src/routes/+page.svelte`). Ces deux pages **terminent le socle**, elles ne sont pas
+l'aboutissement de la direction artistique.
+
 ## 2026-07-17 (ter) — Zone « Comprendre les mentions » (page autonome du vocabulaire)
 
 Création du chapitre autonome prévu par l'architecture §3. Choix consignés :

@@ -10,16 +10,17 @@
 	const estActif = (href) =>
 		href === '/' ? $page.url.pathname === '/' : $page.url.pathname.startsWith(href);
 
-	// Coquille de navigation : une brique = une route. Seule l'accueil existe
-	// au stade du socle ; les autres sont affichées « à venir » pour montrer
-	// la structure éditoriale sans casser le pré-rendu (pas de lien mort).
+	// Navigation publique recentrée à QUATRE entrées actives (architecture-
+	// editoriale.md §2). Les rubriques en réserve (Les révisions, La carte) ne
+	// figurent plus ici : leur code et leurs données restent au dépôt, mais elles
+	// sont sorties de la nav publique tant qu'elles ne sont pas intégrées à la
+	// publication recentrée. Le champ `prete` (et la branche « à venir ») est
+	// conservé pour de futures entrées.
 	const briques = [
 		{ titre: 'Accueil', href: '/', prete: true },
-		{ titre: 'Les presque', href: '/les-presque', prete: true },
+		{ titre: 'Explorer les maîtres', href: '/les-presque', prete: true },
 		{ titre: 'Comprendre les mentions', href: '/echelle', prete: true },
-		{ titre: 'Les révisions', href: '/revisions', prete: false },
-		{ titre: 'La carte', href: '/carte', prete: false },
-		{ titre: 'Méthode et limites', href: '/methode', prete: false }
+		{ titre: 'Méthode', href: '/methode', prete: true }
 	];
 </script>
 
