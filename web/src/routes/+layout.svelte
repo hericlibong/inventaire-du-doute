@@ -66,6 +66,7 @@
 	{@render children()}
 </main>
 
+{#if !estAccueil}
 <footer>
 	<p>
 		Source unique : base Joconde (Ministère de la Culture), Licence Ouverte 2.0.
@@ -73,6 +74,7 @@
 		eux-mêmes publié.
 	</p>
 </footer>
+{/if}
 
 <style>
 	:global(body) {

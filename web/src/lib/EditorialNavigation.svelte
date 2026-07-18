@@ -1,17 +1,20 @@
 <script>
-	// Navigation éditoriale de la couverture d'accueil : les quatre entrées comme des
-	// annotations inscrites sur la « fiche » claire de l'illustration, reliées à ses
-	// lignes horizontales. Pas de boutons, pas de cartes, pas de barre. Charbon sur la
-	// fiche claire (contraste natif, sans panneau ni voile). Interactions sobres
-	// (déplacement ≤ 4 px, prolongement de la ligne, contraste) et accessibles.
+	// Navigation de la couverture d'accueil (révision 2026-07-18) : des CARTOUCHES
+	// éditoriaux intégrés à la fiche claire — rectangles sombres (bleu-encre), texte
+	// ivoire, angles quasi droits, largeur adaptée au texte, légèrement décalés. Pas
+	// de boutons arrondis, pas d'ombre, pas d'icône. « Explorer les maîtres » = entrée
+	// principale (plus large, plus lourde, accent cobalt, cible généreuse). Routes
+	// réelles (dont /echelle = « Comprendre les mentions »).
 	import { page } from '$app/stores';
 
-	// Routes réelles du projet (dont /echelle = « Comprendre les mentions »).
+	// `decal` = décalage horizontal irrégulier (les liens n'ont ni la même largeur ni
+	// un alignement de menu classique). Ils semblent appartenir aux rectangles de
+	// l'illustration.
 	const liens = [
-		{ href: '/', label: 'Accueil' },
-		{ href: '/les-presque', label: 'Explorer les maîtres', principal: true },
-		{ href: '/echelle', label: 'Comprendre les mentions' },
-		{ href: '/methode', label: 'Méthode' }
+		{ href: '/', label: 'Accueil', decal: '2rem' },
+		{ href: '/les-presque', label: 'Explorer les maîtres', principal: true, decal: '0rem' },
+		{ href: '/echelle', label: 'Comprendre les mentions', decal: '2.8rem' },
+		{ href: '/methode', label: 'Méthode', decal: '1.1rem' }
 	];
 
 	const courant = (href) =>
@@ -21,14 +24,14 @@
 <nav class="ednav" aria-label="Navigation principale">
 	<ul>
 		{#each liens as l (l.href)}
-			<li>
+			<li style="--decal: {l.decal}">
 				<a
 					href={l.href}
 					class:principal={l.principal}
 					aria-current={courant(l.href) ? 'page' : undefined}
 				>
-					<span class="ligne" aria-hidden="true"></span>
-					<span class="txt">{l.label}</span>
+					<span class="trait" aria-hidden="true"></span>
+					<span class="cartouche">{l.label}</span>
 				</a>
 			</li>
 		{/each}
@@ -42,82 +45,89 @@
 		padding: 0;
 		display: flex;
 		flex-direction: column;
-		gap: clamp(0.7rem, 2.2vh, 1.5rem);
+		gap: clamp(0.5rem, 1.6vh, 0.95rem);
+	}
+
+	li {
+		margin-left: var(--decal);
 	}
 
 	a {
-		display: flex;
+		display: inline-flex;
 		align-items: center;
-		gap: 0.7rem;
+		gap: 0.55rem;
 		text-decoration: none;
-		font-family: var(--police-ui);
-		font-size: clamp(0.95rem, 1.3vw, 1.15rem);
-		letter-spacing: 0.01em;
-		/* Charbon sur la fiche claire — contraste natif, pas de panneau. */
-		color: #2b2621;
 		width: fit-content;
 	}
 
-	/* Ligne-annotation : rappelle les lignes horizontales de la fiche. Elle se
-	   prolonge au survol/focus (repère non chromatique de l'état actif). */
-	.ligne {
+	/* Trait fin prolongeant les lignes de la fiche (sur le fond clair). */
+	.trait {
 		display: block;
-		width: 1.6rem;
-		height: 2px;
-		background: currentColor;
-		opacity: 0.55;
-		transition: width 180ms ease, opacity 180ms ease;
+		width: 1.4rem;
+		height: 1px;
+		background: rgba(38, 32, 24, 0.5);
+		transition: width 180ms ease;
 	}
 
-	.txt {
-		transition: transform 180ms ease, color 180ms ease;
+	/* Cartouche : rectangle bleu-encre, texte ivoire, angles quasi droits. */
+	.cartouche {
+		display: block;
+		background: #24303d;
+		color: #efe9db;
+		font-family: var(--police-ui);
+		font-weight: 600;
+		font-size: clamp(0.9rem, 1.15vw, 1.02rem);
+		letter-spacing: 0.01em;
+		padding: 0.5rem 0.85rem;
+		border-radius: 1px;
+		transition: background 180ms ease, transform 180ms ease;
 	}
 
-	/* Entrée principale : poids légèrement supérieur, ligne un peu plus longue. */
-	a.principal {
+	/* Entrée principale : plus large, plus lourde, fond cobalt discret, cible généreuse. */
+	a.principal .cartouche {
+		background: #2d4d78;
 		font-weight: 700;
-		font-size: clamp(1.05rem, 1.5vw, 1.35rem);
+		font-size: clamp(1rem, 1.4vw, 1.22rem);
+		padding: 0.64rem 1.1rem;
 	}
 
-	a.principal .ligne {
-		width: 2.2rem;
-		opacity: 0.75;
+	/* Page courante (Accueil) : repère sobre, non uniquement chromatique. */
+	a[aria-current='page'] .trait {
+		width: 1.9rem;
+		background: #9e2b12;
+	}
+	a[aria-current='page'] .cartouche {
+		box-shadow: inset 0 0 0 1px rgba(239, 233, 219, 0.45);
 	}
 
-	/* Page courante (Accueil) : ligne pleine, marquée sans dépendre de la couleur. */
-	a[aria-current='page'] .ligne {
-		opacity: 1;
+	/* Survol / focus : léger déplacement, prolongement du trait, fond un peu plus clair. */
+	a:hover .cartouche,
+	a:focus-visible .cartouche {
+		transform: translateX(5px);
+		background: #2f3f52;
 	}
-
-	a[aria-current='page'] .txt {
-		font-weight: 700;
+	a.principal:hover .cartouche,
+	a.principal:focus-visible .cartouche {
+		background: #35578a;
 	}
-
-	a:hover .ligne,
-	a:focus-visible .ligne {
-		width: 3rem;
-		opacity: 1;
-	}
-
-	a:hover .txt,
-	a:focus-visible .txt {
-		transform: translateX(4px);
-		color: #000;
+	a:hover .trait,
+	a:focus-visible .trait {
+		width: 2.3rem;
 	}
 
 	a:focus-visible {
-		outline: 2px solid #1a3a5a;
-		outline-offset: 4px;
+		outline: 2px solid #efe9db;
+		outline-offset: 3px;
 		border-radius: 2px;
 	}
 
 	@media (prefers-reduced-motion: reduce) {
-		.ligne,
-		.txt {
+		.trait,
+		.cartouche {
 			transition: none;
 		}
-		a:hover .txt,
-		a:focus-visible .txt {
+		a:hover .cartouche,
+		a:focus-visible .cartouche {
 			transform: none;
 		}
 	}

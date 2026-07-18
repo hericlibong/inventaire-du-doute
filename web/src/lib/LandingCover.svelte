@@ -24,12 +24,17 @@
 		/>
 	</picture>
 
-	<!-- Titre + accroche + source, dans l'aplat sombre (haut-gauche). Texte clair
-	     légèrement froid — contraste natif sur le bleu sombre. -->
+	<!-- Titre + accroche à trois étages, dans l'aplat sombre (haut-gauche). Contraste
+	     natif sur le bleu sombre. Accroche PROVISOIRE (stabilise la composition, pas un
+	     texte éditorial définitif) : échelle, sujet, approche — sans aucun chiffre précis. -->
 	<div class="titre">
 		<h1>L'inventaire<br />du doute</h1>
-		<p class="accroche">Les mots employés par les musées lorsqu'un nom ne suffit pas.</p>
-		<p class="source">Une exploration de la base Joconde du ministère de la Culture.</p>
+		<div class="phrases">
+			<p class="e1">Un million de notices.</p>
+			<p class="e2">Des milliers d'attributions incertaines.</p>
+			<p class="e3">Une enquête dans les données des musées.</p>
+		</div>
+		<p class="source">À partir de la base Joconde.</p>
 	</div>
 
 	<!-- Navigation sur la fiche claire (droite sur ordinateur, moitié basse sur mobile). -->
@@ -68,6 +73,7 @@
 		left: 4%;
 		max-width: 34%;
 		color: #e9edf1; /* clair légèrement froid */
+		isolation: isolate; /* contexte d'empilement pour le voile local (mobile) */
 	}
 
 	.titre h1 {
@@ -79,21 +85,43 @@
 		margin: 0;
 	}
 
-	.accroche {
-		margin: 1.1rem 0 0;
+	/* Trois étages : Spectral ivoire franc, présence réelle sans concurrencer le titre,
+	   progression légère (taille + tonalité), rythme compact d'affiche. */
+	.phrases {
+		margin: 1.2rem 0 0;
 		font-family: var(--police-texte);
-		font-size: clamp(0.95rem, 1.4vw, 1.2rem);
-		line-height: 1.4;
-		max-width: 22ch;
-		color: #d6dde4;
+		max-width: 20ch;
+	}
+
+	.phrases p {
+		margin: 0;
+		line-height: 1.28;
+	}
+
+	.e1 {
+		font-size: clamp(1.1rem, 1.6vw, 1.45rem);
+		font-weight: 600;
+		color: #f4eee0;
+	}
+
+	.e2 {
+		margin-top: 0.35rem;
+		font-size: clamp(1rem, 1.35vw, 1.2rem);
+		color: #ece4d2;
+	}
+
+	.e3 {
+		margin-top: 0.3rem;
+		font-size: clamp(1rem, 1.35vw, 1.2rem);
+		color: #d8cfbd;
 	}
 
 	.source {
-		margin: 1.4rem 0 0;
+		margin: 1.3rem 0 0;
 		font-family: var(--police-ui);
-		font-size: clamp(0.7rem, 0.9vw, 0.82rem);
-		letter-spacing: 0.02em;
-		color: #aeb8c2;
+		font-size: clamp(0.68rem, 0.85vw, 0.78rem);
+		letter-spacing: 0.03em;
+		color: #9fa9b3;
 	}
 
 	/* --- Navigation (fiche claire, à droite sur ordinateur) --- */
@@ -111,18 +139,75 @@
 			left: 6%;
 			max-width: 66%;
 		}
+		/* Correction de contraste LOCALE et légère derrière le bloc titre (le bitmap
+		   est réduit sur petit écran, l'aplat sombre ne descend pas assez). Dégradé
+		   feutré en haut/bas (mask), fondu à droite : pas un voile sur l'image. */
+		.titre::before {
+			content: '';
+			position: absolute;
+			z-index: -1;
+			inset: -0.6rem -2.6rem -1rem -1.6rem;
+			pointer-events: none;
+			background: linear-gradient(
+				100deg,
+				rgba(17, 25, 35, 0.72),
+				rgba(17, 25, 35, 0.42) 50%,
+				rgba(17, 25, 35, 0) 82%
+			);
+			-webkit-mask-image: linear-gradient(to bottom, transparent, #000 14%, #000 84%, transparent);
+			mask-image: linear-gradient(to bottom, transparent, #000 14%, #000 84%, transparent);
+		}
 		.titre h1 {
 			font-size: clamp(2.4rem, 12vw, 3.6rem);
 		}
-		.accroche {
-			font-size: 0.95rem;
-			max-width: 20ch;
+		/* Étages plus compacts sur mobile (réduire taille/espacement avant d'en retirer). */
+		.phrases {
+			margin-top: 0.9rem;
+			max-width: 24ch;
+		}
+		.e1 {
+			font-size: 1.12rem;
+		}
+		.e2,
+		.e3 {
+			font-size: 1rem;
+		}
+		.source {
+			margin-top: 1rem;
 		}
 		.nav-zone {
 			top: auto;
 			right: auto;
 			bottom: 9%;
 			left: 30%;
+		}
+	}
+
+	/* Téléphone étroit / court : compresser titre + étages pour qu'ils tiennent dans
+	   l'aplat sombre (le bitmap est réduit, le texte HTML ne l'est pas). */
+	@media (max-width: 400px) {
+		.titre h1 {
+			font-size: 1.95rem;
+		}
+		.phrases {
+			margin-top: 0.65rem;
+			max-width: 22ch;
+		}
+		.e1 {
+			font-size: 1rem;
+		}
+		.e2,
+		.e3 {
+			font-size: 0.9rem;
+		}
+		.e2 {
+			margin-top: 0.25rem;
+		}
+		.e3 {
+			margin-top: 0.2rem;
+		}
+		.source {
+			margin-top: 0.7rem;
 		}
 	}
 </style>

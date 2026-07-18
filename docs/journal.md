@@ -2,6 +2,38 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-18 — Accueil : révision de l'affiche (un seul écran, accroche 3 étages, nav en cartouches)
+
+Le prototype d'affiche va dans la bonne direction ; on garde l'image, le plein écran et
+le principe, mais on précise l'accueil comme **pure entrée** dans l'application (ni stats,
+ni méthode). **Accueil seulement** ; pages intérieures inchangées (Direction B).
+
+- **Un seul écran** : suppression de tout ce qui suivait la couverture (bloc 24 507, %,
+  lien « Comment ces chiffres… », source développée). `+page.js` ne charge plus de données.
+  **Pied de page masqué sur `/` uniquement** (conservé ailleurs). Pas de défilement sur
+  ordinateur. Les chiffres → « Comprendre les mentions » ; calcul/sources → « Méthode ».
+- **Accroche remplacée** (provisoire, formulation imposée) en **trois étages** : « Un
+  million de notices. / Des milliers d'attributions incertaines. / Une enquête dans les
+  données des musées. », Spectral ivoire, progression légère (taille + tonalité), rythme
+  d'affiche ; plus une mention très discrète « À partir de la base Joconde. ». Aucun autre
+  paragraphe. Titre Fraunces inchangé.
+- **Navigation en cartouches** (`EditorialNavigation` réécrit) : rectangles bleu-encre,
+  texte ivoire, angles quasi droits, largeurs propres, décalés horizontalement, reliés par
+  un trait fin ; ni boutons, ni cartes, ni menu, ni ombre, ni icône. « Explorer les
+  maîtres » = entrée principale (plus large, plus lourde, fond cobalt, cible généreuse).
+  Public Sans affirmé. Accueil marqué d'un trait vermillon (repère non uniquement
+  chromatique). Survol/focus : déplacement ~5 px + prolongement du trait + fond plus clair,
+  180 ms ; focus visible ; `prefers-reduced-motion`.
+- **Contraste** : natif (clair/aplat sombre, ivoire/cartouches). Sur **téléphone étroit**,
+  les étages débordaient sur la zone claire → **correction locale légère** (dégradé feutré,
+  masqué haut/bas, mobile uniquement, derrière le bloc titre — pas un voile sur l'image) +
+  compression des tailles sous 400 px.
+
+Vérifié par capture : desktop 16:9, tablette portrait, téléphone étroit (360) et haut (400)
+— titre/visage/entrée principale visibles vite, cartouches sur leurs zones, pas de scroll
+horizontal, couverture plein viewport ; pages intérieures intactes. `build` OK. Détail :
+decisions.md 2026-07-18.
+
 ## 2026-07-17 (septies) — Accueil refondu en affiche interactive (nouvelle direction, prototype)
 
 Direction B jugée trop classique / catalogue. Nouvelle piste pour l'**accueil seulement** :

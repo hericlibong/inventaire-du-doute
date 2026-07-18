@@ -1,7 +1,3 @@
-// « Hello data » du socle : on charge un vrai chiffre depuis les JSON exportés.
-// fetch("/data/...") lit static/data/, synchronisé par `npm run sync:data`.
-export async function load({ fetch }) {
-	const niveaux = await (await fetch('/data/niveaux.json')).json();
-	const provenance = await (await fetch('/data/provenance.json')).json();
-	return { niveaux, provenance };
-}
+// Accueil = affiche interactive, un seul écran (2026-07-18). Aucune donnée à charger :
+// la couverture n'affiche ni chiffre ni source développée (déplacés en « Comprendre les
+// mentions » et « Méthode »). Le pré-rendu global est réglé dans +layout.js.

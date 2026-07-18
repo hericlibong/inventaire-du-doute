@@ -2,6 +2,34 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-18 — Accueil : l'affiche précisée (entrée pure, accroche 3 étages, nav en cartouches)
+
+Révision de l'affiche d'accueil (image et plein écran conservés). L'accueil est **l'entrée**
+dans l'application : il ne résume pas les stats, n'explique pas la méthode. **Accueil seul.**
+
+- **Un seul écran** : plus rien sous la couverture ; **pied de page masqué sur `/`**
+  seulement. Répartition assumée du contenu : les chiffres détaillés → « Comprendre les
+  mentions », le calcul / les sources / la version / les précautions → « Méthode ». Le
+  premier viewport communique uniquement échelle (« un million de notices »), sujet
+  (attributions incertaines), approche (enquête dans les données) et les chemins.
+- **Accroche provisoire à trois étages** (formulation imposée, non figée éditorialement) :
+  chaque phrase = un étage visuel distinct, progression légère, registre d'affiche (pas un
+  chapô institutionnel). Aucun chiffre précis réintroduit pour « remplir ».
+- **Navigation = cartouches éditoriaux** intégrés à la fiche (bleu-encre, texte ivoire,
+  angles quasi droits, largeurs propres, décalés, trait fin), **pas** de boutons/cartes/
+  menu/ombre/icône. Motif : les liens noirs fins se perdaient dans l'illustration ; les
+  cartouches leur donnent un contraste franc et les ancrent aux rectangles de l'image.
+  « Explorer les maîtres » = principale (plus large, plus lourde, cobalt, cible généreuse).
+- **Contraste** : par les zones ; **aucun voile global**. Exception assumée et permise par
+  le cadrage : sur petit écran, un **dégradé feutré local** (masqué haut/bas, mobile
+  uniquement) derrière le bloc titre garantit la lisibilité des étages — jamais un panneau
+  opaque ni un voile sur toute l'image. Sous 400 px, tailles/espacements réduits d'abord.
+- Interactions inchangées dans l'esprit (≤ ~5 px, trait, contraste, focus visible,
+  `prefers-reduced-motion`, `aria-current`).
+
+Fichiers : `LandingCover.svelte`, `EditorialNavigation.svelte` réécrits ; `+page.svelte` /
+`+page.js` réduits ; `+layout.svelte` (pied de page masqué sur `/`).
+
 ## 2026-07-17 (septies) — Accueil = affiche interactive (nouvelle direction, prototype, accueil seul)
 
 Direction B jugée trop classique/rigide (« image de catalogue »). Nouvelle piste
