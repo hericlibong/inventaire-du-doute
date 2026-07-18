@@ -143,11 +143,10 @@ plus le sujet ni les chiffres, **chaque page porte désormais son entrée narrat
 
 **Direction « affiche » étendue à toute l'application (C1-C5 faits, 2026-07-18).**
 
-- [ ] **★ REPRISE (après pause/`/clear`) — Refonte narration « Les presque »** : deux
-      états (GUIDE à l'arrivée, aucun maître par défaut ; SCÈNE au clic d'un nom), graphe
-      borné, intro qui recule en kicker en état B. **Parti arrêté, à coder en UNE passe.**
-      Spec complète : decisions.md 2026-07-18 (ter). Fichier : `les-presque/+page.svelte`.
-      C'est le POINT DE REPRISE exact.
+- [x] **Refonte narration « Les presque »** (2026-07-18) — deux états : GUIDE à
+      l'arrivée (`selection = null`, aucun maître ; invitation + 3 étapes), SCÈNE au clic
+      d'un nom ; graphe borné (42 rem, aligné gauche) ; intro qui recule en kicker mince
+      en état B. Une passe, aucun composant refondu. Détail : decisions.md 2026-07-18 (ter).
 
 ### 2. En réserve (conservé, hors V1 publique)
 - [~] **Avant / après** (`/revisions`) — construit (onglets, anneau, prototype

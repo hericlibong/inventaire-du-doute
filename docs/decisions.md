@@ -2,10 +2,26 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
-## 2026-07-18 (ter) — Refonte narration « Les presque » : DEUX ÉTATS (guide / maître) — À EXÉCUTER
+## 2026-07-18 (ter) — Refonte narration « Les presque » : DEUX ÉTATS (guide / maître) — ✅ CODÉ
 
-**Statut : parti arrêté, PAS ENCORE CODÉ. À faire en UNE passe (pas de pas-à-pas).**
-Point de reprise après pause/`/clear`.
+**Statut : FAIT (2026-07-18, une passe, un commit).** Spec ci-dessous suivie.
+
+**Réalisé.** `les-presque/+page.svelte` : `selection` démarre à `null`.
+- État A (arrivée) : plein cadre d'intro conservé (titre + chapô + précaution) ; la
+  zone de droite est un **guide** (invitation « Choisissez un nom » + 3 étapes = les
+  3 onglets à venir : profil / œuvres / musées), **aucun portrait ni maître**.
+- État B (clic) : l'intro recule en **kicker mince** (« Les presque · 27 noms ») ;
+  la scène du maître (`BandeauMaitre` + onglets + vue) s'affiche.
+- **Vue bornée** à 42 rem (~672 px), alignée à gauche (règle 1 de la spec).
+- Aucun composant existant refondu (Repertoire / BandeauMaitre / Nuage / Œuvres /
+  Carte réutilisés tels quels) ; `Repertoire` tolère `selection = null` sans
+  surlignage. Mobile : le repli natif du répertoire (bouton « Choisir un maître »)
+  fait office d'accès à la liste dans les deux états (pas de refonte de Repertoire).
+- Build statique vérifié.
+
+---
+
+**Parti arrêté (spec d'origine, conservée pour mémoire) :**
 
 **Problème constaté** (retour utilisateur 2026-07-18) : `/les-presque` ouvre sur un maître
 par défaut (Le Brun) → la scène + le graphe « Profil » **géant** écrasent l'intro ; les
