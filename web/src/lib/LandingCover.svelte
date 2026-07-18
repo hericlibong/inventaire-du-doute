@@ -7,6 +7,10 @@
 	// index), pas Léonard ni le tableau.
 	import { base } from '$app/paths';
 	import EditorialNavigation from '$lib/EditorialNavigation.svelte';
+	import { nombre } from '$lib/joconde.js';
+
+	// Chiffre vedette (doute_total = 24 507), lu depuis niveaux.json (+page.js).
+	let { doute } = $props();
 </script>
 
 <section class="cover">
@@ -31,9 +35,19 @@
 		<h1>L'inventaire<br />du doute</h1>
 		<div class="phrases">
 			<p class="e1">Un million de notices.</p>
-			<p class="e2">Des milliers d'attributions incertaines.</p>
 			<p class="e3">Une enquête dans les données des musées.</p>
 		</div>
+
+		<!-- Preuve secondaire : le chiffre vedette (24 507) et sa glose. Il remplace
+		     l'étage « des milliers d'attributions incertaines » (redondant) : c'est le
+		     point de départ de l'enquête, en corps réduit pour ne pas concurrencer le titre. -->
+		<div class="preuve">
+			<p class="chiffre">{nombre(doute)}</p>
+			<p class="glose">
+				œuvres pour lesquelles un musée de France a écrit un doute sur l'auteur.
+			</p>
+		</div>
+
 		<p class="source">À partir de la base Joconde.</p>
 	</div>
 
@@ -116,6 +130,31 @@
 		color: #d8cfbd;
 	}
 
+	/* --- Preuve secondaire : chiffre vedette + glose (aplat sombre) --- */
+	.preuve {
+		margin: 1.2rem 0 0;
+		max-width: 24ch;
+	}
+
+	.chiffre {
+		margin: 0;
+		font-family: var(--police-titre);
+		font-weight: 600;
+		font-size: clamp(1.9rem, 3.2vw, 3rem);
+		line-height: 1;
+		letter-spacing: -0.01em;
+		color: #eaddc2; /* ivoire chaud, distinct des étages */
+		font-variant-numeric: tabular-nums;
+	}
+
+	.glose {
+		margin: 0.45rem 0 0;
+		font-family: var(--police-texte);
+		font-size: clamp(0.86rem, 1vw, 0.98rem);
+		line-height: 1.4;
+		color: #cfd6dd;
+	}
+
 	.source {
 		margin: 1.3rem 0 0;
 		font-family: var(--police-ui);
@@ -150,12 +189,12 @@
 			pointer-events: none;
 			background: linear-gradient(
 				100deg,
-				rgba(17, 25, 35, 0.72),
-				rgba(17, 25, 35, 0.42) 50%,
-				rgba(17, 25, 35, 0) 82%
+				rgba(17, 25, 35, 0.78),
+				rgba(17, 25, 35, 0.5) 55%,
+				rgba(17, 25, 35, 0) 88%
 			);
-			-webkit-mask-image: linear-gradient(to bottom, transparent, #000 14%, #000 84%, transparent);
-			mask-image: linear-gradient(to bottom, transparent, #000 14%, #000 84%, transparent);
+			-webkit-mask-image: linear-gradient(to bottom, transparent, #000 10%, #000 92%, transparent);
+			mask-image: linear-gradient(to bottom, transparent, #000 10%, #000 92%, transparent);
 		}
 		.titre h1 {
 			font-size: clamp(2.4rem, 12vw, 3.6rem);
@@ -171,6 +210,16 @@
 		.e2,
 		.e3 {
 			font-size: 1rem;
+		}
+		.preuve {
+			margin-top: 1.05rem;
+			max-width: 30ch;
+		}
+		.chiffre {
+			font-size: 2.1rem;
+		}
+		.glose {
+			font-size: 0.9rem;
 		}
 		.source {
 			margin-top: 1rem;
@@ -205,6 +254,15 @@
 		}
 		.e3 {
 			margin-top: 0.2rem;
+		}
+		.preuve {
+			margin-top: 0.8rem;
+		}
+		.chiffre {
+			font-size: 1.7rem;
+		}
+		.glose {
+			font-size: 0.82rem;
 		}
 		.source {
 			margin-top: 0.7rem;

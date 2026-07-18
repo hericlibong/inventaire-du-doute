@@ -2,6 +2,24 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-18 (quinquies) — Accueil : retour du chiffre 24 507 + retrait du lien « Accueil »
+
+Deux touches sur la couverture d'accueil (demande utilisateur, en petites étapes).
+
+1. **Le chiffre vedette revient sur l'affiche.** La refonte « affiche » avait vidé la
+   couverture de tout chiffre (déplacé en « Comprendre les mentions » / « Méthode »).
+   L'utilisateur le juge important : c'est sur ces données qu'on travaille. On le
+   réaffiche en **preuve secondaire** dans l'aplat sombre, sous l'accroche : **24 507**
+   (lu depuis `niveaux.json` via `+page.js`, jamais en dur) + une glose courte
+   (« œuvres pour lesquelles un musée de France a écrit un doute sur l'auteur. »).
+   L'étage d'accroche « Des milliers d'attributions incertaines » est **retiré** (le
+   chiffre le dit, précisément → redondance levée). Corps réduit : ne concurrence pas
+   le titre. Voile de contraste mobile étendu (le bloc est plus haut).
+2. **Le lien « Accueil » est retiré de la nav de la couverture** (`EditorialNavigation`) :
+   cette nav ne s'affiche QUE sur l'accueil → un lien vers la page courante est inutile.
+   Les autres pages gardent « Accueil » dans le header (utile là). *Point que j'aurais dû
+   signaler de moi-même.*
+
 ## 2026-07-18 (quater) — « Les presque » : retour à un maître d'ouverture (guide abandonné, proportions gardées)
 
 **Revirement après essai des deux états** (2026-07-18 ter). Vu à l'écran, l'état

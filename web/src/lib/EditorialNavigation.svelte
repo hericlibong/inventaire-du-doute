@@ -10,8 +10,10 @@
 	// `decal` = décalage horizontal irrégulier (les liens n'ont ni la même largeur ni
 	// un alignement de menu classique). Ils semblent appartenir aux rectangles de
 	// l'illustration.
+	// Pas de lien « Accueil » : cette navigation ne s'affiche QUE sur la couverture
+	// d'accueil (LandingCover) — un lien vers la page où l'on se trouve déjà est inutile
+	// (retrait demandé le 2026-07-18). Les autres pages ont « Accueil » dans le header.
 	const liens = [
-		{ href: '/', label: 'Accueil', decal: '2rem' },
 		{ href: '/les-presque', label: 'Explorer les maîtres', principal: true, decal: '0rem' },
 		{ href: '/echelle', label: 'Comprendre les mentions', decal: '2.8rem' },
 		{ href: '/methode', label: 'Méthode', decal: '1.1rem' }
