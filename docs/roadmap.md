@@ -109,8 +109,32 @@ comme historique ; ce bloc est le cap qui prime.*
         retenus à ce stade : portrait N&B, capitales/folios dominants.
 
   **Direction B menée à terme = modèle de travail (NON validée).** Rendu jugé trop
-  classique/générique. Prochaine étape : critique globale de cette version, puis
-  nouvelle direction fondée sur un modèle visuel plus précis fourni par l'utilisateur.
+  classique/générique. Remplacée par la direction « affiche » (ci-dessous).
+
+### ★ DIRECTION « AFFICHE » (2026-07-18) — cap actuel
+
+Accueil validé comme **affiche interactive pleine page** (image, titre + accroche 3
+étages, nav en cartouches). On **étend cette direction au reste de l'application**.
+Principe : la couverture reste l'affiche ; les pages intérieures gardent une **surface
+de lecture claire** mais adoptent le **langage de l'affiche** (cadre navy + cartouches
+ivoire/cobalt, accents vermillon, **composition pleine largeur en zones**, fin de la
+colonne centrale). Les **8 pigments de données restent inchangés**. L'accueil ne posant
+plus le sujet ni les chiffres, **chaque page porte désormais son entrée narrative**.
+
+- [x] **C1 · Charte v2 + coquille** (2026-07-18) — tokens de cadre (navy/ivoire/cobalt/
+      vermillon), header/footer des pages intérieures en bandeau navy, spectre de tête
+      retiré. Surface de contenu claire conservée (refonte en C2-C4).
+- [ ] **C2 · Explorer les maîtres — pleine page** (le cœur) : scène du maître en tête
+      forte, répertoire en rail, graphe/vues étalés ; onglets + données/tooltips
+      inchangés ; entrée narrative revue.
+- [ ] **C3 · Comprendre les mentions — pleine page** : langage affiche, barres/données
+      inchangées, entrée ajustée.
+- [ ] **C4 · Méthode — pleine page sobre** : sommaire en rail + colonnes, contenu validé
+      conservé.
+- [ ] **C5 · Passe narration + nettoyage** : cohérence des entrées, retrait des redites
+      et des restes crème/spectre orphelins.
+
+Une tâche = un commit = une avancée ; vérif minimale ; pas de sur-architecture.
 
 ### 2. En réserve (conservé, hors V1 publique)
 - [~] **Avant / après** (`/revisions`) — construit (onglets, anneau, prototype

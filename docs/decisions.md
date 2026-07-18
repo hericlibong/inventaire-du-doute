@@ -2,6 +2,21 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-18 (bis) — Extension de la direction « affiche » à l'application (C1 : charte v2 + coquille)
+
+L'accueil « affiche » remplace la Direction B comme cap. On l'étend au reste de l'app.
+Principe (roadmap ★ DIRECTION « AFFICHE ») : **surface de lecture claire** (le sombre
+plein nuirait au texte et aux dataviz) + **cadre au registre de l'affiche** (navy, ivoire,
+cobalt, vermillon) + **composition pleine largeur en zones** (fin de la colonne 68 rem par
+défaut) + **8 pigments de données inchangés**. Narration : l'accueil étant une pure entrée,
+**chaque page porte désormais son entrée** (le sujet et les chiffres n'y sont plus posés).
+
+**C1** : tokens de cadre ajoutés (`--cadre-fond/-encre/-encre-douce`, `--accent-cobalt/
+-vermillon`) ; header intérieur en **bandeau navy** (wordmark + nav ivoire, page active
+soulignée vermillon), **spectre de tête supprimé** ; pied au même registre. Choix de ne
+PAS retirer `max-width` de `main` en C1 : le passage pleine largeur se fait **page par
+page** (via `main.pleine`, comme l'accueil) en C2-C4, pour éviter un état transitoire cassé.
+
 ## 2026-07-18 — Accueil : l'affiche précisée (entrée pure, accroche 3 étages, nav en cartouches)
 
 Révision de l'affiche d'accueil (image et plein écran conservés). L'accueil est **l'entrée**

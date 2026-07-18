@@ -3,7 +3,6 @@
 	import '$lib/styles/fonts.css';
 	import favicon from '$lib/assets/favicon.svg';
 	import { page } from '$app/stores';
-	import Spectre from '$lib/Spectre.svelte';
 
 	let { children } = $props();
 
@@ -35,8 +34,7 @@
 
 {#if !estAccueil}
 <header>
-	<!-- La ligne de proximité en signature, tout en haut de chaque page (Direction B). -->
-	<Spectre hauteur="3px" />
+	<!-- Charte v2 : bandeau navy (registre de la couverture), texte ivoire. -->
 	<div class="masthead">
 		<a class="marque" href="/">L'inventaire du doute</a>
 		<nav aria-label="Navigation principale">
@@ -115,10 +113,9 @@
 
 	/* --- Coquille « inventaire » (palier 2). Filet d'accent en tête, masthead
 	   aligné sur la colonne de contenu, nav en petites capitales. --- */
-	/* La signature n'est plus un filet brun mais la ligne de proximité (Spectre),
-	   posée en tête par le composant ci-dessus. */
+	/* Bandeau de tête « affiche » : aplat navy, pleine largeur, texte ivoire. */
 	header {
-		border-bottom: var(--filet);
+		background: var(--cadre-fond);
 	}
 
 	.masthead {
@@ -127,7 +124,7 @@
 		padding: var(--espace-4) var(--espace-5);
 		display: flex;
 		flex-wrap: wrap;
-		align-items: baseline;
+		align-items: center;
 		justify-content: space-between;
 		gap: var(--espace-2) var(--espace-5);
 	}
@@ -137,7 +134,7 @@
 		font-size: var(--taille-l);
 		font-weight: 600;
 		letter-spacing: -0.01em;
-		color: var(--couleur-encre);
+		color: var(--cadre-encre);
 		text-decoration: none;
 	}
 
@@ -158,22 +155,22 @@
 		letter-spacing: 0.07em;
 		font-weight: 500;
 		text-decoration: none;
-		color: var(--couleur-encre-douce);
-		padding-bottom: 2px;
+		color: var(--cadre-encre-douce);
+		padding-bottom: 3px;
 		border-bottom: 2px solid transparent;
 	}
 
 	nav a:hover {
-		color: var(--couleur-encre);
+		color: var(--cadre-encre);
 	}
 
 	nav a.actif {
-		color: var(--couleur-accent);
-		border-bottom-color: var(--couleur-accent);
+		color: var(--cadre-encre);
+		border-bottom-color: var(--accent-vermillon);
 	}
 
 	.a-venir {
-		opacity: 0.45;
+		opacity: 0.4;
 		cursor: default;
 	}
 
@@ -190,13 +187,18 @@
 		padding: 0;
 	}
 
+	/* Pied au même registre que le bandeau (cadre l'affiche). */
 	footer {
-		max-width: var(--largeur-max);
-		margin: 0 auto;
-		padding: var(--espace-6) var(--espace-5) 3rem;
-		border-top: var(--filet);
-		color: var(--couleur-encre-douce);
+		background: var(--cadre-fond);
+		color: var(--cadre-encre-douce);
 		font-family: var(--police-ui);
 		font-size: var(--taille-s);
+		margin-top: var(--espace-6);
+	}
+
+	footer p {
+		max-width: var(--largeur-max);
+		margin: 0 auto;
+		padding: var(--espace-5) var(--espace-5);
 	}
 </style>

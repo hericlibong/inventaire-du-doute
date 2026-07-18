@@ -2,6 +2,22 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-18 (bis) — Extension de la direction « affiche » : C1 charte v2 + coquille
+
+Décision d'étendre la direction d'accueil (affiche pleine page) à toute l'application.
+Plan en 5 chantiers (roadmap.md ★ DIRECTION « AFFICHE ») : C1 charte+coquille, C2 Explorer
+pleine page, C3 Comprendre, C4 Méthode, C5 narration. Principe : surface de lecture claire
++ **cadre au registre de l'affiche** (navy/ivoire/cobalt/vermillon), **pleine largeur en
+zones** (fin de la colonne centrale), **pigments de données inchangés** ; chaque page porte
+désormais son **entrée narrative** (l'accueil ne la pose plus).
+
+**C1 fait** : tokens de cadre (`--cadre-fond` navy, `--cadre-encre` ivoire, `--accent-cobalt`,
+`--accent-vermillon`) ; header des pages intérieures en **bandeau navy** (wordmark + nav
+ivoire, actif souligné vermillon), **spectre de tête retiré** ; pied de page au même
+registre. La surface de contenu reste claire (refonte page par page en C2-C4, sans casse
+transitoire). `build` OK, vérifié par capture. Détail : decisions.md 2026-07-18 (bis).
+Suite : C2 — Explorer les maîtres en pleine page.
+
 ## 2026-07-18 — Accueil : révision de l'affiche (un seul écran, accroche 3 étages, nav en cartouches)
 
 Le prototype d'affiche va dans la bonne direction ; on garde l'image, le plein écran et

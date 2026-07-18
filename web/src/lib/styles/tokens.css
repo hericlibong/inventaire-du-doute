@@ -111,4 +111,14 @@
 	/* Canevas élargi (Direction B occupe l'écran, fin de la colonne documentaire
 	   étroite). Le texte courant reste borné page par page (~44 rem). */
 	--largeur-max: 68rem;
+
+	/* Charte v2 — cadre « affiche » (2026-07-18). Le CADRE (bandeau de tête, nav,
+	   pied) passe au registre de la couverture d'accueil : aplat navy, texte ivoire,
+	   accents cobalt / vermillon. La surface de lecture des pages reste claire
+	   (--couleur-fond) et les 8 pigments de données sont INCHANGÉS. */
+	--cadre-fond: #17222e;        /* navy profond (aplat de la couverture) */
+	--cadre-encre: #eef0f3;       /* ivoire légèrement froid */
+	--cadre-encre-douce: #a7b0ba;
+	--accent-cobalt: #35578a;
+	--accent-vermillon: #b8451f;
 }
