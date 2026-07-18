@@ -34,19 +34,16 @@
 		FAMILLE_PUBLIC[code].montrerMention ? FAMILLE_PUBLIC[code].mention('un maître') : null;
 </script>
 
+<div class="page">
 <header class="tete">
-	<h1>Comprendre les mentions</h1>
+	<p class="kicker">Comprendre les mentions</p>
+	<h1>Le langage de la prudence</h1>
 	<div class="lead">
 		<p>
 			Un musée ne dit pas seulement qu'une œuvre est, ou n'est pas, d'un artiste. Quand
-			il hésite, il l'écrit — avec des mots choisis. Selon les cas, il note que l'œuvre
-			est sans doute de sa main, qu'elle sort de son atelier, qu'elle vient de son école,
-			ou qu'elle reprend seulement son style. Chaque formule dit une chose différente&nbsp;:
-			la <em>nature</em> du lien avec le nom de l'artiste, et sa <em>force</em>.
-		</p>
-		<p>
-			Cette page réunit ces formules, les explique en clair, et montre lesquelles
-			reviennent le plus souvent.
+			il hésite, il l'écrit — avec des mots choisis. Chaque formule dit une chose
+			différente&nbsp;: la <em>nature</em> du lien avec le nom de l'artiste, et sa
+			<em>force</em>. Voici ces mots, ce qu'ils veulent dire, et lesquels reviennent.
 		</p>
 	</div>
 	<p class="prudence">
@@ -128,31 +125,43 @@
 		dans l'ensemble&nbsp;; ce détail relève de la page Méthode.
 	</p>
 </section>
+</div>
 
 <style>
+	/* Pleine page : gouttières propres (direction « affiche »). */
+	.page {
+		padding: var(--espace-5) clamp(1rem, 4vw, 3rem) var(--espace-6);
+	}
+
+	.kicker {
+		font-family: var(--police-ui);
+		font-size: var(--taille-xs);
+		letter-spacing: 0.14em;
+		text-transform: uppercase;
+		color: var(--accent-cobalt);
+		margin: 0 0 var(--espace-2);
+	}
+
 	h1 {
 		font-family: var(--police-titre);
 		font-size: var(--taille-xl);
+		margin: 0;
 	}
 
 	.tete {
-		max-width: 46rem;
+		max-width: 52rem;
 	}
 
 	.lead p {
 		font-size: var(--taille-m);
 		line-height: 1.65;
-		margin: 0 0 var(--espace-3);
+		margin: var(--espace-3) 0 0;
 	}
 
-	.lead p:first-child {
-		font-size: 1.2rem;
-	}
-
-	/* Prudence : plus une boîte grise (Direction B), un filet et de l'italique. */
+	/* Prudence : filet vermillon (accent d'alerte de la charte v2). */
 	.prudence {
 		margin-top: var(--espace-4);
-		border-left: 2px solid var(--couleur-accent);
+		border-left: 2px solid var(--accent-vermillon);
 		padding-left: var(--espace-3);
 		font-style: italic;
 		font-size: var(--taille-s);

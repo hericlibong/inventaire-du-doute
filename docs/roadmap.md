@@ -128,8 +128,10 @@ plus le sujet ni les chiffres, **chaque page porte désormais son entrée narrat
       `main.pleine` avec gouttières ; entrée narrative courte revue ; scène du maître
       renforcée (portrait 16 rem, nom en xxl) ; graphe étalé ; accents cobalt/vermillon
       (kicker, onglet actif, sélection du répertoire) ; données/tooltips inchangés.
-- [ ] **C3 · Comprendre les mentions — pleine page** : langage affiche, barres/données
-      inchangées, entrée ajustée.
+- [x] **C3 · Comprendre les mentions — pleine page** (2026-07-18) — `main.pleine` +
+      gouttières ; kicker cobalt + titre « Le langage de la prudence » + chapô resserré ;
+      prudence en filet vermillon ; ligne des territoires et grilles (mentions,
+      comparaison) étalées ; barres/données/réserves inchangées.
 - [ ] **C4 · Méthode — pleine page sobre** : sommaire en rail + colonnes, contenu validé
       conservé.
 - [ ] **C5 · Passe narration + nettoyage** : cohérence des entrées, retrait des redites

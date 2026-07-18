@@ -17,7 +17,9 @@
 	// Elles gèrent leurs propres gouttières ; les pages pas encore refondues gardent
 	// la colonne centrée. On étend cette liste à chaque chantier (C3, C4).
 	const estPleine = $derived(
-		$page.url.pathname === '/' || $page.url.pathname.startsWith('/les-presque')
+		$page.url.pathname === '/' ||
+			$page.url.pathname.startsWith('/les-presque') ||
+			$page.url.pathname.startsWith('/echelle')
 	);
 
 	// Navigation publique recentrée à QUATRE entrées actives (architecture-
