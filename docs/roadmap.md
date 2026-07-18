@@ -135,10 +135,14 @@ plus le sujet ni les chiffres, **chaque page porte désormais son entrée narrat
 - [x] **C4 · Méthode — pleine page sobre** (2026-07-18) — `main.pleine` + gouttières ;
       kicker cobalt + titre « Ce que les chiffres disent, et ne disent pas » ; prudence
       vermillon ; sommaire en rail collant (accent cobalt) + contenu **validé conservé**.
-- [ ] **C5 · Passe narration + nettoyage** : cohérence des entrées, retrait des redites
-      et des restes crème/spectre orphelins.
+- [x] **C5 · Passe narration + nettoyage** (2026-07-18) — entrées homogènes sur les 4
+      pages (kicker + titre éditorial + chapô court + précaution vermillon) ; accents
+      chrome restants alignés sur le cobalt (chiffres vedettes, liens POP, onglets, tri
+      et sélection du répertoire). `--couleur-accent` (brun) ne subsiste que dans la
+      rubrique en réserve `/revisions` et comme couleur du point de carte (donnée).
 
-Une tâche = un commit = une avancée ; vérif minimale ; pas de sur-architecture.
+**Direction « affiche » étendue à toute l'application (C1-C5 faits, 2026-07-18).**
+Prochaine étape : jugement d'ensemble sur captures.
 
 ### 2. En réserve (conservé, hors V1 publique)
 - [~] **Avant / après** (`/revisions`) — construit (onglets, anneau, prototype

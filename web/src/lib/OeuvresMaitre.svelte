@@ -188,13 +188,13 @@
 	.lien-fiche {
 		font-family: var(--police-ui);
 		font-size: var(--taille-s);
-		color: var(--couleur-accent);
+		color: var(--accent-cobalt);
 		text-decoration: none;
 		border-bottom: 1px solid transparent;
 	}
 
 	.lien-fiche:hover {
-		border-bottom-color: var(--couleur-accent);
+		border-bottom-color: var(--accent-cobalt);
 	}
 
 	/* Copies « d'après » : bloc distinct, couleur neutre, filet à gauche. */

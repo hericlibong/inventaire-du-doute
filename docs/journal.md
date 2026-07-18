@@ -2,6 +2,22 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-18 (quater) — C3-C4-C5 : direction « affiche » étendue à toute l'application
+
+- **C3 · Comprendre les mentions** en pleine page (`main.pleine` + gouttières) : kicker
+  cobalt + titre « Le langage de la prudence » + chapô resserré ; prudence vermillon ;
+  ligne des territoires et grilles (mentions, comparaison) étalées ; données inchangées.
+- **C4 · Méthode** en pleine page : kicker + titre « Ce que les chiffres disent, et ne
+  disent pas » ; sommaire en rail collant (accent cobalt) ; contenu validé conservé.
+- **C5 · nettoyage** : entrées homogènes sur les 4 pages ; accents chrome restants au
+  cobalt (chiffres vedettes, liens POP). `--couleur-accent` (brun) ne reste que dans la
+  rubrique en réserve `/revisions` (hors nav) et comme couleur du point de carte (donnée).
+
+Toute l'application est désormais dans la direction « affiche » : couverture d'accueil +
+pages intérieures pleine largeur, cadre navy/ivoire, accents cobalt/vermillon, **pigments
+de données intacts**. `build` OK à chaque chantier, vérifié par capture. Détail :
+decisions.md 2026-07-18 (bis). Suite : jugement d'ensemble.
+
 ## 2026-07-18 (ter) — C2 : Explorer les maîtres en pleine page
 
 `/les-presque` passe en pleine largeur (`main.pleine` + gouttières `clamp`, fin de la

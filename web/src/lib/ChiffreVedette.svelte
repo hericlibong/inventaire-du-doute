@@ -30,7 +30,7 @@
 		font-size: var(--taille-l);
 		font-weight: 700;
 		line-height: 1.1;
-		color: var(--couleur-accent);
+		color: var(--accent-cobalt);
 		font-variant-numeric: tabular-nums;
 	}
 
