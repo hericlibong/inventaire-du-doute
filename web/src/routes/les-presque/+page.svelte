@@ -9,104 +9,98 @@
 
 	let { data } = $props();
 	const artistes = data.artistes.artistes;
-	// Manifeste des portraits (Commons) : source secondaire d'illustration.
 	const portraits = data.portraits;
 
-	// Plafond COMMUN de l'axe Y du nuage : la plus grande valeur de famille sur
-	// tous les maîtres (≈ 240, « école de » Le Brun). Calculé ici, pas en dur.
-	const plafond = Math.max(
-		...artistes.flatMap((a) => a.familles.map((f) => f.notices))
-	);
+	// Plafond COMMUN de l'axe Y du nuage (≈ 240). Calculé ici, pas en dur.
+	const plafond = Math.max(...artistes.flatMap((a) => a.familles.map((f) => f.notices)));
 
-	// Onglets de la fiche maître (libellés éditoriaux, charte §5) :
-	//   profil  — le graphique des formes et volumes du doute (NuageFamilles) ;
-	//   oeuvres — les cas concrets, avec les mots publiés (OeuvresMaitre) ;
-	//   musees  — où ces œuvres sont conservées, sur la carte (CarteMaitre).
+	// Onglets de la fiche maître : profil (graphique) · oeuvres · musees.
 	let vue = $state('profil');
 
-	// Maître sélectionné pour la fiche (le plus douté par défaut). La recherche, le
-	// tri et la liste vivent dans le Répertoire (colonne de navigation) ; la page ne
-	// garde que la sélection, partagée avec la scène du maître.
+	// Maître sélectionné (le plus douté par défaut). Recherche/tri/liste = Répertoire.
 	let selection = $state(artistes[0].nom);
 	const maitre = $derived(artistes.find((a) => a.nom === selection));
 
-	// Folio discret (repère secondaire, jamais un décor) : rang dans la liste + cote
-	// du musée principal, tirés des données existantes.
+	// Folio discret (repère secondaire) : rang + cote du musée principal.
 	const rang = $derived(artistes.findIndex((a) => a.nom === selection) + 1);
 </script>
 
-<header class="dossier">
-	<h1>Les presque</h1>
-	<div class="lead">
-		<p>
-			Ici, «&nbsp;Les presque&nbsp;» désigne les œuvres que les musées rapprochent d'un
-			grand artiste sans les lui attribuer tout à fait. Dans les notices, cela passe par
-			des formules comme «&nbsp;attribué à&nbsp;», «&nbsp;atelier de&nbsp;»,
-			«&nbsp;école de&nbsp;», «&nbsp;entourage de&nbsp;» : le nom du maître est présent,
-			mais accompagné d'une réserve.
+<div class="page">
+	<header class="dossier">
+		<p class="kicker">Explorer les 27 maîtres</p>
+		<h1>Les presque</h1>
+		<p class="lead">
+			Vingt-sept noms que les musées de France rapprochent d'un grand artiste sans le
+			lui attribuer tout à fait — «&nbsp;attribué à&nbsp;», «&nbsp;atelier de&nbsp;»,
+			«&nbsp;école de&nbsp;»… Choisissez un nom, puis lisez son profil, ses œuvres et
+			les musées où elles sont conservées.
 		</p>
-		<p>
-			Cette rubrique rassemble {artistes.length} noms pour lesquels les musées de
-			France utilisent souvent ce type de mention : au moins vingt œuvres concernées
-			pour chacun. Pour chaque artiste, la jauge colorée donne un premier aperçu. Le
-			graphique détaille les formules employées, les œuvres montrent des exemples
-			concrets, et la carte indique où elles sont conservées en France.
+		<p class="precaution">
+			Cette rubrique ne réattribue aucune œuvre. Elle reprend les mots publiés par les
+			musées dans leurs notices, avec leurs précautions.
 		</p>
+	</header>
+
+	<div class="grille">
+		<!-- Répertoire en rail : recherche + tri + liste + microprofils. -->
+		<Repertoire {artistes} bind:selection />
+
+		{#if maitre}
+			<section class="fiche">
+				<p class="folio">
+					Nº {rang} / {artistes.length}{maitre.musee_principal
+						? ` · cote ${maitre.musee_principal.code}`
+						: ''}
+				</p>
+
+				<!-- Scène du maître : portrait + nom + synthèse + chiffres (hors onglets). -->
+				<BandeauMaitre {maitre} portrait={portraits[maitre.nom]} />
+
+				<div class="bascule" role="tablist" aria-label="Choisir la vue">
+					<button role="tab" aria-selected={vue === 'profil'} class:actif={vue === 'profil'} onclick={() => (vue = 'profil')}>
+						Profil
+					</button>
+					<button role="tab" aria-selected={vue === 'oeuvres'} class:actif={vue === 'oeuvres'} onclick={() => (vue = 'oeuvres')}>
+						Œuvres
+					</button>
+					<button role="tab" aria-selected={vue === 'musees'} class:actif={vue === 'musees'} onclick={() => (vue = 'musees')}>
+						Musées
+					</button>
+				</div>
+
+				<div class="vue">
+					{#if vue === 'profil'}
+						<NuageFamilles {maitre} {plafond} />
+					{:else if vue === 'oeuvres'}
+						<OeuvresMaitre {maitre} />
+					{:else}
+						<CarteMaitre {maitre} />
+					{/if}
+				</div>
+			</section>
+		{/if}
 	</div>
-	<p class="precaution">
-		Cette rubrique ne réattribue aucune œuvre. Elle reprend les mots publiés par les
-		musées dans leurs notices, avec leurs précautions.
-	</p>
-</header>
-
-<div class="grille">
-	<!-- Colonne de navigation : recherche + tri + liste + microprofils. La légende
-	     détaillée des mentions n'est plus ici (elle vit dans « Comprendre les
-	     mentions ») : le répertoire est un pur outil de choix. -->
-	<Repertoire {artistes} bind:selection />
-
-	{#if maitre}
-		<section class="fiche">
-			<p class="folio">
-				Nº {rang} / {artistes.length}{maitre.musee_principal
-					? ` · cote ${maitre.musee_principal.code}`
-					: ''}
-			</p>
-
-			<!-- Bandeau « scène du maître » : portrait (origine de la ligne) + nom +
-			     synthèse + chiffres. HORS de la zone d'onglet → visible sur les trois vues. -->
-			<BandeauMaitre {maitre} portrait={portraits[maitre.nom]} />
-
-			<div class="bascule" role="tablist" aria-label="Choisir la vue">
-				<button role="tab" aria-selected={vue === 'profil'} class:actif={vue === 'profil'} onclick={() => (vue = 'profil')}>
-					Profil
-				</button>
-				<button role="tab" aria-selected={vue === 'oeuvres'} class:actif={vue === 'oeuvres'} onclick={() => (vue = 'oeuvres')}>
-					Œuvres
-				</button>
-				<button role="tab" aria-selected={vue === 'musees'} class:actif={vue === 'musees'} onclick={() => (vue = 'musees')}>
-					Musées
-				</button>
-			</div>
-
-			<div class="vue">
-				{#if vue === 'profil'}
-					<NuageFamilles {maitre} {plafond} />
-				{:else if vue === 'oeuvres'}
-					<OeuvresMaitre {maitre} />
-				{:else}
-					<CarteMaitre {maitre} />
-				{/if}
-			</div>
-		</section>
-	{/if}
 </div>
 
 <style>
-	/* En-tête de dossier compact : le profil doit apparaître dès le premier écran. */
+	/* Pleine page : gouttières propres, pas de colonne centrale. */
+	.page {
+		padding: var(--espace-5) clamp(1rem, 4vw, 3rem) var(--espace-6);
+	}
+
+	/* Entrée narrative courte (l'accueil ne pose plus le sujet). */
 	.dossier {
-		max-width: 48rem;
+		max-width: 58rem;
 		margin-bottom: var(--espace-5);
+	}
+
+	.kicker {
+		font-family: var(--police-ui);
+		font-size: var(--taille-xs);
+		letter-spacing: 0.14em;
+		text-transform: uppercase;
+		color: var(--accent-cobalt);
+		margin: 0 0 var(--espace-2);
 	}
 
 	.dossier h1 {
@@ -115,30 +109,31 @@
 		margin: 0 0 var(--espace-3);
 	}
 
-	.lead p {
-		font-size: 1.05rem;
+	.lead {
+		font-size: var(--taille-m);
 		line-height: 1.6;
-		margin: 0 0 var(--espace-2);
+		max-width: 52rem;
+		margin: 0;
 	}
 
-	/* Précaution : plus une boîte grise (Direction B), un filet et de l'italique. */
 	.precaution {
 		margin: var(--espace-3) 0 0;
-		border-left: 2px solid var(--couleur-accent);
+		border-left: 2px solid var(--accent-vermillon);
 		padding-left: var(--espace-3);
 		font-style: italic;
 		font-size: var(--taille-s);
 		color: var(--couleur-encre-douce);
 	}
 
+	/* Zone principale pleine largeur : rail répertoire + scène/vues étalées. */
 	.grille {
 		display: grid;
-		grid-template-columns: minmax(13rem, 16rem) 1fr;
+		grid-template-columns: minmax(14rem, 17rem) 1fr;
 		gap: var(--espace-6);
-		margin-top: var(--espace-4);
+		align-items: start;
 	}
 
-	@media (max-width: 720px) {
+	@media (max-width: 760px) {
 		.grille {
 			grid-template-columns: 1fr;
 			gap: var(--espace-5);
@@ -146,12 +141,10 @@
 	}
 
 	.fiche {
-		/* conteneur de requête : le bandeau passe en une colonne selon la largeur
-		   RÉELLE de la fiche (seuil géré dans BandeauMaitre). */
-		container-type: inline-size;
+		container-type: inline-size; /* seuil du bandeau sur la largeur réelle */
+		min-width: 0;
 	}
 
-	/* Folio : repère secondaire, encre douce, discret. */
 	.folio {
 		font-family: var(--police-ui);
 		font-size: var(--taille-xs);
@@ -161,7 +154,7 @@
 		margin: 0 0 var(--espace-3);
 	}
 
-	/* Onglets en soulignement (fin de la boîte à fond plein). */
+	/* Onglets soulignés, actif en cobalt. */
 	.bascule {
 		display: flex;
 		gap: var(--espace-5);
@@ -186,9 +179,9 @@
 	}
 
 	.bascule button.actif {
-		color: var(--couleur-encre);
+		color: var(--accent-cobalt);
 		font-weight: 700;
-		box-shadow: 0 2px 0 var(--couleur-encre);
+		box-shadow: 0 2px 0 var(--accent-cobalt);
 	}
 
 	.bascule button:focus-visible {

@@ -10,9 +10,15 @@
 	const estActif = (href) =>
 		href === '/' ? $page.url.pathname === '/' : $page.url.pathname.startsWith(href);
 
-	// L'accueil est une couverture pleine page : la coquille (masthead + spectre) y est
-	// masquée et le contenu passe pleine largeur. Les pages intérieures gardent tout.
+	// L'accueil est une couverture pleine page : la coquille (masthead) y est masquée.
 	const estAccueil = $derived($page.url.pathname === '/');
+
+	// Routes en PLEINE LARGEUR (direction « affiche ») : accueil + pages refondues.
+	// Elles gèrent leurs propres gouttières ; les pages pas encore refondues gardent
+	// la colonne centrée. On étend cette liste à chaque chantier (C3, C4).
+	const estPleine = $derived(
+		$page.url.pathname === '/' || $page.url.pathname.startsWith('/les-presque')
+	);
 
 	// Navigation publique recentrée à QUATRE entrées actives (architecture-
 	// editoriale.md §2). Les rubriques en réserve (Les révisions, La carte) ne
@@ -60,7 +66,7 @@
 </header>
 {/if}
 
-<main class:pleine={estAccueil}>
+<main class:pleine={estPleine}>
 	{@render children()}
 </main>
 

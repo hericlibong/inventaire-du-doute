@@ -2,6 +2,17 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-18 (ter) — C2 : Explorer les maîtres en pleine page
+
+`/les-presque` passe en pleine largeur (`main.pleine` + gouttières `clamp`, fin de la
+colonne centrale). Entrée narrative **courte revue** (kicker « Explorer les 27 maîtres »
++ chapô resserré : l'accueil ne pose plus le sujet). **Scène du maître renforcée**
+(BandeauMaitre : portrait 14→16 rem, nom en `--taille-xxl`). **Graphe étalé** (le nuage
+remplit la large colonne). Accents chrome → **cobalt** (kicker, onglet actif, tri +
+sélection du répertoire) et **vermillon** (filet de précaution). Données, couleurs de
+pigments, tooltips et interactions **inchangés**. `build` OK, vérifié desktop + mobile.
+Détail : decisions.md 2026-07-18 (ter). Suite : C3 — Comprendre les mentions.
+
 ## 2026-07-18 (bis) — Extension de la direction « affiche » : C1 charte v2 + coquille
 
 Décision d'étendre la direction d'accueil (affiche pleine page) à toute l'application.

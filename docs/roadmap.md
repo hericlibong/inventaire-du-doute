@@ -124,9 +124,10 @@ plus le sujet ni les chiffres, **chaque page porte désormais son entrée narrat
 - [x] **C1 · Charte v2 + coquille** (2026-07-18) — tokens de cadre (navy/ivoire/cobalt/
       vermillon), header/footer des pages intérieures en bandeau navy, spectre de tête
       retiré. Surface de contenu claire conservée (refonte en C2-C4).
-- [ ] **C2 · Explorer les maîtres — pleine page** (le cœur) : scène du maître en tête
-      forte, répertoire en rail, graphe/vues étalés ; onglets + données/tooltips
-      inchangés ; entrée narrative revue.
+- [x] **C2 · Explorer les maîtres — pleine page** (2026-07-18) — `/les-presque` en
+      `main.pleine` avec gouttières ; entrée narrative courte revue ; scène du maître
+      renforcée (portrait 16 rem, nom en xxl) ; graphe étalé ; accents cobalt/vermillon
+      (kicker, onglet actif, sélection du répertoire) ; données/tooltips inchangés.
 - [ ] **C3 · Comprendre les mentions — pleine page** : langage affiche, barres/données
       inchangées, entrée ajustée.
 - [ ] **C4 · Méthode — pleine page sobre** : sommaire en rail + colonnes, contenu validé

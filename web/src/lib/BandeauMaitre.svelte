@@ -62,7 +62,7 @@
 	   à droite. justify-content: start → le bloc reste calé à gauche, pas étalé. */
 	.bandeau {
 		display: grid;
-		grid-template-columns: 14rem minmax(0, 26rem);
+		grid-template-columns: 16rem minmax(0, 34rem);
 		justify-content: start;
 		gap: var(--espace-6);
 		align-items: start;
@@ -70,7 +70,7 @@
 	}
 
 	.bandeau-portrait {
-		width: 14rem;
+		width: 16rem;
 		max-width: 100%;
 	}
 
@@ -82,8 +82,9 @@
 
 	h2 {
 		font-family: var(--police-titre);
-		font-size: var(--taille-xl);
-		line-height: 1.1;
+		font-size: var(--taille-xxl);
+		line-height: 1.02;
+		letter-spacing: -0.015em;
 		margin: 0;
 	}
 
@@ -117,7 +118,7 @@
 	   seuil porte sur la largeur RÉELLE de la fiche (conteneur de requête défini par
 	   la fiche parente), donc le passage se fait « plus tôt » quand l'aside comprime
 	   la colonne (même logique que l'ancien header). */
-	@container (max-width: 34rem) {
+	@container (max-width: 38rem) {
 		.bandeau {
 			grid-template-columns: 1fr;
 			gap: var(--espace-4);

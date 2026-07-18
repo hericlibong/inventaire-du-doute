@@ -207,8 +207,8 @@
 	}
 
 	.tri button.actif {
-		background: var(--couleur-accent);
-		border-color: var(--couleur-accent);
+		background: var(--accent-cobalt);
+		border-color: var(--accent-cobalt);
 		color: #fff;
 	}
 
@@ -251,8 +251,8 @@
 	/* Sélection active clairement identifiable : filet d'accent + fond soutenu +
 	   nom en pleine encre (le survol reste plus léger). */
 	.rang.actif {
-		background: rgba(184, 85, 31, 0.12);
-		border-left-color: var(--couleur-accent);
+		background: rgba(53, 87, 138, 0.1);
+		border-left-color: var(--accent-cobalt);
 	}
 
 	.maitre {
