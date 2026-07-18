@@ -2,7 +2,26 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
-## 2026-07-18 (ter) — Refonte narration « Les presque » : DEUX ÉTATS (guide / maître) — ✅ CODÉ
+## 2026-07-18 (quater) — « Les presque » : retour à un maître d'ouverture (guide abandonné, proportions gardées)
+
+**Revirement après essai des deux états** (2026-07-18 ter). Vu à l'écran, l'état
+« guide » (arrivée sans maître, invitation + 3 étapes) faisait de la page une
+**seconde introduction** : elle se posait au lieu d'explorer. Décision utilisateur :
+**revenir à un premier maître déjà sélectionné dès l'ouverture** — la page est un
+**espace d'exploration** dès l'arrivée, avec une sélection initiale visuellement forte
+(le plus douté, Le Brun, surligné dans le répertoire).
+
+**Ce qu'on garde de la refonte 2026-07-18 (ter)** — les vraies proportions, qui étaient
+le bon correctif : **graphe borné** (`.vue { max-width: 42rem }`, aligné à gauche) et
+**scène = héros** (portrait + synthèse racontent le maître ; le graphe est une figure de
+support). Le problème initial (graphe géant qui écrasait l'intro) reste corrigé.
+
+**Ce qu'on retire** : l'état A / bloc « guide » et la bascule d'état. Une **entrée
+éditoriale unique et courte** (titre + chapô qui oriente vers profil/œuvres/musées +
+précaution) remplace les deux introductions. `selection` démarre sur `artistes[0]`.
+Aucun composant refondu. Build + capture d'ouverture vérifiés.
+
+## 2026-07-18 (ter) — Refonte narration « Les presque » : DEUX ÉTATS (guide / maître) — ✅ CODÉ ⟶ REMPLACÉ par (quater)
 
 **Statut : FAIT (2026-07-18, une passe, un commit).** Spec ci-dessous suivie.
 

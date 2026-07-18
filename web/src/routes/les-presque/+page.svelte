@@ -17,109 +17,74 @@
 	// Onglets de la fiche maître : profil (graphique) · oeuvres · musees.
 	let vue = $state('profil');
 
-	// AUCUN maître par défaut (decisions.md 2026-07-18 ter) : la page ouvre sur un
-	// GUIDE (état A) et ne bascule sur la scène d'un maître (état B) qu'au clic d'un
-	// nom. `selection = null` → le répertoire (rail constant) n'a rien de surligné.
-	let selection = $state(null);
-	const maitre = $derived(selection ? artistes.find((a) => a.nom === selection) : null);
+	// Un premier maître est sélectionné à l'ouverture (decisions.md 2026-07-18 quater) :
+	// la page est un espace d'exploration DÈS l'arrivée, pas un guide. On garde les
+	// proportions de la refonte du 2026-07-18 (ter) — graphe borné, scène héros — mais
+	// on abandonne l'état « guide » (seconde introduction supprimée). Recherche/tri/liste
+	// = Répertoire (rail de gauche).
+	let selection = $state(artistes[0].nom);
+	const maitre = $derived(artistes.find((a) => a.nom === selection));
 
 	// Folio discret (repère secondaire) : rang + cote du musée principal.
-	const rang = $derived(selection ? artistes.findIndex((a) => a.nom === selection) + 1 : 0);
+	const rang = $derived(artistes.findIndex((a) => a.nom === selection) + 1);
 </script>
 
 <div class="page">
-	{#if !selection}
-		<!-- État A — arrivée : l'intro est le contenu principal, plein cadre. -->
-		<header class="dossier">
-			<p class="kicker">Explorer les 27 maîtres</p>
-			<h1>Les presque</h1>
-			<p class="lead">
-				Vingt-sept noms que les musées de France rapprochent d'un grand artiste sans le
-				lui attribuer tout à fait — «&nbsp;attribué à&nbsp;», «&nbsp;atelier de&nbsp;»,
-				«&nbsp;école de&nbsp;»…
-			</p>
-			<p class="precaution">
-				Cette rubrique ne réattribue aucune œuvre. Elle reprend les mots publiés par les
-				musées dans leurs notices, avec leurs précautions.
-			</p>
-		</header>
-	{:else}
-		<!-- État B — un maître sélectionné : l'intro recule en kicker mince. -->
-		<p class="kicker-mince">Les presque · {artistes.length} noms</p>
-	{/if}
+	<!-- Entrée éditoriale UNIQUE et courte : pose le sujet et oriente vers les trois
+	     lectures. Pas de second bloc « guide » : le maître est déjà là, on explore. -->
+	<header class="dossier">
+		<p class="kicker">Explorer les 27 maîtres</p>
+		<h1>Les presque</h1>
+		<p class="lead">
+			Vingt-sept noms que les musées de France rapprochent d'un grand artiste sans le
+			lui attribuer tout à fait — «&nbsp;attribué à&nbsp;», «&nbsp;atelier de&nbsp;»,
+			«&nbsp;école de&nbsp;»… Pour chaque nom&nbsp;: son profil, ses œuvres, et les
+			musées où elles sont conservées.
+		</p>
+		<p class="precaution">
+			Cette rubrique ne réattribue aucune œuvre. Elle reprend les mots publiés par les
+			musées dans leurs notices, avec leurs précautions.
+		</p>
+	</header>
 
 	<div class="grille">
-		<!-- Répertoire en rail : recherche + tri + liste + microprofils. Constant
-		     dans les deux états ; seule la zone de droite bascule. -->
+		<!-- Répertoire en rail : recherche + tri + liste + microprofils. -->
 		<Repertoire {artistes} bind:selection />
 
-		<section class="zone">
-			{#if !maitre}
-				<!-- GUIDE : oriente le lecteur, aucun maître affiché. -->
-				<div class="guide">
-					<p class="guide-invite">Choisissez un nom dans la liste.</p>
-					<p class="guide-sous">
-						Pour chaque maître, trois manières de lire ce que les musées ont écrit&nbsp;:
-					</p>
-					<ol class="etapes">
-						<li>
-							<span class="etape-num">1</span>
-							<span class="etape-txt">
-								<strong>Le profil</strong> — les formules du doute, de la plus proche
-								(«&nbsp;attribué à&nbsp;») à la plus lointaine.
-							</span>
-						</li>
-						<li>
-							<span class="etape-num">2</span>
-							<span class="etape-txt">
-								<strong>Les œuvres</strong> — les mots exacts des musées, notice par
-								notice, avec le lien vers la fiche publique.
-							</span>
-						</li>
-						<li>
-							<span class="etape-num">3</span>
-							<span class="etape-txt">
-								<strong>Les musées</strong> — la carte des lieux où ces œuvres sont
-								conservées.
-							</span>
-						</li>
-					</ol>
+		{#if maitre}
+			<section class="zone">
+				<p class="folio">
+					Nº {rang} / {artistes.length}{maitre.musee_principal
+						? ` · cote ${maitre.musee_principal.code}`
+						: ''}
+				</p>
+
+				<!-- Scène du maître : portrait + nom + synthèse + chiffres (hors onglets). -->
+				<BandeauMaitre {maitre} portrait={portraits[maitre.nom]} />
+
+				<div class="bascule" role="tablist" aria-label="Choisir la vue">
+					<button role="tab" aria-selected={vue === 'profil'} class:actif={vue === 'profil'} onclick={() => (vue = 'profil')}>
+						Profil
+					</button>
+					<button role="tab" aria-selected={vue === 'oeuvres'} class:actif={vue === 'oeuvres'} onclick={() => (vue = 'oeuvres')}>
+						Œuvres
+					</button>
+					<button role="tab" aria-selected={vue === 'musees'} class:actif={vue === 'musees'} onclick={() => (vue = 'musees')}>
+						Musées
+					</button>
 				</div>
-			{:else}
-				<!-- État B — scène du maître : portrait + nom + synthèse + chiffres. -->
-				<div class="fiche">
-					<p class="folio">
-						Nº {rang} / {artistes.length}{maitre.musee_principal
-							? ` · cote ${maitre.musee_principal.code}`
-							: ''}
-					</p>
 
-					<BandeauMaitre {maitre} portrait={portraits[maitre.nom]} />
-
-					<div class="bascule" role="tablist" aria-label="Choisir la vue">
-						<button role="tab" aria-selected={vue === 'profil'} class:actif={vue === 'profil'} onclick={() => (vue = 'profil')}>
-							Profil
-						</button>
-						<button role="tab" aria-selected={vue === 'oeuvres'} class:actif={vue === 'oeuvres'} onclick={() => (vue = 'oeuvres')}>
-							Œuvres
-						</button>
-						<button role="tab" aria-selected={vue === 'musees'} class:actif={vue === 'musees'} onclick={() => (vue = 'musees')}>
-							Musées
-						</button>
-					</div>
-
-					<div class="vue">
-						{#if vue === 'profil'}
-							<NuageFamilles {maitre} {plafond} />
-						{:else if vue === 'oeuvres'}
-							<OeuvresMaitre {maitre} />
-						{:else}
-							<CarteMaitre {maitre} />
-						{/if}
-					</div>
+				<div class="vue">
+					{#if vue === 'profil'}
+						<NuageFamilles {maitre} {plafond} />
+					{:else if vue === 'oeuvres'}
+						<OeuvresMaitre {maitre} />
+					{:else}
+						<CarteMaitre {maitre} />
+					{/if}
 				</div>
-			{/if}
-		</section>
+			</section>
+		{/if}
 	</div>
 </div>
 
@@ -166,16 +131,6 @@
 		color: var(--couleur-encre-douce);
 	}
 
-	/* État B : l'intro recule en simple repère de rubrique au-dessus de la scène. */
-	.kicker-mince {
-		font-family: var(--police-ui);
-		font-size: var(--taille-xs);
-		letter-spacing: 0.14em;
-		text-transform: uppercase;
-		color: var(--accent-cobalt);
-		margin: 0 0 var(--espace-4);
-	}
-
 	/* Zone principale pleine largeur : rail répertoire + scène/vues étalées. */
 	.grille {
 		display: grid;
@@ -191,69 +146,9 @@
 		}
 	}
 
-	/* La zone de droite : conteneur commun aux deux états (guide / scène). */
+	/* La zone de droite : scène du maître (portrait + synthèse) puis onglets + vue. */
 	.zone {
 		container-type: inline-size; /* seuil du bandeau sur la largeur réelle */
-		min-width: 0;
-	}
-
-	/* GUIDE (état A) : orientation sobre, aucune donnée. Borné pour rester lisible. */
-	.guide {
-		max-width: 40rem;
-	}
-
-	.guide-invite {
-		font-family: var(--police-titre);
-		font-size: var(--taille-l);
-		margin: 0 0 var(--espace-2);
-	}
-
-	.guide-sous {
-		font-size: var(--taille-m);
-		color: var(--couleur-encre-douce);
-		margin: 0 0 var(--espace-4);
-	}
-
-	.etapes {
-		list-style: none;
-		margin: 0;
-		padding: 0;
-		display: grid;
-		gap: var(--espace-3);
-	}
-
-	.etapes li {
-		display: grid;
-		grid-template-columns: auto 1fr;
-		gap: var(--espace-3);
-		align-items: baseline;
-	}
-
-	.etape-num {
-		font-family: var(--police-ui);
-		font-size: var(--taille-s);
-		font-weight: 700;
-		color: #fff;
-		background: var(--accent-cobalt);
-		width: 1.6rem;
-		height: 1.6rem;
-		border-radius: 50%;
-		display: inline-flex;
-		align-items: center;
-		justify-content: center;
-		flex: none;
-	}
-
-	.etape-txt {
-		font-size: var(--taille-m);
-		line-height: 1.55;
-	}
-
-	.etape-txt strong {
-		color: var(--couleur-encre);
-	}
-
-	.fiche {
 		min-width: 0;
 	}
 

@@ -143,10 +143,11 @@ plus le sujet ni les chiffres, **chaque page porte désormais son entrée narrat
 
 **Direction « affiche » étendue à toute l'application (C1-C5 faits, 2026-07-18).**
 
-- [x] **Refonte narration « Les presque »** (2026-07-18) — deux états : GUIDE à
-      l'arrivée (`selection = null`, aucun maître ; invitation + 3 étapes), SCÈNE au clic
-      d'un nom ; graphe borné (42 rem, aligné gauche) ; intro qui recule en kicker mince
-      en état B. Une passe, aucun composant refondu. Détail : decisions.md 2026-07-18 (ter).
+- [x] **Refonte narration « Les presque »** (2026-07-18) — d'abord deux états (guide /
+      maître, 2026-07-18 ter), puis **retour à un maître d'ouverture** (quater) : la page
+      est un espace d'exploration dès l'arrivée (Le Brun sélectionné), entrée éditoriale
+      unique et courte, **graphe borné (42 rem) + scène héros conservés** (les proportions
+      étaient le vrai correctif). Guide abandonné. Détail : decisions.md 2026-07-18 (quater).
 
 ### 2. En réserve (conservé, hors V1 publique)
 - [~] **Avant / après** (`/revisions`) — construit (onglets, anneau, prototype
