@@ -2,6 +2,19 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-18 (quinquies) — PAUSE (limite tokens) · point de reprise
+
+Fait à ce jour : direction « affiche » (couverture d'accueil + pages intérieures pleine
+largeur, cadre navy/ivoire, accents cobalt/vermillon) étendue à toute l'application
+(commits `6368cdc` C1 → `7209d6e` C5). `build` OK. Serveur de preview à relancer au
+retour (`npm run preview` dans `web/`).
+
+**POINT DE REPRISE (à faire, parti arrêté, non codé)** : refonte narration de
+`/les-presque` en **deux états** — GUIDE à l'arrivée (aucun maître par défaut, l'intro
+oriente), SCÈNE au clic d'un nom (portrait + profil/œuvres/musées), **graphe borné**,
+intro qui recule en kicker en état B. **Spec complète et exécutable en une passe :
+decisions.md 2026-07-18 (ter)** ; suivi : roadmap ★ REPRISE. Reprendre là après `/clear`.
+
 ## 2026-07-18 (quater) — C3-C4-C5 : direction « affiche » étendue à toute l'application
 
 - **C3 · Comprendre les mentions** en pleine page (`main.pleine` + gouttières) : kicker

@@ -2,6 +2,51 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-18 (ter) — Refonte narration « Les presque » : DEUX ÉTATS (guide / maître) — À EXÉCUTER
+
+**Statut : parti arrêté, PAS ENCORE CODÉ. À faire en UNE passe (pas de pas-à-pas).**
+Point de reprise après pause/`/clear`.
+
+**Problème constaté** (retour utilisateur 2026-07-18) : `/les-presque` ouvre sur un maître
+par défaut (Le Brun) → la scène + le graphe « Profil » **géant** écrasent l'intro ; les
+petits textes de présentation deviennent insignifiants ; l'utilisateur arrive au milieu
+d'une fiche sans savoir quoi faire. La page **perd** le lecteur au lieu de l'orienter.
+
+**Parti retenu.** Un **répertoire permanent à gauche (constant)** ; la **zone de droite
+bascule** entre deux états ; **aucun maître par défaut** (le rail ne bouge pas → pas de
+rupture de mise en page).
+
+- **État A — arrivée (aucun maître sélectionné, `selection = null`)** : la zone de droite
+  est un **GUIDE**, pas une fiche. Contenu : titre « Les presque » + chapô (ce que sont
+  les presque) **en présence forte** + invitation « Choisissez un nom » et les **3 étapes**
+  = les 3 onglets à venir (① profil — les formules du doute ; ② œuvres — les mots des
+  musées ; ③ musées — la carte). **Aucun portrait, aucun maître affiché.** L'intro
+  redevient le contenu principal.
+- **État B — un maître sélectionné (clic sur un nom)** : la zone de droite affiche la
+  **scène du maître** (portrait + nom + phrase de synthèse + chiffres) puis les onglets
+  **Profil · Œuvres · Musées** et la vue. Le cadre/intro **recule** en kicker mince
+  (« Les presque · 27 noms ») — il ne disparaît pas, il n'écrase plus.
+
+**Règles d'équilibre (le vrai correctif) :**
+1. **Graphe borné** : la vue (nuage / œuvres / carte) reçoit un `max-width` (~600-680 px),
+   left-aligné. Fin du graphe qui remplit ~900 px.
+2. **La scène est le héros du maître ; le graphe est une figure de support.** La phrase de
+   **synthèse** (« le plus souvent de son école, près des deux tiers… ») reste dans la
+   scène : c'est elle qui raconte le graphe → le graphe n'a plus besoin d'être énorme.
+3. **L'intro change de rôle selon l'état** : plein cadre en A, kicker mince en B.
+
+**Mobile :** État A = intro + guide, puis répertoire **déplié** (noms visibles). État B =
+au choix, le répertoire se replie (« Choisir un maître »), la scène s'affiche (repli déjà
+en place dans Repertoire.svelte).
+
+**Exécution — une seule passe, un commit.** `selection` démarre à `null` → état A ; clic →
+état B. Ajouter un petit bloc « guide » (composant léger OU inline dans la page ; réutilise
+les libellés existants) + la logique d'état. Kicker mince en B ; borner la vue. **Aucun
+composant existant refondu** (Repertoire, BandeauMaitre, Nuage, Œuvres, Carte réutilisés
+tels quels) ; aucun texte de fond réécrit hors l'entrée. DoD : arrivée sans maître
+(desktop + mobile), sélection, 3 onglets, retour. Fichier principal :
+`web/src/routes/les-presque/+page.svelte` (état + guide + kicker + `.vue { max-width }`).
+
 ## 2026-07-18 (bis) — Extension de la direction « affiche » à l'application (C1 : charte v2 + coquille)
 
 L'accueil « affiche » remplace la Direction B comme cap. On l'étend au reste de l'app.
