@@ -29,23 +29,20 @@
 	</picture>
 
 	<!-- Titre + accroche à trois étages, dans l'aplat sombre (haut-gauche). Contraste
-	     natif sur le bleu sombre. Accroche PROVISOIRE (stabilise la composition, pas un
-	     texte éditorial définitif) : échelle, sujet, approche — sans aucun chiffre précis. -->
+	     natif sur le bleu sombre. Le chiffre 24 507 est le CHIFFRE VEDETTE de la
+	     composition, mais il reste DANS sa phrase (« Dans 24 507 d'entre elles… ») :
+	     il désigne des NOTICES à l'attribution prudente, jamais un décompte d'« œuvres »,
+	     jamais un doute « écrit » ni une réattribution (règle du projet, decisions.md
+	     2026-07-18 sexies). Ne jamais détacher le nombre de son unité. -->
 	<div class="titre">
 		<h1>L'inventaire<br />du doute</h1>
 		<div class="phrases">
 			<p class="e1">Un million de notices.</p>
-			<p class="e3">Une enquête dans les données des musées.</p>
-		</div>
-
-		<!-- Preuve secondaire : le chiffre vedette (24 507) et sa glose. Il remplace
-		     l'étage « des milliers d'attributions incertaines » (redondant) : c'est le
-		     point de départ de l'enquête, en corps réduit pour ne pas concurrencer le titre. -->
-		<div class="preuve">
-			<p class="chiffre">{nombre(doute)}</p>
-			<p class="glose">
-				œuvres pour lesquelles un musée de France a écrit un doute sur l'auteur.
+			<p class="e2">
+				Dans <span class="chiffre">{nombre(doute)}</span> d'entre elles, l'attribution est
+				formulée avec prudence.
 			</p>
+			<p class="e3">Une enquête dans les données des musées.</p>
 		</div>
 
 		<p class="source">À partir de la base Joconde.</p>
@@ -118,41 +115,32 @@
 		color: #f4eee0;
 	}
 
+	/* Étage porteur du chiffre vedette : la phrase reste un TOUT, le nombre ressort
+	   par la couleur et un léger surcorps — jamais détaché en bloc isolé. */
 	.e2 {
-		margin-top: 0.35rem;
+		margin-top: 0.55rem;
 		font-size: clamp(1rem, 1.35vw, 1.2rem);
+		line-height: 1.42;
 		color: #ece4d2;
+		max-width: 24ch;
 	}
 
 	.e3 {
-		margin-top: 0.3rem;
+		margin-top: 0.5rem;
 		font-size: clamp(1rem, 1.35vw, 1.2rem);
 		color: #d8cfbd;
 	}
 
-	/* --- Preuve secondaire : chiffre vedette + glose (aplat sombre) --- */
-	.preuve {
-		margin: 1.2rem 0 0;
-		max-width: 24ch;
-	}
-
+	/* Nombre en vedette, INLINE dans sa phrase : police titre, ivoire chaud,
+	   surcorps modéré, insécable (jamais coupé, jamais séparé de sa phrase). */
 	.chiffre {
-		margin: 0;
 		font-family: var(--police-titre);
 		font-weight: 600;
-		font-size: clamp(1.9rem, 3.2vw, 3rem);
-		line-height: 1;
+		font-size: 1.55em;
 		letter-spacing: -0.01em;
-		color: #eaddc2; /* ivoire chaud, distinct des étages */
+		color: #eaddc2;
 		font-variant-numeric: tabular-nums;
-	}
-
-	.glose {
-		margin: 0.45rem 0 0;
-		font-family: var(--police-texte);
-		font-size: clamp(0.86rem, 1vw, 0.98rem);
-		line-height: 1.4;
-		color: #cfd6dd;
+		white-space: nowrap;
 	}
 
 	.source {
@@ -211,16 +199,6 @@
 		.e3 {
 			font-size: 1rem;
 		}
-		.preuve {
-			margin-top: 1.05rem;
-			max-width: 30ch;
-		}
-		.chiffre {
-			font-size: 2.1rem;
-		}
-		.glose {
-			font-size: 0.9rem;
-		}
 		.source {
 			margin-top: 1rem;
 		}
@@ -254,15 +232,6 @@
 		}
 		.e3 {
 			margin-top: 0.2rem;
-		}
-		.preuve {
-			margin-top: 0.8rem;
-		}
-		.chiffre {
-			font-size: 1.7rem;
-		}
-		.glose {
-			font-size: 0.82rem;
 		}
 		.source {
 			margin-top: 0.7rem;

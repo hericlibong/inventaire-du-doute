@@ -2,7 +2,36 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-18 (sexies) — Accueil : ce que dit (et ne dit pas) le chiffre 24 507
+
+**Correction d'une formulation fausse** que j'avais mise sur la couverture (entrée
+quinquies) : « 24 507 œuvres pour lesquelles un musée de France a écrit un doute sur
+l'auteur. » **À proscrire.** Le nombre 24 507 ne désigne **pas** un décompte certifié
+d'œuvres distinctes : ce sont les **notices retenues par le pipeline dans le corpus des
+formulations prudentes**. Présenter ce total comme « 24 507 œuvres » invente une
+interprétation que les données ne garantissent pas, et frôle l'idée d'authentification —
+ce que le projet ne fait jamais.
+
+**Accroche adoptée** (le nombre reste chiffre vedette de la composition, mais **dans**
+sa phrase, jamais détaché) :
+
+> Un million de notices.
+> Dans **24 507** d'entre elles, l'attribution est formulée avec prudence.
+> Une enquête dans les données des musées.
+
+**Règles de formulation du chiffre (à respecter partout) :**
+- La phrase « Dans 24 507 d'entre elles… » se lit comme **un tout** ; ne jamais séparer
+  le nombre de son unité (les notices), ni le présenter comme « 24 507 œuvres ».
+- **Bannis** : « un musée a écrit un doute », « œuvres douteuses », « œuvres inconnues »,
+  « auteurs inconnus », et toute tournure suggérant que le projet authentifie ou
+  réattribue une œuvre.
+- Implémentation : le nombre est en vedette **inline** dans l'étage `.e2` (`<span
+  class="chiffre">`, insécable), plus de bloc « preuve » isolé + glose.
+
 ## 2026-07-18 (quinquies) — Accueil : retour du chiffre 24 507 + retrait du lien « Accueil »
+
+> ⚠️ La glose citée au point 1 (« œuvres pour lesquelles un musée… a écrit un doute »)
+> est **fausse et retirée** — voir la correction 2026-07-18 (sexies) ci-dessus.
 
 Deux touches sur la couverture d'accueil (demande utilisateur, en petites étapes).
 
