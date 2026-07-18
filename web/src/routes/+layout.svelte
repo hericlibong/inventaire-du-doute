@@ -19,7 +19,8 @@
 	const estPleine = $derived(
 		$page.url.pathname === '/' ||
 			$page.url.pathname.startsWith('/les-presque') ||
-			$page.url.pathname.startsWith('/echelle')
+			$page.url.pathname.startsWith('/echelle') ||
+			$page.url.pathname.startsWith('/methode')
 	);
 
 	// Navigation publique recentrée à QUATRE entrées actives (architecture-

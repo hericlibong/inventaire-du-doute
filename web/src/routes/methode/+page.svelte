@@ -27,8 +27,10 @@
 	];
 </script>
 
+<div class="page">
 <header class="tete">
-	<h1>Méthode et limites</h1>
+	<p class="kicker">Méthode et limites</p>
+	<h1>Ce que les chiffres disent, et ne disent pas</h1>
 	<p class="chapo">
 		Cette page dit comment le projet lit la base Joconde, ce qu'il compte, et ce qu'il
 		ne prétend pas savoir. Elle est publiée au même rang que le reste&nbsp;: les limites
@@ -181,29 +183,43 @@
 </section>
 	</div>
 </div>
+</div>
 
 <style>
-	h1 {
-		font-family: var(--police-titre);
+	/* Pleine page : gouttières propres (direction « affiche »). */
+	.page {
+		padding: var(--espace-5) clamp(1rem, 4vw, 3rem) var(--espace-6);
+	}
+
+	.kicker {
+		font-family: var(--police-ui);
+		font-size: var(--taille-xs);
+		letter-spacing: 0.14em;
+		text-transform: uppercase;
+		color: var(--accent-cobalt);
+		margin: 0 0 var(--espace-2);
 	}
 
 	.tete {
-		max-width: 46rem;
+		max-width: 52rem;
 	}
 
 	h1 {
+		font-family: var(--police-titre);
 		font-size: var(--taille-xl);
+		margin: 0;
 	}
 
 	.chapo {
 		font-size: var(--taille-m);
 		line-height: 1.65;
+		margin: var(--espace-3) 0 0;
 	}
 
-	/* Prudence : plus une boîte grise (Direction B), un filet et de l'italique. */
+	/* Prudence : filet vermillon (accent d'alerte de la charte v2). */
 	.prudence {
 		margin: var(--espace-4) 0 0;
-		border-left: 2px solid var(--couleur-accent);
+		border-left: 2px solid var(--accent-vermillon);
 		padding-left: var(--espace-3);
 		font-style: italic;
 		font-size: var(--taille-s);
@@ -213,7 +229,7 @@
 	/* Deux zones : rail de sommaire (collant sur ordinateur) + contenu. */
 	.grille {
 		display: grid;
-		grid-template-columns: 15rem 1fr;
+		grid-template-columns: 16rem 1fr;
 		gap: var(--espace-6);
 		margin-top: var(--espace-6);
 		align-items: start;
@@ -251,7 +267,7 @@
 
 	.sommaire a:hover {
 		color: var(--couleur-encre);
-		border-left-color: var(--couleur-accent);
+		border-left-color: var(--accent-cobalt);
 	}
 
 	.sommaire .num {

@@ -132,8 +132,9 @@ plus le sujet ni les chiffres, **chaque page porte désormais son entrée narrat
       gouttières ; kicker cobalt + titre « Le langage de la prudence » + chapô resserré ;
       prudence en filet vermillon ; ligne des territoires et grilles (mentions,
       comparaison) étalées ; barres/données/réserves inchangées.
-- [ ] **C4 · Méthode — pleine page sobre** : sommaire en rail + colonnes, contenu validé
-      conservé.
+- [x] **C4 · Méthode — pleine page sobre** (2026-07-18) — `main.pleine` + gouttières ;
+      kicker cobalt + titre « Ce que les chiffres disent, et ne disent pas » ; prudence
+      vermillon ; sommaire en rail collant (accent cobalt) + contenu **validé conservé**.
 - [ ] **C5 · Passe narration + nettoyage** : cohérence des entrées, retrait des redites
       et des restes crème/spectre orphelins.
 
