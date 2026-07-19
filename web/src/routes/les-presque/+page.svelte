@@ -4,12 +4,25 @@
 	import CarteMaitre from '$lib/CarteMaitre.svelte';
 	import BandeauMaitre from '$lib/BandeauMaitre.svelte';
 	import Repertoire from '$lib/Repertoire.svelte';
+	import { nombre } from '$lib/joconde.js';
 	// Archive : la piste « galaxie » est conservée dans $lib/GalaxieMaitre.svelte
 	// (abandonnée dans cette vue, decisions.md 2026-07-08), non importée ici.
 
 	let { data } = $props();
 	const artistes = data.artistes.artistes;
 	const portraits = data.portraits;
+
+	// Chiffres de l'introduction, dérivés des données DÉJÀ chargées (artistes.json) —
+	// pas de seconde source dans le composant (decisions.md 2026-07-19) :
+	//   • nbMaitres = les 27 retenus ;
+	//   • totalNotices = 2 341, somme des notices prudentes des 27.
+	// Le seuil « au moins vingt notices » (critère du fichier) reste en toutes lettres.
+	const nbMaitres = artistes.length;
+	const totalNotices = artistes.reduce((s, a) => s + a.doute, 0);
+	// Séparateur de milliers VISIBLE et insécable : l'espace fine de toLocaleString
+	// (U+202F) ne se voit pas dans Spectral ici → on la remplace par une espace
+	// insécable normale (U+00A0), localement (sans toucher joconde.js ni la scène).
+	const totalNoticesTexte = nombre(totalNotices).replace(/[\u202f\u00a0\s]/g, '\u00a0');
 
 	// Plafond COMMUN de l'axe Y du nuage (≈ 240). Calculé ici, pas en dur.
 	const plafond = Math.max(...artistes.flatMap((a) => a.familles.map((f) => f.notices)));
@@ -30,22 +43,43 @@
 </script>
 
 <div class="page">
-	<!-- Entrée éditoriale UNIQUE et courte : pose le sujet et oriente vers les trois
-	     lectures. Pas de second bloc « guide » : le maître est déjà là, on explore. -->
-	<header class="dossier">
-		<p class="kicker">Explorer les 27 maîtres</p>
-		<h1>Les presque</h1>
-		<p class="lead">
-			Vingt-sept noms que les musées de France rapprochent d'un grand artiste sans le
-			lui attribuer tout à fait — «&nbsp;attribué à&nbsp;», «&nbsp;atelier de&nbsp;»,
-			«&nbsp;école de&nbsp;»… Pour chaque nom&nbsp;: son profil, ses œuvres, et les
-			musées où elles sont conservées.
-		</p>
-		<p class="precaution">
-			Cette rubrique ne réattribue aucune œuvre. Elle reprend les mots publiés par les
-			musées dans leurs notices, avec leurs précautions.
-		</p>
+	<!-- PREMIER TEMPS — entrée éditoriale (titre à gauche, texte à droite sur ordinateur).
+	     Aucun encadré : la composition tient par la typographie et l'espace. Le titre
+	     public de la rubrique est « Explorer les N maîtres » ; l'appellation « Les presque »
+	     est abandonnée (decisions.md 2026-07-19). -->
+	<header class="intro">
+		<div class="intro-titre">
+			<h1>Explorer les {nbMaitres} maîtres</h1>
+		</div>
+		<div class="intro-texte">
+			<p>
+				Dans un inventaire, le nom d'un artiste n'est pas toujours celui de l'auteur. Il
+				peut désigner une attribution probable, le travail d'un atelier, une école ou une
+				influence.
+			</p>
+			<p>
+				Nous avons retenu {nbMaitres} artistes pour lesquels ces formulations apparaissent
+				dans au moins vingt notices de la base Joconde. Ensemble, ils réunissent
+				{totalNoticesTexte} notices accompagnées d'une formulation prudente. Ce seuil
+				n'établit aucun palmarès&nbsp;: il permet de comparer des situations suffisamment
+				documentées.
+			</p>
+			<p>
+				Choisissez un nom pour découvrir les formulations employées, quelques œuvres
+				concernées et les musées qui les conservent.
+			</p>
+			<p class="prudence">
+				Le projet reprend les formulations publiées par les musées&nbsp;; il ne réattribue
+				aucune œuvre.
+			</p>
+		</div>
 	</header>
+
+	<!-- SECOND TEMPS — l'exploration. Séparée du premier temps par un filet et de
+	     l'espace (pas un nouveau bandeau) ; introduite par un intitulé simple. L'outil
+	     lui-même (répertoire + scène + onglets + vues) est inchangé. -->
+	<section class="exploration" aria-labelledby="titre-outil">
+		<h2 id="titre-outil" class="outil-titre">Choisir un artiste</h2>
 
 	<div class="grille">
 		<!-- Répertoire en rail : recherche + tri + liste + microprofils. -->
@@ -86,6 +120,7 @@
 			</section>
 		{/if}
 	</div>
+	</section>
 </div>
 
 <style>
@@ -94,41 +129,79 @@
 		padding: var(--espace-5) clamp(1rem, 4vw, 3rem) var(--espace-6);
 	}
 
-	/* Entrée narrative courte (l'accueil ne pose plus le sujet). */
-	.dossier {
-		max-width: 58rem;
-		margin-bottom: var(--espace-5);
+	/* --- PREMIER TEMPS : entrée éditoriale, deux colonnes (titre | texte). --- */
+	.intro {
+		display: grid;
+		grid-template-columns: minmax(14rem, 22rem) minmax(0, 42rem);
+		gap: clamp(1.5rem, 4vw, 3.5rem);
+		align-items: start;
+		max-width: 72rem;
+		/* Respire, mais sans repousser l'exploration hors du premier écran. */
+		margin: var(--espace-2) 0 clamp(2.25rem, 5vh, 3.5rem);
 	}
 
-	.kicker {
-		font-family: var(--police-ui);
-		font-size: var(--taille-xs);
-		letter-spacing: 0.14em;
-		text-transform: uppercase;
-		color: var(--accent-cobalt);
-		margin: 0 0 var(--espace-2);
-	}
-
-	.dossier h1 {
+	.intro-titre h1 {
 		font-family: var(--police-titre);
-		font-size: var(--taille-xl);
-		margin: 0 0 var(--espace-3);
-	}
-
-	.lead {
-		font-size: var(--taille-m);
-		line-height: 1.6;
-		max-width: 52rem;
+		font-size: clamp(1.9rem, 3.4vw, var(--taille-xxl));
+		line-height: 1.05;
 		margin: 0;
 	}
 
-	.precaution {
-		margin: var(--espace-3) 0 0;
-		border-left: 2px solid var(--accent-vermillon);
-		padding-left: var(--espace-3);
-		font-style: italic;
+	.intro-texte p {
+		font-size: var(--taille-m);
+		line-height: 1.6;
+		margin: 0 0 var(--espace-4);
+	}
+
+	.intro-texte p:last-child {
+		margin-bottom: 0;
+	}
+
+	/* Prudence commune : note secondaire et discrète (pas un encadré d'alerte). */
+	.intro-texte p.prudence {
 		font-size: var(--taille-s);
+		line-height: 1.5;
 		color: var(--couleur-encre-douce);
+		font-style: italic;
+		margin-top: var(--espace-4);
+	}
+
+	/* --- SECOND TEMPS : l'exploration, détachée par un filet + de l'espace. --- */
+	.exploration {
+		border-top: var(--filet);
+		padding-top: clamp(1.75rem, 4vh, 2.75rem);
+	}
+
+	/* Intitulé simple de l'outil : registre UI, repère cobalt discret devant. */
+	.outil-titre {
+		display: flex;
+		align-items: center;
+		gap: var(--espace-3);
+		font-family: var(--police-ui);
+		font-size: var(--taille-s);
+		font-weight: 700;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+		color: var(--couleur-encre);
+		margin: 0 0 var(--espace-5);
+	}
+
+	.outil-titre::before {
+		content: '';
+		width: 1.6rem;
+		height: 3px;
+		background: var(--accent-cobalt);
+		flex: none;
+	}
+
+	@media (max-width: 760px) {
+		/* Mobile : titre, texte et note s'empilent ; « Choisir un artiste » marque le
+		   passage à l'outil. */
+		.intro {
+			grid-template-columns: 1fr;
+			gap: var(--espace-4);
+			margin-bottom: clamp(1.75rem, 5vh, 2.5rem);
+		}
 	}
 
 	/* Zone principale pleine largeur : rail répertoire + scène/vues étalées. */

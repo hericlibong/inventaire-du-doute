@@ -160,6 +160,15 @@ placard : `GalaxieMaitre` (abandonné).
 
 ## 6. Application prioritaire à « Les presque »
 
+> **Titre public (2026-07-19) : « Explorer les 27 maîtres ».** L'appellation « Les
+> presque » est **abandonnée dans les textes publics** ; elle ne subsiste que comme
+> **nom de code interne** (docs, route `/les-presque`, fichiers, exports — non renommés).
+> La page s'ouvre en **deux temps** : (1) entrée éditoriale (titre + texte, deux colonnes
+> sur ordinateur, sans encadré, prudence en note discrète), puis (2) exploration
+> introduite par l'intitulé **« Choisir un artiste »**, détachée par un **filet + de
+> l'espace** (jamais un bandeau décoratif). Vocabulaire : « artistes » dans le texte
+> explicatif, « maîtres » dans le titre et la nav. Détail : decisions.md 2026-07-19.
+
 Petites étapes, validation à chaque palier :
 1. **Tokens + typographie** posés dans `tokens.css`.
 2. **Coquille** (`+layout`) refaite en « inventaire » : bandeau-titre serif +

@@ -148,6 +148,13 @@ plus le sujet ni les chiffres, **chaque page porte désormais son entrée narrat
       est un espace d'exploration dès l'arrivée (Le Brun sélectionné), entrée éditoriale
       unique et courte, **graphe borné (42 rem) + scène héros conservés** (les proportions
       étaient le vrai correctif). Guide abandonné. Détail : decisions.md 2026-07-18 (quater).
+- [x] **Titre + intro « Explorer les 27 maîtres »** (2026-07-19) — appellation publique
+      « Les presque » **abandonnée** (H1 = « Explorer les 27 maîtres » ; route/fichiers/
+      exports inchangés) ; **nouveau texte d'intro** (3 §, seuil expliqué, prudence en
+      note) ; **intro ↔ outil séparés en deux temps** (entrée éditoriale 2 colonnes sans
+      encadré → « Choisir un artiste », filet + espace). Répertoire/profils/onglets/notices/
+      viz **non touchés** (phase distincte). Détail : decisions.md 2026-07-19.
+  - [ ] **Phase suivante (à part)** : ajustements internes du répertoire et des 3 onglets.
 
 ### 2. En réserve (conservé, hors V1 publique)
 - [~] **Avant / après** (`/revisions`) — construit (onglets, anneau, prototype

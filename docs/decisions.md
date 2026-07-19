@@ -2,6 +2,49 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-19 — « Explorer les 27 maîtres » : titre public, intro refondue, intro ↔ outil séparés
+
+Phase limitée à **l'introduction** de la rubrique et à sa **séparation visuelle** d'avec
+l'outil d'exploration. Répertoire, profils, onglets, notices d'œuvres et visualisations
+**non touchés** (phase distincte à venir).
+
+1. **Abandon de l'appellation publique « Les presque ».** Le titre public devient le
+   **H1 « Explorer les {N} maîtres »** (N = `artistes.length`). « Les presque » ne figure
+   plus dans les textes publics de la page. **Reste inchangé** (pas une migration
+   technique) : la route `/les-presque`, les fichiers internes, les exports, les documents
+   historiques. « Les presque » peut subsister comme **nom de code interne** (docs, code).
+
+2. **Nouveau texte d'introduction** (provisoire, fourni par l'utilisateur) : trois
+   paragraphes qui expliquent ce qu'est la rubrique (le nom d'un artiste ≠ l'auteur ;
+   27 artistes retenus au seuil d'« au moins vingt notices » ; 2 341 notices prudentes au
+   total ; le seuil n'est pas un palmarès mais un plancher de comparabilité ; invitation à
+   choisir un nom). L'ancien texte (énumération de formules) est retiré. La phrase de
+   prudence commune (« Le projet reprend les formulations publiées par les musées ; il ne
+   réattribue aucune œuvre. ») est conservée en **note secondaire discrète**. **Interdits
+   respectés** : pas de liste des huit mentions, pas de définition des familles, pas de
+   nouveau chiffre, pas d'interprétation d'authenticité, pas de « distance à la main » (ce
+   vocabulaire vit dans « Comprendre les mentions » et « Méthode »).
+
+3. **Deux temps séparés.** *Premier temps* = entrée éditoriale : deux colonnes sur
+   ordinateur (titre à gauche, texte à droite), largeur de lecture confortable, **aucun
+   encadré**, prudence en note, espace vertical généreux dessous. *Second temps* =
+   exploration, introduite par l'intitulé simple **« Choisir un artiste »** (registre UI,
+   repère cobalt), détachée par un **filet + de l'espace** (pas un nouveau bandeau) ; en
+   dessous, le répertoire + le profil **existants, inchangés**.
+
+4. **Responsive.** Ordinateur : l'intro respire mais le début du répertoire reste
+   perceptible dans le premier écran (vérifié 1280×760). Mobile : titre / texte / note
+   s'empilent, « Choisir un artiste » marque le passage à l'outil, répertoire toujours
+   repliable, aucun texte rapetissé à l'excès.
+
+5. **Chiffres = données déjà chargées, pas de seconde source.** `nbMaitres` =
+   `artistes.length` (27) ; `totalNotices` = somme des `doute` des 27 (2 341) ; le seuil
+   « vingt » est écrit en toutes lettres (critère du fichier `artistes.json`). Détail :
+   l'espace fine insécable de `toLocaleString` (U+202F) ne se voit pas dans Spectral →
+   remplacée **localement** par une espace insécable normale (U+00A0), sans toucher
+   `joconde.js` ni la scène. Vocabulaire : **« artistes »** dans le texte explicatif,
+   **« maîtres »** conservé dans le titre et la nav déjà validée.
+
 ## 2026-07-18 (sexies) — Accueil : ce que dit (et ne dit pas) le chiffre 24 507
 
 **Correction d'une formulation fausse** que j'avais mise sur la couverture (entrée

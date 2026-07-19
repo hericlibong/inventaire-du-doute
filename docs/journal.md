@@ -2,6 +2,24 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-19 — Rubrique « Explorer les 27 maîtres » : titre, intro, séparation intro ↔ outil
+
+Séance ciblée (périmètre volontairement restreint) sur `/les-presque` :
+- Titre public **« Les presque » abandonné** → H1 **« Explorer les 27 maîtres »**.
+- **Nouveau texte d'intro** (3 paragraphes fournis) expliquant la rubrique et le seuil,
+  phrase de prudence en note discrète ; ancien texte (énumération de formules) retiré.
+- **Deux temps séparés** : entrée éditoriale en deux colonnes (titre/texte, sans encadré),
+  puis exploration introduite par **« Choisir un artiste »** (filet + espace, repère
+  cobalt). Répertoire, profils, onglets, notices, viz **non touchés**.
+- Chiffres 27 / 2 341 dérivés des données chargées ; « vingt » en toutes lettres ;
+  correction locale de l'espace des milliers (U+00A0). Vérifié desktop (1280×760, début
+  du répertoire visible dans le 1er écran) + mobile (empilement lisible). `build` OK.
+- Avant cette séance (mêmes fils, en amont) : retour d'un maître d'ouverture sur
+  `/les-presque` ; retour du chiffre vedette 24 507 sur l'accueil **avec formulation
+  corrigée** (24 507 = notices prudentes, jamais « œuvres »), retrait du lien « Accueil »
+  de la couverture. Détails : decisions.md 2026-07-18 (quater→sexies) et 2026-07-19.
+- Preview désormais sur **port fixe 4340**.
+
 ## 2026-07-18 (quinquies) — PAUSE (limite tokens) · point de reprise
 
 Fait à ce jour : direction « affiche » (couverture d'accueil + pages intérieures pleine
