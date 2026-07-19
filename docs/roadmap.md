@@ -154,7 +154,13 @@ plus le sujet ni les chiffres, **chaque page porte désormais son entrée narrat
       note) ; **intro ↔ outil séparés en deux temps** (entrée éditoriale 2 colonnes sans
       encadré → « Choisir un artiste », filet + espace). Répertoire/profils/onglets/notices/
       viz **non touchés** (phase distincte). Détail : decisions.md 2026-07-19.
-  - [ ] **Phase suivante (à part)** : ajustements internes du répertoire et des 3 onglets.
+- [x] **Fiche artiste — hiérarchie des informations** (2026-07-19 bis) — `doute` en valeur
+      principale (« 310 notices… »), dénominateur `propre + doute` (« 9 % … périmètre
+      étudié »), répartition `nb_musees_doute` (19, plus le 64 général), formulation
+      dominante générée (accords + égalités via `ORDRE_FAMILLES`, `fractionEnMots`
+      abandonnée). Répertoire : tri « Notices » + micro-légende. Méthode : total de
+      référence expliqué. Pipeline inchangé. Détail : decisions.md 2026-07-19 (bis).
+  - [ ] **Phase suivante (à part)** : notices de l'onglet Œuvres (wording « œuvres »).
 
 ### 2. En réserve (conservé, hors V1 publique)
 - [~] **Avant / après** (`/revisions`) — construit (onglets, anneau, prototype

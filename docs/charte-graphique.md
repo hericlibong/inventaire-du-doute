@@ -113,9 +113,14 @@ pas un catalogue abstrait. Chaque primitive reste agnostique du dossier.
   liste + microprofils) ; ne partage plus sa largeur avec une légende. **Fait le
   2026-07-17** (`Repertoire.svelte` : tri Œuvres/A→Z, sélection active à filet
   d'accent, repliable en mobile ; légende retirée de sous la liste).
-- **BandeauMaitre** — la « scène du maître » : portrait agrandi + nom + **phrase de
-  synthèse calculée** + chiffres vedettes. (Nommé `BandeauMaitre` et **pas**
-  `ProfilMaitre`, car « Profil » est un nom d'onglet — décision utilisateur.)
+- **BandeauMaitre** — la « scène du maître » : portrait agrandi + nom + **hiérarchie
+  d'informations calculée** (Nommé `BandeauMaitre` et **pas** `ProfilMaitre`, car
+  « Profil » est un nom d'onglet — décision utilisateur.) Ordre de lecture arrêté le
+  2026-07-19 (bis) : **`doute` en valeur principale** (« 310 notices… ») ; **part** sur le
+  total de référence `propre + doute` en registre secondaire (« 9 % … périmètre étudié ») ;
+  **répartition** sur `nb_musees_doute` ; **formulation dominante** générée (accords +
+  égalités par `ORDRE_FAMILLES`). Pourcentages en `Math.round` ; `fractionEnMots` proscrite.
+  Une seule valeur en vedette (le doute) : ne pas transformer tous les chiffres en vedettes.
 - **Onglets** — un seul composant (unifie la bascule des presque et les onglets
   révisions) ; libellés éditoriaux **Profil · Œuvres · Musées**.
 

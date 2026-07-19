@@ -2,6 +2,47 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-19 (bis) — Fiche artiste : hiérarchie des informations (le doute est le sujet)
+
+**Problème.** La scène mettait en avant **3 344 œuvres** et **64 musées** (volume total sous
+le nom) alors que le sujet de la rubrique est le **doute** (les 310 notices affichées dans
+le répertoire). Le lecteur devait reconstituer la relation entre ces valeurs.
+
+**Nouvelle hiérarchie de la fiche** (composant `BandeauMaitre.svelte`, phrases toutes
+**générées depuis `artistes.json`**, aucun texte manuel par artiste) :
+1. **Information principale** = `doute`, en grand (nettement plus visible) : « 310 » +
+   « notices où son nom est accompagné d'une formulation prudente ». On dit **notices** (le
+   pipeline compte des notices Joconde, pas un ensemble certifié d'œuvres distinctes).
+2. **Dénominateur** en registre secondaire : « 9 % des 3 344 notices associées à son nom
+   dans le périmètre étudié ». Total de référence = **`propre + doute`** ; part =
+   `Math.round(doute / (propre + doute) * 100)`. Le total n'est PAS l'ensemble absolu des
+   notices du nom (copies « d'après » et catégories exclues comptées à part) → **« dans le
+   périmètre étudié »**. Explication ajoutée à la page Méthode (« Lire les chiffres »).
+   3 344 n'est plus présenté comme le sujet.
+3. **Répartition entre musées** : `nb_musees_doute` (19), pas le `musees` général (64,
+   retiré du bandeau car il ne répond pas à la question). « Ces 310 notices se répartissent
+   entre 19 musées. » Le profil et la vue Musées parlent **du même corpus** (`musees_doute`).
+4. **Formulation dominante** : « La formulation la plus fréquente est "de son école" :
+   240 notices, soit 77 %. » Construite depuis les données (famille dominante réelle,
+   notices, part dans `doute`, libellé public canonique, accords). **Égalités** gérées : à
+   part égale, on liste toutes les familles au maximum, **ordonnées par `ORDRE_FAMILLES`**
+   (jamais l'ordre des données), énumération française + « chacune » (ex. Hyacinthe Rigaud :
+   « "attribué à" et "de son école" : 16 notices chacune, soit 39 % »).
+
+**Règles.** Tous les pourcentages de la fiche via `Math.round` (pas de décimale mêlée).
+**`fractionEnMots` n'est plus utilisée** (l'ancienne synthèse « près des deux tiers » était
+imprécise/fausse pour Le Brun : 240/310 = 77 %). Espace des milliers rendue visible
+localement (U+00A0). Aucune donnée ni calcul du pipeline modifié.
+
+**Répertoire** : le tri « Œuvres » devient **« Notices »** ; micro-légende « ARTISTE ·
+NOTICES CONCERNÉES ». Le nombre à droite (= `doute`) est **le même** que la valeur
+principale du profil.
+
+**Vérifié** : Le Brun, Ingres, Rembrandt, Titien (petit volume), Rigaud (égalité) ; les
+trois onglets ; desktop + mobile ; cohérence sur les 27 (somme des familles = `doute`,
+`nb_musees_doute` = points de carte, aucun doute sans musée ; parts de 1 à 59 %).
+**Hors périmètre (phase séparée)** : les notices de l'onglet Œuvres (wording « œuvres »).
+
 ## 2026-07-19 — « Explorer les 27 maîtres » : titre public, intro refondue, intro ↔ outil séparés
 
 Phase limitée à **l'introduction** de la rubrique et à sa **séparation visuelle** d'avec

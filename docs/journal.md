@@ -2,6 +2,18 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-19 (bis) — Fiche artiste : hiérarchie des informations
+
+Refonte de la hiérarchie de la scène (`BandeauMaitre.svelte`) : `doute` en valeur
+principale (« 310 notices… »), part sur le total de référence `propre + doute` (« 9 % …
+périmètre étudié »), répartition sur `nb_musees_doute` (19, pas 64), formulation dominante
+générée (famille dominante réelle + notices + part + libellé public + accords + égalités
+via `ORDRE_FAMILLES`). `fractionEnMots` abandonnée (l'ancienne « près des deux tiers » était
+fausse : 240/310 = 77 %). Répertoire : tri « Notices » + micro-légende « notices
+concernées ». Page Méthode : explication du total de référence. Pipeline **non** touché.
+Vérifié (Le Brun, Ingres, Rembrandt, Titien, Rigaud/égalité ; 3 onglets ; desktop + mobile ;
+cohérence sur les 27). `build` OK. Prochaine phase (à part) : notices de l'onglet Œuvres.
+
 ## 2026-07-19 — Rubrique « Explorer les 27 maîtres » : titre, intro, séparation intro ↔ outil
 
 Séance ciblée (périmètre volontairement restreint) sur `/les-presque` :

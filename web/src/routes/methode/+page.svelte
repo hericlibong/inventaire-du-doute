@@ -130,6 +130,15 @@
 		restent donc hors du décompte du doute.
 	</p>
 	<p>
+		<strong>Le «&nbsp;périmètre étudié&nbsp;» d'un artiste.</strong> Sur la fiche d'un
+		artiste, la part affichée (par exemple «&nbsp;9&nbsp;% des notices associées à son
+		nom&nbsp;») se rapporte à un <strong>total de référence</strong>&nbsp;: les notices
+		classées comme attribution directe ou comme formulation prudente. Les copies
+		«&nbsp;d'après&nbsp;» et les autres catégories exclues par le pipeline sont comptées
+		séparément et n'entrent pas dans ce dénominateur&nbsp;: c'est pourquoi l'interface
+		parle du «&nbsp;périmètre étudié&nbsp;» et non de l'ensemble absolu des notices.
+	</p>
+	<p>
 		<strong>Un seul musée peut peser lourd.</strong> {nombre(n.monoculture_divulguee.doute)}
 		formulations prudentes — près d'un quart du total national — viennent d'un seul
 		établissement&nbsp;: {n.monoculture_divulguee.libelle}, dont les planches naturalistes

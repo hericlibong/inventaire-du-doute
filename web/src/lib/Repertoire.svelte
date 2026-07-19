@@ -75,7 +75,7 @@
 						aria-pressed={tri === 'nombre'}
 						onclick={() => (tri = 'nombre')}
 					>
-						Œuvres
+						Notices
 					</button>
 					<button
 						class:actif={tri === 'alpha'}
@@ -86,6 +86,12 @@
 					</button>
 				</div>
 			</div>
+
+			<!-- Micro-légende : le nombre à droite de chaque nom est le MÊME `doute` que
+			     la valeur principale du profil (notices à formulation prudente). -->
+			<p class="legende-liste">
+				<span>Artiste</span><span>Notices concernées</span>
+			</p>
 
 			<ul class="maitres">
 				{#each liste as a (a.nom)}
@@ -226,9 +232,23 @@
 		clip: rect(0 0 0 0);
 	}
 
+	/* Micro-légende : en-tête discret de la liste, aligné sur nom | compte. */
+	.legende-liste {
+		display: flex;
+		justify-content: space-between;
+		gap: var(--espace-3);
+		margin: var(--espace-3) 0 0;
+		padding: 0 0.5rem var(--espace-1);
+		font-family: var(--police-ui);
+		font-size: var(--taille-xs);
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		color: var(--couleur-encre-douce);
+	}
+
 	.maitres {
 		list-style: none;
-		margin: var(--espace-3) 0 0;
+		margin: var(--espace-2) 0 0;
 		padding: 0;
 		max-height: 34rem;
 		overflow-y: auto;
