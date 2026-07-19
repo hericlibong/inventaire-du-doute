@@ -2,6 +2,42 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-19 (ter) — Wording des comptages : « notices » partout, « œuvre » réservé à l'objet montré
+
+**Problème.** Après la refonte de la fiche (2026-07-19 bis, qui dit « 310 notices »), le
+reste de l'interface disait encore « œuvres » pour les mêmes comptages : tooltips du
+graphique (« 240 œuvres » face à « 240 notices » dans la phrase de dominante), bande des
+copies de la vitrine (« 237 œuvres "d'après" »), carte des musées (« N œuvres
+concernées », « où au moins une œuvre concernée est conservée »), panneaux de
+`/echelle` (« 24 507 œuvres concernées ») et page Méthode (seuil « vingt œuvres »).
+Or le pipeline compte des **notices Joconde**, pas un ensemble certifié d'œuvres
+distinctes (règle du chiffre 24 507).
+
+**Doctrine adoptée** (vaut pour toute copie publique à venir) :
+- **Tout comptage se dit en « notices »** — valeur, tooltip, légende, seuil, total.
+- **« œuvre » reste permis pour un objet montré individuellement** (une entrée de la
+  vitrine, l'aperçu d'un point de carte, « il ne réattribue aucune œuvre ») : là, le mot
+  désigne bien un objet réel, pas un décompte.
+
+**Application** (copie seule, aucune donnée ni calcul modifiés) :
+- `familles-public.js` : helper `oeuvres()` **renommé `notices()`** (« 1 notice » /
+  « n notices ») ; les tooltips du graphique et leurs aria-labels disent désormais la
+  même chose que la phrase de dominante de la fiche.
+- Vitrine (`OeuvresMaitre`) : « À part : 237 notices **portent la mention** "d'après
+  Charles Le Brun" — des copies assumées… » (accord porte/portent géré). Le titre
+  « Quelques œuvres derrière les points » est conservé (objets montrés un à un).
+- Carte (`CarteMaitre`) : titre **« D'où viennent ces notices »** (les musées ont écrit
+  les notices — cohérent avec « on lit ce que les musées écrivent ») ; légende « Un
+  point = un musée **ayant publié** au moins une notice concernée » ; tooltips « N
+  notice(s) concernée(s) » ; replis et hors-cadre reformulés (« relève(nt) d'un seul
+  musée », « rattachées à N musées ») ; aria-label du SVG aligné.
+- `/echelle` : « notices concernées » (panneaux + texte), « une même notice peut porter
+  plusieurs mentions », copies « d'après » en notices. Au passage, **purge du reliquat
+  « Les presque »** (appellation abandonnée en public le 2026-07-19) → « la rubrique
+  "Explorer les maîtres" » (libellé de la nav).
+- Méthode : seuil « au moins **vingt notices** portant une formulation prudente » (aligné
+  sur l'intro de la rubrique) ; copies en « notices ».
+
 ## 2026-07-19 (bis) — Fiche artiste : hiérarchie des informations (le doute est le sujet)
 
 **Problème.** La scène mettait en avant **3 344 œuvres** et **64 musées** (volume total sous

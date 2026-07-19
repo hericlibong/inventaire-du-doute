@@ -118,15 +118,18 @@ export const ORDRE_FAMILLES = [
 	'genre_de'
 ];
 
-// Valeur accordée en nombre : « 1 œuvre », « 2 œuvres ». Jamais de concaténation
-// directe `${n} œuvres` (fauterait le singulier). En français, seul 1 (et -1) est
-// singulier ; 0 et ≥ 2 prennent le pluriel.
-export function oeuvres(n) {
-	return `${nombre(n)} ${Math.abs(n) === 1 ? 'œuvre' : 'œuvres'}`;
+// Valeur accordée en nombre : « 1 notice », « 2 notices ». Tout COMPTAGE public
+// se dit en notices (le pipeline compte des notices Joconde, jamais un ensemble
+// certifié d'œuvres distinctes — decisions.md 2026-07-19) ; « œuvre » reste
+// réservé aux objets montrés individuellement (vitrine, aperçu de carte). Jamais
+// de concaténation directe `${n} notices` (fauterait le singulier) : en français,
+// seul 1 (et -1) est singulier ; 0 et ≥ 2 prennent le pluriel.
+export function notices(n) {
+	return `${nombre(n)} ${Math.abs(n) === 1 ? 'notice' : 'notices'}`;
 }
 
 // Données du tooltip d'un point, prêtes à afficher (header / corps / valeur /
-// mention type). `n` est le nombre BRUT d'œuvres (entier), accordé ici. `corps`
+// mention type). `n` est le nombre BRUT de notices (entier), accordé ici. `corps`
 // est une précision courte (peut être vide). `mentionType` vaut null quand la
 // règle anti-répétition l'écarte.
 export function tooltipFamille(code, nomMaitre, n) {
@@ -135,7 +138,7 @@ export function tooltipFamille(code, nomMaitre, n) {
 		header: f.header,
 		headerPastille: f.couleur, // pastille de la mention, dans la bande de tête
 		corps: f.corps,
-		valeur: oeuvres(n),
+		valeur: notices(n),
 		mentionType: f.montrerMention ? f.mention(nomMaitre) : null
 	};
 }

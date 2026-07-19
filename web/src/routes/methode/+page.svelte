@@ -95,7 +95,7 @@
 	<p>
 		Une partie du site se concentre sur <strong>{nombre(nbNoms)} noms</strong> de
 		référence. Le critère est explicite&nbsp;: un artiste connu <em>et</em> au moins
-		vingt œuvres portant une formulation prudente (copies exclues), une fois le nom bien
+		vingt notices portant une formulation prudente (copies exclues), une fois le nom bien
 		isolé. Ce n'est <strong>pas un palmarès des plus grands</strong>&nbsp;: c'est un
 		seuil, choisi pour avoir assez de matière à montrer. Ces {nombre(nbNoms)} noms
 		réunissent {nombre(douteDans27)} des formulations prudentes.
@@ -126,8 +126,8 @@
 		<strong>Les copies «&nbsp;d'après&nbsp;» sont comptées à part.</strong> Écrire
 		«&nbsp;d'après Rembrandt&nbsp;», c'est le plus souvent désigner une copie assumée
 		d'un modèle&nbsp;: ce n'est pas un doute sur l'auteur, mais un statut. Ces
-		{nombre(dApres)} œuvres «&nbsp;d'après&nbsp;» ({nombre(copiesTotal)} copies au total)
-		restent donc hors du décompte du doute.
+		{nombre(dApres)} notices «&nbsp;d'après&nbsp;» ({nombre(copiesTotal)} notices de
+		copies au total) restent donc hors du décompte du doute.
 	</p>
 	<p>
 		<strong>Le «&nbsp;périmètre étudié&nbsp;» d'un artiste.</strong> Sur la fiche d'un

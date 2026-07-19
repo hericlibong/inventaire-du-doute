@@ -106,10 +106,11 @@
 <section class="bloc">
 	<h2>Ce que disent les chiffres</h2>
 	<p class="texte">
-		Dans l'ensemble des œuvres concernées, une formule domine largement&nbsp;:
+		Dans l'ensemble des notices concernées, une formule domine largement&nbsp;:
 		«&nbsp;attribué à&nbsp;», qui reste au plus près de la main de l'artiste. Mais parmi
-		les vingt-sept noms de référence réunis dans «&nbsp;Les presque&nbsp;», les liens plus
-		indirects — l'atelier, l'école, la manière — prennent beaucoup plus de place.
+		les vingt-sept noms de référence de la rubrique «&nbsp;Explorer les maîtres&nbsp;»,
+		les liens plus indirects — l'atelier, l'école, la manière — prennent beaucoup plus
+		de place.
 	</p>
 
 	<div class="comparaison">
@@ -118,10 +119,10 @@
 	</div>
 
 	<p class="reserve">
-		Une même œuvre peut porter plusieurs de ces mentions&nbsp;: les parts ne s'additionnent
+		Une même notice peut porter plusieurs de ces mentions&nbsp;: les parts ne s'additionnent
 		pas à 100&nbsp;% et ne se lisent pas comme les tranches d'un tout. Les copies assumées
 		(«&nbsp;d'après&nbsp;»), qui ne sont pas un doute, sont comptées à part&nbsp;:
-		{nombre(vue.copies_dapres.dont_d_apres)} œuvres. Enfin, un même musée peut peser lourd
+		{nombre(vue.copies_dapres.dont_d_apres)} notices. Enfin, un même musée peut peser lourd
 		dans l'ensemble&nbsp;; ce détail relève de la page Méthode.
 	</p>
 </section>

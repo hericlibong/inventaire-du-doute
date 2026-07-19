@@ -2,6 +2,18 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-19 (ter) — Wording des comptages : « notices » partout
+
+Passe de cohérence sur toute la copie publique après la refonte de la fiche : tout
+comptage se dit désormais en **notices** (tooltips du graphique via `notices()`,
+ex-`oeuvres()` ; bande des copies de la vitrine ; carte des musées — titre « D'où
+viennent ces notices », légende « ayant publié », replis, hors-cadre ; panneaux et texte
+de `/echelle` ; seuil « vingt notices » de la page Méthode). « œuvre » reste réservé aux
+objets montrés individuellement (vitrine, aperçu de carte). Au passage : purge du
+reliquat public « Les presque » sur `/echelle` → « la rubrique "Explorer les maîtres" ».
+Copie seule, aucune donnée ni calcul modifiés. `build` OK. Doctrine complète :
+decisions.md 2026-07-19 (ter).
+
 ## 2026-07-19 (bis) — Fiche artiste : hiérarchie des informations
 
 Refonte de la hiérarchie de la scène (`BandeauMaitre.svelte`) : `doute` en valeur

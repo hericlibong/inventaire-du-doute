@@ -5,14 +5,14 @@
 	// échelle COMMUNE (même maxPart) rendent comparables l'ensemble de Joconde et les
 	// 27 noms. Les mentions se recouvrent → ce ne sont PAS les parts exclusives d'un
 	// total (aucun empilement, aucun anneau) : chaque barre est une part indépendante
-	// des œuvres concernées, et les parts ne s'additionnent pas à 100 %.
+	// des notices concernées, et les parts ne s'additionnent pas à 100 %.
 	import { nombre } from '$lib/joconde.js';
 	import { FAMILLE_PUBLIC } from '$lib/familles-public.js';
 	import { TERRITOIRES } from '$lib/territoires.js';
 
 	// titre     — nom de la série (« Ensemble de Joconde »)
 	// total     — base de la série (pour les %), affichée en sous-titre
-	// valeurs   — objet code → nombre d'œuvres pour cette série
+	// valeurs   — objet code → nombre de notices pour cette série
 	// maxPart   — part maximale sur LES DEUX séries (échelle commune, 0–1)
 	let { titre, total, valeurs, maxPart } = $props();
 
@@ -28,7 +28,7 @@
 <figure class="panneau">
 	<figcaption class="tete">
 		<span class="serie">{titre}</span>
-		<span class="base">{nombre(total)} œuvres concernées</span>
+		<span class="base">{nombre(total)} notices concernées</span>
 	</figcaption>
 
 	{#each TERRITOIRES as t (t.id)}

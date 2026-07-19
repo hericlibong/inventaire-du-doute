@@ -15,7 +15,7 @@
 	// tard, roadmap P3-T1).
 	let recherche = $state('');
 
-	// Tri : par nombre d'œuvres concernées (défaut, ordre naturel du dossier) ou
+	// Tri : par nombre de notices concernées (défaut, ordre naturel du dossier) ou
 	// alphabétique. « Trier par valeur, sauf ordre naturel » (CLAUDE.md) : le doute
 	// EST la valeur, on la garde par défaut ; l'alphabétique aide à retrouver un nom.
 	let tri = $state('nombre'); // 'nombre' | 'alpha'

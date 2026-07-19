@@ -160,7 +160,11 @@ plus le sujet ni les chiffres, **chaque page porte désormais son entrée narrat
       dominante générée (accords + égalités via `ORDRE_FAMILLES`, `fractionEnMots`
       abandonnée). Répertoire : tri « Notices » + micro-légende. Méthode : total de
       référence expliqué. Pipeline inchangé. Détail : decisions.md 2026-07-19 (bis).
-  - [ ] **Phase suivante (à part)** : notices de l'onglet Œuvres (wording « œuvres »).
+  - [x] **Wording des comptages — « notices » partout** (2026-07-19 ter) — helper
+        `notices()` (ex-`oeuvres()`) ; tooltips, vitrine (copies), carte (titre, légende,
+        replis), `/echelle` (panneaux + texte + purge du reliquat « Les presque »),
+        Méthode (seuil « vingt notices »). « œuvre » réservé aux objets montrés
+        individuellement. Détail : decisions.md 2026-07-19 (ter).
 
 ### 2. En réserve (conservé, hors V1 publique)
 - [~] **Avant / après** (`/revisions`) — construit (onglets, anneau, prototype

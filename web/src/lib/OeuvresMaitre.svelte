@@ -1,6 +1,6 @@
 <script>
 	import { lienPop } from '$lib/joconde.js';
-	import { FAMILLE_PUBLIC, ORDRE_FAMILLES, oeuvres } from '$lib/familles-public.js';
+	import { FAMILLE_PUBLIC, ORDRE_FAMILLES, notices } from '$lib/familles-public.js';
 
 	// Vitrine « Œuvres » (décision 2026-07-11) : quelques cas concrets derrière
 	// les points du graphique. Chaque entrée montre une œuvre réelle avec les MOTS
@@ -66,7 +66,8 @@
 	     du doute (couleur neutre), jamais mêlées aux entrées. -->
 	<div class="bande-copie">
 		<p class="copie-texte">
-			À part&nbsp;: <strong>{oeuvres(maitre.copie)}</strong> «&nbsp;d'après
+			À part&nbsp;: <strong>{notices(maitre.copie)}</strong>
+			porte{maitre.copie === 1 ? '' : 'nt'} la mention «&nbsp;d'après
 			{maitre.nom}&nbsp;» — des copies assumées, pas des attributions incertaines.
 		</p>
 		{#if maitre.exemple_copie}

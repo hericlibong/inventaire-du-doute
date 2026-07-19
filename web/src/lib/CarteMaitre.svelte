@@ -1,6 +1,6 @@
 <script>
 	// Carte par maître (decisions.md 2026-07-12, taille fixe retenue après test A/B).
-	// Une seule question : OÙ sont conservées les œuvres concernées — présence et
+	// Une seule question : D'OÙ viennent les notices concernées — présence et
 	// distribution des musées, pas leur classement. Tous les points ont la MÊME
 	// taille : une taille variable rendrait un « gros cercle » incomparable d'une
 	// fiche à l'autre (échelle propre au maître) et gonflerait de petits volumes.
@@ -11,7 +11,7 @@
 	import { base } from '$app/paths';
 	import Infobulle from '$lib/Infobulle.svelte';
 	import { nombre, lienPop } from '$lib/joconde.js';
-	import { FAMILLE_PUBLIC, oeuvres } from '$lib/familles-public.js';
+	import { FAMILLE_PUBLIC, notices } from '$lib/familles-public.js';
 	import { estProjetable, creerProjection, creerChemin, normaliserFond, ecarterPoints } from '$lib/geo.js';
 
 	let { maitre } = $props();
@@ -37,8 +37,8 @@
 	// deux musées projetables, on remplace la carte par une phrase.
 	const afficheCarte = $derived(projetables.length >= 2);
 
-	// « N œuvre(s) concernée(s) » — accord géré par oeuvres(), puis participe accordé.
-	const concernees = (n) => `${oeuvres(n)} concernée${n > 1 ? 's' : ''}`;
+	// « N notice(s) concernée(s) » — accord géré par notices(), puis participe accordé.
+	const concernees = (n) => `${notices(n)} concernée${n > 1 ? 's' : ''}`;
 
 	// Ventilation du musée par FAMILLE PUBLIQUE (jamais de niveau ni de jargon),
 	// triée par valeur décroissante (dataviz : trier par valeur). Chaque ligne
@@ -64,9 +64,9 @@
 			const [x, y] = projection([m.lon, m.lat]);
 			const lignes = ventilation(m);
 			const detail = lignes.map((l) => `${l.label} ${l.valeur}`).join(', ');
-			// Musée à une seule œuvre : le point devient un lien vers la fiche
+			// Musée à une seule notice : le point devient un lien vers la fiche
 			// publique POP. Le titre (s'il existe) sert d'aperçu dans le tooltip et
-			// d'intitulé de lien. Les musées multi-œuvres restent non cliquables.
+			// d'intitulé de lien. Les musées multi-notices restent non cliquables.
 			const ou = m.doute === 1 ? m.oeuvre_unique : null;
 			const titre = ou?.titre || null;
 			const href = ou ? lienPop(ou.reference) : null;
@@ -118,19 +118,19 @@
 </script>
 
 <figure class="carte">
-	<figcaption class="titre">Où sont conservées ces œuvres</figcaption>
+	<figcaption class="titre">D'où viennent ces notices</figcaption>
 
 	{#if afficheCarte}
 	<div class="agencement">
 		<div class="scene" bind:this={regardEl}>
-			<svg viewBox="0 0 {W} {H}" role="img" aria-label="Carte des musées de France conservant des œuvres dont l’attribution à {maitre.nom} est incertaine">
+			<svg viewBox="0 0 {W} {H}" role="img" aria-label="Carte des musées de France ayant publié des notices où le nom de {maitre.nom} est accompagné d’une formulation prudente">
 				<!-- Fond régions : illustration discrète, aucune donnée. -->
 				{#each regions as d, i (i)}
 					<path {d} class="region" />
 				{/each}
-				<!-- Un point = un musée (tous de même taille). Musée à une seule œuvre :
+				<!-- Un point = un musée (tous de même taille). Musée à une seule notice :
 				     le point est un LIEN vers la fiche publique POP (le survol/focus
-				     montre l'aperçu). Musée multi-œuvres : point non cliquable, tooltip
+				     montre l'aperçu). Musée multi-notices : point non cliquable, tooltip
 				     seul (comportement inchangé). -->
 				{#each points as p (p.code)}
 					{#if p.href}
@@ -171,14 +171,14 @@
 		</div>
 
 		<div class="flanc">
-			<!-- Légende : un seul repère de point (présence). Le nombre d'œuvres par
+			<!-- Légende : un seul repère de point (présence). Le nombre de notices par
 			     musée se lit au survol, pas dans la taille. -->
 			<div class="legende">
 				<svg class="repere" viewBox="0 0 {2 * R_POINT} {2 * R_POINT}" width={2 * R_POINT} height={2 * R_POINT} aria-hidden="true">
 					<circle cx={R_POINT} cy={R_POINT} r={R_POINT} class="point" />
 				</svg>
 				<p class="legende-texte">
-					Un point = un musée où au moins une œuvre concernée est conservée.
+					Un point = un musée ayant publié au moins une notice concernée.
 					Passez sur un point pour voir combien, et sous quelles formules.
 				</p>
 			</div>
@@ -186,12 +186,12 @@
 	</div>
 	{:else if projetables.length === 1}
 		<p class="repli">
-			Ces œuvres sont conservées dans un seul lieu&nbsp;: {projetables[0].nom}, à
-			{projetables[0].ville}.
+			{projetables[0].doute === 1 ? 'Cette notice relève' : 'Ces notices relèvent'}
+			d'un seul musée&nbsp;: {projetables[0].nom}, à {projetables[0].ville}.
 		</p>
 	{:else}
 		<p class="repli">
-			Ces œuvres ne sont pas conservées en France métropolitaine.
+			Aucune de ces notices ne relève d'un musée de France métropolitaine.
 		</p>
 	{/if}
 
@@ -200,10 +200,10 @@
 		<p class="hors-cadre">
 			Hors cadre métropolitain&nbsp;:
 			{#if horsCadre.length === 1}
-				{oeuvres(total)} conservée{total > 1 ? 's' : ''} au {horsCadre[0].nom},
+				{notices(total)} rattachée{total > 1 ? 's' : ''} au {horsCadre[0].nom},
 				à {horsCadre[0].ville}.
 			{:else}
-				{oeuvres(total)} conservées dans {nombre(horsCadre.length)} musées hors
+				{notices(total)} rattachées à {nombre(horsCadre.length)} musées hors
 				métropole (outre-mer ou étranger).
 			{/if}
 		</p>
