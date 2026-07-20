@@ -113,14 +113,23 @@ pas un catalogue abstrait. Chaque primitive reste agnostique du dossier.
   liste + microprofils) ; ne partage plus sa largeur avec une légende. **Fait le
   2026-07-17** (`Repertoire.svelte` : tri Œuvres/A→Z, sélection active à filet
   d'accent, repliable en mobile ; légende retirée de sous la liste).
-- **BandeauMaitre** — la « scène du maître » : portrait agrandi + nom + **hiérarchie
-  d'informations calculée** (Nommé `BandeauMaitre` et **pas** `ProfilMaitre`, car
-  « Profil » est un nom d'onglet — décision utilisateur.) Ordre de lecture arrêté le
-  2026-07-19 (bis) : **`doute` en valeur principale** (« 310 notices… ») ; **part** sur le
-  total de référence `propre + doute` en registre secondaire (« 9 % … périmètre étudié ») ;
-  **répartition** sur `nb_musees_doute` ; **formulation dominante** générée (accords +
-  égalités par `ORDRE_FAMILLES`). Pourcentages en `Math.round` ; `fractionEnMots` proscrite.
-  Une seule valeur en vedette (le doute) : ne pas transformer tous les chiffres en vedettes.
+- **BandeauMaitre** — la « scène du maître » : portrait + **court portrait éditorial
+  fondé sur les données** (Nommé `BandeauMaitre` et **pas** `ProfilMaitre`, car « Profil »
+  est un nom d'onglet — décision utilisateur.) Forme arrêtée le **2026-07-20**, elle
+  remplace la pile de compteurs du 2026-07-19 (bis) : **plus aucun grand nombre isolé,
+  aucun compteur, aucune carte de KPI**. Ordre de lecture :
+  1. **nom** (`--taille-xxl`, élément le plus grand — aucun nombre ne le concurrence) ;
+  2. **la mention la plus fréquente**, constat en Fraunces ~1,35 rem : deuxième niveau
+     visuel, et conclusion que le graphique vient ensuite détailler ;
+  3. **récit chiffré** en corps de lecture (volume, part, musées) ;
+  4. **repère méthodologique** en petit corps atténué, après un filet fin.
+  Les nombres sont **intégrés aux phrases** : graisse 600 + `--accent-cobalt` + chiffres
+  elzéviriens, jamais plus grands que le texte. Phrases **générées** (`artistes.json` +
+  champ `citation` de `familles-public.js`) : égalités citées toutes, ordre `ORDRE_FAMILLES` ;
+  cas 100 % (« portent toutes cette mention ») et musée unique gérés. Pourcentages en
+  `Math.round` ; `fractionEnMots` proscrite. Bio conservée en ligne d'identité si elle existe.
+  **Vocabulaire** : narratif en « œuvres associées à son nom » (jamais « œuvres de X »),
+  comptages secs en « notices » ; proscrits : « domine », « le doute passe par ».
 - **Onglets** — un seul composant (unifie la bascule des presque et les onglets
   révisions) ; libellés éditoriaux **Profil · Œuvres · Musées**.
 

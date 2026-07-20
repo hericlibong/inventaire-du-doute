@@ -2,6 +2,26 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-20 — Fiche artiste : portrait éditorial, généralisé aux 27
+
+La scène du maître n'est plus une pile de compteurs (grand `310`, `9 %`, puis deux phrases
+techniques) mais un **court portrait éditorial** : nom → **mention la plus fréquente**
+(constat en Fraunces, deuxième niveau visuel) → récit chiffré en corps de lecture → repère
+méthodologique discret. Les nombres sont **dans** les phrases (graisse + cobalt + chiffres
+elzéviriens), jamais isolés. Prototype validé sur Le Brun, puis **généralisé aux 27**.
+
+Deux acquis à retenir : (1) le **vocabulaire narratif public passe à « œuvres »** —
+« œuvres associées à son nom », jamais « œuvres de X » — tandis que les **comptages secs
+restent en « notices »** ; (2) nouveau champ **`citation`** dans `familles-public.js`
+(forme citable en sujet de phrase, distincte du label d'axe et du header de tooltip) —
+labels, headers, couleurs et tooltips inchangés, donc le graphique ne bouge pas.
+
+Cas limites vérifiés en capture : égalité (Rigaud, « … sont les mentions les plus
+fréquentes » + « chacune de ces mentions »), 100 % (Rodin, « portent toutes cette
+mention »), bio conservée (Rembrandt, Clouet), 2 musées (Vinci). Les 27 phrases ont été
+relues une à une avant rendu. `build` OK. Détail : decisions.md 2026-07-20.
+Reliquat signalé, non traité : le répertoire dit encore « NOTICES CONCERNÉES ».
+
 ## 2026-07-19 (ter) — Wording des comptages : « notices » partout
 
 Passe de cohérence sur toute la copie publique après la refonte de la fiche : tout

@@ -2,6 +2,74 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-20 — Fiche artiste : portrait éditorial (fin des compteurs) + vocabulaire public « œuvres »
+
+**Problème.** La fiche refondue la veille (2026-07-19 bis) restait une **fiche statistique** :
+un très grand `310`, un `9 %` en seconde vedette, puis deux phrases techniques. Quatre blocs
+indépendants que le lecteur devait relier lui-même ; le nombre `310` seul en très grand n'a
+aucun sens immédiat ; l'enseignement réellement intéressant (la mention la plus fréquente)
+arrivait en dernier, en petit.
+
+**Parti retenu** (validé sur prototype Charles Le Brun avant généralisation) : la scène
+devient un **court portrait éditorial fondé sur les données**, lisible en deux ou trois
+phrases naturelles. Plus aucun grand nombre isolé, aucun compteur, aucune carte de KPI.
+
+**Hiérarchie, dans cet ordre** :
+1. **Nom de l'artiste** — élément typographique le plus grand (inchangé, `--taille-xxl`) ;
+2. **La mention la plus fréquente** — le constat, en Fraunces 1,35 rem : c'est le deuxième
+   niveau visuel, et c'est ce que le graphique situé dessous vient ensuite détailler
+   (le graphe n'a plus à faire découvrir seul l'enseignement principal) ;
+3. **Récit chiffré** en corps de lecture — volume concerné, part de la mention, musées ;
+4. **Repère méthodologique** en registre secondaire (petit corps, contraste atténué,
+   séparé par un filet fin) : « En contexte : 310 sur 3 344 œuvres…, soit 9 %. »
+
+**Les nombres vivent DANS les phrases** : graisse 600 + accent cobalt existant + chiffres
+elzéviriens (`font-variant-numeric: oldstyle-nums`, fournis par Spectral), jamais plus
+grands que le texte courant. Aucun ne concurrence le nom. Polices et variables de la charte
+uniquement — aucun import, aucun style global touché.
+
+**Vocabulaire public (change la doctrine de la veille).** Dans le **texte narratif**, on
+écrit **« œuvres »** — « les 310 œuvres associées à son nom » — et non « notices », qui
+donne le point de vue de la base de données. Règles strictes :
+- **jamais « œuvres de X »** : ces œuvres ne lui sont précisément **pas** directement
+  attribuées → « œuvres **associées à son nom** » / « rapprochées de X » ;
+- l'**unité technique reste la notice Joconde**, expliquée en page Méthode ;
+- pas de « Dans Joconde » en ouverture de fiche ;
+- **vocabulaire interdit pour le constat** : « domine », « domine nettement », « le doute
+  passe par ». On écrit **« X est la mention la plus fréquente »** — neutre, exact même
+  quand la mention ne pèse que 38 % (Ribera), et cohérent avec « on lit ce que les musées
+  écrivent ».
+
+Cette règle **ne revient pas** sur la passe 2026-07-19 (ter) pour les **comptages secs**
+(tooltips, légendes, panneaux de `/echelle`, seuil de la Méthode) : ceux-ci restent en
+« notices ». La ligne de partage est désormais **narratif → « œuvres » / comptage → « notices »**.
+⚠️ Reliquat connu, non traité (hors périmètre) : le répertoire affiche « NOTICES CONCERNÉES »
+à côté d'un bandeau qui dit « 310 œuvres » — à trancher dans une passe dédiée.
+
+**Génération (les 27 artistes, aucune valeur en dur).** Le constat est construit depuis
+`artistes.json` + la couche de libellés publics :
+- **nouveau champ `citation`** dans `familles-public.js` — forme **citable en sujet de
+  phrase** (« De son atelier »), distincte de `label` (étiquette d'axe : « son atelier »)
+  et de `header` (titre de tooltip). `label`, `header`, `corps`, `mention` et `couleur`
+  sont **inchangés** : ni le graphique ni les tooltips ne bougent ;
+- **égalité exacte** : toutes les mentions au maximum sont citées, ordonnées par
+  `ORDRE_FAMILLES` (aucune choisie arbitrairement), première en capitale, suivantes en bas
+  de casse → Hyacinthe Rigaud : « "Attribué à" et "de son école" sont les mentions les plus
+  fréquentes. » + « 16 portent **chacune de ces mentions** » ;
+- **mention unique couvrant tout le corpus** (Rodin, 100 %) : « Les 80 œuvres … portent
+  **toutes** cette mention » — évite le doublon « parmi les 80 …, 80 portent » ;
+- **un seul musée** : « Ces œuvres sont toutes conservées dans un même musée » (aucun cas
+  réel aujourd'hui, minimum observé = 2 ; garde-fou d'accord).
+
+**Bio conservée** quand elle existe (`editorial-maitres.js` : François Clouet, Rembrandt),
+en ligne d'identité italique sous le nom — elle situe l'artiste sans concurrencer le constat.
+
+**Vérifié** : les 27 phrases relues une à une avant rendu ; captures desktop (Le Brun,
+Rigaud) + mobile (Le Brun, Rembrandt) + planche des cas limites (Rodin 100 %, Rembrandt
+bio + « À sa manière », Léonard de Vinci 2 musées, Annibale Carracci « De son cercle »).
+Le bandeau reste compact : onglets et début du graphique visibles dans le premier écran en
+1280×760. Données et pipeline **inchangés**.
+
 ## 2026-07-19 (ter) — Wording des comptages : « notices » partout, « œuvre » réservé à l'objet montré
 
 **Problème.** Après la refonte de la fiche (2026-07-19 bis, qui dit « 310 notices »), le

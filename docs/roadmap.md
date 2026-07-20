@@ -160,6 +160,16 @@ plus le sujet ni les chiffres, **chaque page porte désormais son entrée narrat
       dominante générée (accords + égalités via `ORDRE_FAMILLES`, `fractionEnMots`
       abandonnée). Répertoire : tri « Notices » + micro-légende. Méthode : total de
       référence expliqué. Pipeline inchangé. Détail : decisions.md 2026-07-19 (bis).
+- [x] **Fiche artiste — portrait éditorial (fin des compteurs)** (2026-07-20) — la scène
+      devient un court texte fondé sur les données : nom → **mention la plus fréquente**
+      (constat, 2e niveau visuel) → récit chiffré → repère méthodologique discret ; nombres
+      **dans** les phrases (graisse + cobalt + elzéviriens). Prototype Le Brun validé puis
+      **généralisé aux 27** (égalités, cas 100 %, musée unique, bios conservées). Nouveau
+      champ `citation` dans `familles-public.js` ; graphique et tooltips **inchangés**.
+      Vocabulaire : narratif en « œuvres associées à son nom », comptages en « notices ».
+      Détail : decisions.md 2026-07-20.
+  - [ ] **Reliquat à trancher** : le répertoire affiche « NOTICES CONCERNÉES » à côté d'un
+        bandeau qui dit « 310 œuvres » — passe de cohérence dédiée (hors périmètre du jour).
   - [x] **Wording des comptages — « notices » partout** (2026-07-19 ter) — helper
         `notices()` (ex-`oeuvres()`) ; tooltips, vitrine (copies), carte (titre, légende,
         replis), `/echelle` (panneaux + texte + purge du reliquat « Les presque »),

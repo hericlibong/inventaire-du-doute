@@ -26,6 +26,14 @@
 //                    soit le terme réel du musée diffère du libellé public
 //                    (« entourage » ≠ « cercle », « genre » ≠ « goût »). Partout
 //                    ailleurs elle redirait le header → false.
+//   citation       — forme CITABLE de la mention, écrite pour tenir en sujet de
+//                    phrase dans la copie éditoriale : «&nbsp;De son école&nbsp;»
+//                    est la mention la plus fréquente. Distincte de `label` (une
+//                    étiquette de colonne, trop télégraphique : « son atelier »)
+//                    et de `header` (un titre de tooltip). Majuscule initiale
+//                    incluse ; l'abaisser pour les termes énumérés en second
+//                    (« X et y sont les mentions les plus fréquentes »).
+//                    Introduite le 2026-07-20 avec le bandeau éditorial.
 //   couleur        — couleur STABLE de la famille, partout dans l'application
 //                    (CLAUDE.md : une couleur par catégorie) : points du graphique,
 //                    pastilles de la vitrine « Œuvres ». Référence un token
@@ -43,6 +51,7 @@ export const FAMILLE_PUBLIC = {
 		corps: 'Sans certitude qu’il s’agisse bien de sa main.',
 		mention: (nom) => `attribué à ${nom}`,
 		montrerMention: false,
+		citation: 'Attribué à',
 		couleur: 'var(--forme-attribue)'
 	},
 	point_interrogation: {
@@ -51,6 +60,7 @@ export const FAMILLE_PUBLIC = {
 		corps: 'Doute noté sans autre précision.',
 		mention: (nom) => `${nom} (?)`,
 		montrerMention: true,
+		citation: 'Nom suivi d’un point d’interrogation',
 		couleur: 'var(--forme-point-interrogation)'
 	},
 	atelier_de: {
@@ -59,6 +69,7 @@ export const FAMILLE_PUBLIC = {
 		corps: 'Sorti de son atelier, pas forcément de sa main.',
 		mention: (nom) => `atelier ${deNom(nom)}`,
 		montrerMention: false,
+		citation: 'De son atelier',
 		couleur: 'var(--forme-atelier)'
 	},
 	entourage_de: {
@@ -67,6 +78,7 @@ export const FAMILLE_PUBLIC = {
 		corps: 'Son entourage immédiat.',
 		mention: (nom) => `entourage ${deNom(nom)}`,
 		montrerMention: true,
+		citation: 'De son cercle',
 		couleur: 'var(--forme-entourage)'
 	},
 	ecole_de: {
@@ -75,6 +87,7 @@ export const FAMILLE_PUBLIC = {
 		corps: 'Plutôt son école que sa main.',
 		mention: (nom) => `école ${deNom(nom)}`,
 		montrerMention: false,
+		citation: 'De son école',
 		couleur: 'var(--forme-ecole)'
 	},
 	suiveur_de: {
@@ -83,6 +96,7 @@ export const FAMILLE_PUBLIC = {
 		corps: 'Dans sa suite, sous son influence.',
 		mention: (nom) => `suiveur ${deNom(nom)}`,
 		montrerMention: false,
+		citation: 'D’un suiveur',
 		couleur: 'var(--forme-suiveur)'
 	},
 	maniere_de: {
@@ -91,6 +105,7 @@ export const FAMILLE_PUBLIC = {
 		corps: 'Son style, auteur inconnu.',
 		mention: (nom) => `à la manière ${deNom(nom)}`,
 		montrerMention: false,
+		citation: 'À sa manière',
 		couleur: 'var(--forme-maniere)'
 	},
 	genre_de: {
@@ -99,6 +114,7 @@ export const FAMILLE_PUBLIC = {
 		corps: 'Lien de style lointain.',
 		mention: (nom) => `dans le genre ${deNom(nom)}`,
 		montrerMention: true,
+		citation: 'Dans son goût',
 		couleur: 'var(--forme-genre)'
 	}
 };
