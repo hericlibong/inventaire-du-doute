@@ -2,6 +2,48 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-20 (bis) — Fiche artiste : trois textes remis en langue ordinaire
+
+**Problème.** Trois textes de la fiche parlaient encore la langue du projet, pas celle du
+lecteur. La ligne sous le nom versait dans la culture savante (« rococo », « Grand Siècle »,
+« portraitiste de la cour des Valois ») : des repères qui demandent eux-mêmes une explication.
+Le titre du graphique annonçait « Le profil d'attribution de X » — « profil » et
+« attribution » sont du vocabulaire d'analyste. Et rien ne disait, en clair, ce que le
+graphe donnait à voir.
+
+**1. Ligne biographique — gabarit strict, une phrase, sans exception :**
+« [Activité principale] [nationalité] du [siècle], [dates]. » Elle sert à **situer**, rien
+d'autre. Sont proscrits, même exacts : mouvements (rococo, baroque), périodes de connaisseur
+(Grand Siècle, Siècle d'or, Renaissance), écoles (école de Fontainebleau), fonctions de cour
+(premier peintre du roi). Le siècle est celui où l'artiste a **travaillé**, pas celui de sa
+naissance ; quand l'activité couvre réellement deux siècles → « des XVe et XVIe siècles ».
+Dates relevées hors ligne, vérifiées sur les notices d'autorité (INHA/Agorha, National
+Gallery, Larousse, Britannica) ; « vers » quand la naissance est discutée, comme le font ces
+notices — la prudence sur les dates est du même ordre que celle des musées sur les
+attributions. Appliqué aux **27** artistes (`web/src/lib/editorial-maitres.js`).
+
+**2. Titre du graphique.** « Le profil d'attribution de X » → **« Comment les musées
+rattachent ces œuvres à X »**. Le titre nomme l'acteur (les musées), l'action (rattacher) et
+l'objet. Vocabulaire écarté : profil, corpus, analyse, distribution. La contraction de
+l'article est traitée par `aNom()` (`joconde.js`) : « au Primatice », jamais « à Le Primatice ».
+
+**3. Phrase de lecture** (`territoires.js`, `lectureProfil`). Sous le titre, une phrase dit
+la tendance en mots ordinaires. **Cinq formulations fixées, on n'en invente aucune autre** ;
+« corpus » est proscrit. Seuils **inchangés** par cette passe : territoire ≥ 60 % → territoire
+principal ; sinon écart < 5 points entre les deux premiers → « les œuvres se partagent » ;
+sinon → « sans qu'une seule ne s'impose ». La mention citée est la plus fréquente **à
+l'intérieur** du territoire principal (pas la dominante globale, qui peut appartenir à un
+autre territoire), et réutilise la citation publique de `familles-public.js` — aucun libellé
+n'est réécrit.
+
+**Contrôle.** Les 27 phrases générées ont été vérifiées : 8 « au maître lui-même », 11 « à son
+entourage/influence », 8 « sans qu'une seule ne s'impose ». **Aucun artiste ne déclenche
+aujourd'hui la branche « les œuvres se partagent »** : avec les données actuelles, l'écart
+entre les deux premiers territoires n'est jamais inférieur à 5 points sous la barre des 60 %.
+La branche est conservée (les seuils ne sont pas touchés par cette passe), mais c'est un
+point à réexaminer si l'on revoit un jour les seuils. Captures de contrôle : Boucher,
+Charles Le Brun, François Clouet, Rembrandt.
+
 ## 2026-07-20 — Fiche artiste : portrait éditorial (fin des compteurs) + vocabulaire public « œuvres »
 
 **Problème.** La fiche refondue la veille (2026-07-19 bis) restait une **fiche statistique** :

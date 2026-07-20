@@ -19,7 +19,18 @@ export const nombre = (v) => v.toLocaleString('fr-FR');
 // mais « sous le nom d'Ingres ». On n'élide que devant une voyelle — le « h »
 // français est ambigu (h aspiré : « de Hals »), on le laisse donc en « de ».
 export function deNom(nom) {
+	// Contraction de l'article : « Le Tintoret » → « du Tintoret » (corrigé le
+	// 2026-07-20 — on lisait « entourage de Le Tintoret » dans les infobulles).
+	// Concerne Le Primatice, Le Tintoret, Le Corrège ; « Charles Le Brun » n'est pas
+	// touché, l'article n'y est pas en tête.
+	if (nom.startsWith('Le ')) return `du ${nom.slice(3)}`;
 	return /^[aeiouyàâäéèêëîïôöùûü]/i.test(nom) ? `d’${nom}` : `de ${nom}`;
+}
+
+// Même contraction pour « à » : « rattachent ces œuvres au Primatice », et non
+// « à Le Primatice ». Pas d'élision devant voyelle ici (« à Ingres » est correct).
+export function aNom(nom) {
+	return nom.startsWith('Le ') ? `au ${nom.slice(3)}` : `à ${nom}`;
 }
 
 // « 1 musée » / « 64 musées » : accord en nombre (jamais de `${n} musées` brut).

@@ -17,21 +17,81 @@ export const TERRITOIRES = [
 		// Annotations factuelles, courtes : elles disent le DEGRÉ de distance, sans
 		// interpréter l'œuvre (on lit ce que les musées écrivent).
 		annotation: 'Sa main est probable, sans certitude.',
-		codes: ['attribue', 'point_interrogation']
+		codes: ['attribue', 'point_interrogation'],
+		concentration: () =>
+			'Les musées les rattachent surtout au maître lui-même, avec une attribution néanmoins prudente.',
+		nominal: 'le maître lui-même'
 	},
 	{
 		id: 'autour',
 		titre: 'Autour du maître',
 		annotation: 'Son atelier, son cercle, son école — plus que sa main.',
-		codes: ['atelier_de', 'entourage_de', 'ecole_de']
+		codes: ['atelier_de', 'entourage_de', 'ecole_de'],
+		// Ici la précision est concrète : « à son atelier », « à son cercle », « à son
+		// école ». La citation publique arrive sous la forme « de son école » — on
+		// retire l'article, la phrase apporte déjà sa préposition.
+		concentration: (precision) =>
+			`Les musées les rattachent surtout à son entourage, principalement à ${precision.replace(/^de /, '')}.`,
+		nominal: 'son entourage'
 	},
 	{
 		id: 'influence',
 		titre: 'Dans son influence',
 		annotation: 'Son style, repris sans lui.',
-		codes: ['suiveur_de', 'maniere_de', 'genre_de']
+		codes: ['suiveur_de', 'maniere_de', 'genre_de'],
+		// Le lien est un lien de style : on cite la mention employée, telle qu'elle
+		// s'écrit, plutôt que de gloser une « distance ».
+		concentration: (precision) =>
+			`Les musées les rattachent surtout à son influence, principalement avec la mention « ${precision} ».`,
+		nominal: 'son influence'
 	}
 ];
+
+// Phrase de lecture placée sous le titre du graphique (onglet Profil). Elle dit,
+// en mots ordinaires, ce que le lecteur verrait s'il savait lire le graphe : à quoi
+// les musées rattachent ces œuvres — au maître lui-même, à son entourage, à son
+// influence. La fiche, au-dessus, donne la mention la plus fréquente ; les deux ne
+// doivent pas se répéter mot pour mot.
+//
+// Formulations FIXÉES par l'utilisateur (2026-07-20) : on n'en invente pas d'autres.
+// Vocabulaire proscrit : « corpus », « profil d'attribution », « distribution »,
+// « domine », « nettement », « doute ».
+//
+// Règles, appliquées dans cet ordre (seuils inchangés) :
+//   1. un territoire ≥ 60 % des notices → c'est le territoire principal ;
+//   2. sinon, les deux premiers séparés de moins de 5 points → les œuvres se partagent ;
+//   3. sinon → aucune tendance ne s'impose.
+//
+// `parNotices` : objet code de mention → nombre de notices (les huit familles).
+// `citationMention` : fonction (code de mention) → mention publique en bas de casse
+// (« de son école », « à sa manière »), fournie par l'appelant depuis la couche de
+// libellés publics — aucun libellé n'est réécrit ici.
+export function lectureProfil(parNotices, citationMention) {
+	const zones = TERRITOIRES.map((t) => ({
+		t,
+		notices: t.codes.reduce((s, c) => s + (parNotices[c] ?? 0), 0)
+	}));
+	const total = zones.reduce((s, z) => s + z.notices, 0);
+	if (!total) return null;
+
+	const classees = zones.slice().sort((a, b) => b.notices - a.notices);
+	const part = (z) => (z.notices / total) * 100;
+
+	if (part(classees[0]) >= 60) {
+		// Mention la plus fréquente À L'INTÉRIEUR du territoire principal (pas la
+		// dominante globale : elle peut appartenir à un autre territoire).
+		const tete = classees[0].t.codes
+			.slice()
+			.sort((a, b) => (parNotices[b] ?? 0) - (parNotices[a] ?? 0))[0];
+		return classees[0].t.concentration(citationMention(tete));
+	}
+
+	if (part(classees[0]) - part(classees[1]) < 5) {
+		return `Les œuvres se partagent surtout entre ${classees[0].t.nominal} et ${classees[1].t.nominal}.`;
+	}
+
+	return 'Les musées utilisent plusieurs formes de rapprochement, sans qu’une seule ne s’impose.';
+}
 
 // Garde-fou : les trois territoires doivent couvrir EXACTEMENT les huit mentions de
 // familles-public.js, dans le même ordre (l'axe du graphe et ses bandes s'appuient

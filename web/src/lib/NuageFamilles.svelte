@@ -1,7 +1,7 @@
 <script>
-	import { nombre } from '$lib/joconde.js';
+	import { nombre, aNom } from '$lib/joconde.js';
 	import { FAMILLE_PUBLIC, ORDRE_FAMILLES, tooltipFamille, resumeFamille } from '$lib/familles-public.js';
-	import { TERRITOIRES, indicesTerritoire } from '$lib/territoires.js';
+	import { TERRITOIRES, indicesTerritoire, lectureProfil } from '$lib/territoires.js';
 	import Infobulle from '$lib/Infobulle.svelte';
 
 	// « Le combien », comparable entre maîtres (decisions.md 2026-07-08). Scatter sur
@@ -85,9 +85,34 @@
 	function cache() {
 		actif = null;
 	}
+
+	// Phrase de lecture (2026-07-20) : à quoi les musées rattachent ces œuvres, en mots
+	// ordinaires. Règles et formulations : territoires.js — elles sont fixées, on n'en
+	// improvise pas ici. La mention citée réutilise la citation publique en bas de casse
+	// (« De son école » → « de son école ») : aucun libellé inventé.
+	const parNotices = $derived(
+		Object.fromEntries(maitre.familles.map((f) => [f.code, f.notices]))
+	);
+	const citationMention = (code) => {
+		const c = FAMILLE_PUBLIC[code].citation;
+		return c.charAt(0).toLowerCase() + c.slice(1);
+	};
+	const lecture = $derived(lectureProfil(parNotices, citationMention));
 </script>
 
 <figure class="nuage">
+	<!-- En-tête du graphique (2026-07-20) : le titre dit ce que le lecteur regarde,
+	     en mots ordinaires — ce sont les musées qui rattachent, et on nomme l'artiste.
+	     Vocabulaire écarté : « profil d'attribution », « corpus », « distribution ».
+	     La phrase qui suit donne la tendance, lisible sans déchiffrer le graphe. -->
+	<figcaption class="entete">
+		<h3 class="titre-graphe">Comment les musées rattachent ces œuvres {aNom(maitre.nom)}</h3>
+		{#if lecture}
+			<p class="lecture">{lecture}</p>
+		{/if}
+	</figcaption>
+
+	<div class="agencement">
 	<div class="graphe-hote" bind:this={regardEl}>
 		<svg viewBox="0 0 380 300" class="graphe" role="img"
 			aria-label="Graphique des mentions de doute pour {maitre.nom}, en trois territoires de proximité (au plus près, autour du maître, dans son influence), échelle commune à tous les maîtres">
@@ -169,18 +194,16 @@
 		{/if}
 	</div>
 
-	<!-- Clé de lecture minimale, rétablie dans l'onglet Profil (la légende détaillée
-	     a quitté le répertoire). Elle reprend les trois territoires : progression
-	     gauche → droite, titre + annotation courte, et les mentions de chaque zone
-	     avec leur pastille de couleur (labels depuis la source unique). Trois cellules
-	     contiguës, pas trois cartes : le même dégradé de proximité que le graphe. -->
-	<figcaption class="cle">
+	<!-- Clé de lecture : passée EN COLONNE À DROITE du graphe (2026-07-20), elle ne
+	     s'intercale plus entre le graphique et la suite de la page. Légende légère :
+	     ni cadre, ni fond plein — un filet de couleur par zone suffit à rappeler les
+	     bandes du graphe. Libellés depuis la source unique (familles-public.js). -->
+	<div class="cle">
 		<p class="cle-intro">De gauche à droite, le lien à la main du maître se desserre.</p>
 		<ol class="territoires">
 			{#each TERRITOIRES as t (t.id)}
 				<li class="zone" data-zone={t.id}>
 					<span class="zone-titre">{t.titre}</span>
-					<span class="zone-note">{t.annotation}</span>
 					<span class="zone-mentions">
 						{#each t.codes as code (code)}
 							<span class="mention">
@@ -192,12 +215,42 @@
 				</li>
 			{/each}
 		</ol>
-	</figcaption>
+	</div>
+	</div>
 </figure>
 
 <style>
 	.nuage {
 		margin: 0;
+	}
+
+	/* --- En-tête : le graphe est le portrait d'un artiste, il porte son nom. --- */
+	.entete {
+		margin: 0 0 var(--espace-4);
+	}
+
+	.titre-graphe {
+		font-family: var(--police-titre);
+		font-size: var(--taille-l);
+		line-height: 1.2;
+		margin: 0;
+	}
+
+	/* Phrase de lecture : ce que dit la forme du profil, en clair. */
+	.lecture {
+		margin: var(--espace-2) 0 0;
+		font-size: var(--taille-m);
+		line-height: 1.5;
+		max-width: 42rem;
+		color: var(--couleur-encre);
+	}
+
+	/* --- Deux colonnes : le graphe garde la place, la légende tient le flanc. --- */
+	.agencement {
+		display: grid;
+		grid-template-columns: minmax(0, 7fr) minmax(11rem, 3fr);
+		gap: var(--espace-5);
+		align-items: start;
 	}
 
 	.graphe-hote {
@@ -274,16 +327,17 @@
 		fill: var(--couleur-encre);
 	}
 
-	/* Clé de lecture : intro + trois cellules contiguës qui reprennent les bandes. */
+	/* Clé de lecture en colonne : légère, sans cadre ni fond plein. Un filet de
+	   couleur à gauche de chaque zone rappelle les bandes du graphe. */
 	.cle {
-		margin: 0.75rem 0 0;
+		padding-top: 2.5rem; /* aligne la légende sur le haut du plot, pas sur le SVG */
 	}
 
 	.cle-intro {
-		margin: 0 0 0.5rem;
+		margin: 0 0 var(--espace-3);
 		font-size: 0.8rem;
 		font-style: italic;
-		text-align: center;
+		line-height: 1.4;
 		color: var(--couleur-encre-douce);
 	}
 
@@ -291,36 +345,27 @@
 		list-style: none;
 		margin: 0;
 		padding: 0;
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		/* filets internes seulement : les cellules se touchent (une seule bande),
-		   pas trois cartes détachées. */
-		gap: 0;
-		border: var(--filet);
-		border-radius: var(--rayon-s);
-		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+		gap: var(--espace-3);
 	}
 
 	.zone {
-		padding: 0.5rem 0.6rem 0.6rem;
 		display: flex;
 		flex-direction: column;
-		gap: 0.3rem;
-		border-left: var(--filet);
-	}
-
-	.zone:first-child {
-		border-left: none;
+		gap: 0.25rem;
+		padding-left: 0.6rem;
+		border-left: 3px solid var(--couleur-trait);
 	}
 
 	.zone[data-zone='plus-pres'] {
-		background: var(--territoire-pres);
+		border-left-color: var(--forme-attribue);
 	}
 	.zone[data-zone='autour'] {
-		background: var(--territoire-autour);
+		border-left-color: var(--forme-ecole);
 	}
 	.zone[data-zone='influence'] {
-		background: var(--territoire-influence);
+		border-left-color: var(--forme-maniere);
 	}
 
 	.zone-titre {
@@ -332,19 +377,10 @@
 		color: var(--couleur-encre);
 	}
 
-	.zone-note {
-		font-family: var(--police-texte);
-		font-style: italic;
-		font-size: 0.82rem;
-		line-height: 1.35;
-		color: var(--couleur-encre-douce);
-	}
-
 	.zone-mentions {
 		display: flex;
 		flex-direction: column;
 		gap: 0.2rem;
-		margin-top: 0.15rem;
 	}
 
 	.mention {
@@ -362,18 +398,35 @@
 		flex: none;
 	}
 
-	/* Mobile : les trois territoires s'empilent, mais restent une bande continue
-	   (filets horizontaux entre eux, la progression se lit de haut en bas). */
-	@media (max-width: 560px) {
-		.territoires {
+	/* Tablette et mobile : la légende repasse SOUS le graphique (une colonne de 30 %
+	   deviendrait illisible), et ses trois zones s'étalent tant qu'il y a la place. */
+	@container (max-width: 46rem) {
+		.agencement {
 			grid-template-columns: 1fr;
+			gap: var(--espace-4);
+		}
+		.cle {
+			padding-top: 0;
+		}
+		.territoires {
+			flex-direction: row;
+			flex-wrap: wrap;
+			gap: var(--espace-4);
 		}
 		.zone {
-			border-left: none;
-			border-top: var(--filet);
+			flex: 1 1 10rem;
 		}
-		.zone:first-child {
-			border-top: none;
+	}
+
+	@container (max-width: 30rem) {
+		.territoires {
+			flex-direction: column;
+			gap: var(--espace-3);
+		}
+		/* Sans cela, le flex-grow du palier précédent étire chaque zone en HAUTEUR
+		   une fois la liste repassée en colonne (filets de couleur démesurés). */
+		.zone {
+			flex: 0 0 auto;
 		}
 	}
 </style>

@@ -4,7 +4,7 @@
 	import CarteMaitre from '$lib/CarteMaitre.svelte';
 	import BandeauMaitre from '$lib/BandeauMaitre.svelte';
 	import Repertoire from '$lib/Repertoire.svelte';
-	import { nombre } from '$lib/joconde.js';
+	import { base } from '$app/paths';
 	// Archive : la piste « galaxie » est conservée dans $lib/GalaxieMaitre.svelte
 	// (abandonnée dans cette vue, decisions.md 2026-07-08), non importée ici.
 
@@ -12,20 +12,33 @@
 	const artistes = data.artistes.artistes;
 	const portraits = data.portraits;
 
-	// Chiffres de l'introduction, dérivés des données DÉJÀ chargées (artistes.json) —
-	// pas de seconde source dans le composant (decisions.md 2026-07-19) :
-	//   • nbMaitres = les 27 retenus ;
-	//   • totalNotices = 2 341, somme des notices prudentes des 27.
-	// Le seuil « au moins vingt notices » (critère du fichier) reste en toutes lettres.
+	// Nombre de maîtres dérivé des données DÉJÀ chargées (artistes.json) — pas de
+	// seconde source dans le composant (decisions.md 2026-07-19). Le détail du seuil
+	// et le total de notices ont QUITTÉ l'introduction le 2026-07-20 : ils retardaient
+	// l'exploration et vivent désormais dans la page Méthode, atteignable par le lien
+	// « Pourquoi ces N artistes ? ».
 	const nbMaitres = artistes.length;
-	const totalNotices = artistes.reduce((s, a) => s + a.doute, 0);
-	// Séparateur de milliers VISIBLE et insécable : l'espace fine de toLocaleString
-	// (U+202F) ne se voit pas dans Spectral ici → on la remplace par une espace
-	// insécable normale (U+00A0), localement (sans toucher joconde.js ni la scène).
-	const totalNoticesTexte = nombre(totalNotices).replace(/[\u202f\u00a0\s]/g, '\u00a0');
+
+	// Le nombre s'écrit en toutes lettres dans le corps du texte (CLAUDE.md : écrire
+	// les chiffres en français quand le récit prime). Table courte autour de la valeur
+	// réelle, repli sur le chiffre si la liste changeait beaucoup.
+	const EN_LETTRES = {
+		24: 'Vingt-quatre',
+		25: 'Vingt-cinq',
+		26: 'Vingt-six',
+		27: 'Vingt-sept',
+		28: 'Vingt-huit',
+		29: 'Vingt-neuf',
+		30: 'Trente'
+	};
+	const nbMaitresTexte = EN_LETTRES[nbMaitres] ?? String(nbMaitres);
 
 	// Plafond COMMUN de l'axe Y du nuage (≈ 240). Calculé ici, pas en dur.
 	const plafond = Math.max(...artistes.flatMap((a) => a.familles.map((f) => f.notices)));
+
+	// Le folio « Nº 4 / 27 · cote M5031 » a été retiré (2026-07-20) : ni le rang dans
+	// la liste ni la cote du musée principal ne disent quoi que ce soit du profil.
+	// Le profil commence par le portrait, le nom et la ligne d'identité.
 
 	// Onglets de la fiche maître : profil (graphique) · oeuvres · musees.
 	let vue = $state('profil');
@@ -37,9 +50,6 @@
 	// = Répertoire (rail de gauche).
 	let selection = $state(artistes[0].nom);
 	const maitre = $derived(artistes.find((a) => a.nom === selection));
-
-	// Folio discret (repère secondaire) : rang + cote du musée principal.
-	const rang = $derived(artistes.findIndex((a) => a.nom === selection) + 1);
 </script>
 
 <div class="page">
@@ -52,21 +62,22 @@
 			<h1>Explorer les {nbMaitres} maîtres</h1>
 		</div>
 		<div class="intro-texte">
+			<!-- Entrée resserrée (2026-07-20) : deux paragraphes courts, puis un lien vers
+			     la Méthode. Le détail du seuil, le total de notices et le mode d'emploi ont
+			     quitté l'introduction — ils retardaient l'exploration et vivent à leur place
+			     (page Méthode). Seule la précaution reste, en note discrète. -->
 			<p>
-				Dans un inventaire, le nom d'un artiste n'est pas toujours celui de l'auteur. Il
-				peut désigner une attribution probable, le travail d'un atelier, une école ou une
-				influence.
+				Dans les inventaires, le nom d'un artiste ne désigne pas toujours l'auteur certain
+				d'une œuvre. «&nbsp;Attribué à&nbsp;», «&nbsp;de son atelier&nbsp;», «&nbsp;de son
+				école&nbsp;» ou «&nbsp;à sa manière&nbsp;» décrivent différents degrés de proximité
+				avec le maître.
 			</p>
 			<p>
-				Nous avons retenu {nbMaitres} artistes pour lesquels ces formulations apparaissent
-				dans au moins vingt notices de la base Joconde. Ensemble, ils réunissent
-				{totalNoticesTexte} notices accompagnées d'une formulation prudente. Ce seuil
-				n'établit aucun palmarès&nbsp;: il permet de comparer des situations suffisamment
-				documentées.
+				{nbMaitresTexte} artistes disposent ici d'un corpus suffisamment documenté pour être
+				explorés et comparés.
 			</p>
-			<p>
-				Choisissez un nom pour découvrir les formulations employées, quelques œuvres
-				concernées et les musées qui les conservent.
+			<p class="renvoi">
+				<a href="{base}/methode#les-27">Pourquoi ces {nbMaitres} artistes&nbsp;?&nbsp;→</a>
 			</p>
 			<p class="prudence">
 				Le projet reprend les formulations publiées par les musées&nbsp;; il ne réattribue
@@ -87,11 +98,6 @@
 
 		{#if maitre}
 			<section class="zone">
-				<p class="folio">
-					Nº {rang} / {artistes.length}{maitre.musee_principal
-						? ` · cote ${maitre.musee_principal.code}`
-						: ''}
-				</p>
 
 				<!-- Scène du maître : portrait + nom + synthèse + chiffres (hors onglets). -->
 				<BandeauMaitre {maitre} portrait={portraits[maitre.nom]} />
@@ -108,7 +114,7 @@
 					</button>
 				</div>
 
-				<div class="vue">
+				<div class="vue" class:vue-profil={vue === 'profil'}>
 					{#if vue === 'profil'}
 						<NuageFamilles {maitre} {plafond} />
 					{:else if vue === 'oeuvres'}
@@ -155,6 +161,25 @@
 
 	.intro-texte p:last-child {
 		margin-bottom: 0;
+	}
+
+	/* Renvoi vers la Méthode : discret, registre UI, jamais un bouton. Le détail du
+	   seuil vit là-bas, pas dans l'entrée de la rubrique. */
+	.intro-texte p.renvoi {
+		margin: 0;
+		font-family: var(--police-ui);
+		font-size: var(--taille-s);
+	}
+
+	.intro-texte p.renvoi a {
+		color: var(--accent-cobalt);
+		text-decoration: none;
+		border-bottom: 1px solid transparent;
+	}
+
+	.intro-texte p.renvoi a:hover,
+	.intro-texte p.renvoi a:focus-visible {
+		border-bottom-color: var(--accent-cobalt);
 	}
 
 	/* Prudence commune : note secondaire et discrète (pas un encadré d'alerte). */
@@ -225,15 +250,6 @@
 		min-width: 0;
 	}
 
-	.folio {
-		font-family: var(--police-ui);
-		font-size: var(--taille-xs);
-		letter-spacing: 0.1em;
-		text-transform: uppercase;
-		color: var(--couleur-encre-douce);
-		margin: 0 0 var(--espace-3);
-	}
-
 	/* Onglets soulignés, actif en cobalt. */
 	.bascule {
 		display: flex;
@@ -274,5 +290,12 @@
 	.vue {
 		margin-top: var(--espace-4);
 		max-width: 42rem;
+	}
+
+	/* Onglet Profil seulement (2026-07-20) : la légende est passée au flanc du graphe,
+	   la zone doit donc porter les deux colonnes. Le graphe garde sa proportion (≈ 70 %)
+	   au lieu de rétrécir dans les 42 rem. Œuvres et Musées gardent leur largeur. */
+	.vue-profil {
+		max-width: 60rem;
 	}
 </style>

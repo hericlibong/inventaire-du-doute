@@ -92,7 +92,10 @@
 		les fausses détections, puis de reformuler le lexique. Ce lexique est versionné et
 		public&nbsp;; sa version est indiquée plus bas.
 	</p>
-	<p>
+	<!-- Ancre visée par le lien « Pourquoi ces N artistes ? » de la rubrique
+	     « Explorer les maîtres » (2026-07-20) : le détail du seuil a quitté
+	     l'introduction de la rubrique, il vit ici. -->
+	<p id="les-27">
 		Une partie du site se concentre sur <strong>{nombre(nbNoms)} noms</strong> de
 		référence. Le critère est explicite&nbsp;: un artiste connu <em>et</em> au moins
 		vingt notices portant une formulation prudente (copies exclues), une fois le nom bien

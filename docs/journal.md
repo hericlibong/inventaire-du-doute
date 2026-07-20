@@ -2,6 +2,23 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-20 (bis) — Trois textes de la fiche remis en langue ordinaire
+
+Passe d'édition ciblée, données et graphique inchangés. (1) **Ligne biographique** : gabarit
+strict « [Activité] [nationalité] du [siècle], [dates]. » appliqué aux 27 — dehors le rococo,
+le Grand Siècle, la cour des Valois et les écoles ; le siècle est celui de l'activité, pas de
+la naissance. (2) **Titre du graphique** : « Le profil d'attribution de X » devient
+**« Comment les musées rattachent ces œuvres à X »** — on nomme l'acteur et l'action, on
+bannit profil/corpus/distribution. (3) **Phrase de lecture** sous le titre : cinq
+formulations fixées, générées depuis les données, jamais improvisées.
+
+Contrôlé en capture sur Boucher, Le Brun, Clouet, Rembrandt (les quatre tombent sur la phrase
+attendue), et les 27 phrases relues en sortie de `lectureProfil`. Constat à garder en tête :
+**la branche « les œuvres se partagent » n'est déclenchée par aucun artiste** avec les seuils
+actuels — non traité ici, les seuils étaient hors périmètre. Détail : decisions.md 2026-07-20 (bis).
+Reliquats signalés, non traités : « corpus » subsiste dans l'intro de `/les-presque` et dans
+`BandeauMaitre`, et le répertoire dit toujours « NOTICES CONCERNÉES ».
+
 ## 2026-07-20 — Fiche artiste : portrait éditorial, généralisé aux 27
 
 La scène du maître n'est plus une pile de compteurs (grand `310`, `9 %`, puis deux phrases
