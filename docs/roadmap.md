@@ -21,9 +21,13 @@ Ordre imposé — chaque ⏸ est un point d'arrêt :
       dans le CSV (1 023 705 / 1 023 705), donc déduplication intra-ligne. Arbitrage des
       familles multiples tranché — **option (c), le « ? » l'emporte** : une référence = une
       famille, familles et niveaux restent additifs
-- [ ] **2. Identité** : table déclarative d'alias et d'exclusions (homonymes attestés),
-      couvrant les mentions **prudentes ET certaines** — c'est la seconde qui fabrique le
-      dénominateur public. Pas de reconnaissance d'entités, pas de moteur générique
+- [x] **2. Identité** : table déclarative d'alias et d'exclusions (homonymes attestés),
+      couvrant les mentions **prudentes ET certaines**. **Fait le 2026-07-21**
+      (decisions.md, sexies) : inventaire des 246 formes captées → 141 retenues ; un seul
+      mécanisme ajouté, l'**ancre `^`** (le nom doit être en tête, Joconde écrit « NOM
+      Prénom ») ; doute **2 341 → 2 188**, certaines **29 995 → 28 240**. Michel-Ange passe
+      de 19 % à 39 % et de 9 musées à 3. Liste publiable des personnes écartées :
+      donnees.md
 - [ ] **3. Tests de non-régression** sur références réelles (témoins d'homonymie, doublons
       de graphie, trois cas multi-familles de Simon Vouet)
 - [ ] ⏸ **Validation du pipeline corrigé** avant régénération

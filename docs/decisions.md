@@ -2,6 +2,63 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-21 (sexies) — Temps 2 appliqué : la table d'identité des maîtres
+
+Deuxième étape du chantier, toujours dans `src/build_artistes.py` seul, exports non
+régénérés. Méthode : inventaire préalable des **246 formes d'auteur** réellement captées par
+les motifs en vigueur, mentions prudentes **et** certaines, avec leur nombre de références —
+puis relecture à l'œil, forme par forme. Pas de reconnaissance d'entités, conformément à la
+décision 2.
+
+**Un seul mécanisme ajouté : l'ancre `^`.** Un motif préfixé de `^` ne vaut qu'en **tête**
+du nom. Joconde écrit l'auteur « NOM Prénom » : sans ancre, « Raphaël » se rattache à
+Raphaël Collin ou Anton Raphael Mengs, et « Michel-Ange » à Corneille Michel-Ange. L'ancre
+n'est posée que là où elle est nécessaire — « ÉCOLE DE PRIMATICCIO » (121 références) doit
+rester pris, et le nom n'y est pas en tête.
+
+Ce choix est **plus solide qu'une liste de noms interdits** : le CSV est republié chaque
+mercredi, et un nouveau « Dupont Raphaël » serait de nouveau capté par une table qui ne le
+connaît pas. L'ancre, elle, tient sur une propriété de structure de la base.
+
+**Ce que l'ancre règle seule** : les 16 homonymes de Michel-Ange (aucune exclusion nommée
+n'a été nécessaire), la cinquantaine de « Raphaël » prénoms, Lemaire-Poussin,
+Lavallée-Poussin, Gaspard Poussin (Dughet), Le Guaspre, Bonifazio Veronese, Zenone Veronese,
+Tiziano Aspetti, Pierino da Vinci, « Madame Ingres ».
+
+**Ce qui a demandé une exclusion nommée** (l'homonyme porte le nom en tête) : Domenico
+Robusti le fils, Carlo et Benedetto Caliari, Gabriele Caliari, Philip et Pierre Van Dyck,
+Francesco et Cesare Vecellio, Pierre Mignard II le neveu, Aubin et Ferdinand Vouet,
+Marguerite Vinci, Poussin-Heydeck, Ribera y Cirera, Pierre Ribera, Arnold Frans Rubens et le
+« Rubens des batailles », Ingres Jean Marie Joseph, Raphael Tuck, Raphael-Schwartz, Giovanni
+Santi le père.
+
+**Deux corrections non prévues par l'audit.**
+
+1. L'exclusion `["ATELIER"]` posée sur Raphaël le 2026-07-08, **jamais documentée**, servait
+   à écarter les noms d'atelier (« ATELIER DE RAPHAËL »). L'ancre le fait mieux : ces formes
+   ne commencent pas par le nom du maître. Exclusion retirée.
+2. **« SANTI Raffaello », la forme d'état civil de Raphaël, n'était captée par aucun
+   motif** : ni `RAPHAEL`, ni `SANZIO` ne s'y trouvent. C'est un faux négatif au sein même
+   des 27 — **+3 références** prudentes. Il explique l'écart entre le total prévu par
+   l'audit (2 185) et le total obtenu (**2 188**).
+
+**Résultat mesuré** : doute des 27 **2 341 → 2 188** ; attributions certaines
+**29 995 → 28 240**. Invariants revérifiés sur les 27.
+
+**L'effet attendu se confirme : c'est la part affichée qui bouge le plus.**
+
+| Maître | part avant | part après |
+|---|---:|---:|
+| Michel-Ange | 19 % | **39 %** |
+| Le Tintoret | 27 % | **48 %** |
+| Véronèse | 15 % | **27 %** |
+| Le Primatice | 31 % | **38 %** |
+| Léonard de Vinci | 30 % | **36 %** |
+
+Michel-Ange tombe de 9 musées à **3** (Louvre 146, Rennes 1, Dole 1) : les six autres ne
+détenaient que des œuvres d'homonymes. Ces cinq phrases d'en-tête devront être **relues, pas
+seulement recalculées** — c'est le temps 7.
+
 ## 2026-07-21 (quinquies) — Temps 1 appliqué : le comptage passe à la référence
 
 Première étape du chantier de fiabilisation, exécutée dans `src/build_artistes.py` seul.

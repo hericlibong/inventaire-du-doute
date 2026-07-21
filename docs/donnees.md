@@ -3,6 +3,43 @@
 Tout ce qu'on apprend sur la base Joconde au fil du projet : structure, pièges,
 chiffres vérifiés. Chaque constat indique sa date et comment il a été obtenu.
 
+## Table d'identité des maîtres : qui est écarté, et pourquoi (2026-07-21, temps 2)
+
+Établie à partir d'un inventaire exhaustif des **246 formes d'auteur** captées par les motifs
+en vigueur (mentions prudentes et certaines, comptées en références uniques), relu forme par
+forme. Après application : **141 formes retenues** sur les 27 maîtres.
+
+Cette liste est destinée à être **publiée** : elle rend la sélection contrôlable.
+
+| Maître | Personnes écartées | Références concernées |
+|---|---|---:|
+| Michel-Ange | Corneille Michel-Ange, Cerquozzi, Merisi dit Le Caravage, Pace, Anselmi, Pistoletto, Challe, Slodtz, Campidoglio, Membrini, Aliprandi, Unterperger, Yrazazbal, Ricciolini, Pollet | 24 prudentes, **489 certaines** |
+| Raphaël | ≈ 50 porteurs du **prénom** Raphaël (Lonne, Lardeur, Mengs, Collin, Sadeler, Freida, Delorme…), l'éditeur Raphael Tuck, Raphael-Schwartz, Giovanni Santi le père | 4 prudentes, ≈ 410 certaines |
+| Véronèse | Carlo Caliari (fils), Benedetto Caliari (frère), Gabriele Caliari, Bonifazio de' Pitati, Zenone da Verona | 3 prudentes, 21 certaines |
+| Nicolas Poussin | Lemaire-Poussin, Lavallée-Poussin, Gaspard Dughet dit Gaspard Poussin, Le Guaspre, Poussin-Heydeck, Lemaire | 4 prudentes, 20 certaines |
+| Le Tintoret | Domenico Robusti (le fils) | 1 prudente, 12 certaines |
+| Van Dyck | Philip van Dyck, Philippe Van Dyck, Pierre Van Dyck | 0, 7 certaines |
+| Titien | Francesco Vecellio, Cesare Vecellio, Tiziano Aspetti | 1 prudente, 10 certaines |
+| Simon Vouet | Aubin Vouet, Ferdinand Vouet | 2 prudentes, 7 certaines |
+| Léonard de Vinci | Pierino da Vinci (le neveu), Marguerite Vinci, « Leonardo José » | 0, 4 certaines |
+| Ingres | Ingres Jean Marie Joseph, « Madame Ingres » | 1 prudente, 4 certaines |
+| Rubens | Arnold Frans Rubens, le « Rubens des batailles » | 0, 1 certaine |
+| Ribera | Roman Ribera y Cirera, Pierre Ribera | 0, 3 certaines |
+| Pierre Mignard | Pierre Mignard II (le neveu) | 0, 1 certaine |
+
+Les quatorze autres maîtres n'ont **aucun homonyme** dans la base : Charles Le Brun,
+Le Primatice, Rembrandt (l'exclusion Bugatti datait de 2026-07-07), François Clouet,
+Annibale Carracci, Rodin, Boucher, Andrea del Sarto, Guido Reni, Greuze, Le Corrège,
+Hyacinthe Rigaud, Géricault, Fragonard.
+
+**Un faux négatif corrigé au passage** : « SANTI Raffaello », forme d'état civil de Raphaël,
+n'était captée par aucun motif (ni `RAPHAEL`, ni `SANZIO` n'y figurent) — 12 mentions
+prudentes par forme, **+3 références** une fois dédoublonnées avec « RAPHAEL ».
+
+**Totaux après les temps 1 et 2** : doute **2 341 → 2 188**, certaines **29 995 → 28 240**.
+Michel-Ange : 148 références prudentes, 3 musées (Louvre 146, Rennes 1, Dole 1), part
+**39 %** contre 19 % affiché.
+
 ## Audit de fiabilité du pipeline des maîtres (2026-07-21) — constats mesurés
 
 Scan exhaustif des **1 023 705 lignes** du CSV, reproduit indépendamment à partir du code

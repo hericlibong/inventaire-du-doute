@@ -2,6 +2,38 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-21 (sexies) — Temps 2 : savoir de qui on parle
+
+Avant d'écrire quoi que ce soit, on a demandé à la base ce qu'elle contenait vraiment : la
+liste des **246 formes d'auteur** que les motifs actuels ramassent, prudentes et certaines,
+avec leurs comptes. Puis on les a lues une par une. C'est en les lisant qu'on voit le
+problème en face : sous « Michel-Ange », le Louvre et treize autres musées ont surtout
+rangé **Corneille Michel-Ange**, un peintre lyonnais du XVIIe, 422 œuvres à lui seul.
+
+La solution tient en un signe. En Joconde, l'auteur s'écrit « NOM Prénom » : le nom vient en
+tête. Un motif marqué `^` ne vaut donc qu'en tête, et Corneille Michel-Ange, Anton Raphael
+Mengs, Gaspard Poussin ou Madame Ingres sortent d'eux-mêmes — sans qu'on ait à les nommer.
+Là où l'homonyme porte quand même le nom en tête (Domenico Robusti, le fils du Tintoret ;
+Carlo Caliari, le fils de Véronèse ; Pierre Mignard II, le neveu), il a fallu l'écarter
+nommément. Cette liste-là est faite pour être publiée : elle rend la sélection vérifiable.
+
+Deux choses trouvées en chemin. Une exclusion posée sur Raphaël en juillet, **jamais
+documentée**, qui écartait les « ateliers » — l'ancre fait le travail plus proprement.
+Et surtout un oubli : **« SANTI Raffaello », le nom d'état civil de Raphaël**, n'était capté
+par aucun motif. On cherchait « Raphael » et « Sanzio », pas « Santi ». Trois notices
+prudentes de plus. C'est aussi ce qui explique qu'on arrive à 2 188 là où l'audit annonçait
+2 185.
+
+Le chiffre du doute descend de 2 341 à 2 188. Mais le vrai mouvement est ailleurs : les
+attributions certaines tombent de 29 995 à 28 240, et **c'est la part affichée sous chaque
+fiche qui bascule**. Michel-Ange passait pour un maître à 19 % de notices prudentes ; il est
+à **39 %**. Le Tintoret passe de 27 % à 48 %, Véronèse de 15 % à 27 %. Michel-Ange n'est plus
+présent dans 9 musées mais dans **3** : le Louvre, Rennes, Dole. Les six autres ne
+détenaient que des homonymes.
+
+Ces phrases-là devront être relues, pas seulement recalculées. C'est noté pour le temps 7.
+Les exports restent gelés. Suite : temps 3, les tests sur références réelles.
+
 ## 2026-07-21 (quinquies) — Temps 1 : on compte des œuvres, plus des mentions
 
 Reprise après le plantage de la machine : l'audit était bien commité (`0a566f7`), rien de

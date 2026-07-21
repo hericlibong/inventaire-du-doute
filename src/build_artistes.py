@@ -57,34 +57,73 @@ COLONNES = ["Reference", "Auteur", "Domaine", "Code_Museofile",
 # normalisé. Ordonnée par doute décroissant (mesuré 2026-07-07). Les deux
 # familles écartées après désambiguïsation (Bruegel l'Ancien, Cranach l'Ancien,
 # < 20 une fois le maître isolé) NE figurent pas ici — voir docs/decisions.md.
+#
+# TABLE RELUE À L'ŒIL (2026-07-21, temps 2) à partir de l'inventaire des 246
+# formes d'auteur réellement captées, mentions prudentes ET certaines. Deux
+# outils, pas un de plus : l'ancre « ^ » (le nom doit être en tête, voir
+# _mot_entier) et l'exclusion nommée. Chaque exclusion dit QUI elle écarte :
+# c'est cette liste qui sera publiée avec la page méthode.
 MAITRES = [
     ("Charles Le Brun",     ["LE BRUN CHARLES"], []),
     ("Le Primatice",        ["PRIMATICCIO", "PRIMATICE"], []),
-    ("Ingres",              ["INGRES"], []),
+    # « MADAME INGRES » est écartée par l'ancre ; Jean Marie Joseph Ingres est
+    # un autre homme.
+    ("Ingres",              ["^INGRES"], ["JEAN MARIE JOSEPH"]),
     ("Rembrandt",           ["REMBRANDT"], ["BUGATTI"]),
-    ("Michel-Ange",         ["BUONARROTI", "MICHELANGELO", "MICHEL-ANGE"], []),
-    ("Rubens",              ["RUBENS"], []),
+    # L'ancre suffit à écarter les 16 homonymes qui portent Michelangelo ou
+    # Michel-Ange en PRÉNOM : Corneille Michel-Ange (422 mentions certaines !),
+    # Cerquozzi, Merisi dit Le Caravage, Pace, Anselmi, Pistoletto, Challe,
+    # Slodtz, Campidoglio, Membrini, Aliprandi, Unterperger, Yrazazbal,
+    # Ricciolini, Pollet. Aucune exclusion nommée n'est nécessaire.
+    ("Michel-Ange",         ["^BUONARROTI", "^BUONAROTTI", "^MICHEL-ANGE"], []),
+    # Arnold Frans Rubens et le « Rubens des batailles » (Snayers) ne sont pas lui.
+    ("Rubens",              ["RUBENS"], ["ARNOLD", "BATAILLES"]),
     ("François Clouet",     ["CLOUET FRANCOIS"], []),
     ("Annibale Carracci",   ["CARRACCI ANNIBALE"], []),
-    ("Rodin",               ["RODIN AUGUSTE", "RODIN"], []),
+    ("Rodin",               ["RODIN AUGUSTE"], []),
     ("Boucher",             ["BOUCHER FRANCOIS"], []),
     ("Andrea del Sarto",    ["SARTO ANDREA", "ANDREA DEL SARTO"], []),
     ("Guido Reni",          ["RENI GUIDO"], []),
-    ("Léonard de Vinci",    ["VINCI"], []),
-    ("Le Tintoret",         ["TINTORET", "ROBUSTI"], []),
-    ("Nicolas Poussin",     ["POUSSIN NICOLAS", "POUSSIN"], []),
-    ("Simon Vouet",         ["VOUET"], []),
+    # Pierino da Vinci (le neveu sculpteur) et Marguerite Vinci écartés.
+    ("Léonard de Vinci",    ["^VINCI", "^LEONARD DE VINCI", "^DE VINCI",
+                             "^LEONARDO DA VINCI", "^LEONARDO DI SER PIERO"],
+                            ["PIERINO", "MARGUERITE"]),
+    # Domenico Robusti est le fils de Jacopo.
+    ("Le Tintoret",         ["TINTORET", "^ROBUSTI"], ["DOMENICO"]),
+    # L'ancre écarte Lemaire-Poussin, Lavallée-Poussin, Gaspard Poussin (Dughet)
+    # et Le Guaspre ; reste Poussin-Heydeck, qui commence bien par Poussin.
+    ("Nicolas Poussin",     ["^POUSSIN"], ["HEYDECK"]),
+    # Aubin et Ferdinand Vouet sont écartés par la précision du motif.
+    ("Simon Vouet",         ["VOUET SIMON"], []),
     ("Greuze",              ["GREUZE"], []),
-    ("Van Dyck",            ["DYCK"], []),
+    # Philip van Dyck, Philippe et Pierre Van Dyck ne sont pas Antoon.
+    ("Van Dyck",            ["DYCK"], ["PHILIP", "PHILIPPE", "PIERRE"]),
     ("Le Corrège",          ["CORREGE", "ALLEGRI ANTONIO"], []),
-    ("Pierre Mignard",      ["MIGNARD PIERRE"], []),
-    ("Véronèse",            ["VERONESE", "CALIARI"], []),
+    # Pierre Mignard II, le neveu.
+    ("Pierre Mignard",      ["MIGNARD PIERRE"], ["PIERRE II"]),
+    # Le fils Carlo, le frère Benedetto, le neveu Gabriele ; Bonifazio de'
+    # Pitati et Zenone da Verona portent « Veronese » comme surnom de ville.
+    ("Véronèse",            ["^VERONESE", "^CALIARI"],
+                            ["CARLO", "BENEDETTO", "GABRIELE",
+                             "BONIFAZIO", "BONIFACIO"]),
     ("Hyacinthe Rigaud",    ["RIGAUD HYACINTHE"], []),
     ("Géricault",           ["GERICAULT"], []),
     ("Fragonard",           ["FRAGONARD JEAN-HONORE", "FRAGONARD JEAN HONORE"], []),
-    ("Raphaël",             ["RAPHAEL", "SANZIO"], ["ATELIER"]),
-    ("Ribera",              ["RIBERA"], []),
-    ("Titien",              ["TIZIANO", "LE TITIEN", "VECELLIO"], []),
+    # Le cas le plus pollué : 59 formes captées, « Raphaël » servant de prénom à
+    # une cinquantaine de personnes (Lonne, Lardeur, Mengs, Collin, Sadeler,
+    # Freida…). L'ancre les écarte toutes ; restent l'affichiste Raphael Tuck,
+    # le graveur Raphael-Schwartz, et Giovanni Santi, le père.
+    # L'ancre remplace aussi l'ancienne exclusion « ATELIER », qui servait à
+    # écarter les noms d'atelier (« ATELIER DE RAPHAEL ») : ils ne commencent
+    # pas par le nom du maître. Et « SANTI Raffaello », sa forme d'état civil,
+    # n'était captée par aucun motif — un faux négatif au sein même des 27.
+    ("Raphaël",             ["^RAPHAEL", "^SANZIO", "^SANTI RAFFAELLO",
+                             "^RAFFAELLO"], ["TUCK", "SCHWARTZ", "GIOVANNI"]),
+    # Roman Ribera y Cirera et Pierre Ribera.
+    ("Ribera",              ["RIBERA"], ["CIRERA", "PIERRE"]),
+    # Francesco et Cesare Vecellio sont de la famille, pas Tiziano ; Tiziano
+    # Aspetti est écarté faute de motif sur le seul prénom.
+    ("Titien",              ["LE TITIEN", "^VECELLIO"], ["FRANCESCO", "CESARE"]),
 ]
 
 LIBELLES_NIVEAUX = {1: "Presque lui", 2: "Autour de lui", 3: "Son style, sans lui"}
@@ -110,7 +149,15 @@ def _mot_entier(motif: str, pivot: str) -> bool:
     → Le Tintoret (decisions.md / donnees.md, 2026-07-13). Le test mot entier lève
     l'ambiguïté ; les vraies notices restent prises (« Le Tintoret ou il Tintoretto »
     contient bien le mot « Tintoret »). Frontières de mot sur le pivot déjà
-    normalisé (majuscules, sans accents)."""
+    normalisé (majuscules, sans accents).
+
+    Un motif préfixé de « ^ » ne vaut qu'en TÊTE du nom. Joconde écrit l'auteur
+    « NOM Prénom » : sans cette ancre, « Raphaël » se rattache à Raphaël Collin ou
+    Anton Raphael Mengs, et « Michel-Ange » à Corneille Michel-Ange
+    (donnees.md, 2026-07-21). L'ancre n'est posée que là où elle est nécessaire :
+    « ÉCOLE DE PRIMATICCIO » doit rester pris, le nom n'y est pas en tête."""
+    if motif.startswith("^"):
+        return re.match(rf"{re.escape(motif[1:])}\b", pivot) is not None
     return re.search(rf"\b{re.escape(motif)}\b", pivot) is not None
 
 
