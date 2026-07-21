@@ -5,6 +5,49 @@ Chaque ⏸ est un point de validation utilisateur : on s'y arrête.
 
 ---
 
+## ★★ CHANTIER PRIORITAIRE (2026-07-21) — fiabilisation des maîtres
+
+**Rien ne repart côté éditorial ou graphique avant les étapes 1 à 3.** L'audit du
+2026-07-21 (constats : donnees.md ; décisions : decisions.md 2026-07-21 quater) a établi
+que le pipeline des maîtres compte des **segments d'auteur** là où l'interface promet des
+**notices**, et qu'il rattache **40 références au mauvais artiste**. Le dénominateur affiché
+sous chaque fiche est plus atteint encore que le numérateur.
+
+Ordre imposé — chaque ⏸ est un point d'arrêt :
+
+- [ ] **1. Unité de comptage** : comptage par couple `maître + Reference` dans
+      `src/build_artistes.py`. Invariants : une référence ne pèse qu'une fois par maître ;
+      plusieurs familles ne changent pas le poids ; familles jamais additionnées
+- [ ] **2. Identité** : table déclarative d'alias et d'exclusions (homonymes attestés),
+      couvrant les mentions **prudentes ET certaines** — c'est la seconde qui fabrique le
+      dénominateur public. Pas de reconnaissance d'entités, pas de moteur générique
+- [ ] **3. Tests de non-régression** sur références réelles (témoins d'homonymie, doublons
+      de graphie, trois cas multi-familles de Simon Vouet)
+- [ ] ⏸ **Validation du pipeline corrigé** avant régénération
+- [ ] **4. Recalcul au seuil de 10** références prudentes uniques, tous candidats confondus
+- [ ] **5. Nouvelle sélection** selon la règle double (maître de référence **et** seuil),
+      avec journal public des candidats écartés et de leur motif. Instruire les **faux
+      négatifs** relevés : Le Guerchin, Bouchardon, Jules Romain, Ludovico Carracci,
+      Téniers, François Gérard, Le Parmesan, Perino del Vaga…
+- [ ] ⏸ **Validation de la nouvelle liste** (son ampleur décide de la suite)
+- [ ] **6. Régénération des exports** : `artistes.json`, puis `vue_ensemble.json` (dérivé)
+- [ ] **7. Contrôle des effets sur le front** : classement du répertoire, jauges, familles,
+      niveaux, exemples d'œuvres, cartes, page Méthode, et **relecture des angles** des
+      en-têtes rédigés (les nombres suivent seuls, les angles non)
+- [ ] **8. Révision des textes publics** annonçant « 27 » ou « au moins vingt notices » :
+      `docs/roadmap.md`, `charte-graphique.md`, `dataviz-les-presque.md`,
+      `architecture-editoriale.md`, `web/src/routes/les-presque/+page.js`,
+      `web/src/routes/echelle/+page.svelte`, `web/src/routes/methode/+page.svelte`
+- [ ] **Arbitrage ouvert** : représentation par famille d'une référence portant deux
+      formulations prudentes (3 cas, Simon Vouet) — rejoint le fil « politique “?” vs
+      formule de distance »
+
+> Le total national de **24 507** notices prudentes n'est **pas** touché : il est produit
+> ligne à ligne, sans identification de maître (vérifié dans `build_exports.py` et
+> `count_markers.py`).
+
+---
+
 ## ★ RECENTRAGE (2026-07-15) — cap actuel
 
 **Décision.** La **V1 publique** de *L'inventaire du doute* sera centrée sur le

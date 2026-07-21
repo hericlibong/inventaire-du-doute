@@ -2,6 +2,123 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-21 (quater) — Fiabilisation des maîtres : unité de comptage, identité, seuil à 10
+
+Décisions prises à l'issue de l'audit du 2026-07-21 (constats mesurés : donnees.md, même
+date). **Aucune n'est encore appliquée** : le pipeline, les exports et le front sont
+inchangés à ce stade, sur consigne. Ce qui suit fixe le cap et l'ordre d'exécution.
+
+### Décision 1 — L'unité de comptage est la référence Joconde, pas le segment d'auteur
+
+Le comptage **par segment** du champ `Auteur`, retenu le 2026-07-07 et documenté comme tel,
+est **abandonné**. Il produit un chiffre que le public lit comme un nombre d'œuvres alors
+qu'il compte des mentions : une notice nommant le maître sous deux graphies pesait double.
+
+**Nouvelle unité : la référence Joconde unique.** Invariants à faire respecter par le
+pipeline et par les tests :
+
+- le `doute` d'un maître est un **nombre de références distinctes** ;
+- aucune référence n'augmente deux fois le total d'un même maître ;
+- une référence peut porter **plusieurs familles** sans peser davantage dans le total ;
+- les totaux de familles ne sont **pas additionnés** en un tout (recouvrements) ;
+- une somme de profils n'est publiée que si les ensembles sont réellement disjoints ;
+- le front n'appelle jamais « notices » un comptage de segments.
+
+Coût connu : **2 341 → 2 225** références sur les 27 (−116).
+
+### Décision 2 — L'identité des maîtres passe par une table déclarative
+
+Refus explicite du surcode : **pas** de reconnaissance d'entités, **pas** de moteur
+générique. Une **table lisible**, relue à l'œil, contenant pour chaque maître : ses alias
+suffisamment précis, et les **exclusions explicites** des homonymes attestés. Le rattachement
+reste un test au mot entier sur le nom-pivot.
+
+Coût connu : **−40 références** prudentes mal rattachées ; l'effet sur le dénominateur est
+plus lourd encore (Michel-Ange : 422 des 749 attributions certaines appartiennent à Corneille
+Michel-Ange ; Raphaël : 52 formes captées, « Raphaël » pris comme prénom).
+
+**La table doit couvrir les deux catégories** — prudent *et* certain : l'audit montre que la
+seconde est la plus polluée, et c'est elle qui fabrique le dénominateur affiché au public.
+
+### Décision 3 — Le seuil descend de 20 à 10 références prudentes uniques
+
+Seuil défini sur l'**unité corrigée** : références distinctes, personne précisément
+identifiée, copies « d'après » exclues, une référence comptée une seule fois même si le champ
+`Auteur` répète plusieurs alias.
+
+Objectif éditorial : ne retirer automatiquement aucun artiste proche de l'ancien seuil,
+élargir la matière, et disposer de plus de profils pour éprouver les vérifications.
+Conséquences déjà mesurées : **Michel-Ange reste** (148), **Titien reste** (11, contre 20
+affichés aujourd'hui — il serait sorti sous l'ancien seuil appliqué à l'unité corrigée).
+
+### Décision 4 — Le seuil ne sélectionne pas seul : la règle publique reste double
+
+Vérification faite dans la documentation : le critère en vigueur depuis le 2026-07-07 est
+**« maître de référence ET seuil quantitatif »** — la curation de notoriété était déjà
+assumée et publiable, le seuil servant à la rendre non arbitraire.
+
+**Cette combinaison est maintenue** ; seul le nombre change (20 → 10). L'audit montre
+qu'elle est indispensable : au seuil de 10, **298 formes d'auteur hors des 27** qualifient,
+dont des manufactures, des imprimeries, « anonyme », des mentions collectives
+(« CARRACCI l'un des ») et surtout des **fonds locaux massifs** — BARLA Jean-Baptiste, avec
+5 791 références prudentes, écraserait à lui seul tout classement quantitatif. Un seuil nu
+produirait une liste ingérable et éditorialement absurde.
+
+**Règle publique proposée**, reproductible et énonçable en une phrase :
+
+> Sont retenus les artistes **présents dans les répertoires d'autorité** (INHA/Agorha,
+> Joconde, encyclopédies de référence), **identifiés comme une personne unique** après
+> désambiguïsation, et dont **au moins 10 notices** portent une formulation prudente,
+> copies « d'après » exclues.
+
+Deux compléments nécessaires pour qu'elle soit vérifiable :
+1. la liste des candidats examinés est **publiée avec leur nombre de notices**, y compris
+   ceux écartés et le motif (entité non personnelle, fonds local, homonymie non résolue) —
+   la sélection devient contrôlable au lieu d'être un panthéon opaque ;
+2. les **faux négatifs** relevés par l'audit sont instruits au même titre que les candidats
+   nouveaux : Le Guerchin (93), Bouchardon (86), Jules Romain (78), Ludovico Carracci (76),
+   Téniers (67), François Gérard (65), Le Parmesan (63), Perino del Vaga (53)… dépassent
+   largement l'ancien seuil et n'ont jamais été examinés, la liste ayant été composée à la
+   main. **Ne pas reprendre les anciens comptes par nom** : chaque candidat repasse par la
+   désambiguïsation.
+
+### Arbitrage laissé ouvert — familles multiples sur une même référence
+
+Trois références de Simon Vouet (`M0332004170`, `M0332004171`, `M0332004172`) portent à la
+fois `VOUET Simon (?)` et `VOUET Simon (atelier, dessinateur)`. Elles comptent pour **trois**
+références dans le total — cela, c'est acquis. **Ce qui reste à trancher** : comment les
+représenter par famille. Trois options, aucune retenue par défaut :
+
+- **a.** la référence apparaît dans les deux familles (les familles ne s'additionnent déjà
+  pas, l'invariant tient) ;
+- **b.** priorité à la formule de distance (« atelier ») sur le « ? », jugé moins informatif ;
+- **c.** priorité au « ? », marqueur de doute le plus explicite.
+
+Impact mesuré : **3 références sur 2 185**, toutes chez un seul maître. Le choix est donc
+sans effet sur les totaux, mais il fixe une doctrine qui vaudra pour tous les cas à venir —
+d'où l'arbitrage explicite plutôt qu'un choix silencieux. Ce fil rejoint la question déjà
+ouverte « politique “?” vs formule de distance ».
+
+### Plan d'exécution retenu (ordre imposé)
+
+1. **Unité de comptage** — comptage par couple `maître + Reference` dans
+   `build_artistes.py` ; invariants ci-dessus.
+2. **Identité** — table déclarative des alias et exclusions, couvrant prudent *et* certain.
+3. **Tests de non-régression** — fondés sur des **références réelles** : les témoins
+   d'homonymie (Corneille, Cerquozzi, Merisi, Pace, Vouet Aubin, Robusti Domenico, Vecellio
+   Francesco, Ingres Jean Marie Joseph, les quatre « Poussin », les quatre « Raphaël »), les
+   doublons de graphie (Primatice, Corrège, Titien, Tintoret) et les trois références
+   multi-familles de Vouet.
+4. **Recalcul au seuil de 10** sur l'unité corrigée, tous candidats confondus.
+5. **Nouvelle sélection** selon la règle double, avec journal des candidats écartés.
+6. **Régénération des exports** (`artistes.json`, puis `vue_ensemble.json` qui en dérive).
+7. **Contrôle des effets sur le front** : classement du répertoire, jauges, familles,
+   niveaux, exemples d'œuvres, cartes, en-têtes rédigés des fiches (les nombres suivent
+   automatiquement, **les angles doivent être relus**), page Méthode.
+8. **Révision des textes publics** : tout ce qui annonce « 27 » ou « au moins vingt notices ».
+
+**Étapes 1 à 3 avant toute reprise éditoriale ou graphique.**
+
 ## 2026-07-21 (ter) — En-tête du graphique : deux textes, deux fonctions (4 artistes témoins)
 
 **Problème.** Le titre et le sous-titre du graphique formaient une **question suivie de sa

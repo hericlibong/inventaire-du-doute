@@ -2,6 +2,41 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-21 (quater) — Audit de fiabilité : le chiffre des maîtres est faux
+
+Trois notices rattachées à Michel-Ange — dont un Caravage et un Cerquozzi — ont déclenché un
+audit complet du pipeline des maîtres. Scan exhaustif du CSV, reproduit indépendamment.
+**Les constats sont confirmés, et le défaut est plus large qu'annoncé.**
+
+Deux défauts distincts, longtemps confondus. **L'unité de comptage** : on agrège des
+segments du champ `Auteur` alors que l'interface promet des notices — une œuvre nommant le
+maître sous deux graphies pèse double (Le Primatice 269 → 197, Le Corrège 46 → 25, Titien
+20 → 12). **L'identité** : 40 références prudentes sont rattachées au mauvais artiste, faute
+d'exclure les homonymes (Corneille Michel-Ange, Vouet Aubin, Robusti Domenico, quatre
+« Poussin », quatre « Raphaël »…). Total des 27 : **2 341 → 2 185 références**, soit −156.
+
+**Ce que l'audit a trouvé en plus.** Le **dénominateur** est plus atteint que le numérateur :
+sur les 749 attributions certaines de Michel-Ange, **422 appartiennent à Corneille
+Michel-Ange**, contre 212 à Buonarroti. Raphaël capte 52 formes d'auteur, « Raphaël » étant
+pris comme prénom (Lonne, Lardeur, Mengs, Collin…). La part affichée sur ces fiches est donc
+fausse dans ses deux termes : Michel-Ange annonce 19 %, la réalité tourne autour de 37 %.
+Et il y a des **faux négatifs** : Le Guerchin (93 notices), Bouchardon (86), Jules Romain
+(78), Ludovico Carracci (76), Téniers (67)… dépassent largement l'ancien seuil et n'ont
+jamais été examinés — la liste des 27 avait été composée à la main.
+
+**Décisions** (decisions.md 2026-07-21 quater) : l'unité devient la **référence Joconde
+unique** ; l'identité passe par une **table déclarative** d'alias et d'exclusions ; le seuil
+descend **de 20 à 10**, sur l'unité corrigée. Le seuil ne sélectionne pas seul : au seuil de
+10, 298 formes hors des 27 qualifient — imprimeries, manufactures, « anonyme », et le fonds
+Barla de Nice avec 5 791 notices. Le critère double (maître de référence **et** seuil) est
+maintenu, avec publication des candidats écartés et de leur motif.
+
+Le total national de 24 507 n'est pas touché : il est calculé ligne à ligne, sans
+identification de maître — vérifié dans le code.
+
+**Rien n'a été modifié** : ni pipeline, ni exports, ni front. Prochaine étape = validation du
+plan en huit temps inscrit à la roadmap, avant toute reprise éditoriale ou graphique.
+
 ## 2026-07-21 (ter) — L'en-tête du graphique cesse de se répondre à lui-même
 
 Le titre posait une question, le sous-titre y répondait avec les mêmes mots — la marque de

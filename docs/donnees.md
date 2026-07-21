@@ -3,6 +3,153 @@
 Tout ce qu'on apprend sur la base Joconde au fil du projet : structure, pièges,
 chiffres vérifiés. Chaque constat indique sa date et comment il a été obtenu.
 
+## Audit de fiabilité du pipeline des maîtres (2026-07-21) — constats mesurés
+
+Scan exhaustif des **1 023 705 lignes** du CSV, reproduit indépendamment à partir du code
+actuel (`src/build_artistes.py`, `markers.py`). Scripts d'audit en lecture seule, hors dépôt.
+**Aucun chiffre de cette section n'est canonique** : ce sont des mesures de contrôle, en
+attente du chantier de fiabilisation.
+
+### 1. Deux défauts distincts, longtemps confondus
+
+- **L'unité de comptage.** Le pipeline agrège des **segments** du champ `Auteur`
+  (séparés par `;`), alors que l'interface et la documentation parlent de **notices**. Une
+  notice qui nomme le maître deux fois sous deux graphies compte deux fois.
+- **L'identité.** Le test au mot entier empêche « SERODINE → Rodin », mais pas qu'un
+  **prénom ou un nom partagé** désigne une autre personne.
+
+### 2. Effet de l'unité de comptage (doublons de graphies)
+
+Segments actuellement publiés → références uniques, sur les maîtres touchés :
+Le Primatice **269 → 197** ; Le Corrège **46 → 25** ; Le Tintoret **47 → 39** ;
+Véronèse **41 → 38** ; Titien **20 → 12** ; Fragonard **31 → 30** ; Simon Vouet **51 → 48**.
+Les vingt autres maîtres sont inchangés.
+
+Cause : une même notice porte deux graphies du même homme — `LE PRIMATICE` et
+`PRIMATICCIO Francesco`, `LE CORRÈGE` et `ALLEGRI Antonio`, `LE TITIEN` et
+`VECELLIO Tiziano`, `MICHEL-ANGE` et `BUONARROTI Michelangelo`, `LE TINTORET` et
+`ROBUSTI Jacopo`.
+
+**Total des 27 : 2 341 segments → 2 225 références uniques.**
+
+### 3. Effet de l'identité (homonymes)
+
+**40 références prudentes sont rattachées au mauvais maître**, vérifiées une par une :
+
+| Maître | Réf. fausses | Personnes réellement désignées |
+|---|---:|---|
+| Michel-Ange | 24 | CORNEILLE Michel-Ange (13), CERQUOZZI Michelangelo (6), MERISI Michelangelo dit Le Caravage (4), PACE Michelangelo (1) |
+| Nicolas Poussin | 4 | LEMAIRE-POUSSIN, LAVALLÉE-POUSSIN Étienne de, DUGHET Gaspard, LEMAIRE Jean |
+| Raphaël | 4 | COLLIN Raphaël, MENGS Anton Raphael, MASSARD Jean Marie Raphaël Léopold, VELUT Raphaël |
+| Véronèse | 3 | CALIARI Benedetto (2), CALIARI Carlo (1) |
+| Simon Vouet | 2 | VOUET Aubin |
+| Ingres | 1 | INGRES Jean Marie Joseph |
+| Le Tintoret | 1 | ROBUSTI Domenico (le fils) |
+| Titien | 1 | VECELLIO Francesco |
+
+**Total des 27 après dédoublonnage et retrait des homonymes : 2 185 références** — soit
+**−156** par rapport aux 2 341 publiés.
+
+Références témoins vérifiées : `M0347001723` (Buonarroti, rattachement correct) ;
+`000PE020938` (Cerquozzi), `000PE024738`, `00000077350`, `000PE021251` (Merisi/Le Caravage),
+`08940000842` (Pace), `50350011790`–`50350011803` (Corneille) — toutes incorrectes.
+
+### 4. Le dénominateur est plus atteint que le numérateur (constat nouveau)
+
+Le chiffre affiché sous chaque fiche (« *n* sur *N* œuvres rattachées à son nom ») utilise
+`propre + doute`. Or la partie `propre` capte **beaucoup plus d'homonymes** que la partie
+prudente, parce qu'elle est bien plus volumineuse :
+
+- **Michel-Ange** : 749 références « certaines », dont **422 pour CORNEILLE Michel-Ange** —
+  soit **deux fois plus que Buonarroti lui-même (212)**. Treize autres homonymes suivent
+  (ANSELMI, PISTOLETTO, CHALLE, CAMPIDOGLIO, SLODTZ, MEMBRINI, ALIPRANDI, UNTERPERGER,
+  YRAZAZBAL, RICCIOLINI, CARAVAGGIO, POLLET). **19 formes d'auteur distinctes en tout.**
+- **Raphaël** : **52 formes**, 1 743 références « certaines ». « Raphaël » est capté comme
+  **prénom** : LONNE Raphaël (129), LARDEUR Raphaël (51), MENGS Anton Raphael (33),
+  COLLIN Raphaël (20), RAPHAEL-SCHWARTZ (18)…
+- Plus discrets, même mécanisme : Titien (ASPETTI Tiziano, 8 ; VECELLIO Cesare, 2),
+  Van Dyck (DYCK Philip van, 4 ; VAN DYCK Pierre, 2), Le Tintoret (ROBUSTI Domenico, 10),
+  Poussin (LEMAIRE-POUSSIN 8, LAVALLÉE-POUSSIN 6, GASPARD POUSSIN 3), Véronèse (CALIARI
+  Carlo 11, Benedetto 8), Simon Vouet (VOUET Aubin 6), Léonard (VINCI Pierino da 2,
+  VINCI Marguerite 1), Ingres (INGRES Jean Marie Joseph 3, « MADAME INGRES » 1).
+
+**Conséquence éditoriale** : la part affichée sur ces fiches est fausse dans les deux termes.
+Michel-Ange annonce aujourd'hui « 172 sur 921 » ; le calcul corrigé donne un ordre de
+grandeur de **148 sur ≈ 405** — d'environ 19 % à environ 37 %.
+
+### 5. Michel-Ange, profil recalculé (contrôle)
+
+Références uniques, homonymes écartés : **doute 148** (contre 172) ; « de son école » **110**,
+« attribué à » **37**, « ? » **1**, « genre de » **0** ; **3 musées** — Louvre **146**,
+Rennes 1, Dole 1 (contre 9 musées affichés). Mention dominante : « de son école »,
+110 sur 148, ≈ 74 %.
+
+Dénominateur : une seule référence (`02110002116`) appartient à la fois aux ensembles
+« certain » et « prudent ». L'union se situe autour de **405** références selon l'étendue de
+la table d'homonymes retenue — **valeur à figer avec la table définitive**, elle bouge de
+±50 selon que l'on écarte 4 ou 16 formes.
+
+### 6. Références portant plusieurs formulations prudentes
+
+Sur les 27 maîtres, **trois références seulement**, toutes chez Simon Vouet :
+`M0332004170`, `M0332004171`, `M0332004172` — chacune porte `VOUET Simon (?)` **et**
+`VOUET Simon (atelier, dessinateur)`. Elles doivent compter pour **trois** références au
+total, non pour six. Leur ventilation par famille dépend d'un arbitrage encore ouvert
+(priorité entre « ? » et une formule de distance) : voir decisions.md.
+
+### 7. Ce que l'erreur n'atteint pas (vérifié dans le code)
+
+- `src/build_exports.py` (→ `niveaux.json`, `musees.json`) et `src/count_markers.py`
+  travaillent **par ligne** (`det[...].any(axis=1)`), sans identifier de maître : une notice
+  y compte **une seule fois**. Le total national de **24 507** notices prudentes n'est donc
+  pas invalidé par ce défaut.
+- Les **familles globales peuvent se recouvrir** (une notice porte parfois deux formules) :
+  déjà documenté ici même et dans `vue_ensemble.json` — elles ne sont jamais additionnées,
+  et aucun diagramme en anneau n'est utilisé pour cette section.
+- `src/build_cases.py` (→ `cas.json`) et `src/build_revisions.py` (→ `revisions.json`) ne
+  dépendent pas de l'identification des maîtres.
+
+**Dépendent d'`artistes.json`** : `vue_ensemble.json` (recalculé depuis lui), la route
+`/les-presque` (fiches, graphique, carte, répertoire, jauges, en-têtes rédigés), la route
+`/echelle` (via `vue_ensemble.json`) et la page `/methode` (nombre de noms, total des
+notices prudentes des maîtres).
+
+### 8. Candidats : pourquoi un seuil quantitatif ne suffit pas
+
+Comptage de **toutes** les formes d'auteur de la base par références prudentes uniques :
+**332 formes atteignent 10 références**, dont **298 hors des 27 actuels**. Elles se
+répartissent ainsi :
+
+- **18 ne sont pas des personnes** : Imprimerie de Wissembourg (392), « anonyme » (152),
+  « CARRACCI l'un des » (78), Manufacture de Creil (60), « COYPEL l'un des » (60),
+  Faïencerie de Sarreguemines (51), Manufacture de cristaux du Creusot (46)…
+- **280 sont des noms de personnes** — mais beaucoup relèvent de **fonds locaux massifs**,
+  sans rapport avec un maître de référence : BARLA Jean-Baptiste (**5 791**, la monoculture
+  d'histoire naturelle de Nice déjà connue), CLAUSEL Alexandre (295), NORMAND (244),
+  TIRODE (231), MORINET (168), DUTHOIT (94 et 93)…
+- **106 dépassent 20 références**, **174 se situent entre 10 et 19**.
+
+**Faux négatifs (constat nouveau).** Des maîtres de référence évidents dépassent largement
+l'ancien seuil de 20 et sont pourtant **absents** de la liste, composée à la main en
+2026-07-07 : BARBIERI Giovanni Francesco, dit **Le Guerchin** (93) ; **BOUCHARDON** Edme
+(86) ; PIPPI Giulio, dit **Jules Romain** (78) ; **CARRACCI Ludovico** (76) ; **TÉNIERS**
+David (67) ; **GÉRARD** François (65) ; MAZZUOLA Francesco, dit **Le Parmesan** (63) ;
+BONACCORSI Piero, dit **Perino del Vaga** (53) ; **MENZEL** (47) ; **BANDINELLI** (45) ;
+**TEMPESTA** (43) ; **GIORDANO** Luca (42). Dans la tranche 10-19 : **DÜRER** (19),
+**Le Sueur** (18), **Fra Bartolomeo** (18), **Rosso Fiorentino** (18), **Ostade** (17),
+**Jean Goujon** (17), **Dolci** (19), **Nicolò dell'Abate** (19).
+
+Ces nombres sont **par forme d'auteur**, avant fusion des graphies et avant
+désambiguïsation : ils indiquent des pistes à instruire, pas des profils prêts à publier.
+
+### 9. Autres constats de forme
+
+- Le qualificatif n'est **pas toujours entre parenthèses** : le nom-pivot d'Ingres apparaît
+  sous la forme `INGRES JEAN-AUGUSTE-DOMINIQUE ATTRIBUE A` (189 références). La convention
+  « qualificatifs entre parenthèses » est fréquente, pas universelle — déjà relevé en
+  2026-07-07, confirmé ici à grande échelle.
+- Un nom-pivot dégénéré `A` totalise 19 références prudentes : bruit de saisie à écarter.
+
 ## Reconnaissance pour la « Vue d'ensemble » des formulations prudentes (2026-07-15)
 
 Tour d'horizon avant de cadrer une future section « Vue d'ensemble » du dossier
