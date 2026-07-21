@@ -75,7 +75,13 @@ export const EDITORIAL = {
 		}
 	},
 	'Le Primatice': {
-		bio: 'Peintre et décorateur italien du XVIe siècle, 1504–1570.'
+		bio: 'Peintre et décorateur italien du XVIe siècle, 1504–1570.',
+		graphique: {
+			titre: 'Le Primatice, entre sa main et son école',
+			sousTitre: ({ n, second }) =>
+				`${n} œuvres portent la mention «${NB}attribué à${NB}», ${second} celle ` +
+				`«${NB}de son école${NB}»${NB}: les deux lectures se valent presque.`
+		}
 	},
 	Ingres: {
 		bio: 'Peintre français du XIXe siècle, 1780–1867.',
@@ -96,10 +102,22 @@ export const EDITORIAL = {
 		}
 	},
 	'Michel-Ange': {
-		bio: 'Sculpteur, peintre et architecte italien des XVe et XVIe siècles, 1475–1564.'
+		bio: 'Sculpteur, peintre et architecte italien des XVe et XVIe siècles, 1475–1564.',
+		graphique: {
+			titre: 'Michel-Ange, d’abord son école',
+			sousTitre: ({ n, second }) =>
+				`Deux fois plus d’œuvres sont dites «${NB}de son école${NB}» (${n}) que ` +
+				`directement attribuées (${second}).`
+		}
 	},
 	Rubens: {
-		bio: 'Peintre flamand du XVIIe siècle, 1577–1640.'
+		bio: 'Peintre flamand du XVIIe siècle, 1577–1640.',
+		graphique: {
+			titre: 'Rubens, presque tout à son école',
+			sousTitre: ({ n, total, musees, notices }) =>
+				`${n} des ${total} œuvres concernées sont dites «${NB}de son école${NB}», dispersées ` +
+				`dans ${musees} musées${NB}; la mention «${NB}attribué à${NB}» n’en couvre que ${notices('attribue')}.`
+		}
 	},
 	'François Clouet': {
 		bio: 'Peintre portraitiste français du XVIe siècle, vers 1515–1572.',
@@ -111,64 +129,188 @@ export const EDITORIAL = {
 		}
 	},
 	'Annibale Carracci': {
-		bio: 'Peintre italien des XVIe et XVIIe siècles, 1560–1609.'
+		bio: 'Peintre italien des XVIe et XVIIe siècles, 1560–1609.',
+		graphique: {
+			titre: 'Annibale Carracci, surtout son cercle proche',
+			sousTitre: ({ n, total, notices }) =>
+				`${n} des ${total} œuvres concernées renvoient à son cercle${NB}; la mention ` +
+				`«${NB}attribué à${NB}», qui suppose sa main, n’en couvre que ${notices('attribue')}.`
+		}
 	},
 	Rodin: {
-		bio: 'Sculpteur français des XIXe et XXe siècles, 1840–1917.'
+		bio: 'Sculpteur français des XIXe et XXe siècles, 1840–1917.',
+		graphique: {
+			titre: 'Rodin, une seule mention',
+			sousTitre: ({ total, musees }) =>
+				`Les ${total} œuvres concernées portent toutes la mention «${NB}attribué à${NB}», ` +
+				`réparties dans ${musees} musées.`
+		}
 	},
 	Boucher: {
-		bio: 'Peintre français du XVIIIe siècle, 1703–1770.'
+		bio: 'Peintre français du XVIIIe siècle, 1703–1770.',
+		graphique: {
+			titre: 'Boucher, plusieurs formes de proximité',
+			sousTitre: ({ n, total, second }) =>
+				`Aucune mention n’atteint la moitié${NB}: «${NB}de son école${NB}» en réunit ${n} ` +
+				`sur ${total}, «${NB}attribué à${NB}» ${second}.`
+		}
 	},
 	'Andrea del Sarto': {
-		bio: 'Peintre italien du XVIe siècle, 1486–1530.'
+		bio: 'Peintre italien du XVIe siècle, 1486–1530.',
+		graphique: {
+			titre: 'Andrea del Sarto, l’école avant tout',
+			sousTitre: ({ n, total, musees }) =>
+				`${n} des ${total} œuvres concernées sont dites «${NB}de son école${NB}», ` +
+				`dans ${musees} musées seulement.`
+		}
 	},
 	'Guido Reni': {
-		bio: 'Peintre italien du XVIIe siècle, 1575–1642.'
+		bio: 'Peintre italien du XVIIe siècle, 1575–1642.',
+		graphique: {
+			titre: 'Guido Reni, deux lectures voisines',
+			sousTitre: ({ n, total, second }) =>
+				`«${NB}De son école${NB}» et «${NB}attribué à${NB}» se tiennent de près${NB}: ` +
+				`${n} contre ${second}, sur ${total} œuvres concernées.`
+		}
 	},
 	'Nicolas Poussin': {
-		bio: 'Peintre français du XVIIe siècle, 1594–1665.'
+		bio: 'Peintre français du XVIIe siècle, 1594–1665.',
+		graphique: {
+			titre: 'Nicolas Poussin, sa main d’abord',
+			sousTitre: ({ n, total }) =>
+				`${n} des ${total} œuvres concernées portent la mention «${NB}attribué à${NB}»${NB}; ` +
+				'les autres formes de proximité restent marginales.'
+		}
 	},
 	'Simon Vouet': {
-		bio: 'Peintre français du XVIIe siècle, 1590–1649.'
+		bio: 'Peintre français du XVIIe siècle, 1590–1649.',
+		graphique: {
+			titre: 'Simon Vouet, aucune mention en tête',
+			sousTitre: ({ n, total, musees }) =>
+				`La mention la plus fréquente ne couvre que ${n} des ${total} œuvres ` +
+				`concernées, dispersées dans ${musees} musées.`
+		}
 	},
 	'Léonard de Vinci': {
-		bio: 'Peintre et ingénieur italien des XVe et XVIe siècles, 1452–1519.'
+		bio: 'Peintre et ingénieur italien des XVe et XVIe siècles, 1452–1519.',
+		graphique: {
+			titre: 'Léonard de Vinci, l’école plutôt que la main',
+			sousTitre: ({ n, total, musees }) =>
+				`${n} des ${total} œuvres concernées sont dites «${NB}de son école${NB}», ` +
+				`et ${musees} musées les conservent toutes.`
+		}
 	},
 	Greuze: {
-		bio: 'Peintre français du XVIIIe siècle, 1725–1805.'
+		bio: 'Peintre français du XVIIIe siècle, 1725–1805.',
+		graphique: {
+			titre: 'Greuze, sa main puis son style',
+			sousTitre: ({ n, total, notices }) =>
+				`${n} des ${total} œuvres concernées portent la mention «${NB}attribué à${NB}»${NB}; ` +
+				`${notices('maniere_de') + notices('suiveur_de') + notices('genre_de')} relèvent ` +
+				'seulement de son style.'
+		}
 	},
 	'Le Tintoret': {
-		bio: 'Peintre italien du XVIe siècle, 1518–1594.'
+		bio: 'Peintre italien du XVIe siècle, 1518–1594.',
+		graphique: {
+			titre: 'Le Tintoret, presque toujours « attribué à »',
+			sousTitre: ({ n, total, second }) =>
+				`${n} des ${total} œuvres concernées portent cette mention, ` +
+				`contre ${second} pour la suivante.`
+		}
 	},
 	'Van Dyck': {
-		bio: 'Peintre portraitiste flamand du XVIIe siècle, 1599–1641.'
+		bio: 'Peintre portraitiste flamand du XVIIe siècle, 1599–1641.',
+		graphique: {
+			titre: 'Van Dyck, éparpillé entre les musées',
+			// Pas de chiffre de mention ici : « 21 musées » et « 21 œuvres » se
+			// lisaient dans la même phrase, deux nombres identiques pour deux choses
+			// différentes.
+			sousTitre: ({ total, musees }) =>
+				`Ses ${total} œuvres concernées se répartissent dans ${musees} musées, ` +
+				'et aucune mention n’en réunit la moitié.'
+		}
 	},
 	'Le Corrège': {
-		bio: 'Peintre italien du XVIe siècle, 1489–1534.'
+		bio: 'Peintre italien du XVIe siècle, 1489–1534.',
+		graphique: {
+			titre: 'Le Corrège, l’école presque partout',
+			sousTitre: ({ n, total }) =>
+				`${n} des ${total} œuvres concernées sont dites «${NB}de son école${NB}»${NB}; ` +
+				'sa main n’est presque jamais avancée.'
+		}
 	},
 	'Pierre Mignard': {
-		bio: 'Peintre portraitiste français du XVIIe siècle, 1612–1695.'
+		bio: 'Peintre portraitiste français du XVIIe siècle, 1612–1695.',
+		graphique: {
+			titre: 'Pierre Mignard, entre sa main et son entourage',
+			sousTitre: ({ n, total }) =>
+				`${n} des ${total} œuvres concernées lui sont attribuées${NB}; les autres ` +
+				'renvoient à son école ou à son atelier.'
+		}
 	},
 	'Véronèse': {
-		bio: 'Peintre italien du XVIe siècle, 1528–1588.'
+		bio: 'Peintre italien du XVIe siècle, 1528–1588.',
+		graphique: {
+			titre: 'Véronèse, l’atelier en tête',
+			sousTitre: ({ n, total, second }) =>
+				`${n} des ${total} œuvres concernées sortent de son atelier, ` +
+				`${second} lui sont attribuées directement.`
+		}
 	},
 	'Hyacinthe Rigaud': {
-		bio: 'Peintre portraitiste français des XVIIe et XVIIIe siècles, 1659–1743.'
+		bio: 'Peintre portraitiste français des XVIIe et XVIIIe siècles, 1659–1743.',
+		graphique: {
+			titre: 'Hyacinthe Rigaud, deux mentions à égalité',
+			sousTitre: ({ n, total }) =>
+				`«${NB}Attribué à${NB}» et «${NB}de son école${NB}» comptent chacune ${n} ` +
+				`des ${total} œuvres concernées.`
+		}
 	},
 	'Géricault': {
-		bio: 'Peintre français du XIXe siècle, 1791–1824.'
+		bio: 'Peintre français du XIXe siècle, 1791–1824.',
+		graphique: {
+			titre: 'Géricault, sa main le plus souvent',
+			sousTitre: ({ n, total, notices }) =>
+				`${n} des ${total} œuvres concernées portent la mention «${NB}attribué à${NB}»${NB}; ` +
+				`${notices('genre_de')} relèvent seulement de son goût.`
+		}
 	},
 	Fragonard: {
-		bio: 'Peintre français du XVIIIe siècle, 1732–1806.'
+		bio: 'Peintre français du XVIIIe siècle, 1732–1806.',
+		graphique: {
+			titre: 'Fragonard, presque toujours sa main',
+			sousTitre: ({ n, total, second }) =>
+				`${n} des ${total} œuvres concernées portent la mention «${NB}attribué à${NB}»${NB}; ` +
+				`la suivante n’en réunit que ${second}.`
+		}
 	},
 	'Raphaël': {
-		bio: 'Peintre et architecte italien du XVIe siècle, 1483–1520.'
+		bio: 'Peintre et architecte italien du XVIe siècle, 1483–1520.',
+		graphique: {
+			titre: 'Raphaël, plusieurs formes de proximité',
+			sousTitre: ({ n, total, second }) =>
+				`${n} des ${total} œuvres concernées lui sont attribuées, ${second} renvoient ` +
+				'à son école, le reste à son atelier ou à son cercle.'
+		}
 	},
 	Ribera: {
-		bio: 'Peintre espagnol du XVIIe siècle, 1591–1652.'
+		bio: 'Peintre espagnol du XVIIe siècle, 1591–1652.',
+		graphique: {
+			titre: 'Ribera, un petit ensemble très dispersé',
+			sousTitre: ({ n, total, musees }) =>
+				`${total} œuvres concernées seulement, réparties dans ${musees} musées${NB}; ` +
+				`«${NB}attribué à${NB}» en réunit ${n}.`
+		}
 	},
 	Titien: {
-		bio: 'Peintre italien du XVIe siècle, vers 1488–1576.'
+		bio: 'Peintre italien du XVIe siècle, vers 1488–1576.',
+		graphique: {
+			titre: 'Titien, un partage entre sa main et son atelier',
+			sousTitre: ({ n, total, second }) =>
+				`${n} des ${total} œuvres concernées portent la mention «${NB}attribué à${NB}», ` +
+				`${second} renvoient à son atelier.`
+		}
 	}
 };
 

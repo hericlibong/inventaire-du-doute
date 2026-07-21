@@ -23,9 +23,30 @@ Quatre familles de titres selon la forme des données : mention très majoritair
 (« principalement autour du maître ») ; deux tendances proches (« entre … et … ») ;
 répartition sans tendance (« plusieurs formes de proximité »).
 
-**Appliqué à quatre artistes témoins seulement** (validés avant code) : Ingres, Charles
-Le Brun, Rembrandt, François Clouet. Les 23 autres **gardent l'en-tête généré** tant que la
-généralisation n'est pas validée — l'incohérence est temporaire et assumée.
+**Appliqué à quatre artistes témoins** (validés avant code) : Ingres, Charles Le Brun,
+Rembrandt, François Clouet — puis **généralisé aux 27 le même jour**, après validation. Plus
+aucune fiche n'utilise l'en-tête généré ; `lectureProfil()` et le titre générique restent
+dans le code comme repli, sans artiste pour les déclencher.
+
+**Répartition des 27 dans les quatre familles de titres** : mention très majoritaire (11) ;
+territoire majoritaire (5) ; deux tendances proches (6) ; sans tendance forte (5). Trois
+titres sortent du gabarit parce que les données l'imposaient : « Rodin, une seule mention »
+(100 % sur une seule formule), « Van Dyck, éparpillé entre les musées » et « Ribera, un petit
+ensemble très dispersé » (leur fait marquant est la dispersion, pas la mention).
+
+**Trois corrections faites en relisant la sortie complète**, invisibles à la rédaction :
+- Van Dyck lisait « se répartissent dans 21 musées ; “de son école” en réunit 21 » — deux
+  nombres identiques pour deux choses différentes dans la même phrase. Le sous-titre ne cite
+  plus de mention chiffrée ;
+- Léonard de Vinci répétait « deux musées » dans le titre et dans le sous-titre → titre
+  recentré sur « l'école plutôt que la main » ;
+- Simon Vouet ouvrait sur « La plus fréquente », sans dire de quoi → « La mention la plus
+  fréquente ».
+
+**Contrôle automatisé** avant livraison : les 27 couples sont produits en exécutant réellement
+les fonctions sur `artistes.json`, avec vérification de la longueur des titres (4 à 9 mots),
+de l'absence des mots proscrits (profil, corpus, distribution, domine, nettement, doute) et
+de l'absence de titre interrogatif. Zéro alerte.
 
 **Écrits à la main, chiffres lus dans les données.** Le champ `graphique` de
 `editorial-maitres.js` porte `titre` (chaîne) et `sousTitre` (**fonction**). La règle du

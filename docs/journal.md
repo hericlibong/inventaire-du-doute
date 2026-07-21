@@ -19,7 +19,20 @@ Quatre artistes témoins seulement, validés avant écriture du code :
   rassemblent que 18. »
 - François Clouet, l'atelier en premier — « 95 des 105 … dans 8 musées différents. »
 
-Les 23 autres gardent l'en-tête généré : la généralisation attend une validation. Les textes
+**Généralisé aux 27 dans la foulée**, après validation des quatre : chaque fiche a désormais
+son angle propre. Onze titres relèvent de la mention très majoritaire, cinq d'un territoire
+majoritaire, six de deux tendances proches, cinq d'une répartition sans tendance ; trois
+sortent du gabarit parce que leur fait marquant est ailleurs (Rodin et sa mention unique,
+Van Dyck et Ribera et leur dispersion). Trois défauts corrigés en relisant la sortie complète
+— dont Van Dyck, qui affichait « 21 musées » et « 21 œuvres » dans la même phrase.
+
+Un détour à noter : l'utilisateur a signalé que **seul Le Brun s'affichait et que les liens
+ne répondaient plus**. Le site n'était pas en cause — `vite preview` indexe `build/` au
+démarrage, et j'avais rebuildé deux fois sans redémarrer le serveur : tout le JavaScript
+partait en 404, la page restait figée sur son rendu pré-généré. **Rebuilder impose de
+redémarrer le preview.**
+
+Les textes
 sont écrits à la main mais **les nombres restent lus dans `artistes.json`** (le sous-titre
 est une fonction) — sinon ils mentiraient dès la prochaine régénération, ce qui va arriver
 avec la correction du double comptage. Sortie contrôlée en exécutant réellement les quatre
