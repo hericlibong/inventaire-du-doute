@@ -50,8 +50,15 @@ Ordre imposé — chaque ⏸ est un point d'arrêt :
       Registre par personne : `data/exports/maitres_instruits.csv`. Registre exhaustif à
       4 états : `data/exports/candidats_maitres.csv` (74 formes retenues, 22 écartées,
       234 à instruire)
-- [ ] ⏸ **Validation de la nouvelle liste** (son ampleur décide de la suite) ← **ON EST ICI**
-- [ ] **6. Régénération des exports** : `artistes.json`, puis `vue_ensemble.json` (dérivé)
+- [x] ⏸ **Validation de la nouvelle liste** (son ampleur décide de la suite) — feu vert
+      du 2026-07-22
+- [x] **6. Régénération des exports** : `artistes.json`, puis `vue_ensemble.json` (dérivé).
+      **Fait le 2026-07-22** (decisions.md, bis) : 63 maîtres, invariants + seuil vérifiés à
+      la génération. La liste pèse **3 674 notices prudentes sur 24 507, soit 15,0 %** du
+      doute national (contre 9,6 %). Clés `dans_27`/`hors_27` → **`dans_liste`/`hors_liste`**
+      (plus une seule occurrence de « 27 » dans le JSON généré). Correction d'une erreur de
+      mesure du temps 5 : `musees_presence` ≠ `musees_doute`. À surveiller :
+      `artistes.json` double, 189 → **372 Ko**
 - [ ] **7. Contrôle des effets sur le front** : classement du répertoire, jauges, familles,
       niveaux, exemples d'œuvres, cartes, page Méthode, et **relecture des angles** des
       en-têtes rédigés (les nombres suivent seuls, les angles non)

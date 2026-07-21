@@ -2,6 +2,40 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-22 (bis) — Temps 6 : les fichiers publiés bougent enfin
+
+Depuis l'audit, tout avait été mesuré sans rien publier : à chaque contrôle, l'export était
+restauré à sa version d'avant. C'est terminé. `artistes.json` contient 63 maîtres,
+`vue_ensemble.json` en a été redérivé.
+
+Le chiffre qui compte : les maîtres retenus réunissent **3 674 notices prudentes sur les
+24 507** de la base, soit **15 %** du doute écrit dans les musées de France. Avec 27 noms,
+c'était 9,6 %. On voit désormais un septième du phénomène au lieu d'un dixième.
+
+Et le constat qui fait tenir la section « Vue d'ensemble » est confirmé, pas seulement
+maintenu : dans l'ensemble de Joconde, « attribué à » écrase tout — 73 % des mentions
+prudentes. Chez les maîtres retenus, il tombe à 43 %, tandis que « école de » monte à 35 %
+alors qu'il ne fait que 7 % au national. Quand un musée doute d'un grand nom, il dit plus
+souvent « école de » que « attribué à ». Le contraste est même plus net qu'avant.
+
+Deux choses corrigées en route.
+
+Les clés du fichier s'appelaient `dans_27` et `hors_27`. Elles auraient menti dès cette
+régénération. Elles s'appellent maintenant `dans_liste` et `hors_liste`, et le JSON généré
+ne contient plus une seule fois le nombre 27 — y compris dans les phrases embarquées qui
+décrivaient la méthode. Un nom de champ qui fige un effectif devient faux au premier ajout.
+
+Et une erreur à moi, trouvée en relisant : j'avais écrit hier que « David Téniers est
+prudemment attribué dans 57 musées ». Non. Il **apparaît** dans 57 musées ; le doute n'est
+écrit que dans **24**. Les deux mesures sont désormais publiées côte à côte, et la
+documentation est corrigée. C'est précisément le genre de glissement que ce chantier existe
+pour corriger — il ne fallait pas l'introduire en le réparant.
+
+Un point à surveiller : le fichier double, 189 à 372 Ko, et c'est le navigateur qui le
+charge. Un lot de maîtres de plus et il faudra séparer le détail du répertoire d'entrée.
+
+Le front compile. Ce qu'il **montre** n'a pas encore été regardé : c'est le temps 7.
+
 ## 2026-07-22 — Temps 5 : ce qu'on ne sait pas encore n'est pas un refus
 
 La proposition de départ disait : instruire une trentaine de candidats, et publier les

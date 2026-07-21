@@ -12,7 +12,7 @@
 
 	// Chiffres, tous issus des exports (jamais saisis à la main).
 	const nbNoms = data.artistes.artistes.length; // 27
-	const douteDans27 = data.vue.totaux.doute_dans_27;
+	const douteDansListe = data.vue.totaux.doute_dans_liste;
 	const dApres = n.familles.d_apres.notices; // 22 564 (copies « d'après »)
 	const copiesTotal = n.copie; // 22 624 (catégorie copie, dédupliquée)
 	const pct = (v) => (v * 100).toLocaleString('fr-FR', { maximumFractionDigits: 1 });
@@ -101,7 +101,7 @@
 		vingt notices portant une formulation prudente (copies exclues), une fois le nom bien
 		isolé. Ce n'est <strong>pas un palmarès des plus grands</strong>&nbsp;: c'est un
 		seuil, choisi pour avoir assez de matière à montrer. Ces {nombre(nbNoms)} noms
-		réunissent {nombre(douteDans27)} des formulations prudentes.
+		réunissent {nombre(douteDansListe)} des formulations prudentes.
 	</p>
 	<p>
 		Rattacher une formule au bon artiste demande de la prudence, car le nom est cherché

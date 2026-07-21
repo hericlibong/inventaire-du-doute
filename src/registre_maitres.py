@@ -72,7 +72,12 @@ def statut_forme(nom: str, pivot_exemple: str) -> tuple[str, str]:
 
 
 def main() -> None:
-    agg = {nom: {"doute": set(), "propre": set(), "copie": set(), "musees": set()}
+    # « musees » = musées où le maître APPARAÎT, toutes catégories confondues.
+    # « musees_doute » = musées où une mention prudente est écrite. Les deux sont
+    # publiés : confondre les deux ferait dire au chiffre bien plus qu'il ne dit
+    # (David Téniers apparaît dans 57 musées, le doute n'est écrit que dans 24).
+    agg = {nom: {"doute": set(), "propre": set(), "copie": set(),
+                 "musees": set(), "musees_doute": set()}
            for nom, *_ in MAITRES}
     total = 0
 
@@ -93,6 +98,8 @@ def main() -> None:
                 a[cat].add(ref)
                 if isinstance(code, str) and code.strip():
                     a["musees"].add(code)
+                    if cat == "doute":
+                        a["musees_doute"].add(code)
         print(f"\r  {total:,} notices lues".replace(",", " "), end="", flush=True)
     print()
 
@@ -106,7 +113,8 @@ def main() -> None:
             "notices_prudentes": len(a["doute"]),
             "attributions_certaines": len(a["propre"]),
             "copies_d_apres": len(a["copie"]),
-            "musees": len(a["musees"]),
+            "musees_presence": len(a["musees"]),
+            "musees_doute": len(a["musees_doute"]),
         })
     lignes.sort(key=lambda x: -x["notices_prudentes"])
 
@@ -148,11 +156,13 @@ def main() -> None:
     for statut in ("retenu", "écarté", "à instruire"):
         print(f"  {statut:>12} : {compte[statut]}")
 
-    print(f"\n{'notices':>8}{'cert.':>7}{'copies':>7}{'mus.':>5}  maître  ·  lot")
+    print(f"\n{'notices':>8}{'cert.':>7}{'copies':>7}{'mus.doute':>10}"
+          f"{'mus.prés.':>10}  maître  ·  lot")
     for l in lignes:
         lot = "27" if l["lot"].startswith("initial") else "T5"
         print(f"{l['notices_prudentes']:>8}{l['attributions_certaines']:>7}"
-              f"{l['copies_d_apres']:>7}{l['musees']:>5}  {l['maitre']}  · {lot}")
+              f"{l['copies_d_apres']:>7}{l['musees_doute']:>10}"
+              f"{l['musees_presence']:>10}  {l['maitre']}  · {lot}")
 
 
 if __name__ == "__main__":

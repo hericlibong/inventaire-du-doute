@@ -2,6 +2,57 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-22 (bis) — Temps 6 : régénération des exports
+
+Première fois depuis l'audit que les fichiers publiés bougent. `artistes.json` (63 maîtres)
+puis `vue_ensemble.json`, qui en dérive sans repasser sur le CSV.
+
+**Invariants revérifiés sur les 63** : familles = niveaux = somme des musées = doute ;
+et le seuil lui-même est désormais vérifié à la génération — aucun maître sous 10.
+
+### Ce que la liste élargie change dans la vue d'ensemble
+
+| | avant (27) | après (63) |
+|---|---:|---:|
+| notices prudentes de la liste | 2 341 | **3 674** |
+| part du doute national (24 507) | 9,6 % | **15,0 %** |
+
+**Le message central de la section tient, et c'est vérifié, pas supposé.** « Attribué à »
+domine le doute national (17 926 sur 24 507, soit 73 %) mais ne pèse que **43 %** dans la
+liste ; « école de » fait **35 %** de la liste contre 7,6 % au national. Le contraste qui
+justifie la section est même plus net qu'avec 27 noms. De même, le niveau 2 « Autour de
+lui » reste majoritaire dans la liste (48 %) alors qu'il est minoritaire partout ailleurs.
+
+### Deux corrections faites en régénérant
+
+**1. Les clés `dans_27` / `hors_27` sont renommées `dans_liste` / `hors_liste`**
+(et `critere_27` → `critere_liste`). Un nom de champ qui fige un effectif devient faux au
+premier ajout — et il aurait menti dès cette régénération. Les textes embarqués dans
+l'export qui disaient « les 27 noms retenus » et « hors des 27 noms » sont corrigés : le
+JSON généré ne contient plus une seule occurrence de « 27 ». Quatre références côté front
+ont suivi (`echelle`, `methode`) : **renommage mécanique uniquement**, aucune retouche
+éditoriale — c'est le temps 7 et le temps 8.
+
+**2. Une erreur de mesure dans la documentation du temps 5, corrigée.** J'avais écrit
+« David Téniers est prudemment attribué dans 57 musées ». Faux : 57 est le nombre de musées
+où il **apparaît**, toutes catégories confondues ; le doute n'est écrit que dans **24**.
+`registre_maitres.py` publie désormais les **deux** colonnes, `musees_presence` et
+`musees_doute`, et `docs/donnees.md` est corrigé. Confondre les deux ferait dire au chiffre
+bien plus qu'il ne dit — c'est exactement le genre de glissement que ce chantier corrige.
+
+Le doute est parfois très concentré : Le Parmesan (63 notices), Baccio Bandinelli (45) et
+Adolph Menzel (47) ne sont concernés que dans **un seul musée** chacun.
+
+### Un point à surveiller
+
+`artistes.json` passe de 189 Ko à **372 Ko** — il double, et il est chargé par le front. Le
+projet s'est fixé des exports légers. Ce n'est pas bloquant aujourd'hui, mais un lot
+supplémentaire de maîtres reposera la question : il faudra probablement séparer le détail
+par maître (musées, exemples) du répertoire d'entrée. À trancher au temps 7.
+
+Le front compile (`npm run build` ✓) après synchronisation des données. Son **contrôle
+visuel et éditorial n'est pas fait** : c'est le temps 7.
+
 ## 2026-07-22 — Temps 5 : publication progressive sur registre exhaustif
 
 **Cadrage arbitré par l'utilisateur** (2026-07-22), après une proposition qui parlait de

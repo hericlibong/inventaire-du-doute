@@ -2,15 +2,15 @@
   "source": "Collections des musées de France : base Joconde",
   "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb",
   "version_donnee": "2026-07-01",
-  "lexique": "markers.py v2 (famille_segment, par segment du champ Auteur)",
-  "critere_27": "maître de référence ET ≥ 20 notices de doute (hors copie)",
-  "date_generation": "2026-07-15T15:32:05+00:00",
-  "message_central": "Dans l'ensemble de Joconde, « attribué à » domine fortement. Dans les 27 noms retenus, les liens plus indirects — école, atelier, manière — prennent plus de place.",
-  "note_methodo": "Les familles peuvent se recouvrir : on ne les additionne pas et on n'utilise pas de diagramme en anneau. Hors des 27 noms, seul le total par famille est publiable (pas de classement par nom). La monoculture divulguée (planches Barla, Nice) pèse une large part du doute national ; « global hors monoculture » permet de la neutraliser.",
+  "lexique": "markers.py v2 (famille_segment) — unité : référence Joconde unique",
+  "critere_liste": "maître de référence ET ≥ 10 notices de doute (hors copie)",
+  "date_generation": "2026-07-21T23:18:06+00:00",
+  "message_central": "Dans l'ensemble de Joconde, « attribué à » domine fortement. Dans les noms retenus, les liens plus indirects — école, atelier, manière — prennent plus de place.",
+  "note_methodo": "Les familles peuvent se recouvrir : on ne les additionne pas et on n'utilise pas de diagramme en anneau. Hors de cette liste, seul le total par famille est publiable (pas de classement par nom). La monoculture divulguée (planches Barla, Nice) pèse une large part du doute national ; « global hors monoculture » permet de la neutraliser.",
   "totaux": {
     "doute_total": 24507,
-    "doute_dans_27": 2341,
-    "doute_hors_27": 22166,
+    "doute_dans_liste": 3674,
+    "doute_hors_liste": 20833,
     "doute_hors_monoculture": 18716
   },
   "monoculture": {
@@ -26,64 +26,64 @@
       "libelle": "attribué à",
       "niveau": 1,
       "global": 17926,
-      "dans_27": 876,
-      "hors_27": 17050
+      "dans_liste": 1580,
+      "hors_liste": 16346
     },
     {
       "code": "point_interrogation",
       "libelle": "? (point d'interrogation)",
       "niveau": 1,
       "global": 2213,
-      "dans_27": 25,
-      "hors_27": 2188
+      "dans_liste": 54,
+      "hors_liste": 2159
     },
     {
       "code": "ecole_de",
       "libelle": "école de",
       "niveau": 2,
       "global": 1871,
-      "dans_27": 919,
-      "hors_27": 952
+      "dans_liste": 1292,
+      "hors_liste": 579
     },
     {
       "code": "atelier_de",
       "libelle": "atelier (qualificatif, beaux-arts)",
       "niveau": 2,
       "global": 1236,
-      "dans_27": 230,
-      "hors_27": 1006
+      "dans_liste": 360,
+      "hors_liste": 876
     },
     {
       "code": "maniere_de",
       "libelle": "(à la) manière de",
       "niveau": 3,
       "global": 703,
-      "dans_27": 181,
-      "hors_27": 522
+      "dans_liste": 211,
+      "hors_liste": 492
     },
     {
       "code": "entourage_de",
       "libelle": "entourage de",
       "niveau": 2,
       "global": 503,
-      "dans_27": 77,
-      "hors_27": 426
+      "dans_liste": 105,
+      "hors_liste": 398
     },
     {
       "code": "genre_de",
       "libelle": "genre de",
       "niveau": 3,
       "global": 303,
-      "dans_27": 25,
-      "hors_27": 278
+      "dans_liste": 54,
+      "hors_liste": 249
     },
     {
       "code": "suiveur_de",
       "libelle": "suiveur de",
       "niveau": 3,
       "global": 80,
-      "dans_27": 8,
-      "hors_27": 72
+      "dans_liste": 18,
+      "hors_liste": 62
     }
   ],
   "niveaux": [
@@ -91,21 +91,21 @@
       "niveau": 1,
       "libelle": "Presque lui",
       "global": 20014,
-      "dans_27": 901,
+      "dans_liste": 1634,
       "global_hors_monoculture": 14223
     },
     {
       "niveau": 2,
       "libelle": "Autour de lui",
       "global": 3537,
-      "dans_27": 1234,
+      "dans_liste": 1775,
       "global_hors_monoculture": 3537
     },
     {
       "niveau": 3,
       "libelle": "Son style, sans lui",
       "global": 956,
-      "dans_27": 206,
+      "dans_liste": 265,
       "global_hors_monoculture": 956
     }
   ],

@@ -17,14 +17,14 @@
 
 	// Comptages par mention pour chaque série (objet code → nombre).
 	const valGlobal = Object.fromEntries(vue.familles.map((f) => [f.code, f.global]));
-	const val27 = Object.fromEntries(vue.familles.map((f) => [f.code, f.dans_27]));
+	const valListe = Object.fromEntries(vue.familles.map((f) => [f.code, f.dans_liste]));
 	const totalGlobal = vue.totaux.doute_total; // 24 507
-	const total27 = vue.totaux.doute_dans_27; // 2 341
+	const totalListe = vue.totaux.doute_dans_liste;
 
 	// Échelle COMMUNE aux deux panneaux : la plus grande part observée, toutes séries
 	// confondues (« attribué à » dans l'ensemble). Les barres deviennent comparables.
 	const maxPart = Math.max(
-		...vue.familles.flatMap((f) => [f.global / totalGlobal, f.dans_27 / total27])
+		...vue.familles.flatMap((f) => [f.global / totalGlobal, f.dans_liste / totalListe])
 	);
 
 	// Formule type affichée UNIQUEMENT là où elle apporte quelque chose (règle
@@ -116,7 +116,7 @@
 
 	<div class="comparaison">
 		<BarresMentions titre="Ensemble de Joconde" total={totalGlobal} valeurs={valGlobal} {maxPart} />
-		<BarresMentions titre="Les 27 noms de référence" total={total27} valeurs={val27} {maxPart} />
+		<BarresMentions titre="Les 27 noms de référence" total={totalListe} valeurs={valListe} {maxPart} />
 	</div>
 
 	<p class="reserve">
