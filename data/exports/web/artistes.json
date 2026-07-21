@@ -2,7 +2,7 @@
  "critere": "maître de référence ET ≥ 20 notices de doute (hors copie)",
  "lexique": "markers.py v2 (famille_segment, par segment du champ Auteur)",
  "version_donnee": "2026-07-01",
- "date_generation": "2026-07-13T12:15:14+00:00",
+ "date_generation": "2026-07-21T07:33:50+00:00",
  "source": "Collections des musées de France : base Joconde",
  "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb",
  "niveaux": {
@@ -5754,11 +5754,11 @@
     },
     {
      "code": "attribue",
-     "reference": "000PE014515",
-     "titre": "SAINT BERNARD RESSUSCITANT UN MORT",
+     "reference": "000PE016095",
+     "titre": "PORTRAIT D'HOMME",
      "musee": "musée des beaux-arts",
      "ville": "Marseille",
-     "extrait": "LE TINTORET (dit, attribué à)"
+     "extrait": "ROBUSTI Domenico (attribué à)"
     },
     {
      "code": "ecole_de",
@@ -9679,11 +9679,11 @@
     },
     {
      "code": "attribue",
-     "reference": "50350228332",
-     "titre": "Mourant assisté d'un prêtre qui lui présente un crucifix",
+     "reference": "50350228331",
+     "titre": "Site montagneux, avec à droite, sur une éminence, des bâtiments religieux",
      "musee": "musée du Louvre",
      "ville": "Paris",
-     "extrait": "LE TITIEN (dit, attribué à)"
+     "extrait": "VECELLIO Tiziano (attribué à)"
     },
     {
      "code": "point_interrogation",

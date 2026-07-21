@@ -18,9 +18,12 @@
 
 	// Entrées dans l'ordre de l'axe du graphique. Kicker et pastille = les mêmes mots
 	// et la même couleur que le point correspondant.
+	// Garde-fou : une notice ne paraît qu'une fois, même si elle nomme le maître sous
+	// deux graphies (le pipeline dédoublonne déjà — ceci évite qu'une régression de
+	// l'export casse la vitrine, la référence servant de clé de liste).
 	const rang = (code) => ORDRE_FAMILLES.indexOf(code);
 	const cartes = $derived(
-		[...maitre.exemples]
+		[...new Map(maitre.exemples.map((ex) => [ex.reference, ex])).values()]
 			.sort((a, b) => rang(a.code) - rang(b.code))
 			.map((ex) => ({
 				...ex,

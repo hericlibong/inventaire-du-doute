@@ -2,6 +2,35 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-21 (bis) — Une notice ne peut illustrer la vitrine qu'une fois (bug Titien)
+
+**Symptôme.** Sur la fiche **Titien**, l'onglet « Œuvres » restait inaccessible. Même
+défaut, non repéré jusque-là, sur **Le Tintoret**.
+
+**Cause — dans les données, pas dans le front.** Une même notice peut nommer le maître
+**deux fois, sous deux graphies**, dans le champ auteur. Sur l'œuvre `50350228332` du
+Louvre, la base porte à la fois « VECELLIO Tiziano (attribué à) » et « LE TITIEN (dit,
+attribué à) ». `build_artistes.py` traite chaque segment d'auteur séparément : il retenait
+donc **deux exemples pour la même œuvre**, dans la même famille. Le composant
+`OeuvresMaitre.svelte` liste ses entrées avec la **référence comme clé** — deux clés
+identiques font échouer le rendu de la liste, et la vitrine entière disparaît.
+
+C'est une variante connue du piège « graphies multiples » (CLAUDE.md) : ici les deux
+graphies ne sont pas sur deux notices, mais **sur la même**.
+
+**Correction, à la source.** `build_artistes.py` tient désormais, par maître, l'ensemble des
+références déjà retenues en exemple (`refs_exemples`), toutes familles confondues : **une
+notice ne peut illustrer la vitrine qu'une fois**. Le quota par famille est inchangé, donc
+la place libérée est reprise par l'œuvre suivante — Titien et Le Tintoret gagnent un
+**vrai** second exemple pour leur famille dominante au lieu d'un doublon. Aucun comptage
+n'est touché : le diff de `artistes.json` se limite à ces deux exemples.
+
+**Garde-fou au front** (`OeuvresMaitre.svelte`) : la liste est dédoublonnée par référence
+avant affichage. Le pipeline reste la correction réelle ; ce filet évite qu'une future
+régression de l'export fasse à nouveau disparaître une page entière au lieu d'un doublon
+visible. La règle éditoriale « exemples pris automatiquement, les premiers rencontrés »
+n'est pas modifiée — elle est seulement rendue univoque.
+
 ## 2026-07-21 — Purge des derniers mots de laboratoire + ligne de partage « œuvres / notices »
 
 **Quatre reliquats** signalés par les deux passes précédentes et laissés en l'état sont

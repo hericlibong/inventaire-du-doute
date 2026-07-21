@@ -2,6 +2,25 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-21 (bis) — L'onglet « Œuvres » de Titien était cassé
+
+Signalé en relisant le site. La vitrine ne s'affichait pas sur **Titien** — ni sur **Le
+Tintoret**, que personne n'avait vu. La cause était dans les données : sur une même œuvre du
+Louvre, la base nomme le maître **deux fois sous deux graphies** (« VECELLIO Tiziano
+(attribué à) » et « LE TITIEN (dit, attribué à) »). Le pipeline lit chaque segment d'auteur
+à part et retenait donc deux fois la même notice ; le composant liste ses entrées par
+référence, et deux clés identiques font échouer le rendu de toute la liste.
+
+Corrigé à la source : `build_artistes.py` mémorise les références déjà retenues par maître,
+une notice n'illustre la vitrine qu'une fois. Les deux artistes gagnent au passage un vrai
+second exemple à la place du doublon ; **aucun comptage ne bouge** (diff limité à deux
+exemples). Garde-fou ajouté au front pour qu'une régression ne puisse plus faire disparaître
+une page entière. Export régénéré, `sync:data` + `build` OK. Détail : decisions.md
+2026-07-21 (bis).
+
+À retenir pour la suite : le piège des graphies multiples ne se limite pas à deux notices
+différentes — il existe **à l'intérieur d'une même notice**.
+
 ## 2026-07-21 — Purge des quatre reliquats de vocabulaire
 
 Petite passe de langue, sans effet sur les données ni les graphiques. « Corpus » disparaît

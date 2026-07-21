@@ -121,6 +121,13 @@ def _vide() -> dict:
     return {"propre": 0, "doute": 0, "copie": 0, "musees": set(),
             "familles": {}, "niveaux": {1: 0, 2: 0, 3: 0},
             "exemples": {}, "exemple_copie": None,
+            # Références déjà retenues en exemple pour CE maître, toutes familles
+            # confondues : une même notice ne doit illustrer la vitrine qu'une fois.
+            # Une notice peut en effet nommer le maître DEUX FOIS sous deux graphies
+            # (« VECELLIO Tiziano (attribué à) » et « LE TITIEN (dit, attribué à) »
+            # sur la même œuvre du Louvre) : sans ce garde-fou, on publiait deux
+            # entrées pour la même œuvre.
+            "refs_exemples": set(),
             # ventilation du doute SEUL par musée détenteur (carte par maître) :
             # code -> {doute, nom, ville, coord, familles, niveaux}
             "musees_doute": {},
@@ -215,8 +222,10 @@ def main() -> None:
                     # jusqu'à 2 notices réelles par famille (les premières
                     # rencontrées) ; la sortie n'en publie 2 que pour la dominante
                     exs = a["exemples"].setdefault(famille, [])
-                    if len(exs) < EXEMPLES_PAR_FAMILLE and isinstance(ref, str):
+                    if (len(exs) < EXEMPLES_PAR_FAMILLE and isinstance(ref, str)
+                            and ref not in a["refs_exemples"]):
                         exs.append(_exemple(ref, titre, musee, ville, segment))
+                        a["refs_exemples"].add(ref)
         print(f"\r  {total:,} notices lues".replace(",", " "), end="", flush=True)
     print()
 
