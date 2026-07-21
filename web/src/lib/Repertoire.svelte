@@ -90,7 +90,7 @@
 			<!-- Micro-légende : le nombre à droite de chaque nom est le MÊME `doute` que
 			     la valeur principale du profil (notices à formulation prudente). -->
 			<p class="legende-liste">
-				<span>Artiste</span><span>Notices concernées</span>
+				<span>Artiste</span><span>Œuvres concernées</span>
 			</p>
 
 			<ul class="maitres">

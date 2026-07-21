@@ -2,6 +2,39 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-21 — Purge des derniers mots de laboratoire + ligne de partage « œuvres / notices »
+
+**Quatre reliquats** signalés par les deux passes précédentes et laissés en l'état sont
+corrigés ici. Aucune donnée, aucun calcul, aucun graphique touché.
+
+- `les-presque/+page.svelte` — « {N} artistes disposent ici d'un **corpus suffisamment
+  documenté** » → « **réunissent ici assez d'œuvres** pour être explorés et comparés ». Le
+  critère de sélection reste expliqué en page Méthode (ancre `#les-27`) ; l'intro n'a pas à
+  le nommer en langue d'analyste.
+- `BandeauMaitre.svelte` — repère méthodologique : « … rattachées à son nom **dans le corpus
+  étudié** » → « … rattachées à son nom, **copies mises à part** ». C'est exactement ce que
+  disait le commentaire de code (le total exclut les « d'après ») : autant l'écrire pour le
+  lecteur au lieu de le cacher derrière un mot de métier.
+- `Repertoire.svelte` — en-tête de colonne « **Notices** concernées » → « **Œuvres**
+  concernées ».
+- `echelle/+page.svelte` — « Dans l'ensemble des **notices** concernées, une formule
+  **domine largement** » → « Sur l'ensemble des **œuvres** concernées, une formule **revient
+  bien plus souvent que les autres** ». « Domine » figurait déjà au vocabulaire proscrit pour
+  la fiche artiste (2026-07-20) ; la règle vaut partout.
+
+**Ligne de partage précisée** (amende le 2026-07-20, qui opposait texte narratif et comptage
+sec). Le critère n'est plus la nature du texte mais **la distance à la base** :
+- **« œuvres »** dans tout ce que le visiteur lit comme un propos sur les collections —
+  phrases, intros, **et les en-têtes des listes qui accompagnent ces phrases** (le répertoire
+  et le bandeau du maître sont côte à côte à l'écran et désignent le même nombre : ils
+  doivent employer le même mot) ;
+- **« notices »** là où l'on parle explicitement de la base — légendes de graphique
+  (`BarresMentions`), tooltips, seuils et page Méthode.
+
+Non traité, hors périmètre V1 : `/revisions` (rubrique en réserve, hors nav publique) dit
+encore « corpus » ; les occurrences restantes sont des **commentaires de code**, pas du
+texte affiché.
+
 ## 2026-07-20 (bis) — Fiche artiste : trois textes remis en langue ordinaire
 
 **Problème.** Trois textes de la fiche parlaient encore la langue du projet, pas celle du

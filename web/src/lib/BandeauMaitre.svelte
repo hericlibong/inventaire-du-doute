@@ -29,7 +29,7 @@
 
 	// Total de RÉFÉRENCE = attributions directes + formulations prudentes (propre + doute).
 	// Il n'inclut PAS les copies « d'après » ni les catégories exclues par le pipeline :
-	// d'où « dans le corpus étudié » (voir page Méthode).
+	// d'où « copies mises à part » dans la phrase de contexte (voir page Méthode).
 	const totalNom = $derived(maitre.propre + maitre.doute);
 	const pctDoute = $derived(totalNom ? Math.round((maitre.doute / totalNom) * 100) : 0);
 
@@ -101,7 +101,7 @@
 		<!-- REPÈRE méthodologique : registre secondaire, sans mise en évidence. -->
 		<p class="repere">
 			En contexte&nbsp;: {fr(maitre.doute)} sur {fr(totalNom)} œuvres rattachées à son
-			nom dans le corpus étudié, soit {pctDoute}&nbsp;%.
+			nom, copies mises à part, soit {pctDoute}&nbsp;%.
 		</p>
 	</div>
 </div>

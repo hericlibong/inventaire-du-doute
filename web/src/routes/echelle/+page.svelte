@@ -106,8 +106,9 @@
 <section class="bloc">
 	<h2>Ce que disent les chiffres</h2>
 	<p class="texte">
-		Dans l'ensemble des notices concernées, une formule domine largement&nbsp;:
-		«&nbsp;attribué à&nbsp;», qui reste au plus près de la main de l'artiste. Mais parmi
+		Sur l'ensemble des œuvres concernées, une formule revient bien plus souvent que les
+		autres&nbsp;: «&nbsp;attribué à&nbsp;», qui reste au plus près de la main de
+		l'artiste. Mais parmi
 		les vingt-sept noms de référence de la rubrique «&nbsp;Explorer les maîtres&nbsp;»,
 		les liens plus indirects — l'atelier, l'école, la manière — prennent beaucoup plus
 		de place.

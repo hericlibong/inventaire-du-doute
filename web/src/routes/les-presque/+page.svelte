@@ -73,8 +73,8 @@
 				avec le maître.
 			</p>
 			<p>
-				{nbMaitresTexte} artistes disposent ici d'un corpus suffisamment documenté pour être
-				explorés et comparés.
+				{nbMaitresTexte} artistes réunissent ici assez d'œuvres pour être explorés et
+				comparés.
 			</p>
 			<p class="renvoi">
 				<a href="{base}/methode#les-27">Pourquoi ces {nbMaitres} artistes&nbsp;?&nbsp;→</a>

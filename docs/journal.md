@@ -2,6 +2,21 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-21 — Purge des quatre reliquats de vocabulaire
+
+Petite passe de langue, sans effet sur les données ni les graphiques. « Corpus » disparaît
+des textes affichés (intro de `/les-presque`, repère du bandeau maître, où il devient
+« copies mises à part » — ce que le mot cachait) ; le répertoire dit désormais « Œuvres
+concernées » comme le bandeau voisin ; « une formule domine largement » devient « revient
+bien plus souvent que les autres » sur `/echelle`.
+
+Au passage, la ligne de partage œuvres/notices est **reformulée** : ce n'est plus narratif
+contre comptage sec, mais **la distance à la base** — « œuvres » dans ce que le visiteur lit
+comme un propos sur les collections (en-têtes de liste compris), « notices » là où l'on parle
+de la base elle-même (légendes de graphique, tooltips, seuils, Méthode). Détail :
+decisions.md 2026-07-21. `build` OK. Restent hors périmètre : `/revisions` (rubrique en
+réserve) et les commentaires de code.
+
 ## 2026-07-20 (bis) — Trois textes de la fiche remis en langue ordinaire
 
 Passe d'édition ciblée, données et graphique inchangés. (1) **Ligne biographique** : gabarit
