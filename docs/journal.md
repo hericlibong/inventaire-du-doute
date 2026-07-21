@@ -2,6 +2,54 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-22 — Temps 5 : ce qu'on ne sait pas encore n'est pas un refus
+
+La proposition de départ disait : instruire une trentaine de candidats, et publier les
+autres comme « écartés faute d'instruction ». Reformulation refusée, à juste titre. Ils ne
+sont pas écartés par les données — ils sont **encore à instruire**. Écrire l'inverse aurait
+réintroduit exactement ce qu'on venait de corriger : une sélection arbitraire, déguisée en
+résultat.
+
+La règle est donc : registre exhaustif, publication progressive. Les 330 formes restent
+toutes au fichier, chacune avec un état — retenue, écartée pour une raison précise, ambiguë,
+ou à instruire. Seules les personnes vérifiées entrent dans l'application. Les autres
+attendent un prochain lot, sans qu'on préjuge de rien.
+
+Première chose à faire : cesser de compter des graphies. Le Guerchin apparaît sous
+« Barbieri Giovanni Francesco », sous « Guercino », sous « Le Guerchin » ; réunis, ce ne sont
+pas 93 notices prudentes mais **101**. Salvator Rosa passe de 38 à 50, Carlo Maratti de 37 à
+45, Botticelli de 15 à 17. Le seuil de dix doit se mesurer sur un homme, pas sur une façon
+de l'écrire.
+
+Ensuite, séparer les familles. Federico Zuccaro n'est pas son frère Taddeo. Philippe de
+Champaigne n'est pas son neveu Jean-Baptiste. Louis Léopold Boilly n'est pas son fils Jules,
+lithographe. David Téniers le Jeune n'est ni son père ni son frère Abraham. Chacun de ces
+parents a été écarté nommément — et tous sont sous le seuil de leur côté, donc on ne perd
+personne au passage.
+
+**Trente-six maîtres instruits, soixante-trois retenus en tout, 3 674 notices prudentes.**
+Le plus bas est le Titien, à onze. Deux profils sortent du lot : Adolph Menzel porte plus de
+mentions prudentes que d'attributions certaines (47 contre 12), Corneille de Lyon presque
+trois fois plus (29 contre 11). Chez eux, l'incertitude est la situation ordinaire.
+
+Sur le registre exhaustif : 74 formes retenues, **22 écartées**, 234 à instruire. Les écarts
+sont vérifiés un par un — manufactures de Creil, de Sèvres, de Delft, imprimerie de
+Wissembourg, faïencerie de Sarreguemines, « Carracci l'un des », « anonyme ». Et trois
+mentions qui ne portent **aucun nom** : le champ auteur contient seulement « Attribué à ».
+Trente notices où un musée a écrit sa prudence sans dire de qui il doutait.
+
+Un détecteur a été corrigé en route : il écartait « Mellet Jules Fils » et « Lacour Pierre
+Fils » sur le mot « fils », alors que « Mellet Jacques Père » restait à instruire. Le mot
+désigne une personne d'une dynastie, pas un atelier. Ces noms repassent à instruire.
+
+Enfin, « DAVID (1748-1825) » — vingt-six notices prudentes dans dix-sept musées. C'est
+presque certainement Jacques-Louis David. Il reste **à instruire** : le nom-pivot n'est qu'un
+patronyme et la vérification n'a pas été faite. C'est le premier candidat du prochain lot.
+
+Les tests ont fait leur travail : deux références réelles ont changé de verdict, `M0350002026`
+et `50350011790`, qui revenaient à Gaspard Dughet et à Jules Romain, désormais retenus à leur
+nom. Rien n'a été régénéré : la liste doit être validée avant que le front bouge.
+
 ## 2026-07-21 (octies) — Temps 4 : à qui d'autre les musées ont-ils dit « peut-être » ?
 
 La liste des 27 avait été composée à la main. Personne n'avait demandé à la base qui d'autre

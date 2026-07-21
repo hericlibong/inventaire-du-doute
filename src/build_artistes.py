@@ -127,6 +127,91 @@ MAITRES = [
     # Francesco et Cesare Vecellio sont de la famille, pas Tiziano ; Tiziano
     # Aspetti est écarté faute de motif sur le seul prénom.
     ("Titien",              ["LE TITIEN", "^VECELLIO"], ["FRANCESCO", "CESARE"]),
+
+    # -- LOT DU 2026-07-22 (temps 5) : 36 candidats instruits un par un à partir
+    # du registre des 330 formes au seuil de 10 (candidats_maitres.csv). Chacun
+    # a été vérifié : identité claire, ≥ 10 références prudentes UNIQUES après
+    # regroupement des graphies, homonymes et parents séparés nommément. Le
+    # comptage par personne, les statuts et les motifs écartés : docs/donnees.md
+    # et data/exports/maitres_instruits.csv. L'ordre ici est indicatif ; la
+    # sortie retrie par doute.
+    #
+    # Giovanni Francesco Barbieri, dit Le Guerchin / Guercino (toutes graphies).
+    ("Le Guerchin",         ["^BARBIERI GIOVANNI", "GUERCHIN", "GUERCINO"], []),
+    # Edme Bouchardon seul : ses frères Jacques-Philippe et Jean-Baptiste écartés.
+    ("Bouchardon",          ["BOUCHARDON EDME"], []),
+    # Giulio Pippi, dit Jules Romain / Giulio Romano ; Jules-Romain Joyant écarté.
+    ("Jules Romain",        ["^PIPPI GIULIO", "ROMAIN JULES", "JULES ROMAIN",
+                             "GIULIO ROMANO"], ["JOYANT"]),
+    # Le frère d'Annibale ; « CARRACCI l'un des » (mention collective) reste dehors.
+    ("Ludovico Carracci",   ["CARRACCI LUDOVICO", "CARRACCI LODOVICO"], []),
+    # David Téniers le Jeune (David II) : le père (le Vieux, Ier) et le frère
+    # Abraham écartés. Les « TENIERS David » sans suffixe valent le Jeune par
+    # convention Joconde (peinture de genre) — ambiguïté résiduelle documentée.
+    ("David Téniers",       ["TENIERS DAVID", "TENIERS LE JEUNE"],
+                            ["IER", "VIEUX", "ABRAHAM"]),
+    # François, baron Gérard : l'ancre écarte les « X Gérard François ».
+    ("François Gérard",     ["^GERARD FRANCOIS"], []),
+    # Francesco Mazzuola/Mazzola, dit Le Parmesan / il Parmigianino.
+    ("Le Parmesan",         ["MAZZUOLA FRANCESCO", "MAZZOLA FRANCESCO",
+                             "PARMESAN", "PARMIGIANINO"], []),
+    # Piero Bonaccorsi, dit Perino del Vaga.
+    ("Perino del Vaga",     ["BONACCORSI PIERO", "PERINO DEL VAGA",
+                             "PERIN DEL VAGA"], []),
+    ("Adolph Menzel",       ["MENZEL ADOLPH", "MENZEL ADOLF"], []),
+    # Baccio seul : Bartolommeo et Clemente Bandinelli écartés par la précision.
+    ("Baccio Bandinelli",   ["BANDINELLI BACCIO"], []),
+    # Antonio seul : Pieter Mulier dit « Cavalier Tempesta » n'est pas rattaché.
+    ("Antonio Tempesta",    ["TEMPESTA ANTONIO"], []),
+    ("Luca Giordano",       ["GIORDANO LUCA"], []),
+    ("Salvator Rosa",       ["ROSA SALVATOR", "ROSA SALVATORE"], []),
+    # Federico seul : son frère Ambrogio et le graveur Francesco Barocci écartés.
+    ("Federico Barocci",    ["BAROCCI FEDERICO", "BAROCCIO FEDERICO",
+                             "ZUCCARI FEDERICO"], ["AMBROGIO", "FRANCESCO"]),
+    ("Carlo Maratti",       ["MARATTI", "MARATTA"], []),
+    # Federico seul : son frère Taddeo Zuccaro (52 mentions certaines) écarté.
+    ("Federico Zuccaro",    ["ZUCCARO FEDERICO", "ZUCCARI FEDERICO"], []),
+    # Claude-Joseph Vernet : la dynastie (Carle, Horace) reste dehors, le motif
+    # exige « Joseph ».
+    ("Joseph Vernet",       ["VERNET JOSEPH", "VERNET CLAUDE JOSEPH"], []),
+    # Luca seul : son fils Orazio Cambiaso écarté.
+    ("Luca Cambiaso",       ["CAMBIASO LUCA"], []),
+    # Polidoro Caldara, dit Polidoro da Caravaggio.
+    ("Polidoro Caldara",    ["CALDARA POLIDORO", "POLIDORO DA CARAVAGGIO"], []),
+    # Gaspard Dughet, dit Gaspard Poussin / Le Guaspre (beau-frère de Nicolas ;
+    # « GASPARD POUSSIN » ne commence pas par Poussin, aucune collision).
+    ("Gaspard Dughet",      ["DUGHET", "GASPARD POUSSIN", "GUASPRE", "GASPRE"], []),
+    # Corneille de La Haye, dit Corneille de Lyon (distinct de Corneille
+    # Michel-Ange, écarté des 27 par l'ancre).
+    ("Corneille de Lyon",   ["CORNEILLE DE LYON"], []),
+    # Francesco seul : « VANNI » sans prénom vaut plusieurs peintres siennois.
+    ("Francesco Vanni",     ["VANNI FRANCESCO"], []),
+    # Domenico seul : son frère Giulio Campagnola écarté.
+    ("Domenico Campagnola", ["CAMPAGNOLA DOMENICO"], []),
+    # Philippe seul : son neveu Jean-Baptiste de Champaigne (8 mentions
+    # prudentes, sous le seuil) écarté nommément.
+    ("Philippe de Champaigne", ["^CHAMPAIGNE"], ["JEAN-BAPTISTE", "JEAN BAPTISTE"]),
+    # Laurent seul : Philippe (fils astronome) et Louis de La Hyre écartés.
+    ("Laurent de La Hyre",  ["LA HYRE LAURENT"], []),
+    ("Giorgio Vasari",      ["VASARI GIORGIO"], []),
+    ("Sébastien Bourdon",   ["BOURDON SEBASTIEN"], []),
+    ("Pier Francesco Mola", ["MOLA PIER FRANCESCO", "MOLA PIERRE FRANCOIS"], []),
+    # Jean-Baptiste seul : son fils Jacques et Gustave Oudry écartés.
+    ("Jean-Baptiste Oudry", ["OUDRY JEAN-BAPTISTE"], []),
+    # Louis Léopold seul : ses fils Jules/Julien et Alphonse Boilly écartés par
+    # la précision du motif (« BOILLY LOUIS » ne prend qu'eux).
+    ("Louis Léopold Boilly", ["BOILLY LOUIS"], []),
+    ("Nicolas de Largillière", ["LARGILLIERE"], []),
+    ("Paul Bril",           ["BRIL PAUL", "BRIL PAULUS"], []),
+    # Albrecht seul : son frère Hans Dürer écarté.
+    ("Albrecht Dürer",      ["DURER ALBRECHT"], []),
+    # Claude Gellée, dit Le Lorrain (le motif exige « Claude » : Robert Le
+    # Lorrain, sculpteur, reste dehors).
+    ("Claude Lorrain",      ["LORRAIN CLAUDE", "GELLEE"], []),
+    # Pietro Vannucci, dit Le Pérugin.
+    ("Le Pérugin",          ["VANNUCCI PIETRO", "PERUGIN"], []),
+    # Alessandro Filipepi, dit Sandro Botticelli.
+    ("Botticelli",          ["BOTTICELLI", "FILIPEPI"], []),
 ]
 
 LIBELLES_NIVEAUX = {1: "Presque lui", 2: "Autour de lui", 3: "Son style, sans lui"}
@@ -426,7 +511,7 @@ def main() -> None:
     artistes.sort(key=lambda x: x["doute"], reverse=True)
 
     sortie = {
-        "critere": "maître de référence ET ≥ 20 notices de doute (hors copie)",
+        "critere": "maître de référence ET ≥ 10 notices de doute (hors copie)",
         "lexique": "markers.py v2 (famille_segment) — unité : référence Joconde unique",
         "unite": "reference",
         "version_donnee": "2026-07-01",

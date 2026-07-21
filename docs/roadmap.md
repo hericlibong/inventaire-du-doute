@@ -42,11 +42,15 @@ Ordre imposé — chaque ⏸ est un point d'arrêt :
       (10 334 notices, dont 5 791 Barla) vs 157 dans plusieurs (3 474) — **trie
       l'instruction, ne sélectionne pas** (Le Parmesan, Perino del Vaga, Menzel, Bandinelli
       sont dans un seul musée)
-- [ ] **5. Nouvelle sélection** selon la règle double (maître de référence **et** seuil),
-      avec journal public des candidats écartés et de leur motif. Instruire les **faux
-      négatifs** relevés : Le Guerchin, Bouchardon, Jules Romain, Ludovico Carracci,
-      Téniers, François Gérard, Le Parmesan, Perino del Vaga…
-- [ ] ⏸ **Validation de la nouvelle liste** (son ampleur décide de la suite)
+- [x] **5. Nouvelle sélection** selon la règle double. **Fait le 2026-07-22** (decisions.md,
+      2026-07-22) — cadrage arbitré : **publication progressive sur registre exhaustif**.
+      Les non-instruits sont « à instruire », **jamais « écartés »**. 36 candidats instruits
+      un par un (identité claire, ≥ 10 réf. **après regroupement des alias**, parents et
+      homonymes séparés nommément) → **63 maîtres retenus, 3 674 références prudentes**.
+      Registre par personne : `data/exports/maitres_instruits.csv`. Registre exhaustif à
+      4 états : `data/exports/candidats_maitres.csv` (74 formes retenues, 22 écartées,
+      234 à instruire)
+- [ ] ⏸ **Validation de la nouvelle liste** (son ampleur décide de la suite) ← **ON EST ICI**
 - [ ] **6. Régénération des exports** : `artistes.json`, puis `vue_ensemble.json` (dérivé)
 - [ ] **7. Contrôle des effets sur le front** : classement du répertoire, jauges, familles,
       niveaux, exemples d'œuvres, cartes, page Méthode, et **relecture des angles** des

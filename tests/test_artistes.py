@@ -50,7 +50,10 @@ CAS_IDENTITE = [
     ("POUSSIN Nicolas (attribué à)", "Nicolas Poussin", "le maître"),
     ("LEMAIRE-POUSSIN (dit)", None, "Jean Lemaire"),
     ("LAVALLEE-POUSSIN Etienne de (attribué)", None, "Lavallée-Poussin"),
-    ("GASPARD POUSSIN", None, "Gaspard Dughet"),
+    # « Gaspard Poussin » n'est pas Nicolas (écarté par l'ancre) mais Gaspard
+    # Dughet, son beau-frère — retenu à son propre nom au temps 5.
+    ("GASPARD POUSSIN", "Gaspard Dughet", "Dughet dit Gaspard Poussin"),
+    ("DUGHET Gaspard (dit) POUSSIN Gaspard", "Gaspard Dughet", "sa forme complète"),
     ("Madame Ingres (dessinateur)", None, "son épouse"),
     # --- l'ancre ne s'applique QUE là où elle est nécessaire
     ("ECOLE DE PRIMATICCIO", "Le Primatice", "121 références : le nom n'est pas en tête"),
@@ -76,6 +79,27 @@ CAS_IDENTITE = [
     ("SERODINE Giovanni", None, "contient « rodin »"),
     ("VINCIDOR Tommaso", None, "contient « vinci »"),
     ("TINTORETTO Domenico", None, "contient « tintoret »"),
+    # --- lot du temps 5 (2026-07-22) : maîtres retenus et parents séparés
+    ("BARBIERI Giovanni Francesco", "Le Guerchin", "Barbieri = Guercino = Guerchin"),
+    ("GUERCINO Il", "Le Guerchin", "sa graphie italienne"),
+    ("BOUCHARDON Edme", "Bouchardon", "le maître"),
+    ("BOUCHARDON Jacques Philippe", None, "son frère"),
+    ("ZUCCARO Federico", "Federico Zuccaro", "le maître"),
+    ("ZUCCARO Taddeo", None, "son frère, 52 mentions certaines, séparé"),
+    ("CHAMPAIGNE Philippe de", "Philippe de Champaigne", "le maître"),
+    ("CHAMPAIGNE Jean-Baptiste de", None, "son neveu"),
+    ("BOILLY Louis Léopold", "Louis Léopold Boilly", "le maître"),
+    ("BOILLY Jules", None, "son fils lithographe"),
+    ("BOILLY Julien Léopold", None, "le même fils, autre graphie"),
+    ("TENIERS David II", "David Téniers", "le Jeune, le maître"),
+    ("TENIERS David Ier, dit le Vieux", None, "son père"),
+    ("TENIERS Abraham", None, "son frère"),
+    ("GELLEE Claude", "Claude Lorrain", "Claude Gellée dit Le Lorrain"),
+    ("FILIPEPI Alessandro Mariano", "Botticelli", "son état civil"),
+    ("VANNUCCI Pietro", "Le Pérugin", "Pietro Vannucci dit Le Pérugin"),
+    ("CORNEILLE DE LYON", "Corneille de Lyon", "distinct de Corneille Michel-Ange"),
+    ("PIPPI Giulio", "Jules Romain", "Giulio Pippi dit Jules Romain"),
+    ("JOYANT Jules Romain", None, "homonyme écarté"),
 ]
 
 
@@ -137,6 +161,39 @@ def test_une_famille_par_maitre_et_par_reference():
 # --------------------------------------------------------------------------
 # 3. Références réelles de la base (témoins de l'audit)
 # --------------------------------------------------------------------------
+
+# --------------------------------------------------------------------------
+# 4. Statuts du registre des candidats (temps 5)
+# --------------------------------------------------------------------------
+
+# (nom débarrassé de sa formule, mention réelle d'où il vient, statut attendu)
+CAS_STATUT = [
+    ("BARBIERI GIOVANNI FRANCESCO", "BARBIERI Giovanni Francesco (attribué à)",
+     "retenu", "instruit au temps 5"),
+    ("MANUFACTURE DE CREIL", "Manufacture de Creil (attribué à)",
+     "écarté", "n'est pas une personne"),
+    ("FULDA", "Manufacture de Fulda (attribué à)", "écarté",
+     "le nom seul ne le dit pas, la mention si"),
+    ("CARRACCI L'UN DES", "CARRACCI l'un des (attribué à)", "écarté",
+     "mention collective"),
+    ("A", "Attribué à", "écarté", "la mention ne porte aucun nom"),
+    # ceux-là restent OUVERTS : rien dans les données ne permet de les retirer
+    ("BARLA JEAN-BAPTISTE", "Barla Jean-Baptiste (1817-1896) (attribué à)",
+     "à instruire", "fonds local massif, mais c'est une personne"),
+    ("DAVID", "David (1748-1825) (attribué à)", "à instruire",
+     "probablement Jacques-Louis David : à vérifier, pas à écarter"),
+    ("MELLET JULES FILS", "MELLET Jules Fils (?)", "à instruire",
+     "« fils » désigne une personne d'une dynastie, pas un atelier"),
+]
+
+
+@pytest.mark.parametrize("nom,mention,attendu,motif", CAS_STATUT)
+def test_statut_registre(nom, mention, attendu, motif):
+    """« à instruire » n'est jamais « écarté » : on ne retire un candidat que
+    lorsqu'on a vérifié que ce n'est pas une personne (cadrage 2026-07-22)."""
+    from registre_maitres import statut_forme
+    assert statut_forme(nom, _pivot(mention))[0] == attendu, motif
+
 
 def _temoins():
     with open(TEMOINS, encoding="utf-8") as f:

@@ -2,6 +2,90 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-22 — Temps 5 : publication progressive sur registre exhaustif
+
+**Cadrage arbitré par l'utilisateur** (2026-07-22), après une proposition qui parlait de
+« publier le reste comme candidats écartés faute d'instruction ». Formulation refusée, et
+avec raison : ces candidats **ne sont pas écartés par les données, ils sont encore à
+instruire**. Les présenter comme écartés serait une sélection arbitraire, contraire au seuil
+de 10 qu'on vient d'adopter.
+
+**Règle retenue : publication progressive sur registre exhaustif.**
+
+1. Les 330 graphies restent dans un **registre complet et vérifiable**.
+2. Les graphies sont **regroupées par personne canonique** : le seuil s'applique à une
+   personne, jamais à une graphie.
+3. On instruit une **première trentaine**, en commençant par les identités les plus nettes
+   et les faux négatifs évidents.
+4. Chaque candidat porte un **statut** parmi quatre : vérifié et retenu ; vérifié mais
+   écarté, avec une raison précise ; ambigu ; encore à instruire.
+5. **Seules les personnes vérifiées entrent dans le front.**
+6. Les autres pourront être ajoutées **par lots ultérieurs**.
+
+**Critères annoncés de la première trentaine** — la notoriété seule ne suffit pas :
+identité suffisamment claire ; au moins 10 références uniques **après regroupement des
+alias** ; absence de confusion familiale ou homonymique non résolue ; matière suffisante
+pour une fiche ; diversité des situations, **sans exiger plusieurs musées**.
+
+### Ce que le regroupement change
+
+Le comptage par graphie sous-estime systématiquement. Une fois les alias réunis :
+Le Guerchin passe de 93 à **101** (Barbieri + Guercino + Guerchin), Salvator Rosa de 38 à
+**50** (Salvator + Salvatore), Carlo Maratti de 37 à **45** (Maratti + Maratta), Le Pérugin
+de 20 à **21** (Vannucci + Pérugin), Botticelli de 15 à **17** (Botticelli + Filipepi).
+C'est bien la personne, et non la graphie, qui franchit le seuil.
+
+### 36 candidats instruits, 63 maîtres retenus au total
+
+Tous dépassent 10 références prudentes uniques après regroupement — le plus bas est le
+Titien, à 11, déjà dans la liste. **Aucun n'a été retenu sur sa seule notoriété.**
+
+**Confusions familiales séparées nommément** : Taddeo Zuccaro (frère de Federico, 52
+mentions certaines), Jean-Baptiste de Champaigne (neveu de Philippe, 8 prudentes), Jules et
+Julien Boilly (fils de Louis Léopold), David Téniers le Vieux et Abraham Téniers, Giulio
+Campagnola, Orazio Cambiaso, Jacques-Philippe et Jean-Baptiste Bouchardon, Bartolommeo et
+Clemente Bandinelli, Ambrogio Barocci, Jacques Oudry, Philippe et Louis de La Hyre, Hans
+Dürer. **Toutes sont sous le seuil de leur côté** : les séparer ne fait perdre aucun
+candidat qualifiant.
+
+**Ambiguïté résiduelle assumée et documentée** : « TENIERS David » sans suffixe vaut David
+Téniers **le Jeune** par convention Joconde (peinture de genre). Les formes explicitement
+« Ier » ou « le Vieux » ne portent aucune mention prudente, ce qui rend la convention sans
+effet sur le chiffre publié.
+
+### Le registre exhaustif et ses quatre états
+
+`data/exports/candidats_maitres.csv` porte désormais une colonne **statut** sur ses
+330 formes : **74 retenues** (elles se rattachent aux 63 personnes), **22 écartées**,
+**234 à instruire**.
+
+Les 22 écarts sont **vérifiés, pas déduits** : manufactures (Creil, Sèvres, Montereau,
+Delft, Les Islettes, cristaux du Creusot, Pont-des-Vernes), imprimeries (Wissembourg,
+Baster & Vieillemard, Champenois), faïenceries (Sarreguemines, Creil & Montereau), raisons
+sociales (Pellerin & Cie, Burckardt Charles Successeurs, Tissage de Lyon), mentions
+collectives (« CARRACCI l'un des » 78, « COYPEL l'un des » 60), « anonyme » (152), et trois
+mentions **qui ne portent aucun nom d'auteur** : le champ contient seulement « Attribué à »
+(30 notices), « attribué à) » (15), « B (atelier) » (12).
+
+**On n'écarte pas sur un signe faible.** Les mots « fils », « père » et « frères » ont été
+retirés du détecteur : « MELLET Jules Fils », « LACOUR Pierre Fils », « NEYRET Frères »
+désignent souvent une personne d'une dynastie, pas un atelier. Ils repassent « à
+instruire ». Le nombre d'écarts descend de 24 à 22 — le sens du registre y gagne.
+
+### Deux découvertes
+
+- **« DAVID (1748-1825) »**, 26 notices prudentes dans 17 musées, est presque certainement
+  Jacques-Louis David. Il reste **« à instruire »** : le nom-pivot n'est qu'un patronyme, et
+  la vérification n'a pas été faite. C'est le candidat le plus évident du prochain lot.
+- **Deux références ont changé de verdict**, et ce sont les tests qui l'ont signalé :
+  `M0350002026` (« DUGHET Gaspard (dit) POUSSIN Gaspard (entourage de) ») et `50350011790`
+  (« Romain Jules ») étaient protégées comme *écartées de Nicolas Poussin et de
+  Michel-Ange* ; elles reviennent maintenant à **Gaspard Dughet** et à **Jules Romain**,
+  retenus à leur propre nom. Les témoins ont été mis à jour en conséquence.
+
+Le seuil inscrit dans `artistes.json` passe de 20 à 10. **Le front n'est pas régénéré** :
+point d'arrêt, la liste doit être validée avant le temps 6.
+
 ## 2026-07-21 (octies) — Temps 4 : tous les candidats de la base, au seuil de 10
 
 `src/candidats_maitres.py` compte, pour **toute** forme d'auteur de la base, les références

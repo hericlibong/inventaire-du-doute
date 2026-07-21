@@ -3,6 +3,66 @@
 Tout ce qu'on apprend sur la base Joconde au fil du projet : structure, pièges,
 chiffres vérifiés. Chaque constat indique sa date et comment il a été obtenu.
 
+## Le lot du 2026-07-22 : 36 maîtres instruits (temps 5)
+
+Chacun a été vérifié un par un à partir du registre des 330 formes : identité claire,
+graphies regroupées, parents et homonymes séparés nommément, **au moins 10 références
+prudentes uniques après regroupement**. Comptage en références Joconde uniques.
+Registre complet : `data/exports/maitres_instruits.csv`.
+
+| Maître | prudentes | certaines | musées |
+|---|---:|---:|---:|
+| Le Guerchin | 101 | 180 | 44 |
+| Bouchardon | 86 | 1 066 | 23 |
+| Ludovico Carracci | 83 | 142 | 17 |
+| Jules Romain | 79 | 199 | 30 |
+| David Téniers | 72 | 165 | 57 |
+| François Gérard | 65 | 482 | 51 |
+| Le Parmesan | 63 | 224 | 21 |
+| Perino del Vaga | 56 | 96 | 10 |
+| Salvator Rosa | 50 | 144 | 32 |
+| Adolph Menzel | 47 | 12 | 2 |
+| Baccio Bandinelli | 45 | 110 | 8 |
+| Carlo Maratti | 45 | 99 | 28 |
+| Antonio Tempesta | 43 | 102 | 22 |
+| Luca Giordano | 42 | 79 | 39 |
+| Joseph Vernet | 42 | 141 | 48 |
+| Domenico Campagnola | 39 | 56 | 7 |
+| Federico Barocci | 38 | 86 | 18 |
+| Federico Zuccaro | 37 | 311 | 11 |
+| Luca Cambiaso | 34 | 194 | 14 |
+| Polidoro Caldara | 33 | 130 | 10 |
+| Gaspard Dughet | 32 | 53 | 28 |
+| Corneille de Lyon | 29 | 11 | 9 |
+| Francesco Vanni | 29 | 79 | 12 |
+| Philippe de Champaigne | 26 | 184 | 54 |
+| Laurent de La Hyre | 26 | 117 | 24 |
+| Giorgio Vasari | 26 | 197 | 14 |
+| Sébastien Bourdon | 25 | 155 | 43 |
+| Pier Francesco Mola | 24 | 73 | 17 |
+| Louis Léopold Boilly | 24 | 235 | 42 |
+| Jean-Baptiste Oudry | 23 | 400 | 44 |
+| Nicolas de Largillière | 23 | 77 | 44 |
+| Paul Bril | 22 | 66 | 18 |
+| Le Pérugin | 21 | 33 | 19 |
+| Claude Lorrain | 20 | 207 | 23 |
+| Albrecht Dürer | 19 | 740 | 37 |
+| Botticelli | 17 | 20 | 13 |
+
+**Total des 63 maîtres retenus : 3 674 références prudentes** (2 188 pour les 27 du lot
+initial, 1 486 pour ce lot).
+
+**Deux profils remarquables, à ne pas confondre avec une erreur.** Adolph Menzel porte
+**plus de mentions prudentes que d'attributions certaines** (47 contre 12), et Corneille de
+Lyon presque trois fois plus (29 contre 11) : ce sont des cas où le doute est la situation
+ordinaire, pas l'exception. À l'inverse, Bouchardon (86 sur 1 152) et Dürer (19 sur 759)
+sont des noms très présents dont une petite part seulement est incertaine.
+
+**Ce que la dispersion montre** : David Téniers est prudemment attribué dans **57 musées**,
+Philippe de Champaigne dans 54, François Gérard dans 51 — alors qu'Adolph Menzel n'est
+concerné que dans **2** et Domenico Campagnola dans 7. Le chiffre ne dit rien de la qualité
+du versement, seulement de l'étendue du phénomène.
+
 ## Table d'identité des maîtres : qui est écarté, et pourquoi (2026-07-21, temps 2)
 
 Établie à partir d'un inventaire exhaustif des **246 formes d'auteur** captées par les motifs
