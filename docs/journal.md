@@ -2,6 +2,39 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-21 (octies) — Temps 4 : à qui d'autre les musées ont-ils dit « peut-être » ?
+
+La liste des 27 avait été composée à la main. Personne n'avait demandé à la base qui d'autre
+portait autant de mentions prudentes. C'est fait : `candidats_maitres.py` compte toutes les
+formes d'auteur, et publie celles qui atteignent dix notices.
+
+**4 834 noms** portent au moins une mention prudente dans les musées de France. **330**
+atteignent dix. Trente-quatre sont déjà dans la liste ; **296 n'y sont pas**.
+
+Le fichier est trié, et il se lit tout seul si l'on regarde une colonne : le nombre de
+musées. D'un côté, 139 noms n'existent que dans **un seul** musée — Jean-Baptiste Barla et
+ses 5 791 planches d'histoire naturelle à Nice, l'imprimerie de Wissembourg, les frères
+Duthoit à Amiens : des fonds locaux, versés en bloc. De l'autre, 157 noms circulent entre
+plusieurs musées, et ce sont presque tous des maîtres : Le Guerchin dans six musées,
+Téniers dans vingt-deux, Giordano dans dix-neuf, Bouchardon, Jules Romain, Ludovico
+Carracci, François Gérard, Champaigne, Dürer, Delacroix, Botticelli, Murillo, Donatello.
+
+Tentant d'en faire une règle. Mais elle serait fausse : Le Parmesan (63 notices), Perino del
+Vaga (53), Menzel (47), Bandinelli (45) ne sont chacun que dans un musée — et dans la liste
+actuelle, Michel-Ange n'est que dans trois, Léonard dans deux. La dispersion dit par où
+commencer à lire, pas qui garder.
+
+Deux choses vues au passage. Le seuil ne peut pas s'appliquer à une graphie : le Titien
+porte onze notices prudentes, mais dix sous « Le Titien » et neuf sous « Vecellio Tiziano ».
+Compté par graphie, il sortirait de sa propre liste. Et « Rigau y Ros Hyacinthe », la forme
+catalane du nom de Rigaud, apparaissait avec vingt notices sans être reconnue — elle
+accompagne « Rigaud » sur la même notice 132 fois sur 134, l'alias ne rattrape que deux
+œuvres, mais il est ajouté : une table doit dire les noms qu'elle connaît.
+
+Reste ce que le seuil ramasse et qu'il faudra écarter à la main : des manufactures, des
+faïenceries, « anonyme », « Carracci l'un des », et de purs accidents de saisie — un nom
+réduit à la lettre « A », trente notices dans six musées.
+
 ## 2026-07-21 (septies) — Temps 3 : figer ce qui vient d'être corrigé
 
 Un correctif qu'aucun test ne protège se défait tout seul à la modification suivante. D'où

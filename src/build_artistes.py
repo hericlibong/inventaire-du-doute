@@ -106,7 +106,10 @@ MAITRES = [
     ("Véronèse",            ["^VERONESE", "^CALIARI"],
                             ["CARLO", "BENEDETTO", "GABRIELE",
                              "BONIFAZIO", "BONIFACIO"]),
-    ("Hyacinthe Rigaud",    ["RIGAUD HYACINTHE"], []),
+    # « Rigau y Ros », sa forme catalane, accompagne presque toujours « Rigaud »
+    # sur la même notice (132 fois sur 134) : l'alias ne rattrape que 2 notices,
+    # mais la table doit dire les noms qu'elle connaît (relevé au temps 4).
+    ("Hyacinthe Rigaud",    ["RIGAUD HYACINTHE", "^RIGAU Y ROS"], []),
     ("Géricault",           ["GERICAULT"], []),
     ("Fragonard",           ["FRAGONARD JEAN-HONORE", "FRAGONARD JEAN HONORE"], []),
     # Le cas le plus pollué : 59 formes captées, « Raphaël » servant de prénom à

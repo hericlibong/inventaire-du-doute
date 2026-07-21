@@ -2,6 +2,58 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-21 (octies) — Temps 4 : tous les candidats de la base, au seuil de 10
+
+`src/candidats_maitres.py` compte, pour **toute** forme d'auteur de la base, les références
+distinctes portant une formulation prudente (copies exclues), et publie celles qui
+atteignent 10 : `data/exports/candidats_maitres.csv`, versionné. C'est la pièce qui rend la
+sélection contrôlable — sans elle, la liste des maîtres reste un panthéon opaque.
+
+**4 834 formes** portent au moins une mention prudente. **330 atteignent le seuil de 10** :
+34 appartiennent aux 27 actuels, **296 sont hors liste**.
+
+### Le seuil s'applique au maître, jamais à la forme
+
+Le Titien totalise 11 références prudentes, mais aucune de ses deux graphies ne les porte
+seule : « LE TITIEN » en a 10, « VECELLIO Tiziano » 9. Le fichier des candidats compte **par
+forme**, avant fusion des graphies : il sert à **repérer** des pistes, pas à trancher. La
+sélection se fait sur le maître désambiguïsé, une fois ses graphies rapprochées.
+
+### La dispersion géographique trie l'instruction — elle ne sélectionne pas
+
+Sur les 296 candidats hors liste, **139 n'existent que dans un seul musée** (10 334 notices,
+dont les 5 791 de Barla à Nice), et **157 sont présents dans plusieurs** (3 474 notices).
+Le second groupe est presque entièrement fait de maîtres de référence : Le Guerchin (93,
+6 musées), Bouchardon (86, 4), Jules Romain (78, 4), Ludovico Carracci (76, 5), Téniers
+(67, 22), François Gérard (65, 11), Giordano (42, 19), Salvator Rosa, Barocci, Maratti,
+Zuccaro, Joseph Vernet, Champaigne, La Hyre, Vasari, Bourdon, Oudry, Largillière, Dürer,
+Le Sueur, Delacroix, Guardi, Prud'hon, Botticelli, Murillo, Callot, Holbein, Donatello…
+
+**Mais elle ne peut pas devenir un filtre automatique** : Le Parmesan (63), Perino del Vaga
+(53), Menzel (47), Bandinelli (45), Pollaiuolo (26), Pietro Testa (20) sont des maîtres de
+référence **présents dans un seul musée**. Dans les 27 actuels, Michel-Ange n'a que 3 musées
+et Léonard 2. La dispersion sert à **ordonner le travail d'instruction**, pas à décider.
+Ce n'est pas une comparaison entre musées sur des comptages bruts (règle du projet) : c'est
+une mesure de dispersion d'un candidat, et elle sert précisément de garde-fou contre les
+fonds locaux.
+
+### Ce que le seuil ramasse et qu'il faudra écarter à la main
+
+Des **entités qui ne sont pas des personnes** (Imprimerie de Wissembourg 392, Manufacture de
+Creil 60, Faïencerie de Sarreguemines 51, Manufacture de cristaux du Creusot 46), des
+**mentions collectives** (« CARRACCI l'un des » 78, « COYPEL l'un des » 60), « anonyme »
+(152), et du **bruit de saisie** : un nom-pivot réduit à « A » (30 notices, 6 musées), un
+autre à « A) » (15), des noms sans prénom trop ambigus pour être rattachés (« PETER » 41,
+« DAVID » 26, « LESCOT » 16, « FLEURET » 10).
+
+### Un alias manquant, trouvé en lisant la liste
+
+« RIGAU Y ROS Hyacinthe », forme catalane du nom de Rigaud, apparaît avec 20 notices
+prudentes sans être rattachée. Vérification faite, elle accompagne « RIGAUD Hyacinthe » sur
+la même notice **132 fois sur 134** : l'alias n'a rattrapé que 2 références, dont aucune
+prudente. Il est ajouté quand même — une table d'identité doit dire les noms qu'elle
+connaît.
+
 ## 2026-07-21 (septies) — Temps 3 : les tests, et ce qu'ils protègent
 
 Troisième et dernière étape avant le point d'arrêt. `tests/test_artistes.py`, **89 tests**,

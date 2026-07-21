@@ -32,8 +32,16 @@ Ordre imposé — chaque ⏸ est un point d'arrêt :
       (decisions.md, septies) : `tests/test_artistes.py`, 89 tests (total projet 60 → 149) ;
       `resout_reference()` extraite pour être testable sans le CSV ; témoins réels versionnés
       dans `data/exports/temoins_maitres.csv` (42 lignes, champ `Auteur` exact)
-- [ ] ⏸ **Validation du pipeline corrigé** avant régénération ← **ON EST ICI**
-- [ ] **4. Recalcul au seuil de 10** références prudentes uniques, tous candidats confondus
+- [x] ⏸ **Validation du pipeline corrigé** avant régénération — feu vert du 2026-07-21
+- [x] **4. Recalcul au seuil de 10** références prudentes uniques, tous candidats confondus.
+      **Fait le 2026-07-21** (decisions.md, octies) : `src/candidats_maitres.py` →
+      `data/exports/candidats_maitres.csv` (versionné). 4 834 formes portent une mention
+      prudente, **330 atteignent 10** (34 dans les 27, **296 hors liste**). Le seuil
+      s'applique au **maître désambiguïsé**, pas à la forme (le Titien : 11 réf., mais
+      10 et 9 selon la graphie). Dispersion : 139 candidats dans un seul musée
+      (10 334 notices, dont 5 791 Barla) vs 157 dans plusieurs (3 474) — **trie
+      l'instruction, ne sélectionne pas** (Le Parmesan, Perino del Vaga, Menzel, Bandinelli
+      sont dans un seul musée)
 - [ ] **5. Nouvelle sélection** selon la règle double (maître de référence **et** seuil),
       avec journal public des candidats écartés et de leur motif. Instruire les **faux
       négatifs** relevés : Le Guerchin, Bouchardon, Jules Romain, Ludovico Carracci,
