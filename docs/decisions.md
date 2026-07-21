@@ -2,6 +2,47 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-21 (quinquies) — Temps 1 appliqué : le comptage passe à la référence
+
+Première étape du chantier de fiabilisation, exécutée dans `src/build_artistes.py` seul.
+Les exports ne sont **pas** régénérés (ils le seront au temps 6, après le point d'arrêt).
+
+**Contrôle préalable.** La référence Joconde est-elle bien une clé ? Scan complet du CSV :
+1 023 705 lignes, **1 023 705 références distinctes, aucun doublon**. La déduplication tient
+donc entièrement dans la ligne courante — aucun index en mémoire, aucun second passage.
+
+**Mise en œuvre.** La boucle comptait à chaque segment du champ `Auteur` ; elle procède
+maintenant en deux temps : on collecte ce que la référence dit de chaque maître, puis on
+compte **une fois** par couple (maître, référence).
+
+**Deux règles de résolution en découlent.**
+
+*Catégorie* — quand une même référence porte plusieurs liens avec le même maître
+(« POUSSIN Nicolas (attribué à) ; POUSSIN Nicolas »), le plus prudent l'emporte :
+**doute > copie > attribution ferme**. C'est ce qui rend les trois catégories disjointes,
+donc additionnables, comme l'exigeait la décision 1.
+
+*Famille* — **arbitrage tranché : option (c)**, le « ? » l'emporte sur la formule de
+distance. Motif retenu par l'utilisateur : c'est le marqueur de doute le plus explicite.
+Conséquence structurelle, plus importante que les 3 cas concernés : **une référence = une
+famille**, donc familles et niveaux totalisent exactement le doute. Les jauges empilées et
+l'axe du graphique restent additifs, sans retouche du front. L'option (a) — la référence
+dans les deux familles — aurait cassé cette égalité pour trois références.
+
+**Résultat mesuré, conforme à l'audit** : doute des 27 **2 341 → 2 225** (−116) ;
+Le Primatice 269 → 197, Le Tintoret 47 → 39, Le Corrège 46 → 25, Titien 20 → 12,
+Véronèse 41 → 38, Simon Vouet 51 → 48, Fragonard 31 → 30. Le dénominateur bouge aussi,
+sans que l'identité soit encore corrigée : propre 29 995 → 29 229, copie 4 883 → 4 503
+(Titien 211 → 104, Véronèse 238 → 117, Le Corrège 152 → 82 — tous des maîtres à double
+graphie). Invariants revérifiés sur les 27 : familles = niveaux = somme des musées = doute,
+et aucune œuvre citée deux fois dans la vitrine.
+
+**Effet de bord assumé** : le garde-fou `refs_exemples`, qui empêchait une même œuvre
+d'illustrer deux familles, devient inutile — la structure l'interdit désormais. Retiré.
+
+**Reste au temps 2** : l'identité (table déclarative d'alias et d'exclusions). Les −40
+références mal rattachées ne sont **pas** dans les chiffres ci-dessus.
+
 ## 2026-07-21 (quater) — Fiabilisation des maîtres : unité de comptage, identité, seuil à 10
 
 Décisions prises à l'issue de l'audit du 2026-07-21 (constats mesurés : donnees.md, même

@@ -15,9 +15,12 @@ sous chaque fiche est plus atteint encore que le numérateur.
 
 Ordre imposé — chaque ⏸ est un point d'arrêt :
 
-- [ ] **1. Unité de comptage** : comptage par couple `maître + Reference` dans
-      `src/build_artistes.py`. Invariants : une référence ne pèse qu'une fois par maître ;
-      plusieurs familles ne changent pas le poids ; familles jamais additionnées
+- [x] **1. Unité de comptage** : comptage par couple `maître + Reference` dans
+      `src/build_artistes.py`. **Fait le 2026-07-21** (decisions.md, quinquies) : doute des
+      27 **2 341 → 2 225**, invariants vérifiés, exports non régénérés. Références uniques
+      dans le CSV (1 023 705 / 1 023 705), donc déduplication intra-ligne. Arbitrage des
+      familles multiples tranché — **option (c), le « ? » l'emporte** : une référence = une
+      famille, familles et niveaux restent additifs
 - [ ] **2. Identité** : table déclarative d'alias et d'exclusions (homonymes attestés),
       couvrant les mentions **prudentes ET certaines** — c'est la seconde qui fabrique le
       dénominateur public. Pas de reconnaissance d'entités, pas de moteur générique
@@ -38,9 +41,11 @@ Ordre imposé — chaque ⏸ est un point d'arrêt :
       `docs/roadmap.md`, `charte-graphique.md`, `dataviz-les-presque.md`,
       `architecture-editoriale.md`, `web/src/routes/les-presque/+page.js`,
       `web/src/routes/echelle/+page.svelte`, `web/src/routes/methode/+page.svelte`
-- [ ] **Arbitrage ouvert** : représentation par famille d'une référence portant deux
-      formulations prudentes (3 cas, Simon Vouet) — rejoint le fil « politique “?” vs
-      formule de distance »
+- [x] **Arbitrage ouvert** : représentation par famille d'une référence portant deux
+      formulations prudentes (3 cas, Simon Vouet) — **tranché le 2026-07-21, option (c)** :
+      le « ? » l'emporte sur la formule de distance. Vouet `atelier_de` 10 → 7,
+      `point_interrogation` inchangé à 4. Doctrine valable pour les cas à venir ; le fil
+      « politique “?” vs formule de distance » reste ouvert côté éditorial
 
 > Le total national de **24 507** notices prudentes n'est **pas** touché : il est produit
 > ligne à ligne, sans identification de maître (vérifié dans `build_exports.py` et

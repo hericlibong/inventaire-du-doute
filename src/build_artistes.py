@@ -7,7 +7,13 @@ famille et par niveau), et copie assumée (« d'après », catégorie à part) �
 le nombre de musées et quelques notices réelles (liens POP).
 
 Critère de la liste : maître de référence ET ≥ 20 notices de doute (hors copie),
-comptage aligné sur markers.py (famille_segment, par segment du champ Auteur).
+lexique aligné sur markers.py (famille_segment).
+
+Unité de comptage : la RÉFÉRENCE Joconde, pas le segment d'auteur (decisions.md,
+2026-07-21 quater). Une notice qui nomme le maître deux fois sous deux graphies
+— « VECELLIO Tiziano (attribué à) ; LE TITIEN (dit, attribué à) » — ne pesait
+qu'une fois pour le public mais deux fois dans le comptage. Chaque référence est
+donc résolue en UNE catégorie et UNE famille avant d'être ajoutée.
 
 Désambiguïsation (docs/donnees.md, 2026-07-07) : chaque maître est défini par
 des motifs INCLUS et EXCLUS sur le nom-pivot (parenthèses retirées, accents et
@@ -117,17 +123,35 @@ def _trouve_maitre(pivot: str):
     return None
 
 
+def _categorie_retenue(categories: set) -> str | None:
+    """Une même référence peut nommer le maître plusieurs fois, avec des liens
+    différents (« POUSSIN Nicolas (attribué à) ; POUSSIN Nicolas »). Elle ne
+    compte qu'UNE fois, et du côté le plus prudent : le doute l'emporte sur la
+    copie, la copie sur l'attribution ferme. C'est ce qui rend propre / doute /
+    copie réellement disjoints, donc additionnables (decisions.md, 2026-07-21).
+    Les segments écartés (atelier hors beaux-arts, école-lieu) ne comptent pas."""
+    for categorie in ("doute", "copie", "propre"):
+        if categorie in categories:
+            return categorie
+    return None
+
+
+def _famille_retenue(familles: dict) -> str:
+    """Même chose au grain de la famille : trois références de Simon Vouet
+    (M0332004170 à 172) portent à la fois « VOUET Simon (?) » et « VOUET Simon
+    (atelier, dessinateur) ». Le « ? » l'emporte — c'est le marqueur de doute le
+    plus explicite — puis l'ordre canonique des familles. Une référence = une
+    famille : les familles et les niveaux totalisent exactement le doute
+    (arbitrage utilisateur, option c, decisions.md 2026-07-21)."""
+    if "point_interrogation" in familles:
+        return "point_interrogation"
+    return next(c for c in markers.DOUTE_PAR_NIVEAU if c in familles)
+
+
 def _vide() -> dict:
     return {"propre": 0, "doute": 0, "copie": 0, "musees": set(),
             "familles": {}, "niveaux": {1: 0, 2: 0, 3: 0},
             "exemples": {}, "exemple_copie": None,
-            # Références déjà retenues en exemple pour CE maître, toutes familles
-            # confondues : une même notice ne doit illustrer la vitrine qu'une fois.
-            # Une notice peut en effet nommer le maître DEUX FOIS sous deux graphies
-            # (« VECELLIO Tiziano (attribué à) » et « LE TITIEN (dit, attribué à) »
-            # sur la même œuvre du Louvre) : sans ce garde-fou, on publiait deux
-            # entrées pour la même œuvre.
-            "refs_exemples": set(),
             # ventilation du doute SEUL par musée détenteur (carte par maître) :
             # code -> {doute, nom, ville, coord, familles, niveaux}
             "musees_doute": {},
@@ -176,6 +200,12 @@ def main() -> None:
             if not isinstance(aut, str):
                 continue
             en_ba = markers._dans_beaux_arts(dom)
+            # Premier temps : que dit CETTE référence de CHAQUE maître ? On
+            # collecte sans rien compter — le comptage vient après, une fois par
+            # couple (maître, référence). Les références sont uniques dans le CSV
+            # (vérifié le 2026-07-21 : 1 023 705 lignes, 1 023 705 références),
+            # la déduplication tient donc entièrement dans la ligne courante.
+            vus = {}  # maître -> {categories: set, familles: {code: segment}, copie: segment}
             for segment in aut.split(";"):
                 segment = segment.strip()
                 if not segment:
@@ -183,18 +213,33 @@ def main() -> None:
                 nom = _trouve_maitre(_pivot(segment))
                 if nom is None:
                     continue
-                a = agg[nom]
                 categorie, famille = markers.famille_segment(segment, en_ba)
+                vu = vus.setdefault(nom, {"categories": set(), "familles": {},
+                                          "copie": None})
+                vu["categories"].add(categorie)
+                if categorie == "doute":
+                    # on garde le premier segment vu pour chaque famille : c'est
+                    # lui qui fournira l'extrait cité dans la vitrine « Œuvres »
+                    vu["familles"].setdefault(famille, segment)
+                elif categorie == "copie" and vu["copie"] is None:
+                    vu["copie"] = segment
+
+            # Second temps : une référence, un poids, par maître.
+            for nom, vu in vus.items():
+                a = agg[nom]
                 if isinstance(code, str):
                     a["musees"].add(code)
+                categorie = _categorie_retenue(vu["categories"])
                 if categorie == "propre":
                     a["propre"] += 1
                 elif categorie == "copie":
                     a["copie"] += 1
                     # une notice réelle de copie « d'après », pour le bloc « À part »
                     if a["exemple_copie"] is None and isinstance(ref, str):
-                        a["exemple_copie"] = _exemple(ref, titre, musee, ville, segment)
+                        a["exemple_copie"] = _exemple(ref, titre, musee, ville,
+                                                      vu["copie"])
                 elif categorie == "doute":
+                    famille = _famille_retenue(vu["familles"])
                     a["doute"] += 1
                     a["familles"][famille] = a["familles"].get(famille, 0) + 1
                     a["niveaux"][NIVEAU_FAMILLE[famille]] += 1
@@ -221,11 +266,13 @@ def main() -> None:
                         a["doute_sans_code"] += 1
                     # jusqu'à 2 notices réelles par famille (les premières
                     # rencontrées) ; la sortie n'en publie 2 que pour la dominante
+                    # (une référence ne traverse ce bloc qu'une fois par maître :
+                    # elle ne peut plus illustrer deux familles, comme le faisait
+                    # l'œuvre du Louvre nommant Titien sous deux graphies)
                     exs = a["exemples"].setdefault(famille, [])
-                    if (len(exs) < EXEMPLES_PAR_FAMILLE and isinstance(ref, str)
-                            and ref not in a["refs_exemples"]):
-                        exs.append(_exemple(ref, titre, musee, ville, segment))
-                        a["refs_exemples"].add(ref)
+                    if len(exs) < EXEMPLES_PAR_FAMILLE and isinstance(ref, str):
+                        exs.append(_exemple(ref, titre, musee, ville,
+                                            vu["familles"][famille]))
         print(f"\r  {total:,} notices lues".replace(",", " "), end="", flush=True)
     print()
 
@@ -313,7 +360,8 @@ def main() -> None:
 
     sortie = {
         "critere": "maître de référence ET ≥ 20 notices de doute (hors copie)",
-        "lexique": "markers.py v2 (famille_segment, par segment du champ Auteur)",
+        "lexique": "markers.py v2 (famille_segment) — unité : référence Joconde unique",
+        "unite": "reference",
         "version_donnee": "2026-07-01",
         "date_generation": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "source": "Collections des musées de France : base Joconde",

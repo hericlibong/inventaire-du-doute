@@ -2,6 +2,34 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-21 (quinquies) — Temps 1 : on compte des œuvres, plus des mentions
+
+Reprise après le plantage de la machine : l'audit était bien commité (`0a566f7`), rien de
+perdu. Première étape du chantier appliquée, dans `build_artistes.py` uniquement.
+
+Avant de coder, une question à lever : la référence Joconde est-elle une vraie clé ? Scan
+complet du CSV — 1 023 705 lignes, autant de références distinctes, **aucun doublon**. La
+déduplication se fait donc ligne par ligne, sans rien garder en mémoire. La boucle collecte
+ce que la notice dit du maître, puis compte une seule fois.
+
+Deux règles de résolution ont dû être posées. Quand une notice porte plusieurs liens avec le
+même maître, **le plus prudent l'emporte** — le doute avant la copie, la copie avant
+l'attribution ferme : c'est ce qui rend les trois catégories disjointes. Et quand elle porte
+deux formulations prudentes (les trois Vouet), **le « ? » l'emporte** sur « atelier »
+(arbitrage utilisateur). Ce second choix a une conséquence qui dépasse les trois cas : une
+notice ne relève que d'une famille, donc les familles et les trois niveaux totalisent
+exactement le doute. Les jauges du front restent justes sans qu'on y touche.
+
+Chiffres conformes à l'audit : doute des 27 **2 341 → 2 225**. Le Primatice perd 72 notices,
+Le Corrège 21, Titien 8 — tous des maîtres nommés sous deux graphies. Le dénominateur
+bouge autant : 29 995 → 29 229 attributions fermes, Titien passant de 211 à 104. Les
+invariants tiennent sur les 27 fiches ; les 60 tests passent.
+
+**Les exports ne sont pas régénérés.** Le plan les place au temps 6, après le point d'arrêt :
+publier maintenant donnerait des chiffres corrigés sur l'unité mais toujours faux sur
+l'identité. `artistes.json` est resté à sa version d'avant. Suite : temps 2, la table
+déclarative d'alias et d'exclusions.
+
 ## 2026-07-21 (quater) — Audit de fiabilité : le chiffre des maîtres est faux
 
 Trois notices rattachées à Michel-Ange — dont un Caravage et un Cerquozzi — ont déclenché un
