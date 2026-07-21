@@ -2,6 +2,29 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-21 (ter) — L'en-tête du graphique cesse de se répondre à lui-même
+
+Le titre posait une question, le sous-titre y répondait avec les mêmes mots — la marque de
+la génération automatique. Les deux ont maintenant des rôles séparés : **le titre porte
+l'angle** de l'artiste (4 à 9 mots, jamais une question), **le sous-titre la preuve
+chiffrée**, en une phrase qui ne reprend rien du titre.
+
+Quatre artistes témoins seulement, validés avant écriture du code :
+
+- Ingres, au plus près du maître — « 194 des 204 œuvres concernées portent la mention
+  “attribué à” ; aucune autre formulation n'atteint la dizaine. »
+- Charles Le Brun, l'école en tête — « 240 des 310 … loin devant “attribué à”, qui en
+  réunit 52. »
+- Rembrandt, surtout dans son influence — « 165 des 187 … son atelier et son école n'en
+  rassemblent que 18. »
+- François Clouet, l'atelier en premier — « 95 des 105 … dans 8 musées différents. »
+
+Les 23 autres gardent l'en-tête généré : la généralisation attend une validation. Les textes
+sont écrits à la main mais **les nombres restent lus dans `artistes.json`** (le sous-titre
+est une fonction) — sinon ils mentiraient dès la prochaine régénération, ce qui va arriver
+avec la correction du double comptage. Sortie contrôlée en exécutant réellement les quatre
+fonctions sur les données. Détail : decisions.md 2026-07-21 (ter).
+
 ## 2026-07-21 (bis) — L'onglet « Œuvres » de Titien était cassé
 
 Signalé en relisant le site. La vitrine ne s'affichait pas sur **Titien** — ni sur **Le

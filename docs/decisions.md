@@ -2,6 +2,52 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-21 (ter) — En-tête du graphique : deux textes, deux fonctions (4 artistes témoins)
+
+**Problème.** Le titre et le sous-titre du graphique formaient une **question suivie de sa
+réponse, avec les mêmes mots** : « Comment les musées rattachent ces œuvres à X » puis « Les
+musées les rattachent surtout à… ». Deux textes pour une seule fonction ; la répétition
+signalait immédiatement la génération automatique.
+
+**Règle rédactionnelle (consigne utilisateur du 2026-07-21).** Les deux textes reçoivent des
+rôles distincts :
+- **Titre** — l'angle propre à l'artiste ; contient son nom ; 4 à 9 mots ; jamais une
+  question ; sans « profil », « corpus », « distribution », ni « attribution » employé
+  abstraitement.
+- **Sous-titre** — la preuve chiffrée ou la nuance qui justifie l'angle, en une phrase, sans
+  reprendre les mots ni la structure du titre. « Les musées rattachent » ne doit pas revenir
+  dans tous les sous-titres.
+
+Quatre familles de titres selon la forme des données : mention très majoritaire
+(« … en tête », « surtout … ») ; territoire majoritaire mais plusieurs mentions
+(« principalement autour du maître ») ; deux tendances proches (« entre … et … ») ;
+répartition sans tendance (« plusieurs formes de proximité »).
+
+**Appliqué à quatre artistes témoins seulement** (validés avant code) : Ingres, Charles
+Le Brun, Rembrandt, François Clouet. Les 23 autres **gardent l'en-tête généré** tant que la
+généralisation n'est pas validée — l'incohérence est temporaire et assumée.
+
+**Écrits à la main, chiffres lus dans les données.** Le champ `graphique` de
+`editorial-maitres.js` porte `titre` (chaîne) et `sousTitre` (**fonction**). La règle du
+fichier — « aucun chiffre stocké ici » — est préservée : les nombres arrivent depuis
+`artistes.json` via `{ n, total, second, musees, notices(code) }`. Un texte figé aurait
+menti dès la première régénération d'export, ce qui va justement arriver (voir le bug de
+double comptage, 2026-07-21 quater).
+
+**Deux points assumés :**
+- Le sous-titre chiffre en **notation brute** (« 240 des 310 »), là où la règle générale du
+  projet préfère les mots (« plus des deux tiers »). Amendement délibéré : le titre porte
+  désormais les mots, le sous-titre est l'endroit de la preuve. La règle vaut toujours
+  ailleurs.
+- Chez Clouet, le nombre de musées s'écrit **« 8 »** et non « huit » comme dans le texte
+  validé : le projet n'a pas de conversion nombre→lettres, et écrire « huit » à la main
+  reviendrait à figer une donnée. La phrase contient déjà « 95 des 105 », le chiffre reste
+  cohérent.
+
+**Dénominateur.** « les 204 œuvres concernées » = les notices à formulation prudente, pas les
+4 670 rattachées au nom. Le bandeau situé juste au-dessus porte la fraction complète
+(« 204 sur 4 670 ») : deux nombres voisins à l'écran, à surveiller en relecture.
+
 ## 2026-07-21 (bis) — Une notice ne peut illustrer la vitrine qu'une fois (bug Titien)
 
 **Symptôme.** Sur la fiche **Titien**, l'onglet « Œuvres » restait inaccessible. Même

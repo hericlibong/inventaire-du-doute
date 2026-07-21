@@ -2,6 +2,7 @@
 	import { nombre, aNom } from '$lib/joconde.js';
 	import { FAMILLE_PUBLIC, ORDRE_FAMILLES, tooltipFamille, resumeFamille } from '$lib/familles-public.js';
 	import { TERRITOIRES, indicesTerritoire, lectureProfil } from '$lib/territoires.js';
+	import { EDITORIAL } from '$lib/editorial-maitres.js';
 	import Infobulle from '$lib/Infobulle.svelte';
 
 	// « Le combien », comparable entre maîtres (decisions.md 2026-07-08). Scatter sur
@@ -98,17 +99,35 @@
 		return c.charAt(0).toLowerCase() + c.slice(1);
 	};
 	const lecture = $derived(lectureProfil(parNotices, citationMention));
+
+	// En-tête écrit à la main quand l'artiste en a un (2026-07-21) : titre = l'angle,
+	// sous-titre = la preuve chiffrée. Les nombres viennent d'ici, jamais du fichier
+	// éditorial — ils suivent donc les données sans réécriture. Sans entrée dédiée,
+	// on garde l'en-tête généré (titre générique + phrase de lecture).
+	const ecrit = $derived(EDITORIAL[maitre.nom]?.graphique);
+	const classees = $derived([...maitre.familles].sort((a, b) => b.notices - a.notices));
+	const chiffres = $derived({
+		n: nombre(classees[0]?.notices ?? 0),
+		total: nombre(maitre.doute),
+		second: nombre(classees[1]?.notices ?? 0),
+		musees: nombre(maitre.nb_musees_doute),
+		notices: (code) => maitre.familles.find((f) => f.code === code)?.notices ?? 0
+	});
+	const titre = $derived(
+		ecrit ? ecrit.titre : `Comment les musées rattachent ces œuvres ${aNom(maitre.nom)}`
+	);
+	const sousTitre = $derived(ecrit ? ecrit.sousTitre(chiffres) : lecture);
 </script>
 
 <figure class="nuage">
-	<!-- En-tête du graphique (2026-07-20) : le titre dit ce que le lecteur regarde,
-	     en mots ordinaires — ce sont les musées qui rattachent, et on nomme l'artiste.
-	     Vocabulaire écarté : « profil d'attribution », « corpus », « distribution ».
-	     La phrase qui suit donne la tendance, lisible sans déchiffrer le graphe. -->
+	<!-- En-tête du graphique (refondu le 2026-07-21) : deux textes, deux fonctions —
+	     le titre porte l'angle propre à l'artiste, le sous-titre la preuve chiffrée.
+	     Jamais une question suivie de sa réponse. Vocabulaire écarté : « profil
+	     d'attribution », « corpus », « distribution ». -->
 	<figcaption class="entete">
-		<h3 class="titre-graphe">Comment les musées rattachent ces œuvres {aNom(maitre.nom)}</h3>
-		{#if lecture}
-			<p class="lecture">{lecture}</p>
+		<h3 class="titre-graphe">{titre}</h3>
+		{#if sousTitre}
+			<p class="lecture">{sousTitre}</p>
 		{/if}
 	</figcaption>
 

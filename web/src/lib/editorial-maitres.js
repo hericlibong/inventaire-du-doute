@@ -34,19 +34,66 @@
 // Le paragraphe de situation ne porte pas d'angle interprétatif (décision
 // 2026-07-10, 2e passe) : la lecture du graphique est générée depuis les données
 // (voir NuageFamilles et territoires.js), elle n'est pas écrite à la main ici.
+//
+// ---------------------------------------------------------------------------
+// Second champ, OPTIONNEL (2026-07-21) :
+//   graphique — { titre, sousTitre } de l'en-tête du graphique, ÉCRITS À LA MAIN.
+//
+// Pourquoi : la version générée posait une question puis y répondait avec les
+// mêmes mots (« Comment les musées rattachent ces œuvres à X » / « Les musées les
+// rattachent surtout à… »). Deux textes, une seule fonction — la répétition
+// trahissait la fabrication automatique. Les deux ont désormais des rôles
+// distincts (consigne rédactionnelle du 2026-07-21) :
+//   • le TITRE porte l'angle propre à l'artiste, 4 à 9 mots, jamais une question,
+//     sans « profil », « corpus », « distribution » ni « attribution » abstraite ;
+//   • le SOUS-TITRE apporte la preuve chiffrée ou la nuance, en une phrase, sans
+//     reprendre les mots du titre. « Les musées rattachent » n'y revient pas
+//     partout : la tournure change d'un artiste à l'autre.
+//
+// LES NOMBRES NE SONT JAMAIS ÉCRITS ICI (règle du fichier, inchangée) :
+// `sousTitre` est une fonction qui les reçoit depuis artistes.json —
+//   n       nombre de notices de la mention la plus fréquente ;
+//   total   ensemble des notices à formulation prudente (« œuvres concernées ») ;
+//   second  la deuxième mention en nombre ;
+//   musees  musées détenteurs concernés ;
+//   notices(code)  nombre pour une famille précise (0 si absente).
+// Les artistes SANS ce champ gardent l'en-tête généré : la généralisation aux 27
+// attend une validation rédactionnelle (decisions.md 2026-07-21 ter).
+
+// Espace insécable : les guillemets français et le point-virgule ne doivent pas
+// se retrouver seuls en début de ligne.
+const NB = ' ';
 
 export const EDITORIAL = {
 	'Charles Le Brun': {
-		bio: 'Peintre et décorateur français du XVIIe siècle, 1619–1690.'
+		bio: 'Peintre et décorateur français du XVIIe siècle, 1619–1690.',
+		graphique: {
+			titre: 'Charles Le Brun, l’école en tête',
+			sousTitre: ({ n, total, second }) =>
+				`${n} des ${total} œuvres concernées portent la mention «${NB}de son école${NB}», ` +
+				`loin devant «${NB}attribué à${NB}», qui en réunit ${second}.`
+		}
 	},
 	'Le Primatice': {
 		bio: 'Peintre et décorateur italien du XVIe siècle, 1504–1570.'
 	},
 	Ingres: {
-		bio: 'Peintre français du XIXe siècle, 1780–1867.'
+		bio: 'Peintre français du XIXe siècle, 1780–1867.',
+		graphique: {
+			titre: 'Ingres, au plus près du maître',
+			sousTitre: ({ n, total }) =>
+				`${n} des ${total} œuvres concernées portent la mention «${NB}attribué à${NB}»${NB}; ` +
+				'aucune autre formulation n’atteint la dizaine.'
+		}
 	},
 	Rembrandt: {
-		bio: 'Peintre et graveur néerlandais du XVIIe siècle, 1606–1669.'
+		bio: 'Peintre et graveur néerlandais du XVIIe siècle, 1606–1669.',
+		graphique: {
+			titre: 'Rembrandt, surtout dans son influence',
+			sousTitre: ({ n, total, notices }) =>
+				`${n} des ${total} œuvres concernées portent la mention «${NB}à sa manière${NB}»${NB}; ` +
+				`son atelier et son école n’en rassemblent que ${notices('atelier_de') + notices('ecole_de')}.`
+		}
 	},
 	'Michel-Ange': {
 		bio: 'Sculpteur, peintre et architecte italien des XVe et XVIe siècles, 1475–1564.'
@@ -55,7 +102,13 @@ export const EDITORIAL = {
 		bio: 'Peintre flamand du XVIIe siècle, 1577–1640.'
 	},
 	'François Clouet': {
-		bio: 'Peintre portraitiste français du XVIe siècle, vers 1515–1572.'
+		bio: 'Peintre portraitiste français du XVIe siècle, vers 1515–1572.',
+		graphique: {
+			titre: 'François Clouet, l’atelier en premier',
+			sousTitre: ({ n, total, musees }) =>
+				`${n} des ${total} œuvres concernées sont rattachées à son atelier, ` +
+				`dans ${musees} musées différents.`
+		}
 	},
 	'Annibale Carracci': {
 		bio: 'Peintre italien des XVIe et XVIIe siècles, 1560–1609.'
