@@ -231,6 +231,46 @@ def _lat_lon(valeur):
     return round(lat, 5), round(lon, 5)
 
 
+def resout_reference(auteur: str, en_beaux_arts: bool = True) -> dict:
+    """Ce qu'UNE référence dit de chaque maître, résolu en un seul verdict.
+
+    Renvoie {maître: (categorie, famille, segment)} — famille et segment valent
+    None pour l'attribution ferme. C'est le cœur des temps 1 et 2 : le champ
+    `Auteur` peut nommer le même homme dans plusieurs segments, sous plusieurs
+    graphies et avec plusieurs formules ; la référence ne pèse qu'une fois par
+    maître, dans la catégorie la plus prudente et la famille la plus explicite.
+    Isolée de main() pour être testable sans le CSV (tests/test_artistes.py)."""
+    vus = {}  # maître -> {categories: set, familles: {code: segment}, copie: segment}
+    for segment in auteur.split(";"):
+        segment = segment.strip()
+        if not segment:
+            continue
+        nom = _trouve_maitre(_pivot(segment))
+        if nom is None:
+            continue
+        categorie, famille = markers.famille_segment(segment, en_beaux_arts)
+        vu = vus.setdefault(nom, {"categories": set(), "familles": {}, "copie": None})
+        vu["categories"].add(categorie)
+        if categorie == "doute":
+            # on garde le premier segment vu pour chaque famille : c'est lui qui
+            # fournira l'extrait cité dans la vitrine « Œuvres »
+            vu["familles"].setdefault(famille, segment)
+        elif categorie == "copie" and vu["copie"] is None:
+            vu["copie"] = segment
+
+    resolu = {}
+    for nom, vu in vus.items():
+        categorie = _categorie_retenue(vu["categories"])
+        if categorie == "doute":
+            famille = _famille_retenue(vu["familles"])
+            resolu[nom] = ("doute", famille, vu["familles"][famille])
+        elif categorie == "copie":
+            resolu[nom] = ("copie", None, vu["copie"])
+        elif categorie == "propre":
+            resolu[nom] = ("propre", None, None)
+    return resolu
+
+
 def main() -> None:
     agg = {nom: _vide() for nom, *_ in MAITRES}
     total = 0
@@ -246,47 +286,25 @@ def main() -> None:
         ):
             if not isinstance(aut, str):
                 continue
-            en_ba = markers._dans_beaux_arts(dom)
-            # Premier temps : que dit CETTE référence de CHAQUE maître ? On
-            # collecte sans rien compter — le comptage vient après, une fois par
-            # couple (maître, référence). Les références sont uniques dans le CSV
+            # Une référence, un poids, par maître : la résolution (catégorie la
+            # plus prudente, famille la plus explicite) est faite d'un bloc par
+            # resout_reference(). Les références sont uniques dans le CSV
             # (vérifié le 2026-07-21 : 1 023 705 lignes, 1 023 705 références),
             # la déduplication tient donc entièrement dans la ligne courante.
-            vus = {}  # maître -> {categories: set, familles: {code: segment}, copie: segment}
-            for segment in aut.split(";"):
-                segment = segment.strip()
-                if not segment:
-                    continue
-                nom = _trouve_maitre(_pivot(segment))
-                if nom is None:
-                    continue
-                categorie, famille = markers.famille_segment(segment, en_ba)
-                vu = vus.setdefault(nom, {"categories": set(), "familles": {},
-                                          "copie": None})
-                vu["categories"].add(categorie)
-                if categorie == "doute":
-                    # on garde le premier segment vu pour chaque famille : c'est
-                    # lui qui fournira l'extrait cité dans la vitrine « Œuvres »
-                    vu["familles"].setdefault(famille, segment)
-                elif categorie == "copie" and vu["copie"] is None:
-                    vu["copie"] = segment
-
-            # Second temps : une référence, un poids, par maître.
-            for nom, vu in vus.items():
+            resolu = resout_reference(aut, markers._dans_beaux_arts(dom))
+            for nom, (categorie, famille, segment) in resolu.items():
                 a = agg[nom]
                 if isinstance(code, str):
                     a["musees"].add(code)
-                categorie = _categorie_retenue(vu["categories"])
                 if categorie == "propre":
                     a["propre"] += 1
                 elif categorie == "copie":
-                    a["copie"] += 1
                     # une notice réelle de copie « d'après », pour le bloc « À part »
+                    a["copie"] += 1
                     if a["exemple_copie"] is None and isinstance(ref, str):
                         a["exemple_copie"] = _exemple(ref, titre, musee, ville,
-                                                      vu["copie"])
+                                                      segment)
                 elif categorie == "doute":
-                    famille = _famille_retenue(vu["familles"])
                     a["doute"] += 1
                     a["familles"][famille] = a["familles"].get(famille, 0) + 1
                     a["niveaux"][NIVEAU_FAMILLE[famille]] += 1
@@ -318,8 +336,7 @@ def main() -> None:
                     # l'œuvre du Louvre nommant Titien sous deux graphies)
                     exs = a["exemples"].setdefault(famille, [])
                     if len(exs) < EXEMPLES_PAR_FAMILLE and isinstance(ref, str):
-                        exs.append(_exemple(ref, titre, musee, ville,
-                                            vu["familles"][famille]))
+                        exs.append(_exemple(ref, titre, musee, ville, segment))
         print(f"\r  {total:,} notices lues".replace(",", " "), end="", flush=True)
     print()
 

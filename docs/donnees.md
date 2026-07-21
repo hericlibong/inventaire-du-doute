@@ -36,6 +36,11 @@ Hyacinthe Rigaud, Géricault, Fragonard.
 n'était captée par aucun motif (ni `RAPHAEL`, ni `SANZIO` n'y figurent) — 12 mentions
 prudentes par forme, **+3 références** une fois dédoublonnées avec « RAPHAEL ».
 
+**Fautes de saisie sur le nom du maître lui-même** : la notice `06070060045` du musée Ingres
+de Montauban écrit `IIngres Jean-Auguste-Dominique`, avec deux I. Aucun motif ne peut la
+rattacher, et on ne cherche pas à rattraper ces cas un par un — ce serait réécrire la base.
+Limite ordinaire du procédé, à dire dans la page méthode.
+
 **Totaux après les temps 1 et 2** : doute **2 341 → 2 188**, certaines **29 995 → 28 240**.
 Michel-Ange : 148 références prudentes, 3 musées (Louvre 146, Rennes 1, Dole 1), part
 **39 %** contre 19 % affiché.

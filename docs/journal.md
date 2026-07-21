@@ -2,6 +2,33 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-21 (septies) — Temps 3 : figer ce qui vient d'être corrigé
+
+Un correctif qu'aucun test ne protège se défait tout seul à la modification suivante. D'où
+cette étape avant le point d'arrêt : 89 tests, qui portent le projet de 60 à 149.
+
+Il a fallu commencer par dégager la règle. Elle était enfermée dans la boucle de lecture du
+CSV, donc intestable sans le fichier de 1,1 Go. Elle vit maintenant dans une fonction à
+part, `resout_reference()` : on lui donne un champ `Auteur`, elle répond ce que la notice
+dit de chaque maître. Les chiffres du pipeline sont identiques avant et après.
+
+Les tests disent trois choses. Que Corneille Michel-Ange n'est pas Buonarroti, que Domenico
+Robusti n'est pas son père, que Carlo Caliari n'est pas Véronèse — la liste complète des
+homonymes de l'audit, chacun face au maître qu'il imitait. Qu'une notice nommant le Titien
+deux fois ne compte qu'une œuvre. Et que l'ancre ne doit **pas** s'appliquer partout :
+« ÉCOLE DE PRIMATICCIO », 121 notices, n'a pas le nom en tête et doit rester prise.
+
+Le troisième niveau est le plus utile pour la suite : `data/exports/temoins_maitres.csv`,
+42 lignes réelles de la base, avec le champ `Auteur` **tel que le musée l'a saisi** et le
+verdict attendu en face. Ça se relit sans lire de code.
+
+En l'écrivant, une notice du musée Ingres de Montauban est apparue : `IIngres
+Jean-Auguste-Dominique`, avec deux I. Aucun motif ne peut la rattacher. On ne cherchera pas à
+rattraper les fautes de frappe une par une — ce serait réécrire la base. C'est une limite
+ordinaire du procédé, à dire dans la page méthode.
+
+**Les étapes 1 à 3 sont faites. On est au point d'arrêt** : rien ne repart avant validation.
+
 ## 2026-07-21 (sexies) — Temps 2 : savoir de qui on parle
 
 Avant d'écrire quoi que ce soit, on a demandé à la base ce qu'elle contenait vraiment : la

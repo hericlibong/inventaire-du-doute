@@ -28,9 +28,11 @@ Ordre imposé — chaque ⏸ est un point d'arrêt :
       Prénom ») ; doute **2 341 → 2 188**, certaines **29 995 → 28 240**. Michel-Ange passe
       de 19 % à 39 % et de 9 musées à 3. Liste publiable des personnes écartées :
       donnees.md
-- [ ] **3. Tests de non-régression** sur références réelles (témoins d'homonymie, doublons
-      de graphie, trois cas multi-familles de Simon Vouet)
-- [ ] ⏸ **Validation du pipeline corrigé** avant régénération
+- [x] **3. Tests de non-régression** sur références réelles. **Fait le 2026-07-21**
+      (decisions.md, septies) : `tests/test_artistes.py`, 89 tests (total projet 60 → 149) ;
+      `resout_reference()` extraite pour être testable sans le CSV ; témoins réels versionnés
+      dans `data/exports/temoins_maitres.csv` (42 lignes, champ `Auteur` exact)
+- [ ] ⏸ **Validation du pipeline corrigé** avant régénération ← **ON EST ICI**
 - [ ] **4. Recalcul au seuil de 10** références prudentes uniques, tous candidats confondus
 - [ ] **5. Nouvelle sélection** selon la règle double (maître de référence **et** seuil),
       avec journal public des candidats écartés et de leur motif. Instruire les **faux

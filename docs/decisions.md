@@ -2,6 +2,38 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-21 (septies) — Temps 3 : les tests, et ce qu'ils protègent
+
+Troisième et dernière étape avant le point d'arrêt. `tests/test_artistes.py`, **89 tests**,
+qui portent le total du projet de 60 à **149**.
+
+**Un refactor, pour rendre la règle testable.** La résolution d'une référence — catégorie la
+plus prudente, famille la plus explicite, un poids par maître — était enfermée dans la
+boucle de lecture du CSV. Elle est extraite dans `resout_reference(auteur, en_beaux_arts)`,
+qui renvoie `{maître: (categorie, famille, segment)}`. Les tests l'appellent directement,
+sans le CSV de 1,1 Go. Chiffres vérifiés identiques avant et après : le refactor est neutre.
+
+**Trois niveaux de protection.**
+
+1. *Identité* (39 cas) : chaque homonyme relevé par l'audit, face au maître qu'il imite —
+   Corneille Michel-Ange contre Buonarroti, Domenico Robusti contre Jacopo, Carlo Caliari
+   contre Paolo, Pierre Mignard II contre Pierre I. Y figurent aussi les cas où **l'ancre ne
+   doit pas s'appliquer** (« ÉCOLE DE PRIMATICCIO », « D'APRÈS CLOUET François »), et les
+   faux amis par racine commune déjà corrigés en juillet (Serodine, Vincidor, Tintoretto) :
+   un test qui interdit de revenir en arrière.
+2. *Comptage* (8 cas) : les deux graphies du Titien sur une notice, les deux formulations
+   prudentes de Vouet, prudent contre ferme, prudent contre copie, copie contre ferme, et
+   l'invariant qui rend familles et niveaux additifs — **un maître ne relève que d'une
+   famille par référence**.
+3. *Références réelles* (42 lignes) : `data/exports/temoins_maitres.csv`, versionné, avec la
+   **valeur exacte du champ `Auteur`** telle que le musée l'a saisie, la référence Joconde,
+   et le verdict attendu. Un fichier relisible sans lire de code.
+
+**Constat de forme trouvé en écrivant les tests** : la notice `06070060045` (musée Ingres,
+Montauban) écrit `IIngres Jean-Auguste-Dominique` — avec deux I. Aucun motif ne peut la
+rattacher, et il ne faut pas essayer : corriger les fautes de saisie une par une reviendrait
+à réécrire la base. C'est la limite ordinaire du procédé, à dire dans la page méthode.
+
 ## 2026-07-21 (sexies) — Temps 2 appliqué : la table d'identité des maîtres
 
 Deuxième étape du chantier, toujours dans `src/build_artistes.py` seul, exports non
