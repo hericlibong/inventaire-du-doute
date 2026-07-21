@@ -12,7 +12,7 @@
 
 	// Chiffres, tous issus des exports (jamais saisis à la main).
 	const nbNoms = data.artistes.artistes.length; // 27
-	const douteDansListe = data.vue.totaux.doute_dans_liste;
+	const douteDansListe = data.vue.totaux.doute_notices_liste;
 	const dApres = n.familles.d_apres.notices; // 22 564 (copies « d'après »)
 	const copiesTotal = n.copie; // 22 624 (catégorie copie, dédupliquée)
 	const pct = (v) => (v * 100).toLocaleString('fr-FR', { maximumFractionDigits: 1 });

@@ -3,6 +3,34 @@
 Tout ce qu'on apprend sur la base Joconde au fil du projet : structure, pièges,
 chiffres vérifiés. Chaque constat indique sa date et comment il a été obtenu.
 
+## Recouvrement entre les profils de maîtres (2026-07-22)
+
+Mesuré sur les 1 023 705 lignes. Une notice peut nommer **deux maîtres retenus** : elle
+compte alors dans deux fiches, mais ne reste **qu'une œuvre**.
+
+| | somme des appartenances | notices distinctes | écart |
+|---|---:|---:|---:|
+| mentions prudentes | 3 674 | **3 668** | 6 |
+| attributions certaines | 34 898 | **34 598** | 300 |
+| copies « d'après » | 6 778 | **6 767** | 11 |
+
+Les six notices prudentes concernées : `M0347001723` (Michel-Ange · Andrea del Sarto),
+`02860008133` (Annibale · Ludovico Carracci), `50520000014` (Francesco Vanni · Ludovico
+Carracci), `07480012416` (Luca Giordano · Pier Francesco Mola), `08030000599` (Simon Vouet ·
+Sébastien Bourdon), `000PE008806` (Rubens · Van Dyck).
+
+**Cinq sur six portent le point d'interrogation** : le musée hésite entre deux noms. C'est
+la forme de doute la plus franche de toute la base — une notice qui dit non seulement « ce
+n'est peut-être pas lui », mais « ce pourrait être l'un ou l'autre ».
+
+Le recouvrement est bien plus marqué sur les **attributions certaines** (300 notices) : des
+œuvres à plusieurs mains, ou dont la notice cite plusieurs auteurs fermes.
+
+**Conséquence de méthode** : « hors liste » se calcule sur les notices distinctes
+(24 507 − 3 668 = **20 839**), jamais par soustraction d'une somme d'appartenances. Et les
+familles comme les niveaux **ne s'additionnent pas** en un total : `000PE008806` relève de
+« atelier » pour Rubens et de « ? » pour Van Dyck, donc de deux familles et de deux niveaux.
+
 ## Le lot du 2026-07-22 : 36 maîtres instruits (temps 5)
 
 Chacun a été vérifié un par un à partir du registre des 330 formes : identité claire,

@@ -14,6 +14,7 @@ Usage : uv run pytest
 """
 
 import csv
+import json
 import sys
 from pathlib import Path
 
@@ -193,6 +194,60 @@ def test_statut_registre(nom, mention, attendu, motif):
     lorsqu'on a vérifié que ce n'est pas une personne (cadrage 2026-07-22)."""
     from registre_maitres import statut_forme
     assert statut_forme(nom, _pivot(mention))[0] == attendu, motif
+
+
+# --------------------------------------------------------------------------
+# 5. Recouvrement entre profils : somme ≠ union (mesuré le 2026-07-22)
+# --------------------------------------------------------------------------
+
+EXPORT = RACINE / "data" / "exports" / "web" / "artistes.json"
+
+
+@pytest.fixture(scope="module")
+def export():
+    if not EXPORT.exists():
+        pytest.skip("artistes.json non généré")
+    return json.loads(EXPORT.read_text(encoding="utf-8"))
+
+
+def test_somme_des_profils_egale_les_appartenances(export):
+    t = export["totaux"]
+    assert sum(a["doute"] for a in export["artistes"]) == t["appartenances_doute"]
+
+
+def test_union_inferieure_ou_egale_a_la_somme(export):
+    """Une notice qui nomme deux maîtres compte deux fois dans la somme des
+    fiches, une seule fois dans les références distinctes."""
+    t = export["totaux"]
+    for cat in ("doute", "propre", "copie"):
+        assert t[f"notices_{cat}"] <= t[f"appartenances_{cat}"], cat
+
+
+def test_ecart_explique_par_les_references_partagees(export):
+    """L'écart n'est pas une approximation : il vaut exactement le nombre de
+    liens en trop portés par les notices à plusieurs maîtres."""
+    t = export["totaux"]
+    partagees = export["references_partagees"]
+    liens_en_trop = sum(len(p["maitres"]) - 1 for p in partagees)
+    assert t["appartenances_doute"] - t["notices_doute"] == liens_en_trop
+    assert t["notices_partagees"] == len(partagees)
+
+
+def test_familles_et_niveaux_ne_s_additionnent_pas_en_union(export):
+    """Garde-fou : une notice partagée peut relever de deux familles, donc de
+    deux niveaux. Additionner les ventilations ne redonne PAS l'union — il ne
+    faut jamais s'en servir pour déduire « hors liste »."""
+    t = export["totaux"]
+    assert sum(t["familles_notices"].values()) >= t["notices_doute"]
+    assert sum(t["niveaux_notices"].values()) >= t["notices_doute"]
+    for code, n in t["familles_notices"].items():
+        assert n <= t["notices_doute"], code
+
+
+def test_chaque_maitre_atteint_le_seuil(export):
+    """Le seuil de 10 porte sur la personne, après regroupement des graphies."""
+    for a in export["artistes"]:
+        assert a["doute"] >= 10, a["nom"]
 
 
 def _temoins():

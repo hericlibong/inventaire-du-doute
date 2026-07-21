@@ -2,6 +2,79 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-22 (ter) — Recouvrement entre profils : une somme n'est pas une union
+
+Vérification demandée avant d'ouvrir le temps 7, et elle était nécessaire : `doute_dans_liste`
+était calculé par **somme des profils**, ce qui compte deux fois toute notice nommant deux
+maîtres retenus. Mesure faite sur les 1 023 705 lignes du CSV.
+
+### Ce que vaut le recouvrement
+
+| | somme des appartenances | union des notices | écart |
+|---|---:|---:|---:|
+| notices prudentes | 3 674 | **3 668** | 6 |
+| attributions certaines | 34 898 | **34 598** | 300 |
+| copies « d'après » | 6 778 | **6 767** | 11 |
+
+**Six notices** portent deux maîtres retenus — les voici, publiées en clair dans
+`artistes.json` (`references_partagees`) :
+
+| Référence | Maîtres | Formule |
+|---|---|---|
+| `M0347001723` | Michel-Ange · Andrea del Sarto | « ? » pour les deux |
+| `02860008133` | Annibale Carracci · Ludovico Carracci | « ? » pour les deux |
+| `50520000014` | Francesco Vanni · Ludovico Carracci | « ? » pour les deux |
+| `07480012416` | Luca Giordano · Pier Francesco Mola | « ? » pour les deux |
+| `08030000599` | Simon Vouet · Sébastien Bourdon | « école de » pour les deux |
+| `000PE008806` | Rubens · Van Dyck | « atelier » / « ? » |
+
+Cinq sur six portent le point d'interrogation : ce sont des notices où le musée hésite
+**entre deux noms**, ce qui est le cas de doute le plus fort qui soit. Elles méritent d'être
+gardées visibles, pas gommées.
+
+### Deux mesures désormais distinguées dans l'export
+
+- **appartenances** : le lien maître-notice. C'est ce que totalisent les fiches, et c'est la
+  bonne base pour une répartition interne (les familles y somment exactement à 100 %).
+- **notices** : les références Joconde distinctes. **Seule mesure comparable au total
+  national**, et seule base admissible pour en déduire ce qui est hors liste.
+
+`doute_hors_liste` passe de 20 833 à **20 839** : il se calcule maintenant par
+`24 507 − 3 668`, jamais par soustraction d'une somme d'appartenances. La part nationale
+passe de 14,99 % à **14,97 %** — l'écart est minime, la règle ne l'est pas.
+
+**Les ventilations ne s'additionnent pas non plus.** La somme des familles en notices
+distinctes vaut 3 669, celle des niveaux aussi : `000PE008806` relève de « atelier » (niveau
+2) pour Rubens et de « ? » (niveau 1) pour Van Dyck, donc elle est comptée dans deux familles
+et deux niveaux. Interdiction confirmée d'additionner les familles — elle valait déjà pour le
+recouvrement des formules, elle vaut maintenant aussi pour le recouvrement des profils.
+
+### Invariants et tests ajoutés
+
+Dans `build_artistes.py` : union ≤ somme pour les trois catégories ; l'écart doit valoir
+**exactement** le nombre de liens en trop portés par les références partagées ; la somme des
+profils doit égaler les appartenances. Dans `build_vue_ensemble.py` : `hors_liste + union =
+total national`. Et cinq tests dans `tests/test_artistes.py` qui relisent l'export publié —
+dont un qui vérifie que l'écart est expliqué, pas approximé.
+
+### Correction d'une conclusion fautive
+
+La note du temps 6 affirmait qu'un musée doutant d'un grand nom « dit plus souvent “école
+de” que “attribué à” ». **Les chiffres disent l'inverse** : 43 % contre 35 %. Formulation
+exacte, désormais inscrite dans `message_central` :
+
+> « Attribué à » reste la formulation la plus fréquente parmi les maîtres retenus, mais
+> « école de » y occupe une place beaucoup plus importante que dans l'ensemble de
+> Joconde : 35 % contre 7,6 %.
+
+Ce n'est pas un renversement de hiérarchie, c'est un déplacement de proportion — et c'est
+déjà un constat fort. Une conclusion qui contredit ses propres chiffres est exactement ce
+que ce chantier existe pour éliminer.
+
+Côté front, deux branchements mécaniques : la page « échelle » lit les **appartenances**
+(sa répartition interne doit sommer à 100 %), la page « méthode » lit les **notices** (elle
+compare au total national). Aucune retouche éditoriale — temps 7 et 8.
+
 ## 2026-07-22 (bis) — Temps 6 : régénération des exports
 
 Première fois depuis l'audit que les fichiers publiés bougent. `artistes.json` (63 maîtres)

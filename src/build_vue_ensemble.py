@@ -6,9 +6,10 @@ de 1,1 Go : tout est recalculé depuis les exports source de vérité, avec des
 `assert` de cohérence.
 
 Message central porté par cette vue (docs/donnees.md 2026-07-15) :
-> Dans l'ensemble de Joconde, « attribué à » domine fortement. Dans les noms
-> retenus, les liens plus indirects — école, atelier, manière — prennent plus de
-> place. C'est ce contraste qui doit porter la future section « Vue d'ensemble ».
+> « Attribué à » reste la formulation la plus fréquente parmi les maîtres
+> retenus (43 %), mais « école de » y occupe une place beaucoup plus importante
+> que dans l'ensemble de Joconde : 35 % contre 7,6 %. C'est ce contraste qui
+> porte la section « Vue d'ensemble » — pas un renversement de hiérarchie.
 
 Les clés se nommaient `dans_27` / `hors_27` : la liste comptant désormais
 63 maîtres instruits (temps 5, 2026-07-22), elles s'appellent `dans_liste` /
@@ -58,28 +59,38 @@ def main():
 
     fam_global = niveaux["familles"]  # {code: {libelle, categorie, notices}}
 
-    # --- Familles DANS les 27 : somme des tallies par artiste ---
+    # --- Familles DANS la liste : somme des tallies par artiste ---
+    # (ce sont des APPARTENANCES : une notice à deux maîtres y compte deux fois)
     dans_liste = {code: 0 for code in FAMILLES}
     for a in artistes["artistes"]:
         for f in a["familles"]:
             if f["code"] in dans_liste:
                 dans_liste[f["code"]] += f["notices"]
 
+    # Notices DISTINCTES par famille : mesurées sur le CSV par build_artistes,
+    # pas déduites d'une somme de profils (six notices nomment deux maîtres).
+    fam_notices = artistes["totaux"]["familles_notices"]
+
     familles = []
     for code in FAMILLES:
         g = fam_global[code]["notices"]
         d = dans_liste[code]
+        n = fam_notices.get(code, 0)
         familles.append({
             "code": code,
             "libelle": fam_global[code]["libelle"],
             "niveau": NIVEAU_FAMILLE[code],
             "global": g,
+            # appartenances : ce que totalisent les fiches des maîtres
             "dans_liste": d,
-            "hors_liste": g - d,
+            # notices distinctes : ce qui est comparable au total national
+            "dans_liste_notices": n,
+            "hors_liste": g - n,
         })
-        assert d <= g, f"dans_liste > global pour {code}"
+        assert n <= d, f"notices > appartenances pour {code}"
+        assert n <= g, f"dans_liste_notices > global pour {code}"
 
-    # --- Niveaux : global, dans les 27, et global hors monoculture ---
+    # --- Niveaux : global, dans la liste, et global hors monoculture ---
     n_global = [niveaux["niveaux"][str(k)]["notices"] for k in (1, 2, 3)]
     n_dans_liste = [sum(a["niveaux"][i] for a in artistes["artistes"]) for i in range(3)]
 
@@ -91,6 +102,7 @@ def main():
     assert sum(n_hors_mono) == niveaux["doute_hors_monoculture"], \
         "niveaux hors monoculture incohérents avec doute_hors_monoculture"
 
+    niv_notices = artistes["totaux"]["niveaux_notices"]
     libelles_niveaux = {int(k): v["libelle"] for k, v in niveaux["niveaux"].items()}
     niveaux_vue = [
         {
@@ -98,21 +110,37 @@ def main():
             "libelle": libelles_niveaux[k],
             "global": n_global[k - 1],
             "dans_liste": n_dans_liste[k - 1],
+            "dans_liste_notices": niv_notices[str(k)],
             "global_hors_monoculture": n_hors_mono[k - 1],
         }
         for k in (1, 2, 3)
     ]
 
-    # --- Totaux ---
-    doute_dans_liste = sum(a["doute"] for a in artistes["artistes"])
-    assert doute_dans_liste == sum(n_dans_liste), "doute de la liste incohérent avec ses niveaux"
+    # --- Totaux : appartenances ET notices distinctes ---
+    # Six notices nomment DEUX maîtres retenus (artistes.json →
+    # references_partagees). La somme des profils vaut donc 3 674 quand les
+    # références distinctes ne sont que 3 668. « hors liste » se déduit de
+    # l'UNION, jamais de la somme (decisions.md, 2026-07-22 ter).
+    app = artistes["totaux"]["appartenances_doute"]
+    notices = artistes["totaux"]["notices_doute"]
+    assert app == sum(a["doute"] for a in artistes["artistes"]), \
+        "appartenances ≠ somme des profils"
+    assert app == sum(n_dans_liste), "appartenances incohérentes avec les niveaux"
+    assert notices <= app, "union > somme"
+    assert notices <= niveaux["doute_total"], "union > doute national"
 
     totaux = {
         "doute_total": niveaux["doute_total"],
-        "doute_dans_liste": doute_dans_liste,
-        "doute_hors_liste": niveaux["doute_total"] - doute_dans_liste,
+        # ce que totalisent les fiches (un lien maître-notice par ligne)
+        "doute_appartenances_liste": app,
+        # les références Joconde distinctes : la seule mesure comparable au total
+        "doute_notices_liste": notices,
+        "doute_notices_partagees": artistes["totaux"]["notices_partagees"],
+        "doute_hors_liste": niveaux["doute_total"] - notices,
         "doute_hors_monoculture": niveaux["doute_hors_monoculture"],
     }
+    assert totaux["doute_hors_liste"] + notices == totaux["doute_total"], \
+        "hors liste + union ≠ total national"
 
     # --- Copies « d'après » : tenues À PART, jamais additionnées au doute ---
     copies = {
@@ -128,16 +156,23 @@ def main():
         "critere_liste": artistes["critere"],
         "date_generation": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "message_central": (
-            "Dans l'ensemble de Joconde, « attribué à » domine fortement. Dans "
-            "les noms retenus, les liens plus indirects — école, atelier, "
-            "manière — prennent plus de place."
+            "« Attribué à » reste la formulation la plus fréquente parmi les "
+            "maîtres retenus, mais « école de » y occupe une place beaucoup "
+            "plus importante que dans l'ensemble de Joconde : 35 % contre 7,6 %."
         ),
         "note_methodo": (
             "Les familles peuvent se recouvrir : on ne les additionne pas et on "
             "n'utilise pas de diagramme en anneau. Hors de cette liste, seul le "
             "total par famille est publiable (pas de classement par nom). La "
             "monoculture divulguée (planches Barla, Nice) pèse une large part du "
-            "doute national ; « global hors monoculture » permet de la neutraliser."
+            "doute national ; « global hors monoculture » permet de la neutraliser. "
+            "Deux mesures distinctes pour la liste : les APPARTENANCES (un lien "
+            "maître-notice, ce que totalisent les fiches) et les NOTICES "
+            "distinctes (les références Joconde, seule mesure comparable au "
+            "total national). Six notices nomment deux maîtres retenus : la "
+            "somme des fiches vaut donc plus que le nombre d'œuvres. « Hors "
+            "liste » est calculé sur les notices, jamais par soustraction d'une "
+            "somme d'appartenances."
         ),
         "totaux": totaux,
         "monoculture": {
@@ -157,8 +192,11 @@ def main():
 
     # --- Récapitulatif console ---
     print(f"Écrit : {sortie.relative_to(RACINE)}")
-    print(f"\ndoute total {totaux['doute_total']} | dans la liste {totaux['doute_dans_liste']} "
-          f"({totaux['doute_dans_liste'] / totaux['doute_total']:.1%}) | "
+    print(f"\ndoute total {totaux['doute_total']} | notices de la liste "
+          f"{totaux['doute_notices_liste']} "
+          f"({totaux['doute_notices_liste'] / totaux['doute_total']:.1%}) | "
+          f"appartenances {totaux['doute_appartenances_liste']} "
+          f"(dont {totaux['doute_notices_partagees']} notices à deux maîtres) | "
           f"hors liste {totaux['doute_hors_liste']} | hors monoculture {totaux['doute_hors_monoculture']}")
     print("\nfamille                global  liste   hors  niv")
     for f in familles:

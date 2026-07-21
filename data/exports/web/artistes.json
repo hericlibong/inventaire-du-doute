@@ -2,8 +2,112 @@
  "critere": "maître de référence ET ≥ 10 notices de doute (hors copie)",
  "lexique": "markers.py v2 (famille_segment) — unité : référence Joconde unique",
  "unite": "reference",
+ "totaux": {
+  "appartenances_doute": 3674,
+  "notices_doute": 3668,
+  "appartenances_propre": 34898,
+  "notices_propre": 34598,
+  "appartenances_copie": 6778,
+  "notices_copie": 6767,
+  "notices_partagees": 6,
+  "familles_notices": {
+   "attribue": 1580,
+   "point_interrogation": 50,
+   "ecole_de": 1291,
+   "atelier_de": 360,
+   "entourage_de": 105,
+   "suiveur_de": 18,
+   "maniere_de": 211,
+   "genre_de": 54
+  },
+  "niveaux_notices": {
+   "1": 1630,
+   "2": 1774,
+   "3": 265
+  }
+ },
+ "references_partagees": [
+  {
+   "reference": "000PE008806",
+   "maitres": [
+    {
+     "nom": "Rubens",
+     "famille": "atelier_de"
+    },
+    {
+     "nom": "Van Dyck",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "02860008133",
+   "maitres": [
+    {
+     "nom": "Annibale Carracci",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Ludovico Carracci",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "07480012416",
+   "maitres": [
+    {
+     "nom": "Luca Giordano",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Pier Francesco Mola",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08030000599",
+   "maitres": [
+    {
+     "nom": "Simon Vouet",
+     "famille": "ecole_de"
+    },
+    {
+     "nom": "Sébastien Bourdon",
+     "famille": "ecole_de"
+    }
+   ]
+  },
+  {
+   "reference": "50520000014",
+   "maitres": [
+    {
+     "nom": "Francesco Vanni",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Ludovico Carracci",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "M0347001723",
+   "maitres": [
+    {
+     "nom": "Andrea del Sarto",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Michel-Ange",
+     "famille": "point_interrogation"
+    }
+   ]
+  }
+ ],
  "version_donnee": "2026-07-01",
- "date_generation": "2026-07-21T23:07:14+00:00",
+ "date_generation": "2026-07-21T23:38:52+00:00",
  "source": "Collections des musées de France : base Joconde",
  "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb",
  "niveaux": {

@@ -19,7 +19,7 @@
 	const valGlobal = Object.fromEntries(vue.familles.map((f) => [f.code, f.global]));
 	const valListe = Object.fromEntries(vue.familles.map((f) => [f.code, f.dans_liste]));
 	const totalGlobal = vue.totaux.doute_total; // 24 507
-	const totalListe = vue.totaux.doute_dans_liste;
+	const totalListe = vue.totaux.doute_appartenances_liste;
 
 	// Échelle COMMUNE aux deux panneaux : la plus grande part observée, toutes séries
 	// confondues (« attribué à » dans l'ensemble). Les barres deviennent comparables.

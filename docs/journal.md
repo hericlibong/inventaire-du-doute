@@ -2,6 +2,37 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-22 (ter) — Six notices où le musée hésite entre deux noms
+
+Vérification demandée avant d'ouvrir le temps 7 : le total de la liste était une **somme de
+fiches**. Or une notice peut nommer deux maîtres retenus, et elle est alors comptée deux
+fois. Mesure faite sur toute la base.
+
+L'écart est petit — 3 674 liens pour 3 668 œuvres — mais il existe, et ce qu'il désigne est
+intéressant. Six notices portent deux maîtres. Sur ces six, **cinq portent le point
+d'interrogation pour les deux noms** : Michel-Ange ou Andrea del Sarto ; Annibale ou Ludovico
+Carracci ; Francesco Vanni ou Ludovico Carracci ; Luca Giordano ou Pier Francesco Mola. Ce
+sont les notices où le musée ne dit pas seulement « ce n'est peut-être pas lui », mais « ce
+pourrait être l'un ou l'autre ». La forme de doute la plus franche de toute la base. Elles
+sont publiées en clair dans l'export, plutôt que gommées.
+
+Sur les attributions certaines, le recouvrement est bien plus large : **300 notices** citent
+deux maîtres retenus comme auteurs fermes — œuvres à plusieurs mains, ou notices à plusieurs
+auteurs.
+
+La règle qui en découle est simple à dire : une somme de fiches n'est pas un nombre
+d'œuvres. L'export publie maintenant les deux, sous deux noms distincts, et « hors liste » se
+calcule sur les œuvres — 24 507 moins 3 668, soit 20 839. Six de plus qu'avant. Les familles
+et les niveaux ne s'additionnent pas davantage : une notice partagée entre Rubens (« atelier »)
+et Van Dyck (« ? ») compte dans deux familles et deux niveaux.
+
+**Et une conclusion à retirer.** J'avais écrit qu'un musée doutant d'un grand nom dit « plus
+souvent “école de” que “attribué à” ». Les chiffres disent l'inverse : 43 % contre 35 %. La
+formulation juste est plus modeste et tout aussi parlante — « attribué à » reste la formule
+la plus fréquente chez les maîtres retenus, mais « école de » y prend une place quatre fois
+et demie plus grande que dans le reste de Joconde, 35 % contre 7,6 %. Un déplacement de
+proportion, pas un renversement.
+
 ## 2026-07-22 (bis) — Temps 6 : les fichiers publiés bougent enfin
 
 Depuis l'audit, tout avait été mesuré sans rien publier : à chaque contrôle, l'export était
@@ -15,8 +46,15 @@ c'était 9,6 %. On voit désormais un septième du phénomène au lieu d'un dixi
 Et le constat qui fait tenir la section « Vue d'ensemble » est confirmé, pas seulement
 maintenu : dans l'ensemble de Joconde, « attribué à » écrase tout — 73 % des mentions
 prudentes. Chez les maîtres retenus, il tombe à 43 %, tandis que « école de » monte à 35 %
-alors qu'il ne fait que 7 % au national. Quand un musée doute d'un grand nom, il dit plus
-souvent « école de » que « attribué à ». Le contraste est même plus net qu'avant.
+alors qu'il ne fait que 7,6 % au national. **« Attribué à » reste la formulation la plus
+fréquente chez les maîtres retenus** ; ce qui change, c'est la place que « école de » y
+prend — quatre fois et demie sa part nationale. Ce n'est pas un renversement de hiérarchie,
+c'est un déplacement de proportion.
+
+*(Rédaction initiale fautive, corrigée le 2026-07-22 : elle affirmait qu'un musée doutant
+d'un grand nom dit « plus souvent “école de” que “attribué à” ». Les chiffres disent
+l'inverse — 43 % contre 35 %. Une conclusion qui contredit ses propres chiffres est le seul
+type d'erreur que ce projet ne peut pas se permettre.)*
 
 Deux choses corrigées en route.
 

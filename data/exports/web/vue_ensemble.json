@@ -4,13 +4,15 @@
   "version_donnee": "2026-07-01",
   "lexique": "markers.py v2 (famille_segment) — unité : référence Joconde unique",
   "critere_liste": "maître de référence ET ≥ 10 notices de doute (hors copie)",
-  "date_generation": "2026-07-21T23:18:06+00:00",
+  "date_generation": "2026-07-21T23:40:02+00:00",
   "message_central": "Dans l'ensemble de Joconde, « attribué à » domine fortement. Dans les noms retenus, les liens plus indirects — école, atelier, manière — prennent plus de place.",
-  "note_methodo": "Les familles peuvent se recouvrir : on ne les additionne pas et on n'utilise pas de diagramme en anneau. Hors de cette liste, seul le total par famille est publiable (pas de classement par nom). La monoculture divulguée (planches Barla, Nice) pèse une large part du doute national ; « global hors monoculture » permet de la neutraliser.",
+  "note_methodo": "Les familles peuvent se recouvrir : on ne les additionne pas et on n'utilise pas de diagramme en anneau. Hors de cette liste, seul le total par famille est publiable (pas de classement par nom). La monoculture divulguée (planches Barla, Nice) pèse une large part du doute national ; « global hors monoculture » permet de la neutraliser. Deux mesures distinctes pour la liste : les APPARTENANCES (un lien maître-notice, ce que totalisent les fiches) et les NOTICES distinctes (les références Joconde, seule mesure comparable au total national). Six notices nomment deux maîtres retenus : la somme des fiches vaut donc plus que le nombre d'œuvres. « Hors liste » est calculé sur les notices, jamais par soustraction d'une somme d'appartenances.",
   "totaux": {
     "doute_total": 24507,
-    "doute_dans_liste": 3674,
-    "doute_hors_liste": 20833,
+    "doute_appartenances_liste": 3674,
+    "doute_notices_liste": 3668,
+    "doute_notices_partagees": 6,
+    "doute_hors_liste": 20839,
     "doute_hors_monoculture": 18716
   },
   "monoculture": {
@@ -27,6 +29,7 @@
       "niveau": 1,
       "global": 17926,
       "dans_liste": 1580,
+      "dans_liste_notices": 1580,
       "hors_liste": 16346
     },
     {
@@ -35,7 +38,8 @@
       "niveau": 1,
       "global": 2213,
       "dans_liste": 54,
-      "hors_liste": 2159
+      "dans_liste_notices": 50,
+      "hors_liste": 2163
     },
     {
       "code": "ecole_de",
@@ -43,7 +47,8 @@
       "niveau": 2,
       "global": 1871,
       "dans_liste": 1292,
-      "hors_liste": 579
+      "dans_liste_notices": 1291,
+      "hors_liste": 580
     },
     {
       "code": "atelier_de",
@@ -51,6 +56,7 @@
       "niveau": 2,
       "global": 1236,
       "dans_liste": 360,
+      "dans_liste_notices": 360,
       "hors_liste": 876
     },
     {
@@ -59,6 +65,7 @@
       "niveau": 3,
       "global": 703,
       "dans_liste": 211,
+      "dans_liste_notices": 211,
       "hors_liste": 492
     },
     {
@@ -67,6 +74,7 @@
       "niveau": 2,
       "global": 503,
       "dans_liste": 105,
+      "dans_liste_notices": 105,
       "hors_liste": 398
     },
     {
@@ -75,6 +83,7 @@
       "niveau": 3,
       "global": 303,
       "dans_liste": 54,
+      "dans_liste_notices": 54,
       "hors_liste": 249
     },
     {
@@ -83,6 +92,7 @@
       "niveau": 3,
       "global": 80,
       "dans_liste": 18,
+      "dans_liste_notices": 18,
       "hors_liste": 62
     }
   ],
@@ -92,6 +102,7 @@
       "libelle": "Presque lui",
       "global": 20014,
       "dans_liste": 1634,
+      "dans_liste_notices": 1630,
       "global_hors_monoculture": 14223
     },
     {
@@ -99,6 +110,7 @@
       "libelle": "Autour de lui",
       "global": 3537,
       "dans_liste": 1775,
+      "dans_liste_notices": 1774,
       "global_hors_monoculture": 3537
     },
     {
@@ -106,6 +118,7 @@
       "libelle": "Son style, sans lui",
       "global": 956,
       "dans_liste": 265,
+      "dans_liste_notices": 265,
       "global_hors_monoculture": 956
     }
   ],

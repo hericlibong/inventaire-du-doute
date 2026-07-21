@@ -59,6 +59,14 @@ Ordre imposé — chaque ⏸ est un point d'arrêt :
       (plus une seule occurrence de « 27 » dans le JSON généré). Correction d'une erreur de
       mesure du temps 5 : `musees_presence` ≠ `musees_doute`. À surveiller :
       `artistes.json` double, 189 → **372 Ko**
+- [x] **Vérification du recouvrement entre profils** (demandée avant le temps 7,
+      **faite le 2026-07-22**, decisions.md ter) : 6 notices nomment deux maîtres retenus
+      (300 sur les attributions certaines). L'export distingue désormais **appartenances**
+      (somme des fiches) et **notices** (références distinctes) ; `hors_liste` se calcule
+      sur l'union — 20 833 → **20 839**. Invariants + 5 tests sur l'export publié.
+      Conclusion fautive corrigée : « attribué à » **reste** la formule la plus fréquente
+      chez les maîtres retenus (43 % contre 35 %) ; ce qui change, c'est la part d'« école
+      de », 35 % contre 7,6 % au national
 - [ ] **7. Contrôle des effets sur le front** : classement du répertoire, jauges, familles,
       niveaux, exemples d'œuvres, cartes, page Méthode, et **relecture des angles** des
       en-têtes rédigés (les nombres suivent seuls, les angles non)

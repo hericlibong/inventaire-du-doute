@@ -27,6 +27,7 @@ Usage : uv run python src/build_artistes.py  (~2 min)
 import json
 import re
 import unicodedata
+from collections import defaultdict
 from datetime import datetime, timezone
 
 import pandas as pd
@@ -363,6 +364,21 @@ def main() -> None:
     agg = {nom: _vide() for nom, *_ in MAITRES}
     total = 0
 
+    # --- Recouvrement entre profils (mesuré le 2026-07-22) ---------------
+    # Une même notice peut nommer DEUX maîtres retenus : « BUONARROTI
+    # Michelangelo (?) ; SARTO Andrea del (?, manière de) » compte pour
+    # Michel-Ange ET pour Andrea del Sarto. Additionner les profils compte donc
+    # cette notice deux fois. On tient les deux mesures séparément :
+    #   - appartenances : le lien maître-notice, ce que compte chaque fiche ;
+    #   - notices : les références Joconde distinctes, ce qu'on peut comparer au
+    #     total national et ce dont on déduit « hors liste ».
+    # Jamais de soustraction sur une somme d'appartenances (decisions.md).
+    refs = {"doute": set(), "propre": set(), "copie": set()}
+    appartenances = {"doute": 0, "propre": 0, "copie": 0}
+    fam_refs = defaultdict(set)      # famille -> références distinctes
+    niv_refs = defaultdict(set)      # niveau  -> références distinctes
+    partagees = {}                   # référence -> [(maître, famille), …]
+
     morceaux = pd.read_csv(CHEMIN_CSV, sep="|", usecols=COLONNES, dtype=str,
                            chunksize=TAILLE_MORCEAU)
     for morceau in morceaux:
@@ -380,6 +396,17 @@ def main() -> None:
             # (vérifié le 2026-07-21 : 1 023 705 lignes, 1 023 705 références),
             # la déduplication tient donc entièrement dans la ligne courante.
             resolu = resout_reference(aut, markers._dans_beaux_arts(dom))
+            # recouvrement : ce que cette référence apporte à la liste entière
+            doutes = [(n, f) for n, (c, f, _s) in resolu.items() if c == "doute"]
+            if len(doutes) > 1:
+                partagees[ref] = sorted(doutes)
+            for nom, (categorie, famille, _s) in resolu.items():
+                appartenances[categorie] += 1
+                refs[categorie].add(ref)
+                if categorie == "doute":
+                    fam_refs[famille].add(ref)
+                    niv_refs[NIVEAU_FAMILLE[famille]].add(ref)
+
             for nom, (categorie, famille, segment) in resolu.items():
                 a = agg[nom]
                 if isinstance(code, str):
@@ -510,10 +537,47 @@ def main() -> None:
         })
     artistes.sort(key=lambda x: x["doute"], reverse=True)
 
+    # --- Totaux de la liste : appartenances ET notices distinctes -----------
+    # Invariants : une union ne peut pas dépasser la somme dont elle est tirée,
+    # et l'écart est exactement le nombre de liens en trop portés par les
+    # références partagées.
+    for cat in ("doute", "propre", "copie"):
+        assert len(refs[cat]) <= appartenances[cat], f"union > somme ({cat})"
+    ecart_doute = appartenances["doute"] - len(refs["doute"])
+    assert ecart_doute == sum(len(d) - 1 for d in partagees.values()), \
+        "écart doute ≠ liens en trop des références partagées"
+    assert sum(a["doute"] for a in artistes) == appartenances["doute"], \
+        "somme des profils ≠ appartenances"
+
+    totaux = {
+        "appartenances_doute": appartenances["doute"],
+        "notices_doute": len(refs["doute"]),
+        "appartenances_propre": appartenances["propre"],
+        "notices_propre": len(refs["propre"]),
+        "appartenances_copie": appartenances["copie"],
+        "notices_copie": len(refs["copie"]),
+        "notices_partagees": len(partagees),
+        # notices distinctes par famille et par niveau : ces deux ventilations
+        # NE S'ADDITIONNENT PAS en `notices_doute` (une notice partagée peut
+        # relever de deux familles, donc de deux niveaux)
+        "familles_notices": {code: len(fam_refs[code])
+                             for code in markers.DOUTE_PAR_NIVEAU
+                             if code in fam_refs},
+        "niveaux_notices": {str(n): len(niv_refs[n]) for n in (1, 2, 3)},
+    }
+    # les références nommant deux maîtres retenus, publiées en clair
+    references_partagees = [
+        {"reference": ref,
+         "maitres": [{"nom": n, "famille": f} for n, f in couples]}
+        for ref, couples in sorted(partagees.items())
+    ]
+
     sortie = {
         "critere": "maître de référence ET ≥ 10 notices de doute (hors copie)",
         "lexique": "markers.py v2 (famille_segment) — unité : référence Joconde unique",
         "unite": "reference",
+        "totaux": totaux,
+        "references_partagees": references_partagees,
         "version_donnee": "2026-07-01",
         "date_generation": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "source": "Collections des musées de France : base Joconde",
@@ -537,6 +601,11 @@ def main() -> None:
               f"{art['copie']:>6} {art['nb_musees_doute']:>9} {part:>6.0%}")
     total_sans_musee = sum(art["doute_sans_musee"] for art in artistes)
     print(f"\nDoute sans code musée (non cartographiable) : {total_sans_musee}")
+    print(f"\nAppartenances maître-notice : {appartenances['doute']} · "
+          f"notices distinctes : {len(refs['doute'])} · "
+          f"partagées entre deux maîtres : {len(partagees)}")
+    for ref, couples in sorted(partagees.items()):
+        print(f"  {ref} : " + " · ".join(f"{n} [{f}]" for n, f in couples))
 
 
 if __name__ == "__main__":
