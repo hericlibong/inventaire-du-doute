@@ -31,6 +31,34 @@ Le recouvrement est bien plus marqué sur les **attributions certaines** (300 no
 familles comme les niveaux **ne s'additionnent pas** en un total : `000PE008806` relève de
 « atelier » pour Rubens et de « ? » pour Van Dyck, donc de deux familles et de deux niveaux.
 
+## Dates des maîtres : trois sources, sept désaccords (2026-07-22)
+
+Les lignes de repérage du front portent des dates. Elles ont été relevées **dans la base**
+(le champ `Auteur` de Joconde porte souvent les années entre parenthèses), puis contrôlées
+contre **Wikidata** au moment de sourcer les portraits — un contrôle croisé automatique
+(`web/scripts/verifie_qid.py`) qui refuse un QID dont les dates ne concordent pas.
+
+Sur les 36 maîtres du lot, **29 concordent exactement**. Sept ne concordent pas :
+
+| Maître | Joconde | Wikidata | Publié |
+|---|---|---|---|
+| Federico Zuccaro | 1543 | 1539 | **vers 1540** |
+| Polidoro Caldara | 1495 (×12), 1492 (×5) | 1499 | **vers 1495** |
+| Gaspard Dughet | 1615 (×10) | 1613 | **vers 1615** |
+| Corneille de Lyon | 1510 | 1505 | **vers 1510** |
+| Francesco Vanni | 1565 | 1563 | **vers 1565** |
+| Paul Bril | 1554 | 1556 | **vers 1554** |
+| Le Pérugin | 1450 | 1448 | **vers 1450** |
+
+**Règle appliquée** : dès que deux sources consultées divergent, on écrit « vers ». C'est la
+doctrine déjà inscrite dans le fichier éditorial — *« la prudence sur les dates est du même
+ordre que celle des musées sur les attributions »*. Deux bios ont été corrigées pour cela le
+2026-07-22 (Gaspard Dughet et Paul Bril portaient une date ferme).
+
+La valeur publiée reste celle relevée dans **Joconde**, source canonique du projet ; le
+« vers » porte le désaccord. On ne tranche pas une question de datation qui n'est pas la
+nôtre.
+
 ## Le lot du 2026-07-22 : 36 maîtres instruits (temps 5)
 
 Chacun a été vérifié un par un à partir du registre des 330 formes : identité claire,

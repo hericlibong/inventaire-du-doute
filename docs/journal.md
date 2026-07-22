@@ -2,6 +2,39 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-22 (sexies) — Trente-trois visages, et sept désaccords sur des dates
+
+Plus de la moitié des fiches affichaient « Pas de portrait fiable disponible ». Trente-trois
+des trente-six nouveaux maîtres ont maintenant leur portrait — soixante sur soixante-trois.
+
+Le chemin est celui des vingt-sept premiers : Wikidata donne le fichier, Commons donne la
+licence et l'auteur, l'image est téléchargée en local. Ce qui a changé, c'est qu'on ne
+choisit plus l'identifiant à l'œil. Un petit script le cherche puis le contrôle : est-ce bien
+un humain, a-t-il un portrait, et surtout — **les dates concordent-elles avec la ligne de
+repérage déjà écrite** ?
+
+Vingt-neuf fois sur trente-six, oui. Sept fois, non. Federico Zuccaro naît en 1543 selon
+Joconde, en 1539 selon Wikidata. Polidoro Caldara en 1495 ou en 1499. Paul Bril en 1554 ou
+1556. Rien de spectaculaire — quelques années — mais deux de mes lignes affichaient une date
+**ferme** sur un point où les sources se contredisent. Elles portent maintenant « vers ».
+C'est la doctrine du projet, écrite dans le fichier éditorial lui-même : la prudence sur les
+dates est du même ordre que celle des musées sur les attributions. On ne tranche pas une
+question de datation qui n'est pas la nôtre.
+
+Trois maîtres restent sans visage : Gaspard Dughet, Domenico Campagnola, Laurent de La Hyre.
+Wikidata n'a rien pour eux. Leur fiche continue de le dire, plutôt que d'afficher une image
+approchante — c'est exactement la règle qu'on applique aux attributions.
+
+Trois choses trouvées en chemin, toutes du même genre : ce qui n'est pas vérifié dérive.
+Les vingt-sept images étaient dans git depuis juillet, mais **le fichier qui porte leurs
+crédits ne l'était pas** — il vivait dans un dossier ignoré. Une licence perdue au premier
+clone. Les crédits eux-mêmes parlaient anglais et se répétaient, Commons renvoyant « Unknown
+artistUnknown artist ». Et la légende produisait « par attribué à Paul Bril ».
+
+Enfin la page Méthode promettait que chaque portrait est « domaine public ». Sur soixante
+images, six ne le sont pas : trois en CC0, trois sous une licence qui **oblige** à citer
+l'auteur. La phrase le dit maintenant.
+
 ## 2026-07-22 (quinquies) — Temps 8 : dire au public ce qu'on a promis
 
 Dernière étape. Elle consistait surtout à retirer un nombre des textes — « 27 » traînait

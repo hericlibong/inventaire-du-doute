@@ -2,6 +2,63 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-22 (sexies) — Les portraits des 36 maîtres
+
+Plus de la moitié des fiches affichaient « Pas de portrait fiable disponible ». **33 des 36**
+maîtres du nouveau lot en ont un désormais ; le site en compte **60 sur 63**.
+
+### La route est inchangée, la vérification est nouvelle
+
+Même chemin que pour les 27 : Wikidata (propriété P18) → fichier Commons → licence et auteur
+par l'API → **téléchargement local**, jamais de hotlink. Ce qui change, c'est qu'un QID n'est
+plus choisi à la main : `web/scripts/verifie_qid.py` le cherche, puis contrôle le libellé, la
+description, la qualité d'être humain (P31 = Q5), la présence d'un portrait — et surtout les
+**dates**, qui doivent concorder avec la ligne de repérage déjà écrite.
+
+Ce contrôle croisé a payé : 29 concordances exactes, **7 désaccords** (voir donnees.md).
+Deux bios portaient une date ferme là où les sources divergent — Gaspard Dughet et Paul Bril
+passent à « vers ». La règle est celle du fichier éditorial : *la prudence sur les dates est
+du même ordre que celle des musées sur les attributions*.
+
+### Trois maîtres restent sans portrait, et c'est écrit
+
+Gaspard Dughet, Domenico Campagnola et Laurent de La Hyre n'ont aucun portrait sur Wikidata.
+Leur fiche continue d'afficher le repli. **On ne comble pas un manque par une image
+approximative** — c'est la même règle que pour les attributions.
+
+### Trois corrections trouvées en chemin
+
+1. **Le manifeste des crédits n'était pas versionné.** Les 27 images étaient dans git, mais
+   `portraits.json` vivait dans `web/static/data`, ignoré par git : une licence perdue au
+   premier clone. Le manifeste est désormais un export versionné
+   (`data/exports/web/portraits.json`), recopié par `npm run sync:data` comme les autres.
+2. **Les crédits parlaient anglais, et se répétaient.** Commons renvoie « Unknown
+   artistUnknown artist » (deux éléments concaténés), « Attributed to X », « After X ». Le
+   script dédoublonne et traduit ces **enrobages** — ce ne sont pas des noms, mais des
+   mentions de statut. Le nom exigé par la licence est conservé intact.
+3. **La légende écrivait « par attribué à Paul Bril ».** Elle distingue maintenant un nom
+   d'auteur (« par X ») d'une mention de statut (« attribué à X », « d'après X », « auteur
+   inconnu »), qui se suffit à elle-même. Et la détection d'autoportrait ignore accents et
+   traits d'union — « Louis-Léopold Boilly » au manifeste, « Louis Léopold Boilly » dans le
+   projet. Elle reste une **égalité stricte** : « d'après Philippe de Champaigne » contient
+   le nom du maître sans être un autoportrait.
+
+### Une licence affichée qui était devenue fausse
+
+La page Méthode annonçait que chaque portrait porte « son auteur et sa licence (domaine
+public) ». Sur les 60 images, **six n'y sont pas** : trois en CC0 et trois en **CC BY-SA
+3.0**, qui impose de citer l'auteur. La phrase dit maintenant « le plus souvent le domaine
+public, parfois une licence Creative Commons qui impose de citer l'auteur », et signale les
+trois artistes sans portrait.
+
+### Le regard
+
+Le manifeste porte pour chaque portrait un sens de regard : ceux qui regardent à droite sont
+retournés à l'affichage pour faire face au graphique, placé à leur gauche. Relecture du
+nouveau lot sur planche de contact : seuls **Adolph Menzel** et **Baccio Bandinelli** sont
+nettement tournés à droite. Les gravures portant une inscription (Tempesta, Zuccaro, Caldara,
+Le Pérugin, Claude Lorrain) ne sont **jamais** retournées — cela inverserait leur texte.
+
 ## 2026-07-22 (quinquies) — Temps 8 : les textes publics, et l'engagement tenu
 
 Dernière étape du chantier. Deux natures de travail, à ne pas confondre.

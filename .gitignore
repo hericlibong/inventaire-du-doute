@@ -15,3 +15,4 @@ museum.zip
 
 # Captures de contrôle du front (temporaires, non versionnées)
 .captures/
+web/.captures/

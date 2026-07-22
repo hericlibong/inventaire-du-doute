@@ -20,7 +20,11 @@ UA = {'User-Agent': 'InventaireDuDoute/1.0 (portfolio data-journalisme; hericlib
 ICI = os.path.dirname(os.path.abspath(__file__))
 RACINE = os.path.dirname(ICI)
 DEST_IMG = os.path.join(RACINE, 'static', 'portraits')
-DEST_JSON = os.path.join(RACINE, 'static', 'data', 'portraits.json')
+# Le manifeste est un EXPORT VERSIONNÉ, pas un fichier de travail : `web/static/data`
+# est ignoré par git, et les 27 images étaient versionnées sans leurs crédits — une
+# licence perdue au premier clone (relevé le 2026-07-22). Il s'écrit donc dans
+# data/exports/web/ et `npm run sync:data` le recopie vers static/data.
+DEST_JSON = os.path.join(os.path.dirname(RACINE), 'data', 'exports', 'web', 'portraits.json')
 
 # Maîtres dont le portrait regarde vers la DROITE : on le retourne
 # horizontalement à l'affichage pour qu'il regarde son nuage (placé à gauche).
@@ -30,6 +34,12 @@ DEST_JSON = os.path.join(RACINE, 'static', 'data', 'portraits.json')
 REGARD_DROITE = {
     'Annibale Carracci', 'Boucher', 'Guido Reni', 'Simon Vouet', 'Greuze',
     'Hyacinthe Rigaud', 'Fragonard', 'Ribera',
+    # Lot du 2026-07-22, relu sur planche de contact : seuls ces deux visages sont
+    # nettement tournés vers la droite. Les autres sont de face ou tournés à
+    # gauche. Les gravures portant du texte (Antonio Tempesta, Federico Zuccaro,
+    # Polidoro Caldara, Le Pérugin, Claude Lorrain) ne sont JAMAIS retournées —
+    # cela inverserait leur inscription.
+    'Adolph Menzel', 'Baccio Bandinelli',
 }
 
 # QID Wikidata vérifiés manuellement (recherche + description, 2026-07-09).
@@ -43,6 +53,50 @@ QID = {
     'Le Corrège': 'Q8457', 'Pierre Mignard': 'Q360010', 'Véronèse': 'Q9440',
     'Hyacinthe Rigaud': 'Q49898', 'Géricault': 'Q184212', 'Fragonard': 'Q127171',
     'Raphaël': 'Q5597', 'Ribera': 'Q297838', 'Titien': 'Q47551',
+
+    # Lot du 2026-07-22 (les 36 maîtres instruits au temps 5). QID obtenus par
+    # recherche Wikidata puis VÉRIFIÉS par scripts/verifie_qid.py : le libellé, la
+    # description, la qualité d'être humain (P31=Q5) et surtout les DATES doivent
+    # concorder avec la ligne de repérage écrite dans editorial-maitres.js. Sept
+    # divergences de dates relevées et documentées (docs/donnees.md, 2026-07-22).
+    #
+    # Trois maîtres n'ont PAS de portrait sur Wikidata (aucun P18) et n'y figurent
+    # donc pas : Gaspard Dughet, Domenico Campagnola, Laurent de La Hyre. La fiche
+    # affiche alors le repli « Pas de portrait fiable disponible » — on ne comble
+    # pas un manque par une image approximative.
+    "Le Guerchin": 'Q334262',
+    "Bouchardon": 'Q987687',
+    "Jules Romain": 'Q215305',
+    "Ludovico Carracci": 'Q380553',
+    "David Téniers": 'Q335022',
+    "François Gérard": 'Q163543',
+    "Le Parmesan": 'Q9348',
+    "Perino del Vaga": 'Q918778',
+    "Adolph Menzel": 'Q164961',
+    "Baccio Bandinelli": 'Q358348',
+    "Antonio Tempesta": 'Q605447',
+    "Luca Giordano": 'Q332494',
+    "Salvator Rosa": 'Q359421',
+    "Federico Barocci": 'Q316731',
+    "Carlo Maratti": 'Q538998',
+    "Federico Zuccaro": 'Q345605',
+    "Joseph Vernet": 'Q315819',
+    "Luca Cambiaso": 'Q712512',
+    "Polidoro Caldara": 'Q964822',
+    "Corneille de Lyon": 'Q720941',
+    "Francesco Vanni": 'Q960581',
+    "Philippe de Champaigne": 'Q314814',
+    "Giorgio Vasari": 'Q128027',
+    "Sébastien Bourdon": 'Q553795',
+    "Pier Francesco Mola": 'Q1192715',
+    "Jean-Baptiste Oudry": 'Q737137',
+    "Louis Léopold Boilly": 'Q715909',
+    "Nicolas de Largillière": 'Q550302',
+    "Paul Bril": 'Q540753',
+    "Albrecht Dürer": 'Q5580',
+    "Claude Lorrain": 'Q214074',
+    "Le Pérugin": 'Q5827',
+    "Botticelli": 'Q5669',
 }
 
 
@@ -53,6 +107,32 @@ def get_json(url):
 def slug(nom):
     s = unicodedata.normalize('NFKD', nom).encode('ascii', 'ignore').decode()
     return re.sub(r'[^a-z0-9]+', '-', s.lower()).strip('-')
+
+
+# Enrobages anglais de Commons : ce ne sont pas des noms, mais des mentions de
+# statut. Le crédit exigé par la licence garde le NOM ; le reste se dit en
+# français, comme tout le site. « d'après » est ici au sens du crédit d'image
+# (l'œuvre reproduite copie un modèle) — même mot que dans les notices Joconde.
+ENROBAGES = [
+    ('Unknown artist', 'auteur inconnu'),
+    ('Attributed to ', 'attribué à '),
+    ('After ', "d'après "),
+    ('Circle of ', 'entourage de '),
+    ('Workshop of ', 'atelier de '),
+]
+
+
+def nettoie_auteur(txt):
+    """Crédit d'auteur lisible : Commons répète parfois deux fois le même nom
+    (« Unknown artistUnknown artist ») quand la fiche porte plusieurs éléments."""
+    txt = (txt or '').strip()
+    moitie = len(txt) // 2
+    if len(txt) % 2 == 0 and txt[:moitie] == txt[moitie:]:
+        txt = txt[:moitie]
+    for anglais, francais in ENROBAGES:
+        if anglais in txt:
+            txt = txt.replace(anglais, francais)
+    return txt.strip()
 
 
 def sans_html(txt):
@@ -87,7 +167,7 @@ def infos_commons(fichier, largeur=480):
         'descriptionurl': ii.get('descriptionurl', ''),
         'licence': champ('LicenseShortName'),
         'licence_url': ex.get('LicenseUrl', {}).get('value', ''),
-        'auteur': champ('Artist'),
+        'auteur': nettoie_auteur(champ('Artist')),
         'credit': champ('Credit'),
         'usage': champ('UsageTerms'),
     }

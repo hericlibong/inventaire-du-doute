@@ -203,9 +203,12 @@
 	<p>
 		<strong>Portraits.</strong> Les portraits des artistes viennent de Wikimedia Commons.
 		Ce sont des <em>illustrations</em>, jamais une donnée ni un comptage&nbsp;: chaque
-		image porte en légende son auteur et sa licence (domaine public), vérifiés fichier par
-		fichier. Aucune image n'est reprise des fiches Joconde elles-mêmes&nbsp;; chaque
-		exemple renvoie plutôt à sa notice publique sur POP.
+		image porte en légende son auteur et sa licence, vérifiés fichier par fichier — le
+		plus souvent le domaine public, parfois une licence Creative Commons qui impose de
+		citer l'auteur. Trois artistes n'ont <strong>pas</strong> de portrait fiable
+		disponible&nbsp;: leur fiche le dit plutôt que d'afficher une image approchante.
+		Aucune image n'est reprise des fiches Joconde elles-mêmes&nbsp;; chaque exemple
+		renvoie plutôt à sa notice publique sur POP.
 	</p>
 	<p>
 		<strong>Fond de carte.</strong> Les contours des régions viennent de france-geojson

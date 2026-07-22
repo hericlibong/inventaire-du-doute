@@ -15,10 +15,29 @@
 	// maître lui-même.
 	const legende = $derived.by(() => {
 		if (!portrait) return null;
-		const estAutoportrait = portrait.auteur === maitre.nom;
+		// Comparaison insensible aux accents, traits d'union et casse : le manifeste
+		// écrit « Louis-Léopold Boilly » là où le projet écrit « Louis Léopold Boilly ».
+		// Égalité STRICTE seulement : « d'après Philippe de Champaigne » contient le nom
+		// mais n'est pas un autoportrait — on ne l'affirme que si les deux coïncident.
+		const aplat = (s) =>
+			s
+				.normalize('NFD')
+				.replace(/[\u0300-\u036f]/g, '')
+				.replace(/[-\s]+/g, ' ')
+				.toLowerCase()
+				.trim();
+		const estAutoportrait = aplat(portrait.auteur) === aplat(maitre.nom);
+		// Certaines fiches Commons ne donnent pas un nom mais une mention de statut
+		// (« attribué à Jacopo Zucchi », « d'après Philippe de Champaigne », « auteur
+		// inconnu »). On n'écrit pas « par attribué à… » : la mention se suffit.
+		const mention = /^(attribué à|d'après|entourage de|atelier de|auteur inconnu)/.test(
+			portrait.auteur
+		);
 		const sujet = estAutoportrait
 			? `Autoportrait de ${maitre.nom}`
-			: `Portrait de ${maitre.nom}, par ${portrait.auteur}`;
+			: mention
+				? `Portrait de ${maitre.nom}, ${portrait.auteur}`
+				: `Portrait de ${maitre.nom}, par ${portrait.auteur}`;
 		return { sujet, licence: licenceEnFrancais(portrait.licence), source: portrait.source };
 	});
 </script>

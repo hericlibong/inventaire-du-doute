@@ -135,7 +135,7 @@ comme historique ; ce bloc est le cap qui prime.*
       (Périmètre · Construction des données · Lire les chiffres · Limites · Sources et
       droits) ; chiffres lus depuis les exports ; divergence copies corrigée (22 624)
 - [ ] **Travail image / droits** (statuts open/authorized/pending/restricted ;
-      voie Wikimedia fichier par fichier, comme les 27 portraits)
+      voie Wikimedia fichier par fichier, comme les portraits)
 - [~] **Charte graphique et refonte front** (identité visuelle propre — le socle
       sur lequel tout le reste s'aligne) : **direction arrêtée le 2026-07-16**
       (`docs/charte-graphique.md`, ambiance « Catalogue savant »).

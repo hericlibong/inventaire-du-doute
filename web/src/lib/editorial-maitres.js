@@ -362,7 +362,7 @@ export const EDITORIAL = {
 	'Joseph Vernet': { bio: 'Peintre français du XVIIIe siècle, 1714–1789.' },
 	'Luca Cambiaso': { bio: 'Peintre italien du XVIe siècle, 1527–1585.' },
 	'Polidoro Caldara': { bio: 'Peintre italien du XVIe siècle, vers 1495–1543.' },
-	'Gaspard Dughet': { bio: 'Peintre français du XVIIe siècle, 1615–1675.' },
+	'Gaspard Dughet': { bio: 'Peintre français du XVIIe siècle, vers 1615–1675.' },
 	'Corneille de Lyon': {
 		bio: 'Peintre néerlandais installé en France au XVIe siècle, vers 1510–1575.'
 	},
@@ -384,7 +384,7 @@ export const EDITORIAL = {
 	'Nicolas de Largillière': {
 		bio: 'Peintre français des XVIIe et XVIIIe siècles, 1656–1746.'
 	},
-	'Paul Bril': { bio: 'Peintre flamand des XVIe et XVIIe siècles, 1554–1626.' },
+	'Paul Bril': { bio: 'Peintre flamand des XVIe et XVIIe siècles, vers 1554–1626.' },
 	'Albrecht Dürer': {
 		bio: 'Peintre et graveur allemand des XVe et XVIe siècles, 1471–1528.'
 	},
