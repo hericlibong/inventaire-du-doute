@@ -2,6 +2,63 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-22 (quinquies) — Temps 8 : les textes publics, et l'engagement tenu
+
+Dernière étape du chantier. Deux natures de travail, à ne pas confondre.
+
+### Ce qu'on ne réécrit pas
+
+Les **journaux datés** — `donnees.md`, les entrées de `decisions.md`, les phases closes de
+`roadmap.md` — contiennent des phrases comme « Total des 27 : 2 341 segments → 2 225
+références ». Elles sont **exactes à leur date** et racontent comment le chiffre s'est
+fabriqué. Les corriger reviendrait à effacer l'erreur qu'on vient de documenter. Elles
+restent telles quelles.
+
+Seuls sont révisés les **documents vivants**, qui décrivent l'état courant.
+
+### Ce qui a été révisé
+
+- `charte-graphique.md` : le titre public n'est plus « Explorer les 27 maîtres » mais
+  « Explorer les N maîtres », **le nombre étant lu dans les données**. Un titre qui fige un
+  effectif devient faux au premier ajout — c'est déjà arrivé deux fois.
+- `dataviz-les-presque.md` : sélection (27 → 63, seuil 20 → 10, regroupement des graphies),
+  effectif, portée du filtre. Surtout, une **note en tête sur le changement d'axe** : la
+  spec décrivait un axe portant le nombre d'œuvres sur un plafond commun, ce qui n'est plus
+  vrai depuis le temps 7.
+- `architecture-editoriale.md`, `les-presque/+page.js`, et les tâches encore ouvertes de la
+  roadmap qui parlaient des « 27 vedettes ». La réserve « garder 27 ou réintégrer
+  Bruegel/Cranach » est **sans objet** : ils sont au registre, à l'état « à instruire ».
+
+### L'engagement de transparence, enfin tenu
+
+La décision 4 du 2026-07-21 promettait que « la liste des candidats examinés est publiée
+avec leur nombre de notices, y compris ceux écartés et le motif ». Le registre existait
+depuis le temps 5 (`candidats_maitres.csv`) mais **le site n'en disait rien**. La page
+Méthode porte maintenant un paragraphe qui l'énonce, avec des nombres lus dans un nouvel
+export `data/exports/web/registre.json` :
+
+> Tous les noms qui atteignent le seuil ont été relevés : ils sont **330**, et chacun porte
+> un état — retenu, écarté avec sa raison, ou encore à examiner. Un nom encore à examiner
+> **n'est pas un nom rejeté** : c'est un nom dont la vérification n'a pas été faite.
+> Aujourd'hui **74** formes d'écriture sont rattachées aux 63 artistes retenus, **22** sont
+> écartées parce qu'il ne s'agit pas d'une personne, **234** restent à examiner.
+
+Une première rédaction disait « puis examinés un par un » **et** « 234 restent à examiner » —
+deux phrases contradictoires dans le même paragraphe. Corrigé.
+
+Deux autres passages complétés dans la même page :
+
+- **les homonymes**, absents jusqu'ici alors qu'ils sont le piège le plus coûteux du projet :
+  « sous “Michel-Ange”, les musées ont aussi rangé Corneille Michel-Ange, peintre lyonnais du
+  XVII<sup>e</sup> siècle ; sous “Raphaël”, une cinquantaine de personnes qui le portent comme
+  prénom » ;
+- **une œuvre peut concerner deux artistes** : quand un musée hésite entre deux noms, la
+  notice apparaît sur les deux fiches mais ne compte qu'une œuvre — « c'est pourquoi le total
+  de la liste n'est pas la somme des fiches ». Six notices sont dans ce cas.
+
+Le vocabulaire interne (appartenances, notices, registre, instruction) **n'apparaît nulle
+part** dans ces textes : la page dit « formes d'écriture », « état », « encore à examiner ».
+
 ## 2026-07-22 (quater) — Temps 7 : ce que 63 maîtres cassent dans le front
 
 Contrôle complet de la rubrique avec la liste élargie. Le front ne s'est pas *cassé* — il

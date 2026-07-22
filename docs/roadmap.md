@@ -77,10 +77,16 @@ Ordre imposé — chaque ⏸ est un point d'arrêt :
       `nb_maitres` publié dans `vue_ensemble.json` ; les deux panneaux de « Comprendre les
       mentions » comptent désormais des **notices** (3 668), plus des appartenances.
       Restent hors périmètre : style, portraits des 36, angles écrits des 36
-- [ ] **8. Révision des textes publics** annonçant « 27 » ou « au moins vingt notices » :
-      `docs/roadmap.md`, `charte-graphique.md`, `dataviz-les-presque.md`,
-      `architecture-editoriale.md`, `web/src/routes/les-presque/+page.js`,
-      `web/src/routes/echelle/+page.svelte`, `web/src/routes/methode/+page.svelte`
+- [x] **8. Révision des textes publics** annonçant « 27 » ou « au moins vingt notices ».
+      **Fait le 2026-07-22** (decisions.md, quinquies) : `charte-graphique.md` (le titre
+      public ne fige plus d'effectif), `dataviz-les-presque.md` (sélection, effectif, et
+      **note sur le changement d'axe**), `architecture-editoriale.md`, `les-presque/+page.js`,
+      et les tâches ouvertes de ce fichier. La page **Méthode publie désormais l'état du
+      registre** (330 formes examinées : 74 retenues, 22 écartées, 234 à instruire), explique
+      les **homonymes** et dit qu'une œuvre peut concerner deux artistes sans compter deux
+      fois. Nouveau petit export `data/exports/web/registre.json`. Les journaux datés
+      (donnees.md, decisions.md, entrées de phases) ne sont **pas** réécrits : ce sont des
+      mesures datées, pas des descriptions de l'état courant
 - [x] **Arbitrage ouvert** : représentation par famille d'une référence portant deux
       formulations prudentes (3 cas, Simon Vouet) — **tranché le 2026-07-21, option (c)** :
       le « ? » l'emporte sur la formule de distance. Vouet `atelier_de` 10 → 7,
@@ -451,15 +457,18 @@ Sous-étapes (cocher au fil de l'eau) :
 - [x] src/markers.py::famille_segment() + src/build_artistes.py →
       data/exports/web/artistes.json (par maître : propre/doute/copie,
       ventilation famille + niveau, musées, notices réelles POP)
-- [ ] ⏸ Réserve utilisateur : garder 27, ou réintégrer Bruegel/Cranach comme
-      « famille », ou échanger contre Jan Brueghel (~23)
+- [x] ⏸ Réserve utilisateur : garder 27, ou réintégrer Bruegel/Cranach comme
+      « famille » — **sans objet depuis le 2026-07-22** : le seuil est passé à 10 et la
+      sélection se fait par instruction sur registre exhaustif (temps 5). Bruegel et Cranach
+      sont dans le registre, à l'état « à instruire », comme les 232 autres
 - [x] Front (route `/les-presque`) : fiche « presque » complète — échelle du
       doute (composant `BarreNiveaux`), tableau des formules, copie en bande à
       part, exemples avec liens POP ; liste des 27 maîtres filtrable. Build
       statique vérifié (build/les-presque.html, données réelles pré-rendues)
-- [ ] Moteur de recherche sur **toute la base** (pas seulement les 27 vedettes) :
-      dépend d'un export « tous les noms + comptages » qui n'existe pas encore
-      (à produire côté pipeline). Pour l'instant : filtre sur les 27 vedettes
+- [ ] Moteur de recherche sur **toute la base** (pas seulement les maîtres retenus) :
+      dépend d'un export « tous les noms + comptages ». **Une partie existe désormais** :
+      `data/exports/candidats_maitres.csv` recense les 330 formes au seuil de 10 avec leur
+      état. Pour l'instant, le front filtre sur la liste retenue
 - [~] Galaxie (`GalaxieMaitre.svelte`) construite puis **ABANDONNÉE dans cette vue**
       le 2026-07-08 (voir decisions.md) : encodage « 1 bulle = 1 famille » → schéma
       moléculaire, pas une constellation ; n'apporte rien qu'une barre ne montre

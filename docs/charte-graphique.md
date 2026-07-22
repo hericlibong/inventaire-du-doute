@@ -174,7 +174,9 @@ placard : `GalaxieMaitre` (abandonné).
 
 ## 6. Application prioritaire à « Les presque »
 
-> **Titre public (2026-07-19) : « Explorer les 27 maîtres ».** L'appellation « Les
+> **Titre public (2026-07-19) : « Explorer les N maîtres ».** Le nombre est **lu dans les
+> données**, jamais écrit en dur : il est passé de 27 à **63** le 2026-07-22 et bougera à
+> chaque lot de maîtres instruits. L'appellation « Les
 > presque » est **abandonnée dans les textes publics** ; elle ne subsiste que comme
 > **nom de code interne** (docs, route `/les-presque`, fichiers, exports — non renommés).
 > La page s'ouvre en **deux temps** : (1) entrée éditoriale (titre + texte, deux colonnes

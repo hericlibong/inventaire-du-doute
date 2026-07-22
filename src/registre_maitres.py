@@ -23,7 +23,9 @@ Usage : uv run python src/registre_maitres.py  (~2 min)
 """
 
 import csv
+import json
 import re
+from datetime import datetime, timezone
 
 import pandas as pd
 
@@ -155,6 +157,23 @@ def main() -> None:
     print(f"\n{len(candidats)} formes au registre exhaustif → {chemin2.name}")
     for statut in ("retenu", "écarté", "à instruire"):
         print(f"  {statut:>12} : {compte[statut]}")
+
+    # 3. Résumé du registre pour la page Méthode. Le site s'engage à publier la
+    # liste des candidats examinés et leur état (decisions.md, 2026-07-21 quater,
+    # décision 4) : ces quatre nombres rendent l'engagement vérifiable sans
+    # charger le CSV entier.
+    chemin3 = DOSSIER_EXPORTS / "web" / "registre.json"
+    chemin3.parent.mkdir(parents=True, exist_ok=True)
+    chemin3.write_text(json.dumps({
+        "seuil": 10,
+        "formes_au_seuil": len(candidats),
+        "retenues": compte["retenu"],
+        "ecartees": compte["écarté"],
+        "a_instruire": compte["à instruire"],
+        "maitres_retenus": len(lignes),
+        "date_generation": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+    }, ensure_ascii=False, indent=1), encoding="utf-8")
+    print(f"→ {chemin3.name}")
 
     print(f"\n{'notices':>8}{'cert.':>7}{'copies':>7}{'mus.doute':>10}"
           f"{'mus.prés.':>10}  maître  ·  lot")

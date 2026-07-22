@@ -13,6 +13,12 @@
 	// Chiffres, tous issus des exports (jamais saisis à la main).
 	const nbNoms = data.artistes.artistes.length;
 	const douteDansListe = data.vue.totaux.doute_notices_liste;
+	// Registre des candidats : l'engagement de publier qui a été examiné, et
+	// avec quel résultat (decisions.md 2026-07-21 quater, décision 4).
+	const nbCandidats = data.registre.formes_au_seuil;
+	const nbRetenus = data.registre.retenues;
+	const nbEcartes = data.registre.ecartees;
+	const nbAInstruire = data.registre.a_instruire;
 	const dApres = n.familles.d_apres.notices; // 22 564 (copies « d'après »)
 	const copiesTotal = n.copie; // 22 624 (catégorie copie, dédupliquée)
 	const pct = (v) => (v * 100).toLocaleString('fr-FR', { maximumFractionDigits: 1 });
@@ -104,15 +110,30 @@
 		réunissent {nombre(douteDansListe)} des formulations prudentes.
 	</p>
 	<p>
+		<strong>Cette liste n'est pas close, et elle se vérifie.</strong> Tous les noms qui
+		atteignent le seuil ont été relevés — ils sont {nombre(nbCandidats)} — puis examinés
+		un par un. Chacun porte un état&nbsp;: retenu, écarté avec sa raison, ou
+		<em>encore à examiner</em>. Un nom encore à examiner n'est pas un nom rejeté&nbsp;:
+		c'est un nom dont la vérification n'a pas été faite. Aujourd'hui, {nombre(nbRetenus)}
+		formes d'écriture sont rattachées aux {nombre(nbNoms)} artistes retenus,
+		{nombre(nbEcartes)} sont écartées parce qu'il ne s'agit pas d'une personne
+		— une manufacture, une imprimerie, «&nbsp;anonyme&nbsp;», ou une mention qui ne porte
+		aucun nom d'auteur — et {nombre(nbAInstruire)} restent à examiner. La liste
+		s'agrandira par lots.
+	</p>
+	<p>
 		Rattacher une formule au bon artiste demande de la prudence, car le nom est cherché
 		dans un texte libre. Trois pièges ont été corrigés en chemin&nbsp;: les
 		<strong>fausses correspondances par sous-chaîne</strong> (une œuvre de Serodine ne
 		doit pas être rattachée à Rodin) — réglées en n'acceptant que le mot entier&nbsp;;
 		les mentions de <strong>nationalité</strong> («&nbsp;école allemande&nbsp;») qui ne
 		sont pas un doute sur un artiste et sont écartées&nbsp;; enfin le doute écrit
-		<strong>hors des parenthèses</strong>, qu'il fallait aussi savoir lire. Quelques noms
-		ont été précisés (un seul Fragonard retenu) ou retirés quand ils tombaient sous le
-		seuil une fois séparés d'un homonyme.
+		<strong>hors des parenthèses</strong>, qu'il fallait aussi savoir lire. Le piège le plus
+		coûteux était ailleurs&nbsp;: des <strong>homonymes</strong>. Sous «&nbsp;Michel-Ange&nbsp;»,
+		les musées ont aussi rangé Corneille Michel-Ange, peintre lyonnais du XVII<sup>e</sup>
+		siècle&nbsp;; sous «&nbsp;Raphaël&nbsp;», une cinquantaine de personnes qui le portent
+		comme prénom. Chaque artiste est donc séparé nommément de ses homonymes et de sa
+		famille — le fils du Tintoret n'est pas le Tintoret.
 	</p>
 </section>
 

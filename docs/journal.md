@@ -2,6 +2,39 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-22 (quinquies) — Temps 8 : dire au public ce qu'on a promis
+
+Dernière étape. Elle consistait surtout à retirer un nombre des textes — « 27 » traînait
+encore dans la charte, dans la spec de la dataviz, dans des tâches ouvertes. Un titre qui
+fige un effectif devient faux au premier ajout, et c'est déjà arrivé deux fois : le titre
+public dit maintenant « Explorer les N maîtres », le nombre venant des données.
+
+Ce qui n'a **pas** été touché : les journaux datés. `donnees.md` écrit « Total des 27 :
+2 341 segments → 2 225 références » — c'était vrai ce jour-là, et c'est le récit de la
+fabrique du chiffre. Corriger après coup reviendrait à effacer l'erreur qu'on vient de
+documenter.
+
+Mais le vrai sujet du jour était ailleurs. Le 21 juillet, on avait décidé que « la liste des
+candidats examinés est publiée avec leur nombre de notices, y compris ceux écartés et le
+motif ». Le registre existait depuis le temps 5. **Le site n'en disait rien.** Un engagement
+qui vit dans un fichier CSV que personne ne lit n'est pas un engagement tenu.
+
+La page Méthode le dit maintenant, en français ordinaire : trois cent trente noms atteignent
+le seuil, chacun porte un état, et — la phrase qui compte — *un nom encore à examiner n'est
+pas un nom rejeté*. Soixante-quatorze formes d'écriture rattachées aux soixante-trois
+artistes, vingt-deux écartées parce que ce ne sont pas des personnes, deux cent
+trente-quatre à examiner. La liste s'agrandira par lots, et on le dit.
+
+Deux manques comblés dans la foulée. Les **homonymes** n'étaient nulle part expliqués au
+public, alors que c'est le piège le plus coûteux du projet : sous « Michel-Ange », les musées
+ont aussi rangé Corneille Michel-Ange, peintre lyonnais. Et le fait qu'une œuvre puisse
+concerner **deux artistes** — quand un musée hésite entre deux noms, la notice est sur les
+deux fiches mais ne compte qu'une œuvre.
+
+Une première version de ce paragraphe disait « puis examinés un par un » deux lignes avant
+« 234 restent à examiner ». Deux phrases qui se contredisaient dans le même paragraphe.
+C'est exactement ce que ce chantier apprend à voir.
+
 ## 2026-07-22 (quater) — Temps 7 : trois phrases qui disaient l'inverse des chiffres
 
 Contrôle du front avec la liste élargie. Rien ne s'est cassé — et c'est bien le problème :
