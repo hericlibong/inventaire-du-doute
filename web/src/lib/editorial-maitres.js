@@ -4,7 +4,16 @@
 // voir CLAUDE.md, principes de rédaction). Les chiffres, eux, ne sont jamais
 // stockés ici : ils restent calculés dans le composant depuis artistes.json.
 //
-// Un seul champ :
+// Champ optionnel :
+//   nomCivil — PONT entre le nom courant et celui que portent les notices
+//         (2026-07-22). Quatorze maîtres sont connus sous un surnom qui
+//         n'apparaît jamais tel quel dans Joconde : la fiche titre « Michel-Ange »
+//         quand ses œuvres portent « BUONARROTI Michelangelo (attribué à) ». Sans
+//         passerelle, le lecteur ne relie pas les deux. L'en-tête affiche donc
+//         « Michel-Ange (Michelangelo Buonarroti) », en ordre naturel ; les
+//         notices, elles, gardent le verbatim de Joconde, jamais réécrit.
+//
+// Un autre champ :
 //   bio — LIGNE DE REPÉRAGE affichée sous le nom. Elle sert à situer l'artiste
 //         pour un lecteur qui ne connaît pas l'histoire de l'art. Rien d'autre.
 //
@@ -65,9 +74,8 @@
 // leurs données, Michel-Ange disait « deux fois plus » pour un rapport devenu
 // proche de trois. Dès qu'une phrase NOMME une mention, elle doit la chercher
 // par son code avec `notices('ecole_de')`, jamais par son rang.
-// Les artistes SANS ce champ gardent l'en-tête généré : les 36 maîtres instruits
-// le 2026-07-22 sont dans ce cas, écrire 36 angles demandant une passe
-// rédactionnelle à part (decisions.md 2026-07-21 ter).
+// Depuis le 2026-07-22, les 63 maîtres ont leur en-tête écrit : l'en-tête généré
+// ne sert plus que de filet pour un maître qu'on ajouterait sans l'écrire.
 
 // Espace insécable : les guillemets français et le point-virgule ne doivent pas
 // se retrouver seuls en début de ligne.
@@ -84,6 +92,7 @@ export const EDITORIAL = {
 		}
 	},
 	'Le Primatice': {
+		nomCivil: 'Francesco Primaticcio',
 		bio: 'Peintre et décorateur italien du XVIe siècle, 1504–1570.',
 		graphique: {
 			titre: 'Le Primatice, son école devant sa main',
@@ -111,6 +120,7 @@ export const EDITORIAL = {
 		}
 	},
 	'Michel-Ange': {
+		nomCivil: 'Michelangelo Buonarroti',
 		bio: 'Sculpteur, peintre et architecte italien des XVe et XVIe siècles, 1475–1564.',
 		graphique: {
 			titre: 'Michel-Ange, d’abord son école',
@@ -220,6 +230,7 @@ export const EDITORIAL = {
 		}
 	},
 	'Le Tintoret': {
+		nomCivil: 'Jacopo Robusti',
 		bio: 'Peintre italien du XVIe siècle, 1518–1594.',
 		graphique: {
 			titre: 'Le Tintoret, presque toujours « attribué à »',
@@ -241,6 +252,7 @@ export const EDITORIAL = {
 		}
 	},
 	'Le Corrège': {
+		nomCivil: 'Antonio Allegri',
 		bio: 'Peintre italien du XVIe siècle, 1489–1534.',
 		graphique: {
 			titre: 'Le Corrège, l’école presque partout',
@@ -259,6 +271,7 @@ export const EDITORIAL = {
 		}
 	},
 	'Véronèse': {
+		nomCivil: 'Paolo Caliari',
 		bio: 'Peintre italien du XVIe siècle, 1528–1588.',
 		graphique: {
 			titre: 'Véronèse, l’atelier en tête',
@@ -295,6 +308,7 @@ export const EDITORIAL = {
 		}
 	},
 	'Raphaël': {
+		nomCivil: 'Raffaello Sanzio',
 		bio: 'Peintre et architecte italien du XVIe siècle, 1483–1520.',
 		graphique: {
 			titre: 'Raphaël, plusieurs formes de proximité',
@@ -314,6 +328,7 @@ export const EDITORIAL = {
 		}
 	},
 	Titien: {
+		nomCivil: 'Tiziano Vecellio',
 		bio: 'Peintre italien du XVIe siècle, vers 1488–1576.',
 		graphique: {
 			titre: 'Titien, un partage entre sa main et son atelier',
@@ -338,61 +353,283 @@ export const EDITORIAL = {
 	//     d'autorité donnent 1634, qui est retenu.
 	// Adolph Menzel est le seul dont la base ne porte AUCUNE date.
 	//
-	// Ces artistes n'ont PAS d'en-tête de graphique écrit à la main : ils gardent
-	// l'en-tête généré, comme le prévoit la règle ci-dessus. Écrire 36 angles
-	// demande une passe rédactionnelle à part.
-	'Le Guerchin': { bio: 'Peintre italien du XVIIe siècle, 1591–1666.' },
-	Bouchardon: { bio: 'Sculpteur français du XVIIIe siècle, 1698–1762.' },
-	'Jules Romain': { bio: 'Peintre et architecte italien du XVIe siècle, vers 1499–1546.' },
-	'Ludovico Carracci': { bio: 'Peintre italien des XVIe et XVIIe siècles, 1555–1619.' },
-	'David Téniers': { bio: 'Peintre flamand du XVIIe siècle, 1610–1690.' },
-	'François Gérard': { bio: 'Peintre français des XVIIIe et XIXe siècles, 1770–1837.' },
-	'Le Parmesan': { bio: 'Peintre italien du XVIe siècle, 1503–1540.' },
-	'Perino del Vaga': { bio: 'Peintre italien du XVIe siècle, 1501–1547.' },
-	'Adolph Menzel': { bio: 'Peintre et graveur allemand du XIXe siècle, 1815–1905.' },
-	'Baccio Bandinelli': { bio: 'Sculpteur italien du XVIe siècle, 1493–1560.' },
+	// Leurs en-têtes de graphique ont été écrits le 2026-07-22, après les portraits :
+	// même gabarit que les 27 (titre = l'angle, sous-titre = la preuve chiffrée),
+	// et mention toujours nommée par son code, jamais par son rang.
+	'Le Guerchin': { nomCivil: 'Giovanni Francesco Barbieri',
+		bio: 'Peintre italien du XVIIe siècle, 1591–1666.',
+		graphique: {
+			titre: 'Le Guerchin, l’école et la main à égalité',
+			sousTitre: ({ notices }) =>
+				`${notices('ecole_de')} œuvres sont dites «${NB}de son école${NB}» et ${notices('attribue')} lui sont attribuées${NB}: trois notices séparent les deux formules.`
+		}
+	},
+	Bouchardon: { bio: 'Sculpteur français du XVIIIe siècle, 1698–1762.',
+		graphique: {
+			titre: 'Bouchardon, sa main, et son école derrière',
+			sousTitre: ({ total, musees, notices }) =>
+				`${notices('attribue')} des ${total} œuvres concernées lui sont attribuées, ${notices('ecole_de')} renvoient à son école${NB}; ${musees} musées les conservent toutes.`
+		}
+	},
+	'Jules Romain': { nomCivil: 'Giulio Pippi',
+		bio: 'Peintre et architecte italien du XVIe siècle, vers 1499–1546.',
+		graphique: {
+			titre: 'Jules Romain, sa main et son école côte à côte',
+			sousTitre: ({ notices }) =>
+				`${notices('attribue')} œuvres lui sont attribuées, ${notices('ecole_de')} sont dites «${NB}de son école${NB}»${NB}: les musées n’ont pas tranché.`
+		}
+	},
+	'Ludovico Carracci': { bio: 'Peintre italien des XVIe et XVIIe siècles, 1555–1619.',
+		graphique: {
+			titre: 'Ludovico Carracci, presque tout sur son nom',
+			sousTitre: ({ total, notices }) =>
+				`${notices('attribue')} des ${total} œuvres concernées portent la mention «${NB}attribué à${NB}»${NB}; aucune autre formule n’en réunit plus de deux.`
+		}
+	},
+	'David Téniers': { bio: 'Peintre flamand du XVIIe siècle, 1610–1690.',
+		graphique: {
+			titre: 'David Téniers, dispersé et jamais tranché',
+			sousTitre: ({ total, musees }) =>
+				`Ses ${total} œuvres concernées se répartissent dans ${musees} musées, et la formule la plus fréquente n’en couvre qu’un tiers.`
+		}
+	},
+	'François Gérard': { bio: 'Peintre français des XVIIIe et XIXe siècles, 1770–1837.',
+		graphique: {
+			titre: 'François Gérard, sa main puis son atelier',
+			sousTitre: ({ total, notices }) =>
+				`${notices('attribue')} des ${total} œuvres concernées lui sont attribuées${NB}; ${notices('atelier_de')} sortent de son atelier.`
+		}
+	},
+	'Le Parmesan': { nomCivil: 'Francesco Mazzuola',
+		bio: 'Peintre italien du XVIe siècle, 1503–1540.',
+		graphique: {
+			titre: 'Le Parmesan, tout entier dans un seul musée',
+			sousTitre: ({ total, notices }) =>
+				`Les ${total} œuvres concernées sont conservées par un unique établissement${NB}; ${notices('attribue')} lui sont attribuées, ${notices('ecole_de')} renvoient à son école.`
+		}
+	},
+	'Perino del Vaga': { nomCivil: 'Piero Bonaccorsi',
+		bio: 'Peintre italien du XVIe siècle, 1501–1547.',
+		graphique: {
+			titre: 'Perino del Vaga, de sa main à son atelier',
+			sousTitre: ({ notices }) =>
+				`${notices('attribue')} œuvres lui sont attribuées, ${notices('atelier_de')} à son atelier et ${notices('ecole_de')} à son école${NB}: la distance se creuse par degrés.`
+		}
+	},
+	'Adolph Menzel': { bio: 'Peintre et graveur allemand du XIXe siècle, 1815–1905.',
+		graphique: {
+			titre: 'Adolph Menzel, une seule formule, un seul musée',
+			sousTitre: ({ total }) =>
+				`Les ${total} œuvres concernées sont toutes dites «${NB}de son école${NB}», et un même établissement les conserve.`
+		}
+	},
+	'Baccio Bandinelli': { bio: 'Sculpteur italien du XVIe siècle, 1493–1560.',
+		graphique: {
+			titre: 'Baccio Bandinelli, l’école devant la main',
+			sousTitre: ({ notices }) =>
+				`${notices('ecole_de')} œuvres sont dites «${NB}de son école${NB}», ${notices('attribue')} lui sont attribuées — toutes au même endroit.`
+		}
+	},
 	'Antonio Tempesta': {
-		bio: 'Peintre et graveur italien des XVIe et XVIIe siècles, 1555–1630.'
+		bio: 'Peintre et graveur italien des XVIe et XVIIe siècles, 1555–1630.',
+		graphique: {
+			titre: 'Antonio Tempesta, une seule réserve revient',
+			sousTitre: ({ total, notices }) =>
+				`${notices('attribue')} des ${total} œuvres concernées portent la mention «${NB}attribué à${NB}»${NB}; les autres formules n’apparaissent qu’une fois chacune.`
+		}
 	},
-	'Luca Giordano': { bio: 'Peintre italien du XVIIe siècle, 1634–1705.' },
-	'Salvator Rosa': { bio: 'Peintre italien du XVIIe siècle, 1615–1673.' },
-	'Federico Barocci': { bio: 'Peintre italien du XVIe siècle, vers 1535–1612.' },
-	'Carlo Maratti': { bio: 'Peintre italien du XVIIe siècle, 1625–1713.' },
-	'Federico Zuccaro': { bio: 'Peintre italien du XVIe siècle, vers 1540–1609.' },
-	'Joseph Vernet': { bio: 'Peintre français du XVIIIe siècle, 1714–1789.' },
-	'Luca Cambiaso': { bio: 'Peintre italien du XVIe siècle, 1527–1585.' },
-	'Polidoro Caldara': { bio: 'Peintre italien du XVIe siècle, vers 1495–1543.' },
-	'Gaspard Dughet': { bio: 'Peintre français du XVIIe siècle, vers 1615–1675.' },
+	'Luca Giordano': { bio: 'Peintre italien du XVIIe siècle, 1634–1705.',
+		graphique: {
+			titre: 'Luca Giordano, entre sa main et son atelier',
+			sousTitre: ({ musees, notices }) =>
+				`${notices('attribue')} œuvres lui sont attribuées, ${notices('atelier_de')} à son atelier${NB}; elles circulent dans ${musees} musées.`
+		}
+	},
+	'Salvator Rosa': { bio: 'Peintre italien du XVIIe siècle, 1615–1673.',
+		graphique: {
+			titre: 'Salvator Rosa, un style qui a fait suite',
+			sousTitre: ({ notices }) =>
+				`${notices('ecole_de')} œuvres sont dites «${NB}de son école${NB}» et ${notices('suiveur_de') + notices('maniere_de') + notices('genre_de')} ne retiennent que sa façon de peindre${NB}; ${notices('attribue')} lui sont attribuées directement.`
+		}
+	},
+	'Federico Barocci': { bio: 'Peintre italien du XVIe siècle, vers 1535–1612.',
+		graphique: {
+			titre: 'Federico Barocci, deux tiers sur son nom',
+			sousTitre: ({ total, notices }) =>
+				`${notices('attribue')} des ${total} œuvres concernées lui sont attribuées, ${notices('ecole_de')} renvoient à son école.`
+		}
+	},
+	'Carlo Maratti': { bio: 'Peintre italien du XVIIe siècle, 1625–1713.',
+		graphique: {
+			titre: 'Carlo Maratti, son atelier signe pour lui',
+			sousTitre: ({ total, notices }) =>
+				`${notices('atelier_de')} des ${total} œuvres concernées sortent de son atelier${NB}; ${notices('attribue')} seulement lui sont attribuées directement.`
+		}
+	},
+	'Federico Zuccaro': { bio: 'Peintre italien du XVIe siècle, vers 1540–1609.',
+		graphique: {
+			titre: 'Federico Zuccaro, son école efface sa main',
+			sousTitre: ({ total, notices }) =>
+				`${notices('ecole_de')} des ${total} œuvres concernées sont dites «${NB}de son école${NB}»${NB}; ${notices('attribue')} seulement portent son nom sans détour.`
+		}
+	},
+	'Joseph Vernet': { bio: 'Peintre français du XVIIIe siècle, 1714–1789.',
+		graphique: {
+			titre: 'Joseph Vernet, sa main, et peu d’autre chose',
+			sousTitre: ({ total, musees, notices }) =>
+				`${notices('attribue')} des ${total} œuvres concernées lui sont attribuées, dans ${musees} musées différents.`
+		}
+	},
+	'Luca Cambiaso': { bio: 'Peintre italien du XVIe siècle, 1527–1585.',
+		graphique: {
+			titre: 'Luca Cambiaso, la réserve la plus légère',
+			sousTitre: ({ total, notices }) =>
+				`${notices('attribue')} des ${total} œuvres concernées portent la mention «${NB}attribué à${NB}», la plus proche de sa main${NB}; aucune autre n’en réunit plus de trois.`
+		}
+	},
+	'Polidoro Caldara': { bio: 'Peintre italien du XVIe siècle, vers 1495–1543.',
+		graphique: {
+			titre: 'Polidoro Caldara, sa main et son entourage',
+			sousTitre: ({ musees, notices }) =>
+				`${notices('attribue')} œuvres lui sont attribuées, ${notices('entourage_de')} renvoient à son entourage${NB}; ${musees} musées les conservent.`
+		}
+	},
+	'Gaspard Dughet': { bio: 'Peintre français du XVIIe siècle, vers 1615–1675.',
+		graphique: {
+			titre: 'Gaspard Dughet, autant son style que sa main',
+			sousTitre: ({ notices }) =>
+				`${notices('attribue')} œuvres lui sont attribuées, mais ${notices('maniere_de') + notices('genre_de')} ne retiennent que sa façon de peindre et ${notices('ecole_de')} son école.`
+		}
+	},
 	'Corneille de Lyon': {
-		bio: 'Peintre néerlandais installé en France au XVIe siècle, vers 1510–1575.'
+		bio: 'Peintre néerlandais installé en France au XVIe siècle, vers 1510–1575.',
+		graphique: {
+			titre: 'Corneille de Lyon, un atelier plus qu’un homme',
+			sousTitre: ({ total, notices }) =>
+				`${notices('atelier_de')} des ${total} œuvres concernées sortent de son atelier${NB}; ${notices('attribue')} seulement lui sont attribuées.`
+		}
 	},
-	'Francesco Vanni': { bio: 'Peintre italien des XVIe et XVIIe siècles, vers 1565–1610.' },
+	'Francesco Vanni': { bio: 'Peintre italien des XVIe et XVIIe siècles, vers 1565–1610.',
+		graphique: {
+			titre: 'Francesco Vanni, la même réserve d’un bout à l’autre',
+			sousTitre: ({ total, notices }) =>
+				`${notices('attribue')} des ${total} œuvres concernées portent la mention «${NB}attribué à${NB}»${NB}; ${total - notices('attribue')} seulement portent une autre formule.`
+		}
+	},
 	'Domenico Campagnola': {
-		bio: 'Peintre et graveur italien du XVIe siècle, vers 1500–1564.'
+		bio: 'Peintre et graveur italien du XVIe siècle, vers 1500–1564.',
+		graphique: {
+			titre: 'Domenico Campagnola, son nom presque partout',
+			sousTitre: ({ total, notices }) =>
+				`${notices('attribue')} des ${total} œuvres concernées lui sont attribuées${NB}; les quelques autres se répartissent entre trois formules.`
+		}
 	},
 	'Philippe de Champaigne': {
-		bio: 'Peintre flamand installé en France au XVIIe siècle, 1602–1674.'
+		bio: 'Peintre flamand installé en France au XVIIe siècle, 1602–1674.',
+		graphique: {
+			titre: 'Philippe de Champaigne, la moitié sur son nom',
+			sousTitre: ({ total, musees, notices }) =>
+				`${notices('attribue')} des ${total} œuvres concernées lui sont attribuées${NB}; les autres renvoient à son atelier, son école ou son entourage, dans ${musees} musées.`
+		}
 	},
-	'Laurent de La Hyre': { bio: 'Peintre français du XVIIe siècle, 1606–1656.' },
-	'Giorgio Vasari': { bio: 'Peintre et architecte italien du XVIe siècle, 1511–1574.' },
-	'Sébastien Bourdon': { bio: 'Peintre français du XVIIe siècle, 1616–1671.' },
-	'Pier Francesco Mola': { bio: 'Peintre italien du XVIIe siècle, 1612–1666.' },
-	'Jean-Baptiste Oudry': { bio: 'Peintre français du XVIIIe siècle, 1686–1755.' },
+	'Laurent de La Hyre': { bio: 'Peintre français du XVIIe siècle, 1606–1656.',
+		graphique: {
+			titre: 'Laurent de La Hyre, une réserve unique ou presque',
+			sousTitre: ({ total, notices }) =>
+				`${notices('attribue')} des ${total} œuvres concernées portent la mention «${NB}attribué à${NB}»${NB}; ${notices('ecole_de') + notices('atelier_de')} seulement renvoient à son école ou à son atelier.`
+		}
+	},
+	'Giorgio Vasari': { bio: 'Peintre et architecte italien du XVIe siècle, 1511–1574.',
+		graphique: {
+			titre: 'Giorgio Vasari, son école passe devant',
+			sousTitre: ({ total, notices }) =>
+				`${notices('ecole_de')} des ${total} œuvres concernées sont dites «${NB}de son école${NB}», ${notices('attribue')} lui sont attribuées.`
+		}
+	},
+	'Sébastien Bourdon': { bio: 'Peintre français du XVIIe siècle, 1616–1671.',
+		graphique: {
+			titre: 'Sébastien Bourdon, sa main, dispersée',
+			sousTitre: ({ total, musees, notices }) =>
+				`${notices('attribue')} des ${total} œuvres concernées lui sont attribuées, réparties dans ${musees} musées.`
+		}
+	},
+	'Pier Francesco Mola': { bio: 'Peintre italien du XVIIe siècle, 1612–1666.',
+		graphique: {
+			titre: 'Pier Francesco Mola, peu d’œuvres, peu d’écarts',
+			sousTitre: ({ total, notices }) =>
+				`${notices('attribue')} des ${total} œuvres concernées lui sont attribuées${NB}; ${total - notices('attribue')} seulement portent une formule plus distante.`
+		}
+	},
+	'Jean-Baptiste Oudry': { bio: 'Peintre français du XVIIIe siècle, 1686–1755.',
+		graphique: {
+			titre: 'Jean-Baptiste Oudry, la même réserve partout',
+			sousTitre: ({ total, musees, notices }) =>
+				`${notices('attribue')} des ${total} œuvres concernées portent la mention «${NB}attribué à${NB}», dans ${musees} musées différents.`
+		}
+	},
 	'Louis Léopold Boilly': {
-		bio: 'Peintre français des XVIIIe et XIXe siècles, 1761–1845.'
+		bio: 'Peintre français des XVIIIe et XIXe siècles, 1761–1845.',
+		graphique: {
+			titre: 'Louis Léopold Boilly, jamais deux fois au même endroit',
+			sousTitre: ({ total, musees, notices }) =>
+				`Ses ${total} œuvres concernées se répartissent dans ${musees} musées${NB}; ${notices('attribue')} portent la mention «${NB}attribué à${NB}».`
+		}
 	},
 	'Nicolas de Largillière': {
-		bio: 'Peintre français des XVIIe et XVIIIe siècles, 1656–1746.'
+		bio: 'Peintre français des XVIIe et XVIIIe siècles, 1656–1746.',
+		graphique: {
+			titre: 'Nicolas de Largillière, aucun musée en tête',
+			sousTitre: ({ total, musees }) =>
+				`Ses ${total} œuvres concernées se dispersent dans ${musees} musées, sans qu’aucun n’en réunisse plus de deux.`
+		}
 	},
-	'Paul Bril': { bio: 'Peintre flamand des XVIe et XVIIe siècles, vers 1554–1626.' },
+	'Paul Bril': { bio: 'Peintre flamand des XVIe et XVIIe siècles, vers 1554–1626.',
+		graphique: {
+			titre: 'Paul Bril, sa main et son style à parts égales',
+			sousTitre: ({ notices }) =>
+				`${notices('attribue')} œuvres lui sont attribuées et autant ne retiennent que sa manière${NB}; aucune formule ne l’emporte.`
+		}
+	},
 	'Albrecht Dürer': {
-		bio: 'Peintre et graveur allemand des XVe et XVIe siècles, 1471–1528.'
+		bio: 'Peintre et graveur allemand des XVe et XVIe siècles, 1471–1528.',
+		graphique: {
+			titre: 'Albrecht Dürer, plus son école que lui',
+			sousTitre: ({ total, notices }) =>
+				`${notices('ecole_de')} des ${total} œuvres concernées sont dites «${NB}de son école${NB}», ${notices('attribue')} lui sont attribuées.`
+		}
 	},
-	'Claude Lorrain': { bio: 'Peintre français du XVIIe siècle, 1600–1682.' },
-	'Le Pérugin': { bio: 'Peintre italien des XVe et XVIe siècles, vers 1450–1523.' },
-	Botticelli: { bio: 'Peintre italien du XVe siècle, vers 1445–1510.' }
+	'Claude Lorrain': { nomCivil: 'Claude Gellée',
+		bio: 'Peintre français du XVIIe siècle, 1600–1682.',
+		graphique: {
+			titre: 'Claude Lorrain, un ensemble court et net',
+			sousTitre: ({ total, notices }) =>
+				`${notices('attribue')} des ${total} œuvres concernées lui sont attribuées${NB}; ${notices('ecole_de')} renvoient à son école.`
+		}
+	},
+	'Le Pérugin': { nomCivil: 'Pietro Vannucci',
+		bio: 'Peintre italien des XVe et XVIe siècles, vers 1450–1523.',
+		graphique: {
+			titre: 'Le Pérugin, son école et son atelier',
+			sousTitre: ({ total, notices }) =>
+				`${notices('ecole_de')} des ${total} œuvres concernées sont dites «${NB}de son école${NB}», ${notices('atelier_de')} renvoient à son atelier${NB}; ${notices('attribue')} seulement lui sont attribuées.`
+		}
+	},
+	Botticelli: { nomCivil: 'Alessandro Filipepi',
+		bio: 'Peintre italien du XVe siècle, vers 1445–1510.',
+		graphique: {
+			titre: 'Botticelli, son école, presque jamais lui',
+			sousTitre: ({ total, notices }) =>
+				`${notices('ecole_de')} des ${total} œuvres concernées sont dites «${NB}de son école${NB}», ${notices('atelier_de')} renvoient à son atelier${NB}; son nom seul n’est presque jamais avancé.`
+		}
+	}
 };
 
 export function bioMaitre(nom) {
 	return EDITORIAL[nom]?.bio ?? '';
+}
+
+// Nom d'état civil, quand le maître est connu sous un surnom. Sert de pont avec
+// le nom que portent ses notices Joconde ; vide pour les autres.
+export function nomCivilMaitre(nom) {
+	return EDITORIAL[nom]?.nomCivil ?? '';
 }

@@ -19,7 +19,7 @@
 	import PortraitMaitre from '$lib/PortraitMaitre.svelte';
 	import { nombre } from '$lib/joconde.js';
 	import { FAMILLE_PUBLIC, ORDRE_FAMILLES } from '$lib/familles-public.js';
-	import { bioMaitre } from '$lib/editorial-maitres.js';
+	import { bioMaitre, nomCivilMaitre } from '$lib/editorial-maitres.js';
 
 	let { maitre, portrait } = $props();
 
@@ -64,7 +64,13 @@
 	</div>
 
 	<div class="bandeau-texte">
-		<h2>{maitre.nom}</h2>
+		<!-- Pont de nom (2026-07-22) : le titre porte le nom courant, suivi du nom
+		     d'état civil quand il diffère — c'est celui que le lecteur retrouvera,
+		     à l'envers, sur les notices de l'onglet « Œuvres »
+		     (« BUONARROTI Michelangelo (attribué à) »). -->
+		<h2>{maitre.nom}{#if nomCivilMaitre(maitre.nom)}<span class="nom-civil"
+				>({nomCivilMaitre(maitre.nom)})</span
+			>{/if}</h2>
 		{#if bioMaitre(maitre.nom)}
 			<p class="bio">{bioMaitre(maitre.nom)}</p>
 		{/if}
@@ -140,6 +146,18 @@
 	}
 
 	/* Ligne d'identité (qui, époque) quand elle est écrite — editorial-maitres.js. */
+	/* Le nom d'état civil accompagne le titre sans le concurrencer : même ligne,
+	   corps plus petit, encre atténuée. */
+	.nom-civil {
+		/* l'espace vient d'ici : Svelte supprime celui du balisage */
+		margin-left: 0.35em;
+		font-size: 0.5em;
+		font-weight: 400;
+		letter-spacing: 0.01em;
+		color: var(--couleur-encre-douce, #6b6459);
+		white-space: nowrap;
+	}
+
 	.bio {
 		margin: var(--espace-1) 0 0;
 		color: var(--couleur-encre-douce);

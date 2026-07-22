@@ -2,6 +2,40 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-22 (septies) — Dire le même homme sous ses deux noms
+
+Deux choses ce matin, et la première vient d'une remarque juste : sur la fiche de
+Michel-Ange, le titre dit « Michel-Ange » pendant que l'onglet d'à côté montre des notices
+qui commencent par « BUONARROTI Michelangelo ». Rien ne relie les deux. Un lecteur peut
+croire à un autre artiste — ou pire, prendre ce nom pour le titre d'une œuvre.
+
+L'en-tête porte maintenant les deux : **Michel-Ange (Michelangelo Buonarroti)**, le second
+plus petit, sur la même ligne. Les notices, elles, ne changent pas d'un caractère : c'est ce
+que le musée a écrit, et c'est ce qu'on retrouvera sur POP. Le pont est éditorial, la donnée
+reste intacte.
+
+La demande portait sur Michel-Ange. Le piège est le même pour treize autres : Le Guerchin
+qui s'appelle Barbieri, Jules Romain qui s'appelle Pippi, Le Parmesan qui s'appelle
+Mazzuola, Le Pérugin qui s'appelle Vannucci, Claude Lorrain qui s'appelle Gellée, Botticelli
+qui s'appelle Filipepi. Quatorze en tout. Corriger Michel-Ange seul aurait laissé le même
+trou treize fois.
+
+Ensuite, les trente-six en-têtes. Ils affichaient jusqu'ici la phrase passe-partout —
+« Comment les musées rattachent ces œuvres à X ». Chacun a maintenant son angle. Et à les
+écrire, on voit des choses qu'aucun tableau ne montrait : **Adolph Menzel**, dont les
+quarante-sept œuvres concernées sont *toutes* dites « de son école », dans un seul musée —
+une formule, un lieu. **Carlo Maratti**, dont l'atelier signe pour lui trente-sept fois sur
+quarante-cinq. **Nicolas de Largillière**, éparpillé dans quinze musées sans qu'aucun n'en
+garde plus de deux.
+
+Tous ces sous-titres nomment leur mention par son code, jamais par son rang — la leçon de la
+semaine, apprise en trouvant trois phrases qui disaient l'inverse de leurs chiffres. Ceux-là
+ne pourront pas mentir au prochain lot.
+
+Six formulations ont sauté à la relecture. Deux ne se comprenaient qu'avec leur titre : « 37
+des 45 œuvres concernées **en sortent** » — de quoi ? Une disait « 15 seulement » juste après
+avoir cité 10. Et une reprenait sans le savoir l'angle de Guido Reni.
+
 ## 2026-07-22 (sexies) — Trente-trois visages, et sept désaccords sur des dates
 
 Plus de la moitié des fiches affichaient « Pas de portrait fiable disponible ». Trente-trois

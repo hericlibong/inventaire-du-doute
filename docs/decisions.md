@@ -2,6 +2,58 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-22 (septies) — Les 36 angles écrits, et un pont entre deux noms
+
+### Le pont de nom, demandé pour Michel-Ange, appliqué à quatorze
+
+**Problème posé par l'utilisateur** : la fiche titre « Michel-Ange » quand ses œuvres, dans
+l'onglet voisin, portent « BUONARROTI Michelangelo (attribué à) ». Rien ne relie les deux, et
+le lecteur peut prendre le second pour un autre artiste — ou pour le titre d'une œuvre.
+
+**Solution** : l'en-tête affiche le nom courant suivi du nom d'état civil, en ordre naturel —
+**Michel-Ange (Michelangelo Buonarroti)** — dans un corps plus petit, sur la même ligne. Les
+notices, elles, gardent le **verbatim de Joconde**, jamais réécrit : c'est ce que le musée a
+écrit, et c'est ce que le lecteur retrouvera sur POP.
+
+La demande portait sur Michel-Ange ; le défaut est le même pour **quatorze** maîtres connus
+sous un surnom qui n'apparaît jamais tel quel dans la base : Le Primatice (Francesco
+Primaticcio), Le Tintoret (Jacopo Robusti), Le Corrège (Antonio Allegri), Véronèse (Paolo
+Caliari), Titien (Tiziano Vecellio), Raphaël (Raffaello Sanzio), Le Guerchin (Giovanni
+Francesco Barbieri), Jules Romain (Giulio Pippi), Le Parmesan (Francesco Mazzuola), Perino
+del Vaga (Piero Bonaccorsi), Le Pérugin (Pietro Vannucci), Claude Lorrain (Claude Gellée),
+Botticelli (Alessandro Filipepi). Traiter Michel-Ange seul aurait laissé le même piège
+treize fois. Les maîtres dont le titre est déjà le nom porté par les notices n'ont pas de
+pont : il n'apprendrait rien.
+
+Champ optionnel `nomCivil` dans la couche éditoriale — donc jamais une donnée Joconde.
+
+### Les 36 en-têtes de graphique
+
+Les 36 maîtres du lot gardaient l'en-tête généré : un titre passe-partout (« Comment les
+musées rattachent ces œuvres à X ») et une phrase de lecture. Ils ont maintenant leur angle
+propre, au même gabarit que les 27 — titre de 4 à 9 mots portant l'angle, sous-titre
+apportant la preuve chiffrée sans reprendre les mots du titre.
+
+**Règle du temps 7 appliquée d'emblée** : chaque mention nommée est cherchée **par son code**
+(`notices('ecole_de')`), jamais par son rang. Aucun de ces 36 sous-titres ne pourra mentir si
+le classement bascule au prochain lot.
+
+Ce que les angles racontent, et qui ne se voyait pas :
+
+- **Adolph Menzel** : ses 47 œuvres concernées sont *toutes* dites « de son école », dans un
+  seul musée. Une formule, un lieu.
+- **Le Parmesan** : 63 œuvres, un unique établissement.
+- **Carlo Maratti** : 37 des 45 sortent de son atelier, 7 seulement lui sont attribuées —
+  « son atelier signe pour lui ».
+- **Federico Zuccaro** : 30 sur 37 « de son école », 3 portent son nom sans détour.
+- **Nicolas de Largillière** : 23 œuvres dans 15 musées, aucun n'en réunissant plus de deux.
+- **Paul Bril** : autant d'œuvres attribuées que d'œuvres ne retenant que sa manière.
+
+Six formulations ont été resserrées à la relecture : deux ne se comprenaient qu'avec le titre
+(« en sortent » sans dire de quoi), une disait « seulement » d'un nombre plus grand que celui
+qui la précédait, une reprenait l'angle d'un autre maître (« deux lectures », déjà celui de
+Guido Reni).
+
 ## 2026-07-22 (sexies) — Les portraits des 36 maîtres
 
 Plus de la moitié des fiches affichaient « Pas de portrait fiable disponible ». **33 des 36**

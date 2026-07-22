@@ -76,7 +76,10 @@ Ordre imposé — chaque ⏸ est un point d'arrêt :
       seuil « vingt notices » → « dix », effectifs et libellés « 27 » rendus dynamiques,
       `nb_maitres` publié dans `vue_ensemble.json` ; les deux panneaux de « Comprendre les
       mentions » comptent désormais des **notices** (3 668), plus des appartenances.
-      Restent hors périmètre : style, portraits des 36, angles écrits des 36
+      Restent hors périmètre : style. **Portraits faits le 2026-07-22** (60/63) ;
+      **angles écrits des 36 faits le 2026-07-22**, avec un **pont de nom** dans l'en-tête
+      pour les 14 maîtres connus sous un surnom — « Michel-Ange (Michelangelo Buonarroti) »,
+      les notices gardant le verbatim Joconde
 - [x] **8. Révision des textes publics** annonçant « 27 » ou « au moins vingt notices ».
       **Fait le 2026-07-22** (decisions.md, quinquies) : `charte-graphique.md` (le titre
       public ne fige plus d'effectif), `dataviz-les-presque.md` (sélection, effectif, et
