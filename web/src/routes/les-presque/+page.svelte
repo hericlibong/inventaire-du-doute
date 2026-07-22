@@ -5,6 +5,7 @@
 	import BandeauMaitre from '$lib/BandeauMaitre.svelte';
 	import Repertoire from '$lib/Repertoire.svelte';
 	import { base } from '$app/paths';
+	import { enLettresCap } from '$lib/joconde.js';
 	// Archive : la piste « galaxie » est conservée dans $lib/GalaxieMaitre.svelte
 	// (abandonnée dans cette vue, decisions.md 2026-07-08), non importée ici.
 
@@ -20,21 +21,10 @@
 	const nbMaitres = artistes.length;
 
 	// Le nombre s'écrit en toutes lettres dans le corps du texte (CLAUDE.md : écrire
-	// les chiffres en français quand le récit prime). Table courte autour de la valeur
-	// réelle, repli sur le chiffre si la liste changeait beaucoup.
-	const EN_LETTRES = {
-		24: 'Vingt-quatre',
-		25: 'Vingt-cinq',
-		26: 'Vingt-six',
-		27: 'Vingt-sept',
-		28: 'Vingt-huit',
-		29: 'Vingt-neuf',
-		30: 'Trente'
-	};
-	const nbMaitresTexte = EN_LETTRES[nbMaitres] ?? String(nbMaitres);
-
-	// Plafond COMMUN de l'axe Y du nuage (≈ 240). Calculé ici, pas en dur.
-	const plafond = Math.max(...artistes.flatMap((a) => a.familles.map((f) => f.notices)));
+	// les chiffres en français quand le récit prime). La table figée d'ici (24 à 30)
+	// est tombée en panne au passage à soixante-trois maîtres : la conversion vit
+	// maintenant dans joconde.js et suit la liste, quelle que soit sa taille.
+	const nbMaitresTexte = enLettresCap(nbMaitres);
 
 	// Le folio « Nº 4 / 27 · cote M5031 » a été retiré (2026-07-20) : ni le rang dans
 	// la liste ni la cote du musée principal ne disent quoi que ce soit du profil.
@@ -77,7 +67,7 @@
 				comparés.
 			</p>
 			<p class="renvoi">
-				<a href="{base}/methode#les-27">Pourquoi ces {nbMaitres} artistes&nbsp;?&nbsp;→</a>
+				<a href="{base}/methode#les-maitres">Pourquoi ces {nbMaitres} artistes&nbsp;?&nbsp;→</a>
 			</p>
 			<p class="prudence">
 				Le projet reprend les formulations publiées par les musées&nbsp;; il ne réattribue
@@ -116,7 +106,7 @@
 
 				<div class="vue" class:vue-profil={vue === 'profil'}>
 					{#if vue === 'profil'}
-						<NuageFamilles {maitre} {plafond} />
+						<NuageFamilles {maitre} />
 					{:else if vue === 'oeuvres'}
 						<OeuvresMaitre {maitre} />
 					{:else}

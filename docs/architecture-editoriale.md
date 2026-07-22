@@ -60,7 +60,7 @@ Contenu (exemple, à affiner) :
 > **L'inventaire du doute — Les presque**
 > Une exploration des œuvres que les musées rapprochent d'un grand maître sans les
 > lui attribuer tout à fait.
-> **Explorer les 27 maîtres →**
+> **Explorer les 63 maîtres →**
 >
 > phrase secondaire : « attribué à », « atelier de », « école de », « manière
 > de » : les mots changent à mesure que l'œuvre s'éloigne de la main du maître.
@@ -76,7 +76,7 @@ Contenu (exemple, à affiner) :
 
 Séparer nettement **présenter le dossier** et **fournir l'outil**. En-tête court :
 > **Explorer les maîtres** — Vingt-sept noms pour lesquels Joconde conserve au
-> moins vingt œuvres accompagnées d'une formule de réserve.
+> moins dix œuvres accompagnées d'une formule de réserve.
 
 Puis une structure **maître–détail en deux zones franches** (voir §4).
 
@@ -87,7 +87,8 @@ muséal** (les 8 formules) et à sa lecture. Il absorbe :
 - ce qui est aujourd'hui une **longue légende permanente** sous la liste (elle
   n'a plus à vivre collée au répertoire) ;
 - la **« Vue d'ensemble »** : le contraste chiffré déjà prêt (`vue_ensemble.json`)
-  — dans l'ensemble de Joconde « attribué à » domine ; dans les 27, école /
+  — « attribué à » domine partout et reste la mention la plus fréquente chez les
+  maîtres retenus, mais école /
   atelier / manière prennent le dessus. **Barres, pas d'anneau** (familles non
   partitionnées, acté 2026-07-15).
 - Organisé selon les **trois territoires** de la distance à la main (voir §5) :
@@ -99,7 +100,7 @@ Aujourd'hui la méthode est **éparpillée** (intro, encadré, source, nav, pied
 regrouper :
 - **une seule** phrase de prudence reste visible ailleurs : « Le projet reprend
   les formulations publiées par les musées ; il ne réattribue aucune œuvre. » ;
-- tout le reste (jeu de données, critère des 27 = ≥ 20 notices de doute hors
+- tout le reste (jeu de données, critère de la liste = ≥ 10 notices de doute hors
   copie après désambiguïsation — pas un panthéon, monoculture de Nice, copies à
   part, ambiguïtés de noms, limites de Joconde, droits des images, ce que
   l'application ne permet pas de conclure) vit dans la page Méthode.

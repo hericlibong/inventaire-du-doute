@@ -1,7 +1,7 @@
 <script>
 	// Répertoire — la colonne de gauche d'« Explorer les maîtres » (architecture-
 	// editoriale.md §4, charte §5) : un OUTIL DE NAVIGATION, séparé du profil du
-	// maître (à droite). Recherche + tri + liste des 27 + microprofils colorés. Ne
+	// maître (à droite). Recherche + tri + liste des maîtres + microprofils colorés. Ne
 	// partage plus sa largeur avec une légende détaillée : la légende des mentions
 	// rejoindra « Comprendre les mentions » (retirée d'ici le 2026-07-17).
 	import BarreFamilles from '$lib/BarreFamilles.svelte';
@@ -11,7 +11,7 @@
 	// choisit, la scène du maître affiche.
 	let { artistes, selection = $bindable() } = $props();
 
-	// Recherche par nom (filtre local sur les 27 ; moteur sur toute la base = plus
+	// Recherche par nom (filtre local sur la liste ; moteur sur toute la base = plus
 	// tard, roadmap P3-T1).
 	let recherche = $state('');
 

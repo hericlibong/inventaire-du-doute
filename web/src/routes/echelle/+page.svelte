@@ -8,7 +8,7 @@
 	// retravaillés ; plus de boîte grise.
 	import { FAMILLE_PUBLIC } from '$lib/familles-public.js';
 	import { TERRITOIRES } from '$lib/territoires.js';
-	import { nombre } from '$lib/joconde.js';
+	import { nombre, enLettres } from '$lib/joconde.js';
 	import BarresMentions from '$lib/BarresMentions.svelte';
 	import Spectre from '$lib/Spectre.svelte';
 
@@ -17,14 +17,21 @@
 
 	// Comptages par mention pour chaque série (objet code → nombre).
 	const valGlobal = Object.fromEntries(vue.familles.map((f) => [f.code, f.global]));
-	const valListe = Object.fromEntries(vue.familles.map((f) => [f.code, f.dans_liste]));
+	// Les DEUX panneaux comptent des notices distinctes : « 24 507 notices » à
+	// gauche, « 3 668 notices » à droite. La somme des profils de maîtres (3 674)
+	// compterait deux fois les six notices qui nomment deux maîtres — elle ne peut
+	// pas porter un libellé « notices » (decisions.md, 2026-07-22 ter).
+	const valListe = Object.fromEntries(vue.familles.map((f) => [f.code, f.dans_liste_notices]));
 	const totalGlobal = vue.totaux.doute_total; // 24 507
-	const totalListe = vue.totaux.doute_appartenances_liste;
+	const totalListe = vue.totaux.doute_notices_liste;
+	// L'effectif de la liste vient des données : il a déjà changé une fois
+	// (27 → 63) et changera encore à chaque lot de maîtres instruits.
+	const nbNoms = vue.nb_maitres;
 
 	// Échelle COMMUNE aux deux panneaux : la plus grande part observée, toutes séries
 	// confondues (« attribué à » dans l'ensemble). Les barres deviennent comparables.
 	const maxPart = Math.max(
-		...vue.familles.flatMap((f) => [f.global / totalGlobal, f.dans_liste / totalListe])
+		...vue.familles.flatMap((f) => [f.global / totalGlobal, f.dans_liste_notices / totalListe])
 	);
 
 	// Formule type affichée UNIQUEMENT là où elle apporte quelque chose (règle
@@ -108,15 +115,16 @@
 	<p class="texte">
 		Sur l'ensemble des œuvres concernées, une formule revient bien plus souvent que les
 		autres&nbsp;: «&nbsp;attribué à&nbsp;», qui reste au plus près de la main de
-		l'artiste. Mais parmi
-		les vingt-sept noms de référence de la rubrique «&nbsp;Explorer les maîtres&nbsp;»,
-		les liens plus indirects — l'atelier, l'école, la manière — prennent beaucoup plus
-		de place.
+		l'artiste. Elle reste aussi la plus fréquente chez les {enLettres(nbNoms)} noms de
+		référence de la rubrique «&nbsp;Explorer les maîtres&nbsp;». Ce qui change, c'est la
+		place qu'y prennent les liens plus indirects — l'école, l'atelier, la manière&nbsp;:
+		«&nbsp;de son école&nbsp;» y pèse plus de quatre fois sa part dans l'ensemble de la
+		base.
 	</p>
 
 	<div class="comparaison">
 		<BarresMentions titre="Ensemble de Joconde" total={totalGlobal} valeurs={valGlobal} {maxPart} />
-		<BarresMentions titre="Les 27 noms de référence" total={totalListe} valeurs={valListe} {maxPart} />
+		<BarresMentions titre="Les {enLettres(nbNoms)} noms de référence" total={totalListe} valeurs={valListe} {maxPart} />
 	</div>
 
 	<p class="reserve">

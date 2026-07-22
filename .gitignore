@@ -12,3 +12,6 @@ museum.zip
 
 # Divers
 .DS_Store
+
+# Captures de contrôle du front (temporaires, non versionnées)
+.captures/

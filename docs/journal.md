@@ -2,6 +2,54 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-22 (quater) — Temps 7 : trois phrases qui disaient l'inverse des chiffres
+
+Contrôle du front avec la liste élargie. Rien ne s'est cassé — et c'est bien le problème :
+le site continuait à s'afficher, calmement, en racontant des choses fausses.
+
+**Le plus grave d'abord.** Trois en-têtes de graphique écrits à la main annonçaient
+l'inverse de leurs propres données. Le Primatice : « 125 œuvres portent la mention
+“attribué à”, 71 celle “de son école” » — c'était exactement le contraire. Raphaël, pareil.
+Michel-Ange annonçait « deux fois plus » pour un rapport devenu proche de trois.
+
+La cause est instructive. Ces phrases recevaient des variables nommées `n` et `second` :
+des **rangs**, pas des mentions. Tant que le classement ne bougeait pas, écrire « n œuvres
+portent la mention “attribué à” » disait vrai. Le jour où l'école est passée devant chez ces
+deux artistes, la phrase a continué de tourner sans rien signaler. Vingt et un sous-titres
+étaient bâtis ainsi. Tous sont convertis : quand une phrase nomme une mention, elle va la
+chercher par son nom, jamais par sa place au classement.
+
+**Ensuite, un graphique devenu illisible.** Le nuage des mentions portait le nombre d'œuvres
+sur une échelle commune plafonnée à 240. Avec vingt-sept maîtres allant de 20 à 310 notices,
+cela passait. Avec soixante-trois qui commencent à onze, la moitié des profils s'écrasent au
+sol : Botticelli montrait quatre points collés sur la ligne du zéro, alors qu'il a bien
+douze œuvres dites « de son école » sur dix-sept. Un graphique où l'on ne lit plus de
+hiérarchie est un mauvais graphique — la charte le dit elle-même.
+
+L'axe porte maintenant la **part** des œuvres du maître, de zéro à cent pour cent. L'échelle
+reste commune et fixe pour les soixante-trois — la comparaison est sauve, elle porte
+désormais sur la forme du profil. Le volume, lui, n'a pas disparu : il est écrit dans la
+phrase d'en-tête, il classe le répertoire, il s'affiche au survol de chaque point. Botticelli
+montre enfin ce qu'il a à montrer : son école à 71 %.
+
+**Trente-six artistes sans présentation.** Un visiteur tombait sur « Perino del Vaga » sans
+une ligne pour le situer. Les trente-six lignes sont écrites. Les dates viennent d'abord de
+la base elle-même — Joconde écrit souvent les années entre parenthèses, et il suffit de les
+compter : « Bouchardon Edme (1698-1762) » revient dans 1 128 notices concordantes. Puis on
+croise avec les notices d'autorité. Le « vers » est posé partout où la base hésite : Barocci
+donne 1535, 1540 et 1528 ; Campagnola 1484 et 1500 à égalité. Adolph Menzel est le seul dont
+la base ne dit rien.
+
+Le reste tient du ménage, mais du ménage qui ment quand on ne le fait pas : la page Méthode
+promettait encore « au moins vingt notices » quand le seuil est à dix ; le nombre en toutes
+lettres venait d'une table qui s'arrêtait à trente et rendait « 63 » en chiffres ; et le
+panneau de « Comprendre les mentions » annonçait « 3 674 notices » là où 3 674 sont des
+appartenances — il compte maintenant les 3 668 œuvres réelles, comme le panneau national
+d'en face.
+
+Restent dehors, et c'est assumé : le style, les portraits des trente-six, et leurs angles
+écrits à la main. Ils gardent l'en-tête généré, qui est juste mais anonyme.
+
 ## 2026-07-22 (ter) — Six notices où le musée hésite entre deux noms
 
 Vérification demandée avant d'ouvrir le temps 7 : le total de la liste était une **somme de

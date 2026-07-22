@@ -73,3 +73,40 @@ export function licenceEnFrancais(licence) {
 	const table = { 'Public domain': 'domaine public', CC0: 'CC0' };
 	return table[licence] ?? licence;
 }
+
+// Nombre écrit en toutes lettres, pour le corps de texte (CLAUDE.md : « écrire
+// les chiffres en français, pas en notation d'analyste »). Une table figée allait
+// de vingt-quatre à trente : elle est tombée en panne le jour où la liste des
+// maîtres est passée à soixante-trois. Couvre 0 à 99, repli sur le chiffre
+// au-delà — un effectif à trois chiffres ne se raconterait plus en lettres.
+const PETITS = [
+	'zéro', 'un', 'deux', 'trois', 'quatre', 'cinq', 'six', 'sept', 'huit', 'neuf',
+	'dix', 'onze', 'douze', 'treize', 'quatorze', 'quinze', 'seize',
+	'dix-sept', 'dix-huit', 'dix-neuf'
+];
+const DIZAINES = {
+	20: 'vingt', 30: 'trente', 40: 'quarante',
+	50: 'cinquante', 60: 'soixante', 80: 'quatre-vingt'
+};
+
+export function enLettres(n) {
+	if (!Number.isInteger(n) || n < 0 || n > 99) return String(n);
+	if (n < 20) return PETITS[n];
+	// soixante-dix et quatre-vingt-dix se construisent sur soixante et quatre-vingt
+	const dizaine = Math.floor(n / 10) * 10;
+	const base = dizaine === 70 || dizaine === 90 ? dizaine - 10 : dizaine;
+	const reste = n - base;
+	if (reste === 0) return base === 80 ? 'quatre-vingts' : DIZAINES[base];
+	// « vingt et un », « soixante et onze » — mais « quatre-vingt-un »
+	if ((reste === 1 || reste === 11) && base !== 80 && DIZAINES[base]) {
+		if (reste === 1) return `${DIZAINES[base]} et un`;
+		if (base === 60) return `${DIZAINES[base]} et onze`;
+	}
+	return `${DIZAINES[base]}-${PETITS[reste]}`;
+}
+
+// Même chose, première lettre en capitale (début de phrase).
+export function enLettresCap(n) {
+	const mot = enLettres(n);
+	return mot.charAt(0).toUpperCase() + mot.slice(1);
+}

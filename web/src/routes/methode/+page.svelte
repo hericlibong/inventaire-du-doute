@@ -11,7 +11,7 @@
 	const prov = data.provenance;
 
 	// Chiffres, tous issus des exports (jamais saisis à la main).
-	const nbNoms = data.artistes.artistes.length; // 27
+	const nbNoms = data.artistes.artistes.length;
 	const douteDansListe = data.vue.totaux.doute_notices_liste;
 	const dApres = n.familles.d_apres.notices; // 22 564 (copies « d'après »)
 	const copiesTotal = n.copie; // 22 624 (catégorie copie, dédupliquée)
@@ -95,10 +95,10 @@
 	<!-- Ancre visée par le lien « Pourquoi ces N artistes ? » de la rubrique
 	     « Explorer les maîtres » (2026-07-20) : le détail du seuil a quitté
 	     l'introduction de la rubrique, il vit ici. -->
-	<p id="les-27">
+	<p id="les-maitres">
 		Une partie du site se concentre sur <strong>{nombre(nbNoms)} noms</strong> de
 		référence. Le critère est explicite&nbsp;: un artiste connu <em>et</em> au moins
-		vingt notices portant une formulation prudente (copies exclues), une fois le nom bien
+		dix notices portant une formulation prudente (copies exclues), une fois le nom bien
 		isolé. Ce n'est <strong>pas un palmarès des plus grands</strong>&nbsp;: c'est un
 		seuil, choisi pour avoir assez de matière à montrer. Ces {nombre(nbNoms)} noms
 		réunissent {nombre(douteDansListe)} des formulations prudentes.

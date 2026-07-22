@@ -67,9 +67,16 @@ Ordre imposé — chaque ⏸ est un point d'arrêt :
       Conclusion fautive corrigée : « attribué à » **reste** la formule la plus fréquente
       chez les maîtres retenus (43 % contre 35 %) ; ce qui change, c'est la part d'« école
       de », 35 % contre 7,6 % au national
-- [ ] **7. Contrôle des effets sur le front** : classement du répertoire, jauges, familles,
-      niveaux, exemples d'œuvres, cartes, page Méthode, et **relecture des angles** des
-      en-têtes rédigés (les nombres suivent seuls, les angles non)
+- [x] **7. Contrôle des effets sur le front**. **Fait le 2026-07-22** (decisions.md, quater) :
+      l'axe du nuage passe du **nombre à la part** (0–100 %, échelle commune conservée) — à
+      63 maîtres allant de 11 à 310 notices, la moitié des profils étaient illisibles ;
+      **3 en-têtes rédigés disaient l'inverse de leurs chiffres** (Le Primatice, Raphaël,
+      Michel-Ange) et les **21** qui nommaient une mention à côté d'un rang sont convertis ;
+      **36 lignes de repérage** écrites (dates relevées dans la base puis croisées) ;
+      seuil « vingt notices » → « dix », effectifs et libellés « 27 » rendus dynamiques,
+      `nb_maitres` publié dans `vue_ensemble.json` ; les deux panneaux de « Comprendre les
+      mentions » comptent désormais des **notices** (3 668), plus des appartenances.
+      Restent hors périmètre : style, portraits des 36, angles écrits des 36
 - [ ] **8. Révision des textes publics** annonçant « 27 » ou « au moins vingt notices » :
       `docs/roadmap.md`, `charte-graphique.md`, `dataviz-les-presque.md`,
       `architecture-editoriale.md`, `web/src/routes/les-presque/+page.js`,
@@ -100,7 +107,7 @@ comme historique ; ce bloc est le cap qui prime.*
 ### 1. Périmètre V1 publique (à construire / finir)
 
 > Organisé en 4 entrées de nav par `docs/architecture-editoriale.md` (2026-07-16,
-> ⏸ à valider) : **Accueil** · **Explorer les maîtres** (= exploration des 27) ·
+> ⏸ à valider) : **Accueil** · **Explorer les maîtres** (= exploration de la liste) ·
 > **Comprendre les mentions** (= vocabulaire + Vue d'ensemble) · **Méthode**. Les
 > items ci-dessous restent la liste des briques ; l'architecture dit comment elles
 > se regroupent et se hiérarchisent.

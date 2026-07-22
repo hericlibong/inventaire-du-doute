@@ -5,13 +5,22 @@
 	import { EDITORIAL } from '$lib/editorial-maitres.js';
 	import Infobulle from '$lib/Infobulle.svelte';
 
-	// « Le combien », comparable entre maîtres (decisions.md 2026-07-08). Scatter sur
-	// grille FIXE : axe X = familles (mêmes colonnes pour tous), axe Y = volume,
-	// plafond COMMUN. La hauteur porte la mesure. Depuis 2026-07-17, l'axe est
-	// recadré en TROIS TERRITOIRES de proximité (territoires.js) : le graphe donne à
-	// voir le principe éditorial central — la distance à la main du maître — sans
-	// changer ni les données, ni les points, ni les couleurs, ni les infobulles.
-	let { maitre, plafond } = $props();
+	// Comparable entre maîtres (decisions.md 2026-07-08). Scatter sur grille FIXE :
+	// axe X = familles (mêmes colonnes pour tous), axe Y = PART des œuvres
+	// concernées du maître, de 0 à 100 %. Depuis 2026-07-17, l'axe est recadré en
+	// TROIS TERRITOIRES de proximité (territoires.js) : le graphe donne à voir le
+	// principe éditorial central — la distance à la main du maître.
+	//
+	// L'axe portait le NOMBRE d'œuvres, sur un plafond commun (le maximum de tous
+	// les maîtres, 240). Il a changé le 2026-07-22, quand la liste est passée de 27
+	// à 63 maîtres : de 11 à 310 œuvres concernées, la moitié des profils
+	// s'écrasaient au sol d'une échelle graduée jusqu'à 240 — plus aucune hiérarchie
+	// lisible, donc « la forme est mauvaise » (CLAUDE.md). La part rend chaque
+	// profil lisible ET garde une échelle commune et fixe, la comparaison portant
+	// sur la FORME du profil. Le volume, lui, n'est pas perdu : il est écrit en
+	// toutes lettres dans l'en-tête (« Parmi les 17 œuvres… »), classé dans le
+	// répertoire, et donné en nombre exact dans chaque infobulle.
+	let { maitre } = $props();
 
 	// Axe X ordonné par distance narrative au maître (docs/typologie.md), labels
 	// publics et couleur stable par famille — tous deux depuis familles-public.js
@@ -25,17 +34,23 @@
 
 	// Géométrie SVG. Un bandeau de tête (0 → Y_BANDE_HAUT) accueille les titres de
 	// territoire ; les bandes de fond descendent de là jusqu'à la ligne de base. Le
-	// plot commence assez bas (Y_HAUT) pour que la plus grosse bulle (rayon 16 au
-	// plafond) ne morde pas sur les titres.
+	// plot commence assez bas (Y_HAUT) pour que la plus grosse bulle (rayon 16 à
+	// 100 %) ne morde pas sur les titres.
 	const X0 = 30, X_LARG = 342, Y_HAUT = 40, Y_HAUTEUR = 196;
 	const Y_BASE = Y_HAUT + Y_HAUTEUR;
 	const Y_BANDE_HAUT = 18; // haut des bandes de territoire (sous les titres)
 	const pas = X_LARG / FAMILLES.length;
 	const bordG = (i) => X0 + pas * i; // bord gauche de la colonne i
 	const colonneX = (i) => X0 + pas * (i + 0.5);
-	const y = (v) => Y_BASE - (v / plafond) * Y_HAUTEUR;
+	// Part des œuvres concernées du maître (0 → 1). Le dénominateur est son propre
+	// total prudent : une notice ne relève que d'une famille (invariant du temps 1),
+	// les parts somment donc exactement à 100 %.
+	const part = (v) => (maitre.doute ? v / maitre.doute : 0);
+	const y = (v) => Y_BASE - part(v) * Y_HAUTEUR;
+	// position d'une graduation exprimée en pourcentage (l'axe, pas les points)
+	const yPart = (p) => Y_BASE - (p / 100) * Y_HAUTEUR;
 	// Points nettement plus gros ; plancher élevé pour la présence, écart modéré.
-	const rayon = (v) => 6 + (v / plafond) * 10;
+	const rayon = (v) => 6 + part(v) * 10;
 
 	// Bandes de territoire : plages de colonnes contiguës, calculées depuis la
 	// primitive (territoires.js) et l'ordre de l'axe. x1/x2 = bords des colonnes.
@@ -46,7 +61,8 @@
 		return { id: t.id, titre: t.titre, x1, x2, cx: (x1 + x2) / 2, premier: i === 0 };
 	});
 
-	const graduations = $derived([1, 2, 3, 4].map((k) => Math.round((k * plafond) / 4)));
+	// Graduations fixes, identiques sur les 63 fiches : un quart, la moitié, etc.
+	const graduations = [25, 50, 75, 100];
 
 	const points = $derived(
 		FAMILLES.map((f, i) => {
@@ -134,7 +150,7 @@
 	<div class="agencement">
 	<div class="graphe-hote" bind:this={regardEl}>
 		<svg viewBox="0 0 380 300" class="graphe" role="img"
-			aria-label="Graphique des mentions de doute pour {maitre.nom}, en trois territoires de proximité (au plus près, autour du maître, dans son influence), échelle commune à tous les maîtres">
+			aria-label="Graphique des mentions de doute pour {maitre.nom}, en trois territoires de proximité (au plus près, autour du maître, dans son influence). Axe vertical : part des œuvres concernées, de 0 à 100 %, échelle commune à tous les maîtres">
 			<!-- Bandes de territoire (fond très léger) : posées EN PREMIER, sous tout le
 			     reste. Contiguës, sans marge ni cadre → une seule ligne de proximité,
 			     pas trois blocs séparés. -->
@@ -151,8 +167,8 @@
 
 			<!-- graduations horizontales + valeurs -->
 			{#each graduations as g (g)}
-				<line x1={X0} x2={X0 + X_LARG} y1={y(g)} y2={y(g)} class="grille" />
-				<text x={X0 - 5} y={y(g) + 3} text-anchor="end" class="axe-y">{nombre(g)}</text>
+				<line x1={X0} x2={X0 + X_LARG} y1={yPart(g)} y2={yPart(g)} class="grille" />
+				<text x={X0 - 5} y={yPart(g) + 3} text-anchor="end" class="axe-y">{g} %</text>
 			{/each}
 
 			<!-- Séparateurs entre territoires : hairline discrète aux frontières

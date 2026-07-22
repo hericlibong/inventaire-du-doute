@@ -4,8 +4,9 @@
   "version_donnee": "2026-07-01",
   "lexique": "markers.py v2 (famille_segment) — unité : référence Joconde unique",
   "critere_liste": "maître de référence ET ≥ 10 notices de doute (hors copie)",
-  "date_generation": "2026-07-21T23:40:02+00:00",
-  "message_central": "Dans l'ensemble de Joconde, « attribué à » domine fortement. Dans les noms retenus, les liens plus indirects — école, atelier, manière — prennent plus de place.",
+  "nb_maitres": 63,
+  "date_generation": "2026-07-22T10:05:00+00:00",
+  "message_central": "« Attribué à » reste la formulation la plus fréquente parmi les maîtres retenus, mais « école de » y occupe une place beaucoup plus importante que dans l'ensemble de Joconde : 35 % contre 7,6 %.",
   "note_methodo": "Les familles peuvent se recouvrir : on ne les additionne pas et on n'utilise pas de diagramme en anneau. Hors de cette liste, seul le total par famille est publiable (pas de classement par nom). La monoculture divulguée (planches Barla, Nice) pèse une large part du doute national ; « global hors monoculture » permet de la neutraliser. Deux mesures distinctes pour la liste : les APPARTENANCES (un lien maître-notice, ce que totalisent les fiches) et les NOTICES distinctes (les références Joconde, seule mesure comparable au total national). Six notices nomment deux maîtres retenus : la somme des fiches vaut donc plus que le nombre d'œuvres. « Hors liste » est calculé sur les notices, jamais par soustraction d'une somme d'appartenances.",
   "totaux": {
     "doute_total": 24507,

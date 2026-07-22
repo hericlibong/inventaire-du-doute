@@ -3,7 +3,7 @@
 	// par territoire (territoires.js), colorées par la couleur STABLE de chaque
 	// mention (familles-public.js). Sert de « petit multiple » : deux panneaux à
 	// échelle COMMUNE (même maxPart) rendent comparables l'ensemble de Joconde et les
-	// 27 noms. Les mentions se recouvrent → ce ne sont PAS les parts exclusives d'un
+	// noms retenus. Les mentions se recouvrent → ce ne sont PAS les parts exclusives d'un
 	// total (aucun empilement, aucun anneau) : chaque barre est une part indépendante
 	// des notices concernées, et les parts ne s'additionnent pas à 100 %.
 	import { nombre } from '$lib/joconde.js';

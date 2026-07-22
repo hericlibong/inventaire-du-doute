@@ -154,6 +154,9 @@ def main():
         "version_donnee": artistes["version_donnee"],
         "lexique": artistes["lexique"],
         "critere_liste": artistes["critere"],
+        # effectif de la liste : lu par « Comprendre les mentions », qui n'a pas
+        # à charger artistes.json (372 Ko) pour connaître un nombre
+        "nb_maitres": len(artistes["artistes"]),
         "date_generation": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "message_central": (
             "« Attribué à » reste la formulation la plus fréquente parmi les "

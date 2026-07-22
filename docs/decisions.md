@@ -2,6 +2,94 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-22 (quater) — Temps 7 : ce que 63 maîtres cassent dans le front
+
+Contrôle complet de la rubrique avec la liste élargie. Le front ne s'est pas *cassé* — il
+dégradait proprement — mais il disait des choses fausses et montrait des graphiques
+illisibles. Quatre corrections, dont une de fond.
+
+### 1. L'axe du graphique passe du nombre à la part (correction de fond)
+
+Le nuage des mentions portait le **nombre** d'œuvres sur un plafond commun à tous les
+maîtres — le maximum observé, 240. Avec 27 maîtres allant de 20 à 310 notices, c'était
+tenable. À 63 maîtres allant de **11 à 310**, la moitié des profils s'écrasent au sol :
+Botticelli (17 notices) affichait quatre points collés à la ligne de base, indistinguables.
+On ne pouvait plus « y lire une hiérarchie », donc **la forme était mauvaise** (CLAUDE.md).
+
+L'axe porte désormais la **part des œuvres concernées du maître, de 0 à 100 %**. La règle de
+la charte est respectée dans ses deux termes : l'échelle reste **commune et fixe** pour les
+63 fiches, et chaque profil redevient lisible. La comparaison porte sur la **forme** du
+profil plutôt que sur le volume — et le volume n'est pas perdu : il est écrit dans l'en-tête
+(« Parmi les 17 œuvres… »), il classe le répertoire, et chaque infobulle donne le nombre
+exact. Botticelli montre maintenant « de son école » à 71 %, son atelier à 18 %.
+
+C'est la seule décision de fond du temps 7 ; elle est réversible d'un commit.
+
+### 2. Trois en-têtes rédigés disaient l'inverse de leurs chiffres
+
+Le point que la roadmap annonçait — « les nombres suivent seuls, les angles non » — s'est
+vérifié, et pire que prévu : ce ne sont pas les angles qui ont dérivé, ce sont les **faits**.
+
+| Maître | Affiché | Données |
+|---|---|---|
+| Le Primatice | « 125 portent “attribué à”, 71 “de son école” » | l'inverse : école 125, attribué 71 |
+| Raphaël | « 12 lui sont attribuées, 8 renvoient à son école » | l'inverse : école 12, attribué 8 |
+| Michel-Ange | « Deux fois plus » | 110 contre 37, soit près de trois fois |
+
+**Cause commune** : `n` et `second` désignent des **rangs**, pas des mentions. Vingt et un
+sous-titres nommaient une mention en dur à côté d'une variable de rang. Tant que le
+classement ne bougeait pas, ils disaient vrai ; le jour où l'école est passée devant
+« attribué à » chez Le Primatice et Raphaël, ils se sont mis à mentir sans qu'aucun test
+n'existe pour le voir.
+
+**Les 21 sont convertis** : dès qu'une phrase nomme une mention, elle la cherche par son code
+(`notices('ecole_de')`), jamais par son rang. Vérification faite : les 24 sous-titres non
+fautifs rendent exactement le même texte qu'avant la conversion.
+
+### 3. Les 36 nouveaux maîtres n'avaient pas de ligne de repérage
+
+Un visiteur tombait sur « Perino del Vaga » sans une ligne pour le situer. Les 36 lignes sont
+écrites, au gabarit strict du fichier (« [Activité] [nationalité] du [siècle], [dates]. »),
+sans mouvement, sans école, sans fonction de cour.
+
+**Les dates viennent d'abord de la base elle-même** : le champ `Auteur` de Joconde porte
+souvent les années entre parenthèses, et l'on peut les compter — « Bouchardon Edme
+(1698-1762) » apparaît dans 1 128 notices concordantes, « Dürer Albrecht (1471-1528) » dans
+344. Elles sont ensuite croisées avec les notices d'autorité. Le « vers » est posé partout où
+la base se contredit (Barocci : 1535, 1540 et 1528 ; Campagnola : 1484 et 1500 à égalité) ou
+diverge des notices (Botticelli : 1444 dans la base, 1445 ailleurs). Adolph Menzel est le
+seul dont la base ne porte **aucune** date.
+
+Ces 36 gardent l'**en-tête de graphique généré** : écrire 36 angles à la main demande une
+passe rédactionnelle à part. Ils n'ont pas non plus de portrait — le repli « Pas de portrait
+fiable disponible » s'affiche, ce qui est correct mais visible sur plus de la moitié des
+fiches.
+
+### 4. Les textes et les nombres figés
+
+- Le nombre en toutes lettres venait d'une table allant de vingt-quatre à trente : elle a
+  rendu « 63 » en chiffres dans un corps de texte. Remplacée par `enLettres()` dans
+  `joconde.js`, qui couvre 0 à 99 — y compris les pièges du français (soixante et onze,
+  quatre-vingts, quatre-vingt-un).
+- « au moins **vingt** notices » → **dix**, dans la page Méthode (le seuil a changé au
+  temps 5). Ancre `#les-27` → `#les-maitres`.
+- « les **vingt-sept** noms de référence » et « Les **27** noms de référence » deviennent
+  l'effectif réel, lu dans les données. `vue_ensemble.json` publie `nb_maitres` pour que
+  « Comprendre les mentions » n'ait pas à charger 372 Ko pour connaître un nombre.
+- La phrase de « Ce que disent les chiffres » portait encore la conclusion inversée : elle
+  dit maintenant qu'« attribué à » **reste la plus fréquente** chez les maîtres retenus, et
+  que ce qui change est la place de « de son école ».
+- **Les deux panneaux comptent enfin la même chose** : le panneau de droite affichait
+  « 3 674 notices concernées » alors que 3 674 sont des *appartenances*. Il est passé aux
+  notices distinctes (**3 668**), comme le panneau national. L'avertissement « les parts ne
+  s'additionnent pas à 100 % » couvrait déjà ce cas.
+
+### Ce qui n'a pas été touché
+
+Le style (chantier distinct, en réserve), les portraits des 36, les angles écrits des 36, et
+la révision d'ensemble des textes publics — temps 8. La page Méthode ne mentionne pas encore
+le registre des candidats publié au temps 5 : elle le devra.
+
 ## 2026-07-22 (ter) — Recouvrement entre profils : une somme n'est pas une union
 
 Vérification demandée avant d'ouvrir le temps 7, et elle était nécessaire : `doute_dans_liste`
