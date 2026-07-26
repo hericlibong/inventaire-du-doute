@@ -82,13 +82,29 @@ Le point du graphique gagne un gestionnaire clavier (Entrée/Espace basculent l'
 parité avec le toucher) : le focus l'affichait déjà, l'ajout lève l'avertissement a11y du
 clic sans équivalent clavier.
 
-### Deux points laissés ouverts, à trancher plus tard
+### Le cas Claude Lorrain — tranché : on garde la règle (option A, 2026-07-26)
 
-1. **Claude Lorrain** : 17/20 sur « attribué à » (85 %) tombe dans « cite seule » par la
-   règle. L'exemple du cahier des charges illustrait le format « deux mentions » avec ces
-   mêmes chiffres. La règle écrite (≥ 60 % → seule) prime ; si l'on veut que ce cas cite les
-   deux, il faudra abaisser le seuil « seule ».
-2. **Onglets Œuvres et Musées, hors périmètre** : « notices » y subsiste (`OeuvresMaitre` :
+Claude Lorrain affiche « 17 des 20 œuvres concernées portent la mention "attribué à" ; les
+autres formulations restent minoritaires ». Le cahier des charges donnait, pour illustrer le
+format « deux mentions », un exemple qui reprenait **par coïncidence les chiffres exacts de
+Lorrain** (17 / 20 / 3) et nommait la 2ᵉ formule (« 3 portent la mention "de son école" »).
+La règle déterministe (≥ 60 % → citer seule) produit l'autre formulation. **Les deux sont
+exactes et se lisent bien** : ce n'était pas un défaut, seulement un choix rédactionnel sur
+un artiste très majoritaire (85 %, 2ᵉ formule = 3 œuvres). Décision : **on garde la règle**,
+Lorrain reste en « cite seule ».
+
+Correctif d'une note antérieure erronée : il avait été écrit qu'« abaisser le seuil seule »
+ferait citer les deux. C'est **faux dans les deux sens**. (a) Abaisser ce seuil rend « cite
+seule » *plus* fréquent, pas moins (mesuré sur les 63 : seuil 50 % → 47 « seule » ; 60 % →
+40 ; 70 % → 33). (b) De toute façon Lorrain ne pourrait pas atteindre « deux » : sa 2ᵉ
+formule pèse 15 %, sous le plancher de 20 % qui protège de citer une mention marginale. Le
+levier réel serait de *monter* le seuil « seule » — mais à 70 % il ferait basculer 7
+artistes, dont un à tort (Joseph Vernet, 69/10, tomberait en « dispersé » alors qu'une
+formule domine clairement). La règle 60 / 70 / 20 est donc **conservée telle quelle**.
+
+### Un point laissé ouvert, à trancher plus tard
+
+**Onglets Œuvres et Musées, hors périmètre** : « notices » y subsiste (`OeuvresMaitre` :
    « À part : N notices » ; `CarteMaitre` : « D'où viennent ces notices », « N notices
    concernées »). À unifier dans un chantier ultérieur. Le champ `corps` de
    `familles-public.js` garde de même son ancienne formulation pour /echelle.
