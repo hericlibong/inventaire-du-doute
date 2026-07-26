@@ -2,6 +2,101 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-26 — Onglet « Profil » : bandeau et graphique se partagent le travail
+
+Palier de stabilisation de l'onglet Profil, cadré par l'utilisateur. Principe directeur :
+**deux zones, deux questions, jamais la même information deux fois.**
+
+- Le **bandeau** répond à *« quelle est l'ampleur du phénomène pour cet artiste ? »* ;
+- le **graphique** répond à *« comment se répartissent les mentions ? »*.
+
+Livré en deux étapes : prototype sur quatre artistes témoins (Zuccaro, Lorrain, Bril, Titien),
+validé visuellement, puis généralisation aux 63.
+
+### Le bandeau ne raconte plus la répartition
+
+Il gardait la mention la plus fréquente, son effectif et sa part — exactement ce que le
+graphique détaille ensuite. Retirés. Le bandeau porte désormais : le nom (+ pont vers le nom
+Joconde), la bio, le **volume d'œuvres concernées**, le **nombre de musées**, et le repère de
+contexte. Le nombre de musées ne compte que ceux ayant publié **au moins une notice
+prudente** (`nb_musees_doute`), jamais l'ensemble des musées où l'artiste apparaît — la
+distinction relevée le 2026-07-22 (Téniers apparaît dans 57 musées, le doute n'est écrit que
+dans 24).
+
+### Le graphique : titre stable, phrase déterministe
+
+- **Titre unique** pour tous : « Répartition des mentions ». Les titres littéraires écrits
+  par artiste (« son école efface sa main »…) sont **archivés** dans `editorial-maitres.js`
+  mais ne commandent plus l'interface. Le nom de l'artiste vit dans le bandeau, on ne le
+  répète pas.
+- **Une seule phrase factuelle**, générée par une **règle déterministe** identique pour tous
+  (`web/src/lib/phrase-repartition.js`, fonction pure, testée hors bundler) :
+  1. égalité d'effectif en tête → citer les mentions à égalité, au pluriel ;
+  2. 1re mention ≥ 60 % → la citer seule ;
+  3. sinon 1re + 2e ≥ 70 % **et** 2e ≥ 20 % → citer les deux ;
+  4. sinon → « se répartissent entre plusieurs mentions, sans qu'une seule ne s'impose ».
+  La phrase **cite la mention exacte** et ne transforme jamais une formulation prudente en
+  attribution certaine (« portent la mention "attribué à" », jamais « lui sont attribuées »).
+  Vocabulaire écarté : corpus, profil d'attribution, domine nettement, efface sa main.
+
+### Dot plot à points de taille constante
+
+Le nuage encodait le pourcentage par la **position** ET par la **surface** de la bulle —
+deux fois la même information (même dénominateur). Les points ont désormais un **rayon
+constant** ; seule la position verticale (le pourcentage) porte la mesure. Position, mentions
+sur l'axe, trois territoires, couleurs : inchangés. Le point actif est à peine renforcé au
+survol/focus, et **éclaire l'entrée correspondante dans la légende**.
+
+### Infobulles : définition factuelle depuis une source canonique
+
+La dernière ligne, interprétative, est remplacée par une **définition neutre et stable**,
+identique pour tous les artistes, tenue dans un champ unique `definition` de
+`familles-public.js` (« Œuvre rattachée à l'école de l'artiste. » plutôt que « Plutôt son
+école que sa main. »). Ce champ est **distinct de `corps`**, laissé au service de la page
+« Comprendre les mentions » (hors périmètre de ce palier). Chaque infobulle porte : la
+mention, « N œuvres sur T », le pourcentage, la définition.
+
+### Vocabulaire « œuvres concernées »
+
+Dans le périmètre de l'onglet Profil (bandeau, répertoire, graphique, infobulles), le
+comptage se dit en **œuvres concernées** : le bouton de tri « Notices » devient « Œuvres »,
+l'infobulle passe de « 30 notices » à « 30 œuvres sur 37 — 81 % ». La fonction `notices()`
+reste employée **hors périmètre**, dans les onglets Œuvres et Musées — voir le signalement
+ci-dessous.
+
+### Phrase de lecture de l'échelle supprimée
+
+« De gauche à droite, le lien à la main du maître se desserre. » est retirée sans
+remplacement : les trois intitulés de territoire et la légende suffisent.
+
+### Page Méthode
+
+Ajout de la précision d'unité : *l'unité technique est la notice Joconde ; dans les pages de
+lecture ces notices sont désignées « œuvres concernées » ; une notice peut exceptionnellement
+documenter plusieurs éléments.* Rappel du seuil (dix notices prudentes uniques après
+désambiguïsation) et du compte de musées (notices prudentes seulement).
+
+### Accessibilité
+
+Le point du graphique gagne un gestionnaire clavier (Entrée/Espace basculent l'infobulle, en
+parité avec le toucher) : le focus l'affichait déjà, l'ajout lève l'avertissement a11y du
+clic sans équivalent clavier.
+
+### Deux points laissés ouverts, à trancher plus tard
+
+1. **Claude Lorrain** : 17/20 sur « attribué à » (85 %) tombe dans « cite seule » par la
+   règle. L'exemple du cahier des charges illustrait le format « deux mentions » avec ces
+   mêmes chiffres. La règle écrite (≥ 60 % → seule) prime ; si l'on veut que ce cas cite les
+   deux, il faudra abaisser le seuil « seule ».
+2. **Onglets Œuvres et Musées, hors périmètre** : « notices » y subsiste (`OeuvresMaitre` :
+   « À part : N notices » ; `CarteMaitre` : « D'où viennent ces notices », « N notices
+   concernées »). À unifier dans un chantier ultérieur. Le champ `corps` de
+   `familles-public.js` garde de même son ancienne formulation pour /echelle.
+
+Aucun artiste n'est exactement au seuil de dix (minimum réel : Titien, 11). Le cas d'égalité
+existe pour de vrai (Paul Bril, 7 = 7) et est couvert, plus un test synthétique à trois
+mentions.
+
 ## 2026-07-22 (septies) — Les 36 angles écrits, et un pont entre deux noms
 
 ### Le pont de nom, demandé pour Michel-Ange, appliqué à quatorze

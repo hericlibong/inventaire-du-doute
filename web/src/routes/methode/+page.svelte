@@ -141,6 +141,17 @@
 <section id="lire">
 	<h2>Lire les chiffres</h2>
 	<p>
+		<strong>Notices et «&nbsp;œuvres concernées&nbsp;».</strong> L'unité technique du
+		calcul est la <strong>notice Joconde</strong> — une fiche par objet. Dans les pages
+		de lecture, ces notices sont désignées comme des <strong>«&nbsp;œuvres
+		concernées&nbsp;»</strong> pour alléger le texte. Les deux se recouvrent presque
+		toujours&nbsp;; une notice peut exceptionnellement documenter un ensemble ou
+		plusieurs éléments. Sur la fiche d'un artiste sont retenus au moins
+		<strong>dix</strong> notices prudentes, une fois écartés les homonymes&nbsp;; le
+		nombre de musées ne compte que ceux ayant publié <strong>au moins une notice
+		prudente</strong>, non l'ensemble des musées où l'artiste apparaît.
+	</p>
+	<p>
 		<strong>Les formules peuvent se recouvrir.</strong> Une même notice peut porter
 		plusieurs mentions. Les catégories ne sont donc pas les tranches exclusives d'un
 		tout&nbsp;: on ne les additionne pas, et on n'utilise jamais de diagramme en anneau.

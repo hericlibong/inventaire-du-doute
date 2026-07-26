@@ -23,6 +23,19 @@ ressemble, et **en quoi elle s'éloigne encore de la vision visée** (une
 >
 > Détail et mesures : `docs/decisions.md`, 2026-07-22 (quater).
 
+> **Mise à jour du 2026-07-26 — l'onglet Profil est stabilisé.** Le bandeau et le graphique
+> se partagent le travail : le bandeau dit l'**ampleur** (volume d'œuvres concernées, nombre
+> de musées), le graphique dit la **répartition**, sans jamais se répéter. Le graphique porte
+> un **titre stable** (« Répartition des mentions », le nom de l'artiste étant dans le
+> bandeau) et **une phrase factuelle générée par règle déterministe**
+> (`phrase-repartition.js`, testée hors bundler). Le nuage devient un **dot plot à points de
+> taille constante** (la hauteur = le pourcentage porte seule la mesure). Les infobulles
+> affichent « N œuvres sur T — P % » + une **définition factuelle canonique** (champ
+> `definition` de `familles-public.js`). Vocabulaire du profil unifié en « œuvres
+> concernées ». La phrase « de gauche à droite… » est retirée. Détail : `docs/decisions.md`,
+> 2026-07-26. La description §7 ci-dessous vaut pour la **galaxie archivée**, pas pour l'état
+> courant.
+
 ---
 
 ## 1. Ce que cette dataviz veut faire

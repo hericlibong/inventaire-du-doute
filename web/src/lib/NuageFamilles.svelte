@@ -1,8 +1,7 @@
 <script>
-	import { nombre, aNom } from '$lib/joconde.js';
 	import { FAMILLE_PUBLIC, ORDRE_FAMILLES, tooltipFamille, resumeFamille } from '$lib/familles-public.js';
-	import { TERRITOIRES, indicesTerritoire, lectureProfil } from '$lib/territoires.js';
-	import { EDITORIAL } from '$lib/editorial-maitres.js';
+	import { TERRITOIRES, indicesTerritoire } from '$lib/territoires.js';
+	import { phraseRepartition } from '$lib/phrase-repartition.js';
 	import Infobulle from '$lib/Infobulle.svelte';
 
 	// Comparable entre maîtres (decisions.md 2026-07-08). Scatter sur grille FIXE :
@@ -17,9 +16,9 @@
 	// s'écrasaient au sol d'une échelle graduée jusqu'à 240 — plus aucune hiérarchie
 	// lisible, donc « la forme est mauvaise » (CLAUDE.md). La part rend chaque
 	// profil lisible ET garde une échelle commune et fixe, la comparaison portant
-	// sur la FORME du profil. Le volume, lui, n'est pas perdu : il est écrit en
-	// toutes lettres dans l'en-tête (« Parmi les 17 œuvres… »), classé dans le
-	// répertoire, et donné en nombre exact dans chaque infobulle.
+	// sur la FORME du profil. Le volume, lui, n'est pas perdu : il est écrit dans le
+	// bandeau, classé dans le répertoire, et donné en nombre exact dans chaque
+	// infobulle (« 30 œuvres sur 37 — 81 % »).
 	let { maitre } = $props();
 
 	// Axe X ordonné par distance narrative au maître (docs/typologie.md), labels
@@ -34,8 +33,8 @@
 
 	// Géométrie SVG. Un bandeau de tête (0 → Y_BANDE_HAUT) accueille les titres de
 	// territoire ; les bandes de fond descendent de là jusqu'à la ligne de base. Le
-	// plot commence assez bas (Y_HAUT) pour que la plus grosse bulle (rayon 16 à
-	// 100 %) ne morde pas sur les titres.
+	// plot commence assez bas (Y_HAUT) pour qu'un point à 100 % ne morde pas sur
+	// les titres.
 	const X0 = 30, X_LARG = 342, Y_HAUT = 40, Y_HAUTEUR = 196;
 	const Y_BASE = Y_HAUT + Y_HAUTEUR;
 	const Y_BANDE_HAUT = 18; // haut des bandes de territoire (sous les titres)
@@ -49,8 +48,12 @@
 	const y = (v) => Y_BASE - part(v) * Y_HAUTEUR;
 	// position d'une graduation exprimée en pourcentage (l'axe, pas les points)
 	const yPart = (p) => Y_BASE - (p / 100) * Y_HAUTEUR;
-	// Points nettement plus gros ; plancher élevé pour la présence, écart modéré.
-	const rayon = (v) => 6 + part(v) * 10;
+	// Dot plot (2026-07-23) : rayon CONSTANT. La position verticale (le pourcentage)
+	// porte seule la mesure. Faire varier en plus la surface racontait deux fois la
+	// même information — le nombre et la part reposent sur le même dénominateur. Le
+	// point actif est à peine renforcé au survol/focus (voir R_ACTIF, .point:hover).
+	const R = 6;
+	const R_ACTIF = 8;
 
 	// Bandes de territoire : plages de colonnes contiguës, calculées depuis la
 	// primitive (territoires.js) et l'ordre de l'axe. x1/x2 = bords des colonnes.
@@ -72,10 +75,9 @@
 				...f,
 				x: colonneX(i),
 				cy: y(fam.notices),
-				r: rayon(fam.notices),
 				notices: fam.notices,
-				tt: tooltipFamille(f.code, maitre.nom, fam.notices),
-				resume: resumeFamille(f.code, maitre.nom, fam.notices)
+				tt: tooltipFamille(f.code, maitre.nom, fam.notices, maitre.doute),
+				resume: resumeFamille(f.code, maitre.nom, fam.notices, maitre.doute)
 			};
 		}).filter(Boolean)
 	);
@@ -87,11 +89,14 @@
 	let regardEl;
 	let actif = $state(null);
 
+	// `actif.code` sert AUSSI à mettre en évidence la mention dans la légende
+	// (cahier des charges 2026-07-23) : survol/focus d'un point → sa ligne s'éclaire.
 	function montre(event, p) {
 		const cible = event.currentTarget.getBoundingClientRect();
 		const hote = regardEl.getBoundingClientRect();
 		const y = cible.top - hote.top;
 		actif = {
+			code: p.code,
 			tt: p.tt,
 			x: cible.left + cible.width / 2 - hote.left,
 			y,
@@ -103,43 +108,35 @@
 		actif = null;
 	}
 
-	// Phrase de lecture (2026-07-20) : à quoi les musées rattachent ces œuvres, en mots
-	// ordinaires. Règles et formulations : territoires.js — elles sont fixées, on n'en
-	// improvise pas ici. La mention citée réutilise la citation publique en bas de casse
-	// (« De son école » → « de son école ») : aucun libellé inventé.
-	const parNotices = $derived(
-		Object.fromEntries(maitre.familles.map((f) => [f.code, f.notices]))
-	);
-	const citationMention = (code) => {
-		const c = FAMILLE_PUBLIC[code].citation;
-		return c.charAt(0).toLowerCase() + c.slice(1);
-	};
-	const lecture = $derived(lectureProfil(parNotices, citationMention));
+	// Sur mobile, un point n'a ni survol ni focus clavier : le toucher bascule
+	// l'infobulle (re-toucher le même point la referme ; toucher ailleurs aussi).
+	function bascule(event, p) {
+		event.stopPropagation();
+		if (actif && actif.code === p.code) cache();
+		else montre(event, p);
+	}
 
-	// En-tête écrit à la main quand l'artiste en a un (2026-07-21) : titre = l'angle,
-	// sous-titre = la preuve chiffrée. Les nombres viennent d'ici, jamais du fichier
-	// éditorial — ils suivent donc les données sans réécriture. Sans entrée dédiée,
-	// on garde l'en-tête généré (titre générique + phrase de lecture).
-	const ecrit = $derived(EDITORIAL[maitre.nom]?.graphique);
-	const classees = $derived([...maitre.familles].sort((a, b) => b.notices - a.notices));
-	const chiffres = $derived({
-		n: nombre(classees[0]?.notices ?? 0),
-		total: nombre(maitre.doute),
-		second: nombre(classees[1]?.notices ?? 0),
-		musees: nombre(maitre.nb_musees_doute),
-		notices: (code) => maitre.familles.find((f) => f.code === code)?.notices ?? 0
-	});
-	const titre = $derived(
-		ecrit ? ecrit.titre : `Comment les musées rattachent ces œuvres ${aNom(maitre.nom)}`
+	// Titre STABLE, identique pour tous les artistes (2026-07-23) : le graphique
+	// répond à « comment se répartissent les mentions ? ». Le nom de l'artiste est
+	// déjà porté par le bandeau, on ne le répète pas. Les anciens titres littéraires
+	// (editorial-maitres.js) restent archivés dans les données mais ne commandent
+	// plus l'interface. La phrase factuelle sous le titre suit une règle déterministe
+	// unique (phrase-repartition.js), testée hors bundler.
+	const titre = 'Répartition des mentions';
+	const sousTitre = $derived(
+		phraseRepartition(maitre.familles, maitre.doute, {
+			label: (c) => FAMILLE_PUBLIC[c].label,
+			ordre: ORDRE_FAMILLES
+		})
 	);
-	const sousTitre = $derived(ecrit ? ecrit.sousTitre(chiffres) : lecture);
 </script>
 
+<svelte:window onclick={cache} />
+
 <figure class="nuage">
-	<!-- En-tête du graphique (refondu le 2026-07-21) : deux textes, deux fonctions —
-	     le titre porte l'angle propre à l'artiste, le sous-titre la preuve chiffrée.
-	     Jamais une question suivie de sa réponse. Vocabulaire écarté : « profil
-	     d'attribution », « corpus », « distribution ». -->
+	<!-- En-tête du graphique (2026-07-23) : titre STABLE « Répartition des mentions »
+	     (le nom de l'artiste vit dans le bandeau, pas ici) ; sous-titre = une phrase
+	     factuelle générée par règle déterministe (phrase-repartition.js). -->
 	<figcaption class="entete">
 		<h3 class="titre-graphe">{titre}</h3>
 		{#if sousTitre}
@@ -200,12 +197,15 @@
 			{/each}
 
 			<!-- points : survol/focus → tooltip HTML custom ; aria-label = repli
-			     textuel pour lecteur d'écran (le <title> natif a disparu). -->
+			     textuel pour lecteur d'écran (le <title> natif a disparu). Clavier :
+			     le focus affiche déjà l'infobulle ; Entrée/Espace la basculent
+			     (parité avec le toucher, et exigence a11y d'un handler clavier à
+			     côté du clic). -->
 			{#each points as p (p.code)}
 				<circle
 					cx={p.x}
 					cy={p.cy}
-					r={p.r}
+					r={actif && actif.code === p.code ? R_ACTIF : R}
 					style="fill: {p.couleur}"
 					fill-opacity="0.9"
 					stroke="#fff"
@@ -218,6 +218,13 @@
 					onmouseleave={cache}
 					onfocus={(e) => montre(e, p)}
 					onblur={cache}
+					onclick={(e) => bascule(e, p)}
+					onkeydown={(e) => {
+						if (e.key === 'Enter' || e.key === ' ') {
+							e.preventDefault();
+							bascule(e, p);
+						}
+					}}
 				/>
 			{/each}
 		</svg>
@@ -233,15 +240,16 @@
 	     s'intercale plus entre le graphique et la suite de la page. Légende légère :
 	     ni cadre, ni fond plein — un filet de couleur par zone suffit à rappeler les
 	     bandes du graphe. Libellés depuis la source unique (familles-public.js). -->
+	<!-- Pas de phrase d'introduction (retirée le 2026-07-25) : les trois intitulés
+	     de territoire et la légende suffisent à expliquer l'organisation. -->
 	<div class="cle">
-		<p class="cle-intro">De gauche à droite, le lien à la main du maître se desserre.</p>
 		<ol class="territoires">
 			{#each TERRITOIRES as t (t.id)}
 				<li class="zone" data-zone={t.id}>
 					<span class="zone-titre">{t.titre}</span>
 					<span class="zone-mentions">
 						{#each t.codes as code (code)}
-							<span class="mention">
+							<span class="mention" class:active={actif && actif.code === code}>
 								<span class="pastille" style="background: {FAMILLE_PUBLIC[code].couleur}"></span>
 								{FAMILLE_PUBLIC[code].label}
 							</span>
@@ -294,7 +302,7 @@
 
 	.point {
 		cursor: pointer;
-		transition: fill-opacity 0.12s ease;
+		transition: fill-opacity 0.12s ease, r 0.1s ease;
 	}
 
 	.point:hover,
@@ -368,14 +376,6 @@
 		padding-top: 2.5rem; /* aligne la légende sur le haut du plot, pas sur le SVG */
 	}
 
-	.cle-intro {
-		margin: 0 0 var(--espace-3);
-		font-size: 0.8rem;
-		font-style: italic;
-		line-height: 1.4;
-		color: var(--couleur-encre-douce);
-	}
-
 	.territoires {
 		list-style: none;
 		margin: 0;
@@ -424,6 +424,14 @@
 		gap: 0.4rem;
 		font-size: 0.8rem;
 		color: var(--couleur-encre);
+		border-radius: 3px;
+		transition: background 0.1s ease;
+	}
+
+	/* Mention mise en évidence quand son point est survolé/focusé (2026-07-23). */
+	.mention.active {
+		background: rgba(43, 30, 20, 0.08);
+		font-weight: 600;
 	}
 
 	.pastille {

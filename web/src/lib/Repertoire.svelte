@@ -15,7 +15,7 @@
 	// tard, roadmap P3-T1).
 	let recherche = $state('');
 
-	// Tri : par nombre de notices concernées (défaut, ordre naturel du dossier) ou
+	// Tri : par nombre d'œuvres concernées (défaut, ordre naturel du dossier) ou
 	// alphabétique. « Trier par valeur, sauf ordre naturel » (CLAUDE.md) : le doute
 	// EST la valeur, on la garde par défaut ; l'alphabétique aide à retrouver un nom.
 	let tri = $state('nombre'); // 'nombre' | 'alpha'
@@ -75,7 +75,7 @@
 						aria-pressed={tri === 'nombre'}
 						onclick={() => (tri = 'nombre')}
 					>
-						Notices
+						Œuvres
 					</button>
 					<button
 						class:actif={tri === 'alpha'}
@@ -88,7 +88,7 @@
 			</div>
 
 			<!-- Micro-légende : le nombre à droite de chaque nom est le MÊME `doute` que
-			     la valeur principale du profil (notices à formulation prudente). -->
+			     la valeur principale du profil (œuvres à formulation prudente). -->
 			<p class="legende-liste">
 				<span>Artiste</span><span>Œuvres concernées</span>
 			</p>

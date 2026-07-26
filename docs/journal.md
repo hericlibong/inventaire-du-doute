@@ -2,6 +2,43 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-26 — Le profil arrête de se répéter
+
+L'onglet Profil disait deux fois la même chose. Le bandeau annonçait « "De son école" est la
+mention la plus fréquente », puis le graphique, juste dessous, le montrait. On a tranché net :
+le bandeau dit **l'ampleur** (combien d'œuvres, dans combien de musées), le graphique dit la
+**répartition**. Chacun sa question, plus de doublon.
+
+Le graphique a perdu ses titres d'auteur (« son école efface sa main » et les soixante-deux
+autres) pour un titre unique et stable, « Répartition des mentions ». Le nom de l'artiste est
+déjà en gros au-dessus, inutile de le répéter. Sous le titre, une seule phrase, produite par
+une règle mécanique qui vaut pour tout le monde : si une mention dépasse 60 %, on la cite
+seule ; si deux se partagent l'essentiel, on cite les deux ; sinon on dit que rien ne
+s'impose ; et en cas d'égalité parfaite, on nomme les mentions à égalité. Toujours la mention
+exacte, jamais « lui est attribuée » là où le musée a seulement écrit « attribué à ». La
+règle vit dans un petit fichier à part, testé isolément — huit cas, dont l'égalité réelle de
+Paul Bril et une égalité à trois inventée pour blinder.
+
+Le nuage de points a maigri, au sens propre. Les bulles grossissaient avec le pourcentage,
+alors que la hauteur disait déjà ce pourcentage : deux fois la même information. Points de
+taille fixe désormais ; seule la hauteur compte. Chez Paul Bril, les deux mentions à égalité
+tombent exactement à la même ligne — on le voit d'un coup d'œil.
+
+Les infobulles ont troqué leur dernière ligne interprétative contre une définition sèche et
+identique partout : « Œuvre rattachée à l'école de l'artiste. » Une seule source dans le code
+pour ces huit définitions. Et la petite phrase « De gauche à droite, le lien à la main du
+maître se desserre » a disparu : les trois territoires et la légende se suffisent.
+
+Enfin le vocabulaire s'est aligné : dans le profil, on ne compte plus des « notices » mais
+des « œuvres concernées » — le bouton de tri, l'infobulle, tout. Le mot « notice » reste dans
+les onglets Œuvres et Musées, qu'on n'a pas touchés ; c'est signalé pour plus tard. La page
+Méthode explique le lien : l'unité réelle est la notice, on l'appelle « œuvre concernée »
+pour alléger la lecture.
+
+Livré en deux temps, comme demandé : un prototype sur quatre artistes d'abord — Zuccaro qui
+penche fort d'un côté, Lorrain pareil, Bril à l'égalité, Titien dispersé — validé à l'œil,
+puis étendu aux soixante-trois.
+
 ## 2026-07-22 (septies) — Dire le même homme sous ses deux noms
 
 Deux choses ce matin, et la première vient d'une remarque juste : sur la fiche de

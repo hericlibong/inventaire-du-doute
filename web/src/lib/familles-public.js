@@ -9,10 +9,14 @@
 //   label       — libellé court affiché sur l'axe X (français public, pas de jargon) ;
 //   header      — titre du tooltip, générique (jamais le nom du maître → stable
 //                 d'une fiche à l'autre, donc comparable) ;
-//   corps       — PRÉCISION très courte (lisible en une seconde), pas une
-//                 définition complète : le tooltip n'est pas un dictionnaire des
-//                 labels, sinon le lecteur relit huit fois la même notice. Peut
-//                 rester vide si le header se suffit à lui-même ;
+//   corps       — PRÉCISION très courte (lisible en une seconde). Sert la page
+//                 « Comprendre les mentions » (route /echelle). Peut rester vide ;
+//   definition  — DÉFINITION factuelle et stable de la mention, source canonique
+//                 unique de la dernière ligne de l'infobulle du graphique
+//                 (cahier des charges 2026-07-25) : neutre, identique pour tous
+//                 les artistes, sans interprétation (« Attribution proposée avec
+//                 réserve. » plutôt que « Sans certitude qu'il s'agisse de sa
+//                 main. »). Distincte de `corps`, qui reste au service de /echelle ;
 //   mention        — fonction (nom → chaîne) TOUJOURS définie : la mention type
 //                    reconstruite avec le nom du maître (élision gérée), p. ex.
 //                    « école de Charles Le Brun », « attribué à Ingres ». Sert au
@@ -49,6 +53,7 @@ export const FAMILLE_PUBLIC = {
 		label: 'attribué à',
 		header: 'Attribué à',
 		corps: 'Sans certitude qu’il s’agisse bien de sa main.',
+		definition: 'Attribution proposée avec réserve.',
 		mention: (nom) => `attribué à ${nom}`,
 		montrerMention: false,
 		citation: 'Attribué à',
@@ -58,6 +63,7 @@ export const FAMILLE_PUBLIC = {
 		label: 'nom (?)',
 		header: 'Nom suivi d’un « ? »',
 		corps: 'Doute noté sans autre précision.',
+		definition: 'Nom de l’artiste indiqué avec un point d’interrogation.',
 		mention: (nom) => `${nom} (?)`,
 		montrerMention: true,
 		citation: 'Nom suivi d’un point d’interrogation',
@@ -67,6 +73,7 @@ export const FAMILLE_PUBLIC = {
 		label: 'son atelier',
 		header: 'Son atelier',
 		corps: 'Sorti de son atelier, pas forcément de sa main.',
+		definition: 'Œuvre rattachée à l’atelier de l’artiste.',
 		mention: (nom) => `atelier ${deNom(nom)}`,
 		montrerMention: false,
 		citation: 'De son atelier',
@@ -76,6 +83,7 @@ export const FAMILLE_PUBLIC = {
 		label: 'son cercle',
 		header: 'Son cercle proche',
 		corps: 'Son entourage immédiat.',
+		definition: 'Œuvre rattachée à son entourage proche.',
 		mention: (nom) => `entourage ${deNom(nom)}`,
 		montrerMention: true,
 		citation: 'De son cercle',
@@ -85,6 +93,7 @@ export const FAMILLE_PUBLIC = {
 		label: 'de son école',
 		header: 'De son école',
 		corps: 'Plutôt son école que sa main.',
+		definition: 'Œuvre rattachée à l’école de l’artiste.',
 		mention: (nom) => `école ${deNom(nom)}`,
 		montrerMention: false,
 		citation: 'De son école',
@@ -94,6 +103,7 @@ export const FAMILLE_PUBLIC = {
 		label: 'un suiveur',
 		header: 'Un suiveur',
 		corps: 'Dans sa suite, sous son influence.',
+		definition: 'Œuvre rattachée à un suiveur de l’artiste.',
 		mention: (nom) => `suiveur ${deNom(nom)}`,
 		montrerMention: false,
 		citation: 'D’un suiveur',
@@ -103,6 +113,7 @@ export const FAMILLE_PUBLIC = {
 		label: 'sa manière',
 		header: 'À sa manière',
 		corps: 'Son style, auteur inconnu.',
+		definition: 'Œuvre réalisée dans un style proche du sien.',
 		mention: (nom) => `à la manière ${deNom(nom)}`,
 		montrerMention: false,
 		citation: 'À sa manière',
@@ -112,6 +123,7 @@ export const FAMILLE_PUBLIC = {
 		label: 'dans son goût',
 		header: 'Dans son goût',
 		corps: 'Lien de style lointain.',
+		definition: 'Œuvre présentant une proximité de goût ou de style.',
 		mention: (nom) => `dans le genre ${deNom(nom)}`,
 		montrerMention: true,
 		citation: 'Dans son goût',
@@ -144,17 +156,32 @@ export function notices(n) {
 	return `${nombre(n)} ${Math.abs(n) === 1 ? 'notice' : 'notices'}`;
 }
 
-// Données du tooltip d'un point, prêtes à afficher (header / corps / valeur /
-// mention type). `n` est le nombre BRUT de notices (entier), accordé ici. `corps`
-// est une précision courte (peut être vide). `mentionType` vaut null quand la
-// règle anti-répétition l'écarte.
-export function tooltipFamille(code, nomMaitre, n) {
+// Valeur du tooltip du graphique : « 30 œuvres sur 37 — 81 % » (2026-07-23). Le
+// point porte à la fois le nombre, le total d'œuvres concernées et la part — les
+// trois reposent sur le même dénominateur, mais l'infobulle est le seul endroit
+// où le lecteur lit le nombre exact (l'axe, lui, ne porte que le pourcentage).
+// Vocabulaire public « œuvres » ici (dans l'onglet Profil) ; le pipeline compte
+// des notices, ce que la page Méthode explique. `notices()` reste employée pour
+// les onglets Œuvres et Musées, hors de ce palier.
+function valeurGraphe(n, total) {
+	const mot = Math.abs(n) === 1 ? 'œuvre' : 'œuvres';
+	const pct = total ? Math.round((n / total) * 100) : 0;
+	return `${nombre(n)} ${mot} sur ${nombre(total)} — ${pct} %`;
+}
+
+// Données du tooltip d'un point, prêtes à afficher (header / valeur / corps /
+// mention type). `n` = nombre d'œuvres de la mention ; `total` = œuvres concernées
+// de l'artiste. `corps` est la définition courte (peut être vide). `mentionType`
+// vaut null quand la règle anti-répétition l'écarte.
+export function tooltipFamille(code, nomMaitre, n, total) {
 	const f = FAMILLE_PUBLIC[code];
 	return {
 		header: f.header,
 		headerPastille: f.couleur, // pastille de la mention, dans la bande de tête
-		corps: f.corps,
-		valeur: notices(n),
+		// dernière ligne : la définition factuelle canonique (pas `corps`, plus
+		// interprétatif et réservé à /echelle)
+		corps: f.definition,
+		valeur: valeurGraphe(n, total),
 		mentionType: f.montrerMention ? f.mention(nomMaitre) : null
 	};
 }
@@ -162,8 +189,8 @@ export function tooltipFamille(code, nomMaitre, n) {
 // Résumé linéaire pour les technologies d'assistance (lecteur d'écran) : le
 // tooltip HTML est visuel, on garde donc un équivalent textuel sur le point
 // lui-même (aria-label), puisque le <title> SVG natif disparaît.
-export function resumeFamille(code, nomMaitre, n) {
-	const t = tooltipFamille(code, nomMaitre, n);
+export function resumeFamille(code, nomMaitre, n, total) {
+	const t = tooltipFamille(code, nomMaitre, n, total);
 	const base = t.corps ? `${t.header} : ${t.corps} ${t.valeur}.` : `${t.header} : ${t.valeur}.`;
 	return t.mentionType ? `${base} Mention type : « ${t.mentionType} ».` : base;
 }

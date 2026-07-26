@@ -1,24 +1,23 @@
 <script>
 	// « La scène du maître » (docs/charte-graphique.md §5) : portrait + court PORTRAIT
-	// ÉDITORIAL fondé sur les données. Refonte du 2026-07-20 (decisions.md) : la pile
-	// de compteurs (grand nombre + %, puis phrases techniques) est abandonnée au profit
-	// d'un seul bloc de lecture. Hiérarchie, dans cet ordre :
-	//   1. le nom de l'artiste (élément le plus grand) ;
-	//   2. la mention la plus fréquente — l'enseignement que le graphique détaille ensuite ;
-	//   3. le récit chiffré (volume concerné, part de la mention, nombre de musées) ;
-	//   4. le repère méthodologique, en registre secondaire.
+	// ÉDITORIAL fondé sur les données. Refonte du 2026-07-23 : le bandeau répond à UNE
+	// seule question — « quelle est l'ampleur du phénomène pour cet artiste ? ». La
+	// répartition des mentions (quelle formule domine, dans quelle proportion) a QUITTÉ
+	// le bandeau : elle appartient au seul graphique, qui ne doit plus la raconter deux
+	// fois. Le bandeau garde donc, dans cet ordre :
+	//   1. le nom de l'artiste (le plus grand), avec le pont vers son nom Joconde ;
+	//   2. la courte bio factuelle ;
+	//   3. le volume d'œuvres concernées et le nombre de musées ;
+	//   4. le repère de contexte, en registre secondaire.
 	// Les nombres vivent DANS les phrases : ni compteur, ni carte, ni KPI.
 	//
 	// Vocabulaire public : « œuvres associées à son nom » — jamais « œuvres de X »,
 	// puisqu'elles ne lui sont précisément PAS directement attribuées. L'unité technique
 	// reste la notice Joconde, expliquée en page Méthode (cadrage 2026-07-19/20).
 	//
-	// Toutes les phrases sont générées depuis artistes.json (aucun texte écrit à la main
-	// par artiste, aucune valeur en dur) : accords, égalités entre mentions, mention
-	// intégralement portée par la couche de libellés publics (familles-public.js).
+	// Toutes les valeurs viennent d'artistes.json (aucune écrite à la main par artiste).
 	import PortraitMaitre from '$lib/PortraitMaitre.svelte';
 	import { nombre } from '$lib/joconde.js';
-	import { FAMILLE_PUBLIC, ORDRE_FAMILLES } from '$lib/familles-public.js';
 	import { bioMaitre, nomCivilMaitre } from '$lib/editorial-maitres.js';
 
 	let { maitre, portrait } = $props();
@@ -29,33 +28,10 @@
 
 	// Total de RÉFÉRENCE = attributions directes + formulations prudentes (propre + doute).
 	// Il n'inclut PAS les copies « d'après » ni les catégories exclues par le pipeline :
-	// d'où « copies mises à part » dans la phrase de contexte (voir page Méthode).
+	// d'où « copies mises à part » dans la phrase de contexte (voir page Méthode). Le
+	// nombre de musées est celui des seules notices prudentes (maitre.nb_musees_doute).
 	const totalNom = $derived(maitre.propre + maitre.doute);
 	const pctDoute = $derived(totalNom ? Math.round((maitre.doute / totalNom) * 100) : 0);
-
-	// Mention(s) la (les) plus fréquente(s). En cas d'ÉGALITÉ EXACTE, on garde toutes les
-	// familles au maximum, ordonnées par ORDRE_FAMILLES (jamais l'ordre accidentel des
-	// données) : aucune n'est choisie arbitrairement.
-	const dominance = $derived.by(() => {
-		const max = Math.max(...maitre.familles.map((f) => f.notices));
-		const codes = maitre.familles
-			.filter((f) => f.notices === max)
-			.map((f) => f.code)
-			.sort((a, b) => ORDRE_FAMILLES.indexOf(a) - ORDRE_FAMILLES.indexOf(b));
-		return { codes, notices: max, toutes: max === maitre.doute };
-	});
-
-	// Énumération française des mentions citées : la première garde sa majuscule (elle
-	// ouvre la phrase), les suivantes passent en bas de casse — « "Attribué à" et
-	// "de son école" sont les mentions les plus fréquentes. »
-	const bas = (s) => s.charAt(0).toLowerCase() + s.slice(1);
-	const citations = $derived(
-		dominance.codes.map((c, i) => {
-			const t = FAMILLE_PUBLIC[c].citation;
-			return i === 0 ? t : bas(t);
-		})
-	);
-	const sep = (i, len) => (i === len - 1 ? '' : i === len - 2 ? ' et ' : ', ');
 </script>
 
 <div class="bandeau">
@@ -75,32 +51,16 @@
 			<p class="bio">{bioMaitre(maitre.nom)}</p>
 		{/if}
 
-		<!-- CONSTAT : la mention réellement la plus fréquente, égalités comprises. -->
-		<p class="constat">
-			{#each citations as c, i}«&nbsp;{c}&nbsp;»{sep(i, citations.length)}{/each}
-			{citations.length === 1 ? 'est la mention la plus fréquente.' : 'sont les mentions les plus fréquentes.'}
-		</p>
-
-		<!-- RÉCIT CHIFFRÉ : les nombres intégrés aux phrases, jamais isolés. -->
+		<!-- AMPLEUR : le volume d'œuvres concernées, et où elles sont conservées.
+		     Ni mention dominante, ni proportion : cela appartient au graphique. -->
 		<p class="recit">
-			{#if dominance.toutes}
-				<!-- Toutes les œuvres concernées portent la même mention (aucune autre
-				     famille) : « 80 … portent toutes cette mention » évite le doublon
-				     « parmi les 80 …, 80 portent ». -->
-				Les <strong class="donnee">{fr(maitre.doute)}&nbsp;œuvres</strong> associées à son
-				nom sans lui être directement attribuées portent toutes cette mention.
-			{:else}
-				Parmi les <strong class="donnee">{fr(maitre.doute)}&nbsp;œuvres</strong> associées
-				à son nom sans lui être directement attribuées,
-				<strong class="donnee">{fr(dominance.notices)}</strong>
-				{dominance.notices === 1 ? 'porte' : 'portent'}
-				{citations.length === 1 ? 'cette mention' : 'chacune de ces mentions'}.
-			{/if}
+			<strong class="donnee">{fr(maitre.doute)}&nbsp;œuvres</strong> sont associées à son
+			nom sans lui être directement attribuées.
 			{#if maitre.nb_musees_doute > 1}
-				Ces œuvres sont réparties dans
+				Elles sont réparties dans
 				<strong class="donnee">{fr(maitre.nb_musees_doute)}&nbsp;musées</strong>.
 			{:else if maitre.nb_musees_doute === 1}
-				Ces œuvres sont toutes conservées dans un même musée.
+				Elles sont toutes conservées dans un même musée.
 			{/if}
 		</p>
 
@@ -164,21 +124,11 @@
 		font-style: italic;
 	}
 
-	/* Deuxième niveau visuel : le constat éditorial, en Fraunces. Plus présent que
-	   chacun des nombres, sans jamais atteindre le corps du nom. */
-	.constat {
-		margin: var(--espace-3) 0 0;
-		font-family: var(--police-titre);
-		font-size: 1.35rem;
-		font-weight: 600;
-		line-height: 1.3;
-		letter-spacing: -0.005em;
-		max-width: 30rem;
-	}
-
+	/* Ampleur du phénomène : texte courant, le nom reste l'élément dominant. Le
+	   volume et les musées sont les seules données du bandeau. */
 	.recit {
-		margin: var(--espace-3) 0 0;
-		font-size: var(--taille-base);
+		margin: var(--espace-4) 0 0;
+		font-size: var(--taille-m);
 		line-height: 1.65;
 		max-width: 32rem;
 	}
@@ -213,9 +163,6 @@
 		}
 		.bandeau-portrait {
 			justify-self: start;
-		}
-		.constat {
-			font-size: 1.25rem;
 		}
 	}
 </style>
