@@ -48,12 +48,12 @@
 	const y = (v) => Y_BASE - part(v) * Y_HAUTEUR;
 	// position d'une graduation exprimée en pourcentage (l'axe, pas les points)
 	const yPart = (p) => Y_BASE - (p / 100) * Y_HAUTEUR;
-	// Dot plot (2026-07-23) : rayon CONSTANT. La position verticale (le pourcentage)
-	// porte seule la mesure. Faire varier en plus la surface racontait deux fois la
-	// même information — le nombre et la part reposent sur le même dénominateur. Le
-	// point actif est à peine renforcé au survol/focus (voir R_ACTIF, .point:hover).
-	const R = 6;
-	const R_ACTIF = 8;
+	// Rayon VARIABLE (rétabli le 2026-07-27, choix utilisateur) : plus la mention
+	// est fréquente, plus le point est gros — de 6 (part nulle) à 16 (100 %). La
+	// taille constante essayée le 2026-07-23 est abandonnée. Le point ACTIF est
+	// agrandi de +2 par-dessus sa taille propre (survol/focus/sélection).
+	const rayon = (v) => 6 + part(v) * 10;
+	const RENFORT_ACTIF = 2;
 
 	// Bandes de territoire : plages de colonnes contiguës, calculées depuis la
 	// primitive (territoires.js) et l'ordre de l'axe. x1/x2 = bords des colonnes.
@@ -257,7 +257,9 @@
 					data-code={p.code}
 					cx={p.x}
 					cy={p.cy}
-					r={interaction && interaction.code === p.code ? R_ACTIF : R}
+					r={interaction && interaction.code === p.code
+						? rayon(p.notices) + RENFORT_ACTIF
+						: rayon(p.notices)}
 					style="fill: {p.couleur}"
 					fill-opacity={opacite(p.code)}
 					stroke="#fff"

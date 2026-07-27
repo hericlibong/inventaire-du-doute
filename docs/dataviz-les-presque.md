@@ -28,8 +28,9 @@ ressemble, et **en quoi elle s'éloigne encore de la vision visée** (une
 > de musées), le graphique dit la **répartition**, sans jamais se répéter. Le graphique porte
 > un **titre stable** (« Répartition des mentions », le nom de l'artiste étant dans le
 > bandeau) et **une phrase factuelle générée par règle déterministe**
-> (`phrase-repartition.js`, testée hors bundler). Le nuage devient un **dot plot à points de
-> taille constante** (la hauteur = le pourcentage porte seule la mesure). Les infobulles
+> (`phrase-repartition.js`, testée hors bundler). Le nuage : la hauteur d'un point porte le
+> pourcentage ; sa **taille reste variable** (`6 + part × 10` — la taille constante essayée
+> brièvement a été abandonnée le 2026-07-27, choix utilisateur). Les infobulles
 > affichent « N œuvres sur T — P % » + une **définition factuelle canonique** (champ
 > `definition` de `familles-public.js`). Vocabulaire du profil unifié en « œuvres
 > concernées ». La phrase « de gauche à droite… » est retirée. Détail : `docs/decisions.md`,

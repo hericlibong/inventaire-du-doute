@@ -2,6 +2,17 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-27 (quater) — Retour aux points de taille variable
+
+Choix utilisateur : la taille constante des points (essayée le 2026-07-23, section « Dot
+plot ») est **abandonnée**. On revient à la **formule variable** `rayon = 6 + part × 10` —
+plus la mention est fréquente, plus le point est gros (de 6 à 16). L'interactivité validée
+la veille est **conservée** : le point actif est agrandi de +2 par-dessus sa taille propre,
+les autres restent discrètement atténués. Rien d'autre ne change. La note de
+`dataviz-les-presque.md` est mise à jour ; l'argument « double encodage » qui avait motivé la
+taille constante ne prime pas ici — c'est une préférence d'affichage, tranchée par
+l'utilisateur.
+
 ## 2026-07-27 (ter) — Interaction graphique ↔ légende, bidirectionnelle
 
 Le survol d'un point éclairait déjà sa mention dans la légende. On ajoute le sens inverse —
