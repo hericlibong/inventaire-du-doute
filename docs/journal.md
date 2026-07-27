@@ -2,6 +2,38 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-27 — Le graphique et sa légende se répondent
+
+Jusqu'ici, survoler un point éclairait sa mention dans la légende. Le sens inverse manquait :
+on pouvait lire « de son école » dans la légende sans savoir quel point c'était. Désormais
+survoler ou choisir une mention allume le point et ouvre son infobulle — les deux sens du
+même dialogue.
+
+Le piège, dans ce genre de fonctionnalité, c'est de finir avec deux machines à états qui se
+contredisent — une pour le graphe, une pour la légende. On a tenu à n'en avoir qu'une seule.
+Un objet dit tout : quelle mention, dans quel mode (un survol passager ou une sélection qui
+reste), et d'où vient l'ordre. Le point et la mention lisent le même objet ; ils ne peuvent
+pas diverger.
+
+Deux façons d'activer, donc. Le survol et le focus posent une activation passagère, qui
+s'efface dès qu'on s'en va. Le clic, le toucher, Entrée ou Espace posent une sélection qui
+tient : elle survit au survol qui traverse, et ne se referme que si on la rappuie, si on en
+choisit une autre, si on presse Échap ou si on touche ailleurs. On a soigné la chorégraphie
+des événements — un clic déclenche focus, pointer et click à la suite — pour qu'aucune
+séquence n'ouvre puis referme aussitôt.
+
+L'infobulle s'ancre toujours au vrai point, même quand c'est la légende qu'on a touchée.
+Sauf sur mobile : là, la légende est sous le graphe, et si le point a défilé hors de l'écran,
+l'infobulle s'affiche à la place juste sous la mention, là où le doigt vient de se poser.
+
+Côté accessibilité, les mentions présentes sont devenues de vrais boutons — clavier, focus
+visible, `aria-pressed` pour dire « celle-ci est sélectionnée », et un nom lu à voix haute qui
+donne le libellé, le nombre et le pourcentage. Les mentions qu'un artiste ne porte pas
+restent affichées mais éteintes : grisées, non cliquables, sans curseur trompeur, avec un
+« aucune œuvre concernée » que seul le lecteur d'écran entend. Et l'état allumé ne se voit
+pas qu'à la couleur : une graisse, un soulignement, un filet. Les trois titres de territoires,
+eux, ne réagissent à rien — ce ne sont pas des mentions.
+
 ## 2026-07-26 — Le profil arrête de se répéter
 
 L'onglet Profil disait deux fois la même chose. Le bandeau annonçait « "De son école" est la

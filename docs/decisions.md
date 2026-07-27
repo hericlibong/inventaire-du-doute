@@ -2,6 +2,63 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-27 (ter) — Interaction graphique ↔ légende, bidirectionnelle
+
+Le survol d'un point éclairait déjà sa mention dans la légende. On ajoute le sens inverse —
+survoler ou sélectionner une mention active le point et ouvre son infobulle — via **un seul
+état partagé**, sans deux systèmes séparés.
+
+### Un état unique
+
+`interaction = { code, mode, source, ancre, … }` pilote à la fois le point actif, l'entrée
+de légende active et l'infobulle. Deux modes dans le même objet :
+
+- **temporaire** — survol (`pointerenter`) ou focus ; refermé au départ (`pointerleave`) ou
+  au blur ;
+- **selectionne** — clic, Entrée, Espace ou toucher ; persistant jusqu'à un second appui sur
+  la même mention, la sélection d'une autre, Échap, ou un appui extérieur.
+
+Règles clés : un **survol n'écrase jamais une sélection** (garde dans `ouvrir`), un
+`pointerleave`/blur ne ferme **que** le temporaire, `stopPropagation` sur les clics empêche
+le gestionnaire fenêtre de refermer aussitôt (pas d'ouverture-fermeture immédiate dans la
+succession focus → pointer → clic). **Tout changement d'artiste remet l'état à zéro** (un
+`$effect` sur `maitre.nom`).
+
+### Position de l'infobulle
+
+Toujours ancrée aux **coordonnées réelles du point** (`svgEl.querySelector('circle[data-code]')`),
+même quand l'activation vient de la légende. Repli mobile : si le point est **hors de la
+fenêtre** et que l'activation vient de la légende, l'infobulle s'affiche **en flux, sous la
+mention active** de la légende (les deux étant alors visibles ensemble, le graphe étant
+défilé plus haut). Pas de défilement automatique brutal.
+
+### Légende accessible
+
+- Mention **présente** : vrai `<button type="button">`, symétrique du point — survol/focus →
+  temporaire, clic/Entrée/Espace → sélection. `aria-pressed` signale la sélection
+  persistante ; nom accessible = libellé + nombre + pourcentage. État actif visible **hors
+  couleur** : fond léger + graisse + libellé souligné (temporaire), filet encadrant en plus
+  (sélection).
+- Mention **absente** (valeur zéro ou inexistante) : simple `<span>` atténué, **non
+  focusable, sans rôle ni gestionnaire, curseur normal**, avec une indication accessible
+  « — aucune œuvre concernée ». Aucune infobulle, aucune animation.
+
+Les trois **titres de territoire** restent non interactifs.
+
+### Composant partagé : évolution additive
+
+`Infobulle.svelte` reçoit une prop **`enFlux`** (défaut `false`) : rendu en position statique,
+pleine largeur, pour le repli mobile. Rétrocompatible — carte, jauges et graphe inchangés
+quand la prop est absente.
+
+### Vérifié
+
+Mention à valeur forte (Michel-Ange, « de son école » 110), mention à une œuvre (Ingres,
+« ? » 1/203 — « 1 œuvre »), mention absente (Adolph Menzel, sept mentions atténuées et
+inertes), activation depuis la légende (point agrandi + autres atténués + infobulle au
+point), repli en flux sous la légende (mobile). Build et 8 tests JS au vert ; 184 pytest
+inchangés. Données, textes et structure du graphique non modifiés.
+
 ## 2026-07-26 — Onglet « Profil » : bandeau et graphique se partagent le travail
 
 Palier de stabilisation de l'onglet Profil, cadré par l'utilisateur. Principe directeur :

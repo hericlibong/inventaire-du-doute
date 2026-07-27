@@ -23,16 +23,21 @@
 	// fixe    : position: fixed — nécessaire quand l'appelant vit dans un
 	//           conteneur à overflow (la liste des maîtres défile), qui
 	//           rognerait un panneau positionné en absolu.
-	let { tt, x, y, dessous = false, fixe = false } = $props();
+	// enFlux  : rendu EN FLUX (position statique, pleine largeur) — additif et
+	//           rétrocompatible (défaut false). Sert le repli mobile du graphe :
+	//           quand le point est hors de la fenêtre, le même contenu s'affiche
+	//           sous la mention active de la légende. x/y sont alors ignorés.
+	let { tt, x, y, dessous = false, fixe = false, enFlux = false } = $props();
 </script>
 
 <div
 	class="tooltip"
 	class:dessous
 	class:fixe
+	class:en-flux={enFlux}
 	role="tooltip"
 	aria-hidden="true"
-	style="left: {x}px; top: {y}px"
+	style={enFlux ? undefined : `left: ${x}px; top: ${y}px`}
 >
 	<p class="tt-header">
 		{#if tt.headerPastille}
@@ -91,6 +96,18 @@
 
 	.tooltip.fixe {
 		position: fixed;
+	}
+
+	/* Rendu en flux (repli mobile) : le panneau s'insère sous la mention active de
+	   la légende, en pleine largeur, sans positionnement absolu ni translation. */
+	.tooltip.en-flux {
+		position: static;
+		transform: none;
+		width: auto;
+		min-width: 0;
+		max-width: 100%;
+		margin: 0.4rem 0 0.2rem;
+		box-shadow: 0 2px 8px rgba(43, 30, 20, 0.12);
 	}
 
 	.tooltip.dessous {

@@ -82,39 +82,86 @@
 		}).filter(Boolean)
 	);
 
-	// Tooltip HTML custom (le <title> SVG natif, non stylable, est abandonné —
-	// décision 2026-07-10). Position calculée depuis la position réelle du point à
-	// l'écran (le SVG a son propre repère viewBox). `dessous` bascule le panneau sous
-	// le point quand il est trop haut, pour ne jamais déborder en tête de graphe.
+	// --- Interaction graphique ↔ légende : UN SEUL état partagé (2026-07-27) ------
+	// `interaction` pilote À LA FOIS le point actif, l'entrée de légende active et
+	// l'ouverture de l'infobulle. Deux modes dans le même objet :
+	//   temporaire  — survol ou focus (souris/clavier), refermé au départ / au blur ;
+	//   selectionne — clic, Entrée, Espace ou toucher : persistant jusqu'à un second
+	//                 appui, une autre sélection, Échap ou un appui extérieur.
+	// `ancre` dit OÙ placer l'infobulle : au POINT (défaut) ou, si le point est hors
+	// de la fenêtre (mobile, légende sous le graphe), sous la MENTION de la légende.
+	// Le tooltip <title> SVG natif reste abandonné (décision 2026-07-10).
 	let regardEl;
-	let actif = $state(null);
+	let svgEl;
+	let interaction = $state(null); // { code, mode, source, ancre, x?, y?, dessous? }
 
-	// `actif.code` sert AUSSI à mettre en évidence la mention dans la légende
-	// (cahier des charges 2026-07-23) : survol/focus d'un point → sa ligne s'éclaire.
-	function montre(event, p) {
-		const cible = event.currentTarget.getBoundingClientRect();
+	// Un changement d'artiste remet l'interaction à zéro.
+	$effect(() => {
+		maitre.nom;
+		interaction = null;
+	});
+
+	// Mentions RÉELLEMENT présentes (un point existe) et leur compte : sert le nom
+	// accessible de la légende et écarte les mentions absentes (non interactives).
+	const compte = $derived(new Map(maitre.familles.map((f) => [f.code, f.notices])));
+	const present = (code) => compte.has(code);
+	const pointActif = $derived(
+		interaction ? points.find((p) => p.code === interaction.code) ?? null : null
+	);
+
+	// Position de l'infobulle : TOUJOURS les coordonnées réelles du point dans le
+	// SVG. Exception (repli mobile) : si le point est hors de la fenêtre et que
+	// l'activation vient de la légende, on ancre sous la mention (ancre = legende).
+	function positionner(code, source) {
+		const circle = svgEl?.querySelector(`circle[data-code="${code}"]`);
+		if (!circle || !regardEl) return { ancre: 'point', x: 0, y: 0, dessous: false };
+		const c = circle.getBoundingClientRect();
 		const hote = regardEl.getBoundingClientRect();
-		const y = cible.top - hote.top;
-		actif = {
-			code: p.code,
-			tt: p.tt,
-			x: cible.left + cible.width / 2 - hote.left,
-			y,
-			dessous: y < 90
-		};
+		const visible = c.top >= 0 && c.bottom <= window.innerHeight;
+		if (source === 'legende' && !visible) return { ancre: 'legende' };
+		const y = c.top - hote.top;
+		return { ancre: 'point', x: c.left + c.width / 2 - hote.left, y, dessous: y < 90 };
 	}
 
-	function cache() {
-		actif = null;
+	// Ouvre (ou remplace) l'interaction. Un SURVOL n'écrase jamais une sélection.
+	function ouvrir(code, mode, source) {
+		if (!present(code)) return;
+		if (mode === 'temporaire' && interaction?.mode === 'selectionne') return;
+		interaction = { code, mode, source, ...positionner(code, source) };
 	}
 
-	// Sur mobile, un point n'a ni survol ni focus clavier : le toucher bascule
-	// l'infobulle (re-toucher le même point la referme ; toucher ailleurs aussi).
-	function bascule(event, p) {
-		event.stopPropagation();
-		if (actif && actif.code === p.code) cache();
-		else montre(event, p);
+	// Ferme une activation TEMPORAIRE seulement (départ souris / perte de focus) :
+	// une sélection persistante survit au survol qui passe.
+	function relacher() {
+		if (interaction?.mode === 'temporaire') interaction = null;
 	}
+
+	// Sélection persistante : bascule (un second appui sur la même mention ferme).
+	// stopPropagation empêche le gestionnaire fenêtre de refermer aussitôt.
+	function selectionner(event, code, source) {
+		event?.stopPropagation();
+		if (!present(code)) return;
+		if (interaction?.mode === 'selectionne' && interaction.code === code) {
+			interaction = null;
+			return;
+		}
+		ouvrir(code, 'selectionne', source);
+	}
+
+	function fermer() {
+		interaction = null;
+	}
+
+	// Nom accessible d'une mention de la légende : libellé + nombre + pourcentage.
+	function nomAccessible(code) {
+		const n = compte.get(code) ?? 0;
+		const mot = n === 1 ? 'œuvre' : 'œuvres';
+		const pct = maitre.doute ? Math.round((n / maitre.doute) * 100) : 0;
+		return `${FAMILLE_PUBLIC[code].label}, ${n} ${mot}, ${pct} %`;
+	}
+
+	// Opacité d'un point : plein s'il est actif, atténué si un AUTRE est actif.
+	const opacite = (code) => (!interaction ? 0.9 : interaction.code === code ? 1 : 0.35);
 
 	// Titre STABLE, identique pour tous les artistes (2026-07-23) : le graphique
 	// répond à « comment se répartissent les mentions ? ». Le nom de l'artiste est
@@ -131,7 +178,12 @@
 	);
 </script>
 
-<svelte:window onclick={cache} />
+<svelte:window
+	onclick={fermer}
+	onkeydown={(e) => {
+		if (e.key === 'Escape') fermer();
+	}}
+/>
 
 <figure class="nuage">
 	<!-- En-tête du graphique (2026-07-23) : titre STABLE « Répartition des mentions »
@@ -146,7 +198,7 @@
 
 	<div class="agencement">
 	<div class="graphe-hote" bind:this={regardEl}>
-		<svg viewBox="0 0 380 300" class="graphe" role="img"
+		<svg bind:this={svgEl} viewBox="0 0 380 300" class="graphe" role="img"
 			aria-label="Graphique des mentions de doute pour {maitre.nom}, en trois territoires de proximité (au plus près, autour du maître, dans son influence). Axe vertical : part des œuvres concernées, de 0 à 100 %, échelle commune à tous les maîtres">
 			<!-- Bandes de territoire (fond très léger) : posées EN PREMIER, sous tout le
 			     reste. Contiguës, sans marge ni cadre → une seule ligne de proximité,
@@ -196,43 +248,48 @@
 				>
 			{/each}
 
-			<!-- points : survol/focus → tooltip HTML custom ; aria-label = repli
-			     textuel pour lecteur d'écran (le <title> natif a disparu). Clavier :
-			     le focus affiche déjà l'infobulle ; Entrée/Espace la basculent
-			     (parité avec le toucher, et exigence a11y d'un handler clavier à
-			     côté du clic). -->
+			<!-- points : survol/focus → activation temporaire ; clic/Entrée/Espace/toucher
+			     → sélection persistante (état partagé avec la légende). `data-code`
+			     permet à la légende de retrouver la position réelle du point.
+			     aria-label = repli textuel pour lecteur d'écran. -->
 			{#each points as p (p.code)}
 				<circle
+					data-code={p.code}
 					cx={p.x}
 					cy={p.cy}
-					r={actif && actif.code === p.code ? R_ACTIF : R}
+					r={interaction && interaction.code === p.code ? R_ACTIF : R}
 					style="fill: {p.couleur}"
-					fill-opacity="0.9"
+					fill-opacity={opacite(p.code)}
 					stroke="#fff"
 					stroke-width="0.7"
 					class="point"
 					tabindex="0"
 					role="button"
 					aria-label={p.resume}
-					onmouseenter={(e) => montre(e, p)}
-					onmouseleave={cache}
-					onfocus={(e) => montre(e, p)}
-					onblur={cache}
-					onclick={(e) => bascule(e, p)}
+					onpointerenter={() => ouvrir(p.code, 'temporaire', 'point')}
+					onpointerleave={relacher}
+					onfocus={() => ouvrir(p.code, 'temporaire', 'point')}
+					onblur={relacher}
+					onclick={(e) => selectionner(e, p.code, 'point')}
 					onkeydown={(e) => {
 						if (e.key === 'Enter' || e.key === ' ') {
 							e.preventDefault();
-							bascule(e, p);
+							selectionner(e, p.code, 'point');
 						}
 					}}
 				/>
 			{/each}
 		</svg>
 
-		<!-- Infobulle partagée (Infobulle.svelte) : header / valeur / précision /
-		     mention type. Le contenu accessible passe par l'aria-label du point. -->
-		{#if actif}
-			<Infobulle tt={actif.tt} x={actif.x} y={actif.y} dessous={actif.dessous} />
+		<!-- Infobulle ancrée AU POINT (cas normal). Le contenu accessible passe par
+		     l'aria-label du point. -->
+		{#if pointActif && interaction?.ancre === 'point'}
+			<Infobulle
+				tt={pointActif.tt}
+				x={interaction.x}
+				y={interaction.y}
+				dessous={interaction.dessous}
+			/>
 		{/if}
 	</div>
 
@@ -246,13 +303,52 @@
 		<ol class="territoires">
 			{#each TERRITOIRES as t (t.id)}
 				<li class="zone" data-zone={t.id}>
+					<!-- Les titres de territoire NE sont PAS interactifs (seules les huit
+					     mentions le sont). -->
 					<span class="zone-titre">{t.titre}</span>
 					<span class="zone-mentions">
 						{#each t.codes as code (code)}
-							<span class="mention" class:active={actif && actif.code === code}>
-								<span class="pastille" style="background: {FAMILLE_PUBLIC[code].couleur}"></span>
-								{FAMILLE_PUBLIC[code].label}
-							</span>
+							{#if present(code)}
+								<!-- Mention présente : vrai bouton, symétrique du point. Survol/focus
+								     → activation temporaire ; clic/Entrée/Espace → sélection. -->
+								<button
+									type="button"
+									class="mention"
+									class:active={interaction?.code === code}
+									class:selectionne={interaction?.mode === 'selectionne' &&
+										interaction.code === code}
+									aria-pressed={interaction?.mode === 'selectionne' &&
+										interaction.code === code}
+									aria-label={nomAccessible(code)}
+									onpointerenter={() => ouvrir(code, 'temporaire', 'legende')}
+									onpointerleave={relacher}
+									onfocus={() => ouvrir(code, 'temporaire', 'legende')}
+									onblur={relacher}
+									onclick={(e) => selectionner(e, code, 'legende')}
+								>
+									<span
+										class="pastille"
+										style="background: {FAMILLE_PUBLIC[code].couleur}"
+									></span>
+									<span class="mention-label">{FAMILLE_PUBLIC[code].label}</span>
+								</button>
+								<!-- Repli mobile : quand le point est hors de la fenêtre, l'infobulle
+								     s'affiche EN FLUX, sous la mention active. -->
+								{#if interaction?.ancre === 'legende' && interaction.code === code && pointActif}
+									<Infobulle tt={pointActif.tt} enFlux />
+								{/if}
+							{:else}
+								<!-- Mention absente : ni bouton, ni focus, ni curseur d'interaction ;
+								     libellé atténué + indication accessible. -->
+								<span class="mention absente">
+									<span
+										class="pastille"
+										style="background: {FAMILLE_PUBLIC[code].couleur}"
+									></span>
+									<span class="mention-label">{FAMILLE_PUBLIC[code].label}</span>
+									<span class="visuellement-cache"> — aucune œuvre concernée</span>
+								</span>
+							{/if}
 						{/each}
 					</span>
 				</li>
@@ -302,12 +398,8 @@
 
 	.point {
 		cursor: pointer;
+		/* l'opacité est portée par l'attribut fill-opacity (état d'interaction) */
 		transition: fill-opacity 0.12s ease, r 0.1s ease;
-	}
-
-	.point:hover,
-	.point:focus-visible {
-		fill-opacity: 1;
 	}
 
 	.point:focus-visible {
@@ -418,20 +510,54 @@
 		gap: 0.2rem;
 	}
 
+	/* Mention PRÉSENTE = vrai bouton (reset des styles natifs), symétrique du point. */
 	.mention {
 		display: flex;
 		align-items: center;
 		gap: 0.4rem;
+		width: 100%;
+		margin: 0;
+		padding: 0.12rem 0.3rem;
+		font-family: inherit;
 		font-size: 0.8rem;
+		text-align: left;
 		color: var(--couleur-encre);
+		background: none;
+		border: 0;
 		border-radius: 3px;
 		transition: background 0.1s ease;
 	}
 
-	/* Mention mise en évidence quand son point est survolé/focusé (2026-07-23). */
+	button.mention {
+		cursor: pointer;
+	}
+
+	button.mention:focus-visible {
+		outline: 2px solid var(--couleur-encre);
+		outline-offset: 1px;
+	}
+
+	/* État ACTIF (survol/focus, temporaire OU sélectionné) — signalé AUSSI hors
+	   couleur : fond léger, graisse, libellé souligné. */
 	.mention.active {
 		background: rgba(43, 30, 20, 0.08);
 		font-weight: 600;
+	}
+	.mention.active .mention-label {
+		text-decoration: underline;
+		text-underline-offset: 2px;
+	}
+
+	/* SÉLECTION persistante : un filet encadre en plus, distinct du simple survol. */
+	.mention.selectionne {
+		box-shadow: inset 0 0 0 1px var(--couleur-encre-douce);
+	}
+
+	/* Mention ABSENTE : non interactive, atténuée, curseur normal. */
+	.mention.absente {
+		color: var(--couleur-encre-douce);
+		opacity: 0.55;
+		cursor: default;
 	}
 
 	.pastille {
@@ -439,6 +565,19 @@
 		height: 0.6rem;
 		border-radius: 50%;
 		flex: none;
+	}
+
+	/* Visible pour les lecteurs d'écran, masqué à l'affichage. */
+	.visuellement-cache {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		padding: 0;
+		margin: -1px;
+		overflow: hidden;
+		clip: rect(0 0 0 0);
+		white-space: nowrap;
+		border: 0;
 	}
 
 	/* Tablette et mobile : la légende repasse SOUS le graphique (une colonne de 30 %
