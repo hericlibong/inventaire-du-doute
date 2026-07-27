@@ -76,8 +76,8 @@
 				x: colonneX(i),
 				cy: y(fam.notices),
 				notices: fam.notices,
-				tt: tooltipFamille(f.code, maitre.nom, fam.notices, maitre.doute),
-				resume: resumeFamille(f.code, maitre.nom, fam.notices, maitre.doute)
+				tt: tooltipFamille(f.code, maitre.nom, fam.notices),
+				resume: resumeFamille(f.code, maitre.nom, fam.notices)
 			};
 		}).filter(Boolean)
 	);

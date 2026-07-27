@@ -151,28 +151,27 @@ export function notices(n) {
 	return `${nombre(n)} ${Math.abs(n) === 1 ? 'notice' : 'notices'}`;
 }
 
-// Valeur du tooltip du graphique : « 110 œuvres sur les 148 » (2026-07-27). Le
-// POURCENTAGE n'apparaît plus dans l'infobulle : il ne sert qu'à placer le point
-// en hauteur (calcul dans NuageFamilles). L'infobulle donne le nombre exact et le
-// total ; l'œil lit la part sur l'axe. Vocabulaire public « œuvres » (onglet
+// Valeur du tooltip du graphique : « 110 œuvres », « 1 œuvre » (2026-07-27 bis).
+// Ni pourcentage ni total : le point est déjà placé à sa hauteur (la part se lit
+// sur l'axe) et le total figure dans le bandeau. L'infobulle ne donne que le
+// nombre exact de la mention survolée. Vocabulaire public « œuvres » (onglet
 // Profil) ; `notices()` reste employée dans les onglets Œuvres et Musées.
-function valeurGraphe(n, total) {
+function valeurGraphe(n) {
 	const mot = Math.abs(n) === 1 ? 'œuvre' : 'œuvres';
-	return `${nombre(n)} ${mot} sur les ${nombre(total)}`;
+	return `${nombre(n)} ${mot}`;
 }
 
 // Données du tooltip d'un point, prêtes à afficher (header / valeur / corps).
-// `n` = nombre d'œuvres de la mention ; `total` = œuvres concernées de l'artiste.
-// Trois lignes seulement (2026-07-27) : la mention, « N œuvres sur les T », la
-// définition factuelle. Plus de footer « Mention type » (retiré du graphique ;
-// `mention`/`montrerMention` restent utilisés par la page « Comprendre les
-// mentions »).
-export function tooltipFamille(code, nomMaitre, n, total) {
+// `n` = nombre d'œuvres de la mention. Trois lignes seulement : la mention,
+// « N œuvres », la définition factuelle. Plus de footer « Mention type » (retiré
+// du graphique ; `mention`/`montrerMention` restent utilisés par la page
+// « Comprendre les mentions »).
+export function tooltipFamille(code, nomMaitre, n) {
 	const f = FAMILLE_PUBLIC[code];
 	return {
 		header: f.header,
 		headerPastille: f.couleur, // pastille de la mention, dans la bande de tête
-		valeur: valeurGraphe(n, total),
+		valeur: valeurGraphe(n),
 		// dernière ligne : la définition factuelle canonique (pas `corps`, plus
 		// interprétatif et réservé à /echelle)
 		corps: f.definition
@@ -182,7 +181,7 @@ export function tooltipFamille(code, nomMaitre, n, total) {
 // Résumé linéaire pour les technologies d'assistance (lecteur d'écran) : le
 // tooltip HTML est visuel, on garde donc un équivalent textuel sur le point
 // lui-même (aria-label), puisque le <title> SVG natif disparaît.
-export function resumeFamille(code, nomMaitre, n, total) {
-	const t = tooltipFamille(code, nomMaitre, n, total);
+export function resumeFamille(code, nomMaitre, n) {
+	const t = tooltipFamille(code, nomMaitre, n);
 	return t.corps ? `${t.header} : ${t.valeur}. ${t.corps}` : `${t.header} : ${t.valeur}.`;
 }
