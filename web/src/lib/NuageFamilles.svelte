@@ -197,6 +197,11 @@
 
 	<div class="agencement">
 	<div class="graphe-hote" bind:this={regardEl}>
+		<!-- Titre de l'axe vertical (2026-07-27) : horizontal, au-dessus des
+		     graduations, aligné à gauche — dans le registre des titres de territoire,
+		     et sans texte tourné supplémentaire. Il nomme le dénominateur (les œuvres
+		     concernées) sans évoquer un degré de certitude. -->
+		<p class="axe-y-titre">Part parmi les œuvres concernées</p>
 		<svg bind:this={svgEl} viewBox="0 0 380 300" class="graphe" role="img"
 			aria-label="Graphique des mentions de doute pour {maitre.nom}, en trois territoires de proximité (au plus près, autour du maître, dans son influence). Axe vertical : part des œuvres concernées, de 0 à 100 %, échelle commune à tous les maîtres">
 			<!-- Bandes de territoire (fond très léger) : posées EN PREMIER, sous tout le
@@ -290,6 +295,13 @@
 				dessous={interaction.dessous}
 			/>
 		{/if}
+
+		<!-- Précaution de lecture (2026-07-27) : petit corps, atténué, italique — ce
+		     que MESURE la hauteur, et ce qu'elle ne mesure pas. Sans dominer le graphe. -->
+		<p class="note-lecture">
+			La hauteur montre la fréquence des formulations, non le degré de certitude des
+			attributions.
+		</p>
 	</div>
 
 	<!-- Clé de lecture : passée EN COLONNE À DROITE du graphe (2026-07-20), elle ne
@@ -393,6 +405,29 @@
 
 	.graphe-hote {
 		position: relative; /* repère du tooltip HTML positionné en absolu */
+	}
+
+	/* Titre de l'axe Y : horizontal, aligné à gauche, dans le registre des titres
+	   de territoire (petites capitales espacées, encre atténuée) sans les concurrencer. */
+	.axe-y-titre {
+		margin: 0 0 0.35rem;
+		font-family: var(--police-ui);
+		font-size: 0.68rem;
+		font-weight: 600;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		color: var(--couleur-encre-douce);
+	}
+
+	/* Précaution de lecture sous le graphe : petit corps atténué en italique, comme
+	   « En contexte » et les crédits d'image. Une note, pas un avertissement. */
+	.note-lecture {
+		margin: 0.7rem 0 0;
+		font-size: var(--taille-s);
+		font-style: italic;
+		line-height: 1.45;
+		color: var(--couleur-encre-douce);
+		max-width: 34rem;
 	}
 
 	.point {

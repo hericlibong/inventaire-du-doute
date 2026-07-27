@@ -2,6 +2,26 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-27 (quinquies) — Le graphe nomme son axe et précaution de lecture
+
+Deux petits ajouts au graphique du Profil, pour lever toute ambiguïté sur ce que mesure la
+hauteur.
+
+**Titre de l'axe Y** : « **Part parmi les œuvres concernées** » — horizontal, au-dessus des
+graduations, aligné à gauche, dans le registre visuel des titres de territoire (petites
+capitales espacées, encre atténuée, un cran plus léger pour ne pas les concurrencer). La
+formulation nomme le **dénominateur** sans évoquer un degré de certitude ; préférée à
+« pourcentage des mentions », plus ambigu. L'horizontal évite un texte tourné de plus à côté
+des libellés déjà inclinés.
+
+**Note de lecture** sous le graphe : « **La hauteur montre la fréquence des formulations, non
+le degré de certitude des attributions.** » — petit corps, italique, atténué, dans le style
+d'« En contexte » et des crédits d'image. Une précaution de lecture, pas un avertissement qui
+domine. Elle dit ce que la hauteur mesure **et** ce qu'elle ne mesure pas — cohérent avec la
+règle du projet (on lit ce que les musées écrivent, on n'évalue aucune certitude).
+
+Rien d'autre ne bouge : données, points, couleurs, interactivité inchangés.
+
 ## 2026-07-27 (quater) — Taille des points : un aller-retour, décision finale = constante
 
 Même journée, la préférence d'affichage a oscillé puis s'est fixée. L'utilisateur a d'abord
