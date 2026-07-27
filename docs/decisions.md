@@ -2,16 +2,15 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
-## 2026-07-27 (quater) — Retour aux points de taille variable
+## 2026-07-27 (quater) — Taille des points : un aller-retour, décision finale = constante
 
-Choix utilisateur : la taille constante des points (essayée le 2026-07-23, section « Dot
-plot ») est **abandonnée**. On revient à la **formule variable** `rayon = 6 + part × 10` —
-plus la mention est fréquente, plus le point est gros (de 6 à 16). L'interactivité validée
-la veille est **conservée** : le point actif est agrandi de +2 par-dessus sa taille propre,
-les autres restent discrètement atténués. Rien d'autre ne change. La note de
-`dataviz-les-presque.md` est mise à jour ; l'argument « double encodage » qui avait motivé la
-taille constante ne prime pas ici — c'est une préférence d'affichage, tranchée par
-l'utilisateur.
+Même journée, la préférence d'affichage a oscillé puis s'est fixée. L'utilisateur a d'abord
+demandé de revenir à la taille **variable** (`6 + part × 10`) ; la formule a été rétablie
+(commit `2f4a7f1`). Il est ensuite revenu sur ce choix (mea culpa explicite) : la **taille
+constante** est rétablie et **c'est la décision qui vaut** — `R = 6`, point actif à `R_ACTIF
+= 8`. La hauteur (le pourcentage) porte seule la mesure ; la taille ne code rien. Aucune de
+ces bascules n'a été publiée en dehors du serveur de développement. L'interactivité
+(agrandissement du point actif, atténuation des autres) est conservée dans tous les cas.
 
 ## 2026-07-27 (ter) — Interaction graphique ↔ légende, bidirectionnelle
 
