@@ -22,6 +22,13 @@ règle du projet (on lit ce que les musées écrivent, on n'évalue aucune certi
 
 Rien d'autre ne bouge : données, points, couleurs, interactivité inchangés.
 
+**Réglage du 2026-07-28** : ces deux éléments flottaient au bord de la colonne, comme s'ils
+entouraient le graphe au niveau de la page. Ils sont désormais **alignés sur la zone de
+tracé** (bord gauche du plot, `margin-left: calc(100% * 30 / 380)`) et **serrés** contre le
+graphe — le titre juste au-dessus, la note juste en dessous, mise en exergue par un **filet
+vertical** à gauche. Ils appartiennent visuellement au graphique. La note gagne « des
+points » : « La hauteur **des points** montre la fréquence des formulations… ».
+
 ## 2026-07-27 (quater) — Taille des points : un aller-retour, décision finale = constante
 
 Même journée, la préférence d'affichage a oscillé puis s'est fixée. L'utilisateur a d'abord

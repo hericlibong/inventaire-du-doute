@@ -296,11 +296,12 @@
 			/>
 		{/if}
 
-		<!-- Précaution de lecture (2026-07-27) : petit corps, atténué, italique — ce
-		     que MESURE la hauteur, et ce qu'elle ne mesure pas. Sans dominer le graphe. -->
+		<!-- Précaution de lecture (2026-07-27) : petit corps, atténué, italique, avec un
+		     filet vertical — ce que MESURE la hauteur, et ce qu'elle ne mesure pas.
+		     Alignée sur la zone de tracé et serrée sous le graphe : c'est SA note. -->
 		<p class="note-lecture">
-			La hauteur montre la fréquence des formulations, non le degré de certitude des
-			attributions.
+			La hauteur des points montre la fréquence des formulations, non le degré de
+			certitude des attributions.
 		</p>
 	</div>
 
@@ -407,10 +408,12 @@
 		position: relative; /* repère du tooltip HTML positionné en absolu */
 	}
 
-	/* Titre de l'axe Y : horizontal, aligné à gauche, dans le registre des titres
-	   de territoire (petites capitales espacées, encre atténuée) sans les concurrencer. */
+	/* Le titre de l'axe Y et la note APPARTIENNENT au graphe : leur bord gauche
+	   s'aligne sur la zone de tracé (l'axe X commence à X0 = 30 sur 380 de viewBox,
+	   soit ~7,9 % de la largeur), pas sur le bord de la colonne. */
 	.axe-y-titre {
-		margin: 0 0 0.35rem;
+		margin: 0 0 0.15rem;
+		margin-left: calc(100% * 30 / 380);
 		font-family: var(--police-ui);
 		font-size: 0.68rem;
 		font-weight: 600;
@@ -419,10 +422,14 @@
 		color: var(--couleur-encre-douce);
 	}
 
-	/* Précaution de lecture sous le graphe : petit corps atténué en italique, comme
-	   « En contexte » et les crédits d'image. Une note, pas un avertissement. */
+	/* Précaution de lecture, serrée sous le graphe et mise en exergue par un filet
+	   vertical (comme une note de lecture attachée au tracé). Petit corps atténué en
+	   italique, dans le style d'« En contexte » et des crédits d'image. */
 	.note-lecture {
-		margin: 0.7rem 0 0;
+		margin: 0.35rem 0 0;
+		margin-left: calc(100% * 30 / 380);
+		padding-left: 0.6rem;
+		border-left: 2px solid var(--couleur-trait);
 		font-size: var(--taille-s);
 		font-style: italic;
 		line-height: 1.45;
