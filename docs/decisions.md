@@ -2,6 +2,36 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-28 — Refonte de la disposition de « Explorer les artistes »
+
+Chantier de disposition (textes, données, graphique et interactions inchangés), mené sur une
+branche dédiée `refacto/les-presque-disposition` puis mergé dans `feat/les-presque-barres`
+(merge `f8f0d5c`).
+
+**Une seule grille continue à deux colonnes**, mêmes limites sur toute la page. Le bandeau
+introductif horizontal pleine largeur et la séparation entre entrée et exploration sont
+supprimés. L'introduction (titre + texte + lien Méthode + note de prudence) rejoint la
+**colonne gauche**, au-dessus de « Choisir un artiste » + recherche/tri/liste (Repertoire).
+La **colonne droite** porte le profil (portrait/identité + chiffres, onglets, contenu actif).
+Le haut du titre s'aligne sur le haut du portrait ; le début du graphique apparaît dès le
+premier écran d'un desktop courant.
+
+**Colonne gauche sticky** sur desktop (hauteur bornée à l'écran, défilement interne), sans
+bloquer le défilement de la colonne droite. **Mobile (≤ 720 px, seuil du Repertoire)** : une
+colonne — titre + intro, **sélecteur replié** (la liste ne s'affiche pas avant le profil),
+profil, onglets, contenu.
+
+**Page centrée** (2e temps du chantier) : la route est en pleine largeur (`main.pleine`), elle
+gère donc sa gouttière. La grille était collée au bord gauche → conteneur centré
+(`max-width: 92rem`, `width: 100%`, `margin-inline: auto`, `padding-inline: clamp(1.25rem, 3vw,
+3rem)`, `box-sizing: border-box`), marges gauche/droite équilibrées, le graphe gardant sa
+largeur (≈ 60 rem). Espace masthead → grille augmenté : `padding-top: clamp(1.5rem, 3.5vw,
+3.5rem)`. Composition centrée, textes/répertoire/profil/graphe restant alignés à gauche.
+
+Point resté approximatif (à résoudre à la passe éditoriale) : la recherche démarre un peu plus
+bas que les onglets — le texte introductif complet remplit la colonne étroite ; l'alignement
+se resserrera quand l'intro sera raccourcie.
+
 ## 2026-07-27 (quinquies) — Le graphe nomme son axe et précaution de lecture
 
 Deux petits ajouts au graphique du Profil, pour lever toute ambiguïté sur ce que mesure la
