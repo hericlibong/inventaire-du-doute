@@ -99,9 +99,19 @@
 </div>
 
 <style>
+	/* La route est en pleine largeur (main.pleine) : elle gère elle-même sa
+	   gouttière. Conteneur centré (2026-07-28) — la grille n'est plus collée au bord
+	   gauche : largeur fluide bornée, centrée, padding horizontal responsive. Le
+	   masthead reste à sa propre largeur ; ici on aère l'exploration. */
 	.page {
-		/* padding horizontal porté par <main> (layout) ; ici, seulement le vertical. */
-		padding-block: var(--espace-4) var(--espace-6);
+		box-sizing: border-box;
+		width: 100%;
+		max-width: 92rem;
+		margin-inline: auto;
+		padding-inline: clamp(1.25rem, 3vw, 3rem);
+		/* espace masthead → grille : ~1,5 rem (mobile) à ~3,5 rem (desktop). */
+		padding-top: clamp(1.5rem, 3.5vw, 3.5rem);
+		padding-bottom: var(--espace-6);
 	}
 
 	/* --- Grille continue à deux colonnes, mêmes limites sur toute la page. --- */
