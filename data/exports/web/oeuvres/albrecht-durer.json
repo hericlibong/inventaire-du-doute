@@ -1,0 +1,181 @@
+{
+ "slug": "albrecht-durer",
+ "nom": "Albrecht Dürer",
+ "doute": 19,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 7
+  },
+  {
+   "code": "point_interrogation",
+   "notices": 1
+  },
+  {
+   "code": "ecole_de",
+   "notices": 10
+  },
+  {
+   "code": "genre_de",
+   "notices": 1
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "00000055631",
+   "titre": "UN FAUCONNIER ; PAYSAN AU COQ",
+   "musee": "musée Crozatier",
+   "ville": "Le Puy-en-Velay",
+   "code": "attribue",
+   "extrait": "DURER Albrecht (attribué)"
+  },
+  {
+   "reference": "50350228319",
+   "titre": "Vierge assise tenant l'Enfant sur ses genoux",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "DURER Albrecht (attribué à)"
+  },
+  {
+   "reference": "50350500150",
+   "titre": "Saint Jean Evangéliste",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "DURER Albrecht (école)"
+  },
+  {
+   "reference": "50350109124",
+   "titre": "Jésus-Christ apparaissant à la Sainte Vierge",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "DURER Albrecht (école)"
+  },
+  {
+   "reference": "50350109007",
+   "titre": "Le Christ entre les deux larrons sur le Mont Golgotha",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "DURER Albrecht (école)"
+  },
+  {
+   "reference": "50350108822",
+   "titre": "L'apôtre saint Pierre",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "DURER Albrecht (école)"
+  },
+  {
+   "reference": "50350109002",
+   "titre": "Le Christ succombant sous le poids de la croix",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "DURER Albrecht (école)"
+  },
+  {
+   "reference": "50350108596",
+   "titre": "Saint François recevant les stigmates",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "DURER Albrecht (école)"
+  },
+  {
+   "reference": "50350108569",
+   "titre": "Adoration des Mages",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "DURER Albrecht (école)"
+  },
+  {
+   "reference": "50350108893",
+   "titre": "Groupe de cinq hommes armés",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "DURER Albrecht (école)"
+  },
+  {
+   "reference": "50350108823",
+   "titre": "Saint Jean l'évangéliste",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "DURER Albrecht (école)"
+  },
+  {
+   "reference": "50350108600",
+   "titre": "Crucifixion",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "DURER Albrecht (école)"
+  },
+  {
+   "reference": "02110002354",
+   "titre": "La Messe des anges ; Croquis à la plume coloré, composition allégorique et indescriptible (titre ancien) ; Dessin allégorique (titre ancien)",
+   "musee": "musée des beaux-arts",
+   "ville": "Rennes",
+   "code": "attribue",
+   "extrait": "DURER Albrecht (attribué à)"
+  },
+  {
+   "reference": "02860007456",
+   "titre": "Saint Pierre",
+   "musee": "musée des beaux-arts",
+   "ville": "Orléans",
+   "code": "point_interrogation",
+   "extrait": "DURER Albrecht (?, graveur)"
+  },
+  {
+   "reference": "07450090930",
+   "titre": "Crucifix ou pommeau d'épée de l'empereur Maximilien Premier",
+   "musee": "musée Dobrée",
+   "ville": "Nantes",
+   "code": "attribue",
+   "extrait": "DÜRER Albrecht (attribué à, graveur)"
+  },
+  {
+   "reference": "07450090971",
+   "titre": "La Sainte-Face de Jésus-Christ",
+   "musee": "musée Dobrée",
+   "ville": "Nantes",
+   "code": "attribue",
+   "extrait": "DÜRER Albrecht (attribué à, graveur)"
+  },
+  {
+   "reference": "07450090959",
+   "titre": "Les huit Saints-Patrons d'Autriche",
+   "musee": "musée Dobrée",
+   "ville": "Nantes",
+   "code": "attribue",
+   "extrait": "DÜRER Albrecht (graveur, attribué à)"
+  },
+  {
+   "reference": "07450090962",
+   "titre": "La Vierge à la porte",
+   "musee": "musée Dobrée",
+   "ville": "Nantes",
+   "code": "attribue",
+   "extrait": "DÜRER Albrecht (attribué à, graveur)"
+  },
+  {
+   "reference": "03110042003",
+   "titre": "Tableau de dévotion",
+   "musee": "musée des Beaux-Arts de Reims",
+   "ville": "Reims",
+   "code": "genre_de",
+   "extrait": "DÜRER Albrecht (genre de)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-07-28T14:49:21+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

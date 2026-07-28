@@ -1,0 +1,393 @@
+{
+ "slug": "adolph-menzel",
+ "nom": "Adolph Menzel",
+ "doute": 47,
+ "familles": [
+  {
+   "code": "ecole_de",
+   "notices": 47
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "50350020367",
+   "titre": "Etude d'après une sculpture",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MENZEL Adolph (école)"
+  },
+  {
+   "reference": "50350020360",
+   "titre": "Etude de main",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MENZEL Adolph (école)"
+  },
+  {
+   "reference": "50350020357",
+   "titre": "Croquis",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MENZEL Adolph (école)"
+  },
+  {
+   "reference": "50350020352",
+   "titre": "Vue d'architecture intérieure",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MENZEL Adolph (école)"
+  },
+  {
+   "reference": "50350020358",
+   "titre": "Le Panthéon",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MENZEL Adolph (école)"
+  },
+  {
+   "reference": "50350020328",
+   "titre": "Vue d'une église",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MENZEL Adolph (école)"
+  },
+  {
+   "reference": "50350020368",
+   "titre": "Une figure se penchant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MENZEL Adolph (école)"
+  },
+  {
+   "reference": "50350020365",
+   "titre": "Une lance",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MENZEL Adolph (école)"
+  },
+  {
+   "reference": "50350020344",
+   "titre": "Arbre",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MENZEL Adolph (école)"
+  },
+  {
+   "reference": "50350020346",
+   "titre": "Un jardin public bordé de grilles",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MENZEL Adolph (école)"
+  },
+  {
+   "reference": "50350020354",
+   "titre": "Femme debout",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MENZEL Adolph (école)"
+  },
+  {
+   "reference": "50350020337",
+   "titre": "Portrait d'enfant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MENZEL Adolph (école)"
+  },
+  {
+   "reference": "50350020371",
+   "titre": "Gribouillage",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MENZEL Adolph (école)"
+  },
+  {
+   "reference": "50350020331",
+   "titre": "Tête d'homme, de profil vers la droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MENZEL Adolph (école)"
+  },
+  {
+   "reference": "50350020347",
+   "titre": "Portrait",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MENZEL Adolph (école)"
+  },
+  {
+   "reference": "50350020330",
+   "titre": "Portrait d'enfant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MENZEL Adolph (école)"
+  },
+  {
+   "reference": "50350020372",
+   "titre": "Autoportrait",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MENZEL Adolph (école)"
+  },
+  {
+   "reference": "50350020338",
+   "titre": "Etude d'enfant nu",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MENZEL Adolph (école)"
+  },
+  {
+   "reference": "50350020361",
+   "titre": "Etude de main",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MENZEL Adolph (école)"
+  },
+  {
+   "reference": "50350020348",
+   "titre": "Portrait d'un enfant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MENZEL Adolph (école)"
+  },
+  {
+   "reference": "50350020340",
+   "titre": "Pieds d'enfant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MENZEL Adolph (école)"
+  },
+  {
+   "reference": "50350020355",
+   "titre": "Figures assise ; femme assise, vur de dos",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MENZEL Adolph (école)"
+  },
+  {
+   "reference": "50350020336",
+   "titre": "Tête et jambes d'un enfant nu",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MENZEL Adolph (école)"
+  },
+  {
+   "reference": "50350020356",
+   "titre": "Une femme assise, vue de dos",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MENZEL Adolph (école)"
+  },
+  {
+   "reference": "50350020366",
+   "titre": "Un homme à cheval, tenant une lance",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MENZEL Adolph (école)"
+  },
+  {
+   "reference": "50350020350",
+   "titre": "Portrait",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MENZEL Adolph (école)"
+  },
+  {
+   "reference": "50350020333",
+   "titre": "Gribouillage",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MENZEL Adolph (école)"
+  },
+  {
+   "reference": "50350020349",
+   "titre": "Draperie",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MENZEL Adolph (école)"
+  },
+  {
+   "reference": "50350020373",
+   "titre": "Esquisse de portrait",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MENZEL Adolph (école)"
+  },
+  {
+   "reference": "50350020335",
+   "titre": "Etude d'enfant nu",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MENZEL Adolph (école)"
+  },
+  {
+   "reference": "50350020332",
+   "titre": "Gribouillage",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MENZEL Adolph (école)"
+  },
+  {
+   "reference": "50350020329",
+   "titre": "Portrait d'enfant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MENZEL Adolph (école)"
+  },
+  {
+   "reference": "50350020351",
+   "titre": "Deux jeunes femmes, vues en buste",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MENZEL Adolph (école)"
+  },
+  {
+   "reference": "50350020342",
+   "titre": "Motifs géométriques",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MENZEL Adolph (école)"
+  },
+  {
+   "reference": "50350020370",
+   "titre": "Etude d'élément architectural",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MENZEL Adolph (école)"
+  },
+  {
+   "reference": "50350020339",
+   "titre": "Ventre et jambes d'un enfant nu",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MENZEL Adolph (école)"
+  },
+  {
+   "reference": "50350020364",
+   "titre": "Etude de main",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MENZEL Adolph (école)"
+  },
+  {
+   "reference": "50350020359",
+   "titre": "Eléments architecturaux avec motif de tête d'homme dans l'espace centré",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MENZEL Adolph (école)"
+  },
+  {
+   "reference": "50350020345",
+   "titre": "Deux études de figures et autre croquis",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MENZEL Adolph (école)"
+  },
+  {
+   "reference": "50350020374",
+   "titre": "Scène nocturne",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MENZEL Adolph (école)"
+  },
+  {
+   "reference": "50350020362",
+   "titre": "Etude de main",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MENZEL Adolph (école)"
+  },
+  {
+   "reference": "50350020353",
+   "titre": "Etude de plantes",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MENZEL Adolph (école)"
+  },
+  {
+   "reference": "50350020363",
+   "titre": "Un livre ouvert",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MENZEL Adolph (école)"
+  },
+  {
+   "reference": "50350020334",
+   "titre": "Etude d'enfant nu",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MENZEL Adolph (école)"
+  },
+  {
+   "reference": "50350020369",
+   "titre": "Une femme, assise, lisant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MENZEL Adolph (école)"
+  },
+  {
+   "reference": "50350020341",
+   "titre": "Motifs géométriques",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MENZEL Adolph (école)"
+  },
+  {
+   "reference": "50350020343",
+   "titre": "Gribouillage ; branches d'arbre",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MENZEL Adolph (école)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-07-28T14:49:21+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

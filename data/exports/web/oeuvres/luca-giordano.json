@@ -1,0 +1,369 @@
+{
+ "slug": "luca-giordano",
+ "nom": "Luca Giordano",
+ "doute": 42,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 22
+  },
+  {
+   "code": "point_interrogation",
+   "notices": 3
+  },
+  {
+   "code": "ecole_de",
+   "notices": 3
+  },
+  {
+   "code": "atelier_de",
+   "notices": 13
+  },
+  {
+   "code": "genre_de",
+   "notices": 1
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "000PE014035",
+   "titre": "TAUREAU POURSUIVI PAR DES CHIENS",
+   "musee": "musée des beaux-arts",
+   "ville": "Marseille",
+   "code": "attribue",
+   "extrait": "GIORDANO Luca (attribué à)"
+  },
+  {
+   "reference": "000PE022152",
+   "titre": "VENUS ENDORMIE ENTRE DEUX AMOURS",
+   "musee": "musée des beaux-arts",
+   "ville": "Bordeaux",
+   "code": "attribue",
+   "extrait": "GIORDANO Luca (attribué)"
+  },
+  {
+   "reference": "000PE025528",
+   "titre": "UN CONCERT",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "point_interrogation",
+   "extrait": "GIORDANO Luca (?)"
+  },
+  {
+   "reference": "000PE025531",
+   "titre": "LE CHRIST APPARAISSANT A LA MADELEINE",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "GIORDANO Luca (atelier)"
+  },
+  {
+   "reference": "000PE025529",
+   "titre": "LA CHASSE DE DIANE",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "GIORDANO Luca (atelier)"
+  },
+  {
+   "reference": "000PE025530",
+   "titre": "LUCRECE ET TARQUIN",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "GIORDANO Luca (atelier)"
+  },
+  {
+   "reference": "00000074374",
+   "titre": "HERCULE AU REPOS",
+   "musee": "musée Goya",
+   "ville": "Castres",
+   "code": "attribue",
+   "extrait": "GIORDANO Luca (attribué)"
+  },
+  {
+   "reference": "00000093479",
+   "titre": "ENLEVEMENT D'EUROPE",
+   "musee": "musée de la Chartreuse",
+   "ville": "Douai",
+   "code": "atelier_de",
+   "extrait": "GIORDANO Luca (atelier)"
+  },
+  {
+   "reference": "10500005806",
+   "titre": "Enlèvement de Déjanire",
+   "musee": "musée des beaux-arts",
+   "ville": "Chambéry",
+   "code": "atelier_de",
+   "extrait": "GIORDANO Luca (atelier)"
+  },
+  {
+   "reference": "00980001231",
+   "titre": "Un Philosophe",
+   "musee": "musée des Beaux-Arts",
+   "ville": "Pau",
+   "code": "attribue",
+   "extrait": "GIORDANO Luca (attribué à)"
+  },
+  {
+   "reference": "M0347001249",
+   "titre": "Lucrèce",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Dole",
+   "code": "attribue",
+   "extrait": "GIORDANO Luca (attribué à)"
+  },
+  {
+   "reference": "50350104053",
+   "titre": "La Vierge et l'Enfant sur des nuages entourées de saints",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "GIORDANO Luca (atelier)"
+  },
+  {
+   "reference": "50350006731",
+   "titre": "Jésus mort pleuré par les Saintes Femmes et par les anges",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "GIORDANO Luca (attribué à)"
+  },
+  {
+   "reference": "50350012710",
+   "titre": "Le martyre de saint Barthélémy",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "GIORDANO Luca (atelier)"
+  },
+  {
+   "reference": "50350006730",
+   "titre": "Saint Jean-Baptiste prêchant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "GIORDANO Luca (attribué à)"
+  },
+  {
+   "reference": "50350006732",
+   "titre": "L'Assomption de la Vierge",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "GIORDANO Luca (attribué à)"
+  },
+  {
+   "reference": "50350006733",
+   "titre": "Figures du Parnasse",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "GIORDANO Luca (attribué à)"
+  },
+  {
+   "reference": "50350502039",
+   "titre": "Annotations chiffrées",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "GIORDANO Luca (attribué à)"
+  },
+  {
+   "reference": "50350203658",
+   "titre": "Dragon, évêque et figure allégorique sur des nuages, entourée d'anges",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "GIORDANO Luca (atelier)"
+  },
+  {
+   "reference": "50350103797",
+   "titre": "Judith mettant la tête d'Holopherne dans le sac tenu par sa servante",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "GIORDANO Luca (attribué à)"
+  },
+  {
+   "reference": "50350103796",
+   "titre": "Homme ranimant une femme évanouie",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "GIORDANO Luca (attribué à)"
+  },
+  {
+   "reference": "50350103781",
+   "titre": "Suzanne et les vieillards",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "GIORDANO Luca (attribué à)"
+  },
+  {
+   "reference": "50350103800",
+   "titre": "Judith mettant la tête d'Holopherne dans le sac tenu par sa servante",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "GIORDANO Luca (attribué à)"
+  },
+  {
+   "reference": "50350204643",
+   "titre": "Consécration d'un évêque",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "GIORDANO Luca (attribué à)"
+  },
+  {
+   "reference": "50350104311",
+   "titre": "La Sainte Famille, avec le petit saint Jean et sainte Elisabeth",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "GIORDANO Luca (attribué à)"
+  },
+  {
+   "reference": "50130000291",
+   "titre": "TRIOMPHE D'AMPHITRITE",
+   "musee": "musée national du château de Fontainebleau",
+   "ville": "Fontainebleau",
+   "code": "ecole_de",
+   "extrait": "GIORDANO Luca (école)"
+  },
+  {
+   "reference": "50130000293",
+   "titre": "DIANE ET CALLISTO",
+   "musee": "musée national du château de Fontainebleau",
+   "ville": "Fontainebleau",
+   "code": "ecole_de",
+   "extrait": "GIORDANO Luca (école)"
+  },
+  {
+   "reference": "50130000292",
+   "titre": "PAN ET SYRINX",
+   "musee": "musée national du château de Fontainebleau",
+   "ville": "Fontainebleau",
+   "code": "ecole_de",
+   "extrait": "GIORDANO Luca (école)"
+  },
+  {
+   "reference": "07480012416",
+   "titre": "Combat de cavalerie",
+   "musee": "musée des beaux-arts et galerie David-d'Angers",
+   "ville": "Angers",
+   "code": "point_interrogation",
+   "extrait": "GIORDANO Luca (?)"
+  },
+  {
+   "reference": "01500000115",
+   "titre": "Mort de sainte Claire ; Mort de sainte Thérèse d'Avila (Titre ancien)",
+   "musee": "musée d'Art et d'Histoire Romain Rolland",
+   "ville": "Clamecy",
+   "code": "attribue",
+   "extrait": "GIORDANO Luca (attribué à)"
+  },
+  {
+   "reference": "06190001735",
+   "titre": "Enlèvement d'Europe",
+   "musee": "musée de la Chartreuse",
+   "ville": "Douai",
+   "code": "atelier_de",
+   "extrait": "GIORDANO Luca (atelier)"
+  },
+  {
+   "reference": "M0121002493",
+   "titre": "La mort de Cléopâtre",
+   "musee": "musée d'art Roger-Quillot",
+   "ville": "Clermont-Ferrand",
+   "code": "atelier_de",
+   "extrait": "Giordano Luca (1632-1705) (atelier)"
+  },
+  {
+   "reference": "03290005077",
+   "titre": "Apparition de Jésus à Marie-Madeleine",
+   "musee": "musée d’ethnographie corse",
+   "ville": "Bastia",
+   "code": "point_interrogation",
+   "extrait": "GIORDANO Luca (auteur, ?)"
+  },
+  {
+   "reference": "05120002092",
+   "titre": "Conversion de saint Paul ; Saint Paul terrassé sur le chemin de Damas",
+   "musee": "musée des Beaux-Arts",
+   "ville": "Nancy",
+   "code": "attribue",
+   "extrait": "GIORDANO Luca (attribué)"
+  },
+  {
+   "reference": "01760000049",
+   "titre": "La communion des apôtres",
+   "musee": "musée eucharistique du Hiéron",
+   "ville": "Paray-le-Monial",
+   "code": "atelier_de",
+   "extrait": "GIORDANO Luca (atelier)"
+  },
+  {
+   "reference": "09940008933",
+   "titre": "Enée et Anchise fuyant Troie ; Enée et Anchise fuyant avec Ascorye (Ancien titre)",
+   "musee": "musée de Grenoble",
+   "ville": "Grenoble",
+   "code": "attribue",
+   "extrait": "Giordano Luca (attribué à)"
+  },
+  {
+   "reference": "09940067267",
+   "titre": "Scène de Bacchanale",
+   "musee": "musée de Grenoble",
+   "ville": "Grenoble",
+   "code": "attribue",
+   "extrait": "Giordano Luca (attribué à)"
+  },
+  {
+   "reference": "09940009120",
+   "titre": "Sainte Thérèse d'Avila ; Sainte Marie-Madeleine (Ancien titre)",
+   "musee": "musée de Grenoble",
+   "ville": "Grenoble",
+   "code": "attribue",
+   "extrait": "Giordano Luca (attribué à)"
+  },
+  {
+   "reference": "08940004909",
+   "titre": "L'enlèvement d'Hélène",
+   "musee": "musée Granet",
+   "ville": "Aix-en-Provence",
+   "code": "atelier_de",
+   "extrait": "Giordano Luca (1632-1705) (atelier)"
+  },
+  {
+   "reference": "08940005176",
+   "titre": "Saint François Xavier présidant la construction d'un édifice ; Construction d'un édifice sous la direction de saint François Xavier",
+   "musee": "musée Granet",
+   "ville": "Aix-en-Provence",
+   "code": "atelier_de",
+   "extrait": "Giordano Luca (1632-1705) (atelier)"
+  },
+  {
+   "reference": "M0341000402",
+   "titre": "Angélique et Médor",
+   "musee": "musée Sarret de Grozon",
+   "ville": "Arbois",
+   "code": "genre_de",
+   "extrait": "Giordano Luca (1632-1705) (genre de)"
+  },
+  {
+   "reference": "M0536000446",
+   "titre": "Denys de Syracuse",
+   "musee": "musée départemental d'art ancien et contemporain",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Giordano Luca (1632-1705) (attribué à)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-07-28T14:49:21+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

@@ -102,6 +102,27 @@ Ordre imposé — chaque ⏸ est un point d'arrêt :
 
 ---
 
+## Onglet « Œuvres » — liste complète, filtres, pagination (2026-07-28)
+
+L'onglet passe de « quelques exemples » à la **totalité des œuvres concernées** par maître
+(decisions.md, journal.md, 2026-07-28).
+
+- [x] **Phase 1 — export complet.** Un fichier `data/exports/web/oeuvres/<slug>.json` par
+      maître (63 fichiers, 3 674 œuvres au total), écrit par `build_artistes.py` dans la même
+      passe que l'export léger, depuis `resout_reference()` et la famille déjà retenue. `slug`
+      ajouté à `artistes.json` ; anciens `exemples` retirés. Invariants à l'écriture : nombre
+      d'entrées = `doute`, ventilation = `familles`, pas de doublon, référence présente, aucune
+      copie. `sync-data.js` rendu récursif (dossier `oeuvres/`).
+- [x] **Phase 2 — interface.** `OeuvresMaitre.svelte` réécrit : chargement à la demande du
+      seul fichier de l'artiste affiché (jeton anti-course), filtres en puces (« Toutes » +
+      mentions présentes avec effectif), pagination 8/page compacte (`pagination.js`, testée),
+      états chargement/erreur/vide, recentrage doux au changement de page, accessibilité
+      clavier/`aria-pressed`/`aria-current`. Structure éditoriale (verbatim-matière,
+      emplacement média réservé) et bloc « À part » des copies conservés.
+- Réserve : unification du wording « notices » du bloc copie (hors périmètre).
+
+---
+
 ## ★ RECENTRAGE (2026-07-15) — cap actuel
 
 **Décision.** La **V1 publique** de *L'inventaire du doute* sera centrée sur le

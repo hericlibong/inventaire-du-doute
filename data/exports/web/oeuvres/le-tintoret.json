@@ -1,0 +1,337 @@
+{
+ "slug": "le-tintoret",
+ "nom": "Le Tintoret",
+ "doute": 38,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 32
+  },
+  {
+   "code": "ecole_de",
+   "notices": 2
+  },
+  {
+   "code": "atelier_de",
+   "notices": 2
+  },
+  {
+   "code": "entourage_de",
+   "notices": 1
+  },
+  {
+   "code": "maniere_de",
+   "notices": 1
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "000PE014515",
+   "titre": "SAINT BERNARD RESSUSCITANT UN MORT",
+   "musee": "musée des beaux-arts",
+   "ville": "Marseille",
+   "code": "attribue",
+   "extrait": "ROBUSTI Jacopo (attribué à)"
+  },
+  {
+   "reference": "000PE027107",
+   "titre": "JESUS QUERISSANT LES BOITEUX",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ROBUSTI Jacopo (école)"
+  },
+  {
+   "reference": "000PE027106",
+   "titre": "PORTRAIT D'HOMME",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "ROBUSTI Jacopo (atelier)"
+  },
+  {
+   "reference": "000PE027105",
+   "titre": "PORTRAIT DE SENATEUR VENITIEN AGE DE 57 ANS",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "ROBUSTI Jacopo (attribué)"
+  },
+  {
+   "reference": "000PE027108",
+   "titre": "PORTRAIT D'HOMME",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ROBUSTI Jacopo (école)"
+  },
+  {
+   "reference": "00000106281",
+   "titre": "La Vierge entourée de Saints et d'Orants",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "ROBUSTI Jacopo (attribué)"
+  },
+  {
+   "reference": "00000107133",
+   "titre": "Scène d'allégence d'un chef d'armée envers un personnage en armes",
+   "musee": "musée Condé",
+   "ville": "Chantilly",
+   "code": "attribue",
+   "extrait": "ROBUSTI Jacopo (attribué)"
+  },
+  {
+   "reference": "50350007740",
+   "titre": "Le Christ en croix entre les deux larrons",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "ROBUSTI Jacopo (attribué à)"
+  },
+  {
+   "reference": "50350105681",
+   "titre": "Un apôtre guérissant des malades",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "ROBUSTI Jacopo (manière de)"
+  },
+  {
+   "reference": "50350007716",
+   "titre": "La Descente de Croix",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "ROBUSTI Jacopo (attribué à)"
+  },
+  {
+   "reference": "50350508309",
+   "titre": "Dieu le Père",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "ROBUSTI Jacopo (attribué à)"
+  },
+  {
+   "reference": "50350501488",
+   "titre": "Traits",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "ROBUSTI Jacopo (attribué à)"
+  },
+  {
+   "reference": "50350007737",
+   "titre": "Repos de la Sainte Famille et de deux figures pendant la fuite en Egypte",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "ROBUSTI Jacopo (attribué à)"
+  },
+  {
+   "reference": "50350007704",
+   "titre": "Massacre des Innocents",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "ROBUSTI Jacopo (attribué à)"
+  },
+  {
+   "reference": "50350007735",
+   "titre": "Un homme de dos, tirant des deux mains une corde",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "ROBUSTI Jacopo (attribué à)"
+  },
+  {
+   "reference": "50350007707",
+   "titre": "Sainte Famille, profil de femme et Adoration de la Vierge",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "ROBUSTI Jacopo (attribué à)"
+  },
+  {
+   "reference": "50350007706",
+   "titre": "L'Adoration des bergers",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "ROBUSTI Jacopo (attribué à)"
+  },
+  {
+   "reference": "50350007712",
+   "titre": "La Cène",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "ROBUSTI Jacopo (attribué à)"
+  },
+  {
+   "reference": "50350007741",
+   "titre": "Saint Jean l'Evangéliste debout, tenant un calice et un livre",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "ROBUSTI Jacopo (attribué à)"
+  },
+  {
+   "reference": "50350007715",
+   "titre": "Le Christ descendu de la Croix et la Vierge évanouie",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "ROBUSTI Jacopo (attribué à)"
+  },
+  {
+   "reference": "50350007724",
+   "titre": "Un archevêque de Venise présente des reliques à des possédés",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "ROBUSTI Jacopo (attribué à)"
+  },
+  {
+   "reference": "50350007719",
+   "titre": "Le martyre de saint Laurent",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "ROBUSTI Jacopo (attribué à)"
+  },
+  {
+   "reference": "50350007705",
+   "titre": "L'Adoration des bergers",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "ROBUSTI Jacopo (attribué à)"
+  },
+  {
+   "reference": "50350007714",
+   "titre": "La Vierge évanouie au pied de la Croix entourée de saints et deux cavaliers",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "ROBUSTI Jacopo (attribué à)"
+  },
+  {
+   "reference": "50350007728",
+   "titre": "Figures volantes",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "ROBUSTI Jacopo (attribué à)"
+  },
+  {
+   "reference": "50350007739",
+   "titre": "Un ange portant une croix apparait au Christ priant au Jardin des oliviers",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "ROBUSTI Jacopo (attribué à)"
+  },
+  {
+   "reference": "50350007745",
+   "titre": "Etude d'un homme nu, un genoux à terre",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "ROBUSTI Jacopo (attribué à)"
+  },
+  {
+   "reference": "50350007718",
+   "titre": "Le Couronnement de la Vierge par la Trinité",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "ROBUSTI Jacopo (attribué à)"
+  },
+  {
+   "reference": "50350007727",
+   "titre": "Marche d'une troupe sortant d'un fort",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "ROBUSTI Jacopo (attribué à)"
+  },
+  {
+   "reference": "50350007746",
+   "titre": "Un satyre à demi-allongé et une tête de chèvre",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "ROBUSTI Jacopo (attribué)"
+  },
+  {
+   "reference": "50350007710",
+   "titre": "Le Repas chez Simon le Pharisien",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "ROBUSTI Jacopo (attribué à)"
+  },
+  {
+   "reference": "50350007721",
+   "titre": "Saint Roch pansant les pestiférés",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "ROBUSTI Jacopo (attribué à)"
+  },
+  {
+   "reference": "M0332002581",
+   "titre": "Visage d'après Michel-Ange",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "ROBUSTI Jacopo (attribué à) (dessinateur)"
+  },
+  {
+   "reference": "06570009240",
+   "titre": "La Vierge et l'Enfant entourés d'anges ; Triomphe de la Vierge",
+   "musee": "musée des beaux-arts",
+   "ville": "Caen",
+   "code": "attribue",
+   "extrait": "ROBUSTI Jacopo (attribué, école de)"
+  },
+  {
+   "reference": "06190001407",
+   "titre": "Portrait d'un seigneur vénitien",
+   "musee": "musée de la Chartreuse",
+   "ville": "Douai",
+   "code": "attribue",
+   "extrait": "ROBUSTI Jacopo (peintre, attribué à)"
+  },
+  {
+   "reference": "01370014810",
+   "titre": "La Résurrection de Lazare",
+   "musee": "musée des beaux-arts",
+   "ville": "Dijon",
+   "code": "entourage_de",
+   "extrait": "ROBUSTI Jacopo (entourage)"
+  },
+  {
+   "reference": "01160004688",
+   "titre": "L'Annonciation",
+   "musee": "musée Crozatier",
+   "ville": "Le Puy-en-Velay",
+   "code": "attribue",
+   "extrait": "ROBUSTI Jacopo (attribué à)"
+  },
+  {
+   "reference": "M0332006950",
+   "titre": "Portrait d'un sénateur vénitien avec sa femme, sa fille et son fils",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "atelier_de",
+   "extrait": "Le Tintoret (atelier)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-07-28T14:49:21+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

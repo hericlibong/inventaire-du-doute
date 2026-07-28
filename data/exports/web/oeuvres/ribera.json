@@ -1,0 +1,201 @@
+{
+ "slug": "ribera",
+ "nom": "Ribera",
+ "doute": 21,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 8
+  },
+  {
+   "code": "ecole_de",
+   "notices": 4
+  },
+  {
+   "code": "atelier_de",
+   "notices": 3
+  },
+  {
+   "code": "entourage_de",
+   "notices": 4
+  },
+  {
+   "code": "genre_de",
+   "notices": 2
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "000PE026599",
+   "titre": "SAINT JEROME ECRIVANT",
+   "musee": "MUDO - musée de l'Oise",
+   "ville": "Beauvais",
+   "code": "ecole_de",
+   "extrait": "RIBERA Jusepe de (école)"
+  },
+  {
+   "reference": "00980000808",
+   "titre": "Saint Jérôme",
+   "musee": "musée des Beaux-Arts",
+   "ville": "Pau",
+   "code": "atelier_de",
+   "extrait": "RIBERA Jusepe de (atelier)"
+  },
+  {
+   "reference": "06070000233",
+   "titre": "Saint Jérôme lisant",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "RIBERA Jusepe de  (attribué)"
+  },
+  {
+   "reference": "50350103953",
+   "titre": "Saint Jérôme écrivant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "RIBERA Jusepe de (attribué à)"
+  },
+  {
+   "reference": "50350205910",
+   "titre": "Homme drapé assis (un saint ?)",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "genre_de",
+   "extrait": "RIBERA Jusepe de (genre de)"
+  },
+  {
+   "reference": "50350205921",
+   "titre": "Saint Jérôme lisant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "genre_de",
+   "extrait": "RIBERA Jusepe de (genre de)"
+  },
+  {
+   "reference": "08120003377",
+   "titre": "Saint Jean-Baptiste enfant avec l'Agneau",
+   "musee": "musée de Picardie",
+   "ville": "Amiens",
+   "code": "atelier_de",
+   "extrait": "RIBERA Jusepe de (atelier)"
+  },
+  {
+   "reference": "08120003379",
+   "titre": "Saint François de Paule",
+   "musee": "musée de Picardie",
+   "ville": "Amiens",
+   "code": "attribue",
+   "extrait": "RIBERA Jusepe de (attribué à)"
+  },
+  {
+   "reference": "05940000300",
+   "titre": "Jésus parmi les docteurs",
+   "musee": "musée Goya",
+   "ville": "Castres",
+   "code": "ecole_de",
+   "extrait": "RIBERA Jusepe de (école)"
+  },
+  {
+   "reference": "05940000296",
+   "titre": "Martyre de Saint André",
+   "musee": "musée Goya",
+   "ville": "Castres",
+   "code": "attribue",
+   "extrait": "RIBERA Jusepe de (attribué à)"
+  },
+  {
+   "reference": "06770002729",
+   "titre": "L'Astronome",
+   "musee": "musée Thomas-Henry",
+   "ville": "Cherbourg-en-Cotentin",
+   "code": "entourage_de",
+   "extrait": "RIBERA Jusepe de (entourage de)"
+  },
+  {
+   "reference": "06770002726",
+   "titre": "Le Philosophe",
+   "musee": "musée Thomas-Henry",
+   "ville": "Cherbourg-en-Cotentin",
+   "code": "entourage_de",
+   "extrait": "RIBERA Jusepe de (entourage de)"
+  },
+  {
+   "reference": "M0332001175",
+   "titre": "Philosophe ou Architecte ; Héraclite (?)",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "RIBERA Jusepe de (attribué, et atelier)"
+  },
+  {
+   "reference": "06190001406",
+   "titre": "La Mort de Caton d'Utique",
+   "musee": "musée de la Chartreuse",
+   "ville": "Douai",
+   "code": "ecole_de",
+   "extrait": "RIBERA José de (école)"
+  },
+  {
+   "reference": "06190001405",
+   "titre": "Sainte femme en prière devant le Christ mort",
+   "musee": "musée de la Chartreuse",
+   "ville": "Douai",
+   "code": "ecole_de",
+   "extrait": "RIBERA José de (école)"
+  },
+  {
+   "reference": "M0811000214",
+   "titre": "Saint François et l'enfant Jésus",
+   "musee": "musée Boucher de Perthes",
+   "ville": "Abbeville",
+   "code": "atelier_de",
+   "extrait": "RIBERA Jusepe de (atelier)"
+  },
+  {
+   "reference": "01840000081",
+   "titre": "Une fileuse",
+   "musee": "musée d'art et d'histoire Saint-Germain",
+   "ville": "Auxerre",
+   "code": "attribue",
+   "extrait": "RIBERA Jusepe de (attribué)"
+  },
+  {
+   "reference": "07700010824",
+   "titre": "Saint Jean l'Evangéliste ; Saint Jean écrivant l'Apocalypse",
+   "musee": "musée de Tessé",
+   "ville": "Le Mans",
+   "code": "entourage_de",
+   "extrait": "RIBERA José De (entourage de)"
+  },
+  {
+   "reference": "04450000800",
+   "titre": "Mendiant recroquevillé",
+   "musee": "Palais-musée des Archevêques de Narbonne",
+   "ville": "Narbonne",
+   "code": "attribue",
+   "extrait": "RIBERA Jusepe de (ancienne attribution, attribué)"
+  },
+  {
+   "reference": "M0381002079",
+   "titre": "Portrait d'homme",
+   "musee": "château musée de Nemours",
+   "ville": "Nemours",
+   "code": "attribue",
+   "extrait": "RIBERA de José (attr. à) (peintre)"
+  },
+  {
+   "reference": "M0536000515",
+   "titre": "Saint Jérôme et l’ange sonnant la trompette du Jugement dernier",
+   "musee": "musée départemental d'art ancien et contemporain",
+   "ville": "Epinal",
+   "code": "entourage_de",
+   "extrait": "Ribera Jusepe de (1591-1652) (entourage de)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-07-28T14:49:21+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

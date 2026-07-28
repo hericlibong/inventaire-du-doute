@@ -1,0 +1,305 @@
+{
+ "slug": "luca-cambiaso",
+ "nom": "Luca Cambiaso",
+ "doute": 34,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 27
+  },
+  {
+   "code": "ecole_de",
+   "notices": 1
+  },
+  {
+   "code": "atelier_de",
+   "notices": 2
+  },
+  {
+   "code": "entourage_de",
+   "notices": 1
+  },
+  {
+   "code": "maniere_de",
+   "notices": 3
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "00000068495",
+   "titre": "LE MARIAGE MYSTIQUE DE SAINTE CATHERINE",
+   "musee": "musée national Magnin",
+   "ville": "Dijon",
+   "code": "attribue",
+   "extrait": "CAMBIASO Luca (attribué)"
+  },
+  {
+   "reference": "50350006465",
+   "titre": "Saint Jérôme dans le désert",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMBIASO Luca (attribué à)"
+  },
+  {
+   "reference": "50350006472",
+   "titre": "La Charité",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMBIASO Luca (attribué à)"
+  },
+  {
+   "reference": "50350145089",
+   "titre": "Cavalier sautant vers la gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMBIASO Luca (attribué à)"
+  },
+  {
+   "reference": "50350006473",
+   "titre": "Sept têtes d'hommes et de femmes, dans diverses attitudes",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMBIASO Luca (attribué à)"
+  },
+  {
+   "reference": "50350145111",
+   "titre": "Personnages lançant des pierres vers la gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMBIASO Luca (attribué à)"
+  },
+  {
+   "reference": "50350037957",
+   "titre": "Femme à demi-allongée, de dos, appuyée sur son coude gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CAMBIASO Luca (atelier)"
+  },
+  {
+   "reference": "50350001991",
+   "titre": "Le Christ apparaissant aux apôtres",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CAMBIASO Luca (atelier)"
+  },
+  {
+   "reference": "50350006468",
+   "titre": "Bacchus couché et entouré d'enfants",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMBIASO Luca (attribué à)"
+  },
+  {
+   "reference": "50350006458",
+   "titre": "La Vierge assise embrassant l'Enfant Jésus",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMBIASO Luca (attribué à)"
+  },
+  {
+   "reference": "50350006471",
+   "titre": "Deux hommes nus, luttant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMBIASO Luca (attribué à)"
+  },
+  {
+   "reference": "50350006464",
+   "titre": "Incrédulité de saint Thomas",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMBIASO Luca (attribué à)"
+  },
+  {
+   "reference": "50350006456",
+   "titre": "Sainte Famille, avec la Vierge tendant à l'Enfant le Globe du monde",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMBIASO Luca (attribué à)"
+  },
+  {
+   "reference": "50350006462",
+   "titre": "Evanouissement d'Esther ?",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMBIASO Luca (attribué à)"
+  },
+  {
+   "reference": "50350006466",
+   "titre": "Apothéose de sainte Madeleine",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMBIASO Luca (attribué à)"
+  },
+  {
+   "reference": "50350006467",
+   "titre": "Diane",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMBIASO Luca (attribué à)"
+  },
+  {
+   "reference": "50350006457",
+   "titre": "Sainte Famille, avec l'Enfant couché dans son berceau",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMBIASO Luca (attribué à)"
+  },
+  {
+   "reference": "50350006470",
+   "titre": "Plusieurs enfants sur un lit, jouant avec des coussins",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMBIASO Luca (attribué à)"
+  },
+  {
+   "reference": "50350032714",
+   "titre": "Homme assis, tenant un sceptre, dans un pendentif",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMBIASO Luca (attribué à)"
+  },
+  {
+   "reference": "50350145142",
+   "titre": "Adoration des bergers",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMBIASO Luca (attribué à)"
+  },
+  {
+   "reference": "50350145113",
+   "titre": "Vierge debout, tenant l'Enfant Jésus, entourée d'angelots",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMBIASO Luca (attribué à)"
+  },
+  {
+   "reference": "50350006459",
+   "titre": "La Fuite en Egypte",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMBIASO Luca (attribué à)"
+  },
+  {
+   "reference": "50350006461",
+   "titre": "Pietà",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMBIASO Luca (attribué à)"
+  },
+  {
+   "reference": "50350006463",
+   "titre": "Le Christ porté au tombeau",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMBIASO Luca (attribué à)"
+  },
+  {
+   "reference": "50350006460",
+   "titre": "Repos de la Sainte Famille",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMBIASO Luca (attribué à)"
+  },
+  {
+   "reference": "50350006469",
+   "titre": "Cavalier franchissant un pont et passant sur un cadavre",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMBIASO Luca (attribué à)"
+  },
+  {
+   "reference": "50350006455",
+   "titre": "Naissance de la Vierge",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMBIASO Luca (attribué à)"
+  },
+  {
+   "reference": "50350145100",
+   "titre": "Homme vêtu en guerrier, une épée au côté, de trois quarts vers la gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMBIASO Luca (attribué à)"
+  },
+  {
+   "reference": "50350508137",
+   "titre": "UNE FEMME AVEC TROIS ENFANTS",
+   "musee": "musée Bonnat-Helleu, musée des Beaux-Arts de Bayonne",
+   "ville": "Bayonne",
+   "code": "ecole_de",
+   "extrait": "CAMBIASO Luca (école)"
+  },
+  {
+   "reference": "02110002809",
+   "titre": "Vénus et l'Amour",
+   "musee": "musée des beaux-arts",
+   "ville": "Rennes",
+   "code": "maniere_de",
+   "extrait": "CAMBIASO Luca (manière de)"
+  },
+  {
+   "reference": "02110002810",
+   "titre": "Combat dans les airs",
+   "musee": "musée des beaux-arts",
+   "ville": "Rennes",
+   "code": "maniere_de",
+   "extrait": "CAMBIASO Luca (manière de)"
+  },
+  {
+   "reference": "02110003535",
+   "titre": "Silène et deux bergers",
+   "musee": "musée des beaux-arts",
+   "ville": "Rennes",
+   "code": "maniere_de",
+   "extrait": "CAMBIASO Luca (manière de)"
+  },
+  {
+   "reference": "M0491001006",
+   "titre": "Le martyre de Saint Jean l'Evangéliste",
+   "musee": "musée Hyacinthe Rigaud",
+   "ville": "Perpignan",
+   "code": "attribue",
+   "extrait": "Cambiaso Luca (1527-1585) (attribué à)"
+  },
+  {
+   "reference": "03290005058",
+   "titre": "Jésus guérissant un aveugle",
+   "musee": "musée d’ethnographie corse",
+   "ville": "Bastia",
+   "code": "entourage_de",
+   "extrait": "CAMBIASO Luca (entourage)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-07-28T14:49:21+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

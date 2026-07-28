@@ -27,7 +27,7 @@ Usage : uv run python src/build_artistes.py  (~2 min)
 import json
 import re
 import unicodedata
-from collections import defaultdict
+from collections import Counter, defaultdict
 from datetime import datetime, timezone
 
 import pandas as pd
@@ -36,13 +36,16 @@ import markers
 from config import CHEMIN_CSV, DOSSIER_EXPORTS, URL_CSV
 
 DOSSIER_WEB = DOSSIER_EXPORTS / "web"
+DOSSIER_OEUVRES = DOSSIER_WEB / "oeuvres"
 TAILLE_MORCEAU = 200_000
-# Notices réelles conservées par maître pour la vitrine « Œuvres » : une par
-# famille présente, deux pour la famille dominante (decisions.md, 2026-07-11).
-# Les exemples sont les PREMIERS rencontrés dans le CSV, pas choisis à la main
-# (règle documentée dans methode-et-limites.md). 8 familles + 1 dominante = 9.
-MAX_EXEMPLES = 9
-EXEMPLES_PAR_FAMILLE = 2  # gardés au fil de l'eau ; la sortie n'en publie 2 que pour la dominante
+# artistes.json reste l'export LÉGER (répertoire + profils). Depuis le 2026-07-28,
+# l'onglet « Œuvres » ne montre plus quelques exemples mais la TOTALITÉ des œuvres
+# concernées par maître : elles ne peuvent pas tenir dans artistes.json (elles y
+# pèseraient plus que tout le reste). Chaque maître reçoit donc un fichier à part,
+# oeuvres/<slug>.json, chargé à la demande par le front (decisions.md, 2026-07-28).
+# La liste par maître est l'ordre de RENCONTRE dans le CSV — comme les anciens
+# exemples, elle n'est pas choisie à la main (règle methode-et-limites.md) ; le
+# front la regroupe par famille pour l'affichage.
 
 # Niveau de chaque famille de doute (échelle typologie P2-T2).
 NIVEAU_FAMILLE = {
@@ -230,6 +233,16 @@ def _pivot(segment: str) -> str:
     return _sans_accents(re.sub(r"\s+", " ", sans_paren).strip(" ,;").upper())
 
 
+def _slug(nom: str) -> str:
+    """Identifiant stable d'un maître pour nommer son fichier d'œuvres :
+    « Charles Le Brun » → « charles-le-brun », « Léonard de Vinci » →
+    « leonard-de-vinci ». Sans accents, minuscules, tout ce qui n'est pas
+    lettre ou chiffre devient un tiret. Les noms des maîtres sont distincts et
+    le restent après slugification (vérifié par une assertion à l'export)."""
+    base = _sans_accents(nom).lower()
+    return re.sub(r"[^a-z0-9]+", "-", base).strip("-")
+
+
 def _mot_entier(motif: str, pivot: str) -> bool:
     """Le motif apparaît-il comme MOT ENTIER dans le pivot ? On a longtemps testé
     par simple sous-chaîne (`motif in pivot`), ce qui rattachait à tort des noms
@@ -287,7 +300,9 @@ def _famille_retenue(familles: dict) -> str:
 def _vide() -> dict:
     return {"propre": 0, "doute": 0, "copie": 0, "musees": set(),
             "familles": {}, "niveaux": {1: 0, 2: 0, 3: 0},
-            "exemples": {}, "exemple_copie": None,
+            # TOUTES les œuvres de doute du maître (onglet « Œuvres »), dans
+            # l'ordre de rencontre : une entrée par référence, jamais une copie.
+            "oeuvres": [], "exemple_copie": None,
             # ventilation du doute SEUL par musée détenteur (carte par maître) :
             # code -> {doute, nom, ville, coord, familles, niveaux}
             "musees_doute": {},
@@ -303,6 +318,21 @@ def _exemple(ref, titre, musee, ville, segment) -> dict:
         "titre": titre if isinstance(titre, str) else None,
         "musee": musee if isinstance(musee, str) else None,
         "ville": ville if isinstance(ville, str) else None,
+        "extrait": segment,
+    }
+
+
+def _oeuvre(ref, titre, musee, ville, famille, segment) -> dict:
+    """Une œuvre de doute pour l'onglet « Œuvres » : le nécessaire pour la lister
+    et ouvrir sa fiche POP. `code` est la famille RETENUE par le pipeline (le
+    front ne re-classe jamais) ; `extrait` est le segment publié tel quel par le
+    musée (seule citation littérale de l'application)."""
+    return {
+        "reference": ref,
+        "titre": titre if isinstance(titre, str) else None,
+        "musee": musee if isinstance(musee, str) else None,
+        "ville": ville if isinstance(ville, str) else None,
+        "code": famille,
         "extrait": segment,
     }
 
@@ -358,6 +388,55 @@ def resout_reference(auteur: str, en_beaux_arts: bool = True) -> dict:
         elif categorie == "propre":
             resolu[nom] = ("propre", None, None)
     return resolu
+
+
+def _ecrire_oeuvres(artistes: list, agg: dict, meta: dict) -> int:
+    """Écrit un fichier oeuvres/<slug>.json par maître : la TOTALITÉ de ses
+    œuvres de doute, chargées à la demande par l'onglet « Œuvres ». Le dossier
+    est d'abord vidé (les fichiers sont des artefacts générés, pas de reste
+    d'un maître retiré). Chaque fichier est contrôlé par les mêmes invariants
+    que le reste du pipeline, référence par référence."""
+    if DOSSIER_OEUVRES.exists():
+        for ancien in DOSSIER_OEUVRES.glob("*.json"):
+            ancien.unlink()
+    DOSSIER_OEUVRES.mkdir(parents=True, exist_ok=True)
+
+    total = 0
+    for art in artistes:
+        oeuvres = agg[art["nom"]]["oeuvres"]
+        # effectifs par famille présente, ordre canonique (repris de art["familles"])
+        familles = [{"code": f["code"], "notices": f["notices"]}
+                    for f in art["familles"]]
+        attendu = {f["code"]: f["notices"] for f in familles}
+
+        # --- Invariants de l'export (le front s'y fie sans re-vérifier) ---
+        assert len(oeuvres) == art["doute"], \
+            f"œuvres ≠ doute ({art['nom']} : {len(oeuvres)} ≠ {art['doute']})"
+        obtenu = dict(Counter(o["code"] for o in oeuvres))
+        assert obtenu == attendu, \
+            f"familles des œuvres ≠ maitre.familles ({art['nom']})"
+        refs = [o["reference"] for o in oeuvres]
+        assert all(refs), f"œuvre sans référence Joconde ({art['nom']})"
+        assert len(set(refs)) == len(refs), \
+            f"référence en double ({art['nom']})"
+        # aucune copie « d'après » : garanti par construction (les entrées ne sont
+        # ajoutées que dans la branche « doute »), on le réaffirme ici.
+        assert "d_apres" not in obtenu and "copie" not in obtenu, \
+            f"une copie s'est glissée dans la liste ({art['nom']})"
+
+        fichier = {
+            "slug": art["slug"],
+            "nom": art["nom"],
+            "doute": art["doute"],
+            "familles": familles,
+            "oeuvres": oeuvres,
+            **meta,
+        }
+        chemin = DOSSIER_OEUVRES / f"{art['slug']}.json"
+        chemin.write_text(json.dumps(fichier, ensure_ascii=False, indent=1),
+                          encoding="utf-8")
+        total += len(oeuvres)
+    return total
 
 
 def main() -> None:
@@ -444,14 +523,12 @@ def main() -> None:
                         md["niveaux"][NIVEAU_FAMILLE[famille]] += 1
                     else:
                         a["doute_sans_code"] += 1
-                    # jusqu'à 2 notices réelles par famille (les premières
-                    # rencontrées) ; la sortie n'en publie 2 que pour la dominante
-                    # (une référence ne traverse ce bloc qu'une fois par maître :
-                    # elle ne peut plus illustrer deux familles, comme le faisait
-                    # l'œuvre du Louvre nommant Titien sous deux graphies)
-                    exs = a["exemples"].setdefault(famille, [])
-                    if len(exs) < EXEMPLES_PAR_FAMILLE and isinstance(ref, str):
-                        exs.append(_exemple(ref, titre, musee, ville, segment))
+                    # TOUTES les œuvres de doute (onglet « Œuvres »). Une référence
+                    # ne traverse ce bloc qu'une fois par maître (resout_reference
+                    # a déjà résolu la référence en UNE famille) : pas de doublon
+                    # possible, la référence servira de clé de liste côté front.
+                    a["oeuvres"].append(
+                        _oeuvre(ref, titre, musee, ville, famille, segment))
         print(f"\r  {total:,} notices lues".replace(",", " "), end="", flush=True)
     print()
 
@@ -460,17 +537,6 @@ def main() -> None:
         a = agg[nom]
         familles = {code: a["familles"][code]
                     for code in markers.DOUTE_PAR_NIVEAU if code in a["familles"]}
-        # Exemples pour la vitrine : ordre canonique des familles (le même que
-        # l'axe du graphique), code de famille EXPORTÉ avec chaque exemple (le
-        # front ne re-parse jamais les extraits), 2 exemples pour la dominante.
-        dominante = max(familles, key=familles.get) if familles else None
-        exemples = []
-        for code in markers.DOUTE_PAR_NIVEAU:
-            if code not in a["exemples"]:
-                continue
-            garde = 2 if code == dominante else 1
-            for ex in a["exemples"][code][:garde]:
-                exemples.append({"code": code, **ex})
 
         # Musées du doute : 1 entrée = 1 musée détenteur, doute SEUL, trié.
         musees_doute = []
@@ -518,6 +584,9 @@ def main() -> None:
 
         artistes.append({
             "nom": nom,
+            # identifiant stable : nomme le fichier oeuvres/<slug>.json chargé à la
+            # demande par l'onglet « Œuvres » (le front n'a que ce slug à connaître).
+            "slug": _slug(nom),
             "propre": a["propre"],
             "doute": a["doute"],
             "copie": a["copie"],
@@ -531,11 +600,15 @@ def main() -> None:
                  "niveau": NIVEAU_FAMILLE[code], "notices": n}
                 for code, n in familles.items()
             ],
-            "exemples": exemples[:MAX_EXEMPLES],
             "exemple_copie": a["exemple_copie"],
             "musees_doute": musees_doute,
         })
     artistes.sort(key=lambda x: x["doute"], reverse=True)
+
+    # Slugs distincts : garantit qu'aucun fichier oeuvres/<slug>.json n'en écrase
+    # un autre (les noms des maîtres sont uniques et le restent après slugification).
+    slugs = [art["slug"] for art in artistes]
+    assert len(set(slugs)) == len(slugs), "collision de slug entre deux maîtres"
 
     # --- Totaux de la liste : appartenances ET notices distinctes -----------
     # Invariants : une union ne peut pas dépasser la somme dont elle est tirée,
@@ -591,8 +664,20 @@ def main() -> None:
     chemin.write_text(json.dumps(sortie, ensure_ascii=False, indent=1),
                       encoding="utf-8")
 
+    # Un fichier d'œuvres par maître (onglet « Œuvres », chargé à la demande) :
+    # mêmes métadonnées de provenance que l'export léger.
+    meta_oeuvres = {
+        "version_donnee": sortie["version_donnee"],
+        "date_generation": sortie["date_generation"],
+        "source": sortie["source"],
+        "url_source": sortie["url_source"],
+    }
+    total_oeuvres = _ecrire_oeuvres(artistes, agg, meta_oeuvres)
+
     print(f"\n{len(artistes)} maîtres exportés → {chemin} "
           f"({chemin.stat().st_size / 1024:.1f} Ko)")
+    print(f"{total_oeuvres} œuvres de doute → {DOSSIER_OEUVRES}/ "
+          f"({len(artistes)} fichiers)")
     print(f"{'maître':22} {'doute':>6} {'propre':>7} {'copie':>6} "
           f"{'mus.doute':>9} {'top %':>6}")
     for art in artistes:

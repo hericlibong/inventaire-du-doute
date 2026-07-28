@@ -1,0 +1,265 @@
+{
+ "slug": "corneille-de-lyon",
+ "nom": "Corneille de Lyon",
+ "doute": 29,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 5
+  },
+  {
+   "code": "point_interrogation",
+   "notices": 1
+  },
+  {
+   "code": "ecole_de",
+   "notices": 1
+  },
+  {
+   "code": "atelier_de",
+   "notices": 21
+  },
+  {
+   "code": "maniere_de",
+   "notices": 1
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "000PE000544",
+   "titre": "Charles de Cossé, comte de Brissac (v. 1506-1564), maréchal de France en 1550",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "Corneille de Lyon (1500?-1575) (atelier)"
+  },
+  {
+   "reference": "000PE000542",
+   "titre": "Portrait d'homme, dit autrefois : Le chevalier d'Ambre",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "Corneille de Lyon (1500?-1575) (atelier)"
+  },
+  {
+   "reference": "000PE000545",
+   "titre": "Portrait présumé de Louis de Bourbon, duc de Montpensier (1513-1582), dit autrefois: Henry de Bourbon, duc de Montpensier",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "Corneille de Lyon (1500?-1575) (atelier)"
+  },
+  {
+   "reference": "000PE000546",
+   "titre": "Portrait présumé de Jean IV de Brosse, dit de Bretagne (1505-1564), duc d'Etampes",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "Corneille de Lyon (1500?-1575) (atelier)"
+  },
+  {
+   "reference": "000PE000540",
+   "titre": "Mellin de Saint-Gelais, abbé de Reclus (1491-1558), poète et musicien, aumônier du Dauphin et bibliothécaire du roi à Fontainebleau",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "Corneille de Lyon (1500?-1575) (atelier)"
+  },
+  {
+   "reference": "000PE000541",
+   "titre": "Anne Stuart, dit autrefois Portrait présumé d'Anne de La Queille, ou encore: Portrait de Jacqueline de Rohan-Gyé",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "Corneille de Lyon (1500?-1575) (atelier)"
+  },
+  {
+   "reference": "000PE000543",
+   "titre": "Jean d'Albon, seigneur de Saint-André (1472-1549), chambellan d'Anne de Bretagne en 1502, gouverneur de Henri de France (futur Henri II) en 1530",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "Corneille de Lyon (1500?-1575) (atelier)"
+  },
+  {
+   "reference": "000PE006178",
+   "titre": "FRANCOISE DE LONGWY, COMTESSE DE CHABOT (1510-?)",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "code": "atelier_de",
+   "extrait": "Corneille de Lyon (1500?-1575) (atelier)"
+  },
+  {
+   "reference": "000PE006215",
+   "titre": "CATHERINE DE MEDICIS, REINE DE FRANCE (1519-1589) ; DITE AUTREFOIS MARGUERITE DE FRANCE, DUCHESSE DE SAVOIE",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "code": "atelier_de",
+   "extrait": "Corneille de Lyon (1500?-1575) (atelier)"
+  },
+  {
+   "reference": "000PE006180",
+   "titre": "ANNE STUART, DAME D'AUBIGNY",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "code": "atelier_de",
+   "extrait": "Corneille de Lyon (1500?-1575) (atelier)"
+  },
+  {
+   "reference": "000PE006239",
+   "titre": "JEANNE DE HALLUIN, DAME D'ALLUYE",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "code": "atelier_de",
+   "extrait": "Corneille de Lyon (1500?-1575) (atelier)"
+  },
+  {
+   "reference": "000PE006238",
+   "titre": "LOUISE DE HALLUIN, DAME DE CYPIERRE (?-1584)",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "code": "atelier_de",
+   "extrait": "Corneille de Lyon (1500?-1575) (atelier)"
+  },
+  {
+   "reference": "000PE006257",
+   "titre": "CHARLES DE LA ROCHEFOUCAULD, COMTE DE RANDAN (?-1562)",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "code": "atelier_de",
+   "extrait": "Corneille de Lyon (1500?-1575) (atelier)"
+  },
+  {
+   "reference": "000PE006218",
+   "titre": "MADELEINE DE FRANCE, REINE D'ECOSSE (1520-1537) ; DITE AUTREFOIS MARGUERITE DE BOURBON, DUCHESSE DE NEVERS",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "code": "atelier_de",
+   "extrait": "Corneille de Lyon (1500?-1575) (atelier)"
+  },
+  {
+   "reference": "000PE006222",
+   "titre": "INCONNUE ; DITE AUTREFOIS PHILIPPINE DE MONTESPEDON, PRINCESSE DE LA ROCHE-SUR-YON",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "code": "atelier_de",
+   "extrait": "Corneille de Lyon (1500?-1575) (atelier)"
+  },
+  {
+   "reference": "000PE006870",
+   "titre": "ANNE DU PLESSIS-LIANCOURT",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "code": "attribue",
+   "extrait": "Corneille de Lyon (1500?-1575) (atelier, attribué à )"
+  },
+  {
+   "reference": "000PE007583",
+   "titre": "PHILIPPE CHABOT, AMIRAL DE FRANCE (?-1543)",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "code": "atelier_de",
+   "extrait": "Corneille de Lyon (1500?-1575) (atelier)"
+  },
+  {
+   "reference": "000PE007610",
+   "titre": "CHARLES DE LA ROCHEFOUCAULD, COMTE DE RANDAN (?-1562)",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "code": "ecole_de",
+   "extrait": "Corneille de Lyon (1500?-1575) (école)"
+  },
+  {
+   "reference": "000PE007586",
+   "titre": "RENE D'AMONCOURT, SEIGNEUR DE MONTIGNY-SUR-AUBE (1483-?)",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "code": "atelier_de",
+   "extrait": "Corneille de Lyon (1500?-1575) (atelier)"
+  },
+  {
+   "reference": "00000077156",
+   "titre": "PORTRAIT D'INCONNU",
+   "musee": "musée Condé",
+   "ville": "Chantilly",
+   "code": "atelier_de",
+   "extrait": "Corneille de Lyon (1500?-1575) (atelier)"
+  },
+  {
+   "reference": "00000077152",
+   "titre": "PORTRAIT PRESUME DE GABRIELLE DE ROCHECHOUART ; DIT AUTREFOIS PORTRAIT DE MARGUERITE DE FRANCE",
+   "musee": "musée Condé",
+   "ville": "Chantilly",
+   "code": "attribue",
+   "extrait": "Corneille de Lyon (1500?-1575) (attribué à)"
+  },
+  {
+   "reference": "00000077154",
+   "titre": "CATHERINE DE MEDICIS",
+   "musee": "musée Condé",
+   "ville": "Chantilly",
+   "code": "attribue",
+   "extrait": "Corneille de Lyon (1500?-1575) (attribué à)"
+  },
+  {
+   "reference": "00000077155",
+   "titre": "PORTRAIT PRESUME D'HERCULE FRANCOIS DE FRANCE, DUC D'ALENCON",
+   "musee": "musée Condé",
+   "ville": "Chantilly",
+   "code": "atelier_de",
+   "extrait": "Corneille de Lyon (1500?-1575) (atelier)"
+  },
+  {
+   "reference": "00000077157",
+   "titre": "PORTRAIT PRESUME DE GABRIELLE DE ROCHECHOUART, DAME DE LANSAC",
+   "musee": "musée Condé",
+   "ville": "Chantilly",
+   "code": "atelier_de",
+   "extrait": "Corneille de Lyon (1500?-1575) (atelier)"
+  },
+  {
+   "reference": "00000077153",
+   "titre": "MARGUERITE DE FRANCE, DUCHESSE DE BERRY, FUTURE DUCHESSE DE SAVOIE",
+   "musee": "musée Condé",
+   "ville": "Chantilly",
+   "code": "atelier_de",
+   "extrait": "Corneille de Lyon (1500?-1575) (atelier)"
+  },
+  {
+   "reference": "01370001106",
+   "titre": "Portrait d'homme",
+   "musee": "musée des beaux-arts",
+   "ville": "Dijon",
+   "code": "maniere_de",
+   "extrait": "Corneille de Lyon (1500?-1575) (manière de)"
+  },
+  {
+   "reference": "06070000081",
+   "titre": "Portrait d'homme",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Corneille de Lyon (1500?-1575) (attribué à)"
+  },
+  {
+   "reference": "05120007536",
+   "titre": "Portrait d'homme à la barbe grisonnante",
+   "musee": "musée des Beaux-Arts",
+   "ville": "Nancy",
+   "code": "attribue",
+   "extrait": "Corneille de Lyon (1500?-1575) (attribué à)"
+  },
+  {
+   "reference": "06190023766",
+   "titre": "Portrait de Catherine de Médicis",
+   "musee": "musée de la Chartreuse",
+   "ville": "Douai",
+   "code": "point_interrogation",
+   "extrait": "Corneille De Lyon (1510-1575) (?, copiste)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-07-28T14:49:21+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

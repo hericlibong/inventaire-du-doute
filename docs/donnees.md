@@ -3,6 +3,23 @@
 Tout ce qu'on apprend sur la base Joconde au fil du projet : structure, pièges,
 chiffres vérifiés. Chaque constat indique sa date et comment il a été obtenu.
 
+## Export complet des œuvres par maître (2026-07-28)
+
+L'onglet « Œuvres » liste désormais **toutes** les œuvres concernées, pas quelques exemples.
+Un fichier `data/exports/web/oeuvres/<slug>.json` par maître, écrit par `build_artistes.py`
+depuis les mêmes résultats que le graphique et les jauges (`resout_reference()`, famille
+retenue). **63 fichiers, 3 674 œuvres au total** — c'est la somme des appartenances : les
+**6 références nommant deux maîtres retenus** (voir le recouvrement ci-dessous) figurent dans
+les deux fichiers concernés, une fois chacun, comme dans les deux fiches.
+
+Chaque fichier est contrôlé à l'écriture : autant d'entrées que `maitre.doute`, ventilation par
+mention égale à `maitre.familles`, aucune référence en double, chaque entrée porte une référence
+Joconde, aucune copie « d'après ». Les totaux affichés dans l'onglet sont donc, par construction,
+identiques à ceux du graphique. Contre-vérifié indépendamment sur les 63 fichiers (2026-07-28).
+
+Aucun maître ne se situe exactement à 10 œuvres : le seuil est « ≥ 10 », mais le minimum réel
+est **Titien à 11** (le maître le plus proche du seuil).
+
 ## Recouvrement entre les profils de maîtres (2026-07-22)
 
 Mesuré sur les 1 023 705 lignes. Une notice peut nommer **deux maîtres retenus** : elle

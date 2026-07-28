@@ -1,0 +1,2509 @@
+{
+ "slug": "charles-le-brun",
+ "nom": "Charles Le Brun",
+ "doute": 310,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 52
+  },
+  {
+   "code": "point_interrogation",
+   "notices": 2
+  },
+  {
+   "code": "ecole_de",
+   "notices": 240
+  },
+  {
+   "code": "atelier_de",
+   "notices": 16
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "000PE001736",
+   "titre": "L'AUTOMNE",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "LE BRUN Charles (atelier)"
+  },
+  {
+   "reference": "000PE001732",
+   "titre": "FIGURES ET MOTIFS DECORATIFS",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "LE BRUN Charles (atelier)"
+  },
+  {
+   "reference": "000PE001734",
+   "titre": "FIGURES ET MOTIFS DECORATIFS",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "LE BRUN Charles (atelier)"
+  },
+  {
+   "reference": "000PE001735",
+   "titre": "PORTIERE DE LA LICORNE",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "LE BRUN Charles (atelier)"
+  },
+  {
+   "reference": "000PE001737",
+   "titre": "LES ENFANTS JARDINIERS : L'HIVER",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "LE BRUN Charles (atelier)"
+  },
+  {
+   "reference": "000PE001733",
+   "titre": "L'AIR",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "LE BRUN Charles (atelier)"
+  },
+  {
+   "reference": "000PE008955",
+   "titre": "GUERRIER ESPAGNOL",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "000PE013144",
+   "titre": "LOUIS XIV, ROI DE FRANCE ET DE NAVARRE (1638-1715)",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "code": "attribue",
+   "extrait": "LE BRUN Charles (attribué)"
+  },
+  {
+   "reference": "000PE014799",
+   "titre": "AMPHITRITE, DIT AUTREFOIS NYMPHES DE FONTAINE",
+   "musee": "musée des beaux-arts",
+   "ville": "Marseille",
+   "code": "attribue",
+   "extrait": "LE BRUN Charles (attribué à)"
+  },
+  {
+   "reference": "000PE018974",
+   "titre": "PORTRAIT DIT DE VAUBAN",
+   "musee": "musée des Beaux-Arts",
+   "ville": "Lille",
+   "code": "attribue",
+   "extrait": "LE BRUN Charles (attribué)"
+  },
+  {
+   "reference": "000PE020969",
+   "titre": "Portrait de Monsieur de Formigny",
+   "musee": "musée des beaux-arts",
+   "ville": "Caen",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "000PE020970",
+   "titre": "Portrait de Madame de Formigny",
+   "musee": "musée des beaux-arts",
+   "ville": "Caen",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "000PE021281",
+   "titre": "Bacchanale, ou Ivresse de Silène",
+   "musee": "musée des beaux-arts",
+   "ville": "Caen",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "000PE025251",
+   "titre": "BACCHUS ET ARIANE",
+   "musee": "musée des beaux-arts",
+   "ville": "Bordeaux",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "000PE026535",
+   "titre": "CRUCIFIXION",
+   "musee": "MUDO - musée de l'Oise",
+   "ville": "Beauvais",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "000PE033165",
+   "titre": "L'ERECTION DE LA CROIX",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "00000058405",
+   "titre": "SAINTE GENEVIEVE DEVANT PARIS",
+   "musee": "musée des beaux-arts",
+   "ville": "Rouen",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "00000058404",
+   "titre": "PORTRAIT D'HOMME EN COSTUME DE L'ORDRE DU SAINT-ESPRIT ; DIT AUSSI PORTRAIT D'HOMME EN CHAPEAU A PLUME",
+   "musee": "musée des beaux-arts",
+   "ville": "Rouen",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "00000104553",
+   "titre": "Le Triomphe de la Religion",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "LE BRUN Charles (atelier)"
+  },
+  {
+   "reference": "000PE011526",
+   "titre": "Portrait présumé du peintre Charles Le Brun jeune, présentant le portrait d'un militaire",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "code": "attribue",
+   "extrait": "LE BRUN Charles (attribué)"
+  },
+  {
+   "reference": "000PE011536",
+   "titre": "ALLEGORIE DES VICTOIRES DE LOUIS XIV",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208139",
+   "titre": "Jeune homme demi-nu, assis",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208107",
+   "titre": "Deux projets de décor",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208110",
+   "titre": "Plan et profil d'une cascade dans un jardin",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208102",
+   "titre": "Projet de décor de la Grande Galerie, côté miroirs",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208091",
+   "titre": "Projet pour l'arc de triomphe de la rue Saint-Antoine à Paris",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208093",
+   "titre": "Plan de construction pour un jardin",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208099",
+   "titre": "Projet de décor de la Grande Galerie, côté fenêtres",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208113",
+   "titre": "Plan du premier parterre d'Eau de Versailles",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208111",
+   "titre": "Décor pour un plafond",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208026",
+   "titre": "Elévation de la façade d'un bâtiment religieux",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208064",
+   "titre": "Plan de la Grande Galerie de Versailles et des deux salons contigus",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208100",
+   "titre": "Décor du salon de la Guerre",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208104",
+   "titre": "Décor du salon de la paix",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350207993",
+   "titre": "Décor de plafond",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350207998",
+   "titre": "Projet de décor avec arabesques, lévriers, cerfs",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208076",
+   "titre": "Plan d'une construction pour un jardin",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208019",
+   "titre": "Projet pour la façade du château de Marly",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208015",
+   "titre": "Projet pour la façade du château de Marly",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208055",
+   "titre": "Plan d'une chapelle (milieu de l'aile nord)",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208081",
+   "titre": "Coupe de l'église du collège des Quatre-Nations",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350207997",
+   "titre": "Projet d'autel",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208017",
+   "titre": "Plan et profil d'une cascade",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208037",
+   "titre": "Colonne avec chapiteau, entablement et corniche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208011",
+   "titre": "Encadrement avec décor de la partie supérieure et cartouche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208018",
+   "titre": "Plan d'un bassin octogonal",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208086",
+   "titre": "Plan du collège des Quatre-Nations",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208010",
+   "titre": "Encadrement",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208027",
+   "titre": "Plan d'une église en croix latine",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208063",
+   "titre": "Plan d'une chapelle (milieu de l'aile nord)",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208059",
+   "titre": "Façade du château de Marly",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208058",
+   "titre": "Projet pour l'arc de triomphe de la rue Saint-Antoine à Paris",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208057",
+   "titre": "Coupe d'une chapelle, avec coupole (milieu de l'aile nord)",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208073",
+   "titre": "Plan de l'appartement du roi, à Versailles",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350207992",
+   "titre": "Projet pour un décor de plafond",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208065",
+   "titre": "Plan du rez-de-chaussée du château de Versailles",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208052",
+   "titre": "Dix-huit chapiteaux",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350207996",
+   "titre": "Projet de décor au chiffre de Louis XIV",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208106",
+   "titre": "Panneau décoratif ou portière",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208028",
+   "titre": "Façade du château de Marly",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350207820",
+   "titre": "Les Reines de Perses, aux pieds d'Alexandre ou La Tente de Darius",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LE BRUN Charles (attribué à)"
+  },
+  {
+   "reference": "50350208095",
+   "titre": "Elévation et plan d'un pavillon, avec statue royale",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208030",
+   "titre": "Plan et élévation d'un pavillon avec statue royale, dans un jardin",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208035",
+   "titre": "Pavillon à trois arcades avec statue royale",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208031",
+   "titre": "Pavillon avec statue royale et fontaines",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208045",
+   "titre": "Pavillon avec statue royale et fontaines",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208169",
+   "titre": "Homme demi-nu, soutenu par trois autres",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208033",
+   "titre": "Elévation d'un pavillon avec statue royale, dans un jardin",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208145",
+   "titre": "Cavalier casqué, tourné vers la droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208108",
+   "titre": "Vue en perspective du premier parterre d'Eau de Versailles",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350207995",
+   "titre": "Décor de l'angle d'un plafond",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350207994",
+   "titre": "Décor de l'angle d'un plafond",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208042",
+   "titre": "Plan et profil d'une cascade",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350207830",
+   "titre": "Projet pour l'Arc de triomphe de la rue Saint-Antoine à Paris",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LE BRUN Charles (attribué à)"
+  },
+  {
+   "reference": "50350507912",
+   "titre": "Col de vase, avec anse",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "LE BRUN Charles (atelier)"
+  },
+  {
+   "reference": "50350508000",
+   "titre": "Ange à mi-jambes, tourné vers la droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "LE BRUN Charles (atelier)"
+  },
+  {
+   "reference": "50350507882",
+   "titre": "Vase en forme de saucière",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "LE BRUN Charles (atelier)"
+  },
+  {
+   "reference": "50350507886",
+   "titre": "Angelot, les deux bras levés",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "LE BRUN Charles (atelier)"
+  },
+  {
+   "reference": "50350507858",
+   "titre": "Deux femmes assises, l'une tenant un vase",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "LE BRUN Charles (atelier)"
+  },
+  {
+   "reference": "50350507913",
+   "titre": "Partie du chandelier à sept branches",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "LE BRUN Charles (atelier)"
+  },
+  {
+   "reference": "50350507885",
+   "titre": "Vase",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "LE BRUN Charles (atelier)"
+  },
+  {
+   "reference": "50350208192",
+   "titre": "La Montée au Calvaire",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208201",
+   "titre": "Victoire ailée et jeune sagittaire",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208191",
+   "titre": "Etude de cheval",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208196",
+   "titre": "Le Roi arme sur mer et sur terre (fragment)",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208197",
+   "titre": "Projet de fontaine",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208190",
+   "titre": "Figure drapée, les bras écartés",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208204",
+   "titre": "Mercure dessinant la figure du Nil",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208199",
+   "titre": "Mort d'un guerrier romain",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208202",
+   "titre": "Saint Jean Baptiste reprochant sa conduite au roi Hérode",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208203",
+   "titre": "Le Départ de Tobie",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208205",
+   "titre": "Enlèvement d'une nymphe par Neptune",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208198",
+   "titre": "Elévation de la Croix",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208041",
+   "titre": "Profil d'une cascade",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208034",
+   "titre": "Coupe d'un pavillon avec arcade centrale",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208044",
+   "titre": "Plan de construction pour un jardin",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208036",
+   "titre": "Coupe de l'église du collège des quatre-nations",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208001",
+   "titre": "Décor pour un encadrement",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208078",
+   "titre": "Plan de la troisième chapelle de Versailles (rez-de-chaussée)",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208085",
+   "titre": "Elevation d'une galerie",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208069",
+   "titre": "Coupe d'un bâtiment, avec sa charpente",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208087",
+   "titre": "Projet de décor de la Grande Galerie, côté fenêtres",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208047",
+   "titre": "Projet de fontaine dans une niche. Elévation et plan",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350207986",
+   "titre": "Deux têtes de jeune faune",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350207989",
+   "titre": "Deux têtes de vieux faune, l'une de profil et l'autre de trois quarts",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208038",
+   "titre": "Chapiteau, entablement et corniche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350207838",
+   "titre": "Flore",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LE BRUN Charles (attribué à)"
+  },
+  {
+   "reference": "50350208088",
+   "titre": "Projet pour la partie droite de la façade du château de Marly",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208012",
+   "titre": "Cartouche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208056",
+   "titre": "Décor de meuble",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208053",
+   "titre": "Chapiteau",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208005",
+   "titre": "Table",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208062",
+   "titre": "Plan de construction pour un jardin",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208068",
+   "titre": "Projet pour l'Arc de triomphe de la rue Saint-Antoine à Paris",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208082",
+   "titre": "Projet de décor sculpté",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350207999",
+   "titre": "Projet de décor",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208050",
+   "titre": "Projet pour un décor mural",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208077",
+   "titre": "Plan, élévation et coupe d'une grotte avec fontaines",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208074",
+   "titre": "Elévation intérieur de la troisième chapelle de Versailles",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208066",
+   "titre": "Plan d'une construction pour un jardin",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208072",
+   "titre": "Décor de vase, vasque et coquille pour un bassin",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208002",
+   "titre": "Vase",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350207990",
+   "titre": "Deux têtes de satyre, l'une de face et l'autre de profil",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208022",
+   "titre": "Elévation d'un pavillon",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208080",
+   "titre": "Coupe d'un bâtiment",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208049",
+   "titre": "Deux chapiteaux",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350207991",
+   "titre": "Décor pour l'angle d'un plafond",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208025",
+   "titre": "Plan d'un pavillon",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208048",
+   "titre": "Demi plan d'un pavillon dans un jardin",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350207839",
+   "titre": "Projet de fontaine à deux vasques",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LE BRUN Charles (attribué à)"
+  },
+  {
+   "reference": "50350207840",
+   "titre": "Marche triomphale",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LE BRUN Charles (attribué à)"
+  },
+  {
+   "reference": "50350208060",
+   "titre": "Projet pour l'arc de triomphe de la rue Saint-Antoine à Paris",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208003",
+   "titre": "Vase (partie droite)",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208084",
+   "titre": "Plan intérieur d'un bâtiment carré",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208008",
+   "titre": "Quatre chandeliers",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208023",
+   "titre": "Elévation d'un pavillon",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208007",
+   "titre": "Table",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208021",
+   "titre": "Pavillon avec statue royale et jets d'eau",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208071",
+   "titre": "Elévation d'un bâtiment",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208070",
+   "titre": "Coupe d'un pavillon avec statue",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208079",
+   "titre": "Plan d'un bâtiment",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350207988",
+   "titre": "Deux têtes de vieux faune, l'une de face et l'autre de profil",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208020",
+   "titre": "Plan d'un pavillon, avec emplacement de statue",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208067",
+   "titre": "Chapiteau",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208039",
+   "titre": "Plan d'un bâtiment",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208029",
+   "titre": "Plan d'une chapelle",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208043",
+   "titre": "Profil de charpente pour un bâtiment",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208016",
+   "titre": "Projet de fontaine dans une niche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208075",
+   "titre": "Plan de la troisième chapelle de Versailles (premier étage)",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208014",
+   "titre": "Projet pour la partie centrale de la façade orientale du Louvre",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350207837",
+   "titre": "Phryxus et Hellé",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LE BRUN Charles (attribué à)"
+  },
+  {
+   "reference": "50350208004",
+   "titre": "Encadrement de miroir",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208051",
+   "titre": "Neuf chapiteaux",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208006",
+   "titre": "Encadrement de miroir",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208013",
+   "titre": "Partie d'un encadrement",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350207836",
+   "titre": "Bacchus",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LE BRUN Charles (attribué à)"
+  },
+  {
+   "reference": "50350208061",
+   "titre": "Projet pour l'arc de triomphe de la rue Saint-Antoine à Paris",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208000",
+   "titre": "Vase",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208083",
+   "titre": "Plan et élévation du salon de Diane à Versailles",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208009",
+   "titre": "Deux chandeliers",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350207987",
+   "titre": "Deux têtes de jeune faune, l'une de face et l'autre de profil",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "06070000146",
+   "titre": "Allégorie à la gloire de Louis XIV",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "atelier_de",
+   "extrait": "LE BRUN Charles (atelier)"
+  },
+  {
+   "reference": "50350208040",
+   "titre": "Plan d'un pavillon avec jets d'eau",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208112",
+   "titre": "Un plan",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208024",
+   "titre": "Pavillon avec statue royale et fontaines",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208054",
+   "titre": "Un chapiteau",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208032",
+   "titre": "Pavillon avec statue royale et fontaines",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208090",
+   "titre": "Projet pour l'arc de triomphe de la rue Saint-Antoine à Paris",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350503082",
+   "titre": "Etude d'ornement",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350503089",
+   "titre": "Elévation partielle d'un bâtiment, avec indication d'un décor",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350503078",
+   "titre": "Tracé d'une architecture imprécise",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350503092",
+   "titre": "Croquis",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LE BRUN Charles (attribué à)"
+  },
+  {
+   "reference": "50350503088",
+   "titre": "Etude de draperie",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LE BRUN Charles (attribué à)"
+  },
+  {
+   "reference": "50350503081",
+   "titre": "Moitié de chapiteau",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350503077",
+   "titre": "Tête de femme, à la pierre noire",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LE BRUN Charles (attribué à)"
+  },
+  {
+   "reference": "50350503076",
+   "titre": "Etude d'architecture",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350503091",
+   "titre": "Plan (?)",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LE BRUN Charles (attribué à)"
+  },
+  {
+   "reference": "50350503083",
+   "titre": "Edicule surmonté d'une couronne",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350503084",
+   "titre": "Coiffures, babouches",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350503090",
+   "titre": "Plan d'un bâtiment",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350207798",
+   "titre": "Projet de plafond",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LE BRUN Charles (attribué à)"
+  },
+  {
+   "reference": "50350207809",
+   "titre": "Trophées d'armes, pour le plafond de la Grande Galerie de Versailles",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LE BRUN Charles (attribué à)"
+  },
+  {
+   "reference": "50350207813",
+   "titre": "Trophée d'armes",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LE BRUN Charles (attribué à)"
+  },
+  {
+   "reference": "50350207814",
+   "titre": "Trophées d'armes, pour le plafond de la Grande Galerie de Versailles",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LE BRUN Charles (attribué à)"
+  },
+  {
+   "reference": "50350207810",
+   "titre": "Elément de décor",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LE BRUN Charles (attribué à)"
+  },
+  {
+   "reference": "50350207811",
+   "titre": "Trophée d'armes",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LE BRUN Charles (attribué à)"
+  },
+  {
+   "reference": "50350207812",
+   "titre": "Ecusson, trophée et putti",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LE BRUN Charles (attribué à)"
+  },
+  {
+   "reference": "50350512992",
+   "titre": "Lion égyptien",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350512978",
+   "titre": "Croquis d'un rectangle et annotation",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350512979",
+   "titre": "Ebauche d'une architecture",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208178",
+   "titre": "Tête de vieillard, barbu et chevelu, de face, regardant vers le bas",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208150",
+   "titre": "Guerrier nu, casqué, courant vers la droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208161",
+   "titre": "Soldat casqué, vu à mi-corps. Tête de soldat, de profil",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208176",
+   "titre": "Ange drapé volant dans les airs",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208146",
+   "titre": "Femme drapée, assise",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208174",
+   "titre": "Homme drapé, de dos",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208180",
+   "titre": "Cavalier casqué, vu de dos",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208185",
+   "titre": "Homme drapé, volant dans les airs",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208147",
+   "titre": "Trois femmes drapées",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208149",
+   "titre": "Homme à genoux",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208172",
+   "titre": "Homme nu, renversé",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208156",
+   "titre": "Femme drapée, étendue à terre",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208187",
+   "titre": "Femme assise, drapée et casquée",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208140",
+   "titre": "Ange drapé",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208151",
+   "titre": "Homme drapé, à genoux, de profil",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208171",
+   "titre": "Homme drapé, assis, de profil",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208168",
+   "titre": "Homme drapé, vu presque de dos, la tête de profil",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208170",
+   "titre": "Trois hommes à mi-corps dont deux étendus",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208136",
+   "titre": "Guerrier demi nu, casqué, assis",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208142",
+   "titre": "Femme drapée, renversée en arrière",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208181",
+   "titre": "Femme drapée assise, vue presque de dos",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208148",
+   "titre": "Homme demi-nu, assis, tourné vers la droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208162",
+   "titre": "Homme demi-nu, étendu à terre, les bras en avant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208153",
+   "titre": "Femme assise tenant un enfant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208182",
+   "titre": "Homme renversé, à mi-corps",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208154",
+   "titre": "Homme demi-nu, de profil, les jambes fléchies",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208138",
+   "titre": "Homme nu, penché en avant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208177",
+   "titre": "Figure assise, enveloppée d'une draperie",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208155",
+   "titre": "Trois hommes enchaînés",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208186",
+   "titre": "Homme à mi-corps, renversé",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208157",
+   "titre": "Homme demi-nu, de profil, marchant vers la droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208159",
+   "titre": "Cheval de profil, galopant vers la gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208173",
+   "titre": "Femme drapée, assise",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208189",
+   "titre": "Femme drapée, assise, tenant un livre ouvert",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208144",
+   "titre": "Femme nue, soufflant dans une trompette",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208160",
+   "titre": "Etude partielle de cheval",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208175",
+   "titre": "Homme drapé, assis",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208165",
+   "titre": "Homme nu, tirant sur une corde",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208167",
+   "titre": "Homme debout, drapé, tenant un bâton",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208152",
+   "titre": "Jeune fille accroupie, vue de profil",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208158",
+   "titre": "Homme demi-nu, penché en avant, les bras tendus",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208137",
+   "titre": "Homme à terre, criant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208188",
+   "titre": "Femme drapée, assise",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208166",
+   "titre": "Deux hommes à genoux",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208184",
+   "titre": "Homme nu, assis, de profil à gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208163",
+   "titre": "Christ en croix",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208141",
+   "titre": "Draperie pour une figure demi-nue, assise",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208183",
+   "titre": "Homme drapé, étendu à terre",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208143",
+   "titre": "Deux femmes, l'une volant, l'autre à mi-corps",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208179",
+   "titre": "Femme nue, assise",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208164",
+   "titre": "Enfant, de profil",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350207817",
+   "titre": "Décor de griffons, coquille et trophée d'armes",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LE BRUN Charles (attribué à)"
+  },
+  {
+   "reference": "50350207822",
+   "titre": "Socle en gaine",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LE BRUN Charles (attribué à)"
+  },
+  {
+   "reference": "50350207826",
+   "titre": "Projet d'élévation pour un des pavillons de Marly",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LE BRUN Charles (attribué à)"
+  },
+  {
+   "reference": "50350207816",
+   "titre": "Elément de décor",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LE BRUN Charles (attribué à)"
+  },
+  {
+   "reference": "50350207827",
+   "titre": "Projet d'élévation pour les pavillons de Diane et de Saturne, à Marly",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LE BRUN Charles (attribué à)"
+  },
+  {
+   "reference": "50350207815",
+   "titre": "Décor de coquille et griffons",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LE BRUN Charles (attribué à)"
+  },
+  {
+   "reference": "50350207829",
+   "titre": "Projet d'élévation pour le pavillon de Junon, à Marly",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LE BRUN Charles (attribué à)"
+  },
+  {
+   "reference": "50350207824",
+   "titre": "Projet pour l'Arc de triomphe de la rue Saint-Antoine à Paris",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LE BRUN Charles (attribué à)"
+  },
+  {
+   "reference": "50350207818",
+   "titre": "Deux études de mors et brides, sur une tête de cheval de profil",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LE BRUN Charles (attribué à)"
+  },
+  {
+   "reference": "50350208105",
+   "titre": "Coupe de la chapelle définitive de Versailles",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208124",
+   "titre": "Vase, poignards",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350207834",
+   "titre": "Fontaine d'Atlas et d'Hercule",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LE BRUN Charles (attribué à)"
+  },
+  {
+   "reference": "50350208125",
+   "titre": "Enclume",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350207821",
+   "titre": "Vaisseau de guerre, vu côté poupe",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LE BRUN Charles (attribué à)"
+  },
+  {
+   "reference": "50350208128",
+   "titre": "Décor d'armes, étendard, feuilles et tête de bélier",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350207828",
+   "titre": "Projet d'élévation pour le pavillon d'Apollon et de Téthys, à Marly",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LE BRUN Charles (attribué à)"
+  },
+  {
+   "reference": "50350207831",
+   "titre": "Fontaine d'Hercule et d'Antée",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LE BRUN Charles (attribué à)"
+  },
+  {
+   "reference": "50350207819",
+   "titre": "Le mariage de Constantin",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LE BRUN Charles (attribué à)"
+  },
+  {
+   "reference": "50350207825",
+   "titre": "Projet d'élévation pour un des pavillons de Marly",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LE BRUN Charles (attribué à)"
+  },
+  {
+   "reference": "50350208092",
+   "titre": "Elévation d'un pavillon avec statue royale et jets d'eau",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208121",
+   "titre": "Trois vases décoratifs",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350207823",
+   "titre": "Projet d'élévation pour le pavillon de Vénus, à Marly",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LE BRUN Charles (attribué à)"
+  },
+  {
+   "reference": "50350208116",
+   "titre": "Vase décoratif",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208114",
+   "titre": "Deux fontaines et un vase avec jet d'eau",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208132",
+   "titre": "Deux femmes, vues à mi-jambes",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208118",
+   "titre": "Vase",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208126",
+   "titre": "Figure drapée à genoux et deux figures assises",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208127",
+   "titre": "Ancre marine",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208117",
+   "titre": "Vases",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208089",
+   "titre": "Colonne avec chapiteau, entablement et corniche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208123",
+   "titre": "Lion au galop",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208094",
+   "titre": "Elévation d'un pavillon avec statue royale, dans un jardin",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208134",
+   "titre": "Homme demi-nu, avançant vers la gauche, les deux bras levés",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208103",
+   "titre": "Projet de décor de la Grande Galerie, côté fenêtres",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208119",
+   "titre": "Trois vases décoratifs",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208135",
+   "titre": "Guerrier drapé et casqué, un genou à terre",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350207835",
+   "titre": "Fontaine de Persée et d'Atlas",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LE BRUN Charles (attribué à)"
+  },
+  {
+   "reference": "50350208120",
+   "titre": "Trois vases décoratifs",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208130",
+   "titre": "Les Différentes nations de l'Afrique",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208115",
+   "titre": "Vase décoratif",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208096",
+   "titre": "Elévation d'un pavillon avec statue royale",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350207832",
+   "titre": "Fontaine d'Apollon et de Daphné",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LE BRUN Charles (attribué à)"
+  },
+  {
+   "reference": "50350208133",
+   "titre": "Femme drapée, à demi-renversée",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208122",
+   "titre": "Lion égyptien",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208101",
+   "titre": "Projet de décor de la Grande Galerie, côté fenêtres",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208098",
+   "titre": "Projet de décor de la Grande Galerie, côté fenêtres",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350207833",
+   "titre": "Fontaine de la victoire d'Apollon sur le serpent Python",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LE BRUN Charles (attribué à)"
+  },
+  {
+   "reference": "50350208109",
+   "titre": "Plan et profil d'une cascade",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208131",
+   "titre": "Trois hommes drapés, endormis",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50350208129",
+   "titre": "Décor d'armes, bouclier et feuilles",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "50130000351",
+   "titre": "L'Espérance",
+   "musee": "musée national du château de Fontainebleau",
+   "ville": "Fontainebleau",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "5013M000350",
+   "titre": "La Foi",
+   "musee": "musée national du château de Fontainebleau",
+   "ville": "Fontainebleau",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "07480011131",
+   "titre": "Jupiter brandissant la foudre ; Jupiter porté par l'aigle (titre vente Chennevières)",
+   "musee": "musée des beaux-arts et galerie David-d'Angers",
+   "ville": "Angers",
+   "code": "point_interrogation",
+   "extrait": "LE BRUN Charles (?, peintre)"
+  },
+  {
+   "reference": "08030000617",
+   "titre": "Christ en croix",
+   "musee": "musée Antoine Vivenel",
+   "ville": "Compiègne",
+   "code": "atelier_de",
+   "extrait": "LE BRUN Charles (atelier)"
+  },
+  {
+   "reference": "07480012030",
+   "titre": "Etude pour une figure des batailles d'Alexandre (Ancien titre) ; Tête semblant exprimer l'admiration (D'après K. Sauvignon)",
+   "musee": "musée des beaux-arts et galerie David-d'Angers",
+   "ville": "Angers",
+   "code": "attribue",
+   "extrait": "Le Brun Charles (attribué)"
+  },
+  {
+   "reference": "02110002697",
+   "titre": "Jupiter",
+   "musee": "musée des beaux-arts",
+   "ville": "Rennes",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "02110002696",
+   "titre": "Etude de femme drapée",
+   "musee": "musée des beaux-arts",
+   "ville": "Rennes",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "02110002698",
+   "titre": "Ange tenant une épée",
+   "musee": "musée des beaux-arts",
+   "ville": "Rennes",
+   "code": "ecole_de",
+   "extrait": "LE BRUN Charles (école)"
+  },
+  {
+   "reference": "M0332003880",
+   "titre": "Aigle ou rapace aux ailes déployées",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "LE BRUN Charles (attribué à) (dessinateur)"
+  },
+  {
+   "reference": "01840000018",
+   "titre": "Le massacre des Innocents",
+   "musee": "musée d'art et d'histoire Saint-Germain",
+   "ville": "Auxerre",
+   "code": "attribue",
+   "extrait": "LE BRUN Charles (attribué)"
+  },
+  {
+   "reference": "M0332012143",
+   "titre": "Groupe de trois Amours ailés",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "LE BRUN Charles (attribué à) (dessinateur)"
+  },
+  {
+   "reference": "M0332012146",
+   "titre": "Draperie d'une femme ailée",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "point_interrogation",
+   "extrait": "LE BRUN Charles (?) (dessinateur)"
+  },
+  {
+   "reference": "M0332012185",
+   "titre": "Composition mythologique ou allégorique",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "LE BRUN Charles (attribué à)"
+  },
+  {
+   "reference": "M0332012186",
+   "titre": "Profil de Louis XIV",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "LE BRUN Charles (attribué à) (dessinateur)"
+  },
+  {
+   "reference": "M0332011058",
+   "titre": "Fontaine de la Renommée",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "LE BRUN Charles (attribué à, dessinateur)"
+  },
+  {
+   "reference": "M0332011069",
+   "titre": "Projet de décor architectural. esquisse de deux allégories de la Renommée",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "LE BRUN Charles (attribué à) (dessinateur)"
+  },
+  {
+   "reference": "01160005166",
+   "titre": "Christ en croix",
+   "musee": "musée Crozatier",
+   "ville": "Le Puy-en-Velay",
+   "code": "attribue",
+   "extrait": "LE BRUN Charles (attribué à)"
+  },
+  {
+   "reference": "09940080570",
+   "titre": "L'Ordre rétabli dans les finances ; Dessin préparatoire pour la Galerie des Glaces à Versailles (Titre attribué)",
+   "musee": "musée de Grenoble",
+   "ville": "Grenoble",
+   "code": "attribue",
+   "extrait": "Le Brun Charles (attribué à)"
+  },
+  {
+   "reference": "M0457000773",
+   "titre": "Sans désignation",
+   "musee": "musée des beaux-arts",
+   "ville": "Nîmes",
+   "code": "attribue",
+   "extrait": "Le Brun Charles (1619-1690) (attribué à)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-07-28T14:49:21+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

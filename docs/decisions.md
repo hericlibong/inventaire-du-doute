@@ -2,6 +2,49 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-28 — Onglet « Œuvres » : toutes les œuvres concernées, chargées à la demande
+
+L'onglet « Œuvres » ne montrait que quelques exemples (au plus neuf, une notice par mention
+et deux pour la dominante). Il montre désormais la **totalité des œuvres concernées** par le
+maître, filtrables par mention et paginées.
+
+**Un fichier par maître, à part.** Mettre toutes les références dans `artistes.json` l'aurait
+alourdi bien au-delà de son rôle (répertoire + profils, chargé d'emblée). Chaque maître reçoit
+donc `data/exports/web/oeuvres/<slug>.json`, écrit par `src/build_artistes.py` dans la même
+passe que l'export léger (aucune seconde lecture du CSV, aucun risque de divergence). Un champ
+`slug` stable est ajouté à chaque artiste de `artistes.json` : c'est tout ce que le front a
+besoin de connaître pour charger le bon fichier. Les anciens `exemples` (et leur machinerie
+`MAX_EXEMPLES` / `EXEMPLES_PAR_FAMILLE`) sont retirés — devenus sans emploi.
+
+**Source de vérité inchangée.** Les entrées viennent de `resout_reference()` et de la famille
+unique déjà retenue : une référence par maître, une famille par référence, homonymes et copies
+« d'après » déjà écartés (chantier de fiabilisation, 2026-07-21). Aucune nouvelle détection.
+
+**Invariants vérifiés à l'écriture de chaque fichier** (assertions, sinon l'export échoue) :
+nombre d'entrées = `maitre.doute` ; somme par famille = `maitre.familles` ; aucune référence
+en double ; chaque entrée a une référence Joconde ; aucune copie dans la liste. Les totaux de
+l'onglet égalent donc exactement le graphique et les jauges (même source, même comptage).
+
+**Ordre.** Le fichier garde l'ordre de rencontre dans le CSV (non choisi à la main, comme les
+anciens exemples). Le front regroupe les œuvres par mention selon l'ordre public de l'axe
+(`ORDRE_FAMILLES`), tri stable : l'ordre de rencontre est conservé au sein d'une même mention.
+
+**Chargement différé.** L'onglet ne charge que le fichier de l'artiste affiché, et seulement
+quand on l'ouvre — jamais celui des autres. Un jeton anti-course écarte la réponse d'un
+artiste qu'on aurait quitté avant la fin du chargement. États prévus : chargement, erreur
+(avec « Réessayer »), vide.
+
+**Filtres + pagination.** Puces « Toutes » + une par mention présente (effectif affiché,
+familles absentes masquées), huit œuvres par page, pagination compacte (première, dernière,
+active ± voisines, « … » ailleurs — logique isolée dans `pagination.js`, testée). Un filtre
+remet la page à 1 ; changer de page recentre la lecture au début de la liste sans à-coup.
+Mention active et page active repérables **sans la seule couleur** (`aria-pressed`,
+`aria-current="page"`, gras/bordure), boutons de bord désactivés aux extrémités.
+
+**Wording.** L'onglet passe à « Œuvres concernées » (vocabulaire public « œuvres »). Le bloc
+« À part » des copies « d'après » est conservé tel quel (il dit encore « N notices ») : son
+unification reste en réserve, hors périmètre de ce chantier.
+
 ## 2026-07-28 — Refonte de la disposition de « Explorer les artistes »
 
 Chantier de disposition (textes, données, graphique et interactions inchangés), mené sur une

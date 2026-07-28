@@ -2,6 +2,28 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-28 — L'onglet « Œuvres » montre tout, plus quelques exemples
+
+Jusqu'ici, derrière le graphique d'un maître, l'onglet « Œuvres » ne donnait qu'une poignée
+d'exemples — une notice par mention, le premier venu dans la base. On voyait la forme du
+doute sans pouvoir le parcourir. Désormais l'onglet ouvre la liste **complète** des œuvres
+concernées : toutes celles que le pipeline a retenues, filtrables par mention et paginées.
+
+Le principe qu'on s'est tenu : ne rien recompter. Les œuvres sortent des mêmes résultats que
+le graphique et les jauges — une référence par maître, une mention par référence, les copies
+« d'après » déjà à part. Un fichier par maître (`oeuvres/<slug>.json`), écrit dans la même
+passe que l'export léger, avec des garde-fous qui refusent l'écriture si le compte ne tombe
+pas juste : autant d'entrées que le chiffre affiché, la ventilation par mention identique,
+aucune référence en double, aucune copie égarée. Ce qu'on lit dans l'onglet ne peut donc pas
+contredire le point du graphe.
+
+Côté interface, le fichier ne se charge qu'à l'ouverture de l'onglet, et seulement pour
+l'artiste affiché — pas de préchargement de soixante-trois listes. Filtres en puces (avec
+l'effectif de chaque mention), huit œuvres par page, une pagination qui se resserre quand les
+pages sont nombreuses. On a soigné les états qu'on oublie d'habitude : le chargement, l'erreur
+avec un « Réessayer », la liste vide. Et le clavier : mention active, page active, boutons de
+bord désactivés — tout est dit autrement que par la couleur.
+
 ## 2026-07-27 — Le graphique et sa légende se répondent
 
 Jusqu'ici, survoler un point éclairait sa mention dans la légende. Le sens inverse manquait :

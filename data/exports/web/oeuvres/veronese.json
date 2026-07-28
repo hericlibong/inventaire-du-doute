@@ -1,0 +1,309 @@
+{
+ "slug": "veronese",
+ "nom": "Véronèse",
+ "doute": 35,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 12
+  },
+  {
+   "code": "ecole_de",
+   "notices": 2
+  },
+  {
+   "code": "atelier_de",
+   "notices": 20
+  },
+  {
+   "code": "suiveur_de",
+   "notices": 1
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "000PE019542",
+   "titre": "Le Christ pleure par la Vierge et deux anges",
+   "musee": "musée des Beaux-Arts",
+   "ville": "Lille",
+   "code": "atelier_de",
+   "extrait": "CALIARI Paolo (atelier)"
+  },
+  {
+   "reference": "000PE023078",
+   "titre": "PORTRAIT DE LA FEMME DU DOGE GIUSTINANI",
+   "musee": "musée des beaux-arts",
+   "ville": "Bordeaux",
+   "code": "attribue",
+   "extrait": "CALIARI Paolo (attribué)"
+  },
+  {
+   "reference": "000PE027370",
+   "titre": "LA FAMILLE DE LOTH FUYANT SODOME",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "VERONESE (dit, atelier)"
+  },
+  {
+   "reference": "000PE027371",
+   "titre": "LA SAINTE-FAMILLE, AVEC SAINTE ELISABETH, LA MADELEINE ET UNE BENEDICTINE AGENOUILLEE",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "VERONESE (dit, atelier)"
+  },
+  {
+   "reference": "000PE027369",
+   "titre": "JESUS SUCCOMBANT SOUS LE POIDS DE LA CROIX",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALIARI Paolo (atelier)"
+  },
+  {
+   "reference": "00000077344",
+   "titre": "MARS ET VENUS",
+   "musee": "musée Condé",
+   "ville": "Chantilly",
+   "code": "atelier_de",
+   "extrait": "CALIARI Paolo (atelier)"
+  },
+  {
+   "reference": "10500004947",
+   "titre": "Portrait de jeune femme",
+   "musee": "musée des beaux-arts",
+   "ville": "Chambéry",
+   "code": "atelier_de",
+   "extrait": "Véronèse (1528-1588) (atelier)"
+  },
+  {
+   "reference": "50350007007",
+   "titre": "Les anges célébrant le mariage de sainte Catherine d'Alexandrie",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "VERONESE (dit) (attribué à)"
+  },
+  {
+   "reference": "50350006997",
+   "titre": "Saint François avec un livre, une sainte, Dieu et un ange tenant une palme",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "VERONESE (dit) (attribué à)"
+  },
+  {
+   "reference": "50350200379",
+   "titre": "Minerve debout, tenant un bouclier ; reprise (?) de la tête",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "VERONESE (dit) (attribué à)"
+  },
+  {
+   "reference": "50350007023",
+   "titre": "Mars et Vénus",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "VERONESE (dit) (attribué à)"
+  },
+  {
+   "reference": "50350006998",
+   "titre": "Saint Georges et la princesse , la Vierge avec l'Enfant et un saint",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "VERONESE (dit) (attribué à)"
+  },
+  {
+   "reference": "50350105884",
+   "titre": "Tête d'homme, vue de face, portant moustache et barbe",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "VERONESE (dit) (atelier)"
+  },
+  {
+   "reference": "50350007037",
+   "titre": "Antéros derrière Vénus et Mercure tenant Eros devant Jupiter",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "VERONESE (dit) (attribué à)"
+  },
+  {
+   "reference": "50350110427",
+   "titre": "Tête d'homme, vue de face, portant moustache et barbe",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "VERONESE (dit) (atelier)"
+  },
+  {
+   "reference": "50350201795",
+   "titre": "Une femme drapée assise, tenant un luth",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "VERONESE (dit) (attribué à)"
+  },
+  {
+   "reference": "50350037181",
+   "titre": "Martyre d'une sainte",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "VERONESE (dit) (attribué à)"
+  },
+  {
+   "reference": "50350007016",
+   "titre": "Le Christ mort, soutenu par son Père, adoré par les saints Pierre et Paul",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "VERONESE (dit) (attribué à)"
+  },
+  {
+   "reference": "50350007001",
+   "titre": "Le Mariage de la Vierge",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "VERONESE (dit) (atelier)"
+  },
+  {
+   "reference": "50350037182",
+   "titre": "Martyre d'une sainte",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "VERONESE (dit) (attribué à)"
+  },
+  {
+   "reference": "50350006991",
+   "titre": "Allégorie de la Religion",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "VERONESE (dit) (atelier)"
+  },
+  {
+   "reference": "50350006992",
+   "titre": "Vénus enlevant l'arc à l'Amour",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "VERONESE (dit) (atelier)"
+  },
+  {
+   "reference": "50350201393",
+   "titre": "La Vierge assise avec l'Enfant entre un évèque et saint Joseph",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "VERONESE (dit) (atelier)"
+  },
+  {
+   "reference": "50350104880",
+   "titre": "Des soldats attachant les mains d'un guerrier vaincu",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "VERONESE (dit) (attribué à)"
+  },
+  {
+   "reference": "50350017854",
+   "titre": "La Vierge apparaissant à saint Antoine et à saint Paul Ermite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "VERONESE (dit) (atelier)"
+  },
+  {
+   "reference": "50350006979",
+   "titre": "L'Adoration des Mages",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "VERONESE (dit) (atelier)"
+  },
+  {
+   "reference": "50350145955",
+   "titre": "Façade de palais à un étage avec porte centrale à fronton",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "VERONESE (dit) (atelier)"
+  },
+  {
+   "reference": "50350007033",
+   "titre": "La Vierge apparaissant aux saints Antoine Abbot, Paul ermite, Pierre et Paul",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VERONESE (dit, école)"
+  },
+  {
+   "reference": "50350007040",
+   "titre": "Les Noces de Cana",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "VERONESE (dit) (atelier)"
+  },
+  {
+   "reference": "50350007041",
+   "titre": "La Cène",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "VERONESE (dit) (atelier)"
+  },
+  {
+   "reference": "50350006985",
+   "titre": "L'Assomption",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "VERONESE (dit) (atelier)"
+  },
+  {
+   "reference": "000PE024223",
+   "titre": "LA CHARITE ROMAINE",
+   "musee": "musée des beaux-arts",
+   "ville": "Marseille",
+   "code": "ecole_de",
+   "extrait": "VERONESE (école)"
+  },
+  {
+   "reference": "03290005067",
+   "titre": "Vénus et Mars",
+   "musee": "musée d’ethnographie corse",
+   "ville": "Bastia",
+   "code": "suiveur_de",
+   "extrait": "Véronèse (1528-1588) (suiveur)"
+  },
+  {
+   "reference": "01370014322",
+   "titre": "La Vierge apparaissant à saint Antoine, saint Paul ermite, saint Paul et saint Pierre",
+   "musee": "musée des beaux-arts",
+   "ville": "Dijon",
+   "code": "atelier_de",
+   "extrait": "CALIARI Paolo (auteur, atelier)"
+  },
+  {
+   "reference": "01760000021",
+   "titre": "Le Repas à Emmaüs",
+   "musee": "musée eucharistique du Hiéron",
+   "ville": "Paray-le-Monial",
+   "code": "atelier_de",
+   "extrait": "VERONESE Paolo (atelier)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-07-28T14:49:21+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

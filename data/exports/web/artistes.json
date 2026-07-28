@@ -107,7 +107,7 @@
   }
  ],
  "version_donnee": "2026-07-01",
- "date_generation": "2026-07-21T23:38:52+00:00",
+ "date_generation": "2026-07-28T14:49:21+00:00",
  "source": "Collections des musées de France : base Joconde",
  "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb",
  "niveaux": {
@@ -118,6 +118,7 @@
  "artistes": [
   {
    "nom": "Charles Le Brun",
+   "slug": "charles-le-brun",
    "propre": 3034,
    "doute": 310,
    "copie": 354,
@@ -159,48 +160,6 @@
      "libelle": "atelier (qualificatif, beaux-arts)",
      "niveau": 2,
      "notices": 16
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "000PE013144",
-     "titre": "LOUIS XIV, ROI DE FRANCE ET DE NAVARRE (1638-1715)",
-     "musee": "musée national des châteaux de Versailles et de Trianon",
-     "ville": "Versailles",
-     "extrait": "LE BRUN Charles (attribué)"
-    },
-    {
-     "code": "point_interrogation",
-     "reference": "07480011131",
-     "titre": "Jupiter brandissant la foudre ; Jupiter porté par l'aigle (titre vente Chennevières)",
-     "musee": "musée des beaux-arts et galerie David-d'Angers",
-     "ville": "Angers",
-     "extrait": "LE BRUN Charles (?, peintre)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "000PE008955",
-     "titre": "GUERRIER ESPAGNOL",
-     "musee": "musée national des châteaux de Versailles et de Trianon",
-     "ville": "Versailles",
-     "extrait": "LE BRUN Charles (école)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "000PE020969",
-     "titre": "Portrait de Monsieur de Formigny",
-     "musee": "musée des beaux-arts",
-     "ville": "Caen",
-     "extrait": "LE BRUN Charles (école)"
-    },
-    {
-     "code": "atelier_de",
-     "reference": "000PE001736",
-     "titre": "L'AUTOMNE",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "LE BRUN Charles (atelier)"
     }
    ],
    "exemple_copie": {
@@ -640,6 +599,7 @@
   },
   {
    "nom": "Ingres",
+   "slug": "ingres",
    "propre": 4462,
    "doute": 203,
    "copie": 88,
@@ -675,40 +635,6 @@
      "libelle": "atelier (qualificatif, beaux-arts)",
      "niveau": 2,
      "notices": 9
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "000PE016750",
-     "titre": "PORTRAIT DE MARIE DE BEAUMONT",
-     "musee": "musée Cantini",
-     "ville": "Marseille",
-     "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
-    },
-    {
-     "code": "attribue",
-     "reference": "06070001452",
-     "titre": "Vierge à l'Enfant",
-     "musee": "musée Ingres Bourdelle",
-     "ville": "Montauban",
-     "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à à"
-    },
-    {
-     "code": "point_interrogation",
-     "reference": "06070003323",
-     "titre": "Apôtre n°2 et saint Matthieu",
-     "musee": "musée Ingres Bourdelle",
-     "ville": "Montauban",
-     "extrait": "INGRES Jean Auguste Dominique (?)"
-    },
-    {
-     "code": "atelier_de",
-     "reference": "000PE001570",
-     "titre": "LA SOURCE",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "INGRES Jean Auguste Dominique (atelier)"
     }
    ],
    "exemple_copie": {
@@ -796,6 +722,7 @@
   },
   {
    "nom": "Le Primatice",
+   "slug": "le-primatice",
    "propre": 318,
    "doute": 197,
    "copie": 158,
@@ -831,40 +758,6 @@
      "libelle": "entourage de",
      "niveau": 2,
      "notices": 1
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "00000068545",
-     "titre": "Petit génie volant",
-     "musee": "musée national Magnin",
-     "ville": "Dijon",
-     "extrait": "LE PRIMATICE (dit, attribué)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "50510020999",
-     "titre": "Sujet antique : une vieille en haillons s'entretenant avec une jeune femme ; Vertumne et Pomone",
-     "musee": "musée de l'Ecole nationale supérieure des beaux-arts",
-     "ville": "Paris",
-     "extrait": "PRIMATICCIO Francesco (école)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "50350105462",
-     "titre": "Deux prisonniers conduits par deux soldats romains",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "ECOLE DE PRIMATICCIO"
-    },
-    {
-     "code": "entourage_de",
-     "reference": "02110002401",
-     "titre": "Ulysse recevant les outres des vents",
-     "musee": "musée des beaux-arts",
-     "ville": "Rennes",
-     "extrait": "PRIMATICCIO Francesco (entourage)"
     }
    ],
    "exemple_copie": {
@@ -1017,6 +910,7 @@
   },
   {
    "nom": "Rembrandt",
+   "slug": "rembrandt",
    "propre": 641,
    "doute": 187,
    "copie": 117,
@@ -1064,56 +958,6 @@
      "libelle": "(à la) manière de",
      "niveau": 3,
      "notices": 165
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "M0332003707",
-     "titre": "Personnage portant un enfant sur son dos",
-     "musee": "musée des beaux-arts et d'archéologie",
-     "ville": "Besançon",
-     "extrait": "Rembrandt (1606-1669) (attribué à)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "000PE008558",
-     "titre": "HENDRICKJE STOFFELS EN VENUS",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "Rembrandt (1606-1669) (école, dit)"
-    },
-    {
-     "code": "atelier_de",
-     "reference": "000PE008564",
-     "titre": "Portrait de jeune homme, dit autrefois : Portrait de Titus",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "Rembrandt (1606-1669) (atelier, dit)"
-    },
-    {
-     "code": "entourage_de",
-     "reference": "00190022506",
-     "titre": "Portrait d'homme ; Portrait de vieillard",
-     "musee": "musée des Beaux-Arts",
-     "ville": "Strasbourg",
-     "extrait": "Rembrandt (1606-1669) (entourage)"
-    },
-    {
-     "code": "maniere_de",
-     "reference": "00000062773",
-     "titre": "TETE DE JUIF",
-     "musee": "musée des beaux-arts",
-     "ville": "Quimper",
-     "extrait": "Rembrandt (1606-1669) (dit, manière de)"
-    },
-    {
-     "code": "maniere_de",
-     "reference": "00000062775",
-     "titre": "TETE D'HOMME",
-     "musee": "musée des beaux-arts",
-     "ville": "Quimper",
-     "extrait": "Rembrandt (1606-1669) (dit, manière de)"
     }
    ],
    "exemple_copie": {
@@ -1354,6 +1198,7 @@
   },
   {
    "nom": "Michel-Ange",
+   "slug": "michel-ange",
    "propre": 228,
    "doute": 148,
    "copie": 171,
@@ -1389,40 +1234,6 @@
      "libelle": "école de",
      "niveau": 2,
      "notices": 110
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "50350001383",
-     "titre": "Esquisses de figures",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "BUONARROTI Michelangelo (attribué à)"
-    },
-    {
-     "code": "point_interrogation",
-     "reference": "M0347001723",
-     "titre": "Tête de femme : Le Silence",
-     "musee": "musée des beaux-arts et d'archéologie",
-     "ville": "Dole",
-     "extrait": "BUONARROTI Michelangelo (?)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "50350001249",
-     "titre": "Homme assis, accoudé, tourné vers la droite",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "BUONARROTI Michelangelo (école)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "50350001291",
-     "titre": "La Sibylle de Cumes, d'après la voûte de la Chapelle Sixtine",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "BUONARROTI Michelangelo (école)"
     }
    ],
    "exemple_copie": {
@@ -1506,6 +1317,7 @@
   },
   {
    "nom": "Rubens",
+   "slug": "rubens",
    "propre": 508,
    "doute": 121,
    "copie": 383,
@@ -1553,56 +1365,6 @@
      "libelle": "(à la) manière de",
      "niveau": 3,
      "notices": 1
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "07760001538",
-     "titre": "Femme et fillette",
-     "musee": "musée municipal",
-     "ville": "La Roche-sur-Yon",
-     "extrait": "Rubens Petrus Paulus (1577-1640) (attribué à)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "000PE013090",
-     "titre": "INCONNU",
-     "musee": "musée national des châteaux de Versailles et de Trianon",
-     "ville": "Versailles",
-     "extrait": "Rubens Petrus Paulus (1577-1640) (école)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "000PE017014",
-     "titre": "CHASSE AU SANGLIER",
-     "musee": "musée des Beaux-Arts",
-     "ville": "Lille",
-     "extrait": "Rubens Petrus Paulus (1577-1640) (école)"
-    },
-    {
-     "code": "atelier_de",
-     "reference": "000PE008806",
-     "titre": "TETE DE VIEILLARD",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "Rubens Petrus Paulus (1577-1640) (atelier)"
-    },
-    {
-     "code": "suiveur_de",
-     "reference": "M0271000139",
-     "titre": "Allégorie du Bon Gouvernement de la France, dit autrefois Portrait allégorique de Marie de Médicis",
-     "musee": "château musées",
-     "ville": "Blois",
-     "extrait": "RUBENS Pierre-Paul (atelier de, ou suiveur de)"
-    },
-    {
-     "code": "maniere_de",
-     "reference": "00000062803",
-     "titre": "ETUDE D'UN SUJET ALLEGORIQUE",
-     "musee": "musée des beaux-arts",
-     "ville": "Quimper",
-     "extrait": "Rubens Petrus Paulus (1577-1640) (manière de)"
     }
    ],
    "exemple_copie": {
@@ -2042,6 +1804,7 @@
   },
   {
    "nom": "François Clouet",
+   "slug": "francois-clouet",
    "propre": 73,
    "doute": 105,
    "copie": 55,
@@ -2095,64 +1858,6 @@
      "libelle": "suiveur de",
      "niveau": 2,
      "notices": 1
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "00000077133",
-     "titre": "JEANNE D'ALBRET, REINE DE NAVARRE",
-     "musee": "musée Condé",
-     "ville": "Chantilly",
-     "extrait": "CLOUET François (attribué)"
-    },
-    {
-     "code": "point_interrogation",
-     "reference": "00000106881",
-     "titre": "Sébastien de Luxembourg, vicomte de Martigues, marquis de Beaugé, duc de Penthièvre (mort en 1569)",
-     "musee": "musée Condé",
-     "ville": "Chantilly",
-     "extrait": "CLOUET François (?)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "00000077178",
-     "titre": "GENTILHOMME DE LA SECONDE MOITIE DU XVIE SIECLE",
-     "musee": "musée Condé",
-     "ville": "Chantilly",
-     "extrait": "CLOUET François (école)"
-    },
-    {
-     "code": "atelier_de",
-     "reference": "000PE000509",
-     "titre": "Portrait de femme inconnue",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "CLOUET François (atelier)"
-    },
-    {
-     "code": "atelier_de",
-     "reference": "000PE000507",
-     "titre": "Jeanne d'Angennes, dame de Saint-Bohaire (ap. 1548 - ap. 1600)",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "CLOUET François (atelier)"
-    },
-    {
-     "code": "entourage_de",
-     "reference": "M0332001041",
-     "titre": "Portrait présumé de François II (1544-1560)",
-     "musee": "musée des beaux-arts et d'archéologie",
-     "ville": "Besançon",
-     "extrait": "Clouet François (1520?-1572) (entourage)"
-    },
-    {
-     "code": "suiveur_de",
-     "reference": "50170002821",
-     "titre": "Portrait de Catherine de Médicis",
-     "musee": "musée national du château de Pau",
-     "ville": "Pau",
-     "extrait": "CLOUET François (peintre, suiveur)"
     }
    ],
    "exemple_copie": {
@@ -2359,6 +2064,7 @@
   },
   {
    "nom": "Le Guerchin",
+   "slug": "le-guerchin",
    "propre": 180,
    "doute": 101,
    "copie": 84,
@@ -2406,56 +2112,6 @@
      "libelle": "(à la) manière de",
      "niveau": 3,
      "notices": 1
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "00000068542",
-     "titre": "Paysage avec trois villageois et un âne",
-     "musee": "musée national Magnin",
-     "ville": "Dijon",
-     "extrait": "BARBIERI Giovanni Francesco (attribué)"
-    },
-    {
-     "code": "point_interrogation",
-     "reference": "07480012421",
-     "titre": "Saint François adorant l'enfant",
-     "musee": "musée des beaux-arts et galerie David-d'Angers",
-     "ville": "Angers",
-     "extrait": "GUERCINO (?, dit)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "000PE026153",
-     "titre": "BERTHOLDE COUVANT LES OEUFS DE L'OIE",
-     "musee": "musée des beaux-arts",
-     "ville": "Bordeaux",
-     "extrait": "BARBIERI Giovanni Francesco (école)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "00000069001",
-     "titre": "L'Ange Gardien protégeant un enfant du démon",
-     "musee": "musée national Magnin",
-     "ville": "Dijon",
-     "extrait": "LE GUERCHIN (dit, école)"
-    },
-    {
-     "code": "atelier_de",
-     "reference": "000PE025580",
-     "titre": "PORTRAIT DE L'ARTISTE TENANT UNE PALETTE",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "BARBIERI Giovanni Francesco (atelier)"
-    },
-    {
-     "code": "maniere_de",
-     "reference": "50350102714",
-     "titre": "Deux guerriers vus à mi-corps, portant des étendards",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "BARBIERI Giovanni Francesco (manière de)"
     }
    ],
    "exemple_copie": {
@@ -2708,6 +2364,7 @@
   },
   {
    "nom": "Annibale Carracci",
+   "slug": "annibale-carracci",
    "propre": 501,
    "doute": 86,
    "copie": 226,
@@ -2767,72 +2424,6 @@
      "libelle": "genre de",
      "niveau": 3,
      "notices": 1
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "000DE006899",
-     "titre": "GUERRIERS AU COMBAT",
-     "musee": "musée des beaux-arts",
-     "ville": "Marseille",
-     "extrait": "CARRACCI Annibale (attribué à)"
-    },
-    {
-     "code": "point_interrogation",
-     "reference": "07430005039",
-     "titre": "La Sainte Famille avec saint Jean-Baptiste et sainte Elisabeth",
-     "musee": "musée des Beaux-Arts",
-     "ville": "Nantes",
-     "extrait": "CARRACCI Annibale (?, patronyme)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "00000060729",
-     "titre": "ADAM ET EVE APRES LA CHUTE",
-     "musee": "musée de la Chartreuse",
-     "ville": "Douai",
-     "extrait": "CARRACCI Annibale (école)"
-    },
-    {
-     "code": "atelier_de",
-     "reference": "000PE024783",
-     "titre": "LA NATIVITE",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "CARRACCI Annibale (atelier)"
-    },
-    {
-     "code": "entourage_de",
-     "reference": "00000102970",
-     "titre": "SAINT SEBASTIEN",
-     "musee": "musée des beaux-arts",
-     "ville": "Quimper",
-     "extrait": "CARRACCI Annibale (entourage)"
-    },
-    {
-     "code": "entourage_de",
-     "reference": "50350004470",
-     "titre": "Jambes et ventre d'un homme couché vu en raccourci par les pieds",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "CARRACCI Annibale (entourage)"
-    },
-    {
-     "code": "maniere_de",
-     "reference": "000PE029379",
-     "titre": "CHANTEURS GROTESQUES",
-     "musee": "musée des Beaux-Arts",
-     "ville": "Beaune",
-     "extrait": "CARRACCI Annibale (manière de)"
-    },
-    {
-     "code": "genre_de",
-     "reference": "50110000194",
-     "titre": "Bords de rivière avec pêcheur",
-     "musee": "musée national Magnin",
-     "ville": "Dijon",
-     "extrait": "CARRACCI Annibale (genre de)"
     }
    ],
    "exemple_copie": {
@@ -3138,6 +2729,7 @@
   },
   {
    "nom": "Bouchardon",
+   "slug": "bouchardon",
    "propre": 1066,
    "doute": 86,
    "copie": 31,
@@ -3173,40 +2765,6 @@
      "libelle": "école de",
      "niveau": 2,
      "notices": 33
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "00000077096",
-     "titre": "La Madone aux pèlerins ; L'adoration des Bergers (titre ancien)",
-     "musee": "musée municipal",
-     "ville": "La Roche-sur-Yon",
-     "extrait": "BOUCHARDON Edme (attribué)"
-    },
-    {
-     "code": "attribue",
-     "reference": "000DE006830",
-     "titre": "PROJET DE MEDAILLE EN MEMOIRE DE LA CESSATION DE LA PESTE A MARSEILLE",
-     "musee": "musée des beaux-arts",
-     "ville": "Marseille",
-     "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
-    },
-    {
-     "code": "point_interrogation",
-     "reference": "M0491000982",
-     "titre": "Enfant",
-     "musee": "musée Hyacinthe Rigaud",
-     "ville": "Perpignan",
-     "extrait": "BOUCHARDON Edme (?)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "50350010674",
-     "titre": "Elévation du piédestal de la statue équestre de Louis XIII",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "BOUCHARDON Edme (école)"
     }
    ],
    "exemple_copie": {
@@ -3309,6 +2867,7 @@
   },
   {
    "nom": "Ludovico Carracci",
+   "slug": "ludovico-carracci",
    "propre": 142,
    "doute": 83,
    "copie": 25,
@@ -3350,48 +2909,6 @@
      "libelle": "entourage de",
      "niveau": 2,
      "notices": 1
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "000PE014196",
-     "titre": "L'ASSOMPTION DE LA VIERGE",
-     "musee": "musée des beaux-arts",
-     "ville": "Marseille",
-     "extrait": "CARRACCI Ludovico (attribué à)"
-    },
-    {
-     "code": "attribue",
-     "reference": "50350004721",
-     "titre": "L'élévation de la Croix",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "CARRACCI Ludovico (attribué à)"
-    },
-    {
-     "code": "point_interrogation",
-     "reference": "50520000014",
-     "titre": "Présentation de la Vierge au temple ; croquis au verso",
-     "musee": "musée Condé",
-     "ville": "Chantilly",
-     "extrait": "CARRACCI Lodovico (? )"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "000PE019544",
-     "titre": "LA DEPLORATION DU CHRIST",
-     "musee": "musée des Beaux-Arts",
-     "ville": "Lille",
-     "extrait": "CARRACCI Ludovico (école)"
-    },
-    {
-     "code": "entourage_de",
-     "reference": "07980002321",
-     "titre": "L'apparition de la Vierge et de l'Enfant Jésus à saint Hyacinthe (Titre original)",
-     "musee": "MUDO - musée de l'Oise",
-     "ville": "Beauvais",
-     "extrait": "CARRACCI Lodovico (entourage de) (peintre)"
     }
    ],
    "exemple_copie": {
@@ -3601,6 +3118,7 @@
   },
   {
    "nom": "Rodin",
+   "slug": "rodin",
    "propre": 13404,
    "doute": 80,
    "copie": 7,
@@ -3624,24 +3142,6 @@
      "libelle": "attribué à",
      "niveau": 1,
      "notices": 80
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "000DE017259",
-     "titre": "FEMME NUE DE DOS, UN GENOU EN TERRE ET LES BRAS ECARTES",
-     "musee": "musée Rodin",
-     "ville": "Paris",
-     "extrait": "Rodin Auguste (1840-1917) (attribué)"
-    },
-    {
-     "code": "attribue",
-     "reference": "50350229993",
-     "titre": "Femme nue, aux bras écartés",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "Rodin Auguste (1840-1917) (attribué à)"
     }
    ],
    "exemple_copie": {
@@ -3721,6 +3221,7 @@
   },
   {
    "nom": "Jules Romain",
+   "slug": "jules-romain",
    "propre": 199,
    "doute": 79,
    "copie": 252,
@@ -3768,56 +3269,6 @@
      "libelle": "entourage de",
      "niveau": 2,
      "notices": 4
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "00000068540",
-     "titre": "Homme portant un enfant et femme assise sur une barque",
-     "musee": "musée national Magnin",
-     "ville": "Dijon",
-     "extrait": "PIPPI Giulio (attribué)"
-    },
-    {
-     "code": "attribue",
-     "reference": "000PE014633",
-     "titre": "PORTRAIT DE MICHEL ANGE",
-     "musee": "musée des beaux-arts",
-     "ville": "Marseille",
-     "extrait": "PIPPI Giulio (attribué à)"
-    },
-    {
-     "code": "point_interrogation",
-     "reference": "00000107086",
-     "titre": "L'Amour réveillant Psyché",
-     "musee": "musée Condé",
-     "ville": "Chantilly",
-     "extrait": "GIULIO ROMANO (?, atelier)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "50350100997",
-     "titre": "Bacchante remplissant un vase, satyre buvant, devant un vaisselier",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "PIPPI Giulio (école)"
-    },
-    {
-     "code": "atelier_de",
-     "reference": "000PE025545",
-     "titre": "VENUS ET VULCAIN",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "PIPPI Giulio (atelier)"
-    },
-    {
-     "code": "entourage_de",
-     "reference": "50350205864",
-     "titre": "Etude de frise animalière (lion et serpents)",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "PIPPI Giulio (entourage de)"
     }
    ],
    "exemple_copie": {
@@ -3955,6 +3406,7 @@
   },
   {
    "nom": "Boucher",
+   "slug": "boucher",
    "propre": 376,
    "doute": 78,
    "copie": 120,
@@ -4008,64 +3460,6 @@
      "libelle": "genre de",
      "niveau": 3,
      "notices": 1
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "000PE013616",
-     "titre": "LE LAPIN SAVANT",
-     "musee": "musée des beaux-arts",
-     "ville": "Marseille",
-     "extrait": "Boucher François (1703-1770) (attribué à)"
-    },
-    {
-     "code": "point_interrogation",
-     "reference": "000PE020181",
-     "titre": "L'ADORATION DES BERGERS",
-     "musee": "musée des beaux-arts",
-     "ville": "Bordeaux",
-     "extrait": "Boucher François (1703-1770) (?)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "000DE006838",
-     "titre": "AMOURS JOUANT AVEC UN VOILE BLEU",
-     "musee": "musée Grobet-Labadié",
-     "ville": "Marseille",
-     "extrait": "Boucher François (1703-1770) (école)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "000DE006839",
-     "titre": "AMOURS JOUANT AVEC UNE COUPE",
-     "musee": "musée Grobet-Labadié",
-     "ville": "Marseille",
-     "extrait": "Boucher François (1703-1770) (école)"
-    },
-    {
-     "code": "atelier_de",
-     "reference": "000PE000206",
-     "titre": "Jeune femme au manchon",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "Boucher François (1703-1770) (atelier)"
-    },
-    {
-     "code": "entourage_de",
-     "reference": "M0332011640",
-     "titre": "Un coin de paysage avec une ferme",
-     "musee": "musée des beaux-arts et d'archéologie",
-     "ville": "Besançon",
-     "extrait": "Boucher François (1703-1770) (entourage)"
-    },
-    {
-     "code": "genre_de",
-     "reference": "01550005410",
-     "titre": "Allégorie de l'été",
-     "musee": "musée de la faïence Frédéric Blandin",
-     "ville": "Nevers",
-     "extrait": "Boucher François (1703-1770) (genre de)"
     }
    ],
    "exemple_copie": {
@@ -4528,6 +3922,7 @@
   },
   {
    "nom": "David Téniers",
+   "slug": "david-teniers",
    "propre": 165,
    "doute": 72,
    "copie": 64,
@@ -4587,72 +3982,6 @@
      "libelle": "genre de",
      "niveau": 3,
      "notices": 13
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "000PE008863",
-     "titre": "Les bulles de savon",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "Téniers David (1610-1690) (attribué à)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "000PE008889",
-     "titre": "CORPS DE GARDE DE SINGES MILITAIRES",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "Téniers David (1610-1690) (école)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "000PE008890",
-     "titre": "CHATS AMENES DEVANT UN TRIBUNAL MILITAIRE DE SINGES",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "Téniers David (1610-1690) (école)"
-    },
-    {
-     "code": "atelier_de",
-     "reference": "000PE008864",
-     "titre": "LA KERMESSE",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "Téniers David (1610-1690) (atelier)"
-    },
-    {
-     "code": "entourage_de",
-     "reference": "04450000862",
-     "titre": "Le jeu de boules",
-     "musee": "Palais-musée des Archevêques de Narbonne",
-     "ville": "Narbonne",
-     "extrait": "TENIERS David II (entourage de)"
-    },
-    {
-     "code": "suiveur_de",
-     "reference": "00190086863",
-     "titre": "Les fumeurs de pipe",
-     "musee": "musée des Beaux-Arts",
-     "ville": "Strasbourg",
-     "extrait": "Téniers David (1610-1690) (suiveur)"
-    },
-    {
-     "code": "maniere_de",
-     "reference": "00000062933",
-     "titre": "PAYSAGE AVEC FIGURES",
-     "musee": "musée des beaux-arts",
-     "ville": "Quimper",
-     "extrait": "Téniers David (1610-1690) (manière de)"
-    },
-    {
-     "code": "genre_de",
-     "reference": "M0347001325",
-     "titre": "La Tentation de saint Antoine",
-     "musee": "musée des beaux-arts et d'archéologie",
-     "ville": "Dole",
-     "extrait": "Téniers David (1610-1690) (genre de)"
     }
    ],
    "exemple_copie": {
@@ -5207,6 +4536,7 @@
   },
   {
    "nom": "François Gérard",
+   "slug": "francois-gerard",
    "propre": 482,
    "doute": 65,
    "copie": 100,
@@ -5242,40 +4572,6 @@
      "libelle": "entourage de",
      "niveau": 2,
      "notices": 2
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "50350502854",
-     "titre": "Couple",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "Gérard François (1770-1837) (attribué à)"
-    },
-    {
-     "code": "attribue",
-     "reference": "05620000673",
-     "titre": "Portrait de Jules de Résséguier, en uniforme",
-     "musee": "musée des Augustins",
-     "ville": "Toulouse",
-     "extrait": "Gérard François (1770-1837) (attribué à)"
-    },
-    {
-     "code": "atelier_de",
-     "reference": "000PE001267",
-     "titre": "NAPOLEON 1ER EN COSTUME DE SACRE",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "Gérard François (1770-1837) (atelier)"
-    },
-    {
-     "code": "entourage_de",
-     "reference": "M0809006860",
-     "titre": "Portrait de femme",
-     "musee": "musée d'art et d'archéologie",
-     "ville": "Senlis",
-     "extrait": "Gérard François (1770-1837) (entourage de)"
     }
    ],
    "exemple_copie": {
@@ -5535,6 +4831,7 @@
   },
   {
    "nom": "Andrea del Sarto",
+   "slug": "andrea-del-sarto",
    "propre": 151,
    "doute": 63,
    "copie": 97,
@@ -5576,48 +4873,6 @@
      "libelle": "genre de",
      "niveau": 3,
      "notices": 1
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "000PE014694",
-     "titre": "SAINT JEAN L'EVANGELISTE",
-     "musee": "musée des beaux-arts",
-     "ville": "Marseille",
-     "extrait": "SARTO Andrea DEL (dit, attribué à)"
-    },
-    {
-     "code": "point_interrogation",
-     "reference": "M0347001723",
-     "titre": "Tête de femme : Le Silence",
-     "musee": "musée des beaux-arts et d'archéologie",
-     "ville": "Dole",
-     "extrait": "SARTO Andrea del (?, manière de)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "50350002407",
-     "titre": "Dragon dévorant un serpent",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "SARTO Andrea del (école)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "50350002408",
-     "titre": "Cavalier revêtu d'une armure",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "SARTO Andrea del (école)"
-    },
-    {
-     "code": "genre_de",
-     "reference": "M0341000307",
-     "titre": "Portrait d'un médecin",
-     "musee": "musée Sarret de Grozon",
-     "ville": "Arbois",
-     "extrait": "Andrea Del Sarto (1486-1531) (genre de)"
     }
    ],
    "exemple_copie": {
@@ -5724,6 +4979,7 @@
   },
   {
    "nom": "Le Parmesan",
+   "slug": "le-parmesan",
    "propre": 224,
    "doute": 63,
    "copie": 159,
@@ -5753,32 +5009,6 @@
      "libelle": "école de",
      "niveau": 2,
      "notices": 12
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "50350200801",
-     "titre": "Une femme peignant une autre femme",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "MAZZUOLA Francesco (attribué à)"
-    },
-    {
-     "code": "attribue",
-     "reference": "50350201017",
-     "titre": "Buste de vieillard, de face",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "MAZZUOLA Francesco (attribué à)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "50350201798",
-     "titre": "Un sacrifice païen",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "MAZZUOLA Francesco (école)"
     }
    ],
    "exemple_copie": {
@@ -5816,6 +5046,7 @@
   },
   {
    "nom": "Guido Reni",
+   "slug": "guido-reni",
    "propre": 160,
    "doute": 60,
    "copie": 174,
@@ -5869,64 +5100,6 @@
      "libelle": "genre de",
      "niveau": 3,
      "notices": 4
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "000PE019530",
-     "titre": "SAINT SEBASTIEN",
-     "musee": "musée des Beaux-Arts",
-     "ville": "Lille",
-     "extrait": "RENI Guido (attribué)"
-    },
-    {
-     "code": "point_interrogation",
-     "reference": "000PE026177",
-     "titre": "LE RAVISSEMENT DE LA MADELEINE",
-     "musee": "musée des beaux-arts",
-     "ville": "Bordeaux",
-     "extrait": "RENI Guido (?)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "000PE021940",
-     "titre": "LA VIERGE DE DOULEUR",
-     "musee": "musée des beaux-arts",
-     "ville": "Bordeaux",
-     "extrait": "RENI Guido (école)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "00000103030",
-     "titre": "LE SOMMEIL DE L'ENFANT JESUS",
-     "musee": "musée d'art Roger-Quillot",
-     "ville": "Clermont-Ferrand",
-     "extrait": "Reni Guido (1575-1642) (école)"
-    },
-    {
-     "code": "atelier_de",
-     "reference": "00000103010",
-     "titre": "JUDITH TENANT LA TETE D'HOLOPHERNE",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "RENI Guido(atelier)"
-    },
-    {
-     "code": "maniere_de",
-     "reference": "06770000303",
-     "titre": "Saint Pierre pleurant sa faute",
-     "musee": "musée Thomas-Henry",
-     "ville": "Cherbourg-en-Cotentin",
-     "extrait": "RENI Guido, LE GUIDE (dit) (manière de, peintre)"
-    },
-    {
-     "code": "genre_de",
-     "reference": "06190001144",
-     "titre": "Le Massacre des Innocents",
-     "musee": "musée de la Chartreuse",
-     "ville": "Douai",
-     "extrait": "RENI Guido (genre de)"
     }
    ],
    "exemple_copie": {
@@ -6263,6 +5436,7 @@
   },
   {
    "nom": "Perino del Vaga",
+   "slug": "perino-del-vaga",
    "propre": 96,
    "doute": 56,
    "copie": 44,
@@ -6310,56 +5484,6 @@
      "libelle": "entourage de",
      "niveau": 2,
      "notices": 2
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "00000068532",
-     "titre": "Trois femmes drapées à l'antique sous un palmier",
-     "musee": "musée national Magnin",
-     "ville": "Dijon",
-     "extrait": "PERINO DEL VAGA (dit, attribué)"
-    },
-    {
-     "code": "attribue",
-     "reference": "00000068533",
-     "titre": "Mariage mystique de sainte Catherine ; génie volant porteur d'une colonne",
-     "musee": "musée national Magnin",
-     "ville": "Dijon",
-     "extrait": "PERINO DEL VAGA (dit, attribué)"
-    },
-    {
-     "code": "point_interrogation",
-     "reference": "00000077334",
-     "titre": "LA SAINTE FAMILLE",
-     "musee": "musée Condé",
-     "ville": "Chantilly",
-     "extrait": "PERINO DEL VAGA (dit, atelier, ?)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "50350200712",
-     "titre": "Etude de chasseurs et guerriers",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "BONACCORSI Piero (école)"
-    },
-    {
-     "code": "atelier_de",
-     "reference": "50350200216",
-     "titre": "Saint Marc Evangéliste assis",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "BONACCORSI Piero (atelier)"
-    },
-    {
-     "code": "entourage_de",
-     "reference": "50350001121",
-     "titre": "Trois études de tombeaux",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "BONACCORSI Piero (entourage de)"
     }
    ],
    "exemple_copie": {
@@ -6447,6 +5571,7 @@
   },
   {
    "nom": "Léonard de Vinci",
+   "slug": "leonard-de-vinci",
    "propre": 87,
    "doute": 50,
    "copie": 206,
@@ -6482,40 +5607,6 @@
      "libelle": "atelier (qualificatif, beaux-arts)",
      "niveau": 2,
      "notices": 1
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "50350228280",
-     "titre": "Homme nu, s'accrochant à une poutre",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "VINCI Leonardo da (attribué à)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "000PE025605",
-     "titre": "PORTRAIT DE FEMME ; DIT LA BELLE FERRONNIERE",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "LEONARDO DI SER PIERO DA VINCI (école)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "000PE025607",
-     "titre": "LA VIERGE, L'ENFANT JESUS ET SAINT JEAN",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "LEONARDO DI SER PIERO DA VINCI (école)"
-    },
-    {
-     "code": "atelier_de",
-     "reference": "000PE025603",
-     "titre": "BACCHUS",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "VINCI Léonard de (dit, atelier)"
     }
    ],
    "exemple_copie": {
@@ -6580,6 +5671,7 @@
   },
   {
    "nom": "Salvator Rosa",
+   "slug": "salvator-rosa",
    "propre": 144,
    "doute": 50,
    "copie": 73,
@@ -6633,64 +5725,6 @@
      "libelle": "genre de",
      "niveau": 3,
      "notices": 2
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "000PE014503",
-     "titre": "PAYSAGE",
-     "musee": "musée des beaux-arts",
-     "ville": "Marseille",
-     "extrait": "ROSA Salvatore (attribué à)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "000PE014505",
-     "titre": "ERMITE EN MEDITATION",
-     "musee": "musée des beaux-arts",
-     "ville": "Marseille",
-     "extrait": "ROSA Salvatore (école)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "000PE014504",
-     "titre": "PAYSAGE ET GUERRIERS",
-     "musee": "musée des beaux-arts",
-     "ville": "Marseille",
-     "extrait": "ROSA Salvatore (école)"
-    },
-    {
-     "code": "entourage_de",
-     "reference": "08940004449",
-     "titre": "Minerve conseille à Cadmus d'arracher les dents du dragon (titre d'usage)",
-     "musee": "musée Granet",
-     "ville": "Aix-en-Provence",
-     "extrait": "Rosa Salvator (1615-1673) (entourage)"
-    },
-    {
-     "code": "suiveur_de",
-     "reference": "07430007265",
-     "titre": "Le repos des soldats",
-     "musee": "musée des Beaux-Arts",
-     "ville": "Nantes",
-     "extrait": "ROSA Salvatore (suiveur)"
-    },
-    {
-     "code": "maniere_de",
-     "reference": "06070000245",
-     "titre": "Intérieur d'un corps de garde romain",
-     "musee": "musée Ingres Bourdelle",
-     "ville": "Montauban",
-     "extrait": "ROSA Salvator (manière de)"
-    },
-    {
-     "code": "genre_de",
-     "reference": "07430005048",
-     "titre": "Paysage animé",
-     "musee": "musée des Beaux-Arts",
-     "ville": "Nantes",
-     "extrait": "ROSA Salvatore (genre de)"
     }
    ],
    "exemple_copie": {
@@ -7050,6 +6084,7 @@
   },
   {
    "nom": "Greuze",
+   "slug": "greuze",
    "propre": 274,
    "doute": 49,
    "copie": 116,
@@ -7097,56 +6132,6 @@
      "libelle": "genre de",
      "niveau": 3,
      "notices": 3
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "000PE014011",
-     "titre": "UNE LISEUSE",
-     "musee": "musée des beaux-arts",
-     "ville": "Marseille",
-     "extrait": "GREUZE Jean-Baptiste (attribué à)"
-    },
-    {
-     "code": "attribue",
-     "reference": "000PE016186",
-     "titre": "LA MENAGERE SURPRISE",
-     "musee": "musée Grobet-Labadié",
-     "ville": "Marseille",
-     "extrait": "GREUZE Jean-Baptiste (attribué)"
-    },
-    {
-     "code": "point_interrogation",
-     "reference": "00000074353",
-     "titre": "PORTRAIT D'ENFANT",
-     "musee": "musée Goya",
-     "ville": "Castres",
-     "extrait": "GREUZE Jean-Baptiste (école, ?)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "000PE008279",
-     "titre": "BERTRAND BARERE DE VIEUZAC (1755-1841)",
-     "musee": "musée national des châteaux de Versailles et de Trianon",
-     "ville": "Versailles",
-     "extrait": "GREUZE Jean-Baptiste (école)"
-    },
-    {
-     "code": "maniere_de",
-     "reference": "50350029132",
-     "titre": "Main tenant un objet",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "GREUZE Jean-Baptiste (manière de)"
-    },
-    {
-     "code": "genre_de",
-     "reference": "00000093370",
-     "titre": "TETE DE JEUNE FILLE",
-     "musee": "musée des beaux-arts",
-     "ville": "Orléans",
-     "extrait": "Greuze Jean-Baptiste (1725-1805) (genre de)"
     }
    ],
    "exemple_copie": {
@@ -7574,6 +6559,7 @@
   },
   {
    "nom": "Nicolas Poussin",
+   "slug": "nicolas-poussin",
    "propre": 306,
    "doute": 48,
    "copie": 313,
@@ -7615,48 +6601,6 @@
      "libelle": "genre de",
      "niveau": 3,
      "notices": 3
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "000PE014608",
-     "titre": "SUJET PASTORAL",
-     "musee": "musée des beaux-arts",
-     "ville": "Marseille",
-     "extrait": "POUSSIN Nicolas (attribué à)"
-    },
-    {
-     "code": "attribue",
-     "reference": "50510032134",
-     "titre": "Château fortifié sur un rocher",
-     "musee": "musée de l'Ecole nationale supérieure des beaux-arts",
-     "ville": "Paris",
-     "extrait": "POUSSIN Nicolas (attribué)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "000PE021910",
-     "titre": "SACRIFICE A PRIAPE",
-     "musee": "musée des beaux-arts",
-     "ville": "Bordeaux",
-     "extrait": "POUSSIN Nicolas (école)"
-    },
-    {
-     "code": "atelier_de",
-     "reference": "50350037169",
-     "titre": "Six études de têtes casquées et une étude de femme à mi-corps...",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "POUSSIN Nicolas (atelier)"
-    },
-    {
-     "code": "genre_de",
-     "reference": "07430005253",
-     "titre": "Putto",
-     "musee": "musée des Beaux-Arts",
-     "ville": "Nantes",
-     "extrait": "POUSSIN Nicolas (genre de)"
     }
    ],
    "exemple_copie": {
@@ -7874,6 +6818,7 @@
   },
   {
    "nom": "Adolph Menzel",
+   "slug": "adolph-menzel",
    "propre": 12,
    "doute": 47,
    "copie": 0,
@@ -7897,24 +6842,6 @@
      "libelle": "école de",
      "niveau": 2,
      "notices": 47
-    }
-   ],
-   "exemples": [
-    {
-     "code": "ecole_de",
-     "reference": "50350020367",
-     "titre": "Etude d'après une sculpture",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "MENZEL Adolph (école)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "50350020360",
-     "titre": "Etude de main",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "MENZEL Adolph (école)"
     }
    ],
    "exemple_copie": null,
@@ -7942,6 +6869,7 @@
   },
   {
    "nom": "Simon Vouet",
+   "slug": "simon-vouet",
    "propre": 348,
    "doute": 46,
    "copie": 77,
@@ -7989,56 +6917,6 @@
      "libelle": "entourage de",
      "niveau": 2,
      "notices": 4
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "00000055635",
-     "titre": "ASSOMPTION DE LA VIERGE",
-     "musee": "musée Crozatier",
-     "ville": "Le Puy-en-Velay",
-     "extrait": "VOUET Simon (attribué)"
-    },
-    {
-     "code": "point_interrogation",
-     "reference": "01810000027",
-     "titre": "La Présentation au temple ; Simeon ou le nunc dimitis. (ancien titre)",
-     "musee": "musée Greuze - hôtel-Dieu",
-     "ville": "Tournus",
-     "extrait": "VOUET Simon (?)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "50350210720",
-     "titre": "Etude pour un plafond : Les Noces d'Hercule et d'Hébé",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "VOUET Simon (école)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "50350210714",
-     "titre": "La Justice assise",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "VOUET Simon (école)"
-    },
-    {
-     "code": "atelier_de",
-     "reference": "50510021364",
-     "titre": "Le Christ sauveur du monde",
-     "musee": "musée de l'Ecole nationale supérieure des beaux-arts",
-     "ville": "Paris",
-     "extrait": "VOUET Simon (atelier)"
-    },
-    {
-     "code": "entourage_de",
-     "reference": "07430005210",
-     "titre": "Tobie et l'ange",
-     "musee": "musée des Beaux-Arts",
-     "ville": "Nantes",
-     "extrait": "VOUET Simon (entourage)"
     }
    ],
    "exemple_copie": {
@@ -8432,6 +7310,7 @@
   },
   {
    "nom": "Van Dyck",
+   "slug": "van-dyck",
    "propre": 336,
    "doute": 46,
    "copie": 252,
@@ -8491,72 +7370,6 @@
      "libelle": "genre de",
      "niveau": 3,
      "notices": 1
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "000PE030271",
-     "titre": "PORTRAIT DU PEINTRE JAN WILDENS",
-     "musee": "musée Crozatier",
-     "ville": "Le Puy-en-Velay",
-     "extrait": "DYCK Anton Van (attribué)"
-    },
-    {
-     "code": "point_interrogation",
-     "reference": "000PE008806",
-     "titre": "TETE DE VIEILLARD",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "DYCK Anton Van (?)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "000PE003328",
-     "titre": "Portrait dit du comte de Montrose",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "VAN DYCK Anton (école)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "000PE008917",
-     "titre": "SAINT JEAN-BAPTISTE ENFANT DANS UN PAYSAGE",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "DYCK Anton Van (école)"
-    },
-    {
-     "code": "atelier_de",
-     "reference": "000PE016621",
-     "titre": "LA VIERGE A L'ENFANT AVEC ALEXANDRE SCAGLIA",
-     "musee": "musée des Beaux-Arts",
-     "ville": "Lille",
-     "extrait": "DYCK Anton Van (atelier)"
-    },
-    {
-     "code": "suiveur_de",
-     "reference": "07140001031",
-     "titre": "Marie de Médicis, reine de France + 1642 (Titre manuscrit)",
-     "musee": "musée Louis Philippe",
-     "ville": "Eu",
-     "extrait": "VAN DYCK Anton (suiveur)"
-    },
-    {
-     "code": "maniere_de",
-     "reference": "00000062821",
-     "titre": "TETE D'HOMME DU TEMPS DE HENRI III",
-     "musee": "musée des beaux-arts",
-     "ville": "Quimper",
-     "extrait": "DYCK Anton Van (manière de)"
-    },
-    {
-     "code": "genre_de",
-     "reference": "50110001610",
-     "titre": "La Vierge à l'Enfant",
-     "musee": "musée national Magnin",
-     "ville": "Dijon",
-     "extrait": "DYCK Anton Van (peintre, genre de)"
     }
    ],
    "exemple_copie": {
@@ -9042,6 +7855,7 @@
   },
   {
    "nom": "Baccio Bandinelli",
+   "slug": "baccio-bandinelli",
    "propre": 110,
    "doute": 45,
    "copie": 30,
@@ -9071,32 +7885,6 @@
      "libelle": "école de",
      "niveau": 2,
      "notices": 27
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "50350000173",
-     "titre": "Hercule",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "BANDINELLI Baccio (attribué à)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "50350003598",
-     "titre": "Homme nu, à demi étendu",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "BANDINELLI Baccio (école)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "50350000179",
-     "titre": "Homme nu, debout, tourné vers la droite, avec un bâton appuyé sur l'épaule",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "BANDINELLI Baccio (école)"
     }
    ],
    "exemple_copie": {
@@ -9134,6 +7922,7 @@
   },
   {
    "nom": "Carlo Maratti",
+   "slug": "carlo-maratti",
    "propre": 99,
    "doute": 45,
    "copie": 28,
@@ -9169,40 +7958,6 @@
      "libelle": "entourage de",
      "niveau": 2,
      "notices": 1
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "000PE013858",
-     "titre": "LA VIERGE ALLAITANT L'ENFANT JESUS",
-     "musee": "musée des beaux-arts",
-     "ville": "Marseille",
-     "extrait": "MARATTA Carlo (attribué à)"
-    },
-    {
-     "code": "atelier_de",
-     "reference": "00000069056",
-     "titre": "La Vierge lisant entourée d'anges",
-     "musee": "musée national Magnin",
-     "ville": "Dijon",
-     "extrait": "MARATTA Carlo (atelier)"
-    },
-    {
-     "code": "atelier_de",
-     "reference": "10500001218",
-     "titre": "Vierge à l'Enfant avec Saint-Jean Baptiste",
-     "musee": "musée des beaux-arts",
-     "ville": "Chambéry",
-     "extrait": "MARATTA Carlo (atelier)"
-    },
-    {
-     "code": "entourage_de",
-     "reference": "M0332010269",
-     "titre": "La Sainte Famille avec saint Jean-Baptiste",
-     "musee": "musée des beaux-arts et d'archéologie",
-     "ville": "Besançon",
-     "extrait": "Maratti Carlo (1625-1713) (entourage)"
     }
    ],
    "exemple_copie": {
@@ -9447,6 +8202,7 @@
   },
   {
    "nom": "Pierre Mignard",
+   "slug": "pierre-mignard",
    "propre": 473,
    "doute": 43,
    "copie": 161,
@@ -9494,56 +8250,6 @@
      "libelle": "genre de",
      "niveau": 3,
      "notices": 2
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "000PE005357",
-     "titre": "Louis XIV couronné par la victoire",
-     "musee": "musée national des châteaux de Versailles et de Trianon",
-     "ville": "Versailles",
-     "extrait": "MIGNARD Pierre (attribué)"
-    },
-    {
-     "code": "attribue",
-     "reference": "000PE013802",
-     "titre": "Portrait de jeune femme",
-     "musee": "musée des beaux-arts",
-     "ville": "Marseille",
-     "extrait": "MIGNARD Pierre (attribué à)"
-    },
-    {
-     "code": "point_interrogation",
-     "reference": "000PE011646",
-     "titre": "Isabelle de Montmorency, Duchesse de Mecklembourg (1626-1695)",
-     "musee": "musée national des châteaux de Versailles et de Trianon",
-     "ville": "Versailles",
-     "extrait": "MIGNARD Pierre (?)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "000PE005364",
-     "titre": "Anne-Marie-Louise d'Orléans, Duchesse de Montpensier, dite La Grande Mademoiselle (1627-1693)",
-     "musee": "musée national des châteaux de Versailles et de Trianon",
-     "ville": "Versailles",
-     "extrait": "MIGNARD Pierre (école)"
-    },
-    {
-     "code": "atelier_de",
-     "reference": "000PE006526",
-     "titre": "Philippe de France, duc d'Orléans, frère de Louis XIV dit Monsieur (1640-1701)",
-     "musee": "musée national des châteaux de Versailles et de Trianon",
-     "ville": "Versailles",
-     "extrait": "MIGNARD Pierre (atelier)"
-    },
-    {
-     "code": "genre_de",
-     "reference": "06070000167",
-     "titre": "Portrait de femme",
-     "musee": "musée Ingres Bourdelle",
-     "ville": "Montauban",
-     "extrait": "MIGNARD Pierre (genre de)"
     }
    ],
    "exemple_copie": {
@@ -9926,6 +8632,7 @@
   },
   {
    "nom": "Antonio Tempesta",
+   "slug": "antonio-tempesta",
    "propre": 102,
    "doute": 43,
    "copie": 63,
@@ -9967,48 +8674,6 @@
      "libelle": "genre de",
      "niveau": 3,
      "notices": 1
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "50350002558",
-     "titre": "Deux saints franciscains écrivant sous la dictée du Saint-Esprit",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "TEMPESTA Antonio (attribué à)"
-    },
-    {
-     "code": "attribue",
-     "reference": "50350002549",
-     "titre": "Projet de frontispice : Vierge en gloire",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "TEMPESTA Antonio (attribué à)"
-    },
-    {
-     "code": "point_interrogation",
-     "reference": "02340000148",
-     "titre": "Combat d'éléphant contre rhinocéros",
-     "musee": "musée du château Charles VII",
-     "ville": "Mehun-sur-Yèvre",
-     "extrait": "TEMPESTA Antonio (?) (graveur)"
-    },
-    {
-     "code": "atelier_de",
-     "reference": "50350201804",
-     "titre": "Un médecin sacrificiant un coq à Esculape: la docte ignorance",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "TEMPESTA Antonio (atelier)"
-    },
-    {
-     "code": "genre_de",
-     "reference": "50110001654",
-     "titre": "Combat de Pyrrhus contre les Romains",
-     "musee": "musée national Magnin",
-     "ville": "Dijon",
-     "extrait": "TEMPESTA Antonio (peintre, genre de)"
     }
    ],
    "exemple_copie": {
@@ -10134,6 +8799,7 @@
   },
   {
    "nom": "Luca Giordano",
+   "slug": "luca-giordano",
    "propre": 79,
    "doute": 42,
    "copie": 16,
@@ -10181,56 +8847,6 @@
      "libelle": "genre de",
      "niveau": 3,
      "notices": 1
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "000PE014035",
-     "titre": "TAUREAU POURSUIVI PAR DES CHIENS",
-     "musee": "musée des beaux-arts",
-     "ville": "Marseille",
-     "extrait": "GIORDANO Luca (attribué à)"
-    },
-    {
-     "code": "attribue",
-     "reference": "000PE022152",
-     "titre": "VENUS ENDORMIE ENTRE DEUX AMOURS",
-     "musee": "musée des beaux-arts",
-     "ville": "Bordeaux",
-     "extrait": "GIORDANO Luca (attribué)"
-    },
-    {
-     "code": "point_interrogation",
-     "reference": "000PE025528",
-     "titre": "UN CONCERT",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "GIORDANO Luca (?)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "50130000291",
-     "titre": "TRIOMPHE D'AMPHITRITE",
-     "musee": "musée national du château de Fontainebleau",
-     "ville": "Fontainebleau",
-     "extrait": "GIORDANO Luca (école)"
-    },
-    {
-     "code": "atelier_de",
-     "reference": "000PE025531",
-     "titre": "LE CHRIST APPARAISSANT A LA MADELEINE",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "GIORDANO Luca (atelier)"
-    },
-    {
-     "code": "genre_de",
-     "reference": "M0341000402",
-     "titre": "Angélique et Médor",
-     "musee": "musée Sarret de Grozon",
-     "ville": "Arbois",
-     "extrait": "Giordano Luca (1632-1705) (genre de)"
     }
    ],
    "exemple_copie": {
@@ -10670,6 +9286,7 @@
   },
   {
    "nom": "Joseph Vernet",
+   "slug": "joseph-vernet",
    "propre": 141,
    "doute": 42,
    "copie": 47,
@@ -10729,72 +9346,6 @@
      "libelle": "genre de",
      "niveau": 3,
      "notices": 2
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "00000077065",
-     "titre": "DEUX HOMMES ASSIS",
-     "musee": "musée municipal",
-     "ville": "La Roche-sur-Yon",
-     "extrait": "VERNET Joseph (attribué)"
-    },
-    {
-     "code": "attribue",
-     "reference": "00000077064",
-     "titre": "GENTILHOMME",
-     "musee": "musée municipal",
-     "ville": "La Roche-sur-Yon",
-     "extrait": "VERNET Joseph (attribué)"
-    },
-    {
-     "code": "point_interrogation",
-     "reference": "50130000342",
-     "titre": "L'Orage",
-     "musee": "musée national du château de Fontainebleau",
-     "ville": "Fontainebleau",
-     "extrait": "VERNET Claude Joseph (?)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "000PE016353",
-     "titre": "MARINE",
-     "musee": "musée Grobet-Labadié",
-     "ville": "Marseille",
-     "extrait": "VERNET Joseph (école)"
-    },
-    {
-     "code": "atelier_de",
-     "reference": "10480004941",
-     "titre": "Marine",
-     "musee": "musée des beaux-arts",
-     "ville": "Chambéry",
-     "extrait": "Vernet Joseph (1714-1789) (atelier)"
-    },
-    {
-     "code": "suiveur_de",
-     "reference": "07480012486",
-     "titre": "Incendie nocturne dans un port (recto) ; Construction dans un fort (verso) ; Entrée d'un port, lever de soleil (ancien titre)",
-     "musee": "musée des beaux-arts et galerie David-d'Angers",
-     "ville": "Angers",
-     "extrait": "VERNET Claude Joseph (suiveur)"
-    },
-    {
-     "code": "maniere_de",
-     "reference": "06380004681",
-     "titre": "MARINE, SOLEIL COUCHANT",
-     "musee": "musée des beaux-arts",
-     "ville": "Valenciennes",
-     "extrait": "VERNET Joseph (manière de)"
-    },
-    {
-     "code": "genre_de",
-     "reference": "01720000111",
-     "titre": "Vue d'Avignon",
-     "musee": "musée des ursulines",
-     "ville": "Mâcon",
-     "extrait": "VERNET Joseph (genre de)"
     }
    ],
    "exemple_copie": {
@@ -11211,6 +9762,7 @@
   },
   {
    "nom": "Hyacinthe Rigaud",
+   "slug": "hyacinthe-rigaud",
    "propre": 193,
    "doute": 41,
    "copie": 162,
@@ -11246,40 +9798,6 @@
      "libelle": "atelier (qualificatif, beaux-arts)",
      "niveau": 2,
      "notices": 9
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "000PE002384",
-     "titre": "PORTRAIT D'HOMME ; DIT AUTREFOIS DE WILLIAM BENTINCK",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "RIGAU Y ROS Hyacinthe (attribué)"
-    },
-    {
-     "code": "attribue",
-     "reference": "000PE009680",
-     "titre": "PORTRAIT DU MARECHAL DE TESSE (1650-1725)",
-     "musee": "musée de Tessé",
-     "ville": "Le Mans",
-     "extrait": "RIGAUD Hyacinthe (attribué)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "000PE007183",
-     "titre": "JEAN-BALTHAZAR KELLER (?)",
-     "musee": "musée national des châteaux de Versailles et de Trianon",
-     "ville": "Versailles",
-     "extrait": "RIGAU Y ROS Hyacinthe (école)"
-    },
-    {
-     "code": "atelier_de",
-     "reference": "000PE005334",
-     "titre": "LOUIS-ALEXANDRE DE BOURBON, COMTE DE TOULOUSE (1678-1737)",
-     "musee": "musée national des châteaux de Versailles et de Trianon",
-     "ville": "Versailles",
-     "extrait": "RIGAUD Hyacinthe (atelier)"
     }
    ],
    "exemple_copie": {
@@ -11719,6 +10237,7 @@
   },
   {
    "nom": "Géricault",
+   "slug": "gericault",
    "propre": 402,
    "doute": 40,
    "copie": 44,
@@ -11754,40 +10273,6 @@
      "libelle": "genre de",
      "niveau": 3,
      "notices": 5
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "000PE001307",
-     "titre": "LIONS COUCHES",
-     "musee": "musée d'Orsay",
-     "ville": "Paris",
-     "extrait": "GERICAULT Théodore (attribué)"
-    },
-    {
-     "code": "attribue",
-     "reference": "000PE009846",
-     "titre": "PORTRAIT D'UN JEUNE GARCON",
-     "musee": "musée de Tessé",
-     "ville": "Le Mans",
-     "extrait": "GERICAULT Théodore (attribué)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "00000074301",
-     "titre": "JOCKEY AVEC DEUX CHEVAUX",
-     "musee": "musée Goya",
-     "ville": "Castres",
-     "extrait": "GERICAULT Théodore (école)"
-    },
-    {
-     "code": "genre_de",
-     "reference": "M0332006618",
-     "titre": "Accident de diligence",
-     "musee": "musée des beaux-arts et d'archéologie",
-     "ville": "Besançon",
-     "extrait": "Géricault Théodore (1791-1824) (genre de)"
     }
    ],
    "exemple_copie": {
@@ -12112,6 +10597,7 @@
   },
   {
    "nom": "Domenico Campagnola",
+   "slug": "domenico-campagnola",
    "propre": 56,
    "doute": 39,
    "copie": 14,
@@ -12153,48 +10639,6 @@
      "libelle": "atelier (qualificatif, beaux-arts)",
      "niveau": 2,
      "notices": 1
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "50350500802",
-     "titre": "Esquisse d'un monument",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "CAMPAGNOLA Domenico (attribué à)"
-    },
-    {
-     "code": "attribue",
-     "reference": "50350007915",
-     "titre": "La Vierge à l'Enfant avec les saints Marc, Antoine, Barbe et Jean-Baptiste",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "CAMPAGNOLA Domenico (attribué à)"
-    },
-    {
-     "code": "point_interrogation",
-     "reference": "00000107130",
-     "titre": "Lion attaquant une laie",
-     "musee": "musée Condé",
-     "ville": "Chantilly",
-     "extrait": "CAMPAGNOLA Domenico ( ? )"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "50350145102",
-     "titre": "Paysage avec maisons, arbres, ruines, rochers et un pont",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "CAMPAGNOLA Domenico (école)"
-    },
-    {
-     "code": "atelier_de",
-     "reference": "50350200215",
-     "titre": "Saint Marc assis sur des nuages, appuyé sur un lion",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "CAMPAGNOLA Domenico (atelier)"
     }
    ],
    "exemple_copie": {
@@ -12301,6 +10745,7 @@
   },
   {
    "nom": "Le Tintoret",
+   "slug": "le-tintoret",
    "propre": 41,
    "doute": 38,
    "copie": 55,
@@ -12348,56 +10793,6 @@
      "libelle": "(à la) manière de",
      "niveau": 3,
      "notices": 1
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "000PE014515",
-     "titre": "SAINT BERNARD RESSUSCITANT UN MORT",
-     "musee": "musée des beaux-arts",
-     "ville": "Marseille",
-     "extrait": "ROBUSTI Jacopo (attribué à)"
-    },
-    {
-     "code": "attribue",
-     "reference": "000PE027105",
-     "titre": "PORTRAIT DE SENATEUR VENITIEN AGE DE 57 ANS",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "ROBUSTI Jacopo (attribué)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "000PE027107",
-     "titre": "JESUS QUERISSANT LES BOITEUX",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "ROBUSTI Jacopo (école)"
-    },
-    {
-     "code": "atelier_de",
-     "reference": "000PE027106",
-     "titre": "PORTRAIT D'HOMME",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "ROBUSTI Jacopo (atelier)"
-    },
-    {
-     "code": "entourage_de",
-     "reference": "01370014810",
-     "titre": "La Résurrection de Lazare",
-     "musee": "musée des beaux-arts",
-     "ville": "Dijon",
-     "extrait": "ROBUSTI Jacopo (entourage)"
-    },
-    {
-     "code": "maniere_de",
-     "reference": "50350105681",
-     "titre": "Un apôtre guérissant des malades",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "ROBUSTI Jacopo (manière de)"
     }
    ],
    "exemple_copie": {
@@ -12604,6 +10999,7 @@
   },
   {
    "nom": "Federico Barocci",
+   "slug": "federico-barocci",
    "propre": 86,
    "doute": 38,
    "copie": 36,
@@ -12651,56 +11047,6 @@
      "libelle": "(à la) manière de",
      "niveau": 3,
      "notices": 1
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "000PE032199",
-     "titre": "LA VIERGE ET L'ENFANT AVEC SAINT JOSEPH ET LE PETIT SAINT JEAN-BAPTISTE",
-     "musee": "musée des beaux-arts et d’archéologie",
-     "ville": "Troyes",
-     "extrait": "BAROCCI Federico (attribué)"
-    },
-    {
-     "code": "attribue",
-     "reference": "50350100083",
-     "titre": "Etude de paysanne tenant deux poules dans un panier",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "BAROCCI Federico (attribué à)"
-    },
-    {
-     "code": "point_interrogation",
-     "reference": "00000060736",
-     "titre": "L'ADORATION DES BERGERS",
-     "musee": "musée de la Chartreuse",
-     "ville": "Douai",
-     "extrait": "BAROCCI Federico (?)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "50350202067",
-     "titre": "Trois études de têtes de femme",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "BAROCCI Federico (école)"
-    },
-    {
-     "code": "atelier_de",
-     "reference": "000PE024742",
-     "titre": "LA VIERGE A L'ENFANT EN GLOIRE AVEC SAINT ANTOINE ABBE ET SAINTE LUCIE",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "BAROCCI Federico (atelier)"
-    },
-    {
-     "code": "maniere_de",
-     "reference": "02110002126",
-     "titre": "Tête d'enfant",
-     "musee": "musée des beaux-arts",
-     "ville": "Rennes",
-     "extrait": "BAROCCI Federico (manière de)"
     }
    ],
    "exemple_copie": {
@@ -12876,6 +11222,7 @@
   },
   {
    "nom": "Federico Zuccaro",
+   "slug": "federico-zuccaro",
    "propre": 311,
    "doute": 37,
    "copie": 39,
@@ -12923,56 +11270,6 @@
      "libelle": "(à la) manière de",
      "niveau": 3,
      "notices": 1
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "50350200030",
-     "titre": "Jésus dans le Temple au milieu des docteurs",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "Zuccaro Federico (1540?-1609) (attribué à)"
-    },
-    {
-     "code": "point_interrogation",
-     "reference": "07480012397",
-     "titre": "La canonisation de saint Charles ; Un pape présidant une assemblée de cardinaux (ancien titre)",
-     "musee": "musée des beaux-arts et galerie David-d'Angers",
-     "ville": "Angers",
-     "extrait": "Zuccaro Federico (1540?-1609) (?, dessinateur)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "50350202231",
-     "titre": "La Vierge soulève le voile qui recouvre le berceau de Jésus endormi",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "Zuccaro Federico (1540?-1609) (école)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "50350202239",
-     "titre": "La Couronne Boréale, Cassiopée et la Lyre",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "Zuccaro Federico (1540?-1609) (école)"
-    },
-    {
-     "code": "entourage_de",
-     "reference": "03290005102",
-     "titre": "Ange portant les instruments de la passion",
-     "musee": "musée d’ethnographie corse",
-     "ville": "Bastia",
-     "extrait": "Zuccaro Federico (1540?-1609) (entourage)"
-    },
-    {
-     "code": "maniere_de",
-     "reference": "M0491000943",
-     "titre": "Tête de vieillard",
-     "musee": "musée Hyacinthe Rigaud",
-     "ville": "Perpignan",
-     "extrait": "Zuccaro Federico (1540?-1609) (manière de)"
     }
    ],
    "exemple_copie": {
@@ -13075,6 +11372,7 @@
   },
   {
    "nom": "Véronèse",
+   "slug": "veronese",
    "propre": 96,
    "doute": 35,
    "copie": 108,
@@ -13116,48 +11414,6 @@
      "libelle": "suiveur de",
      "niveau": 2,
      "notices": 1
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "000PE023078",
-     "titre": "PORTRAIT DE LA FEMME DU DOGE GIUSTINANI",
-     "musee": "musée des beaux-arts",
-     "ville": "Bordeaux",
-     "extrait": "CALIARI Paolo (attribué)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "50350007033",
-     "titre": "La Vierge apparaissant aux saints Antoine Abbot, Paul ermite, Pierre et Paul",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "VERONESE (dit, école)"
-    },
-    {
-     "code": "atelier_de",
-     "reference": "000PE019542",
-     "titre": "Le Christ pleure par la Vierge et deux anges",
-     "musee": "musée des Beaux-Arts",
-     "ville": "Lille",
-     "extrait": "CALIARI Paolo (atelier)"
-    },
-    {
-     "code": "atelier_de",
-     "reference": "000PE027370",
-     "titre": "LA FAMILLE DE LOTH FUYANT SODOME",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "VERONESE (dit, atelier)"
-    },
-    {
-     "code": "suiveur_de",
-     "reference": "03290005067",
-     "titre": "Vénus et Mars",
-     "musee": "musée d’ethnographie corse",
-     "ville": "Bastia",
-     "extrait": "Véronèse (1528-1588) (suiveur)"
     }
    ],
    "exemple_copie": {
@@ -13383,6 +11639,7 @@
   },
   {
    "nom": "Luca Cambiaso",
+   "slug": "luca-cambiaso",
    "propre": 194,
    "doute": 34,
    "copie": 37,
@@ -13430,56 +11687,6 @@
      "libelle": "(à la) manière de",
      "niveau": 3,
      "notices": 3
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "00000068495",
-     "titre": "LE MARIAGE MYSTIQUE DE SAINTE CATHERINE",
-     "musee": "musée national Magnin",
-     "ville": "Dijon",
-     "extrait": "CAMBIASO Luca (attribué)"
-    },
-    {
-     "code": "attribue",
-     "reference": "50350006465",
-     "titre": "Saint Jérôme dans le désert",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "CAMBIASO Luca (attribué à)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "50350508137",
-     "titre": "UNE FEMME AVEC TROIS ENFANTS",
-     "musee": "musée Bonnat-Helleu, musée des Beaux-Arts de Bayonne",
-     "ville": "Bayonne",
-     "extrait": "CAMBIASO Luca (école)"
-    },
-    {
-     "code": "atelier_de",
-     "reference": "50350037957",
-     "titre": "Femme à demi-allongée, de dos, appuyée sur son coude gauche",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "CAMBIASO Luca (atelier)"
-    },
-    {
-     "code": "entourage_de",
-     "reference": "03290005058",
-     "titre": "Jésus guérissant un aveugle",
-     "musee": "musée d’ethnographie corse",
-     "ville": "Bastia",
-     "extrait": "CAMBIASO Luca (entourage)"
-    },
-    {
-     "code": "maniere_de",
-     "reference": "02110002809",
-     "titre": "Vénus et l'Amour",
-     "musee": "musée des beaux-arts",
-     "ville": "Rennes",
-     "extrait": "CAMBIASO Luca (manière de)"
     }
    ],
    "exemple_copie": {
@@ -13628,6 +11835,7 @@
   },
   {
    "nom": "Polidoro Caldara",
+   "slug": "polidoro-caldara",
    "propre": 130,
    "doute": 33,
    "copie": 195,
@@ -13663,40 +11871,6 @@
      "libelle": "entourage de",
      "niveau": 2,
      "notices": 8
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "50350101539",
-     "titre": "Vieil homme barbu, drapé, appuyé sur un bâton",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "CALDARA Polidoro (attribué à)"
-    },
-    {
-     "code": "attribue",
-     "reference": "50350008510",
-     "titre": "Fragment de plan",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "CALDARA Polidoro (attribué à)"
-    },
-    {
-     "code": "point_interrogation",
-     "reference": "000PE026960",
-     "titre": "PSYCHE RECUE DANS L'OLYMPE",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "CALDARA Polidoro (?)"
-    },
-    {
-     "code": "entourage_de",
-     "reference": "50350101533",
-     "titre": "Lamentation sur le Christ mort, au pied de la croix",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "CALDARA Polidoro (entourage de)"
     }
    ],
    "exemple_copie": {
@@ -13761,6 +11935,7 @@
   },
   {
    "nom": "Gaspard Dughet",
+   "slug": "gaspard-dughet",
    "propre": 53,
    "doute": 32,
    "copie": 4,
@@ -13814,64 +11989,6 @@
      "libelle": "genre de",
      "niveau": 3,
      "notices": 2
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "000PE009666",
-     "titre": "PAYSAGE",
-     "musee": "musée de Tessé",
-     "ville": "Le Mans",
-     "extrait": "DUGHET Gaspard (attribué)"
-    },
-    {
-     "code": "attribue",
-     "reference": "000PE031346",
-     "titre": "ESQUISSE DE PAYSAGE",
-     "musee": "musée Crozatier",
-     "ville": "Le Puy-en-Velay",
-     "extrait": "DUGHET Gaspard (attribué)"
-    },
-    {
-     "code": "point_interrogation",
-     "reference": "M0332004793",
-     "titre": "Etude d'arbres",
-     "musee": "musée des beaux-arts et d'archéologie",
-     "ville": "Besançon",
-     "extrait": "DUGHET Gaspard (?, dessinateur)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "000PE020956",
-     "titre": "Paysage avec figures. Voyageurs se mettant à l'abri d'un coup de vent",
-     "musee": "musée des beaux-arts",
-     "ville": "Caen",
-     "extrait": "LE GUASPRE (école)"
-    },
-    {
-     "code": "entourage_de",
-     "reference": "M0350002026",
-     "titre": "Paysage avec pêcheurs",
-     "musee": "Viséum-musée de la lunette (collections du musée de la lunette et du musée Jourdain)",
-     "ville": "Hauts de Bienne",
-     "extrait": "DUGHET Gaspard (dit) POUSSIN Gaspard (entourage de)"
-    },
-    {
-     "code": "maniere_de",
-     "reference": "01370001620",
-     "titre": "Paysage : Le Christ marchant sur les eaux",
-     "musee": "musée des beaux-arts",
-     "ville": "Dijon",
-     "extrait": "DUGHET Gaspard (manière de)"
-    },
-    {
-     "code": "genre_de",
-     "reference": "07430005637",
-     "titre": "Paysage animé",
-     "musee": "musée des Beaux-Arts",
-     "ville": "Nantes",
-     "extrait": "DUGHET Gaspard (genre de)"
     }
    ],
    "exemple_copie": {
@@ -14181,6 +12298,7 @@
   },
   {
    "nom": "Fragonard",
+   "slug": "fragonard",
    "propre": 264,
    "doute": 30,
    "copie": 26,
@@ -14222,48 +12340,6 @@
      "libelle": "genre de",
      "niveau": 3,
      "notices": 1
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "000PE001196",
-     "titre": "Portrait de jeune femme",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)"
-    },
-    {
-     "code": "attribue",
-     "reference": "000PE001195",
-     "titre": "Bacchante endormie",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "000PE023112",
-     "titre": "Joueur de flûte",
-     "musee": "musée des beaux-arts",
-     "ville": "Bordeaux",
-     "extrait": "Fragonard Jean-Honoré (1732-1806) (école)"
-    },
-    {
-     "code": "maniere_de",
-     "reference": "06070000115",
-     "titre": "Sainte Famille",
-     "musee": "musée Ingres Bourdelle",
-     "ville": "Montauban",
-     "extrait": "Fragonard Jean-Honoré (1732-1806) (manière de)"
-    },
-    {
-     "code": "genre_de",
-     "reference": "50110001194",
-     "titre": "Le petit montreur de singe savant",
-     "musee": "musée national Magnin",
-     "ville": "Dijon",
-     "extrait": "Fragonard Jean-Honoré (1732-1806) (genre de)"
     }
    ],
    "exemple_copie": {
@@ -14519,6 +12595,7 @@
   },
   {
    "nom": "Corneille de Lyon",
+   "slug": "corneille-de-lyon",
    "propre": 11,
    "doute": 29,
    "copie": 5,
@@ -14566,56 +12643,6 @@
      "libelle": "(à la) manière de",
      "niveau": 3,
      "notices": 1
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "000PE006870",
-     "titre": "ANNE DU PLESSIS-LIANCOURT",
-     "musee": "musée national des châteaux de Versailles et de Trianon",
-     "ville": "Versailles",
-     "extrait": "Corneille de Lyon (1500?-1575) (atelier, attribué à )"
-    },
-    {
-     "code": "point_interrogation",
-     "reference": "06190023766",
-     "titre": "Portrait de Catherine de Médicis",
-     "musee": "musée de la Chartreuse",
-     "ville": "Douai",
-     "extrait": "Corneille De Lyon (1510-1575) (?, copiste)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "000PE007610",
-     "titre": "CHARLES DE LA ROCHEFOUCAULD, COMTE DE RANDAN (?-1562)",
-     "musee": "musée national des châteaux de Versailles et de Trianon",
-     "ville": "Versailles",
-     "extrait": "Corneille de Lyon (1500?-1575) (école)"
-    },
-    {
-     "code": "atelier_de",
-     "reference": "000PE000544",
-     "titre": "Charles de Cossé, comte de Brissac (v. 1506-1564), maréchal de France en 1550",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "Corneille de Lyon (1500?-1575) (atelier)"
-    },
-    {
-     "code": "atelier_de",
-     "reference": "000PE000542",
-     "titre": "Portrait d'homme, dit autrefois : Le chevalier d'Ambre",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "Corneille de Lyon (1500?-1575) (atelier)"
-    },
-    {
-     "code": "maniere_de",
-     "reference": "01370001106",
-     "titre": "Portrait d'homme",
-     "musee": "musée des beaux-arts",
-     "ville": "Dijon",
-     "extrait": "Corneille de Lyon (1500?-1575) (manière de)"
     }
    ],
    "exemple_copie": {
@@ -14791,6 +12818,7 @@
   },
   {
    "nom": "Francesco Vanni",
+   "slug": "francesco-vanni",
    "propre": 79,
    "doute": 29,
    "copie": 6,
@@ -14832,48 +12860,6 @@
      "libelle": "entourage de",
      "niveau": 2,
      "notices": 1
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "50350002752",
-     "titre": "Rébecca et Eliézer à la fontaine",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "VANNI Francesco (attribué à)"
-    },
-    {
-     "code": "attribue",
-     "reference": "50350002780",
-     "titre": "Le Concile d'Ephèse",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "VANNI Francesco (attribué à)"
-    },
-    {
-     "code": "point_interrogation",
-     "reference": "50520000014",
-     "titre": "Présentation de la Vierge au temple ; croquis au verso",
-     "musee": "musée Condé",
-     "ville": "Chantilly",
-     "extrait": "VANNI Francesco (? )"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "50350105008",
-     "titre": "La Sainte Famille fuyant en Egypte",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "VANNI Francesco (école)"
-    },
-    {
-     "code": "entourage_de",
-     "reference": "01760000025",
-     "titre": "Saint Hyacinthe sauvant la statue de la Vierge",
-     "musee": "musée eucharistique du Hiéron",
-     "ville": "Paray-le-Monial",
-     "extrait": "VANNI Francesco (entourage)"
     }
    ],
    "exemple_copie": {
@@ -14999,6 +12985,7 @@
   },
   {
    "nom": "Raphaël",
+   "slug": "raphael",
    "propre": 1326,
    "doute": 27,
    "copie": 771,
@@ -15040,48 +13027,6 @@
      "libelle": "entourage de",
      "niveau": 2,
      "notices": 1
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "000PE009022",
-     "titre": "SAINT JEAN L'EVANGELISTE A PATMOS",
-     "musee": "musée national des châteaux de Versailles et de Trianon",
-     "ville": "Versailles",
-     "extrait": "Raphaël (1483-1520) (attribué à)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "00000060545",
-     "titre": "LA VIERGE A L'ENFANT ET LE BAPTISTE",
-     "musee": "musée de la Chartreuse",
-     "ville": "Douai",
-     "extrait": "SANTI Raffaello (école)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "00000060735",
-     "titre": "LA VIERGE A LA CHAISE",
-     "musee": "musée de la Chartreuse",
-     "ville": "Douai",
-     "extrait": "SANTI Raffaello (école)"
-    },
-    {
-     "code": "atelier_de",
-     "reference": "000PE026982",
-     "titre": "LE PERE ETERNEL",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "SANTI Raffaello (atelier)"
-    },
-    {
-     "code": "entourage_de",
-     "reference": "M0332002913",
-     "titre": "Copie d'après une statue antique de Junon (recto) ; plusieurs études d'une figure casquée et esquisse d'un homme debout (verso)",
-     "musee": "musée des beaux-arts et d'archéologie",
-     "ville": "Besançon",
-     "extrait": "Raphaël (1483-1520) (entourage de)"
     }
    ],
    "exemple_copie": {
@@ -15253,6 +13198,7 @@
   },
   {
    "nom": "Philippe de Champaigne",
+   "slug": "philippe-de-champaigne",
    "propre": 184,
    "doute": 26,
    "copie": 114,
@@ -15300,56 +13246,6 @@
      "libelle": "(à la) manière de",
      "niveau": 3,
      "notices": 1
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "000PE000384",
-     "titre": "PORTRAIT D'HOMME ; DIT AUTREFOIS PORTRAIT DU DUC DE ROANNEZ",
-     "musee": "musée municipal des beaux-arts",
-     "ville": "Agen",
-     "extrait": "Champaigne Philippe de (1602-1674) (attribué à)"
-    },
-    {
-     "code": "attribue",
-     "reference": "000PE000382",
-     "titre": "Portrait de deux hommes",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "Champaigne Philippe de (1602-1674) (attribué à)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "000PE007789",
-     "titre": "MAGISTRAT INCONNU",
-     "musee": "musée national des châteaux de Versailles et de Trianon",
-     "ville": "Versailles",
-     "extrait": "CHAMPAIGNE Philippe de (école)"
-    },
-    {
-     "code": "atelier_de",
-     "reference": "000PE000380",
-     "titre": "Le Christ en croix",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "Champaigne Philippe de (1602-1674) (atelier)"
-    },
-    {
-     "code": "entourage_de",
-     "reference": "07140009137",
-     "titre": "Ecce Homo",
-     "musee": "musée Louis Philippe",
-     "ville": "Eu",
-     "extrait": "CHAMPAIGNE Philippe De (entourage)"
-    },
-    {
-     "code": "maniere_de",
-     "reference": "06070000079",
-     "titre": "Portrait d'un ecclésiastique",
-     "musee": "musée Ingres Bourdelle",
-     "ville": "Montauban",
-     "extrait": "CHAMPAIGNE Philippe de (manière de)"
     }
    ],
    "exemple_copie": {
@@ -15617,6 +13513,7 @@
   },
   {
    "nom": "Laurent de La Hyre",
+   "slug": "laurent-de-la-hyre",
    "propre": 117,
    "doute": 26,
    "copie": 15,
@@ -15652,40 +13549,6 @@
      "libelle": "atelier (qualificatif, beaux-arts)",
      "niveau": 2,
      "notices": 1
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "000PE013959",
-     "titre": "ANGELIQUE ET MEDOR",
-     "musee": "musée des beaux-arts",
-     "ville": "Marseille",
-     "extrait": "LA HYRE Laurent de (attribué à)"
-    },
-    {
-     "code": "attribue",
-     "reference": "00000093350",
-     "titre": "SAINT FRANCOIS DONNANT LE CORDON DU TIERS-ORDRE A LOUIS XIII ; LE VOEU DE LOUIS XIII (TITRE ANCIEN)",
-     "musee": "musée des beaux-arts",
-     "ville": "Orléans",
-     "extrait": "La Hyre Laurent de (1606-1656) (attribué à)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "00000056500",
-     "titre": "SAINT FRANCOIS CONSOLE PAR LA MUSIQUE DES ANGES",
-     "musee": "musée des beaux-arts",
-     "ville": "Rouen",
-     "extrait": "LA HYRE Laurent de (école)"
-    },
-    {
-     "code": "atelier_de",
-     "reference": "000PE029833",
-     "titre": "L'EDUCATION DE LA VIERGE",
-     "musee": "musée des beaux-arts",
-     "ville": "Rouen",
-     "extrait": "LA HYRE Laurent de (atelier)"
     }
    ],
    "exemple_copie": {
@@ -15792,6 +13655,7 @@
   },
   {
    "nom": "Giorgio Vasari",
+   "slug": "giorgio-vasari",
    "propre": 197,
    "doute": 26,
    "copie": 30,
@@ -15833,48 +13697,6 @@
      "libelle": "entourage de",
      "niveau": 2,
      "notices": 1
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "50350002970",
-     "titre": "Vision de saint Romuald",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "VASARI Giorgio (attribué à)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "00000060663",
-     "titre": "MARIE-MADELEINE",
-     "musee": "musée de la Chartreuse",
-     "ville": "Douai",
-     "extrait": "VASARI GIORGIO (école)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "00000060665",
-     "titre": "ANGE DE L'ANNONCIATION",
-     "musee": "musée de la Chartreuse",
-     "ville": "Douai",
-     "extrait": "VASARI GIORGIO (école)"
-    },
-    {
-     "code": "atelier_de",
-     "reference": "000PE023498",
-     "titre": "Sainte Famille avec le petit Saint Jean-Baptiste et Saint François d'Assise",
-     "musee": "musée des beaux-arts",
-     "ville": "Bordeaux",
-     "extrait": "VASARI Giorgio (atelier)"
-    },
-    {
-     "code": "entourage_de",
-     "reference": "M0457000885",
-     "titre": "Sans désignation",
-     "musee": "musée des beaux-arts",
-     "ville": "Nîmes",
-     "extrait": "Vasari Giorgio (1511-1574) (entourage de)"
     }
    ],
    "exemple_copie": {
@@ -15977,6 +13799,7 @@
   },
   {
    "nom": "Le Corrège",
+   "slug": "le-correge",
    "propre": 82,
    "doute": 25,
    "copie": 111,
@@ -16012,40 +13835,6 @@
      "libelle": "école de",
      "niveau": 2,
      "notices": 22
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "000PE014737",
-     "titre": "FIGURE ALLEGORIQUE",
-     "musee": "musée des beaux-arts",
-     "ville": "Marseille",
-     "extrait": "ALLEGRI Antonio (attribué à)"
-    },
-    {
-     "code": "point_interrogation",
-     "reference": "000PE026927",
-     "titre": "PORTRAIT DE JEUNE HOMME",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "ALLEGRI Antonio (?)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "00000060728",
-     "titre": "VIERGE A L'ENFANT ET SAINT JEROME",
-     "musee": "musée de la Chartreuse",
-     "ville": "Douai",
-     "extrait": "LE CORREGE (dit, école)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "50350500864",
-     "titre": "Texte manuscrit",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "ALLEGRI Antonio (école)"
     }
    ],
    "exemple_copie": {
@@ -16152,6 +13941,7 @@
   },
   {
    "nom": "Sébastien Bourdon",
+   "slug": "sebastien-bourdon",
    "propre": 155,
    "doute": 25,
    "copie": 30,
@@ -16193,48 +13983,6 @@
      "libelle": "genre de",
      "niveau": 3,
      "notices": 1
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "000PE000238",
-     "titre": "Portrait d'un homme tenant un buste de Caracalla",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "BOURDON Sébastien (attribué)"
-    },
-    {
-     "code": "attribue",
-     "reference": "000PE000240",
-     "titre": "L'Adoration des bergers",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "BOURDON Sébastien (attribué)"
-    },
-    {
-     "code": "point_interrogation",
-     "reference": "M0332011954",
-     "titre": "Scène antique avec un homme sur un trône et un malade : mort de Darius (?)",
-     "musee": "musée des beaux-arts et d'archéologie",
-     "ville": "Besançon",
-     "extrait": "BOURDON Sébastien (cercle de, ?)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "000PE007744",
-     "titre": "INCONNU",
-     "musee": "musée national des châteaux de Versailles et de Trianon",
-     "ville": "Versailles",
-     "extrait": "BOURDON Sébastien (école)"
-    },
-    {
-     "code": "genre_de",
-     "reference": "07430005686",
-     "titre": "Paysage historique",
-     "musee": "musée des Beaux-Arts",
-     "ville": "Nantes",
-     "extrait": "BOURDON Sébastien (genre de)"
     }
    ],
    "exemple_copie": {
@@ -16452,6 +14200,7 @@
   },
   {
    "nom": "Pier Francesco Mola",
+   "slug": "pier-francesco-mola",
    "propre": 73,
    "doute": 24,
    "copie": 8,
@@ -16487,40 +14236,6 @@
      "libelle": "genre de",
      "niveau": 3,
      "notices": 2
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "50350005433",
-     "titre": "Paysage montueux et rocheux encerclant des étendues d'eau animées de barques",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "MOLA Pier Francesco (attribué à)"
-    },
-    {
-     "code": "attribue",
-     "reference": "50350005417",
-     "titre": "Un ange apparaît à Agar et Ismaël",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "MOLA Pier Francesco (attribué à)"
-    },
-    {
-     "code": "point_interrogation",
-     "reference": "000PE026887",
-     "titre": "SAINT PIERRE EN PRIERE",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "MOLA Pier Francesco (?)"
-    },
-    {
-     "code": "genre_de",
-     "reference": "06070000172",
-     "titre": "Paysage avec chartreux",
-     "musee": "musée Ingres Bourdelle",
-     "ville": "Montauban",
-     "extrait": "MOLA Pier Francesco (genre de)"
     }
    ],
    "exemple_copie": {
@@ -16757,6 +14472,7 @@
   },
   {
    "nom": "Louis Léopold Boilly",
+   "slug": "louis-leopold-boilly",
    "propre": 235,
    "doute": 24,
    "copie": 5,
@@ -16798,48 +14514,6 @@
      "libelle": "genre de",
      "niveau": 3,
      "notices": 1
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "00000082515",
-     "titre": "MARIE PIERRE FRANCOIS DE MESGRIGNY FILS DE LOUIS MARIS MARQUIS DE MESGRIGNY ET DAME EDMEE MARCHAL (1772-1858)",
-     "musee": "musée des beaux-arts et d’archéologie",
-     "ville": "Troyes",
-     "extrait": "BOILLY Louis Léopold (attribué)"
-    },
-    {
-     "code": "attribue",
-     "reference": "000PE013602",
-     "titre": "PORTRAIT D'HOMME",
-     "musee": "musée des beaux-arts",
-     "ville": "Marseille",
-     "extrait": "BOILLY Louis Léopold (attribué à)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "000DE006810",
-     "titre": "JEUNE FEMME ACCOUDEE",
-     "musee": "musée Grobet-Labadié",
-     "ville": "Marseille",
-     "extrait": "BOILLY Louis Léopold (école)"
-    },
-    {
-     "code": "atelier_de",
-     "reference": "10480001058",
-     "titre": "Portrait de jeune homme",
-     "musee": "musée des beaux-arts",
-     "ville": "Chambéry",
-     "extrait": "BOILLY Louis Léopold (atelier)"
-    },
-    {
-     "code": "genre_de",
-     "reference": "M0332000855",
-     "titre": "Portrait de jeune homme",
-     "musee": "musée des beaux-arts et d'archéologie",
-     "ville": "Besançon",
-     "extrait": "Boilly Louis-Léopold (1761-1845) (genre de)"
     }
    ],
    "exemple_copie": {
@@ -17210,6 +14884,7 @@
   },
   {
    "nom": "Jean-Baptiste Oudry",
+   "slug": "jean-baptiste-oudry",
    "propre": 400,
    "doute": 23,
    "copie": 457,
@@ -17245,40 +14920,6 @@
      "libelle": "atelier (qualificatif, beaux-arts)",
      "niveau": 2,
      "notices": 1
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "000DE021409",
-     "titre": "DEUX ETUDES DE CHIEN",
-     "musee": "musée Grobet-Labadié",
-     "ville": "Marseille",
-     "extrait": "OUDRY Jean-Baptiste (attribué)"
-    },
-    {
-     "code": "attribue",
-     "reference": "00000081836",
-     "titre": "ETUDE DE CHIEN DE CHASSE BUVANT",
-     "musee": "musée des beaux-arts et d’archéologie",
-     "ville": "Troyes",
-     "extrait": "OUDRY Jean-Baptiste (attribué)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "000PE016302",
-     "titre": "JEUNES CANARDS",
-     "musee": "musée Grobet-Labadié",
-     "ville": "Marseille",
-     "extrait": "OUDRY Jean-Baptiste (école)"
-    },
-    {
-     "code": "atelier_de",
-     "reference": "00650013590",
-     "titre": "Comédiens italiens dans un parc",
-     "musee": "musée des beaux-arts",
-     "ville": "Bordeaux",
-     "extrait": "OUDRY Jean-Baptiste (atelier)"
     }
    ],
    "exemple_copie": {
@@ -17526,6 +15167,7 @@
   },
   {
    "nom": "Nicolas de Largillière",
+   "slug": "nicolas-de-largilliere",
    "propre": 77,
    "doute": 23,
    "copie": 30,
@@ -17585,72 +15227,6 @@
      "libelle": "genre de",
      "niveau": 3,
      "notices": 1
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "000PE009756",
-     "titre": "PORTRAIT DE RENEE ELISABETH PUCELLE, EPOUSE DE NICOLAS FREMONT D'AUNEIL",
-     "musee": "musée de Tessé",
-     "ville": "Le Mans",
-     "extrait": "LARGILLIERE Nicolas de (attribué)"
-    },
-    {
-     "code": "attribue",
-     "reference": "000PE009801",
-     "titre": "PORTRAIT D'UN MAGISTRAT",
-     "musee": "musée de Tessé",
-     "ville": "Le Mans",
-     "extrait": "LARGILLIERE Nicolas de (attribué)"
-    },
-    {
-     "code": "point_interrogation",
-     "reference": "000PE007962",
-     "titre": "Noël Jouvenet (mort en 1716), sculpteur",
-     "musee": "musée national des châteaux de Versailles et de Trianon",
-     "ville": "Versailles",
-     "extrait": "LARGILLIERE Nicolas de (?)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "07290020599",
-     "titre": "Femme au collier de perles ; Portrait de femme (autre titre)",
-     "musee": "musée des beaux-arts",
-     "ville": "Rouen",
-     "extrait": "LARGILLIERE Nicolas de (école)"
-    },
-    {
-     "code": "atelier_de",
-     "reference": "000PE001687",
-     "titre": "LE PRESIDENT DE LAMOIGNON (1617-1677)",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "LARGILLIERE Nicolas de (atelier)"
-    },
-    {
-     "code": "entourage_de",
-     "reference": "M0536000447",
-     "titre": "Portrait d’homme",
-     "musee": "musée départemental d'art ancien et contemporain",
-     "ville": "Epinal",
-     "extrait": "Largillière Nicolas de (1656-1746) (entourage de)"
-    },
-    {
-     "code": "maniere_de",
-     "reference": "01610009748",
-     "titre": "Portrait d'homme à la perruque",
-     "musee": "musée Rolin",
-     "ville": "Autun",
-     "extrait": "LARGILLIERE Nicolas de (manière de)"
-    },
-    {
-     "code": "genre_de",
-     "reference": "M0347001435",
-     "titre": "Portrait d'homme à mi-corps",
-     "musee": "musée des beaux-arts et d'archéologie",
-     "ville": "Dole",
-     "extrait": "LARGILLIERE Nicolas de (genre de)"
     }
    ],
    "exemple_copie": {
@@ -17986,6 +15562,7 @@
   },
   {
    "nom": "Paul Bril",
+   "slug": "paul-bril",
    "propre": 66,
    "doute": 22,
    "copie": 25,
@@ -18039,64 +15616,6 @@
      "libelle": "genre de",
      "niveau": 3,
      "notices": 3
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "50350109961",
-     "titre": "Bâtiments sur des rochers, surplombant une rivière",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "BRIL Paul (attribué à)"
-    },
-    {
-     "code": "attribue",
-     "reference": "50350109966",
-     "titre": "Bâtiments sur une colline boisée dominant une plaine",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "BRIL Paul (attribué à)"
-    },
-    {
-     "code": "point_interrogation",
-     "reference": "M0347000651",
-     "titre": "Paysage",
-     "musee": "musée des beaux-arts et d'archéologie",
-     "ville": "Dole",
-     "extrait": "BRIL Paul (?)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "50350030449",
-     "titre": "Paysage avec une maison et une tour",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "BRIL Paul (école)"
-    },
-    {
-     "code": "suiveur_de",
-     "reference": "50110001601",
-     "titre": "Paysage avec cours d'eau et figures diverses",
-     "musee": "musée national Magnin",
-     "ville": "Dijon",
-     "extrait": "BRIL Paul (peintre, suiveur)"
-    },
-    {
-     "code": "maniere_de",
-     "reference": "00000062914",
-     "titre": "LA VIERGE ET L'ENFANT DANS UN NUAGE",
-     "musee": "musée des beaux-arts",
-     "ville": "Quimper",
-     "extrait": "BRIL Paul (manière de)"
-    },
-    {
-     "code": "genre_de",
-     "reference": "06380000486",
-     "titre": "Paysage avec Tobie et l'Ange",
-     "musee": "musée des Beaux-Arts",
-     "ville": "Valenciennes",
-     "extrait": "BRIL Paul (genre de)"
     }
    ],
    "exemple_copie": {
@@ -18280,6 +15799,7 @@
   },
   {
    "nom": "Ribera",
+   "slug": "ribera",
    "propre": 55,
    "doute": 21,
    "copie": 27,
@@ -18327,56 +15847,6 @@
      "libelle": "genre de",
      "niveau": 3,
      "notices": 2
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "06070000233",
-     "titre": "Saint Jérôme lisant",
-     "musee": "musée Ingres Bourdelle",
-     "ville": "Montauban",
-     "extrait": "RIBERA Jusepe de  (attribué)"
-    },
-    {
-     "code": "attribue",
-     "reference": "50350103953",
-     "titre": "Saint Jérôme écrivant",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "RIBERA Jusepe de (attribué à)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "000PE026599",
-     "titre": "SAINT JEROME ECRIVANT",
-     "musee": "MUDO - musée de l'Oise",
-     "ville": "Beauvais",
-     "extrait": "RIBERA Jusepe de (école)"
-    },
-    {
-     "code": "atelier_de",
-     "reference": "00980000808",
-     "titre": "Saint Jérôme",
-     "musee": "musée des Beaux-Arts",
-     "ville": "Pau",
-     "extrait": "RIBERA Jusepe de (atelier)"
-    },
-    {
-     "code": "entourage_de",
-     "reference": "06770002729",
-     "titre": "L'Astronome",
-     "musee": "musée Thomas-Henry",
-     "ville": "Cherbourg-en-Cotentin",
-     "extrait": "RIBERA Jusepe de (entourage de)"
-    },
-    {
-     "code": "genre_de",
-     "reference": "50350205910",
-     "titre": "Homme drapé assis (un saint ?)",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "RIBERA Jusepe de (genre de)"
     }
    ],
    "exemple_copie": {
@@ -18728,6 +16198,7 @@
   },
   {
    "nom": "Le Pérugin",
+   "slug": "le-perugin",
    "propre": 33,
    "doute": 21,
    "copie": 19,
@@ -18763,40 +16234,6 @@
      "libelle": "atelier (qualificatif, beaux-arts)",
      "niveau": 2,
      "notices": 5
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "M0289002516",
-     "titre": "Evêque drapé avec un aigle à ses pieds (titre factice)",
-     "musee": "musée municipal",
-     "ville": "Pithiviers",
-     "extrait": "VANNUCCI Pietro (attribué à)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "50350228334",
-     "titre": "Saint Marc debout",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "VANNUCCI Pietro (école)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "50350112025",
-     "titre": "Trois figures de femmes, debout",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "VANNUCCI Pietro (école)"
-    },
-    {
-     "code": "atelier_de",
-     "reference": "00000107026",
-     "titre": "Un archer et un arbalétrier",
-     "musee": "musée Condé",
-     "ville": "Chantilly",
-     "extrait": "VANNUCCI Pietro (atelier)"
     }
    ],
    "exemple_copie": {
@@ -18922,6 +16359,7 @@
   },
   {
    "nom": "Claude Lorrain",
+   "slug": "claude-lorrain",
    "propre": 207,
    "doute": 20,
    "copie": 41,
@@ -18951,32 +16389,6 @@
      "libelle": "école de",
      "niveau": 2,
      "notices": 3
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "000PE001257",
-     "titre": "PAYSAGE",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "Lorrain Claude (1600-1682) (attribué à)"
-    },
-    {
-     "code": "attribue",
-     "reference": "000PE013398",
-     "titre": "Paysage au fleuve",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "Lorrain Claude (1600-1682) (attribué à)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "000PE026586",
-     "titre": "TOBIE ET L'ANGE",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "Lorrain Claude (1600-1682) (école)"
     }
    ],
    "exemple_copie": {
@@ -19106,6 +16518,7 @@
   },
   {
    "nom": "Albrecht Dürer",
+   "slug": "albrecht-durer",
    "propre": 740,
    "doute": 19,
    "copie": 112,
@@ -19147,48 +16560,6 @@
      "libelle": "genre de",
      "niveau": 3,
      "notices": 1
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "00000055631",
-     "titre": "UN FAUCONNIER ; PAYSAN AU COQ",
-     "musee": "musée Crozatier",
-     "ville": "Le Puy-en-Velay",
-     "extrait": "DURER Albrecht (attribué)"
-    },
-    {
-     "code": "point_interrogation",
-     "reference": "02860007456",
-     "titre": "Saint Pierre",
-     "musee": "musée des beaux-arts",
-     "ville": "Orléans",
-     "extrait": "DURER Albrecht (?, graveur)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "50350500150",
-     "titre": "Saint Jean Evangéliste",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "DURER Albrecht (école)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "50350109124",
-     "titre": "Jésus-Christ apparaissant à la Sainte Vierge",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "DURER Albrecht (école)"
-    },
-    {
-     "code": "genre_de",
-     "reference": "03110042003",
-     "titre": "Tableau de dévotion",
-     "musee": "musée des Beaux-Arts de Reims",
-     "ville": "Reims",
-     "extrait": "DÜRER Albrecht (genre de)"
     }
    ],
    "exemple_copie": {
@@ -19337,6 +16708,7 @@
   },
   {
    "nom": "Botticelli",
+   "slug": "botticelli",
    "propre": 20,
    "doute": 17,
    "copie": 14,
@@ -19378,48 +16750,6 @@
      "libelle": "atelier (qualificatif, beaux-arts)",
      "niveau": 2,
      "notices": 3
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "M0332002781",
-     "titre": "Étude pour Pétrarque",
-     "musee": "musée des beaux-arts et d'archéologie",
-     "ville": "Besançon",
-     "extrait": "Botticelli Sandro (1444-1510) (attribué à)"
-    },
-    {
-     "code": "point_interrogation",
-     "reference": "06190001320",
-     "titre": "Deux Anges",
-     "musee": "musée de la Chartreuse",
-     "ville": "Douai",
-     "extrait": "FILIPEPI Alessandro Mariano (?)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "000PE012507",
-     "titre": "LA VIERGE ET L'ENFANT AVEC UN ANGE",
-     "musee": "musée du Petit Palais",
-     "ville": "Avignon",
-     "extrait": "BOTTICELLI Sandro (dit, école)"
-    },
-    {
-     "code": "ecole_de",
-     "reference": "000PE012506",
-     "titre": "LA VIERGE ET L'ENFANT AVEC UN ANGE",
-     "musee": "musée du Petit Palais",
-     "ville": "Avignon",
-     "extrait": "BOTTICELLI Sandro (dit, école)"
-    },
-    {
-     "code": "atelier_de",
-     "reference": "000PE019574",
-     "titre": "La Vierge et l'Enfant",
-     "musee": "musée des Beaux-Arts",
-     "ville": "Lille",
-     "extrait": "BOTTICELLI Sandro (dit, atelier)"
     }
    ],
    "exemple_copie": {
@@ -19568,6 +16898,7 @@
   },
   {
    "nom": "Titien",
+   "slug": "titien",
    "propre": 94,
    "doute": 11,
    "copie": 147,
@@ -19615,56 +16946,6 @@
      "libelle": "suiveur de",
      "niveau": 2,
      "notices": 1
-    }
-   ],
-   "exemples": [
-    {
-     "code": "attribue",
-     "reference": "50350228332",
-     "titre": "Mourant assisté d'un prêtre qui lui présente un crucifix",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "VECELLIO Tiziano (attribué à)"
-    },
-    {
-     "code": "attribue",
-     "reference": "50350228331",
-     "titre": "Site montagneux, avec à droite, sur une éminence, des bâtiments religieux",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "VECELLIO Tiziano (attribué à)"
-    },
-    {
-     "code": "point_interrogation",
-     "reference": "00000077319",
-     "titre": "ECCE HOMO",
-     "musee": "musée Condé",
-     "ville": "Chantilly",
-     "extrait": "LE TITIEN (?, dit)"
-    },
-    {
-     "code": "atelier_de",
-     "reference": "000PE027124",
-     "titre": "PORTRAIT D'HOMME",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "VECELLIO Tiziano (atelier)"
-    },
-    {
-     "code": "entourage_de",
-     "reference": "50350007955",
-     "titre": "Paysage avec un pont en bois",
-     "musee": "musée du Louvre",
-     "ville": "Paris",
-     "extrait": "VECELLIO Tiziano (entourage)"
-    },
-    {
-     "code": "suiveur_de",
-     "reference": "05620000355",
-     "titre": "Sainte Famille",
-     "musee": "musée des Augustins",
-     "ville": "Toulouse",
-     "extrait": "VECELLIO Tiziano (suiveur)"
     }
    ],
    "exemple_copie": {

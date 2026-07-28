@@ -1,0 +1,1649 @@
+{
+ "slug": "ingres",
+ "nom": "Ingres",
+ "doute": 203,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 193
+  },
+  {
+   "code": "point_interrogation",
+   "notices": 1
+  },
+  {
+   "code": "atelier_de",
+   "notices": 9
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "000PE001570",
+   "titre": "LA SOURCE",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "INGRES Jean Auguste Dominique (atelier)"
+  },
+  {
+   "reference": "000PE016750",
+   "titre": "PORTRAIT DE MARIE DE BEAUMONT",
+   "musee": "musée Cantini",
+   "ville": "Marseille",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070001452",
+   "titre": "Vierge à l'Enfant",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à à"
+  },
+  {
+   "reference": "06070001463",
+   "titre": "Etudes d'ailes",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "atelier_de",
+   "extrait": "INGRES Jean Auguste Dominique (atelier)"
+  },
+  {
+   "reference": "06070001464",
+   "titre": "Etude d'un cheval",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "atelier_de",
+   "extrait": "INGRES Jean Auguste Dominique (atelier)"
+  },
+  {
+   "reference": "06070001453",
+   "titre": "Têtes d'une mère et de deux enfants",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à à"
+  },
+  {
+   "reference": "06070001454",
+   "titre": "Portrait de Bindo Altoviti",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à à"
+  },
+  {
+   "reference": "06070001462",
+   "titre": "Vue de l'acropole d'Athènes",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "atelier_de",
+   "extrait": "INGRES Jean Auguste Dominique (atelier)"
+  },
+  {
+   "reference": "06070001455",
+   "titre": "Portrait de Raphaël",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à à"
+  },
+  {
+   "reference": "06070001460",
+   "titre": "Etude pour le Portrait de Madame Moitessier assise",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "atelier_de",
+   "extrait": "INGRES Jean Auguste Dominique (atelier)"
+  },
+  {
+   "reference": "06070002128",
+   "titre": "Vue de la Villa Médicis",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070001465",
+   "titre": "Etude d'arbres",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "atelier_de",
+   "extrait": "INGRES Jean Auguste Dominique (atelier)"
+  },
+  {
+   "reference": "06070001458",
+   "titre": "La Tribune des chantres de la chapelle Sixtine",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "atelier_de",
+   "extrait": "INGRES Jean Auguste Dominique (atelier)"
+  },
+  {
+   "reference": "06070001457",
+   "titre": "Investiture d'un préfet de Rome dans la chapelle Sixtine",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "atelier_de",
+   "extrait": "INGRES Jean Auguste Dominique (atelier)"
+  },
+  {
+   "reference": "06070001461",
+   "titre": "Groupe de femmes",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "atelier_de",
+   "extrait": "INGRES Jean Auguste Dominique (atelier)"
+  },
+  {
+   "reference": "50350022056",
+   "titre": "Femme nue couchée sur un rocher",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "50350015740",
+   "titre": "Messe pontificale à saint Pierre de Rome",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070003323",
+   "titre": "Apôtre n°2 et saint Matthieu",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "point_interrogation",
+   "extrait": "INGRES Jean Auguste Dominique (?)"
+  },
+  {
+   "reference": "06070009319",
+   "titre": "La Porte Capena",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009337",
+   "titre": "Les Eglises del Bambin Gesu et de Santa Pudenziana",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009441",
+   "titre": "Grande habitation parmi les arbres",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009305",
+   "titre": "Vue prise de la Piazza Barberini en direction de San Isidorio",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009450",
+   "titre": "Pluie sur la mer",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009323",
+   "titre": "Une porte romaine",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009410",
+   "titre": "Entrée d'un couvent",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009409",
+   "titre": "Maisons italiennes au bord d'une rue ; au verso : Intérieur d'église",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009445",
+   "titre": "Marine",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009356",
+   "titre": "Vue des environs de Tivoli",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009313",
+   "titre": "Santa Maria della Vittoria et le campanile de Santa Susanna",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009362",
+   "titre": "Maisons italiennes avec un campanile roman",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009427",
+   "titre": "Maison parmi les pins ; au verso : Main tenant un bâton",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009293",
+   "titre": "Vue avec Santa Francesca Romana",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009342",
+   "titre": "Chambre à coucher d'Ingres à la villa Médicis",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009338",
+   "titre": "Allée d'une villa romaine",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009440",
+   "titre": "Arcades supportées par des colonnes",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009328",
+   "titre": "Le Capitole",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009449",
+   "titre": "Etude de ciel ; au verso : Deux personnages et un branchage",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009443",
+   "titre": "Paysage au bord d'un lac",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009355",
+   "titre": "Panorama de Tivoli",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009434",
+   "titre": "Un couvent dans les bois",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009359",
+   "titre": "Panorama",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009336",
+   "titre": "Le Campanile et la façade de Santa Susanna",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009318",
+   "titre": "La Campagne romaine",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009425",
+   "titre": "Paysage de toits",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009428",
+   "titre": "Une église en partie cachée dans les arbres",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009306",
+   "titre": "Eglise de Sainte-Agnès-hors-les-murs",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009332",
+   "titre": "Le Palais Sacchetti",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009311",
+   "titre": "L'Escalier de Santa Maria in Aracoeli ; au verso : Paysage avec une tour",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009404",
+   "titre": "Choeur d'une église gothique ; au verso : Cavaliers dans une ville",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009451",
+   "titre": "Etude de vagues",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009442",
+   "titre": "Partie supérieure ovale d'un tableau",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009341",
+   "titre": "Ingres et sa femme visitant l'église San Cosimato",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009361",
+   "titre": "Le Temple de Vesta et le pont de San Rocco",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009307",
+   "titre": "Autel du Saint-Sacrement à St-Jean de Latran",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009304",
+   "titre": "Place Saint-Pierre",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009320",
+   "titre": "La Porte de Gabies",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009334",
+   "titre": "Santa Maria Maggiore",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009426",
+   "titre": "Croquis vague d'une maison avec un portique",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009444",
+   "titre": "Couloir au bout duquel on aperçoit un paysage",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009292",
+   "titre": "Le Palais des conservateurs au Capitole",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009430",
+   "titre": "Une cour",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009340",
+   "titre": "La Chambre d'Ingres au pavillon San Gaetano",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009329",
+   "titre": "Le Panthéon",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009314",
+   "titre": "Le Vatican et Saint-Pierre ; au verso : Italienne assise",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009295",
+   "titre": "Campanile de Santa Francesca Romana ; au verso : Des maisons vues au-delà d'une arcade",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009309",
+   "titre": "Casino de Raphaël à la Villa Borghèse ; Au verso : Un homme tenant une croix",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009360",
+   "titre": "Péristyle du temple de Vesta",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009294",
+   "titre": "Vue de la ville",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009312",
+   "titre": "La Coupole de Saint-Pierre ; au verso : Tombeau antique",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009357",
+   "titre": "Maisons médiévales",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009448",
+   "titre": "Etude de fleurs et de feuilles",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009316",
+   "titre": "Détail de la façade d'une église",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009438",
+   "titre": "Groupe de maisons",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009330",
+   "titre": "Vue du Latran",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009331",
+   "titre": "Vue prise du Capitole en direction du Forum",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009291",
+   "titre": "Fontaine dell'acqua felice",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009447",
+   "titre": "Nuages au-dessus d'une montagne",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009358",
+   "titre": "Panorama avec le temple de Vesta",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009317",
+   "titre": "La Campagne romaine ; au verso : Quelques arbres",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009327",
+   "titre": "La Fontaine de la Villa Médicis",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009446",
+   "titre": "Rivage marin",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009297",
+   "titre": "Santa Maria in Aracoeli",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009403",
+   "titre": "Paysage de collines",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009432",
+   "titre": "Des maisons parmi les arbres sur un promontoire",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009429",
+   "titre": "Vue d'une loggia",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009433",
+   "titre": "Partie d'une villa ; au verso : Paysage",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009324",
+   "titre": "Une porte romaine",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009343",
+   "titre": "Salle à manger d'Ingres à la villa Médicis",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009333",
+   "titre": "Une église avec un portique et une tour carrée",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009315",
+   "titre": "Villa Médicis ; au verso : Quelques maisons",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009437",
+   "titre": "Un jardin en Italie",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009326",
+   "titre": "Une porte romaine",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009321",
+   "titre": "La Porte Pinciana",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009308",
+   "titre": "Coupole de Santa Pudenziana",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009435",
+   "titre": "Vue d'une loggia dans un jardin ; au verso : Perroquet",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009436",
+   "titre": "Jardin avec une fontaine",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009290",
+   "titre": "Intérieur d'une basilique",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009405",
+   "titre": "Une fontaine au pied d'une colonne romaine",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009335",
+   "titre": "Vue partielle du casino d'une villa romaine",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009439",
+   "titre": "Un pont au-dessus d'une rivière",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009325",
+   "titre": "Une porte romaine",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009310",
+   "titre": "Vue de Sainte-Marie-Majeure",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009322",
+   "titre": "La Porte Salaria",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070009339",
+   "titre": "La Façade de la villa Médicis",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052567",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052257",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052394",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052079",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052118",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052131",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052062",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052245",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052472",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052557",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052297",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052491",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052225",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052239",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052070",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052253",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052468",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052563",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052104",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052072",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052474",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052516",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052561",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052139",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052414",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052215",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052287",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052076",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052211",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052375",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052377",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052094",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052068",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052261",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052084",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052078",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052221",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052143",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052100",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052475",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052088",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052056",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052048",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052470",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052213",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052478",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052054",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052541",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052480",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052086",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052135",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052133",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052543",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052237",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052483",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052379",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052277",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052141",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052145",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052112",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052393",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052412",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052255",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052398",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052223",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052066",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052396",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052074",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052504",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052539",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052247",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052410",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052251",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052106",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052502",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052110",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052114",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052064",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052249",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052120",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052129",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052127",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052137",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052259",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052233",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052383",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052219",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052406",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070043334",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052092",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052102",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052058",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070046416",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052082",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052096",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070052283",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070043338",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070043332",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  },
+  {
+   "reference": "06070043336",
+   "titre": null,
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-07-28T14:49:21+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

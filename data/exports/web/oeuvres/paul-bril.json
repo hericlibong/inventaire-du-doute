@@ -1,0 +1,213 @@
+{
+ "slug": "paul-bril",
+ "nom": "Paul Bril",
+ "doute": 22,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 7
+  },
+  {
+   "code": "point_interrogation",
+   "notices": 1
+  },
+  {
+   "code": "ecole_de",
+   "notices": 3
+  },
+  {
+   "code": "suiveur_de",
+   "notices": 1
+  },
+  {
+   "code": "maniere_de",
+   "notices": 7
+  },
+  {
+   "code": "genre_de",
+   "notices": 3
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "00000062914",
+   "titre": "LA VIERGE ET L'ENFANT DANS UN NUAGE",
+   "musee": "musée des beaux-arts",
+   "ville": "Quimper",
+   "code": "maniere_de",
+   "extrait": "BRIL Paul (manière de)"
+  },
+  {
+   "reference": "06380000486",
+   "titre": "Paysage avec Tobie et l'Ange",
+   "musee": "musée des Beaux-Arts",
+   "ville": "Valenciennes",
+   "code": "genre_de",
+   "extrait": "BRIL Paul (genre de)"
+  },
+  {
+   "reference": "50350500227",
+   "titre": "Quatre esquisses de personnages",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "BRIL Paul (manière de)"
+  },
+  {
+   "reference": "50350030449",
+   "titre": "Paysage avec une maison et une tour",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BRIL Paul (école)"
+  },
+  {
+   "reference": "50350105578",
+   "titre": "Paysage boisé avec un sentier et un ruisseau",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "BRIL Paul (manière de)"
+  },
+  {
+   "reference": "50350105582",
+   "titre": "Paysage avec une arche à gauche et un ruisseau",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "BRIL Paul (manière de)"
+  },
+  {
+   "reference": "50350105870",
+   "titre": "Paysage avec Pan et Syrinx",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BRIL Paul (école)"
+  },
+  {
+   "reference": "50350105583",
+   "titre": "Paysage avec un pont au-dessus d'une cascade",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "BRIL Paul (manière de)"
+  },
+  {
+   "reference": "50350109962",
+   "titre": "Rivière bordée à droite d'une falaise abrupte",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "BRIL Paul (manière de)"
+  },
+  {
+   "reference": "50350109957",
+   "titre": "Paysage vallonné, avec une route",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "BRIL Paul (manière de)"
+  },
+  {
+   "reference": "50350109961",
+   "titre": "Bâtiments sur des rochers, surplombant une rivière",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BRIL Paul (attribué à)"
+  },
+  {
+   "reference": "50350109966",
+   "titre": "Bâtiments sur une colline boisée dominant une plaine",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BRIL Paul (attribué à)"
+  },
+  {
+   "reference": "50350109967",
+   "titre": "Navires en perdition en pleine tempête",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BRIL Paul (attribué à)"
+  },
+  {
+   "reference": "50350109971",
+   "titre": "Sentier de montagne, traversant un étroit torrent",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BRIL Paul (attribué à)"
+  },
+  {
+   "reference": "50350109972",
+   "titre": "Ruines d'une tour, près d'une ville",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BRIL Paul (attribué à)"
+  },
+  {
+   "reference": "M0347000650",
+   "titre": "Paysage",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Dole",
+   "code": "attribue",
+   "extrait": "BRIL Paul (attribué à)"
+  },
+  {
+   "reference": "M0347000651",
+   "titre": "Paysage",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Dole",
+   "code": "point_interrogation",
+   "extrait": "BRIL Paul (?)"
+  },
+  {
+   "reference": "M0347000652",
+   "titre": "Paysage avec une rivière",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Dole",
+   "code": "genre_de",
+   "extrait": "BRIL Paul  (genre de)"
+  },
+  {
+   "reference": "M0347000653",
+   "titre": "Paysage au ciel tourmenté",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Dole",
+   "code": "genre_de",
+   "extrait": "BRIL Paul (genre de)"
+  },
+  {
+   "reference": "02110003533",
+   "titre": "Paysage",
+   "musee": "musée des beaux-arts",
+   "ville": "Rennes",
+   "code": "attribue",
+   "extrait": "BRIL Paul (attribué à)"
+  },
+  {
+   "reference": "05620001288",
+   "titre": "Paysage",
+   "musee": "musée des Augustins",
+   "ville": "Toulouse",
+   "code": "ecole_de",
+   "extrait": "BRIL Paul (école)"
+  },
+  {
+   "reference": "50110001601",
+   "titre": "Paysage avec cours d'eau et figures diverses",
+   "musee": "musée national Magnin",
+   "ville": "Dijon",
+   "code": "suiveur_de",
+   "extrait": "BRIL Paul (peintre, suiveur)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-07-28T14:49:21+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

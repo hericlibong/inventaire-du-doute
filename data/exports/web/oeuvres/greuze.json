@@ -1,0 +1,425 @@
+{
+ "slug": "greuze",
+ "nom": "Greuze",
+ "doute": 49,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 29
+  },
+  {
+   "code": "point_interrogation",
+   "notices": 3
+  },
+  {
+   "code": "ecole_de",
+   "notices": 7
+  },
+  {
+   "code": "maniere_de",
+   "notices": 7
+  },
+  {
+   "code": "genre_de",
+   "notices": 3
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "000PE008279",
+   "titre": "BERTRAND BARERE DE VIEUZAC (1755-1841)",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "code": "ecole_de",
+   "extrait": "GREUZE Jean-Baptiste (école)"
+  },
+  {
+   "reference": "000PE011085",
+   "titre": "MARIE-JEAN-ANTOINE-NICOLAS DE CARITAT, MARQUIS DE CONDORCET (1743-1794)",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "code": "ecole_de",
+   "extrait": "GREUZE Jean-Baptiste (école)"
+  },
+  {
+   "reference": "000PE014011",
+   "titre": "UNE LISEUSE",
+   "musee": "musée des beaux-arts",
+   "ville": "Marseille",
+   "code": "attribue",
+   "extrait": "GREUZE Jean-Baptiste (attribué à)"
+  },
+  {
+   "reference": "000PE016186",
+   "titre": "LA MENAGERE SURPRISE",
+   "musee": "musée Grobet-Labadié",
+   "ville": "Marseille",
+   "code": "attribue",
+   "extrait": "GREUZE Jean-Baptiste (attribué)"
+  },
+  {
+   "reference": "000PE029512",
+   "titre": "PORTRAIT DE FEMME AGEE",
+   "musee": "musée des Beaux-Arts",
+   "ville": "Beaune",
+   "code": "attribue",
+   "extrait": "GREUZE Jean-Baptiste (attribué)"
+  },
+  {
+   "reference": "000PE033200",
+   "titre": "TETE DE BACCHANTE",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "ecole_de",
+   "extrait": "GREUZE Jean-Baptiste (école)"
+  },
+  {
+   "reference": "00000074353",
+   "titre": "PORTRAIT D'ENFANT",
+   "musee": "musée Goya",
+   "ville": "Castres",
+   "code": "point_interrogation",
+   "extrait": "GREUZE Jean-Baptiste (école, ?)"
+  },
+  {
+   "reference": "00000074354",
+   "titre": "TETE DE VIEILLARD",
+   "musee": "musée Goya",
+   "ville": "Castres",
+   "code": "point_interrogation",
+   "extrait": "GREUZE Jean-Baptiste (école, ?)"
+  },
+  {
+   "reference": "00000075396",
+   "titre": "TETE DE JEUNE FILLE",
+   "musee": "musée des beaux-arts",
+   "ville": "Rennes",
+   "code": "attribue",
+   "extrait": "GREUZE Jean-Baptiste (attribué)"
+  },
+  {
+   "reference": "00000075395",
+   "titre": "JEUNE FILLE AU RUBAN BLEU",
+   "musee": "musée des beaux-arts",
+   "ville": "Rennes",
+   "code": "attribue",
+   "extrait": "GREUZE Jean-Baptiste (attribué)"
+  },
+  {
+   "reference": "00000093370",
+   "titre": "TETE DE JEUNE FILLE",
+   "musee": "musée des beaux-arts",
+   "ville": "Orléans",
+   "code": "genre_de",
+   "extrait": "Greuze Jean-Baptiste (1725-1805) (genre de)"
+  },
+  {
+   "reference": "06380000157",
+   "titre": "Portrait de Jacques François Momal",
+   "musee": "musée des Beaux-Arts",
+   "ville": "Valenciennes",
+   "code": "attribue",
+   "extrait": "GREUZE Jean-Baptiste (attribué)"
+  },
+  {
+   "reference": "01810000044",
+   "titre": "Portrait du Chanoine Piot",
+   "musee": "musée Greuze - hôtel-Dieu",
+   "ville": "Tournus",
+   "code": "attribue",
+   "extrait": "GREUZE Jean-Baptiste (attribué)"
+  },
+  {
+   "reference": "01810000043",
+   "titre": "Portrait de Madame Abraham Piot ; Portrait de femme (autre titre)",
+   "musee": "musée Greuze - hôtel-Dieu",
+   "ville": "Tournus",
+   "code": "attribue",
+   "extrait": "GREUZE Jean-Baptiste (attribué)"
+  },
+  {
+   "reference": "50350212824",
+   "titre": "Etude d'un enfant couché et endormi sur un chien",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "GREUZE Jean-Baptiste (attribué à)"
+  },
+  {
+   "reference": "50350029132",
+   "titre": "Main tenant un objet",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "GREUZE Jean-Baptiste (manière de)"
+  },
+  {
+   "reference": "50350013458",
+   "titre": "Tête de jeune homme de profil, tournée à gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "GREUZE Jean-Baptiste (école)"
+  },
+  {
+   "reference": "50350029128",
+   "titre": "Etude de main",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "GREUZE Jean-Baptiste (manière de)"
+  },
+  {
+   "reference": "50350031531",
+   "titre": "Petit garçon en buste, la tête coiffée d'un chapeau",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "GREUZE Jean-Baptiste (école)"
+  },
+  {
+   "reference": "50350212820",
+   "titre": "Tête d'homme, coiffé d'une perruque, de trois quarts vers la droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "GREUZE Jean-Baptiste (attribué à)"
+  },
+  {
+   "reference": "50350212822",
+   "titre": "Un jeune enfant assis, en chemise",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "GREUZE Jean-Baptiste (attribué à)"
+  },
+  {
+   "reference": "50350212819",
+   "titre": "Tête de femme, de trois quarts vers la gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "GREUZE Jean-Baptiste (attribué à)"
+  },
+  {
+   "reference": "50350029129",
+   "titre": "Etude de main gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "GREUZE Jean-Baptiste (manière de)"
+  },
+  {
+   "reference": "50350029131",
+   "titre": "Main tenant une étoffe",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "GREUZE Jean-Baptiste (manière de)"
+  },
+  {
+   "reference": "50350212826",
+   "titre": "Tête de vieillard, de trois quarts, tournée vers la droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "GREUZE Jean-Baptiste (attribué à)"
+  },
+  {
+   "reference": "50350029127",
+   "titre": "Etude de main",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "GREUZE Jean-Baptiste (manière de)"
+  },
+  {
+   "reference": "50350212821",
+   "titre": "Trois têtes : les deux de gauche sont vues de trois quarts",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "GREUZE Jean-Baptiste (attribué à)"
+  },
+  {
+   "reference": "50350228316",
+   "titre": "Scène d'intérieur, avec des personnages attablés",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "GREUZE Jean-Baptiste (attribué à)"
+  },
+  {
+   "reference": "50350212823",
+   "titre": "La petite paysanne",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "GREUZE Jean-Baptiste (attribué à)"
+  },
+  {
+   "reference": "50350212827",
+   "titre": "Tête de femme, de profil vers la gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "GREUZE Jean-Baptiste (attribué à)"
+  },
+  {
+   "reference": "50350029137",
+   "titre": "Tête de jeune fille",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "GREUZE Jean-Baptiste (manière de)"
+  },
+  {
+   "reference": "50350212825",
+   "titre": "Tête de vieillard, de profil vers la droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "GREUZE Jean-Baptiste (attribué à)"
+  },
+  {
+   "reference": "50350030818",
+   "titre": "Femme nue, debout, de trois quarts à droite, présentant ses mains ouvertes",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "GREUZE Jean-Baptiste (attribué à)"
+  },
+  {
+   "reference": "50350030817",
+   "titre": "Femme nue, debout, penchée, de trois quarts vers la gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "GREUZE Jean-Baptiste (attribué à)"
+  },
+  {
+   "reference": "50350145323",
+   "titre": "Etudes de têtes d'hommes et de femmes, d'après la colonne trajanne",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "GREUZE Jean-Baptiste (attribué à)"
+  },
+  {
+   "reference": "10480006080",
+   "titre": "Tête d'enfant",
+   "musee": "musée des beaux-arts",
+   "ville": "Chambéry",
+   "code": "ecole_de",
+   "extrait": "Greuze Jean-Baptiste (1725-1805) (école)"
+  },
+  {
+   "reference": "000DE006760",
+   "titre": "JEUNE HOMME DESSINANT SUR SES GENOUX",
+   "musee": "musée Grobet-Labadié",
+   "ville": "Marseille",
+   "code": "attribue",
+   "extrait": "GREUZE Jean-Baptiste (attribué)"
+  },
+  {
+   "reference": "000DE006757",
+   "titre": "LA NOURRICE",
+   "musee": "musée des beaux-arts",
+   "ville": "Marseille",
+   "code": "attribue",
+   "extrait": "GREUZE Jean-Baptiste (attribué à)"
+  },
+  {
+   "reference": "50110000564",
+   "titre": "La Laitière",
+   "musee": "musée national Magnin",
+   "ville": "Dijon",
+   "code": "genre_de",
+   "extrait": "GREUZE Jean-Baptiste (peintre, genre de)"
+  },
+  {
+   "reference": "50110000416",
+   "titre": "Tête de jeune femme blonde, les yeux levés au ciel",
+   "musee": "musée national Magnin",
+   "ville": "Dijon",
+   "code": "genre_de",
+   "extrait": "GREUZE Jean-Baptiste (peintre, genre de)"
+  },
+  {
+   "reference": "01610001204",
+   "titre": "Portrait de Johann-Georg Wille ; Portrait d'homme (autre titre)",
+   "musee": "musée Rolin",
+   "ville": "Autun",
+   "code": "attribue",
+   "extrait": "GREUZE Jean-Baptiste (attribué à)"
+  },
+  {
+   "reference": "08030002721",
+   "titre": "La boudeuse",
+   "musee": "musée Antoine Vivenel",
+   "ville": "Compiègne",
+   "code": "point_interrogation",
+   "extrait": "GREUZE Jean-Baptiste (école, ?)"
+  },
+  {
+   "reference": "07760001112",
+   "titre": "Buste de femme de dos",
+   "musee": "musée municipal",
+   "ville": "La Roche-sur-Yon",
+   "code": "attribue",
+   "extrait": "GREUZE Jean-Baptiste (attribué à, dessinateur)"
+  },
+  {
+   "reference": "M0332000543",
+   "titre": "Portrait d'homme barbu",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Greuze Jean-Baptiste (1725-1805) (attribué à)"
+  },
+  {
+   "reference": "M0332011679",
+   "titre": "Etude de tête de femme de profil",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Greuze Jean-Baptiste (1725-1805) (attribué à)"
+  },
+  {
+   "reference": "M0332011678",
+   "titre": "Etude de deux chats",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Greuze Jean-Baptiste (1725-1805) (attribué à)"
+  },
+  {
+   "reference": "M0332006709",
+   "titre": "Tête de jeune fille",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "ecole_de",
+   "extrait": "Greuze Jean-Baptiste (1725-1805) (école)"
+  },
+  {
+   "reference": "01710114791",
+   "titre": null,
+   "musee": "musée municipal",
+   "ville": "Louhans-Châteaurenaud",
+   "code": "attribue",
+   "extrait": "Greuze Jean-Baptiste (1725-1805) (attribué à)"
+  },
+  {
+   "reference": "M0536030527",
+   "titre": "Portrait d'une paysanne dormant",
+   "musee": "musée départemental d'art ancien et contemporain",
+   "ville": "Epinal",
+   "code": "maniere_de",
+   "extrait": "Greuze Jean-Baptiste (1725-1805) (manière de)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-07-28T14:49:21+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

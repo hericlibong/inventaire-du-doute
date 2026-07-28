@@ -1,0 +1,193 @@
+{
+ "slug": "le-perugin",
+ "nom": "Le Pérugin",
+ "doute": 21,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 2
+  },
+  {
+   "code": "ecole_de",
+   "notices": 14
+  },
+  {
+   "code": "atelier_de",
+   "notices": 5
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "00000107026",
+   "titre": "Un archer et un arbalétrier",
+   "musee": "musée Condé",
+   "ville": "Chantilly",
+   "code": "atelier_de",
+   "extrait": "VANNUCCI Pietro (atelier)"
+  },
+  {
+   "reference": "00000107027",
+   "titre": "Pythagore",
+   "musee": "musée Condé",
+   "ville": "Chantilly",
+   "code": "atelier_de",
+   "extrait": "LE PERUGIN (dit, atelier)"
+  },
+  {
+   "reference": "50350228334",
+   "titre": "Saint Marc debout",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VANNUCCI Pietro (école)"
+  },
+  {
+   "reference": "50350112025",
+   "titre": "Trois figures de femmes, debout",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VANNUCCI Pietro (école)"
+  },
+  {
+   "reference": "50350500780",
+   "titre": "Feuille d'études de figures, et de deux petites croix",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "VANNUCCI Pietro (atelier)"
+  },
+  {
+   "reference": "50350101616",
+   "titre": "Groupe de six figures, regardant vers la droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VANNUCCI Pietro (école)"
+  },
+  {
+   "reference": "50350101636",
+   "titre": "jeune homme, debout, drapé, la main droite sur les hanches",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VANNUCCI Pietro (école)"
+  },
+  {
+   "reference": "50350101615",
+   "titre": "L'Ascension du Christ",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VANNUCCI Pietro (école)"
+  },
+  {
+   "reference": "50350101629",
+   "titre": "Dieu bénissant, tenant le Globe, entouré d'anges",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VANNUCCI Pietro (école)"
+  },
+  {
+   "reference": "50350003404",
+   "titre": "Tête de femme, vue de trois quarts",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "VANNUCCI Pietro (atelier)"
+  },
+  {
+   "reference": "50350003555",
+   "titre": "Un ange tenant un long lacet qui l'enserre et le fait se plier en deux",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VANNUCCI Pietro (école)"
+  },
+  {
+   "reference": "50350101632",
+   "titre": "Sainte Famille avec saint Jean-Baptiste et saint Jérôme",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VANNUCCI Pietro (école)"
+  },
+  {
+   "reference": "50350101622",
+   "titre": "L'ange de l'Annonciation",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VANNUCCI Pietro (école)"
+  },
+  {
+   "reference": "50350112026",
+   "titre": "Jésus et saint Jean, enfants",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "VANNUCCI Pietro (atelier)"
+  },
+  {
+   "reference": "50350003556",
+   "titre": "Un ange les ailes déployées, tirant sur une fine corde",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VANNUCCI Pietro (école)"
+  },
+  {
+   "reference": "50350101625",
+   "titre": "Figure de Vierge agenouillée, les mains jointes",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VANNUCCI Pietro (école)"
+  },
+  {
+   "reference": "50350500781",
+   "titre": "Etudes de muscles (?) ou d'un drapé (?)",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VANNUCCI Pietro (école)"
+  },
+  {
+   "reference": "50350228343",
+   "titre": "Etude d'ange priant et marchant vers la gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VANNUCCI Pietro (école)"
+  },
+  {
+   "reference": "M0289002516",
+   "titre": "Evêque drapé avec un aigle à ses pieds (titre factice)",
+   "musee": "musée municipal",
+   "ville": "Pithiviers",
+   "code": "attribue",
+   "extrait": "VANNUCCI Pietro (attribué à)"
+  },
+  {
+   "reference": "01610001107",
+   "titre": "Vierge à l'Enfant",
+   "musee": "musée Rolin",
+   "ville": "Autun",
+   "code": "ecole_de",
+   "extrait": "LE PERUGIN (école, dit)"
+  },
+  {
+   "reference": "06570008170",
+   "titre": "Le Christ au tombeau ; Déploration sur le corps du Christ",
+   "musee": "musée des beaux-arts",
+   "ville": "Caen",
+   "code": "attribue",
+   "extrait": "VANNUCCI Pietro (attribué, école de)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-07-28T14:49:21+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

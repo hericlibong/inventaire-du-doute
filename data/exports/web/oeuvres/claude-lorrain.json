@@ -1,0 +1,181 @@
+{
+ "slug": "claude-lorrain",
+ "nom": "Claude Lorrain",
+ "doute": 20,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 17
+  },
+  {
+   "code": "ecole_de",
+   "notices": 3
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "000PE001257",
+   "titre": "PAYSAGE",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Lorrain Claude (1600-1682) (attribué à)"
+  },
+  {
+   "reference": "000PE013398",
+   "titre": "Paysage au fleuve",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Lorrain Claude (1600-1682) (attribué à)"
+  },
+  {
+   "reference": "000PE026586",
+   "titre": "TOBIE ET L'ANGE",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Lorrain Claude (1600-1682) (école)"
+  },
+  {
+   "reference": "50510010862",
+   "titre": "Etude d'arbres",
+   "musee": "musée de l'Ecole nationale supérieure des beaux-arts",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Lorrain Claude (1600-1682) (attribué à)"
+  },
+  {
+   "reference": "50350030729",
+   "titre": "Vue d'une grotte",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Lorrain Claude (1600-1682) (attribué à)"
+  },
+  {
+   "reference": "50350030727",
+   "titre": "Arc de Janus, à Rome",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Lorrain Claude (1600-1682) (attribué à)"
+  },
+  {
+   "reference": "50350212463",
+   "titre": "Un paysage avec une ville et des personnages dans des ruines",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Lorrain Claude (1600-1682) (attribué à)"
+  },
+  {
+   "reference": "50350030731",
+   "titre": "Edifice antique ruiné",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Lorrain Claude (1600-1682) (attribué à)"
+  },
+  {
+   "reference": "50350030728",
+   "titre": "Carrières",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Lorrain Claude (1600-1682) (attribué à)"
+  },
+  {
+   "reference": "50350030926",
+   "titre": "Paysage avec une construction fortifiée au premier plan",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Lorrain Claude (1600-1682) (attribué à)"
+  },
+  {
+   "reference": "50350030733",
+   "titre": "Paysage avec pin parasol",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Lorrain Claude (1600-1682) (attribué à)"
+  },
+  {
+   "reference": "50350212467",
+   "titre": "Paysage avec terrasse au premier plan et colline au fond",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Lorrain Claude (1600-1682) (attribué à)"
+  },
+  {
+   "reference": "50350212466",
+   "titre": "Paysage avec une habitation au bord d'une rivière",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Lorrain Claude (1600-1682) (attribué à)"
+  },
+  {
+   "reference": "50350212464",
+   "titre": "Etude d'arbres et de paysage avec deux hommes debout",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Lorrain Claude (1600-1682) (attribué à)"
+  },
+  {
+   "reference": "50350030730",
+   "titre": "Ruines antiques, et bouquet d'arbres avec figures",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Lorrain Claude (1600-1682) (attribué à)"
+  },
+  {
+   "reference": "50350030732",
+   "titre": "Ruines d'un édifice antique à portique",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Lorrain Claude (1600-1682) (attribué à)"
+  },
+  {
+   "reference": "50350212468",
+   "titre": "Etude d'un rocher couvert d'arbustes et de feuilles",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Lorrain Claude (1600-1682) (attribué à)"
+  },
+  {
+   "reference": "00650004285",
+   "titre": "Paysage",
+   "musee": "musée des beaux-arts",
+   "ville": "Bordeaux",
+   "code": "ecole_de",
+   "extrait": "Lorrain Claude (1600-1682) (école)"
+  },
+  {
+   "reference": "07120002024",
+   "titre": "Marine",
+   "musee": "Château-musée",
+   "ville": "Dieppe",
+   "code": "attribue",
+   "extrait": "Lorrain Claude (1600-1682) (attribué à)"
+  },
+  {
+   "reference": "01500000075",
+   "titre": "Marine : vue d'un port",
+   "musee": "musée d'Art et d'Histoire Romain Rolland",
+   "ville": "Clamecy",
+   "code": "ecole_de",
+   "extrait": "Lorrain Claude (1600-1682)  (école)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-07-28T14:49:21+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

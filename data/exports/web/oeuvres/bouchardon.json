@@ -1,0 +1,713 @@
+{
+ "slug": "bouchardon",
+ "nom": "Bouchardon",
+ "doute": 86,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 52
+  },
+  {
+   "code": "point_interrogation",
+   "notices": 1
+  },
+  {
+   "code": "ecole_de",
+   "notices": 33
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "00000077096",
+   "titre": "La Madone aux pèlerins ; L'adoration des Bergers (titre ancien)",
+   "musee": "musée municipal",
+   "ville": "La Roche-sur-Yon",
+   "code": "attribue",
+   "extrait": "BOUCHARDON Edme (attribué)"
+  },
+  {
+   "reference": "000DE006830",
+   "titre": "PROJET DE MEDAILLE EN MEMOIRE DE LA CESSATION DE LA PESTE A MARSEILLE",
+   "musee": "musée des beaux-arts",
+   "ville": "Marseille",
+   "code": "attribue",
+   "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
+  },
+  {
+   "reference": "50350014213",
+   "titre": "Tête d'homme, tournée vers la droite, d'après l'antique",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
+  },
+  {
+   "reference": "50350010674",
+   "titre": "Elévation du piédestal de la statue équestre de Louis XIII",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BOUCHARDON Edme (école)"
+  },
+  {
+   "reference": "50350010718",
+   "titre": "Tête de cheval écorché, de face",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BOUCHARDON Edme (école)"
+  },
+  {
+   "reference": "50350010666",
+   "titre": "Projet de fontaine avec trois dauphins portant un triton",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
+  },
+  {
+   "reference": "50350010728",
+   "titre": "Tête de cheval écorché, de face, avec indication du nom des muscles",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BOUCHARDON Edme (école)"
+  },
+  {
+   "reference": "50350010656",
+   "titre": "Etude pour une Vierge à l'Enfant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
+  },
+  {
+   "reference": "50350010675",
+   "titre": "Elévation de la base de la statue de Louis XIII",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BOUCHARDON Edme (école)"
+  },
+  {
+   "reference": "50350010720",
+   "titre": "Deux études de jambe gauche de cheval écorché",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BOUCHARDON Edme (école)"
+  },
+  {
+   "reference": "50350010652",
+   "titre": "Projet de décoration d'une stèle avec draperie, sablier, torche et couronne",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
+  },
+  {
+   "reference": "50350010732",
+   "titre": "Deux études de patte et cuisse droite d'un cheval écorché",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BOUCHARDON Edme (école)"
+  },
+  {
+   "reference": "50350010721",
+   "titre": "Deux études de jambe gauche de cheval écorché",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BOUCHARDON Edme (école)"
+  },
+  {
+   "reference": "50350010663",
+   "titre": "L'Age d'or",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
+  },
+  {
+   "reference": "50350010650",
+   "titre": "Etudes d'une tête de lion",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
+  },
+  {
+   "reference": "50350010670",
+   "titre": "Tête de jeune femme, coiffée d'un foulard",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
+  },
+  {
+   "reference": "50350010664",
+   "titre": "Scène de sacrifice antique avec un prêtre recevant une corbeille de fruits",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
+  },
+  {
+   "reference": "50350010733",
+   "titre": "Deux études de jambes gauche d'un cheval écorché, et indications des muscles",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BOUCHARDON Edme (école)"
+  },
+  {
+   "reference": "50350010657",
+   "titre": "Etude pour une Vierge à l'Enfant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
+  },
+  {
+   "reference": "50350010668",
+   "titre": "Visage d'enfant, baillant ou pleurant, vu de trois quarts",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
+  },
+  {
+   "reference": "50350010719",
+   "titre": "Tête de cheval écorché, de face",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BOUCHARDON Edme (école)"
+  },
+  {
+   "reference": "50350010667",
+   "titre": "Etude d'une figure de femme drapée dans un grand manteau",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
+  },
+  {
+   "reference": "50350010658",
+   "titre": "Etude pour une Vierge à l'Enfant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
+  },
+  {
+   "reference": "50350010710",
+   "titre": "Cheval debout, écorché, de dos",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BOUCHARDON Edme (école)"
+  },
+  {
+   "reference": "50350010659",
+   "titre": "Etude pour une Vierge à l'Enfant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
+  },
+  {
+   "reference": "50350010673",
+   "titre": "Elévation et plan de la base de la statue de Henri IV",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BOUCHARDON Edme (école)"
+  },
+  {
+   "reference": "50350014092",
+   "titre": "Jeune homme déguisé en Turc, marchant vers la gauche, une épée sur l'épaule",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
+  },
+  {
+   "reference": "50350010653",
+   "titre": "La Renommée tenant un cartel et une trompette",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
+  },
+  {
+   "reference": "50350014070",
+   "titre": "Saint Jean l'Evangéliste devant un autel",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
+  },
+  {
+   "reference": "50350013982",
+   "titre": "Homme vêtu d'un manteau, coiffé d'un bonnet, assis",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
+  },
+  {
+   "reference": "50350010654",
+   "titre": "Figure de Neptune debout sur les flots",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
+  },
+  {
+   "reference": "50350014091",
+   "titre": "Figure de fantaisie : homme drapé, coiffé d'un turban, debout",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
+  },
+  {
+   "reference": "50350014101",
+   "titre": "Jeune femme nue, debout, les jambes croisées",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
+  },
+  {
+   "reference": "50350014090",
+   "titre": "Un homme déguisé, assis, la tête tournée à gauche et s'appuyant sur un bâton",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
+  },
+  {
+   "reference": "50350014071",
+   "titre": "Saint Pierre debout, montrant un livre",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
+  },
+  {
+   "reference": "50350010655",
+   "titre": "Navire battu par la tempête et les matelots jetant des marchandises à la mer",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
+  },
+  {
+   "reference": "50350014105",
+   "titre": "Jeune homme à genoux, la tête en avant, les mains derrière le dos",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
+  },
+  {
+   "reference": "50350010660",
+   "titre": "Deux nymphes nues soutenant un vase orné de fleurs",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
+  },
+  {
+   "reference": "50350014094",
+   "titre": "Homme, drapé, coiffé d'un chapeau à plume",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
+  },
+  {
+   "reference": "50350014086",
+   "titre": "Figure de fantaisie : homme drapé, coiffé d'un bonnet à plume, debout",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
+  },
+  {
+   "reference": "50350014084",
+   "titre": "Figure de fantaisie : homme drapé, coiffé d'un turban, debout",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
+  },
+  {
+   "reference": "50350014061",
+   "titre": "La Vierge à genoux sur des nuages",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
+  },
+  {
+   "reference": "50350013983",
+   "titre": "Figure de fantaisie : Homme vêtu d'un manteau, coiffé d'un turban, assis",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
+  },
+  {
+   "reference": "50350014093",
+   "titre": "Figure de fantaisie : homme drapé coiffé d'un bonnet, assis dans un fauteuil",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
+  },
+  {
+   "reference": "50350010661",
+   "titre": "Homme nu étendu à terre",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
+  },
+  {
+   "reference": "50350014104",
+   "titre": "Deux corps étendus, disposés en diagonales l'un sur l'autre",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
+  },
+  {
+   "reference": "50350014102",
+   "titre": "Jeune femme nue, allongée, tournée vers la droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
+  },
+  {
+   "reference": "50350014211",
+   "titre": "Tête de petite fille voilée, vue de trois quarts vers la droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
+  },
+  {
+   "reference": "50350014076",
+   "titre": "Monument funéraire : femme écrivant une épitaphe",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
+  },
+  {
+   "reference": "50350014098",
+   "titre": "Un jeune homme assis sur un rocher, tenant son pied droit",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
+  },
+  {
+   "reference": "50350014069",
+   "titre": "Saint Simon",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
+  },
+  {
+   "reference": "50350014067",
+   "titre": "Saint Mathias tenant une hallebarde",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
+  },
+  {
+   "reference": "50350014072",
+   "titre": "Saint Paul",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
+  },
+  {
+   "reference": "50350014066",
+   "titre": "Saint Etienne",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
+  },
+  {
+   "reference": "50350014065",
+   "titre": "Saint Barthélémy",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
+  },
+  {
+   "reference": "50350014064",
+   "titre": "Saint Pierre",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
+  },
+  {
+   "reference": "50350014068",
+   "titre": "Saint Matthieu tenant un livre, le pied posé sur un sac d'argent",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
+  },
+  {
+   "reference": "50350014062",
+   "titre": "Deux anges dans les airs, portant une croix",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
+  },
+  {
+   "reference": "50350014073",
+   "titre": "Saint Jacques le Majeur (?)",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
+  },
+  {
+   "reference": "50350010715",
+   "titre": "Deux jambes de derrière d'un cheval",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BOUCHARDON Edme (école)"
+  },
+  {
+   "reference": "50350010669",
+   "titre": "Sujet allégorique représentant la réunion d'un fleuve et d'une rivière",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
+  },
+  {
+   "reference": "50350010729",
+   "titre": "La tête et le poitrail d'un cheval avec indication de quelques muscles",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BOUCHARDON Edme (école)"
+  },
+  {
+   "reference": "50350010735",
+   "titre": "Cheval debout, tourné à gauche, la tête vue de face",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BOUCHARDON Edme (école)"
+  },
+  {
+   "reference": "50350010716",
+   "titre": "La tête et le poitrail d'un cheval tourné à gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BOUCHARDON Edme (école)"
+  },
+  {
+   "reference": "50350010740",
+   "titre": "Cheval écorché debout, tourné à gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BOUCHARDON Edme (école)"
+  },
+  {
+   "reference": "50350010739",
+   "titre": "Squelette de cheval debout tourné à gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BOUCHARDON Edme (école)"
+  },
+  {
+   "reference": "50350010736",
+   "titre": "Cheval debout, écorché, tourné à droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BOUCHARDON Edme (école)"
+  },
+  {
+   "reference": "50350010737",
+   "titre": "Cheval debout, écorché tourné à gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BOUCHARDON Edme (école)"
+  },
+  {
+   "reference": "50350010731",
+   "titre": "Jambes de devant d'un cheval écorché",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BOUCHARDON Edme (école)"
+  },
+  {
+   "reference": "50350010722",
+   "titre": "Deux jambes de cheval",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BOUCHARDON Edme (école)"
+  },
+  {
+   "reference": "50350010713",
+   "titre": "Tête de cheval écorché et quelques détails",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BOUCHARDON Edme (école)"
+  },
+  {
+   "reference": "50350010738",
+   "titre": "La tête et le poitrail d'un cheval tourné à gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BOUCHARDON Edme (école)"
+  },
+  {
+   "reference": "50350010730",
+   "titre": "Jambes de devant d'un cheval",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BOUCHARDON Edme (école)"
+  },
+  {
+   "reference": "50350010662",
+   "titre": "Académie d'homme nu, à demi allongé",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
+  },
+  {
+   "reference": "50350010717",
+   "titre": "La tête et le poitrail d'un cheval tourné à gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BOUCHARDON Edme (école)"
+  },
+  {
+   "reference": "50350010724",
+   "titre": "Cheval debout, tourné vers la droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BOUCHARDON Edme (école)"
+  },
+  {
+   "reference": "50350010714",
+   "titre": "Deux jambes de derrière d'un cheval",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BOUCHARDON Edme (école)"
+  },
+  {
+   "reference": "50350010734",
+   "titre": "Cheval debout, vu de trois quarts et de dos",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BOUCHARDON Edme (école)"
+  },
+  {
+   "reference": "50350010676",
+   "titre": "Plan de la base de la statue de Louis XIV, place Vendôme",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BOUCHARDON Edme (école)"
+  },
+  {
+   "reference": "50350010665",
+   "titre": "Agar consolée par l'ange",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
+  },
+  {
+   "reference": "50350010725",
+   "titre": "Cheval debout, tourné à gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BOUCHARDON Edme (école)"
+  },
+  {
+   "reference": "50350010723",
+   "titre": "Deux jambes de cheval",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BOUCHARDON Edme (école)"
+  },
+  {
+   "reference": "50350010726",
+   "titre": "Les jambes de devant d'un cheval",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BOUCHARDON Edme (école)"
+  },
+  {
+   "reference": "50350010727",
+   "titre": "Les jambes de devant d'un cheval",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BOUCHARDON Edme (école)"
+  },
+  {
+   "reference": "M0491000982",
+   "titre": "Enfant",
+   "musee": "musée Hyacinthe Rigaud",
+   "ville": "Perpignan",
+   "code": "point_interrogation",
+   "extrait": "BOUCHARDON Edme (?)"
+  },
+  {
+   "reference": "07760000778",
+   "titre": "Trois Evêques",
+   "musee": "musée municipal",
+   "ville": "La Roche-sur-Yon",
+   "code": "attribue",
+   "extrait": "Bouchardon Edmé (1698-1762) (attribué à)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-07-28T14:49:21+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

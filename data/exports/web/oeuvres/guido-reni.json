@@ -1,0 +1,517 @@
+{
+ "slug": "guido-reni",
+ "nom": "Guido Reni",
+ "doute": 60,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 22
+  },
+  {
+   "code": "point_interrogation",
+   "notices": 1
+  },
+  {
+   "code": "ecole_de",
+   "notices": 28
+  },
+  {
+   "code": "atelier_de",
+   "notices": 3
+  },
+  {
+   "code": "maniere_de",
+   "notices": 2
+  },
+  {
+   "code": "genre_de",
+   "notices": 4
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "000PE019530",
+   "titre": "SAINT SEBASTIEN",
+   "musee": "musée des Beaux-Arts",
+   "ville": "Lille",
+   "code": "attribue",
+   "extrait": "RENI Guido (attribué)"
+  },
+  {
+   "reference": "000PE021940",
+   "titre": "LA VIERGE DE DOULEUR",
+   "musee": "musée des beaux-arts",
+   "ville": "Bordeaux",
+   "code": "ecole_de",
+   "extrait": "RENI Guido (école)"
+  },
+  {
+   "reference": "000PE026177",
+   "titre": "LE RAVISSEMENT DE LA MADELEINE",
+   "musee": "musée des beaux-arts",
+   "ville": "Bordeaux",
+   "code": "point_interrogation",
+   "extrait": "RENI Guido (?)"
+  },
+  {
+   "reference": "000PE031402",
+   "titre": "ECCE HOMO",
+   "musee": "musée Crozatier",
+   "ville": "Le Puy-en-Velay",
+   "code": "attribue",
+   "extrait": "RENI Guido (attribué)"
+  },
+  {
+   "reference": "00000103010",
+   "titre": "JUDITH TENANT LA TETE D'HOLOPHERNE",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "RENI Guido(atelier)"
+  },
+  {
+   "reference": "00000103030",
+   "titre": "LE SOMMEIL DE L'ENFANT JESUS",
+   "musee": "musée d'art Roger-Quillot",
+   "ville": "Clermont-Ferrand",
+   "code": "ecole_de",
+   "extrait": "Reni Guido (1575-1642) (école)"
+  },
+  {
+   "reference": "00000103009",
+   "titre": "LA CHARITE ROMAINE,dit aussi CIMON ET PERO",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "RENI Guido(atelier)"
+  },
+  {
+   "reference": "50350005971",
+   "titre": "Saint Sébastien à la colonne",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "RENI Guido (attribué à)"
+  },
+  {
+   "reference": "50350005966",
+   "titre": "Saint Jean et l'Enfant  jouant sous le regard de la Vierge et saint Joseph",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "RENI Guido (attribué à)"
+  },
+  {
+   "reference": "50350006036",
+   "titre": "Saint Jérôme en prières dans le désert",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "RENI Guido (école)"
+  },
+  {
+   "reference": "50350005979",
+   "titre": "Angelot tenant une couronne, volant, vu par en-dessous",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "RENI Guido (attribué à)"
+  },
+  {
+   "reference": "50350205770",
+   "titre": "La mort d'Hercule",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "RENI Guido (attribué à)"
+  },
+  {
+   "reference": "50350005978",
+   "titre": "Enfant nu, couché sur un lit, et étude de jambe droite nue",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "RENI Guido (attribué à)"
+  },
+  {
+   "reference": "50350005969",
+   "titre": "Buste de saint Jean-Baptiste regardant une crucifix",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "RENI Guido (attribué à)"
+  },
+  {
+   "reference": "50350006047",
+   "titre": "Homme debout, vêtu en costume oriental",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "RENI Guido (école)"
+  },
+  {
+   "reference": "50350005988",
+   "titre": "Demi-figure de jeune homme assis, tenant un livre, et écrivant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "RENI Guido (attribué à)"
+  },
+  {
+   "reference": "50350005967",
+   "titre": "Vierge à l'Enfant, adorés par saint François et saint Jean-Baptiste",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "RENI Guido (attribué à)"
+  },
+  {
+   "reference": "50350006038",
+   "titre": "Deux enfants nus, assis, tenant des cordes",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "RENI Guido (école)"
+  },
+  {
+   "reference": "50350006034",
+   "titre": "Apparition de la Vierge à l'Enfant à deux saintes",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "RENI Guido (école)"
+  },
+  {
+   "reference": "50350006031",
+   "titre": "Vierge à l'Enfant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "RENI Guido (école)"
+  },
+  {
+   "reference": "50350006040",
+   "titre": "Sibylle assise, tenant un livre",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "RENI Guido (école)"
+  },
+  {
+   "reference": "50350005972",
+   "titre": "Un évêque debout, vu de face, lisant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "RENI Guido (attribué à)"
+  },
+  {
+   "reference": "50350005975",
+   "titre": "Andromède",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "RENI Guido (attribué à)"
+  },
+  {
+   "reference": "50350005986",
+   "titre": "Saint Sébastien",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "RENI Guido (attribué à)"
+  },
+  {
+   "reference": "50350005977",
+   "titre": "Enfant nu, endormi sur le dos",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "RENI Guido (attribué à)"
+  },
+  {
+   "reference": "50350005965",
+   "titre": "Loth et ses deux filles",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "RENI Guido (attribué à)"
+  },
+  {
+   "reference": "50350006046",
+   "titre": "L'Amour debout, et reprise des deux pieds",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "RENI Guido (école)"
+  },
+  {
+   "reference": "50350006035",
+   "titre": "Un peintre assis, regardant un tableau placé sur une table",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "RENI Guido (école)"
+  },
+  {
+   "reference": "50350006045",
+   "titre": "Enfant nu, couché sur le dos, en raccourci",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "RENI Guido (école)"
+  },
+  {
+   "reference": "50350006041",
+   "titre": "Deux angelots dans les nuages",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "RENI Guido (école)"
+  },
+  {
+   "reference": "50350005980",
+   "titre": "Angelot volant, vu par en-dessous",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "RENI Guido (attribué à)"
+  },
+  {
+   "reference": "50350005985",
+   "titre": "Saint Jérôme dans le désert",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "RENI Guido (attribué à)"
+  },
+  {
+   "reference": "50350006042",
+   "titre": "Hercule soutenant le monde",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "RENI Guido (école)"
+  },
+  {
+   "reference": "50350006030",
+   "titre": "Vierge à l'Enfant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "RENI Guido (école)"
+  },
+  {
+   "reference": "50350006029",
+   "titre": "Vierge à l'Enfant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "RENI Guido (école)"
+  },
+  {
+   "reference": "50350006044",
+   "titre": "Un jeune garçon jouant avec un chat",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "RENI Guido (école)"
+  },
+  {
+   "reference": "50350102803",
+   "titre": "La Vierge jouant avec l'Enfant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "RENI Guido (école)"
+  },
+  {
+   "reference": "50350006032",
+   "titre": "L'Enfant debout sur les genoux de la Vierge, tenant une petite croix",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "RENI Guido (école)"
+  },
+  {
+   "reference": "50350006043",
+   "titre": "Deux prophètes",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "RENI Guido (école)"
+  },
+  {
+   "reference": "50350005987",
+   "titre": "Demi-figure d'un enfant nu, de dos",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "RENI Guido (attribué à)"
+  },
+  {
+   "reference": "50350006048",
+   "titre": "Un jeune peintre décorant un objet",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "RENI Guido (école)"
+  },
+  {
+   "reference": "50350006039",
+   "titre": "Deux anges conversant, en buste",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "RENI Guido (école)"
+  },
+  {
+   "reference": "50350006037",
+   "titre": "Sainte Catherine d'Alexandrie en prières",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "RENI Guido (école)"
+  },
+  {
+   "reference": "50350005968",
+   "titre": "La Résurrection de Lazare",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "RENI Guido (attribué à)"
+  },
+  {
+   "reference": "07430004969",
+   "titre": "La Charité chrétienne",
+   "musee": "musée des Beaux-Arts",
+   "ville": "Nantes",
+   "code": "atelier_de",
+   "extrait": "RENI Guido (atelier)"
+  },
+  {
+   "reference": "50350500984",
+   "titre": "Fragment d'une tête de femme et annotations chiffrées",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "RENI Guido (école)"
+  },
+  {
+   "reference": "01320016849",
+   "titre": "Sainte Cécile",
+   "musee": "musée Bonaparte",
+   "ville": "Auxonne",
+   "code": "ecole_de",
+   "extrait": "RENI Guido (dit, école)"
+  },
+  {
+   "reference": "M0491001245",
+   "titre": "Tête de Saint Sébastien",
+   "musee": "musée Hyacinthe Rigaud",
+   "ville": "Perpignan",
+   "code": "attribue",
+   "extrait": "Reni Guido (1575-1642) (attribué à)"
+  },
+  {
+   "reference": "06770000303",
+   "titre": "Saint Pierre pleurant sa faute",
+   "musee": "musée Thomas-Henry",
+   "ville": "Cherbourg-en-Cotentin",
+   "code": "maniere_de",
+   "extrait": "RENI Guido, LE GUIDE (dit) (manière de, peintre)"
+  },
+  {
+   "reference": "06190001403",
+   "titre": "La Sybille delphique",
+   "musee": "musée de la Chartreuse",
+   "ville": "Douai",
+   "code": "ecole_de",
+   "extrait": "RENI Guido  (école)"
+  },
+  {
+   "reference": "06190001404",
+   "titre": "Jupiter et Junon",
+   "musee": "musée de la Chartreuse",
+   "ville": "Douai",
+   "code": "ecole_de",
+   "extrait": "RENI Guido  (école)"
+  },
+  {
+   "reference": "06190001144",
+   "titre": "Le Massacre des Innocents",
+   "musee": "musée de la Chartreuse",
+   "ville": "Douai",
+   "code": "genre_de",
+   "extrait": "RENI Guido (genre de)"
+  },
+  {
+   "reference": "06190001733",
+   "titre": "Enfant au réveil",
+   "musee": "musée de la Chartreuse",
+   "ville": "Douai",
+   "code": "genre_de",
+   "extrait": "RENI Guido  (genre de)"
+  },
+  {
+   "reference": "M0121003074",
+   "titre": "La sainte Famille contemplant l'Enfant Jésus endormi",
+   "musee": "musée d'art Roger-Quillot",
+   "ville": "Clermont-Ferrand",
+   "code": "ecole_de",
+   "extrait": "Reni Guido (1575-1642) (école)"
+  },
+  {
+   "reference": "01370014226",
+   "titre": "Diane",
+   "musee": "musée des beaux-arts",
+   "ville": "Dijon",
+   "code": "genre_de",
+   "extrait": "RENI Guido (genre de)"
+  },
+  {
+   "reference": "01370014223",
+   "titre": "La Madeleine",
+   "musee": "musée des beaux-arts",
+   "ville": "Dijon",
+   "code": "maniere_de",
+   "extrait": "RENI Guido (manière de)"
+  },
+  {
+   "reference": "03110042175",
+   "titre": "La Vierge et l'Enfant Jésus",
+   "musee": "musée des Beaux-Arts de Reims",
+   "ville": "Reims",
+   "code": "attribue",
+   "extrait": "RENI Guido (attribué à)"
+  },
+  {
+   "reference": "09940009040",
+   "titre": "Etude d'une tête d'homme barbu",
+   "musee": "musée de Grenoble",
+   "ville": "Grenoble",
+   "code": "attribue",
+   "extrait": "Reni Guido (attribué à)"
+  },
+  {
+   "reference": "08940005128",
+   "titre": "Sainte Madeleine en extase (titre factice)",
+   "musee": "musée Granet",
+   "ville": "Aix-en-Provence",
+   "code": "ecole_de",
+   "extrait": "Reni Guido (1575-1642) (école)"
+  },
+  {
+   "reference": "06190023719",
+   "titre": "Enfant au réveil",
+   "musee": "musée de la Chartreuse",
+   "ville": "Douai",
+   "code": "genre_de",
+   "extrait": "Reni Guido (1575-1642) (genre de)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-07-28T14:49:21+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

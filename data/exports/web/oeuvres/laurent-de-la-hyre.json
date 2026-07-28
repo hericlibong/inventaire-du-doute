@@ -1,0 +1,233 @@
+{
+ "slug": "laurent-de-la-hyre",
+ "nom": "Laurent de La Hyre",
+ "doute": 26,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 23
+  },
+  {
+   "code": "ecole_de",
+   "notices": 2
+  },
+  {
+   "code": "atelier_de",
+   "notices": 1
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "000PE013959",
+   "titre": "ANGELIQUE ET MEDOR",
+   "musee": "musée des beaux-arts",
+   "ville": "Marseille",
+   "code": "attribue",
+   "extrait": "LA HYRE Laurent de (attribué à)"
+  },
+  {
+   "reference": "000PE029833",
+   "titre": "L'EDUCATION DE LA VIERGE",
+   "musee": "musée des beaux-arts",
+   "ville": "Rouen",
+   "code": "atelier_de",
+   "extrait": "LA HYRE Laurent de (atelier)"
+  },
+  {
+   "reference": "00000056500",
+   "titre": "SAINT FRANCOIS CONSOLE PAR LA MUSIQUE DES ANGES",
+   "musee": "musée des beaux-arts",
+   "ville": "Rouen",
+   "code": "ecole_de",
+   "extrait": "LA HYRE Laurent de (école)"
+  },
+  {
+   "reference": "00000093350",
+   "titre": "SAINT FRANCOIS DONNANT LE CORDON DU TIERS-ORDRE A LOUIS XIII ; LE VOEU DE LOUIS XIII (TITRE ANCIEN)",
+   "musee": "musée des beaux-arts",
+   "ville": "Orléans",
+   "code": "attribue",
+   "extrait": "La Hyre Laurent de (1606-1656) (attribué à)"
+  },
+  {
+   "reference": "00000104551",
+   "titre": "Vierge à l'Enfant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LA HYRE Laurent de (attribué)"
+  },
+  {
+   "reference": "50350213339",
+   "titre": "Les trois Grâces et deux amours",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LA HYRE Laurent de (attribué à)"
+  },
+  {
+   "reference": "50350213340",
+   "titre": "Quatre bacchantes tenant des guirlandes autour d'un vase",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LA HYRE Laurent de (attribué à)"
+  },
+  {
+   "reference": "50350110006",
+   "titre": "Incrédulité de saint Thomas",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LA HYRE Laurent de (école)"
+  },
+  {
+   "reference": "50350213341",
+   "titre": "Deux génies assis au sol",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LA HYRE Laurent de (attribué à)"
+  },
+  {
+   "reference": "50350013309",
+   "titre": "Saint Bruno",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LA HYRE Laurent de (attribué à)"
+  },
+  {
+   "reference": "50350013307",
+   "titre": "Saint Pierre Nolasque debout et en extase",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LA HYRE Laurent de (attribué à)"
+  },
+  {
+   "reference": "50350013305",
+   "titre": "Saint Dominique",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LA HYRE Laurent de (attribué à)"
+  },
+  {
+   "reference": "50350013304",
+   "titre": "Saint Ignace tenant un rouleau contenant les règles de son ordre",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LA HYRE Laurent de (attribué à)"
+  },
+  {
+   "reference": "50350013308",
+   "titre": "Le Christ en Salvator Mundi",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LA HYRE Laurent de (attribué à)"
+  },
+  {
+   "reference": "50350013302",
+   "titre": "Saint Antoine debout, tenant une cloche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LA HYRE Laurent de (attribué à)"
+  },
+  {
+   "reference": "50350013306",
+   "titre": "Saint Norbert tenant un ostensoir et un cierge",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LA HYRE Laurent de (attribué à)"
+  },
+  {
+   "reference": "50350013298",
+   "titre": "Saint Jean de Matha debout, tenant des chaînes",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LA HYRE Laurent de (attribué à)"
+  },
+  {
+   "reference": "50350013310",
+   "titre": "Saint Jean-Baptiste debout, vu de face",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LA HYRE Laurent de (attribué à)"
+  },
+  {
+   "reference": "50350013303",
+   "titre": "Saint Augustin en costume d'archevêque, tenant un livre",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LA HYRE Laurent de (attribué à)"
+  },
+  {
+   "reference": "50350013296",
+   "titre": "Saint Jean de Dieu, debout, méditant sur un crucifix",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LA HYRE Laurent de (attribué à)"
+  },
+  {
+   "reference": "50350013297",
+   "titre": "Saint François debout et en extase, recevant les stigmates",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LA HYRE Laurent de (attribué à)"
+  },
+  {
+   "reference": "50350013300",
+   "titre": "Saint Romuald debout, priant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LA HYRE Laurent de (attribué à)"
+  },
+  {
+   "reference": "50350013301",
+   "titre": "Saint Etienne de Grammont debout, tenant un anneau dans la main droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LA HYRE Laurent de (attribué à)"
+  },
+  {
+   "reference": "50350013295",
+   "titre": "Saint Bruno debout, vu de face",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LA HYRE Laurent de (attribué à)"
+  },
+  {
+   "reference": "50350013294",
+   "titre": "Saint Paul debout, lisant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LA HYRE Laurent de (attribué à)"
+  },
+  {
+   "reference": "50350013299",
+   "titre": "Saint François de Paule, fondateur de l'ordre des Minimes",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "LA HYRE Laurent de (attribué à)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-07-28T14:49:21+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

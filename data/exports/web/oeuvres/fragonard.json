@@ -1,0 +1,269 @@
+{
+ "slug": "fragonard",
+ "nom": "Fragonard",
+ "doute": 30,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 25
+  },
+  {
+   "code": "ecole_de",
+   "notices": 3
+  },
+  {
+   "code": "maniere_de",
+   "notices": 1
+  },
+  {
+   "code": "genre_de",
+   "notices": 1
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "000PE001196",
+   "titre": "Portrait de jeune femme",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)"
+  },
+  {
+   "reference": "000PE001195",
+   "titre": "Bacchante endormie",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)"
+  },
+  {
+   "reference": "000PE001197",
+   "titre": "Le nid d'oiseaux",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)"
+  },
+  {
+   "reference": "000PE001198",
+   "titre": "LA VIERGE ET L'ENFANT",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)"
+  },
+  {
+   "reference": "000DE007125",
+   "titre": "PERSONNAGES SUR UNE PASSERELLE",
+   "musee": "musée Grobet-Labadié",
+   "ville": "Marseille",
+   "code": "attribue",
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)"
+  },
+  {
+   "reference": "000DE007124",
+   "titre": "PAYSAGE ANIME AVEC RUINES ET PERSONNAGES",
+   "musee": "musée Grobet-Labadié",
+   "ville": "Marseille",
+   "code": "attribue",
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)"
+  },
+  {
+   "reference": "000PE013394",
+   "titre": "Ruth et Booz",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)"
+  },
+  {
+   "reference": "000PE014072",
+   "titre": "ALLEGORIE DE LA VILLE DE PARIS ; DIT AUTREFOIS MARSEILLE PROTEGEE PAR MERCURE",
+   "musee": "musée des beaux-arts",
+   "ville": "Marseille",
+   "code": "attribue",
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)"
+  },
+  {
+   "reference": "000PE014071",
+   "titre": "L'ASSOMPTION DE LA VIERGE",
+   "musee": "musée des beaux-arts",
+   "ville": "Marseille",
+   "code": "attribue",
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)"
+  },
+  {
+   "reference": "000PE016173",
+   "titre": "ALLEGORIE",
+   "musee": "musée Grobet-Labadié",
+   "ville": "Marseille",
+   "code": "attribue",
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)"
+  },
+  {
+   "reference": "000PE023112",
+   "titre": "Joueur de flûte",
+   "musee": "musée des beaux-arts",
+   "ville": "Bordeaux",
+   "code": "ecole_de",
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (école)"
+  },
+  {
+   "reference": "06070000115",
+   "titre": "Sainte Famille",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "maniere_de",
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (manière de)"
+  },
+  {
+   "reference": "50350030737",
+   "titre": "Personnages près d'une église",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)"
+  },
+  {
+   "reference": "50350030735",
+   "titre": "Paysans au bord d'une rivière",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)"
+  },
+  {
+   "reference": "50350030738",
+   "titre": "Vaste bâtiment surmonté d'une tonnelle, dans un parc",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)"
+  },
+  {
+   "reference": "50350502833",
+   "titre": "Deux figures",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)"
+  },
+  {
+   "reference": "50350231283",
+   "titre": "Jéroboam sacrifiant aux idoles",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)"
+  },
+  {
+   "reference": "50350228306",
+   "titre": "Personnages assemblés devant une masure",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (école)"
+  },
+  {
+   "reference": "50350035040",
+   "titre": "Tête d'homme barbu",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)"
+  },
+  {
+   "reference": "50350030736",
+   "titre": "Couple, et serviteur, en promenade",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)"
+  },
+  {
+   "reference": "50350212407",
+   "titre": "Etudes d'un buste et de cinq têtes",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)"
+  },
+  {
+   "reference": "10480007491",
+   "titre": "Le Jeu de la palette",
+   "musee": "musée des beaux-arts",
+   "ville": "Chambéry",
+   "code": "attribue",
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)"
+  },
+  {
+   "reference": "50110001194",
+   "titre": "Le petit montreur de singe savant",
+   "musee": "musée national Magnin",
+   "ville": "Dijon",
+   "code": "genre_de",
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (genre de)"
+  },
+  {
+   "reference": "07290021230",
+   "titre": "Enlèvement dHélène (titre moderne) ; embarquement de Cléopâtre (titre ancien)",
+   "musee": "musée des beaux-arts",
+   "ville": "Rouen",
+   "code": "ecole_de",
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (école)"
+  },
+  {
+   "reference": "07290022334",
+   "titre": "Vue de Pouzolles ; La partie de cache-cache",
+   "musee": "musée des beaux-arts",
+   "ville": "Rouen",
+   "code": "attribue",
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)"
+  },
+  {
+   "reference": "08760010792",
+   "titre": "Portrait d'enfant",
+   "musee": "musée Fragonard",
+   "ville": "Grasse",
+   "code": "attribue",
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (peintre, attribué à)"
+  },
+  {
+   "reference": "08760049019",
+   "titre": "Cour de ferme",
+   "musee": "musée Fragonard",
+   "ville": "Grasse",
+   "code": "attribue",
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)"
+  },
+  {
+   "reference": "08760049403",
+   "titre": "Portrait de Marguerite Gérard",
+   "musee": "musée Fragonard",
+   "ville": "Grasse",
+   "code": "attribue",
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à, dessinateur)"
+  },
+  {
+   "reference": "M0536001628",
+   "titre": "Le Coche d’eau (recto) ; Personnage de dos drapé d’une cape (verso)",
+   "musee": "musée départemental d'art ancien et contemporain",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)"
+  },
+  {
+   "reference": "04450000713",
+   "titre": "La délivrance de saint Pierre",
+   "musee": "Palais-musée des Archevêques de Narbonne",
+   "ville": "Narbonne",
+   "code": "attribue",
+   "extrait": "FRAGONARD Jean Honoré (ancienne attribution, attribué)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-07-28T14:49:21+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

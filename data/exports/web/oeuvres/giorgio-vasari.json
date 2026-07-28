@@ -1,0 +1,237 @@
+{
+ "slug": "giorgio-vasari",
+ "nom": "Giorgio Vasari",
+ "doute": 26,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 9
+  },
+  {
+   "code": "ecole_de",
+   "notices": 15
+  },
+  {
+   "code": "atelier_de",
+   "notices": 1
+  },
+  {
+   "code": "entourage_de",
+   "notices": 1
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "00000060663",
+   "titre": "MARIE-MADELEINE",
+   "musee": "musée de la Chartreuse",
+   "ville": "Douai",
+   "code": "ecole_de",
+   "extrait": "VASARI GIORGIO (école)"
+  },
+  {
+   "reference": "00000060665",
+   "titre": "ANGE DE L'ANNONCIATION",
+   "musee": "musée de la Chartreuse",
+   "ville": "Douai",
+   "code": "ecole_de",
+   "extrait": "VASARI GIORGIO (école)"
+  },
+  {
+   "reference": "00000060667",
+   "titre": "CINQ ANGES",
+   "musee": "musée de la Chartreuse",
+   "ville": "Douai",
+   "code": "ecole_de",
+   "extrait": "VASARI GIORGIO (école)"
+  },
+  {
+   "reference": "00000060666",
+   "titre": "CINQ ANGES",
+   "musee": "musée de la Chartreuse",
+   "ville": "Douai",
+   "code": "ecole_de",
+   "extrait": "VASARI GIORGIO (école)"
+  },
+  {
+   "reference": "00000060664",
+   "titre": "VIERGE DE L'ANNONCIATION",
+   "musee": "musée de la Chartreuse",
+   "ville": "Douai",
+   "code": "ecole_de",
+   "extrait": "VASARI GIORGIO (école)"
+  },
+  {
+   "reference": "000PE023498",
+   "titre": "Sainte Famille avec le petit Saint Jean-Baptiste et Saint François d'Assise",
+   "musee": "musée des beaux-arts",
+   "ville": "Bordeaux",
+   "code": "atelier_de",
+   "extrait": "VASARI Giorgio (atelier)"
+  },
+  {
+   "reference": "50350102094",
+   "titre": "Mariage de la Vierge",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VASARI Giorgio (école)"
+  },
+  {
+   "reference": "50350200021",
+   "titre": "La Vierge, l'Enfant Jésus, sainte Lucie et sainte Catherine",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VASARI Giorgio (école)"
+  },
+  {
+   "reference": "50350200823",
+   "titre": "Figure assise, tenant un objet de la main droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VASARI Giorgio (école)"
+  },
+  {
+   "reference": "50350002971",
+   "titre": "Feuille d'études de grottesques",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VASARI Giorgio (école)"
+  },
+  {
+   "reference": "50350002970",
+   "titre": "Vision de saint Romuald",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "VASARI Giorgio (attribué à)"
+  },
+  {
+   "reference": "50350002972",
+   "titre": "Etudes de grottesques pour une décoration murale",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "VASARI Giorgio (attribué à)"
+  },
+  {
+   "reference": "50350002959",
+   "titre": "Etudes pour un roi mage ; adoration des mages ; trois têtes d'hommes",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "VASARI Giorgio (attribué à)"
+  },
+  {
+   "reference": "50350002958",
+   "titre": "Adoration des Mages",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VASARI Giorgio (école)"
+  },
+  {
+   "reference": "50350002969",
+   "titre": "Une femme ailée assise sur des nuages",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "VASARI Giorgio (attribué à)"
+  },
+  {
+   "reference": "50350002966",
+   "titre": "Vue d'un ermitage avec plusieurs moines",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "VASARI Giorgio (attribué à)"
+  },
+  {
+   "reference": "50350001276",
+   "titre": "Figures, d'après le Jugement Dernier à la Chapelle Sixtine",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "VASARI Giorgio (attribué à)"
+  },
+  {
+   "reference": "50350002987",
+   "titre": "Le Mariage mystique de sainte Catherine",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VASARI Giorgio (école)"
+  },
+  {
+   "reference": "50350002974",
+   "titre": "Vue d'un village sur une colline",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "VASARI Giorgio (attribué à)"
+  },
+  {
+   "reference": "50350002965",
+   "titre": "Un Pape debout, revêtu de ses habits pontificaux",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "VASARI Giorgio (attribué à)"
+  },
+  {
+   "reference": "50350002988",
+   "titre": "La Sainte Famille, le petit saint Jean et sainte Elisabeth",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VASARI Giorgio (école)"
+  },
+  {
+   "reference": "50350002973",
+   "titre": "Etudes de grottesques pour une partie de plafond",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "VASARI Giorgio (attribué à)"
+  },
+  {
+   "reference": "50350003671",
+   "titre": "Le triomphe de Neptune",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VASARI Giorgio (école)"
+  },
+  {
+   "reference": "06190001274",
+   "titre": "Cinq anges",
+   "musee": "musée de la Chartreuse",
+   "ville": "Douai",
+   "code": "ecole_de",
+   "extrait": "VASARI Giorgio (école)"
+  },
+  {
+   "reference": "06190001273",
+   "titre": "Ange de l'Annonciation",
+   "musee": "musée de la Chartreuse",
+   "ville": "Douai",
+   "code": "ecole_de",
+   "extrait": "VASARI Giorgio (école)"
+  },
+  {
+   "reference": "M0457000885",
+   "titre": "Sans désignation",
+   "musee": "musée des beaux-arts",
+   "ville": "Nîmes",
+   "code": "entourage_de",
+   "extrait": "Vasari Giorgio (1511-1574) (entourage de)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-07-28T14:49:21+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

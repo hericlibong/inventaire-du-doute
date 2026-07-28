@@ -1,0 +1,1209 @@
+{
+ "slug": "michel-ange",
+ "nom": "Michel-Ange",
+ "doute": 148,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 37
+  },
+  {
+   "code": "point_interrogation",
+   "notices": 1
+  },
+  {
+   "code": "ecole_de",
+   "notices": 110
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "M0347001723",
+   "titre": "Tête de femme : Le Silence",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Dole",
+   "code": "point_interrogation",
+   "extrait": "BUONARROTI Michelangelo (?)"
+  },
+  {
+   "reference": "50350001249",
+   "titre": "Homme assis, accoudé, tourné vers la droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001291",
+   "titre": "La Sibylle de Cumes, d'après la voûte de la Chapelle Sixtine",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001383",
+   "titre": "Esquisses de figures",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BUONARROTI Michelangelo (attribué à)"
+  },
+  {
+   "reference": "50350001350",
+   "titre": "Saint Barthélémy tenant un couteau et sa dépouille",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001266",
+   "titre": "Etudes de figures, d'après la voûte de la Chapelle Sixtine",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001374",
+   "titre": "Groupe de trois figures pour une composition de la descente de croix",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BUONARROTI Michelangelo (attribué à)"
+  },
+  {
+   "reference": "50350001292",
+   "titre": "Le prophète Daniel, d'après la voûte de la Chapelle Sixtine",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001358",
+   "titre": "Jeune homme nu",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001269",
+   "titre": "Deux amours entrainant l'Avarice, d'après le Jugement Dernier de Michel-Ange",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001233",
+   "titre": "Homme debout, de dos, tenant un baton",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BUONARROTI Michelangelo (attribué à)"
+  },
+  {
+   "reference": "50350001323",
+   "titre": "Le Christ mort sur les genoux de sa mère assise",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001322",
+   "titre": "Femme debout lisant, deux jeunes filles debout",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350228330",
+   "titre": "Homme courant portant un autre homme sur son dos",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BUONARROTI Michelangelo (attribué à)"
+  },
+  {
+   "reference": "50350001345",
+   "titre": "Eléazar, sa compagne et un enfant dans une lunette",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001365",
+   "titre": "Homme, vu de dos, penché en avant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001297",
+   "titre": "Le Prophète Isaïe, d'après la voûte de la Chapelle Sixtine",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001273",
+   "titre": "Le prophête Jonas, d'après la voûte de la Chapelle Sixtine",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001207",
+   "titre": "Animal fantastique, peut-être une tarasque",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BUONARROTI Michelangelo (attribué à)"
+  },
+  {
+   "reference": "50350001342",
+   "titre": "La Sibylle de Lybie",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001360",
+   "titre": "Le petit Josias, avec sa mère et son père, Amon",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001293",
+   "titre": "Le prophète Jérémie, d'après la voûte de la Chapelle Sixtine",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350032715",
+   "titre": "Figure d'homme nu, marchant, et femme, vue de face, drapée",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BUONARROTI Michelangelo (attribué à)"
+  },
+  {
+   "reference": "50350001271",
+   "titre": "Le Christ en croix",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BUONARROTI Michelangelo (attribué à)"
+  },
+  {
+   "reference": "50350001335",
+   "titre": "Etude d'après la statue de Laurent de Médicis",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001334",
+   "titre": "Groupe de figures à demi nues, tournées vers la droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001212",
+   "titre": "Etudes de draperies, d'une figure drapée, et annotations",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BUONARROTI Michelangelo (attribué à)"
+  },
+  {
+   "reference": "50350001370",
+   "titre": "Diverses figures en Enfer",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001325",
+   "titre": "Etude pour l'un des tombeaux des Médicis à San Lorenzo",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BUONARROTI Michelangelo (attribué à)"
+  },
+  {
+   "reference": "50350001355",
+   "titre": "Un damné",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001395",
+   "titre": "Homme barbu, à demi drapé, tenant un livre",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001215",
+   "titre": "Etude d'homme nu, les bras levés",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BUONARROTI Michelangelo (attribué à)"
+  },
+  {
+   "reference": "50350001208",
+   "titre": "Etude d'homme nu, debout, de profil à gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BUONARROTI Michelangelo (attribué à)"
+  },
+  {
+   "reference": "50350001294",
+   "titre": "La Sibylle Persique, d'après la voûte de la Chapelle Sixtine",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001362",
+   "titre": "Eléazar et sa compagne",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001340",
+   "titre": "Un damné",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001274",
+   "titre": "Le prophête Joël, d'après la voûte de la Chapelle Sixtine",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001377",
+   "titre": "Crucifixion",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BUONARROTI Michelangelo (attribué à)"
+  },
+  {
+   "reference": "50350001405",
+   "titre": "Etudes de figures nues, dont deux luttant, et de l'ossature du bassin",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001376",
+   "titre": "Etude pour l'un des tombeaux des Médicis, à San Lorenzo",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BUONARROTI Michelangelo (attribué à)"
+  },
+  {
+   "reference": "50350001379",
+   "titre": "Etude pour un Christ en croix",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BUONARROTI Michelangelo (attribué à)"
+  },
+  {
+   "reference": "50350001385",
+   "titre": "Etude d'une jambe droite, de profil",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350003300",
+   "titre": "Tête d'un guerrier coiffé d'un casque surmonté d'un dragon ailé",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BUONARROTI Michelangelo (attribué à)"
+  },
+  {
+   "reference": "50350001238",
+   "titre": "Etudes : Vierge à l'Enfant, homme, deux têtes de satyres, mains, chiens",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BUONARROTI Michelangelo (attribué à)"
+  },
+  {
+   "reference": "50350001250",
+   "titre": "Etude de pieds, de jambes, de bras et de mains",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001375",
+   "titre": "Etudes pour l'un des tombeaux des Médicis, à San Lorenzo",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BUONARROTI Michelangelo (attribué à)"
+  },
+  {
+   "reference": "50350500030",
+   "titre": "Armoiries et annotations manuscrites",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BUONARROTI Michelangelo (attribué à)"
+  },
+  {
+   "reference": "50350001349",
+   "titre": "Une femme, un vieillard et un enfant dans une lunette",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001403",
+   "titre": "Une figure nue assise, tournée à droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001406",
+   "titre": "Jeune homme nu, assis, le bras droit au-dessus de la tête",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001202",
+   "titre": "Femme debout, drapée, de profil, tournée vers la droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BUONARROTI Michelangelo (attribué à)"
+  },
+  {
+   "reference": "50350001279",
+   "titre": "Le prophête Ezechiel, d'après la voûte de la Chapelle Sixtine",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001260",
+   "titre": "Salathiel et sa mère, d'après la voûte de la Chapelle Sixtine",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001364",
+   "titre": "Enlèvement de Ganymède",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001210",
+   "titre": "Femme de profil assise, un enfant sur les genoux, trois autres figures",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001295",
+   "titre": "Le prophète Ezechiel, d'après la voûte de la Chapelle Sixtine",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350500032",
+   "titre": "vase",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BUONARROTI Michelangelo (attribué à)"
+  },
+  {
+   "reference": "50350001267",
+   "titre": "Etude d'homme de dos, d'après le Jugement Dernier de la Chapelle Sixtine",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001217",
+   "titre": "Martyre de saint Sébastien",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001296",
+   "titre": "Le Prophète Joël, d'après la voûte de la Chapelle Sixtine",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001316",
+   "titre": "Deux enfants nus debout",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001344",
+   "titre": "Trois damnés",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001387",
+   "titre": "Trois études de jambe droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001278",
+   "titre": "Le futur roi Zorobabel, sa mère et son père, Salathiel, voûte de la Sixtine",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001275",
+   "titre": "La Sibylle de Delphique, d'après la voûte de la Chapelle Sixtine",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350228335",
+   "titre": "Figure d'Adam à la Chapelle Sixtine",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BUONARROTI Michelangelo (attribué à)"
+  },
+  {
+   "reference": "50350001261",
+   "titre": "Manassé, d'après la voûte de la Chapelle Sixtine",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001290",
+   "titre": "La Sibylle Delphique, d'après la voûte de la Chapelle Sixtine",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350200561",
+   "titre": "Prisonniers conduit devant un roi",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001341",
+   "titre": "Figure debout tenant un enfant dans les bras",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001389",
+   "titre": "Trois études de jambes gauches",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001391",
+   "titre": "Etude d'un homme nu assis accoudé du bras droit",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001211",
+   "titre": "Etude d'homme nu, debout, les bras levés et étude de jambe",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BUONARROTI Michelangelo (attribué à)"
+  },
+  {
+   "reference": "50350003571",
+   "titre": "Portrait de Michel-Ange",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BUONARROTI Michelangelo (attribué à)"
+  },
+  {
+   "reference": "50350001361",
+   "titre": "Diverses figures de damnés",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350215591",
+   "titre": "Tête de jeune homme coiffé du bonnet phrygien",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BUONARROTI Michelangelo (attribué à)"
+  },
+  {
+   "reference": "50350001347",
+   "titre": "Figures de jeunes hommes nus s'exerçant à tirer de l'arc",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001352",
+   "titre": "Joram et sa mère",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001369",
+   "titre": "Judith et Holopherne",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350500033",
+   "titre": "Un homme assis, de profil",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001234",
+   "titre": "Homme de profil, à droite, tenant un crâne sur son genou gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BUONARROTI Michelangelo (attribué à)"
+  },
+  {
+   "reference": "50350001382",
+   "titre": "Esquisses de figures, homme nu, le bras droit retourné derrière le dos",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BUONARROTI Michelangelo (attribué à)"
+  },
+  {
+   "reference": "50350001259",
+   "titre": "L'Aurore du tombeau de Laurent de Médicis",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001298",
+   "titre": "Deux figures, d'après la Bataille de Cascina",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001321",
+   "titre": "Le futur roi Asa consolant son père derrière sa mère endormie",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001394",
+   "titre": "Femme debout et vue de profil, tenant un masque",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350215592",
+   "titre": "Profil de satyre, la bouche ouverte",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BUONARROTI Michelangelo (attribué à)"
+  },
+  {
+   "reference": "50350001299",
+   "titre": "Troix bienheureux , d'après le Jugement Dernier de la Chapelle Sixtine",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001209",
+   "titre": "Homme nu debout, de face, la tête de profil",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BUONARROTI Michelangelo (attribué à)"
+  },
+  {
+   "reference": "50350001384",
+   "titre": "Etude de jambe droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001390",
+   "titre": "Etude d'un homme nu, assis, tenant une corbeille de fruits",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001218",
+   "titre": "Etude de femme nue, vue de dos",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001367",
+   "titre": "Jupiter foudroyant Phaeton",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001388",
+   "titre": "Etude anatomiques de mains et d'avant-bras",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001400",
+   "titre": "Homme drapé et assis, vu de face, tenant un livre",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001237",
+   "titre": "La Vierge assise tenant sur ses genoux l'Enfant Jésus : la Vierge Médicis",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BUONARROTI Michelangelo (attribué à)"
+  },
+  {
+   "reference": "50350001285",
+   "titre": "Le Jour du tombeau de Julien de Médicis",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001240",
+   "titre": "Etude d'une main en dessinant une autre",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BUONARROTI Michelangelo (attribué à)"
+  },
+  {
+   "reference": "50350001277",
+   "titre": "Homme assis, écrivant sur son genoux, (Josaphat ?) , voûte de la Sixtine",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001317",
+   "titre": "Deux figures de femmes nues soutenant des draperies au dessus de leurs têtes",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001396",
+   "titre": "Un homme et une femme assis, de profil, et reprise de la tête de l'homme",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001287",
+   "titre": "La création d'Adam, d'après la voûte de la Chapelle Sixtine",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001302",
+   "titre": "Le Christ et la Samaritaine",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350002147",
+   "titre": "La Résurrection du Christ",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BUONARROTI Michelangelo (attribué à)"
+  },
+  {
+   "reference": "50350001304",
+   "titre": "La Nuit du tombeau de Julien de Médicis",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001303",
+   "titre": "La Sibylle Lybique, d'après la voûte de la Chapelle Sixtine",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001289",
+   "titre": "La Sibylle Lybique, d'après la voûte de la Chapelle Sixtine",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001324",
+   "titre": "Homme nu, assis, la main gauche sur le genou droit",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001219",
+   "titre": "Etude d'homme debout de face, à demi drapé",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BUONARROTI Michelangelo (attribué à)"
+  },
+  {
+   "reference": "50350001359",
+   "titre": "Le Serpent d'airain",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001371",
+   "titre": "Jeune homme assis, de trois quarts",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001251",
+   "titre": "Etudes de jambes et de bras",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001305",
+   "titre": "Figures du Serpent d'airain, d'après la voûte de la Chapelle Sixtine",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001288",
+   "titre": "La Sibylle d'Erythrée, d'après la voûte de la Chapelle Sixtine",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001265",
+   "titre": "Etude de quatre figures dont Ozias et Joram, d'après la voûte de la Sixtine",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001357",
+   "titre": "Une Sibylle , des putti et deux groupes de femme et enfant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001320",
+   "titre": "Homme, à demi enveloppé d'une draperie, assis, voûte de la Chapelle Sixtine",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001346",
+   "titre": "Deux figures de guerriers nus",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001286",
+   "titre": "Le Jour du tombeau de Julien de Médicis",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001280",
+   "titre": "Divers croquis",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001333",
+   "titre": "Homme nu, debout, vu de dos, la jambe gauche pliée",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350200913",
+   "titre": "Deux études de crucifiés",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001392",
+   "titre": "Jeune homme assis, vu de face, appuyé à droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350500031",
+   "titre": "Traits à la plume",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BUONARROTI Michelangelo (attribué à)"
+  },
+  {
+   "reference": "50350001244",
+   "titre": "Tête d'animaux fantastiques",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BUONARROTI Michelangelo (attribué à)"
+  },
+  {
+   "reference": "50350001373",
+   "titre": "Partie gauche de la façade du tombeau de Jules II , à San Pietro in Vincoli",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001343",
+   "titre": "Deux femmes portant un enfant, l'une assise, l'autre debout",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001268",
+   "titre": "Croquis d'après l'un des tombeaux des Médicis à San Lorenzo",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BUONARROTI Michelangelo (attribué à)"
+  },
+  {
+   "reference": "50350001243",
+   "titre": "Têtes d'animaux fantastiques",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BUONARROTI Michelangelo (attribué à)"
+  },
+  {
+   "reference": "50350001247",
+   "titre": "Tête d'homme vue de face, le regard fixé en haut",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001318",
+   "titre": "Tête de jeune homme vue de face",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001332",
+   "titre": "Homme nu, assis, tourné vers la droite, la jambe droite ployée",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001397",
+   "titre": "Deux hommes debout, de profil, et un vieillard assis",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001363",
+   "titre": "Homme nu étendu",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001372",
+   "titre": "Jugement dernier",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350500041",
+   "titre": "Etude d'architecture",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350500043",
+   "titre": "Croquis de figures",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350500034",
+   "titre": "Tête d'homme",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350500038",
+   "titre": "Croquis",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350500039",
+   "titre": "Tête d'homme",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350500037",
+   "titre": "Tête de femme",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350500040",
+   "titre": "Etude de tête de femme.",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350015190",
+   "titre": "Homme nu, assis, tourné vers la droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001353",
+   "titre": "Etude d'un esclave nu, les deux bras liés et levés au-dessus de la tête",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350201794",
+   "titre": "Enlèvement de Ganymède",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001354",
+   "titre": "Etude d'un esclave assis, les jambes entourées d'une corde",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  },
+  {
+   "reference": "50350001351",
+   "titre": "Léda caressée par Jupiter changé en cygne",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BUONARROTI Michelangelo (attribué à)"
+  },
+  {
+   "reference": "02110002116",
+   "titre": "Trois figures d'hommes nus",
+   "musee": "musée des beaux-arts",
+   "ville": "Rennes",
+   "code": "ecole_de",
+   "extrait": "BUONARROTI Michelangelo (école)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-07-28T14:49:21+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

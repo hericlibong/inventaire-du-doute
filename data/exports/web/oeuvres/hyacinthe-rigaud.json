@@ -1,0 +1,353 @@
+{
+ "slug": "hyacinthe-rigaud",
+ "nom": "Hyacinthe Rigaud",
+ "doute": 41,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 16
+  },
+  {
+   "code": "ecole_de",
+   "notices": 16
+  },
+  {
+   "code": "atelier_de",
+   "notices": 9
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "000PE002384",
+   "titre": "PORTRAIT D'HOMME ; DIT AUTREFOIS DE WILLIAM BENTINCK",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "RIGAU Y ROS Hyacinthe (attribué)"
+  },
+  {
+   "reference": "000PE005334",
+   "titre": "LOUIS-ALEXANDRE DE BOURBON, COMTE DE TOULOUSE (1678-1737)",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "code": "atelier_de",
+   "extrait": "RIGAUD Hyacinthe (atelier)"
+  },
+  {
+   "reference": "000PE007183",
+   "titre": "JEAN-BALTHAZAR KELLER (?)",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "code": "ecole_de",
+   "extrait": "RIGAU Y ROS Hyacinthe (école)"
+  },
+  {
+   "reference": "000PE007218",
+   "titre": "LOUIS AUGUSTE D'ALBERT D'AILLY, DUC DE CHAULNES (1676-1744)",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "code": "ecole_de",
+   "extrait": "RIGAU Y ROS Hyacinthe (école)"
+  },
+  {
+   "reference": "000PE007945",
+   "titre": "GERMAIN-LOUIS CHAUVELIN, GARDE DES SCEAUX (1685-1762)",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "code": "ecole_de",
+   "extrait": "RIGAU Y ROS Hyacinthe (école)"
+  },
+  {
+   "reference": "000PE007854",
+   "titre": "INCONNU",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "code": "ecole_de",
+   "extrait": "RIGAU Y ROS Hyacinthe (école)"
+  },
+  {
+   "reference": "000PE008015",
+   "titre": "HENRI-FRANCOIS DE PAULE LE FEVRE, SEIGNEUR D'ORMESSON (1681-1756)",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "code": "ecole_de",
+   "extrait": "RIGAU Y ROS Hyacinthe (école)"
+  },
+  {
+   "reference": "000PE007938",
+   "titre": "LOUIS-FRANCOIS DE BOURBON, PRINCE DE CONTI (1717-1776)",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "code": "ecole_de",
+   "extrait": "RIGAU Y ROS Hyacinthe (école)"
+  },
+  {
+   "reference": "000PE007944",
+   "titre": "JOSEPH-JEAN-BAPTISTE FLEURIAU, SEIGNEUR D'ARMENONVILLE, GARDE DES SCEAUX (1660-1728)",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "code": "ecole_de",
+   "extrait": "RIGAU Y ROS Hyacinthe (école)"
+  },
+  {
+   "reference": "000PE007932",
+   "titre": "CHARLES DE BOURBON, COMTE DE CHAROLAIS (1700-1760)",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "code": "ecole_de",
+   "extrait": "RIGAU Y ROS Hyacinthe (école)"
+  },
+  {
+   "reference": "000PE009680",
+   "titre": "PORTRAIT DU MARECHAL DE TESSE (1650-1725)",
+   "musee": "musée de Tessé",
+   "ville": "Le Mans",
+   "code": "attribue",
+   "extrait": "RIGAUD Hyacinthe (attribué)"
+  },
+  {
+   "reference": "000PE011347",
+   "titre": "UN MARECHAL DE FRANCE",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "code": "ecole_de",
+   "extrait": "RIGAU Y ROS Hyacinthe (école)"
+  },
+  {
+   "reference": "000PE011340",
+   "titre": "LOUIS-ANTOINE DE PARDAILLAN DE GONDRIN, DUC D'ANTIN (1665-1736)",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "code": "ecole_de",
+   "extrait": "RIGAU Y ROS Hyacinthe (école)"
+  },
+  {
+   "reference": "000PE011337",
+   "titre": "LOUIS XIV, ROI DE FRANCE ET DE NAVARRE (1638-1715)",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "code": "ecole_de",
+   "extrait": "RIGAU Y ROS Hyacinthe (école)"
+  },
+  {
+   "reference": "000PE012210",
+   "titre": "INCONNU",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "code": "ecole_de",
+   "extrait": "RIGAU Y ROS Hyacinthe (école)"
+  },
+  {
+   "reference": "000PE013356",
+   "titre": "LOUIS XIV, ROI DE FRANCE ET DE NAVARRE (1638-1715)",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "code": "ecole_de",
+   "extrait": "RIGAU Y ROS Hyacinthe (école)"
+  },
+  {
+   "reference": "000PE014525",
+   "titre": "PORTRAIT D'UN MAGISTRAT",
+   "musee": "musée des beaux-arts",
+   "ville": "Marseille",
+   "code": "attribue",
+   "extrait": "RIGAU Y ROS Hyacinthe (attribué à)"
+  },
+  {
+   "reference": "000PE014522",
+   "titre": "PORTRAIT DE JEAN ANTOINE, MARQUIS DE BARRAS DE LA PENNE, PREMIER CHEF D'ESCADRE DES GALERES DU ROY, COMMANDANT AU PORT DE MARSEILLE EN 1729",
+   "musee": "musée des beaux-arts",
+   "ville": "Marseille",
+   "code": "attribue",
+   "extrait": "RIGAU Y ROS Hyacinthe (attribué à)"
+  },
+  {
+   "reference": "000PE016322",
+   "titre": "PORTRAIT D'HOMME",
+   "musee": "musée Grobet-Labadié",
+   "ville": "Marseille",
+   "code": "attribue",
+   "extrait": "RIGAU Y ROS Hyacinthe (attribué)"
+  },
+  {
+   "reference": "000PE016323",
+   "titre": "PORTRAIT D'HOMME EN BRUN (COUSTOU?)",
+   "musee": "musée Grobet-Labadié",
+   "ville": "Marseille",
+   "code": "ecole_de",
+   "extrait": "RIGAU Y ROS Hyacinthe (école)"
+  },
+  {
+   "reference": "000PE020891",
+   "titre": "Portrait d'un magistrat",
+   "musee": "musée des beaux-arts",
+   "ville": "Caen",
+   "code": "ecole_de",
+   "extrait": "RIGAUD Hyacinthe (école)"
+  },
+  {
+   "reference": "000PE020892",
+   "titre": "Portrait d'un homme de cour",
+   "musee": "musée des beaux-arts",
+   "ville": "Caen",
+   "code": "ecole_de",
+   "extrait": "RIGAUD Hyacinthe (école)"
+  },
+  {
+   "reference": "000PE021397",
+   "titre": "Le Sauveur du monde",
+   "musee": "musée des beaux-arts",
+   "ville": "Caen",
+   "code": "attribue",
+   "extrait": "RIGAUD Hyacinthe (attribué à)"
+  },
+  {
+   "reference": "00000056019",
+   "titre": "PORTRAIT D'HOMME",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "RIGAUD Hyacinthe (dit, attribué)"
+  },
+  {
+   "reference": "00000077264",
+   "titre": "PORTRAIT D'HOMME",
+   "musee": "musée Condé",
+   "ville": "Chantilly",
+   "code": "attribue",
+   "extrait": "RIGAUD Hyacinthe (dit, attribué)"
+  },
+  {
+   "reference": "01370006632",
+   "titre": "Portrait d'homme",
+   "musee": "musée des beaux-arts",
+   "ville": "Dijon",
+   "code": "attribue",
+   "extrait": "RIGAUD Hyacinthe (attribué)"
+  },
+  {
+   "reference": "50350035112",
+   "titre": "Portrait d'homme âgé",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "RIGAUD Hyacinthe (attribué à)"
+  },
+  {
+   "reference": "50350210070",
+   "titre": "Portrait d'un guerrier",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "RIGAUD Hyacinthe (attribué à)"
+  },
+  {
+   "reference": "50350210071",
+   "titre": "Portrait d'homme debout, coiffé d'un bonnet, la main appuyée sur un socle",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "RIGAUD Hyacinthe (attribué à)"
+  },
+  {
+   "reference": "04520000001",
+   "titre": "Portrait de François-Marie Peyrenc, marquis de Moras",
+   "musee": "musée Cévenol",
+   "ville": "Le Vigan",
+   "code": "attribue",
+   "extrait": "RIGAUD Hyacinthe (attribué à , entourage de)"
+  },
+  {
+   "reference": "04520000002",
+   "titre": "Portrait d'Abraham Peyrenc, marquis de Moras",
+   "musee": "musée Cévenol",
+   "ville": "Le Vigan",
+   "code": "attribue",
+   "extrait": "RIGAUD Hyacinthe (attribué à , entourage de)"
+  },
+  {
+   "reference": "10480002158",
+   "titre": "Louis XV enfant",
+   "musee": "musée des beaux-arts",
+   "ville": "Chambéry",
+   "code": "atelier_de",
+   "extrait": "RIGAUD Hyacinthe (atelier)"
+  },
+  {
+   "reference": "000PE023379",
+   "titre": "Trois études de cuirasses",
+   "musee": "musée des beaux-arts",
+   "ville": "Bordeaux",
+   "code": "atelier_de",
+   "extrait": "RIGAUD Hyacinthe (atelier)"
+  },
+  {
+   "reference": "07840001024",
+   "titre": "Jean de La Fontaine",
+   "musee": "musée Jean de la Fontaine",
+   "ville": "Château-Thierry",
+   "code": "atelier_de",
+   "extrait": "RIGAUD Hyacinthe (atelier)"
+  },
+  {
+   "reference": "07290022339",
+   "titre": "Etude de cuirasse",
+   "musee": "musée des beaux-arts",
+   "ville": "Rouen",
+   "code": "atelier_de",
+   "extrait": "RIGAUD Hyacinthe (atelier)"
+  },
+  {
+   "reference": "M0121003071",
+   "titre": "Portrait de Mademoiselle de Charolais (ou de Blois)",
+   "musee": "musée d'art Roger-Quillot",
+   "ville": "Clermont-Ferrand",
+   "code": "atelier_de",
+   "extrait": "Rigaud Hyacinthe (1659-1743) (atelier)"
+  },
+  {
+   "reference": "M0517000065",
+   "titre": "Portrait d'Alexis Piron (titre de l'inventaire, titre erroné) ; Portrait d'Antoine Coysevox (titre d'usage)",
+   "musee": "musée barrois",
+   "ville": "Bar-le-Duc",
+   "code": "attribue",
+   "extrait": "Rigaud Hyacinthe (1659-1743) (attribué à)"
+  },
+  {
+   "reference": "01370006641",
+   "titre": "Portrait de Louis de France, duc de Bourgogne",
+   "musee": "musée des beaux-arts",
+   "ville": "Dijon",
+   "code": "atelier_de",
+   "extrait": "RIGAUD Hyacinthe (atelier)"
+  },
+  {
+   "reference": "10160000824",
+   "titre": "René François de Beauvau du Rivau",
+   "musee": "musée d'Allard",
+   "ville": "Montbrison",
+   "code": "attribue",
+   "extrait": "Rigaud Hyacinthe (1659-1743) (attribué à)"
+  },
+  {
+   "reference": "07030017687",
+   "titre": "Portrait d'Emmanuel-Théodose de la Tour d'Auvergne, Duc, d'Albert et de Bouillon",
+   "musee": "musée d'art, histoire et archéologie d'Évreux",
+   "ville": "Évreux",
+   "code": "atelier_de",
+   "extrait": "Rigaud Hyacinthe (1659-1743) (atelier)"
+  },
+  {
+   "reference": "M0949000353",
+   "titre": "Portrait de l'abbé de Rancé",
+   "musee": "bibliothèque-musée Inguimbertine",
+   "ville": "Carpentras",
+   "code": "atelier_de",
+   "extrait": "Rigaud Hyacinthe (1659-1743) (atelier)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-07-28T14:49:21+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

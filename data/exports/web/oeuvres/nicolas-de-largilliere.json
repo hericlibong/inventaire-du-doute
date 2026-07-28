@@ -1,0 +1,225 @@
+{
+ "slug": "nicolas-de-largilliere",
+ "nom": "Nicolas de Largillière",
+ "doute": 23,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 11
+  },
+  {
+   "code": "point_interrogation",
+   "notices": 2
+  },
+  {
+   "code": "ecole_de",
+   "notices": 1
+  },
+  {
+   "code": "atelier_de",
+   "notices": 4
+  },
+  {
+   "code": "entourage_de",
+   "notices": 2
+  },
+  {
+   "code": "maniere_de",
+   "notices": 2
+  },
+  {
+   "code": "genre_de",
+   "notices": 1
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "000PE001687",
+   "titre": "LE PRESIDENT DE LAMOIGNON (1617-1677)",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "LARGILLIERE Nicolas de (atelier)"
+  },
+  {
+   "reference": "000PE007962",
+   "titre": "Noël Jouvenet (mort en 1716), sculpteur",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "code": "point_interrogation",
+   "extrait": "LARGILLIERE Nicolas de (?)"
+  },
+  {
+   "reference": "000PE009756",
+   "titre": "PORTRAIT DE RENEE ELISABETH PUCELLE, EPOUSE DE NICOLAS FREMONT D'AUNEIL",
+   "musee": "musée de Tessé",
+   "ville": "Le Mans",
+   "code": "attribue",
+   "extrait": "LARGILLIERE Nicolas de (attribué)"
+  },
+  {
+   "reference": "000PE009801",
+   "titre": "PORTRAIT D'UN MAGISTRAT",
+   "musee": "musée de Tessé",
+   "ville": "Le Mans",
+   "code": "attribue",
+   "extrait": "LARGILLIERE Nicolas de (attribué)"
+  },
+  {
+   "reference": "000PE012098",
+   "titre": "REUNION DE FAMILLE DANS UN PARC, DITE LA FAMILLE DE JULES HARDOUIN-MANSART",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "code": "attribue",
+   "extrait": "LARGILLIERE Nicolas de (attribué)"
+  },
+  {
+   "reference": "000PE013909",
+   "titre": "PORTRAIT D'UN GENTILHOMME",
+   "musee": "musée des beaux-arts",
+   "ville": "Marseille",
+   "code": "attribue",
+   "extrait": "LARGILLIERE Nicolas de (attribué à)"
+  },
+  {
+   "reference": "000PE016248",
+   "titre": "PORTRAIT DE JEUNE DAME",
+   "musee": "musée Grobet-Labadié",
+   "ville": "Marseille",
+   "code": "attribue",
+   "extrait": "LARGILLIERE Nicolas de (attribué)"
+  },
+  {
+   "reference": "00000077222",
+   "titre": "UN CHEVALIER DE L'ORDRE DE SAINT MICHEL",
+   "musee": "musée Condé",
+   "ville": "Chantilly",
+   "code": "attribue",
+   "extrait": "LARGILLIERE Nicolas de (attribué)"
+  },
+  {
+   "reference": "00000077218",
+   "titre": "PORTRAIT PRESUME DE CHARLES PARIS D'ORLEANS DUC DE LONGUEVILLE ET D'ESTOUVILLE",
+   "musee": "musée Condé",
+   "ville": "Chantilly",
+   "code": "attribue",
+   "extrait": "LARGILLIERE Nicolas de (attribué)"
+  },
+  {
+   "reference": "00000058402",
+   "titre": "ETUDE POUR LE PORTRAIT D'UN CHASSEUR ; JOSEPH ET LA FEMME DE PUTIPHAR (ESQUISSE, AU VERSO)",
+   "musee": "musée des beaux-arts",
+   "ville": "Rouen",
+   "code": "attribue",
+   "extrait": "LARGILLIERE Nicolas de (attribué)"
+  },
+  {
+   "reference": "M0347001435",
+   "titre": "Portrait d'homme à mi-corps",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Dole",
+   "code": "genre_de",
+   "extrait": "LARGILLIERE Nicolas de (genre de)"
+  },
+  {
+   "reference": "07430005647",
+   "titre": "Portrait de Jacques II Stuart, roi d'Ecosse",
+   "musee": "musée des Beaux-Arts",
+   "ville": "Nantes",
+   "code": "atelier_de",
+   "extrait": "LARGILLIERE Nicolas de (atelier)"
+  },
+  {
+   "reference": "M0525000544",
+   "titre": "Portrait de François de Wédrille",
+   "musee": "musée de la Princerie",
+   "ville": "Verdun",
+   "code": "attribue",
+   "extrait": "Largillière Nicolas de (1656-1746) (attribué à)"
+  },
+  {
+   "reference": "M0525000559",
+   "titre": "Portrait du lieutenant-général Descrochets",
+   "musee": "musée de la Princerie",
+   "ville": "Verdun",
+   "code": "attribue",
+   "extrait": "Largillière Nicolas de (1656-1746) (attribué à)"
+  },
+  {
+   "reference": "M0811000051",
+   "titre": "Madame Jassaud et ses enfants ; Portrait de femme avec ses deux enfants (autre titre)",
+   "musee": "Le Beffroi - musée Boucher de Perthes - Manessier",
+   "ville": "Abbeville",
+   "code": "atelier_de",
+   "extrait": "LARGILLIERE Nicolas de (atelier)"
+  },
+  {
+   "reference": "M0811000050",
+   "titre": "L'intendante",
+   "musee": "Le Beffroi - musée Boucher de Perthes - Manessier",
+   "ville": "Abbeville",
+   "code": "atelier_de",
+   "extrait": "LARGILLIERE Nicolas de (atelier)"
+  },
+  {
+   "reference": "01610009748",
+   "titre": "Portrait d'homme à la perruque",
+   "musee": "musée Rolin",
+   "ville": "Autun",
+   "code": "maniere_de",
+   "extrait": "LARGILLIERE Nicolas de (manière de)"
+  },
+  {
+   "reference": "01610009747",
+   "titre": "Portrait de femme",
+   "musee": "musée Rolin",
+   "ville": "Autun",
+   "code": "maniere_de",
+   "extrait": "LARGILLIERE Nicolas de (manière de)"
+  },
+  {
+   "reference": "07290020599",
+   "titre": "Femme au collier de perles ; Portrait de femme (autre titre)",
+   "musee": "musée des beaux-arts",
+   "ville": "Rouen",
+   "code": "ecole_de",
+   "extrait": "LARGILLIERE Nicolas de (école)"
+  },
+  {
+   "reference": "05620001274",
+   "titre": "Thomyris reine des Massagètes ; Thomyris, reine des Massagetes fait plonger la tête de Cyrus dans un vase rempli de sang",
+   "musee": "musée des Augustins",
+   "ville": "Toulouse",
+   "code": "point_interrogation",
+   "extrait": "LARGILLIERE Nicolas de (?)"
+  },
+  {
+   "reference": "M0536000447",
+   "titre": "Portrait d’homme",
+   "musee": "musée départemental d'art ancien et contemporain",
+   "ville": "Epinal",
+   "code": "entourage_de",
+   "extrait": "Largillière Nicolas de (1656-1746) (entourage de)"
+  },
+  {
+   "reference": "M0536000395",
+   "titre": "Portrait d'homme",
+   "musee": "musée départemental d'art ancien et contemporain",
+   "ville": "Epinal",
+   "code": "entourage_de",
+   "extrait": "Largillière Nicolas de (1656-1746) (entourage de)"
+  },
+  {
+   "reference": "07150000274",
+   "titre": "Portrait présumé du peintre Jean-Baptiste Jouvenet",
+   "musee": "Les Pêcheries, musée de Fécamp",
+   "ville": "Fécamp",
+   "code": "attribue",
+   "extrait": "LARGILLIERE, DE Nicolas (attribué à)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-07-28T14:49:21+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

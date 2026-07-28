@@ -1,0 +1,401 @@
+{
+ "slug": "simon-vouet",
+ "nom": "Simon Vouet",
+ "doute": 46,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 14
+  },
+  {
+   "code": "point_interrogation",
+   "notices": 4
+  },
+  {
+   "code": "ecole_de",
+   "notices": 19
+  },
+  {
+   "code": "atelier_de",
+   "notices": 5
+  },
+  {
+   "code": "entourage_de",
+   "notices": 4
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "00000055635",
+   "titre": "ASSOMPTION DE LA VIERGE",
+   "musee": "musée Crozatier",
+   "ville": "Le Puy-en-Velay",
+   "code": "attribue",
+   "extrait": "VOUET Simon (attribué)"
+  },
+  {
+   "reference": "000PE002919",
+   "titre": "LE CHRIST A LA COLONNE",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "VOUET Simon (attribué)"
+  },
+  {
+   "reference": "000PE009665",
+   "titre": "SAINTE VERONIQUE",
+   "musee": "musée de Tessé",
+   "ville": "Le Mans",
+   "code": "attribue",
+   "extrait": "VOUET Simon (attribué)"
+  },
+  {
+   "reference": "000PE023056",
+   "titre": "L'Homme à la figue",
+   "musee": "musée des beaux-arts",
+   "ville": "Caen",
+   "code": "attribue",
+   "extrait": "VOUET Simon (attribué à)"
+  },
+  {
+   "reference": "00000074411",
+   "titre": "LA GRAVURE",
+   "musee": "musée Goya",
+   "ville": "Castres",
+   "code": "attribue",
+   "extrait": "VOUET Simon (attribué)"
+  },
+  {
+   "reference": "00000074410",
+   "titre": "LA JOAILLERIE",
+   "musee": "musée Goya",
+   "ville": "Castres",
+   "code": "attribue",
+   "extrait": "VOUET Simon (attribué)"
+  },
+  {
+   "reference": "50510021364",
+   "titre": "Le Christ sauveur du monde",
+   "musee": "musée de l'Ecole nationale supérieure des beaux-arts",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "VOUET Simon (atelier)"
+  },
+  {
+   "reference": "50350210720",
+   "titre": "Etude pour un plafond : Les Noces d'Hercule et d'Hébé",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VOUET Simon (école)"
+  },
+  {
+   "reference": "50350210714",
+   "titre": "La Justice assise",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VOUET Simon (école)"
+  },
+  {
+   "reference": "50350210713",
+   "titre": "La Vierge debout tenant l'Enfant Jésus dans ses bras et saint Jean",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VOUET Simon (école)"
+  },
+  {
+   "reference": "50350214229",
+   "titre": "Joueuse de tambourin, en buste",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "VOUET Simon (attribué à)"
+  },
+  {
+   "reference": "50350210718",
+   "titre": "Femme drapée, accroupie, un enfant debout sur ses genoux",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VOUET Simon (école)"
+  },
+  {
+   "reference": "50350210716",
+   "titre": "Femme brandissant un bâton, entourée d enfants, et d'un homme à genoux",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VOUET Simon (école)"
+  },
+  {
+   "reference": "50350503492",
+   "titre": "Diverses études de tableaux",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VOUET Simon (école)"
+  },
+  {
+   "reference": "50350111557",
+   "titre": "Homme mort, soutenu, la tête renversée en arrière",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "VOUET Simon (attribué à)"
+  },
+  {
+   "reference": "50350210719",
+   "titre": "Repos de la Sainte Famille",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VOUET Simon (école)"
+  },
+  {
+   "reference": "50350210703",
+   "titre": "Persée délivrant Andromède",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "VOUET Simon (attribué à)"
+  },
+  {
+   "reference": "50350210712",
+   "titre": null,
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VOUET Simon (école)"
+  },
+  {
+   "reference": "50350104873",
+   "titre": "Tête de vieillard barbu",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "VOUET Simon (attribué à)"
+  },
+  {
+   "reference": "50350210715",
+   "titre": "Sainte Apollonie",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VOUET Simon (école)"
+  },
+  {
+   "reference": "50350210711",
+   "titre": "Jugement de Pâris",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VOUET Simon (école)"
+  },
+  {
+   "reference": "50350210710",
+   "titre": "Scène de sacrifice (?)",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VOUET Simon (école)"
+  },
+  {
+   "reference": "50350210704",
+   "titre": "Une Renommée dans les airs sonnant de la trompette",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "VOUET Simon (attribué à)"
+  },
+  {
+   "reference": "50350210717",
+   "titre": "Etudes d'un buste de femme, de deux pieds et de deux bras",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VOUET Simon (école)"
+  },
+  {
+   "reference": "50350210709",
+   "titre": "La Circoncision",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VOUET Simon (école)"
+  },
+  {
+   "reference": "50350214230",
+   "titre": "Diane et plusieurs nymphes au bain",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VOUET Simon (école)"
+  },
+  {
+   "reference": "50350104376",
+   "titre": "Allégorie de la Maison de Savoie",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VOUET Simon (école)"
+  },
+  {
+   "reference": "07430005210",
+   "titre": "Tobie et l'ange",
+   "musee": "musée des Beaux-Arts",
+   "ville": "Nantes",
+   "code": "entourage_de",
+   "extrait": "VOUET Simon (entourage)"
+  },
+  {
+   "reference": "07430005676",
+   "titre": "Saint Simon apôtre",
+   "musee": "musée des Beaux-Arts",
+   "ville": "Nantes",
+   "code": "attribue",
+   "extrait": "VOUET Simon (attribué à)"
+  },
+  {
+   "reference": "01810000027",
+   "titre": "La Présentation au temple ; Simeon ou le nunc dimitis. (ancien titre)",
+   "musee": "musée Greuze - hôtel-Dieu",
+   "ville": "Tournus",
+   "code": "point_interrogation",
+   "extrait": "VOUET Simon (?)"
+  },
+  {
+   "reference": "50110000275",
+   "titre": "Cérès, déesse des moissons",
+   "musee": "musée national Magnin",
+   "ville": "Dijon",
+   "code": "entourage_de",
+   "extrait": "VOUET Simon (entourage)"
+  },
+  {
+   "reference": "03070000188",
+   "titre": "Sainte tenant la palme du martyre",
+   "musee": "musée municipal",
+   "ville": "Châlons-en-Champagne",
+   "code": "atelier_de",
+   "extrait": "VOUET Simon (atelier)"
+  },
+  {
+   "reference": "M0332004174",
+   "titre": "Ange tourné vers la gauche, tendant un fruit",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "atelier_de",
+   "extrait": "VOUET Simon (atelier, dessinateur)"
+  },
+  {
+   "reference": "M0332004170",
+   "titre": "Femme assise dans les nuées tenant une palme dans la main droite",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "point_interrogation",
+   "extrait": "VOUET Simon (?)"
+  },
+  {
+   "reference": "M0332004171",
+   "titre": "Homme debout vu de face s'apprêtant à enfoncer un pieu ((?))",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "point_interrogation",
+   "extrait": "VOUET Simon (?)"
+  },
+  {
+   "reference": "M0332004173",
+   "titre": "Femme debout vue de dos, tenant un linge",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "atelier_de",
+   "extrait": "VOUET Simon (atelier, dessinateur)"
+  },
+  {
+   "reference": "M0332004172",
+   "titre": "Etude pour un motif décoratif",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "point_interrogation",
+   "extrait": "VOUET Simon (?)"
+  },
+  {
+   "reference": "M0345000311",
+   "titre": "Femme jouant du tambour basque",
+   "musee": "musée des Beaux-Arts",
+   "ville": "Lons-le-Saunier",
+   "code": "attribue",
+   "extrait": "VOUET Simon (attribué à)"
+  },
+  {
+   "reference": "08030002581",
+   "titre": "Saint Augustin devant la Vierge",
+   "musee": "musée Antoine Vivenel",
+   "ville": "Compiègne",
+   "code": "ecole_de",
+   "extrait": "VOUET Simon (école)"
+  },
+  {
+   "reference": "08030000599",
+   "titre": "Portrait d'homme",
+   "musee": "musée Antoine Vivenel",
+   "ville": "Compiègne",
+   "code": "ecole_de",
+   "extrait": "VOUET Simon (école)"
+  },
+  {
+   "reference": "02110002705",
+   "titre": "Etude d'homme drapé debout ; Figure d'homme drapé",
+   "musee": "musée des beaux-arts",
+   "ville": "Rennes",
+   "code": "ecole_de",
+   "extrait": "VOUET Simon (école)"
+  },
+  {
+   "reference": "02110003628",
+   "titre": "Femme assise et enfant à ses pieds ; Danaé",
+   "musee": "musée des beaux-arts",
+   "ville": "Rennes",
+   "code": "atelier_de",
+   "extrait": "VOUET Simon (atelier)"
+  },
+  {
+   "reference": "M0072003317",
+   "titre": "Sainte Madeleine",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Libourne",
+   "code": "entourage_de",
+   "extrait": "VOUET Simon (entourage de)"
+  },
+  {
+   "reference": "07290021974",
+   "titre": "Adoration des Bergers",
+   "musee": "musée des beaux-arts",
+   "ville": "Rouen",
+   "code": "ecole_de",
+   "extrait": "VOUET Simon (école)"
+  },
+  {
+   "reference": "01370014859",
+   "titre": "Portrait d'un artiste ou d'un collectionneur",
+   "musee": "musée des beaux-arts",
+   "ville": "Dijon",
+   "code": "entourage_de",
+   "extrait": "VOUET Simon (entourage)"
+  },
+  {
+   "reference": "01160005606",
+   "titre": "Judith",
+   "musee": "musée Crozatier",
+   "ville": "Le Puy-en-Velay",
+   "code": "attribue",
+   "extrait": "VOUET Simon (attribué à)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-07-28T14:49:21+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

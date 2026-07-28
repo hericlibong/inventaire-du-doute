@@ -1,69 +1,233 @@
 <script>
+	import { tick } from 'svelte';
+	import { base } from '$app/paths';
 	import { lienPop } from '$lib/joconde.js';
 	import { FAMILLE_PUBLIC, ORDRE_FAMILLES, notices } from '$lib/familles-public.js';
+	import { fenetrePagination } from '$lib/pagination.js';
 
-	// Vitrine « Œuvres » (décision 2026-07-11) : quelques cas concrets derrière
-	// les points du graphique. Chaque entrée montre une œuvre réelle avec les MOTS
-	// EXACTS publiés par son musée — l'extrait est la seule citation littérale de
-	// l'application — et un lien vers sa fiche publique POP. Les exemples sont pris
-	// automatiquement dans la base (les premiers rencontrés), pas choisis à la main :
-	// règle documentée dans docs/methode-et-limites.md. Le code de forme vient de
-	// l'export : le front ne re-parse JAMAIS les extraits.
+	// Onglet « Œuvres » (refonte 2026-07-28) : la TOTALITÉ des œuvres concernées
+	// par le maître, pas quelques exemples. Le fichier oeuvres/<slug>.json est
+	// chargé à la demande (jamais celui des autres maîtres), filtrable par mention
+	// et paginé. Chaque entrée montre les MOTS EXACTS publiés par le musée — le
+	// verbatim est la seule citation littérale de l'application — et un lien POP.
 	//
-	// Direction B (2026-07-17) : composition éditoriale CONTINUE (entrées séparées
-	// par des filets, pas une grille de cartes blanches). Les mots publiés par les
-	// musées sont la matière : le verbatim est en tête de hiérarchie. Un emplacement
-	// média est réservé par entrée pour de futures reproductions — jamais inventé.
+	// La composition éditoriale est celle de la direction B (entrées séparées par
+	// des filets, pas une grille de cartes ; un emplacement média réservé, jamais
+	// d'image inventée). Le front ne re-classe ni ne re-parse rien : la famille
+	// (`code`) et l'extrait viennent tels quels de l'export (decisions.md 2026-07-28).
 	let { maitre } = $props();
 
-	// Entrées dans l'ordre de l'axe du graphique. Kicker et pastille = les mêmes mots
-	// et la même couleur que le point correspondant.
-	// Garde-fou : une notice ne paraît qu'une fois, même si elle nomme le maître sous
-	// deux graphies (le pipeline dédoublonne déjà — ceci évite qu'une régression de
-	// l'export casse la vitrine, la référence servant de clé de liste).
-	const rang = (code) => ORDRE_FAMILLES.indexOf(code);
-	const cartes = $derived(
-		[...new Map(maitre.exemples.map((ex) => [ex.reference, ex])).values()]
-			.sort((a, b) => rang(a.code) - rang(b.code))
-			.map((ex) => ({
-				...ex,
-				header: FAMILLE_PUBLIC[ex.code].header,
-				couleur: FAMILLE_PUBLIC[ex.code].couleur
-			}))
+	const PAR_PAGE = 8;
+
+	let statut = $state('chargement'); // 'chargement' | 'ok' | 'erreur'
+	let fichier = $state(null); // contenu de oeuvres/<slug>.json
+	let familleActive = $state(null); // null = « Toutes »
+	let page = $state(1);
+	let jeton = 0; // anti-course : seule la dernière requête lancée fait foi
+	let hautListe; // ancre de recentrage après un changement de page/filtre
+
+	// Rang d'une famille dans l'ordre public (axe du graphique) : sert au tri des
+	// puces ET des œuvres. Un code inconnu (jamais produit aujourd'hui) va en fin.
+	const rang = (code) => {
+		const i = ORDRE_FAMILLES.indexOf(code);
+		return i === -1 ? ORDRE_FAMILLES.length : i;
+	};
+	const fam = (code) => FAMILLE_PUBLIC[code] ?? { header: '', couleur: 'var(--couleur-copie)' };
+
+	function charger(slug) {
+		const monJeton = ++jeton;
+		statut = 'chargement';
+		fichier = null;
+		fetch(`${base}/data/oeuvres/${slug}.json`)
+			.then((r) => {
+				if (!r.ok) throw new Error(String(r.status));
+				return r.json();
+			})
+			.then((json) => {
+				if (monJeton === jeton) {
+					fichier = json;
+					statut = 'ok';
+				}
+			})
+			.catch(() => {
+				if (monJeton === jeton) statut = 'erreur';
+			});
+	}
+
+	// Changement d'artiste : on repart de zéro (filtre + page) et on recharge.
+	$effect(() => {
+		const slug = maitre.slug;
+		familleActive = null;
+		page = 1;
+		charger(slug);
+	});
+
+	// Œuvres dans l'ordre public des mentions (tri stable : l'ordre de rencontre
+	// est conservé au sein d'une même famille).
+	const oeuvres = $derived(
+		[...(fichier?.oeuvres ?? [])].sort((a, b) => rang(a.code) - rang(b.code))
 	);
 
+	// Puces de filtre : « Toutes » puis les familles PRÉSENTES, ordre public,
+	// avec leur effectif. Les familles absentes ne paraissent pas.
+	const puces = $derived([
+		{ code: null, label: 'Toutes', n: maitre.doute },
+		...(fichier?.familles ?? [])
+			.filter((f) => FAMILLE_PUBLIC[f.code])
+			.sort((a, b) => rang(a.code) - rang(b.code))
+			.map((f) => ({ code: f.code, label: fam(f.code).header, n: f.notices }))
+	]);
+
+	const oeuvresFiltrees = $derived(
+		familleActive ? oeuvres.filter((o) => o.code === familleActive) : oeuvres
+	);
+	const nbFiltre = $derived(oeuvresFiltrees.length);
+	const nbPages = $derived(Math.max(1, Math.ceil(nbFiltre / PAR_PAGE)));
+	// Bornes de la tranche affichée (la page est déjà remise à 1 aux changements).
+	const debut = $derived((page - 1) * PAR_PAGE);
+	const pageOeuvres = $derived(oeuvresFiltrees.slice(debut, debut + PAR_PAGE));
+	const premier = $derived(nbFiltre === 0 ? 0 : debut + 1);
+	const dernier = $derived(Math.min(debut + PAR_PAGE, nbFiltre));
+	const fenetre = $derived(fenetrePagination(page, nbPages));
+
+	// Recentre la lecture au début de la liste, sans à-coup, et y place le focus
+	// (l'annonce du changement pour les lecteurs d'écran passe par ce déplacement).
+	async function versHautListe() {
+		await tick();
+		hautListe?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+		hautListe?.focus({ preventScroll: true });
+	}
+
+	function choisirFamille(code) {
+		if (familleActive === code) return;
+		familleActive = code;
+		page = 1;
+		versHautListe();
+	}
+
+	function allerPage(p) {
+		if (p < 1 || p > nbPages || p === page) return;
+		page = p;
+		versHautListe();
+	}
+
 	// « musée, ville » en gérant les champs manquants de la base.
-	const lieu = (ex) => [ex.musee, ex.ville].filter(Boolean).join(', ');
+	const lieu = (o) => [o.musee, o.ville].filter(Boolean).join(', ');
 </script>
 
 <section class="vitrine">
-	<h3>Quelques œuvres derrière les points</h3>
-	<p class="amorce">
-		Quelques exemples issus des fiches Joconde, avec les mots publiés par les musées.
-	</p>
+	<header class="tete">
+		<h3>Œuvres concernées</h3>
+		<p class="total">
+			<strong>{maitre.doute}</strong>
+			œuvre{maitre.doute === 1 ? '' : 's'} portent une mention prudente pour ce nom.
+		</p>
+	</header>
 
-	<ol class="entrees">
-		{#each cartes as c (c.reference)}
-			<li class="entree">
-				<!-- Emplacement réservé pour une future reproduction (droits par œuvre à
-				     clarifier) : jamais une image inventée. -->
-				<div class="media" aria-hidden="true">
-					<span>reproduction<br />non affichée</span>
-				</div>
-				<div class="corps">
-					<p class="kicker">
-						<span class="pastille" style="background: {c.couleur}"></span>{c.header}
-					</p>
-					<h4 class="titre">{c.titre ?? 'Sans titre'}</h4>
-					{#if lieu(c)}<p class="lieu">{lieu(c)}</p>{/if}
-					<p class="verbatim" style="border-left-color: {c.couleur}">«&nbsp;{c.extrait}&nbsp;»</p>
-					<a class="lien-fiche" href={lienPop(c.reference)} target="_blank" rel="noopener">
-						Voir la fiche publique sur POP&nbsp;→
-					</a>
-				</div>
-			</li>
-		{/each}
-	</ol>
+	{#if statut === 'chargement'}
+		<p class="etat" role="status">Chargement des œuvres…</p>
+	{:else if statut === 'erreur'}
+		<p class="etat erreur" role="alert">
+			Les œuvres n'ont pas pu être chargées.
+			<button type="button" class="reessayer" onclick={() => charger(maitre.slug)}>
+				Réessayer
+			</button>
+		</p>
+	{:else}
+		<!-- Filtres : « Toutes » + une puce par mention présente, ordre public. -->
+		<div class="filtres" role="group" aria-label="Filtrer par mention">
+			{#each puces as p (p.code ?? 'toutes')}
+				<button
+					type="button"
+					class="puce"
+					class:actif={familleActive === p.code}
+					aria-pressed={familleActive === p.code}
+					onclick={() => choisirFamille(p.code)}
+				>
+					{#if p.code}<span class="pastille" style="background: {fam(p.code).couleur}"></span>{/if}
+					<span class="puce-label">{p.label}</span>
+					<span class="puce-n">{p.n}</span>
+				</button>
+			{/each}
+		</div>
+
+		<!-- Ancre de recentrage + décompte de la tranche affichée. -->
+		<p class="decompte" bind:this={hautListe} tabindex="-1">
+			{#if nbFiltre === 0}
+				Aucune œuvre pour cette mention.
+			{:else}
+				Œuvres <strong>{premier}</strong> à <strong>{dernier}</strong> sur <strong>{nbFiltre}</strong>
+			{/if}
+		</p>
+
+		{#if nbFiltre === 0}
+			<p class="etat vide">Aucune œuvre ne correspond au filtre choisi.</p>
+		{:else}
+			<ol class="entrees">
+				{#each pageOeuvres as o (o.reference)}
+					<li class="entree">
+						<!-- Emplacement réservé pour une future reproduction (droits par œuvre à
+						     clarifier) : jamais une image inventée. -->
+						<div class="media" aria-hidden="true">
+							<span>reproduction<br />non affichée</span>
+						</div>
+						<div class="corps">
+							<p class="kicker">
+								<span class="pastille" style="background: {fam(o.code).couleur}"></span>{fam(o.code).header}
+							</p>
+							<h4 class="titre">{o.titre ?? 'Sans titre'}</h4>
+							{#if lieu(o)}<p class="lieu">{lieu(o)}</p>{/if}
+							<p class="verbatim" style="border-left-color: {fam(o.code).couleur}">«&nbsp;{o.extrait}&nbsp;»</p>
+							<a class="lien-fiche" href={lienPop(o.reference)} target="_blank" rel="noopener">
+								Voir la fiche publique sur POP&nbsp;→
+							</a>
+						</div>
+					</li>
+				{/each}
+			</ol>
+
+			{#if nbPages > 1}
+				<nav class="pagination" aria-label="Pages d'œuvres">
+					<button
+						type="button"
+						class="nav-bord"
+						onclick={() => allerPage(page - 1)}
+						disabled={page === 1}
+					>
+						‹&nbsp;Précédente
+					</button>
+					<ul class="pages">
+						{#each fenetre as item, i (item === '…' ? `e${i}` : item)}
+							<li>
+								{#if item === '…'}
+									<span class="ellipse" aria-hidden="true">…</span>
+								{:else}
+									<button
+										type="button"
+										class="page-num"
+										class:actif={item === page}
+										aria-current={item === page ? 'page' : undefined}
+										aria-label="Page {item}"
+										onclick={() => allerPage(item)}
+									>
+										{item}
+									</button>
+								{/if}
+							</li>
+						{/each}
+					</ul>
+					<button
+						type="button"
+						class="nav-bord"
+						onclick={() => allerPage(page + 1)}
+						disabled={page === nbPages}
+					>
+						Suivante&nbsp;›
+					</button>
+				</nav>
+			{/if}
+		{/if}
+	{/if}
 
 	<!-- Copies « d'après », à part : des copies assumées, pas des doutes. Hors gamme
 	     du doute (couleur neutre), jamais mêlées aux entrées. -->
@@ -90,16 +254,121 @@
 </section>
 
 <style>
+	.tete {
+		margin: 0 0 var(--espace-4);
+	}
+
 	.vitrine h3 {
 		font-family: var(--police-titre);
 		margin: 0 0 0.15rem;
 		font-size: var(--taille-l);
 	}
 
-	.amorce {
-		margin: 0 0 var(--espace-4);
+	.total {
+		margin: 0;
 		color: var(--couleur-encre-douce);
 		font-size: var(--taille-s);
+	}
+
+	/* --- États (chargement, erreur, vide) : mêmes marges, ton mesuré. --- */
+	.etat {
+		margin: var(--espace-4) 0;
+		font-size: var(--taille-s);
+		color: var(--couleur-encre-douce);
+	}
+
+	.etat.erreur {
+		color: var(--couleur-encre);
+	}
+
+	.reessayer {
+		margin-left: var(--espace-3);
+		font-family: var(--police-ui);
+		font-size: var(--taille-xs);
+		background: none;
+		border: var(--filet);
+		border-radius: 2px;
+		padding: 0.1rem 0.5rem;
+		cursor: pointer;
+		color: var(--accent-cobalt);
+	}
+
+	.reessayer:hover {
+		border-color: var(--accent-cobalt);
+	}
+
+	/* --- Filtres : puces cliquables, la mention active tient par la forme ET la
+	   couleur (bordure épaisse + gras), jamais par la seule couleur. --- */
+	.filtres {
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--espace-3);
+		margin: 0 0 var(--espace-4);
+	}
+
+	.puce {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.4rem;
+		padding: 0.28rem 0.6rem;
+		font-family: var(--police-ui);
+		font-size: var(--taille-xs);
+		background: var(--surface-carte);
+		border: 1px solid var(--couleur-trait);
+		border-radius: 999px;
+		cursor: pointer;
+		color: var(--couleur-encre);
+	}
+
+	.puce:hover {
+		border-color: var(--couleur-encre-douce);
+	}
+
+	.puce.actif {
+		border-color: var(--accent-cobalt);
+		border-width: 2px;
+		padding: calc(0.28rem - 1px) calc(0.6rem - 1px); /* compense la bordure */
+		font-weight: 700;
+	}
+
+	.puce:focus-visible {
+		outline: var(--focus-anneau);
+		outline-offset: 2px;
+	}
+
+	.puce-n {
+		font-variant-numeric: tabular-nums;
+		color: var(--couleur-encre-douce);
+	}
+
+	.puce.actif .puce-n {
+		color: inherit;
+	}
+
+	.pastille {
+		width: 0.6rem;
+		height: 0.6rem;
+		border-radius: 50%;
+		flex: none;
+	}
+
+	/* Décompte de tranche : sert aussi d'ancre de recentrage (tabindex=-1). */
+	.decompte {
+		margin: 0 0 var(--espace-3);
+		font-family: var(--police-ui);
+		font-size: var(--taille-xs);
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		color: var(--couleur-encre-douce);
+	}
+
+	.decompte:focus-visible {
+		outline: var(--focus-anneau);
+		outline-offset: 3px;
+	}
+
+	.etat.vide {
+		font-style: italic;
 	}
 
 	/* Liste continue : entrées séparées par un filet, pas des cartes détachées. */
@@ -155,13 +424,6 @@
 		gap: 0.4rem;
 	}
 
-	.pastille {
-		width: 0.6rem;
-		height: 0.6rem;
-		border-radius: 50%;
-		flex: none;
-	}
-
 	/* Titre de l'œuvre : repère, sous le verbatim dans la hiérarchie. Souvent en
 	   capitales dans la base — corps modéré pour qu'il ne crie pas. */
 	.titre {
@@ -199,6 +461,71 @@
 
 	.lien-fiche:hover {
 		border-bottom-color: var(--accent-cobalt);
+	}
+
+	/* --- Pagination : bornes + fenêtre compacte, page active repérable sans la
+	   seule couleur (gras + soulignement + aria-current). --- */
+	.pagination {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: var(--espace-3);
+		margin-top: var(--espace-5);
+		padding-top: var(--espace-4);
+		border-top: var(--filet);
+	}
+
+	.pages {
+		list-style: none;
+		display: flex;
+		align-items: center;
+		gap: 0.15rem;
+		margin: 0;
+		padding: 0;
+	}
+
+	.nav-bord,
+	.page-num {
+		font-family: var(--police-ui);
+		font-size: var(--taille-s);
+		background: none;
+		border: 1px solid transparent;
+		border-radius: 2px;
+		padding: 0.2rem 0.5rem;
+		cursor: pointer;
+		color: var(--couleur-encre);
+	}
+
+	.nav-bord {
+		color: var(--accent-cobalt);
+	}
+
+	.nav-bord:disabled {
+		color: var(--couleur-trait);
+		cursor: default;
+	}
+
+	.page-num:hover:not(.actif),
+	.nav-bord:hover:not(:disabled) {
+		border-color: var(--couleur-trait);
+	}
+
+	.page-num.actif {
+		font-weight: 700;
+		color: var(--accent-cobalt);
+		border-bottom: 2px solid var(--accent-cobalt);
+		border-radius: 0;
+	}
+
+	.nav-bord:focus-visible,
+	.page-num:focus-visible {
+		outline: var(--focus-anneau);
+		outline-offset: 2px;
+	}
+
+	.ellipse {
+		padding: 0 0.2rem;
+		color: var(--couleur-encre-douce);
 	}
 
 	/* Copies « d'après » : bloc distinct, couleur neutre, filet à gauche. */
