@@ -15,81 +15,61 @@
 
 	// Nombre de maîtres dérivé des données DÉJÀ chargées (artistes.json) — pas de
 	// seconde source dans le composant (decisions.md 2026-07-19). Le détail du seuil
-	// et le total de notices ont QUITTÉ l'introduction le 2026-07-20 : ils retardaient
-	// l'exploration et vivent désormais dans la page Méthode, atteignable par le lien
-	// « Pourquoi ces N artistes ? ».
+	// et le total de notices ont QUITTÉ l'introduction le 2026-07-20 : ils vivent
+	// dans la page Méthode, atteignable par le lien « Pourquoi ces N artistes ? ».
 	const nbMaitres = artistes.length;
 
-	// Le nombre s'écrit en toutes lettres dans le corps du texte (CLAUDE.md : écrire
-	// les chiffres en français quand le récit prime). La table figée d'ici (24 à 30)
-	// est tombée en panne au passage à soixante-trois maîtres : la conversion vit
-	// maintenant dans joconde.js et suit la liste, quelle que soit sa taille.
+	// Le nombre s'écrit en toutes lettres dans le corps du texte (CLAUDE.md).
 	const nbMaitresTexte = enLettresCap(nbMaitres);
-
-	// Le folio « Nº 4 / 27 · cote M5031 » a été retiré (2026-07-20) : ni le rang dans
-	// la liste ni la cote du musée principal ne disent quoi que ce soit du profil.
-	// Le profil commence par le portrait, le nom et la ligne d'identité.
 
 	// Onglets de la fiche maître : profil (graphique) · oeuvres · musees.
 	let vue = $state('profil');
 
 	// Un premier maître est sélectionné à l'ouverture (decisions.md 2026-07-18 quater) :
-	// la page est un espace d'exploration DÈS l'arrivée, pas un guide. On garde les
-	// proportions de la refonte du 2026-07-18 (ter) — graphe borné, scène héros — mais
-	// on abandonne l'état « guide » (seconde introduction supprimée). Recherche/tri/liste
-	// = Répertoire (rail de gauche).
+	// la page est un espace d'exploration DÈS l'arrivée.
 	let selection = $state(artistes[0].nom);
 	const maitre = $derived(artistes.find((a) => a.nom === selection));
 </script>
 
+<!-- Disposition refondue (2026-07-28) : une SEULE grille continue à deux colonnes,
+     mêmes limites sur toute la page. L'introduction (titre + texte + lien Méthode)
+     rejoint la colonne gauche, au-dessus de la recherche et de la liste ; plus de
+     bandeau horizontal pleine largeur ni de séparation entre entrée et exploration.
+     La colonne droite porte le profil de l'artiste sélectionné. -->
 <div class="page">
-	<!-- PREMIER TEMPS — entrée éditoriale (titre à gauche, texte à droite sur ordinateur).
-	     Aucun encadré : la composition tient par la typographie et l'espace. Le titre
-	     public de la rubrique est « Explorer les N maîtres » ; l'appellation « Les presque »
-	     est abandonnée (decisions.md 2026-07-19). -->
-	<header class="intro">
-		<div class="intro-titre">
-			<h1>Explorer les {nbMaitres} maîtres</h1>
-		</div>
-		<div class="intro-texte">
-			<!-- Entrée resserrée (2026-07-20) : deux paragraphes courts, puis un lien vers
-			     la Méthode. Le détail du seuil, le total de notices et le mode d'emploi ont
-			     quitté l'introduction — ils retardaient l'exploration et vivent à leur place
-			     (page Méthode). Seule la précaution reste, en note discrète. -->
-			<p>
-				Dans les inventaires, le nom d'un artiste ne désigne pas toujours l'auteur certain
-				d'une œuvre. «&nbsp;Attribué à&nbsp;», «&nbsp;de son atelier&nbsp;», «&nbsp;de son
-				école&nbsp;» ou «&nbsp;à sa manière&nbsp;» décrivent différents degrés de proximité
-				avec le maître.
-			</p>
-			<p>
-				{nbMaitresTexte} artistes réunissent ici assez d'œuvres pour être explorés et
-				comparés.
-			</p>
-			<p class="renvoi">
-				<a href="{base}/methode#les-maitres">Pourquoi ces {nbMaitres} artistes&nbsp;?&nbsp;→</a>
-			</p>
-			<p class="prudence">
-				Le projet reprend les formulations publiées par les musées&nbsp;; il ne réattribue
-				aucune œuvre.
-			</p>
-		</div>
-	</header>
-
-	<!-- SECOND TEMPS — l'exploration. Séparée du premier temps par un filet et de
-	     l'espace (pas un nouveau bandeau) ; introduite par un intitulé simple. L'outil
-	     lui-même (répertoire + scène + onglets + vues) est inchangé. -->
-	<section class="exploration" aria-labelledby="titre-outil">
-		<h2 id="titre-outil" class="outil-titre">Choisir un artiste</h2>
-
 	<div class="grille">
-		<!-- Répertoire en rail : recherche + tri + liste + microprofils. -->
-		<Repertoire {artistes} bind:selection />
+		<!-- COLONNE GAUCHE : entrée éditoriale, puis sélection (recherche + tri + liste). -->
+		<div class="colonne-gauche">
+			<header class="intro">
+				<h1>Explorer les {nbMaitres} maîtres</h1>
+				<p>
+					Dans les inventaires, le nom d'un artiste ne désigne pas toujours l'auteur certain
+					d'une œuvre. «&nbsp;Attribué à&nbsp;», «&nbsp;de son atelier&nbsp;», «&nbsp;de son
+					école&nbsp;» ou «&nbsp;à sa manière&nbsp;» décrivent différents degrés de proximité
+					avec le maître.
+				</p>
+				<p>
+					{nbMaitresTexte} artistes réunissent ici assez d'œuvres pour être explorés et
+					comparés.
+				</p>
+				<p class="renvoi">
+					<a href="{base}/methode#les-maitres">Pourquoi ces {nbMaitres} artistes&nbsp;?&nbsp;→</a>
+				</p>
+				<p class="prudence">
+					Le projet reprend les formulations publiées par les musées&nbsp;; il ne réattribue
+					aucune œuvre.
+				</p>
+			</header>
 
-		{#if maitre}
-			<section class="zone">
+			<!-- Sélection : intitulé simple, puis recherche + tri + liste (Repertoire). -->
+			<h2 class="outil-titre">Choisir un artiste</h2>
+			<Repertoire {artistes} bind:selection />
+		</div>
 
-				<!-- Scène du maître : portrait + nom + synthèse + chiffres (hors onglets). -->
+		<!-- COLONNE DROITE : profil de l'artiste — portrait/identité + chiffres, onglets,
+		     contenu de l'onglet actif. Le graphe et ses interactions sont inchangés. -->
+		<div class="colonne-droite">
+			{#if maitre}
 				<BandeauMaitre {maitre} portrait={portraits[maitre.nom]} />
 
 				<div class="bascule" role="tablist" aria-label="Choisir la vue">
@@ -113,92 +93,91 @@
 						<CarteMaitre {maitre} />
 					{/if}
 				</div>
-			</section>
-		{/if}
+			{/if}
+		</div>
 	</div>
-	</section>
 </div>
 
 <style>
-	/* Pleine page : gouttières propres, pas de colonne centrale. */
 	.page {
-		padding: var(--espace-5) clamp(1rem, 4vw, 3rem) var(--espace-6);
+		/* padding horizontal porté par <main> (layout) ; ici, seulement le vertical. */
+		padding-block: var(--espace-4) var(--espace-6);
 	}
 
-	/* --- PREMIER TEMPS : entrée éditoriale, deux colonnes (titre | texte). --- */
-	.intro {
+	/* --- Grille continue à deux colonnes, mêmes limites sur toute la page. --- */
+	.grille {
 		display: grid;
-		grid-template-columns: minmax(14rem, 22rem) minmax(0, 42rem);
-		gap: clamp(1.5rem, 4vw, 3.5rem);
+		grid-template-columns: clamp(16.5rem, 22vw, 20rem) minmax(0, 1fr);
+		gap: clamp(1.75rem, 3.5vw, 3rem);
 		align-items: start;
-		max-width: 72rem;
-		/* Respire, mais sans repousser l'exploration hors du premier écran. */
-		margin: var(--espace-2) 0 clamp(2.25rem, 5vh, 3.5rem);
 	}
 
-	.intro-titre h1 {
+	/* Colonne gauche : sticky sur desktop, elle se fige quand on défile ; sa hauteur
+	   est bornée à l'écran et son contenu (surtout la liste) défile en interne, sans
+	   bloquer le défilement principal de la colonne droite. */
+	.colonne-gauche {
+		position: sticky;
+		top: var(--espace-4);
+		align-self: start;
+		max-height: calc(100vh - var(--espace-4) - var(--espace-5));
+		overflow-y: auto;
+		overscroll-behavior: contain;
+		padding-right: 0.4rem; /* air pour la barre de défilement interne */
+	}
+
+	/* Titre de rubrique : aligné en haut de colonne (donc sur le portrait à droite). */
+	.intro h1 {
 		font-family: var(--police-titre);
-		font-size: clamp(1.9rem, 3.4vw, var(--taille-xxl));
-		line-height: 1.05;
-		margin: 0;
-	}
-
-	.intro-texte p {
-		font-size: var(--taille-m);
-		line-height: 1.6;
+		font-size: clamp(1.6rem, 2.2vw, 2.1rem);
+		line-height: 1.06;
 		margin: 0 0 var(--espace-4);
 	}
 
-	.intro-texte p:last-child {
-		margin-bottom: 0;
+	.intro p {
+		font-size: var(--taille-m);
+		line-height: 1.55;
+		margin: 0 0 var(--espace-3);
 	}
 
-	/* Renvoi vers la Méthode : discret, registre UI, jamais un bouton. Le détail du
-	   seuil vit là-bas, pas dans l'entrée de la rubrique. */
-	.intro-texte p.renvoi {
-		margin: 0;
+	/* Renvoi vers la Méthode : discret, registre UI, jamais un bouton. */
+	.intro p.renvoi {
+		margin: var(--espace-2) 0 var(--espace-3);
 		font-family: var(--police-ui);
 		font-size: var(--taille-s);
 	}
 
-	.intro-texte p.renvoi a {
+	.intro p.renvoi a {
 		color: var(--accent-cobalt);
 		text-decoration: none;
 		border-bottom: 1px solid transparent;
 	}
 
-	.intro-texte p.renvoi a:hover,
-	.intro-texte p.renvoi a:focus-visible {
+	.intro p.renvoi a:hover,
+	.intro p.renvoi a:focus-visible {
 		border-bottom-color: var(--accent-cobalt);
 	}
 
-	/* Prudence commune : note secondaire et discrète (pas un encadré d'alerte). */
-	.intro-texte p.prudence {
+	/* Prudence : note secondaire et discrète (pas un encadré d'alerte). */
+	.intro p.prudence {
+		margin: 0 0 var(--espace-4);
 		font-size: var(--taille-s);
 		line-height: 1.5;
 		color: var(--couleur-encre-douce);
 		font-style: italic;
-		margin-top: var(--espace-4);
 	}
 
-	/* --- SECOND TEMPS : l'exploration, détachée par un filet + de l'espace. --- */
-	.exploration {
-		border-top: var(--filet);
-		padding-top: clamp(1.75rem, 4vh, 2.75rem);
-	}
-
-	/* Intitulé simple de l'outil : registre UI, repère cobalt discret devant. */
+	/* Intitulé de l'outil de sélection : registre UI, repère cobalt devant. */
 	.outil-titre {
 		display: flex;
 		align-items: center;
 		gap: var(--espace-3);
+		margin: var(--espace-3) 0 var(--espace-4);
 		font-family: var(--police-ui);
 		font-size: var(--taille-s);
 		font-weight: 700;
 		letter-spacing: 0.12em;
 		text-transform: uppercase;
 		color: var(--couleur-encre);
-		margin: 0 0 var(--espace-5);
 	}
 
 	.outil-titre::before {
@@ -209,34 +188,9 @@
 		flex: none;
 	}
 
-	@media (max-width: 760px) {
-		/* Mobile : titre, texte et note s'empilent ; « Choisir un artiste » marque le
-		   passage à l'outil. */
-		.intro {
-			grid-template-columns: 1fr;
-			gap: var(--espace-4);
-			margin-bottom: clamp(1.75rem, 5vh, 2.5rem);
-		}
-	}
-
-	/* Zone principale pleine largeur : rail répertoire + scène/vues étalées. */
-	.grille {
-		display: grid;
-		grid-template-columns: minmax(14rem, 17rem) 1fr;
-		gap: var(--espace-6);
-		align-items: start;
-	}
-
-	@media (max-width: 760px) {
-		.grille {
-			grid-template-columns: 1fr;
-			gap: var(--espace-5);
-		}
-	}
-
-	/* La zone de droite : scène du maître (portrait + synthèse) puis onglets + vue. */
-	.zone {
-		container-type: inline-size; /* seuil du bandeau sur la largeur réelle */
+	/* Colonne droite : conteneur de requête pour le bandeau (portrait / identité). */
+	.colonne-droite {
+		container-type: inline-size;
 		min-width: 0;
 	}
 
@@ -275,17 +229,31 @@
 		outline-offset: 3px;
 	}
 
-	/* Le graphe est une figure de SUPPORT, pas le héros (la scène raconte déjà le
-	   maître). Borné à ~640 px, aligné à gauche : fin du graphe qui remplit ~900 px. */
+	/* Le graphe est une figure de SUPPORT : borné, aligné à gauche. */
 	.vue {
 		margin-top: var(--espace-4);
 		max-width: 42rem;
 	}
 
-	/* Onglet Profil seulement (2026-07-20) : la légende est passée au flanc du graphe,
-	   la zone doit donc porter les deux colonnes. Le graphe garde sa proportion (≈ 70 %)
-	   au lieu de rétrécir dans les 42 rem. Œuvres et Musées gardent leur largeur. */
+	/* Onglet Profil : la légende est au flanc du graphe, la vue porte donc les deux
+	   colonnes (le graphe garde sa proportion). Œuvres et Musées gardent leur largeur. */
 	.vue-profil {
 		max-width: 60rem;
+	}
+
+	/* --- Mobile (≤ 720 px, seuil du Repertoire) : une seule colonne. Ordre :
+	   titre + intro, sélecteur repliable, profil, onglets, contenu actif. Le
+	   Repertoire est replié d'emblée → la liste ne s'affiche pas avant le profil. --- */
+	@media (max-width: 720px) {
+		.grille {
+			grid-template-columns: 1fr;
+			gap: var(--espace-5);
+		}
+		.colonne-gauche {
+			position: static;
+			max-height: none;
+			overflow: visible;
+			padding-right: 0;
+		}
 	}
 </style>
