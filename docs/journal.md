@@ -2,6 +2,33 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-29 — Des reproductions ouvertes, mais pas sur POP
+
+Deux temps dans la même journée. D'abord un audit : parmi les 3 668 œuvres prudentes, combien
+ont sur POP une photo qu'on a le droit d'afficher ? On a lu, notice par notice, le seul champ
+« Crédits photographiques ». Réponse nette et un peu brutale : **aucune**. La photographie de nos
+maîtres est massivement de la RMN, « utilisation soumise à autorisation ». Le reste, ce sont des
+crédits nominatifs sans licence. Zéro image ouverte. Le constat lui-même dit quelque chose du
+sujet : même les reproductions, les musées se les réservent.
+
+Ça ne veut pas dire qu'il n'existe aucune reproduction réutilisable ailleurs. On est donc allés
+voir Wikimedia Commons, en passant par les données structurées de Wikidata. La clé, c'est la
+propriété « identifiant Joconde » (P347) : quand un item Wikidata la porte, il désigne
+explicitement notre notice — pas une œuvre qui lui ressemble. On a tenu ce principe tout du long :
+une ressemblance de titre, d'auteur ou de musée ne prouve rien. Deux tableaux peuvent partager un
+titre et un musée sans être le même objet.
+
+Résultat : **329 correspondances certaines par identifiant Joconde, dont 184 avec une image
+ouverte** (surtout du domaine public). C'est 184 reproductions de plus que ce que POP autorisait.
+On a aussi cherché par numéro d'inventaire pour les œuvres absentes de ce premier filet : 152
+candidats à vérifier à la main, sur 47 notices. Et surtout, on a appris à se méfier : un même
+numéro d'inventaire se retrouve d'un musée à l'autre (« 516 », « sans numéro »…). Sans institution
+concordante, c'est un faux ami — 352 rapprochements de ce genre ont été écartés.
+
+Rien n'est encore téléchargé ni affiché. On a préparé le terrain : les correspondances, leurs
+preuves, les licences, dans un CSV vérifiable à la main. La suite — quelles images entrent
+vraiment dans l'onglet « Œuvres » — se décidera ensemble.
+
 ## 2026-07-28 — L'onglet « Œuvres » montre tout, plus quelques exemples
 
 Jusqu'ici, derrière le graphique d'un maître, l'onglet « Œuvres » ne donnait qu'une poignée

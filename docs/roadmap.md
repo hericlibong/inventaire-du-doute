@@ -102,6 +102,28 @@ Ordre imposé — chaque ⏸ est un point d'arrêt :
 
 ---
 
+## Images des œuvres — droits et reproductions ouvertes (2026-07-29)
+
+Objectif : afficher une reproduction quand la réutilisation est explicitement permise. Recherche
+et préparation SEULEMENT (front non touché, aucune image téléchargée à ce stade).
+
+- [x] **Audit POP** (Palier 1 « vignettes ») — champ « Crédits photographiques » (`PHOT`) des
+      3 668 notices, classé en 5 statuts (`src/images_classify.py`, testé). **0 `open`** :
+      2 578 `restricted` (RMN « utilisation soumise à autorisation »), 792 `unknown` (crédits
+      nominatifs), 298 `unavailable`. Livrables `images_oeuvres.{csv,json}`, `images_bilan.json`.
+- [ ] **Levier A — autorisations individuelles** (792 `unknown`, surtout musées municipaux) :
+      **différé** (travail de contact hors code), documenté, mobilisable plus tard.
+- [x] **Reproductions ouvertes Wikimedia Commons / Wikidata** — appariement strict :
+      P347 (identifiant Joconde) → **exact** ; inventaire + institution → **candidat** ;
+      inventaire seul / autre institution → **rejeté**. Droits lus via l'API Commons. Modules
+      `src/commons_match.py` (testé) + `src/build_commons.py` (cache résumable). **329 exacts,
+      dont 184 images ouvertes réutilisables** ; 152 candidats sur 47 réf. ; 352 faux
+      rapprochements écartés. Livrables `commons_correspondances.{json,csv}`, `commons_bilan.json`.
+- [ ] ⏸ **Décision d'intégration** : quelles correspondances validées entrent dans l'onglet
+      « Œuvres », et comment (téléchargement local, crédit + licence sous l'image). À arbitrer.
+
+---
+
 ## Onglet « Œuvres » — liste complète, filtres, pagination (2026-07-28)
 
 L'onglet passe de « quelques exemples » à la **totalité des œuvres concernées** par maître

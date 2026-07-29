@@ -2,6 +2,45 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-29 — Images des œuvres : audit POP, Levier A différé, cap Wikimedia Commons
+
+**Audit des droits photo sur POP (Palier 1 du chantier « vignettes »).** Pour les 3 668
+notices prudentes, on a lu le seul champ « Crédits photographiques » (clé `PHOT`) de chaque
+notice POP (jamais le reste de la page : son pied cite Etalab pour le site lui-même) et classé
+en cinq statuts (`src/images_classify.py`, testé). Résultat : **aucune image sous licence
+ouverte** dans tout le corpus — 0 `open`. La photographie des œuvres de nos maîtres est
+massivement de la RMN, mention **« utilisation soumise à autorisation »** (2 578 `restricted`,
+dont 2 342 pour le seul Louvre), le reste étant des crédits nominatifs sans licence (792
+`unknown`) ou l'absence d'image (298 `unavailable`). Livrables : `data/exports/images_oeuvres.csv`,
+`images_oeuvres.json`, `images_bilan.json`.
+
+**Levier A (autorisations individuelles) — DIFFÉRÉ.** Les 792 `unknown` sont surtout des
+musées municipaux (Ingres Bourdelle, beaux-arts divers) qui autorisent peut-être la
+réutilisation sans l'écrire dans POP. Les solliciter un par un (statut `authorized`) est un
+travail de contact hors code. **On le met de côté** ; il reste possible plus tard. Aucun
+statut `authorized` n'est déduit automatiquement.
+
+**Cap retenu : chercher les reproductions ouvertes ailleurs, sur Wikimedia Commons / Wikidata.**
+Le fait qu'aucun crédit POP ne soit ouvert ne dit pas que l'œuvre n'a aucune reproduction
+réutilisable. On recherche donc, pour chaque notice, une reproduction Commons réutilisable et
+**rattachée avec certitude** à la notice Joconde. Règles de ce chantier (détail dans donnees.md) :
+identification de l'œuvre et droits de l'image **strictement séparés** (`match_status` vs
+`rights_status`) ; une correspondance n'est **exacte** que par identifiant Joconde (Wikidata
+P347) explicite, ou par numéro d'inventaire + institution concordants après contrôle ; une
+ressemblance de titre / auteur / musée **ne suffit jamais** ; on n'intègre une image que si
+`match_status = exact` ET `rights_status ∈ {open, authorized}`. Correction d'un constat
+antérieur : POP présente bien un crédit par notice (champ `PHOT`) — l'ancienne note « POP ne
+présente aucun crédit par notice » est dépassée (voir donnees.md).
+
+**Règle affinée après exécution (Palier 1).** Un même numéro d'inventaire dans une AUTRE
+institution est **rejeté** comme faux rapprochement (les numéros « 516 », « SN » = sans numéro,
+« INV 1 » se répètent d'un musée à l'autre) : sans institution concordante, c'est un autre objet.
+`authorized` n'est jamais déduit automatiquement. **Résultat : 329 correspondances exactes
+(P347), dont 184 images ouvertes réutilisables** (contre 0 sur POP) ; 152 candidats par
+inventaire sur 47 références ; 352 faux rapprochements écartés. Les crédits Commons viennent des
+contributeurs (pas des musées) : conservés tels quels, à revérifier avant tout affichage. Rien
+n'est téléchargé ni affiché — la décision d'intégration à l'onglet « Œuvres » reste à prendre.
+
 ## 2026-07-28 — Onglet « Œuvres » : toutes les œuvres concernées, chargées à la demande
 
 L'onglet « Œuvres » ne montrait que quelques exemples (au plus neuf, une notice par mention

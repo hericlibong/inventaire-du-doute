@@ -16,3 +16,6 @@ museum.zip
 # Captures de contrôle du front (temporaires, non versionnées)
 .captures/
 web/.captures/
+
+# Cache de lecture des notices POP (chantier vignettes) — non versionné
+data/cache/

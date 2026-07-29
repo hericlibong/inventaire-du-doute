@@ -3,6 +3,77 @@
 Tout ce qu'on apprend sur la base Joconde au fil du projet : structure, pièges,
 chiffres vérifiés. Chaque constat indique sa date et comment il a été obtenu.
 
+## Droits photo des œuvres : audit POP (2026-07-29)
+
+Question : peut-on afficher une reproduction dans l'onglet « Œuvres » ? On a lu, pour les
+**3 668 références uniques** des 63 fiches, le seul champ **« Crédits photographiques » (`PHOT`)**
+de chaque notice POP — jamais le reste de la page (son pied cite Etalab pour le site
+lui-même). Méthode : inventaire des références uniques (une référence partagée entre deux
+maîtres comptée une fois), jointure au CSV pour `Presence_image`, lecture des notices avec
+image (cache résumable, requêtes limitées), classement en cinq statuts (`src/images_classify.py`,
+testé). Les données JSON sont embarquées dans la page POP (app Next.js) ; l'ancienne API
+`api.pop.culture.gouv.fr` répond 404.
+
+| statut | nombre | ce que dit `PHOT` |
+|---|---:|---|
+| `open` | **0** | licence ouverte explicite (Licence Ouverte, Etalab, CC0, CC BY, CC BY-SA) |
+| `authorized` | 0 | autorisation individuelle (jamais automatique) |
+| `restricted` | **2 578** | « utilisation soumise à autorisation » (RMN), ADAGP, droits réservés |
+| `unknown` | **792** | crédit nominatif sans licence (© photographe / musée) |
+| `unavailable` | **298** | aucune image sur POP |
+
+**Constat central : aucune photo sous licence ouverte dans tout le corpus des maîtres.** La
+photographie est massivement de la **RMN — « utilisation soumise à autorisation »** (2 578,
+dont **2 342 pour le seul Louvre**). Les 792 `unknown` sont surtout des musées municipaux
+(Ingres Bourdelle 210, beaux-arts divers) qui autorisent peut-être la réutilisation sans
+l'écrire : c'est le vivier d'éventuelles autorisations individuelles (« Levier A », différé,
+voir decisions.md). Aucun échec réseau (3 370 notices lues, toutes HTTP 200). Livrables :
+`data/exports/images_oeuvres.{csv,json}`, `images_bilan.json`.
+
+Conséquence : on cherche les reproductions ouvertes **ailleurs**, sur Wikimedia Commons /
+Wikidata (méthode ci-dessous).
+
+## Reproductions ouvertes sur Wikimedia Commons / Wikidata (2026-07-29)
+
+Pour les 3 668 références, on cherche une reproduction Commons **réutilisable** et **rattachée
+avec certitude** à la notice Joconde. On sépare strictement deux jugements : **identifier la
+même œuvre** (`match_status`) et **les droits de la photo** (`rights_status`). On n'analyse
+jamais le HTML de Wikipédia : uniquement les données structurées (SPARQL Wikidata, API Commons
+`imageinfo`). Métadonnées d'appariement dans `data/exports/oeuvres_metadonnees.json` (passe CSV :
+numéro d'inventaire — présent à 100 % —, technique, dimensions, datation…).
+
+**Passe 1 — identifiant Joconde (Wikidata P347).** C'est le lien officiel entre un item Wikidata
+et une référence Joconde. Une correspondance par P347 est tenue pour **exacte** (les éditeurs
+Wikidata ont établi le lien œuvre par œuvre). Résultat : **329 références** ont un item Wikidata,
+dont **184 avec une image sur Commons** (P18) et 145 sans image.
+
+**Passe 2 — numéro d'inventaire (P217).** Pour les références sans P347, on cherche les items
+dont un numéro d'inventaire égale le nôtre (comparaison normalisée : « INV 3253 » = « INV3253 »),
+**et** dont la collection concorde avec le musée Joconde. Ces cas restent des **candidats à
+vérifier** (`a_verifier`), jamais promus « exact » automatiquement (le passage à exact demande un
+contrôle humain des métadonnées). Résultat : **152 candidats sur 47 références**.
+
+**Règle de prudence décisive : un même numéro d'inventaire dans une AUTRE institution est un faux
+rapprochement.** Les numéros (« 516 », « SN » = sans numéro, « INV 1 ») se répètent d'un musée à
+l'autre. Sans institution concordante, on **rejette** (`rejete`). **352 faux rapprochements**
+ainsi écartés — exactement ce que la règle « titre/auteur/musée ne suffit jamais » vise à éviter.
+
+**Droits (API Commons `imageinfo` / `extmetadata`).** On lit la licence de chaque fichier (jamais
+devinée) : domaine public / PDM / CC0 / CC BY / CC BY-SA → `open` ; NC/ND → à examiner. Les
+**184 images des correspondances exactes sont TOUTES ouvertes** (P18 pointe vers Commons, qui
+n'accepte que des licences libres) : 162 domaine public, le reste CC BY / CC BY-SA, 1 CC0.
+
+**Bilan : 184 reproductions réutilisables** (exact + open), contre 0 sur POP. Fiabilité élevée sur
+les exacts (lien P347 officiel), candidats et faux rapprochements correctement séparés. Livrables :
+`data/exports/commons_correspondances.{json,csv}`, `commons_bilan.json`. Modules testés :
+`src/commons_match.py` (appariement + droits), `src/build_commons.py` (collecte, cache résumable).
+
+**Limites.** (1) L'appariement dépend de la complétude de Wikidata (P347/P217) : beaucoup d'œuvres
+n'y sont pas → l'absence de correspondance ne veut pas dire absence de reproduction ailleurs. (2)
+Les candidats inventaire demandent un contrôle humain (plusieurs items peuvent partager un numéro
+dans un même musée). (3) Le crédit Commons vient de contributeurs, pas du musée : à vérifier avant
+publication. (4) Rien n'est encore téléchargé ni affiché (décision d'intégration à venir).
+
 ## Export complet des œuvres par maître (2026-07-28)
 
 L'onglet « Œuvres » liste désormais **toutes** les œuvres concernées, pas quelques exemples.
@@ -478,6 +549,14 @@ cliché par cliché sur 26 667 œuvres (règle CLAUDE.md : image externe = sourc
 secondaire, licence vérifiée par fichier). La carte reste **textuelle + lien
 POP** ; illustration manuelle d'une poignée de cas via Wikimedia Commons
 possible plus tard (précédent des 27 portraits).
+
+> **Correction (2026-07-29).** Le point « POP n'affiche aucune mention par œuvre »
+> ci-dessus est **dépassé**. La notice POP porte bien un crédit par œuvre : le champ
+> **« Crédits photographiques » (clé `PHOT`)**, qui mêle souvent crédit ET licence
+> (« © Jean-François Peiré#Licence Ouverte/Etalab »). On peut donc vérifier la licence
+> cliché par cliché — c'est ce qu'a fait l'audit du 2026-07-29 (voir « Droits photo des
+> œuvres » plus bas). Le reste du constat tient : le CSV ne porte pas ce champ, et la
+> Licence Ouverte des métadonnées ne couvre pas les photographies.
 
 ## Périodes et types du corpus révisions (2026-07-14)
 
