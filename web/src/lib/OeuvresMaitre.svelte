@@ -167,22 +167,26 @@
 				{#each pageOeuvres as o (o.reference)}
 					<li class="entree">
 						{#if o.image}
-							<!-- Reproduction ouverte (Wikimedia Commons), copie locale ; l'image
-							     ouvre la page source où figurent licence et crédit. Légende
-							     normée en petit corps : source + licence (+ auteur si requis). -->
-							<figure class="media media-image">
-								<a href={o.image.source} target="_blank" rel="noopener" title="Voir le fichier sur Wikimedia Commons">
+							<!-- Reproduction ouverte (Wikimedia Commons), copie locale. L'image
+							     occupe toute la vignette (même gabarit que le placeholder), en
+							     object-fit: contain — proportions gardées, jamais rognée ni
+							     déformée. Aucun texte par-dessus : la légende est UNE ligne
+							     discrète sous la vignette. -->
+							<figure class="media-figure">
+								<a class="media media-image" href={o.image.source} target="_blank" rel="noopener" title="Voir le fichier sur Wikimedia Commons">
 									<img src="{base}/{o.image.url}" alt="Reproduction : {o.titre ?? 'œuvre'}" loading="lazy" />
 								</a>
 								<figcaption class="credit">
-									{#if o.image.creator && o.image.licence.startsWith('CC BY')}<span class="credit-auteur" title={o.image.creator}>{o.image.creator}</span>{/if}
-									<a href={o.image.licence_url || o.image.source} target="_blank" rel="noopener">{o.image.licence}</a>
-									· <a href={o.image.source} target="_blank" rel="noopener">Wikimedia&nbsp;Commons</a>
+									{#if o.image.licence.startsWith('CC BY')}
+										{#if o.image.creator}<span class="credit-auteur" title={o.image.creator}>{o.image.creator}</span> · {/if}<a href={o.image.licence_url || o.image.source} target="_blank" rel="noopener">{o.image.licence}</a> · <a href={o.image.source} target="_blank" rel="noopener">Wikimedia&nbsp;Commons</a>
+									{:else}
+										{o.image.licence === 'CC0' ? 'CC0' : 'Domaine public'} · source <a href={o.image.source} target="_blank" rel="noopener">Wikimedia&nbsp;Commons</a>
+									{/if}
 								</figcaption>
 							</figure>
 						{:else}
 							<!-- Pas de reproduction réutilisable connue : placeholder assumé,
-							     jamais une image inventée. -->
+							     jamais une image inventée. Même gabarit que la vignette. -->
 							<div class="media" aria-hidden="true">
 								<span>reproduction<br />non affichée</span>
 							</div>
@@ -396,13 +400,14 @@
 
 	.entree {
 		display: grid;
-		grid-template-columns: 7rem 1fr;
+		grid-template-columns: 11rem 1fr;
 		gap: var(--espace-5);
 		padding: var(--espace-4) 0;
 		border-top: var(--filet);
 	}
 
-	/* Emplacement média réservé : cadre neutre, pas une image. */
+	/* Emplacement média réservé : cadre neutre, pas une image. Même boîte 4/5
+	   pour le placeholder ET la reproduction (gabarit identique). */
 	.media {
 		aspect-ratio: 4 / 5;
 		background: var(--surface-carte);
@@ -411,6 +416,7 @@
 		align-items: center;
 		justify-content: center;
 		text-align: center;
+		overflow: hidden;
 	}
 
 	.media span {
@@ -422,49 +428,49 @@
 		color: var(--couleur-trait);
 	}
 
-	/* Reproduction réelle : l'image remplit la colonne média, la légende (source +
-	   licence) tient dessous en petit corps normé. */
-	.media-image {
+	/* Reproduction réelle : l'ancre EST la boîte média (classe .media), l'image la
+	   remplit en object-fit: contain — proportions gardées, jamais rognée. */
+	.media-figure {
 		margin: 0;
 		min-width: 0;
 	}
 
-	.media-image a {
-		display: block;
+	.media-image {
+		padding: 0;
+		cursor: zoom-in;
 	}
 
 	.media-image img {
-		display: block;
 		width: 100%;
-		height: auto;
-		border: var(--filet);
-		background: var(--surface-carte);
+		height: 100%;
+		object-fit: contain;
+		display: block;
 	}
 
+	.media-image:focus-visible {
+		outline: var(--focus-anneau);
+		outline-offset: 2px;
+	}
+
+	/* Crédit : UNE ligne discrète sous la vignette. Liens accessibles mais atténués,
+	   jamais le traitement du lien principal « Voir la fiche publique sur POP ». */
 	.credit {
-		margin-top: 0.3rem;
+		margin-top: 0.4rem;
 		font-family: var(--police-ui);
-		font-size: 0.6rem;
-		line-height: 1.35;
+		font-size: 0.62rem;
+		line-height: 1.4;
 		color: var(--couleur-encre-douce);
 	}
 
 	.credit a {
 		color: inherit;
 		text-decoration: underline;
+		text-underline-offset: 1px;
 	}
 
-	.credit a:hover {
-		color: var(--accent-cobalt);
-	}
-
-	/* Auteur exigé par la licence (CC BY/BY-SA) : borné pour ne pas déborder. */
-	.credit-auteur {
-		display: block;
-		max-width: 100%;
-		overflow: hidden;
-		text-overflow: ellipsis;
-		white-space: nowrap;
+	.credit a:hover,
+	.credit a:focus-visible {
+		color: var(--couleur-encre);
 	}
 
 	.corps {
@@ -619,7 +625,7 @@
 
 	@media (max-width: 560px) {
 		.entree {
-			grid-template-columns: 5rem 1fr;
+			grid-template-columns: 7rem 1fr;
 			gap: var(--espace-4);
 		}
 		.verbatim {

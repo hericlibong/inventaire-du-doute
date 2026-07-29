@@ -19,15 +19,22 @@ dépendances.
 fiches `oeuvres/<slug>.json` (champ `image`). `build_artistes.py` rattache aussi cet index à la
 régénération complète, pour que l'enrichissement survive.
 
-**Affichage (`OeuvresMaitre.svelte`).** L'image locale remplit le slot média, en `loading="lazy"`,
-avec un `alt` neutre (« Reproduction : {titre} »), **cliquable vers la page source Wikimedia
-Commons** (où vivent licence et crédit). Sous l'image, une **légende normée en petit corps** :
-licence (liée) + « Wikimedia Commons » (lié). Le nom de l'auteur du fichier n'est affiché **que
-pour les licences CC BY/BY-SA** (attribution requise) — pour le domaine public on ne l'affiche
-pas, afin de ne pas mettre en avant un auteur d'œuvre incertain (le projet n'attribue rien). Les
-œuvres sans reproduction ouverte gardent le **placeholder** (jamais d'image inventée). Déclaré
-aussi dans la page méthode (docs/methode-et-limites.md), comme l'exige la règle « image externe =
-source secondaire à déclarer ».
+**Affichage (`OeuvresMaitre.svelte`).** L'image locale **occupe toute la vignette** (colonne
+média élargie à 11 rem, 7 rem en mobile), **même gabarit que le placeholder** (boîte 4/5), en
+`object-fit: contain` : proportions gardées, jamais rognée ni déformée, jamais d'upscale d'une
+miniature (les fichiers locaux font 900 px). `loading="lazy"`, `alt` neutre (« Reproduction :
+{titre} »), **cliquable vers la page source Wikimedia Commons**. Aucun texte par-dessus l'image :
+sous la vignette, **une seule ligne discrète** (petit corps, liens atténués — jamais le
+traitement cobalt du lien POP) :
+- domaine public : « Domaine public · source Wikimedia Commons » ;
+- Creative Commons : « [auteur] · [licence] · Wikimedia Commons » (licence et Commons liées).
+
+Wikimedia Commons est présenté comme la **source**, jamais comme le détenteur du copyright.
+L'auteur n'est affiché **que pour CC BY/BY-SA** (attribution requise) — pas pour le domaine
+public, afin de ne pas mettre en avant un auteur d'œuvre incertain (le projet n'attribue rien).
+Les œuvres sans reproduction ouverte gardent le **placeholder** (jamais d'image inventée).
+Déclaré aussi dans la page méthode (docs/methode-et-limites.md), comme l'exige la règle « image
+externe = source secondaire à déclarer ».
 
 ## 2026-07-29 — Images des œuvres : audit POP, Levier A différé, cap Wikimedia Commons
 
