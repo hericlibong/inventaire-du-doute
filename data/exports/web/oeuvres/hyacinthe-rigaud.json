@@ -79,7 +79,18 @@
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "ecole_de",
-   "extrait": "RIGAU Y ROS Hyacinthe (école)"
+   "extrait": "RIGAU Y ROS Hyacinthe (école)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE007938.jpg",
+    "credit": "https://www.google.co.uk/search?hl=en&rlz=1C1CHFX_en-GBGB470GB470&q",
+    "creator": "Workshop of Pierre Gobert",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Atelier_de_Pierre_Gobert_-_Louis-Fran%C3%A7ois_de_Bourbon,_prince_de_Conti_-_Versailles_MV_4397.png",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE007944",
@@ -87,7 +98,18 @@
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "ecole_de",
-   "extrait": "RIGAU Y ROS Hyacinthe (école)"
+   "extrait": "RIGAU Y ROS Hyacinthe (école)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE007944.jpg",
+    "credit": "http://fr.wikipedia.org/wiki/Image:Fleuriau_d%27Armenonville%2C_Joseph.jpg",
+    "creator": "School of Hyacinthe Rigaud",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Fleuriau_d%27Armenonville,_Joseph.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE007932",
@@ -103,7 +125,18 @@
    "musee": "musée de Tessé",
    "ville": "Le Mans",
    "code": "attribue",
-   "extrait": "RIGAUD Hyacinthe (attribué)"
+   "extrait": "RIGAUD Hyacinthe (attribué)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE009680.jpg",
+    "credit": "Musée des Beaux-arts du Mans",
+    "creator": "Hyacinthe Rigaud",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Le_mar%C3%A9chal_de_Tess%C3%A9.JPG",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE011347",
@@ -215,7 +248,18 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "attribue",
-   "extrait": "RIGAUD Hyacinthe (dit, attribué)"
+   "extrait": "RIGAUD Hyacinthe (dit, attribué)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/00000077264.jpg",
+    "credit": "photo.rmn.fr",
+    "creator": "Attributed to Hyacinthe Rigaud",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Portrait_d%27homme_-_Hyacinthe_Rigaud_-Mus%C3%A9e_Cond%C3%A9.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "01370006632",
@@ -327,7 +371,18 @@
    "musee": "musée d'Allard",
    "ville": "Montbrison",
    "code": "attribue",
-   "extrait": "Rigaud Hyacinthe (1659-1743) (attribué à)"
+   "extrait": "Rigaud Hyacinthe (1659-1743) (attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/10160000824.jpg",
+    "credit": "HyacintheRigaud.com [1]",
+    "creator": "Hyacinthe Rigaud",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Hyacinthe_Rigaud_-_Ren%C3%A9_Fran%C3%A7ois_de_Beauvau_du_Rivau.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "07030017687",

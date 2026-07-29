@@ -31,7 +31,18 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
-   "extrait": "Corneille de Lyon (1500?-1575) (atelier)"
+   "extrait": "Corneille de Lyon (1500?-1575) (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE000544.jpg",
+    "credit": "RMN-GP [1]",
+    "creator": "Workshop of Corneille de Lyon",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Corneille_de_Lyon_-_Portrait_de_Charles_de_Coss%C3%A9,_comte_de_Brissac_-_Louvre_INV_3268.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE000542",
@@ -39,7 +50,18 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
-   "extrait": "Corneille de Lyon (1500?-1575) (atelier)"
+   "extrait": "Corneille de Lyon (1500?-1575) (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE000542.jpg",
+    "credit": "Self-photographed",
+    "creator": "Corneille de Lyon",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Corneille_de_Lyon_Portrait_d%27homme_dit_Chevalier_d%27Ambre.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE000545",
@@ -47,7 +69,18 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
-   "extrait": "Corneille de Lyon (1500?-1575) (atelier)"
+   "extrait": "Corneille de Lyon (1500?-1575) (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE000545.jpg",
+    "credit": "Louvre [1]",
+    "creator": "Workshop of Corneille de Lyon",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Corneille_de_Lyon_(workshop)_-_Louis_de_Bourbon,_duc_de_Montpensier_(formerly_thought_Henry_de_Bourbon)_-_Louvre_INV_9451.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE000546",
@@ -55,7 +88,18 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
-   "extrait": "Corneille de Lyon (1500?-1575) (atelier)"
+   "extrait": "Corneille de Lyon (1500?-1575) (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE000546.jpg",
+    "credit": "RMN-GP [1]",
+    "creator": "Workshop of Corneille de Lyon",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Corneille_de_Lyon_-_Portrait_pr%C3%A9sum%C3%A9_de_Jean_de_Brosse,_duc_d%27%C3%89tampes_-_Louvre_INV_3258.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE000540",
@@ -63,7 +107,18 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
-   "extrait": "Corneille de Lyon (1500?-1575) (atelier)"
+   "extrait": "Corneille de Lyon (1500?-1575) (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE000540.jpg",
+    "credit": "RMN-GP [1]",
+    "creator": "Workshop of Corneille de Lyon",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Corneille_de_Lyon_-_Mellin_de_Saint-Gelais_-_Louvre_RF_1938-7.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE000541",
@@ -71,7 +126,18 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
-   "extrait": "Corneille de Lyon (1500?-1575) (atelier)"
+   "extrait": "Corneille de Lyon (1500?-1575) (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE000541.jpg",
+    "credit": "RMN-GP [1]",
+    "creator": "Workshop of Corneille de Lyon",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Corneille_de_Lyon_-_Portrait_pr%C3%A9sum%C3%A9_d%27Anne_de_la_Queille_-_Louvre_RF_1938-8.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE000543",
@@ -79,7 +145,18 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
-   "extrait": "Corneille de Lyon (1500?-1575) (atelier)"
+   "extrait": "Corneille de Lyon (1500?-1575) (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE000543.jpg",
+    "credit": "RMN-GP [1]",
+    "creator": "Workshop of Corneille de Lyon",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Corneille_de_Lyon_-.Jean_d%27Albon_de_Saint-Andr%C3%A9_-_Louvre_RF_342.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE006178",
@@ -87,7 +164,18 @@
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "atelier_de",
-   "extrait": "Corneille de Lyon (1500?-1575) (atelier)"
+   "extrait": "Corneille de Lyon (1500?-1575) (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE006178.jpg",
+    "credit": "Xavier Caré",
+    "creator": "Corneille de Lyon",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Corneille_de_Lyon_-_Fran%C3%A7oise_de_Longwy,_femme_de_Philippe_Chabot_(huile_sur_bois).jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE006215",
@@ -95,7 +183,18 @@
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "atelier_de",
-   "extrait": "Corneille de Lyon (1500?-1575) (atelier)"
+   "extrait": "Corneille de Lyon (1500?-1575) (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE006215.jpg",
+    "credit": "Own work",
+    "creator": "François de Dijon",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Corneille_de_Lyon_-_Catherine_de_M%C3%A9dicis.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE006180",
@@ -111,7 +210,18 @@
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "atelier_de",
-   "extrait": "Corneille de Lyon (1500?-1575) (atelier)"
+   "extrait": "Corneille de Lyon (1500?-1575) (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE006239.jpg",
+    "credit": "roglo.eu",
+    "creator": "Corneille de Lyon",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Corneille_de_Lyon_-_Jeanne_van_Halewijn_(1530-1580).jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE006238",
@@ -135,7 +245,18 @@
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "atelier_de",
-   "extrait": "Corneille de Lyon (1500?-1575) (atelier)"
+   "extrait": "Corneille de Lyon (1500?-1575) (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE006218.jpg",
+    "credit": "RMN-GP [1]",
+    "creator": "Workshop of Corneille de Lyon",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Corneille_de_Lyon_-_Madeleine_de_Valois_(1520-1536)_-_Ch%C3%A2teau_de_Versailles.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE006222",
@@ -183,7 +304,18 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "Corneille de Lyon (1500?-1575) (atelier)"
+   "extrait": "Corneille de Lyon (1500?-1575) (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/00000077156.jpg",
+    "credit": "RMN-GP [1]",
+    "creator": "Workshop of Corneille de Lyon",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Corneille_de_Lyon_-_Jean_de_Taix_-_Mus%C3%A9e_Cond%C3%A9.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00000077152",
@@ -191,7 +323,18 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "attribue",
-   "extrait": "Corneille de Lyon (1500?-1575) (attribué à)"
+   "extrait": "Corneille de Lyon (1500?-1575) (attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/00000077152.jpg",
+    "credit": "Web Gallery of Art : Image Info about artwork wga QS:P11807,\"/c/corneill/rochecho\"",
+    "creator": "Corneille de Lyon",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Corneille_de_Lyon_-_Portrait_of_Gabrielle_de_Rochechouart_-_WGA05239.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00000077154",
@@ -199,7 +342,18 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "attribue",
-   "extrait": "Corneille de Lyon (1500?-1575) (attribué à)"
+   "extrait": "Corneille de Lyon (1500?-1575) (attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/00000077154.jpg",
+    "credit": "[1]",
+    "creator": "Corneille de Lyon",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Corneille_de_Lyon_-_Catherine_de_M%C3%A9dicis_-_Mus%C3%A9e_Cond%C3%A9.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00000077155",
@@ -207,7 +361,18 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "Corneille de Lyon (1500?-1575) (atelier)"
+   "extrait": "Corneille de Lyon (1500?-1575) (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/00000077155.jpg",
+    "credit": "RMN-GP [1]",
+    "creator": "Workshop of Corneille de Lyon",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Corneille_de_Lyon_-_Portrait_d%27Hercule-Fran%C3%A7ois_de_France,_duc_d%27Alen%C3%A7on_-_Mus%C3%A9e_Cond%C3%A9.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00000077157",
@@ -215,7 +380,18 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "Corneille de Lyon (1500?-1575) (atelier)"
+   "extrait": "Corneille de Lyon (1500?-1575) (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/00000077157.jpg",
+    "credit": "RMN-GP [1]",
+    "creator": "Workshop of Corneille de Lyon",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Corneille_de_Lyon_-_Gabrielle_de_Rochechouart,_dame_de_Lansac_-_Mus%C3%A9e_Cond%C3%A9.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00000077153",
@@ -223,7 +399,18 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "Corneille de Lyon (1500?-1575) (atelier)"
+   "extrait": "Corneille de Lyon (1500?-1575) (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/00000077153.jpg",
+    "credit": "RMN-GP [1]",
+    "creator": "Workshop of Corneille de Lyon",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Corneille_de_Lyon_-_Marguerite_de_France_-_Mus%C3%A9e_Cond%C3%A9.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "01370001106",
@@ -239,7 +426,18 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Corneille de Lyon (1500?-1575) (attribué à)"
+   "extrait": "Corneille de Lyon (1500?-1575) (attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/06070000081.jpg",
+    "credit": "Musée Ingres [1]",
+    "creator": "Attributed to Corneille de Lyon",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Corneille_de_Lyon_-_Portrait_d%27homme_-_Mus%C3%A9e_Ingres.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "05120007536",
@@ -247,7 +445,18 @@
    "musee": "musée des Beaux-Arts",
    "ville": "Nancy",
    "code": "attribue",
-   "extrait": "Corneille de Lyon (1500?-1575) (attribué à)"
+   "extrait": "Corneille de Lyon (1500?-1575) (attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/05120007536.jpg",
+    "credit": "Musée des Beaux-Arts de Nancy [1]",
+    "creator": "Corneille de Lyon",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Corneille_de_Lyon_-_Portrait_d%27homme_-_Inv_758_MBA_Nancy.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06190023766",

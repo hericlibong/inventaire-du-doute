@@ -33,3 +33,17 @@ const nbOeuvres = (await readdir(sourceOeuvres)).filter((f) => f.endsWith('.json
 console.log(`synchronisé : oeuvres/ (${nbOeuvres} fichiers)`);
 
 console.log(`\n${fichiers.length + nbOeuvres} fichier(s) copié(s) vers static/data/`);
+
+// Vignettes des reproductions ouvertes (chantier images, 2026-07-29) : copiées
+// hors de data/ (ce ne sont pas des données), vers static/oeuvres/, servies en
+// /oeuvres/<reference>.jpg. Absent tant que build_vignettes.py n'a pas tourné.
+const sourceImg = join(ici, '..', '..', 'data', 'exports', 'web', 'oeuvres_img');
+try {
+	const cibleImg = join(ici, '..', 'static', 'oeuvres');
+	await rm(cibleImg, { recursive: true, force: true });
+	await cp(sourceImg, cibleImg, { recursive: true });
+	const nbImg = (await readdir(sourceImg)).filter((f) => f.endsWith('.jpg')).length;
+	console.log(`synchronisé : oeuvres/ images (${nbImg} vignettes) vers static/oeuvres/`);
+} catch {
+	console.log('(pas de vignettes à synchroniser)');
+}

@@ -39,7 +39,18 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à à",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/06070001452.jpg",
+    "credit": "[1]",
+    "creator": "Attributed to Jean-Auguste-Dominique Ingres / After Raphael",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Ingres-_madona_after_raphael.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070001463",
@@ -71,7 +82,18 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à à",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/06070001454.jpg",
+    "credit": "https://www.wikiart.org/en/jean-auguste-dominique-ingres/portrait-of-bindo-altoviti",
+    "creator": "Attributed to Jean-Auguste-Dominique Ingres / After Raphael",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Ingres_-_Portrait_of_Bindo_Altoviti.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070001462",
@@ -79,7 +101,18 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "atelier_de",
-   "extrait": "INGRES Jean Auguste Dominique (atelier)"
+   "extrait": "INGRES Jean Auguste Dominique (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/06070001462.jpg",
+    "credit": "Musée Ingres [1]",
+    "creator": "Jean-Auguste-Dominique Ingres",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Ingres_athens.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070001455",
@@ -87,7 +120,18 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à à",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/06070001455.jpg",
+    "credit": "https://www.wikiart.org/en/jean-auguste-dominique-ingres/portrait-of-raphael-1824",
+    "creator": "Attributed to Jean-Auguste-Dominique Ingres / After Raphael",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Ingres_-_Portrait_of_Raphael,_1820-1824.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070001460",

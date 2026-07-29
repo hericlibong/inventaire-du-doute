@@ -23,7 +23,18 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LEONARDO DI SER PIERO DA VINCI (école)"
+   "extrait": "LEONARDO DI SER PIERO DA VINCI (école)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE025605.jpg",
+    "credit": "crop from file:Scuola_di_leonardo_da_vinci,_la_belle_ferronière,_XVI_sec.jpg",
+    "creator": "Sailko",
+    "licence": "CC BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Scuola_di_leonardo_da_vinci,_la_belle_ferroni%C3%A8re,_XVI_sec_(2).jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE025603",
@@ -31,7 +42,18 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
-   "extrait": "VINCI Léonard de (dit, atelier)"
+   "extrait": "VINCI Léonard de (dit, atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE025603.jpg",
+    "credit": "Wilfredor",
+    "creator": "Workshop of Leonardo da Vinci / Attributed to Francesco Melzi",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Bacchus_-_Leonardo_da_Vinci_workshop_-_Louvre_INV_780.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE025607",

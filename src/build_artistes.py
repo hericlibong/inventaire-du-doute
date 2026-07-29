@@ -401,9 +401,21 @@ def _ecrire_oeuvres(artistes: list, agg: dict, meta: dict) -> int:
             ancien.unlink()
     DOSSIER_OEUVRES.mkdir(parents=True, exist_ok=True)
 
+    # Reproductions ouvertes déjà préparées (src/build_vignettes.py) : on rattache
+    # `image` aux œuvres concernées, pour que la régénération complète ne les perde
+    # pas. Absent au premier passage (l'index est produit ensuite) : sans effet.
+    index_images = {}
+    chemin_index = DOSSIER_WEB / "images_index.json"
+    if chemin_index.exists():
+        index_images = json.loads(chemin_index.read_text(encoding="utf-8"))
+
     total = 0
     for art in artistes:
         oeuvres = agg[art["nom"]]["oeuvres"]
+        for o in oeuvres:
+            img = index_images.get(o["reference"])
+            if img:
+                o["image"] = img
         # effectifs par famille présente, ordre canonique (repris de art["familles"])
         familles = [{"code": f["code"], "notices": f["notices"]}
                     for f in art["familles"]]

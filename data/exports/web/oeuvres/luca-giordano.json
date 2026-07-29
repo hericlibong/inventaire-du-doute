@@ -47,7 +47,18 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "point_interrogation",
-   "extrait": "GIORDANO Luca (?)"
+   "extrait": "GIORDANO Luca (?)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE025528.jpg",
+    "credit": "photo Shonagon 2024-03-21",
+    "creator": "Presumably Luca Giordano",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Un_concert_-_Mus%C3%A9e_du_Louvre_Peintures_INV_56_;_MR_106.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE025531",
@@ -103,7 +114,18 @@
    "musee": "musée des Beaux-Arts",
    "ville": "Pau",
    "code": "attribue",
-   "extrait": "GIORDANO Luca (attribué à)"
+   "extrait": "GIORDANO Luca (attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/00980001231.jpg",
+    "credit": "Own work , Tylwyth Eldar , 2018-10-29 15:24:50",
+    "creator": "Maître de l'Annonce aux Bergers",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Ma%C3%AEtre_de_l%27Annonce_aux_bergers_-_Philosophe.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0347001249",
@@ -287,7 +309,18 @@
    "musee": "musée d’ethnographie corse",
    "ville": "Bastia",
    "code": "point_interrogation",
-   "extrait": "GIORDANO Luca (auteur, ?)"
+   "extrait": "GIORDANO Luca (auteur, ?)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/03290005077.jpg",
+    "credit": "Own work",
+    "creator": "Sailko",
+    "licence": "CC BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Luca_giordano,_noli_me_tangere,_1650-1700_ca.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "05120002092",
@@ -335,7 +368,18 @@
    "musee": "musée Granet",
    "ville": "Aix-en-Provence",
    "code": "atelier_de",
-   "extrait": "Giordano Luca (1632-1705) (atelier)"
+   "extrait": "Giordano Luca (1632-1705) (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/08940004909.jpg",
+    "credit": "Own work , Tylwyth Eldar , 2024-03-09 14:24:53",
+    "creator": "Attributed to Giuseppe Simonelli",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Giuseppe_Simonelli_-_L%27enl%C3%A8vement_d%27H%C3%A9l%C3%A8ne_02.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "08940005176",
@@ -343,7 +387,18 @@
    "musee": "musée Granet",
    "ville": "Aix-en-Provence",
    "code": "atelier_de",
-   "extrait": "Giordano Luca (1632-1705) (atelier)"
+   "extrait": "Giordano Luca (1632-1705) (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/08940005176.jpg",
+    "credit": "Own work , Tylwyth Eldar , 2024-03-09 14:24:29",
+    "creator": "Workshop of Luca Giordano",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_Granet_-_Saint_Fran%C3%A7ois_Xavier_pr%C3%A9sidant_la_construction_d%27un_%C3%A9difice_02.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0341000402",

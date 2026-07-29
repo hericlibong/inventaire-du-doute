@@ -39,7 +39,18 @@
    "musee": "musée des Beaux-Arts",
    "ville": "Pau",
    "code": "atelier_de",
-   "extrait": "RIBERA Jusepe de (atelier)"
+   "extrait": "RIBERA Jusepe de (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/00980000808.jpg",
+    "credit": "Own work , Tylwyth Eldar , 2018-10-29 15:27:59",
+    "creator": "Jusepe de Ribera",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Jusepe_de_Ribera_-_Saint_J%C3%A9r%C3%B4me.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070000233",
@@ -79,7 +90,18 @@
    "musee": "musée de Picardie",
    "ville": "Amiens",
    "code": "atelier_de",
-   "extrait": "RIBERA Jusepe de (atelier)"
+   "extrait": "RIBERA Jusepe de (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/08120003377.jpg",
+    "credit": "https://www.pop.culture.gouv.fr/notice/joconde/08120003377",
+    "creator": "Jusepe de Ribera",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Ribera_(atelier)_-_Saint_Jean-Baptiste_enfant_avec_l%27Agneau,_1630,_M.P.Lav.1894-243.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "08120003379",
@@ -103,7 +125,18 @@
    "musee": "musée Goya",
    "ville": "Castres",
    "code": "attribue",
-   "extrait": "RIBERA Jusepe de (attribué à)"
+   "extrait": "RIBERA Jusepe de (attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/05940000296.jpg",
+    "credit": "Own work",
+    "creator": "Didier Descouens",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:(Castres)_Jos%C3%A9_de_Ribera_-_Martyr_de_saint_Andr%C3%A9_-_Mus%C3%A9e_Goya.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06770002729",
@@ -127,7 +160,18 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
-   "extrait": "RIBERA Jusepe de (attribué, et atelier)"
+   "extrait": "RIBERA Jusepe de (attribué, et atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/M0332001175.jpg",
+    "credit": "Œuvre appartenant au Musée des Beaux Arts de Besançon",
+    "creator": "Jusepe de Ribera (attrib.)",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:L%27Architecte_-_Jusepe_de_Ribera_-_MBAB_896.1.119.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06190001406",
@@ -159,7 +203,18 @@
    "musee": "musée d'art et d'histoire Saint-Germain",
    "ville": "Auxerre",
    "code": "attribue",
-   "extrait": "RIBERA Jusepe de (attribué)"
+   "extrait": "RIBERA Jusepe de (attribué)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/01840000081.jpg",
+    "credit": "https://www.pop.culture.gouv.fr/notice/joconde/01840000081",
+    "creator": "Attributed to Jusepe de Ribera",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Ribera_(attribu%C3%A9)_-_Une_fileuse,_1835.1.10_;_835.1.10.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "07700010824",

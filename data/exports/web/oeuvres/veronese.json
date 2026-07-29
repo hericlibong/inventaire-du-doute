@@ -27,7 +27,18 @@
    "musee": "musée des Beaux-Arts",
    "ville": "Lille",
    "code": "atelier_de",
-   "extrait": "CALIARI Paolo (atelier)"
+   "extrait": "CALIARI Paolo (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE019542.jpg",
+    "credit": "Own work",
+    "creator": "Paolo Veronese and workshop",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Lille_Pdba_veronese_christ_anges.JPG",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE023078",
@@ -43,7 +54,18 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
-   "extrait": "VERONESE (dit, atelier)"
+   "extrait": "VERONESE (dit, atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE027370.jpg",
+    "credit": "Shonagon",
+    "creator": "Paolo Veronese",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:La_Fuite_de_Lot_-_Paul_V%C3%A9ron%C3%A8se_-_Q18573245.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE027371",
@@ -51,7 +73,18 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
-   "extrait": "VERONESE (dit, atelier)"
+   "extrait": "VERONESE (dit, atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE027371.jpg",
+    "credit": "https://collections.louvre.fr/recherche?page=1&q=Paolo+Caliari%2C+dit+Veronese&collection%5B0%5D=6",
+    "creator": "Paolo Veronese",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Veronese_-_La_Sainte_Famille_avec_sainte_%C3%89lisabeth,_sainte_Marie-Madeleine_pr%C3%A9sentant_une_b%C3%A9n%C3%A9dictine,_INV_140_;_MR_393.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE027369",
@@ -59,7 +92,18 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
-   "extrait": "CALIARI Paolo (atelier)"
+   "extrait": "CALIARI Paolo (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE027369.jpg",
+    "credit": "https://collections.louvre.fr/recherche?page=1&q=Paolo+Caliari%2C+dit+Veronese&collection%5B0%5D=6",
+    "creator": "Paolo Veronese",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Veronese_-_Le_Portement_de_croix,_INV_144_;_MR_391.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00000077344",
@@ -67,7 +111,18 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CALIARI Paolo (atelier)"
+   "extrait": "CALIARI Paolo (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/00000077344.jpg",
+    "credit": "Own work",
+    "creator": "Sailko",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Veronese,_marte_e_venere.JPG",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "10500004947",
@@ -283,7 +338,18 @@
    "musee": "musée d’ethnographie corse",
    "ville": "Bastia",
    "code": "suiveur_de",
-   "extrait": "Véronèse (1528-1588) (suiveur)"
+   "extrait": "Véronèse (1528-1588) (suiveur)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/03290005067.jpg",
+    "credit": "Own work",
+    "creator": "Sailko",
+    "licence": "CC BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Pietro_della_vecchia,_venere_e_marte,_1640_ca.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "01370014322",

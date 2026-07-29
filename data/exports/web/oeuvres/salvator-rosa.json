@@ -395,7 +395,18 @@
    "musee": "musée Granet",
    "ville": "Aix-en-Provence",
    "code": "entourage_de",
-   "extrait": "Rosa Salvator (1615-1673) (entourage)"
+   "extrait": "Rosa Salvator (1615-1673) (entourage)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/08940004449.jpg",
+    "credit": "Own work , Tylwyth Eldar , 2024-03-09 14:23:59",
+    "creator": "Circle of Salvator Rosa",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_Granet_-_Minerve_conseille_%C3%A0_Cadmus_d%27arracher_les_dents_du_dragon_02.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "08940004368",
@@ -403,7 +414,18 @@
    "musee": "musée Granet",
    "ville": "Aix-en-Provence",
    "code": "suiveur_de",
-   "extrait": "Rosa Salvator (1615-1673) (suiveur)"
+   "extrait": "Rosa Salvator (1615-1673) (suiveur)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/08940004368.jpg",
+    "credit": "Own work , Tylwyth Eldar , 2024-03-09 14:23:19",
+    "creator": "Follower of Salvator Rosa",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_Granet_-_Paysage_d%27Italie_au_soleil_couchant_avec_des_p%C3%AAcheurs_02.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "08940004668",
@@ -411,7 +433,18 @@
    "musee": "musée Granet",
    "ville": "Aix-en-Provence",
    "code": "maniere_de",
-   "extrait": "Rosa Salvator (1615-1673) (manière de)"
+   "extrait": "Rosa Salvator (1615-1673) (manière de)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/08940004668.jpg",
+    "credit": "Own work , Tylwyth Eldar , 2024-03-09 14:33:20",
+    "creator": "Manner of Salvator Rosa",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_Granet_-_Paysage_montagneux.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "08940005214",
@@ -419,7 +452,18 @@
    "musee": "musée Granet",
    "ville": "Aix-en-Provence",
    "code": "attribue",
-   "extrait": "Rosa Salvator (1615-1673) (attribué à, attribué)"
+   "extrait": "Rosa Salvator (1615-1673) (attribué à, attribué)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/08940005214.jpg",
+    "credit": "Own work , Tylwyth Eldar , 2024-03-09 14:23:37",
+    "creator": "Attributed to Salvator Rosa",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_Granet_-_All%C3%A9gorie_du_rire_02.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0536000553",

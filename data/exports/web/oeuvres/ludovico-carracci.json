@@ -35,7 +35,18 @@
    "musee": "musée des Beaux-Arts",
    "ville": "Lille",
    "code": "ecole_de",
-   "extrait": "CARRACCI Ludovico (école)"
+   "extrait": "CARRACCI Ludovico (école)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE019544.jpg",
+    "credit": "Own work",
+    "creator": "Anonyme (Anciens Pays-Bas du Sud)",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_pays_bas_sud_deploration_du_christ.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004721",

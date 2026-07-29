@@ -47,7 +47,18 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
-   "extrait": "PIPPI Giulio (atelier)"
+   "extrait": "PIPPI Giulio (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE025545.jpg",
+    "credit": "Own work",
+    "creator": "Coyau",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:V%C3%A9nus_et_Vulcain,_Romano_(Louvre_INV_424)_04.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00000107086",

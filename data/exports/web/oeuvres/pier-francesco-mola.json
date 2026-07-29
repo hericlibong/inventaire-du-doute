@@ -23,7 +23,18 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "point_interrogation",
-   "extrait": "MOLA Pier Francesco (?)"
+   "extrait": "MOLA Pier Francesco (?)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE026887.jpg",
+    "credit": "photo Shonagon 2024-03-21",
+    "creator": "Pier Francesco Mola",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Saint_Pierre_en_pri%C3%A8re_-_Pier_Francesco_Mola_-_Mus%C3%A9e_du_Louvre_Peintures_INV_330_;_MR_309.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070000172",
@@ -183,7 +194,18 @@
    "musee": "musée des Beaux-Arts de Saint-Denis",
    "ville": "Reims",
    "code": "attribue",
-   "extrait": "MOLA Pier Francesco (attribué à, peintre)"
+   "extrait": "MOLA Pier Francesco (attribué à, peintre)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/03110041486.jpg",
+    "credit": "Musée des Beaux-Arts, Reims",
+    "creator": "Pier Francesco Mola",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:MOLA_Pier_Francesco_(Attribu%C3%A9_%C3%A0)_T%C3%AAte_d%27homme_Huile_sur_toile.2.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "03110032162",
@@ -191,7 +213,18 @@
    "musee": "musée des Beaux-Arts de Saint-Denis",
    "ville": "Reims",
    "code": "attribue",
-   "extrait": "MOLA Pier Francesco (attribué à, peintre)"
+   "extrait": "MOLA Pier Francesco (attribué à, peintre)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/03110032162.jpg",
+    "credit": "Musée des Beaux-Arts, Reims",
+    "creator": "Pier Francesco Mola",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:MOLA_Pier_Francesco_(Attribu%C3%A9_%C3%A0)_T%C3%AAte_d%27homme_Huile_sur_toile.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0457000323",
@@ -199,7 +232,18 @@
    "musee": "musée des beaux-arts",
    "ville": "Nîmes",
    "code": "attribue",
-   "extrait": "MOLA Pier  Francesco (attribué à)"
+   "extrait": "MOLA Pier  Francesco (attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/M0457000323.jpg",
+    "credit": "Own work , Finoskov , 2017-01-14 16:25:03",
+    "creator": "Pier Francesco Mola",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:N%C3%AEmes,Beaux_Arts169,Mort_d%27Abel.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "09940008544",

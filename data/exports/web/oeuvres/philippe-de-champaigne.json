@@ -31,7 +31,18 @@
    "musee": "musée municipal des beaux-arts",
    "ville": "Agen",
    "code": "attribue",
-   "extrait": "Champaigne Philippe de (1602-1674) (attribué à)"
+   "extrait": "Champaigne Philippe de (1602-1674) (attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE000384.jpg",
+    "credit": "Own work",
+    "creator": "Didier Descouens",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:(Agen)_Portrait_d%27Etienne_Delafons_-_Philippe_de_Champaigne_-_Mus%C3%A9e_des_Beaux-Arts_d%27Agen.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE000382",
@@ -39,7 +50,18 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "Champaigne Philippe de (1602-1674) (attribué à)"
+   "extrait": "Champaigne Philippe de (1602-1674) (attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE000382.jpg",
+    "credit": "http://www.voltaire-integral.com/Html/14/04CATALO_1_4.html at the Wayback Machine",
+    "creator": "Presumably Philippe de Champaigne",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Mansard_champaigne.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE000381",
@@ -47,7 +69,18 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "Champaigne Philippe de (1602-1674) (attribué à)"
+   "extrait": "Champaigne Philippe de (1602-1674) (attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE000381.jpg",
+    "credit": "[1]",
+    "creator": "Presumably Philippe de Champaigne",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Philippe_de_Champaigne_-_Enfant_au_faucon_(Anne-Marie_de_Chevreuse).jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE000380",
@@ -71,7 +104,18 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
-   "extrait": "Champaigne Philippe de (1602-1674) (atelier)"
+   "extrait": "Champaigne Philippe de (1602-1674) (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE000379.jpg",
+    "credit": "Google",
+    "creator": "Champaigne",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Champaigne_Petite_fille_aux_mains_jointes_Louvre.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE007087",
@@ -95,7 +139,18 @@
    "musee": "musée de Tessé",
    "ville": "Le Mans",
    "code": "attribue",
-   "extrait": "Champaigne Philippe de (1602-1674) (attribué à)"
+   "extrait": "Champaigne Philippe de (1602-1674) (attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE009639.jpg",
+    "credit": "https://dhistoire-et-dart.com/Fortunecritique/Champaignejeune4s4cat.html",
+    "creator": "Champaigne",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Champaigne_Adoration_des_mages_Le_Mans.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE010874",
@@ -103,7 +158,18 @@
    "musee": "musée de Tessé",
    "ville": "Le Mans",
    "code": "attribue",
-   "extrait": "Champaigne Philippe de (1602-1674) (attribué à)"
+   "extrait": "Champaigne Philippe de (1602-1674) (attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE010874.jpg",
+    "credit": "Web Gallery of Art : Image Info about artwork wga QS:P11807,\"c/champaig/vanitas\"",
+    "creator": "Philippe de Champaigne",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:StillLifeWithASkull.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE011191",
@@ -111,7 +177,18 @@
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "atelier_de",
-   "extrait": "Champaigne Philippe de (1602-1674) (atelier)"
+   "extrait": "Champaigne Philippe de (1602-1674) (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE011191.jpg",
+    "credit": "Collections du Château de Versailles, MV 5990",
+    "creator": "Philippe de Champaigne",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Jean_Duvergier_de_Hauranne.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE011975",
@@ -119,7 +196,18 @@
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "atelier_de",
-   "extrait": "Champaigne Philippe de (1602-1674) (atelier)"
+   "extrait": "Champaigne Philippe de (1602-1674) (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE011975.jpg",
+    "credit": "http://www.voltaire-integral.com/Html/14/04CATALO_1_4.html",
+    "creator": "Workshop of Philippe de Champaigne",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Louis-Isaac_Le_Maistre_de_Sacy.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE012171",
@@ -135,7 +223,18 @@
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "atelier_de",
-   "extrait": "Champaigne Philippe de (1602-1674) (atelier)"
+   "extrait": "Champaigne Philippe de (1602-1674) (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE012115.jpg",
+    "credit": "http://www.allposters.it/-sp/Portrait-de-Marie-des-Anges-Suireau-1599-1658-Posters_i7283095_.htm",
+    "creator": "Philippe de Champaigne",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Marie_Suireau_de_Rocheren,_abbess_of_Port_Royal.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "07140001370",
@@ -231,7 +330,18 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
-   "extrait": "Champaigne Philippe de (1602-1674) (attribué à)"
+   "extrait": "Champaigne Philippe de (1602-1674) (attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/M0332006700.jpg",
+    "credit": "https://www.flickr.com/photos/78775886@N06/52150834340/",
+    "creator": "Morio60",
+    "licence": "CC BY-SA 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Besan%C3%A7on_(Doubs)_-_Mus%C3%A9e_des_Beaux-Arts_et_d%27Arch%C3%A9ologie_-_%22Portrait_d%27homme%22_(attribu%C3%A9_%C3%A0_Philippe_de_Champaigne,_1602-1674).jpg",
+    "verifie_le": "2026-07-29"
+   }
   }
  ],
  "version_donnee": "2026-07-01",

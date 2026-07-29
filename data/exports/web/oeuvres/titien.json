@@ -39,7 +39,18 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
-   "extrait": "VECELLIO Tiziano (atelier)"
+   "extrait": "VECELLIO Tiziano (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE027125.jpg",
+    "credit": "Self-photographed by Shonagon",
+    "creator": "Workshop of Titian",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Ecce_homo_-_Titien_-_Q18573224.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00000077319",
@@ -47,7 +58,18 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "point_interrogation",
-   "extrait": "LE TITIEN (?, dit)"
+   "extrait": "LE TITIEN (?, dit)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/00000077319.jpg",
+    "credit": "Own work",
+    "creator": "Dguendel",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Ch%C3%A2teau_de_Chantilly,_Titian,_ecce_homo.JPG",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00000107129",
@@ -111,7 +133,18 @@
    "musee": "musée du temps",
    "ville": "Besançon",
    "code": "attribue",
-   "extrait": "LE TITIEN (attribué à)"
+   "extrait": "LE TITIEN (attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/M0333000715.jpg",
+    "credit": "Time museum",
+    "creator": "Attributed to Titian",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Le_Titien_(attribu%C3%A9_%C3%A0)_%E2%80%93_Portrait_de_Nicolas_Perrenot_de_Granvelle_%E2%80%93_Mus%C3%A9e_du_Temps,_Besan%C3%A7on.jpeg",
+    "verifie_le": "2026-07-29"
+   }
   }
  ],
  "version_donnee": "2026-07-01",

@@ -70,6 +70,35 @@ Conséquences assumées :
   patrimoine) ; cette fiche vit sa vie indépendamment de notre version de
   référence du fichier et peut avoir été mise à jour depuis.
 
+> **Mise à jour (2026-07-28).** L'onglet « Œuvres » ne montre plus quelques
+> exemples mais la **totalité des œuvres concernées** par le maître, filtrables
+> par mention et paginées. Le verbatim et le lien POP restent la matière ; les
+> exemples automatiques décrits ci-dessus ne sont plus la règle d'affichage.
+
+## Les reproductions d'œuvres (Wikimedia Commons, 2026-07-29)
+
+Quand c'est possible, l'onglet « Œuvres » montre une **reproduction** de l'œuvre. On
+n'en affiche une que si sa réutilisation est **explicitement permise**, et si elle est
+rattachée **avec certitude** à la notice.
+
+- **Pourquoi pas les images de POP ?** On a vérifié les crédits photographiques des
+  3 668 notices sur POP : **aucune** n'est sous licence ouverte (l'essentiel est de la
+  RMN, « utilisation soumise à autorisation »). On ne peut donc pas réutiliser ces
+  photos.
+- **D'où viennent les reproductions montrées ?** De **Wikimedia Commons**, en ne
+  retenant que les fichiers sous **domaine public, CC0, CC BY ou CC BY-SA**. Le
+  rattachement à la notice se fait par l'**identifiant Joconde** (via Wikidata), jamais
+  par une simple ressemblance de titre ou de musée. **184 œuvres** sur les 3 668 en ont
+  une à ce jour.
+- **C'est une illustration, jamais une donnée** ni un comptage. L'image est téléchargée
+  et servie localement (pas de lien direct vers un serveur externe), montrée en petit,
+  et **cliquable vers sa page Wikimedia Commons**, où figurent la licence et le crédit
+  exacts — rappelés sous l'image.
+- La reproduction montre l'objet que **décrit la notice** ; elle ne dit rien de plus sur
+  son auteur — **le projet n'attribue toujours rien**.
+- Les œuvres sans reproduction réutilisable connue gardent un **emplacement neutre** :
+  jamais d'image inventée.
+
 ## La carte par maître : ce qu'elle montre (2026-07-12)
 
 Chaque fiche de maître peut montrer **où** sont conservées les œuvres dont

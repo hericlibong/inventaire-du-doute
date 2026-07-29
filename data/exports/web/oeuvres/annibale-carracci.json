@@ -55,7 +55,18 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
-   "extrait": "CARRACCI Annibale (atelier)"
+   "extrait": "CARRACCI Annibale (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE024783.jpg",
+    "credit": "http://cartelfr.louvre.fr/pub/fr/image/31106_p0003542.002.jpg",
+    "creator": "Annibale Carracci",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Annibale_Carracci,_Adorazione_dei_pastori,_Louvre.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE029379",
@@ -79,7 +90,18 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CARRACCI Annibale (atelier)"
+   "extrait": "CARRACCI Annibale (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/00000077354.jpg",
+    "credit": "Joconde database : entry 00000077354",
+    "creator": "Annibale Carracci",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Annibale_Carracci_La_Notte_Museo_Cond%C3%A9_Chantilly.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00000077355",
@@ -87,7 +109,18 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CARRACCI Annibale (atelier)"
+   "extrait": "CARRACCI Annibale (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/00000077355.jpg",
+    "credit": "Joconde database : entry 00000077355",
+    "creator": "Annibale Carracci",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Annibale_Carracci_Aurora_Museo_Cond%C3%A9_Chantilly.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00000077352",
@@ -95,7 +128,18 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CARRACCI Annibale (atelier)"
+   "extrait": "CARRACCI Annibale (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/00000077352.jpg",
+    "credit": "Web Gallery of Art : Image Info about artwork wga QS:P11807,\"c/carracci/annibale/2/sleepven\"",
+    "creator": "Annibale Carracci",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Annibale_Carracci_-_Sleeping_Venus_-_WGA4449.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00000077353",
@@ -119,7 +163,18 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CARRACCI Annibale (atelier)"
+   "extrait": "CARRACCI Annibale (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/00000104668.jpg",
+    "credit": "Own work",
+    "creator": "Sailko",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Annibale_carracci,_amorini_con_fiori_04.JPG",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00000104667",
@@ -127,7 +182,18 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CARRACCI Annibale (atelier)"
+   "extrait": "CARRACCI Annibale (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/00000104667.jpg",
+    "credit": "https://www.pop.culture.gouv.fr/notice/joconde/00000104667",
+    "creator": "Annibale Carracci and workshop",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:CARRACCI_Annibale_(atelier)_-_Amour_r%C3%A9pendant_des_fleurs,_00000104667.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00000104670",
@@ -135,7 +201,18 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CARRACCI Annibale (atelier)"
+   "extrait": "CARRACCI Annibale (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/00000104670.jpg",
+    "credit": "Own work",
+    "creator": "Sailko",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Annibale_carracci,_amorini_con_fiori_03.JPG",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00000104669",
@@ -143,7 +220,18 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CARRACCI Annibale (atelier)"
+   "extrait": "CARRACCI Annibale (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/00000104669.jpg",
+    "credit": "Own work",
+    "creator": "Sailko",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Annibale_carracci,_amorini_con_fiori_01.JPG",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004041",
@@ -631,7 +719,18 @@
    "musee": "musée des Beaux-Arts",
    "ville": "Nantes",
    "code": "point_interrogation",
-   "extrait": "CARRACCI Annibale (?, patronyme)"
+   "extrait": "CARRACCI Annibale (?, patronyme)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/07430005039.jpg",
+    "credit": "[1]",
+    "creator": "Annibale Carracci",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Annibale_Carracci_Nantes.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "05620001443",

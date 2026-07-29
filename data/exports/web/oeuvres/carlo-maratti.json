@@ -351,7 +351,18 @@
    "musee": "musée d’ethnographie corse",
    "ville": "Bastia",
    "code": "atelier_de",
-   "extrait": "MARATTI Carlo (atelier)"
+   "extrait": "MARATTI Carlo (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/03290008037.jpg",
+    "credit": "Own work",
+    "creator": "Sailko",
+    "licence": "CC BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Cerchia_di_pompeo_batoni,_lot_e_le_figlie,_xviii_secolo.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0332010269",
@@ -367,7 +378,18 @@
    "musee": "musée Granet",
    "ville": "Aix-en-Provence",
    "code": "attribue",
-   "extrait": "Maratta Carlo (1625-1713) (attribué à)"
+   "extrait": "Maratta Carlo (1625-1713) (attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/08940004673.jpg",
+    "credit": "Own work , Tylwyth Eldar , 2024-03-09 13:25:19",
+    "creator": "Attributed to Giuseppe Bartolomeo Chiari",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Giuseppe_Bartolomeo_Chiari_-_L%27Adoration_des_Mages_02.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0536000542",

@@ -203,7 +203,18 @@
    "musee": "musée des Beaux-Arts de Saint-Denis",
    "ville": "Reims",
    "code": "attribue",
-   "extrait": "BOILLY Louis (peintre, attribué à)"
+   "extrait": "BOILLY Louis (peintre, attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/03110041532.jpg",
+    "credit": "Musée des Beaux-Arts, Reims",
+    "creator": "Henri Nicolas van Gorp (c.1756-1820) (Attribué à)",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:VAN_GORP_Henri_Nicolas_(Attribu%C3%A9_%C3%A0)_Ah_!_Le_Voil%C3%A0_!_Huile_sur_toile.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0332000855",

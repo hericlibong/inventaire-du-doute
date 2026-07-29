@@ -35,7 +35,18 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
-   "extrait": "SANTI Raffaello (atelier)"
+   "extrait": "SANTI Raffaello (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE026982.jpg",
+    "credit": "photo Shonagon 2024-02-22",
+    "creator": "Raphael",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Dieu_le_P%C3%A8re_b%C3%A9nissant_parmi_les_anges_-_Rapha%C3%ABl_-_Mus%C3%A9e_du_Louvre_Peintures_RF_48.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE026973",
@@ -43,7 +54,18 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
-   "extrait": "RAPHAEL (dit, atelier)"
+   "extrait": "RAPHAEL (dit, atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE026973.jpg",
+    "credit": "Retouched from File:Sainte Jean-Baptiste, by Raffaello Sanzio, from C2RMF.jpg , originally C2RMF: Galerie de tableaux en très haute définition : image page",
+    "creator": "",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Sainte_Jean-Baptiste,_by_Raffaello_Sanzio,_from_C2RMF_retouched.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE026984",

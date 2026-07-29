@@ -39,7 +39,18 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "VOUET Simon (attribué)"
+   "extrait": "VOUET Simon (attribué)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE002919.jpg",
+    "credit": "https://collections.louvre.fr/recherche?page=1&author%5B0%5D=2338&collection%5B0%5D=6",
+    "creator": "Simon Vouet",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Vouet_-_Atelier_de_-_Le_Christ_%C3%A0_la_colonne,_1635_-_1640,_INV_8066_;_MR_2052.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE009665",
@@ -55,7 +66,18 @@
    "musee": "musée des beaux-arts",
    "ville": "Caen",
    "code": "attribue",
-   "extrait": "VOUET Simon (attribué à)"
+   "extrait": "VOUET Simon (attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE023056.jpg",
+    "credit": "https://mba.caen.fr/sites/mba/files/2019-11/VOUET%20Simon%2C%20Jeune%20homme%20%C3%A0%20la%20figue%20Inv.182.jpg",
+    "creator": "Simon Vouet",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:L%27Homme_%C3%A0_la_figue.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00000074411",
@@ -255,7 +277,18 @@
    "musee": "musée des Beaux-Arts",
    "ville": "Nantes",
    "code": "attribue",
-   "extrait": "VOUET Simon (attribué à)"
+   "extrait": "VOUET Simon (attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/07430005676.jpg",
+    "credit": "https://museedartsdenantes.nantesmetropole.fr/home/au-cur-du-musee/les-collections/toutes-les-collections-en-ligne.html#/artworks?filters=authors%3AVOUET%20Simon%E2%86%B9VOUET%20Simon&page=1&layout=grid&sort=by_author",
+    "creator": "Simon Vouet",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Vouet_-_attribu%C3%A9_%C3%A0_-_Saint_Simon_ap%C3%B4tre,_239.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "01810000027",
@@ -271,7 +304,18 @@
    "musee": "musée national Magnin",
    "ville": "Dijon",
    "code": "entourage_de",
-   "extrait": "VOUET Simon (entourage)"
+   "extrait": "VOUET Simon (entourage)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/50110000275.jpg",
+    "credit": "blogspot.com",
+    "creator": "Circle of Simon Vouet",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Vouet,_Simon%3F_-_C%C3%A9r%C3%A8s,_d%C3%A9esse_des_moissons_-_17th_century.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "03070000188",
@@ -375,7 +419,18 @@
    "musee": "musée des beaux-arts",
    "ville": "Rouen",
    "code": "ecole_de",
-   "extrait": "VOUET Simon (école)"
+   "extrait": "VOUET Simon (école)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/07290021974.jpg",
+    "credit": "\"L'Adoration des bergers\", anonyme, vers 1635-1640. Rouen, musée des beaux-arts.",
+    "creator": "Grégory Lejeune",
+    "licence": "CC0",
+    "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:%22L%27Adoration_des_bergers%22,_anonyme,_vers_1635-1640._Rouen,_mus%C3%A9e_des_beaux-arts._(36311888415).jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "01370014859",

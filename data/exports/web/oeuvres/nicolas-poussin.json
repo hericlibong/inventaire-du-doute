@@ -387,7 +387,18 @@
    "musee": "musée des beaux-arts",
    "ville": "Rouen",
    "code": "attribue",
-   "extrait": "POUSSIN Nicolas (attribué à)"
+   "extrait": "POUSSIN Nicolas (attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/07290022377.jpg",
+    "credit": "Cliché Carole Loisel, Catherine Lancien / Joconde",
+    "creator": "Nicolas Poussin",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Saint_Denis_l%27Ar%C3%A9opagite_couronn%C3%A9_par_un_ange_-_Poussin_-_MBA_Rouen.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "05120002906",

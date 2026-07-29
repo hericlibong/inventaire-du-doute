@@ -467,7 +467,18 @@
    "musee": "musée des beaux-arts",
    "ville": "Dijon",
    "code": "genre_de",
-   "extrait": "RENI Guido (genre de)"
+   "extrait": "RENI Guido (genre de)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/01370014226.jpg",
+    "credit": "http://mba-collections.dijon.fr/ow4/mba/rechcroisee.xsp?f=Ensemble&v=&f=Auteur_field&v=Reni%2C+Guido&e=",
+    "creator": "Guido Reni",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Reni_-_Genre_de_-_Diane,_CA_713.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "01370014223",
@@ -499,7 +510,18 @@
    "musee": "musée Granet",
    "ville": "Aix-en-Provence",
    "code": "ecole_de",
-   "extrait": "Reni Guido (1575-1642) (école)"
+   "extrait": "Reni Guido (1575-1642) (école)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/08940005128.jpg",
+    "credit": "Own work , Tylwyth Eldar , 2024-03-09 13:22:06",
+    "creator": "Attributed to Francesco di Maria",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_Granet_-_Sainte_Madeleine_en_extase.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06190023719",

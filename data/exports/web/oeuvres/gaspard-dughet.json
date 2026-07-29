@@ -283,7 +283,18 @@
    "musee": "musée Granet",
    "ville": "Aix-en-Provence",
    "code": "attribue",
-   "extrait": "Dughet Gaspard (1615-1675) (attribué à)"
+   "extrait": "Dughet Gaspard (1615-1675) (attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/08940004481.jpg",
+    "credit": "Own work , Tylwyth Eldar , 2024-03-09 13:59:51",
+    "creator": "Attributed to Gaspard Dughet",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_Granet_-_Paysage_d%27Italie_avec_un_berger_et_diverses_figures_v%C3%AAtues_%C3%A0_l%27antique.jpg",
+    "verifie_le": "2026-07-29"
+   }
   }
  ],
  "version_donnee": "2026-07-01",

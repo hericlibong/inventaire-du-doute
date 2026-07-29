@@ -23,7 +23,18 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
-   "extrait": "Gérard François (1770-1837) (atelier)"
+   "extrait": "Gérard François (1770-1837) (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE001267.jpg",
+    "credit": "gallerix.org",
+    "creator": "François Gérard and workshop",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_Gerard_-_Napoleon_I_in_Coronation_Robes.jpeg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50160000047",
@@ -71,7 +82,18 @@
    "musee": "musée national du château de Fontainebleau",
    "ville": "Fontainebleau",
    "code": "atelier_de",
-   "extrait": "Gérard François (1770-1837) (atelier)"
+   "extrait": "Gérard François (1770-1837) (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/50130000192.jpg",
+    "credit": "Nationalmuseum : Härskarkonst - Napoleon, Karl Johan, Alexander at the Wayback Machine",
+    "creator": "Workshop of François Gérard",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Napoleon_in_Coronation_Robes_by_Fran%C3%A7ois_G%C3%A9rard.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50130000187",
@@ -87,7 +109,18 @@
    "musee": "musée national du château de Fontainebleau",
    "ville": "Fontainebleau",
    "code": "atelier_de",
-   "extrait": "Gérard François (1770-1837) (atelier)"
+   "extrait": "Gérard François (1770-1837) (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/50130000180.jpg",
+    "credit": "The original uploader was Carolus at Dutch Wikipedia .",
+    "creator": "Workshop of François Gérard",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Napoleon_;_keizer_der_Fransen.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50130000179",
@@ -95,7 +128,18 @@
    "musee": "musée national du château de Fontainebleau",
    "ville": "Fontainebleau",
    "code": "atelier_de",
-   "extrait": "Gérard François (1770-1837) (atelier)"
+   "extrait": "Gérard François (1770-1837) (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/50130000179.jpg",
+    "credit": "Bjoertvedt , 2010-11-24",
+    "creator": "Workshop of François Gérard / Attributed to Marie-Éléonore Godefroid",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Bonaparte_Julie_by_Wicar.JPG",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50130000182",
@@ -111,7 +155,18 @@
    "musee": "musée barrois",
    "ville": "Bar-le-Duc",
    "code": "attribue",
-   "extrait": "Gérard François (1770-1837) (attribué à)"
+   "extrait": "Gérard François (1770-1837) (attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/M0517000081.jpg",
+    "credit": "Own work",
+    "creator": "Ji-Elle",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_G%C3%A9rard-Portrait_d%27Hector_Lemaire-Mus%C3%A9e_barrois.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "02470000174",
@@ -119,7 +174,18 @@
    "musee": "musée Bertrand",
    "ville": "Châteauroux",
    "code": "attribue",
-   "extrait": "Gérard François (1770-1837) (attribué à)"
+   "extrait": "Gérard François (1770-1837) (attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/02470000174.jpg",
+    "credit": "Musée Bertrand Châteauroux [1]",
+    "creator": "François Gérard / Robert Lefèvre",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Portrait_de_la_reine_Hortense_-_Mus%C3%A9e_Bertrand_Ch%C3%A2teauroux.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "03110042044",

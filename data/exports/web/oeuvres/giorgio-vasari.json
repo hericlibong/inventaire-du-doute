@@ -67,7 +67,18 @@
    "musee": "musée des beaux-arts",
    "ville": "Bordeaux",
    "code": "atelier_de",
-   "extrait": "VASARI Giorgio (atelier)"
+   "extrait": "VASARI Giorgio (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE023498.jpg",
+    "credit": "Own work , Tylwyth Eldar , 2024-10-30 11:51:07",
+    "creator": "Workshop of Giorgio Vasari",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Bordeaux_-_Sainte_Famille_avec_le_petit_saint_Jean-Baptiste_et_saint_Fran%C3%A7ois_d%27Assise_02.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350102094",

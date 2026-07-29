@@ -2,6 +2,33 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-29 — Intégration des 184 reproductions ouvertes dans l'onglet « Œuvres »
+
+Suite du chantier images : les **184 correspondances exactes à image ouverte** (Wikimedia
+Commons) sont **affichées** dans l'onglet « Œuvres », à la place du placeholder.
+
+**Téléchargement local, jamais de hotlink.** `src/build_vignettes.py` récupère une miniature
+Commons (API `iiurlwidth`, avec backoff sur HTTP 429), la ré-encode en **JPEG optimisé**
+(largeur ≤ 900 px, ~110 Ko en moyenne, métadonnées retirées) via Pillow, une **seule copie par
+référence** dans `data/exports/web/oeuvres_img/<ref>.jpg`. `sync-data.js` les copie vers
+`web/static/oeuvres/` (servies en `/oeuvres/<ref>.jpg`, dossier gitignoré). Pillow ajouté aux
+dépendances.
+
+**Enrichissement des données.** Un index `data/exports/web/images_index.json` (référence →
+`{statut, url, credit, creator, licence, licence_url, source, verifie_le}`) est fusionné dans les
+fiches `oeuvres/<slug>.json` (champ `image`). `build_artistes.py` rattache aussi cet index à la
+régénération complète, pour que l'enrichissement survive.
+
+**Affichage (`OeuvresMaitre.svelte`).** L'image locale remplit le slot média, en `loading="lazy"`,
+avec un `alt` neutre (« Reproduction : {titre} »), **cliquable vers la page source Wikimedia
+Commons** (où vivent licence et crédit). Sous l'image, une **légende normée en petit corps** :
+licence (liée) + « Wikimedia Commons » (lié). Le nom de l'auteur du fichier n'est affiché **que
+pour les licences CC BY/BY-SA** (attribution requise) — pour le domaine public on ne l'affiche
+pas, afin de ne pas mettre en avant un auteur d'œuvre incertain (le projet n'attribue rien). Les
+œuvres sans reproduction ouverte gardent le **placeholder** (jamais d'image inventée). Déclaré
+aussi dans la page méthode (docs/methode-et-limites.md), comme l'exige la règle « image externe =
+source secondaire à déclarer ».
+
 ## 2026-07-29 — Images des œuvres : audit POP, Levier A différé, cap Wikimedia Commons
 
 **Audit des droits photo sur POP (Palier 1 du chantier « vignettes »).** Pour les 3 668

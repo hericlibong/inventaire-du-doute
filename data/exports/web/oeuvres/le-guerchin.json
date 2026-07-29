@@ -39,7 +39,18 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
-   "extrait": "BARBIERI Giovanni Francesco (atelier)"
+   "extrait": "BARBIERI Giovanni Francesco (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE025580.jpg",
+    "credit": "Turner, Nicolas: The paintings of Guercino : a revised and expanded catalogue raisonné, Roma 2017, p. 557",
+    "creator": "Guercino",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Self-portrait_by_Guercino.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE025581",
@@ -47,7 +58,18 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
-   "extrait": "LE GUERCHIN (dit, atelier)"
+   "extrait": "LE GUERCHIN (dit, atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE025581.jpg",
+    "credit": "https://collections.louvre.fr/recherche?q=Le%20Guerchin%20%28Barbieri,%20Giovanni%20Francesco,%20dit%20Il%20Guercino%29&collection%5B0%5D=6",
+    "creator": "Guercino",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Guercino_-_Atelier_de_-_Circ%C3%A9,_INV_86_;_MR_267.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE026153",
@@ -63,7 +85,18 @@
    "musee": "musée national Magnin",
    "ville": "Dijon",
    "code": "ecole_de",
-   "extrait": "LE GUERCHIN (dit, école)"
+   "extrait": "LE GUERCHIN (dit, école)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/00000069001.jpg",
+    "credit": "Œuvre appartenant au Musée Magnin",
+    "creator": "Bartolomeo Gennari",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:L%27Ange_gardien_prot%C3%A9geant_un_enfant_du_d%C3%A9mon_-_Bartolomeo_Gennari_-_MM_1938E342.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00000094658",

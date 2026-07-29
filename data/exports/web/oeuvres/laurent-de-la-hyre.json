@@ -55,7 +55,18 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "LA HYRE Laurent de (attribué)"
+   "extrait": "LA HYRE Laurent de (attribué)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/00000104551.jpg",
+    "credit": "Self-photographed VladoubidoOo",
+    "creator": "Attributed to Laurent de La Hyre",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:La_Vierge_veillant_sur_l%27enfant_endormi,_vers_1625,_Paris,_mus%C3%A9e_du_Louvre.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350213339",

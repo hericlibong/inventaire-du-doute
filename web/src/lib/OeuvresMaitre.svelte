@@ -166,11 +166,27 @@
 			<ol class="entrees">
 				{#each pageOeuvres as o (o.reference)}
 					<li class="entree">
-						<!-- Emplacement réservé pour une future reproduction (droits par œuvre à
-						     clarifier) : jamais une image inventée. -->
-						<div class="media" aria-hidden="true">
-							<span>reproduction<br />non affichée</span>
-						</div>
+						{#if o.image}
+							<!-- Reproduction ouverte (Wikimedia Commons), copie locale ; l'image
+							     ouvre la page source où figurent licence et crédit. Légende
+							     normée en petit corps : source + licence (+ auteur si requis). -->
+							<figure class="media media-image">
+								<a href={o.image.source} target="_blank" rel="noopener" title="Voir le fichier sur Wikimedia Commons">
+									<img src="{base}/{o.image.url}" alt="Reproduction : {o.titre ?? 'œuvre'}" loading="lazy" />
+								</a>
+								<figcaption class="credit">
+									{#if o.image.creator && o.image.licence.startsWith('CC BY')}<span class="credit-auteur" title={o.image.creator}>{o.image.creator}</span>{/if}
+									<a href={o.image.licence_url || o.image.source} target="_blank" rel="noopener">{o.image.licence}</a>
+									· <a href={o.image.source} target="_blank" rel="noopener">Wikimedia&nbsp;Commons</a>
+								</figcaption>
+							</figure>
+						{:else}
+							<!-- Pas de reproduction réutilisable connue : placeholder assumé,
+							     jamais une image inventée. -->
+							<div class="media" aria-hidden="true">
+								<span>reproduction<br />non affichée</span>
+							</div>
+						{/if}
 						<div class="corps">
 							<p class="kicker">
 								<span class="pastille" style="background: {fam(o.code).couleur}"></span>{fam(o.code).header}
@@ -404,6 +420,51 @@
 		text-transform: uppercase;
 		line-height: 1.35;
 		color: var(--couleur-trait);
+	}
+
+	/* Reproduction réelle : l'image remplit la colonne média, la légende (source +
+	   licence) tient dessous en petit corps normé. */
+	.media-image {
+		margin: 0;
+		min-width: 0;
+	}
+
+	.media-image a {
+		display: block;
+	}
+
+	.media-image img {
+		display: block;
+		width: 100%;
+		height: auto;
+		border: var(--filet);
+		background: var(--surface-carte);
+	}
+
+	.credit {
+		margin-top: 0.3rem;
+		font-family: var(--police-ui);
+		font-size: 0.6rem;
+		line-height: 1.35;
+		color: var(--couleur-encre-douce);
+	}
+
+	.credit a {
+		color: inherit;
+		text-decoration: underline;
+	}
+
+	.credit a:hover {
+		color: var(--accent-cobalt);
+	}
+
+	/* Auteur exigé par la licence (CC BY/BY-SA) : borné pour ne pas déborder. */
+	.credit-auteur {
+		display: block;
+		max-width: 100%;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
 	}
 
 	.corps {

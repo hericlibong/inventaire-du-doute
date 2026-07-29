@@ -59,7 +59,18 @@
    "musee": "musée des Beaux-Arts",
    "ville": "Lille",
    "code": "atelier_de",
-   "extrait": "BOTTICELLI Sandro (dit, atelier)"
+   "extrait": "BOTTICELLI Sandro (dit, atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE019574.jpg",
+    "credit": "Own work",
+    "creator": "Workshop of Sandro Botticelli",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_botticelli_ecole_vierge_enfant.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE024717",
@@ -75,7 +86,18 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
-   "extrait": "BOTTICELLI Sandro (dit, atelier)"
+   "extrait": "BOTTICELLI Sandro (dit, atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE024762.jpg",
+    "credit": "Own work",
+    "creator": "Workshop of Sandro Botticelli",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Botticelli-V%C3%A9nus_et_trois_putti.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE024763",
@@ -91,7 +113,18 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "BOTTICELLI Sandro (atelier)"
+   "extrait": "BOTTICELLI Sandro (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/00000077305.jpg",
+    "credit": "Château de Chantilly (Oise) - Musée Condé - La Tribune , Patrick from Compiègne, France, 2012-10-28 13:33",
+    "creator": "Workshop of Sandro Botticelli",
+    "licence": "CC BY-SA 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:L%27Automne_-_Ch%C3%A2teau_de_Chantilly_(Oise)_-_Mus%C3%A9e_Cond%C3%A9_-_La_Tribune.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350001834",

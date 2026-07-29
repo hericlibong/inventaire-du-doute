@@ -2,6 +2,24 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-29 (suite) — Les premières reproductions entrent dans les fiches
+
+On avait 184 reproductions ouvertes identifiées avec certitude. On les a intégrées. Chaque image
+est téléchargée et ré-encodée localement (pas de lien direct vers Commons), montrée à la place du
+placeholder, et cliquable vers sa page source où figurent licence et crédit — rappelés en petit
+sous l'image. Sur les fiches de Corneille de Lyon, de Clouet, de Rembrandt, des visages
+apparaissent enfin à côté des formules prudentes des musées.
+
+Deux garde-fous tenus. D'abord les droits : on n'affiche que du domaine public ou du CC
+BY/BY-SA, et on ne met en avant le nom de l'auteur du fichier que quand la licence l'exige — pas
+question d'afficher un « auteur » là où toute la fiche dit justement que l'attribution est
+incertaine. Ensuite la retenue : les œuvres sans reproduction réutilisable gardent leur
+emplacement neutre, jamais une image de substitution.
+
+Détail technique du jour : Wikimedia limite le rythme de rendu des miniatures (HTTP 429). Un
+backoff a suffi, mais ça rappelle qu'on est l'invité d'un commun — on télécharge une fois, on
+sert local.
+
 ## 2026-07-29 — Des reproductions ouvertes, mais pas sur POP
 
 Deux temps dans la même journée. D'abord un audit : parmi les 3 668 œuvres prudentes, combien

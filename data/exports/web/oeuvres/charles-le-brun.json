@@ -83,7 +83,18 @@
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "attribue",
-   "extrait": "LE BRUN Charles (attribué)"
+   "extrait": "LE BRUN Charles (attribué)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE013144.jpg",
+    "credit": "Château de Versailles",
+    "creator": "Attributed to Charles Le Brun",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Louis_XIV.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE014799",
@@ -147,7 +158,18 @@
    "musee": "musée des beaux-arts et d’archéologie",
    "ville": "Troyes",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE033165.jpg",
+    "credit": "https://pop.culture.gouv.fr/_next/image?url=https%3A%2F%2Fpopcorn-prd-perf-assets.s3.gra.io.cloud.ovh.net%2Fjoconde%2F03030001461%2F1461-1.jpg&w=3840&q=75",
+    "creator": "Charles Le Brun",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:L%27%C3%89l%C3%A9vation_de_la_Croix,_par_Charles_Le_Brun.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00000058405",
@@ -155,7 +177,18 @@
    "musee": "musée des beaux-arts",
    "ville": "Rouen",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/00000058405.jpg",
+    "credit": "Own work",
+    "creator": "Charles Le Brun",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Le_Brun_Sainte_Genevi%C3%A8ve.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00000058404",
@@ -1315,7 +1348,18 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "atelier_de",
-   "extrait": "LE BRUN Charles (atelier)"
+   "extrait": "LE BRUN Charles (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/06070000146.jpg",
+    "credit": "Own work",
+    "creator": "Didier Descouens",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_Ingres-Bourdelle_-_All%C3%A9gorie_%C3%A0_la_gloire_de_Louis_XIV_-_Charles_Le_Brun_-_Joconde06070000146.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208040",

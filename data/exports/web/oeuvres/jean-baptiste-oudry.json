@@ -183,7 +183,18 @@
    "musee": "musée des beaux-arts",
    "ville": "Bordeaux",
    "code": "atelier_de",
-   "extrait": "OUDRY Jean-Baptiste (atelier)"
+   "extrait": "OUDRY Jean-Baptiste (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/00650013590.jpg",
+    "credit": "Own work",
+    "creator": "Tylwyth Eldar",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Atelier_de_Jean-Baptiste_Oudry_-_Com%C3%A9diens_italiens_dans_un_parc_02.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "04240000024",

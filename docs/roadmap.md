@@ -119,8 +119,15 @@ et préparation SEULEMENT (front non touché, aucune image téléchargée à ce 
       `src/commons_match.py` (testé) + `src/build_commons.py` (cache résumable). **329 exacts,
       dont 184 images ouvertes réutilisables** ; 152 candidats sur 47 réf. ; 352 faux
       rapprochements écartés. Livrables `commons_correspondances.{json,csv}`, `commons_bilan.json`.
-- [ ] ⏸ **Décision d'intégration** : quelles correspondances validées entrent dans l'onglet
-      « Œuvres », et comment (téléchargement local, crédit + licence sous l'image). À arbitrer.
+- [x] **Intégration des 184 reproductions ouvertes** (2026-07-29) — `src/build_vignettes.py`
+      télécharge une miniature Commons, ré-encode en JPEG optimisé (Pillow, ≤ 900 px), une copie
+      locale par référence dans `data/exports/web/oeuvres_img/` (sync → `web/static/oeuvres/`).
+      Index `images_index.json` fusionné dans les fiches (`build_artistes.py` le rattache aussi).
+      `OeuvresMaitre.svelte` : image locale lazy à la place du placeholder, cliquable vers la page
+      Commons, légende licence + source en petit corps (auteur seulement pour CC BY/BY-SA).
+      Déclaré dans la page méthode. Build + tests (214) OK, vérifié desktop + mobile.
+- Réserve : les autres statuts (145 exacts sans image, 152 candidats inventaire, 792 `unknown`
+  POP / Levier A) restent hors affichage — matière pour un prochain lot si on le décide.
 
 ---
 

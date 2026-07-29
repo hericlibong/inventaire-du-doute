@@ -31,7 +31,18 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "point_interrogation",
-   "extrait": "ALLEGRI Antonio (?)"
+   "extrait": "ALLEGRI Antonio (?)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE026927.jpg",
+    "credit": "Web Gallery of Art : Image Info about artwork wga QS:P11807,\"p/parmigia/port_you\"",
+    "creator": "Attributed to Parmigianino / Formerly attributed to Raphael / Possibly Antonio da Correggio",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Parmigianino_-_Portrait_of_a_Young_man.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00000060728",

@@ -47,7 +47,18 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "point_interrogation",
-   "extrait": "PERINO DEL VAGA (dit, atelier, ?)"
+   "extrait": "PERINO DEL VAGA (dit, atelier, ?)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/00000077334.jpg",
+    "credit": "Own work",
+    "creator": "Workshop of Perino del Vaga",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Ch%C3%A2teau_de_Chantilly,_Perin_del_Vaga,_the_Holy_family.JPG",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350200216",

@@ -39,7 +39,18 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "VAN DYCK Anton (école)"
+   "extrait": "VAN DYCK Anton (école)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE003328.jpg",
+    "credit": "https://www.pop.culture.gouv.fr/notice/joconde/000PE003328",
+    "creator": "Manner of Anthony van Dyck",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:VAN_DYCK_Anton_(%C3%A9cole)_;_anonyme_-_Portrait_dit_du_comte_de_Montrose,_RF_2119.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE008806",
@@ -239,7 +250,18 @@
    "musee": "musée Louis Philippe",
    "ville": "Eu",
    "code": "suiveur_de",
-   "extrait": "VAN DYCK Anton (suiveur)"
+   "extrait": "VAN DYCK Anton (suiveur)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/07140001031.jpg",
+    "credit": "Joconde database : entry 07140001031",
+    "creator": "17th century copy of original by Anthony van Dyck (1599-1641)",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Marie_de_Medici_-_Van_Dyck.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "05620001258",
@@ -247,7 +269,18 @@
    "musee": "musée des Augustins",
    "ville": "Toulouse",
    "code": "atelier_de",
-   "extrait": "DYCK Anton Van (atelier)"
+   "extrait": "DYCK Anton Van (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/05620001258.jpg",
+    "credit": "Own work",
+    "creator": "Didier Descouens",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Augustins_-_Le_Miracle_de_la_mule_-_Antoine_van_Dyck_2004_1_44.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "05620001257",
@@ -295,7 +328,18 @@
    "musee": "musée des Beaux-Arts",
    "ville": "Strasbourg",
    "code": "maniere_de",
-   "extrait": "DYCK Antoon van (manière de)"
+   "extrait": "DYCK Antoon van (manière de)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/00190022478.jpg",
+    "credit": "Own work",
+    "creator": "anonymous",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Van_Dyck_autoportrait.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06770000214",

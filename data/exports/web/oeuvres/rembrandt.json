@@ -31,7 +31,18 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
-   "extrait": "Rembrandt (1606-1669) (atelier, dit)"
+   "extrait": "Rembrandt (1606-1669) (atelier, dit)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE008564.jpg",
+    "credit": "http://www.culture.gouv.fr/Wave/image/joconde/0337/m503604_p0006733-001_p.jpg",
+    "creator": "Workshop of Rembrandt",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_-_Portrait_of_a_Young_Man_with_Moustache.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE008558",
@@ -39,7 +50,18 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "Rembrandt (1606-1669) (école, dit)"
+   "extrait": "Rembrandt (1606-1669) (école, dit)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE008558.jpg",
+    "credit": "Own work",
+    "creator": "JackyM59",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:V%C3%A9nus_et_l%27Amour_de_Rembrandt.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE008571",
@@ -47,7 +69,18 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
-   "extrait": "Rembrandt (1606-1669) (atelier, dit)"
+   "extrait": "Rembrandt (1606-1669) (atelier, dit)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE008571.jpg",
+    "credit": "Joconde",
+    "creator": "Workshop of Rembrandt",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Rembrant_-_Portrait_of_a_Man_with_a_Staff.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE008561",
@@ -55,7 +88,18 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
-   "extrait": "Rembrandt (1606-1669) (atelier, dit)"
+   "extrait": "Rembrandt (1606-1669) (atelier, dit)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE008561.jpg",
+    "credit": "www.photo.rmn.fr : Home : Info : Pic",
+    "creator": "Attributed to Rembrandt",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Rembrandt,_autoritratto_col_tocco_su_sfondo_architettonico,_1639_02.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE008563",
@@ -63,7 +107,18 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "Rembrandt (1606-1669) (école, dit)"
+   "extrait": "Rembrandt (1606-1669) (école, dit)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE008563.jpg",
+    "credit": "This image is available from the Netherlands Institute for Art History under digital ID 232215 .",
+    "creator": "Rembrandt",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_-_Portrait_of_an_old_man_with_a_beard_-_INV_1748.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE008553",
@@ -71,7 +126,18 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "Rembrandt (1606-1669) (école, dit)"
+   "extrait": "Rembrandt (1606-1669) (école, dit)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE008553.jpg",
+    "credit": "https://archive.org/stream/gri_33125004476327#page/n340/mode/1up",
+    "creator": "Constantijn à Renesse",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_-_The_Good_Samaritan_-_Louvre.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE017723",
@@ -159,7 +225,18 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "Rembrandt (1606-1669) (école)"
+   "extrait": "Rembrandt (1606-1669) (école)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/00000081513.jpg",
+    "credit": "http://paintings-art-picture.com/",
+    "creator": "Rembrandt",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_Portrait_of_Titus_van_Rijn.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520000840",
@@ -1487,7 +1564,18 @@
    "musee": "musée des Beaux-Arts",
    "ville": "Strasbourg",
    "code": "entourage_de",
-   "extrait": "Rembrandt (1606-1669) (entourage)"
+   "extrait": "Rembrandt (1606-1669) (entourage)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/00190022506.jpg",
+    "credit": "Own work",
+    "creator": "Follower of Rembrandt",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Portrait_of_a_man_mg_0072.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0277002250",

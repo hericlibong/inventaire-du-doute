@@ -31,7 +31,18 @@
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "ecole_de",
-   "extrait": "GREUZE Jean-Baptiste (école)"
+   "extrait": "GREUZE Jean-Baptiste (école)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE008279.jpg",
+    "credit": "Joconde database : entry 000PE008279",
+    "creator": "Formerly attributed to Jean-Baptiste Greuze / Unidentified painter",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Bar%C3%A9re_de_Vieuzac.JPG",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE011085",
@@ -103,7 +114,18 @@
    "musee": "musée des beaux-arts",
    "ville": "Rennes",
    "code": "attribue",
-   "extrait": "GREUZE Jean-Baptiste (attribué)"
+   "extrait": "GREUZE Jean-Baptiste (attribué)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/00000075395.jpg",
+    "credit": "Own work",
+    "creator": "Patrice78500",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:T%C3%AAte_de_jeune_fille_au_ruban_bleu_-_Jean-Baptiste_Greuze.jpg",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00000093370",
