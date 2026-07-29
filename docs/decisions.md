@@ -2,6 +2,19 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-29 — Onglet « Œuvres » : les reproductions d'abord
+
+Dans l'onglet « Œuvres », les œuvres **avec reproduction** sont désormais affichées **en
+premier** (donc en page 1), avant celles au placeholder. Critère de tri : présence d'image
+d'abord, puis l'ordre public des mentions (`ORDRE_FAMILLES`), puis l'ordre de rencontre (tri
+stable). Vaut aussi quand un filtre par mention est actif.
+
+But : que le visiteur voie tout de suite des images plutôt qu'une suite de cadres vides.
+Compromis assumé : l'ordre reflète maintenant, en tête, la **disponibilité d'une reproduction
+ouverte** — une propriété extérieure à l'œuvre (elle dépend de Wikimedia Commons), pas une
+hiérarchie de doute. Le groupement par mention reste lisible au second rang, et les comptages,
+filtres, pagination et données sont inchangés (seul l'ordre d'affichage change).
+
 ## 2026-07-29 — Intégration des 184 reproductions ouvertes dans l'onglet « Œuvres »
 
 Suite du chantier images : les **184 correspondances exactes à image ouverte** (Wikimedia

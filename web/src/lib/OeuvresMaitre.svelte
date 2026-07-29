@@ -62,10 +62,16 @@
 		charger(slug);
 	});
 
-	// Œuvres dans l'ordre public des mentions (tri stable : l'ordre de rencontre
-	// est conservé au sein d'une même famille).
+	// Ordre d'affichage : les œuvres AVEC reproduction d'abord (pour qu'on les voie
+	// en premier, dès la page 1), puis l'ordre public des mentions, puis l'ordre de
+	// rencontre (tri stable). Vaut aussi filtre par filtre.
 	const oeuvres = $derived(
-		[...(fichier?.oeuvres ?? [])].sort((a, b) => rang(a.code) - rang(b.code))
+		[...(fichier?.oeuvres ?? [])].sort((a, b) => {
+			const ia = a.image ? 0 : 1;
+			const ib = b.image ? 0 : 1;
+			if (ia !== ib) return ia - ib;
+			return rang(a.code) - rang(b.code);
+		})
 	);
 
 	// Puces de filtre : « Toutes » puis les familles PRÉSENTES, ordre public,
