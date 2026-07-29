@@ -70,10 +70,21 @@ présente aucun crédit par notice » est dépassée (voir donnees.md).
 institution est **rejeté** comme faux rapprochement (les numéros « 516 », « SN » = sans numéro,
 « INV 1 » se répètent d'un musée à l'autre) : sans institution concordante, c'est un autre objet.
 `authorized` n'est jamais déduit automatiquement. **Résultat : 329 correspondances exactes
-(P347), dont 184 images ouvertes réutilisables** (contre 0 sur POP) ; 152 candidats par
-inventaire sur 47 références ; 352 faux rapprochements écartés. Les crédits Commons viennent des
-contributeurs (pas des musées) : conservés tels quels, à revérifier avant tout affichage. Rien
-n'est téléchargé ni affiché — la décision d'intégration à l'onglet « Œuvres » reste à prendre.
+(P347), dont 184 images ouvertes réutilisables** (contre 0 sur POP) ; candidats par inventaire ;
+faux rapprochements écartés. Les crédits Commons viennent des contributeurs (pas des musées) :
+conservés tels quels, à revérifier avant tout affichage.
+
+**Vérification des candidats par les métadonnées (2026-07-29, suite).** On récupère les
+dimensions Wikidata (P2048/P2049) des candidats inventaire pour les recouper avec la notice.
+**Deux règles :** dimensions **incompatibles → rejet** (empreinte discriminante, 262 collisions
+écartées, dont 162 imagées) ; dimensions **concordantes → PAS de confirmation automatique**. Ce
+dernier point est tranché après avoir constaté des faux positifs : « L'Ange gardien » (102×81)
+apparié par coïncidence de taille à « Nu féminin » (102×82), titres sans rapport. Deux objets d'un
+même numéro d'inventaire peuvent coïncider en dimensions ; **seul l'identifiant Joconde (P347)
+promeut en « exact » automatiquement**, l'inventaire reste `a_verifier` (contrôle humain, comme
+l'exige le cahier des charges « après contrôle »). Bilan : **47 candidats sur 25 références, aucun
+à forte présomption** (dimensions ET titre) → l'appariement par inventaire n'apporte aucune
+reproduction fiable de plus pour ce corpus ; le total réutilisable reste **184**.
 
 ## 2026-07-28 — Onglet « Œuvres » : toutes les œuvres concernées, chargées à la demande
 

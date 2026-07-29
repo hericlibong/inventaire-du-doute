@@ -50,13 +50,26 @@ dont **184 avec une image sur Commons** (P18) et 145 sans image.
 **Passe 2 — numéro d'inventaire (P217).** Pour les références sans P347, on cherche les items
 dont un numéro d'inventaire égale le nôtre (comparaison normalisée : « INV 3253 » = « INV3253 »),
 **et** dont la collection concorde avec le musée Joconde. Ces cas restent des **candidats à
-vérifier** (`a_verifier`), jamais promus « exact » automatiquement (le passage à exact demande un
-contrôle humain des métadonnées). Résultat : **152 candidats sur 47 références**.
+vérifier** (`a_verifier`), jamais promus « exact » automatiquement.
 
 **Règle de prudence décisive : un même numéro d'inventaire dans une AUTRE institution est un faux
 rapprochement.** Les numéros (« 516 », « SN » = sans numéro, « INV 1 ») se répètent d'un musée à
-l'autre. Sans institution concordante, on **rejette** (`rejete`). **352 faux rapprochements**
-ainsi écartés — exactement ce que la règle « titre/auteur/musée ne suffit jamais » vise à éviter.
+l'autre. Sans institution concordante, on **rejette** (`rejete`).
+
+**Vérification des candidats par les dimensions (2026-07-29, suite).** On a récupéré les
+métadonnées Wikidata des candidats (dimensions P2048/P2049 — présentes pour ~9 sur 10 —, créateur,
+datation) pour les recouper avec la notice Joconde. Les dimensions servent d'**empreinte** : deux
+dimensions incompatibles = objet différent → **rejeté**. **262 collisions ainsi écartées** (dont
+162 portaient une image — qu'on aurait eu tort d'afficher : « Jeune femme accoudée » 27×23 cm
+tombait sur un « Noli me tangere » de 176×155 cm, même numéro d'inventaire dans un musée homonyme).
+
+**Mais les dimensions seules ne CONFIRMENT pas.** Test à l'appui : « L'Ange gardien » (102×81)
+apparié à « Nu féminin » (102×82) — dimensions proches par coïncidence, titres sans rapport. On
+**ne promeut donc jamais** un candidat inventaire en « exact » automatiquement : le cahier des
+charges l'exige « après contrôle » humain. Reste **47 candidats sur 25 références**, tous à
+présomption faible (**aucun** n'a à la fois dimensions ET titre concordants). Conclusion nette :
+pour ce corpus, l'appariement par inventaire ne fait remonter **aucune** reproduction fiable de
+plus — **P347 reste la seule source sûre**, et le total réutilisable demeure **184**.
 
 **Droits (API Commons `imageinfo` / `extmetadata`).** On lit la licence de chaque fichier (jamais
 devinée) : domaine public / PDM / CC0 / CC BY / CC BY-SA → `open` ; NC/ND → à examiner. Les

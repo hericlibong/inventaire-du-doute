@@ -2,6 +2,26 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-07-29 (suite) — Vérifier les candidats : savoir dire non
+
+Restaient 152 candidats trouvés par numéro d'inventaire, à vérifier. On a récupéré les dimensions
+des œuvres sur Wikidata pour les recouper avec les notices. Les dimensions sont une empreinte :
+deux tailles qui ne collent pas, c'est deux objets différents. Et ça tombait : « Jeune femme
+accoudée » de 27 cm renvoyée à un « Noli me tangere » de 176 cm, même numéro d'inventaire dans un
+autre musée du même nom. 262 fausses pistes écartées comme ça — dont 162 qui portaient une image.
+On aurait affiché la mauvaise reproduction.
+
+Le piège aurait été de faire l'inverse : prendre des dimensions qui collent pour une preuve.
+Contre-exemple trouvé dans nos propres données : « L'Ange gardien » 102×81 et « Nu féminin »
+102×82 — mêmes mesures, rien à voir. Une taille qui coïncide ne prouve pas l'identité. On a donc
+tenu la ligne du cahier des charges : seul l'identifiant Joconde confirme tout seul ; l'inventaire
+reste un candidat, pour un œil humain.
+
+Résultat honnête : sur les 47 candidats qui survivent, aucun n'est assez solide (dimensions ET
+titre) pour être proposé sérieusement. L'appariement par inventaire n'ajoute aucune reproduction
+fiable ici — mais il nous a évité d'en afficher de fausses, et ça, c'est un résultat. On reste à
+184 images, toutes rattachées par identifiant.
+
 ## 2026-07-29 (suite) — Les premières reproductions entrent dans les fiches
 
 On avait 184 reproductions ouvertes identifiées avec certitude. On les a intégrées. Chaque image

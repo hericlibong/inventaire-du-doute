@@ -73,10 +73,48 @@ def institution_concorde(musee_joconde: str, label_wikidata: str) -> bool:
 # --------------------------------------------------------------------------
 # Comparaison de métadonnées (preuves, jamais décisives seules)
 # --------------------------------------------------------------------------
+def parser_dimensions(mesures: str):
+    """Extrait (hauteur, largeur) en CENTIMÈTRES du champ Joconde « Mesures »,
+    ou (None, None). Formats rencontrés : « 31.5 H ; 17 L », « H. 76.5, L. 102 »,
+    « H. en m 0,183 ; L. en m 0,120 », « 99 H ; 82.5 L ». On lit d'abord le nombre
+    PLACÉ AVANT la lettre (« 31.5 H »), sinon celui placé APRÈS (« H. 76.5 »)."""
+    if not mesures:
+        return (None, None)
+    s = mesures.replace("\xa0", " ")
+    en_metres = bool(re.search(r"en\s*m\b", s.lower()))
+
+    def val(lettre):
+        m = re.search(r"(\d+(?:[.,]\d+)?)\s*" + lettre + r"\b", s)   # nombre AVANT
+        if not m:
+            m = re.search(lettre + r"[.\s]*(?:en\s*m\w*\s*)?(\d+(?:[.,]\d+)?)", s)  # APRÈS
+        return float(m.group(1).replace(",", ".")) if m else None
+
+    h, w = val("H"), val("L")
+    if h is None or w is None:
+        return (None, None)
+    # mètres (mention « en m », ou valeurs trop petites pour des centimètres)
+    if en_metres or (h < 3.5 and w < 3.5):
+        h, w = h * 100, w * 100
+    return (round(h, 1), round(w, 1))
+
+
+def dimensions_concordent(h1, w1, h2, w2):
+    """Deux paires de dimensions (cm) désignent-elles le même objet ? Tolérance
+    ±5 % (ou ±0,6 cm). Renvoie True/False, ou None si une dimension manque —
+    l'empreinte la plus discriminante pour départager les collisions d'inventaire."""
+    if None in (h1, w1, h2, w2):
+        return None
+
+    def proche(a, b):
+        return abs(a - b) <= max(0.6, 0.05 * max(a, b))
+
+    return proche(h1, h2) and proche(w1, w2)
+
+
 def comparer_metadonnees(meta: dict, cand: dict) -> dict:
     """Renvoie les drapeaux de preuve (booléens) entre une notice Joconde et un
-    candidat Wikidata. Purement INDICATIF : sert le contrôle humain, ne décide
-    jamais à lui seul d'une correspondance."""
+    candidat Wikidata. Purement INDICATIF : sert le contrôle. Les dimensions,
+    quand elles concordent, valent confirmation (voir decider_match)."""
     ev = {}
     if meta.get("numero_inventaire") and cand.get("inventaire"):
         ev["inventory_match"] = any(
@@ -89,8 +127,16 @@ def comparer_metadonnees(meta: dict, cand: dict) -> dict:
         a, b = _mots(meta["titre"]), _mots(cand["titre"])
         ev["title_match"] = bool(a & b) and len(a & b) / min(len(a), len(b)) >= 0.5
     if meta.get("auteur") and cand.get("auteur"):
-        # le nom de famille du maître apparaît-il des deux côtés ?
+        # le nom de famille du maître apparaît-il des deux côtés ? (indicatif :
+        # jamais un motif de REJET — la divergence d'attribution est le sujet)
         ev["author_match"] = bool(_mots(meta["auteur"]) & _mots(cand["auteur"]))
+    # Dimensions : empreinte discriminante.
+    hc, wc = parser_dimensions(meta.get("dimensions", ""))
+    conc = dimensions_concordent(hc, wc, cand.get("h"), cand.get("w"))
+    if conc is True:
+        ev["dimensions_match"] = True
+    elif conc is False:
+        ev["dimensions_conflit"] = True
     return ev
 
 
@@ -111,8 +157,18 @@ def decider_match(reference: str, meta: dict, cand: dict) -> tuple:
         ev["joconde_id_match"] = True
         return (EXACT, M_JOCONDE, ev)
 
-    # 2. Numéro d'inventaire exact + institution concordante : candidat à vérifier.
+    # 2. Numéro d'inventaire exact + institution concordante.
     if ev.get("inventory_match") and ev.get("institution_match"):
+        # Dimensions présentes mais incompatibles → objet différent (collision) :
+        # les numéros d'inventaire se répètent entre musées homonymes (« musée des
+        # Beaux-Arts »). REJETÉ.
+        if ev.get("dimensions_conflit"):
+            return (REJETE, M_INVENTORY, ev)
+        # Sinon : CANDIDAT à vérifier. On ne promeut JAMAIS en exact
+        # automatiquement — même des dimensions concordantes peuvent coïncider
+        # entre deux objets d'un même numéro (« L'Ange gardien » 102×81 vs « Nu »
+        # 102×82). Le cahier des charges exige un contrôle humain (« après
+        # contrôle »). L'évidence (dimensions, titre) sert à trier, pas à trancher.
         return (A_VERIFIER, M_INVENTORY, ev)
 
     # 3. Inventaire identique mais AUTRE institution : faux rapprochement. Les

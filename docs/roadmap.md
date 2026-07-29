@@ -126,8 +126,16 @@ et préparation SEULEMENT (front non touché, aucune image téléchargée à ce 
       `OeuvresMaitre.svelte` : image locale lazy à la place du placeholder, cliquable vers la page
       Commons, légende licence + source en petit corps (auteur seulement pour CC BY/BY-SA).
       Déclaré dans la page méthode. Build + tests (214) OK, vérifié desktop + mobile.
-- Réserve : les autres statuts (145 exacts sans image, 152 candidats inventaire, 792 `unknown`
-  POP / Levier A) restent hors affichage — matière pour un prochain lot si on le décide.
+- [x] **Vérification des candidats inventaire** (2026-07-29) — recoupement par dimensions
+      Wikidata (P2048/P2049) : dimensions incompatibles → rejet (262 collisions écartées, dont
+      162 imagées, à ne surtout pas afficher). Dimensions concordantes → **jamais** de promotion
+      auto (faux positifs constatés : « L'Ange gardien » 102×81 ↔ « Nu féminin » 102×82). Reste
+      47 candidats sur 25 réf., **aucun à forte présomption** → l'inventaire n'ajoute aucune
+      image fiable ; P347 reste la seule source sûre, total réutilisable **inchangé à 184**.
+      Tests + bilan `commons_bilan.json` à jour. `commons_match.py` (parser/comparaison
+      dimensions, testés).
+- Réserve : les autres statuts (145 exacts sans image, 47 candidats inventaire faibles, 792
+  `unknown` POP / Levier A) restent hors affichage — matière pour un prochain lot si on le décide.
 
 ---
 

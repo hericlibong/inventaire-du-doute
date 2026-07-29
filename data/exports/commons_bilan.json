@@ -2,11 +2,14 @@
  "date": "2026-07-29",
  "references_examinees": 3668,
  "correspondances_exactes": 329,
+ "exactes_par_identifiant_joconde": 329,
  "exactes_avec_image": 184,
  "exactes_sans_image": 145,
- "candidats_a_verifier": 152,
- "candidats_refs_distinctes": 47,
- "faux_rapprochements_rejetes": 352,
+ "candidats_a_verifier": 47,
+ "candidats_refs_distinctes": 25,
+ "candidats_forte_presomption": 0,
+ "faux_rapprochements_rejetes": 457,
+ "dont_rejetes_par_dimensions": 262,
  "images_reutilisables": 184,
  "licences_ouvertes_detail": {
   "Public domain": 162,
@@ -123,6 +126,7 @@
     ]
    }
   ],
+  "candidat_forte_presomption": [],
   "exact_sans_image": [
    {
     "reference_joconde": "000PE013602",
@@ -255,7 +259,8 @@
     "rights_status": "open",
     "evidence": [
      "inventory_match",
-     "institution_match"
+     "institution_match",
+     "author_match"
     ]
    },
    {
@@ -282,7 +287,7 @@
     "artistes": [
      "Guido Reni"
     ],
-    "wikidata_qid": "Q120685146",
+    "wikidata_qid": "Q138415185",
     "commons_file": "",
     "license": "",
     "rights_status": "unknown",
@@ -292,7 +297,7 @@
     ]
    }
   ],
-  "faux_rapprochement_rejete": [
+  "faux_rapprochement_rejete_dimensions": [
    {
     "reference_joconde": "000DE006810",
     "titre_joconde": "JEUNE FEMME ACCOUDEE",
@@ -305,22 +310,8 @@
     "license": "Public domain",
     "rights_status": "open",
     "evidence": [
-     "inventory_match"
-    ]
-   },
-   {
-    "reference_joconde": "000DE006810",
-    "titre_joconde": "JEUNE FEMME ACCOUDEE",
-    "musee_joconde": "musée Grobet-Labadié",
-    "artistes": [
-     "Louis Léopold Boilly"
-    ],
-    "wikidata_qid": "Q22980479",
-    "commons_file": "",
-    "license": "",
-    "rights_status": "unknown",
-    "evidence": [
-     "inventory_match"
+     "inventory_match",
+     "dimensions_conflit"
     ]
    },
    {
@@ -335,37 +326,8 @@
     "license": "Public domain",
     "rights_status": "open",
     "evidence": [
-     "inventory_match"
-    ]
-   },
-   {
-    "reference_joconde": "000DE006810",
-    "titre_joconde": "JEUNE FEMME ACCOUDEE",
-    "musee_joconde": "musée Grobet-Labadié",
-    "artistes": [
-     "Louis Léopold Boilly"
-    ],
-    "wikidata_qid": "Q92998771",
-    "commons_file": "Louis Frédéric Schutzenberger-Chasseur sonnant du cor.jpg",
-    "license": "Public domain",
-    "rights_status": "open",
-    "evidence": [
-     "inventory_match"
-    ]
-   },
-   {
-    "reference_joconde": "00000065942",
-    "titre_joconde": "PORTRAIT DE FEMME",
-    "musee_joconde": "musée du Vieux-Château",
-    "artistes": [
-     "Louis Léopold Boilly"
-    ],
-    "wikidata_qid": "Q138415233",
-    "commons_file": "",
-    "license": "",
-    "rights_status": "unknown",
-    "evidence": [
-     "inventory_match"
+     "inventory_match",
+     "dimensions_conflit"
     ]
    },
    {
@@ -380,7 +342,56 @@
     "license": "",
     "rights_status": "unknown",
     "evidence": [
-     "inventory_match"
+     "inventory_match",
+     "dimensions_conflit"
+    ]
+   },
+   {
+    "reference_joconde": "00000065942",
+    "titre_joconde": "PORTRAIT DE FEMME",
+    "musee_joconde": "musée du Vieux-Château",
+    "artistes": [
+     "Louis Léopold Boilly"
+    ],
+    "wikidata_qid": "Q135666231",
+    "commons_file": "Copley Fielding - Naufrage - Musée de Vitré.jpeg",
+    "license": "Public domain",
+    "rights_status": "open",
+    "evidence": [
+     "inventory_match",
+     "dimensions_conflit"
+    ]
+   },
+   {
+    "reference_joconde": "00000065943",
+    "titre_joconde": "PORTRAIT DE FEMME",
+    "musee_joconde": "musée du Vieux-Château",
+    "artistes": [
+     "Louis Léopold Boilly"
+    ],
+    "wikidata_qid": "Q138428842",
+    "commons_file": "",
+    "license": "",
+    "rights_status": "unknown",
+    "evidence": [
+     "inventory_match",
+     "dimensions_conflit"
+    ]
+   },
+   {
+    "reference_joconde": "00000065943",
+    "titre_joconde": "PORTRAIT DE FEMME",
+    "musee_joconde": "musée du Vieux-Château",
+    "artistes": [
+     "Louis Léopold Boilly"
+    ],
+    "wikidata_qid": "Q135666231",
+    "commons_file": "Copley Fielding - Naufrage - Musée de Vitré.jpeg",
+    "license": "Public domain",
+    "rights_status": "open",
+    "evidence": [
+     "inventory_match",
+     "dimensions_conflit"
     ]
    }
   ]
