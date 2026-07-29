@@ -1,6 +1,10 @@
 <script>
 	import { NIVEAUX } from '$lib/joconde.js';
 
+	// ARCHIVE — plus utilisé depuis le 2026-07-11 : la jauge de la liste des
+	// maîtres est passée aux familles (BarreFamilles.svelte), car l'agrégation
+	// par niveau contredisait le graphique (decisions.md). Conservé pour les
+	// futures vues sur l'échelle du doute à 3 niveaux (tokens --niveau-* gardés).
 	// niveaux : [n1, n2, n3] (nombre de notices par niveau du doute).
 	// hauteur : épaisseur de la barre. etiquettes : afficher les nombres/légende.
 	let { niveaux, hauteur = '0.7rem', etiquettes = false } = $props();

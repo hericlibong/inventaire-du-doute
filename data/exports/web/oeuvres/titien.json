@@ -1,0 +1,154 @@
+{
+ "slug": "titien",
+ "nom": "Titien",
+ "doute": 11,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 4
+  },
+  {
+   "code": "point_interrogation",
+   "notices": 1
+  },
+  {
+   "code": "atelier_de",
+   "notices": 3
+  },
+  {
+   "code": "entourage_de",
+   "notices": 2
+  },
+  {
+   "code": "suiveur_de",
+   "notices": 1
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "000PE027124",
+   "titre": "PORTRAIT D'HOMME",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "VECELLIO Tiziano (atelier)"
+  },
+  {
+   "reference": "000PE027125",
+   "titre": "ECCE HOMO",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "VECELLIO Tiziano (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE027125.jpg",
+    "credit": "Self-photographed by Shonagon",
+    "creator": "Workshop of Titian",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Ecce_homo_-_Titien_-_Q18573224.jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "00000077319",
+   "titre": "ECCE HOMO",
+   "musee": "musée Condé",
+   "ville": "Chantilly",
+   "code": "point_interrogation",
+   "extrait": "LE TITIEN (?, dit)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/00000077319.jpg",
+    "credit": "Own work",
+    "creator": "Dguendel",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Ch%C3%A2teau_de_Chantilly,_Titian,_ecce_homo.JPG",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "00000107129",
+   "titre": "Vénus endormie flanquée de trois amours",
+   "musee": "musée Condé",
+   "ville": "Chantilly",
+   "code": "atelier_de",
+   "extrait": "VECELLIO Tiziano (atelier)"
+  },
+  {
+   "reference": "50350228332",
+   "titre": "Mourant assisté d'un prêtre qui lui présente un crucifix",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "VECELLIO Tiziano (attribué à)"
+  },
+  {
+   "reference": "50350228331",
+   "titre": "Site montagneux, avec à droite, sur une éminence, des bâtiments religieux",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "VECELLIO Tiziano (attribué à)"
+  },
+  {
+   "reference": "50350007955",
+   "titre": "Paysage avec un pont en bois",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "VECELLIO Tiziano (entourage)"
+  },
+  {
+   "reference": "50350202230",
+   "titre": "Groupe de guerriers",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "VECELLIO Tiziano (entourage)"
+  },
+  {
+   "reference": "000PE023475",
+   "titre": "LE CHRIST ET LA FEMME ADULTERE",
+   "musee": "musée des beaux-arts",
+   "ville": "Bordeaux",
+   "code": "attribue",
+   "extrait": "VECELLIO Tiziano (attribué)"
+  },
+  {
+   "reference": "05620000355",
+   "titre": "Sainte Famille",
+   "musee": "musée des Augustins",
+   "ville": "Toulouse",
+   "code": "suiveur_de",
+   "extrait": "VECELLIO Tiziano (suiveur)"
+  },
+  {
+   "reference": "M0333000715",
+   "titre": "Portrait de Nicolas Perrenot de Granvelle",
+   "musee": "musée du temps",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "LE TITIEN (attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/M0333000715.jpg",
+    "credit": "Time museum",
+    "creator": "Attributed to Titian",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Le_Titien_(attribu%C3%A9_%C3%A0)_%E2%80%93_Portrait_de_Nicolas_Perrenot_de_Granvelle_%E2%80%93_Mus%C3%A9e_du_Temps,_Besan%C3%A7on.jpeg",
+    "verifie_le": "2026-07-29"
+   }
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-07-28T14:49:21+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

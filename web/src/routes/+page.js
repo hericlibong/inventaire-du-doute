@@ -1,7 +1,7 @@
-// « Hello data » du socle : on charge un vrai chiffre depuis les JSON exportés.
-// fetch("/data/...") lit static/data/, synchronisé par `npm run sync:data`.
+// Accueil = affiche interactive (2026-07-18). On lit le chiffre vedette (doute_total,
+// = 24 507) depuis niveaux.json pour l'afficher en preuve secondaire sur la couverture
+// (retour du chiffre demandé le 2026-07-18) — jamais en dur, toujours depuis l'export.
 export async function load({ fetch }) {
-	const niveaux = await (await fetch('/data/niveaux.json')).json();
-	const provenance = await (await fetch('/data/provenance.json')).json();
-	return { niveaux, provenance };
+	const niveaux = await fetch('/data/niveaux.json').then((r) => r.json());
+	return { doute: niveaux.doute_total };
 }

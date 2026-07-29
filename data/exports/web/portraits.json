@@ -1,0 +1,542 @@
+{
+  "Charles Le Brun": {
+    "fichier": "/portraits/charles-le-brun.jpg",
+    "auteur": "Nicolas de Largillière",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Le_brun.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q271676",
+    "regard": "gauche"
+  },
+  "Le Primatice": {
+    "fichier": "/portraits/le-primatice.jpg",
+    "auteur": "Giorgio Vasari",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Delle_vite_de%27_pi%C3%B9_eccellenti_pittori,_scultori,_et_architetti_(1648)_(14803742183).jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q333366",
+    "regard": "gauche"
+  },
+  "Ingres": {
+    "fichier": "/portraits/ingres.jpg",
+    "auteur": "Jean-Auguste-Dominique Ingres",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Ingres,_Self-portrait.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q23380",
+    "regard": "gauche"
+  },
+  "Rembrandt": {
+    "fichier": "/portraits/rembrandt.jpg",
+    "auteur": "Rembrandt",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_van_Rijn_-_Self-Portrait_-_Google_Art_Project.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q5598",
+    "regard": "gauche"
+  },
+  "Michel-Ange": {
+    "fichier": "/portraits/michel-ange.jpg",
+    "auteur": "attribué à Daniele da Volterra",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Michelangelo_Daniele_da_Volterra_(dettaglio).jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q5592",
+    "regard": "gauche"
+  },
+  "Rubens": {
+    "fichier": "/portraits/rubens.jpg",
+    "auteur": "Peter Paul Rubens",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Sir_Peter_Paul_Rubens_-_Portrait_of_the_Artist_-_Google_Art_Project.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q5599",
+    "regard": "gauche"
+  },
+  "François Clouet": {
+    "fichier": "/portraits/francois-clouet.jpg",
+    "auteur": "Léonard Gaultier",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois-Clouet.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q336747",
+    "regard": "gauche"
+  },
+  "Annibale Carracci": {
+    "fichier": "/portraits/annibale-carracci.jpg",
+    "auteur": "Annibale Carracci",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Annibale_Carracci_-_Self-portrait.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q7824",
+    "regard": "droite"
+  },
+  "Rodin": {
+    "fichier": "/portraits/rodin.jpg",
+    "auteur": "Nadar",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Auguste_Rodin_fotografato_da_Nadar_nel_1891.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q30755",
+    "regard": "gauche"
+  },
+  "Boucher": {
+    "fichier": "/portraits/boucher.jpg",
+    "auteur": "Gustaf Lundberg",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Boucher_par_Gustav_Lundberg_1741.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q180932",
+    "regard": "droite"
+  },
+  "Andrea del Sarto": {
+    "fichier": "/portraits/andrea-del-sarto.jpg",
+    "auteur": "Andrea del Sarto",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Andredelsartoselfportrait.jpeg",
+    "wikidata": "https://www.wikidata.org/wiki/Q5571",
+    "regard": "gauche"
+  },
+  "Guido Reni": {
+    "fichier": "/portraits/guido-reni.jpg",
+    "auteur": "Guido Reni",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Guido_Reni_-_Self-portrait_2.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q109061",
+    "regard": "droite"
+  },
+  "Léonard de Vinci": {
+    "fichier": "/portraits/leonard-de-vinci.png",
+    "auteur": "attribué à Francesco Melzi",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Francesco_Melzi_-_Portrait_of_Leonardo.png",
+    "wikidata": "https://www.wikidata.org/wiki/Q762",
+    "regard": "gauche"
+  },
+  "Le Tintoret": {
+    "fichier": "/portraits/le-tintoret.jpg",
+    "auteur": "Jacopo Tintoretto",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Tintoretto_-_Self-Portrait_as_a_Young_Man,_ca._1548,_CAI.103_(cropped).jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q9319",
+    "regard": "gauche"
+  },
+  "Nicolas Poussin": {
+    "fichier": "/portraits/nicolas-poussin.jpg",
+    "auteur": "Nicolas Poussin",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Nicolas_Poussin_078.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q41554",
+    "regard": "gauche"
+  },
+  "Simon Vouet": {
+    "fichier": "/portraits/simon-vouet.jpg",
+    "auteur": "Simon Vouet",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Vouet-autoportrait-lyon.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q317920",
+    "regard": "droite"
+  },
+  "Greuze": {
+    "fichier": "/portraits/greuze.jpg",
+    "auteur": "Jean-Baptiste Greuze",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Jean-Baptiste_Greuze_-_Self-Portrait.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q347139",
+    "regard": "droite"
+  },
+  "Van Dyck": {
+    "fichier": "/portraits/van-dyck.jpg",
+    "auteur": "Anthony van Dyck",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Sir_Anthony_van_Dyck_-_Self-portrait.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q150679",
+    "regard": "gauche"
+  },
+  "Le Corrège": {
+    "fichier": "/portraits/le-correge.jpg",
+    "auteur": "Auteur non précisé sur Commons",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Antonio_Allegri_da_Correggio.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q8457",
+    "regard": "gauche"
+  },
+  "Pierre Mignard": {
+    "fichier": "/portraits/pierre-mignard.jpg",
+    "auteur": "Hyacinthe Rigaud",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Hyacinthe_Rigaud_-_Pierre_Mignard_-_Versailles_MV_3578.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q360010",
+    "regard": "gauche"
+  },
+  "Véronèse": {
+    "fichier": "/portraits/veronese.jpg",
+    "auteur": "atelier de Georg Engelhard Schröder",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Paolo_Veronese,_1528-1588_-_Nationalmuseum_-_39582.tif",
+    "wikidata": "https://www.wikidata.org/wiki/Q9440",
+    "regard": "gauche"
+  },
+  "Hyacinthe Rigaud": {
+    "fichier": "/portraits/hyacinthe-rigaud.jpg",
+    "auteur": "Hyacinthe Rigaud",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Autoportrait_au_turban_(Perpignan).jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q49898",
+    "regard": "droite"
+  },
+  "Géricault": {
+    "fichier": "/portraits/gericault.jpg",
+    "auteur": "Horace Vernet",
+    "licence": "CC0",
+    "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Horace_Vernet,_Jean-Louis-Andr%C3%A9-Th%C3%A9odore_Gericault,_probably_1822_or_1823,_1998.84,_MET.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q184212",
+    "regard": "gauche"
+  },
+  "Fragonard": {
+    "fichier": "/portraits/fragonard.jpg",
+    "auteur": "Jean-Honoré Fragonard",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Jean-Honor%C3%A9_Fragonard_self-portrait.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q127171",
+    "regard": "droite"
+  },
+  "Raphaël": {
+    "fichier": "/portraits/raphael.jpg",
+    "auteur": "Raphael",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Raffaello_Sanzio.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q5597",
+    "regard": "gauche"
+  },
+  "Ribera": {
+    "fichier": "/portraits/ribera.jpg",
+    "auteur": "Jusepe de Ribera",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Ribera_-_Self-portrait.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q297838",
+    "regard": "droite"
+  },
+  "Titien": {
+    "fichier": "/portraits/titien.jpg",
+    "auteur": "Titian",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Vecellio_di_Gregorio_Tiziano_-_autoritratto.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q47551",
+    "regard": "gauche"
+  },
+  "Le Guerchin": {
+    "fichier": "/portraits/le-guerchin.jpg",
+    "auteur": "Guercino",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Self-portrait_by_Guercino.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q334262",
+    "regard": "gauche"
+  },
+  "Bouchardon": {
+    "fichier": "/portraits/bouchardon.jpg",
+    "auteur": "François-Hubert Drouais",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:EdmeBouchardon-FrancoisHubertDrouais.JPG",
+    "wikidata": "https://www.wikidata.org/wiki/Q987687",
+    "regard": "gauche"
+  },
+  "Jules Romain": {
+    "fichier": "/portraits/jules-romain.jpg",
+    "auteur": "Titian",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Titian_-_Portrait_of_Giulio_Romano_-_WGA22947.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q215305",
+    "regard": "gauche"
+  },
+  "Ludovico Carracci": {
+    "fichier": "/portraits/ludovico-carracci.jpg",
+    "auteur": "Emilian School, 17th century",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Emilian_School,_17th-century_-_Portrait_of_Ludovico_Carracci.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q380553",
+    "regard": "gauche"
+  },
+  "David Téniers": {
+    "fichier": "/portraits/david-teniers.jpg",
+    "auteur": "Philip Fruytiers",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Portrait_of_David_Teniers.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q335022",
+    "regard": "gauche"
+  },
+  "François Gérard": {
+    "fichier": "/portraits/francois-gerard.jpg",
+    "auteur": "Antoine-Jean Gros",
+    "licence": "CC0",
+    "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_G%C3%A9rard_(1770%E2%80%931837),_later_Baron_G%C3%A9rard_MET_DP327712.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q163543",
+    "regard": "gauche"
+  },
+  "Le Parmesan": {
+    "fichier": "/portraits/le-parmesan.jpg",
+    "auteur": "Parmigianino",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Parmigianino_Selfportrait.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q9348",
+    "regard": "gauche"
+  },
+  "Perino del Vaga": {
+    "fichier": "/portraits/perino-del-vaga.jpg",
+    "auteur": "Sailko",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Casa_vasari_FI,_salone,_ritratti_a,_perin_del_vaga.JPG",
+    "wikidata": "https://www.wikidata.org/wiki/Q918778",
+    "regard": "gauche"
+  },
+  "Adolph Menzel": {
+    "fichier": "/portraits/adolph-menzel.jpg",
+    "auteur": "Friedrich Eduard Meyerheim",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:1839_Meyerheim_Portrait_Adolph_Menzel_anagoria.JPG",
+    "wikidata": "https://www.wikidata.org/wiki/Q164961",
+    "regard": "droite"
+  },
+  "Baccio Bandinelli": {
+    "fichier": "/portraits/baccio-bandinelli.jpg",
+    "auteur": "Baccio Bandinelli",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Baccio_Bandinelli_-_Self-Portrait_-_P26e22_-_Isabella_Stewart_Gardner_Museum.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q358348",
+    "regard": "droite"
+  },
+  "Antonio Tempesta": {
+    "fichier": "/portraits/antonio-tempesta.jpg",
+    "auteur": "Rijksmuseum",
+    "licence": "CC0",
+    "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Portret_van_Antonio_Tempesta_Antonius_Tempesta_pictor_florentinus_(titel_op_object),_RP-P-1918-1773.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q605447",
+    "regard": "gauche"
+  },
+  "Luca Giordano": {
+    "fichier": "/portraits/luca-giordano.jpg",
+    "auteur": "Luca Giordano",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:LucaGiordano1692c-Self-portrait-Naples.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q332494",
+    "regard": "gauche"
+  },
+  "Salvator Rosa": {
+    "fichier": "/portraits/salvator-rosa.jpg",
+    "auteur": "Salvator Rosa",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Self-portrait_by_Salvator_Rosa.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q359421",
+    "regard": "gauche"
+  },
+  "Federico Barocci": {
+    "fichier": "/portraits/federico-barocci.jpg",
+    "auteur": "Federico Barocci",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Federico_Barocci_-_Autoportrait.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q316731",
+    "regard": "gauche"
+  },
+  "Carlo Maratti": {
+    "fichier": "/portraits/carlo-maratti.jpg",
+    "auteur": "Carlo Maratta",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Carlo_Maratta_-_Self-portrait_in_Uffizi_Gallery.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q538998",
+    "regard": "gauche"
+  },
+  "Federico Zuccaro": {
+    "fichier": "/portraits/federico-zuccaro.jpg",
+    "auteur": "Fede Galizia",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Fede_Galizia_-_Portrait_of_Federico_Zuccaro.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q345605",
+    "regard": "gauche"
+  },
+  "Joseph Vernet": {
+    "fichier": "/portraits/joseph-vernet.jpg",
+    "auteur": "Finoskov",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_Calvet_Van_Loo_Louis-Michel_Joseph_Vernet_1768.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q315819",
+    "regard": "gauche"
+  },
+  "Luca Cambiaso": {
+    "fichier": "/portraits/luca-cambiaso.jpg",
+    "auteur": "Luca Cambiaso",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Giovanni_e_Luca_Cambiaso.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q712512",
+    "regard": "gauche"
+  },
+  "Polidoro Caldara": {
+    "fichier": "/portraits/polidoro-caldara.jpg",
+    "auteur": "Francesco Susinno",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:PolidoroCaldara.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q964822",
+    "regard": "gauche"
+  },
+  "Corneille de Lyon": {
+    "fichier": "/portraits/corneille-de-lyon.jpg",
+    "auteur": "attribué à Claude Mellan / d'après Corneille de Lyon",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Corneille_de_Lyon_-_Self-portrait_(copy_attributed_to_Claude_Mellan,_Albertina_inv_no_32802).jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q720941",
+    "regard": "gauche"
+  },
+  "Francesco Vanni": {
+    "fichier": "/portraits/francesco-vanni.jpg",
+    "auteur": "Combusken",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Francesco_vanni,_autoritratto.JPG",
+    "wikidata": "https://www.wikidata.org/wiki/Q960581",
+    "regard": "gauche"
+  },
+  "Philippe de Champaigne": {
+    "fichier": "/portraits/philippe-de-champaigne.jpg",
+    "auteur": "d'après Philippe de Champaigne",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Philippe_de_Champaigne.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q314814",
+    "regard": "gauche"
+  },
+  "Giorgio Vasari": {
+    "fichier": "/portraits/giorgio-vasari.jpg",
+    "auteur": "attribué à Jacopo Zucchi",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Zucchi,_Jacopo_-_Vasari,_Giorgio_-_Uffizi_ICCD.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q128027",
+    "regard": "gauche"
+  },
+  "Sébastien Bourdon": {
+    "fichier": "/portraits/sebastien-bourdon.png",
+    "auteur": "Sébastien Bourdon / Hyacinthe Rigaud",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Self-portrait_of_S%C3%A9bastien_Bourdon_(1652%E2%80%931658).png",
+    "wikidata": "https://www.wikidata.org/wiki/Q553795",
+    "regard": "gauche"
+  },
+  "Pier Francesco Mola": {
+    "fichier": "/portraits/pier-francesco-mola.jpg",
+    "auteur": "Pier Francesco Mola",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Mola_Autoritratto.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q1192715",
+    "regard": "gauche"
+  },
+  "Jean-Baptiste Oudry": {
+    "fichier": "/portraits/jean-baptiste-oudry.jpg",
+    "auteur": "Jean-Baptiste Perronneau",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Jean-Baptiste_Perronneau_-_J-B._Oudry.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q737137",
+    "regard": "gauche"
+  },
+  "Louis Léopold Boilly": {
+    "fichier": "/portraits/louis-leopold-boilly.jpg",
+    "auteur": "Louis-Léopold Boilly",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Versailles_Boilly_autoportrait.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q715909",
+    "regard": "gauche"
+  },
+  "Nicolas de Largillière": {
+    "fichier": "/portraits/nicolas-de-largilliere.jpg",
+    "auteur": "Nicolas de Largillière",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:1707_Self-Portrait_of_Nicolas_de_Largilli%C3%A8re.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q550302",
+    "regard": "gauche"
+  },
+  "Paul Bril": {
+    "fichier": "/portraits/paul-bril.jpg",
+    "auteur": "attribué à Paul Bril",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Bril,_Paul_-_Self-Portrait_-_1595-1600_(cropped).jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q540753",
+    "regard": "gauche"
+  },
+  "Albrecht Dürer": {
+    "fichier": "/portraits/albrecht-durer.jpg",
+    "auteur": "Albrecht Dürer",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:D%C3%BCrer_Alte_Pinakothek.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q5580",
+    "regard": "gauche"
+  },
+  "Claude Lorrain": {
+    "fichier": "/portraits/claude-lorrain.jpg",
+    "auteur": "auteur inconnu",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Claude_Lorrain.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q214074",
+    "regard": "gauche"
+  },
+  "Le Pérugin": {
+    "fichier": "/portraits/le-perugin.jpg",
+    "auteur": "Pietro Perugino",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Pietro_Perugino_031.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q5827",
+    "regard": "gauche"
+  },
+  "Botticelli": {
+    "fichier": "/portraits/botticelli.jpg",
+    "auteur": "Sandro Botticelli",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Sandro_Botticelli_Self-portrait_ca_1475.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q5669",
+    "regard": "gauche"
+  }
+}

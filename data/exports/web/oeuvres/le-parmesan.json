@@ -1,0 +1,525 @@
+{
+ "slug": "le-parmesan",
+ "nom": "Le Parmesan",
+ "doute": 63,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 51
+  },
+  {
+   "code": "ecole_de",
+   "notices": 12
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "50350201798",
+   "titre": "Un sacrifice païen",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MAZZUOLA Francesco (école)"
+  },
+  {
+   "reference": "50350200801",
+   "titre": "Une femme peignant une autre femme",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MAZZUOLA Francesco (attribué à)"
+  },
+  {
+   "reference": "50350009206",
+   "titre": "Adam",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MAZZUOLA Francesco (école)"
+  },
+  {
+   "reference": "50350200993",
+   "titre": "Tête de jeune homme, vue de face",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MAZZUOLA Francesco (école)"
+  },
+  {
+   "reference": "50350216016",
+   "titre": "Projet d'autel avec deux scènes : la Crucifixion et la Mise au Tombeau",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MAZZUOLA Francesco (école)"
+  },
+  {
+   "reference": "50350009210",
+   "titre": "Figure de femme assise, tournée vers la gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MAZZUOLA Francesco (école)"
+  },
+  {
+   "reference": "50350201017",
+   "titre": "Buste de vieillard, de face",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MAZZUOLA Francesco (attribué à)"
+  },
+  {
+   "reference": "50350201015",
+   "titre": "Tête de vieillard, tournée vers la gauche, coiffée d'un bonnet",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MAZZUOLA Francesco (attribué à)"
+  },
+  {
+   "reference": "50350009211",
+   "titre": "Etudes : femme, de profil, tenant un miroir ; jambe ; figure nue, de dos",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MAZZUOLA Francesco (école)"
+  },
+  {
+   "reference": "50350201016",
+   "titre": "Tête d'homme barbu, les cheveux ébourifffés",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MAZZUOLA Francesco (attribué à)"
+  },
+  {
+   "reference": "50350200984",
+   "titre": "Demi-figure de femme drapée, tournée vers la gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MAZZUOLA Francesco (attribué à)"
+  },
+  {
+   "reference": "50350201006",
+   "titre": "Un buste d'empereur, la têre laurée",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MAZZUOLA Francesco (attribué à)"
+  },
+  {
+   "reference": "50350009205",
+   "titre": "Un sacrifice paien",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MAZZUOLA Francesco (école)"
+  },
+  {
+   "reference": "50350009204",
+   "titre": "Le Christ porté au tombeau",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MAZZUOLA Francesco (école)"
+  },
+  {
+   "reference": "50350200898",
+   "titre": "Homme nu, debout, semblant soutenir quelque chose",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MAZZUOLA Francesco (attribué à)"
+  },
+  {
+   "reference": "50350009201",
+   "titre": "L'Annonciation",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MAZZUOLA Francesco (école)"
+  },
+  {
+   "reference": "50350201014",
+   "titre": "Tête de vieillard, tournée vers la droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MAZZUOLA Francesco (attribué à)"
+  },
+  {
+   "reference": "50350009059",
+   "titre": "Trois femmes assises, conversant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MAZZUOLA Francesco (attribué à)"
+  },
+  {
+   "reference": "50350009069",
+   "titre": "Sept têtes d'hommes ou de femmes",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MAZZUOLA Francesco (attribué à)"
+  },
+  {
+   "reference": "50350009055",
+   "titre": "Jeune garçon nu, debout, légèrement tourné vers la gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MAZZUOLA Francesco (attribué à)"
+  },
+  {
+   "reference": "50350009043",
+   "titre": "Un homme nu, sur un cheval qui se cabre, vu de dos",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MAZZUOLA Francesco (attribué à)"
+  },
+  {
+   "reference": "50350009044",
+   "titre": "Femme à demi nue, assise, de profil, avec un enfant debout derrière elle",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MAZZUOLA Francesco (attribué à)"
+  },
+  {
+   "reference": "50350009056",
+   "titre": "Une femme debout, avançant le bras gauche et deux femmes nues avec un satyre",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MAZZUOLA Francesco (attribué à)"
+  },
+  {
+   "reference": "50350009060",
+   "titre": "Une femme assise, de profil, cherchant à prendre un objet sur un meuble",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MAZZUOLA Francesco (attribué à)"
+  },
+  {
+   "reference": "50350009058",
+   "titre": "Femme debout, peignant une toile d'après une statuette",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MAZZUOLA Francesco (attribué à)"
+  },
+  {
+   "reference": "50350009067",
+   "titre": "Deux bustes tournés l'un vers l'autre",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MAZZUOLA Francesco (attribué à)"
+  },
+  {
+   "reference": "50350009042",
+   "titre": "Femme assise, tenant un enfant debout sur un degré",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MAZZUOLA Francesco (attribué à)"
+  },
+  {
+   "reference": "50350009083",
+   "titre": "Un homme chauve, nu, voulant abuser d'une jeune femme nue, qui le repousse",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MAZZUOLA Francesco (attribué à)"
+  },
+  {
+   "reference": "50350009077",
+   "titre": "Un enfant assis, regardant vers la droite, les deux mains sur la poitrine",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MAZZUOLA Francesco (attribué à)"
+  },
+  {
+   "reference": "50350009065",
+   "titre": "Figure agenouillée, de face, près d'un guerrier debout",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MAZZUOLA Francesco (attribué à)"
+  },
+  {
+   "reference": "50350009078",
+   "titre": "Deux enfants nus",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MAZZUOLA Francesco (attribué à)"
+  },
+  {
+   "reference": "50350009066",
+   "titre": "Femme cueillant des fleurs qu'elle met dans un panier",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MAZZUOLA Francesco (attribué à)"
+  },
+  {
+   "reference": "50350009012",
+   "titre": "La Vierge plaçant l'Enfant Jésus sur les épaules de saint Christophe (?)",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MAZZUOLA Francesco (attribué à)"
+  },
+  {
+   "reference": "50350009041",
+   "titre": "Philosophe assis, de profil, vers la droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MAZZUOLA Francesco (attribué à)"
+  },
+  {
+   "reference": "50350009039",
+   "titre": "Tête d'homme barbu, regardant vers le haut",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MAZZUOLA Francesco (attribué à)"
+  },
+  {
+   "reference": "50350009023",
+   "titre": "Un apôtre tenant un crucifix",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MAZZUOLA Francesco (attribué à)"
+  },
+  {
+   "reference": "50350009026",
+   "titre": "Femme drapée, de dos, tenant un crucifix : la Religion (?)",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MAZZUOLA Francesco (attribué à)"
+  },
+  {
+   "reference": "50350002253",
+   "titre": "Buste d'homme, vu de profil à gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MAZZUOLA Francesco (école)"
+  },
+  {
+   "reference": "50350009025",
+   "titre": "Buste de saint, vu de profil, tourné vers la gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MAZZUOLA Francesco (attribué à)"
+  },
+  {
+   "reference": "50350009052",
+   "titre": "La mort de Thisbé",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MAZZUOLA Francesco (attribué à)"
+  },
+  {
+   "reference": "50350009022",
+   "titre": "Un apôtre",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MAZZUOLA Francesco (attribué à)"
+  },
+  {
+   "reference": "50350009024",
+   "titre": "Un apôtre debout, de face, les bras croisés sur la poitrine",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MAZZUOLA Francesco (attribué à)"
+  },
+  {
+   "reference": "50350009054",
+   "titre": "Tête de jeune homme, et tête d'homme barbu",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MAZZUOLA Francesco (attribué à)"
+  },
+  {
+   "reference": "50350009045",
+   "titre": "Deux têtes de jeunes hommes",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MAZZUOLA Francesco (attribué à)"
+  },
+  {
+   "reference": "50350009082",
+   "titre": "Dragon ailé à tête féminine, et putto, étude pour une frise",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MAZZUOLA Francesco (attribué à)"
+  },
+  {
+   "reference": "50350009050",
+   "titre": "Dix têtes d'homme",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MAZZUOLA Francesco (attribué à)"
+  },
+  {
+   "reference": "50350009010",
+   "titre": "Apparition à saint Pétrone de la Vierge à l'Enfant avec saint Sébastien",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MAZZUOLA Francesco (attribué à)"
+  },
+  {
+   "reference": "50350009070",
+   "titre": "Personnages assis, se retournant, entouré d'autres figures",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MAZZUOLA Francesco (attribué à)"
+  },
+  {
+   "reference": "50350009029",
+   "titre": "La statue de Pallas dans une niche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MAZZUOLA Francesco (attribué à)"
+  },
+  {
+   "reference": "50350008944",
+   "titre": "Un amour debout, étendant les bras vers la droite, et tête d'enfant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MAZZUOLA Francesco (attribué à)"
+  },
+  {
+   "reference": "50350009013",
+   "titre": "Scène galante",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MAZZUOLA Francesco (attribué à)"
+  },
+  {
+   "reference": "50350002252",
+   "titre": "Demi-figure de femme tenant une épée, vue de profil vers la gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MAZZUOLA Francesco (école)"
+  },
+  {
+   "reference": "50350009034",
+   "titre": "Une cariatide, et vue d'un temple au loin",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MAZZUOLA Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005757",
+   "titre": "Femme debout, drapée, de dos, tenant un crucifix",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MAZZUOLA Francesco (attribué à)"
+  },
+  {
+   "reference": "50350009007",
+   "titre": "Un prophète assis, accoudé sur le bras gauche, regardant vers le haut",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MAZZUOLA Francesco (attribué à)"
+  },
+  {
+   "reference": "50350008923",
+   "titre": "Bain de Vénus",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MAZZUOLA Francesco (attribué à)"
+  },
+  {
+   "reference": "50350009017",
+   "titre": "Mise au tombeau",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MAZZUOLA Francesco (attribué à)"
+  },
+  {
+   "reference": "50350009014",
+   "titre": "La Vierge à l'Enfant, saint Jean et d'autres figures",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MAZZUOLA Francesco (attribué à)"
+  },
+  {
+   "reference": "50350008970",
+   "titre": "Femme debout, demi nue, les deux bras ouverts",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MAZZUOLA Francesco (attribué à)"
+  },
+  {
+   "reference": "50350008964",
+   "titre": "Une femme à genoux sur un rocher, levant les yeux vers d'autres figures",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MAZZUOLA Francesco (attribué à)"
+  },
+  {
+   "reference": "50350009038",
+   "titre": "Tête d'homme barbu, de profil vers la gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MAZZUOLA Francesco (attribué à)"
+  },
+  {
+   "reference": "50350012299",
+   "titre": "Deux hommes debout, l'un de profil, l'autre de dos nu et tenant une épée",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MAZZUOLA Francesco (attribué à)"
+  },
+  {
+   "reference": "50350500923",
+   "titre": "Tracé géométrique",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "MAZZUOLA Francesco (école)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-07-28T14:49:21+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

@@ -1,0 +1,650 @@
+{
+ "slug": "david-teniers",
+ "nom": "David Téniers",
+ "doute": 72,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 19
+  },
+  {
+   "code": "ecole_de",
+   "notices": 24
+  },
+  {
+   "code": "atelier_de",
+   "notices": 9
+  },
+  {
+   "code": "entourage_de",
+   "notices": 2
+  },
+  {
+   "code": "suiveur_de",
+   "notices": 2
+  },
+  {
+   "code": "maniere_de",
+   "notices": 3
+  },
+  {
+   "code": "genre_de",
+   "notices": 13
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "000PE008889",
+   "titre": "CORPS DE GARDE DE SINGES MILITAIRES",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Téniers David (1610-1690) (école)"
+  },
+  {
+   "reference": "000PE008890",
+   "titre": "CHATS AMENES DEVANT UN TRIBUNAL MILITAIRE DE SINGES",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Téniers David (1610-1690) (école)"
+  },
+  {
+   "reference": "000PE008864",
+   "titre": "LA KERMESSE",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "Téniers David (1610-1690) (atelier)"
+  },
+  {
+   "reference": "000PE008824",
+   "titre": "SINGES AU CORPS DE GARDE",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "TENIERS le Jeune (atelier)"
+  },
+  {
+   "reference": "000PE008863",
+   "titre": "Les bulles de savon",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Téniers David (1610-1690) (attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE008863.jpg",
+    "credit": "https://collections.louvre.fr/en/ark:/53355/cl010061607",
+    "creator": "Attributed to David Teniers the Younger / Jan van Kessel the Elder",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Jan_van_Kessel_(I)_and_David_Teniers_(II)_(attributed_to)_-_Soap_bubbles,_allegory_of_Vanitas.jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "000PE017071",
+   "titre": "INTERIEUR RUSTIQUE",
+   "musee": "musée des Beaux-Arts",
+   "ville": "Lille",
+   "code": "attribue",
+   "extrait": "Téniers David (1610-1690) (attribué à)"
+  },
+  {
+   "reference": "000PE017072",
+   "titre": "L'ODORAT",
+   "musee": "musée des Beaux-Arts",
+   "ville": "Lille",
+   "code": "atelier_de",
+   "extrait": "Téniers David (1610-1690) (atelier)"
+  },
+  {
+   "reference": "000PE017069",
+   "titre": "DEPART POUR LE SABBAT",
+   "musee": "musée des Beaux-Arts",
+   "ville": "Lille",
+   "code": "atelier_de",
+   "extrait": "Téniers David (1610-1690) (atelier)"
+  },
+  {
+   "reference": "000PE017073",
+   "titre": "JOUEURS DE BOULES",
+   "musee": "musée des Beaux-Arts",
+   "ville": "Lille",
+   "code": "ecole_de",
+   "extrait": "Téniers David (1610-1690) (école)"
+  },
+  {
+   "reference": "000PE020721",
+   "titre": "LA PECHE",
+   "musee": "musée des Beaux-Arts",
+   "ville": "Lille",
+   "code": "attribue",
+   "extrait": "Téniers David (1582-1649) (attribué à)"
+  },
+  {
+   "reference": "000PE021329",
+   "titre": "Intérieur d'alchimiste",
+   "musee": "musée des beaux-arts",
+   "ville": "Caen",
+   "code": "ecole_de",
+   "extrait": "Téniers David (1610-1690) (école)"
+  },
+  {
+   "reference": "000PE021645",
+   "titre": "Visite de la reine de Saba au roi Salomon",
+   "musee": "musée des beaux-arts",
+   "ville": "Caen",
+   "code": "attribue",
+   "extrait": "Téniers David (1610-1690) (attribué à)"
+  },
+  {
+   "reference": "000PE021644",
+   "titre": "Joueurs de palet dans un paysage hivernal",
+   "musee": "musée des beaux-arts",
+   "ville": "Caen",
+   "code": "attribue",
+   "extrait": "Téniers David (1610-1690) (attribué à)"
+  },
+  {
+   "reference": "000PE026159",
+   "titre": "PAYSAGE AVEC ANIMAUX ET PERSONNAGES",
+   "musee": "musée des beaux-arts",
+   "ville": "Bordeaux",
+   "code": "attribue",
+   "extrait": "Téniers David (1610-1690) (attribué à)"
+  },
+  {
+   "reference": "00000062933",
+   "titre": "PAYSAGE AVEC FIGURES",
+   "musee": "musée des beaux-arts",
+   "ville": "Quimper",
+   "code": "maniere_de",
+   "extrait": "Téniers David (1610-1690) (manière de)"
+  },
+  {
+   "reference": "00000094623",
+   "titre": "JOUEURS DE CARTES DANS UN CABARET",
+   "musee": "musée des beaux-arts",
+   "ville": "Rennes",
+   "code": "attribue",
+   "extrait": "Téniers David (1610-1690) (attribué à)"
+  },
+  {
+   "reference": "50350500356",
+   "titre": "Deux études de têtes, et étude d'un singe maitre d'école fouettant un élève",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Téniers David (1610-1690) (école)"
+  },
+  {
+   "reference": "M0347001325",
+   "titre": "La Tentation de saint Antoine",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Dole",
+   "code": "genre_de",
+   "extrait": "Téniers David (1610-1690) (genre de)"
+  },
+  {
+   "reference": "M0347001326",
+   "titre": "Fête Flamande",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Dole",
+   "code": "genre_de",
+   "extrait": "Téniers David (1610-1690) (genre de)"
+  },
+  {
+   "reference": "M0347001327",
+   "titre": "Laitière dans une étable ; Intérieur d'étable (autre titre)",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Dole",
+   "code": "genre_de",
+   "extrait": "Téniers David (1610-1690) (genre de)"
+  },
+  {
+   "reference": "M0347001754",
+   "titre": "La danse à l'auberge",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Dole",
+   "code": "genre_de",
+   "extrait": "Téniers David (1610-1690) (genre de)"
+  },
+  {
+   "reference": "M0347001753",
+   "titre": "Scène d'auberge avec fumeur, joueuse de cartes, buveurs et danseuses",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Dole",
+   "code": "genre_de",
+   "extrait": "Téniers David (1610-1690) (genre de)"
+  },
+  {
+   "reference": "10480006517",
+   "titre": "Scène de taverne",
+   "musee": "musée des beaux-arts",
+   "ville": "Chambéry",
+   "code": "maniere_de",
+   "extrait": "Téniers David (1610-1690) (manière de)"
+  },
+  {
+   "reference": "10480006522",
+   "titre": "Paysage",
+   "musee": "musée des beaux-arts",
+   "ville": "Chambéry",
+   "code": "maniere_de",
+   "extrait": "Téniers David (1610-1690) (manière de)"
+  },
+  {
+   "reference": "10480004597",
+   "titre": "Scène champêtre",
+   "musee": "musée des beaux-arts",
+   "ville": "Chambéry",
+   "code": "atelier_de",
+   "extrait": "Téniers David (1610-1690) (atelier)"
+  },
+  {
+   "reference": "50130000465",
+   "titre": "Fête de village ; Les joueurs de boule",
+   "musee": "musée national du château de Fontainebleau",
+   "ville": "Fontainebleau",
+   "code": "attribue",
+   "extrait": "Téniers David (1610-1690) (attribué à)"
+  },
+  {
+   "reference": "04000000116",
+   "titre": "Homme fumant la pipe",
+   "musee": "musée Lambinet",
+   "ville": "Versailles",
+   "code": "atelier_de",
+   "extrait": "Téniers David (1610-1690) (atelier)"
+  },
+  {
+   "reference": "04000000110",
+   "titre": "Intérieur de cabaret",
+   "musee": "musée Lambinet",
+   "ville": "Versailles",
+   "code": "attribue",
+   "extrait": "Téniers David (1610-1690) (attribué à)"
+  },
+  {
+   "reference": "04000000120",
+   "titre": "Homme assis tenant une cruche",
+   "musee": "musée Lambinet",
+   "ville": "Versailles",
+   "code": "atelier_de",
+   "extrait": "Téniers David (1610-1690) (atelier)"
+  },
+  {
+   "reference": "07430007134",
+   "titre": "Intérieur de tabagie",
+   "musee": "musée des Beaux-Arts",
+   "ville": "Nantes",
+   "code": "genre_de",
+   "extrait": "Téniers David (1610-1690) (genre de)"
+  },
+  {
+   "reference": "07430007012",
+   "titre": "Sainte Thérèse d'Avilla en prières",
+   "musee": "musée des Beaux-Arts",
+   "ville": "Nantes",
+   "code": "atelier_de",
+   "extrait": "Téniers David (1610-1690) (atelier)"
+  },
+  {
+   "reference": "07430007025",
+   "titre": "L'arracheur de dents",
+   "musee": "musée des Beaux-Arts",
+   "ville": "Nantes",
+   "code": "genre_de",
+   "extrait": "Téniers David (1610-1690) (genre de)"
+  },
+  {
+   "reference": "07430007081",
+   "titre": "Intérieur de cabaret",
+   "musee": "musée des Beaux-Arts",
+   "ville": "Nantes",
+   "code": "genre_de",
+   "extrait": "Téniers David (1610-1690) (genre de)"
+  },
+  {
+   "reference": "07430007011",
+   "titre": "Intérieur de tabagie",
+   "musee": "musée des Beaux-Arts",
+   "ville": "Nantes",
+   "code": "genre_de",
+   "extrait": "Téniers David (1610-1690) (genre de)"
+  },
+  {
+   "reference": "07430007089",
+   "titre": "L'arracheur de dents, ou le dentiste",
+   "musee": "musée des Beaux-Arts",
+   "ville": "Nantes",
+   "code": "genre_de",
+   "extrait": "Téniers David (1610-1690) (genre de)"
+  },
+  {
+   "reference": "000PE023455",
+   "titre": "SCENE CHAMPETRE",
+   "musee": "musée des beaux-arts",
+   "ville": "Bordeaux",
+   "code": "ecole_de",
+   "extrait": "Téniers David (1610-1690) (école)"
+  },
+  {
+   "reference": "000PE023453",
+   "titre": "PAYSAGE, LE DEPART",
+   "musee": "musée des beaux-arts",
+   "ville": "Bordeaux",
+   "code": "ecole_de",
+   "extrait": "Téniers David (1610-1690) (école)"
+  },
+  {
+   "reference": "000PE023457",
+   "titre": "PAYSAGE FLAMAND",
+   "musee": "musée des beaux-arts",
+   "ville": "Bordeaux",
+   "code": "ecole_de",
+   "extrait": "Téniers David (1610-1690) (école)"
+  },
+  {
+   "reference": "000PE023456",
+   "titre": "SCENE CHAMPETRE",
+   "musee": "musée des beaux-arts",
+   "ville": "Bordeaux",
+   "code": "ecole_de",
+   "extrait": "Téniers David (1610-1690) (école)"
+  },
+  {
+   "reference": "000PE023452",
+   "titre": "Buveur",
+   "musee": "musée des beaux-arts",
+   "ville": "Bordeaux",
+   "code": "ecole_de",
+   "extrait": "Téniers David (1610-1690) (école)"
+  },
+  {
+   "reference": "06650001640",
+   "titre": "Intérieur de Cabaret",
+   "musee": "musée d'Art et d'Histoire",
+   "ville": "Lisieux",
+   "code": "ecole_de",
+   "extrait": "Téniers David (1582-1649) (école)"
+  },
+  {
+   "reference": "50350110752",
+   "titre": "Singes forains",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Téniers David (1610-1690) (école)"
+  },
+  {
+   "reference": "50350110736",
+   "titre": "Trois fumeurs dans un intérieur",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Téniers David (1610-1690) (école)"
+  },
+  {
+   "reference": "50350110746",
+   "titre": "Singe peintre dans son atelier",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Téniers David (1610-1690) (école)"
+  },
+  {
+   "reference": "50350110749",
+   "titre": "Cinq hommes discutant dans un cabaret de village",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Téniers David (1610-1690) (école)"
+  },
+  {
+   "reference": "50350110748",
+   "titre": "Singe médecin",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Téniers David (1610-1690) (école)"
+  },
+  {
+   "reference": "50350110743",
+   "titre": "Singe maître d'école",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Téniers David (1610-1690) (école)"
+  },
+  {
+   "reference": "50350110750",
+   "titre": "Bal des singes",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Téniers David (1610-1690) (école)"
+  },
+  {
+   "reference": "50350110741",
+   "titre": "Singe maître d'école",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Téniers David (1610-1690) (école)"
+  },
+  {
+   "reference": "50350110745",
+   "titre": "Bal des singes",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Téniers David (1610-1690) (école)"
+  },
+  {
+   "reference": "50350110747",
+   "titre": "Joueur de violon au cabaret",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Téniers David (1610-1690) (école)"
+  },
+  {
+   "reference": "50350110751",
+   "titre": "Singe maître d'école, la correction",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Téniers David (1610-1690) (école)"
+  },
+  {
+   "reference": "50110001641",
+   "titre": "Paysage",
+   "musee": "musée national Magnin",
+   "ville": "Dijon",
+   "code": "attribue",
+   "extrait": "Téniers David (1610-1690) (peintre, attribué à)"
+  },
+  {
+   "reference": "03070007836",
+   "titre": "Mendiant",
+   "musee": "musée municipal",
+   "ville": "Châlons-en-Champagne",
+   "code": "atelier_de",
+   "extrait": "Téniers David (1610-1690) (atelier)"
+  },
+  {
+   "reference": "01610000091",
+   "titre": "Le jeu des singes dans le monde",
+   "musee": "musée Rolin",
+   "ville": "Autun",
+   "code": "attribue",
+   "extrait": "Téniers David (1610-1690) (attribué à)"
+  },
+  {
+   "reference": "00190086863",
+   "titre": "Les fumeurs de pipe",
+   "musee": "musée des Beaux-Arts",
+   "ville": "Strasbourg",
+   "code": "suiveur_de",
+   "extrait": "Téniers David (1610-1690) (suiveur)"
+  },
+  {
+   "reference": "00190086745",
+   "titre": "Joueurs de quilles",
+   "musee": "musée des Beaux-Arts",
+   "ville": "Strasbourg",
+   "code": "suiveur_de",
+   "extrait": "Téniers David (1610-1690) (suiveur)"
+  },
+  {
+   "reference": "00190023064",
+   "titre": "Paysage avec bergers et troupeau",
+   "musee": "musée des Beaux-Arts",
+   "ville": "Strasbourg",
+   "code": "attribue",
+   "extrait": "Téniers David (1610-1690) (attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/00190023064.jpg",
+    "credit": "https://www.pop.culture.gouv.fr/notice/joconde/00190023064",
+    "creator": "David Teniers the Younger",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Teniers_II,_Paysage_avec_bergers_et_troupeau.jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "02110002187",
+   "titre": "Singes dans une cuisine",
+   "musee": "musée des beaux-arts",
+   "ville": "Rennes",
+   "code": "attribue",
+   "extrait": "Téniers David (1610-1690) (attribué à)"
+  },
+  {
+   "reference": "M0332001260",
+   "titre": "Cour de ferme",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "genre_de",
+   "extrait": "Téniers David (1610-1690) (genre de)"
+  },
+  {
+   "reference": "M0332001232",
+   "titre": "Fête villageoise ; personnages dansant devant une auberge",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "genre_de",
+   "extrait": "Téniers David (1610-1690) (genre de) (dit)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/M0332001232.jpg",
+    "credit": "Œuvre appartenant au Musée des Beaux Arts de Besançon",
+    "creator": "Anonymous (d'après David II Teniers)",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:F%C3%AAte_villageoise_-_dapr%C3%A8s_David_II_Teniers_-_MBAB_896.1.306.jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "06190000092",
+   "titre": "Partie de tric trac",
+   "musee": "musée de la Chartreuse",
+   "ville": "Douai",
+   "code": "ecole_de",
+   "extrait": "Téniers David (1610-1690) (école)"
+  },
+  {
+   "reference": "06190000063",
+   "titre": "Paysage avec figures",
+   "musee": "musée de la Chartreuse",
+   "ville": "Douai",
+   "code": "genre_de",
+   "extrait": "Teniers David II Dit Le Jeune (1610 - 1690) (genre de)"
+  },
+  {
+   "reference": "06190001298",
+   "titre": "Gros Temps ; Marine ; Paysage avec figures ( ?, autre titre)",
+   "musee": "musée de la Chartreuse",
+   "ville": "Douai",
+   "code": "ecole_de",
+   "extrait": "Téniers David (1610-1690) (école)"
+  },
+  {
+   "reference": "07010001983",
+   "titre": "Intérieur, fumeurs et musiciens",
+   "musee": "musée Municipal",
+   "ville": "Bernay",
+   "code": "attribue",
+   "extrait": "Téniers David (1610-1690) (attribué à)"
+  },
+  {
+   "reference": "05120000046",
+   "titre": "Le Torrent",
+   "musee": "musée des Beaux-Arts",
+   "ville": "Nancy",
+   "code": "attribue",
+   "extrait": "Téniers David (1610-1690) (attribué à)"
+  },
+  {
+   "reference": "01160003232",
+   "titre": "Une Tabagie (Le titre correspond mal à la scène d'intérieur représentant des musiciens.)",
+   "musee": "musée Crozatier",
+   "ville": "Le Puy-en-Velay",
+   "code": "attribue",
+   "extrait": "Téniers David (1610-1690) (attribué à)"
+  },
+  {
+   "reference": "03110007347",
+   "titre": "Fête de village (catalogue Loriquet)",
+   "musee": "musée des Beaux-Arts de Reims",
+   "ville": "Reims",
+   "code": "attribue",
+   "extrait": "Téniers David (1610-1690) (attribué à)"
+  },
+  {
+   "reference": "03110042464",
+   "titre": "Joueurs dans une auberge",
+   "musee": "musée des Beaux-Arts de Reims",
+   "ville": "Reims",
+   "code": "attribue",
+   "extrait": "Téniers David (1610-1690) (peintre, attribué à)"
+  },
+  {
+   "reference": "09940140170",
+   "titre": "Scènes de rue",
+   "musee": "musée de Grenoble",
+   "ville": "Grenoble",
+   "code": "attribue",
+   "extrait": "Teniers Le Jeune David II (attribué à)"
+  },
+  {
+   "reference": "04450000862",
+   "titre": "Le jeu de boules",
+   "musee": "Palais-musée des Archevêques de Narbonne",
+   "ville": "Narbonne",
+   "code": "entourage_de",
+   "extrait": "TENIERS David II (entourage de)"
+  },
+  {
+   "reference": "04450000864",
+   "titre": "Le tir à l'arc",
+   "musee": "Palais-musée des Archevêques de Narbonne",
+   "ville": "Narbonne",
+   "code": "entourage_de",
+   "extrait": "TENIERS David II (entourage de)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-07-28T14:49:21+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

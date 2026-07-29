@@ -8,6 +8,34 @@ ressemble, et **en quoi elle s'éloigne encore de la vision visée** (une
 
 État daté du 2026-07-08. Route concernée : `/les-presque`.
 
+> **Mise à jour du 2026-07-22 — l'axe vertical a changé de nature.** Le graphique de la
+> fiche maître (`NuageFamilles.svelte`, qui a remplacé la galaxie décrite en §7) portait le
+> **nombre** d'œuvres sur un plafond commun à tous les maîtres, égal au maximum observé
+> (240). Il porte désormais la **part des œuvres concernées du maître, de 0 à 100 %**.
+>
+> Motif : la liste est passée de 27 à 63 maîtres, allant de **11 à 310** notices prudentes.
+> Sur une échelle absolue graduée jusqu'à 240, la moitié des profils s'écrasaient au sol —
+> Botticelli (17 notices) affichait quatre points indistinguables sur la ligne de base. La
+> règle du projet est double : échelle **commune et fixe** entre entités comparées, ET
+> lisibilité d'une hiérarchie. L'échelle absolue ne pouvait plus tenir les deux ; la part
+> les tient. La comparaison porte sur la **forme** du profil ; le volume reste écrit dans
+> l'en-tête, dans le classement du répertoire et dans chaque infobulle.
+>
+> Détail et mesures : `docs/decisions.md`, 2026-07-22 (quater).
+
+> **Mise à jour du 2026-07-26 — l'onglet Profil est stabilisé.** Le bandeau et le graphique
+> se partagent le travail : le bandeau dit l'**ampleur** (volume d'œuvres concernées, nombre
+> de musées), le graphique dit la **répartition**, sans jamais se répéter. Le graphique porte
+> un **titre stable** (« Répartition des mentions », le nom de l'artiste étant dans le
+> bandeau) et **une phrase factuelle générée par règle déterministe**
+> (`phrase-repartition.js`, testée hors bundler). Le nuage devient un **dot plot à points de
+> taille constante** (la hauteur = le pourcentage porte seule la mesure). Les infobulles
+> affichent « N œuvres sur T — P % » + une **définition factuelle canonique** (champ
+> `definition` de `familles-public.js`). Vocabulaire du profil unifié en « œuvres
+> concernées ». La phrase « de gauche à droite… » est retirée. Détail : `docs/decisions.md`,
+> 2026-07-26. La description §7 ci-dessous vaut pour la **galaxie archivée**, pas pour l'état
+> courant.
+
 ---
 
 ## 1. Ce que cette dataviz veut faire
@@ -46,8 +74,10 @@ Un seul fichier : `data/exports/web/artistes.json` (~44 Ko), généré par le
 pipeline Python (`src/build_artistes.py`) à partir de la base Joconde. Il n'est
 **pas** recalculé côté front : le front ne fait que le lire.
 
-**Sélection : 27 maîtres** retenus sur le critère « maître de référence **ET**
-≥ 20 notices de doute (hors copie) ». Ce ne sont donc pas tous les artistes de la
+**Sélection : 63 maîtres** (2026-07-22 ; 27 à l'origine) retenus sur le critère « maître
+de référence **ET** ≥ 10 notices prudentes uniques, hors copie, après regroupement des
+graphies ». L'effectif est **lu dans les données**, jamais écrit en dur : il bougera à
+chaque lot instruit. Ce ne sont donc pas tous les artistes de la
 base, mais une liste vedette curatée.
 
 **Structure (par maître) :**
@@ -106,8 +136,8 @@ isolé du pipeline Python ; il consomme les JSON via `fetch('/data/artistes.json
 
 **Structure de la page (mise en page à deux colonnes) :**
 1. **En-tête de page** : titre « Les presque », un chapô explicatif, un
-   « mode d'emploi » (« 👉 Choisissez un maître… »), une ligne sur le critère des 27.
-2. **Colonne gauche** : un champ de filtre + la **liste des 27 maîtres**. Chaque
+   « mode d'emploi » (« 👉 Choisissez un maître… »), une ligne sur le critère de la liste.
+2. **Colonne gauche** : un champ de filtre + la **liste des maîtres**. Chaque
    entrée montre le nom, le nombre de doutes, et une mini-barre des 3 niveaux.
    Cliquer sélectionne le maître.
 3. **Colonne droite (la « fiche »)** : nom, une phrase de résumé (X doutes sur Y
@@ -119,7 +149,7 @@ isolé du pipeline Python ; il consomme les JSON via `fetch('/data/artistes.json
 
 **Interactions.** Tout est côté client, sans rechargement : filtre texte,
 sélection d'un maître, bascule de vue. Aucune animation. La « recherche » ne porte
-que sur les **27 vedettes** (un moteur sur toute la base de noms demanderait un
+que sur les **maîtres retenus** (un moteur sur toute la base de noms demanderait un
 autre export, pas encore produit).
 
 **Encodage de la galaxie (paramètres réels, `GalaxieMaitre.svelte`) :**
@@ -260,7 +290,7 @@ sémantique (comptage du doute, niveaux, exclusions) est figée en amont dans le
     "2": "Autour de lui",
     "3": "Son style, sans lui"
   },
-  "artistes": [ Artiste ]      // longueur = 27, triés par doute décroissant
+  "artistes": [ Artiste ]      // longueur = effectif de la liste, triés par doute décroissant
 }
 
 Artiste = {
@@ -436,10 +466,10 @@ npm run build         # -> web/build/les-presque.html (statique, données pré-r
 ## Annexes utiles à l'analyse
 
 - Maquette d'intention : `images/maquette_galaxie.png` (et `images/maquette.png`).
-- Données réelles : `data/exports/web/artistes.json` (27 maîtres).
+- Données réelles : `data/exports/web/artistes.json` (63 maîtres au 2026-07-22).
 - Code de la vue galaxie : `web/src/lib/GalaxieMaitre.svelte`.
 - Code de la page : `web/src/routes/les-presque/+page.svelte`.
 - Palette et typo : `web/src/lib/styles/tokens.css`.
 - Chiffres de cadrage du projet : 24 507 notices de doute au total (dont 18 716
-  hors une monoculture particulière au muséum de Nice) ; ces 27 maîtres n'en sont
+  hors une monoculture particulière au muséum de Nice) ; ces maîtres n'en sont
   qu'une entrée « par les noms célèbres ».

@@ -1,0 +1,487 @@
+{
+ "slug": "pierre-mignard",
+ "nom": "Pierre Mignard",
+ "doute": 43,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 22
+  },
+  {
+   "code": "point_interrogation",
+   "notices": 1
+  },
+  {
+   "code": "ecole_de",
+   "notices": 9
+  },
+  {
+   "code": "atelier_de",
+   "notices": 9
+  },
+  {
+   "code": "genre_de",
+   "notices": 2
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "000PE005364",
+   "titre": "Anne-Marie-Louise d'Orléans, Duchesse de Montpensier, dite La Grande Mademoiselle (1627-1693)",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "code": "ecole_de",
+   "extrait": "MIGNARD Pierre (école)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE005364.jpg",
+    "credit": "photo.rmn.fr",
+    "creator": "Attributed to Jean Nocret / Formerly attributed to Pierre Mignard I",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Anne_Marie_Louise_d%27Orl%C3%A9ans_holding_a_portrait_of_her_father_Gaston_de_France,_Jean_Nocret.jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "000PE005362",
+   "titre": "Philippe de France, Duc d'Orléans, dit Monsieur (1640-1701)",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "code": "ecole_de",
+   "extrait": "MIGNARD Pierre (école)"
+  },
+  {
+   "reference": "000PE005357",
+   "titre": "Louis XIV couronné par la victoire",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "code": "attribue",
+   "extrait": "MIGNARD Pierre (attribué)"
+  },
+  {
+   "reference": "000PE006526",
+   "titre": "Philippe de France, duc d'Orléans, frère de Louis XIV dit Monsieur (1640-1701)",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "code": "atelier_de",
+   "extrait": "MIGNARD Pierre (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE006526.jpg",
+    "credit": "Versailles, châteaux de Versailles et de Trianon",
+    "creator": "Unidentified painter / French School / Formerly attributed to Pierre Mignard I",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Philippe_of_France,_Duke_of_Orl%C3%A9ans_from_the_workshop_of_Pierre_Mignard_(Versailles).jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "000PE007045",
+   "titre": "Henriette-Anne d'Angleterre, Duchesse d'Orleans, dite Madame (1644-1670)",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "code": "ecole_de",
+   "extrait": "MIGNARD Pierre (école)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE007045.jpg",
+    "credit": "https://www.ucalgary.ca/~mamaes/henrietteanne.jpg",
+    "creator": "Attributed to Nicolas Mignard / Attributed to Pierre Mignard I / Attributed to Jean Nocret / Formerly attributed to Nicolas de Largillière",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Henriette-Anne_d%27Angleterre,_duchesse_d%27Orl%C3%A9ans,_dite_Madame.jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "000PE007018",
+   "titre": "Marie-Anne-Louise d'Orléans, Mademoiselle de Montpensier dite La Grande Mademoiselle (1627-1693)",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "code": "ecole_de",
+   "extrait": "MIGNARD Pierre (école)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE007018.jpg",
+    "credit": "photo.rmn.fr Réunion des musées nationaux",
+    "creator": "Attributed to Gilbert de Sève",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Anne_Marie_Louise_d%27Orl%C3%A9ans,_Duchess_of_Montpensier,_La_Grande_Mademoiselle_-_Versailles_MV_3476.jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "000PE007139",
+   "titre": "Wilhelmine-Ernestine de Danemark, Duchesse de Bavière (1650-1706)",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "code": "ecole_de",
+   "extrait": "MIGNARD Pierre (école)"
+  },
+  {
+   "reference": "000PE011341",
+   "titre": "La dauphine Christine de Bavière (1660-1690)",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "code": "ecole_de",
+   "extrait": "MIGNARD Pierre (école)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE011341.jpg",
+    "credit": "http://www.bayern-france.info/pdf/Kapitel_2_Beitrag_2_neu.pdf",
+    "creator": "Workshop of François de Troy / School of Pierre Mignard I",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Troy,_after_Fran%C3%A7ois_de_-_Maria_Anna_Victoria_of_Bavaria_-_Versailles,_MV5557.png",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "000PE012086",
+   "titre": "Elisabeth-Charlotte d'Orléans (1676-1744), dite d'abord Mademoiselle de Chartres",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "code": "ecole_de",
+   "extrait": "MIGNARD Pierre (école)"
+  },
+  {
+   "reference": "000PE013357",
+   "titre": "Trophées aux armes de Louis XIV",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "code": "ecole_de",
+   "extrait": "MIGNARD Pierre (école)"
+  },
+  {
+   "reference": "000PE013802",
+   "titre": "Portrait de jeune femme",
+   "musee": "musée des beaux-arts",
+   "ville": "Marseille",
+   "code": "attribue",
+   "extrait": "MIGNARD Pierre (attribué à)"
+  },
+  {
+   "reference": "000PE013805",
+   "titre": "Portrait de Louis de Bourbon Comte de Vermandois",
+   "musee": "musée des beaux-arts",
+   "ville": "Marseille",
+   "code": "attribue",
+   "extrait": "MIGNARD Pierre (attribué à)"
+  },
+  {
+   "reference": "000PE013803",
+   "titre": "Portrait de Laurent de La Baume Leblanc, seigneur de La Vallière",
+   "musee": "musée des beaux-arts",
+   "ville": "Marseille",
+   "code": "attribue",
+   "extrait": "MIGNARD Pierre (attribué à)"
+  },
+  {
+   "reference": "000PE013806",
+   "titre": "Portrait de Mademoiselle de La Vallière en carmelite",
+   "musee": "musée des beaux-arts",
+   "ville": "Marseille",
+   "code": "attribue",
+   "extrait": "MIGNARD Pierre (attribué à)"
+  },
+  {
+   "reference": "000PE014667",
+   "titre": "Portrait de seigneur",
+   "musee": "musée des beaux-arts",
+   "ville": "Marseille",
+   "code": "attribue",
+   "extrait": "MIGNARD Pierre (attribué à)"
+  },
+  {
+   "reference": "000PE014789",
+   "titre": "Ninon de Lenclos",
+   "musee": "musée des beaux-arts",
+   "ville": "Marseille",
+   "code": "attribue",
+   "extrait": "MIGNARD Pierre (attribué à)"
+  },
+  {
+   "reference": "000PE018034",
+   "titre": "Pan et Syrinx",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MIGNARD Pierre (attribué)"
+  },
+  {
+   "reference": "00000055990",
+   "titre": "Portrait d'homme",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "MIGNARD Pierre (attribué)"
+  },
+  {
+   "reference": "00000077245",
+   "titre": "Dame inconnue",
+   "musee": "musée Condé",
+   "ville": "Chantilly",
+   "code": "attribue",
+   "extrait": "MIGNARD Pierre (attribué)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/00000077245.jpg",
+    "credit": "photo.rmn.fr",
+    "creator": "Attributed to Pierre Mignard I",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Portrait_d%27une_dame_inconnue_-_Mignard_-_Mus%C3%A9e_Cond%C3%A9.jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "00000093332",
+   "titre": "Portrait de Louis XIV",
+   "musee": "musée des beaux-arts",
+   "ville": "Orléans",
+   "code": "atelier_de",
+   "extrait": "Mignard Pierre (1612-1695) (atelier)"
+  },
+  {
+   "reference": "000PE011646",
+   "titre": "Isabelle de Montmorency, Duchesse de Mecklembourg (1626-1695)",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "code": "point_interrogation",
+   "extrait": "MIGNARD Pierre (?)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE011646.jpg",
+    "credit": "http://photos.geni.com/p13/94/aa/27/4d/5344483b195514d3/isabelle_de_montmorency_1626_original.jpg",
+    "creator": "Formerly attributed to Pierre Mignard I",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:So-called_%22Isabelle_de_Montmorency,_duchesse_de_Mecklembourg%22_-_Versailles.jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "01370003033",
+   "titre": "Portrait de jeune femme",
+   "musee": "musée des beaux-arts",
+   "ville": "Dijon",
+   "code": "attribue",
+   "extrait": "MIGNARD Pierre (attribué)"
+  },
+  {
+   "reference": "01370003048",
+   "titre": "Portrait d'artiste",
+   "musee": "musée des beaux-arts",
+   "ville": "Dijon",
+   "code": "attribue",
+   "extrait": "MIGNARD Pierre (attribué)"
+  },
+  {
+   "reference": "06070000167",
+   "titre": "Portrait de femme",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "genre_de",
+   "extrait": "MIGNARD Pierre (genre de)"
+  },
+  {
+   "reference": "06070000168",
+   "titre": "Portrait d'homme",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "genre_de",
+   "extrait": "MIGNARD Pierre (genre de)"
+  },
+  {
+   "reference": "06070000166",
+   "titre": "Portrait de Louis XIV",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "atelier_de",
+   "extrait": "MIGNARD Pierre (atelier)"
+  },
+  {
+   "reference": "50350209198",
+   "titre": "Sainte Famille avec saint Jean Baptiste offrant des fruits à Jésus",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MIGNARD Pierre (attribué à)"
+  },
+  {
+   "reference": "50350209197",
+   "titre": "Jeune homme assis, jouant de la flûte",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MIGNARD Pierre (attribué à)"
+  },
+  {
+   "reference": "50350209199",
+   "titre": "Enfant nu",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MIGNARD Pierre (attribué à)"
+  },
+  {
+   "reference": "50350209200",
+   "titre": "Tête d'une femme couronnée",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MIGNARD Pierre (attribué à)"
+  },
+  {
+   "reference": "50350209195",
+   "titre": "Obsèques d'un moine",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MIGNARD Pierre (attribué à)"
+  },
+  {
+   "reference": "50350209196",
+   "titre": "Ange, et reprise du bras droit",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MIGNARD Pierre (attribué à)"
+  },
+  {
+   "reference": "50350208866",
+   "titre": "L'Hymen de Zéphyr et de Flore : le Printemps",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "MIGNARD Pierre (atelier)"
+  },
+  {
+   "reference": "50350208864",
+   "titre": "Le Triomphe de Bacchus et d'Ariane : l'Automne",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "MIGNARD Pierre (atelier)"
+  },
+  {
+   "reference": "04000001398",
+   "titre": "La famille du Grand Dauphin",
+   "musee": "musée Lambinet",
+   "ville": "Versailles",
+   "code": "atelier_de",
+   "extrait": "MIGNARD Pierre (atelier)"
+  },
+  {
+   "reference": "01720000928",
+   "titre": "Madame de Montespan et ses enfants",
+   "musee": "musée des ursulines",
+   "ville": "Mâcon",
+   "code": "attribue",
+   "extrait": "MIGNARD Pierre (attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/01720000928.jpg",
+    "credit": "https://www.culture.gouv.fr/Wave/image/joconde/0375/m017204_0003965_p.jpg",
+    "creator": "Attributed to Pierre Mignard I",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Madame_de_Maintenon_avec_Vexin_et_Maine,_Mignard.jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "M0271000077",
+   "titre": "Hélène Ferrand, marquise de Saint Germain Beaupré",
+   "musee": "château musées",
+   "ville": "Blois",
+   "code": "attribue",
+   "extrait": "MIGNARD Pierre (attribué à)"
+  },
+  {
+   "reference": "07290022367",
+   "titre": "Tête de Christ",
+   "musee": "musée des beaux-arts",
+   "ville": "Rouen",
+   "code": "ecole_de",
+   "extrait": "MIGNARD Pierre (école)"
+  },
+  {
+   "reference": "M0003020239",
+   "titre": "Godefroy de Bouillon soigné par l'ange (titre d'usage)",
+   "musee": "musée du Pays de Hanau - histoire et vies d’un territoire",
+   "ville": "Bouxwiller",
+   "code": "attribue",
+   "extrait": "MIGNARD Pierre (attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/M0003020239.jpg",
+    "credit": "http://webmuseo.com/ws/musees-parc-vosges-nord/app/file/download/_0014514.jpg?key=6acf71zd3kllbz4hb9kj3lm00g5f1id6u&lang=fr",
+    "creator": "Pierre Mignard I",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Pierre_Mignard,_Godefroy_de_Bouillon_soign%C3%A9_par_un_ange.jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "M0012000004",
+   "titre": "Portrait du roi Louis XIV",
+   "musee": "musée du Château des Rohan",
+   "ville": "Saverne",
+   "code": "atelier_de",
+   "extrait": "MIGNARD Pierre (atelier)"
+  },
+  {
+   "reference": "08870000079",
+   "titre": "Portrait du Maréchal de Catinat de la Fauconnerie",
+   "musee": "musée du palais Lascaris",
+   "ville": "Nice",
+   "code": "atelier_de",
+   "extrait": "MIGNARD Pierre (atelier, peintre)"
+  },
+  {
+   "reference": "03110000174",
+   "titre": "Louis XIV à cheval (titre attribué) ; Louis le Grand à l'âge de 37 ans (titre publié (Paris, 1845))",
+   "musee": "musée des Beaux-Arts de Saint-Denis",
+   "ville": "Reims",
+   "code": "atelier_de",
+   "extrait": "MIGNARD Pierre (atelier, peintre)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/03110000174.jpg",
+    "credit": "Musée des Beaux-Arts, Reims",
+    "creator": "Pierre Mignard I",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:MIGNARD_Pierre_(Atelier_de)_Louis_XIV_%C3%A0_cheval_Huile_sur_toile.jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "03110002336",
+   "titre": "François d'Espinay, marquis de Saint-Luc ; François de La Rochefoucauld",
+   "musee": "musée des Beaux-Arts de Saint-Denis",
+   "ville": "Reims",
+   "code": "attribue",
+   "extrait": "MIGNARD Pierre (attribué à, atelier)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-07-28T14:49:21+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

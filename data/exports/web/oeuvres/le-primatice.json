@@ -1,0 +1,1601 @@
+{
+ "slug": "le-primatice",
+ "nom": "Le Primatice",
+ "doute": 197,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 71
+  },
+  {
+   "code": "ecole_de",
+   "notices": 125
+  },
+  {
+   "code": "entourage_de",
+   "notices": 1
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "00000068545",
+   "titre": "Petit génie volant",
+   "musee": "musée national Magnin",
+   "ville": "Dijon",
+   "code": "attribue",
+   "extrait": "LE PRIMATICE (dit, attribué)"
+  },
+  {
+   "reference": "50510020999",
+   "titre": "Sujet antique : une vieille en haillons s'entretenant avec une jeune femme ; Vertumne et Pomone",
+   "musee": "musée de l'Ecole nationale supérieure des beaux-arts",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "PRIMATICCIO Francesco (école)"
+  },
+  {
+   "reference": "50350105462",
+   "titre": "Deux prisonniers conduits par deux soldats romains",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005869",
+   "titre": "Etude de décoration, avec un lion couronné, parmi des guirlande...",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350112137",
+   "titre": "Vénus faisant forger les armes d'Enée",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350201160",
+   "titre": "Demi-figure d'homme posé sur une archivolte, tenant un voile",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005857",
+   "titre": "Figure drapée, de dos, marchant en portant son manteau",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005846",
+   "titre": "Femme assise à terre, tournée vers la droite, regardant le spectateur",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350228767",
+   "titre": "Neptune soufflant dans une conque et deux tritons",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005862",
+   "titre": "Tête d'homme barbu, coiffé d'un bonnet, tourné vers la gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005860",
+   "titre": "Tête de femme, de profil, tournée vers la gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005858",
+   "titre": "Figure drapée, de face, enveloppée d'un large manteau qui la dissimule",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005848",
+   "titre": "Homme nu renversé, s'appuyant sur les deux mains",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005867",
+   "titre": "Deux termes enlacés, se tournant le dos",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350145607",
+   "titre": "Enlèvement de Prosperpine par Pluton",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350500979",
+   "titre": "Etude d'une jambe ?",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350500980",
+   "titre": "Motif décoratif",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005873",
+   "titre": "La continence de Scipion",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005851",
+   "titre": "Homme nu, renversé en arrière",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350200980",
+   "titre": "Tête de femme vue de profil, tournée vers la gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005864",
+   "titre": "Monument mural aux coeurs de François de Lorraine et d'Anne d'Este",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005855",
+   "titre": "Femme à demi nue, de dos, assise à terre, se retournant vers la gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005853",
+   "titre": "Homme nu, debout, tendant le bras droit",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350115662",
+   "titre": "Décoration architecturale, avec une statue féminine, et un panneau",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005863",
+   "titre": "Demi-figure d'homme, regardant vers la gauche et baissant la tête",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350016312",
+   "titre": "Jupiter et Sémélé",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005849",
+   "titre": "Homme barbu, à demi drapé, accroupi, retenant sa draperie d'une main",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350015952",
+   "titre": "Modèle de nef d'orfèvrerie",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005850",
+   "titre": "Figure debout, drapée",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005859",
+   "titre": "Tête de femme, de profil vers la gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005856",
+   "titre": "Figure nue, assise,presque de profil vers la gauche, la tête de trois quarts",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005854",
+   "titre": "Homme nu, de face, assis sur des nuages, les jambes écartées...",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005866",
+   "titre": "Faune debout, de face, les bras croisés",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005872",
+   "titre": "Fragment de frise avec des hommes ramant et des néréides",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005843",
+   "titre": "Femme nu, assise dans une forêt, près d'un chien, les pieds dans un ruisseau",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005845",
+   "titre": "Femme à demi drapée, assise, la tête tournée vers la droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005844",
+   "titre": "Femme et enfant courbés vers un enfant qu'elle tient entre ses bras",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350500988",
+   "titre": "Fragment de figure drapée,le bras gauche écarté ; fragment d'une autre figure",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005797",
+   "titre": "L'Hiver debout dans une niche, se chauffant les mains à un brasier",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350500977",
+   "titre": "Plan d'un édifice circulaire",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005813",
+   "titre": "Allégorie avec une Renommée et deux femmes tenant une corne d'abondance",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005740",
+   "titre": "Séparation de Loth et d'Abraham",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005739",
+   "titre": "Le Déluge",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005787",
+   "titre": "Polyphème assis charmant les animaux",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005778",
+   "titre": "Un satyre poursuivant une nymphe qui s'enfuit",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005640",
+   "titre": "Femme guerrière, vêtue à l'antique, tenant un javelot et un bouclier",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005806",
+   "titre": "Esclave attaché à un trophée, assis parmi du butin",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005794",
+   "titre": "Femme nue, assise, tenant une lyre",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005681",
+   "titre": "Une figure drapée, debout, la tête baissée",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005658",
+   "titre": "Figure drapée, debout, regardant vers la gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350001678",
+   "titre": "Cheval richement harnaché de rubans et de deux aigles, avec deux chiens",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005680",
+   "titre": "Figure drapée, debout, vue de face",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005810",
+   "titre": "Quatre femmes assises",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005690",
+   "titre": "Une femme à demi-nue, retenant ses vêtements derrière elle",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005827",
+   "titre": "La fermeté de Mucius Scaevola",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005660",
+   "titre": "Figure drapée, debout, regardant vers la droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005767",
+   "titre": "Triomphe de Bacchus",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005678",
+   "titre": "Une figure drapée, debout, les jambes croisées, le bras gauche levé",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005689",
+   "titre": "Figure drapée, un bras sur la tête et fragment d'une autre figure",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005791",
+   "titre": "Femme brandissant une massue, à cheval sur un lion",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005841",
+   "titre": "Trois petites figures ailées assises sur des fruits",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005699",
+   "titre": "Figure d'homme debout, les bras ouverts, la tête recouverte d'un grand voile",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005682",
+   "titre": "Une femme drapée, debout",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005840",
+   "titre": "Enfant couché, tenant une guirlande de fruits et de fleurs",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005634",
+   "titre": "Victoire, laurée, debout de profil vers la droite, écrivant sur un bouclier",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350001676",
+   "titre": "Guerrier à cheval, de profil vers la droite tenant le bâton de commandement",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005750",
+   "titre": "Le Christ mort, étendu à terre, devant la Vierge de douleur",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005695",
+   "titre": "Une figure drapée, debout, tourné vers la gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005628",
+   "titre": "Ulysse sacrifie des boucs noirs à Pluton",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005777",
+   "titre": "Perséphone cueillant des fleurs en compagnie des nymphes",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005836",
+   "titre": "Homme nu, debout, tenant une draperie au dessus de la tête dans une niche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005700",
+   "titre": "Fragment d'une demi-figure de guerrier casqué, s'appuyant sur un baton",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005668",
+   "titre": "Figure d'homme drapé, debout, de profil, regardant vers le haut",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350003616",
+   "titre": "Homme nu attaché à un arbre",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005792",
+   "titre": "Petit satyre assis sur la jambe d'une femme, dont il caresse le sein",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350500990",
+   "titre": "Demi-figure d'homme, de profil",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005626",
+   "titre": "Femme debout, tenant un sabre dans la main droite: Judith",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005795",
+   "titre": "Une femme debout jouant de la trompette, de profil vers la gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005666",
+   "titre": "Figure drapée, debout, de face, les mains croisées sur la poitrine",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005665",
+   "titre": "Jeune homme drapé, debout, de face, la tête tournée vers la gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350500987",
+   "titre": "40 essais de monogramme et de signature de Bologne de Pri[maticcio]",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005760",
+   "titre": "La Témperance",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350112151",
+   "titre": "Sainte Madeleine",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005820",
+   "titre": "Femme vêtue d'une peau de bête, tournée vers la droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005838",
+   "titre": "Un enfant debout vu de face, un bras relevé sur la tête",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005763",
+   "titre": "Jupiter et Mercure",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005641",
+   "titre": "Déesse guerrière, couronnée d'un diadème",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005834",
+   "titre": "Enfant nu, paraissant tenir un objet sur l'épaule",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005652",
+   "titre": "Un homme assis, drapé, regardant à gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005638",
+   "titre": "Femme drapée, debout, la main droite derrière le dos, dans un cadre échancré",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350200580",
+   "titre": "Trois hommes tirant une barque où se trouve un autre homme",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "PRIMATICCIO Francesco (école)"
+  },
+  {
+   "reference": "50350001674",
+   "titre": "Minerve debout, de dos, tournée vers la droite, prête à jeter sa lance",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005661",
+   "titre": "Deux figures drapées, debout, se faisant face",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005659",
+   "titre": "Homme barbu, drapé, debout de profil vers la droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005632",
+   "titre": "Femme assise, filant, et une autre figure: deux des trois Parques (?)",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350001675",
+   "titre": "Amazone désarmée, tenant un flambeau et un bouclier",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005684",
+   "titre": "Figure drapée, de trois quarts vers la droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005772",
+   "titre": "La Toilette de Psyché",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005691",
+   "titre": "Une femme à demi nue, debout, paraissant passer un drapé sur sa tête",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005819",
+   "titre": "Vieille femme debout, drapée, la tête de profil, regardant vers le bas",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005651",
+   "titre": "Figure d'homme debout, drapé, vu de trois quarts",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350501597",
+   "titre": "Figure drapée, debout, écartant ses voiles",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005676",
+   "titre": "Etudes d'après l'antique dont deux statues ailées portant des flambeaux",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005630",
+   "titre": "La Sainte Famille avec sainte Elisabeth et le petit saint Jean (?)",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005832",
+   "titre": "Philosophe assis devant un pupitre, lisant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005679",
+   "titre": "Figure drapée debout, de trois quarts vers la droite, regardant à gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005833",
+   "titre": "Guerrier casqué",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005667",
+   "titre": "Deux figures drapées, debout de face, regardant dans des directions opposées",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005759",
+   "titre": "La Force",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005818",
+   "titre": "Etudes d'arabesques avec des canards et un faune",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005752",
+   "titre": "Les soldats gardant le tombeau du Christ, assistant à la Résurrection",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005790",
+   "titre": "Les quatre Eléments",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005664",
+   "titre": "Homme barbu, drapé, debout, de profil vers la gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005639",
+   "titre": "Femme vêtue à l'antique, tenant une mêche de cheveux de la main gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005830",
+   "titre": "Mithridate substitue son fils mort à Cyrus",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005631",
+   "titre": "Mercure construisant un vaisseau",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005824",
+   "titre": "La sac de Troie",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005629",
+   "titre": "Adoration de l'Enfant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005822",
+   "titre": "Homme nu, assis sur des feuillages, tourné vers la gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005783",
+   "titre": "Frise de chevaux marins, de satyres, de tritons, avec Neptune",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005842",
+   "titre": "Etude de main",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005650",
+   "titre": "Un homme drapé, debout, les bras ouverts, regardant au ciel: un apôtre ?",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005688",
+   "titre": "Femme drapée, debout, les bras ouverts",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005800",
+   "titre": "Femme nue, casquée",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005692",
+   "titre": "Une figure drapée, de trois quarts à gauche, la main gauche sur la hanche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005671",
+   "titre": "Figure de femme, drapée d'un grand manteau, la tête baissée",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005670",
+   "titre": "Figure de femme, la tête penchée, soutenant ses vêtements des mains",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005662",
+   "titre": "Figure drapée, debout, de face, et reprise de la main gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005657",
+   "titre": "Figure drapée, debout, regardant vers la droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005697",
+   "titre": "Figure drapée, debout, la main gauche posée sur l'épaule, regardant à droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005755",
+   "titre": "Saint Jérôme nu, assis, la main droite sur un livre ouvert",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005694",
+   "titre": "Une demi-figure de femme, soutenant son voile",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005663",
+   "titre": "Figures drapées debout : le vieillard Temps (?) et un personnage affligé",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005839",
+   "titre": "Un enfant debout, nu, deux bras relevés",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005817",
+   "titre": "Homme barbu, drapé, tourné vers la gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005686",
+   "titre": "Une femme à demi nue, debout, regardant à gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005785",
+   "titre": "Un triton conduisant des chevaux marins",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005814",
+   "titre": "Femme assise, tournée vers la gauche, avec trois enfants",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005786",
+   "titre": "Tritons et néréides",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350003642",
+   "titre": "Cheval richement harnaché, attaché à un arbre, de profil vers la gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005782",
+   "titre": "Deux femmes conversant devant une ferme, avec des bergers au loin",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005809",
+   "titre": "Sibylle assise sur un mur, dominant un paysage",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005696",
+   "titre": "Figure drapée, vue de dos, et une autre de face, les bras croisés",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005653",
+   "titre": "Une femme debout, les jambes croisées, les mains jointes sous le menton",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350500989",
+   "titre": "Figure drapée, debout, écartant ses voiles",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005780",
+   "titre": "Un satyre coupant des joncs, près d'un homme endormi",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005754",
+   "titre": "Saint Paul debout, dans une niche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005749",
+   "titre": "La Piscine probatique",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350001677",
+   "titre": "Cheval harnaché d'étoffes et de rubans, attaché à un pilastre",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005635",
+   "titre": "Un dieu-fleuve assis dans des rochers",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005829",
+   "titre": "Un chasseur remet à Cyrus un message d'Harpage",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005685",
+   "titre": "Une figure drapée, debout, appuyée sur un bâton",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005753",
+   "titre": "Saint Jean l'Evangéliste, accroupi",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005784",
+   "titre": "Jeux de tritons et de néréides",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005655",
+   "titre": "Une figure drapée, debout, tournée vers la gauche, vue de dos",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005627",
+   "titre": "Ulysse salué par le vieux Dolios",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005758",
+   "titre": "La Justice et la Prudence dans deux cartouches circulaires",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350002243",
+   "titre": "Diane assise sur un char",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005648",
+   "titre": "Étude de cariatide ou de canéphore, drapée",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005807",
+   "titre": "Femme nue, debout, entourée de feuillages",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005698",
+   "titre": "Figure debout, drapée, vue de dos, soutenant la draperie avec sa main droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005683",
+   "titre": "Une femme debout, vue de dos, soutenant sa robe avec la main droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005788",
+   "titre": "La Justice penchant vers la Fraude, le Meurtre et la Mort",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005764",
+   "titre": "Mercure appuyé sur un tronc d'arbre",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005742",
+   "titre": "David coupant la tête de Goliath",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005687",
+   "titre": "Figure drapée, debout, tournée vers la gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350004777",
+   "titre": "Trois putti avec un bouc devant un fût buvant le jus d'une grappe de raisin",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005654",
+   "titre": "Femme debout, vue de profil, la tête à gauche, soutenant ses vêtements",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005837",
+   "titre": "Trois figures en buste, tournées vers la gauche, et un enfant assis",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005761",
+   "titre": "Projet de plafond orné des Vertus chétiennes et putti",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005693",
+   "titre": "Une figure drapée regardant vers la gauche, les bras croisés sur la poitrine",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350001680",
+   "titre": "Cheval richement harnaché, attaché à un arbre, de profil vers la gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350001679",
+   "titre": "Cheval harnaché de peaux de bêtes, de profil, vers la droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005798",
+   "titre": "La Renommée jouant de la trompette sur un char",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005773",
+   "titre": "Femmes au bain",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005669",
+   "titre": "Femme debout, drapée, la tête levée au ciel, et esquisse d'une autre figure",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005823",
+   "titre": "Composition plafonnante",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005793",
+   "titre": "Une Renommée assise, écrivant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005656",
+   "titre": "Femme debout, vue de face, la tête tounée à gauche, soutenant ses vêtements",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005811",
+   "titre": "Figure assise sur un nuage, entourée de trois enfants",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005816",
+   "titre": "Junon, Minerve et Vénus",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005677",
+   "titre": "Une figure drapée, la main droite sur l'épaule et une autre vue de dos",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué à)"
+  },
+  {
+   "reference": "50350503330",
+   "titre": "Croquis de figure drapée",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005746",
+   "titre": "Adoration des bergers",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005771",
+   "titre": "Fable de Diane et Orion : Diane montre le corps d'Orion à Jupiter",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005779",
+   "titre": "Des satyres poursuivant des nymphes se changeant en arbre",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005770",
+   "titre": "Fable de Diane et Orion : Diane désespérée prie Jupiter",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005769",
+   "titre": "Fable de Diane et d'Orion",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005762",
+   "titre": "Etude pour un plafond de chapelle",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350005804",
+   "titre": "Etude pour un bas-relief",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350500978",
+   "titre": "Etudes de bouches, d'une oreille, d'un nez",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350504909",
+   "titre": "Bacchus antique",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "50350513723",
+   "titre": "Visage d'enfant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ECOLE DE PRIMATICCIO"
+  },
+  {
+   "reference": "M0289002511",
+   "titre": "Religieux en adoration aux pieds d'une Vierge dans les nuages (titre factice)",
+   "musee": "musée municipal",
+   "ville": "Pithiviers",
+   "code": "attribue",
+   "extrait": "PRIMATICCIO Francesco (attribué)"
+  },
+  {
+   "reference": "02110002508",
+   "titre": "Homme assis et drapé",
+   "musee": "musée des beaux-arts",
+   "ville": "Rennes",
+   "code": "ecole_de",
+   "extrait": "PRIMATICE (dit, école)"
+  },
+  {
+   "reference": "02110002401",
+   "titre": "Ulysse recevant les outres des vents",
+   "musee": "musée des beaux-arts",
+   "ville": "Rennes",
+   "code": "entourage_de",
+   "extrait": "PRIMATICCIO Francesco (entourage)"
+  },
+  {
+   "reference": "06190001401",
+   "titre": "La Belle Paule",
+   "musee": "musée de la Chartreuse",
+   "ville": "Douai",
+   "code": "ecole_de",
+   "extrait": "PRIMATICCIO Francesco (école)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-07-28T14:49:21+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

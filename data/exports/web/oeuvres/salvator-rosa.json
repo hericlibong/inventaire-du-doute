@@ -1,0 +1,481 @@
+{
+ "slug": "salvator-rosa",
+ "nom": "Salvator Rosa",
+ "doute": 50,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 15
+  },
+  {
+   "code": "ecole_de",
+   "notices": 24
+  },
+  {
+   "code": "entourage_de",
+   "notices": 1
+  },
+  {
+   "code": "suiveur_de",
+   "notices": 5
+  },
+  {
+   "code": "maniere_de",
+   "notices": 3
+  },
+  {
+   "code": "genre_de",
+   "notices": 2
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "000PE014505",
+   "titre": "ERMITE EN MEDITATION",
+   "musee": "musée des beaux-arts",
+   "ville": "Marseille",
+   "code": "ecole_de",
+   "extrait": "ROSA Salvatore (école)"
+  },
+  {
+   "reference": "000PE014504",
+   "titre": "PAYSAGE ET GUERRIERS",
+   "musee": "musée des beaux-arts",
+   "ville": "Marseille",
+   "code": "ecole_de",
+   "extrait": "ROSA Salvatore (école)"
+  },
+  {
+   "reference": "000PE014503",
+   "titre": "PAYSAGE",
+   "musee": "musée des beaux-arts",
+   "ville": "Marseille",
+   "code": "attribue",
+   "extrait": "ROSA Salvatore (attribué à)"
+  },
+  {
+   "reference": "000PE016950",
+   "titre": "SCENE DE BATAILLE",
+   "musee": "musée Cantini",
+   "ville": "Marseille",
+   "code": "attribue",
+   "extrait": "ROSA Salvatore (attribué à)"
+  },
+  {
+   "reference": "000PE019554",
+   "titre": "PAYSAGE",
+   "musee": "musée des Beaux-Arts",
+   "ville": "Lille",
+   "code": "attribue",
+   "extrait": "ROSA Salvatore (attribué)"
+  },
+  {
+   "reference": "000PE022211",
+   "titre": "Paysage avec baigneurs ; Les peupliers (ancien titre)",
+   "musee": "musée des beaux-arts",
+   "ville": "Bordeaux",
+   "code": "attribue",
+   "extrait": "ROSA Salvator (attribué)"
+  },
+  {
+   "reference": "00000069088",
+   "titre": "Paysage avec soldats au bord d'un lac dans un site montagneux",
+   "musee": "musée national Magnin",
+   "ville": "Dijon",
+   "code": "ecole_de",
+   "extrait": "ROSA Salvatore (école)"
+  },
+  {
+   "reference": "06070000244",
+   "titre": "Glaucus et Scylla",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "ROSA Salvator (attribué)"
+  },
+  {
+   "reference": "07430004698",
+   "titre": "Les arbres abattus ; Paysage (Ancien titre)",
+   "musee": "musée des Beaux-Arts",
+   "ville": "Nantes",
+   "code": "attribue",
+   "extrait": "ROSA Salvatore (attribué à)"
+  },
+  {
+   "reference": "07430007265",
+   "titre": "Le repos des soldats",
+   "musee": "musée des Beaux-Arts",
+   "ville": "Nantes",
+   "code": "suiveur_de",
+   "extrait": "ROSA Salvatore (suiveur)"
+  },
+  {
+   "reference": "07430005048",
+   "titre": "Paysage animé",
+   "musee": "musée des Beaux-Arts",
+   "ville": "Nantes",
+   "code": "genre_de",
+   "extrait": "ROSA Salvatore (genre de)"
+  },
+  {
+   "reference": "07430005144",
+   "titre": "Paysage. Soldats dans un ravin",
+   "musee": "musée des Beaux-Arts",
+   "ville": "Nantes",
+   "code": "suiveur_de",
+   "extrait": "ROSA Salvatore (suiveur)"
+  },
+  {
+   "reference": "07430005474",
+   "titre": "Vue du port",
+   "musee": "musée des Beaux-Arts",
+   "ville": "Nantes",
+   "code": "genre_de",
+   "extrait": "ROSA Salvatore (genre de)"
+  },
+  {
+   "reference": "50350102565",
+   "titre": "Six enfants nus jouant à la guerre",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ROSA Salvator (école)"
+  },
+  {
+   "reference": "50350102553",
+   "titre": "Mise au Tombeau",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ROSA Salvator (école)"
+  },
+  {
+   "reference": "50350102555",
+   "titre": "Trois apôtres soutenant le Christ mort",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ROSA Salvator (école)"
+  },
+  {
+   "reference": "50350102556",
+   "titre": "Scène de bataille",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ROSA Salvator (école)"
+  },
+  {
+   "reference": "50350102554",
+   "titre": "Trois apôtres autour du corps du Christ",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ROSA Salvator (école)"
+  },
+  {
+   "reference": "50350102558",
+   "titre": "Adoration des Rois",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ROSA Salvator (école)"
+  },
+  {
+   "reference": "50350102559",
+   "titre": "Mort de saint Jérôme",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ROSA Salvator (école)"
+  },
+  {
+   "reference": "50350102560",
+   "titre": "La Force, la Justice, la Tempérance et la Prudence",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ROSA Salvator (école)"
+  },
+  {
+   "reference": "50350102557",
+   "titre": "Couronnement d'épines",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ROSA Salvator (école)"
+  },
+  {
+   "reference": "50350102564",
+   "titre": "Sept enfants nus jouant à la guerre",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ROSA Salvator (école)"
+  },
+  {
+   "reference": "50350104268",
+   "titre": "Soldats vaincus, s'agenouillant devant le vainqueur",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ROSA Salvator (école)"
+  },
+  {
+   "reference": "50350107920",
+   "titre": "Foule devant une ville, à l'ombre d'un haut bâtiment",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ROSA Salvator (école)"
+  },
+  {
+   "reference": "50350104132",
+   "titre": "Neuf figures attroupées autour d'un corps",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ROSA Salvator (école)"
+  },
+  {
+   "reference": "50350102561",
+   "titre": "Concert de satyres",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ROSA Salvator (école)"
+  },
+  {
+   "reference": "50350104267",
+   "titre": "Soumission d'un vaincu",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ROSA Salvator (école)"
+  },
+  {
+   "reference": "06070000245",
+   "titre": "Intérieur d'un corps de garde romain",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "maniere_de",
+   "extrait": "ROSA Salvator (manière de)"
+  },
+  {
+   "reference": "50350006887",
+   "titre": "Tête d'homme, inclinée vers la droite, vue de face",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ROSA Salvator (école)"
+  },
+  {
+   "reference": "50350006885",
+   "titre": "Homme nu assis, de dos, penché légèrement en avant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ROSA Salvator (école)"
+  },
+  {
+   "reference": "50350006882",
+   "titre": "Homme nu, assis, de dos, la main gauche derrière lui",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "ROSA Salvator (école)"
+  },
+  {
+   "reference": "50350031884",
+   "titre": "Jeune femme pendue à un arbre, devant une toile vierge, et une palette",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "ROSA Salvator (attribué à)"
+  },
+  {
+   "reference": "01500000132",
+   "titre": "Paysage : rochers et torrent",
+   "musee": "musée d'Art et d'Histoire Romain Rolland",
+   "ville": "Clamecy",
+   "code": "ecole_de",
+   "extrait": "ROSA Salvator (école)"
+  },
+  {
+   "reference": "00980001731",
+   "titre": "Un abordage",
+   "musee": "musée des Beaux-Arts",
+   "ville": "Pau",
+   "code": "attribue",
+   "extrait": "ROSA Salvatore (attribué à)"
+  },
+  {
+   "reference": "06190001372",
+   "titre": "Le Christ à la colonne",
+   "musee": "musée de la Chartreuse",
+   "ville": "Douai",
+   "code": "ecole_de",
+   "extrait": "ROSA Salvator (école)"
+  },
+  {
+   "reference": "06190001371",
+   "titre": "Le Martyre de saint Sébastien",
+   "musee": "musée de la Chartreuse",
+   "ville": "Douai",
+   "code": "ecole_de",
+   "extrait": "ROSA Salvator (école)"
+  },
+  {
+   "reference": "M0332012963",
+   "titre": "Un arbre (recto) ; Deux visages (verso)",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "ROSA Salvator (attribué à)"
+  },
+  {
+   "reference": "M0332003871",
+   "titre": "Etude d'arbres",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "ROSA Salvator (attribué à)"
+  },
+  {
+   "reference": "M0332003875",
+   "titre": "Etude d'arbres",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "ROSA Salvator (attribué à)"
+  },
+  {
+   "reference": "M0332003877",
+   "titre": "Etude d'un tronc d'arbre",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "ROSA Salvator (attribué à)"
+  },
+  {
+   "reference": "M0332003869",
+   "titre": "Paysage",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "ROSA Salvator (attribué à)"
+  },
+  {
+   "reference": "03290005065",
+   "titre": "Paysage",
+   "musee": "musée d’ethnographie corse",
+   "ville": "Bastia",
+   "code": "suiveur_de",
+   "extrait": "ROSA Salvator (suiveur)"
+  },
+  {
+   "reference": "03290006927",
+   "titre": "Choc de cavalerie ; Bataille ; Scène représentant des cavaliers (ancien titre)",
+   "musee": "musée d’ethnographie corse",
+   "ville": "Bastia",
+   "code": "suiveur_de",
+   "extrait": "ROSA Salvator (suiveur)"
+  },
+  {
+   "reference": "M0332003873",
+   "titre": "Etude d'un tronc d'arbre creux",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "ROSA Salvator (attribué à)"
+  },
+  {
+   "reference": "08940004449",
+   "titre": "Minerve conseille à Cadmus d'arracher les dents du dragon (titre d'usage)",
+   "musee": "musée Granet",
+   "ville": "Aix-en-Provence",
+   "code": "entourage_de",
+   "extrait": "Rosa Salvator (1615-1673) (entourage)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/08940004449.jpg",
+    "credit": "Own work , Tylwyth Eldar , 2024-03-09 14:23:59",
+    "creator": "Circle of Salvator Rosa",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_Granet_-_Minerve_conseille_%C3%A0_Cadmus_d%27arracher_les_dents_du_dragon_02.jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "08940004368",
+   "titre": "Paysage d'Italie au soleil couchant avec des pêcheurs ; Paysage d'Italie au soleil couchant : pêcheurs dans un ruisseau sous de grands arbres (titre factice)",
+   "musee": "musée Granet",
+   "ville": "Aix-en-Provence",
+   "code": "suiveur_de",
+   "extrait": "Rosa Salvator (1615-1673) (suiveur)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/08940004368.jpg",
+    "credit": "Own work , Tylwyth Eldar , 2024-03-09 14:23:19",
+    "creator": "Follower of Salvator Rosa",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_Granet_-_Paysage_d%27Italie_au_soleil_couchant_avec_des_p%C3%AAcheurs_02.jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "08940004668",
+   "titre": "Paysage montagneux (esquisse)",
+   "musee": "musée Granet",
+   "ville": "Aix-en-Provence",
+   "code": "maniere_de",
+   "extrait": "Rosa Salvator (1615-1673) (manière de)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/08940004668.jpg",
+    "credit": "Own work , Tylwyth Eldar , 2024-03-09 14:33:20",
+    "creator": "Manner of Salvator Rosa",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_Granet_-_Paysage_montagneux.jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "08940005214",
+   "titre": "Allégorie du rire ; Homme tenant une tête tranchée",
+   "musee": "musée Granet",
+   "ville": "Aix-en-Provence",
+   "code": "attribue",
+   "extrait": "Rosa Salvator (1615-1673) (attribué à, attribué)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/08940005214.jpg",
+    "credit": "Own work , Tylwyth Eldar , 2024-03-09 14:23:37",
+    "creator": "Attributed to Salvator Rosa",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_Granet_-_All%C3%A9gorie_du_rire_02.jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "M0536000553",
+   "titre": "Paysage",
+   "musee": "musée départemental d'art ancien et contemporain",
+   "ville": "Epinal",
+   "code": "maniere_de",
+   "extrait": "Rosa Salvator (1615-1673) (manière de)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-07-28T14:49:21+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

@@ -1,0 +1,447 @@
+{
+ "slug": "leonard-de-vinci",
+ "nom": "Léonard de Vinci",
+ "doute": 50,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 3
+  },
+  {
+   "code": "ecole_de",
+   "notices": 46
+  },
+  {
+   "code": "atelier_de",
+   "notices": 1
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "000PE025605",
+   "titre": "PORTRAIT DE FEMME ; DIT LA BELLE FERRONNIERE",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LEONARDO DI SER PIERO DA VINCI (école)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE025605.jpg",
+    "credit": "crop from file:Scuola_di_leonardo_da_vinci,_la_belle_ferronière,_XVI_sec.jpg",
+    "creator": "Sailko",
+    "licence": "CC BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Scuola_di_leonardo_da_vinci,_la_belle_ferroni%C3%A8re,_XVI_sec_(2).jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "000PE025603",
+   "titre": "BACCHUS",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "VINCI Léonard de (dit, atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE025603.jpg",
+    "credit": "Wilfredor",
+    "creator": "Workshop of Leonardo da Vinci / Attributed to Francesco Melzi",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Bacchus_-_Leonardo_da_Vinci_workshop_-_Louvre_INV_780.jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "000PE025607",
+   "titre": "LA VIERGE, L'ENFANT JESUS ET SAINT JEAN",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "LEONARDO DI SER PIERO DA VINCI (école)"
+  },
+  {
+   "reference": "00000060673",
+   "titre": "L'ENFANT JESUS ET LE BAPTISTE",
+   "musee": "musée de la Chartreuse",
+   "ville": "Douai",
+   "code": "ecole_de",
+   "extrait": "Léonard DE VINCI (école)"
+  },
+  {
+   "reference": "50350215673",
+   "titre": "Corps acéphale d'un enfant se détournant vers la gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VINCI Leonardo da (école)"
+  },
+  {
+   "reference": "50350112022",
+   "titre": "Etude pour une statue féminine, debout, drapée, sans la tête et les bras",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VINCI Leonardo da (école)"
+  },
+  {
+   "reference": "50350200953",
+   "titre": "Etude d'un groupe de trois guerriers debout",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VINCI Leonardo da (école)"
+  },
+  {
+   "reference": "50350200829",
+   "titre": "Etude d'un groupe d'hommes nus combattant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VINCI Leonardo da (école)"
+  },
+  {
+   "reference": "50350200468",
+   "titre": "Enée descendant aux enfers",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VINCI Leonardo da (école)"
+  },
+  {
+   "reference": "50350200954",
+   "titre": "Scène avec trois personnages, et une tête de chien",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VINCI Leonardo da (école)"
+  },
+  {
+   "reference": "50350200830",
+   "titre": "Deux hommes nus combattant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VINCI Leonardo da (école)"
+  },
+  {
+   "reference": "50350200467",
+   "titre": "Deux hommes combattant un dragon ailé",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VINCI Leonardo da (école)"
+  },
+  {
+   "reference": "50350200969",
+   "titre": "Etude d'une tête de Bacchus",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VINCI Leonardo da (école)"
+  },
+  {
+   "reference": "50350205958",
+   "titre": "Sainte Madeleine à genoux",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VINCI Leonardo da (école)"
+  },
+  {
+   "reference": "50350201872",
+   "titre": "Homme nu conduisant trois hommes nus, les mains liées derrière le dos",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VINCI Leonardo da (école)"
+  },
+  {
+   "reference": "50350228280",
+   "titre": "Homme nu, s'accrochant à une poutre",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "VINCI Leonardo da (attribué à)"
+  },
+  {
+   "reference": "50350500115",
+   "titre": "Etude d'oreille",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VINCI Leonardo da (école)"
+  },
+  {
+   "reference": "50350500117",
+   "titre": "Partie supérieure d'une tête",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VINCI Leonardo da (école)"
+  },
+  {
+   "reference": "50350500116",
+   "titre": "Figure géométrique",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VINCI Leonardo da (école)"
+  },
+  {
+   "reference": "50350003025",
+   "titre": "Pied droit, de face, vu en raccourci",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VINCI Leonardo da (école)"
+  },
+  {
+   "reference": "50350003214",
+   "titre": "Tête de femme vue de face, les yeux levés",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VINCI Leonardo da (école)"
+  },
+  {
+   "reference": "50350003490",
+   "titre": "Etude de tête de mendiant coiffé d'un chapeau informe",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VINCI Leonardo da (école)"
+  },
+  {
+   "reference": "50350003367",
+   "titre": "Etude d'un homme nu, le bras levé",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "VINCI Leonardo da (attribué à)"
+  },
+  {
+   "reference": "50350003080",
+   "titre": "Tête d'homme, de trois quarts",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VINCI Leonardo da (école)"
+  },
+  {
+   "reference": "50350003403",
+   "titre": "Tête de femme, de profil, les cheveux nattés",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VINCI Leonardo da (école)"
+  },
+  {
+   "reference": "50350003396",
+   "titre": "Buste de femme",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VINCI Leonardo da (école)"
+  },
+  {
+   "reference": "50350003133",
+   "titre": "Etude de main",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VINCI Leonardo da (école)"
+  },
+  {
+   "reference": "50350003484",
+   "titre": "Profil de femme grotesque à gauche, la bouche ouverte",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VINCI Leonardo da (école)"
+  },
+  {
+   "reference": "50350003500",
+   "titre": "Etude de deux têtes d'hommes, et d'une petite figure",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VINCI Leonardo da (école)"
+  },
+  {
+   "reference": "50350003487",
+   "titre": "Etude de chèvre",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "VINCI Leonardo da (attribué à)"
+  },
+  {
+   "reference": "50350003468",
+   "titre": "Tête de vieillard",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VINCI Leonardo da (école)"
+  },
+  {
+   "reference": "50350003391",
+   "titre": "Deux profils caricaturaux",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VINCI Leonardo da (école)"
+  },
+  {
+   "reference": "50350003073",
+   "titre": "Tête de femme, penchée en avant, les yeux baissés",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VINCI Leonardo da (école)"
+  },
+  {
+   "reference": "50350003123",
+   "titre": "Tête de jeune fille, de trois quarts, de dos, cheveux retenus par un bandeau",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VINCI Leonardo da (école)"
+  },
+  {
+   "reference": "50350003132",
+   "titre": "La Vierge et l'Enfant Jésus sur les genoux de sainte Anne",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VINCI Leonardo da (école)"
+  },
+  {
+   "reference": "50350003504",
+   "titre": "Tête de personnage",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VINCI Leonardo da (école)"
+  },
+  {
+   "reference": "50350003486",
+   "titre": "Buste d'homme de profil à droite, coiffé d'un turban et au menton proéminent",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VINCI Leonardo da (école)"
+  },
+  {
+   "reference": "50350003387",
+   "titre": "Femme âgée, en buste, portant un chapeau, de face",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VINCI Leonardo da (école)"
+  },
+  {
+   "reference": "50350003380",
+   "titre": "Tête de vieillard, de profil, tournée vers la gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VINCI Leonardo da (école)"
+  },
+  {
+   "reference": "50350003334",
+   "titre": "Tête de profil, aux cheveux abondants, et profil caricatural",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VINCI Leonardo da (école)"
+  },
+  {
+   "reference": "50350003488",
+   "titre": "Buste d'homme de profil à droite, les cheveux ébouriffés",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VINCI Leonardo da (école)"
+  },
+  {
+   "reference": "50350003485",
+   "titre": "Vieillard grotesque de profil à gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VINCI Leonardo da (école)"
+  },
+  {
+   "reference": "50350003023",
+   "titre": "Portrait dit de Franceco Melzi (?) , en buste, de profil vers la droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VINCI Leonardo da (école)"
+  },
+  {
+   "reference": "50350003392",
+   "titre": "Quatre profils caricaturaux",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VINCI Leonardo da (école)"
+  },
+  {
+   "reference": "50350003503",
+   "titre": "Buste d'une femme, et d'un homme, et étude de chien couché",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VINCI Leonardo da (école)"
+  },
+  {
+   "reference": "50350003467",
+   "titre": "Etude d'un buste de vieillard, de face",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VINCI Leonardo da (école)"
+  },
+  {
+   "reference": "50350003401",
+   "titre": "Tête de jeune femme, de face, deux mèches de cheveux nouées en collier",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VINCI Leonardo da (école)"
+  },
+  {
+   "reference": "50350003505",
+   "titre": "Etude d'une tête d'homme faisant la grimace",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VINCI Leonardo da (école)"
+  },
+  {
+   "reference": "50350003362",
+   "titre": "Etude d'un instrument de musique à cordes",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VINCI Leonardo da (école)"
+  },
+  {
+   "reference": "50350003074",
+   "titre": "Etude de visage",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "VINCI Leonardo da (école)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-07-28T14:49:21+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

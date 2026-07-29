@@ -1,0 +1,198 @@
+{
+ "slug": "botticelli",
+ "nom": "Botticelli",
+ "doute": 17,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 1
+  },
+  {
+   "code": "point_interrogation",
+   "notices": 1
+  },
+  {
+   "code": "ecole_de",
+   "notices": 12
+  },
+  {
+   "code": "atelier_de",
+   "notices": 3
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "000PE012507",
+   "titre": "LA VIERGE ET L'ENFANT AVEC UN ANGE",
+   "musee": "musée du Petit Palais",
+   "ville": "Avignon",
+   "code": "ecole_de",
+   "extrait": "BOTTICELLI Sandro (dit, école)"
+  },
+  {
+   "reference": "000PE012506",
+   "titre": "LA VIERGE ET L'ENFANT AVEC UN ANGE",
+   "musee": "musée du Petit Palais",
+   "ville": "Avignon",
+   "code": "ecole_de",
+   "extrait": "BOTTICELLI Sandro (dit, école)"
+  },
+  {
+   "reference": "000PE012743",
+   "titre": "LA VIERGE ET L'ENFANT",
+   "musee": "musée du Petit Palais",
+   "ville": "Avignon",
+   "code": "ecole_de",
+   "extrait": "BOTTICELLI Sandro (dit, école)"
+  },
+  {
+   "reference": "000PE016579",
+   "titre": "LA VIERGE AVEC L'ENFANT ET LE PETIT SAINT JEAN",
+   "musee": "musée du Petit Palais",
+   "ville": "Avignon",
+   "code": "ecole_de",
+   "extrait": "BOTTICELLI Sandro (dit, école)"
+  },
+  {
+   "reference": "000PE019574",
+   "titre": "La Vierge et l'Enfant",
+   "musee": "musée des Beaux-Arts",
+   "ville": "Lille",
+   "code": "atelier_de",
+   "extrait": "BOTTICELLI Sandro (dit, atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE019574.jpg",
+    "credit": "Own work",
+    "creator": "Workshop of Sandro Botticelli",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_botticelli_ecole_vierge_enfant.jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "000PE024717",
+   "titre": "LA VIERGE ET L'ENFANT ; DITE LA VIERGE A LA GRENADE",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BOTTICELLI Sandro (dit, école)"
+  },
+  {
+   "reference": "000PE024762",
+   "titre": "Vénus et trois putti",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "BOTTICELLI Sandro (dit, atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE024762.jpg",
+    "credit": "Own work",
+    "creator": "Workshop of Sandro Botticelli",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Botticelli-V%C3%A9nus_et_trois_putti.jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "000PE024763",
+   "titre": "LA VIERGE ET L'ENFANT",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BOTTICELLI Sandro (dit, école)"
+  },
+  {
+   "reference": "00000077305",
+   "titre": "L'AUTOMNE OU ALLEGORIE CONTRE L'ABUS DU VIN",
+   "musee": "musée Condé",
+   "ville": "Chantilly",
+   "code": "atelier_de",
+   "extrait": "BOTTICELLI Sandro (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/00000077305.jpg",
+    "credit": "Château de Chantilly (Oise) - Musée Condé - La Tribune , Patrick from Compiègne, France, 2012-10-28 13:33",
+    "creator": "Workshop of Sandro Botticelli",
+    "licence": "CC BY-SA 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:L%27Automne_-_Ch%C3%A2teau_de_Chantilly_(Oise)_-_Mus%C3%A9e_Cond%C3%A9_-_La_Tribune.jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "50350001834",
+   "titre": "Martyre de Sainte Lucie",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BOTTICELLI Sandro (dit, école)"
+  },
+  {
+   "reference": "50350003539",
+   "titre": "Un miracle de saint Jean l'Evangéliste",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BOTTICELLI Sandro (dit, école)"
+  },
+  {
+   "reference": "50350001185",
+   "titre": "Deux hommes debout drapés",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BOTTICELLI Sandro (dit, école)"
+  },
+  {
+   "reference": "50350001184",
+   "titre": "Tête d'homme coiffé d'un bonnet ; homme drapé, s'inclinant vers la droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BOTTICELLI Sandro (dit, école)"
+  },
+  {
+   "reference": "50350001186",
+   "titre": "Saint Jean l'Evangeliste baisant les pieds de Christ mort et un ange",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BOTTICELLI Sandro (dit, école)"
+  },
+  {
+   "reference": "06190001319",
+   "titre": "La Sainte Famille",
+   "musee": "musée de la Chartreuse",
+   "ville": "Douai",
+   "code": "ecole_de",
+   "extrait": "FILIPEPI Alessandro Mariano (école)"
+  },
+  {
+   "reference": "06190001320",
+   "titre": "Deux Anges",
+   "musee": "musée de la Chartreuse",
+   "ville": "Douai",
+   "code": "point_interrogation",
+   "extrait": "FILIPEPI Alessandro Mariano (?)"
+  },
+  {
+   "reference": "M0332002781",
+   "titre": "Étude pour Pétrarque",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Botticelli Sandro (1444-1510) (attribué à)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-07-28T14:49:21+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

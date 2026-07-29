@@ -1,0 +1,261 @@
+{
+ "slug": "pier-francesco-mola",
+ "nom": "Pier Francesco Mola",
+ "doute": 24,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 20
+  },
+  {
+   "code": "point_interrogation",
+   "notices": 2
+  },
+  {
+   "code": "genre_de",
+   "notices": 2
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "000PE026887",
+   "titre": "SAINT PIERRE EN PRIERE",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "point_interrogation",
+   "extrait": "MOLA Pier Francesco (?)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE026887.jpg",
+    "credit": "photo Shonagon 2024-03-21",
+    "creator": "Pier Francesco Mola",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Saint_Pierre_en_pri%C3%A8re_-_Pier_Francesco_Mola_-_Mus%C3%A9e_du_Louvre_Peintures_INV_330_;_MR_309.jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "06070000172",
+   "titre": "Paysage avec chartreux",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "genre_de",
+   "extrait": "MOLA Pier Francesco (genre de)"
+  },
+  {
+   "reference": "50350005433",
+   "titre": "Paysage montueux et rocheux encerclant des étendues d'eau animées de barques",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MOLA Pier Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005417",
+   "titre": "Un ange apparaît à Agar et Ismaël",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MOLA Pier Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005405",
+   "titre": "Le Christ mis au tombeau",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MOLA Pier Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005415",
+   "titre": "Mort de saint François d'Assise soutenu par un ange",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MOLA Pier Francesco (attribué à)"
+  },
+  {
+   "reference": "50350101062",
+   "titre": "L'Amour et Pan",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MOLA Pier Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005411",
+   "titre": "Des archers tirent des flèches sur saint Sébastien attaché à un poteau",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MOLA Pier Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005395",
+   "titre": "Repos de la Sainte Famille pendant la fuite en Egypte",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MOLA Pier Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005396",
+   "titre": "Repos de la Sainte Famille pendant la fuite en Egypte",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MOLA Pier Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005434",
+   "titre": "Paysage montueux dans lequel avancent trois figures",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MOLA Pier Francesco (attribué à)"
+  },
+  {
+   "reference": "50350005410",
+   "titre": "Projet de décoration : apparition de la Vierge à l'Enfant à deux saints",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MOLA Pier Francesco (attribué à)"
+  },
+  {
+   "reference": "50350104352",
+   "titre": "Martyre d'une sainte placée sur un bûcher",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "MOLA Pier Francesco (attribué à)"
+  },
+  {
+   "reference": "07430007264",
+   "titre": "Paysage avec deux moines",
+   "musee": "musée des Beaux-Arts",
+   "ville": "Nantes",
+   "code": "genre_de",
+   "extrait": "MOLA Pier Francesco (genre de)"
+  },
+  {
+   "reference": "01370013320",
+   "titre": "Paysage au pêcheur à la ligne",
+   "musee": "musée des beaux-arts",
+   "ville": "Dijon",
+   "code": "attribue",
+   "extrait": "MOLA Pier Francesco (attribué à)"
+  },
+  {
+   "reference": "01550000959",
+   "titre": "Le repos de la Sainte Famille",
+   "musee": "musée de la faïence Frédéric Blandin",
+   "ville": "Nevers",
+   "code": "attribue",
+   "extrait": "MOLA Pier Francesco (attribué à)"
+  },
+  {
+   "reference": "07480012416",
+   "titre": "Combat de cavalerie",
+   "musee": "musée des beaux-arts et galerie David-d'Angers",
+   "ville": "Angers",
+   "code": "point_interrogation",
+   "extrait": "MOLA Pier Francesco (?)"
+  },
+  {
+   "reference": "02110002278",
+   "titre": "La mort de Saphira",
+   "musee": "musée des beaux-arts",
+   "ville": "Rennes",
+   "code": "attribue",
+   "extrait": "MOLA Pier Francesco (attribué à)"
+  },
+  {
+   "reference": "01370014020",
+   "titre": "Agar et Ismaël",
+   "musee": "musée des beaux-arts",
+   "ville": "Dijon",
+   "code": "attribue",
+   "extrait": "MOLA Pier Francesco (attribué, ?, suite de)"
+  },
+  {
+   "reference": "01370014942",
+   "titre": "Tobie et l'Ange",
+   "musee": "musée des beaux-arts",
+   "ville": "Dijon",
+   "code": "attribue",
+   "extrait": "MOLA Pier Francesco (attribué, suite de)"
+  },
+  {
+   "reference": "03110041486",
+   "titre": "Tête d'homme",
+   "musee": "musée des Beaux-Arts de Saint-Denis",
+   "ville": "Reims",
+   "code": "attribue",
+   "extrait": "MOLA Pier Francesco (attribué à, peintre)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/03110041486.jpg",
+    "credit": "Musée des Beaux-Arts, Reims",
+    "creator": "Pier Francesco Mola",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:MOLA_Pier_Francesco_(Attribu%C3%A9_%C3%A0)_T%C3%AAte_d%27homme_Huile_sur_toile.2.jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "03110032162",
+   "titre": "Tête d'homme",
+   "musee": "musée des Beaux-Arts de Saint-Denis",
+   "ville": "Reims",
+   "code": "attribue",
+   "extrait": "MOLA Pier Francesco (attribué à, peintre)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/03110032162.jpg",
+    "credit": "Musée des Beaux-Arts, Reims",
+    "creator": "Pier Francesco Mola",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:MOLA_Pier_Francesco_(Attribu%C3%A9_%C3%A0)_T%C3%AAte_d%27homme_Huile_sur_toile.jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "M0457000323",
+   "titre": "Abel mort ; La mort d'Abel",
+   "musee": "musée des beaux-arts",
+   "ville": "Nîmes",
+   "code": "attribue",
+   "extrait": "MOLA Pier  Francesco (attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/M0457000323.jpg",
+    "credit": "Own work , Finoskov , 2017-01-14 16:25:03",
+    "creator": "Pier Francesco Mola",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:N%C3%AEmes,Beaux_Arts169,Mort_d%27Abel.jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "09940008544",
+   "titre": "Baptême du Christ",
+   "musee": "musée de Grenoble",
+   "ville": "Grenoble",
+   "code": "attribue",
+   "extrait": "Mola Pier Francesco (attribué à)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-07-28T14:49:21+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

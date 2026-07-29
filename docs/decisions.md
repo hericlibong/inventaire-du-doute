@@ -2,6 +2,3372 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-29 — Onglet « Œuvres » : les reproductions d'abord
+
+Dans l'onglet « Œuvres », les œuvres **avec reproduction** sont désormais affichées **en
+premier** (donc en page 1), avant celles au placeholder. Critère de tri : présence d'image
+d'abord, puis l'ordre public des mentions (`ORDRE_FAMILLES`), puis l'ordre de rencontre (tri
+stable). Vaut aussi quand un filtre par mention est actif.
+
+But : que le visiteur voie tout de suite des images plutôt qu'une suite de cadres vides.
+Compromis assumé : l'ordre reflète maintenant, en tête, la **disponibilité d'une reproduction
+ouverte** — une propriété extérieure à l'œuvre (elle dépend de Wikimedia Commons), pas une
+hiérarchie de doute. Le groupement par mention reste lisible au second rang, et les comptages,
+filtres, pagination et données sont inchangés (seul l'ordre d'affichage change).
+
+## 2026-07-29 — Intégration des 184 reproductions ouvertes dans l'onglet « Œuvres »
+
+Suite du chantier images : les **184 correspondances exactes à image ouverte** (Wikimedia
+Commons) sont **affichées** dans l'onglet « Œuvres », à la place du placeholder.
+
+**Téléchargement local, jamais de hotlink.** `src/build_vignettes.py` récupère une miniature
+Commons (API `iiurlwidth`, avec backoff sur HTTP 429), la ré-encode en **JPEG optimisé**
+(largeur ≤ 900 px, ~110 Ko en moyenne, métadonnées retirées) via Pillow, une **seule copie par
+référence** dans `data/exports/web/oeuvres_img/<ref>.jpg`. `sync-data.js` les copie vers
+`web/static/oeuvres/` (servies en `/oeuvres/<ref>.jpg`, dossier gitignoré). Pillow ajouté aux
+dépendances.
+
+**Enrichissement des données.** Un index `data/exports/web/images_index.json` (référence →
+`{statut, url, credit, creator, licence, licence_url, source, verifie_le}`) est fusionné dans les
+fiches `oeuvres/<slug>.json` (champ `image`). `build_artistes.py` rattache aussi cet index à la
+régénération complète, pour que l'enrichissement survive.
+
+**Affichage (`OeuvresMaitre.svelte`).** L'image locale **occupe toute la vignette** (colonne
+média élargie à 11 rem, 7 rem en mobile), **même gabarit que le placeholder** (boîte 4/5), en
+`object-fit: contain` : proportions gardées, jamais rognée ni déformée, jamais d'upscale d'une
+miniature (les fichiers locaux font 900 px). `loading="lazy"`, `alt` neutre (« Reproduction :
+{titre} »), **cliquable vers la page source Wikimedia Commons**. Aucun texte par-dessus l'image :
+sous la vignette, **une seule ligne discrète** (petit corps, liens atténués — jamais le
+traitement cobalt du lien POP) :
+- domaine public : « Domaine public · source Wikimedia Commons » ;
+- Creative Commons : « [auteur] · [licence] · Wikimedia Commons » (licence et Commons liées).
+
+Wikimedia Commons est présenté comme la **source**, jamais comme le détenteur du copyright.
+L'auteur n'est affiché **que pour CC BY/BY-SA** (attribution requise) — pas pour le domaine
+public, afin de ne pas mettre en avant un auteur d'œuvre incertain (le projet n'attribue rien).
+Les œuvres sans reproduction ouverte gardent le **placeholder** (jamais d'image inventée).
+Déclaré aussi dans la page méthode (docs/methode-et-limites.md), comme l'exige la règle « image
+externe = source secondaire à déclarer ».
+
+## 2026-07-29 — Images des œuvres : audit POP, Levier A différé, cap Wikimedia Commons
+
+**Audit des droits photo sur POP (Palier 1 du chantier « vignettes »).** Pour les 3 668
+notices prudentes, on a lu le seul champ « Crédits photographiques » (clé `PHOT`) de chaque
+notice POP (jamais le reste de la page : son pied cite Etalab pour le site lui-même) et classé
+en cinq statuts (`src/images_classify.py`, testé). Résultat : **aucune image sous licence
+ouverte** dans tout le corpus — 0 `open`. La photographie des œuvres de nos maîtres est
+massivement de la RMN, mention **« utilisation soumise à autorisation »** (2 578 `restricted`,
+dont 2 342 pour le seul Louvre), le reste étant des crédits nominatifs sans licence (792
+`unknown`) ou l'absence d'image (298 `unavailable`). Livrables : `data/exports/images_oeuvres.csv`,
+`images_oeuvres.json`, `images_bilan.json`.
+
+**Levier A (autorisations individuelles) — DIFFÉRÉ.** Les 792 `unknown` sont surtout des
+musées municipaux (Ingres Bourdelle, beaux-arts divers) qui autorisent peut-être la
+réutilisation sans l'écrire dans POP. Les solliciter un par un (statut `authorized`) est un
+travail de contact hors code. **On le met de côté** ; il reste possible plus tard. Aucun
+statut `authorized` n'est déduit automatiquement.
+
+**Cap retenu : chercher les reproductions ouvertes ailleurs, sur Wikimedia Commons / Wikidata.**
+Le fait qu'aucun crédit POP ne soit ouvert ne dit pas que l'œuvre n'a aucune reproduction
+réutilisable. On recherche donc, pour chaque notice, une reproduction Commons réutilisable et
+**rattachée avec certitude** à la notice Joconde. Règles de ce chantier (détail dans donnees.md) :
+identification de l'œuvre et droits de l'image **strictement séparés** (`match_status` vs
+`rights_status`) ; une correspondance n'est **exacte** que par identifiant Joconde (Wikidata
+P347) explicite, ou par numéro d'inventaire + institution concordants après contrôle ; une
+ressemblance de titre / auteur / musée **ne suffit jamais** ; on n'intègre une image que si
+`match_status = exact` ET `rights_status ∈ {open, authorized}`. Correction d'un constat
+antérieur : POP présente bien un crédit par notice (champ `PHOT`) — l'ancienne note « POP ne
+présente aucun crédit par notice » est dépassée (voir donnees.md).
+
+**Règle affinée après exécution (Palier 1).** Un même numéro d'inventaire dans une AUTRE
+institution est **rejeté** comme faux rapprochement (les numéros « 516 », « SN » = sans numéro,
+« INV 1 » se répètent d'un musée à l'autre) : sans institution concordante, c'est un autre objet.
+`authorized` n'est jamais déduit automatiquement. **Résultat : 329 correspondances exactes
+(P347), dont 184 images ouvertes réutilisables** (contre 0 sur POP) ; candidats par inventaire ;
+faux rapprochements écartés. Les crédits Commons viennent des contributeurs (pas des musées) :
+conservés tels quels, à revérifier avant tout affichage.
+
+**Vérification des candidats par les métadonnées (2026-07-29, suite).** On récupère les
+dimensions Wikidata (P2048/P2049) des candidats inventaire pour les recouper avec la notice.
+**Deux règles :** dimensions **incompatibles → rejet** (empreinte discriminante, 262 collisions
+écartées, dont 162 imagées) ; dimensions **concordantes → PAS de confirmation automatique**. Ce
+dernier point est tranché après avoir constaté des faux positifs : « L'Ange gardien » (102×81)
+apparié par coïncidence de taille à « Nu féminin » (102×82), titres sans rapport. Deux objets d'un
+même numéro d'inventaire peuvent coïncider en dimensions ; **seul l'identifiant Joconde (P347)
+promeut en « exact » automatiquement**, l'inventaire reste `a_verifier` (contrôle humain, comme
+l'exige le cahier des charges « après contrôle »). Bilan : **47 candidats sur 25 références, aucun
+à forte présomption** (dimensions ET titre) → l'appariement par inventaire n'apporte aucune
+reproduction fiable de plus pour ce corpus ; le total réutilisable reste **184**.
+
+## 2026-07-28 — Onglet « Œuvres » : toutes les œuvres concernées, chargées à la demande
+
+L'onglet « Œuvres » ne montrait que quelques exemples (au plus neuf, une notice par mention
+et deux pour la dominante). Il montre désormais la **totalité des œuvres concernées** par le
+maître, filtrables par mention et paginées.
+
+**Un fichier par maître, à part.** Mettre toutes les références dans `artistes.json` l'aurait
+alourdi bien au-delà de son rôle (répertoire + profils, chargé d'emblée). Chaque maître reçoit
+donc `data/exports/web/oeuvres/<slug>.json`, écrit par `src/build_artistes.py` dans la même
+passe que l'export léger (aucune seconde lecture du CSV, aucun risque de divergence). Un champ
+`slug` stable est ajouté à chaque artiste de `artistes.json` : c'est tout ce que le front a
+besoin de connaître pour charger le bon fichier. Les anciens `exemples` (et leur machinerie
+`MAX_EXEMPLES` / `EXEMPLES_PAR_FAMILLE`) sont retirés — devenus sans emploi.
+
+**Source de vérité inchangée.** Les entrées viennent de `resout_reference()` et de la famille
+unique déjà retenue : une référence par maître, une famille par référence, homonymes et copies
+« d'après » déjà écartés (chantier de fiabilisation, 2026-07-21). Aucune nouvelle détection.
+
+**Invariants vérifiés à l'écriture de chaque fichier** (assertions, sinon l'export échoue) :
+nombre d'entrées = `maitre.doute` ; somme par famille = `maitre.familles` ; aucune référence
+en double ; chaque entrée a une référence Joconde ; aucune copie dans la liste. Les totaux de
+l'onglet égalent donc exactement le graphique et les jauges (même source, même comptage).
+
+**Ordre.** Le fichier garde l'ordre de rencontre dans le CSV (non choisi à la main, comme les
+anciens exemples). Le front regroupe les œuvres par mention selon l'ordre public de l'axe
+(`ORDRE_FAMILLES`), tri stable : l'ordre de rencontre est conservé au sein d'une même mention.
+
+**Chargement différé.** L'onglet ne charge que le fichier de l'artiste affiché, et seulement
+quand on l'ouvre — jamais celui des autres. Un jeton anti-course écarte la réponse d'un
+artiste qu'on aurait quitté avant la fin du chargement. États prévus : chargement, erreur
+(avec « Réessayer »), vide.
+
+**Filtres + pagination.** Puces « Toutes » + une par mention présente (effectif affiché,
+familles absentes masquées), huit œuvres par page, pagination compacte (première, dernière,
+active ± voisines, « … » ailleurs — logique isolée dans `pagination.js`, testée). Un filtre
+remet la page à 1 ; changer de page recentre la lecture au début de la liste sans à-coup.
+Mention active et page active repérables **sans la seule couleur** (`aria-pressed`,
+`aria-current="page"`, gras/bordure), boutons de bord désactivés aux extrémités.
+
+**Wording.** L'onglet passe à « Œuvres concernées » (vocabulaire public « œuvres »). Le bloc
+« À part » des copies « d'après » est conservé tel quel (il dit encore « N notices ») : son
+unification reste en réserve, hors périmètre de ce chantier.
+
+## 2026-07-28 — Refonte de la disposition de « Explorer les artistes »
+
+Chantier de disposition (textes, données, graphique et interactions inchangés), mené sur une
+branche dédiée `refacto/les-presque-disposition` puis mergé dans `feat/les-presque-barres`
+(merge `f8f0d5c`).
+
+**Une seule grille continue à deux colonnes**, mêmes limites sur toute la page. Le bandeau
+introductif horizontal pleine largeur et la séparation entre entrée et exploration sont
+supprimés. L'introduction (titre + texte + lien Méthode + note de prudence) rejoint la
+**colonne gauche**, au-dessus de « Choisir un artiste » + recherche/tri/liste (Repertoire).
+La **colonne droite** porte le profil (portrait/identité + chiffres, onglets, contenu actif).
+Le haut du titre s'aligne sur le haut du portrait ; le début du graphique apparaît dès le
+premier écran d'un desktop courant.
+
+**Colonne gauche sticky** sur desktop (hauteur bornée à l'écran, défilement interne), sans
+bloquer le défilement de la colonne droite. **Mobile (≤ 720 px, seuil du Repertoire)** : une
+colonne — titre + intro, **sélecteur replié** (la liste ne s'affiche pas avant le profil),
+profil, onglets, contenu.
+
+**Page centrée** (2e temps du chantier) : la route est en pleine largeur (`main.pleine`), elle
+gère donc sa gouttière. La grille était collée au bord gauche → conteneur centré
+(`max-width: 92rem`, `width: 100%`, `margin-inline: auto`, `padding-inline: clamp(1.25rem, 3vw,
+3rem)`, `box-sizing: border-box`), marges gauche/droite équilibrées, le graphe gardant sa
+largeur (≈ 60 rem). Espace masthead → grille augmenté : `padding-top: clamp(1.5rem, 3.5vw,
+3.5rem)`. Composition centrée, textes/répertoire/profil/graphe restant alignés à gauche.
+
+Point resté approximatif (à résoudre à la passe éditoriale) : la recherche démarre un peu plus
+bas que les onglets — le texte introductif complet remplit la colonne étroite ; l'alignement
+se resserrera quand l'intro sera raccourcie.
+
+## 2026-07-27 (quinquies) — Le graphe nomme son axe et précaution de lecture
+
+Deux petits ajouts au graphique du Profil, pour lever toute ambiguïté sur ce que mesure la
+hauteur.
+
+**Titre de l'axe Y** : « **Part parmi les œuvres concernées** » — horizontal, au-dessus des
+graduations, aligné à gauche, dans le registre visuel des titres de territoire (petites
+capitales espacées, encre atténuée, un cran plus léger pour ne pas les concurrencer). La
+formulation nomme le **dénominateur** sans évoquer un degré de certitude ; préférée à
+« pourcentage des mentions », plus ambigu. L'horizontal évite un texte tourné de plus à côté
+des libellés déjà inclinés.
+
+**Note de lecture** sous le graphe : « **La hauteur montre la fréquence des formulations, non
+le degré de certitude des attributions.** » — petit corps, italique, atténué, dans le style
+d'« En contexte » et des crédits d'image. Une précaution de lecture, pas un avertissement qui
+domine. Elle dit ce que la hauteur mesure **et** ce qu'elle ne mesure pas — cohérent avec la
+règle du projet (on lit ce que les musées écrivent, on n'évalue aucune certitude).
+
+Rien d'autre ne bouge : données, points, couleurs, interactivité inchangés.
+
+**Réglage du 2026-07-28** : ces deux éléments flottaient au bord de la colonne, comme s'ils
+entouraient le graphe au niveau de la page. Ils sont désormais **alignés sur la zone de
+tracé** (bord gauche du plot, `margin-left: calc(100% * 30 / 380)`) et **serrés** contre le
+graphe — le titre juste au-dessus, la note juste en dessous, mise en exergue par un **filet
+vertical** à gauche. Ils appartiennent visuellement au graphique. La note gagne « des
+points » : « La hauteur **des points** montre la fréquence des formulations… ».
+
+## 2026-07-27 (quater) — Taille des points : un aller-retour, décision finale = constante
+
+Même journée, la préférence d'affichage a oscillé puis s'est fixée. L'utilisateur a d'abord
+demandé de revenir à la taille **variable** (`6 + part × 10`) ; la formule a été rétablie
+(commit `2f4a7f1`). Il est ensuite revenu sur ce choix (mea culpa explicite) : la **taille
+constante** est rétablie et **c'est la décision qui vaut** — `R = 6`, point actif à `R_ACTIF
+= 8`. La hauteur (le pourcentage) porte seule la mesure ; la taille ne code rien. Aucune de
+ces bascules n'a été publiée en dehors du serveur de développement. L'interactivité
+(agrandissement du point actif, atténuation des autres) est conservée dans tous les cas.
+
+## 2026-07-27 (ter) — Interaction graphique ↔ légende, bidirectionnelle
+
+Le survol d'un point éclairait déjà sa mention dans la légende. On ajoute le sens inverse —
+survoler ou sélectionner une mention active le point et ouvre son infobulle — via **un seul
+état partagé**, sans deux systèmes séparés.
+
+### Un état unique
+
+`interaction = { code, mode, source, ancre, … }` pilote à la fois le point actif, l'entrée
+de légende active et l'infobulle. Deux modes dans le même objet :
+
+- **temporaire** — survol (`pointerenter`) ou focus ; refermé au départ (`pointerleave`) ou
+  au blur ;
+- **selectionne** — clic, Entrée, Espace ou toucher ; persistant jusqu'à un second appui sur
+  la même mention, la sélection d'une autre, Échap, ou un appui extérieur.
+
+Règles clés : un **survol n'écrase jamais une sélection** (garde dans `ouvrir`), un
+`pointerleave`/blur ne ferme **que** le temporaire, `stopPropagation` sur les clics empêche
+le gestionnaire fenêtre de refermer aussitôt (pas d'ouverture-fermeture immédiate dans la
+succession focus → pointer → clic). **Tout changement d'artiste remet l'état à zéro** (un
+`$effect` sur `maitre.nom`).
+
+### Position de l'infobulle
+
+Toujours ancrée aux **coordonnées réelles du point** (`svgEl.querySelector('circle[data-code]')`),
+même quand l'activation vient de la légende. Repli mobile : si le point est **hors de la
+fenêtre** et que l'activation vient de la légende, l'infobulle s'affiche **en flux, sous la
+mention active** de la légende (les deux étant alors visibles ensemble, le graphe étant
+défilé plus haut). Pas de défilement automatique brutal.
+
+### Légende accessible
+
+- Mention **présente** : vrai `<button type="button">`, symétrique du point — survol/focus →
+  temporaire, clic/Entrée/Espace → sélection. `aria-pressed` signale la sélection
+  persistante ; nom accessible = libellé + nombre + pourcentage. État actif visible **hors
+  couleur** : fond léger + graisse + libellé souligné (temporaire), filet encadrant en plus
+  (sélection).
+- Mention **absente** (valeur zéro ou inexistante) : simple `<span>` atténué, **non
+  focusable, sans rôle ni gestionnaire, curseur normal**, avec une indication accessible
+  « — aucune œuvre concernée ». Aucune infobulle, aucune animation.
+
+Les trois **titres de territoire** restent non interactifs.
+
+### Composant partagé : évolution additive
+
+`Infobulle.svelte` reçoit une prop **`enFlux`** (défaut `false`) : rendu en position statique,
+pleine largeur, pour le repli mobile. Rétrocompatible — carte, jauges et graphe inchangés
+quand la prop est absente.
+
+### Vérifié
+
+Mention à valeur forte (Michel-Ange, « de son école » 110), mention à une œuvre (Ingres,
+« ? » 1/203 — « 1 œuvre »), mention absente (Adolph Menzel, sept mentions atténuées et
+inertes), activation depuis la légende (point agrandi + autres atténués + infobulle au
+point), repli en flux sous la légende (mobile). Build et 8 tests JS au vert ; 184 pytest
+inchangés. Données, textes et structure du graphique non modifiés.
+
+## 2026-07-26 — Onglet « Profil » : bandeau et graphique se partagent le travail
+
+Palier de stabilisation de l'onglet Profil, cadré par l'utilisateur. Principe directeur :
+**deux zones, deux questions, jamais la même information deux fois.**
+
+- Le **bandeau** répond à *« quelle est l'ampleur du phénomène pour cet artiste ? »* ;
+- le **graphique** répond à *« comment se répartissent les mentions ? »*.
+
+Livré en deux étapes : prototype sur quatre artistes témoins (Zuccaro, Lorrain, Bril, Titien),
+validé visuellement, puis généralisation aux 63.
+
+### Le bandeau ne raconte plus la répartition
+
+Il gardait la mention la plus fréquente, son effectif et sa part — exactement ce que le
+graphique détaille ensuite. Retirés. Le bandeau porte désormais : le nom (+ pont vers le nom
+Joconde), la bio, le **volume d'œuvres concernées**, le **nombre de musées**, et le repère de
+contexte. Le nombre de musées ne compte que ceux ayant publié **au moins une notice
+prudente** (`nb_musees_doute`), jamais l'ensemble des musées où l'artiste apparaît — la
+distinction relevée le 2026-07-22 (Téniers apparaît dans 57 musées, le doute n'est écrit que
+dans 24).
+
+### Le graphique : titre stable, phrase déterministe
+
+- **Titre unique** pour tous : « Répartition des mentions ». Les titres littéraires écrits
+  par artiste (« son école efface sa main »…) sont **archivés** dans `editorial-maitres.js`
+  mais ne commandent plus l'interface. Le nom de l'artiste vit dans le bandeau, on ne le
+  répète pas.
+- **Une seule phrase factuelle**, générée par une **règle déterministe** identique pour tous
+  (`web/src/lib/phrase-repartition.js`, fonction pure, testée hors bundler) :
+  1. égalité d'effectif en tête → citer les mentions à égalité, au pluriel ;
+  2. 1re mention ≥ 60 % → la citer seule ;
+  3. sinon 1re + 2e ≥ 70 % **et** 2e ≥ 20 % → citer les deux ;
+  4. sinon → « se répartissent entre plusieurs mentions, sans qu'une seule ne s'impose ».
+  La phrase **cite la mention exacte** et ne transforme jamais une formulation prudente en
+  attribution certaine (« portent la mention "attribué à" », jamais « lui sont attribuées »).
+  Vocabulaire écarté : corpus, profil d'attribution, domine nettement, efface sa main.
+
+### Dot plot à points de taille constante
+
+Le nuage encodait le pourcentage par la **position** ET par la **surface** de la bulle —
+deux fois la même information (même dénominateur). Les points ont désormais un **rayon
+constant** ; seule la position verticale (le pourcentage) porte la mesure. Position, mentions
+sur l'axe, trois territoires, couleurs : inchangés. Le point actif est à peine renforcé au
+survol/focus, et **éclaire l'entrée correspondante dans la légende**.
+
+### Infobulles : définition factuelle depuis une source canonique
+
+La dernière ligne, interprétative, est remplacée par une **définition neutre et stable**,
+identique pour tous les artistes, tenue dans un champ unique `definition` de
+`familles-public.js` (« Œuvre rattachée à l'école de l'artiste. » plutôt que « Plutôt son
+école que sa main. »). Ce champ est **distinct de `corps`**, laissé au service de la page
+« Comprendre les mentions » (hors périmètre de ce palier). Chaque infobulle porte : la
+mention, « N œuvres sur T », le pourcentage, la définition.
+
+### Vocabulaire « œuvres concernées »
+
+Dans le périmètre de l'onglet Profil (bandeau, répertoire, graphique, infobulles), le
+comptage se dit en **œuvres concernées** : le bouton de tri « Notices » devient « Œuvres »,
+l'infobulle passe de « 30 notices » à « 30 œuvres sur 37 — 81 % ». La fonction `notices()`
+reste employée **hors périmètre**, dans les onglets Œuvres et Musées — voir le signalement
+ci-dessous.
+
+### Phrase de lecture de l'échelle supprimée
+
+« De gauche à droite, le lien à la main du maître se desserre. » est retirée sans
+remplacement : les trois intitulés de territoire et la légende suffisent.
+
+### Page Méthode
+
+Ajout de la précision d'unité : *l'unité technique est la notice Joconde ; dans les pages de
+lecture ces notices sont désignées « œuvres concernées » ; une notice peut exceptionnellement
+documenter plusieurs éléments.* Rappel du seuil (dix notices prudentes uniques après
+désambiguïsation) et du compte de musées (notices prudentes seulement).
+
+### Accessibilité
+
+Le point du graphique gagne un gestionnaire clavier (Entrée/Espace basculent l'infobulle, en
+parité avec le toucher) : le focus l'affichait déjà, l'ajout lève l'avertissement a11y du
+clic sans équivalent clavier.
+
+### Le cas Claude Lorrain — tranché : on garde la règle (option A, 2026-07-26)
+
+Claude Lorrain affiche « 17 des 20 œuvres concernées portent la mention "attribué à" ; les
+autres formulations restent minoritaires ». Le cahier des charges donnait, pour illustrer le
+format « deux mentions », un exemple qui reprenait **par coïncidence les chiffres exacts de
+Lorrain** (17 / 20 / 3) et nommait la 2ᵉ formule (« 3 portent la mention "de son école" »).
+La règle déterministe (≥ 60 % → citer seule) produit l'autre formulation. **Les deux sont
+exactes et se lisent bien** : ce n'était pas un défaut, seulement un choix rédactionnel sur
+un artiste très majoritaire (85 %, 2ᵉ formule = 3 œuvres). Décision : **on garde la règle**,
+Lorrain reste en « cite seule ».
+
+Correctif d'une note antérieure erronée : il avait été écrit qu'« abaisser le seuil seule »
+ferait citer les deux. C'est **faux dans les deux sens**. (a) Abaisser ce seuil rend « cite
+seule » *plus* fréquent, pas moins (mesuré sur les 63 : seuil 50 % → 47 « seule » ; 60 % →
+40 ; 70 % → 33). (b) De toute façon Lorrain ne pourrait pas atteindre « deux » : sa 2ᵉ
+formule pèse 15 %, sous le plancher de 20 % qui protège de citer une mention marginale. Le
+levier réel serait de *monter* le seuil « seule » — mais à 70 % il ferait basculer 7
+artistes, dont un à tort (Joseph Vernet, 69/10, tomberait en « dispersé » alors qu'une
+formule domine clairement). La règle 60 / 70 / 20 est donc **conservée telle quelle**.
+
+### Un point laissé ouvert, à trancher plus tard
+
+**Onglets Œuvres et Musées, hors périmètre** : « notices » y subsiste (`OeuvresMaitre` :
+   « À part : N notices » ; `CarteMaitre` : « D'où viennent ces notices », « N notices
+   concernées »). À unifier dans un chantier ultérieur. Le champ `corps` de
+   `familles-public.js` garde de même son ancienne formulation pour /echelle.
+
+Aucun artiste n'est exactement au seuil de dix (minimum réel : Titien, 11). Le cas d'égalité
+existe pour de vrai (Paul Bril, 7 = 7) et est couvert, plus un test synthétique à trois
+mentions.
+
+## 2026-07-22 (septies) — Les 36 angles écrits, et un pont entre deux noms
+
+### Le pont de nom, demandé pour Michel-Ange, appliqué à quatorze
+
+**Problème posé par l'utilisateur** : la fiche titre « Michel-Ange » quand ses œuvres, dans
+l'onglet voisin, portent « BUONARROTI Michelangelo (attribué à) ». Rien ne relie les deux, et
+le lecteur peut prendre le second pour un autre artiste — ou pour le titre d'une œuvre.
+
+**Solution** : l'en-tête affiche le nom courant suivi du nom d'état civil, en ordre naturel —
+**Michel-Ange (Michelangelo Buonarroti)** — dans un corps plus petit, sur la même ligne. Les
+notices, elles, gardent le **verbatim de Joconde**, jamais réécrit : c'est ce que le musée a
+écrit, et c'est ce que le lecteur retrouvera sur POP.
+
+La demande portait sur Michel-Ange ; le défaut est le même pour **quatorze** maîtres connus
+sous un surnom qui n'apparaît jamais tel quel dans la base : Le Primatice (Francesco
+Primaticcio), Le Tintoret (Jacopo Robusti), Le Corrège (Antonio Allegri), Véronèse (Paolo
+Caliari), Titien (Tiziano Vecellio), Raphaël (Raffaello Sanzio), Le Guerchin (Giovanni
+Francesco Barbieri), Jules Romain (Giulio Pippi), Le Parmesan (Francesco Mazzuola), Perino
+del Vaga (Piero Bonaccorsi), Le Pérugin (Pietro Vannucci), Claude Lorrain (Claude Gellée),
+Botticelli (Alessandro Filipepi). Traiter Michel-Ange seul aurait laissé le même piège
+treize fois. Les maîtres dont le titre est déjà le nom porté par les notices n'ont pas de
+pont : il n'apprendrait rien.
+
+Champ optionnel `nomCivil` dans la couche éditoriale — donc jamais une donnée Joconde.
+
+### Les 36 en-têtes de graphique
+
+Les 36 maîtres du lot gardaient l'en-tête généré : un titre passe-partout (« Comment les
+musées rattachent ces œuvres à X ») et une phrase de lecture. Ils ont maintenant leur angle
+propre, au même gabarit que les 27 — titre de 4 à 9 mots portant l'angle, sous-titre
+apportant la preuve chiffrée sans reprendre les mots du titre.
+
+**Règle du temps 7 appliquée d'emblée** : chaque mention nommée est cherchée **par son code**
+(`notices('ecole_de')`), jamais par son rang. Aucun de ces 36 sous-titres ne pourra mentir si
+le classement bascule au prochain lot.
+
+Ce que les angles racontent, et qui ne se voyait pas :
+
+- **Adolph Menzel** : ses 47 œuvres concernées sont *toutes* dites « de son école », dans un
+  seul musée. Une formule, un lieu.
+- **Le Parmesan** : 63 œuvres, un unique établissement.
+- **Carlo Maratti** : 37 des 45 sortent de son atelier, 7 seulement lui sont attribuées —
+  « son atelier signe pour lui ».
+- **Federico Zuccaro** : 30 sur 37 « de son école », 3 portent son nom sans détour.
+- **Nicolas de Largillière** : 23 œuvres dans 15 musées, aucun n'en réunissant plus de deux.
+- **Paul Bril** : autant d'œuvres attribuées que d'œuvres ne retenant que sa manière.
+
+Six formulations ont été resserrées à la relecture : deux ne se comprenaient qu'avec le titre
+(« en sortent » sans dire de quoi), une disait « seulement » d'un nombre plus grand que celui
+qui la précédait, une reprenait l'angle d'un autre maître (« deux lectures », déjà celui de
+Guido Reni).
+
+## 2026-07-22 (sexies) — Les portraits des 36 maîtres
+
+Plus de la moitié des fiches affichaient « Pas de portrait fiable disponible ». **33 des 36**
+maîtres du nouveau lot en ont un désormais ; le site en compte **60 sur 63**.
+
+### La route est inchangée, la vérification est nouvelle
+
+Même chemin que pour les 27 : Wikidata (propriété P18) → fichier Commons → licence et auteur
+par l'API → **téléchargement local**, jamais de hotlink. Ce qui change, c'est qu'un QID n'est
+plus choisi à la main : `web/scripts/verifie_qid.py` le cherche, puis contrôle le libellé, la
+description, la qualité d'être humain (P31 = Q5), la présence d'un portrait — et surtout les
+**dates**, qui doivent concorder avec la ligne de repérage déjà écrite.
+
+Ce contrôle croisé a payé : 29 concordances exactes, **7 désaccords** (voir donnees.md).
+Deux bios portaient une date ferme là où les sources divergent — Gaspard Dughet et Paul Bril
+passent à « vers ». La règle est celle du fichier éditorial : *la prudence sur les dates est
+du même ordre que celle des musées sur les attributions*.
+
+### Trois maîtres restent sans portrait, et c'est écrit
+
+Gaspard Dughet, Domenico Campagnola et Laurent de La Hyre n'ont aucun portrait sur Wikidata.
+Leur fiche continue d'afficher le repli. **On ne comble pas un manque par une image
+approximative** — c'est la même règle que pour les attributions.
+
+### Trois corrections trouvées en chemin
+
+1. **Le manifeste des crédits n'était pas versionné.** Les 27 images étaient dans git, mais
+   `portraits.json` vivait dans `web/static/data`, ignoré par git : une licence perdue au
+   premier clone. Le manifeste est désormais un export versionné
+   (`data/exports/web/portraits.json`), recopié par `npm run sync:data` comme les autres.
+2. **Les crédits parlaient anglais, et se répétaient.** Commons renvoie « Unknown
+   artistUnknown artist » (deux éléments concaténés), « Attributed to X », « After X ». Le
+   script dédoublonne et traduit ces **enrobages** — ce ne sont pas des noms, mais des
+   mentions de statut. Le nom exigé par la licence est conservé intact.
+3. **La légende écrivait « par attribué à Paul Bril ».** Elle distingue maintenant un nom
+   d'auteur (« par X ») d'une mention de statut (« attribué à X », « d'après X », « auteur
+   inconnu »), qui se suffit à elle-même. Et la détection d'autoportrait ignore accents et
+   traits d'union — « Louis-Léopold Boilly » au manifeste, « Louis Léopold Boilly » dans le
+   projet. Elle reste une **égalité stricte** : « d'après Philippe de Champaigne » contient
+   le nom du maître sans être un autoportrait.
+
+### Une licence affichée qui était devenue fausse
+
+La page Méthode annonçait que chaque portrait porte « son auteur et sa licence (domaine
+public) ». Sur les 60 images, **six n'y sont pas** : trois en CC0 et trois en **CC BY-SA
+3.0**, qui impose de citer l'auteur. La phrase dit maintenant « le plus souvent le domaine
+public, parfois une licence Creative Commons qui impose de citer l'auteur », et signale les
+trois artistes sans portrait.
+
+### Le regard
+
+Le manifeste porte pour chaque portrait un sens de regard : ceux qui regardent à droite sont
+retournés à l'affichage pour faire face au graphique, placé à leur gauche. Relecture du
+nouveau lot sur planche de contact : seuls **Adolph Menzel** et **Baccio Bandinelli** sont
+nettement tournés à droite. Les gravures portant une inscription (Tempesta, Zuccaro, Caldara,
+Le Pérugin, Claude Lorrain) ne sont **jamais** retournées — cela inverserait leur texte.
+
+## 2026-07-22 (quinquies) — Temps 8 : les textes publics, et l'engagement tenu
+
+Dernière étape du chantier. Deux natures de travail, à ne pas confondre.
+
+### Ce qu'on ne réécrit pas
+
+Les **journaux datés** — `donnees.md`, les entrées de `decisions.md`, les phases closes de
+`roadmap.md` — contiennent des phrases comme « Total des 27 : 2 341 segments → 2 225
+références ». Elles sont **exactes à leur date** et racontent comment le chiffre s'est
+fabriqué. Les corriger reviendrait à effacer l'erreur qu'on vient de documenter. Elles
+restent telles quelles.
+
+Seuls sont révisés les **documents vivants**, qui décrivent l'état courant.
+
+### Ce qui a été révisé
+
+- `charte-graphique.md` : le titre public n'est plus « Explorer les 27 maîtres » mais
+  « Explorer les N maîtres », **le nombre étant lu dans les données**. Un titre qui fige un
+  effectif devient faux au premier ajout — c'est déjà arrivé deux fois.
+- `dataviz-les-presque.md` : sélection (27 → 63, seuil 20 → 10, regroupement des graphies),
+  effectif, portée du filtre. Surtout, une **note en tête sur le changement d'axe** : la
+  spec décrivait un axe portant le nombre d'œuvres sur un plafond commun, ce qui n'est plus
+  vrai depuis le temps 7.
+- `architecture-editoriale.md`, `les-presque/+page.js`, et les tâches encore ouvertes de la
+  roadmap qui parlaient des « 27 vedettes ». La réserve « garder 27 ou réintégrer
+  Bruegel/Cranach » est **sans objet** : ils sont au registre, à l'état « à instruire ».
+
+### L'engagement de transparence, enfin tenu
+
+La décision 4 du 2026-07-21 promettait que « la liste des candidats examinés est publiée
+avec leur nombre de notices, y compris ceux écartés et le motif ». Le registre existait
+depuis le temps 5 (`candidats_maitres.csv`) mais **le site n'en disait rien**. La page
+Méthode porte maintenant un paragraphe qui l'énonce, avec des nombres lus dans un nouvel
+export `data/exports/web/registre.json` :
+
+> Tous les noms qui atteignent le seuil ont été relevés : ils sont **330**, et chacun porte
+> un état — retenu, écarté avec sa raison, ou encore à examiner. Un nom encore à examiner
+> **n'est pas un nom rejeté** : c'est un nom dont la vérification n'a pas été faite.
+> Aujourd'hui **74** formes d'écriture sont rattachées aux 63 artistes retenus, **22** sont
+> écartées parce qu'il ne s'agit pas d'une personne, **234** restent à examiner.
+
+Une première rédaction disait « puis examinés un par un » **et** « 234 restent à examiner » —
+deux phrases contradictoires dans le même paragraphe. Corrigé.
+
+Deux autres passages complétés dans la même page :
+
+- **les homonymes**, absents jusqu'ici alors qu'ils sont le piège le plus coûteux du projet :
+  « sous “Michel-Ange”, les musées ont aussi rangé Corneille Michel-Ange, peintre lyonnais du
+  XVII<sup>e</sup> siècle ; sous “Raphaël”, une cinquantaine de personnes qui le portent comme
+  prénom » ;
+- **une œuvre peut concerner deux artistes** : quand un musée hésite entre deux noms, la
+  notice apparaît sur les deux fiches mais ne compte qu'une œuvre — « c'est pourquoi le total
+  de la liste n'est pas la somme des fiches ». Six notices sont dans ce cas.
+
+Le vocabulaire interne (appartenances, notices, registre, instruction) **n'apparaît nulle
+part** dans ces textes : la page dit « formes d'écriture », « état », « encore à examiner ».
+
+## 2026-07-22 (quater) — Temps 7 : ce que 63 maîtres cassent dans le front
+
+Contrôle complet de la rubrique avec la liste élargie. Le front ne s'est pas *cassé* — il
+dégradait proprement — mais il disait des choses fausses et montrait des graphiques
+illisibles. Quatre corrections, dont une de fond.
+
+### 1. L'axe du graphique passe du nombre à la part (correction de fond)
+
+Le nuage des mentions portait le **nombre** d'œuvres sur un plafond commun à tous les
+maîtres — le maximum observé, 240. Avec 27 maîtres allant de 20 à 310 notices, c'était
+tenable. À 63 maîtres allant de **11 à 310**, la moitié des profils s'écrasent au sol :
+Botticelli (17 notices) affichait quatre points collés à la ligne de base, indistinguables.
+On ne pouvait plus « y lire une hiérarchie », donc **la forme était mauvaise** (CLAUDE.md).
+
+L'axe porte désormais la **part des œuvres concernées du maître, de 0 à 100 %**. La règle de
+la charte est respectée dans ses deux termes : l'échelle reste **commune et fixe** pour les
+63 fiches, et chaque profil redevient lisible. La comparaison porte sur la **forme** du
+profil plutôt que sur le volume — et le volume n'est pas perdu : il est écrit dans l'en-tête
+(« Parmi les 17 œuvres… »), il classe le répertoire, et chaque infobulle donne le nombre
+exact. Botticelli montre maintenant « de son école » à 71 %, son atelier à 18 %.
+
+C'est la seule décision de fond du temps 7 ; elle est réversible d'un commit.
+
+### 2. Trois en-têtes rédigés disaient l'inverse de leurs chiffres
+
+Le point que la roadmap annonçait — « les nombres suivent seuls, les angles non » — s'est
+vérifié, et pire que prévu : ce ne sont pas les angles qui ont dérivé, ce sont les **faits**.
+
+| Maître | Affiché | Données |
+|---|---|---|
+| Le Primatice | « 125 portent “attribué à”, 71 “de son école” » | l'inverse : école 125, attribué 71 |
+| Raphaël | « 12 lui sont attribuées, 8 renvoient à son école » | l'inverse : école 12, attribué 8 |
+| Michel-Ange | « Deux fois plus » | 110 contre 37, soit près de trois fois |
+
+**Cause commune** : `n` et `second` désignent des **rangs**, pas des mentions. Vingt et un
+sous-titres nommaient une mention en dur à côté d'une variable de rang. Tant que le
+classement ne bougeait pas, ils disaient vrai ; le jour où l'école est passée devant
+« attribué à » chez Le Primatice et Raphaël, ils se sont mis à mentir sans qu'aucun test
+n'existe pour le voir.
+
+**Les 21 sont convertis** : dès qu'une phrase nomme une mention, elle la cherche par son code
+(`notices('ecole_de')`), jamais par son rang. Vérification faite : les 24 sous-titres non
+fautifs rendent exactement le même texte qu'avant la conversion.
+
+### 3. Les 36 nouveaux maîtres n'avaient pas de ligne de repérage
+
+Un visiteur tombait sur « Perino del Vaga » sans une ligne pour le situer. Les 36 lignes sont
+écrites, au gabarit strict du fichier (« [Activité] [nationalité] du [siècle], [dates]. »),
+sans mouvement, sans école, sans fonction de cour.
+
+**Les dates viennent d'abord de la base elle-même** : le champ `Auteur` de Joconde porte
+souvent les années entre parenthèses, et l'on peut les compter — « Bouchardon Edme
+(1698-1762) » apparaît dans 1 128 notices concordantes, « Dürer Albrecht (1471-1528) » dans
+344. Elles sont ensuite croisées avec les notices d'autorité. Le « vers » est posé partout où
+la base se contredit (Barocci : 1535, 1540 et 1528 ; Campagnola : 1484 et 1500 à égalité) ou
+diverge des notices (Botticelli : 1444 dans la base, 1445 ailleurs). Adolph Menzel est le
+seul dont la base ne porte **aucune** date.
+
+Ces 36 gardent l'**en-tête de graphique généré** : écrire 36 angles à la main demande une
+passe rédactionnelle à part. Ils n'ont pas non plus de portrait — le repli « Pas de portrait
+fiable disponible » s'affiche, ce qui est correct mais visible sur plus de la moitié des
+fiches.
+
+### 4. Les textes et les nombres figés
+
+- Le nombre en toutes lettres venait d'une table allant de vingt-quatre à trente : elle a
+  rendu « 63 » en chiffres dans un corps de texte. Remplacée par `enLettres()` dans
+  `joconde.js`, qui couvre 0 à 99 — y compris les pièges du français (soixante et onze,
+  quatre-vingts, quatre-vingt-un).
+- « au moins **vingt** notices » → **dix**, dans la page Méthode (le seuil a changé au
+  temps 5). Ancre `#les-27` → `#les-maitres`.
+- « les **vingt-sept** noms de référence » et « Les **27** noms de référence » deviennent
+  l'effectif réel, lu dans les données. `vue_ensemble.json` publie `nb_maitres` pour que
+  « Comprendre les mentions » n'ait pas à charger 372 Ko pour connaître un nombre.
+- La phrase de « Ce que disent les chiffres » portait encore la conclusion inversée : elle
+  dit maintenant qu'« attribué à » **reste la plus fréquente** chez les maîtres retenus, et
+  que ce qui change est la place de « de son école ».
+- **Les deux panneaux comptent enfin la même chose** : le panneau de droite affichait
+  « 3 674 notices concernées » alors que 3 674 sont des *appartenances*. Il est passé aux
+  notices distinctes (**3 668**), comme le panneau national. L'avertissement « les parts ne
+  s'additionnent pas à 100 % » couvrait déjà ce cas.
+
+### Ce qui n'a pas été touché
+
+Le style (chantier distinct, en réserve), les portraits des 36, les angles écrits des 36, et
+la révision d'ensemble des textes publics — temps 8. La page Méthode ne mentionne pas encore
+le registre des candidats publié au temps 5 : elle le devra.
+
+## 2026-07-22 (ter) — Recouvrement entre profils : une somme n'est pas une union
+
+Vérification demandée avant d'ouvrir le temps 7, et elle était nécessaire : `doute_dans_liste`
+était calculé par **somme des profils**, ce qui compte deux fois toute notice nommant deux
+maîtres retenus. Mesure faite sur les 1 023 705 lignes du CSV.
+
+### Ce que vaut le recouvrement
+
+| | somme des appartenances | union des notices | écart |
+|---|---:|---:|---:|
+| notices prudentes | 3 674 | **3 668** | 6 |
+| attributions certaines | 34 898 | **34 598** | 300 |
+| copies « d'après » | 6 778 | **6 767** | 11 |
+
+**Six notices** portent deux maîtres retenus — les voici, publiées en clair dans
+`artistes.json` (`references_partagees`) :
+
+| Référence | Maîtres | Formule |
+|---|---|---|
+| `M0347001723` | Michel-Ange · Andrea del Sarto | « ? » pour les deux |
+| `02860008133` | Annibale Carracci · Ludovico Carracci | « ? » pour les deux |
+| `50520000014` | Francesco Vanni · Ludovico Carracci | « ? » pour les deux |
+| `07480012416` | Luca Giordano · Pier Francesco Mola | « ? » pour les deux |
+| `08030000599` | Simon Vouet · Sébastien Bourdon | « école de » pour les deux |
+| `000PE008806` | Rubens · Van Dyck | « atelier » / « ? » |
+
+Cinq sur six portent le point d'interrogation : ce sont des notices où le musée hésite
+**entre deux noms**, ce qui est le cas de doute le plus fort qui soit. Elles méritent d'être
+gardées visibles, pas gommées.
+
+### Deux mesures désormais distinguées dans l'export
+
+- **appartenances** : le lien maître-notice. C'est ce que totalisent les fiches, et c'est la
+  bonne base pour une répartition interne (les familles y somment exactement à 100 %).
+- **notices** : les références Joconde distinctes. **Seule mesure comparable au total
+  national**, et seule base admissible pour en déduire ce qui est hors liste.
+
+`doute_hors_liste` passe de 20 833 à **20 839** : il se calcule maintenant par
+`24 507 − 3 668`, jamais par soustraction d'une somme d'appartenances. La part nationale
+passe de 14,99 % à **14,97 %** — l'écart est minime, la règle ne l'est pas.
+
+**Les ventilations ne s'additionnent pas non plus.** La somme des familles en notices
+distinctes vaut 3 669, celle des niveaux aussi : `000PE008806` relève de « atelier » (niveau
+2) pour Rubens et de « ? » (niveau 1) pour Van Dyck, donc elle est comptée dans deux familles
+et deux niveaux. Interdiction confirmée d'additionner les familles — elle valait déjà pour le
+recouvrement des formules, elle vaut maintenant aussi pour le recouvrement des profils.
+
+### Invariants et tests ajoutés
+
+Dans `build_artistes.py` : union ≤ somme pour les trois catégories ; l'écart doit valoir
+**exactement** le nombre de liens en trop portés par les références partagées ; la somme des
+profils doit égaler les appartenances. Dans `build_vue_ensemble.py` : `hors_liste + union =
+total national`. Et cinq tests dans `tests/test_artistes.py` qui relisent l'export publié —
+dont un qui vérifie que l'écart est expliqué, pas approximé.
+
+### Correction d'une conclusion fautive
+
+La note du temps 6 affirmait qu'un musée doutant d'un grand nom « dit plus souvent “école
+de” que “attribué à” ». **Les chiffres disent l'inverse** : 43 % contre 35 %. Formulation
+exacte, désormais inscrite dans `message_central` :
+
+> « Attribué à » reste la formulation la plus fréquente parmi les maîtres retenus, mais
+> « école de » y occupe une place beaucoup plus importante que dans l'ensemble de
+> Joconde : 35 % contre 7,6 %.
+
+Ce n'est pas un renversement de hiérarchie, c'est un déplacement de proportion — et c'est
+déjà un constat fort. Une conclusion qui contredit ses propres chiffres est exactement ce
+que ce chantier existe pour éliminer.
+
+Côté front, deux branchements mécaniques : la page « échelle » lit les **appartenances**
+(sa répartition interne doit sommer à 100 %), la page « méthode » lit les **notices** (elle
+compare au total national). Aucune retouche éditoriale — temps 7 et 8.
+
+## 2026-07-22 (bis) — Temps 6 : régénération des exports
+
+Première fois depuis l'audit que les fichiers publiés bougent. `artistes.json` (63 maîtres)
+puis `vue_ensemble.json`, qui en dérive sans repasser sur le CSV.
+
+**Invariants revérifiés sur les 63** : familles = niveaux = somme des musées = doute ;
+et le seuil lui-même est désormais vérifié à la génération — aucun maître sous 10.
+
+### Ce que la liste élargie change dans la vue d'ensemble
+
+| | avant (27) | après (63) |
+|---|---:|---:|
+| notices prudentes de la liste | 2 341 | **3 674** |
+| part du doute national (24 507) | 9,6 % | **15,0 %** |
+
+**Le message central de la section tient, et c'est vérifié, pas supposé.** « Attribué à »
+domine le doute national (17 926 sur 24 507, soit 73 %) mais ne pèse que **43 %** dans la
+liste ; « école de » fait **35 %** de la liste contre 7,6 % au national. Le contraste qui
+justifie la section est même plus net qu'avec 27 noms. De même, le niveau 2 « Autour de
+lui » reste majoritaire dans la liste (48 %) alors qu'il est minoritaire partout ailleurs.
+
+### Deux corrections faites en régénérant
+
+**1. Les clés `dans_27` / `hors_27` sont renommées `dans_liste` / `hors_liste`**
+(et `critere_27` → `critere_liste`). Un nom de champ qui fige un effectif devient faux au
+premier ajout — et il aurait menti dès cette régénération. Les textes embarqués dans
+l'export qui disaient « les 27 noms retenus » et « hors des 27 noms » sont corrigés : le
+JSON généré ne contient plus une seule occurrence de « 27 ». Quatre références côté front
+ont suivi (`echelle`, `methode`) : **renommage mécanique uniquement**, aucune retouche
+éditoriale — c'est le temps 7 et le temps 8.
+
+**2. Une erreur de mesure dans la documentation du temps 5, corrigée.** J'avais écrit
+« David Téniers est prudemment attribué dans 57 musées ». Faux : 57 est le nombre de musées
+où il **apparaît**, toutes catégories confondues ; le doute n'est écrit que dans **24**.
+`registre_maitres.py` publie désormais les **deux** colonnes, `musees_presence` et
+`musees_doute`, et `docs/donnees.md` est corrigé. Confondre les deux ferait dire au chiffre
+bien plus qu'il ne dit — c'est exactement le genre de glissement que ce chantier corrige.
+
+Le doute est parfois très concentré : Le Parmesan (63 notices), Baccio Bandinelli (45) et
+Adolph Menzel (47) ne sont concernés que dans **un seul musée** chacun.
+
+### Un point à surveiller
+
+`artistes.json` passe de 189 Ko à **372 Ko** — il double, et il est chargé par le front. Le
+projet s'est fixé des exports légers. Ce n'est pas bloquant aujourd'hui, mais un lot
+supplémentaire de maîtres reposera la question : il faudra probablement séparer le détail
+par maître (musées, exemples) du répertoire d'entrée. À trancher au temps 7.
+
+Le front compile (`npm run build` ✓) après synchronisation des données. Son **contrôle
+visuel et éditorial n'est pas fait** : c'est le temps 7.
+
+## 2026-07-22 — Temps 5 : publication progressive sur registre exhaustif
+
+**Cadrage arbitré par l'utilisateur** (2026-07-22), après une proposition qui parlait de
+« publier le reste comme candidats écartés faute d'instruction ». Formulation refusée, et
+avec raison : ces candidats **ne sont pas écartés par les données, ils sont encore à
+instruire**. Les présenter comme écartés serait une sélection arbitraire, contraire au seuil
+de 10 qu'on vient d'adopter.
+
+**Règle retenue : publication progressive sur registre exhaustif.**
+
+1. Les 330 graphies restent dans un **registre complet et vérifiable**.
+2. Les graphies sont **regroupées par personne canonique** : le seuil s'applique à une
+   personne, jamais à une graphie.
+3. On instruit une **première trentaine**, en commençant par les identités les plus nettes
+   et les faux négatifs évidents.
+4. Chaque candidat porte un **statut** parmi quatre : vérifié et retenu ; vérifié mais
+   écarté, avec une raison précise ; ambigu ; encore à instruire.
+5. **Seules les personnes vérifiées entrent dans le front.**
+6. Les autres pourront être ajoutées **par lots ultérieurs**.
+
+**Critères annoncés de la première trentaine** — la notoriété seule ne suffit pas :
+identité suffisamment claire ; au moins 10 références uniques **après regroupement des
+alias** ; absence de confusion familiale ou homonymique non résolue ; matière suffisante
+pour une fiche ; diversité des situations, **sans exiger plusieurs musées**.
+
+### Ce que le regroupement change
+
+Le comptage par graphie sous-estime systématiquement. Une fois les alias réunis :
+Le Guerchin passe de 93 à **101** (Barbieri + Guercino + Guerchin), Salvator Rosa de 38 à
+**50** (Salvator + Salvatore), Carlo Maratti de 37 à **45** (Maratti + Maratta), Le Pérugin
+de 20 à **21** (Vannucci + Pérugin), Botticelli de 15 à **17** (Botticelli + Filipepi).
+C'est bien la personne, et non la graphie, qui franchit le seuil.
+
+### 36 candidats instruits, 63 maîtres retenus au total
+
+Tous dépassent 10 références prudentes uniques après regroupement — le plus bas est le
+Titien, à 11, déjà dans la liste. **Aucun n'a été retenu sur sa seule notoriété.**
+
+**Confusions familiales séparées nommément** : Taddeo Zuccaro (frère de Federico, 52
+mentions certaines), Jean-Baptiste de Champaigne (neveu de Philippe, 8 prudentes), Jules et
+Julien Boilly (fils de Louis Léopold), David Téniers le Vieux et Abraham Téniers, Giulio
+Campagnola, Orazio Cambiaso, Jacques-Philippe et Jean-Baptiste Bouchardon, Bartolommeo et
+Clemente Bandinelli, Ambrogio Barocci, Jacques Oudry, Philippe et Louis de La Hyre, Hans
+Dürer. **Toutes sont sous le seuil de leur côté** : les séparer ne fait perdre aucun
+candidat qualifiant.
+
+**Ambiguïté résiduelle assumée et documentée** : « TENIERS David » sans suffixe vaut David
+Téniers **le Jeune** par convention Joconde (peinture de genre). Les formes explicitement
+« Ier » ou « le Vieux » ne portent aucune mention prudente, ce qui rend la convention sans
+effet sur le chiffre publié.
+
+### Le registre exhaustif et ses quatre états
+
+`data/exports/candidats_maitres.csv` porte désormais une colonne **statut** sur ses
+330 formes : **74 retenues** (elles se rattachent aux 63 personnes), **22 écartées**,
+**234 à instruire**.
+
+Les 22 écarts sont **vérifiés, pas déduits** : manufactures (Creil, Sèvres, Montereau,
+Delft, Les Islettes, cristaux du Creusot, Pont-des-Vernes), imprimeries (Wissembourg,
+Baster & Vieillemard, Champenois), faïenceries (Sarreguemines, Creil & Montereau), raisons
+sociales (Pellerin & Cie, Burckardt Charles Successeurs, Tissage de Lyon), mentions
+collectives (« CARRACCI l'un des » 78, « COYPEL l'un des » 60), « anonyme » (152), et trois
+mentions **qui ne portent aucun nom d'auteur** : le champ contient seulement « Attribué à »
+(30 notices), « attribué à) » (15), « B (atelier) » (12).
+
+**On n'écarte pas sur un signe faible.** Les mots « fils », « père » et « frères » ont été
+retirés du détecteur : « MELLET Jules Fils », « LACOUR Pierre Fils », « NEYRET Frères »
+désignent souvent une personne d'une dynastie, pas un atelier. Ils repassent « à
+instruire ». Le nombre d'écarts descend de 24 à 22 — le sens du registre y gagne.
+
+### Deux découvertes
+
+- **« DAVID (1748-1825) »**, 26 notices prudentes dans 17 musées, est presque certainement
+  Jacques-Louis David. Il reste **« à instruire »** : le nom-pivot n'est qu'un patronyme, et
+  la vérification n'a pas été faite. C'est le candidat le plus évident du prochain lot.
+- **Deux références ont changé de verdict**, et ce sont les tests qui l'ont signalé :
+  `M0350002026` (« DUGHET Gaspard (dit) POUSSIN Gaspard (entourage de) ») et `50350011790`
+  (« Romain Jules ») étaient protégées comme *écartées de Nicolas Poussin et de
+  Michel-Ange* ; elles reviennent maintenant à **Gaspard Dughet** et à **Jules Romain**,
+  retenus à leur propre nom. Les témoins ont été mis à jour en conséquence.
+
+Le seuil inscrit dans `artistes.json` passe de 20 à 10. **Le front n'est pas régénéré** :
+point d'arrêt, la liste doit être validée avant le temps 6.
+
+## 2026-07-21 (octies) — Temps 4 : tous les candidats de la base, au seuil de 10
+
+`src/candidats_maitres.py` compte, pour **toute** forme d'auteur de la base, les références
+distinctes portant une formulation prudente (copies exclues), et publie celles qui
+atteignent 10 : `data/exports/candidats_maitres.csv`, versionné. C'est la pièce qui rend la
+sélection contrôlable — sans elle, la liste des maîtres reste un panthéon opaque.
+
+**4 834 formes** portent au moins une mention prudente. **330 atteignent le seuil de 10** :
+34 appartiennent aux 27 actuels, **296 sont hors liste**.
+
+### Le seuil s'applique au maître, jamais à la forme
+
+Le Titien totalise 11 références prudentes, mais aucune de ses deux graphies ne les porte
+seule : « LE TITIEN » en a 10, « VECELLIO Tiziano » 9. Le fichier des candidats compte **par
+forme**, avant fusion des graphies : il sert à **repérer** des pistes, pas à trancher. La
+sélection se fait sur le maître désambiguïsé, une fois ses graphies rapprochées.
+
+### La dispersion géographique trie l'instruction — elle ne sélectionne pas
+
+Sur les 296 candidats hors liste, **139 n'existent que dans un seul musée** (10 334 notices,
+dont les 5 791 de Barla à Nice), et **157 sont présents dans plusieurs** (3 474 notices).
+Le second groupe est presque entièrement fait de maîtres de référence : Le Guerchin (93,
+6 musées), Bouchardon (86, 4), Jules Romain (78, 4), Ludovico Carracci (76, 5), Téniers
+(67, 22), François Gérard (65, 11), Giordano (42, 19), Salvator Rosa, Barocci, Maratti,
+Zuccaro, Joseph Vernet, Champaigne, La Hyre, Vasari, Bourdon, Oudry, Largillière, Dürer,
+Le Sueur, Delacroix, Guardi, Prud'hon, Botticelli, Murillo, Callot, Holbein, Donatello…
+
+**Mais elle ne peut pas devenir un filtre automatique** : Le Parmesan (63), Perino del Vaga
+(53), Menzel (47), Bandinelli (45), Pollaiuolo (26), Pietro Testa (20) sont des maîtres de
+référence **présents dans un seul musée**. Dans les 27 actuels, Michel-Ange n'a que 3 musées
+et Léonard 2. La dispersion sert à **ordonner le travail d'instruction**, pas à décider.
+Ce n'est pas une comparaison entre musées sur des comptages bruts (règle du projet) : c'est
+une mesure de dispersion d'un candidat, et elle sert précisément de garde-fou contre les
+fonds locaux.
+
+### Ce que le seuil ramasse et qu'il faudra écarter à la main
+
+Des **entités qui ne sont pas des personnes** (Imprimerie de Wissembourg 392, Manufacture de
+Creil 60, Faïencerie de Sarreguemines 51, Manufacture de cristaux du Creusot 46), des
+**mentions collectives** (« CARRACCI l'un des » 78, « COYPEL l'un des » 60), « anonyme »
+(152), et du **bruit de saisie** : un nom-pivot réduit à « A » (30 notices, 6 musées), un
+autre à « A) » (15), des noms sans prénom trop ambigus pour être rattachés (« PETER » 41,
+« DAVID » 26, « LESCOT » 16, « FLEURET » 10).
+
+### Un alias manquant, trouvé en lisant la liste
+
+« RIGAU Y ROS Hyacinthe », forme catalane du nom de Rigaud, apparaît avec 20 notices
+prudentes sans être rattachée. Vérification faite, elle accompagne « RIGAUD Hyacinthe » sur
+la même notice **132 fois sur 134** : l'alias n'a rattrapé que 2 références, dont aucune
+prudente. Il est ajouté quand même — une table d'identité doit dire les noms qu'elle
+connaît.
+
+## 2026-07-21 (septies) — Temps 3 : les tests, et ce qu'ils protègent
+
+Troisième et dernière étape avant le point d'arrêt. `tests/test_artistes.py`, **89 tests**,
+qui portent le total du projet de 60 à **149**.
+
+**Un refactor, pour rendre la règle testable.** La résolution d'une référence — catégorie la
+plus prudente, famille la plus explicite, un poids par maître — était enfermée dans la
+boucle de lecture du CSV. Elle est extraite dans `resout_reference(auteur, en_beaux_arts)`,
+qui renvoie `{maître: (categorie, famille, segment)}`. Les tests l'appellent directement,
+sans le CSV de 1,1 Go. Chiffres vérifiés identiques avant et après : le refactor est neutre.
+
+**Trois niveaux de protection.**
+
+1. *Identité* (39 cas) : chaque homonyme relevé par l'audit, face au maître qu'il imite —
+   Corneille Michel-Ange contre Buonarroti, Domenico Robusti contre Jacopo, Carlo Caliari
+   contre Paolo, Pierre Mignard II contre Pierre I. Y figurent aussi les cas où **l'ancre ne
+   doit pas s'appliquer** (« ÉCOLE DE PRIMATICCIO », « D'APRÈS CLOUET François »), et les
+   faux amis par racine commune déjà corrigés en juillet (Serodine, Vincidor, Tintoretto) :
+   un test qui interdit de revenir en arrière.
+2. *Comptage* (8 cas) : les deux graphies du Titien sur une notice, les deux formulations
+   prudentes de Vouet, prudent contre ferme, prudent contre copie, copie contre ferme, et
+   l'invariant qui rend familles et niveaux additifs — **un maître ne relève que d'une
+   famille par référence**.
+3. *Références réelles* (42 lignes) : `data/exports/temoins_maitres.csv`, versionné, avec la
+   **valeur exacte du champ `Auteur`** telle que le musée l'a saisie, la référence Joconde,
+   et le verdict attendu. Un fichier relisible sans lire de code.
+
+**Constat de forme trouvé en écrivant les tests** : la notice `06070060045` (musée Ingres,
+Montauban) écrit `IIngres Jean-Auguste-Dominique` — avec deux I. Aucun motif ne peut la
+rattacher, et il ne faut pas essayer : corriger les fautes de saisie une par une reviendrait
+à réécrire la base. C'est la limite ordinaire du procédé, à dire dans la page méthode.
+
+## 2026-07-21 (sexies) — Temps 2 appliqué : la table d'identité des maîtres
+
+Deuxième étape du chantier, toujours dans `src/build_artistes.py` seul, exports non
+régénérés. Méthode : inventaire préalable des **246 formes d'auteur** réellement captées par
+les motifs en vigueur, mentions prudentes **et** certaines, avec leur nombre de références —
+puis relecture à l'œil, forme par forme. Pas de reconnaissance d'entités, conformément à la
+décision 2.
+
+**Un seul mécanisme ajouté : l'ancre `^`.** Un motif préfixé de `^` ne vaut qu'en **tête**
+du nom. Joconde écrit l'auteur « NOM Prénom » : sans ancre, « Raphaël » se rattache à
+Raphaël Collin ou Anton Raphael Mengs, et « Michel-Ange » à Corneille Michel-Ange. L'ancre
+n'est posée que là où elle est nécessaire — « ÉCOLE DE PRIMATICCIO » (121 références) doit
+rester pris, et le nom n'y est pas en tête.
+
+Ce choix est **plus solide qu'une liste de noms interdits** : le CSV est republié chaque
+mercredi, et un nouveau « Dupont Raphaël » serait de nouveau capté par une table qui ne le
+connaît pas. L'ancre, elle, tient sur une propriété de structure de la base.
+
+**Ce que l'ancre règle seule** : les 16 homonymes de Michel-Ange (aucune exclusion nommée
+n'a été nécessaire), la cinquantaine de « Raphaël » prénoms, Lemaire-Poussin,
+Lavallée-Poussin, Gaspard Poussin (Dughet), Le Guaspre, Bonifazio Veronese, Zenone Veronese,
+Tiziano Aspetti, Pierino da Vinci, « Madame Ingres ».
+
+**Ce qui a demandé une exclusion nommée** (l'homonyme porte le nom en tête) : Domenico
+Robusti le fils, Carlo et Benedetto Caliari, Gabriele Caliari, Philip et Pierre Van Dyck,
+Francesco et Cesare Vecellio, Pierre Mignard II le neveu, Aubin et Ferdinand Vouet,
+Marguerite Vinci, Poussin-Heydeck, Ribera y Cirera, Pierre Ribera, Arnold Frans Rubens et le
+« Rubens des batailles », Ingres Jean Marie Joseph, Raphael Tuck, Raphael-Schwartz, Giovanni
+Santi le père.
+
+**Deux corrections non prévues par l'audit.**
+
+1. L'exclusion `["ATELIER"]` posée sur Raphaël le 2026-07-08, **jamais documentée**, servait
+   à écarter les noms d'atelier (« ATELIER DE RAPHAËL »). L'ancre le fait mieux : ces formes
+   ne commencent pas par le nom du maître. Exclusion retirée.
+2. **« SANTI Raffaello », la forme d'état civil de Raphaël, n'était captée par aucun
+   motif** : ni `RAPHAEL`, ni `SANZIO` ne s'y trouvent. C'est un faux négatif au sein même
+   des 27 — **+3 références** prudentes. Il explique l'écart entre le total prévu par
+   l'audit (2 185) et le total obtenu (**2 188**).
+
+**Résultat mesuré** : doute des 27 **2 341 → 2 188** ; attributions certaines
+**29 995 → 28 240**. Invariants revérifiés sur les 27.
+
+**L'effet attendu se confirme : c'est la part affichée qui bouge le plus.**
+
+| Maître | part avant | part après |
+|---|---:|---:|
+| Michel-Ange | 19 % | **39 %** |
+| Le Tintoret | 27 % | **48 %** |
+| Véronèse | 15 % | **27 %** |
+| Le Primatice | 31 % | **38 %** |
+| Léonard de Vinci | 30 % | **36 %** |
+
+Michel-Ange tombe de 9 musées à **3** (Louvre 146, Rennes 1, Dole 1) : les six autres ne
+détenaient que des œuvres d'homonymes. Ces cinq phrases d'en-tête devront être **relues, pas
+seulement recalculées** — c'est le temps 7.
+
+## 2026-07-21 (quinquies) — Temps 1 appliqué : le comptage passe à la référence
+
+Première étape du chantier de fiabilisation, exécutée dans `src/build_artistes.py` seul.
+Les exports ne sont **pas** régénérés (ils le seront au temps 6, après le point d'arrêt).
+
+**Contrôle préalable.** La référence Joconde est-elle bien une clé ? Scan complet du CSV :
+1 023 705 lignes, **1 023 705 références distinctes, aucun doublon**. La déduplication tient
+donc entièrement dans la ligne courante — aucun index en mémoire, aucun second passage.
+
+**Mise en œuvre.** La boucle comptait à chaque segment du champ `Auteur` ; elle procède
+maintenant en deux temps : on collecte ce que la référence dit de chaque maître, puis on
+compte **une fois** par couple (maître, référence).
+
+**Deux règles de résolution en découlent.**
+
+*Catégorie* — quand une même référence porte plusieurs liens avec le même maître
+(« POUSSIN Nicolas (attribué à) ; POUSSIN Nicolas »), le plus prudent l'emporte :
+**doute > copie > attribution ferme**. C'est ce qui rend les trois catégories disjointes,
+donc additionnables, comme l'exigeait la décision 1.
+
+*Famille* — **arbitrage tranché : option (c)**, le « ? » l'emporte sur la formule de
+distance. Motif retenu par l'utilisateur : c'est le marqueur de doute le plus explicite.
+Conséquence structurelle, plus importante que les 3 cas concernés : **une référence = une
+famille**, donc familles et niveaux totalisent exactement le doute. Les jauges empilées et
+l'axe du graphique restent additifs, sans retouche du front. L'option (a) — la référence
+dans les deux familles — aurait cassé cette égalité pour trois références.
+
+**Résultat mesuré, conforme à l'audit** : doute des 27 **2 341 → 2 225** (−116) ;
+Le Primatice 269 → 197, Le Tintoret 47 → 39, Le Corrège 46 → 25, Titien 20 → 12,
+Véronèse 41 → 38, Simon Vouet 51 → 48, Fragonard 31 → 30. Le dénominateur bouge aussi,
+sans que l'identité soit encore corrigée : propre 29 995 → 29 229, copie 4 883 → 4 503
+(Titien 211 → 104, Véronèse 238 → 117, Le Corrège 152 → 82 — tous des maîtres à double
+graphie). Invariants revérifiés sur les 27 : familles = niveaux = somme des musées = doute,
+et aucune œuvre citée deux fois dans la vitrine.
+
+**Effet de bord assumé** : le garde-fou `refs_exemples`, qui empêchait une même œuvre
+d'illustrer deux familles, devient inutile — la structure l'interdit désormais. Retiré.
+
+**Reste au temps 2** : l'identité (table déclarative d'alias et d'exclusions). Les −40
+références mal rattachées ne sont **pas** dans les chiffres ci-dessus.
+
+## 2026-07-21 (quater) — Fiabilisation des maîtres : unité de comptage, identité, seuil à 10
+
+Décisions prises à l'issue de l'audit du 2026-07-21 (constats mesurés : donnees.md, même
+date). **Aucune n'est encore appliquée** : le pipeline, les exports et le front sont
+inchangés à ce stade, sur consigne. Ce qui suit fixe le cap et l'ordre d'exécution.
+
+### Décision 1 — L'unité de comptage est la référence Joconde, pas le segment d'auteur
+
+Le comptage **par segment** du champ `Auteur`, retenu le 2026-07-07 et documenté comme tel,
+est **abandonné**. Il produit un chiffre que le public lit comme un nombre d'œuvres alors
+qu'il compte des mentions : une notice nommant le maître sous deux graphies pesait double.
+
+**Nouvelle unité : la référence Joconde unique.** Invariants à faire respecter par le
+pipeline et par les tests :
+
+- le `doute` d'un maître est un **nombre de références distinctes** ;
+- aucune référence n'augmente deux fois le total d'un même maître ;
+- une référence peut porter **plusieurs familles** sans peser davantage dans le total ;
+- les totaux de familles ne sont **pas additionnés** en un tout (recouvrements) ;
+- une somme de profils n'est publiée que si les ensembles sont réellement disjoints ;
+- le front n'appelle jamais « notices » un comptage de segments.
+
+Coût connu : **2 341 → 2 225** références sur les 27 (−116).
+
+### Décision 2 — L'identité des maîtres passe par une table déclarative
+
+Refus explicite du surcode : **pas** de reconnaissance d'entités, **pas** de moteur
+générique. Une **table lisible**, relue à l'œil, contenant pour chaque maître : ses alias
+suffisamment précis, et les **exclusions explicites** des homonymes attestés. Le rattachement
+reste un test au mot entier sur le nom-pivot.
+
+Coût connu : **−40 références** prudentes mal rattachées ; l'effet sur le dénominateur est
+plus lourd encore (Michel-Ange : 422 des 749 attributions certaines appartiennent à Corneille
+Michel-Ange ; Raphaël : 52 formes captées, « Raphaël » pris comme prénom).
+
+**La table doit couvrir les deux catégories** — prudent *et* certain : l'audit montre que la
+seconde est la plus polluée, et c'est elle qui fabrique le dénominateur affiché au public.
+
+### Décision 3 — Le seuil descend de 20 à 10 références prudentes uniques
+
+Seuil défini sur l'**unité corrigée** : références distinctes, personne précisément
+identifiée, copies « d'après » exclues, une référence comptée une seule fois même si le champ
+`Auteur` répète plusieurs alias.
+
+Objectif éditorial : ne retirer automatiquement aucun artiste proche de l'ancien seuil,
+élargir la matière, et disposer de plus de profils pour éprouver les vérifications.
+Conséquences déjà mesurées : **Michel-Ange reste** (148), **Titien reste** (11, contre 20
+affichés aujourd'hui — il serait sorti sous l'ancien seuil appliqué à l'unité corrigée).
+
+### Décision 4 — Le seuil ne sélectionne pas seul : la règle publique reste double
+
+Vérification faite dans la documentation : le critère en vigueur depuis le 2026-07-07 est
+**« maître de référence ET seuil quantitatif »** — la curation de notoriété était déjà
+assumée et publiable, le seuil servant à la rendre non arbitraire.
+
+**Cette combinaison est maintenue** ; seul le nombre change (20 → 10). L'audit montre
+qu'elle est indispensable : au seuil de 10, **298 formes d'auteur hors des 27** qualifient,
+dont des manufactures, des imprimeries, « anonyme », des mentions collectives
+(« CARRACCI l'un des ») et surtout des **fonds locaux massifs** — BARLA Jean-Baptiste, avec
+5 791 références prudentes, écraserait à lui seul tout classement quantitatif. Un seuil nu
+produirait une liste ingérable et éditorialement absurde.
+
+**Règle publique proposée**, reproductible et énonçable en une phrase :
+
+> Sont retenus les artistes **présents dans les répertoires d'autorité** (INHA/Agorha,
+> Joconde, encyclopédies de référence), **identifiés comme une personne unique** après
+> désambiguïsation, et dont **au moins 10 notices** portent une formulation prudente,
+> copies « d'après » exclues.
+
+Deux compléments nécessaires pour qu'elle soit vérifiable :
+1. la liste des candidats examinés est **publiée avec leur nombre de notices**, y compris
+   ceux écartés et le motif (entité non personnelle, fonds local, homonymie non résolue) —
+   la sélection devient contrôlable au lieu d'être un panthéon opaque ;
+2. les **faux négatifs** relevés par l'audit sont instruits au même titre que les candidats
+   nouveaux : Le Guerchin (93), Bouchardon (86), Jules Romain (78), Ludovico Carracci (76),
+   Téniers (67), François Gérard (65), Le Parmesan (63), Perino del Vaga (53)… dépassent
+   largement l'ancien seuil et n'ont jamais été examinés, la liste ayant été composée à la
+   main. **Ne pas reprendre les anciens comptes par nom** : chaque candidat repasse par la
+   désambiguïsation.
+
+### Arbitrage laissé ouvert — familles multiples sur une même référence
+
+Trois références de Simon Vouet (`M0332004170`, `M0332004171`, `M0332004172`) portent à la
+fois `VOUET Simon (?)` et `VOUET Simon (atelier, dessinateur)`. Elles comptent pour **trois**
+références dans le total — cela, c'est acquis. **Ce qui reste à trancher** : comment les
+représenter par famille. Trois options, aucune retenue par défaut :
+
+- **a.** la référence apparaît dans les deux familles (les familles ne s'additionnent déjà
+  pas, l'invariant tient) ;
+- **b.** priorité à la formule de distance (« atelier ») sur le « ? », jugé moins informatif ;
+- **c.** priorité au « ? », marqueur de doute le plus explicite.
+
+Impact mesuré : **3 références sur 2 185**, toutes chez un seul maître. Le choix est donc
+sans effet sur les totaux, mais il fixe une doctrine qui vaudra pour tous les cas à venir —
+d'où l'arbitrage explicite plutôt qu'un choix silencieux. Ce fil rejoint la question déjà
+ouverte « politique “?” vs formule de distance ».
+
+### Plan d'exécution retenu (ordre imposé)
+
+1. **Unité de comptage** — comptage par couple `maître + Reference` dans
+   `build_artistes.py` ; invariants ci-dessus.
+2. **Identité** — table déclarative des alias et exclusions, couvrant prudent *et* certain.
+3. **Tests de non-régression** — fondés sur des **références réelles** : les témoins
+   d'homonymie (Corneille, Cerquozzi, Merisi, Pace, Vouet Aubin, Robusti Domenico, Vecellio
+   Francesco, Ingres Jean Marie Joseph, les quatre « Poussin », les quatre « Raphaël »), les
+   doublons de graphie (Primatice, Corrège, Titien, Tintoret) et les trois références
+   multi-familles de Vouet.
+4. **Recalcul au seuil de 10** sur l'unité corrigée, tous candidats confondus.
+5. **Nouvelle sélection** selon la règle double, avec journal des candidats écartés.
+6. **Régénération des exports** (`artistes.json`, puis `vue_ensemble.json` qui en dérive).
+7. **Contrôle des effets sur le front** : classement du répertoire, jauges, familles,
+   niveaux, exemples d'œuvres, cartes, en-têtes rédigés des fiches (les nombres suivent
+   automatiquement, **les angles doivent être relus**), page Méthode.
+8. **Révision des textes publics** : tout ce qui annonce « 27 » ou « au moins vingt notices ».
+
+**Étapes 1 à 3 avant toute reprise éditoriale ou graphique.**
+
+## 2026-07-21 (ter) — En-tête du graphique : deux textes, deux fonctions (4 artistes témoins)
+
+**Problème.** Le titre et le sous-titre du graphique formaient une **question suivie de sa
+réponse, avec les mêmes mots** : « Comment les musées rattachent ces œuvres à X » puis « Les
+musées les rattachent surtout à… ». Deux textes pour une seule fonction ; la répétition
+signalait immédiatement la génération automatique.
+
+**Règle rédactionnelle (consigne utilisateur du 2026-07-21).** Les deux textes reçoivent des
+rôles distincts :
+- **Titre** — l'angle propre à l'artiste ; contient son nom ; 4 à 9 mots ; jamais une
+  question ; sans « profil », « corpus », « distribution », ni « attribution » employé
+  abstraitement.
+- **Sous-titre** — la preuve chiffrée ou la nuance qui justifie l'angle, en une phrase, sans
+  reprendre les mots ni la structure du titre. « Les musées rattachent » ne doit pas revenir
+  dans tous les sous-titres.
+
+Quatre familles de titres selon la forme des données : mention très majoritaire
+(« … en tête », « surtout … ») ; territoire majoritaire mais plusieurs mentions
+(« principalement autour du maître ») ; deux tendances proches (« entre … et … ») ;
+répartition sans tendance (« plusieurs formes de proximité »).
+
+**Appliqué à quatre artistes témoins** (validés avant code) : Ingres, Charles Le Brun,
+Rembrandt, François Clouet — puis **généralisé aux 27 le même jour**, après validation. Plus
+aucune fiche n'utilise l'en-tête généré ; `lectureProfil()` et le titre générique restent
+dans le code comme repli, sans artiste pour les déclencher.
+
+**Répartition des 27 dans les quatre familles de titres** : mention très majoritaire (11) ;
+territoire majoritaire (5) ; deux tendances proches (6) ; sans tendance forte (5). Trois
+titres sortent du gabarit parce que les données l'imposaient : « Rodin, une seule mention »
+(100 % sur une seule formule), « Van Dyck, éparpillé entre les musées » et « Ribera, un petit
+ensemble très dispersé » (leur fait marquant est la dispersion, pas la mention).
+
+**Trois corrections faites en relisant la sortie complète**, invisibles à la rédaction :
+- Van Dyck lisait « se répartissent dans 21 musées ; “de son école” en réunit 21 » — deux
+  nombres identiques pour deux choses différentes dans la même phrase. Le sous-titre ne cite
+  plus de mention chiffrée ;
+- Léonard de Vinci répétait « deux musées » dans le titre et dans le sous-titre → titre
+  recentré sur « l'école plutôt que la main » ;
+- Simon Vouet ouvrait sur « La plus fréquente », sans dire de quoi → « La mention la plus
+  fréquente ».
+
+**Contrôle automatisé** avant livraison : les 27 couples sont produits en exécutant réellement
+les fonctions sur `artistes.json`, avec vérification de la longueur des titres (4 à 9 mots),
+de l'absence des mots proscrits (profil, corpus, distribution, domine, nettement, doute) et
+de l'absence de titre interrogatif. Zéro alerte.
+
+**Écrits à la main, chiffres lus dans les données.** Le champ `graphique` de
+`editorial-maitres.js` porte `titre` (chaîne) et `sousTitre` (**fonction**). La règle du
+fichier — « aucun chiffre stocké ici » — est préservée : les nombres arrivent depuis
+`artistes.json` via `{ n, total, second, musees, notices(code) }`. Un texte figé aurait
+menti dès la première régénération d'export, ce qui va justement arriver (voir le bug de
+double comptage, 2026-07-21 quater).
+
+**Deux points assumés :**
+- Le sous-titre chiffre en **notation brute** (« 240 des 310 »), là où la règle générale du
+  projet préfère les mots (« plus des deux tiers »). Amendement délibéré : le titre porte
+  désormais les mots, le sous-titre est l'endroit de la preuve. La règle vaut toujours
+  ailleurs.
+- Chez Clouet, le nombre de musées s'écrit **« 8 »** et non « huit » comme dans le texte
+  validé : le projet n'a pas de conversion nombre→lettres, et écrire « huit » à la main
+  reviendrait à figer une donnée. La phrase contient déjà « 95 des 105 », le chiffre reste
+  cohérent.
+
+**Dénominateur.** « les 204 œuvres concernées » = les notices à formulation prudente, pas les
+4 670 rattachées au nom. Le bandeau situé juste au-dessus porte la fraction complète
+(« 204 sur 4 670 ») : deux nombres voisins à l'écran, à surveiller en relecture.
+
+## 2026-07-21 (bis) — Une notice ne peut illustrer la vitrine qu'une fois (bug Titien)
+
+**Symptôme.** Sur la fiche **Titien**, l'onglet « Œuvres » restait inaccessible. Même
+défaut, non repéré jusque-là, sur **Le Tintoret**.
+
+**Cause — dans les données, pas dans le front.** Une même notice peut nommer le maître
+**deux fois, sous deux graphies**, dans le champ auteur. Sur l'œuvre `50350228332` du
+Louvre, la base porte à la fois « VECELLIO Tiziano (attribué à) » et « LE TITIEN (dit,
+attribué à) ». `build_artistes.py` traite chaque segment d'auteur séparément : il retenait
+donc **deux exemples pour la même œuvre**, dans la même famille. Le composant
+`OeuvresMaitre.svelte` liste ses entrées avec la **référence comme clé** — deux clés
+identiques font échouer le rendu de la liste, et la vitrine entière disparaît.
+
+C'est une variante connue du piège « graphies multiples » (CLAUDE.md) : ici les deux
+graphies ne sont pas sur deux notices, mais **sur la même**.
+
+**Correction, à la source.** `build_artistes.py` tient désormais, par maître, l'ensemble des
+références déjà retenues en exemple (`refs_exemples`), toutes familles confondues : **une
+notice ne peut illustrer la vitrine qu'une fois**. Le quota par famille est inchangé, donc
+la place libérée est reprise par l'œuvre suivante — Titien et Le Tintoret gagnent un
+**vrai** second exemple pour leur famille dominante au lieu d'un doublon. Aucun comptage
+n'est touché : le diff de `artistes.json` se limite à ces deux exemples.
+
+**Garde-fou au front** (`OeuvresMaitre.svelte`) : la liste est dédoublonnée par référence
+avant affichage. Le pipeline reste la correction réelle ; ce filet évite qu'une future
+régression de l'export fasse à nouveau disparaître une page entière au lieu d'un doublon
+visible. La règle éditoriale « exemples pris automatiquement, les premiers rencontrés »
+n'est pas modifiée — elle est seulement rendue univoque.
+
+## 2026-07-21 — Purge des derniers mots de laboratoire + ligne de partage « œuvres / notices »
+
+**Quatre reliquats** signalés par les deux passes précédentes et laissés en l'état sont
+corrigés ici. Aucune donnée, aucun calcul, aucun graphique touché.
+
+- `les-presque/+page.svelte` — « {N} artistes disposent ici d'un **corpus suffisamment
+  documenté** » → « **réunissent ici assez d'œuvres** pour être explorés et comparés ». Le
+  critère de sélection reste expliqué en page Méthode (ancre `#les-27`) ; l'intro n'a pas à
+  le nommer en langue d'analyste.
+- `BandeauMaitre.svelte` — repère méthodologique : « … rattachées à son nom **dans le corpus
+  étudié** » → « … rattachées à son nom, **copies mises à part** ». C'est exactement ce que
+  disait le commentaire de code (le total exclut les « d'après ») : autant l'écrire pour le
+  lecteur au lieu de le cacher derrière un mot de métier.
+- `Repertoire.svelte` — en-tête de colonne « **Notices** concernées » → « **Œuvres**
+  concernées ».
+- `echelle/+page.svelte` — « Dans l'ensemble des **notices** concernées, une formule
+  **domine largement** » → « Sur l'ensemble des **œuvres** concernées, une formule **revient
+  bien plus souvent que les autres** ». « Domine » figurait déjà au vocabulaire proscrit pour
+  la fiche artiste (2026-07-20) ; la règle vaut partout.
+
+**Ligne de partage précisée** (amende le 2026-07-20, qui opposait texte narratif et comptage
+sec). Le critère n'est plus la nature du texte mais **la distance à la base** :
+- **« œuvres »** dans tout ce que le visiteur lit comme un propos sur les collections —
+  phrases, intros, **et les en-têtes des listes qui accompagnent ces phrases** (le répertoire
+  et le bandeau du maître sont côte à côte à l'écran et désignent le même nombre : ils
+  doivent employer le même mot) ;
+- **« notices »** là où l'on parle explicitement de la base — légendes de graphique
+  (`BarresMentions`), tooltips, seuils et page Méthode.
+
+Non traité, hors périmètre V1 : `/revisions` (rubrique en réserve, hors nav publique) dit
+encore « corpus » ; les occurrences restantes sont des **commentaires de code**, pas du
+texte affiché.
+
+## 2026-07-20 (bis) — Fiche artiste : trois textes remis en langue ordinaire
+
+**Problème.** Trois textes de la fiche parlaient encore la langue du projet, pas celle du
+lecteur. La ligne sous le nom versait dans la culture savante (« rococo », « Grand Siècle »,
+« portraitiste de la cour des Valois ») : des repères qui demandent eux-mêmes une explication.
+Le titre du graphique annonçait « Le profil d'attribution de X » — « profil » et
+« attribution » sont du vocabulaire d'analyste. Et rien ne disait, en clair, ce que le
+graphe donnait à voir.
+
+**1. Ligne biographique — gabarit strict, une phrase, sans exception :**
+« [Activité principale] [nationalité] du [siècle], [dates]. » Elle sert à **situer**, rien
+d'autre. Sont proscrits, même exacts : mouvements (rococo, baroque), périodes de connaisseur
+(Grand Siècle, Siècle d'or, Renaissance), écoles (école de Fontainebleau), fonctions de cour
+(premier peintre du roi). Le siècle est celui où l'artiste a **travaillé**, pas celui de sa
+naissance ; quand l'activité couvre réellement deux siècles → « des XVe et XVIe siècles ».
+Dates relevées hors ligne, vérifiées sur les notices d'autorité (INHA/Agorha, National
+Gallery, Larousse, Britannica) ; « vers » quand la naissance est discutée, comme le font ces
+notices — la prudence sur les dates est du même ordre que celle des musées sur les
+attributions. Appliqué aux **27** artistes (`web/src/lib/editorial-maitres.js`).
+
+**2. Titre du graphique.** « Le profil d'attribution de X » → **« Comment les musées
+rattachent ces œuvres à X »**. Le titre nomme l'acteur (les musées), l'action (rattacher) et
+l'objet. Vocabulaire écarté : profil, corpus, analyse, distribution. La contraction de
+l'article est traitée par `aNom()` (`joconde.js`) : « au Primatice », jamais « à Le Primatice ».
+
+**3. Phrase de lecture** (`territoires.js`, `lectureProfil`). Sous le titre, une phrase dit
+la tendance en mots ordinaires. **Cinq formulations fixées, on n'en invente aucune autre** ;
+« corpus » est proscrit. Seuils **inchangés** par cette passe : territoire ≥ 60 % → territoire
+principal ; sinon écart < 5 points entre les deux premiers → « les œuvres se partagent » ;
+sinon → « sans qu'une seule ne s'impose ». La mention citée est la plus fréquente **à
+l'intérieur** du territoire principal (pas la dominante globale, qui peut appartenir à un
+autre territoire), et réutilise la citation publique de `familles-public.js` — aucun libellé
+n'est réécrit.
+
+**Contrôle.** Les 27 phrases générées ont été vérifiées : 8 « au maître lui-même », 11 « à son
+entourage/influence », 8 « sans qu'une seule ne s'impose ». **Aucun artiste ne déclenche
+aujourd'hui la branche « les œuvres se partagent »** : avec les données actuelles, l'écart
+entre les deux premiers territoires n'est jamais inférieur à 5 points sous la barre des 60 %.
+La branche est conservée (les seuils ne sont pas touchés par cette passe), mais c'est un
+point à réexaminer si l'on revoit un jour les seuils. Captures de contrôle : Boucher,
+Charles Le Brun, François Clouet, Rembrandt.
+
+## 2026-07-20 — Fiche artiste : portrait éditorial (fin des compteurs) + vocabulaire public « œuvres »
+
+**Problème.** La fiche refondue la veille (2026-07-19 bis) restait une **fiche statistique** :
+un très grand `310`, un `9 %` en seconde vedette, puis deux phrases techniques. Quatre blocs
+indépendants que le lecteur devait relier lui-même ; le nombre `310` seul en très grand n'a
+aucun sens immédiat ; l'enseignement réellement intéressant (la mention la plus fréquente)
+arrivait en dernier, en petit.
+
+**Parti retenu** (validé sur prototype Charles Le Brun avant généralisation) : la scène
+devient un **court portrait éditorial fondé sur les données**, lisible en deux ou trois
+phrases naturelles. Plus aucun grand nombre isolé, aucun compteur, aucune carte de KPI.
+
+**Hiérarchie, dans cet ordre** :
+1. **Nom de l'artiste** — élément typographique le plus grand (inchangé, `--taille-xxl`) ;
+2. **La mention la plus fréquente** — le constat, en Fraunces 1,35 rem : c'est le deuxième
+   niveau visuel, et c'est ce que le graphique situé dessous vient ensuite détailler
+   (le graphe n'a plus à faire découvrir seul l'enseignement principal) ;
+3. **Récit chiffré** en corps de lecture — volume concerné, part de la mention, musées ;
+4. **Repère méthodologique** en registre secondaire (petit corps, contraste atténué,
+   séparé par un filet fin) : « En contexte : 310 sur 3 344 œuvres…, soit 9 %. »
+
+**Les nombres vivent DANS les phrases** : graisse 600 + accent cobalt existant + chiffres
+elzéviriens (`font-variant-numeric: oldstyle-nums`, fournis par Spectral), jamais plus
+grands que le texte courant. Aucun ne concurrence le nom. Polices et variables de la charte
+uniquement — aucun import, aucun style global touché.
+
+**Vocabulaire public (change la doctrine de la veille).** Dans le **texte narratif**, on
+écrit **« œuvres »** — « les 310 œuvres associées à son nom » — et non « notices », qui
+donne le point de vue de la base de données. Règles strictes :
+- **jamais « œuvres de X »** : ces œuvres ne lui sont précisément **pas** directement
+  attribuées → « œuvres **associées à son nom** » / « rapprochées de X » ;
+- l'**unité technique reste la notice Joconde**, expliquée en page Méthode ;
+- pas de « Dans Joconde » en ouverture de fiche ;
+- **vocabulaire interdit pour le constat** : « domine », « domine nettement », « le doute
+  passe par ». On écrit **« X est la mention la plus fréquente »** — neutre, exact même
+  quand la mention ne pèse que 38 % (Ribera), et cohérent avec « on lit ce que les musées
+  écrivent ».
+
+Cette règle **ne revient pas** sur la passe 2026-07-19 (ter) pour les **comptages secs**
+(tooltips, légendes, panneaux de `/echelle`, seuil de la Méthode) : ceux-ci restent en
+« notices ». La ligne de partage est désormais **narratif → « œuvres » / comptage → « notices »**.
+⚠️ Reliquat connu, non traité (hors périmètre) : le répertoire affiche « NOTICES CONCERNÉES »
+à côté d'un bandeau qui dit « 310 œuvres » — à trancher dans une passe dédiée.
+
+**Génération (les 27 artistes, aucune valeur en dur).** Le constat est construit depuis
+`artistes.json` + la couche de libellés publics :
+- **nouveau champ `citation`** dans `familles-public.js` — forme **citable en sujet de
+  phrase** (« De son atelier »), distincte de `label` (étiquette d'axe : « son atelier »)
+  et de `header` (titre de tooltip). `label`, `header`, `corps`, `mention` et `couleur`
+  sont **inchangés** : ni le graphique ni les tooltips ne bougent ;
+- **égalité exacte** : toutes les mentions au maximum sont citées, ordonnées par
+  `ORDRE_FAMILLES` (aucune choisie arbitrairement), première en capitale, suivantes en bas
+  de casse → Hyacinthe Rigaud : « "Attribué à" et "de son école" sont les mentions les plus
+  fréquentes. » + « 16 portent **chacune de ces mentions** » ;
+- **mention unique couvrant tout le corpus** (Rodin, 100 %) : « Les 80 œuvres … portent
+  **toutes** cette mention » — évite le doublon « parmi les 80 …, 80 portent » ;
+- **un seul musée** : « Ces œuvres sont toutes conservées dans un même musée » (aucun cas
+  réel aujourd'hui, minimum observé = 2 ; garde-fou d'accord).
+
+**Bio conservée** quand elle existe (`editorial-maitres.js` : François Clouet, Rembrandt),
+en ligne d'identité italique sous le nom — elle situe l'artiste sans concurrencer le constat.
+
+**Vérifié** : les 27 phrases relues une à une avant rendu ; captures desktop (Le Brun,
+Rigaud) + mobile (Le Brun, Rembrandt) + planche des cas limites (Rodin 100 %, Rembrandt
+bio + « À sa manière », Léonard de Vinci 2 musées, Annibale Carracci « De son cercle »).
+Le bandeau reste compact : onglets et début du graphique visibles dans le premier écran en
+1280×760. Données et pipeline **inchangés**.
+
+## 2026-07-19 (ter) — Wording des comptages : « notices » partout, « œuvre » réservé à l'objet montré
+
+**Problème.** Après la refonte de la fiche (2026-07-19 bis, qui dit « 310 notices »), le
+reste de l'interface disait encore « œuvres » pour les mêmes comptages : tooltips du
+graphique (« 240 œuvres » face à « 240 notices » dans la phrase de dominante), bande des
+copies de la vitrine (« 237 œuvres "d'après" »), carte des musées (« N œuvres
+concernées », « où au moins une œuvre concernée est conservée »), panneaux de
+`/echelle` (« 24 507 œuvres concernées ») et page Méthode (seuil « vingt œuvres »).
+Or le pipeline compte des **notices Joconde**, pas un ensemble certifié d'œuvres
+distinctes (règle du chiffre 24 507).
+
+**Doctrine adoptée** (vaut pour toute copie publique à venir) :
+- **Tout comptage se dit en « notices »** — valeur, tooltip, légende, seuil, total.
+- **« œuvre » reste permis pour un objet montré individuellement** (une entrée de la
+  vitrine, l'aperçu d'un point de carte, « il ne réattribue aucune œuvre ») : là, le mot
+  désigne bien un objet réel, pas un décompte.
+
+**Application** (copie seule, aucune donnée ni calcul modifiés) :
+- `familles-public.js` : helper `oeuvres()` **renommé `notices()`** (« 1 notice » /
+  « n notices ») ; les tooltips du graphique et leurs aria-labels disent désormais la
+  même chose que la phrase de dominante de la fiche.
+- Vitrine (`OeuvresMaitre`) : « À part : 237 notices **portent la mention** "d'après
+  Charles Le Brun" — des copies assumées… » (accord porte/portent géré). Le titre
+  « Quelques œuvres derrière les points » est conservé (objets montrés un à un).
+- Carte (`CarteMaitre`) : titre **« D'où viennent ces notices »** (les musées ont écrit
+  les notices — cohérent avec « on lit ce que les musées écrivent ») ; légende « Un
+  point = un musée **ayant publié** au moins une notice concernée » ; tooltips « N
+  notice(s) concernée(s) » ; replis et hors-cadre reformulés (« relève(nt) d'un seul
+  musée », « rattachées à N musées ») ; aria-label du SVG aligné.
+- `/echelle` : « notices concernées » (panneaux + texte), « une même notice peut porter
+  plusieurs mentions », copies « d'après » en notices. Au passage, **purge du reliquat
+  « Les presque »** (appellation abandonnée en public le 2026-07-19) → « la rubrique
+  "Explorer les maîtres" » (libellé de la nav).
+- Méthode : seuil « au moins **vingt notices** portant une formulation prudente » (aligné
+  sur l'intro de la rubrique) ; copies en « notices ».
+
+## 2026-07-19 (bis) — Fiche artiste : hiérarchie des informations (le doute est le sujet)
+
+**Problème.** La scène mettait en avant **3 344 œuvres** et **64 musées** (volume total sous
+le nom) alors que le sujet de la rubrique est le **doute** (les 310 notices affichées dans
+le répertoire). Le lecteur devait reconstituer la relation entre ces valeurs.
+
+**Nouvelle hiérarchie de la fiche** (composant `BandeauMaitre.svelte`, phrases toutes
+**générées depuis `artistes.json`**, aucun texte manuel par artiste) :
+1. **Information principale** = `doute`, en grand (nettement plus visible) : « 310 » +
+   « notices où son nom est accompagné d'une formulation prudente ». On dit **notices** (le
+   pipeline compte des notices Joconde, pas un ensemble certifié d'œuvres distinctes).
+2. **Dénominateur** en registre secondaire : « 9 % des 3 344 notices associées à son nom
+   dans le périmètre étudié ». Total de référence = **`propre + doute`** ; part =
+   `Math.round(doute / (propre + doute) * 100)`. Le total n'est PAS l'ensemble absolu des
+   notices du nom (copies « d'après » et catégories exclues comptées à part) → **« dans le
+   périmètre étudié »**. Explication ajoutée à la page Méthode (« Lire les chiffres »).
+   3 344 n'est plus présenté comme le sujet.
+3. **Répartition entre musées** : `nb_musees_doute` (19), pas le `musees` général (64,
+   retiré du bandeau car il ne répond pas à la question). « Ces 310 notices se répartissent
+   entre 19 musées. » Le profil et la vue Musées parlent **du même corpus** (`musees_doute`).
+4. **Formulation dominante** : « La formulation la plus fréquente est "de son école" :
+   240 notices, soit 77 %. » Construite depuis les données (famille dominante réelle,
+   notices, part dans `doute`, libellé public canonique, accords). **Égalités** gérées : à
+   part égale, on liste toutes les familles au maximum, **ordonnées par `ORDRE_FAMILLES`**
+   (jamais l'ordre des données), énumération française + « chacune » (ex. Hyacinthe Rigaud :
+   « "attribué à" et "de son école" : 16 notices chacune, soit 39 % »).
+
+**Règles.** Tous les pourcentages de la fiche via `Math.round` (pas de décimale mêlée).
+**`fractionEnMots` n'est plus utilisée** (l'ancienne synthèse « près des deux tiers » était
+imprécise/fausse pour Le Brun : 240/310 = 77 %). Espace des milliers rendue visible
+localement (U+00A0). Aucune donnée ni calcul du pipeline modifié.
+
+**Répertoire** : le tri « Œuvres » devient **« Notices »** ; micro-légende « ARTISTE ·
+NOTICES CONCERNÉES ». Le nombre à droite (= `doute`) est **le même** que la valeur
+principale du profil.
+
+**Vérifié** : Le Brun, Ingres, Rembrandt, Titien (petit volume), Rigaud (égalité) ; les
+trois onglets ; desktop + mobile ; cohérence sur les 27 (somme des familles = `doute`,
+`nb_musees_doute` = points de carte, aucun doute sans musée ; parts de 1 à 59 %).
+**Hors périmètre (phase séparée)** : les notices de l'onglet Œuvres (wording « œuvres »).
+
+## 2026-07-19 — « Explorer les 27 maîtres » : titre public, intro refondue, intro ↔ outil séparés
+
+Phase limitée à **l'introduction** de la rubrique et à sa **séparation visuelle** d'avec
+l'outil d'exploration. Répertoire, profils, onglets, notices d'œuvres et visualisations
+**non touchés** (phase distincte à venir).
+
+1. **Abandon de l'appellation publique « Les presque ».** Le titre public devient le
+   **H1 « Explorer les {N} maîtres »** (N = `artistes.length`). « Les presque » ne figure
+   plus dans les textes publics de la page. **Reste inchangé** (pas une migration
+   technique) : la route `/les-presque`, les fichiers internes, les exports, les documents
+   historiques. « Les presque » peut subsister comme **nom de code interne** (docs, code).
+
+2. **Nouveau texte d'introduction** (provisoire, fourni par l'utilisateur) : trois
+   paragraphes qui expliquent ce qu'est la rubrique (le nom d'un artiste ≠ l'auteur ;
+   27 artistes retenus au seuil d'« au moins vingt notices » ; 2 341 notices prudentes au
+   total ; le seuil n'est pas un palmarès mais un plancher de comparabilité ; invitation à
+   choisir un nom). L'ancien texte (énumération de formules) est retiré. La phrase de
+   prudence commune (« Le projet reprend les formulations publiées par les musées ; il ne
+   réattribue aucune œuvre. ») est conservée en **note secondaire discrète**. **Interdits
+   respectés** : pas de liste des huit mentions, pas de définition des familles, pas de
+   nouveau chiffre, pas d'interprétation d'authenticité, pas de « distance à la main » (ce
+   vocabulaire vit dans « Comprendre les mentions » et « Méthode »).
+
+3. **Deux temps séparés.** *Premier temps* = entrée éditoriale : deux colonnes sur
+   ordinateur (titre à gauche, texte à droite), largeur de lecture confortable, **aucun
+   encadré**, prudence en note, espace vertical généreux dessous. *Second temps* =
+   exploration, introduite par l'intitulé simple **« Choisir un artiste »** (registre UI,
+   repère cobalt), détachée par un **filet + de l'espace** (pas un nouveau bandeau) ; en
+   dessous, le répertoire + le profil **existants, inchangés**.
+
+4. **Responsive.** Ordinateur : l'intro respire mais le début du répertoire reste
+   perceptible dans le premier écran (vérifié 1280×760). Mobile : titre / texte / note
+   s'empilent, « Choisir un artiste » marque le passage à l'outil, répertoire toujours
+   repliable, aucun texte rapetissé à l'excès.
+
+5. **Chiffres = données déjà chargées, pas de seconde source.** `nbMaitres` =
+   `artistes.length` (27) ; `totalNotices` = somme des `doute` des 27 (2 341) ; le seuil
+   « vingt » est écrit en toutes lettres (critère du fichier `artistes.json`). Détail :
+   l'espace fine insécable de `toLocaleString` (U+202F) ne se voit pas dans Spectral →
+   remplacée **localement** par une espace insécable normale (U+00A0), sans toucher
+   `joconde.js` ni la scène. Vocabulaire : **« artistes »** dans le texte explicatif,
+   **« maîtres »** conservé dans le titre et la nav déjà validée.
+
+## 2026-07-18 (sexies) — Accueil : ce que dit (et ne dit pas) le chiffre 24 507
+
+**Correction d'une formulation fausse** que j'avais mise sur la couverture (entrée
+quinquies) : « 24 507 œuvres pour lesquelles un musée de France a écrit un doute sur
+l'auteur. » **À proscrire.** Le nombre 24 507 ne désigne **pas** un décompte certifié
+d'œuvres distinctes : ce sont les **notices retenues par le pipeline dans le corpus des
+formulations prudentes**. Présenter ce total comme « 24 507 œuvres » invente une
+interprétation que les données ne garantissent pas, et frôle l'idée d'authentification —
+ce que le projet ne fait jamais.
+
+**Accroche adoptée** (le nombre reste chiffre vedette de la composition, mais **dans**
+sa phrase, jamais détaché) :
+
+> Un million de notices.
+> Dans **24 507** d'entre elles, l'attribution est formulée avec prudence.
+> Une enquête dans les données des musées.
+
+**Règles de formulation du chiffre (à respecter partout) :**
+- La phrase « Dans 24 507 d'entre elles… » se lit comme **un tout** ; ne jamais séparer
+  le nombre de son unité (les notices), ni le présenter comme « 24 507 œuvres ».
+- **Bannis** : « un musée a écrit un doute », « œuvres douteuses », « œuvres inconnues »,
+  « auteurs inconnus », et toute tournure suggérant que le projet authentifie ou
+  réattribue une œuvre.
+- Implémentation : le nombre est en vedette **inline** dans l'étage `.e2` (`<span
+  class="chiffre">`, insécable), plus de bloc « preuve » isolé + glose.
+
+## 2026-07-18 (quinquies) — Accueil : retour du chiffre 24 507 + retrait du lien « Accueil »
+
+> ⚠️ La glose citée au point 1 (« œuvres pour lesquelles un musée… a écrit un doute »)
+> est **fausse et retirée** — voir la correction 2026-07-18 (sexies) ci-dessus.
+
+Deux touches sur la couverture d'accueil (demande utilisateur, en petites étapes).
+
+1. **Le chiffre vedette revient sur l'affiche.** La refonte « affiche » avait vidé la
+   couverture de tout chiffre (déplacé en « Comprendre les mentions » / « Méthode »).
+   L'utilisateur le juge important : c'est sur ces données qu'on travaille. On le
+   réaffiche en **preuve secondaire** dans l'aplat sombre, sous l'accroche : **24 507**
+   (lu depuis `niveaux.json` via `+page.js`, jamais en dur) + une glose courte
+   (« œuvres pour lesquelles un musée de France a écrit un doute sur l'auteur. »).
+   L'étage d'accroche « Des milliers d'attributions incertaines » est **retiré** (le
+   chiffre le dit, précisément → redondance levée). Corps réduit : ne concurrence pas
+   le titre. Voile de contraste mobile étendu (le bloc est plus haut).
+2. **Le lien « Accueil » est retiré de la nav de la couverture** (`EditorialNavigation`) :
+   cette nav ne s'affiche QUE sur l'accueil → un lien vers la page courante est inutile.
+   Les autres pages gardent « Accueil » dans le header (utile là). *Point que j'aurais dû
+   signaler de moi-même.*
+
+## 2026-07-18 (quater) — « Les presque » : retour à un maître d'ouverture (guide abandonné, proportions gardées)
+
+**Revirement après essai des deux états** (2026-07-18 ter). Vu à l'écran, l'état
+« guide » (arrivée sans maître, invitation + 3 étapes) faisait de la page une
+**seconde introduction** : elle se posait au lieu d'explorer. Décision utilisateur :
+**revenir à un premier maître déjà sélectionné dès l'ouverture** — la page est un
+**espace d'exploration** dès l'arrivée, avec une sélection initiale visuellement forte
+(le plus douté, Le Brun, surligné dans le répertoire).
+
+**Ce qu'on garde de la refonte 2026-07-18 (ter)** — les vraies proportions, qui étaient
+le bon correctif : **graphe borné** (`.vue { max-width: 42rem }`, aligné à gauche) et
+**scène = héros** (portrait + synthèse racontent le maître ; le graphe est une figure de
+support). Le problème initial (graphe géant qui écrasait l'intro) reste corrigé.
+
+**Ce qu'on retire** : l'état A / bloc « guide » et la bascule d'état. Une **entrée
+éditoriale unique et courte** (titre + chapô qui oriente vers profil/œuvres/musées +
+précaution) remplace les deux introductions. `selection` démarre sur `artistes[0]`.
+Aucun composant refondu. Build + capture d'ouverture vérifiés.
+
+## 2026-07-18 (ter) — Refonte narration « Les presque » : DEUX ÉTATS (guide / maître) — ✅ CODÉ ⟶ REMPLACÉ par (quater)
+
+**Statut : FAIT (2026-07-18, une passe, un commit).** Spec ci-dessous suivie.
+
+**Réalisé.** `les-presque/+page.svelte` : `selection` démarre à `null`.
+- État A (arrivée) : plein cadre d'intro conservé (titre + chapô + précaution) ; la
+  zone de droite est un **guide** (invitation « Choisissez un nom » + 3 étapes = les
+  3 onglets à venir : profil / œuvres / musées), **aucun portrait ni maître**.
+- État B (clic) : l'intro recule en **kicker mince** (« Les presque · 27 noms ») ;
+  la scène du maître (`BandeauMaitre` + onglets + vue) s'affiche.
+- **Vue bornée** à 42 rem (~672 px), alignée à gauche (règle 1 de la spec).
+- Aucun composant existant refondu (Repertoire / BandeauMaitre / Nuage / Œuvres /
+  Carte réutilisés tels quels) ; `Repertoire` tolère `selection = null` sans
+  surlignage. Mobile : le repli natif du répertoire (bouton « Choisir un maître »)
+  fait office d'accès à la liste dans les deux états (pas de refonte de Repertoire).
+- Build statique vérifié.
+
+---
+
+**Parti arrêté (spec d'origine, conservée pour mémoire) :**
+
+**Problème constaté** (retour utilisateur 2026-07-18) : `/les-presque` ouvre sur un maître
+par défaut (Le Brun) → la scène + le graphe « Profil » **géant** écrasent l'intro ; les
+petits textes de présentation deviennent insignifiants ; l'utilisateur arrive au milieu
+d'une fiche sans savoir quoi faire. La page **perd** le lecteur au lieu de l'orienter.
+
+**Parti retenu.** Un **répertoire permanent à gauche (constant)** ; la **zone de droite
+bascule** entre deux états ; **aucun maître par défaut** (le rail ne bouge pas → pas de
+rupture de mise en page).
+
+- **État A — arrivée (aucun maître sélectionné, `selection = null`)** : la zone de droite
+  est un **GUIDE**, pas une fiche. Contenu : titre « Les presque » + chapô (ce que sont
+  les presque) **en présence forte** + invitation « Choisissez un nom » et les **3 étapes**
+  = les 3 onglets à venir (① profil — les formules du doute ; ② œuvres — les mots des
+  musées ; ③ musées — la carte). **Aucun portrait, aucun maître affiché.** L'intro
+  redevient le contenu principal.
+- **État B — un maître sélectionné (clic sur un nom)** : la zone de droite affiche la
+  **scène du maître** (portrait + nom + phrase de synthèse + chiffres) puis les onglets
+  **Profil · Œuvres · Musées** et la vue. Le cadre/intro **recule** en kicker mince
+  (« Les presque · 27 noms ») — il ne disparaît pas, il n'écrase plus.
+
+**Règles d'équilibre (le vrai correctif) :**
+1. **Graphe borné** : la vue (nuage / œuvres / carte) reçoit un `max-width` (~600-680 px),
+   left-aligné. Fin du graphe qui remplit ~900 px.
+2. **La scène est le héros du maître ; le graphe est une figure de support.** La phrase de
+   **synthèse** (« le plus souvent de son école, près des deux tiers… ») reste dans la
+   scène : c'est elle qui raconte le graphe → le graphe n'a plus besoin d'être énorme.
+3. **L'intro change de rôle selon l'état** : plein cadre en A, kicker mince en B.
+
+**Mobile :** État A = intro + guide, puis répertoire **déplié** (noms visibles). État B =
+au choix, le répertoire se replie (« Choisir un maître »), la scène s'affiche (repli déjà
+en place dans Repertoire.svelte).
+
+**Exécution — une seule passe, un commit.** `selection` démarre à `null` → état A ; clic →
+état B. Ajouter un petit bloc « guide » (composant léger OU inline dans la page ; réutilise
+les libellés existants) + la logique d'état. Kicker mince en B ; borner la vue. **Aucun
+composant existant refondu** (Repertoire, BandeauMaitre, Nuage, Œuvres, Carte réutilisés
+tels quels) ; aucun texte de fond réécrit hors l'entrée. DoD : arrivée sans maître
+(desktop + mobile), sélection, 3 onglets, retour. Fichier principal :
+`web/src/routes/les-presque/+page.svelte` (état + guide + kicker + `.vue { max-width }`).
+
+## 2026-07-18 (bis) — Extension de la direction « affiche » à l'application (C1 : charte v2 + coquille)
+
+L'accueil « affiche » remplace la Direction B comme cap. On l'étend au reste de l'app.
+Principe (roadmap ★ DIRECTION « AFFICHE ») : **surface de lecture claire** (le sombre
+plein nuirait au texte et aux dataviz) + **cadre au registre de l'affiche** (navy, ivoire,
+cobalt, vermillon) + **composition pleine largeur en zones** (fin de la colonne 68 rem par
+défaut) + **8 pigments de données inchangés**. Narration : l'accueil étant une pure entrée,
+**chaque page porte désormais son entrée** (le sujet et les chiffres n'y sont plus posés).
+
+**C1** : tokens de cadre ajoutés (`--cadre-fond/-encre/-encre-douce`, `--accent-cobalt/
+-vermillon`) ; header intérieur en **bandeau navy** (wordmark + nav ivoire, page active
+soulignée vermillon), **spectre de tête supprimé** ; pied au même registre. Choix de ne
+PAS retirer `max-width` de `main` en C1 : le passage pleine largeur se fait **page par
+page** (via `main.pleine`, comme l'accueil) en C2-C4, pour éviter un état transitoire cassé.
+
+## 2026-07-18 — Accueil : l'affiche précisée (entrée pure, accroche 3 étages, nav en cartouches)
+
+Révision de l'affiche d'accueil (image et plein écran conservés). L'accueil est **l'entrée**
+dans l'application : il ne résume pas les stats, n'explique pas la méthode. **Accueil seul.**
+
+- **Un seul écran** : plus rien sous la couverture ; **pied de page masqué sur `/`**
+  seulement. Répartition assumée du contenu : les chiffres détaillés → « Comprendre les
+  mentions », le calcul / les sources / la version / les précautions → « Méthode ». Le
+  premier viewport communique uniquement échelle (« un million de notices »), sujet
+  (attributions incertaines), approche (enquête dans les données) et les chemins.
+- **Accroche provisoire à trois étages** (formulation imposée, non figée éditorialement) :
+  chaque phrase = un étage visuel distinct, progression légère, registre d'affiche (pas un
+  chapô institutionnel). Aucun chiffre précis réintroduit pour « remplir ».
+- **Navigation = cartouches éditoriaux** intégrés à la fiche (bleu-encre, texte ivoire,
+  angles quasi droits, largeurs propres, décalés, trait fin), **pas** de boutons/cartes/
+  menu/ombre/icône. Motif : les liens noirs fins se perdaient dans l'illustration ; les
+  cartouches leur donnent un contraste franc et les ancrent aux rectangles de l'image.
+  « Explorer les maîtres » = principale (plus large, plus lourde, cobalt, cible généreuse).
+- **Contraste** : par les zones ; **aucun voile global**. Exception assumée et permise par
+  le cadrage : sur petit écran, un **dégradé feutré local** (masqué haut/bas, mobile
+  uniquement) derrière le bloc titre garantit la lisibilité des étages — jamais un panneau
+  opaque ni un voile sur toute l'image. Sous 400 px, tailles/espacements réduits d'abord.
+- Interactions inchangées dans l'esprit (≤ ~5 px, trait, contraste, focus visible,
+  `prefers-reduced-motion`, `aria-current`).
+
+Fichiers : `LandingCover.svelte`, `EditorialNavigation.svelte` réécrits ; `+page.svelte` /
+`+page.js` réduits ; `+layout.svelte` (pied de page masqué sur `/`).
+
+## 2026-07-17 (septies) — Accueil = affiche interactive (nouvelle direction, prototype, accueil seul)
+
+Direction B jugée trop classique/rigide (« image de catalogue »). Nouvelle piste
+**limitée à l'accueil** : une **affiche interactive** à partir de deux illustrations
+fournies. Les pages intérieures **restent en Direction B** (comparaison des deux systèmes).
+Prototype à juger sur captures avant toute extension.
+
+Choix :
+- **Deux assets distincts, pas un seul recadré** : `<picture>` avec l'asset horizontal
+  (desktop / tablette paysage) et la composition verticale autonome (mobile / **tablette
+  portrait ≤ 1024 px**, via `orientation: portrait` — sans quoi l'horizontal se recadre
+  trop et la nav quitte la fiche). `object-fit: cover`, `object-position: center`.
+- **Textes et nav = HTML superposé**, jamais dans le bitmap. Titre (Fraunces, clair
+  légèrement froid) dans l'aplat sombre ; navigation en **annotations** reliées aux lignes
+  de la fiche claire (charbon), « Explorer les maîtres » en entrée principale ; routes
+  réelles (dont `/echelle`). Mention de source courte et discrète.
+- **Contraste par les zones** (clair sur aplat sombre / charbon sur fiche claire),
+  **aucun voile** couvrant l'image, pas de panneau opaque ni d'ombre forte.
+- **Interactions sobres** : déplacement ≤ 4 px, prolongement de la ligne, contraste,
+  ~180 ms ; focus clavier visible ; `aria-current` (Accueil) ; `prefers-reduced-motion`.
+- **Coquille** : masthead + spectre **masqués sur `/` uniquement**, `main` pleine largeur
+  (`main.pleine`). Le premier viewport est exclusivement la couverture ; le chiffre 24 507
+  et la source vivent **sous la ligne de flottaison**.
+- **Traçabilité** : `web/static/cover/` + `README.md` — illustrations générées pour le
+  projet, évoquant la **base de données Joconde** (archive/index/open data), **pas** Léonard
+  ni le tableau *La Joconde*. Outil de génération à préciser par l'auteur.
+
+Composants créés : `LandingCover.svelte`, `EditorialNavigation.svelte` (pas davantage).
+
+## 2026-07-17 (sexies) — Direction B : refonte des pages restantes (modèle de travail, non validé)
+
+**Statut.** Direction B **non validée définitivement** : rendu jugé trop classique /
+générique. Menée jusqu'au bout pour obtenir une version complète et comparable — un
+**modèle de travail** pour une future direction fondée sur un modèle visuel plus précis.
+On n'a donc ni défendu ni enrichi l'esthétique ; pas de nouvel effet, folio ou ornement
+hors cadrage. Données et textes éditoriaux validés inchangés ; rubriques en réserve non
+réactivées.
+
+Choix de composition, par page (un commit chacun) :
+- **Profil** : en-tête compact pour faire remonter le profil au premier écran (les
+  textes validés sont conservés, seule leur mise en page change) ; répertoire resserré
+  pour élargir le graphe ; onglets soulignés ; folio/cote **discrets** (repère
+  secondaire, jamais un décor), tirés des données (rang + `musee_principal.code`).
+- **Œuvres** : abandon de la grille de cartes blanches au profit d'une liste continue à
+  filets ; le verbatim (mots exacts du musée) passe en tête de hiérarchie ; un
+  **emplacement média réservé** par entrée matérialise les futures reproductions sans en
+  inventer. Ordre par mention et bloc « d'après » conservés.
+- **Musées** : suppression du plafond 32 rem ; grande carte + flanc (légende, hors-cadre,
+  collant). Logique de projection, points fixes, liens POP et tooltips **inchangés**.
+- **Comprendre les mentions** : la ligne ne sert qu'une fois (les trois territoires) ;
+  définitions en trois colonnes ; comparaison chiffrée conservée (barres, échelle
+  commune, réserves de recouvrement).
+- **Méthode** : sommaire en rail collant + colonne de contenu ; **la ligne n'est pas
+  imposée** là où elle n'explique rien (consigne). Contenu validé intégralement conservé.
+
+Geste transversal : toutes les **boîtes grises arrondies** (précaution, « à part »,
+sommaire) deviennent des **filets** — cohérence Direction B, moins d'encadrés.
+
+## 2026-07-17 (quinquies) — Direction artistique retenue : B « la ligne de proximité » (+ coquille & accueil)
+
+Après la revue globale (planche de l'existant, diagnostic, trois directions maquettées
+avec vraies données/portraits/polices), la **Direction B « la ligne de proximité »**
+est retenue.
+
+**Pourquoi B.** Le diagnostic pointait une app « trop documentaire » : colonne centrée
+étroite, boîtes grises répétées, dataviz qui flotte, pages sans rôle visuel distinct,
+allure générique. B fait du **sujet la structure** : une ligne horizontale continue, de
+la main du maître (chaud) à sa seule influence (froid), organise chaque page ; les huit
+pigments en sont les stations. C'est la direction la plus **identifiable** (tirée de la
+donnée, pas d'une métaphore extérieure), elle **occupe l'écran**, donne un **rythme
+commun**, et réutilise le nuage horizontal déjà en place (donc moins de refonte dataviz).
+Emprunts prévus aux autres pistes : **verbatims-matière** + **portrait N&B** + infographies
+titrées/sourcées (dir. C, second choix), **folios/cotes** et traitement en « entrée »
+(dir. A). Directions A et C conservées en réserve de maquettes (scratchpad).
+
+**Implémentation, palier 1 — coquille + accueil.** Par pages complètes, jamais par
+microcomposants (consigne utilisateur).
+- **Token `--spectre`** (`tokens.css`) : dégradé des huit pigments, chaque couleur au
+  centre de sa station (i+0,5)/8, température = distance. Signature du projet.
+- **`Spectre.svelte`** : la ligne réutilisable (bande + libellés des trois territoires
+  en option, alignés sur les segments de l'axe ; repli mobile sans chevauchement).
+- **Coquille** (`+layout.svelte`) : le **filet brun de tête est remplacé par la ligne**
+  (spectre 3 px en signature sur toutes les pages) ; canevas élargi (`--largeur-max`
+  60 → **68 rem**) pour finir la colonne étroite (le texte courant reste borné page par page).
+- **Accueil** (`+page.svelte`) : recomposé — spectre à territoires en tête, grand titre
+  Fraunces, promesse, **CTA en encre** (plus un bouton de landing) + lien souligné ocre,
+  figure de données à 8 stations, chiffre 24 507 en **preuve secondaire**. Textes validés
+  inchangés (composition seule). La figure « Joconde » reste provisoire/remplaçable.
+
+Pages non encore refondues (Explorer, Comprendre, Méthode) : intactes et fonctionnelles
+sous la nouvelle coquille (vérifié). Décisions différées du bandeau maître non rouvertes.
+
+## 2026-07-17 (quater) — Socle V1 : Méthode, Accueil-couverture, nav à 4 entrées
+
+Clôture du socle éditorial V1. Décisions :
+
+1. **Page Méthode = une page unique, éditoriale.** Cinq sections (Périmètre ·
+   Construction des données · Lire les chiffres · Limites · Sources et droits) plutôt
+   qu'une FAQ ou une suite de cartes. Tous les chiffres sont **lus depuis les exports
+   canoniques** (jamais réécrits) : la page devient fausse si le pipeline change, mais
+   jamais incohérente avec lui.
+
+2. **Correction d'une divergence de données (source canonique qui fait foi).** La
+   catégorie « copie » était affichée à 22 844 dans `typologie.md` (somme naïve
+   `d'après 22 564 + copie 280`, qui ignore le recouvrement de 220 notices). La valeur
+   canonique dédupliquée est **22 624** (`niveaux.json` `copie`, `vue_ensemble`
+   `copies_dapres.total`). Corrigé dans `typologie.md` (+ révision 27 273 → **27 270**,
+   même cause). Règle retenue : **l'interface et les docs reprennent la valeur de
+   l'export**, pas une somme recalculée à la main. « d'après » seul reste 22 564.
+
+3. **Accueil = couverture éditoriale, le chiffre en preuve secondaire.** Deux zones
+   (promesse / figure). Le grand nombre (24 507) quitte le premier plan : il devient une
+   preuve sous la couverture, avec renvoi à la Méthode. Le cas mono-musée (Nice/Barla)
+   sort de l'accueil (trop technique) → Méthode uniquement (architecture §3).
+
+4. **Figure « Joconde » = figure de DONNÉES, provisoire et assumée.** Zone média
+   remplaçable : un motif schématique (rangées de « notices » + les 8 pigments des
+   mentions le long d'une ligne de proximité), pas une reproduction de *La Joconde* ni un
+   chapitre Léonard (architecture §6). Aucun visuel définitif imposé : la légende dit
+   « composition provisoire ». La direction artistique tranchera à la revue globale.
+
+5. **Nav publique recentrée à 4 entrées actives** : Accueil · Explorer les maîtres
+   (route `/les-presque`) · Comprendre les mentions (`/echelle`) · Méthode (`/methode`).
+   « Les révisions » et « La carte » **retirées de la nav publique** ; leur code et leurs
+   données restent au dépôt (routes non liées, réintégrables). Fin des entrées grisées
+   « à venir » (le champ `prete` et la branche sont conservés pour plus tard).
+
+Nouveaux fichiers : `web/src/routes/methode/+page.{js,svelte}`, accueil refondu
+(`web/src/routes/+page.svelte`). Ces deux pages **terminent le socle**, elles ne sont pas
+l'aboutissement de la direction artistique.
+
+## 2026-07-17 (ter) — Zone « Comprendre les mentions » (page autonome du vocabulaire)
+
+Création du chapitre autonome prévu par l'architecture §3. Choix consignés :
+
+1. **Réutiliser la route `/echelle`**, pas en créer une concurrente. Le placeholder
+   « L'échelle du doute » devient la page du vocabulaire ; le libellé public passe à
+   **« Comprendre les mentions »** (provisoire — le recentrage complet de la nav à
+   4 entrées reste à faire, hors périmètre de cette tâche).
+
+2. **Barres, jamais d'anneau** (déjà acté 2026-07-15, ici appliqué). Deux panneaux
+   « petits multiples » à **échelle commune** (même `maxPart`) : l'ensemble de Joconde
+   (24 507) et les 27 noms (2 341). La comparaison de FORMES rend visible le
+   basculement (« attribué à » domine globalement ; école/atelier/manière montent dans
+   les 27). Une **troisième série** (hors 27) n'a pas été ajoutée : sa forme recopie
+   presque l'ensemble (22 166 sur 24 507), elle n'améliore pas la lecture.
+
+3. **Ne pas présenter les barres comme les parts exclusives d'un tout.** Les mentions
+   se recouvrent : aucune n'est empilée, chaque barre est une part indépendante des
+   œuvres concernées, et une note dit explicitement que « les parts ne s'additionnent
+   pas à 100 % ». Les copies « d'après » (22 564) sont nommées **à part** (pas un
+   doute). La concentration mono-musée (Nice/Barla) est **renvoyée à la page Méthode**
+   d'une phrase, sans en faire le récit de la page.
+
+4. **Sources uniques, aucun doublon.** Définitions = champ `corps` de
+   `familles-public.js` ; regroupement + annotations = `territoires.js` ; couleurs =
+   tokens de pigments. La formule type n'apparaît que là où `montrerMention` est vrai
+   (règle anti-répétition existante), avec un nom générique « un maître ». Aucun terme
+   interne (« famille », « niveau », « presque lui »…) dans la copie.
+
+Nouveaux fichiers : `web/src/routes/echelle/+page.{js,svelte}`, composant
+`web/src/lib/BarresMentions.svelte`. `vue_ensemble.json` ajouté à `sync:data`.
+Détail d'affichage : « <1 % » quand une part non nulle arrondirait à zéro.
+
+## 2026-07-17 (bis) — Charte palier 3 : zone TroisTerritoires (principe visuel central)
+
+Rendre lisible, dans le graphique lui-même, la **distance à la main du maître**
+(architecture §5). Choix consignés :
+
+1. **Regroupement, pas nouvelle nomenclature.** Les huit mentions restent celles de
+   `familles-public.js` (labels + couleurs, source unique) ; on ne fait que les
+   **grouper** en trois territoires, dans une primitive dédiée `territoires.js`
+   (titre + annotation courte par zone). Réutilisable telle quelle par « Comprendre
+   les mentions ». L'ordre de l'axe (`ORDRE_FAMILLES`) fait déjà correspondre chaque
+   territoire à une plage contiguë de colonnes (0-1 / 2-4 / 5-7) ; un garde-fou en
+   dev signale toute dérive entre les deux modules.
+
+2. **Une seule ligne de proximité, pas trois cartes.** Les territoires sont matérialisés
+   par des **fonds très légers contigus** (tokens `--territoire-pres/autour/influence`,
+   dérivés des pigments repères, température = distance), des **séparateurs fins** aux
+   frontières internes, et des **titres** en tête. Aucun cadre ni marge entre les zones :
+   le graphe reste un continuum gauche → droite. À éviter explicitement (architecture §8) :
+   l'effet « trois blocs décoratifs indépendants ».
+
+3. **Annotations éditoriales dans la clé HTML, pas dans le SVG.** Le texte SVG ne revient
+   pas à la ligne : une annotation par territoire y serait illisible en mobile. Les
+   annotations vivent donc dans la **clé de lecture** sous le graphe, qui **rétablit du
+   même coup la clé minimale** que la sortie de la légende du répertoire (2026-07-17)
+   avait retirée. La clé reprend les trois territoires (titre, annotation, mentions à
+   pastilles), en cellules contiguës qui rejouent les bandes du graphe.
+
+4. **Données, points, couleurs, tooltips inchangés.** Recadrage purement visuel : la
+   géométrie a été ajustée (bandeau de titres en tête, plot descendu) mais l'échelle
+   commune, les positions et l'infobulle harmonisée sont intactes. Accessibilité :
+   `aria-label` du graphe enrichi (les trois territoires), `aria-label` des points
+   conservé.
+
+Nouveaux fichiers : `web/src/lib/territoires.js` ; tokens `--territoire-*` dans
+`tokens.css`. Vérifié sur trois profils opposés (Ingres/Le Brun/Rembrandt : le volume
+principal tombe dans un territoire différent) et en mobile.
+
+## 2026-07-17 — Charte palier 3 : zone Répertoire (colonne de navigation)
+
+Deuxième zone du kit. Choix consignés :
+
+1. **Un composant dédié `Repertoire.svelte`**, pour matérialiser la séparation
+   répertoire ↔ profil (architecture §4) : la page ne garde que `selection` (liée),
+   toute la logique de choix (recherche, tri, liste) vit dans le répertoire.
+
+2. **Tri : « Œuvres concernées » par défaut, « A→Z » en option.** Motif :
+   « trier par valeur, sauf ordre naturel » (CLAUDE.md) — le doute EST la valeur du
+   dossier, on garde donc l'ordre décroissant par défaut ; l'alphabétique n'est qu'une
+   aide pour retrouver un nom précis. Libellés publics (« Œuvres », pas « doute » ni
+   « notices »). Tri alphabétique sur le nom affiché complet (`localeCompare` fr).
+
+3. **Sélection active renforcée** : filet d'accent à gauche + fond soutenu +
+   `aria-current="true"`. Le filet est transparent au repos (réservé à l'actif) pour
+   ne pas décaler la largeur d'un rang quand il devient actif.
+
+4. **Retrait de la légende détaillée** (`LegendeFamilles`) de sous la liste. Elle
+   n'appartient pas au répertoire (outil de choix) : elle rejoindra « Comprendre les
+   mentions » (architecture §3), chapitre autonome sur le vocabulaire. Le composant
+   reste au dépôt pour cette reprise ; en attendant, les couleurs restent explicables
+   par les tooltips (jauges, graphique) — état transitoire assumé.
+
+5. **Responsive repliable** (architecture §4 « colonne fixe ou repliable ») : sur
+   mobile, un bouton replie/déplie le répertoire ; replié d'emblée pour donner la
+   priorité au profil, refermé après un choix. `matchMedia` en `$effect` plutôt qu'un
+   `<details>` natif (piège de réouverture selon la largeur, cf. 2026-07-13) ; en
+   pré-rendu l'effet ne tourne pas, l'état par défaut « déployé » sert le desktop.
+
+Note d'outillage (pas une décision de fond) : `vite preview` charge le manifeste du
+build à son démarrage — après un rebuild, **le redémarrer**, sinon il sert d'anciens
+chunks CSS hachés (404) et la page s'affiche sans ses styles de composant.
+
+## 2026-07-16 (quinquies) — Charte palier 3 : prototype du kit (BandeauMaitre, ChiffreVedette, onglets)
+
+Premier palier de code du kit de composants (charte §5), en prototype sur la fiche
+maître réelle. Trois décisions à consigner, dont une qui touche l'**approche
+éditoriale** (donc à valider) :
+
+1. **Onglets renommés** Graphique/Œuvres/Carte → **Profil · Œuvres · Musées**.
+   Motif : libellés éditoriaux (ce que le lecteur y trouve), pas des noms de forme
+   de dataviz. Mapping : *Profil* = le graphique des formes du doute (nuage),
+   *Œuvres* = les cas concrets, *Musées* = la carte géographique. État interne
+   `vue` aligné (`profil`/`oeuvres`/`musees`).
+
+2. **Synthèse calculée dans le bandeau — réintroduction assumée.** Le bloc de profil
+   avait perdu tout « angle » le 2026-07-10 (2e passe) : le paragraphe de situation
+   ne faisait plus que situer volume et dispersion. La charte du 2026-07-16 demande
+   une **« phrase de synthèse calculée »** dans BandeauMaitre. On la réintroduit,
+   mais **strictement factuelle** : elle nomme la **formule la plus fréquente** pour
+   ce maître (famille dominante d'artistes.json) et sa part, sans dire ce que la
+   formule « signifie ». Cohérent avec « on lit ce que les musées écrivent » : c'est
+   un constat de fréquence, pas une interprétation du doute (le sens reste aux
+   tooltips et au graphique). Le paragraphe volume/dispersion, lui, ne change pas.
+   **⏸ à valider** (formulation « Le plus souvent : « … », <part> des œuvres concernées »).
+
+3. **Limite de `fractionEnMots` à corriger.** Le helper plafonne à
+   « près des deux tiers » (seuil 62 %). Or la formule dominante peut monter bien
+   plus haut : *école de* Le Brun ≈ 240/310 = **77 %**, rendu « près des deux tiers »
+   → **sous-estimation**. Options si le point 2 est validé : ajouter des paliers
+   hauts au helper (« plus des trois quarts », « la grande majorité »…) OU réserver
+   `fractionEnMots` aux fractions basses/moyennes et traiter la dominante à part.
+   Non tranché ici (`fractionEnMots` est partagé, ne pas le modifier sans décision).
+
+Composants : `web/src/lib/ChiffreVedette.svelte` (grand nombre Fraunces tabulaire +
+légende), `web/src/lib/BandeauMaitre.svelte` (portrait agrandi + nom + synthèse +
+chiffres, seuil mono-colonne géré en `@container`). Périmètre tenu : ni répertoire,
+ni nuage, ni accueil touchés.
+
+## 2026-07-16 (quater) — Chantier direction artistique & architecture éditoriale (cadrage, ⏸ à valider)
+
+Insertion d'un chantier de cadrage **plus haut niveau que le kit de composants** :
+repenser l'application comme une **publication éditoriale** centrée sur « Les
+presque », pas comme une succession de blocs fonctionnels. Le problème n'est plus
+la charte (couleurs/typo/coquille cohérentes) mais la **direction artistique** et
+l'**architecture éditoriale**. Document de cadrage créé : **`docs/architecture-editoriale.md`**
+(note de direction, à valider ; aucun code, nav du front non modifiée).
+
+Axes cadrés (détail dans le document) :
+- **Nav publique recentrée à 4 entrées actives** : Accueil · Explorer les maîtres ·
+  Comprendre les mentions · Méthode. Réserve (Avant/après, échelle, carte) **hors
+  nav** ; fin des entrées grisées « à venir ». **« Vue d'ensemble » n'est pas une
+  entrée** : elle vit dans « Comprendre les mentions ».
+- **Accueil = couverture éditoriale** : promesse d'abord, chiffre (24 507) ensuite,
+  exception de Nice renvoyée en Méthode ; composition asymétrique prenant l'écran.
+- **Explorer les maîtres = séparation nette répertoire ↔ profil** (colonne de
+  navigation à gauche ; scène du maître à droite avec bandeau de profil + phrase de
+  synthèse calculée ; vues Profil / Œuvres / Musées).
+- **Comprendre les mentions** = chapitre autonome du vocabulaire des 8 formules +
+  Vue d'ensemble, organisé par les **trois territoires**.
+- **Méthode** = page unique ; une seule phrase de prudence visible ailleurs.
+- **Principe visuel central = la distance à la main du maître** (3 territoires :
+  au plus près / autour / dans son influence), décliné partout.
+
+**Précision utilisateur sur l'illustration Joconde** : elle renvoie à la **base de
+données Joconde** (archive, notices, grille, index, open data, esthétique numérique
+sobre), **pas** à *La Joconde* comme œuvre ni à Léonard. Traitée en **figure de
+données**, langage visuel **reproductible** (déclinable à d'autres maîtres / formes
+abstraites), jamais dépendante d'une seule image. Viser une figure **originale** ;
+tout élément externe = source secondaire, licence vérifiée fichier par fichier
+(règle CLAUDE.md), déclarée ici et en Méthode.
+
+Ce cadrage **précède et oriente le palier 3 (kit de composants)** : on ne
+reconstruit les composants qu'au service de cette architecture. Libellés de menu et
+titres du projet **à confirmer** (décision des titres toujours différée).
+
+## 2026-07-16 (ter) — Charte : palier 2 — coquille « inventaire » (fait)
+
+Deuxième palier, limité à **header, navigation, structure générale** (ni fiche
+maître ni composants internes touchés ; données intactes ; rubriques en réserve
+intactes).
+
+- **Coquille refaite** (`+layout.svelte`) : filet d'accent (terre brûlée) en tête
+  de page ; **masthead** aligné sur la colonne de contenu (`--largeur-max`),
+  wordmark en Fraunces à gauche, nav à droite ; **navigation « catalogue »** en
+  Public Sans, petites capitales espacées ; **indicateur de page courante**
+  (`$app/stores` → `aria-current` + soulignement d'accent) ; items en réserve
+  estompés (inchangés dans leur contenu). Rythme passé aux **tokens** (`--espace-*`,
+  `--filet`, `--taille-*`).
+- **Italique Spectral intégrée** (demande utilisateur, pour futures micro-légendes
+  / mentions) : `source_fonts.py` régénère avec `Spectral:ital,…` ; le style entre
+  dans le nom de fichier (`spectral-400i-*`), le romain existant est préservé.
+  10 woff2 désormais dans `static/fonts/`.
+- **Espaces fines des grands nombres vérifiées** : « 24 507 » (Fraunces) affiche
+  correctement l'espace fine insécable → RAS.
+- Vérifié par capture avant/après (accueil + Les presque, page active soulignée),
+  `npm run build` OK.
+
+Note d'outillage (sans impact code) : `vite preview` sert un `build/` incohérent
+si on rebuild à chaud → toujours redémarrer le preview après un build pour les
+captures (sinon CSS de layout en 404).
+
+Restes pour le palier 3 (kit composants) : nombres de listes/dataviz en Public
+Sans tabulaire ; appliquer l'italique Spectral aux micro-légendes/mentions ;
+unifier cartes/onglets/légende/barres.
+
+## 2026-07-16 (bis) — Charte : palier 1 — base typographique globale (fait)
+
+Premier palier d'implémentation de la charte, volontairement **limité à la typo**
+(pas de refonte de composants, données intactes, fiche maître non touchée,
+rubriques en réserve intactes).
+
+- **Polices en local, sans CDN.** Script reproductible `web/scripts/source_fonts.py`
+  (même esprit que `source_portraits.py`) : télécharge les woff2 (sous-ensembles
+  latin + latin-ext, pour « œ ») dans `web/static/fonts/` et génère
+  `web/src/lib/styles/fonts.css` (URLs locales `/fonts/…`). 8 fichiers, ~277 Ko
+  au total. Fraunces et Public Sans en **variable**, Spectral en 400/600.
+  Ces fichiers sont des **assets versionnés** (comme `static/portraits`, `static/geo`).
+- **Tokens ajoutés à `tokens.css`** : `--police-titre` = Fraunces, `--police-texte`
+  = Spectral, `--police-ui` = Public Sans (avec fallbacks) ; **échelle typo**
+  (`--taille-*`), **espacement** (`--espace-1..6`), **rayons**, **filets**,
+  `--surface-carte`, `--ombre-douce`, `--focus-anneau`. Georgia + system-ui retirés.
+- **Base typographique globale seulement** (dans `+layout.svelte`) : `body` =
+  Spectral ; `h1`/`h2` = Fraunces (h3 laissé en Spectral pour **ne pas surutiliser
+  Fraunces**) ; `button`/`input`/`select`/`table` = Public Sans ; `th`/`td` en
+  chiffres tabulaires ; nav et pied en Public Sans, wordmark en Fraunces.
+- **Vérifié par capture avant/après** (accueil + Les presque) : identité nettement
+  plus « catalogue », « œuvres » (latin-ext) OK, `npm run build` OK.
+
+Restes connus (pour le palier composants) : nombres des dataviz/listes encore en
+serif (à passer en Public Sans tabulaire) ; vérifier l'espace fine des grands
+nombres en Fraunces ; italique Spectral non encore embarquée. Source de vérité de
+la direction : `docs/charte-graphique.md`.
+
+## 2026-07-16 — Charte graphique : direction arrêtée (application-cadre)
+
+Décision de travailler la charte de **toute l'application-cadre** *L'inventaire du
+doute* (pas seulement la rubrique des 27 maîtres), « Les presque » servant de
+terrain d'épreuve V1, avec extensibilité aux dossiers futurs. Proposition de
+direction validée ; **source de vérité = `docs/charte-graphique.md`**.
+
+Points arrêtés :
+- **Concept** : « un inventaire, pas un tableau de bord » (catalogue de musée :
+  papier crème, encre, filets, marges) ; idée directrice = distance à la main du
+  maître (température des pigments).
+- **Ambiance typographique « Catalogue savant »** (choix utilisateur) : **Fraunces**
+  (titrage / chiffres vedettes / verbatims) + **Spectral** (texte éditorial) +
+  **Public Sans** (UI, données, labels ; IBM Plex Sans en alternative). Libres
+  (OFL), **auto-hébergées** (woff2 sous-ensemblées, pas de CDN). Georgia +
+  `system-ui` abandonnés (cause du « trop normé »). Chiffres tabulaires partout,
+  kickers en petites capitales.
+- **Palette** : conservée et formalisée en 3 étages (neutres / accent éditorial
+  terre brûlée / couleurs sémantiques), la **boîte de pigments inchangée** ;
+  mécanisme d'**accent par dossier** (`--accent-presque/-revisions/-copie`).
+- **Tokens à ajouter** (absents) : espacement, rayons, filets, ombre douce, focus,
+  échelle typo.
+- **Kit de composants** à unifier (cartes, onglets, légende, barre) autour de
+  primitives partagées ; `Infobulle` gardée ; `GalaxieMaitre` au placard.
+- **Extensibilité** : cadre agnostique du dossier ; pas de reskin par dossier ;
+  Vue d'ensemble = pas d'anneau.
+
+Pas de code à ce stade (proposition de direction). Prochain palier pressenti :
+tokens + typographie dans `tokens.css`, puis la coquille.
+
+## 2026-07-15 (quater) — « Vue d'ensemble » : export préparé, cadré prudemment (pas de front)
+
+Après le rapport de reconnaissance (docs/donnees.md 2026-07-15), l'utilisateur
+valide une future section « Vue d'ensemble » des formulations prudentes, mais
+**strictement sur le solide**. Export dédié créé : `data/exports/web/vue_ensemble.json`
+(`src/build_vue_ensemble.py`, recalculé depuis les exports validés, `assert` de
+cohérence). Contenu retenu :
+- familles de doute **global / dans‑27 / hors‑27** (8 familles, `presume` exclue) ;
+- **niveaux global vs 27** + **global hors monoculture** (14 223 / 3 537 / 956) ;
+- bloc **monoculture** (Nice/Barla, 5 791) ; totaux ; **copies « d'après » à part** (22 624).
+
+**Choix explicites (à respecter côté front plus tard) :**
+- **Pas de diagramme en anneau** ici : les familles se recouvrent (pas une
+  partition) → barres, jamais un donut.
+- **Pas de classement par nom hors des 27** (désambiguïsation absente).
+- **Pas de période en V1** (~16 % datables).
+- **Domaines** : seulement avec caveat de double‑comptage (multi‑valué) — **hors
+  export** à ce stade.
+- **Top musées** : laissés **en réserve** (données dispo, non incluses).
+- **Message central** porté par la vue et écrit dans le JSON (`message_central`) :
+  « attribué à » domine au global ; école/atelier/manière prennent le dessus dans
+  les 27 → c'est ce contraste (niveau 1 global 81,7 % vs niveau 2 dans‑27 52,7 %).
+
+Pas de front pour l'instant. Export **non synchronisé** vers `web/static/data/`
+(reste dans `data/exports/web/`) tant qu'aucune dataviz ne le consomme.
+
+## 2026-07-15 (ter) — RECENTRAGE : « Les presque » devient la 1re publication complète
+
+Décision de cadrage (utilisateur, après évaluation externe). Plutôt qu'une
+« encyclopédie inachevée de toutes les formes de doute » (plusieurs rubriques
+inégales juxtaposées), on construit **une enquête visuelle complète sur une seule
+forme du doute : « Les presque »** — les œuvres que les musées rapprochent d'un
+grand maître sans les lui attribuer (« attribué à », « atelier de », « école de »,
+« manière de »…). Motif fort propre au projet : cela répond directement au défaut
+de compréhension déjà constaté (un visiteur ne saisit pas un front à 6 chantiers).
+
+**Conséquences actées maintenant :**
+- **Les autres rubriques passent en PAUSE / réserve** : « Avant / après »
+  (`/revisions`), « L'échelle du doute », « La carte ». Le code et les données
+  restent dans le dépôt (rien n'est supprimé) — dossiers futurs de
+  *L'inventaire du doute*. `/revisions` repasse `prete: false` (hors nav publique).
+- Tout le travail « Avant / après » (pipeline `build_revisions.py`,
+  `revisions.json`, tests, onglets, anneau, cartes, `revisions-labels.js`,
+  `VignetteOeuvre`) est **conservé en l'état** comme dossier 2 prêt à reprendre.
+
+**Encore OUVERT (mes recommandations, non tranché par l'utilisateur) :**
+- Titre/marque : garder « L'inventaire du doute » comme cadre + sous-titre de
+  dossier « Les presque — autour des grands maîtres » (reco), vs titre unique, vs
+  renommage. **Non décidé.**
+- Périmètre de la v1 : socle (Accueil + Les maîtres + Méthode) d'abord vs complet
+  (+ Le vocabulaire du presque + Comparer) vs décider après la charte. **Non décidé.**
+- Garde-fous à intégrer quand on avancera : rendre visible le critère des 27 noms
+  (≥ 20 notices de doute hors copie, après désambiguïsation — pas un panthéon) ;
+  ne pas garder d'onglets désactivés en nav publique ; le cas Alençon reste un fil
+  narratif valide (formules prudentes = « presque »).
+- **À faire plus tard** : amender le cadrage large de `CLAUDE.md` (question
+  centrale + Alençon) pour refléter ce resserrement éditorial.
+
+Prochaine étape pressentie : figer la charte graphique sur « Les maîtres » comme
+socle, puis décider titre + périmètre.
+
+**Réalignement documentaire acté le 2026-07-15 (sexies, journal).** Décision
+formulée : « La V1 publique de *L'inventaire du doute* sera centrée sur le dossier
+"Les presque". Les autres rubriques ou formes de doute, notamment "Avant / après",
+restent documentées et conservées dans le projet, mais ne font plus partie du
+périmètre publiable initial. » Répercutée dans `roadmap.md` (bloc « ★ RECENTRAGE » :
+périmètre V1 / en réserve / déjà fait ; P3-T2 marquée EN RÉSERVE),
+`rubrique-revisions.md` (bandeau), `README.md` (État du projet). Aucun code, aucune
+suppression, aucun déplacement.
+
+## 2026-07-15 (bis) — « Avant / après » : « Les œuvres » prototype 1 catégorie (⏸ validation)
+
+Onglet « Les chiffres » (anneau) validé comme base (réserves notées : force
+visuelle de l'anneau à revoir en passe charte ; garder « L'œuvre est reclassée
+comme copie » partout). Étape 5 du brief : prototype d'UNE catégorie de « Les
+œuvres » avant généralisation. Fait sur « Un nom en remplace un autre » :
+
+- **Nouveau composant `web/src/lib/VignetteOeuvre.svelte`** : image 4:3 affichée
+  seulement si statut ∈ {open, authorized} + url + credit (image cliquable vers
+  POP, crédit sous l'image) ; sinon **placeholder soigné** (bordure fine,
+  pictogramme discret, « Reproduction non affichée » + « Droits de réutilisation
+  en cours de vérification »). Jamais de rectangle gris vide, jamais de hotlink.
+- **`CarteRevision` refondu** : variantes `principale` (horizontale, vignette à
+  gauche) / `secondaire` (verticale, vignette en haut) ; vocabulaire
+  « Attribution antérieure » / « Attribution actuelle » / « Consulter la notice
+  sur POP → » (fin de « A porté »/« Aujourd'hui ») ; antérieure un peu plus
+  discrète mais **jamais barrée** ; phrase de récit dérivée de la catégorie
+  (revisions-labels.js) ; bord gauche à la **couleur de la catégorie** (cohérent
+  avec l'anneau). Surcharges `libelle`/`recit`/`couleur` pour le filtre
+  transversal « inverse ».
+- **Modèle image enrichi** dans le pipeline (`build_revisions.py`) : `image` gagne
+  `alt` et `licence` (tous null/pending) — les futures images s'ajouteront sans
+  reconstruire les cartes.
+- **Onglet « Les œuvres »** : titre interne « Les changements, œuvre par œuvre »,
+  chips « libellé · N exemples » (distinct des nombres du corpus), phrase d'intro
+  propre au filtre sélectionné, **carte principale** large puis **grille 2
+  colonnes** (jamais 3), 1 colonne sur mobile.
+
+Le système de cartes est générique : la validation porte sur le MODÈLE (vu sur
+« Un nom en remplace un autre »). Généralisation = vérifier les autres filtres
+(verbatims longs, cartes « inverse ») + petits ajustements. `pytest` = 60,
+`npm run build` OK, prototype + mobile vérifiés par capture. Restent ensuite :
+« En bref » puis « Repères » (2 colonnes) puis passe mobile/a11y d'ensemble.
+
+## 2026-07-15 — « Avant / après » : refonte datajournalisme (étapes 1-3, ⏸ validation)
+
+Application d'un brief dirigiste (approche datajournalisme) qui garde les 4 onglets
+mais retravaille chaque onglet comme un chapitre autonome. Contraintes fortes
+reprises : pas de dashboard, pas de scrollytelling, pas de logique juste/faux ni
+rouge/vert, ne jamais présenter une révision comme une erreur corrigée ni
+l'attribution actuelle comme définitive. Vocabulaire imposé : « Attribution
+antérieure » / « Attribution actuelle » / « Consulter la notice sur POP → ».
+
+Le brief impose son propre ORDRE avec points de validation. **Fait (étapes 1-3),
+en attente de validation avant « Les œuvres » :**
+
+- **Libellés recentralisés** (3e passage). Source de vérité du NOM = pipeline
+  (`revisions_classify.py` → `libelles_categorie`). Nouveaux libellés :
+  `autre_nom` = « Un nom en remplace un autre » · `anonyme` = « Le nom n'est plus
+  retenu » · `meme_nom` = « Le nom demeure, avec réserve » · `copie` = « L'œuvre
+  est reclassée comme copie » · `deja_copie` = « L'ancienne attribution était déjà
+  une copie » · `plusieurs_noms` = « Plusieurs noms se succèdent » · `mineur` =
+  « Cas particuliers ». Pseudo-catégorie transversale (galerie) `inverse` =
+  « De l'anonymat à une attribution nominative » (décrit la notice, n'affirme pas
+  qu'on a retrouvé le véritable auteur).
+- **Nouveau module front `web/src/lib/revisions-labels.js`** : source unique pour
+  ce que le JSON ne porte pas — couleur par catégorie, appartenance aux deux
+  groupes éditoriaux, phrase d'intro par filtre, phrase de récit par carte, def
+  `inverse`. Palette : famille **violette** (passages lisibles) + famille **chaude
+  ocre/taupe** (trajectoires complexes) — cohérente autour de l'accent, pas
+  d'arc-en-ciel, pas de hiérarchie morale ; la couleur distingue les deux groupes.
+- **Onglet « Les chiffres » refait** : barres → **diagramme en anneau**
+  (`web/src/lib/AnneauRevisions.svelte`). Justification dataviz (exigée par le
+  brief) : Q = « comment se répartissent les 26 667 notices ? » ; message = une
+  composition d'un tout ; l'anneau lit une part-d'un-tout que des barres ne
+  racontent pas. Centre = total au repos, puis pct/libellé/nombre au survol/focus.
+  Légende chiffrée en 2 groupes = couche accessible (boutons focusables clavier ;
+  segments décoratifs `aria-hidden`). Constat « 49,2 % » en tête + 3 enseignements ;
+  **toutes les valeurs calculées depuis `revisions.json`** (constat, et 27,6 % =
+  mineur+plusieurs_noms+deja_copie), aucune codée en dur.
+- **Chapô permanent** remplacé (formulation « observe les passages d'une
+  formulation à une autre, sans décider laquelle constitue la bonne attribution »).
+
+Reste à faire (prochaines étapes du brief, après validation) : « Les œuvres »
+(carte principale + grille 2 colonnes, intros par filtre, phrase de récit par
+carte, composant placeholder image 4:3 avec statut de droits, vocabulaire
+« Attribution antérieure/actuelle »), puis « En bref », puis « Repères » (deux
+colonnes « Ce que montrent les données / Ce qu'elles ne permettent pas de
+conclure »), puis passe mobile + accessibilité. `pytest` = 60, `npm run build` OK,
+anneau vérifié par capture (repos + survol).
+
+## 2026-07-14 (quater) — « Avant / après » : palier de réorganisation ÉDITORIALE
+
+La V1 (tout sur une page) n'était pas publiable : contenu en vrac, narration non
+structurée, labels trop techniques, cartes trop « base de données ». Palier de
+réorganisation **éditoriale** (pas de refonte graphique, pas d'images) validé et
+implémenté.
+
+**Onglets** (titre + chapô permanents au-dessus) : *En bref* (présentation +
+une carte emblématique + lien vers la galerie) · *Les chiffres* (le graphe en
+deux temps : « Le constat principal » = 4 familles de galerie à échelle commune,
+puis « Les cas secondaires » = 3 familles atténuées) · *Les œuvres* (chips par
+type, **un seul groupe déroulé à la fois**, jamais les 32 d'un coup ; chip
+transversal « Un nom réapparaît » = direction inverse) · *Repères* (limites
+courtes, renvoi à la future page méthode).
+
+**Labels publics refondus** (phrase qui dit ce qui arrive au NOM, plus de
+« Vers… ») — source de vérité `revisions_classify.py`, rebuild fait :
+`autre_nom` = « Un autre nom apparaît » · `anonyme` = « Le nom disparaît » ·
+`meme_nom` = « Le nom reste, avec réserve » · `copie` = « L'œuvre est reclassée
+comme copie » · `plusieurs_noms` = « Plusieurs noms se succèdent » · `deja_copie`
+= « Déjà une copie au départ » · `mineur` = « Cas particuliers » ; direction
+inverse (badge) = « Un nom réapparaît ».
+
+**Images — modèle de données RÉSERVÉ, rien d'affiché.** Chaque `cas` de
+`revisions.json` porte désormais `image: { statut, url, credit, source }`, statut
+∈ `open | authorized | pending | restricted`, tous à **pending**. `CarteRevision`
+prévoit l'emplacement mais n'affiche une vignette que si statut ∈ {open,
+authorized} ET url ET credit. **Jamais de hotlink POP** (la Licence Ouverte
+couvre le texte, pas les clichés) ; droits à clarifier fichier par fichier plus
+tard (voie Wikimedia, comme les portraits).
+
+**Hors de ce palier** (assumé) : charte graphique, images affichées, autres
+graphes (daté/non daté, anciens noms, siècles, domaines → page méthode ou V2),
+filtre par ancien nom, ligne éditoriale par carte, vraie page « Méthode et
+limites ». `pytest` = 60 OK, `npm run build` OK, 4 onglets + filtre vérifiés par
+capture.
+
+## 2026-07-14 (ter) — « Avant / après » : bilan v2 VALIDÉ, cadrage front ouvert
+
+L'utilisateur **valide le bilan post-vérification et la taxonomie à 7 catégories**.
+Précisions actées :
+
+- **« Même nom, plus prudent » maintenue comme catégorie publique à part entière**
+  (minoritaire à 4 %, mais elle raconte une nuance : le nom reste, la notice ajoute
+  une réserve). **Libellé public retenu : « Le même nom, avec réserve »** (préféré
+  à « Même nom, attribution plus prudente »). → à répercuter dans le pipeline
+  (`libelles_categorie.meme_nom` et `passages`, `revisions.json`) au moment du front.
+- **Chaînes** (« Plusieurs anciens noms ») : conservées dans les statistiques,
+  **hors galerie V1**.
+- **Cas déjà « d'après »** (« Déjà une copie ou un d'après ») : conservés dans les
+  statistiques, **hors galerie V1**.
+- **Direction inverse** (anonyme → un nom, 5 283) : conservée pour **équilibrer le
+  récit** (le doute ne va pas que vers moins de certitude).
+- **Lot V1 = 32 cas** (par diversité, plafond 2/musée) validé.
+- **Tests figés avant front** validés.
+
+Ouvre la phase de restitution front (proposition sans code d'abord : structure,
+graphes, place de la galerie, wording public des 7 catégories, cartes exemples).
+
+## 2026-07-14 (bis) — « Avant / après » : bilan de vérification + taxonomie v2 (fait, ⏸ validation)
+
+Vérification manuelle des 80 lignes rendue par l'utilisateur (`echantillon_
+revisions_annotes.csv`) : **44 OK, 18 à exclure, 8 faux passage, 10 faux
+parsing**. Le « à exclure » vaut pour la galerie seulement — pas pour les
+statistiques ni la méthode (consigne explicite). Refonte de la classification
+en conséquence (`src/revisions_classify.py`, testée, calée sur les 80 verdicts).
+
+**Taxonomie v2 — 7 catégories** (au lieu de 4), 3 nées de la vérification :
+- *Vers un autre nom* (galerie) — 13 125 (49,2 %)
+- *Même nom, attribution plus prudente* (galerie, NOUVEAU) — 1 062 (4,0 %) :
+  même artiste, mais l'aujourd'hui ajoute une réserve (« Furini → Furini
+  attribué », « Rembrandt → Rembrandt manière de »). Demandé par l'utilisateur.
+- *Vers l'anonyme* (galerie) — 3 371 (12,6 %)
+- *Vers une copie* (galerie) — 1 742 (6,5 %)
+- *Déjà une copie ou un d'après* (stats, NOUVEAU) — 968 (3,6 %) : l'ancien label
+  était lui-même une copie ; pas un passage depuis une attribution pleine.
+- *Plusieurs anciens noms* (stats, NOUVEAU) — 3 177 (11,9 %) : chaînes de ≥ 2
+  hypothèses distinctes ; trop complexes pour une carte, gardées en statistiques.
+- *Changement mineur ou complexe* (stats) — 3 222 (12,1 %) : anonyme national →
+  anonyme, confirmations (« école de X → X »), notes de prose.
+
+Règles de distinction validées : une chaîne du **même** nom (Champaigne/Villot ;
+Champaigne/Brière) n'est PAS « plusieurs noms » (une hypothèse, plusieurs
+sources) ; « même personne » couvre l'inclusion de prénom (Le Nain Louis ↔ Le
+Nain) ; « plus prudent » exige que l'aujourd'hui porte une réserve (sinon
+c'est une confirmation, rangée en mineur) ; précédence côté aujourd'hui = nom >
+copie > anonyme. Écoles nationales seules (« École florentine → Pietro da
+Rimini ») **gardées en galerie** avec le verbatim (plus d'exigence d'un ancien
+nom extrait).
+
+**5 bugs de parsing corrigés** (repérés par l'échantillon) : parenthèses
+imbriquées (« Santi Di Tito (16e (2e moitié), Italie) » → nom sale) ; nom sali
+par une date (« GIOTTO, attribué en 1859 » → coupe à virgule/chiffre) ;
+« Changement d'attribution » / prose pris pour nom ; « ; » biographique DANS une
+parenthèse (« Dyck (Anvers, 1599 ; …) ») qui coupait à tort en deux hypothèses
+→ découpage respectant les parenthèses ; parenthèse ouvrante orpheline en tête.
+
+**Direction inverse** recomptée : 5 283 (anonyme → un nom), à valoriser.
+
+**Contrôle figé** (`tests/test_revisions.py`, 25 cas + cohérence CSV) : 44/44 OK
+restent en galerie, 0 cas « à exclure/faux passage » n'y fuit. Suite complète
+`uv run pytest` : 60 passés.
+
+**⏸ Validation du nouveau bilan** attendue avant le front (consigne utilisateur).
+
+## 2026-07-14 — « Avant / après » : pipeline construit + échantillon (fait, ⏸ vérif)
+
+Orientation V1 validée par l'utilisateur (libellés publics ajustés). Construit
+`src/build_revisions.py` → `data/exports/web/revisions.json` (16,7 Ko) et
+`src/build_revisions_sample.py` → `data/exports/echantillon_revisions.csv`
+(80 lignes stratifiées). Front non touché.
+
+Libellés publics figés : « Vers un autre nom / une attribution prudente /
+l'anonyme / une copie » (jamais « destination » ni le code interne).
+
+Arbitrages de construction (détail dans donnees.md) :
+- **Anciens noms = filtre, pas palmarès.** Le graphe de fréquence est fragile
+  (copies « d'après » comptées à tort ; effet mono-musée Louvre — Michel-Ange
+  202/233 au Louvre). Comptage retenu **hors « d'après »** ; on s'en sert pour
+  filtrer la galerie, pas comme classement vedette.
+- **Parsing renforcé** : préfixe-artefact « ancienne attribution : » (style
+  Louvre) retiré avant extraction du nom ; rejet anonyme/école/chiffre.
+- **Direction inverse chiffrée** (5 584, ≈ « vers l'anonyme ») : à raconter,
+  elle équilibre le propos (autant d'œuvres gagnent un nom qu'en perdent).
+- **Lot V1** : plafond 2/musée GLOBAL (pas par type) → 32 cas, 19 musées,
+  Louvre 6 %. Sélection déterministe (graine implicite : ordre CSV + tri image).
+
+Invariants `assert` à la génération : partition des passages = 26 667 ; quotas
+du lot atteints ; aucun cas sans référence POP ; plafond musée respecté.
+
+**⏸ Prochaine étape = vérification manuelle de l'échantillon par l'utilisateur**
+(colonnes verdict/commentaire), avant de figer des tests et de coder le front.
+
+## 2026-07-14 — « Avant / après » : cadrage V1 simplifié (arbitrages)
+
+Reprise du cadrage sur une base plus simple (demande utilisateur). Détail
+complet : **docs/rubrique-revisions.md** (réécrit V1). Arbitrages :
+
+- **Titre provisoire : « Avant / après »** (sous-titre non figé, retravaillé
+  plus tard — priorité au contenu).
+- **Structure primaire = par type de passage** (autre artiste / anonyme /
+  encore prudent / copie « d'après »), **grands noms en filtre secondaire** au
+  mot entier. Confirmé par les données : les destinations sont propres et
+  chiffrables ; par période (16 % datables) ou par musée (règle non
+  négociable) = écartés comme structure. L'intuition utilisateur est suivie.
+- **Lot éditorial réduit** (~32, fourchette 24–40), sélection **par diversité**
+  et non par prestige : plafond **2 cas/musée**, quotas par destination,
+  lisibilité (ancienne courte mono-segment, ancien nom extractible, titre
+  présent). Testé : 32 cas, 10 musées, **Louvre 19 %** (au lieu de 59,5 %) —
+  la diversité défait mécaniquement la concentration. Cas ambigus (chaînes,
+  prose, écoles nationales) exclus de l'interface, réservés à la page méthode.
+- **Images : PAS d'affichage en V1** (audit du 2026-07-14, donnees.md). Le CSV
+  n'a pas d'URL ; POP sert l'image depuis un CDN interne sans mention de
+  droits par œuvre ; la Licence Ouverte couvre le texte, pas les clichés
+  (droits musée). On ne hotlinke pas un CDN gouvernemental et on ne peut pas
+  vérifier 26 667 licences → **carte textuelle + lien POP**. Illustration
+  manuelle d'une poignée de cas via Wikimedia Commons envisageable plus tard
+  (précédent portraits), à décider séparément — rien promis avant sourcing.
+- **Statistiques générales** sur tout le corpus, **graphes classiques
+  seulement** : barres (destinations, domaines, anciens noms), donut
+  (datée/non datée), colonnes (siècle), une barre + phrase (concentration).
+  Pas de visualisation expérimentale.
+- **Export** `revisions.json` adapté : totaux + destinations + domaines +
+  siècles + anciens noms (top ~15, mot entier) + lot de cas V1. `Presence_image`
+  conservé comme métadonnée honnête, **non affiché**.
+
+⏸ En attente de validation : titre provisoire, structure par type de passage,
+lot V1, absence d'images, liste des graphes, schéma d'export. Puis pipeline →
+échantillon de vérification manuelle → tests → front. Rien n'est codé.
+
+## 2026-07-13 — Audit des briques restantes : « Révisions » en prochaine rubrique, carte en pause, décodeur fondu
+
+Déclencheur : demande utilisateur — « choisir ce que les données rendent
+vraiment lisible, pas ce que la roadmap prévoyait ». Audit complet du CSV et
+des exports (constats détaillés dans donnees.md, même date).
+
+**Décidé (constat validé par l'utilisateur)** :
+
+- **Prochaine rubrique : les révisions « on a cru → aujourd'hui »**
+  (`Ancienne_attribution`). Motif : 26 667 vrais avant→après, des noms qui
+  parlent (Vinci 511, Poussin 350, Rubens 236, Rembrandt 227 — comptés au mot
+  entier), des destinations chiffrables, tout le matériau déjà dans le CSV.
+  C'est aussi la brique qui héberge l'objet « doute + révision » promu en
+  P2-T1 (4 615 notices).
+- **Carte nationale qualifiée : EN PAUSE.** Sa question (« le doute est-il
+  réparti ou concentré ? ») a déjà sa réponse (concentré — monoculture
+  Barla) ; le *où* honnête existe déjà (carte par maître, un point = un musée
+  détenteur) ; le biais de couverture ferait cartographier l'effort de
+  catalogage. On ne la défend pas par principe ; réouverture seulement sur un
+  angle neuf.
+- **Décodeur de l'échelle du doute : réduit, plus une rubrique.** La légende
+  permanente des « presque » (LegendeFamilles) couvre déjà l'essentiel
+  (libellés + sens + couleurs). Ce qui manque — le poids national de chaque
+  formule et un exemple réel — deviendra un encart de la page « méthode et
+  limites » ou de l'accueil.
+
+**Risques et garde-fous de la rubrique Révisions** (détail, schéma d'export
+et contrôles dans **docs/rubrique-revisions.md**) :
+
+- sensationnalisme → registre : « la notice a porté le nom de X ; elle dit
+  aujourd'hui Y » ; jamais « déchu », « démasqué », « erreur » ; les verbatims
+  entre guillemets sont la seule matière ;
+- « les musées se sont trompés » → renversé : le champ EST la preuve du
+  travail d'attribution, c'est le musée qui garde la trace ; certaines
+  anciennes attributions sont des propositions de catalogues savants, pas des
+  affirmations du musée ;
+- palmarès des grands noms → les noms = un filtre d'accès (mot entier),
+  jamais un classement ; l'intro explique le biais d'attraction (les
+  inventaires anciens donnaient volontiers aux grands noms) ;
+- concentration Louvre/dessins (59,5 % / 62,9 %) → divulguée dans l'intro
+  (précédent : monoculture Barla, 2026-07-05) ; jamais de comparaison entre
+  musées ;
+- faux avant/après → règles de comparaison versionnées : normalisation hors
+  parenthèses, mot entier partout, extraction stricte ou pas d'extraction,
+  chaînes affichées verbatim, noms proches jamais fusionnés, comparaison
+  segment par segment (le dernier segment d'une chaîne peut être
+  l'attribution actuelle).
+
+**⏸ En attente de validation utilisateur** : titre de la rubrique, forme (vue
+d'ensemble des destinations + galerie de cas filtrable), schéma de
+`revisions.json`, plan de contrôles (échantillon de vérification manuelle
+avant tout front). Rien n'est codé côté front.
+
+## 2026-07-13 — À TRANCHER : priorité « ? » vs formule de distance dans un même segment
+
+Déclencheur : notice POP `M0347001723` (« Tête de femme : Le Silence », Dole),
+segment `SARTO Andrea del (?, manière de)` → classée **« ? » (niveau 1)** pour Andrea
+del Sarto. Cause : `famille_segment()` renvoie la **première** formule dans l'ordre
+`DOUTE_PAR_NIVEAU` (niveau 1 → 3), donc « ? » (niv. 1) l'emporte sur « manière de »
+(niv. 3). C'est la hiérarchie **documentée** (« famille la plus légère »), pas un bug.
+
+Question éditoriale ouverte : le musée place l'œuvre « dans la manière de » (loin du
+maître) ; la ranger en niveau 1 (« presque lui ») **surestime la proximité** — ce que
+la règle « on ne surpromet pas » veut éviter.
+
+Ampleur (scan complet, 1 023 705 lignes) : co-occurrences de ≥ 2 formules = **227
+segments (0,89 %)**, rares. « ? » écrase une formule de **distance** (niv. 2/3) dans
+**≈ 79 segments** base entière (atelier 51, école 15, **manière 7**, entourage 5,
+genre 1) ; « ? + attribué à » (87) reste niveau 1 des deux façons (seul le libellé
+fin changerait). Sous-ensemble sur les 27 maîtres = plus petit (non encore compté).
+
+Options : **A.** « ? » gagne (actuel, surestime la proximité) · **B.** la formule de
+distance gagne, le « ? » devient une nuance (plus fidèle, plus prudent) · **C.** idem
+B mais formalisé (« ? » gagne seulement seul ou avec « attribué à »). **Reco : B/C.**
+Non tranché, non codé (demande utilisateur : diagnostic d'abord). Prochaine étape si
+on avance : compte exact par maître sur les 27, puis choix A/B/C.
+
+## 2026-07-13 — « Les presque » : intro réécrite, plus explicative (décision utilisateur)
+
+L'ancien chapô donnait une ambiance mais ne disait pas assez où on emmène le lecteur.
+Nouveau parti pris : **titre « Les presque » conservé** (identité) mais **glosé dès la
+première phrase** ; l'intro explique ce que la rubrique montre, justifie le choix des
+27 noms (noms de référence pour lesquels les musées emploient souvent des formules
+prudentes, au moins vingt œuvres concernées — explicitement *pas* « les plus grands »)
+et **oriente** le lecteur vers les quatre lectures (jauge colorée, graphique, œuvres,
+carte). Encadré refait sans émoticône, recentré sur l'invariant : « ne réattribue
+aucune œuvre… reprend les mots publiés par les musées… avec leurs précautions ».
+Contraintes tenues : pas de « famille/niveau/au doute » en surface, les musées ne
+« se trompent » pas (incertitude = savoir honnête), aucune expertise sous-entendue.
+Texte témoin de la copie publique journalistique sobre.
+
+## 2026-07-13 — Carte, palier style (décision utilisateur)
+
+Finition visuelle only (données et comportement figés). **Fond « régions très
+estompées »** retenu (contre « silhouette France seule » et « statu quo ») : garder
+les frontières régionales comme repère, mais très pâles, pour ne pas concurrencer
+les points. Autres réglages actés : survol/focus des points **plus franc** (pleine
+opacité + halo blanc élargi), **pas de distinction au repos** des points cliquables
+(le curseur main au survol suffit — deux classes visuelles embrouilleraient) ; carte
+dans une **colonne centrée** (titre/fond/légende/mentions alignés) ; légende et
+mention hors-cadre au **même registre** (petit corps, encre douce, filet). Le repère
+texte du **musée principal** est écarté de ce palier (c'est du contenu, pas du style).
+
+## 2026-07-13 — Identification du maître : test MOT ENTIER au lieu de sous-chaîne (décision utilisateur)
+
+**Déclencheur** : un lecteur signale la notice POP `07980002404` (« Archimède »,
+MUDO Beauvais) classée « attribué à **Rodin** ». Son auteur réel est
+« SERODINE Giovanni (attribué, peintre) » — Giovanni Serodine, peintre italien du
+XVIIᵉ. La **détection de la formule** (« attribué ») était juste ; c'est
+l'**identification du maître** qui déraillait : `_trouve_maitre` testait par simple
+sous-chaîne (`"RODIN" in pivot`), et « SE‑RODIN‑E » contient « RODIN ».
+
+**Ampleur mesurée** (scan de toute la base, 1 023 705 lignes) : 8 maîtres, 77
+segments faussement rattachés, dont **13 notices de doute** seulement (Le Tintoret 6,
+Léonard de Vinci 6, Rodin 1) ; le reste ne gonflait que des dénominateurs « sous le
+nom » (propre/copie). Collisions : SERODINE/PERRODIN→Rodin, VINCIDOR→Vinci,
+SOLDYCK/DYCKHOFF→Van Dyck, RIBERAT/VALRIBERA→Ribera, POUSSINES→Poussin,
+CORREGES→Corrège, et « TINTORETTO Domenico » (le *fils*) → Le Tintoret.
+
+**Correctif retenu** : `_trouve_maitre` teste désormais le **mot entier**
+(`\bALIAS\b`) sur le pivot normalisé, pour les inclusions ET les exclusions.
+Vérifié sur données réelles :
+- règle les 8 cas ci-dessus ;
+- **garde** les vraies notices de Le Tintoret : elles sont cataloguées « Le Tintoret
+  ou il Tintoretto (Jacopo Robusti dit) », où « Tintoret » est un mot entier ; seul
+  « Tintoretto Domenico » (une seule racine, pas de frontière) est écarté ;
+- **seule perte assumée** : 1 notice avec la coquille « IIngres » (double I), en
+  propre — négligeable.
+
+**Impact sur les chiffres publiés** (doute) : Le Tintoret 53→47, Léonard 56→50,
+Rodin 81→80 ; les autres maîtres inchangés en doute. **Aucun maître ne passe sous le
+seuil des 20 doutes** : la liste vedette des 27 est préservée. Exports régénérés,
+front synchronisé, build statique OK. (Constat sur les données dans donnees.md.)
+
+## 2026-07-13 — Carte : écartement des points + point-lien POP pour l'œuvre unique (décision utilisateur)
+
+Deux chantiers de la carte, même séance.
+
+**Écartement des points (chevauchements).** À taille fixe, deux musées pouvaient se
+cacher : coordonnées quasi identiques (deux musées d'une même ville — Marseille,
+Versailles) ou points très proches (grappe francilienne Paris/Versailles, Lille/Douai).
+`geo.js` reçoit `ecarterPoints` : relaxation itérative **déterministe et sans
+dépendance** qui repousse chaque paire trop proche jusqu'à `2·R + 1,5 px`, au plus
+près de la vraie position ; les points confondus sont séparés selon l'angle d'or
+(rendu stable). Contour blanc renforcé (1,1 px), opacité 0,82.
+
+**Point-lien POP pour l'œuvre unique** (validé avant code). Objectif : rendre la
+carte plus concrète sans images (droits/disponibilité). Quand un musée conserve
+**exactement une** œuvre concernée, on veut pouvoir aller à sa notice publique.
+
+- **Piège tranché** : un lien DANS le tooltip serait inclicable (tooltip en
+  `pointer-events: none`, s'efface au départ du curseur). Donc **pas de lien dans le
+  tooltip, pas de tooltip épinglable** : c'est **le point lui-même qui devient un
+  lien** (`<a>` SVG → `lienPop(reference)`, `target=_blank`, `rel=noreferrer`,
+  curseur main, focus clavier visible). Le tooltip reste un **aperçu** : musée+ville,
+  « 1 œuvre concernée », **titre si disponible** (entre guillemets, italique), mention
+  publique + pastille. Les musées **multi-œuvres restent non cliquables**, tooltip
+  inchangé. Pas de nouvelle vue « œuvre » : on enrichit juste certains points.
+- **Pipeline** (`build_artistes.py`) : pendant l'agrégation par musée, on retient la
+  **première** notice (`ref1`, `titre1`) — qui est l'unique quand `doute==1` ; à
+  l'export, `oeuvre_unique: {reference, titre}` n'est émis **que si `doute==1`**
+  (entrées multi-œuvres inchangées, poids négligeable). Le front bâtit l'URL avec
+  `lienPop`. Mesuré à la génération : **188** musées à 1 œuvre avec titre, **2** sans
+  titre (titre `null` géré : intitulé de lien générique « … de cette œuvre »).
+- `Infobulle.svelte` reçoit un champ optionnel `titre` (ligne d'aperçu).
+- Vérifié : URL POP correcte, `target/rel`, aria-label (« Voir la fiche publique de
+  “titre” »), Louvre multi non cliquable (circle, pas de lien), cas sans titre,
+  focus clavier affiche l'aperçu. Build statique OK.
+
+## 2026-07-13 — Harmonisation des tooltips (graphique / carte / jauges) (décision utilisateur, après revue)
+
+Depuis que la **légende fixe** porte la grammaire des couleurs, le tooltip ne doit
+plus l'expliquer : il donne seulement l'information LOCALE au point survolé, avec
+le même vocabulaire public partout et aucun retour de « famille / niveau / au
+doute / presque lui / autour de lui ».
+
+**Diagnostic.** Les trois tooltips vivants passent déjà par `Infobulle.svelte`
+(pas de styles parallèles) : graphique (`NuageFamilles`), carte (`CarteMaitre`),
+jauges (`BarreFamilles`). Le `title=` natif de `BarreNiveaux.svelte` n'est branché
+nulle part (code mort, laissé de côté). Le travail est donc surtout du style sur
+`Infobulle` + une harmonisation de données.
+
+**Structure commune** (un seul schéma `tt`, chaque vue ne remplit que le nécessaire) :
+`header` (bande grisée en tête), `headerPastille?` (couleur → pastille dans le
+header, côté graphique), `valeur?` (nombre local accordé), `corps?` (phrase de
+sens, graphique), `lignes?` (`[{ label, couleur, valeur, appoint? }]` — ventilation
+carte/jauge, `appoint` = complément gris type « 73 % »), `mentionType?` (footer
+discret « Mention type : … », graphique si utile).
+
+**Style commun sur `Infobulle`** : largeur STABLE (`width: max-content`, bornée
+`min 13rem / max 17rem` — le texte passe à la ligne au lieu d'élargir, plus de saut
+de largeur) ; header en **bande légèrement grisée** (fond `rgba` très léger, texte
+`--couleur-encre-douce`, filet de séparation), pastille optionnelle inline ; valeur
+en évidence ; lignes = libellé à gauche, **nombre aligné à droite en chiffres
+tabulaires**, `%` en gris ; ombre discrète, bordure fine, padding cohérent.
+
+**Jauges de la liste — changement de comportement** (décision utilisateur) : d'un
+tooltip PAR SEGMENT (header = mention, « N œuvres · X % du doute ») à **un seul
+récapitulatif du maître** : header = nom du maître, une ligne par mention (pastille
++ nombre + %). Cohérent avec la carte, plus robuste (les segments sont sous-pixels,
+trop fins à viser un par un) ; toute la barre devient une seule cible focusable
+(les segments passent en présentation, `aria-hidden`), aria-label = récap complet.
+La formule « % du doute » disparaît (mot banni).
+
+**Fichiers** : `Infobulle.svelte` (style + `headerPastille` + `valeur` optionnelle
++ `appoint`), `familles-public.js` (`tooltipFamille` renvoie `headerPastille`),
+`BarreFamilles.svelte` (récap maître). `NuageFamilles`/`CarteMaitre` inchangés
+(leur `tt` était déjà compatible). Vérifié par captures : graphique multi + à 1
+œuvre (+ « Mention type »), carte multi + à 1 œuvre concernée, jauge récap, largeur
+étroite 390 px (pas de débordement).
+
+## 2026-07-13 — Légende permanente des mentions sous la liste des maîtres (décision utilisateur, validée avant code)
+
+Une **clé des couleurs visible avant interaction**, commune aux trois vues
+(graphique / œuvres / carte), pour que les tooltips ne portent plus seuls
+l'explication et harmoniser jauges / graphique / cartes œuvres / tooltips carte.
+
+- **Emplacement** : dans l'`aside` de gauche, **sous la liste des maîtres** (hors
+  de la zone d'onglet). La liste scrolle dans son cadre (`max-height` + overflow) :
+  la légende reste donc toujours visible sous elle.
+- **Source unique, zéro seconde nomenclature** : réutilise TELS QUELS `header`
+  (libellé public) et `corps` (sens court) de `familles-public.js`, dans l'ordre
+  `ORDRE_FAMILLES` (= l'axe du graphique). La légende dit exactement les mêmes mots
+  que les tooltips → le lecteur relie les deux sans effort.
+- Chaque entrée : **pastille ronde** (couleur stable de la famille, comme les
+  points de carte et les pastilles de tooltip) + libellé public + une phrase de
+  sens très brève. Intitulé discret « Les mentions ». Pas de « famille / niveau /
+  au doute / presque lui / autour de lui » dans l'interface.
+- **Un `corps` reformulé** (source unique, sert aussi les tooltips) : atelier,
+  « Son atelier, pas forcément sa main. » → **« Sorti de son atelier, pas forcément
+  de sa main. »** (évite de répéter le libellé « Son atelier » dans la légende).
+- **Mobile (< 720 px)** : l'`aside` s'empile au-dessus de la fiche → la légende est
+  **repliable** (bouton « Les mentions » + chevron), **repliée par défaut** pour ne
+  pas repousser la carte ; **toujours dépliée sur desktop** (intitulé simple).
+  L'état est piloté en JS (`matchMedia`) et non par un `<details>` natif : le
+  contenu d'un `<details>` fermé n'est pas ré-affichable en CSS selon la largeur
+  (constaté sur Chromium, même avec `!important`).
+- **Aucune donnée touchée** : la légende lit `FAMILLE_PUBLIC`, statique.
+- Nouveau composant `web/src/lib/LegendeFamilles.svelte`, importé dans
+  `les-presque/+page.svelte`. Vérifié par captures (desktop + mobile replié/déplié).
+
+Palier suivant, séparé (non fait) : harmonisation du **style des tooltips**
+(largeur, header grisé, espacements, typographie).
+
+## 2026-07-12 — Carte par maître : taille de point FIXE (décision utilisateur, après test A/B)
+
+Le premier rendu utilisait un rayon ∝ √doute (taille variable). À la revue,
+confusion signalée : l'échelle étant **propre au maître affiché**, un gros cercle
+chez Ribera (3 œuvres) paraissait aussi important qu'un gros cercle chez Le Brun
+(276). Test A/B sur captures (Le Brun, Ribera, Van Dyck, Ingres), variable vs fixe :
+
+- **variable** : ne « marche » que sur un vrai dégradé (Van Dyck) ; ailleurs il
+  ment sur l'échelle inter-maîtres, gonfle de petits volumes (Ribera : gros disques
+  qui se chevauchent au nord pour 3 œuvres) et empiète sur le rôle de l'onglet
+  graphique (le *combien*) ;
+- **fixe** : lisible pour les 27 maîtres, honnête (un point = une présence, jamais
+  un rang), et cohérent avec la règle « jamais de comparaison entre musées sur des
+  comptages bruts ».
+
+**Retenu : taille fixe** (tous les points identiques, `R_POINT = 5`). La carte
+répond à *où* ; le *combien* par musée reste **au survol** (tooltip) et dans
+l'onglet **graphique**. Rayon variable, échelle commune, calibres de légende :
+retirés. Bascule de test (`?carte=fixe`) retirée. Légende : « Un point = un musée
+où au moins une œuvre concernée est conservée. Passez sur un point pour voir
+combien, et sous quelles formules. »
+
+**Tooltip refait (même séance).** L'ancien tooltip réintroduisait les libellés de
+NIVEAU écartés (« Presque lui », « Autour de lui »). Remplacé par la **couche des
+familles publiques** (`familles-public.js`, comme graphique / œuvres / jauges) :
+en-tête « musée, ville », valeur « N œuvre(s) concernée(s) », puis une ligne par
+famille **triée par valeur**, avec **pastille de couleur stable** et libellé public
+(`header` : « Son atelier », « De son école », « Attribué à »…). Plus aucun
+« niveau », « au doute » ni jargon. `Infobulle.svelte` étendu (additif) d'un champ
+optionnel `lignes` (label + valeur + couleur) réutilisable ailleurs. Accord
+singulier/pluriel géré ; `aria-label` du point conservé (résumé linéaire).
+
+## 2026-07-12 — Carte par maître : spécification du composant (décision utilisateur, validée avant code)
+
+Spécification arrêtée avant toute écriture de code. Le fond (régions métropole,
+france-geojson) et le palier données (`musees_doute`) sont déjà validés (mêmes
+date). Ce qui suit fige la **forme** du composant.
+
+**Emplacement.** Troisième vue de la bascule existante des fiches « Les presque »,
+à côté de `Graphique` et `Œuvres`. Onglet nommé **`Carte`** ; titre interne au-dessus
+du fond : **« Où sont conservées ces œuvres »**. La carte est la réponse visuelle
+au 2ᵉ chiffre du profil (« N musées où ces œuvres sont conservées »).
+
+**Une carte = une question : où, et combien.** La position est géographique (donc
+« prise ») ; la mesure est portée par la **taille** du point.
+
+- **Taille.** 1 point = 1 musée détenteur. **Rayon ∝ √(doute)** (aire ∝ nombre),
+  borné (min ~3 px, max ~22 px) pour que le Louvre n'écrase pas les petits musées
+  et que ceux-ci restent visibles. Points dessinés du plus grand au plus petit
+  (petits au-dessus). L'aire seule se comparant mal (CLAUDE.md), la taille est
+  **appuyée par une légende de calibre + le survol**.
+- **Couleur : unique et stable** pour tous les points (token d'accent « doute »),
+  identique sur toutes les fiches (décision utilisateur). **Pas** de couleur par
+  niveau sur la carte : cela ferait une 3ᵉ variable visuelle concurrente et
+  dupliquerait le rôle du `Graphique`. La ventilation par niveau vit dans le tooltip.
+- **Tooltip** (survol / focus clavier) : nom du musée — ville, total de doute,
+  puis ventilation par niveau via les libellés publics (« Presque lui », « Autour
+  de lui », « Son style, sans lui »), ligne omise si le niveau vaut 0. Jamais de
+  code interne ; la formule du musée peut figurer entre guillemets.
+- **Légende** minimale, dans le cadre : 2–3 cercles de calibre gradués (l'« axe »
+  de la taille) + une ligne « Un cercle = un musée. Plus il est grand, plus ce
+  musée conserve d'œuvres au nom de ce maître avec une mention de doute. » Pas de
+  bloc « comment lire » séparé.
+
+**Repli (carte qui n'apporte rien).** L'onglet `Carte` reste **toujours visible**
+(une bascule qui change de forme d'une fiche à l'autre désoriente). C'est le contenu
+qui bascule : s'il n'y a **qu'un seul musée projeté**, on affiche une phrase à la
+place de la carte (« Ces œuvres sont conservées dans un seul lieu : le musée X, à
+Ville. »). Sinon (≥ 2 musées projetés), carte. Cas limite assumé : Le Brun concentre
+89 % à Paris mais compte 19 musées → carte affichée, la concentration se lit dans
+la taille du point parisien.
+
+**Mention hors-cadre.** Un musée dont `lat/lon` tombe hors de la fenêtre métropolitaine
+n'est **pas projeté** mais **reste compté** (totaux, 2ᵉ chiffre du profil, `musees_doute`).
+Ligne visible sous la carte : « Hors cadre métropolitain : N œuvre(s) conservée(s)
+au musée … à Ville. » À la génération du 2026-07-12, un seul cas : Van Dyck, 1 œuvre
+au musée de Saint-Denis de La Réunion. Détection par bornes lat/lon figées dans un
+util partagé (`web/src/lib/geo.js`), communes à la projection et au test.
+
+**Fichiers prévus.** Nouveaux : `web/src/lib/CarteMaitre.svelte`, `web/src/lib/geo.js`
+(projection `geoConicConformal` calée France + bornes métropole + helper « projetable ? »).
+Modifiés : `web/src/routes/les-presque/+page.svelte` (3ᵉ bouton + `{#if vue === 'carte'}`),
+`web/src/lib/joconde.js` (libellés publics des niveaux exposés pour le tooltip),
+`web/src/lib/styles/tokens.css` (token couleur des points si absent). Dépendance
+`d3-geo` à ajouter dans `web/package.json`. Fond : `web/static/geo/regions-metropole.geojson`
+(déjà en place). Docs à mettre à jour à la mise en œuvre : `methode-et-limites.md`
+(fond IGN = illustration jamais donnée ; hors-cadre non projeté mais compté),
+`roadmap.md`.
+
+## 2026-07-12 — Carte par maître : palier données, `musees_doute` dans `artistes.json` (décision utilisateur, mise en œuvre)
+
+Avant de coder la carte, on enrichit l'export (audit préalable dans donnees.md,
+même date). La carte répondra à : « Où se trouvent les œuvres dont l'attribution
+à ce maître est formulée avec prudence ? » — **1 point = 1 musée détenteur**,
+taille ∝ nombre d'œuvres douteuses de ce maître dans ce musée.
+
+`build_artistes.py` exporte désormais, par maître :
+
+- `musees_doute` : liste triée par `doute` décroissant, **1 entrée = 1 musée**,
+  alimentée **uniquement sur le doute** (jamais le ferme ni la copie). Chaque
+  entrée : `code`, `nom`, `ville`, `lat`, `lon`, `doute`, `niveaux` (triplet),
+  `familles` (liste ordonnée `{code, notices}`, pour la couleur et le tooltip).
+- `nb_musees_doute`, `musee_principal` (`{code, nom, doute, part}`) pour piloter
+  les replis côté front (peu de points / forte concentration).
+- `doute_sans_musee` : notices de doute sans code musée identifiable (mesuré à
+  **0** partout à la génération du 2026-07-12).
+
+Le champ `musees` existant (entier, toutes catégories confondues) est **conservé
+tel quel** : il correspond à son libellé public actuel (« où ces œuvres sont
+conservées », tous statuts). Il ne doit pas servir à la carte.
+
+**Deux garanties exigées et tenues (décision utilisateur) :**
+
+1. **Invariants de comptage**, vérifiés par `assert` à la génération :
+   par musée `somme(familles.notices) == doute` et `somme(niveaux) == doute` ;
+   par maître `somme(musees_doute[].doute) + doute_sans_musee == doute`. Le build
+   échoue si un invariant casse.
+2. **Coordonnées explicites `lat` / `lon`** (et non `[lat, lon]`) pour écarter
+   tout risque d'inversion côté carte D3-geo. Source géo **secondaire** : le champ
+   `coordonnees` de Joconde localise le **musée** (constant par code), jamais
+   l'œuvre, et ne compte rien.
+
+Rappels de cadrage (contraintes non négociables) : carte **par maître** seulement,
+jamais de carte globale du doute ; **pas de comparaison brute entre musées** — la
+carte montre une **dispersion**, pas une vérité patrimoniale ; fond de carte local
+auto-hébergé, aucune tuile externe, aucun serveur.
+
+## 2026-07-12 — Carte par maître : fond auto-hébergé (régions métropole, france-geojson) (décision utilisateur, mise en œuvre)
+
+Fond de carte sourcé et validé avant tout composant. Contrat arrêté :
+**france-geojson · régions · métropole seule · Licence Ouverte · `static/geo/`
+versionné · projection `geoConicConformal` · La Réunion hors-carte signalée.**
+
+- **Source** : `regions.geojson` du dépôt france-geojson (Grégoire David),
+  tracés IGN Admin Express COG 2018, **Licence Ouverte / Etalab**. URL, licence,
+  date, commande et poids avant/après consignés dans `web/static/geo/README.md`
+  (reproductible). Récupéré le 2026-07-12.
+- **Fichier produit** : `web/static/geo/regions-metropole.geojson`, 13 régions
+  métropolitaines (le fichier source n'inclut déjà aucun DROM), props `code`/`nom`.
+  Simplifié mapshaper `-simplify 5% keep-shapes precision=0.0001` :
+  1 452 343 → **70 619 octets** (−95 %). Fichier **versionné** (ressource source
+  stable, pas un artefact du pipeline `sync:data`).
+- **Niveau régions** (13 polygones) et non départements : fond discret, la mesure
+  reste les points-musées. Bascule départements triviale plus tard si besoin.
+- **Projection** : `d3.geoConicConformal()` + `fitSize` sur ce fichier. Pas de
+  projection composite (elles servent à recoller les DROM, écartés ici).
+- **Outre-mer — réserve utilisateur intégrée** : métropole seule sur le fond,
+  mais le point hors métropole (mesuré : 1 seul, musée Léon Dierx à La Réunion,
+  1 œuvre de Van Dyck) **reste dans `musees_doute` et dans les totaux**. Le front
+  devra afficher une **mention explicite dans l'interface** (pas seulement en page
+  méthode), du type « Hors cadre métropolitain : 1 œuvre conservée à Saint-Denis
+  de La Réunion ». Spéc à honorer au moment du composant.
+- **Source secondaire d'affichage** : le fond ne porte aucune donnée, ne compte
+  rien, n'exclut aucun musée. Déclaré en page méthode (methode-et-limites.md) et
+  crédité en petit corps sous la carte (« Fond : régions IGN Admin Express 2018,
+  via france-geojson — Licence Ouverte »).
+
+Prochaine étape (non commencée) : composant carte. Non codé tant que ce fond
+n'est pas validé.
+
+## 2026-07-12 — Palette contrastée (luminosité alternée) + jauges explicables au survol (décision utilisateur, validée sur simulation)
+
+**Palette révisée.** La « boîte de pigments » du 2026-07-11 ne jouait que sur la
+teinte ; les familles voisines restaient trop proches, en particulier pour une
+perception réduite des couleurs. Nouveau principe : **luminosité alternée**
+(sombre/clair) le long de l'axe — c'est la luminosité qui survit au daltonisme,
+deux voisins ne diffèrent plus jamais par la seule teinte. Teintes toujours
+sourdes/patrimoniales (la lisibilité prime sur l'harmonie, sans flashy) :
+
+| forme | hex | contraste /crème | mouvement |
+|---|---|---|---|
+| attribué à | `#9e2b12` | 6,82 | rouge assombri |
+| nom (?) | `#cd7048` | 3,19 | corail éclairci |
+| son atelier | `#b3821d` | 3,12 | ocre éclairci |
+| son cercle | `#556327` | 5,98 | olive assombri |
+| de son école | `#3e6f9e` | 4,82 | bleu plus franc |
+| un suiveur | `#175c50` | 7,13 | teal assombri |
+| sa manière | `#7b5fb5` | 4,62 | violet éclairci |
+| dans son goût | `#742e4f` | 8,52 | prune assombri |
+
+Paires problématiques, séparation mesurée (distance en vision deutéranope simulée,
+avant → après) : rouge/corail 15,7 → 36,5 ; bleu/teal 6,2 → 20,8 ; violet/prune
+13,4 → 30,2 (elles étaient identiques en luminosité, Δ 0,002 → 0,095) ; ocre/olive
+21,1 → 38,5. **Limite assumée** (choix utilisateur) : bleu/teal reste la paire la
+plus proche — aller plus loin sortirait du registre patrimonial ; le survol,
+l'ordre de l'axe et les labels publics compensent. Validée sur simulation en
+situation réelle (graphique Carracci = 7 formes sur 8, cartes, jauges) avant code.
+
+**Jauges explicables au survol — la couleur n'est jamais le seul canal.** Chaque
+segment de jauge est désormais survolable **et focusable au clavier** : infobulle
+« header public / N œuvres · X % du doute » (labels de familles-public.js, accord
+par `oeuvres()`, pourcentage français à une décimale), `aria-label` complet en
+repli (« De son école : 240 œuvres, 77,4 % du doute autour de Charles Le Brun. »).
+La jauge reste un résumé miniature du graphique (mêmes couleurs, même ordre, mêmes
+labels) mais devient lisible en détail. **Zone de survol élargie** verticalement
+(pseudo-élément invisible) pour atteindre les segments de ~2 px sans fausser les
+proportions affichées.
+
+**Infobulle partagée** : le tooltip HTML custom du graphique est extrait en
+`Infobulle.svelte` (header / valeur / précision / mention type) — une seule
+grammaire de tooltip dans l'application, consommée par le graphique (position
+absolue dans son hôte) et par les jauges (**position fixe**, coordonnées fenêtre :
+la liste défile, un panneau absolu serait rogné par l'overflow). Le `title` natif
+a été écarté : invisible au focus clavier.
+
+**Restructuration de la ligne de liste** (conséquence a11y) : la jauge sort du
+`<button>` de sélection — un élément focusable ne peut pas vivre dans un bouton.
+Le `<li>` porte désormais l'état (bordure, survol, sélection), le bouton ne couvre
+que nom + compte, la jauge est sa sœur.
+
+Vérifié par capture : jauges palette révisée ; survol du gros segment bleu de
+Le Brun (« De son école — 240 œuvres · 77,4 % du doute ») ; **focus clavier** sur
+le trait de 2 px « nom (?) » (outline + « 2 œuvres · 0,6 % du doute ») ; tooltip du
+graphique intact via l'infobulle partagée ; cartes Œuvres. Build sans avertissement.
+
+## 2026-07-11 — Jauges de la liste : des niveaux aux familles (décision utilisateur, après test)
+
+**Le choix « option A » du palier couleur (même jour, ci-dessous) est écarté après
+test.** La jauge à 3 niveaux devait être « une version résumée des 8 formes » ; en
+situation réelle elle **contredisait le graphique** : chez Le Brun, la masse
+dominante « de son école » (bleue sur le graphique) apparaissait ocre dans la jauge
+(agrégée au niveau 2). La couleur de la forme dominante disparaissait de la liste.
+Vérifié sur les données avant de trancher : les jauges consommaient bien `niveaux`
+= [n1, n2, n3], cohérents avec les sommes de familles par niveau (aucun bug — un
+choix de langue visuelle, pas de calcul).
+
+**Nouvelle règle : la mini-jauge de chaque maître est un résumé direct du
+graphique** — mêmes familles, mêmes couleurs (`var(--forme-*)`), même ordre que
+l'axe, proportions réelles (`notices / doute`). `BarreFamilles.svelte` remplace
+`BarreNiveaux` dans la liste :
+- familles absentes non affichées ; un segment minuscule reste un simple trait,
+  jamais de largeur minimum (les proportions priment) ;
+- **filet séparateur de 1 px couleur du fond** entre segments (gap), pour détacher
+  les voisins proches (rouge/corail, violet/prune) sans fausser les parts ;
+- le chiffre à droite reste le total de doute ;
+- aucune légende dans la liste (le graphique et ses tooltips portent le sens).
+
+Aucune modification du pipeline ni du JSON (`familles` était déjà exporté).
+`BarreNiveaux.svelte` conservé en archive (précédent GalaxieMaitre) et les tokens
+`--niveau-1/2/3` gardés pour de futures vues sur l'échelle du doute.
+
+Vérifié par capture : Le Brun (masse bleue « école », conforme au graphique),
+Rembrandt (masse violette « manière »), Ingres (rouge « attribué à »),
+Michel-Ange (⅓ rouge + ⅔ bleu), Rodin (tout rouge).
+
+## 2026-07-11 — Grammaire couleur « boîte de pigments » (décision utilisateur, validée sur aperçu)
+
+**Constat.** Points, cartes « Œuvres » et jauges tenaient dans une seule gamme
+orange/brun (les couleurs de familles avaient été *dérivées* des niveaux) : formes
+indistinguables, rendu générique, niveau 3 délavé sur crème. Deux sources de hex,
+non alignées (tokens CSS pour les niveaux, JS pour les familles).
+
+**Système retenu.** Une **couleur stable par forme de doute**, pensée comme une
+**boîte de pigments de peinture ancienne** (diverse mais légitime sur le sujet, pas
+« arc-en-ciel décoratif ») :
+
+| forme | token | pigment | contraste /crème |
+|---|---|---|---|
+| attribué à | `--forme-attribue` `#b8431f` | terre de Sienne brûlée | 4,96 |
+| nom (?) | `--forme-point-interrogation` `#c96a4e` | terre rose | 3,38 |
+| son atelier | `--forme-atelier` `#a8781f` | ocre jaune | 3,56 |
+| son cercle | `--forme-entourage` `#6f7d34` | terre verte | 4,11 |
+| de son école | `--forme-ecole` `#3f6b8f` | bleu de smalt | 5,16 |
+| un suiveur | `--forme-suiveur` `#2f7d70` | vert-de-gris | 4,46 |
+| sa manière | `--forme-maniere` `#6f5691` | violet minéral | 5,60 |
+| dans son goût | `--forme-genre` `#8a5168` | lie de vin | 5,54 |
+
+Toutes ≥ 3:1 sur le fond crème (cible objet graphique, vérifié). **Température =
+distance au maître** : rouges (niveau 1) → terreux basculant au froid (niveau 2) →
+pourprés (niveau 3) — la couleur *renforce* la lecture de l'axe sans la porter seule.
+
+**Jauges : option A** (choix utilisateur — pas de mini-répartition en 8 formes dans
+la liste, qui la chargerait). Les 3 couleurs de niveaux sont les **pigments repères**
+de chaque zone (`--niveau-1/2/3` = attribué / atelier / manière) : la jauge à
+3 niveaux devient une version résumée des 8 formes, même langue. Le niveau 3 n'est
+plus délavé (violet franc). Conséquence assumée : dans la liste, une forme apparaît
+à la couleur de son *niveau*, pas de sa *forme* — l'identité par forme n'existe que
+dans Graphique + Œuvres (le jour où on la voudrait dans la liste = option B).
+
+**Copie « d'après » neutre** : `--couleur-copie` passe de `#4a6b7a` (bleu-gris, qui
+collisionnait avec le nouveau bleu de smalt) à `#6b6f76` (gris), hors de la gamme
+colorée du doute — une copie assumée n'est pas un doute.
+
+**Centralisation.** Tous les hex de sujet vivent désormais **uniquement dans
+`tokens.css`** (`--forme-*`, `--niveau-*`, `--couleur-copie`). `familles-public.js`
+ne porte plus que des références `var(--forme-*)` ; le `STYLE_FAMILLE` en dur de
+`NuageFamilles` avait déjà été retiré. Détail technique : le point du graphe passe
+de l'attribut SVG `fill=` à la propriété CSS `style="fill: …"`, car `var()` ne
+s'applique pas aux attributs de présentation SVG (seulement aux propriétés CSS).
+
+Validé sur aperçu (planche de swatches + vraies vues Graphique / Œuvres / liste)
+avant implémentation ; re-vérifié après centralisation. Les cartes ne portent la
+couleur que par la pastille + le kicker (jamais tout le bloc).
+
+## 2026-07-11 — « Les presque » : l'onglet « Détail » devient la vitrine « Œuvres » (décision utilisateur, validée avant code)
+
+**Constat.** La vue « Détail » répétait le graphique (échelle du doute, table des
+formules = les mêmes comptes que les points) avec des titres techniques, et ses
+liens POP n'avaient pas de fonction éditoriale claire.
+
+**Rôle redéfini.** Le graphique répond à « quelles formes prend le doute autour de
+ce nom ? » ; l'onglet **« Œuvres »** répond à « quelles œuvres concrètes se trouvent
+derrière ces formes ? ». On passe des points aux œuvres, des libellés publics aux
+**mots réellement publiés**, du résumé au **cas vérifiable**. L'`extrait` du champ
+auteur est la **seule citation littérale** de l'application (le tooltip du graphique
+affiche une mention *reconstruite*) : c'est le moment « on lit ce que les musées
+écrivent » du projet.
+
+**Supprimé** : « L'échelle du doute » (barre des niveaux) et « Les formules
+employées » (table) — redites du graphique. **Transformé** : les exemples passent
+de bas de page à contenu principal.
+
+**Forme retenue : vitrine en cartes**, pas une table.
+- **Kicker dans la carte** (pas de titres de groupes) : header public de la forme
+  (« Attribué à », « Son atelier »… — les mêmes mots que le tooltip du graphique)
+  + **pastille de la couleur du point**. La couleur est sur la pastille, pas sur le
+  texte (contraste des teintes claires). Cartes triées dans **l'ordre de l'axe X**.
+- Titre de l'œuvre **tel que publié** (souvent en capitales : on ne réécrit pas,
+  corps modéré pour que ça ne crie pas ; « Sans titre » en repli), musée + ville.
+- **Verbatim en exergue**, entre guillemets, sans préfixe (l'amorce l'explique une
+  fois : règle anti-répétition).
+- Lien explicite « **Voir la fiche publique →** » par carte (le titre cliquable
+  seul a une mauvaise affordance) ; **une seule** mention technique en bas :
+  « Les liens ouvrent les fiches publiques sur POP, la plateforme ouverte du
+  patrimoine. » Jamais « notice » ni « base de données ».
+- Titre de section : « Quelques œuvres derrière les points ». Amorce (choix
+  utilisateur) : « Quelques exemples issus des fiches Joconde, avec les mots
+  publiés par les musées. » — la règle de sélection automatique est documentée en
+  méthode, pas dans l'interface.
+- **Copies « d'après » à part**, en fin : bloc distinct (couleur hors gamme du
+  doute) « À part : {N} œuvres « d'après {maître} » — des copies assumées, pas des
+  attributions incertaines. » + un exemple de copie lié, en petit corps, jamais en
+  carte.
+
+**Export enrichi d'abord, vitrine codée une fois** (plutôt qu'une V1 plate refaite
+ensuite) : `build_artistes.py` émettait déjà un exemple par famille mais perdait le
+code au moment du JSON. Ajouts : `code` de forme sur chaque exemple, **2 exemples
+pour la forme dominante** (1 pour les autres, plafond 9), `exemple_copie` par
+maître. Comptages inchangés (vérifié). **Le front ne re-parse jamais les
+extraits** : le code de forme vient exclusivement de l'export.
+
+**Couleur par famille centralisée** dans `familles-public.js` (`couleur` par
+entrée) : source unique pour les points du graphique et les pastilles de la
+vitrine (CLAUDE.md : une couleur par catégorie, stable partout). `STYLE_FAMILLE`
+local à `NuageFamilles` supprimé.
+
+Vérifié par capture : Le Brun (5 cartes, ordre de l'axe, copie avec exemple),
+Rodin (cas minimal : 2 cartes d'une seule forme, rendu digne), largeur étroite
+(une colonne). Build sans avertissement.
+
+## 2026-07-11 — Nuage « Les presque » : point au plafond rogné, corrigé (marge de tête)
+
+Le point de la famille dominante (au plafond commun, 240 = « école de » Le Brun)
+était **rogné en tête** : sa bulle, de rayon maximal 16, était centrée sur `Y_HAUT`
+= 10 et débordait au-dessus du bord haut du viewBox. Corrigé en réservant assez de
+marge en tête pour le rayon max : `Y_HAUT` 10 → 24, `Y_HAUTEUR` 226 → 212. `Y_BASE`
+reste à 236 : la ligne de base, l'échelle et l'axe X sont **inchangés** — seul le
+haut du graphe gagne de l'air. Vérifié par capture (Le Brun) : la bulle à 240 est
+entièrement visible, centrée sur sa graduation.
+
+## 2026-07-11 — « Les presque » : bloc profil, chiffres en points d'appui (décision utilisateur)
+
+3e itération du header (après « texte gauche / portrait droite » puis « nom pleine
+largeur + portrait gauche / texte droite centré »). Constat : le portrait a un vrai
+poids visuel, mais le paragraphe restait une petite masse au milieu d'un vide — trois
+objets côte à côte, pas un bloc de profil.
+
+Retenu (comparé par capture A vs B) :
+- **Colonne de texte calée en HAUT** du portrait (`align-items: start`), pas centrée.
+- **Colonne bornée** (`grid-template-columns: 12rem minmax(0, 24rem)`, `justify-content:
+  start`) : elle répond au portrait au lieu de s'étaler comme une phrase de page.
+- **Deux blocs empilés** (volume, puis dispersion) espacés (`.profil-texte`, flex,
+  gap 1.1 rem) pour occuper la hauteur du portrait.
+- **Chiffres en points d'appui** (variante B, préférée à la version tout-texte A) :
+  le nombre en gros corps, couleur d'accent, sur sa propre ligne (`.chiffre`), sous
+  lui l'attribution en texte courant. Donne à la colonne le poids qui manquait.
+
+Réserves assumées : (1) de gros chiffres colorés flirtent avec l'infographie — toléré
+ici car ce bloc est une **carte de profil**, pas une dataviz ; le chiffre est un
+**repère**, la vraie mesure reste dans le graphe. (2) Le 2e bloc est reformulé en
+« {N} musées où ces œuvres sont conservées » (retouche de texte validée à part).
+
+Périmètre : CSS/layout + mise en forme du texte de `+page.svelte` uniquement. Données,
+graphe et tooltips non touchés. Ancienne règle `.chapo-maitre` supprimée.
+
+## 2026-07-11 — « Les presque » : portrait sorti du graphique, remonté au header de fiche (décision utilisateur)
+
+Le portrait n'apparaissait que dans la vue « Graphique ». Incohérent : l'image
+incarne le **profil du maître consulté**, elle appartient à la fiche entière, pas
+à un onglet.
+
+**Nouveau composant `PortraitMaitre.svelte`** — reprend le markup, le placeholder
+silhouette, la logique de légende et les styles du portrait, jusqu'ici dans
+`NuageFamilles.svelte`. Centralise le **format de légende normé** (sujet, auteur,
+Wikimedia Commons, licence — rien d'autre, CLAUDE.md). Statut inchangé : **source
+secondaire d'illustration**, jamais donnée ni comptage. Données et sourcing
+(`portraits.json`) **non touchés**.
+
+**Placement (2e disposition, même jour).** La 1re version (texte à gauche / portrait
+à droite) déséquilibrait la fiche : portrait flottant seul en haut à droite, texte
+isolé, graphe démarrant après un grand vide. Retenu : **bloc profil compact** —
+nom en **pleine largeur**, puis portrait à **gauche** (largeur bornée 12 rem, légende
+dessous) + paragraphe de situation à **droite**, centrés verticalement (`.profil`).
+Les onglets Graphique / Détail restent **sous** ce bloc, le contenu d'onglet en
+pleine largeur dessous. Le profil étant hors de la zone qui change d'onglet, le
+portrait reste visible en Graphique **comme** en Détail, sans duplication ni **saut
+de mise en page** au changement.
+
+**Responsive par requête de conteneur** (`container-type: inline-size` sur `.fiche`)
+plutôt que par largeur d'écran : sous ~32 rem de largeur de fiche, le profil passe
+en **une seule colonne** (nom, puis portrait, puis texte, alignés à gauche — pas
+deux colonnes écrasées). Le seuil porte sur la fiche réelle → le passage se fait
+« plus tôt » quand l'aside comprime la colonne, et le texte garde toujours une
+largeur confortable.
+
+`NuageFamilles.svelte` allégé : prop `portrait` retirée, wrapper flex `.regard`
+remplacé par `.graphe-hote` (simple repère du tooltip), le graphe **récupère toute
+la largeur** libérée.
+
+Vérifié par capture (Chromium piloté, outil de test retiré ensuite) : (1) Graphique
+avec portrait au header, (2) Détail même portrait visible, (3) ratio différent
+(photo de Rodin) contenu par la vignette à hauteur fixe, (4) largeur étroite =
+portrait sous le texte. Observation hors périmètre : le point au plafond (240) est
+rogné en tête de graphe (géométrie du nuage, `Y_HAUT` trop court pour le rayon max)
+— à traiter séparément.
+
+## 2026-07-10 — « Les presque » : onglet « Graphique » + paragraphe de situation générique (décision utilisateur)
+
+**Onglet renommé.** « Nuage » ne décrit pas la visualisation et n'est pas un nom
+de navigation clair → **« Graphique »**. Couple d'onglets : Graphique / Détail
+(état interne `vue` passé de `'nuage'` à `'graphique'`).
+
+**Paragraphe de situation réduit au volume et à la dispersion.** L'ancien texte
+disait « ils écrivent qu'ils ne sont pas certains qu'il les ait peintes » : « ils »
+flou, tournure lourde, « peintes » faux pour certaines familles. Une 1re réécriture
+(même jour) avait tenté un gabarit avec fraction + mention dominante + explication ;
+jugé **encore trop bavard**, il réintroduisait de l'interprétation. Décision finale :
+ce paragraphe **ne porte plus aucun angle** — ni fraction, ni mention dominante, ni
+« attribution prudente », ni override manuel. Le doute est déjà porté par le
+graphique et les tooltips. Il sert seulement à situer volume et dispersion :
+
+> Les musées de France conservent {total} œuvres sous le nom {de/d'}{maître}. Ces
+> œuvres sont conservées dans {musées} musées.
+
+Accord singulier/pluriel sur les deux quantités (`oeuvres`, `musees`). Conséquence :
+`editorial-maitres.js` perd tout son mécanisme d'explication/override (famille
+dominante, `situationMaitre`, `EDITORIAL[nom].explication`) — code mort supprimé,
+il ne reste que `bioMaitre`. Le refactor `mention`/`montrerMention`/`deNom` de
+`familles-public.js` **reste** (toujours utilisé par les tooltips).
+
+**Correction de langue** (exigence CLAUDE.md) : helper `deNom` gère l'élision
+(« sous le nom d'Ingres », « école d'Ingres ») ; helper `musees` accorde le
+singulier/pluriel (« 1 musée » / « 64 musées »). Jamais de `` `${n} musées` ``
+concaténé. `deNom` est aussi branché sur les mentions type (corrige un défaut latent
+des tooltips : « entourage de Ingres »).
+
+**Refactor tooltip** au passage : `FAMILLE_PUBLIC[code].mentionType` (nul/fonction)
+remplacé par `mention` (toujours définie) + `montrerMention` (booléen). Le footer du
+tooltip n'affiche la mention que si `montrerMention` (règle anti-répétition
+inchangée : `point_interrogation`, `entourage_de`, `genre_de`). Source unique de la
+chaîne, plus de duplication paragraphe/tooltip.
+
+## 2026-07-10 — Nuage « Les presque » : grammaire de tooltip + tooltip HTML custom (décision utilisateur)
+
+Le tooltip issu de la décision plus bas (`{label} — « {formule} » : {sens}. {N}
+œuvres.`) répétait trois fois la même chose : le label, la formule exacte et le
+sens disent presque les mêmes mots. Corrigé non pas au coup par coup mais par une
+**vraie grammaire de tooltip**, validée après deux tours de proposition (table
+relue et amendée par l'utilisateur avant tout code).
+
+**Structure à hiérarchie visible** (modèle Datawrapper/Flourish), plus de phrase
+linéaire :
+- **header** — titre court, générique (jamais le nom du maître → stable d'une
+  fiche à l'autre, donc comparable) ;
+- **corps** — commence par le sens réel pour le lecteur, prudent ;
+- **valeur** — « N œuvres », bien séparée ;
+- **mention type** — niveau secondaire optionnel.
+
+**Règle anti-répétition (gravée dans `familles-public.js`)** : la mention type ne
+s'affiche QUE dans deux cas — soit la mention brute est elle-même le fait marquant
+(`point_interrogation` → « Ingres (?) »), soit le terme réel du musée diffère du
+libellé public (« entourage » ≠ « cercle », « genre » ≠ « goût »). Partout ailleurs
+elle redirait le header → omise (`attribue`, `atelier_de`, `ecole_de`,
+`suiveur_de`, `maniere_de`).
+
+**« Mention type », pas « Formule Joconde »** : la chaîne est reconstruite par le
+code (`` `entourage de ${nom}` ``), ce n'est pas un verbatim de la notice. Le
+libellé public reste donc honnête sur ce point.
+
+**Abandon du `<title>` SVG natif → tooltip HTML custom.** Le `<title>` n'est pas
+stylable et impose une seule masse de texte : impossible d'y rendre la hiérarchie
+header/corps/valeur/mention. Remplacé par un panneau HTML sobre (fond clair, pas de
+pavé noir), positionné en pixels depuis la position réelle du point à l'écran
+(le SVG a son propre repère viewBox), basculé sous le point quand il est trop haut.
+Il ne vit qu'au survol/focus, ne masque donc pas durablement le graphe ni le
+portrait. Accessible au **survol et au focus clavier** (`role="button"`,
+`tabindex`), et **repli lecteur d'écran** conservé via un `aria-label` linéaire
+(`resumeFamille`) sur chaque point, puisque le `<title>` disparaît.
+
+Périmètre volontairement borné à ce palier : **ni les labels de l'axe ni la
+micro-légende** n'ont été touchés.
+
+**Grammaire allégée (même jour, 2e passe).** Le tooltip n'est pas un dictionnaire
+des labels : si chacun réexplique tout, le lecteur relit huit fois la même notice.
+Ordre retenu = **header → valeur → précision courte → footer optionnel**. Le corps
+devient une **précision d'une seconde de lecture** (peut être vide si le header se
+suffit), pas une définition. Objectif : lisible en un coup d'œil.
+
+**Accord singulier/pluriel** : helper `oeuvres(n)` → « 1 œuvre », « 240 œuvres ».
+Jamais de `` `${n} œuvres` `` concaténé directement. Le tooltip reçoit désormais le
+nombre BRUT (accordé côté libellé), plus une chaîne pré-formatée.
+
+Table des formulations validées (label axe inchangé) :
+
+| Code | Header | Précision (corps) | Mention type |
+|---|---|---|---|
+| `attribue` | Attribué à | Sans certitude qu'il s'agisse bien de sa main. | — |
+| `point_interrogation` | Nom suivi d'un « ? » | Doute noté sans autre précision. | « [nom] (?) » |
+| `atelier_de` | Son atelier | Son atelier, pas forcément sa main. | — |
+| `entourage_de` | Son cercle proche | Son entourage immédiat. | « entourage de [nom] » |
+| `ecole_de` | De son école | Plutôt son école que sa main. | — |
+| `suiveur_de` | Un suiveur | Dans sa suite, sous son influence. | — |
+| `maniere_de` | À sa manière | Son style, auteur inconnu. | — |
+| `genre_de` | Dans son goût | Lien de style lointain. | « dans le genre de [nom] » |
+
+## 2026-07-10 — Nuage « Les presque » : couche de libellés publics + axe réordonné (décision utilisateur)
+
+Suite du chantier narration. Les labels de l'axe exposaient les familles internes
+(« attribué à », « ? », « école de », « atelier »…) : exactes pour nous, opaques
+pour un visiteur. Le cas criant : « ? » seul, sans aucun sens. Décidé après deux
+tours de proposition (aucune implémentation avant validation) :
+
+**Couche de traduction publique** — nouveau `web/src/lib/familles-public.js` :
+par famille, un `label` public court, la `formule` exacte du musée (avec le nom du
+maître) et un `sens` en clair. Source unique des libellés, réutilisable par la vue
+Détail plus tard. Le tooltip se compose : `{label} — « {formule} » : {sens}. {N}
+œuvres.` — sans « niveau », « famille » ni « marqueur », la formule exacte
+conservée entre guillemets, explication au pluriel/neutre et prudente (on rapporte
+ce que font les musées, on n'affirme rien).
+
+**Libellés retenus** (curseur fidélité ↔ lisibilité, la formule exacte restant au
+survol) : attribué à · **nom (?)** · son atelier · son cercle · **de son école** ·
+un suiveur · sa manière · **dans son goût**. Choix notables : « nom (?) » (fidèle à
+la notation Joconde, lisible, ≠ « ? » seul) ; « de son école » (provenance, évite
+de lire « école qu'il a fondée ») ; « dans son goût » (« son genre » sonnait faux).
+« de son école » et « dans son goût » validés **provisoirement** (perfectibles).
+
+**Axe réordonné par distance narrative** (option B) — ordre
+`docs/typologie.md` : niveau 1, puis niveau 2 **atelier → entourage → école →
+suiveur**, puis niveau 3. L'ancien ordre plaçait « école » avant « atelier » et
+cassait une lecture gauche-droite. Réordonnancement **purement cosmétique** (ordre
+des colonnes dans `NuageFamilles`), aucune donnée touchée, zones de couleur
+toujours contiguës, comparabilité entre maîtres intacte.
+
+**Micro-légende** (une ligne, statique, sous le graphe) :
+« De gauche à droite, le lien au maître se desserre. » Elle remplace l'ancienne
+bulle « Comment lire » (rejetée : saut de page + explication éparpillée). Honnête
+seulement parce que l'axe est désormais ordonné.
+
+**Règle gravée dans CLAUDE.md** (« Couche de libellé public obligatoire ») : aucune
+catégorie technique affichée telle quelle ; un graphe se lit par ses labels,
+légende et infobulles, jamais par une notice séparée. But : ne pas réinjecter les
+structures du JSON dans l'interface à la prochaine brique.
+
+Périmètre tenu : **nuage seul**. Non touchés (signalés) : l'accueil (« notices »,
+« lexique »), la mention d'Alençon comme point d'entrée narratif dans CLAUDE.md
+(la Phase 3 l'a pourtant écarté du centre), la vue Détail (refonte différée ; la
+couche de traduction est prête à y être réutilisée).
+
+## 2026-07-09 — Séparer les trois natures de texte + bannir le vocabulaire interne (décision utilisateur)
+
+Refonte des textes de « Les presque », après constat que les fiches maîtres
+étaient bavardes et répétitives. Le problème était **structurel, pas
+stylistique** : le mode d'emploi de la visualisation avait envahi le texte
+éditorial. Trois natures de texte cohabitaient au même niveau.
+
+**Règle posée (désormais dans CLAUDE.md, « Principes de rédaction ») — trois
+natures de texte, jamais mélangées :**
+1. **Éditorial** — propre à un maître, court, en français courant, place centrale.
+2. **Mode d'emploi** de la dataviz — identique partout, écrit **une seule fois**
+   (ici : bulle dépliable « Comment lire ce graphique » à côté de la bascule),
+   jamais répété par fiche.
+3. **Mentions techniques** — crédits, licences, méthode : petit corps, en bas,
+   format normé.
+
+**Vocabulaire interne banni de l'interface publique.** *notice → œuvre* ;
+*« formule de doute »* → phrase en clair (« les musées écrivent qu'ils ne sont
+pas certains… ») ; *niveau 1/2/3* non affiché (l'info est déjà dans la couleur et
+la position) ; *famille / marqueur / lexique* n'apparaissent jamais. Les
+**libellés de familles** (« attribué à », « école de »…) restent inchangés pour
+l'instant (reformulation narrative = chantier distinct), **sauf** le nom de code
+« atelier (qualificatif, beaux-arts) » raccourci en « atelier de » à l'affichage.
+
+**Une légende d'image n'est pas une note de méthode.** La mise en garde « ces
+œuvres ne sont pas attribuées avec certitude au maître » a quitté la légende du
+portrait (où elle n'avait rien à faire) pour rejoindre la bulle « Comment lire ».
+La légende suit la forme normée : **sujet, auteur de l'image, source, licence**.
+
+**Chiffres racontés en français** (« plus de la moitié » plutôt que « 59 % »),
+le chiffre exact restant accessible (nombres bruts, survol, vue Détail).
+
+**Mise en œuvre (front, aucune donnée touchée) :**
+- `web/src/lib/editorial-maitres.js` (nouveau) : couche éditoriale du front (bio +
+  angle par maître). **Ce ne sont pas des données Joconde** — Joconde reste la
+  seule source de données. Deux maîtres témoins écrits à la main (François Clouet =
+  doute proche « atelier » ; Rembrandt = doute lointain « à la manière de »),
+  validés sur pièce. Les 25 autres ont un **angle dérivé** de leur famille de
+  doute dominante (repli honnête, pas de fiche cassée) ; leur montée en qualité
+  est une sous-étape (roadmap P3-T1).
+- `web/src/lib/joconde.js` : helpers `fractionEnMots`, `libelleFamillePublic`,
+  `licenceEnFrancais`.
+- Les chiffres ne sont jamais stockés en dur : calculés dans le composant depuis
+  `artistes.json`.
+
+**Statut des portraits Wikimedia — renforcé.** Rappel (déjà consigné plus haut le
+même jour) : **source secondaire d'illustration uniquement, jamais de donnée ni
+de comptage**, même rang que le futur fond de carte. Joconde = seule source de
+données. À redire dans la page méthode le moment venu.
+
+**Défaut repéré ailleurs, hors périmètre de ce palier (à traiter ensuite) :**
+la page d'accueil (`web/src/routes/+page.svelte`) emploie encore « notices » et
+« Détection : {lexique} », et une notation d'analyste (« X % … Y % de la base »).
+À reformuler **en gardant les deux dénominateurs** (règle de rigueur du
+2026-07-03), sans les supprimer.
+
+## 2026-07-09 — Portraits : retournement des regards + vignette de taille figée (décision utilisateur)
+
+Deux ajustements du portrait de « Les presque », après examen du rendu.
+
+**Retournement des portraits qui regardent à droite.** Le maître doit « regarder »
+son nuage, placé à sa gauche. Les portraits dont le sujet regarde vers la droite
+sont donc retournés horizontalement à l'affichage (`transform: scaleX(-1)`).
+Constaté à l'œil sur les fichiers, **8 concernés** : Annibale Carracci, Boucher,
+Guido Reni, Simon Vouet, Greuze, Hyacinthe Rigaud, Fragonard, Ribera. Les autres
+regardent déjà à gauche ou sont frontaux. **Règle d'exclusion : jamais retourner
+une gravure portant du texte** (Le Primatice, François Clouet, Le Corrège) — le
+miroir inverserait le texte. L'info est portée par un champ `regard`
+(`gauche`/`droite`) dans `portraits.json`, et mémorisée dans le set `REGARD_DROITE`
+de `source_portraits.py` pour survivre à une régénération. Coût assumé : on affiche
+un tableau connu en miroir — choix cosmétique au service de la mise en scène, pas
+une altération de donnée (le portrait n'est qu'illustration).
+
+**Vignette de taille figée.** Les portraits Commons ont des ratios variés ; sans
+hauteur fixe, la colonne changeait de hauteur à chaque maître et faisait « sauter »
+la page au changement d'auteur. Boîte de gabarit constant (`height: 15rem;
+object-fit: contain; object-position: bottom`) : même empreinte pour tous, sans
+rogner les visages (le `contain` préserve l'intégralité de l'image, au prix d'un
+peu d'espace transparent autour — sans cadre, il est invisible).
+
+## 2026-07-09 — Portraits des maîtres : Wikimedia Commons, source secondaire d'illustration (décision utilisateur)
+
+Les portraits qui accompagnent le nuage de « Les presque » sont sourcés sur
+**Wikimedia Commons**. Statut fixé, non négociable :
+
+- **Source SECONDAIRE D'ILLUSTRATION uniquement — jamais de donnée ni de
+  comptage.** Même statut que le GeoJSON de la carte (décision 2026-07-08). Un
+  portrait ne pèse sur aucun chiffre du projet ; il donne seulement un visage à
+  la visualisation. La source canonique reste la base Joconde.
+- **Stockage LOCAL, pas de hotlink** : les images sont téléchargées dans
+  `web/static/portraits/` (versions ~480 px, ~2,8 Mo au total pour 27), servies
+  par le site statique. Aucune dépendance live à un service tiers.
+- **Licence vérifiée fichier par fichier** via l'API Commons (`imageinfo` →
+  `extmetadata`). Résultat : 26 portraits en **domaine public**, 1 en **CC0**
+  (Géricault). Toutes libres.
+- **Crédit exigé par la licence affiché** (auteur + licence + « Wikimedia
+  Commons », avec lien vers la page du fichier) **en légende sous chaque
+  portrait**. Le manifeste `static/data/portraits.json` conserve, par maître :
+  fichier local, auteur, licence, URL de licence, URL source Commons, QID
+  Wikidata.
+- **Placeholder propre** (silhouette neutre + mention « pas de portrait fiable
+  disponible ») prévu pour tout maître sans portrait fiable. À ce jour les 27
+  ont un portrait ; le placeholder est le filet de sécurité.
+- **Légende d'attribution obligatoire** sous chaque portrait :
+  « Les œuvres du nuage ne sont **pas attribuées avec certitude** au maître
+  représenté. » — garde-fou contre le contresens « voici les tableaux de X ».
+
+**Procédé (reproductible)** : `web/scripts/source_portraits.py`. Route
+Wikidata (propriété P18 « image », qui ne pointe que vers des fichiers Commons
+libres) → API Commons pour licence + auteur + miniature → téléchargement local
+→ génération du manifeste. Les 27 QID ont été vérifiés à la main (recherche +
+description) avant récupération. Rejouer le script régénère images + manifeste
+à l'identique.
+
+## 2026-07-09 — « Les presque » : portrait du maître à droite, flottant sans cadre (décision utilisateur)
+
+Ajustement de mise en scène du nuage (`web/src/lib/NuageFamilles.svelte`). Un
+portrait du maître accompagne désormais le graphe pour donner de la présence à la
+visualisation. Deux choix arrêtés après examen du rendu :
+- **Portrait à droite du graphe** (et non à gauche) : le nuage étant placé à la
+  gauche du portrait, le maître « regarde » ses propres formules de doute. La
+  vraie image (libre de droit, à sourcer) devra donc être **orientée vers la
+  gauche** pour que le regard tombe sur le nuage.
+- **Image flottante, sans cadre** : retrait de la bordure, du fond blanc et du
+  padding ; suppression du fond opaque de la silhouette. Le portrait se pose dans
+  la marge du graphe (`align-items: flex-end`) plutôt que d'être enfermé dans une
+  vignette — moins « fiche signalétique », plus incarné.
+
+En l'état, le portrait reste un **placeholder** (silhouette neutre) : l'effet de
+regard ne sera visible qu'avec la vraie image. Aucune donnée ni aucun comptage
+touché — pure présentation.
+
+## 2026-07-08 — « Les presque » : barres → nuage de points à grille fixe (décision utilisateur)
+
+Les barres horizontales (livrées le jour même) corrigeaient la galaxie mais deux
+défauts à l'usage : (1) **pas de comparabilité entre maîtres** — chaque maître
+n'affiche que *ses* familles présentes, la grille change à chaque artiste, chaque
+graphe est un îlot ; (2) **pas de repère de mesure stable** — barres normalisées à
+la largeur du conteneur, donc une barre « pleine » d'un petit maître paraît aussi
+grande que celle d'un gros. On ne lit pas les volumes réels.
+
+**Décision : remplacer les barres par un nuage de points (scatter) sur une grille
+FIXE et COMMUNE.** C'est la grille stable qui rend les maîtres comparables —
+objectif éditorial central de la vue.
+- **Axe X** : les familles de doute, **toujours toutes, même ordre** (ordre
+  canonique du lexique v2). « Présumé » retiré : absent des 27 maîtres (colonne
+  vide par construction) → **8 colonnes**.
+- **Axe Y** : volume, de 0 à un **plafond commun = 240** (la plus grande valeur de
+  famille sur les 27, « école de » Le Brun). **Calculé côté front** depuis
+  `artistes.json` (max sur les 27), pas en dur, pas de dépendance pipeline.
+- **1 point par famille** à la hauteur de son volume ; zéro = pas de point ;
+  taille **légèrement** croissante avec le volume (appui, pas la mesure) ;
+  couleur par famille, groupée par teinte de niveau + libellés de niveau au-dessus
+  des groupes (la lecture « échelle du doute » survit) ; graduations
+  60/120/180/240 ; **échelle linéaire** (honnêteté des volumes) ; survol = compte
+  exact ; libellés d'axe raccourcis, technique complet au survol.
+
+**Justification de la forme (position sur Y commun plutôt que taille de bulle) :**
+l'œil compare précisément des **hauteurs sur une échelle commune**, mais **mal des
+aires de cercles**. L'échelle Y fixe et partagée permet de voir d'un coup que le
+doute autour de Le Brun (pic « école » à 240) est d'un autre ordre que celui
+d'Andrea del Sarto (« école » à 57) — les deux se lisent sur la même règle. Le
+grossissement léger ajoute une charge narrative (le volume « pèse ») sans remplacer
+la mesure. Compromis lisibilité/récit adapté au data-journalisme.
+
+**Coût assumé (signalé) :** les familles à faible volume et les petits maîtres
+collent au plancher sous un plafond à 240 — c'est la vérité (le doute se concentre
+sur « attribué à » + « école de ») ; contré par le cadrage (sous-titre disant le
+plafond, graduations, survol, plancher de taille de point), pas en trichant sur
+l'échelle. La galaxie reste archivée dans `lib/GalaxieMaitre.svelte`.
+
 ## 2026-07-08 — « Les presque » : galaxie abandonnée, barres + carte par maître (décision utilisateur)
 
 Refonte de la 1re dataviz après examen de la v1 (galaxie + détail) et du document
@@ -380,6 +3746,12 @@ partie de l'histoire. Règle inscrite dans CLAUDE.md.
 - **`data/` non versionné** (1,1 Go) ; `src/download.py` permet de tout récupérer.
 
 ## Roadmap et points de validation
+
+> **Section d'origine (phase 0), conservée comme trace.** Le suivi à jour vit
+> dans `docs/roadmap.md` depuis le 2026-07-03. La forme pressentie ici pour la
+> phase 3 (« carte D3.js + récit guidé ») a été remplacée par une application
+> interactive SvelteKit portée par la dataviz (décisions des 2026-07-06 et
+> 2026-07-07).
 
 ### Phase 0 — Initialisation ✅ (en attente de relecture)
 Arborescence, CLAUDE.md, docs/, environnement uv, git.

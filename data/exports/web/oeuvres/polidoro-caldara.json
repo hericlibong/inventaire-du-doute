@@ -1,0 +1,289 @@
+{
+ "slug": "polidoro-caldara",
+ "nom": "Polidoro Caldara",
+ "doute": 33,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 23
+  },
+  {
+   "code": "point_interrogation",
+   "notices": 2
+  },
+  {
+   "code": "entourage_de",
+   "notices": 8
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "000PE026960",
+   "titre": "PSYCHE RECUE DANS L'OLYMPE",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "point_interrogation",
+   "extrait": "CALDARA Polidoro (?)"
+  },
+  {
+   "reference": "50350101539",
+   "titre": "Vieil homme barbu, drapé, appuyé sur un bâton",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CALDARA Polidoro (attribué à)"
+  },
+  {
+   "reference": "50350101533",
+   "titre": "Lamentation sur le Christ mort, au pied de la croix",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CALDARA Polidoro (entourage de)"
+  },
+  {
+   "reference": "50350008510",
+   "titre": "Fragment de plan",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CALDARA Polidoro (attribué à)"
+  },
+  {
+   "reference": "50350008500",
+   "titre": "L'Adoration des bergers",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CALDARA Polidoro (attribué à)"
+  },
+  {
+   "reference": "50350102058",
+   "titre": "Scène de sacrifice : de nombreuses figures entourent un veau sur un autel",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CALDARA Polidoro (attribué à)"
+  },
+  {
+   "reference": "50350200062",
+   "titre": "Jésus et le tentateur",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CALDARA Polidoro (attribué à)"
+  },
+  {
+   "reference": "50350200195",
+   "titre": "Saint André, portant un livre et sa croix, accompagné de deux anges",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CALDARA Polidoro (entourage de)"
+  },
+  {
+   "reference": "50350200081",
+   "titre": "Le Christ priant au jardin des Oliviers, est reconforté par un ange",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CALDARA Polidoro (attribué à)"
+  },
+  {
+   "reference": "50350200508",
+   "titre": "Trois études de putti",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CALDARA Polidoro (attribué à)"
+  },
+  {
+   "reference": "50350200706",
+   "titre": "Scène de sacrifice : foule nombreuse autour d'une figure nue sur un autel",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CALDARA Polidoro (attribué à)"
+  },
+  {
+   "reference": "50350200717",
+   "titre": "Etudes pour un homme attaché à une colonne : saint Sébastien (?)",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CALDARA Polidoro (entourage de)"
+  },
+  {
+   "reference": "50350201374",
+   "titre": "Quatre figures autour d'un homme etendu sur un lit ; une tête ; deux croquis",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CALDARA Polidoro (entourage de)"
+  },
+  {
+   "reference": "50350201373",
+   "titre": "La Vierge assise avec l'Enfant et le petit saint Jean",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CALDARA Polidoro (entourage de)"
+  },
+  {
+   "reference": "50350200716",
+   "titre": "Trois figures dont un enfant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CALDARA Polidoro (entourage de)"
+  },
+  {
+   "reference": "50350214251",
+   "titre": "Trois hommes debout et une femme penchée sur un vase",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CALDARA Polidoro (entourage de)"
+  },
+  {
+   "reference": "50350501501",
+   "titre": "Fragment de décoration d'une chapelle",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CALDARA Polidoro (attribué à)"
+  },
+  {
+   "reference": "50350501502",
+   "titre": "Fragment de décoration de chapelle",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CALDARA Polidoro (attribué à)"
+  },
+  {
+   "reference": "50520000007",
+   "titre": "Hommes et femmes fuyant et se réfugiant dans une forêt à droite (recto) ; Etudes, dont une sainte Famille (verso)",
+   "musee": "musée Condé",
+   "ville": "Chantilly",
+   "code": "attribue",
+   "extrait": "CALDARA Polidoro (attribué)"
+  },
+  {
+   "reference": "50520000006",
+   "titre": "La Vendange",
+   "musee": "musée Condé",
+   "ville": "Chantilly",
+   "code": "point_interrogation",
+   "extrait": "CALDARA Polidoro (? )"
+  },
+  {
+   "reference": "50350006111",
+   "titre": "L'Adoration des bergers",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CALDARA Polidoro (entourage de)"
+  },
+  {
+   "reference": "50350008513",
+   "titre": "Figure d'homme debout, drapé, vu de face",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CALDARA Polidoro (attribué à)"
+  },
+  {
+   "reference": "50350008508",
+   "titre": "Fragment de plan",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CALDARA Polidoro (attribué à)"
+  },
+  {
+   "reference": "50350008514",
+   "titre": "Deux figures debout, drapées, l'une vue de dos",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CALDARA Polidoro (attribué à)"
+  },
+  {
+   "reference": "50350008507",
+   "titre": "Groupe de figures nues",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CALDARA Polidoro (attribué à)"
+  },
+  {
+   "reference": "50350008505",
+   "titre": "La fermeté de Mucius Scaevola",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CALDARA Polidoro (attribué à)"
+  },
+  {
+   "reference": "50350008509",
+   "titre": "Trois figures nues assises et satyre",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CALDARA Polidoro (attribué à)"
+  },
+  {
+   "reference": "50350008499",
+   "titre": "Adam et Eve chassés du Paradis terrestre",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CALDARA Polidoro (attribué à)"
+  },
+  {
+   "reference": "50350008518",
+   "titre": "Frise : Chrysès offrant des vases et des présents à Agamemnon (?)",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CALDARA Polidoro (attribué à)"
+  },
+  {
+   "reference": "50350008519",
+   "titre": "Frise : Bellone au milieu de trophées",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CALDARA Polidoro (attribué à)"
+  },
+  {
+   "reference": "50350008520",
+   "titre": "Frise : la Renomée et la Victoire au milieu de trophées",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CALDARA Polidoro (attribué à)"
+  },
+  {
+   "reference": "50350008517",
+   "titre": "Un homme chargé de pampres et quatre figures cueillant des branches",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CALDARA Polidoro (attribué à)"
+  },
+  {
+   "reference": "50350008515",
+   "titre": "Fragment de deux figures debout, drapées",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CALDARA Polidoro (attribué à)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-07-28T14:49:21+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

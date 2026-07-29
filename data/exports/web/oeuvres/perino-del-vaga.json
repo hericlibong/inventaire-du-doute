@@ -1,0 +1,492 @@
+{
+ "slug": "perino-del-vaga",
+ "nom": "Perino del Vaga",
+ "doute": 56,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 26
+  },
+  {
+   "code": "point_interrogation",
+   "notices": 1
+  },
+  {
+   "code": "ecole_de",
+   "notices": 11
+  },
+  {
+   "code": "atelier_de",
+   "notices": 16
+  },
+  {
+   "code": "entourage_de",
+   "notices": 2
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "00000068532",
+   "titre": "Trois femmes drapées à l'antique sous un palmier",
+   "musee": "musée national Magnin",
+   "ville": "Dijon",
+   "code": "attribue",
+   "extrait": "PERINO DEL VAGA (dit, attribué)"
+  },
+  {
+   "reference": "00000068533",
+   "titre": "Mariage mystique de sainte Catherine ; génie volant porteur d'une colonne",
+   "musee": "musée national Magnin",
+   "ville": "Dijon",
+   "code": "attribue",
+   "extrait": "PERINO DEL VAGA (dit, attribué)"
+  },
+  {
+   "reference": "00000077334",
+   "titre": "LA SAINTE FAMILLE",
+   "musee": "musée Condé",
+   "ville": "Chantilly",
+   "code": "point_interrogation",
+   "extrait": "PERINO DEL VAGA (dit, atelier, ?)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/00000077334.jpg",
+    "credit": "Own work",
+    "creator": "Workshop of Perino del Vaga",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Ch%C3%A2teau_de_Chantilly,_Perin_del_Vaga,_the_Holy_family.JPG",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "50350200216",
+   "titre": "Saint Marc Evangéliste assis",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "BONACCORSI Piero (atelier)"
+  },
+  {
+   "reference": "50350200387",
+   "titre": "Triomphe de Bacchus",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "BONACCORSI Piero (atelier)"
+  },
+  {
+   "reference": "50350200114",
+   "titre": "Pietà",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BONACCORSI Piero (attribué à)"
+  },
+  {
+   "reference": "50350200585",
+   "titre": "La Théologie",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BONACCORSI Piero (attribué à)"
+  },
+  {
+   "reference": "50350200174",
+   "titre": "Saint Pierre",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BONACCORSI Piero (attribué à)"
+  },
+  {
+   "reference": "50350200712",
+   "titre": "Etude de chasseurs et guerriers",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BONACCORSI Piero (école)"
+  },
+  {
+   "reference": "50350201889",
+   "titre": "Etude de diverses figures : Vierge à l'Enfant et guerriers",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BONACCORSI Piero (école)"
+  },
+  {
+   "reference": "50350200581",
+   "titre": "Une figure assise devant une statue et tenant un vase",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "BONACCORSI Piero (atelier)"
+  },
+  {
+   "reference": "50350200584",
+   "titre": "L'Arithmétique",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BONACCORSI Piero (attribué à)"
+  },
+  {
+   "reference": "50350201981",
+   "titre": "Figure d'homme debout portant un objet dans les bras (une maquette?)",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "BONACCORSI Piero (atelier)"
+  },
+  {
+   "reference": "50350200586",
+   "titre": "La Musique",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BONACCORSI Piero (attribué à)"
+  },
+  {
+   "reference": "50350200711",
+   "titre": "Diverses études dont un soldat arrachant un enfant à une femme",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BONACCORSI Piero (école)"
+  },
+  {
+   "reference": "50350101938",
+   "titre": "Persée délivrant Androméde",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BONACCORSI Piero (attribué à)"
+  },
+  {
+   "reference": "50350200180",
+   "titre": "Saint Paul debout tenant un livre et une épée",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "BONACCORSI Piero (atelier)"
+  },
+  {
+   "reference": "50350007332",
+   "titre": "Le Christ descendu de la Croix soutenu par saint Nicodème",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BONACCORSI Piero (attribué à)"
+  },
+  {
+   "reference": "50350200588",
+   "titre": "La Grammaire ?",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BONACCORSI Piero (attribué à)"
+  },
+  {
+   "reference": "50350200713",
+   "titre": "Etude de trois groupes : soldats, musiciens et sages",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BONACCORSI Piero (école)"
+  },
+  {
+   "reference": "50350201117",
+   "titre": "Frise ornée d'arabesques avec des figures de femmes",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BONACCORSI Piero (école)"
+  },
+  {
+   "reference": "50350200587",
+   "titre": "La Philosophie ?",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BONACCORSI Piero (attribué à)"
+  },
+  {
+   "reference": "50350200714",
+   "titre": "Etude de guerriers et de femmes",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BONACCORSI Piero (école)"
+  },
+  {
+   "reference": "50350200344",
+   "titre": "L'Amour",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BONACCORSI Piero (attribué à)"
+  },
+  {
+   "reference": "50350200358",
+   "titre": "Apollon tuant le serpent Python",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "BONACCORSI Piero (atelier)"
+  },
+  {
+   "reference": "50350101540",
+   "titre": "La Foi",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BONACCORSI Piero (attribué à)"
+  },
+  {
+   "reference": "50350200589",
+   "titre": "L'Architecture ?",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BONACCORSI Piero (attribué à)"
+  },
+  {
+   "reference": "50350201095",
+   "titre": "Monument en l'honneur d'un guerrier, orné de quatre figures",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BONACCORSI Piero (école)"
+  },
+  {
+   "reference": "50350001146",
+   "titre": "Statue d'homme drapé, entouré de trophées",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BONACCORSI Piero (attribué à)"
+  },
+  {
+   "reference": "50350201121",
+   "titre": "Décoration du dessus d'une porte : buste dans une niche circulaire",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BONACCORSI Piero (école)"
+  },
+  {
+   "reference": "50350001135",
+   "titre": "Une assemblée des Dieux",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BONACCORSI Piero (attribué à)"
+  },
+  {
+   "reference": "50350201982",
+   "titre": "Figure d'homme debout portant un objet dans les bras (une maquette?)",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "BONACCORSI Piero (atelier)"
+  },
+  {
+   "reference": "50350200405",
+   "titre": "L'Amour et Psyché",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BONACCORSI Piero (attribué à)"
+  },
+  {
+   "reference": "50350001134",
+   "titre": "Saint Jean Evangéliste assis dans les nuées",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BONACCORSI Piero (attribué à)"
+  },
+  {
+   "reference": "50350001145",
+   "titre": "Frise de soldats et de cavaliers se dirigeant vers la droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BONACCORSI Piero (attribué à)"
+  },
+  {
+   "reference": "50350001125",
+   "titre": "Vierge à l'Enfant, entre saint Pierre et saint Sébastien",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BONACCORSI Piero (attribué à)"
+  },
+  {
+   "reference": "50350001128",
+   "titre": "Triomphe de Vénus Amphitrite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BONACCORSI Piero (attribué à)"
+  },
+  {
+   "reference": "50350001144",
+   "titre": "Statue d'homme dans une niche et deux bas-reliefs encadrés de colonnes",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BONACCORSI Piero (attribué à)"
+  },
+  {
+   "reference": "50350001121",
+   "titre": "Trois études de tombeaux",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "BONACCORSI Piero (entourage de)"
+  },
+  {
+   "reference": "50350001129",
+   "titre": "Panneau d'ornements avec un médaillon surmonté d'un chapeau de cardinal",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BONACCORSI Piero (attribué à)"
+  },
+  {
+   "reference": "50350001147",
+   "titre": "Grotesques",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BONACCORSI Piero (attribué à)"
+  },
+  {
+   "reference": "50350111572",
+   "titre": "Grotesques avec un tempietto et un protomé de cheval ailé",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "BONACCORSI Piero (atelier)"
+  },
+  {
+   "reference": "50350001120",
+   "titre": "Homme debout, et études de décoration d'un tombeau",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "BONACCORSI Piero (entourage de)"
+  },
+  {
+   "reference": "50350102136",
+   "titre": "L'Adoration des Rois",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BONACCORSI Piero (école)"
+  },
+  {
+   "reference": "50350145109",
+   "titre": "Deux putti : l'un de dos, avançant vers la droite, l'autre, de face",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BONACCORSI Piero (école)"
+  },
+  {
+   "reference": "50350111571",
+   "titre": "Grotesques",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "BONACCORSI Piero (atelier)"
+  },
+  {
+   "reference": "50350500014",
+   "titre": "Grotesques",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "BONACCORSI Piero (atelier)"
+  },
+  {
+   "reference": "50350111573",
+   "titre": "Grotesques",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "BONACCORSI Piero (atelier)"
+  },
+  {
+   "reference": "50350112118",
+   "titre": "Femme tenant deux vases ardents et portant une corbeille avec une arabesque",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "BONACCORSI Piero (atelier)"
+  },
+  {
+   "reference": "50350145079",
+   "titre": "Projet pour un écoinçon : combat de deux tritons",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "BONACCORSI Piero (école)"
+  },
+  {
+   "reference": "50350200383",
+   "titre": "Diane lançant des flèches sur les filles de Niobé",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BONACCORSI Piero (attribué à)"
+  },
+  {
+   "reference": "50350200335",
+   "titre": "Cérès à la recherche de Proserpine",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "BONACCORSI Piero (attribué à)"
+  },
+  {
+   "reference": "50350111632",
+   "titre": "Motifs de grotesques et de trophées",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "BONACCORSI Piero (atelier)"
+  },
+  {
+   "reference": "50350501080",
+   "titre": "Traits",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "BONACCORSI Piero (atelier)"
+  },
+  {
+   "reference": "50350002963",
+   "titre": "Saint Matthieu assis sur des nuages",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "BONACCORSI Piero (atelier)"
+  },
+  {
+   "reference": "50350002962",
+   "titre": "Saint Luc évangéliste assis, regardant un papier qu'il déroule",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "BONACCORSI Piero (atelier)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-07-28T14:49:21+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

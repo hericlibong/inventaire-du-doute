@@ -1,0 +1,424 @@
+{
+ "slug": "nicolas-poussin",
+ "nom": "Nicolas Poussin",
+ "doute": 48,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 38
+  },
+  {
+   "code": "ecole_de",
+   "notices": 6
+  },
+  {
+   "code": "atelier_de",
+   "notices": 1
+  },
+  {
+   "code": "genre_de",
+   "notices": 3
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "000PE014608",
+   "titre": "SUJET PASTORAL",
+   "musee": "musée des beaux-arts",
+   "ville": "Marseille",
+   "code": "attribue",
+   "extrait": "POUSSIN Nicolas (attribué à)"
+  },
+  {
+   "reference": "000PE021910",
+   "titre": "SACRIFICE A PRIAPE",
+   "musee": "musée des beaux-arts",
+   "ville": "Bordeaux",
+   "code": "ecole_de",
+   "extrait": "POUSSIN Nicolas (école)"
+  },
+  {
+   "reference": "50510032134",
+   "titre": "Château fortifié sur un rocher",
+   "musee": "musée de l'Ecole nationale supérieure des beaux-arts",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "POUSSIN Nicolas (attribué)"
+  },
+  {
+   "reference": "50350209861",
+   "titre": "Paysage avec un berger guidant un cavalier appuyé sur sa lance",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "POUSSIN Nicolas (attribué à)"
+  },
+  {
+   "reference": "50350209825",
+   "titre": "La Chasse de Méléagre et Atalante",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "POUSSIN Nicolas (attribué à)"
+  },
+  {
+   "reference": "07430005253",
+   "titre": "Putto",
+   "musee": "musée des Beaux-Arts",
+   "ville": "Nantes",
+   "code": "genre_de",
+   "extrait": "POUSSIN Nicolas (genre de)"
+  },
+  {
+   "reference": "07430005266",
+   "titre": "Putto",
+   "musee": "musée des Beaux-Arts",
+   "ville": "Nantes",
+   "code": "genre_de",
+   "extrait": "POUSSIN Nicolas (genre de)"
+  },
+  {
+   "reference": "50350037169",
+   "titre": "Six études de têtes casquées et une étude de femme à mi-corps...",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "POUSSIN Nicolas (atelier)"
+  },
+  {
+   "reference": "50350043225",
+   "titre": "Cheval marin, vu de profil vers la droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "POUSSIN Nicolas (attribué à)"
+  },
+  {
+   "reference": "50350043226",
+   "titre": "Serpent enroulé sur lui-même",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "POUSSIN Nicolas (attribué à)"
+  },
+  {
+   "reference": "50350043227",
+   "titre": "Etudes de figures",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "POUSSIN Nicolas (attribué à)"
+  },
+  {
+   "reference": "50350209843",
+   "titre": "Flore et Zéphyr",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "POUSSIN Nicolas (attribué à)"
+  },
+  {
+   "reference": "50350209832",
+   "titre": "Renaud enchaîné pendant son sommeil",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "POUSSIN Nicolas (attribué à)"
+  },
+  {
+   "reference": "50350209833",
+   "titre": "Le Frappement du rocher",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "POUSSIN Nicolas (attribué à)"
+  },
+  {
+   "reference": "50350209847",
+   "titre": "Hercule consultant l'oracle de Delphes",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "POUSSIN Nicolas (attribué à)"
+  },
+  {
+   "reference": "50350209849",
+   "titre": "Trois études d'autels et d'un vase antiques",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "POUSSIN Nicolas (attribué à)"
+  },
+  {
+   "reference": "50350209848",
+   "titre": "Hercule enlève Déjanire",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "POUSSIN Nicolas (attribué à)"
+  },
+  {
+   "reference": "50350209862",
+   "titre": "Bacchanale",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "POUSSIN Nicolas (attribué à)"
+  },
+  {
+   "reference": "50350209839",
+   "titre": "L'Assomption de la Vierge",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "POUSSIN Nicolas (attribué à)"
+  },
+  {
+   "reference": "50350209864",
+   "titre": "Quatre amours cueillant des pommes",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "POUSSIN Nicolas (attribué à)"
+  },
+  {
+   "reference": "50350209850",
+   "titre": "Etudes de vases et autels antiques",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "POUSSIN Nicolas (attribué à)"
+  },
+  {
+   "reference": "50350209826",
+   "titre": "Deux putti, l'un debout et l'autre à genoux",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "POUSSIN Nicolas (attribué à)"
+  },
+  {
+   "reference": "50350209910",
+   "titre": "Hercule et Omphale",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "POUSSIN Nicolas (école)"
+  },
+  {
+   "reference": "50350209912",
+   "titre": "Bacchanale ou Les Rites de Mutinus ou Offrandes à Priape",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "POUSSIN Nicolas (école)"
+  },
+  {
+   "reference": "50350209911",
+   "titre": "Paysage",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "POUSSIN Nicolas (école)"
+  },
+  {
+   "reference": "50350209845",
+   "titre": "Vénus ou nymphe endormie entourée de trois amours",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "POUSSIN Nicolas (attribué à)"
+  },
+  {
+   "reference": "50350209851",
+   "titre": "Etudes de têtes et de personnages",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "POUSSIN Nicolas (attribué à)"
+  },
+  {
+   "reference": "50350209846",
+   "titre": "La Nourriture de Bacchus",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "POUSSIN Nicolas (attribué à)"
+  },
+  {
+   "reference": "50350209852",
+   "titre": "Feuille d'études",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "POUSSIN Nicolas (attribué à)"
+  },
+  {
+   "reference": "50350209831",
+   "titre": "La Crucifixion",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "POUSSIN Nicolas (attribué à)"
+  },
+  {
+   "reference": "50350209827",
+   "titre": "Un homme à genoux dans une barque tient un enfant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "POUSSIN Nicolas (attribué à)"
+  },
+  {
+   "reference": "50350209844",
+   "titre": "Jupiter et Antiope",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "POUSSIN Nicolas (attribué à)"
+  },
+  {
+   "reference": "50350209842",
+   "titre": "Pastorale",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "POUSSIN Nicolas (attribué à)"
+  },
+  {
+   "reference": "50350209840",
+   "titre": "Le Ravissement de saint Paul",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "POUSSIN Nicolas (attribué à)"
+  },
+  {
+   "reference": "50350209838",
+   "titre": "La Crucifixion",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "POUSSIN Nicolas (attribué à)"
+  },
+  {
+   "reference": "50350209841",
+   "titre": "Saint Denis effrayant ses boureaux et deux croquis préparatoires",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "POUSSIN Nicolas (attribué à)"
+  },
+  {
+   "reference": "50350209854",
+   "titre": "Etude d'après un décor antique",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "POUSSIN Nicolas (attribué à)"
+  },
+  {
+   "reference": "50350209865",
+   "titre": "Paysage avec une tour dominant un torrent",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "POUSSIN Nicolas (attribué à)"
+  },
+  {
+   "reference": "50350209828",
+   "titre": "Paysage avec une ferme maison entourée de petits arbres sur une colline",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "POUSSIN Nicolas (attribué à)"
+  },
+  {
+   "reference": "50350216042",
+   "titre": "Etude d'un autel antique",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "POUSSIN Nicolas (attribué à)"
+  },
+  {
+   "reference": "50350503367",
+   "titre": "Etude d'après un groupe antique",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "POUSSIN Nicolas (attribué à)"
+  },
+  {
+   "reference": "50350503366",
+   "titre": "Esquisse d'un paysage",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "POUSSIN Nicolas (attribué à)"
+  },
+  {
+   "reference": "50350503376",
+   "titre": "Etudes de bras, de pieds et petits croquis",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "POUSSIN Nicolas (attribué à)"
+  },
+  {
+   "reference": "01320016773",
+   "titre": "Jésus remettant les clés à saint Pierre",
+   "musee": "musée Bonaparte",
+   "ville": "Auxonne",
+   "code": "ecole_de",
+   "extrait": "POUSSIN (école)"
+  },
+  {
+   "reference": "01320016774",
+   "titre": "Le Crucifiement",
+   "musee": "musée Bonaparte",
+   "ville": "Auxonne",
+   "code": "ecole_de",
+   "extrait": "POUSSIN (école)"
+  },
+  {
+   "reference": "07290022377",
+   "titre": "Saint Denis ; Saint Denis l'Aéropagite couronné par un ange",
+   "musee": "musée des beaux-arts",
+   "ville": "Rouen",
+   "code": "attribue",
+   "extrait": "POUSSIN Nicolas (attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/07290022377.jpg",
+    "credit": "Cliché Carole Loisel, Catherine Lancien / Joconde",
+    "creator": "Nicolas Poussin",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Saint_Denis_l%27Ar%C3%A9opagite_couronn%C3%A9_par_un_ange_-_Poussin_-_MBA_Rouen.jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "05120002906",
+   "titre": "Etudes de casques antiques",
+   "musee": "musée des Beaux-Arts",
+   "ville": "Nancy",
+   "code": "attribue",
+   "extrait": "POUSSIN Nicolas (attribué)"
+  },
+  {
+   "reference": "M0341000308",
+   "titre": "Moïse sauvé des eaux",
+   "musee": "musée Sarret de Grozon",
+   "ville": "Arbois",
+   "code": "genre_de",
+   "extrait": "Poussin Nicolas (1594-1665) (genre de)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-07-28T14:49:21+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

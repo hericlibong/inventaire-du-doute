@@ -1,0 +1,611 @@
+{
+ "slug": "francois-gerard",
+ "nom": "François Gérard",
+ "doute": 65,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 55
+  },
+  {
+   "code": "atelier_de",
+   "notices": 8
+  },
+  {
+   "code": "entourage_de",
+   "notices": 2
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "000PE001267",
+   "titre": "NAPOLEON 1ER EN COSTUME DE SACRE",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "Gérard François (1770-1837) (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE001267.jpg",
+    "credit": "gallerix.org",
+    "creator": "François Gérard and workshop",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_Gerard_-_Napoleon_I_in_Coronation_Robes.jpeg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "50160000047",
+   "titre": "Portrait de Napoléon en costume du sacre",
+   "musee": "musée national des châteaux de Malmaison et de Bois Préau",
+   "ville": "Rueil-Malmaison",
+   "code": "atelier_de",
+   "extrait": "Gérard François (1770-1837) (atelier)"
+  },
+  {
+   "reference": "50350502854",
+   "titre": "Couple",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  },
+  {
+   "reference": "05620000673",
+   "titre": "Portrait de Jules de Résséguier, en uniforme",
+   "musee": "musée des Augustins",
+   "ville": "Toulouse",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  },
+  {
+   "reference": "50110001207",
+   "titre": "Portrait de l'impératrice Marie-Louise",
+   "musee": "musée national Magnin",
+   "ville": "Dijon",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué)"
+  },
+  {
+   "reference": "M0809006860",
+   "titre": "Portrait de femme",
+   "musee": "musée d'art et d'archéologie",
+   "ville": "Senlis",
+   "code": "entourage_de",
+   "extrait": "Gérard François (1770-1837) (entourage de)"
+  },
+  {
+   "reference": "50130000192",
+   "titre": "Napoléon en costume du sacre",
+   "musee": "musée national du château de Fontainebleau",
+   "ville": "Fontainebleau",
+   "code": "atelier_de",
+   "extrait": "Gérard François (1770-1837) (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/50130000192.jpg",
+    "credit": "Nationalmuseum : Härskarkonst - Napoleon, Karl Johan, Alexander at the Wayback Machine",
+    "creator": "Workshop of François Gérard",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Napoleon_in_Coronation_Robes_by_Fran%C3%A7ois_G%C3%A9rard.jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "50130000187",
+   "titre": "Portrait du Docteur Dubois, médecin-accoucheur de l'Impératrice Marie-Louise",
+   "musee": "musée national du château de Fontainebleau",
+   "ville": "Fontainebleau",
+   "code": "atelier_de",
+   "extrait": "Gérard François (1770-1837) (atelier)"
+  },
+  {
+   "reference": "50130000180",
+   "titre": "Napoléon en costume du sacre",
+   "musee": "musée national du château de Fontainebleau",
+   "ville": "Fontainebleau",
+   "code": "atelier_de",
+   "extrait": "Gérard François (1770-1837) (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/50130000180.jpg",
+    "credit": "The original uploader was Carolus at Dutch Wikipedia .",
+    "creator": "Workshop of François Gérard",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Napoleon_;_keizer_der_Fransen.jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "50130000179",
+   "titre": "Marie-Julie, reine d'Espagne et ses deux filles Zénaïde et Charlotte",
+   "musee": "musée national du château de Fontainebleau",
+   "ville": "Fontainebleau",
+   "code": "atelier_de",
+   "extrait": "Gérard François (1770-1837) (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/50130000179.jpg",
+    "credit": "Bjoertvedt , 2010-11-24",
+    "creator": "Workshop of François Gérard / Attributed to Marie-Éléonore Godefroid",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Bonaparte_Julie_by_Wicar.JPG",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "50130000182",
+   "titre": "Madame Mère",
+   "musee": "musée national du château de Fontainebleau",
+   "ville": "Fontainebleau",
+   "code": "atelier_de",
+   "extrait": "Gérard François (1770-1837) (atelier)"
+  },
+  {
+   "reference": "M0517000081",
+   "titre": "Hector Lemaire (titre de l'inventaire) ; Portrait d'Hector Lemaire (titre d'usage)",
+   "musee": "musée barrois",
+   "ville": "Bar-le-Duc",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/M0517000081.jpg",
+    "credit": "Own work",
+    "creator": "Ji-Elle",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_G%C3%A9rard-Portrait_d%27Hector_Lemaire-Mus%C3%A9e_barrois.jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "02470000174",
+   "titre": "Portrait de la reine Hortense",
+   "musee": "musée Bertrand",
+   "ville": "Châteauroux",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/02470000174.jpg",
+    "credit": "Musée Bertrand Châteauroux [1]",
+    "creator": "François Gérard / Robert Lefèvre",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Portrait_de_la_reine_Hortense_-_Mus%C3%A9e_Bertrand_Ch%C3%A2teauroux.jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "03110042044",
+   "titre": "Napoléon 1er",
+   "musee": "musée des Beaux-Arts de Reims",
+   "ville": "Reims",
+   "code": "atelier_de",
+   "extrait": "Gérard François (1770-1837) (attribution incertaine, atelier)"
+  },
+  {
+   "reference": "07140011320",
+   "titre": "Charles Ferdinand Louis-Philippe Emmanuel d'Orléans",
+   "musee": "musée Louis Philippe",
+   "ville": "Eu",
+   "code": "entourage_de",
+   "extrait": "Gérard François (1770-1837) (entourage)"
+  },
+  {
+   "reference": "M0332013024",
+   "titre": "Portrait de jeune femme",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  },
+  {
+   "reference": "M0332013092",
+   "titre": "Etude pour une femme turque se reposant sur des coussins (recto) ; Femme debout, drapée, le sein dénudé (verso)",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  },
+  {
+   "reference": "M0332013093",
+   "titre": "Une femme nue assise et une femme nue couchée avec un enfant",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  },
+  {
+   "reference": "M0332014157",
+   "titre": "Portrait d'homme dans un fauteuil",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  },
+  {
+   "reference": "M0332014165",
+   "titre": "Officier, de face, la main sur un canon (recto) ; portrait de cardinal (verso)",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  },
+  {
+   "reference": "M0332014167",
+   "titre": "Portrait d'homme assis à son bureau",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  },
+  {
+   "reference": "M0332014169",
+   "titre": "Portrait d'homme assis",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  },
+  {
+   "reference": "M0332014171",
+   "titre": "Portrait d'homme assis, une épée au côté droit",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  },
+  {
+   "reference": "M0332014174",
+   "titre": "Portrait d'homme assis",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  },
+  {
+   "reference": "M0332014175",
+   "titre": "Portrait d'homme assis",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  },
+  {
+   "reference": "M0332014176",
+   "titre": "Portrait d'homme assis",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  },
+  {
+   "reference": "M0332014178",
+   "titre": "Portrait d'homme assis tenant des gants",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  },
+  {
+   "reference": "M0332014183",
+   "titre": "Portrait d'homme assis (recto et verso)",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  },
+  {
+   "reference": "M0332014186",
+   "titre": "Portrait d'homme",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  },
+  {
+   "reference": "M0332014187",
+   "titre": "Portrait d'homme tenant un chapeau",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  },
+  {
+   "reference": "M0332013090",
+   "titre": "Etude d'une danseuse d'après un vase antique",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  },
+  {
+   "reference": "M0332013094",
+   "titre": "Jeune femme assise endormie",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  },
+  {
+   "reference": "M0332013106",
+   "titre": "Portrait d'homme assis à son bureau",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  },
+  {
+   "reference": "M0332013111",
+   "titre": "Portrait d'homme assis à son bureau",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  },
+  {
+   "reference": "M0332014158",
+   "titre": "Portrait d'homme assis dans un fauteuil",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  },
+  {
+   "reference": "M0332014159",
+   "titre": "Portrait d'homme assis dans un fauteuil",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  },
+  {
+   "reference": "M0332014180",
+   "titre": "Portrait d'homme debout",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  },
+  {
+   "reference": "M0332014182",
+   "titre": "Portrait d'homme debout appuyé à un bureau",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  },
+  {
+   "reference": "M0332012327",
+   "titre": "Cavalier sur un cheval (Henri IV à cheval ?)",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  },
+  {
+   "reference": "M0332013087",
+   "titre": "Portrait de femme",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  },
+  {
+   "reference": "M0332013091",
+   "titre": "Croquis d'une femme assise ou femme à sa toilette (recto) ; Etude d'architecture intérieure (verso)",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  },
+  {
+   "reference": "M0332013095",
+   "titre": "Femme debout, drapée et laurée",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  },
+  {
+   "reference": "M0332013104",
+   "titre": "Feuille de croquis",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  },
+  {
+   "reference": "M0332013107",
+   "titre": "Portrait d'homme assis à son bureau",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  },
+  {
+   "reference": "M0332013108",
+   "titre": "Deux études d'homme assis à son bureau",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  },
+  {
+   "reference": "M0332013110",
+   "titre": "Portrait d'homme assis",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  },
+  {
+   "reference": "M0332014156",
+   "titre": "Portrait d'homme assis",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  },
+  {
+   "reference": "M0332014163",
+   "titre": "Officier debout",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  },
+  {
+   "reference": "M0332014166",
+   "titre": "Portrait d'homme debout",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  },
+  {
+   "reference": "M0332014173",
+   "titre": "Portrait d'homme assis",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  },
+  {
+   "reference": "M0332014185",
+   "titre": "Portrait d'homme assis, le bras gauche reposant sur une table",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  },
+  {
+   "reference": "M0332013088",
+   "titre": "Etude d'homme nu debout (Pâris?)",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  },
+  {
+   "reference": "M0332013105",
+   "titre": "Feuille de croquis (recto et verso)",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  },
+  {
+   "reference": "M0332013109",
+   "titre": "Portrait d'homme assis à son bureau",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  },
+  {
+   "reference": "M0332014160",
+   "titre": "Portrait d'homme assis sur une banquette",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  },
+  {
+   "reference": "M0332014161",
+   "titre": "Portrait d'homme assis dans un fauteuil",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  },
+  {
+   "reference": "M0332014162",
+   "titre": "Un officier debout près d'un canon",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  },
+  {
+   "reference": "M0332014164",
+   "titre": "Officier, debout, de face",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  },
+  {
+   "reference": "M0332014168",
+   "titre": "Portrait d'homme assis",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  },
+  {
+   "reference": "M0332014172",
+   "titre": "Portrait d'homme assis, tenant une canne dans la main gauche",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  },
+  {
+   "reference": "M0332014177",
+   "titre": "Portrait de femme portant un chapeau",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  },
+  {
+   "reference": "M0332014179",
+   "titre": "Portrait d'homme debout dans un encadrement de fenêtre",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  },
+  {
+   "reference": "M0332014181",
+   "titre": "Portrait d'homme debout",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  },
+  {
+   "reference": "M0332014184",
+   "titre": "Portrait d'homme assis",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  },
+  {
+   "reference": "M0332012902",
+   "titre": "Une fête champêtre dans le parc d'un château",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Gérard François (1770-1837) (attribué à)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-07-28T14:49:21+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

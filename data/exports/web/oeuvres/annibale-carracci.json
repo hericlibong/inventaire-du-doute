@@ -1,0 +1,828 @@
+{
+ "slug": "annibale-carracci",
+ "nom": "Annibale Carracci",
+ "doute": 86,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 17
+  },
+  {
+   "code": "point_interrogation",
+   "notices": 3
+  },
+  {
+   "code": "ecole_de",
+   "notices": 1
+  },
+  {
+   "code": "atelier_de",
+   "notices": 9
+  },
+  {
+   "code": "entourage_de",
+   "notices": 54
+  },
+  {
+   "code": "maniere_de",
+   "notices": 1
+  },
+  {
+   "code": "genre_de",
+   "notices": 1
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "000DE006899",
+   "titre": "GUERRIERS AU COMBAT",
+   "musee": "musée des beaux-arts",
+   "ville": "Marseille",
+   "code": "attribue",
+   "extrait": "CARRACCI Annibale (attribué à)"
+  },
+  {
+   "reference": "000PE014197",
+   "titre": "BERGER JOUANT AVEC UN BELIER",
+   "musee": "musée des beaux-arts",
+   "ville": "Marseille",
+   "code": "attribue",
+   "extrait": "CARRACCI Annibale (attribué à)"
+  },
+  {
+   "reference": "000PE024783",
+   "titre": "LA NATIVITE",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CARRACCI Annibale (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE024783.jpg",
+    "credit": "http://cartelfr.louvre.fr/pub/fr/image/31106_p0003542.002.jpg",
+    "creator": "Annibale Carracci",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Annibale_Carracci,_Adorazione_dei_pastori,_Louvre.jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "000PE029379",
+   "titre": "CHANTEURS GROTESQUES",
+   "musee": "musée des Beaux-Arts",
+   "ville": "Beaune",
+   "code": "maniere_de",
+   "extrait": "CARRACCI Annibale (manière de)"
+  },
+  {
+   "reference": "00000060729",
+   "titre": "ADAM ET EVE APRES LA CHUTE",
+   "musee": "musée de la Chartreuse",
+   "ville": "Douai",
+   "code": "ecole_de",
+   "extrait": "CARRACCI Annibale (école)"
+  },
+  {
+   "reference": "00000077354",
+   "titre": "LA NUIT PORTANT LE SOMMEIL ET LA MORT",
+   "musee": "musée Condé",
+   "ville": "Chantilly",
+   "code": "atelier_de",
+   "extrait": "CARRACCI Annibale (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/00000077354.jpg",
+    "credit": "Joconde database : entry 00000077354",
+    "creator": "Annibale Carracci",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Annibale_Carracci_La_Notte_Museo_Cond%C3%A9_Chantilly.jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "00000077355",
+   "titre": "L'AURORE PARSEMANT DES FLEURS ET TENANT UN TORCHE",
+   "musee": "musée Condé",
+   "ville": "Chantilly",
+   "code": "atelier_de",
+   "extrait": "CARRACCI Annibale (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/00000077355.jpg",
+    "credit": "Joconde database : entry 00000077355",
+    "creator": "Annibale Carracci",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Annibale_Carracci_Aurora_Museo_Cond%C3%A9_Chantilly.jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "00000077352",
+   "titre": "VENUS ENDORMIE AVEC DES AMOURS",
+   "musee": "musée Condé",
+   "ville": "Chantilly",
+   "code": "atelier_de",
+   "extrait": "CARRACCI Annibale (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/00000077352.jpg",
+    "credit": "Web Gallery of Art : Image Info about artwork wga QS:P11807,\"c/carracci/annibale/2/sleepven\"",
+    "creator": "Annibale Carracci",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Annibale_Carracci_-_Sleeping_Venus_-_WGA4449.jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "00000077353",
+   "titre": "AMOUR REPANDANT DES FLEURS",
+   "musee": "musée Condé",
+   "ville": "Chantilly",
+   "code": "atelier_de",
+   "extrait": "CARRACCI Annibale (atelier)"
+  },
+  {
+   "reference": "00000102970",
+   "titre": "SAINT SEBASTIEN",
+   "musee": "musée des beaux-arts",
+   "ville": "Quimper",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "00000104668",
+   "titre": "Amour répendant des fleurs",
+   "musee": "musée Condé",
+   "ville": "Chantilly",
+   "code": "atelier_de",
+   "extrait": "CARRACCI Annibale (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/00000104668.jpg",
+    "credit": "Own work",
+    "creator": "Sailko",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Annibale_carracci,_amorini_con_fiori_04.JPG",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "00000104667",
+   "titre": "Amour répendant des fleurs",
+   "musee": "musée Condé",
+   "ville": "Chantilly",
+   "code": "atelier_de",
+   "extrait": "CARRACCI Annibale (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/00000104667.jpg",
+    "credit": "https://www.pop.culture.gouv.fr/notice/joconde/00000104667",
+    "creator": "Annibale Carracci and workshop",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:CARRACCI_Annibale_(atelier)_-_Amour_r%C3%A9pendant_des_fleurs,_00000104667.jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "00000104670",
+   "titre": "Amour répendant des fleurs",
+   "musee": "musée Condé",
+   "ville": "Chantilly",
+   "code": "atelier_de",
+   "extrait": "CARRACCI Annibale (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/00000104670.jpg",
+    "credit": "Own work",
+    "creator": "Sailko",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Annibale_carracci,_amorini_con_fiori_03.JPG",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "00000104669",
+   "titre": "Amour répendant des fleurs",
+   "musee": "musée Condé",
+   "ville": "Chantilly",
+   "code": "atelier_de",
+   "extrait": "CARRACCI Annibale (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/00000104669.jpg",
+    "credit": "Own work",
+    "creator": "Sailko",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Annibale_carracci,_amorini_con_fiori_01.JPG",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "50350004041",
+   "titre": "L'Annonciation, dans une lunette",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CARRACCI Annibale (attribué à)"
+  },
+  {
+   "reference": "50350004470",
+   "titre": "Jambes et ventre d'un homme couché vu en raccourci par les pieds",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "50350004048",
+   "titre": "Vierge à l'Enfant debout dans un paysage",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "50350000220",
+   "titre": "Deux femmes assises",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "50350004435",
+   "titre": "L'impératrice Faustine visitant sainte Catherine dans sa prison",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "50350004052",
+   "titre": "La Vierge et l'Enfant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "50350004461",
+   "titre": "Une tête d'enfant inclinée vers la gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "50350004463",
+   "titre": "Portrait d'homme, de trois quarts, regard fixé sur le spectateur",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "50350004043",
+   "titre": "Repos de la Sainte Famille",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "50350004050",
+   "titre": "Vierge à l'Enfant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "50350004057",
+   "titre": "La Vierge filant, l'Enfant tenant une fleur et saint Joseph rabotant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "50350004443",
+   "titre": "Allégorie de la Fortune",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "50350004096",
+   "titre": "Deux jeunes satyres tenant des draperies",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "50350004064",
+   "titre": "Déploration du Christ mort",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "50350102639",
+   "titre": "Figure d'homme nu, tenant un objet dans les bras",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CARRACCI Annibale (attribué à)"
+  },
+  {
+   "reference": "50350103034",
+   "titre": "Deux saintes femmes",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CARRACCI Annibale (attribué à)"
+  },
+  {
+   "reference": "50350004430",
+   "titre": "La Vierge allaitant l'Enfant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "50350004468",
+   "titre": "Etude d'une tête de saint en extase",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "50350004465",
+   "titre": "Tête de femme légèrement inclinée à droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "50350004446",
+   "titre": "Homme, de dos, se penchant en avant, et un autre grimpant, de dos",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "50350004040",
+   "titre": "Vierge à l'Enfant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "50350004458",
+   "titre": "Figure de jeune homme assis, écrivant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "50350004453",
+   "titre": "Atlante",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CARRACCI Annibale (attribué à)"
+  },
+  {
+   "reference": "50350000221",
+   "titre": "Tritons",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "50350004054",
+   "titre": "Saint Hyacinthe présentée à la Vierge et à l'Enfant Jésus",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "50350004429",
+   "titre": "La Vierge assise avec l'Enfant Jésus, sur des nuages",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CARRACCI Annibale (attribué à)"
+  },
+  {
+   "reference": "50350004456",
+   "titre": "Académie d'homme assis, tourné vers l'arrière",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "50350004039",
+   "titre": "Moïse recevant les Tables de la Loi",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CARRACCI Annibale (attribué à)"
+  },
+  {
+   "reference": "50350004432",
+   "titre": "La Vierge à l'Enfant adorée par saint Jean-Baptiste et un autre saint",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "50350004042",
+   "titre": "L'Adoration des Mages",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "50350004460",
+   "titre": "Homme debout, de dos, se retournant, étude pour un atlante",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "50350004474",
+   "titre": "Paysage avec une forteresse",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "50350004047",
+   "titre": "La Vierge à l'Enfant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "50350004462",
+   "titre": "Tête de faune",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "50350004469",
+   "titre": "Quatre têtes d'hommes barbus, dont une tête de Christ",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "50350004454",
+   "titre": "Un homme nu, assis, vu par le dos, appuyé sur le bras gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "50350104874",
+   "titre": "Etude du Christ vu de face",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "50350004428",
+   "titre": "Vierge à l'Enfant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "50350004055",
+   "titre": "La Vierge confiant l'Enfant Jésus à saint François d'Assise",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "50350004455",
+   "titre": "Un homme nu, assis, bras droit levé, jambe gauche ployée",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "50350004066",
+   "titre": "Le repas d'Emmaüs",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "50350004431",
+   "titre": "Le repos de la Sainte Famille pendant la Fuite en Egypte",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "50350004467",
+   "titre": "Tête de jeune homme regardant vers la gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "50350004445",
+   "titre": "Plusieurs figures dans diverses positions",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "50350004434",
+   "titre": "La Vierge et l'Enfant Jésus sur des nuages, adorés par les anges",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "50350004051",
+   "titre": "La Vierge à l'Enfant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "50350004464",
+   "titre": "Buste d'homme vu de face, cheveux relevés, moustache naissante",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CARRACCI Annibale (attribué à)"
+  },
+  {
+   "reference": "50350004466",
+   "titre": "Tête d'enfant tourné vers la gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "50350004433",
+   "titre": "La Sainte Famille avec sainte Catherine et san Bernardino",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "50350004058",
+   "titre": "Prédication de saint Jean-Baptiste, montrant le Messie",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "50350004053",
+   "titre": "La Vierge allaitant l'Enfant, dans un paysage",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "50350004437",
+   "titre": "Sainte assise dans un paysage, lisant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "50350500944",
+   "titre": "Etude de deux pieds",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CARRACCI Annibale (attribué à)"
+  },
+  {
+   "reference": "50350500945",
+   "titre": "Tête de chien, de profil vers la droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "50350500947",
+   "titre": "Demi-figure d'homme nu, vu de dos",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "50350004452",
+   "titre": "Académie d'homme nu, tournévers la gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "50350004451",
+   "titre": "Femme debout drapée ; femme vue à mi-corps",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "50350004439",
+   "titre": "Repas préparé par un ange à deux religieux franciscains",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "50350004438",
+   "titre": "Saint François d'Assise devant un crucifix",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "50350004440",
+   "titre": "Religieux à genoux, le bras droit levé, la main gauche sur la poitrine",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "07430005039",
+   "titre": "La Sainte Famille avec saint Jean-Baptiste et sainte Elisabeth",
+   "musee": "musée des Beaux-Arts",
+   "ville": "Nantes",
+   "code": "point_interrogation",
+   "extrait": "CARRACCI Annibale (?, patronyme)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/07430005039.jpg",
+    "credit": "[1]",
+    "creator": "Annibale Carracci",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Annibale_Carracci_Nantes.jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "05620001443",
+   "titre": "Apollon",
+   "musee": "musée des Augustins",
+   "ville": "Toulouse",
+   "code": "attribue",
+   "extrait": "CARRACCI Annibale (attribué, école)"
+  },
+  {
+   "reference": "50110000194",
+   "titre": "Bords de rivière avec pêcheur",
+   "musee": "musée national Magnin",
+   "ville": "Dijon",
+   "code": "genre_de",
+   "extrait": "CARRACCI Annibale (genre de)"
+  },
+  {
+   "reference": "50350004442",
+   "titre": "Le triomphe de Bacchus",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "CARRACCI Annibale (entourage)"
+  },
+  {
+   "reference": "M0332005161",
+   "titre": "Etude d'un buste",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "CARRACCI Annibale (attribué à) (dessinateur)"
+  },
+  {
+   "reference": "M0332005162",
+   "titre": "Etude d'un torse dont le bras tient un objet",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "CARRACCI Annibale (attribué à)"
+  },
+  {
+   "reference": "M0332002740",
+   "titre": "Trois caricatures de têtes d'homme",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "CARRACCI Annibale (attribué à)"
+  },
+  {
+   "reference": "M0332002736",
+   "titre": "Etude de nus",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "CARRACCI Annibale (attribué à)"
+  },
+  {
+   "reference": "M0332005163",
+   "titre": "Etude d'un chien",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "CARRACCI Annibale (attribué à) (dessinateur)"
+  },
+  {
+   "reference": "07480012427",
+   "titre": "Le repos pendant la fuite ; Allégorie (autre titre)",
+   "musee": "musée des beaux-arts et galerie David-d'Angers",
+   "ville": "Angers",
+   "code": "point_interrogation",
+   "extrait": "CARRACCI Annibale (?, dessinateur)"
+  },
+  {
+   "reference": "M0491001011",
+   "titre": "Etude de têtes d’apôtres",
+   "musee": "musée Hyacinthe Rigaud",
+   "ville": "Perpignan",
+   "code": "attribue",
+   "extrait": "Carracci Annibale (1560-1609) (attribué à)"
+  },
+  {
+   "reference": "02860008133",
+   "titre": "Vénus et l'Amour endormi",
+   "musee": "musée des beaux-arts",
+   "ville": "Orléans",
+   "code": "point_interrogation",
+   "extrait": "CARRACCI Annibale (inventeur, ?)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-07-28T14:49:21+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

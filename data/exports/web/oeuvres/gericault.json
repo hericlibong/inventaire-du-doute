@@ -1,0 +1,400 @@
+{
+ "slug": "gericault",
+ "nom": "Géricault",
+ "doute": 40,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 31
+  },
+  {
+   "code": "ecole_de",
+   "notices": 4
+  },
+  {
+   "code": "genre_de",
+   "notices": 5
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "000PE001307",
+   "titre": "LIONS COUCHES",
+   "musee": "musée d'Orsay",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "GERICAULT Théodore (attribué)"
+  },
+  {
+   "reference": "000PE009846",
+   "titre": "PORTRAIT D'UN JEUNE GARCON",
+   "musee": "musée de Tessé",
+   "ville": "Le Mans",
+   "code": "attribue",
+   "extrait": "GERICAULT Théodore (attribué)"
+  },
+  {
+   "reference": "00000058247",
+   "titre": "CHEVAUX DE POSTILLON",
+   "musee": "musée des beaux-arts",
+   "ville": "Rouen",
+   "code": "attribue",
+   "extrait": "GERICAULT Théodore (attribué)"
+  },
+  {
+   "reference": "00000059455",
+   "titre": "SCENE DE DELUGE",
+   "musee": "musée des beaux-arts",
+   "ville": "Rouen",
+   "code": "attribue",
+   "extrait": "GERICAULT Théodore (attribué)"
+  },
+  {
+   "reference": "00000059458",
+   "titre": "PORTRAIT D'ITALIENNE EN FICHU",
+   "musee": "musée des beaux-arts",
+   "ville": "Rouen",
+   "code": "attribue",
+   "extrait": "GERICAULT Théodore (attribué)"
+  },
+  {
+   "reference": "00000059460",
+   "titre": "PETIT CHAT ENDORMI",
+   "musee": "musée des beaux-arts",
+   "ville": "Rouen",
+   "code": "attribue",
+   "extrait": "GERICAULT Théodore (attribué)"
+  },
+  {
+   "reference": "00000059457",
+   "titre": "ACADEMIE D'HOMME VU DE PROFIL LE POING GAUCHE FERME",
+   "musee": "musée des beaux-arts",
+   "ville": "Rouen",
+   "code": "attribue",
+   "extrait": "GERICAULT Théodore (attribué)"
+  },
+  {
+   "reference": "00000059456",
+   "titre": "ACADEMIE D'HOMME VU DE DOS",
+   "musee": "musée des beaux-arts",
+   "ville": "Rouen",
+   "code": "attribue",
+   "extrait": "GERICAULT Théodore (attribué)"
+  },
+  {
+   "reference": "00000059459",
+   "titre": "PORTRAIT D'HOMME",
+   "musee": "musée des beaux-arts",
+   "ville": "Rouen",
+   "code": "attribue",
+   "extrait": "GERICAULT Théodore (attribué)"
+  },
+  {
+   "reference": "00000074301",
+   "titre": "JOCKEY AVEC DEUX CHEVAUX",
+   "musee": "musée Goya",
+   "ville": "Castres",
+   "code": "ecole_de",
+   "extrait": "GERICAULT Théodore (école)"
+  },
+  {
+   "reference": "50110000738",
+   "titre": "Tête de jeune homme",
+   "musee": "musée national Magnin",
+   "ville": "Dijon",
+   "code": "attribue",
+   "extrait": "GERICAULT Théodore (peintre, attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/50110000738.jpg",
+    "credit": "https://www.pop.culture.gouv.fr/",
+    "creator": "Attributed to Théodore Géricault",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:GERICAULT_Th%C3%A9odore_(peintre,_attribu%C3%A9_%C3%A0)_-_T%C3%AAte_de_jeune_homme,_1810_vers.jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "06070001420",
+   "titre": "Académie d'homme",
+   "musee": "musée Ingres Bourdelle",
+   "ville": "Montauban",
+   "code": "attribue",
+   "extrait": "GERICAULT Théodore (attribué à)"
+  },
+  {
+   "reference": "50350216039",
+   "titre": "Divers croquis dont un homme debout",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "GERICAULT Théodore (école)"
+  },
+  {
+   "reference": "50350113725",
+   "titre": "Etude de deux chevaux",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "GERICAULT Théodore (école)"
+  },
+  {
+   "reference": "50350216038",
+   "titre": "Cheval au trot conduit par le palefrenier",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "GERICAULT Théodore (école)"
+  },
+  {
+   "reference": "10480003953",
+   "titre": "Cheval au galop",
+   "musee": "musée des beaux-arts",
+   "ville": "Chambéry",
+   "code": "attribue",
+   "extrait": "GERICAULT Théodore (attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/10480003953.jpg",
+    "credit": "https://pop-perf-assets.s3.gra.io.cloud.ovh.net/joconde/10480003953/0000669.jpg",
+    "creator": "Théodore Géricault",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Cheval_au_galop,_par_Th%C3%A9odore_G%C3%A9ricault.jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "000PE024365",
+   "titre": "ANON",
+   "musee": "musée Cantini",
+   "ville": "Marseille",
+   "code": "attribue",
+   "extrait": "GERICAULT Théodore (attribué à)"
+  },
+  {
+   "reference": "M0289002599",
+   "titre": "Cheval debout de profil vers la gauche (titre factice)",
+   "musee": "musée municipal",
+   "ville": "Pithiviers",
+   "code": "attribue",
+   "extrait": "GERICAULT Théodore (attribué à)"
+  },
+  {
+   "reference": "01370002661",
+   "titre": "Le Cuirassier blessé ; Portrait du colonel de Moncey (ancien titre)",
+   "musee": "musée des beaux-arts",
+   "ville": "Dijon",
+   "code": "attribue",
+   "extrait": "GERICAULT Théodore (attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/01370002661.jpg",
+    "credit": "https://www.pop.culture.gouv.fr/",
+    "creator": "Théodore Géricault",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:GERICAULT_Th%C3%A9odore_(attribu%C3%A9_%C3%A0)_;_VERNET_Horace_(d%27apr%C3%A8s)_-_Le_Cuirassier_bless%C3%A9,_1822,_1823.jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "01370002658",
+   "titre": "Chevaux au pâturage ; Chevaux flamands (autre titre)",
+   "musee": "musée des beaux-arts",
+   "ville": "Dijon",
+   "code": "attribue",
+   "extrait": "GERICAULT Théodore (attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/01370002658.jpg",
+    "credit": "https://www.pop.culture.gouv.fr/",
+    "creator": "Attributed to Théodore Géricault",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:GERICAULT_Th%C3%A9odore_(attribu%C3%A9_%C3%A0)_-_Chevaux_au_p%C3%A2turage,_1822,_1823.jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "03110005881",
+   "titre": "Napoléon donnant un ordre à un officier supérieur des Guides",
+   "musee": "musée des Beaux-Arts de Reims",
+   "ville": "Reims",
+   "code": "attribue",
+   "extrait": "GERICAULT Théodore (attribué à, peintre)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/03110005881.jpg",
+    "credit": "Musée des Beaux-Arts, Reims",
+    "creator": "Théodore Géricault",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:G%C3%89RICAULT_Th%C3%A9odore_(Attribu%C3%A9_%C3%A0)_Napol%C3%A9on_donnant_un_ordre_%C3%A0_un_officier_sup%C3%A9rieur_des_Guides_Huile_sur_toile.jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "M0121001933",
+   "titre": "Étude de tête d'homme",
+   "musee": "musée d'art Roger-Quillot",
+   "ville": "Clermont-Ferrand",
+   "code": "attribue",
+   "extrait": "Géricault Théodore (1791-1824) (attribué à)"
+  },
+  {
+   "reference": "M0332006618",
+   "titre": "Accident de diligence",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "genre_de",
+   "extrait": "Géricault Théodore (1791-1824) (genre de)"
+  },
+  {
+   "reference": "M0332006632",
+   "titre": "Cheval mort",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "genre_de",
+   "extrait": "Géricault Théodore (1791-1824) (genre de)"
+  },
+  {
+   "reference": "M0332007131",
+   "titre": "Cheval devant une mangeoire",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "genre_de",
+   "extrait": "Géricault Théodore (1791-1824) (genre de)"
+  },
+  {
+   "reference": "M0332007122",
+   "titre": "Naufrage",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "genre_de",
+   "extrait": "Géricault Théodore (1791-1824) (genre de)"
+  },
+  {
+   "reference": "M0332007124",
+   "titre": "Cheval à l'écurie",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "genre_de",
+   "extrait": "Géricault Théodore (1791-1824) (genre de)"
+  },
+  {
+   "reference": "M0332014273",
+   "titre": "Croquis d'un homme nu assis et d'une femme tendant les bras à un petit garçon nu",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Géricault Théodore (1791-1824) (attribué à)"
+  },
+  {
+   "reference": "M0332014274",
+   "titre": "Croquis d'études : Scène de rue (recto) ; étude de portrait féminin (verso)",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Géricault Théodore (1791-1824) (attribué à)"
+  },
+  {
+   "reference": "M0332014267",
+   "titre": "Homme barbu à terre soutenu par un jeune homme",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Géricault Théodore (1791-1824) (attribué à)"
+  },
+  {
+   "reference": "M0332013241",
+   "titre": "Scènes de combats à l'épée (recto et verso)",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Géricault Théodore (1791-1824) (attribué à)"
+  },
+  {
+   "reference": "M0332011565",
+   "titre": "Quatre groupes de lutteurs et deux hommes emportant un blessé",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Géricault Théodore (1791-1824) (attribué à)"
+  },
+  {
+   "reference": "M0332013240",
+   "titre": "Etudes de têtes de chats",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Géricault Théodore (1791-1824) (attribué à)"
+  },
+  {
+   "reference": "M0332013238",
+   "titre": "Feuille d'étude : un cheval, coiffures de cinq soldats",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Géricault Théodore (1791-1824) (attribué à)"
+  },
+  {
+   "reference": "M0332013239",
+   "titre": "Etude d'un cheval mort",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Géricault Théodore (1791-1824) (attribué à)"
+  },
+  {
+   "reference": "M0332013234",
+   "titre": "Croquis avec des cavaliers",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Géricault Théodore (1791-1824) (attribué à)"
+  },
+  {
+   "reference": "M0332013237",
+   "titre": "Etude de jambes de chevaux",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Géricault Théodore (1791-1824) (attribué à)"
+  },
+  {
+   "reference": "M0332013248",
+   "titre": "Combat des Centaures et des Lapithes",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Géricault Théodore (1791-1824) (attribué à)"
+  },
+  {
+   "reference": "M0332013247",
+   "titre": "Etudes : une tête, trois pieds et deux mains",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Géricault Théodore (1791-1824) (attribué à)"
+  },
+  {
+   "reference": "M0332012903",
+   "titre": "Etude d'un cheval de profil à droite",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Géricault Théodore (1791-1824) (attribué à)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-07-28T14:49:21+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

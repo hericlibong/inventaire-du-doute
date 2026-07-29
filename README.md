@@ -24,13 +24,34 @@ Cas de réutilisation du jeu de données
 
 ## État du projet
 
-**Phase 1 en cours** : test go/no-go sur la qualité des données (taux de notices
-portant un marqueur d'incertitude, fiabilité du filtre sur un échantillon vérifié
-à la main). Suivi dans `docs/`.
+**Phase 3 en cours — restitution web, recentrée sur « Les presque ».** Depuis le
+2026-07-15, la **première version publique** est centrée sur un seul dossier :
+**« Les presque »**, les œuvres que les musées rapprochent d'un grand maître sans
+les lui attribuer tout à fait. Les autres rubriques et formes de doute (dont
+« Avant / après ») **restent conservées et documentées dans le projet, mais hors
+du périmètre publiable initial**.
+
+Les phases 1 (test go/no-go sur la qualité des données) et 2 (typologie du doute,
+pipeline d'exports) sont terminées. Le front est une application statique
+SvelteKit (`web/`) qui consomme les JSON exportés par le pipeline Python ;
+l'exploration des 27 noms (graphique / œuvres / carte par maître) est en place, et
+un export « Vue d'ensemble » des formulations prudentes est prêt. Suivi détaillé
+et périmètre V1 dans `docs/roadmap.md` (bloc « ★ RECENTRAGE »).
 
 ## Installation
+
+Pipeline de données :
 
 ```bash
 uv sync
 uv run python src/download.py   # télécharge le CSV (1,1 Go) et la nomenclature
+```
+
+Front (après avoir généré les exports) :
+
+```bash
+cd web
+npm install
+npm run sync:data   # copie data/exports/web/*.json vers web/static/data/
+npm run dev
 ```

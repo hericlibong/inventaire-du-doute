@@ -1,0 +1,672 @@
+{
+ "slug": "boucher",
+ "nom": "Boucher",
+ "doute": 78,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 27
+  },
+  {
+   "code": "point_interrogation",
+   "notices": 2
+  },
+  {
+   "code": "ecole_de",
+   "notices": 38
+  },
+  {
+   "code": "atelier_de",
+   "notices": 7
+  },
+  {
+   "code": "entourage_de",
+   "notices": 3
+  },
+  {
+   "code": "genre_de",
+   "notices": 1
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "000PE000206",
+   "titre": "Jeune femme au manchon",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "Boucher François (1703-1770) (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE000206.jpg",
+    "credit": "The Yorck Project (2002) 10.000 Meisterwerke der Malerei (DVD-ROM), distributed by DIRECTMEDIA Publishing GmbH. ISBN : 3936122202 .",
+    "creator": "François Boucher",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_Boucher_024.jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "000PE000204",
+   "titre": "Le Sommeil des Amours",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "Boucher François (1703-1770) (atelier)"
+  },
+  {
+   "reference": "000PE000205",
+   "titre": "L'AURORE",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "Boucher François (1703-1770) (atelier)"
+  },
+  {
+   "reference": "000DE006838",
+   "titre": "AMOURS JOUANT AVEC UN VOILE BLEU",
+   "musee": "musée Grobet-Labadié",
+   "ville": "Marseille",
+   "code": "ecole_de",
+   "extrait": "Boucher François (1703-1770) (école)"
+  },
+  {
+   "reference": "000DE006839",
+   "titre": "AMOURS JOUANT AVEC UNE COUPE",
+   "musee": "musée Grobet-Labadié",
+   "ville": "Marseille",
+   "code": "ecole_de",
+   "extrait": "Boucher François (1703-1770) (école)"
+  },
+  {
+   "reference": "000DE016661",
+   "titre": "AMOUR",
+   "musee": "musée des beaux-arts",
+   "ville": "Rennes",
+   "code": "ecole_de",
+   "extrait": "Boucher François (1703-1770) (école)"
+  },
+  {
+   "reference": "000PE013054",
+   "titre": "La diseuse de bonne aventure",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "code": "ecole_de",
+   "extrait": "Boucher François (1703-1770) (école)"
+  },
+  {
+   "reference": "000PE013616",
+   "titre": "LE LAPIN SAVANT",
+   "musee": "musée des beaux-arts",
+   "ville": "Marseille",
+   "code": "attribue",
+   "extrait": "Boucher François (1703-1770) (attribué à)"
+  },
+  {
+   "reference": "000PE020181",
+   "titre": "L'ADORATION DES BERGERS",
+   "musee": "musée des beaux-arts",
+   "ville": "Bordeaux",
+   "code": "point_interrogation",
+   "extrait": "Boucher François (1703-1770) (?)"
+  },
+  {
+   "reference": "000PE020930",
+   "titre": "Mercure confiant le jeune Bacchus aux nymphes du mont Nysa",
+   "musee": "musée des beaux-arts",
+   "ville": "Caen",
+   "code": "ecole_de",
+   "extrait": "Boucher François (1703-1770) (école)"
+  },
+  {
+   "reference": "00000060723",
+   "titre": "PETIT DENICHEUR D'OISEAUX",
+   "musee": "musée de la Chartreuse",
+   "ville": "Douai",
+   "code": "ecole_de",
+   "extrait": "Boucher François (1703-1770) (école)"
+  },
+  {
+   "reference": "50520001106",
+   "titre": "Portrait de Jean-Antoine Watteau (1684-1721)",
+   "musee": "musée Condé",
+   "ville": "Chantilly",
+   "code": "point_interrogation",
+   "extrait": "Boucher François (1703-1770) (? )"
+  },
+  {
+   "reference": "50350010788",
+   "titre": "Deux angelots ou amours allongés",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Boucher François (1703-1770) (école)"
+  },
+  {
+   "reference": "50350010791",
+   "titre": "Enfant assis, tourné vers la droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Boucher François (1703-1770) (école)"
+  },
+  {
+   "reference": "50350010800",
+   "titre": "Chinoiserie : la Vue",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Boucher François (1703-1770) (école)"
+  },
+  {
+   "reference": "50350010766",
+   "titre": "Tête de femme, de trois quarts vers la doite, légèrement inclinée",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Boucher François (1703-1770) (attribué à)"
+  },
+  {
+   "reference": "50350010785",
+   "titre": "Scène de vendange",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Boucher François (1703-1770) (école)"
+  },
+  {
+   "reference": "50350502272",
+   "titre": "Demi-figure d'homme, tourné vers la gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Boucher François (1703-1770) (école)"
+  },
+  {
+   "reference": "50350010807",
+   "titre": "Chinoiserie : le Toucher",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Boucher François (1703-1770) (école)"
+  },
+  {
+   "reference": "50350031530",
+   "titre": "Jeune femme à mi-corps, tenant un oiseau qui becquette sa bouche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Boucher François (1703-1770) (école)"
+  },
+  {
+   "reference": "50350010787",
+   "titre": "Chinoiserie : la Terre",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Boucher François (1703-1770) (école)"
+  },
+  {
+   "reference": "50350010769",
+   "titre": "Etude de quatre têtes d'hommes",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Boucher François (1703-1770) (attribué à)"
+  },
+  {
+   "reference": "50350010790",
+   "titre": "Chinoiserie : l'Air",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Boucher François (1703-1770) (école)"
+  },
+  {
+   "reference": "50350228310",
+   "titre": "Femme nue, tournée vers la gauche, presque de dos",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Boucher François (1703-1770) (attribué à)"
+  },
+  {
+   "reference": "50350010795",
+   "titre": "Un berger et une figure dans un paysage de campagne avec des ruines",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Boucher François (1703-1770) (école)"
+  },
+  {
+   "reference": "50350010784",
+   "titre": "Jeune guerrier assis sur un trône prononcant une allocution",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Boucher François (1703-1770) (école)"
+  },
+  {
+   "reference": "50350010789",
+   "titre": "Jeune enfant à demi-allongé sur le sol, près de trois moutons",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Boucher François (1703-1770) (école)"
+  },
+  {
+   "reference": "50350010805",
+   "titre": "Etude de deux jeunes paysans, vus à mi-corps",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Boucher François (1703-1770) (école)"
+  },
+  {
+   "reference": "50350010804",
+   "titre": "Chinoiserie : le Goût",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Boucher François (1703-1770) (école)"
+  },
+  {
+   "reference": "50350010809",
+   "titre": "Berger assis à terre dans un bois aux pieds d'une bergère",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Boucher François (1703-1770) (école)"
+  },
+  {
+   "reference": "50350010798",
+   "titre": "Paysage pastoral avec un temple et un hameau dominant une cascade",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Boucher François (1703-1770) (école)"
+  },
+  {
+   "reference": "50350010797",
+   "titre": "Soldat et montreuse de curiosité",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Boucher François (1703-1770) (école)"
+  },
+  {
+   "reference": "50350010799",
+   "titre": "Vénus recevant les produits de la terre et de la mer",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Boucher François (1703-1770) (école)"
+  },
+  {
+   "reference": "50350010806",
+   "titre": "Chinoiserie : le Toucher",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Boucher François (1703-1770) (école)"
+  },
+  {
+   "reference": "50350010796",
+   "titre": "Chinoise assise tenant un plat, entourée d'enfants et de serveuses",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Boucher François (1703-1770) (école)"
+  },
+  {
+   "reference": "50350010810",
+   "titre": "Etude d'un petit ange volant dans l'air",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Boucher François (1703-1770) (école)"
+  },
+  {
+   "reference": "50350205662",
+   "titre": "L'Immaculée Conception ou l'Assomption de la Vierge",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Boucher François (1703-1770) (école)"
+  },
+  {
+   "reference": "50350010793",
+   "titre": "Paysanne debout, vue presque de dos, portant un petit chien",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Boucher François (1703-1770) (école)"
+  },
+  {
+   "reference": "50350010801",
+   "titre": "Paysanne debout, vue presque de dos, portant un petit chien",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Boucher François (1703-1770) (école)"
+  },
+  {
+   "reference": "50350010803",
+   "titre": "Chinoiserie : le Feu",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Boucher François (1703-1770) (école)"
+  },
+  {
+   "reference": "50350010808",
+   "titre": "Tombeau où s'élève une colonne cannelée entourée d'angelots",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Boucher François (1703-1770) (école)"
+  },
+  {
+   "reference": "50350010770",
+   "titre": "Groupe de plusieurs hommes drapés, debout, conversant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Boucher François (1703-1770) (attribué à)"
+  },
+  {
+   "reference": "50350010767",
+   "titre": "Pastorale avec berger et bergère",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Boucher François (1703-1770) (attribué à)"
+  },
+  {
+   "reference": "50350010792",
+   "titre": "Jeune guerrier debout, sur les marches d'un trône prononcant une allocution",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Boucher François (1703-1770) (école)"
+  },
+  {
+   "reference": "50350010794",
+   "titre": "Etude de deux têtes d'anges",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Boucher François (1703-1770) (école)"
+  },
+  {
+   "reference": "50350010802",
+   "titre": "La Paix, la Justice, la Loi et la Vigilance",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Boucher François (1703-1770) (école)"
+  },
+  {
+   "reference": "50350010786",
+   "titre": "Paysage avec une maison entourée d'arbres",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Boucher François (1703-1770) (école)"
+  },
+  {
+   "reference": "50350010771",
+   "titre": "Etude d'une figure secourant un jeune homme étendu sur le sol",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Boucher François (1703-1770) (attribué à)"
+  },
+  {
+   "reference": "50350010811",
+   "titre": "Portrait en buste d'une jeune fille appuyée sur une corbeille de fleurs",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Boucher François (1703-1770) (école)"
+  },
+  {
+   "reference": "50350017852",
+   "titre": "Portrait de Madame de Pompadour",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "Boucher François (1703-1770) (attribué à)"
+  },
+  {
+   "reference": "04000000182",
+   "titre": "Erigone vaincue",
+   "musee": "musée Lambinet",
+   "ville": "Versailles",
+   "code": "atelier_de",
+   "extrait": "Boucher François (1703-1770) (atelier)"
+  },
+  {
+   "reference": "07430005700",
+   "titre": "Amours dans les nuages",
+   "musee": "musée des Beaux-Arts",
+   "ville": "Nantes",
+   "code": "attribue",
+   "extrait": "Boucher François (1703-1770) (attribué à)"
+  },
+  {
+   "reference": "01550005410",
+   "titre": "Allégorie de l'été",
+   "musee": "musée de la faïence Frédéric Blandin",
+   "ville": "Nevers",
+   "code": "genre_de",
+   "extrait": "Boucher François (1703-1770) (genre de)"
+  },
+  {
+   "reference": "01370000458",
+   "titre": "La Baigneuse surprise ; Le Fleuve Scamandre (autre titre)",
+   "musee": "musée des beaux-arts",
+   "ville": "Dijon",
+   "code": "atelier_de",
+   "extrait": "Boucher François (1703-1770) (atelier, auteur)"
+  },
+  {
+   "reference": "M0121004507",
+   "titre": "La mort de Méléagre",
+   "musee": "musée d'art Roger-Quillot",
+   "ville": "Clermont-Ferrand",
+   "code": "atelier_de",
+   "extrait": "Boucher François (1703-1770) (atelier)"
+  },
+  {
+   "reference": "M0121004505",
+   "titre": "Pyrrhus sauvé ou La naissance d'Oedipe",
+   "musee": "musée d'art Roger-Quillot",
+   "ville": "Clermont-Ferrand",
+   "code": "atelier_de",
+   "extrait": "Boucher François (1703-1770) (atelier)"
+  },
+  {
+   "reference": "M0491000988",
+   "titre": "Un jeune enfant",
+   "musee": "musée Hyacinthe Rigaud",
+   "ville": "Perpignan",
+   "code": "attribue",
+   "extrait": "Boucher François (1703-1770) (attribué à)"
+  },
+  {
+   "reference": "06290000982",
+   "titre": "Hygie, la déesse de la santé ; Le printemps",
+   "musee": "musée des Beaux-Arts",
+   "ville": "Lille",
+   "code": "attribue",
+   "extrait": "Boucher François (1703-1770) (attribué à)"
+  },
+  {
+   "reference": "06290006029",
+   "titre": "Tête de jeune homme",
+   "musee": "musée des Beaux-Arts",
+   "ville": "Lille",
+   "code": "attribue",
+   "extrait": "Boucher François (1703-1770) (attribué à)"
+  },
+  {
+   "reference": "M0121003026",
+   "titre": "Orphée charmant les animaux",
+   "musee": "musée d'art Roger-Quillot",
+   "ville": "Clermont-Ferrand",
+   "code": "ecole_de",
+   "extrait": "Boucher François (1703-1770) (école)"
+  },
+  {
+   "reference": "05030002954",
+   "titre": "Jeune femme drapée entraînée par deux hommes",
+   "musee": "musée d'Art et d'Archéologie",
+   "ville": "Guéret",
+   "code": "attribue",
+   "extrait": "Boucher François (1703-1770) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "01720007382",
+   "titre": "Amour étendu",
+   "musee": "musée des ursulines",
+   "ville": "Mâcon",
+   "code": "attribue",
+   "extrait": "Boucher François (1703-1770) (attribué)"
+  },
+  {
+   "reference": "01720007384",
+   "titre": "Amour assis",
+   "musee": "musée des ursulines",
+   "ville": "Mâcon",
+   "code": "attribue",
+   "extrait": "Boucher François (1703-1770) (attribué à)"
+  },
+  {
+   "reference": "M0332001486",
+   "titre": "Combat de cavalerie",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Boucher François (1703-1770) (attribué à)"
+  },
+  {
+   "reference": "M0457000827",
+   "titre": "Sans désignation",
+   "musee": "musée des beaux-arts",
+   "ville": "Nîmes",
+   "code": "attribue",
+   "extrait": "Boucher François (1703-1770) (attribué à)"
+  },
+  {
+   "reference": "M0457000737",
+   "titre": "Paysage ",
+   "musee": "musée des beaux-arts",
+   "ville": "Nîmes",
+   "code": "attribue",
+   "extrait": "BOUCHER François (attribué à)"
+  },
+  {
+   "reference": "M0332011640",
+   "titre": "Un coin de paysage avec une ferme",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "entourage_de",
+   "extrait": "Boucher François (1703-1770) (entourage)"
+  },
+  {
+   "reference": "M0332011641",
+   "titre": "Une maison dans la verdure avec un dessinateur au premier plan",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "entourage_de",
+   "extrait": "Boucher François (1703-1770) (entourage)"
+  },
+  {
+   "reference": "M0332011648",
+   "titre": "Etude de jeune femme assise dans la verdure (recto) ; étude de tête de femme et haut de buste (verso)",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "entourage_de",
+   "extrait": "Boucher François (1703-1770) (entourage)"
+  },
+  {
+   "reference": "M0332013025",
+   "titre": "Etude pour Les Génies des arts",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Boucher François (1703-1770) (attribué à)"
+  },
+  {
+   "reference": "M0332013050",
+   "titre": "Paysage avec une ferme",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Boucher François (1703-1770) (attribué à)"
+  },
+  {
+   "reference": "M0332013282",
+   "titre": "Etude de coquillage (Strombus occipitrinus)",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Boucher François (1703-1770) (attribué à)"
+  },
+  {
+   "reference": "M0332012279",
+   "titre": "Etude de coquillage (Murex anguliferus)",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Boucher François (1703-1770) (attribué à)"
+  },
+  {
+   "reference": "M0332013281",
+   "titre": "Etude de deux coquillages (Cypraea tigris, cypraea mappa)",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Boucher François (1703-1770) (attribué à)"
+  },
+  {
+   "reference": "06190023890",
+   "titre": "Autel de l'amitié",
+   "musee": "musée de la Chartreuse",
+   "ville": "Douai",
+   "code": "attribue",
+   "extrait": "Boucher François (1703-1770) (attribué à)"
+  },
+  {
+   "reference": "00457000809",
+   "titre": "Sans désignation",
+   "musee": "musée des beaux-arts",
+   "ville": "Nîmes",
+   "code": "attribue",
+   "extrait": "Boucher François (1703-1770) (attribué à)"
+  },
+  {
+   "reference": "M0457000753",
+   "titre": "Sans désignation",
+   "musee": "musée des beaux-arts",
+   "ville": "Nîmes",
+   "code": "attribue",
+   "extrait": "Boucher François (1703-1770) (attribué à)"
+  },
+  {
+   "reference": "M0457000810",
+   "titre": "Sans désignation",
+   "musee": "musée des beaux-arts",
+   "ville": "Nîmes",
+   "code": "attribue",
+   "extrait": "Boucher François (1703-1770) (attribué à)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-07-28T14:49:21+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

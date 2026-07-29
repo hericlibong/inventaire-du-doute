@@ -51,6 +51,84 @@ par un humain, selon le protocole suivant :
   notice — pas s'il apparaît dans une biographie, un nom propre ou à propos
   d'une autre œuvre.
 
+## Les œuvres montrées en exemple (vitrine « Œuvres », 2026-07-11)
+
+Sur chaque fiche de maître, l'onglet « Œuvres » montre quelques cas concrets.
+Ces exemples sont **pris automatiquement dans la base, pas choisis à la main** :
+pour chaque forme de doute présente autour d'un nom, le pipeline retient la
+**première œuvre rencontrée** dans le fichier de référence (deux pour la forme
+la plus fréquente), plus une copie « d'après ». Ni tri, ni sélection éditoriale,
+ni recherche de la « meilleure » pièce : aucun risque de mise en scène.
+
+Conséquences assumées :
+- l'échantillon n'est **ni représentatif ni exhaustif** (jusqu'à 9 œuvres quand
+  un maître peut en compter des centaines) — c'est une illustration, jamais un
+  comptage ;
+- la citation affichée entre guillemets est le **contenu exact du champ auteur**
+  de la fiche Joconde (verbatim, capitales et abréviations comprises) ;
+- chaque exemple renvoie à sa **fiche publique sur POP** (plateforme ouverte du
+  patrimoine) ; cette fiche vit sa vie indépendamment de notre version de
+  référence du fichier et peut avoir été mise à jour depuis.
+
+> **Mise à jour (2026-07-28).** L'onglet « Œuvres » ne montre plus quelques
+> exemples mais la **totalité des œuvres concernées** par le maître, filtrables
+> par mention et paginées. Le verbatim et le lien POP restent la matière ; les
+> exemples automatiques décrits ci-dessus ne sont plus la règle d'affichage.
+
+## Les reproductions d'œuvres (Wikimedia Commons, 2026-07-29)
+
+Quand c'est possible, l'onglet « Œuvres » montre une **reproduction** de l'œuvre. On
+n'en affiche une que si sa réutilisation est **explicitement permise**, et si elle est
+rattachée **avec certitude** à la notice.
+
+- **Pourquoi pas les images de POP ?** On a vérifié les crédits photographiques des
+  3 668 notices sur POP : **aucune** n'est sous licence ouverte (l'essentiel est de la
+  RMN, « utilisation soumise à autorisation »). On ne peut donc pas réutiliser ces
+  photos.
+- **D'où viennent les reproductions montrées ?** De **Wikimedia Commons**, en ne
+  retenant que les fichiers sous **domaine public, CC0, CC BY ou CC BY-SA**. Le
+  rattachement à la notice se fait par l'**identifiant Joconde** (via Wikidata), jamais
+  par une simple ressemblance de titre ou de musée. **184 œuvres** sur les 3 668 en ont
+  une à ce jour.
+- **C'est une illustration, jamais une donnée** ni un comptage. L'image est téléchargée
+  et servie localement (pas de lien direct vers un serveur externe), montrée en petit,
+  et **cliquable vers sa page Wikimedia Commons**, où figurent la licence et le crédit
+  exacts — rappelés sous l'image.
+- La reproduction montre l'objet que **décrit la notice** ; elle ne dit rien de plus sur
+  son auteur — **le projet n'attribue toujours rien**.
+- Les œuvres sans reproduction réutilisable connue gardent un **emplacement neutre** :
+  jamais d'image inventée.
+
+## La carte par maître : ce qu'elle montre (2026-07-12)
+
+Chaque fiche de maître peut montrer **où** sont conservées les œuvres dont
+l'attribution à ce maître est formulée avec prudence. Sur cette carte :
+
+- **un point = un musée détenteur**, pas une œuvre. **Tous les points ont la même
+  taille** : la carte montre *où* les œuvres concernées sont conservées, pas
+  *combien* par lieu. Le nombre exact, et sous quelles formules, se lit au survol
+  du point (et l'onglet « graphique » de la fiche donne la répartition d'ensemble).
+  Une taille variable a été testée puis écartée : l'échelle aurait été propre à
+  chaque maître (un « gros point » n'aurait pas voulu dire la même chose d'une
+  fiche à l'autre) et aurait gonflé de tout petits nombres ;
+- la carte montre une **dispersion**, pas un palmarès : elle ne compare pas les
+  musées entre eux et ne dit rien de l'importance d'une collection. Le doute est
+  souvent concentré dans un musée — c'est un fait de versement dans Joconde, pas un
+  jugement patrimonial ;
+- les points sont **localisés par leur musée** (coordonnées publiées dans
+  Joconde), jamais par l'œuvre elle-même.
+
+**Le fond de carte est une source secondaire d'illustration.** Ce sont les
+contours des régions françaises (IGN Admin Express 2018, via le projet
+france-geojson, Licence Ouverte), stockés localement — aucune tuile en ligne.
+**Aucun chiffre ne vient du fond** ; il ne sert qu'à situer les points.
+
+**Outre-mer.** Ce premier palier n'affiche que la France métropolitaine. Quand un
+maître a une œuvre douteuse conservée outre-mer, elle **reste comptée et présente
+dans les totaux**, mais n'apparaît pas sur le fond métropolitain : une mention le
+signale (par exemple « Hors cadre métropolitain : 1 œuvre conservée à
+Saint-Denis de La Réunion »). Un point hors carte n'est jamais un point exclu.
+
 ## Source
 
 Jeu de données « Collections des musées de France : base Joconde »,

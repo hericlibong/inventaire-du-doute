@@ -1,0 +1,341 @@
+{
+ "slug": "domenico-campagnola",
+ "nom": "Domenico Campagnola",
+ "doute": 39,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 35
+  },
+  {
+   "code": "point_interrogation",
+   "notices": 2
+  },
+  {
+   "code": "ecole_de",
+   "notices": 1
+  },
+  {
+   "code": "atelier_de",
+   "notices": 1
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "00000107130",
+   "titre": "Lion attaquant une laie",
+   "musee": "musée Condé",
+   "ville": "Chantilly",
+   "code": "point_interrogation",
+   "extrait": "CAMPAGNOLA Domenico ( ? )"
+  },
+  {
+   "reference": "00000107131",
+   "titre": "Paysage au ciel couchant",
+   "musee": "musée Condé",
+   "ville": "Chantilly",
+   "code": "point_interrogation",
+   "extrait": "CAMPAGNOLA Domenico ( ?)"
+  },
+  {
+   "reference": "50350200215",
+   "titre": "Saint Marc assis sur des nuages, appuyé sur un lion",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CAMPAGNOLA Domenico (atelier)"
+  },
+  {
+   "reference": "50350500802",
+   "titre": "Esquisse d'un monument",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMPAGNOLA Domenico (attribué à)"
+  },
+  {
+   "reference": "50350007915",
+   "titre": "La Vierge à l'Enfant avec les saints Marc, Antoine, Barbe et Jean-Baptiste",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMPAGNOLA Domenico (attribué à)"
+  },
+  {
+   "reference": "50350145102",
+   "titre": "Paysage avec maisons, arbres, ruines, rochers et un pont",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "CAMPAGNOLA Domenico (école)"
+  },
+  {
+   "reference": "50350007959",
+   "titre": "Vue d'une ville au pied de montagnes élevées",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMPAGNOLA Domenico (attribué à)"
+  },
+  {
+   "reference": "50350007902",
+   "titre": "Vue d'un village et de deux figures conversant dans un paysage",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMPAGNOLA Domenico (attribué à)"
+  },
+  {
+   "reference": "50350007042",
+   "titre": "Adoration des Mages",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMPAGNOLA Domenico (attribué à)"
+  },
+  {
+   "reference": "50350007056",
+   "titre": "Quatre femmes et un homme autour d'un arbre où vole un essain d'abeilles",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMPAGNOLA Domenico (attribué à)"
+  },
+  {
+   "reference": "50350007049",
+   "titre": "La Vierge et l'Enfant apparaissant à des bergers",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMPAGNOLA Domenico (attribué à)"
+  },
+  {
+   "reference": "50350007061",
+   "titre": "La Forge de Vulcain ; un théâtre à ciel ouvert avec de nombreux spectateurs",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMPAGNOLA Domenico (attribué à)"
+  },
+  {
+   "reference": "50350007073",
+   "titre": "Chasse d'un taureau par un cavalier et deux chiens",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMPAGNOLA Domenico (attribué à)"
+  },
+  {
+   "reference": "50350007058",
+   "titre": "La tonte des moutons sous un appenti et l'entrée des chevaux dans une écurie",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMPAGNOLA Domenico (attribué à)"
+  },
+  {
+   "reference": "50350007063",
+   "titre": "Les Vendanges ; Bacchus assis à terre entouré d'enfants",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMPAGNOLA Domenico (attribué à)"
+  },
+  {
+   "reference": "50350007062",
+   "titre": "Deux anges ; scène d'hiver ; deux cavaliers et deux hommes armés",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMPAGNOLA Domenico (attribué à)"
+  },
+  {
+   "reference": "50350007051",
+   "titre": "Une femme, debout au pied d'un arbre, tenant une croix dans la main droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMPAGNOLA Domenico (attribué à)"
+  },
+  {
+   "reference": "50350007066",
+   "titre": "Char du soleil et Apollon ; scène de moisson ; scène de labour",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMPAGNOLA Domenico (attribué à)"
+  },
+  {
+   "reference": "50350007064",
+   "titre": "Un pressoir sous un hangar ; construction de clayonages dans un ruisseau",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMPAGNOLA Domenico (attribué à)"
+  },
+  {
+   "reference": "50350007111",
+   "titre": "Paysage avec un bouquet d'arbres sur un tertre",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMPAGNOLA Domenico (attribué à)"
+  },
+  {
+   "reference": "50350007087",
+   "titre": "Etude de quatre arbres",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMPAGNOLA Domenico (attribué à)"
+  },
+  {
+   "reference": "50350007057",
+   "titre": "Une chasse à l'oiseau et six hommes et des pourceaux sous des chênes",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMPAGNOLA Domenico (attribué à)"
+  },
+  {
+   "reference": "50350007055",
+   "titre": "La chasse au filet",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMPAGNOLA Domenico (attribué à)"
+  },
+  {
+   "reference": "50350007067",
+   "titre": "Char du soleil et Apollon ; départ pour la chasse ; bergers et troupeau",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMPAGNOLA Domenico (attribué à)"
+  },
+  {
+   "reference": "50350007101",
+   "titre": "Diverses constructions dans un paysage et un pélerin puisant de l'eau",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMPAGNOLA Domenico (attribué à)"
+  },
+  {
+   "reference": "50350007068",
+   "titre": "Labourage ; préparation du chanvre ; paysans autour de foyers enflammés",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMPAGNOLA Domenico (attribué à)"
+  },
+  {
+   "reference": "50350007089",
+   "titre": "Un ange présente un calice à Jésus au Jardin des Oliviers",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMPAGNOLA Domenico (attribué à)"
+  },
+  {
+   "reference": "50350007065",
+   "titre": "Deux anges ; chasse au faucon ; groupe de figures et chasse à l'oiseau",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMPAGNOLA Domenico (attribué à)"
+  },
+  {
+   "reference": "50350007060",
+   "titre": "L'orage : plusieurs personnages courent se réfugier dans une masure",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMPAGNOLA Domenico (attribué à)"
+  },
+  {
+   "reference": "50350007069",
+   "titre": "Ronde de jeunes gens, Vénus et un amour, les trois Grâces : le Printemps",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMPAGNOLA Domenico (attribué à)"
+  },
+  {
+   "reference": "50350007054",
+   "titre": "Un homme armé d'une épée regarde une femme qui se penche sur un enfant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMPAGNOLA Domenico (attribué à)"
+  },
+  {
+   "reference": "50350007090",
+   "titre": "Paysage avec saint Jérôme à genoux à l'entrée d'une grotte",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMPAGNOLA Domenico (attribué à)"
+  },
+  {
+   "reference": "50350500801",
+   "titre": "Esquisse d'un profil d'une femme et autres croquis",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMPAGNOLA Domenico (attribué à)"
+  },
+  {
+   "reference": "50350007071",
+   "titre": "Paysage avec une ruines antiques",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMPAGNOLA Domenico (attribué à)"
+  },
+  {
+   "reference": "50350007070",
+   "titre": "Réunion champêtre et départ à la chasse au faucon",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMPAGNOLA Domenico (attribué à)"
+  },
+  {
+   "reference": "50350007059",
+   "titre": "Travaux champêtre et signe du Belier : allégorie du mois de Mars (?)",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMPAGNOLA Domenico (attribué à)"
+  },
+  {
+   "reference": "50350007052",
+   "titre": "Enlèvement d'Europe",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "CAMPAGNOLA Domenico (attribué à)"
+  },
+  {
+   "reference": "M0332002755",
+   "titre": "Etudes de femmes nues vues de dos",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "CAMPAGNOLA Domenico (attribué à) (dessinateur)"
+  },
+  {
+   "reference": "09940006847",
+   "titre": "Paysage ; Ferme dans un paysage (Ancien titre)",
+   "musee": "musée de Grenoble",
+   "ville": "Grenoble",
+   "code": "attribue",
+   "extrait": "Campagnola Domenico (attribué à)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-07-28T14:49:21+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

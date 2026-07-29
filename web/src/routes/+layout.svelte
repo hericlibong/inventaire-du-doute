@@ -1,19 +1,39 @@
 <script>
 	import '$lib/styles/tokens.css';
+	import '$lib/styles/fonts.css';
 	import favicon from '$lib/assets/favicon.svg';
+	import { page } from '$app/stores';
 
 	let { children } = $props();
 
-	// Coquille de navigation : une brique = une route. Seule l'accueil existe
-	// au stade du socle ; les autres sont affichées « à venir » pour montrer
-	// la structure éditoriale sans casser le pré-rendu (pas de lien mort).
+	// Page courante = accueil sur « / » exact, sinon préfixe de la route.
+	const estActif = (href) =>
+		href === '/' ? $page.url.pathname === '/' : $page.url.pathname.startsWith(href);
+
+	// L'accueil est une couverture pleine page : la coquille (masthead) y est masquée.
+	const estAccueil = $derived($page.url.pathname === '/');
+
+	// Routes en PLEINE LARGEUR (direction « affiche ») : accueil + pages refondues.
+	// Elles gèrent leurs propres gouttières ; les pages pas encore refondues gardent
+	// la colonne centrée. On étend cette liste à chaque chantier (C3, C4).
+	const estPleine = $derived(
+		$page.url.pathname === '/' ||
+			$page.url.pathname.startsWith('/les-presque') ||
+			$page.url.pathname.startsWith('/echelle') ||
+			$page.url.pathname.startsWith('/methode')
+	);
+
+	// Navigation publique recentrée à QUATRE entrées actives (architecture-
+	// editoriale.md §2). Les rubriques en réserve (Les révisions, La carte) ne
+	// figurent plus ici : leur code et leurs données restent au dépôt, mais elles
+	// sont sorties de la nav publique tant qu'elles ne sont pas intégrées à la
+	// publication recentrée. Le champ `prete` (et la branche « à venir ») est
+	// conservé pour de futures entrées.
 	const briques = [
 		{ titre: 'Accueil', href: '/', prete: true },
-		{ titre: 'Les presque', href: '/les-presque', prete: true },
-		{ titre: "L'échelle du doute", href: '/echelle', prete: false },
-		{ titre: 'Les révisions', href: '/revisions', prete: false },
-		{ titre: 'La carte', href: '/carte', prete: false },
-		{ titre: 'Méthode et limites', href: '/methode', prete: false }
+		{ titre: 'Explorer les maîtres', href: '/les-presque', prete: true },
+		{ titre: 'Comprendre les mentions', href: '/echelle', prete: true },
+		{ titre: 'Méthode', href: '/methode', prete: true }
 	];
 </script>
 
@@ -21,27 +41,39 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
+{#if !estAccueil}
 <header>
-	<a class="marque" href="/">L'inventaire du doute</a>
-	<nav aria-label="Les briques">
-		<ul>
-			{#each briques as brique (brique.href)}
-				<li>
-					{#if brique.prete}
-						<a href={brique.href}>{brique.titre}</a>
-					{:else}
-						<span class="a-venir" title="À venir">{brique.titre}</span>
-					{/if}
-				</li>
-			{/each}
-		</ul>
-	</nav>
+	<!-- Charte v2 : bandeau navy (registre de la couverture), texte ivoire. -->
+	<div class="masthead">
+		<a class="marque" href="/">L'inventaire du doute</a>
+		<nav aria-label="Navigation principale">
+			<ul>
+				{#each briques as brique (brique.href)}
+					<li>
+						{#if brique.prete}
+							<a
+								href={brique.href}
+								class:actif={estActif(brique.href)}
+								aria-current={estActif(brique.href) ? 'page' : undefined}
+							>
+								{brique.titre}
+							</a>
+						{:else}
+							<span class="a-venir" title="À venir">{brique.titre}</span>
+						{/if}
+					</li>
+				{/each}
+			</ul>
+		</nav>
+	</div>
 </header>
+{/if}
 
-<main>
+<main class:pleine={estPleine}>
 	{@render children()}
 </main>
 
+{#if !estAccueil}
 <footer>
 	<p>
 		Source unique : base Joconde (Ministère de la Culture), Licence Ouverte 2.0.
@@ -49,65 +81,133 @@
 		eux-mêmes publié.
 	</p>
 </footer>
+{/if}
 
 <style>
 	:global(body) {
 		margin: 0;
 		background: var(--couleur-fond);
 		color: var(--couleur-encre);
-		font-family: var(--police-texte);
+		font-family: var(--police-texte); /* Spectral — texte éditorial */
+		font-optical-sizing: auto;
+		-webkit-font-smoothing: antialiased;
 		line-height: 1.6;
 	}
 
+	/* --- Base typographique globale (palier « identité typo », charte-graphique.md).
+	   On ne refait PAS les composants ici : on pose seulement les défauts. --- */
+
+	/* Titres de haut niveau en Fraunces, sans en abuser (h1/h2 seulement ;
+	   les petits titres restent en Spectral tant que le kit n'est pas fait). */
+	:global(h1),
+	:global(h2) {
+		font-family: var(--police-titre);
+		font-weight: 600;
+		line-height: 1.15;
+	}
+
+	/* Interface et données en Public Sans (chiffres tabulaires pour l'alignement). */
+	:global(button),
+	:global(input),
+	:global(select),
+	:global(textarea),
+	:global(table) {
+		font-family: var(--police-ui);
+	}
+
+	:global(th),
+	:global(td) {
+		font-variant-numeric: tabular-nums;
+	}
+
+	/* --- Coquille « inventaire » (palier 2). Filet d'accent en tête, masthead
+	   aligné sur la colonne de contenu, nav en petites capitales. --- */
+	/* Bandeau de tête « affiche » : aplat navy, pleine largeur, texte ivoire. */
 	header {
-		border-bottom: 1px solid var(--couleur-trait);
-		padding: 1rem 1.5rem;
+		background: var(--cadre-fond);
+	}
+
+	.masthead {
+		max-width: var(--largeur-max);
+		margin: 0 auto;
+		padding: var(--espace-4) var(--espace-5);
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		gap: var(--espace-2) var(--espace-5);
 	}
 
 	.marque {
 		font-family: var(--police-titre);
-		font-size: 1.4rem;
-		font-weight: bold;
-		color: var(--couleur-encre);
+		font-size: var(--taille-l);
+		font-weight: 600;
+		letter-spacing: -0.01em;
+		color: var(--cadre-encre);
 		text-decoration: none;
 	}
 
 	nav ul {
 		display: flex;
 		flex-wrap: wrap;
-		gap: 1.25rem;
+		gap: var(--espace-4);
 		list-style: none;
-		margin: 0.75rem 0 0;
+		margin: 0;
 		padding: 0;
+		font-family: var(--police-ui);
 	}
 
-	nav a {
-		color: var(--couleur-accent);
+	nav a,
+	.a-venir {
+		font-size: var(--taille-xs);
+		text-transform: uppercase;
+		letter-spacing: 0.07em;
+		font-weight: 500;
 		text-decoration: none;
+		color: var(--cadre-encre-douce);
+		padding-bottom: 3px;
+		border-bottom: 2px solid transparent;
 	}
 
 	nav a:hover {
-		text-decoration: underline;
+		color: var(--cadre-encre);
+	}
+
+	nav a.actif {
+		color: var(--cadre-encre);
+		border-bottom-color: var(--accent-vermillon);
 	}
 
 	.a-venir {
-		color: var(--couleur-encre-douce);
-		opacity: 0.5;
+		opacity: 0.4;
 		cursor: default;
 	}
 
 	main {
 		max-width: var(--largeur-max);
 		margin: 0 auto;
-		padding: 2rem 1.5rem;
+		padding: var(--espace-6) var(--espace-5);
 	}
 
+	/* Accueil : couverture pleine page, aucune contrainte ni marge. */
+	main.pleine {
+		max-width: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	/* Pied au même registre que le bandeau (cadre l'affiche). */
 	footer {
+		background: var(--cadre-fond);
+		color: var(--cadre-encre-douce);
+		font-family: var(--police-ui);
+		font-size: var(--taille-s);
+		margin-top: var(--espace-6);
+	}
+
+	footer p {
 		max-width: var(--largeur-max);
 		margin: 0 auto;
-		padding: 2rem 1.5rem 3rem;
-		border-top: 1px solid var(--couleur-trait);
-		color: var(--couleur-encre-douce);
-		font-size: 0.85rem;
+		padding: var(--espace-5) var(--espace-5);
 	}
 </style>

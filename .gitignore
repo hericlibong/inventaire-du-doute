@@ -7,5 +7,15 @@ data/raw/*
 __pycache__/
 *.pyc
 
+# Archive de sauvegarde locale (contient data/raw, 1,1 Go — ne pas versionner)
+museum.zip
+
 # Divers
 .DS_Store
+
+# Captures de contrôle du front (temporaires, non versionnées)
+.captures/
+web/.captures/
+
+# Cache de lecture des notices POP (chantier vignettes) — non versionné
+data/cache/

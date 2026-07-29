@@ -7,6 +7,7 @@ dependencies = [
     "pandas>=2.2",
     "requests>=2.32",
     "odfpy>=1.4",
+    "pillow>=12.3.0",
 ]
 
 [dependency-groups]

@@ -1,0 +1,220 @@
+{
+ "slug": "jean-baptiste-oudry",
+ "nom": "Jean-Baptiste Oudry",
+ "doute": 23,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 20
+  },
+  {
+   "code": "ecole_de",
+   "notices": 2
+  },
+  {
+   "code": "atelier_de",
+   "notices": 1
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "000DE021409",
+   "titre": "DEUX ETUDES DE CHIEN",
+   "musee": "musée Grobet-Labadié",
+   "ville": "Marseille",
+   "code": "attribue",
+   "extrait": "OUDRY Jean-Baptiste (attribué)"
+  },
+  {
+   "reference": "00000081836",
+   "titre": "ETUDE DE CHIEN DE CHASSE BUVANT",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "OUDRY Jean-Baptiste (attribué)"
+  },
+  {
+   "reference": "00000081837",
+   "titre": "ETUDE DE CHIEN DE CHASSE",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "OUDRY Jean-Baptiste (attribué)"
+  },
+  {
+   "reference": "000PE009116",
+   "titre": "UNE CHASSE AU SANGLIER",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "code": "attribue",
+   "extrait": "OUDRY Jean-Baptiste (attribué)"
+  },
+  {
+   "reference": "000PE009117",
+   "titre": "L'HALLALI DU LOUP",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "code": "attribue",
+   "extrait": "OUDRY Jean-Baptiste (attribué)"
+  },
+  {
+   "reference": "000PE009115",
+   "titre": "CHIEN EN ARRET SUR DES FAISANS",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "code": "attribue",
+   "extrait": "OUDRY Jean-Baptiste (attribué)"
+  },
+  {
+   "reference": "000PE009118",
+   "titre": "UN OISEAU DE PROIE TOMBANT SUR DES CANARDS QUI SE CACHENT DANS DES ROSEAUX",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "code": "attribue",
+   "extrait": "OUDRY Jean-Baptiste (attribué)"
+  },
+  {
+   "reference": "000PE016302",
+   "titre": "JEUNES CANARDS",
+   "musee": "musée Grobet-Labadié",
+   "ville": "Marseille",
+   "code": "ecole_de",
+   "extrait": "OUDRY Jean-Baptiste (école)"
+  },
+  {
+   "reference": "000PE026574",
+   "titre": "PAYSAGE",
+   "musee": "MUDO - musée de l'Oise",
+   "ville": "Beauvais",
+   "code": "attribue",
+   "extrait": "OUDRY Jean-Baptiste (attribué)"
+  },
+  {
+   "reference": "50350209366",
+   "titre": "Paysage avec figures et animaux",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "OUDRY Jean-Baptiste (attribué à)"
+  },
+  {
+   "reference": "50130000377",
+   "titre": "Bois d'un cerf pris à Compiègne en 1752 (sur un fond imitant le marbre)",
+   "musee": "musée national du château de Fontainebleau",
+   "ville": "Fontainebleau",
+   "code": "attribue",
+   "extrait": "OUDRY Jean-Baptiste (attribué)"
+  },
+  {
+   "reference": "50130000371",
+   "titre": "Chien-barbet chassant des canards sauvages",
+   "musee": "musée national du château de Fontainebleau",
+   "ville": "Fontainebleau",
+   "code": "attribue",
+   "extrait": "OUDRY Jean-Baptiste (attribué, ?)"
+  },
+  {
+   "reference": "50130000359",
+   "titre": "Perle et Ponne, chiennes de la meute de Louis XV",
+   "musee": "musée national du château de Fontainebleau",
+   "ville": "Fontainebleau",
+   "code": "attribue",
+   "extrait": "OUDRY Jean-Baptiste (attribué)"
+  },
+  {
+   "reference": "07840001178",
+   "titre": "Le Loup devenu Berger, III, 3",
+   "musee": "musée Jean de la Fontaine",
+   "ville": "Château-Thierry",
+   "code": "attribue",
+   "extrait": "OUDRY Jean-Baptiste (attribué)"
+  },
+  {
+   "reference": "07840001180",
+   "titre": "Les Loups et les Brebis, III, 13",
+   "musee": "musée Jean de la Fontaine",
+   "ville": "Château-Thierry",
+   "code": "attribue",
+   "extrait": "OUDRY Jean-Baptiste (attribué à)"
+  },
+  {
+   "reference": "50350100099",
+   "titre": "Une allée droite d'un parc avec une porte au fond",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "OUDRY Jean-Baptiste (attribué à)"
+  },
+  {
+   "reference": "50350111559",
+   "titre": "Chasse au lion",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "OUDRY Jean-Baptiste (attribué à)"
+  },
+  {
+   "reference": "50350112369",
+   "titre": "Intérieur d'appartement",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "OUDRY Jean-Baptiste (attribué à)"
+  },
+  {
+   "reference": "50350228357",
+   "titre": "Chasseur assis, tenant son fusil à la main gauche, étendant le bras droit",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "OUDRY Jean-Baptiste (attribué à)"
+  },
+  {
+   "reference": "50350508085",
+   "titre": "HUIT CHIENS DANS UN PAYSAGE",
+   "musee": "musée Bonnat-Helleu, musée des Beaux-Arts de Bayonne",
+   "ville": "Bayonne",
+   "code": "ecole_de",
+   "extrait": "OUDRY Jean-Baptiste (école)"
+  },
+  {
+   "reference": "00650013590",
+   "titre": "Comédiens italiens dans un parc",
+   "musee": "musée des beaux-arts",
+   "ville": "Bordeaux",
+   "code": "atelier_de",
+   "extrait": "OUDRY Jean-Baptiste (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/00650013590.jpg",
+    "credit": "Own work",
+    "creator": "Tylwyth Eldar",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Atelier_de_Jean-Baptiste_Oudry_-_Com%C3%A9diens_italiens_dans_un_parc_02.jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "04240000024",
+   "titre": "Portrait de Madame du Laurent",
+   "musee": "musée Adrien Mentienne",
+   "ville": "Bry-sur-Marne",
+   "code": "attribue",
+   "extrait": "OUDRY Jean-Baptiste (Atelier) (peintre, attribué à)"
+  },
+  {
+   "reference": "M0810004977",
+   "titre": "Tête de loup",
+   "musee": "musée de la vénerie",
+   "ville": "Senlis",
+   "code": "attribue",
+   "extrait": "OUDRY Jean-Baptiste (attribué)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-07-28T14:49:21+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

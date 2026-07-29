@@ -1,0 +1,1617 @@
+{
+ "slug": "rembrandt",
+ "nom": "Rembrandt",
+ "doute": 187,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 1
+  },
+  {
+   "code": "ecole_de",
+   "notices": 14
+  },
+  {
+   "code": "atelier_de",
+   "notices": 4
+  },
+  {
+   "code": "entourage_de",
+   "notices": 3
+  },
+  {
+   "code": "maniere_de",
+   "notices": 165
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "000PE008564",
+   "titre": "Portrait de jeune homme, dit autrefois : Portrait de Titus",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "Rembrandt (1606-1669) (atelier, dit)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE008564.jpg",
+    "credit": "http://www.culture.gouv.fr/Wave/image/joconde/0337/m503604_p0006733-001_p.jpg",
+    "creator": "Workshop of Rembrandt",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_-_Portrait_of_a_Young_Man_with_Moustache.jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "000PE008558",
+   "titre": "HENDRICKJE STOFFELS EN VENUS",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Rembrandt (1606-1669) (école, dit)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE008558.jpg",
+    "credit": "Own work",
+    "creator": "JackyM59",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:V%C3%A9nus_et_l%27Amour_de_Rembrandt.jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "000PE008571",
+   "titre": "Jeune homme au bâton",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "Rembrandt (1606-1669) (atelier, dit)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE008571.jpg",
+    "credit": "Joconde",
+    "creator": "Workshop of Rembrandt",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Rembrant_-_Portrait_of_a_Man_with_a_Staff.jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "000PE008561",
+   "titre": "REMBRANDT A LA TOQUE SUR FOND D'ARCHITECTURE",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "Rembrandt (1606-1669) (atelier, dit)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE008561.jpg",
+    "credit": "www.photo.rmn.fr : Home : Info : Pic",
+    "creator": "Attributed to Rembrandt",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Rembrandt,_autoritratto_col_tocco_su_sfondo_architettonico,_1639_02.jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "000PE008563",
+   "titre": "Etude de vieillard",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Rembrandt (1606-1669) (école, dit)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE008563.jpg",
+    "credit": "This image is available from the Netherlands Institute for Art History under digital ID 232215 .",
+    "creator": "Rembrandt",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_-_Portrait_of_an_old_man_with_a_beard_-_INV_1748.jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "000PE008553",
+   "titre": "LE BON SAMARITAIN",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Rembrandt (1606-1669) (école, dit)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE008553.jpg",
+    "credit": "https://archive.org/stream/gri_33125004476327#page/n340/mode/1up",
+    "creator": "Constantijn à Renesse",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_-_The_Good_Samaritan_-_Louvre.jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "000PE017723",
+   "titre": "SALOMON SACRIFIANT AUX IDOLES",
+   "musee": "musée des Beaux-Arts",
+   "ville": "Lille",
+   "code": "ecole_de",
+   "extrait": "Rembrandt (1606-1669) (école, dit)"
+  },
+  {
+   "reference": "000PE021338",
+   "titre": "VIEILLARD LISANT",
+   "musee": "musée des beaux-arts",
+   "ville": "Caen",
+   "code": "ecole_de",
+   "extrait": "Rembrandt (1606-1669) (école, dit)"
+  },
+  {
+   "reference": "000PE021337",
+   "titre": "Tête d'homme ; Tête de guerrier (autre titre)",
+   "musee": "musée des beaux-arts",
+   "ville": "Caen",
+   "code": "ecole_de",
+   "extrait": "Rembrandt (1606-1669) (école, dit)"
+  },
+  {
+   "reference": "000PE025747",
+   "titre": "ETUDE DE NEGRE",
+   "musee": "musée des beaux-arts",
+   "ville": "Bordeaux",
+   "code": "ecole_de",
+   "extrait": "Rembrandt (1606-1669) (école, dit)"
+  },
+  {
+   "reference": "00000058429",
+   "titre": "TETE D'HOMME",
+   "musee": "musée des beaux-arts",
+   "ville": "Rouen",
+   "code": "ecole_de",
+   "extrait": "Rembrandt (1606-1669) (dit, école)"
+  },
+  {
+   "reference": "00000062773",
+   "titre": "TETE DE JUIF",
+   "musee": "musée des beaux-arts",
+   "ville": "Quimper",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (dit, manière de)"
+  },
+  {
+   "reference": "00000062776",
+   "titre": "VIEILLE FEMME LISANT",
+   "musee": "musée des beaux-arts",
+   "ville": "Quimper",
+   "code": "atelier_de",
+   "extrait": "Rembrandt (1606-1669) (dit, atelier)"
+  },
+  {
+   "reference": "00000062775",
+   "titre": "TETE D'HOMME",
+   "musee": "musée des beaux-arts",
+   "ville": "Quimper",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (dit, manière de)"
+  },
+  {
+   "reference": "00000062755",
+   "titre": "SAINT MATHIEU ET L'ANGE",
+   "musee": "musée des beaux-arts",
+   "ville": "Quimper",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (dit, manière de)"
+  },
+  {
+   "reference": "00000062774",
+   "titre": "UN PHILOSOPHE LISANT",
+   "musee": "musée des beaux-arts",
+   "ville": "Quimper",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (dit, manière de)"
+  },
+  {
+   "reference": "00000081513",
+   "titre": "PORTRAIT DE TITUS (1641-1668)",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Rembrandt (1606-1669) (école)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/00000081513.jpg",
+    "credit": "http://paintings-art-picture.com/",
+    "creator": "Rembrandt",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_Portrait_of_Titus_van_Rijn.jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "50520000840",
+   "titre": "Modèle debout, les mains croisées dans le dos",
+   "musee": "musée Condé",
+   "ville": "Chantilly",
+   "code": "ecole_de",
+   "extrait": "Rembrandt (1606-1669) (école)"
+  },
+  {
+   "reference": "50520000843",
+   "titre": "Lion accroupi",
+   "musee": "musée Condé",
+   "ville": "Chantilly",
+   "code": "ecole_de",
+   "extrait": "Rembrandt (1606-1669) (école)"
+  },
+  {
+   "reference": "50520000845",
+   "titre": "Maison et arbres au bord de l'eau",
+   "musee": "musée Condé",
+   "ville": "Chantilly",
+   "code": "ecole_de",
+   "extrait": "Rembrandt (1606-1669) (école)"
+  },
+  {
+   "reference": "50350107790",
+   "titre": "Homme assis à une table et lisant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107803",
+   "titre": "L'offrande de la pauvre veuve, dans un temple",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107392",
+   "titre": "Seize études de têtes et bustes d'hommes et de femmes, vêtus à l'orientale",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107770",
+   "titre": "Joseph est vendu à des marchands",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107823",
+   "titre": "L'offrande de Gédéon",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107775",
+   "titre": "La femme de Putiphar accusant Joseph devant son mari",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107769",
+   "titre": "Tête de vieille femme, de trois quarts, le regard baissé",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107820",
+   "titre": "Adam et Eve après le péché",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107791",
+   "titre": "Garçon assis et lisant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107856",
+   "titre": "La nuit, deux hommes découvrant le corps d'une figure étendue au sol",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107858",
+   "titre": "Sujet biblique avec un homme agenouillé devant un autre",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107772",
+   "titre": "Joseph dans la maison de son père racontant ses songes",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107752",
+   "titre": "Jeune homme nu, endormi, étendu sur une couverture",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107765",
+   "titre": "Le lion auprès du corps du prophète désobéissant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107813",
+   "titre": "Groupe de sept Pharisiens",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107811",
+   "titre": "Abraham renvoyant Agar et Ismaël",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107795",
+   "titre": "Agar, à la fontaine, sur le chemin de Sur, entendant la voix de l'ange",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107829",
+   "titre": "La Descente de Croix",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107853",
+   "titre": "L'envol de l'ange devant Manoah et sa femme",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107777",
+   "titre": "Joseph explique les songes de Pharaon",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107816",
+   "titre": "La Résurrection de Jésus-Christ",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107814",
+   "titre": "Manoah et sa femme agenouillés devant l'autel",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107818",
+   "titre": "Le samaritain payant l'hôte pour soigner le blessé recueilli",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107778",
+   "titre": "Joseph, gouverneur d'Egypte, distribuant le blé",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107798",
+   "titre": "La Cène",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107802",
+   "titre": "Mercure prenant son glaive pour frapper Argus endormi",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107799",
+   "titre": "Isaac allant au devant de Rebecca et s'inclinant devant elle",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107809",
+   "titre": "Thyamis tuant Thisbé ?",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107837",
+   "titre": "Jeune garçon debout, s'apprêtant à lancer une pierre",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107846",
+   "titre": "Jacob au lendemain de son songe",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107804",
+   "titre": "Mardochée devant Assuérus ?",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107314",
+   "titre": "Des enfants conduisant une vache",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107845",
+   "titre": "Le jugement de Salomon",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107838",
+   "titre": "Homme trayant une vache, conversant avec un autre homme",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107768",
+   "titre": "Jeune garçon en pagne, les deux mains accrochées à une petite barre",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107849",
+   "titre": "Voyageurs dans un chariot",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107779",
+   "titre": "Joseph est reconnu par ses frères",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107792",
+   "titre": "Deux études d'un groupe de deux figures, pour une Visitation ?",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107815",
+   "titre": "La Mise au tombeau",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107842",
+   "titre": "Nathan reprochant à David sa faiblesse",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107828",
+   "titre": "Le Lavement des pieds",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107807",
+   "titre": "Assuérus et Aman chez Esther",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107817",
+   "titre": "L'Adoration des bergers",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107826",
+   "titre": "L'arrivée du bon samaritain à l'auberge",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107764",
+   "titre": "Etude de lion couché et buvant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107827",
+   "titre": "La Samaritaine plaçant le blessé sur son cheval",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107774",
+   "titre": "La femme de Putiphar tentant de séduire Joseph",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107806",
+   "titre": "Le jeune Joseph racontant ses songes",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107808",
+   "titre": "Mercure s'apprêtant à trancher la tête du berger Argus",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107749",
+   "titre": "La Cène",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107762",
+   "titre": "Une allée vue en enfilade, dans le Diemermeer, près d'Amsterdam",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107773",
+   "titre": "Jacob s'affligeant à la vue de la robe de Joseph",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107789",
+   "titre": "Mucius Scaevola",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107830",
+   "titre": "Les Saintes Femmes au tombeau",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107812",
+   "titre": "Jeune homme debout, sur le seuil d'une entrée, devant un rideau",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107761",
+   "titre": "Moulin et enclos boisé à côté de la porte Anthoniespoort à Amsterdam",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107854",
+   "titre": "Abraham renvoie Agar et Ismaël",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107859",
+   "titre": "Le berger Daïfilo donnant à boire à la princesse Granida",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107754",
+   "titre": "Lion couché, de profil, dormant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107800",
+   "titre": "L'imposition du nom de saint Jean-Baptiste",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107833",
+   "titre": "Deux études de tête de vieille femme",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107771",
+   "titre": "Joseph est descendu dans la citerne",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107884",
+   "titre": "Portrait de l'artiste",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107776",
+   "titre": "Joseph en prison, expliquant les songes du grand panetier et de l'échanson",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107788",
+   "titre": "Homme assis sur un tabouret, de dos, coiffé d'un bonnet",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107797",
+   "titre": "Thisbé se donne la mort près du corps de Pyrame",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107506",
+   "titre": "Paysage de hautes colines, avec un château sur un promontoire, à gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107810",
+   "titre": "L'offrande de Gédéon",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107783",
+   "titre": "Le Christ guérissant un malade",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350018495",
+   "titre": "Le couronnement d'épines",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350018580",
+   "titre": "Rebecca faisant boire Eliézer à la source",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "Rembrandt (1606-1669) (école)"
+  },
+  {
+   "reference": "50350107805",
+   "titre": "Amnon tâchant de séduire Tamar",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107819",
+   "titre": "Abigaïl offrant des présents à David",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107841",
+   "titre": "L'ombre de Samuel est évoquée devant Saül par la pythonisse d'Endor",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107801",
+   "titre": "Thyamis tuant Thisbé ?",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350018456",
+   "titre": "Chemin au bord de l'eau, une église et deux maisons",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107796",
+   "titre": "Moïse enfant, foulant du pied la couronne de Pharaon",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107782",
+   "titre": "Etude de proportion avec un oriental debout, les bras ouverts",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107867",
+   "titre": "Un arbre dénudé au bord d'un cours d'eau, et un village au loin",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350500413",
+   "titre": "Petite étude de tête, tournée vers la droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107822",
+   "titre": "David prenant congé de Jonathan",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350018418",
+   "titre": "Le sacrifice d'Abraham",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107873",
+   "titre": "Saint Jérôme en prière dans une grotte",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350228423",
+   "titre": "Le repas d'Emmaüs",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350018471",
+   "titre": "Trois études de têtes de lions et de lionne",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350018432",
+   "titre": "Femme assise à une table et abritant ses yeux de la flamme d'une bougie",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350018490",
+   "titre": "Une rivière avec deux sloops et un canot, avec une ville dans le lointain",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107870",
+   "titre": "David prenant congé de Jonathan",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350228416",
+   "titre": "La Cène, avec Judas debout, devant la table",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107864",
+   "titre": "Abraham renvoyant Agar et Ismaël",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107863",
+   "titre": "La fermeté de Mucius Scaevola",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350228404",
+   "titre": "L'Annonciation",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350228421",
+   "titre": "Une charrette devant une grange",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350018449",
+   "titre": "Le Christ et la femme adultère",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350018499",
+   "titre": "Femme en chemise, endormie sur un lit",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350018451",
+   "titre": "Le repos pendant la Fuite en Egypte, la nuit",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350018494",
+   "titre": "Elie rencontrant la veuve de Sarepta et son fils",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350018488",
+   "titre": "Le Christ au milieu de ses disciples",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350018492",
+   "titre": "Femme tenant son enfant sur ses genoux, lui donnant à manger",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350108308",
+   "titre": "Jeune garçon les mains dans les poches, portant un tablier",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350108419",
+   "titre": "Portrait d'une vieille femme, en buste, de profil à droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350018422",
+   "titre": "David sur son trône tenant son sceptre à la main",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107885",
+   "titre": "Jeune homme assis à terre, de dos, la jambe droite étendue",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350219823",
+   "titre": "L'ange indiquant au jeune Tobie le poisson",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350018501",
+   "titre": "Homme, coiffé d'un grand bonnet, assis près d'une table",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350018479",
+   "titre": "Tobie et l'Ange au bord de l'eau",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350112233",
+   "titre": "Six figures caricaturales attablées et buvant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350228418",
+   "titre": "Oriental barbu, assis sous une arcade",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350018419",
+   "titre": "Tête",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107862",
+   "titre": "Cérès et Stellio",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350018454",
+   "titre": "Ferme avec grange à foin en contrebas du Diermedijk, près d'Amsterdam",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350018417",
+   "titre": "Elie chez la veuve à Sarepta",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350030848",
+   "titre": "Texte manuscrit",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350018460",
+   "titre": "Ferme à haute toiture en chaume, entourée d'arbres",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350018410",
+   "titre": "Le Christ appelant à lui Simon et André",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350018474",
+   "titre": "Etude de boeuf, de profil à gauche, dans l'ouverture d'une porte",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350228420",
+   "titre": "Mercure, Argus et Io",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350018462",
+   "titre": "Académie d'un jeune garçon, la main gauche posée sur un appui",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350018463",
+   "titre": "Académie d'homme, à demi étendu à terre, appuyé sur des coussins",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350018450",
+   "titre": "Vieille femme marchant à l'aide d'un bâton, et tête d'une autre figure",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350230678",
+   "titre": "Mise au tombeau",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350018415",
+   "titre": "Vieillard barbu, appuyé sur un bâton et figure assise",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107886",
+   "titre": "David épargnant Saül dans la caverne",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107883",
+   "titre": "Portrait d'homme à toque ornée d'une plume",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350018472",
+   "titre": "Lion couché, vu de profil à gauche, les pattes de devant étendues",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350018476",
+   "titre": "Judas rapportant aux prêtres l'argent de la trahison",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350018502",
+   "titre": "Le jeune Tobie prenant congé de sa mère",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350018486",
+   "titre": "David jouant de la harpe devant Saül",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350018435",
+   "titre": "Tête d'ange",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350018444",
+   "titre": "Deux hommes coiffés de chapeaux à larges bords, marchant vers la gauche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350030847",
+   "titre": "Loth et ses filles quittant Sodome",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350018497",
+   "titre": "Deux lions couchés, côte à côte, tournés vers la droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350018433",
+   "titre": "Ascension du Christ",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350112272",
+   "titre": "Loth et ses filles quittant Sodome",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350018491",
+   "titre": "Femme âgée en prière, vue à mi-corps",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107871",
+   "titre": "Sarah présentant Agar à Abraham couché",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350018459",
+   "titre": "Une route entre des arbres",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107880",
+   "titre": "Le vieillard de Guibéa offrant l'hospitalité au lévite et à sa concubine",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350114866",
+   "titre": "Le prix du sang : Judas rendant les deniers",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350018500",
+   "titre": "L'atelier de Rembrandt",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350018485",
+   "titre": "Scipion et la fiancée africaine",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350018441",
+   "titre": "L'ange Raphaël quittant la famille de Tobie",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350018438",
+   "titre": "Etude pour la décollation de saint Jean Baptiste",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107872",
+   "titre": "Jésus prêchant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107876",
+   "titre": "Tête de vieillard penchée en avant, coiffée d'un bonnet",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350018483",
+   "titre": "L'adoration des Rois Mages",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350018434",
+   "titre": "Etude pour un sacrifice d'Abraham",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350018489",
+   "titre": "La femme sunamite rejoignant le prophète Elisée au Mont Carmel",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107861",
+   "titre": "Jahel enfonçant un clou dans la tête de Sisara",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350108260",
+   "titre": "Tête d'un vieil oriental, de profil",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350018498",
+   "titre": "Etude d'un chameau aux bosses tombantes, couché, et de la tête d'un autre",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107874",
+   "titre": "Etude d'homme agenouillé dans une attitude suppliante",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107879",
+   "titre": "Orphée charmant les animaux",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107887",
+   "titre": "Le grand-prêtre Zacharie au Temple",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107852",
+   "titre": "Paysage avec étang et chaumières",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107507",
+   "titre": "Plaine coupée de canaux et d'étangs",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107847",
+   "titre": "Hameau entouré de quelques arbres et arbustes",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107509",
+   "titre": "Vaste plaine coupée de plans d'eau",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350018461",
+   "titre": "Vaste paysage avec des fermes au premier plan, et des moulins au loin",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107793",
+   "titre": "Groupe de maisons en bois parmi des arbres",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350107875",
+   "titre": "Croquis de détails",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "50350500412",
+   "titre": "Adam et Eve repentant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "maniere_de",
+   "extrait": "Rembrandt (1606-1669) (manière de)"
+  },
+  {
+   "reference": "00190022506",
+   "titre": "Portrait d'homme ; Portrait de vieillard",
+   "musee": "musée des Beaux-Arts",
+   "ville": "Strasbourg",
+   "code": "entourage_de",
+   "extrait": "Rembrandt (1606-1669) (entourage)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/00190022506.jpg",
+    "credit": "Own work",
+    "creator": "Follower of Rembrandt",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Portrait_of_a_man_mg_0072.jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "M0277002250",
+   "titre": "L'homme au casque d'or",
+   "musee": "musée municipal",
+   "ville": "Vendôme",
+   "code": "ecole_de",
+   "extrait": "Rembrandt (1606-1669) (dit, école)"
+  },
+  {
+   "reference": "M0332003707",
+   "titre": "Personnage portant un enfant sur son dos",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Rembrandt (1606-1669) (attribué à)"
+  },
+  {
+   "reference": "M0332003716",
+   "titre": "Femme portant un enfant et homme représentés à mi-corps",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "entourage_de",
+   "extrait": "Rembrandt (1606-1669) (entourage de)"
+  },
+  {
+   "reference": "M0332003417",
+   "titre": "Tête d'homme barbu portant un bonnet allongé, vu de profil",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "entourage_de",
+   "extrait": "Rembrandt (1606-1669) (entourage de)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-07-28T14:49:21+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

@@ -1,0 +1,399 @@
+{
+ "date": "2026-07-29",
+ "references_examinees": 3668,
+ "correspondances_exactes": 329,
+ "exactes_par_identifiant_joconde": 329,
+ "exactes_avec_image": 184,
+ "exactes_sans_image": 145,
+ "candidats_a_verifier": 47,
+ "candidats_refs_distinctes": 25,
+ "candidats_forte_presomption": 0,
+ "faux_rapprochements_rejetes": 457,
+ "dont_rejetes_par_dimensions": 262,
+ "images_reutilisables": 184,
+ "licences_ouvertes_detail": {
+  "Public domain": 162,
+  "CC BY-SA 4.0": 5,
+  "CC BY 3.0": 6,
+  "CC BY-SA 2.0": 3,
+  "CC BY 4.0": 1,
+  "CC BY-SA 3.0": 6,
+  "CC0": 1
+ },
+ "refs_avec_item_p347": 329,
+ "refs_avec_candidat_inventaire": 100,
+ "echantillon_controle": {
+  "exact_par_joconde_id": [
+   {
+    "reference_joconde": "03110041532",
+    "titre_joconde": "Ah ! Le Voilà ! ; Le chien commissionnaire",
+    "musee_joconde": "musée des Beaux-Arts de Saint-Denis",
+    "artistes": [
+     "Louis Léopold Boilly"
+    ],
+    "wikidata_qid": "Q106765259",
+    "commons_file": "VAN GORP Henri Nicolas (Attribué à) Ah ! Le Voilà ! Huile sur toile.jpg",
+    "license": "Public domain",
+    "rights_status": "open",
+    "evidence": [
+     "institution_match",
+     "joconde_id_match"
+    ]
+   },
+   {
+    "reference_joconde": "00650013590",
+    "titre_joconde": "Comédiens italiens dans un parc",
+    "musee_joconde": "musée des beaux-arts",
+    "artistes": [
+     "Jean-Baptiste Oudry"
+    ],
+    "wikidata_qid": "Q131462608",
+    "commons_file": "Atelier de Jean-Baptiste Oudry - Comédiens italiens dans un parc 02.jpg",
+    "license": "CC BY-SA 4.0",
+    "rights_status": "open",
+    "evidence": [
+     "inventory_match",
+     "institution_match",
+     "joconde_id_match"
+    ]
+   },
+   {
+    "reference_joconde": "000PE026927",
+    "titre_joconde": "PORTRAIT DE JEUNE HOMME",
+    "musee_joconde": "musée du Louvre",
+    "artistes": [
+     "Le Corrège"
+    ],
+    "wikidata_qid": "Q18572256",
+    "commons_file": "Parmigianino - Portrait of a Young man.jpg",
+    "license": "Public domain",
+    "rights_status": "open",
+    "evidence": [
+     "inventory_match",
+     "institution_match",
+     "joconde_id_match"
+    ]
+   },
+   {
+    "reference_joconde": "000PE008564",
+    "titre_joconde": "Portrait de jeune homme, dit autrefois : Portrait de Titus",
+    "musee_joconde": "musée du Louvre",
+    "artistes": [
+     "Rembrandt"
+    ],
+    "wikidata_qid": "Q21674750",
+    "commons_file": "Rembrandt - Portrait of a Young Man with Moustache.jpg",
+    "license": "Public domain",
+    "rights_status": "open",
+    "evidence": [
+     "inventory_match",
+     "institution_match",
+     "joconde_id_match"
+    ]
+   },
+   {
+    "reference_joconde": "000PE008558",
+    "titre_joconde": "HENDRICKJE STOFFELS EN VENUS",
+    "musee_joconde": "musée du Louvre",
+    "artistes": [
+     "Rembrandt"
+    ],
+    "wikidata_qid": "Q21499498",
+    "commons_file": "Vénus et l'Amour de Rembrandt.jpg",
+    "license": "Public domain",
+    "rights_status": "open",
+    "evidence": [
+     "inventory_match",
+     "institution_match",
+     "joconde_id_match"
+    ]
+   },
+   {
+    "reference_joconde": "000PE008571",
+    "titre_joconde": "Jeune homme au bâton",
+    "musee_joconde": "musée du Louvre",
+    "artistes": [
+     "Rembrandt"
+    ],
+    "wikidata_qid": "Q21935248",
+    "commons_file": "Rembrant - Portrait of a Man with a Staff.jpg",
+    "license": "Public domain",
+    "rights_status": "open",
+    "evidence": [
+     "inventory_match",
+     "institution_match",
+     "joconde_id_match"
+    ]
+   }
+  ],
+  "candidat_forte_presomption": [],
+  "exact_sans_image": [
+   {
+    "reference_joconde": "000PE013602",
+    "titre_joconde": "PORTRAIT D'HOMME",
+    "musee_joconde": "musée des beaux-arts",
+    "artistes": [
+     "Louis Léopold Boilly"
+    ],
+    "wikidata_qid": "Q138414464",
+    "commons_file": "",
+    "license": "",
+    "rights_status": "unknown",
+    "evidence": [
+     "inventory_match",
+     "institution_match",
+     "joconde_id_match"
+    ]
+   },
+   {
+    "reference_joconde": "000PE013601",
+    "titre_joconde": "PORTRAIT DE JEUNE HOMME",
+    "musee_joconde": "musée des beaux-arts",
+    "artistes": [
+     "Louis Léopold Boilly"
+    ],
+    "wikidata_qid": "Q138414379",
+    "commons_file": "",
+    "license": "",
+    "rights_status": "unknown",
+    "evidence": [
+     "inventory_match",
+     "institution_match",
+     "joconde_id_match"
+    ]
+   },
+   {
+    "reference_joconde": "000PE016128",
+    "titre_joconde": "PORTRAIT DE JEUNE VIOLONISTE ASSIS DEVANT UN PUPITRE",
+    "musee_joconde": "musée Grobet-Labadié",
+    "artistes": [
+     "Louis Léopold Boilly"
+    ],
+    "wikidata_qid": "Q123738340",
+    "commons_file": "",
+    "license": "",
+    "rights_status": "unknown",
+    "evidence": [
+     "inventory_match",
+     "institution_match",
+     "joconde_id_match"
+    ]
+   },
+   {
+    "reference_joconde": "000PE016126",
+    "titre_joconde": "PORTRAIT DE FEMME AGEE",
+    "musee_joconde": "musée Grobet-Labadié",
+    "artistes": [
+     "Louis Léopold Boilly"
+    ],
+    "wikidata_qid": "Q123738339",
+    "commons_file": "",
+    "license": "",
+    "rights_status": "unknown",
+    "evidence": [
+     "inventory_match",
+     "institution_match",
+     "joconde_id_match"
+    ]
+   }
+  ],
+  "candidat_par_inventaire": [
+   {
+    "reference_joconde": "06570008170",
+    "titre_joconde": "Le Christ au tombeau ; Déploration sur le corps du Christ",
+    "musee_joconde": "musée des beaux-arts",
+    "artistes": [
+     "Le Pérugin"
+    ],
+    "wikidata_qid": "Q138416129",
+    "commons_file": "",
+    "license": "",
+    "rights_status": "unknown",
+    "evidence": [
+     "inventory_match",
+     "institution_match"
+    ]
+   },
+   {
+    "reference_joconde": "06570008170",
+    "titre_joconde": "Le Christ au tombeau ; Déploration sur le corps du Christ",
+    "musee_joconde": "musée des beaux-arts",
+    "artistes": [
+     "Le Pérugin"
+    ],
+    "wikidata_qid": "Q107493311",
+    "commons_file": "",
+    "license": "",
+    "rights_status": "unknown",
+    "evidence": [
+     "inventory_match",
+     "institution_match"
+    ]
+   },
+   {
+    "reference_joconde": "06570008170",
+    "titre_joconde": "Le Christ au tombeau ; Déploration sur le corps du Christ",
+    "musee_joconde": "musée des beaux-arts",
+    "artistes": [
+     "Le Pérugin"
+    ],
+    "wikidata_qid": "Q5803847",
+    "commons_file": "Joachim Patinir - Landscape with the Flight into Egypt, 1516-1517, 64.tif",
+    "license": "Public domain",
+    "rights_status": "open",
+    "evidence": [
+     "inventory_match",
+     "institution_match"
+    ]
+   },
+   {
+    "reference_joconde": "000PE014737",
+    "titre_joconde": "FIGURE ALLEGORIQUE",
+    "musee_joconde": "musée des beaux-arts",
+    "artistes": [
+     "Le Corrège"
+    ],
+    "wikidata_qid": "Q124846819",
+    "commons_file": "Prédication saint-Jean-Baptiste début XVI h sur panneau d marquis de la Rochejacquelin 1839 440 musée de Chartres.jpg",
+    "license": "CC BY-SA 4.0",
+    "rights_status": "open",
+    "evidence": [
+     "inventory_match",
+     "institution_match",
+     "author_match"
+    ]
+   },
+   {
+    "reference_joconde": "00000103010",
+    "titre_joconde": "JUDITH TENANT LA TETE D'HOLOPHERNE",
+    "musee_joconde": "musée du Louvre",
+    "artistes": [
+     "Guido Reni"
+    ],
+    "wikidata_qid": "Q115673014",
+    "commons_file": "",
+    "license": "",
+    "rights_status": "unknown",
+    "evidence": [
+     "inventory_match",
+     "institution_match",
+     "title_match"
+    ]
+   },
+   {
+    "reference_joconde": "07430004969",
+    "titre_joconde": "La Charité chrétienne",
+    "musee_joconde": "musée des Beaux-Arts",
+    "artistes": [
+     "Guido Reni"
+    ],
+    "wikidata_qid": "Q138415185",
+    "commons_file": "",
+    "license": "",
+    "rights_status": "unknown",
+    "evidence": [
+     "inventory_match",
+     "institution_match"
+    ]
+   }
+  ],
+  "faux_rapprochement_rejete_dimensions": [
+   {
+    "reference_joconde": "000DE006810",
+    "titre_joconde": "JEUNE FEMME ACCOUDEE",
+    "musee_joconde": "musée Grobet-Labadié",
+    "artistes": [
+     "Louis Léopold Boilly"
+    ],
+    "wikidata_qid": "Q3877890",
+    "commons_file": "Sarto, Andrea del - Noli me tangere - c. 1510.jpg",
+    "license": "Public domain",
+    "rights_status": "open",
+    "evidence": [
+     "inventory_match",
+     "dimensions_conflit"
+    ]
+   },
+   {
+    "reference_joconde": "000DE006810",
+    "titre_joconde": "JEUNE FEMME ACCOUDEE",
+    "musee_joconde": "musée Grobet-Labadié",
+    "artistes": [
+     "Louis Léopold Boilly"
+    ],
+    "wikidata_qid": "Q17627517",
+    "commons_file": "Pieter Claesz. 007.jpg",
+    "license": "Public domain",
+    "rights_status": "open",
+    "evidence": [
+     "inventory_match",
+     "dimensions_conflit"
+    ]
+   },
+   {
+    "reference_joconde": "00000065942",
+    "titre_joconde": "PORTRAIT DE FEMME",
+    "musee_joconde": "musée du Vieux-Château",
+    "artistes": [
+     "Louis Léopold Boilly"
+    ],
+    "wikidata_qid": "Q138428842",
+    "commons_file": "",
+    "license": "",
+    "rights_status": "unknown",
+    "evidence": [
+     "inventory_match",
+     "dimensions_conflit"
+    ]
+   },
+   {
+    "reference_joconde": "00000065942",
+    "titre_joconde": "PORTRAIT DE FEMME",
+    "musee_joconde": "musée du Vieux-Château",
+    "artistes": [
+     "Louis Léopold Boilly"
+    ],
+    "wikidata_qid": "Q135666231",
+    "commons_file": "Copley Fielding - Naufrage - Musée de Vitré.jpeg",
+    "license": "Public domain",
+    "rights_status": "open",
+    "evidence": [
+     "inventory_match",
+     "dimensions_conflit"
+    ]
+   },
+   {
+    "reference_joconde": "00000065943",
+    "titre_joconde": "PORTRAIT DE FEMME",
+    "musee_joconde": "musée du Vieux-Château",
+    "artistes": [
+     "Louis Léopold Boilly"
+    ],
+    "wikidata_qid": "Q138428842",
+    "commons_file": "",
+    "license": "",
+    "rights_status": "unknown",
+    "evidence": [
+     "inventory_match",
+     "dimensions_conflit"
+    ]
+   },
+   {
+    "reference_joconde": "00000065943",
+    "titre_joconde": "PORTRAIT DE FEMME",
+    "musee_joconde": "musée du Vieux-Château",
+    "artistes": [
+     "Louis Léopold Boilly"
+    ],
+    "wikidata_qid": "Q135666231",
+    "commons_file": "Copley Fielding - Naufrage - Musée de Vitré.jpeg",
+    "license": "Public domain",
+    "rights_status": "open",
+    "evidence": [
+     "inventory_match",
+     "dimensions_conflit"
+    ]
+   }
+  ]
+ }
+}
