@@ -39,14 +39,17 @@
 			<header class="intro">
 				<h1>Explorer les {nbMaitres} maîtres</h1>
 				<p>
-					Dans un musée, une œuvre est souvent accompagnée d'un nom d'artiste. Mais ce nom
-					ne désigne pas toujours son auteur avec certitude. Joconde, le catalogue collectif
-					des collections des musées de France, conserve des formulations comme
+					<strong>Dans un</strong> musée, une œuvre est souvent accompagnée d'un nom d'artiste.
+					Mais ce nom ne désigne pas toujours son auteur avec certitude. Joconde, le catalogue
+					collectif des collections des musées de France, conserve des formulations comme
 					«&nbsp;attribué à&nbsp;», «&nbsp;de son atelier&nbsp;», «&nbsp;de son école&nbsp;»
 					ou «&nbsp;à sa manière&nbsp;». Ces mots précisent la nature du lien avec le maître
-					et rendent visible le doute qui entoure certaines attributions. Cette rubrique
-					explore {nbMaitres} maîtres pour découvrir quelles œuvres sont associées à leur nom,
-					sous quelles réserves et dans quels musées elles sont conservées.
+					et rendent visible le doute qui entoure certaines attributions.
+				</p>
+				<p>
+					<strong>Cette rubrique</strong> explore {nbMaitres} maîtres pour découvrir quelles
+					œuvres sont associées à leur nom, sous quelles réserves et dans quels musées elles
+					sont conservées.
 				</p>
 				<p class="renvoi">
 					<a href="{base}/methode#les-maitres">Pourquoi ces {nbMaitres} artistes&nbsp;?&nbsp;→</a>
