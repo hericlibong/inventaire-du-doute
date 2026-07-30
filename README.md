@@ -1,57 +1,103 @@
 # L'inventaire du doute
 
-**Que savent vraiment les musées de France des œuvres qu'ils conservent — et
-comment avouent-ils, par écrit, ce qu'ils ne savent pas ?**
+> **Combien d'œuvres, dans les musées de France, portent une mention d'incertitude sur
+> leur auteur — et comment les musées avouent-ils, par écrit, ce qu'ils ne savent pas ?**
 
-Quand un musée n'est pas certain de l'auteur d'une œuvre, il l'écrit avec des
-formules précises et encadrées : « attribué à », « école de », « atelier de »,
-« entourage de », « anciennement attribué à », un simple point d'interrogation…
-Chaque formule a un sens et un niveau de doute différents. Ce projet lit la base
-Joconde — l'inventaire public des collections des musées de France —, repère ces
-formules, les compte, les classe et les raconte.
+Projet data-journalistique · réutilisation de données ouvertes (data.gouv.fr).
+*Démo en ligne à venir.*
 
-Cas de réutilisation du jeu de données
-[Collections des musées de France : base Joconde](https://www.data.gouv.fr/fr/datasets/collections-des-musees-de-france-base-joconde/)
-(ministère de la Culture, Licence Ouverte 2.0).
+![L'application « Explorer les 63 maîtres » : à gauche l'introduction et la recherche, à droite le profil de Charles Le Brun avec son portrait et le graphique de répartition des mentions.](docs/captures/explorer-profil.png)
 
-## Ce que ce projet ne fait pas
+## De quoi s'agit-il ?
 
-- Il n'authentifie aucune œuvre et n'émet aucun avis d'attribution : il restitue
-  ce que les musées eux-mêmes ont publié.
-- Il ne parle jamais de valeur marchande et ne promet aucun « chef-d'œuvre caché ».
-- Il ne compare pas les musées entre eux sur des comptages bruts : les versements
-  dans Joconde sont volontaires et inégaux (voir `docs/methode-et-limites.md`).
+Quand un musée n'est pas certain de l'auteur d'une œuvre, il l'écrit — avec des formules
+encadrées : « attribué à », « de son atelier », « de son école », « à sa manière », un simple
+point d'interrogation… Ce projet lit la base **Joconde**, le catalogue collectif des collections
+des musées de France, repère ces formules, les compte, les classe et les raconte. Le site
+permet d'explorer **63 maîtres** : quelles œuvres sont associées à leur nom, sous quelles
+réserves, et dans quels musées elles sont conservées.
 
-## État du projet
+Chiffres arrêtés à la version du **1ᵉʳ juillet 2026** : plus de **3 600 notices prudentes**
+rattachées à ces 63 noms, sur **24 507** au niveau national.
 
-**Phase 3 en cours — restitution web, recentrée sur « Les presque ».** Depuis le
-2026-07-15, la **première version publique** est centrée sur un seul dossier :
-**« Les presque »**, les œuvres que les musées rapprochent d'un grand maître sans
-les lui attribuer tout à fait. Les autres rubriques et formes de doute (dont
-« Avant / après ») **restent conservées et documentées dans le projet, mais hors
-du périmètre publiable initial**.
+## L'angle
 
-Les phases 1 (test go/no-go sur la qualité des données) et 2 (typologie du doute,
-pipeline d'exports) sont terminées. Le front est une application statique
-SvelteKit (`web/`) qui consomme les JSON exportés par le pipeline Python ;
-l'exploration des 27 noms (graphique / œuvres / carte par maître) est en place, et
-un export « Vue d'ensemble » des formulations prudentes est prêt. Suivi détaillé
-et périmètre V1 dans `docs/roadmap.md` (bloc « ★ RECENTRAGE »).
+Le nom d'un artiste, sur un cartel, ne désigne pas toujours son auteur certain. Les musées le
+savent et l'écrivent : chaque formule (héritée du décret Marcus, cadrée par la méthode Joconde)
+dit un degré de proximité différent avec le maître. Le projet ne cherche pas le scoop ; il rend
+visible, à l'échelle de la base, **ce que les musées reconnaissent ne pas savoir**.
 
-## Installation
+## Aperçu
 
-Pipeline de données :
+**Toutes les œuvres concernées par un maître, filtrables par mention, avec — quand elle existe —
+une reproduction ouverte :**
 
-```bash
-uv sync
-uv run python src/download.py   # télécharge le CSV (1,1 Go) et la nomenclature
-```
+![Onglet « Œuvres » de Corneille de Lyon : filtres par mention, puis la liste des œuvres avec leurs reproductions et les mots exacts publiés par les musées.](docs/captures/oeuvres-reproductions.png)
 
-Front (après avoir généré les exports) :
+**La géographie du doute autour d'un seul nom — un point = un musée détenteur :**
 
-```bash
-cd web
-npm install
-npm run sync:data   # copie data/exports/web/*.json vers web/static/data/
-npm run dev
-```
+![Carte de France : les musées qui conservent des œuvres rattachées à Charles Le Brun sous une mention prudente.](docs/captures/musees-carte.png)
+
+## La méthode — comment on fabrique le chiffre
+
+Le plus délicat n'est pas de compter, c'est de compter **honnêtement**. Quelques partis pris
+(détail dans [`docs/methode-et-limites.md`](docs/methode-et-limites.md)) :
+
+- **Source unique** : la base Joconde, rien d'autre.
+- **Pièges déjoués** : « présumé » porte souvent sur le *sujet représenté*, pas sur l'auteur ;
+  « d'après X » est une copie assumée, pas un doute (classée à part) ; les graphies varient d'un
+  musée et d'une décennie à l'autre.
+- **Unité de comptage** : la notice (la référence Joconde), jamais le segment d'auteur — une
+  œuvre qui nomme deux fois le même maître ne pèse qu'une fois.
+- **Homonymes séparés** : Rembrandt n'est pas Rembrandt Bugatti, Fragonard père n'est pas son
+  fils… chaque maître est défini par des motifs inclus / exclus, publiés avec la méthode.
+- **Reproductions** : aucune image sous licence ouverte sur POP (la plupart sont « soumises à
+  autorisation »). On cherche alors sur **Wikimedia Commons**, en ne retenant que les fichiers
+  rattachés *avec certitude* à la notice (identifiant Joconde, recoupé par les dimensions) et
+  sous licence libre → **184 reproductions** intégrées à ce jour.
+
+## Ce que le projet s'interdit
+
+- Il **n'authentifie aucune œuvre** et n'émet aucun avis d'attribution : il restitue ce que les
+  musées eux-mêmes ont publié.
+- Il ne parle **jamais de valeur marchande** et ne promet aucun « chef-d'œuvre caché ».
+- Il ne **compare pas les musées** entre eux sur des comptages bruts : les versements dans
+  Joconde sont volontaires et inégaux.
+
+## Les limites, assumées
+
+Les chiffres ne reflètent que **ce qui a été versé dans Joconde** — un inventaire vivant et
+incomplet. Cette limite n'est pas cachée : elle a sa page,
+[`docs/methode-et-limites.md`](docs/methode-et-limites.md), au même rang que le récit.
+
+## Sous le capot
+
+- **Pipeline Python** (pandas, `uv`) : lit le CSV Joconde (~1,1 Go, plus d'un million de
+  notices), détecte et classe les formules, exporte des **JSON légers**.
+- **Front SvelteKit statique** (`web/`, Svelte 5) : consomme ces JSON ; dataviz en Svelte / SVG,
+  carte en **D3-geo**. Aucun serveur applicatif, jamais la base entière dans l'application.
+
+## Le dépôt en un coup d'œil
+
+| Dossier | Contenu |
+|---|---|
+| `src/` | le pipeline Python (détection, désambiguïsation, exports) |
+| `web/` | le front SvelteKit statique |
+| `data/exports/` | les données générées, versionnées (le CSV source, lui, ne l'est pas) |
+| `docs/` | **la mémoire du projet** : décisions, journal, méthode, constats sur les données |
+
+Particularité assumée : le projet **documente ses choix au fil de l'eau**. Chaque décision de
+méthode est datée et justifiée dans `docs/`, parce que la façon de fabriquer le chiffre fait
+partie du récit.
+
+## Données & licences
+
+- **Données** : [Collections des musées de France : base Joconde](https://www.data.gouv.fr/fr/datasets/collections-des-musees-de-france-base-joconde/)
+  (ministère de la Culture) — **Licence Ouverte 2.0**.
+- **Reproductions** : Wikimedia Commons, licence indiquée par fichier (domaine public / Creative
+  Commons), créditée sous chaque image.
+- **Code** : licence à définir.
+
+---
+
+*Projet de portfolio. Développeur Python, ancien journaliste — d'où l'angle éditorial.*
