@@ -5,7 +5,6 @@
 	import BandeauMaitre from '$lib/BandeauMaitre.svelte';
 	import Repertoire from '$lib/Repertoire.svelte';
 	import { base } from '$app/paths';
-	import { enLettresCap } from '$lib/joconde.js';
 	// Archive : la piste « galaxie » est conservée dans $lib/GalaxieMaitre.svelte
 	// (abandonnée dans cette vue, decisions.md 2026-07-08), non importée ici.
 
@@ -18,9 +17,6 @@
 	// et le total de notices ont QUITTÉ l'introduction le 2026-07-20 : ils vivent
 	// dans la page Méthode, atteignable par le lien « Pourquoi ces N artistes ? ».
 	const nbMaitres = artistes.length;
-
-	// Le nombre s'écrit en toutes lettres dans le corps du texte (CLAUDE.md).
-	const nbMaitresTexte = enLettresCap(nbMaitres);
 
 	// Onglets de la fiche maître : profil (graphique) · oeuvres · musees.
 	let vue = $state('profil');
@@ -43,14 +39,14 @@
 			<header class="intro">
 				<h1>Explorer les {nbMaitres} maîtres</h1>
 				<p>
-					Dans les inventaires, le nom d'un artiste ne désigne pas toujours l'auteur certain
-					d'une œuvre. «&nbsp;Attribué à&nbsp;», «&nbsp;de son atelier&nbsp;», «&nbsp;de son
-					école&nbsp;» ou «&nbsp;à sa manière&nbsp;» décrivent différents degrés de proximité
-					avec le maître.
-				</p>
-				<p>
-					{nbMaitresTexte} artistes réunissent ici assez d'œuvres pour être explorés et
-					comparés.
+					Dans un musée, une œuvre est souvent accompagnée d'un nom d'artiste. Mais ce nom
+					ne désigne pas toujours son auteur avec certitude. Joconde, le catalogue collectif
+					des collections des musées de France, conserve des formulations comme
+					«&nbsp;attribué à&nbsp;», «&nbsp;de son atelier&nbsp;», «&nbsp;de son école&nbsp;»
+					ou «&nbsp;à sa manière&nbsp;». Ces mots précisent la nature du lien avec le maître
+					et rendent visible le doute qui entoure certaines attributions. Cette rubrique
+					explore {nbMaitres} maîtres pour découvrir quelles œuvres sont associées à leur nom,
+					sous quelles réserves et dans quels musées elles sont conservées.
 				</p>
 				<p class="renvoi">
 					<a href="{base}/methode#les-maitres">Pourquoi ces {nbMaitres} artistes&nbsp;?&nbsp;→</a>
