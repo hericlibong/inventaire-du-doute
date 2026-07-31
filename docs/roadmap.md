@@ -85,7 +85,8 @@ Ordre imposé — chaque ⏸ est un point d'arrêt :
       public ne fige plus d'effectif), `dataviz-les-presque.md` (sélection, effectif, et
       **note sur le changement d'axe**), `architecture-editoriale.md`, `les-presque/+page.js`,
       et les tâches ouvertes de ce fichier. La page **Méthode publie désormais l'état du
-      registre** (330 formes examinées : 74 retenues, 22 écartées, 234 à instruire), explique
+      registre** (330 formes recensées : 74 retenues, 22 écartées, 234 encore à examiner —
+      libellé corrigé le 2026-07-31, « examinées » laissait croire l'inverse), explique
       les **homonymes** et dit qu'une œuvre peut concerner deux artistes sans compter deux
       fois. Nouveau petit export `data/exports/web/registre.json`. Les journaux datés
       (donnees.md, decisions.md, entrées de phases) ne sont **pas** réécrits : ce sont des
@@ -195,6 +196,13 @@ comme historique ; ce bloc est le cap qui prime.*
 - [x] **Méthode et limites** (2026-07-17 quater) — page dédiée `/methode`, 5 sections
       (Périmètre · Construction des données · Lire les chiffres · Limites · Sources et
       droits) ; chiffres lus depuis les exports ; divergence copies corrigée (22 624)
+      **Refondue le 2026-07-31** (branche `refonte/methode`, decisions.md du jour) :
+      **six questions** au lieu de cinq rubriques (la base · comment le doute s'écrit ·
+      comment on compte · identifier les artistes · lire les chiffres · limites, sources
+      et droits), contradictions factuelles corrigées, **références officielles** citées
+      (data.gouv, méthode Joconde, décret 81-255, POP, Commons, france-geojson),
+      **quatre visuels** sur des cas réels, sommaire qui suit la lecture + retour en
+      haut, provenance **mesurée** au lieu d'être recopiée
 - [ ] **Travail image / droits** (statuts open/authorized/pending/restricted ;
       voie Wikimedia fichier par fichier, comme les portraits)
 - [~] **Charte graphique et refonte front** (identité visuelle propre — le socle
@@ -742,6 +750,9 @@ pour une frise (16 % œuvres datables, 7 % révisions datées).
 - [~] Carte nationale qualifiée : **EN PAUSE** — réponse déjà connue
       (concentration), biais de couverture, redondance avec la carte par
       maître ; réouverture seulement sur angle neuf
-- [ ] Page « méthode et limites » (+ encart décodeur ci-dessus)
+- [x] Page « méthode et limites » — livrée le 2026-07-17, **refondue en six questions le
+      2026-07-31** (voir la brique « Méthode et limites » plus haut). L'encart décodeur
+      n'y a pas été ajouté : la page renvoie à « Comprendre les mentions » plutôt que de
+      redire l'échelle, pour ne pas doubler une page par une autre
 - [ ] Rappels P3-T1 encore ouverts : reformuler l'accueil (deux dénominateurs
       gardés) ; 25 bios restantes ; moteur de recherche toute base

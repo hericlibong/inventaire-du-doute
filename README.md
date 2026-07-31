@@ -40,8 +40,10 @@ une reproduction ouverte :**
 
 ## La méthode — comment on fabrique le chiffre
 
-Le plus délicat n'est pas de compter, c'est de compter **honnêtement**. Quelques partis pris
-(détail dans [`docs/methode-et-limites.md`](docs/methode-et-limites.md)) :
+Le plus délicat n'est pas de compter, c'est de compter **honnêtement**. Le site consacre à cela
+une page entière, « Méthode et limites » (`/methode`), publiée au même rang que le récit ; les
+notes techniques qui la complètent sont dans
+[`docs/methode-et-limites.md`](docs/methode-et-limites.md). Quelques partis pris :
 
 - **Source unique** : la base Joconde, rien d'autre.
 - **Pièges déjoués** : « présumé » porte souvent sur le *sujet représenté*, pas sur l'auteur ;
@@ -53,8 +55,10 @@ Le plus délicat n'est pas de compter, c'est de compter **honnêtement**. Quelqu
   fils… chaque maître est défini par des motifs inclus / exclus, publiés avec la méthode.
 - **Reproductions** : aucune image sous licence ouverte sur POP (la plupart sont « soumises à
   autorisation »). On cherche alors sur **Wikimedia Commons**, en ne retenant que les fichiers
-  rattachés *avec certitude* à la notice (identifiant Joconde, recoupé par les dimensions) et
-  sous licence libre → **184 reproductions** intégrées à ce jour.
+  rattachés *avec certitude* à la notice — par son identifiant Joconde, jamais par une
+  ressemblance de titre — et sous licence libre → **184 reproductions** intégrées à ce jour.
+  L'appariement par numéro d'inventaire, recoupé avec les dimensions relevées sur Wikidata,
+  n'a rien produit d'assez solide : il a surtout évité d'afficher de fausses reproductions.
 
 ## Ce que le projet s'interdit
 
@@ -67,8 +71,9 @@ Le plus délicat n'est pas de compter, c'est de compter **honnêtement**. Quelqu
 ## Les limites, assumées
 
 Les chiffres ne reflètent que **ce qui a été versé dans Joconde** — un inventaire vivant et
-incomplet. Cette limite n'est pas cachée : elle a sa page,
-[`docs/methode-et-limites.md`](docs/methode-et-limites.md), au même rang que le récit.
+incomplet. Cette limite n'est pas cachée : elle a sa page dans le site lui-même, « Méthode et
+limites », atteignable depuis la navigation principale, et qui dit en six questions ce que les
+chiffres montrent et ce qu'ils ne montrent pas.
 
 ## Sous le capot
 
