@@ -67,7 +67,8 @@
 	<p>
 		<strong>Joconde</strong> est le catalogue collectif des collections des musées de
 		France, publié par le ministère de la Culture. Il rassemble plus d'un million de
-		notices — une notice par objet — décrites par les musées eux-mêmes. Le projet en
+		notices, décrites par les musées eux-mêmes&nbsp;; une notice correspond généralement à
+		un bien muséal, parfois à un ensemble ou à plusieurs éléments. Le projet en
 		lit une seule chose&nbsp;: la manière dont les musées écrivent qu'ils ne sont
 		<em>pas certains</em> de l'auteur d'une œuvre.
 	</p>
@@ -94,7 +95,7 @@
 	</p>
 	<p>
 		Le repérage a été <strong>vérifié à la main</strong>&nbsp;: un échantillon de 206
-		notices a été jugé une à une (vrai / faux / incertain), ce qui a permis de mesurer
+		notices a été jugé une à une, le 4 juillet 2026 (vrai / faux / incertain), ce qui a permis de mesurer
 		les fausses détections, puis de reformuler le lexique. Ce lexique est versionné et
 		public&nbsp;; sa version est indiquée plus bas.
 	</p>
@@ -111,8 +112,8 @@
 	</p>
 	<p>
 		<strong>Cette liste n'est pas close, et elle se vérifie.</strong> Tous les noms qui
-		atteignent le seuil ont été relevés — ils sont {nombre(nbCandidats)} — puis examinés
-		un par un. Chacun porte un état&nbsp;: retenu, écarté avec sa raison, ou
+		atteignent le seuil ont été relevés — ils sont {nombre(nbCandidats)}. Chacun reçoit un
+		état à mesure qu'il est examiné&nbsp;: retenu, écarté avec sa raison, ou
 		<em>encore à examiner</em>. Un nom encore à examiner n'est pas un nom rejeté&nbsp;:
 		c'est un nom dont la vérification n'a pas été faite. Aujourd'hui, {nombre(nbRetenus)}
 		formes d'écriture sont rattachées aux {nombre(nbNoms)} artistes retenus,
@@ -141,12 +142,10 @@
 <section id="lire">
 	<h2>Lire les chiffres</h2>
 	<p>
-		<strong>Notices et «&nbsp;œuvres concernées&nbsp;».</strong> L'unité technique du
-		calcul est la <strong>notice Joconde</strong> — une fiche par objet. Dans les pages
-		de lecture, ces notices sont désignées comme des <strong>«&nbsp;œuvres
-		concernées&nbsp;»</strong> pour alléger le texte. Les deux se recouvrent presque
-		toujours&nbsp;; une notice peut exceptionnellement documenter un ensemble ou
-		plusieurs éléments. Sur la fiche d'un artiste sont retenus au moins
+		<strong>Notices et «&nbsp;œuvres concernées&nbsp;».</strong> L'unité du calcul est la
+		<strong>notice Joconde</strong>. L'interface emploie parfois «&nbsp;œuvre
+		concernée&nbsp;» pour faciliter la lecture, mais une notice peut exceptionnellement
+		décrire un ensemble ou plusieurs éléments. Sur la fiche d'un artiste sont retenus au moins
 		<strong>dix</strong> notices prudentes, une fois écartés les homonymes&nbsp;; le
 		nombre de musées ne compte que ceux ayant publié <strong>au moins une notice
 		prudente</strong>, non l'ensemble des musées où l'artiste apparaît.
@@ -212,14 +211,17 @@
 		mis à jour {prov.mise_a_jour_source}). Lexique de détection&nbsp;: {prov.lexique}.
 	</p>
 	<p>
-		<strong>Portraits.</strong> Les portraits des artistes viennent de Wikimedia Commons.
-		Ce sont des <em>illustrations</em>, jamais une donnée ni un comptage&nbsp;: chaque
-		image porte en légende son auteur et sa licence, vérifiés fichier par fichier — le
-		plus souvent le domaine public, parfois une licence Creative Commons qui impose de
-		citer l'auteur. Trois artistes n'ont <strong>pas</strong> de portrait fiable
-		disponible&nbsp;: leur fiche le dit plutôt que d'afficher une image approchante.
-		Aucune image n'est reprise des fiches Joconde elles-mêmes&nbsp;; chaque exemple
-		renvoie plutôt à sa notice publique sur POP.
+		<strong>Portraits et reproductions.</strong> Les portraits des artistes et, lorsqu'elles
+		existent sous licence libre, les reproductions des œuvres viennent de Wikimedia
+		Commons. Ce sont des <em>illustrations</em>, jamais une donnée ni un comptage&nbsp;:
+		chaque image porte son auteur et sa licence, vérifiés fichier par fichier — le plus
+		souvent le domaine public, parfois une licence Creative Commons qui impose de citer
+		l'auteur. Une reproduction n'est retenue que si elle est rattachée <strong>avec
+		certitude</strong> à la notice par son identifiant Joconde. Les photographies des
+		fiches POP elles-mêmes ne sont <strong>pas</strong> reprises&nbsp;: leurs crédits ne
+		portent pas de licence de réutilisation ouverte. Trois artistes n'ont pas de portrait
+		fiable disponible&nbsp;: leur fiche le dit plutôt que d'afficher une image approchante.
+		Chaque œuvre renvoie à sa notice publique sur POP.
 	</p>
 	<p>
 		<strong>Fond de carte.</strong> Les contours des régions viennent de france-geojson
