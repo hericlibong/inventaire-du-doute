@@ -2,6 +2,31 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-31 (bis) — Page « Méthode », palier 5 : se repérer dans une page longue
+
+La page fait six sections : on ajoute de quoi savoir **où l'on est** et **revenir en haut**,
+sans que la page prenne jamais la main sur le défilement du lecteur.
+
+**Le rail de sommaire marque la section en cours.** Règle énonçable plutôt qu'un réglage
+opaque : la section active est *la dernière dont le haut est passé au-dessus du quart supérieur
+de la fenêtre* ; au pied de page, c'est la dernière section, qui sans cela ne pourrait jamais
+devenir active. Mesure directe à chaque image d'animation (six éléments) plutôt qu'un
+`IntersectionObserver` : moins de magie, cas limites traités à la main. Le repère est doublé
+par `aria-current` — jamais la seule couleur.
+
+**L'ancre `#les-maitres` passe du paragraphe au titre de la section.** C'est la cible du lien
+« Pourquoi ces N artistes ? » venu d'« Explorer les maîtres » : le visiteur arrivait *sous* le
+titre, donc sans savoir à quelle question la réponse répondait. Un `scroll-margin-top` évite
+en plus que la cible se colle au bord haut de la fenêtre.
+
+**Défilement doux, sauf avis contraire du système** (`prefers-reduced-motion: reduce`) : le
+mouvement est un confort, pas une information. Le clic dans le sommaire déplace aussi le focus
+clavier sur la section atteinte — sans dessiner de cadre à la souris.
+
+**Retour en haut** : pastille discrète, absente tant qu'on n'a pas défilé d'un écran, réduite à
+sa flèche sur petit écran (le libellé reste le nom accessible du bouton). Sommaire et bouton
+sont retirés à l'impression.
+
 ## 2026-07-31 — Page « Méthode », palier 4 : quatre visuels, et pas un de plus
 
 La page méthode reçoit **quatre visuels**, chacun au service d'**une seule règle**, placés dans

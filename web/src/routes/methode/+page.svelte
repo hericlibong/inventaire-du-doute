@@ -40,12 +40,97 @@
 		['lire', 'Lire les chiffres et les vues'],
 		['sources', 'Limites, sources et droits']
 	];
+
+	// --- Navigation dans une page longue (palier 5) --------------------------
+	// Le rail de sommaire indique où l'on se trouve, et un retour en haut apparaît
+	// quand on a défilé. Rien d'automatique ne bouge à l'écran : la page ne prend
+	// jamais la main sur le défilement du lecteur.
+
+	let actif = $state(sommaire[0][0]);
+	let hautVisible = $state(false);
+
+	// Repérage de la section courante. Mesure directe à chaque défilement plutôt
+	// qu'un IntersectionObserver : six éléments, un calcul par image, et surtout
+	// une règle qu'on peut énoncer — « la dernière section dont le titre est passé
+	// au-dessus du quart supérieur de la fenêtre ». Les cas limites (haut de page,
+	// dernière section trop courte pour occuper l'écran) sont traités explicitement.
+	$effect(() => {
+		const cibles = sommaire
+			.map(([ancre]) => document.getElementById(ancre))
+			.filter(Boolean);
+		if (!cibles.length) return;
+
+		let attendue = false;
+
+		const mesurer = () => {
+			attendue = false;
+			const seuil = window.innerHeight * 0.25;
+			let courante = cibles[0];
+			for (const el of cibles) {
+				if (el.getBoundingClientRect().top <= seuil) courante = el;
+			}
+			// Arrivé au pied de page, la dernière section est la bonne réponse même
+			// si elle n'a pas atteint le seuil (elle ne le pourra jamais).
+			const fin =
+				window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 4;
+			if (fin) courante = cibles[cibles.length - 1];
+
+			actif = courante.id;
+			hautVisible = window.scrollY > window.innerHeight;
+		};
+
+		const auDefilement = () => {
+			if (attendue) return;
+			attendue = true;
+			requestAnimationFrame(mesurer);
+		};
+
+		mesurer();
+		// Arrivée par un lien vers une ancre (« Pourquoi ces N artistes ? ») : le
+		// navigateur saute à la cible avant que cette mesure ne soit installée, sans
+		// émettre d'événement de défilement. On remesure donc une fois la page posée,
+		// sinon le rail annoncerait la première section alors qu'on est à la quatrième.
+		const differee = setTimeout(mesurer, 250);
+
+		window.addEventListener('scroll', auDefilement, { passive: true });
+		window.addEventListener('resize', auDefilement);
+		window.addEventListener('hashchange', auDefilement);
+		return () => {
+			clearTimeout(differee);
+			window.removeEventListener('scroll', auDefilement);
+			window.removeEventListener('resize', auDefilement);
+			window.removeEventListener('hashchange', auDefilement);
+		};
+	});
+
+	// Défilement doux, sauf si le système demande de limiter les animations.
+	const douceur = () =>
+		window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+
+	// Clic sur le sommaire : on garde le comportement natif (l'ancre reste dans
+	// l'URL, le lien fonctionne sans JavaScript) et on y ajoute le défilement doux
+	// et le passage du focus clavier à la section atteinte.
+	function allerA(evenement, ancre) {
+		const cible = document.getElementById(ancre);
+		if (!cible) return;
+		evenement.preventDefault();
+		cible.scrollIntoView({ behavior: douceur(), block: 'start' });
+		cible.focus({ preventScroll: true });
+		history.replaceState(null, '', `#${ancre}`);
+	}
+
+	function retourHaut() {
+		window.scrollTo({ top: 0, behavior: douceur() });
+		document.getElementById('haut-de-page')?.focus({ preventScroll: true });
+		history.replaceState(null, '', window.location.pathname);
+	}
 </script>
 
 <div class="page">
 <header class="tete">
 	<p class="kicker">Méthode et limites</p>
-	<h1>Ce que les chiffres disent, et ne disent pas</h1>
+	<!-- tabindex : cible du focus au retour en haut (le clavier suit le regard). -->
+	<h1 id="haut-de-page" tabindex="-1">Ce que les chiffres disent, et ne disent pas</h1>
 	<p class="chapo">
 		Cette page dit comment le projet lit la base Joconde, ce qu'il compte, et ce qu'il
 		ne prétend pas savoir. Elle est publiée au même rang que le reste&nbsp;: les limites
@@ -61,14 +146,23 @@
 	<nav class="sommaire" aria-label="Sections de la page">
 		<ol>
 			{#each sommaire as [ancre, titre], i (ancre)}
-				<li><a href="#{ancre}"><span class="num">{i + 1}</span>{titre}</a></li>
+				<li>
+					<a
+						href="#{ancre}"
+						class:actif={ancre === actif}
+						aria-current={ancre === actif ? 'true' : undefined}
+						onclick={(e) => allerA(e, ancre)}
+					>
+						<span class="num">{i + 1}</span>{titre}
+					</a>
+				</li>
 			{/each}
 		</ol>
 	</nav>
 
 	<div class="contenu">
 <!-- 1. La base étudiée ------------------------------------------------------- -->
-<section id="base">
+<section id="base" tabindex="-1">
 	<h2>La base étudiée</h2>
 	<p>
 		<strong>Joconde</strong> est le catalogue collectif des collections des musées de
@@ -94,7 +188,7 @@
 </section>
 
 <!-- 2. Comment le doute s'écrit dans Joconde -------------------------------- -->
-<section id="doute">
+<section id="doute" tabindex="-1">
 	<h2>Comment le doute s’écrit dans Joconde</h2>
 	<p>Trois choses sont à distinguer&nbsp;: ce que les musées écrivent, ce que ces mots
 		veulent dire, et la manière dont nous les regroupons.</p>
@@ -142,7 +236,7 @@
 </section>
 
 <!-- 3. Comment les notices ont-elles été comptées ? ------------------------- -->
-<section id="comptage">
+<section id="comptage" tabindex="-1">
 	<h2>Comment les notices ont-elles été comptées&nbsp;?</h2>
 	<p>
 		<strong>Notices et «&nbsp;œuvres concernées&nbsp;».</strong> L'unité du calcul est la
@@ -191,11 +285,13 @@
 </section>
 
 <!-- 4. Comment les artistes ont-ils été identifiés ? ------------------------ -->
-<section id="artistes">
-	<h2>Comment les artistes ont-ils été identifiés&nbsp;?</h2>
+<section id="artistes" tabindex="-1">
 	<!-- Ancre visée par le lien « Pourquoi ces N artistes ? » de « Explorer les
-	     maîtres » : à conserver. -->
-	<p id="les-maitres">
+	     maîtres » : à conserver. Elle porte sur le TITRE et non sur le paragraphe
+	     qui suit — sinon le visiteur arrivait sous le titre, sans savoir à quelle
+	     question il répond. -->
+	<h2 id="les-maitres" tabindex="-1">Comment les artistes ont-ils été identifiés&nbsp;?</h2>
+	<p>
 		Une partie du site se concentre sur <strong>{nombre(nbNoms)} noms</strong> de
 		référence. Le critère est explicite&nbsp;: un artiste connu <em>et</em> au moins dix
 		notices portant une formulation prudente (copies exclues), une fois le nom bien
@@ -244,7 +340,7 @@
 </section>
 
 <!-- 5. Lire les chiffres et les vues ---------------------------------------- -->
-<section id="lire">
+<section id="lire" tabindex="-1">
 	<h2>Lire les chiffres et les vues</h2>
 	<p>
 		<strong>Le graphique d'un artiste</strong> place chaque mention à sa
@@ -269,7 +365,7 @@
 </section>
 
 <!-- 6. Limites, sources et droits ------------------------------------------- -->
-<section id="sources">
+<section id="sources" tabindex="-1">
 	<h2>Limites, sources et droits</h2>
 	<p>
 		<strong>Les chiffres ne reflètent que ce qui a été versé dans Joconde.</strong> Les
@@ -326,6 +422,17 @@
 </section>
 	</div>
 </div>
+
+<!-- Retour en haut : n'apparaît qu'après un écran de défilement, jamais au-dessus
+     du texte (il se range dans la gouttière dès qu'il y a la place). -->
+<button
+	class="retour-haut"
+	class:visible={hautVisible}
+	inert={!hautVisible}
+	onclick={retourHaut}
+>
+	<span aria-hidden="true">↑</span> <span class="libelle">Haut de page</span>
+</button>
 </div>
 
 <style>
@@ -413,9 +520,21 @@
 		border-left-color: var(--accent-cobalt);
 	}
 
+	/* Section en cours de lecture : le filet se remplit. Le repère est doublé par
+	   aria-current, pour ne pas dépendre de la seule couleur. */
+	.sommaire a.actif {
+		color: var(--couleur-encre);
+		border-left-color: var(--accent-cobalt);
+		font-weight: 600;
+	}
+
 	.sommaire .num {
 		font-variant-numeric: tabular-nums;
 		color: var(--couleur-encre-douce);
+	}
+
+	.sommaire a.actif .num {
+		color: var(--accent-cobalt);
 	}
 
 	.contenu {
@@ -431,10 +550,24 @@
 		margin-bottom: 0;
 	}
 
+	/* Décalage d'ancre : au saut, la cible ne colle pas au bord haut de la fenêtre.
+	   Vaut pour les sections du sommaire ET pour les titres visés de l'extérieur
+	   (#les-maitres, depuis « Explorer les maîtres »). */
+	section,
+	section h2 {
+		scroll-margin-top: var(--espace-5);
+	}
+
 	section h2 {
 		font-family: var(--police-titre);
-		/* léger décalage d'ancre : le titre ne colle pas au bord haut au clic. */
-		scroll-margin-top: var(--espace-4);
+	}
+
+	/* Le focus posé sur une section au clic du sommaire ne dessine pas de cadre à
+	   la souris — mais reste visible au clavier, où il sert de repère. */
+	section:focus:not(:focus-visible),
+	section h2:focus:not(:focus-visible),
+	h1:focus:not(:focus-visible) {
+		outline: none;
 	}
 
 	.contenu h3 {
@@ -520,6 +653,56 @@
 		border-left: var(--filet);
 	}
 
+	/* Retour en haut : pastille discrète en bas de fenêtre, du registre UI.
+	   Absente tant qu'on n'a pas défilé d'au moins un écran. */
+	.retour-haut {
+		position: fixed;
+		right: clamp(1rem, 3vw, 2rem);
+		bottom: clamp(1rem, 3vw, 2rem);
+		display: inline-flex;
+		align-items: center;
+		gap: var(--espace-2);
+		padding: var(--espace-2) var(--espace-3);
+		background: var(--surface-carte);
+		color: var(--couleur-encre-douce);
+		border: var(--filet);
+		border-radius: var(--rayon-m);
+		box-shadow: var(--ombre-douce);
+		font-size: var(--taille-xs);
+		cursor: pointer;
+		opacity: 0;
+		visibility: hidden;
+		transform: translateY(0.4rem);
+		transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+	}
+
+	.retour-haut.visible {
+		opacity: 1;
+		visibility: visible;
+		transform: none;
+	}
+
+	.retour-haut:hover {
+		color: var(--couleur-encre);
+		border-color: var(--couleur-encre-douce);
+	}
+
+	/* Le mouvement est un confort, pas une information : on le retire si le
+	   système demande de limiter les animations. */
+	@media (prefers-reduced-motion: reduce) {
+		.retour-haut {
+			transition: none;
+			transform: none;
+		}
+	}
+
+	@media print {
+		.sommaire,
+		.retour-haut {
+			display: none;
+		}
+	}
+
 	@media (max-width: 760px) {
 		.grille {
 			grid-template-columns: 1fr;
@@ -540,6 +723,29 @@
 		.sommaire a {
 			padding-left: 0;
 			border-left: none;
+		}
+		/* Le filet de gauche disparaît en liste horizontale : le repère passe
+		   dessous, sinon la section en cours ne se distingue plus. */
+		.sommaire a.actif {
+			border-bottom: 2px solid var(--accent-cobalt);
+		}
+
+		/* Sur petit écran, le bouton se réduit à sa flèche pour couvrir le moins de
+		   texte possible. Le libellé reste dans le document (nom accessible du
+		   bouton), seulement retiré de la vue. */
+		.retour-haut {
+			padding: var(--espace-2);
+			border-radius: 50%;
+			line-height: 1;
+		}
+
+		.retour-haut .libelle {
+			position: absolute;
+			width: 1px;
+			height: 1px;
+			overflow: hidden;
+			clip-path: inset(50%);
+			white-space: nowrap;
 		}
 	}
 
