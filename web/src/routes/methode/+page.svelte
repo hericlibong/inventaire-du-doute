@@ -297,7 +297,8 @@
 		notices portant une formulation prudente (copies exclues), une fois le nom bien
 		isolé. Ce n'est <strong>pas un palmarès des plus grands</strong>&nbsp;: c'est un
 		seuil, choisi pour avoir assez de matière à montrer. Ces {nombre(nbNoms)} noms
-		réunissent {nombre(douteDansListe)} des formulations prudentes.
+		réunissent {nombre(douteDansListe)} des {nombre(n.doute_total)} notices prudentes
+		relevées dans toute la base.
 	</p>
 	<p>
 		<strong>Cette liste n'est pas close, et elle se vérifie.</strong> Tous les noms qui

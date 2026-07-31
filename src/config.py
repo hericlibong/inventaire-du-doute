@@ -17,6 +17,14 @@ URL_NOMENCLATURE = "https://www.data.gouv.fr/api/1/datasets/r/2a7f0292-5a9e-47fe
 CHEMIN_CSV = DOSSIER_RAW / "joconde.csv"
 CHEMIN_NOMENCLATURE = DOSSIER_RAW / "nomenclature.ods"
 
+
+def chemin_releve(fichier: Path) -> Path:
+    """Fichier voisin où `download.py` note ce que le serveur a répondu (date de
+    version, empreinte, taille). Il voyage avec le téléchargement, jamais dans
+    le code : c'est ce qui permet de dater les chiffres publiés sans recopier
+    une valeur à la main."""
+    return fichier.with_suffix(fichier.suffix + ".releve.json")
+
 # API du portail du ministère (Opendatasoft). Attention : c'est un EXTRAIT
 # (~721 000 notices), utile pour les contre-vérifications, pas comme référence.
 URL_API = (

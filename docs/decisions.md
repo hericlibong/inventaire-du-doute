@@ -2,6 +2,34 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-31 (ter) — La provenance publiée est dérivée du fichier, plus recopiée
+
+`build_exports.py::provenance()` codait en dur la taille, l'empreinte et la date de version du
+CSV — des valeurs relevées à la main le 2026-07-05. Elles étaient exactes, mais rien ne le
+garantissait : le jour où le CSV change, le site aurait continué d'afficher l'ancienne date sous
+des chiffres nouveaux. Or cette date est publique (« les chiffres se rapportent à la version
+du… ») : elle doit être une mesure, pas une déclaration.
+
+**Ce qui est mesuré désormais** : la taille vient de `CHEMIN_CSV.stat()`, l'empreinte est un MD5
+calculé sur le fichier réellement lu (~9 s pour 1,1 Go), et la version du lexique vient de
+`markers.VERSION` — une seule source, pour qu'un lexique v3 ne laisse pas « v2 » publié en ligne.
+
+**La date de version vient de la source.** `download.py` écrit maintenant un relevé à côté du
+fichier téléchargé (`joconde.csv.releve.json` : `Last-Modified`, MD5, taille, date de
+téléchargement). Ce relevé voyage avec la donnée ; `provenance()` le lit en priorité.
+
+**Le pipeline refuse de dater ce qu'il ne peut pas identifier.** Sans relevé (cas des CSV
+téléchargés avant son introduction, comme celui du dépôt), on retombe sur la photo de référence
+documentée — mais seulement si l'empreinte concorde. Sinon, arrêt avec un message qui dit quoi
+faire. Publier une date invérifiable serait pire que ne rien publier.
+
+Détail utile trouvé en chemin : **l'ETag de data.gouv est le MD5 du contenu** (vérifié), d'où la
+possibilité de tout contrôler hors ligne — voir `docs/donnees.md`, T1.
+
+**Contrôle de non-régression** : exports régénérés en entier ; `niveaux.json`, `musees.json` et
+`territoires.json` sont identiques à l'octet, seul `date_generation_exports` change — il était
+resté au 2026-07-05 alors que les exports avaient été refaits depuis.
+
 ## 2026-07-31 (bis) — Page « Méthode », palier 5 : se repérer dans une page longue
 
 La page fait six sections : on ajoute de quoi savoir **où l'on est** et **revenir en haut**,
