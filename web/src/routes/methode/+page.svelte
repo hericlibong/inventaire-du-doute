@@ -1,10 +1,11 @@
 <script>
-	// « Méthode et limites » (architecture §3) : page unique et structurée qui
-	// regroupe les limites du projet, au même rang que le récit (règle CLAUDE.md :
-	// les limites sont affichées, pas cachées). Éditoriale et accessible — ni doc
-	// technique, ni FAQ, ni suite de cartes. Cinq sections : Périmètre · Construction
-	// des données · Lire les chiffres · Limites · Sources et droits.
+	// « Méthode et limites » (refonte 2026-07-31, six questions) : page publique de
+	// référence. Six sections en questions simples — la base · comment le doute
+	// s'écrit · comment on compte · comment les artistes sont identifiés · lire les
+	// chiffres · limites, sources et droits. Éditoriale et accessible ; les limites
+	// au même rang que le récit (CLAUDE.md). Doc technique détaillée : docs/methode-et-limites.md.
 	import { nombre } from '$lib/joconde.js';
+	import { base } from '$app/paths';
 
 	let { data } = $props();
 	const n = data.niveaux;
@@ -19,17 +20,20 @@
 	const nbRetenus = data.registre.retenues;
 	const nbEcartes = data.registre.ecartees;
 	const nbAInstruire = data.registre.a_instruire;
-	const dApres = n.familles.d_apres.notices; // 22 564 (copies « d'après »)
-	const copiesTotal = n.copie; // 22 624 (catégorie copie, dédupliquée)
+	const dApres = n.familles.d_apres.notices;
+	const copiesTotal = n.copie;
 	const pct = (v) => (v * 100).toLocaleString('fr-FR', { maximumFractionDigits: 1 });
 	const go = (o) => (o / 1e9).toLocaleString('fr-FR', { maximumFractionDigits: 2 });
 
+	// Six questions simples (refonte 2026-07-31). Libellés courts pour le rail ;
+	// les titres complets sont dans les <h2>.
 	const sommaire = [
-		['perimetre', 'Périmètre'],
-		['donnees', 'Construction des données'],
-		['lire', 'Lire les chiffres'],
-		['limites', 'Limites'],
-		['sources', 'Sources et droits']
+		['base', 'La base étudiée'],
+		['doute', 'Comment le doute s’écrit'],
+		['comptage', 'Comment on compte'],
+		['artistes', 'Identifier les artistes'],
+		['lire', 'Lire les chiffres et les vues'],
+		['sources', 'Limites, sources et droits']
 	];
 </script>
 
@@ -48,9 +52,6 @@
 	</p>
 </header>
 
-<!-- Deux zones : sommaire en rail (collant sur ordinateur) + contenu. La ligne de
-     proximité n'est PAS imposée ici : elle n'expliquerait rien (Méthode = texte,
-     filets, chiffres et sources). -->
 <div class="grille">
 	<nav class="sommaire" aria-label="Sections de la page">
 		<ol>
@@ -61,100 +62,97 @@
 	</nav>
 
 	<div class="contenu">
-<!-- 1. Périmètre ------------------------------------------------------------- -->
-<section id="perimetre">
-	<h2>Périmètre</h2>
+<!-- 1. La base étudiée ------------------------------------------------------- -->
+<section id="base">
+	<h2>La base étudiée</h2>
 	<p>
 		<strong>Joconde</strong> est le catalogue collectif des collections des musées de
-		France, publié par le ministère de la Culture. Il rassemble plus d'un million de
-		notices, décrites par les musées eux-mêmes&nbsp;; une notice correspond généralement à
-		un bien muséal, parfois à un ensemble ou à plusieurs éléments. Le projet en
-		lit une seule chose&nbsp;: la manière dont les musées écrivent qu'ils ne sont
+		France, publié par le ministère de la Culture
+		<a href="https://www.data.gouv.fr/fr/datasets/collections-des-musees-de-france-base-joconde/" target="_blank" rel="noopener">sur data.gouv.fr</a>
+		sous <strong>{prov.licence}</strong>. Il rassemble plus d'un million de notices,
+		décrites par les musées eux-mêmes&nbsp;; une notice correspond généralement à un
+		bien muséal, parfois à un ensemble ou à plusieurs éléments. Le projet en lit une
+		seule chose&nbsp;: la manière dont les musées écrivent qu'ils ne sont
 		<em>pas certains</em> de l'auteur d'une œuvre.
 	</p>
 	<p>
-		On appelle ici <strong>formulation prudente</strong> une notice où le nom d'un
-		artiste est présent, mais accompagné d'une réserve&nbsp;: «&nbsp;attribué à&nbsp;»,
-		«&nbsp;atelier de&nbsp;», «&nbsp;école de&nbsp;», «&nbsp;entourage de&nbsp;»,
-		«&nbsp;suiveur de&nbsp;», «&nbsp;à la manière de&nbsp;», «&nbsp;dans le genre
-		de&nbsp;», ou un simple «&nbsp;?&nbsp;» après le nom. Le projet repère ces formules,
-		les compte et les classe — il n'en invente aucune.
+		Les chiffres de ce site se rapportent à la <strong>version du {prov.version_donnee}</strong>
+		de la base. C'est une photographie datée d'un inventaire vivant.
+	</p>
+	<details>
+		<summary>Détails de version</summary>
+		<p>
+			Fichier d'environ {go(prov.taille_octets)}&nbsp;Go, mis à jour {prov.mise_a_jour_source}.
+			Lexique de détection&nbsp;: {prov.lexique}.
+		</p>
+	</details>
+</section>
+
+<!-- 2. Comment le doute s'écrit dans Joconde -------------------------------- -->
+<section id="doute">
+	<h2>Comment le doute s’écrit dans Joconde</h2>
+	<p>Trois choses sont à distinguer&nbsp;: ce que les musées écrivent, ce que ces mots
+		veulent dire, et la manière dont nous les regroupons.</p>
+	<p>
+		<strong>1. Ce que les musées publient.</strong> On appelle
+		<strong>formulation prudente</strong> une notice où le nom d'un artiste est présent,
+		mais accompagné d'une réserve&nbsp;: «&nbsp;attribué à&nbsp;», «&nbsp;atelier
+		de&nbsp;», «&nbsp;école de&nbsp;», «&nbsp;entourage de&nbsp;», «&nbsp;suiveur
+		de&nbsp;», «&nbsp;à la manière de&nbsp;», «&nbsp;dans le genre de&nbsp;», ou un
+		simple «&nbsp;?&nbsp;» après le nom. Ces formules sont celles des musées — le projet
+		n'en invente aucune.
+	</p>
+	<p>
+		<strong>2. Leur sens.</strong> Il est fixé par la
+		<a href="https://www.culture.gouv.fr/thematiques/musees/pour-les-professionnels/conserver-et-gerer-les-collections/informatiser-les-collections-d-un-musee-de-france/organisation-operationnelle-de-l-informatisation-des-collections-d-un-musee-de-france/methode-de-redaction-informatisee-des-notices-d-objets-de-musees" target="_blank" rel="noopener">méthode d'inventaire du ministère</a>
+		(la «&nbsp;méthode Joconde&nbsp;»), référence directe des conventions de saisie.
+		Pour certains termes, il remonte au
+		<a href="https://www.legifrance.gouv.fr/loda/id/LEGITEXT000006063458/" target="_blank" rel="noopener">décret n°&nbsp;81-255 du 3 mars 1981</a>&nbsp;:
+		«&nbsp;attribué à&nbsp;» (art. 4), «&nbsp;atelier de&nbsp;» (art. 5), «&nbsp;école
+		de&nbsp;» (art. 6), et les termes sans garantie comme «&nbsp;d'après&nbsp;» ou
+		«&nbsp;à la manière de&nbsp;» (art. 7). Le simple «&nbsp;?&nbsp;», lui, ne vient
+		<em>pas</em> du décret&nbsp;: c'est une convention de saisie propre à Joconde.
+	</p>
+	<p>
+		<strong>3. Notre regroupement.</strong> Ces formules, nous les rangeons en
+		<strong>huit familles</strong> et <strong>trois territoires</strong> —
+		«&nbsp;Presque lui&nbsp;», «&nbsp;Autour de lui&nbsp;», «&nbsp;Son style, sans
+		lui&nbsp;» —, de la plus proche à la plus lointaine du maître. C'est une
+		<strong>construction éditoriale</strong>, pas une catégorie officielle&nbsp;; son
+		détail est expliqué dans <a href="{base}/echelle">«&nbsp;Comprendre les mentions&nbsp;»</a>.
+	</p>
+	<p>
+		<strong>Comment on les repère.</strong> La détection est lexicale&nbsp;: le
+		qualificatif noté entre parenthèses dans le champ auteur («&nbsp;LE BRUN Charles
+		(attribué)&nbsp;», «&nbsp;(école)&nbsp;», «&nbsp;(?)&nbsp;»). En lisant toute la
+		base, on trouve <strong>{nombre(n.doute_total)}</strong> notices porteuses d'au moins
+		une formulation prudente, soit {pct(n.taux_doute_avec_auteur)}&nbsp;% des notices où
+		un auteur est renseigné. Le repérage a été <strong>vérifié à la main</strong>&nbsp;:
+		un échantillon de 206 notices jugé une à une, le 4 juillet 2026 (vrai / faux /
+		incertain), pour mesurer les fausses détections puis reformuler le lexique.
 	</p>
 </section>
 
-<!-- 2. Construction des données --------------------------------------------- -->
-<section id="donnees">
-	<h2>Construction des données</h2>
-	<p>
-		La détection est <strong>lexicale</strong>&nbsp;: elle s'appuie sur une convention
-		d'écriture des musées, le qualificatif noté entre parenthèses dans le champ auteur
-		(«&nbsp;LE BRUN Charles (attribué)&nbsp;», «&nbsp;(école)&nbsp;», «&nbsp;(?)&nbsp;»).
-		En lisant toute la base, on trouve <strong>{nombre(n.doute_total)}</strong> notices
-		porteuses d'au moins une formulation prudente, soit {pct(n.taux_doute_avec_auteur)}&nbsp;%
-		des notices où un auteur est renseigné.
-	</p>
-	<p>
-		Le repérage a été <strong>vérifié à la main</strong>&nbsp;: un échantillon de 206
-		notices a été jugé une à une, le 4 juillet 2026 (vrai / faux / incertain), ce qui a permis de mesurer
-		les fausses détections, puis de reformuler le lexique. Ce lexique est versionné et
-		public&nbsp;; sa version est indiquée plus bas.
-	</p>
-	<!-- Ancre visée par le lien « Pourquoi ces N artistes ? » de la rubrique
-	     « Explorer les maîtres » (2026-07-20) : le détail du seuil a quitté
-	     l'introduction de la rubrique, il vit ici. -->
-	<p id="les-maitres">
-		Une partie du site se concentre sur <strong>{nombre(nbNoms)} noms</strong> de
-		référence. Le critère est explicite&nbsp;: un artiste connu <em>et</em> au moins
-		dix notices portant une formulation prudente (copies exclues), une fois le nom bien
-		isolé. Ce n'est <strong>pas un palmarès des plus grands</strong>&nbsp;: c'est un
-		seuil, choisi pour avoir assez de matière à montrer. Ces {nombre(nbNoms)} noms
-		réunissent {nombre(douteDansListe)} des formulations prudentes.
-	</p>
-	<p>
-		<strong>Cette liste n'est pas close, et elle se vérifie.</strong> Tous les noms qui
-		atteignent le seuil ont été relevés — ils sont {nombre(nbCandidats)}. Chacun reçoit un
-		état à mesure qu'il est examiné&nbsp;: retenu, écarté avec sa raison, ou
-		<em>encore à examiner</em>. Un nom encore à examiner n'est pas un nom rejeté&nbsp;:
-		c'est un nom dont la vérification n'a pas été faite. Aujourd'hui, {nombre(nbRetenus)}
-		formes d'écriture sont rattachées aux {nombre(nbNoms)} artistes retenus,
-		{nombre(nbEcartes)} sont écartées parce qu'il ne s'agit pas d'une personne
-		— une manufacture, une imprimerie, «&nbsp;anonyme&nbsp;», ou une mention qui ne porte
-		aucun nom d'auteur — et {nombre(nbAInstruire)} restent à examiner. La liste
-		s'agrandira par lots.
-	</p>
-	<p>
-		Rattacher une formule au bon artiste demande de la prudence, car le nom est cherché
-		dans un texte libre. Trois pièges ont été corrigés en chemin&nbsp;: les
-		<strong>fausses correspondances par sous-chaîne</strong> (une œuvre de Serodine ne
-		doit pas être rattachée à Rodin) — réglées en n'acceptant que le mot entier&nbsp;;
-		les mentions de <strong>nationalité</strong> («&nbsp;école allemande&nbsp;») qui ne
-		sont pas un doute sur un artiste et sont écartées&nbsp;; enfin le doute écrit
-		<strong>hors des parenthèses</strong>, qu'il fallait aussi savoir lire. Le piège le plus
-		coûteux était ailleurs&nbsp;: des <strong>homonymes</strong>. Sous «&nbsp;Michel-Ange&nbsp;»,
-		les musées ont aussi rangé Corneille Michel-Ange, peintre lyonnais du XVII<sup>e</sup>
-		siècle&nbsp;; sous «&nbsp;Raphaël&nbsp;», une cinquantaine de personnes qui le portent
-		comme prénom. Chaque artiste est donc séparé nommément de ses homonymes et de sa
-		famille — le fils du Tintoret n'est pas le Tintoret.
-	</p>
-</section>
-
-<!-- 3. Lire les chiffres ----------------------------------------------------- -->
-<section id="lire">
-	<h2>Lire les chiffres</h2>
+<!-- 3. Comment les notices ont-elles été comptées ? ------------------------- -->
+<section id="comptage">
+	<h2>Comment les notices ont-elles été comptées&nbsp;?</h2>
 	<p>
 		<strong>Notices et «&nbsp;œuvres concernées&nbsp;».</strong> L'unité du calcul est la
 		<strong>notice Joconde</strong>. L'interface emploie parfois «&nbsp;œuvre
 		concernée&nbsp;» pour faciliter la lecture, mais une notice peut exceptionnellement
-		décrire un ensemble ou plusieurs éléments. Sur la fiche d'un artiste sont retenus au moins
-		<strong>dix</strong> notices prudentes, une fois écartés les homonymes&nbsp;; le
-		nombre de musées ne compte que ceux ayant publié <strong>au moins une notice
-		prudente</strong>, non l'ensemble des musées où l'artiste apparaît.
+		décrire un ensemble ou plusieurs éléments.
 	</p>
 	<p>
-		<strong>Les formules peuvent se recouvrir.</strong> Une même notice peut porter
-		plusieurs mentions. Les catégories ne sont donc pas les tranches exclusives d'un
-		tout&nbsp;: on ne les additionne pas, et on n'utilise jamais de diagramme en anneau.
-		Chaque chiffre se lit pour lui-même.
+		<strong>Deux façons de compter, à ne pas confondre.</strong> Dans les
+		<strong>comptages nationaux</strong>, une même notice peut porter plusieurs
+		mentions&nbsp;: les familles ne sont donc pas les tranches exclusives d'un tout — on
+		ne les additionne pas, et on n'utilise jamais de diagramme en anneau. Dans les
+		<strong>profils d'artistes</strong>, la règle est plus stricte&nbsp;: <strong>pour un
+		artiste donné, une référence Joconde est comptée une seule fois et rattachée à une
+		seule famille</strong>, selon une priorité documentée (le «&nbsp;?&nbsp;» l'emporte,
+		puis l'ordre des familles). Une même notice peut concerner deux artistes&nbsp;: elle
+		apparaît alors dans deux profils, <strong>sans être comptée deux fois</strong> dans
+		le total national.
 	</p>
 	<p>
 		<strong>Les copies «&nbsp;d'après&nbsp;» sont comptées à part.</strong> Écrire
@@ -169,8 +167,7 @@
 		nom&nbsp;») se rapporte à un <strong>total de référence</strong>&nbsp;: les notices
 		classées comme attribution directe ou comme formulation prudente. Les copies
 		«&nbsp;d'après&nbsp;» et les autres catégories exclues par le pipeline sont comptées
-		séparément et n'entrent pas dans ce dénominateur&nbsp;: c'est pourquoi l'interface
-		parle du «&nbsp;périmètre étudié&nbsp;» et non de l'ensemble absolu des notices.
+		séparément et n'entrent pas dans ce dénominateur.
 	</p>
 	<p>
 		<strong>Un seul musée peut peser lourd.</strong> {nombre(n.monoculture_divulguee.doute)}
@@ -182,9 +179,84 @@
 	</p>
 </section>
 
-<!-- 4. Limites --------------------------------------------------------------- -->
-<section id="limites">
-	<h2>Limites</h2>
+<!-- 4. Comment les artistes ont-ils été identifiés ? ------------------------ -->
+<section id="artistes">
+	<h2>Comment les artistes ont-ils été identifiés&nbsp;?</h2>
+	<!-- Ancre visée par le lien « Pourquoi ces N artistes ? » de « Explorer les
+	     maîtres » : à conserver. -->
+	<p id="les-maitres">
+		Une partie du site se concentre sur <strong>{nombre(nbNoms)} noms</strong> de
+		référence. Le critère est explicite&nbsp;: un artiste connu <em>et</em> au moins dix
+		notices portant une formulation prudente (copies exclues), une fois le nom bien
+		isolé. Ce n'est <strong>pas un palmarès des plus grands</strong>&nbsp;: c'est un
+		seuil, choisi pour avoir assez de matière à montrer. Ces {nombre(nbNoms)} noms
+		réunissent {nombre(douteDansListe)} des formulations prudentes.
+	</p>
+	<p>
+		<strong>Cette liste n'est pas close, et elle se vérifie.</strong> Tous les noms qui
+		atteignent le seuil ont été relevés — ils sont {nombre(nbCandidats)}. Chacun reçoit un
+		état à mesure qu'il est examiné&nbsp;: retenu, écarté avec sa raison, ou
+		<em>encore à examiner</em>. Un nom encore à examiner n'est pas un nom rejeté&nbsp;:
+		c'est un nom dont la vérification n'a pas été faite. Aujourd'hui, {nombre(nbRetenus)}
+		formes d'écriture sont rattachées aux {nombre(nbNoms)} artistes retenus,
+		{nombre(nbEcartes)} sont écartées parce qu'il ne s'agit pas d'une personne — une
+		manufacture, une imprimerie, «&nbsp;anonyme&nbsp;», ou une mention qui ne porte aucun
+		nom d'auteur — et {nombre(nbAInstruire)} restent à examiner. La liste s'agrandira par
+		lots.
+	</p>
+	<p>
+		<strong>Séparer les personnes, pas seulement les mots.</strong> Rattacher une formule
+		au bon artiste demande de la prudence, car le nom est cherché dans un texte libre, et
+		un même nom peut cacher plusieurs personnes. Chaque artiste est défini nommément et
+		<strong>séparé de ses homonymes</strong> — sous «&nbsp;Michel-Ange&nbsp;», les musées
+		ont aussi rangé Corneille Michel-Ange, peintre lyonnais du XVII<sup>e</sup> siècle —
+		et de sa famille&nbsp;: le fils du Tintoret n'est pas le Tintoret. Ses
+		<strong>graphies multiples</strong> sont regroupées, et chaque référence n'est
+		<strong>comptée qu'une fois</strong>. Ces choix sont contrôlés sur des
+		<strong>références réelles</strong> (des cas-témoins versionnés) et protégés par des
+		<strong>tests de non-régression</strong>, pour qu'une correction n'en défasse pas une
+		autre.
+	</p>
+	<details>
+		<summary>Les trois pièges corrigés en chemin</summary>
+		<p>
+			Les <strong>fausses correspondances par sous-chaîne</strong> (une œuvre de Serodine
+			ne doit pas être rattachée à Rodin) — réglées en n'acceptant que le mot entier&nbsp;;
+			les mentions de <strong>nationalité</strong> («&nbsp;école allemande&nbsp;»), qui ne
+			sont pas un doute sur un artiste et sont écartées&nbsp;; enfin le doute écrit
+			<strong>hors des parenthèses</strong>, qu'il fallait aussi savoir lire.
+		</p>
+	</details>
+</section>
+
+<!-- 5. Lire les chiffres et les vues ---------------------------------------- -->
+<section id="lire">
+	<h2>Lire les chiffres et les vues</h2>
+	<p>
+		<strong>Le graphique d'un artiste</strong> place chaque mention à sa
+		<strong>part</strong> (en&nbsp;%) parmi les œuvres concernées, regroupée dans les
+		trois territoires. On y compare la <em>forme</em> du doute, pas des volumes bruts&nbsp;;
+		le détail des familles est dans <a href="{base}/echelle">«&nbsp;Comprendre les mentions&nbsp;»</a>.
+	</p>
+	<p>
+		<strong>Le nombre de musées</strong> d'une fiche ne compte que ceux ayant publié
+		<strong>au moins une notice prudente</strong> pour l'artiste, non l'ensemble des
+		musées où il apparaît.
+	</p>
+	<p>
+		<strong>La carte</strong> montre où le doute se disperse autour d'un seul
+		nom&nbsp;: <strong>un point = un musée détenteur</strong>, jamais une comparaison
+		entre musées.
+	</p>
+	<p>
+		<strong>Les reproductions</strong> sont des illustrations&nbsp;: chacune porte sa
+		source et sa licence (voir plus bas), jamais une preuve d'attribution.
+	</p>
+</section>
+
+<!-- 6. Limites, sources et droits ------------------------------------------- -->
+<section id="sources">
+	<h2>Limites, sources et droits</h2>
 	<p>
 		<strong>Les chiffres ne reflètent que ce qui a été versé dans Joconde.</strong> Les
 		versements sont volontaires et inégaux d'un musée à l'autre. Un musée absent des
@@ -199,17 +271,6 @@
 		aucune œuvre, n'en réattribue aucune, et ne dit rien de la valeur d'une pièce ni de
 		la richesse d'une collection.
 	</p>
-</section>
-
-<!-- 5. Sources et droits ----------------------------------------------------- -->
-<section id="sources">
-	<h2>Sources et droits</h2>
-	<p>
-		<strong>Données.</strong> Jeu «&nbsp;{prov.source}&nbsp;», {prov.editeur}, publié sur
-		data.gouv.fr sous {prov.licence}. Version utilisée&nbsp;: celle du
-		<strong>{prov.version_donnee}</strong> (fichier d'environ {go(prov.taille_octets)}&nbsp;Go,
-		mis à jour {prov.mise_a_jour_source}). Lexique de détection&nbsp;: {prov.lexique}.
-	</p>
 	<p>
 		<strong>Portraits et reproductions.</strong> Les portraits des artistes et, lorsqu'elles
 		existent sous licence libre, les reproductions des œuvres viennent de Wikimedia
@@ -219,16 +280,19 @@
 		l'auteur. Une reproduction n'est retenue que si elle est rattachée <strong>avec
 		certitude</strong> à la notice par son identifiant Joconde. Les photographies des
 		fiches POP elles-mêmes ne sont <strong>pas</strong> reprises&nbsp;: leurs crédits ne
-		portent pas de licence de réutilisation ouverte. Trois artistes n'ont pas de portrait
-		fiable disponible&nbsp;: leur fiche le dit plutôt que d'afficher une image approchante.
-		Chaque œuvre renvoie à sa notice publique sur POP.
+		portent pas de licence de réutilisation ouverte. Chaque œuvre renvoie à sa notice
+		publique sur POP.
 	</p>
-	<p>
-		<strong>Fond de carte.</strong> Les contours des régions viennent de france-geojson
-		(IGN Admin Express 2018), sous Licence Ouverte, stockés localement — aucune tuile en
-		ligne. C'est une illustration&nbsp;: aucun chiffre n'en provient, il ne sert qu'à
-		situer les points.
-	</p>
+
+	<h3>Références</h3>
+	<ul class="refs">
+		<li>Données&nbsp;: <a href="https://www.data.gouv.fr/fr/datasets/collections-des-musees-de-france-base-joconde/" target="_blank" rel="noopener">jeu «&nbsp;{prov.source}&nbsp;»</a>, {prov.editeur}, {prov.licence} — et la nomenclature des champs (fichier joint au jeu).</li>
+		<li>Conventions de saisie&nbsp;: <a href="https://www.culture.gouv.fr/thematiques/musees/pour-les-professionnels/conserver-et-gerer-les-collections/informatiser-les-collections-d-un-musee-de-france/organisation-operationnelle-de-l-informatisation-des-collections-d-un-musee-de-france/methode-de-redaction-informatisee-des-notices-d-objets-de-musees" target="_blank" rel="noopener">méthode d'inventaire du ministère (méthode Joconde)</a>.</li>
+		<li>Certains termes&nbsp;: <a href="https://www.legifrance.gouv.fr/loda/id/LEGITEXT000006063458/" target="_blank" rel="noopener">décret n°&nbsp;81-255 du 3 mars 1981</a> (Légifrance).</li>
+		<li>POP, plateforme ouverte du patrimoine&nbsp;: <a href="https://pop.culture.gouv.fr/conditions-generales-utilisation" target="_blank" rel="noopener">conditions d'utilisation</a> · <a href="https://pop.culture.gouv.fr/aide" target="_blank" rel="noopener">aide</a> · <a href="https://pop.culture.gouv.fr/donnees-ouvertes" target="_blank" rel="noopener">données ouvertes</a>.</li>
+		<li>Reproductions&nbsp;: Wikimedia Commons — <a href="https://commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia" target="_blank" rel="noopener">réutilisation</a> et <a href="https://commons.wikimedia.org/wiki/Commons:Reuse_of_PD-Art_photographs" target="_blank" rel="noopener">photographies d'œuvres du domaine public</a>.</li>
+		<li>Fond de carte&nbsp;: <a href="https://github.com/gregoiredavid/france-geojson" target="_blank" rel="noopener">france-geojson</a> (contours IGN Admin Express, Licence Ouverte), stockés localement — aucune tuile en ligne, aucun chiffre n'en provient.</li>
+	</ul>
 </section>
 	</div>
 </div>
@@ -343,8 +407,60 @@
 		scroll-margin-top: var(--espace-4);
 	}
 
+	.contenu h3 {
+		font-family: var(--police-ui);
+		font-size: var(--taille-s);
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		color: var(--couleur-encre-douce);
+		margin: var(--espace-5) 0 0;
+	}
+
 	section p {
 		line-height: 1.7;
+	}
+
+	/* Liens de contenu : cobalt discret, jamais le poids d'un bouton. */
+	.contenu a {
+		color: var(--accent-cobalt);
+		text-decoration: none;
+		border-bottom: 1px solid transparent;
+	}
+
+	.contenu a:hover,
+	.contenu a:focus-visible {
+		border-bottom-color: var(--accent-cobalt);
+	}
+
+	/* Détails repliables : sobres, registre UI. */
+	details {
+		margin-top: var(--espace-3);
+	}
+
+	details summary {
+		cursor: pointer;
+		font-family: var(--police-ui);
+		font-size: var(--taille-s);
+		color: var(--couleur-encre-douce);
+	}
+
+	details[open] summary {
+		margin-bottom: var(--espace-2);
+	}
+
+	/* Références : liste serrée, petit corps, filet à gauche. */
+	.refs {
+		list-style: none;
+		margin: var(--espace-3) 0 0;
+		padding: 0;
+		font-size: var(--taille-s);
+		line-height: 1.6;
+	}
+
+	.refs li {
+		margin-top: var(--espace-2);
+		padding-left: var(--espace-3);
+		border-left: var(--filet);
 	}
 
 	@media (max-width: 760px) {
