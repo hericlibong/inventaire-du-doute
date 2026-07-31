@@ -2,6 +2,42 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-31 — Page « Méthode », palier 4 : quatre visuels, et pas un de plus
+
+La page méthode reçoit **quatre visuels**, chacun au service d'**une seule règle**, placés dans
+la section qui l'énonce. Rien de décoratif, aucun ajout de graphique ni de carte : ces vues
+existent ailleurs dans l'application, les redonner ici transformerait la page en visite guidée.
+
+**Trois schémas en HTML/CSS, une capture d'écran.** Les schémas (conventions d'écriture,
+homonymes, règle de comptage) sont du HTML mis en forme, pas des images : ils suivent la charte,
+restent nets au zoom, se lisent au clavier et par un lecteur d'écran, et se corrigent en une
+ligne quand un chiffre change. Une image aurait figé un texte hors de portée du correcteur.
+La capture d'écran n'est employée que pour ce qu'elle seule peut montrer : **l'interface réelle**,
+pour la règle des crédits d'image (`web/static/methode/vignette-credit.png`, datée dans sa
+légende).
+
+**Chaque visuel repose sur un cas réel de la base**, jamais sur un exemple fabriqué :
+
+1. *Comment le doute s'écrit* — trois champs « Auteur » reproduits tels quels :
+   `CLOUET François (attribué)`, `VOUET Simon (?)`, `OUDRY Jean-Baptiste (attribué, ?)`.
+2. *Comment on compte* — la notice `M0332004170` (Besançon), qui nomme deux fois Simon Vouet
+   (« (?) » et « (atelier, dessinateur) ») : c'est le cas qui a servi à écrire la règle de
+   priorité dans `src/build_artistes.py`.
+3. *Identifier les artistes* — les cinq formes relevées sous le nom de Michel-Ange, dont quatre
+   désignent d'autres personnes (24 notices prudentes concernées, vérifiées une par une —
+   `docs/donnees.md`).
+4. *Droits des images* — une œuvre de l'onglet « Œuvres » avec son crédit, sa licence CC BY-SA
+   et son lien vers Wikimedia Commons.
+
+**Vocabulaire.** Les schémas disent « mention », jamais le mot de code interne : la couche de
+libellé public s'applique aussi aux figures. La couleur (pastilles, réserve en rouge) reprend
+les pigments stables du projet et reste un **renfort** — chaque distinction est aussi écrite en
+toutes lettres (« retenue », « Michel-Ange lui-même »), pour ne pas dépendre de la vue des
+couleurs.
+
+**Correctif au passage** : dans le crédit d'image de l'onglet « Œuvres », l'espace après le nom
+de l'auteur du fichier était mangé au rendu (« Clouet ·CC BY-SA 3.0 ») — insécable ajouté.
+
 ## 2026-07-29 — Onglet « Œuvres » : les reproductions d'abord
 
 Dans l'onglet « Œuvres », les œuvres **avec reproduction** sont désormais affichées **en

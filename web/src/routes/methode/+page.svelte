@@ -6,6 +6,11 @@
 	// au même rang que le récit (CLAUDE.md). Doc technique détaillée : docs/methode-et-limites.md.
 	import { nombre } from '$lib/joconde.js';
 	import { base } from '$app/paths';
+	// Quatre visuels (palier 4) : trois schémas HTML/CSS qui expliquent chacun UNE
+	// règle sur un cas réel, et une capture de l'interface pour les crédits d'image.
+	import SchemaChampAuteur from '$lib/SchemaChampAuteur.svelte';
+	import SchemaComptageUnique from '$lib/SchemaComptageUnique.svelte';
+	import SchemaHomonymes from '$lib/SchemaHomonymes.svelte';
 
 	let { data } = $props();
 	const n = data.niveaux;
@@ -102,6 +107,9 @@
 		simple «&nbsp;?&nbsp;» après le nom. Ces formules sont celles des musées — le projet
 		n'en invente aucune.
 	</p>
+
+	<SchemaChampAuteur />
+
 	<p>
 		<strong>2. Leur sens.</strong> Il est fixé par la
 		<a href="https://www.culture.gouv.fr/thematiques/musees/pour-les-professionnels/conserver-et-gerer-les-collections/informatiser-les-collections-d-un-musee-de-france/organisation-operationnelle-de-l-informatisation-des-collections-d-un-musee-de-france/methode-de-redaction-informatisee-des-notices-d-objets-de-musees" target="_blank" rel="noopener">méthode d'inventaire du ministère</a>
@@ -154,6 +162,9 @@
 		apparaît alors dans deux profils, <strong>sans être comptée deux fois</strong> dans
 		le total national.
 	</p>
+
+	<SchemaComptageUnique />
+
 	<p>
 		<strong>Les copies «&nbsp;d'après&nbsp;» sont comptées à part.</strong> Écrire
 		«&nbsp;d'après Rembrandt&nbsp;», c'est le plus souvent désigner une copie assumée
@@ -217,6 +228,9 @@
 		<strong>tests de non-régression</strong>, pour qu'une correction n'en défasse pas une
 		autre.
 	</p>
+
+	<SchemaHomonymes />
+
 	<details>
 		<summary>Les trois pièges corrigés en chemin</summary>
 		<p>
@@ -283,6 +297,22 @@
 		portent pas de licence de réutilisation ouverte. Chaque œuvre renvoie à sa notice
 		publique sur POP.
 	</p>
+
+	<!-- Visuel nº 4 (palier 4) : capture RÉELLE de l'interface, recadrée sur une
+	     seule œuvre — la règle des crédits telle qu'elle s'applique, pas un schéma. -->
+	<figure class="capture">
+		<img
+			src="{base}/methode/vignette-credit.png"
+			width="848"
+			height="576"
+			alt="Une œuvre dans l’application : la reproduction à gauche, avec sous l’image le crédit « After François Clouet », la licence CC BY-SA 3.0 et le lien vers Wikimedia Commons ; à droite la mention du musée, le titre, le lieu de conservation et la formule exacte de la notice."
+		/>
+		<figcaption>
+			Une œuvre telle qu’elle apparaît dans l’application&nbsp;: sous la reproduction, le
+			crédit, la licence et le lien vers le fichier d’origine&nbsp;; à côté, la formule
+			exacte publiée par le musée. Capture du 31 juillet 2026.
+		</figcaption>
+	</figure>
 
 	<h3>Références</h3>
 	<ul class="refs">
@@ -446,6 +476,33 @@
 
 	details[open] summary {
 		margin-bottom: var(--espace-2);
+	}
+
+	/* Capture d'interface : bordée comme les schémas, jamais décorative. */
+	.capture {
+		margin: var(--espace-5) 0;
+		padding: var(--espace-4);
+		background: var(--surface-carte);
+		border: var(--filet);
+		border-radius: var(--rayon-m);
+	}
+
+	.capture img {
+		display: block;
+		width: 100%;
+		height: auto;
+		border: var(--filet-clair);
+		border-radius: var(--rayon-s);
+	}
+
+	.capture figcaption {
+		margin-top: var(--espace-3);
+		padding-top: var(--espace-3);
+		border-top: var(--filet-clair);
+		font-family: var(--police-ui);
+		font-size: var(--taille-xs);
+		line-height: 1.5;
+		color: var(--couleur-encre-douce);
 	}
 
 	/* Références : liste serrée, petit corps, filet à gauche. */
