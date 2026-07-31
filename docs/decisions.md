@@ -2,6 +2,95 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-07-31 (ter) — La provenance publiée est dérivée du fichier, plus recopiée
+
+`build_exports.py::provenance()` codait en dur la taille, l'empreinte et la date de version du
+CSV — des valeurs relevées à la main le 2026-07-05. Elles étaient exactes, mais rien ne le
+garantissait : le jour où le CSV change, le site aurait continué d'afficher l'ancienne date sous
+des chiffres nouveaux. Or cette date est publique (« les chiffres se rapportent à la version
+du… ») : elle doit être une mesure, pas une déclaration.
+
+**Ce qui est mesuré désormais** : la taille vient de `CHEMIN_CSV.stat()`, l'empreinte est un MD5
+calculé sur le fichier réellement lu (~9 s pour 1,1 Go), et la version du lexique vient de
+`markers.VERSION` — une seule source, pour qu'un lexique v3 ne laisse pas « v2 » publié en ligne.
+
+**La date de version vient de la source.** `download.py` écrit maintenant un relevé à côté du
+fichier téléchargé (`joconde.csv.releve.json` : `Last-Modified`, MD5, taille, date de
+téléchargement). Ce relevé voyage avec la donnée ; `provenance()` le lit en priorité.
+
+**Le pipeline refuse de dater ce qu'il ne peut pas identifier.** Sans relevé (cas des CSV
+téléchargés avant son introduction, comme celui du dépôt), on retombe sur la photo de référence
+documentée — mais seulement si l'empreinte concorde. Sinon, arrêt avec un message qui dit quoi
+faire. Publier une date invérifiable serait pire que ne rien publier.
+
+Détail utile trouvé en chemin : **l'ETag de data.gouv est le MD5 du contenu** (vérifié), d'où la
+possibilité de tout contrôler hors ligne — voir `docs/donnees.md`, T1.
+
+**Contrôle de non-régression** : exports régénérés en entier ; `niveaux.json`, `musees.json` et
+`territoires.json` sont identiques à l'octet, seul `date_generation_exports` change — il était
+resté au 2026-07-05 alors que les exports avaient été refaits depuis.
+
+## 2026-07-31 (bis) — Page « Méthode », palier 5 : se repérer dans une page longue
+
+La page fait six sections : on ajoute de quoi savoir **où l'on est** et **revenir en haut**,
+sans que la page prenne jamais la main sur le défilement du lecteur.
+
+**Le rail de sommaire marque la section en cours.** Règle énonçable plutôt qu'un réglage
+opaque : la section active est *la dernière dont le haut est passé au-dessus du quart supérieur
+de la fenêtre* ; au pied de page, c'est la dernière section, qui sans cela ne pourrait jamais
+devenir active. Mesure directe à chaque image d'animation (six éléments) plutôt qu'un
+`IntersectionObserver` : moins de magie, cas limites traités à la main. Le repère est doublé
+par `aria-current` — jamais la seule couleur.
+
+**L'ancre `#les-maitres` passe du paragraphe au titre de la section.** C'est la cible du lien
+« Pourquoi ces N artistes ? » venu d'« Explorer les maîtres » : le visiteur arrivait *sous* le
+titre, donc sans savoir à quelle question la réponse répondait. Un `scroll-margin-top` évite
+en plus que la cible se colle au bord haut de la fenêtre.
+
+**Défilement doux, sauf avis contraire du système** (`prefers-reduced-motion: reduce`) : le
+mouvement est un confort, pas une information. Le clic dans le sommaire déplace aussi le focus
+clavier sur la section atteinte — sans dessiner de cadre à la souris.
+
+**Retour en haut** : pastille discrète, absente tant qu'on n'a pas défilé d'un écran, réduite à
+sa flèche sur petit écran (le libellé reste le nom accessible du bouton). Sommaire et bouton
+sont retirés à l'impression.
+
+## 2026-07-31 — Page « Méthode », palier 4 : quatre visuels, et pas un de plus
+
+La page méthode reçoit **quatre visuels**, chacun au service d'**une seule règle**, placés dans
+la section qui l'énonce. Rien de décoratif, aucun ajout de graphique ni de carte : ces vues
+existent ailleurs dans l'application, les redonner ici transformerait la page en visite guidée.
+
+**Trois schémas en HTML/CSS, une capture d'écran.** Les schémas (conventions d'écriture,
+homonymes, règle de comptage) sont du HTML mis en forme, pas des images : ils suivent la charte,
+restent nets au zoom, se lisent au clavier et par un lecteur d'écran, et se corrigent en une
+ligne quand un chiffre change. Une image aurait figé un texte hors de portée du correcteur.
+La capture d'écran n'est employée que pour ce qu'elle seule peut montrer : **l'interface réelle**,
+pour la règle des crédits d'image (`web/static/methode/vignette-credit.png`, datée dans sa
+légende).
+
+**Chaque visuel repose sur un cas réel de la base**, jamais sur un exemple fabriqué :
+
+1. *Comment le doute s'écrit* — trois champs « Auteur » reproduits tels quels :
+   `CLOUET François (attribué)`, `VOUET Simon (?)`, `OUDRY Jean-Baptiste (attribué, ?)`.
+2. *Comment on compte* — la notice `M0332004170` (Besançon), qui nomme deux fois Simon Vouet
+   (« (?) » et « (atelier, dessinateur) ») : c'est le cas qui a servi à écrire la règle de
+   priorité dans `src/build_artistes.py`.
+3. *Identifier les artistes* — les cinq formes relevées sous le nom de Michel-Ange, dont quatre
+   désignent d'autres personnes (24 notices prudentes concernées, vérifiées une par une —
+   `docs/donnees.md`).
+4. *Droits des images* — une œuvre de l'onglet « Œuvres » avec son crédit, sa licence CC BY-SA
+   et son lien vers Wikimedia Commons.
+
+**Vocabulaire.** Les schémas disent « mention », jamais le mot de code interne : la couche de
+libellé public s'applique aussi aux figures. La couleur (pastilles, réserve en rouge) reprend
+les pigments stables du projet et reste un **renfort** — chaque distinction est aussi écrite en
+toutes lettres (« retenue », « Michel-Ange lui-même »), pour ne pas dépendre de la vue des
+couleurs.
+
+**Correctif au passage** : dans le crédit d'image de l'onglet « Œuvres », l'espace après le nom
+de l'auteur du fichier était mangé au rendu (« Clouet ·CC BY-SA 3.0 ») — insécable ajouté.
+
 ## 2026-07-29 — Onglet « Œuvres » : les reproductions d'abord
 
 Dans l'onglet « Œuvres », les œuvres **avec reproduction** sont désormais affichées **en

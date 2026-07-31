@@ -760,6 +760,15 @@ plateforme POP absents du CSV : crédits photo, copyright, historique…).
 Les champs multivalués utilisent `;` comme séparateur interne (ex. `Domaine` :
 `archéologie;gallo-romain;numismatique`).
 
+**Complément du 2026-07-31 : l'ETag servi par data.gouv est le MD5 du contenu.**
+Vérifié — `md5sum data/raw/joconde.csv` redonne exactement
+`4cc723bb0c3aebdecd2245b7644fb00a`. Conséquence pratique : on peut savoir **hors
+ligne**, sans requête au serveur, si le CSV en main est bien la photo de
+référence. C'est ce qui permet à `build_exports.py` de dériver la provenance
+publiée du fichier réellement lu au lieu de la recopier à la main, et de refuser
+de dater des chiffres issus d'une base qu'il n'identifie pas (voir
+`docs/decisions.md`, 2026-07-31 ter).
+
 ### Champs au cœur du projet (détection de l'incertitude)
 
 | Colonne CSV | Étiquette Joconde | Champ API | Définition (nomenclature) |

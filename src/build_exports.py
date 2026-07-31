@@ -21,16 +21,27 @@ Règles de comptage (docs/decisions.md) :
 Usage : uv run python src/build_exports.py  (~3 min)
 """
 
+import hashlib
 import json
 from datetime import datetime, timezone
+from pathlib import Path
 
 import pandas as pd
 
 import markers
-from config import CHEMIN_CSV, CHEMIN_NOMENCLATURE, DOSSIER_EXPORTS, URL_CSV
+from config import CHEMIN_CSV, CHEMIN_NOMENCLATURE, DOSSIER_EXPORTS, URL_CSV, chemin_releve
 
 DOSSIER_WEB = DOSSIER_EXPORTS / "web"
 TAILLE_MORCEAU = 200_000
+
+# Photo de référence du projet : le CSV du mercredi 1er juillet 2026, confirmé
+# le 2026-07-05 par les en-têtes HTTP du serveur (docs/donnees.md, T1). Sert de
+# repli pour les CSV téléchargés avant que download.py n'écrive son relevé ; le
+# MD5 permet de vérifier hors ligne qu'il s'agit bien de ce fichier.
+CSV_REFERENCE = {
+    "version_donnee": "2026-07-01",
+    "empreinte_md5": "4cc723bb0c3aebdecd2245b7644fb00a",
+}
 
 # Échelle du doute (docs/typologie.md), du plus léger au plus détaché.
 NIVEAUX = {
@@ -76,21 +87,67 @@ def _coord(valeur: object):
         return None
 
 
+def lire_releve_source() -> dict | None:
+    """Relevé écrit par `download.py` à côté du CSV, s'il existe."""
+    chemin = chemin_releve(CHEMIN_CSV)
+    if not chemin.exists():
+        return None
+    return json.loads(chemin.read_text(encoding="utf-8"))
+
+
+def empreinte_md5(chemin: Path, bloc: int = 1 << 20) -> str:
+    """Empreinte MD5 du fichier, lue par blocs (le CSV pèse 1,1 Go).
+
+    data.gouv sert l'ETag sous la forme du MD5 du contenu : calculer l'empreinte
+    localement suffit donc à savoir, hors ligne, quelle version de la base on a
+    sous la main."""
+    somme = hashlib.md5()
+    with open(chemin, "rb") as fichier:
+        for morceau in iter(lambda: fichier.read(bloc), b""):
+            somme.update(morceau)
+    return somme.hexdigest()
+
+
 def provenance() -> dict:
-    """Métadonnées de version : la photo datée voyage avec les données."""
-    # Valeurs confirmées le 2026-07-05 via les en-têtes HTTP du serveur
-    # (voir docs/donnees.md). Figées ici pour ne pas dépendre du réseau.
+    """Métadonnées de version : la photo datée voyage avec les données.
+
+    Rien n'est recopié à la main. La taille et l'empreinte viennent du CSV
+    réellement lu ; la date de version vient du fichier voisin écrit par
+    `download.py` (en-têtes HTTP relevés à la source). À défaut de ce fichier —
+    cas des CSV téléchargés avant son introduction — on retombe sur la photo de
+    référence documentée, mais SEULEMENT si l'empreinte concorde : le pipeline
+    refuse de dater une base qu'il ne peut pas identifier."""
+    taille = CHEMIN_CSV.stat().st_size
+    empreinte = empreinte_md5(CHEMIN_CSV)
+    releve = lire_releve_source()
+
+    if releve and releve.get("empreinte_md5") == empreinte:
+        version = releve["version_donnee"]
+    elif empreinte == CSV_REFERENCE["empreinte_md5"]:
+        version = CSV_REFERENCE["version_donnee"]
+    else:
+        raise SystemExit(
+            f"CSV inconnu : empreinte {empreinte} ({taille} octets).\n"
+            f"Ce n'est pas la photo de référence ({CSV_REFERENCE['version_donnee']}, "
+            f"{CSV_REFERENCE['empreinte_md5']}) et aucun relevé de téléchargement ne "
+            f"l'accompagne — le pipeline ne peut donc pas dire de quelle version de la "
+            f"base viennent ses chiffres, alors que le site l'affiche.\n"
+            f"Relancer `uv run python src/download.py` sur un dossier data/raw vidé "
+            f"(le relevé sera écrit à côté du fichier), ou mettre à jour CSV_REFERENCE "
+            f"dans ce script après avoir relevé les en-têtes HTTP du serveur."
+        )
+
     return {
         "source": "Collections des musées de France : base Joconde",
         "editeur": "Ministère de la Culture",
         "licence": "Licence Ouverte 2.0",
         "url_source": URL_CSV,
-        "version_donnee": "2026-07-01",  # Last-Modified du CSV
-        "empreinte_etag": "4cc723bb0c3aebdecd2245b7644fb00a",
-        "taille_octets": 1191002260,
+        "version_donnee": version,  # Last-Modified du CSV, côté serveur
+        "empreinte_etag": empreinte,
+        "taille_octets": taille,
         "mise_a_jour_source": "chaque mercredi 06:00",
         "date_generation_exports": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-        "lexique": "markers.py v2 (2026-07-05)",
+        "lexique": f"markers.py {markers.VERSION}",
     }
 
 

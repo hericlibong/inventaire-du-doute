@@ -115,6 +115,11 @@ def _atelier_nom(valeur: object) -> bool:
     return any(_RE_NOM_ATELIER.match(s.strip()) for s in valeur.split(";"))
 
 
+# Version du lexique, affichée sur la page « Méthode » du site : une seule
+# source, ici, pour qu'un lexique v3 ne laisse pas « v2 » publié en ligne.
+VERSION = "v2 (2026-07-05)"
+
+
 @dataclass(frozen=True)
 class Famille:
     code: str

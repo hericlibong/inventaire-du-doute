@@ -184,7 +184,7 @@
 								</a>
 								<figcaption class="credit">
 									{#if o.image.licence.startsWith('CC BY')}
-										{#if o.image.creator}<span class="credit-auteur" title={o.image.creator}>{o.image.creator}</span> · {/if}<a href={o.image.licence_url || o.image.source} target="_blank" rel="noopener">{o.image.licence}</a> · <a href={o.image.source} target="_blank" rel="noopener">Wikimedia&nbsp;Commons</a>
+										{#if o.image.creator}<span class="credit-auteur" title={o.image.creator}>{o.image.creator}</span> ·&nbsp;{/if}<a href={o.image.licence_url || o.image.source} target="_blank" rel="noopener">{o.image.licence}</a> · <a href={o.image.source} target="_blank" rel="noopener">Wikimedia&nbsp;Commons</a>
 									{:else}
 										{o.image.licence === 'CC0' ? 'CC0' : 'Domaine public'} · source <a href={o.image.source} target="_blank" rel="noopener">Wikimedia&nbsp;Commons</a>
 									{/if}

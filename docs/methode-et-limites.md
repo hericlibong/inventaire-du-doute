@@ -1,25 +1,29 @@
-# Méthode et limites
+# Méthode et limites — notes techniques
 
-Embryon de la future page publique. Cette page sera publiée au même rang que le
-récit : les limites du projet sont affichées, pas cachées.
+**La référence publique, c'est la page « Méthode » du site** (route `/methode`,
+`web/src/routes/methode/+page.svelte`). Elle dit ce que le projet lit, ce qu'il
+compte et ce qu'il ne prétend pas savoir, avec ses chiffres tirés des exports.
+Elle fait foi.
 
-## Ce que mesurent les chiffres — et ce qu'ils ne mesurent pas
+Ce fichier ne la recopie pas : il consigne ce qui n'a pas sa place sur une page
+publique — protocoles, quotas, règles de pipeline, chiffres de contrôle. Le reste
+de `docs/` se répartit ainsi :
 
-- **Les chiffres ne reflètent que ce qui a été versé dans Joconde.** Les versements
-  sont volontaires et inégaux selon les musées : un musée absent des résultats n'est
-  pas un musée sans incertitudes, c'est peut-être un musée qui n'a pas (encore)
-  versé ses notices. Aucune comparaison entre musées sur des comptages bruts.
-- **Le projet lit des notices, pas des œuvres.** Il restitue ce que les musées ont
-  écrit dans leur inventaire public. Il n'authentifie rien et n'émet aucun avis
-  d'attribution.
-- **La détection est lexicale.** Elle repère des formules écrites, avec un taux de
-  faux positifs mesuré sur un échantillon vérifié à la main (voir phase 1). Le
-  lexique de détection est versionné et public.
+| Où | Quoi |
+|---|---|
+| `/methode` (site) | ce que le projet affirme publiquement, à jour |
+| `docs/methode-et-limites.md` (ici) | le détail technique qui complète cette page |
+| `docs/donnees.md` | constats mesurés sur les données, datés |
+| `docs/decisions.md` | choix et arbitrages, datés et motivés |
+| `docs/journal.md` | récit au fil de l'eau |
 
-## Méthode de vérification du détecteur (phase 1, T4-T5)
+Les fichiers datés ne sont **jamais réécrits** : ce sont des mesures à une date,
+pas des descriptions de l'état courant.
 
-La détection est vérifiée sur un échantillon de 206 notices jugées à la main
-par un humain, selon le protocole suivant :
+## Protocole de vérification du détecteur (206 notices, 2026-07-04)
+
+La détection est lexicale. Sa qualité a été mesurée sur un échantillon de
+206 notices jugées une à une par un humain, selon ce protocole :
 
 - **Tirage stratifié par famille de marqueur**, reproductible (graine aléatoire
   fixée à 42, code : `src/build_sample.py`). Les familles rares sont
@@ -36,11 +40,10 @@ par un humain, selon le protocole suivant :
   les **valeurs brutes complètes** des champs concernés (non tronquées), et le
   lien vers la notice publique sur POP. Trois verdicts possibles :
   vrai / faux / incertain, avec commentaire libre.
-- **Pondération obligatoire au bilan (T5)** : l'échantillon étant stratifié,
-  le taux de faux positifs global ne sera PAS la moyenne brute des 206 lignes.
-  Il sera calculé par famille, puis pondéré par le poids réel de chaque famille
-  dans la base (sinon les 4 « présumé » pèseraient autant que les
-  18 008 « attribué à »).
+- **Pondération obligatoire au bilan** : l'échantillon étant stratifié, le taux
+  de faux positifs global n'est pas la moyenne brute des 206 lignes. Il est
+  calculé par famille, puis pondéré par le poids réel de chaque famille dans la
+  base (sinon les 4 « présumé » pèseraient autant que les 18 008 « attribué à »).
 - **Verdicts « incertain » exclus du calcul des taux** (2 cas sur 206), mais
   conservés et documentés.
 - **Résultat du premier cycle (2026-07-04)** : doute 17,0 % de faux positifs
@@ -51,89 +54,86 @@ par un humain, selon le protocole suivant :
   notice — pas s'il apparaît dans une biographie, un nom propre ou à propos
   d'une autre œuvre.
 
-## Les œuvres montrées en exemple (vitrine « Œuvres », 2026-07-11)
+Le lexique issu de ce cycle est versionné dans `src/markers.py` ; sa version
+(`markers.VERSION`) est publiée avec les exports.
 
-Sur chaque fiche de maître, l'onglet « Œuvres » montre quelques cas concrets.
-Ces exemples sont **pris automatiquement dans la base, pas choisis à la main** :
-pour chaque forme de doute présente autour d'un nom, le pipeline retient la
-**première œuvre rencontrée** dans le fichier de référence (deux pour la forme
-la plus fréquente), plus une copie « d'après ». Ni tri, ni sélection éditoriale,
-ni recherche de la « meilleure » pièce : aucun risque de mise en scène.
+## Ce que montre l'onglet « Œuvres » d'une fiche
 
-Conséquences assumées :
-- l'échantillon n'est **ni représentatif ni exhaustif** (jusqu'à 9 œuvres quand
-  un maître peut en compter des centaines) — c'est une illustration, jamais un
-  comptage ;
-- la citation affichée entre guillemets est le **contenu exact du champ auteur**
-  de la fiche Joconde (verbatim, capitales et abréviations comprises) ;
-- chaque exemple renvoie à sa **fiche publique sur POP** (plateforme ouverte du
-  patrimoine) ; cette fiche vit sa vie indépendamment de notre version de
-  référence du fichier et peut avoir été mise à jour depuis.
+L'onglet montre **toutes les œuvres concernées** par le maître — pas une
+sélection —, filtrables par mention et paginées. Rien n'est choisi à la main :
+ni tri éditorial, ni recherche de la « meilleure » pièce.
 
-> **Mise à jour (2026-07-28).** L'onglet « Œuvres » ne montre plus quelques
-> exemples mais la **totalité des œuvres concernées** par le maître, filtrables
-> par mention et paginées. Le verbatim et le lien POP restent la matière ; les
-> exemples automatiques décrits ci-dessus ne sont plus la règle d'affichage.
+- La citation entre guillemets est le **contenu exact du champ auteur** de la
+  notice (verbatim, capitales et abréviations comprises).
+- Chaque œuvre renvoie à sa **fiche publique sur POP**, qui vit sa vie
+  indépendamment de notre version de référence et peut avoir changé depuis.
+- L'ordre place en premier les œuvres qui ont une reproduction, puis suit
+  l'ordre public des mentions (`ORDRE_FAMILLES`), puis l'ordre de rencontre.
+  C'est un ordre d'affichage, jamais une hiérarchie de doute
+  (decisions.md, 2026-07-29).
 
-## Les reproductions d'œuvres (Wikimedia Commons, 2026-07-29)
+## Les reproductions d'œuvres (Wikimedia Commons)
 
-Quand c'est possible, l'onglet « Œuvres » montre une **reproduction** de l'œuvre. On
-n'en affiche une que si sa réutilisation est **explicitement permise**, et si elle est
-rattachée **avec certitude** à la notice.
+Une reproduction n'est affichée que si sa réutilisation est **explicitement
+permise** et si elle est rattachée **avec certitude** à la notice.
 
-- **Pourquoi pas les images de POP ?** On a vérifié les crédits photographiques des
-  3 668 notices sur POP : **aucune** n'est sous licence ouverte (l'essentiel est de la
-  RMN, « utilisation soumise à autorisation »). On ne peut donc pas réutiliser ces
-  photos.
-- **D'où viennent les reproductions montrées ?** De **Wikimedia Commons**, en ne
+- **Pourquoi pas les images de POP ?** Les crédits photographiques des
+  3 668 notices ont été vérifiés sur POP : **aucune** n'est sous licence ouverte
+  (l'essentiel est de la RMN, « utilisation soumise à autorisation »).
+- **D'où viennent celles qui sont montrées ?** De **Wikimedia Commons**, en ne
   retenant que les fichiers sous **domaine public, CC0, CC BY ou CC BY-SA**. Le
-  rattachement à la notice se fait par l'**identifiant Joconde** (via Wikidata), jamais
-  par une simple ressemblance de titre ou de musée. **184 œuvres** sur les 3 668 en ont
-  une à ce jour.
-- **C'est une illustration, jamais une donnée** ni un comptage. L'image est téléchargée
-  et servie localement (pas de lien direct vers un serveur externe), montrée en petit,
-  et **cliquable vers sa page Wikimedia Commons**, où figurent la licence et le crédit
-  exacts — rappelés sous l'image.
-- La reproduction montre l'objet que **décrit la notice** ; elle ne dit rien de plus sur
-  son auteur — **le projet n'attribue toujours rien**.
-- Les œuvres sans reproduction réutilisable connue gardent un **emplacement neutre** :
-  jamais d'image inventée.
+  rattachement se fait par l'**identifiant Joconde** (via Wikidata), jamais par
+  une ressemblance de titre ou de musée. **184 œuvres** sur les 3 668 en ont une
+  à ce jour (bilan : `data/exports/images_bilan.json`).
+- L'appariement par **numéro d'inventaire** a été tenté puis écarté : recoupé
+  avec les dimensions relevées sur Wikidata, il n'a produit aucune
+  correspondance assez solide — mais il a évité d'afficher 162 fausses
+  reproductions (journal.md, 2026-07-29).
+- **C'est une illustration, jamais une donnée** ni un comptage. L'image est
+  téléchargée et servie localement (pas de lien vers un serveur externe), et
+  cliquable vers sa page Commons, où figurent licence et crédit — rappelés sous
+  l'image.
+- Les œuvres sans reproduction réutilisable connue gardent un **emplacement
+  neutre** : jamais d'image inventée.
 
-## La carte par maître : ce qu'elle montre (2026-07-12)
+## La carte par maître : ce qu'elle montre
 
-Chaque fiche de maître peut montrer **où** sont conservées les œuvres dont
-l'attribution à ce maître est formulée avec prudence. Sur cette carte :
-
-- **un point = un musée détenteur**, pas une œuvre. **Tous les points ont la même
+- **Un point = un musée détenteur**, pas une œuvre. **Tous les points ont la même
   taille** : la carte montre *où* les œuvres concernées sont conservées, pas
-  *combien* par lieu. Le nombre exact, et sous quelles formules, se lit au survol
-  du point (et l'onglet « graphique » de la fiche donne la répartition d'ensemble).
+  *combien* par lieu. Le nombre exact, et sous quelles formules, se lit au survol.
   Une taille variable a été testée puis écartée : l'échelle aurait été propre à
   chaque maître (un « gros point » n'aurait pas voulu dire la même chose d'une
-  fiche à l'autre) et aurait gonflé de tout petits nombres ;
-- la carte montre une **dispersion**, pas un palmarès : elle ne compare pas les
+  fiche à l'autre) et aurait gonflé de tout petits nombres.
+- La carte montre une **dispersion**, pas un palmarès : elle ne compare pas les
   musées entre eux et ne dit rien de l'importance d'une collection. Le doute est
-  souvent concentré dans un musée — c'est un fait de versement dans Joconde, pas un
-  jugement patrimonial ;
-- les points sont **localisés par leur musée** (coordonnées publiées dans
+  souvent concentré dans un musée — c'est un fait de versement dans Joconde, pas
+  un jugement patrimonial.
+- Les points sont **localisés par leur musée** (coordonnées publiées dans
   Joconde), jamais par l'œuvre elle-même.
 
-**Le fond de carte est une source secondaire d'illustration.** Ce sont les
-contours des régions françaises (IGN Admin Express 2018, via le projet
-france-geojson, Licence Ouverte), stockés localement — aucune tuile en ligne.
-**Aucun chiffre ne vient du fond** ; il ne sert qu'à situer les points.
+**Le fond de carte est une source secondaire d'illustration.** Contours des
+régions françaises (IGN Admin Express 2018, via france-geojson, Licence Ouverte),
+stockés localement — aucune tuile en ligne. **Aucun chiffre n'en vient** ; il ne
+sert qu'à situer les points.
 
-**Outre-mer.** Ce premier palier n'affiche que la France métropolitaine. Quand un
-maître a une œuvre douteuse conservée outre-mer, elle **reste comptée et présente
-dans les totaux**, mais n'apparaît pas sur le fond métropolitain : une mention le
-signale (par exemple « Hors cadre métropolitain : 1 œuvre conservée à
-Saint-Denis de La Réunion »). Un point hors carte n'est jamais un point exclu.
+**Outre-mer.** Le fond n'affiche que la France métropolitaine. Une œuvre
+conservée outre-mer **reste comptée et présente dans les totaux**, mais
+n'apparaît pas sur le fond : une mention le signale (« Hors cadre métropolitain :
+1 œuvre conservée à Saint-Denis de La Réunion »). Un point hors carte n'est
+jamais un point exclu.
 
-## Source
+## La source et sa version
 
-Jeu de données « Collections des musées de France : base Joconde »,
-ministère de la Culture, publié sur data.gouv.fr sous Licence Ouverte 2.0.
-Version de référence utilisée : à préciser lors du téléchargement (T1).
+Jeu de données « Collections des musées de France : base Joconde », ministère de
+la Culture, publié sur data.gouv.fr sous **Licence Ouverte 2.0**.
 
-*(À enrichir au fil du projet : périmètre retenu, taux de faux positifs mesuré,
-choix de classification des formules…)*
+Version de référence : le CSV du **mercredi 1ᵉʳ juillet 2026**
+(1 191 002 260 octets, MD5 `4cc723bb0c3aebdecd2245b7644fb00a`). La base est mise
+à jour chaque mercredi à 6 h : **toute publication date son chiffre**.
+
+Cette datation n'est pas saisie à la main. `src/download.py` note ce que le
+serveur répond (`Last-Modified`, MD5, taille) dans un relevé écrit à côté du
+fichier ; `src/build_exports.py` mesure le CSV réellement lu et refuse de dater
+des chiffres issus d'une base qu'il ne peut pas identifier
+(decisions.md, 2026-07-31 ter). L'ETag servi par data.gouv **est** le MD5 du
+contenu, ce qui permet de tout vérifier hors ligne (donnees.md, T1).
