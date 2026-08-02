@@ -216,6 +216,107 @@ MAITRES = [
     ("Le Pérugin",          ["VANNUCCI PIETRO", "PERUGIN"], []),
     # Alessandro Filipepi, dit Sandro Botticelli.
     ("Botticelli",          ["BOTTICELLI", "FILIPEPI"], []),
+
+    # -- LOT 2 DU 2026-08-02 : 40 personnes retenues sur les 50 formes du registre
+    # qui portaient au moins 25 notices prudentes et restaient « à instruire ».
+    # Instruction par notices décroissantes, jamais par notoriété. Le test
+    # d'identité tient en trois questions, toutes tranchées sur la source :
+    #   1. le musée écrit-il un prénom entier (ni initiale, ni « Père », ni nom nu) ?
+    #   2. un homonyme porte-t-il des notices prudentes sous une graphie que les
+    #      motifs prendraient ?
+    #   3. les graphies rapprochées portent-elles les mêmes dates de vie ?
+    # Les dix formes écartées et leur motif : registre_maitres.py (ÉCARTÉS
+    # INSTRUITS) et docs/donnees.md, 2026-08-02.
+    #
+    # Naturaliste niçois : ses 5 791 planches légitiment un profil à part entière,
+    # mais elles sont un seul geste de catalogue répété (donnees.md, 2026-07-05).
+    ("Jean-Baptiste Barla", ["BARLA JEAN-BAPTISTE"], []),
+    ("Alexandre Clausel",   ["CLAUSEL ALEXANDRE"], []),
+    # Charles Pierre Joseph Normand : les autres Normand de la base (Achille,
+    # Augustin, Michel, Charles Victor) ne portent aucune notice prudente et le
+    # motif complet ne les prend pas.
+    ("Charles Normand",     ["NORMAND CHARLES PIERRE JOSEPH"], []),
+    ("Léon Tirode",         ["TIRODE LEON"], []),
+    ("Louis Morinet",       ["MORINET LOUIS GEORGES ALBERT"], []),
+    # Giacinto seul : Giovanni Battista Calandrucci écarté par la précision.
+    ("Giacinto Calandrucci", ["CALANDRUCCI GIACINTO"], []),
+    ("Georges Ferdinand Bigot", ["BIGOT GEORGES-FERDINAND",
+                                 "BIGOT GEORGES FERDINAND"], []),
+    # Léon Fort : Siméon Fort et Louis Fort sont d'autres hommes, sans notice
+    # prudente ; « FORT-VOUILLON » est une manufacture.
+    ("Léon Fort",           ["FORT LEON"], []),
+    # Les frères Duthoit, d'Amiens : le musée écrit leurs dates (Louis 1807-1874,
+    # Aimé 1803-1869) et les nomme ENSEMBLE sur 93 de leurs notices — l'hésitation
+    # porte sur lequel des deux. Deux personnes, deux profils, une part commune
+    # que l'union des notices ne compte qu'une fois.
+    ("Louis Duthoit",       ["DUTHOIT LOUIS"], []),
+    ("Aimé Duthoit",        ["DUTHOIT AIME"], []),
+    # « PINOT Charles François » et « PINOT Charles » portent les mêmes dates
+    # (1817-1874) et ne partagent aucune notice : deux graphies d'un seul imagier.
+    # L'imagerie « Pinot & Sagaire » est une raison sociale, laissée dehors.
+    ("Charles François Pinot", ["PINOT CHARLES"], []),
+    ("André Marie Florentin Giraud", ["GIRAUD ANDRE MARIE FLORENTIN",
+                                      "GIRAUD MARIE ANDRE FLORENTIN"], []),
+    ("Auguste Vacquerie",   ["VACQUERIE AUGUSTE"], []),
+    ("François Georgin",    ["GEORGIN FRANCOIS"], []),
+    ("Louis Verjat",        ["VERJAT LOUIS VICTOR EMILE"], []),
+    # Peter Hawke : John Hawke n'est pas lui.
+    ("Peter Hawke",         ["HAWKE PETER"], []),
+    # Auguste seul : Ludovic Alleaume, son frère, est écarté par la précision.
+    ("Auguste Alleaume",    ["ALLEAUME AUGUSTE"], []),
+    ("Antoine Gabriel Willermet", ["WILLERMET ANTOINE GABRIEL"], []),
+    # Le fils, Lancelot-Théodore (1782-1859). Le père, que le musée n'appelle que
+    # « TURPIN DE CRISSE Père », reste dehors : son identité n'est pas écrite, et
+    # 34 de ses 35 notices nomment déjà le fils.
+    ("Turpin de Crissé",    ["TURPIN DE CRISSE LANCELOT THEODORE",
+                             "TURPIN DE CRISSE LANCELOT-THEODORE"],
+                            ["HENRI ROLAND"]),
+    # Le fils de Victor Hugo, photographe à Jersey ; le père (2 504 mentions
+    # certaines) et Georges Victor Hugo sont écartés par la précision du motif.
+    ("Charles Hugo",        ["HUGO CHARLES"], []),
+    ("Gustave Lancelot",    ["LANCELOT GUSTAVE"], []),
+    ("Charles du Ry",       ["RY CHARLES DU"], []),
+    ("Odilon Roche",        ["ROCHE ODILON"], []),
+    # Frans Hogenberg, sous ses trois graphies ; Nicolas, Abraham et Remigius
+    # Hogenberg sont d'autres graveurs de la famille.
+    ("Frans Hogenberg",     ["HOGENBERG FRANCOIS", "HOGENBERG FRANS",
+                             "HOGENBERG FRANZ"], []),
+    # « Charles Eugène », « Eugène » et « Charles » Ensfelder portent les mêmes
+    # dates (1836-1876) et ne partagent aucune notice : un seul dessinateur.
+    ("Charles Eugène Ensfelder", ["ENSFELDER"], []),
+    # Nicolaus seul : Martin Hoffmann est un autre homme, avec ses propres notices.
+    ("Nicolaus Hoffmann",   ["HOFFMANN NICOLAUS"], []),
+    ("Nicasius Bernaerts",  ["BERNAERTS NICASIUS"], []),
+    # Les deux Crispin de Passe, le père et le fils, distingués par le chiffre
+    # que Joconde écrit après le prénom. Comme les Duthoit, ils sont nommés
+    # ensemble sur 28 notices : le musée hésite entre les deux générations.
+    ("Crispin de Passe l'Ancien", ["PASSE CRISPIN I VAN DE",
+                                   "VAN DE PASSE CRISPIN I"], []),
+    ("Crispin de Passe le Jeune", ["PASSE CRISPIN II VAN DE",
+                                   "VAN DE PASSE CRISPIN II"], []),
+    ("Amable Louis Crapelet", ["CRAPELET AMABLE LOUIS",
+                               "CRAPELET LOUIS AMABLE"], []),
+    ("Auguste Beuret",      ["BEURET AUGUSTE"], []),
+    ("Jean-Charles François Leloy", ["LELOY JEAN CHARLES FRANCOIS",
+                                     "LELOY JEAN-CHARLES-FRANCOIS"], []),
+    ("Joseph Hussenot",     ["HUSSENOT JOSEPH"], []),
+    # Antonio seul : son frère Piero del Pollaiuolo est écarté par la précision.
+    ("Antonio del Pollaiuolo", ["POLLAIUOLO ANTONIO"], []),
+    ("Henry Hennault",      ["HENNAULT HENRY"], []),
+    ("Israël Henriet",      ["HENRIET ISRAEL", "ISRAEL HENRIET"], []),
+    # René Ackermann : Rudolf, Charles et Johann Adam Ackermann sont d'autres
+    # hommes ; « Ackermann & Co » est une raison sociale.
+    ("René Ackermann",      ["ACKERMANN RENE"], []),
+    ("Louis Hertig",        ["HERTIG LOUIS"], []),
+    ("Colijn de Coter",     ["COLYN DE COTER", "COTER COLIJN DE",
+                             "DE COTER COLIJN"], []),
+    # Jacques-Louis David. Ses notices prudentes portent toutes « David
+    # (1748-1825) », donc le pivot « DAVID » nu : seule l'égalité stricte le prend
+    # sans ramasser David d'Angers, Gérard David ou Jérôme David. Ambiguïté
+    # résiduelle assumée et documentée : « David (éditeur) », une trentaine de
+    # mentions CERTAINES, tombe aussi dans le motif — aucune notice prudente.
+    ("Jacques-Louis David", ["=DAVID", "DAVID JACQUES-LOUIS",
+                             "DAVID JACQUES LOUIS", "DAVID JACQUE-LOUIS"], []),
 ]
 
 LIBELLES_NIVEAUX = {1: "Presque lui", 2: "Autour de lui", 3: "Son style, sans lui"}
@@ -257,7 +358,18 @@ def _mot_entier(motif: str, pivot: str) -> bool:
     « NOM Prénom » : sans cette ancre, « Raphaël » se rattache à Raphaël Collin ou
     Anton Raphael Mengs, et « Michel-Ange » à Corneille Michel-Ange
     (donnees.md, 2026-07-21). L'ancre n'est posée que là où elle est nécessaire :
-    « ÉCOLE DE PRIMATICCIO » doit rester pris, le nom n'y est pas en tête."""
+    « ÉCOLE DE PRIMATICCIO » doit rester pris, le nom n'y est pas en tête.
+
+    Un motif préfixé de « = » exige le nom TOUT ENTIER, rien de plus (lot 2,
+    2026-08-02). Il ne sert qu'à un cas, mais un cas qu'aucun autre outil ne
+    résout : Jacques-Louis David signe ses notices « David (1748-1825) », soit
+    le pivot « DAVID » tout court. L'ancre ne suffit pas — elle prendrait aussi
+    David d'Angers, Gérard David, Jérôme David et une soixantaine d'autres, et
+    il faudrait les nommer un par un pour les écarter. L'égalité stricte prend
+    le nom nu et lui seul. Les dates, qui distingueraient les homonymes, sont
+    entre parenthèses : la normalisation les a déjà retirées."""
+    if motif.startswith("="):
+        return pivot == motif[1:]
     if motif.startswith("^"):
         return re.match(rf"{re.escape(motif[1:])}\b", pivot) is not None
     return re.search(rf"\b{re.escape(motif)}\b", pivot) is not None

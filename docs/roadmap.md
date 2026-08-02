@@ -19,12 +19,19 @@ fusion finale.
       arbitré : la visualisation des mentions est conservable, la matrice des profils et la
       comparaison nationale sont abandonnées. La branche `refactor/analyse-maitres` reste
       intacte, jamais reportée en bloc.
-- [ ] **Phase 1 — Élargir la liste des artistes** (branche `data/maitres-lot-2`). Instruire
-      un lot borné de formes « à examiner » du registre, par notices prudentes décroissantes.
-      Vérification systématique, jamais fondée sur la notoriété : graphies regroupées,
-      identité de la personne, homonymes et ateliers séparés, seuil de dix références
-      distinctes, témoins réels et tests. Registre mis à jour avec les états exacts.
+- [x] **Phase 1 — Élargir la liste des artistes** (2026-08-02, branche `data/maitres-lot-2`).
+      Lot borné aux **50 formes du registre portant au moins 25 notices prudentes** (77 % des
+      notices restant à instruire). Relevé en une passe par `src/instruit_lot.py` : graphies,
+      musées, domaines, dates écrites par les musées, références. Test d'identité en trois
+      questions tranchées sur la source. **40 personnes retenues, 10 formes écartées avec
+      leur motif** ; la liste passe de 63 à **103 artistes**, le volume de 3 668 à **11 872
+      notices distinctes** (48,4 % du doute national). Un mécanisme ajouté, l'égalité stricte
+      « = », pour le seul Jacques-Louis David. 21 témoins réels et 33 cas unitaires de plus ;
+      280 tests au vert. Chiffres : donnees.md ; arbitrages : decisions.md (bis et ter).
 - [ ] ⏸ **POINT DE CONTRÔLE 1** — rapport de lot, avant toute modification du front public.
+      **Deux arbitrages éditoriaux attendus** : (1) le cas Barla, 5 791 notices et 49 % du
+      volume dans un seul musée ; (2) l'intitulé « maîtres », que 30 fonds locaux sur 40
+      nouveaux ne décrivent plus.
 - [ ] **Phase 2 — Filtrer les œuvres par musée** dans l'onglet Œuvres : menu construit à
       partir des seuls musées concernés par l'artiste affiché, effectifs indiqués, combinaison
       avec le filtre par mention, compteur et pagination recalculés.

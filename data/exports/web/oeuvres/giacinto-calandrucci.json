@@ -1,0 +1,1285 @@
+{
+ "slug": "giacinto-calandrucci",
+ "nom": "Giacinto Calandrucci",
+ "doute": 158,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 1
+  },
+  {
+   "code": "atelier_de",
+   "notices": 157
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "50350501072",
+   "titre": "Etudes de cinq mains tenant divers objets",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203493",
+   "titre": "Une femme nue, assise, levant le bras droit, et étude de deux pieds",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203344",
+   "titre": "Deux hommes nus , l'un tenant un baquet, l'autre un baton",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203455",
+   "titre": "Une figure drapée, à genoux, les mains jointes, vue de profil",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203349",
+   "titre": "Un homme nu posant une main et un genou à terre",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203509",
+   "titre": "Une main, une demi-figure d'homme et partie inférieure d'une draperie",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203325",
+   "titre": "Etude d'une main, vue du dessus",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203472",
+   "titre": "Etude d'un poisson et d'une main tenant une pierre",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203507",
+   "titre": "Un jeune homme nu, les bras ouverts, les yeux levés au ciel",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203336",
+   "titre": "Un homme nu, debout, tenant un objet et un autre à genoux",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203471",
+   "titre": "Etude d'une tête d'homme, vue de profil et d'une main tenant une étoffe",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203338",
+   "titre": "Un homme nu accroupi, les mains au sol, et une demi-figure d'homme nu",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203485",
+   "titre": "Etude d'une tête de profil, de deux jambes d'un enfant et de deux angelots",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203483",
+   "titre": "Un jeune homme tenant une corbeille et deux mains tenant un objet",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203514",
+   "titre": "Deux bras et étude d'un bras retenant une draperie",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203347",
+   "titre": "Un homme nu, vu de profil, un genoux à terre, les mains tendues vers le ciel",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203494",
+   "titre": "Un saint religieux recevant un objet de la main de la Vierge tenant l'Enfant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203491",
+   "titre": "tudes de deux pieds et deux hommes nus debout, vus de profil",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203492",
+   "titre": "Demi-figure d'homme drapé tendant le bras, tête de femme et une main",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203368",
+   "titre": "Etudes d'une tête de femme, de deux têtes d'enfants et de deux mains",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350501061",
+   "titre": "L'accolade fraternelle de saint Dominique et de saint François",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203511",
+   "titre": "Bras recouvert d'une draperie, homme nu assis, torse  d'homme",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203348",
+   "titre": "Un homme nu, un genou en terre, saisissant une pierre ou traçant un sillon",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203392",
+   "titre": "Un prélat entouré de sa cour recevant un jeune homme",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203335",
+   "titre": "Un homme nu, debout, ouvrant les bras",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203337",
+   "titre": "Un vieillard nu, un genoux à terre, tenant un bâton",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203345",
+   "titre": "Un homme nu, étendu, la jambe gauche levée",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203473",
+   "titre": "Une tête d'homme barbu et sept mains dont quatre tenant des objets",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350501083",
+   "titre": "Etudes de mains et d'une tête",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203453",
+   "titre": "Une figure drapée, debout, de profil, tendant le bras droit",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203465",
+   "titre": "Trois études de jeunes hommes",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350501081",
+   "titre": "Etudes de bras et deux profil de femmes",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203302",
+   "titre": "Etude d'une figure, en habit de religieux, debout",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203301",
+   "titre": "Une demi-figure tenant une plume et regardant au ciel",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350501060",
+   "titre": "Un évêque tenant un râteau et une figure semblant bêcher : saint Fridien",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350205325",
+   "titre": "Un saint intercède en faveur d'une femme soutenue par un homme",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350501059",
+   "titre": "Etudes de deux figures à genoux, tournées vers la droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203512",
+   "titre": "Etudes d'une manche ; d'une main ; d'une main et d'une draperie",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350501071",
+   "titre": "Croquis d'une figure assise (?)",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203350",
+   "titre": "Un homme nu , posant les deux mains et un genou à terre",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203454",
+   "titre": "Un vieillard à genoux, les mains sur la poitrine",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203468",
+   "titre": "Une tête d'homme et deux religieux à genoux dans l'attitude de la stupeur",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203513",
+   "titre": "Un homme nu, assis et une tête d'homme vu de profil",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203327",
+   "titre": "Une tête d'enfant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203393",
+   "titre": "Un enfant nu, debout, levant les bras",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203326",
+   "titre": "Un homme nu, debout, les mains jointes, semblant prier le ciel",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350501075",
+   "titre": "Figure drapée assise, tenant une sphère, avec un enfant et une autre figure",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203463",
+   "titre": "Etudes de mains, de bras, d'un habit et de sa draperie, d'une tête d'homme",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203484",
+   "titre": "Etude de la draperie d'une figure",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203476",
+   "titre": "Un homme nu, debout, portant l'index de la main droite sur la bouche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203464",
+   "titre": "Etude d'un habit pour une demi-figure et de manches sur deux bras",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203346",
+   "titre": "Un homme priant, un homme nu tenant un baton, un troisième levant le bras",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350501058",
+   "titre": "Un homme nu, assis , jouant d'un instrument de musique et une autre figure",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203508",
+   "titre": "Religieuse tenant un ostensoir ; enfant tenant une corbeille ; main",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350205326",
+   "titre": "Un évêque reçoit un jeune homme entouré de nombreuses figures",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203324",
+   "titre": "Un homme nu, assis à terre, les yeux et les mains levés au ciel",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203466",
+   "titre": "Deux études de bras jouant de la viole ; un angelot",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203286",
+   "titre": "Etude d'une draperie",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203510",
+   "titre": "Etude de deux draperies ; tête et bras d'une figure",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202667",
+   "titre": "Enfant nu, et jeune garçon nu, assis sur des nuages",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202312",
+   "titre": "Un couple implore un saint pour qu'il ressucite leur enfant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203467",
+   "titre": "Etude de deux hommes nus, assis et de deux profils d'hommes",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203474",
+   "titre": "Un jeune homme drapé, debout : un religieux (?)",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202814",
+   "titre": "Etude d'une main",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202673",
+   "titre": "Vieillard nu, aux longs cheveux, agenouillé, en imploration",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203486",
+   "titre": "Etudes de tois têtes et de différentes parties du corps d'un enfant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203288",
+   "titre": "Homme agenouillé priant, demi-figure les mains jointes et tête d'homme",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203475",
+   "titre": "Deux hommes nus assis, un jeune homme nu debout et une tête",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203300",
+   "titre": "Etudes d'un christ mort pour une piéta, de draperies et d'une manche",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203456",
+   "titre": "Etude d'une draperie",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203477",
+   "titre": "Etudes de deux bras et deux mains",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350102292",
+   "titre": "Une demi-figure de religieux debout et une main tenant un objet sphérique",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203268",
+   "titre": "Deux études de mains dont une tenant un rouleau",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202944",
+   "titre": "Etude de quatre avant-bras",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202815",
+   "titre": "Un homme nu, assis, levant les bras et les yeux au ciel",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202914",
+   "titre": "Trois têtes d'hommes et un homme nu, assis, tenant un baton",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202943",
+   "titre": "Une tête d'enfant souriant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203272",
+   "titre": "Saint Pierre, debout, tenant un livre et des clés",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202700",
+   "titre": "Trois figures sur des nuages, portant des encensoirs, et femme priant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202801",
+   "titre": "Religieux à genoux, montrant un crucifix, regardant le spectateur",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202653",
+   "titre": "Homme nu tenant une hostie, étude pour un religieux",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203271",
+   "titre": "Saint Paul debout, appuyé sur une épée, un livre dans la main droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202646",
+   "titre": "Homme barbu, tenant un livre, assis sur des nuages, les yeux levés",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202647",
+   "titre": "Homme nu, debout, de face, montant un degré, appuyé sur un long bâton",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350102310",
+   "titre": "Etudes d'un religieux, à genoux, de profil, d'un bras et d'une main",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202861",
+   "titre": "Un enfant nu semblant voler",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350102311",
+   "titre": "Etudes d'un torse d'homme et d'une tête de jeune homme",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350030899",
+   "titre": "Homme barbu, vêtu d'une robe, assis, un livre sur les genoux",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202725",
+   "titre": "Homme nu, assis sur des nuages, de face",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202860",
+   "titre": "Un enfant nu et un buste de jeune femme",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202802",
+   "titre": "Etude de draperie pour un religieux assis, de profil, priant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350102278",
+   "titre": "Etudes d'une draperie, d'une tête d'homme et d'un torse",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203296",
+   "titre": "Etudes d'une Pietà, d'une main tenant une étoffe, d'une tête vue de profil",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202689",
+   "titre": "Ange tourné vers la droite, volant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202825",
+   "titre": "Croquis de trois écoinçons avec un enfant tenant une banderolle ; jambe",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202752",
+   "titre": "Homme nu, tenant un panier, et le remplissant de pains ramassés",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202745",
+   "titre": "Deux têtes d'hommes barbus, regardant au ciel",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202669",
+   "titre": "Homme nu portant un bâton, allant vers la droite, demi-figure, se retournant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202488",
+   "titre": "Homme appuyé sur un bâton, et homme nu regardant vers la droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202632",
+   "titre": "Une tête d'homme, vue de trois quarts, tournée à droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202865",
+   "titre": "Un enfant portant un vase et un homme accroupi",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202812",
+   "titre": "Etude d'une main",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202744",
+   "titre": "Homme penché à terre, regardant à l'intérieur d'un vase",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203246",
+   "titre": "Etudes de deux mains et d'un bras tenant un roseau",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202738",
+   "titre": "Ane debout, se dirigeant vers la gauche, et bras gauche d'un homme, de dos",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202935",
+   "titre": "Saint André en croix ; femme portant un panier ; demi-figure de femme",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203299",
+   "titre": "Etudes d'une jambe et d'une draperie",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202816",
+   "titre": "Un homme drapé, debout, de profil vers la droite",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202465",
+   "titre": "Un ange montrant un crucifix à sainte Madeleine",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202864",
+   "titre": "Etude d'une draperie pour le bas d'une figure",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202481",
+   "titre": "La Vierge debout sur un croissant : l'Immaculée Conception",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202804",
+   "titre": "Homme nu, assis sur des nuages, écrivant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202672",
+   "titre": "Evangéliste assis sur des nuages",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202884",
+   "titre": "Un homme nu, assis, la main droite appuyée sur un livre",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202737",
+   "titre": "Trois études de draperie",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202862",
+   "titre": "Etude de draperie",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203298",
+   "titre": "Une tête de femme regardant une tête d'enfant : Vierge à l'Enfant (?)",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202742",
+   "titre": "Homme debout, enveloppé d'un manteau, implorant le ciel",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202803",
+   "titre": "Jeune homme nu, à genoux, mains sur la poitrine, priant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202805",
+   "titre": "Un homme nu, à genoux, les bras ouverts",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202696",
+   "titre": "Etude de draperie, et homme marchant, regardant en l'air en se retournant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202724",
+   "titre": "Jeune homme remplissant de pains un pan de son vêtement",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202806",
+   "titre": "Un homme nu, assis, tenant un livre et une fleur",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203287",
+   "titre": "Etudes d'un homme jouant , de draperies, d'un homme assis tenant un baton",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202797",
+   "titre": "Etude de draperie pour le bas d'une figure assise, et deux bras",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202654",
+   "titre": "Homme nu, debout, tourné vers la gauche, effrayé, reculant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202898",
+   "titre": "Un jeune homme nu, debout, et un profil de femme",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202807",
+   "titre": "Un homme nu, debout, semblant s'incliner",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202482",
+   "titre": "Un couple implore un saint pour qu'il ressucite leur enfant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202655",
+   "titre": "Homme nu, assis de profil, vers la gauche, sur des nuages",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202633",
+   "titre": "Un religieux debout, montrant un livre ouvert portant une inscription",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202731",
+   "titre": "Tête de religieuse, les yeux levés",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202474",
+   "titre": "La Sainte Famille conduite un ange pendant la fuite en Egypte",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202475",
+   "titre": "Tête d'homme, vue de face",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203273",
+   "titre": "David, debout, tenant un rouleau et une harpe",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202813",
+   "titre": "Etudes de deux pieds et d'un enfant, vu en buste",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350102312",
+   "titre": "Etudes de deux mains tendues et d'une demi-figure d'enfant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203267",
+   "titre": "Une figure portant la tête d'un homme au bout d'une épée",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203208",
+   "titre": "Etudes : femme drapée, main, draperie, mains soutenant une étoffe, homme",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202652",
+   "titre": "Jeune homme nu, assis sur des nuages, tenant un bâton",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202651",
+   "titre": "Etude du vêtement d'un religieux agenouillé sur des nuages, bras ouverts",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202863",
+   "titre": "Un religieux à genoux, vu de face, les bras ouverts",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202732",
+   "titre": "Main posée, et deux études de pied droit",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202533",
+   "titre": "L'Adoration des Mages",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202691",
+   "titre": "Tête et bras gauche d'un ange volant",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202808",
+   "titre": "Un homme nu, un genou à terre, tenant un sabre",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202708",
+   "titre": "Demi-figure d'homme nu, appuyé sur un coude, et reprise des bras",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202822",
+   "titre": "Une figure drapée, assise",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202656",
+   "titre": "Homme nu barbu, assis sur des nuages, de face, jambe gauche levée",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350102289",
+   "titre": "Deux études de deux mains jointes",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350203285",
+   "titre": "Etudes d'une demi-figure de religieux, assis, de profil et d'une draperie",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202824",
+   "titre": "Etudes de deux figures, de deux têtes, de bras et de pieds",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350102277",
+   "titre": "Etudes de six têtes d'hommes",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350102288",
+   "titre": "Etude de deux pieds, vus de dessus",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350102279",
+   "titre": "Deux études de tête d'homme barbu et quatre études de main tenant un panier",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202883",
+   "titre": "Deux hommes nus, assis, l'un tenant un roseau, l'autre un crâne",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "50350202489",
+   "titre": "Un homme nu, assis, tenant un roseau avec une bannière : saint Jean-Baptiste",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "CALANDRUCCI Giacinto (atelier)"
+  },
+  {
+   "reference": "09940004682",
+   "titre": "Vierge à l'enfant",
+   "musee": "musée de Grenoble",
+   "ville": "Grenoble",
+   "code": "attribue",
+   "extrait": "Calandrucci Giacinto (attribué à)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-08-02T13:59:02+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

@@ -14,6 +14,8 @@
 	// les maîtres, 240). Il a changé le 2026-07-22, quand la liste est passée de 27
 	// à 63 maîtres : de 11 à 310 œuvres concernées, la moitié des profils
 	// s'écrasaient au sol d'une échelle graduée jusqu'à 240 — plus aucune hiérarchie
+	// (le lot du 2026-08-02 a porté l'écart de 11 à 5 791 : la part était le seul
+	// choix tenable, et elle le reste)
 	// lisible, donc « la forme est mauvaise » (CLAUDE.md). La part rend chaque
 	// profil lisible ET garde une échelle commune et fixe, la comparaison portant
 	// sur la FORME du profil. Le volume, lui, n'est pas perdu : il est écrit dans le

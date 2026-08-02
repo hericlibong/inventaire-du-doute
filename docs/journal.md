@@ -2,6 +2,39 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-08-02 (suite) — Quarante artistes de plus, et une liste qui change de nature
+
+On avait 234 noms en attente dans le registre, jamais regardés. On en a pris les cinquante
+plus lourds et on les a instruits un par un, dans l'ordre du nombre de notices — pas dans
+l'ordre de la célébrité. C'est tout le sujet : la première liste avait été composée à la main,
+et personne n'avait vérifié qui d'autre, dans la base, portait autant de mentions prudentes.
+
+Quarante ont passé le test, dix ont été écartés avec un motif écrit. Les motifs sont plus
+instructifs que les retenus. « PETER », « BUQUET », « Prévost » : un nom de famille tout seul,
+impossible de dire qui. « VARADY A » : une initiale. « Pellerin » : une imprimerie. « MOGHOLE
+DE MURSHIDABAD » : une école régionale que notre tri automatique avait laissé passer pour
+quelqu'un. Et les trois Mellet, à Vitré, qui portent exactement les mêmes quarante et une
+notices — le musée nomme le père et les deux fils sur chaque dessin, sans trancher. Trois
+profils identiques pour un seul geste : on les a laissés dehors.
+
+Le plus beau cas est celui de Turpin de Crissé. Une notice nomme le père deux fois, le fils
+une fois, et Hubert Robert « d'après ». Le fils a un nom entier, des dates, une identité : il
+entre. Le père n'est appelé que « Père » : il reste dehors, sur la même notice.
+
+Deux choses sont apparues qu'on n'avait pas prévues. D'abord, les notices que deux artistes se
+partagent passent de six à cent cinquante-sept — parce que les musées nomment souvent **deux
+frères** avec un point d'interrogation chacun. Les Duthoit à Amiens, les Passe à Orléans,
+Charles Hugo et Auguste Vacquerie à Orsay. Le doute n'y porte pas sur « est-ce lui ? » mais
+sur « lequel des deux ? ». C'est un sujet à part entière, et il n'était pas visible avec les
+63 premiers.
+
+Ensuite, la liste ne ressemble plus à ce qu'elle était. Trente des quarante nouveaux n'ont
+leur doute écrit que dans un seul musée. Ce ne sont plus des maîtres qu'on retrouve partout,
+ce sont des fonds locaux : Épinal, Troyes, Besançon, Amiens, Laval, Le Puy. Et Barla, à Nice,
+avec ses 5 791 planches, pèse à lui seul la moitié du volume. Il est une personne, la
+vérification est formelle — mais il écrasera n'importe quel graphique. Ces deux points
+remontent à l'utilisateur : ce sont des choix éditoriaux, pas des questions de méthode.
+
 ## 2026-08-02 — Le site devient un volume, et le prototype passe à la trappe (aux deux tiers)
 
 On avait construit un instrument d'analyse à trois vues sur les artistes déjà publiés. On l'a

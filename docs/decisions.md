@@ -2,6 +2,63 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-02 (ter) — Un seul mécanisme ajouté à la table d'identité : l'égalité stricte
+
+La table de `build_artistes.py` disposait de deux outils : le mot entier et l'ancre « ^ » (le
+nom doit être en tête). Un candidat du lot 2 leur résiste : **Jacques-Louis David**. Ses
+notices prudentes portent toutes « David (1748-1825) », et la normalisation retire les
+parenthèses — le pivot est « DAVID » tout court. L'ancre prendrait aussi David d'Angers
+(1 363 mentions certaines), Gérard David, Jérôme David, Michel-Antoine David : une
+soixantaine de personnes à écarter nommément, liste illisible et fragile.
+
+**Décision : un motif préfixé de « = » exige le nom tout entier, rien de plus.** Deux lignes,
+symétriques de l'ancre, activées sur le seul cas qui les demande. Le mécanisme est publiable
+en une phrase : *quand le musée n'écrit qu'un nom de famille et des dates, on ne prend que ce
+nom-là, exactement.*
+
+**Ambiguïté résiduelle assumée** : « David (éditeur) » et « David (signataire) », une
+trentaine de mentions **certaines**, tombent aussi dans le motif. Aucune notice prudente n'est
+concernée — le chiffre du doute est juste ; celui des attributions certaines porte 3 %
+d'incertitude. Précédent identique et documenté : les « TENIERS David » sans suffixe.
+
+## 2026-08-02 (bis) — Lot 2 des artistes : la vérification avant la notoriété
+
+Le registre laissait 234 formes « à instruire ». Elles ont été reprises **par notices
+prudentes décroissantes**, sans considération de célébrité — c'était l'angle mort de la liste
+initiale, composée à la main en 2026-07-07.
+
+**Le lot est borné aux 50 formes portant au moins 25 notices prudentes** : 21 % des formes
+restantes, 77 % des notices. Sous ce seuil, l'instruction coûte autant par personne et
+rapporte trois fois moins ; la suite fera l'objet d'un lot ultérieur.
+
+**Le test d'identité est écrit et se tranche sur la source** (détail et chiffres :
+donnees.md) : prénom entier écrit par le musée, absence d'homonyme prudent capturable, dates
+de vie concordantes entre graphies rapprochées. Il ne demande jamais si l'artiste est connu.
+
+**Résultat : 40 personnes retenues, 10 formes écartées avec leur motif**, chacun publiable
+tel quel. La liste passe de 63 à 103 artistes, le volume de 3 668 à 11 872 notices distinctes.
+
+**Deux conséquences à trancher au point de contrôle 1**, parce qu'elles engagent l'éditorial
+et non la méthode :
+
+1. **Barla** (5 791 notices, 49 % du volume, un seul musée) passe le test d'identité mais
+   écrasera tout graphique. La règle du 2026-07-05 — publier et divulguer partout le « hors ce
+   cas » — doit être étendue aux vues du volume, ou le cas traité autrement.
+2. **Le lot change la nature de la liste** : 30 des 40 nouveaux n'ont leur doute écrit que
+   dans un seul musée. Ce ne sont plus des maîtres dispersés mais des fonds locaux. Le titre
+   « Autour des maîtres » et l'intitulé « Explorer les maîtres » ne décrivent plus exactement
+   ce que la liste contient.
+
+**Les parents ne sont jamais fusionnés.** Louis et Aimé Duthoit, Crispin de Passe l'Ancien et
+le Jeune restent deux personnes, même quand 93 et 28 de leurs notices sont communes : c'est le
+musée qui hésite entre les deux frères, et cette hésitation est le sujet du projet. Les
+notices partagées passent de 6 à 157 ; l'union les compte une fois, la somme des profils les
+compte deux fois, et les deux nombres sont publiés séparément (invariant déjà testé).
+
+**En revanche, une famille sans prénoms n'est pas une personne.** Les trois Mellet portent les
+mêmes 41 notices et aucun prénom ne les distingue : écartés. Le père Turpin de Crissé, que le
+musée n'appelle que « Père », est écarté quand son fils, nommé entièrement, est retenu.
+
 ## 2026-08-02 — Le projet devient un premier volume autonome : « Autour des maîtres »
 
 Le site cherchait depuis des semaines à être deux choses à la fois : le panorama du doute

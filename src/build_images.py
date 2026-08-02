@@ -4,7 +4,7 @@ droits de réutilisation de la PHOTO de chaque œuvre de l'onglet « Œuvres ».
 Ne modifie pas le front et ne télécharge AUCUNE image (Palier 2 après validation).
 
 Chaîne :
-  1. inventaire des références UNIQUES des 63 fiches oeuvres/<slug>.json
+  1. inventaire des références UNIQUES des fiches oeuvres/<slug>.json
      (une référence liée à deux maîtres n'est comptée qu'une fois) ;
   2. jointure au CSV Joconde : `Presence_image` (pré-filtre) et
      `Artiste_sous_droits` (signal restrictif) ;
@@ -177,7 +177,8 @@ def _sauver_cache(cache: dict) -> None:
 def main() -> None:
     print("Inventaire des références uniques…")
     inv = inventaire()
-    print(f"  {len(inv)} références uniques (63 fiches).")
+    nb_fiches = len(glob.glob(str(DOSSIER_OEUVRES / "*.json")))
+    print(f"  {len(inv)} références uniques ({nb_fiches} fiches).")
 
     print("Jointure au CSV Joconde (présence d'image, artiste sous droits)…")
     joindre_csv(inv)

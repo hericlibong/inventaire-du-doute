@@ -1,0 +1,229 @@
+{
+ "slug": "israel-henriet",
+ "nom": "Israël Henriet",
+ "doute": 26,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 1
+  },
+  {
+   "code": "point_interrogation",
+   "notices": 25
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "01720000218",
+   "titre": "Partie de la Ville de Mascon",
+   "musee": "musée des ursulines",
+   "ville": "Mâcon",
+   "code": "attribue",
+   "extrait": "HENRIET Israël (attribué à, graveur)"
+  },
+  {
+   "reference": "02860008454",
+   "titre": "Frontispice de Diverse figure & paesi fatti per S.D. Bella",
+   "musee": "musée des beaux-arts",
+   "ville": "Orléans",
+   "code": "point_interrogation",
+   "extrait": "HENRIET Israël (éditeur, ?)"
+  },
+  {
+   "reference": "02860008453",
+   "titre": "Personnages orientaux regardant une armée en marche",
+   "musee": "musée des beaux-arts",
+   "ville": "Orléans",
+   "code": "point_interrogation",
+   "extrait": "HENRIET Israël (?, éditeur)"
+  },
+  {
+   "reference": "02860008401",
+   "titre": "La statue d'Henri IV et l'Ile du Palais",
+   "musee": "musée des beaux-arts",
+   "ville": "Orléans",
+   "code": "point_interrogation",
+   "extrait": "HENRIET Israël (?, éditeur)"
+  },
+  {
+   "reference": "02860008456",
+   "titre": "Un corps de gardes devant une entrée de ville",
+   "musee": "musée des beaux-arts",
+   "ville": "Orléans",
+   "code": "point_interrogation",
+   "extrait": "HENRIET Israël (?, éditeur)"
+  },
+  {
+   "reference": "02860008397",
+   "titre": "Cour d'un château entourée d'arbres",
+   "musee": "musée des beaux-arts",
+   "ville": "Orléans",
+   "code": "point_interrogation",
+   "extrait": "Henriet Israël (1590?-1661) (?, graveur)"
+  },
+  {
+   "reference": "02860008398",
+   "titre": "Vue du château de Fresnes",
+   "musee": "musée des beaux-arts",
+   "ville": "Orléans",
+   "code": "point_interrogation",
+   "extrait": "Henriet Israël (1590?-1661) (éditeur, ?)"
+  },
+  {
+   "reference": "02860008465",
+   "titre": "Deux enfants dessinant [Frontispice du Livre pour apprendre à dessiner]",
+   "musee": "musée des beaux-arts",
+   "ville": "Orléans",
+   "code": "point_interrogation",
+   "extrait": "HENRIET Israël (éditeur, ?)"
+  },
+  {
+   "reference": "06570019011",
+   "titre": "Chasse au canard dans un marécage",
+   "musee": "musée des beaux-arts",
+   "ville": "Caen",
+   "code": "point_interrogation",
+   "extrait": "Henriet Israël (1607-1661) (graveur, ?)"
+  },
+  {
+   "reference": "06570019013",
+   "titre": "Vue d'une rue de village et d'un calvaire",
+   "musee": "musée des beaux-arts",
+   "ville": "Caen",
+   "code": "point_interrogation",
+   "extrait": "Henriet Israël (1607-1661) (graveur, ?)"
+  },
+  {
+   "reference": "06570019014",
+   "titre": "Chasse au cerf dans une forêt",
+   "musee": "musée des beaux-arts",
+   "ville": "Caen",
+   "code": "point_interrogation",
+   "extrait": "Henriet Israël (1607-1661) (graveur, ?)"
+  },
+  {
+   "reference": "06570019016",
+   "titre": "Un Château entouré d'eau avec un cavalier sur le pont-levis",
+   "musee": "musée des beaux-arts",
+   "ville": "Caen",
+   "code": "point_interrogation",
+   "extrait": "Henriet Israël (1607-1661) (graveur, ?)"
+  },
+  {
+   "reference": "06570019017",
+   "titre": "Titre du Livre de paysages de Callot",
+   "musee": "musée des beaux-arts",
+   "ville": "Caen",
+   "code": "point_interrogation",
+   "extrait": "Henriet Israël (1607-1661) (graveur, ?)"
+  },
+  {
+   "reference": "06570019020",
+   "titre": "Une église délabrée près d'un marécage",
+   "musee": "musée des beaux-arts",
+   "ville": "Caen",
+   "code": "point_interrogation",
+   "extrait": "Henriet Israël (1607-1661) (graveur, ?)"
+  },
+  {
+   "reference": "06570019021",
+   "titre": "Un ermitage sur un îlot rocheux",
+   "musee": "musée des beaux-arts",
+   "ville": "Caen",
+   "code": "point_interrogation",
+   "extrait": "Henriet Israël (1607-1661) (graveur, ?)"
+  },
+  {
+   "reference": "06570019023",
+   "titre": "Vue d'un village sur le bord d'une rivière",
+   "musee": "musée des beaux-arts",
+   "ville": "Caen",
+   "code": "point_interrogation",
+   "extrait": "Henriet Israël (1607-1661) (graveur, ?)"
+  },
+  {
+   "reference": "06570019018",
+   "titre": "Gentilhomme donnant la main à une dame dans un paysage boisé",
+   "musee": "musée des beaux-arts",
+   "ville": "Caen",
+   "code": "point_interrogation",
+   "extrait": "Henriet Israël (1607-1661) (graveur, ?)"
+  },
+  {
+   "reference": "06570019019",
+   "titre": "Petit château sur un rocher entouré d'eau",
+   "musee": "musée des beaux-arts",
+   "ville": "Caen",
+   "code": "point_interrogation",
+   "extrait": "Henriet Israël (1607-1661) (graveur, ?)"
+  },
+  {
+   "reference": "06570019022",
+   "titre": "Vue d'un village baigné par une rivière",
+   "musee": "musée des beaux-arts",
+   "ville": "Caen",
+   "code": "point_interrogation",
+   "extrait": "Henriet Israël (1607-1661) (graveur, ?)"
+  },
+  {
+   "reference": "06570019024",
+   "titre": "Vue d'une ville fortifiée entourée d'eau",
+   "musee": "musée des beaux-arts",
+   "ville": "Caen",
+   "code": "point_interrogation",
+   "extrait": "Henriet Israël (1607-1661) (graveur, ?)"
+  },
+  {
+   "reference": "06570019012",
+   "titre": "Paysage avec personnages",
+   "musee": "musée des beaux-arts",
+   "ville": "Caen",
+   "code": "point_interrogation",
+   "extrait": "Henriet Israël (1607-1661) (graveur, ?)"
+  },
+  {
+   "reference": "06570019015",
+   "titre": "Vue d'une maison franche",
+   "musee": "musée des beaux-arts",
+   "ville": "Caen",
+   "code": "point_interrogation",
+   "extrait": "Henriet Israël (1607-1661) (graveur, ?)"
+  },
+  {
+   "reference": "06570019070",
+   "titre": "Rochers plongeant dans la mer et fortifications",
+   "musee": "musée des beaux-arts",
+   "ville": "Caen",
+   "code": "point_interrogation",
+   "extrait": "Henriet Israël (1607-1661) (graveur, ?)"
+  },
+  {
+   "reference": "06570019067",
+   "titre": "Vue d'une chaumière et d'un calvaire",
+   "musee": "musée des beaux-arts",
+   "ville": "Caen",
+   "code": "point_interrogation",
+   "extrait": "Henriet Israël (1607-1661) (graveur, ?)"
+  },
+  {
+   "reference": "06570019069",
+   "titre": "Une église de village",
+   "musee": "musée des beaux-arts",
+   "ville": "Caen",
+   "code": "point_interrogation",
+   "extrait": "Henriet Israël (1607-1661) (graveur, ?)"
+  },
+  {
+   "reference": "06570019068",
+   "titre": "La Place d'un village avec un abreuvoir",
+   "musee": "musée des beaux-arts",
+   "ville": "Caen",
+   "code": "point_interrogation",
+   "extrait": "Henriet Israël (1607-1661) (graveur, ?)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-08-02T13:59:02+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

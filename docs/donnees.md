@@ -3,6 +3,157 @@
 Tout ce qu'on apprend sur la base Joconde au fil du projet : structure, pièges,
 chiffres vérifiés. Chaque constat indique sa date et comment il a été obtenu.
 
+## Le lot 2 du 2026-08-02 : 50 formes examinées, 40 personnes retenues
+
+Le registre `candidats_maitres.csv` laissait **234 formes « à instruire »**. Le lot est borné
+aux **50 qui portent au moins 25 notices prudentes** : un cinquième des formes restantes, mais
+**77 % des notices** encore à instruire (8 679 sur 11 241). Sous 25, le nombre de formes double
+tous les cinq points quand leur poids s'effondre — la médiane tombe de 34 à 13 notices.
+
+Instruction par notices décroissantes, jamais par notoriété. Relevé produit par
+`src/instruit_lot.py` en une passe : toutes les graphies d'une racine de nom, leurs musées,
+leurs domaines, les dates écrites par les musées et les références elles-mêmes.
+
+### Le test d'identité appliqué, en trois questions
+
+Chacune se tranche sur la source, sans jugement sur l'artiste :
+
+1. **le musée écrit-il un prénom entier ?** Ni initiale (« VARADY A »), ni rang de famille
+   seul (« TURPIN DE CRISSE Père »), ni nom nu (« PETER », « BUQUET », « Prévost ») ;
+2. **un homonyme porte-t-il des notices prudentes sous une graphie que les motifs
+   prendraient ?** Si oui, le motif est resserré ou le candidat écarté ;
+3. **les graphies rapprochées portent-elles les mêmes dates de vie ?** C'est le seul indice
+   d'identité présent dans la source, et il tranche : « ENSFELDER Charles Eugène » et
+   « ENSFELDER Eugène » portent tous deux **1836-1876**, sans partager une seule notice —
+   un seul homme sous deux graphies. Idem pour « PINOT Charles François » et « PINOT
+   Charles » (**1817-1874**).
+
+### Ce que le lot ajoute
+
+**40 personnes**, **8 355 appartenances**, **8 204 notices distinctes** de plus. La liste passe
+de 63 à **103 artistes**, et de 3 668 à **11 872 notices distinctes** — soit **48,4 %** du doute
+national (24 507) contre 15 % auparavant.
+
+| Artiste | prudentes | certaines | musées où le doute est écrit | musées où il apparaît |
+|---|---:|---:|---:|---:|
+| Jean-Baptiste Barla | 5 791 | 22 | 1 | 1 |
+| Alexandre Clausel | 295 | 158 | 1 | 1 |
+| Charles Normand | 244 | 55 | 1 | 5 |
+| Léon Tirode | 231 | 21 | 1 | 2 |
+| Louis Morinet | 168 | 83 | 1 | 2 |
+| Giacinto Calandrucci | 158 | 639 | 2 | 3 |
+| Georges Ferdinand Bigot | 125 | 110 | 1 | 3 |
+| Léon Fort | 107 | 63 | 1 | 1 |
+| Louis Duthoit | 94 | 362 | 1 | 3 |
+| Aimé Duthoit | 93 | 346 | 1 | 1 |
+| Charles François Pinot | 82 | 205 | 1 | 4 |
+| André Marie Florentin Giraud | 59 | 6 | 1 | 1 |
+| Auguste Vacquerie | 48 | 406 | 1 | 3 |
+| Charles Eugène Ensfelder | 48 | 42 | 1 | 4 |
+| François Georgin | 43 | 567 | 2 | 9 |
+| Louis Verjat | 43 | 0 | 1 | 1 |
+| Peter Hawke | 42 | 117 | 2 | 2 |
+| Auguste Alleaume | 39 | 10 | 1 | 1 |
+| Antoine Gabriel Willermet | 39 | 50 | 1 | 1 |
+| Turpin de Crissé | 34 | 387 | 1 | 10 |
+| Charles Hugo | 34 | 348 | 1 | 5 |
+| Gustave Lancelot | 32 | 120 | 1 | 1 |
+| Charles du Ry | 32 | 1 | 1 | 1 |
+| Odilon Roche | 32 | 6 | 1 | 5 |
+| Frans Hogenberg | 32 | 134 | 2 | 9 |
+| Nicolaus Hoffmann | 30 | 3 | 1 | 2 |
+| Nicasius Bernaerts | 29 | 11 | 3 | 9 |
+| Crispin de Passe l'Ancien | 29 | 71 | 2 | 6 |
+| Crispin de Passe le Jeune | 28 | 5 | 1 | 3 |
+| Amable Louis Crapelet | 28 | 177 | 1 | 5 |
+| Auguste Beuret | 28 | 0 | 1 | 1 |
+| Jean-Charles François Leloy | 28 | 1 777 | 1 | 4 |
+| Joseph Hussenot | 27 | 46 | 1 | 3 |
+| Colijn de Coter | 27 | 4 | 2 | 4 |
+| Antonio del Pollaiuolo | 26 | 10 | 1 | 5 |
+| Henry Hennault | 26 | 29 | 1 | 1 |
+| Israël Henriet | 26 | 937 | 3 | 18 |
+| René Ackermann | 26 | 222 | 2 | 4 |
+| Louis Hertig | 26 | 375 | 1 | 2 |
+| Jacques-Louis David | 26 | 1 180 | 17 | 73 |
+
+### Ce lot ne ressemble pas au premier
+
+**Trente artistes sur quarante n'ont leur doute écrit que dans un seul musée**, et dix-neuf
+portent plus de mentions prudentes que d'attributions certaines. Les 63 premiers étaient des
+noms dispersés dans des dizaines de musées ; ceux-ci sont, pour l'essentiel, des **fonds
+locaux** : le muséum de Nice, le musée de l'image d'Épinal, Troyes, Besançon, Amiens, Laval,
+Le Puy-en-Velay. Le doute n'y est pas une hésitation d'expert sur un tableau, c'est une
+prudence appliquée à un fonds entier.
+
+L'exception est **Jacques-Louis David** : 26 notices prudentes, mais dans **17 musées**, et il
+apparaît dans 73. C'est le seul du lot dont le doute soit vraiment national.
+
+### Trois notices pour deux artistes, et ce que ça veut dire
+
+Les notices partagées passent de **6 à 157**. Ce n'est pas un défaut de comptage : c'est un
+phénomène que le lot fait apparaître. Sur les mêmes notices, le musée nomme **deux membres
+d'une même famille**, chacun suivi d'un « ? » — il ne sait pas lequel des deux :
+
+- **Louis et Aimé Duthoit**, à Amiens : 93 notices communes sur 94 et 93 ;
+- **Crispin de Passe l'Ancien et le Jeune**, à Orléans : 28 communes sur 29 et 28 ;
+- **Charles Hugo et Auguste Vacquerie**, à Orsay : les photographies de Jersey, attribuées à
+  l'un ou à l'autre.
+
+Chaque profil compte la notice une fois ; l'union ne la compte qu'une fois pour tous. La
+somme des profils (12 029) dépasse donc les notices distinctes (11 872) de 157 exactement.
+
+### Les dix formes écartées, et pourquoi
+
+| Forme | notices | motif |
+|---|---:|---|
+| MELLET Jacques Père | 41 | atelier de famille : les mêmes 41 notices nomment les trois Mellet |
+| MELLET Jules Fils | 41 | idem — aucun prénom n'individualise |
+| MELLET Henri Fils | 41 | idem |
+| PETER | 41 | nom sans prénom : plusieurs Peter dans la base |
+| PELLERIN | 37 | raison sociale (imagerie d'Épinal), pas une personne |
+| TURPIN DE CRISSE Père | 35 | désigné par son seul rang de famille ; 34 de ses 35 notices nomment le fils, retenu à son nom |
+| BUQUET | 32 | nom nu et mention « atelier » ; plusieurs Buquet dans la base |
+| MOGHOLE DE MURSHIDABAD | 32 | école régionale, pas une personne |
+| VARADY | 28 | prénom réduit à une initiale (« VARADY A ») |
+| Prévost | 26 | nom nu et mention « atelier » ; plusieurs Prévost dans la base |
+
+Le cas Turpin est le plus net : une même notice (`07480000137`) nomme le père deux fois, le
+fils une fois, et Hubert Robert « d'après ». Seul le fils, que le musée nomme entièrement,
+entre dans la liste.
+
+À ces dix s'ajoute « IMAGERIE PELLERIN » (11 notices), instruite dans le même mouvement et
+écartée pour le même motif.
+
+### État du registre après le lot
+
+Sur les **330 formes** qui atteignent le seuil de dix notices prudentes :
+
+| État | avant le lot | après | ce qui a bougé |
+|---|---:|---:|---|
+| retenu | 74 | **116** | les 40 personnes du lot, plus deux graphies rattachées (« PINOT Charles », « ENSFELDER Eugène ») |
+| écarté | 22 | **33** | les 10 formes du lot, plus « IMAGERIE PELLERIN » |
+| à instruire | 234 | **181** | reste 2 562 notices, médiane 13 par forme |
+
+`data/exports/candidats_maitres.csv` porte l'état et le motif de chacune ;
+`data/exports/maitres_instruits.csv` porte le comptage des 103 retenus, avec son lot.
+
+### Le cas Barla, à décider avant publication
+
+Jean-Baptiste Barla (1817-1896) est une personne établie : botaniste niçois, cofondateur en
+1846 du muséum d'histoire naturelle de Nice, à qui il a légué sa bibliothèque et environ
+6 000 aquarelles. Ses 5 791 notices prudentes passent donc le test d'identité sans réserve.
+
+Mais elles sont **un seul geste de catalogue répété** — le constat du 2026-07-05 n'a pas
+changé — et il pèse désormais **49 % du volume** (5 791 sur 11 872) et **dix-huit fois** le
+premier des 63 (Charles Le Brun, 310). La décision du 2026-07-05 — publier le chiffre ET
+divulguer partout le « hors ce cas » — a été prise pour le total national ; elle doit être
+étendue aux vues du volume, ou Barla écrasera chaque graphique. **Arbitrage utilisateur
+attendu au point de contrôle 1.**
+
+Hors Barla, le volume compte **6 081 notices distinctes**, soit 32 % du doute national hors
+monoculture (18 716).
+
 ## Droits photo des œuvres : audit POP (2026-07-29)
 
 Question : peut-on afficher une reproduction dans l'onglet « Œuvres » ? On a lu, pour les

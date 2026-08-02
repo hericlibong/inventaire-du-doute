@@ -1,0 +1,293 @@
+{
+ "slug": "charles-hugo",
+ "nom": "Charles Hugo",
+ "doute": 34,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 4
+  },
+  {
+   "code": "point_interrogation",
+   "notices": 30
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "M5060000255",
+   "titre": "Clément Dulac",
+   "musee": "musée d'Orsay",
+   "ville": "Paris",
+   "code": "point_interrogation",
+   "extrait": "HUGO Charles (?)"
+  },
+  {
+   "reference": "M5060000249",
+   "titre": "Photographie d'un portrait de Léopoldine dans un cadre",
+   "musee": "musée d'Orsay",
+   "ville": "Paris",
+   "code": "point_interrogation",
+   "extrait": "HUGO Charles (?)"
+  },
+  {
+   "reference": "M5060000254",
+   "titre": "Le château Elizabeth",
+   "musee": "musée d'Orsay",
+   "ville": "Paris",
+   "code": "point_interrogation",
+   "extrait": "HUGO Charles (?)"
+  },
+  {
+   "reference": "M5060000257",
+   "titre": "Le château Mont-Orgueil",
+   "musee": "musée d'Orsay",
+   "ville": "Paris",
+   "code": "point_interrogation",
+   "extrait": "HUGO Charles (?)"
+  },
+  {
+   "reference": "M5060000262",
+   "titre": "François-Victor Hugo assis, le coude gauche sur le dossier de la chaise",
+   "musee": "musée d'Orsay",
+   "ville": "Paris",
+   "code": "point_interrogation",
+   "extrait": "HUGO Charles (?)"
+  },
+  {
+   "reference": "M5060000128",
+   "titre": "Photographie d'un dessin de Victor Hugo : Le Burg",
+   "musee": "musée d'Orsay",
+   "ville": "Paris",
+   "code": "point_interrogation",
+   "extrait": "HUGO Charles (?)"
+  },
+  {
+   "reference": "M5060000264",
+   "titre": "Hauteville House",
+   "musee": "musée d'Orsay",
+   "ville": "Paris",
+   "code": "point_interrogation",
+   "extrait": "HUGO Charles (?)"
+  },
+  {
+   "reference": "M5060000126",
+   "titre": "La ferme de la Touraille",
+   "musee": "musée d'Orsay",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "HUGO Charles (attribué à)"
+  },
+  {
+   "reference": "M5060000256",
+   "titre": "Madame Victor Hugo, allongée dans l'herbe",
+   "musee": "musée d'Orsay",
+   "ville": "Paris",
+   "code": "point_interrogation",
+   "extrait": "HUGO Charles (?)"
+  },
+  {
+   "reference": "M5060000265",
+   "titre": "Madame Victor Hugo, un éventail à la main",
+   "musee": "musée d'Orsay",
+   "ville": "Paris",
+   "code": "point_interrogation",
+   "extrait": "HUGO Charles (?)"
+  },
+  {
+   "reference": "M5060000263",
+   "titre": "Saint-Hélier",
+   "musee": "musée d'Orsay",
+   "ville": "Paris",
+   "code": "point_interrogation",
+   "extrait": "HUGO Charles (?)"
+  },
+  {
+   "reference": "M5060000250",
+   "titre": "Photographie d'un portrait de Charles Hugo dans un cadre",
+   "musee": "musée d'Orsay",
+   "ville": "Paris",
+   "code": "point_interrogation",
+   "extrait": "HUGO Charles (?)"
+  },
+  {
+   "reference": "M5060000259",
+   "titre": "Guernesey, le château Cornet",
+   "musee": "musée d'Orsay",
+   "ville": "Paris",
+   "code": "point_interrogation",
+   "extrait": "HUGO Charles (?)"
+  },
+  {
+   "reference": "M5060000136",
+   "titre": "Victor Hugo et Auguste Vacquerie devant une fenêtre",
+   "musee": "musée d'Orsay",
+   "ville": "Paris",
+   "code": "point_interrogation",
+   "extrait": "HUGO Charles (?)"
+  },
+  {
+   "reference": "M5060000253",
+   "titre": "Portrait de femme non identifiée",
+   "musee": "musée d'Orsay",
+   "ville": "Paris",
+   "code": "point_interrogation",
+   "extrait": "HUGO Charles (?)"
+  },
+  {
+   "reference": "M5060000251",
+   "titre": "Photographie d'un portrait de Léopoldine",
+   "musee": "musée d'Orsay",
+   "ville": "Paris",
+   "code": "point_interrogation",
+   "extrait": "HUGO Charles (?)"
+  },
+  {
+   "reference": "M5060000133",
+   "titre": "Victor Hugo",
+   "musee": "musée d'Orsay",
+   "ville": "Paris",
+   "code": "point_interrogation",
+   "extrait": "HUGO Charles (?)"
+  },
+  {
+   "reference": "M5060000127",
+   "titre": "Le général Meszaros, les bras croisés",
+   "musee": "musée d'Orsay",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "HUGO Charles (attribué à)"
+  },
+  {
+   "reference": "M5060000137",
+   "titre": "Victor Hugo, profil gauche,appuyé contre un mur",
+   "musee": "musée d'Orsay",
+   "ville": "Paris",
+   "code": "point_interrogation",
+   "extrait": "HUGO Charles (?)"
+  },
+  {
+   "reference": "M5060000261",
+   "titre": "Puits à Jersey",
+   "musee": "musée d'Orsay",
+   "ville": "Paris",
+   "code": "point_interrogation",
+   "extrait": "HUGO Charles (?)"
+  },
+  {
+   "reference": "M5060000248",
+   "titre": "François-Victor Hugo, les bras croisés",
+   "musee": "musée d'Orsay",
+   "ville": "Paris",
+   "code": "point_interrogation",
+   "extrait": "HUGO Charles (?)"
+  },
+  {
+   "reference": "M5060000125",
+   "titre": "Saint-Hélier vu de la fenêtre de Mme Victor Hugo à Marine Terrace",
+   "musee": "musée d'Orsay",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "HUGO Charles (attribué à)"
+  },
+  {
+   "reference": "M5060000130",
+   "titre": "Photographie d'un dessin de Victor Hugo",
+   "musee": "musée d'Orsay",
+   "ville": "Paris",
+   "code": "point_interrogation",
+   "extrait": "HUGO Charles (?)"
+  },
+  {
+   "reference": "M5060000124",
+   "titre": "Les ruines du château Gros-Nez",
+   "musee": "musée d'Orsay",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "HUGO Charles (attribué à)"
+  },
+  {
+   "reference": "M5060000131",
+   "titre": "Marguerite et Méphistophélès, dessin d'Eugène Delacroix",
+   "musee": "musée d'Orsay",
+   "ville": "Paris",
+   "code": "point_interrogation",
+   "extrait": "HUGO Charles (?)"
+  },
+  {
+   "reference": "M5060000129",
+   "titre": "Le château Mont-Orgueil",
+   "musee": "musée d'Orsay",
+   "ville": "Paris",
+   "code": "point_interrogation",
+   "extrait": "HUGO Charles (?)"
+  },
+  {
+   "reference": "M5060000266",
+   "titre": "François-Victor Hugo assis, de face, la main gauche au revers de son gilet",
+   "musee": "musée d'Orsay",
+   "ville": "Paris",
+   "code": "point_interrogation",
+   "extrait": "HUGO Charles (?)"
+  },
+  {
+   "reference": "M5060000258",
+   "titre": "Portrait de femme non identifiée",
+   "musee": "musée d'Orsay",
+   "ville": "Paris",
+   "code": "point_interrogation",
+   "extrait": "HUGO Charles (?)"
+  },
+  {
+   "reference": "M5060000135",
+   "titre": "Victor Hugo et Auguste Vacquerie devant une fenêtre",
+   "musee": "musée d'Orsay",
+   "ville": "Paris",
+   "code": "point_interrogation",
+   "extrait": "HUGO Charles (?)"
+  },
+  {
+   "reference": "M5060000260",
+   "titre": "Madame Victor Hugo debout, un livre dans la main droite",
+   "musee": "musée d'Orsay",
+   "ville": "Paris",
+   "code": "point_interrogation",
+   "extrait": "HUGO Charles (?)"
+  },
+  {
+   "reference": "M5060000267",
+   "titre": "Madame Victor Hugo en robe et gilet, de face",
+   "musee": "musée d'Orsay",
+   "ville": "Paris",
+   "code": "point_interrogation",
+   "extrait": "HUGO Charles (?)"
+  },
+  {
+   "reference": "M5060000134",
+   "titre": "Victor Hugo, profil gauche, la main à la tempe",
+   "musee": "musée d'Orsay",
+   "ville": "Paris",
+   "code": "point_interrogation",
+   "extrait": "HUGO Charles (?)"
+  },
+  {
+   "reference": "M5060000252",
+   "titre": "Portrait d'homme non identifié",
+   "musee": "musée d'Orsay",
+   "ville": "Paris",
+   "code": "point_interrogation",
+   "extrait": "HUGO Charles (?)"
+  },
+  {
+   "reference": "M5060000132",
+   "titre": "Victor Hugo, menton levé, bras croisés",
+   "musee": "musée d'Orsay",
+   "ville": "Paris",
+   "code": "point_interrogation",
+   "extrait": "HUGO Charles (?)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-08-02T13:59:02+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

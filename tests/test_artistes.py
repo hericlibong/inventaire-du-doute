@@ -101,6 +101,51 @@ CAS_IDENTITE = [
     ("CORNEILLE DE LYON", "Corneille de Lyon", "distinct de Corneille Michel-Ange"),
     ("PIPPI Giulio", "Jules Romain", "Giulio Pippi dit Jules Romain"),
     ("JOYANT Jules Romain", None, "homonyme écarté"),
+
+    # --- lot 2 (2026-08-02) : l'égalité stricte « = », le nom nu et rien d'autre
+    ("David (1748-1825) (attribué à)", "Jacques-Louis David", "le maître"),
+    ("DAVID Jacques-Louis", "Jacques-Louis David", "son état civil"),
+    ("DAVID D'ANGERS Pierre-Jean", None, "le sculpteur, 1 363 mentions certaines"),
+    ("DAVID Gérard (attribué à)", None, "le primitif flamand"),
+    ("DAVID Jérôme (?)", None, "le graveur"),
+    ("DAVID Michel-Antoine", None, "encore un autre"),
+    ("TENIERS David (attribué à)", "David Téniers", "David en prénom, déjà retenu"),
+    # --- lot 2 : les graphies rapprochées, vérifiées sur les dates du musée
+    ("PINOT Charles François (dessinateur, attribué à)", "Charles François Pinot",
+     "sa graphie longue"),
+    ("PINOT Charles (dessinateur, attribué à)", "Charles François Pinot",
+     "sa graphie courte, mêmes dates (1817-1874)"),
+    ("IMAGERIE PINOT-SAGAIRE", None, "la raison sociale, pas l'homme"),
+    ("Ensfelder Eugène (1836-1876) (attribué à)", "Charles Eugène Ensfelder",
+     "« Eugène » et « Charles Eugène » ont les mêmes dates"),
+    ("HOGENBERG Frans", "Frans Hogenberg", "sa graphie flamande"),
+    ("HOGENBERG Nicolas", None, "un autre graveur de la famille"),
+    ("COTER Colijn de", "Colijn de Coter", "l'ordre inverse du même nom"),
+    # --- lot 2 : les parents séparés, jamais fusionnés
+    ("DUTHOIT Louis (?)", "Louis Duthoit", "le frère cadet"),
+    ("DUTHOIT Aimé (?)", "Aimé Duthoit", "le frère aîné"),
+    ("PASSE Crispin I Van de (?, graveur)", "Crispin de Passe l'Ancien", "le père"),
+    ("PASSE Crispin II Van de (?, graveur)", "Crispin de Passe le Jeune",
+     "le fils : « I » ne capture pas « II »"),
+    ("TURPIN DE CRISSE Lancelot Théodore Comte de (?)", "Turpin de Crissé",
+     "le fils, retenu"),
+    ("TURPIN DE CRISSE Père (?, dessinateur)", None,
+     "le père, désigné par son seul rang de famille"),
+    ("ALLEAUME Ludovic", None, "son frère"),
+    ("POLLAIUOLO Piero", None, "son frère"),
+    ("HUGO Charles (?)", "Charles Hugo", "le fils photographe"),
+    ("HUGO Victor", None, "le père écrivain"),
+    # --- lot 2 : ce qui n'est pas une personne, ou pas une personne nommée
+    ("MELLET Jules Fils (?)", None, "atelier de famille, aucun prénom individualisant"),
+    ("PELLERIN (imprimeur, éditeur, attribué à)", None, "l'imagerie d'Épinal"),
+    ("MOGHOLE DE MURSHIDABAD (école)", None, "une école régionale"),
+    ("PETER (attribué à)", None, "un nom sans prénom"),
+    ("VARADY A (attribué à)", None, "un prénom réduit à une initiale"),
+    ("BUQUET (atelier)", None, "un nom nu et un atelier"),
+    ("Prévost (atelier)", None, "un nom nu et un atelier"),
+    ("Barla Jean-Baptiste (1817-1896) (attribué à)", "Jean-Baptiste Barla",
+     "le naturaliste niçois, une personne malgré le volume"),
+    ("BARLA Antoinette", None, "une autre Barla"),
 ]
 
 
@@ -178,13 +223,21 @@ CAS_STATUT = [
     ("CARRACCI L'UN DES", "CARRACCI l'un des (attribué à)", "écarté",
      "mention collective"),
     ("A", "Attribué à", "écarté", "la mention ne porte aucun nom"),
-    # ceux-là restent OUVERTS : rien dans les données ne permet de les retirer
+    # --- instruits au lot 2 (2026-08-02) : la réponse est écrite, dans un sens
+    # comme dans l'autre
     ("BARLA JEAN-BAPTISTE", "Barla Jean-Baptiste (1817-1896) (attribué à)",
-     "à instruire", "fonds local massif, mais c'est une personne"),
-    ("DAVID", "David (1748-1825) (attribué à)", "à instruire",
-     "probablement Jacques-Louis David : à vérifier, pas à écarter"),
-    ("MELLET JULES FILS", "MELLET Jules Fils (?)", "à instruire",
-     "« fils » désigne une personne d'une dynastie, pas un atelier"),
+     "retenu", "fonds local massif, mais c'est bien une personne"),
+    ("DAVID", "David (1748-1825) (attribué à)", "retenu",
+     "Jacques-Louis David, pris par égalité stricte"),
+    ("MELLET JULES FILS", "MELLET Jules Fils (?)", "écarté",
+     "instruit puis écarté : les mêmes notices nomment les trois Mellet"),
+    ("PELLERIN", "Pellerin (imprimeur, éditeur, attribué à)", "écarté",
+     "instruit puis écarté : une raison sociale"),
+    # celui-là reste OUVERT : rien dans les données ne permet de le retirer, et
+    # il n'a pas encore été regardé
+    ("CASTIGLIONE GIOVANNI BENEDETTO",
+     "Castiglione Giovanni Benedetto (1609-1664) (attribué à)",
+     "à instruire", "sous le seuil du lot 2, jamais examiné"),
 ]
 
 

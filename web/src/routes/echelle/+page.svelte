@@ -17,15 +17,16 @@
 
 	// Comptages par mention pour chaque série (objet code → nombre).
 	const valGlobal = Object.fromEntries(vue.familles.map((f) => [f.code, f.global]));
-	// Les DEUX panneaux comptent des notices distinctes : « 24 507 notices » à
-	// gauche, « 3 668 notices » à droite. La somme des profils de maîtres (3 674)
-	// compterait deux fois les six notices qui nomment deux maîtres — elle ne peut
-	// pas porter un libellé « notices » (decisions.md, 2026-07-22 ter).
+	// Les DEUX panneaux comptent des notices distinctes : le total national à
+	// gauche, celui de la liste à droite. La somme des profils de maîtres
+	// compterait deux fois les notices qui nomment deux artistes (6 avec les 63
+	// premiers, 157 depuis le lot du 2026-08-02) — elle ne peut pas porter un
+	// libellé « notices » (decisions.md, 2026-07-22 ter).
 	const valListe = Object.fromEntries(vue.familles.map((f) => [f.code, f.dans_liste_notices]));
 	const totalGlobal = vue.totaux.doute_total; // 24 507
 	const totalListe = vue.totaux.doute_notices_liste;
-	// L'effectif de la liste vient des données : il a déjà changé une fois
-	// (27 → 63) et changera encore à chaque lot de maîtres instruits.
+	// L'effectif de la liste vient des données : il a déjà changé deux fois
+	// (27 → 63 → 103) et changera encore à chaque lot instruit.
 	const nbNoms = vue.nb_maitres;
 
 	// Échelle COMMUNE aux deux panneaux : la plus grande part observée, toutes séries

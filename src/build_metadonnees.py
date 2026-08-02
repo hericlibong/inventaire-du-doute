@@ -43,7 +43,7 @@ csv.field_size_limit(min(sys.maxsize, 2**31 - 1))
 
 
 def references_publiees() -> set:
-    """Les références uniques présentes dans les 63 fiches d'œuvres."""
+    """Les références uniques présentes dans les fiches d'œuvres."""
     refs = set()
     for chemin in glob.glob(str(DOSSIER_OEUVRES / "*.json")):
         for o in json.load(open(chemin, encoding="utf-8"))["oeuvres"]:

@@ -1,0 +1,257 @@
+{
+ "slug": "nicolaus-hoffmann",
+ "nom": "Nicolaus Hoffmann",
+ "doute": 30,
+ "familles": [
+  {
+   "code": "atelier_de",
+   "notices": 30
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "000DE025389",
+   "titre": "Lyonnais-Maine-Perche",
+   "musee": "musée franco-américain du château de Blérancourt",
+   "ville": "Blérancourt",
+   "code": "atelier_de",
+   "extrait": "HOFFMANN Nicolaus (atelier)"
+  },
+  {
+   "reference": "000DE025399",
+   "titre": "Rouergue, Bourgogne, Normandie",
+   "musee": "musée franco-américain du château de Blérancourt",
+   "ville": "Blérancourt",
+   "code": "atelier_de",
+   "extrait": "HOFFMANN Nicolaus (atelier)"
+  },
+  {
+   "reference": "000DE025391",
+   "titre": "SAVOIE-CARIGNAN-AQUITAINE-ANJOU",
+   "musee": "musée franco-américain du château de Blérancourt",
+   "ville": "Blérancourt",
+   "code": "atelier_de",
+   "extrait": "HOFFMANN Nicolaus (atelier)"
+  },
+  {
+   "reference": "000DE025379",
+   "titre": "Colonel Général",
+   "musee": "musée franco-américain du château de Blérancourt",
+   "ville": "Blérancourt",
+   "code": "atelier_de",
+   "extrait": "HOFFMANN Nicolaus (atelier)"
+  },
+  {
+   "reference": "000DE025397",
+   "titre": "Alsace, Anhalt, Lamark, Royal Suedois",
+   "musee": "musée franco-américain du château de Blérancourt",
+   "ville": "Blérancourt",
+   "code": "atelier_de",
+   "extrait": "HOFFMANN Nicolaus (atelier)"
+  },
+  {
+   "reference": "000DE025396",
+   "titre": "La Sarre, La Fére, Beauvoisis",
+   "musee": "musée franco-américain du château de Blérancourt",
+   "ville": "Blérancourt",
+   "code": "atelier_de",
+   "extrait": "HOFFMANN Nicolaus (atelier)"
+  },
+  {
+   "reference": "000DE025395",
+   "titre": "Lorraine-Berry-Hainault",
+   "musee": "musée franco-américain du château de Blérancourt",
+   "ville": "Blérancourt",
+   "code": "atelier_de",
+   "extrait": "HOFFMANN Nicolaus (atelier)"
+  },
+  {
+   "reference": "000DE025385",
+   "titre": "Auvergne, Gatinois et Flandre",
+   "musee": "musée franco-américain du château de Blérancourt",
+   "ville": "Blérancourt",
+   "code": "atelier_de",
+   "extrait": "HOFFMANN Nicolaus (atelier)"
+  },
+  {
+   "reference": "000DE025408",
+   "titre": "Tambour et cymbalier noir ; Le Cimbalier (autre titre)",
+   "musee": "musée franco-américain du château de Blérancourt",
+   "ville": "Blérancourt",
+   "code": "atelier_de",
+   "extrait": "HOFFMANN Nicolaus (atelier)"
+  },
+  {
+   "reference": "000DE025382",
+   "titre": "Austrasie-Normandie-Neustrie",
+   "musee": "musée franco-américain du château de Blérancourt",
+   "ville": "Blérancourt",
+   "code": "atelier_de",
+   "extrait": "HOFFMANN Nicolaus (atelier)"
+  },
+  {
+   "reference": "000DE025401",
+   "titre": "Languedoc-Beauce ; Médoc",
+   "musee": "musée franco-américain du château de Blérancourt",
+   "ville": "Blérancourt",
+   "code": "atelier_de",
+   "extrait": "HOFFMANN Nicolaus (atelier)"
+  },
+  {
+   "reference": "000DE025407",
+   "titre": "Provence ; Piémont-Blaisois",
+   "musee": "musée franco-américain du château de Blérancourt",
+   "ville": "Blérancourt",
+   "code": "atelier_de",
+   "extrait": "HOFFMANN Nicolaus (atelier)"
+  },
+  {
+   "reference": "000DE025388",
+   "titre": "Brie, Poitou, Bresse",
+   "musee": "musée franco-américain du château de Blérancourt",
+   "ville": "Blérancourt",
+   "code": "atelier_de",
+   "extrait": "HOFFMANN Nicolaus (atelier)"
+  },
+  {
+   "reference": "000DE025405",
+   "titre": "Foix-Rohan-Soubise-Barrois",
+   "musee": "musée franco-américain du château de Blérancourt",
+   "ville": "Blérancourt",
+   "code": "atelier_de",
+   "extrait": "HOFFMANN Nicolaus (atelier)"
+  },
+  {
+   "reference": "000DE025383",
+   "titre": "La Marine-Auxerrois-Bourbonnais",
+   "musee": "musée franco-américain du château de Blérancourt",
+   "ville": "Blérancourt",
+   "code": "atelier_de",
+   "extrait": "HOFFMANN Nicolaus (atelier)"
+  },
+  {
+   "reference": "000DE025390",
+   "titre": "Aunis-Bassigny-Touraine",
+   "musee": "musée franco-américain du château de Blérancourt",
+   "ville": "Blérancourt",
+   "code": "atelier_de",
+   "extrait": "HOFFMANN Nicolaus (atelier)"
+  },
+  {
+   "reference": "000DE025384",
+   "titre": "Forez, Béarn, Agenois",
+   "musee": "musée franco-américain du château de Blérancourt",
+   "ville": "Blérancourt",
+   "code": "atelier_de",
+   "extrait": "HOFFMANN Nicolaus (atelier)"
+  },
+  {
+   "reference": "000DE025387",
+   "titre": "Royal, Dauphin, Royal Vaisseau, La Couronne",
+   "musee": "musée franco-américain du château de Blérancourt",
+   "ville": "Blérancourt",
+   "code": "atelier_de",
+   "extrait": "HOFFMANN Nicolaus (atelier)"
+  },
+  {
+   "reference": "000DE025386",
+   "titre": "Cambréris, Guyenne, Viennois",
+   "musee": "musée franco-américain du château de Blérancourt",
+   "ville": "Blérancourt",
+   "code": "atelier_de",
+   "extrait": "HOFFMANN Nicolaus (atelier)"
+  },
+  {
+   "reference": "000DE025381",
+   "titre": "Navarre-Armagnac-Champagne",
+   "musee": "musée franco-américain du château de Blérancourt",
+   "ville": "Blérancourt",
+   "code": "atelier_de",
+   "extrait": "HOFFMANN Nicolaus (atelier)"
+  },
+  {
+   "reference": "000DE025392",
+   "titre": "Maréchal de Turenne-Dauphine-Ile de France",
+   "musee": "musée franco-américain du château de Blérancourt",
+   "ville": "Blérancourt",
+   "code": "atelier_de",
+   "extrait": "HOFFMANN Nicolaus (atelier)"
+  },
+  {
+   "reference": "000DE025398",
+   "titre": "Royal Roussillon-Royal de Marine-Royal Comtois",
+   "musee": "musée franco-américain du château de Blérancourt",
+   "ville": "Blérancourt",
+   "code": "atelier_de",
+   "extrait": "HOFFMANN Nicolaus (atelier)"
+  },
+  {
+   "reference": "000DE025394",
+   "titre": "La Reine, Orléans, Arois, Condé, Bourbon",
+   "musee": "musée franco-américain du château de Blérancourt",
+   "ville": "Blérancourt",
+   "code": "atelier_de",
+   "extrait": "HOFFMANN Nicolaus (atelier)"
+  },
+  {
+   "reference": "000DE025403",
+   "titre": "Monsieur, Penthièvre, Conti, Chartre, Enghien",
+   "musee": "musée franco-américain du château de Blérancourt",
+   "ville": "Blérancourt",
+   "code": "atelier_de",
+   "extrait": "HOFFMANN Nicolaus (atelier)"
+  },
+  {
+   "reference": "000DE025406",
+   "titre": "Dillon-Berwick-Walsh",
+   "musee": "musée franco-américain du château de Blérancourt",
+   "ville": "Blérancourt",
+   "code": "atelier_de",
+   "extrait": "HOFFMANN Nicolaus (atelier)"
+  },
+  {
+   "reference": "000DE025402",
+   "titre": "Vivarais-Vexin-Beaujolais",
+   "musee": "musée franco-américain du château de Blérancourt",
+   "ville": "Blérancourt",
+   "code": "atelier_de",
+   "extrait": "HOFFMANN Nicolaus (atelier)"
+  },
+  {
+   "reference": "000DE025400",
+   "titre": "Royal Italien ; Royal Corse",
+   "musee": "musée franco-américain du château de Blérancourt",
+   "ville": "Blérancourt",
+   "code": "atelier_de",
+   "extrait": "HOFFMANN Nicolaus (atelier)"
+  },
+  {
+   "reference": "000DE025380",
+   "titre": "Provence-Piémont-Blaisois",
+   "musee": "musée franco-américain du château de Blérancourt",
+   "ville": "Blérancourt",
+   "code": "atelier_de",
+   "extrait": "HOFFMANN Nicolaus (atelier)"
+  },
+  {
+   "reference": "000DE025404",
+   "titre": "Régiments Boulonnais, Angournois et Saintonge",
+   "musee": "musée franco-américain du château de Blérancourt",
+   "ville": "Blérancourt",
+   "code": "atelier_de",
+   "extrait": "HOFFMANN Nicolaus (atelier)"
+  },
+  {
+   "reference": "000DE025393",
+   "titre": "Soissonnais-Limousin-Bretagne",
+   "musee": "musée franco-américain du château de Blérancourt",
+   "ville": "Blérancourt",
+   "code": "atelier_de",
+   "extrait": "HOFFMANN Nicolaus (atelier)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-08-02T13:59:02+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

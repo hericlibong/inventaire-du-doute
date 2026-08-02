@@ -1,9 +1,10 @@
-"""Temps 5 — registre d'instruction des maîtres.
+"""Registre d'instruction des artistes (ouvert au temps 5, tenu à chaque lot).
 
-Deux livrables, produits en une seule passe sur le CSV :
+Deux livrables. Le premier demande une passe sur le CSV, le second non — d'où
+l'option `--formes`, qui ne recalcule que les statuts (lot 2, 2026-08-02).
 
-1. data/exports/maitres_instruits.csv — un maître par ligne, pour les personnes
-   RETENUES (les 27 du lot initial + les 36 instruits le 2026-07-22). Comptage
+1. data/exports/maitres_instruits.csv — un artiste par ligne, pour les personnes
+   RETENUES (27 au 2026-07-07, +36 au 2026-07-22, +40 au 2026-08-02). Comptage
    par personne, en références Joconde uniques (unité des temps 1-2) : doute,
    attributions certaines, copies « d'après », musées détenteurs. C'est la vue
    qui prouve que chaque maître retenu dépasse bien le seuil de 10 APRÈS
@@ -19,12 +20,14 @@ Deux livrables, produits en une seule passe sur le CSV :
    « à instruire » n'est PAS « écarté » : rien n'est retiré par les données, la
    sélection reste ouverte à des lots ultérieurs.
 
-Usage : uv run python src/registre_maitres.py  (~2 min)
+Usage : uv run python src/registre_maitres.py            (passe complète, ~25 min)
+        uv run python src/registre_maitres.py --formes   (statuts seuls, instantané)
 """
 
 import csv
 import json
 import re
+import sys
 from datetime import datetime, timezone
 
 import pandas as pd
@@ -41,6 +44,48 @@ LOT_INITIAL = {
     "Nicolas Poussin", "Simon Vouet", "Greuze", "Van Dyck", "Le Corrège",
     "Pierre Mignard", "Véronèse", "Hyacinthe Rigaud", "Géricault", "Fragonard",
     "Raphaël", "Ribera", "Titien",
+}
+
+# Le lot du 2026-08-02 : 40 personnes retenues parmi les 50 formes du registre
+# qui portaient au moins 25 notices prudentes et restaient « à instruire ».
+LOT_2 = {
+    "Jean-Baptiste Barla", "Alexandre Clausel", "Charles Normand", "Léon Tirode",
+    "Louis Morinet", "Giacinto Calandrucci", "Georges Ferdinand Bigot",
+    "Léon Fort", "Louis Duthoit", "Aimé Duthoit", "Charles François Pinot",
+    "André Marie Florentin Giraud", "Auguste Vacquerie", "François Georgin",
+    "Louis Verjat", "Peter Hawke", "Auguste Alleaume",
+    "Antoine Gabriel Willermet", "Turpin de Crissé", "Charles Hugo",
+    "Gustave Lancelot", "Charles du Ry", "Odilon Roche", "Frans Hogenberg",
+    "Charles Eugène Ensfelder", "Nicolaus Hoffmann", "Nicasius Bernaerts",
+    "Crispin de Passe l'Ancien", "Crispin de Passe le Jeune",
+    "Amable Louis Crapelet", "Auguste Beuret", "Jean-Charles François Leloy",
+    "Joseph Hussenot", "Antonio del Pollaiuolo", "Henry Hennault",
+    "Israël Henriet", "René Ackermann", "Louis Hertig", "Colijn de Coter",
+    "Jacques-Louis David",
+}
+
+# ÉCARTÉS INSTRUITS — les formes examinées une par une et NON retenues, avec le
+# motif exact. Elles ne sont pas « à instruire » : elles l'ont été, et la réponse
+# est non. Le motif est publiable tel quel : c'est ce qui rend la sélection
+# contrôlable au lieu d'être un panthéon opaque (decisions.md, 2026-07-21 quater,
+# décision 4). La clé est le nom du registre, sa formule retirée.
+ECARTES_INSTRUITS = {
+    "MELLET JACQUES PERE": "atelier de famille : les mêmes 41 notices nomment "
+                           "les trois Mellet, aucun prénom n'individualise",
+    "MELLET JULES FILS": "atelier de famille : les mêmes 41 notices nomment "
+                         "les trois Mellet, aucun prénom n'individualise",
+    "MELLET HENRI FILS": "atelier de famille : les mêmes 41 notices nomment "
+                         "les trois Mellet, aucun prénom n'individualise",
+    "TURPIN DE CRISSE PERE": "désigné seulement comme « le père » ; 34 de ses "
+                             "35 notices nomment le fils, retenu à son nom",
+    "PETER": "nom sans prénom : plusieurs Peter dans la base",
+    "VARADY": "prénom réduit à une initiale (« VARADY A »)",
+    "BUQUET": "nom nu, mention « atelier » ; plusieurs Buquet dans la base",
+    "PREVOST": "nom nu, mention « atelier » ; plusieurs Prévost dans la base",
+    "PELLERIN": "raison sociale (imagerie d'Épinal), pas une personne",
+    "PELLERIN & CIE": "raison sociale (imagerie d'Épinal), pas une personne",
+    "IMAGERIE PELLERIN": "raison sociale (imagerie d'Épinal), pas une personne",
+    "MOGHOLE DE MURSHIDABAD": "école régionale, pas une personne",
 }
 
 # Marqueurs d'une entité qui n'est pas une seule personne (mots entiers sur le
@@ -64,6 +109,9 @@ def statut_forme(nom: str, pivot_exemple: str) -> tuple[str, str]:
     maitre = _trouve_maitre(pivot_exemple)
     if maitre:
         return "retenu", maitre
+    # instruit à l'œil et non retenu : le motif prime sur le tri automatique
+    if nom in ECARTES_INSTRUITS:
+        return "écarté", ECARTES_INSTRUITS[nom]
     # un nom réduit à une lettre ou à rien : la mention ne portait qu'une
     # formule (« Attribué à », 30 notices) ou un caractère isolé
     if len(nom.replace(")", "").replace("-", "").strip()) <= 1:
@@ -109,9 +157,15 @@ def main() -> None:
     lignes = []
     for nom, *_ in MAITRES:
         a = agg[nom]
+        if nom in LOT_INITIAL:
+            lot = "initial-2026-07-07"
+        elif nom in LOT_2:
+            lot = "lot2-2026-08-02"
+        else:
+            lot = "temps5-2026-07-22"
         lignes.append({
             "maitre": nom,
-            "lot": "initial-2026-07-07" if nom in LOT_INITIAL else "temps5-2026-07-22",
+            "lot": lot,
             "notices_prudentes": len(a["doute"]),
             "attributions_certaines": len(a["propre"]),
             "copies_d_apres": len(a["copie"]),
@@ -133,6 +187,24 @@ def main() -> None:
     else:
         print("  tous ≥ 10 notices prudentes uniques après regroupement ✓")
 
+    statuts_des_formes(len(lignes))
+
+    print(f"\n{'notices':>8}{'cert.':>7}{'copies':>7}{'mus.doute':>10}"
+          f"{'mus.prés.':>10}  maître  ·  lot")
+    for l in lignes:
+        print(f"{l['notices_prudentes']:>8}{l['attributions_certaines']:>7}"
+              f"{l['copies_d_apres']:>7}{l['musees_doute']:>10}"
+              f"{l['musees_presence']:>10}  {l['maitre']}  · {l['lot'][:6]}")
+
+
+def statuts_des_formes(nb_maitres: int) -> None:
+    """Statuts du registre exhaustif + résumé pour la page Méthode.
+
+    Séparé du reste depuis le lot 2 (2026-08-02) : cette moitié ne lit QUE
+    `candidats_maitres.csv`, jamais le CSV de 1,1 Go. Corriger un motif d'écart
+    ou ajouter une forme instruite ne doit pas coûter une relecture d'un million
+    de notices. Appel direct : `uv run python src/registre_maitres.py --formes`.
+    """
     # 2. Registre exhaustif enrichi du statut (on relit le CSV du temps 4)
     chemin2 = DOSSIER_EXPORTS / "candidats_maitres.csv"
     with open(chemin2, encoding="utf-8") as f:
@@ -170,19 +242,17 @@ def main() -> None:
         "retenues": compte["retenu"],
         "ecartees": compte["écarté"],
         "a_instruire": compte["à instruire"],
-        "maitres_retenus": len(lignes),
+        "maitres_retenus": nb_maitres,
         "date_generation": datetime.now(timezone.utc).isoformat(timespec="seconds"),
     }, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"→ {chemin3.name}")
 
-    print(f"\n{'notices':>8}{'cert.':>7}{'copies':>7}{'mus.doute':>10}"
-          f"{'mus.prés.':>10}  maître  ·  lot")
-    for l in lignes:
-        lot = "27" if l["lot"].startswith("initial") else "T5"
-        print(f"{l['notices_prudentes']:>8}{l['attributions_certaines']:>7}"
-              f"{l['copies_d_apres']:>7}{l['musees_doute']:>10}"
-              f"{l['musees_presence']:>10}  {l['maitre']}  · {lot}")
-
 
 if __name__ == "__main__":
-    main()
+    if "--formes" in sys.argv:
+        # les statuts seuls, sans relire le CSV : `maitres_instruits.csv` garde
+        # les chiffres du dernier passage complet
+        with open(DOSSIER_EXPORTS / "maitres_instruits.csv", encoding="utf-8") as f:
+            statuts_des_formes(sum(1 for _ in f) - 1)
+    else:
+        main()
