@@ -37,6 +37,14 @@
 		selection;
 		museeActif = null;
 	});
+
+	// Carte → œuvres (phase 3) : le musée choisi sur la carte devient le filtre de
+	// l'onglet « Œuvres », et on y bascule. L'artiste ne change pas. Un seul
+	// système de filtrage : la carte ne filtre rien, elle pose l'état commun.
+	function voirOeuvresDuMusee(code) {
+		museeActif = code;
+		vue = 'oeuvres';
+	}
 </script>
 
 <!-- Disposition refondue (2026-07-28) : une SEULE grille continue à deux colonnes,
@@ -101,7 +109,7 @@
 					{:else if vue === 'oeuvres'}
 						<OeuvresMaitre {maitre} bind:museeActif />
 					{:else}
-						<CarteMaitre {maitre} />
+						<CarteMaitre {maitre} onVoirOeuvres={voirOeuvresDuMusee} />
 					{/if}
 				</div>
 			{/if}

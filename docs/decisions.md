@@ -2,6 +2,41 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-02 (septies) — La carte mène aux œuvres, par un panneau et non par une infobulle
+
+Phase 3 du volume. La carte du profil disait d'où viennent les notices ; elle ne menait nulle
+part. Un point porte maintenant une action : **« Voir les 276 œuvres conservées dans ce
+musée »**, qui ouvre l'onglet « Œuvres » avec ce musée déjà filtré, l'artiste inchangé.
+
+**L'action ne vit pas dans l'infobulle.** C'était le piège à éviter : une infobulle s'efface
+au premier mouvement de souris, on ne peut pas viser un lien dedans. Le survol renseigne, le
+**choix** engage — deux états distincts, comme sur le graphique du profil depuis le
+2026-07-27. Choisir un point ouvre au flanc de la carte un panneau qui reste, et c'est lui
+qui porte les liens.
+
+**Tous les points se choisissent, de la même façon.** Auparavant, un musée à une seule notice
+était un lien direct vers POP et les autres n'étaient pas cliquables : deux comportements pour
+un même signe, et le lien le plus utile caché derrière un survol. **Le lien POP n'est pas
+perdu, il a rejoint le panneau**, où il est lisible et cliquable. Souris, toucher, Entrée et
+Espace ouvrent le panneau ; le point choisi est cerné d'encre, seul état persistant de la carte.
+
+**Le cas sans carte est traité, et il est majoritaire.** En dessous de deux musées
+projetables, la carte cède la place à une phrase — c'est la situation de trente des trente-neuf
+artistes entrés le 2026-08-02, dont le doute n'est écrit que dans un seul musée. L'action
+figure aussi là, sous la phrase, et dans la mention « hors cadre métropolitain » quand elle ne
+concerne qu'un musée.
+
+**Un seul état filtre.** La carte ne filtre rien : elle appelle `onVoirOeuvres(code)`, et la
+page pose `museeActif` puis bascule d'onglet. Le musée choisi SUR la carte (`choisi`) est une
+sélection de lecture, locale et sans effet sur la liste ; le musée qui filtre
+(`museeActif`) vit dans la page. Deux états, une seule autorité — c'est la consigne « ne pas
+créer deux systèmes indépendants de filtrage » prise au mot.
+
+**Trajet inverse vérifié** : arrivé sur « Œuvres », le lecteur voit le musée dans la liste
+déroulante et « Retirer ce filtre » juste à côté. Le garde-fou du sélecteur a été élargi — il
+s'affiche dès qu'un filtre est actif, même chez un artiste à musée unique, pour qu'aucun filtre
+posé de l'extérieur ne soit sans porte de sortie.
+
 ## 2026-08-02 (sexies) — Filtrer les œuvres par musée : deux filtres emboîtés, un seul état
 
 Phase 2 du volume. L'onglet « Œuvres » listait la totalité des œuvres concernées d'un artiste,

@@ -14,7 +14,10 @@
 	import { FAMILLE_PUBLIC, notices } from '$lib/familles-public.js';
 	import { estProjetable, creerProjection, creerChemin, normaliserFond, ecarterPoints } from '$lib/geo.js';
 
-	let { maitre } = $props();
+	// `onVoirOeuvres(code)` remonte à la page le musée choisi : elle pose le filtre
+	// et bascule sur l'onglet « Œuvres ». La carte ne filtre rien elle-même — il n'y
+	// a qu'un seul système de filtrage, et son état vit dans la page (phase 2).
+	let { maitre, onVoirOeuvres = null } = $props();
 
 	// Repère fixe du dessin (le SVG scale via viewBox, la projection est calée sur
 	// ces mêmes nombres → les points tombent au bon endroit quel que soit l'écran).
@@ -40,6 +43,10 @@
 	// « N notice(s) concernée(s) » — accord géré par notices(), puis participe accordé.
 	const concernees = (n) => `${notices(n)} concernée${n > 1 ? 's' : ''}`;
 
+	// Intitulé de l'action, accordé au singulier comme au pluriel.
+	const voirOeuvres = (n) =>
+		n === 1 ? 'Voir l’œuvre conservée dans ce musée' : `Voir les ${nombre(n)} œuvres conservées dans ce musée`;
+
 	// Ventilation du musée par FAMILLE PUBLIQUE (jamais de niveau ni de jargon),
 	// triée par valeur décroissante (dataviz : trier par valeur). Chaque ligne
 	// porte le libellé public et la couleur STABLE de la famille (pastille).
@@ -64,28 +71,29 @@
 			const [x, y] = projection([m.lon, m.lat]);
 			const lignes = ventilation(m);
 			const detail = lignes.map((l) => `${l.label} ${l.valeur}`).join(', ');
-			// Musée à une seule notice : le point devient un lien vers la fiche
-			// publique POP. Le titre (s'il existe) sert d'aperçu dans le tooltip et
-			// d'intitulé de lien. Les musées multi-notices restent non cliquables.
+			// TOUS les points se choisissent, et de la même façon (2026-08-02,
+			// phase 3). Le point à une seule notice était auparavant un lien direct
+			// vers POP : ce lien n'est pas perdu, il a rejoint le panneau du musée,
+			// où il reste lisible et cliquable — un lien utile ne doit pas dépendre
+			// d'une infobulle qui s'efface au premier mouvement de souris.
 			const ou = m.doute === 1 ? m.oeuvre_unique : null;
-			const titre = ou?.titre || null;
-			const href = ou ? lienPop(ou.reference) : null;
 			return {
 				code: m.code,
 				x,
 				y,
-				href,
-				lienAria: href
-					? `${m.nom}, ${m.ville} : ${concernees(m.doute)}, ${detail}. ` +
-						`Voir la fiche publique${titre ? ` de « ${titre} »` : ' de cette œuvre'}.`
-					: null,
+				nom: m.nom,
+				ville: m.ville,
+				doute: m.doute,
+				lignes,
+				oeuvreUnique: ou ?? null,
 				tt: {
 					header: `${m.nom}, ${m.ville}`,
 					valeur: concernees(m.doute),
-					titre,
+					titre: ou?.titre || null,
 					lignes
 				},
-				resume: `${m.nom}, ${m.ville} : ${concernees(m.doute)}. ${detail}.`
+				resume: `${m.nom}, ${m.ville} : ${concernees(m.doute)}. ${detail}. ` +
+					`Choisir ce musée pour ${voirOeuvres(m.doute).toLowerCase()}.`
 			};
 		});
 		return ecarterPoints(bruts, 2 * R_POINT + 1.5);
@@ -115,6 +123,31 @@
 	function cache() {
 		actif = null;
 	}
+
+	// --- Musée CHOISI : persistant, à la différence du survol -------------------
+	// Le survol renseigne, le choix engage. Deux états distincts, comme sur le
+	// graphique du profil : l'infobulle s'efface dès qu'on bouge, le panneau reste
+	// tant qu'on ne le ferme pas — c'est lui qui porte les liens.
+	let choisi = $state(null); // code Muséofile
+	const musee = $derived(points.find((p) => p.code === choisi) ?? null);
+
+	// Changer d'artiste referme le panneau : un code de musée ne vaut que pour
+	// l'artiste où il a été choisi.
+	$effect(() => {
+		maitre.nom;
+		choisi = null;
+	});
+
+	function choisir(code) {
+		choisi = choisi === code ? null : code;
+	}
+
+	function auClavier(event, code) {
+		if (event.key === 'Enter' || event.key === ' ') {
+			event.preventDefault();
+			choisir(code);
+		}
+	}
 </script>
 
 <figure class="carte">
@@ -128,40 +161,28 @@
 				{#each regions as d, i (i)}
 					<path {d} class="region" />
 				{/each}
-				<!-- Un point = un musée (tous de même taille). Musée à une seule notice :
-				     le point est un LIEN vers la fiche publique POP (le survol/focus
-				     montre l'aperçu). Musée multi-notices : point non cliquable, tooltip
-				     seul (comportement inchangé). -->
+				<!-- Un point = un musée (tous de même taille, et tous choisissables de
+				     la même façon : souris, toucher, Entrée ou Espace). Le survol
+				     renseigne, le choix ouvre le panneau au flanc — c'est lui qui porte
+				     les liens, jamais l'infobulle. -->
 				{#each points as p (p.code)}
-					{#if p.href}
-						<a
-							class="lien-point"
-							href={p.href}
-							target="_blank"
-							rel="noreferrer"
-							aria-label={p.lienAria}
-							onmouseenter={(e) => montre(e, p)}
-							onmouseleave={cache}
-							onfocus={(e) => montre(e, p)}
-							onblur={cache}
-						>
-							<circle cx={p.x} cy={p.y} r={R_POINT} class="point" aria-hidden="true" />
-						</a>
-					{:else}
-						<circle
-							cx={p.x}
-							cy={p.y}
-							r={R_POINT}
-							class="point"
-							tabindex="0"
-							role="button"
-							aria-label={p.resume}
-							onmouseenter={(e) => montre(e, p)}
-							onmouseleave={cache}
-							onfocus={(e) => montre(e, p)}
-							onblur={cache}
-						/>
-					{/if}
+					<circle
+						cx={p.x}
+						cy={p.y}
+						r={R_POINT}
+						class="point"
+						class:choisi={choisi === p.code}
+						tabindex="0"
+						role="button"
+						aria-pressed={choisi === p.code}
+						aria-label={p.resume}
+						onclick={() => choisir(p.code)}
+						onkeydown={(e) => auClavier(e, p.code)}
+						onmouseenter={(e) => montre(e, p)}
+						onmouseleave={cache}
+						onfocus={(e) => montre(e, p)}
+						onblur={cache}
+					/>
 				{/each}
 			</svg>
 
@@ -171,24 +192,66 @@
 		</div>
 
 		<div class="flanc">
-			<!-- Légende : un seul repère de point (présence). Le nombre de notices par
-			     musée se lit au survol, pas dans la taille. -->
-			<div class="legende">
-				<svg class="repere" viewBox="0 0 {2 * R_POINT} {2 * R_POINT}" width={2 * R_POINT} height={2 * R_POINT} aria-hidden="true">
-					<circle cx={R_POINT} cy={R_POINT} r={R_POINT} class="point" />
-				</svg>
-				<p class="legende-texte">
-					Un point = un musée ayant publié au moins une notice concernée.
-					Passez sur un point pour voir combien, et sous quelles formules.
-				</p>
-			</div>
+			<!-- Panneau du musée choisi : le seul endroit où vivent les liens. Il
+			     remplace la légende tant qu'un musée est choisi. -->
+			{#if musee}
+				<div class="panneau-musee" role="group" aria-label="Musée choisi">
+					<p class="panneau-nom">{musee.nom}<span class="panneau-ville">{musee.ville}</span></p>
+					<p class="panneau-compte">{concernees(musee.doute)}</p>
+					<ul class="panneau-mentions">
+						{#each musee.lignes as l (l.label)}
+							<li>
+								<span class="pastille" style="background: {l.couleur}"></span>
+								<span class="mention-label">{l.label}</span>
+								<span class="mention-n">{l.valeur}</span>
+							</li>
+						{/each}
+					</ul>
+					{#if onVoirOeuvres}
+						<button type="button" class="action" onclick={() => onVoirOeuvres(musee.code)}>
+							{voirOeuvres(musee.doute)}&nbsp;→
+						</button>
+					{/if}
+					{#if musee.oeuvreUnique}
+						<!-- Le lien POP du musée à une seule notice, conservé : il a quitté
+						     le point pour ce panneau, où il reste cliquable. -->
+						<a class="lien-pop" href={lienPop(musee.oeuvreUnique.reference)} target="_blank" rel="noreferrer">
+							Voir la fiche publique{musee.oeuvreUnique.titre ? ` de « ${musee.oeuvreUnique.titre} »` : ''}&nbsp;→
+						</a>
+					{/if}
+					<button type="button" class="fermer" onclick={() => (choisi = null)}>Fermer</button>
+				</div>
+			{:else}
+				<!-- Légende : un seul repère de point (présence). Le nombre de notices par
+				     musée se lit au survol, pas dans la taille. -->
+				<div class="legende">
+					<svg class="repere" viewBox="0 0 {2 * R_POINT} {2 * R_POINT}" width={2 * R_POINT} height={2 * R_POINT} aria-hidden="true">
+						<circle cx={R_POINT} cy={R_POINT} r={R_POINT} class="point" />
+					</svg>
+					<p class="legende-texte">
+						Un point = un musée ayant publié au moins une notice concernée.
+						Passez sur un point pour voir combien, et sous quelles formules&nbsp;;
+						choisissez-le pour ouvrir ses œuvres.
+					</p>
+				</div>
+			{/if}
 		</div>
 	</div>
 	{:else if projetables.length === 1}
+		<!-- Pas de carte pour un point unique — mais l'accès aux œuvres, lui, doit
+		     exister : c'est le cas de la majorité des artistes du lot du 2026-08-02,
+		     dont le doute n'est écrit que dans un seul musée. -->
 		<p class="repli">
 			{projetables[0].doute === 1 ? 'Cette notice relève' : 'Ces notices relèvent'}
 			d'un seul musée&nbsp;: {projetables[0].nom}, à {projetables[0].ville}.
 		</p>
+		{#if onVoirOeuvres}
+			<p class="repli-action">
+				<button type="button" class="action" onclick={() => onVoirOeuvres(projetables[0].code)}>
+					{voirOeuvres(projetables[0].doute)}&nbsp;→
+				</button>
+			</p>
+		{/if}
 	{:else}
 		<p class="repli">
 			Aucune de ces notices ne relève d'un musée de France métropolitaine.
@@ -202,6 +265,11 @@
 			{#if horsCadre.length === 1}
 				{notices(total)} rattachée{total > 1 ? 's' : ''} au {horsCadre[0].nom},
 				à {horsCadre[0].ville}.
+				{#if onVoirOeuvres}
+					<button type="button" class="action action-en-ligne" onclick={() => onVoirOeuvres(horsCadre[0].code)}>
+						{voirOeuvres(horsCadre[0].doute)}&nbsp;→
+					</button>
+				{/if}
 			{:else}
 				{notices(total)} rattachées à {nombre(horsCadre.length)} musées hors
 				métropole (outre-mer ou étranger).
@@ -275,27 +343,145 @@
 		transition: fill-opacity 0.12s, stroke-width 0.12s;
 	}
 
-	/* Survol/focus FRANC (même retour pour un point cliquable ou non) : pleine
-	   opacité + halo blanc plus large → le point survolé « se lève » du fond. */
+	/* Survol/focus FRANC : pleine opacité + halo blanc plus large → le point
+	   survolé « se lève » du fond. Tous les points sont choisissables, le retour
+	   est donc le même pour tous. */
 	.point:focus,
-	.point:hover,
-	.lien-point:hover .point,
-	.lien-point:focus-visible .point {
+	.point:hover {
 		fill-opacity: 1;
 		stroke-width: 1.8;
 		outline: none;
 	}
 
-	/* Point cliquable (musée à une seule œuvre) : curseur main ; pas de distinction
-	   visuelle AU REPOS (décision : le curseur suffit, deux classes visuelles
-	   embrouilleraient la lecture). */
-	.lien-point {
+	.point {
 		cursor: pointer;
 	}
 
-	.lien-point:focus-visible {
+	.point:focus-visible {
 		outline: 2px solid var(--couleur-encre);
 		outline-offset: 2px;
+	}
+
+	/* Point CHOISI : le seul état persistant de la carte. Cerné d'encre, pour se
+	   distinguer du survol (qui, lui, s'efface). */
+	.point.choisi {
+		fill-opacity: 1;
+		stroke: var(--couleur-encre);
+		stroke-width: 2.2;
+	}
+
+	/* --- Panneau du musée choisi : il porte les liens, l'infobulle jamais. --- */
+	.panneau-musee {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: var(--espace-2);
+		padding: var(--espace-3);
+		background: var(--surface-carte);
+		border: 1px solid var(--couleur-trait);
+		border-radius: var(--rayon-s);
+	}
+
+	.panneau-nom {
+		margin: 0;
+		font-family: var(--police-ui);
+		font-size: var(--taille-xs);
+		font-weight: 600;
+		line-height: 1.3;
+		color: var(--couleur-encre);
+	}
+
+	.panneau-ville {
+		display: block;
+		font-weight: 400;
+		color: var(--couleur-encre-douce);
+	}
+
+	.panneau-compte {
+		margin: 0;
+		font-family: var(--police-ui);
+		font-size: var(--taille-xs);
+		color: var(--couleur-encre-douce);
+	}
+
+	.panneau-mentions {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		gap: 0.2rem;
+		width: 100%;
+		font-family: var(--police-ui);
+		font-size: var(--taille-xs);
+	}
+
+	.panneau-mentions li {
+		display: flex;
+		align-items: baseline;
+		gap: 0.4rem;
+	}
+
+	.pastille {
+		flex: none;
+		width: 0.5rem;
+		height: 0.5rem;
+		border-radius: 50%;
+	}
+
+	.mention-label {
+		flex: 1;
+		color: var(--couleur-encre-douce);
+	}
+
+	.mention-n {
+		font-variant-numeric: tabular-nums;
+		color: var(--couleur-encre);
+	}
+
+	/* Action principale : c'est elle qui relie la carte aux œuvres. */
+	.action {
+		font-family: var(--police-ui);
+		font-size: var(--taille-xs);
+		text-align: left;
+		color: var(--couleur-accent);
+		background: none;
+		border: 0;
+		padding: 0;
+		text-decoration: underline;
+		cursor: pointer;
+	}
+
+	.action-en-ligne {
+		display: inline;
+	}
+
+	.action:focus-visible,
+	.lien-pop:focus-visible,
+	.fermer:focus-visible {
+		outline: var(--focus-anneau);
+		outline-offset: 2px;
+	}
+
+	.lien-pop {
+		font-family: var(--police-ui);
+		font-size: var(--taille-xs);
+		color: var(--couleur-encre-douce);
+	}
+
+	.fermer {
+		font-family: var(--police-ui);
+		font-size: var(--taille-xs);
+		color: var(--couleur-encre-douce);
+		background: none;
+		border: 0;
+		padding: 0;
+		text-decoration: underline;
+		cursor: pointer;
+	}
+
+	.repli-action {
+		margin: var(--espace-2) 0 0;
 	}
 
 	.legende {

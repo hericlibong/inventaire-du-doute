@@ -214,7 +214,7 @@
 		<!-- Filtre par musée : liste native (clavier, souris et tactile sans code
 		     ajouté), bornée aux musées qui conservent une œuvre concernée de cet
 		     artiste, chacun avec son effectif. -->
-		{#if musees.length > 1}
+		{#if musees.length > 1 || musee}
 			<div class="filtre-musee">
 				<label for="filtre-musee">Musée</label>
 				<select

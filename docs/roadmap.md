@@ -45,9 +45,15 @@ fusion finale.
       état vide avec « Tout afficher ». `musee_code` (Muséofile) ajouté à l'export des œuvres,
       avec l'invariant « œuvres par musée = points de la carte ». L'état du filtre vit dans la
       page, prêt pour la phase 3. Vérifié au navigateur, desktop et mobile 390 px.
-- [ ] **Phase 3 — Relier musées et œuvres** : depuis la carte, ouvrir la liste des œuvres du
-      musée choisi, artiste conservé. Un seul système de filtrage, état partagé ou paramètres
-      d'URL, et le chemin inverse lisible.
+- [x] **Phase 3 — Relier musées et œuvres** (2026-08-02). Tous les points de la carte se
+      choisissent (souris, toucher, Entrée, Espace) et ouvrent un **panneau persistant** au
+      flanc : nom, compte, formules, et l'action « Voir les N œuvres conservées dans ce musée »
+      — jamais dans l'infobulle, qui s'efface. L'action ouvre « Œuvres » avec le musée filtré,
+      artiste conservé. Accord au singulier prévu. **Le lien POP du musée à une seule notice
+      est conservé**, déplacé du point vers le panneau. L'action figure aussi dans le repli
+      sans carte (30 artistes sur 39 du dernier lot) et dans la mention hors cadre. Un seul
+      état filtre (`museeActif`, dans la page) ; le point choisi est une sélection de lecture.
+      Trajet inverse vérifié au navigateur, desktop et mobile 390 px.
 - [ ] **Phase 4 — Construire la page Présentation** : du nom lu sous une œuvre au corpus,
       Joconde et les formulations prudentes, la sélection expliquée en clair, les chiffres du
       volume, puis l'entrée dans l'exploration. Reprise sélective du prototype (export, tests,

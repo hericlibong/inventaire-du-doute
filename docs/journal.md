@@ -2,6 +2,29 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-08-02 (phase 3) — La carte cesse d'être un cul-de-sac
+
+On avait une carte qui montrait d'où viennent les notices, et une liste d'œuvres qu'on pouvait
+filtrer par musée. Les deux ne se parlaient pas. C'est fait : on choisit un point, et une
+action propose « Voir les 276 œuvres conservées dans ce musée ». Un clic, on est dans la liste,
+déjà filtrée, sur le même artiste.
+
+Le vrai sujet était de savoir où mettre ce lien. La carte affichait déjà ses chiffres au
+survol, dans une infobulle. Y glisser l'action aurait été le plus simple — et impraticable :
+une infobulle disparaît dès qu'on bouge la souris, on ne peut pas viser un lien dedans. Il a
+donc fallu séparer deux gestes qui se ressemblent : passer sur un point (ça renseigne, ça
+s'efface) et le choisir (ça reste, ça engage). Le panneau qui s'ouvre au flanc porte le nom du
+musée, son compte, ses formules, et les liens.
+
+Effet de bord bienvenu : les points à une seule œuvre étaient jusqu'ici des liens directs vers
+la fiche publique, et les autres n'étaient cliquables nulle part. Deux comportements pour un
+même rond, sans rien qui les distingue à l'œil. Maintenant tous se choisissent pareil, et le
+lien vers la fiche publique attend dans le panneau, où on peut vraiment cliquer dessus.
+
+Reste un détail qui n'en est pas un : trente de nos trente-neuf nouveaux artistes n'ont qu'un
+seul musée, donc pas de carte du tout — une phrase à la place. L'action est là aussi. Sinon on
+aurait construit un chemin réservé aux artistes les mieux dotés.
+
 ## 2026-08-02 (phase 2) — Où sont ces œuvres ? Le filtre par musée
 
 L'onglet Œuvres savait dire « quelles œuvres, sous quelle formule ». Il ne savait pas dire
