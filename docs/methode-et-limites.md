@@ -63,6 +63,15 @@ L'onglet montre **toutes les œuvres concernées** par le maître — pas une
 sélection —, filtrables par mention et paginées. Rien n'est choisi à la main :
 ni tri éditorial, ni recherche de la « meilleure » pièce.
 
+**Une exception, déclarée : la notice qui ouvre la page « Présentation »** (2026-08-02).
+Celle-là est choisie — « Portrait de jeune homme, dit autrefois : Portrait de Titus », au
+musée du Louvre, où le champ auteur porte « Rembrandt (1606-1669) (atelier, dit) ». Un
+article s'ouvre sur un cas, pas sur un tirage au sort ; ce qui doit rester non trié, ce sont
+les listes exhaustives, qu'une sélection pourrait flatter. Le choix est écrit dans
+`src/build_corpus_maitres.py`, et les champs affichés sont RELUS dans l'export des œuvres à
+chaque génération : si cette notice change de formulation ou disparaît de la base, la
+génération échoue au lieu de publier un exemple périmé.
+
 - La citation entre guillemets est le **contenu exact du champ auteur** de la
   notice (verbatim, capitales et abréviations comprises).
 - Chaque œuvre renvoie à sa **fiche publique sur POP**, qui vit sa vie

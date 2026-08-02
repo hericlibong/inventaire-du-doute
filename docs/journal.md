@@ -2,6 +2,36 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-08-02 (phase 4) — Une page qui commence par un tableau, pas par un chiffre
+
+La page de présentation existe. Elle ne s'ouvre pas sur 6 081 notices ni sur un graphique :
+elle s'ouvre sur un portrait du Louvre dont le titre dit déjà tout, « Portrait de jeune homme,
+dit autrefois : Portrait de Titus », et sur la ligne que le musée a écrite en face du nom de
+l'auteur — « Rembrandt (1606-1669) (atelier, dit) ». Le nom est là, la réserve aussi. On peut
+partir de là.
+
+Le morceau difficile était ailleurs : expliquer comment ces artistes ont été choisis. Le texte
+qui existait annonçait « un artiste connu et au moins dix notices ». Ce n'était plus vrai
+depuis l'instruction du lot, et ça ne l'avait jamais tout à fait été. Tout est réécrit, en
+trois blocs qui portent chacun leur nom : le seuil, la vérification, et ce que la liste ne dit
+pas. Avec des cas réels dans le deuxième, parce qu'une règle de sélection ne se comprend qu'à
+ses refus : « Peter » et « Prévost », des noms de famille tout seuls ; « Varady A », une
+initiale ; « Pellerin », une imprimerie ; les trois Mellet, nommés ensemble sur chacun de
+leurs dessins. Et le contre-exemple, les frères Duthoit, que le musée nomme côte à côte et qui
+gardent chacun leur fiche — parce que là, on sait qui est qui.
+
+Du prototype de la veille, on n'a repris que ce qui était dit : le générateur d'export, ses
+tests, et une visualisation sur trois. Elle s'appelait « Le corpus » ; elle s'appelle
+maintenant « Les mentions les plus fréquentes », ce qui a l'avantage de vouloir dire quelque
+chose. Les deux autres vues ne sont pas revenues, et ce qui les nourrissait a quitté l'export
+avec elles. Un fichier qui ne contient plus la donnée d'une vue abandonnée est le meilleur
+garde-fou contre son retour.
+
+Dernière chose, apprise à nos dépens : les tests de cet export figeaient quatre chiffres —
+3 668, 3 669, 3 674, 63. Tous faux en vingt-quatre heures. Un test qui fige un effectif ne
+protège rien, il oblige seulement à le réécrire. Ce qui doit tenir, ce sont les relations
+entre les nombres, pas les nombres.
+
 ## 2026-08-02 (correction) — Tout le monde a droit à sa carte
 
 Une règle traînait depuis juillet : en dessous de deux musées, pas de carte, une phrase à la

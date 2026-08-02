@@ -2,6 +2,60 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-02 (nonies) — La page « Présentation » : six temps, une seule visualisation
+
+Phase 4 du volume. Une page publique distincte (`/presentation`) mène du nom lu sous une
+œuvre jusqu'à l'exploration des artistes.
+
+**Pas de scrollytelling**, bien que le brief l'autorisât. La préférence tenue depuis le
+2026-07-08 l'écarte, et le risque était réel : une page qui prend la main sur le défilement
+pour dérouler six idées devient vite l'inverse de ce qui est demandé — « une succession de
+longs textes et de graphiques génériques ». Une page qui se lit, avec une seule visualisation
+à sa place, tient mieux.
+
+**Six temps** : la notice réelle et ses mots exacts · du cas au volume · les chiffres
+essentiels · comment ces artistes ont été choisis · les mentions les plus fréquentes ·
+l'entrée dans l'exploration.
+
+**La notice d'ouverture est choisie, et le choix est déclaré.** « Portrait de jeune homme,
+dit autrefois : Portrait de Titus », au Louvre, où le musée écrit « Rembrandt (1606-1669)
+(atelier, dit) ». Le titre porte lui-même une rétractation, la ligne d'auteur nomme
+l'artiste et son atelier : le sujet du volume tient en une ligne. La règle « rien n'est
+choisi à la main » porte sur les listes exhaustives de l'onglet « Œuvres », qu'un tri
+arbitraire pourrait flatter ; elle ne demande pas qu'un article s'ouvre au hasard. **Rien
+n'est recopié** : les champs sont relus dans l'export des œuvres à la référence indiquée, et
+l'export échoue si la notice change de mention ou disparaît.
+
+**Le texte de la sélection est réécrit, en trois blocs nommés** — c'était la demande, et le
+texte précédent n'était pas publiable : il annonçait « un artiste connu » comme critère.
+1. **Le seuil** : au moins dix notices, une fois les orthographes réunies. Il ne juge de
+   rien, il évite de commenter deux ou trois cas isolés.
+2. **La vérification** : nom par nom, avec des cas réels — « Peter », « Buquet », « Prévost »
+   (un nom de famille sans prénom), « Varady A » (une initiale), « Pellerin » (une
+   imprimerie), les trois Mellet (nommés ensemble sur chaque dessin) ; et à l'inverse Louis
+   et Aimé Duthoit, deux frères que le musée nomme côte à côte et qui gardent chacun leur
+   fiche.
+3. **Ce que la liste ne dit pas** : la part du doute couverte, le versement volontaire des
+   musées, et le cas laissé hors périmètre.
+Aucune abstraction, aucun mot de chantier, un exemple derrière chaque affirmation.
+
+**Reprise du prototype, strictement sélective** : `build_corpus_maitres.py`, ses tests, et la
+seule première visualisation — renommée **« Les mentions les plus fréquentes »** ; « Le
+corpus » était un mot de chantier. La matrice des profils et la comparaison nationale ne
+reviennent pas, et **ce qui les alimentait a quitté l'export** : ventilation par artiste et
+comptage national par mention. Ce qui n'est pas publié ne peut pas revenir par la porte de
+derrière.
+
+**Les chiffres figés sont partis avec.** L'export et ses tests contrôlaient 3 668 / 3 669 /
+3 674 / 63 : quatre nombres devenus faux en une journée. Les invariants sont désormais
+**relationnels** (a ≤ b, a + b = c), et un test vérifie que les deux exports annoncent le
+même effectif d'artistes. Sur la page, aucun nombre n'est écrit : tous viennent des exports,
+y compris la proportion en toutes lettres (« plus de la moitié »), calculée et non rédigée.
+
+**Navigation** : la page n'est pas encore dans le menu — c'est la phase 7, qui l'y mettra en
+même temps qu'elle retirera « Comprendre les mentions ». Elle est atteignable par son URL en
+attendant.
+
 ## 2026-08-02 (octies) — Tous les artistes ont leur carte, même à un seul musée
 
 Une règle datant du 2026-07-12 remplaçait la carte par une phrase quand l'artiste n'avait

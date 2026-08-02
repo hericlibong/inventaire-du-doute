@@ -57,10 +57,16 @@ fusion finale.
       (2026-07-12) est supprimée — **tous les artistes ont leur carte**, y compris les 32 qui
       n'ont qu'un musée. La carte est un repère géographique, pas un graphique de répartition
       (decisions.md, octies).
-- [ ] **Phase 4 — Construire la page Présentation** : du nom lu sous une œuvre au corpus,
-      Joconde et les formulations prudentes, la sélection expliquée en clair, les chiffres du
-      volume, puis l'entrée dans l'exploration. Reprise sélective du prototype (export, tests,
-      première visualisation seulement).
+- [x] **Phase 4 — Construire la page Présentation** (2026-08-02, route `/presentation`).
+      Six temps : la notice réelle et ses mots exacts (Rembrandt, atelier, au Louvre — choix
+      déclaré, champs relus dans l'export et contrôlés) · du cas au volume · les chiffres
+      essentiels · **le texte de la sélection réécrit en trois blocs** (seuil · vérification
+      avec des cas réels · ce que la liste ne dit pas) · la visualisation **« Les mentions les
+      plus fréquentes »** · l'entrée dans l'exploration. **Pas de scrollytelling.** Reprise
+      sélective du prototype ; la ventilation par artiste et le comptage national par mention
+      ont quitté l'export avec les vues abandonnées. Invariants devenus relationnels, plus
+      aucun effectif figé. 290 tests au vert, desktop et mobile 390 px vérifiés.
+      **Reste à faire en phase 7** : mettre la page dans la navigation.
 - [ ] **Phase 5 — Alléger « Explorer les artistes »** : retirer la longue introduction, entrer
       directement dans le répertoire, renvoyer discrètement vers la Présentation.
 - [ ] **Phase 6 — Adapter l'accueil** : affiche conservée, titre du volume, quelques chiffres
