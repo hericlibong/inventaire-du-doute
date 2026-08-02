@@ -2,6 +2,24 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-08-02 (phase 6) — L'accueil dit enfin quel volume on ouvre
+
+L'affiche annonçait un chiffre : 24 507 notices prudentes dans Joconde. Vrai, frappant, et
+impossible à comprendre sans trois paragraphes d'explication — sur le versement volontaire des
+musées, sur le fonds de Nice qui en représente un quart, sur ce que « notice » veut dire. Un
+accueil n'a pas à porter ça. Le chiffre est parti sur la page Présentation, qui l'explique là
+où c'est sa place. La couverture porte maintenant les chiffres du volume : 102 artistes,
+6 081 notices.
+
+Et elle dit ce qu'on ouvre — « Volume 1 — Autour des maîtres », sous le titre. Le site en
+publiera d'autres ; autant l'annoncer tout de suite.
+
+Leçon de mise en page, apprise en la vérifiant : la première version du texte était trop
+longue. Deux lignes tombaient hors de l'aplat sombre, sur l'illustration claire, où elles
+devenaient illisibles. Rien à voir avec le goût — la zone sombre de l'affiche est étroite et
+recule vers le bas de la composition. Le texte tient en trois lignes courtes, et le composant
+le dit maintenant en commentaire, pour la prochaine fois.
+
 ## 2026-08-02 (phase 5) — Retirer deux paragraphes, gagner une page
 
 L'introduction d'« Explorer les artistes » racontait Joconde et les formulations prudentes,

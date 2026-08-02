@@ -1,7 +1,14 @@
-// Accueil = affiche interactive (2026-07-18). On lit le chiffre vedette (doute_total,
-// = 24 507) depuis niveaux.json pour l'afficher en preuve secondaire sur la couverture
-// (retour du chiffre demandé le 2026-07-18) — jamais en dur, toujours depuis l'export.
+// Accueil = affiche interactive (2026-07-18), adaptée au volume 1 le 2026-08-02.
+// Les chiffres de la couverture sont ceux DU VOLUME (artistes retenus, notices
+// concernées), lus depuis corpus_maitres.json — jamais écrits en dur.
+//
+// Le total national (24 507) a QUITTÉ la couverture : il demande une explication
+// (versement volontaire, monoculture divulguée, ce qu'il compte exactement) que
+// l'accueil n'a pas à porter. Il vit sur la page « Présentation », qui l'explique.
 export async function load({ fetch }) {
-	const niveaux = await fetch('/data/niveaux.json').then((r) => r.json());
-	return { doute: niveaux.doute_total };
+	const corpus = await fetch('/data/corpus_maitres.json').then((r) => r.json());
+	return {
+		artistes: corpus.unites.nb_artistes,
+		notices: corpus.unites.notices_distinctes
+	};
 }

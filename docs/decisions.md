@@ -2,6 +2,34 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-02 (undecies) — L'accueil annonce le volume, plus le total national
+
+Phase 6. L'affiche reste le premier écran, en un seul écran. Ce qui change, c'est ce qu'elle
+annonce.
+
+**Le titre du volume entre sur la couverture** : « Volume 1 — Autour des maîtres », sous le
+nom du site, en petit corps. Le site en publiera d'autres ; l'accueil doit dire lequel on
+ouvre.
+
+**Le total national quitte la couverture.** Le chiffre vedette était 24 507 — « Dans 24 507
+d'entre elles, l'attribution est formulée avec prudence ». Il est exact, mais il demande une
+explication que l'accueil n'a pas à porter : versement volontaire des musées, monoculture
+divulguée, ce qu'il compte au juste. Il vit maintenant sur la page « Présentation », qui
+l'explique en contexte. **La couverture porte les chiffres DU VOLUME** — artistes retenus et
+notices concernées — lus depuis `corpus_maitres.json`, jamais écrits en dur.
+
+**Trois lignes, et pas quatre.** Première tentative de rédaction : un slogan long, une phrase
+de chiffres développée. Résultat vérifié au navigateur : le bloc débordait de l'aplat sombre
+et les deux dernières lignes tombaient sur l'illustration claire, illisibles. La contrainte
+n'est pas le goût, c'est la géométrie de l'affiche — la zone sombre est étroite et recule
+vers le bas. La copie est donc courte, et le commentaire du composant le dit pour la
+prochaine fois.
+
+**« Présentation » ouvre la navigation de couverture**, avant « Explorer les artistes » qui
+reste l'entrée PRINCIPALE (plus large, accent cobalt). L'un est la porte de qui arrive sans
+rien savoir, l'autre celle de qui veut entrer directement dans l'application. « Comprendre
+les mentions » y figure encore : elle en sort en phase 7, en même temps que dans le bandeau.
+
 ## 2026-08-02 (decies) — « Explorer les artistes » redevient un outil, pas une lecture
 
 Phase 5. L'introduction de deux paragraphes qui coiffait le répertoire est retirée. Elle

@@ -2,9 +2,10 @@
 	// Navigation de la couverture d'accueil (révision 2026-07-18) : des CARTOUCHES
 	// éditoriaux intégrés à la fiche claire — rectangles sombres (bleu-encre), texte
 	// ivoire, angles quasi droits, largeur adaptée au texte, légèrement décalés. Pas
-	// de boutons arrondis, pas d'ombre, pas d'icône. « Explorer les maîtres » = entrée
+	// de boutons arrondis, pas d'ombre, pas d'icône. « Explorer les artistes » = entrée
 	// principale (plus large, plus lourde, accent cobalt, cible généreuse). Routes
-	// réelles (dont /echelle = « Comprendre les mentions »).
+	// réelles (dont /echelle = « Comprendre les mentions », qui sort de la navigation
+	// publique en phase 7).
 	import { page } from '$app/stores';
 
 	// `decal` = décalage horizontal irrégulier (les liens n'ont ni la même largeur ni
@@ -13,9 +14,14 @@
 	// Pas de lien « Accueil » : cette navigation ne s'affiche QUE sur la couverture
 	// d'accueil (LandingCover) — un lien vers la page où l'on se trouve déjà est inutile
 	// (retrait demandé le 2026-07-18). Les autres pages ont « Accueil » dans le header.
+	// « Présentation » ouvre la marche depuis le 2026-08-02 (phase 6) : c'est la porte
+	// de qui arrive sans rien savoir. « Explorer les artistes » reste l'entrée
+	// PRINCIPALE — c'est l'application elle-même, et on doit pouvoir y aller
+	// directement sans passer par la lecture.
 	const liens = [
-		{ href: '/les-presque', label: 'Explorer les artistes', principal: true, decal: '0rem' },
-		{ href: '/echelle', label: 'Comprendre les mentions', decal: '2.8rem' },
+		{ href: '/presentation', label: 'Présentation', decal: '0rem' },
+		{ href: '/les-presque', label: 'Explorer les artistes', principal: true, decal: '1.6rem' },
+		{ href: '/echelle', label: 'Comprendre les mentions', decal: '3.4rem' },
 		{ href: '/methode', label: 'Méthode', decal: '1.1rem' }
 	];
 

@@ -9,8 +9,11 @@
 	import EditorialNavigation from '$lib/EditorialNavigation.svelte';
 	import { nombre } from '$lib/joconde.js';
 
-	// Chiffre vedette (doute_total = 24 507), lu depuis niveaux.json (+page.js).
-	let { doute } = $props();
+	// Chiffres DU VOLUME, lus depuis corpus_maitres.json (+page.js) : le nombre
+	// d'artistes retenus et celui des notices concernées. Le total national a quitté
+	// la couverture le 2026-08-02 — il demande une explication que l'accueil n'a pas
+	// à porter, et il vit désormais sur la page « Présentation ».
+	let { artistes, notices } = $props();
 </script>
 
 <section class="cover">
@@ -28,19 +31,23 @@
 		/>
 	</picture>
 
-	<!-- Titre + accroche à trois étages, dans l'aplat sombre (haut-gauche). Contraste
-	     natif sur le bleu sombre. Le chiffre 24 507 est le CHIFFRE VEDETTE de la
-	     composition, mais il reste DANS sa phrase (« Dans 24 507 d'entre elles… ») :
-	     il désigne des NOTICES à l'attribution prudente, jamais un décompte d'« œuvres »,
-	     jamais un doute « écrit » ni une réattribution (règle du projet, decisions.md
-	     2026-07-18 sexies). Ne jamais détacher le nombre de son unité. -->
+	<!-- Titre du site, titre du VOLUME, slogan, chiffres, source. Les nombres restent
+	     DANS leur phrase : ils désignent des NOTICES à l'attribution prudente et des
+	     ARTISTES retenus, jamais un décompte d'« œuvres », jamais un doute « écrit »
+	     ni une réattribution (règle du projet, decisions.md 2026-07-18 sexies). Ne
+	     jamais détacher un nombre de son unité. -->
 	<div class="titre">
 		<h1>L'inventaire<br />du doute</h1>
+		<p class="volume">Volume 1 — Autour des maîtres</p>
+
 		<div class="phrases">
-			<p class="e1">Un million de notices.</p>
+			<!-- Trois lignes COURTES : l'aplat sombre où elles se posent est étroit et
+			     recule vers le bas de la composition. Une phrase de plus et le texte
+			     déborde sur l'illustration claire, où il devient illisible. -->
+			<p class="e1">Quand le musée n'est pas sûr, il l'écrit.</p>
 			<p class="e2">
-				Dans <span class="chiffre">{nombre(doute)}</span> d'entre elles, l'attribution est
-				formulée avec prudence.
+				<span class="chiffre">{nombre(artistes)}</span> artistes,
+				<span class="chiffre">{nombre(notices)}</span> notices où il l'a écrit.
 			</p>
 			<p class="e3">Une enquête dans les données des musées.</p>
 		</div>
@@ -96,12 +103,23 @@
 		margin: 0;
 	}
 
+	/* Titre du volume : sous le nom du site, dans le registre UI, discret mais net.
+	   C'est lui qui dit ce qu'on va lire — le site en publiera d'autres. */
+	.volume {
+		margin: 0.7rem 0 0;
+		font-family: var(--police-ui);
+		font-size: clamp(0.72rem, 0.95vw, 0.86rem);
+		letter-spacing: 0.14em;
+		text-transform: uppercase;
+		color: #c8b89a;
+	}
+
 	/* Trois étages : Spectral ivoire franc, présence réelle sans concurrencer le titre,
 	   progression légère (taille + tonalité), rythme compact d'affiche. */
 	.phrases {
-		margin: 1.2rem 0 0;
+		margin: 1.1rem 0 0;
 		font-family: var(--police-texte);
-		max-width: 20ch;
+		max-width: 23ch;
 	}
 
 	.phrases p {
@@ -115,14 +133,13 @@
 		color: #f4eee0;
 	}
 
-	/* Étage porteur du chiffre vedette : la phrase reste un TOUT, le nombre ressort
-	   par la couleur et un léger surcorps — jamais détaché en bloc isolé. */
+	/* Étage porteur des chiffres : la phrase reste un TOUT, les nombres ressortent
+	   par la couleur et un léger surcorps — jamais détachés en bloc isolé. */
 	.e2 {
 		margin-top: 0.55rem;
 		font-size: clamp(1rem, 1.35vw, 1.2rem);
 		line-height: 1.42;
 		color: #ece4d2;
-		max-width: 24ch;
 	}
 
 	.e3 {
@@ -136,7 +153,9 @@
 	.chiffre {
 		font-family: var(--police-titre);
 		font-weight: 600;
-		font-size: 1.55em;
+		/* deux nombres dans la même phrase depuis le 2026-08-02 : un surcorps plus
+		   mesuré qu'au temps du chiffre unique, sinon la phrase se disloque */
+		font-size: 1.3em;
 		letter-spacing: -0.01em;
 		color: #eaddc2;
 		font-variant-numeric: tabular-nums;

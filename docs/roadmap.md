@@ -74,8 +74,14 @@ fusion finale.
       du haut : l'outil entier tient sans défiler. La ligne de prudence part sans rien perdre
       — le pied de page du site la porte déjà sur toutes les pages. L'effectif d'artistes
       quitte cette page, il se lit sur la Présentation. Desktop et mobile 390 px vérifiés.
-- [ ] **Phase 6 — Adapter l'accueil** : affiche conservée, titre du volume, quelques chiffres
-      dynamiques, deux accès (Présentation, Explorer).
+- [x] **Phase 6 — Adapter l'accueil** (2026-08-02). Affiche conservée, un seul écran. Titre
+      du volume ajouté sous le nom du site. **Le total national (24 507) quitte la
+      couverture** — il demande une explication que l'accueil n'a pas à porter, et il vit sur
+      la Présentation ; la couverture porte les chiffres DU VOLUME, lus depuis
+      `corpus_maitres.json`. Slogan court, trois lignes : la zone sombre de l'affiche est
+      étroite, une phrase de plus et le texte devient illisible sur l'illustration (vérifié,
+      puis resserré). « Présentation » ouvre la navigation de couverture, « Explorer les
+      artistes » reste l'entrée principale. Desktop 1440 px et mobile 390 px vérifiés.
 - [ ] **Phase 7 — Finaliser la navigation** : Accueil · Présentation · Explorer les artistes ·
       Méthode. « Comprendre les mentions » quitte la navigation, son URL est redirigée.
 - [ ] ⏸ **POINT DE CONTRÔLE 2** — captures desktop et mobile des six écrans, fil éditorial,
