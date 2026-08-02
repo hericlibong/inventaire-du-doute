@@ -2,6 +2,22 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-08-02 (phase 5) — Retirer deux paragraphes, gagner une page
+
+L'introduction d'« Explorer les artistes » racontait Joconde et les formulations prudentes,
+au-dessus de la liste. C'était utile tant que rien d'autre ne le faisait. Depuis la page
+Présentation, qui le fait mieux et plus longuement, ces deux paragraphes ne servaient plus
+qu'à retarder l'outil.
+
+Ils sont partis. Restent le titre, une ligne discrète — « Comment ces artistes ont-ils été
+sélectionnés ? » — et la sélection. Le répertoire commence maintenant à 249 pixels du haut :
+sur un écran ordinaire, on voit d'un coup la liste des artistes à gauche, le profil du premier
+à droite, et ses trois onglets. Plus rien à faire défiler avant de commencer.
+
+Une ligne a disparu au passage, celle qui rappelait que le projet ne réattribue aucune œuvre.
+Vérification faite avant de la retirer : le pied de page du site la porte déjà, sur toutes les
+pages, et la Présentation la reprend. Rien n'est perdu — c'était une redite, pas une garantie.
+
 ## 2026-08-02 (phase 4) — Une page qui commence par un tableau, pas par un chiffre
 
 La page de présentation existe. Elle ne s'ouvre pas sur 6 081 notices ni sur un graphique :

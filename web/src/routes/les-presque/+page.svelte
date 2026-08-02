@@ -12,11 +12,9 @@
 	const artistes = data.artistes.artistes;
 	const portraits = data.portraits;
 
-	// Nombre de maîtres dérivé des données DÉJÀ chargées (artistes.json) — pas de
-	// seconde source dans le composant (decisions.md 2026-07-19). Le détail du seuil
-	// et le total de notices ont QUITTÉ l'introduction le 2026-07-20 : ils vivent
-	// dans la page Méthode, atteignable par le lien « Pourquoi ces N artistes ? ».
-	const nbMaitres = artistes.length;
+	// L'effectif d'artistes ne s'affiche plus ici : l'introduction qui le portait a
+	// été retirée en phase 5 (2026-08-02). Il se lit sur la page « Présentation »,
+	// où il vient des mêmes exports.
 
 	// Onglets de la fiche maître : profil (graphique) · oeuvres · musees.
 	let vue = $state('profil');
@@ -56,27 +54,17 @@
 	<div class="grille">
 		<!-- COLONNE GAUCHE : entrée éditoriale, puis sélection (recherche + tri + liste). -->
 		<div class="colonne-gauche">
+			<!-- ENTRÉE DIRECTE (phase 5, 2026-08-02). L'introduction de deux paragraphes a
+			     été retirée : elle réexpliquait, au-dessus du répertoire, ce que la page
+			     « Présentation » dit désormais mieux et plus longuement. Cette page-ci est
+			     un outil — on y vient pour chercher un artiste, pas pour lire. Reste le
+			     titre, un renvoi discret, et la sélection. -->
 			<header class="intro">
 				<h1>Explorer les artistes</h1>
-				<p>
-					<strong>Dans un</strong> musée, une œuvre est souvent accompagnée d'un nom d'artiste.
-					Mais ce nom ne désigne pas toujours son auteur avec certitude. Joconde, le catalogue
-					collectif des collections des musées de France, conserve des formulations comme
-					«&nbsp;attribué à&nbsp;», «&nbsp;de son atelier&nbsp;», «&nbsp;de son école&nbsp;»
-					ou «&nbsp;à sa manière&nbsp;». Ces mots précisent la nature du lien avec le maître
-					et rendent visible le doute qui entoure certaines attributions.
-				</p>
-				<p>
-					<strong>Cette rubrique</strong> explore {nbMaitres} artistes pour découvrir quelles
-					œuvres sont associées à leur nom, sous quelles réserves et dans quels musées elles
-					sont conservées.
-				</p>
 				<p class="renvoi">
-					<a href="{base}/methode#les-maitres">Pourquoi ces {nbMaitres} artistes&nbsp;?&nbsp;→</a>
-				</p>
-				<p class="prudence">
-					Le projet reprend les formulations publiées par les musées&nbsp;; il ne réattribue
-					aucune œuvre.
+					<a href="{base}/presentation">
+						Comment ces artistes ont-ils été sélectionnés&nbsp;?&nbsp;→
+					</a>
 				</p>
 			</header>
 
@@ -168,7 +156,7 @@
 		margin: 0 0 var(--espace-3);
 	}
 
-	/* Renvoi vers la Méthode : discret, registre UI, jamais un bouton. */
+	/* Renvoi vers la Présentation : discret, registre UI, jamais un bouton. */
 	.intro p.renvoi {
 		margin: var(--espace-2) 0 var(--espace-3);
 		font-family: var(--police-ui);
@@ -184,15 +172,6 @@
 	.intro p.renvoi a:hover,
 	.intro p.renvoi a:focus-visible {
 		border-bottom-color: var(--accent-cobalt);
-	}
-
-	/* Prudence : note secondaire et discrète (pas un encadré d'alerte). */
-	.intro p.prudence {
-		margin: 0 0 var(--espace-4);
-		font-size: var(--taille-s);
-		line-height: 1.5;
-		color: var(--couleur-encre-douce);
-		font-style: italic;
 	}
 
 	/* Intitulé de l'outil de sélection : registre UI, repère cobalt devant. */

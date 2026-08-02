@@ -67,22 +67,50 @@ fusion finale.
       ont quitté l'export avec les vues abandonnées. Invariants devenus relationnels, plus
       aucun effectif figé. 290 tests au vert, desktop et mobile 390 px vérifiés.
       **Reste à faire en phase 7** : mettre la page dans la navigation.
-- [ ] **Phase 5 — Alléger « Explorer les artistes »** : retirer la longue introduction, entrer
-      directement dans le répertoire, renvoyer discrètement vers la Présentation.
+- [x] **Phase 5 — Alléger « Explorer les artistes »** (2026-08-02). Introduction de deux
+      paragraphes retirée : elle réexpliquait ce que la Présentation dit désormais. Restent le
+      titre, le renvoi discret « Comment ces artistes ont-ils été sélectionnés ? » (vers
+      `/presentation`, plus vers la Méthode) et la sélection. Le répertoire commence à 249 px
+      du haut : l'outil entier tient sans défiler. La ligne de prudence part sans rien perdre
+      — le pied de page du site la porte déjà sur toutes les pages. L'effectif d'artistes
+      quitte cette page, il se lit sur la Présentation. Desktop et mobile 390 px vérifiés.
 - [ ] **Phase 6 — Adapter l'accueil** : affiche conservée, titre du volume, quelques chiffres
       dynamiques, deux accès (Présentation, Explorer).
 - [ ] **Phase 7 — Finaliser la navigation** : Accueil · Présentation · Explorer les artistes ·
       Méthode. « Comprendre les mentions » quitte la navigation, son URL est redirigée.
 - [ ] ⏸ **POINT DE CONTRÔLE 2** — captures desktop et mobile des six écrans, fil éditorial,
       chiffres publics, limites restantes. Avant fusion.
-      **À revoir à ce moment-là — confusions relevées en chemin** (demande utilisateur,
-      2026-08-02) : des règles héritées qui décrivent mal ce qu'on regarde. Première du genre,
-      corrigée aussitôt : « pas de carte en dessous de deux musées », qui traitait un repère
-      géographique comme un graphique de répartition. En chercher d'autres du même ordre avant
-      la fusion.
+      **Y reprendre le REGISTRE DES CORRECTIONS ci-dessous, point par point.**
+### ✎ REGISTRE DES CORRECTIONS — à traiter avant la fusion
+
+Ouvert le 2026-08-02 à la demande de l'utilisateur. Tout ce qui est repéré en chemin et
+volontairement remis à plus tard s'inscrit ICI, et **rien n'en sort sans avoir été traité**.
+Le registre est relu au point de contrôle 2, et les corrections sont portées en phase 8.
+
+- [ ] **C1 — Les textes publiés doivent être retravaillés.** Toute la copie écrite pendant les
+      phases 0 à 7 est une PREMIÈRE ÉCRITURE : titres, chapôs, phrases de lecture des
+      graphiques, intitulés, textes de la page Présentation, notes d'unité. Elle est juste sur
+      le fond et vérifiée sur les chiffres, mais elle n'a pas été retravaillée. Prévoir une
+      passe éditoriale complète, page par page, avant publication — registre journalistique
+      sobre (CLAUDE.md), phrases courtes, aucune formule creuse, et surtout la relecture à voix
+      haute qui n'a pas eu lieu.
+- [ ] **C2 — Chercher les règles héritées qui décrivent mal ce qu'on regarde.** Une a été
+      trouvée et corrigée le 2026-08-02 : « pas de carte en dessous de deux musées », qui
+      traitait un repère géographique comme un graphique de répartition. Le défaut n'était pas
+      dans le seuil mais dans la description. En chercher d'autres du même ordre.
+- [ ] **C3 — Le titre du volume et le mot « artistes ».** L'interface dit « Explorer les
+      artistes » ; le volume s'intitule « Autour des maîtres ». Ici « maître » se lit dans son
+      sens relationnel (les œuvres autour du maître), ce qui reste conforme à la règle du
+      2026-08-02 — mais la cohabitation mérite un arbitrage.
+- [ ] **C4 — Les 39 artistes du lot 2 n'ont pas de texte éditorial.** `editorial-maitres.js`
+      couvre les 63 premiers ; les autres affichent l'en-tête générique, sans ligne de
+      repérage sous le nom. À écrire, ou à assumer explicitement.
+
+---
+
 - [ ] **Phase 8 — Vérification et publication** : chiffres, combinaisons de filtres, liens,
       images et crédits, mobile, clavier, tests, build, routes et redirections, docs à jour,
-      fusion des seules branches validées.
+      **registre des corrections soldé**, fusion des seules branches validées.
 
 ---
 

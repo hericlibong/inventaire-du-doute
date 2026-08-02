@@ -2,6 +2,30 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-02 (decies) — « Explorer les artistes » redevient un outil, pas une lecture
+
+Phase 5. L'introduction de deux paragraphes qui coiffait le répertoire est retirée. Elle
+expliquait ce qu'est Joconde et ce que sont les formulations prudentes — c'est-à-dire
+exactement ce que la page « Présentation » dit maintenant, mieux et plus longuement.
+
+**Ce qui reste en tête** : le titre, un renvoi discret — « Comment ces artistes ont-ils été
+sélectionnés ? » — et la sélection. Le répertoire commence désormais à 249 px du haut de la
+page : sur un écran ordinaire, l'outil entier (liste à gauche, profil et onglets à droite) est
+visible sans défiler. On vient ici pour chercher un artiste, pas pour lire.
+
+**Le renvoi pointe vers la Présentation, plus vers la Méthode.** C'est la Présentation qui
+explique désormais la sélection en clair ; la Méthode reste au bout, pour qui veut le détail.
+
+**La ligne de prudence est partie sans être perdue.** Elle disait « le projet reprend les
+formulations publiées par les musées ; il ne réattribue aucune œuvre ». Le pied de page du
+site porte déjà « Ce projet n'authentifie aucune œuvre — il restitue ce que les musées ont
+publié », sur toutes les pages, et la Présentation la reprend en propre. La retirer de
+l'introduction ne retire donc rien au lecteur.
+
+**L'effectif d'artistes ne s'affiche plus sur cette page.** Il vivait dans la phrase
+d'introduction ; il se lit sur la Présentation, depuis les mêmes exports. Une donnée de moins
+à tenir à jour à deux endroits.
+
 ## 2026-08-02 (nonies) — La page « Présentation » : six temps, une seule visualisation
 
 Phase 4 du volume. Une page publique distincte (`/presentation`) mène du nom lu sous une
