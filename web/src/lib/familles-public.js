@@ -10,20 +10,20 @@
 //   header      — titre du tooltip, générique (jamais le nom du maître → stable
 //                 d'une fiche à l'autre, donc comparable) ;
 //   corps       — PRÉCISION très courte (lisible en une seconde). Sert la page
-//                 « Comprendre les mentions » (route /echelle). Peut rester vide ;
+//                 la page « Présentation ». Peut rester vide ;
 //   definition  — DÉFINITION factuelle et stable de la mention, source canonique
 //                 unique de la dernière ligne de l'infobulle du graphique
 //                 (cahier des charges 2026-07-25, reformulée en phrase complète le
 //                 2026-07-27) : neutre, identique pour tous les artistes, sans
 //                 interprétation (« L'œuvre est rattachée à l'école de l'artiste. »
 //                 plutôt que « Plutôt son école que sa main. »). Distincte de
-//                 `corps`, qui reste au service de /echelle ;
+//                 `corps`, qui reste au service de la Présentation ;
 //   mention        — fonction (nom → chaîne) : la mention type reconstruite avec le
 //                    nom du maître (élision gérée), p. ex. « école de Charles Le
-//                    Brun ». Sert la page « Comprendre les mentions » (/echelle) ;
+//                    Brun ». Sert la page « Présentation » ;
 //                    ne figure plus dans l'infobulle du graphique (2026-07-27).
 //   montrerMention — booléen : n'est plus lu par l'infobulle du graphique ; reste
-//                    disponible pour /echelle. Conservé pour ne pas toucher cette
+//                    disponible pour la Présentation. Conservé pour ne pas toucher cette
 //                    page hors périmètre.
 //   citation       — forme CITABLE de la mention, écrite pour tenir en sujet de
 //                    phrase dans la copie éditoriale : «&nbsp;De son école&nbsp;»
@@ -165,7 +165,7 @@ function valeurGraphe(n) {
 // `n` = nombre d'œuvres de la mention. Trois lignes seulement : la mention,
 // « N œuvres », la définition factuelle. Plus de footer « Mention type » (retiré
 // du graphique ; `mention`/`montrerMention` restent utilisés par la page
-// « Comprendre les mentions »).
+// « Présentation »).
 export function tooltipFamille(code, nomMaitre, n) {
 	const f = FAMILLE_PUBLIC[code];
 	return {
@@ -173,7 +173,7 @@ export function tooltipFamille(code, nomMaitre, n) {
 		headerPastille: f.couleur, // pastille de la mention, dans la bande de tête
 		valeur: valeurGraphe(n),
 		// dernière ligne : la définition factuelle canonique (pas `corps`, plus
-		// interprétatif et réservé à /echelle)
+		// interprétatif, réservé à la Présentation)
 		corps: f.definition
 	};
 }

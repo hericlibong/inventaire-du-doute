@@ -15,25 +15,32 @@
 
 	// Routes en PLEINE LARGEUR (direction « affiche ») : accueil + pages refondues.
 	// Elles gèrent leurs propres gouttières ; les pages pas encore refondues gardent
-	// la colonne centrée. On étend cette liste à chaque chantier (C3, C4).
+	// la colonne centrée.
 	const estPleine = $derived(
 		$page.url.pathname === '/' ||
+			$page.url.pathname.startsWith('/presentation') ||
 			$page.url.pathname.startsWith('/les-presque') ||
-			$page.url.pathname.startsWith('/echelle') ||
 			$page.url.pathname.startsWith('/methode')
 	);
 
-	// Navigation publique recentrée à QUATRE entrées actives (architecture-
-	// editoriale.md §2). Les rubriques en réserve (Les révisions, La carte) ne
-	// figurent plus ici : leur code et leurs données restent au dépôt, mais elles
-	// sont sorties de la nav publique tant qu'elles ne sont pas intégrées à la
-	// publication recentrée. Le champ `prete` (et la branche « à venir ») est
-	// conservé pour de futures entrées.
+	// Les rubriques en réserve (Les révisions, La carte) ne figurent pas ici : leur
+	// code et leurs données restent au dépôt, hors de la navigation publique tant
+	// qu'elles ne sont pas publiées — elles seront la matière d'autres volumes.
+	//
+	// Navigation publique FINALE du volume 1 (phase 7, 2026-08-02) : quatre entrées,
+	// dans l'ordre de lecture. « Comprendre les mentions » en est sortie — ses
+	// définitions ont rejoint la Présentation, sous le graphique qui les compte, et
+	// son ancienne URL redirige.
+	//
+	// Le champ `prete` et la branche « à venir » ont été SUPPRIMÉS avec elle. Ils
+	// permettaient d'afficher une rubrique non publiée en lien inerte ; la consigne
+	// est de ne pas annoncer les volumes suivants de cette façon. Retirer le
+	// mécanisme, et pas seulement les entrées, évite qu'il resserve un jour.
 	const briques = [
-		{ titre: 'Accueil', href: '/', prete: true },
-		{ titre: 'Explorer les artistes', href: '/les-presque', prete: true },
-		{ titre: 'Comprendre les mentions', href: '/echelle', prete: true },
-		{ titre: 'Méthode', href: '/methode', prete: true }
+		{ titre: 'Accueil', href: '/' },
+		{ titre: 'Présentation', href: '/presentation' },
+		{ titre: 'Explorer les artistes', href: '/les-presque' },
+		{ titre: 'Méthode', href: '/methode' }
 	];
 </script>
 
@@ -50,17 +57,13 @@
 			<ul>
 				{#each briques as brique (brique.href)}
 					<li>
-						{#if brique.prete}
-							<a
-								href={brique.href}
-								class:actif={estActif(brique.href)}
-								aria-current={estActif(brique.href) ? 'page' : undefined}
-							>
-								{brique.titre}
-							</a>
-						{:else}
-							<span class="a-venir" title="À venir">{brique.titre}</span>
-						{/if}
+						<a
+							href={brique.href}
+							class:actif={estActif(brique.href)}
+							aria-current={estActif(brique.href) ? 'page' : undefined}
+						>
+							{brique.titre}
+						</a>
 					</li>
 				{/each}
 			</ul>
@@ -158,16 +161,6 @@
 	}
 
 	nav a,
-	.a-venir {
-		font-size: var(--taille-xs);
-		text-transform: uppercase;
-		letter-spacing: 0.07em;
-		font-weight: 500;
-		text-decoration: none;
-		color: var(--cadre-encre-douce);
-		padding-bottom: 3px;
-		border-bottom: 2px solid transparent;
-	}
 
 	nav a:hover {
 		color: var(--cadre-encre);
@@ -178,10 +171,6 @@
 		border-bottom-color: var(--accent-vermillon);
 	}
 
-	.a-venir {
-		opacity: 0.4;
-		cursor: default;
-	}
 
 	main {
 		max-width: var(--largeur-max);

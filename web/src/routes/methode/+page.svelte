@@ -224,7 +224,7 @@
 		«&nbsp;Presque lui&nbsp;», «&nbsp;Autour de lui&nbsp;», «&nbsp;Son style, sans
 		lui&nbsp;» —, de la plus proche à la plus lointaine du maître. C'est une
 		<strong>construction éditoriale</strong>, pas une catégorie officielle&nbsp;; son
-		détail est expliqué dans <a href="{base}/echelle">«&nbsp;Comprendre les mentions&nbsp;»</a>.
+		détail est expliqué dans la <a href="{base}/presentation">Présentation</a>.
 	</p>
 	<p>
 		<strong>Comment on les repère.</strong> La détection est lexicale&nbsp;: le
@@ -363,7 +363,7 @@
 		<strong>Le graphique d'un artiste</strong> place chaque mention à sa
 		<strong>part</strong> (en&nbsp;%) parmi les œuvres concernées, regroupée dans les
 		trois territoires. On y compare la <em>forme</em> du doute, pas des volumes bruts&nbsp;;
-		le détail des familles est dans <a href="{base}/echelle">«&nbsp;Comprendre les mentions&nbsp;»</a>.
+		le sens de chaque mention est donné dans la <a href="{base}/presentation">Présentation</a>.
 	</p>
 	<p>
 		<strong>Le nombre de musées</strong> d'une fiche ne compte que ceux ayant publié

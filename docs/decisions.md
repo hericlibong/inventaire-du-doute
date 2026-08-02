@@ -2,6 +2,34 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-02 (duodecies) — Navigation finale, et les définitions déménagent
+
+Phase 7. La navigation publique du volume 1 tient en quatre entrées, dans l'ordre de
+lecture : **Accueil · Présentation · Explorer les artistes · Méthode**. Identique dans le
+bandeau et sur la couverture (où « Accueil » ne figure pas : on y est).
+
+**« Comprendre les mentions » sort de la publication.** Sa comparaison chiffrée avec le total
+national faisait double emploi avec la vue abandonnée du prototype ; son graphique et ses
+territoires ont rejoint la Présentation.
+
+**Mais elle portait les définitions des huit mentions, et elles n'existaient nulle part
+ailleurs.** Retirer la page sans les déplacer aurait supprimé du site le seul endroit où l'on
+apprend ce que veut dire « de son école » ou « à sa manière ». Elles sont donc **déménagées
+sur la Présentation, sous le graphique qui les compte** — précisément là où un lecteur qui
+voit « de son école » à 22 % se demande ce que c'est. Elles n'existent toujours qu'à un seul
+endroit : la consigne était « définitions déplacées sans répétition ».
+
+**L'ancienne URL redirige** (`/echelle` → `/presentation`, 308). Elle a circulé ; une adresse
+publiée ne tombe pas sur une page d'erreur. En build statique, le prérendu écrit une page de
+renvoi (script + `meta refresh`). Les deux liens de la page Méthode qui pointaient vers elle
+sont repointés vers la Présentation, avec leur libellé corrigé.
+
+**Le mécanisme « à venir » est supprimé, pas seulement ses entrées.** Le bandeau savait
+afficher une rubrique non publiée en lien inerte (champ `prete`, branche `.a-venir`). La
+consigne est de ne pas annoncer les volumes suivants de cette façon : retirer le mécanisme
+plutôt que les seules entrées évite qu'il resserve. Les rubriques en réserve (révisions,
+carte) restent au dépôt, hors navigation, en attendant d'être publiées.
+
 ## 2026-08-02 (undecies) — L'accueil annonce le volume, plus le total national
 
 Phase 6. L'affiche reste le premier écran, en un seul écran. Ce qui change, c'est ce qu'elle

@@ -14,6 +14,7 @@
 	import { base } from '$app/paths';
 	import { nombre, lienPop, licenceEnFrancais } from '$lib/joconde.js';
 	import { FAMILLE_PUBLIC } from '$lib/familles-public.js';
+	import { TERRITOIRES } from '$lib/territoires.js';
 	import MentionsFrequentes from '$lib/presentation/MentionsFrequentes.svelte';
 
 	let { data } = $props();
@@ -26,6 +27,15 @@
 	// Part du volume dans le total national, en toutes lettres plutôt qu'en
 	// décimales : le récit prime (CLAUDE.md).
 	const partVolume = Math.round(corpus.national.part_du_volume * 100);
+
+	// Définitions des huit mentions. Elles vivaient sur « Comprendre les mentions »,
+	// page retirée de la navigation en phase 7 : elles ont déménagé ICI, sous le
+	// graphique qui les compte — c'est là qu'un lecteur se demande ce que veut dire
+	// « de son école ». Elles n'existent qu'à un seul endroit du site.
+	// Formule type affichée UNIQUEMENT là où elle apporte quelque chose (règle
+	// anti-répétition encodée dans familles-public.js).
+	const formuleType = (code) =>
+		FAMILLE_PUBLIC[code].montrerMention ? FAMILLE_PUBLIC[code].mention('un artiste') : null;
 </script>
 
 <svelte:head>
@@ -221,9 +231,42 @@
 		</div>
 	</section>
 
-	<!-- 4. LA VISUALISATION ---------------------------------------------------- -->
+	<!-- 4. LA VISUALISATION, PUIS CE QUE CES MOTS VEULENT DIRE ------------------ -->
 	<section class="graphique">
 		<MentionsFrequentes {corpus} />
+	</section>
+
+	<section class="glossaire">
+		<h2>Ce que ces mots veulent dire</h2>
+		<p class="texte">
+			Les huit formules, dans l'ordre du graphique. La couleur de chacune est la même
+			partout sur le site.
+		</p>
+		<div class="zones">
+			{#each TERRITOIRES as t (t.id)}
+				<div class="zone">
+					<h3>{t.titre}</h3>
+					<dl>
+						{#each t.codes as code (code)}
+							<div class="entree-mention">
+								<dt>
+									<span class="pastille" style="background: {FAMILLE_PUBLIC[code].couleur}"></span>
+									{FAMILLE_PUBLIC[code].label}
+								</dt>
+								<dd>
+									{FAMILLE_PUBLIC[code].corps}
+									{#if formuleType(code)}
+										<span class="formule">
+											Elle s'écrit par exemple «&nbsp;{formuleType(code)}&nbsp;».
+										</span>
+									{/if}
+								</dd>
+							</div>
+						{/each}
+					</dl>
+				</div>
+			{/each}
+		</div>
 	</section>
 
 	<!-- 5. LA SUITE ------------------------------------------------------------ -->
@@ -440,6 +483,60 @@
 		font-size: var(--taille-xs);
 		line-height: 1.5;
 		color: var(--couleur-encre-douce);
+	}
+
+	/* --- 4 bis. Le glossaire des huit mentions ------------------------------- */
+	.zones {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+		gap: clamp(1.5rem, 3vw, 2.5rem);
+		max-width: 72rem;
+	}
+
+	.zone h3 {
+		margin: 0 0 var(--espace-3);
+		padding-bottom: var(--espace-2);
+		border-bottom: 1px solid var(--couleur-trait);
+		font-family: var(--police-ui);
+		font-size: var(--taille-xs);
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: var(--couleur-encre-douce);
+	}
+
+	.zone dl {
+		margin: 0;
+	}
+
+	.entree-mention + .entree-mention {
+		margin-top: var(--espace-4);
+	}
+
+	.entree-mention dt {
+		display: flex;
+		align-items: baseline;
+		gap: 0.45rem;
+		font-weight: 600;
+	}
+
+	.pastille {
+		flex: none;
+		width: 0.55rem;
+		height: 0.55rem;
+		border-radius: 50%;
+	}
+
+	.entree-mention dd {
+		margin: 0.25rem 0 0;
+		line-height: 1.55;
+		color: var(--couleur-encre-douce);
+	}
+
+	.formule {
+		display: block;
+		margin-top: 0.2rem;
+		font-family: var(--police-ui);
+		font-size: var(--taille-xs);
 	}
 
 	@media (max-width: 860px) {

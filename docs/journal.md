@@ -2,6 +2,25 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-08-02 (phase 7) — Quatre entrées, et un déménagement qu'on a failli oublier
+
+La navigation finale tient en quatre mots : Accueil, Présentation, Explorer les artistes,
+Méthode. « Comprendre les mentions » s'en va — sa comparaison chiffrée doublonnait une vue
+déjà abandonnée, son graphique est passé sur la Présentation.
+
+Sauf qu'en relisant la page avant de la supprimer, on est tombé sur ce qu'elle portait
+vraiment : les définitions des huit mentions, une à une. « Sorti de son atelier, pas forcément
+de sa main. » « Son style, auteur inconnu. » Ces phrases n'existaient nulle part ailleurs sur
+le site. Les retirer, c'était enlever au lecteur le seul endroit où il apprend ce que veut
+dire « de son école ». Elles sont maintenant sous le graphique qui les compte, sur la
+Présentation — exactement là où la question se pose.
+
+Le reste est de l'hygiène : l'ancienne adresse redirige au lieu de tomber en erreur, les deux
+liens de la Méthode qui la citaient sont repointés, et le bandeau a perdu son mécanisme
+« à venir ». Ce dernier point n'était pas demandé au pied de la lettre — la consigne disait de
+ne pas afficher les volumes suivants en liens inertes. Mais le code savait le faire, et un
+code qui sait faire une chose interdite finit par la faire.
+
 ## 2026-08-02 (phase 6) — L'accueil dit enfin quel volume on ouvre
 
 L'affiche annonçait un chiffre : 24 507 notices prudentes dans Joconde. Vrai, frappant, et

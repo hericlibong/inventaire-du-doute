@@ -4,8 +4,8 @@
 	// ivoire, angles quasi droits, largeur adaptée au texte, légèrement décalés. Pas
 	// de boutons arrondis, pas d'ombre, pas d'icône. « Explorer les artistes » = entrée
 	// principale (plus large, plus lourde, accent cobalt, cible généreuse). Routes
-	// réelles (dont /echelle = « Comprendre les mentions », qui sort de la navigation
-	// publique en phase 7).
+	// réelles. « Comprendre les mentions » (/echelle) est sortie de la navigation en
+	// phase 7 : ses définitions ont rejoint la Présentation, son URL redirige.
 	import { page } from '$app/stores';
 
 	// `decal` = décalage horizontal irrégulier (les liens n'ont ni la même largeur ni
@@ -21,8 +21,7 @@
 	const liens = [
 		{ href: '/presentation', label: 'Présentation', decal: '0rem' },
 		{ href: '/les-presque', label: 'Explorer les artistes', principal: true, decal: '1.6rem' },
-		{ href: '/echelle', label: 'Comprendre les mentions', decal: '3.4rem' },
-		{ href: '/methode', label: 'Méthode', decal: '1.1rem' }
+		{ href: '/methode', label: 'Méthode', decal: '2.9rem' }
 	];
 
 	const courant = (href) =>

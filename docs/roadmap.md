@@ -100,6 +100,16 @@ Le registre est relu au point de contrôle 2, et les corrections sont portées e
       passe éditoriale complète, page par page, avant publication — registre journalistique
       sobre (CLAUDE.md), phrases courtes, aucune formule creuse, et surtout la relecture à voix
       haute qui n'a pas eu lieu.
+- [ ] **C5 — Le texte de l'accueil est à refaire entièrement.** Verdict utilisateur du
+      2026-08-02 : « dans l'état actuel il ne veut rien dire, c'est totalement incohérent,
+      abstrait et non publiable ». Ce qui ne va pas, pour que la réécriture parte de quelque
+      chose : « Quand le musée n'est pas sûr, il l'écrit » énonce une généralité sans dire de
+      quoi ni de qui ; « 102 artistes, 6 081 notices où il l'a écrit » répète le verbe de la
+      ligne précédente et laisse le lecteur sans image ; « une enquête dans les données des
+      musées » est une formule de dossier de presse, pas une accroche. Rien là-dedans ne
+      donne à voir une œuvre, un nom, une hésitation. L'affiche doit faire entrer, pas
+      résumer. **À réécrire d'un bloc, avec la contrainte de forme connue** : trois lignes
+      courtes maximum, la zone sombre de l'affiche étant étroite (decisions.md, undecies).
 - [ ] **C2 — Chercher les règles héritées qui décrivent mal ce qu'on regarde.** Une a été
       trouvée et corrigée le 2026-08-02 : « pas de carte en dessous de deux musées », qui
       traitait un repère géographique comme un graphique de répartition. Le défaut n'était pas
