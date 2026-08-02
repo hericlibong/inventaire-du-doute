@@ -5,6 +5,50 @@ Chaque ⏸ est un point de validation utilisateur : on s'y arrête.
 
 ---
 
+## ★ EN COURS (2026-08-02) — Volume 1 : Autour des maîtres
+
+Objectif : publier un premier volume autonome, consacré aux artistes dont le nom apparaît
+dans une notice avec une formulation prudente. Les autres angles (révisions d'attribution,
+territoires, échelle nationale) sont la matière de volumes ultérieurs et ne sont pas
+annoncés dans l'interface. Cadrage : decisions.md, 2026-08-02.
+
+Deux points d'arrêt seulement dans tout le chantier — ⏸ 1 après la phase 1, ⏸ 2 avant la
+fusion finale.
+
+- [x] **Phase 0 — Consigner le changement de stratégie** (2026-08-02). Prototype d'analyse
+      arbitré : la visualisation des mentions est conservable, la matrice des profils et la
+      comparaison nationale sont abandonnées. La branche `refactor/analyse-maitres` reste
+      intacte, jamais reportée en bloc.
+- [ ] **Phase 1 — Élargir la liste des artistes** (branche `data/maitres-lot-2`). Instruire
+      un lot borné de formes « à examiner » du registre, par notices prudentes décroissantes.
+      Vérification systématique, jamais fondée sur la notoriété : graphies regroupées,
+      identité de la personne, homonymes et ateliers séparés, seuil de dix références
+      distinctes, témoins réels et tests. Registre mis à jour avec les états exacts.
+- [ ] ⏸ **POINT DE CONTRÔLE 1** — rapport de lot, avant toute modification du front public.
+- [ ] **Phase 2 — Filtrer les œuvres par musée** dans l'onglet Œuvres : menu construit à
+      partir des seuls musées concernés par l'artiste affiché, effectifs indiqués, combinaison
+      avec le filtre par mention, compteur et pagination recalculés.
+- [ ] **Phase 3 — Relier musées et œuvres** : depuis la carte, ouvrir la liste des œuvres du
+      musée choisi, artiste conservé. Un seul système de filtrage, état partagé ou paramètres
+      d'URL, et le chemin inverse lisible.
+- [ ] **Phase 4 — Construire la page Présentation** : du nom lu sous une œuvre au corpus,
+      Joconde et les formulations prudentes, la sélection expliquée en clair, les chiffres du
+      volume, puis l'entrée dans l'exploration. Reprise sélective du prototype (export, tests,
+      première visualisation seulement).
+- [ ] **Phase 5 — Alléger « Explorer les maîtres »** : retirer la longue introduction, entrer
+      directement dans le répertoire, renvoyer discrètement vers la Présentation.
+- [ ] **Phase 6 — Adapter l'accueil** : affiche conservée, titre du volume, quelques chiffres
+      dynamiques, deux accès (Présentation, Explorer).
+- [ ] **Phase 7 — Finaliser la navigation** : Accueil · Présentation · Explorer les maîtres ·
+      Méthode. « Comprendre les mentions » quitte la navigation, son URL est redirigée.
+- [ ] ⏸ **POINT DE CONTRÔLE 2** — captures desktop et mobile des six écrans, fil éditorial,
+      chiffres publics, limites restantes. Avant fusion.
+- [ ] **Phase 8 — Vérification et publication** : chiffres, combinaisons de filtres, liens,
+      images et crédits, mobile, clavier, tests, build, routes et redirections, docs à jour,
+      fusion des seules branches validées.
+
+---
+
 ## ★★ CHANTIER PRIORITAIRE (2026-07-21) — fiabilisation des maîtres
 
 **Rien ne repart côté éditorial ou graphique avant les étapes 1 à 3.** L'audit du

@@ -2,6 +2,25 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-08-02 — Le site devient un volume, et le prototype passe à la trappe (aux deux tiers)
+
+On avait construit un instrument d'analyse à trois vues sur les artistes déjà publiés. On l'a
+essayé, et on a tranché. La première vue — les mentions les plus fréquentes — se lit d'un coup
+d'œil : elle reste. Les deux autres partent. La matrice de tous les profils demandait au
+lecteur de comparer soixante lignes pour redécouvrir ce que chaque fiche dit déjà mieux ; sur
+mobile elle faisait huit mille pixels de haut. La vue de comparaison, elle, ramenait au centre
+le total national alors qu'on venait justement de décider qu'il n'était plus le sujet.
+
+Car c'est la vraie décision du jour : le site arrête de vouloir raconter tout le doute de
+Joconde d'un seul tenant. Il se publie par volumes, et le premier s'appelle **Autour des
+maîtres**. Un sujet, entier, assumé comme tel — pas un panorama amputé qui s'excuse à chaque
+page. Les révisions d'attribution, les territoires, l'échelle nationale : autant de volumes
+possibles plus tard. Rien n'est annoncé dans l'interface tant que ce n'est pas écrit.
+
+La branche du prototype reste en place, telle quelle. On ne la fusionne pas : on ira y
+rechercher trois fichiers le moment venu, et pas un de plus. Ce qu'on abandonne ne doit pas
+revenir par la porte de derrière au prétexte que le code existait déjà.
+
 ## 2026-07-29 (suite) — Vérifier les candidats : savoir dire non
 
 Restaient 152 candidats trouvés par numéro d'inventaire, à vérifier. On a récupéré les dimensions

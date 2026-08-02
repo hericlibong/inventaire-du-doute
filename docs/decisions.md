@@ -2,6 +2,49 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-02 — Le projet devient un premier volume autonome : « Autour des maîtres »
+
+Le site cherchait depuis des semaines à être deux choses à la fois : le panorama du doute
+dans Joconde (24 507 notices, tous les cas) et l'exploration des artistes qui portent une
+mention prudente (une part mesurée de ce total). Chaque page devait donc s'excuser d'être
+partielle, et la navigation mélangeait des rubriques qui ne racontaient pas la même histoire.
+
+**Ce qui est décidé.** Le projet se publie par volumes. Le premier s'appelle
+**« L'inventaire du doute — Volume 1 : Autour des maîtres »** et ne traite qu'un sujet :
+les artistes dont le nom apparaît dans une notice avec une formulation prudente. C'est un
+tout cohérent, pas un aperçu incomplet. Les autres angles déjà défrichés — les révisions
+d'attribution (« Avant / après »), les territoires, l'échelle nationale — deviennent la
+matière de volumes ultérieurs. Ils ne sont pas annoncés dans l'interface : pas de rubrique
+grisée, pas de « à venir ».
+
+**Conséquence sur les chiffres.** Le total national de 24 507 notices reste publié, mais
+comme **contexte** dans la page de présentation, jamais comme le sujet de la page. Le chiffre
+qui gouverne le volume est celui des artistes retenus et de leurs notices. Aucun de ces deux
+nombres n'est écrit en dur : ni dans un titre, ni dans un composant. Ils se lisent dans les
+exports.
+
+## 2026-08-02 — Arbitrage du prototype d'analyse : une vue sur trois est conservée
+
+Le prototype de la branche `refactor/analyse-maitres` (commit `91fa23e`, étapes 1 et 2) a été
+essayé. Verdict après essai :
+
+- **Conservable** : la première visualisation, celle des mentions les plus fréquentes, ainsi
+  que son socle de données — `src/build_corpus_maitres.py`, `corpus_maitres.json` (13 Ko) et
+  `tests/test_corpus_maitres.py`, qui fige les invariants de comptage.
+- **Abandonnées pour la publication** : la matrice des 63 profils (63 lignes × 8 colonnes,
+  illisible sur mobile et redondante avec les fiches individuelles) et la vue de comparaison
+  avec le total national, qui remettait au centre un chiffre qui n'est plus le sujet. Le
+  système à trois onglets disparaît avec elles.
+
+**Ce qu'on fait de la branche.** Elle reste **intacte**, non fusionnée, comme trace de
+l'essai. Aucun report global du commit expérimental : les fichiers utiles seront repris un par
+un au moment de construire la page de présentation. Ce qui est abandonné ne revient pas par
+la porte de derrière.
+
+**Pourquoi le noter.** L'essai n'est pas une perte : il a produit le contrat de données à
+trois unités distinctes — notices, occurrences de mentions, associations artiste-notice —
+qui reste vrai et qui protège la page suivante d'un chiffre faux.
+
 ## 2026-07-31 (ter) — La provenance publiée est dérivée du fichier, plus recopiée
 
 `build_exports.py::provenance()` codait en dur la taille, l'empreinte et la date de version du
