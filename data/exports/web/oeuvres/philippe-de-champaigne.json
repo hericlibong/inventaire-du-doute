@@ -28,6 +28,7 @@
   {
    "reference": "000PE000384",
    "titre": "PORTRAIT D'HOMME ; DIT AUTREFOIS PORTRAIT DU DUC DE ROANNEZ",
+   "musee_code": "M0087",
    "musee": "musée municipal des beaux-arts",
    "ville": "Agen",
    "code": "attribue",
@@ -47,6 +48,7 @@
   {
    "reference": "000PE000382",
    "titre": "Portrait de deux hommes",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -66,6 +68,7 @@
   {
    "reference": "000PE000381",
    "titre": "Enfant au faucon",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -85,6 +88,7 @@
   {
    "reference": "000PE000380",
    "titre": "Le Christ en croix",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -93,6 +97,7 @@
   {
    "reference": "000PE000383",
    "titre": "Portrait d'homme",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -101,6 +106,7 @@
   {
    "reference": "000PE000379",
    "titre": "Petite fille aux mains jointes",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -120,6 +126,7 @@
   {
    "reference": "000PE007087",
    "titre": "JEAN PERRAULT ET ABRAHAM GIRARD ; DITS AUTREFOIS FRANCOIS MANSART ET CLAUDE PERRAULT",
+   "musee_code": "M5077",
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "attribue",
@@ -128,6 +135,7 @@
   {
    "reference": "000PE007789",
    "titre": "MAGISTRAT INCONNU",
+   "musee_code": "M5077",
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "ecole_de",
@@ -136,6 +144,7 @@
   {
    "reference": "000PE009639",
    "titre": "ADORATION DES MAGES",
+   "musee_code": "M0770",
    "musee": "musée de Tessé",
    "ville": "Le Mans",
    "code": "attribue",
@@ -155,6 +164,7 @@
   {
    "reference": "000PE010874",
    "titre": "VANITE",
+   "musee_code": "M0770",
    "musee": "musée de Tessé",
    "ville": "Le Mans",
    "code": "attribue",
@@ -174,6 +184,7 @@
   {
    "reference": "000PE011191",
    "titre": "JEAN DU VERGER DE HAURANNE, ABBE DE SAINT-CYRAN (1581-1643)",
+   "musee_code": "M5077",
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "atelier_de",
@@ -193,6 +204,7 @@
   {
    "reference": "000PE011975",
    "titre": "LOUIS ISAAC LE MAISTRE DE SACY (1613-1684)",
+   "musee_code": "M5077",
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "atelier_de",
@@ -212,6 +224,7 @@
   {
    "reference": "000PE012171",
    "titre": "JULES MAZARIN, CARDINAL (1602-1661)",
+   "musee_code": "M5077",
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "atelier_de",
@@ -220,6 +233,7 @@
   {
    "reference": "000PE012115",
    "titre": "MARIE DES ANGES SUIREAU (?-1658)",
+   "musee_code": "M5077",
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "atelier_de",
@@ -239,6 +253,7 @@
   {
    "reference": "07140001370",
    "titre": "Louis XIII",
+   "musee_code": "M0714",
    "musee": "musée Louis Philippe",
    "ville": "Eu",
    "code": "ecole_de",
@@ -247,6 +262,7 @@
   {
    "reference": "06070000079",
    "titre": "Portrait d'un ecclésiastique",
+   "musee_code": "M0607",
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "maniere_de",
@@ -255,6 +271,7 @@
   {
    "reference": "50350110011",
    "titre": "Portrait d'homme nu-tête, de trois quarts vers la gauche",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -263,6 +280,7 @@
   {
    "reference": "50350110005",
    "titre": "La Cène",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -271,6 +289,7 @@
   {
    "reference": "07840001197",
    "titre": "Cardinal de Richelieu (Paris, 1585 - 1642)",
+   "musee_code": "M0784",
    "musee": "musée Jean de la Fontaine",
    "ville": "Château-Thierry",
    "code": "attribue",
@@ -279,6 +298,7 @@
   {
    "reference": "M0271000337",
    "titre": "Allégorie à la Providence royale",
+   "musee_code": "M0271",
    "musee": "château musées",
    "ville": "Blois",
    "code": "attribue",
@@ -287,6 +307,7 @@
   {
    "reference": "06190001179",
    "titre": "Le Cardinal de Richelieu exposé après sa mort sur son lit de parade",
+   "musee_code": "M0619",
    "musee": "musée de la Chartreuse",
    "ville": "Douai",
    "code": "ecole_de",
@@ -295,6 +316,7 @@
   {
    "reference": "M0332003814",
    "titre": "Tête de femme",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -303,6 +325,7 @@
   {
    "reference": "03110000287",
    "titre": "Portrait de Nicolas Hénin de Cuvillers (titre attribué)",
+   "musee_code": "M0311",
    "musee": "musée des Beaux-Arts de Saint-Denis",
    "ville": "Reims",
    "code": "attribue",
@@ -311,6 +334,7 @@
   {
    "reference": "07140009137",
    "titre": "Ecce Homo",
+   "musee_code": "M0714",
    "musee": "musée Louis Philippe",
    "ville": "Eu",
    "code": "entourage_de",
@@ -319,6 +343,7 @@
   {
    "reference": "07140009138",
    "titre": "Mater Dolorosa",
+   "musee_code": "M0714",
    "musee": "musée Louis Philippe",
    "ville": "Eu",
    "code": "entourage_de",
@@ -327,6 +352,7 @@
   {
    "reference": "M0332006700",
    "titre": "Portrait d'homme",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -345,7 +371,7 @@
   }
  ],
  "version_donnee": "2026-07-01",
- "date_generation": "2026-08-02T14:35:33+00:00",
+ "date_generation": "2026-08-02T15:04:31+00:00",
  "source": "Collections des musées de France : base Joconde",
  "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
 }

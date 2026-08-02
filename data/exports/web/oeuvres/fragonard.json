@@ -24,6 +24,7 @@
   {
    "reference": "000PE001196",
    "titre": "Portrait de jeune femme",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -32,6 +33,7 @@
   {
    "reference": "000PE001195",
    "titre": "Bacchante endormie",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -40,6 +42,7 @@
   {
    "reference": "000PE001197",
    "titre": "Le nid d'oiseaux",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -48,6 +51,7 @@
   {
    "reference": "000PE001198",
    "titre": "LA VIERGE ET L'ENFANT",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -56,6 +60,7 @@
   {
    "reference": "000DE007125",
    "titre": "PERSONNAGES SUR UNE PASSERELLE",
+   "musee_code": "M0917",
    "musee": "musée Grobet-Labadié",
    "ville": "Marseille",
    "code": "attribue",
@@ -64,6 +69,7 @@
   {
    "reference": "000DE007124",
    "titre": "PAYSAGE ANIME AVEC RUINES ET PERSONNAGES",
+   "musee_code": "M0917",
    "musee": "musée Grobet-Labadié",
    "ville": "Marseille",
    "code": "attribue",
@@ -72,6 +78,7 @@
   {
    "reference": "000PE013394",
    "titre": "Ruth et Booz",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -80,6 +87,7 @@
   {
    "reference": "000PE014072",
    "titre": "ALLEGORIE DE LA VILLE DE PARIS ; DIT AUTREFOIS MARSEILLE PROTEGEE PAR MERCURE",
+   "musee_code": "M0913",
    "musee": "musée des beaux-arts",
    "ville": "Marseille",
    "code": "attribue",
@@ -88,6 +96,7 @@
   {
    "reference": "000PE014071",
    "titre": "L'ASSOMPTION DE LA VIERGE",
+   "musee_code": "M0913",
    "musee": "musée des beaux-arts",
    "ville": "Marseille",
    "code": "attribue",
@@ -96,6 +105,7 @@
   {
    "reference": "000PE016173",
    "titre": "ALLEGORIE",
+   "musee_code": "M0917",
    "musee": "musée Grobet-Labadié",
    "ville": "Marseille",
    "code": "attribue",
@@ -104,6 +114,7 @@
   {
    "reference": "000PE023112",
    "titre": "Joueur de flûte",
+   "musee_code": "M0065",
    "musee": "musée des beaux-arts",
    "ville": "Bordeaux",
    "code": "ecole_de",
@@ -112,6 +123,7 @@
   {
    "reference": "06070000115",
    "titre": "Sainte Famille",
+   "musee_code": "M0607",
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "maniere_de",
@@ -120,6 +132,7 @@
   {
    "reference": "50350030737",
    "titre": "Personnages près d'une église",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -128,6 +141,7 @@
   {
    "reference": "50350030735",
    "titre": "Paysans au bord d'une rivière",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -136,6 +150,7 @@
   {
    "reference": "50350030738",
    "titre": "Vaste bâtiment surmonté d'une tonnelle, dans un parc",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -144,6 +159,7 @@
   {
    "reference": "50350502833",
    "titre": "Deux figures",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -152,6 +168,7 @@
   {
    "reference": "50350231283",
    "titre": "Jéroboam sacrifiant aux idoles",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -160,6 +177,7 @@
   {
    "reference": "50350228306",
    "titre": "Personnages assemblés devant une masure",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -168,6 +186,7 @@
   {
    "reference": "50350035040",
    "titre": "Tête d'homme barbu",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -176,6 +195,7 @@
   {
    "reference": "50350030736",
    "titre": "Couple, et serviteur, en promenade",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -184,6 +204,7 @@
   {
    "reference": "50350212407",
    "titre": "Etudes d'un buste et de cinq têtes",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -192,6 +213,7 @@
   {
    "reference": "10480007491",
    "titre": "Le Jeu de la palette",
+   "musee_code": "M1048",
    "musee": "musée des beaux-arts",
    "ville": "Chambéry",
    "code": "attribue",
@@ -200,6 +222,7 @@
   {
    "reference": "50110001194",
    "titre": "Le petit montreur de singe savant",
+   "musee_code": "M5011",
    "musee": "musée national Magnin",
    "ville": "Dijon",
    "code": "genre_de",
@@ -208,6 +231,7 @@
   {
    "reference": "07290021230",
    "titre": "Enlèvement dHélène (titre moderne) ; embarquement de Cléopâtre (titre ancien)",
+   "musee_code": "M0729",
    "musee": "musée des beaux-arts",
    "ville": "Rouen",
    "code": "ecole_de",
@@ -216,6 +240,7 @@
   {
    "reference": "07290022334",
    "titre": "Vue de Pouzolles ; La partie de cache-cache",
+   "musee_code": "M0729",
    "musee": "musée des beaux-arts",
    "ville": "Rouen",
    "code": "attribue",
@@ -224,6 +249,7 @@
   {
    "reference": "08760010792",
    "titre": "Portrait d'enfant",
+   "musee_code": "M0876",
    "musee": "musée Fragonard",
    "ville": "Grasse",
    "code": "attribue",
@@ -232,6 +258,7 @@
   {
    "reference": "08760049019",
    "titre": "Cour de ferme",
+   "musee_code": "M0876",
    "musee": "musée Fragonard",
    "ville": "Grasse",
    "code": "attribue",
@@ -240,6 +267,7 @@
   {
    "reference": "08760049403",
    "titre": "Portrait de Marguerite Gérard",
+   "musee_code": "M0876",
    "musee": "musée Fragonard",
    "ville": "Grasse",
    "code": "attribue",
@@ -248,6 +276,7 @@
   {
    "reference": "M0536001628",
    "titre": "Le Coche d’eau (recto) ; Personnage de dos drapé d’une cape (verso)",
+   "musee_code": "M0536",
    "musee": "musée départemental d'art ancien et contemporain",
    "ville": "Epinal",
    "code": "attribue",
@@ -256,6 +285,7 @@
   {
    "reference": "04450000713",
    "titre": "La délivrance de saint Pierre",
+   "musee_code": "M0445",
    "musee": "Palais-musée des Archevêques de Narbonne",
    "ville": "Narbonne",
    "code": "attribue",
@@ -263,7 +293,7 @@
   }
  ],
  "version_donnee": "2026-07-01",
- "date_generation": "2026-08-02T14:35:33+00:00",
+ "date_generation": "2026-08-02T15:04:31+00:00",
  "source": "Collections des musées de France : base Joconde",
  "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
 }

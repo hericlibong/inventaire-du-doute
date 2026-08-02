@@ -24,6 +24,7 @@
   {
    "reference": "000PE019542",
    "titre": "Le Christ pleure par la Vierge et deux anges",
+   "musee_code": "M0629",
    "musee": "musée des Beaux-Arts",
    "ville": "Lille",
    "code": "atelier_de",
@@ -43,6 +44,7 @@
   {
    "reference": "000PE023078",
    "titre": "PORTRAIT DE LA FEMME DU DOGE GIUSTINANI",
+   "musee_code": "M0065",
    "musee": "musée des beaux-arts",
    "ville": "Bordeaux",
    "code": "attribue",
@@ -51,6 +53,7 @@
   {
    "reference": "000PE027370",
    "titre": "LA FAMILLE DE LOTH FUYANT SODOME",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -70,6 +73,7 @@
   {
    "reference": "000PE027371",
    "titre": "LA SAINTE-FAMILLE, AVEC SAINTE ELISABETH, LA MADELEINE ET UNE BENEDICTINE AGENOUILLEE",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -89,6 +93,7 @@
   {
    "reference": "000PE027369",
    "titre": "JESUS SUCCOMBANT SOUS LE POIDS DE LA CROIX",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -108,6 +113,7 @@
   {
    "reference": "00000077344",
    "titre": "MARS ET VENUS",
+   "musee_code": "M5052",
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
@@ -127,6 +133,7 @@
   {
    "reference": "10500004947",
    "titre": "Portrait de jeune femme",
+   "musee_code": "M1048",
    "musee": "musée des beaux-arts",
    "ville": "Chambéry",
    "code": "atelier_de",
@@ -135,6 +142,7 @@
   {
    "reference": "50350007007",
    "titre": "Les anges célébrant le mariage de sainte Catherine d'Alexandrie",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -143,6 +151,7 @@
   {
    "reference": "50350006997",
    "titre": "Saint François avec un livre, une sainte, Dieu et un ange tenant une palme",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -151,6 +160,7 @@
   {
    "reference": "50350200379",
    "titre": "Minerve debout, tenant un bouclier ; reprise (?) de la tête",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -159,6 +169,7 @@
   {
    "reference": "50350007023",
    "titre": "Mars et Vénus",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -167,6 +178,7 @@
   {
    "reference": "50350006998",
    "titre": "Saint Georges et la princesse , la Vierge avec l'Enfant et un saint",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -175,6 +187,7 @@
   {
    "reference": "50350105884",
    "titre": "Tête d'homme, vue de face, portant moustache et barbe",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -183,6 +196,7 @@
   {
    "reference": "50350007037",
    "titre": "Antéros derrière Vénus et Mercure tenant Eros devant Jupiter",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -191,6 +205,7 @@
   {
    "reference": "50350110427",
    "titre": "Tête d'homme, vue de face, portant moustache et barbe",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -199,6 +214,7 @@
   {
    "reference": "50350201795",
    "titre": "Une femme drapée assise, tenant un luth",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -207,6 +223,7 @@
   {
    "reference": "50350037181",
    "titre": "Martyre d'une sainte",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -215,6 +232,7 @@
   {
    "reference": "50350007016",
    "titre": "Le Christ mort, soutenu par son Père, adoré par les saints Pierre et Paul",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -223,6 +241,7 @@
   {
    "reference": "50350007001",
    "titre": "Le Mariage de la Vierge",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -231,6 +250,7 @@
   {
    "reference": "50350037182",
    "titre": "Martyre d'une sainte",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -239,6 +259,7 @@
   {
    "reference": "50350006991",
    "titre": "Allégorie de la Religion",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -247,6 +268,7 @@
   {
    "reference": "50350006992",
    "titre": "Vénus enlevant l'arc à l'Amour",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -255,6 +277,7 @@
   {
    "reference": "50350201393",
    "titre": "La Vierge assise avec l'Enfant entre un évèque et saint Joseph",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -263,6 +286,7 @@
   {
    "reference": "50350104880",
    "titre": "Des soldats attachant les mains d'un guerrier vaincu",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -271,6 +295,7 @@
   {
    "reference": "50350017854",
    "titre": "La Vierge apparaissant à saint Antoine et à saint Paul Ermite",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -279,6 +304,7 @@
   {
    "reference": "50350006979",
    "titre": "L'Adoration des Mages",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -287,6 +313,7 @@
   {
    "reference": "50350145955",
    "titre": "Façade de palais à un étage avec porte centrale à fronton",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -295,6 +322,7 @@
   {
    "reference": "50350007033",
    "titre": "La Vierge apparaissant aux saints Antoine Abbot, Paul ermite, Pierre et Paul",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -303,6 +331,7 @@
   {
    "reference": "50350007040",
    "titre": "Les Noces de Cana",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -311,6 +340,7 @@
   {
    "reference": "50350007041",
    "titre": "La Cène",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -319,6 +349,7 @@
   {
    "reference": "50350006985",
    "titre": "L'Assomption",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -327,6 +358,7 @@
   {
    "reference": "000PE024223",
    "titre": "LA CHARITE ROMAINE",
+   "musee_code": "M0913",
    "musee": "musée des beaux-arts",
    "ville": "Marseille",
    "code": "ecole_de",
@@ -335,6 +367,7 @@
   {
    "reference": "03290005067",
    "titre": "Vénus et Mars",
+   "musee_code": "M0329",
    "musee": "musée d’ethnographie corse",
    "ville": "Bastia",
    "code": "suiveur_de",
@@ -354,6 +387,7 @@
   {
    "reference": "01370014322",
    "titre": "La Vierge apparaissant à saint Antoine, saint Paul ermite, saint Paul et saint Pierre",
+   "musee_code": "M0137",
    "musee": "musée des beaux-arts",
    "ville": "Dijon",
    "code": "atelier_de",
@@ -362,6 +396,7 @@
   {
    "reference": "01760000021",
    "titre": "Le Repas à Emmaüs",
+   "musee_code": "M0176",
    "musee": "musée eucharistique du Hiéron",
    "ville": "Paray-le-Monial",
    "code": "atelier_de",
@@ -369,7 +404,7 @@
   }
  ],
  "version_donnee": "2026-07-01",
- "date_generation": "2026-08-02T14:35:33+00:00",
+ "date_generation": "2026-08-02T15:04:31+00:00",
  "source": "Collections des musées de France : base Joconde",
  "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
 }

@@ -28,6 +28,7 @@
   {
    "reference": "00000068495",
    "titre": "LE MARIAGE MYSTIQUE DE SAINTE CATHERINE",
+   "musee_code": "M5011",
    "musee": "musée national Magnin",
    "ville": "Dijon",
    "code": "attribue",
@@ -36,6 +37,7 @@
   {
    "reference": "50350006465",
    "titre": "Saint Jérôme dans le désert",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -44,6 +46,7 @@
   {
    "reference": "50350006472",
    "titre": "La Charité",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -52,6 +55,7 @@
   {
    "reference": "50350145089",
    "titre": "Cavalier sautant vers la gauche",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -60,6 +64,7 @@
   {
    "reference": "50350006473",
    "titre": "Sept têtes d'hommes et de femmes, dans diverses attitudes",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -68,6 +73,7 @@
   {
    "reference": "50350145111",
    "titre": "Personnages lançant des pierres vers la gauche",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -76,6 +82,7 @@
   {
    "reference": "50350037957",
    "titre": "Femme à demi-allongée, de dos, appuyée sur son coude gauche",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -84,6 +91,7 @@
   {
    "reference": "50350001991",
    "titre": "Le Christ apparaissant aux apôtres",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -92,6 +100,7 @@
   {
    "reference": "50350006468",
    "titre": "Bacchus couché et entouré d'enfants",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -100,6 +109,7 @@
   {
    "reference": "50350006458",
    "titre": "La Vierge assise embrassant l'Enfant Jésus",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -108,6 +118,7 @@
   {
    "reference": "50350006471",
    "titre": "Deux hommes nus, luttant",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -116,6 +127,7 @@
   {
    "reference": "50350006464",
    "titre": "Incrédulité de saint Thomas",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -124,6 +136,7 @@
   {
    "reference": "50350006456",
    "titre": "Sainte Famille, avec la Vierge tendant à l'Enfant le Globe du monde",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -132,6 +145,7 @@
   {
    "reference": "50350006462",
    "titre": "Evanouissement d'Esther ?",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -140,6 +154,7 @@
   {
    "reference": "50350006466",
    "titre": "Apothéose de sainte Madeleine",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -148,6 +163,7 @@
   {
    "reference": "50350006467",
    "titre": "Diane",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -156,6 +172,7 @@
   {
    "reference": "50350006457",
    "titre": "Sainte Famille, avec l'Enfant couché dans son berceau",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -164,6 +181,7 @@
   {
    "reference": "50350006470",
    "titre": "Plusieurs enfants sur un lit, jouant avec des coussins",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -172,6 +190,7 @@
   {
    "reference": "50350032714",
    "titre": "Homme assis, tenant un sceptre, dans un pendentif",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -180,6 +199,7 @@
   {
    "reference": "50350145142",
    "titre": "Adoration des bergers",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -188,6 +208,7 @@
   {
    "reference": "50350145113",
    "titre": "Vierge debout, tenant l'Enfant Jésus, entourée d'angelots",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -196,6 +217,7 @@
   {
    "reference": "50350006459",
    "titre": "La Fuite en Egypte",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -204,6 +226,7 @@
   {
    "reference": "50350006461",
    "titre": "Pietà",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -212,6 +235,7 @@
   {
    "reference": "50350006463",
    "titre": "Le Christ porté au tombeau",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -220,6 +244,7 @@
   {
    "reference": "50350006460",
    "titre": "Repos de la Sainte Famille",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -228,6 +253,7 @@
   {
    "reference": "50350006469",
    "titre": "Cavalier franchissant un pont et passant sur un cadavre",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -236,6 +262,7 @@
   {
    "reference": "50350006455",
    "titre": "Naissance de la Vierge",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -244,6 +271,7 @@
   {
    "reference": "50350145100",
    "titre": "Homme vêtu en guerrier, une épée au côté, de trois quarts vers la gauche",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -252,6 +280,7 @@
   {
    "reference": "50350508137",
    "titre": "UNE FEMME AVEC TROIS ENFANTS",
+   "musee_code": "M0094",
    "musee": "musée Bonnat-Helleu, musée des Beaux-Arts de Bayonne",
    "ville": "Bayonne",
    "code": "ecole_de",
@@ -260,6 +289,7 @@
   {
    "reference": "02110002809",
    "titre": "Vénus et l'Amour",
+   "musee_code": "M0211",
    "musee": "musée des beaux-arts",
    "ville": "Rennes",
    "code": "maniere_de",
@@ -268,6 +298,7 @@
   {
    "reference": "02110002810",
    "titre": "Combat dans les airs",
+   "musee_code": "M0211",
    "musee": "musée des beaux-arts",
    "ville": "Rennes",
    "code": "maniere_de",
@@ -276,6 +307,7 @@
   {
    "reference": "02110003535",
    "titre": "Silène et deux bergers",
+   "musee_code": "M0211",
    "musee": "musée des beaux-arts",
    "ville": "Rennes",
    "code": "maniere_de",
@@ -284,6 +316,7 @@
   {
    "reference": "M0491001006",
    "titre": "Le martyre de Saint Jean l'Evangéliste",
+   "musee_code": "M0491",
    "musee": "musée Hyacinthe Rigaud",
    "ville": "Perpignan",
    "code": "attribue",
@@ -292,6 +325,7 @@
   {
    "reference": "03290005058",
    "titre": "Jésus guérissant un aveugle",
+   "musee_code": "M0329",
    "musee": "musée d’ethnographie corse",
    "ville": "Bastia",
    "code": "entourage_de",
@@ -299,7 +333,7 @@
   }
  ],
  "version_donnee": "2026-07-01",
- "date_generation": "2026-08-02T14:35:33+00:00",
+ "date_generation": "2026-08-02T15:04:31+00:00",
  "source": "Collections des musées de France : base Joconde",
  "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
 }

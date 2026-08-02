@@ -16,6 +16,7 @@
   {
    "reference": "5002E001385",
    "titre": "CANTIQUES SPIRITUELS. / NOTRE-DAME DE FOURVIERE. (titre inscrit)",
+   "musee_code": "M5002",
    "musee": "musée des civilisations de l'Europe et de la Méditerranée",
    "ville": "Marseille",
    "code": "point_interrogation",
@@ -24,6 +25,7 @@
   {
    "reference": "M0537000257",
    "titre": "NOTRE-DAME DE BON-SECOURS. (titre inscrit)",
+   "musee_code": "M0537",
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
@@ -32,6 +34,7 @@
   {
    "reference": "M0537000256",
    "titre": "NOTRE-DAME DE BON-SECOURS. (titre inscrit)",
+   "musee_code": "M0537",
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
@@ -40,6 +43,7 @@
   {
    "reference": "M0537000255",
    "titre": "NOTRE-DAME DE BON-SECOURS. N° 1119 (titre inscrit)",
+   "musee_code": "M0537",
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
@@ -48,6 +52,7 @@
   {
    "reference": "M0537000258",
    "titre": "NOTRE-DAME DE BON-SECOURS. (titre inscrit)",
+   "musee_code": "M0537",
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
@@ -56,6 +61,7 @@
   {
    "reference": "M0537000254",
    "titre": "NOTRE-DAME DE BON-SECOURS. N° 102 (titre inscrit)",
+   "musee_code": "M0537",
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
@@ -64,6 +70,7 @@
   {
    "reference": "M0537000977",
    "titre": "LE COURONNEMENT / DE LA SAINTE VIERGE. (titre inscrit)",
+   "musee_code": "M0537",
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
@@ -72,6 +79,7 @@
   {
    "reference": "M0537000292",
    "titre": "L'ANGE GARDIEN. N° 25 (titre inscrit)",
+   "musee_code": "M0537",
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
@@ -80,6 +88,7 @@
   {
    "reference": "M0537000287",
    "titre": "L'ANGE GARDIEN. 59 (titre inscrit)",
+   "musee_code": "M0537",
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
@@ -88,6 +97,7 @@
   {
    "reference": "M0537001059",
    "titre": "JESUS-CHRIST, / ORNE DES QUINZE PRINCIPAUX MYSTERES DE LA RELIGION. (titre inscrit)",
+   "musee_code": "M0537",
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
@@ -96,6 +106,7 @@
   {
    "reference": "M0537001060",
    "titre": "JESUS-CHRIST, / ORNE DES QUINZE PRINCIPAUX MYSTERES DE LA RELIGION. 199 (titre inscrit)",
+   "musee_code": "M0537",
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
@@ -104,6 +115,7 @@
   {
    "reference": "M0537001062",
    "titre": "JESUS-CHRIST, / ORNE DES QUINZE PRINCIPAUX MYSTERES DE LA RELIGION. 199 (titre inscrit)",
+   "musee_code": "M0537",
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
@@ -112,6 +124,7 @@
   {
    "reference": "M0537001061",
    "titre": "JESUS-CHRIST, / ORNE DES QUINZE PRINCIPAUX MYSTERES DE LA RELIGION. 199 (titre inscrit)",
+   "musee_code": "M0537",
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
@@ -120,6 +133,7 @@
   {
    "reference": "M0537003417",
    "titre": "BOMBARDEMENT ET PRISE D'ALGER. (titre inscrit)",
+   "musee_code": "M0537",
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
@@ -128,6 +142,7 @@
   {
    "reference": "M0537003418",
    "titre": "BOMBARDEMENT ET PRISE D'ALGER. (titre inscrit)",
+   "musee_code": "M0537",
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
@@ -136,6 +151,7 @@
   {
    "reference": "M0537020875",
    "titre": "BOMBARDEMENT ET PRISE D'ALGER. (titre inscrit)",
+   "musee_code": "M0537",
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
@@ -144,6 +160,7 @@
   {
    "reference": "M0537047452",
    "titre": "DESCENTE DE LA CROIX (titre inscrit)",
+   "musee_code": "M0537",
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
@@ -152,6 +169,7 @@
   {
    "reference": "M0537034879",
    "titre": "HISTOIRE DES QUATRE FILS AYMON. 2.e pl.(titre inscrit)",
+   "musee_code": "M0537",
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
@@ -160,6 +178,7 @@
   {
    "reference": "M0537040328",
    "titre": "FABLES DE LA FONTAINE. (titre inscrit, fr., all.)",
+   "musee_code": "M0537",
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
@@ -168,6 +187,7 @@
   {
    "reference": "M0537040309",
    "titre": "CROQUEMITAINE. / 403 (titre inscrit)",
+   "musee_code": "M0537",
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
@@ -176,6 +196,7 @@
   {
    "reference": "M0537040571",
    "titre": "LES CATASTROPHES ET LA FIN TRAGIQUE DU PETIT TOUCHE-A-TOUT. (titre inscrit)",
+   "musee_code": "M0537",
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
@@ -184,6 +205,7 @@
   {
    "reference": "M0537047043",
    "titre": "GLOIRE NATIONALE / BERTRAND. (titre inscrit)",
+   "musee_code": "M0537",
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
@@ -192,6 +214,7 @@
   {
    "reference": "M0537034884",
    "titre": "PRISE D'ALEXANDRIE. (titre inscrit)",
+   "musee_code": "M0537",
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
@@ -200,6 +223,7 @@
   {
    "reference": "M0537040272",
    "titre": "SALTIMBANQUES ET CHARLATANS. (titre inscrit, fr., all.)",
+   "musee_code": "M0537",
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
@@ -208,6 +232,7 @@
   {
    "reference": "M0537021010",
    "titre": "BATAILLE DE WATERLOO. (titre inscrit)",
+   "musee_code": "M0537",
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
@@ -216,6 +241,7 @@
   {
    "reference": "M0537008042",
    "titre": "CROQUEMITAINE. (titre inscrit)",
+   "musee_code": "M0537",
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
@@ -224,6 +250,7 @@
   {
    "reference": "M0537007752",
    "titre": "LE MOULIN MERVEILLEUX. (titre inscrit)",
+   "musee_code": "M0537",
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
@@ -232,6 +259,7 @@
   {
    "reference": "M0537003354",
    "titre": "BATAILLE DE FLEURUS. (titre inscrit)",
+   "musee_code": "M0537",
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
@@ -240,6 +268,7 @@
   {
    "reference": "M0537007836",
    "titre": "LE MONDE RENVERSÉ. (IIe Planche.) (titre inscrit)",
+   "musee_code": "M0537",
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
@@ -248,6 +277,7 @@
   {
    "reference": "M0537003401",
    "titre": "ENTRÉE DES FRANÇAIS A ANVERS EN 1831 (titre inscrit)",
+   "musee_code": "M0537",
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
@@ -256,6 +286,7 @@
   {
    "reference": "M0537003399",
    "titre": "ENTRÉE DES FRANÇAIS EN BELGIQUE. (titre inscrit)",
+   "musee_code": "M0537",
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
@@ -264,6 +295,7 @@
   {
    "reference": "M0537047044",
    "titre": "GLOIRE NATIONALE / DAMRÉMONT. (titre inscrit)",
+   "musee_code": "M0537",
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
@@ -272,6 +304,7 @@
   {
    "reference": "M0537035826",
    "titre": "LA FÊTE DE VILLAGE. / N°. 5 (titre inscrit)",
+   "musee_code": "M0537",
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
@@ -280,6 +313,7 @@
   {
    "reference": "M0537003780",
    "titre": "VEILLE D'AUSTERLITZ. (titre inscrit)",
+   "musee_code": "M0537",
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
@@ -288,6 +322,7 @@
   {
    "reference": "M0537003761",
    "titre": "PRISE D'ALEXANDRIE. (titre inscrit)",
+   "musee_code": "M0537",
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
@@ -296,6 +331,7 @@
   {
    "reference": "M0537003781",
    "titre": "VEILLE D'AUSTERLITZ. (titre inscrit)",
+   "musee_code": "M0537",
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
@@ -304,6 +340,7 @@
   {
    "reference": "M0537017721",
    "titre": "VEILLE D'AUSTERLITZ. (titre inscrit)",
+   "musee_code": "M0537",
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
@@ -312,6 +349,7 @@
   {
    "reference": "M0537039802",
    "titre": "DONNERA-T-ON QUELQUE CHOSE A CRÉDIT ? / QUAND LE COQ CHANTERA, CRÉDIT ON DONNERA. (titre inscrit)",
+   "musee_code": "M0537",
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
@@ -320,6 +358,7 @@
   {
    "reference": "M0537003810",
    "titre": "NAPOLÉON A MONTEREAU. (titre inscrit)",
+   "musee_code": "M0537",
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
@@ -328,6 +367,7 @@
   {
    "reference": "M0537035976",
    "titre": "CANTIQUES SPIRITUELS. / JÉSUS SUR LA CROIX. (titre inscrit)",
+   "musee_code": "M0537",
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
@@ -336,6 +376,7 @@
   {
    "reference": "M0537003347",
    "titre": "GLOIRE NATIONALE. / NAPOLEON. (titre inscrit)",
+   "musee_code": "M0537",
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
@@ -344,6 +385,7 @@
   {
    "reference": "M0537003732",
    "titre": "GLOIRE NATIONALE / BERTRAND. (titre inscrit)",
+   "musee_code": "M0537",
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
@@ -352,6 +394,7 @@
   {
    "reference": "M0537003408",
    "titre": "MACHINE INFERNALE : ATTENTAT du 28 juillet 1835. (titre inscrit)",
+   "musee_code": "M0537",
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
@@ -359,7 +402,7 @@
   }
  ],
  "version_donnee": "2026-07-01",
- "date_generation": "2026-08-02T14:35:33+00:00",
+ "date_generation": "2026-08-02T15:04:31+00:00",
  "source": "Collections des musées de France : base Joconde",
  "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
 }

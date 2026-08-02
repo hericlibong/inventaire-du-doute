@@ -32,6 +32,7 @@
   {
    "reference": "000PE000206",
    "titre": "Jeune femme au manchon",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -51,6 +52,7 @@
   {
    "reference": "000PE000204",
    "titre": "Le Sommeil des Amours",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -59,6 +61,7 @@
   {
    "reference": "000PE000205",
    "titre": "L'AURORE",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -67,6 +70,7 @@
   {
    "reference": "000DE006838",
    "titre": "AMOURS JOUANT AVEC UN VOILE BLEU",
+   "musee_code": "M0917",
    "musee": "musée Grobet-Labadié",
    "ville": "Marseille",
    "code": "ecole_de",
@@ -75,6 +79,7 @@
   {
    "reference": "000DE006839",
    "titre": "AMOURS JOUANT AVEC UNE COUPE",
+   "musee_code": "M0917",
    "musee": "musée Grobet-Labadié",
    "ville": "Marseille",
    "code": "ecole_de",
@@ -83,6 +88,7 @@
   {
    "reference": "000DE016661",
    "titre": "AMOUR",
+   "musee_code": "M0211",
    "musee": "musée des beaux-arts",
    "ville": "Rennes",
    "code": "ecole_de",
@@ -91,6 +97,7 @@
   {
    "reference": "000PE013054",
    "titre": "La diseuse de bonne aventure",
+   "musee_code": "M5077",
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "ecole_de",
@@ -99,6 +106,7 @@
   {
    "reference": "000PE013616",
    "titre": "LE LAPIN SAVANT",
+   "musee_code": "M0913",
    "musee": "musée des beaux-arts",
    "ville": "Marseille",
    "code": "attribue",
@@ -107,6 +115,7 @@
   {
    "reference": "000PE020181",
    "titre": "L'ADORATION DES BERGERS",
+   "musee_code": "M0065",
    "musee": "musée des beaux-arts",
    "ville": "Bordeaux",
    "code": "point_interrogation",
@@ -115,6 +124,7 @@
   {
    "reference": "000PE020930",
    "titre": "Mercure confiant le jeune Bacchus aux nymphes du mont Nysa",
+   "musee_code": "M0657",
    "musee": "musée des beaux-arts",
    "ville": "Caen",
    "code": "ecole_de",
@@ -123,6 +133,7 @@
   {
    "reference": "00000060723",
    "titre": "PETIT DENICHEUR D'OISEAUX",
+   "musee_code": "M0619",
    "musee": "musée de la Chartreuse",
    "ville": "Douai",
    "code": "ecole_de",
@@ -131,6 +142,7 @@
   {
    "reference": "50520001106",
    "titre": "Portrait de Jean-Antoine Watteau (1684-1721)",
+   "musee_code": "M5052",
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "point_interrogation",
@@ -139,6 +151,7 @@
   {
    "reference": "50350010788",
    "titre": "Deux angelots ou amours allongés",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -147,6 +160,7 @@
   {
    "reference": "50350010791",
    "titre": "Enfant assis, tourné vers la droite",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -155,6 +169,7 @@
   {
    "reference": "50350010800",
    "titre": "Chinoiserie : la Vue",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -163,6 +178,7 @@
   {
    "reference": "50350010766",
    "titre": "Tête de femme, de trois quarts vers la doite, légèrement inclinée",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -171,6 +187,7 @@
   {
    "reference": "50350010785",
    "titre": "Scène de vendange",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -179,6 +196,7 @@
   {
    "reference": "50350502272",
    "titre": "Demi-figure d'homme, tourné vers la gauche",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -187,6 +205,7 @@
   {
    "reference": "50350010807",
    "titre": "Chinoiserie : le Toucher",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -195,6 +214,7 @@
   {
    "reference": "50350031530",
    "titre": "Jeune femme à mi-corps, tenant un oiseau qui becquette sa bouche",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -203,6 +223,7 @@
   {
    "reference": "50350010787",
    "titre": "Chinoiserie : la Terre",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -211,6 +232,7 @@
   {
    "reference": "50350010769",
    "titre": "Etude de quatre têtes d'hommes",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -219,6 +241,7 @@
   {
    "reference": "50350010790",
    "titre": "Chinoiserie : l'Air",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -227,6 +250,7 @@
   {
    "reference": "50350228310",
    "titre": "Femme nue, tournée vers la gauche, presque de dos",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -235,6 +259,7 @@
   {
    "reference": "50350010795",
    "titre": "Un berger et une figure dans un paysage de campagne avec des ruines",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -243,6 +268,7 @@
   {
    "reference": "50350010784",
    "titre": "Jeune guerrier assis sur un trône prononcant une allocution",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -251,6 +277,7 @@
   {
    "reference": "50350010789",
    "titre": "Jeune enfant à demi-allongé sur le sol, près de trois moutons",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -259,6 +286,7 @@
   {
    "reference": "50350010805",
    "titre": "Etude de deux jeunes paysans, vus à mi-corps",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -267,6 +295,7 @@
   {
    "reference": "50350010804",
    "titre": "Chinoiserie : le Goût",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -275,6 +304,7 @@
   {
    "reference": "50350010809",
    "titre": "Berger assis à terre dans un bois aux pieds d'une bergère",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -283,6 +313,7 @@
   {
    "reference": "50350010798",
    "titre": "Paysage pastoral avec un temple et un hameau dominant une cascade",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -291,6 +322,7 @@
   {
    "reference": "50350010797",
    "titre": "Soldat et montreuse de curiosité",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -299,6 +331,7 @@
   {
    "reference": "50350010799",
    "titre": "Vénus recevant les produits de la terre et de la mer",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -307,6 +340,7 @@
   {
    "reference": "50350010806",
    "titre": "Chinoiserie : le Toucher",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -315,6 +349,7 @@
   {
    "reference": "50350010796",
    "titre": "Chinoise assise tenant un plat, entourée d'enfants et de serveuses",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -323,6 +358,7 @@
   {
    "reference": "50350010810",
    "titre": "Etude d'un petit ange volant dans l'air",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -331,6 +367,7 @@
   {
    "reference": "50350205662",
    "titre": "L'Immaculée Conception ou l'Assomption de la Vierge",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -339,6 +376,7 @@
   {
    "reference": "50350010793",
    "titre": "Paysanne debout, vue presque de dos, portant un petit chien",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -347,6 +385,7 @@
   {
    "reference": "50350010801",
    "titre": "Paysanne debout, vue presque de dos, portant un petit chien",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -355,6 +394,7 @@
   {
    "reference": "50350010803",
    "titre": "Chinoiserie : le Feu",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -363,6 +403,7 @@
   {
    "reference": "50350010808",
    "titre": "Tombeau où s'élève une colonne cannelée entourée d'angelots",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -371,6 +412,7 @@
   {
    "reference": "50350010770",
    "titre": "Groupe de plusieurs hommes drapés, debout, conversant",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -379,6 +421,7 @@
   {
    "reference": "50350010767",
    "titre": "Pastorale avec berger et bergère",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -387,6 +430,7 @@
   {
    "reference": "50350010792",
    "titre": "Jeune guerrier debout, sur les marches d'un trône prononcant une allocution",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -395,6 +439,7 @@
   {
    "reference": "50350010794",
    "titre": "Etude de deux têtes d'anges",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -403,6 +448,7 @@
   {
    "reference": "50350010802",
    "titre": "La Paix, la Justice, la Loi et la Vigilance",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -411,6 +457,7 @@
   {
    "reference": "50350010786",
    "titre": "Paysage avec une maison entourée d'arbres",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -419,6 +466,7 @@
   {
    "reference": "50350010771",
    "titre": "Etude d'une figure secourant un jeune homme étendu sur le sol",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -427,6 +475,7 @@
   {
    "reference": "50350010811",
    "titre": "Portrait en buste d'une jeune fille appuyée sur une corbeille de fleurs",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -435,6 +484,7 @@
   {
    "reference": "50350017852",
    "titre": "Portrait de Madame de Pompadour",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -443,6 +493,7 @@
   {
    "reference": "04000000182",
    "titre": "Erigone vaincue",
+   "musee_code": "M0400",
    "musee": "musée Lambinet",
    "ville": "Versailles",
    "code": "atelier_de",
@@ -451,6 +502,7 @@
   {
    "reference": "07430005700",
    "titre": "Amours dans les nuages",
+   "musee_code": "M0743",
    "musee": "musée des Beaux-Arts",
    "ville": "Nantes",
    "code": "attribue",
@@ -459,6 +511,7 @@
   {
    "reference": "01550005410",
    "titre": "Allégorie de l'été",
+   "musee_code": "M0155",
    "musee": "musée de la faïence Frédéric Blandin",
    "ville": "Nevers",
    "code": "genre_de",
@@ -467,6 +520,7 @@
   {
    "reference": "01370000458",
    "titre": "La Baigneuse surprise ; Le Fleuve Scamandre (autre titre)",
+   "musee_code": "M0137",
    "musee": "musée des beaux-arts",
    "ville": "Dijon",
    "code": "atelier_de",
@@ -475,6 +529,7 @@
   {
    "reference": "M0121004507",
    "titre": "La mort de Méléagre",
+   "musee_code": "M0121",
    "musee": "musée d'art Roger-Quillot",
    "ville": "Clermont-Ferrand",
    "code": "atelier_de",
@@ -483,6 +538,7 @@
   {
    "reference": "M0121004505",
    "titre": "Pyrrhus sauvé ou La naissance d'Oedipe",
+   "musee_code": "M0121",
    "musee": "musée d'art Roger-Quillot",
    "ville": "Clermont-Ferrand",
    "code": "atelier_de",
@@ -491,6 +547,7 @@
   {
    "reference": "M0491000988",
    "titre": "Un jeune enfant",
+   "musee_code": "M0491",
    "musee": "musée Hyacinthe Rigaud",
    "ville": "Perpignan",
    "code": "attribue",
@@ -499,6 +556,7 @@
   {
    "reference": "06290000982",
    "titre": "Hygie, la déesse de la santé ; Le printemps",
+   "musee_code": "M0629",
    "musee": "musée des Beaux-Arts",
    "ville": "Lille",
    "code": "attribue",
@@ -507,6 +565,7 @@
   {
    "reference": "06290006029",
    "titre": "Tête de jeune homme",
+   "musee_code": "M0629",
    "musee": "musée des Beaux-Arts",
    "ville": "Lille",
    "code": "attribue",
@@ -515,6 +574,7 @@
   {
    "reference": "M0121003026",
    "titre": "Orphée charmant les animaux",
+   "musee_code": "M0121",
    "musee": "musée d'art Roger-Quillot",
    "ville": "Clermont-Ferrand",
    "code": "ecole_de",
@@ -523,6 +583,7 @@
   {
    "reference": "05030002954",
    "titre": "Jeune femme drapée entraînée par deux hommes",
+   "musee_code": "M0503",
    "musee": "musée d'Art et d'Archéologie",
    "ville": "Guéret",
    "code": "attribue",
@@ -531,6 +592,7 @@
   {
    "reference": "01720007382",
    "titre": "Amour étendu",
+   "musee_code": "M0172",
    "musee": "musée des ursulines",
    "ville": "Mâcon",
    "code": "attribue",
@@ -539,6 +601,7 @@
   {
    "reference": "01720007384",
    "titre": "Amour assis",
+   "musee_code": "M0172",
    "musee": "musée des ursulines",
    "ville": "Mâcon",
    "code": "attribue",
@@ -547,6 +610,7 @@
   {
    "reference": "M0332001486",
    "titre": "Combat de cavalerie",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -555,6 +619,7 @@
   {
    "reference": "M0457000827",
    "titre": "Sans désignation",
+   "musee_code": "M0457",
    "musee": "musée des beaux-arts",
    "ville": "Nîmes",
    "code": "attribue",
@@ -563,6 +628,7 @@
   {
    "reference": "M0457000737",
    "titre": "Paysage ",
+   "musee_code": "M0457",
    "musee": "musée des beaux-arts",
    "ville": "Nîmes",
    "code": "attribue",
@@ -571,6 +637,7 @@
   {
    "reference": "M0332011640",
    "titre": "Un coin de paysage avec une ferme",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "entourage_de",
@@ -579,6 +646,7 @@
   {
    "reference": "M0332011641",
    "titre": "Une maison dans la verdure avec un dessinateur au premier plan",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "entourage_de",
@@ -587,6 +655,7 @@
   {
    "reference": "M0332011648",
    "titre": "Etude de jeune femme assise dans la verdure (recto) ; étude de tête de femme et haut de buste (verso)",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "entourage_de",
@@ -595,6 +664,7 @@
   {
    "reference": "M0332013025",
    "titre": "Etude pour Les Génies des arts",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -603,6 +673,7 @@
   {
    "reference": "M0332013050",
    "titre": "Paysage avec une ferme",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -611,6 +682,7 @@
   {
    "reference": "M0332013282",
    "titre": "Etude de coquillage (Strombus occipitrinus)",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -619,6 +691,7 @@
   {
    "reference": "M0332012279",
    "titre": "Etude de coquillage (Murex anguliferus)",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -627,6 +700,7 @@
   {
    "reference": "M0332013281",
    "titre": "Etude de deux coquillages (Cypraea tigris, cypraea mappa)",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -635,6 +709,7 @@
   {
    "reference": "06190023890",
    "titre": "Autel de l'amitié",
+   "musee_code": "M0619",
    "musee": "musée de la Chartreuse",
    "ville": "Douai",
    "code": "attribue",
@@ -643,6 +718,7 @@
   {
    "reference": "00457000809",
    "titre": "Sans désignation",
+   "musee_code": "M0457",
    "musee": "musée des beaux-arts",
    "ville": "Nîmes",
    "code": "attribue",
@@ -651,6 +727,7 @@
   {
    "reference": "M0457000753",
    "titre": "Sans désignation",
+   "musee_code": "M0457",
    "musee": "musée des beaux-arts",
    "ville": "Nîmes",
    "code": "attribue",
@@ -659,6 +736,7 @@
   {
    "reference": "M0457000810",
    "titre": "Sans désignation",
+   "musee_code": "M0457",
    "musee": "musée des beaux-arts",
    "ville": "Nîmes",
    "code": "attribue",
@@ -666,7 +744,7 @@
   }
  ],
  "version_donnee": "2026-07-01",
- "date_generation": "2026-08-02T14:35:33+00:00",
+ "date_generation": "2026-08-02T15:04:31+00:00",
  "source": "Collections des musées de France : base Joconde",
  "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
 }

@@ -20,6 +20,7 @@
   {
    "reference": "000PE013959",
    "titre": "ANGELIQUE ET MEDOR",
+   "musee_code": "M0913",
    "musee": "musée des beaux-arts",
    "ville": "Marseille",
    "code": "attribue",
@@ -28,6 +29,7 @@
   {
    "reference": "000PE029833",
    "titre": "L'EDUCATION DE LA VIERGE",
+   "musee_code": "M0729",
    "musee": "musée des beaux-arts",
    "ville": "Rouen",
    "code": "atelier_de",
@@ -36,6 +38,7 @@
   {
    "reference": "00000056500",
    "titre": "SAINT FRANCOIS CONSOLE PAR LA MUSIQUE DES ANGES",
+   "musee_code": "M0729",
    "musee": "musée des beaux-arts",
    "ville": "Rouen",
    "code": "ecole_de",
@@ -44,6 +47,7 @@
   {
    "reference": "00000093350",
    "titre": "SAINT FRANCOIS DONNANT LE CORDON DU TIERS-ORDRE A LOUIS XIII ; LE VOEU DE LOUIS XIII (TITRE ANCIEN)",
+   "musee_code": "M0286",
    "musee": "musée des beaux-arts",
    "ville": "Orléans",
    "code": "attribue",
@@ -52,6 +56,7 @@
   {
    "reference": "00000104551",
    "titre": "Vierge à l'Enfant",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -71,6 +76,7 @@
   {
    "reference": "50350213339",
    "titre": "Les trois Grâces et deux amours",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -79,6 +85,7 @@
   {
    "reference": "50350213340",
    "titre": "Quatre bacchantes tenant des guirlandes autour d'un vase",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -87,6 +94,7 @@
   {
    "reference": "50350110006",
    "titre": "Incrédulité de saint Thomas",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -95,6 +103,7 @@
   {
    "reference": "50350213341",
    "titre": "Deux génies assis au sol",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -103,6 +112,7 @@
   {
    "reference": "50350013309",
    "titre": "Saint Bruno",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -111,6 +121,7 @@
   {
    "reference": "50350013307",
    "titre": "Saint Pierre Nolasque debout et en extase",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -119,6 +130,7 @@
   {
    "reference": "50350013305",
    "titre": "Saint Dominique",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -127,6 +139,7 @@
   {
    "reference": "50350013304",
    "titre": "Saint Ignace tenant un rouleau contenant les règles de son ordre",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -135,6 +148,7 @@
   {
    "reference": "50350013308",
    "titre": "Le Christ en Salvator Mundi",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -143,6 +157,7 @@
   {
    "reference": "50350013302",
    "titre": "Saint Antoine debout, tenant une cloche",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -151,6 +166,7 @@
   {
    "reference": "50350013306",
    "titre": "Saint Norbert tenant un ostensoir et un cierge",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -159,6 +175,7 @@
   {
    "reference": "50350013298",
    "titre": "Saint Jean de Matha debout, tenant des chaînes",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -167,6 +184,7 @@
   {
    "reference": "50350013310",
    "titre": "Saint Jean-Baptiste debout, vu de face",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -175,6 +193,7 @@
   {
    "reference": "50350013303",
    "titre": "Saint Augustin en costume d'archevêque, tenant un livre",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -183,6 +202,7 @@
   {
    "reference": "50350013296",
    "titre": "Saint Jean de Dieu, debout, méditant sur un crucifix",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -191,6 +211,7 @@
   {
    "reference": "50350013297",
    "titre": "Saint François debout et en extase, recevant les stigmates",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -199,6 +220,7 @@
   {
    "reference": "50350013300",
    "titre": "Saint Romuald debout, priant",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -207,6 +229,7 @@
   {
    "reference": "50350013301",
    "titre": "Saint Etienne de Grammont debout, tenant un anneau dans la main droite",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -215,6 +238,7 @@
   {
    "reference": "50350013295",
    "titre": "Saint Bruno debout, vu de face",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -223,6 +247,7 @@
   {
    "reference": "50350013294",
    "titre": "Saint Paul debout, lisant",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -231,6 +256,7 @@
   {
    "reference": "50350013299",
    "titre": "Saint François de Paule, fondateur de l'ordre des Minimes",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -238,7 +264,7 @@
   }
  ],
  "version_donnee": "2026-07-01",
- "date_generation": "2026-08-02T14:35:33+00:00",
+ "date_generation": "2026-08-02T15:04:31+00:00",
  "source": "Collections des musées de France : base Joconde",
  "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
 }

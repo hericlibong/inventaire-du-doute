@@ -24,6 +24,7 @@
   {
    "reference": "00000082515",
    "titre": "MARIE PIERRE FRANCOIS DE MESGRIGNY FILS DE LOUIS MARIS MARQUIS DE MESGRIGNY ET DAME EDMEE MARCHAL (1772-1858)",
+   "musee_code": "M0303",
    "musee": "musée des beaux-arts et d’archéologie",
    "ville": "Troyes",
    "code": "attribue",
@@ -32,6 +33,7 @@
   {
    "reference": "000DE006810",
    "titre": "JEUNE FEMME ACCOUDEE",
+   "musee_code": "M0917",
    "musee": "musée Grobet-Labadié",
    "ville": "Marseille",
    "code": "ecole_de",
@@ -40,6 +42,7 @@
   {
    "reference": "000PE013602",
    "titre": "PORTRAIT D'HOMME",
+   "musee_code": "M0913",
    "musee": "musée des beaux-arts",
    "ville": "Marseille",
    "code": "attribue",
@@ -48,6 +51,7 @@
   {
    "reference": "000PE013601",
    "titre": "PORTRAIT DE JEUNE HOMME",
+   "musee_code": "M0913",
    "musee": "musée des beaux-arts",
    "ville": "Marseille",
    "code": "attribue",
@@ -56,6 +60,7 @@
   {
    "reference": "000PE016128",
    "titre": "PORTRAIT DE JEUNE VIOLONISTE ASSIS DEVANT UN PUPITRE",
+   "musee_code": "M0917",
    "musee": "musée Grobet-Labadié",
    "ville": "Marseille",
    "code": "attribue",
@@ -64,6 +69,7 @@
   {
    "reference": "000PE016126",
    "titre": "PORTRAIT DE FEMME AGEE",
+   "musee_code": "M0917",
    "musee": "musée Grobet-Labadié",
    "ville": "Marseille",
    "code": "attribue",
@@ -72,6 +78,7 @@
   {
    "reference": "000PE016127",
    "titre": "MARIE ANTOINETTE ET SIMON A LA PRISON DU TEMPLE",
+   "musee_code": "M0917",
    "musee": "musée Grobet-Labadié",
    "ville": "Marseille",
    "code": "ecole_de",
@@ -80,6 +87,7 @@
   {
    "reference": "000PE016642",
    "titre": "PORTRAIT D'HOMME",
+   "musee_code": "M0913",
    "musee": "musée des beaux-arts",
    "ville": "Marseille",
    "code": "attribue",
@@ -88,6 +96,7 @@
   {
    "reference": "000PE020200",
    "titre": "Portrait d'homme",
+   "musee_code": "M0065",
    "musee": "musée des beaux-arts",
    "ville": "Bordeaux",
    "code": "ecole_de",
@@ -96,6 +105,7 @@
   {
    "reference": "000PE020556",
    "titre": "PORTRAIT DE M.MERY DE MONTIGNY",
+   "musee_code": "M0629",
    "musee": "musée des Beaux-Arts",
    "ville": "Lille",
    "code": "attribue",
@@ -104,6 +114,7 @@
   {
    "reference": "000PE025719",
    "titre": "PROFIL D'HOMME",
+   "musee_code": "M0065",
    "musee": "musée des beaux-arts",
    "ville": "Bordeaux",
    "code": "attribue",
@@ -112,6 +123,7 @@
   {
    "reference": "000PE029582",
    "titre": "PORTRAIT DE FEMME",
+   "musee_code": "M0134",
    "musee": "musée des Beaux-Arts",
    "ville": "Beaune",
    "code": "attribue",
@@ -120,6 +132,7 @@
   {
    "reference": "00000065942",
    "titre": "PORTRAIT DE FEMME",
+   "musee_code": "M0766",
    "musee": "musée du Vieux-Château",
    "ville": "Laval",
    "code": "attribue",
@@ -128,6 +141,7 @@
   {
    "reference": "00000065943",
    "titre": "PORTRAIT DE FEMME",
+   "musee_code": "M0766",
    "musee": "musée du Vieux-Château",
    "ville": "Laval",
    "code": "attribue",
@@ -136,6 +150,7 @@
   {
    "reference": "50110000611",
    "titre": "Portrait du général Jacquin",
+   "musee_code": "M5011",
    "musee": "musée national Magnin",
    "ville": "Dijon",
    "code": "ecole_de",
@@ -144,6 +159,7 @@
   {
    "reference": "50350036918",
    "titre": "Portrait d'Evariste Parny",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -152,6 +168,7 @@
   {
    "reference": "10480001058",
    "titre": "Portrait de jeune homme",
+   "musee_code": "M1048",
    "musee": "musée des beaux-arts",
    "ville": "Chambéry",
    "code": "atelier_de",
@@ -160,6 +177,7 @@
   {
    "reference": "04000006641",
    "titre": "Arrestation de Charlotte Corday",
+   "musee_code": "M0400",
    "musee": "musée Lambinet",
    "ville": "Versailles",
    "code": "attribue",
@@ -168,6 +186,7 @@
   {
    "reference": "07290021901",
    "titre": "La promenade aux Tuileries",
+   "musee_code": "M0729",
    "musee": "musée des beaux-arts",
    "ville": "Rouen",
    "code": "attribue",
@@ -176,6 +195,7 @@
   {
    "reference": "01370000380",
    "titre": "Portrait de M. Lépine",
+   "musee_code": "M0137",
    "musee": "musée des beaux-arts",
    "ville": "Dijon",
    "code": "attribue",
@@ -184,6 +204,7 @@
   {
    "reference": "01370000383",
    "titre": "Portrait de Madame Lépine",
+   "musee_code": "M0137",
    "musee": "musée des beaux-arts",
    "ville": "Dijon",
    "code": "attribue",
@@ -192,6 +213,7 @@
   {
    "reference": "01840000132",
    "titre": "Le marquis de Louvois",
+   "musee_code": "M0184",
    "musee": "musée d'art et d'histoire Saint-Germain",
    "ville": "Auxerre",
    "code": "attribue",
@@ -200,6 +222,7 @@
   {
    "reference": "03110041532",
    "titre": "Ah ! Le Voilà ! ; Le chien commissionnaire",
+   "musee_code": "M0311",
    "musee": "musée des Beaux-Arts de Saint-Denis",
    "ville": "Reims",
    "code": "attribue",
@@ -219,6 +242,7 @@
   {
    "reference": "M0332000855",
    "titre": "Portrait de jeune homme",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "genre_de",
@@ -226,7 +250,7 @@
   }
  ],
  "version_donnee": "2026-07-01",
- "date_generation": "2026-08-02T14:35:33+00:00",
+ "date_generation": "2026-08-02T15:04:31+00:00",
  "source": "Collections des musées de France : base Joconde",
  "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
 }

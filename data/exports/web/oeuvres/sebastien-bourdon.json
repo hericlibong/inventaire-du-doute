@@ -24,6 +24,7 @@
   {
    "reference": "000PE000238",
    "titre": "Portrait d'un homme tenant un buste de Caracalla",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -43,6 +44,7 @@
   {
    "reference": "000PE000240",
    "titre": "L'Adoration des bergers",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -51,6 +53,7 @@
   {
    "reference": "000PE000239",
    "titre": "Portrait d'homme",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -59,6 +62,7 @@
   {
    "reference": "000PE007801",
    "titre": "INCONNU ; DIT AUTREFOIS NICOLAS FOUQUET",
+   "musee_code": "M5077",
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "attribue",
@@ -67,6 +71,7 @@
   {
    "reference": "000PE007744",
    "titre": "INCONNU",
+   "musee_code": "M5077",
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "ecole_de",
@@ -75,6 +80,7 @@
   {
    "reference": "000PE031115",
    "titre": "INTERIEUR D'UN CORPS DE GARDE",
+   "musee_code": "M0963",
    "musee": "musée de Brou",
    "ville": "Bourg-en-Bresse",
    "code": "attribue",
@@ -83,6 +89,7 @@
   {
    "reference": "00000075259",
    "titre": "Scène rustique",
+   "musee_code": "M0211",
    "musee": "musée des beaux-arts",
    "ville": "Rennes",
    "code": "attribue",
@@ -91,6 +98,7 @@
   {
    "reference": "000PE011673",
    "titre": "Louis-Guy-Henri, marquis de Valori (1692-1774) général et diplomate français sous Louis XV",
+   "musee_code": "M5077",
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "ecole_de",
@@ -99,6 +107,7 @@
   {
    "reference": "50350102149",
    "titre": "La Fuite en Egypte",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -107,6 +116,7 @@
   {
    "reference": "50350011022",
    "titre": "Figure allégorique d'un fleuve",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -115,6 +125,7 @@
   {
    "reference": "50350011021",
    "titre": "Deux femmes assises s'entretiennent et un homme à droite",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -123,6 +134,7 @@
   {
    "reference": "50350011023",
    "titre": "Académie d'homme nu, assis, tourné vers la droite",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -131,6 +143,7 @@
   {
    "reference": "50350011029",
    "titre": "Sacrifice à Minerve",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -139,6 +152,7 @@
   {
    "reference": "07430005686",
    "titre": "Paysage historique",
+   "musee_code": "M0743",
    "musee": "musée des Beaux-Arts",
    "ville": "Nantes",
    "code": "genre_de",
@@ -147,6 +161,7 @@
   {
    "reference": "01610001172",
    "titre": "Saint Paul (ou saint Barthélémy)",
+   "musee_code": "M0161",
    "musee": "musée Rolin",
    "ville": "Autun",
    "code": "attribue",
@@ -155,6 +170,7 @@
   {
    "reference": "01610001170",
    "titre": "Saint Jacques le Majeur",
+   "musee_code": "M0161",
    "musee": "musée Rolin",
    "ville": "Autun",
    "code": "attribue",
@@ -163,6 +179,7 @@
   {
    "reference": "01610001169",
    "titre": "Saint Philippe",
+   "musee_code": "M0161",
    "musee": "musée Rolin",
    "ville": "Autun",
    "code": "attribue",
@@ -171,6 +188,7 @@
   {
    "reference": "01610001173",
    "titre": "Judas",
+   "musee_code": "M0161",
    "musee": "musée Rolin",
    "ville": "Autun",
    "code": "attribue",
@@ -179,6 +197,7 @@
   {
    "reference": "01610001174",
    "titre": "Saint André",
+   "musee_code": "M0161",
    "musee": "musée Rolin",
    "ville": "Autun",
    "code": "attribue",
@@ -187,6 +206,7 @@
   {
    "reference": "01610001171",
    "titre": "Saint Mathieu (ou saint Matthias)",
+   "musee_code": "M0161",
    "musee": "musée Rolin",
    "ville": "Autun",
    "code": "attribue",
@@ -195,6 +215,7 @@
   {
    "reference": "08120021739",
    "titre": "Soldats jouant aux cartes dans un corps de gardes",
+   "musee_code": "M0812",
    "musee": "musée de Picardie",
    "ville": "Amiens",
    "code": "attribue",
@@ -214,6 +235,7 @@
   {
    "reference": "08030000599",
    "titre": "Portrait d'homme",
+   "musee_code": "M0803",
    "musee": "musée Antoine Vivenel",
    "ville": "Compiègne",
    "code": "ecole_de",
@@ -222,6 +244,7 @@
   {
    "reference": "02110002605",
    "titre": "Groupe tiré du massacre des innocents",
+   "musee_code": "M0211",
    "musee": "musée des beaux-arts",
    "ville": "Rennes",
    "code": "ecole_de",
@@ -230,6 +253,7 @@
   {
    "reference": "M0332011954",
    "titre": "Scène antique avec un homme sur un trône et un malade : mort de Darius (?)",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "point_interrogation",
@@ -238,6 +262,7 @@
   {
    "reference": "M0332001449",
    "titre": "Prisonniers dans une grotte",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -245,7 +270,7 @@
   }
  ],
  "version_donnee": "2026-07-01",
- "date_generation": "2026-08-02T14:35:33+00:00",
+ "date_generation": "2026-08-02T15:04:31+00:00",
  "source": "Collections des musées de France : base Joconde",
  "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
 }

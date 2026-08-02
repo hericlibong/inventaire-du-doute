@@ -15,7 +15,12 @@
 	// des filets, pas une grille de cartes ; un emplacement média réservé, jamais
 	// d'image inventée). Le front ne re-classe ni ne re-parse rien : la famille
 	// (`code`) et l'extrait viennent tels quels de l'export (decisions.md 2026-07-28).
-	let { maitre } = $props();
+	// `museeActif` (code Muséofile, ou null) est PARTAGÉ avec la page : il survit
+	// au changement d'onglet, et la carte du profil pourra le poser elle-même sans
+	// qu'un second système de filtrage voie le jour (phase 3). L'onglet ne le remet
+	// jamais à zéro tout seul — c'est la page qui le fait au changement d'artiste,
+	// sinon un musée choisi sur la carte serait effacé à l'ouverture de l'onglet.
+	let { maitre, museeActif = $bindable(null) } = $props();
 
 	const PAR_PAGE = 8;
 
@@ -74,18 +79,56 @@
 		})
 	);
 
-	// Puces de filtre : « Toutes » puis les familles PRÉSENTES, ordre public,
-	// avec leur effectif. Les familles absentes ne paraissent pas.
-	const puces = $derived([
-		{ code: null, label: 'Toutes', n: maitre.doute },
-		...(fichier?.familles ?? [])
-			.filter((f) => FAMILLE_PUBLIC[f.code])
-			.sort((a, b) => rang(a.code) - rang(b.code))
-			.map((f) => ({ code: f.code, label: fam(f.code).header, n: f.notices }))
-	]);
+	// Menu des musées : ceux qui conservent au moins une œuvre concernée de CET
+	// artiste, jamais les autres. Effectif à côté du nom, tri par valeur
+	// décroissante (CLAUDE.md), départage alphabétique pour que l'ordre soit
+	// stable. La liste se refait toute seule quand l'artiste change, puisqu'elle
+	// dérive du fichier chargé.
+	const musees = $derived(
+		Object.values(
+			oeuvres.reduce((acc, o) => {
+				if (!o.musee_code) return acc;
+				const m = (acc[o.musee_code] ??= {
+					code: o.musee_code,
+					nom: o.musee,
+					ville: o.ville,
+					n: 0
+				});
+				m.n += 1;
+				return acc;
+			}, {})
+		).sort((a, b) => b.n - a.n || (a.nom ?? '').localeCompare(b.nom ?? '', 'fr'))
+	);
+
+	// Le musée choisi, s'il concerne bien l'artiste affiché (garde-fou : un code
+	// venu d'ailleurs ne doit pas vider la liste en silence).
+	const musee = $derived(musees.find((m) => m.code === museeActif) ?? null);
+
+	// DEUX FILTRES EMBOÎTÉS, dans cet ordre : le musée d'abord, la mention ensuite.
+	// C'est ce qui permet aux puces de mention d'annoncer un nombre exact — une
+	// puce « attribué à 276 » qui ne rendrait que 3 œuvres une fois un musée choisi
+	// serait un chiffre faux (CLAUDE.md : toute quantité affichée doit être lisible).
+	const oeuvresMusee = $derived(
+		musee ? oeuvres.filter((o) => o.musee_code === musee.code) : oeuvres
+	);
+
+	// Puces de filtre : « Toutes » puis les mentions PRÉSENTES dans le périmètre
+	// courant, ordre public, avec leur effectif. Les mentions absentes ne
+	// paraissent pas — pas plus au sein d'un musée que pour l'artiste entier.
+	const puces = $derived.by(() => {
+		const compte = new Map();
+		for (const o of oeuvresMusee) compte.set(o.code, (compte.get(o.code) ?? 0) + 1);
+		return [
+			{ code: null, label: 'Toutes', n: oeuvresMusee.length },
+			...[...compte.entries()]
+				.filter(([code]) => FAMILLE_PUBLIC[code])
+				.sort((a, b) => rang(a[0]) - rang(b[0]))
+				.map(([code, n]) => ({ code, label: fam(code).header, n }))
+		];
+	});
 
 	const oeuvresFiltrees = $derived(
-		familleActive ? oeuvres.filter((o) => o.code === familleActive) : oeuvres
+		familleActive ? oeuvresMusee.filter((o) => o.code === familleActive) : oeuvresMusee
 	);
 	const nbFiltre = $derived(oeuvresFiltrees.length);
 	const nbPages = $derived(Math.max(1, Math.ceil(nbFiltre / PAR_PAGE)));
@@ -110,6 +153,34 @@
 		page = 1;
 		versHautListe();
 	}
+
+	// Changer de musée remet la lecture à la première page. Si la mention choisie
+	// n'existe pas dans le nouveau musée, elle est relâchée plutôt que de laisser
+	// une liste vide sans raison lisible.
+	function choisirMusee(code) {
+		const suivant = code || null;
+		if (museeActif === suivant) return;
+		museeActif = suivant;
+		const restantes = new Set(
+			(suivant ? oeuvres.filter((o) => o.musee_code === suivant) : oeuvres).map((o) => o.code)
+		);
+		if (familleActive && !restantes.has(familleActive)) familleActive = null;
+		page = 1;
+		versHautListe();
+	}
+
+	// Retirer tous les filtres d'un coup — sortie de l'état vide, et retour au
+	// périmètre complet de l'artiste.
+	function toutAfficher() {
+		if (!familleActive && !museeActif) return;
+		familleActive = null;
+		museeActif = null;
+		page = 1;
+		versHautListe();
+	}
+
+	// Accord du décompte : « 1 œuvre », « 8 œuvres ».
+	const oeuvreS = (n) => `${n} œuvre${n === 1 ? '' : 's'}`;
 
 	function allerPage(p) {
 		if (p < 1 || p > nbPages || p === page) return;
@@ -140,6 +211,36 @@
 			</button>
 		</p>
 	{:else}
+		<!-- Filtre par musée : liste native (clavier, souris et tactile sans code
+		     ajouté), bornée aux musées qui conservent une œuvre concernée de cet
+		     artiste, chacun avec son effectif. -->
+		{#if musees.length > 1}
+			<div class="filtre-musee">
+				<label for="filtre-musee">Musée</label>
+				<select
+					id="filtre-musee"
+					value={museeActif ?? ''}
+					onchange={(e) => choisirMusee(e.currentTarget.value)}
+				>
+					<option value="">Tous les musées ({oeuvres.length})</option>
+					{#each musees as m (m.code)}
+						<option value={m.code}>
+							{m.nom}{m.ville ? `, ${m.ville}` : ''} — {m.n}
+						</option>
+					{/each}
+				</select>
+				<!-- Retrait direct : la liste dit DÉJÀ quel musée est actif, inutile de
+				     le répéter en toutes lettres ; ce qui manquait, c'est le moyen d'en
+				     sortir sans rouvrir le menu. C'est aussi la porte de sortie du
+				     lecteur venu de la carte (phase 3). -->
+				{#if musee}
+					<button type="button" class="retirer" onclick={() => choisirMusee(null)}>
+						Retirer ce filtre
+					</button>
+				{/if}
+			</div>
+		{/if}
+
 		<!-- Filtres : « Toutes » + une puce par mention présente, ordre public. -->
 		<div class="filtres" role="group" aria-label="Filtrer par mention">
 			{#each puces as p (p.code ?? 'toutes')}
@@ -160,14 +261,19 @@
 		<!-- Ancre de recentrage + décompte de la tranche affichée. -->
 		<p class="decompte" bind:this={hautListe} tabindex="-1">
 			{#if nbFiltre === 0}
-				Aucune œuvre pour cette mention.
+				Aucune œuvre à afficher.
+			{:else if nbFiltre <= PAR_PAGE}
+				{oeuvreS(nbFiltre)}
 			{:else}
 				Œuvres <strong>{premier}</strong> à <strong>{dernier}</strong> sur <strong>{nbFiltre}</strong>
 			{/if}
 		</p>
 
 		{#if nbFiltre === 0}
-			<p class="etat vide">Aucune œuvre ne correspond au filtre choisi.</p>
+			<p class="etat vide">
+				Aucune œuvre ne correspond à cette combinaison de filtres.
+				<button type="button" class="reessayer" onclick={toutAfficher}>Tout afficher</button>
+			</p>
 		{:else}
 			<ol class="entrees">
 				{#each pageOeuvres as o (o.reference)}
@@ -325,6 +431,62 @@
 
 	/* --- Filtres : puces cliquables, la mention active tient par la forme ET la
 	   couleur (bordure épaisse + gras), jamais par la seule couleur. --- */
+	/* --- Filtre par musée : une liste native, dans le registre UI des puces. --- */
+	.filtre-musee {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: var(--espace-2) var(--espace-3);
+		margin: 0 0 var(--espace-3);
+		font-family: var(--police-ui);
+		font-size: var(--taille-xs);
+	}
+
+	.filtre-musee label {
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		color: var(--couleur-encre-douce);
+	}
+
+	.filtre-musee select {
+		/* Le nom officiel d'un musée est long : la liste prend la largeur qu'il lui
+		   faut, plafonnée, sans jamais pousser la colonne (min-width: 0). Elle ne
+		   s'étire PAS jusqu'au bord : le bouton de retrait doit rester à côté
+		   d'elle, pas plaqué contre la marge droite. */
+		flex: 0 1 26rem;
+		min-width: 0;
+		max-width: 100%;
+		padding: 0.3rem 0.5rem;
+		font-family: inherit;
+		font-size: inherit;
+		color: var(--couleur-encre);
+		background: var(--surface-carte);
+		border: 1px solid var(--couleur-trait);
+		border-radius: var(--rayon-s);
+		cursor: pointer;
+	}
+
+	.filtre-musee select:focus-visible {
+		outline: var(--focus-anneau);
+		outline-offset: 2px;
+	}
+
+	.retirer {
+		font-family: inherit;
+		font-size: inherit;
+		color: var(--couleur-accent);
+		background: none;
+		border: 0;
+		padding: 0;
+		text-decoration: underline;
+		cursor: pointer;
+	}
+
+	.retirer:focus-visible {
+		outline: var(--focus-anneau);
+		outline-offset: 2px;
+	}
+
 	.filtres {
 		display: flex;
 		flex-wrap: wrap;

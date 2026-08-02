@@ -28,6 +28,7 @@
   {
    "reference": "00000068542",
    "titre": "Paysage avec trois villageois et un âne",
+   "musee_code": "M5011",
    "musee": "musée national Magnin",
    "ville": "Dijon",
    "code": "attribue",
@@ -36,6 +37,7 @@
   {
    "reference": "000PE025580",
    "titre": "PORTRAIT DE L'ARTISTE TENANT UNE PALETTE",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -55,6 +57,7 @@
   {
    "reference": "000PE025581",
    "titre": "CIRCE",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -74,6 +77,7 @@
   {
    "reference": "000PE026153",
    "titre": "BERTHOLDE COUVANT LES OEUFS DE L'OIE",
+   "musee_code": "M0065",
    "musee": "musée des beaux-arts",
    "ville": "Bordeaux",
    "code": "ecole_de",
@@ -82,6 +86,7 @@
   {
    "reference": "00000069001",
    "titre": "L'Ange Gardien protégeant un enfant du démon",
+   "musee_code": "M5011",
    "musee": "musée national Magnin",
    "ville": "Dijon",
    "code": "ecole_de",
@@ -101,6 +106,7 @@
   {
    "reference": "00000094658",
    "titre": "TETE D'ETUDE",
+   "musee_code": "M0211",
    "musee": "musée des beaux-arts",
    "ville": "Rennes",
    "code": "attribue",
@@ -109,6 +115,7 @@
   {
    "reference": "00000103002",
    "titre": "LA VIERGE A L'ENFANT",
+   "musee_code": "M1048",
    "musee": "musée des beaux-arts",
    "ville": "Chambéry",
    "code": "atelier_de",
@@ -117,6 +124,7 @@
   {
    "reference": "10500000151",
    "titre": "Saint Paul",
+   "musee_code": "M1048",
    "musee": "musée des beaux-arts",
    "ville": "Chambéry",
    "code": "attribue",
@@ -125,6 +133,7 @@
   {
    "reference": "07430007337",
    "titre": "Joseph vendu par ses frères",
+   "musee_code": "M0743",
    "musee": "musée des Beaux-Arts",
    "ville": "Nantes",
    "code": "attribue",
@@ -133,6 +142,7 @@
   {
    "reference": "10500000156",
    "titre": "Vierge à l'Enfant",
+   "musee_code": "M1048",
    "musee": "musée des beaux-arts",
    "ville": "Chambéry",
    "code": "atelier_de",
@@ -141,6 +151,7 @@
   {
    "reference": "50350102714",
    "titre": "Deux guerriers vus à mi-corps, portant des étendards",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
@@ -149,6 +160,7 @@
   {
    "reference": "50350104271",
    "titre": "Paysage avec des barques transportant des hommes et des vaches sur l'eau",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -157,6 +169,7 @@
   {
    "reference": "50350104270",
    "titre": "Paysage avec une figure assise, tenant un bâton, devant une étendue d'eau",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -165,6 +178,7 @@
   {
    "reference": "50350111627",
    "titre": "L'Arc de Titus à Rome",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -173,6 +187,7 @@
   {
    "reference": "50350145133",
    "titre": "Le reniement de saint Pierre",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -181,6 +196,7 @@
   {
    "reference": "000DE005647",
    "titre": "SACRIFICE D'ABRAHAM",
+   "musee_code": "M0917",
    "musee": "musée Grobet-Labadié",
    "ville": "Marseille",
    "code": "attribue",
@@ -189,6 +205,7 @@
   {
    "reference": "50350004922",
    "titre": "Un ange présentant un modèle de la ville de Bologne à saint Pétrone",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -197,6 +214,7 @@
   {
    "reference": "50350005430",
    "titre": "Paysage avec trois cavaliers et des figures près d'un château fort",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -205,6 +223,7 @@
   {
    "reference": "50350030809",
    "titre": "La Vierge à l'Enfant apparait à saint Nicolas de Bari",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -213,6 +232,7 @@
   {
    "reference": "07480012421",
    "titre": "Saint François adorant l'enfant",
+   "musee_code": "M0748",
    "musee": "musée des beaux-arts et galerie David-d'Angers",
    "ville": "Angers",
    "code": "point_interrogation",
@@ -221,6 +241,7 @@
   {
    "reference": "06770000317",
    "titre": "Valfrin secourant Tancrède en présence d' Herminie",
+   "musee_code": "M0677",
    "musee": "musée Thomas-Henry",
    "ville": "Cherbourg-en-Cotentin",
    "code": "attribue",
@@ -229,6 +250,7 @@
   {
    "reference": "50350003818",
    "titre": "Deux hommes barbus, vus en buste, discutant",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -237,6 +259,7 @@
   {
    "reference": "50350003816",
    "titre": "Trois demi-figures de femmes éplorées",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -245,6 +268,7 @@
   {
    "reference": "50350003814",
    "titre": "Une tête de vieillard regardant au ciel",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -253,6 +277,7 @@
   {
    "reference": "50350003817",
    "titre": "Un homme et un angelot baissés : étude pour une Adoration des Mages (?)",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -261,6 +286,7 @@
   {
    "reference": "50350003821",
    "titre": "Un amour debout, vu de dos",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -269,6 +295,7 @@
   {
    "reference": "50350003815",
    "titre": "Une figure d'homme nu, debout, le bras droit levé",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -277,6 +304,7 @@
   {
    "reference": "50350003878",
    "titre": "Suzanne au bain",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -285,6 +313,7 @@
   {
    "reference": "50350003836",
    "titre": "Paysage avec deux couples et un musicien, entre des bouquets d'arbres",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -293,6 +322,7 @@
   {
    "reference": "50350003893",
    "titre": "Un soldat enlevant un enfant à une femme",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -301,6 +331,7 @@
   {
    "reference": "50350003826",
    "titre": "Etude de jeune homme tenant un livre",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -309,6 +340,7 @@
   {
    "reference": "50350003906",
    "titre": "Une tête de vieillard, tournée vers la gauche",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -317,6 +349,7 @@
   {
    "reference": "50350003884",
    "titre": "Le Christ, vu en buste, portant la Croix",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -325,6 +358,7 @@
   {
    "reference": "50350003833",
    "titre": "Etude d'une tête de vieil homme barbu, de profil vers la droite",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -333,6 +367,7 @@
   {
    "reference": "50350003896",
    "titre": "Une déesse assise sur un char : Venus (?)",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -341,6 +376,7 @@
   {
    "reference": "50350003888",
    "titre": "Saint Marc assis, écrivant à une table, avec un lion à ses pieds",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -349,6 +385,7 @@
   {
    "reference": "50350003897",
    "titre": "Deux études : homme brandissant un glaive ; une figure d'ange",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -357,6 +394,7 @@
   {
    "reference": "50350003903",
    "titre": "Académie : jeune garçon, la tête appuyée sur le coude gauche",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -365,6 +403,7 @@
   {
    "reference": "50350003823",
    "titre": "Demi-figure de femme tenant un arc",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -373,6 +412,7 @@
   {
    "reference": "50350003908",
    "titre": "Tête de femme, de profil vers la gauche",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -381,6 +421,7 @@
   {
    "reference": "50350003889",
    "titre": "Un évêque, de profil, et deux angelots",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -389,6 +430,7 @@
   {
    "reference": "50350003886",
    "titre": "La Madeleine au tombeau, tenant un vase de parfum dans ses bras",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -397,6 +439,7 @@
   {
    "reference": "50350003905",
    "titre": "Deux têtes de jeune garçon",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -405,6 +448,7 @@
   {
    "reference": "50350003819",
    "titre": "Un homme, vu de dos, étudiant la musique, regardé par une jeune femme",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -413,6 +457,7 @@
   {
    "reference": "50350003820",
    "titre": "Etude d'un ange tenant une torche dans la main gauche",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -421,6 +466,7 @@
   {
    "reference": "50350003813",
    "titre": "Une tête de femme, de profil vers la gauche",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -429,6 +475,7 @@
   {
    "reference": "50350003837",
    "titre": "Paysage avec deux figures se dirigeant vers un village",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -437,6 +484,7 @@
   {
    "reference": "50350003901",
    "titre": "Deux femmes conversant, vues en buste",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -445,6 +493,7 @@
   {
    "reference": "50350003890",
    "titre": "Saint François à genoux devant un crucifix",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -453,6 +502,7 @@
   {
    "reference": "50350003840",
    "titre": "Paysage montueux avec saint Jérôme à genoux",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -461,6 +511,7 @@
   {
    "reference": "50350003825",
    "titre": "Portrait d'un jeune prince, de trois quart vers la droite, tenant un chapeau",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -469,6 +520,7 @@
   {
    "reference": "50350003839",
    "titre": "Paysage avec deux figures sur un pont",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -477,6 +529,7 @@
   {
    "reference": "50350003899",
    "titre": "L'amour bandant son arc",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -485,6 +538,7 @@
   {
    "reference": "50350003829",
    "titre": "Un vieil homme debout, mesurant un globe avec un compas",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -493,6 +547,7 @@
   {
    "reference": "50350003885",
    "titre": "La Vierge embrassant le Christ lors de la Descente de Croix",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -501,6 +556,7 @@
   {
    "reference": "50350003891",
    "titre": "Circé transforme en animaux divers les compagnons d'Ulysse",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -509,6 +565,7 @@
   {
    "reference": "50350003831",
    "titre": "Tête d'homme portant barbe et moustache, vu de profil vers la gauche",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -517,6 +574,7 @@
   {
    "reference": "50350003879",
    "titre": "Saint Joseph assis tenant l'Enfant Jésus dans ses bras",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -525,6 +583,7 @@
   {
    "reference": "50350003900",
    "titre": "Sainte Catherine agenouillée, regardant le ciel",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -533,6 +592,7 @@
   {
    "reference": "50350003907",
    "titre": "Demi-figure de femme assise, la tête tournée vers la droite",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -541,6 +601,7 @@
   {
    "reference": "50350003841",
    "titre": "Paysage avec deux soldats ou brigands ouvrant les bagages de deux femmes",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -549,6 +610,7 @@
   {
    "reference": "50350003824",
    "titre": "Buste de femme, de profil vers la gauche",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -557,6 +619,7 @@
   {
    "reference": "50350003895",
    "titre": "Deux anges sur des nuages portant une pomme",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -565,6 +628,7 @@
   {
    "reference": "50350003834",
    "titre": "Tête de vieil homme barbu, de trois quarts vers la droite",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -573,6 +637,7 @@
   {
    "reference": "50350003892",
    "titre": "Une figure, de dos, tenant un panier et un oiseau, devant une autre figure",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -581,6 +646,7 @@
   {
    "reference": "50350003835",
    "titre": "Paysage avec une église cachée par des arbres, près d'une étendue d'eau",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -589,6 +655,7 @@
   {
    "reference": "50350003904",
    "titre": "Un vieillard et une femme en buste",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -597,6 +664,7 @@
   {
    "reference": "50350003902",
    "titre": "Etude d'une femme nue, de profil, se relevant",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -605,6 +673,7 @@
   {
    "reference": "50350003822",
    "titre": "Un enfant, vu à mi-corps, regardant un enfant assis",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -613,6 +682,7 @@
   {
    "reference": "50350003881",
    "titre": "Pilate regarde un soldat poser sur la tête du Christ une couronne d'épines",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -621,6 +691,7 @@
   {
    "reference": "50350003838",
    "titre": "Paysage avec des figures au pied d'une tour bordée d'arbres",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -629,6 +700,7 @@
   {
    "reference": "50350003880",
    "titre": "Le Christ et un apôtre, et esquisse d'une troisième figure",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -637,6 +709,7 @@
   {
    "reference": "50350003894",
    "titre": "L'amour se moquant de Vénus",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -645,6 +718,7 @@
   {
    "reference": "50350003882",
    "titre": "Pilate et un soldat présente le Christ au peuple",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -653,6 +727,7 @@
   {
    "reference": "50350003832",
    "titre": "Etude d'une tête de vieil homme barbu, la tête voilée",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -661,6 +736,7 @@
   {
    "reference": "50350003898",
    "titre": "Suzanne au bain",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -669,6 +745,7 @@
   {
    "reference": "50350003883",
    "titre": "Sainte Véronique s'approche du Christ portant la Croix",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -677,6 +754,7 @@
   {
    "reference": "50350003827",
    "titre": "Jeune homme, vu en buste, coiffé d'un bérêt",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -685,6 +763,7 @@
   {
    "reference": "50350003909",
    "titre": "Demi-figure de vieillard et deux têtes d'anges",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -693,6 +772,7 @@
   {
    "reference": "50350003828",
    "titre": "Demi-figure d'homme presque nu, le regard fixé en bas, tenant un objet rond",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -701,6 +781,7 @@
   {
    "reference": "50350003810",
    "titre": "Un ange, de profil vers la droite",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -709,6 +790,7 @@
   {
    "reference": "50350003913",
    "titre": "Deux têtes de jeunes enfants",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -717,6 +799,7 @@
   {
    "reference": "50350003916",
    "titre": "Deux têtes de femme, de profil vers la gauche",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -725,6 +808,7 @@
   {
    "reference": "50350003911",
    "titre": "Etude de deux têtes de jeunes femmes",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -733,6 +817,7 @@
   {
    "reference": "50350003912",
    "titre": "Saint Jean-Baptiste, assis, de profil, tenant une coupe",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -741,6 +826,7 @@
   {
    "reference": "50350003915",
    "titre": "Tête de femme, penchée vers la droite",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -749,6 +835,7 @@
   {
    "reference": "50350003919",
    "titre": "Paysage avec un homme se dirigeant vers deux grand arbres",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -757,6 +844,7 @@
   {
    "reference": "50350003920",
    "titre": "Paysage encadré d'un arbre et d'un tronc, avec un berger et son troupeau",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -765,6 +853,7 @@
   {
    "reference": "50350003803",
    "titre": "Saint Paul lisant et écrivant",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -773,6 +862,7 @@
   {
    "reference": "50350003811",
    "titre": "Une figure à genoux, tournée vers la droite, regardant en haut",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -781,6 +871,7 @@
   {
    "reference": "50350003910",
    "titre": "Demi-figure d'homme nu, assis, tourné vers la droite",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -789,6 +880,7 @@
   {
    "reference": "50350003917",
    "titre": "Vieil homme, vu en buste, les yeux levés au ciel : un évangéliste (?)",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -797,6 +889,7 @@
   {
    "reference": "50350003802",
    "titre": "Sainte Véronique présente la Sainte Face",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -805,6 +898,7 @@
   {
    "reference": "50350003808",
    "titre": "Deux jeunes filles se battant près d'une cheminée",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -813,6 +907,7 @@
   {
    "reference": "50350003806",
    "titre": "Martyr prêt à être décapité par un homme armé d'un sabre",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -821,6 +916,7 @@
   {
    "reference": "50350003804",
    "titre": "Deux femmes allongées et deux enfants ailés",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -829,6 +925,7 @@
   {
    "reference": "50350003807",
    "titre": "Jeune homme et jeune fille au pied d'un arbre marqué Angelica et Medor",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -837,6 +934,7 @@
   {
    "reference": "50350003914",
    "titre": "Femme enlacée par un homme devant une autre figure",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -845,6 +943,7 @@
   {
    "reference": "50350003918",
    "titre": "Etude de trois têtes de soldats",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -853,6 +952,7 @@
   {
    "reference": "50350003809",
    "titre": "Allégorie de la supériorité de la sculpture sur la peinture",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -861,6 +961,7 @@
   {
    "reference": "04450000740",
    "titre": "Judith tenant la tête d'Holopherne",
+   "musee_code": "M0445",
    "musee": "Palais-musée des Archevêques de Narbonne",
    "ville": "Narbonne",
    "code": "attribue",
@@ -868,7 +969,7 @@
   }
  ],
  "version_donnee": "2026-07-01",
- "date_generation": "2026-08-02T14:35:33+00:00",
+ "date_generation": "2026-08-02T15:04:31+00:00",
  "source": "Collections des musées de France : base Joconde",
  "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
 }

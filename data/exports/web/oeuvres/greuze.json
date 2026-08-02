@@ -28,6 +28,7 @@
   {
    "reference": "000PE008279",
    "titre": "BERTRAND BARERE DE VIEUZAC (1755-1841)",
+   "musee_code": "M5077",
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "ecole_de",
@@ -47,6 +48,7 @@
   {
    "reference": "000PE011085",
    "titre": "MARIE-JEAN-ANTOINE-NICOLAS DE CARITAT, MARQUIS DE CONDORCET (1743-1794)",
+   "musee_code": "M5077",
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "ecole_de",
@@ -55,6 +57,7 @@
   {
    "reference": "000PE014011",
    "titre": "UNE LISEUSE",
+   "musee_code": "M0913",
    "musee": "musée des beaux-arts",
    "ville": "Marseille",
    "code": "attribue",
@@ -63,6 +66,7 @@
   {
    "reference": "000PE016186",
    "titre": "LA MENAGERE SURPRISE",
+   "musee_code": "M0917",
    "musee": "musée Grobet-Labadié",
    "ville": "Marseille",
    "code": "attribue",
@@ -71,6 +75,7 @@
   {
    "reference": "000PE029512",
    "titre": "PORTRAIT DE FEMME AGEE",
+   "musee_code": "M0134",
    "musee": "musée des Beaux-Arts",
    "ville": "Beaune",
    "code": "attribue",
@@ -79,6 +84,7 @@
   {
    "reference": "000PE033200",
    "titre": "TETE DE BACCHANTE",
+   "musee_code": "M0303",
    "musee": "musée des beaux-arts et d’archéologie",
    "ville": "Troyes",
    "code": "ecole_de",
@@ -87,6 +93,7 @@
   {
    "reference": "00000074353",
    "titre": "PORTRAIT D'ENFANT",
+   "musee_code": "M0594",
    "musee": "musée Goya",
    "ville": "Castres",
    "code": "point_interrogation",
@@ -95,6 +102,7 @@
   {
    "reference": "00000074354",
    "titre": "TETE DE VIEILLARD",
+   "musee_code": "M0594",
    "musee": "musée Goya",
    "ville": "Castres",
    "code": "point_interrogation",
@@ -103,6 +111,7 @@
   {
    "reference": "00000075396",
    "titre": "TETE DE JEUNE FILLE",
+   "musee_code": "M0211",
    "musee": "musée des beaux-arts",
    "ville": "Rennes",
    "code": "attribue",
@@ -111,6 +120,7 @@
   {
    "reference": "00000075395",
    "titre": "JEUNE FILLE AU RUBAN BLEU",
+   "musee_code": "M0211",
    "musee": "musée des beaux-arts",
    "ville": "Rennes",
    "code": "attribue",
@@ -130,6 +140,7 @@
   {
    "reference": "00000093370",
    "titre": "TETE DE JEUNE FILLE",
+   "musee_code": "M0286",
    "musee": "musée des beaux-arts",
    "ville": "Orléans",
    "code": "genre_de",
@@ -138,6 +149,7 @@
   {
    "reference": "06380000157",
    "titre": "Portrait de Jacques François Momal",
+   "musee_code": "M0638",
    "musee": "musée des Beaux-Arts",
    "ville": "Valenciennes",
    "code": "attribue",
@@ -146,6 +158,7 @@
   {
    "reference": "01810000044",
    "titre": "Portrait du Chanoine Piot",
+   "musee_code": "M0181",
    "musee": "musée Greuze - hôtel-Dieu",
    "ville": "Tournus",
    "code": "attribue",
@@ -154,6 +167,7 @@
   {
    "reference": "01810000043",
    "titre": "Portrait de Madame Abraham Piot ; Portrait de femme (autre titre)",
+   "musee_code": "M0181",
    "musee": "musée Greuze - hôtel-Dieu",
    "ville": "Tournus",
    "code": "attribue",
@@ -162,6 +176,7 @@
   {
    "reference": "50350212824",
    "titre": "Etude d'un enfant couché et endormi sur un chien",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -170,6 +185,7 @@
   {
    "reference": "50350029132",
    "titre": "Main tenant un objet",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
@@ -178,6 +194,7 @@
   {
    "reference": "50350013458",
    "titre": "Tête de jeune homme de profil, tournée à gauche",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -186,6 +203,7 @@
   {
    "reference": "50350029128",
    "titre": "Etude de main",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
@@ -194,6 +212,7 @@
   {
    "reference": "50350031531",
    "titre": "Petit garçon en buste, la tête coiffée d'un chapeau",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -202,6 +221,7 @@
   {
    "reference": "50350212820",
    "titre": "Tête d'homme, coiffé d'une perruque, de trois quarts vers la droite",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -210,6 +230,7 @@
   {
    "reference": "50350212822",
    "titre": "Un jeune enfant assis, en chemise",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -218,6 +239,7 @@
   {
    "reference": "50350212819",
    "titre": "Tête de femme, de trois quarts vers la gauche",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -226,6 +248,7 @@
   {
    "reference": "50350029129",
    "titre": "Etude de main gauche",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
@@ -234,6 +257,7 @@
   {
    "reference": "50350029131",
    "titre": "Main tenant une étoffe",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
@@ -242,6 +266,7 @@
   {
    "reference": "50350212826",
    "titre": "Tête de vieillard, de trois quarts, tournée vers la droite",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -250,6 +275,7 @@
   {
    "reference": "50350029127",
    "titre": "Etude de main",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
@@ -258,6 +284,7 @@
   {
    "reference": "50350212821",
    "titre": "Trois têtes : les deux de gauche sont vues de trois quarts",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -266,6 +293,7 @@
   {
    "reference": "50350228316",
    "titre": "Scène d'intérieur, avec des personnages attablés",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -274,6 +302,7 @@
   {
    "reference": "50350212823",
    "titre": "La petite paysanne",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -282,6 +311,7 @@
   {
    "reference": "50350212827",
    "titre": "Tête de femme, de profil vers la gauche",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -290,6 +320,7 @@
   {
    "reference": "50350029137",
    "titre": "Tête de jeune fille",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
@@ -298,6 +329,7 @@
   {
    "reference": "50350212825",
    "titre": "Tête de vieillard, de profil vers la droite",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -306,6 +338,7 @@
   {
    "reference": "50350030818",
    "titre": "Femme nue, debout, de trois quarts à droite, présentant ses mains ouvertes",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -314,6 +347,7 @@
   {
    "reference": "50350030817",
    "titre": "Femme nue, debout, penchée, de trois quarts vers la gauche",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -322,6 +356,7 @@
   {
    "reference": "50350145323",
    "titre": "Etudes de têtes d'hommes et de femmes, d'après la colonne trajanne",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -330,6 +365,7 @@
   {
    "reference": "10480006080",
    "titre": "Tête d'enfant",
+   "musee_code": "M1048",
    "musee": "musée des beaux-arts",
    "ville": "Chambéry",
    "code": "ecole_de",
@@ -338,6 +374,7 @@
   {
    "reference": "000DE006760",
    "titre": "JEUNE HOMME DESSINANT SUR SES GENOUX",
+   "musee_code": "M0917",
    "musee": "musée Grobet-Labadié",
    "ville": "Marseille",
    "code": "attribue",
@@ -346,6 +383,7 @@
   {
    "reference": "000DE006757",
    "titre": "LA NOURRICE",
+   "musee_code": "M0913",
    "musee": "musée des beaux-arts",
    "ville": "Marseille",
    "code": "attribue",
@@ -354,6 +392,7 @@
   {
    "reference": "50110000564",
    "titre": "La Laitière",
+   "musee_code": "M5011",
    "musee": "musée national Magnin",
    "ville": "Dijon",
    "code": "genre_de",
@@ -362,6 +401,7 @@
   {
    "reference": "50110000416",
    "titre": "Tête de jeune femme blonde, les yeux levés au ciel",
+   "musee_code": "M5011",
    "musee": "musée national Magnin",
    "ville": "Dijon",
    "code": "genre_de",
@@ -370,6 +410,7 @@
   {
    "reference": "01610001204",
    "titre": "Portrait de Johann-Georg Wille ; Portrait d'homme (autre titre)",
+   "musee_code": "M0161",
    "musee": "musée Rolin",
    "ville": "Autun",
    "code": "attribue",
@@ -378,6 +419,7 @@
   {
    "reference": "08030002721",
    "titre": "La boudeuse",
+   "musee_code": "M0803",
    "musee": "musée Antoine Vivenel",
    "ville": "Compiègne",
    "code": "point_interrogation",
@@ -386,6 +428,7 @@
   {
    "reference": "07760001112",
    "titre": "Buste de femme de dos",
+   "musee_code": "M0776",
    "musee": "musée municipal",
    "ville": "La Roche-sur-Yon",
    "code": "attribue",
@@ -394,6 +437,7 @@
   {
    "reference": "M0332000543",
    "titre": "Portrait d'homme barbu",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -402,6 +446,7 @@
   {
    "reference": "M0332011679",
    "titre": "Etude de tête de femme de profil",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -410,6 +455,7 @@
   {
    "reference": "M0332011678",
    "titre": "Etude de deux chats",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -418,6 +464,7 @@
   {
    "reference": "M0332006709",
    "titre": "Tête de jeune fille",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "ecole_de",
@@ -426,6 +473,7 @@
   {
    "reference": "01710114791",
    "titre": null,
+   "musee_code": "M0171",
    "musee": "musée municipal",
    "ville": "Louhans-Châteaurenaud",
    "code": "attribue",
@@ -434,6 +482,7 @@
   {
    "reference": "M0536030527",
    "titre": "Portrait d'une paysanne dormant",
+   "musee_code": "M0536",
    "musee": "musée départemental d'art ancien et contemporain",
    "ville": "Epinal",
    "code": "maniere_de",
@@ -441,7 +490,7 @@
   }
  ],
  "version_donnee": "2026-07-01",
- "date_generation": "2026-08-02T14:35:33+00:00",
+ "date_generation": "2026-08-02T15:04:31+00:00",
  "source": "Collections des musées de France : base Joconde",
  "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
 }

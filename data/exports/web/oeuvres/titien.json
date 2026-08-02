@@ -28,6 +28,7 @@
   {
    "reference": "000PE027124",
    "titre": "PORTRAIT D'HOMME",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -36,6 +37,7 @@
   {
    "reference": "000PE027125",
    "titre": "ECCE HOMO",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -55,6 +57,7 @@
   {
    "reference": "00000077319",
    "titre": "ECCE HOMO",
+   "musee_code": "M5052",
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "point_interrogation",
@@ -74,6 +77,7 @@
   {
    "reference": "00000107129",
    "titre": "Vénus endormie flanquée de trois amours",
+   "musee_code": "M5052",
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
@@ -82,6 +86,7 @@
   {
    "reference": "50350228332",
    "titre": "Mourant assisté d'un prêtre qui lui présente un crucifix",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -90,6 +95,7 @@
   {
    "reference": "50350228331",
    "titre": "Site montagneux, avec à droite, sur une éminence, des bâtiments religieux",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -98,6 +104,7 @@
   {
    "reference": "50350007955",
    "titre": "Paysage avec un pont en bois",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
@@ -106,6 +113,7 @@
   {
    "reference": "50350202230",
    "titre": "Groupe de guerriers",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
@@ -114,6 +122,7 @@
   {
    "reference": "000PE023475",
    "titre": "LE CHRIST ET LA FEMME ADULTERE",
+   "musee_code": "M0065",
    "musee": "musée des beaux-arts",
    "ville": "Bordeaux",
    "code": "attribue",
@@ -122,6 +131,7 @@
   {
    "reference": "05620000355",
    "titre": "Sainte Famille",
+   "musee_code": "M0562",
    "musee": "musée des Augustins",
    "ville": "Toulouse",
    "code": "suiveur_de",
@@ -130,6 +140,7 @@
   {
    "reference": "M0333000715",
    "titre": "Portrait de Nicolas Perrenot de Granvelle",
+   "musee_code": "M0333",
    "musee": "musée du temps",
    "ville": "Besançon",
    "code": "attribue",
@@ -148,7 +159,7 @@
   }
  ],
  "version_donnee": "2026-07-01",
- "date_generation": "2026-08-02T14:35:33+00:00",
+ "date_generation": "2026-08-02T15:04:31+00:00",
  "source": "Collections des musées de France : base Joconde",
  "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
 }

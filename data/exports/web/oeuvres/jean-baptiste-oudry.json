@@ -20,6 +20,7 @@
   {
    "reference": "000DE021409",
    "titre": "DEUX ETUDES DE CHIEN",
+   "musee_code": "M0917",
    "musee": "musée Grobet-Labadié",
    "ville": "Marseille",
    "code": "attribue",
@@ -28,6 +29,7 @@
   {
    "reference": "00000081836",
    "titre": "ETUDE DE CHIEN DE CHASSE BUVANT",
+   "musee_code": "M0303",
    "musee": "musée des beaux-arts et d’archéologie",
    "ville": "Troyes",
    "code": "attribue",
@@ -36,6 +38,7 @@
   {
    "reference": "00000081837",
    "titre": "ETUDE DE CHIEN DE CHASSE",
+   "musee_code": "M0303",
    "musee": "musée des beaux-arts et d’archéologie",
    "ville": "Troyes",
    "code": "attribue",
@@ -44,6 +47,7 @@
   {
    "reference": "000PE009116",
    "titre": "UNE CHASSE AU SANGLIER",
+   "musee_code": "M5077",
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "attribue",
@@ -52,6 +56,7 @@
   {
    "reference": "000PE009117",
    "titre": "L'HALLALI DU LOUP",
+   "musee_code": "M5077",
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "attribue",
@@ -60,6 +65,7 @@
   {
    "reference": "000PE009115",
    "titre": "CHIEN EN ARRET SUR DES FAISANS",
+   "musee_code": "M5077",
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "attribue",
@@ -68,6 +74,7 @@
   {
    "reference": "000PE009118",
    "titre": "UN OISEAU DE PROIE TOMBANT SUR DES CANARDS QUI SE CACHENT DANS DES ROSEAUX",
+   "musee_code": "M5077",
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "attribue",
@@ -76,6 +83,7 @@
   {
    "reference": "000PE016302",
    "titre": "JEUNES CANARDS",
+   "musee_code": "M0917",
    "musee": "musée Grobet-Labadié",
    "ville": "Marseille",
    "code": "ecole_de",
@@ -84,6 +92,7 @@
   {
    "reference": "000PE026574",
    "titre": "PAYSAGE",
+   "musee_code": "M0798",
    "musee": "MUDO - musée de l'Oise",
    "ville": "Beauvais",
    "code": "attribue",
@@ -92,6 +101,7 @@
   {
    "reference": "50350209366",
    "titre": "Paysage avec figures et animaux",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -100,6 +110,7 @@
   {
    "reference": "50130000377",
    "titre": "Bois d'un cerf pris à Compiègne en 1752 (sur un fond imitant le marbre)",
+   "musee_code": "M5013",
    "musee": "musée national du château de Fontainebleau",
    "ville": "Fontainebleau",
    "code": "attribue",
@@ -108,6 +119,7 @@
   {
    "reference": "50130000371",
    "titre": "Chien-barbet chassant des canards sauvages",
+   "musee_code": "M5013",
    "musee": "musée national du château de Fontainebleau",
    "ville": "Fontainebleau",
    "code": "attribue",
@@ -116,6 +128,7 @@
   {
    "reference": "50130000359",
    "titre": "Perle et Ponne, chiennes de la meute de Louis XV",
+   "musee_code": "M5013",
    "musee": "musée national du château de Fontainebleau",
    "ville": "Fontainebleau",
    "code": "attribue",
@@ -124,6 +137,7 @@
   {
    "reference": "07840001178",
    "titre": "Le Loup devenu Berger, III, 3",
+   "musee_code": "M0784",
    "musee": "musée Jean de la Fontaine",
    "ville": "Château-Thierry",
    "code": "attribue",
@@ -132,6 +146,7 @@
   {
    "reference": "07840001180",
    "titre": "Les Loups et les Brebis, III, 13",
+   "musee_code": "M0784",
    "musee": "musée Jean de la Fontaine",
    "ville": "Château-Thierry",
    "code": "attribue",
@@ -140,6 +155,7 @@
   {
    "reference": "50350100099",
    "titre": "Une allée droite d'un parc avec une porte au fond",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -148,6 +164,7 @@
   {
    "reference": "50350111559",
    "titre": "Chasse au lion",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -156,6 +173,7 @@
   {
    "reference": "50350112369",
    "titre": "Intérieur d'appartement",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -164,6 +182,7 @@
   {
    "reference": "50350228357",
    "titre": "Chasseur assis, tenant son fusil à la main gauche, étendant le bras droit",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -172,6 +191,7 @@
   {
    "reference": "50350508085",
    "titre": "HUIT CHIENS DANS UN PAYSAGE",
+   "musee_code": "M0094",
    "musee": "musée Bonnat-Helleu, musée des Beaux-Arts de Bayonne",
    "ville": "Bayonne",
    "code": "ecole_de",
@@ -180,6 +200,7 @@
   {
    "reference": "00650013590",
    "titre": "Comédiens italiens dans un parc",
+   "musee_code": "M0065",
    "musee": "musée des beaux-arts",
    "ville": "Bordeaux",
    "code": "atelier_de",
@@ -199,6 +220,7 @@
   {
    "reference": "04240000024",
    "titre": "Portrait de Madame du Laurent",
+   "musee_code": "M0424",
    "musee": "musée Adrien Mentienne",
    "ville": "Bry-sur-Marne",
    "code": "attribue",
@@ -207,6 +229,7 @@
   {
    "reference": "M0810004977",
    "titre": "Tête de loup",
+   "musee_code": "M0810",
    "musee": "musée de la vénerie",
    "ville": "Senlis",
    "code": "attribue",
@@ -214,7 +237,7 @@
   }
  ],
  "version_donnee": "2026-07-01",
- "date_generation": "2026-08-02T14:35:33+00:00",
+ "date_generation": "2026-08-02T15:04:31+00:00",
  "source": "Collections des musées de France : base Joconde",
  "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
 }

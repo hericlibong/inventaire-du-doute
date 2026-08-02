@@ -2,6 +2,31 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-08-02 (phase 2) — Où sont ces œuvres ? Le filtre par musée
+
+L'onglet Œuvres savait dire « quelles œuvres, sous quelle formule ». Il ne savait pas dire
+« où ». C'est fait : une liste déroulante des musées qui conservent une œuvre concernée de
+l'artiste affiché, chacun avec son compte, du plus fourni au moins fourni. Charles Le Brun :
+Louvre 276, Besançon 7, Versailles 4, et seize autres derrière.
+
+La question intéressante n'était pas comment ajouter le filtre, mais ce que devenaient les
+chiffres quand on en met deux. Les puces de mention annonçaient « attribué à 52 » pour
+l'artiste entier. Une fois Besançon choisi, cliquer dessus n'aurait rendu que 6 œuvres. Un
+nombre affiché qui ne tient pas sa promesse, c'est exactement ce que la charte du projet
+interdit. Les deux filtres sont donc emboîtés : le musée délimite, la mention découpe à
+l'intérieur, et les puces se recomptent. À Besançon, Le Brun affiche « Toutes 7 · Attribué à 6
+· Nom suivi d'un ? 1 ». Chaque nombre est vrai.
+
+Deuxième décision, invisible mais structurante : le musée filtré n'appartient pas à l'onglet.
+Il vit dans la page. Parce qu'à la phase suivante, on cliquera un point sur la carte pour
+ouvrir la liste des œuvres de ce musée — et un état rangé dans un onglet démonté serait effacé
+au moment précis où on en a besoin.
+
+Il a fallu pour cela que chaque œuvre porte le code Muséofile de son musée, comme la carte le
+fait déjà. Rapprocher par le nom aurait marché neuf fois sur dix : il y a une trentaine de
+« musée des beaux-arts » en France. Un invariant vérifie maintenant, à chaque export, que les
+œuvres comptées par musée disent la même chose que les points de la carte.
+
 ## 2026-08-02 (fin) — Barla sort du cadre, et le site cesse de dire « maîtres »
 
 Les deux questions laissées à l'utilisateur sont tranchées, et les deux réponses disent la

@@ -462,7 +462,7 @@ def _exemple(ref, titre, musee, ville, segment) -> dict:
     }
 
 
-def _oeuvre(ref, titre, musee, ville, famille, segment) -> dict:
+def _oeuvre(ref, titre, code, musee, ville, famille, segment) -> dict:
     """Une œuvre de doute pour l'onglet « Œuvres » : le nécessaire pour la lister
     et ouvrir sa fiche POP. `code` est la famille RETENUE par le pipeline (le
     front ne re-classe jamais) ; `extrait` est le segment publié tel quel par le
@@ -470,6 +470,13 @@ def _oeuvre(ref, titre, musee, ville, famille, segment) -> dict:
     return {
         "reference": ref,
         "titre": titre if isinstance(titre, str) else None,
+        # `musee_code` est le code Muséofile — la CLÉ du musée, celle que porte
+        # déjà la carte du profil (`musees_doute`). Elle est exportée depuis le
+        # 2026-08-02 pour que le filtre par musée de l'onglet « Œuvres » et les
+        # points de la carte désignent le même objet : deux noms de musée
+        # identiques dans deux villes ne doivent jamais se confondre, et le lien
+        # carte → œuvres ne doit pas se rejouer par rapprochement de libellés.
+        "musee_code": code if isinstance(code, str) and code.strip() else None,
         "musee": musee if isinstance(musee, str) else None,
         "ville": ville if isinstance(ville, str) else None,
         "code": famille,
@@ -578,6 +585,17 @@ def _ecrire_oeuvres(artistes: list, agg: dict, meta: dict) -> int:
         # ajoutées que dans la branche « doute »), on le réaffirme ici.
         assert "d_apres" not in obtenu and "copie" not in obtenu, \
             f"une copie s'est glissée dans la liste ({art['nom']})"
+        # Le filtre par musée de l'onglet « Œuvres » compte les œuvres ; la carte
+        # du profil affiche `musees_doute`. Les deux doivent dire la même chose,
+        # musée par musée, sinon le lecteur lit deux chiffres différents pour le
+        # même point (invariant posé le 2026-08-02, phase 2).
+        par_musee = Counter(o["musee_code"] for o in oeuvres if o["musee_code"])
+        attendu_musees = {m["code"]: m["doute"] for m in art["musees_doute"]}
+        assert dict(par_musee) == attendu_musees, \
+            f"œuvres par musée ≠ carte du profil ({art['nom']})"
+        assert sum(1 for o in oeuvres if not o["musee_code"]) == \
+            art["doute_sans_musee"], \
+            f"œuvres sans musée ≠ doute_sans_musee ({art['nom']})"
 
         fichier = {
             "slug": art["slug"],
@@ -683,7 +701,8 @@ def main() -> None:
                     # a déjà résolu la référence en UNE famille) : pas de doublon
                     # possible, la référence servira de clé de liste côté front.
                     a["oeuvres"].append(
-                        _oeuvre(ref, titre, musee, ville, famille, segment))
+                        _oeuvre(ref, titre, code, musee, ville, famille,
+                                segment))
         print(f"\r  {total:,} notices lues".replace(",", " "), end="", flush=True)
     print()
 

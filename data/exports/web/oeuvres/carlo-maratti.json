@@ -20,6 +20,7 @@
   {
    "reference": "000PE013858",
    "titre": "LA VIERGE ALLAITANT L'ENFANT JESUS",
+   "musee_code": "M0913",
    "musee": "musée des beaux-arts",
    "ville": "Marseille",
    "code": "attribue",
@@ -28,6 +29,7 @@
   {
    "reference": "000PE019516",
    "titre": "LA MORT DE SAINT JOSEPH",
+   "musee_code": "M0629",
    "musee": "musée des Beaux-Arts",
    "ville": "Lille",
    "code": "attribue",
@@ -36,6 +38,7 @@
   {
    "reference": "00000069056",
    "titre": "La Vierge lisant entourée d'anges",
+   "musee_code": "M5011",
    "musee": "musée national Magnin",
    "ville": "Dijon",
    "code": "atelier_de",
@@ -44,6 +47,7 @@
   {
    "reference": "10500001218",
    "titre": "Vierge à l'Enfant avec Saint-Jean Baptiste",
+   "musee_code": "M1048",
    "musee": "musée des beaux-arts",
    "ville": "Chambéry",
    "code": "atelier_de",
@@ -52,6 +56,7 @@
   {
    "reference": "50350100624",
    "titre": "Etude de la tête d'un homme tournée vers la gauche",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -60,6 +65,7 @@
   {
    "reference": "50350100630",
    "titre": "Feuille d'études d'un personnage, de mains,...",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -68,6 +74,7 @@
   {
    "reference": "50350100632",
    "titre": "Tête de vieillard, vue de face, les yeux levés au ciel",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -76,6 +83,7 @@
   {
    "reference": "50350100623",
    "titre": "Tête de moine âgé, regardant le spectateur",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -84,6 +92,7 @@
   {
    "reference": "50350100616",
    "titre": "Un homme nu debout, vu de dos, tenant sa tête dans les mains",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -92,6 +101,7 @@
   {
    "reference": "50350100631",
    "titre": "Figure d'homme debout drapé et appuyé sur un bâton",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -100,6 +110,7 @@
   {
    "reference": "50350100618",
    "titre": "Dans un parc avec des animaux, femme disposant une corbeille sur une table",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -108,6 +119,7 @@
   {
    "reference": "50350100609",
    "titre": "Pape intronisant des religieux",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -116,6 +128,7 @@
   {
    "reference": "50350100626",
    "titre": "Diverses têtes d'hommes, de femmes, d'enfants et de vieillards",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -124,6 +137,7 @@
   {
    "reference": "50350100629",
    "titre": "Un homme nu bras croisés sur la poitrine, tête inclinée sur l'épaule",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -132,6 +146,7 @@
   {
    "reference": "50350100612",
    "titre": "Religieux, à genoux, priant",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -140,6 +155,7 @@
   {
    "reference": "50350100617",
    "titre": "Une figure assise à demi nue, les bras levés au ciel",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -148,6 +164,7 @@
   {
    "reference": "50350100620",
    "titre": "Femme nue, assise, de face, regardant vers le haut",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -156,6 +173,7 @@
   {
    "reference": "50350100633",
    "titre": "Portrait de Carlo Maratta",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -164,6 +182,7 @@
   {
    "reference": "50350100603",
    "titre": "Assomption de la Vierge, étude pour une bannière",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -172,6 +191,7 @@
   {
    "reference": "50350100622",
    "titre": "Saint Joseph tenant l'enfant Jésus ?",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -180,6 +200,7 @@
   {
    "reference": "50350100634",
    "titre": "La Religion",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -188,6 +209,7 @@
   {
    "reference": "50350100627",
    "titre": "Etude pour un tombeau, avec un ange assis",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -196,6 +218,7 @@
   {
    "reference": "50350500553",
    "titre": "Homme nu",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -204,6 +227,7 @@
   {
    "reference": "50350100605",
    "titre": "Saint Jean l'Evangéliste écrivant",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -212,6 +236,7 @@
   {
    "reference": "50350100553",
    "titre": "Mort de Saint Joseph",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -220,6 +245,7 @@
   {
    "reference": "50350100619",
    "titre": "Figure debout, regardant au ciel, les bras ouverts et levés",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -228,6 +254,7 @@
   {
    "reference": "50350100604",
    "titre": "Saint Jean, debout dans une niche, tenant un calice",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -236,6 +263,7 @@
   {
    "reference": "50350100615",
    "titre": "Un homme nu debout, vu de dos, un objet dans les mains",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -244,6 +272,7 @@
   {
    "reference": "50350100595",
    "titre": "Naissance de la Vierge",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -252,6 +281,7 @@
   {
    "reference": "50350100600",
    "titre": "La Fuite en Egypte",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -260,6 +290,7 @@
   {
    "reference": "50350105016",
    "titre": "Mariage de la Vierge",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -268,6 +299,7 @@
   {
    "reference": "50350100601",
    "titre": "La Vierge tenant l'Enfant Jésus, Saint Joseph et le petit saint Jean",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -276,6 +308,7 @@
   {
    "reference": "50350100597",
    "titre": "Sainte Famille",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -284,6 +317,7 @@
   {
    "reference": "50350112208",
    "titre": "Vénus entre Bacchus et Cérès",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -292,6 +326,7 @@
   {
    "reference": "50350100576",
    "titre": "Bain de Diane",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -300,6 +335,7 @@
   {
    "reference": "50350100575",
    "titre": "Dorinde blessée à la chasse",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -308,6 +344,7 @@
   {
    "reference": "50350100587",
    "titre": "Treize têtes de femmes dans des positions diverses",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -316,6 +353,7 @@
   {
    "reference": "50350100554",
    "titre": "Etude pour une Annonciation",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -324,6 +362,7 @@
   {
    "reference": "50350100606",
    "titre": "Apparition du Christ à Saint Blaise",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -332,6 +371,7 @@
   {
    "reference": "07430004686",
    "titre": "Quatre têtes d'étude",
+   "musee_code": "M0743",
    "musee": "musée des Beaux-Arts",
    "ville": "Nantes",
    "code": "atelier_de",
@@ -340,6 +380,7 @@
   {
    "reference": "07430005116",
    "titre": "L'Ange gardien",
+   "musee_code": "M0743",
    "musee": "musée des Beaux-Arts",
    "ville": "Nantes",
    "code": "attribue",
@@ -348,6 +389,7 @@
   {
    "reference": "03290008037",
    "titre": "Loth et ses filles",
+   "musee_code": "M0329",
    "musee": "musée d’ethnographie corse",
    "ville": "Bastia",
    "code": "atelier_de",
@@ -367,6 +409,7 @@
   {
    "reference": "M0332010269",
    "titre": "La Sainte Famille avec saint Jean-Baptiste",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "entourage_de",
@@ -375,6 +418,7 @@
   {
    "reference": "08940004673",
    "titre": "L'Adoration des Mages (titre d'usage)",
+   "musee_code": "M0894",
    "musee": "musée Granet",
    "ville": "Aix-en-Provence",
    "code": "attribue",
@@ -394,6 +438,7 @@
   {
    "reference": "M0536000542",
    "titre": "L'École d'Athènes",
+   "musee_code": "M0536",
    "musee": "musée départemental d'art ancien et contemporain",
    "ville": "Epinal",
    "code": "attribue",
@@ -401,7 +446,7 @@
   }
  ],
  "version_donnee": "2026-07-01",
- "date_generation": "2026-08-02T14:35:33+00:00",
+ "date_generation": "2026-08-02T15:04:31+00:00",
  "source": "Collections des musées de France : base Joconde",
  "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
 }

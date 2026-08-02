@@ -24,6 +24,7 @@
   {
    "reference": "000PE012507",
    "titre": "LA VIERGE ET L'ENFANT AVEC UN ANGE",
+   "musee_code": "M0947",
    "musee": "musée du Petit Palais",
    "ville": "Avignon",
    "code": "ecole_de",
@@ -32,6 +33,7 @@
   {
    "reference": "000PE012506",
    "titre": "LA VIERGE ET L'ENFANT AVEC UN ANGE",
+   "musee_code": "M0947",
    "musee": "musée du Petit Palais",
    "ville": "Avignon",
    "code": "ecole_de",
@@ -40,6 +42,7 @@
   {
    "reference": "000PE012743",
    "titre": "LA VIERGE ET L'ENFANT",
+   "musee_code": "M0947",
    "musee": "musée du Petit Palais",
    "ville": "Avignon",
    "code": "ecole_de",
@@ -48,6 +51,7 @@
   {
    "reference": "000PE016579",
    "titre": "LA VIERGE AVEC L'ENFANT ET LE PETIT SAINT JEAN",
+   "musee_code": "M0947",
    "musee": "musée du Petit Palais",
    "ville": "Avignon",
    "code": "ecole_de",
@@ -56,6 +60,7 @@
   {
    "reference": "000PE019574",
    "titre": "La Vierge et l'Enfant",
+   "musee_code": "M0629",
    "musee": "musée des Beaux-Arts",
    "ville": "Lille",
    "code": "atelier_de",
@@ -75,6 +80,7 @@
   {
    "reference": "000PE024717",
    "titre": "LA VIERGE ET L'ENFANT ; DITE LA VIERGE A LA GRENADE",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -83,6 +89,7 @@
   {
    "reference": "000PE024762",
    "titre": "Vénus et trois putti",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -102,6 +109,7 @@
   {
    "reference": "000PE024763",
    "titre": "LA VIERGE ET L'ENFANT",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -110,6 +118,7 @@
   {
    "reference": "00000077305",
    "titre": "L'AUTOMNE OU ALLEGORIE CONTRE L'ABUS DU VIN",
+   "musee_code": "M5052",
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
@@ -129,6 +138,7 @@
   {
    "reference": "50350001834",
    "titre": "Martyre de Sainte Lucie",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -137,6 +147,7 @@
   {
    "reference": "50350003539",
    "titre": "Un miracle de saint Jean l'Evangéliste",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -145,6 +156,7 @@
   {
    "reference": "50350001185",
    "titre": "Deux hommes debout drapés",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -153,6 +165,7 @@
   {
    "reference": "50350001184",
    "titre": "Tête d'homme coiffé d'un bonnet ; homme drapé, s'inclinant vers la droite",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -161,6 +174,7 @@
   {
    "reference": "50350001186",
    "titre": "Saint Jean l'Evangeliste baisant les pieds de Christ mort et un ange",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -169,6 +183,7 @@
   {
    "reference": "06190001319",
    "titre": "La Sainte Famille",
+   "musee_code": "M0619",
    "musee": "musée de la Chartreuse",
    "ville": "Douai",
    "code": "ecole_de",
@@ -177,6 +192,7 @@
   {
    "reference": "06190001320",
    "titre": "Deux Anges",
+   "musee_code": "M0619",
    "musee": "musée de la Chartreuse",
    "ville": "Douai",
    "code": "point_interrogation",
@@ -185,6 +201,7 @@
   {
    "reference": "M0332002781",
    "titre": "Étude pour Pétrarque",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -192,7 +209,7 @@
   }
  ],
  "version_donnee": "2026-07-01",
- "date_generation": "2026-08-02T14:35:33+00:00",
+ "date_generation": "2026-08-02T15:04:31+00:00",
  "source": "Collections des musées de France : base Joconde",
  "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
 }

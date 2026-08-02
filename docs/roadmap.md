@@ -36,9 +36,15 @@ fusion finale.
       2. **L'interface dit « artistes »**, plus « maîtres » — sauf pour décrire la relation
          d'une œuvre à un artiste (atelier, école, entourage). L'effectif sort des titres et
          se lit dans les données.
-- [ ] **Phase 2 — Filtrer les œuvres par musée** dans l'onglet Œuvres : menu construit à
-      partir des seuls musées concernés par l'artiste affiché, effectifs indiqués, combinaison
-      avec le filtre par mention, compteur et pagination recalculés.
+- [x] **Phase 2 — Filtrer les œuvres par musée** (2026-08-02, branche
+      `feat/filtre-musee-oeuvres`). Liste native bornée aux musées qui conservent une œuvre
+      concernée de l'artiste affiché, effectif à côté du nom, tri par valeur décroissante,
+      reconstruite au changement d'artiste. **Deux filtres emboîtés** — le musée délimite, la
+      mention découpe à l'intérieur — pour qu'aucune puce n'annonce un nombre qu'elle ne rend
+      pas. Compteur, pagination et retour à la première page recalculés à chaque changement ;
+      état vide avec « Tout afficher ». `musee_code` (Muséofile) ajouté à l'export des œuvres,
+      avec l'invariant « œuvres par musée = points de la carte ». L'état du filtre vit dans la
+      page, prêt pour la phase 3. Vérifié au navigateur, desktop et mobile 390 px.
 - [ ] **Phase 3 — Relier musées et œuvres** : depuis la carte, ouvrir la liste des œuvres du
       musée choisi, artiste conservé. Un seul système de filtrage, état partagé ou paramètres
       d'URL, et le chemin inverse lisible.

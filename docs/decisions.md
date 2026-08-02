@@ -2,6 +2,46 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-02 (sexies) — Filtrer les œuvres par musée : deux filtres emboîtés, un seul état
+
+Phase 2 du volume. L'onglet « Œuvres » listait la totalité des œuvres concernées d'un artiste,
+filtrables par mention. Il manquait le second axe que réclame la question « quelles œuvres, et
+**où** » : le musée.
+
+**Une liste native, pas des puces.** Les mentions tiennent en cinq puces ; les musées vont
+jusqu'à 24 pour un seul artiste (médiane 4). Une liste déroulante native donne le clavier, la
+souris et le tactile sans une ligne de code d'accessibilité, et elle ne casse pas la colonne
+quand un nom officiel est long. Le menu ne contient que les musées qui conservent une œuvre
+concernée de l'artiste affiché, chacun avec son effectif, **triés par valeur décroissante**
+(CLAUDE.md). Il se refait tout seul au changement d'artiste, puisqu'il dérive du fichier chargé.
+
+**Les deux filtres sont emboîtés, dans cet ordre : le musée d'abord, la mention ensuite.** Ce
+n'est pas un détail d'implémentation, c'est ce qui rend les chiffres honnêtes. Si les puces
+gardaient leur effectif « artiste entier », une puce « attribué à 52 » ne rendrait que 6 œuvres
+une fois Besançon choisi — un nombre affiché qui ment. Les puces se recomptent donc dans le
+périmètre du musée, et les mentions absentes de ce musée disparaissent, exactement comme
+disparaissent celles qui sont absentes chez l'artiste. Effet secondaire voulu : la combinaison
+vide devient inatteignable à la souris. L'état vide existe quand même, avec un bouton « Tout
+afficher » — un code de musée venu d'ailleurs (phase 3) doit trouver une porte de sortie.
+
+**Un seul endroit tient l'état.** Le musée filtré (`museeActif`, code Muséofile) vit dans la
+page, pas dans l'onglet : les onglets sont démontés quand on en change, et la carte du profil
+devra pouvoir poser le musée AVANT d'ouvrir « Œuvres » (phase 3). C'est la consigne « ne pas
+créer deux systèmes indépendants de filtrage », appliquée dès maintenant. La page vide le
+filtre au changement d'artiste ; l'onglet ne le remet jamais à zéro tout seul, sinon il
+effacerait un musée choisi sur la carte.
+
+**Le code Muséofile entre dans l'export des œuvres.** Chaque œuvre porte désormais
+`musee_code` : c'est la clé que porte déjà la carte du profil. Sans elle, il faudrait
+rapprocher un musée par son libellé — et « musée des beaux-arts » existe dans une trentaine de
+villes. Un invariant nouveau, vérifié à chaque export, impose que les œuvres comptées par
+musée disent exactement la même chose que les points de la carte, artiste par artiste.
+
+**Ce qui n'a pas bougé** : la composition des entrées, les images et leurs crédits. Le rappel
+du musée actif se lit dans la liste elle-même — la répéter en toutes lettres au-dessus ajoutait
+une quatrième ligne d'en-tête sur mobile pour redire ce qui était déjà écrit ; seul le bouton
+« Retirer ce filtre » est conservé, à côté de la liste.
+
 ## 2026-08-02 (quinquies) — Dans l'interface publique, on dit « artistes »
 
 Le lot 2 a changé la nature de la liste : trente des quarante nouveaux n'ont leur doute écrit

@@ -32,6 +32,7 @@
   {
    "reference": "000PE014505",
    "titre": "ERMITE EN MEDITATION",
+   "musee_code": "M0913",
    "musee": "musée des beaux-arts",
    "ville": "Marseille",
    "code": "ecole_de",
@@ -40,6 +41,7 @@
   {
    "reference": "000PE014504",
    "titre": "PAYSAGE ET GUERRIERS",
+   "musee_code": "M0913",
    "musee": "musée des beaux-arts",
    "ville": "Marseille",
    "code": "ecole_de",
@@ -48,6 +50,7 @@
   {
    "reference": "000PE014503",
    "titre": "PAYSAGE",
+   "musee_code": "M0913",
    "musee": "musée des beaux-arts",
    "ville": "Marseille",
    "code": "attribue",
@@ -56,6 +59,7 @@
   {
    "reference": "000PE016950",
    "titre": "SCENE DE BATAILLE",
+   "musee_code": "M0915",
    "musee": "musée Cantini",
    "ville": "Marseille",
    "code": "attribue",
@@ -64,6 +68,7 @@
   {
    "reference": "000PE019554",
    "titre": "PAYSAGE",
+   "musee_code": "M0629",
    "musee": "musée des Beaux-Arts",
    "ville": "Lille",
    "code": "attribue",
@@ -72,6 +77,7 @@
   {
    "reference": "000PE022211",
    "titre": "Paysage avec baigneurs ; Les peupliers (ancien titre)",
+   "musee_code": "M0065",
    "musee": "musée des beaux-arts",
    "ville": "Bordeaux",
    "code": "attribue",
@@ -80,6 +86,7 @@
   {
    "reference": "00000069088",
    "titre": "Paysage avec soldats au bord d'un lac dans un site montagneux",
+   "musee_code": "M5011",
    "musee": "musée national Magnin",
    "ville": "Dijon",
    "code": "ecole_de",
@@ -88,6 +95,7 @@
   {
    "reference": "06070000244",
    "titre": "Glaucus et Scylla",
+   "musee_code": "M0607",
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
@@ -96,6 +104,7 @@
   {
    "reference": "07430004698",
    "titre": "Les arbres abattus ; Paysage (Ancien titre)",
+   "musee_code": "M0743",
    "musee": "musée des Beaux-Arts",
    "ville": "Nantes",
    "code": "attribue",
@@ -104,6 +113,7 @@
   {
    "reference": "07430007265",
    "titre": "Le repos des soldats",
+   "musee_code": "M0743",
    "musee": "musée des Beaux-Arts",
    "ville": "Nantes",
    "code": "suiveur_de",
@@ -112,6 +122,7 @@
   {
    "reference": "07430005048",
    "titre": "Paysage animé",
+   "musee_code": "M0743",
    "musee": "musée des Beaux-Arts",
    "ville": "Nantes",
    "code": "genre_de",
@@ -120,6 +131,7 @@
   {
    "reference": "07430005144",
    "titre": "Paysage. Soldats dans un ravin",
+   "musee_code": "M0743",
    "musee": "musée des Beaux-Arts",
    "ville": "Nantes",
    "code": "suiveur_de",
@@ -128,6 +140,7 @@
   {
    "reference": "07430005474",
    "titre": "Vue du port",
+   "musee_code": "M0743",
    "musee": "musée des Beaux-Arts",
    "ville": "Nantes",
    "code": "genre_de",
@@ -136,6 +149,7 @@
   {
    "reference": "50350102565",
    "titre": "Six enfants nus jouant à la guerre",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -144,6 +158,7 @@
   {
    "reference": "50350102553",
    "titre": "Mise au Tombeau",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -152,6 +167,7 @@
   {
    "reference": "50350102555",
    "titre": "Trois apôtres soutenant le Christ mort",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -160,6 +176,7 @@
   {
    "reference": "50350102556",
    "titre": "Scène de bataille",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -168,6 +185,7 @@
   {
    "reference": "50350102554",
    "titre": "Trois apôtres autour du corps du Christ",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -176,6 +194,7 @@
   {
    "reference": "50350102558",
    "titre": "Adoration des Rois",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -184,6 +203,7 @@
   {
    "reference": "50350102559",
    "titre": "Mort de saint Jérôme",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -192,6 +212,7 @@
   {
    "reference": "50350102560",
    "titre": "La Force, la Justice, la Tempérance et la Prudence",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -200,6 +221,7 @@
   {
    "reference": "50350102557",
    "titre": "Couronnement d'épines",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -208,6 +230,7 @@
   {
    "reference": "50350102564",
    "titre": "Sept enfants nus jouant à la guerre",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -216,6 +239,7 @@
   {
    "reference": "50350104268",
    "titre": "Soldats vaincus, s'agenouillant devant le vainqueur",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -224,6 +248,7 @@
   {
    "reference": "50350107920",
    "titre": "Foule devant une ville, à l'ombre d'un haut bâtiment",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -232,6 +257,7 @@
   {
    "reference": "50350104132",
    "titre": "Neuf figures attroupées autour d'un corps",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -240,6 +266,7 @@
   {
    "reference": "50350102561",
    "titre": "Concert de satyres",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -248,6 +275,7 @@
   {
    "reference": "50350104267",
    "titre": "Soumission d'un vaincu",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -256,6 +284,7 @@
   {
    "reference": "06070000245",
    "titre": "Intérieur d'un corps de garde romain",
+   "musee_code": "M0607",
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "maniere_de",
@@ -264,6 +293,7 @@
   {
    "reference": "50350006887",
    "titre": "Tête d'homme, inclinée vers la droite, vue de face",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -272,6 +302,7 @@
   {
    "reference": "50350006885",
    "titre": "Homme nu assis, de dos, penché légèrement en avant",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -280,6 +311,7 @@
   {
    "reference": "50350006882",
    "titre": "Homme nu, assis, de dos, la main gauche derrière lui",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -288,6 +320,7 @@
   {
    "reference": "50350031884",
    "titre": "Jeune femme pendue à un arbre, devant une toile vierge, et une palette",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -296,6 +329,7 @@
   {
    "reference": "01500000132",
    "titre": "Paysage : rochers et torrent",
+   "musee_code": "M0150",
    "musee": "musée d'Art et d'Histoire Romain Rolland",
    "ville": "Clamecy",
    "code": "ecole_de",
@@ -304,6 +338,7 @@
   {
    "reference": "00980001731",
    "titre": "Un abordage",
+   "musee_code": "M0098",
    "musee": "musée des Beaux-Arts",
    "ville": "Pau",
    "code": "attribue",
@@ -312,6 +347,7 @@
   {
    "reference": "06190001372",
    "titre": "Le Christ à la colonne",
+   "musee_code": "M0619",
    "musee": "musée de la Chartreuse",
    "ville": "Douai",
    "code": "ecole_de",
@@ -320,6 +356,7 @@
   {
    "reference": "06190001371",
    "titre": "Le Martyre de saint Sébastien",
+   "musee_code": "M0619",
    "musee": "musée de la Chartreuse",
    "ville": "Douai",
    "code": "ecole_de",
@@ -328,6 +365,7 @@
   {
    "reference": "M0332012963",
    "titre": "Un arbre (recto) ; Deux visages (verso)",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -336,6 +374,7 @@
   {
    "reference": "M0332003871",
    "titre": "Etude d'arbres",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -344,6 +383,7 @@
   {
    "reference": "M0332003875",
    "titre": "Etude d'arbres",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -352,6 +392,7 @@
   {
    "reference": "M0332003877",
    "titre": "Etude d'un tronc d'arbre",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -360,6 +401,7 @@
   {
    "reference": "M0332003869",
    "titre": "Paysage",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -368,6 +410,7 @@
   {
    "reference": "03290005065",
    "titre": "Paysage",
+   "musee_code": "M0329",
    "musee": "musée d’ethnographie corse",
    "ville": "Bastia",
    "code": "suiveur_de",
@@ -376,6 +419,7 @@
   {
    "reference": "03290006927",
    "titre": "Choc de cavalerie ; Bataille ; Scène représentant des cavaliers (ancien titre)",
+   "musee_code": "M0329",
    "musee": "musée d’ethnographie corse",
    "ville": "Bastia",
    "code": "suiveur_de",
@@ -384,6 +428,7 @@
   {
    "reference": "M0332003873",
    "titre": "Etude d'un tronc d'arbre creux",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -392,6 +437,7 @@
   {
    "reference": "08940004449",
    "titre": "Minerve conseille à Cadmus d'arracher les dents du dragon (titre d'usage)",
+   "musee_code": "M0894",
    "musee": "musée Granet",
    "ville": "Aix-en-Provence",
    "code": "entourage_de",
@@ -411,6 +457,7 @@
   {
    "reference": "08940004368",
    "titre": "Paysage d'Italie au soleil couchant avec des pêcheurs ; Paysage d'Italie au soleil couchant : pêcheurs dans un ruisseau sous de grands arbres (titre factice)",
+   "musee_code": "M0894",
    "musee": "musée Granet",
    "ville": "Aix-en-Provence",
    "code": "suiveur_de",
@@ -430,6 +477,7 @@
   {
    "reference": "08940004668",
    "titre": "Paysage montagneux (esquisse)",
+   "musee_code": "M0894",
    "musee": "musée Granet",
    "ville": "Aix-en-Provence",
    "code": "maniere_de",
@@ -449,6 +497,7 @@
   {
    "reference": "08940005214",
    "titre": "Allégorie du rire ; Homme tenant une tête tranchée",
+   "musee_code": "M0894",
    "musee": "musée Granet",
    "ville": "Aix-en-Provence",
    "code": "attribue",
@@ -468,6 +517,7 @@
   {
    "reference": "M0536000553",
    "titre": "Paysage",
+   "musee_code": "M0536",
    "musee": "musée départemental d'art ancien et contemporain",
    "ville": "Epinal",
    "code": "maniere_de",
@@ -475,7 +525,7 @@
   }
  ],
  "version_donnee": "2026-07-01",
- "date_generation": "2026-08-02T14:35:33+00:00",
+ "date_generation": "2026-08-02T15:04:31+00:00",
  "source": "Collections des musées de France : base Joconde",
  "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
 }

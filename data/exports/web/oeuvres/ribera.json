@@ -28,6 +28,7 @@
   {
    "reference": "000PE026599",
    "titre": "SAINT JEROME ECRIVANT",
+   "musee_code": "M0798",
    "musee": "MUDO - musée de l'Oise",
    "ville": "Beauvais",
    "code": "ecole_de",
@@ -36,6 +37,7 @@
   {
    "reference": "00980000808",
    "titre": "Saint Jérôme",
+   "musee_code": "M0098",
    "musee": "musée des Beaux-Arts",
    "ville": "Pau",
    "code": "atelier_de",
@@ -55,6 +57,7 @@
   {
    "reference": "06070000233",
    "titre": "Saint Jérôme lisant",
+   "musee_code": "M0607",
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
@@ -63,6 +66,7 @@
   {
    "reference": "50350103953",
    "titre": "Saint Jérôme écrivant",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -71,6 +75,7 @@
   {
    "reference": "50350205910",
    "titre": "Homme drapé assis (un saint ?)",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "genre_de",
@@ -79,6 +84,7 @@
   {
    "reference": "50350205921",
    "titre": "Saint Jérôme lisant",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "genre_de",
@@ -87,6 +93,7 @@
   {
    "reference": "08120003377",
    "titre": "Saint Jean-Baptiste enfant avec l'Agneau",
+   "musee_code": "M0812",
    "musee": "musée de Picardie",
    "ville": "Amiens",
    "code": "atelier_de",
@@ -106,6 +113,7 @@
   {
    "reference": "08120003379",
    "titre": "Saint François de Paule",
+   "musee_code": "M0812",
    "musee": "musée de Picardie",
    "ville": "Amiens",
    "code": "attribue",
@@ -114,6 +122,7 @@
   {
    "reference": "05940000300",
    "titre": "Jésus parmi les docteurs",
+   "musee_code": "M0594",
    "musee": "musée Goya",
    "ville": "Castres",
    "code": "ecole_de",
@@ -122,6 +131,7 @@
   {
    "reference": "05940000296",
    "titre": "Martyre de Saint André",
+   "musee_code": "M0594",
    "musee": "musée Goya",
    "ville": "Castres",
    "code": "attribue",
@@ -141,6 +151,7 @@
   {
    "reference": "06770002729",
    "titre": "L'Astronome",
+   "musee_code": "M0677",
    "musee": "musée Thomas-Henry",
    "ville": "Cherbourg-en-Cotentin",
    "code": "entourage_de",
@@ -149,6 +160,7 @@
   {
    "reference": "06770002726",
    "titre": "Le Philosophe",
+   "musee_code": "M0677",
    "musee": "musée Thomas-Henry",
    "ville": "Cherbourg-en-Cotentin",
    "code": "entourage_de",
@@ -157,6 +169,7 @@
   {
    "reference": "M0332001175",
    "titre": "Philosophe ou Architecte ; Héraclite (?)",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -176,6 +189,7 @@
   {
    "reference": "06190001406",
    "titre": "La Mort de Caton d'Utique",
+   "musee_code": "M0619",
    "musee": "musée de la Chartreuse",
    "ville": "Douai",
    "code": "ecole_de",
@@ -184,6 +198,7 @@
   {
    "reference": "06190001405",
    "titre": "Sainte femme en prière devant le Christ mort",
+   "musee_code": "M0619",
    "musee": "musée de la Chartreuse",
    "ville": "Douai",
    "code": "ecole_de",
@@ -192,6 +207,7 @@
   {
    "reference": "M0811000214",
    "titre": "Saint François et l'enfant Jésus",
+   "musee_code": "M0811",
    "musee": "musée Boucher de Perthes",
    "ville": "Abbeville",
    "code": "atelier_de",
@@ -200,6 +216,7 @@
   {
    "reference": "01840000081",
    "titre": "Une fileuse",
+   "musee_code": "M0184",
    "musee": "musée d'art et d'histoire Saint-Germain",
    "ville": "Auxerre",
    "code": "attribue",
@@ -219,6 +236,7 @@
   {
    "reference": "07700010824",
    "titre": "Saint Jean l'Evangéliste ; Saint Jean écrivant l'Apocalypse",
+   "musee_code": "M0770",
    "musee": "musée de Tessé",
    "ville": "Le Mans",
    "code": "entourage_de",
@@ -227,6 +245,7 @@
   {
    "reference": "04450000800",
    "titre": "Mendiant recroquevillé",
+   "musee_code": "M0445",
    "musee": "Palais-musée des Archevêques de Narbonne",
    "ville": "Narbonne",
    "code": "attribue",
@@ -235,6 +254,7 @@
   {
    "reference": "M0381002079",
    "titre": "Portrait d'homme",
+   "musee_code": "M0381",
    "musee": "château musée de Nemours",
    "ville": "Nemours",
    "code": "attribue",
@@ -243,6 +263,7 @@
   {
    "reference": "M0536000515",
    "titre": "Saint Jérôme et l’ange sonnant la trompette du Jugement dernier",
+   "musee_code": "M0536",
    "musee": "musée départemental d'art ancien et contemporain",
    "ville": "Epinal",
    "code": "entourage_de",
@@ -250,7 +271,7 @@
   }
  ],
  "version_donnee": "2026-07-01",
- "date_generation": "2026-08-02T14:35:33+00:00",
+ "date_generation": "2026-08-02T15:04:31+00:00",
  "source": "Collections des musées de France : base Joconde",
  "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
 }

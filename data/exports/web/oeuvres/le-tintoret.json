@@ -28,6 +28,7 @@
   {
    "reference": "000PE014515",
    "titre": "SAINT BERNARD RESSUSCITANT UN MORT",
+   "musee_code": "M0913",
    "musee": "musée des beaux-arts",
    "ville": "Marseille",
    "code": "attribue",
@@ -36,6 +37,7 @@
   {
    "reference": "000PE027107",
    "titre": "JESUS QUERISSANT LES BOITEUX",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -55,6 +57,7 @@
   {
    "reference": "000PE027106",
    "titre": "PORTRAIT D'HOMME",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -74,6 +77,7 @@
   {
    "reference": "000PE027105",
    "titre": "PORTRAIT DE SENATEUR VENITIEN AGE DE 57 ANS",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -82,6 +86,7 @@
   {
    "reference": "000PE027108",
    "titre": "PORTRAIT D'HOMME",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -90,6 +95,7 @@
   {
    "reference": "00000106281",
    "titre": "La Vierge entourée de Saints et d'Orants",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -98,6 +104,7 @@
   {
    "reference": "00000107133",
    "titre": "Scène d'allégence d'un chef d'armée envers un personnage en armes",
+   "musee_code": "M5052",
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "attribue",
@@ -106,6 +113,7 @@
   {
    "reference": "50350007740",
    "titre": "Le Christ en croix entre les deux larrons",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -114,6 +122,7 @@
   {
    "reference": "50350105681",
    "titre": "Un apôtre guérissant des malades",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
@@ -122,6 +131,7 @@
   {
    "reference": "50350007716",
    "titre": "La Descente de Croix",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -130,6 +140,7 @@
   {
    "reference": "50350508309",
    "titre": "Dieu le Père",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -138,6 +149,7 @@
   {
    "reference": "50350501488",
    "titre": "Traits",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -146,6 +158,7 @@
   {
    "reference": "50350007737",
    "titre": "Repos de la Sainte Famille et de deux figures pendant la fuite en Egypte",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -154,6 +167,7 @@
   {
    "reference": "50350007704",
    "titre": "Massacre des Innocents",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -162,6 +176,7 @@
   {
    "reference": "50350007735",
    "titre": "Un homme de dos, tirant des deux mains une corde",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -170,6 +185,7 @@
   {
    "reference": "50350007707",
    "titre": "Sainte Famille, profil de femme et Adoration de la Vierge",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -178,6 +194,7 @@
   {
    "reference": "50350007706",
    "titre": "L'Adoration des bergers",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -186,6 +203,7 @@
   {
    "reference": "50350007712",
    "titre": "La Cène",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -194,6 +212,7 @@
   {
    "reference": "50350007741",
    "titre": "Saint Jean l'Evangéliste debout, tenant un calice et un livre",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -202,6 +221,7 @@
   {
    "reference": "50350007715",
    "titre": "Le Christ descendu de la Croix et la Vierge évanouie",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -210,6 +230,7 @@
   {
    "reference": "50350007724",
    "titre": "Un archevêque de Venise présente des reliques à des possédés",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -218,6 +239,7 @@
   {
    "reference": "50350007719",
    "titre": "Le martyre de saint Laurent",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -226,6 +248,7 @@
   {
    "reference": "50350007705",
    "titre": "L'Adoration des bergers",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -234,6 +257,7 @@
   {
    "reference": "50350007714",
    "titre": "La Vierge évanouie au pied de la Croix entourée de saints et deux cavaliers",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -242,6 +266,7 @@
   {
    "reference": "50350007728",
    "titre": "Figures volantes",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -250,6 +275,7 @@
   {
    "reference": "50350007739",
    "titre": "Un ange portant une croix apparait au Christ priant au Jardin des oliviers",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -258,6 +284,7 @@
   {
    "reference": "50350007745",
    "titre": "Etude d'un homme nu, un genoux à terre",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -266,6 +293,7 @@
   {
    "reference": "50350007718",
    "titre": "Le Couronnement de la Vierge par la Trinité",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -274,6 +302,7 @@
   {
    "reference": "50350007727",
    "titre": "Marche d'une troupe sortant d'un fort",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -282,6 +311,7 @@
   {
    "reference": "50350007746",
    "titre": "Un satyre à demi-allongé et une tête de chèvre",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -290,6 +320,7 @@
   {
    "reference": "50350007710",
    "titre": "Le Repas chez Simon le Pharisien",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -298,6 +329,7 @@
   {
    "reference": "50350007721",
    "titre": "Saint Roch pansant les pestiférés",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -306,6 +338,7 @@
   {
    "reference": "M0332002581",
    "titre": "Visage d'après Michel-Ange",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -314,6 +347,7 @@
   {
    "reference": "06570009240",
    "titre": "La Vierge et l'Enfant entourés d'anges ; Triomphe de la Vierge",
+   "musee_code": "M0657",
    "musee": "musée des beaux-arts",
    "ville": "Caen",
    "code": "attribue",
@@ -322,6 +356,7 @@
   {
    "reference": "06190001407",
    "titre": "Portrait d'un seigneur vénitien",
+   "musee_code": "M0619",
    "musee": "musée de la Chartreuse",
    "ville": "Douai",
    "code": "attribue",
@@ -330,6 +365,7 @@
   {
    "reference": "01370014810",
    "titre": "La Résurrection de Lazare",
+   "musee_code": "M0137",
    "musee": "musée des beaux-arts",
    "ville": "Dijon",
    "code": "entourage_de",
@@ -338,6 +374,7 @@
   {
    "reference": "01160004688",
    "titre": "L'Annonciation",
+   "musee_code": "M0116",
    "musee": "musée Crozatier",
    "ville": "Le Puy-en-Velay",
    "code": "attribue",
@@ -346,6 +383,7 @@
   {
    "reference": "M0332006950",
    "titre": "Portrait d'un sénateur vénitien avec sa femme, sa fille et son fils",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "atelier_de",
@@ -364,7 +402,7 @@
   }
  ],
  "version_donnee": "2026-07-01",
- "date_generation": "2026-08-02T14:35:33+00:00",
+ "date_generation": "2026-08-02T15:04:31+00:00",
  "source": "Collections des musées de France : base Joconde",
  "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
 }

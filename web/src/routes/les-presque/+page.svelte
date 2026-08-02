@@ -25,6 +25,18 @@
 	// la page est un espace d'exploration DÈS l'arrivée.
 	let selection = $state(artistes[0].nom);
 	const maitre = $derived(artistes.find((a) => a.nom === selection));
+
+	// Musée filtré dans l'onglet « Œuvres » (code Muséofile, ou null). Il vit ICI,
+	// pas dans l'onglet : les onglets sont démontés quand on en change, et la carte
+	// du profil doit pouvoir le poser avant d'ouvrir « Œuvres » (phase 3). Un seul
+	// système de filtrage, un seul endroit où l'état est tenu.
+	let museeActif = $state(null);
+	// Changer d'artiste vide le filtre : un code de musée ne vaut que pour l'artiste
+	// où il a été choisi.
+	$effect(() => {
+		selection;
+		museeActif = null;
+	});
 </script>
 
 <!-- Disposition refondue (2026-07-28) : une SEULE grille continue à deux colonnes,
@@ -87,7 +99,7 @@
 					{#if vue === 'profil'}
 						<NuageFamilles {maitre} />
 					{:else if vue === 'oeuvres'}
-						<OeuvresMaitre {maitre} />
+						<OeuvresMaitre {maitre} bind:museeActif />
 					{:else}
 						<CarteMaitre {maitre} />
 					{/if}

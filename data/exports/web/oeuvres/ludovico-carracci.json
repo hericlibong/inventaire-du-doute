@@ -24,6 +24,7 @@
   {
    "reference": "000PE014196",
    "titre": "L'ASSOMPTION DE LA VIERGE",
+   "musee_code": "M0913",
    "musee": "musée des beaux-arts",
    "ville": "Marseille",
    "code": "attribue",
@@ -32,6 +33,7 @@
   {
    "reference": "000PE019544",
    "titre": "LA DEPLORATION DU CHRIST",
+   "musee_code": "M0629",
    "musee": "musée des Beaux-Arts",
    "ville": "Lille",
    "code": "ecole_de",
@@ -51,6 +53,7 @@
   {
    "reference": "50350004721",
    "titre": "L'élévation de la Croix",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -59,6 +62,7 @@
   {
    "reference": "50350004715",
    "titre": "Le Couronnement d'épines",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -67,6 +71,7 @@
   {
    "reference": "50350004687",
    "titre": "Le Mariage de la Vierge",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -75,6 +80,7 @@
   {
    "reference": "50350004695",
    "titre": "La présentation au temple",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -83,6 +89,7 @@
   {
    "reference": "50350004742",
    "titre": "Saint Charles Borromée en prière",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -91,6 +98,7 @@
   {
    "reference": "50350004739",
    "titre": "La Vierge debout, les mains jointes, dans l'attitude de la douleur",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -99,6 +107,7 @@
   {
    "reference": "50350104258",
    "titre": "Saint Roch",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -107,6 +116,7 @@
   {
    "reference": "50350004734",
    "titre": "L'Assomption de la Sainte Vierge",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -115,6 +125,7 @@
   {
    "reference": "50350004711",
    "titre": "L'Arrestation du Christ",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -123,6 +134,7 @@
   {
    "reference": "50350004696",
    "titre": "La Fuite en Egypte",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -131,6 +143,7 @@
   {
    "reference": "50350004686",
    "titre": "La Présentation de la Vierge au Temple",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -139,6 +152,7 @@
   {
    "reference": "50350004693",
    "titre": "L'adoration des bergers",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -147,6 +161,7 @@
   {
    "reference": "50350004691",
    "titre": "La Visitation",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -155,6 +170,7 @@
   {
    "reference": "50350004690",
    "titre": "L'Annonciation",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -163,6 +179,7 @@
   {
    "reference": "50350004735",
    "titre": "Le Couronnement de la Vierge",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -171,6 +188,7 @@
   {
    "reference": "50350004685",
    "titre": "La Présentation de la Vierge au Temple",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -179,6 +197,7 @@
   {
    "reference": "50350004737",
    "titre": "Apparition du Christ à sainte Thérèse",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -187,6 +206,7 @@
   {
    "reference": "50350004689",
    "titre": "L'Annonciation",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -195,6 +215,7 @@
   {
    "reference": "50350004683",
    "titre": "Une sibylle et un prophète assis, tournés vers un enfant",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -203,6 +224,7 @@
   {
    "reference": "50350004747",
    "titre": "Saint Jean endormi",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -211,6 +233,7 @@
   {
    "reference": "50350004713",
    "titre": "La flagellation du Christ",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -219,6 +242,7 @@
   {
    "reference": "50350004727",
    "titre": "L'Ascension du Christ",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -227,6 +251,7 @@
   {
    "reference": "50350004681",
    "titre": "Paysage avec un homme allongé vu de dos",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -235,6 +260,7 @@
   {
    "reference": "50350004700",
    "titre": "La Vierge apprenant à lire à l'Enfant, avec saint Joseph",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -243,6 +269,7 @@
   {
    "reference": "50350004712",
    "titre": "La Flagellation",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -251,6 +278,7 @@
   {
    "reference": "50350004694",
    "titre": "Le Christ montré au peuple ?",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -259,6 +287,7 @@
   {
    "reference": "50350004702",
    "titre": "La Vierge à l'Enfant adorés par saint Joseph et saint François d'Assise",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -267,6 +296,7 @@
   {
    "reference": "50350004729",
    "titre": "La Mort de la Vierge",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -275,6 +305,7 @@
   {
    "reference": "50350004716",
    "titre": "L'adieu du Christ à la Vierge",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -283,6 +314,7 @@
   {
    "reference": "50350004705",
    "titre": "Le Christ parmi les docteurs",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -291,6 +323,7 @@
   {
    "reference": "50350004697",
    "titre": "La Vierge à l'Enfant",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -299,6 +332,7 @@
   {
    "reference": "50350004748",
    "titre": "Homme tenant un cheval par la bride",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -307,6 +341,7 @@
   {
    "reference": "50350004719",
    "titre": "Le portement de Croix",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -315,6 +350,7 @@
   {
    "reference": "50350004703",
    "titre": "La sainte Famille avec saint François et deux donateurs",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -323,6 +359,7 @@
   {
    "reference": "50350004746",
    "titre": "Trois figures en conversation",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -331,6 +368,7 @@
   {
    "reference": "50350004698",
    "titre": "Femme assise à terre, tenant un enfant entre ses genoux : Vierge à l'Enfant?",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -339,6 +377,7 @@
   {
    "reference": "50350004708",
    "titre": "Le Christ au Jardin des oliviers",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -347,6 +386,7 @@
   {
    "reference": "50350004738",
    "titre": "Saint Jean debout, les bras croisés sur la poitrine",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -355,6 +395,7 @@
   {
    "reference": "50350004714",
    "titre": "La flagellation du Christ",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -363,6 +404,7 @@
   {
    "reference": "50350004692",
    "titre": "La Visitation",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -371,6 +413,7 @@
   {
    "reference": "50350004718",
    "titre": "Le portement de Croix",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -379,6 +422,7 @@
   {
    "reference": "50350004722",
    "titre": "La Résurrection",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -387,6 +431,7 @@
   {
    "reference": "50350004736",
    "titre": "Le Couronnement de la Vierge",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -395,6 +440,7 @@
   {
    "reference": "50350004688",
    "titre": "Le Mariage de la Vierge",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -403,6 +449,7 @@
   {
    "reference": "50350004699",
    "titre": "Vierge à l'Enfant",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -411,6 +458,7 @@
   {
    "reference": "50350004726",
    "titre": "Incrédulité de saint Thomas",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -419,6 +467,7 @@
   {
    "reference": "50350004682",
    "titre": "Suzanne au bain surprise par les deux vieillards",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -427,6 +476,7 @@
   {
    "reference": "50350004724",
    "titre": "Le Christ aux Limbes",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -435,6 +485,7 @@
   {
    "reference": "50350004728",
    "titre": "L'Ascension du Christ",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -443,6 +494,7 @@
   {
    "reference": "50350004684",
    "titre": "La Naissance de la Vierge",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -451,6 +503,7 @@
   {
    "reference": "50350004731",
    "titre": "Les Funérailles de la Vierge",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -459,6 +512,7 @@
   {
    "reference": "50350004740",
    "titre": "Vierge entourée de deux saintes présentant le Saint Suaire à un religieux",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -467,6 +521,7 @@
   {
    "reference": "50350004706",
    "titre": "La Cène",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -475,6 +530,7 @@
   {
    "reference": "50350004750",
    "titre": "Homme assis, appuyé sur le bras droit, de trois quarts vers la droite",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -483,6 +539,7 @@
   {
    "reference": "50350004730",
    "titre": "La Mort de la Vierge",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -491,6 +548,7 @@
   {
    "reference": "50350004743",
    "titre": "Saint Charles Borromée guérissant des malades",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -499,6 +557,7 @@
   {
    "reference": "50350004710",
    "titre": "L'Arrestation du Christ",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -507,6 +566,7 @@
   {
    "reference": "50350004701",
    "titre": "Saint Charles Borromée adorant l'Enfant Jésus",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -515,6 +575,7 @@
   {
    "reference": "50350004717",
    "titre": "L'adieu du Christ à la Vierge",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -523,6 +584,7 @@
   {
    "reference": "50350004733",
    "titre": "L'Assomption de la Vierge",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -531,6 +593,7 @@
   {
    "reference": "50350004732",
    "titre": "Les Funérailles de la Vierge",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -539,6 +602,7 @@
   {
    "reference": "50350004741",
    "titre": "Saint Joseph confiant l'Enfant Jésus à saint François d'Assise",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -547,6 +611,7 @@
   {
    "reference": "50350004707",
    "titre": "La Cène",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -555,6 +620,7 @@
   {
    "reference": "50350004725",
    "titre": "Le Christ aux Limbes",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -563,6 +629,7 @@
   {
    "reference": "50350004720",
    "titre": "L'élévation de la Croix",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -571,6 +638,7 @@
   {
    "reference": "50350004723",
    "titre": "La Résurrection",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -579,6 +647,7 @@
   {
    "reference": "50350004709",
    "titre": "Le Christ au Jardin des oliviers",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -587,6 +656,7 @@
   {
    "reference": "50350004749",
    "titre": "Homme à demi nu, assis, de dos, la main gauche derrière lui",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -595,6 +665,7 @@
   {
    "reference": "50350004704",
    "titre": "La Vierge et l'enfant en gloire adorés par saint Dominique (...)",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -603,6 +674,7 @@
   {
    "reference": "50350500954",
    "titre": "Petits bustes de figures",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -611,6 +683,7 @@
   {
    "reference": "01720000929",
    "titre": "Vierge à l'enfant debout",
+   "musee_code": "M0172",
    "musee": "musée des ursulines",
    "ville": "Mâcon",
    "code": "attribue",
@@ -619,6 +692,7 @@
   {
    "reference": "50520000014",
    "titre": "Présentation de la Vierge au temple ; croquis au verso",
+   "musee_code": "M5052",
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "point_interrogation",
@@ -627,6 +701,7 @@
   {
    "reference": "50350004745",
    "titre": "Projet de décor d'arc avec les anges portant les instruments de la Passion",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -635,6 +710,7 @@
   {
    "reference": "M0289002508",
    "titre": "Personnages (titre factice)",
+   "musee_code": "M0289",
    "musee": "musée municipal",
    "ville": "Pithiviers",
    "code": "attribue",
@@ -643,6 +719,7 @@
   {
    "reference": "M0289002509",
    "titre": "Etudes de femmes drapées (titre factice)",
+   "musee_code": "M0289",
    "musee": "musée municipal",
    "ville": "Pithiviers",
    "code": "attribue",
@@ -651,6 +728,7 @@
   {
    "reference": "M0289002510",
    "titre": "Un triomphateur sur un char fait décapiter des captifs. Un évêque agenouillé est prêt à être décapité (titre factice)",
+   "musee_code": "M0289",
    "musee": "musée municipal",
    "ville": "Pithiviers",
    "code": "attribue",
@@ -659,6 +737,7 @@
   {
    "reference": "M0289002503",
    "titre": "Enlèvement des Sabines (titre factice)",
+   "musee_code": "M0289",
    "musee": "musée municipal",
    "ville": "Pithiviers",
    "code": "attribue",
@@ -667,6 +746,7 @@
   {
    "reference": "M0332002306",
    "titre": "La Vierge et l'Enfant avec saint Jean-Baptiste",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -675,6 +755,7 @@
   {
    "reference": "M0332002754",
    "titre": "Homme coiffé d'un grand chapeau, assis et accoudé à une table",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -683,6 +764,7 @@
   {
    "reference": "02860008133",
    "titre": "Vénus et l'Amour endormi",
+   "musee_code": "M0286",
    "musee": "musée des beaux-arts",
    "ville": "Orléans",
    "code": "point_interrogation",
@@ -691,6 +773,7 @@
   {
    "reference": "07980002321",
    "titre": "L'apparition de la Vierge et de l'Enfant Jésus à saint Hyacinthe (Titre original)",
+   "musee_code": "M0798",
    "musee": "MUDO - musée de l'Oise",
    "ville": "Beauvais",
    "code": "entourage_de",
@@ -698,7 +781,7 @@
   }
  ],
  "version_donnee": "2026-07-01",
- "date_generation": "2026-08-02T14:35:33+00:00",
+ "date_generation": "2026-08-02T15:04:31+00:00",
  "source": "Collections des musées de France : base Joconde",
  "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
 }

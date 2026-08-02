@@ -32,6 +32,7 @@
   {
    "reference": "000PE009666",
    "titre": "PAYSAGE",
+   "musee_code": "M0770",
    "musee": "musée de Tessé",
    "ville": "Le Mans",
    "code": "attribue",
@@ -40,6 +41,7 @@
   {
    "reference": "000PE020956",
    "titre": "Paysage avec figures. Voyageurs se mettant à l'abri d'un coup de vent",
+   "musee_code": "M0657",
    "musee": "musée des beaux-arts",
    "ville": "Caen",
    "code": "ecole_de",
@@ -48,6 +50,7 @@
   {
    "reference": "000PE031346",
    "titre": "ESQUISSE DE PAYSAGE",
+   "musee_code": "M0116",
    "musee": "musée Crozatier",
    "ville": "Le Puy-en-Velay",
    "code": "attribue",
@@ -56,6 +59,7 @@
   {
    "reference": "01370001620",
    "titre": "Paysage : Le Christ marchant sur les eaux",
+   "musee_code": "M0137",
    "musee": "musée des beaux-arts",
    "ville": "Dijon",
    "code": "maniere_de",
@@ -64,6 +68,7 @@
   {
    "reference": "01370001624",
    "titre": "Paysage : Pêcheurs et blanchisseuses dans la campagne romaine",
+   "musee_code": "M0137",
    "musee": "musée des beaux-arts",
    "ville": "Dijon",
    "code": "maniere_de",
@@ -72,6 +77,7 @@
   {
    "reference": "01370001626",
    "titre": "Paysage : Chasseurs et cavaliers",
+   "musee_code": "M0137",
    "musee": "musée des beaux-arts",
    "ville": "Dijon",
    "code": "maniere_de",
@@ -80,6 +86,7 @@
   {
    "reference": "01370005322",
    "titre": "Paysage avec Diane découvrant la mort d'Ancaeus (Doute sur l'iconographie : Mort d'Ancaeus, d'Adonis, ou chasse du sanglier de Calydon)",
+   "musee_code": "M0137",
    "musee": "musée des beaux-arts",
    "ville": "Dijon",
    "code": "attribue",
@@ -88,6 +95,7 @@
   {
    "reference": "06070000098",
    "titre": "Paysage au soleil couchant",
+   "musee_code": "M0607",
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
@@ -96,6 +104,7 @@
   {
    "reference": "06070000361",
    "titre": "Paysage avec un porteur d'eau",
+   "musee_code": "M0607",
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "maniere_de",
@@ -104,6 +113,7 @@
   {
    "reference": "50350100245",
    "titre": "Paysage avec deux personnages regardant un village",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -112,6 +122,7 @@
   {
    "reference": "50350100247",
    "titre": "Paysage avec figures au bord d'une rivière",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -120,6 +131,7 @@
   {
    "reference": "50350100246",
    "titre": "Paysage avec dans le fond une église entourée de maisons",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -128,6 +140,7 @@
   {
    "reference": "50350100242",
    "titre": "Une maison",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -136,6 +149,7 @@
   {
    "reference": "50350100251",
    "titre": "Paysage avec un homme guidant un âne sur lequel une femme est assise",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -144,6 +158,7 @@
   {
    "reference": "50350100243",
    "titre": "Trois maisons groupées",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -152,6 +167,7 @@
   {
    "reference": "50350100250",
    "titre": "Paysage avec Hazael, roi de Syrie, sacré par Elie",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -160,6 +176,7 @@
   {
    "reference": "50350013037",
    "titre": "Paysage montagneux",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -168,6 +185,7 @@
   {
    "reference": "50350100249",
    "titre": "Paysage avec au centre deux ruines et un grand arbre",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -176,6 +194,7 @@
   {
    "reference": "50350100244",
    "titre": "Paysage avec un tombeau au centre",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -184,6 +203,7 @@
   {
    "reference": "50350100252",
    "titre": "Trois hommes se rencontrant dans un paysage, près de monuments antiques",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -192,6 +212,7 @@
   {
    "reference": "50350100248",
    "titre": "Paysage : au centre un homme à genoux mains jointes devant une figure",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -200,6 +221,7 @@
   {
    "reference": "07430005637",
    "titre": "Paysage animé",
+   "musee_code": "M0743",
    "musee": "musée des Beaux-Arts",
    "ville": "Nantes",
    "code": "genre_de",
@@ -208,6 +230,7 @@
   {
    "reference": "M0350002026",
    "titre": "Paysage avec pêcheurs",
+   "musee_code": "M0350",
    "musee": "Viséum-musée de la lunette (collections du musée de la lunette et du musée Jourdain)",
    "ville": "Hauts de Bienne",
    "code": "entourage_de",
@@ -216,6 +239,7 @@
   {
    "reference": "06070000099",
    "titre": "Paysage",
+   "musee_code": "M0607",
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "maniere_de",
@@ -224,6 +248,7 @@
   {
    "reference": "06070000100",
    "titre": "Vue d'un couvent dans un site montagneux et boisé",
+   "musee_code": "M0607",
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "maniere_de",
@@ -232,6 +257,7 @@
   {
    "reference": "M0332004793",
    "titre": "Etude d'arbres",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "point_interrogation",
@@ -240,6 +266,7 @@
   {
    "reference": "M0332003669",
    "titre": "Vue prise au bord du Tibre, au loin San Pietro in Montorio et l'Acqua Paola",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -248,6 +275,7 @@
   {
    "reference": "01840000027",
    "titre": "Paysage",
+   "musee_code": "M0184",
    "musee": "musée d'art et d'histoire Saint-Germain",
    "ville": "Auxerre",
    "code": "attribue",
@@ -256,6 +284,7 @@
   {
    "reference": "01840000028",
    "titre": "Paysage",
+   "musee_code": "M0184",
    "musee": "musée d'art et d'histoire Saint-Germain",
    "ville": "Auxerre",
    "code": "attribue",
@@ -264,6 +293,7 @@
   {
    "reference": "10310026673",
    "titre": "Paysage avec bergers",
+   "musee_code": "M1031",
    "musee": "musée des beaux-arts",
    "ville": "Lyon",
    "code": "genre_de",
@@ -272,6 +302,7 @@
   {
    "reference": "M0381001606",
    "titre": "Paysage italien",
+   "musee_code": "M0381",
    "musee": "château musée de Nemours",
    "ville": "Nemours",
    "code": "attribue",
@@ -280,6 +311,7 @@
   {
    "reference": "08940004481",
    "titre": "Paysage d'Italie avec un berger et diverses figures vêtues à l'antique",
+   "musee_code": "M0894",
    "musee": "musée Granet",
    "ville": "Aix-en-Provence",
    "code": "attribue",
@@ -298,7 +330,7 @@
   }
  ],
  "version_donnee": "2026-07-01",
- "date_generation": "2026-08-02T14:35:33+00:00",
+ "date_generation": "2026-08-02T15:04:31+00:00",
  "source": "Collections des musées de France : base Joconde",
  "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
 }

@@ -28,6 +28,7 @@
   {
    "reference": "000PE005364",
    "titre": "Anne-Marie-Louise d'Orléans, Duchesse de Montpensier, dite La Grande Mademoiselle (1627-1693)",
+   "musee_code": "M5077",
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "ecole_de",
@@ -47,6 +48,7 @@
   {
    "reference": "000PE005362",
    "titre": "Philippe de France, Duc d'Orléans, dit Monsieur (1640-1701)",
+   "musee_code": "M5077",
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "ecole_de",
@@ -55,6 +57,7 @@
   {
    "reference": "000PE005357",
    "titre": "Louis XIV couronné par la victoire",
+   "musee_code": "M5077",
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "attribue",
@@ -63,6 +66,7 @@
   {
    "reference": "000PE006526",
    "titre": "Philippe de France, duc d'Orléans, frère de Louis XIV dit Monsieur (1640-1701)",
+   "musee_code": "M5077",
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "atelier_de",
@@ -82,6 +86,7 @@
   {
    "reference": "000PE007045",
    "titre": "Henriette-Anne d'Angleterre, Duchesse d'Orleans, dite Madame (1644-1670)",
+   "musee_code": "M5077",
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "ecole_de",
@@ -101,6 +106,7 @@
   {
    "reference": "000PE007018",
    "titre": "Marie-Anne-Louise d'Orléans, Mademoiselle de Montpensier dite La Grande Mademoiselle (1627-1693)",
+   "musee_code": "M5077",
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "ecole_de",
@@ -120,6 +126,7 @@
   {
    "reference": "000PE007139",
    "titre": "Wilhelmine-Ernestine de Danemark, Duchesse de Bavière (1650-1706)",
+   "musee_code": "M5077",
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "ecole_de",
@@ -128,6 +135,7 @@
   {
    "reference": "000PE011341",
    "titre": "La dauphine Christine de Bavière (1660-1690)",
+   "musee_code": "M5077",
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "ecole_de",
@@ -147,6 +155,7 @@
   {
    "reference": "000PE012086",
    "titre": "Elisabeth-Charlotte d'Orléans (1676-1744), dite d'abord Mademoiselle de Chartres",
+   "musee_code": "M5077",
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "ecole_de",
@@ -155,6 +164,7 @@
   {
    "reference": "000PE013357",
    "titre": "Trophées aux armes de Louis XIV",
+   "musee_code": "M5077",
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "ecole_de",
@@ -163,6 +173,7 @@
   {
    "reference": "000PE013802",
    "titre": "Portrait de jeune femme",
+   "musee_code": "M0913",
    "musee": "musée des beaux-arts",
    "ville": "Marseille",
    "code": "attribue",
@@ -171,6 +182,7 @@
   {
    "reference": "000PE013805",
    "titre": "Portrait de Louis de Bourbon Comte de Vermandois",
+   "musee_code": "M0913",
    "musee": "musée des beaux-arts",
    "ville": "Marseille",
    "code": "attribue",
@@ -179,6 +191,7 @@
   {
    "reference": "000PE013803",
    "titre": "Portrait de Laurent de La Baume Leblanc, seigneur de La Vallière",
+   "musee_code": "M0913",
    "musee": "musée des beaux-arts",
    "ville": "Marseille",
    "code": "attribue",
@@ -187,6 +200,7 @@
   {
    "reference": "000PE013806",
    "titre": "Portrait de Mademoiselle de La Vallière en carmelite",
+   "musee_code": "M0913",
    "musee": "musée des beaux-arts",
    "ville": "Marseille",
    "code": "attribue",
@@ -195,6 +209,7 @@
   {
    "reference": "000PE014667",
    "titre": "Portrait de seigneur",
+   "musee_code": "M0913",
    "musee": "musée des beaux-arts",
    "ville": "Marseille",
    "code": "attribue",
@@ -203,6 +218,7 @@
   {
    "reference": "000PE014789",
    "titre": "Ninon de Lenclos",
+   "musee_code": "M0913",
    "musee": "musée des beaux-arts",
    "ville": "Marseille",
    "code": "attribue",
@@ -211,6 +227,7 @@
   {
    "reference": "000PE018034",
    "titre": "Pan et Syrinx",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -219,6 +236,7 @@
   {
    "reference": "00000055990",
    "titre": "Portrait d'homme",
+   "musee_code": "M0303",
    "musee": "musée des beaux-arts et d’archéologie",
    "ville": "Troyes",
    "code": "attribue",
@@ -227,6 +245,7 @@
   {
    "reference": "00000077245",
    "titre": "Dame inconnue",
+   "musee_code": "M5052",
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "attribue",
@@ -246,6 +265,7 @@
   {
    "reference": "00000093332",
    "titre": "Portrait de Louis XIV",
+   "musee_code": "M0286",
    "musee": "musée des beaux-arts",
    "ville": "Orléans",
    "code": "atelier_de",
@@ -254,6 +274,7 @@
   {
    "reference": "000PE011646",
    "titre": "Isabelle de Montmorency, Duchesse de Mecklembourg (1626-1695)",
+   "musee_code": "M5077",
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "point_interrogation",
@@ -273,6 +294,7 @@
   {
    "reference": "01370003033",
    "titre": "Portrait de jeune femme",
+   "musee_code": "M0137",
    "musee": "musée des beaux-arts",
    "ville": "Dijon",
    "code": "attribue",
@@ -281,6 +303,7 @@
   {
    "reference": "01370003048",
    "titre": "Portrait d'artiste",
+   "musee_code": "M0137",
    "musee": "musée des beaux-arts",
    "ville": "Dijon",
    "code": "attribue",
@@ -289,6 +312,7 @@
   {
    "reference": "06070000167",
    "titre": "Portrait de femme",
+   "musee_code": "M0607",
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "genre_de",
@@ -297,6 +321,7 @@
   {
    "reference": "06070000168",
    "titre": "Portrait d'homme",
+   "musee_code": "M0607",
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "genre_de",
@@ -305,6 +330,7 @@
   {
    "reference": "06070000166",
    "titre": "Portrait de Louis XIV",
+   "musee_code": "M0607",
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "atelier_de",
@@ -313,6 +339,7 @@
   {
    "reference": "50350209198",
    "titre": "Sainte Famille avec saint Jean Baptiste offrant des fruits à Jésus",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -321,6 +348,7 @@
   {
    "reference": "50350209197",
    "titre": "Jeune homme assis, jouant de la flûte",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -329,6 +357,7 @@
   {
    "reference": "50350209199",
    "titre": "Enfant nu",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -337,6 +366,7 @@
   {
    "reference": "50350209200",
    "titre": "Tête d'une femme couronnée",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -345,6 +375,7 @@
   {
    "reference": "50350209195",
    "titre": "Obsèques d'un moine",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -353,6 +384,7 @@
   {
    "reference": "50350209196",
    "titre": "Ange, et reprise du bras droit",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -361,6 +393,7 @@
   {
    "reference": "50350208866",
    "titre": "L'Hymen de Zéphyr et de Flore : le Printemps",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -369,6 +402,7 @@
   {
    "reference": "50350208864",
    "titre": "Le Triomphe de Bacchus et d'Ariane : l'Automne",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -377,6 +411,7 @@
   {
    "reference": "04000001398",
    "titre": "La famille du Grand Dauphin",
+   "musee_code": "M0400",
    "musee": "musée Lambinet",
    "ville": "Versailles",
    "code": "atelier_de",
@@ -385,6 +420,7 @@
   {
    "reference": "01720000928",
    "titre": "Madame de Montespan et ses enfants",
+   "musee_code": "M0172",
    "musee": "musée des ursulines",
    "ville": "Mâcon",
    "code": "attribue",
@@ -404,6 +440,7 @@
   {
    "reference": "M0271000077",
    "titre": "Hélène Ferrand, marquise de Saint Germain Beaupré",
+   "musee_code": "M0271",
    "musee": "château musées",
    "ville": "Blois",
    "code": "attribue",
@@ -412,6 +449,7 @@
   {
    "reference": "07290022367",
    "titre": "Tête de Christ",
+   "musee_code": "M0729",
    "musee": "musée des beaux-arts",
    "ville": "Rouen",
    "code": "ecole_de",
@@ -420,6 +458,7 @@
   {
    "reference": "M0003020239",
    "titre": "Godefroy de Bouillon soigné par l'ange (titre d'usage)",
+   "musee_code": "M0003",
    "musee": "musée du Pays de Hanau - histoire et vies d’un territoire",
    "ville": "Bouxwiller",
    "code": "attribue",
@@ -439,6 +478,7 @@
   {
    "reference": "M0012000004",
    "titre": "Portrait du roi Louis XIV",
+   "musee_code": "M0012",
    "musee": "musée du Château des Rohan",
    "ville": "Saverne",
    "code": "atelier_de",
@@ -447,6 +487,7 @@
   {
    "reference": "08870000079",
    "titre": "Portrait du Maréchal de Catinat de la Fauconnerie",
+   "musee_code": "M0887",
    "musee": "musée du palais Lascaris",
    "ville": "Nice",
    "code": "atelier_de",
@@ -455,6 +496,7 @@
   {
    "reference": "03110000174",
    "titre": "Louis XIV à cheval (titre attribué) ; Louis le Grand à l'âge de 37 ans (titre publié (Paris, 1845))",
+   "musee_code": "M0311",
    "musee": "musée des Beaux-Arts de Saint-Denis",
    "ville": "Reims",
    "code": "atelier_de",
@@ -474,6 +516,7 @@
   {
    "reference": "03110002336",
    "titre": "François d'Espinay, marquis de Saint-Luc ; François de La Rochefoucauld",
+   "musee_code": "M0311",
    "musee": "musée des Beaux-Arts de Saint-Denis",
    "ville": "Reims",
    "code": "attribue",
@@ -481,7 +524,7 @@
   }
  ],
  "version_donnee": "2026-07-01",
- "date_generation": "2026-08-02T14:35:33+00:00",
+ "date_generation": "2026-08-02T15:04:31+00:00",
  "source": "Collections des musées de France : base Joconde",
  "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
 }

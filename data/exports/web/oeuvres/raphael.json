@@ -24,6 +24,7 @@
   {
    "reference": "000PE009022",
    "titre": "SAINT JEAN L'EVANGELISTE A PATMOS",
+   "musee_code": "M5077",
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "attribue",
@@ -32,6 +33,7 @@
   {
    "reference": "000PE026982",
    "titre": "LE PERE ETERNEL",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -51,6 +53,7 @@
   {
    "reference": "000PE026973",
    "titre": "SAINT JEAN-BAPTISTE DANS LE DESERT DESIGNANT LA CROIX DE LA PASSION",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -70,6 +73,7 @@
   {
    "reference": "000PE026984",
    "titre": "LA VISION D'EZECHIEL",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -78,6 +82,7 @@
   {
    "reference": "00000060545",
    "titre": "LA VIERGE A L'ENFANT ET LE BAPTISTE",
+   "musee_code": "M0619",
    "musee": "musée de la Chartreuse",
    "ville": "Douai",
    "code": "ecole_de",
@@ -86,6 +91,7 @@
   {
    "reference": "00000060735",
    "titre": "LA VIERGE A LA CHAISE",
+   "musee_code": "M0619",
    "musee": "musée de la Chartreuse",
    "ville": "Douai",
    "code": "ecole_de",
@@ -94,6 +100,7 @@
   {
    "reference": "00000060707",
    "titre": "LE JOUG DE LA VOLUPTE",
+   "musee_code": "M0619",
    "musee": "musée de la Chartreuse",
    "ville": "Douai",
    "code": "ecole_de",
@@ -102,6 +109,7 @@
   {
    "reference": "00000060644",
    "titre": "L'OPULENCE",
+   "musee_code": "M0619",
    "musee": "musée de la Chartreuse",
    "ville": "Douai",
    "code": "ecole_de",
@@ -110,6 +118,7 @@
   {
    "reference": "00000077330",
    "titre": "FRAGMENT POUR UNE DES TAPISSERIES DU VATICAN",
+   "musee_code": "M5052",
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "attribue",
@@ -118,6 +127,7 @@
   {
    "reference": "00000077328",
    "titre": "FRAGMENT POUR UNE DES TAPISSERIES DU VATICAN",
+   "musee_code": "M5052",
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "attribue",
@@ -126,6 +136,7 @@
   {
    "reference": "00000077329",
    "titre": "FRAGMENT POUR UNE DES TAPISSERIES DU VATICAN",
+   "musee_code": "M5052",
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "attribue",
@@ -134,6 +145,7 @@
   {
    "reference": "00000107068",
    "titre": "Trois femmes drapées, vues à mi-corps : étude pour Les Heures jetant des fleurs dans le Banquet des dieux aux noces d'Amour et de Psyché",
+   "musee_code": "M5052",
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
@@ -142,6 +154,7 @@
   {
    "reference": "00000107078",
    "titre": "Avant bras et main gauche tendus vers la droite, devant les jambes d'une figure vêtue",
+   "musee_code": "M5052",
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
@@ -150,6 +163,7 @@
   {
    "reference": "50350228342",
    "titre": "Jeune homme à cheval, allant vers la droite",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -158,6 +172,7 @@
   {
    "reference": "50350200692",
    "titre": "Jeune homme à cheval, allant vers la droite",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -166,6 +181,7 @@
   {
    "reference": "50350101108",
    "titre": "Homme nu, inerte, de trois quarts vers la droite, les bras en arrière",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -174,6 +190,7 @@
   {
    "reference": "50350101542",
    "titre": "Jugement de Pâris",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -182,6 +199,7 @@
   {
    "reference": "50350101119",
    "titre": "Alexandre descendu dans la mer, installé dans une cloche de verre",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -190,6 +208,7 @@
   {
    "reference": "50350101312",
    "titre": "Le Buisson ardent",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -198,6 +217,7 @@
   {
    "reference": "50350500783",
    "titre": "Esquisse d'une Sainte Famille avec le petit saint Jean, et tête d'homme",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -206,6 +226,7 @@
   {
    "reference": "50130000415",
    "titre": "Portrait d'homme vêtu de noir",
+   "musee_code": "M5013",
    "musee": "musée national du château de Fontainebleau",
    "ville": "Fontainebleau",
    "code": "ecole_de",
@@ -214,6 +235,7 @@
   {
    "reference": "02110002502",
    "titre": "Jupiter",
+   "musee_code": "M0211",
    "musee": "musée des beaux-arts",
    "ville": "Rennes",
    "code": "ecole_de",
@@ -222,6 +244,7 @@
   {
    "reference": "02110002500",
    "titre": "Tête de vierge (recto) ; Feuille d'études (verso)",
+   "musee_code": "M0211",
    "musee": "musée des beaux-arts",
    "ville": "Rennes",
    "code": "ecole_de",
@@ -230,6 +253,7 @@
   {
    "reference": "02110002501",
    "titre": "Figure de saint",
+   "musee_code": "M0211",
    "musee": "musée des beaux-arts",
    "ville": "Rennes",
    "code": "ecole_de",
@@ -238,6 +262,7 @@
   {
    "reference": "02110002639",
    "titre": "Feuilles d'études",
+   "musee_code": "M0211",
    "musee": "musée des beaux-arts",
    "ville": "Rennes",
    "code": "ecole_de",
@@ -246,6 +271,7 @@
   {
    "reference": "02110002503",
    "titre": "Guerrier avec un lion à ses pieds",
+   "musee_code": "M0211",
    "musee": "musée des beaux-arts",
    "ville": "Rennes",
    "code": "ecole_de",
@@ -254,6 +280,7 @@
   {
    "reference": "M0332002913",
    "titre": "Copie d'après une statue antique de Junon (recto) ; plusieurs études d'une figure casquée et esquisse d'un homme debout (verso)",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "entourage_de",
@@ -261,7 +288,7 @@
   }
  ],
  "version_donnee": "2026-07-01",
- "date_generation": "2026-08-02T14:35:33+00:00",
+ "date_generation": "2026-08-02T15:04:31+00:00",
  "source": "Collections des musées de France : base Joconde",
  "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
 }

@@ -36,6 +36,7 @@
   {
    "reference": "000PE003328",
    "titre": "Portrait dit du comte de Montrose",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -55,6 +56,7 @@
   {
    "reference": "000PE008806",
    "titre": "TETE DE VIEILLARD",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "point_interrogation",
@@ -63,6 +65,7 @@
   {
    "reference": "000PE008917",
    "titre": "SAINT JEAN-BAPTISTE ENFANT DANS UN PAYSAGE",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -71,6 +74,7 @@
   {
    "reference": "000PE008895",
    "titre": "PORTRAIT EQUESTRE DE FERDINAND INFANT D'ESPAGNE",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -79,6 +83,7 @@
   {
    "reference": "000PE016621",
    "titre": "LA VIERGE A L'ENFANT AVEC ALEXANDRE SCAGLIA",
+   "musee_code": "M0629",
    "musee": "musée des Beaux-Arts",
    "ville": "Lille",
    "code": "atelier_de",
@@ -87,6 +92,7 @@
   {
    "reference": "000PE020324",
    "titre": "LA DISCORDE ALLUMANT LA GUERRE",
+   "musee_code": "M0065",
    "musee": "musée des beaux-arts",
    "ville": "Bordeaux",
    "code": "ecole_de",
@@ -95,6 +101,7 @@
   {
    "reference": "000PE021969",
    "titre": "PETIT PORTRAIT D'HOMME",
+   "musee_code": "M0065",
    "musee": "musée des beaux-arts",
    "ville": "Bordeaux",
    "code": "ecole_de",
@@ -103,6 +110,7 @@
   {
    "reference": "000PE030271",
    "titre": "PORTRAIT DU PEINTRE JAN WILDENS",
+   "musee_code": "M0116",
    "musee": "musée Crozatier",
    "ville": "Le Puy-en-Velay",
    "code": "attribue",
@@ -111,6 +119,7 @@
   {
    "reference": "00000062821",
    "titre": "TETE D'HOMME DU TEMPS DE HENRI III",
+   "musee_code": "M0207",
    "musee": "musée des beaux-arts",
    "ville": "Quimper",
    "code": "maniere_de",
@@ -119,6 +128,7 @@
   {
    "reference": "00000062908",
    "titre": "UNE MAIN",
+   "musee_code": "M0207",
    "musee": "musée des beaux-arts",
    "ville": "Quimper",
    "code": "ecole_de",
@@ -127,6 +137,7 @@
   {
    "reference": "00000062905",
    "titre": "BUSTE DE FEMME",
+   "musee_code": "M0207",
    "musee": "musée des beaux-arts",
    "ville": "Quimper",
    "code": "maniere_de",
@@ -135,6 +146,7 @@
   {
    "reference": "00000075736",
    "titre": "SAINT SEBASTIEN, MARTYRE",
+   "musee_code": "M0211",
    "musee": "musée des beaux-arts",
    "ville": "Rennes",
    "code": "ecole_de",
@@ -143,6 +155,7 @@
   {
    "reference": "00000075735",
    "titre": "SAINTE AGATHE, MARTYRE",
+   "musee_code": "M0211",
    "musee": "musée des beaux-arts",
    "ville": "Rennes",
    "code": "ecole_de",
@@ -151,6 +164,7 @@
   {
    "reference": "50350106904",
    "titre": "Arrestation du Christ",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -159,6 +173,7 @@
   {
    "reference": "50350107016",
    "titre": "Le Christ debout tenant sa Croix",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -167,6 +182,7 @@
   {
    "reference": "50350110086",
    "titre": "Etude de vêtement d'homme",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -175,6 +191,7 @@
   {
    "reference": "50350110479",
    "titre": "Etude pour un Enlèvement des filles de Leucippe (?)",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -183,6 +200,7 @@
   {
    "reference": "50350110102",
    "titre": "Mise au tombeau",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -191,6 +209,7 @@
   {
    "reference": "50350110106",
    "titre": "Jésus-Christ pleuré par les anges",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -199,6 +218,7 @@
   {
    "reference": "50350500244",
    "titre": "Homme marchant ; homme debout drapé",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -207,6 +227,7 @@
   {
    "reference": "50350110074",
    "titre": "Portrait de Cornelis Schut, peintre d'Anvers (1597-1655)",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -215,6 +236,7 @@
   {
    "reference": "50350110103",
    "titre": "Déploration du Christ par la Vierge et sainte Marie Madeleine",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -223,6 +245,7 @@
   {
    "reference": "50350110105",
    "titre": "Etude d'une Vierge à l'Enfant",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -231,6 +254,7 @@
   {
    "reference": "50350110075",
    "titre": "Portrait de Marguerite de Lorraine, duchesse d'Orléans",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -239,6 +263,7 @@
   {
    "reference": "50350110104",
    "titre": "Pietà",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -247,6 +272,7 @@
   {
    "reference": "07140001031",
    "titre": "Marie de Médicis, reine de France + 1642 (Titre manuscrit)",
+   "musee_code": "M0714",
    "musee": "musée Louis Philippe",
    "ville": "Eu",
    "code": "suiveur_de",
@@ -266,6 +292,7 @@
   {
    "reference": "05620001258",
    "titre": "Le miracle de la mule (Légende de saint Antoine de Padoue)",
+   "musee_code": "M0562",
    "musee": "musée des Augustins",
    "ville": "Toulouse",
    "code": "atelier_de",
@@ -285,6 +312,7 @@
   {
    "reference": "05620001257",
    "titre": "Le Christ aux anges",
+   "musee_code": "M0562",
    "musee": "musée des Augustins",
    "ville": "Toulouse",
    "code": "ecole_de",
@@ -293,6 +321,7 @@
   {
    "reference": "06070000105",
    "titre": "Portrait d'homme",
+   "musee_code": "M0607",
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "suiveur_de",
@@ -301,6 +330,7 @@
   {
    "reference": "50110001610",
    "titre": "La Vierge à l'Enfant",
+   "musee_code": "M5011",
    "musee": "musée national Magnin",
    "ville": "Dijon",
    "code": "genre_de",
@@ -309,6 +339,7 @@
   {
    "reference": "00190022486",
    "titre": "Portrait d'homme",
+   "musee_code": "M0019",
    "musee": "musée des Beaux-Arts",
    "ville": "Strasbourg",
    "code": "suiveur_de",
@@ -317,6 +348,7 @@
   {
    "reference": "00190022485",
    "titre": "Portrait de femme",
+   "musee_code": "M0019",
    "musee": "musée des Beaux-Arts",
    "ville": "Strasbourg",
    "code": "suiveur_de",
@@ -325,6 +357,7 @@
   {
    "reference": "00190022478",
    "titre": "Portrait de l'artiste ; Autoportrait en saint Jean (autre titre)",
+   "musee_code": "M0019",
    "musee": "musée des Beaux-Arts",
    "ville": "Strasbourg",
    "code": "maniere_de",
@@ -344,6 +377,7 @@
   {
    "reference": "06770000214",
    "titre": "Méléagre présentant à Atalante la hure du sanglier de Calydon",
+   "musee_code": "M0677",
    "musee": "musée Thomas-Henry",
    "ville": "Cherbourg-en-Cotentin",
    "code": "attribue",
@@ -352,6 +386,7 @@
   {
    "reference": "07290021505",
    "titre": "Portrait d'une dame âgée de 43 ans",
+   "musee_code": "M0729",
    "musee": "musée des beaux-arts",
    "ville": "Rouen",
    "code": "atelier_de",
@@ -360,6 +395,7 @@
   {
    "reference": "06190001780",
    "titre": "Réception de saint Placide et de saint Maur par saint Benoît",
+   "musee_code": "M0619",
    "musee": "musée de la Chartreuse",
    "ville": "Douai",
    "code": "ecole_de",
@@ -368,6 +404,7 @@
   {
    "reference": "06190006480",
    "titre": "Portrait d'homme",
+   "musee_code": "M0619",
    "musee": "musée de la Chartreuse",
    "ville": "Douai",
    "code": "ecole_de",
@@ -376,6 +413,7 @@
   {
    "reference": "10690003855",
    "titre": "Copie d'après atelier de Van Dick, Portrait de Van Opstal (titre factice) ; Ancien titre : L'Homme à la fraise",
+   "musee_code": "M1069",
    "musee": "musée Léon Dierx",
    "ville": "Saint-Denis de La Réunion",
    "code": "atelier_de",
@@ -384,6 +422,7 @@
   {
    "reference": "03110042522",
    "titre": "Étude de tête (titre attribué)",
+   "musee_code": "M0311",
    "musee": "musée des Beaux-Arts de Saint-Denis",
    "ville": "Reims",
    "code": "attribue",
@@ -392,6 +431,7 @@
   {
    "reference": "03030002149",
    "titre": "Portrait de Béatrice de Cusance (1614-1663)",
+   "musee_code": "M0303",
    "musee": "musée des beaux-arts et d’archéologie",
    "ville": "Troyes",
    "code": "atelier_de",
@@ -400,6 +440,7 @@
   {
    "reference": "06570017304",
    "titre": "Érasme",
+   "musee_code": "M0657",
    "musee": "musée des beaux-arts",
    "ville": "Caen",
    "code": "attribue",
@@ -408,6 +449,7 @@
   {
    "reference": "M0457000769",
    "titre": "Sans désignation",
+   "musee_code": "M0457",
    "musee": "musée des beaux-arts",
    "ville": "Nîmes",
    "code": "attribue",
@@ -416,6 +458,7 @@
   {
    "reference": "M0332003039",
    "titre": "Portrait de Charles Ier d'Angleterre",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -424,6 +467,7 @@
   {
    "reference": "M0332003041",
    "titre": "Étude de tête d'homme barbu",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -432,6 +476,7 @@
   {
    "reference": "M0332003657",
    "titre": "Etudes d'une tête",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -440,6 +485,7 @@
   {
    "reference": "06210000190",
    "titre": "Achille parmi les filles de Lycodème (Titre) ; Achille se trahit devant Ulysse (Ancien titre)",
+   "musee_code": "M0621",
    "musee": "musée des beaux-arts",
    "ville": "Dunkerque",
    "code": "atelier_de",
@@ -447,7 +493,7 @@
   }
  ],
  "version_donnee": "2026-07-01",
- "date_generation": "2026-08-02T14:35:33+00:00",
+ "date_generation": "2026-08-02T15:04:31+00:00",
  "source": "Collections des musées de France : base Joconde",
  "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
 }
