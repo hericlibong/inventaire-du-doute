@@ -2,6 +2,28 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-02 (octies) — Tous les artistes ont leur carte, même à un seul musée
+
+Une règle datant du 2026-07-12 remplaçait la carte par une phrase quand l'artiste n'avait
+qu'un musée projetable : « une carte à un seul point ne montre pas une répartition ».
+
+**Arbitrage utilisateur : la règle est supprimée. Tous les artistes ont leur carte.**
+
+**Le malentendu, à retenir** : cette carte n'est pas un graphique de répartition, c'est un
+**repère géographique visuel**. Un point unique situe l'artiste aussi sûrement que vingt — il
+dit « c'est là, et nulle part ailleurs », ce qui est précisément l'information la plus
+frappante pour les fonds locaux. Et l'échelle ne bouge pas d'une fiche à l'autre : la
+projection est calée sur le fond de carte, jamais sur les points (`geo.js`,
+`creerProjection`), donc la comparaison reste possible.
+
+**Portée** : trente-deux des cent deux artistes sont concernés — le lot du 2026-08-02 les a
+rendus majoritaires en proportion, et c'est ce qui a rendu la règle visible. Aucun artiste
+n'a zéro musée métropolitain aujourd'hui ; le cas est traité par une phrase sous la carte,
+qui reste dessinée.
+
+**Conséquence** : le repli sans carte disparaît, avec l'action qu'il portait — le point est
+sur la carte, il se choisit, il mène aux œuvres comme les autres.
+
 ## 2026-08-02 (septies) — La carte mène aux œuvres, par un panneau et non par une infobulle
 
 Phase 3 du volume. La carte du profil disait d'où viennent les notices ; elle ne menait nulle

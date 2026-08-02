@@ -50,10 +50,13 @@ fusion finale.
       flanc : nom, compte, formules, et l'action « Voir les N œuvres conservées dans ce musée »
       — jamais dans l'infobulle, qui s'efface. L'action ouvre « Œuvres » avec le musée filtré,
       artiste conservé. Accord au singulier prévu. **Le lien POP du musée à une seule notice
-      est conservé**, déplacé du point vers le panneau. L'action figure aussi dans le repli
-      sans carte (30 artistes sur 39 du dernier lot) et dans la mention hors cadre. Un seul
-      état filtre (`museeActif`, dans la page) ; le point choisi est une sélection de lecture.
-      Trajet inverse vérifié au navigateur, desktop et mobile 390 px.
+      est conservé**, déplacé du point vers le panneau. L'action figure aussi dans la mention
+      hors cadre. Un seul état filtre (`museeActif`, dans la page) ; le point choisi est une
+      sélection de lecture. Trajet inverse vérifié au navigateur, desktop et mobile 390 px.
+      **Correction du même jour** : la règle « pas de carte en dessous de deux musées »
+      (2026-07-12) est supprimée — **tous les artistes ont leur carte**, y compris les 32 qui
+      n'ont qu'un musée. La carte est un repère géographique, pas un graphique de répartition
+      (decisions.md, octies).
 - [ ] **Phase 4 — Construire la page Présentation** : du nom lu sous une œuvre au corpus,
       Joconde et les formulations prudentes, la sélection expliquée en clair, les chiffres du
       volume, puis l'entrée dans l'exploration. Reprise sélective du prototype (export, tests,
@@ -66,6 +69,11 @@ fusion finale.
       Méthode. « Comprendre les mentions » quitte la navigation, son URL est redirigée.
 - [ ] ⏸ **POINT DE CONTRÔLE 2** — captures desktop et mobile des six écrans, fil éditorial,
       chiffres publics, limites restantes. Avant fusion.
+      **À revoir à ce moment-là — confusions relevées en chemin** (demande utilisateur,
+      2026-08-02) : des règles héritées qui décrivent mal ce qu'on regarde. Première du genre,
+      corrigée aussitôt : « pas de carte en dessous de deux musées », qui traitait un repère
+      géographique comme un graphique de répartition. En chercher d'autres du même ordre avant
+      la fusion.
 - [ ] **Phase 8 — Vérification et publication** : chiffres, combinaisons de filtres, liens,
       images et crédits, mobile, clavier, tests, build, routes et redirections, docs à jour,
       fusion des seules branches validées.

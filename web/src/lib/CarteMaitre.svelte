@@ -36,9 +36,15 @@
 	const projetables = $derived(maitre.musees_doute.filter((m) => estProjetable(m.lat, m.lon)));
 	const horsCadre = $derived(maitre.musees_doute.filter((m) => !estProjetable(m.lat, m.lon)));
 
-	// Repli : une carte à un seul point ne montre pas une répartition. En dessous de
-	// deux musées projetables, on remplace la carte par une phrase.
-	const afficheCarte = $derived(projetables.length >= 2);
+	// TOUS LES ARTISTES ONT LEUR CARTE, même ceux dont le doute n'est écrit que dans
+	// un seul musée (arbitrage utilisateur, 2026-08-02). Une règle antérieure
+	// remplaçait la carte par une phrase en dessous de deux musées projetables, au
+	// motif qu'un point unique « ne montre pas une répartition ». Le malentendu
+	// était là : cette carte n'est pas un graphique de répartition, c'est un REPÈRE
+	// GÉOGRAPHIQUE. Un point unique situe l'artiste aussi sûrement que vingt, et
+	// l'échelle ne bouge pas — la projection est calée sur le fond de carte, jamais
+	// sur les points (geo.js, creerProjection). Trente-deux des cent deux artistes
+	// sont dans ce cas.
 
 	// « N notice(s) concernée(s) » — accord géré par notices(), puis participe accordé.
 	const concernees = (n) => `${notices(n)} concernée${n > 1 ? 's' : ''}`;
@@ -65,7 +71,7 @@
 	// chevauchent (musées d'une même ville, grappe francilienne) pour qu'aucun n'en
 	// cache un autre — au plus près de leur vraie position (voir ecarterPoints).
 	const points = $derived.by(() => {
-		if (!fond || !afficheCarte) return [];
+		if (!fond) return [];
 		const projection = creerProjection(fond, W, H);
 		const bruts = projetables.map((m) => {
 			const [x, y] = projection([m.lon, m.lat]);
@@ -153,7 +159,6 @@
 <figure class="carte">
 	<figcaption class="titre">D'où viennent ces notices</figcaption>
 
-	{#if afficheCarte}
 	<div class="agencement">
 		<div class="scene" bind:this={regardEl}>
 			<svg viewBox="0 0 {W} {H}" role="img" aria-label="Carte des musées de France ayant publié des notices où le nom de {maitre.nom} est accompagné d’une formulation prudente">
@@ -237,22 +242,7 @@
 			{/if}
 		</div>
 	</div>
-	{:else if projetables.length === 1}
-		<!-- Pas de carte pour un point unique — mais l'accès aux œuvres, lui, doit
-		     exister : c'est le cas de la majorité des artistes du lot du 2026-08-02,
-		     dont le doute n'est écrit que dans un seul musée. -->
-		<p class="repli">
-			{projetables[0].doute === 1 ? 'Cette notice relève' : 'Ces notices relèvent'}
-			d'un seul musée&nbsp;: {projetables[0].nom}, à {projetables[0].ville}.
-		</p>
-		{#if onVoirOeuvres}
-			<p class="repli-action">
-				<button type="button" class="action" onclick={() => onVoirOeuvres(projetables[0].code)}>
-					{voirOeuvres(projetables[0].doute)}&nbsp;→
-				</button>
-			</p>
-		{/if}
-	{:else}
+	{#if projetables.length === 0}
 		<p class="repli">
 			Aucune de ces notices ne relève d'un musée de France métropolitaine.
 		</p>
@@ -480,9 +470,6 @@
 		cursor: pointer;
 	}
 
-	.repli-action {
-		margin: var(--espace-2) 0 0;
-	}
 
 	.legende {
 		display: flex;

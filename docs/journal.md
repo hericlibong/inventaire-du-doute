@@ -2,6 +2,20 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-08-02 (correction) — Tout le monde a droit à sa carte
+
+Une règle traînait depuis juillet : en dessous de deux musées, pas de carte, une phrase à la
+place. Le raisonnement se tenait à l'époque — un seul point ne montre pas une répartition.
+Il ne tient plus, et il ne tenait déjà pas : cette carte n'a jamais été un graphique de
+répartition, c'est un repère géographique. Un point unique dit quelque chose de très clair,
+« c'est là et nulle part ailleurs », et c'est justement le cas le plus parlant pour les fonds
+locaux entrés hier. Trente-deux artistes sur cent deux étaient privés de carte pour une raison
+qui décrivait mal ce qu'on regarde.
+
+Supprimée. Et l'échelle ne bouge pas : le cadre est calé sur le fond de carte, pas sur les
+points — la carte de Clausel, un point à Troyes, occupe exactement le même espace que celle de
+Le Brun et ses dix-neuf musées.
+
 ## 2026-08-02 (phase 3) — La carte cesse d'être un cul-de-sac
 
 On avait une carte qui montrait d'où viennent les notices, et une liste d'œuvres qu'on pouvait
