@@ -31,7 +31,7 @@
 	// conservé pour de futures entrées.
 	const briques = [
 		{ titre: 'Accueil', href: '/', prete: true },
-		{ titre: 'Explorer les maîtres', href: '/les-presque', prete: true },
+		{ titre: 'Explorer les artistes', href: '/les-presque', prete: true },
 		{ titre: 'Comprendre les mentions', href: '/echelle', prete: true },
 		{ titre: 'Méthode', href: '/methode', prete: true }
 	];

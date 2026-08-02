@@ -2,6 +2,28 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-08-02 (fin) — Barla sort du cadre, et le site cesse de dire « maîtres »
+
+Les deux questions laissées à l'utilisateur sont tranchées, et les deux réponses disent la
+même chose : un chiffre juste n'est pas forcément un chiffre à sa place.
+
+Barla reste. Il reste dans le registre, avec ses 5 791 notices, son identité vérifiée et ses
+dates. Il reste dans le total national de 24 507, et dans le « hors ce cas » qu'on publie à
+côté depuis un an. Ce qui change, c'est qu'il n'entre pas dans ce volume-ci. Il a fallu créer
+un état pour ça — **« hors périmètre »** — parce qu'aucun des trois existants ne convenait :
+il n'est pas retenu, il n'est pas à examiner, et surtout il n'est pas écarté. L'écart veut
+dire « ce n'est pas quelqu'un » ; ici, c'est quelqu'un, le compte est bon, mais six mille
+planches de champignons notées « attribué à » d'un bout à l'autre d'une collection, ce n'est
+pas une hésitation sur l'auteur d'un tableau. La page Méthode le dit maintenant en toutes
+lettres, avec la précision qui compte : ce n'est pas une erreur repérée, c'est un autre sujet.
+
+L'autre décision est un mot. Le site disait « Explorer les 63 maîtres ». Il dit « Explorer les
+artistes ». Le nombre sort du titre — un effectif dans un titre devient faux au lot suivant —
+et « maîtres » sort de tout ce qui désigne des personnes. Le mot ne disparaît pas pour autant :
+il garde le seul emploi où il est exact, celui des musées eux-mêmes, quand il décrit la
+distance d'une œuvre à une main. L'atelier du maître, son école, son entourage. C'est même le
+cœur du sujet — on n'allait pas le retirer de là.
+
 ## 2026-08-02 (suite) — Quarante artistes de plus, et une liste qui change de nature
 
 On avait 234 noms en attente dans le registre, jamais regardés. On en a pris les cinquante
@@ -34,6 +56,7 @@ ce sont des fonds locaux : Épinal, Troyes, Besançon, Amiens, Laval, Le Puy. Et
 avec ses 5 791 planches, pèse à lui seul la moitié du volume. Il est une personne, la
 vérification est formelle — mais il écrasera n'importe quel graphique. Ces deux points
 remontent à l'utilisateur : ce sont des choix éditoriaux, pas des questions de méthode.
+(Tranchés le jour même — voir l'entrée suivante.)
 
 ## 2026-08-02 — Le site devient un volume, et le prototype passe à la trappe (aux deux tiers)
 

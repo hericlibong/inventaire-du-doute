@@ -14,7 +14,7 @@
 	// d'accueil (LandingCover) — un lien vers la page où l'on se trouve déjà est inutile
 	// (retrait demandé le 2026-07-18). Les autres pages ont « Accueil » dans le header.
 	const liens = [
-		{ href: '/les-presque', label: 'Explorer les maîtres', principal: true, decal: '0rem' },
+		{ href: '/les-presque', label: 'Explorer les artistes', principal: true, decal: '0rem' },
 		{ href: '/echelle', label: 'Comprendre les mentions', decal: '2.8rem' },
 		{ href: '/methode', label: 'Méthode', decal: '1.1rem' }
 	];

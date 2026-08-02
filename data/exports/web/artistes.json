@@ -3,15 +3,15 @@
  "lexique": "markers.py v2 (famille_segment) — unité : référence Joconde unique",
  "unite": "reference",
  "totaux": {
-  "appartenances_doute": 12029,
-  "notices_doute": 11872,
-  "appartenances_propre": 44003,
-  "notices_propre": 43307,
+  "appartenances_doute": 6238,
+  "notices_doute": 6081,
+  "appartenances_propre": 43981,
+  "notices_propre": 43285,
   "appartenances_copie": 6918,
   "notices_copie": 6889,
   "notices_partagees": 157,
   "familles_notices": {
-   "attribue": 9175,
+   "attribue": 3384,
    "point_interrogation": 352,
    "ecole_de": 1343,
    "atelier_de": 553,
@@ -21,7 +21,7 @@
    "genre_de": 54
   },
   "niveaux_notices": {
-   "1": 9527,
+   "1": 3736,
    "2": 2081,
    "3": 265
   }
@@ -2070,7 +2070,7 @@
   }
  ],
  "version_donnee": "2026-07-01",
- "date_generation": "2026-08-02T13:59:02+00:00",
+ "date_generation": "2026-08-02T14:35:33+00:00",
  "source": "Collections des musées de France : base Joconde",
  "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb",
  "niveaux": {
@@ -2079,57 +2079,6 @@
   "3": "Son style, sans lui"
  },
  "artistes": [
-  {
-   "nom": "Jean-Baptiste Barla",
-   "slug": "jean-baptiste-barla",
-   "propre": 22,
-   "doute": 5791,
-   "copie": 0,
-   "musees": 1,
-   "nb_musees_doute": 1,
-   "musee_principal": {
-    "code": "M7050",
-    "nom": "muséum d'histoire naturelle",
-    "doute": 5791,
-    "part": 1.0
-   },
-   "doute_sans_musee": 0,
-   "niveaux": [
-    5791,
-    0,
-    0
-   ],
-   "familles": [
-    {
-     "code": "attribue",
-     "libelle": "attribué à",
-     "niveau": 1,
-     "notices": 5791
-    }
-   ],
-   "exemple_copie": null,
-   "musees_doute": [
-    {
-     "code": "M7050",
-     "nom": "muséum d'histoire naturelle",
-     "ville": "Nice",
-     "lat": 43.70192,
-     "lon": 7.27957,
-     "doute": 5791,
-     "niveaux": [
-      5791,
-      0,
-      0
-     ],
-     "familles": [
-      {
-       "code": "attribue",
-       "notices": 5791
-      }
-     ]
-    }
-   ]
-  },
   {
    "nom": "Charles Le Brun",
    "slug": "charles-le-brun",

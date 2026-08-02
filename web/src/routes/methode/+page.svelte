@@ -25,6 +25,9 @@
 	const nbRetenus = data.registre.retenues;
 	const nbEcartes = data.registre.ecartees;
 	const nbAInstruire = data.registre.a_instruire;
+	// Personnes identifiées et comptées, mais dont le fonds sort de l'angle du
+	// volume (2026-08-02). Ni écartées, ni faux positifs : un état à part entière.
+	const nbHorsPerimetre = data.registre.hors_perimetre ?? 0;
 	const dApres = n.familles.d_apres.notices;
 	const copiesTotal = n.copie;
 	const pct = (v) => (v * 100).toLocaleString('fr-FR', { maximumFractionDigits: 1 });
@@ -287,30 +290,43 @@
 <!-- 4. Comment les artistes ont-ils été identifiés ? ------------------------ -->
 <section id="artistes" tabindex="-1">
 	<!-- Ancre visée par le lien « Pourquoi ces N artistes ? » de « Explorer les
-	     maîtres » : à conserver. Elle porte sur le TITRE et non sur le paragraphe
+	     artistes » : à conserver. Elle porte sur le TITRE et non sur le paragraphe
 	     qui suit — sinon le visiteur arrivait sous le titre, sans savoir à quelle
 	     question il répond. -->
 	<h2 id="les-maitres" tabindex="-1">Comment les artistes ont-ils été identifiés&nbsp;?</h2>
 	<p>
 		Une partie du site se concentre sur <strong>{nombre(nbNoms)} noms</strong> de
-		référence. Le critère est explicite&nbsp;: un artiste connu <em>et</em> au moins dix
-		notices portant une formulation prudente (copies exclues), une fois le nom bien
-		isolé. Ce n'est <strong>pas un palmarès des plus grands</strong>&nbsp;: c'est un
-		seuil, choisi pour avoir assez de matière à montrer. Ces {nombre(nbNoms)} noms
-		réunissent {nombre(douteDansListe)} des {nombre(n.doute_total)} notices prudentes
+		référence. Le critère est explicite, et il ne demande jamais si l'artiste est
+		célèbre&nbsp;: le musée doit écrire un <strong>nom de personne identifiable</strong>
+		— un prénom entier, pas une initiale ni un nom de famille tout seul —, cette personne
+		doit être séparée de ses homonymes, et son nom doit porter <strong>au moins dix
+		notices</strong> à formulation prudente, copies exclues, une fois ses différentes
+		graphies réunies. Ce n'est <strong>pas un palmarès des plus grands</strong>&nbsp;:
+		c'est un seuil, choisi pour avoir assez de matière à montrer. Ces {nombre(nbNoms)}
+		noms réunissent {nombre(douteDansListe)} des {nombre(n.doute_total)} notices prudentes
 		relevées dans toute la base.
 	</p>
 	<p>
 		<strong>Cette liste n'est pas close, et elle se vérifie.</strong> Tous les noms qui
 		atteignent le seuil ont été relevés — ils sont {nombre(nbCandidats)}. Chacun reçoit un
-		état à mesure qu'il est examiné&nbsp;: retenu, écarté avec sa raison, ou
-		<em>encore à examiner</em>. Un nom encore à examiner n'est pas un nom rejeté&nbsp;:
-		c'est un nom dont la vérification n'a pas été faite. Aujourd'hui, {nombre(nbRetenus)}
-		formes d'écriture sont rattachées aux {nombre(nbNoms)} artistes retenus,
-		{nombre(nbEcartes)} sont écartées parce qu'il ne s'agit pas d'une personne — une
-		manufacture, une imprimerie, «&nbsp;anonyme&nbsp;», ou une mention qui ne porte aucun
-		nom d'auteur — et {nombre(nbAInstruire)} restent à examiner. La liste s'agrandira par
-		lots.
+		état à mesure qu'il est examiné&nbsp;: retenu, écarté avec sa raison, mis
+		<em>hors du sujet de cette partie</em>, ou <em>encore à examiner</em>. Un nom encore à
+		examiner n'est pas un nom rejeté&nbsp;: c'est un nom dont la vérification n'a pas été
+		faite. Aujourd'hui, {nombre(nbRetenus)} formes d'écriture sont rattachées aux
+		{nombre(nbNoms)} artistes retenus, {nombre(nbEcartes)} sont écartées — une
+		manufacture, une imprimerie, «&nbsp;anonyme&nbsp;», un nom de famille sans prénom qui
+		peut désigner plusieurs personnes, ou une mention qui ne porte aucun nom d'auteur —
+		et {nombre(nbAInstruire)} restent à examiner. La liste s'agrandira par lots.
+	</p>
+	<p>
+		<strong>Une personne peut être bien identifiée et rester hors de cette partie.</strong>
+		{nbHorsPerimetre === 1 ? 'Un nom est dans ce cas' : `${nombre(nbHorsPerimetre)} noms sont dans ce cas`}&nbsp;:
+		un fonds d'histoire naturelle de plusieurs milliers de planches, conservé dans un seul
+		musée et noté d'un bout à l'autre «&nbsp;attribué à&nbsp;». Le comptage est juste, la
+		personne existe, ses notices restent dans les totaux nationaux de ce site&nbsp;— mais
+		il ne s'agit pas d'une hésitation sur l'auteur d'une œuvre d'art, qui est le sujet de
+		cette partie. Ce n'est <strong>pas une erreur repérée</strong>&nbsp;: c'est un sujet
+		différent.
 	</p>
 	<p>
 		<strong>Séparer les personnes, pas seulement les mots.</strong> Rattacher une formule
@@ -553,7 +569,7 @@
 
 	/* Décalage d'ancre : au saut, la cible ne colle pas au bord haut de la fenêtre.
 	   Vaut pour les sections du sommaire ET pour les titres visés de l'extérieur
-	   (#les-maitres, depuis « Explorer les maîtres »). */
+	   (#les-maitres, depuis « Explorer les artistes »). */
 	section,
 	section h2 {
 		scroll-margin-top: var(--espace-5);

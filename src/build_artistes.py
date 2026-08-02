@@ -228,9 +228,8 @@ MAITRES = [
     # Les dix formes écartées et leur motif : registre_maitres.py (ÉCARTÉS
     # INSTRUITS) et docs/donnees.md, 2026-08-02.
     #
-    # Naturaliste niçois : ses 5 791 planches légitiment un profil à part entière,
-    # mais elles sont un seul geste de catalogue répété (donnees.md, 2026-07-05).
-    ("Jean-Baptiste Barla", ["BARLA JEAN-BAPTISTE"], []),
+    # Jean-Baptiste Barla est instruit et identifié, mais il est HORS PÉRIMÈTRE de
+    # ce volume — voir HORS_PERIMETRE, plus bas.
     ("Alexandre Clausel",   ["CLAUSEL ALEXANDRE"], []),
     # Charles Pierre Joseph Normand : les autres Normand de la base (Achille,
     # Augustin, Michel, Charles Victor) ne portent aucune notice prudente et le
@@ -319,6 +318,29 @@ MAITRES = [
                              "DAVID JACQUES LOUIS", "DAVID JACQUE-LOUIS"], []),
 ]
 
+# Personnes instruites, identifiées, correctement comptées — et HORS PÉRIMÈTRE du
+# volume 1 (décision utilisateur, 2026-08-02).
+#
+# Ce ne sont PAS des faux positifs, et il faut le dire à chaque fois qu'on en
+# parle : l'identité est établie, le comptage est juste, les notices restent dans
+# les statistiques nationales (24 507), qui ne dépendent pas de cette table. Elles
+# sortent du volume parce que leur fonds n'entre pas dans son angle éditorial —
+# les attributions artistiques.
+#
+# La quatrième valeur est le motif. Il est publiable tel quel, comme les motifs
+# d'écart : une sortie de périmètre non motivée serait une sélection opaque.
+HORS_PERIMETRE = [
+    ("Jean-Baptiste Barla", ["BARLA JEAN-BAPTISTE"], [],
+     "fonds botanique sériel, concentré dans un seul musée, hors de l'angle "
+     "éditorial du volume consacré aux attributions artistiques"),
+]
+
+# Toutes les personnes instruites, périmètre compris ou non. Sert au registre,
+# qui doit prouver que Barla a bien été identifié et compté — jamais aux exports
+# du volume, qui ne connaissent que MAITRES.
+TOUTES_PERSONNES = MAITRES + [(n, i, e) for n, i, e, _ in HORS_PERIMETRE]
+MOTIF_HORS_PERIMETRE = {n: m for n, _i, _e, m in HORS_PERIMETRE}
+
 LIBELLES_NIVEAUX = {1: "Presque lui", 2: "Autour de lui", 3: "Son style, sans lui"}
 LIBELLE_FAMILLE = {f.code: f.libelle for f in markers.FAMILLES}
 
@@ -375,8 +397,14 @@ def _mot_entier(motif: str, pivot: str) -> bool:
     return re.search(rf"\b{re.escape(motif)}\b", pivot) is not None
 
 
-def _trouve_maitre(pivot: str):
-    for nom, inclus, exclus in MAITRES:
+def _trouve_maitre(pivot: str, table=None):
+    """Le nom de la personne que désigne ce pivot, ou None.
+
+    `table` vaut MAITRES par défaut — les personnes DU VOLUME. Le registre passe
+    TOUTES_PERSONNES pour retrouver aussi celles qui sont hors périmètre : il doit
+    prouver qu'elles ont été identifiées et comptées, pas les faire disparaître.
+    """
+    for nom, inclus, exclus in (MAITRES if table is None else table):
         if any(_mot_entier(e, pivot) for e in exclus):
             continue
         if any(_mot_entier(i, pivot) for i in inclus):
@@ -462,7 +490,8 @@ def _lat_lon(valeur):
     return round(lat, 5), round(lon, 5)
 
 
-def resout_reference(auteur: str, en_beaux_arts: bool = True) -> dict:
+def resout_reference(auteur: str, en_beaux_arts: bool = True,
+                     table=None) -> dict:
     """Ce qu'UNE référence dit de chaque maître, résolu en un seul verdict.
 
     Renvoie {maître: (categorie, famille, segment)} — famille et segment valent
@@ -470,13 +499,15 @@ def resout_reference(auteur: str, en_beaux_arts: bool = True) -> dict:
     `Auteur` peut nommer le même homme dans plusieurs segments, sous plusieurs
     graphies et avec plusieurs formules ; la référence ne pèse qu'une fois par
     maître, dans la catégorie la plus prudente et la famille la plus explicite.
-    Isolée de main() pour être testable sans le CSV (tests/test_artistes.py)."""
+    Isolée de main() pour être testable sans le CSV (tests/test_artistes.py).
+    `table` est passée telle quelle à `_trouve_maitre` : le registre y met
+    TOUTES_PERSONNES, les exports du volume laissent le défaut."""
     vus = {}  # maître -> {categories: set, familles: {code: segment}, copie: segment}
     for segment in auteur.split(";"):
         segment = segment.strip()
         if not segment:
             continue
-        nom = _trouve_maitre(_pivot(segment))
+        nom = _trouve_maitre(_pivot(segment), table)
         if nom is None:
             continue
         categorie, famille = markers.famille_segment(segment, en_beaux_arts)

@@ -37,7 +37,7 @@
 		<!-- COLONNE GAUCHE : entrée éditoriale, puis sélection (recherche + tri + liste). -->
 		<div class="colonne-gauche">
 			<header class="intro">
-				<h1>Explorer les {nbMaitres} maîtres</h1>
+				<h1>Explorer les artistes</h1>
 				<p>
 					<strong>Dans un</strong> musée, une œuvre est souvent accompagnée d'un nom d'artiste.
 					Mais ce nom ne désigne pas toujours son auteur avec certitude. Joconde, le catalogue
@@ -47,7 +47,7 @@
 					et rendent visible le doute qui entoure certaines attributions.
 				</p>
 				<p>
-					<strong>Cette rubrique</strong> explore {nbMaitres} maîtres pour découvrir quelles
+					<strong>Cette rubrique</strong> explore {nbMaitres} artistes pour découvrir quelles
 					œuvres sont associées à leur nom, sous quelles réserves et dans quels musées elles
 					sont conservées.
 				</p>

@@ -2,6 +2,67 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-02 (quinquies) — Dans l'interface publique, on dit « artistes »
+
+Le lot 2 a changé la nature de la liste : trente des quarante nouveaux n'ont leur doute écrit
+que dans un seul musée, et ce sont des dessinateurs d'imagerie, des photographes, des
+peintres de fonds locaux. Le mot « maîtres » ne les décrivait plus.
+
+**Décision utilisateur : l'interface publique dit « artistes ».** « Explorer les artistes »,
+« Choisir un artiste », et partout ailleurs le même mot. Le répertoire, son champ de
+recherche, son état vide et ses libellés d'accessibilité suivent.
+
+**Le mot « maître » reste, mais pour une seule chose** : décrire la relation historique
+d'une œuvre à un artiste — l'atelier du maître, son école, la distance à sa main. C'est le
+vocabulaire des musées eux-mêmes, et c'est le sujet du projet. « Autour du maître » reste
+donc le titre du deuxième territoire, et « la nature du lien avec le maître » reste dans
+l'intro. Ce qui disparaît, c'est « maîtres » comme nom des personnes listées.
+
+**L'effectif sort des titres.** Le titre de la rubrique était « Explorer les 63 maîtres » :
+un nombre dans un titre devient faux au premier lot suivant. Il devient « Explorer les
+artistes », et l'effectif se lit dans le corps du texte, depuis les données.
+
+Le code garde ses noms internes (`nbMaitres`, `BandeauMaitre.svelte`, `maitres_instruits.csv`) :
+la couche de libellé public est là pour ça, et renommer le pipeline n'apporterait rien au
+lecteur.
+
+## 2026-08-02 (quater) — Barla : identifié, compté, hors périmètre du volume
+
+Jean-Baptiste Barla passe le test d'identité sans réserve : botaniste niçois (1817-1896),
+cofondateur du muséum d'histoire naturelle de Nice, à qui il a légué sa bibliothèque et
+environ 6 000 aquarelles. Ses 5 791 notices prudentes sont exactes. Elles pèsent aussi 49 %
+du volume et dix-huit fois le deuxième profil.
+
+**Décision utilisateur : Barla reste dans le registre comme personne correctement
+identifiée, reste dans les statistiques nationales, et sort du périmètre du volume 1.**
+
+**Ce n'est pas un faux positif, et le dire est une obligation.** Un écart et une sortie de
+périmètre ne se ressemblent pas : l'un dit « ce n'est pas une personne, ou pas une personne
+identifiable », l'autre dit « c'est bien elle, le compte est juste, mais ce n'est pas notre
+sujet ». Confondre les deux reviendrait à laisser croire à une erreur de méthode là où il
+n'y en a pas.
+
+**Motif publié** : fonds botanique sériel, concentré dans un seul musée, hors de l'angle
+éditorial du volume — les attributions artistiques. Ce que le musée a écrit n'est pas une
+hésitation sur l'auteur d'une œuvre d'art, c'est une prudence de catalogue appliquée d'un
+bout à l'autre d'une collection d'histoire naturelle.
+
+**Mise en œuvre** — une table `HORS_PERIMETRE` dans `build_artistes.py`, à côté de `MAITRES`
+et jamais confondue avec elle :
+
+- les exports du volume ne connaissent que `MAITRES` : aucune fiche Barla, aucun point sur
+  les graphiques ;
+- le registre passe `TOUTES_PERSONNES` à `resout_reference` : il retrouve Barla, le compte,
+  et lui donne le statut **« hors périmètre »** — un cinquième état à côté de retenu,
+  écarté et à instruire, avec son motif ;
+- `maitres_instruits.csv` gagne une colonne `perimetre` (« volume 1 » / « hors périmètre ») :
+  la personne reste dans le registre avec ses chiffres ;
+- les totaux nationaux (24 507, monoculture divulguée, hors monoculture) ne bougent pas : ils
+  sont calculés par `build_exports.py`, qui ne consulte aucune de ces tables.
+
+Deux tests figent la règle : Barla est introuvable par les exports du volume, retrouvé par le
+registre, et aucune personne hors périmètre ne peut se glisser dans `MAITRES`.
+
 ## 2026-08-02 (ter) — Un seul mécanisme ajouté à la table d'identité : l'égalité stricte
 
 La table de `build_artistes.py` disposait de deux outils : le mot entier et l'ancre « ^ » (le

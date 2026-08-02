@@ -30,13 +30,19 @@ Chacune se tranche sur la source, sans jugement sur l'artiste :
 
 ### Ce que le lot ajoute
 
-**40 personnes**, **8 355 appartenances**, **8 204 notices distinctes** de plus. La liste passe
-de 63 à **103 artistes**, et de 3 668 à **11 872 notices distinctes** — soit **48,4 %** du doute
-national (24 507) contre 15 % auparavant.
+**40 personnes instruites et retenues**, dont **39 entrent dans le volume** : Jean-Baptiste
+Barla est identifié et compté, mais **hors périmètre** (décision du 2026-08-02, plus bas).
+
+La liste publique passe donc de 63 à **102 artistes**, et de 3 668 à **6 081 notices
+distinctes** — soit **24,8 %** du doute national (24 507) contre 15 % auparavant, et 32 % du
+doute hors monoculture (18 716). La somme des profils vaut 6 238 appartenances.
+
+Le tableau ci-dessous donne les chiffres de tous les instruits, Barla compris : c'est le
+registre, pas le volume.
 
 | Artiste | prudentes | certaines | musées où le doute est écrit | musées où il apparaît |
 |---|---:|---:|---:|---:|
-| Jean-Baptiste Barla | 5 791 | 22 | 1 | 1 |
+| Jean-Baptiste Barla *(hors périmètre)* | 5 791 | 22 | 1 | 1 |
 | Alexandre Clausel | 295 | 158 | 1 | 1 |
 | Charles Normand | 244 | 55 | 1 | 5 |
 | Léon Tirode | 231 | 21 | 1 | 2 |
@@ -101,7 +107,7 @@ d'une même famille**, chacun suivi d'un « ? » — il ne sait pas lequel des d
   l'un ou à l'autre.
 
 Chaque profil compte la notice une fois ; l'union ne la compte qu'une fois pour tous. La
-somme des profils (12 029) dépasse donc les notices distinctes (11 872) de 157 exactement.
+somme des profils (6 238) dépasse donc les notices distinctes (6 081) de 157 exactement.
 
 ### Les dix formes écartées, et pourquoi
 
@@ -131,28 +137,33 @@ Sur les **330 formes** qui atteignent le seuil de dix notices prudentes :
 
 | État | avant le lot | après | ce qui a bougé |
 |---|---:|---:|---|
-| retenu | 74 | **116** | les 40 personnes du lot, plus deux graphies rattachées (« PINOT Charles », « ENSFELDER Eugène ») |
+| retenu | 74 | **115** | les 39 personnes du volume, plus deux graphies rattachées (« PINOT Charles », « ENSFELDER Eugène ») |
+| hors périmètre | — | **1** | Barla : identifié et compté, hors de l'angle du volume |
 | écarté | 22 | **33** | les 10 formes du lot, plus « IMAGERIE PELLERIN » |
 | à instruire | 234 | **181** | reste 2 562 notices, médiane 13 par forme |
 
 `data/exports/candidats_maitres.csv` porte l'état et le motif de chacune ;
-`data/exports/maitres_instruits.csv` porte le comptage des 103 retenus, avec son lot.
+`data/exports/maitres_instruits.csv` porte le comptage des 103 personnes instruites, avec son
+lot et sa colonne `perimetre` (« volume 1 » ou « hors périmètre »).
 
-### Le cas Barla, à décider avant publication
+### Le cas Barla, tranché : identifié, compté, hors périmètre
 
 Jean-Baptiste Barla (1817-1896) est une personne établie : botaniste niçois, cofondateur en
 1846 du muséum d'histoire naturelle de Nice, à qui il a légué sa bibliothèque et environ
-6 000 aquarelles. Ses 5 791 notices prudentes passent donc le test d'identité sans réserve.
+6 000 aquarelles. Ses 5 791 notices prudentes passent le test d'identité sans réserve.
 
 Mais elles sont **un seul geste de catalogue répété** — le constat du 2026-07-05 n'a pas
-changé — et il pèse désormais **49 % du volume** (5 791 sur 11 872) et **dix-huit fois** le
-premier des 63 (Charles Le Brun, 310). La décision du 2026-07-05 — publier le chiffre ET
-divulguer partout le « hors ce cas » — a été prise pour le total national ; elle doit être
-étendue aux vues du volume, ou Barla écrasera chaque graphique. **Arbitrage utilisateur
-attendu au point de contrôle 1.**
+changé — et elles auraient pesé **49 % du volume**, dix-huit fois le premier profil.
 
-Hors Barla, le volume compte **6 081 notices distinctes**, soit 32 % du doute national hors
-monoculture (18 716).
+**Décision du 2026-08-02 : il sort du périmètre du volume, sans sortir du registre ni des
+totaux nationaux.** Statut « hors périmètre », motif publié : fonds botanique sériel,
+concentré dans un seul musée, hors de l'angle éditorial du volume — les attributions
+artistiques. **Ce n'est pas un faux positif** : l'identité est établie, le comptage est juste,
+et le site continue de publier ses notices dans le total de 24 507 et dans la monoculture
+divulguée. Ce qui est écrit à Nice n'est pas une hésitation sur l'auteur d'une œuvre d'art.
+
+Sans lui, le profil le plus fourni du volume est Charles Le Brun (310 notices) et le plus
+mince le Titien (11) : un écart de 1 à 28, lisible sur une échelle commune.
 
 ## Droits photo des œuvres : audit POP (2026-07-29)
 

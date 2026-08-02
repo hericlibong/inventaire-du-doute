@@ -74,7 +74,7 @@
 // leurs données, Michel-Ange disait « deux fois plus » pour un rapport devenu
 // proche de trois. Dès qu'une phrase NOMME une mention, elle doit la chercher
 // par son code avec `notices('ecole_de')`, jamais par son rang.
-// Les 63 premiers maîtres ont leur en-tête écrit ; les 40 du lot du
+// Les 63 premiers artistes ont leur en-tête écrit ; les 39 du lot du
 // 2026-08-02 n'en ont pas encore, l'en-tête généré
 // ne sert plus que de filet pour un maître qu'on ajouterait sans l'écrire.
 

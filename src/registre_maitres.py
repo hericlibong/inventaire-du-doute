@@ -16,6 +16,9 @@ l'option `--formes`, qui ne recalcule que les statuts (lot 2, 2026-08-02).
      - « retenu » : la forme se rattache à un maître de la table ;
      - « écarté » : l'entité n'est pas une personne (manufacture, imprimerie,
        « anonyme », mention collective) ou est un pur accident de saisie ;
+     - « hors périmètre » : personne identifiée et correctement comptée, mais
+       dont le fonds n'entre pas dans l'angle éditorial du volume. Ce n'est ni
+       un écart ni un faux positif — le motif est écrit (2026-08-02) ;
      - « à instruire » : personne possible, pas encore vérifiée. PAR DÉFAUT.
    « à instruire » n'est PAS « écarté » : rien n'est retiré par les données, la
    sélection reste ouverte à des lots ultérieurs.
@@ -33,7 +36,8 @@ from datetime import datetime, timezone
 import pandas as pd
 
 import markers
-from build_artistes import MAITRES, _pivot, _trouve_maitre, resout_reference
+from build_artistes import (MOTIF_HORS_PERIMETRE, TOUTES_PERSONNES, _pivot,
+                            _trouve_maitre, resout_reference)
 from config import CHEMIN_CSV, DOSSIER_EXPORTS
 
 # Les 27 du lot initial (2026-07-07) ; le reste vient du lot du temps 5.
@@ -106,7 +110,11 @@ def statut_forme(nom: str, pivot_exemple: str) -> tuple[str, str]:
     d'où il vient. Les deux servent : « Manufacture de Fulda (attribué à) » se
     réduit au nom « FULDA », c'est la mention qui dit que ce n'est pas quelqu'un.
     """
-    maitre = _trouve_maitre(pivot_exemple)
+    maitre = _trouve_maitre(pivot_exemple, TOUTES_PERSONNES)
+    if maitre in MOTIF_HORS_PERIMETRE:
+        # identifiée, comptée, mais hors de l'angle du volume — surtout PAS un
+        # faux positif (décision utilisateur, 2026-08-02)
+        return "hors périmètre", MOTIF_HORS_PERIMETRE[maitre]
     if maitre:
         return "retenu", maitre
     # instruit à l'œil et non retenu : le motif prime sur le tri automatique
@@ -128,7 +136,7 @@ def main() -> None:
     # (David Téniers apparaît dans 57 musées, le doute n'est écrit que dans 24).
     agg = {nom: {"doute": set(), "propre": set(), "copie": set(),
                  "musees": set(), "musees_doute": set()}
-           for nom, *_ in MAITRES}
+           for nom, *_ in TOUTES_PERSONNES}
     total = 0
 
     morceaux = pd.read_csv(CHEMIN_CSV, sep="|", dtype=str, chunksize=200_000,
@@ -143,7 +151,8 @@ def main() -> None:
             if not isinstance(aut, str) or not isinstance(ref, str):
                 continue
             for nom, (cat, _f, _s) in resout_reference(
-                    aut, markers._dans_beaux_arts(dom)).items():
+                    aut, markers._dans_beaux_arts(dom),
+                    TOUTES_PERSONNES).items():
                 a = agg[nom]
                 a[cat].add(ref)
                 if isinstance(code, str) and code.strip():
@@ -155,7 +164,7 @@ def main() -> None:
 
     # 1. Registre par personne (retenus)
     lignes = []
-    for nom, *_ in MAITRES:
+    for nom, *_ in TOUTES_PERSONNES:
         a = agg[nom]
         if nom in LOT_INITIAL:
             lot = "initial-2026-07-07"
@@ -166,6 +175,10 @@ def main() -> None:
         lignes.append({
             "maitre": nom,
             "lot": lot,
+            # « volume 1 » ou « hors périmètre » : la personne est instruite et
+            # comptée dans les deux cas, seule sa présence dans le volume change
+            "perimetre": ("hors périmètre" if nom in MOTIF_HORS_PERIMETRE
+                          else "volume 1"),
             "notices_prudentes": len(a["doute"]),
             "attributions_certaines": len(a["propre"]),
             "copies_d_apres": len(a["copie"]),
@@ -187,7 +200,11 @@ def main() -> None:
     else:
         print("  tous ≥ 10 notices prudentes uniques après regroupement ✓")
 
-    statuts_des_formes(len(lignes))
+    dans_volume = sum(1 for l in lignes if l["perimetre"] == "volume 1")
+    hors = [l["maitre"] for l in lignes if l["perimetre"] != "volume 1"]
+    if hors:
+        print(f"  hors périmètre du volume (identifiés et comptés) : {hors}")
+    statuts_des_formes(dans_volume)
 
     print(f"\n{'notices':>8}{'cert.':>7}{'copies':>7}{'mus.doute':>10}"
           f"{'mus.prés.':>10}  maître  ·  lot")
@@ -209,11 +226,14 @@ def statuts_des_formes(nb_maitres: int) -> None:
     chemin2 = DOSSIER_EXPORTS / "candidats_maitres.csv"
     with open(chemin2, encoding="utf-8") as f:
         candidats = list(csv.DictReader(f, delimiter="|"))
-    compte = {"retenu": 0, "écarté": 0, "à instruire": 0}
+    compte = {"retenu": 0, "hors périmètre": 0, "écarté": 0, "à instruire": 0}
     for c in candidats:
         statut, info = statut_forme(c["nom"], _pivot(c["exemple_mention"]))
-        # une forme déjà signalée « deja_retenu » l'emporte (rattachement sûr)
-        if c["deja_retenu"]:
+        # Une forme déjà signalée « deja_retenu » l'emporte (rattachement sûr) —
+        # SAUF si elle est sortie du périmètre depuis. La colonne est écrite par
+        # candidats_maitres.py au passage précédent : elle vieillit, le verdict
+        # d'instruction non (piège rencontré le 2026-08-02 sur Barla).
+        if c["deja_retenu"] and statut != "hors périmètre":
             statut, info = "retenu", c["deja_retenu"]
         c["statut"] = statut
         c["rattachement_ou_motif"] = info
@@ -227,7 +247,7 @@ def statuts_des_formes(nb_maitres: int) -> None:
         ecr.writerows(candidats)
 
     print(f"\n{len(candidats)} formes au registre exhaustif → {chemin2.name}")
-    for statut in ("retenu", "écarté", "à instruire"):
+    for statut in ("retenu", "hors périmètre", "écarté", "à instruire"):
         print(f"  {statut:>12} : {compte[statut]}")
 
     # 3. Résumé du registre pour la page Méthode. Le site s'engage à publier la
@@ -240,6 +260,7 @@ def statuts_des_formes(nb_maitres: int) -> None:
         "seuil": 10,
         "formes_au_seuil": len(candidats),
         "retenues": compte["retenu"],
+        "hors_perimetre": compte["hors périmètre"],
         "ecartees": compte["écarté"],
         "a_instruire": compte["à instruire"],
         "maitres_retenus": nb_maitres,
@@ -253,6 +274,8 @@ if __name__ == "__main__":
         # les statuts seuls, sans relire le CSV : `maitres_instruits.csv` garde
         # les chiffres du dernier passage complet
         with open(DOSSIER_EXPORTS / "maitres_instruits.csv", encoding="utf-8") as f:
-            statuts_des_formes(sum(1 for _ in f) - 1)
+            lignes = list(csv.DictReader(f, delimiter="|"))
+        statuts_des_formes(sum(1 for l in lignes
+                               if l["perimetre"] == "volume 1"))
     else:
         main()

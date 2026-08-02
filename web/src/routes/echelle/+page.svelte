@@ -117,7 +117,7 @@
 		Sur l'ensemble des œuvres concernées, une formule revient bien plus souvent que les
 		autres&nbsp;: «&nbsp;attribué à&nbsp;», qui reste au plus près de la main de
 		l'artiste. Elle reste aussi la plus fréquente chez les {enLettres(nbNoms)} noms de
-		référence de la rubrique «&nbsp;Explorer les maîtres&nbsp;». Ce qui change, c'est la
+		référence de la rubrique «&nbsp;Explorer les artistes&nbsp;». Ce qui change, c'est la
 		place qu'y prennent les liens plus indirects — l'école, l'atelier, la manière&nbsp;:
 		«&nbsp;de son école&nbsp;» y pèse plus de quatre fois sa part dans l'ensemble de la
 		base.

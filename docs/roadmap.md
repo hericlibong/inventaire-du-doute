@@ -24,14 +24,18 @@ fusion finale.
       notices restant à instruire). Relevé en une passe par `src/instruit_lot.py` : graphies,
       musées, domaines, dates écrites par les musées, références. Test d'identité en trois
       questions tranchées sur la source. **40 personnes retenues, 10 formes écartées avec
-      leur motif** ; la liste passe de 63 à **103 artistes**, le volume de 3 668 à **11 872
-      notices distinctes** (48,4 % du doute national). Un mécanisme ajouté, l'égalité stricte
-      « = », pour le seul Jacques-Louis David. 21 témoins réels et 33 cas unitaires de plus ;
-      280 tests au vert. Chiffres : donnees.md ; arbitrages : decisions.md (bis et ter).
-- [ ] ⏸ **POINT DE CONTRÔLE 1** — rapport de lot, avant toute modification du front public.
-      **Deux arbitrages éditoriaux attendus** : (1) le cas Barla, 5 791 notices et 49 % du
-      volume dans un seul musée ; (2) l'intitulé « maîtres », que 30 fonds locaux sur 40
-      nouveaux ne décrivent plus.
+      leur motif** ; 39 des 40 entrent dans le volume (voir le point de contrôle). Un
+      mécanisme ajouté, l'égalité stricte
+      « = », pour le seul Jacques-Louis David. 21 témoins réels et 35 cas unitaires de plus.
+      Chiffres : donnees.md ; arbitrages : decisions.md (bis à quinquies).
+- [x] ⏸ **POINT DE CONTRÔLE 1 — validé le 2026-08-02**, avec deux arbitrages :
+      1. **Barla hors périmètre** du volume, sans sortir du registre ni des totaux nationaux.
+         Un cinquième statut, « hors périmètre », avec motif publié ; ce n'est **pas** un faux
+         positif. Le volume publie donc **102 artistes** et **6 081 notices distinctes**
+         (24,8 % du doute national, 32 % hors monoculture).
+      2. **L'interface dit « artistes »**, plus « maîtres » — sauf pour décrire la relation
+         d'une œuvre à un artiste (atelier, école, entourage). L'effectif sort des titres et
+         se lit dans les données.
 - [ ] **Phase 2 — Filtrer les œuvres par musée** dans l'onglet Œuvres : menu construit à
       partir des seuls musées concernés par l'artiste affiché, effectifs indiqués, combinaison
       avec le filtre par mention, compteur et pagination recalculés.
@@ -42,11 +46,11 @@ fusion finale.
       Joconde et les formulations prudentes, la sélection expliquée en clair, les chiffres du
       volume, puis l'entrée dans l'exploration. Reprise sélective du prototype (export, tests,
       première visualisation seulement).
-- [ ] **Phase 5 — Alléger « Explorer les maîtres »** : retirer la longue introduction, entrer
+- [ ] **Phase 5 — Alléger « Explorer les artistes »** : retirer la longue introduction, entrer
       directement dans le répertoire, renvoyer discrètement vers la Présentation.
 - [ ] **Phase 6 — Adapter l'accueil** : affiche conservée, titre du volume, quelques chiffres
       dynamiques, deux accès (Présentation, Explorer).
-- [ ] **Phase 7 — Finaliser la navigation** : Accueil · Présentation · Explorer les maîtres ·
+- [ ] **Phase 7 — Finaliser la navigation** : Accueil · Présentation · Explorer les artistes ·
       Méthode. « Comprendre les mentions » quitte la navigation, son URL est redirigée.
 - [ ] ⏸ **POINT DE CONTRÔLE 2** — captures desktop et mobile des six écrans, fil éditorial,
       chiffres publics, limites restantes. Avant fusion.

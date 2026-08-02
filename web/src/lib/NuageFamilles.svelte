@@ -14,13 +14,12 @@
 	// les maîtres, 240). Il a changé le 2026-07-22, quand la liste est passée de 27
 	// à 63 maîtres : de 11 à 310 œuvres concernées, la moitié des profils
 	// s'écrasaient au sol d'une échelle graduée jusqu'à 240 — plus aucune hiérarchie
-	// (le lot du 2026-08-02 a porté l'écart de 11 à 5 791 : la part était le seul
-	// choix tenable, et elle le reste)
 	// lisible, donc « la forme est mauvaise » (CLAUDE.md). La part rend chaque
 	// profil lisible ET garde une échelle commune et fixe, la comparaison portant
 	// sur la FORME du profil. Le volume, lui, n'est pas perdu : il est écrit dans le
 	// bandeau, classé dans le répertoire, et donné en nombre exact dans chaque
-	// infobulle (« 30 œuvres sur 37 — 81 % »).
+	// infobulle (« 30 œuvres sur 37 — 81 % »). Le lot du 2026-08-02 a confirmé le
+	// choix : l'écart entre profils va désormais de 11 à 295 œuvres.
 	let { maitre } = $props();
 
 	// Axe X ordonné par distance narrative au maître (docs/typologie.md), labels
@@ -65,7 +64,7 @@
 		return { id: t.id, titre: t.titre, x1, x2, cx: (x1 + x2) / 2, premier: i === 0 };
 	});
 
-	// Graduations fixes, identiques sur les 63 fiches : un quart, la moitié, etc.
+	// Graduations fixes, identiques sur toutes les fiches : un quart, la moitié, etc.
 	const graduations = [25, 50, 75, 100];
 
 	const points = $derived(
@@ -205,7 +204,7 @@
 		     concernées) sans évoquer un degré de certitude. -->
 		<p class="axe-y-titre">(%) Part parmi les œuvres concernées</p>
 		<svg bind:this={svgEl} viewBox="0 0 380 300" class="graphe" role="img"
-			aria-label="Graphique des mentions de doute pour {maitre.nom}, en trois territoires de proximité (au plus près, autour du maître, dans son influence). Axe vertical : part des œuvres concernées, de 0 à 100 %, échelle commune à tous les maîtres">
+			aria-label="Graphique des mentions de doute pour {maitre.nom}, en trois territoires de proximité (au plus près, autour du maître, dans son influence). Axe vertical : part des œuvres concernées, de 0 à 100 %, échelle commune à tous les artistes">
 			<!-- Bandes de territoire (fond très léger) : posées EN PREMIER, sous tout le
 			     reste. Contiguës, sans marge ni cadre → une seule ligne de proximité,
 			     pas trois blocs séparés. -->

@@ -143,8 +143,8 @@ CAS_IDENTITE = [
     ("VARADY A (attribué à)", None, "un prénom réduit à une initiale"),
     ("BUQUET (atelier)", None, "un nom nu et un atelier"),
     ("Prévost (atelier)", None, "un nom nu et un atelier"),
-    ("Barla Jean-Baptiste (1817-1896) (attribué à)", "Jean-Baptiste Barla",
-     "le naturaliste niçois, une personne malgré le volume"),
+    ("Barla Jean-Baptiste (1817-1896) (attribué à)", None,
+     "identifié, mais hors du périmètre du volume (voir test_hors_perimetre)"),
     ("BARLA Antoinette", None, "une autre Barla"),
 ]
 
@@ -152,6 +152,30 @@ CAS_IDENTITE = [
 @pytest.mark.parametrize("segment,attendu,motif", CAS_IDENTITE)
 def test_identite(segment, attendu, motif):
     assert _trouve_maitre(_pivot(segment)) == attendu, motif
+
+
+# --------------------------------------------------------------------------
+# 1 bis. Hors périmètre : identifié, compté, mais pas dans le volume
+# --------------------------------------------------------------------------
+
+def test_hors_perimetre_reste_identifie():
+    """Une personne hors périmètre n'est PAS un faux positif : les exports du
+    volume l'ignorent, le registre la retrouve et la compte (2026-08-02)."""
+    from build_artistes import (HORS_PERIMETRE, MOTIF_HORS_PERIMETRE,
+                                TOUTES_PERSONNES)
+    segment = "Barla Jean-Baptiste (1817-1896) (attribué à)"
+    assert _trouve_maitre(_pivot(segment)) is None, "absent du volume"
+    assert _trouve_maitre(_pivot(segment), TOUTES_PERSONNES) == \
+        "Jean-Baptiste Barla", "mais bien identifié par le registre"
+    # chaque sortie de périmètre porte un motif publiable, comme les écarts
+    assert all(m.strip() for m in MOTIF_HORS_PERIMETRE.values())
+    assert len(HORS_PERIMETRE) == len(MOTIF_HORS_PERIMETRE)
+
+
+def test_hors_perimetre_absent_de_la_table_du_volume():
+    """Aucune personne hors périmètre ne doit se glisser dans MAITRES."""
+    from build_artistes import MAITRES, MOTIF_HORS_PERIMETRE
+    assert not {n for n, *_ in MAITRES} & set(MOTIF_HORS_PERIMETRE)
 
 
 # --------------------------------------------------------------------------
@@ -226,7 +250,7 @@ CAS_STATUT = [
     # --- instruits au lot 2 (2026-08-02) : la réponse est écrite, dans un sens
     # comme dans l'autre
     ("BARLA JEAN-BAPTISTE", "Barla Jean-Baptiste (1817-1896) (attribué à)",
-     "retenu", "fonds local massif, mais c'est bien une personne"),
+     "hors périmètre", "identifié et compté, mais hors de l'angle du volume"),
     ("DAVID", "David (1748-1825) (attribué à)", "retenu",
      "Jacques-Louis David, pris par égalité stricte"),
     ("MELLET JULES FILS", "MELLET Jules Fils (?)", "écarté",

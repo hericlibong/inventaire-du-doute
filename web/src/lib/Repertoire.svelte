@@ -53,11 +53,11 @@
 	}
 </script>
 
-<nav class="repertoire" aria-label="Répertoire des maîtres">
+<nav class="repertoire" aria-label="Répertoire des artistes">
 	{#if estMobile}
 		<button class="replier" aria-expanded={ouvert} onclick={() => (ouvert = !ouvert)}>
-			<span class="replier-titre">{ouvert ? 'Masquer la liste' : 'Choisir un maître'}</span>
-			<span class="replier-compte">{artistes.length} maîtres</span>
+			<span class="replier-titre">{ouvert ? 'Masquer la liste' : 'Choisir un artiste'}</span>
+			<span class="replier-compte">{artistes.length} artistes</span>
 		</button>
 	{/if}
 
@@ -65,7 +65,7 @@
 		<div class="panneau">
 			<div class="controles">
 				<label class="recherche">
-					<span class="visuellement-cache">Filtrer les maîtres par nom</span>
+					<span class="visuellement-cache">Filtrer les artistes par nom</span>
 					<input type="search" placeholder="Filtrer un nom…" bind:value={recherche} />
 				</label>
 				<div class="tri" role="group" aria-label="Trier la liste">
@@ -110,7 +110,7 @@
 						<BarreFamilles familles={a.familles} total={a.doute} nom={a.nom} hauteur="0.35rem" />
 					</li>
 				{:else}
-					<li class="vide">Aucun maître ne correspond.</li>
+					<li class="vide">Aucun artiste ne correspond.</li>
 				{/each}
 			</ul>
 		</div>

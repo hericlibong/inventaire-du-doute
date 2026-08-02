@@ -4,16 +4,16 @@
   "version_donnee": "2026-07-01",
   "lexique": "markers.py v2 (famille_segment) — unité : référence Joconde unique",
   "critere_liste": "maître de référence ET ≥ 10 notices de doute (hors copie)",
-  "nb_maitres": 103,
-  "date_generation": "2026-08-02T14:00:00+00:00",
+  "nb_maitres": 102,
+  "date_generation": "2026-08-02T14:35:34+00:00",
   "message_central": "« Attribué à » reste la formulation la plus fréquente parmi les maîtres retenus, mais « école de » y occupe une place beaucoup plus importante que dans l'ensemble de Joconde : 35 % contre 7,6 %.",
   "note_methodo": "Les familles peuvent se recouvrir : on ne les additionne pas et on n'utilise pas de diagramme en anneau. Hors de cette liste, seul le total par famille est publiable (pas de classement par nom). La monoculture divulguée (planches Barla, Nice) pèse une large part du doute national ; « global hors monoculture » permet de la neutraliser. Deux mesures distinctes pour la liste : les APPARTENANCES (un lien maître-notice, ce que totalisent les fiches) et les NOTICES distinctes (les références Joconde, seule mesure comparable au total national). Six notices nomment deux maîtres retenus : la somme des fiches vaut donc plus que le nombre d'œuvres. « Hors liste » est calculé sur les notices, jamais par soustraction d'une somme d'appartenances.",
   "totaux": {
     "doute_total": 24507,
-    "doute_appartenances_liste": 12029,
-    "doute_notices_liste": 11872,
+    "doute_appartenances_liste": 6238,
+    "doute_notices_liste": 6081,
     "doute_notices_partagees": 157,
-    "doute_hors_liste": 12635,
+    "doute_hors_liste": 18426,
     "doute_hors_monoculture": 18716
   },
   "monoculture": {
@@ -29,9 +29,9 @@
       "libelle": "attribué à",
       "niveau": 1,
       "global": 17926,
-      "dans_liste": 9175,
-      "dans_liste_notices": 9175,
-      "hors_liste": 8751
+      "dans_liste": 3384,
+      "dans_liste_notices": 3384,
+      "hors_liste": 14542
     },
     {
       "code": "point_interrogation",
@@ -102,8 +102,8 @@
       "niveau": 1,
       "libelle": "Presque lui",
       "global": 20014,
-      "dans_liste": 9682,
-      "dans_liste_notices": 9527,
+      "dans_liste": 3891,
+      "dans_liste_notices": 3736,
       "global_hors_monoculture": 14223
     },
     {
