@@ -146,6 +146,10 @@
 
 	function choisir(code) {
 		choisi = choisi === code ? null : code;
+		// Le panneau prend le relais de l'infobulle : la laisser ouverte afficherait
+		// deux fois la même chose côte à côte, et elle recouvre le titre de la vue
+		// (C8, 2026-08-03). Le survol renseigne, le choix engage — pas les deux.
+		actif = null;
 	}
 
 	function auClavier(event, code) {

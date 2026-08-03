@@ -121,23 +121,21 @@ Le registre est relu au point de contrôle 2, et les corrections sont portées e
       règle stricte là-dessus (une notice n'est pas une œuvre, et le site ne compte pas des
       œuvres) : c'est elle qui n'est pas tenue. **À trancher une fois pour toutes et à
       appliquer partout, avant toute publication.**
-- [ ] **C7 — L'effectif d'artistes n'est plus affiché sur grand écran.** Régression introduite
-      en phase 5 : l'introduction qui portait « Cette rubrique explore 102 artistes » a été
-      retirée, et le compteur « 102 artistes » du répertoire ne s'affiche que sous 720 px.
-      Sur ordinateur, la liste montre dix noms dans une colonne qui défile, sans que rien ne
-      dise combien il y en a. Le lecteur ne sait pas s'il en reste douze ou quatre-vingt-dix.
-- [ ] **C8 — Carte : l'infobulle double le panneau au moment du choix.** Quand on clique un
-      point, le panneau s'ouvre au flanc pendant que l'infobulle de survol reste affichée :
-      la même information est écrite deux fois côte à côte, et l'infobulle recouvre le titre
-      « D'où viennent ces notices ». Le choix doit fermer le survol.
-- [ ] **C9 — Le nom du musée est répété sous chaque œuvre alors qu'un filtre musée est
-      actif.** Avec Besançon sélectionné, les six entrées portent toutes « musée des
-      beaux-arts et d'archéologie, Besançon ». Repéré en phase 2 et laissé de côté ; à
-      l'écran, c'est du bruit pur.
-- [ ] **C10 — Les vignettes vides saturent la liste des œuvres.** Sur un musée sans
-      reproduction ouverte, l'onglet Œuvres devient une colonne de six grands cadres
-      « reproduction non affichée ». Le placeholder occupe autant de place qu'une image, pour
-      ne rien montrer. Revoir son gabarit, ou sa présence.
+- [x] **C7 — RÉSOLU le 2026-08-03.** L'effectif s'affiche au-dessus de la recherche, sur
+      ordinateur, dans le registre UI du répertoire (« 102 artistes »). La valeur vient de
+      `artistes.json`, jamais d'un nombre écrit à la main — vérifié en comparant l'affichage à
+      la longueur du tableau chargé. Pas de doublon sur mobile, où le bouton de repli la porte
+      déjà.
+- [x] **C8 — RÉSOLU le 2026-08-03.** Choisir un point ferme l'infobulle de survol : le
+      panneau prend le relais, seul. Vérifié — au survol, un élément flottant sur la carte ;
+      après le clic, zéro, et le panneau est ouvert. Le titre de la vue n'est plus recouvert.
+- [x] **C9 — RÉSOLU le 2026-08-03.** Le lieu disparaît des entrées quand un filtre par musée
+      est actif, et revient dès qu'on le retire. Vérifié : 0 mention répétée avec le filtre,
+      8 sans.
+- [x] **C10 — RÉSOLU le 2026-08-03.** Le cadre vide est remplacé par une mention brève en
+      tête de la colonne du média : **220 px de hauteur → 20 px**. Les entrées qui portent une
+      image ne bougent pas (gabarit 176 × 220 px, inchangé), et les titres restent alignés sur
+      une seule abscisse d'une entrée à l'autre.
 - [ ] **C11 — Longueur des pages sur mobile.** Mesuré au 2026-08-03 : Méthode **9 294 px**,
       Présentation **6 175 px**, onglet Œuvres filtré 3 299 px. La Méthode a un sommaire, pas
       la Présentation. À reprendre avec la passe éditoriale (C1).

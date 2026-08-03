@@ -63,6 +63,15 @@
 
 	{#if ouvert}
 		<div class="panneau">
+			<!-- Effectif du répertoire. Sur mobile il est porté par le bouton de repli
+			     ci-dessus ; sur ordinateur ce bouton n'existe pas, et depuis le retrait
+			     de l'introduction (phase 5) plus rien ne disait combien la liste compte
+			     de noms — on en voyait dix dans une colonne qui défile (C7, 2026-08-03).
+			     La valeur vient des données, jamais d'un nombre écrit à la main. -->
+			{#if !estMobile}
+				<p class="compte-total">{artistes.length} artistes</p>
+			{/if}
+
 			<div class="controles">
 				<label class="recherche">
 					<span class="visuellement-cache">Filtrer les artistes par nom</span>
@@ -140,6 +149,17 @@
 	.replier-titre {
 		font-weight: 600;
 		color: var(--couleur-encre);
+	}
+
+	/* Effectif du répertoire (ordinateur) : registre UI, discret, au-dessus de la
+	   recherche — il décrit la liste entière, pas le résultat d'un filtre. */
+	.compte-total {
+		margin: 0 0 var(--espace-3);
+		font-family: var(--police-ui);
+		font-size: var(--taille-xs);
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		color: var(--couleur-encre-douce);
 	}
 
 	.replier-compte {

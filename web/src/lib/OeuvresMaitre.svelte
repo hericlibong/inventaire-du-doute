@@ -297,18 +297,23 @@
 								</figcaption>
 							</figure>
 						{:else}
-							<!-- Pas de reproduction réutilisable connue : placeholder assumé,
-							     jamais une image inventée. Même gabarit que la vignette. -->
-							<div class="media" aria-hidden="true">
-								<span>reproduction<br />non affichée</span>
-							</div>
+							<!-- Pas de reproduction réutilisable connue. Le cadre vide occupait
+							     autant de place qu'une image : sur un fonds sans reproduction, la
+							     liste devenait une colonne de boîtes vides (C10, 2026-08-03). Il
+							     est remplacé par une mention brève, en tête de la même colonne —
+							     l'alignement du texte est conservé, les entrées qui PORTENT une
+							     image ne changent pas. -->
+							<p class="media-absente" aria-hidden="true">reproduction non affichée</p>
 						{/if}
 						<div class="corps">
 							<p class="kicker">
 								<span class="pastille" style="background: {fam(o.code).couleur}"></span>{fam(o.code).header}
 							</p>
 							<h4 class="titre">{o.titre ?? 'Sans titre'}</h4>
-							{#if lieu(o)}<p class="lieu">{lieu(o)}</p>{/if}
+							<!-- Le lieu disparaît quand un filtre par musée est actif : toutes les
+							     entrées viennent alors du même établissement, et le répéter sous
+							     chacune n'ajoute rien (C9, 2026-08-03). -->
+							{#if lieu(o) && !musee}<p class="lieu">{lieu(o)}</p>{/if}
 							<p class="verbatim" style="border-left-color: {fam(o.code).couleur}">«&nbsp;{o.extrait}&nbsp;»</p>
 							<a class="lien-fiche" href={lienPop(o.reference)} target="_blank" rel="noopener">
 								Voir la fiche publique sur POP&nbsp;→
@@ -598,6 +603,24 @@
 
 	/* Reproduction réelle : l'ancre EST la boîte média (classe .media), l'image la
 	   remplit en object-fit: contain — proportions gardées, jamais rognée. */
+	/* Mention compacte à la place du cadre : quelques millimètres au lieu d'une
+	   boîte de 14 rem, dans la colonne du média pour que les titres restent alignés
+	   d'une entrée à l'autre. */
+	.media-absente {
+		margin: 0;
+		/* sans quoi l'élément s'étire sur toute la hauteur de la ligne de grille et
+		   sa boîte reste aussi haute que l'ancien cadre, pour trois mots */
+		align-self: start;
+		padding-top: 0.35rem;
+		border-top: var(--filet-clair);
+		font-family: var(--police-ui);
+		font-size: 0.62rem;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		line-height: 1.35;
+		color: var(--couleur-encre-douce);
+	}
+
 	.media-figure {
 		margin: 0;
 		min-width: 0;
