@@ -288,8 +288,30 @@
 </div>
 
 <style>
+	/* Enveloppe IDENTIQUE à celle d'« Explorer les artistes » (2026-08-03) : même
+	   largeur maximale, même centrage, mêmes gouttières, même retrait sous le
+	   bandeau. Les deux pages doivent se poser au même endroit de l'écran — sinon
+	   passer de l'une à l'autre donne l'impression de changer de site. La page était
+	   restée sans limite après son passage en pleine largeur : sur un grand écran,
+	   elle courait d'un bord à l'autre. */
 	.page {
-		padding: var(--espace-5) clamp(1rem, 4vw, 3rem) var(--espace-6);
+		box-sizing: border-box;
+		width: 100%;
+		max-width: 92rem;
+		margin-inline: auto;
+		padding-inline: clamp(1.25rem, 3vw, 3rem);
+		padding-top: clamp(1.5rem, 3.5vw, 3.5rem);
+		padding-bottom: var(--espace-6);
+	}
+
+	/* Les blocs LARGES de la page (chiffres, sélection, glossaire, graphique) se
+	   bornent tous au même endroit : sans quoi chacun trouve sa propre limite et la
+	   page n'a plus de colonne. Le texte courant, lui, reste plus étroit (44 rem). */
+	.chiffres,
+	.etapes,
+	.zones,
+	.graphique {
+		max-width: 72rem;
 	}
 
 	.kicker {
@@ -389,7 +411,6 @@
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
 		gap: var(--espace-4);
-		max-width: 58rem;
 		margin: var(--espace-5) 0 0;
 		padding: 0;
 		list-style: none;
@@ -421,7 +442,6 @@
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
 		gap: clamp(1.5rem, 3vw, 2.5rem);
-		max-width: 72rem;
 	}
 
 	.etapes h3 {
@@ -490,7 +510,6 @@
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
 		gap: clamp(1.5rem, 3vw, 2.5rem);
-		max-width: 72rem;
 	}
 
 	.zone h3 {

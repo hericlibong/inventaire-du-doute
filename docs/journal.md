@@ -2,6 +2,26 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-08-03 — Une page sans marges, et pourquoi je ne l'avais pas vue
+
+La page de présentation s'étalait d'un bord à l'autre de l'écran. Sur un grand moniteur, des
+lignes de texte de deux mille pixels : illisible. C'est moi qui l'avais cassée la veille, en
+basculant la route en « pleine largeur » pour qu'elle gère ses propres gouttières — sans lui
+en donner. Elle n'avait plus de limite du tout.
+
+Ce que je n'avais pas vu, et la raison est instructive : toutes mes vérifications s'étaient
+faites à 1280 px, où la page tient encore par ses seuls paddings. Le défaut n'apparaît qu'au
+delà. Une largeur de contrôle ne suffit pas quand on touche à une enveloppe.
+
+Elle reprend maintenant l'enveloppe d'« Explorer les artistes », à l'identique — même largeur
+maximale, même centrage, mêmes gouttières. Mesuré aux trois largeurs : même bord gauche, même
+point de départ du texte. Passer d'une page à l'autre ne doit pas donner l'impression de
+changer de site.
+
+Au passage, les blocs larges de la page se bornaient chacun où bon leur semblait, et le
+graphique nulle part. Ils ont maintenant une seule limite commune. Le texte courant, lui,
+garde sa mesure étroite : c'est ce qui se lit, pas ce qui s'aligne.
+
 ## 2026-08-02 (phase 7) — Quatre entrées, et un déménagement qu'on a failli oublier
 
 La navigation finale tient en quatre mots : Accueil, Présentation, Explorer les artistes,

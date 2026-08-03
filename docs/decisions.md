@@ -2,6 +2,27 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-03 — La Présentation reprend l'enveloppe d'« Explorer les artistes »
+
+Défaut introduit en phase 7 et signalé par l'utilisateur : la page « Présentation » courait
+d'un bord à l'autre de l'écran, sans marges, illisible sur un grand moniteur.
+
+**La cause.** En passant la route en « pleine largeur » (pour qu'elle gère ses propres
+gouttières comme l'accueil et l'exploration), on lui a retiré la limite du conteneur `main`
+sans lui en donner une. Elle n'avait qu'un `padding` : à 1920 px, le texte occupait toute la
+largeur de l'écran.
+
+**Le correctif.** La page reprend **exactement** l'enveloppe d'« Explorer les artistes » —
+`max-width: 92rem`, `margin-inline: auto`, mêmes gouttières, même retrait sous le bandeau.
+Mesuré aux trois largeurs (1920, 1440, 1280 px) : les deux pages ont le même bord gauche, la
+même largeur, le même point de départ du texte. Passer de l'une à l'autre ne doit pas donner
+l'impression de changer de site.
+
+**Et une colonne intérieure.** Les blocs larges de la page — chiffres, sélection, glossaire,
+graphique — se bornaient chacun où il voulait (58, 72 rem, ou rien du tout pour le graphique).
+Ils partagent désormais **une seule limite**, déclarée une fois. Le texte courant garde sa
+mesure plus étroite (44 rem) : c'est ce qui se lit, pas ce qui s'aligne.
+
 ## 2026-08-02 (duodecies) — Navigation finale, et les définitions déménagent
 
 Phase 7. La navigation publique du volume 1 tient en quatre entrées, dans l'ordre de
