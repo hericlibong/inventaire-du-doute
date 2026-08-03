@@ -110,6 +110,37 @@ Le registre est relu au point de contrôle 2, et les corrections sont portées e
       donne à voir une œuvre, un nom, une hésitation. L'affiche doit faire entrer, pas
       résumer. **À réécrire d'un bloc, avec la contrainte de forme connue** : trois lignes
       courtes maximum, la zone sombre de l'affiche étant étroite (decisions.md, undecies).
+- [ ] **C6 — ⛔ BLOQUANT : le même nombre s'appelle « œuvres » ici et « notices » là.**
+      Relevé à l'audit du 2026-08-03. Pour un seul artiste, la même quantité change de nom
+      d'un onglet à l'autre : le bandeau dit « 310 **œuvres** sont associées à son nom », le
+      graphique « part parmi les **œuvres** concernées », l'onglet Œuvres « 310 **œuvres**
+      portent une mention prudente » — mais la carte dit « 276 **notices** concernées », le
+      bloc des copies « 354 **notices** », et la Présentation comme l'accueil comptent en
+      **notices**. Pire, dans le panneau de la carte, les deux mots se suivent : « 276 notices
+      concernées » puis « Voir les 276 **œuvres** conservées dans ce musée ». Le projet a une
+      règle stricte là-dessus (une notice n'est pas une œuvre, et le site ne compte pas des
+      œuvres) : c'est elle qui n'est pas tenue. **À trancher une fois pour toutes et à
+      appliquer partout, avant toute publication.**
+- [ ] **C7 — L'effectif d'artistes n'est plus affiché sur grand écran.** Régression introduite
+      en phase 5 : l'introduction qui portait « Cette rubrique explore 102 artistes » a été
+      retirée, et le compteur « 102 artistes » du répertoire ne s'affiche que sous 720 px.
+      Sur ordinateur, la liste montre dix noms dans une colonne qui défile, sans que rien ne
+      dise combien il y en a. Le lecteur ne sait pas s'il en reste douze ou quatre-vingt-dix.
+- [ ] **C8 — Carte : l'infobulle double le panneau au moment du choix.** Quand on clique un
+      point, le panneau s'ouvre au flanc pendant que l'infobulle de survol reste affichée :
+      la même information est écrite deux fois côte à côte, et l'infobulle recouvre le titre
+      « D'où viennent ces notices ». Le choix doit fermer le survol.
+- [ ] **C9 — Le nom du musée est répété sous chaque œuvre alors qu'un filtre musée est
+      actif.** Avec Besançon sélectionné, les six entrées portent toutes « musée des
+      beaux-arts et d'archéologie, Besançon ». Repéré en phase 2 et laissé de côté ; à
+      l'écran, c'est du bruit pur.
+- [ ] **C10 — Les vignettes vides saturent la liste des œuvres.** Sur un musée sans
+      reproduction ouverte, l'onglet Œuvres devient une colonne de six grands cadres
+      « reproduction non affichée ». Le placeholder occupe autant de place qu'une image, pour
+      ne rien montrer. Revoir son gabarit, ou sa présence.
+- [ ] **C11 — Longueur des pages sur mobile.** Mesuré au 2026-08-03 : Méthode **9 294 px**,
+      Présentation **6 175 px**, onglet Œuvres filtré 3 299 px. La Méthode a un sommaire, pas
+      la Présentation. À reprendre avec la passe éditoriale (C1).
 - [ ] **C2 — Chercher les règles héritées qui décrivent mal ce qu'on regarde.** Une a été
       trouvée et corrigée le 2026-08-02 : « pas de carte en dessous de deux musées », qui
       traitait un repère géographique comme un graphique de répartition. Le défaut n'était pas

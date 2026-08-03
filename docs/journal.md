@@ -2,6 +2,35 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-08-03 — Audit avant fusion : ce que douze captures ont montré
+
+Point de contrôle 2, mené comme un audit et non comme une validation : les six écrans, en
+grand écran et en 390 px, capturés en entier et regardés un par un.
+
+Le fil éditorial tient. On entre par l'affiche, on comprend le sujet sur une notice réelle,
+on voit comment les artistes ont été choisis, et on entre dans l'outil. Les chiffres sont
+justes et tous lus dans les données. Aucun débordement horizontal nulle part, aucune erreur
+JavaScript pendant les parcours.
+
+Ce n'est pas ce qui compte. Ce que l'audit a trouvé, c'est un défaut qui traverse toute
+l'application et qu'aucune vérification automatique ne pouvait attraper : **le même nombre
+n'a pas le même nom selon l'endroit où on le lit**. Le bandeau d'un artiste annonce
+« 310 œuvres », sa carte « 276 notices concernées », son bloc de copies « 354 notices », et
+la page de présentation compte en notices. Dans le panneau de la carte, les deux mots se
+suivent à une ligne d'intervalle. Or le projet a une règle explicite là-dessus depuis des
+semaines — une notice n'est pas une œuvre, et le site ne prétend pas compter des œuvres.
+Elle n'est pas tenue. Tant qu'elle ne l'est pas, rien ne se publie.
+
+Le reste est du même ordre : des choses qui ne se voient qu'en regardant. Le compteur
+d'artistes a disparu de l'écran sur ordinateur — c'est moi qui l'ai retiré en allégeant la
+page, sans voir qu'il ne restait affiché que sur mobile. L'infobulle de la carte se
+superpose au panneau au moment même où on clique, et recouvre le titre. Le nom du musée se
+répète sous chacune des six œuvres quand on a justement filtré par ce musée. Et sur un fonds
+sans reproductions, la liste devient une colonne de cadres vides.
+
+Onze corrections au registre, dont une bloquante. L'application n'est pas publiable, et le
+dire est le seul résultat utile de cet audit.
+
 ## 2026-08-03 — Une page sans marges, et pourquoi je ne l'avais pas vue
 
 La page de présentation s'étalait d'un bord à l'autre de l'écran. Sur un grand moniteur, des
