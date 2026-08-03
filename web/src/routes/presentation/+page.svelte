@@ -49,35 +49,34 @@
 <div class="page">
 	<!-- OUVERTURE (révisée le 2026-08-03, texte de l'utilisateur repris tel quel) : deux
 	     blocs séparés, deux titres sobres formulés comme des questions. Le premier dit ce
-	     qu'est le projet, le second ce que contient ce volet. Aucun récit, aucun constat
-	     nouveau. Les trois effectifs sont lus dans les exports — le total national vient de
+	     qu'est le projet et sa matière, le second ce que contient ce volet et ce qu'on peut
+	     y faire — la définition ne se répète pas d'un bloc à l'autre (resserrement du
+	     2026-08-03, à la relecture de l'utilisateur). Aucun récit, aucun constat nouveau.
+	     Les trois effectifs sont lus dans les exports — le total national vient de
 	     niveaux.json, les deux autres de corpus_maitres.json. -->
 	<header class="tete">
 		<p class="kicker">Volume 1 — Autour des maîtres</p>
 		<h1>Qu'est-ce que L'Inventaire du doute&nbsp;?</h1>
 		<p class="ouverture-texte">
-			L'Inventaire du doute est un projet d'analyse et d'exploration de la base Joconde, le
-			catalogue collectif des musées de France. Il recense les notices dans lesquelles un
-			musée exprime une réserve sur l'auteur d'une œuvre, puis organise ces informations
-			pour les rendre consultables. À ce jour,
-			<strong>{nombre(niveaux.doute_total)} notices</strong> comportant au moins une
-			formulation prudente ont été repérées. Le projet ne cherche pas à authentifier les
-			œuvres&nbsp;: il montre comment les musées signalent, décrivent et publient leurs
-			incertitudes d'attribution.
+			L'Inventaire du doute analyse les données de Joconde, le catalogue collectif des
+			musées de France. Il repère les notices dans lesquelles l'auteur d'une œuvre est
+			indiqué avec réserve et rassemble les formulations employées par les musées.
+			<strong>{nombre(niveaux.doute_total)} notices</strong> ont ainsi été identifiées.
+			Le projet ne cherche pas à authentifier les œuvres, mais à rendre ces incertitudes
+			visibles et consultables.
 		</p>
 	</header>
 
 	<section class="ouverture">
 		<h2>Que présente ce premier volet&nbsp;?</h2>
 		<p class="ouverture-texte">
-			Cette application constitue le premier volet d'une série d'enquêtes consacrées aux
-			données de Joconde. Elle s'intéresse aux artistes dont le nom revient régulièrement
-			dans des notices exprimant une réserve sur l'attribution. La sélection actuelle réunit
+			Ce premier volet est consacré aux artistes dont le nom apparaît régulièrement avec une
+			réserve d'attribution. Il réunit actuellement
 			<strong>{nombre(u.nb_artistes)} artistes</strong> et
-			<strong>{nombre(u.notices_distinctes)} notices</strong>. Pour chacun, l'application
-			permet d'examiner les formulations employées, de consulter les œuvres décrites et de
-			repérer les musées qui les conservent. D'autres volets pourront ensuite explorer le
-			doute sous des angles différents.
+			<strong>{nombre(u.notices_distinctes)} notices</strong>. Pour chacun, le lecteur peut
+			comparer les formulations employées, consulter les œuvres concernées et voir dans
+			quels musées elles sont conservées. D'autres volets pourront explorer différentes
+			formes de doute présentes dans Joconde.
 		</p>
 	</section>
 
