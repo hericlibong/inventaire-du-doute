@@ -82,11 +82,45 @@ fusion finale.
       étroite, une phrase de plus et le texte devient illisible sur l'illustration (vérifié,
       puis resserré). « Présentation » ouvre la navigation de couverture, « Explorer les
       artistes » reste l'entrée principale. Desktop 1440 px et mobile 390 px vérifiés.
-- [ ] **Phase 7 — Finaliser la navigation** : Accueil · Présentation · Explorer les artistes ·
-      Méthode. « Comprendre les mentions » quitte la navigation, son URL est redirigée.
-- [ ] ⏸ **POINT DE CONTRÔLE 2** — captures desktop et mobile des six écrans, fil éditorial,
-      chiffres publics, limites restantes. Avant fusion.
-      **Y reprendre le REGISTRE DES CORRECTIONS ci-dessous, point par point.**
+- [x] **Phase 7 — Finaliser la navigation** (2026-08-02, `b40319c`). Quatre entrées,
+      identiques dans le bandeau et sur la couverture : Accueil · Présentation · Explorer les
+      artistes · Méthode. « Comprendre les mentions » sort ; **ses définitions des huit
+      mentions déménagent sur la Présentation**, sous le graphique qui les compte — elles
+      n'existaient nulle part ailleurs. `/echelle` redirige en 308 vers `/presentation` ; les
+      deux liens de la Méthode sont repointés. **Le mécanisme « à venir » est supprimé**
+      (champ `prete`, branche inerte), pas seulement ses entrées.
+- [x] ⏸ **POINT DE CONTRÔLE 2 — fait le 2026-08-03** (`08fbf78`), mené comme un **audit
+      préalable** et non comme une validation : douze captures (six écrans × desktop 1440 px
+      et mobile 390 px), pages longues capturées en entier. Le fil éditorial et les chiffres
+      tiennent ; **l'application n'est pas publiable en l'état** (constat utilisateur, partagé).
+      Six corrections de plus au registre, dont une bloquante. **Aucune fusion proposée.**
+      C7 à C10 corrigés dans la foulée (2026-08-03, `2b9e7d4`).
+### ✍ CHANTIER ÉDITORIAL FINAL (ouvert le 2026-08-03)
+
+Dernier chantier avant la phase 8. Il traite la copie publiée, de bout en bout, et solde
+l'essentiel du registre ci-dessous — au premier chef **C6** (« notice » contre « œuvre ») et
+**C1** (tous les textes sont une première écriture, jamais retravaillée).
+
+**Règle de conduite du chantier, posée par l'utilisateur et non négociable :**
+
+> **Chaque tâche fait l'objet d'une discussion et d'un cadrage avec l'utilisateur AVANT son
+> lancement. Aucune proposition de texte, aucune implémentation ne doit être anticipée.**
+
+Autrement dit : on ne rédige rien tant que la tâche n'est pas cadrée, et on ne prend pas
+d'avance sur la tâche suivante. L'ordre ci-dessous est celui du travail, pas une liste de
+souhaits — la règle de vocabulaire vient en premier parce que tout le reste en dépend, et
+l'accueil en dernier parce qu'il résume ce que les autres pages auront fixé.
+
+- [ ] **É1 — Définir la règle d'emploi de « notice » et « œuvre ».** Traite **C6** (bloquant).
+- [ ] **É2 — Revoir la page Présentation.**
+- [ ] **É3 — Revoir les textes de l'exploration des artistes.**
+- [ ] **É4 — Revoir la page Méthode.**
+- [ ] **É5 — Régler les questions éditoriales transversales**, notamment le titre du volume.
+      Recoupe **C3**.
+- [ ] **É6 — Revoir la page d'accueil, en dernier.** Traite **C5**.
+
+---
+
 ### ✎ REGISTRE DES CORRECTIONS — à traiter avant la fusion
 
 Ouvert le 2026-08-02 à la demande de l'utilisateur. Tout ce qui est repéré en chemin et
