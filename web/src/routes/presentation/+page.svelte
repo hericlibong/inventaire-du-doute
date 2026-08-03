@@ -56,12 +56,12 @@
 	     niveaux.json, les deux autres de corpus_maitres.json. -->
 	<header class="tete">
 		<p class="kicker">Volume 1 — Autour des maîtres</p>
-		<h1>Qu'est-ce que L'Inventaire du doute&nbsp;?</h1>
+		<h1>Qu'est-ce que L'inventaire du doute&nbsp;?</h1>
 		<p class="ouverture-texte">
-			L'Inventaire du doute analyse les données de Joconde, le catalogue collectif des
+			L'inventaire du doute analyse les données de Joconde, le catalogue collectif des
 			musées de France. Il repère les notices dans lesquelles l'auteur d'une œuvre est
 			indiqué avec réserve et rassemble les formulations employées par les musées.
-			<strong>{nombre(niveaux.doute_total)} notices</strong> ont ainsi été identifiées.
+			On en compte aujourd'hui <strong>{nombre(niveaux.doute_total)}</strong>.
 			Le projet ne cherche pas à authentifier les œuvres, mais à rendre ces incertitudes
 			visibles et consultables.
 		</p>
@@ -74,8 +74,8 @@
 			réserve d'attribution. Il réunit actuellement
 			<strong>{nombre(u.nb_artistes)} artistes</strong> et
 			<strong>{nombre(u.notices_distinctes)} notices</strong>. Pour chacun, le lecteur peut
-			comparer les formulations employées, consulter les œuvres concernées et voir dans
-			quels musées elles sont conservées. D'autres volets pourront explorer différentes
+			comparer ces formulations, consulter les œuvres concernées et voir dans quels musées
+			elles sont conservées. D'autres volets pourront explorer différentes
 			formes de doute présentes dans Joconde.
 		</p>
 	</section>
