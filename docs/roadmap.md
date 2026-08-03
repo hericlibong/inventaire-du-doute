@@ -98,8 +98,8 @@ fusion finale.
 ### ✍ CHANTIER ÉDITORIAL FINAL (ouvert le 2026-08-03)
 
 Dernier chantier avant la phase 8. Il traite la copie publiée, de bout en bout, et solde
-l'essentiel du registre ci-dessous — au premier chef **C6** (« notice » contre « œuvre ») et
-**C1** (tous les textes sont une première écriture, jamais retravaillée).
+l'essentiel du registre ci-dessous, au premier chef **C1** (tous les textes sont une première
+écriture, jamais retravaillée).
 
 **Règle de conduite du chantier, posée par l'utilisateur et non négociable :**
 
@@ -111,7 +111,11 @@ d'avance sur la tâche suivante. L'ordre ci-dessous est celui du travail, pas un
 souhaits — la règle de vocabulaire vient en premier parce que tout le reste en dépend, et
 l'accueil en dernier parce qu'il résume ce que les autres pages auront fixé.
 
-- [ ] **É1 — Définir la règle d'emploi de « notice » et « œuvre ».** Traite **C6** (bloquant).
+- [x] **É1 — Règle d'emploi de « notice » et « œuvre » : TRANCHÉE le 2026-08-03** par
+      l'utilisateur, avant ouverture de la tâche. C'est une convention de registre — « notice »
+      côté méthode et données, « œuvre » côté lecteur —, sans remplacement mécanique.
+      Écrite dans decisions.md (2026-08-03 bis). **C6 n'est plus bloquant** : il ne reste
+      qu'une vérification de cohérence lors de la revue de chaque page.
 - [ ] **É2 — Revoir la page Présentation.**
 - [ ] **É3 — Revoir les textes de l'exploration des artistes.**
 - [ ] **É4 — Revoir la page Méthode.**
@@ -144,7 +148,13 @@ Le registre est relu au point de contrôle 2, et les corrections sont portées e
       donne à voir une œuvre, un nom, une hésitation. L'affiche doit faire entrer, pas
       résumer. **À réécrire d'un bloc, avec la contrainte de forme connue** : trois lignes
       courtes maximum, la zone sombre de l'affiche étant étroite (decisions.md, undecies).
-- [ ] **C6 — ⛔ BLOQUANT : le même nombre s'appelle « œuvres » ici et « notices » là.**
+- [ ] **C6 — Cohérence « notice » / « œuvre », page par page** (statut bloquant RETIRÉ le
+      2026-08-03 : c'est une convention, pas un défaut — decisions.md, 2026-08-03 bis).
+      **« notice »** pour la méthode, les données et les explications techniques ;
+      **« œuvre »** pour l'interface, les légendes, les bulles et les textes destinés au
+      lecteur ; **aucun remplacement mécanique**. Il reste à vérifier, au moment où chaque
+      page est revue, que le mot employé correspond bien au registre de la page. Constat
+      d'origine, qui reste à trancher au cas par cas :
       Relevé à l'audit du 2026-08-03. Pour un seul artiste, la même quantité change de nom
       d'un onglet à l'autre : le bandeau dit « 310 **œuvres** sont associées à son nom », le
       graphique « part parmi les **œuvres** concernées », l'onglet Œuvres « 310 **œuvres**

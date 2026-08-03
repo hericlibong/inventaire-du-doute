@@ -2,6 +2,31 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-03 (bis) — « Notice » et « œuvre » : une convention, pas une correction
+
+L'audit du point de contrôle 2 avait relevé que le même nombre s'appelle « œuvres » sur le
+bandeau d'un artiste et « notices » sur sa carte, et l'avait classé **bloquant** (C6).
+
+**Arbitrage utilisateur : ce n'est pas un défaut à corriger, c'est une convention à tenir.**
+
+> - **« notice »** pour la méthode, les données et les explications techniques ;
+> - **« œuvre »** pour l'interface, les légendes, les bulles et les textes destinés au
+>   lecteur ;
+> - **aucun remplacement mécanique** d'un terme par l'autre.
+
+Les deux mots ne sont donc pas interchangeables et ne doivent pas être uniformisés : ils
+marquent deux registres. Un lecteur devant une fiche regarde des œuvres ; une page qui
+explique comment on a compté parle de notices, parce que c'est l'unité réelle du calcul et
+qu'une notice peut exceptionnellement décrire un ensemble.
+
+**Conséquence sur le registre des corrections** : C6 perd son statut bloquant. Il ne reste
+qu'une **vérification de cohérence page par page**, faite au moment où chaque page est revue
+dans le chantier éditorial — pas une passe de recherche-remplacement.
+
+**Ce que cela ne change pas** : la règle stricte du 2026-07-18 tient toujours — on ne publie
+jamais un total national en « œuvres » (« 24 507 œuvres » resterait faux), et le projet
+n'authentifie rien.
+
 ## 2026-08-03 — La Présentation reprend l'enveloppe d'« Explorer les artistes »
 
 Défaut introduit en phase 7 et signalé par l'utilisateur : la page « Présentation » courait
