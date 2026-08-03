@@ -47,15 +47,39 @@
 </svelte:head>
 
 <div class="page">
+	<!-- OUVERTURE (révisée le 2026-08-03, texte de l'utilisateur repris tel quel) : deux
+	     blocs séparés, deux titres sobres formulés comme des questions. Le premier dit ce
+	     qu'est le projet, le second ce que contient ce volet. Aucun récit, aucun constat
+	     nouveau. Les trois effectifs sont lus dans les exports — le total national vient de
+	     niveaux.json, les deux autres de corpus_maitres.json. -->
 	<header class="tete">
 		<p class="kicker">Volume 1 — Autour des maîtres</p>
-		<h1>Un nom sous une œuvre n'est pas toujours une certitude</h1>
-		<p class="chapo">
-			Dans les musées de France, les cartels portent des noms d'artistes. Derrière certains
-			d'entre eux, le musée a écrit qu'il n'était pas sûr. Ce volume lit ces formulations —
-			celles que les musées publient eux-mêmes — et regarde qui elles concernent.
+		<h1>Qu'est-ce que L'Inventaire du doute&nbsp;?</h1>
+		<p class="ouverture-texte">
+			L'Inventaire du doute est un projet d'analyse et d'exploration de la base Joconde, le
+			catalogue collectif des musées de France. Il recense les notices dans lesquelles un
+			musée exprime une réserve sur l'auteur d'une œuvre, puis organise ces informations
+			pour les rendre consultables. À ce jour,
+			<strong>{nombre(niveaux.doute_total)} notices</strong> comportant au moins une
+			formulation prudente ont été repérées. Le projet ne cherche pas à authentifier les
+			œuvres&nbsp;: il montre comment les musées signalent, décrivent et publient leurs
+			incertitudes d'attribution.
 		</p>
 	</header>
+
+	<section class="ouverture">
+		<h2>Que présente ce premier volet&nbsp;?</h2>
+		<p class="ouverture-texte">
+			Cette application constitue le premier volet d'une série d'enquêtes consacrées aux
+			données de Joconde. Elle s'intéresse aux artistes dont le nom revient régulièrement
+			dans des notices exprimant une réserve sur l'attribution. La sélection actuelle réunit
+			<strong>{nombre(u.nb_artistes)} artistes</strong> et
+			<strong>{nombre(u.notices_distinctes)} notices</strong>. Pour chacun, l'application
+			permet d'examiner les formulations employées, de consulter les œuvres décrites et de
+			repérer les musées qui les conservent. D'autres volets pourront ensuite explorer le
+			doute sous des angles différents.
+		</p>
+	</section>
 
 	<!-- 1. LA NOTICE : un cas réel, ses mots exacts. --------------------------- -->
 	<section class="cas">
@@ -334,7 +358,17 @@
 		line-height: 1.15;
 	}
 
-	.chapo {
+	/* Ouverture : les deux blocs ont le même traitement, pour qu'ils se lisent comme
+	   deux réponses de même rang — seul le niveau de titre les distingue (h1 pour le
+	   titre de la page, h2 pour le second). */
+	.ouverture h2 {
+		margin: 0;
+		font-family: var(--police-titre);
+		font-size: var(--taille-l);
+		line-height: 1.2;
+	}
+
+	.ouverture-texte {
 		max-width: 46rem;
 		margin: var(--espace-4) 0 0;
 		font-size: var(--taille-m);
@@ -343,6 +377,11 @@
 
 	section {
 		margin-top: var(--espace-6);
+	}
+
+	.ouverture {
+		max-width: 52rem;
+		margin-top: var(--espace-5);
 	}
 
 	h2 {
