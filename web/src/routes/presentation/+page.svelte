@@ -33,8 +33,7 @@
 	const EXPLICATION = {
 		atelier_de:
 			'La mention «\u00a0atelier\u00a0» signifie que l’œuvre est rattachée à l’atelier de ' +
-			'Rembrandt, sans être attribuée directement au peintre. C’est ce type de formulation ' +
-			'que L’inventaire du doute repère et classe.',
+			'Rembrandt, sans être attribuée directement au peintre.',
 		attribue:
 			'La mention «\u00a0attribué à\u00a0» signifie que le musée considère cet artiste ' +
 			'comme un auteur possible, sans présenter cette attribution comme certaine.',
@@ -98,11 +97,12 @@
 		</p>
 	</section>
 
-	<!-- DEUX EXEMPLES DE NOTICES (2026-08-04) : même structure pour les deux —
-	     image, titre, musée, champ Auteur au mot près, une phrase d'explication,
-	     lien POP. Aucune carte décorative, aucun récit. -->
+	<!-- EXEMPLES DE NOTICES (2026-08-04) : même structure pour chacun — image,
+	     titre, musée, champ Auteur au mot près, UNE phrase d'explication, lien POP.
+	     Aucune carte décorative, aucun récit. Le titre n'annonce pas de compte : il
+	     survit à l'ajout ou au retrait d'un exemple. -->
 	<section class="notices-exemples">
-		<h2>Deux exemples de notices Joconde</h2>
+		<h2>Exemples de notices Joconde</h2>
 
 		<div class="liste-exemples">
 			{#each exemples as e (e.reference)}
