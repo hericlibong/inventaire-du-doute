@@ -63,14 +63,21 @@ L'onglet montre **toutes les œuvres concernées** par le maître — pas une
 sélection —, filtrables par mention et paginées. Rien n'est choisi à la main :
 ni tri éditorial, ni recherche de la « meilleure » pièce.
 
-**Une exception, déclarée : la notice qui ouvre la page « Présentation »** (2026-08-02).
-Celle-là est choisie — « Portrait de jeune homme, dit autrefois : Portrait de Titus », au
-musée du Louvre, où le champ auteur porte « Rembrandt (1606-1669) (atelier, dit) ». Un
-article s'ouvre sur un cas, pas sur un tirage au sort ; ce qui doit rester non trié, ce sont
-les listes exhaustives, qu'une sélection pourrait flatter. Le choix est écrit dans
+**Une exception, déclarée : les deux notices montrées sur la page « Présentation »**
+(2026-08-02, portées à deux le 2026-08-04). Celles-là sont choisies :
+
+- « Portrait de jeune homme, dit autrefois : Portrait de Titus », musée du Louvre, champ
+  auteur « Rembrandt (1606-1669) (atelier, dit) » — référence Joconde `000PE008564` ;
+- « Cheval au galop », musée des beaux-arts de Chambéry, champ auteur « GERICAULT Théodore
+  (attribué à) » — référence Joconde `10480003953`.
+
+Un article s'ouvre sur des cas, pas sur un tirage au sort ; ce qui doit rester non trié, ce
+sont les listes exhaustives, qu'une sélection pourrait flatter. Le choix est écrit dans
 `src/build_corpus_maitres.py`, et les champs affichés sont RELUS dans l'export des œuvres à
-chaque génération : si cette notice change de formulation ou disparaît de la base, la
-génération échoue au lieu de publier un exemple périmé.
+chaque génération : si l'une de ces notices change de formulation, perd sa reproduction
+réutilisable ou disparaît de la base, la génération échoue au lieu de publier un exemple
+périmé. Les deux reproductions viennent de Wikimedia Commons, rattachées par identifiant
+Joconde, domaine public, créditées sous l'image.
 
 - La citation entre guillemets est le **contenu exact du champ auteur** de la
   notice (verbatim, capitales et abréviations comprises).

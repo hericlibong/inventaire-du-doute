@@ -3,7 +3,7 @@
  "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb",
  "version_donnee": "2026-07-01",
  "critere_liste": "maître de référence ET ≥ 10 notices de doute (hors copie)",
- "date_generation": "2026-08-02T16:25:11+00:00",
+ "date_generation": "2026-08-03T23:17:37+00:00",
  "unites": {
   "notices_distinctes": 6081,
   "occurrences_mentions": 6082,
@@ -42,25 +42,48 @@
    "corpus_notices": 18
   }
  },
- "notice_ouverture": {
-  "reference": "000PE008564",
-  "titre": "Portrait de jeune homme, dit autrefois : Portrait de Titus",
-  "musee": "musée du Louvre",
-  "ville": "Paris",
-  "mention": "atelier_de",
-  "extrait": "Rembrandt (1606-1669) (atelier, dit)",
-  "artiste": "Rembrandt",
-  "artiste_slug": "rembrandt",
-  "image": {
-   "statut": "open",
-   "source_type": "wikimedia_commons",
-   "url": "oeuvres/000PE008564.jpg",
-   "credit": "http://www.culture.gouv.fr/Wave/image/joconde/0337/m503604_p0006733-001_p.jpg",
-   "creator": "Workshop of Rembrandt",
-   "licence": "Public domain",
-   "licence_url": "",
-   "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_-_Portrait_of_a_Young_Man_with_Moustache.jpg",
-   "verifie_le": "2026-07-29"
+ "exemples": [
+  {
+   "reference": "000PE008564",
+   "titre": "Portrait de jeune homme, dit autrefois : Portrait de Titus",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "mention": "atelier_de",
+   "extrait": "Rembrandt (1606-1669) (atelier, dit)",
+   "artiste": "Rembrandt",
+   "artiste_slug": "rembrandt",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE008564.jpg",
+    "credit": "http://www.culture.gouv.fr/Wave/image/joconde/0337/m503604_p0006733-001_p.jpg",
+    "creator": "Workshop of Rembrandt",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_-_Portrait_of_a_Young_Man_with_Moustache.jpg",
+    "verifie_le": "2026-07-29"
+   }
+  },
+  {
+   "reference": "10480003953",
+   "titre": "Cheval au galop",
+   "musee": "musée des beaux-arts",
+   "ville": "Chambéry",
+   "mention": "attribue",
+   "extrait": "GERICAULT Théodore (attribué à)",
+   "artiste": "Géricault",
+   "artiste_slug": "gericault",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/10480003953.jpg",
+    "credit": "https://pop-perf-assets.s3.gra.io.cloud.ovh.net/joconde/10480003953/0000669.jpg",
+    "creator": "Théodore Géricault",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Cheval_au_galop,_par_Th%C3%A9odore_G%C3%A9ricault.jpg",
+    "verifie_le": "2026-07-29"
+   }
   }
- }
+ ]
 }

@@ -21,8 +21,26 @@
 	const { corpus, registre, niveaux } = data;
 
 	const u = corpus.unites;
-	const n = corpus.notice_ouverture;
-	const mention = FAMILLE_PUBLIC[n.mention];
+
+	// Les deux notices montrées en tête, relues et contrôlées à l'export
+	// (build_corpus_maitres.py) : référence, mention, image réutilisable, licence
+	// et page source. La page n'en recopie aucun champ.
+	const exemples = corpus.exemples;
+
+	// Une phrase par mention, et une seule. Écrite ici parce qu'elle explique une
+	// FORMULE, pas une œuvre : elle vaudrait mot pour mot pour n'importe quelle
+	// autre notice portant la même mention.
+	const EXPLICATION = {
+		atelier_de:
+			'La mention «\u00a0atelier\u00a0» signifie que l’œuvre est rattachée à l’atelier de ' +
+			'Rembrandt, sans être attribuée directement au peintre. C’est ce type de formulation ' +
+			'que L’inventaire du doute repère et classe.',
+		attribue:
+			'La mention «\u00a0attribué à\u00a0» signifie que le musée considère cet artiste ' +
+			'comme un auteur possible, sans présenter cette attribution comme certaine.',
+		point_interrogation:
+			'Le point d’interrogation signale que l’identification de l’auteur reste incertaine.'
+	};
 
 	// Part du volume dans le total national, en toutes lettres plutôt qu'en
 	// décimales : le récit prime (CLAUDE.md).
@@ -80,44 +98,49 @@
 		</p>
 	</section>
 
-	<!-- 1. LA NOTICE : un cas réel, ses mots exacts. --------------------------- -->
-	<section class="cas">
-		<figure class="oeuvre">
-			{#if n.image}
-				<a class="visuel" href={n.image.source} target="_blank" rel="noopener">
-					<img src="{base}/{n.image.url}" alt="Reproduction : {n.titre}" loading="lazy" />
-				</a>
-				<figcaption class="credit">
-					{n.titre} · {n.musee}, {n.ville} ·
-					{licenceEnFrancais(n.image.licence)} ·
-					<a href={n.image.source} target="_blank" rel="noopener">Wikimedia&nbsp;Commons</a>
-				</figcaption>
-			{/if}
-		</figure>
+	<!-- DEUX EXEMPLES DE NOTICES (2026-08-04) : même structure pour les deux —
+	     image, titre, musée, champ Auteur au mot près, une phrase d'explication,
+	     lien POP. Aucune carte décorative, aucun récit. -->
+	<section class="notices-exemples">
+		<h2>Deux exemples de notices Joconde</h2>
 
-		<div class="propos">
-			<h2>Ce que le musée a écrit</h2>
-			<p>
-				Au Louvre, ce portrait s'intitule
-				<em>«&nbsp;{n.titre}&nbsp;»</em>. Le titre lui-même revient sur une identification
-				ancienne. Et à la ligne de l'auteur, le musée n'a pas écrit
-				<strong>{n.artiste}</strong> tout court. Il a écrit&nbsp;:
-			</p>
+		<div class="liste-exemples">
+			{#each exemples as e (e.reference)}
+				<article class="exemple">
+					<figure class="oeuvre">
+						<a class="visuel" href={e.image.source} target="_blank" rel="noopener">
+							<img src="{base}/{e.image.url}" alt="Reproduction : {e.titre}" loading="lazy" />
+						</a>
+						<figcaption class="credit">
+							{licenceEnFrancais(e.image.licence)}
+							{#if e.image.creator} · {e.image.creator}{/if} ·
+							<a href={e.image.source} target="_blank" rel="noopener">Wikimedia&nbsp;Commons</a>
+						</figcaption>
+					</figure>
 
-			<blockquote class="verbatim" style="border-left-color: {mention.couleur}">
-				{n.extrait}
-			</blockquote>
+					<div class="propos">
+						<h3>{e.titre}</h3>
+						<p class="lieu">{e.musee}, {e.ville}</p>
 
-			<p>
-				Autrement dit&nbsp;: une œuvre sortie de l'atelier de {n.artiste}, sans que sa main
-				soit affirmée. Le nom est là, la réserve aussi. C'est écrit, c'est public, et
-				c'est cela que ce volume rassemble.
-			</p>
-			<p class="renvoi">
-				<a href={lienPop(n.reference)} target="_blank" rel="noopener">
-					Voir cette notice sur POP, la plateforme ouverte du patrimoine&nbsp;→
-				</a>
-			</p>
+						<p>Dans sa notice Joconde, le musée renseigne ainsi le champ consacré à l'auteur&nbsp;:</p>
+
+						<blockquote
+							class="verbatim"
+							style="border-left-color: {FAMILLE_PUBLIC[e.mention].couleur}"
+						>
+							{e.extrait}
+						</blockquote>
+
+						<p>{EXPLICATION[e.mention]}</p>
+
+						<p class="renvoi">
+							<a href={lienPop(e.reference)} target="_blank" rel="noopener">
+								Consulter la notice complète sur POP&nbsp;→
+							</a>
+						</p>
+					</div>
+				</article>
+			{/each}
 		</div>
 	</section>
 
@@ -393,12 +416,38 @@
 		line-height: 1.65;
 	}
 
-	/* --- 1. Le cas : image à gauche, propos à droite ------------------------- */
-	.cas {
+	/* --- Les deux exemples : même gabarit, l'un sous l'autre ----------------- */
+	.liste-exemples {
+		display: flex;
+		flex-direction: column;
+		gap: clamp(2rem, 4vw, 3rem);
+		max-width: 60rem;
+	}
+
+	/* Un exemple : image à gauche, contenu de la notice à droite. Les deux
+	   exemples partagent EXACTEMENT cette grille — c'est ce qui les rend
+	   comparables d'un coup d'œil. */
+	.exemple {
 		display: grid;
-		grid-template-columns: minmax(0, 20rem) minmax(0, 34rem);
+		grid-template-columns: minmax(0, 17rem) minmax(0, 34rem);
 		gap: clamp(1.5rem, 4vw, 3rem);
 		align-items: start;
+		padding-top: var(--espace-5);
+		border-top: 1px solid var(--couleur-trait-clair);
+	}
+
+	.exemple h3 {
+		margin: 0;
+		font-family: var(--police-titre);
+		font-size: var(--taille-m);
+		line-height: 1.3;
+	}
+
+	.exemple .lieu {
+		margin: 0.35rem 0 var(--espace-4);
+		font-family: var(--police-ui);
+		font-size: var(--taille-xs);
+		color: var(--couleur-encre-douce);
 	}
 
 	.oeuvre {
@@ -597,12 +646,12 @@
 	}
 
 	@media (max-width: 860px) {
-		.cas {
+		.exemple {
 			grid-template-columns: minmax(0, 1fr);
 		}
 
 		.oeuvre {
-			max-width: 20rem;
+			max-width: 17rem;
 		}
 	}
 </style>

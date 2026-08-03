@@ -62,51 +62,70 @@ MENTIONS = [
 ]
 
 
-# Notice d'ouverture de la page. Elle est CHOISIE — c'est un exemple éditorial,
-# pas un échantillon —, et le choix est déclaré dans docs/methode-et-limites.md.
-# La règle « rien n'est choisi à la main » porte sur les listes exhaustives de
-# l'onglet « Œuvres », qu'un tri arbitraire pourrait flatter ; elle ne demande pas
-# qu'un article s'ouvre au hasard.
+# Les DEUX notices montrées en tête de la page. Elles sont CHOISIES — ce sont des
+# exemples éditoriaux, pas un échantillon —, et le choix est déclaré dans
+# docs/methode-et-limites.md. La règle « rien n'est choisi à la main » porte sur
+# les listes exhaustives de l'onglet « Œuvres », qu'un tri arbitraire pourrait
+# flatter ; elle ne demande pas qu'un article s'ouvre au hasard.
 #
-# Pourquoi celle-ci : le musée y écrit le nom de Rembrandt ET son atelier, et le
-# titre porte lui-même une rétractation — « dit autrefois : Portrait de Titus ».
-# Un cas dit tout le sujet en une ligne, sans commentaire.
+# Pourquoi celles-ci :
+#   1. Rembrandt, au Louvre — le musée écrit le nom ET l'atelier, et le titre porte
+#      lui-même une rétractation (« dit autrefois : Portrait de Titus »).
+#   2. Géricault, à Chambéry — « attribué à », la formulation la plus fréquente du
+#      volume, dans un musée de région. Verbatim minimal : la réserve ne se
+#      confond avec aucun autre qualificatif.
 #
 # Rien n'est recopié : les champs sont relus dans l'export des œuvres, à la
-# référence indiquée, et l'export échoue si la notice a changé de mention ou
-# disparu. Un exemple qui vieillit en silence serait pire que pas d'exemple.
-EXEMPLE_SLUG = "rembrandt"
-EXEMPLE_REFERENCE = "000PE008564"
-EXEMPLE_MENTION = "atelier_de"
+# référence indiquée, et la génération ÉCHOUE si la notice a changé de mention,
+# perdu son image ou disparu. Un exemple qui vieillit en silence serait pire que
+# pas d'exemple. Les deux doivent porter une reproduction réutilisable, rattachée
+# par identifiant Joconde, avec sa licence et sa page source.
+EXEMPLES = [
+    {"slug": "rembrandt", "reference": "000PE008564", "mention": "atelier_de"},
+    {"slug": "gericault", "reference": "10480003953", "mention": "attribue"},
+]
 
 
 def charger(nom):
     return json.loads((WEB / nom).read_text(encoding="utf-8"))
 
 
-def notice_d_ouverture(artistes):
-    """La notice de tête, relue dans l'export des œuvres et contrôlée."""
-    fiche = charger(f"oeuvres/{EXEMPLE_SLUG}.json")
-    o = next((x for x in fiche["oeuvres"] if x["reference"] == EXEMPLE_REFERENCE), None)
-    assert o is not None, (
-        f"notice d'ouverture {EXEMPLE_REFERENCE} absente de {EXEMPLE_SLUG}.json — "
-        "en choisir une autre plutôt que la laisser disparaître de la page")
-    assert o["code"] == EXEMPLE_MENTION, (
-        f"la notice d'ouverture porte maintenant « {o['code']} » et non "
-        f"« {EXEMPLE_MENTION} » : le texte de la page ne la décrit plus")
-    assert o["titre"] and o["musee"], "notice d'ouverture sans titre ou sans musée"
-    return {
-        "reference": o["reference"],
-        "titre": o["titre"],
-        "musee": o["musee"],
-        "ville": o["ville"],
-        "mention": o["code"],
-        # les mots exacts publiés par le musée — seule citation littérale de la page
-        "extrait": o["extrait"],
-        "artiste": fiche["nom"],
-        "artiste_slug": fiche["slug"],
-        "image": o.get("image"),
-    }
+def notices_exemples():
+    """Les notices de tête, relues dans l'export des œuvres et contrôlées."""
+    sortie = []
+    for e in EXEMPLES:
+        fiche = charger(f"oeuvres/{e['slug']}.json")
+        o = next((x for x in fiche["oeuvres"]
+                  if x["reference"] == e["reference"]), None)
+        assert o is not None, (
+            f"notice d'exemple {e['reference']} absente de {e['slug']}.json — "
+            "en choisir une autre plutôt que la laisser disparaître de la page")
+        assert o["code"] == e["mention"], (
+            f"la notice {e['reference']} porte maintenant « {o['code']} » et non "
+            f"« {e['mention']} » : le texte de la page ne la décrit plus")
+        assert o["titre"] and o["musee"], (
+            f"notice d'exemple {e['reference']} sans titre ou sans musée")
+        img = o.get("image")
+        # une notice sans reproduction réutilisable ne peut pas illustrer la page :
+        # les deux exemples doivent avoir la MÊME structure, image comprise
+        assert img and img.get("statut") == "open", (
+            f"notice d'exemple {e['reference']} sans reproduction réutilisable")
+        assert img.get("licence") and img.get("source"), (
+            f"reproduction de {e['reference']} sans licence ou sans page source")
+        sortie.append({
+            "reference": o["reference"],
+            "titre": o["titre"],
+            "musee": o["musee"],
+            "ville": o["ville"],
+            "mention": o["code"],
+            # les mots exacts publiés par le musée — seules citations littérales
+            # de la page
+            "extrait": o["extrait"],
+            "artiste": fiche["nom"],
+            "artiste_slug": fiche["slug"],
+            "image": img,
+        })
+    return sortie
 
 
 def main():
@@ -183,7 +202,7 @@ def main():
             "part_du_volume": round(notices / national, 4),
         },
         "mentions": par_mention,
-        "notice_ouverture": notice_d_ouverture(artistes),
+        "exemples": notices_exemples(),
     }
 
     sortie = WEB / "corpus_maitres.json"
