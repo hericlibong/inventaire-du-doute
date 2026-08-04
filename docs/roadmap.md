@@ -116,7 +116,19 @@ l'accueil en dernier parce qu'il résume ce que les autres pages auront fixé.
       côté méthode et données, « œuvre » côté lecteur —, sans remplacement mécanique.
       Écrite dans decisions.md (2026-08-03 bis). **C6 n'est plus bloquant** : il ne reste
       qu'une vérification de cohérence lors de la revue de chaque page.
-- [ ] **É2 — Revoir la page Présentation.**
+- [~] **É2 — Revoir la page Présentation. EN COURS** sur la branche
+      `feat/page-presentation` (26 commits au 2026-08-04). Faits, dans l'ordre :
+      l'ouverture en deux questions et ses resserrements ; les deux exemples de notices
+      (chapô commun, renvoi vers Méthode #doute) ; « Comment ces artistes ont été choisis »
+      ramené à un paragraphe ; la section chiffrée refondue (bandeau + graphique en trois
+      zones désignables, voir decisions.md 2026-08-04) ; le glossaire détaché ; le sommaire
+      par ancres, devenu un composant partagé avec la page Méthode (2026-08-04 bis).
+      **Restent en attente de validation de l'utilisateur** : « la hauteur des barres »
+      (faux sur mobile, où elles sont horizontales — « la taille » couvrirait les deux) ;
+      l'alignement du bandeau de titre, aujourd'hui au bord gauche alors que le contenu
+      démarre après le rail (même composition que la page Méthode, à changer sur les deux
+      pages ou sur aucune) ; les trois en-têtes de zone du glossaire, identiques à celles
+      du graphique.
 - [ ] **É3 — Revoir les textes de l'exploration des artistes.**
 - [ ] **É4 — Revoir la page Méthode.**
 - [ ] **É5 — Régler les questions éditoriales transversales**, notamment le titre du volume.
@@ -180,9 +192,11 @@ Le registre est relu au point de contrôle 2, et les corrections sont portées e
       tête de la colonne du média : **220 px de hauteur → 20 px**. Les entrées qui portent une
       image ne bougent pas (gabarit 176 × 220 px, inchangé), et les titres restent alignés sur
       une seule abscisse d'une entrée à l'autre.
-- [ ] **C11 — Longueur des pages sur mobile.** Mesuré au 2026-08-03 : Méthode **9 294 px**,
-      Présentation **6 175 px**, onglet Œuvres filtré 3 299 px. La Méthode a un sommaire, pas
-      la Présentation. À reprendre avec la passe éditoriale (C1).
+- [~] **C11 — Longueur des pages sur mobile.** Mesuré au 2026-08-03 : Méthode **9 294 px**,
+      Présentation **6 175 px**, onglet Œuvres filtré 3 299 px. **Le sommaire manquant est
+      traité** : la Présentation a le même rail que la Méthode depuis le 2026-08-04, et le
+      mécanisme est devenu un composant partagé (`lib/SommaireAncres.svelte`). Reste la
+      longueur elle-même, à reprendre avec la passe éditoriale (C1).
 - [ ] **C2 — Chercher les règles héritées qui décrivent mal ce qu'on regarde.** Une a été
       trouvée et corrigée le 2026-08-02 : « pas de carte en dessous de deux musées », qui
       traitait un repère géographique comme un graphique de répartition. Le défaut n'était pas
