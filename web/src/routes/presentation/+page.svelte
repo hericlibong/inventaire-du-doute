@@ -156,6 +156,15 @@
 				</article>
 			{/each}
 		</div>
+
+		<!-- Vers la section de la page Méthode qui décrit ce que ces exemples montrent :
+		     « Comment le doute s'écrit dans Joconde » (#doute), celle qui porte le schéma
+		     du champ Auteur. Ancre directe, pas le haut de la page. -->
+		<p class="renvoi renvoi-methode">
+			<a href="{base}/methode#doute">
+				Plus d'informations sur le traitement des notices&nbsp;→
+			</a>
+		</p>
 	</section>
 
 	<!-- LE BANDEAU DE CHIFFRES, seul depuis le 2026-08-04 : le titre « Ce n'est pas
@@ -569,6 +578,12 @@
 		margin: var(--espace-3) 0 0;
 		font-family: var(--police-ui);
 		font-size: var(--taille-s);
+	}
+
+	/* Renvoi de fin de section : il suit la liste des exemples, pas le dernier
+	   d'entre eux — il lui faut donc plus d'air que sous un bloc de notice. */
+	.renvoi-methode {
+		margin-top: var(--espace-5);
 	}
 
 	.entree {
