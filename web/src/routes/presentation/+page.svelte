@@ -75,17 +75,27 @@
 	     y faire — la définition ne se répète pas d'un bloc à l'autre (resserrement du
 	     2026-08-03, à la relecture de l'utilisateur). Aucun récit, aucun constat nouveau.
 	     Les trois effectifs sont lus dans les exports — le total national vient de
-	     niveaux.json, les deux autres de corpus_maitres.json. -->
+	     niveaux.json, les deux autres de corpus_maitres.json.
+	     Premier paragraphe réécrit le 2026-08-04, sur le texte de l'utilisateur : le projet
+	     se définit d'abord, puis son OBJECTIF, énoncé sans sujet humain. Le musée n'est
+	     jamais présenté comme une personne qui hésite ou qui avoue — c'est une institution,
+	     et le projet lit ce qu'elle publie. « Notices » est répété d'une phrase à l'autre
+	     À DESSEIN : le total national compte des notices, jamais des œuvres, et une reprise
+	     par « on en compte 24 507 » laisserait le chiffre sans antécédent. -->
 	<header class="tete">
 		<p class="kicker">Volume 1 — Autour des maîtres</p>
 		<h1>Qu'est-ce que L'inventaire du doute&nbsp;?</h1>
 		<p class="ouverture-texte">
-			L'inventaire du doute analyse les données de Joconde, le catalogue collectif des
-			musées de France. Il repère les notices dans lesquelles l'auteur d'une œuvre est
-			indiqué avec réserve et rassemble les formulations employées par les musées.
-			On en compte aujourd'hui <strong>{nombre(niveaux.doute_total)}</strong>.
-			Le projet ne cherche pas à authentifier les œuvres, mais à rendre ces incertitudes
-			visibles et consultables.
+			L'inventaire du doute est un projet d'analyse et d'exploration de la
+			<a
+				href="https://www.data.gouv.fr/fr/datasets/collections-des-musees-de-france-base-joconde/"
+				target="_blank"
+				rel="noopener">base Joconde</a>,
+			le catalogue collectif des musées de France. L'objectif est de repérer les notices
+			qui portent une incertitude ou une réserve sur l'auteur d'une œuvre. On compte
+			aujourd'hui <strong>{nombre(niveaux.doute_total)}</strong> notices qui présentent
+			une forme de doute. Le projet ne cherche pas à authentifier les œuvres, mais à
+			rendre ces incertitudes visibles et consultables.
 		</p>
 	</header>
 
