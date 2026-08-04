@@ -1,9 +1,14 @@
 <script>
 	// PAGE « PRÉSENTATION » du volume 1 — phase 4 (2026-08-02).
 	//
-	// Six temps, dans cet ordre : ce qu'on lit sous une œuvre · ce que ce nom ne
-	// dit pas · le passage du cas au volume · comment ces artistes ont été choisis
-	// · les mots que les musées emploient · l'entrée dans l'exploration.
+	// Cinq temps, dans cet ordre : ce qu'est le projet et ce que contient ce volet ·
+	// des exemples de notices réelles · comment ces artistes ont été choisis · les
+	// mots que les musées emploient · l'entrée dans l'exploration.
+	//
+	// Le titre « Ce n'est pas un cas isolé » et ses deux paragraphes ont été retirés
+	// le 2026-08-04 : ils redisaient Joconde, la réserve d'attribution et l'objet du
+	// volet, tous posés par l'ouverture. Le BANDEAU DE CHIFFRES qu'ils coiffaient
+	// reste : il donne l'ampleur d'un coup d'œil, sans phrase.
 	//
 	// PAS de scrollytelling (choix utilisateur, réserve du 2026-07-08) : une page
 	// qui se lit, avec une seule visualisation, à sa place. Le brief l'autorisait ;
@@ -144,23 +149,11 @@
 		</div>
 	</section>
 
-	<!-- 2. DU CAS AU VOLUME ---------------------------------------------------- -->
-	<section class="corpus">
-		<h2>Ce n'est pas un cas isolé</h2>
-		<p class="texte">
-			Les musées de France versent leurs collections dans un catalogue commun,
-			<strong>Joconde</strong>, publié en données ouvertes. Quand un musée n'est pas certain
-			de l'auteur d'une œuvre, il ne laisse pas la case vide&nbsp;: il écrit un nom et il
-			écrit sa réserve — «&nbsp;attribué à&nbsp;», «&nbsp;de son atelier&nbsp;»,
-			«&nbsp;de son école&nbsp;», ou simplement un point d'interrogation.
-			Ces mots sont normés, et ils se comptent.
-		</p>
-		<p class="texte">
-			Ce volume suit une seule piste&nbsp;: les <strong>artistes</strong> dont le nom
-			revient dans ces formulations. Pas tous les cas de doute de la base — d'autres
-			formes existent, et feront l'objet d'autres volumes.
-		</p>
-
+	<!-- LE BANDEAU DE CHIFFRES, seul depuis le 2026-08-04 : le titre « Ce n'est pas
+	     un cas isolé » et ses deux paragraphes redisaient l'ouverture (Joconde, la
+	     réserve d'attribution, l'objet du volet). Les trois chiffres, eux, restent —
+	     ils donnent l'ampleur d'un coup d'œil. -->
+	<section class="bandeau-chiffres">
 		<ul class="chiffres">
 			<li>
 				<b>{nombre(u.nb_artistes)}</b>
@@ -416,6 +409,37 @@
 		line-height: 1.65;
 	}
 
+	/* --- Le bandeau de chiffres ---------------------------------------------- */
+	.chiffres {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+		gap: var(--espace-4);
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	.chiffres li {
+		padding-top: var(--espace-3);
+		border-top: 2px solid var(--couleur-trait);
+	}
+
+	.chiffres b {
+		display: block;
+		font-family: var(--police-titre);
+		font-size: var(--taille-l);
+		line-height: 1.1;
+		font-variant-numeric: tabular-nums;
+	}
+
+	.chiffres span {
+		display: block;
+		margin-top: var(--espace-2);
+		font-size: var(--taille-s);
+		line-height: 1.45;
+		color: var(--couleur-encre-douce);
+	}
+
 	/* --- Les deux exemples : même gabarit, l'un sous l'autre ----------------- */
 	.liste-exemples {
 		display: flex;
@@ -491,37 +515,6 @@
 		font-family: var(--police-titre);
 		font-size: var(--taille-m);
 		line-height: 1.4;
-	}
-
-	/* --- 2. Les chiffres essentiels ------------------------------------------ */
-	.chiffres {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
-		gap: var(--espace-4);
-		margin: var(--espace-5) 0 0;
-		padding: 0;
-		list-style: none;
-	}
-
-	.chiffres li {
-		padding-top: var(--espace-3);
-		border-top: 2px solid var(--couleur-trait);
-	}
-
-	.chiffres b {
-		display: block;
-		font-family: var(--police-titre);
-		font-size: var(--taille-l);
-		line-height: 1.1;
-		font-variant-numeric: tabular-nums;
-	}
-
-	.chiffres span {
-		display: block;
-		margin-top: var(--espace-2);
-		font-size: var(--taille-s);
-		line-height: 1.45;
-		color: var(--couleur-encre-douce);
 	}
 
 	/* --- 3. La sélection en trois temps -------------------------------------- */
