@@ -11,6 +11,11 @@
 	import SchemaChampAuteur from '$lib/SchemaChampAuteur.svelte';
 	import SchemaComptageUnique from '$lib/SchemaComptageUnique.svelte';
 	import SchemaHomonymes from '$lib/SchemaHomonymes.svelte';
+	// Rail de sommaire (palier 5). Le mécanisme — repérage de la section lue,
+	// défilement doux, retour en haut — a quitté cette page le 2026-08-04 pour
+	// devenir un composant : « Présentation » en avait besoin à son tour, et le
+	// site ne doit pas porter deux navigations internes différentes.
+	import SommaireAncres from '$lib/SommaireAncres.svelte';
 
 	let { data } = $props();
 	const n = data.niveaux;
@@ -44,89 +49,8 @@
 		['sources', 'Limites, sources et droits']
 	];
 
-	// --- Navigation dans une page longue (palier 5) --------------------------
-	// Le rail de sommaire indique où l'on se trouve, et un retour en haut apparaît
-	// quand on a défilé. Rien d'automatique ne bouge à l'écran : la page ne prend
-	// jamais la main sur le défilement du lecteur.
-
-	let actif = $state(sommaire[0][0]);
-	let hautVisible = $state(false);
-
-	// Repérage de la section courante. Mesure directe à chaque défilement plutôt
-	// qu'un IntersectionObserver : six éléments, un calcul par image, et surtout
-	// une règle qu'on peut énoncer — « la dernière section dont le titre est passé
-	// au-dessus du quart supérieur de la fenêtre ». Les cas limites (haut de page,
-	// dernière section trop courte pour occuper l'écran) sont traités explicitement.
-	$effect(() => {
-		const cibles = sommaire
-			.map(([ancre]) => document.getElementById(ancre))
-			.filter(Boolean);
-		if (!cibles.length) return;
-
-		let attendue = false;
-
-		const mesurer = () => {
-			attendue = false;
-			const seuil = window.innerHeight * 0.25;
-			let courante = cibles[0];
-			for (const el of cibles) {
-				if (el.getBoundingClientRect().top <= seuil) courante = el;
-			}
-			// Arrivé au pied de page, la dernière section est la bonne réponse même
-			// si elle n'a pas atteint le seuil (elle ne le pourra jamais).
-			const fin =
-				window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 4;
-			if (fin) courante = cibles[cibles.length - 1];
-
-			actif = courante.id;
-			hautVisible = window.scrollY > window.innerHeight;
-		};
-
-		const auDefilement = () => {
-			if (attendue) return;
-			attendue = true;
-			requestAnimationFrame(mesurer);
-		};
-
-		mesurer();
-		// Arrivée par un lien vers une ancre (« Pourquoi ces N artistes ? ») : le
-		// navigateur saute à la cible avant que cette mesure ne soit installée, sans
-		// émettre d'événement de défilement. On remesure donc une fois la page posée,
-		// sinon le rail annoncerait la première section alors qu'on est à la quatrième.
-		const differee = setTimeout(mesurer, 250);
-
-		window.addEventListener('scroll', auDefilement, { passive: true });
-		window.addEventListener('resize', auDefilement);
-		window.addEventListener('hashchange', auDefilement);
-		return () => {
-			clearTimeout(differee);
-			window.removeEventListener('scroll', auDefilement);
-			window.removeEventListener('resize', auDefilement);
-			window.removeEventListener('hashchange', auDefilement);
-		};
-	});
-
-	// Défilement doux, sauf si le système demande de limiter les animations.
-	const douceur = () =>
-		window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
-
-	// Clic sur le sommaire : on garde le comportement natif (l'ancre reste dans
-	// l'URL, le lien fonctionne sans JavaScript) et on y ajoute le défilement doux
-	// et le passage du focus clavier à la section atteinte.
-	function allerA(evenement, ancre) {
-		const cible = document.getElementById(ancre);
-		if (!cible) return;
-		evenement.preventDefault();
-		cible.scrollIntoView({ behavior: douceur(), block: 'start' });
-		cible.focus({ preventScroll: true });
-		history.replaceState(null, '', `#${ancre}`);
-	}
-
-	function retourHaut() {
-		window.scrollTo({ top: 0, behavior: douceur() });
-		document.getElementById('haut-de-page')?.focus({ preventScroll: true });
-		history.replaceState(null, '', window.location.pathname);
-	}
+	// Navigation dans une page longue (palier 5) : voir SommaireAncres.svelte, qui
+	// porte désormais le repérage de la section lue et le retour en haut.
 </script>
 
 <div class="page">
@@ -146,22 +70,7 @@
 </header>
 
 <div class="grille">
-	<nav class="sommaire" aria-label="Sections de la page">
-		<ol>
-			{#each sommaire as [ancre, titre], i (ancre)}
-				<li>
-					<a
-						href="#{ancre}"
-						class:actif={ancre === actif}
-						aria-current={ancre === actif ? 'true' : undefined}
-						onclick={(e) => allerA(e, ancre)}
-					>
-						<span class="num">{i + 1}</span>{titre}
-					</a>
-				</li>
-			{/each}
-		</ol>
-	</nav>
+	<SommaireAncres sections={sommaire} ancreHaut="haut-de-page" />
 
 	<div class="contenu">
 <!-- 1. La base étudiée ------------------------------------------------------- -->
@@ -439,17 +348,6 @@
 </section>
 	</div>
 </div>
-
-<!-- Retour en haut : n'apparaît qu'après un écran de défilement, jamais au-dessus
-     du texte (il se range dans la gouttière dès qu'il y a la place). -->
-<button
-	class="retour-haut"
-	class:visible={hautVisible}
-	inert={!hautVisible}
-	onclick={retourHaut}
->
-	<span aria-hidden="true">↑</span> <span class="libelle">Haut de page</span>
-</button>
 </div>
 
 <style>
@@ -502,57 +400,8 @@
 		align-items: start;
 	}
 
-	/* Sommaire : repères de lecture, pas un tableau de bord. Collant sur ordinateur. */
-	.sommaire {
-		position: sticky;
-		top: var(--espace-5);
-	}
-
-	.sommaire ol {
-		list-style: none;
-		margin: 0;
-		padding: 0;
-		font-family: var(--police-ui);
-		font-size: var(--taille-s);
-		border-left: var(--filet);
-	}
-
-	.sommaire li + li {
-		margin-top: var(--espace-2);
-	}
-
-	.sommaire a {
-		display: flex;
-		gap: 0.6rem;
-		align-items: baseline;
-		color: var(--couleur-encre-douce);
-		text-decoration: none;
-		padding-left: var(--espace-3);
-		margin-left: -1px;
-		border-left: 2px solid transparent;
-	}
-
-	.sommaire a:hover {
-		color: var(--couleur-encre);
-		border-left-color: var(--accent-cobalt);
-	}
-
-	/* Section en cours de lecture : le filet se remplit. Le repère est doublé par
-	   aria-current, pour ne pas dépendre de la seule couleur. */
-	.sommaire a.actif {
-		color: var(--couleur-encre);
-		border-left-color: var(--accent-cobalt);
-		font-weight: 600;
-	}
-
-	.sommaire .num {
-		font-variant-numeric: tabular-nums;
-		color: var(--couleur-encre-douce);
-	}
-
-	.sommaire a.actif .num {
-		color: var(--accent-cobalt);
-	}
+	/* Le rail lui-même (styles, état, retour en haut) vit dans SommaireAncres.svelte
+	   depuis le 2026-08-04. Cette page ne garde que la colonne qui l'accueille. */
 
 	.contenu {
 		max-width: 46rem;
@@ -670,99 +519,12 @@
 		border-left: var(--filet);
 	}
 
-	/* Retour en haut : pastille discrète en bas de fenêtre, du registre UI.
-	   Absente tant qu'on n'a pas défilé d'au moins un écran. */
-	.retour-haut {
-		position: fixed;
-		right: clamp(1rem, 3vw, 2rem);
-		bottom: clamp(1rem, 3vw, 2rem);
-		display: inline-flex;
-		align-items: center;
-		gap: var(--espace-2);
-		padding: var(--espace-2) var(--espace-3);
-		background: var(--surface-carte);
-		color: var(--couleur-encre-douce);
-		border: var(--filet);
-		border-radius: var(--rayon-m);
-		box-shadow: var(--ombre-douce);
-		font-size: var(--taille-xs);
-		cursor: pointer;
-		opacity: 0;
-		visibility: hidden;
-		transform: translateY(0.4rem);
-		transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
-	}
-
-	.retour-haut.visible {
-		opacity: 1;
-		visibility: visible;
-		transform: none;
-	}
-
-	.retour-haut:hover {
-		color: var(--couleur-encre);
-		border-color: var(--couleur-encre-douce);
-	}
-
-	/* Le mouvement est un confort, pas une information : on le retire si le
-	   système demande de limiter les animations. */
-	@media (prefers-reduced-motion: reduce) {
-		.retour-haut {
-			transition: none;
-			transform: none;
-		}
-	}
-
-	@media print {
-		.sommaire,
-		.retour-haut {
-			display: none;
-		}
-	}
-
+	/* Le rail bascule en barre horizontale au même seuil : les deux media queries
+	   (ici et dans SommaireAncres.svelte) doivent rester sur 760 px. */
 	@media (max-width: 760px) {
 		.grille {
 			grid-template-columns: 1fr;
 			gap: var(--espace-4);
-		}
-		.sommaire {
-			position: static;
-		}
-		.sommaire ol {
-			display: flex;
-			flex-wrap: wrap;
-			gap: var(--espace-2) var(--espace-4);
-			border-left: none;
-		}
-		.sommaire li + li {
-			margin-top: 0;
-		}
-		.sommaire a {
-			padding-left: 0;
-			border-left: none;
-		}
-		/* Le filet de gauche disparaît en liste horizontale : le repère passe
-		   dessous, sinon la section en cours ne se distingue plus. */
-		.sommaire a.actif {
-			border-bottom: 2px solid var(--accent-cobalt);
-		}
-
-		/* Sur petit écran, le bouton se réduit à sa flèche pour couvrir le moins de
-		   texte possible. Le libellé reste dans le document (nom accessible du
-		   bouton), seulement retiré de la vue. */
-		.retour-haut {
-			padding: var(--espace-2);
-			border-radius: 50%;
-			line-height: 1;
-		}
-
-		.retour-haut .libelle {
-			position: absolute;
-			width: 1px;
-			height: 1px;
-			overflow: hidden;
-			clip-path: inset(50%);
-			white-space: nowrap;
 		}
 	}
 

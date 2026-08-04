@@ -21,6 +21,9 @@
 	import { FAMILLE_PUBLIC } from '$lib/familles-public.js';
 	import { TERRITOIRES } from '$lib/territoires.js';
 	import MentionsFrequentes from '$lib/presentation/MentionsFrequentes.svelte';
+	// Même rail de sommaire que « Méthode et limites » (composant partagé depuis le
+	// 2026-08-04) : repérage de la section lue, défilement doux, retour en haut.
+	import SommaireAncres from '$lib/SommaireAncres.svelte';
 
 	let { data } = $props();
 	const { corpus, registre, niveaux } = data;
@@ -58,6 +61,21 @@
 	// anti-répétition encodée dans familles-public.js).
 	const formuleType = (code) =>
 		FAMILLE_PUBLIC[code].montrerMention ? FAMILLE_PUBLIC[code].mention('un artiste') : null;
+
+	// Les sept sections de la page, dans l'ordre de lecture. Identifiants stables et
+	// sans accents : ils entrent dans l'URL et peuvent être partagés. Les libellés
+	// du rail sont ceux des titres, raccourcis pour les deux questions — un rail de
+	// 16 rem ne tient pas « Qu'est-ce que L'inventaire du doute ? ». Les titres
+	// complets restent dans le h1 et les h2, seuls textes publiés.
+	const sommaire = [
+		['le-projet', 'L’inventaire du doute'],
+		['ce-volet', 'Ce premier volet'],
+		['exemples', 'Exemples de notices Joconde'],
+		['selection', 'Comment ces artistes ont été choisis'],
+		['chiffres', 'Les mentions en chiffres'],
+		['definitions', 'Ce que ces mots veulent dire'],
+		['explorer', 'Explorer, artiste par artiste']
+	];
 </script>
 
 <svelte:head>
@@ -82,7 +100,11 @@
 	     et le projet lit ce qu'elle publie. « Notices » est répété d'une phrase à l'autre
 	     À DESSEIN : le total national compte des notices, jamais des œuvres, et une reprise
 	     par « on en compte 24 507 » laisserait le chiffre sans antécédent. -->
-	<header class="tete">
+	<!-- Le bandeau de titre est la PREMIÈRE section du sommaire, et il garde la
+	     pleine largeur au-dessus du rail : un titre de page ne se met pas en
+	     colonne. Il est aussi la cible du retour en haut (tabindex : le clavier
+	     suit le regard). -->
+	<header class="tete" id="le-projet" tabindex="-1">
 		<p class="kicker">Volume 1 — Autour des maîtres</p>
 		<h1>Qu'est-ce que L'inventaire du doute&nbsp;?</h1>
 		<p class="ouverture-texte">
@@ -99,7 +121,11 @@
 		</p>
 	</header>
 
-	<section class="ouverture">
+	<div class="grille">
+	<SommaireAncres sections={sommaire} ancreHaut="le-projet" />
+
+	<div class="contenu">
+	<section class="ouverture" id="ce-volet" tabindex="-1">
 		<h2>Que présente ce premier volet&nbsp;?</h2>
 		<p class="ouverture-texte">
 			Ce premier volet est consacré aux artistes dont le nom apparaît régulièrement avec une
@@ -120,7 +146,7 @@
 	     citation qui suit se lise sans explication ; chaque exemple ne garde plus
 	     que ce qui lui est propre. Chapô écrit par l'utilisateur, repris tel quel.
 	     ⚠ Il annonce DEUX exemples : à modifier si la liste en gagne ou en perd un. -->
-	<section class="notices-exemples">
+	<section class="notices-exemples" id="exemples" tabindex="-1">
 		<h2>Exemples de notices Joconde</h2>
 		<p class="texte">
 			Les deux exemples ci-dessous reproduisent le champ «&nbsp;Auteur&nbsp;» de Joconde.
@@ -179,7 +205,7 @@
 	     « seuil · vérification · ce que la liste ne dit pas », dont le détail vit
 	     désormais sur la seule page Méthode. Les trois chiffres restent lus dans les
 	     exports : le seuil vient du registre, l'effectif et les notices du corpus. -->
-	<section class="selection">
+	<section class="selection" id="selection" tabindex="-1">
 		<h2>Comment ces artistes ont été choisis</h2>
 		<p class="texte">
 			Cette sélection a été construite en filtrant et en classant les notices de
@@ -205,7 +231,7 @@
 	     ne se disent qu'ICI. Les paragraphes d'ouverture et de sélection les
 	     répétaient ; ils ont été allégés le 2026-08-04. Un chiffre répété d'un
 	     bloc à l'autre se lit comme un chiffre différent. -->
-	<section class="graphique">
+	<section class="graphique" id="chiffres" tabindex="-1">
 		<h2>Les mentions en chiffres</h2>
 
 		<ul class="chiffres">
@@ -235,7 +261,7 @@
 	     site où les huit mentions sont définies. Un filet et une respiration l'en
 	     séparent ; le chapô ne renvoie plus à « l'ordre du graphique ». Les huit
 	     définitions elles-mêmes ne sont pas retouchées. -->
-	<section class="glossaire">
+	<section class="glossaire" id="definitions" tabindex="-1">
 		<h2>Ce que ces mots veulent dire</h2>
 		<p class="texte">
 			Les huit mentions employées par les musées, définies une à une. La couleur de chacune
@@ -269,7 +295,7 @@
 	</section>
 
 	<!-- 5. LA SUITE ------------------------------------------------------------ -->
-	<section class="suite">
+	<section class="suite" id="explorer" tabindex="-1">
 		<h2>Explorer, artiste par artiste</h2>
 		<p class="texte">
 			Chaque artiste a sa fiche&nbsp;: les mots employés à son sujet, la liste complète des
@@ -284,6 +310,8 @@
 			œuvre et n'émet aucun avis sur les attributions.
 		</p>
 	</section>
+	</div>
+	</div>
 </div>
 
 <style>
@@ -301,6 +329,46 @@
 		padding-inline: clamp(1.25rem, 3vw, 3rem);
 		padding-top: clamp(1.5rem, 3.5vw, 3.5rem);
 		padding-bottom: var(--espace-6);
+	}
+
+	/* Deux zones, comme sur « Méthode et limites » : rail de sommaire (collant sur
+	   ordinateur) + contenu. Le rail vient du composant partagé ; la page ne fournit
+	   que la colonne. Le bandeau de titre reste AU-DESSUS, en pleine largeur. */
+	.grille {
+		display: grid;
+		grid-template-columns: 16rem minmax(0, 1fr);
+		gap: var(--espace-6);
+		margin-top: var(--espace-6);
+		align-items: start;
+	}
+
+	/* Contrairement à la page Méthode, la colonne de contenu n'est PAS bornée à la
+	   largeur d'un paragraphe : elle porte aussi le bandeau de chiffres, le
+	   graphique et le glossaire, qui ont besoin de place. Ce sont les blocs de texte
+	   qui se bornent eux-mêmes, plus bas (44 à 52 rem). */
+	.contenu {
+		min-width: 0;
+	}
+
+	/* Le rail et le texte partent de la même ligne : la première section ne reprend
+	   pas la marge haute commune aux sections. */
+	.contenu > section:first-child {
+		margin-top: 0;
+	}
+
+	/* Décalage d'ancre : au saut, la cible ne colle pas au bord haut de la fenêtre.
+	   Le bandeau du site défile avec la page (il n'est pas collant) : ce retrait
+	   suffit à dégager le titre visé. */
+	.tete,
+	section {
+		scroll-margin-top: var(--espace-5);
+	}
+
+	/* Le focus posé sur une section au clic du sommaire ne dessine pas de cadre à la
+	   souris — mais reste visible au clavier, où il sert de repère. */
+	.tete:focus:not(:focus-visible),
+	section:focus:not(:focus-visible) {
+		outline: none;
 	}
 
 	/* Les blocs LARGES de la page (glossaire, mentions en chiffres) se bornent tous au
@@ -590,6 +658,16 @@
 
 		.oeuvre {
 			max-width: 17rem;
+		}
+	}
+
+	/* Le rail passe en barre de liens horizontale au-dessus du contenu. Le seuil de
+	   760 px est celui du composant : les deux doivent basculer ensemble. */
+	@media (max-width: 760px) {
+		.grille {
+			grid-template-columns: minmax(0, 1fr);
+			gap: var(--espace-4);
+			margin-top: var(--espace-5);
 		}
 	}
 </style>

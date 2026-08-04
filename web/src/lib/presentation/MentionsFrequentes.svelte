@@ -194,6 +194,12 @@
 		/* Grille commune au graphique et à l'axe gradué : gouttière de l'axe | huit
 		   colonnes de mentions. Déclarée une seule fois. */
 		--colonnes-mentions: 3rem repeat(8, minmax(0, 1fr));
+		/* Le passage en lignes horizontales dépend de la place RÉELLE du graphique,
+		   pas de la largeur de la fenêtre (2026-08-04) : depuis que la page porte un
+		   rail de sommaire, une fenêtre large ne garantit plus une colonne large.
+		   Huit colonnes dans 40 rem donneraient des libellés en escalier. */
+		container-type: inline-size;
+		container-name: graphe;
 	}
 
 	.tete {
@@ -395,11 +401,16 @@
 		color: var(--couleur-encre-douce);
 	}
 
-	/* --- Mobile : les mêmes trois zones, l'une sous l'autre -------------------
+	/* --- Colonne étroite : les mêmes trois zones, l'une sous l'autre ----------
 	   Les groupes ne deviennent pas invisibles quand la place manque : ils
 	   redeviennent trois blocs titrés, chacun avec ses mentions en lignes. Même
-	   ordre, mêmes couleurs, même interaction. */
-	@media (max-width: 760px) {
+	   ordre, mêmes couleurs, même interaction. Le seuil se mesure sur le graphique
+	   lui-même : 45 rem, en dessous desquels huit colonnes ne tiennent plus. Il est
+	   choisi au-dessus de la largeur que le graphique retrouve quand le rail
+	   disparaît (~44 rem à 760 px) — sinon rétrécir la fenêtre le ferait repasser en
+	   colonnes, ce qui se lirait comme un défaut.
+	   (L'axe gradué disparaît avec son hôte, sans que AxePourcent ait à le savoir.) */
+	@container graphe (max-width: 45rem) {
 		.grille {
 			display: block;
 			grid-template-rows: none;

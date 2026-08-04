@@ -2,6 +2,43 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-04 (bis) — Un seul sommaire pour tout le site
+
+La page « Présentation » reçoit le rail de sommaire de la page « Méthode ». Plutôt que de le
+recopier, **le mécanisme devient un composant partagé** (`lib/SommaireAncres.svelte`) : rail
+collant, repérage de la section lue, défilement doux, retour en haut, bascule mobile. Les deux
+pages le consomment ; aucune ne porte plus sa propre navigation interne. Le site n'aura jamais
+deux comportements différents pour le même geste.
+
+**Ce que la page fournit, ce que le composant fournit.** La page donne sa liste de sections
+(identifiant + libellé court) et la grille qui accueille le rail ; le composant fait le reste.
+Le seuil de bascule mobile (760 px) est le seul point à tenir synchronisé des deux côtés —
+c'est écrit dans les deux fichiers.
+
+**Sept identifiants stables, sans accents**, parce qu'ils entrent dans l'URL et se partagent :
+`le-projet`, `ce-volet`, `exemples`, `selection`, `chiffres`, `definitions`, `explorer`. Les
+libellés du rail reprennent les titres, raccourcis pour les deux questions (« Qu'est-ce que
+L'inventaire du doute ? » ne tient pas dans 16 rem) ; les titres publiés ne changent pas.
+
+**Deux corrections apportées au mécanisme commun**, qui profitent aussi à la page Méthode :
+
+- **Ce qu'on demande l'emporte sur ce qu'on mesure.** Quand la page est en butée basse, les
+  deux dernières sections tiennent dans le même écran et la mesure désignait toujours la
+  dernière : demander « Ce que ces mots veulent dire » affichait « Explorer ». Un clic du rail
+  ou une ancre reçue dans l'URL fixent désormais le repère jusqu'au prochain geste de
+  défilement du lecteur.
+- **Le graphique bascule sur SA largeur, plus sur celle de la fenêtre** (`@container`). Avec un
+  rail de 16 rem, une fenêtre large ne garantit plus une colonne large : huit colonnes dans
+  40 rem donnaient des libellés en escalier. Seuil à 45 rem, choisi au-dessus de la largeur que
+  le graphique retrouve quand le rail disparaît — sinon rétrécir la fenêtre le ferait repasser
+  en colonnes, ce qui se lirait comme un défaut.
+
+**Composition.** Le bandeau de titre garde la pleine largeur au-dessus du rail — un titre de
+page ne se met pas en colonne — et devient la première entrée du sommaire. À la différence de
+la page Méthode, la colonne de contenu n'est **pas** bornée à la largeur d'un paragraphe : elle
+porte aussi le bandeau de chiffres, le graphique et le glossaire. Ce sont les blocs de texte
+qui se bornent eux-mêmes (44 à 52 rem). Vérifié sans débordement horizontal de 360 à 1600 px.
+
 ## 2026-08-04 — « Les mentions en chiffres » : trois zones qu'on peut désigner
 
 Refonte de la seule section chiffrée de la page « Présentation ». Elle s'appelait « Les
