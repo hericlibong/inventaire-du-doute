@@ -103,12 +103,9 @@
 		<h2>Que présente ce premier volet&nbsp;?</h2>
 		<p class="ouverture-texte">
 			Ce premier volet est consacré aux artistes dont le nom apparaît régulièrement avec une
-			réserve d'attribution. Il réunit actuellement
-			<strong>{nombre(u.nb_artistes)} artistes</strong> et
-			<strong>{nombre(u.notices_distinctes)} notices</strong>. Pour chacun, le lecteur peut
-			comparer ces formulations, consulter les œuvres concernées et voir dans quels musées
-			elles sont conservées. D'autres volets pourront explorer différentes
-			formes de doute présentes dans Joconde.
+			réserve d'attribution. Pour chacun, le lecteur peut comparer ces formulations, consulter
+			les œuvres concernées et voir dans quels musées elles sont conservées. D'autres volets
+			pourront explorer différentes formes de doute présentes dans Joconde.
 		</p>
 	</section>
 
@@ -190,9 +187,7 @@
 			<strong>{registre.seuil} notices</strong> comportant une réserve sur l'auteur.
 			Ce seuil permet de disposer de plusieurs cas à examiner pour chacun. Les
 			différentes écritures d'un même nom ont été regroupées, puis chaque identité a
-			été vérifiée afin de rattacher les notices au bon artiste. Ce premier volet réunit
-			<strong>{nombre(u.nb_artistes)} artistes</strong> et
-			<strong>{nombre(u.notices_distinctes)} notices</strong>.
+			été vérifiée afin de rattacher les notices au bon artiste.
 		</p>
 		<p class="renvoi">
 			<a href="{base}/methode#les-maitres">Le détail de la méthode et ses limites&nbsp;→</a>
@@ -205,7 +200,11 @@
 	     elle était l'ampleur. Ils n'existent plus qu'ICI, sous le titre et devant
 	     le graphique qui détaille les mêmes notices.
 	     Le TITRE de la section est désormais porté par la page, plus par le
-	     composant : c'est lui qui coiffe le bandeau ET le graphique. -->
+	     composant : c'est lui qui coiffe le bandeau ET le graphique.
+	     ⚠ RÈGLE : les trois chiffres du volet (artistes, notices, part du total)
+	     ne se disent qu'ICI. Les paragraphes d'ouverture et de sélection les
+	     répétaient ; ils ont été allégés le 2026-08-04. Un chiffre répété d'un
+	     bloc à l'autre se lit comme un chiffre différent. -->
 	<section class="graphique">
 		<h2>Les mentions en chiffres</h2>
 
@@ -221,7 +220,7 @@
 			<li>
 				<b>{partVolume}&nbsp;%</b>
 				<span>
-					du doute écrit dans Joconde&nbsp;: le reste
+					des notices prudentes repérées dans Joconde&nbsp;: le reste
 					({nombre(niveaux.doute_total - u.notices_distinctes)} notices) ne nomme pas
 					ces artistes-là
 				</span>
@@ -231,11 +230,16 @@
 		<MentionsFrequentes {corpus} />
 	</section>
 
+	<!-- LE GLOSSAIRE, détaché de la section chiffrée le 2026-08-04 : il se lisait
+	     comme une seconde légende du graphique, alors que c'est le SEUL endroit du
+	     site où les huit mentions sont définies. Un filet et une respiration l'en
+	     séparent ; le chapô ne renvoie plus à « l'ordre du graphique ». Les huit
+	     définitions elles-mêmes ne sont pas retouchées. -->
 	<section class="glossaire">
 		<h2>Ce que ces mots veulent dire</h2>
 		<p class="texte">
-			Les huit formules, dans l'ordre du graphique. La couleur de chacune est la même
-			partout sur le site.
+			Les huit mentions employées par les musées, définies une à une. La couleur de chacune
+			est la même partout sur le site.
 		</p>
 		<div class="zones">
 			{#each TERRITOIRES as t (t.id)}
@@ -517,7 +521,16 @@
 		color: var(--couleur-encre-douce);
 	}
 
-	/* --- 4 bis. Le glossaire des huit mentions ------------------------------- */
+	/* --- 4 bis. Le glossaire des huit mentions -------------------------------
+	   Il ne prolonge pas la section chiffrée : un filet et une respiration franche
+	   marquent le changement de nature (des définitions, plus des mesures). */
+	.glossaire {
+		max-width: 72rem;
+		margin-top: var(--espace-6);
+		padding-top: var(--espace-6);
+		border-top: 1px solid var(--couleur-trait);
+	}
+
 	.zones {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));

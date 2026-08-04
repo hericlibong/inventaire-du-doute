@@ -2,6 +2,45 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-04 — « Les mentions en chiffres » : trois zones qu'on peut désigner
+
+Refonte de la seule section chiffrée de la page « Présentation ». Elle s'appelait « Les
+mentions les plus fréquentes » et posait trois problèmes : les chiffres clés du volet
+vivaient ailleurs dans la page, les trois groupes de mentions n'étaient qu'une bande de
+titres flottant au-dessus des colonnes, et ils disparaissaient complètement sous 760 px.
+
+**Ce qui est décidé.**
+
+- **Les trois chiffres du volet (artistes, notices, part du total) ne se disent qu'une
+  fois**, dans le bandeau qui ouvre la section. Les paragraphes d'ouverture et de sélection
+  les répétaient : ils ont été allégés des seules phrases qui les portaient, sans réécriture.
+  Un même chiffre lu deux fois dans une page se lit comme deux chiffres différents.
+- **Les groupes deviennent des zones dessinées** : fond léger (tokens `--territoire-*`,
+  écrits pour cet usage), limites nettes, titre à l'intérieur du cadre. Le titre appartient
+  à sa zone parce qu'il est dedans, pas parce qu'il est au-dessus. Même traitement sur
+  mobile, où les trois zones deviennent trois blocs titrés au lieu de disparaître.
+- **L'interaction porte sur la zone, jamais sur une colonne isolée.** Survol, focus clavier
+  ou toucher mettent en évidence toutes les mentions du groupe et atténuent les deux autres.
+  Une épingle (clic/toucher) tient la mise en évidence là où il n'y a pas de survol ; on
+  referme en retouchant la même zone ou par Échap.
+- **Plus aucune infobulle.** Les valeurs exactes — part et nombre de notices — restent
+  écrites au-dessus de chaque barre, en permanence. Une donnée qu'il faut survoler pour lire
+  n'existe pas sur un écran tactile.
+- **L'axe est nommé** : « Part des notices dans lesquelles cette mention apparaît ».
+- **Le texte sous le graphique ne commente plus, il constate** : la mention la plus fréquente
+  et celle qui suit, cherchées par leur valeur et non écrites en dur. Deux précisions
+  distinctes le suivent, en mentions techniques : la taille des barres mesure une fréquence
+  et non un degré de certitude ; une notice pouvant porter plusieurs mentions, les parts ne
+  font pas 100 %.
+- **Le glossaire « Ce que ces mots veulent dire » est détaché** de la section chiffrée par un
+  filet et une respiration franche : c'est le seul endroit du site où les huit mentions sont
+  définies, il ne doit pas se lire comme une seconde légende du graphique. Les huit
+  définitions ne sont pas retouchées.
+
+**Inchangé** : les données, les huit couleurs, l'ordre des mentions (distance à la main de
+l'artiste, jamais un classement par valeur) et la largeur du graphique, qui sera arrêtée à la
+composition finale de la page.
+
 ## 2026-08-03 (bis) — « Notice » et « œuvre » : une convention, pas une correction
 
 L'audit du point de contrôle 2 avait relevé que le même nombre s'appelle « œuvres » sur le
