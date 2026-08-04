@@ -105,9 +105,20 @@
 	<!-- EXEMPLES DE NOTICES (2026-08-04) : même structure pour chacun — image,
 	     titre, musée, champ Auteur au mot près, UNE phrase d'explication, lien POP.
 	     Aucune carte décorative, aucun récit. Le titre n'annonce pas de compte : il
-	     survit à l'ajout ou au retrait d'un exemple. -->
+	     survit à l'ajout ou au retrait d'un exemple.
+	     Ce que les exemples ont en commun est dit UNE FOIS, en chapô (2026-08-04) :
+	     la phrase « le musée renseigne ainsi le champ consacré à l'auteur » était
+	     répétée à l'identique sous chaque titre, et ne disait pas COMMENT. Le chapô
+	     nomme le champ reproduit et dit ce qui accompagne le nom, pour que la
+	     citation qui suit se lise sans explication ; chaque exemple ne garde plus
+	     que ce qui lui est propre. Chapô écrit par l'utilisateur, repris tel quel.
+	     ⚠ Il annonce DEUX exemples : à modifier si la liste en gagne ou en perd un. -->
 	<section class="notices-exemples">
 		<h2>Exemples de notices Joconde</h2>
+		<p class="texte">
+			Les deux exemples ci-dessous reproduisent le champ «&nbsp;Auteur&nbsp;» de Joconde.
+			Le nom de l'artiste est accompagné d'une réserve inscrite dans la notice.
+		</p>
 
 		<div class="liste-exemples">
 			{#each exemples as e (e.reference)}
@@ -126,8 +137,6 @@
 					<div class="propos">
 						<h3>{e.titre}</h3>
 						<p class="lieu">{e.musee}, {e.ville}</p>
-
-						<p>Dans sa notice Joconde, le musée renseigne ainsi le champ consacré à l'auteur&nbsp;:</p>
 
 						<blockquote
 							class="verbatim"
