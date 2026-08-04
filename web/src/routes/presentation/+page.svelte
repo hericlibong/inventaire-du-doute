@@ -177,11 +177,38 @@
 		</p>
 	</section>
 
-	<!-- LE BANDEAU DE CHIFFRES, seul depuis le 2026-08-04 : le titre « Ce n'est pas
-	     un cas isolé » et ses deux paragraphes redisaient l'ouverture (Joconde, la
-	     réserve d'attribution, l'objet du volet). Les trois chiffres, eux, restent —
-	     ils donnent l'ampleur d'un coup d'œil. -->
-	<section class="bandeau-chiffres">
+	<!-- 3. LA SÉLECTION (réécrite le 2026-08-04, texte de l'utilisateur) : UN SEUL
+	     paragraphe, puis le renvoi vers la méthode. Il remplace les trois blocs
+	     « seuil · vérification · ce que la liste ne dit pas », dont le détail vit
+	     désormais sur la seule page Méthode. Les trois chiffres restent lus dans les
+	     exports : le seuil vient du registre, l'effectif et les notices du corpus. -->
+	<section class="selection">
+		<h2>Comment ces artistes ont été choisis</h2>
+		<p class="texte">
+			Cette sélection a été construite en filtrant et en classant les notices de
+			Joconde&nbsp;: elle réunit les artistes dont le nom apparaît dans au moins
+			<strong>{registre.seuil} notices</strong> comportant une réserve sur l'auteur.
+			Ce seuil permet de disposer de plusieurs cas à examiner pour chacun. Les
+			différentes écritures d'un même nom ont été regroupées, puis chaque identité a
+			été vérifiée afin de rattacher les notices au bon artiste. Ce premier volet réunit
+			<strong>{nombre(u.nb_artistes)} artistes</strong> et
+			<strong>{nombre(u.notices_distinctes)} notices</strong>.
+		</p>
+		<p class="renvoi">
+			<a href="{base}/methode#les-maitres">Le détail de la méthode et ses limites&nbsp;→</a>
+		</p>
+	</section>
+
+	<!-- 4. LES MENTIONS EN CHIFFRES : le bandeau, puis le graphique -------------
+	     Déplacement du 2026-08-04. Les trois chiffres vivaient plus haut, seuls
+	     dans leur propre section, et donnaient l'ampleur avant qu'on sache de quoi
+	     elle était l'ampleur. Ils n'existent plus qu'ICI, sous le titre et devant
+	     le graphique qui détaille les mêmes notices.
+	     Le TITRE de la section est désormais porté par la page, plus par le
+	     composant : c'est lui qui coiffe le bandeau ET le graphique. -->
+	<section class="graphique">
+		<h2>Les mentions en chiffres</h2>
+
 		<ul class="chiffres">
 			<li>
 				<b>{nombre(u.nb_artistes)}</b>
@@ -200,106 +227,7 @@
 				</span>
 			</li>
 		</ul>
-	</section>
 
-	<!-- 3. LA SÉLECTION : seuil · vérification · ce que la liste ne dit pas ----- -->
-	<section class="selection">
-		<h2>Comment ces artistes ont été choisis</h2>
-		<p class="texte">
-			La question mérite d'être posée franchement, parce qu'une liste de noms peut vite
-			devenir un palmarès. Celle-ci n'en est pas un&nbsp;: la notoriété n'entre nulle part
-			dans le tri. Trois choses seulement, dans cet ordre.
-		</p>
-
-		<div class="etapes">
-			<article>
-				<h3><span class="rang">1</span> Un seuil, pour avoir de quoi regarder</h3>
-				<p>
-					Un nom entre dans la liste s'il revient dans au moins
-					<strong>{registre.seuil} notices</strong> portant une réserve, une fois ses
-					différentes orthographes réunies. En dessous, il n'y a pas assez de matière
-					pour dire quoi que ce soit. Ce seuil ne juge de rien&nbsp;: il évite seulement
-					de commenter deux ou trois cas isolés.
-				</p>
-				<p>
-					Tous les noms qui l'atteignent ont été relevés, sans exception&nbsp;: ils sont
-					<strong>{nombre(registre.formes_au_seuil)}</strong>.
-				</p>
-			</article>
-
-			<article>
-				<h3><span class="rang">2</span> Une vérification, nom par nom</h3>
-				<p>
-					Atteindre le seuil ne suffit pas. Chaque nom est examiné à la main, et beaucoup
-					ne passent pas&nbsp;:
-				</p>
-				<ul class="exemples">
-					<li>
-						<b>«&nbsp;Peter&nbsp;»</b>, <b>«&nbsp;Buquet&nbsp;»</b>,
-						<b>«&nbsp;Prévost&nbsp;»</b> — un nom de famille sans prénom. Impossible de
-						dire de qui il s'agit.
-					</li>
-					<li>
-						<b>«&nbsp;Varady A&nbsp;»</b> — une initiale à la place du prénom. Même problème.
-					</li>
-					<li>
-						<b>«&nbsp;Pellerin&nbsp;»</b> — une imprimerie d'Épinal, pas une personne.
-					</li>
-					<li>
-						<b>Les trois Mellet</b>, à Vitré — le père et ses deux fils sont nommés
-						ensemble sur chacun de leurs dessins. Rien ne permet de les distinguer&nbsp;:
-						aucun des trois n'est retenu.
-					</li>
-				</ul>
-				<p>
-					À l'inverse, deux personnes bien identifiées restent deux personnes, même quand
-					les musées les nomment côte à côte&nbsp;: <b>Louis et Aimé Duthoit</b>, à Amiens,
-					apparaissent sur les mêmes dessins, suivis chacun d'un point d'interrogation. Le
-					musée hésite entre les deux frères. Chacun a sa fiche.
-				</p>
-				<p>
-					Résultat de ce travail à ce jour&nbsp;: <strong>{nombre(registre.retenues)}</strong>
-					orthographes rattachées à un artiste,
-					<strong>{nombre(registre.ecartees)}</strong> écartées avec leur raison, et
-					<strong>{nombre(registre.a_instruire)}</strong> qui n'ont pas encore été
-					examinées. Un nom non examiné n'est pas un nom rejeté.
-				</p>
-			</article>
-
-			<article>
-				<h3><span class="rang">3</span> Ce que cette liste ne dit pas</h3>
-				<p>
-					Elle ne dit pas où se trouve le doute dans les musées de France. Elle en couvre
-					<strong>{partVolume}&nbsp;%</strong>, et ce chiffre ne bougera qu'avec le
-					travail de vérification, pas avec les collections.
-				</p>
-				<p>
-					Elle ne dit pas non plus qui doute le plus. Les musées versent dans Joconde ce
-					qu'ils veulent, quand ils le veulent&nbsp;: un musée absent de ces pages n'est
-					pas un musée sans incertitudes, c'est souvent un musée qui n'a pas encore versé.
-				</p>
-				<p>
-					Enfin, elle laisse volontairement de côté des cas qui passent pourtant tous les
-					contrôles.
-					{#if registre.hors_perimetre === 1}
-						Un nom est dans ce cas&nbsp;:
-					{:else}
-						{nombre(registre.hors_perimetre)} noms sont dans ce cas&nbsp;:
-					{/if}
-					un fonds d'histoire naturelle de plusieurs milliers de planches, conservé dans un
-					seul musée et noté d'un bout à l'autre «&nbsp;attribué à&nbsp;». La personne
-					existe, le compte est juste — mais il ne s'agit pas d'une hésitation sur l'auteur
-					d'une œuvre d'art.
-				</p>
-				<p class="renvoi">
-					<a href="{base}/methode#les-maitres">Le détail de la méthode et ses limites&nbsp;→</a>
-				</p>
-			</article>
-		</div>
-	</section>
-
-	<!-- 4. LA VISUALISATION, PUIS CE QUE CES MOTS VEULENT DIRE ------------------ -->
-	<section class="graphique">
 		<MentionsFrequentes {corpus} />
 	</section>
 
@@ -371,11 +299,12 @@
 		padding-bottom: var(--espace-6);
 	}
 
-	/* Les blocs LARGES de la page (chiffres, sélection, glossaire, graphique) se
-	   bornent tous au même endroit : sans quoi chacun trouve sa propre limite et la
-	   page n'a plus de colonne. Le texte courant, lui, reste plus étroit (44 rem). */
-	.chiffres,
-	.etapes,
+	/* Les blocs LARGES de la page (glossaire, mentions en chiffres) se bornent tous au
+	   même endroit : sans quoi chacun trouve sa propre limite et la page n'a plus de
+	   colonne. Le texte courant, lui, reste plus étroit (44 rem). La sélection a
+	   quitté cette liste le 2026-08-04 : elle n'est plus qu'un paragraphe de texte ;
+	   le bandeau de chiffres aussi, mais parce qu'il est passé DANS .graphique, qui
+	   le borne déjà. */
 	.zones,
 	.graphique {
 		max-width: 72rem;
@@ -437,12 +366,15 @@
 		line-height: 1.65;
 	}
 
-	/* --- Le bandeau de chiffres ---------------------------------------------- */
+	/* --- Le bandeau de chiffres ----------------------------------------------
+	   Depuis le 2026-08-04 il ouvre la section « Les mentions en chiffres » : il
+	   lui faut donc une marge basse, pour ne pas coller au chapô du graphique qui
+	   le suit immédiatement. */
 	.chiffres {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
 		gap: var(--espace-4);
-		margin: 0;
+		margin: 0 0 var(--espace-6);
 		padding: 0;
 		list-style: none;
 	}
@@ -545,43 +477,9 @@
 		line-height: 1.4;
 	}
 
-	/* --- 3. La sélection en trois temps -------------------------------------- */
-	.etapes {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
-		gap: clamp(1.5rem, 3vw, 2.5rem);
-	}
-
-	.etapes h3 {
-		display: flex;
-		align-items: baseline;
-		gap: 0.5rem;
-		margin: 0 0 var(--espace-3);
-		font-size: var(--taille-m);
-		line-height: 1.25;
-	}
-
-	.rang {
-		flex: none;
-		font-family: var(--police-ui);
-		font-size: var(--taille-s);
-		color: var(--accent-cobalt);
-	}
-
-	.etapes p {
-		margin: 0 0 var(--espace-3);
-		line-height: 1.6;
-	}
-
-	.exemples {
-		margin: 0 0 var(--espace-3);
-		padding-left: 1.1rem;
-		line-height: 1.55;
-	}
-
-	.exemples li {
-		margin-bottom: var(--espace-2);
-	}
+	/* La grille en trois colonnes de la sélection (.etapes, .rang, .exemples) est
+	   partie le 2026-08-04 avec les trois blocs qu'elle mettait en page. La section
+	   ne contient plus qu'un paragraphe : elle se contente de .texte et de .renvoi. */
 
 	/* --- Renvois et sortie ---------------------------------------------------- */
 	.renvoi {

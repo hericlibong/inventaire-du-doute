@@ -1,7 +1,12 @@
 <script>
-	// « LES MENTIONS LES PLUS FRÉQUENTES » — l'unique visualisation reprise du
-	// prototype d'analyse (2026-08-01), renommée et rendue autonome le 2026-08-02.
+	// LE GRAPHIQUE DES MENTIONS — l'unique visualisation reprise du prototype
+	// d'analyse (2026-08-01), renommée et rendue autonome le 2026-08-02.
 	// Elle s'appelait « Le corpus », un mot de chantier que personne ne lit.
+	//
+	// Le titre de section (« Les mentions en chiffres ») est remonté dans la page
+	// le 2026-08-04 : il coiffe désormais le bandeau de chiffres ET ce graphique.
+	// Ce qui reste ici est le chapô du graphique seul — il l'introduit, à sa place,
+	// juste avant les barres.
 	//
 	// Une colonne par mention, dans l'ordre de PROXIMITÉ à l'artiste — jamais par
 	// valeur : c'est une échelle ordonnée, et c'est elle qui raconte quelque chose
@@ -60,7 +65,6 @@
 
 <figure class="mentions">
 	<figcaption class="tete">
-		<h2>Les mentions les plus fréquentes</h2>
 		<p class="sous-titre">
 			Sur les {nombre(u.notices_distinctes)} notices de ce volume, voici les mots que les musées
 			emploient. Ils sont rangés du plus proche de la main de l'artiste au plus lointain,
@@ -132,10 +136,6 @@
 
 	.tete {
 		max-width: 44rem;
-	}
-
-	.tete h2 {
-		margin: 0 0 var(--espace-2);
 	}
 
 	.sous-titre {
