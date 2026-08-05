@@ -74,8 +74,11 @@
 		des résultats.
 	</p>
 	<p class="prudence">
-		L'inventaire reprend les informations publiées dans Joconde. Il ne cherche pas à
-		déterminer l'auteur des œuvres.
+		L'inventaire reprend les informations publiées dans
+		<a
+			href="https://www.data.gouv.fr/fr/datasets/collections-des-musees-de-france-base-joconde/"
+			target="_blank"
+			rel="noopener">Joconde</a>. Il ne cherche pas à déterminer l'auteur des œuvres.
 	</p>
 </header>
 
@@ -514,13 +517,17 @@
 		line-height: 1.65;
 	}
 
-	/* Liens de contenu : cobalt discret, jamais le poids d'un bouton. */
+	/* Liens de contenu : cobalt discret, jamais le poids d'un bouton. Le bandeau de
+	   titre en porte un depuis le 2026-08-05 (Joconde, dans la ligne de prudence). */
+	.tete a,
 	.contenu a {
 		color: var(--accent-cobalt);
 		text-decoration: none;
 		border-bottom: 1px solid transparent;
 	}
 
+	.tete a:hover,
+	.tete a:focus-visible,
 	.contenu a:hover,
 	.contenu a:focus-visible {
 		border-bottom-color: var(--accent-cobalt);
