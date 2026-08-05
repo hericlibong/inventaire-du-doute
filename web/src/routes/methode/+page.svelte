@@ -64,15 +64,18 @@
 <header class="tete">
 	<p class="kicker">Méthode et limites</p>
 	<!-- tabindex : cible du focus au retour en haut (le clavier suit le regard). -->
-	<h1 id="haut-de-page" tabindex="-1">Ce que les chiffres disent, et ne disent pas</h1>
+	<h1 id="haut-de-page" tabindex="-1">Comment L'inventaire du doute a été construit</h1>
+	<!-- Ouverture réécrite par l'utilisateur le 2026-08-05 : elle annonce le plan de la
+	     page au lieu de la commenter. Le second paragraphe garde le rang de la ligne de
+	     prudence — même place, même petit corps qu'auparavant. -->
 	<p class="chapo">
-		Cette page dit comment le projet lit la base Joconde, ce qu'il compte, et ce qu'il
-		ne prétend pas savoir. Elle est publiée au même rang que le reste&nbsp;: les limites
-		font partie du récit.
+		Cette page présente les données utilisées, les règles appliquées pour repérer et
+		compter les notices, la façon dont les artistes ont été identifiés et les limites
+		des résultats.
 	</p>
 	<p class="prudence">
-		Le projet reprend les formulations publiées par les musées&nbsp;; il ne réattribue
-		aucune œuvre.
+		L'inventaire reprend les informations publiées dans Joconde. Il ne cherche pas à
+		déterminer l'auteur des œuvres.
 	</p>
 </header>
 
