@@ -1,17 +1,22 @@
 <script>
 	// Carte par maître (decisions.md 2026-07-12, taille fixe retenue après test A/B).
-	// Une seule question : D'OÙ viennent les notices concernées — présence et
+	// Une seule question : OÙ sont conservées les œuvres concernées — présence et
 	// distribution des musées, pas leur classement. Tous les points ont la MÊME
 	// taille : une taille variable rendrait un « gros cercle » incomparable d'une
 	// fiche à l'autre (échelle propre au maître) et gonflerait de petits volumes.
-	// Le COMBIEN par musée reste au survol (tooltip) et dans l'onglet Graphique.
 	// Couleur unique et stable. Le fond des régions est une illustration (IGN via
 	// france-geojson), jamais une donnée.
+	//
+	// UN SEUL ESPACE D'INFORMATION depuis le 2026-08-06 : le panneau. L'infobulle
+	// qui suivait le pointeur a été retirée — elle disait la même chose que le
+	// panneau, s'effaçait au premier mouvement, recouvrait le titre de la vue, et
+	// n'existait pas au toucher. Le survol ne renseigne plus : il ANNONCE que le
+	// point se choisit (il grossit, son contour se renforce, les autres s'atténuent),
+	// et le clic ouvre le panneau. Le clavier reçoit exactement le même retour.
 	import { onMount } from 'svelte';
 	import { base } from '$app/paths';
-	import Infobulle from '$lib/Infobulle.svelte';
 	import { nombre, lienPop } from '$lib/joconde.js';
-	import { FAMILLE_PUBLIC, notices } from '$lib/familles-public.js';
+	import { FAMILLE_PUBLIC } from '$lib/familles-public.js';
 	import { estProjetable, creerProjection, creerChemin, normaliserFond, ecarterPoints } from '$lib/geo.js';
 
 	// `onVoirOeuvres(code)` remonte à la page le musée choisi : elle pose le filtre
@@ -46,8 +51,11 @@
 	// sur les points (geo.js, creerProjection). Trente-deux des cent deux artistes
 	// sont dans ce cas.
 
-	// « N notice(s) concernée(s) » — accord géré par notices(), puis participe accordé.
-	const concernees = (n) => `${notices(n)} concernée${n > 1 ? 's' : ''}`;
+	// Vocabulaire de la vue : « œuvre », jamais « notice » (É1, 2026-08-03 — le mot
+	// du lecteur d'un côté, celui de la méthode de l'autre). L'unité de calcul, elle,
+	// ne bouge pas : c'est toujours la référence Joconde.
+	const concernees = (n) =>
+		`${nombre(n)} œuvre${n > 1 ? 's' : ''} concernée${n > 1 ? 's' : ''}`;
 
 	// Intitulé de l'action, accordé au singulier comme au pluriel.
 	const voirOeuvres = (n) =>
@@ -92,12 +100,9 @@
 				doute: m.doute,
 				lignes,
 				oeuvreUnique: ou ?? null,
-				tt: {
-					header: `${m.nom}, ${m.ville}`,
-					valeur: concernees(m.doute),
-					titre: ou?.titre || null,
-					lignes
-				},
+				// Nom accessible du point : tout ce que le panneau dira, dit d'avance.
+				// Un lecteur d'écran n'a jamais eu l'infobulle ; il ne perd donc rien à
+				// sa disparition, et il sait ce qu'ouvre le point avant de l'activer.
 				resume: `${m.nom}, ${m.ville} : ${concernees(m.doute)}. ${detail}. ` +
 					`Choisir ce musée pour ${voirOeuvres(m.doute).toLowerCase()}.`
 			};
@@ -112,28 +117,9 @@
 		return fond.features.map((f) => path(f));
 	});
 
-	// Tooltip HTML custom, positionné dans le conteneur (même grammaire que le nuage).
-	let regardEl;
-	let actif = $state(null);
-	function montre(event, p) {
-		const cible = event.currentTarget.getBoundingClientRect();
-		const hote = regardEl.getBoundingClientRect();
-		const y = cible.top + cible.height / 2 - hote.top;
-		actif = {
-			tt: p.tt,
-			x: cible.left + cible.width / 2 - hote.left,
-			y,
-			dessous: y < 90
-		};
-	}
-	function cache() {
-		actif = null;
-	}
-
-	// --- Musée CHOISI : persistant, à la différence du survol -------------------
-	// Le survol renseigne, le choix engage. Deux états distincts, comme sur le
-	// graphique du profil : l'infobulle s'efface dès qu'on bouge, le panneau reste
-	// tant qu'on ne le ferme pas — c'est lui qui porte les liens.
+	// --- Musée CHOISI : le seul état de la carte -------------------------------
+	// Il persiste jusqu'à ce qu'on choisisse un autre musée ou qu'on ferme le
+	// panneau. Rien d'autre ne s'affiche au passage de la souris.
 	let choisi = $state(null); // code Muséofile
 	const musee = $derived(points.find((p) => p.code === choisi) ?? null);
 
@@ -144,12 +130,11 @@
 		choisi = null;
 	});
 
+	// Choisir un musée REMPLACE le contenu du panneau. Choisir deux fois le même ne
+	// le referme pas : seul « Fermer » ferme (2026-08-06) — sur un écran tactile,
+	// un second appui involontaire faisait disparaître ce qu'on venait d'ouvrir.
 	function choisir(code) {
-		choisi = choisi === code ? null : code;
-		// Le panneau prend le relais de l'infobulle : la laisser ouverte afficherait
-		// deux fois la même chose côte à côte, et elle recouvre le titre de la vue
-		// (C8, 2026-08-03). Le survol renseigne, le choix engage — pas les deux.
-		actif = null;
+		choisi = code;
 	}
 
 	function auClavier(event, code) {
@@ -161,19 +146,19 @@
 </script>
 
 <figure class="carte">
-	<figcaption class="titre">D'où viennent ces notices</figcaption>
+	<figcaption class="titre">Où sont conservées ces œuvres&nbsp;?</figcaption>
 
 	<div class="agencement">
-		<div class="scene" bind:this={regardEl}>
-			<svg viewBox="0 0 {W} {H}" role="img" aria-label="Carte des musées de France ayant publié des notices où le nom de {maitre.nom} est accompagné d’une formulation prudente">
+		<div class="scene">
+			<svg viewBox="0 0 {W} {H}" role="img" aria-label="Carte des musées de France conservant des œuvres où le nom de {maitre.nom} est accompagné d’une formulation prudente">
 				<!-- Fond régions : illustration discrète, aucune donnée. -->
 				{#each regions as d, i (i)}
 					<path {d} class="region" />
 				{/each}
 				<!-- Un point = un musée (tous de même taille, et tous choisissables de
 				     la même façon : souris, toucher, Entrée ou Espace). Le survol
-				     renseigne, le choix ouvre le panneau au flanc — c'est lui qui porte
-				     les liens, jamais l'infobulle. -->
+				     annonce seulement qu'on peut le choisir ; le clic ouvre le panneau,
+				     seul endroit où l'information s'écrit. -->
 				{#each points as p (p.code)}
 					<circle
 						cx={p.x}
@@ -187,17 +172,10 @@
 						aria-label={p.resume}
 						onclick={() => choisir(p.code)}
 						onkeydown={(e) => auClavier(e, p.code)}
-						onmouseenter={(e) => montre(e, p)}
-						onmouseleave={cache}
-						onfocus={(e) => montre(e, p)}
-						onblur={cache}
 					/>
 				{/each}
 			</svg>
 
-			{#if actif}
-				<Infobulle tt={actif.tt} x={actif.x} y={actif.y} dessous={actif.dessous} />
-			{/if}
 		</div>
 
 		<div class="flanc">
@@ -231,16 +209,17 @@
 					<button type="button" class="fermer" onclick={() => (choisi = null)}>Fermer</button>
 				</div>
 			{:else}
-				<!-- Légende : un seul repère de point (présence). Le nombre de notices par
-				     musée se lit au survol, pas dans la taille. -->
+				<!-- Aucun musée choisi : ce que le point représente, et ce qu'on peut en
+				     faire. Plus de mode d'emploi du survol — il n'affiche plus rien. -->
 				<div class="legende">
 					<svg class="repere" viewBox="0 0 {2 * R_POINT} {2 * R_POINT}" width={2 * R_POINT} height={2 * R_POINT} aria-hidden="true">
 						<circle cx={R_POINT} cy={R_POINT} r={R_POINT} class="point" />
 					</svg>
 					<p class="legende-texte">
-						Un point = un musée ayant publié au moins une notice concernée.
-						Passez sur un point pour voir combien, et sous quelles formules&nbsp;;
-						choisissez-le pour ouvrir ses œuvres.
+						Un point = un musée conservant au moins une œuvre concernée.
+					</p>
+					<p class="invite">
+						Sélectionnez un musée sur la carte pour afficher les œuvres concernées.
 					</p>
 				</div>
 			{/if}
@@ -248,7 +227,7 @@
 	</div>
 	{#if projetables.length === 0}
 		<p class="repli">
-			Aucune de ces notices ne relève d'un musée de France métropolitaine.
+			Aucune de ces œuvres n'est conservée dans un musée de France métropolitaine.
 		</p>
 	{/if}
 
@@ -257,16 +236,15 @@
 		<p class="hors-cadre">
 			Hors cadre métropolitain&nbsp;:
 			{#if horsCadre.length === 1}
-				{notices(total)} rattachée{total > 1 ? 's' : ''} au {horsCadre[0].nom},
-				à {horsCadre[0].ville}.
+				{concernees(total)} au {horsCadre[0].nom}, à {horsCadre[0].ville}.
 				{#if onVoirOeuvres}
 					<button type="button" class="action action-en-ligne" onclick={() => onVoirOeuvres(horsCadre[0].code)}>
 						{voirOeuvres(horsCadre[0].doute)}&nbsp;→
 					</button>
 				{/if}
 			{:else}
-				{notices(total)} rattachées à {nombre(horsCadre.length)} musées hors
-				métropole (outre-mer ou étranger).
+				{concernees(total)}, dans {nombre(horsCadre.length)} musées hors métropole
+				(outre-mer ou étranger).
 			{/if}
 		</p>
 	{/if}
@@ -329,39 +307,71 @@
 		stroke-width: 0.5;
 	}
 
+	/* Le point grossit sur PLACE : la transformation part de son propre centre
+	   (transform-box + origin), sinon un scale l'enverrait vers le coin du SVG.
+	   Le rayon lui-même ne change pas — animer `r` est moins régulier d'un
+	   navigateur à l'autre que d'animer une transformation. */
 	.point {
 		fill: var(--carte-point);
 		fill-opacity: 0.82;
 		stroke: #fff;
 		stroke-width: 1.1;
-		transition: fill-opacity 0.12s, stroke-width 0.12s;
+		cursor: pointer;
+		transform-box: fill-box;
+		transform-origin: center;
+		transition:
+			transform 0.12s ease-out,
+			fill-opacity 0.12s ease-out,
+			stroke-width 0.12s ease-out;
 	}
 
-	/* Survol/focus FRANC : pleine opacité + halo blanc plus large → le point
-	   survolé « se lève » du fond. Tous les points sont choisissables, le retour
-	   est donc le même pour tous. */
-	.point:focus,
-	.point:hover {
+	/* Survol et focus clavier : le MÊME retour, franc — le point grossit de moitié,
+	   son contour blanc s'épaissit, il passe en pleine opacité. Il n'annonce plus
+	   une information (l'infobulle est partie) : il annonce qu'il se choisit. */
+	.point:hover,
+	.point:focus-visible {
+		transform: scale(1.5);
 		fill-opacity: 1;
-		stroke-width: 1.8;
+		stroke-width: 2;
+	}
+
+	/* Le focus clavier ajoute son anneau : il doit rester repérable sans souris,
+	   et sur un point déjà choisi. */
+	.point:focus-visible {
+		outline: 2px solid var(--couleur-encre);
+		outline-offset: 3px;
+	}
+
+	.point:focus:not(:focus-visible) {
 		outline: none;
 	}
 
-	.point {
-		cursor: pointer;
+	/* Les autres points s'effacent LÉGÈREMENT pendant qu'on en vise un : de quoi
+	   détacher le point visé sans faire disparaître la répartition, qui est le
+	   sujet de la carte. Le point choisi, lui, ne s'atténue jamais. */
+	svg:hover .point:not(:hover):not(.choisi),
+	svg:focus-within .point:not(:focus-visible):not(.choisi) {
+		fill-opacity: 0.55;
 	}
 
-	.point:focus-visible {
-		outline: 2px solid var(--couleur-encre);
-		outline-offset: 2px;
-	}
-
-	/* Point CHOISI : le seul état persistant de la carte. Cerné d'encre, pour se
-	   distinguer du survol (qui, lui, s'efface). */
+	/* Point CHOISI : le seul état persistant de la carte. Cerné d'encre, il se
+	   distingue du survol, qui s'efface dès qu'on s'éloigne. */
 	.point.choisi {
 		fill-opacity: 1;
 		stroke: var(--couleur-encre);
-		stroke-width: 2.2;
+		stroke-width: 2.4;
+	}
+
+	.point.choisi:hover,
+	.point.choisi:focus-visible {
+		stroke-width: 2.8;
+	}
+
+	/* Le mouvement est un confort, pas une information. */
+	@media (prefers-reduced-motion: reduce) {
+		.point {
+			transition: none;
+		}
 	}
 
 	/* --- Panneau du musée choisi : il porte les liens, l'infobulle jamais. --- */
@@ -495,6 +505,16 @@
 		font-size: 0.8rem;
 		line-height: 1.45;
 		color: var(--couleur-encre-douce);
+	}
+
+	/* Ce qu'on peut faire de la carte, à la place du panneau vide. Même corps que
+	   la légende, mais en encre pleine : c'est une invitation, pas une note. */
+	.invite {
+		flex-basis: 100%;
+		margin: var(--espace-2) 0 0;
+		font-size: 0.8rem;
+		line-height: 1.45;
+		color: var(--couleur-encre);
 	}
 
 	/* Phrase de repli : c'est le contenu quand il n'y a pas de carte → lisible,

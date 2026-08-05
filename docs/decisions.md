@@ -2,6 +2,38 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-06 — La carte n'a plus qu'un seul espace d'information
+
+**L'infobulle de la carte des musées est supprimée.** Elle disait exactement ce que dit le
+panneau, s'effaçait au premier mouvement de souris, recouvrait le titre de la vue (défaut C8,
+corrigé une première fois le 2026-08-03 en la fermant au clic) et n'existait pas au toucher.
+Deux surfaces pour une seule information : le panneau reste, elle part. Rien ne suit plus le
+pointeur, rien ne se superpose à la carte.
+
+**Le survol change de rôle.** Il ne renseigne plus, il **annonce que le point se choisit** :
+le point grossit de moitié (transformation depuis son propre centre, `transform-box: fill-box`
+— animer `r` est moins régulier d'un navigateur à l'autre), son contour blanc s'épaissit, il
+passe en pleine opacité, et les autres points s'atténuent légèrement (0,55) sans disparaître —
+la répartition reste lisible, c'est le sujet de la carte. Le curseur est un pointeur, la
+transition dure 0,12 s et disparaît si le système demande de limiter les animations.
+
+**Le clavier reçoit le même retour**, à l'anneau de focus près : `:hover` et `:focus-visible`
+partagent la règle. Le point choisi, lui, garde son cerne d'encre — un état persistant, distinct
+du survol qui s'efface.
+
+**Choisir deux fois le même musée ne referme plus le panneau.** Le geste était un bascule ; sur
+un écran tactile, un second appui involontaire effaçait ce qu'on venait d'ouvrir. Le panneau se
+remplace en choisissant un autre musée, et ne se ferme que par « Fermer ».
+
+**Le flanc dit quoi faire quand rien n'est choisi** : le repère du point (« un point = un musée
+conservant au moins une œuvre concernée ») et l'invitation « Sélectionnez un musée sur la carte
+pour afficher les œuvres concernées ». L'ancien mode d'emploi du survol est devenu faux — il
+n'affiche plus rien.
+
+**Vocabulaire de la vue** : « œuvre » partout, jamais « notice » (É1, 2026-08-03 — le mot du
+lecteur d'un côté, celui de la méthode de l'autre). Le titre devient **« Où sont conservées ces
+œuvres ? »**. L'unité de calcul ne bouge pas : c'est toujours la référence Joconde.
+
 ## 2026-08-05 (septies) — Une position par musée, la même sur toutes les fiches
 
 **Erreur repérée par l'utilisateur** : sur la fiche de Ribera, le musée Goya de Castres (Tarn)
