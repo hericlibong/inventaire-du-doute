@@ -2,6 +2,39 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-05 (quinquies) — « Comment la liste des artistes a-t-elle été établie ? »
+
+Refonte de la quatrième section de la page Méthode, texte de l'utilisateur. Trois sous-parties
+ancrées — un seuil commun · une vérification des identités · une liste encore en cours d'examen
+— suivies de l'exemple des homonymes. L'ancre `#les-maitres`, visée depuis « Explorer les
+artistes », **reste sur le titre de section**.
+
+**Les six effectifs sont lus dans `registre.json`** (330 formes au seuil, 115 rattachées, 102
+artistes, 33 retirées, 1 hors périmètre, 181 à examiner) : contrôlés au rendu, ils concordent
+exactement avec l'export.
+
+**L'exemple des homonymes prend la composition des autres** (`ExempleHomonymes`, sans carte,
+deux volets reliés par une flèche). Deux changements de fond dans ce qu'il affirme :
+
+- Le volet de droite ne dit plus que les quatre autres personnes « sont comptées sous leur
+  propre nom ». **Rien ne le garantit** — elles n'ont pas forcément atteint le seuil, ni été
+  instruites. Il dit seulement qu'elles **ne sont pas rattachées à ce profil**.
+- Le bilan quitte la légende pour devenir une phrase pleine : vingt-quatre notices repérées sous
+  ce nom concernaient quelqu'un d'autre, et ne sont pas comptées dans ce profil. (Chiffre de
+  `docs/donnees.md` : CORNEILLE 13, CERQUOZZI 6, MERISI 4, PACE 1.)
+
+**Trois passages quittent la page publique**, sur demande : les tests de non-régression, les
+cas-témoins versionnés, et le repli « Les trois pièges corrigés en chemin » (fausses
+correspondances par sous-chaîne, mentions de nationalité, doute hors parenthèses). Tout cela
+reste écrit dans `docs/donnees.md` et `docs/decisions.md` — c'est de la documentation interne,
+pas du récit publiable.
+
+⚠️ **Deux chiffres publics disparaissent avec cette refonte**, effet de bord à arbitrer : « ces
+102 noms réunissent 6 081 des 24 507 notices prudentes de toute la base » et « soit 2,9 % des
+notices où un auteur est renseigné » (partie, celle-là, avec la refonte de la section 2). Plus
+rien sur la page ne relie la liste des artistes au total national. `vue_ensemble.json` n'est
+donc plus chargé par la page.
+
 ## 2026-08-05 (quater) — « Que comptons-nous, et comment ? »
 
 Refonte de la troisième section de la page Méthode, texte de l'utilisateur. Quatre

@@ -10,7 +10,7 @@
 	// règle sur un cas réel, et une capture de l'interface pour les crédits d'image.
 	import ExemplesChampAuteur from '$lib/ExemplesChampAuteur.svelte';
 	import ExempleComptageUnique from '$lib/ExempleComptageUnique.svelte';
-	import SchemaHomonymes from '$lib/SchemaHomonymes.svelte';
+	import ExempleHomonymes from '$lib/ExempleHomonymes.svelte';
 	// Rail de sommaire (palier 5). Le mécanisme — repérage de la section lue,
 	// défilement doux, retour en haut — a quitté cette page le 2026-08-04 pour
 	// devenir un composant : « Présentation » en avait besoin à son tour, et le
@@ -23,7 +23,6 @@
 
 	// Chiffres, tous issus des exports (jamais saisis à la main).
 	const nbNoms = data.artistes.artistes.length;
-	const douteDansListe = data.vue.totaux.doute_notices_liste;
 	// Registre des candidats : l'engagement de publier qui a été examiné, et
 	// avec quel résultat (decisions.md 2026-07-21 quater, décision 4).
 	const nbCandidats = data.registre.formes_au_seuil;
@@ -35,7 +34,6 @@
 	const nbHorsPerimetre = data.registre.hors_perimetre ?? 0;
 	const dApres = n.familles.d_apres.notices;
 	const copiesTotal = n.copie;
-	const pct = (v) => (v * 100).toLocaleString('fr-FR', { maximumFractionDigits: 1 });
 	const go = (o) => (o / 1e9).toLocaleString('fr-FR', { maximumFractionDigits: 2 });
 	// « 2026-07-01 » → « 1er juillet 2026 ». La date de version reste lue dans
 	// provenance.json ; seule sa mise en français se fait ici.
@@ -75,7 +73,15 @@
 				['comptage-part', 'La part affichée']
 			]
 		],
-		['artistes', 'Identifier les artistes'],
+		[
+			'artistes',
+			'La liste des artistes',
+			[
+				['artistes-seuil', 'Un seuil commun'],
+				['artistes-identites', 'Vérifier les identités'],
+				['artistes-liste', 'Une liste en cours']
+			]
+		],
 		['lire', 'Lire les chiffres et les vues'],
 		['sources', 'Limites, sources et droits']
 	];
@@ -273,67 +279,43 @@
 	     artistes » : à conserver. Elle porte sur le TITRE et non sur le paragraphe
 	     qui suit — sinon le visiteur arrivait sous le titre, sans savoir à quelle
 	     question il répond. -->
-	<h2 id="les-maitres" tabindex="-1">Comment les artistes ont-ils été identifiés&nbsp;?</h2>
+	<h2 id="les-maitres" tabindex="-1">Comment la liste des artistes a-t-elle été établie&nbsp;?</h2>
+
+	<h3 id="artistes-seuil" tabindex="-1">Un seuil commun</h3>
 	<p>
-		Une partie du site se concentre sur <strong>{nombre(nbNoms)} noms</strong> de
-		référence. Le critère est explicite, et il ne demande jamais si l'artiste est
-		célèbre&nbsp;: le musée doit écrire un <strong>nom de personne identifiable</strong>
-		— un prénom entier, pas une initiale ni un nom de famille tout seul —, cette personne
-		doit être séparée de ses homonymes, et son nom doit porter <strong>au moins dix
-		notices</strong> à formulation prudente, copies exclues, une fois ses différentes
-		graphies réunies. Ce n'est <strong>pas un palmarès des plus grands</strong>&nbsp;:
-		c'est un seuil, choisi pour avoir assez de matière à montrer. Ces {nombre(nbNoms)}
-		noms réunissent {nombre(douteDansListe)} des {nombre(n.doute_total)} notices prudentes
-		relevées dans toute la base.
-	</p>
-	<p>
-		<strong>Cette liste n'est pas close, et elle se vérifie.</strong> Tous les noms qui
-		atteignent le seuil ont été relevés — ils sont {nombre(nbCandidats)}. Chacun reçoit un
-		état à mesure qu'il est examiné&nbsp;: retenu, écarté avec sa raison, mis
-		<em>hors du sujet de cette partie</em>, ou <em>encore à examiner</em>. Un nom encore à
-		examiner n'est pas un nom rejeté&nbsp;: c'est un nom dont la vérification n'a pas été
-		faite. Aujourd'hui, {nombre(nbRetenus)} formes d'écriture sont rattachées aux
-		{nombre(nbNoms)} artistes retenus, {nombre(nbEcartes)} sont écartées — une
-		manufacture, une imprimerie, «&nbsp;anonyme&nbsp;», un nom de famille sans prénom qui
-		peut désigner plusieurs personnes, ou une mention qui ne porte aucun nom d'auteur —
-		et {nombre(nbAInstruire)} restent à examiner. La liste s'agrandira par lots.
-	</p>
-	<p>
-		<strong>Une personne peut être bien identifiée et rester hors de cette partie.</strong>
-		{nbHorsPerimetre === 1 ? 'Un nom est dans ce cas' : `${nombre(nbHorsPerimetre)} noms sont dans ce cas`}&nbsp;:
-		un fonds d'histoire naturelle de plusieurs milliers de planches, conservé dans un seul
-		musée et noté d'un bout à l'autre «&nbsp;attribué à&nbsp;». Le comptage est juste, la
-		personne existe, ses notices restent dans les totaux nationaux de ce site&nbsp;— mais
-		il ne s'agit pas d'une hésitation sur l'auteur d'une œuvre d'art, qui est le sujet de
-		cette partie. Ce n'est <strong>pas une erreur repérée</strong>&nbsp;: c'est un sujet
-		différent.
-	</p>
-	<p>
-		<strong>Séparer les personnes, pas seulement les mots.</strong> Rattacher une formule
-		au bon artiste demande de la prudence, car le nom est cherché dans un texte libre, et
-		un même nom peut cacher plusieurs personnes. Chaque artiste est défini nommément et
-		<strong>séparé de ses homonymes</strong> — sous «&nbsp;Michel-Ange&nbsp;», les musées
-		ont aussi rangé Corneille Michel-Ange, peintre lyonnais du XVII<sup>e</sup> siècle —
-		et de sa famille&nbsp;: le fils du Tintoret n'est pas le Tintoret. Ses
-		<strong>graphies multiples</strong> sont regroupées, et chaque référence n'est
-		<strong>comptée qu'une fois</strong>. Ces choix sont contrôlés sur des
-		<strong>références réelles</strong> (des cas-témoins versionnés) et protégés par des
-		<strong>tests de non-régression</strong>, pour qu'une correction n'en défasse pas une
-		autre.
+		Nous avons d'abord relevé les artistes dont le nom apparaît dans au moins dix notices
+		exprimant un doute sur l'attribution. Les différentes écritures d'un même nom sont
+		réunies et les copies «&nbsp;d'après&nbsp;» sont comptées séparément. Ce seuil ne
+		mesure ni la célébrité ni l'importance d'un artiste&nbsp;: il garantit simplement un
+		nombre suffisant de notices pour construire son profil.
 	</p>
 
-	<SchemaHomonymes />
+	<h3 id="artistes-identites" tabindex="-1">Une vérification des identités</h3>
+	<p>
+		Chaque nom est ensuite vérifié dans les notices. Un nom de famille isolé, une initiale
+		ou le nom d'une entreprise ne suffisent pas pour identifier une personne. Les homonymes
+		sont séparés et les variantes d'un même nom sont regroupées. Cette vérification évite,
+		par exemple, d'attribuer à Michel-Ange des notices qui concernent Corneille Michel-Ange
+		ou d'autres artistes portant le même prénom.
+	</p>
 
-	<details>
-		<summary>Les trois pièges corrigés en chemin</summary>
-		<p>
-			Les <strong>fausses correspondances par sous-chaîne</strong> (une œuvre de Serodine
-			ne doit pas être rattachée à Rodin) — réglées en n'acceptant que le mot entier&nbsp;;
-			les mentions de <strong>nationalité</strong> («&nbsp;école allemande&nbsp;»), qui ne
-			sont pas un doute sur un artiste et sont écartées&nbsp;; enfin le doute écrit
-			<strong>hors des parenthèses</strong>, qu'il fallait aussi savoir lire.
-		</p>
-	</details>
+	<h3 id="artistes-liste" tabindex="-1">Une liste encore en cours d’examen</h3>
+	<p>
+		Au total, {nombre(nbCandidats)} formes de noms atteignent le seuil. À ce jour,
+		{nombre(nbRetenus)} ont été rattachées à {nombre(nbNoms)} artistes.
+		{nombre(nbEcartes)} ont été retirées parce qu'elles ne permettaient pas d'identifier
+		précisément une personne,
+		{nbHorsPerimetre === 1
+			? 'une personne identifiable a été placée'
+			: `${nombre(nbHorsPerimetre)} personnes identifiables ont été placées`}
+		hors du périmètre de ce volet, et {nombre(nbAInstruire)} restent à examiner. Un nom qui
+		n'a pas encore été examiné n'est pas rejeté&nbsp;: la liste est complétée
+		progressivement.
+	</p>
+
+	<ExempleHomonymes />
+
+	<p class="note-methode">Chaque correction est vérifiée à partir de notices réelles.</p>
 </section>
 
 <!-- 5. Lire les chiffres et les vues ---------------------------------------- -->
