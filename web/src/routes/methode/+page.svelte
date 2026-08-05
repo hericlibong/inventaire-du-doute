@@ -9,7 +9,7 @@
 	// Quatre visuels (palier 4) : trois schémas HTML/CSS qui expliquent chacun UNE
 	// règle sur un cas réel, et une capture de l'interface pour les crédits d'image.
 	import ExemplesChampAuteur from '$lib/ExemplesChampAuteur.svelte';
-	import SchemaComptageUnique from '$lib/SchemaComptageUnique.svelte';
+	import ExempleComptageUnique from '$lib/ExempleComptageUnique.svelte';
 	import SchemaHomonymes from '$lib/SchemaHomonymes.svelte';
 	// Rail de sommaire (palier 5). Le mécanisme — repérage de la section lue,
 	// défilement doux, retour en haut — a quitté cette page le 2026-08-04 pour
@@ -65,7 +65,16 @@
 				['doute-reperage', 'Comment les notices sont repérées']
 			]
 		],
-		['comptage', 'Comment on compte'],
+		[
+			'comptage',
+			'Que comptons-nous ?',
+			[
+				['comptage-unite', 'L’unité de calcul'],
+				['comptage-mentions', 'Plusieurs mentions'],
+				['comptage-copies', 'Les copies'],
+				['comptage-part', 'La part affichée']
+			]
+		],
 		['artistes', 'Identifier les artistes'],
 		['lire', 'Lire les chiffres et les vues'],
 		['sources', 'Limites, sources et droits']
@@ -198,52 +207,63 @@
 	</p>
 </section>
 
-<!-- 3. Comment les notices ont-elles été comptées ? ------------------------- -->
+<!-- 3. Que comptons-nous, et comment ? ----------------------------------------
+     Section refondue le 2026-08-05, texte de l'utilisateur. Quatre sous-parties
+     ancrées, comme la section précédente. Le paragraphe sur le musée de Nice est
+     parti dans « Limites, sources et droits » : il ne répondait pas à la question
+     du comptage, il énonçait une limite de lecture. Ses chiffres n'ont pas bougé. -->
 <section id="comptage" tabindex="-1">
-	<h2>Comment les notices ont-elles été comptées&nbsp;?</h2>
+	<h2>Que comptons-nous, et comment&nbsp;?</h2>
+
+	<h3 id="comptage-unite" tabindex="-1">L’unité de calcul</h3>
 	<p>
-		<strong>Notices et «&nbsp;œuvres concernées&nbsp;».</strong> L'unité du calcul est la
-		<strong>notice Joconde</strong>. L'interface emploie parfois «&nbsp;œuvre
-		concernée&nbsp;» pour faciliter la lecture, mais une notice peut exceptionnellement
-		décrire un ensemble ou plusieurs éléments.
-	</p>
-	<p>
-		<strong>Deux façons de compter, à ne pas confondre.</strong> Dans les
-		<strong>comptages nationaux</strong>, une même notice peut porter plusieurs
-		mentions&nbsp;: les familles ne sont donc pas les tranches exclusives d'un tout — on
-		ne les additionne pas, et on n'utilise jamais de diagramme en anneau. Dans les
-		<strong>profils d'artistes</strong>, la règle est plus stricte&nbsp;: <strong>pour un
-		artiste donné, une référence Joconde est comptée une seule fois et rattachée à une
-		seule famille</strong>, selon une priorité documentée (le «&nbsp;?&nbsp;» l'emporte,
-		puis l'ordre des familles). Une même notice peut concerner deux artistes&nbsp;: elle
-		apparaît alors dans deux profils, <strong>sans être comptée deux fois</strong> dans
-		le total national.
+		Tous les chiffres sont calculés à partir des notices Joconde. Une notice correspond
+		généralement à une œuvre, mais elle peut aussi décrire un ensemble ou plusieurs
+		éléments. Dans l'interface, le mot «&nbsp;œuvre&nbsp;» est employé lorsqu'un objet est
+		présenté au lecteur&nbsp;; les calculs reposent toujours sur les références des
+		notices.
 	</p>
 
-	<SchemaComptageUnique />
+	<h3 id="comptage-mentions" tabindex="-1">Lorsqu’une notice contient plusieurs mentions</h3>
+	<p>
+		Une même notice peut contenir plusieurs indications pour un même artiste. Dans le
+		total national, elle ne compte qu'une seule fois. Dans la répartition nationale par
+		formulation, elle peut cependant apparaître dans plusieurs catégories&nbsp;: ces
+		résultats ne doivent donc pas être additionnés.
+	</p>
+	<p>
+		Dans le profil d'un artiste, chaque notice est classée une seule fois, sous une seule
+		mention. Lorsqu'un point d'interrogation est présent, c'est cette mention qui est
+		retenue&nbsp;; dans les autres cas, le classement suit un ordre défini à l'avance.
+	</p>
+	<p>
+		Une notice peut aussi citer deux artistes différents. Elle apparaît alors dans chacun
+		de leurs profils, mais ne compte toujours qu'une fois dans le total national.
+	</p>
 
+	<ExempleComptageUnique />
+
+	<h3 id="comptage-copies" tabindex="-1">Les copies sont comptées séparément</h3>
 	<p>
-		<strong>Les copies «&nbsp;d'après&nbsp;» sont comptées à part.</strong> Écrire
-		«&nbsp;d'après Rembrandt&nbsp;», c'est le plus souvent désigner une copie assumée
-		d'un modèle&nbsp;: ce n'est pas un doute sur l'auteur, mais un statut. Ces
-		{nombre(dApres)} notices «&nbsp;d'après&nbsp;» ({nombre(copiesTotal)} notices de
-		copies au total) restent donc hors du décompte du doute.
+		La mention «&nbsp;d'après&nbsp;» indique généralement qu'une œuvre reprend un modèle
+		connu. Dans ce projet, elle est donc classée parmi les copies et non parmi les
+		attributions incertaines. La base contient {nombre(copiesTotal)} notices classées
+		comme copies, dont {nombre(dApres)} portent la mention «&nbsp;d'après&nbsp;». Elles
+		restent consultables séparément, mais n'entrent pas dans le total du doute.
+	</p>
+
+	<h3 id="comptage-part" tabindex="-1">Comment la part affichée pour un artiste est calculée</h3>
+	<p>
+		La fiche d'un artiste compare deux ensembles&nbsp;: les notices qui lui attribuent
+		directement une œuvre et celles qui associent son nom à une réserve. Par exemple,
+		l'indication «&nbsp;9&nbsp;%&nbsp;» signifie que 9&nbsp;% des notices retenues pour cet
+		artiste comportent une incertitude sur l'attribution. Les copies
+		«&nbsp;d'après&nbsp;» ne sont pas incluses dans ce calcul.
 	</p>
 	<p>
-		<strong>Le «&nbsp;périmètre étudié&nbsp;» d'un artiste.</strong> Sur la fiche d'un
-		artiste, la part affichée (par exemple «&nbsp;9&nbsp;% des notices associées à son
-		nom&nbsp;») se rapporte à un <strong>total de référence</strong>&nbsp;: les notices
-		classées comme attribution directe ou comme formulation prudente. Les copies
-		«&nbsp;d'après&nbsp;» et les autres catégories exclues par le pipeline sont comptées
-		séparément et n'entrent pas dans ce dénominateur.
-	</p>
-	<p>
-		<strong>Un seul musée peut peser lourd.</strong> {nombre(n.monoculture_divulguee.doute)}
-		formulations prudentes — près d'un quart du total national — viennent d'un seul
-		établissement&nbsp;: {n.monoculture_divulguee.libelle}, dont les planches naturalistes
-		sont massivement notées «&nbsp;attribué à&nbsp;». Cela ne veut pas dire que ce musée
-		doute plus que les autres&nbsp;: c'est un effet de versement. Pour le neutraliser, on
-		donne aussi le total <strong>hors ce cas</strong>&nbsp;: {nombre(n.doute_hors_monoculture)}.
+		Ce pourcentage mesure la fréquence des réserves dans les notices associées à
+		l'artiste. Il ne mesure ni l'authenticité des œuvres ni le degré de certitude du
+		musée.
 	</p>
 </section>
 
@@ -350,6 +370,17 @@
 		résultats n'est pas un musée sans incertitudes&nbsp;: c'est peut-être un musée qui
 		n'a pas (encore) versé ses notices. C'est pourquoi le projet ne compare jamais deux
 		musées sur des comptages bruts.
+	</p>
+	<!-- Venu de « Que comptons-nous, et comment ? » le 2026-08-05 : le poids d'un seul
+	     versement est une limite de lecture, pas une règle de comptage. Chiffres
+	     inchangés, toujours lus dans niveaux.json. -->
+	<p>
+		<strong>Un seul musée peut peser lourd.</strong> {nombre(n.monoculture_divulguee.doute)}
+		formulations prudentes — près d'un quart du total national — viennent d'un seul
+		établissement&nbsp;: {n.monoculture_divulguee.libelle}, dont les planches naturalistes
+		sont massivement notées «&nbsp;attribué à&nbsp;». Cela ne veut pas dire que ce musée
+		doute plus que les autres&nbsp;: c'est un effet de versement. Pour le neutraliser, on
+		donne aussi le total <strong>hors ce cas</strong>&nbsp;: {nombre(n.doute_hors_monoculture)}.
 	</p>
 	<p>
 		Ce que l'application permet de <strong>constater</strong>&nbsp;: quelles œuvres les

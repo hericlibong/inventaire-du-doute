@@ -2,6 +2,38 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-05 (quater) — « Que comptons-nous, et comment ? »
+
+Refonte de la troisième section de la page Méthode, texte de l'utilisateur. Quatre
+sous-parties ancrées, sur le mécanisme posé le matin même : l'unité de calcul · lorsqu'une
+notice contient plusieurs mentions · les copies sont comptées séparément · comment la part
+affichée pour un artiste est calculée.
+
+**Ce qui change dans le propos.** La section expliquait les règles en langue de pipeline
+(« les familles ne sont pas les tranches exclusives d'un tout », « on n'utilise jamais de
+diagramme en anneau ») ; elle dit maintenant ce qu'on compte et ce qu'on ne compte pas, sans
+nommer un seul objet interne. Le pourcentage d'une fiche est explicitement borné : il mesure
+une fréquence de réserves, **ni l'authenticité des œuvres ni le degré de certitude du musée**.
+
+**L'exemple sort de son cadre.** `SchemaComptageUnique` devient `ExempleComptageUnique` : même
+notice réelle (M0332004170, Besançon), même règle, mais deux volets — **« Ce que la notice
+écrit » → « Ce que le projet compte »** — dans la colonne de texte, sans fond ni bordure de
+carte. La valeur du champ est reproduite entière, point-virgule compris (`VOUET Simon (?) ;
+VOUET Simon (atelier, dessinateur)`), chaque réserve dans la couleur de sa famille. Le résultat
+est énoncé en trois lignes plutôt que dans une phrase, et la notice est consultable sur POP.
+Sous 640 px, les deux volets s'empilent et la flèche se redresse.
+
+**Conformité vérifiée** contre `build_artistes.py` : `_famille_retenue` retient le point
+d'interrogation s'il est présent, puis suit l'ordre canonique des familles — c'est bien « un
+ordre défini à l'avance ». La part d'une fiche vaut `doute / (propre + doute)`
+(`BandeauMaitre.svelte`), copies exclues. Les deux effectifs de copies restent lus dans
+`niveaux.json` (`copie`, `familles.d_apres.notices`).
+
+**Un paragraphe déménage.** « Un seul musée peut peser lourd » (les 5 791 notices du muséum de
+Nice, et le total hors ce cas) quitte le comptage pour **« Limites, sources et droits »** : ce
+n'est pas une règle de calcul, c'est une limite de lecture. Chiffres inchangés, toujours lus
+dans l'export.
+
 ## 2026-08-05 (ter) — « Comment une attribution incertaine est-elle indiquée dans Joconde ? »
 
 Refonte de la deuxième section de la page Méthode, texte de l'utilisateur. Elle tenait en
