@@ -419,6 +419,23 @@
 		margin: 0 0 var(--espace-2);
 	}
 
+	/* Liens de contenu : cobalt discret, filet au survol — le traitement écrit pour
+	   la page Méthode (2026-08-05). Cette page laissait le bleu souligné du
+	   navigateur, seule rupture de charte des deux pages. */
+	.tete a,
+	.contenu a {
+		color: var(--accent-cobalt);
+		text-decoration: none;
+		border-bottom: 1px solid transparent;
+	}
+
+	.tete a:hover,
+	.tete a:focus-visible,
+	.contenu a:hover,
+	.contenu a:focus-visible {
+		border-bottom-color: var(--accent-cobalt);
+	}
+
 	h1 {
 		font-family: var(--police-titre);
 		font-size: var(--taille-xl);

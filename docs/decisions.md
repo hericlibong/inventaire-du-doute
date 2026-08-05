@@ -2,6 +2,36 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-05 (bis) — La page Méthode prend les réglages de la page Présentation
+
+Deux pages de même nature affichaient deux calibrages. Sur un écran de 1920 px, la colonne de
+« Méthode et limites » démarrait **224 px plus à gauche** que celle de « Présentation » : elle
+n'avait ni largeur maximale ni centrage, et courait jusqu'au bord. Le reste suivait — gouttières,
+retrait sous le bandeau, interlignes, marges des titres. **Décision de l'utilisateur : une seule
+identité visuelle, Méthode s'aligne sur Présentation, sans discuter chaque valeur.**
+
+Ce qui est repris tel quel : enveloppe de 92 rem centrée, gouttières
+`clamp(1.25rem, 3vw, 3rem)`, retrait haut `clamp(1.5rem, 3.5vw, 3.5rem)`, grille
+`16rem minmax(0, 1fr)`, interligne du texte courant à 1,65, chapô à 1,6 sur 46 rem, marges de
+`h2`, `p` et `section` **écrites** au lieu d'être laissées au navigateur, échelle unique des
+sous-titres (`--taille-xs`, capitales, 0,1 em).
+
+**La colonne n'est plus bornée en bloc.** Elle l'était à 46 rem, visuels compris. Comme sur
+« Présentation », ce sont les blocs qui se bornent : **44 rem** le texte courant, **72 rem** les
+trois schémas et la capture d'écran. Conséquence à surveiller : les schémas du champ « Auteur »
+et du comptage unique **ne remplissent pas** 72 rem — leur contenu est aligné à gauche, le cadre
+reste vide sur sa droite. Le schéma des homonymes, lui, occupe la largeur (deux colonnes).
+
+**Deux styles ont dû être unifiés dans l'autre sens**, parce que « Présentation » n'en avait pas :
+
+- **Les liens.** « Méthode » les compose en cobalt sans soulignement, avec un filet au survol ;
+  « Présentation » laissait le bleu souligné du navigateur. C'est le seul cas où aligner sur
+  Présentation aurait retiré un style de charte : le traitement cobalt est donc porté sur les
+  deux pages.
+- **La ligne de prudence.** Filet vermillon et italique en tête de « Méthode », petit corps UI
+  gris en pied de « Présentation ». Retenu : le petit corps gris, des deux côtés. La page Méthode
+  perd son filet d'alerte d'ouverture — c'est le prix de l'unité, et la phrase reste lisible.
+
 ## 2026-08-05 — Trois arbitrages sur la page « Présentation »
 
 Trois points étaient laissés en attente à la fin du 2026-08-04. Ils sont tranchés.

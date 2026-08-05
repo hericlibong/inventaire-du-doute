@@ -357,9 +357,19 @@
 </div>
 
 <style>
-	/* Pleine page : gouttières propres (direction « affiche »). */
+	/* Enveloppe IDENTIQUE à « Présentation » et à « Explorer les artistes »
+	   (2026-08-05) : même largeur maximale, même centrage, mêmes gouttières, même
+	   retrait sous le bandeau. La page était restée sans limite : sur un écran de
+	   1920 px, sa colonne démarrait 224 px plus à gauche que celle de
+	   « Présentation ». Passer d'une page à l'autre ne doit rien déplacer. */
 	.page {
-		padding: var(--espace-5) clamp(1rem, 4vw, 3rem) var(--espace-6);
+		box-sizing: border-box;
+		width: 100%;
+		max-width: 92rem;
+		margin-inline: auto;
+		padding-inline: clamp(1.25rem, 3vw, 3rem);
+		padding-top: clamp(1.5rem, 3.5vw, 3.5rem);
+		padding-bottom: var(--espace-6);
 	}
 
 	.kicker {
@@ -383,19 +393,24 @@
 		margin: 0;
 	}
 
+	/* Chapô : mêmes corps, interligne et largeur que l'ouverture de
+	   « Présentation » (.ouverture-texte). */
 	.chapo {
+		max-width: 46rem;
 		font-size: var(--taille-m);
-		line-height: 1.65;
-		margin: var(--espace-3) 0 0;
+		line-height: 1.6;
+		margin: var(--espace-4) 0 0;
 	}
 
-	/* Prudence : filet vermillon (accent d'alerte de la charte v2). */
+	/* Ligne de prudence : le traitement de « Présentation » — petit corps UI, gris,
+	   sans filet. Le filet vermillon en donnait ici un troisième (2026-08-05) : deux
+	   pages, deux styles pour la même phrase. */
 	.prudence {
+		max-width: 44rem;
 		margin: var(--espace-4) 0 0;
-		border-left: 2px solid var(--accent-vermillon);
-		padding-left: var(--espace-3);
-		font-style: italic;
-		font-size: var(--taille-s);
+		font-family: var(--police-ui);
+		font-size: var(--taille-xs);
+		line-height: 1.5;
 		color: var(--couleur-encre-douce);
 	}
 
@@ -407,7 +422,7 @@
 	   sommaire. */
 	.grille {
 		display: grid;
-		grid-template-columns: 16rem 1fr;
+		grid-template-columns: 16rem minmax(0, 1fr);
 		gap: var(--espace-6);
 		align-items: start;
 	}
@@ -419,19 +434,46 @@
 		grid-row: 1 / span 2;
 	}
 
+	/* Comme sur « Présentation », la colonne de contenu n'est PAS bornée à la largeur
+	   d'un paragraphe : ce sont les blocs qui se bornent eux-mêmes, chacun à la
+	   valeur qu'il a là-bas — 44 rem le texte courant, 72 rem les visuels. */
 	.contenu {
 		grid-column: 2;
 		grid-row: 2;
-		max-width: 46rem;
 		min-width: 0;
 	}
 
-	section {
-		margin-bottom: var(--espace-6);
+	section p,
+	section ul,
+	details {
+		max-width: 44rem;
 	}
 
-	section:last-child {
-		margin-bottom: 0;
+	/* Les blocs LARGES : les trois schémas et la capture d'écran. Ils étaient tenus à
+	   46 rem par la colonne ; ils prennent la même place que le graphique et le
+	   glossaire de « Présentation ». */
+	.contenu :global(.schema),
+	.capture {
+		max-width: 72rem;
+	}
+
+	/* Rythme vertical de « Présentation » : l'espace entre deux sections est posé
+	   par le haut, et les marges des titres et des paragraphes sont écrites — la
+	   page ne s'en remet plus aux valeurs par défaut du navigateur. */
+	section {
+		margin-top: var(--espace-6);
+	}
+
+	.contenu > section:first-child {
+		margin-top: 0;
+	}
+
+	h2 {
+		margin: 0 0 var(--espace-4);
+	}
+
+	section p {
+		margin: 0 0 var(--espace-4);
 	}
 
 	/* Décalage d'ancre : au saut, la cible ne colle pas au bord haut de la fenêtre.
@@ -454,17 +496,19 @@
 		outline: none;
 	}
 
+	/* Sous-titres : l'échelle des h3 de « Présentation » (glossaire) — une seule
+	   échelle pour tout le site. */
 	.contenu h3 {
 		font-family: var(--police-ui);
-		font-size: var(--taille-s);
-		letter-spacing: 0.08em;
+		font-size: var(--taille-xs);
+		letter-spacing: 0.1em;
 		text-transform: uppercase;
 		color: var(--couleur-encre-douce);
 		margin: var(--espace-5) 0 0;
 	}
 
 	section p {
-		line-height: 1.7;
+		line-height: 1.65;
 	}
 
 	/* Liens de contenu : cobalt discret, jamais le poids d'un bouton. */
