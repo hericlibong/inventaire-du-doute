@@ -54,6 +54,13 @@
 </script>
 
 <div class="page">
+<div class="grille">
+<!-- Le bandeau de titre vit DANS la grille depuis le 2026-08-05, en tête de la
+     colonne de contenu : la page n'a plus qu'une seule ligne de départ, et le rail
+     monte à hauteur du titre. Il reste premier dans le document (le titre se lit
+     avant le sommaire) ; le repli à 760 px le remet au-dessus de la barre de liens.
+     Même disposition que « Présentation » : passer d'une page à l'autre ne doit pas
+     déplacer le titre. -->
 <header class="tete">
 	<p class="kicker">Méthode et limites</p>
 	<!-- tabindex : cible du focus au retour en haut (le clavier suit le regard). -->
@@ -69,7 +76,6 @@
 	</p>
 </header>
 
-<div class="grille">
 	<SommaireAncres sections={sommaire} ancreHaut="haut-de-page" />
 
 	<div class="contenu">
@@ -366,6 +372,8 @@
 	}
 
 	.tete {
+		grid-column: 2;
+		grid-row: 1;
 		max-width: 52rem;
 	}
 
@@ -391,19 +399,29 @@
 		color: var(--couleur-encre-douce);
 	}
 
-	/* Deux zones : rail de sommaire (collant sur ordinateur) + contenu. */
+	/* Deux zones : rail de sommaire (collant sur ordinateur) + contenu, le bandeau de
+	   titre en tête de la seconde. Le rail court sur les deux lignes — sa zone de
+	   grille descend jusqu'au bas du contenu, ce dont son `position: sticky` a besoin
+	   pour suivre la lecture. Le placement est explicite parce que l'ordre du
+	   document ne suit pas celui de la grille : le titre est écrit avant le
+	   sommaire. */
 	.grille {
 		display: grid;
 		grid-template-columns: 16rem 1fr;
 		gap: var(--espace-6);
-		margin-top: var(--espace-6);
 		align-items: start;
 	}
 
 	/* Le rail lui-même (styles, état, retour en haut) vit dans SommaireAncres.svelte
 	   depuis le 2026-08-04. Cette page ne garde que la colonne qui l'accueille. */
+	.grille > :global(.sommaire) {
+		grid-column: 1;
+		grid-row: 1 / span 2;
+	}
 
 	.contenu {
+		grid-column: 2;
+		grid-row: 2;
 		max-width: 46rem;
 		min-width: 0;
 	}
@@ -525,6 +543,15 @@
 		.grille {
 			grid-template-columns: 1fr;
 			gap: var(--espace-4);
+		}
+
+		/* Une seule colonne : les trois blocs reprennent l'ordre du document —
+		   titre, barre de liens, contenu. */
+		.grille > :global(.sommaire),
+		.tete,
+		.contenu {
+			grid-column: auto;
+			grid-row: auto;
 		}
 	}
 

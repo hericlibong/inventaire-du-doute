@@ -100,10 +100,15 @@
 	     et le projet lit ce qu'elle publie. « Notices » est répété d'une phrase à l'autre
 	     À DESSEIN : le total national compte des notices, jamais des œuvres, et une reprise
 	     par « on en compte 24 507 » laisserait le chiffre sans antécédent. -->
-	<!-- Le bandeau de titre est la PREMIÈRE section du sommaire, et il garde la
-	     pleine largeur au-dessus du rail : un titre de page ne se met pas en
-	     colonne. Il est aussi la cible du retour en haut (tabindex : le clavier
-	     suit le regard). -->
+	<div class="grille">
+	<!-- Le bandeau de titre est la PREMIÈRE section du sommaire. Il vit DANS la
+	     grille depuis le 2026-08-05, en tête de la colonne de contenu : la page n'a
+	     plus qu'une seule ligne de départ, et le rail monte à hauteur du titre — ce
+	     qui le pose comme une navigation, et non comme le premier contenu de la
+	     page. Il reste premier dans le document (le titre se lit avant le sommaire),
+	     et le repli à 760 px le remet naturellement au-dessus de la barre de liens.
+	     Il est aussi la cible du retour en haut (tabindex : le clavier suit le
+	     regard). -->
 	<header class="tete" id="le-projet" tabindex="-1">
 		<p class="kicker">Volume 1 — Autour des maîtres</p>
 		<h1>Qu'est-ce que L'inventaire du doute&nbsp;?</h1>
@@ -121,7 +126,6 @@
 		</p>
 	</header>
 
-	<div class="grille">
 	<SommaireAncres sections={sommaire} ancreHaut="le-projet" />
 
 	<div class="contenu">
@@ -271,6 +275,13 @@
 			{#each TERRITOIRES as t (t.id)}
 				<div class="zone">
 					<h3>{t.titre}</h3>
+					<!-- Les trois en-têtes sont VOLONTAIREMENT celles du graphique : c'est ce
+					     qui fait comprendre que le glossaire définit les groupes qu'on vient de
+					     voir (source unique, territoires.js). L'annotation de zone, écrite là
+					     depuis longtemps mais affichée nulle part sur cette page, évite que la
+					     reprise soit une copie sèche : elle dit en une ligne ce que le groupe
+					     recouvre, avant les définitions mention par mention (2026-08-05). -->
+					<p class="annotation">{t.annotation}</p>
 					<dl>
 						{#each t.codes as code (code)}
 							<div class="entree-mention">
@@ -333,13 +344,28 @@
 
 	/* Deux zones, comme sur « Méthode et limites » : rail de sommaire (collant sur
 	   ordinateur) + contenu. Le rail vient du composant partagé ; la page ne fournit
-	   que la colonne. Le bandeau de titre reste AU-DESSUS, en pleine largeur. */
+	   que la colonne. Le bandeau de titre occupe la première ligne de la colonne de
+	   contenu (2026-08-05) : titre, texte et blocs partent tous de la même abscisse.
+	   Le rail, lui, court sur les deux lignes — sa zone de grille descend jusqu'au
+	   bas du contenu, ce dont son `position: sticky` a besoin pour suivre la
+	   lecture. Le placement est explicite parce que l'ordre du document ne suit pas
+	   celui de la grille : le titre est écrit avant le sommaire. */
 	.grille {
 		display: grid;
 		grid-template-columns: 16rem minmax(0, 1fr);
 		gap: var(--espace-6);
-		margin-top: var(--espace-6);
 		align-items: start;
+	}
+
+	.grille > :global(.sommaire) {
+		grid-column: 1;
+		grid-row: 1 / span 2;
+	}
+
+	.tete {
+		grid-column: 2;
+		grid-row: 1;
+		max-width: 52rem;
 	}
 
 	/* Contrairement à la page Méthode, la colonne de contenu n'est PAS bornée à la
@@ -347,6 +373,8 @@
 	   graphique et le glossaire, qui ont besoin de place. Ce sont les blocs de texte
 	   qui se bornent eux-mêmes, plus bas (44 à 52 rem). */
 	.contenu {
+		grid-column: 2;
+		grid-row: 2;
 		min-width: 0;
 	}
 
@@ -389,10 +417,6 @@
 		text-transform: uppercase;
 		color: var(--accent-cobalt);
 		margin: 0 0 var(--espace-2);
-	}
-
-	.tete {
-		max-width: 52rem;
 	}
 
 	h1 {
@@ -606,13 +630,22 @@
 	}
 
 	.zone h3 {
-		margin: 0 0 var(--espace-3);
+		margin: 0 0 var(--espace-2);
 		padding-bottom: var(--espace-2);
 		border-bottom: 1px solid var(--couleur-trait);
 		font-family: var(--police-ui);
 		font-size: var(--taille-xs);
 		letter-spacing: 0.1em;
 		text-transform: uppercase;
+		color: var(--couleur-encre-douce);
+	}
+
+	/* L'annotation de zone reste du texte courant : en capitales, elle passerait pour
+	   un second en-tête, alors qu'elle se lit comme une phrase. */
+	.zone .annotation {
+		margin: 0 0 var(--espace-3);
+		font-size: var(--taille-s);
+		line-height: 1.5;
 		color: var(--couleur-encre-douce);
 	}
 
@@ -667,7 +700,15 @@
 		.grille {
 			grid-template-columns: minmax(0, 1fr);
 			gap: var(--espace-4);
-			margin-top: var(--espace-5);
+		}
+
+		/* Une seule colonne : les trois blocs reprennent l'ordre du document —
+		   titre, barre de liens, contenu. */
+		.grille > :global(.sommaire),
+		.tete,
+		.contenu {
+			grid-column: auto;
+			grid-row: auto;
 		}
 	}
 </style>

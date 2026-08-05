@@ -8,7 +8,7 @@
 	// Ce qui reste ici est le chapô du graphique seul.
 	//
 	// REFONTE DU 2026-08-04 — ce que le lecteur doit pouvoir lire sans mode d'emploi :
-	//   hauteur de la barre  = fréquence de la mention (intitulé d'axe, axe gradué) ;
+	//   taille de la barre   = fréquence de la mention (intitulé d'axe, axe gradué) ;
 	//   position horizontale = groupe auquel elle appartient (trois zones dessinées) ;
 	//   couleur              = la mention elle-même (pigment stable du projet).
 	// Les trois groupes ne sont plus une bande de titres flottant au-dessus des
@@ -180,7 +180,7 @@
 	</p>
 
 	<p class="precision">
-		La hauteur des barres indique une fréquence, pas un degré de certitude sur l'attribution.
+		Ces barres indiquent une fréquence, pas un degré de certitude sur l'attribution.
 	</p>
 	<p class="precision">
 		Une même notice pouvant contenir plusieurs mentions, les pourcentages ne s'additionnent pas

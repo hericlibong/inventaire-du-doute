@@ -2,6 +2,40 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-05 — Trois arbitrages sur la page « Présentation »
+
+Trois points étaient laissés en attente à la fin du 2026-08-04. Ils sont tranchés.
+
+**1. Une phrase qui ne décrivait que l'écran d'ordinateur.** Sous le graphique, la précaution
+disait « la hauteur des barres indique une fréquence » — faux sur petit écran, où les barres
+sont horizontales. Elle devient « Ces barres indiquent une fréquence, pas un degré de certitude
+sur l'attribution. » Le chapô du graphique dit déjà, six lignes plus haut, que les barres
+indiquent la fréquence : la précaution n'a pas besoin de renommer la dimension, et le lecteur a
+une notion de moins à retenir. Règle qui en découle : **aucun texte publié ne nomme une
+direction de l'écran** (hauteur, largeur, colonne de gauche) — l'affichage change, le texte non.
+
+**2. Le bandeau de titre entre dans la colonne de contenu** — sur « Présentation » **et** sur
+« Méthode et limites ». Il gardait la pleine largeur au-dessus du rail (décision du 2026-08-04
+bis, ci-dessous, que celle-ci remplace) : le titre partait donc du bord gauche, et tout le reste
+de la page seize rem plus loin. Deux lignes de départ pour une page, dont une seule porte du
+texte. Le titre occupe désormais la première ligne de la colonne de contenu, le rail court sur
+toute la hauteur à sa gauche : une seule abscisse pour le titre, le texte et les blocs larges,
+et le sommaire se lit comme une navigation plutôt que comme le premier contenu de la page.
+
+Le titre reste **écrit avant le sommaire dans le document** (il se lit d'abord, et le repli à
+760 px le remet naturellement au-dessus de la barre de liens) : le placement dans la grille est
+donc explicite des deux côtés, et annulé sous 760 px. Les deux pages portent la même
+disposition — passer de l'une à l'autre ne doit pas déplacer le titre.
+
+**3. Le glossaire garde les en-têtes du graphique, et dit ce qu'elles recouvrent.** « Au plus
+près », « Autour du maître », « Dans son influence » se répètent d'un bloc à l'autre : c'est
+voulu, c'est ce qui fait comprendre que le glossaire définit les groupes qu'on vient de voir, et
+les deux blocs lisent la même source (`territoires.js`). Pour que la reprise ne soit pas une
+copie sèche, chaque en-tête du glossaire porte maintenant l'annotation de zone, écrite depuis
+longtemps mais affichée nulle part sur cette page : « Sa main est probable, sans certitude. »,
+« Son atelier, son cercle, son école — plus que sa main. », « Son style, repris sans lui. » Elle
+reste du texte courant, pas des capitales : en en-tête, elle passerait pour un second titre.
+
 ## 2026-08-04 (bis) — Un seul sommaire pour tout le site
 
 La page « Présentation » reçoit le rail de sommaire de la page « Méthode ». Plutôt que de le
@@ -34,7 +68,9 @@ L'inventaire du doute ? » ne tient pas dans 16 rem) ; les titres publiés ne ch
   en colonnes, ce qui se lirait comme un défaut.
 
 **Composition.** Le bandeau de titre garde la pleine largeur au-dessus du rail — un titre de
-page ne se met pas en colonne — et devient la première entrée du sommaire. À la différence de
+page ne se met pas en colonne — et devient la première entrée du sommaire. *(Revu le
+2026-08-05 : le titre est entré dans la colonne de contenu, sur les deux pages. Voir l'entrée
+du jour.)* À la différence de
 la page Méthode, la colonne de contenu n'est **pas** bornée à la largeur d'un paragraphe : elle
 porte aussi le bandeau de chiffres, le graphique et le glossaire. Ce sont les blocs de texte
 qui se bornent eux-mêmes (44 à 52 rem). Vérifié sans débordement horizontal de 360 à 1600 px.
