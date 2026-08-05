@@ -8,7 +8,7 @@
 	import { base } from '$app/paths';
 	// Quatre visuels (palier 4) : trois schémas HTML/CSS qui expliquent chacun UNE
 	// règle sur un cas réel, et une capture de l'interface pour les crédits d'image.
-	import SchemaChampAuteur from '$lib/SchemaChampAuteur.svelte';
+	import ExemplesChampAuteur from '$lib/ExemplesChampAuteur.svelte';
 	import SchemaComptageUnique from '$lib/SchemaComptageUnique.svelte';
 	import SchemaHomonymes from '$lib/SchemaHomonymes.svelte';
 	// Rail de sommaire (palier 5). Le mécanisme — repérage de la section lue,
@@ -52,7 +52,19 @@
 	// les titres complets sont dans les <h2>.
 	const sommaire = [
 		['base', 'La base étudiée'],
-		['doute', 'Comment le doute s’écrit'],
+		// Seule section à sous-parties pour l'instant (2026-08-05) : ses cinq temps
+		// sont trop distincts pour tenir sous un seul repère dans le rail.
+		[
+			'doute',
+			'Comment le doute s’écrit',
+			[
+				['doute-ecrit', 'Ce que le musée écrit'],
+				['doute-exemples', 'Trois exemples réels'],
+				['doute-references', 'Les textes de référence'],
+				['doute-classement', 'Le classement utilisé'],
+				['doute-reperage', 'Comment les notices sont repérées']
+			]
+		],
 		['comptage', 'Comment on compte'],
 		['artistes', 'Identifier les artistes'],
 		['lire', 'Lire les chiffres et les vues'],
@@ -125,51 +137,64 @@
 	</details>
 </section>
 
-<!-- 2. Comment le doute s'écrit dans Joconde -------------------------------- -->
+<!-- 2. Comment une attribution incertaine est-elle indiquée ? ------------------
+     Section refondue le 2026-08-05, texte de l'utilisateur. Cinq sous-parties, une
+     ancre chacune : elles apparaissent en retrait sous la section dans le rail
+     (SommaireAncres accepte un troisième élément par entrée). Les h3 portent donc
+     id et tabindex, comme les sections. -->
 <section id="doute" tabindex="-1">
-	<h2>Comment le doute s’écrit dans Joconde</h2>
-	<p>Trois choses sont à distinguer&nbsp;: ce que les musées écrivent, ce que ces mots
-		veulent dire, et la manière dont nous les regroupons.</p>
+	<h2>Comment une attribution incertaine est-elle indiquée dans Joconde&nbsp;?</h2>
+
+	<h3 id="doute-ecrit" tabindex="-1">Ce que le musée écrit</h3>
 	<p>
-		<strong>1. Ce que les musées publient.</strong> On appelle
-		<strong>formulation prudente</strong> une notice où le nom d'un artiste est présent,
-		mais accompagné d'une réserve&nbsp;: «&nbsp;attribué à&nbsp;», «&nbsp;atelier
-		de&nbsp;», «&nbsp;école de&nbsp;», «&nbsp;entourage de&nbsp;», «&nbsp;suiveur
-		de&nbsp;», «&nbsp;à la manière de&nbsp;», «&nbsp;dans le genre de&nbsp;», ou un
-		simple «&nbsp;?&nbsp;» après le nom. Ces formules sont celles des musées — le projet
-		n'en invente aucune.
+		Dans une notice Joconde, le musée dispose d'un champ pour indiquer l'auteur. Lorsqu'une
+		attribution est incertaine, le nom peut être accompagné d'un point d'interrogation ou
+		d'une précision comme «&nbsp;attribué à&nbsp;», «&nbsp;atelier de&nbsp;»,
+		«&nbsp;école de&nbsp;», «&nbsp;entourage de&nbsp;», «&nbsp;suiveur de&nbsp;»,
+		«&nbsp;manière de&nbsp;» ou «&nbsp;genre de&nbsp;». L'inventaire reprend ces
+		indications telles qu'elles ont été publiées.
 	</p>
 
-	<SchemaChampAuteur />
+	<h3 id="doute-exemples" tabindex="-1">Trois exemples réels</h3>
+	<ExemplesChampAuteur />
 
+	<h3 id="doute-references" tabindex="-1">Les textes de référence</h3>
 	<p>
-		<strong>2. Leur sens.</strong> Il est fixé par la
-		<a href="https://www.culture.gouv.fr/thematiques/musees/pour-les-professionnels/conserver-et-gerer-les-collections/informatiser-les-collections-d-un-musee-de-france/organisation-operationnelle-de-l-informatisation-des-collections-d-un-musee-de-france/methode-de-redaction-informatisee-des-notices-d-objets-de-musees" target="_blank" rel="noopener">méthode d'inventaire du ministère</a>
-		(la «&nbsp;méthode Joconde&nbsp;»), référence directe des conventions de saisie.
-		Pour certains termes, il remonte au
-		<a href="https://www.legifrance.gouv.fr/loda/id/LEGITEXT000006063458/" target="_blank" rel="noopener">décret n°&nbsp;81-255 du 3 mars 1981</a>&nbsp;:
-		«&nbsp;attribué à&nbsp;» (art. 4), «&nbsp;atelier de&nbsp;» (art. 5), «&nbsp;école
-		de&nbsp;» (art. 6), et les termes sans garantie comme «&nbsp;d'après&nbsp;» ou
-		«&nbsp;à la manière de&nbsp;» (art. 7). Le simple «&nbsp;?&nbsp;», lui, ne vient
-		<em>pas</em> du décret&nbsp;: c'est une convention de saisie propre à Joconde.
+		Ces usages sont documentés dans la
+		<a href="https://www.culture.gouv.fr/content/download/197593/file/methode.pdf?inLanguage=fre-FR" target="_blank" rel="noopener">méthode de rédaction informatisée</a>
+		publiée par le ministère de la Culture. Celle-ci indique qu'un point d'interrogation ou
+		des termes comme «&nbsp;attribué à&nbsp;», «&nbsp;atelier de&nbsp;» et
+		«&nbsp;école de&nbsp;» peuvent exprimer un doute sur l'auteur.
 	</p>
 	<p>
-		<strong>3. Notre regroupement.</strong> Ces formules, nous les rangeons en
-		<strong>huit familles</strong> et <strong>trois territoires</strong> —
-		«&nbsp;Presque lui&nbsp;», «&nbsp;Autour de lui&nbsp;», «&nbsp;Son style, sans
-		lui&nbsp;» —, de la plus proche à la plus lointaine du maître. C'est une
-		<strong>construction éditoriale</strong>, pas une catégorie officielle&nbsp;; son
-		détail est expliqué dans la <a href="{base}/presentation">Présentation</a>.
+		Plusieurs de ces expressions sont également définies par le
+		<a href="https://www.legifrance.gouv.fr/loda/id/LEGITEXT000006063458/" target="_blank" rel="noopener">décret du 3 mars 1981</a>
+		relatif aux transactions d'œuvres d'art. Ce décret ne régit pas la rédaction des
+		notices Joconde&nbsp;: il précise la portée de termes comme «&nbsp;attribué à&nbsp;»,
+		«&nbsp;atelier de&nbsp;», «&nbsp;école de&nbsp;» ou «&nbsp;manière de&nbsp;».
 	</p>
+
+	<h3 id="doute-classement" tabindex="-1">Le classement utilisé</h3>
 	<p>
-		<strong>Comment on les repère.</strong> La détection est lexicale&nbsp;: le
-		qualificatif noté entre parenthèses dans le champ auteur («&nbsp;LE BRUN Charles
-		(attribué)&nbsp;», «&nbsp;(école)&nbsp;», «&nbsp;(?)&nbsp;»). En lisant toute la
-		base, on trouve <strong>{nombre(n.doute_total)}</strong> notices porteuses d'au moins
-		une formulation prudente, soit {pct(n.taux_doute_avec_auteur)}&nbsp;% des notices où
-		un auteur est renseigné. Le repérage a été <strong>vérifié à la main</strong>&nbsp;:
-		un échantillon de 206 notices jugé une à une, le 4 juillet 2026 (vrai / faux /
-		incertain), pour mesurer les fausses détections puis reformuler le lexique.
+		Pour comparer les notices, le projet rassemble huit indications en trois groupes&nbsp;:
+		«&nbsp;Au plus près&nbsp;», «&nbsp;Autour du maître&nbsp;» et «&nbsp;Dans son
+		influence&nbsp;». Ce classement a été créé pour cette application. Il ne correspond ni
+		à une catégorie officielle de Joconde ni à une échelle juridique. Son détail est
+		expliqué dans la <a href="{base}/presentation">Présentation</a>.
+	</p>
+
+	<h3 id="doute-reperage" tabindex="-1">Comment les notices sont repérées</h3>
+	<p>
+		Pour établir le total national, le traitement recherche ces indications dans les champs
+		de Joconde consacrés à l'auteur et à son attribution. Pour construire les profils
+		d'artistes, il utilise uniquement le champ «&nbsp;Auteur&nbsp;», où le nom et la
+		réserve peuvent être reliés sans ambiguïté. Le repérage a été contrôlé sur 206 notices
+		afin d'écarter les cas où les mêmes mots avaient un autre sens.
+	</p>
+	<p class="note-methode">
+		Le terme «&nbsp;présumé&nbsp;» a également été retenu dans
+		{nombre(n.familles.presume.notices)} notices du total national. Cette forme très rare
+		ne fait pas partie des huit catégories utilisées pour comparer les artistes.
 	</p>
 </section>
 
@@ -500,7 +525,8 @@
 	   Vaut pour les sections du sommaire ET pour les titres visés de l'extérieur
 	   (#les-maitres, depuis « Explorer les artistes »). */
 	section,
-	section h2 {
+	section h2,
+	section h3 {
 		scroll-margin-top: var(--espace-5);
 	}
 
@@ -512,6 +538,7 @@
 	   la souris — mais reste visible au clavier, où il sert de repère. */
 	section:focus:not(:focus-visible),
 	section h2:focus:not(:focus-visible),
+	section h3:focus:not(:focus-visible),
 	h1:focus:not(:focus-visible) {
 		outline: none;
 	}
@@ -524,11 +551,27 @@
 		letter-spacing: 0.1em;
 		text-transform: uppercase;
 		color: var(--couleur-encre-douce);
-		margin: var(--espace-5) 0 0;
+		margin: var(--espace-5) 0 var(--espace-2);
+	}
+
+	/* Les cinq sous-parties de « Comment le doute s'écrit » sont des temps du récit,
+	   pas des intertitres de service : elles réclament la respiration d'une section,
+	   sinon la précédente semble se poursuivre. */
+	#doute h3 {
+		margin-top: var(--espace-6);
 	}
 
 	section p {
 		line-height: 1.65;
+	}
+
+	/* Note de méthode : une précision de second rang, pas un paragraphe du fil.
+	   Petit corps gris, comme la ligne de prudence de l'ouverture. */
+	.note-methode {
+		font-family: var(--police-ui);
+		font-size: var(--taille-xs);
+		line-height: 1.5;
+		color: var(--couleur-encre-douce);
 	}
 
 	/* Liens de contenu : cobalt discret, jamais le poids d'un bouton. Le bandeau de

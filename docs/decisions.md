@@ -2,6 +2,57 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-05 (ter) — « Comment une attribution incertaine est-elle indiquée dans Joconde ? »
+
+Refonte de la deuxième section de la page Méthode, texte de l'utilisateur. Elle tenait en
+quatre paragraphes numérotés à la main ; elle se lit maintenant en **cinq sous-parties
+titrées** : ce que le musée écrit · trois exemples réels · les textes de référence · le
+classement utilisé · comment les notices sont repérées.
+
+**Le rail de sommaire descend d'un niveau.** `SommaireAncres.svelte` accepte un troisième
+élément par entrée — la liste de ses sous-parties — et les montre en retrait, sans numéro.
+Ce n'est **pas une seconde navigation** : les ancres sont aplaties en une seule liste avant
+d'être mesurées, le clic, le défilement doux et le passage du focus sont ceux du rail. La
+section reste allumée pendant qu'on lit l'une de ses sous-parties (classe `branche`), et
+`aria-current` ne désigne que l'entrée exactement visée. **Sur petit écran, les sous-parties
+quittent la barre** : elle passerait de six à onze liens en tête d'écran. Leurs ancres restent
+valides, leurs titres restent lus dans la page.
+
+**Le schéma du champ « Auteur » devient trois exemples identifiés.** `SchemaChampAuteur` était
+une planche technique posée au milieu du texte, et ne disait pas de quelles notices il parlait.
+`ExemplesChampAuteur` le remplace : trois lignes éditoriales séparées par un filet, sans cadre
+ni carte, chacune avec l'œuvre, le musée et sa ville, la valeur du champ **mot pour mot**, une
+explication et le lien vers POP. Seule la parenthèse est mise en évidence, dans la couleur de sa
+famille (rouge « attribué », orangé pour le point d'interrogation seul) — la couleur désigne ce
+qu'elle désigne partout ailleurs sur le site.
+
+Les trois citations sont **contrôlées le 2026-08-05** contre `data/exports/web/oeuvres/*.json`
+(références 00000077133, 01810000027, 50130000371 : titres, musées, villes et champ « Auteur »
+concordants) et contre POP (les trois liens répondent). Elles sont écrites dans le composant,
+pas lues dans un export : ce sont trois citations choisies, pas un échantillon.
+
+**Deux formulations corrigées sur le fond.**
+
+- Le sens des termes n'est plus « fixé » par deux textes. La méthode de rédaction du ministère
+  **documente** ces usages ; le décret du 3 mars 1981, lui, **ne régit pas** la rédaction des
+  notices Joconde — il précise la portée de termes employés dans les transactions d'œuvres d'art.
+  Le lien de la méthode pointe désormais le PDF lui-même.
+- Les intitulés « Presque lui », « Autour de lui », « Son style, sans lui » disparaissent de la
+  page : les trois groupes s'appellent **« Au plus près », « Autour du maître », « Dans son
+  influence »** depuis la refonte de la Présentation. ⚠️ Les anciens survivent encore dans
+  `lib/joconde.js` (table `NIVEAUX`) et dans les commentaires de `tokens.css` — hors du périmètre
+  de cette section, à traiter quand on touchera aux pages qui les affichent.
+
+**Une note de méthode** ferme la section : « présumé » est retenu dans 4 notices du total
+national et ne fait pas partie des huit catégories comparées. L'effectif est lu dans
+`niveaux.json` (`familles.presume.notices`), jamais écrit.
+
+**Écart de conformité signalé à l'utilisateur** : la phrase « dans les champs de Joconde
+consacrés à l'auteur et à son attribution » recouvre `Auteur` et `Precisions_sur_l_auteur`
+(`CHAMPS_TEXTE`, markers.py), mais **pas `Ecole_pays`**, que les familles « école de » et
+« école-lieu » lisent aussi. Le texte est posé tel qu'il a été écrit ; la précision reste à
+arbitrer.
+
 ## 2026-08-05 (bis) — La page Méthode prend les réglages de la page Présentation
 
 Deux pages de même nature affichaient deux calibrages. Sur un écran de 1920 px, la colonne de

@@ -7,7 +7,11 @@
 	//
 	//   sections   — [[ancre, libellé court], …], dans l'ordre de la page. Les
 	//                titres complets restent dans les <h2> : un rail de 16 rem ne
-	//                les tiendrait pas.
+	//                les tiendrait pas. Une entrée peut porter un TROISIÈME élément —
+	//                [[ancre, libellé], …] — : les sous-parties de la section, en
+	//                retrait sous elle (2026-08-05). Ce n'est pas une seconde
+	//                navigation : la liste est aplatie avant d'être mesurée, et
+	//                mesure, défilement et focus restent ceux du rail.
 	//   ancreHaut  — id de l'élément qui reçoit le focus au retour en haut (le h1).
 	//   etiquette  — nom accessible du <nav>.
 	//
@@ -20,10 +24,22 @@
 
 	let { sections, ancreHaut = 'haut-de-page', etiquette = 'Sections de la page' } = $props();
 
+	// Toutes les ancres, principales et secondaires, dans l'ordre de la page : c'est
+	// cette liste-là qui est mesurée et qui répond aux ancres reçues dans l'URL.
+	const ancres = sections.flatMap(([ancre, , sous = []]) => [ancre, ...sous.map(([a]) => a)]);
+
+	// Section principale à laquelle appartient une ancre — elle-même si c'est une
+	// entrée de premier niveau. Sert à garder la section allumée pendant qu'on lit
+	// l'une de ses sous-parties.
+	const sectionDe = (id) =>
+		sections.find(([ancre, , sous = []]) => ancre === id || sous.some(([a]) => a === id))?.[0] ??
+		null;
+
 	// La liste est fixe pour une page donnée : on la lit une fois, sans en faire une
 	// dépendance (untrack), pour que le premier lien soit déjà marqué au rendu serveur.
 	let actif = $state(untrack(() => sections[0]?.[0] ?? null));
 	let hautVisible = $state(false);
+	let sectionActive = $derived(sectionDe(actif));
 
 	// Section DEMANDÉE par un clic du sommaire ou par l'ancre de l'URL. Elle l'emporte
 	// sur la mesure jusqu'au prochain geste de défilement du lecteur : quand la page
@@ -42,7 +58,7 @@
 	// page, dernière section trop courte pour occuper l'écran) sont traités
 	// explicitement.
 	$effect(() => {
-		const cibles = sections.map(([ancre]) => document.getElementById(ancre)).filter(Boolean);
+		const cibles = ancres.map((ancre) => document.getElementById(ancre)).filter(Boolean);
 		if (!cibles.length) return;
 
 		let attendue = false;
@@ -82,7 +98,7 @@
 		// chargement comme à chaque changement d'ancre (lien interne, bouton Retour).
 		const lireAncre = () => {
 			const recue = decodeURIComponent(window.location.hash.slice(1));
-			demandee = sections.some(([ancre]) => ancre === recue) ? recue : null;
+			demandee = ancres.includes(recue) ? recue : null;
 			auDefilement();
 		};
 
@@ -139,16 +155,35 @@
 
 <nav class="sommaire" aria-label={etiquette}>
 	<ol>
-		{#each sections as [ancre, titre], i (ancre)}
+		{#each sections as [ancre, titre, sous = []], i (ancre)}
 			<li>
 				<a
 					href="#{ancre}"
 					class:actif={ancre === actif}
+					class:branche={sectionActive === ancre && actif !== ancre}
 					aria-current={ancre === actif ? 'true' : undefined}
 					onclick={(e) => allerA(e, ancre)}
 				>
 					<span class="num">{i + 1}</span>{titre}
 				</a>
+
+				<!-- Sous-parties : mêmes liens, même mécanisme, un cran en retrait. -->
+				{#if sous.length}
+					<ol class="sous">
+						{#each sous as [sousAncre, sousTitre] (sousAncre)}
+							<li>
+								<a
+									href="#{sousAncre}"
+									class:actif={sousAncre === actif}
+									aria-current={sousAncre === actif ? 'true' : undefined}
+									onclick={(e) => allerA(e, sousAncre)}
+								>
+									{sousTitre}
+								</a>
+							</li>
+						{/each}
+					</ol>
+				{/if}
 			</li>
 		{/each}
 	</ol>
@@ -204,6 +239,32 @@
 		color: var(--couleur-encre);
 		border-left-color: var(--accent-cobalt);
 		font-weight: 600;
+	}
+
+	/* Section dont on lit une sous-partie : allumée, mais sans le gras réservé à
+	   l'entrée exactement visée. Le rail montre ainsi où l'on est à deux niveaux. */
+	.sommaire a.branche {
+		color: var(--couleur-encre);
+		border-left-color: var(--accent-cobalt);
+	}
+
+	/* Sous-parties : décalées sous le libellé du parent (la gouttière du numéro),
+	   petit corps, sans numéro — elles se lisent comme une dépendance, pas comme
+	   une seconde liste. */
+	.sommaire .sous {
+		list-style: none;
+		margin: var(--espace-2) 0 var(--espace-3);
+		padding: 0;
+		font-size: var(--taille-xs);
+	}
+
+	.sommaire .sous li + li {
+		margin-top: var(--espace-1);
+	}
+
+	.sommaire .sous a {
+		padding-left: calc(var(--espace-3) + 1.35rem);
+		line-height: 1.35;
 	}
 
 	.sommaire .num {
@@ -281,6 +342,13 @@
 			flex-wrap: wrap;
 			gap: var(--espace-2) var(--espace-4);
 			border-left: none;
+		}
+
+		/* Les sous-parties quittent la barre : elles la feraient passer de six à onze
+		   entrées, et un sommaire de onze liens en tête d'écran n'aide plus personne.
+		   Leurs titres restent lus dans la page, et leurs ancres restent valides. */
+		.sommaire .sous {
+			display: none;
 		}
 
 		.sommaire li + li {
