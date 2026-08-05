@@ -37,6 +37,16 @@
 	const copiesTotal = n.copie;
 	const pct = (v) => (v * 100).toLocaleString('fr-FR', { maximumFractionDigits: 1 });
 	const go = (o) => (o / 1e9).toLocaleString('fr-FR', { maximumFractionDigits: 2 });
+	// « 2026-07-01 » → « 1er juillet 2026 ». La date de version reste lue dans
+	// provenance.json ; seule sa mise en français se fait ici.
+	const MOIS = [
+		'janvier', 'février', 'mars', 'avril', 'mai', 'juin',
+		'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'
+	];
+	const dateFr = (iso) => {
+		const [annee, mois, jour] = iso.split('-').map(Number);
+		return `${jour === 1 ? '1er' : jour} ${MOIS[mois - 1]} ${annee}`;
+	};
 
 	// Six questions simples (refonte 2026-07-31). Libellés courts pour le rail ;
 	// les titres complets sont dans les <h2>.
@@ -85,22 +95,26 @@
 	<SommaireAncres sections={sommaire} ancreHaut="haut-de-page" />
 
 	<div class="contenu">
-<!-- 1. La base étudiée ------------------------------------------------------- -->
+<!-- 1. Quelles données ? ------------------------------------------------------
+     Texte de l'utilisateur (2026-08-05). Les trois valeurs citées viennent des
+     exports : la date de version et la licence de provenance.json, l'effectif de
+     niveaux.json. Aucune n'est écrite dans la page. -->
 <section id="base" tabindex="-1">
-	<h2>La base étudiée</h2>
+	<h2>Quelles données avons-nous utilisées&nbsp;?</h2>
 	<p>
 		<strong>Joconde</strong> est le catalogue collectif des collections des musées de
-		France, publié par le ministère de la Culture
-		<a href="https://www.data.gouv.fr/fr/datasets/collections-des-musees-de-france-base-joconde/" target="_blank" rel="noopener">sur data.gouv.fr</a>
-		sous <strong>{prov.licence}</strong>. Il rassemble plus d'un million de notices,
-		décrites par les musées eux-mêmes&nbsp;; une notice correspond généralement à un
-		bien muséal, parfois à un ensemble ou à plusieurs éléments. Le projet en lit une
-		seule chose&nbsp;: la manière dont les musées écrivent qu'ils ne sont
-		<em>pas certains</em> de l'auteur d'une œuvre.
+		France. Chaque notice rassemble les informations transmises par un musée sur un bien
+		ou un ensemble conservé dans ses collections&nbsp;: titre, auteur, datation,
+		technique, dimensions ou lieu de conservation.
 	</p>
 	<p>
-		Les chiffres de ce site se rapportent à la <strong>version du {prov.version_donnee}</strong>
-		de la base. C'est une photographie datée d'un inventaire vivant.
+		Pour cette enquête, nous avons utilisé la
+		<strong>version du {dateFr(prov.version_donnee)}</strong>, diffusée par le ministère
+		de la Culture
+		<a href="https://www.data.gouv.fr/fr/datasets/collections-des-musees-de-france-base-joconde/" target="_blank" rel="noopener">sur data.gouv.fr</a>
+		sous <strong>{prov.licence}</strong>. Elle contient {nombre(n.notices_total)} notices.
+		Les résultats présentés sur ce site correspondent donc à cette version précise de la
+		base.
 	</p>
 	<details>
 		<summary>Détails de version</summary>
