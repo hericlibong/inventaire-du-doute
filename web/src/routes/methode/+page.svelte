@@ -58,12 +58,12 @@
 	// Six questions simples (refonte 2026-07-31). Libellés courts pour le rail ;
 	// les titres complets sont dans les <h2>.
 	const sommaire = [
-		['base', 'La base étudiée'],
+		['base', 'Les données utilisées'],
 		// Seule section à sous-parties pour l'instant (2026-08-05) : ses cinq temps
 		// sont trop distincts pour tenir sous un seul repère dans le rail.
 		[
 			'doute',
-			'Comment le doute s’écrit',
+			'Comment le doute est indiqué',
 			[
 				['doute-ecrit', 'Ce que le musée écrit'],
 				['doute-exemples', 'Trois exemples réels'],
