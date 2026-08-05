@@ -25,6 +25,7 @@ Usage : uv run python src/build_artistes.py  (~2 min)
 """
 
 import json
+import math
 import re
 import unicodedata
 from collections import Counter, defaultdict
@@ -497,6 +498,51 @@ def _lat_lon(valeur):
     return round(lat, 5), round(lon, 5)
 
 
+def coord_du_musee(comptes: dict) -> str | None:
+    """Coordonnée retenue pour UN musée, à partir de toutes celles que ses notices
+    publient (valeur brute -> nombre de notices).
+
+    Joconde donne parfois plusieurs positions sous le même code Muséofile : 59
+    musées sur 548 au 2026-08-05, dont 11 avec plus de 100 km d'écart. Le musée
+    Goya de Castres est publié 1 114 fois dans le Tarn et 143 fois dans la Manche.
+    Tant qu'on retenait la première rencontrée, le point sautait d'une fiche à
+    l'autre selon l'ordre du fichier — et pouvait tomber sur la position minoritaire.
+
+    Règle, sans source extérieure : on regroupe d'abord les positions VOISINES
+    (moins de 15 km), on garde la grappe qui porte le plus de notices, puis dans
+    celle-ci la position la plus fréquente. Le regroupement est nécessaire : le
+    musée Condé est publié 6 567 fois dans le Lot-et-Garonne, contre 4 348 + 2 701
+    fois à Chantilly sous deux écritures — la simple majorité l'aurait déplacé.
+    """
+    points = [(v, n, _lat_lon(v)) for v, n in comptes.items()]
+    points = [(v, n, p) for v, n, p in points if p[0] is not None]
+    if not points:
+        return None
+
+    grappes: list[list] = []
+    for v, n, (lat, lon) in sorted(points, key=lambda x: -x[1]):
+        for g in grappes:
+            if _distance_km(lat, lon, g[0][2], g[0][3]) < 15:
+                g.append((v, n, lat, lon))
+                break
+        else:
+            grappes.append([(v, n, lat, lon)])
+
+    meilleure = max(grappes, key=lambda g: sum(n for _v, n, _la, _lo in g))
+    return max(meilleure, key=lambda e: e[1])[0]
+
+
+def _distance_km(lat1, lon1, lat2, lon2) -> float:
+    """Distance orthodromique, en kilomètres. Sert au seul regroupement des
+    positions d'un même musée — aucune distance n'est publiée."""
+    rayon = 6371
+    dlat, dlon = math.radians(lat2 - lat1), math.radians(lon2 - lon1)
+    a = (math.sin(dlat / 2) ** 2
+         + math.cos(math.radians(lat1)) * math.cos(math.radians(lat2))
+         * math.sin(dlon / 2) ** 2)
+    return 2 * rayon * math.asin(math.sqrt(a))
+
+
 def resout_reference(auteur: str, en_beaux_arts: bool = True,
                      table=None) -> dict:
     """Ce qu'UNE référence dit de chaque maître, résolu en un seul verdict.
@@ -630,6 +676,11 @@ def main() -> None:
     fam_refs = defaultdict(set)      # famille -> références distinctes
     niv_refs = defaultdict(set)      # niveau  -> références distinctes
     partagees = {}                   # référence -> [(maître, famille), …]
+    # Positions publiées pour chaque musée, sur TOUTE la base : code Muséofile ->
+    # {valeur brute du champ « coordonnees » -> nombre de notices}. Comptées avant
+    # tout filtre, pour que le choix ne dépende ni du maître ni de l'ordre de
+    # lecture (voir coord_du_musee).
+    coords_musee = defaultdict(Counter)
 
     morceaux = pd.read_csv(CHEMIN_CSV, sep="|", usecols=COLONNES, dtype=str,
                            chunksize=TAILLE_MORCEAU)
@@ -640,6 +691,8 @@ def main() -> None:
             morceau["Code_Museofile"], morceau["Nom_officiel_musee"],
             morceau["Ville"], morceau["Titre"], morceau["coordonnees"],
         ):
+            if isinstance(code, str) and code.strip() and isinstance(coord, str):
+                coords_musee[code][coord] += 1
             if not isinstance(aut, str):
                 continue
             # Une référence, un poids, par maître : la résolution (catégorie la
@@ -706,6 +759,17 @@ def main() -> None:
         print(f"\r  {total:,} notices lues".replace(",", " "), end="", flush=True)
     print()
 
+    # UNE position par musée, valable pour toutes les fiches (2026-08-05). Le point
+    # d'un musée ne doit pas dépendre de l'artiste qu'on regarde ni de l'ordre du
+    # fichier : la règle est dans coord_du_musee.
+    retenues = {code: coord_du_musee(comptes)
+                for code, comptes in coords_musee.items()}
+    ecartes = sum(1 for code, comptes in coords_musee.items()
+                  if len(comptes) > 1 and retenues[code] != comptes.most_common(1)[0][0])
+    print(f"  {len(coords_musee)} musées géolocalisés, "
+          f"{sum(1 for c in coords_musee.values() if len(c) > 1)} à positions multiples "
+          f"({ecartes} où la plus fréquente n'a pas été retenue)")
+
     artistes = []
     for nom, *_ in MAITRES:
         a = agg[nom]
@@ -718,7 +782,10 @@ def main() -> None:
             fam_liste = [{"code": c, "notices": md["familles"][c]}
                          for c in markers.DOUTE_PAR_NIVEAU if c in md["familles"]]
             niveaux = [md["niveaux"][1], md["niveaux"][2], md["niveaux"][3]]
-            lat, lon = _lat_lon(md["coord"])
+            # Position du musée : la même sur toutes les fiches, choisie une fois
+            # pour toutes sur l'ensemble de ses notices (coord_du_musee). Repli sur
+            # la position rencontrée si le code n'a rien donné.
+            lat, lon = _lat_lon(retenues.get(code, md["coord"]))
             # Invariants de comptage par musée : aucune ambiguïté possible.
             assert sum(f["notices"] for f in fam_liste) == md["doute"], \
                 f"familles ≠ doute ({nom} / {code})"

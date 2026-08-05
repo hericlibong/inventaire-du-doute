@@ -2,6 +2,53 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-05 (septies) — Une position par musée, la même sur toutes les fiches
+
+**Erreur repérée par l'utilisateur** : sur la fiche de Ribera, le musée Goya de Castres (Tarn)
+s'affichait dans la Manche, à 670 km de sa ville. Le contrôle a montré que ce n'était pas un
+cas isolé mais un **défaut de règle**.
+
+**Ce que publie la source.** Joconde donne parfois plusieurs positions sous le même code
+Muséofile : **59 musées sur 548** au 2026-08-05, dont **11 avec plus de 100 km d'écart**. Le
+musée Goya est publié 1 114 fois dans le Tarn et 143 fois dans la Manche ; le musée Condé,
+6 567 fois en Lot-et-Garonne et 7 049 fois à Chantilly, sous deux écritures.
+
+**Ce que faisait le pipeline.** Il retenait la position de la **première notice rencontrée**
+pour ce musée *et pour cet artiste*. Deux conséquences : la position pouvait être la
+minoritaire (Castres), et le même musée pouvait se placer à deux endroits selon la fiche
+consultée — **11 musées sur 116 étaient dans ce cas**, dont Chantilly avec 570 km d'écart.
+
+**Règle adoptée** (`build_artistes.coord_du_musee`), sans source extérieure : on regroupe les
+positions **voisines** (moins de 15 km), on garde la grappe qui porte le plus de notices, puis
+dans celle-ci la position la plus fréquente. Le regroupement n'est pas un raffinement : sans
+lui, la simple majorité expédiait le musée Condé en Lot-et-Garonne. Le calcul se fait **une
+fois pour toutes, sur l'ensemble de la base** — la position d'un musée ne dépend donc plus ni
+de l'artiste regardé ni de l'ordre du fichier. Trois tests unitaires figent les cas réels.
+
+**Ce que la règle ne peut pas voir.** Quand un musée n'a publié qu'une seule position et
+qu'elle est fausse, aucune règle interne ne le détecte. Un contrôle séparé le fait :
+`src/audit_geoloc.py` compare chaque position publiée au centre de sa commune, cherchée par son
+nom exact **et dans son département** — sans quoi les homonymes noient le résultat (« La
+Châtre » ramène « La Châtre-Langlin », à 50 km dans le même département). **Sa référence est le
+découpage administratif de l'État (geo.api.gouv.fr, Licence Ouverte) — source de CONTRÔLE,
+jamais de données** : aucune coordonnée n'en sort pour être affichée, aucun chiffre n'en
+dépend. À lancer après chaque lot d'artistes.
+
+**Ce que le contrôle a trouvé, après correction** (548 musées, dont 116 affichés sur une carte
+de fiche) : **plus aucune position instable**, et **7 écarts de plus de 15 km**, dont **un seul
+sur une carte publiée** — le musée municipal de Louhans-Châteaurenaud (M0171), à 26 km de sa
+commune, avec une notice. Joconde n'en publie qu'une position, et elle est fausse : rien à
+choisir. Quatre autres musées sont faux mais **ne s'affichent nulle part aujourd'hui** (Nancy
+294 km, Avallon 153 km, Nogent-sur-Seine 76 km, Mirecourt 43 km) ; tous ont pourtant une
+position juste parmi leurs variantes, que la majorité écrase. Les deux musées d'Arles sortent à
+chaque passage sans être faux : la commune fait 758 km², son centre est loin de son centre-ville.
+
+**Rien n'est corrigé à la main pour l'instant.** Le projet restitue ce que les musées publient,
+et les cinq cas restants sont soit invisibles, soit minuscules à l'échelle de la carte. Si l'un
+d'eux devient voyant, la voie propre est d'**arbitrer entre les positions que le musée a
+lui-même publiées** — jamais d'en inventer une —, et de figer cet arbitrage dans un fichier
+versionné plutôt que d'appeler une API au moment du build.
+
 ## 2026-08-05 (sexies) — La page Méthode se ferme sur « Limites et sources »
 
 Deux décisions de l'utilisateur closent la passe éditoriale sur cette page, qui passe de six

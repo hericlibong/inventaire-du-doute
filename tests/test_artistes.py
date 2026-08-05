@@ -16,6 +16,7 @@ Usage : uv run pytest
 import csv
 import json
 import sys
+from collections import Counter
 from pathlib import Path
 
 import pytest
@@ -350,3 +351,38 @@ def test_reference_reelle(ligne):
     categorie, famille, _ = resolu[attendu]
     assert categorie == ligne["categorie_attendue"], ligne["motif"]
     assert famille == (ligne["famille_attendue"] or None), ligne["motif"]
+
+
+# --------------------------------------------------------------------------
+# 4. Position d'un musée (2026-08-05)
+# --------------------------------------------------------------------------
+# Joconde publie parfois plusieurs positions sous le même code Muséofile : 59
+# musées sur 548 au 2026-08-05. Tant que le pipeline retenait la première
+# rencontrée, le musée Goya de Castres s'affichait dans la Manche sur la fiche
+# de Ribera — et le même musée pouvait sauter d'une fiche à l'autre. Les cas
+# ci-dessous sont les valeurs RÉELLES relevées dans la base ce jour-là.
+
+def test_coord_musee_retient_la_position_majoritaire():
+    """Castres : 1 114 notices dans le Tarn, 143 dans la Manche."""
+    from build_artistes import coord_du_musee
+    retenue = coord_du_musee(Counter({"43.604813, 2.239888": 1114,
+                                      "49.15731, -1.236823": 143}))
+    assert retenue == "43.604813, 2.239888"
+
+
+def test_coord_musee_regroupe_les_positions_voisines():
+    """Chantilly : la position isolée est la plus fréquente (6 567), mais les
+    deux écritures de Chantilly totalisent 7 049 — c'est la grappe qui compte,
+    sinon le musée Condé part en Lot-et-Garonne."""
+    from build_artistes import coord_du_musee
+    retenue = coord_du_musee(Counter({
+        "44.204302, 0.648652": 6567,
+        "49.19397, 2.48522": 4348,
+        "49.19413375188932, 2.485123295821842": 2701}))
+    assert retenue.startswith("49.19")
+
+
+def test_coord_musee_sans_position_utilisable():
+    from build_artistes import coord_du_musee
+    assert coord_du_musee(Counter({"nan": 12})) is None
+    assert coord_du_musee(Counter()) is None

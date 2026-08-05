@@ -138,8 +138,8 @@
   "departement": "Oise",
   "region": "Hauts-de-France",
   "coord": [
-   49.19413,
-   2.48512
+   49.19397,
+   2.48522
   ],
   "notices_versees": 14769,
   "doute": 406,
@@ -270,8 +270,8 @@
   "departement": "Saône-et-Loire",
   "region": "Bourgogne-Franche-Comté",
   "coord": [
-   46.80448,
-   4.42806
+   46.80563,
+   4.41934
   ],
   "notices_versees": 10083,
   "doute": 251,
@@ -799,7 +799,7 @@
   "region": "Occitanie",
   "coord": [
    43.60056,
-   1.44589
+   1.4459
   ],
   "notices_versees": 1380,
   "doute": 111,
@@ -996,8 +996,8 @@
   "departement": "Seine-et-Marne",
   "region": "Ile-de-France",
   "coord": [
-   48.40281,
-   2.69686
+   48.39866,
+   2.70176
   ],
   "notices_versees": 1028,
   "doute": 81,
@@ -1392,8 +1392,8 @@
   "departement": "Val-de-Marne",
   "region": "Ile-de-France",
   "coord": [
-   48.83706,
-   2.52092
+   48.83522,
+   2.51983
   ],
   "notices_versees": 695,
   "doute": 52,
@@ -1480,8 +1480,8 @@
   "departement": "Ille-et-Vilaine",
   "region": "Bretagne",
   "coord": [
-   48.12588,
-   -1.2118
+   48.12423,
+   -1.21409
   ],
   "notices_versees": 553,
   "doute": 47,
@@ -2009,7 +2009,7 @@
   "region": "Bourgogne-Franche-Comté",
   "coord": [
    48.19783,
-   3.2845
+   3.28274
   ],
   "notices_versees": 5544,
   "doute": 29,
@@ -2096,8 +2096,8 @@
   "departement": "Hauts-de-Seine",
   "region": "Ile-de-France",
   "coord": [
-   48.87333,
-   2.1689
+   48.87274,
+   2.16909
   ],
   "notices_versees": 1166,
   "doute": 28,
@@ -2184,8 +2184,8 @@
   "departement": "Manche",
   "region": "Normandie",
   "coord": [
-   49.6371,
-   -1.62306
+   49.63845,
+   -1.62544
   ],
   "notices_versees": 1699,
   "doute": 25,
@@ -2206,8 +2206,8 @@
   "departement": "Marne",
   "region": "Grand Est",
   "coord": [
-   48.95639,
-   4.3642
+   48.95704,
+   4.3637
   ],
   "notices_versees": 467,
   "doute": 24,
@@ -2910,8 +2910,8 @@
   "departement": "Aude",
   "region": "Occitanie",
   "coord": [
-   43.21155,
-   2.35553
+   43.2126,
+   2.35536
   ],
   "notices_versees": 255,
   "doute": 12,
@@ -3460,8 +3460,8 @@
   "departement": "Seine-Maritime",
   "region": "Normandie",
   "coord": [
-   49.76181,
-   0.36869
+   49.76175,
+   0.36808
   ],
   "notices_versees": 907,
   "doute": 6,
@@ -4098,8 +4098,8 @@
   "departement": "Côte-d'Or",
   "region": "Bourgogne-Franche-Comté",
   "coord": [
-   48.33248,
-   6.63824
+   47.32187,
+   5.03411
   ],
   "notices_versees": 1291,
   "doute": 4,
@@ -4362,8 +4362,8 @@
   "departement": "Oise",
   "region": "Hauts-de-France",
   "coord": [
-   49.41944,
-   2.83149
+   49.4111,
+   2.81806
   ],
   "notices_versees": 1744,
   "doute": 3,
@@ -4824,8 +4824,8 @@
   "departement": "Ille-et-Vilaine",
   "region": "Bretagne",
   "coord": [
-   48.65074,
-   -2.02373
+   48.647,
+   -1.99071
   ],
   "notices_versees": 176,
   "doute": 2,
@@ -5352,8 +5352,8 @@
   "departement": "Nièvre",
   "region": "Bourgogne-Franche-Comté",
   "coord": [
-   47.35739,
-   3.38611
+   47.3599,
+   3.38804
   ],
   "notices_versees": 104,
   "doute": 1,
@@ -5418,8 +5418,8 @@
   "departement": "Essonne",
   "region": "Ile-de-France",
   "coord": [
-   48.70031,
-   2.50029
+   48.7003,
+   2.50027
   ],
   "notices_versees": 95,
   "doute": 1,
@@ -8335,8 +8335,8 @@
   "departement": "Yonne",
   "region": "Bourgogne-Franche-Comté",
   "coord": [
-   47.48697,
-   3.90679
+   46.67514,
+   5.55671
   ],
   "notices_versees": 29,
   "doute": 0,
@@ -8907,8 +8907,8 @@
   "departement": "Alpes-de-Haute-Provence",
   "region": "Provence-Alpes-Côte d'Azur",
   "coord": [
-   44.19473,
-   5.94217
+   44.19759,
+   5.94484
   ],
   "notices_versees": 50,
   "doute": 0,
@@ -10689,8 +10689,8 @@
   "departement": "Saône-et-Loire",
   "region": "Bourgogne-Franche-Comté",
   "coord": [
-   46.44065,
-   4.65917
+   46.43394,
+   4.65805
   ],
   "notices_versees": 173,
   "doute": 0,
