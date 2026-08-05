@@ -2,6 +2,41 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-05 (sexies) — La page Méthode se ferme sur « Limites et sources »
+
+Deux décisions de l'utilisateur closent la passe éditoriale sur cette page, qui passe de six
+sections à **cinq**.
+
+**« Lire les chiffres et les vues » est supprimée.** Quatre paragraphes qui disaient comment
+lire le graphique d'un artiste, ce que compte le nombre de musées d'une fiche, ce que montre
+la carte et ce que sont les reproductions. **C'était le mode d'emploi de l'interface, pas la
+méthode** : ces explications doivent vivre à côté des vues qu'elles décrivent. Rien n'a été
+déplacé ailleurs sur la page — c'était la consigne.
+
+⚠️ **Une précision perd son seul point d'énoncé** : « le nombre de musées d'une fiche ne compte
+que ceux ayant publié au moins une notice prudente ». La carte porte déjà « un point = un musée
+ayant publié au moins une notice concernée » (`CarteMaitre.svelte`), mais le compteur du
+bandeau, lui, affiche « N musées » sans cette réserve (`BandeauMaitre.svelte`). À reprendre
+quand on travaillera la fiche.
+
+**« Limites, sources et droits » devient « Limites et sources »**, en quatre sous-parties
+ancrées : ce que couvrent les chiffres · un fonds qui pèse lourd dans le total · ce que le
+projet permet d'affirmer · les données et les images. Les « droits » quittent le titre — les
+licences se lisent dans la dernière.
+
+**Le fonds de Nice prend sa rédaction définitive** et rejoint cette section. Elle dit ce que
+l'arbitrage du 2026-08-02 avait posé et que la page n'écrivait pas encore aussi nettement :
+**le comptage est exact**, mais ce fonds ne relève pas de l'attribution d'œuvres d'art étudiée
+dans ce volet. Les trois nombres viennent de `niveaux.json` (24 507 · 5 791 · 18 716) et le nom
+de l'établissement est **extrait du libellé de l'export**, jamais recopié : celui-ci porte un
+intitulé de travail (« … — planches de Barla (attribué à) ») dont la page ne cite que le musée.
+
+**Les liens officiels sont conservés et complétés** : Joconde et POP dans le texte, la Licence
+Ouverte pointe désormais vers Etalab, Wikimedia Commons vers ses conditions de réutilisation.
+La liste « Références » reste en pied de section, avec la méthode d'inventaire, le décret, POP,
+Commons et le fond de carte — c'est là que le projet déclare ses sources secondaires. Aucun
+visuel ajouté ; la capture des crédits reste, elle montre la phrase qui la précède.
+
 ## 2026-08-05 (quinquies) — « Comment la liste des artistes a-t-elle été établie ? »
 
 Refonte de la quatrième section de la page Méthode, texte de l'utilisateur. Trois sous-parties

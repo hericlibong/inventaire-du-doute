@@ -1,13 +1,18 @@
 <script>
-	// « Méthode et limites » (refonte 2026-07-31, six questions) : page publique de
-	// référence. Six sections en questions simples — la base · comment le doute
-	// s'écrit · comment on compte · comment les artistes sont identifiés · lire les
-	// chiffres · limites, sources et droits. Éditoriale et accessible ; les limites
-	// au même rang que le récit (CLAUDE.md). Doc technique détaillée : docs/methode-et-limites.md.
+	// « Méthode et limites » — page publique de référence. Réécrite section par
+	// section par l'utilisateur les 2026-08-05 : CINQ sections, chacune une question
+	// — quelles données · comment une attribution incertaine est indiquée · que
+	// comptons-nous · comment la liste des artistes a été établie · limites et
+	// sources. Les quatre dernières portent des sous-parties ancrées, montrées en
+	// retrait dans le rail. « Lire les chiffres et les vues » a été supprimée le
+	// 2026-08-05 : c'était le mode d'emploi de l'interface, il appartient aux vues
+	// elles-mêmes. Les limites restent au même rang que le récit (CLAUDE.md). Doc
+	// technique détaillée : docs/methode-et-limites.md.
 	import { nombre } from '$lib/joconde.js';
 	import { base } from '$app/paths';
-	// Quatre visuels (palier 4) : trois schémas HTML/CSS qui expliquent chacun UNE
-	// règle sur un cas réel, et une capture de l'interface pour les crédits d'image.
+	// Trois exemples et une capture. Les exemples ont quitté leur cadre de schéma le
+	// 2026-08-05 : chacun cite des notices identifiées et se lit dans la colonne de
+	// texte. La capture, elle, montre la règle des crédits telle qu'elle s'applique.
 	import ExemplesChampAuteur from '$lib/ExemplesChampAuteur.svelte';
 	import ExempleComptageUnique from '$lib/ExempleComptageUnique.svelte';
 	import ExempleHomonymes from '$lib/ExempleHomonymes.svelte';
@@ -32,6 +37,10 @@
 	// Personnes identifiées et comptées, mais dont le fonds sort de l'angle du
 	// volume (2026-08-02). Ni écartées, ni faux positifs : un état à part entière.
 	const nbHorsPerimetre = data.registre.hors_perimetre ?? 0;
+	// Nom du musée seul : l'export porte un libellé de travail — « Muséum d'histoire
+	// naturelle de Nice — planches de Barla (attribué à) » —, dont la page ne cite
+	// que l'établissement. Le nom reste ainsi lu dans l'export, jamais recopié.
+	const museeMonoculture = n.monoculture_divulguee.libelle.split(' — ')[0];
 	const dApres = n.familles.d_apres.notices;
 	const copiesTotal = n.copie;
 	const go = (o) => (o / 1e9).toLocaleString('fr-FR', { maximumFractionDigits: 2 });
@@ -82,8 +91,16 @@
 				['artistes-liste', 'Une liste en cours']
 			]
 		],
-		['lire', 'Lire les chiffres et les vues'],
-		['sources', 'Limites, sources et droits']
+		[
+			'sources',
+			'Limites et sources',
+			[
+				['sources-couverture', 'Ce que couvrent les chiffres'],
+				['sources-fonds', 'Un fonds qui pèse lourd'],
+				['sources-portee', 'Ce que le projet affirme'],
+				['sources-images', 'Les données et les images']
+			]
+		]
 	];
 
 	// Navigation dans une page longue (palier 5) : voir SommaireAncres.svelte, qui
@@ -318,70 +335,58 @@
 	<p class="note-methode">Chaque correction est vérifiée à partir de notices réelles.</p>
 </section>
 
-<!-- 5. Lire les chiffres et les vues ---------------------------------------- -->
-<section id="lire" tabindex="-1">
-	<h2>Lire les chiffres et les vues</h2>
-	<p>
-		<strong>Le graphique d'un artiste</strong> place chaque mention à sa
-		<strong>part</strong> (en&nbsp;%) parmi les œuvres concernées, regroupée dans les
-		trois territoires. On y compare la <em>forme</em> du doute, pas des volumes bruts&nbsp;;
-		le sens de chaque mention est donné dans la <a href="{base}/presentation">Présentation</a>.
-	</p>
-	<p>
-		<strong>Le nombre de musées</strong> d'une fiche ne compte que ceux ayant publié
-		<strong>au moins une notice prudente</strong> pour l'artiste, non l'ensemble des
-		musées où il apparaît.
-	</p>
-	<p>
-		<strong>La carte</strong> montre où le doute se disperse autour d'un seul
-		nom&nbsp;: <strong>un point = un musée détenteur</strong>, jamais une comparaison
-		entre musées.
-	</p>
-	<p>
-		<strong>Les reproductions</strong> sont des illustrations&nbsp;: chacune porte sa
-		source et sa licence (voir plus bas), jamais une preuve d'attribution.
-	</p>
-</section>
-
-<!-- 6. Limites, sources et droits ------------------------------------------- -->
+<!-- 5. Limites et sources ------------------------------------------------------
+     Section resserrée le 2026-08-05, texte de l'utilisateur : quatre sous-parties
+     ancrées, plus de « droits » dans le titre — les licences se lisent dans la
+     dernière. Le fonds de Nice y prend sa rédaction définitive : le comptage est
+     exact, mais le fonds ne relève pas du sujet de ce volet. -->
 <section id="sources" tabindex="-1">
-	<h2>Limites, sources et droits</h2>
+	<h2>Limites et sources</h2>
+
+	<h3 id="sources-couverture" tabindex="-1">Ce que couvrent les chiffres</h3>
 	<p>
-		<strong>Les chiffres ne reflètent que ce qui a été versé dans Joconde.</strong> Les
-		versements sont volontaires et inégaux d'un musée à l'autre. Un musée absent des
-		résultats n'est pas un musée sans incertitudes&nbsp;: c'est peut-être un musée qui
-		n'a pas (encore) versé ses notices. C'est pourquoi le projet ne compare jamais deux
-		musées sur des comptages bruts.
+		<a href="https://www.data.gouv.fr/fr/datasets/collections-des-musees-de-france-base-joconde/" target="_blank" rel="noopener">Joconde</a>
+		est alimentée par les musées, de manière volontaire et inégale. Les chiffres du projet
+		décrivent uniquement les notices présentes dans la base à la date étudiée. L'absence
+		d'un musée ou d'une œuvre ne signifie donc pas qu'aucune attribution incertaine
+		n'existe à leur sujet. Pour cette raison, le projet ne compare pas les musées à partir
+		de leurs nombres de notices.
 	</p>
-	<!-- Venu de « Que comptons-nous, et comment ? » le 2026-08-05 : le poids d'un seul
-	     versement est une limite de lecture, pas une règle de comptage. Chiffres
-	     inchangés, toujours lus dans niveaux.json. -->
+
+	<h3 id="sources-fonds" tabindex="-1">Un fonds qui pèse lourd dans le total</h3>
 	<p>
-		<strong>Un seul musée peut peser lourd.</strong> {nombre(n.monoculture_divulguee.doute)}
-		formulations prudentes — près d'un quart du total national — viennent d'un seul
-		établissement&nbsp;: {n.monoculture_divulguee.libelle}, dont les planches naturalistes
-		sont massivement notées «&nbsp;attribué à&nbsp;». Cela ne veut pas dire que ce musée
-		doute plus que les autres&nbsp;: c'est un effet de versement. Pour le neutraliser, on
-		donne aussi le total <strong>hors ce cas</strong>&nbsp;: {nombre(n.doute_hors_monoculture)}.
+		Parmi les {nombre(n.doute_total)} notices repérées, {nombre(n.monoculture_divulguee.doute)}
+		proviennent du {museeMonoculture}. Elles décrivent des planches naturalistes de
+		Jean-Baptiste Barla, généralement accompagnées de la mention
+		«&nbsp;attribué à&nbsp;». Le comptage est exact, mais ce fonds ne concerne pas
+		l'attribution d'œuvres d'art étudiée dans ce premier volet. Le projet indique donc
+		également le total calculé sans ce fonds&nbsp;: {nombre(n.doute_hors_monoculture)}
+		notices.
+	</p>
+
+	<h3 id="sources-portee" tabindex="-1">Ce que le projet permet d’affirmer</h3>
+	<p>
+		Le projet montre quelles réserves les musées publient autour du nom d'un artiste,
+		comment ces formulations se répartissent et où les notices concernées sont conservées.
+		Il n'authentifie aucune œuvre, ne propose aucune nouvelle attribution et ne mesure ni
+		la valeur des œuvres ni la qualité des collections.
+	</p>
+
+	<h3 id="sources-images" tabindex="-1">Les données et les images</h3>
+	<p>
+		Les données proviennent de Joconde et sont diffusées sous
+		<a href="https://www.etalab.gouv.fr/licence-ouverte-open-licence/" target="_blank" rel="noopener">{prov.licence}</a>.
+		Les photographies présentes sur
+		<a href="https://pop.culture.gouv.fr/conditions-generales-utilisation" target="_blank" rel="noopener">POP</a>
+		ne sont pas réutilisées lorsqu'aucune autorisation explicite ne le permet.
 	</p>
 	<p>
-		Ce que l'application permet de <strong>constater</strong>&nbsp;: quelles œuvres les
-		musées entourent d'une réserve, sous quelles formules, et où elles sont conservées.
-		Ce qu'elle ne permet <strong>pas de conclure</strong>&nbsp;: elle n'authentifie
-		aucune œuvre, n'en réattribue aucune, et ne dit rien de la valeur d'une pièce ni de
-		la richesse d'une collection.
-	</p>
-	<p>
-		<strong>Portraits et reproductions.</strong> Les portraits des artistes et, lorsqu'elles
-		existent sous licence libre, les reproductions des œuvres viennent de Wikimedia
-		Commons. Ce sont des <em>illustrations</em>, jamais une donnée ni un comptage&nbsp;:
-		chaque image porte son auteur et sa licence, vérifiés fichier par fichier — le plus
-		souvent le domaine public, parfois une licence Creative Commons qui impose de citer
-		l'auteur. Une reproduction n'est retenue que si elle est rattachée <strong>avec
-		certitude</strong> à la notice par son identifiant Joconde. Les photographies des
-		fiches POP elles-mêmes ne sont <strong>pas</strong> reprises&nbsp;: leurs crédits ne
-		portent pas de licence de réutilisation ouverte. Chaque œuvre renvoie à sa notice
-		publique sur POP.
+		Les portraits et les reproductions affichés dans l'application proviennent
+		principalement de
+		<a href="https://commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia" target="_blank" rel="noopener">Wikimedia Commons</a>.
+		Chaque image est utilisée selon la licence indiquée sur sa page source et rapprochée
+		d'une notice Joconde à partir d'éléments concordants, comme le titre, le musée ou le
+		numéro d'inventaire. Sa source et son statut juridique sont indiqués dans l'interface.
 	</p>
 
 	<!-- Visuel nº 4 (palier 4) : capture RÉELLE de l'interface, recadrée sur une
