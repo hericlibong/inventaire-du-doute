@@ -51,7 +51,7 @@
 		     d'état civil quand il diffère — c'est celui que le lecteur retrouvera,
 		     à l'envers, sur les notices de l'onglet « Œuvres »
 		     (« BUONARROTI Michelangelo (attribué à) »). -->
-		<h2>{maitre.nom}{#if nomCivilMaitre(maitre.nom)}<span class="nom-civil"
+		<h2>{maitre.nom}{#if nomCivilMaitre(maitre.nom)}{' '}<span class="nom-civil"
 				>({nomCivilMaitre(maitre.nom)})</span
 			>{/if}</h2>
 		{#if bioMaitre(maitre.nom)}
@@ -119,16 +119,23 @@
 		margin: 0;
 		/* Prévoir les noms longs, comme le panneau de la carte le fait déjà
 		   (charte §8). Le plus long du corpus, avec son nom d'état civil, fait
-		   58 signes. */
-		overflow-wrap: anywhere;
+		   58 signes.
+		   `break-word` et NON `anywhere` (corrigé le 2026-08-06) : `anywhere`
+		   autorise la coupure au milieu d'un mot dès qu'elle arrange la mise en
+		   page. Le nom d'état civil, insécable, ne trouvait pas sa place et
+		   faisait casser le nom lui-même — « Charles Norman / d ». `break-word`
+		   ne coupe un mot que s'il ne tient pas seul sur une ligne. */
+		overflow-wrap: break-word;
 	}
 
 	/* Ligne d'identité (qui, époque) quand elle est écrite — editorial-maitres.js. */
 	/* Le nom d'état civil accompagne le titre sans le concurrencer : même ligne,
 	   corps plus petit, encre atténuée. */
 	.nom-civil {
-		/* l'espace vient d'ici : Svelte supprime celui du balisage */
-		margin-left: 0.35em;
+		/* L'espace est un VRAI caractère, écrit `{' '}` dans le balisage. Une marge
+		   gauche faisait office d'espace, mais une marge ne se résorbe pas en fin
+		   de ligne : quand le nom d'état civil passait à la ligne suivante, il
+		   partait décalé de quelques pixels vers la droite (2026-08-06). */
 		font-size: 0.5em;
 		font-weight: 400;
 		letter-spacing: 0.01em;
