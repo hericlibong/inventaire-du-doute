@@ -1,12 +1,12 @@
 # Les artistes sans portrait
 
-État au **2026-08-06 (mis à jour le soir)**. **Trente et un** artistes sur cent deux n'ont
+État au **2026-08-06 (mis à jour le soir)**. **Trente** artistes sur cent deux n'ont
 pas de portrait dans l'application. Leur fiche affiche le repli « Pas de portrait fiable
 disponible pour X » — jamais une image approximative.
 
 ## Premier retour de recherche manuelle (2026-08-06)
 
-Huit candidats proposés, **deux intégrés**. Le détail, ligne par ligne, est dans
+Neuf candidats proposés, **trois intégrés**. Le détail, ligne par ligne, est dans
 `data/exports/portraits_a_chercher.csv` (colonnes `candidate_url`, `source`, `credit`,
 `license`, `commentaire`, `verdict`).
 
@@ -15,8 +15,17 @@ Commons publie sous CC BY-SA 4.0. Elle porte les deux frères côte à côte, ch
 avec ses dates ; celles d'Aimé sont exactement celles de Joconde. L'image a été **découpée
 en deux**, pour que chaque fiche montre un seul visage.
 
-**Six refus, tous pour la même raison : le droit de réutilisation n'est pas établi.**
-Aucun ne porte sur l'identité, qui est sûre dans quatre cas sur six.
+**Alexandre Clausel s'est ajouté à la relecture de l'image elle-même.** Refusé d'abord
+faute de provenance, il est finalement intégré : la planche **porte sa provenance
+imprimée** sous le portrait — « ALEXANDRE-JEAN-PIERRE CLAUSEL, Peintre et Photographe
+troyen — d'après un portrait à l'huile peint par lui-même en 1869 », PHOT. LOUVRIER, IMP.
+P. NOUEL. C'est un autoportrait d'un peintre mort en 1884, reproduit au XIXe siècle : le
+domaine public est acquis des deux côtés, et le blog n'avait fait qu'en photographier la
+page. **Leçon : regarder l'image avant de juger sa page d'accueil.** Le portrait a été
+recadré, et sa légende nomme sa source réelle, pas Commons.
+
+**Cinq refus, tous pour la même raison : le droit de réutilisation n'est pas établi.**
+Aucun ne porte sur l'identité, qui est sûre dans quatre cas sur cinq.
 
 | Artiste | Ce qui a été trouvé | Pourquoi c'est refusé |
 |---|---|---|
@@ -24,17 +33,21 @@ Aucun ne porte sur l'identité, qui est sûre dans quatre cas sur six.
 | Charles Eugène Ensfelder | dessin de Paul Reiber, musées de Strasbourg, inv. 77.2019.0.1174 — dates identiques à Joconde | « veuillez contacter la photothèque » |
 | Louis Hertig | « Louis Hertig dans son atelier », Mémoire vive, Besançon | mentions légales sans clause de réutilisation |
 | Auguste Alleaume | portrait **en vitrail** par son frère Ludovic (1917), Inventaire des Pays de la Loire | © du photographe seul |
-| Alexandre Clausel | portrait sur un blog local | aucune provenance, aucune licence |
-| Gustave Lancelot | portrait sur le même blog | aucune provenance, aucune licence |
+| Gustave Lancelot | portrait sur le blog Troyes-en-Champagne | aucune provenance, aucune licence — contrairement à Clausel, l’image ne porte aucune mention imprimée |
 
 **Les quatre premiers ne sont plus des introuvables.** Le portrait existe, il est
 identifié, il est localisé dans une institution nommée. Il ne manque qu'une autorisation
 — quatre demandes ciblées, à des interlocuteurs précis. C'est une piste ouverte, pas un
 échec.
 
+**Un candidat en attente.** Le portrait d'Ensfelder proposé sur Geneanet n'a pas pu être
+récupéré : le site est protégé par Cloudflare, qui renvoie 403 à tout outil. L'image doit
+être fournie à la main.
+
 **Rappel de la règle du projet** : un crédit n'est pas une autorisation, un © seul n'est
 pas une licence, et une image sans provenance ne s'utilise pas — même quand elle est
-manifestement la bonne.
+manifestement la bonne. Mais la provenance peut être **dans l'image**, comme l'a montré
+Clausel : on la regarde avant de conclure.
 
 ---
 
@@ -66,7 +79,7 @@ ne les départageant de façon sûre.
 
 **Le contrôle est visuel, et il est humain.** Il n'est pas automatisable.
 
-## Les trente et un, par nombre d'œuvres concernées
+## Les trente, par nombre d'œuvres concernées
 
 ### Image écartée au contrôle visuel (3)
 
@@ -81,7 +94,7 @@ par inadvertance.
 | 26 | Israël Henriet | l’inscription d’éditeur au bas d’une gravure |
 
 
-### Fiche d'autorité identifiée, mais sans aucune image (14)
+### Fiche d'autorité identifiée, mais sans aucune image (13)
 
 Ce sont les cas les plus faciles à reprendre : la personne est identifiée avec certitude,
 il ne manque que l'image. Une recherche dans les fonds numérisés (Gallica, archives
@@ -90,7 +103,6 @@ chances d'aboutir.
 
 | Œuvres | Artiste | Fiche | Déjà cherché ? |
 |---:|---|---|---|
-| 295 | Alexandre Clausel | Q52154652 | **oui** — voir le retour ci-dessus |
 | 231 | Léon Tirode | Q131924320 | — |
 | 107 | Léon Fort | Q22946093 | — |
 | 43 | François Georgin | Q52063671 | — |

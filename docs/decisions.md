@@ -2,6 +2,49 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-06 (sexies) — Clausel, ou pourquoi il faut regarder l'image avant sa page
+
+Alexandre Clausel avait été refusé le matin même : portrait trouvé sur un blog local, sans
+provenance ni licence. **Il est finalement intégré, et c'est le refus qui était mauvais.**
+
+En ouvrant l'image, on lit sa provenance **imprimée sous le portrait** :
+
+> ALEXANDRE-JEAN-PIERRE CLAUSEL — Peintre et Photographe troyen
+> D'après un portrait à l'huile peint par lui-même en 1869
+> PHOT. LOUVRIER · IMP. P. NOUEL
+
+C'est un **autoportrait** de 1869, reproduit en phototypie et publié dans un ouvrage
+ancien. Le blog n'avait fait qu'en photographier la page. Peintre mort en 1884,
+reproduction du XIXe : le domaine public est acquis des deux côtés. Rien de tout cela
+n'était sur la page web — tout était dans l'image.
+
+**La leçon vaut au-delà de ce cas** : la provenance d'une image n'est pas toujours à côté
+d'elle, elle est parfois dedans. Le contrôle visuel, déjà nécessaire pour distinguer un
+visage d'une œuvre, sert aussi à lire ce que la page tait. Il précède le jugement sur les
+droits, il ne le suit pas. Le contre-exemple est dans le même dossier : le portrait de
+Gustave Lancelot, sur le même blog, ne porte aucune mention imprimée — il reste refusé.
+
+**Une troisième route dans le mécanisme : les sources hors Commons** (`SOURCE_EXTERNE`).
+Ce n'est pas un raccourci : tout ce que Commons fournissait seul — auteur, licence, page
+source — doit y être établi à la main et écrit noir sur blanc. Surtout, **la légende nomme
+la source réelle** : « Autoportrait d'Alexandre Clausel. Reproduction phototypie Louvrier,
+Troyes-en-Champagne, domaine public. » Le nom « Wikimedia Commons » était codé en dur dans
+le composant ; il devient une valeur par défaut, jamais une affirmation. Une image ne se
+crédite pas d'une source qui n'est pas la sienne.
+
+**Un candidat en attente.** Le portrait d'Ensfelder proposé sur Geneanet n'a pas pu être
+récupéré : le site est derrière Cloudflare, qui renvoie 403 à tout outil et affiche une
+vérification anti-bot. Cette protection ne se contourne pas — l'image devra être fournie
+en fichier. À noter que le musée de Strasbourg conserve par ailleurs un dessin de Paul
+Reiber le représentant, daté 1836-1876, soit exactement les dates de Joconde.
+
+**Cadrage des demandes d'autorisation** (décision de l'utilisateur, ce jour) : elles ne
+concerneront **que les œuvres et les images de Joconde**, et c'est lui qui les mènera. Les
+portraits d'artistes relèvent de son appréciation éditoriale. Le rôle du projet s'y limite
+à établir l'identité et à créditer exactement.
+
+Portraits : **72**. Restent 30 artistes sans visage.
+
 ## 2026-08-06 (quinquies) — Premier retour de recherche manuelle : deux portraits sur huit
 
 Huit candidats rapportés à la main sur la liste des introuvables. **Deux intégrés, six

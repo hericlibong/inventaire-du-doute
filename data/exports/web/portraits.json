@@ -641,5 +641,16 @@
     "regard": "gauche",
     "recadrage": "planche des deux frères, moitié droite",
     "reproduction": "Bycro"
+  },
+  "Alexandre Clausel": {
+    "fichier": "/portraits/alexandre-clausel.jpg",
+    "auteur": "Alexandre Clausel",
+    "licence": "domaine public",
+    "licence_url": "",
+    "source": "https://troyes-en-champagne.blogspot.com/2013/12/alexandre-jean-pierre-clausel-1802-1884.html",
+    "wikidata": "https://www.wikidata.org/wiki/Q52154652",
+    "regard": "gauche",
+    "source_nom": "Troyes-en-Champagne",
+    "reproduction": "phototypie Louvrier"
   }
 }

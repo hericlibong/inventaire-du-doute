@@ -176,6 +176,42 @@ FICHIER_CHOISI = {
     },
 }
 
+# ─────────────────────────────────────────────────────────────────────────────
+# SOURCES HORS COMMONS (2026-08-06)
+#
+# Troisième route, pour les portraits qui n'existent nulle part sur Commons.
+# Elle n'est PAS un raccourci : tout ce que Commons fournissait tout seul —
+# auteur, licence, page source — doit ici être établi à la main et écrit noir
+# sur blanc. La légende affichée nomme la source réelle, jamais « Wikimedia
+# Commons » par défaut.
+#
+# La règle du projet ne change pas : on ne publie que ce qu'on peut nommer.
+# Une image dont on ignore l'auteur ET le statut n'entre pas.
+# ─────────────────────────────────────────────────────────────────────────────
+SOURCE_EXTERNE = {
+    # La planche PORTE SA PROPRE PROVENANCE, imprimée sous l'image :
+    # « ALEXANDRE-JEAN-PIERRE CLAUSEL — Peintre et Photographe troyen —
+    #   D'après un portrait à l'huile peint par lui-même en 1869 »,
+    # avec « PHOT. LOUVRIER » et « IMP. P. NOUEL ». C'est donc un AUTOPORTRAIT
+    # de 1869, reproduit en phototypie au XIXe siècle et publié dans un ouvrage
+    # ancien ; le blog n'a fait qu'en photographier la page. Peintre mort en
+    # 1884, reproduction du XIXe : le domaine public est acquis des deux côtés.
+    'Alexandre Clausel': {
+        'url': 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhjIHc'
+               'oxuJR6AYGXGTleHwPs5FEmoTZbFLjYKICxK5Fb54UNFaMmNBBvyc4rsBQa9zbEkk'
+               'Z8MESNXcNm6JOV8i2Opr4itit-Sp4TWCSD2wY4eMQnf-FvTSC-Z_TARiOGqgX9SG'
+               '94yhJBQw/s1600/P1140037.JPG',
+        'page': 'https://troyes-en-champagne.blogspot.com/2013/12/'
+                'alexandre-jean-pierre-clausel-1802-1884.html',
+        'source_nom': 'Troyes-en-Champagne',
+        'auteur': 'Alexandre Clausel',          # autoportrait : le composant le dira
+        'reproduction': 'phototypie Louvrier',
+        'licence': 'domaine public',
+        'licence_url': '',
+        'wikidata': 'Q52154652',
+    },
+}
+
 # Recadrage, en fractions (gauche, haut, droite, bas) de l'image téléchargée.
 # Une planche qui porte deux visages ne peut pas servir telle quelle : sur la
 # fiche d'Aimé, on verrait aussi Louis. On découpe donc, et on le dit. Les
@@ -184,6 +220,9 @@ FICHIER_CHOISI = {
 RECADRAGE = {
     'Aimé Duthoit': (0.02, 0.02, 0.42, 0.86),
     'Louis Duthoit': (0.55, 0.02, 0.96, 0.86),
+    # On garde le portrait, on laisse la légende imprimée de la planche : le
+    # site écrit la sienne, et les deux se contrediraient à l'œil.
+    'Alexandre Clausel': (0.095, 0.055, 0.94, 0.74),
 }
 
 
@@ -319,26 +358,44 @@ def main():
         print(f'manifeste existant : {len(manifeste)} portraits conservés '
               f'(--tout pour tout refaire)')
 
-    # Deux routes : le P18 de Wikidata, et le fichier désigné à la main. La
-    # seconde l'emporte quand elle existe — elle n'est écrite que là où la
-    # première ne donne rien ou donne autre chose qu'un visage.
-    a_faire = {n: ('choisi' if n in FICHIER_CHOISI else 'p18')
-               for n in list(QID) + list(FICHIER_CHOISI)
+    # Trois routes, de la plus automatique à la plus déclarée : le P18 de
+    # Wikidata ; un fichier Commons désigné à la main ; une source hors Commons
+    # entièrement décrite. Les deux dernières ne sont écrites que là où la
+    # première ne donne rien, ou donne autre chose qu'un visage.
+    def route_de(nom):
+        if nom in SOURCE_EXTERNE:
+            return 'externe'
+        return 'choisi' if nom in FICHIER_CHOISI else 'p18'
+
+    a_faire = {n: route_de(n)
+               for n in list(QID) + list(FICHIER_CHOISI) + list(SOURCE_EXTERNE)
                if tout or n not in manifeste}
     print(f'{len(a_faire)} portrait(s) à chercher\n')
     for nom, route in a_faire.items():
         choix = FICHIER_CHOISI.get(nom, {})
-        qid = choix['qid'] if route == 'choisi' else QID[nom]
+        ext = SOURCE_EXTERNE.get(nom, {})
+        qid = ext.get('wikidata') or (choix['qid'] if route == 'choisi' else QID.get(nom))
         try:
-            if route == 'choisi':
+            if route == 'externe':
+                # Rien à demander à Commons : la source est déclarée en toutes
+                # lettres ci-dessus, et c'est elle qui s'affichera.
+                info = {
+                    'thumburl': ext['url'], 'mime': 'image/jpeg',
+                    'descriptionurl': ext['page'],
+                    'licence': ext['licence'], 'licence_url': ext.get('licence_url', ''),
+                    'auteur': ext['auteur'],
+                }
+                pourquoi = ext.get('recadrage')
+            elif route == 'choisi':
                 fichier, pourquoi = choix['fichier'], choix.get('recadrage')
+                info = infos_commons(fichier, largeur=1200 if nom in RECADRAGE else 480)
             else:
                 fichier, pourquoi = image_p18(qid), None
-            if not fichier:
-                print(f'!! {nom}: pas de P18'); continue
-            info = infos_commons(fichier, largeur=1200 if nom in RECADRAGE else 480)
-            ext = {'image/jpeg': 'jpg', 'image/png': 'png'}.get(info['mime'], 'jpg')
-            nom_fichier = f'{slug(nom)}.{ext}'
+                if not fichier:
+                    print(f'!! {nom}: pas de P18'); continue
+                info = infos_commons(fichier, largeur=1200 if nom in RECADRAGE else 480)
+            extension = {'image/jpeg': 'jpg', 'image/png': 'png'}.get(info['mime'], 'jpg')
+            nom_fichier = f'{slug(nom)}.{extension}'
             with urllib.request.urlopen(urllib.request.Request(info['thumburl'], headers=UA), timeout=60) as r:
                 data = r.read()
             chemin = os.path.join(DEST_IMG, nom_fichier)
@@ -352,20 +409,27 @@ def main():
                 'licence': info['licence'] or 'voir la page du fichier',
                 'licence_url': info['licence_url'],
                 'source': info['descriptionurl'],
-                'wikidata': f'https://www.wikidata.org/wiki/{qid}',
+                'wikidata': f'https://www.wikidata.org/wiki/{qid}' if qid else '',
                 # 'droite' => retourné à l'affichage pour regarder le nuage (à gauche).
                 'regard': 'droite' if nom in REGARD_DROITE else 'gauche',
             }
-            # Une image recadrée n'est plus le fichier de Commons : on le dit,
+            # Le nom du lieu où l'image a été trouvée. Commons par défaut ; sinon
+            # la source réelle, qui doit s'afficher telle quelle — une image prise
+            # ailleurs ne se crédite pas « Wikimedia Commons ».
+            if ext.get('source_nom'):
+                manifeste[nom]['source_nom'] = ext['source_nom']
+            # Une image recadrée n'est plus le fichier d'origine : on le dit,
             # c'est la moindre des choses envers la licence et le lecteur.
             if pourquoi:
                 manifeste[nom]['recadrage'] = pourquoi
-            # Le crédit Commons nomme le photographe de la reproduction, pas
-            # l'auteur du portrait : on déplace le nom pour ne pas lui prêter
-            # une œuvre du siècle précédent.
+            # Quand le crédit nomme le photographe de la reproduction et non
+            # l'auteur du portrait, le nom se dit à part : sans quoi on prête à
+            # un contributeur d'aujourd'hui une œuvre du siècle précédent.
             if choix.get('reproduction'):
                 manifeste[nom]['reproduction'] = manifeste[nom]['auteur']
                 manifeste[nom]['auteur'] = 'auteur inconnu'
+            elif ext.get('reproduction'):
+                manifeste[nom]['reproduction'] = ext['reproduction']
             print(f'ok {nom}: {nom_fichier}  [{info["licence"]}]  {info["auteur"][:50]}'
                   + (f'  ({pourquoi})' if pourquoi else ''))
             time.sleep(0.4)
@@ -373,7 +437,8 @@ def main():
             print(f'!! {nom} ({qid}): {e}')
     with open(DEST_JSON, 'w', encoding='utf-8') as f:
         json.dump(manifeste, f, ensure_ascii=False, indent=2)
-    print(f'\n{len(manifeste)}/{len(QID) + len(FICHIER_CHOISI)} portraits -> {DEST_JSON}')
+    total = len(QID) + len(FICHIER_CHOISI) + len(SOURCE_EXTERNE)
+    print(f'\n{len(manifeste)}/{total} portraits -> {DEST_JSON}')
 
 
 if __name__ == '__main__':

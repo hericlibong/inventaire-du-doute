@@ -54,6 +54,10 @@
 			sujet,
 			de,
 			reproduction: portrait.reproduction ?? '',
+			// Presque tous les portraits viennent de Commons, mais pas tous
+			// (2026-08-06) : celui d'Alexandre Clausel a été trouvé ailleurs.
+			// Une image ne se crédite jamais d'une source qui n'est pas la sienne.
+			sourceNom: portrait.source_nom ?? 'Wikimedia Commons',
 			licence: licenceEnFrancais(portrait.licence),
 			source: portrait.source
 		};
@@ -74,7 +78,7 @@
 		<figcaption class="portrait-legende">
 			{legende.sujet}.
 			{#if legende.reproduction}Reproduction&nbsp;{legende.reproduction},{/if}
-			{#if legende.source}<a href={legende.source} target="_blank" rel="noopener">Wikimedia Commons</a>{:else}Wikimedia Commons{/if},
+			{#if legende.source}<a href={legende.source} target="_blank" rel="noopener">{legende.sourceNom}</a>{:else}{legende.sourceNom}{/if},
 			{legende.licence}.
 		</figcaption>
 	{:else}
