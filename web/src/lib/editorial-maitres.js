@@ -726,7 +726,10 @@ export const EDITORIAL = {
 	'Antoine Gabriel Willermet': {
 		bio: 'Peintre et dessinateur français du XIXe siècle, 1783 – après 1848.'
 	},
-	'Turpin de Crissé': { nomCivil: 'Lancelot Théodore Turpin de Crissé',
+	// Pas de nomCivil : « Turpin de Crissé (Lancelot Théodore Turpin de Crissé) »
+	// répète le nom au lieu d'y faire pont. Le champ ne sert qu'aux artistes
+	// connus sous un surnom que Joconde n'écrit jamais.
+	'Turpin de Crissé': {
 		bio: 'Peintre et dessinateur français du XIXe siècle, 1782–1859.'
 	},
 	'Charles Hugo': {

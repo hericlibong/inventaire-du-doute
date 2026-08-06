@@ -538,5 +538,86 @@
     "source": "https://commons.wikimedia.org/wiki/File:Sandro_Botticelli_Self-portrait_ca_1475.jpg",
     "wikidata": "https://www.wikidata.org/wiki/Q5669",
     "regard": "gauche"
+  },
+  "Charles Normand": {
+    "fichier": "/portraits/charles-normand.jpg",
+    "auteur": "Charles Victor Normand / d'après Julie Ribault",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Charles_Normand_(1765-1840)_(engraving_by_C_V_Normand_after_Julie_Ribault)_(cropped).jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q2959914",
+    "regard": "gauche"
+  },
+  "Giacinto Calandrucci": {
+    "fichier": "/portraits/giacinto-calandrucci.jpg",
+    "auteur": "Giacinto Calandrucci",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Giacinto_Calandrucci_-_Self-portrait_-_NMH_617-1863_-_Nationalmuseum.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q957255",
+    "regard": "gauche"
+  },
+  "Auguste Vacquerie": {
+    "fichier": "/portraits/auguste-vacquerie.jpg",
+    "auteur": "Nadar",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Auguste_Vacquerie_01.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q940439",
+    "regard": "gauche"
+  },
+  "Turpin de Crissé": {
+    "fichier": "/portraits/turpin-de-crisse.jpg",
+    "auteur": "Bouchet Louis-André-Gabriel",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Bouchet_Louis-Andr%C3%A9-Gabriel_Portrait_du_comte_Lancelot_Turpin_de_Criss%C3%A9_(vers_1807).jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q3216954",
+    "regard": "gauche"
+  },
+  "Charles Hugo": {
+    "fichier": "/portraits/charles-hugo.jpg",
+    "auteur": "Nadar",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Charles_Hugo_Nadar_avant_1870.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q663856",
+    "regard": "gauche"
+  },
+  "Crispin de Passe l'Ancien": {
+    "fichier": "/portraits/crispin-de-passe-l-ancien.jpg",
+    "auteur": "Crispijn van de Passe I",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Self_portrait_of_Crispijn_van_de_Passe_I.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q140096",
+    "regard": "gauche"
+  },
+  "Antonio del Pollaiuolo": {
+    "fichier": "/portraits/antonio-del-pollaiuolo.jpg",
+    "auteur": "Giorgio Vasari",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:072_le_vite,_antonio_pollaiuolo.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q318640",
+    "regard": "gauche"
+  },
+  "Jacques-Louis David": {
+    "fichier": "/portraits/jacques-louis-david.jpg",
+    "auteur": "Jacques-Louis David",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:David_Self_Portrait.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q83155",
+    "regard": "gauche"
+  },
+  "Georges Ferdinand Bigot": {
+    "fichier": "/portraits/georges-ferdinand-bigot.jpg",
+    "auteur": "auteur inconnu",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Bigot1882.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q1135613",
+    "regard": "gauche"
   }
 }

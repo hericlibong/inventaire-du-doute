@@ -33,12 +33,19 @@
 		const mention = /^(attribué à|d'après|entourage de|atelier de|auteur inconnu)/.test(
 			portrait.auteur
 		);
+		// Élision devant voyelle ou h muet : « Portrait d'Auguste Vacquerie », et
+		// non « de Auguste Vacquerie » (relevé le 2026-08-06, en ajoutant les
+		// portraits du lot 2). Onze noms du corpus commencent par une voyelle —
+		// Auguste Vacquerie, Antonio del Pollaiuolo, Albrecht Dürer, Ingres…
+		// « Hyacinthe Rigaud » et « Henry Hennault » prennent aussi l'élision :
+		// leur h est muet, comme celui de tous les prénoms concernés ici.
+		const de = /^[aeiouyàâäéèêëîïôöùûüh]/i.test(maitre.nom) ? "d'" : 'de ';
 		const sujet = estAutoportrait
-			? `Autoportrait de ${maitre.nom}`
+			? `Autoportrait ${de}${maitre.nom}`
 			: mention
-				? `Portrait de ${maitre.nom}, ${portrait.auteur}`
-				: `Portrait de ${maitre.nom}, par ${portrait.auteur}`;
-		return { sujet, licence: licenceEnFrancais(portrait.licence), source: portrait.source };
+				? `Portrait ${de}${maitre.nom}, ${portrait.auteur}`
+				: `Portrait ${de}${maitre.nom}, par ${portrait.auteur}`;
+		return { sujet, de, licence: licenceEnFrancais(portrait.licence), source: portrait.source };
 	});
 </script>
 
@@ -50,7 +57,7 @@
 			class="visage"
 			class:retourne={portrait.regard === 'droite'}
 			src={portrait.fichier}
-			alt="Portrait de {maitre.nom}"
+			alt="Portrait {legende.de}{maitre.nom}"
 			loading="lazy"
 		/>
 		<figcaption class="portrait-legende">

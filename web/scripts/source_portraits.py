@@ -13,7 +13,7 @@ Sortie :
   - static/portraits/<slug>.<ext>  (images ~480px de large)
   - static/data/portraits.json     (manifeste : crédit, licence, source, QID)
 """
-import json, os, re, time, unicodedata
+import json, os, re, sys, time, unicodedata
 import urllib.parse, urllib.request
 
 UA = {'User-Agent': 'InventaireDuDoute/1.0 (portfolio data-journalisme; hericlibong@gmail.com)'}
@@ -97,11 +97,70 @@ QID = {
     "Claude Lorrain": 'Q214074',
     "Le Pérugin": 'Q5827',
     "Botticelli": 'Q5669',
+
+    # Lot du 2026-08-06 (les 39 artistes entrés au volume le 2026-08-02). QID
+    # retenus en phase 2 : les dates de Wikidata doivent concorder avec celles
+    # que les MUSÉES écrivent dans le champ auteur de Joconde (docs/donnees.md,
+    # 2026-08-06). Neuf seulement ont un P18 qui soit réellement un portrait —
+    # voir P18_NON_PORTRAIT juste dessous, qui explique les autres.
+    "Charles Normand": 'Q2959914',
+    "Giacinto Calandrucci": 'Q957255',
+    "Georges Ferdinand Bigot": 'Q1135613',
+    "Auguste Vacquerie": 'Q940439',
+    "Turpin de Crissé": 'Q3216954',
+    "Charles Hugo": 'Q663856',
+    "Crispin de Passe l'Ancien": 'Q140096',
+    "Antonio del Pollaiuolo": 'Q318640',
+    "Jacques-Louis David": 'Q83155',
+}
+
+# ─────────────────────────────────────────────────────────────────────────────
+# P18 N'EST PAS UNE PROMESSE DE PORTRAIT (constat du 2026-08-06)
+#
+# Sur l'élément Wikidata d'un artiste, la propriété P18 « image » porte souvent
+# UNE DE SES ŒUVRES et non son visage. Le piège ne s'était pas vu sur les 63
+# premiers maîtres, dont les portraits gravés sont célèbres ; il est apparu net
+# sur ce lot. Quatre des treize candidats ont été écartés APRÈS AVOIR ÉTÉ
+# REGARDÉS, planche de contact à l'appui — aucun indice textuel ne les
+# départageait de façon sûre :
+#
+#   Colijn de Coter     P18 = « Coter Pruszcz Polyptych », un polyptyque
+#   Louis Duthoit       P18 = la statue de saint Joseph de la cathédrale d'Amiens
+#   Nicasius Bernaerts  P18 = « Bataille de chiens et de chats », une nature morte
+#   Israël Henriet      P18 = l'inscription d'éditeur au bas d'une gravure de
+#                             Stefano della Bella — pas même une figure
+#
+# Ces quatre-là gardent le repli « Pas de portrait fiable disponible ». Mettre
+# une œuvre à la place d'un visage tromperait le lecteur sur ce qu'il regarde,
+# et ce site ne montre que ce qu'il peut nommer.
+#
+# LA RÈGLE : aucun QID n'entre dans la table ci-dessus sans que son P18 ait été
+# OUVERT ET REGARDÉ. Le contrôle est humain ; il n'est pas automatisable.
+# ─────────────────────────────────────────────────────────────────────────────
+P18_NON_PORTRAIT = {
+    'Q1108307': 'Colijn de Coter — polyptyque',
+    'Q19849909': 'Louis Duthoit — statue de la cathédrale d’Amiens',
+    'Q7024540': 'Nicasius Bernaerts — nature morte',
+    'Q3155663': 'Israël Henriet — inscription d’éditeur sur une gravure',
 }
 
 
-def get_json(url):
-    return json.load(urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=30))
+def get_json(url, essais=4):
+    """Commons et Wikidata répondent HTTP 429 quand on va trop vite (rencontré le
+    2026-08-06 en téléchargeant treize vignettes d'affilée). On patiente et on
+    recommence plutôt que d'abandonner un portrait pour une question de cadence."""
+    for i in range(essais):
+        try:
+            req = urllib.request.Request(url, headers=UA)
+            return json.load(urllib.request.urlopen(req, timeout=30))
+        except urllib.error.HTTPError as e:
+            if e.code != 429 or i == essais - 1:
+                raise
+            time.sleep(5 * (i + 1))
+        except Exception:
+            if i == essais - 1:
+                raise
+            time.sleep(2 * (i + 1))
 
 
 def slug(nom):
@@ -115,6 +174,10 @@ def slug(nom):
 # (l'œuvre reproduite copie un modèle) — même mot que dans les notices Joconde.
 ENROBAGES = [
     ('Unknown artist', 'auteur inconnu'),
+    # Commons emploie les deux formes ; la seconde était passée en anglais dans
+    # la légende de Georges Ferdinand Bigot (relevé le 2026-08-06).
+    ('Unknown author', 'auteur inconnu'),
+    ('unknown author', 'auteur inconnu'),
     ('Attributed to ', 'attribué à '),
     ('After ', "d'après "),
     ('Circle of ', 'entourage de '),
@@ -175,8 +238,30 @@ def infos_commons(fichier, largeur=480):
 
 def main():
     os.makedirs(DEST_IMG, exist_ok=True)
+
+    # Garde-fou : un QID dont on a constaté que le P18 n'est pas un portrait ne
+    # doit pas revenir dans la table par inadvertance (2026-08-06).
+    fautifs = {n: q for n, q in QID.items() if q in P18_NON_PORTRAIT}
+    if fautifs:
+        for n, q in fautifs.items():
+            print(f'!! {n} ({q}) : {P18_NON_PORTRAIT[q]} — retirer de QID')
+        raise SystemExit('P18 déjà constaté « pas un portrait » : voir ci-dessus.')
+
+    # Reprise INCRÉMENTALE par défaut : on ne retélécharge pas les portraits déjà
+    # au manifeste. Refaire les 60 pour en ajouter 9 coûte soixante requêtes,
+    # déclenche les 429 et exposerait les portraits validés à un changement
+    # survenu depuis sur Wikidata. `--tout` force la régénération complète.
+    tout = '--tout' in sys.argv
     manifeste = {}
-    for nom, qid in QID.items():
+    if not tout and os.path.exists(DEST_JSON):
+        with open(DEST_JSON, encoding='utf-8') as f:
+            manifeste = json.load(f)
+        print(f'manifeste existant : {len(manifeste)} portraits conservés '
+              f'(--tout pour tout refaire)')
+
+    a_faire = {n: q for n, q in QID.items() if tout or n not in manifeste}
+    print(f'{len(a_faire)} portrait(s) à chercher\n')
+    for nom, qid in a_faire.items():
         try:
             fichier = image_p18(qid)
             if not fichier:

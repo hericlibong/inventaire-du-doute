@@ -103,6 +103,10 @@
 		line-height: 1.02;
 		letter-spacing: -0.015em;
 		margin: 0;
+		/* Prévoir les noms longs, comme le panneau de la carte le fait déjà
+		   (charte §8). Le plus long du corpus, avec son nom d'état civil, fait
+		   58 signes. */
+		overflow-wrap: anywhere;
 	}
 
 	/* Ligne d'identité (qui, époque) quand elle est écrite — editorial-maitres.js. */
@@ -115,7 +119,18 @@
 		font-weight: 400;
 		letter-spacing: 0.01em;
 		color: var(--couleur-encre-douce, #6b6459);
+		/* Insécable sur grand écran seulement : « (Michelangelo Buonarroti) » se
+		   lit mal coupé en deux. Sur mobile, la coupure vaut mieux que le
+		   débordement — mesuré le 2026-08-06 : la page partait à 569 px de large
+		   dans une fenêtre de 390 px, et le défaut existait déjà avant ce lot
+		   (Michel-Ange à 407 px). */
 		white-space: nowrap;
+	}
+
+	@media (max-width: 760px) {
+		.nom-civil {
+			white-space: normal;
+		}
 	}
 
 	.bio {

@@ -2,6 +2,64 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-06 (quater) — Neuf portraits de plus, et quatre œuvres refusées
+
+Suite du chantier des profils. Quarante-deux artistes sur cent deux n'avaient pas de
+portrait ; ils sont désormais trente-trois. **Neuf portraits ajoutés, tous en domaine
+public**, téléchargés localement comme les soixante précédents.
+
+**P18 ne promet pas un portrait.** C'est le constat de ce lot, et il vaut pour la suite.
+Sur la fiche Wikidata d'un artiste, la propriété P18 « image » porte souvent **une de ses
+œuvres** et non son visage. Le défaut ne s'était pas vu sur les 63 premiers maîtres, dont
+les portraits gravés sont célèbres. Ici, **quatre candidats sur treize** étaient des
+œuvres :
+
+| Artiste | Ce que P18 donnait |
+|---|---|
+| Louis Duthoit | la statue de saint Joseph de la cathédrale d'Amiens |
+| Nicasius Bernaerts | « Bataille de chiens et de chats », une nature morte |
+| Colijn de Coter | le polyptyque de Pruszcz |
+| Israël Henriet | l'inscription d'éditeur au bas d'une gravure — pas même une figure |
+
+**Aucun indice textuel ne les départageait.** Le titre de fichier, la description et les
+catégories Commons donnent des signaux contradictoires : « Beaux-Arts de Carcassonne -
+Bataille de chiens et de chats - Nicasius Bernaerts.jpg » porte le nom de l'artiste et
+aucun mot suspect. Les treize candidats ont donc été **téléchargés et regardés**, en
+planche de contact. Le contrôle est visuel et il est humain ; il n'est pas automatisable.
+Mettre une œuvre à la place d'un visage tromperait le lecteur sur ce qu'il regarde.
+
+Les quatre QID écartés sont consignés dans **`P18_NON_PORTRAIT`** (`source_portraits.py`),
+et le script **refuse de démarrer** si l'un d'eux revient dans la table des QID. Une
+vérification humaine qui n'est pas gravée quelque part se refait, ou pire, s'oublie.
+
+**Deux changements au script, tirés de l'expérience.**
+- **Reprise incrémentale par défaut.** Refaire les soixante portraits existants pour en
+  ajouter neuf coûtait soixante requêtes, déclenchait les HTTP 429 de Commons et exposait
+  des portraits déjà validés à un changement survenu depuis sur Wikidata. `--tout` force
+  la régénération complète quand on la veut vraiment.
+- **Patience sur les 429.** Commons refuse au-delà d'une certaine cadence ; on attend et
+  on recommence plutôt que de perdre un portrait pour une question de rythme.
+
+**Trois corrections de rédaction relevées en chemin**, toutes visibles à l'écran :
+- **L'élision manquait** : « Portrait de Auguste Vacquerie ». Onze noms du corpus
+  commencent par une voyelle. La légende écrit désormais « Portrait d'Auguste Vacquerie ».
+- **Un anglicisme passait dans la légende** : « par Unknown author ». Commons emploie deux
+  formes, seule la première était traduite.
+- **Un débordement sur mobile**, mesuré à 569 px de large dans une fenêtre de 390. Le nom
+  d'état civil était en `white-space: nowrap`, insécable même quand il ne tenait pas. Il
+  reste insécable sur grand écran — « (Michelangelo Buonarroti) » se lit mal coupé — et
+  se coupe désormais sous 760 px. **Le défaut préexistait à ce chantier** (Michel-Ange
+  débordait déjà à 407 px) ; le lot 2 l'a seulement rendu voyant.
+
+**Un `nomCivil` retiré.** « Turpin de Crissé (Lancelot Théodore Turpin de Crissé) »
+répétait le nom au lieu d'y faire pont. Le champ ne sert qu'aux artistes connus sous un
+surnom que Joconde n'écrit jamais.
+
+La liste des trente-trois qui restent sans portrait est publiée dans
+**`docs/portraits-introuvables.md`**, avec le motif de chaque échec et, pour ceux qu'aucune
+notice d'autorité ne documente, le musée où chercher. Ce sont surtout les musées locaux —
+l'Image à Épinal, Sèvres, Crozatier, Grobet-Labadié — qui détiennent cette documentation.
+
 ## 2026-08-06 (ter) — Les 39 artistes du lot 2 ont leur ligne de repérage
 
 C4 est soldée : les 102 artistes du volume portent désormais la phrase qui les situe sous
