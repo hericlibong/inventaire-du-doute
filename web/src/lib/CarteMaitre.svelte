@@ -183,7 +183,13 @@
 			     remplace la légende tant qu'un musée est choisi. -->
 			{#if musee}
 				<div class="panneau-musee" role="group" aria-label="Musée choisi">
-					<p class="panneau-nom">{musee.nom}<span class="panneau-ville">{musee.ville}</span></p>
+					<!-- En-tête : qui l'on regarde. Fond gris neutre pleine largeur, filet
+					     dessous — le corps du panneau garde son blanc-papier (2026-08-06). -->
+					<header class="panneau-entete">
+						<p class="panneau-nom">{musee.nom}</p>
+						<p class="panneau-ville">{musee.ville}</p>
+					</header>
+					<div class="panneau-corps">
 					<p class="panneau-compte">{concernees(musee.doute)}</p>
 					<ul class="panneau-mentions">
 						{#each musee.lignes as l (l.label)}
@@ -207,6 +213,7 @@
 						</a>
 					{/if}
 					<button type="button" class="fermer" onclick={() => (choisi = null)}>Fermer</button>
+					</div>
 				</div>
 			{:else}
 				<!-- Aucun musée choisi : ce que le point représente, et ce qu'on peut en
@@ -374,31 +381,54 @@
 		}
 	}
 
-	/* --- Panneau du musée choisi : il porte les liens, l'infobulle jamais. --- */
+	/* --- Panneau du musée choisi : il porte les liens, et lui seul. ------------
+	   Deux zones : un en-tête gris qui dit QUI l'on regarde, un corps clair qui
+	   dit ce qu'on y trouve. Le panneau ne porte plus de retrait — chaque zone a
+	   le sien, sinon le fond de l'en-tête ne pourrait pas courir jusqu'aux bords.
+	   `overflow: hidden` fait suivre les angles arrondis à l'aplat gris. */
 	.panneau-musee {
+		background: var(--surface-carte);
+		border: 1px solid var(--couleur-trait);
+		border-radius: var(--rayon-s);
+		overflow: hidden;
+	}
+
+	.panneau-entete {
+		padding: var(--espace-3);
+		background: var(--surface-entete);
+		border-bottom: 1px solid var(--couleur-trait);
+	}
+
+	.panneau-corps {
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
 		gap: var(--espace-2);
 		padding: var(--espace-3);
-		background: var(--surface-carte);
-		border: 1px solid var(--couleur-trait);
-		border-radius: var(--rayon-s);
 	}
 
+	/* Nom du musée : un cran au-dessus du corps du panneau, en gras. Certains sont
+	   très longs (« Viséum-musée de la lunette (collections du musée de la lunette
+	   et du musée Jourdain) », 84 signes) : la coupure est autorisée dans les mots
+	   pour qu'aucun ne déborde de la colonne, et l'interligne reste aéré. */
 	.panneau-nom {
 		margin: 0;
 		font-family: var(--police-ui);
-		font-size: var(--taille-xs);
+		font-size: var(--taille-s);
 		font-weight: 600;
-		line-height: 1.3;
+		line-height: 1.35;
 		color: var(--couleur-encre);
+		overflow-wrap: anywhere;
+		hyphens: auto;
 	}
 
 	.panneau-ville {
-		display: block;
-		font-weight: 400;
+		margin: 0.15rem 0 0;
+		font-family: var(--police-ui);
+		font-size: var(--taille-xs);
+		line-height: 1.3;
 		color: var(--couleur-encre-douce);
+		overflow-wrap: anywhere;
 	}
 
 	.panneau-compte {

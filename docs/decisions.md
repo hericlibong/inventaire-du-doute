@@ -2,6 +2,28 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-06 (bis) — Le panneau de la carte prend un en-tête
+
+Le panneau du musée choisi empilait tout à plat : le nom, la ville, le compte, les mentions,
+les liens. On ne voyait pas d'un coup d'œil **de quel musée** on parlait.
+
+**Deux zones désormais.** Un en-tête qui dit qui l'on regarde — nom du musée en gras, ville
+dessous en petit corps et encre douce — sur un **aplat gris pleine largeur**, fermé par un
+filet. Puis le corps, qui garde le blanc-papier du panneau. Le retrait a quitté le panneau pour
+chacune de ses zones : sans cela, l'aplat n'aurait pas pu courir jusqu'aux bords. `overflow:
+hidden` fait suivre les angles arrondis à l'aplat.
+
+**Un token de plus, `--surface-entete` (#f1efeb)** : un gris très clair, à peine chaud pour
+tenir dans la gamme crème du site, mais **neutre** — aucune teinte de la boîte de pigments, qui
+appartient aux mentions et ne doit jamais servir de décor. Contrastes mesurés au rendu : le nom
+à 15,1:1, la ville à 6,4:1.
+
+**Noms longs prévus.** Le plus long du corpus fait 84 signes (« Viséum-musée de la lunette
+(collections du musée de la lunette et du musée Jourdain) ») : la coupure est autorisée à
+l'intérieur des mots, l'en-tête passe à trois lignes sans rien faire déborder.
+
+Aucune donnée, aucun texte, aucune interaction ne change.
+
 ## 2026-08-06 — La carte n'a plus qu'un seul espace d'information
 
 **L'infobulle de la carte des musées est supprimée.** Elle disait exactement ce que dit le
