@@ -619,5 +619,27 @@
     "source": "https://commons.wikimedia.org/wiki/File:Bigot1882.jpg",
     "wikidata": "https://www.wikidata.org/wiki/Q1135613",
     "regard": "gauche"
+  },
+  "Aimé Duthoit": {
+    "fichier": "/portraits/aime-duthoit.jpg",
+    "auteur": "auteur inconnu",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Aim%C3%A9_et_Louis_Duthoit_01.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q19849903",
+    "regard": "gauche",
+    "recadrage": "planche des deux frères, moitié gauche",
+    "reproduction": "Bycro"
+  },
+  "Louis Duthoit": {
+    "fichier": "/portraits/louis-duthoit.jpg",
+    "auteur": "auteur inconnu",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Aim%C3%A9_et_Louis_Duthoit_01.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q19849909",
+    "regard": "gauche",
+    "recadrage": "planche des deux frères, moitié droite",
+    "reproduction": "Bycro"
   }
 }

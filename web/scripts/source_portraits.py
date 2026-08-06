@@ -144,6 +144,48 @@ P18_NON_PORTRAIT = {
     'Q3155663': 'Israël Henriet — inscription d’éditeur sur une gravure',
 }
 
+# ─────────────────────────────────────────────────────────────────────────────
+# FICHIERS CHOISIS À LA MAIN (2026-08-06)
+#
+# Seconde route, pour les portraits que P18 ne donne pas : un fichier Commons
+# désigné nommément. Elle sert quand la fiche Wikidata n'a aucune image (Aimé
+# Duthoit) ou quand son P18 a été écarté (Louis Duthoit, dont l'image est une
+# statue de la cathédrale d'Amiens). La licence et le crédit sont lus sur
+# Commons comme pour l'autre route — rien n'est écrit à la main ici sauf le nom
+# du fichier et la raison de l'avoir choisi.
+# ─────────────────────────────────────────────────────────────────────────────
+#
+# `reproduction` dit que le crédit Commons nomme CELUI QUI A PHOTOGRAPHIÉ, non
+# l'auteur du portrait. Bycro a photographié en 2021 une planche imprimée du
+# XIXe siècle : écrire « Portrait d'Aimé Duthoit, par Bycro » lui attribuerait
+# une œuvre qui n'est pas la sienne, et vieillirait le portrait de cent
+# cinquante ans. La licence exige de le créditer — comme reproducteur.
+FICHIER_CHOISI = {
+    # Une même planche imprimée porte les deux frères, chacun sous son nom et
+    # ses dates : « Aimé Duthoit (1803-1869) » et « Louis Duthoit (1807-1874) ».
+    # Les dates d'Aimé concordent au signe près avec ce que Joconde écrit.
+    'Aimé Duthoit': {
+        'fichier': 'Aimé et Louis Duthoit 01.jpg', 'qid': 'Q19849903',
+        'recadrage': 'planche des deux frères, moitié gauche',
+        'reproduction': True,
+    },
+    'Louis Duthoit': {
+        'fichier': 'Aimé et Louis Duthoit 01.jpg', 'qid': 'Q19849909',
+        'recadrage': 'planche des deux frères, moitié droite',
+        'reproduction': True,
+    },
+}
+
+# Recadrage, en fractions (gauche, haut, droite, bas) de l'image téléchargée.
+# Une planche qui porte deux visages ne peut pas servir telle quelle : sur la
+# fiche d'Aimé, on verrait aussi Louis. On découpe donc, et on le dit. Les
+# bornes s'arrêtent avant la bande de légende imprimée : le site écrit la
+# sienne.
+RECADRAGE = {
+    'Aimé Duthoit': (0.02, 0.02, 0.42, 0.86),
+    'Louis Duthoit': (0.55, 0.02, 0.96, 0.86),
+}
+
 
 def get_json(url, essais=4):
     """Commons et Wikidata répondent HTTP 429 quand on va trop vite (rencontré le
@@ -236,6 +278,24 @@ def infos_commons(fichier, largeur=480):
     }
 
 
+def recadre(chemin, bornes):
+    """Découpe l'image en place, aux fractions données (gauche, haut, droite, bas).
+
+    Sert aux planches qui portent plusieurs visages : chacun doit pouvoir
+    illustrer sa propre fiche. L'opération est déclarée dans le manifeste, et
+    la licence d'origine reste affichée — un recadrage ne fait pas de nous
+    l'auteur de l'image.
+    """
+    from PIL import Image
+    with Image.open(chemin) as im:
+        L, H = im.size
+        g, h, d, b = bornes
+        coupe = im.crop((int(g * L), int(h * H), int(d * L), int(b * H)))
+        coupe.thumbnail((480, 480))
+        coupe.convert('RGB').save(chemin, 'JPEG', quality=88, optimize=True)
+    return os.path.getsize(chemin)
+
+
 def main():
     os.makedirs(DEST_IMG, exist_ok=True)
 
@@ -259,20 +319,33 @@ def main():
         print(f'manifeste existant : {len(manifeste)} portraits conservés '
               f'(--tout pour tout refaire)')
 
-    a_faire = {n: q for n, q in QID.items() if tout or n not in manifeste}
+    # Deux routes : le P18 de Wikidata, et le fichier désigné à la main. La
+    # seconde l'emporte quand elle existe — elle n'est écrite que là où la
+    # première ne donne rien ou donne autre chose qu'un visage.
+    a_faire = {n: ('choisi' if n in FICHIER_CHOISI else 'p18')
+               for n in list(QID) + list(FICHIER_CHOISI)
+               if tout or n not in manifeste}
     print(f'{len(a_faire)} portrait(s) à chercher\n')
-    for nom, qid in a_faire.items():
+    for nom, route in a_faire.items():
+        choix = FICHIER_CHOISI.get(nom, {})
+        qid = choix['qid'] if route == 'choisi' else QID[nom]
         try:
-            fichier = image_p18(qid)
+            if route == 'choisi':
+                fichier, pourquoi = choix['fichier'], choix.get('recadrage')
+            else:
+                fichier, pourquoi = image_p18(qid), None
             if not fichier:
                 print(f'!! {nom}: pas de P18'); continue
-            info = infos_commons(fichier)
+            info = infos_commons(fichier, largeur=1200 if nom in RECADRAGE else 480)
             ext = {'image/jpeg': 'jpg', 'image/png': 'png'}.get(info['mime'], 'jpg')
             nom_fichier = f'{slug(nom)}.{ext}'
             with urllib.request.urlopen(urllib.request.Request(info['thumburl'], headers=UA), timeout=60) as r:
                 data = r.read()
-            with open(os.path.join(DEST_IMG, nom_fichier), 'wb') as f:
+            chemin = os.path.join(DEST_IMG, nom_fichier)
+            with open(chemin, 'wb') as f:
                 f.write(data)
+            if nom in RECADRAGE:
+                data = recadre(chemin, RECADRAGE[nom])
             manifeste[nom] = {
                 'fichier': f'/portraits/{nom_fichier}',
                 'auteur': info['auteur'] or 'Auteur non précisé sur Commons',
@@ -283,13 +356,24 @@ def main():
                 # 'droite' => retourné à l'affichage pour regarder le nuage (à gauche).
                 'regard': 'droite' if nom in REGARD_DROITE else 'gauche',
             }
-            print(f'ok {nom}: {nom_fichier}  [{info["licence"]}]  {info["auteur"][:50]}')
+            # Une image recadrée n'est plus le fichier de Commons : on le dit,
+            # c'est la moindre des choses envers la licence et le lecteur.
+            if pourquoi:
+                manifeste[nom]['recadrage'] = pourquoi
+            # Le crédit Commons nomme le photographe de la reproduction, pas
+            # l'auteur du portrait : on déplace le nom pour ne pas lui prêter
+            # une œuvre du siècle précédent.
+            if choix.get('reproduction'):
+                manifeste[nom]['reproduction'] = manifeste[nom]['auteur']
+                manifeste[nom]['auteur'] = 'auteur inconnu'
+            print(f'ok {nom}: {nom_fichier}  [{info["licence"]}]  {info["auteur"][:50]}'
+                  + (f'  ({pourquoi})' if pourquoi else ''))
             time.sleep(0.4)
         except Exception as e:
             print(f'!! {nom} ({qid}): {e}')
     with open(DEST_JSON, 'w', encoding='utf-8') as f:
         json.dump(manifeste, f, ensure_ascii=False, indent=2)
-    print(f'\n{len(manifeste)}/{len(QID)} portraits -> {DEST_JSON}')
+    print(f'\n{len(manifeste)}/{len(QID) + len(FICHIER_CHOISI)} portraits -> {DEST_JSON}')
 
 
 if __name__ == '__main__':

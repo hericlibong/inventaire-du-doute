@@ -2,6 +2,61 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-06 (quinquies) — Premier retour de recherche manuelle : deux portraits sur huit
+
+Huit candidats rapportés à la main sur la liste des introuvables. **Deux intégrés, six
+refusés.** Le corpus passe à 71 portraits ; 31 artistes restent sans visage.
+
+**Aucun des six refus ne porte sur l'identité** — elle est sûre dans quatre cas sur six.
+Tous portent sur le **droit de réutilisation**, qui n'est pas établi :
+
+| Artiste | Ce qui a été trouvé | Motif du refus |
+|---|---|---|
+| Auguste Beuret | musée Rodin, inv. Ph.00791, épreuve aristotype | aucune licence publiée |
+| Charles Eugène Ensfelder | musées de Strasbourg, dessin de Paul Reiber, inv. 77.2019.0.1174 | « veuillez contacter la photothèque » |
+| Louis Hertig | Mémoire vive, Besançon, « dans son atelier » | mentions légales sans clause de réutilisation |
+| Auguste Alleaume | portrait **en vitrail** par son frère Ludovic (1917) | © du photographe seul |
+| Alexandre Clausel | blog local | aucune provenance |
+| Gustave Lancelot | même blog | aucune provenance |
+
+La règle du projet tient : **un crédit n'est pas une autorisation, un © seul n'est pas une
+licence, une image sans provenance ne s'utilise pas** — même quand elle est manifestement
+la bonne. Le cas d'Ensfelder est le plus net : le dessin porte « 1836-1876 », exactement
+les dates que Joconde écrit, et il reste inutilisable.
+
+**Ces quatre-là ne sont plus des introuvables**, et c'est le vrai gain de ce retour. Le
+portrait existe, il est identifié, il est localisé dans une institution nommée. Il ne
+manque qu'une autorisation : quatre demandes ciblées, à des interlocuteurs précis. À
+distinguer du Levier A différé sur les œuvres (792 notices, interlocuteurs inconnus) —
+ici, quatre courriers suffiraient.
+
+**Deux portraits intégrés, par une seule image.** Commons publie sous CC BY-SA 4.0 une
+planche imprimée du XIXe portant **les deux frères Duthoit côte à côte**, chacun légendé
+avec ses dates ; celles d'Aimé — 1803-1869 — sont exactement celles de Joconde. Deux
+conséquences, toutes deux nouvelles pour le mécanisme :
+
+1. **Une seconde route, le fichier choisi à la main** (`FICHIER_CHOISI`). Aucun des deux
+   frères n'était atteignable par P18 : Aimé n'a aucune image sur sa fiche, et celle de
+   Louis est la statue de la cathédrale d'Amiens, déjà écartée le matin même. La licence
+   et le crédit continuent d'être lus sur Commons ; on n'écrit à la main que le nom du
+   fichier et la raison de l'avoir choisi.
+2. **Un recadrage** (`RECADRAGE`, en fractions). Une planche à deux visages ne peut pas
+   servir telle quelle : sur la fiche d'Aimé, on verrait aussi Louis. On découpe, et le
+   manifeste le déclare.
+
+**Le crédit disait faux, et c'est le point à retenir.** La légende affichait « Portrait
+d'Aimé Duthoit, par Bycro ». Bycro est le contributeur qui a photographié la planche en
+2021 — pas l'auteur du portrait. La formule lui attribuait une œuvre qui n'est pas la
+sienne et vieillissait le portrait de cent cinquante ans. Le manifeste distingue désormais
+l'auteur du **reproducteur** : « Portrait d'Aimé Duthoit, auteur inconnu. Reproduction
+Bycro, Wikimedia Commons, CC BY-SA 4.0. » La licence exige ce crédit ; il est donné, à sa
+juste place. **Le constat de juillet se confirme : sur Commons, le crédit nomme le
+contributeur, pas l'auteur** — il est à relire chaque fois avant affichage.
+
+Les verdicts des huit candidats sont inscrits dans `data/exports/portraits_a_chercher.csv`
+(colonnes `candidate_url`, `source`, `credit`, `license`, `commentaire`, `verdict`), et le
+bilan est en tête de `docs/portraits-introuvables.md`.
+
 ## 2026-08-06 (quater) — Neuf portraits de plus, et quatre œuvres refusées
 
 Suite du chantier des profils. Quarante-deux artistes sur cent deux n'avaient pas de

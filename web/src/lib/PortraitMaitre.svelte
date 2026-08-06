@@ -45,7 +45,18 @@
 			: mention
 				? `Portrait ${de}${maitre.nom}, ${portrait.auteur}`
 				: `Portrait ${de}${maitre.nom}, par ${portrait.auteur}`;
-		return { sujet, de, licence: licenceEnFrancais(portrait.licence), source: portrait.source };
+		// Quand le crédit Commons nomme celui qui a PHOTOGRAPHIÉ le portrait et
+		// non celui qui l'a fait, son nom se dit à part. Écrire « Portrait d'Aimé
+		// Duthoit, par Bycro » attribuerait à un contributeur de 2021 une
+		// photographie du XIXe siècle. La licence CC BY-SA exige ce crédit : il
+		// est donné, à sa juste place.
+		return {
+			sujet,
+			de,
+			reproduction: portrait.reproduction ?? '',
+			licence: licenceEnFrancais(portrait.licence),
+			source: portrait.source
+		};
 	});
 </script>
 
@@ -62,6 +73,7 @@
 		/>
 		<figcaption class="portrait-legende">
 			{legende.sujet}.
+			{#if legende.reproduction}Reproduction&nbsp;{legende.reproduction},{/if}
 			{#if legende.source}<a href={legende.source} target="_blank" rel="noopener">Wikimedia Commons</a>{:else}Wikimedia Commons{/if},
 			{legende.licence}.
 		</figcaption>
