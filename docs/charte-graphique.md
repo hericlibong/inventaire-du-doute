@@ -210,3 +210,88 @@ Petites étapes, validation à chaque palier :
 - **Règle d'or** : un dossier ajoute une palette sémantique et de la copie
   éditoriale, mais **réutilise le cadre et les primitives** — jamais de reskin par
   dossier.
+
+## 8. Patron « carte + panneau » — arrêté le 2026-08-06
+
+**À reprendre tel quel dans les prochains volets.** Ce patron a été mis au point sur
+la carte des musées d'une fiche d'artiste (`CarteMaitre.svelte`) ; il vaut pour toute
+carte qui répond à la question « où ». Ce qui suit n'est pas un récit de ce qui a été
+fait, c'est la règle à appliquer.
+
+### Ce que la carte dit, et ne dit pas
+- Une carte de ce projet est un **repère géographique**, jamais un graphique de
+  répartition et jamais une comparaison entre lieux. Un point = un lieu, présence.
+- **Tous les points ont la même taille.** Une taille proportionnelle rendrait un
+  « gros cercle » incomparable d'une fiche à l'autre et gonflerait les petits volumes.
+  Le combien se lit dans le panneau, jamais dans l'aire d'un cercle.
+- **La carte existe même à un seul point.** Un point unique situe aussi sûrement que
+  vingt ; l'échelle ne bouge pas, la projection est calée sur le fond, jamais sur les
+  points.
+- Le fond (régions, contours) est une **illustration** : aplat quasi nul, filet gris
+  pâle, aucune donnée, aucune tuile en ligne.
+- Les points qui se recouvrent sont **écartés au plus près de leur vraie position**
+  (`geo.js`, `ecarterPoints`) : aucun point n'en cache un autre.
+
+### Un seul espace d'information
+- **Pas d'infobulle.** Rien ne suit le pointeur, rien ne se superpose à la carte. Une
+  bulle s'efface au premier mouvement, recouvre le titre, et n'existe pas au toucher.
+- Le **panneau au flanc** porte tout : le compte, la ventilation, les liens, la
+  fermeture. C'est le seul endroit où l'information s'écrit.
+- **Le survol n'informe pas, il annonce.** Il dit « ce point se choisit », rien d'autre.
+
+### Les quatre états du point
+| État | Ce qu'on voit |
+|---|---|
+| repos | opacité 0,82, contour blanc 1,1 px |
+| survol | ×1,5, contour 2 px, pleine opacité, curseur `pointer` ; les autres points tombent à 0,55 |
+| focus clavier | **exactement le même retour**, plus l'anneau de focus (2 px encre, offset 3 px) |
+| choisi | cerne d'encre 2,4 px, pleine opacité — le seul état **persistant** |
+
+- L'agrandissement passe par une **transformation** (`transform-box: fill-box`,
+  `transform-origin: center`), pas par le rayon : `r` s'anime irrégulièrement d'un
+  navigateur à l'autre.
+- Transition 0,12 s, supprimée sous `prefers-reduced-motion`.
+- L'atténuation des autres points reste **légère** : elle détache le point visé sans
+  effacer la répartition, qui est le sujet de la carte.
+
+### Le panneau
+- **Deux zones.** En-tête sur aplat `--surface-entete` pleine largeur (nom en gras,
+  lieu dessous en `--taille-xs` encre douce), filet dessous ; corps sur
+  `--surface-carte`. Le retrait appartient à chaque zone, pas au panneau —
+  `overflow: hidden` fait suivre les angles arrondis à l'aplat.
+- **Prévoir les noms longs** : `overflow-wrap: anywhere` dans l'en-tête (le plus long
+  du corpus fait 84 signes).
+- Le gris de l'en-tête est **neutre**. Jamais une couleur de la boîte de pigments :
+  elle appartient aux catégories, elle ne décore rien.
+- Ordre du corps : le compte · la ventilation (triée par valeur, pastille de la
+  couleur stable) · l'action · le lien externe éventuel · « Fermer ».
+
+### Le comportement
+- Le panneau s'ouvre au **clic, à Entrée, à Espace et au toucher** — un point est
+  `role="button"`, `tabindex="0"`, avec un `aria-label` qui dit d'avance tout ce que
+  le panneau contiendra.
+- **Choisir n'est pas un bascule** : choisir deux fois le même lieu ne referme pas.
+  Au toucher, un second appui involontaire effaçait ce qu'on venait d'ouvrir.
+- Choisir un autre lieu **remplace** le contenu. Seul « Fermer » ferme.
+- Changer d'entité (d'artiste, de dossier) referme le panneau : une clé de lieu ne
+  vaut que dans le contexte où elle a été choisie.
+- **Sans sélection**, le flanc porte deux lignes : ce que représente un point, puis
+  l'invitation à en choisir un. Jamais un mode d'emploi du survol.
+- Sur petit écran (≤ 720 px), la grille se replie et **le panneau passe sous la carte**.
+
+### Le vocabulaire
+- Côté lecteur, on parle d'**œuvres**, jamais de notices (É1, 2026-08-03). L'unité de
+  calcul ne change pas pour autant.
+- Le titre de la vue pose une question de lieu : « Où sont conservées ces œuvres ? ».
+- Les intitulés d'action s'accordent : « Voir l'œuvre conservée dans ce musée » /
+  « Voir les N œuvres conservées dans ce musée ».
+
+### Les positions, côté données
+- **Une position par lieu, valable partout.** Joconde publie parfois plusieurs
+  positions sous le même code : on regroupe les positions voisines (< 15 km), on garde
+  la grappe qui porte le plus de notices, puis la plus fréquente dedans
+  (`build_artistes.coord_du_musee`). Jamais « la première rencontrée » : le lieu se
+  mettrait à changer de place d'une fiche à l'autre.
+- **Contrôler avant de publier** : `uv run python src/audit_geoloc.py` compare chaque
+  position au centre de sa commune (référence de contrôle, jamais de données). À
+  lancer après chaque lot.
