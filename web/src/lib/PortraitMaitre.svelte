@@ -81,15 +81,12 @@
 			{#if legende.source}<a href={legende.source} target="_blank" rel="noopener">{legende.sourceNom}</a>{:else}{legende.sourceNom}{/if},
 			{legende.licence}.
 		</figcaption>
-	{:else}
-		<svg viewBox="0 0 100 130" class="silhouette" role="img" aria-label="Pas de portrait fiable pour {maitre.nom}">
-			<circle cx="50" cy="48" r="24" fill="#cdc3b2" />
-			<path d="M14 130 Q14 84 50 84 Q86 84 86 130 Z" fill="#cdc3b2" />
-		</svg>
-		<figcaption class="portrait-legende">
-			<em>Pas de portrait fiable disponible pour {maitre.nom}.</em>
-		</figcaption>
 	{/if}
+	<!-- Sans portrait, ce composant ne rend RIEN : c'est le bandeau qui retire la
+	     colonne et donne la place au texte (2026-08-06). La silhouette de
+	     remplacement et la mention « Pas de portrait fiable disponible » ont été
+	     supprimées — on ne comble pas une lacune par un ornement, et on ne la
+	     commente pas non plus. -->
 </figure>
 
 <style>
@@ -102,8 +99,7 @@
 		/* pas de cadre : l'image flotte, posée dans la marge du texte */
 	}
 
-	.visage,
-	.silhouette {
+	.visage {
 		/* Vignette de gabarit FIXE : les portraits Commons ont des ratios variés ;
 		   sans hauteur figée, chaque maître change la hauteur du header et fait
 		   « sauter » la page au changement. Boîte constante + object-fit: contain =

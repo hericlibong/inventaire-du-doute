@@ -1,8 +1,8 @@
 # Les artistes sans portrait
 
 État au **2026-08-06 (mis à jour le soir)**. **Vingt-neuf** artistes sur cent deux n'ont
-pas de portrait dans l'application. Leur fiche affiche le repli « Pas de portrait fiable
-disponible pour X » — jamais une image approximative.
+pas de portrait dans l'application. **Leur fiche n'affiche rien à cet emplacement** : la
+vignette disparaît et le texte prend la place (décision du 2026-08-06, ci-dessous).
 
 ## Premier retour de recherche manuelle (2026-08-06)
 

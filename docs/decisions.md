@@ -2,6 +2,41 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-06 (octies) — Sans portrait, on ne met rien (décision utilisateur)
+
+Vingt-neuf artistes sur cent deux n'ont pas de visage. Leur fiche affichait jusqu'ici une
+silhouette dessinée et la mention « Pas de portrait fiable disponible pour X ». **Les deux
+sont supprimées.** La vignette disparaît, le bloc de texte prend la largeur, et rien ne
+signale l'absence.
+
+**Deux remplacements ont été examinés et écartés.**
+
+1. **Une image à la place** — silhouette mieux dessinée, portrait d'homme de profil, ou
+   une œuvre libre de droits de l'artiste. Écartée : sur la fiche d'un artiste dont les
+   œuvres ne lui sont justement **pas** directement attribuées, une image posée à
+   l'emplacement du visage affirme ce que tout le texte refuse d'affirmer. Le lecteur lit
+   cet endroit comme « voici lui ». Cela vaut pour les vingt-neuf fiches à la fois, et
+   contredit la première règle du projet.
+2. **Une phrase à la place** — « On ne connaît aucun portrait de X ». Essayée sur une
+   fiche témoin, **rejetée par l'utilisateur** : l'absence n'a pas à être commentée. Le
+   projet ne s'excuse pas de ce qu'il n'a pas ; il montre ce qu'il a. La table
+   `portraits-absents.js` écrite pour la porter a été supprimée.
+
+**Ce qui a été fait.** Le bandeau retire la colonne de portrait quand il n'y en a pas et
+donne au texte la largeur des deux colonnes réunies : retirer l'image sans élargir la
+colonne aurait remplacé un ornement par un blanc. `PortraitMaitre.svelte` ne rend plus
+rien sans portrait — sa silhouette SVG et sa légende de repli sont supprimées.
+
+**Effet de bord constaté, favorable.** Sans vignette, le nom de l'artiste s'aligne avec
+les onglets et avec le titre du graphique : la fiche a une seule ligne de départ. Avec
+portrait, le nom reste décalé de seize rem alors que tout ce qui suit est calé à gauche.
+**Le titre saute donc d'une fiche à l'autre** selon qu'il y a ou non un portrait. Accepté
+en l'état ; l'alignement du bandeau reste à reprendre, il relève de la composition, pas
+de ce chantier.
+
+Les motifs d'absence restent documentés dans `docs/portraits-introuvables.md` et dans
+`data/exports/portraits_a_chercher.csv` — ils servent la recherche, pas l'affichage.
+
 ## 2026-08-06 (septies) — Ensfelder : une source qui se consulte mais ne se télécharge pas
 
 Le seul portrait connu de Charles Eugène Ensfelder est hébergé sur Geneanet, déposé par un

@@ -123,6 +123,11 @@ pas un catalogue abstrait. Chaque primitive reste agnostique du dossier.
      visuel, et conclusion que le graphique vient ensuite détailler ;
   3. **récit chiffré** en corps de lecture (volume, part, musées) ;
   4. **repère méthodologique** en petit corps atténué, après un filet fin.
+  **Sans portrait, la colonne de gauche n'existe pas** (2026-08-06) : le texte prend la
+  largeur des deux colonnes réunies. Ni image de remplacement, ni mention d'absence —
+  une image posée à l'emplacement du visage affirmerait, sur la fiche d'un artiste dont
+  les œuvres ne lui sont pas directement attribuées, ce que le texte refuse d'affirmer ;
+  et l'absence n'a pas à être commentée. Vingt-neuf fiches sur cent deux sont dans ce cas.
   Les nombres sont **intégrés aux phrases** : graisse 600 + `--accent-cobalt` + chiffres
   elzéviriens, jamais plus grands que le texte. Phrases **générées** (`artistes.json` +
   champ `citation` de `familles-public.js`) : égalités citées toutes, ordre `ORDRE_FAMILLES` ;

@@ -34,10 +34,17 @@
 	const pctDoute = $derived(totalNom ? Math.round((maitre.doute / totalNom) * 100) : 0);
 </script>
 
-<div class="bandeau">
-	<div class="bandeau-portrait">
-		<PortraitMaitre {maitre} {portrait} />
-	</div>
+<!-- Sans portrait, la vignette disparaît et le texte prend la largeur : ni image de
+     remplacement, ni mention d'absence. Décision du 2026-08-06 — une silhouette
+     dessinée ou une œuvre posée à l'emplacement du visage affirmerait, sur la fiche
+     d'un artiste dont les œuvres ne lui sont justement PAS directement attribuées,
+     ce que tout le texte refuse d'affirmer. -->
+<div class="bandeau" class:sans-portrait={!portrait}>
+	{#if portrait}
+		<div class="bandeau-portrait">
+			<PortraitMaitre {maitre} {portrait} />
+		</div>
+	{/if}
 
 	<div class="bandeau-texte">
 		<!-- Pont de nom (2026-07-22) : le titre porte le nom courant, suivi du nom
@@ -83,6 +90,13 @@
 		gap: var(--espace-5);
 		align-items: start;
 		margin-top: var(--espace-2);
+	}
+
+	/* Sans portrait, le texte occupe la largeur des deux colonnes réunies
+	   (16 + 34 + la gouttière) : la composition garde son empreinte, la fiche ne
+	   saute pas d'un artiste à l'autre, et aucune colonne ne reste vide. */
+	.bandeau.sans-portrait {
+		grid-template-columns: minmax(0, 50rem);
 	}
 
 	.bandeau-portrait {
