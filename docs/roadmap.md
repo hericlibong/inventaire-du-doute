@@ -123,12 +123,11 @@ l'accueil en dernier parce qu'il résume ce que les autres pages auront fixé.
       ramené à un paragraphe ; la section chiffrée refondue (bandeau + graphique en trois
       zones désignables, voir decisions.md 2026-08-04) ; le glossaire détaché ; le sommaire
       par ancres, devenu un composant partagé avec la page Méthode (2026-08-04 bis).
-      **Restent en attente de validation de l'utilisateur** : « la hauteur des barres »
-      (faux sur mobile, où elles sont horizontales — « la taille » couvrirait les deux) ;
-      l'alignement du bandeau de titre, aujourd'hui au bord gauche alors que le contenu
-      démarre après le rail (même composition que la page Méthode, à changer sur les deux
-      pages ou sur aucune) ; les trois en-têtes de zone du glossaire, identiques à celles
-      du graphique.
+      **Les trois points en attente sont tranchés le 2026-08-05** (decisions.md du jour) :
+      la précaution sous le graphique ne nomme plus de direction de l'écran ; le bandeau de
+      titre entre dans la colonne de contenu, sur cette page ET sur Méthode ; le glossaire
+      garde les en-têtes du graphique et porte l'annotation de chaque zone.
+      **Reste à faire** : la relecture de fond des textes de la page, qui relève de **C1**.
 - [ ] **É3 — Revoir les textes de l'exploration des artistes.**
 - [ ] **É4 — Revoir la page Méthode.**
 - [ ] **É5 — Régler les questions éditoriales transversales**, notamment le titre du volume.
