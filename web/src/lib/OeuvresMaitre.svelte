@@ -279,17 +279,27 @@
 				{#each pageOeuvres as o (o.reference)}
 					<li class="entree">
 						{#if o.image}
-							<!-- Reproduction ouverte (Wikimedia Commons), copie locale. L'image
-							     occupe toute la vignette (même gabarit que le placeholder), en
-							     object-fit: contain — proportions gardées, jamais rognée ni
-							     déformée. Aucun texte par-dessus : la légende est UNE ligne
-							     discrète sous la vignette. -->
+							<!-- Reproduction ouverte, copie locale. L'image occupe toute la
+							     vignette (même gabarit que le placeholder), en object-fit:
+							     contain — proportions gardées, jamais rognée ni déformée. Aucun
+							     texte par-dessus : la légende est UNE ligne discrète sous la
+							     vignette.
+							     Deux provenances depuis le 2026-08-06 : Wikimedia Commons, qui
+							     montre l'exemplaire même décrit par la notice ; et Gallica, qui
+							     ne peut montrer QU'UN AUTRE EXEMPLAIRE du même tirage — une
+							     planche d'Épinal a été imprimée à des milliers d'exemplaires,
+							     le musée conserve le sien et la BnF le sien. La réserve est
+							     écrite sous l'image, jamais sous-entendue. -->
+							{@const bnf = o.image.source_type === 'gallica_bnf'}
 							<figure class="media-figure">
-								<a class="media media-image" href={o.image.source} target="_blank" rel="noopener" title="Voir le fichier sur Wikimedia Commons">
-									<img src="{base}/{o.image.url}" alt="Reproduction : {o.titre ?? 'œuvre'}" loading="lazy" />
+								<a class="media media-image" href={o.image.source} target="_blank" rel="noopener" title={bnf ? 'Voir le document sur Gallica' : 'Voir le fichier sur Wikimedia Commons'}>
+									<img src="{base}/{o.image.url}" alt={bnf ? `Autre exemplaire du même tirage : ${o.titre ?? 'œuvre'}` : `Reproduction : ${o.titre ?? 'œuvre'}`} loading="lazy" />
 								</a>
 								<figcaption class="credit">
-									{#if o.image.licence.startsWith('CC BY')}
+									{#if bnf}
+										<span class="credit-reserve">Autre exemplaire du même tirage</span>
+										Domaine public · source <a href={o.image.source} target="_blank" rel="noopener">Gallica&nbsp;(BnF)</a>
+									{:else if o.image.licence.startsWith('CC BY')}
 										{#if o.image.creator}<span class="credit-auteur" title={o.image.creator}>{o.image.creator}</span> ·&nbsp;{/if}<a href={o.image.licence_url || o.image.source} target="_blank" rel="noopener">{o.image.licence}</a> · <a href={o.image.source} target="_blank" rel="noopener">Wikimedia&nbsp;Commons</a>
 									{:else}
 										{o.image.licence === 'CC0' ? 'CC0' : 'Domaine public'} · source <a href={o.image.source} target="_blank" rel="noopener">Wikimedia&nbsp;Commons</a>
@@ -651,6 +661,14 @@
 		font-size: 0.62rem;
 		line-height: 1.4;
 		color: var(--couleur-encre-douce);
+	}
+
+	/* La réserve passe AVANT le crédit et sur sa propre ligne : elle dit ce que
+	   l'image est, et cela prime sur d'où elle vient. Une planche d'Épinal existe
+	   en milliers d'exemplaires ; celui de la BnF n'est pas celui du musée. */
+	.credit-reserve {
+		display: block;
+		font-style: italic;
 	}
 
 	.credit a {

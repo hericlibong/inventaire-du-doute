@@ -30,6 +30,7 @@ from PIL import Image
 from config import DOSSIER_EXPORTS, RACINE
 
 CORRESP = DOSSIER_EXPORTS / "commons_correspondances.json"
+CORRESP_GALLICA = DOSSIER_EXPORTS / "gallica_correspondances.json"
 DOSSIER_OEUVRES = DOSSIER_EXPORTS / "web" / "oeuvres"
 DOSSIER_IMG = DOSSIER_EXPORTS / "web" / "oeuvres_img"
 INDEX = DOSSIER_EXPORTS / "web" / "images_index.json"
@@ -152,10 +153,65 @@ def main() -> None:
             "source": r["source_page_url"],
             "verifie_le": r["verified_at"],
         }
+    ajouter_gallica(index)
+
     INDEX.write_text(json.dumps(index, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"{len(index)} entrées → {INDEX.name} ; {telecharges} nouvelles vignettes.")
 
     fusionner_dans_oeuvres(index)
+
+
+def ajouter_gallica(index: dict) -> int:
+    """Ajoute les estampes populaires trouvées sur Gallica (voir build_gallica.py).
+
+    Ces images ne montrent PAS la feuille décrite par la notice : une planche
+    d'Épinal a été tirée à des milliers d'exemplaires, le musée conserve le sien
+    et la BnF le sien. `exemplaire_autre` porte cette réserve jusqu'à la légende,
+    qui l'écrit sous l'image. Sans cette mention, on ferait passer un exemplaire
+    pour un autre.
+    """
+    if not CORRESP_GALLICA.exists():
+        return 0
+    recs = json.loads(CORRESP_GALLICA.read_text(encoding="utf-8"))
+    retenus = [r for r in recs if r.get("etat") == "exacte" and r.get("image_url")]
+    if not retenus:
+        return 0
+    print(f"{len(retenus)} estampes retenues sur Gallica.")
+    DOSSIER_IMG.mkdir(parents=True, exist_ok=True)
+    ajoutees = 0
+    for r in sorted(retenus, key=lambda x: x["reference_joconde"]):
+        ref = r["reference_joconde"]
+        # Une reproduction Commons, qui montre l'exemplaire même du musée quand
+        # elle existe, l'emporte toujours sur un autre exemplaire.
+        if ref in index:
+            continue
+        sortie = DOSSIER_IMG / f"{ref}.jpg"
+        if not sortie.exists():
+            try:
+                optimiser(_get(r["image_url"]), sortie)
+                ajoutees += 1
+                if ajoutees % 10 == 0:
+                    print(f"    {ajoutees} vignettes Gallica", flush=True)
+                time.sleep(PAUSE)
+            except Exception as ex:
+                print(f"    ⚠ {ref} : {str(ex)[:80]}")
+                continue
+        index[ref] = {
+            "statut": "open",
+            "source_type": "gallica_bnf",
+            "url": f"oeuvres/{ref}.jpg",
+            "credit": "Bibliothèque nationale de France",
+            "creator": "",
+            "licence": "domaine public",
+            "licence_url": "",
+            "source": r["ark"],
+            # La réserve, portée jusqu'à l'écran.
+            "exemplaire_autre": True,
+            "titre_source": r.get("titre_gallica", ""),
+            "verifie_le": str(date.today()),
+        }
+    print(f"{ajoutees} nouvelles vignettes Gallica.")
+    return ajoutees
 
 
 def fusionner_dans_oeuvres(index: dict) -> int:

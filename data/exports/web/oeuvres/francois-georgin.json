@@ -200,7 +200,20 @@
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
-   "extrait": "Georgin François (1801-1863) (graveur, attribué à)"
+   "extrait": "Georgin François (1801-1863) (graveur, attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "gallica_bnf",
+    "url": "oeuvres/M0537040571.jpg",
+    "credit": "Bibliothèque nationale de France",
+    "creator": "",
+    "licence": "domaine public",
+    "licence_url": "",
+    "source": "https://gallica.bnf.fr/ark:/12148/btv1b69380947",
+    "exemplaire_autre": true,
+    "titre_source": "Les catastrophes et la fin tragique du petit Touche-à-tout : [histoire enfantine] : [estampe]",
+    "verifie_le": "2026-08-06"
+   }
   },
   {
    "reference": "M0537047043",
@@ -236,7 +249,20 @@
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
-   "extrait": "Georgin François (1801-1863) (graveur, attribué à)"
+   "extrait": "Georgin François (1801-1863) (graveur, attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "gallica_bnf",
+    "url": "oeuvres/M0537021010.jpg",
+    "credit": "Bibliothèque nationale de France",
+    "creator": "",
+    "licence": "domaine public",
+    "licence_url": "",
+    "source": "https://gallica.bnf.fr/ark:/12148/btv1b55002026w",
+    "exemplaire_autre": true,
+    "titre_source": "Bataille de Waterloo : [estampe]",
+    "verifie_le": "2026-08-06"
+   }
   },
   {
    "reference": "M0537008042",
@@ -254,7 +280,20 @@
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
-   "extrait": "Georgin François (1801-1863) (graveur, attribué à)"
+   "extrait": "Georgin François (1801-1863) (graveur, attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "gallica_bnf",
+    "url": "oeuvres/M0537007752.jpg",
+    "credit": "Bibliothèque nationale de France",
+    "creator": "",
+    "licence": "domaine public",
+    "licence_url": "",
+    "source": "https://gallica.bnf.fr/ark:/12148/btv1b69379355",
+    "exemplaire_autre": true,
+    "titre_source": "Le moulin merveilleux : [estampe] ([Tirage 1876])",
+    "verifie_le": "2026-08-06"
+   }
   },
   {
    "reference": "M0537003354",
@@ -263,7 +302,20 @@
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
-   "extrait": "Georgin François (graveur, attribué à)"
+   "extrait": "Georgin François (graveur, attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "gallica_bnf",
+    "url": "oeuvres/M0537003354.jpg",
+    "credit": "Bibliothèque nationale de France",
+    "creator": "",
+    "licence": "domaine public",
+    "licence_url": "",
+    "source": "https://gallica.bnf.fr/ark:/12148/btv1b69379266",
+    "exemplaire_autre": true,
+    "titre_source": "Bataille de Fleurus : [estampe]",
+    "verifie_le": "2026-08-06"
+   }
   },
   {
    "reference": "M0537007836",
@@ -272,7 +324,20 @@
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
-   "extrait": "Georgin François (1801-1863) (graveur, attribué à)"
+   "extrait": "Georgin François (1801-1863) (graveur, attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "gallica_bnf",
+    "url": "oeuvres/M0537007836.jpg",
+    "credit": "Bibliothèque nationale de France",
+    "creator": "",
+    "licence": "domaine public",
+    "licence_url": "",
+    "source": "https://gallica.bnf.fr/ark:/12148/btv1b550019996",
+    "exemplaire_autre": true,
+    "titre_source": "Le monde renversé (IIe planche) : [estampe]",
+    "verifie_le": "2026-08-06"
+   }
   },
   {
    "reference": "M0537003401",
@@ -290,7 +355,20 @@
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
-   "extrait": "Georgin François (1801-1863) (graveur, attribué à)"
+   "extrait": "Georgin François (1801-1863) (graveur, attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "gallica_bnf",
+    "url": "oeuvres/M0537003399.jpg",
+    "credit": "Bibliothèque nationale de France",
+    "creator": "",
+    "licence": "domaine public",
+    "licence_url": "",
+    "source": "https://gallica.bnf.fr/ark:/12148/btv1b54000984z",
+    "exemplaire_autre": true,
+    "titre_source": "Entrée Des Français En Belgique : [estampe]",
+    "verifie_le": "2026-08-06"
+   }
   },
   {
    "reference": "M0537047044",
@@ -362,7 +440,20 @@
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
-   "extrait": "Georgin François (1801-1863) (graveur, attribué à)"
+   "extrait": "Georgin François (1801-1863) (graveur, attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "gallica_bnf",
+    "url": "oeuvres/M0537003810.jpg",
+    "credit": "Bibliothèque nationale de France",
+    "creator": "",
+    "licence": "domaine public",
+    "licence_url": "",
+    "source": "https://gallica.bnf.fr/ark:/12148/btv1b550019655",
+    "exemplaire_autre": true,
+    "titre_source": "Napoléon à Montereau : [estampe]",
+    "verifie_le": "2026-08-06"
+   }
   },
   {
    "reference": "M0537035976",
@@ -380,7 +471,20 @@
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
-   "extrait": "Georgin François (1801-1863) (graveur, attribué à)"
+   "extrait": "Georgin François (1801-1863) (graveur, attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "gallica_bnf",
+    "url": "oeuvres/M0537003347.jpg",
+    "credit": "Bibliothèque nationale de France",
+    "creator": "",
+    "licence": "domaine public",
+    "licence_url": "",
+    "source": "https://gallica.bnf.fr/ark:/12148/btv1b55002033z",
+    "exemplaire_autre": true,
+    "titre_source": "Gloire nationale. Napoléon : [estampe] / Georgin del. ; J.-B. Thiébault sc.",
+    "verifie_le": "2026-08-06"
+   }
   },
   {
    "reference": "M0537003732",

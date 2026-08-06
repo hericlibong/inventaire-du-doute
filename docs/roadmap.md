@@ -364,7 +364,20 @@ et préparation SEULEMENT (front non touché, aucune image téléchargée à ce 
       l'Image d'Épinal en tête, 519 œuvres sans reproduction — relèvent de l'imagerie
       populaire, quasi absente de Wikidata. La suite passe par les bibliothèques numériques
       (Gallica) et les collections ouvertes de musées.
-- [ ] **Phase 4, temps 2 : Gallica et les collections ouvertes** — EN COURS.
+- [x] **Phase 4, temps 2 : Gallica** (2026-08-06) — `src/build_gallica.py`. Périmètre : les
+      **355 œuvres sans image dont Joconde nomme Pellerin comme éditeur**, c'est-à-dire
+      l'imagerie populaire, seule matière que Gallica puisse rendre ici.
+      **14 exactes, 0 candidate, 255 refusées, 86 introuvables** → **206 œuvres illustrées**.
+      Ces images montrent **un autre exemplaire du même tirage**, jamais la feuille décrite
+      par la notice : la mention est écrite sous l'image. Premier motif de refus : le musée
+      conserve plusieurs notices du même titre, l'exemplaire visé serait indéterminé.
+      Les quatorze ont été contrôlées à l'œil ; toutes portent la mention Pellerin imprimée.
+      États normalisés `exacte / candidate / refusee / introuvable` dans
+      `gallica_correspondances.{json,csv}`.
+- [ ] **Phase 4, temps 3 : les collections ouvertes de musées** — non ouvert. Le plus gros
+      gisement reste **le Louvre, 2 861 œuvres sans image** (dont les 244 dessins de Charles
+      Normand). L'audit POP les classait « soumis à autorisation », mais il portait sur les
+      crédits POP, pas sur `collections.louvre.fr` : à vérifier avant de conclure.
 - Réserve : les autres statuts (159 exacts sans image, 47 candidats inventaire faibles, 792
   `unknown` POP / Levier A) restent hors affichage — matière pour un prochain lot si on le décide.
 

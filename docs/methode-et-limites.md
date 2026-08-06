@@ -88,7 +88,7 @@ Joconde, domaine public, créditées sous l'image.
   C'est un ordre d'affichage, jamais une hiérarchie de doute
   (decisions.md, 2026-07-29).
 
-## Les reproductions d'œuvres (Wikimedia Commons)
+## Les reproductions d'œuvres (Wikimedia Commons, Gallica)
 
 Une reproduction n'est affichée que si sa réutilisation est **explicitement
 permise** et si elle est rattachée **avec certitude** à la notice.
@@ -99,8 +99,18 @@ permise** et si elle est rattachée **avec certitude** à la notice.
 - **D'où viennent celles qui sont montrées ?** De **Wikimedia Commons**, en ne
   retenant que les fichiers sous **domaine public, CC0, CC BY ou CC BY-SA**. Le
   rattachement se fait par l'**identifiant Joconde** (via Wikidata), jamais par
-  une ressemblance de titre ou de musée. **184 œuvres** sur les 3 668 en ont une
-  à ce jour (bilan : `data/exports/images_bilan.json`).
+  une ressemblance de titre ou de musée. **192 œuvres** en ont une à ce jour
+  (bilan : `data/exports/images_bilan.json`).
+- **Quatorze estampes populaires viennent de Gallica**, et elles portent une
+  réserve écrite sous l'image : **« autre exemplaire du même tirage »**. Une
+  planche d'Épinal a été imprimée à des milliers d'exemplaires ; le musée
+  conserve le sien, la Bibliothèque nationale le sien — souvent reconnaissable à
+  son tampon de dépôt légal. Ce n'est donc pas la feuille décrite par la notice,
+  et l'application ne le laisse pas croire. Le rattachement exige le titre
+  inscrit **et** l'éditeur Pellerin **et** des dates compatibles ; **si le musée
+  conserve plusieurs notices du même titre, aucune image n'est affichée** —
+  l'exemplaire visé serait indéterminé. Les dimensions et la technique varient
+  normalement d'un exemplaire à l'autre : elles ne servent pas de preuve.
 - L'appariement par **numéro d'inventaire** a été tenté puis écarté : recoupé
   avec les dimensions relevées sur Wikidata, il n'a produit aucune
   correspondance assez solide — mais il a évité d'afficher 162 fausses

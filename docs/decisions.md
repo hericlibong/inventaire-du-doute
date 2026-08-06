@@ -2,6 +2,41 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-06 (decies) — Gallica : montrer un autre exemplaire, et le dire
+
+Commons épuisé, la phase 4 se poursuit sur **Gallica**, qui conserve le dépôt légal des
+planches Pellerin et les publie en domaine public. **Quatorze estampes intégrées** ;
+206 œuvres illustrées au total.
+
+**Ce que cette source peut dire, et ce qu'elle ne peut pas.** Une planche d'Épinal a été
+tirée à des milliers d'exemplaires. Le musée décrit **le sien**, Gallica montre **celui de
+la BnF** — son tampon de dépôt légal est souvent visible sur l'image. Ce n'est donc jamais
+la reproduction de la feuille décrite par la notice.
+
+**Décision (utilisateur) : on affiche, et on écrit ce que c'est.** Sous chaque image de
+cette provenance, en italique et avant le crédit : **« Autre exemplaire du même tirage »**,
+puis « Domaine public · source Gallica (BnF) ». Sans cette mention, on ferait passer un
+exemplaire pour un autre.
+
+**Règles d'appariement** (`src/build_gallica.py`) :
+- le titre inscrit doit se retrouver dans la notice Gallica, sur forme normalisée ;
+- **l'éditeur Pellerin doit être nommé des deux côtés** ;
+- la notice Gallica doit être une **estampe**, pas un livre sur l'imagerie ;
+- les dates, quand les deux les portent, doivent concorder à deux ans près ;
+- **si le musée conserve plusieurs notices du même titre, on n'apparie pas** :
+  l'exemplaire visé serait indéterminé. C'est le premier motif de refus, 255 cas.
+- Les **dimensions et la technique ne servent pas de preuve** : elles divergent
+  normalement d'un exemplaire à l'autre (marges rognées ; « lithographie » ici,
+  « gravure sur bois » là). S'en servir aurait rejeté des correspondances justes.
+
+**Bilan sur 355 œuvres Pellerin sans image** : 14 exactes, 0 candidate, 255 refusées,
+86 introuvables. Les titres néerlandais du musée de l'Image n'ont jamais de correspondance :
+Gallica n'a que les éditions françaises.
+
+**Les quatorze ont été regardées une par une.** Toutes portent, imprimée sur la planche,
+la mention « De la fabrique de Pellerin, imprimeur-libraire, à Épinal » ou « Imagerie
+d'Épinal n° … » — la confirmation est **dans l'image**, comme pour le portrait de Clausel.
+
 ## 2026-08-06 (nonies) — Commons est épuisé pour ce corpus
 
 Reprise de la recherche d'images d'œuvres (phase 4). Premier constat : la recherche de

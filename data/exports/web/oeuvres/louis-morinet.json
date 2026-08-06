@@ -1096,7 +1096,20 @@
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
-   "extrait": "Morinet Louis Georges Albert (1863-1926) (dessinateur, attribué à)"
+   "extrait": "Morinet Louis Georges Albert (1863-1926) (dessinateur, attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "gallica_bnf",
+    "url": "oeuvres/M0537039148.jpg",
+    "credit": "Bibliothèque nationale de France",
+    "creator": "",
+    "licence": "domaine public",
+    "licence_url": "",
+    "source": "https://gallica.bnf.fr/ark:/12148/btv1b55001711j",
+    "exemplaire_autre": true,
+    "titre_source": "Moyennes constructions. Série de guerre. N° 1, Les Zeppelins sur Paris : [estampe]",
+    "verifie_le": "2026-08-06"
+   }
   },
   {
    "reference": "M0537029222",
@@ -1474,7 +1487,20 @@
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
-   "extrait": "Morinet Louis Georges Albert (1863-1926) (dessinateur, attribué à)"
+   "extrait": "Morinet Louis Georges Albert (1863-1926) (dessinateur, attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "gallica_bnf",
+    "url": "oeuvres/M0537004358.jpg",
+    "credit": "Bibliothèque nationale de France",
+    "creator": "",
+    "licence": "domaine public",
+    "licence_url": "",
+    "source": "https://gallica.bnf.fr/ark:/12148/btv1b550018489",
+    "exemplaire_autre": true,
+    "titre_source": "Imagerie d'Epinal. N° 2000, Personnages à aspect complet : genre assimilé à grandes constructions. Infanterie française à la revue : [estampe]",
+    "verifie_le": "2026-08-06"
+   }
   },
   {
    "reference": "M0537072640",
