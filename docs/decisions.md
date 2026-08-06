@@ -2,6 +2,67 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-06 (ter) — Les 39 artistes du lot 2 ont leur ligne de repérage
+
+C4 est soldée : les 102 artistes du volume portent désormais la phrase qui les situe sous
+leur nom. Restait le lot entré le 2026-08-02, dont aucun n'en avait.
+
+**Ces 39-là ne ressemblent pas aux 63 premiers.** Ce ne sont pas des maîtres anciens
+documentés par des siècles de littérature, mais pour l'essentiel des figures locales du
+XIXe : l'imagerie d'Épinal (Pinot, Georgin, Morinet, Ensfelder, Hennault), la manufacture
+de Sèvres (Leloy, Willermet), les sculpteurs d'Amiens (les frères Duthoit), le cercle de
+Rodin (Beuret, Roche), celui de Victor Hugo (Charles Hugo, Vacquerie). Dix d'entre eux
+n'ont aucune fiche Wikidata. La méthode des 63 premiers — chercher une notice d'autorité,
+vérifier les dates — ne pouvait pas s'appliquer telle quelle.
+
+**Trois sources, dans cet ordre.**
+
+1. **Joconde elle-même**, d'abord. Les musées écrivent les dates et le métier dans le champ
+   auteur : « Hussenot Joseph (1827-1896) (dessinateur) », « Hennault Henry (actif
+   1891-1901) (dessinateur) ». C'est la source la plus proche du corpus, et surtout le seul
+   arbitre valable face aux homonymes. Elle donne les dates de **31 artistes sur 39** et la
+   fonction de **26**.
+2. **Une notice d'autorité** — Wikidata, BnF, INHA, Louvre-arts graphiques, ministère de la
+   Culture —, retenue **seulement si ses dates concordent** avec celles des musées.
+3. **Rien.** Quand ni l'une ni l'autre ne dit, on n'écrit pas. Aucune ligne n'a finalement
+   dû être laissée vide, mais la règle tenait.
+
+**L'activité annoncée rend compte du corpus, pas de la notoriété.** Auguste Vacquerie est
+connu comme écrivain ; ses 366 notices sont des photographies. La ligne dit donc d'abord
+photographe. Même règle pour Charles Hugo. Ce que le lecteur a sous les yeux commande.
+
+**Deux extensions du gabarit** (validées par l'utilisateur avant rédaction) :
+- « **actif entre X et Y** » quand aucune date de vie n'est attestée. Un seul cas, Henry
+  Hennault, dont ni Joconde, ni le musée de l'Image, ni Gallica ne connaissent autre chose
+  que ses années chez Pellerin.
+- « **après Y** » quand la mort n'est pas datée : Willermet, « 1783-après 1848 » d'après le
+  ministère de la Culture.
+
+**Un homonyme évité, à ne pas rouvrir.** La recherche sur « Charles du Ry » propose
+Q1066622, architecte à Kassel (1692-1757). Ce n'est pas lui. Le Louvre, seul conservateur
+de ces 33 dessins, donne « vers 1568-1655, école française, architecte des Bâtiments du roi
+en 1636 » : le bisaïeul. Même famille, même métier, un siècle d'écart — le genre d'erreur
+qu'un contrôle par le nom seul ne rattrape jamais. C'est le musée qui a tranché.
+
+**Une nationalité laissée de côté à dessein.** Wikidata dit Peter Hawke « artiste
+britannique » dans sa description et français par sa citoyenneté. Tant que la contradiction
+n'est pas levée, la ligne ne tranche pas : « Dessinateur et lithographe du XIXe siècle,
+1801-1887. »
+
+**Un défaut de méthode corrigé en chemin**, qui vaut d'être noté : le premier rapprochement
+nom → graphies Joconde procédait par mots communs. Il donnait à « Charles du Ry » les dates
+de Jean-Charles François Leloy et le surnom de Charles Hugo — trois personnes fondues en
+une parce qu'elles partagent le mot « Charles ». Le rapprochement passe désormais par la
+table canonique `MAITRES` et `_trouve_maitre` de `build_artistes.py`, celle-là même qui
+compte les notices. **Un outil d'analyse ne doit pas réimplémenter l'appariement du
+pipeline : il doit l'appeler.** Le nombre d'artistes datés par Joconde est passé de 27 à 31
+au passage — l'ancienne méthode en manquait autant qu'elle en inventait.
+
+Divergences de dates relevées, tranchées en faveur des musées sauf mention, détail dans
+`donnees.md` : Aimé Duthoit (Joconde 1803, Wikidata 1805), Frans Hogenberg (1592 / 1590 —
+retenu 1590, plus courant), Colijn de Coter et Antonio del Pollaiuolo (quelques années
+d'écart, d'où le « vers »).
+
 ## 2026-08-06 (bis) — Le panneau de la carte prend un en-tête
 
 Le panneau du musée choisi empilait tout à plat : le nom, la ville, le compte, les mentions,

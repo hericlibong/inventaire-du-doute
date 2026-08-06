@@ -204,9 +204,13 @@ Le registre est relu au point de contrôle 2, et les corrections sont portées e
       artistes » ; le volume s'intitule « Autour des maîtres ». Ici « maître » se lit dans son
       sens relationnel (les œuvres autour du maître), ce qui reste conforme à la règle du
       2026-08-02 — mais la cohabitation mérite un arbitrage.
-- [ ] **C4 — Les 39 artistes du lot 2 n'ont pas de texte éditorial.** `editorial-maitres.js`
-      couvre les 63 premiers ; les autres affichent l'en-tête générique, sans ligne de
-      repérage sous le nom. À écrire, ou à assumer explicitement.
+- [x] **C4 — RÉSOLU le 2026-08-06.** Les 39 artistes du lot 2 ont leur ligne de repérage :
+      `editorial-maitres.js` couvre les **102 sur 102**, vérifié par comparaison avec
+      `artistes.json` (0 manquante, 0 clé orpheline). Méthode dans decisions.md du jour —
+      Joconde d'abord (elle date 31 des 39 dans son champ auteur), notice d'autorité ensuite
+      et seulement si les dates concordent, rien sinon. Gabarit étendu à « actif entre X
+      et Y » (Hennault) et « après Y » (Willermet). Un homonyme écarté par le musée
+      conservateur : Charles du Ry, vers 1568-1655, et non l'architecte de Kassel.
 
 ---
 

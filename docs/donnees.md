@@ -3,6 +3,54 @@
 Tout ce qu'on apprend sur la base Joconde au fil du projet : structure, pièges,
 chiffres vérifiés. Chaque constat indique sa date et comment il a été obtenu.
 
+## Joconde date et qualifie ses auteurs, dans le champ auteur (2026-08-06)
+
+Constat fait en cherchant à documenter les 39 artistes du lot 2. **Le champ auteur ne porte
+pas qu'un nom** : les musées y glissent, entre parenthèses, les dates de la personne et son
+métier — « Georgin François (1801-1863) (graveur) », « Hussenot Joseph (1827-1896)
+(dessinateur, attribué à) ». La convention des qualificatifs d'attribution, déjà connue et
+exploitée (`MODERNO (attribué)`), en cache donc une seconde, biographique.
+
+Relevé sur les graphies des 39 artistes du lot 2, via `lot_instruction.json` :
+
+| Ce que Joconde donne | Artistes concernés |
+|---|---|
+| Dates de vie | **31 sur 39** |
+| Métier | **26 sur 39** |
+| Ni l'un ni l'autre | 5 (Fort, Willermet, Crapelet, du Ry, Beuret) |
+
+Trois formes rencontrées, toutes exploitables :
+- **dates pleines** — « Clausel Alexandre (1802-1884) », 404 notices ;
+- **dates avec doute assumé** — « De Coter Colijn (1455?-1539?) », le musée écrit lui-même
+  son incertitude, comme il le fait pour les attributions ;
+- **période d'activité seule** — « Hennault Henry (actif 1891-1901) », quand les dates de
+  vie sont inconnues.
+
+**Portée.** C'est la source la plus proche du corpus et **le seul arbitre interne face aux
+homonymes** : elle a départagé cinq Nicolaus Hoffmann (Joconde dit 1740-1823 → Q43131556)
+et deux René Ackermann (1853-1913 → l'imprimeur de Wissembourg, pas l'artiste né en 1923).
+Elle reste une donnée déclarative du musée, non vérifiée par le projet : elle sert à
+**situer** un artiste, jamais à corriger une notice.
+
+**Divergences avec les notices d'autorité**, relevées sur les 31 artistes datés — quatre
+cas, tous de faible amplitude :
+
+| Artiste | Joconde | Wikidata / autorité | Retenu |
+|---|---|---|---|
+| Aimé Duthoit | 1803-1869 | 1805-1869 | 1803-1869 (musée) |
+| Frans Hogenberg | 1535-1592 | 1535-1590 | 1535-1590 (plus courant) |
+| Colijn de Coter | 1455?-1539? | 1450-1530 | vers 1455 – vers 1539 |
+| Antonio del Pollaiuolo | 1433-1498 | 1429-1498 | vers 1433-1498 |
+
+Les deux derniers sont des artistes anciens dont les dates sont discutées partout : le
+« vers » du gabarit couvre exactement ce cas.
+
+**Piège d'outillage, à ne pas refaire.** Un premier rapprochement nom → graphies procédait
+par mots communs : « Charles du Ry » héritait des dates de « Jean-Charles François Leloy »
+et du surnom de « Charles Hugo ». Le rapprochement doit passer par la table `MAITRES` et
+`_trouve_maitre` de `build_artistes.py` — celles qui comptent déjà les notices. Le
+correctif a fait passer les artistes datés de 27 à 31.
+
 ## Le lot 2 du 2026-08-02 : 50 formes examinées, 40 personnes retenues
 
 Le registre `candidats_maitres.csv` laissait **234 formes « à instruire »**. Le lot est borné
