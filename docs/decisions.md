@@ -2,6 +2,45 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-06 (septies) — Ensfelder : une source qui se consulte mais ne se télécharge pas
+
+Le seul portrait connu de Charles Eugène Ensfelder est hébergé sur Geneanet, déposé par un
+généalogiste. **Le site répond 403 à tout outil** — sur la page comme sur l'URL directe de
+l'image (protection Cloudflare, constatée deux fois). On ne contourne pas une protection :
+l'utilisateur a enregistré le fichier depuis son navigateur, et le script le reprend tel quel.
+
+D'où une **quatrième route** dans `web/scripts/source_portraits.py` : `FICHIER_LOCAL`, qui
+lit une image déposée dans `web/scripts/portraits-fournis/` au lieu de la télécharger. Ce
+dossier est **versionné** : sans ces fichiers, la commande ne serait plus rejouable. Les
+quatre routes vont désormais de la plus automatique à la plus déclarée — P18 Wikidata,
+fichier Commons désigné, source hors Commons décrite, fichier déjà sur le disque.
+
+**Ce que porte l'image** : une photographie au format carte de visite, vers 1860-1875 —
+redingote, main dans le gilet, fond de studio dégradé. **Aucune mention imprimée** : ni nom
+d'atelier, ni tampon, ni légende. Contrairement à Clausel, il n'y avait rien à lire dessus.
+La légende écrit donc « auteur inconnu ».
+
+**Les droits sont acquis, et pour deux motifs indépendants** : le cliché est anonyme et le
+sujet est mort en 1876 ; et une reproduction fidèle d'une photographie ancienne ne crée
+aucun droit nouveau au profit de celui qui la met en ligne. Le crédit nomme **Geneanet**,
+la source — jamais le déposant, qui héberge sans être auteur.
+
+**Deux corrections tirées de ce cas :**
+
+1. **Le repli d'auteur ne peut plus nommer Commons pour une image qui n'en vient pas.**
+   Le manifeste écrivait « Auteur non précisé sur Commons » sous une image de Geneanet.
+   Hors Commons, l'absence d'auteur se dit « auteur inconnu » — mention que la légende
+   sait déjà écrire sans la faire précéder de « par ».
+2. **Un portrait en pied se recadre.** Tout le corpus est en buste ; la boîte d'affichage
+   fait 15 rem de haut. Laissée entière, la photographie aurait donné un visage de vingt
+   pixels. Cadrage à hauteur des mains, en gardant la main dans le gilet, qui fait la pose.
+   Le recadrage est déclaré dans le manifeste, comme pour les frères Duthoit et Clausel.
+
+**La piste Reiber reste ouverte** : ce n'est pas le dessin conservé par les musées de
+Strasbourg (inv. 77.2019.0.1174), qui demande une autorisation de photothèque.
+
+Compte : **73 portraits**, 29 artistes sans visage.
+
 ## 2026-08-06 (sexies) — Clausel, ou pourquoi il faut regarder l'image avant sa page
 
 Alexandre Clausel avait été refusé le matin même : portrait trouvé sur un blog local, sans

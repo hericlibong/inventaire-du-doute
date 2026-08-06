@@ -20,6 +20,10 @@ UA = {'User-Agent': 'InventaireDuDoute/1.0 (portfolio data-journalisme; hericlib
 ICI = os.path.dirname(os.path.abspath(__file__))
 RACINE = os.path.dirname(ICI)
 DEST_IMG = os.path.join(RACINE, 'static', 'portraits')
+# Les images déposées à la main, pour les sources qui se consultent mais ne se
+# téléchargent pas (voir FICHIER_LOCAL). Versionné : sans ces fichiers, le script
+# ne serait plus rejouable.
+SOURCE_LOCALE = os.path.join(ICI, 'portraits-fournis')
 # Le manifeste est un EXPORT VERSIONNÉ, pas un fichier de travail : `web/static/data`
 # est ignoré par git, et les 27 images étaient versionnées sans leurs crédits — une
 # licence perdue au premier clone (relevé le 2026-07-22). Il s'écrit donc dans
@@ -212,6 +216,36 @@ SOURCE_EXTERNE = {
     },
 }
 
+# Quatrième route : le FICHIER EST DÉJÀ LÀ, déposé à la main dans
+# `scripts/portraits-fournis/`. Elle existe parce qu'une source peut être
+# consultable sans être téléchargeable : Geneanet, qui héberge le seul portrait
+# connu d'Ensfelder, répond 403 à tout outil (protection Cloudflare, constatée le
+# 2026-08-06 sur la page ET sur l'URL de l'image). On ne contourne pas une
+# protection ; l'utilisateur enregistre le fichier depuis son navigateur, et le
+# script le reprend tel quel. Le fichier est versionné avec le dépôt : sans lui,
+# la commande ne serait plus rejouable.
+FICHIER_LOCAL = {
+    # Photographie au format carte de visite, vers 1860-1875 : redingote, main
+    # dans le gilet, fond de studio dégradé. Aucune mention imprimée — ni nom
+    # d'atelier, ni tampon, ni légende : l'auteur restera inconnu, et c'est ce
+    # que dira la légende. Le sujet est mort en 1876 et le cliché est anonyme :
+    # le domaine public est acquis depuis longtemps. Le généalogiste qui a
+    # déposé l'image sur Geneanet l'héberge, il n'en est pas l'auteur ; une
+    # reproduction fidèle d'une photographie ancienne ne crée aucun droit
+    # nouveau. On crédite donc la source, jamais le déposant.
+    # Ce n'est PAS le dessin de Paul Reiber conservé par les musées de
+    # Strasbourg (inv. 77.2019.0.1174) : cette piste-là reste ouverte.
+    'Charles Eugène Ensfelder': {
+        'fichier': 'ensfelder.jpg',
+        'page': 'https://gw.geneanet.org/whelmlinger?lang=fr&n=ensfelder&p=charles+eugene',
+        'source_nom': 'Geneanet',
+        'auteur': '',                       # anonyme : le composant écrit le repli
+        'licence': 'domaine public',
+        'licence_url': '',
+        'recadrage': 'cadré sur le buste ; la photographie est en pied',
+    },
+}
+
 # Recadrage, en fractions (gauche, haut, droite, bas) de l'image téléchargée.
 # Une planche qui porte deux visages ne peut pas servir telle quelle : sur la
 # fiche d'Aimé, on verrait aussi Louis. On découpe donc, et on le dit. Les
@@ -223,6 +257,11 @@ RECADRAGE = {
     # On garde le portrait, on laisse la légende imprimée de la planche : le
     # site écrit la sienne, et les deux se contrediraient à l'œil.
     'Alexandre Clausel': (0.095, 0.055, 0.94, 0.74),
+    # Ensfelder est photographié EN PIED. Laissé tel quel, dans une boîte haute
+    # de 15 rem, son visage ferait vingt pixels — quand tout le reste du corpus
+    # est en buste. On cadre donc à hauteur des mains, en gardant la main dans
+    # le gilet, qui fait la pose.
+    'Charles Eugène Ensfelder': (0.19, 0.018, 0.81, 0.56),
 }
 
 
@@ -358,25 +397,40 @@ def main():
         print(f'manifeste existant : {len(manifeste)} portraits conservés '
               f'(--tout pour tout refaire)')
 
-    # Trois routes, de la plus automatique à la plus déclarée : le P18 de
+    # Quatre routes, de la plus automatique à la plus déclarée : le P18 de
     # Wikidata ; un fichier Commons désigné à la main ; une source hors Commons
-    # entièrement décrite. Les deux dernières ne sont écrites que là où la
-    # première ne donne rien, ou donne autre chose qu'un visage.
+    # entièrement décrite ; un fichier déjà déposé sur le disque, quand la source
+    # se consulte mais ne se télécharge pas. Chacune n'est écrite que là où la
+    # précédente ne donne rien, ou donne autre chose qu'un visage.
     def route_de(nom):
+        if nom in FICHIER_LOCAL:
+            return 'local'
         if nom in SOURCE_EXTERNE:
             return 'externe'
         return 'choisi' if nom in FICHIER_CHOISI else 'p18'
 
     a_faire = {n: route_de(n)
                for n in list(QID) + list(FICHIER_CHOISI) + list(SOURCE_EXTERNE)
+               + list(FICHIER_LOCAL)
                if tout or n not in manifeste}
     print(f'{len(a_faire)} portrait(s) à chercher\n')
     for nom, route in a_faire.items():
         choix = FICHIER_CHOISI.get(nom, {})
-        ext = SOURCE_EXTERNE.get(nom, {})
+        ext = SOURCE_EXTERNE.get(nom, {}) or FICHIER_LOCAL.get(nom, {})
         qid = ext.get('wikidata') or (choix['qid'] if route == 'choisi' else QID.get(nom))
         try:
-            if route == 'externe':
+            if route == 'local':
+                # Le fichier est sur le disque : rien à demander à personne.
+                # Sa source est déclarée dans FICHIER_LOCAL, et c'est elle qui
+                # s'affichera sous l'image.
+                info = {
+                    'thumburl': '', 'mime': 'image/jpeg',
+                    'descriptionurl': ext['page'],
+                    'licence': ext['licence'], 'licence_url': ext.get('licence_url', ''),
+                    'auteur': ext['auteur'],
+                }
+                pourquoi = ext.get('recadrage')
+            elif route == 'externe':
                 # Rien à demander à Commons : la source est déclarée en toutes
                 # lettres ci-dessus, et c'est elle qui s'affichera.
                 info = {
@@ -396,8 +450,12 @@ def main():
                 info = infos_commons(fichier, largeur=1200 if nom in RECADRAGE else 480)
             extension = {'image/jpeg': 'jpg', 'image/png': 'png'}.get(info['mime'], 'jpg')
             nom_fichier = f'{slug(nom)}.{extension}'
-            with urllib.request.urlopen(urllib.request.Request(info['thumburl'], headers=UA), timeout=60) as r:
-                data = r.read()
+            if route == 'local':
+                with open(os.path.join(SOURCE_LOCALE, ext['fichier']), 'rb') as f:
+                    data = f.read()
+            else:
+                with urllib.request.urlopen(urllib.request.Request(info['thumburl'], headers=UA), timeout=60) as r:
+                    data = r.read()
             chemin = os.path.join(DEST_IMG, nom_fichier)
             with open(chemin, 'wb') as f:
                 f.write(data)
@@ -405,7 +463,13 @@ def main():
                 data = recadre(chemin, RECADRAGE[nom])
             manifeste[nom] = {
                 'fichier': f'/portraits/{nom_fichier}',
-                'auteur': info['auteur'] or 'Auteur non précisé sur Commons',
+                # Le repli ne peut pas nommer Commons pour une image qui n'en
+                # vient pas (relevé le 2026-08-06 sur Ensfelder, hébergé par
+                # Geneanet). Hors Commons, l'absence d'auteur se dit « auteur
+                # inconnu » — une mention que la légende sait déjà écrire sans
+                # la faire précéder de « par ».
+                'auteur': info['auteur'] or ('Auteur non précisé sur Commons'
+                                             if not ext.get('source_nom') else 'auteur inconnu'),
                 'licence': info['licence'] or 'voir la page du fichier',
                 'licence_url': info['licence_url'],
                 'source': info['descriptionurl'],
@@ -437,7 +501,7 @@ def main():
             print(f'!! {nom} ({qid}): {e}')
     with open(DEST_JSON, 'w', encoding='utf-8') as f:
         json.dump(manifeste, f, ensure_ascii=False, indent=2)
-    total = len(QID) + len(FICHIER_CHOISI) + len(SOURCE_EXTERNE)
+    total = len(QID) + len(FICHIER_CHOISI) + len(SOURCE_EXTERNE) + len(FICHIER_LOCAL)
     print(f'\n{len(manifeste)}/{total} portraits -> {DEST_JSON}')
 
 

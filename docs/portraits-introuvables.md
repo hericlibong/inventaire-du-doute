@@ -1,6 +1,6 @@
 # Les artistes sans portrait
 
-État au **2026-08-06 (mis à jour le soir)**. **Trente** artistes sur cent deux n'ont
+État au **2026-08-06 (mis à jour le soir)**. **Vingt-neuf** artistes sur cent deux n'ont
 pas de portrait dans l'application. Leur fiche affiche le repli « Pas de portrait fiable
 disponible pour X » — jamais une image approximative.
 
@@ -40,9 +40,16 @@ identifié, il est localisé dans une institution nommée. Il ne manque qu'une a
 — quatre demandes ciblées, à des interlocuteurs précis. C'est une piste ouverte, pas un
 échec.
 
-**Un candidat en attente.** Le portrait d'Ensfelder proposé sur Geneanet n'a pas pu être
-récupéré : le site est protégé par Cloudflare, qui renvoie 403 à tout outil. L'image doit
-être fournie à la main.
+**Le candidat en attente est intégré.** Le portrait d'Ensfelder proposé sur Geneanet
+n'était pas récupérable par un outil — le site répond 403, sur la page comme sur l'URL de
+l'image. L'utilisateur l'a enregistré depuis son navigateur, et le script sait désormais
+reprendre un fichier déposé à la main (route `FICHIER_LOCAL`, voir decisions.md du jour).
+C'est une photographie au format carte de visite, vers 1860-1875, sans aucune mention
+imprimée : « auteur inconnu », domaine public, source Geneanet. Elle est cadrée sur le
+buste — le corpus est en buste, et l'original est en pied.
+
+Ce n'est pas le dessin de Paul Reiber ; **cette piste-là reste ouverte**, avec les trois
+autres demandes d'autorisation.
 
 **Rappel de la règle du projet** : un crédit n'est pas une autorisation, un © seul n'est
 pas une licence, et une image sans provenance ne s'utilise pas — même quand elle est
@@ -79,7 +86,7 @@ ne les départageant de façon sûre.
 
 **Le contrôle est visuel, et il est humain.** Il n'est pas automatisable.
 
-## Les trente, par nombre d'œuvres concernées
+## Les vingt-neuf, par nombre d'œuvres concernées
 
 ### Image écartée au contrôle visuel (3)
 
@@ -118,7 +125,7 @@ chances d'aboutir.
 | 26 | Louis Hertig | Q110017854 | **oui** — voir le retour ci-dessus |
 
 
-### Aucune notice d'autorité retenue (14)
+### Aucune notice d'autorité retenue (13)
 
 Ici, la personne elle-même n'est pas établie hors de Joconde. Pour ceux-là, la piste n'est
 pas Wikidata mais **le musée qui conserve leurs œuvres** — indiqué en regard, car c'est
@@ -129,7 +136,6 @@ souvent lui, et lui seul, qui possède une documentation.
 | 168 | Louis Morinet | Musée de l’Image, Épinal · BnF/Gallica (imagerie populaire) |
 | 82 | Charles François Pinot | Musée de l’Image, Épinal · BnF/Gallica · Archives des Vosges |
 | 59 | André Marie Florentin Giraud | Musée Crozatier, Le Puy-en-Velay · Archives de la Haute-Loire |
-| 48 | Charles Eugène Ensfelder | Musée de l’Image, Épinal · Archives des Vosges |
 | 43 | Louis Verjat | Musée Adrien Mentienne, Bry-sur-Marne · Archives du Val-de-Marne |
 | 39 | Domenico Campagnola | Louvre, arts graphiques · INHA (Agorha) · Uffizi |
 | 39 | Antoine Gabriel Willermet | Sèvres — Cité de la céramique (89 dessins) · Archives de la manufacture |

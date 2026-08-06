@@ -652,5 +652,16 @@
     "regard": "gauche",
     "source_nom": "Troyes-en-Champagne",
     "reproduction": "phototypie Louvrier"
+  },
+  "Charles Eugène Ensfelder": {
+    "fichier": "/portraits/charles-eugene-ensfelder.jpg",
+    "auteur": "auteur inconnu",
+    "licence": "domaine public",
+    "licence_url": "",
+    "source": "https://gw.geneanet.org/whelmlinger?lang=fr&n=ensfelder&p=charles+eugene",
+    "wikidata": "",
+    "regard": "gauche",
+    "source_nom": "Geneanet",
+    "recadrage": "cadré sur le buste ; la photographie est en pied"
   }
 }
