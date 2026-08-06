@@ -33,7 +33,18 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "David (1748-1825) (attribué à)"
+   "extrait": "David (1748-1825) (attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE000824.jpg",
+    "credit": "Own work",
+    "creator": "Jacques-Louis David",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Louvre_david_belisaire_reconnu.JPG",
+    "verifie_le": "2026-08-06"
+   }
   },
   {
    "reference": "000PE000843",
@@ -42,7 +53,18 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "David (1748-1825) (attribué à)"
+   "extrait": "David (1748-1825) (attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE000843.jpg",
+    "credit": "https://i.pinimg.com/564x/3c/ae/4d/3cae4db6b8f73ca4af976add7e886cd8.jpg",
+    "creator": "Presumably Jacques-Louis David",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Les_Trois_Dames_de_Gand_-_J.L._David.jpg",
+    "verifie_le": "2026-08-06"
+   }
   },
   {
    "reference": "000PE000844",
@@ -51,7 +73,18 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "David (1748-1825) (école)"
+   "extrait": "David (1748-1825) (école)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE000844.jpg",
+    "credit": "Own work Rama",
+    "creator": "Circle of Jacques-Louis David / Attributed to Jean-François Garneray",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Jean-Baptiste_Milhaud_IMG_2318.JPG",
+    "verifie_le": "2026-08-06"
+   }
   },
   {
    "reference": "000PE000841",
@@ -60,7 +93,18 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
-   "extrait": "David (1748-1825) (atelier)"
+   "extrait": "David (1748-1825) (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE000841.jpg",
+    "credit": "photo Shonagon 2025-05-28",
+    "creator": "Workshop of Jacques-Louis David",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Marat_assassin%C3%A9_-_Jacques-Louis_David_-_Mus%C3%A9e_du_Louvre_Peintures_RF_1945_2.jpg",
+    "verifie_le": "2026-08-06"
+   }
   },
   {
    "reference": "000PE000842",
@@ -78,7 +122,18 @@
    "musee": "musée de Tessé",
    "ville": "Le Mans",
    "code": "ecole_de",
-   "extrait": "David (1748-1825) (école)"
+   "extrait": "David (1748-1825) (école)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE009869.jpg",
+    "credit": "http://1.bp.blogspot.com/_A8XgY7cWYaI/TMMWhyvA6oI/AAAAAAAAGfY/Xqtyo3r88Hc/s1600/Famille-lemans.JPG",
+    "creator": "Circle of Jacques-Louis David",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Le_conventionnel_Michel_G%C3%A9rard_et_sa_famille.jpg",
+    "verifie_le": "2026-08-06"
+   }
   },
   {
    "reference": "000PE011119",
@@ -195,7 +250,18 @@
    "musee": "musée national Magnin",
    "ville": "Dijon",
    "code": "attribue",
-   "extrait": "David (1748-1825) (peintre, attribué à)"
+   "extrait": "David (1748-1825) (peintre, attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/50110000317.jpg",
+    "credit": "https://www.photo.rmn.fr/archive/19-522101-2C6NU0AXPAOF2.html",
+    "creator": "Jacques-Louis David",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:David_-_Saint_Roch_implorant_la_Vierge_pour_les_pestif%C3%A9r%C3%A9s_(esquisse),_1780.jpg",
+    "verifie_le": "2026-08-06"
+   }
   },
   {
    "reference": "M0289002529",
@@ -249,7 +315,18 @@
    "musee": "musée des Beaux-Arts de Reims",
    "ville": "Reims",
    "code": "atelier_de",
-   "extrait": "David (1748-1825) (atelier, peintre)"
+   "extrait": "David (1748-1825) (atelier, peintre)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/03110005074.jpg",
+    "credit": "Musée des Beaux-Arts, Reims",
+    "creator": "Jacques-Louis David",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:DAVID_Jacques-Louis_(Atelier_de)_La_Mort_de_Marat_Huile_sur_toile.jpg",
+    "verifie_le": "2026-08-06"
+   }
   }
  ],
  "version_donnee": "2026-07-01",

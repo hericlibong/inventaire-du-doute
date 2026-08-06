@@ -1,18 +1,18 @@
 {
- "date": "2026-07-29",
- "references_examinees": 3668,
- "correspondances_exactes": 329,
- "exactes_par_identifiant_joconde": 329,
- "exactes_avec_image": 184,
- "exactes_sans_image": 145,
+ "date": "2026-08-06",
+ "references_examinees": 6081,
+ "correspondances_exactes": 351,
+ "exactes_par_identifiant_joconde": 351,
+ "exactes_avec_image": 192,
+ "exactes_sans_image": 159,
  "candidats_a_verifier": 47,
  "candidats_refs_distinctes": 25,
  "candidats_forte_presomption": 0,
- "faux_rapprochements_rejetes": 457,
- "dont_rejetes_par_dimensions": 262,
- "images_reutilisables": 184,
+ "faux_rapprochements_rejetes": 495,
+ "dont_rejetes_par_dimensions": 294,
+ "images_reutilisables": 192,
  "licences_ouvertes_detail": {
-  "Public domain": 162,
+  "Public domain": 170,
   "CC BY-SA 4.0": 5,
   "CC BY 3.0": 6,
   "CC BY-SA 2.0": 3,
@@ -20,8 +20,8 @@
   "CC BY-SA 3.0": 6,
   "CC0": 1
  },
- "refs_avec_item_p347": 329,
- "refs_avec_candidat_inventaire": 100,
+ "refs_avec_item_p347": 351,
+ "refs_avec_candidat_inventaire": 126,
  "echantillon_controle": {
   "exact_par_joconde_id": [
    {

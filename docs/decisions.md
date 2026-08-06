@@ -2,6 +2,33 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-06 (nonies) — Commons est épuisé pour ce corpus
+
+Reprise de la recherche d'images d'œuvres (phase 4). Premier constat : la recherche de
+juillet portait sur **3 668 références**, le corpus des 63 artistes d'alors. Le lot 2 l'a
+porté à **6 081** — **2 413 références n'avaient jamais été examinées**. Ce n'était donc
+pas un mécanisme à inventer, mais un trou à combler.
+
+**Rendement : 22 correspondances exactes de plus, dont 8 avec image libre.** Soit 0,9 %,
+quand le premier lot donnait 9 %. Total : 351 exactes, **192 images ouvertes**.
+
+**Et l'apport ne va pas où on l'attendait** : sept des huit images sont des Jacques-Louis
+David, qui appartient au corpus initial — Wikidata s'est enrichi depuis juillet. **Une
+seule** concerne un artiste du lot 2 (Nicasius Bernaerts, « Combat de coqs et de poules »).
+
+La raison est structurelle et vaut d'être écrite : le lot 2 est fait d'imagerie populaire
+et de musées régionaux, quasi absents de Wikidata. Le musée de l'Image d'Épinal porte à
+lui seul 519 œuvres sans reproduction. **Chercher davantage sur Commons ne donnera rien** ;
+la suite passe par les bibliothèques numériques et les collections ouvertes de musées.
+
+**Contrôle visuel des huit, une par une**, comme pour les portraits. Toutes correspondent
+à leur titre Joconde. Deux cas notés, gardés :
+- « Combat de coqs et de poules » : Joconde l'attribue à Nicasius Bernaerts, le fichier
+  Commons à Peter van Boucle. L'appariement porte sur l'**œuvre** (identifiant Joconde
+  P347), pas sur l'attribution — et cette divergence est précisément le sujet du projet.
+- Deux « Marat assassiné », au Louvre et à Reims : deux versions de la même composition,
+  pas un doublon.
+
 ## 2026-08-06 (octies) — Sans portrait, on ne met rien (décision utilisateur)
 
 Vingt-neuf artistes sur cent deux n'ont pas de visage. Leur fiche affichait jusqu'ici une

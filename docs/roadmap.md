@@ -350,7 +350,22 @@ et préparation SEULEMENT (front non touché, aucune image téléchargée à ce 
       image fiable ; P347 reste la seule source sûre, total réutilisable **inchangé à 184**.
       Tests + bilan `commons_bilan.json` à jour. `commons_match.py` (parser/comparaison
       dimensions, testés).
-- Réserve : les autres statuts (145 exacts sans image, 47 candidats inventaire faibles, 792
+- [x] **Extension au corpus complet — phase 4, temps 1 : Commons** (2026-08-06). La recherche
+      de juillet portait sur **3 668 références**, le corpus des 63 artistes d'alors ; les
+      **2 413 références du lot 2 n'avaient jamais été examinées**. Métadonnées régénérées
+      (6 081 réf., inventaire à 100 %), puis passe P347 sur tout le corpus.
+      **Rendement : 22 correspondances exactes de plus, 8 images — 0,9 %**, quand le premier
+      lot en donnait 9 %. Total : **351 exactes, 192 images ouvertes** (+8), 159 exactes sans
+      image, 47 candidats faibles sur 25 réf.
+      **L'apport ne va PAS au lot 2** : sept des huit images sont des Jacques-Louis David
+      (corpus initial, enrichi sur Wikidata depuis juillet), une seule concerne un artiste du
+      lot 2 (Nicasius Bernaerts). Les huit ont été contrôlées à l'œil, une par une.
+      **Conclusion : Commons est épuisé pour ce corpus.** Les musées du lot 2 — musée de
+      l'Image d'Épinal en tête, 519 œuvres sans reproduction — relèvent de l'imagerie
+      populaire, quasi absente de Wikidata. La suite passe par les bibliothèques numériques
+      (Gallica) et les collections ouvertes de musées.
+- [ ] **Phase 4, temps 2 : Gallica et les collections ouvertes** — EN COURS.
+- Réserve : les autres statuts (159 exacts sans image, 47 candidats inventaire faibles, 792
   `unknown` POP / Levier A) restent hors affichage — matière pour un prochain lot si on le décide.
 
 ---

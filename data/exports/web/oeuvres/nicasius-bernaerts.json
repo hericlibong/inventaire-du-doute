@@ -124,7 +124,18 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "BERNAERTS Nicasius (attribué)"
+   "extrait": "BERNAERTS Nicasius (attribué)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/00000081466.jpg",
+    "credit": "https://collections.louvre.fr/en/ark:/53355/cl010066072",
+    "creator": "Peter van Boucle",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Peter_van_Boucle_-_Fight_between_cocks_and_chickens.jpg",
+    "verifie_le": "2026-08-06"
+   }
   },
   {
    "reference": "05620000495",
