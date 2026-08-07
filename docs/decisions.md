@@ -2,6 +2,80 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-07 — Le numéro de planche, et la fin de la recherche d'images
+
+Reprise de la phase 4 sur les artistes du lot 2. Cinq sources ont été instruites ; deux
+sont écartées pour des raisons qui méritent d'être écrites, une a rendu trois images, et
+le reste est un mur qu'il faut nommer.
+
+**Le musée du Louvre est écarté, et ce n'est pas un oubli.** C'est le plus gros bloc du
+lot 2 — 461 dessins sans reproduction, dont ceux de Charles Normand et de Calandrucci. Ses
+conditions autorisent le téléchargement pour un usage privé, muséographique, scientifique
+ou pédagogique ; toute autre diffusion suppose une demande écrite. Seul le **texte** des
+notices est en Licence Ouverte, pas les photographies. Le projet ne publie que des images
+sous licence ouverte : on n'en prend aucune. La question posée dans la feuille de route —
+« l'audit POP portait sur les crédits POP, pas sur collections.louvre.fr » — est donc
+tranchée : la réponse est la même des deux côtés.
+
+**Limédia galeries est écarté pour une raison technique, et on ne la contourne pas.** La
+bibliothèque numérique du Sillon lorrain (Nancy, Metz, Thionville, Épinal) place ses
+documents du domaine public sous licence ouverte, et conserve l'imagerie populaire : c'était
+la piste la plus prometteuse. Son site est protégé par une vérification anti-robot qui
+bloque tout outil. Même règle que pour Geneanet lors des portraits : **une source peut se
+consulter sans se moissonner**, et on ne force pas la porte.
+
+**Le numéro de planche entre dans la méthode.** Les musées relèvent ce qui est imprimé sur
+la feuille, et l'imagerie numérote ses planches : « IMAGERIE D'EPINAL, N.°551 ». Ce relevé
+vit dans le champ Joconde `Precisions_inscriptions`, que le pipeline ne lisait pas ; il est
+désormais repris (`build_metadonnees.py`). **410 des 465 estampes du corpus portent leur
+numéro.** Il résout ce qui bloquait en juillet : trois notices du musée s'intitulent
+« Notre-Dame de Bon-Secours », et le numéro les sépare — 1883 chez Pellerin, 1119 chez
+Olivier-Pinot, 102 chez Pinot-Sagaire.
+
+**Mais le numéro ne désigne jamais une image à lui seul.** Chaque maison a sa numérotation,
+et les petits numéros se répètent d'une série à l'autre. C'est un **discriminant** : il
+départage des candidates trouvées par le titre. Un appariement exige les deux. Le titre,
+lui, doit se retrouver dans le nom du fichier ou son intitulé d'objet, jamais dans la seule
+description — trop bavarde, elle a produit des rapprochements faux à l'essai.
+
+**Une source de plus : le fonds d'imagerie déjà versé sur Wikimedia Commons**
+(`src/build_imagerie_commons.py`). L'appariement de juillet passait par l'identifiant
+Joconde porté par un élément Wikidata — une clé sûre, mais qui ne parle que des œuvres déjà
+décrites dans Wikidata, c'est-à-dire presque aucune estampe populaire. Ici, on prend le
+problème par l'autre bout : on moissonne la catégorie « Images d'Épinal » et ses
+sous-catégories — **1 507 fichiers, tous sous licence ouverte** — puis on y cherche nos
+notices. Bilan sur 465 estampes : **4 exactes, 6 candidates déjà illustrées par ailleurs,
+289 refusées, 182 introuvables**, soit **trois images nouvelles** (209 œuvres illustrées).
+
+**Onze correspondances ont été regardées une par une, et dix ont été écartées.** Toutes
+portaient pourtant le bon titre. C'est le principal enseignement du chantier : **une image
+populaire se réédite pendant un siècle**, et la même composition ressort chez un concurrent
+avec un autre numéro, un autre texte et une autre adresse d'imprimeur. Deux cas suffisent
+à le montrer :
+- « Cadet Rousselle » : la planche numérisée porte le numéro **384**, quand les deux notices
+  du musée en annoncent 518 et 261. Sans regarder l'image, on publiait un faux.
+- « Histoire de l'enfant prodigue » : la planche numérisée sort de la « Fabrique de
+  Pellerin » (vers 1843) et n'a pas de numéro ; la notice décrit un tirage « Pellerin & Cie »
+  postérieur à 1888, au texte différent.
+
+Les motifs de refus sont conservés en clair dans `ECARTEES`, au code, et sont publiables
+tels quels.
+
+**Ce qui reste sans image ne relève plus de la recherche.** Sur les 2 391 œuvres du lot 2
+sans reproduction, les deux tiers sont des **objets uniques** — dessins et photographies
+anciennes conservés à Troyes, Besançon, Amiens, Angers, Sèvres, Rodin, Le Puy, L'Isle-Adam.
+Aucune bibliothèque tierce ne détient l'objet : la seule source possible est le musée
+lui-même. Vérification faite, aucun de ces musées n'a versé ses collections sous licence
+ouverte — leurs catégories Commons comptent quelques dizaines de photographies de
+bâtiments. **La recherche d'images est close pour ce corpus**, sauf ouverture nouvelle d'une
+institution.
+
+Reste une démarche possible, qui appartient à l'utilisateur comme les autorisations de
+portraits : **l'API de Paris Musées** demande une clé, délivrée sur demande. Elle donnerait
+accès aux photographies de Jersey de la Maison de Victor Hugo en CC0, à confronter aux
+52 notices d'Auguste Vacquerie et Charles Hugo conservées au musée d'Orsay — là encore, un
+autre tirage du même négatif, avec la mention qui va avec.
+
 ## 2026-08-06 (decies) — Gallica : montrer un autre exemplaire, et le dire
 
 Commons épuisé, la phase 4 se poursuit sur **Gallica**, qui conserve le dépôt légal des

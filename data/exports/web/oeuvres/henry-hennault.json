@@ -275,7 +275,20 @@
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
-   "extrait": "Hennault Henry (actif 1891-1901) (dessinateur, attribué à)"
+   "extrait": "Hennault Henry (actif 1891-1901) (dessinateur, attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/M0537026533.jpg",
+    "credit": "Bibliothèque nationale de France",
+    "creator": "",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File%3AS%C3%A9rie_aux_armes_d%27Epinal._N%C2%B0_122%2C_Histoires_%26_sc%C3%A8nes_humoristiques%2C_contes_moraux%2C_merveilleux._Lecture_%26_pot-au-feu_-_estampe_-_btv1b69388109.jpg",
+    "exemplaire_autre": true,
+    "titre_source": "Série aux armes d'Epinal. N° 122, Histoires & scènes humoristiques, contes moraux, merveilleux. Lecture & pot-au-feu - estampe - btv1b69388109.jpg",
+    "verifie_le": "2026-08-07"
+   }
   },
   {
    "reference": "M0537026534",

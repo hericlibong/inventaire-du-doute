@@ -374,10 +374,30 @@ et préparation SEULEMENT (front non touché, aucune image téléchargée à ce 
       Les quatorze ont été contrôlées à l'œil ; toutes portent la mention Pellerin imprimée.
       États normalisés `exacte / candidate / refusee / introuvable` dans
       `gallica_correspondances.{json,csv}`.
-- [ ] **Phase 4, temps 3 : les collections ouvertes de musées** — non ouvert. Le plus gros
-      gisement reste **le Louvre, 2 861 œuvres sans image** (dont les 244 dessins de Charles
-      Normand). L'audit POP les classait « soumis à autorisation », mais il portait sur les
-      crédits POP, pas sur `collections.louvre.fr` : à vérifier avant de conclure.
+- [x] **Phase 4, temps 3 : les autres bibliothèques et les collections de musées**
+      (2026-08-07) — `src/build_imagerie_commons.py`, `docs/donnees.md`, decisions.md du jour.
+      Cinq sources instruites pour les artistes du lot 2 :
+      **Louvre écarté** — la question laissée ouverte ici est tranchée, et dans le même sens
+      que l'audit POP : ses photographies ne sont pas sous licence ouverte (usage privé,
+      muséographique, scientifique ou pédagogique ; toute autre diffusion sur demande écrite).
+      Seul le texte des notices est en Licence Ouverte. 461 dessins du lot 2 restent sans image.
+      **Limédia galeries écarté** — licence ouverte annoncée sur le domaine public, mais site
+      protégé par une vérification anti-robot. Même règle que Geneanet : on ne contourne pas.
+      **Fonds d'imagerie sur Commons retenu** — catégorie « Images d'Épinal » et ses
+      sous-catégories moissonnées (1 507 fichiers, tous sous licence ouverte). Sur 465 estampes :
+      **4 exactes, 289 refusées, 182 introuvables** → **3 images nouvelles, 209 œuvres illustrées**.
+      Onze rapprochements regardés un par un, **dix écartés** malgré un titre juste.
+      **Le numéro de planche entre dans la méthode** : `Precisions_inscriptions` ajouté aux
+      métadonnées, 410 des 465 estampes portent leur numéro ; c'est un discriminant, jamais
+      une clé (chaque maison a sa numérotation). 13 tests, `tests/test_imagerie_commons.py`.
+      **Constat de clôture** : les deux tiers des œuvres sans image sont des objets uniques
+      (dessins, photographies anciennes) dans des musées qui ne versent rien sous licence
+      ouverte — vérifié sur les onze musées concernés. La recherche d'images est close pour
+      ce corpus, sauf ouverture nouvelle d'une institution.
+- [ ] **Reste possible : Paris Musées** — API sous clé, à demander (démarche utilisateur, comme
+      les autorisations de portraits). Donnerait les photographies de Jersey de la Maison de
+      Victor Hugo en CC0, à confronter aux 52 notices de Vacquerie et Charles Hugo au musée
+      d'Orsay — autre tirage du même négatif, avec la mention qui s'impose.
 - Réserve : les autres statuts (159 exacts sans image, 47 candidats inventaire faibles, 792
   `unknown` POP / Levier A) restent hors affichage — matière pour un prochain lot si on le décide.
 

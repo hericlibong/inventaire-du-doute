@@ -431,7 +431,20 @@
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
-   "extrait": "Georgin François (1801-1863) (graveur, attribué à)"
+   "extrait": "Georgin François (1801-1863) (graveur, attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/M0537039802.jpg",
+    "credit": "Bibliothèque nationale de France",
+    "creator": "Georgin, François (1801-1863). Dessinateur de l'oeuvre reproduite",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File%3ADonnera-t-on_quelque_chose_%C3%A0_cr%C3%A9dit_Quand_le_coq_chantera%2C_cr%C3%A9dit_on_donnera_-_estampe_-_G._F._%28Fran%C3%A7ois_Georgin%29_-_btv1b55001802z.jpg",
+    "exemplaire_autre": true,
+    "titre_source": "Donnera-t-on quelque chose à crédit Quand le coq chantera, crédit on donnera - estampe - G. F. (François Georgin) - btv1b55001802z.jpg",
+    "verifie_le": "2026-08-07"
+   }
   },
   {
    "reference": "M0537003810",

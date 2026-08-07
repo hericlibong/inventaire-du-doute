@@ -3,6 +3,65 @@
 Tout ce qu'on apprend sur la base Joconde au fil du projet : structure, pièges,
 chiffres vérifiés. Chaque constat indique sa date et comment il a été obtenu.
 
+## Les inscriptions relevées par les musées portent le numéro de planche (2026-08-07)
+
+Constat fait en cherchant des reproductions pour les artistes du lot 2. Le champ
+`Precisions_inscriptions` contient le **relevé de ce qui est imprimé sur l'objet** :
+mentions d'imprimeur, position sur la feuille, texte des légendes — et, sur l'imagerie
+populaire, le numéro de la planche.
+
+| Sur les 465 estampes du corpus | |
+|---|---|
+| Numéro de planche relevé | **410** |
+| Sans numéro | 55 |
+
+La graphie varie autant que les feuilles : « N°551 », « N.°551 », « N° 1883 », « N.°.23. ».
+Le point se glisse aussi bien avant le degré qu'après — un extracteur qui ne prévoit que
+`N°` en manque la majorité (erreur commise et corrigée le jour même).
+
+**Le numéro appartient à une maison, pas à une image.** Pellerin, Pinot-Sagaire,
+Olivier-Pinot et Gangel & Didion numérotent chacun leur série : le n° 102 des uns n'a rien
+à voir avec le n° 102 des autres. Il départage donc des candidates trouvées par le titre,
+mais ne désigne jamais une image à lui seul.
+
+**Le même titre ne désigne pas la même planche.** Une image populaire se réédite pendant un
+siècle. Trois notices du musée de l'Image s'intitulent « Notre-Dame de Bon-Secours » : n° 1883
+chez Pellerin, n° 1119 chez Olivier-Pinot, n° 102 chez Pinot-Sagaire. Et la mention
+d'imprimeur date le tirage : « Fabrique de PELLERIN, Imprimeur-Libraire » précède 1860,
+« PELLERIN & Cie » lui succède.
+
+**Le fonds du musée est tardif, les fonds numérisés sont anciens.** C'est ce qui explique
+l'échec des rapprochements. Relevé sur les notices du musée de l'Image :
+
+| Mention d'imprimeur relevée par le musée | Notices |
+|---|---|
+| Pellerin & Cie (après 1860) | **213** |
+| Pinot, Pinot-Sagaire, Olivier-Pinot | 47 |
+| Fabrique de Pellerin (avant 1860) | 33 |
+
+Les planches que la BnF et Commons ont numérisées sont, elles, majoritairement des tirages
+anciens. Les deux fonds se croisent peu, et rarement sur la même édition.
+
+**Le musée conserve souvent plusieurs exemplaires de la même planche** : sept notices pour
+le n° 771, six pour le n° 774, cinq pour le n° 770. Quand titre et numéro coïncident sur
+plusieurs notices, aucune reproduction ne peut leur être rattachée — on ne saurait pas
+laquelle elle montre.
+
+## Aucun musée du lot 2 n'a versé ses collections en licence ouverte (2026-08-07)
+
+Vérification menée sur les onze musées qui portent les plus gros blocs d'œuvres sans
+reproduction, en cherchant leurs catégories sur Wikimedia Commons. Aucun versement
+institutionnel : les catégories comptent quelques dizaines de fichiers, essentiellement des
+photographies de bâtiments et quelques œuvres célèbres. À titre de comparaison, un tel
+versement existe ailleurs — les Musées de la Haute-Saône ont publié leurs collections sur
+Commons en CC BY-SA, nommées par code Muséofile.
+
+Conséquence directe : **les deux tiers des œuvres sans image du lot 2 sont hors d'atteinte**.
+Ce sont des objets uniques — 461 dessins au Louvre, 294 photographies d'Alexandre Clausel à
+Troyes, 257 de Léon Tirode à Besançon, 107 dessins de Léon Fort à L'Isle-Adam, 94 des frères
+Duthoit à Amiens. Aucune bibliothèque tierce ne les détient : pour un dessin, il n'existe
+pas d'« autre exemplaire ».
+
 ## Joconde date et qualifie ses auteurs, dans le champ auteur (2026-08-06)
 
 Constat fait en cherchant à documenter les 39 artistes du lot 2. **Le champ auteur ne porte

@@ -31,11 +31,16 @@ from config import DOSSIER_EXPORTS, RACINE
 
 CORRESP = DOSSIER_EXPORTS / "commons_correspondances.json"
 CORRESP_GALLICA = DOSSIER_EXPORTS / "gallica_correspondances.json"
+CORRESP_IMAGERIE = DOSSIER_EXPORTS / "imagerie_commons_correspondances.json"
 DOSSIER_OEUVRES = DOSSIER_EXPORTS / "web" / "oeuvres"
 DOSSIER_IMG = DOSSIER_EXPORTS / "web" / "oeuvres_img"
 INDEX = DOSSIER_EXPORTS / "web" / "images_index.json"
 DOSSIER_CACHE = RACINE / "data" / "cache"
 CACHE_THUMBS = DOSSIER_CACHE / "commons_thumbs.json"
+
+# L'index tel qu'il était avant ce build : sert à ne pas réécrire les dates de
+# contrôle visuel (voir date_de_controle).
+_INDEX_PRECEDENT: dict = {}
 
 COMMONS_API = "https://commons.wikimedia.org/w/api.php"
 UA = "inventaire-du-doute/1.0 (projet data-journalisme ; contact hericlibong@gmail.com)"
@@ -113,7 +118,19 @@ def optimiser(donnees: bytes, chemin_sortie) -> None:
     im.save(chemin_sortie, "JPEG", quality=QUALITE, optimize=True, progressive=True)
 
 
+def date_de_controle(ref: str, defaut: str) -> str:
+    """La date à laquelle cette image a été regardée, et pas celle du jour.
+
+    `verifie_le` date un contrôle HUMAIN. La recalculer à chaque exécution
+    donnerait à croire que quelqu'un a revu l'image le jour du build : on garde
+    donc celle déjà inscrite dans l'index, quand elle existe.
+    """
+    return _INDEX_PRECEDENT.get(ref, {}).get("verifie_le") or defaut
+
+
 def main() -> None:
+    global _INDEX_PRECEDENT
+    _INDEX_PRECEDENT = json.loads(INDEX.read_text(encoding="utf-8")) if INDEX.exists() else {}
     recs = json.load(open(CORRESP, encoding="utf-8"))
     retenus = [r for r in recs
                if r["match_status"] == "exact" and r["rights_status"] == "open"
@@ -154,6 +171,7 @@ def main() -> None:
             "verifie_le": r["verified_at"],
         }
     ajouter_gallica(index)
+    ajouter_imagerie_commons(index)
 
     INDEX.write_text(json.dumps(index, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"{len(index)} entrées → {INDEX.name} ; {telecharges} nouvelles vignettes.")
@@ -208,9 +226,56 @@ def ajouter_gallica(index: dict) -> int:
             # La réserve, portée jusqu'à l'écran.
             "exemplaire_autre": True,
             "titre_source": r.get("titre_gallica", ""),
-            "verifie_le": str(date.today()),
+            "verifie_le": date_de_controle(ref, str(date.today())),
         }
     print(f"{ajoutees} nouvelles vignettes Gallica.")
+    return ajoutees
+
+
+def ajouter_imagerie_commons(index: dict) -> int:
+    """Ajoute les estampes trouvées dans le fonds Commons d'imagerie populaire.
+
+    Même réserve que pour Gallica — c'est un autre exemplaire du même tirage,
+    pas la feuille du musée — mais la source est ici Commons, avec ses licences
+    propres : le crédit et la licence du fichier sont repris tels quels, jamais
+    remplacés par une formule générique.
+    """
+    if not CORRESP_IMAGERIE.exists():
+        return 0
+    recs = json.loads(CORRESP_IMAGERIE.read_text(encoding="utf-8"))
+    retenus = [r for r in recs if r.get("etat") == "exacte" and r.get("image_url")]
+    if not retenus:
+        return 0
+    print(f"{len(retenus)} estampes retenues dans le fonds d'imagerie Commons.")
+    DOSSIER_IMG.mkdir(parents=True, exist_ok=True)
+    ajoutees = 0
+    for r in sorted(retenus, key=lambda x: x["reference_joconde"]):
+        ref = r["reference_joconde"]
+        if ref in index:
+            continue
+        sortie = DOSSIER_IMG / f"{ref}.jpg"
+        if not sortie.exists():
+            try:
+                optimiser(_get(r["image_url"]), sortie)
+                ajoutees += 1
+                time.sleep(PAUSE)
+            except Exception as ex:
+                print(f"    ⚠ {ref} : {str(ex)[:80]}")
+                continue
+        index[ref] = {
+            "statut": "open",
+            "source_type": "wikimedia_commons",
+            "url": f"oeuvres/{ref}.jpg",
+            "credit": r.get("credit", ""),
+            "creator": r.get("auteur_image", ""),
+            "licence": r.get("licence", ""),
+            "licence_url": r.get("licence_url", ""),
+            "source": r.get("page_source", ""),
+            "exemplaire_autre": True,
+            "titre_source": r.get("fichier", "")[5:],
+            "verifie_le": date_de_controle(ref, str(date.today())),
+        }
+    print(f"{ajoutees} nouvelles vignettes d'imagerie Commons.")
     return ajoutees
 
 

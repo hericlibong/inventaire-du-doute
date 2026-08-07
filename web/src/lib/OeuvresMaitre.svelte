@@ -284,21 +284,30 @@
 							     contain — proportions gardées, jamais rognée ni déformée. Aucun
 							     texte par-dessus : la légende est UNE ligne discrète sous la
 							     vignette.
-							     Deux provenances depuis le 2026-08-06 : Wikimedia Commons, qui
-							     montre l'exemplaire même décrit par la notice ; et Gallica, qui
-							     ne peut montrer QU'UN AUTRE EXEMPLAIRE du même tirage — une
-							     planche d'Épinal a été imprimée à des milliers d'exemplaires,
-							     le musée conserve le sien et la BnF le sien. La réserve est
-							     écrite sous l'image, jamais sous-entendue. -->
+							     Toutes ne montrent pas la même chose. Certaines montrent
+							     l'exemplaire même décrit par la notice ; d'autres ne peuvent
+							     montrer QU'UN AUTRE EXEMPLAIRE du même tirage — une planche
+							     d'Épinal a été imprimée à des milliers d'exemplaires, le musée
+							     conserve le sien et la bibliothèque le sien. La réserve est
+							     écrite sous l'image, jamais sous-entendue.
+							     Elle se lit sur `exemplaire_autre`, porté par la donnée, et NON
+							     sur la provenance : depuis le 2026-08-07, des estampes venues de
+							     Wikimedia Commons sont dans ce cas elles aussi, et s'en remettre
+							     à la seule source ferait passer un exemplaire pour un autre. -->
+							{@const autre = o.image.exemplaire_autre === true}
 							{@const bnf = o.image.source_type === 'gallica_bnf'}
 							<figure class="media-figure">
 								<a class="media media-image" href={o.image.source} target="_blank" rel="noopener" title={bnf ? 'Voir le document sur Gallica' : 'Voir le fichier sur Wikimedia Commons'}>
-									<img src="{base}/{o.image.url}" alt={bnf ? `Autre exemplaire du même tirage : ${o.titre ?? 'œuvre'}` : `Reproduction : ${o.titre ?? 'œuvre'}`} loading="lazy" />
+									<img src="{base}/{o.image.url}" alt={autre ? `Autre exemplaire du même tirage : ${o.titre ?? 'œuvre'}` : `Reproduction : ${o.titre ?? 'œuvre'}`} loading="lazy" />
 								</a>
 								<figcaption class="credit">
-									{#if bnf}
+									{#if autre}
 										<span class="credit-reserve">Autre exemplaire du même tirage</span>
-										Domaine public · source <a href={o.image.source} target="_blank" rel="noopener">Gallica&nbsp;(BnF)</a>
+										{#if bnf}
+											Domaine public · source <a href={o.image.source} target="_blank" rel="noopener">Gallica&nbsp;(BnF)</a>
+										{:else}
+											{#if o.image.credit}<span class="credit-auteur" title={o.image.credit}>{o.image.credit}</span> ·&nbsp;{/if}{o.image.licence === 'CC0' ? 'CC0' : o.image.licence || 'Domaine public'} · source <a href={o.image.source} target="_blank" rel="noopener">Wikimedia&nbsp;Commons</a>
+										{/if}
 									{:else if o.image.licence.startsWith('CC BY')}
 										{#if o.image.creator}<span class="credit-auteur" title={o.image.creator}>{o.image.creator}</span> ·&nbsp;{/if}<a href={o.image.licence_url || o.image.source} target="_blank" rel="noopener">{o.image.licence}</a> · <a href={o.image.source} target="_blank" rel="noopener">Wikimedia&nbsp;Commons</a>
 									{:else}

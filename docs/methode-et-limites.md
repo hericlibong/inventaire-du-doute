@@ -100,7 +100,8 @@ permise** et si elle est rattachée **avec certitude** à la notice.
   retenant que les fichiers sous **domaine public, CC0, CC BY ou CC BY-SA**. Le
   rattachement se fait par l'**identifiant Joconde** (via Wikidata), jamais par
   une ressemblance de titre ou de musée. **192 œuvres** en ont une à ce jour
-  (bilan : `data/exports/images_bilan.json`).
+  (bilan : `data/exports/images_bilan.json`). En comptant les estampes venues de
+  Gallica et du fonds d'imagerie, **209 œuvres sont illustrées**.
 - **Quatorze estampes populaires viennent de Gallica**, et elles portent une
   réserve écrite sous l'image : **« autre exemplaire du même tirage »**. Une
   planche d'Épinal a été imprimée à des milliers d'exemplaires ; le musée
@@ -111,6 +112,24 @@ permise** et si elle est rattachée **avec certitude** à la notice.
   conserve plusieurs notices du même titre, aucune image n'est affichée** —
   l'exemplaire visé serait indéterminé. Les dimensions et la technique varient
   normalement d'un exemplaire à l'autre : elles ne servent pas de preuve.
+- **Trois estampes de plus viennent du fonds d'imagerie déjà versé sur
+  Wikimedia Commons**, avec la même réserve écrite. Elles sont rattachées par le
+  **numéro imprimé sur la planche**, que le musée relève dans sa notice
+  (« Imagerie d'Épinal, n° 631 ») : chaque maison ayant sa propre numérotation,
+  ce numéro départage deux feuilles de même titre, mais n'en désigne jamais une
+  à lui seul — le titre doit concorder aussi.
+- **Onze rapprochements ont été regardés un par un, et dix ont été écartés**,
+  alors qu'ils portaient tous le bon titre. Une image populaire se réédite
+  pendant un siècle : la même composition ressort chez un concurrent, avec un
+  autre numéro et une autre adresse d'imprimeur. Une planche de « Cadet
+  Rousselle » numérotée 384 ne peut pas illustrer une notice qui en annonce 518.
+- **La recherche de reproductions s'arrête là.** Les deux tiers des œuvres qui
+  n'en ont pas sont des dessins et des photographies anciennes, conservés en un
+  seul exemplaire dans des musées de région. Pour un dessin, il n'existe pas
+  d'« autre exemplaire » : la seule source possible est le musée qui le conserve,
+  et aucun de ceux-là ne publie ses images sous licence ouverte. Les
+  photographies du musée du Louvre, elles, ne sont pas librement réutilisables :
+  seul le texte de ses notices l'est.
 - L'appariement par **numéro d'inventaire** a été tenté puis écarté : recoupé
   avec les dimensions relevées sur Wikidata, il n'a produit aucune
   correspondance assez solide — mais il a évité d'afficher 162 fausses
