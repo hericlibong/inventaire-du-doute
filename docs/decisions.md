@@ -2,6 +2,47 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-07 (bis) — Le projet entre en finalisation (décision utilisateur)
+
+Le fond du volume 1 est arrêté : données, profils, portraits et reproductions. **Rien de
+tout cela ne se rouvre.** Ce qui reste relève de la finition et de la mise en publication,
+et se conduit selon un plan en sept phases fixé par l'utilisateur, inscrit en tête de
+`docs/roadmap.md`.
+
+**F1** réalignement des documents · **F2** l'accueil, avec le titre du volume · **F3** les
+finitions visuelles, point par point · **F4** la relecture de l'exploration · **F5** la
+préparation technique au déploiement · **F6** la vérification finale · **F7** la fusion et
+le déploiement.
+
+**Trois règles de conduite, posées par l'utilisateur :**
+1. **Aucun nouveau chantier**, et pas de retour sur les données, les portraits ou les images.
+2. **Une phase à la fois** — jamais deux en parallèle.
+3. **En phase 3, on procède élément par élément** : montrer le défaut observé, poser une
+   question ciblée, proposer deux options concrètes au plus, attendre la décision, appliquer
+   ce qui est validé. Pas de refonte globale, pas de série de corrections d'un bloc.
+
+S'y ajoutent deux principes de rythme, l'un ancien et l'autre né de la séance précédente :
+les vérifications sont **proportionnées** à chaque changement, le contrôle exhaustif étant
+réservé à F6 ; et **aucune collecte ne démarre sans que son rendement ait été chiffré et
+annoncé** — la recherche d'images du matin même a coûté cinquante minutes pour trois
+reproductions, alors qu'un sondage à deux sur quinze permettait de conclure avant de
+construire.
+
+**Ce qui bloque la publication est nommé, et le reste est assumé.** Bloquant : le texte de
+l'accueil (C5), le titre du volume (C3), la relecture des pages reprises (C1), les réglages
+d'une page publiable — langue du document, favicon, titres et descriptions —, et la
+vérification finale. Non bloquant : la longueur des pages sur mobile (C11), la recherche
+d'autres règles héritées mal décrites (C2), le contrôle mot à mot de « notice » et
+« œuvre » (C6, dont la règle est tranchée depuis le 2026-08-03).
+
+**Deux tâches étaient faites sans être cochées**, constat fait en réalignant : la page
+Méthode (É4), refondue le 2026-07-31 puis reprise quatre fois les 4 et 5 août, et la page
+Présentation (É2), dont les trois derniers arbitrages datent du 5 août. Les constats datés
+n'ont pas été réécrits : les mises à jour sont ajoutées et signalées comme telles.
+
+**Rien ne se fusionne ni ne se déploie avant F7**, et la branche `refactor/analyse-maitres`
+reste séparée.
+
 ## 2026-08-07 — Le numéro de planche, et la fin de la recherche d'images
 
 Reprise de la phase 4 sur les artistes du lot 2. Cinq sources ont été instruites ; deux

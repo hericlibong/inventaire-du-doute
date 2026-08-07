@@ -5,6 +5,86 @@ Chaque ⏸ est un point de validation utilisateur : on s'y arrête.
 
 ---
 
+## ★ PLAN DE FINALISATION (ouvert le 2026-08-07) — cap actuel
+
+Le volume 1 est complet sur le fond : les données, les profils et les reproductions sont
+arrêtés. **Ce qui reste relève de la finition et de la mise en publication.** Plan en sept
+phases, fixé par l'utilisateur.
+
+**Trois règles de conduite, non négociables :**
+> 1. **Aucun nouveau chantier.** On ne rouvre ni les données, ni les portraits, ni la
+>    recherche de reproductions.
+> 2. **Une phase à la fois.** On ne travaille pas deux phases en parallèle.
+> 3. **En phase 3, on procède élément par élément** : montrer le défaut observé, poser une
+>    question ciblée, proposer deux options au plus, attendre la décision, appliquer ce qui
+>    est validé — jamais une série de corrections d'un bloc.
+
+Les contrôles sont proportionnés à chaque changement ; **le contrôle exhaustif est réservé
+à la phase 6**. Ni fusion ni déploiement avant la phase 7. La branche
+`refactor/analyse-maitres` reste séparée et n'est pas fusionnée.
+
+- [x] **F1 — Réaligner la roadmap et les documents de suivi** (2026-08-07). Aucun changement
+      d'interface. Travaux réellement faits marqués comme tels (Présentation, Méthode,
+      profils, reproductions) ; tâches ouvertes isolées ; blocages de publication distingués
+      des améliorations ; historique daté conservé sans réécriture ; journal rattrapé du
+      4 au 7 août.
+- [ ] **F2 — Revoir l'accueil** — trois sujets liés, à cadrer ensemble avant tout texte :
+      1. **trancher le titre du volume** et sa cohérence avec « artistes » (solde **C3**,
+         reprend **É5**) ;
+      2. **réécrire le texte de l'accueil** (solde **C5**) ;
+      3. **revoir la composition et le design de la page** : place et hiérarchie du titre,
+         accroche, chiffres, navigation, équilibre de l'illustration, lisibilité, mobile.
+      L'affiche interactive et son illustration restent le point de départ, mais leur
+      composition peut bouger. **Commencer par un diagnostic concret de l'accueil actuel et
+      la liste des décisions à prendre** — aucun texte ni aucune composition proposés avant.
+      Contrainte de forme connue : la zone sombre de l'affiche est étroite, trois lignes
+      courtes maximum (decisions.md, undecies) — à revoir si la composition change.
+- [ ] **F3 — Finitions visuelles, point par point.** Périmètre non arrêté. Sujets pressentis :
+      marges et rythme vertical · navigation · panneaux et états interactifs · cartes et
+      listes d'œuvres · carte des musées · états sans image · affichage mobile · cohérence
+      visuelle entre les quatre pages publiques. Reprend **C11** (longueur des pages sur
+      mobile) et **C2** (règles héritées qui décrivent mal ce qu'on regarde).
+- [ ] **F4 — Relecture ciblée de l'exploration** (reprend **É3**). Pas de réécriture
+      générale : titres et textes courts, formulations des profils, compréhension des
+      filtres, emploi de « notice » et « œuvre » (**C6**), textes des onglets Profil, Œuvres
+      et Musées. Toute modification éditoriale importante est discutée avant application.
+- [ ] **F5 — Préparation technique au déploiement.** Relevé fait le 2026-08-07, à traiter :
+      **`lang="en"` dans `web/src/app.html`** (à passer en `fr`) · **favicon Svelte par
+      défaut** (`$lib/assets/favicon.svg`, seule balise du `svelte:head` du layout) ·
+      **aucun titre ni description de page** (seule `/presentation` a un `svelte:head`
+      propre) · métadonnées de partage et leur image · **sort de la route `/revisions`**,
+      restée en place · avertissements de build qui gênent réellement · poids des images de
+      couverture · compatibilité avec l'hébergement et le chemin de déploiement retenus.
+- [ ] **F6 — Vérification finale** (c'est la **phase 8** ouverte le 2026-08-02, ci-dessous) :
+      routes et redirections · liens internes et externes · filtres et combinaisons ·
+      clavier et toucher · mobile et ordinateur · images, crédits et licences · tests ·
+      build statique · cohérence des chiffres publics · README et documents vivants.
+      Rapport distinguant **blocages réels** et **limites assumées**.
+- [ ] **F7 — Fusion et déploiement**, après validation finale seulement : état de la branche,
+      fusion des seuls travaux validés dans `main`, build de publication, déploiement,
+      vérification de la version réellement en ligne.
+
+### Ce qui bloque la publication, et ce qui peut attendre
+
+**Bloquant** — rien ne se publie tant que ce n'est pas traité :
+- **C5 / F2** — le texte de l'accueil, jugé non publiable (2026-08-02).
+- **C3 / F2** — le titre du volume, non tranché.
+- **C1** — la passe éditoriale sur les textes publiés, pour les pages traitées en F2 et F4.
+- **F5** — langue du document, favicon, titres et descriptions : une page publiée sans cela
+  est mal indexée et mal partagée.
+- **F6** — la vérification finale.
+
+**Non bloquant, assumé si le temps manque** :
+- **C11** — longueur des pages sur mobile (le sommaire par ancres est en place depuis le
+  2026-08-04, c'est lui qui rendait la longueur pénible).
+- **C2** — recherche d'autres règles héritées mal décrites : travail d'hygiène, sans effet
+  visible pour le lecteur.
+- **C6** — vérification page par page de « notice » / « œuvre » : la règle est tranchée
+  (2026-08-03), il ne reste qu'un contrôle de cohérence, prévu en F4 et F6.
+- Le sort de `/revisions` : une décision, pas un défaut.
+
+---
+
 ## ★ EN COURS (2026-08-02) — Volume 1 : Autour des maîtres
 
 Objectif : publier un premier volume autonome, consacré aux artistes dont le nom apparaît
@@ -128,11 +208,36 @@ l'accueil en dernier parce qu'il résume ce que les autres pages auront fixé.
       titre entre dans la colonne de contenu, sur cette page ET sur Méthode ; le glossaire
       garde les en-têtes du graphique et porte l'annotation de chaque zone.
       **Reste à faire** : la relecture de fond des textes de la page, qui relève de **C1**.
-- [ ] **É3 — Revoir les textes de l'exploration des artistes.**
-- [ ] **É4 — Revoir la page Méthode.**
+      **Mise à jour du 2026-08-07 : É2 est CLOSE.** La page a reçu ses trois arbitrages le
+      2026-08-05 (`a53301d`) puis le bandeau de titre et le sommaire partagé. La relecture
+      de fond reste due au titre de **C1**, avec les autres pages, et non comme un reliquat
+      de cette tâche.
+- [ ] **É3 — Revoir les textes de l'exploration des artistes.** → devient **F4**.
+- [x] **É4 — Revoir la page Méthode. FAITE**, en deux temps : la refonte de la page en six
+      questions, sept paliers, mergée le 2026-07-31 (`ecf8054`) — quatre visuels, provenance
+      mesurée, repères dans une page longue ; puis quatre reprises rédactionnelles les 4 et
+      5 août (decisions.md du 2026-08-05, bis à sexies) : réglages communs avec la page
+      Présentation, « Comment une attribution incertaine est-elle indiquée dans Joconde ? »,
+      « Que comptons-nous, et comment ? », « Comment la liste des artistes a-t-elle été
+      établie ? », et la fermeture sur « Limites et sources ».
+      Constaté a posteriori le 2026-08-07 : la case n'avait jamais été cochée, le travail
+      ayant été mené sur sa propre branche avant l'ouverture du chantier éditorial.
 - [ ] **É5 — Régler les questions éditoriales transversales**, notamment le titre du volume.
-      Recoupe **C3**.
-- [ ] **É6 — Revoir la page d'accueil, en dernier.** Traite **C5**.
+      Recoupe **C3**. → traité dans **F2**, dont c'est le premier sujet.
+- [ ] **É6 — Revoir la page d'accueil, en dernier.** Traite **C5**. → devient **F2**.
+
+**Deux volets menés hors chantier éditorial, terminés au 2026-08-07 :**
+- [x] **Profils et portraits** (branche `feat/profils-et-images`, 2026-08-05 → 06). Les
+      **102 artistes sur 102** ont leur ligne de repérage (**C4**) ; **73 portraits** intégrés,
+      crédit et licence sous l'image. Pour les **29 sans portrait, on n'affiche rien** — ni
+      image de remplacement, ni mention d'absence (decisions.md, 2026-08-06 octies). Trois
+      demandes d'autorisation et un dessin restent du ressort de l'utilisateur : ils ne
+      bloquent rien.
+- [x] **Reproductions d'œuvres** (2026-08-06 → 07). **209 œuvres illustrées.** Commons par
+      identifiant, puis Gallica, puis le fonds d'imagerie de Commons. **La recherche est
+      close** : le Louvre n'accorde pas de licence ouverte sur ses photographies, Limédia est
+      inaccessible aux outils, et les deux tiers des œuvres sans image sont des objets uniques
+      dans des musées qui ne versent rien (donnees.md et decisions.md du 2026-08-07).
 
 ---
 
@@ -142,14 +247,17 @@ Ouvert le 2026-08-02 à la demande de l'utilisateur. Tout ce qui est repéré en
 volontairement remis à plus tard s'inscrit ICI, et **rien n'en sort sans avoir été traité**.
 Le registre est relu au point de contrôle 2, et les corrections sont portées en phase 8.
 
-- [ ] **C1 — Les textes publiés doivent être retravaillés.** Toute la copie écrite pendant les
+- [ ] **C1 — Les textes publiés doivent être retravaillés.** → traité page par page dans
+      **F2** (accueil) et **F4** (exploration) ; les pages Présentation et Méthode ont été
+      reprises entre le 4 et le 5 août et n'attendent plus qu'une relecture de confort.
+      BLOQUANT pour les pages traitées en F2 et F4. Toute la copie écrite pendant les
       phases 0 à 7 est une PREMIÈRE ÉCRITURE : titres, chapôs, phrases de lecture des
       graphiques, intitulés, textes de la page Présentation, notes d'unité. Elle est juste sur
       le fond et vérifiée sur les chiffres, mais elle n'a pas été retravaillée. Prévoir une
       passe éditoriale complète, page par page, avant publication — registre journalistique
       sobre (CLAUDE.md), phrases courtes, aucune formule creuse, et surtout la relecture à voix
       haute qui n'a pas eu lieu.
-- [ ] **C5 — Le texte de l'accueil est à refaire entièrement.** Verdict utilisateur du
+- [ ] **C5 — Le texte de l'accueil est à refaire entièrement.** → **F2**, sujet 2. BLOQUANT. Verdict utilisateur du
       2026-08-02 : « dans l'état actuel il ne veut rien dire, c'est totalement incohérent,
       abstrait et non publiable ». Ce qui ne va pas, pour que la réécriture parte de quelque
       chose : « Quand le musée n'est pas sûr, il l'écrit » énonce une généralité sans dire de
@@ -159,7 +267,8 @@ Le registre est relu au point de contrôle 2, et les corrections sont portées e
       donne à voir une œuvre, un nom, une hésitation. L'affiche doit faire entrer, pas
       résumer. **À réécrire d'un bloc, avec la contrainte de forme connue** : trois lignes
       courtes maximum, la zone sombre de l'affiche étant étroite (decisions.md, undecies).
-- [ ] **C6 — Cohérence « notice » / « œuvre », page par page** (statut bloquant RETIRÉ le
+- [ ] **C6 — Cohérence « notice » / « œuvre », page par page** → contrôle en **F4** puis
+      en **F6**. NON BLOQUANT depuis le 2026-08-03. (statut bloquant RETIRÉ le
       2026-08-03 : c'est une convention, pas un défaut — decisions.md, 2026-08-03 bis).
       **« notice »** pour la méthode, les données et les explications techniques ;
       **« œuvre »** pour l'interface, les légendes, les bulles et les textes destinés au
@@ -191,16 +300,18 @@ Le registre est relu au point de contrôle 2, et les corrections sont portées e
       tête de la colonne du média : **220 px de hauteur → 20 px**. Les entrées qui portent une
       image ne bougent pas (gabarit 176 × 220 px, inchangé), et les titres restent alignés sur
       une seule abscisse d'une entrée à l'autre.
-- [~] **C11 — Longueur des pages sur mobile.** Mesuré au 2026-08-03 : Méthode **9 294 px**,
+- [~] **C11 — Longueur des pages sur mobile.** → **F3**. NON BLOQUANT. Mesuré au 2026-08-03 : Méthode **9 294 px**,
       Présentation **6 175 px**, onglet Œuvres filtré 3 299 px. **Le sommaire manquant est
       traité** : la Présentation a le même rail que la Méthode depuis le 2026-08-04, et le
       mécanisme est devenu un composant partagé (`lib/SommaireAncres.svelte`). Reste la
       longueur elle-même, à reprendre avec la passe éditoriale (C1).
-- [ ] **C2 — Chercher les règles héritées qui décrivent mal ce qu'on regarde.** Une a été
+- [ ] **C2 — Chercher les règles héritées qui décrivent mal ce qu'on regarde.** → **F3**,
+      au fil des éléments examinés. NON BLOQUANT. Une a été
       trouvée et corrigée le 2026-08-02 : « pas de carte en dessous de deux musées », qui
       traitait un repère géographique comme un graphique de répartition. Le défaut n'était pas
       dans le seuil mais dans la description. En chercher d'autres du même ordre.
-- [ ] **C3 — Le titre du volume et le mot « artistes ».** L'interface dit « Explorer les
+- [ ] **C3 — Le titre du volume et le mot « artistes ».** → **F2**, sujet 1, à trancher
+      en premier car l'accueil en dépend. BLOQUANT. L'interface dit « Explorer les
       artistes » ; le volume s'intitule « Autour des maîtres ». Ici « maître » se lit dans son
       sens relationnel (les œuvres autour du maître), ce qui reste conforme à la règle du
       2026-08-02 — mais la cohabitation mérite un arbitrage.
@@ -217,6 +328,9 @@ Le registre est relu au point de contrôle 2, et les corrections sont portées e
 - [ ] **Phase 8 — Vérification et publication** : chiffres, combinaisons de filtres, liens,
       images et crédits, mobile, clavier, tests, build, routes et redirections, docs à jour,
       **registre des corrections soldé**, fusion des seules branches validées.
+      **Reprise le 2026-08-07 sous le nom de F6 (vérification) et F7 (fusion et
+      déploiement)**, dans le plan de finalisation en tête de document. Le contenu ne change
+      pas ; s'y ajoute la préparation technique au déploiement, isolée en **F5**.
 
 ---
 

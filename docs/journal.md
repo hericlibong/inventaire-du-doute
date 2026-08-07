@@ -2,6 +2,72 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-08-07 — Le journal reprend, et le cap change
+
+Ce journal s'était arrêté au 3 août, alors que le travail, lui, a continué quatre jours de
+plus. Voici ce qui s'est passé entre-temps, dans l'ordre, avant d'entrer dans la
+finalisation.
+
+**Les 4 et 5 août, les deux pages de texte ont été reprises.** La Présentation a reçu ses
+chiffres clés, sa section chiffrée en trois zones désignables, et un sommaire par ancres
+devenu un composant partagé avec la Méthode. Trois points en attente ont été tranchés le
+5 : la précaution sous le graphique ne nomme plus de direction de l'écran — règle générale,
+aucun texte publié ne dit hauteur, largeur ni colonne de gauche, parce que l'affichage
+bascule et le texte non ; le bandeau de titre entre dans la colonne de contenu ; le
+glossaire porte l'annotation de chaque zone. La page Méthode a suivi le même chemin, en
+quatre reprises.
+
+**Les 5 et 6 août, la carte des musées a été close.** Une position par musée, stable sur
+toutes les fiches, et surtout un seul espace d'information : le survol annonce, il
+n'informe plus. Les règles ont été remontées dans la charte graphique plutôt que laissées
+dans un récit daté — c'est le premier patron réutilisable, « carte + panneau ».
+
+**Le 6 août, les profils et les portraits.** Les 102 artistes ont leur ligne de repérage,
+73 ont un portrait. Pour les 29 autres, on n'affiche rien : ni image de remplacement, ni
+phrase disant l'absence. J'avais ajouté cette phrase de moi-même sur une fiche témoin ;
+elle a été refusée, et à juste titre — elle n'avait pas été demandée.
+
+**Les 6 et 7 août, les reproductions d'œuvres, et leur point final.** Commons rejoué sur le
+corpus complet, puis Gallica, puis le fonds d'imagerie de Commons : 209 œuvres illustrées.
+La recherche est close, et ce qui la clôt mérite d'être dit — le Louvre n'accorde pas de
+licence ouverte sur ses photographies, Limédia est fermé aux outils, et les deux tiers des
+œuvres sans image sont des dessins ou des photographies anciennes conservés en un seul
+exemplaire par des musées qui ne versent rien. Pour un dessin, il n'existe pas d'autre
+exemplaire.
+
+**La dernière séance a coûté trop cher pour ce qu'elle a rapporté** : près de cinquante
+minutes pour trois images. J'avais pourtant le chiffre avant de commencer — un sondage
+donnait deux résultats sur quinze — et j'ai construit au lieu de m'arrêter et de le dire.
+Règle posée pour la suite : avant toute collecte, sonder, annoncer le rendement attendu,
+et attendre le feu vert.
+
+**Le cap change aujourd'hui.** Le fond est arrêté ; on entre dans la finition, en sept
+phases, jusqu'à la publication. Rien ne rouvre les données, les portraits ni les images.
+
+## 2026-08-07 — Phase 1 : remettre les documents en face du travail
+
+Première phase du plan de finalisation, et la seule sans une ligne d'interface modifiée :
+mettre la roadmap en conformité avec ce qui existe réellement.
+
+Deux tâches étaient faites sans être cochées. La page Méthode, d'abord : refondue le
+31 juillet en six questions, puis reprise quatre fois les 4 et 5 août — la case était
+restée vide parce que le travail avait été mené sur sa propre branche, avant l'ouverture du
+chantier éditorial. La page Présentation ensuite, dont les trois derniers points ont été
+tranchés le 5 août ; ce qu'il lui reste n'est pas un reliquat de la tâche, c'est la
+relecture de confort due à toutes les pages.
+
+Le reste est un tri. Ce qui bloque la publication tient en cinq lignes : le texte de
+l'accueil, le titre du volume, la relecture des pages qui vont être reprises, les réglages
+techniques d'une page publiable — langue du document, favicon, titres —, et la vérification
+finale. Ce qui peut attendre est nommé comme tel, et assumé : la longueur des pages sur
+mobile, la chasse aux règles héritées mal décrites, le contrôle mot à mot de « notice » et
+« œuvre ». Un point n'est ni l'un ni l'autre : le sort de la route `/revisions` est une
+décision à prendre, pas un défaut à corriger.
+
+Relevé technique fait au passage, pour que la phase 5 parte de faits : le document est
+déclaré en anglais, le favicon est encore celui de Svelte, et aucune page ne porte de titre
+propre — le layout n'a qu'une balise d'icône dans son en-tête.
+
 ## 2026-08-03 — Audit avant fusion : ce que douze captures ont montré
 
 Point de contrôle 2, mené comme un audit et non comme une validation : les six écrans, en
