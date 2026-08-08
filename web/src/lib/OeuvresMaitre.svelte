@@ -326,7 +326,7 @@
 						{/if}
 						<div class="corps">
 							<p class="kicker">
-								<span class="pastille" style="background: {fam(o.code).couleur}"></span>{fam(o.code).header}
+								<span class="trait-famille" style="background: {fam(o.code).couleur}"></span>{fam(o.code).header}
 							</p>
 							<h4 class="titre">{o.titre ?? 'Sans titre'}</h4>
 							<!-- Le lieu disparaît quand un filtre par musée est actif : toutes les
@@ -693,6 +693,21 @@
 
 	.corps {
 		min-width: 0;
+	}
+
+	/* Repère de famille : un TRAIT et non plus une pastille (2026-08-08). Le point
+	   rond appartient au graphique, où il porte une mesure ; répété ici, il évoquait
+	   une puce ou un état cliquable. Un trait couché sous le même angle que le
+	   libellé se lit comme un repère de catégorie, rien d'autre.
+	   Le filet VERTICAL devant le verbatim est conservé et garde son rôle propre :
+	   le trait nomme la famille, le filet accompagne les mots du musée. */
+	.trait-famille {
+		flex: none;
+		width: 20px;
+		height: 3px;
+		/* Le libellé est en capitales : son axe optique est un peu au-dessus du
+		   centre de la ligne. Sans ce décalage, le trait paraît tomber. */
+		margin-top: 1px;
 	}
 
 	/* Kicker = le même mot et la même couleur que le point du graphique. */
