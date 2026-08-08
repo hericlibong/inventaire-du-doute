@@ -46,7 +46,7 @@
 		</div>
 	{/if}
 
-	<div class="bandeau-texte">
+	<div class="bandeau-titre">
 		<!-- Pont de nom (2026-07-22) : le titre porte le nom courant, suivi du nom
 		     d'état civil quand il diffère — c'est celui que le lecteur retrouvera,
 		     à l'envers, sur les notices de l'onglet « Œuvres »
@@ -54,6 +54,9 @@
 		<h2>{maitre.nom}{#if nomCivilMaitre(maitre.nom)}{' '}<span class="nom-civil"
 				>({nomCivilMaitre(maitre.nom)})</span
 			>{/if}</h2>
+	</div>
+
+	<div class="bandeau-texte">
 		{#if bioMaitre(maitre.nom)}
 			<p class="bio">{bioMaitre(maitre.nom)}</p>
 		{/if}
@@ -83,13 +86,35 @@
 	/* Portrait (largeur bornée, charte §5) à gauche, texte à droite ; gouttière
 	   resserrée pour que l'image et le bloc éditorial forment une seule composition.
 	   justify-content: start → le bloc reste calé à gauche, pas étalé. */
+	/* Colonne du portrait ramenée de 16 à 13 rem le 2026-08-08 (phase 3).
+	   Le portrait et sa légende fixaient toute la hauteur du bandeau : le texte, à
+	   droite, s'arrêtait 76 px plus haut et laissait un vide, et le départ des
+	   onglets dépendait de l'image et non du contenu. Resserrée, la colonne de
+	   gauche devient la plus courte : c'est le TEXTE qui commande la hauteur, et le
+	   bandeau se termine sur le contenu. Le portrait garde sa présence — il n'est
+	   pas ramené au rang de vignette. */
 	.bandeau {
 		display: grid;
-		grid-template-columns: 16rem minmax(0, 34rem);
+		grid-template-columns: 14.5rem minmax(0, 36rem);
+		/* Trois zones plutôt que deux blocs : le NOM est une zone à lui seul. Sur
+		   ordinateur il occupe la colonne de droite, au-dessus des informations ;
+		   sur mobile il vient se placer À CÔTÉ du portrait, et les informations
+		   reprennent dessous sur toute la largeur. */
+		grid-template-areas:
+			'portrait titre'
+			'portrait texte';
 		justify-content: start;
-		gap: var(--espace-5);
+		gap: 0 var(--espace-5);
 		align-items: start;
 		margin-top: var(--espace-2);
+	}
+
+	.bandeau-titre {
+		grid-area: titre;
+	}
+
+	.bandeau-texte {
+		grid-area: texte;
 	}
 
 	/* Sans portrait, le texte occupe la largeur des deux colonnes réunies
@@ -97,11 +122,20 @@
 	   saute pas d'un artiste à l'autre, et aucune colonne ne reste vide. */
 	.bandeau.sans-portrait {
 		grid-template-columns: minmax(0, 50rem);
+		grid-template-areas:
+			'titre'
+			'texte';
 	}
 
 	.bandeau-portrait {
-		width: 16rem;
+		grid-area: portrait;
+		width: 14.5rem;
 		max-width: 100%;
+		/* Le haut de l'image est aligné sur la PREMIÈRE LIGNE du nom, et non sur le
+		   haut de sa boîte : une capitale de 3 rem laisse au-dessus d'elle un blanc
+		   d'interligne, et sans cette correction le portrait paraît monter plus haut
+		   que le titre. */
+		margin-top: 0.35rem;
 	}
 
 	.bandeau-texte {
@@ -189,16 +223,44 @@
 		max-width: 32rem;
 	}
 
-	/* Bandeau étroit : une seule colonne — portrait puis texte, calés à gauche, même
-	   ordre narratif. Le seuil porte sur la largeur RÉELLE de la fiche (conteneur de
-	   requête défini par la fiche parente). */
+	/* Bandeau étroit (2026-08-08) : le portrait et le NOM passent côte à côte, et les
+	   informations reprennent dessous sur toute la largeur.
+	   Auparavant tout s'empilait : un portrait pleine largeur, sa légende, puis le
+	   nom — le lecteur descendait sur près de 400 px avant de savoir de qui il
+	   s'agissait, et les onglets arrivaient encore plus bas. Le seuil porte sur la
+	   largeur RÉELLE de la fiche (conteneur de requête défini par la fiche parente). */
 	@container (max-width: 38rem) {
 		.bandeau {
-			grid-template-columns: 1fr;
-			gap: var(--espace-4);
+			grid-template-columns: 9rem minmax(0, 1fr);
+			grid-template-areas:
+				'portrait titre'
+				'texte texte';
+			gap: 0 var(--espace-4);
 		}
+
+		.bandeau.sans-portrait {
+			grid-template-columns: 1fr;
+			grid-template-areas:
+				'titre'
+				'texte';
+		}
+
 		.bandeau-portrait {
+			width: 9rem;
 			justify-self: start;
+			margin-top: 0.2rem;
+		}
+
+		/* Le nom partage la ligne : il descend d'un cran dans l'échelle pour tenir
+		   sans compression ni césure sauvage. Il reste le plus grand de la fiche. */
+		h2 {
+			font-size: var(--taille-xl);
+		}
+
+		/* Les informations démarrent sous la ligne portrait + nom, jamais collées à
+		   elle. */
+		.bandeau-texte {
+			margin-top: var(--espace-3);
 		}
 	}
 </style>

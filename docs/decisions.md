@@ -2,6 +2,52 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-08 (sexies) — Le bandeau de l'artiste, rééquilibré
+
+Suite du point précédent, sur décision de l'utilisateur : **principe de la proposition 1**
+(portrait resserré, crédit aligné, composition stable), mais **sans la réduction à 11 rem**,
+qui aurait fait du portrait une vignette.
+
+**Le défaut, mesuré.** Le portrait et sa légende fixaient toute la hauteur du bandeau. Le
+texte, à droite, s'arrêtait **76 px plus haut** et laissait un vide, et le départ des onglets
+dépendait de l'image et non du contenu. La légende, centrée sur trois lignes, paraissait
+détachée du portrait comme du reste de la fiche.
+
+**Ce qui change sur ordinateur :**
+- colonne du portrait ramenée de **16 à 14,5 rem**, image de **15 à 13 rem** de haut. Assez
+  resserré pour que ce soit désormais le TEXTE qui commande la hauteur ; assez grand pour
+  que le portrait garde sa présence ;
+- **crédit aligné à gauche** sous l'image, et non plus centré : calé sur le même bord que
+  la photographie, il lui appartient visiblement. L'image reçoit `object-position: left
+  bottom` pour partager ce bord ;
+- corps du crédit à **0,7 rem sur 14,5 rem**, soit environ 41 signes par ligne. Le crédit
+  médian du corpus en compte 82 : il tient donc **sur deux lignes dans la majorité des
+  cas**, sur trois pour les plus longs (Corneille de Lyon, 122 signes). **Jamais tronqué** —
+  une attribution, une licence et un lien sont des obligations, pas des ornements ;
+- **le vide a disparu** : les deux colonnes se terminent désormais à la même hauteur, à
+  0 px près (mesuré sur la fiche Le Brun).
+
+**Ce qui change sur mobile.** Le bandeau empilait un portrait pleine largeur, sa légende,
+puis le nom : le lecteur descendait près de 400 px avant de savoir de qui il s'agissait.
+**Le portrait (9 rem) et le nom passent côte à côte**, et les informations reprennent
+dessous sur toute la largeur. Le nom descend d'un cran dans l'échelle typographique pour
+tenir sans compression — il reste le plus grand élément de la fiche. **Les onglets
+apparaissent environ 450 px plus tôt.**
+
+Pour y parvenir, le nom est devenu une **zone de grille à part** (`grid-template-areas`) :
+sur ordinateur il occupe la colonne de droite au-dessus des informations, sur mobile il se
+place à côté du portrait. Aucun texte, aucun chiffre, aucune image, aucun crédit n'a été
+modifié.
+
+**Artistes sans portrait** (29 sur 102) : rien ne change. Pas de placeholder, pas de mention
+d'absence, le texte prend la largeur et enchaîne proprement sur les onglets.
+
+**Vérifié sur cinq cas** : nom court avec portrait (Le Brun), nom long (Giacinto
+Calandrucci), nom d'état civil (Michel-Ange / Michelangelo Buonarroti), sans portrait (Léon
+Tirode), et les trois onglets successivement. **Le groupe d'onglets ne bouge pas d'un pixel
+au changement de vue** — position et dimensions identiques, mesurées sur ordinateur et sur
+mobile.
+
 ## 2026-08-08 (quinquies) — Les onglets deviennent des commandes
 
 Reprise du point précédent : la première version ne répondait pas à l'objectif (constat

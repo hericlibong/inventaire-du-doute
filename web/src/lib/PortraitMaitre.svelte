@@ -94,8 +94,11 @@
 		margin: 0;
 		display: flex;
 		flex-direction: column;
-		align-items: center;
-		gap: 0.4rem;
+		/* Aligné à GAUCHE depuis le 2026-08-08 : le crédit, centré sur trois lignes,
+		   paraissait détaché du portrait comme du reste de la fiche. Calé sur le
+		   bord gauche de l'image, il lui appartient visiblement. */
+		align-items: flex-start;
+		gap: 0.45rem;
 		/* pas de cadre : l'image flotte, posée dans la marge du texte */
 	}
 
@@ -105,9 +108,17 @@
 		   « sauter » la page au changement. Boîte constante + object-fit: contain =
 		   même empreinte pour tous, sans rogner les visages. */
 		width: 100%;
-		height: 15rem;
+		/* 13 rem depuis le 2026-08-08 (au lieu de 15) : le portrait et sa légende
+		   fixaient toute la hauteur du bandeau et laissaient 76 px de vide sous le
+		   texte, à droite. Assez resserré pour que ce soit désormais le TEXTE qui
+		   commande la hauteur ; assez grand pour rester un portrait et non une
+		   vignette d'identification. */
+		height: 13rem;
 		object-fit: contain;
-		object-position: bottom;
+		/* `left bottom` et non `bottom` : l'image est calée sur le même bord que son
+		   crédit, sinon un portrait étroit flotte au centre d'une boîte alignée à
+		   gauche. */
+		object-position: left bottom;
 		/* pas de cadre : l'image flotte, ombre douce pour la détacher du fond */
 		filter: drop-shadow(0 4px 10px rgba(43, 30, 20, 0.18));
 	}
@@ -117,11 +128,29 @@
 	}
 
 	/* Crédit d'image en petit corps, format normé (sujet, auteur, source, licence). */
+	/* Crédit d'image : format normé (sujet, auteur, source, licence), aligné à
+	   gauche sous l'image. Il tient généralement sur deux lignes ; il n'est JAMAIS
+	   tronqué — une attribution, une licence et un lien sont des obligations, pas
+	   des ornements que l'on coupe pour gagner de la place. */
 	.portrait-legende {
-		font-size: 0.72rem;
-		text-align: center;
+		/* 0,7 rem sur une colonne de 14,5 rem : environ 41 signes par ligne. Le
+		   crédit médian du corpus en compte 82 — il tient donc sur deux lignes dans
+		   la majorité des cas, et sur trois pour les plus longs (Corneille de Lyon,
+		   122 signes), sans jamais être coupé. */
+		font-size: 0.7rem;
+		text-align: left;
 		color: var(--couleur-encre-douce);
-		line-height: 1.3;
+		line-height: 1.35;
+		max-width: 100%;
+	}
+
+	/* En colonne étroite, l'image suit la largeur de sa colonne (9 rem) : sans cela
+	   une boîte de 13 rem de haut pour 9 rem de large étirerait le blanc autour d'un
+	   portrait déjà petit. */
+	@container (max-width: 38rem) {
+		.visage {
+			height: 9rem;
+		}
 	}
 
 	.portrait-legende a {

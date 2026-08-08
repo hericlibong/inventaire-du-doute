@@ -2,6 +2,34 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-08-08 — Deux corrections sur la fiche d'artiste
+
+Les onglets d'abord, et il a fallu s'y reprendre. La première version faisait une barre :
+trois libellés posés sur un filet qui courait jusqu'au bout de la page. Elle regroupait
+mieux, mais le filet attirait l'œil plus que les commandes et se lisait comme un séparateur
+de section. Verdict de l'utilisateur : ça ne donne toujours pas envie de cliquer. La
+deuxième version supprime le filet et fait ce qu'il fallait faire d'emblée — trois boutons
+contigus, cernés d'une bordure, l'actif sur aplat cobalt.
+
+Un piège s'y cachait : l'onglet actif est en gras, les autres non. Sans précaution, le
+groupe change de largeur à chaque clic et la page tressaute. Chaque bouton réserve donc en
+permanence la place de son propre libellé en gras, par un double invisible. Mesure faite
+après coup : position et dimensions strictement identiques d'un onglet à l'autre.
+
+Le bandeau ensuite. Le portrait et sa légende fixaient toute la hauteur, le texte s'arrêtait
+76 px plus haut, et les onglets démarraient donc en fonction de l'image plutôt que du
+contenu. Le portrait est resserré — 14,5 rem au lieu de 16, l'image 13 au lieu de 15 — et
+son crédit, jusque-là centré sur trois lignes, s'aligne sur le bord gauche de l'image. Les
+deux colonnes se terminent maintenant à la même hauteur, à zéro pixel près.
+
+Le vrai gain est sur mobile. On empilait un portrait pleine largeur, sa légende, puis le
+nom : il fallait descendre près de 400 px pour savoir de qui parlait la fiche. Portrait et
+nom passent côte à côte, les informations reprennent dessous, et les onglets remontent
+d'environ 450 px.
+
+Vérifié sur cinq cas, dont un nom long, un nom d'état civil et un artiste sans portrait —
+pour ces derniers, rien ne change : ni image de remplacement, ni mention d'absence.
+
 ## 2026-08-08 — L'accueil, et une contrainte qui n'existait pas
 
 Le texte de la couverture est remplacé. Celui d'avant énonçait que « quand le musée n'est pas
