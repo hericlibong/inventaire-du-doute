@@ -28,17 +28,35 @@ Les contrôles sont proportionnés à chaque changement ; **le contrôle exhaust
       profils, reproductions) ; tâches ouvertes isolées ; blocages de publication distingués
       des améliorations ; historique daté conservé sans réécriture ; journal rattrapé du
       4 au 7 août.
-- [ ] **F2 — Revoir l'accueil** — trois sujets liés, à cadrer ensemble avant tout texte :
-      1. **trancher le titre du volume** et sa cohérence avec « artistes » (solde **C3**,
-         reprend **É5**) ;
-      2. **réécrire le texte de l'accueil** (solde **C5**) ;
-      3. **revoir la composition et le design de la page** : place et hiérarchie du titre,
-         accroche, chiffres, navigation, équilibre de l'illustration, lisibilité, mobile.
-      L'affiche interactive et son illustration restent le point de départ, mais leur
-      composition peut bouger. **Commencer par un diagnostic concret de l'accueil actuel et
-      la liste des décisions à prendre** — aucun texte ni aucune composition proposés avant.
-      Contrainte de forme connue : la zone sombre de l'affiche est étroite, trois lignes
-      courtes maximum (decisions.md, undecies) — à revoir si la composition change.
+- [x] **F2 — Revoir l'accueil** (2026-08-08). Les trois sujets sont traités.
+      1. **Titre du volume tranché** : « Volume 1 — Autour des maîtres » est CONSERVÉ
+         (décision utilisateur). Le mot y garde son sens relationnel — les œuvres autour du
+         maître —, conforme à la règle du 2026-08-02 ; l'interface continue de dire
+         « artistes » pour désigner les personnes. **C3 est soldé**, par une justification
+         et non par un changement.
+      2. **Texte remplacé en entier**, sur le texte de l'utilisateur repris tel quel : le nom
+         d'un artiste peut accompagner une œuvre sans que le musée la lui attribue
+         directement ; ce volume explore ces liens. Sans énumération de mentions, sans
+         commencer par « Dans Joconde ». Chiffres sortis des phrases en information autonome
+         (« 102 artistes · 6 081 notices », lus dans les données). Source complétée :
+         « Source : Joconde, catalogue collectif des musées de France. » **C5 est soldé.**
+      3. **Composition revue** : colonne élargie (les deux bornes de 34 % et 23 caractères
+         hachaient les phrases), largeurs passées en unités relatives à la fenêtre — l'aplat
+         sombre est une forme de l'illustration, il suit l'écran et non la police —, voile
+         local étendu à l'ordinateur pour garantir la lisibilité quel que soit le recadrage,
+         séparateur de milliers rendu visible, et navigation ramenée sur un axe commun.
+      **Renommage public** : « Présentation » devient « Le projet », aux quatre endroits qui
+      désignent la page.
+      **Les adresses suivent** : `/presentation` → **`/projet`**, `/les-presque` →
+      **`/artistes`**. Les libellés publics ne changent pas. Trois redirections permanentes
+      (308) conservent les anciennes URL, `/echelle` comprise. Les ancres survivent — un
+      fragment n'est jamais envoyé au serveur. Le nom interne « presque » n'est pas
+      pourchassé : il ne s'affiche nulle part.
+      Vérifié à 1440, 1280, 1920 et 390 px, plus un écran court (390 × 640) : un seul écran,
+      aucun débordement, contrastes de 8,4:1 à 14,2:1. 306 tests Python, 16 tests front,
+      build statique OK, redirections vérifiées sans boucle.
+      **Une règle héritée de plus est tombée** (elle relève de **C2**) : « l'aplat sombre est
+      étroit, trois lignes courtes maximum » était faux, et avait plafonné la réécriture.
 - [ ] **F3 — Finitions visuelles, point par point.** Périmètre non arrêté. Sujets pressentis :
       marges et rythme vertical · navigation · panneaux et états interactifs · cartes et
       listes d'œuvres · carte des musées · états sans image · affichage mobile · cohérence
@@ -67,8 +85,8 @@ Les contrôles sont proportionnés à chaque changement ; **le contrôle exhaust
 ### Ce qui bloque la publication, et ce qui peut attendre
 
 **Bloquant** — rien ne se publie tant que ce n'est pas traité :
-- **C5 / F2** — le texte de l'accueil, jugé non publiable (2026-08-02).
-- **C3 / F2** — le titre du volume, non tranché.
+- ~~C5 / F2 — le texte de l'accueil~~ : **soldé le 2026-08-08**.
+- ~~C3 / F2 — le titre du volume~~ : **tranché le 2026-08-08**, « Autour des maîtres » conservé.
 - **C1** — la passe éditoriale sur les textes publiés, pour les pages traitées en F2 et F4.
 - **F5** — langue du document, favicon, titres et descriptions : une page publiée sans cela
   est mal indexée et mal partagée.
@@ -248,16 +266,18 @@ volontairement remis à plus tard s'inscrit ICI, et **rien n'en sort sans avoir 
 Le registre est relu au point de contrôle 2, et les corrections sont portées en phase 8.
 
 - [ ] **C1 — Les textes publiés doivent être retravaillés.** → traité page par page dans
-      **F2** (accueil) et **F4** (exploration) ; les pages Présentation et Méthode ont été
+      **F2** (fait le 2026-08-08) et **F4** ; les pages « Le projet » et Méthode ont été
       reprises entre le 4 et le 5 août et n'attendent plus qu'une relecture de confort.
-      BLOQUANT pour les pages traitées en F2 et F4. Toute la copie écrite pendant les
+      BLOQUANT pour les pages reprises. Toute la copie écrite pendant les
       phases 0 à 7 est une PREMIÈRE ÉCRITURE : titres, chapôs, phrases de lecture des
       graphiques, intitulés, textes de la page Présentation, notes d'unité. Elle est juste sur
       le fond et vérifiée sur les chiffres, mais elle n'a pas été retravaillée. Prévoir une
       passe éditoriale complète, page par page, avant publication — registre journalistique
       sobre (CLAUDE.md), phrases courtes, aucune formule creuse, et surtout la relecture à voix
       haute qui n'a pas eu lieu.
-- [ ] **C5 — Le texte de l'accueil est à refaire entièrement.** → **F2**, sujet 2. BLOQUANT. Verdict utilisateur du
+- [x] **C5 — RÉSOLU le 2026-08-08** (F2, sujet 2) : texte remplacé en entier, sur le texte
+      de l'utilisateur, chiffres sortis des phrases et source complétée. Voir decisions.md du
+      jour. Constat d'origine conservé ci-dessous. Verdict utilisateur du
       2026-08-02 : « dans l'état actuel il ne veut rien dire, c'est totalement incohérent,
       abstrait et non publiable ». Ce qui ne va pas, pour que la réécriture parte de quelque
       chose : « Quand le musée n'est pas sûr, il l'écrit » énonce une généralité sans dire de
@@ -267,8 +287,8 @@ Le registre est relu au point de contrôle 2, et les corrections sont portées e
       donne à voir une œuvre, un nom, une hésitation. L'affiche doit faire entrer, pas
       résumer. **À réécrire d'un bloc, avec la contrainte de forme connue** : trois lignes
       courtes maximum, la zone sombre de l'affiche étant étroite (decisions.md, undecies).
-- [ ] **C6 — Cohérence « notice » / « œuvre », page par page** → contrôle en **F4** puis
-      en **F6**. NON BLOQUANT depuis le 2026-08-03. (statut bloquant RETIRÉ le
+- [ ] **C6 — Cohérence « notice » / « œuvre », page par page** → contrôle en **F4** puis en
+      **F6**. NON BLOQUANT. (statut bloquant RETIRÉ le
       2026-08-03 : c'est une convention, pas un défaut — decisions.md, 2026-08-03 bis).
       **« notice »** pour la méthode, les données et les explications techniques ;
       **« œuvre »** pour l'interface, les légendes, les bulles et les textes destinés au
@@ -305,13 +325,17 @@ Le registre est relu au point de contrôle 2, et les corrections sont portées e
       traité** : la Présentation a le même rail que la Méthode depuis le 2026-08-04, et le
       mécanisme est devenu un composant partagé (`lib/SommaireAncres.svelte`). Reste la
       longueur elle-même, à reprendre avec la passe éditoriale (C1).
-- [ ] **C2 — Chercher les règles héritées qui décrivent mal ce qu'on regarde.** → **F3**,
-      au fil des éléments examinés. NON BLOQUANT. Une a été
+- [ ] **C2 — Chercher les règles héritées qui décrivent mal ce qu'on regarde.** → **F3**, au
+      fil des éléments examinés. NON BLOQUANT. **Une deuxième trouvée le 2026-08-08** :
+      « l'aplat sombre de l'affiche est étroit, trois lignes courtes maximum » — il fait en
+      réalité 700 × 620 px, et cette règle avait plafonné la réécriture de l'accueil pendant
+      trois semaines. Une première avait été
       trouvée et corrigée le 2026-08-02 : « pas de carte en dessous de deux musées », qui
       traitait un repère géographique comme un graphique de répartition. Le défaut n'était pas
       dans le seuil mais dans la description. En chercher d'autres du même ordre.
-- [ ] **C3 — Le titre du volume et le mot « artistes ».** → **F2**, sujet 1, à trancher
-      en premier car l'accueil en dépend. BLOQUANT. L'interface dit « Explorer les
+- [x] **C3 — TRANCHÉ le 2026-08-08** (F2, sujet 1) : « Autour des maîtres » est CONSERVÉ, la
+      cohabitation est assumée et justifiée, elle n'est pas une incohérence. Constat
+      d'origine conservé. L'interface dit « Explorer les
       artistes » ; le volume s'intitule « Autour des maîtres ». Ici « maître » se lit dans son
       sens relationnel (les œuvres autour du maître), ce qui reste conforme à la règle du
       2026-08-02 — mais la cohabitation mérite un arbitrage.

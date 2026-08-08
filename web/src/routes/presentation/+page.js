@@ -1,15 +1,17 @@
-// Page « Présentation » du volume 1 — de la notice qu'on lit sous une œuvre
-// jusqu'à l'exploration des artistes.
+import { redirect } from '@sveltejs/kit';
+import { base } from '$app/paths';
+
+// La page s'appelait « Présentation » et vivait à `/presentation`. Elle s'appelle
+// « Le projet » depuis le 2026-08-08, et son adresse le dit maintenant aussi.
 //
-// Tous les chiffres viennent des exports canoniques, aucun n'est écrit dans la
-// page : corpus_maitres.json (ampleur du volume, mentions, notice d'ouverture),
-// registre.json (état des candidats examinés), niveaux.json (total national, qui
-// ne sert QUE de contexte ici — le sujet de la page est le volume).
-export async function load({ fetch }) {
-	const [corpus, registre, niveaux] = await Promise.all([
-		fetch('/data/corpus_maitres.json').then((r) => r.json()),
-		fetch('/data/registre.json').then((r) => r.json()),
-		fetch('/data/niveaux.json').then((r) => r.json())
-	]);
-	return { corpus, registre, niveaux };
+// L'ancienne URL ne disparaît pas : elle a circulé, et une adresse publiée ne doit
+// pas tomber sur une page d'erreur. 308 — déplacement permanent, méthode conservée.
+//
+// L'ancre est conservée par le navigateur lui-même : elle n'est jamais envoyée au
+// serveur, et survit donc à la redirection. `/presentation#chiffres` arrive bien sur
+// `/projet#chiffres`.
+export const prerender = true;
+
+export function load() {
+	redirect(308, `${base}/projet`);
 }

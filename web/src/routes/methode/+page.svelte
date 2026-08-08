@@ -212,7 +212,7 @@
 		«&nbsp;Au plus près&nbsp;», «&nbsp;Autour du maître&nbsp;» et «&nbsp;Dans son
 		influence&nbsp;». Ce classement a été créé pour cette application. Il ne correspond ni
 		à une catégorie officielle de Joconde ni à une échelle juridique. Son détail est
-		expliqué dans la <a href="{base}/presentation">Présentation</a>.
+		expliqué dans <a href="{base}/projet">Le projet</a>.
 	</p>
 
 	<h3 id="doute-reperage" tabindex="-1">Comment les notices sont repérées</h3>

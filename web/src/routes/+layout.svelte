@@ -18,8 +18,8 @@
 	// la colonne centrée.
 	const estPleine = $derived(
 		$page.url.pathname === '/' ||
-			$page.url.pathname.startsWith('/presentation') ||
-			$page.url.pathname.startsWith('/les-presque') ||
+			$page.url.pathname.startsWith('/projet') ||
+			$page.url.pathname.startsWith('/artistes') ||
 			$page.url.pathname.startsWith('/methode')
 	);
 
@@ -29,7 +29,7 @@
 	//
 	// Navigation publique FINALE du volume 1 (phase 7, 2026-08-02) : quatre entrées,
 	// dans l'ordre de lecture. « Comprendre les mentions » en est sortie — ses
-	// définitions ont rejoint la Présentation, sous le graphique qui les compte, et
+	// définitions ont rejoint « Le projet », sous le graphique qui les compte, et
 	// son ancienne URL redirige.
 	//
 	// Le champ `prete` et la branche « à venir » ont été SUPPRIMÉS avec elle. Ils
@@ -38,8 +38,11 @@
 	// mécanisme, et pas seulement les entrées, évite qu'il resserve un jour.
 	const briques = [
 		{ titre: 'Accueil', href: '/' },
-		{ titre: 'Présentation', href: '/presentation' },
-		{ titre: 'Explorer les artistes', href: '/les-presque' },
+		// Libellé public renommé le 2026-08-08 : « Le projet » dit de quoi la page
+		// parle, quand « Présentation » ne disait que ce qu'elle est. La route ne
+		// bouge pas — elle a circulé.
+		{ titre: 'Le projet', href: '/projet' },
+		{ titre: 'Explorer les artistes', href: '/artistes' },
 		{ titre: 'Méthode', href: '/methode' }
 	];
 </script>

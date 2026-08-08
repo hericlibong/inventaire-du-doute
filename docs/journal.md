@@ -2,6 +2,52 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-08-08 — L'accueil, et une contrainte qui n'existait pas
+
+Le texte de la couverture est remplacé. Celui d'avant énonçait que « quand le musée n'est pas
+sûr, il l'écrit », ce qui ne dit ni de quoi ni de qui il s'agit ; l'utilisateur, qui l'avait
+déjà jugé non publiable en août, a fini par dire qu'il ne le comprenait plus lui-même. Le
+nouveau est de lui, et il nomme les choses : le nom d'un artiste peut accompagner une œuvre
+sans que le musée la lui attribue directement.
+
+Le plus instructif n'est pas le texte, c'est ce qui l'empêchait. Depuis trois semaines, le
+code répétait que l'aplat sombre de l'illustration est étroit et n'accepte que trois lignes
+courtes. C'est faux : il fait environ 700 × 620 px sur un écran de 1440, et le texte n'en
+occupait qu'un tiers. La colonne était bornée deux fois, à 34 % et à 23 caractères, et les
+phrases se cassaient en lignes de trois mots. Une règle écrite une fois, jamais revérifiée,
+avait servi de plafond à toutes les réécritures suivantes. C'est exactement ce que la
+correction C2 cherche depuis le 2 août.
+
+Le réglage qui a suivi mérite aussi d'être noté, parce que je m'y suis pris à l'envers
+d'abord. J'ai mesuré la frontière du sombre au pixel près et calé le texte dessus : impeccable
+à 1440, cassé à 1280, où l'image s'affiche entière et où la fin des paragraphes retombait sur
+le clair. Caler du texte sur une forme irrégulière ne tient jamais au-delà du format testé.
+La bonne réponse était de garantir le fond — le voile local déjà utilisé sur mobile, étendu à
+l'ordinateur en deux fois plus léger — et de borner les largeurs en unités d'écran, puisque
+l'aplat est une forme de l'image et suit la fenêtre, pas la police.
+
+Deux détails encore. Les chiffres sortent des phrases et deviennent une ligne autonome, sous
+un filet ; et le séparateur de milliers, une espace fine insécable, se refermait tellement
+dans la police de titre qu'on lisait « 6081 ». La navigation, elle, ne descend plus en
+escalier : trois cartouches sur un axe commun, la hiérarchie portée par la taille et la
+couleur.
+
+« Présentation » s'appelle maintenant « Le projet ». Le libellé disait ce que la page est,
+il dit ce dont elle parle. Le remplacement n'a pas été mécanique : sur la page Méthode,
+« La Présentation au Temple » est un titre d'œuvre.
+
+Les adresses ont suivi dans la foulée. `/presentation` devient `/projet`, et `/les-presque`
+devient `/artistes` — celle-là traînait depuis le début, c'était le nom de travail de la
+rubrique, « les presque », pour les œuvres presque attribuées. Elle n'a jamais rien dit à
+personne, alors que la page s'appelle « Explorer les artistes » depuis trois semaines. Les
+anciennes URL ne disparaissent pas pour autant : trois redirections permanentes, `/echelle`
+comprise, qui pointait sur l'ancienne adresse. Les ancres, elles, se débrouillent seules — un
+fragment n'est jamais envoyé au serveur.
+
+Le nom interne, en revanche, n'a pas été pourchassé. Les fichiers et les identifiants qui
+portent encore « presque » ne s'affichent nulle part ; les renommer aurait fait un gros diff
+et aucune différence.
+
 ## 2026-08-07 — Le journal reprend, et le cap change
 
 Ce journal s'était arrêté au 3 août, alors que le travail, lui, a continué quatre jours de

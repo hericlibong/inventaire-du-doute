@@ -12,8 +12,15 @@
 	// Chiffres DU VOLUME, lus depuis corpus_maitres.json (+page.js) : le nombre
 	// d'artistes retenus et celui des notices concernées. Le total national a quitté
 	// la couverture le 2026-08-02 — il demande une explication que l'accueil n'a pas
-	// à porter, et il vit désormais sur la page « Présentation ».
+	// à porter, et il vit désormais sur la page « Le projet ».
 	let { artistes, notices } = $props();
+
+	// `toLocaleString('fr-FR')` sépare les milliers par une espace fine insécable
+	// (U+202F). Elle convient au texte courant, mais à ce corps et dans la police de
+	// titre elle se referme presque entièrement : on lisait « 6081 ». Sur l'affiche
+	// seulement, on la remplace par une espace insécable ordinaire — le nombre reste
+	// insécable, et le millier redevient visible.
+	const enVedette = (v) => nombre(v).replace(/\u202f/g, '\u00a0');
 </script>
 
 <section class="cover">
@@ -31,28 +38,46 @@
 		/>
 	</picture>
 
-	<!-- Titre du site, titre du VOLUME, slogan, chiffres, source. Les nombres restent
-	     DANS leur phrase : ils désignent des NOTICES à l'attribution prudente et des
-	     ARTISTES retenus, jamais un décompte d'« œuvres », jamais un doute « écrit »
-	     ni une réattribution (règle du projet, decisions.md 2026-07-18 sexies). Ne
-	     jamais détacher un nombre de son unité. -->
+	<!-- Bloc éditorial de la couverture. Réécrit le 2026-08-08 (phase 2 de la
+	     finalisation), sur le texte de l'utilisateur, repris tel quel.
+	     Ce qu'il remplace disait « Quand le musée n'est pas sûr, il l'écrit » —
+	     une généralité qui ne nommait ni de quoi ni de qui il s'agit, et que
+	     l'utilisateur lui-même ne comprenait plus.
+	     Trois règles portées par ce texte :
+	       · il ne commence PAS par « Dans Joconde » — on comprend le sujet avant
+	         d'apprendre le nom de la source ;
+	       · il n'énumère AUCUNE mention (« attribué à », « de son atelier »…) :
+	         leur explication appartient à la page « Le projet » ;
+	       · les chiffres deviennent une information autonome, sortie des phrases,
+	         chaque nombre restant collé à son unité.
+	     Les deux valeurs sont lues dans corpus_maitres.json (+page.js), jamais
+	     écrites en dur. -->
 	<div class="titre">
-		<h1>L'inventaire<br />du doute</h1>
+		<h1>L’inventaire<br />du doute</h1>
 		<p class="volume">Volume 1 — Autour des maîtres</p>
 
 		<div class="phrases">
-			<!-- Trois lignes COURTES : l'aplat sombre où elles se posent est étroit et
-			     recule vers le bas de la composition. Une phrase de plus et le texte
-			     déborde sur l'illustration claire, où il devient illisible. -->
-			<p class="e1">Quand le musée n'est pas sûr, il l'écrit.</p>
-			<p class="e2">
-				<span class="chiffre">{nombre(artistes)}</span> artistes,
-				<span class="chiffre">{nombre(notices)}</span> notices où il l'a écrit.
+			<p class="e1">
+				Le nom d’un artiste peut accompagner une œuvre sans que le musée la lui
+				attribue directement.
 			</p>
-			<p class="e3">Une enquête dans les données des musées.</p>
+			<p class="e2">
+				Ce premier volume explore ces liens autour de {nombre(artistes)} artistes :
+				les œuvres concernées, la manière dont elles sont décrites et les musées qui
+				les conservent.
+			</p>
 		</div>
 
-		<p class="source">À partir de la base Joconde.</p>
+		<!-- Les chiffres, détachés du récit : deux quantités qu'on lit d'un coup
+		     d'œil. Chaque nombre garde son unité contre lui, et la paire reste
+		     insécable — jamais un nombre seul en fin de ligne. -->
+		<p class="chiffres">
+			<span class="paire"><span class="chiffre">{enVedette(artistes)}</span> artistes</span>
+			<span class="sep" aria-hidden="true">·</span>
+			<span class="paire"><span class="chiffre">{enVedette(notices)}</span> notices</span>
+		</p>
+
+		<p class="source">Source : Joconde, catalogue collectif des musées de France.</p>
 	</div>
 
 	<!-- Navigation sur la fiche claire (droite sur ordinateur, moitié basse sur mobile). -->
@@ -84,14 +109,42 @@
 		display: block;
 	}
 
-	/* --- Titre (aplat sombre) --- */
+	/* --- Bloc éditorial (sur l'aplat sombre) ---
+	   La largeur est passée de 34 % à 46 % le 2026-08-08. L'ancienne borne venait
+	   d'une contrainte qui n'existait pas : le code répétait que « l'aplat sombre est
+	   étroit », alors qu'il occupe environ 700 × 620 px sur un écran de 1440. Le texte
+	   n'en utilisait qu'un tiers, et se cassait en lignes de trois mots. */
 	.titre {
 		position: absolute;
 		top: 6%;
 		left: 4%;
-		max-width: 34%;
+		max-width: 46%;
 		color: #e9edf1; /* clair légèrement froid */
-		isolation: isolate; /* contexte d'empilement pour le voile local (mobile) */
+		isolation: isolate; /* contexte d'empilement pour le voile local */
+	}
+
+	/* Correction de contraste LOCALE derrière le bloc, sur grand écran aussi
+	   (2026-08-08). L'aplat sombre de l'illustration se referme en escalier, et sa
+	   position dépend du recadrage : ce qui tient sur un écran 16/10 déborde sur un
+	   16/9. Plutôt que de calibrer le texte au pixel près sur une forme irrégulière
+	   — réglage qui casse au premier format non testé —, on garantit le fond.
+	   Le voile est très faible là où l'illustration est déjà sombre, et se dissipe
+	   complètement sur la droite et en bas : ce n'est pas un cache posé sur l'image,
+	   c'est une assurance de lisibilité. Même procédé que sur mobile, en plus léger. */
+	.titre::before {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		inset: -1rem -3rem -1.5rem -2rem;
+		pointer-events: none;
+		background: linear-gradient(
+			100deg,
+			rgba(17, 25, 35, 0.55),
+			rgba(17, 25, 35, 0.42) 58%,
+			rgba(17, 25, 35, 0) 92%
+		);
+		-webkit-mask-image: linear-gradient(to bottom, transparent, #000 6%, #000 90%, transparent);
+		mask-image: linear-gradient(to bottom, transparent, #000 6%, #000 90%, transparent);
 	}
 
 	.titre h1 {
@@ -114,48 +167,75 @@
 		color: #c8b89a;
 	}
 
-	/* Trois étages : Spectral ivoire franc, présence réelle sans concurrencer le titre,
-	   progression légère (taille + tonalité), rythme compact d'affiche. */
+	/* Les deux paragraphes.
+	   Les bornes sont en `vw`, et non en caractères : l'aplat sombre est une forme
+	   de l'illustration, sa largeur suit donc celle de la fenêtre, pas la chasse de
+	   la police. Mesuré le 2026-08-08 sur les deux formats d'écran courants — le
+	   plus serré est le 16/10 (1440 × 900), où la zone sombre ne laisse que 26 % de
+	   la largeur à hauteur des paragraphes, 19 % à hauteur des chiffres et 15 % à
+	   hauteur de la source. Le plafond en `rem` évite qu'une ligne devienne
+	   illisible sur un très grand écran. */
 	.phrases {
-		margin: 1.1rem 0 0;
+		margin: 1.5rem 0 0;
 		font-family: var(--police-texte);
-		max-width: 23ch;
+		max-width: min(23vw, 32rem);
 	}
 
 	.phrases p {
 		margin: 0;
-		line-height: 1.28;
+		line-height: 1.45;
 	}
 
+	/* Première phrase : c'est elle qui pose le sujet. Elle porte donc le poids. */
 	.e1 {
-		font-size: clamp(1.1rem, 1.6vw, 1.45rem);
+		font-size: clamp(1.05rem, 1.5vw, 1.4rem);
 		font-weight: 600;
 		color: #f4eee0;
 	}
 
-	/* Étage porteur des chiffres : la phrase reste un TOUT, les nombres ressortent
-	   par la couleur et un léger surcorps — jamais détachés en bloc isolé. */
+	/* Seconde : ce que le volume contient. Un cran en dessous, et détachée pour
+	   qu'on voie deux temps et non un pavé. */
 	.e2 {
-		margin-top: 0.55rem;
-		font-size: clamp(1rem, 1.35vw, 1.2rem);
-		line-height: 1.42;
-		color: #ece4d2;
+		margin-top: 0.85rem;
+		font-size: clamp(0.95rem, 1.2vw, 1.1rem);
+		color: #dcd4c4;
 	}
 
-	.e3 {
-		margin-top: 0.5rem;
-		font-size: clamp(1rem, 1.35vw, 1.2rem);
-		color: #d8cfbd;
+	/* Les chiffres, information autonome (2026-08-08). Ils ne sont plus dans une
+	   phrase : ils se lisent seuls, sous le texte, séparés par un point médian. Un
+	   filet les détache sans les encadrer. Ils restent nettement sous le titre —
+	   c'est une indication d'ampleur, pas l'accroche. */
+	.chiffres {
+		margin: 1.2rem 0 0;
+		padding-top: 0.8rem;
+		border-top: 1px solid rgba(200, 184, 154, 0.32);
+		/* L'aplat se referme en escalier vers le bas : ce qui tient à hauteur des
+		   paragraphes déborde plus bas. « des musées de » passait sur le clair. */
+		max-width: min(17vw, 19rem);
+		font-family: var(--police-ui);
+		font-size: clamp(0.9rem, 1.1vw, 1.02rem);
+		color: #d9d0be;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: baseline;
+		gap: 0.5rem 0.7rem;
 	}
 
-	/* Nombre en vedette, INLINE dans sa phrase : police titre, ivoire chaud,
-	   surcorps modéré, insécable (jamais coupé, jamais séparé de sa phrase). */
+	/* Le nombre et son unité ne se séparent jamais, même au retour à la ligne. */
+	.paire {
+		white-space: nowrap;
+	}
+
+	.sep {
+		color: rgba(200, 184, 154, 0.6);
+	}
+
+	/* Nombre en vedette : police titre, ivoire chaud, chiffres à chasse fixe.
+	   Le séparateur de milliers est élargi en amont (voir `enVedette`). */
 	.chiffre {
 		font-family: var(--police-titre);
 		font-weight: 600;
-		/* deux nombres dans la même phrase depuis le 2026-08-02 : un surcorps plus
-		   mesuré qu'au temps du chiffre unique, sinon la phrase se disloque */
-		font-size: 1.3em;
+		font-size: 1.35em;
 		letter-spacing: -0.01em;
 		color: #eaddc2;
 		font-variant-numeric: tabular-nums;
@@ -163,11 +243,13 @@
 	}
 
 	.source {
-		margin: 1.3rem 0 0;
+		margin: 0.8rem 0 0;
+		max-width: min(13vw, 14rem);
 		font-family: var(--police-ui);
-		font-size: clamp(0.68rem, 0.85vw, 0.78rem);
+		font-size: clamp(0.7rem, 0.85vw, 0.8rem);
 		letter-spacing: 0.03em;
-		color: #9fa9b3;
+		line-height: 1.4;
+		color: #b3bcc6;
 	}
 
 	/* --- Navigation (fiche claire, à droite sur ordinateur) --- */
@@ -183,43 +265,58 @@
 		.titre {
 			top: 4%;
 			left: 6%;
-			max-width: 66%;
+			/* 88 % : le texte a besoin de la largeur, et le voile local le suit
+			   désormais jusqu'au bout. À 66 %, « VOLUME 1 — AUTOUR DES MAÎTRES »
+			   débordait sur l'illustration claire et sa fin devenait illisible
+			   (constat du 2026-08-07). */
+			max-width: 88%;
 		}
-		/* Correction de contraste LOCALE et légère derrière le bloc titre (le bitmap
-		   est réduit sur petit écran, l'aplat sombre ne descend pas assez). Dégradé
-		   feutré en haut/bas (mask), fondu à droite : pas un voile sur l'image. */
+		/* Correction de contraste LOCALE derrière le bloc titre (le bitmap est réduit
+		   sur petit écran, l'aplat sombre ne descend pas assez). Dégradé feutré en
+		   haut/bas (mask) : pas un voile uniforme sur l'image.
+		   Le fondu à droite s'arrêtait à 88 % et laissait les fins de ligne sur le
+		   clair ; il tient maintenant jusqu'au bord, et le voile est un peu plus dense
+		   pour que la source, en petit corps gris, reste lisible. */
 		.titre::before {
 			content: '';
 			position: absolute;
 			z-index: -1;
-			inset: -0.6rem -2.6rem -1rem -1.6rem;
+			inset: -0.6rem -1.2rem -1rem -1.6rem;
 			pointer-events: none;
 			background: linear-gradient(
 				100deg,
-				rgba(17, 25, 35, 0.78),
-				rgba(17, 25, 35, 0.5) 55%,
-				rgba(17, 25, 35, 0) 88%
+				rgba(17, 25, 35, 0.86),
+				rgba(17, 25, 35, 0.78) 62%,
+				rgba(17, 25, 35, 0.6) 100%
 			);
-			-webkit-mask-image: linear-gradient(to bottom, transparent, #000 10%, #000 92%, transparent);
-			mask-image: linear-gradient(to bottom, transparent, #000 10%, #000 92%, transparent);
+			-webkit-mask-image: linear-gradient(to bottom, transparent, #000 8%, #000 94%, transparent);
+			mask-image: linear-gradient(to bottom, transparent, #000 8%, #000 94%, transparent);
 		}
 		.titre h1 {
 			font-size: clamp(2.4rem, 12vw, 3.6rem);
 		}
 		/* Étages plus compacts sur mobile (réduire taille/espacement avant d'en retirer). */
 		.phrases {
-			margin-top: 0.9rem;
-			max-width: 24ch;
+			margin-top: 1rem;
+			max-width: 100%;
 		}
 		.e1 {
-			font-size: 1.12rem;
+			font-size: 1.08rem;
 		}
-		.e2,
-		.e3 {
-			font-size: 1rem;
+		.e2 {
+			margin-top: 0.7rem;
+			font-size: 0.96rem;
+		}
+		.chiffres,
+		.source {
+			max-width: 100%;
+		}
+		.chiffres {
+			margin-top: 1.1rem;
+			padding-top: 0.75rem;
 		}
 		.source {
-			margin-top: 1rem;
+			margin-top: 0.85rem;
 		}
 		.nav-zone {
 			top: auto;
@@ -229,31 +326,30 @@
 		}
 	}
 
-	/* Téléphone étroit / court : compresser titre + étages pour qu'ils tiennent dans
-	   l'aplat sombre (le bitmap est réduit, le texte HTML ne l'est pas). */
+	/* Téléphone étroit / court : compresser titre et étages pour que tout tienne dans
+	   le premier écran (le bitmap est réduit, le texte HTML ne l'est pas). */
 	@media (max-width: 400px) {
 		.titre h1 {
 			font-size: 1.95rem;
 		}
 		.phrases {
-			margin-top: 0.65rem;
-			max-width: 22ch;
+			margin-top: 0.75rem;
 		}
 		.e1 {
-			font-size: 1rem;
-		}
-		.e2,
-		.e3 {
-			font-size: 0.9rem;
+			font-size: 0.98rem;
 		}
 		.e2 {
-			margin-top: 0.25rem;
+			margin-top: 0.5rem;
+			font-size: 0.88rem;
 		}
-		.e3 {
-			margin-top: 0.2rem;
+		.chiffres {
+			margin-top: 0.85rem;
+			padding-top: 0.6rem;
+			font-size: 0.86rem;
 		}
 		.source {
 			margin-top: 0.7rem;
+			font-size: 0.68rem;
 		}
 	}
 </style>

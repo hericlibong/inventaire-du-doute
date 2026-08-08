@@ -79,7 +79,7 @@
 </script>
 
 <svelte:head>
-	<title>Présentation — L'inventaire du doute, volume 1</title>
+	<title>Le projet — L'inventaire du doute, volume 1</title>
 	<meta
 		name="description"
 		content="Dans les musées de France, un nom sous une œuvre n'est pas toujours une certitude. Ce volume lit les formulations prudentes que les musées publient eux-mêmes."
@@ -314,7 +314,7 @@
 			qui les conservent.
 		</p>
 		<p class="renvoi">
-			<a class="entree" href="{base}/les-presque">Explorer les artistes&nbsp;→</a>
+			<a class="entree" href="{base}/artistes">Explorer les artistes&nbsp;→</a>
 		</p>
 		<p class="prudence">
 			Le projet reprend les formulations publiées par les musées. Il ne réattribue aucune

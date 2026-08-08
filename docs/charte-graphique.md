@@ -183,7 +183,10 @@ placard : `GalaxieMaitre` (abandonné).
 > données**, jamais écrit en dur : il est passé de 27 à **63** le 2026-07-22 et bougera à
 > chaque lot de maîtres instruits. L'appellation « Les
 > presque » est **abandonnée dans les textes publics** ; elle ne subsiste que comme
-> **nom de code interne** (docs, route `/les-presque`, fichiers, exports — non renommés).
+> **nom de code interne** (docs, fichiers, exports — non renommés). **La route publique,
+> elle, est passée à `/artistes` le 2026-08-08** ; `/les-presque` redirige en 308. Le nom
+> interne n'a pas été pourchassé pour autant : un refactor sans bénéfice visible n'en
+> est pas un.
 > La page s'ouvre en **deux temps** : (1) entrée éditoriale (titre + texte, deux colonnes
 > sur ordinateur, sans encadré, prudence en note discrète), puis (2) exploration
 > introduite par l'intitulé **« Choisir un artiste »**, détachée par un **filet + de

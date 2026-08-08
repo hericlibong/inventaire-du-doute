@@ -62,7 +62,7 @@
 			<header class="intro">
 				<h1>Explorer les artistes</h1>
 				<p class="renvoi">
-					<a href="{base}/presentation">
+					<a href="{base}/projet">
 						Comment ces artistes ont-ils été sélectionnés&nbsp;?&nbsp;→
 					</a>
 				</p>

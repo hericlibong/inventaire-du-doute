@@ -1,13 +1,17 @@
-// 1re dataviz — « Les presque » : le doute autour des maîtres de référence.
-// Données : artistes.json (critère « maître de référence ET ≥ 10 notices
-// prudentes hors copie » ; 102 artistes au 2026-08-02, l'effectif suit la liste).
-export async function load({ fetch }) {
-	// portraits.json : source SECONDAIRE D'ILLUSTRATION (Wikimedia Commons),
-	// jamais de donnée ni de comptage (docs/decisions.md 2026-07-09). Crédits
-	// (auteur + licence) affichés en légende du portrait.
-	const [artistes, portraits] = await Promise.all([
-		fetch('/data/artistes.json').then((r) => r.json()),
-		fetch('/data/portraits.json').then((r) => r.json())
-	]);
-	return { artistes, portraits };
+import { redirect } from '@sveltejs/kit';
+import { base } from '$app/paths';
+
+// `/les-presque` était le nom de travail de la rubrique — « les presque », pour les
+// œuvres presque attribuées. Il n'a jamais rien dit au visiteur, et l'interface
+// appelle cette page « Explorer les artistes » depuis longtemps. L'adresse suit le
+// 2026-08-08 : `/artistes`.
+//
+// L'ancienne URL survit en redirection permanente (308). Le nom interne, lui, n'est
+// pas pourchassé : les fichiers et identifiants qui portent « presque » restent tels
+// quels tant qu'ils ne s'affichent pas — un refactor sans bénéfice visible n'en est
+// pas un.
+export const prerender = true;
+
+export function load() {
+	redirect(308, `${base}/artistes`);
 }

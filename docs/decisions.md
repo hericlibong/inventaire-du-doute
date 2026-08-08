@@ -2,6 +2,106 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-08 — L'accueil dit enfin de quoi il s'agit (phase 2, texte utilisateur)
+
+Le texte de la couverture est remplacé **en entier**. Ce qu'il disait — « Quand le musée
+n'est pas sûr, il l'écrit. 102 artistes, 6 081 notices où il l'a écrit. Une enquête dans les
+données des musées. » — énonçait une généralité sans nommer de quoi ni de qui il s'agissait,
+répétait son verbe d'une ligne à l'autre, et se terminait par une formule de dossier de
+presse. Verdict de l'utilisateur, réitéré le 2026-08-08 : « même moi je ne comprends pas ».
+C'était **C5**, la seule correction que le registre qualifiait de non publiable.
+
+**Le nouveau texte est de l'utilisateur, repris tel quel :**
+> Le nom d'un artiste peut accompagner une œuvre sans que le musée la lui attribue
+> directement.
+>
+> Ce premier volume explore ces liens autour de 102 artistes : les œuvres concernées, la
+> manière dont elles sont décrites et les musées qui les conservent.
+
+**Trois interdits l'accompagnent, et ils sont tenus :**
+1. **Aucune énumération de mentions** sur l'accueil — ni « attribué à », ni « de son
+   atelier », ni « de son école ». Leur explication appartient à la page « Le projet ».
+2. **Le texte ne commence pas par « Dans Joconde »** : on comprend le sujet avant
+   d'apprendre le nom de la source.
+3. **Les chiffres sortent des phrases** et deviennent une information autonome —
+   « 102 artistes · 6 081 notices », sous un filet. Chaque nombre reste collé à son unité,
+   la paire est insécable, et les deux valeurs continuent d'être lues dans
+   `corpus_maitres.json`.
+
+La source, enfin, se nomme complètement : « Source : Joconde, catalogue collectif des musées
+de France. » remplace « À partir de la base Joconde. »
+
+**« Présentation » devient « Le projet »** (décision utilisateur). Le libellé disait ce que
+la page est ; il dit maintenant de quoi elle parle. Changé aux quatre endroits publics : la
+navigation de la couverture, le bandeau général, le titre de la page, et le lien qui y mène
+depuis la Méthode. **La route `/presentation` ne bouge pas** — elle a circulé, et une URL
+publiée ne se renomme pas. Aucun remplacement mécanique : « La Présentation au Temple »,
+titre d'œuvre affiché sur la page Méthode, est resté intact (vérifié sur le rendu).
+
+**Ce que la composition a changé, et pourquoi.**
+
+*La contrainte qui bridait l'écriture était fausse.* Le code répétait depuis le 2026-07-18
+que l'aplat sombre est étroit et n'accepte que « trois lignes courtes ». Mesuré le
+2026-08-07 : il occupe environ 700 × 620 px sur un écran de 1440, et le texte n'en utilisait
+qu'un tiers. La colonne était bornée deux fois — 34 % du bloc et 23 caractères —, ce qui
+cassait les phrases en lignes de trois mots, avec « il » orphelin en fin de ligne. C'est
+exactement le genre de règle héritée que **C2** cherche : elle ne décrivait pas ce qu'on
+regarde, et elle a servi de plafond à la réécriture pendant trois semaines.
+
+*Les largeurs sont désormais relatives à la fenêtre, pas à la police.* L'aplat sombre est
+une forme de l'illustration : sa largeur suit celle de l'écran, jamais la chasse des
+caractères. Mesures faites sur les formats courants — le plus serré est le 16/10, où la zone
+sombre laisse 26 % de la largeur à hauteur des paragraphes, 19 % à hauteur des chiffres et
+15 % à hauteur de la source, l'aplat se refermant en escalier vers le bas.
+
+*Et un voile local garantit le fond.* Calibrer le texte au pixel près sur une forme
+irrégulière casse au premier format non testé : à 1280 × 720, où l'illustration s'affiche
+entière, la fin des paragraphes retombait sur le clair. Le procédé déjà employé sur mobile —
+un dégradé feutré derrière le seul bloc de texte, fondu en haut, en bas et à droite — est
+étendu à l'ordinateur, en deux fois plus léger. Là où l'illustration est déjà sombre, il ne
+se voit pas ; ailleurs, il assure la lisibilité. Ce n'est pas un cache posé sur l'image.
+
+*Le millier redevient lisible.* `toLocaleString('fr-FR')` sépare par une espace fine
+insécable (U+202F), qui se referme presque entièrement dans la police de titre : on lisait
+« 6081 ». Sur l'affiche seulement, elle est remplacée par une espace insécable ordinaire.
+
+*La navigation ne zigzague plus.* Les trois cartouches partaient en escalier — 0, puis
+1,6 rem, puis 2,9 rem — et l'œil devait suivre un décalage qui ne disait rien. Ils partent
+d'un axe commun. La hiérarchie se lit où elle doit se lire : sur la taille, le poids et la
+couleur du cartouche. « Explorer les artistes » reste l'entrée principale, en cobalt.
+
+**Contrastes vérifiés** sur l'aplat : de 8,4:1 (titre du volume) à 14,2:1 (accroche), la
+source la plus faible à 8,6:1 — tous au-dessus des seuils. Les cartouches sont à 11,1:1 et
+7,1:1. Les états de focus, le repli sans animation et les cibles de clic sont inchangés.
+
+**Les deux adresses héritées changent aussi** (décision utilisateur, même phase).
+`/presentation` devient **`/projet`**, `/les-presque` devient **`/artistes`**. La seconde
+était un nom de travail — « les presque », pour les œuvres presque attribuées — qui n'a
+jamais rien dit à un visiteur, quand l'interface appelle cette page « Explorer les artistes »
+depuis le 2026-07-19. Les libellés publics, eux, ne bougent pas.
+
+**Rien n'est supprimé.** Trois redirections permanentes : `/presentation` → `/projet`,
+`/les-presque` → `/artistes`, et `/echelle` → `/projet` (elle pointait sur l'ancienne
+adresse). En 308 : déplacement permanent, méthode conservée. En build statique, le prérendu
+écrit une page de renvoi ; les hébergeurs qui lisent `_redirects` feront mieux. **Les ancres
+survivent sans effort** : un fragment n'est jamais envoyé au serveur, `/presentation#chiffres`
+arrive donc sur `/projet#chiffres`.
+
+**Le nom interne n'est pas pourchassé.** Les fichiers, identifiants et exports qui portent
+« presque » restent tels quels : ils ne s'affichent nulle part, et un refactor sans bénéfice
+visible n'en est pas un. Seule la charte graphique est corrigée, parce qu'elle citait la
+route comme exemple de nom de code.
+
+Vérifié : `/projet`, `/artistes` et `/methode` répondent en 200 ; les trois anciennes URL
+renvoient un 308 vers la bonne cible, sans boucle ; la navigation marque la bonne entrée
+comme active sur les deux nouvelles routes ; plus aucun lien servi ne pointe vers les
+anciennes adresses ; le build statique contient bien `projet.html`, `artistes.html` et les
+trois pages de renvoi.
+
+**Point noté pour F4, hors périmètre ici** : la page Méthode emploie « le projet » au sens
+courant (« Le projet montre quelles réserves les musées publient »). Ce n'est pas fautif,
+mais le mot désigne désormais aussi une page. À relire.
+
 ## 2026-08-07 (bis) — Le projet entre en finalisation (décision utilisateur)
 
 Le fond du volume 1 est arrêté : données, profils, portraits et reproductions. **Rien de

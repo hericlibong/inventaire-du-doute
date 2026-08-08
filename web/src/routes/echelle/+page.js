@@ -5,7 +5,8 @@ import { base } from '$app/paths';
 // Son URL survit en REDIRECTION : elle a circulé, et une adresse publiée ne doit pas
 // tomber sur une page d'erreur.
 //
-// Elle redirige vers la Présentation, qui a repris ce qui lui restait d'utile : le
+// Elle redirige vers « Le projet » (`/projet` depuis le 2026-08-08), qui a repris ce
+// qui lui restait d'utile : le
 // graphique des mentions et, depuis la phase 7, leurs définitions une à une. La
 // comparaison chiffrée avec le total national, elle, a été abandonnée le 2026-08-02
 // avec les autres vues du prototype — elle ne revient pas.
@@ -15,5 +16,5 @@ import { base } from '$app/paths';
 export const prerender = true;
 
 export function load() {
-	redirect(308, `${base}/presentation`);
+	redirect(308, `${base}/projet`);
 }
