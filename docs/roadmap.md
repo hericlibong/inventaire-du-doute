@@ -57,7 +57,16 @@ Les contrôles sont proportionnés à chaque changement ; **le contrôle exhaust
       build statique OK, redirections vérifiées sans boucle.
       **Une règle héritée de plus est tombée** (elle relève de **C2**) : « l'aplat sombre est
       étroit, trois lignes courtes maximum » était faux, et avait plafonné la réécriture.
-- [ ] **F3 — Finitions visuelles, point par point.** Périmètre non arrêté. Sujets pressentis :
+- [ ] **F3 — Finitions visuelles, point par point.** Périmètre non arrêté.
+      **Points ouverts, à traiter séparément :**
+      - [ ] **A1 — Navigation clavier dans le répertoire des 102 artistes.** « Réduire ou
+            mieux organiser la navigation clavier dans le répertoire des 102 artistes, sans
+            dégrader la recherche ni la sélection. » Ouvert le 2026-08-08. La suppression de
+            l'infobulle des jauges ramène la tabulation de **204 à 102 arrêts** — c'est un
+            progrès, mais 102 arrêts avant d'atteindre le reste de la page restent beaucoup.
+            **À examiner plus tard dans la phase 3 ; ne pas traiter avec le correctif de la
+            jauge.**
+      Sujets pressentis :
       marges et rythme vertical · navigation · panneaux et états interactifs · cartes et
       listes d'œuvres · carte des musées · états sans image · affichage mobile · cohérence
       visuelle entre les quatre pages publiques. Reprend **C11** (longueur des pages sur

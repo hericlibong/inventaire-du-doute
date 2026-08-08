@@ -2,6 +2,49 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-08 (ter) — Le répertoire cesse de faire croire qu'il mesure
+
+Deuxième point de la phase 3.
+
+**Le défaut.** Sous chaque nom du répertoire, une bande colorée occupait toute la largeur
+de la colonne. Elle montrait la composition des mentions — 100 % de l'artiste affiché —,
+mais posée juste sous le nombre et remplissant la ligne, elle se lisait comme une jauge de
+quantité. Charles Le Brun (310 œuvres) et Michel-Ange (148) avaient des bandes strictement
+identiques.
+
+**Trois options ont été examinées** : garder la longueur identique en changeant la forme ;
+faire varier la longueur selon l'effectif ; supprimer la représentation. La deuxième a été
+écartée sur les chiffres : la distribution va de 11 à 310, **69 artistes sur 102 sont sous
+50 œuvres**, et leur ruban aurait fait moins de 16 % de celui de Le Brun — trente pixels
+pour y loger jusqu'à sept segments. Elle aurait sacrifié la lisibilité des deux tiers de la
+liste pour une information que le nombre et le tri donnent déjà.
+
+**Décision (utilisateur) : la première option.** La quantité reste portée par le nombre et
+par l'ordre du classement ; la couleur ne montre plus que le profil.
+
+**La forme retenue est le ruban court** (proposition A, choisie sur maquette contre un
+anneau miniature) : 96 px pour tous, calé à gauche, segments détachés par un blanc.
+L'anneau était plus élégant et plus compact, mais à 18 px il ne disait plus que la couleur
+dominante — ce qui ne justifiait plus de conserver les proportions.
+
+**Un écart assumé, déclaré ici et dans le code** : un plancher de 3 px garantit qu'une
+mention présente se voit. Sans lui, le « nom (?) » de Charles Le Brun, à 0,6 %, occuperait
+0,6 pixel. L'excédent est repris au prorata sur les segments majoritaires, et la hiérarchie
+entre mentions n'est jamais modifiée.
+
+**L'infobulle du répertoire est supprimée** (décision utilisateur). Elle recouvrait la liste
+au moment même où l'on cherchait un nom, et répétait ce que le graphique du profil dit en
+mieux. Avec elle disparaissent le `role="button"`, le `tabindex`, les gestionnaires de
+survol et de focus, et l'`aria-label` de la barre : le ruban devient décoratif, et la ligne
+de l'artiste redevient le seul contrôle de sélection.
+
+**Effet de bord mesuré, et volontairement laissé de côté** : la tabulation du répertoire
+passe de **204 à 102 arrêts**. C'est un progrès, pas une solution — 102 arrêts avant
+d'atteindre le reste de la page restent beaucoup. Le sujet est consigné comme point **A1**
+de la phase 3 (roadmap), à traiter séparément.
+
+La règle de forme est dans `docs/charte-graphique.md` (§ 10).
+
 ## 2026-08-08 (bis) — Le cobalt garde ses deux rôles, le trait fait la différence
 
 Premier point de la phase 3, traité seul, comme le veut la règle de cette phase.

@@ -116,7 +116,7 @@
 							<span class="nom">{a.nom}</span>
 							<span class="compte">{nombre(a.doute)}</span>
 						</button>
-						<BarreFamilles familles={a.familles} total={a.doute} nom={a.nom} hauteur="0.35rem" />
+						<BarreFamilles familles={a.familles} total={a.doute} />
 					</li>
 				{:else}
 					<li class="vide">Aucun artiste ne correspond.</li>
@@ -274,8 +274,8 @@
 		overflow-y: auto;
 	}
 
-	/* La ligne porte l'état (sélection, survol) ; le bouton ne couvre que nom +
-	   compte, la jauge est sa sœur (segments focusables, interdits dans un <button>). */
+	/* La ligne porte l'état (sélection, survol) ; le bouton couvre nom + compte, et
+	   le ruban de composition est posé dessous. */
 	.rang {
 		border-bottom: var(--filet);
 		/* filet d'accent à gauche, transparent au repos : réservé à la sélection,
@@ -313,8 +313,11 @@
 		outline-offset: 2px;
 	}
 
-	.rang :global(.barre) {
-		margin-top: 0.35rem;
+	/* Le ruban est COURT et calé à gauche : il ne rejoint pas le nombre, à droite.
+	   C'est cette distance qui l'empêche d'être lu comme une jauge de quantité —
+	   voir BarreFamilles.svelte. */
+	.rang :global(.ruban) {
+		margin-top: 0.4rem;
 	}
 
 	.maitre .nom {

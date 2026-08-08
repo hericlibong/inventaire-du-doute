@@ -331,3 +331,27 @@ couleur.**
 
 Portée : pages « Le projet », « Méthode » et « Explorer les artistes » (`.tete a`,
 `.contenu a`, le renvoi de l'exploration). Récit daté : decisions.md, 2026-08-08 bis.
+
+## 10. Le ruban de composition (répertoire) — arrêté le 2026-08-08
+
+Dans le répertoire des artistes, chaque ligne porte un **ruban court** qui montre la
+répartition des mentions de cet artiste — et **rien d'autre**.
+
+- **La quantité n'est pas dans le ruban.** Elle est portée par le nombre affiché à droite
+  du nom et par l'ordre du classement. Le ruban a donc **la même longueur pour tous**,
+  quel que soit l'effectif.
+- **Il est court et calé à gauche** : 96 px, soit moins d'un tiers de la colonne. Il ne
+  rejoint jamais le nombre. C'est cette distance qui l'empêche d'être lu comme une jauge —
+  une bande qui remplit sa ligne se lit toujours comme un remplissage.
+- **Ses segments sont détachés** (1,5 px de blanc, coins de 1 px). Une barre de progression
+  est continue ; celle-ci ne l'est pas.
+- **Plancher de visibilité : 3 px par mention présente**, l'excédent étant repris au
+  prorata sur les segments majoritaires. Écart assumé et déclaré : sans lui, une mention
+  à 0,6 % — le « nom (?) » de Charles Le Brun — occuperait 0,6 pixel, c'est-à-dire rien.
+  La hiérarchie entre mentions n'est jamais modifiée.
+- **Aucune interaction.** Le ruban est décoratif (`aria-hidden`), sans `role`, sans
+  `tabindex`, sans infobulle. Le répertoire est un outil de recherche et de sélection :
+  la seule cible cliquable d'une ligne est la ligne elle-même.
+- Couleurs et ordre des mentions : ceux de la charte, identiques au graphique du profil.
+
+Récit daté : decisions.md, 2026-08-08 ter.
