@@ -2,6 +2,32 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-08 (quinquies) — Les onglets deviennent des commandes
+
+Reprise du point précédent : la première version ne répondait pas à l'objectif (constat
+utilisateur).
+
+**Ce qui n'allait pas.** La barre regroupait mieux les trois libellés, mais **le long filet
+horizontal qui courait au-delà de « Musées » attirait l'œil plus que les commandes**. Il se
+lisait comme un séparateur de section, et les onglets restaient des liens éditoriaux : rien
+ne donnait envie de cliquer.
+
+**Ce qui remplace.** Un **groupe de trois boutons contigus**, cerné d'une bordure fine, avec
+des filets verticaux entre eux. **Plus aucun filet ne se prolonge dans la page.** L'onglet
+actif porte un aplat cobalt franc et un texte clair ; les inactifs gardent un fond clair et
+l'encre pleine, pour rester des choix disponibles.
+
+**Un détail qui compte** : la graisse de l'actif est plus forte que celle des autres. Sans
+précaution, le groupe changerait de largeur à chaque clic et la page tressauterait. Chaque
+bouton réserve donc en permanence la place de son propre libellé en gras, par un double
+invisible de hauteur nulle.
+
+Sur ordinateur, le groupe s'ajuste à ses libellés et s'aligne sur le début de la zone de
+visualisation. Sur mobile, il prend toute la largeur, à parts égales, sur une seule ligne.
+
+Balisage `tablist` / `tab` / `aria-selected` inchangé ; les réserves **A1** et **A2**
+restent hors de ce correctif. Règle de forme : charte graphique, § 11.
+
 ## 2026-08-08 (quater) — Trois vues, et une barre qui le dit
 
 Troisième point de la phase 3.

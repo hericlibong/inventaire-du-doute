@@ -355,3 +355,34 @@ répartition des mentions de cet artiste — et **rien d'autre**.
 - Couleurs et ordre des mentions : ceux de la charte, identiques au graphique du profil.
 
 Récit daté : decisions.md, 2026-08-08 ter.
+
+## 11. Les trois commandes d'une visualisation — arrêté le 2026-08-08
+
+Quand une visualisation offre plusieurs vues, celles-ci se présentent en **groupe de
+boutons contigus**, et non en barre d'onglets soulignée.
+
+- **Aucun filet horizontal ne se prolonge au-delà du dernier bouton.** Un filet qui court
+  sur toute la largeur attire l'œil plus que les commandes elles-mêmes et se lit comme un
+  séparateur de section. C'est ce qui a fait échouer la première version.
+- **Une seule bordure fine cerne le groupe**, des **filets verticaux** séparent les
+  boutons, et rien ne les espace : c'est la contiguïté qui les désigne comme un ensemble
+  de commandes.
+- **Angles droits ou presque** (2 px au plus), **aucune ombre, aucune icône, aucune
+  pastille, aucun texte d'explication.**
+- **L'actif porte un aplat cobalt franc**, texte clair, graisse renforcée. Rien ne déborde
+  du groupe.
+- **Les inactifs gardent un fond clair et l'encre pleine** : un onglet non sélectionné est
+  un choix disponible, jamais un élément désactivé.
+- **Survol** : cobalt à 10 %, texte cobalt. **Focus** : anneau posé à l'intérieur de la
+  cible (`outline-offset` négatif), pour qu'il ne chevauche pas les boutons voisins.
+- **Cible d'au moins 44 px de haut**, y compris au toucher.
+- **La largeur ne bouge jamais au changement d'onglet.** La graisse de l'actif étant plus
+  forte, chaque bouton réserve en permanence la place de son propre libellé en gras — un
+  double invisible, de hauteur nulle (`::after { content: attr(data-label) }`). Sans cela,
+  le groupe se redimensionne à chaque clic et la page tressaute.
+- **Sur ordinateur**, le groupe s'ajuste à ses libellés et s'aligne sur le début de la zone
+  de visualisation. **Sur mobile**, il prend toute la largeur et les boutons se la
+  partagent à parts égales, sur une seule ligne, sans troncature.
+- Balisage inchangé : `tablist`, `tab`, `aria-selected`. **Jamais un second système d'état.**
+
+Récit daté : decisions.md, 2026-08-08 quinquies.

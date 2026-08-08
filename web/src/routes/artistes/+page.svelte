@@ -80,15 +80,24 @@
 				<BandeauMaitre {maitre} portrait={portraits[maitre.nom]} />
 
 				<div class="bascule" role="tablist" aria-label="Choisir la vue">
-					<button role="tab" aria-selected={vue === 'profil'} class:actif={vue === 'profil'} onclick={() => (vue = 'profil')}>
-						Profil
-					</button>
-					<button role="tab" aria-selected={vue === 'oeuvres'} class:actif={vue === 'oeuvres'} onclick={() => (vue = 'oeuvres')}>
-						Œuvres
-					</button>
-					<button role="tab" aria-selected={vue === 'musees'} class:actif={vue === 'musees'} onclick={() => (vue = 'musees')}>
-						Musées
-					</button>
+					<button
+						role="tab"
+						data-label="Profil"
+						aria-selected={vue === 'profil'}
+						class:actif={vue === 'profil'}
+						onclick={() => (vue = 'profil')}>Profil</button>
+					<button
+						role="tab"
+						data-label="Œuvres"
+						aria-selected={vue === 'oeuvres'}
+						class:actif={vue === 'oeuvres'}
+						onclick={() => (vue = 'oeuvres')}>Œuvres</button>
+					<button
+						role="tab"
+						data-label="Musées"
+						aria-selected={vue === 'musees'}
+						class:actif={vue === 'musees'}
+						onclick={() => (vue = 'musees')}>Musées</button>
 				</div>
 
 				<div class="vue" class:vue-profil={vue === 'profil'}>
@@ -213,41 +222,36 @@
 	}
 
 	/* Onglets soulignés, actif en cobalt. */
-	/* BARRE D'ONGLETS (refaite le 2026-08-08, phase 3).
-	   Avant : trois libellés en petit corps, espacés de 1,5 rem sous le portrait. Ils
-	   se lisaient comme une série de liens, et rien ne disait qu'ils commandent les
-	   TROIS VUES de l'exploration. Ils forment maintenant une barre : un filet qui
-	   court sur toute la largeur de la zone d'exploration la délimite, des filets
-	   verticaux séparent les emplacements, et les libellés se touchent presque. Pas
-	   d'arrondi, pas d'ombre, pas de fond de carte — c'est une barre éditoriale, pas
-	   un groupe de boutons. */
+	/* LES TROIS COMMANDES DE LA VISUALISATION (2026-08-08, deuxième version).
+	   La première tentative avait fait une barre : un filet courant sur toute la
+	   largeur, sous trois libellés. Elle regroupait mieux, mais le filet attirait
+	   l'œil plus que les commandes, se lisait comme un séparateur de section, et les
+	   onglets restaient des liens éditoriaux. Il n'y a donc plus de filet horizontal
+	   au-delà de « Musées » : un GROUPE de trois boutons contigus, cerné d'une seule
+	   bordure fine, séparés par des filets verticaux. Rien ne se prolonge dans la
+	   page. Ni arrondi, ni ombre, ni icône. */
 	.bascule {
-		display: flex;
-		gap: 0;
+		display: inline-flex;
+		width: max-content;
+		max-width: 100%;
 		margin-top: var(--espace-5);
-		border-bottom: 2px solid var(--couleur-trait);
+		border: 1px solid var(--couleur-trait);
+		border-radius: 2px;
+		overflow: hidden;
 	}
 
 	.bascule button {
-		background: none;
+		background: var(--couleur-surface, #fffdf9);
 		border: none;
-		/* Le filet vertical fait le groupe : il sépare les emplacements sans les
-		   transformer en boutons. Le premier n'en a pas — une barre ne s'ouvre pas
-		   sur un trait. */
-		border-left: 1px solid var(--couleur-trait-clair);
-		/* Le filet de l'onglet actif se pose SOUS celui de la barre : ils se
-		   superposent au lieu de s'additionner, la ligne de base ne bouge pas. */
-		margin-bottom: -2px;
-		border-bottom: 2px solid transparent;
-		/* Cible généreuse : 44 px de haut au minimum, y compris au toucher. */
-		padding: 0.72rem 1.15rem;
+		/* Séparation verticale entre les boutons ; le premier n'en a pas. */
+		border-left: 1px solid var(--couleur-trait);
+		/* Cible d'au moins 44 px de haut. */
+		padding: 0.78rem 1.35rem;
 		font-family: var(--police-ui);
 		font-size: var(--taille-s);
 		font-weight: 600;
 		letter-spacing: 0.05em;
 		text-transform: uppercase;
-		/* Encre pleine et non encre douce : un onglet inactif reste un choix
-		   disponible, il ne doit pas avoir l'air désactivé. */
 		color: var(--couleur-encre);
 		cursor: pointer;
 		transition: background 140ms ease, color 140ms ease;
@@ -257,23 +261,40 @@
 		border-left: none;
 	}
 
+	/* La graisse de l'onglet actif est plus forte que celle des autres : sans
+	   précaution, le groupe changerait de largeur à chaque clic et la page
+	   bougerait. Chaque bouton réserve donc en permanence la place de son propre
+	   libellé en gras — un double invisible, de hauteur nulle. */
+	.bascule button::after {
+		content: attr(data-label);
+		display: block;
+		height: 0;
+		overflow: hidden;
+		visibility: hidden;
+		font-weight: 800;
+		pointer-events: none;
+	}
+
 	.bascule button:hover {
-		background: rgba(53, 87, 138, 0.06);
+		background: rgba(53, 87, 138, 0.1);
 		color: var(--accent-cobalt);
 	}
 
-	/* L'onglet actif cumule QUATRE signes : la couleur, la graisse, un filet
-	   inférieur épais et un fond très atténué. Aucun ne porte l'information seul. */
+	/* Actif : aplat cobalt franc et texte clair. Rien ne déborde du groupe. */
 	.bascule button.actif {
-		color: var(--accent-cobalt);
-		font-weight: 700;
-		border-bottom-color: var(--accent-cobalt);
-		background: rgba(53, 87, 138, 0.07);
+		background: var(--accent-cobalt);
+		color: #f4f1ea;
+		font-weight: 800;
+	}
+
+	.bascule button.actif:hover {
+		background: #2d4d78;
+		color: #f4f1ea;
 	}
 
 	.bascule button:focus-visible {
 		outline: var(--focus-anneau);
-		outline-offset: -2px;
+		outline-offset: -3px;
 	}
 
 	@media (prefers-reduced-motion: reduce) {
@@ -309,15 +330,20 @@
 			padding-right: 0;
 		}
 
-		/* Les trois onglets se partagent la largeur à parts égales et restent sur UNE
-		   ligne : trois vues, trois emplacements, aucun repli. Le corps et les marges
-		   se resserrent juste assez pour qu'aucun libellé ne soit tronqué — « Œuvres »
-		   est le plus long des trois. */
+		/* Le groupe prend toute la largeur disponible, les trois boutons se la
+		   partagent à parts égales et restent sur UNE ligne. Le corps et les marges
+		   se resserrent juste assez pour qu'aucun libellé ne soit tronqué —
+		   « Musées » est le plus long des trois. */
+		.bascule {
+			display: flex;
+			width: 100%;
+		}
+
 		.bascule button {
 			flex: 1 1 0;
-			padding: 0.8rem 0.4rem;
+			padding: 0.8rem 0.35rem;
 			font-size: 0.8rem;
-			letter-spacing: 0.03em;
+			letter-spacing: 0.02em;
 			text-align: center;
 			white-space: nowrap;
 		}
