@@ -2,6 +2,42 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-08 (quaterdecies) — A1 : traverser le répertoire sans le compter
+
+Dernier point d'accessibilité avant publication. Aucun changement visuel.
+
+**Le défaut.** Le répertoire aligne 102 artistes, chacun étant un bouton : la tabulation s'y
+arrêtait 102 fois avant d'atteindre le reste de la page. La suppression de l'infobulle des
+jauges, le matin même, avait ramené le compte de 204 à 102 — un progrès, pas une solution.
+
+**Tabindex tournant.** Un seul artiste est atteignable par `Tab` : celui qui est
+sélectionné, ou le premier de la liste si la sélection a été filtrée par la recherche — sans
+quoi un répertoire filtré n'aurait plus de porte d'entrée. **Tab s'arrête donc une fois**, et
+les **flèches haut et bas** circulent à l'intérieur, avec bouclage ; `Début` et `Fin` vont
+aux extrémités.
+
+**Les flèches ne choisissent pas.** Sur 102 noms, sélectionner à chaque flèche rechargerait
+une fiche par touche. C'est `Entrée` ou `Espace` qui choisit — et comme ce sont de vrais
+`<button>`, le navigateur s'en charge : il n'y avait rien à écrire pour cela. C'est
+l'inverse du groupe d'onglets (A2), où les flèches sélectionnent : trois vues se parcourent,
+cent deux fiches se choisissent.
+
+**Le focus reste visible** dans la liste, qui défile sur 34 rem : `scrollIntoView` au plus
+près, qui amène l'élément dans le cadre sans faire sauter la page autour.
+
+L'écoute clavier est posée **sur la liste**, pas sur chaque bouton : 102 écouteurs pour un
+comportement commun n'apprendraient rien à personne.
+
+**Vérifié** : 1 artiste tabulable sur 102 ; Tab s'arrête une seule fois puis sort du
+répertoire ; flèches, Début et Fin donnent le nom attendu ; après `Fin`, l'artiste focalisé
+est bien dans le cadre de la liste ; une flèche ne change pas la sélection, `Entrée` la
+change. **Recherche, tri, souris et toucher sont intacts** : une recherche laisse toujours
+exactement une porte d'entrée (« rembrandt » → Rembrandt), une recherche sans résultat n'en
+laisse aucune puisqu'il n'y a plus de liste, le tri alphabétique n'y change rien, et le clic
+comme le toucher sélectionnent comme avant.
+
+La règle est inscrite dans la charte (§ 13), pour les listes longues à venir.
+
 ## 2026-08-08 (terdecies) — A2 : les onglets et leur panneau se répondent
 
 Premier des deux derniers points d'accessibilité, ciblé sur le motif ARIA des onglets.

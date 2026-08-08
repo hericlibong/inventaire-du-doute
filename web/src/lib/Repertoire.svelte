@@ -51,6 +51,53 @@
 		selection = nom;
 		if (estMobile) ouvert = false; // referme après le choix, découvre le profil
 	}
+
+	// --- Navigation clavier de la liste (A1, 2026-08-08) -----------------------
+	// La liste compte 102 artistes : chacun étant un bouton, Tab s'y arrêtait 102
+	// fois avant d'atteindre le reste de la page. C'est le motif du « tabindex
+	// tournant » : un seul bouton est atteignable par Tab — celui de l'artiste
+	// sélectionné, ou le premier de la liste si la sélection est filtrée —, et les
+	// FLÈCHES circulent à l'intérieur.
+	//
+	// Les flèches déplacent le focus SANS choisir : sur une liste de 102 noms, une
+	// sélection à chaque flèche rechargerait une fiche à chaque touche. C'est Entrée
+	// ou Espace qui choisit — et comme ce sont de vrais <button>, le navigateur s'en
+	// charge déjà : rien à ajouter pour cela.
+	let listeEl = $state(null);
+
+	// L'index atteignable par Tab. La sélection le fixe ; s'il sort de la liste
+	// filtrée, on retombe sur le premier — sinon la recherche laisserait un
+	// répertoire sans porte d'entrée.
+	const indexTab = $derived.by(() => {
+		const i = liste.findIndex((a) => a.nom === selection);
+		return i >= 0 ? i : 0;
+	});
+
+	const boutons = () => [...(listeEl?.querySelectorAll('.maitre') ?? [])];
+
+	function versIndex(i) {
+		const b = boutons();
+		if (!b.length) return;
+		const cible = b[Math.max(0, Math.min(b.length - 1, i))];
+		cible?.focus();
+		// La liste défile (max-height + overflow) : le focus clavier doit rester
+		// visible, sans faire sauter la page autour.
+		cible?.scrollIntoView({ block: 'nearest' });
+	}
+
+	function auClavierListe(event) {
+		const i = boutons().indexOf(document.activeElement);
+		if (i < 0) return;
+		const n = boutons().length;
+		let cible = null;
+		if (event.key === 'ArrowDown') cible = (i + 1) % n;
+		else if (event.key === 'ArrowUp') cible = (i - 1 + n) % n;
+		else if (event.key === 'Home') cible = 0;
+		else if (event.key === 'End') cible = n - 1;
+		if (cible === null) return;
+		event.preventDefault();
+		versIndex(cible);
+	}
 </script>
 
 <nav class="repertoire" aria-label="Répertoire des artistes">
@@ -102,8 +149,12 @@
 				<span>Artiste</span><span>Œuvres concernées</span>
 			</p>
 
-			<ul class="maitres">
-				{#each liste as a (a.nom)}
+			<!-- Un seul bouton dans l'ordre de tabulation, les flèches pour le reste :
+			     voir `auClavierListe`. L'écoute est posée sur la liste, pas sur chaque
+			     bouton — 102 écouteurs pour un comportement commun n'apprendraient
+			     rien à personne. -->
+			<ul class="maitres" bind:this={listeEl} onkeydown={auClavierListe}>
+				{#each liste as a, i (a.nom)}
 					<!-- La jauge (microprofil coloré) vit HORS du bouton : ses segments sont
 					     focusables (infobulle au survol/focus), or un élément interactif ne
 					     peut pas être imbriqué dans un <button> (2026-07-12). -->
@@ -111,6 +162,7 @@
 						<button
 							class="maitre"
 							aria-current={a.nom === selection ? 'true' : undefined}
+							tabindex={i === indexTab ? 0 : -1}
 							onclick={() => choisir(a.nom)}
 						>
 							<span class="nom">{a.nom}</span>

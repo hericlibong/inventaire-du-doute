@@ -434,3 +434,24 @@ Récit daté : decisions.md, 2026-08-08 quinquies.
   **Pas de menu escamotable** : quatre entrées se montrent, elles ne se cachent pas.
 
 Récit daté : decisions.md, 2026-08-08 octies.
+
+## 13. Listes longues et groupes de commandes au clavier — arrêté le 2026-08-08
+
+Toute liste de plus d'une dizaine d'éléments interactifs, et tout groupe de commandes
+(onglets, segments), suit le **tabindex tournant** :
+
+- **un seul élément est atteignable par `Tab`** — celui qui est sélectionné, ou le premier
+  si la sélection ne fait pas partie de la liste affichée. `Tab` traverse le groupe d'un
+  coup au lieu de s'y arrêter autant de fois qu'il compte d'éléments ;
+- **les flèches circulent à l'intérieur**, avec bouclage aux extrémités ; `Début` et `Fin`
+  y vont directement ;
+- **dans un groupe d'onglets, les flèches sélectionnent** en même temps qu'elles déplacent :
+  on veut voir défiler les vues et s'arrêter sur la bonne ;
+- **dans une liste de contenus, elles ne font que déplacer le focus.** Sélectionner à chaque
+  flèche rechargerait une fiche par touche. C'est `Entrée` ou `Espace` qui choisit — et sur
+  de vrais `<button>`, le navigateur s'en charge déjà ;
+- **l'élément focalisé reste visible** si la liste défile (`scrollIntoView({ block: 'nearest' })`,
+  qui ne fait pas sauter la page autour) ;
+- l'écoute clavier se pose **sur le conteneur**, jamais sur chaque élément.
+
+Récit daté : decisions.md, 2026-08-08 (terdecies et quaterdecies).

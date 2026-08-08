@@ -71,13 +71,12 @@ Les contrôles sont proportionnés à chaque changement ; **le contrôle exhaust
             (`role="tabpanel"`, `aria-labelledby`). Un seul onglet dans l'ordre de
             tabulation ; flèches gauche/droite avec bouclage, Début et Fin. Souris et
             apparence inchangées.
-      - [ ] **A1 — Navigation clavier dans le répertoire des 102 artistes.** « Réduire ou
-            mieux organiser la navigation clavier dans le répertoire des 102 artistes, sans
-            dégrader la recherche ni la sélection. » Ouvert le 2026-08-08. La suppression de
-            l'infobulle des jauges ramène la tabulation de **204 à 102 arrêts** — c'est un
-            progrès, mais 102 arrêts avant d'atteindre le reste de la page restent beaucoup.
-            **À examiner plus tard dans la phase 3 ; ne pas traiter avec le correctif de la
-            jauge.**
+      - [x] **A1 — RÉSOLU le 2026-08-08.** Tabindex tournant : **un seul artiste dans
+            l'ordre de tabulation** (le sélectionné, ou le premier de la liste filtrée) —
+            Tab s'arrête une fois au lieu de 102. Les flèches haut/bas circulent avec
+            bouclage, Début et Fin vont aux extrémités, Entrée ou Espace choisit (les
+            boutons natifs s'en chargent). Le focus reste visible dans la liste défilante
+            (`scrollIntoView` au plus près). Recherche, tri, souris et toucher inchangés.
       Sujets pressentis :
       marges et rythme vertical · navigation · panneaux et états interactifs · cartes et
       listes d'œuvres · carte des musées · états sans image · affichage mobile · cohérence
