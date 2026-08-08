@@ -265,10 +265,14 @@
 		<!-- Filtres : « Toutes » + une puce par mention présente, ordre public. -->
 		<div class="filtres" role="group" aria-label="Filtrer par mention">
 			{#each puces as p (p.code ?? 'toutes')}
+				<!-- La couleur de la mention est passée en variable : l'état actif la
+				     reprend en contour et en fond très dilué. « Toutes » n'appartient à
+				     aucune famille et garde le cobalt de l'interface. -->
 				<button
 					type="button"
 					class="puce"
 					class:actif={familleActive === p.code}
+					style={p.code ? `--teinte: ${fam(p.code).couleur}` : undefined}
 					aria-pressed={familleActive === p.code}
 					onclick={() => choisirFamille(p.code)}
 				>
@@ -560,10 +564,16 @@
 		border-color: var(--couleur-encre-douce);
 	}
 
+	/* Puce active : trois signes, jamais la couleur seule (2026-08-08). Le contour
+	   et le fond prennent la teinte de la mention — celle du point du graphique et
+	   du trait de la liste —, la graisse passe à 700, et le point coloré reste.
+	   `--teinte` n'est posée que sur les mentions : « Toutes » n'appartient à aucune
+	   famille et garde donc le cobalt, qui est la couleur de l'interface. */
 	.puce.actif {
-		border-color: var(--accent-cobalt);
+		border-color: var(--teinte, var(--accent-cobalt));
 		border-width: 2px;
 		padding: calc(0.28rem - 1px) calc(0.6rem - 1px); /* compense la bordure */
+		background: color-mix(in srgb, var(--teinte, var(--accent-cobalt)) 9%, var(--surface-carte));
 		font-weight: 700;
 	}
 
