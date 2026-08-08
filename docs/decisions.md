@@ -2,6 +2,49 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-08 (undecies) — Les filtres de l'onglet Œuvres
+
+Deux retouches d'apparence, **sans toucher à la logique** : sélection immédiate, filtrage
+croisé musée × mention, recomptage dans le musée choisi, pagination, état partagé avec la
+carte et retrait du filtre fonctionnent comme avant, par les mêmes fonctions.
+
+**Les puces de mention portent leur propre couleur** une fois actives. Elles passaient
+toutes au cobalt, alors que la couleur de la famille était déjà là, dans le point qui
+précède le libellé — la même que celle du point du graphique et du trait de la liste
+d'œuvres. L'état actif la reprend en contour et en fond très dilué. « Toutes » garde le
+cobalt : elle n'appartient à aucune famille. Trois signes coexistent, aucun ne dépend de la
+couleur seule — contour épaissi, graisse à 700, point coloré conservé.
+
+**Le menu des musées n'est plus un `<select>` natif** mais un bouton et une liste
+(`ChoixMusee.svelte`). Le natif apportait le clavier sans code, mais il imposait le gris du
+système au milieu d'une page de papier, et il ne savait pas aligner les effectifs.
+
+Le déclencheur montre le musée à gauche, l'effectif accordé à droite (« 310 œuvres »,
+« 1 œuvre ») et un chevron dessiné en CSS. La liste reprend sa largeur, place « Tous les
+musées » en tête derrière un filet, aligne les effectifs dans une colonne fixe, et **laisse
+les noms longs passer à la ligne** — on ne coupe pas le nom d'un musée. L'option choisie
+cumule une coche, la graisse et un fond cobalt léger. Hauteur bornée, défilement interne :
+vérifié sur David Téniers, qui compte 24 musées, soit 25 options en 306 px.
+
+**Pas de champ de recherche** : 24 musées au maximum pour un artiste, une liste de cette
+longueur se parcourt à l'œil plus vite qu'elle ne se tape.
+
+**Le clavier est complet** : Entrée ou Espace ouvre, les flèches déplacent, Début et Fin vont
+aux extrémités, Entrée choisit, Échap referme **en rendant le focus au déclencheur**. Le
+focus est réel sur chaque option plutôt qu'un `aria-activedescendant` : moins d'état à tenir,
+et le navigateur fait défiler la liste tout seul. `aria-haspopup="listbox"`, `aria-expanded`
+et `aria-selected` sont posés. Chaque option annonce « musée du Louvre, Paris, 17 œuvres » —
+le nombre est seul à l'écran, accordé pour qui écoute.
+
+**Vérifié sur les chiffres attendus** (Charles Le Brun) : tous les musées 310 œuvres ;
+Besançon 7 ; mentions recomptées à Besançon, 6 « Attribué à » et 1 « Nom (?) » ; retrait du
+filtre, retour à 310. Trajet depuis la carte : « Voir les 276 œuvres conservées dans ce
+musée » ouvre l'onglet Œuvres avec le Louvre déjà sélectionné. Un artiste à musée unique
+n'affiche pas de sélecteur (Léon Tirode). Aucun débordement horizontal, à 1440 px et 390 px.
+
+Un utilitaire d'accord a été ajouté à `joconde.js` — `oeuvres(n)`, sur le modèle de
+`musees(n)` déjà présent : jamais de `${n} œuvres` brut.
+
 ## 2026-08-08 (decies) — Voir une reproduction en grand, sans quitter la page
 
 Dernier point du chantier « Œuvres », traité à part comme prévu.

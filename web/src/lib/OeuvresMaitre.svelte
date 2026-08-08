@@ -1,6 +1,7 @@
 <script>
 	import { tick } from 'svelte';
 	import { base } from '$app/paths';
+	import ChoixMusee from '$lib/ChoixMusee.svelte';
 	import CreditImage from '$lib/CreditImage.svelte';
 	import LightboxOeuvre from '$lib/LightboxOeuvre.svelte';
 	import { lienPop } from '$lib/joconde.js';
@@ -232,24 +233,19 @@
 			</button>
 		</p>
 	{:else}
-		<!-- Filtre par musée : liste native (clavier, souris et tactile sans code
-		     ajouté), bornée aux musées qui conservent une œuvre concernée de cet
-		     artiste, chacun avec son effectif. -->
+		<!-- Filtre par musée, borné aux musées qui conservent une œuvre concernée de
+		     cet artiste, chacun avec son effectif. La liste native a été remplacée le
+		     2026-08-08 par ChoixMusee : même geste, même fonction `choisirMusee`,
+		     mais une surface qui appartient à la page au lieu du gris du système. -->
 		{#if musees.length > 1 || musee}
 			<div class="filtre-musee">
-				<label for="filtre-musee">Musée</label>
-				<select
-					id="filtre-musee"
-					value={museeActif ?? ''}
-					onchange={(e) => choisirMusee(e.currentTarget.value)}
-				>
-					<option value="">Tous les musées ({oeuvres.length})</option>
-					{#each musees as m (m.code)}
-						<option value={m.code}>
-							{m.nom}{m.ville ? `, ${m.ville}` : ''} — {m.n}
-						</option>
-					{/each}
-				</select>
+				<span class="etiquette-musee" id="etiquette-musee">Musée</span>
+				<ChoixMusee
+					{musees}
+					total={oeuvres.length}
+					valeur={museeActif}
+					choisir={(code) => choisirMusee(code)}
+				/>
 				<!-- Retrait direct : la liste dit DÉJÀ quel musée est actif, inutile de
 				     le répéter en toutes lettres ; ce qui manquait, c'est le moyen d'en
 				     sortir sans rouvrir le menu. C'est aussi la porte de sortie du
@@ -494,33 +490,10 @@
 		font-size: var(--taille-xs);
 	}
 
-	.filtre-musee label {
+	.etiquette-musee {
 		letter-spacing: 0.04em;
 		text-transform: uppercase;
 		color: var(--couleur-encre-douce);
-	}
-
-	.filtre-musee select {
-		/* Le nom officiel d'un musée est long : la liste prend la largeur qu'il lui
-		   faut, plafonnée, sans jamais pousser la colonne (min-width: 0). Elle ne
-		   s'étire PAS jusqu'au bord : le bouton de retrait doit rester à côté
-		   d'elle, pas plaqué contre la marge droite. */
-		flex: 0 1 26rem;
-		min-width: 0;
-		max-width: 100%;
-		padding: 0.3rem 0.5rem;
-		font-family: inherit;
-		font-size: inherit;
-		color: var(--couleur-encre);
-		background: var(--surface-carte);
-		border: 1px solid var(--couleur-trait);
-		border-radius: var(--rayon-s);
-		cursor: pointer;
-	}
-
-	.filtre-musee select:focus-visible {
-		outline: var(--focus-anneau);
-		outline-offset: 2px;
 	}
 
 	.retirer {

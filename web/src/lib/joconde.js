@@ -38,6 +38,13 @@ export function musees(n) {
 	return `${nombre(n)} ${Math.abs(n) === 1 ? 'musée' : 'musées'}`;
 }
 
+// « 1 œuvre » / « 310 œuvres » : même règle d'accord, pour les libellés qui
+// comptent des œuvres côté lecteur (onglet Œuvres). Le vocabulaire « notice »
+// reste réservé à la méthode et aux données (É1, 2026-08-03).
+export function oeuvres(n) {
+	return `${nombre(n)} ${Math.abs(n) === 1 ? 'œuvre' : 'œuvres'}`;
+}
+
 // Un ratio (en %) raconté en français, pour le récit : « plus de la moitié »
 // vaut mieux que « 59 % » quand la lecture prime. Le chiffre exact reste donné
 // à côté (nombres bruts, survol, vue Détail) — cette phrase n'est qu'une glose.
