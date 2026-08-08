@@ -2,6 +2,42 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-08 (decies) — Voir une reproduction en grand, sans quitter la page
+
+Dernier point du chantier « Œuvres », traité à part comme prévu.
+
+**Ce qui n'ouvre pas la lightbox** : tout le reste. Seules les reproductions **déjà retenues
+par le pipeline et déjà servies localement** s'agrandissent — la lightbox montre en grand ce
+que la vignette montre en petit. Aucune nouvelle source, aucun appel distant, aucun statut
+de droits touché. Une notice sans reproduction n'a pas de vignette cliquable : vérifié sur
+la fiche de Léon Tirode (0 vignette, 8 mentions « Reproduction non disponible »).
+
+**La vignette devient un bouton.** Elle ouvrait jusqu'ici la page Commons ou Gallica dans un
+onglet ; cliquer sur une image doit d'abord l'agrandir. **Le lien vers la source ne disparaît
+pas pour autant** : il reste dans le crédit, juste sous la vignette, là où l'attribution
+l'exige, et il est repris sous l'image agrandie.
+
+**Le crédit est devenu un composant partagé** (`CreditImage.svelte`). Le dupliquer dans la
+lightbox aurait créé deux formulations d'une obligation légale, vouées à diverger : une
+licence, un auteur et un lien de source ne se recopient pas. La réserve « autre exemplaire
+du même tirage » suit l'image agrandie, comme elle suit la vignette.
+
+**Le comportement, vérifié et non supposé** : ouverture au clic, au toucher et au clavier
+(Entrée) ; fermeture par le bouton « Fermer » écrit en toutes lettres, par Échap et par un
+clic hors de l'image ; défilement de la page bloqué pendant l'ouverture et rendu ensuite ;
+focus placé sur le bouton de fermeture à l'ouverture, **piégé dans le panneau** (six
+tabulations n'en sortent pas) et **rendu à la vignette d'origine** à la fermeture ; image
+contenue dans l'écran sur les deux formats (607 × 724 dans 1440 × 900, 366 × 436 dans
+390 × 844).
+
+**Deux refus délibérés.** L'image n'est jamais agrandie au-delà de sa résolution réelle : on
+ne fabrique pas des pixels qui n'existent pas. Et le survol ne fait qu'un léger mouvement de
+l'image avec un cadre accentué — **aucun voile sombre** : on ne masque pas une œuvre pour
+annoncer qu'on peut la voir en grand.
+
+Le fond du panneau est dense à 97 % : à 92 %, le bandeau de navigation transparaissait
+derrière le bouton de fermeture.
+
 ## 2026-08-08 (nonies) — La liste des œuvres : un trait, une action, une absence
 
 Sixième point de la phase 3, sur le bloc « vignette + informations » de l'onglet Œuvres.

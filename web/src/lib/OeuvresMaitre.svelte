@@ -1,6 +1,8 @@
 <script>
 	import { tick } from 'svelte';
 	import { base } from '$app/paths';
+	import CreditImage from '$lib/CreditImage.svelte';
+	import LightboxOeuvre from '$lib/LightboxOeuvre.svelte';
 	import { lienPop } from '$lib/joconde.js';
 	import { FAMILLE_PUBLIC, ORDRE_FAMILLES, notices } from '$lib/familles-public.js';
 	import { fenetrePagination } from '$lib/pagination.js';
@@ -21,6 +23,25 @@
 	// jamais à zéro tout seul — c'est la page qui le fait au changement d'artiste,
 	// sinon un musée choisi sur la carte serait effacé à l'ouverture de l'onglet.
 	let { maitre, museeActif = $bindable(null) } = $props();
+
+	// Agrandissement d'une reproduction (2026-08-08). N'ouvre QUE des images déjà
+	// retenues par le pipeline et déjà servies localement : la lightbox agrandit ce
+	// que la vignette montre, elle ne va rien chercher ailleurs.
+	// `ouvreurAgrandi` retient la vignette d'où l'on vient, pour lui rendre le focus
+	// à la fermeture — sans quoi le clavier repartirait du haut de la page.
+	let agrandie = $state(null);
+	let ouvreurAgrandi = null;
+
+	function agrandir(o, event) {
+		ouvreurAgrandi = event?.currentTarget ?? null;
+		agrandie = o;
+	}
+
+	function refermerAgrandie() {
+		agrandie = null;
+		ouvreurAgrandi?.focus();
+		ouvreurAgrandi = null;
+	}
 
 	const PAR_PAGE = 8;
 
@@ -297,22 +318,20 @@
 							{@const autre = o.image.exemplaire_autre === true}
 							{@const bnf = o.image.source_type === 'gallica_bnf'}
 							<figure class="media-figure">
-								<a class="media media-image" href={o.image.source} target="_blank" rel="noopener" title={bnf ? 'Voir le document sur Gallica' : 'Voir le fichier sur Wikimedia Commons'}>
+								<!-- La vignette OUVRE L'AGRANDISSEMENT, elle ne quitte plus le
+								     site : c'est le geste attendu sur une image, et le lien vers
+								     la source reste juste dessous, dans le crédit, où l'exige
+								     l'attribution. Bouton et non lien : l'action est locale. -->
+								<button
+									class="media media-image"
+									type="button"
+									onclick={(e) => agrandir(o, e)}
+									aria-label="Agrandir la reproduction : {o.titre ?? 'œuvre'}"
+								>
 									<img src="{base}/{o.image.url}" alt={autre ? `Autre exemplaire du même tirage : ${o.titre ?? 'œuvre'}` : `Reproduction : ${o.titre ?? 'œuvre'}`} loading="lazy" />
-								</a>
-								<figcaption class="credit">
-									{#if autre}
-										<span class="credit-reserve">Autre exemplaire du même tirage</span>
-										{#if bnf}
-											Domaine public · source <a href={o.image.source} target="_blank" rel="noopener">Gallica&nbsp;(BnF)</a>
-										{:else}
-											{#if o.image.credit}<span class="credit-auteur" title={o.image.credit}>{o.image.credit}</span> ·&nbsp;{/if}{o.image.licence === 'CC0' ? 'CC0' : o.image.licence || 'Domaine public'} · source <a href={o.image.source} target="_blank" rel="noopener">Wikimedia&nbsp;Commons</a>
-										{/if}
-									{:else if o.image.licence.startsWith('CC BY')}
-										{#if o.image.creator}<span class="credit-auteur" title={o.image.creator}>{o.image.creator}</span> ·&nbsp;{/if}<a href={o.image.licence_url || o.image.source} target="_blank" rel="noopener">{o.image.licence}</a> · <a href={o.image.source} target="_blank" rel="noopener">Wikimedia&nbsp;Commons</a>
-									{:else}
-										{o.image.licence === 'CC0' ? 'CC0' : 'Domaine public'} · source <a href={o.image.source} target="_blank" rel="noopener">Wikimedia&nbsp;Commons</a>
-									{/if}
+								</button>
+								<figcaption>
+									<CreditImage image={o.image} />
 								</figcaption>
 							</figure>
 						{:else}
@@ -408,6 +427,11 @@
 		Les liens ouvrent les fiches publiques sur POP, la plateforme ouverte du patrimoine.
 	</p>
 </section>
+
+{#if agrandie}
+	<LightboxOeuvre oeuvre={agrandie} fermer={refermerAgrandie} />
+{/if}
+
 
 <style>
 	.tete {
@@ -650,8 +674,13 @@
 		min-width: 0;
 	}
 
+	/* La vignette est un bouton depuis le 2026-08-08 : on remet à zéro ce que le
+	   navigateur lui ajoute, `.media` fournissant déjà le cadre. */
 	.media-image {
 		padding: 0;
+		width: 100%;
+		font: inherit;
+		color: inherit;
 		cursor: zoom-in;
 	}
 
@@ -660,6 +689,29 @@
 		height: 100%;
 		object-fit: contain;
 		display: block;
+		transition: transform 180ms ease;
+	}
+
+	/* Signe d'agrandissement au survol : l'image avance très légèrement et le cadre
+	   prend l'accent. Aucun voile sombre — on ne masque pas une œuvre pour annoncer
+	   qu'on peut la voir en grand. */
+	.media-image:hover img,
+	.media-image:focus-visible img {
+		transform: scale(1.03);
+	}
+
+	.media-image:hover {
+		border-color: var(--accent-cobalt);
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.media-image img {
+			transition: none;
+		}
+		.media-image:hover img,
+		.media-image:focus-visible img {
+			transform: none;
+		}
 	}
 
 	.media-image:focus-visible {
