@@ -59,6 +59,13 @@ Les contrôles sont proportionnés à chaque changement ; **le contrôle exhaust
       étroit, trois lignes courtes maximum » était faux, et avait plafonné la réécriture.
 - [ ] **F3 — Finitions visuelles, point par point.** Périmètre non arrêté.
       **Points ouverts, à traiter séparément :**
+      - [ ] **M1 — Consigner dans la page Méthode, section « Limites », la décision sur les
+            titres** (noté le 2026-08-08, **à faire en FIN de phase 3**) : les titres sont
+            affichés dans la graphie exacte publiée par les musées, sans normalisation de
+            casse. La raison est publiable et intéresse le lecteur — quatre titres en
+            capitales sur cinq ne portent aucun accent, et les abaisser afficherait des
+            fautes que la source ne contient pas. Décision et chiffres : decisions.md,
+            2026-08-08 (nonies bis).
       - [ ] **A2 — Compléter le motif ARIA des onglets** (relevé le 2026-08-08) : les vues
             n'ont ni `role="tabpanel"` ni `aria-controls`. La structure reste utilisable,
             mais incomplète. À traiter avec A1, pas dans un correctif visuel.
