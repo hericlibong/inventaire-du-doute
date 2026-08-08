@@ -2,6 +2,59 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-08 (nonies) — La liste des œuvres : un trait, une action, une absence
+
+Sixième point de la phase 3, sur le bloc « vignette + informations » de l'onglet Œuvres.
+Structure, données et pagination inchangées.
+
+**Un trait plutôt qu'un point devant la mention.** Le rond appartient au graphique, où il
+porte une mesure ; répété dans la liste, il évoquait une puce ou un état cliquable alors
+qu'il ne nomme qu'une catégorie. C'est un trait couché de 20 × 3 px, dans la couleur de la
+famille. **Le filet vertical du verbatim est conservé** : le trait nomme la famille, le
+filet accompagne les mots publiés par le musée.
+
+**L'action vers POP devient un bouton secondaire** : « Voir la notice sur POP », contour fin
+et fond transparent, sans flèche. L'action existe sur chaque entrée — un aplat plein en
+ferait huit taches par page. N'étant pas un lien de texte courant, il ne prend pas le
+soulignement permanent de la charte (§ 9) : le contour tient ce rôle. Survol en fond cobalt
+à 8 %, focus en anneau de 2 px, vérifié par tabulation réelle.
+
+**L'absence de reproduction se dit.** « reproduction non affichée » laissait croire à un
+choix d'affichage ; c'est « **Reproduction non disponible** ». La mention reste compacte —
+quelques millimètres en tête de la colonne du média, jamais un cadre vide — et elle **n'est
+plus masquée aux lecteurs d'écran** : que la notice existe sans image est une information,
+pas un défaut à cacher. Ni bordure, ni fond, ni curseur : rien qui ressemble à une image
+cliquable, et l'alignement des titres est préservé d'une entrée à l'autre.
+
+## 2026-08-08 (nonies bis) — Les titres de Joconde ne seront pas normalisés
+
+Décision de l'utilisateur, prise après audit : **la graphie publiée dans Joconde est
+conservée telle quelle**, y compris les 885 titres majoritairement en capitales.
+
+**Ce que l'audit a établi**, sur 6 136 titres affichés :
+- 85,6 % sont déjà composés normalement et n'appellent rien ;
+- des 885 titres en capitales, **81 % ne portent aucun accent** — les musées ont saisi
+  « TETE », « ECHECS », « JESUS », « FRANCOIS ». En capitales, cette absence est invisible :
+  l'usage tolère les capitales non accentuées. **Abaisser la casse la rendrait visible et
+  fautive** — environ 200 titres afficheraient un mot mal orthographié, et aucune règle ne
+  restitue un accent sans dictionnaire ;
+- les noms propres sont indétectables : « ROI DE FRANCE ET DE NAVARRE » deviendrait « roi de
+  france et de navarre », et capitaliser chaque mot produirait l'anglicisme « Roi De
+  France » ;
+- ce qui marchait, en revanche : les chiffres romains (validation stricte de la forme,
+  aucun faux positif sur le corpus) et la reprise de majuscule après « ; » ;
+- le critère de détection lui-même est fragile : 75 titres en capitales seraient classés
+  « déjà composés » à tort, la mention « (titre inscrit) » en bas de casse faisant chuter
+  leur proportion de majuscules.
+
+La règle du projet est de restituer ce que les musées ont écrit. Ici, normaliser
+n'aurait pas mis en forme : cela aurait **introduit des fautes que la source ne contient
+pas**. Le prototype a servi à le démontrer, il n'a pas été conservé.
+
+**En réserve, à valider** : réduire d'environ 5 % le corps des seuls titres majoritairement
+capitalisés, sans toucher ni la graisse, ni l'interlettrage, ni un caractère. Capture
+comparative produite (`titres-comparaison.png`) ; le traitement n'est pas appliqué.
+
 ## 2026-08-08 (octies) — Le bandeau suit la lecture
 
 Cinquième point de la phase 3, limité au header et à sa navigation.

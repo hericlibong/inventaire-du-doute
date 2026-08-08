@@ -322,7 +322,7 @@
 							     est remplacé par une mention brève, en tête de la même colonne —
 							     l'alignement du texte est conservé, les entrées qui PORTENT une
 							     image ne changent pas. -->
-							<p class="media-absente" aria-hidden="true">reproduction non affichée</p>
+							<p class="media-absente">Reproduction non disponible</p>
 						{/if}
 						<div class="corps">
 							<p class="kicker">
@@ -335,7 +335,7 @@
 							{#if lieu(o) && !musee}<p class="lieu">{lieu(o)}</p>{/if}
 							<p class="verbatim" style="border-left-color: {fam(o.code).couleur}">«&nbsp;{o.extrait}&nbsp;»</p>
 							<a class="lien-fiche" href={lienPop(o.reference)} target="_blank" rel="noopener">
-								Voir la fiche publique sur POP&nbsp;→
+								Voir la notice sur POP
 							</a>
 						</div>
 					</li>
@@ -625,6 +625,12 @@
 	/* Mention compacte à la place du cadre : quelques millimètres au lieu d'une
 	   boîte de 14 rem, dans la colonne du média pour que les titres restent alignés
 	   d'une entrée à l'autre. */
+	/* Reproduction absente : une mention COMPACTE, jamais un cadre vide.
+	   Elle n'est plus masquée aux lecteurs d'écran (2026-08-08) : l'information est
+	   utile — la notice existe, l'image manque — et elle est désormais explicite au
+	   lieu de dire « non affichée », qui laissait croire à un choix d'affichage.
+	   Ni bordure de boîte, ni fond, ni curseur : rien qui ressemble à une image
+	   cliquable. */
 	.media-absente {
 		margin: 0;
 		/* sans quoi l'élément s'étire sur toute la hauteur de la ligne de grille et
@@ -633,9 +639,8 @@
 		padding-top: 0.35rem;
 		border-top: var(--filet-clair);
 		font-family: var(--police-ui);
-		font-size: 0.62rem;
-		letter-spacing: 0.05em;
-		text-transform: uppercase;
+		font-size: 0.68rem;
+		letter-spacing: 0.03em;
 		line-height: 1.35;
 		color: var(--couleur-encre-douce);
 	}
@@ -751,16 +756,38 @@
 		line-height: 1.3;
 	}
 
+	/* Action vers la notice publique : un vrai lien, présenté en BOUTON SECONDAIRE
+	   (2026-08-08). Contour fin et fond transparent — l'action existe sur chaque
+	   entrée de la liste, un aplat plein en ferait huit taches par page. La flèche
+	   est retirée : le libellé dit déjà qu'on sort du site, et l'onglet s'ouvre à
+	   part. N'étant pas un lien de texte courant, il ne prend pas le soulignement
+	   permanent de la charte (§ 9) : le contour tient ce rôle. */
 	.lien-fiche {
+		display: inline-block;
+		padding: 0.34rem 0.7rem;
+		border: 1px solid rgba(53, 87, 138, 0.45);
+		border-radius: 2px;
 		font-family: var(--police-ui);
 		font-size: var(--taille-s);
 		color: var(--accent-cobalt);
 		text-decoration: none;
-		border-bottom: 1px solid transparent;
+		transition: background 140ms ease, border-color 140ms ease;
 	}
 
 	.lien-fiche:hover {
-		border-bottom-color: var(--accent-cobalt);
+		background: rgba(53, 87, 138, 0.08);
+		border-color: var(--accent-cobalt);
+	}
+
+	.lien-fiche:focus-visible {
+		outline: 2px solid var(--accent-cobalt);
+		outline-offset: 2px;
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.lien-fiche {
+			transition: none;
+		}
 	}
 
 	/* --- Pagination : bornes + fenêtre compacte, page active repérable sans la
