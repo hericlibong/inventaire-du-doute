@@ -66,9 +66,11 @@ Les contrôles sont proportionnés à chaque changement ; **le contrôle exhaust
             capitales sur cinq ne portent aucun accent, et les abaisser afficherait des
             fautes que la source ne contient pas. Décision et chiffres : decisions.md,
             2026-08-08 (nonies bis).
-      - [ ] **A2 — Compléter le motif ARIA des onglets** (relevé le 2026-08-08) : les vues
-            n'ont ni `role="tabpanel"` ni `aria-controls`. La structure reste utilisable,
-            mais incomplète. À traiter avec A1, pas dans un correctif visuel.
+      - [x] **A2 — RÉSOLU le 2026-08-08.** Chaque onglet déclare le panneau qu'il commande
+            (`aria-controls`, identifiants), le panneau déclare l'onglet qui le nomme
+            (`role="tabpanel"`, `aria-labelledby`). Un seul onglet dans l'ordre de
+            tabulation ; flèches gauche/droite avec bouclage, Début et Fin. Souris et
+            apparence inchangées.
       - [ ] **A1 — Navigation clavier dans le répertoire des 102 artistes.** « Réduire ou
             mieux organiser la navigation clavier dans le répertoire des 102 artistes, sans
             dégrader la recherche ni la sélection. » Ouvert le 2026-08-08. La suppression de

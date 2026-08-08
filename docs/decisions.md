@@ -2,6 +2,31 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-08 (terdecies) — A2 : les onglets et leur panneau se répondent
+
+Premier des deux derniers points d'accessibilité, ciblé sur le motif ARIA des onglets.
+Aucun changement visuel.
+
+**Ce qui manquait.** Les trois onglets portaient `role="tab"` et `aria-selected`, mais rien
+ne les reliait au contenu : pas de `role="tabpanel"`, pas d'`aria-controls`, pas
+d'`aria-labelledby`. Un lecteur d'écran annonçait trois onglets, puis un contenu sans
+rapport déclaré avec eux.
+
+**Chaque onglet déclare le panneau qu'il commande**, et le panneau déclare l'onglet qui le
+nomme. Les identifiants sont dérivés de la même liste de vues (`ONGLETS`) que le balisage :
+ils ne peuvent plus diverger.
+
+**Un seul onglet dans l'ordre de tabulation** — `tabindex="0"` sur l'actif, `-1` sur les
+autres. Tab traverse le groupe d'un coup au lieu de s'arrêter trois fois, et ce sont les
+**flèches** qui circulent dedans : gauche et droite avec bouclage, Début et Fin aux
+extrémités. Les flèches sélectionnent en même temps qu'elles déplacent — sur un jeu
+d'onglets, c'est le comportement attendu : on voit défiler les vues et l'on s'arrête sur la
+bonne.
+
+**Vérifié** : `aria-controls` pointe sur un élément existant, un seul onglet tabulable, les
+six combinaisons de touches donnent l'onglet attendu avec le focus qui suit et le panneau
+correctement relié. La souris fonctionne comme avant, l'apparence n'a pas bougé.
+
 ## 2026-08-08 (duodecies) — Le panneau de la carte, mis en ordre
 
 Dernier point du jour, limité au panneau : la carte, ses points et ses données ne bougent

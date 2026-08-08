@@ -22,6 +22,33 @@
 	// Un premier maître est sélectionné à l'ouverture (decisions.md 2026-07-18 quater) :
 	// la page est un espace d'exploration DÈS l'arrivée.
 	let selection = $state(artistes[0].nom);
+
+	// Les trois vues, en une seule liste : le balisage des onglets et celui du
+	// panneau se construisent dessus, et les identifiants ne peuvent plus diverger.
+	const ONGLETS = [
+		{ cle: 'profil', label: 'Profil' },
+		{ cle: 'oeuvres', label: 'Œuvres' },
+		{ cle: 'musees', label: 'Musées' }
+	];
+
+	let groupeOnglets = $state(null);
+
+	// Navigation dans le groupe d'onglets (A2, 2026-08-08). Les flèches déplacent
+	// ET sélectionnent : sur un jeu d'onglets, c'est le comportement attendu — on
+	// voit défiler les vues, on s'arrête sur la bonne. Le focus suit, pour que
+	// Tab reparte du bon endroit.
+	function auClavierOnglets(event) {
+		const i = ONGLETS.findIndex((o) => o.cle === vue);
+		let suivant = null;
+		if (event.key === 'ArrowRight') suivant = (i + 1) % ONGLETS.length;
+		else if (event.key === 'ArrowLeft') suivant = (i - 1 + ONGLETS.length) % ONGLETS.length;
+		else if (event.key === 'Home') suivant = 0;
+		else if (event.key === 'End') suivant = ONGLETS.length - 1;
+		if (suivant === null) return;
+		event.preventDefault();
+		vue = ONGLETS[suivant].cle;
+		queueMicrotask(() => groupeOnglets?.querySelectorAll('[role="tab"]')[suivant]?.focus());
+	}
 	const maitre = $derived(artistes.find((a) => a.nom === selection));
 
 	// Musée filtré dans l'onglet « Œuvres » (code Muséofile, ou null). Il vit ICI,
@@ -79,28 +106,36 @@
 			{#if maitre}
 				<BandeauMaitre {maitre} portrait={portraits[maitre.nom]} />
 
-				<div class="bascule" role="tablist" aria-label="Choisir la vue">
-					<button
-						role="tab"
-						data-label="Profil"
-						aria-selected={vue === 'profil'}
-						class:actif={vue === 'profil'}
-						onclick={() => (vue = 'profil')}>Profil</button>
-					<button
-						role="tab"
-						data-label="Œuvres"
-						aria-selected={vue === 'oeuvres'}
-						class:actif={vue === 'oeuvres'}
-						onclick={() => (vue = 'oeuvres')}>Œuvres</button>
-					<button
-						role="tab"
-						data-label="Musées"
-						aria-selected={vue === 'musees'}
-						class:actif={vue === 'musees'}
-						onclick={() => (vue = 'musees')}>Musées</button>
+				<!-- Onglets et panneau sont LIÉS depuis le 2026-08-08 (A2) : chaque onglet
+				     déclare le panneau qu'il commande (`aria-controls`), et le panneau
+				     déclare l'onglet qui le nomme (`aria-labelledby`). Sans cela, un lecteur
+				     d'écran annonce trois onglets et un contenu sans rapport visible.
+				     Un SEUL onglet est dans l'ordre de tabulation (tabindex 0 sur l'actif,
+				     -1 sur les autres) : Tab traverse le groupe d'un coup, et ce sont les
+				     flèches qui circulent dedans — c'est le motif attendu pour des onglets. -->
+				<div class="bascule" role="tablist" aria-label="Choisir la vue" bind:this={groupeOnglets}>
+					{#each ONGLETS as o (o.cle)}
+						<button
+							id="onglet-{o.cle}"
+							role="tab"
+							data-label={o.label}
+							aria-selected={vue === o.cle}
+							aria-controls="vue-{o.cle}"
+							tabindex={vue === o.cle ? 0 : -1}
+							class:actif={vue === o.cle}
+							onclick={() => (vue = o.cle)}
+							onkeydown={auClavierOnglets}>{o.label}</button>
+					{/each}
 				</div>
 
-				<div class="vue" class:vue-profil={vue === 'profil'}>
+				<div
+					class="vue"
+					class:vue-profil={vue === 'profil'}
+					id="vue-{vue}"
+					role="tabpanel"
+					aria-labelledby="onglet-{vue}"
+					tabindex="-1"
+				>
 					{#if vue === 'profil'}
 						<NuageFamilles {maitre} />
 					{:else if vue === 'oeuvres'}
