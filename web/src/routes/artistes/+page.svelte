@@ -63,7 +63,7 @@
 				<h1>Explorer les artistes</h1>
 				<p class="renvoi">
 					<a href="{base}/projet">
-						Comment ces artistes ont-ils été sélectionnés&nbsp;?&nbsp;→
+						Comment ces artistes ont-ils été sélectionnés&nbsp;?
 					</a>
 				</p>
 			</header>
@@ -163,15 +163,25 @@
 		font-size: var(--taille-s);
 	}
 
+	/* Liens éditoriaux : cobalt ET soulignement permanent (2026-08-08, phase 3).
+	   Le cobalt seul ne suffisait pas à dire qu'un mot se clique : la même couleur
+	   met en valeur les nombres importants, qui ne sont pas des liens. La couleur
+	   reste, le trait la double — et l'information ne repose plus sur elle seule.
+	   Le soulignement est natif (`text-decoration`) et non un `border-bottom` :
+	   il ne déplace pas le texte quand il s'épaissit au survol, et il évite les
+	   jambages. */
 	.intro p.renvoi a {
 		color: var(--accent-cobalt);
-		text-decoration: none;
-		border-bottom: 1px solid transparent;
+		text-decoration: underline;
+		text-decoration-color: rgba(53, 87, 138, 0.45);
+		text-decoration-thickness: 1px;
+		text-underline-offset: 0.18em;
 	}
 
 	.intro p.renvoi a:hover,
 	.intro p.renvoi a:focus-visible {
-		border-bottom-color: var(--accent-cobalt);
+		text-decoration-color: var(--accent-cobalt);
+		text-decoration-thickness: 2px;
 	}
 
 	/* Intitulé de l'outil de sélection : registre UI, repère cobalt devant. */

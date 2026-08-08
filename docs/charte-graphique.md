@@ -303,3 +303,31 @@ fait, c'est la règle à appliquer.
 - **Contrôler avant de publier** : `uv run python src/audit_geoloc.py` compare chaque
   position au centre de sa commune (référence de contrôle, jamais de données). À
   lancer après chaque lot.
+
+## 9. Liens éditoriaux — arrêté le 2026-08-08
+
+Le bleu cobalt (`--accent-cobalt`) **sert deux choses à la fois**, et c'est assumé : il
+signale une **information importante** (les nombres dans une phrase — « 310 œuvres »,
+« 19 musées ») et un **lien**. C'est un choix de l'utilisateur, pris le 2026-08-08 contre
+la solution qui aurait réservé la couleur aux liens.
+
+Il en découle une règle, non négociable : **la distinction ne repose jamais sur la seule
+couleur.**
+
+- **Un lien éditorial dans du texte est souligné en permanence**, dès l'état de repos.
+  Soulignement natif (`text-decoration`), 1 px, couleur cobalt à 45 %, décalé de `0.18em`
+  pour épargner les jambages.
+- **Au survol et au focus**, le trait s'épaissit à 2 px et passe au cobalt plein. On
+  n'utilise pas de `border-bottom` : il déplacerait le texte en s'épaississant.
+- **Les nombres mis en valeur restent en cobalt et en gras, jamais soulignés.** Le trait
+  devient ainsi le seul signe de ce qui se clique.
+- **Ce qui a déjà son propre traitement visuel n'est pas souligné** : onglets, boutons,
+  cartouches de la couverture, appels à l'action sur aplat plein (`.entree`), sommaire par
+  ancres, navigation. Un bouton n'a pas besoin d'un trait pour se signaler.
+- **Les flèches ne sont pas une convention** : celle qui suivait « Comment ces artistes
+  ont-ils été sélectionnés ? » a été retirée parce qu'elle n'ajoutait rien après un point
+  d'interrogation. Les autres — appels à l'action, renvois vers une fiche externe — sont
+  conservées.
+
+Portée : pages « Le projet », « Méthode » et « Explorer les artistes » (`.tete a`,
+`.contenu a`, le renvoi de l'exploration). Récit daté : decisions.md, 2026-08-08 bis.

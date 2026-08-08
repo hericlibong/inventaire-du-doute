@@ -2,6 +2,43 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-08 (bis) — Le cobalt garde ses deux rôles, le trait fait la différence
+
+Premier point de la phase 3, traité seul, comme le veut la règle de cette phase.
+
+**Le défaut.** Sur « Explorer les artistes », le lien « Comment ces artistes ont-ils été
+sélectionnés ? » et les nombres « 310 œuvres » et « 19 musées » ont exactement la même
+couleur — `--accent-cobalt`, `#35578a` — et le lien n'était même pas souligné au repos.
+Rien ne disait ce qui se clique. Le même motif régnait sur les pages « Le projet » et
+« Méthode » : `text-decoration: none` et un filet qui n'apparaissait qu'au survol.
+
+**La décision (utilisateur).** Le cobalt **peut** signaler à la fois une information
+importante et un lien ; ce qui ne peut pas rester, c'est que la distinction repose sur la
+seule couleur. Les nombres gardent donc leur cobalt et leur graisse ; **les liens
+éditoriaux sont soulignés en permanence**, avec un survol et un focus nettement plus
+marqués.
+
+C'est l'option que je n'avais pas recommandée — je proposais de réserver la couleur aux
+liens. La décision est meilleure sur un point que j'avais négligé : elle ne coûte rien à
+la lisibilité des chiffres, qui sont la matière du projet.
+
+**Mise en œuvre.** Soulignement natif plutôt que `border-bottom` : il ne déplace pas le
+texte quand il s'épaissit au survol, et il évite les jambages (`text-underline-offset`).
+Au repos, 1 px de cobalt à 45 % ; au survol et au focus, 2 px de cobalt plein.
+
+**Ce qui n'est pas touché** : onglets, boutons, cartouches de la couverture, sommaire par
+ancres, navigation — ils ont déjà leur propre traitement. L'appel à l'action « Explorer les
+artistes », cartouche sur aplat cobalt, est explicitement exclu (`:not(.entree)`) : un
+bouton n'a pas besoin d'un trait.
+
+**Une flèche retirée, une seule.** Celle qui suivait « Comment ces artistes ont-ils été
+sélectionnés ? » n'ajoutait rien après un point d'interrogation, et le libellé tient
+désormais sur une ligne, y compris à 390 px. Les autres flèches — appel à l'action, renvoi
+vers une notice POP — sont conservées : la demande portait sur celle-là.
+
+La règle est inscrite dans `docs/charte-graphique.md` (§ 9), et pas seulement ici : c'est
+une convention, elle doit se retrouver sans avoir à relire un journal.
+
 ## 2026-08-08 — L'accueil dit enfin de quoi il s'agit (phase 2, texte utilisateur)
 
 Le texte de la couverture est remplacé **en entier**. Ce qu'il disait — « Quand le musée

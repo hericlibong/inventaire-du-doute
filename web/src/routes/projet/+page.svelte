@@ -422,18 +422,30 @@
 	/* Liens de contenu : cobalt discret, filet au survol — le traitement écrit pour
 	   la page Méthode (2026-08-05). Cette page laissait le bleu souligné du
 	   navigateur, seule rupture de charte des deux pages. */
-	.tete a,
-	.contenu a {
+	/* Liens éditoriaux : cobalt ET soulignement permanent (2026-08-08, phase 3).
+	   Le cobalt seul ne suffisait pas à dire qu'un mot se clique : la même couleur
+	   met en valeur les nombres importants, qui ne sont pas des liens. La couleur
+	   reste, le trait la double — et l'information ne repose plus sur elle seule.
+	   Le soulignement est natif (`text-decoration`) et non un `border-bottom` :
+	   il ne déplace pas le texte quand il s'épaissit au survol, et il évite les
+	   jambages.
+	   Les appels à l'action (`.entree`, cartouche plein) gardent leur propre
+	   traitement : un bouton n'a pas besoin d'être souligné pour se signaler. */
+	.tete a:not(.entree),
+	.contenu a:not(.entree) {
 		color: var(--accent-cobalt);
-		text-decoration: none;
-		border-bottom: 1px solid transparent;
+		text-decoration: underline;
+		text-decoration-color: rgba(53, 87, 138, 0.45);
+		text-decoration-thickness: 1px;
+		text-underline-offset: 0.18em;
 	}
 
-	.tete a:hover,
-	.tete a:focus-visible,
-	.contenu a:hover,
-	.contenu a:focus-visible {
-		border-bottom-color: var(--accent-cobalt);
+	.tete a:not(.entree):hover,
+	.tete a:not(.entree):focus-visible,
+	.contenu a:not(.entree):hover,
+	.contenu a:not(.entree):focus-visible {
+		text-decoration-color: var(--accent-cobalt);
+		text-decoration-thickness: 2px;
 	}
 
 	h1 {
