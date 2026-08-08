@@ -386,3 +386,26 @@ boutons contigus**, et non en barre d'onglets soulignée.
 - Balisage inchangé : `tablist`, `tab`, `aria-selected`. **Jamais un second système d'état.**
 
 Récit daté : decisions.md, 2026-08-08 quinquies.
+
+## 12. Le bandeau de navigation — arrêté le 2026-08-08
+
+- **Fixé en tête, dans le flux** : `position: sticky`, jamais `fixed`. La page n'a donc
+  aucune hauteur à compenser, et le pied comme les ancres se comportent normalement.
+- **Fond pleinement opaque** (l'aplat navy de la couverture) : du texte qui défile dessous
+  doit disparaître, pas transparaître. **Ni flou, ni ombre portée** — un simple filet clair
+  à 12 % suffit à poser le bandeau au-dessus du contenu.
+- **Le menu n'est pas un lien éditorial** : il ne porte donc **pas** le soulignement
+  permanent du texte courant (§ 9). Sa position dans le bandeau dit déjà qu'on peut
+  cliquer ; c'est l'état actif qui a besoin d'un signe, pas la nature du lien.
+- **Rubrique courante** : deux signes, la graisse et un **filet d'accent vermillon sous le
+  libellé seul** — jamais un bouton plein, une pastille ou une carte. L'état vient
+  d'`aria-current="page"`, jamais d'une classe décorative posée en parallèle.
+- **Survol** : texte en ivoire plein et filet gris discret. **Focus** : anneau ivoire net,
+  posé autour du libellé.
+- **Les ancres réservent la hauteur du bandeau** : `scroll-padding-top` sur `html`, 4,5 rem
+  sur ordinateur et 7,5 rem quand le bandeau passe à deux lignes. Un titre atteint par le
+  sommaire ne doit jamais arriver sous le header.
+- **Sous 620 px**, le nom et le menu passent sobrement sur deux lignes, calés à gauche.
+  **Pas de menu escamotable** : quatre entrées se montrent, elles ne se cachent pas.
+
+Récit daté : decisions.md, 2026-08-08 octies.

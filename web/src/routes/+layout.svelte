@@ -62,7 +62,6 @@
 					<li>
 						<a
 							href={brique.href}
-							class:actif={estActif(brique.href)}
 							aria-current={estActif(brique.href) ? 'page' : undefined}
 						>
 							{brique.titre}
@@ -90,6 +89,16 @@
 {/if}
 
 <style>
+	/* Le header étant fixé en tête, une ancre atteinte par un lien du sommaire
+	   arriverait SOUS lui. `scroll-padding-top` réserve sa hauteur sur le conteneur
+	   de défilement : 4,5 rem couvre le bandeau d'une ligne, 7,5 rem celui de deux
+	   lignes sur petit écran. Les pages qui posent déjà un `scroll-margin-top` sur
+	   leurs titres s'y ajoutent — c'est voulu : mieux vaut un titre qui respire
+	   qu'un titre à demi caché. */
+	:global(html) {
+		scroll-padding-top: 4.5rem;
+	}
+
 	:global(body) {
 		margin: 0;
 		background: var(--couleur-fond);
@@ -129,8 +138,19 @@
 	/* --- Coquille « inventaire » (palier 2). Filet d'accent en tête, masthead
 	   aligné sur la colonne de contenu, nav en petites capitales. --- */
 	/* Bandeau de tête « affiche » : aplat navy, pleine largeur, texte ivoire. */
+	/* Header FIXÉ EN TÊTE (2026-08-08, phase 3). Il reste dans le flux — `sticky` et
+	   non `fixed` : la page n'a donc aucune compensation de hauteur à faire, et le
+	   pied de page comme les ancres continuent de se comporter normalement.
+	   Le fond reste l'aplat navy de la couverture, PLEINEMENT opaque : du texte
+	   éditorial qui défile dessous doit disparaître, pas transparaître. Pas de flou,
+	   pas d'ombre portée — seulement un filet clair très discret, qui suffit à poser
+	   le bandeau au-dessus du contenu. */
 	header {
+		position: sticky;
+		top: 0;
+		z-index: 20;
 		background: var(--cadre-fond);
+		border-bottom: 1px solid rgba(238, 240, 243, 0.12);
 	}
 
 	.masthead {
@@ -163,15 +183,45 @@
 		font-family: var(--police-ui);
 	}
 
-	nav a,
+	/* Le MENU n'est pas un lien éditorial : il ne porte donc pas le soulignement
+	   permanent adopté le 2026-08-08 pour le texte courant (charte § 9). Ici, la
+	   position dans le bandeau suffit à dire qu'on peut cliquer ; c'est l'état
+	   ACTIF qui a besoin d'un signe, pas la nature du lien.
+	   Le filet vit sous le libellé seul (le lien est en ligne) : ni bouton, ni
+	   pastille, ni carte. */
+	nav a {
+		display: inline-block;
+		padding-bottom: 2px;
+		color: var(--cadre-encre-douce);
+		text-decoration: none;
+		border-bottom: 2px solid transparent;
+		transition: color 140ms ease, border-color 140ms ease;
+	}
 
 	nav a:hover {
 		color: var(--cadre-encre);
+		border-bottom-color: rgba(238, 240, 243, 0.35);
 	}
 
-	nav a.actif {
+	/* Rubrique courante : deux signes, la graisse et le filet d'accent. La couleur
+	   seule ne suffirait pas. L'état vient d'`aria-current`, jamais d'une classe
+	   décorative posée à part. */
+	nav a[aria-current='page'] {
 		color: var(--cadre-encre);
+		font-weight: 600;
 		border-bottom-color: var(--accent-vermillon);
+	}
+
+	nav a:focus-visible {
+		outline: 2px solid var(--cadre-encre);
+		outline-offset: 3px;
+		border-radius: 2px;
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		nav a {
+			transition: none;
+		}
 	}
 
 
@@ -201,5 +251,33 @@
 		max-width: var(--largeur-max);
 		margin: 0 auto;
 		padding: var(--espace-5) var(--espace-5);
+	}
+
+	/* Petit écran : les quatre entrées et le nom du projet ne tiennent pas sur une
+	   ligne — « Explorer les artistes » fait à lui seul la moitié de la largeur. Le
+	   bandeau passe donc sobrement sur DEUX lignes, le nom au-dessus, le menu
+	   dessous, tous deux calés à gauche. Pas de menu escamotable : quatre entrées se
+	   montrent, elles ne se cachent pas derrière un bouton. */
+	@media (max-width: 620px) {
+		.masthead {
+			flex-direction: column;
+			align-items: flex-start;
+			gap: var(--espace-3);
+			padding: var(--espace-3) var(--espace-4);
+		}
+
+		.marque {
+			font-size: var(--taille-m);
+		}
+
+		nav ul {
+			gap: var(--espace-3) var(--espace-4);
+			font-size: var(--taille-s);
+		}
+
+		/* Le bandeau à deux lignes est plus haut : les ancres réservent d'autant. */
+		:global(html) {
+			scroll-padding-top: 7.5rem;
+		}
 	}
 </style>

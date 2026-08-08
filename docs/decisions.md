@@ -2,6 +2,44 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-08 (octies) — Le bandeau suit la lecture
+
+Cinquième point de la phase 3, limité au header et à sa navigation.
+
+**Le bandeau est fixé en tête**, en `sticky` et non en `fixed` : il reste dans le flux, la
+page n'a donc aucune hauteur à compenser et le pied comme les ancres continuent de se
+comporter normalement. Fond pleinement opaque — du texte qui défile dessous doit
+disparaître, pas transparaître —, un filet clair à 12 % pour le poser au-dessus du contenu,
+et rien d'autre : ni flou, ni ombre.
+
+**Les ancres tiennent compte de sa hauteur.** Sans cela, un titre atteint depuis le
+sommaire serait arrivé sous le bandeau. `scroll-padding-top` sur `html` réserve 4,5 rem, et
+7,5 rem quand le bandeau passe à deux lignes. Vérifié sur les quatre ancres des pages
+« Le projet » et « Méthode » : le titre visé arrive 25 px sous le header sur ordinateur,
+51 px sur mobile.
+
+**Le menu se distingue du texte courant.** Les liens éditoriaux ont reçu un soulignement
+permanent le matin même (charte § 9) ; le menu ne le prend pas. Sa position dans le bandeau
+dit déjà qu'on peut cliquer — c'est l'état actif qui avait besoin d'un signe.
+
+Deux défauts au passage, qui expliquent l'état antérieur : la règle `nav a` n'avait **pas de
+bloc** (un sélecteur groupé mal fermé), d'où le soulignement natif du navigateur ; et
+`nav a.actif` posait une `border-bottom-color` **sans style ni épaisseur**, donc invisible.
+La rubrique courante n'était signalée par rien.
+
+**Elle l'est maintenant par deux signes** : la graisse et un filet vermillon **sous le
+libellé seul**. L'état est lu sur `aria-current="page"` — la classe `actif`, devenue un
+second système d'état sans usage, a été retirée du balisage.
+
+**Sous 620 px**, le nom et le menu passent sur deux lignes, calés à gauche. Pas de menu
+escamotable : quatre entrées se montrent, elles ne se cachent pas derrière un bouton — et
+cela n'aurait pas été proposé sans validation.
+
+Vérifié : sticky après 2 600 px de défilement (le bandeau reste collé à 0), état actif
+correct sur `/projet`, `/artistes` et `/methode`, survol et focus distincts, aucun
+débordement horizontal, à 1440 px et 390 px. Sur l'accueil, le header ne s'affiche pas — la
+couverture a sa propre navigation, qui n'a pas été touchée.
+
 ## 2026-08-08 (septies) — L'infobulle du graphique dit enfin combien, et de quoi
 
 Quatrième point de la phase 3, sur le seul contenu des infobulles du graphique Profil : ni
