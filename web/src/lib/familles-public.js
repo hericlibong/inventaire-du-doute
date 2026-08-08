@@ -2,22 +2,25 @@
 //
 // Règle du projet (CLAUDE.md) : aucune catégorie technique ne s'affiche telle
 // quelle dans l'interface. Chaque famille du détecteur reçoit ici de quoi
-// composer un tooltip à hiérarchie visible. Depuis le 2026-07-27, l'infobulle du
-// graphique tient en TROIS lignes — header / valeur / définition — sans
-// pourcentage ni footer « Mention type ».
+// composer un tooltip à hiérarchie visible. L'infobulle du graphique tient en
+// TROIS lignes — header / mesure / définition — sans footer « Mention type ». La
+// mesure porte le nombre ET la part depuis le 2026-08-08 : le point donne la
+// hauteur, mais un lecteur qui survole veut le chiffre, pas une lecture d'axe.
 //
 //   label       — libellé court affiché sur l'axe X (français public, pas de jargon) ;
 //   header      — titre du tooltip, générique (jamais le nom du maître → stable
 //                 d'une fiche à l'autre, donc comparable) ;
 //   corps       — PRÉCISION très courte (lisible en une seconde). Sert la page
 //                 la page « Présentation ». Peut rester vide ;
-//   definition  — DÉFINITION factuelle et stable de la mention, source canonique
-//                 unique de la dernière ligne de l'infobulle du graphique
-//                 (cahier des charges 2026-07-25, reformulée en phrase complète le
-//                 2026-07-27) : neutre, identique pour tous les artistes, sans
-//                 interprétation (« L'œuvre est rattachée à l'école de l'artiste. »
-//                 plutôt que « Plutôt son école que sa main. »). Distincte de
-//                 `corps`, qui reste au service de la Présentation ;
+//   definition  — DÉFINITION factuelle et stable de la mention. SOURCE CANONIQUE
+//                 UNIQUE : l'infobulle du graphique la lit telle quelle, et rien
+//                 ne la duplique ailleurs. Neutre, identique pour tous les
+//                 artistes, sans interprétation (« Œuvres rattachées à l'école de
+//                 l'artiste. » plutôt que « Plutôt son école que sa main. »).
+//                 Réécrite le 2026-08-08 en formulations GÉNÉRALES : un point du
+//                 graphique compte un ensemble d'œuvres, la définition parle donc
+//                 d'œuvres au pluriel et non d'un cas isolé. Distincte de `corps`,
+//                 qui reste au service de la page « Le projet » ;
 //   mention        — fonction (nom → chaîne) : la mention type reconstruite avec le
 //                    nom du maître (élision gérée), p. ex. « école de Charles Le
 //                    Brun ». Sert la page « Présentation » ;
@@ -48,7 +51,7 @@ export const FAMILLE_PUBLIC = {
 		label: 'attribué à',
 		header: 'Attribué à',
 		corps: 'Sans certitude qu’il s’agisse bien de sa main.',
-		definition: 'L’attribution est proposée avec réserve.',
+		definition: 'Œuvres attribuées à l’artiste avec réserve.',
 		mention: (nom) => `attribué à ${nom}`,
 		montrerMention: false,
 		citation: 'Attribué à',
@@ -58,7 +61,7 @@ export const FAMILLE_PUBLIC = {
 		label: 'nom (?)',
 		header: 'Nom suivi d’un « ? »',
 		corps: 'Doute noté sans autre précision.',
-		definition: 'Le nom de l’artiste est indiqué avec un point d’interrogation.',
+		definition: 'Œuvres dont l’association au nom de l’artiste est signalée comme incertaine.',
 		mention: (nom) => `${nom} (?)`,
 		montrerMention: true,
 		citation: 'Nom suivi d’un point d’interrogation',
@@ -68,7 +71,7 @@ export const FAMILLE_PUBLIC = {
 		label: 'son atelier',
 		header: 'Son atelier',
 		corps: 'Sorti de son atelier, pas forcément de sa main.',
-		definition: 'L’œuvre est rattachée à l’atelier de l’artiste.',
+		definition: 'Œuvres rattachées à l’atelier de l’artiste.',
 		mention: (nom) => `atelier ${deNom(nom)}`,
 		montrerMention: false,
 		citation: 'De son atelier',
@@ -78,7 +81,7 @@ export const FAMILLE_PUBLIC = {
 		label: 'son cercle',
 		header: 'Son cercle proche',
 		corps: 'Son entourage immédiat.',
-		definition: 'L’œuvre est rattachée à son entourage proche.',
+		definition: 'Œuvres rattachées à l’entourage proche de l’artiste.',
 		mention: (nom) => `entourage ${deNom(nom)}`,
 		montrerMention: true,
 		citation: 'De son cercle',
@@ -88,7 +91,7 @@ export const FAMILLE_PUBLIC = {
 		label: 'de son école',
 		header: 'De son école',
 		corps: 'Plutôt son école que sa main.',
-		definition: 'L’œuvre est rattachée à l’école de l’artiste.',
+		definition: 'Œuvres rattachées à l’école de l’artiste.',
 		mention: (nom) => `école ${deNom(nom)}`,
 		montrerMention: false,
 		citation: 'De son école',
@@ -98,7 +101,7 @@ export const FAMILLE_PUBLIC = {
 		label: 'un suiveur',
 		header: 'Un suiveur',
 		corps: 'Dans sa suite, sous son influence.',
-		definition: 'L’œuvre est rattachée à un suiveur de l’artiste.',
+		definition: 'Œuvres rattachées à un artiste travaillant dans son sillage.',
 		mention: (nom) => `suiveur ${deNom(nom)}`,
 		montrerMention: false,
 		citation: 'D’un suiveur',
@@ -108,7 +111,7 @@ export const FAMILLE_PUBLIC = {
 		label: 'sa manière',
 		header: 'À sa manière',
 		corps: 'Son style, auteur inconnu.',
-		definition: 'L’œuvre est réalisée dans un style proche du sien.',
+		definition: 'Œuvres réalisées à la manière de l’artiste.',
 		mention: (nom) => `à la manière ${deNom(nom)}`,
 		montrerMention: false,
 		citation: 'À sa manière',
@@ -118,7 +121,7 @@ export const FAMILLE_PUBLIC = {
 		label: 'dans son goût',
 		header: 'Dans son goût',
 		corps: 'Lien de style lointain.',
-		definition: 'L’œuvre présente une proximité de goût ou de style.',
+		definition: 'Œuvres rapprochées du goût ou du style de l’artiste.',
 		mention: (nom) => `dans le genre ${deNom(nom)}`,
 		montrerMention: true,
 		citation: 'Dans son goût',
@@ -151,27 +154,44 @@ export function notices(n) {
 	return `${nombre(n)} ${Math.abs(n) === 1 ? 'notice' : 'notices'}`;
 }
 
-// Valeur du tooltip du graphique : « 110 œuvres », « 1 œuvre » (2026-07-27 bis).
-// Ni pourcentage ni total : le point est déjà placé à sa hauteur (la part se lit
-// sur l'axe) et le total figure dans le bandeau. L'infobulle ne donne que le
-// nombre exact de la mention survolée. Vocabulaire public « œuvres » (onglet
-// Profil) ; `notices()` reste employée dans les onglets Œuvres et Musées.
-function valeurGraphe(n) {
+// Mesure du tooltip du graphique : « 240 œuvres · 77 % », « 1 œuvre · < 1 % ».
+// Le nombre seul y figurait jusqu'au 2026-08-08 — la part se lisait sur l'axe, ce
+// qui obligeait à quitter l'infobulle des yeux pour l'estimer. Vocabulaire public
+// « œuvres » (onglet Profil) ; `notices()` reste employée dans les onglets Œuvres
+// et Musées.
+//
+// Part en pourcentage, arrondie à l'entier. Une part NON NULLE qui arrondirait à
+// zéro s'écrit « < 1 % » : afficher « 0 % » sous un point visible serait faux.
+// Le seuil est 1 et non 0,5 — « 1 % » pour une part de 0,7 % surestimerait, et le
+// graphique montre justement des mentions très minoritaires (le « nom (?) » de
+// Charles Le Brun pèse 0,6 %).
+function partGraphe(n, total) {
+	if (!total) return null;
+	const p = (n / total) * 100;
+	if (p > 0 && p < 1) return '< 1 %';
+	return `${Math.round(p)} %`;
+}
+
+// Mesure affichée dans l'infobulle, sur UNE ligne : « 240 œuvres · 77 % ».
+// Le nombre est accordé ; la part est toujours calculée sur le total des œuvres
+// concernées de l'artiste, jamais saisie.
+function valeurGraphe(n, total) {
 	const mot = Math.abs(n) === 1 ? 'œuvre' : 'œuvres';
-	return `${nombre(n)} ${mot}`;
+	const part = partGraphe(n, total);
+	return part ? `${nombre(n)} ${mot} · ${part}` : `${nombre(n)} ${mot}`;
 }
 
 // Données du tooltip d'un point, prêtes à afficher (header / valeur / corps).
-// `n` = nombre d'œuvres de la mention. Trois lignes seulement : la mention,
-// « N œuvres », la définition factuelle. Plus de footer « Mention type » (retiré
+// `n` = nombre d'œuvres de la mention, `total` = œuvres concernées de l'artiste.
+// Trois lignes seulement : la mention, « N œuvres · P % », la définition. Plus de footer « Mention type » (retiré
 // du graphique ; `mention`/`montrerMention` restent utilisés par la page
 // « Présentation »).
-export function tooltipFamille(code, nomMaitre, n) {
+export function tooltipFamille(code, nomMaitre, n, total) {
 	const f = FAMILLE_PUBLIC[code];
 	return {
 		header: f.header,
 		headerPastille: f.couleur, // pastille de la mention, dans la bande de tête
-		valeur: valeurGraphe(n),
+		valeur: valeurGraphe(n, total),
 		// dernière ligne : la définition factuelle canonique (pas `corps`, plus
 		// interprétatif, réservé à la Présentation)
 		corps: f.definition
@@ -181,7 +201,7 @@ export function tooltipFamille(code, nomMaitre, n) {
 // Résumé linéaire pour les technologies d'assistance (lecteur d'écran) : le
 // tooltip HTML est visuel, on garde donc un équivalent textuel sur le point
 // lui-même (aria-label), puisque le <title> SVG natif disparaît.
-export function resumeFamille(code, nomMaitre, n) {
-	const t = tooltipFamille(code, nomMaitre, n);
+export function resumeFamille(code, nomMaitre, n, total) {
+	const t = tooltipFamille(code, nomMaitre, n, total);
 	return t.corps ? `${t.header} : ${t.valeur}. ${t.corps}` : `${t.header} : ${t.valeur}.`;
 }

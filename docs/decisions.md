@@ -2,6 +2,42 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-08 (septies) — L'infobulle du graphique dit enfin combien, et de quoi
+
+Quatrième point de la phase 3, sur le seul contenu des infobulles du graphique Profil : ni
+les données, ni les axes, ni les points, ni la légende n'ont bougé.
+
+**La mesure porte désormais la part.** L'infobulle affichait « 240 œuvres » ; elle affiche
+« **240 œuvres · 77 %** », sur une seule ligne, séparés par un point médian — sans filet ni
+ligne décorative. Le raisonnement de 2026-07-27, qui écartait le pourcentage parce que « la
+part se lit sur l'axe », demandait au lecteur de quitter l'infobulle des yeux pour estimer
+une hauteur. La part est **toujours calculée** sur le total des œuvres concernées de
+l'artiste, jamais saisie.
+
+**Règle de format, centralisée dans `familles-public.js`** : pourcentage entier ; accord du
+nombre (« 1 œuvre », « 2 œuvres ») ; et **« < 1 % » pour toute part non nulle inférieure à
+1 %**. Afficher « 0 % » sous un point visible serait faux. Le seuil est 1 et non 0,5 : « 1 % »
+pour une part de 0,7 % surestimerait, et le graphique montre justement des mentions très
+minoritaires — le « nom (?) » de Charles Le Brun pèse 0,6 %.
+
+**Les explications passent au général.** Elles décrivaient une œuvre au singulier (« L'œuvre
+est rattachée à l'école de l'artiste. ») alors qu'un point du graphique en compte un
+ensemble. Les huit définitions parlent maintenant d'œuvres au pluriel : « Œuvres rattachées
+à l'école de l'artiste. », « Œuvres réalisées à la manière de l'artiste. », etc. **Elles sont
+réécrites dans la table `FAMILLE_PUBLIC` existante — aucune seconde table n'a été créée**,
+et le champ `definition` reste la source canonique unique.
+
+**Finition visuelle, sans agrandir ni ajouter de pointeur** : ombre adoucie (10 % au lieu de
+16 %, et plus courte), bordure plus fine et plus chaude, fond très légèrement translucide
+(96 %) — **le texte, lui, garde sa pleine opacité** —, et un peu plus d'air entre la mesure
+et l'explication, qui sont deux registres et ne doivent pas se lire comme un paragraphe.
+
+**Vérifié par interaction réelle**, et non par lecture du code : mention très représentée
+(« 240 œuvres · 77 % »), part sous 1 % (« 2 œuvres · < 1 % »), mention à une seule œuvre
+(« 1 œuvre · < 1 % », singulier correct), mention absente (aucun point rendu, donc aucune
+infobulle), premier et dernier point de l'axe (aucun débordement), survol, focus clavier et
+toucher depuis la légende sur mobile — les quatre voies donnent le même contenu.
+
 ## 2026-08-08 (sexies) — Le bandeau de l'artiste, rééquilibré
 
 Suite du point précédent, sur décision de l'utilisateur : **principe de la proposition 1**
