@@ -304,6 +304,31 @@ fait, c'est la règle à appliquer.
   position au centre de sa commune (référence de contrôle, jamais de données). À
   lancer après chaque lot.
 
+### Le panneau et ses actions (complément du 2026-08-08)
+- **En-tête** : nom du musée affirmé, ville dessous et plus discrète, **croix de fermeture
+  au coin** — jamais un lien « Fermer » en bout de contenu. Vrai bouton, cible de 28 px,
+  `aria-label="Fermer le panneau"`, **cible de 44 px** — la taille d'un doigt —, absorbée
+  par des marges négatives pour qu'elle ne pousse pas l'en-tête. Le symbole, lui, reste
+  petit. Filet fin entre l'en-tête et le corps.
+- **Corps** : le nombre d'œuvres se lit **avant** la ventilation qui le détaille. Les
+  effectifs des mentions occupent une **colonne fixe à droite** : ils s'alignent d'une ligne
+  à l'autre et se comparent sans être cherchés.
+- **Les mentions sont une information**, jamais des commandes : ni boutons, ni filtres.
+- **Les actions sont des LIGNES, pas des blocs.** Un filet ouvre la zone en bas du
+  panneau ; chaque ligne se clique sur toute sa largeur et se sépare de la suivante par un
+  trait plus clair. Ni aplat plein, ni contour individuel : dans un panneau de dix lignes,
+  deux rectangles pleins pèsent plus que tout le reste.
+- **La principale est en cobalt, un peu plus grasse** ; la seconde plus discrète, sans
+  jamais paraître grisée. Survol : fond cobalt à 7 %. Ce sont des commandes — elles ne
+  prennent pas le soulignement permanent des liens éditoriaux (§ 9).
+- **Une petite icône à droite dit où l'on va** : un chevron « › » pour rester dans la page,
+  une flèche oblique « ↗ » pour sortir du site. Des caractères, pas des fichiers : le projet
+  n'a pas de jeu d'icônes et n'en ajoutera pas une dépendance pour deux glyphes.
+- **Le lien vers la notice publique n'existe qu'au singulier** : à plusieurs œuvres, il n'y
+  a pas UNE notice à ouvrir.
+- **Fermeture** : la croix ou `Échap`, et **le focus retourne au point** d'où l'on vient.
+- **Sur mobile**, le panneau se place **sous** la carte, jamais par-dessus.
+
 ## 9. Liens éditoriaux — arrêté le 2026-08-08
 
 Le bleu cobalt (`--accent-cobalt`) **sert deux choses à la fois**, et c'est assumé : il

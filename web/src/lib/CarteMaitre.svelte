@@ -58,8 +58,7 @@
 		`${nombre(n)} œuvre${n > 1 ? 's' : ''} concernée${n > 1 ? 's' : ''}`;
 
 	// Intitulé de l'action, accordé au singulier comme au pluriel.
-	const voirOeuvres = (n) =>
-		n === 1 ? 'Voir l’œuvre conservée dans ce musée' : `Voir les ${nombre(n)} œuvres conservées dans ce musée`;
+	const voirOeuvres = (n) => (n === 1 ? 'Voir l’œuvre' : `Voir les ${nombre(n)} œuvres`);
 
 	// Ventilation du musée par FAMILLE PUBLIQUE (jamais de niveau ni de jargon),
 	// triée par valeur décroissante (dataviz : trier par valeur). Chaque ligne
@@ -137,6 +136,22 @@
 		choisi = code;
 	}
 
+	// Fermeture : la croix ou Échap. Le focus retourne AU POINT d'où l'on vient —
+	// sans quoi le clavier repartirait du haut de la page, et l'on perdrait
+	// l'endroit de la carte qu'on était en train de lire.
+	function fermerPanneau() {
+		const code = choisi;
+		choisi = null;
+		queueMicrotask(() => document.querySelector(`[data-point="${code}"]`)?.focus());
+	}
+
+	function auClavierPage(event) {
+		if (choisi && event.key === 'Escape') {
+			event.preventDefault();
+			fermerPanneau();
+		}
+	}
+
 	function auClavier(event, code) {
 		if (event.key === 'Enter' || event.key === ' ') {
 			event.preventDefault();
@@ -144,6 +159,8 @@
 		}
 	}
 </script>
+
+<svelte:window onkeydown={auClavierPage} />
 
 <figure class="carte">
 	<figcaption class="titre">Où sont conservées ces œuvres&nbsp;?</figcaption>
@@ -166,6 +183,7 @@
 						r={R_POINT}
 						class="point"
 						class:choisi={choisi === p.code}
+						data-point={p.code}
 						tabindex="0"
 						role="button"
 						aria-pressed={choisi === p.code}
@@ -183,36 +201,74 @@
 			     remplace la légende tant qu'un musée est choisi. -->
 			{#if musee}
 				<div class="panneau-musee" role="group" aria-label="Musée choisi">
-					<!-- En-tête : qui l'on regarde. Fond gris neutre pleine largeur, filet
-					     dessous — le corps du panneau garde son blanc-papier (2026-08-06). -->
+					<!-- En-tête : qui l'on regarde, et de quoi sortir. Fond gris neutre
+					     pleine largeur, filet dessous — le corps garde son blanc-papier. -->
 					<header class="panneau-entete">
-						<p class="panneau-nom">{musee.nom}</p>
-						<p class="panneau-ville">{musee.ville}</p>
+						<div class="entete-texte">
+							<p class="panneau-nom">{musee.nom}</p>
+							<p class="panneau-ville">{musee.ville}</p>
+						</div>
+						<!-- La croix remplace le lien « Fermer » (2026-08-08) : la fermeture
+						     d'un panneau se met à son coin, pas au bout de son contenu. Vrai
+						     bouton, cible confortable, nom accessible en toutes lettres. -->
+						<button
+							type="button"
+							class="fermer"
+							aria-label="Fermer le panneau"
+							onclick={fermerPanneau}
+						>
+							<span aria-hidden="true">×</span>
+						</button>
 					</header>
 					<div class="panneau-corps">
-					<p class="panneau-compte">{concernees(musee.doute)}</p>
-					<ul class="panneau-mentions">
-						{#each musee.lignes as l (l.label)}
-							<li>
-								<span class="pastille" style="background: {l.couleur}"></span>
-								<span class="mention-label">{l.label}</span>
-								<span class="mention-n">{l.valeur}</span>
-							</li>
-						{/each}
-					</ul>
-					{#if onVoirOeuvres}
-						<button type="button" class="action" onclick={() => onVoirOeuvres(musee.code)}>
-							{voirOeuvres(musee.doute)}&nbsp;→
-						</button>
-					{/if}
-					{#if musee.oeuvreUnique}
-						<!-- Le lien POP du musée à une seule notice, conservé : il a quitté
-						     le point pour ce panneau, où il reste cliquable. -->
-						<a class="lien-pop" href={lienPop(musee.oeuvreUnique.reference)} target="_blank" rel="noreferrer">
-							Voir la fiche publique{musee.oeuvreUnique.titre ? ` de « ${musee.oeuvreUnique.titre} »` : ''}&nbsp;→
-						</a>
-					{/if}
-					<button type="button" class="fermer" onclick={() => (choisi = null)}>Fermer</button>
+						<p class="panneau-compte">{concernees(musee.doute)}</p>
+
+						<!-- Musée à une seule œuvre : son titre, dans la graphie exacte publiée
+						     par le musée — aucune normalisation (decisions.md, 2026-08-08). -->
+						{#if musee.oeuvreUnique?.titre}
+							<p class="oeuvre-unique">{musee.oeuvreUnique.titre}</p>
+						{/if}
+
+						<!-- Les mentions sont une INFORMATION : ni boutons, ni filtres. -->
+						<ul class="panneau-mentions">
+							{#each musee.lignes as l (l.label)}
+								<li>
+									<span class="pastille" style="background: {l.couleur}"></span>
+									<span class="mention-label">{l.label}</span>
+									<span class="mention-n">{l.valeur}</span>
+								</li>
+							{/each}
+						</ul>
+
+						<!-- Actions en LIGNES, au bas du panneau (2026-08-08 bis) : des boutons
+						     rectangulaires y faisaient deux blocs pleins dans un panneau de dix
+						     lignes. Un filet ouvre la zone, chaque ligne se clique sur toute sa
+						     largeur, et une petite icône dit où l'on va : un chevron pour rester
+						     ici, une flèche oblique pour sortir du site.
+						     La sémantique ne bouge pas : l'action interne change un onglet et un
+						     filtre, c'est un <button> ; la notice publique est ailleurs, c'est un
+						     <a href>. -->
+						<div class="panneau-actions">
+							{#if onVoirOeuvres}
+								<button type="button" class="ligne-action interne" onclick={() => onVoirOeuvres(musee.code)}>
+									<span>{voirOeuvres(musee.doute)}</span>
+									<span class="fleche" aria-hidden="true">›</span>
+								</button>
+							{/if}
+							<!-- Le lien POP n'a de sens qu'au singulier : à plusieurs œuvres, il n'y
+							     a pas UNE notice à ouvrir. -->
+							{#if musee.oeuvreUnique}
+								<a
+									class="ligne-action externe"
+									href={lienPop(musee.oeuvreUnique.reference)}
+									target="_blank"
+									rel="noreferrer"
+								>
+									<span>Consulter la notice sur POP</span>
+									<span class="fleche" aria-hidden="true">↗</span>
+								</a>
+							{/if}
+						</div>
 					</div>
 				</div>
 			{:else}
@@ -226,7 +282,7 @@
 						Un point = un musée conservant au moins une œuvre concernée.
 					</p>
 					<p class="invite">
-						Sélectionnez un musée sur la carte pour afficher les œuvres concernées.
+						Sélectionnez un musée pour consulter les œuvres qui y sont conservées.
 					</p>
 				</div>
 			{/if}
@@ -393,10 +449,53 @@
 		overflow: hidden;
 	}
 
+	/* En-tête : le nom, la ville dessous, la croix au coin. Le filet le sépare du
+	   corps ; le fond gris reste celui posé le 2026-08-06. */
 	.panneau-entete {
+		display: flex;
+		align-items: flex-start;
+		gap: var(--espace-2);
 		padding: var(--espace-3);
 		background: var(--surface-entete);
 		border-bottom: 1px solid var(--couleur-trait);
+	}
+
+	.entete-texte {
+		flex: 1;
+		min-width: 0;
+	}
+
+	/* Croix : cible de 44 px — la taille d'un doigt —, symbole petit et discret.
+	   Les marges négatives absorbent l'excédent pour que la cible ne pousse pas
+	   l'en-tête : elle déborde dans le rembourrage existant au lieu de l'agrandir.
+	   Pas de fond au repos, le panneau est petit et un bouton plein y ferait une
+	   tache. */
+	.fermer {
+		flex: none;
+		width: 2.75rem;
+		height: 2.75rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: -0.85rem -0.7rem -0.85rem 0;
+		padding: 0;
+		background: none;
+		border: 0;
+		border-radius: 2px;
+		font-size: 1.15rem;
+		line-height: 1;
+		color: var(--couleur-encre-douce);
+		cursor: pointer;
+	}
+
+	.fermer:hover {
+		background: rgba(43, 30, 20, 0.08);
+		color: var(--couleur-encre);
+	}
+
+	.fermer:focus-visible {
+		outline: var(--focus-anneau);
+		outline-offset: 1px;
 	}
 
 	.panneau-corps {
@@ -431,11 +530,23 @@
 		overflow-wrap: anywhere;
 	}
 
+	/* Le nombre d'œuvres est la mesure du panneau : il se lit avant la ventilation
+	   qui le détaille. */
 	.panneau-compte {
 		margin: 0;
 		font-family: var(--police-ui);
-		font-size: var(--taille-xs);
-		color: var(--couleur-encre-douce);
+		font-size: var(--taille-s);
+		font-weight: 700;
+		color: var(--couleur-encre);
+	}
+
+	/* Musée à une seule œuvre : le titre exact publié par le musée. */
+	.oeuvre-unique {
+		margin: 0;
+		font-family: var(--police-texte);
+		font-size: var(--taille-s);
+		line-height: 1.35;
+		color: var(--couleur-encre);
 	}
 
 	.panneau-mentions {
@@ -450,8 +561,11 @@
 		font-size: var(--taille-xs);
 	}
 
+	/* Effectifs dans une COLONNE FIXE à droite : ils s'alignent d'une ligne à
+	   l'autre, on les compare sans les chercher. */
 	.panneau-mentions li {
-		display: flex;
+		display: grid;
+		grid-template-columns: 0.5rem 1fr 2.4rem;
 		align-items: baseline;
 		gap: 0.4rem;
 	}
@@ -469,49 +583,81 @@
 	}
 
 	.mention-n {
+		text-align: right;
 		font-variant-numeric: tabular-nums;
 		color: var(--couleur-encre);
 	}
 
-	/* Action principale : c'est elle qui relie la carte aux œuvres. */
-	.action {
+	/* Zone d'actions : des LIGNES, pas des blocs. Un filet l'ouvre, chaque ligne
+	   prend toute la largeur du panneau et se sépare de la suivante par un trait
+	   très clair. Le panneau fait dix lignes : deux aplats pleins y pesaient plus
+	   que tout le reste (2026-08-08 bis). */
+	.panneau-actions {
+		display: flex;
+		flex-direction: column;
+		margin-top: var(--espace-2);
+		border-top: 1px solid var(--couleur-trait);
+	}
+
+	.ligne-action {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: var(--espace-2);
+		width: 100%;
+		padding: 0.6rem 0.15rem;
+		background: none;
+		border: 0;
+		border-radius: 2px;
 		font-family: var(--police-ui);
 		font-size: var(--taille-xs);
 		text-align: left;
-		color: var(--couleur-accent);
-		background: none;
-		border: 0;
-		padding: 0;
-		text-decoration: underline;
+		text-decoration: none;
 		cursor: pointer;
 	}
 
-	.action-en-ligne {
-		display: inline;
+	/* Séparation discrète entre les deux actions — un trait plus clair que celui
+	   qui ouvre la zone : elles se distinguent sans se cloisonner. */
+	.ligne-action + .ligne-action {
+		border-top: 1px solid var(--couleur-trait-clair);
 	}
 
-	.action:focus-visible,
-	.lien-pop:focus-visible,
-	.fermer:focus-visible {
-		outline: var(--focus-anneau);
-		outline-offset: 2px;
+	/* Interne : cobalt, un peu plus grasse. C'est le chemin principal. */
+	.ligne-action.interne {
+		color: var(--accent-cobalt);
+		font-weight: 600;
 	}
 
-	.lien-pop {
-		font-family: var(--police-ui);
-		font-size: var(--taille-xs);
+	/* Externe : plus discrète, mais jamais grisée — elle reste une action. */
+	.ligne-action.externe {
 		color: var(--couleur-encre-douce);
 	}
 
-	.fermer {
-		font-family: var(--police-ui);
-		font-size: var(--taille-xs);
-		color: var(--couleur-encre-douce);
-		background: none;
-		border: 0;
-		padding: 0;
-		text-decoration: underline;
-		cursor: pointer;
+	.ligne-action:hover {
+		background: rgba(53, 87, 138, 0.07);
+	}
+
+	.ligne-action.externe:hover {
+		color: var(--couleur-encre);
+	}
+
+	.ligne-action:focus-visible {
+		outline: 2px solid var(--accent-cobalt);
+		outline-offset: -2px;
+	}
+
+	/* L'icône dit où l'on va : chevron pour rester dans la page, flèche oblique
+	   pour sortir du site. Caractères et non fichiers — le projet n'a pas de jeu
+	   d'icônes, et on n'en ajoute pas une dépendance pour deux glyphes. */
+	.fleche {
+		flex: none;
+		font-size: 1.05em;
+		line-height: 1;
+		opacity: 0.75;
+	}
+
+	.ligne-action.externe .fleche {
+		font-size: 0.9em;
 	}
 
 

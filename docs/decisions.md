@@ -2,6 +2,61 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-08 (duodecies) — Le panneau de la carte, mis en ordre
+
+Dernier point du jour, limité au panneau : la carte, ses points et ses données ne bougent
+pas, et le survol continue de n'annoncer que la sélection.
+
+**L'en-tête reçoit la croix de fermeture.** Le panneau se refermait par un lien « Fermer »
+posé en bout de contenu ; la sortie d'un panneau se met à son coin. Vrai bouton, cible de
+28 px, `aria-label="Fermer le panneau"`, sans fond au repos.
+
+**Le corps est réordonné** : le nombre d'œuvres passe en évidence, avant la ventilation qui
+le détaille, et les effectifs des mentions occupent une colonne fixe à droite — ils
+s'alignent d'une ligne à l'autre au lieu de suivre la longueur des libellés.
+
+**Deux actions, en LIGNES.** Première version : deux rectangles, l'un en aplat cobalt plein,
+l'autre en contour. Écartée à la relecture (utilisateur) — dans un panneau de dix lignes,
+deux blocs pleins pèsent plus que tout le reste. Ce sont donc des lignes, ouvertes par un
+filet, cliquables sur toute leur largeur et séparées par un trait plus clair. La principale
+en cobalt un peu plus gras, la seconde plus discrète sans jamais paraître grisée, survol en
+fond cobalt à 7 %. Aucun soulignement : ce sont des commandes, et la règle des liens
+éditoriaux (charte § 9) ne doit pas les rattraper.
+
+**Une icône dit où l'on va** : un chevron « › » pour rester dans la page, une flèche oblique
+« ↗ » pour sortir du site. Des caractères et non des fichiers — le projet n'a pas de jeu
+d'icônes, et on n'ajoute pas une dépendance pour deux glyphes.
+
+**La sémantique ne bouge pas** : l'action interne change un onglet et un filtre, elle reste
+un `<button>` ; la notice publique est ailleurs, elle reste un `<a href>`. **Le lien POP
+n'apparaît qu'au singulier** : à plusieurs œuvres, il n'y a pas une notice à ouvrir.
+
+**La croix passe à 44 px** — la taille d'un doigt —, absorbée par des marges négatives pour
+qu'elle ne pousse pas l'en-tête. Le symbole, lui, reste petit.
+
+Les libellés d'action ont été raccourcis — « Voir les 276 œuvres » au lieu de « Voir les 276
+œuvres conservées dans ce musée » : l'en-tête nomme déjà le musée deux lignes plus haut.
+
+**Un musée à une seule œuvre affiche son titre**, dans la graphie exacte publiée — aucune
+normalisation de casse : « AMPHITRITE, DIT AUTREFOIS NYMPHES DE FONTAINE » s'écrit comme le
+musée l'a écrit.
+
+**Fermeture et focus** : la croix ou Échap referment, et **le focus retourne au point
+choisi**. Sans cela, le clavier repartirait du haut de la page et l'on perdrait l'endroit de
+la carte qu'on était en train de lire.
+
+**L'invite change** : « Sélectionnez un musée pour consulter les œuvres qui y sont
+conservées. » La première phrase — « Un point = un musée conservant au moins une œuvre
+concernée » — est conservée telle quelle.
+
+**Vérifié** : Louvre, 276 œuvres et ventilation 225 / 37 / 14, sans lien POP ; musée à une
+œuvre, avec son titre et son lien POP ; fermeture par la croix et par Échap, focus rendu au
+point dans les deux cas ; passage vers l'onglet Œuvres avec le bon musée déjà filtré ;
+aucun soulignement parasite (`text-decoration: none` mesuré sur les lignes d'action) ;
+survol et focus clavier distincts, activation par Entrée vérifiée ; croix mesurée à
+44 × 44 px ; sur mobile,
+le panneau se place **sous** la carte (position statique dans le flux), sans débordement.
+
 ## 2026-08-08 (undecies) — Les filtres de l'onglet Œuvres
 
 Deux retouches d'apparence, **sans toucher à la logique** : sélection immédiate, filtrage
