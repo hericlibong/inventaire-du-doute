@@ -213,38 +213,73 @@
 	}
 
 	/* Onglets soulignés, actif en cobalt. */
+	/* BARRE D'ONGLETS (refaite le 2026-08-08, phase 3).
+	   Avant : trois libellés en petit corps, espacés de 1,5 rem sous le portrait. Ils
+	   se lisaient comme une série de liens, et rien ne disait qu'ils commandent les
+	   TROIS VUES de l'exploration. Ils forment maintenant une barre : un filet qui
+	   court sur toute la largeur de la zone d'exploration la délimite, des filets
+	   verticaux séparent les emplacements, et les libellés se touchent presque. Pas
+	   d'arrondi, pas d'ombre, pas de fond de carte — c'est une barre éditoriale, pas
+	   un groupe de boutons. */
 	.bascule {
 		display: flex;
-		gap: var(--espace-5);
-		margin-top: var(--espace-4);
-		border-bottom: var(--filet);
+		gap: 0;
+		margin-top: var(--espace-5);
+		border-bottom: 2px solid var(--couleur-trait);
 	}
 
 	.bascule button {
 		background: none;
 		border: none;
-		padding: 0 0 var(--espace-2);
+		/* Le filet vertical fait le groupe : il sépare les emplacements sans les
+		   transformer en boutons. Le premier n'en a pas — une barre ne s'ouvre pas
+		   sur un trait. */
+		border-left: 1px solid var(--couleur-trait-clair);
+		/* Le filet de l'onglet actif se pose SOUS celui de la barre : ils se
+		   superposent au lieu de s'additionner, la ligne de base ne bouge pas. */
+		margin-bottom: -2px;
+		border-bottom: 2px solid transparent;
+		/* Cible généreuse : 44 px de haut au minimum, y compris au toucher. */
+		padding: 0.72rem 1.15rem;
 		font-family: var(--police-ui);
 		font-size: var(--taille-s);
-		letter-spacing: 0.04em;
+		font-weight: 600;
+		letter-spacing: 0.05em;
 		text-transform: uppercase;
-		color: var(--couleur-encre-douce);
+		/* Encre pleine et non encre douce : un onglet inactif reste un choix
+		   disponible, il ne doit pas avoir l'air désactivé. */
+		color: var(--couleur-encre);
 		cursor: pointer;
+		transition: background 140ms ease, color 140ms ease;
+	}
+
+	.bascule button:first-child {
+		border-left: none;
 	}
 
 	.bascule button:hover {
-		color: var(--couleur-encre);
+		background: rgba(53, 87, 138, 0.06);
+		color: var(--accent-cobalt);
 	}
 
+	/* L'onglet actif cumule QUATRE signes : la couleur, la graisse, un filet
+	   inférieur épais et un fond très atténué. Aucun ne porte l'information seul. */
 	.bascule button.actif {
 		color: var(--accent-cobalt);
 		font-weight: 700;
-		box-shadow: 0 2px 0 var(--accent-cobalt);
+		border-bottom-color: var(--accent-cobalt);
+		background: rgba(53, 87, 138, 0.07);
 	}
 
 	.bascule button:focus-visible {
 		outline: var(--focus-anneau);
-		outline-offset: 3px;
+		outline-offset: -2px;
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.bascule button {
+			transition: none;
+		}
 	}
 
 	/* Le graphe est une figure de SUPPORT : borné, aligné à gauche. */
@@ -272,6 +307,19 @@
 			max-height: none;
 			overflow: visible;
 			padding-right: 0;
+		}
+
+		/* Les trois onglets se partagent la largeur à parts égales et restent sur UNE
+		   ligne : trois vues, trois emplacements, aucun repli. Le corps et les marges
+		   se resserrent juste assez pour qu'aucun libellé ne soit tronqué — « Œuvres »
+		   est le plus long des trois. */
+		.bascule button {
+			flex: 1 1 0;
+			padding: 0.8rem 0.4rem;
+			font-size: 0.8rem;
+			letter-spacing: 0.03em;
+			text-align: center;
+			white-space: nowrap;
 		}
 	}
 </style>

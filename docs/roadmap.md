@@ -59,6 +59,9 @@ Les contrôles sont proportionnés à chaque changement ; **le contrôle exhaust
       étroit, trois lignes courtes maximum » était faux, et avait plafonné la réécriture.
 - [ ] **F3 — Finitions visuelles, point par point.** Périmètre non arrêté.
       **Points ouverts, à traiter séparément :**
+      - [ ] **A2 — Compléter le motif ARIA des onglets** (relevé le 2026-08-08) : les vues
+            n'ont ni `role="tabpanel"` ni `aria-controls`. La structure reste utilisable,
+            mais incomplète. À traiter avec A1, pas dans un correctif visuel.
       - [ ] **A1 — Navigation clavier dans le répertoire des 102 artistes.** « Réduire ou
             mieux organiser la navigation clavier dans le répertoire des 102 artistes, sans
             dégrader la recherche ni la sélection. » Ouvert le 2026-08-08. La suppression de

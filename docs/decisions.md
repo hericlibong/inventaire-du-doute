@@ -2,6 +2,44 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-08 (quater) — Trois vues, et une barre qui le dit
+
+Troisième point de la phase 3.
+
+**Le défaut.** « Profil », « Œuvres » et « Musées » étaient trois libellés en petit corps,
+espacés de 1,5 rem sous le portrait, posés sur un filet fin. L'onglet actif se repérait,
+mais l'ensemble se lisait comme une série de liens : rien ne disait que ces trois mots
+commandent les **trois vues** de l'exploration d'un artiste.
+
+**Ce qui change**, sans une ligne de texte explicatif :
+- un filet de 2 px court sur **toute la largeur de la zone d'exploration** et délimite la
+  barre ;
+- des **filets verticaux** séparent les trois emplacements — c'est ce qui les fait lire
+  comme un groupe segmenté, et non comme des liens voisins ;
+- les libellés se **touchent presque**, avec une cible d'au moins 44 px de haut ;
+- la typographie gagne en présence (graisse 600, interlettrage un peu plus ouvert).
+
+**L'onglet actif cumule quatre signes** : couleur cobalt, graisse renforcée, filet inférieur
+épais, fond cobalt à 7 %. Aucun ne porte l'information seul. Le filet de l'actif se pose
+**sous** celui de la barre (marge négative) : les deux se superposent au lieu de
+s'additionner, et la ligne de base ne bouge pas d'un onglet à l'autre.
+
+**Les onglets inactifs passent de l'encre douce à l'encre pleine.** Un onglet non
+sélectionné reste un choix disponible : il ne doit pas avoir l'air désactivé.
+
+**Sur mobile**, les trois se partagent la largeur à parts égales et tiennent sur une seule
+ligne. Le corps et les marges se resserrent juste assez pour qu'aucun libellé ne soit
+tronqué — « Œuvres » est le plus long des trois.
+
+Ni les vues, ni les données, ni leur contenu ne sont touchés. **Aucun second système de
+navigation n'a été créé** : le balisage `tablist` / `tab` / `aria-selected` existant est
+conservé tel quel.
+
+**Réserve signalée, non traitée ici** : les vues ne portent pas de `role="tabpanel"` ni de
+liaison `aria-controls`. La structure reste utilisable, mais elle est incomplète au regard
+du motif ARIA. À joindre au point **A1** (navigation clavier du répertoire) plutôt qu'à un
+correctif visuel.
+
 ## 2026-08-08 (ter) — Le répertoire cesse de faire croire qu'il mesure
 
 Deuxième point de la phase 3.
