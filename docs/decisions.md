@@ -51,9 +51,16 @@ La règle du projet est de restituer ce que les musées ont écrit. Ici, normali
 n'aurait pas mis en forme : cela aurait **introduit des fautes que la source ne contient
 pas**. Le prototype a servi à le démontrer, il n'a pas été conservé.
 
-**En réserve, à valider** : réduire d'environ 5 % le corps des seuls titres majoritairement
-capitalisés, sans toucher ni la graisse, ni l'interlettrage, ni un caractère. Capture
-comparative produite (`titres-comparaison.png`) ; le traitement n'est pas appliqué.
+**La réduction de corps est écartée aussi** (décision utilisateur, après examen de la
+capture comparative `titres-comparaison.png`) : réduire de 5 % le corps des seuls titres
+capitalisés produisait une différence trop faible pour justifier une règle de plus et deux
+corps typographiques dans la même liste. **Tous les titres gardent leur taille actuelle et
+la graphie originale de Joconde.** Le prototype n'a jamais été committé ; le point est clos.
+
+C'est un cas où l'on a essayé deux traitements et retenu aucun. Cela vaut d'être écrit :
+le défaut de départ — des titres en capitales qui « crient » — est réel, mais toutes les
+corrections envisagées coûtaient plus qu'elles ne rapportaient. Il n'y a rien à faire ici,
+et c'est une conclusion, pas un renoncement.
 
 ## 2026-08-08 (octies) — Le bandeau suit la lecture
 
