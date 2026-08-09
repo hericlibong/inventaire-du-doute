@@ -405,7 +405,13 @@
 	{/if}
 
 	<!-- Copies « d'après », à part : des copies assumées, pas des doutes. Hors gamme
-	     du doute (couleur neutre), jamais mêlées aux entrées. -->
+	     du doute (couleur neutre), jamais mêlées aux entrées.
+	     Le bloc ne s'affiche QUE s'il y a quelque chose à mettre à part (2026-08-09) :
+	     il annonçait « 0 œuvres portent la mention d'après » chez les 26 artistes qui
+	     n'ont aucune copie. Un bloc intitulé « à part » n'a pas de sens quand il n'y
+	     a rien à écarter, et une ligne pour dire zéro occupe la place d'une ligne
+	     utile. -->
+	{#if maitre.copie > 0}
 	<div class="bande-copie">
 		<p class="copie-texte">
 			À part&nbsp;: <strong>{motOeuvres(maitre.copie)}</strong>
@@ -421,6 +427,7 @@
 			</p>
 		{/if}
 	</div>
+	{/if}
 
 	<!-- Mention technique, petit corps, écrite une seule fois. -->
 	<p class="mention-pop">

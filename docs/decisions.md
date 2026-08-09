@@ -39,10 +39,14 @@ cohérent avec le titre du volume.
 (376 / 148 / 39 %), Rembrandt (828 / 187 / 23 %). Le bloc des copies s'accorde au singulier
 (« 1 œuvre porte la mention », Alexandre Clausel). Mobile 390 px sans débordement.
 
-**Un défaut relevé au passage, NON traité** : pour les 26 artistes sans copie, le bloc
-s'affiche quand même — « À part : 0 œuvres portent la mention "d'après Léon Tirode" ». Le
-bloc dit « à part » : il n'a de sens que s'il y a quelque chose à mettre à part. À trancher
-avec la suite de F4.
+**Le défaut relevé au passage est corrigé** (décision utilisateur, même jour) : pour les
+26 artistes sans copie, le bloc s'affichait pour annoncer zéro — « À part : 0 œuvres portent
+la mention "d'après Léon Tirode" ». Il ne s'affiche plus quand le compte est nul. Un bloc
+intitulé « à part » n'a pas de sens quand il n'y a rien à écarter, et une ligne pour dire
+zéro prend la place d'une ligne utile. Rien ne change pour les artistes qui ont au moins une
+copie : vérifié à 0 (Tirode, masqué), à 1 (Clausel, « 1 œuvre porte ») et à 354 (Le Brun,
+« 354 œuvres portent »). La note sur les liens POP, qui ne dépend pas de ce bloc, reste
+affichée dans les trois cas.
 
 ## 2026-08-09 (bis) — « Dans son goût » : dire ce que la mention recouvre
 
