@@ -74,10 +74,14 @@
 			{/if}
 		</p>
 
-		<!-- REPÈRE méthodologique : registre secondaire, sans mise en évidence. -->
+		<!-- REPÈRE méthodologique : registre secondaire, sans mise en évidence.
+		     Réécrit le 2026-08-09 (F4) : « En contexte : 310 sur 3 344 œuvres… » ouvrait
+		     sur une étiquette d'analyste et laissait le lecteur reconstituer le rapport.
+		     La phrase part maintenant du total, dit ce qui en est concerné, et finit par
+		     la part — dans cet ordre, elle se lit d'un trait. -->
 		<p class="repere">
-			En contexte&nbsp;: {fr(maitre.doute)} sur {fr(totalNom)} œuvres rattachées à son
-			nom, copies mises à part, soit {pctDoute}&nbsp;%.
+			Parmi les {fr(totalNom)} œuvres rattachées à son nom, hors copies,
+			{fr(maitre.doute)} sont concernées, soit {pctDoute}&nbsp;%.
 		</p>
 	</div>
 </div>

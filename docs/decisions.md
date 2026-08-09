@@ -2,6 +2,48 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-09 (ter) — F4, première passe : cinq corrections dans l'exploration
+
+Relecture ciblée des textes de la page « Explorer les artistes ». Pas de réécriture
+générale : cinq points relevés, cinq décisions de l'utilisateur.
+
+**1. Une faute de français, publiée.** « … sans qu'une seule **ne** s'impose » — le « ne »
+explétif est fautif après « sans que ». La phrase s'affiche pour tout artiste dont aucune
+mention ne domine (Titien, par exemple). Corrigée dans `phrase-repartition.js` et dans son
+test.
+
+**2. « notices » là où le lecteur lit « œuvres ».** Sur le même écran, l'onglet Œuvres
+annonçait « 310 œuvres portent une mention prudente » puis « 354 **notices** portent la
+mention "d'après" ». C'était le constat d'origine de **C6**, jamais corrigé : la règle É1
+réserve « notice » à la méthode et aux données. Le bloc des copies compte donc en œuvres —
+**choix éditorial d'affichage, aucune donnée ni aucun calcul touché**.
+
+**3. Un libellé resté en arrière.** « Les liens ouvrent les **fiches publiques** sur POP »,
+alors que le bouton de chaque œuvre dit « Voir **la notice** sur POP » depuis le 2026-08-08.
+Deux noms pour la même chose, à trois centimètres l'un de l'autre. Aligné sur « notices » —
+c'est le nom que POP donne à ses pages.
+
+**4. « AUTOUR DU MAÎTRE » est conservé** (décision utilisateur). Le titre de zone désigne les
+œuvres autour du maître, pas la personne : il reste conforme à la règle du 2026-08-02, et
+cohérent avec le titre du volume.
+
+**5. Deux formulations reprises**, sur le texte de l'utilisateur :
+- le repère du bandeau ouvrait sur « En contexte : », une étiquette d'analyste, et laissait
+  le lecteur reconstituer le rapport. Il part maintenant du total : « Parmi les 3 344 œuvres
+  rattachées à son nom, hors copies, 310 sont concernées, soit 9 %. » ;
+- la légende de la carte remplace le signe « = » par une phrase : « Chaque point représente
+  un musée conservant au moins une œuvre concernée. »
+
+**Vérifié sur cinq artistes** — les nombres, les parts et les accords suivent : Le Brun
+(3 344 / 310 / 9 %), Titien (105 / 11 / 10 %), Tirode (252 / 231 / 92 %), Michel-Ange
+(376 / 148 / 39 %), Rembrandt (828 / 187 / 23 %). Le bloc des copies s'accorde au singulier
+(« 1 œuvre porte la mention », Alexandre Clausel). Mobile 390 px sans débordement.
+
+**Un défaut relevé au passage, NON traité** : pour les 26 artistes sans copie, le bloc
+s'affiche quand même — « À part : 0 œuvres portent la mention "d'après Léon Tirode" ». Le
+bloc dit « à part » : il n'a de sens que s'il y a quelque chose à mettre à part. À trancher
+avec la suite de F4.
+
 ## 2026-08-09 (bis) — « Dans son goût » : dire ce que la mention recouvre
 
 Correction éditoriale de la seule mention `genre_de`, à ses deux endroits publics. Ni les

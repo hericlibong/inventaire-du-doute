@@ -279,7 +279,7 @@
 						<circle cx={R_POINT} cy={R_POINT} r={R_POINT} class="point" />
 					</svg>
 					<p class="legende-texte">
-						Un point = un musée conservant au moins une œuvre concernée.
+						Chaque point représente un musée conservant au moins une œuvre concernée.
 					</p>
 					<p class="invite">
 						Sélectionnez un musée pour consulter les œuvres qui y sont conservées.

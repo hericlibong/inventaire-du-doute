@@ -4,8 +4,8 @@
 	import ChoixMusee from '$lib/ChoixMusee.svelte';
 	import CreditImage from '$lib/CreditImage.svelte';
 	import LightboxOeuvre from '$lib/LightboxOeuvre.svelte';
-	import { lienPop } from '$lib/joconde.js';
-	import { FAMILLE_PUBLIC, ORDRE_FAMILLES, notices } from '$lib/familles-public.js';
+	import { lienPop, oeuvres as motOeuvres } from '$lib/joconde.js';
+	import { FAMILLE_PUBLIC, ORDRE_FAMILLES } from '$lib/familles-public.js';
 	import { fenetrePagination } from '$lib/pagination.js';
 
 	// Onglet « Œuvres » (refonte 2026-07-28) : la TOTALITÉ des œuvres concernées
@@ -408,7 +408,7 @@
 	     du doute (couleur neutre), jamais mêlées aux entrées. -->
 	<div class="bande-copie">
 		<p class="copie-texte">
-			À part&nbsp;: <strong>{notices(maitre.copie)}</strong>
+			À part&nbsp;: <strong>{motOeuvres(maitre.copie)}</strong>
 			porte{maitre.copie === 1 ? '' : 'nt'} la mention «&nbsp;d'après
 			{maitre.nom}&nbsp;» — des copies assumées, pas des attributions incertaines.
 		</p>
@@ -424,7 +424,7 @@
 
 	<!-- Mention technique, petit corps, écrite une seule fois. -->
 	<p class="mention-pop">
-		Les liens ouvrent les fiches publiques sur POP, la plateforme ouverte du patrimoine.
+		Les liens ouvrent les notices sur POP, la plateforme ouverte du patrimoine.
 	</p>
 </section>
 

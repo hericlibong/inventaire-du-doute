@@ -43,7 +43,7 @@ test('Paul Bril — égalité en tête (7 = 7), les deux citées au pluriel', ()
 
 test('Titien — dispersé (36 %, deux premières < 70 %)', () => {
 	const s = P(F({ attribue: 4, atelier_de: 3, entourage_de: 2, point_interrogation: 1, suiveur_de: 1 }), 11);
-	assert.equal(s, 'Les œuvres concernées se répartissent entre plusieurs mentions, sans qu’une seule ne s’impose.');
+	assert.equal(s, 'Les œuvres concernées se répartissent entre plusieurs mentions, sans qu’une seule s’impose.');
 });
 
 test('Cas « deux mentions » — 1re+2e ≥ 70 % et 2e ≥ 20 %', () => {

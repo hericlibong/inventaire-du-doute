@@ -305,8 +305,9 @@ Le registre est relu au point de contrôle 2, et les corrections sont portées e
       donne à voir une œuvre, un nom, une hésitation. L'affiche doit faire entrer, pas
       résumer. **À réécrire d'un bloc, avec la contrainte de forme connue** : trois lignes
       courtes maximum, la zone sombre de l'affiche étant étroite (decisions.md, undecies).
-- [ ] **C6 — Cohérence « notice » / « œuvre », page par page** → contrôle en **F4** puis en
-      **F6**. NON BLOQUANT. (statut bloquant RETIRÉ le
+- [~] **C6 — Cohérence « notice » / « œuvre », page par page** → contrôle en **F4** puis en
+      **F6**. NON BLOQUANT. **Le cas qui l'avait ouvert est réglé le 2026-08-09** : le bloc
+      des copies de l'onglet Œuvres comptait en notices à côté d'un total en œuvres. (statut bloquant RETIRÉ le
       2026-08-03 : c'est une convention, pas un défaut — decisions.md, 2026-08-03 bis).
       **« notice »** pour la méthode, les données et les explications techniques ;
       **« œuvre »** pour l'interface, les légendes, les bulles et les textes destinés au
