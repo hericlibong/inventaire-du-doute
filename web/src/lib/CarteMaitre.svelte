@@ -297,7 +297,7 @@
 	{#if horsCadre.length > 0}
 		{@const total = horsCadre.reduce((s, m) => s + m.doute, 0)}
 		<p class="hors-cadre">
-			Hors cadre métropolitain&nbsp;:
+			Hors de France métropolitaine&nbsp;:
 			{#if horsCadre.length === 1}
 				{concernees(total)} au {horsCadre[0].nom}, à {horsCadre[0].ville}.
 				{#if onVoirOeuvres}

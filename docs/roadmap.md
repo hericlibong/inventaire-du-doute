@@ -80,10 +80,13 @@ Les contrôles sont proportionnés à chaque changement ; **le contrôle exhaust
       listes d'œuvres · carte des musées · états sans image · affichage mobile · cohérence
       visuelle entre les quatre pages publiques. Reprend **C11** (longueur des pages sur
       mobile) et **C2** (règles héritées qui décrivent mal ce qu'on regarde).
-- [ ] **F4 — Relecture ciblée de l'exploration** (reprend **É3**). Pas de réécriture
-      générale : titres et textes courts, formulations des profils, compréhension des
-      filtres, emploi de « notice » et « œuvre » (**C6**), textes des onglets Profil, Œuvres
-      et Musées. Toute modification éditoriale importante est discutée avant application.
+- [x] **F4 — CLOSE le 2026-08-09** (reprenait **É3**). Trois passes : les textes communs de
+      l'exploration (une faute de syntaxe, le bloc des copies passé en œuvres, deux
+      formulations reprises, le bloc « à part » masqué quand il n'y a rien à écarter) ; les
+      **102 lignes biographiques**, contrôlées sur la forme et croisées avec les dates de
+      Joconde — **aucune erreur** ; le contrôle « notice / œuvre », qui solde **C6** pour
+      cette page. Quatre libellés simplifiés en clôture. Deux cas conservés à dessein :
+      Peter Hawke sans nationalité, Henry Hennault sans siècle.
 - [ ] **F5 — Préparation technique au déploiement.** Relevé fait le 2026-08-07, à traiter :
       **`lang="en"` dans `web/src/app.html`** (à passer en `fr`) · **favicon Svelte par
       défaut** (`$lib/assets/favicon.svg`, seule balise du `svelte:head` du layout) ·
@@ -305,9 +308,10 @@ Le registre est relu au point de contrôle 2, et les corrections sont portées e
       donne à voir une œuvre, un nom, une hésitation. L'affiche doit faire entrer, pas
       résumer. **À réécrire d'un bloc, avec la contrainte de forme connue** : trois lignes
       courtes maximum, la zone sombre de l'affiche étant étroite (decisions.md, undecies).
-- [~] **C6 — Cohérence « notice » / « œuvre », page par page** → contrôle en **F4** puis en
-      **F6**. NON BLOQUANT. **Le cas qui l'avait ouvert est réglé le 2026-08-09** : le bloc
-      des copies de l'onglet Œuvres comptait en notices à côté d'un total en œuvres. (statut bloquant RETIRÉ le
+- [x] **C6 — SOLDÉ pour l'exploration le 2026-08-09.** Le bloc des copies comptait en
+      notices à côté d'un total en œuvres ; un lien renvoyait encore à une « fiche publique ».
+      Balayage du texte rendu des trois onglets : toutes les occurrences restantes de
+      « notice » désignent des pages POP. Contrôle des autres pages : **F6**. (statut bloquant RETIRÉ le
       2026-08-03 : c'est une convention, pas un défaut — decisions.md, 2026-08-03 bis).
       **« notice »** pour la méthode, les données et les explications techniques ;
       **« œuvre »** pour l'interface, les légendes, les bulles et les textes destinés au

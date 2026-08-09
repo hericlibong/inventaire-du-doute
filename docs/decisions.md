@@ -2,6 +2,56 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-09 (quater) — F4, seconde passe : relecture complète de l'exploration
+
+Trois passes menées d'un bloc : les 102 lignes biographiques, les libellés des filtres et
+des trois onglets, le contrôle « notice / œuvre ».
+
+**Les 102 lignes biographiques : aucune erreur trouvée.** Contrôles menés : point final,
+apostrophes typographiques, doubles espaces, espaces avant ponctuation, tiret demi-cadratin
+entre les dates, siècles en chiffres romains, cohérence entre le siècle annoncé et les dates
+(un peintre né en 1599 et mort en 1660 ne peut pas être « du XVIe siècle »), dates inversées
+ou durées de vie invraisemblables. **Zéro signalement.**
+
+**Croisement avec Joconde** : 54 lignes ont pu être confrontées aux dates que les musées
+écrivent dans le champ auteur. Huit écarts apparents, tous examinés, **tous des faux
+positifs** — soit un rapprochement de noms trop lâche de mon côté (Jean-Baptiste Oudry
+confondu avec un autre Oudry ; « du Ry » attrapé dans un autre nom), soit une variante
+minoritaire de Joconde contre la date des notices d'autorité (Andrea del Sarto, 1531 sur une
+notice contre 1530 partout ailleurs). **La ligne de Charles du Ry a été vérifiée
+séparément** : ses 32 notices portent « RY Charles du (attribué à) » sans aucune date, la
+ligne « vers 1568–1655 » vient bien du Louvre.
+
+**Uniformité du gabarit** : les 102 lignes suivent « [activité] [nationalité] du [siècle],
+[dates] », avec les variantes documentées — « installé en France », « vers », « après »,
+« actif entre ». Une seule s'en écarte, à l'arbitrage (voir plus bas).
+
+**Filtres et onglets : une seule incohérence manifeste**, corrigée. Le bloc des copies
+renvoyait à une « fiche publique » quand tout le reste de la page dit « notice » depuis la
+veille — et la phrase située deux lignes plus bas annonce « les notices sur POP ». Deux noms
+pour la même page, à deux lignes d'intervalle.
+
+**Quatre libellés simplifiés** (décision utilisateur, clôture de F4) :
+- « Trier : Œuvres | A→Z » → « **Trier par : Nombre d'œuvres | A–Z** » — le critère portait
+  le même mot que l'en-tête de colonne ;
+- « 310 œuvres portent une mention prudente pour ce nom » → « **310 œuvres sont associées à
+  ce nom avec une réserve d'attribution** » (accord au singulier conservé) ;
+- « (%) Part parmi les œuvres concernées » → « **Part des œuvres concernées (%)** » — l'unité
+  passe à la fin, où on la lit après avoir compris ce qui est mesuré ;
+- « Hors cadre métropolitain » → « **Hors de France métropolitaine** ». Ce repli ne s'affiche
+  que sur une fiche du corpus, Van Dyck, dont une œuvre est conservée au musée Léon Dierx à
+  Saint-Denis de La Réunion — vérifié à l'écran.
+
+**Deux cas laissés tels quels** (décision utilisateur) : **Peter Hawke** garde sa ligne sans
+nationalité — aucune source ne permet de l'établir, et on ne suppose pas ; **Henry Hennault**
+garde « actif entre 1891 et 1901 », précis, plutôt qu'un siècle choisi arbitrairement entre
+les deux que son activité chevauche.
+
+**Contrôle « notice / œuvre » : la règle est tenue.** Balayage du texte rendu des trois
+onglets : neuf occurrences de « notice » dans l'onglet Œuvres, **toutes des liens vers POP**,
+zéro dans Profil et Musées. Aucune quantité destinée au lecteur n'est plus comptée en
+notices. **C6 est soldé pour cette page.**
+
 ## 2026-08-09 (ter) — F4, première passe : cinq corrections dans l'exploration
 
 Relecture ciblée des textes de la page « Explorer les artistes ». Pas de réécriture

@@ -219,7 +219,8 @@
 		<h3>Œuvres concernées</h3>
 		<p class="total">
 			<strong>{maitre.doute}</strong>
-			œuvre{maitre.doute === 1 ? '' : 's'} portent une mention prudente pour ce nom.
+			œuvre{maitre.doute === 1 ? ' est associée' : 's sont associées'} à ce nom avec une
+			réserve d’attribution.
 		</p>
 	</header>
 
@@ -423,7 +424,10 @@
 				Par exemple&nbsp;: {maitre.exemple_copie.titre ?? 'Sans titre'}
 				{#if lieu(maitre.exemple_copie)}({lieu(maitre.exemple_copie)}){/if}
 				— «&nbsp;{maitre.exemple_copie.extrait}&nbsp;» ·
-				<a href={lienPop(maitre.exemple_copie.reference)} target="_blank" rel="noopener">fiche publique</a>
+				<!-- « notice » et non « fiche publique » (2026-08-09) : c'est un lien vers
+				     POP, et la phrase qui suit annonce déjà « les notices sur POP ». Deux
+				     noms pour la même page, à deux lignes d'intervalle. -->
+				<a href={lienPop(maitre.exemple_copie.reference)} target="_blank" rel="noopener">notice</a>
 			</p>
 		{/if}
 	</div>

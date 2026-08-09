@@ -125,20 +125,20 @@
 					<input type="search" placeholder="Filtrer un nom…" bind:value={recherche} />
 				</label>
 				<div class="tri" role="group" aria-label="Trier la liste">
-					<span class="tri-label">Trier&nbsp;:</span>
+					<span class="tri-label">Trier par&nbsp;:</span>
 					<button
 						class:actif={tri === 'nombre'}
 						aria-pressed={tri === 'nombre'}
 						onclick={() => (tri = 'nombre')}
 					>
-						Œuvres
+						Nombre d’œuvres
 					</button>
 					<button
 						class:actif={tri === 'alpha'}
 						aria-pressed={tri === 'alpha'}
 						onclick={() => (tri = 'alpha')}
 					>
-						A→Z
+						A–Z
 					</button>
 				</div>
 			</div>
