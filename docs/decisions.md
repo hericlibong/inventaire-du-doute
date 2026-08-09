@@ -2,6 +2,28 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-09 — M1 : la graphie des titres est dite au lecteur
+
+La décision de ne pas normaliser les titres était consignée pour nous ; elle manquait au
+lecteur. Elle est désormais écrite dans la page Méthode, sous « Ce que couvrent les
+chiffres » :
+
+> Les titres des œuvres sont reproduits tels qu'ils apparaissent dans Joconde. Certains sont
+> entièrement saisis en capitales ou sans accents. Leur casse n'est pas corrigée
+> automatiquement, car une telle transformation pourrait altérer les noms propres, les
+> sigles ou les chiffres romains.
+
+**Placé là et pas ailleurs** : la graphie des titres est une limite de la DONNÉE, au même
+titre que l'inégalité des versements — pas un choix d'affichage. Elle n'appelait donc ni
+encadré, ni sous-section propre : un paragraphe de plus dans celle qui traite déjà de ce que
+la base contient et ne contient pas.
+
+Le texte est celui de l'utilisateur, repris tel quel. Aucun autre texte de la page n'a
+bougé, aucun titre d'œuvre n'a été touché, et la section garde ses cinq sous-titres.
+
+**M1 est soldé** — c'était le dernier point ouvert de la phase 3 avec A1 et A2, faits la
+veille.
+
 ## 2026-08-08 (quaterdecies) — A1 : traverser le répertoire sans le compter
 
 Dernier point d'accessibilité avant publication. Aucun changement visuel.

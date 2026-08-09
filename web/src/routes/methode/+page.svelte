@@ -352,6 +352,16 @@
 		n'existe à leur sujet. Pour cette raison, le projet ne compare pas les musées à partir
 		de leurs nombres de notices.
 	</p>
+	<!-- La graphie des titres est une limite de la DONNÉE, pas un choix d'affichage :
+	     elle a donc sa place ici, dans ce que couvrent les chiffres, et non dans une
+	     sous-section à elle. Décision et mesures : decisions.md, 2026-08-08 (nonies bis) —
+	     quatre titres en capitales sur cinq ne portent aucun accent. -->
+	<p>
+		Les titres des œuvres sont reproduits tels qu'ils apparaissent dans Joconde. Certains
+		sont entièrement saisis en capitales ou sans accents. Leur casse n'est pas corrigée
+		automatiquement, car une telle transformation pourrait altérer les noms propres, les
+		sigles ou les chiffres romains.
+	</p>
 
 	<h3 id="sources-fonds" tabindex="-1">Un fonds qui pèse lourd dans le total</h3>
 	<p>

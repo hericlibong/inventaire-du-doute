@@ -59,13 +59,11 @@ Les contrôles sont proportionnés à chaque changement ; **le contrôle exhaust
       étroit, trois lignes courtes maximum » était faux, et avait plafonné la réécriture.
 - [ ] **F3 — Finitions visuelles, point par point.** Périmètre non arrêté.
       **Points ouverts, à traiter séparément :**
-      - [ ] **M1 — Consigner dans la page Méthode, section « Limites », la décision sur les
-            titres** (noté le 2026-08-08, **à faire en FIN de phase 3**) : les titres sont
-            affichés dans la graphie exacte publiée par les musées, sans normalisation de
-            casse. La raison est publiable et intéresse le lecteur — quatre titres en
-            capitales sur cinq ne portent aucun accent, et les abaisser afficherait des
-            fautes que la source ne contient pas. Décision et chiffres : decisions.md,
-            2026-08-08 (nonies bis).
+      - [x] **M1 — FAIT le 2026-08-09.** La page Méthode dit désormais, dans « Ce que
+            couvrent les chiffres », que les titres sont reproduits tels qu'ils apparaissent
+            dans Joconde et pourquoi leur casse n'est pas corrigée. Un paragraphe intégré à
+            la sous-section existante, sans encadré ni nouveau titre. Décision et chiffres :
+            decisions.md, 2026-08-08 (nonies bis).
       - [x] **A2 — RÉSOLU le 2026-08-08.** Chaque onglet déclare le panneau qu'il commande
             (`aria-controls`, identifiants), le panneau déclare l'onglet qui le nomme
             (`role="tabpanel"`, `aria-labelledby`). Un seul onglet dans l'ordre de
