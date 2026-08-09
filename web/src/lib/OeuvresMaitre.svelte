@@ -51,7 +51,11 @@
 	let familleActive = $state(null); // null = « Toutes »
 	let page = $state(1);
 	let jeton = 0; // anti-course : seule la dernière requête lancée fait foi
-	let hautListe; // ancre de recentrage après un changement de page/filtre
+	// Ancre de recentrage après un changement de page ou de filtre. `$state` parce
+	// que `bind:this` l'affecte après le montage : sans cela, Svelte 5 avertit que
+	// la valeur change sans être réactive (relevé au build, F5). Elle n'est lue que
+	// dans un gestionnaire, jamais dans le rendu.
+	let hautListe = $state(null);
 
 	// Rang d'une famille dans l'ordre public (axe du graphique) : sert au tri des
 	// puces ET des œuvres. Un code inconnu (jamais produit aujourd'hui) va en fin.
@@ -629,15 +633,6 @@
 		overflow: hidden;
 	}
 
-	.media span {
-		font-family: var(--police-ui);
-		font-size: 0.62rem;
-		letter-spacing: 0.05em;
-		text-transform: uppercase;
-		line-height: 1.35;
-		color: var(--couleur-trait);
-	}
-
 	/* Reproduction réelle : l'ancre EST la boîte média (classe .media), l'image la
 	   remplit en object-fit: contain — proportions gardées, jamais rognée. */
 	/* Mention compacte à la place du cadre : quelques millimètres au lieu d'une
@@ -715,33 +710,6 @@
 
 	/* Crédit : UNE ligne discrète sous la vignette. Liens accessibles mais atténués,
 	   jamais le traitement du lien principal « Voir la fiche publique sur POP ». */
-	.credit {
-		margin-top: 0.4rem;
-		font-family: var(--police-ui);
-		font-size: 0.62rem;
-		line-height: 1.4;
-		color: var(--couleur-encre-douce);
-	}
-
-	/* La réserve passe AVANT le crédit et sur sa propre ligne : elle dit ce que
-	   l'image est, et cela prime sur d'où elle vient. Une planche d'Épinal existe
-	   en milliers d'exemplaires ; celui de la BnF n'est pas celui du musée. */
-	.credit-reserve {
-		display: block;
-		font-style: italic;
-	}
-
-	.credit a {
-		color: inherit;
-		text-decoration: underline;
-		text-underline-offset: 1px;
-	}
-
-	.credit a:hover,
-	.credit a:focus-visible {
-		color: var(--couleur-encre);
-	}
-
 	.corps {
 		min-width: 0;
 	}

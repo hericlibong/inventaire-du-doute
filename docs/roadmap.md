@@ -87,7 +87,14 @@ Les contrôles sont proportionnés à chaque changement ; **le contrôle exhaust
       Joconde — **aucune erreur** ; le contrôle « notice / œuvre », qui solde **C6** pour
       cette page. Quatre libellés simplifiés en clôture. Deux cas conservés à dessein :
       Peter Hawke sans nationalité, Henry Hennault sans siècle.
-- [ ] **F5 — Préparation technique au déploiement.** Relevé fait le 2026-08-07, à traiter :
+- [~] **F5 — Préparation technique au déploiement. BLOC 1 FAIT le 2026-08-09** : langue du
+      document en `fr` ; couvertures en JPEG 82 (−91 %, PNG retirés) ; quatre avertissements
+      de build corrigés, deux neutralisés avec justification, 14 restants tous du même type
+      et sans effet ; **rubrique « Avant / après » retirée de la production** (route et
+      données), sans redirection — l'URL n'a jamais circulé, et l'exploration reste en
+      réserve pour un volet ultérieur. **Bloc 2 en attente de validation** : favicon,
+      métadonnées, image de partage, Open Graph.
+      Relevé initial : Relevé fait le 2026-08-07, à traiter :
       **`lang="en"` dans `web/src/app.html`** (à passer en `fr`) · **favicon Svelte par
       défaut** (`$lib/assets/favicon.svg`, seule balise du `svelte:head` du layout) ·
       **aucun titre ni description de page** (seule `/presentation` a un `svelte:head`

@@ -30,10 +30,10 @@
 		     horizontal reste pour l'ordinateur et la tablette « large » (paysage). -->
 		<source
 			media="(max-width: 767px), (orientation: portrait) and (max-width: 1024px)"
-			srcset="{base}/cover/accueil-mobile.png"
+			srcset="{base}/cover/accueil-mobile.jpg"
 		/>
 		<img
-			src="{base}/cover/accueil-desktop.png"
+			src="{base}/cover/accueil-desktop.jpg"
 			alt="Composition évoquant la base de données Joconde : fiches, cadres, blocs de notices et un visage d'archive."
 		/>
 	</picture>

@@ -2,6 +2,47 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-09 (quinquies) — F5, bloc 1 : les corrections techniques certaines
+
+**Le document est déclaré en français.** `lang="en"` sur un site entièrement francophone
+faisait prononcer le texte avec la phonétique anglaise par les lecteurs d'écran, et
+l'indexait comme anglophone.
+
+**Les couvertures passent en JPEG 82.** Elles pesaient 2,53 et 2,44 Mo en PNG : l'accueil
+chargeait 2,5 Mo avant d'afficher quoi que ce soit. Elles font désormais 0,23 et 0,21 Mo,
+**91 % de moins**, dimensions et cadrage inchangés. La conversion n'a été retenue qu'après
+comparaison à l'œil sur les trois zones sensibles — l'aplat sombre du titre, la trame de
+gravure du visage, les textures claires des fiches : écart moyen mesuré à 2,45/255, aucune
+bande ni artefact visible. Les PNG sont retirés des ressources publiques ; le README du
+dossier consigne le format et la raison.
+
+**Quatre avertissements de build corrigés, deux neutralisés, quatorze restants :**
+- `<figcaption>` hors `<figure>` dans la lightbox — **balisage invalide que j'avais
+  introduit** le 2026-08-08 ; c'est un `<p>` désormais ;
+- `hautListe` modifié sans être déclaré `$state` : l'ancre de recentrage fonctionnait par
+  accident ;
+- un `alt` redondant sur la capture de la Méthode (il contenait le mot « image », que les
+  lecteurs d'écran annoncent déjà) ;
+- **sept sélecteurs CSS morts**, résidus de l'extraction de `CreditImage` la veille ;
+- **deux avertissements d'accessibilité neutralisés localement, avec justification** :
+  `ChoixMusee` et `Repertoire` délèguent le clavier au conteneur (motif listbox pour l'un,
+  102 boutons pour l'autre). Le compilateur ne voit pas la délégation et réclame un
+  gestionnaire par élément ; en ajouter 25 ou 102 dupliquerait le même code sans rien
+  changer à un comportement vérifié touche par touche les 8 et 9 août ;
+- **restent 14 avertissements, tous du même type** : « This reference only captures the
+  initial value ». Ils signalent des props destructurés au montage — `data` des pages
+  prérendues, `sommaire`, `corpus`, `sections`. Vérifié : aucune de ces valeurs ne change
+  après le montage (routes sans paramètre, constantes de module). Les corriger supposerait
+  de passer partout par `$derived`, une refactorisation sans rapport avec F5.
+
+**La rubrique « Avant / après » sort de la production.** La route `/revisions` était
+construite et accessible mais **liée depuis nulle part** — ni navigation, ni couverture, ni
+aucune page. Elle est retirée du dossier des routes, et `revisions.json` cesse d'être
+synchronisé vers le site : sans cela, la donnée d'une page non publiée resterait accessible
+en ligne. **Aucune redirection** : cette URL n'a jamais circulé, il n'y a rien à préserver.
+Le code du composant, les données et `docs/rubrique-revisions.md` restent en place — cette
+exploration appartient à un volet ultérieur, elle n'est pas abandonnée.
+
 ## 2026-08-09 (quater) — F4, seconde passe : relecture complète de l'exploration
 
 Trois passes menées d'un bloc : les 102 lignes biographiques, les libellés des filtres et

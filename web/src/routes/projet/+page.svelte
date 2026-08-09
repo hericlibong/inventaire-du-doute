@@ -583,10 +583,6 @@
 		color: var(--couleur-encre-douce);
 	}
 
-	.propos h2 {
-		margin-top: 0;
-	}
-
 	.propos p {
 		max-width: 34rem;
 		line-height: 1.65;

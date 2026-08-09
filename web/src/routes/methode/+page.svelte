@@ -406,7 +406,7 @@
 			src="{base}/methode/vignette-credit.png"
 			width="848"
 			height="576"
-			alt="Une œuvre dans l’application : la reproduction à gauche, avec sous l’image le crédit « After François Clouet », la licence CC BY-SA 3.0 et le lien vers Wikimedia Commons ; à droite la mention du musée, le titre, le lieu de conservation et la formule exacte de la notice."
+			alt="Œuvre affichée dans l’application : la reproduction à gauche, avec au-dessous le crédit « After François Clouet », la licence CC BY-SA 3.0 et le lien vers Wikimedia Commons ; à droite la mention du musée, le titre, le lieu de conservation et la formule exacte de la notice."
 		/>
 		<figcaption>
 			Une œuvre telle qu’elle apparaît dans l’application&nbsp;: sous la reproduction, le

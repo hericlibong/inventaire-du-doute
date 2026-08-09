@@ -153,6 +153,12 @@
 			     voir `auClavierListe`. L'écoute est posée sur la liste, pas sur chaque
 			     bouton — 102 écouteurs pour un comportement commun n'apprendraient
 			     rien à personne. -->
+			<!-- Les éléments interactifs sont les <button> enfants ; l'écoute vit sur la
+			     liste par DÉLÉGATION (102 écouteurs identiques n'apprendraient rien à
+			     personne). Le gestionnaire ne fait rien tant que le focus n'est pas sur
+			     l'un d'eux. Le compilateur signale un écouteur sur un élément non
+			     interactif : c'est exact, et c'est voulu. -->
+			<!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
 			<ul class="maitres" bind:this={listeEl} onkeydown={auClavierListe}>
 				{#each liste as a, i (a.nom)}
 					<!-- La jauge (microprofil coloré) vit HORS du bouton : ses segments sont

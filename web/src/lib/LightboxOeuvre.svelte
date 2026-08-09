@@ -85,10 +85,12 @@
 				: `Reproduction : ${oeuvre.titre ?? 'œuvre'}`}
 		/>
 
-		<figcaption class="legende">
+		<!-- `<p>` et non `<figcaption>` : le panneau n'est pas une <figure>, et un
+		     figcaption hors figure est un balisage invalide (relevé au build, F5). -->
+		<p class="legende">
 			<span class="titre">{oeuvre.titre ?? 'Sans titre'}</span>
 			<CreditImage image={oeuvre.image} taille="agrandie" />
-		</figcaption>
+		</p>
 	</div>
 </div>
 

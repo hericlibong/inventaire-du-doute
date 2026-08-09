@@ -118,6 +118,13 @@
 	{#if ouvert}
 		<ul class="liste" role="listbox" aria-label="Choisir un musée" bind:this={liste} onkeydown={auClavierListe}>
 			{#each options as o, i (o.code ?? 'tous')}
+				<!-- Le clavier de la liste est géré UNE FOIS sur le <ul> (`auClavierListe`,
+				     motif listbox : flèches, Début, Fin, Entrée, Espace, Échap). Le
+				     compilateur ne voit pas cette délégation et réclame un gestionnaire
+				     sur chaque option ; en ajouter 25 dupliquerait le même code sans rien
+				     changer au comportement, vérifié touche par touche le 2026-08-08. -->
+				<!-- svelte-ignore a11y_click_events_have_key_events -->
+				<!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
 				<li
 					role="option"
 					tabindex="-1"
