@@ -2,6 +2,37 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-09 (bis) — « Dans son goût » : dire ce que la mention recouvre
+
+Correction éditoriale de la seule mention `genre_de`, à ses deux endroits publics. Ni les
+données, ni le classement, ni le graphique ne bougent.
+
+**Ce qui n'allait pas.** L'infobulle disait « Œuvres rapprochées du goût ou du style de
+l'artiste », et le glossaire « Lien de style lointain » — une glose qui ne disait pas ce que
+la mention recouvre. Surtout, l'un et l'autre passaient sous silence ce qui l'accompagne le
+plus souvent dans Joconde : un auteur donné pour anonyme.
+
+**Les deux textes (utilisateur, repris tels quels) :**
+- infobulle du graphique — « Œuvres rapprochées du style de l'artiste sans lui être
+  attribuées. Leur auteur est souvent indiqué comme anonyme. »
+- glossaire « Ce que ces mots veulent dire » — « La formule « genre de » rapproche une œuvre
+  du style d'un artiste sans la lui attribuer. Dans Joconde, elle est souvent accompagnée de
+  la mention « anonyme ». »
+
+**« Souvent », jamais « toujours ».** Les deux mentions sont fréquemment associées, pas
+systématiquement : la formulation ne doit pas transformer une fréquence en règle.
+
+**Une seule source.** Les deux textes vivent dans la même table `FAMILLE_PUBLIC.genre_de`,
+dans deux champs distincts et déjà en place : `definition` pour l'infobulle, `corps` pour le
+glossaire. Aucune formulation n'a été dupliquée ailleurs. Vérification faite au passage :
+`LegendeFamilles.svelte`, autre lecteur de `corps`, n'est plus monté nulle part.
+
+**Adaptation de forme, signalée** : les guillemets du texte fourni ont été rendus en
+guillemets français avec espaces insécables, comme partout ailleurs sur le site.
+
+**Vérifié** sur ordinateur et sur mobile : l'infobulle sur la fiche de David Téniers, qui
+porte 13 œuvres dans cette mention, et le glossaire de la page « Le projet ».
+
 ## 2026-08-09 — M1 : la graphie des titres est dite au lecteur
 
 La décision de ne pas normaliser les titres était consignée pour nous ; elle manquait au

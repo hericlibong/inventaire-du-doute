@@ -120,8 +120,17 @@ export const FAMILLE_PUBLIC = {
 	genre_de: {
 		label: 'dans son goût',
 		header: 'Dans son goût',
-		corps: 'Lien de style lointain.',
-		definition: 'Œuvres rapprochées du goût ou du style de l’artiste.',
+		// Précisé le 2026-08-09 : « lien de style lointain » ne disait pas ce que la
+		// mention recouvre, et la définition passait sous silence ce qui l'accompagne
+		// le plus souvent dans Joconde — l'auteur donné pour anonyme. « Souvent » et
+		// non « toujours » : les deux mentions sont fréquemment associées, jamais
+		// systématiquement.
+		corps:
+			'La formule «\u00a0genre de\u00a0» rapproche une œuvre du style d’un artiste sans la lui ' +
+			'attribuer. Dans Joconde, elle est souvent accompagnée de la mention «\u00a0anonyme\u00a0».',
+		definition:
+			'Œuvres rapprochées du style de l’artiste sans lui être attribuées. ' +
+			'Leur auteur est souvent indiqué comme anonyme.',
 		mention: (nom) => `dans le genre ${deNom(nom)}`,
 		montrerMention: true,
 		citation: 'Dans son goût',
