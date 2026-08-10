@@ -137,33 +137,6 @@ une ressemblance de titre ou de dimensions ne suffit pas.
 Le navigateur ne charge jamais la base Joconde complète et aucun serveur applicatif n'est
 nécessaire en production.
 
-## Installation locale
-
-Prérequis : Python 3.11 ou plus récent, [`uv`](https://docs.astral.sh/uv/) et Node.js 22.
-
-```bash
-# Tests et outils du pipeline
-uv sync --dev
-uv run pytest
-
-# Site
-cd web
-npm ci
-npm run sync:data
-npm run dev
-```
-
-Le serveur indique l'adresse locale utilisée, généralement `http://localhost:5173/`.
-
-Pour vérifier le site statique :
-
-```bash
-cd web
-node --test tests/*.test.js
-npm run build
-npm run preview
-```
-
 ## Structure du dépôt
 
 | Chemin | Contenu |
