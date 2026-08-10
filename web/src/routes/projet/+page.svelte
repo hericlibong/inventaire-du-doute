@@ -55,6 +55,10 @@
 	// Part du volume dans le total national, en toutes lettres plutôt qu'en
 	// décimales : le récit prime (CLAUDE.md).
 	const partVolume = Math.round(corpus.national.part_du_volume * 100);
+	const tauxDoute = (niveaux.taux_doute_base * 100).toLocaleString('fr-FR', {
+		minimumFractionDigits: 1,
+		maximumFractionDigits: 1
+	});
 
 	// Définitions des huit mentions. Elles vivaient sur « Comprendre les mentions »,
 	// page retirée de la navigation en phase 7 : elles ont déménagé ICI, sous le
@@ -85,19 +89,10 @@
 
 
 <div class="page">
-	<!-- OUVERTURE (révisée le 2026-08-03, texte de l'utilisateur repris tel quel) : deux
-	     blocs séparés, deux titres sobres formulés comme des questions. Le premier dit ce
-	     qu'est le projet et sa matière, le second ce que contient ce volet et ce qu'on peut
-	     y faire — la définition ne se répète pas d'un bloc à l'autre (resserrement du
-	     2026-08-03, à la relecture de l'utilisateur). Aucun récit, aucun constat nouveau.
-	     Les trois effectifs sont lus dans les exports — le total national vient de
-	     niveaux.json, les deux autres de corpus_maitres.json.
-	     Premier paragraphe réécrit le 2026-08-04, sur le texte de l'utilisateur : le projet
-	     se définit d'abord, puis son OBJECTIF, énoncé sans sujet humain. Le musée n'est
-	     jamais présenté comme une personne qui hésite ou qui avoue — c'est une institution,
-	     et le projet lit ce qu'elle publie. « Notices » est répété d'une phrase à l'autre
-	     À DESSEIN : le total national compte des notices, jamais des œuvres, et une reprise
-	     par « on en compte 24 507 » laisserait le chiffre sans antécédent. -->
+	<!-- OUVERTURE : deux blocs séparés, deux questions. Le premier définit le site,
+	     présente Joconde et situe le doute dans la version analysée de la base. Le second
+	     présente l'outil interactif consacré aux artistes. Tous les effectifs et le taux
+	     viennent des exports : rien n'est écrit en dur dans le texte. -->
 	<div class="grille">
 	<!-- Le bandeau de titre est la PREMIÈRE section du sommaire. Il vit DANS la
 	     grille depuis le 2026-08-05, en tête de la colonne de contenu : la page n'a
@@ -111,16 +106,17 @@
 		<p class="kicker">Volume 1 — Autour des maîtres</p>
 		<h1>Qu'est-ce que L'inventaire du doute&nbsp;?</h1>
 		<p class="ouverture-texte">
-			L'inventaire du doute est un projet d'analyse et d'exploration de la
+			L'inventaire du doute est un site éditorial et interactif fondé sur les données de
 			<a
 				href="https://www.data.gouv.fr/fr/datasets/collections-des-musees-de-france-base-joconde/"
 				target="_blank"
 				rel="noopener">base Joconde</a>,
-			le catalogue collectif des musées de France. L'objectif est de repérer les notices
-			qui portent une incertitude ou une réserve sur l'auteur d'une œuvre. On compte
-			aujourd'hui <strong>{nombre(niveaux.doute_total)}</strong> notices qui présentent
-			une forme de doute. Le projet ne cherche pas à authentifier les œuvres, mais à
-			rendre ces incertitudes visibles et consultables.
+			le catalogue collectif des collections des musées de France. Dans la version analysée,
+			Joconde rassemble plus d'un million de notices. Parmi elles,
+			<strong>{nombre(niveaux.doute_total)}</strong>, soit <strong>{tauxDoute}&nbsp;%</strong>,
+			indiquent une incertitude ou une réserve sur l'auteur d'une œuvre. Le projet organise
+			ces informations pour permettre de les consulter et de les explorer, sans chercher à
+			authentifier ni à réattribuer les œuvres.
 		</p>
 	</header>
 
@@ -130,10 +126,13 @@
 	<section class="ouverture" id="ce-volet" tabindex="-1">
 		<h2>Que présente ce premier volet&nbsp;?</h2>
 		<p class="ouverture-texte">
-			Ce premier volet est consacré aux artistes dont le nom apparaît régulièrement avec une
-			réserve d'attribution. Pour chacun, le lecteur peut comparer ces formulations, consulter
-			les œuvres concernées et voir dans quels musées elles sont conservées. D'autres volets
-			pourront explorer différentes formes de doute présentes dans Joconde.
+			Ce premier volet propose un outil interactif d'exploration consacré aux artistes dont
+			le nom apparaît régulièrement avec une réserve d'attribution. Il réunit actuellement
+			<strong>{nombre(u.nb_artistes)} artistes</strong> et
+			<strong>{nombre(u.notices_distinctes)} notices</strong>. Pour chacun, le lecteur peut
+			comparer les formulations employées, parcourir les œuvres concernées et voir dans quels
+			musées elles sont conservées. D'autres volets pourront explorer différentes formes de
+			doute présentes dans Joconde.
 		</p>
 	</section>
 
