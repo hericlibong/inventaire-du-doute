@@ -126,9 +126,9 @@ Les contrôles sont proportionnés à chaque changement ; **le contrôle exhaust
       réussi, quatre routes publiques et trois redirections générées, 209 reproductions
       indexées présentes, chiffres et liens du README contrôlés. Aucun blocage réel relevé ;
       les limites éditoriales et documentaires sont exposées dans le site et le README.
-- [ ] **F7 — Fusion et déploiement**, après validation finale seulement : état de la branche,
-      fusion des seuls travaux validés dans `main`, build de publication, déploiement,
-      vérification de la version réellement en ligne.
+- [x] **F7 — Fusion et déploiement, terminés le 2026-08-11** : branche de travail poussée
+      et conservée ; fusion explicite dans `main` (`47a7d17`) ; build et publication GitHub
+      Pages réussis (exécution `31443328150`) ; quatre routes publiques contrôlées en ligne.
 
 ### Ce qui bloque la publication, et ce qui peut attendre
 
@@ -136,9 +136,9 @@ Les contrôles sont proportionnés à chaque changement ; **le contrôle exhaust
 - ~~C5 / F2 — le texte de l'accueil~~ : **soldé le 2026-08-08**.
 - ~~C3 / F2 — le titre du volume~~ : **tranché le 2026-08-08**, « Autour des maîtres » conservé.
 - **C1** — la passe éditoriale sur les textes publiés, pour les pages traitées en F2 et F4.
-- **F5** — langue du document, favicon, titres et descriptions : une page publiée sans cela
-  est mal indexée et mal partagée.
-- **F6** — la vérification finale.
+- ~~**F5** — langue du document, favicon, titres et descriptions~~ : **soldé le
+  2026-08-11**.
+- ~~**F6** — la vérification finale~~ : **soldé le 2026-08-11**.
 
 **Non bloquant, assumé si le temps manque** :
 - **C11** — longueur des pages sur mobile (le sommaire par ancres est en place depuis le

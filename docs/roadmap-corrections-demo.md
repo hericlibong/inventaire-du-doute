@@ -5,7 +5,7 @@ Cette roadmap complete `docs/roadmap.md` sans reecrire l'historique du projet.
 
 La demonstration a d'abord ete publiee depuis `feat/profils-et-images`. Les corrections
 ont ete integrees par lots courts, verifies sur mobile et sur ordinateur, puis poussees sur
-cette branche. F6 est terminee ; la publication bascule sur `main` lors de F7, sans
+cette branche. F6 et F7 sont terminees ; la publication a bascule sur `main`, sans
 supprimer la branche de travail.
 
 ## Reprise visuelle du 2026-08-10
