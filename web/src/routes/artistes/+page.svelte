@@ -1,4 +1,7 @@
 <script>
+	import MetaPage from '$lib/MetaPage.svelte';
+	import { META } from '$lib/meta.js';
+
 	import NuageFamilles from '$lib/NuageFamilles.svelte';
 	import OeuvresMaitre from '$lib/OeuvresMaitre.svelte';
 	import CarteMaitre from '$lib/CarteMaitre.svelte';
@@ -71,6 +74,9 @@
 		vue = 'oeuvres';
 	}
 </script>
+
+<MetaPage {...META.artistes} chemin="/artistes/" />
+
 
 <!-- Disposition refondue (2026-07-28) : une SEULE grille continue à deux colonnes,
      mêmes limites sur toute la page. L'introduction (titre + texte + lien Méthode)

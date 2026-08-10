@@ -1,4 +1,7 @@
 <script>
+	import MetaPage from '$lib/MetaPage.svelte';
+	import { META } from '$lib/meta.js';
+
 	// PAGE « PRÉSENTATION » du volume 1 — phase 4 (2026-08-02).
 	//
 	// Cinq temps, dans cet ordre : ce qu'est le projet et ce que contient ce volet ·
@@ -78,13 +81,8 @@
 	];
 </script>
 
-<svelte:head>
-	<title>Le projet — L'inventaire du doute, volume 1</title>
-	<meta
-		name="description"
-		content="Dans les musées de France, un nom sous une œuvre n'est pas toujours une certitude. Ce volume lit les formulations prudentes que les musées publient eux-mêmes."
-	/>
-</svelte:head>
+<MetaPage {...META.projet} chemin="/projet/" />
+
 
 <div class="page">
 	<!-- OUVERTURE (révisée le 2026-08-03, texte de l'utilisateur repris tel quel) : deux

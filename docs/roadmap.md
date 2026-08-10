@@ -101,6 +101,19 @@ Les contrôles sont proportionnés à chaque changement ; **le contrôle exhaust
       propre) · métadonnées de partage et leur image · **sort de la route `/revisions`**,
       restée en place · avertissements de build qui gênent réellement · poids des images de
       couverture · compatibilité avec l'hébergement et le chemin de déploiement retenus.
+- [~] **DÉMONSTRATION TECHNIQUE — GitHub Pages** (préparée le 2026-08-10, avant F6/F7).
+      **Ce n'est PAS le déploiement final.** Publication en *Project Page* depuis ce dépôt,
+      à `https://hericlibong.github.io/inventaire-du-doute/` : rien n'est copié dans le
+      dépôt du site personnel. Elle sert à voir le site en ligne, dans ses vraies
+      conditions de chemin, avant la vérification finale.
+      **Ce qu'elle a demandé** : `paths.base` lu dans `BASE_PATH` (appliqué au seul build de
+      publication, le développement reste à la racine de localhost) ; tous les chemins
+      absolus repris — chargements `/data/…`, navigation, marque, détection de route active,
+      portraits ; `trailingSlash: 'always'` pour que GitHub Pages serve des dossiers avec
+      `index.html` ; un `404.html` ; un workflow `.github/workflows/pages.yml`.
+      **Réglage manuel, une fois** : Settings → Pages → Source → **GitHub Actions**.
+      La branche cible (`feat/profils-et-images` pour la démonstration) et l'adresse
+      définitive seront arrêtées en **F7**.
 - [ ] **F6 — Vérification finale** (c'est la **phase 8** ouverte le 2026-08-02, ci-dessous) :
       routes et redirections · liens internes et externes · filtres et combinaisons ·
       clavier et toucher · mobile et ordinateur · images, crédits et licences · tests ·
@@ -128,6 +141,14 @@ Les contrôles sont proportionnés à chaque changement ; **le contrôle exhaust
 - **C6** — vérification page par page de « notice » / « œuvre » : la règle est tranchée
   (2026-08-03), il ne reste qu'un contrôle de cohérence, prévu en F4 et F6.
 - Le sort de `/revisions` : une décision, pas un défaut.
+
+### Projet connexe après publication
+
+Une future **webapp interactive**, construite dans un projet séparé à partir des exports
+fiabilisés, est cadrée dans [`projet-webapp-interactive.md`](projet-webapp-interactive.md).
+Elle ne fait pas partie de F5 à F7 et ne doit pas rouvrir le chantier actuel. Le dépôt
+présent reste la source de vérité pour le traitement, la classification et les chiffres ;
+la future interface consommera un contrat de données versionné.
 
 ---
 

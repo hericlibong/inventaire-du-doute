@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Publication de démonstration (2026-08-10). L'adresse vient d'une source
+     unique, web/src/lib/meta.js ; ce fichier la reprend. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url><loc>https://hericlibong.github.io/inventaire-du-doute/</loc><priority>1.0</priority></url>
+	<url><loc>https://hericlibong.github.io/inventaire-du-doute/projet/</loc><priority>0.8</priority></url>
+	<url><loc>https://hericlibong.github.io/inventaire-du-doute/artistes/</loc><priority>0.8</priority></url>
+	<url><loc>https://hericlibong.github.io/inventaire-du-doute/methode/</loc><priority>0.6</priority></url>
+</urlset>

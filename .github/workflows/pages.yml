@@ -1,0 +1,73 @@
+# Publication de DÉMONSTRATION sur GitHub Pages.
+#
+# Le site est une Project Page : il vit dans un sous-répertoire du domaine
+# github.io — https://hericlibong.github.io/inventaire-du-doute/ — et non à la
+# racine, qui appartient au site personnel. Rien n'est copié dans un autre dépôt :
+# ce workflow publie directement le dossier construit ici.
+#
+# Ce n'est PAS le déploiement final : la branche cible et l'adresse seront
+# arrêtées en F7 (voir docs/roadmap.md).
+#
+# Réglage manuel à faire UNE FOIS dans GitHub, sans quoi rien ne se publie :
+#   Settings → Pages → Source → GitHub Actions
+name: Démonstration GitHub Pages
+
+on:
+  push:
+    branches: [feat/profils-et-images]
+  # Permet de relancer une publication à la main, sans nouveau commit.
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Une seule publication à la fois ; on ne coupe pas celle qui est en cours.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  construire:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+
+      - name: Installer les dépendances
+        working-directory: web
+        run: npm ci
+
+      # Les exports versionnés (data/exports/web/) sont copiés vers static/ :
+      # c'est ce que fait `sync:data` en local avant chaque build.
+      - name: Synchroniser les données
+        working-directory: web
+        run: npm run sync:data
+
+      - name: Construire le site
+        working-directory: web
+        env:
+          BASE_PATH: /inventaire-du-doute
+        run: npm run build
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: web/build
+
+  publier:
+    needs: construire
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploiement.outputs.page_url }}
+    steps:
+      - id: deploiement
+        uses: actions/deploy-pages@v4

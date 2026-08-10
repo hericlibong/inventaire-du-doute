@@ -2,6 +2,52 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-10 — Une démonstration en ligne, avant la vérification finale
+
+Le site se publie sur **GitHub Pages, en Project Page**, à
+`https://hericlibong.github.io/inventaire-du-doute/`. Rien n'est copié dans le dépôt du
+site personnel : le workflow publie le dossier construit ici. **Ce n'est pas le déploiement
+final** — il sera décidé en F7, avec la branche et l'adresse définitives.
+
+**Le sous-répertoire change tout.** Le site ne vit plus à la racine d'un domaine : chaque URL
+interne doit porter `/inventaire-du-doute`. SvelteKit le fait pour tout ce qui passe par son
+routeur, mais pas pour ce qu'on écrit à la main. Cinq familles de chemins ont dû être
+reprises :
+- les **chargements de données** (`fetch('/data/…')`, 10 appels dans 4 pages) — `fetch` ne
+  connaît pas le chemin de base ; ces appels visaient la racine du domaine ;
+- la **navigation** des deux menus et le **lien de la marque** ;
+- la **détection de la route active** : `pathname` vaut désormais
+  « /inventaire-du-doute/artistes/ ». Il est dépouillé de son préfixe une fois pour toutes,
+  et tout le reste raisonne sur des routes internes, comme avant ;
+- les **portraits**, dont le chemin est absolu **dans les données** (`/portraits/x.jpg`) : le
+  préfixe s'ajoute à l'affichage, jamais dans l'export ;
+- les **trois redirections**, qui écrivaient déjà `${base}/…` et n'ont donc rien coûté.
+
+**Un piège de configuration**, à retenir : le projet passe ses options au plugin Vite, et
+dans ce cas **SvelteKit ignore `svelte.config.js`** — il le dit au build, encore faut-il le
+lire. J'y avais d'abord mis `paths.base`, sans effet : le build produisait des liens vers la
+racine du domaine. La configuration vit donc dans `vite.config.js`, à côté de l'adaptateur.
+
+**`trailingSlash: 'always'`** : GitHub Pages sert des fichiers. Sans slash final, l'adaptateur
+écrit `artistes.html`, que Pages ne sert pas sous `/artistes/`. Avec, il écrit
+`artistes/index.html`, et l'accès direct fonctionne. Un `404.html` est produit pour les URL
+inconnues.
+
+**Les métadonnées reposent sur une source unique** (`web/src/lib/meta.js`) : un même texte
+alimente le `<title>`, la description, Open Graph et Twitter. L'adresse publique n'est écrite
+**qu'à un seul endroit** et sert `og:url`, l'URL absolue de `og:image` et le sitemap — les
+trois choses qui exigent une adresse absolue, un partage se lisant hors du site.
+
+**Le favicon** est un monogramme « Id » en Fraunces vectorisée sur l'aplat navy, à la place
+du logo Svelte livré par défaut. Les tracés sont dans le SVG : aucune webfont n'est chargée
+pour l'afficher.
+
+**Vérifié sur le build de publication, servi comme GitHub Pages le fait** : les quatre pages
+en accès direct, les trois anciennes URL qui redirigent bien **sous le chemin de base**, la
+navigation par les deux menus, les données, portraits, œuvres, couverture et fond de carte,
+les filtres et les onglets, en 1440 et 390 px. **Zéro requête en erreur, zéro requête
+pointant hors du sous-répertoire.** Le développement local reste à la racine de localhost.
+
 ## 2026-08-09 (quinquies) — F5, bloc 1 : les corrections techniques certaines
 
 **Le document est déclaré en français.** `lang="en"` sur un site entièrement francophone

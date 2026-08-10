@@ -1,4 +1,5 @@
 <script>
+	import { base } from '$app/paths';
 	import { licenceEnFrancais } from '$lib/joconde.js';
 
 	// Portrait du maître : il incarne le profil consulté, il appartient donc à la
@@ -68,10 +69,12 @@
 	{#if portrait}
 		<!-- regard === 'droite' : portrait retourné pour regarder le texte de la fiche
 		     (placé à sa gauche). Flip conservé tel quel (décision 2026-07-11). -->
+		<!-- `portrait.fichier` vient des données et commence par « / » : le préfixe de
+		     publication s'ajoute à l'affichage, pas dans l'export (2026-08-10). -->
 		<img
 			class="visage"
 			class:retourne={portrait.regard === 'droite'}
-			src={portrait.fichier}
+			src="{base}{portrait.fichier}"
 			alt="Portrait {legende.de}{maitre.nom}"
 			loading="lazy"
 		/>

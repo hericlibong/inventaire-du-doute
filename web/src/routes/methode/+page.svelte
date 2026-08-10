@@ -1,4 +1,7 @@
 <script>
+	import MetaPage from '$lib/MetaPage.svelte';
+	import { META } from '$lib/meta.js';
+
 	// « Méthode et limites » — page publique de référence. Réécrite section par
 	// section par l'utilisateur les 2026-08-05 : CINQ sections, chacune une question
 	// — quelles données · comment une attribution incertaine est indiquée · que
@@ -106,6 +109,9 @@
 	// Navigation dans une page longue (palier 5) : voir SommaireAncres.svelte, qui
 	// porte désormais le repérage de la section lue et le retour en haut.
 </script>
+
+<MetaPage {...META.methode} chemin="/methode/" />
+
 
 <div class="page">
 <div class="grille">

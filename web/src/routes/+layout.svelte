@@ -1,26 +1,35 @@
 <script>
 	import '$lib/styles/tokens.css';
 	import '$lib/styles/fonts.css';
-	import favicon from '$lib/assets/favicon.svg';
 	import { page } from '$app/stores';
+	import { base } from '$app/paths';
 
 	let { children } = $props();
 
+	// Le site est publié dans un SOUS-RÉPERTOIRE sur GitHub Pages : `pathname` vaut
+	// alors « /inventaire-du-doute/artistes/ » et non « /artistes ». On le dépouille
+	// de son préfixe une fois pour toutes, et tout le reste raisonne sur des routes
+	// internes, comme avant (2026-08-10). Le slash final vient de
+	// `trailingSlash: 'always'`, nécessaire à GitHub Pages ; il est retiré ici pour
+	// que les comparaisons restent celles d'origine.
+	const route = $derived(
+		($page.url.pathname.slice(base.length) || '/').replace(/(.)\/$/, '$1')
+	);
+
 	// Page courante = accueil sur « / » exact, sinon préfixe de la route.
-	const estActif = (href) =>
-		href === '/' ? $page.url.pathname === '/' : $page.url.pathname.startsWith(href);
+	const estActif = (href) => (href === '/' ? route === '/' : route.startsWith(href));
 
 	// L'accueil est une couverture pleine page : la coquille (masthead) y est masquée.
-	const estAccueil = $derived($page.url.pathname === '/');
+	const estAccueil = $derived(route === '/');
 
 	// Routes en PLEINE LARGEUR (direction « affiche ») : accueil + pages refondues.
 	// Elles gèrent leurs propres gouttières ; les pages pas encore refondues gardent
 	// la colonne centrée.
 	const estPleine = $derived(
-		$page.url.pathname === '/' ||
-			$page.url.pathname.startsWith('/projet') ||
-			$page.url.pathname.startsWith('/artistes') ||
-			$page.url.pathname.startsWith('/methode')
+		route === '/' ||
+			route.startsWith('/projet') ||
+			route.startsWith('/artistes') ||
+			route.startsWith('/methode')
 	);
 
 	// Les rubriques en réserve (Les révisions, La carte) ne figurent pas ici : leur
@@ -48,20 +57,24 @@
 </script>
 
 <svelte:head>
-	<link rel="icon" href={favicon} />
+	<!-- Monogramme « Id » en Fraunces vectorisée, sur l'aplat navy de la couverture
+	     (2026-08-10). Il remplace le logo Svelte livré par défaut, qui aurait mis la
+	     marque du framework dans l'onglet et les favoris. Les tracés sont dans le
+	     SVG : aucune webfont n'est chargée pour l'afficher. -->
+	<link rel="icon" href="{base}/favicon.svg" type="image/svg+xml" />
 </svelte:head>
 
 {#if !estAccueil}
 <header>
 	<!-- Charte v2 : bandeau navy (registre de la couverture), texte ivoire. -->
 	<div class="masthead">
-		<a class="marque" href="/">L'inventaire du doute</a>
+		<a class="marque" href="{base}/">L'inventaire du doute</a>
 		<nav aria-label="Navigation principale">
 			<ul>
 				{#each briques as brique (brique.href)}
 					<li>
 						<a
-							href={brique.href}
+							href="{base}{brique.href}"
 							aria-current={estActif(brique.href) ? 'page' : undefined}
 						>
 							{brique.titre}

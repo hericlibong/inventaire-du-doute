@@ -7,6 +7,7 @@
 	// réelles. « Comprendre les mentions » (/echelle) est sortie de la navigation en
 	// phase 7 : ses définitions ont rejoint « Le projet », son URL redirige.
 	import { page } from '$app/stores';
+	import { base } from '$app/paths';
 
 	// Pas de lien « Accueil » : cette navigation ne s'affiche QUE sur la couverture
 	// d'accueil (LandingCover) — un lien vers la page où l'on se trouve déjà est inutile
@@ -29,8 +30,13 @@
 		{ href: '/methode', label: 'Méthode' }
 	];
 
-	const courant = (href) =>
-		href === '/' ? $page.url.pathname === '/' : $page.url.pathname.startsWith(href);
+	// Même dépouillement du chemin de base que dans le layout : les routes se
+	// comparent entre elles, jamais avec le préfixe de publication (2026-08-10).
+	const route = $derived(
+		($page.url.pathname.slice(base.length) || '/').replace(/(.)\/$/, '$1')
+	);
+
+	const courant = (href) => (href === '/' ? route === '/' : route.startsWith(href));
 </script>
 
 <nav class="ednav" aria-label="Navigation principale">
@@ -38,7 +44,7 @@
 		{#each liens as l (l.href)}
 			<li>
 				<a
-					href={l.href}
+					href="{base}{l.href}"
 					class:principal={l.principal}
 					aria-current={courant(l.href) ? 'page' : undefined}
 				>
