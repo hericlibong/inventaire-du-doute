@@ -262,6 +262,15 @@
 	/* --- Composition verticale (mobile + tablette portrait) : titre en haut,
 	   nav sur la fiche basse. Même condition que la <source> mobile ci-dessus. --- */
 	@media (max-width: 767px), (orientation: portrait) and (max-width: 1024px) {
+		/* Le cadrage vertical d'origine plaçait le visage exactement sous le bloc
+		   éditorial. Un léger agrandissement ancré à gauche le décale vers la partie
+		   droite de l'affiche, où il reste visible sans fabriquer une seconde image. */
+		.fond img {
+			width: 118%;
+			max-width: none;
+			object-position: left center;
+		}
+
 		.titre {
 			top: 4%;
 			left: 6%;
@@ -269,7 +278,7 @@
 			   désormais jusqu'au bout. À 66 %, « VOLUME 1 — AUTOUR DES MAÎTRES »
 			   débordait sur l'illustration claire et sa fin devenait illisible
 			   (constat du 2026-08-07). */
-			max-width: 88%;
+			max-width: 64%;
 		}
 		/* Correction de contraste LOCALE derrière le bloc titre (le bitmap est réduit
 		   sur petit écran, l'aplat sombre ne descend pas assez). Dégradé feutré en

@@ -37,10 +37,11 @@ branche. La fusion dans `main` reste reservee a la cloture de F6/F7.
 - [ ] **G4 — Liens d'action de la page Le projet**
   - actions POP harmonisees avec l'onglet Oeuvres ;
   - liens editoriaux internes conserves comme liens de lecture.
-- [ ] **G5 — Accueil mobile**
+- [x] **G5 — Accueil mobile**
   - recadrer l'image pour rendre le visage visible ;
   - replacer le texte sans masquer le sujet ;
   - conserver autant que possible l'affiche dans un ecran.
+  - cadrage verifie a 320, 390 et 430 px ; la version desktop reste inchangee.
 
 ## Lot 2 - Exploration des artistes sur mobile
 
