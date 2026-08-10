@@ -7,6 +7,11 @@ Chaque ⏸ est un point de validation utilisateur : on s'y arrête.
 
 ## ★ PLAN DE FINALISATION (ouvert le 2026-08-07) — cap actuel
 
+> **Corrections issues de la demonstration publiee (2026-08-10)** : le suivi
+> operationnel des adaptations mobiles, du footer, de la navigation et de l'accueil vit
+> dans [`roadmap-corrections-demo.md`](roadmap-corrections-demo.md). Ce document complete
+> F3/F5 avant la verification finale F6 et la fusion F7.
+
 Le volume 1 est complet sur le fond : les données, les profils et les reproductions sont
 arrêtés. **Ce qui reste relève de la finition et de la mise en publication.** Plan en sept
 phases, fixé par l'utilisateur.
