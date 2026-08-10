@@ -3,9 +3,10 @@
 Ouverte le 2026-08-10 apres observation de la version publiee sur GitHub Pages.
 Cette roadmap complete `docs/roadmap.md` sans reecrire l'historique du projet.
 
-La demonstration reste publiee depuis `feat/profils-et-images`. Les corrections sont
-integrees par lots courts, verifies sur mobile et sur ordinateur, puis poussees sur cette
-branche. La fusion dans `main` reste reservee a la cloture de F6/F7.
+La demonstration a d'abord ete publiee depuis `feat/profils-et-images`. Les corrections
+ont ete integrees par lots courts, verifies sur mobile et sur ordinateur, puis poussees sur
+cette branche. F6 est terminee ; la publication bascule sur `main` lors de F7, sans
+supprimer la branche de travail.
 
 ## Reprise visuelle du 2026-08-10
 

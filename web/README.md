@@ -1,42 +1,27 @@
-# sv
+# Frontend de L'inventaire du doute
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Ce dossier contient le site statique SvelteKit de
+[L'inventaire du doute](../README.md).
 
-## Creating a project
+Les données servies par l'interface sont générées par le pipeline Python puis versionnées
+dans `../data/exports/web/`. Avant un lancement local ou un build, elles sont copiées vers
+`static/data/` avec `npm run sync:data`.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Développement
 
-```sh
-# create a new project
-npx sv create my-app
-```
-
-To recreate this project with the same configuration:
-
-```sh
-# recreate this project
-npx sv@0.16.2 create --template minimal --no-types --add sveltekit-adapter="adapter:static" --no-download-check --install npm web
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
+```bash
+npm ci
+npm run sync:data
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+## Vérification
 
-To create a production version of your app:
-
-```sh
+```bash
+node --test tests/*.test.js
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+Le déploiement GitHub Pages utilise le même build avec
+`BASE_PATH=/inventaire-du-doute`. La procédure complète, l'architecture, les chiffres et
+les licences sont documentés dans le [README principal](../README.md).

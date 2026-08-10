@@ -1,108 +1,196 @@
 # L'inventaire du doute
 
-> **Combien d'œuvres, dans les musées de France, portent une mention d'incertitude sur
-> leur auteur — et comment les musées avouent-ils, par écrit, ce qu'ils ne savent pas ?**
+**Volume 1 — Autour des maîtres**
 
-Projet data-journalistique · réutilisation de données ouvertes (data.gouv.fr).
-*Démo en ligne à venir.*
+L'inventaire du doute est un **site éditorial de données interactif** consacré aux
+incertitudes d'attribution publiées par les musées de France. Ce premier volume permet
+d'explorer ces réserves à partir de 102 artistes : les formulations employées, les œuvres
+concernées et les musées qui les conservent.
 
-![L'application « Explorer les 63 maîtres » : à gauche l'introduction et la recherche, à droite le profil de Charles Le Brun avec son portrait et le graphique de répartition des mentions.](docs/captures/explorer-profil.png)
+[Voir le site](https://hericlibong.github.io/inventaire-du-doute/) ·
+[Explorer les artistes](https://hericlibong.github.io/inventaire-du-doute/artistes/) ·
+[Lire la méthode](https://hericlibong.github.io/inventaire-du-doute/methode/)
 
-## De quoi s'agit-il ?
+![Exploration du profil de Charles Le Brun : répertoire des artistes, portrait et graphique des mentions d'attribution.](docs/captures/explorer-profil.png)
 
-Quand un musée n'est pas certain de l'auteur d'une œuvre, il l'écrit — avec des formules
-encadrées : « attribué à », « de son atelier », « de son école », « à sa manière », un simple
-point d'interrogation… Ce projet lit la base **Joconde**, le catalogue collectif des collections
-des musées de France, repère ces formules, les compte, les classe et les raconte. Le site
-permet d'explorer **63 maîtres** : quelles œuvres sont associées à leur nom, sous quelles
-réserves, et dans quels musées elles sont conservées.
+## Le projet
 
-Chiffres arrêtés à la version du **1ᵉʳ juillet 2026** : plus de **3 600 notices prudentes**
-rattachées à ces 63 noms, sur **24 507** au niveau national.
+La base [Joconde](https://www.data.gouv.fr/fr/datasets/collections-des-musees-de-france-base-joconde/)
+est le catalogue collectif des collections des musées de France. Dans sa version du
+**1er juillet 2026**, elle réunit **1 023 705 notices**. Parmi elles, **24 507**, soit
+**2,4 %**, indiquent une incertitude ou une réserve sur l'auteur d'une œuvre.
 
-## L'angle
+Ces informations existent dans les notices, mais elles restent difficiles à observer dans
+leur ensemble. Le projet les repère, les classe et les rassemble sans chercher à
+authentifier ni à réattribuer les œuvres.
 
-Le nom d'un artiste, sur un cartel, ne désigne pas toujours son auteur certain. Les musées le
-savent et l'écrivent : chaque formule (héritée du décret Marcus, cadrée par la méthode Joconde)
-dit un degré de proximité différent avec le maître. Le projet ne cherche pas le scoop ; il rend
-visible, à l'échelle de la base, **ce que les musées reconnaissent ne pas savoir**.
+Le premier volume suit un angle précis : les artistes dont le nom revient dans au moins dix
+notices exprimant une réserve sur l'auteur. Après regroupement des graphies et vérification
+des identités, il réunit :
 
-## Aperçu
+- **102 artistes** ;
+- **6 081 notices Joconde distinctes** ;
+- **8 formulations** regroupées en trois territoires de lecture ;
+- **24,8 %** des notices prudentes repérées dans l'ensemble de Joconde.
 
-**Toutes les œuvres concernées par un maître, filtrables par mention, avec — quand elle existe —
-une reproduction ouverte :**
+Ce périmètre n'est donc pas un inventaire exhaustif du doute dans les collections
+françaises. C'est le premier angle d'exploration d'un phénomène plus large.
 
-![Onglet « Œuvres » de Corneille de Lyon : filtres par mention, puis la liste des œuvres avec leurs reproductions et les mots exacts publiés par les musées.](docs/captures/oeuvres-reproductions.png)
+## Ce que le site permet de faire
 
-**La géographie du doute autour d'un seul nom — un point = un musée détenteur :**
+- comprendre qu'un nom associé à une œuvre peut désigner un auteur possible, un atelier,
+  une école ou une influence ;
+- comparer la répartition des formulations autour d'un artiste ;
+- parcourir toutes les œuvres concernées et les filtrer par mention ou par musée ;
+- repérer les établissements qui les conservent sur une carte ;
+- revenir aux notices originales publiées sur POP ;
+- constituer un point de départ pour une recherche, une médiation ou un enseignement.
 
-![Carte de France : les musées qui conservent des œuvres rattachées à Charles Le Brun sous une mention prudente.](docs/captures/musees-carte.png)
+Une œuvre n'a pas besoin d'avoir un auteur parfaitement identifié pour avoir une histoire,
+une valeur artistique et une place dans un musée. L'incertitude sur son attribution
+n'enlève rien à son existence, à son intérêt ni à sa valeur patrimoniale.
 
-## La méthode — comment on fabrique le chiffre
+## Trois vues pour chaque artiste
 
-Le plus délicat n'est pas de compter, c'est de compter **honnêtement**. Le site consacre à cela
-une page entière, « Méthode et limites » (`/methode`), publiée au même rang que le récit ; les
-notes techniques qui la complètent sont dans
-[`docs/methode-et-limites.md`](docs/methode-et-limites.md). Quelques partis pris :
+### Profil
 
-- **Source unique** : la base Joconde, rien d'autre.
-- **Pièges déjoués** : « présumé » porte souvent sur le *sujet représenté*, pas sur l'auteur ;
-  « d'après X » est une copie assumée, pas un doute (classée à part) ; les graphies varient d'un
-  musée et d'une décennie à l'autre.
-- **Unité de comptage** : la notice (la référence Joconde), jamais le segment d'auteur — une
-  œuvre qui nomme deux fois le même maître ne pèse qu'une fois.
-- **Homonymes séparés** : Rembrandt n'est pas Rembrandt Bugatti, Fragonard père n'est pas son
-  fils… chaque maître est défini par des motifs inclus / exclus, publiés avec la méthode.
-- **Reproductions** : aucune image sous licence ouverte sur POP (la plupart sont « soumises à
-  autorisation »). On cherche alors sur **Wikimedia Commons**, en ne retenant que les fichiers
-  rattachés *avec certitude* à la notice — par son identifiant Joconde, jamais par une
-  ressemblance de titre — et sous licence libre → **184 reproductions** intégrées à ce jour.
-  L'appariement par numéro d'inventaire, recoupé avec les dimensions relevées sur Wikidata,
-  n'a rien produit d'assez solide : il a surtout évité d'afficher de fausses reproductions.
+Le graphique place les huit formulations sur une même échelle. Sa hauteur représente leur
+fréquence parmi les œuvres concernées, jamais un degré de certitude.
 
-## Ce que le projet s'interdit
+### Œuvres
 
-- Il **n'authentifie aucune œuvre** et n'émet aucun avis d'attribution : il restitue ce que les
-  musées eux-mêmes ont publié.
-- Il ne parle **jamais de valeur marchande** et ne promet aucun « chef-d'œuvre caché ».
-- Il ne **compare pas les musées** entre eux sur des comptages bruts : les versements dans
-  Joconde sont volontaires et inégaux.
+La liste restitue la formulation publiée par le musée. Elle peut être filtrée par famille
+d'attribution et par établissement. Lorsqu'une reproduction réutilisable a pu être reliée
+avec certitude à la notice, elle peut être examinée en grand.
 
-## Les limites, assumées
+![Onglet Œuvres : filtres par musée et par mention, reproductions disponibles et formulations originales.](docs/captures/oeuvres-reproductions.png)
 
-Les chiffres ne reflètent que **ce qui a été versé dans Joconde** — un inventaire vivant et
-incomplet. Cette limite n'est pas cachée : elle a sa page dans le site lui-même, « Méthode et
-limites », atteignable depuis la navigation principale, et qui dit en six questions ce que les
-chiffres montrent et ce qu'ils ne montrent pas.
+### Musées
 
-## Sous le capot
+Chaque point représente un musée conservant au moins une œuvre concernée. La carte est un
+repère géographique, pas un classement des établissements.
 
-- **Pipeline Python** (pandas, `uv`) : lit le CSV Joconde (~1,1 Go, plus d'un million de
-  notices), détecte et classe les formules, exporte des **JSON légers**.
-- **Front SvelteKit statique** (`web/`, Svelte 5) : consomme ces JSON ; dataviz en Svelte / SVG,
-  carte en **D3-geo**. Aucun serveur applicatif, jamais la base entière dans l'application.
+![Onglet Musées : carte des établissements conservant des œuvres associées à Charles Le Brun.](docs/captures/musees-carte.png)
 
-## Le dépôt en un coup d'œil
+## Méthode
 
-| Dossier | Contenu |
+L'unité de calcul est la **notice Joconde**, identifiée par sa référence. Une même référence
+n'est comptée qu'une fois dans le profil d'un artiste, même si son champ auteur contient
+plusieurs mentions qui le concernent.
+
+Les principales règles sont les suivantes :
+
+- les formulations sont détectées dans le champ auteur, puis rattachées à huit familles ;
+- les différentes graphies d'un nom sont regroupées après vérification de l'identité ;
+- les homonymes sont séparés et les noms insuffisamment identifiables restent hors du
+  corpus publié ;
+- lorsqu'une notice porte plusieurs formulations pour le même artiste, une priorité
+  documentée évite le double comptage dans son profil ;
+- les copies signalées par « d'après » sont comptées à part : elles décrivent un statut de
+  copie, pas une hésitation sur l'auteur ;
+- les comptages nationaux et les profils d'artistes répondent à des unités différentes,
+  expliquées dans la page Méthode.
+
+La méthode complète, les références officielles, les cas particuliers et les limites sont
+publiés sur la page [Méthode et limites](https://hericlibong.github.io/inventaire-du-doute/methode/)
+et complétés par [`docs/methode-et-limites.md`](docs/methode-et-limites.md).
+
+## Images
+
+Les données descriptives de Joconde sont ouvertes, mais cela ne donne pas automatiquement
+le droit de réutiliser les photographies associées aux notices POP.
+
+Le site n'affiche donc que des fichiers dont le statut a été vérifié individuellement. À ce
+jour, il comprend :
+
+- **209 reproductions d'œuvres** : 195 provenant de Wikimedia Commons et 14 de Gallica ;
+- **73 portraits d'artistes** provenant de Wikimedia Commons.
+
+Chaque fichier est conservé localement avec sa source, son crédit et sa licence. Une
+reproduction n'est retenue que si sa correspondance avec la notice Joconde est établie ;
+une ressemblance de titre ou de dimensions ne suffit pas.
+
+## Limites
+
+- Joconde est alimentée volontairement par les musées : les versements sont incomplets et
+  inégaux.
+- Le projet décrit ce que les musées ont publié à une date donnée ; il ne mesure pas toutes
+  les incertitudes présentes dans les collections françaises.
+- Les chiffres ne permettent pas de comparer la qualité du travail des musées.
+- Le projet ne détermine pas l'auteur véritable des œuvres et n'émet aucun avis sur leur
+  attribution ou leur valeur marchande.
+- L'absence de reproduction indique une limite de réutilisation ou de correspondance, pas
+  l'absence d'une image dans la notice originale.
+
+## Architecture
+
+- **Pipeline Python** (`src/`, pandas, `uv`) : lecture du CSV Joconde, détection,
+  désambiguïsation, classification et exports JSON.
+- **Site SvelteKit statique** (`web/`, Svelte 5) : interface éditoriale, datavisualisations
+  SVG et carte avec D3-geo.
+- **Données publiées** (`data/exports/web/`) : exports légers versionnés ; le CSV source
+  d'environ 1,1 Go n'est pas inclus dans le dépôt.
+- **Documentation** (`docs/`) : méthode, décisions, journal de travail et limites.
+- **Déploiement** (`.github/workflows/pages.yml`) : build statique et publication sur
+  GitHub Pages.
+
+Le navigateur ne charge jamais la base Joconde complète et aucun serveur applicatif n'est
+nécessaire en production.
+
+## Installation locale
+
+Prérequis : Python 3.11 ou plus récent, [`uv`](https://docs.astral.sh/uv/) et Node.js 22.
+
+```bash
+# Tests et outils du pipeline
+uv sync --dev
+uv run pytest
+
+# Site
+cd web
+npm ci
+npm run sync:data
+npm run dev
+```
+
+Le serveur indique l'adresse locale utilisée, généralement `http://localhost:5173/`.
+
+Pour vérifier le site statique :
+
+```bash
+cd web
+node --test tests/*.test.js
+npm run build
+npm run preview
+```
+
+## Structure du dépôt
+
+| Chemin | Contenu |
 |---|---|
-| `src/` | le pipeline Python (détection, désambiguïsation, exports) |
-| `web/` | le front SvelteKit statique |
-| `data/exports/` | les données générées, versionnées (le CSV source, lui, ne l'est pas) |
-| `docs/` | **la mémoire du projet** : décisions, journal, méthode, constats sur les données |
+| `src/` | Pipeline de traitement et de classification |
+| `tests/` | Tests Python du pipeline et des invariants d'export |
+| `data/exports/` | Résultats, audits et exports web versionnés |
+| `web/` | Site SvelteKit et tests front |
+| `docs/` | Méthode, décisions, journal et documentation éditoriale |
+| `.github/workflows/` | Publication GitHub Pages |
 
-Particularité assumée : le projet **documente ses choix au fil de l'eau**. Chaque décision de
-méthode est datée et justifiée dans `docs/`, parce que la façon de fabriquer le chiffre fait
-partie du récit.
+## Auteur
 
-## Données & licences
+**Héric Libong**
 
-- **Données** : [Collections des musées de France : base Joconde](https://www.data.gouv.fr/fr/datasets/collections-des-musees-de-france-base-joconde/)
-  (ministère de la Culture) — **Licence Ouverte 2.0**.
-- **Reproductions** : Wikimedia Commons, licence indiquée par fichier (domaine public / Creative
-  Commons), créditée sous chaque image.
-- **Code** : licence à définir.
+[hericlibong@gmail.com](mailto:hericlibong@gmail.com) ·
+[Site web](https://hericlibong.github.io/) ·
+[GitHub](https://github.com/hericlibong)
 
----
+## Données, crédits et licences
 
-*Projet de portfolio. Développeur Python, ancien journaliste — d'où l'angle éditorial.*
+- **Données Joconde** : ministère de la Culture,
+  [Licence Ouverte 2.0](https://www.data.gouv.fr/pages/legal/licences/etalab-2.0).
+- **Fond cartographique** : ADMIN EXPRESS COG 2018, IGN,
+  Licence Ouverte / Etalab.
+- **Images** : domaine public, Creative Commons ou conditions de réutilisation indiquées
+  sous chaque fichier ; les crédits et liens de source sont affichés dans le site.
+- **Code et contenus éditoriaux** : aucune licence de réutilisation n'est actuellement
+  accordée. Sauf mention contraire, tous droits réservés — © 2026 Héric Libong. La mise à
+  disposition publique du dépôt ne vaut pas autorisation de réutilisation.

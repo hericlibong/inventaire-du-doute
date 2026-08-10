@@ -8,9 +8,8 @@
 // adresse absolue — `og:url`, `og:image` et le sitemap — parce qu'un partage se
 // fait hors du site : un chemin relatif n'y veut rien dire.
 //
-// Publication de DÉMONSTRATION (2026-08-10) : GitHub Pages, en Project Page,
-// dans un sous-répertoire du domaine github.io. L'adresse définitive sera
-// arrêtée en F7 ; il n'y aura qu'une ligne à changer.
+// Publication GitHub Pages, en Project Page, dans un sous-répertoire du domaine
+// github.io. Cette adresse reste celle de la publication depuis main.
 export const SITE_URL = 'https://hericlibong.github.io/inventaire-du-doute';
 
 export const SITE_NOM = 'L’inventaire du doute';

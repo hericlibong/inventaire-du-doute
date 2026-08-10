@@ -1,20 +1,17 @@
-# Publication de DÉMONSTRATION sur GitHub Pages.
+# Publication du site sur GitHub Pages.
 #
 # Le site est une Project Page : il vit dans un sous-répertoire du domaine
 # github.io — https://hericlibong.github.io/inventaire-du-doute/ — et non à la
 # racine, qui appartient au site personnel. Rien n'est copié dans un autre dépôt :
 # ce workflow publie directement le dossier construit ici.
 #
-# Ce n'est PAS le déploiement final : la branche cible et l'adresse seront
-# arrêtées en F7 (voir docs/roadmap.md).
-#
 # Réglage manuel à faire UNE FOIS dans GitHub, sans quoi rien ne se publie :
 #   Settings → Pages → Source → GitHub Actions
-name: Démonstration GitHub Pages
+name: GitHub Pages
 
 on:
   push:
-    branches: [feat/profils-et-images]
+    branches: [main]
   # Permet de relancer une publication à la main, sans nouveau commit.
   workflow_dispatch:
 

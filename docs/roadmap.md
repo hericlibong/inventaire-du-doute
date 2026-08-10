@@ -92,13 +92,12 @@ Les contrôles sont proportionnés à chaque changement ; **le contrôle exhaust
       Joconde — **aucune erreur** ; le contrôle « notice / œuvre », qui solde **C6** pour
       cette page. Quatre libellés simplifiés en clôture. Deux cas conservés à dessein :
       Peter Hawke sans nationalité, Henry Hennault sans siècle.
-- [~] **F5 — Préparation technique au déploiement. BLOC 1 FAIT le 2026-08-09** : langue du
-      document en `fr` ; couvertures en JPEG 82 (−91 %, PNG retirés) ; quatre avertissements
-      de build corrigés, deux neutralisés avec justification, 14 restants tous du même type
-      et sans effet ; **rubrique « Avant / après » retirée de la production** (route et
+- [x] **F5 — Préparation technique au déploiement, terminée le 2026-08-11** : langue du
+      document en `fr` ; couvertures en JPEG 82 (−91 %, PNG retirés) ; avertissements de
+      build examinés ; **rubrique « Avant / après » retirée de la production** (route et
       données), sans redirection — l'URL n'a jamais circulé, et l'exploration reste en
-      réserve pour un volet ultérieur. **Bloc 2 en attente de validation** : favicon,
-      métadonnées, image de partage, Open Graph.
+      réserve pour un volet ultérieur ; favicon, titres, descriptions, Open Graph, image
+      de partage, sitemap, `robots.txt` et chemin GitHub Pages en place.
       Relevé initial : Relevé fait le 2026-08-07, à traiter :
       **`lang="en"` dans `web/src/app.html`** (à passer en `fr`) · **favicon Svelte par
       défaut** (`$lib/assets/favicon.svg`, seule balise du `svelte:head` du layout) ·
@@ -106,8 +105,8 @@ Les contrôles sont proportionnés à chaque changement ; **le contrôle exhaust
       propre) · métadonnées de partage et leur image · **sort de la route `/revisions`**,
       restée en place · avertissements de build qui gênent réellement · poids des images de
       couverture · compatibilité avec l'hébergement et le chemin de déploiement retenus.
-- [~] **DÉMONSTRATION TECHNIQUE — GitHub Pages** (préparée le 2026-08-10, avant F6/F7).
-      **Ce n'est PAS le déploiement final.** Publication en *Project Page* depuis ce dépôt,
+- [x] **DÉMONSTRATION TECHNIQUE — GitHub Pages** (publiée le 2026-08-10, avant F6/F7).
+      Publication en *Project Page* depuis ce dépôt,
       à `https://hericlibong.github.io/inventaire-du-doute/` : rien n'est copié dans le
       dépôt du site personnel. Elle sert à voir le site en ligne, dans ses vraies
       conditions de chemin, avant la vérification finale.
@@ -117,13 +116,16 @@ Les contrôles sont proportionnés à chaque changement ; **le contrôle exhaust
       portraits ; `trailingSlash: 'always'` pour que GitHub Pages serve des dossiers avec
       `index.html` ; un `404.html` ; un workflow `.github/workflows/pages.yml`.
       **Réglage manuel, une fois** : Settings → Pages → Source → **GitHub Actions**.
-      La branche cible (`feat/profils-et-images` pour la démonstration) et l'adresse
-      définitive seront arrêtées en **F7**.
-- [ ] **F6 — Vérification finale** (c'est la **phase 8** ouverte le 2026-08-02, ci-dessous) :
+      La démonstration a été servie depuis `feat/profils-et-images`. Le workflow est
+      désormais préparé pour publier `main` après la fusion F7, sans changer l'adresse.
+- [x] **F6 — Vérification finale, terminée le 2026-08-11** (phase 8 ouverte le 2026-08-02) :
       routes et redirections · liens internes et externes · filtres et combinaisons ·
       clavier et toucher · mobile et ordinateur · images, crédits et licences · tests ·
       build statique · cohérence des chiffres publics · README et documents vivants.
-      Rapport distinguant **blocages réels** et **limites assumées**.
+      **306 tests Python et tests front au vert**, build avec le sous-chemin de publication
+      réussi, quatre routes publiques et trois redirections générées, 209 reproductions
+      indexées présentes, chiffres et liens du README contrôlés. Aucun blocage réel relevé ;
+      les limites éditoriales et documentaires sont exposées dans le site et le README.
 - [ ] **F7 — Fusion et déploiement**, après validation finale seulement : état de la branche,
       fusion des seuls travaux validés dans `main`, build de publication, déploiement,
       vérification de la version réellement en ligne.
