@@ -69,7 +69,7 @@
 	const formuleType = (code) =>
 		FAMILLE_PUBLIC[code].montrerMention ? FAMILLE_PUBLIC[code].mention('un artiste') : null;
 
-	// Les sept sections de la page, dans l'ordre de lecture. Identifiants stables et
+	// Les huit sections de la page, dans l'ordre de lecture. Identifiants stables et
 	// sans accents : ils entrent dans l'URL et peuvent être partagés. Les libellés
 	// du rail sont ceux des titres, raccourcis pour les deux questions — un rail de
 	// 16 rem ne tient pas « Qu'est-ce que L'inventaire du doute ? ». Les titres
@@ -81,6 +81,7 @@
 		['selection', 'Comment ces artistes ont été choisis'],
 		['chiffres', 'Les mentions en chiffres'],
 		['definitions', 'Ce que ces mots veulent dire'],
+		['usages', 'À quoi sert cet inventaire ?'],
 		['explorer', 'Explorer, artiste par artiste']
 	];
 </script>
@@ -305,6 +306,63 @@
 				</div>
 			{/each}
 		</div>
+	</section>
+
+	<!-- CE QUE L'INVENTAIRE PERMET DE FAIRE : après les définitions, lorsque le
+	     lecteur connaît les données et leur vocabulaire, et juste avant l'appel à
+	     explorer. Une liste d'usages concrets remplace un nouveau texte de
+	     présentation générale. -->
+	<section class="usages" id="usages" tabindex="-1">
+		<h2>À quoi peut servir cet inventaire&nbsp;?</h2>
+		<ol class="usages-liste">
+			<li>
+				<div>
+					<h3>Mieux lire les informations des musées</h3>
+					<p>
+						Comprendre qu'un nom associé à une œuvre peut désigner un auteur possible,
+						mais aussi un atelier, une école ou une influence.
+					</p>
+				</div>
+			</li>
+			<li>
+				<div>
+					<h3>Retrouver et comparer des œuvres</h3>
+					<p>
+						Constituer rapidement un ensemble autour d'un artiste, d'une formulation ou
+						d'un musée, puis revenir aux notices originales.
+					</p>
+				</div>
+			</li>
+			<li>
+				<div>
+					<h3>Repérer des phénomènes difficiles à voir</h3>
+					<p>
+						Faire apparaître des concentrations, des particularités ou des incohérences
+						qui resteraient invisibles en consultant les notices une par une.
+					</p>
+				</div>
+			</li>
+			<li>
+				<div>
+					<h3>Fournir un point de départ</h3>
+					<p>
+						Servir à une recherche, une médiation culturelle, un article, un enseignement
+						ou la préparation d'une exposition.
+					</p>
+				</div>
+			</li>
+			<li>
+				<div>
+					<h3>Regarder l'œuvre au-delà du nom</h3>
+					<p>
+						Une œuvre n'a pas besoin d'avoir un auteur parfaitement identifié pour avoir
+						une histoire, une valeur artistique et une place dans un musée. L'incertitude
+						sur son attribution n'enlève rien à son existence, à son intérêt ni à sa
+						valeur patrimoniale.
+					</p>
+				</div>
+			</li>
+		</ol>
 	</section>
 
 	<!-- 5. LA SUITE ------------------------------------------------------------ -->
@@ -734,6 +792,53 @@
 		font-size: var(--taille-xs);
 	}
 
+	/* --- Les usages -----------------------------------------------------------
+	   Une liste éditoriale, pas une grille de cartes : les cinq réponses forment un
+	   raisonnement continu. Le numéro aide à les parcourir et le filet les sépare
+	   sans ajouter de cadre autour de chaque argument. */
+	.usages {
+		max-width: 52rem;
+	}
+
+	.usages-liste {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		counter-reset: usage;
+		border-top: 1px solid var(--couleur-trait);
+	}
+
+	.usages-liste li {
+		counter-increment: usage;
+		display: grid;
+		grid-template-columns: 2.5rem minmax(0, 1fr);
+		gap: var(--espace-3);
+		padding: var(--espace-4) 0;
+		border-bottom: 1px solid var(--couleur-trait-clair);
+	}
+
+	.usages-liste li::before {
+		content: counter(usage, decimal-leading-zero);
+		padding-top: 0.15rem;
+		font-family: var(--police-ui);
+		font-size: var(--taille-xs);
+		font-variant-numeric: tabular-nums;
+		color: var(--accent-cobalt);
+	}
+
+	.usages-liste h3 {
+		margin: 0;
+		font-family: var(--police-titre);
+		font-size: var(--taille-m);
+		line-height: 1.3;
+	}
+
+	.usages-liste p {
+		margin: 0.35rem 0 0;
+		line-height: 1.6;
+		color: var(--couleur-encre-douce);
+	}
+
 	@media (max-width: 860px) {
 		.exemple {
 			grid-template-columns: minmax(0, 1fr);
@@ -759,6 +864,12 @@
 		.contenu {
 			grid-column: auto;
 			grid-row: auto;
+		}
+
+		.usages-liste li {
+			grid-template-columns: 2rem minmax(0, 1fr);
+			gap: var(--espace-2);
+			padding-block: var(--espace-3);
 		}
 	}
 </style>

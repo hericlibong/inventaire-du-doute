@@ -93,6 +93,12 @@ horizontal ; le panneau lateral de la carte reste reserve a l'ordinateur.
   - replacer le texte sans masquer le sujet ;
   - conserver autant que possible l'affiche dans un ecran.
   - cadrage verifie a 320, 390 et 430 px ; la version desktop reste inchangee.
+- [x] **G6 — Expliquer les usages de l'inventaire**
+  - ajouter une section apres le glossaire et avant l'entree dans l'exploration ;
+  - presenter cinq usages concrets sous forme de liste editoriale ;
+  - rappeler que l'incertitude d'attribution n'enleve rien a la valeur de l'oeuvre ;
+  - ajouter l'ancre aux sommaires desktop et mobile.
+  - rendu controle a 390 et 1440 px ; ancre, section active et lecture mobile verifies.
 
 ## Lot 2 - Exploration des artistes sur mobile
 
