@@ -30,10 +30,11 @@ branche. La fusion dans `main` reste reservee a la cloture de F6/F7.
   - conserver Accueil, Le projet et Explorer les artistes ;
   - deplacer Methode dans le footer sous « Methode, sources et limites » ;
   - conserver les renvois contextuels vers la Methode.
-- [ ] **G3 — Sommaire mobile de la page Le projet**
+- [x] **G3 — Sommaire mobile de la page Le projet**
   - rail lateral conserve sur ordinateur ;
   - commande compacte persistante sur mobile ;
   - section active visible et defilement fluide.
+  - composant commun applique aussi a la Methode, sans second systeme d'ancres.
 - [ ] **G4 — Liens d'action de la page Le projet**
   - actions POP harmonisees avec l'onglet Oeuvres ;
   - liens editoriaux internes conserves comme liens de lecture.

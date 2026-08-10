@@ -154,7 +154,20 @@
 </script>
 
 <nav class="sommaire" aria-label={etiquette}>
-	<ol>
+	<label class="sommaire-mobile">
+		<span>Section</span>
+		<select
+			aria-label={etiquette}
+			value={sectionActive ?? sections[0]?.[0]}
+			onchange={(e) => allerA(e, e.currentTarget.value)}
+		>
+			{#each sections as [ancre, titre] (ancre)}
+				<option value={ancre}>{titre}</option>
+			{/each}
+		</select>
+	</label>
+
+	<ol class="sommaire-liste">
 		{#each sections as [ancre, titre, sous = []], i (ancre)}
 			<li>
 				<a
@@ -202,6 +215,10 @@
 	.sommaire {
 		position: sticky;
 		top: var(--espace-5);
+	}
+
+	.sommaire-mobile {
+		display: none;
 	}
 
 	.sommaire ol {
@@ -329,41 +346,49 @@
 		}
 	}
 
-	/* Petit écran : le rail devient une barre de liens en tête de page. Le seuil de
-	   760 px est celui où les pages hôtes replient leur grille sur une colonne —
-	   les deux doivent basculer ensemble. */
+	/* Petit écran : le rail devient une commande compacte qui reste disponible sous
+	   le header. La liste horizontale précédente disparaissait dès qu'on atteignait
+	   la première section et obligeait à remonter pour changer de destination. */
 	@media (max-width: 760px) {
 		.sommaire {
-			position: static;
+			position: sticky;
+			top: 4.5rem;
+			z-index: 15;
+			padding: 0.45rem 0;
+			background: color-mix(in srgb, var(--couleur-fond) 96%, transparent);
+			border-top: 1px solid var(--couleur-trait-clair);
+			border-bottom: 1px solid var(--couleur-trait);
 		}
 
-		.sommaire ol {
-			display: flex;
-			flex-wrap: wrap;
-			gap: var(--espace-2) var(--espace-4);
-			border-left: none;
+		.sommaire-mobile {
+			display: grid;
+			grid-template-columns: auto minmax(0, 1fr);
+			align-items: center;
+			gap: var(--espace-3);
+			font-family: var(--police-ui);
+			font-size: var(--taille-xs);
+			font-weight: 700;
+			letter-spacing: 0.06em;
+			text-transform: uppercase;
+			color: var(--couleur-encre-douce);
 		}
 
-		/* Les sous-parties quittent la barre : elles la feraient passer de six à onze
-		   entrées, et un sommaire de onze liens en tête d'écran n'aide plus personne.
-		   Leurs titres restent lus dans la page, et leurs ancres restent valides. */
-		.sommaire .sous {
+		.sommaire-mobile select {
+			min-width: 0;
+			width: 100%;
+			padding: 0.48rem 2rem 0.48rem 0.65rem;
+			border: 1px solid var(--couleur-trait);
+			border-radius: 2px;
+			background: var(--surface-carte);
+			color: var(--couleur-encre);
+			font-size: var(--taille-s);
+			font-weight: 600;
+			letter-spacing: 0;
+			text-transform: none;
+		}
+
+		.sommaire-liste {
 			display: none;
-		}
-
-		.sommaire li + li {
-			margin-top: 0;
-		}
-
-		.sommaire a {
-			padding-left: 0;
-			border-left: none;
-		}
-
-		/* Le filet de gauche disparaît en liste horizontale : le repère passe
-		   dessous, sinon la section en cours ne se distingue plus. */
-		.sommaire a.actif {
-			border-bottom: 2px solid var(--accent-cobalt);
 		}
 
 		/* Sur petit écran, le bouton se réduit à sa flèche pour couvrir le moins de
@@ -382,6 +407,12 @@
 			overflow: hidden;
 			clip-path: inset(50%);
 			white-space: nowrap;
+		}
+	}
+
+	@media (max-width: 620px) {
+		.sommaire {
+			top: 6rem;
 		}
 	}
 </style>
