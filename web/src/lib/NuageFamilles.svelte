@@ -289,12 +289,23 @@
 		<!-- Infobulle ancrée AU POINT (cas normal). Le contenu accessible passe par
 		     l'aria-label du point. -->
 		{#if pointActif && interaction?.ancre === 'point'}
-			<Infobulle
-				tt={pointActif.tt}
-				x={interaction.x}
-				y={interaction.y}
-				dessous={interaction.dessous}
-			/>
+			<div class="infobulle-point">
+				<Infobulle
+					tt={pointActif.tt}
+					x={interaction.x}
+					y={interaction.y}
+					dessous={interaction.dessous}
+				/>
+			</div>
+		{/if}
+
+		<!-- Sur mobile, le même contenu devient un panneau en flux : il ne peut ni
+		     sortir de l'écran ni masquer le tracé. Il reste piloté par l'état partagé
+		     du point et de la légende. -->
+		{#if pointActif}
+			<div class="detail-mobile">
+				<Infobulle tt={pointActif.tt} enFlux />
+			</div>
 		{/if}
 
 		<!-- Précaution de lecture (2026-07-27) : petit corps, atténué, italique, avec un
@@ -313,13 +324,14 @@
 	<!-- Pas de phrase d'introduction (retirée le 2026-07-25) : les trois intitulés
 	     de territoire et la légende suffisent à expliquer l'organisation. -->
 	<div class="cle">
+		<p class="cle-mobile-titre">Choisir une mention</p>
 		<ol class="territoires">
 			{#each TERRITOIRES as t (t.id)}
 				<li class="zone" data-zone={t.id}>
 					<!-- Les titres de territoire NE sont PAS interactifs (seules les huit
 					     mentions le sont). -->
 					<span class="zone-titre">{t.titre}</span>
-					<span class="zone-mentions">
+					<div class="zone-mentions">
 						{#each t.codes as code (code)}
 							{#if present(code)}
 								<!-- Mention présente : vrai bouton, symétrique du point. Survol/focus
@@ -348,7 +360,9 @@
 								<!-- Repli mobile : quand le point est hors de la fenêtre, l'infobulle
 								     s'affiche EN FLUX, sous la mention active. -->
 								{#if interaction?.ancre === 'legende' && interaction.code === code && pointActif}
-									<Infobulle tt={pointActif.tt} enFlux />
+									<div class="detail-legende">
+										<Infobulle tt={pointActif.tt} enFlux />
+									</div>
 								{/if}
 							{:else}
 								<!-- Mention absente : ni bouton, ni focus, ni curseur d'interaction ;
@@ -363,7 +377,7 @@
 								</span>
 							{/if}
 						{/each}
-					</span>
+					</div>
 				</li>
 			{/each}
 		</ol>
@@ -374,6 +388,13 @@
 <style>
 	.nuage {
 		margin: 0;
+	}
+
+	/* Les deux rendus d'information sont exclusifs selon la largeur : bulle ancree
+	   sur grand ecran, panneau en flux sur mobile. */
+	.detail-mobile,
+	.cle-mobile-titre {
+		display: none;
 	}
 
 	/* --- En-tête : le graphe est le portrait d'un artiste, il porte son nom. --- */
@@ -643,14 +664,64 @@
 	}
 
 	@container (max-width: 30rem) {
-		.territoires {
-			flex-direction: column;
-			gap: var(--espace-3);
+		/* La commande vient avant le tracé. Les huit mentions tiennent dans une grille
+		   compacte : l'utilisateur agit et voit le point réagir dans la même fenêtre. */
+		.cle {
+			order: -1;
 		}
-		/* Sans cela, le flex-grow du palier précédent étire chaque zone en HAUTEUR
-		   une fois la liste repassée en colonne (filets de couleur démesurés). */
+
+		.cle-mobile-titre {
+			display: block;
+			margin: 0 0 var(--espace-2);
+			font-family: var(--police-ui);
+			font-size: 0.7rem;
+			font-weight: 700;
+			letter-spacing: 0.06em;
+			text-transform: uppercase;
+			color: var(--couleur-encre-douce);
+		}
+
+		.territoires {
+			display: grid;
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+			gap: 0.4rem;
+		}
+
+		/* Les territoires restent écrits dans le graphique. Ici, leurs conteneurs
+		   s'effacent pour former une seule grille de commandes. */
 		.zone {
-			flex: 0 0 auto;
+			display: contents;
+		}
+
+		.zone-titre {
+			display: none;
+		}
+
+		.zone-mentions {
+			display: contents;
+		}
+
+		.mention {
+			min-height: 2.4rem;
+			padding: 0.45rem 0.55rem;
+			border: 1px solid var(--couleur-trait);
+			background: var(--couleur-surface, #fffdf9);
+		}
+
+		.mention.active {
+			border-color: var(--couleur-encre-douce);
+		}
+
+		/* Aucune bulle positionnée en absolu sur petit écran : c'est elle qui sortait
+		   du viewport dans la démonstration. */
+		.infobulle-point,
+		.detail-legende {
+			display: none;
+		}
+
+		.detail-mobile {
+			display: block;
+			margin: 0.35rem 0 var(--espace-2);
 		}
 	}
 </style>
