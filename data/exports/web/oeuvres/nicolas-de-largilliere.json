@@ -36,6 +36,7 @@
   {
    "reference": "000PE001687",
    "titre": "LE PRESIDENT DE LAMOIGNON (1617-1677)",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -44,6 +45,7 @@
   {
    "reference": "000PE007962",
    "titre": "Noël Jouvenet (mort en 1716), sculpteur",
+   "musee_code": "M5077",
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "point_interrogation",
@@ -52,6 +54,7 @@
   {
    "reference": "000PE009756",
    "titre": "PORTRAIT DE RENEE ELISABETH PUCELLE, EPOUSE DE NICOLAS FREMONT D'AUNEIL",
+   "musee_code": "M0770",
    "musee": "musée de Tessé",
    "ville": "Le Mans",
    "code": "attribue",
@@ -60,6 +63,7 @@
   {
    "reference": "000PE009801",
    "titre": "PORTRAIT D'UN MAGISTRAT",
+   "musee_code": "M0770",
    "musee": "musée de Tessé",
    "ville": "Le Mans",
    "code": "attribue",
@@ -68,6 +72,7 @@
   {
    "reference": "000PE012098",
    "titre": "REUNION DE FAMILLE DANS UN PARC, DITE LA FAMILLE DE JULES HARDOUIN-MANSART",
+   "musee_code": "M5077",
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "attribue",
@@ -76,6 +81,7 @@
   {
    "reference": "000PE013909",
    "titre": "PORTRAIT D'UN GENTILHOMME",
+   "musee_code": "M0913",
    "musee": "musée des beaux-arts",
    "ville": "Marseille",
    "code": "attribue",
@@ -84,6 +90,7 @@
   {
    "reference": "000PE016248",
    "titre": "PORTRAIT DE JEUNE DAME",
+   "musee_code": "M0917",
    "musee": "musée Grobet-Labadié",
    "ville": "Marseille",
    "code": "attribue",
@@ -97,12 +104,13 @@
     "licence": "CC BY-SA 4.0",
     "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Femme_en_buste_par_Largilli%C3%A8re.jpg",
-    "verifie_le": "2026-07-29"
+    "verifie_le": "2026-08-06"
    }
   },
   {
    "reference": "00000077222",
    "titre": "UN CHEVALIER DE L'ORDRE DE SAINT MICHEL",
+   "musee_code": "M5052",
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "attribue",
@@ -116,12 +124,13 @@
     "licence": "Public domain",
     "licence_url": "",
     "source": "https://commons.wikimedia.org/wiki/File:Portrait_d%27un_chevalier_de_l%27ordre_de_saint_Michel_-_Largilli%C3%A8re_-_Mus%C3%A9e_Cond%C3%A9.jpg",
-    "verifie_le": "2026-07-29"
+    "verifie_le": "2026-08-06"
    }
   },
   {
    "reference": "00000077218",
    "titre": "PORTRAIT PRESUME DE CHARLES PARIS D'ORLEANS DUC DE LONGUEVILLE ET D'ESTOUVILLE",
+   "musee_code": "M5052",
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "attribue",
@@ -135,12 +144,13 @@
     "licence": "Public domain",
     "licence_url": "",
     "source": "https://commons.wikimedia.org/wiki/File:Portrait_pr%C3%A9sum%C3%A9_de_Charles-Paris_d%27Orl%C3%A9ans_-_Largilli%C3%A8re_-_Mus%C3%A9e_Cond%C3%A9.jpg",
-    "verifie_le": "2026-07-29"
+    "verifie_le": "2026-08-06"
    }
   },
   {
    "reference": "00000058402",
    "titre": "ETUDE POUR LE PORTRAIT D'UN CHASSEUR ; JOSEPH ET LA FEMME DE PUTIPHAR (ESQUISSE, AU VERSO)",
+   "musee_code": "M0729",
    "musee": "musée des beaux-arts",
    "ville": "Rouen",
    "code": "attribue",
@@ -149,6 +159,7 @@
   {
    "reference": "M0347001435",
    "titre": "Portrait d'homme à mi-corps",
+   "musee_code": "M0347",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Dole",
    "code": "genre_de",
@@ -157,6 +168,7 @@
   {
    "reference": "07430005647",
    "titre": "Portrait de Jacques II Stuart, roi d'Ecosse",
+   "musee_code": "M0743",
    "musee": "musée des Beaux-Arts",
    "ville": "Nantes",
    "code": "atelier_de",
@@ -165,6 +177,7 @@
   {
    "reference": "M0525000544",
    "titre": "Portrait de François de Wédrille",
+   "musee_code": "M0525",
    "musee": "musée de la Princerie",
    "ville": "Verdun",
    "code": "attribue",
@@ -173,6 +186,7 @@
   {
    "reference": "M0525000559",
    "titre": "Portrait du lieutenant-général Descrochets",
+   "musee_code": "M0525",
    "musee": "musée de la Princerie",
    "ville": "Verdun",
    "code": "attribue",
@@ -181,6 +195,7 @@
   {
    "reference": "M0811000051",
    "titre": "Madame Jassaud et ses enfants ; Portrait de femme avec ses deux enfants (autre titre)",
+   "musee_code": "M0811",
    "musee": "Le Beffroi - musée Boucher de Perthes - Manessier",
    "ville": "Abbeville",
    "code": "atelier_de",
@@ -189,6 +204,7 @@
   {
    "reference": "M0811000050",
    "titre": "L'intendante",
+   "musee_code": "M0811",
    "musee": "Le Beffroi - musée Boucher de Perthes - Manessier",
    "ville": "Abbeville",
    "code": "atelier_de",
@@ -197,6 +213,7 @@
   {
    "reference": "01610009748",
    "titre": "Portrait d'homme à la perruque",
+   "musee_code": "M0161",
    "musee": "musée Rolin",
    "ville": "Autun",
    "code": "maniere_de",
@@ -205,6 +222,7 @@
   {
    "reference": "01610009747",
    "titre": "Portrait de femme",
+   "musee_code": "M0161",
    "musee": "musée Rolin",
    "ville": "Autun",
    "code": "maniere_de",
@@ -213,6 +231,7 @@
   {
    "reference": "07290020599",
    "titre": "Femme au collier de perles ; Portrait de femme (autre titre)",
+   "musee_code": "M0729",
    "musee": "musée des beaux-arts",
    "ville": "Rouen",
    "code": "ecole_de",
@@ -221,6 +240,7 @@
   {
    "reference": "05620001274",
    "titre": "Thomyris reine des Massagètes ; Thomyris, reine des Massagetes fait plonger la tête de Cyrus dans un vase rempli de sang",
+   "musee_code": "M0562",
    "musee": "musée des Augustins",
    "ville": "Toulouse",
    "code": "point_interrogation",
@@ -234,12 +254,13 @@
     "licence": "Public domain",
     "licence_url": "",
     "source": "https://commons.wikimedia.org/wiki/File:Largilli%C3%A8re_-_Thomyris_reine_des_Massag%C3%A8tes,_1718_vers.jpg",
-    "verifie_le": "2026-07-29"
+    "verifie_le": "2026-08-06"
    }
   },
   {
    "reference": "M0536000447",
    "titre": "Portrait d’homme",
+   "musee_code": "M0536",
    "musee": "musée départemental d'art ancien et contemporain",
    "ville": "Epinal",
    "code": "entourage_de",
@@ -248,6 +269,7 @@
   {
    "reference": "M0536000395",
    "titre": "Portrait d'homme",
+   "musee_code": "M0536",
    "musee": "musée départemental d'art ancien et contemporain",
    "ville": "Epinal",
    "code": "entourage_de",
@@ -256,6 +278,7 @@
   {
    "reference": "07150000274",
    "titre": "Portrait présumé du peintre Jean-Baptiste Jouvenet",
+   "musee_code": "M0715",
    "musee": "Les Pêcheries, musée de Fécamp",
    "ville": "Fécamp",
    "code": "attribue",
@@ -263,7 +286,7 @@
   }
  ],
  "version_donnee": "2026-07-01",
- "date_generation": "2026-07-28T14:49:21+00:00",
+ "date_generation": "2026-08-05T18:41:37+00:00",
  "source": "Collections des musées de France : base Joconde",
  "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
 }

@@ -1,16 +1,29 @@
 <script>
-	// « Méthode et limites » (refonte 2026-07-31, six questions) : page publique de
-	// référence. Six sections en questions simples — la base · comment le doute
-	// s'écrit · comment on compte · comment les artistes sont identifiés · lire les
-	// chiffres · limites, sources et droits. Éditoriale et accessible ; les limites
-	// au même rang que le récit (CLAUDE.md). Doc technique détaillée : docs/methode-et-limites.md.
+	import MetaPage from '$lib/MetaPage.svelte';
+	import { META } from '$lib/meta.js';
+
+	// « Méthode et limites » — page publique de référence. Réécrite section par
+	// section par l'utilisateur les 2026-08-05 : CINQ sections, chacune une question
+	// — quelles données · comment une attribution incertaine est indiquée · que
+	// comptons-nous · comment la liste des artistes a été établie · limites et
+	// sources. Les quatre dernières portent des sous-parties ancrées, montrées en
+	// retrait dans le rail. « Lire les chiffres et les vues » a été supprimée le
+	// 2026-08-05 : c'était le mode d'emploi de l'interface, il appartient aux vues
+	// elles-mêmes. Les limites restent au même rang que le récit (CLAUDE.md). Doc
+	// technique détaillée : docs/methode-et-limites.md.
 	import { nombre } from '$lib/joconde.js';
 	import { base } from '$app/paths';
-	// Quatre visuels (palier 4) : trois schémas HTML/CSS qui expliquent chacun UNE
-	// règle sur un cas réel, et une capture de l'interface pour les crédits d'image.
-	import SchemaChampAuteur from '$lib/SchemaChampAuteur.svelte';
-	import SchemaComptageUnique from '$lib/SchemaComptageUnique.svelte';
-	import SchemaHomonymes from '$lib/SchemaHomonymes.svelte';
+	// Trois exemples et une capture. Les exemples ont quitté leur cadre de schéma le
+	// 2026-08-05 : chacun cite des notices identifiées et se lit dans la colonne de
+	// texte. La capture, elle, montre la règle des crédits telle qu'elle s'applique.
+	import ExemplesChampAuteur from '$lib/ExemplesChampAuteur.svelte';
+	import ExempleComptageUnique from '$lib/ExempleComptageUnique.svelte';
+	import ExempleHomonymes from '$lib/ExempleHomonymes.svelte';
+	// Rail de sommaire (palier 5). Le mécanisme — repérage de la section lue,
+	// défilement doux, retour en haut — a quitté cette page le 2026-08-04 pour
+	// devenir un composant : « Présentation » en avait besoin à son tour, et le
+	// site ne doit pas porter deux navigations internes différentes.
+	import SommaireAncres from '$lib/SommaireAncres.svelte';
 
 	let { data } = $props();
 	const n = data.niveaux;
@@ -18,165 +31,140 @@
 
 	// Chiffres, tous issus des exports (jamais saisis à la main).
 	const nbNoms = data.artistes.artistes.length;
-	const douteDansListe = data.vue.totaux.doute_notices_liste;
 	// Registre des candidats : l'engagement de publier qui a été examiné, et
 	// avec quel résultat (decisions.md 2026-07-21 quater, décision 4).
 	const nbCandidats = data.registre.formes_au_seuil;
 	const nbRetenus = data.registre.retenues;
 	const nbEcartes = data.registre.ecartees;
 	const nbAInstruire = data.registre.a_instruire;
+	// Personnes identifiées et comptées, mais dont le fonds sort de l'angle du
+	// volume (2026-08-02). Ni écartées, ni faux positifs : un état à part entière.
+	const nbHorsPerimetre = data.registre.hors_perimetre ?? 0;
+	// Nom du musée seul : l'export porte un libellé de travail — « Muséum d'histoire
+	// naturelle de Nice — planches de Barla (attribué à) » —, dont la page ne cite
+	// que l'établissement. Le nom reste ainsi lu dans l'export, jamais recopié.
+	const museeMonoculture = n.monoculture_divulguee.libelle.split(' — ')[0];
 	const dApres = n.familles.d_apres.notices;
 	const copiesTotal = n.copie;
-	const pct = (v) => (v * 100).toLocaleString('fr-FR', { maximumFractionDigits: 1 });
 	const go = (o) => (o / 1e9).toLocaleString('fr-FR', { maximumFractionDigits: 2 });
+	// « 2026-07-01 » → « 1er juillet 2026 ». La date de version reste lue dans
+	// provenance.json ; seule sa mise en français se fait ici.
+	const MOIS = [
+		'janvier', 'février', 'mars', 'avril', 'mai', 'juin',
+		'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'
+	];
+	const dateFr = (iso) => {
+		const [annee, mois, jour] = iso.split('-').map(Number);
+		return `${jour === 1 ? '1er' : jour} ${MOIS[mois - 1]} ${annee}`;
+	};
 
 	// Six questions simples (refonte 2026-07-31). Libellés courts pour le rail ;
 	// les titres complets sont dans les <h2>.
 	const sommaire = [
-		['base', 'La base étudiée'],
-		['doute', 'Comment le doute s’écrit'],
-		['comptage', 'Comment on compte'],
-		['artistes', 'Identifier les artistes'],
-		['lire', 'Lire les chiffres et les vues'],
-		['sources', 'Limites, sources et droits']
+		['base', 'Les données utilisées'],
+		// Seule section à sous-parties pour l'instant (2026-08-05) : ses cinq temps
+		// sont trop distincts pour tenir sous un seul repère dans le rail.
+		[
+			'doute',
+			'Comment le doute est indiqué',
+			[
+				['doute-ecrit', 'Ce que le musée écrit'],
+				['doute-exemples', 'Trois exemples réels'],
+				['doute-references', 'Les textes de référence'],
+				['doute-classement', 'Le classement utilisé'],
+				['doute-reperage', 'Comment les notices sont repérées']
+			]
+		],
+		[
+			'comptage',
+			'Que comptons-nous ?',
+			[
+				['comptage-unite', 'L’unité de calcul'],
+				['comptage-mentions', 'Plusieurs mentions'],
+				['comptage-copies', 'Les copies'],
+				['comptage-part', 'La part affichée']
+			]
+		],
+		[
+			'artistes',
+			'La liste des artistes',
+			[
+				['artistes-seuil', 'Un seuil commun'],
+				['artistes-identites', 'Vérifier les identités'],
+				['artistes-liste', 'Une liste en cours']
+			]
+		],
+		[
+			'sources',
+			'Limites et sources',
+			[
+				['sources-couverture', 'Ce que couvrent les chiffres'],
+				['sources-fonds', 'Un fonds qui pèse lourd'],
+				['sources-portee', 'Ce que le projet affirme'],
+				['sources-images', 'Les données et les images']
+			]
+		]
 	];
 
-	// --- Navigation dans une page longue (palier 5) --------------------------
-	// Le rail de sommaire indique où l'on se trouve, et un retour en haut apparaît
-	// quand on a défilé. Rien d'automatique ne bouge à l'écran : la page ne prend
-	// jamais la main sur le défilement du lecteur.
-
-	let actif = $state(sommaire[0][0]);
-	let hautVisible = $state(false);
-
-	// Repérage de la section courante. Mesure directe à chaque défilement plutôt
-	// qu'un IntersectionObserver : six éléments, un calcul par image, et surtout
-	// une règle qu'on peut énoncer — « la dernière section dont le titre est passé
-	// au-dessus du quart supérieur de la fenêtre ». Les cas limites (haut de page,
-	// dernière section trop courte pour occuper l'écran) sont traités explicitement.
-	$effect(() => {
-		const cibles = sommaire
-			.map(([ancre]) => document.getElementById(ancre))
-			.filter(Boolean);
-		if (!cibles.length) return;
-
-		let attendue = false;
-
-		const mesurer = () => {
-			attendue = false;
-			const seuil = window.innerHeight * 0.25;
-			let courante = cibles[0];
-			for (const el of cibles) {
-				if (el.getBoundingClientRect().top <= seuil) courante = el;
-			}
-			// Arrivé au pied de page, la dernière section est la bonne réponse même
-			// si elle n'a pas atteint le seuil (elle ne le pourra jamais).
-			const fin =
-				window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 4;
-			if (fin) courante = cibles[cibles.length - 1];
-
-			actif = courante.id;
-			hautVisible = window.scrollY > window.innerHeight;
-		};
-
-		const auDefilement = () => {
-			if (attendue) return;
-			attendue = true;
-			requestAnimationFrame(mesurer);
-		};
-
-		mesurer();
-		// Arrivée par un lien vers une ancre (« Pourquoi ces N artistes ? ») : le
-		// navigateur saute à la cible avant que cette mesure ne soit installée, sans
-		// émettre d'événement de défilement. On remesure donc une fois la page posée,
-		// sinon le rail annoncerait la première section alors qu'on est à la quatrième.
-		const differee = setTimeout(mesurer, 250);
-
-		window.addEventListener('scroll', auDefilement, { passive: true });
-		window.addEventListener('resize', auDefilement);
-		window.addEventListener('hashchange', auDefilement);
-		return () => {
-			clearTimeout(differee);
-			window.removeEventListener('scroll', auDefilement);
-			window.removeEventListener('resize', auDefilement);
-			window.removeEventListener('hashchange', auDefilement);
-		};
-	});
-
-	// Défilement doux, sauf si le système demande de limiter les animations.
-	const douceur = () =>
-		window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
-
-	// Clic sur le sommaire : on garde le comportement natif (l'ancre reste dans
-	// l'URL, le lien fonctionne sans JavaScript) et on y ajoute le défilement doux
-	// et le passage du focus clavier à la section atteinte.
-	function allerA(evenement, ancre) {
-		const cible = document.getElementById(ancre);
-		if (!cible) return;
-		evenement.preventDefault();
-		cible.scrollIntoView({ behavior: douceur(), block: 'start' });
-		cible.focus({ preventScroll: true });
-		history.replaceState(null, '', `#${ancre}`);
-	}
-
-	function retourHaut() {
-		window.scrollTo({ top: 0, behavior: douceur() });
-		document.getElementById('haut-de-page')?.focus({ preventScroll: true });
-		history.replaceState(null, '', window.location.pathname);
-	}
+	// Navigation dans une page longue (palier 5) : voir SommaireAncres.svelte, qui
+	// porte désormais le repérage de la section lue et le retour en haut.
 </script>
 
+<MetaPage {...META.methode} chemin="/methode/" />
+
+
 <div class="page">
+<div class="grille">
+<!-- Le bandeau de titre vit DANS la grille depuis le 2026-08-05, en tête de la
+     colonne de contenu : la page n'a plus qu'une seule ligne de départ, et le rail
+     monte à hauteur du titre. Il reste premier dans le document (le titre se lit
+     avant le sommaire) ; le repli à 760 px le remet au-dessus de la barre de liens.
+     Même disposition que « Présentation » : passer d'une page à l'autre ne doit pas
+     déplacer le titre. -->
 <header class="tete">
 	<p class="kicker">Méthode et limites</p>
 	<!-- tabindex : cible du focus au retour en haut (le clavier suit le regard). -->
-	<h1 id="haut-de-page" tabindex="-1">Ce que les chiffres disent, et ne disent pas</h1>
+	<h1 id="haut-de-page" tabindex="-1">Comment L'inventaire du doute a été construit</h1>
+	<!-- Ouverture réécrite par l'utilisateur le 2026-08-05 : elle annonce le plan de la
+	     page au lieu de la commenter. Le second paragraphe garde le rang de la ligne de
+	     prudence — même place, même petit corps qu'auparavant. -->
 	<p class="chapo">
-		Cette page dit comment le projet lit la base Joconde, ce qu'il compte, et ce qu'il
-		ne prétend pas savoir. Elle est publiée au même rang que le reste&nbsp;: les limites
-		font partie du récit.
+		Cette page présente les données utilisées, les règles appliquées pour repérer et
+		compter les notices, la façon dont les artistes ont été identifiés et les limites
+		des résultats.
 	</p>
 	<p class="prudence">
-		Le projet reprend les formulations publiées par les musées&nbsp;; il ne réattribue
-		aucune œuvre.
+		L'inventaire reprend les informations publiées dans
+		<a
+			href="https://www.data.gouv.fr/fr/datasets/collections-des-musees-de-france-base-joconde/"
+			target="_blank"
+			rel="noopener">Joconde</a>. Il ne cherche pas à déterminer l'auteur des œuvres.
 	</p>
 </header>
 
-<div class="grille">
-	<nav class="sommaire" aria-label="Sections de la page">
-		<ol>
-			{#each sommaire as [ancre, titre], i (ancre)}
-				<li>
-					<a
-						href="#{ancre}"
-						class:actif={ancre === actif}
-						aria-current={ancre === actif ? 'true' : undefined}
-						onclick={(e) => allerA(e, ancre)}
-					>
-						<span class="num">{i + 1}</span>{titre}
-					</a>
-				</li>
-			{/each}
-		</ol>
-	</nav>
+	<SommaireAncres sections={sommaire} ancreHaut="haut-de-page" />
 
 	<div class="contenu">
-<!-- 1. La base étudiée ------------------------------------------------------- -->
+<!-- 1. Quelles données ? ------------------------------------------------------
+     Texte de l'utilisateur (2026-08-05). Les trois valeurs citées viennent des
+     exports : la date de version et la licence de provenance.json, l'effectif de
+     niveaux.json. Aucune n'est écrite dans la page. -->
 <section id="base" tabindex="-1">
-	<h2>La base étudiée</h2>
+	<h2>Quelles données avons-nous utilisées&nbsp;?</h2>
 	<p>
 		<strong>Joconde</strong> est le catalogue collectif des collections des musées de
-		France, publié par le ministère de la Culture
-		<a href="https://www.data.gouv.fr/fr/datasets/collections-des-musees-de-france-base-joconde/" target="_blank" rel="noopener">sur data.gouv.fr</a>
-		sous <strong>{prov.licence}</strong>. Il rassemble plus d'un million de notices,
-		décrites par les musées eux-mêmes&nbsp;; une notice correspond généralement à un
-		bien muséal, parfois à un ensemble ou à plusieurs éléments. Le projet en lit une
-		seule chose&nbsp;: la manière dont les musées écrivent qu'ils ne sont
-		<em>pas certains</em> de l'auteur d'une œuvre.
+		France. Chaque notice rassemble les informations transmises par un musée sur un bien
+		ou un ensemble conservé dans ses collections&nbsp;: titre, auteur, datation,
+		technique, dimensions ou lieu de conservation.
 	</p>
 	<p>
-		Les chiffres de ce site se rapportent à la <strong>version du {prov.version_donnee}</strong>
-		de la base. C'est une photographie datée d'un inventaire vivant.
+		Pour cette enquête, nous avons utilisé la
+		<strong>version du {dateFr(prov.version_donnee)}</strong>, diffusée par le ministère
+		de la Culture
+		<a href="https://www.data.gouv.fr/fr/datasets/collections-des-musees-de-france-base-joconde/" target="_blank" rel="noopener">sur data.gouv.fr</a>
+		sous <strong>{prov.licence}</strong>. Elle contient {nombre(n.notices_total)} notices.
+		Les résultats présentés sur ce site correspondent donc à cette version précise de la
+		base.
 	</p>
 	<details>
 		<summary>Détails de version</summary>
@@ -187,212 +175,234 @@
 	</details>
 </section>
 
-<!-- 2. Comment le doute s'écrit dans Joconde -------------------------------- -->
+<!-- 2. Comment une attribution incertaine est-elle indiquée ? ------------------
+     Section refondue le 2026-08-05, texte de l'utilisateur. Cinq sous-parties, une
+     ancre chacune : elles apparaissent en retrait sous la section dans le rail
+     (SommaireAncres accepte un troisième élément par entrée). Les h3 portent donc
+     id et tabindex, comme les sections. -->
 <section id="doute" tabindex="-1">
-	<h2>Comment le doute s’écrit dans Joconde</h2>
-	<p>Trois choses sont à distinguer&nbsp;: ce que les musées écrivent, ce que ces mots
-		veulent dire, et la manière dont nous les regroupons.</p>
+	<h2>Comment une attribution incertaine est-elle indiquée dans Joconde&nbsp;?</h2>
+
+	<h3 id="doute-ecrit" tabindex="-1">Ce que le musée écrit</h3>
 	<p>
-		<strong>1. Ce que les musées publient.</strong> On appelle
-		<strong>formulation prudente</strong> une notice où le nom d'un artiste est présent,
-		mais accompagné d'une réserve&nbsp;: «&nbsp;attribué à&nbsp;», «&nbsp;atelier
-		de&nbsp;», «&nbsp;école de&nbsp;», «&nbsp;entourage de&nbsp;», «&nbsp;suiveur
-		de&nbsp;», «&nbsp;à la manière de&nbsp;», «&nbsp;dans le genre de&nbsp;», ou un
-		simple «&nbsp;?&nbsp;» après le nom. Ces formules sont celles des musées — le projet
-		n'en invente aucune.
+		Dans une notice Joconde, le musée dispose d'un champ pour indiquer l'auteur. Lorsqu'une
+		attribution est incertaine, le nom peut être accompagné d'un point d'interrogation ou
+		d'une précision comme «&nbsp;attribué à&nbsp;», «&nbsp;atelier de&nbsp;»,
+		«&nbsp;école de&nbsp;», «&nbsp;entourage de&nbsp;», «&nbsp;suiveur de&nbsp;»,
+		«&nbsp;manière de&nbsp;» ou «&nbsp;genre de&nbsp;». L'inventaire reprend ces
+		indications telles qu'elles ont été publiées.
 	</p>
 
-	<SchemaChampAuteur />
+	<h3 id="doute-exemples" tabindex="-1">Trois exemples réels</h3>
+	<ExemplesChampAuteur />
 
+	<h3 id="doute-references" tabindex="-1">Les textes de référence</h3>
 	<p>
-		<strong>2. Leur sens.</strong> Il est fixé par la
-		<a href="https://www.culture.gouv.fr/thematiques/musees/pour-les-professionnels/conserver-et-gerer-les-collections/informatiser-les-collections-d-un-musee-de-france/organisation-operationnelle-de-l-informatisation-des-collections-d-un-musee-de-france/methode-de-redaction-informatisee-des-notices-d-objets-de-musees" target="_blank" rel="noopener">méthode d'inventaire du ministère</a>
-		(la «&nbsp;méthode Joconde&nbsp;»), référence directe des conventions de saisie.
-		Pour certains termes, il remonte au
-		<a href="https://www.legifrance.gouv.fr/loda/id/LEGITEXT000006063458/" target="_blank" rel="noopener">décret n°&nbsp;81-255 du 3 mars 1981</a>&nbsp;:
-		«&nbsp;attribué à&nbsp;» (art. 4), «&nbsp;atelier de&nbsp;» (art. 5), «&nbsp;école
-		de&nbsp;» (art. 6), et les termes sans garantie comme «&nbsp;d'après&nbsp;» ou
-		«&nbsp;à la manière de&nbsp;» (art. 7). Le simple «&nbsp;?&nbsp;», lui, ne vient
-		<em>pas</em> du décret&nbsp;: c'est une convention de saisie propre à Joconde.
+		Ces usages sont documentés dans la
+		<a href="https://www.culture.gouv.fr/content/download/197593/file/methode.pdf?inLanguage=fre-FR" target="_blank" rel="noopener">méthode de rédaction informatisée</a>
+		publiée par le ministère de la Culture. Celle-ci indique qu'un point d'interrogation ou
+		des termes comme «&nbsp;attribué à&nbsp;», «&nbsp;atelier de&nbsp;» et
+		«&nbsp;école de&nbsp;» peuvent exprimer un doute sur l'auteur.
 	</p>
 	<p>
-		<strong>3. Notre regroupement.</strong> Ces formules, nous les rangeons en
-		<strong>huit familles</strong> et <strong>trois territoires</strong> —
-		«&nbsp;Presque lui&nbsp;», «&nbsp;Autour de lui&nbsp;», «&nbsp;Son style, sans
-		lui&nbsp;» —, de la plus proche à la plus lointaine du maître. C'est une
-		<strong>construction éditoriale</strong>, pas une catégorie officielle&nbsp;; son
-		détail est expliqué dans <a href="{base}/echelle">«&nbsp;Comprendre les mentions&nbsp;»</a>.
+		Plusieurs de ces expressions sont également définies par le
+		<a href="https://www.legifrance.gouv.fr/loda/id/LEGITEXT000006063458/" target="_blank" rel="noopener">décret du 3 mars 1981</a>
+		relatif aux transactions d'œuvres d'art. Ce décret ne régit pas la rédaction des
+		notices Joconde&nbsp;: il précise la portée de termes comme «&nbsp;attribué à&nbsp;»,
+		«&nbsp;atelier de&nbsp;», «&nbsp;école de&nbsp;» ou «&nbsp;manière de&nbsp;».
 	</p>
+
+	<h3 id="doute-classement" tabindex="-1">Le classement utilisé</h3>
 	<p>
-		<strong>Comment on les repère.</strong> La détection est lexicale&nbsp;: le
-		qualificatif noté entre parenthèses dans le champ auteur («&nbsp;LE BRUN Charles
-		(attribué)&nbsp;», «&nbsp;(école)&nbsp;», «&nbsp;(?)&nbsp;»). En lisant toute la
-		base, on trouve <strong>{nombre(n.doute_total)}</strong> notices porteuses d'au moins
-		une formulation prudente, soit {pct(n.taux_doute_avec_auteur)}&nbsp;% des notices où
-		un auteur est renseigné. Le repérage a été <strong>vérifié à la main</strong>&nbsp;:
-		un échantillon de 206 notices jugé une à une, le 4 juillet 2026 (vrai / faux /
-		incertain), pour mesurer les fausses détections puis reformuler le lexique.
+		Pour comparer les notices, le projet rassemble huit indications en trois groupes&nbsp;:
+		«&nbsp;Au plus près&nbsp;», «&nbsp;Autour du maître&nbsp;» et «&nbsp;Dans son
+		influence&nbsp;». Ce classement a été créé pour cette application. Il ne correspond ni
+		à une catégorie officielle de Joconde ni à une échelle juridique. Son détail est
+		expliqué dans <a href="{base}/projet">Le projet</a>.
+	</p>
+
+	<h3 id="doute-reperage" tabindex="-1">Comment les notices sont repérées</h3>
+	<p>
+		Pour établir le total national, le traitement recherche ces indications dans les champs
+		de Joconde consacrés à l'auteur et à son attribution. Pour construire les profils
+		d'artistes, il utilise uniquement le champ «&nbsp;Auteur&nbsp;», où le nom et la
+		réserve peuvent être reliés sans ambiguïté. Le repérage a été contrôlé sur 206 notices
+		afin d'écarter les cas où les mêmes mots avaient un autre sens.
+	</p>
+	<p class="note-methode">
+		Le terme «&nbsp;présumé&nbsp;» a également été retenu dans
+		{nombre(n.familles.presume.notices)} notices du total national. Cette forme très rare
+		ne fait pas partie des huit catégories utilisées pour comparer les artistes.
 	</p>
 </section>
 
-<!-- 3. Comment les notices ont-elles été comptées ? ------------------------- -->
+<!-- 3. Que comptons-nous, et comment ? ----------------------------------------
+     Section refondue le 2026-08-05, texte de l'utilisateur. Quatre sous-parties
+     ancrées, comme la section précédente. Le paragraphe sur le musée de Nice est
+     parti dans « Limites, sources et droits » : il ne répondait pas à la question
+     du comptage, il énonçait une limite de lecture. Ses chiffres n'ont pas bougé. -->
 <section id="comptage" tabindex="-1">
-	<h2>Comment les notices ont-elles été comptées&nbsp;?</h2>
+	<h2>Que comptons-nous, et comment&nbsp;?</h2>
+
+	<h3 id="comptage-unite" tabindex="-1">L’unité de calcul</h3>
 	<p>
-		<strong>Notices et «&nbsp;œuvres concernées&nbsp;».</strong> L'unité du calcul est la
-		<strong>notice Joconde</strong>. L'interface emploie parfois «&nbsp;œuvre
-		concernée&nbsp;» pour faciliter la lecture, mais une notice peut exceptionnellement
-		décrire un ensemble ou plusieurs éléments.
-	</p>
-	<p>
-		<strong>Deux façons de compter, à ne pas confondre.</strong> Dans les
-		<strong>comptages nationaux</strong>, une même notice peut porter plusieurs
-		mentions&nbsp;: les familles ne sont donc pas les tranches exclusives d'un tout — on
-		ne les additionne pas, et on n'utilise jamais de diagramme en anneau. Dans les
-		<strong>profils d'artistes</strong>, la règle est plus stricte&nbsp;: <strong>pour un
-		artiste donné, une référence Joconde est comptée une seule fois et rattachée à une
-		seule famille</strong>, selon une priorité documentée (le «&nbsp;?&nbsp;» l'emporte,
-		puis l'ordre des familles). Une même notice peut concerner deux artistes&nbsp;: elle
-		apparaît alors dans deux profils, <strong>sans être comptée deux fois</strong> dans
-		le total national.
+		Tous les chiffres sont calculés à partir des notices Joconde. Une notice correspond
+		généralement à une œuvre, mais elle peut aussi décrire un ensemble ou plusieurs
+		éléments. Dans l'interface, le mot «&nbsp;œuvre&nbsp;» est employé lorsqu'un objet est
+		présenté au lecteur&nbsp;; les calculs reposent toujours sur les références des
+		notices.
 	</p>
 
-	<SchemaComptageUnique />
+	<h3 id="comptage-mentions" tabindex="-1">Lorsqu’une notice contient plusieurs mentions</h3>
+	<p>
+		Une même notice peut contenir plusieurs indications pour un même artiste. Dans le
+		total national, elle ne compte qu'une seule fois. Dans la répartition nationale par
+		formulation, elle peut cependant apparaître dans plusieurs catégories&nbsp;: ces
+		résultats ne doivent donc pas être additionnés.
+	</p>
+	<p>
+		Dans le profil d'un artiste, chaque notice est classée une seule fois, sous une seule
+		mention. Lorsqu'un point d'interrogation est présent, c'est cette mention qui est
+		retenue&nbsp;; dans les autres cas, le classement suit un ordre défini à l'avance.
+	</p>
+	<p>
+		Une notice peut aussi citer deux artistes différents. Elle apparaît alors dans chacun
+		de leurs profils, mais ne compte toujours qu'une fois dans le total national.
+	</p>
 
+	<ExempleComptageUnique />
+
+	<h3 id="comptage-copies" tabindex="-1">Les copies sont comptées séparément</h3>
 	<p>
-		<strong>Les copies «&nbsp;d'après&nbsp;» sont comptées à part.</strong> Écrire
-		«&nbsp;d'après Rembrandt&nbsp;», c'est le plus souvent désigner une copie assumée
-		d'un modèle&nbsp;: ce n'est pas un doute sur l'auteur, mais un statut. Ces
-		{nombre(dApres)} notices «&nbsp;d'après&nbsp;» ({nombre(copiesTotal)} notices de
-		copies au total) restent donc hors du décompte du doute.
+		La mention «&nbsp;d'après&nbsp;» indique généralement qu'une œuvre reprend un modèle
+		connu. Dans ce projet, elle est donc classée parmi les copies et non parmi les
+		attributions incertaines. La base contient {nombre(copiesTotal)} notices classées
+		comme copies, dont {nombre(dApres)} portent la mention «&nbsp;d'après&nbsp;». Elles
+		restent consultables séparément, mais n'entrent pas dans le total du doute.
+	</p>
+
+	<h3 id="comptage-part" tabindex="-1">Comment la part affichée pour un artiste est calculée</h3>
+	<p>
+		La fiche d'un artiste compare deux ensembles&nbsp;: les notices qui lui attribuent
+		directement une œuvre et celles qui associent son nom à une réserve. Par exemple,
+		l'indication «&nbsp;9&nbsp;%&nbsp;» signifie que 9&nbsp;% des notices retenues pour cet
+		artiste comportent une incertitude sur l'attribution. Les copies
+		«&nbsp;d'après&nbsp;» ne sont pas incluses dans ce calcul.
 	</p>
 	<p>
-		<strong>Le «&nbsp;périmètre étudié&nbsp;» d'un artiste.</strong> Sur la fiche d'un
-		artiste, la part affichée (par exemple «&nbsp;9&nbsp;% des notices associées à son
-		nom&nbsp;») se rapporte à un <strong>total de référence</strong>&nbsp;: les notices
-		classées comme attribution directe ou comme formulation prudente. Les copies
-		«&nbsp;d'après&nbsp;» et les autres catégories exclues par le pipeline sont comptées
-		séparément et n'entrent pas dans ce dénominateur.
-	</p>
-	<p>
-		<strong>Un seul musée peut peser lourd.</strong> {nombre(n.monoculture_divulguee.doute)}
-		formulations prudentes — près d'un quart du total national — viennent d'un seul
-		établissement&nbsp;: {n.monoculture_divulguee.libelle}, dont les planches naturalistes
-		sont massivement notées «&nbsp;attribué à&nbsp;». Cela ne veut pas dire que ce musée
-		doute plus que les autres&nbsp;: c'est un effet de versement. Pour le neutraliser, on
-		donne aussi le total <strong>hors ce cas</strong>&nbsp;: {nombre(n.doute_hors_monoculture)}.
+		Ce pourcentage mesure la fréquence des réserves dans les notices associées à
+		l'artiste. Il ne mesure ni l'authenticité des œuvres ni le degré de certitude du
+		musée.
 	</p>
 </section>
 
 <!-- 4. Comment les artistes ont-ils été identifiés ? ------------------------ -->
 <section id="artistes" tabindex="-1">
 	<!-- Ancre visée par le lien « Pourquoi ces N artistes ? » de « Explorer les
-	     maîtres » : à conserver. Elle porte sur le TITRE et non sur le paragraphe
+	     artistes » : à conserver. Elle porte sur le TITRE et non sur le paragraphe
 	     qui suit — sinon le visiteur arrivait sous le titre, sans savoir à quelle
 	     question il répond. -->
-	<h2 id="les-maitres" tabindex="-1">Comment les artistes ont-ils été identifiés&nbsp;?</h2>
+	<h2 id="les-maitres" tabindex="-1">Comment la liste des artistes a-t-elle été établie&nbsp;?</h2>
+
+	<h3 id="artistes-seuil" tabindex="-1">Un seuil commun</h3>
 	<p>
-		Une partie du site se concentre sur <strong>{nombre(nbNoms)} noms</strong> de
-		référence. Le critère est explicite&nbsp;: un artiste connu <em>et</em> au moins dix
-		notices portant une formulation prudente (copies exclues), une fois le nom bien
-		isolé. Ce n'est <strong>pas un palmarès des plus grands</strong>&nbsp;: c'est un
-		seuil, choisi pour avoir assez de matière à montrer. Ces {nombre(nbNoms)} noms
-		réunissent {nombre(douteDansListe)} des {nombre(n.doute_total)} notices prudentes
-		relevées dans toute la base.
-	</p>
-	<p>
-		<strong>Cette liste n'est pas close, et elle se vérifie.</strong> Tous les noms qui
-		atteignent le seuil ont été relevés — ils sont {nombre(nbCandidats)}. Chacun reçoit un
-		état à mesure qu'il est examiné&nbsp;: retenu, écarté avec sa raison, ou
-		<em>encore à examiner</em>. Un nom encore à examiner n'est pas un nom rejeté&nbsp;:
-		c'est un nom dont la vérification n'a pas été faite. Aujourd'hui, {nombre(nbRetenus)}
-		formes d'écriture sont rattachées aux {nombre(nbNoms)} artistes retenus,
-		{nombre(nbEcartes)} sont écartées parce qu'il ne s'agit pas d'une personne — une
-		manufacture, une imprimerie, «&nbsp;anonyme&nbsp;», ou une mention qui ne porte aucun
-		nom d'auteur — et {nombre(nbAInstruire)} restent à examiner. La liste s'agrandira par
-		lots.
-	</p>
-	<p>
-		<strong>Séparer les personnes, pas seulement les mots.</strong> Rattacher une formule
-		au bon artiste demande de la prudence, car le nom est cherché dans un texte libre, et
-		un même nom peut cacher plusieurs personnes. Chaque artiste est défini nommément et
-		<strong>séparé de ses homonymes</strong> — sous «&nbsp;Michel-Ange&nbsp;», les musées
-		ont aussi rangé Corneille Michel-Ange, peintre lyonnais du XVII<sup>e</sup> siècle —
-		et de sa famille&nbsp;: le fils du Tintoret n'est pas le Tintoret. Ses
-		<strong>graphies multiples</strong> sont regroupées, et chaque référence n'est
-		<strong>comptée qu'une fois</strong>. Ces choix sont contrôlés sur des
-		<strong>références réelles</strong> (des cas-témoins versionnés) et protégés par des
-		<strong>tests de non-régression</strong>, pour qu'une correction n'en défasse pas une
-		autre.
+		Nous avons d'abord relevé les artistes dont le nom apparaît dans au moins dix notices
+		exprimant un doute sur l'attribution. Les différentes écritures d'un même nom sont
+		réunies et les copies «&nbsp;d'après&nbsp;» sont comptées séparément. Ce seuil ne
+		mesure ni la célébrité ni l'importance d'un artiste&nbsp;: il garantit simplement un
+		nombre suffisant de notices pour construire son profil.
 	</p>
 
-	<SchemaHomonymes />
+	<h3 id="artistes-identites" tabindex="-1">Une vérification des identités</h3>
+	<p>
+		Chaque nom est ensuite vérifié dans les notices. Un nom de famille isolé, une initiale
+		ou le nom d'une entreprise ne suffisent pas pour identifier une personne. Les homonymes
+		sont séparés et les variantes d'un même nom sont regroupées. Cette vérification évite,
+		par exemple, d'attribuer à Michel-Ange des notices qui concernent Corneille Michel-Ange
+		ou d'autres artistes portant le même prénom.
+	</p>
 
-	<details>
-		<summary>Les trois pièges corrigés en chemin</summary>
-		<p>
-			Les <strong>fausses correspondances par sous-chaîne</strong> (une œuvre de Serodine
-			ne doit pas être rattachée à Rodin) — réglées en n'acceptant que le mot entier&nbsp;;
-			les mentions de <strong>nationalité</strong> («&nbsp;école allemande&nbsp;»), qui ne
-			sont pas un doute sur un artiste et sont écartées&nbsp;; enfin le doute écrit
-			<strong>hors des parenthèses</strong>, qu'il fallait aussi savoir lire.
-		</p>
-	</details>
+	<h3 id="artistes-liste" tabindex="-1">Une liste encore en cours d’examen</h3>
+	<p>
+		Au total, {nombre(nbCandidats)} formes de noms atteignent le seuil. À ce jour,
+		{nombre(nbRetenus)} ont été rattachées à {nombre(nbNoms)} artistes.
+		{nombre(nbEcartes)} ont été retirées parce qu'elles ne permettaient pas d'identifier
+		précisément une personne,
+		{nbHorsPerimetre === 1
+			? 'une personne identifiable a été placée'
+			: `${nombre(nbHorsPerimetre)} personnes identifiables ont été placées`}
+		hors du périmètre de ce volet, et {nombre(nbAInstruire)} restent à examiner. Un nom qui
+		n'a pas encore été examiné n'est pas rejeté&nbsp;: la liste est complétée
+		progressivement.
+	</p>
+
+	<ExempleHomonymes />
+
+	<p class="note-methode">Chaque correction est vérifiée à partir de notices réelles.</p>
 </section>
 
-<!-- 5. Lire les chiffres et les vues ---------------------------------------- -->
-<section id="lire" tabindex="-1">
-	<h2>Lire les chiffres et les vues</h2>
-	<p>
-		<strong>Le graphique d'un artiste</strong> place chaque mention à sa
-		<strong>part</strong> (en&nbsp;%) parmi les œuvres concernées, regroupée dans les
-		trois territoires. On y compare la <em>forme</em> du doute, pas des volumes bruts&nbsp;;
-		le détail des familles est dans <a href="{base}/echelle">«&nbsp;Comprendre les mentions&nbsp;»</a>.
-	</p>
-	<p>
-		<strong>Le nombre de musées</strong> d'une fiche ne compte que ceux ayant publié
-		<strong>au moins une notice prudente</strong> pour l'artiste, non l'ensemble des
-		musées où il apparaît.
-	</p>
-	<p>
-		<strong>La carte</strong> montre où le doute se disperse autour d'un seul
-		nom&nbsp;: <strong>un point = un musée détenteur</strong>, jamais une comparaison
-		entre musées.
-	</p>
-	<p>
-		<strong>Les reproductions</strong> sont des illustrations&nbsp;: chacune porte sa
-		source et sa licence (voir plus bas), jamais une preuve d'attribution.
-	</p>
-</section>
-
-<!-- 6. Limites, sources et droits ------------------------------------------- -->
+<!-- 5. Limites et sources ------------------------------------------------------
+     Section resserrée le 2026-08-05, texte de l'utilisateur : quatre sous-parties
+     ancrées, plus de « droits » dans le titre — les licences se lisent dans la
+     dernière. Le fonds de Nice y prend sa rédaction définitive : le comptage est
+     exact, mais le fonds ne relève pas du sujet de ce volet. -->
 <section id="sources" tabindex="-1">
-	<h2>Limites, sources et droits</h2>
+	<h2>Limites et sources</h2>
+
+	<h3 id="sources-couverture" tabindex="-1">Ce que couvrent les chiffres</h3>
 	<p>
-		<strong>Les chiffres ne reflètent que ce qui a été versé dans Joconde.</strong> Les
-		versements sont volontaires et inégaux d'un musée à l'autre. Un musée absent des
-		résultats n'est pas un musée sans incertitudes&nbsp;: c'est peut-être un musée qui
-		n'a pas (encore) versé ses notices. C'est pourquoi le projet ne compare jamais deux
-		musées sur des comptages bruts.
+		<a href="https://www.data.gouv.fr/fr/datasets/collections-des-musees-de-france-base-joconde/" target="_blank" rel="noopener">Joconde</a>
+		est alimentée par les musées, de manière volontaire et inégale. Les chiffres du projet
+		décrivent uniquement les notices présentes dans la base à la date étudiée. L'absence
+		d'un musée ou d'une œuvre ne signifie donc pas qu'aucune attribution incertaine
+		n'existe à leur sujet. Pour cette raison, le projet ne compare pas les musées à partir
+		de leurs nombres de notices.
+	</p>
+	<!-- La graphie des titres est une limite de la DONNÉE, pas un choix d'affichage :
+	     elle a donc sa place ici, dans ce que couvrent les chiffres, et non dans une
+	     sous-section à elle. Décision et mesures : decisions.md, 2026-08-08 (nonies bis) —
+	     quatre titres en capitales sur cinq ne portent aucun accent. -->
+	<p>
+		Les titres des œuvres sont reproduits tels qu'ils apparaissent dans Joconde. Certains
+		sont entièrement saisis en capitales ou sans accents. Leur casse n'est pas corrigée
+		automatiquement, car une telle transformation pourrait altérer les noms propres, les
+		sigles ou les chiffres romains.
+	</p>
+
+	<h3 id="sources-fonds" tabindex="-1">Un fonds qui pèse lourd dans le total</h3>
+	<p>
+		Parmi les {nombre(n.doute_total)} notices repérées, {nombre(n.monoculture_divulguee.doute)}
+		proviennent du {museeMonoculture}. Elles décrivent des planches naturalistes de
+		Jean-Baptiste Barla, généralement accompagnées de la mention
+		«&nbsp;attribué à&nbsp;». Le comptage est exact, mais ce fonds ne concerne pas
+		l'attribution d'œuvres d'art étudiée dans ce premier volet. Le projet indique donc
+		également le total calculé sans ce fonds&nbsp;: {nombre(n.doute_hors_monoculture)}
+		notices.
+	</p>
+
+	<h3 id="sources-portee" tabindex="-1">Ce que le projet permet d’affirmer</h3>
+	<p>
+		Le projet montre quelles réserves les musées publient autour du nom d'un artiste,
+		comment ces formulations se répartissent et où les notices concernées sont conservées.
+		Il n'authentifie aucune œuvre, ne propose aucune nouvelle attribution et ne mesure ni
+		la valeur des œuvres ni la qualité des collections.
+	</p>
+
+	<h3 id="sources-images" tabindex="-1">Les données et les images</h3>
+	<p>
+		Les données proviennent de Joconde et sont diffusées sous
+		<a href="https://www.etalab.gouv.fr/licence-ouverte-open-licence/" target="_blank" rel="noopener">{prov.licence}</a>.
+		Les photographies présentes sur
+		<a href="https://pop.culture.gouv.fr/conditions-generales-utilisation" target="_blank" rel="noopener">POP</a>
+		ne sont pas réutilisées lorsqu'aucune autorisation explicite ne le permet.
 	</p>
 	<p>
-		Ce que l'application permet de <strong>constater</strong>&nbsp;: quelles œuvres les
-		musées entourent d'une réserve, sous quelles formules, et où elles sont conservées.
-		Ce qu'elle ne permet <strong>pas de conclure</strong>&nbsp;: elle n'authentifie
-		aucune œuvre, n'en réattribue aucune, et ne dit rien de la valeur d'une pièce ni de
-		la richesse d'une collection.
-	</p>
-	<p>
-		<strong>Portraits et reproductions.</strong> Les portraits des artistes et, lorsqu'elles
-		existent sous licence libre, les reproductions des œuvres viennent de Wikimedia
-		Commons. Ce sont des <em>illustrations</em>, jamais une donnée ni un comptage&nbsp;:
-		chaque image porte son auteur et sa licence, vérifiés fichier par fichier — le plus
-		souvent le domaine public, parfois une licence Creative Commons qui impose de citer
-		l'auteur. Une reproduction n'est retenue que si elle est rattachée <strong>avec
-		certitude</strong> à la notice par son identifiant Joconde. Les photographies des
-		fiches POP elles-mêmes ne sont <strong>pas</strong> reprises&nbsp;: leurs crédits ne
-		portent pas de licence de réutilisation ouverte. Chaque œuvre renvoie à sa notice
-		publique sur POP.
+		Les portraits et les reproductions affichés dans l'application proviennent
+		principalement de
+		<a href="https://commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia" target="_blank" rel="noopener">Wikimedia Commons</a>.
+		Chaque image est utilisée selon la licence indiquée sur sa page source et rapprochée
+		d'une notice Joconde à partir d'éléments concordants, comme le titre, le musée ou le
+		numéro d'inventaire. Sa source et son statut juridique sont indiqués dans l'interface.
 	</p>
 
 	<!-- Visuel nº 4 (palier 4) : capture RÉELLE de l'interface, recadrée sur une
@@ -402,7 +412,7 @@
 			src="{base}/methode/vignette-credit.png"
 			width="848"
 			height="576"
-			alt="Une œuvre dans l’application : la reproduction à gauche, avec sous l’image le crédit « After François Clouet », la licence CC BY-SA 3.0 et le lien vers Wikimedia Commons ; à droite la mention du musée, le titre, le lieu de conservation et la formule exacte de la notice."
+			alt="Œuvre affichée dans l’application : la reproduction à gauche, avec au-dessous le crédit « After François Clouet », la licence CC BY-SA 3.0 et le lien vers Wikimedia Commons ; à droite la mention du musée, le titre, le lieu de conservation et la formule exacte de la notice."
 		/>
 		<figcaption>
 			Une œuvre telle qu’elle apparaît dans l’application&nbsp;: sous la reproduction, le
@@ -423,23 +433,22 @@
 </section>
 	</div>
 </div>
-
-<!-- Retour en haut : n'apparaît qu'après un écran de défilement, jamais au-dessus
-     du texte (il se range dans la gouttière dès qu'il y a la place). -->
-<button
-	class="retour-haut"
-	class:visible={hautVisible}
-	inert={!hautVisible}
-	onclick={retourHaut}
->
-	<span aria-hidden="true">↑</span> <span class="libelle">Haut de page</span>
-</button>
 </div>
 
 <style>
-	/* Pleine page : gouttières propres (direction « affiche »). */
+	/* Enveloppe IDENTIQUE à « Présentation » et à « Explorer les artistes »
+	   (2026-08-05) : même largeur maximale, même centrage, mêmes gouttières, même
+	   retrait sous le bandeau. La page était restée sans limite : sur un écran de
+	   1920 px, sa colonne démarrait 224 px plus à gauche que celle de
+	   « Présentation ». Passer d'une page à l'autre ne doit rien déplacer. */
 	.page {
-		padding: var(--espace-5) clamp(1rem, 4vw, 3rem) var(--espace-6);
+		box-sizing: border-box;
+		width: 100%;
+		max-width: 92rem;
+		margin-inline: auto;
+		padding-inline: clamp(1.25rem, 3vw, 3rem);
+		padding-top: clamp(1.5rem, 3.5vw, 3.5rem);
+		padding-bottom: var(--espace-6);
 	}
 
 	.kicker {
@@ -452,6 +461,8 @@
 	}
 
 	.tete {
+		grid-column: 2;
+		grid-row: 1;
 		max-width: 52rem;
 	}
 
@@ -461,101 +472,95 @@
 		margin: 0;
 	}
 
+	/* Chapô : mêmes corps, interligne et largeur que l'ouverture de
+	   « Présentation » (.ouverture-texte). */
 	.chapo {
+		max-width: 46rem;
 		font-size: var(--taille-m);
-		line-height: 1.65;
-		margin: var(--espace-3) 0 0;
+		line-height: 1.6;
+		margin: var(--espace-4) 0 0;
 	}
 
-	/* Prudence : filet vermillon (accent d'alerte de la charte v2). */
+	/* Ligne de prudence : le traitement de « Présentation » — petit corps UI, gris,
+	   sans filet. Le filet vermillon en donnait ici un troisième (2026-08-05) : deux
+	   pages, deux styles pour la même phrase. */
 	.prudence {
+		max-width: 44rem;
 		margin: var(--espace-4) 0 0;
-		border-left: 2px solid var(--accent-vermillon);
-		padding-left: var(--espace-3);
-		font-style: italic;
-		font-size: var(--taille-s);
+		font-family: var(--police-ui);
+		font-size: var(--taille-xs);
+		line-height: 1.5;
 		color: var(--couleur-encre-douce);
 	}
 
-	/* Deux zones : rail de sommaire (collant sur ordinateur) + contenu. */
+	/* Deux zones : rail de sommaire (collant sur ordinateur) + contenu, le bandeau de
+	   titre en tête de la seconde. Le rail court sur les deux lignes — sa zone de
+	   grille descend jusqu'au bas du contenu, ce dont son `position: sticky` a besoin
+	   pour suivre la lecture. Le placement est explicite parce que l'ordre du
+	   document ne suit pas celui de la grille : le titre est écrit avant le
+	   sommaire. */
 	.grille {
 		display: grid;
-		grid-template-columns: 16rem 1fr;
+		grid-template-columns: 16rem minmax(0, 1fr);
 		gap: var(--espace-6);
-		margin-top: var(--espace-6);
 		align-items: start;
 	}
 
-	/* Sommaire : repères de lecture, pas un tableau de bord. Collant sur ordinateur. */
-	.sommaire {
-		position: sticky;
-		top: var(--espace-5);
+	/* Le rail lui-même (styles, état, retour en haut) vit dans SommaireAncres.svelte
+	   depuis le 2026-08-04. Cette page ne garde que la colonne qui l'accueille. */
+	.grille > :global(.sommaire) {
+		grid-column: 1;
+		grid-row: 1 / span 2;
 	}
 
-	.sommaire ol {
-		list-style: none;
-		margin: 0;
-		padding: 0;
-		font-family: var(--police-ui);
-		font-size: var(--taille-s);
-		border-left: var(--filet);
-	}
-
-	.sommaire li + li {
-		margin-top: var(--espace-2);
-	}
-
-	.sommaire a {
-		display: flex;
-		gap: 0.6rem;
-		align-items: baseline;
-		color: var(--couleur-encre-douce);
-		text-decoration: none;
-		padding-left: var(--espace-3);
-		margin-left: -1px;
-		border-left: 2px solid transparent;
-	}
-
-	.sommaire a:hover {
-		color: var(--couleur-encre);
-		border-left-color: var(--accent-cobalt);
-	}
-
-	/* Section en cours de lecture : le filet se remplit. Le repère est doublé par
-	   aria-current, pour ne pas dépendre de la seule couleur. */
-	.sommaire a.actif {
-		color: var(--couleur-encre);
-		border-left-color: var(--accent-cobalt);
-		font-weight: 600;
-	}
-
-	.sommaire .num {
-		font-variant-numeric: tabular-nums;
-		color: var(--couleur-encre-douce);
-	}
-
-	.sommaire a.actif .num {
-		color: var(--accent-cobalt);
-	}
-
+	/* Comme sur « Présentation », la colonne de contenu n'est PAS bornée à la largeur
+	   d'un paragraphe : ce sont les blocs qui se bornent eux-mêmes, chacun à la
+	   valeur qu'il a là-bas — 44 rem le texte courant, 72 rem les visuels. */
 	.contenu {
-		max-width: 46rem;
+		grid-column: 2;
+		grid-row: 2;
 		min-width: 0;
 	}
 
-	section {
-		margin-bottom: var(--espace-6);
+	section p,
+	section ul,
+	details {
+		max-width: 44rem;
 	}
 
-	section:last-child {
-		margin-bottom: 0;
+	/* Les blocs LARGES : les trois schémas et la capture d'écran. Ils étaient tenus à
+	   46 rem par la colonne ; ils prennent la même place que le graphique et le
+	   glossaire de « Présentation ». */
+	.contenu :global(.schema),
+	.capture {
+		max-width: 72rem;
+	}
+
+	/* Rythme vertical de « Présentation » : l'espace entre deux sections est posé
+	   par le haut, et les marges des titres et des paragraphes sont écrites — la
+	   page ne s'en remet plus aux valeurs par défaut du navigateur. */
+	section {
+		margin-top: var(--espace-6);
+	}
+
+	.contenu > section:first-child {
+		margin-top: 0;
+	}
+
+	h2 {
+		margin: 0 0 var(--espace-4);
+	}
+
+	section p {
+		margin: 0 0 var(--espace-4);
 	}
 
 	/* Décalage d'ancre : au saut, la cible ne colle pas au bord haut de la fenêtre.
 	   Vaut pour les sections du sommaire ET pour les titres visés de l'extérieur
-	   (#les-maitres, depuis « Explorer les maîtres »). */
+	   (#les-maitres, depuis « Explorer les artistes »). */
 	section,
-	section h2 {
+	section h2,
+	section h3 {
 		scroll-margin-top: var(--espace-5);
 	}
 
@@ -567,33 +572,66 @@
 	   la souris — mais reste visible au clavier, où il sert de repère. */
 	section:focus:not(:focus-visible),
 	section h2:focus:not(:focus-visible),
+	section h3:focus:not(:focus-visible),
 	h1:focus:not(:focus-visible) {
 		outline: none;
 	}
 
+	/* Sous-titres : l'échelle des h3 de « Présentation » (glossaire) — une seule
+	   échelle pour tout le site. */
 	.contenu h3 {
 		font-family: var(--police-ui);
-		font-size: var(--taille-s);
-		letter-spacing: 0.08em;
+		font-size: var(--taille-xs);
+		letter-spacing: 0.1em;
 		text-transform: uppercase;
 		color: var(--couleur-encre-douce);
-		margin: var(--espace-5) 0 0;
+		margin: var(--espace-5) 0 var(--espace-2);
+	}
+
+	/* Les cinq sous-parties de « Comment le doute s'écrit » sont des temps du récit,
+	   pas des intertitres de service : elles réclament la respiration d'une section,
+	   sinon la précédente semble se poursuivre. */
+	#doute h3 {
+		margin-top: var(--espace-6);
 	}
 
 	section p {
-		line-height: 1.7;
+		line-height: 1.65;
 	}
 
-	/* Liens de contenu : cobalt discret, jamais le poids d'un bouton. */
+	/* Note de méthode : une précision de second rang, pas un paragraphe du fil.
+	   Petit corps gris, comme la ligne de prudence de l'ouverture. */
+	.note-methode {
+		font-family: var(--police-ui);
+		font-size: var(--taille-xs);
+		line-height: 1.5;
+		color: var(--couleur-encre-douce);
+	}
+
+	/* Liens de contenu : cobalt discret, jamais le poids d'un bouton. Le bandeau de
+	   titre en porte un depuis le 2026-08-05 (Joconde, dans la ligne de prudence). */
+	/* Liens éditoriaux : cobalt ET soulignement permanent (2026-08-08, phase 3).
+	   Le cobalt seul ne suffisait pas à dire qu'un mot se clique : la même couleur
+	   met en valeur les nombres importants, qui ne sont pas des liens. La couleur
+	   reste, le trait la double — et l'information ne repose plus sur elle seule.
+	   Le soulignement est natif (`text-decoration`) et non un `border-bottom` :
+	   il ne déplace pas le texte quand il s'épaissit au survol, et il évite les
+	   jambages. */
+	.tete a,
 	.contenu a {
 		color: var(--accent-cobalt);
-		text-decoration: none;
-		border-bottom: 1px solid transparent;
+		text-decoration: underline;
+		text-decoration-color: rgba(53, 87, 138, 0.45);
+		text-decoration-thickness: 1px;
+		text-underline-offset: 0.18em;
 	}
 
+	.tete a:hover,
+	.tete a:focus-visible,
 	.contenu a:hover,
 	.contenu a:focus-visible {
-		border-bottom-color: var(--accent-cobalt);
+		text-decoration-color: var(--accent-cobalt);
+		text-decoration-thickness: 2px;
 	}
 
 	/* Détails repliables : sobres, registre UI. */
@@ -654,99 +692,21 @@
 		border-left: var(--filet);
 	}
 
-	/* Retour en haut : pastille discrète en bas de fenêtre, du registre UI.
-	   Absente tant qu'on n'a pas défilé d'au moins un écran. */
-	.retour-haut {
-		position: fixed;
-		right: clamp(1rem, 3vw, 2rem);
-		bottom: clamp(1rem, 3vw, 2rem);
-		display: inline-flex;
-		align-items: center;
-		gap: var(--espace-2);
-		padding: var(--espace-2) var(--espace-3);
-		background: var(--surface-carte);
-		color: var(--couleur-encre-douce);
-		border: var(--filet);
-		border-radius: var(--rayon-m);
-		box-shadow: var(--ombre-douce);
-		font-size: var(--taille-xs);
-		cursor: pointer;
-		opacity: 0;
-		visibility: hidden;
-		transform: translateY(0.4rem);
-		transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
-	}
-
-	.retour-haut.visible {
-		opacity: 1;
-		visibility: visible;
-		transform: none;
-	}
-
-	.retour-haut:hover {
-		color: var(--couleur-encre);
-		border-color: var(--couleur-encre-douce);
-	}
-
-	/* Le mouvement est un confort, pas une information : on le retire si le
-	   système demande de limiter les animations. */
-	@media (prefers-reduced-motion: reduce) {
-		.retour-haut {
-			transition: none;
-			transform: none;
-		}
-	}
-
-	@media print {
-		.sommaire,
-		.retour-haut {
-			display: none;
-		}
-	}
-
+	/* Le rail bascule en barre horizontale au même seuil : les deux media queries
+	   (ici et dans SommaireAncres.svelte) doivent rester sur 760 px. */
 	@media (max-width: 760px) {
 		.grille {
 			grid-template-columns: 1fr;
 			gap: var(--espace-4);
 		}
-		.sommaire {
-			position: static;
-		}
-		.sommaire ol {
-			display: flex;
-			flex-wrap: wrap;
-			gap: var(--espace-2) var(--espace-4);
-			border-left: none;
-		}
-		.sommaire li + li {
-			margin-top: 0;
-		}
-		.sommaire a {
-			padding-left: 0;
-			border-left: none;
-		}
-		/* Le filet de gauche disparaît en liste horizontale : le repère passe
-		   dessous, sinon la section en cours ne se distingue plus. */
-		.sommaire a.actif {
-			border-bottom: 2px solid var(--accent-cobalt);
-		}
 
-		/* Sur petit écran, le bouton se réduit à sa flèche pour couvrir le moins de
-		   texte possible. Le libellé reste dans le document (nom accessible du
-		   bouton), seulement retiré de la vue. */
-		.retour-haut {
-			padding: var(--espace-2);
-			border-radius: 50%;
-			line-height: 1;
-		}
-
-		.retour-haut .libelle {
-			position: absolute;
-			width: 1px;
-			height: 1px;
-			overflow: hidden;
-			clip-path: inset(50%);
-			white-space: nowrap;
+		/* Une seule colonne : les trois blocs reprennent l'ordre du document —
+		   titre, barre de liens, contenu. */
+		.grille > :global(.sommaire),
+		.tete,
+		.contenu {
+			grid-column: auto;
+			grid-row: auto;
 		}
 	}
 

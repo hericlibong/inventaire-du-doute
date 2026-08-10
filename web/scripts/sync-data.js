@@ -16,7 +16,16 @@ const cible = join(ici, '..', 'static', 'data');
 await mkdir(cible, { recursive: true });
 
 // JSON à plat (artistes.json, musees.json…).
-const fichiers = (await readdir(source)).filter((f) => f.endsWith('.json'));
+// `revisions.json` alimentait la rubrique « Avant / après », retirée de la
+// production le 2026-08-09 (F5) : elle appartient à un volet ultérieur. L'export
+// reste produit et versionné dans data/exports/web/ ; il n'est simplement plus
+// servi par le site, sans quoi la donnée d'une page non publiée resterait
+// accessible en ligne.
+const HORS_PRODUCTION = new Set(['revisions.json']);
+
+const fichiers = (await readdir(source)).filter(
+	(f) => f.endsWith('.json') && !HORS_PRODUCTION.has(f)
+);
 for (const fichier of fichiers) {
 	await cp(join(source, fichier), join(cible, fichier));
 	console.log(`synchronisé : ${fichier}`);

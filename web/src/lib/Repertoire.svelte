@@ -51,38 +51,94 @@
 		selection = nom;
 		if (estMobile) ouvert = false; // referme après le choix, découvre le profil
 	}
+
+	// --- Navigation clavier de la liste (A1, 2026-08-08) -----------------------
+	// La liste compte 102 artistes : chacun étant un bouton, Tab s'y arrêtait 102
+	// fois avant d'atteindre le reste de la page. C'est le motif du « tabindex
+	// tournant » : un seul bouton est atteignable par Tab — celui de l'artiste
+	// sélectionné, ou le premier de la liste si la sélection est filtrée —, et les
+	// FLÈCHES circulent à l'intérieur.
+	//
+	// Les flèches déplacent le focus SANS choisir : sur une liste de 102 noms, une
+	// sélection à chaque flèche rechargerait une fiche à chaque touche. C'est Entrée
+	// ou Espace qui choisit — et comme ce sont de vrais <button>, le navigateur s'en
+	// charge déjà : rien à ajouter pour cela.
+	let listeEl = $state(null);
+
+	// L'index atteignable par Tab. La sélection le fixe ; s'il sort de la liste
+	// filtrée, on retombe sur le premier — sinon la recherche laisserait un
+	// répertoire sans porte d'entrée.
+	const indexTab = $derived.by(() => {
+		const i = liste.findIndex((a) => a.nom === selection);
+		return i >= 0 ? i : 0;
+	});
+
+	const boutons = () => [...(listeEl?.querySelectorAll('.maitre') ?? [])];
+
+	function versIndex(i) {
+		const b = boutons();
+		if (!b.length) return;
+		const cible = b[Math.max(0, Math.min(b.length - 1, i))];
+		cible?.focus();
+		// La liste défile (max-height + overflow) : le focus clavier doit rester
+		// visible, sans faire sauter la page autour.
+		cible?.scrollIntoView({ block: 'nearest' });
+	}
+
+	function auClavierListe(event) {
+		const i = boutons().indexOf(document.activeElement);
+		if (i < 0) return;
+		const n = boutons().length;
+		let cible = null;
+		if (event.key === 'ArrowDown') cible = (i + 1) % n;
+		else if (event.key === 'ArrowUp') cible = (i - 1 + n) % n;
+		else if (event.key === 'Home') cible = 0;
+		else if (event.key === 'End') cible = n - 1;
+		if (cible === null) return;
+		event.preventDefault();
+		versIndex(cible);
+	}
 </script>
 
-<nav class="repertoire" aria-label="Répertoire des maîtres">
+<nav class="repertoire" aria-label="Répertoire des artistes">
 	{#if estMobile}
 		<button class="replier" aria-expanded={ouvert} onclick={() => (ouvert = !ouvert)}>
-			<span class="replier-titre">{ouvert ? 'Masquer la liste' : 'Choisir un maître'}</span>
-			<span class="replier-compte">{artistes.length} maîtres</span>
+			<span class="replier-titre">{ouvert ? 'Masquer la liste' : 'Choisir un artiste'}</span>
+			<span class="replier-compte">{artistes.length} artistes</span>
 		</button>
 	{/if}
 
 	{#if ouvert}
 		<div class="panneau">
+			<!-- Effectif du répertoire. Sur mobile il est porté par le bouton de repli
+			     ci-dessus ; sur ordinateur ce bouton n'existe pas, et depuis le retrait
+			     de l'introduction (phase 5) plus rien ne disait combien la liste compte
+			     de noms — on en voyait dix dans une colonne qui défile (C7, 2026-08-03).
+			     La valeur vient des données, jamais d'un nombre écrit à la main. -->
+			{#if !estMobile}
+				<p class="compte-total">{artistes.length} artistes</p>
+			{/if}
+
 			<div class="controles">
 				<label class="recherche">
-					<span class="visuellement-cache">Filtrer les maîtres par nom</span>
+					<span class="visuellement-cache">Filtrer les artistes par nom</span>
 					<input type="search" placeholder="Filtrer un nom…" bind:value={recherche} />
 				</label>
 				<div class="tri" role="group" aria-label="Trier la liste">
-					<span class="tri-label">Trier&nbsp;:</span>
+					<span class="tri-label">Trier par&nbsp;:</span>
 					<button
 						class:actif={tri === 'nombre'}
 						aria-pressed={tri === 'nombre'}
 						onclick={() => (tri = 'nombre')}
 					>
-						Œuvres
+						Nombre d’œuvres
 					</button>
 					<button
 						class:actif={tri === 'alpha'}
 						aria-pressed={tri === 'alpha'}
 						onclick={() => (tri = 'alpha')}
 					>
-						A→Z
+						A–Z
 					</button>
 				</div>
 			</div>
@@ -93,8 +149,18 @@
 				<span>Artiste</span><span>Œuvres concernées</span>
 			</p>
 
-			<ul class="maitres">
-				{#each liste as a (a.nom)}
+			<!-- Un seul bouton dans l'ordre de tabulation, les flèches pour le reste :
+			     voir `auClavierListe`. L'écoute est posée sur la liste, pas sur chaque
+			     bouton — 102 écouteurs pour un comportement commun n'apprendraient
+			     rien à personne. -->
+			<!-- Les éléments interactifs sont les <button> enfants ; l'écoute vit sur la
+			     liste par DÉLÉGATION (102 écouteurs identiques n'apprendraient rien à
+			     personne). Le gestionnaire ne fait rien tant que le focus n'est pas sur
+			     l'un d'eux. Le compilateur signale un écouteur sur un élément non
+			     interactif : c'est exact, et c'est voulu. -->
+			<!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
+			<ul class="maitres" bind:this={listeEl} onkeydown={auClavierListe}>
+				{#each liste as a, i (a.nom)}
 					<!-- La jauge (microprofil coloré) vit HORS du bouton : ses segments sont
 					     focusables (infobulle au survol/focus), or un élément interactif ne
 					     peut pas être imbriqué dans un <button> (2026-07-12). -->
@@ -102,15 +168,16 @@
 						<button
 							class="maitre"
 							aria-current={a.nom === selection ? 'true' : undefined}
+							tabindex={i === indexTab ? 0 : -1}
 							onclick={() => choisir(a.nom)}
 						>
 							<span class="nom">{a.nom}</span>
 							<span class="compte">{nombre(a.doute)}</span>
 						</button>
-						<BarreFamilles familles={a.familles} total={a.doute} nom={a.nom} hauteur="0.35rem" />
+						<BarreFamilles familles={a.familles} total={a.doute} />
 					</li>
 				{:else}
-					<li class="vide">Aucun maître ne correspond.</li>
+					<li class="vide">Aucun artiste ne correspond.</li>
 				{/each}
 			</ul>
 		</div>
@@ -140,6 +207,17 @@
 	.replier-titre {
 		font-weight: 600;
 		color: var(--couleur-encre);
+	}
+
+	/* Effectif du répertoire (ordinateur) : registre UI, discret, au-dessus de la
+	   recherche — il décrit la liste entière, pas le résultat d'un filtre. */
+	.compte-total {
+		margin: 0 0 var(--espace-3);
+		font-family: var(--police-ui);
+		font-size: var(--taille-xs);
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		color: var(--couleur-encre-douce);
 	}
 
 	.replier-compte {
@@ -254,8 +332,8 @@
 		overflow-y: auto;
 	}
 
-	/* La ligne porte l'état (sélection, survol) ; le bouton ne couvre que nom +
-	   compte, la jauge est sa sœur (segments focusables, interdits dans un <button>). */
+	/* La ligne porte l'état (sélection, survol) ; le bouton couvre nom + compte, et
+	   le ruban de composition est posé dessous. */
 	.rang {
 		border-bottom: var(--filet);
 		/* filet d'accent à gauche, transparent au repos : réservé à la sélection,
@@ -293,8 +371,11 @@
 		outline-offset: 2px;
 	}
 
-	.rang :global(.barre) {
-		margin-top: 0.35rem;
+	/* Le ruban est COURT et calé à gauche : il ne rejoint pas le nombre, à droite.
+	   C'est cette distance qui l'empêche d'être lu comme une jauge de quantité —
+	   voir BarreFamilles.svelte. */
+	.rang :global(.ruban) {
+		margin-top: 0.4rem;
 	}
 
 	.maitre .nom {

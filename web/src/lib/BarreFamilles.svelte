@@ -1,119 +1,79 @@
 <script>
 	import { FAMILLE_PUBLIC, ORDRE_FAMILLES } from '$lib/familles-public.js';
-	import { nombre } from '$lib/joconde.js';
-	import Infobulle from '$lib/Infobulle.svelte';
 
-	// Mini-jauge par mention : un résumé DIRECT du graphique — mêmes mentions,
-	// mêmes couleurs (var(--forme-*)), même ordre que l'axe, proportions réelles.
-	// Remplace la jauge par niveaux le 2026-07-11 (decisions.md). Les mentions
-	// absentes ne sont pas affichées ; un segment minuscule reste un simple trait,
-	// sans fausser les proportions.
+	// Profil des mentions d'un artiste, dans le répertoire : un ruban COURT, à
+	// longueur fixe, qui montre la COMPOSITION et rien d'autre.
 	//
-	// Tooltip : un SEUL récapitulatif du maître (décision 2026-07-13), header = nom,
-	// puis une ligne par mention (pastille + nombre + %). Toute la barre est une
-	// seule cible survolable/focusable — les segments, sous-pixels, sont trop fins à
-	// viser un par un. La grammaire des couleurs vit dans la légende fixe.
-	// familles : [{ code, notices }] ; total : le doute ; nom : le maître (aria).
-	let { familles, total, nom, hauteur = '0.35rem' } = $props();
+	// Ce qu'il était jusqu'au 2026-08-08 : une bande occupant toute la largeur de
+	// la colonne. Elle disait déjà la composition — 100 % de l'artiste affiché —,
+	// mais posée juste sous le nombre et remplissant la ligne, elle se lisait comme
+	// une jauge de quantité. Charles Le Brun (310 œuvres) et Michel-Ange (148) y
+	// avaient exactement la même longueur, ce qui laissait croire à des effectifs
+	// équivalents. La quantité est portée par le NOMBRE et par l'ordre du tri ;
+	// ce ruban ne porte que le profil.
+	//
+	// Trois choix de forme découlent de là (decisions.md, 2026-08-08 ter) :
+	//   · une longueur fixe et COURTE — moins d'un tiers de la ligne : un ruban qui
+	//     ne remplit rien ne se lit pas comme un remplissage ;
+	//   · des segments DÉTACHÉS par un blanc : une barre de progression est
+	//     continue, celle-ci ne l'est pas ;
+	//   · aucune interaction. La jauge portait une infobulle qui recouvrait la
+	//     liste pendant qu'on cherchait un nom, et qui répétait le graphique du
+	//     profil. Elle est supprimée : le répertoire est un outil de sélection.
+	//
+	// Le ruban est donc DÉCORATIF (aria-hidden) : il n'ajoute rien qu'un lecteur
+	// d'écran ne trouve déjà dans le nom, le nombre et la fiche de l'artiste — et
+	// il ne crée plus d'arrêt de tabulation.
+	//
+	// familles : [{ code, notices }] ; total : le nombre d'œuvres concernées.
+	let { familles, total, largeur = 96, hauteur = 7, ecart = 1.5, plancher = 3 } = $props();
 
 	const rang = (code) => ORDRE_FAMILLES.indexOf(code);
-	// Pourcentage en français, une décimale au plus : « 77,4 % », « 5,2 % ».
-	const pourcentFr = (v) => `${v.toLocaleString('fr-FR', { maximumFractionDigits: 1 })} %`;
 
-	const segments = $derived(
-		[...familles]
+	// Largeurs en pixels, avec un PLANCHER de visibilité.
+	//
+	// Écart assumé, et déclaré : une mention présente doit se voir. Le « nom (?) »
+	// de Charles Le Brun pèse 0,6 % — 0,6 pixel sur ce ruban, c'est-à-dire rien.
+	// Les segments sous le plancher sont donc portés à `plancher` px, et ce qui est
+	// ajouté est repris sur les segments majoritaires, au prorata. La hiérarchie
+	// entre mentions n'en est jamais modifiée : seules les parts déjà infimes sont
+	// arrondies vers le haut.
+	const segments = $derived.by(() => {
+		const parts = [...familles]
 			.sort((a, b) => rang(a.code) - rang(b.code))
 			.map((f) => ({
 				code: f.code,
-				label: FAMILLE_PUBLIC[f.code].header,
-				pourcent: total ? (f.notices / total) * 100 : 0,
 				couleur: FAMILLE_PUBLIC[f.code].couleur,
-				notices: f.notices
-			}))
-	);
+				brut: total ? (f.notices / total) * (largeur - ecart * (familles.length - 1)) : 0
+			}));
 
-	// Un seul tooltip pour toute la jauge : header = maître, lignes = mentions.
-	const tt = $derived({
-		header: nom,
-		lignes: segments.map((s) => ({
-			label: s.label,
-			couleur: s.couleur,
-			valeur: nombre(s.notices),
-			appoint: pourcentFr(s.pourcent)
-		}))
+		const manque = parts.reduce((s, p) => s + Math.max(0, plancher - p.brut), 0);
+		const majoritaires = parts.reduce((s, p) => s + (p.brut > plancher ? p.brut : 0), 0) || 1;
+
+		return parts.map((p) => ({
+			code: p.code,
+			couleur: p.couleur,
+			large: p.brut < plancher ? plancher : p.brut - manque * (p.brut / majoritaires)
+		}));
 	});
-
-	// Repli accessible (aria) : le récapitulatif en une phrase, sans jargon.
-	const aria = $derived(
-		`Autour de ${nom} : ` +
-			segments.map((s) => `${s.label}, ${nombre(s.notices)} (${pourcentFr(s.pourcent)})`).join(' ; ') +
-			'.'
-	);
-
-	// Infobulle en position FIXE (coordonnées fenêtre) : la liste des maîtres
-	// défile (overflow), un panneau positionné en absolu y serait rogné.
-	let actif = $state(null);
-
-	function montre(event) {
-		const cible = event.currentTarget.getBoundingClientRect();
-		actif = { x: cible.left + cible.width / 2, y: cible.top };
-	}
-
-	function cache() {
-		actif = null;
-	}
 </script>
 
-<div
-	class="barre"
-	style="height: {hauteur}"
-	role="button"
-	tabindex="0"
-	aria-label={aria}
-	onmouseenter={montre}
-	onmouseleave={cache}
-	onfocus={montre}
-	onblur={cache}
->
+<div class="ruban" style="height: {hauteur}px; gap: {ecart}px" aria-hidden="true">
 	{#each segments as s (s.code)}
-		<span class="segment" style="width: {s.pourcent}%; background: {s.couleur}" aria-hidden="true"></span>
+		<span class="segment" style="width: {s.large}px; background: {s.couleur}"></span>
 	{/each}
 </div>
 
-{#if actif}
-	<Infobulle {tt} x={actif.x} y={actif.y} fixe={true} />
-{/if}
-
 <style>
-	.barre {
+	.ruban {
 		display: flex;
-		/* filet séparateur : 1 px de fond entre segments, pour détacher les
-		   couleurs voisines (rouge/corail, violet/prune) sans fausser les parts */
-		gap: 1px;
-		width: 100%;
-		border-radius: 2px;
-		position: relative;
-		cursor: default;
-	}
-
-	/* Zone de survol/focus ÉLARGIE verticalement (invisible) : la barre fait ~5 px
-	   de haut, inatteignable sans cela. */
-	.barre::after {
-		content: '';
-		position: absolute;
-		top: -0.45rem;
-		bottom: -0.45rem;
-		left: 0;
-		right: 0;
-	}
-
-	.barre:focus-visible {
-		outline: 2px solid var(--couleur-encre);
-		outline-offset: 2px;
+		width: max-content;
+		max-width: 100%;
 	}
 
 	.segment {
 		display: block;
 		height: 100%;
+		border-radius: 1px;
 	}
 </style>

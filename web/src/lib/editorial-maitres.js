@@ -74,7 +74,8 @@
 // leurs données, Michel-Ange disait « deux fois plus » pour un rapport devenu
 // proche de trois. Dès qu'une phrase NOMME une mention, elle doit la chercher
 // par son code avec `notices('ecole_de')`, jamais par son rang.
-// Depuis le 2026-07-22, les 63 maîtres ont leur en-tête écrit : l'en-tête généré
+// Les 63 premiers artistes ont leur en-tête écrit ; les 39 du lot du
+// 2026-08-02 n'en ont pas encore, l'en-tête généré
 // ne sert plus que de filet pour un maître qu'on ajouterait sans l'écrire.
 
 // Espace insécable : les guillemets français et le point-virgule ne doivent pas
@@ -621,6 +622,179 @@ export const EDITORIAL = {
 			sousTitre: ({ total, notices }) =>
 				`${notices('ecole_de')} des ${total} œuvres concernées sont dites «${NB}de son école${NB}», ${notices('atelier_de')} renvoient à son atelier${NB}; son nom seul n’est presque jamais avancé.`
 		}
+	},
+
+	// =========================================================================
+	// LOT 2 (2026-08-06) — les 39 artistes entrés au volume le 2026-08-02.
+	//
+	// Ils ne ressemblent pas aux 63 premiers : ce ne sont pas des maîtres
+	// anciens mais, pour la plupart, des figures locales du XIXe siècle —
+	// l'imagerie d'Épinal (Pinot, Georgin, Morinet, Ensfelder, Hennault), la
+	// manufacture de Sèvres (Leloy, Willermet), les sculpteurs d'Amiens (les
+	// frères Duthoit), le cercle de Rodin (Beuret, Roche), celui de Victor Hugo
+	// (Charles Hugo, Vacquerie). Beaucoup n'ont pas de notice d'autorité.
+	//
+	// MÉTHODE (docs/decisions.md, 2026-08-06) — trois sources, dans cet ordre :
+	//   1. JOCONDE ELLE-MÊME. Les musées écrivent les dates et le métier dans le
+	//      champ auteur : « Hussenot Joseph (1827-1896) (dessinateur) ». C'est la
+	//      source la plus proche du corpus, et le seul arbitre valable face aux
+	//      homonymes. Dates pour 31 des 39, fonction pour 26.
+	//   2. Une notice d'autorité (Wikidata, BnF, INHA, Louvre-arts graphiques,
+	//      ministère de la Culture) — retenue SEULEMENT si ses dates concordent
+	//      avec celles des musées.
+	//   3. Rien. Quand ni l'une ni l'autre ne dit, on n'écrit pas.
+	//
+	// L'ACTIVITÉ ANNONCÉE REND COMPTE DU CORPUS, pas de la notoriété. Auguste
+	// Vacquerie est connu comme écrivain, mais ses 366 notices sont des
+	// photographies : la ligne dit d'abord photographe. Même règle pour Charles
+	// Hugo. C'est ce que le lecteur a sous les yeux qui commande.
+	//
+	// DEUX EXTENSIONS DU GABARIT, arrêtées le 2026-08-06 :
+	//   • « actif entre X et Y » quand aucune date de vie n'est attestée. Un seul
+	//     cas, Henry Hennault, dont Joconde et le musée de l'Image ne connaissent
+	//     que les années de collaboration avec Pellerin.
+	//   • « après Y » quand la mort n'est pas datée (Willermet, d'après le
+	//     ministère de la Culture : « 1783-après 1848 »).
+	//
+	// DIVERGENCES DE DATES relevées et tranchées en faveur des musées, sauf
+	// mention : Aimé Duthoit (Joconde 1803, Wikidata 1805), Frans Hogenberg
+	// (Joconde 1592, Wikidata 1590 — retenu 1590, plus courant), Colijn de Coter
+	// et Antonio del Pollaiuolo (écarts de quelques années, d'où le « vers »).
+	// Détail dans docs/donnees.md.
+	//
+	// UN HOMONYME ÉVITÉ, à ne pas rouvrir : « Charles du Ry ». La recherche
+	// propose Q1066622, architecte à Kassel (1692-1757). Ce n'est pas lui : le
+	// Louvre, seul conservateur de ces 33 dessins, donne « vers 1568-1655,
+	// école française, architecte des Bâtiments du roi en 1636 » — le
+	// bisaïeul. Même famille, même métier, un siècle d'écart.
+	// =========================================================================
+
+	'Alexandre Clausel': {
+		bio: 'Photographe français du XIXe siècle, 1802–1884.'
+	},
+	'Charles Normand': { nomCivil: 'Charles Pierre Joseph Normand',
+		bio: 'Dessinateur et graveur français des XVIIIe et XIXe siècles, 1765–1840.'
+	},
+	'Léon Tirode': {
+		bio: 'Peintre français des XIXe et XXe siècles, 1873–1956.'
+	},
+	'Louis Morinet': {
+		bio: 'Dessinateur français des XIXe et XXe siècles, 1863–1926.'
+	},
+	'Giacinto Calandrucci': {
+		bio: 'Peintre et dessinateur italien du XVIIe siècle, 1646–1707.'
+	},
+	'Georges Ferdinand Bigot': {
+		bio: 'Dessinateur et graveur français des XIXe et XXe siècles, 1860–1927.'
+	},
+	'Léon Fort': {
+		bio: 'Peintre et dessinateur français du XXe siècle, 1870–1965.'
+	},
+	'Louis Duthoit': {
+		bio: 'Sculpteur et dessinateur français du XIXe siècle, 1807–1874.'
+	},
+	'Aimé Duthoit': {
+		bio: 'Sculpteur et dessinateur français du XIXe siècle, 1803–1869.'
+	},
+	'Charles François Pinot': {
+		bio: 'Dessinateur et imprimeur français du XIXe siècle, 1817–1874.'
+	},
+	'André Marie Florentin Giraud': {
+		bio: 'Dessinateur français du XIXe siècle, 1781–1864.'
+	},
+	'Auguste Vacquerie': {
+		bio: 'Photographe et écrivain français du XIXe siècle, 1819–1895.'
+	},
+	'Charles Eugène Ensfelder': {
+		bio: 'Dessinateur français du XIXe siècle, 1836–1876.'
+	},
+	'François Georgin': {
+		bio: 'Graveur français du XIXe siècle, 1801–1863.'
+	},
+	'Louis Verjat': {
+		bio: 'Photographe français des XIXe et XXe siècles, 1857–1933.'
+	},
+	// Nationalité laissée de côté à dessein : Wikidata le dit « artiste
+	// britannique » dans sa description et français par sa citoyenneté. Tant que
+	// la contradiction n'est pas levée, la ligne ne tranche pas.
+	'Peter Hawke': {
+		bio: 'Dessinateur et lithographe du XIXe siècle, 1801–1887.'
+	},
+	'Auguste Alleaume': {
+		bio: 'Peintre verrier et dessinateur français des XIXe et XXe siècles, 1854–1940.'
+	},
+	'Antoine Gabriel Willermet': {
+		bio: 'Peintre et dessinateur français du XIXe siècle, 1783 – après 1848.'
+	},
+	// Pas de nomCivil : « Turpin de Crissé (Lancelot Théodore Turpin de Crissé) »
+	// répète le nom au lieu d'y faire pont. Le champ ne sert qu'aux artistes
+	// connus sous un surnom que Joconde n'écrit jamais.
+	'Turpin de Crissé': {
+		bio: 'Peintre et dessinateur français du XIXe siècle, 1782–1859.'
+	},
+	'Charles Hugo': {
+		bio: 'Photographe et journaliste français du XIXe siècle, 1826–1871.'
+	},
+	'Gustave Lancelot': {
+		bio: 'Photographe et dessinateur français du XIXe siècle, 1830–1906.'
+	},
+	'Charles du Ry': {
+		bio: 'Architecte et dessinateur français du XVIIe siècle, vers 1568–1655.'
+	},
+	'Odilon Roche': {
+		bio: 'Dessinateur français du XXe siècle, 1868–1947.'
+	},
+	'Frans Hogenberg': {
+		bio: 'Graveur flamand du XVIe siècle, 1535–1590.'
+	},
+	'Nicolaus Hoffmann': {
+		bio: 'Dessinateur allemand des XVIIIe et XIXe siècles, 1740–1823.'
+	},
+	'Nicasius Bernaerts': {
+		bio: 'Peintre flamand du XVIIe siècle, 1620–1678.'
+	},
+	// Apostrophe DROITE : la clé doit reprendre le nom du corpus au signe près
+	// (artistes.json), sinon la fiche perd sa ligne sans rien signaler.
+	"Crispin de Passe l'Ancien": {
+		bio: 'Graveur néerlandais des XVIe et XVIIe siècles, 1564–1637.'
+	},
+	'Crispin de Passe le Jeune': {
+		bio: 'Graveur néerlandais du XVIIe siècle, 1593–1670.'
+	},
+	'Amable Louis Crapelet': {
+		bio: 'Peintre et dessinateur français du XIXe siècle, 1822–1867.'
+	},
+	'Auguste Beuret': {
+		bio: 'Dessinateur français des XIXe et XXe siècles, 1866–1934.'
+	},
+	'Jean-Charles François Leloy': {
+		bio: 'Dessinateur d’ornements français du XIXe siècle, 1774–1846.'
+	},
+	'Joseph Hussenot': {
+		bio: 'Dessinateur français du XIXe siècle, 1827–1896.'
+	},
+	'Colijn de Coter': {
+		bio: 'Peintre flamand des XVe et XVIe siècles, vers 1455 – vers 1539.'
+	},
+	'Antonio del Pollaiuolo': {
+		bio: 'Peintre et sculpteur italien du XVe siècle, vers 1433–1498.'
+	},
+	// Aucune date de vie attestée : ni Joconde, ni le musée de l'Image, ni
+	// Gallica ne connaissent autre chose que ses années chez Pellerin.
+	'Henry Hennault': {
+		bio: 'Dessinateur français, actif entre 1891 et 1901.'
+	},
+	'Israël Henriet': {
+		bio: 'Graveur et éditeur français du XVIIe siècle, 1590–1661.'
+	},
+	'René Ackermann': {
+		bio: 'Imprimeur et lithographe français du XIXe siècle, 1853–1913.'
+	},
+	'Louis Hertig': {
+		bio: 'Sculpteur français du XXe siècle, 1880–1958.'
+	},
+	'Jacques-Louis David': {
+		bio: 'Peintre français des XVIIIe et XIXe siècles, 1748–1825.'
 	}
 };
 

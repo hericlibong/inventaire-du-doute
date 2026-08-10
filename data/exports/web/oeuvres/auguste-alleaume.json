@@ -1,0 +1,368 @@
+{
+ "slug": "auguste-alleaume",
+ "nom": "Auguste Alleaume",
+ "doute": 39,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 39
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "00000073155",
+   "titre": "APPARITION DE LA VIERGE",
+   "musee_code": "M0766",
+   "musee": "musée du Vieux-Château",
+   "ville": "Laval",
+   "code": "attribue",
+   "extrait": "ALLEAUME Auguste (attribué)"
+  },
+  {
+   "reference": "00000073211",
+   "titre": "SAINTE GERMAINE",
+   "musee_code": "M0766",
+   "musee": "musée du Vieux-Château",
+   "ville": "Laval",
+   "code": "attribue",
+   "extrait": "ALLEAUME Auguste (attribué)"
+  },
+  {
+   "reference": "00000073145",
+   "titre": "PORTRAIT DE SAINTE",
+   "musee_code": "M0766",
+   "musee": "musée du Vieux-Château",
+   "ville": "Laval",
+   "code": "attribue",
+   "extrait": "ALLEAUME Auguste (attribué)"
+  },
+  {
+   "reference": "00000073127",
+   "titre": "VITRAIL DE SAINT JEAN",
+   "musee_code": "M0766",
+   "musee": "musée du Vieux-Château",
+   "ville": "Laval",
+   "code": "attribue",
+   "extrait": "ALLEAUME Auguste (attribué)"
+  },
+  {
+   "reference": "00000073138",
+   "titre": "SAINTE CLAIRE",
+   "musee_code": "M0766",
+   "musee": "musée du Vieux-Château",
+   "ville": "Laval",
+   "code": "attribue",
+   "extrait": "ALLEAUME Auguste (attribué)"
+  },
+  {
+   "reference": "00000073156",
+   "titre": "JEANNE AU BUCHER",
+   "musee_code": "M0766",
+   "musee": "musée du Vieux-Château",
+   "ville": "Laval",
+   "code": "attribue",
+   "extrait": "ALLEAUME Auguste (attribué)"
+  },
+  {
+   "reference": "00000073134",
+   "titre": "SAINTE ELISABETH DE HONGRIE",
+   "musee_code": "M0766",
+   "musee": "musée du Vieux-Château",
+   "ville": "Laval",
+   "code": "attribue",
+   "extrait": "ALLEAUME Auguste (attribué)"
+  },
+  {
+   "reference": "00000073131",
+   "titre": "JESUS DANS LA MAIN DE DIEU",
+   "musee_code": "M0766",
+   "musee": "musée du Vieux-Château",
+   "ville": "Laval",
+   "code": "attribue",
+   "extrait": "ALLEAUME Auguste (attribué)"
+  },
+  {
+   "reference": "00000073143",
+   "titre": "SAINT ETIENNE ; SAINT LAURENT ; CROQUIS DE MAINS",
+   "musee_code": "M0766",
+   "musee": "musée du Vieux-Château",
+   "ville": "Laval",
+   "code": "attribue",
+   "extrait": "ALLEAUME Auguste (attribué)"
+  },
+  {
+   "reference": "00000073150",
+   "titre": "COMBAT AVEC UN DRAGON",
+   "musee_code": "M0766",
+   "musee": "musée du Vieux-Château",
+   "ville": "Laval",
+   "code": "attribue",
+   "extrait": "ALLEAUME Auguste (attribué)"
+  },
+  {
+   "reference": "00000073124",
+   "titre": "VITRAIL DE SAINT LUC",
+   "musee_code": "M0766",
+   "musee": "musée du Vieux-Château",
+   "ville": "Laval",
+   "code": "attribue",
+   "extrait": "ALLEAUME Auguste (attribué)"
+  },
+  {
+   "reference": "00000073209",
+   "titre": "SAINT AUGUSTIN",
+   "musee_code": "M0766",
+   "musee": "musée du Vieux-Château",
+   "ville": "Laval",
+   "code": "attribue",
+   "extrait": "ALLEAUME Auguste (attribué)"
+  },
+  {
+   "reference": "00000073158",
+   "titre": "CAVALIER AVEC SCEPTRE",
+   "musee_code": "M0766",
+   "musee": "musée du Vieux-Château",
+   "ville": "Laval",
+   "code": "attribue",
+   "extrait": "ALLEAUME Auguste (attribué)"
+  },
+  {
+   "reference": "00000073135",
+   "titre": "SAINT AUGUSTIN",
+   "musee_code": "M0766",
+   "musee": "musée du Vieux-Château",
+   "ville": "Laval",
+   "code": "attribue",
+   "extrait": "ALLEAUME Auguste (attribué)"
+  },
+  {
+   "reference": "00000073205",
+   "titre": "LITANIES DE LA VIERGE ; ESSAIS DE DECOR POUR UN VITRAIL",
+   "musee_code": "M0766",
+   "musee": "musée du Vieux-Château",
+   "ville": "Laval",
+   "code": "attribue",
+   "extrait": "ALLEAUME Auguste (attribué)"
+  },
+  {
+   "reference": "00000073132",
+   "titre": "COMMUNION DE LA VIERGE AU RECTO ; CROQUIS AU VERSO",
+   "musee_code": "M0766",
+   "musee": "musée du Vieux-Château",
+   "ville": "Laval",
+   "code": "attribue",
+   "extrait": "ALLEAUME Auguste (attribué)"
+  },
+  {
+   "reference": "00000073122",
+   "titre": "DECORS DE VITRAUX",
+   "musee_code": "M0766",
+   "musee": "musée du Vieux-Château",
+   "ville": "Laval",
+   "code": "attribue",
+   "extrait": "ALLEAUME Auguste (attribué)"
+  },
+  {
+   "reference": "00000073208",
+   "titre": "PROJETS DE VITRAUX : SAINTE FAMILLE",
+   "musee_code": "M0766",
+   "musee": "musée du Vieux-Château",
+   "ville": "Laval",
+   "code": "attribue",
+   "extrait": "ALLEAUME Auguste (attribué)"
+  },
+  {
+   "reference": "00000073133",
+   "titre": "SAINT ANTOINE DE PADOUE",
+   "musee_code": "M0766",
+   "musee": "musée du Vieux-Château",
+   "ville": "Laval",
+   "code": "attribue",
+   "extrait": "ALLEAUME Auguste (attribué)"
+  },
+  {
+   "reference": "00000073144",
+   "titre": "SAINT MARC",
+   "musee_code": "M0766",
+   "musee": "musée du Vieux-Château",
+   "ville": "Laval",
+   "code": "attribue",
+   "extrait": "ALLEAUME Auguste (attribué)"
+  },
+  {
+   "reference": "00000073157",
+   "titre": "CAVALIER",
+   "musee_code": "M0766",
+   "musee": "musée du Vieux-Château",
+   "ville": "Laval",
+   "code": "attribue",
+   "extrait": "ALLEAUME Auguste (attribué)"
+  },
+  {
+   "reference": "00000073207",
+   "titre": "APPARITION A UNE RELIGIEUSE",
+   "musee_code": "M0766",
+   "musee": "musée du Vieux-Château",
+   "ville": "Laval",
+   "code": "attribue",
+   "extrait": "ALLEAUME Auguste (attribué)"
+  },
+  {
+   "reference": "00000073142",
+   "titre": "PORTRAITS DE SAINTS",
+   "musee_code": "M0766",
+   "musee": "musée du Vieux-Château",
+   "ville": "Laval",
+   "code": "attribue",
+   "extrait": "ALLEAUME Auguste (attribué)"
+  },
+  {
+   "reference": "00000073146",
+   "titre": "LE PRECHE SOUS L'ARBRE",
+   "musee_code": "M0766",
+   "musee": "musée du Vieux-Château",
+   "ville": "Laval",
+   "code": "attribue",
+   "extrait": "ALLEAUME Auguste (attribué)"
+  },
+  {
+   "reference": "00000073165",
+   "titre": "ESSAIS DE DECOR POUR VITRAUX",
+   "musee_code": "M0766",
+   "musee": "musée du Vieux-Château",
+   "ville": "Laval",
+   "code": "attribue",
+   "extrait": "ALLEAUME Auguste (attribué)"
+  },
+  {
+   "reference": "00000073212",
+   "titre": "SAINTE CECILE",
+   "musee_code": "M0766",
+   "musee": "musée du Vieux-Château",
+   "ville": "Laval",
+   "code": "attribue",
+   "extrait": "ALLEAUME Auguste (attribué)"
+  },
+  {
+   "reference": "00000073123",
+   "titre": "DECOR DE VITRAIL",
+   "musee_code": "M0766",
+   "musee": "musée du Vieux-Château",
+   "ville": "Laval",
+   "code": "attribue",
+   "extrait": "ALLEAUME Auguste (attribué)"
+  },
+  {
+   "reference": "00000073141",
+   "titre": "PORTRAITS DE SAINTS",
+   "musee_code": "M0766",
+   "musee": "musée du Vieux-Château",
+   "ville": "Laval",
+   "code": "attribue",
+   "extrait": "ALLEAUME Auguste (attribué)"
+  },
+  {
+   "reference": "00000073136",
+   "titre": "SAINTE DEVOTE",
+   "musee_code": "M0766",
+   "musee": "musée du Vieux-Château",
+   "ville": "Laval",
+   "code": "attribue",
+   "extrait": "ALLEAUME Auguste (attribué)"
+  },
+  {
+   "reference": "00000073139",
+   "titre": "SAINT FRANCOIS D'ASSISE",
+   "musee_code": "M0766",
+   "musee": "musée du Vieux-Château",
+   "ville": "Laval",
+   "code": "attribue",
+   "extrait": "ALLEAUME Auguste (attribué)"
+  },
+  {
+   "reference": "00000073210",
+   "titre": "CROQUIS DE DECOR POUR UN VITRAIL",
+   "musee_code": "M0766",
+   "musee": "musée du Vieux-Château",
+   "ville": "Laval",
+   "code": "attribue",
+   "extrait": "ALLEAUME Auguste (attribué)"
+  },
+  {
+   "reference": "00000073206",
+   "titre": "APPARITION",
+   "musee_code": "M0766",
+   "musee": "musée du Vieux-Château",
+   "ville": "Laval",
+   "code": "attribue",
+   "extrait": "ALLEAUME Auguste (attribué)"
+  },
+  {
+   "reference": "00000073151",
+   "titre": "COMBAT AVEC UN DRAGON",
+   "musee_code": "M0766",
+   "musee": "musée du Vieux-Château",
+   "ville": "Laval",
+   "code": "attribue",
+   "extrait": "ALLEAUME Auguste (attribué)"
+  },
+  {
+   "reference": "00000073153",
+   "titre": "BAPTEME DU CHRIST ; LES DISCIPLES D'EMMAUS",
+   "musee_code": "M0766",
+   "musee": "musée du Vieux-Château",
+   "ville": "Laval",
+   "code": "attribue",
+   "extrait": "ALLEAUME Auguste (attribué)"
+  },
+  {
+   "reference": "00000073119",
+   "titre": "PROJET DE VITRAIL : CHRIST BENISSANT",
+   "musee_code": "M0766",
+   "musee": "musée du Vieux-Château",
+   "ville": "Laval",
+   "code": "attribue",
+   "extrait": "ALLEAUME Auguste (attribué)"
+  },
+  {
+   "reference": "00000073126",
+   "titre": "VITRAIL DE SAINT MATHIEU",
+   "musee_code": "M0766",
+   "musee": "musée du Vieux-Château",
+   "ville": "Laval",
+   "code": "attribue",
+   "extrait": "ALLEAUME Auguste (attribué)"
+  },
+  {
+   "reference": "00000073152",
+   "titre": "MARIE-MADELEINE",
+   "musee_code": "M0766",
+   "musee": "musée du Vieux-Château",
+   "ville": "Laval",
+   "code": "attribue",
+   "extrait": "ALLEAUME Auguste (attribué)"
+  },
+  {
+   "reference": "00000073140",
+   "titre": "SAINT NICOLAS",
+   "musee_code": "M0766",
+   "musee": "musée du Vieux-Château",
+   "ville": "Laval",
+   "code": "attribue",
+   "extrait": "ALLEAUME Auguste (attribué)"
+  },
+  {
+   "reference": "00000073121",
+   "titre": "JEANNE D'ARC A L'ASSAUT",
+   "musee_code": "M0766",
+   "musee": "musée du Vieux-Château",
+   "ville": "Laval",
+   "code": "attribue",
+   "extrait": "ALLEAUME Auguste (attribué)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-08-05T18:41:37+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

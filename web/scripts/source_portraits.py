@@ -13,13 +13,17 @@ Sortie :
   - static/portraits/<slug>.<ext>  (images ~480px de large)
   - static/data/portraits.json     (manifeste : crédit, licence, source, QID)
 """
-import json, os, re, time, unicodedata
+import json, os, re, sys, time, unicodedata
 import urllib.parse, urllib.request
 
 UA = {'User-Agent': 'InventaireDuDoute/1.0 (portfolio data-journalisme; hericlibong@gmail.com)'}
 ICI = os.path.dirname(os.path.abspath(__file__))
 RACINE = os.path.dirname(ICI)
 DEST_IMG = os.path.join(RACINE, 'static', 'portraits')
+# Les images déposées à la main, pour les sources qui se consultent mais ne se
+# téléchargent pas (voir FICHIER_LOCAL). Versionné : sans ces fichiers, le script
+# ne serait plus rejouable.
+SOURCE_LOCALE = os.path.join(ICI, 'portraits-fournis')
 # Le manifeste est un EXPORT VERSIONNÉ, pas un fichier de travail : `web/static/data`
 # est ignoré par git, et les 27 images étaient versionnées sans leurs crédits — une
 # licence perdue au premier clone (relevé le 2026-07-22). Il s'écrit donc dans
@@ -97,11 +101,186 @@ QID = {
     "Claude Lorrain": 'Q214074',
     "Le Pérugin": 'Q5827',
     "Botticelli": 'Q5669',
+
+    # Lot du 2026-08-06 (les 39 artistes entrés au volume le 2026-08-02). QID
+    # retenus en phase 2 : les dates de Wikidata doivent concorder avec celles
+    # que les MUSÉES écrivent dans le champ auteur de Joconde (docs/donnees.md,
+    # 2026-08-06). Neuf seulement ont un P18 qui soit réellement un portrait —
+    # voir P18_NON_PORTRAIT juste dessous, qui explique les autres.
+    "Charles Normand": 'Q2959914',
+    "Giacinto Calandrucci": 'Q957255',
+    "Georges Ferdinand Bigot": 'Q1135613',
+    "Auguste Vacquerie": 'Q940439',
+    "Turpin de Crissé": 'Q3216954',
+    "Charles Hugo": 'Q663856',
+    "Crispin de Passe l'Ancien": 'Q140096',
+    "Antonio del Pollaiuolo": 'Q318640',
+    "Jacques-Louis David": 'Q83155',
+}
+
+# ─────────────────────────────────────────────────────────────────────────────
+# P18 N'EST PAS UNE PROMESSE DE PORTRAIT (constat du 2026-08-06)
+#
+# Sur l'élément Wikidata d'un artiste, la propriété P18 « image » porte souvent
+# UNE DE SES ŒUVRES et non son visage. Le piège ne s'était pas vu sur les 63
+# premiers maîtres, dont les portraits gravés sont célèbres ; il est apparu net
+# sur ce lot. Quatre des treize candidats ont été écartés APRÈS AVOIR ÉTÉ
+# REGARDÉS, planche de contact à l'appui — aucun indice textuel ne les
+# départageait de façon sûre :
+#
+#   Colijn de Coter     P18 = « Coter Pruszcz Polyptych », un polyptyque
+#   Louis Duthoit       P18 = la statue de saint Joseph de la cathédrale d'Amiens
+#   Nicasius Bernaerts  P18 = « Bataille de chiens et de chats », une nature morte
+#   Israël Henriet      P18 = l'inscription d'éditeur au bas d'une gravure de
+#                             Stefano della Bella — pas même une figure
+#
+# Ces quatre-là gardent le repli « Pas de portrait fiable disponible ». Mettre
+# une œuvre à la place d'un visage tromperait le lecteur sur ce qu'il regarde,
+# et ce site ne montre que ce qu'il peut nommer.
+#
+# LA RÈGLE : aucun QID n'entre dans la table ci-dessus sans que son P18 ait été
+# OUVERT ET REGARDÉ. Le contrôle est humain ; il n'est pas automatisable.
+# ─────────────────────────────────────────────────────────────────────────────
+P18_NON_PORTRAIT = {
+    'Q1108307': 'Colijn de Coter — polyptyque',
+    'Q19849909': 'Louis Duthoit — statue de la cathédrale d’Amiens',
+    'Q7024540': 'Nicasius Bernaerts — nature morte',
+    'Q3155663': 'Israël Henriet — inscription d’éditeur sur une gravure',
+}
+
+# ─────────────────────────────────────────────────────────────────────────────
+# FICHIERS CHOISIS À LA MAIN (2026-08-06)
+#
+# Seconde route, pour les portraits que P18 ne donne pas : un fichier Commons
+# désigné nommément. Elle sert quand la fiche Wikidata n'a aucune image (Aimé
+# Duthoit) ou quand son P18 a été écarté (Louis Duthoit, dont l'image est une
+# statue de la cathédrale d'Amiens). La licence et le crédit sont lus sur
+# Commons comme pour l'autre route — rien n'est écrit à la main ici sauf le nom
+# du fichier et la raison de l'avoir choisi.
+# ─────────────────────────────────────────────────────────────────────────────
+#
+# `reproduction` dit que le crédit Commons nomme CELUI QUI A PHOTOGRAPHIÉ, non
+# l'auteur du portrait. Bycro a photographié en 2021 une planche imprimée du
+# XIXe siècle : écrire « Portrait d'Aimé Duthoit, par Bycro » lui attribuerait
+# une œuvre qui n'est pas la sienne, et vieillirait le portrait de cent
+# cinquante ans. La licence exige de le créditer — comme reproducteur.
+FICHIER_CHOISI = {
+    # Une même planche imprimée porte les deux frères, chacun sous son nom et
+    # ses dates : « Aimé Duthoit (1803-1869) » et « Louis Duthoit (1807-1874) ».
+    # Les dates d'Aimé concordent au signe près avec ce que Joconde écrit.
+    'Aimé Duthoit': {
+        'fichier': 'Aimé et Louis Duthoit 01.jpg', 'qid': 'Q19849903',
+        'recadrage': 'planche des deux frères, moitié gauche',
+        'reproduction': True,
+    },
+    'Louis Duthoit': {
+        'fichier': 'Aimé et Louis Duthoit 01.jpg', 'qid': 'Q19849909',
+        'recadrage': 'planche des deux frères, moitié droite',
+        'reproduction': True,
+    },
+}
+
+# ─────────────────────────────────────────────────────────────────────────────
+# SOURCES HORS COMMONS (2026-08-06)
+#
+# Troisième route, pour les portraits qui n'existent nulle part sur Commons.
+# Elle n'est PAS un raccourci : tout ce que Commons fournissait tout seul —
+# auteur, licence, page source — doit ici être établi à la main et écrit noir
+# sur blanc. La légende affichée nomme la source réelle, jamais « Wikimedia
+# Commons » par défaut.
+#
+# La règle du projet ne change pas : on ne publie que ce qu'on peut nommer.
+# Une image dont on ignore l'auteur ET le statut n'entre pas.
+# ─────────────────────────────────────────────────────────────────────────────
+SOURCE_EXTERNE = {
+    # La planche PORTE SA PROPRE PROVENANCE, imprimée sous l'image :
+    # « ALEXANDRE-JEAN-PIERRE CLAUSEL — Peintre et Photographe troyen —
+    #   D'après un portrait à l'huile peint par lui-même en 1869 »,
+    # avec « PHOT. LOUVRIER » et « IMP. P. NOUEL ». C'est donc un AUTOPORTRAIT
+    # de 1869, reproduit en phototypie au XIXe siècle et publié dans un ouvrage
+    # ancien ; le blog n'a fait qu'en photographier la page. Peintre mort en
+    # 1884, reproduction du XIXe : le domaine public est acquis des deux côtés.
+    'Alexandre Clausel': {
+        'url': 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhjIHc'
+               'oxuJR6AYGXGTleHwPs5FEmoTZbFLjYKICxK5Fb54UNFaMmNBBvyc4rsBQa9zbEkk'
+               'Z8MESNXcNm6JOV8i2Opr4itit-Sp4TWCSD2wY4eMQnf-FvTSC-Z_TARiOGqgX9SG'
+               '94yhJBQw/s1600/P1140037.JPG',
+        'page': 'https://troyes-en-champagne.blogspot.com/2013/12/'
+                'alexandre-jean-pierre-clausel-1802-1884.html',
+        'source_nom': 'Troyes-en-Champagne',
+        'auteur': 'Alexandre Clausel',          # autoportrait : le composant le dira
+        'reproduction': 'phototypie Louvrier',
+        'licence': 'domaine public',
+        'licence_url': '',
+        'wikidata': 'Q52154652',
+    },
+}
+
+# Quatrième route : le FICHIER EST DÉJÀ LÀ, déposé à la main dans
+# `scripts/portraits-fournis/`. Elle existe parce qu'une source peut être
+# consultable sans être téléchargeable : Geneanet, qui héberge le seul portrait
+# connu d'Ensfelder, répond 403 à tout outil (protection Cloudflare, constatée le
+# 2026-08-06 sur la page ET sur l'URL de l'image). On ne contourne pas une
+# protection ; l'utilisateur enregistre le fichier depuis son navigateur, et le
+# script le reprend tel quel. Le fichier est versionné avec le dépôt : sans lui,
+# la commande ne serait plus rejouable.
+FICHIER_LOCAL = {
+    # Photographie au format carte de visite, vers 1860-1875 : redingote, main
+    # dans le gilet, fond de studio dégradé. Aucune mention imprimée — ni nom
+    # d'atelier, ni tampon, ni légende : l'auteur restera inconnu, et c'est ce
+    # que dira la légende. Le sujet est mort en 1876 et le cliché est anonyme :
+    # le domaine public est acquis depuis longtemps. Le généalogiste qui a
+    # déposé l'image sur Geneanet l'héberge, il n'en est pas l'auteur ; une
+    # reproduction fidèle d'une photographie ancienne ne crée aucun droit
+    # nouveau. On crédite donc la source, jamais le déposant.
+    # Ce n'est PAS le dessin de Paul Reiber conservé par les musées de
+    # Strasbourg (inv. 77.2019.0.1174) : cette piste-là reste ouverte.
+    'Charles Eugène Ensfelder': {
+        'fichier': 'ensfelder.jpg',
+        'page': 'https://gw.geneanet.org/whelmlinger?lang=fr&n=ensfelder&p=charles+eugene',
+        'source_nom': 'Geneanet',
+        'auteur': '',                       # anonyme : le composant écrit le repli
+        'licence': 'domaine public',
+        'licence_url': '',
+        'recadrage': 'cadré sur le buste ; la photographie est en pied',
+    },
+}
+
+# Recadrage, en fractions (gauche, haut, droite, bas) de l'image téléchargée.
+# Une planche qui porte deux visages ne peut pas servir telle quelle : sur la
+# fiche d'Aimé, on verrait aussi Louis. On découpe donc, et on le dit. Les
+# bornes s'arrêtent avant la bande de légende imprimée : le site écrit la
+# sienne.
+RECADRAGE = {
+    'Aimé Duthoit': (0.02, 0.02, 0.42, 0.86),
+    'Louis Duthoit': (0.55, 0.02, 0.96, 0.86),
+    # On garde le portrait, on laisse la légende imprimée de la planche : le
+    # site écrit la sienne, et les deux se contrediraient à l'œil.
+    'Alexandre Clausel': (0.095, 0.055, 0.94, 0.74),
+    # Ensfelder est photographié EN PIED. Laissé tel quel, dans une boîte haute
+    # de 15 rem, son visage ferait vingt pixels — quand tout le reste du corpus
+    # est en buste. On cadre donc à hauteur des mains, en gardant la main dans
+    # le gilet, qui fait la pose.
+    'Charles Eugène Ensfelder': (0.19, 0.018, 0.81, 0.56),
 }
 
 
-def get_json(url):
-    return json.load(urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=30))
+def get_json(url, essais=4):
+    """Commons et Wikidata répondent HTTP 429 quand on va trop vite (rencontré le
+    2026-08-06 en téléchargeant treize vignettes d'affilée). On patiente et on
+    recommence plutôt que d'abandonner un portrait pour une question de cadence."""
+    for i in range(essais):
+        try:
+            req = urllib.request.Request(url, headers=UA)
+            return json.load(urllib.request.urlopen(req, timeout=30))
+        except urllib.error.HTTPError as e:
+            if e.code != 429 or i == essais - 1:
+                raise
+            time.sleep(5 * (i + 1))
+        except Exception:
+            if i == essais - 1:
+                raise
+            time.sleep(2 * (i + 1))
 
 
 def slug(nom):
@@ -115,6 +294,10 @@ def slug(nom):
 # (l'œuvre reproduite copie un modèle) — même mot que dans les notices Joconde.
 ENROBAGES = [
     ('Unknown artist', 'auteur inconnu'),
+    # Commons emploie les deux formes ; la seconde était passée en anglais dans
+    # la légende de Georges Ferdinand Bigot (relevé le 2026-08-06).
+    ('Unknown author', 'auteur inconnu'),
+    ('unknown author', 'auteur inconnu'),
     ('Attributed to ', 'attribué à '),
     ('After ', "d'après "),
     ('Circle of ', 'entourage de '),
@@ -173,38 +356,153 @@ def infos_commons(fichier, largeur=480):
     }
 
 
+def recadre(chemin, bornes):
+    """Découpe l'image en place, aux fractions données (gauche, haut, droite, bas).
+
+    Sert aux planches qui portent plusieurs visages : chacun doit pouvoir
+    illustrer sa propre fiche. L'opération est déclarée dans le manifeste, et
+    la licence d'origine reste affichée — un recadrage ne fait pas de nous
+    l'auteur de l'image.
+    """
+    from PIL import Image
+    with Image.open(chemin) as im:
+        L, H = im.size
+        g, h, d, b = bornes
+        coupe = im.crop((int(g * L), int(h * H), int(d * L), int(b * H)))
+        coupe.thumbnail((480, 480))
+        coupe.convert('RGB').save(chemin, 'JPEG', quality=88, optimize=True)
+    return os.path.getsize(chemin)
+
+
 def main():
     os.makedirs(DEST_IMG, exist_ok=True)
+
+    # Garde-fou : un QID dont on a constaté que le P18 n'est pas un portrait ne
+    # doit pas revenir dans la table par inadvertance (2026-08-06).
+    fautifs = {n: q for n, q in QID.items() if q in P18_NON_PORTRAIT}
+    if fautifs:
+        for n, q in fautifs.items():
+            print(f'!! {n} ({q}) : {P18_NON_PORTRAIT[q]} — retirer de QID')
+        raise SystemExit('P18 déjà constaté « pas un portrait » : voir ci-dessus.')
+
+    # Reprise INCRÉMENTALE par défaut : on ne retélécharge pas les portraits déjà
+    # au manifeste. Refaire les 60 pour en ajouter 9 coûte soixante requêtes,
+    # déclenche les 429 et exposerait les portraits validés à un changement
+    # survenu depuis sur Wikidata. `--tout` force la régénération complète.
+    tout = '--tout' in sys.argv
     manifeste = {}
-    for nom, qid in QID.items():
+    if not tout and os.path.exists(DEST_JSON):
+        with open(DEST_JSON, encoding='utf-8') as f:
+            manifeste = json.load(f)
+        print(f'manifeste existant : {len(manifeste)} portraits conservés '
+              f'(--tout pour tout refaire)')
+
+    # Quatre routes, de la plus automatique à la plus déclarée : le P18 de
+    # Wikidata ; un fichier Commons désigné à la main ; une source hors Commons
+    # entièrement décrite ; un fichier déjà déposé sur le disque, quand la source
+    # se consulte mais ne se télécharge pas. Chacune n'est écrite que là où la
+    # précédente ne donne rien, ou donne autre chose qu'un visage.
+    def route_de(nom):
+        if nom in FICHIER_LOCAL:
+            return 'local'
+        if nom in SOURCE_EXTERNE:
+            return 'externe'
+        return 'choisi' if nom in FICHIER_CHOISI else 'p18'
+
+    a_faire = {n: route_de(n)
+               for n in list(QID) + list(FICHIER_CHOISI) + list(SOURCE_EXTERNE)
+               + list(FICHIER_LOCAL)
+               if tout or n not in manifeste}
+    print(f'{len(a_faire)} portrait(s) à chercher\n')
+    for nom, route in a_faire.items():
+        choix = FICHIER_CHOISI.get(nom, {})
+        ext = SOURCE_EXTERNE.get(nom, {}) or FICHIER_LOCAL.get(nom, {})
+        qid = ext.get('wikidata') or (choix['qid'] if route == 'choisi' else QID.get(nom))
         try:
-            fichier = image_p18(qid)
-            if not fichier:
-                print(f'!! {nom}: pas de P18'); continue
-            info = infos_commons(fichier)
-            ext = {'image/jpeg': 'jpg', 'image/png': 'png'}.get(info['mime'], 'jpg')
-            nom_fichier = f'{slug(nom)}.{ext}'
-            with urllib.request.urlopen(urllib.request.Request(info['thumburl'], headers=UA), timeout=60) as r:
-                data = r.read()
-            with open(os.path.join(DEST_IMG, nom_fichier), 'wb') as f:
+            if route == 'local':
+                # Le fichier est sur le disque : rien à demander à personne.
+                # Sa source est déclarée dans FICHIER_LOCAL, et c'est elle qui
+                # s'affichera sous l'image.
+                info = {
+                    'thumburl': '', 'mime': 'image/jpeg',
+                    'descriptionurl': ext['page'],
+                    'licence': ext['licence'], 'licence_url': ext.get('licence_url', ''),
+                    'auteur': ext['auteur'],
+                }
+                pourquoi = ext.get('recadrage')
+            elif route == 'externe':
+                # Rien à demander à Commons : la source est déclarée en toutes
+                # lettres ci-dessus, et c'est elle qui s'affichera.
+                info = {
+                    'thumburl': ext['url'], 'mime': 'image/jpeg',
+                    'descriptionurl': ext['page'],
+                    'licence': ext['licence'], 'licence_url': ext.get('licence_url', ''),
+                    'auteur': ext['auteur'],
+                }
+                pourquoi = ext.get('recadrage')
+            elif route == 'choisi':
+                fichier, pourquoi = choix['fichier'], choix.get('recadrage')
+                info = infos_commons(fichier, largeur=1200 if nom in RECADRAGE else 480)
+            else:
+                fichier, pourquoi = image_p18(qid), None
+                if not fichier:
+                    print(f'!! {nom}: pas de P18'); continue
+                info = infos_commons(fichier, largeur=1200 if nom in RECADRAGE else 480)
+            extension = {'image/jpeg': 'jpg', 'image/png': 'png'}.get(info['mime'], 'jpg')
+            nom_fichier = f'{slug(nom)}.{extension}'
+            if route == 'local':
+                with open(os.path.join(SOURCE_LOCALE, ext['fichier']), 'rb') as f:
+                    data = f.read()
+            else:
+                with urllib.request.urlopen(urllib.request.Request(info['thumburl'], headers=UA), timeout=60) as r:
+                    data = r.read()
+            chemin = os.path.join(DEST_IMG, nom_fichier)
+            with open(chemin, 'wb') as f:
                 f.write(data)
+            if nom in RECADRAGE:
+                data = recadre(chemin, RECADRAGE[nom])
             manifeste[nom] = {
                 'fichier': f'/portraits/{nom_fichier}',
-                'auteur': info['auteur'] or 'Auteur non précisé sur Commons',
+                # Le repli ne peut pas nommer Commons pour une image qui n'en
+                # vient pas (relevé le 2026-08-06 sur Ensfelder, hébergé par
+                # Geneanet). Hors Commons, l'absence d'auteur se dit « auteur
+                # inconnu » — une mention que la légende sait déjà écrire sans
+                # la faire précéder de « par ».
+                'auteur': info['auteur'] or ('Auteur non précisé sur Commons'
+                                             if not ext.get('source_nom') else 'auteur inconnu'),
                 'licence': info['licence'] or 'voir la page du fichier',
                 'licence_url': info['licence_url'],
                 'source': info['descriptionurl'],
-                'wikidata': f'https://www.wikidata.org/wiki/{qid}',
+                'wikidata': f'https://www.wikidata.org/wiki/{qid}' if qid else '',
                 # 'droite' => retourné à l'affichage pour regarder le nuage (à gauche).
                 'regard': 'droite' if nom in REGARD_DROITE else 'gauche',
             }
-            print(f'ok {nom}: {nom_fichier}  [{info["licence"]}]  {info["auteur"][:50]}')
+            # Le nom du lieu où l'image a été trouvée. Commons par défaut ; sinon
+            # la source réelle, qui doit s'afficher telle quelle — une image prise
+            # ailleurs ne se crédite pas « Wikimedia Commons ».
+            if ext.get('source_nom'):
+                manifeste[nom]['source_nom'] = ext['source_nom']
+            # Une image recadrée n'est plus le fichier d'origine : on le dit,
+            # c'est la moindre des choses envers la licence et le lecteur.
+            if pourquoi:
+                manifeste[nom]['recadrage'] = pourquoi
+            # Quand le crédit nomme le photographe de la reproduction et non
+            # l'auteur du portrait, le nom se dit à part : sans quoi on prête à
+            # un contributeur d'aujourd'hui une œuvre du siècle précédent.
+            if choix.get('reproduction'):
+                manifeste[nom]['reproduction'] = manifeste[nom]['auteur']
+                manifeste[nom]['auteur'] = 'auteur inconnu'
+            elif ext.get('reproduction'):
+                manifeste[nom]['reproduction'] = ext['reproduction']
+            print(f'ok {nom}: {nom_fichier}  [{info["licence"]}]  {info["auteur"][:50]}'
+                  + (f'  ({pourquoi})' if pourquoi else ''))
             time.sleep(0.4)
         except Exception as e:
             print(f'!! {nom} ({qid}): {e}')
     with open(DEST_JSON, 'w', encoding='utf-8') as f:
         json.dump(manifeste, f, ensure_ascii=False, indent=2)
-    print(f'\n{len(manifeste)}/{len(QID)} portraits -> {DEST_JSON}')
+    total = len(QID) + len(FICHIER_CHOISI) + len(SOURCE_EXTERNE) + len(FICHIER_LOCAL)
+    print(f'\n{len(manifeste)}/{total} portraits -> {DEST_JSON}')
 
 
 if __name__ == '__main__':

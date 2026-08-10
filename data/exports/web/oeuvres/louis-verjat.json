@@ -1,0 +1,404 @@
+{
+ "slug": "louis-verjat",
+ "nom": "Louis Verjat",
+ "doute": 43,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 43
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "04240000586",
+   "titre": "Sfax",
+   "musee_code": "M0424",
+   "musee": "musée Adrien Mentienne",
+   "ville": "Bry-sur-Marne",
+   "code": "attribue",
+   "extrait": "Verjat Louis Victor Emile (1857-1933) (photographe, attribué à)"
+  },
+  {
+   "reference": "04240000601",
+   "titre": "La famille Kara Mostefa",
+   "musee_code": "M0424",
+   "musee": "musée Adrien Mentienne",
+   "ville": "Bry-sur-Marne",
+   "code": "attribue",
+   "extrait": "Verjat Louis Victor Emile (1857-1933) (photographe, attribué à)"
+  },
+  {
+   "reference": "04240000608",
+   "titre": "Plage de Riva Bella",
+   "musee_code": "M0424",
+   "musee": "musée Adrien Mentienne",
+   "ville": "Bry-sur-Marne",
+   "code": "attribue",
+   "extrait": "Verjat Louis Victor Emile (1857-1933) (photographe, attribué à)"
+  },
+  {
+   "reference": "04240000588",
+   "titre": "Sfax",
+   "musee_code": "M0424",
+   "musee": "musée Adrien Mentienne",
+   "ville": "Bry-sur-Marne",
+   "code": "attribue",
+   "extrait": "Verjat Louis Victor Emile (1857-1933) (photographe, attribué à)"
+  },
+  {
+   "reference": "04240000589",
+   "titre": "Sfax",
+   "musee_code": "M0424",
+   "musee": "musée Adrien Mentienne",
+   "ville": "Bry-sur-Marne",
+   "code": "attribue",
+   "extrait": "Verjat Louis Victor Emile (1857-1933) (photographe, attribué à)"
+  },
+  {
+   "reference": "04240000591",
+   "titre": "El Kantara",
+   "musee_code": "M0424",
+   "musee": "musée Adrien Mentienne",
+   "ville": "Bry-sur-Marne",
+   "code": "attribue",
+   "extrait": "Verjat Louis Victor Emile (1857-1933) (photographe, attribué à)"
+  },
+  {
+   "reference": "04240000594",
+   "titre": "Constantine. Quartier arabe",
+   "musee_code": "M0424",
+   "musee": "musée Adrien Mentienne",
+   "ville": "Bry-sur-Marne",
+   "code": "attribue",
+   "extrait": "Verjat Louis Victor Emile (1857-1933) (photographe, attribué à)"
+  },
+  {
+   "reference": "04240000612",
+   "titre": "Douarnenez",
+   "musee_code": "M0424",
+   "musee": "musée Adrien Mentienne",
+   "ville": "Bry-sur-Marne",
+   "code": "attribue",
+   "extrait": "Verjat Louis Victor Emile (1857-1933) (photographe, attribué à)"
+  },
+  {
+   "reference": "04240000613",
+   "titre": "Douarnenez",
+   "musee_code": "M0424",
+   "musee": "musée Adrien Mentienne",
+   "ville": "Bry-sur-Marne",
+   "code": "attribue",
+   "extrait": "Verjat Louis Victor Emile (1857-1933) (photographe, attribué à)"
+  },
+  {
+   "reference": "04240000617",
+   "titre": "Olivet. Source du Loiret",
+   "musee_code": "M0424",
+   "musee": "musée Adrien Mentienne",
+   "ville": "Bry-sur-Marne",
+   "code": "attribue",
+   "extrait": "Verjat Louis Victor Emile (1857-1933) (photographe, attribué à)"
+  },
+  {
+   "reference": "04240000583",
+   "titre": "Sfax",
+   "musee_code": "M0424",
+   "musee": "musée Adrien Mentienne",
+   "ville": "Bry-sur-Marne",
+   "code": "attribue",
+   "extrait": "Verjat Louis Victor Emile (1857-1933) (photographe, attribué à)"
+  },
+  {
+   "reference": "04240000582",
+   "titre": "Sfax",
+   "musee_code": "M0424",
+   "musee": "musée Adrien Mentienne",
+   "ville": "Bry-sur-Marne",
+   "code": "attribue",
+   "extrait": "Verjat Louis Victor Emile (1857-1933) (photographe, attribué à)"
+  },
+  {
+   "reference": "04240000584",
+   "titre": "Sfax",
+   "musee_code": "M0424",
+   "musee": "musée Adrien Mentienne",
+   "ville": "Bry-sur-Marne",
+   "code": "attribue",
+   "extrait": "Verjat Louis Victor Emile (1857-1933) (photographe, attribué à)"
+  },
+  {
+   "reference": "04240000592",
+   "titre": "El Kantara",
+   "musee_code": "M0424",
+   "musee": "musée Adrien Mentienne",
+   "ville": "Bry-sur-Marne",
+   "code": "attribue",
+   "extrait": "Verjat Louis Victor Emile (1857-1933) (photographe, attribué à)"
+  },
+  {
+   "reference": "04240000602",
+   "titre": "Le Taya. Cuisson du méchoui",
+   "musee_code": "M0424",
+   "musee": "musée Adrien Mentienne",
+   "ville": "Bry-sur-Marne",
+   "code": "attribue",
+   "extrait": "Verjat Louis Victor Emile (1857-1933) (photographe, attribué à)"
+  },
+  {
+   "reference": "04240000604",
+   "titre": "5e escadron 3e spahis (Guelma)",
+   "musee_code": "M0424",
+   "musee": "musée Adrien Mentienne",
+   "ville": "Bry-sur-Marne",
+   "code": "attribue",
+   "extrait": "Verjat Louis Victor Emile (1857-1933) (photographe, attribué à)"
+  },
+  {
+   "reference": "04240000606",
+   "titre": "Bougie. Cap Carbon",
+   "musee_code": "M0424",
+   "musee": "musée Adrien Mentienne",
+   "ville": "Bry-sur-Marne",
+   "code": "attribue",
+   "extrait": "Verjat Louis Victor Emile (1857-1933) (photographe, attribué à)"
+  },
+  {
+   "reference": "04240000616",
+   "titre": "Source du Loiret (Olivet)",
+   "musee_code": "M0424",
+   "musee": "musée Adrien Mentienne",
+   "ville": "Bry-sur-Marne",
+   "code": "attribue",
+   "extrait": "Verjat Louis Victor Emile (1857-1933) (photographe, attribué à)"
+  },
+  {
+   "reference": "04240000619",
+   "titre": "Portrait de groupe",
+   "musee_code": "M0424",
+   "musee": "musée Adrien Mentienne",
+   "ville": "Bry-sur-Marne",
+   "code": "attribue",
+   "extrait": "Verjat Louis Victor Emile (1857-1933) (photographe, attribué à)"
+  },
+  {
+   "reference": "04240000622",
+   "titre": "La Loire aux Grandes Caves",
+   "musee_code": "M0424",
+   "musee": "musée Adrien Mentienne",
+   "ville": "Bry-sur-Marne",
+   "code": "attribue",
+   "extrait": "Verjat Louis Victor Emile (1857-1933) (photographe, attribué à)"
+  },
+  {
+   "reference": "04240000624",
+   "titre": "Château de La Landelle. Clécy",
+   "musee_code": "M0424",
+   "musee": "musée Adrien Mentienne",
+   "ville": "Bry-sur-Marne",
+   "code": "attribue",
+   "extrait": "Verjat Louis Victor Emile (1857-1933) (photographe, attribué à)"
+  },
+  {
+   "reference": "04240000595",
+   "titre": "Constantine",
+   "musee_code": "M0424",
+   "musee": "musée Adrien Mentienne",
+   "ville": "Bry-sur-Marne",
+   "code": "attribue",
+   "extrait": "Verjat Louis Victor Emile (1857-1933) (photographe, attribué à)"
+  },
+  {
+   "reference": "04240000600",
+   "titre": "La cascade. Oasis de Gabès",
+   "musee_code": "M0424",
+   "musee": "musée Adrien Mentienne",
+   "ville": "Bry-sur-Marne",
+   "code": "attribue",
+   "extrait": "Verjat Louis Victor Emile (1857-1933) (photographe, attribué à)"
+  },
+  {
+   "reference": "04240000610",
+   "titre": "Riva Bella",
+   "musee_code": "M0424",
+   "musee": "musée Adrien Mentienne",
+   "ville": "Bry-sur-Marne",
+   "code": "attribue",
+   "extrait": "Verjat Louis Victor Emile (1857-1933) (photographe, attribué à)"
+  },
+  {
+   "reference": "04240000585",
+   "titre": "Sfax",
+   "musee_code": "M0424",
+   "musee": "musée Adrien Mentienne",
+   "ville": "Bry-sur-Marne",
+   "code": "attribue",
+   "extrait": "Verjat Louis Victor Emile (1857-1933) (photographe, attribué à)"
+  },
+  {
+   "reference": "04240000593",
+   "titre": "El Kantara",
+   "musee_code": "M0424",
+   "musee": "musée Adrien Mentienne",
+   "ville": "Bry-sur-Marne",
+   "code": "attribue",
+   "extrait": "Verjat Louis Victor Emile (1857-1933) (photographe, attribué à)"
+  },
+  {
+   "reference": "04240000596",
+   "titre": "Gabès. Enterrement indigène",
+   "musee_code": "M0424",
+   "musee": "musée Adrien Mentienne",
+   "ville": "Bry-sur-Marne",
+   "code": "attribue",
+   "extrait": "Verjat Louis Victor Emile (1857-1933) (photographe, attribué à)"
+  },
+  {
+   "reference": "04240000598",
+   "titre": "Gabès. Le pont de palmier",
+   "musee_code": "M0424",
+   "musee": "musée Adrien Mentienne",
+   "ville": "Bry-sur-Marne",
+   "code": "attribue",
+   "extrait": "Verjat Louis Victor Emile (1857-1933) (photographe, attribué à)"
+  },
+  {
+   "reference": "04240000605",
+   "titre": "5e escadron du 3e spahis",
+   "musee_code": "M0424",
+   "musee": "musée Adrien Mentienne",
+   "ville": "Bry-sur-Marne",
+   "code": "attribue",
+   "extrait": "Verjat Louis Victor Emile (1857-1933) (photographe, attribué à)"
+  },
+  {
+   "reference": "04240000607",
+   "titre": "Route de Gounod (Maudemain)",
+   "musee_code": "M0424",
+   "musee": "musée Adrien Mentienne",
+   "ville": "Bry-sur-Marne",
+   "code": "attribue",
+   "extrait": "Verjat Louis Victor Emile (1857-1933) (photographe, attribué à)"
+  },
+  {
+   "reference": "04240000620",
+   "titre": "Ussé",
+   "musee_code": "M0424",
+   "musee": "musée Adrien Mentienne",
+   "ville": "Bry-sur-Marne",
+   "code": "attribue",
+   "extrait": "Verjat Louis Victor Emile (1857-1933) (photographe, attribué à)"
+  },
+  {
+   "reference": "04240000621",
+   "titre": "L'Indre à Montrésor",
+   "musee_code": "M0424",
+   "musee": "musée Adrien Mentienne",
+   "ville": "Bry-sur-Marne",
+   "code": "attribue",
+   "extrait": "Verjat Louis Victor Emile (1857-1933) (photographe, attribué à)"
+  },
+  {
+   "reference": "04240000590",
+   "titre": "El Kantara",
+   "musee_code": "M0424",
+   "musee": "musée Adrien Mentienne",
+   "ville": "Bry-sur-Marne",
+   "code": "attribue",
+   "extrait": "Verjat Louis Victor Emile (1857-1933) (photographe, attribué à)"
+  },
+  {
+   "reference": "04240000597",
+   "titre": "Gabès. Cascade dans l'oasis",
+   "musee_code": "M0424",
+   "musee": "musée Adrien Mentienne",
+   "ville": "Bry-sur-Marne",
+   "code": "attribue",
+   "extrait": "Verjat Louis Victor Emile (1857-1933) (photographe, attribué à)"
+  },
+  {
+   "reference": "04240000599",
+   "titre": "Gabès. Dans l'oasis",
+   "musee_code": "M0424",
+   "musee": "musée Adrien Mentienne",
+   "ville": "Bry-sur-Marne",
+   "code": "attribue",
+   "extrait": "Verjat Louis Victor Emile (1857-1933) (photographe, attribué à)"
+  },
+  {
+   "reference": "04240000603",
+   "titre": "5e escadron du 3e spahis à Guelma",
+   "musee_code": "M0424",
+   "musee": "musée Adrien Mentienne",
+   "ville": "Bry-sur-Marne",
+   "code": "attribue",
+   "extrait": "Verjat Louis Victor Emile (1857-1933) (photographe, attribué à)"
+  },
+  {
+   "reference": "04240000609",
+   "titre": "Riva Bella",
+   "musee_code": "M0424",
+   "musee": "musée Adrien Mentienne",
+   "ville": "Bry-sur-Marne",
+   "code": "attribue",
+   "extrait": "Verjat Louis Victor Emile (1857-1933) (photographe, attribué à)"
+  },
+  {
+   "reference": "04240000623",
+   "titre": "Domaine de Sens",
+   "musee_code": "M0424",
+   "musee": "musée Adrien Mentienne",
+   "ville": "Bry-sur-Marne",
+   "code": "attribue",
+   "extrait": "Verjat Louis Victor Emile (1857-1933) (photographe, attribué à)"
+  },
+  {
+   "reference": "04240000587",
+   "titre": "Sfax",
+   "musee_code": "M0424",
+   "musee": "musée Adrien Mentienne",
+   "ville": "Bry-sur-Marne",
+   "code": "attribue",
+   "extrait": "Verjat Louis Victor Emile (1857-1933) (photographe, attribué à)"
+  },
+  {
+   "reference": "04240000611",
+   "titre": "Riva Bella",
+   "musee_code": "M0424",
+   "musee": "musée Adrien Mentienne",
+   "ville": "Bry-sur-Marne",
+   "code": "attribue",
+   "extrait": "Verjat Louis Victor Emile (1857-1933) (photographe, attribué à)"
+  },
+  {
+   "reference": "04240000614",
+   "titre": "Douarnenez",
+   "musee_code": "M0424",
+   "musee": "musée Adrien Mentienne",
+   "ville": "Bry-sur-Marne",
+   "code": "attribue",
+   "extrait": "Verjat Louis Victor Emile (1857-1933) (photographe, attribué à)"
+  },
+  {
+   "reference": "04240000615",
+   "titre": "Baie des Trépassés",
+   "musee_code": "M0424",
+   "musee": "musée Adrien Mentienne",
+   "ville": "Bry-sur-Marne",
+   "code": "attribue",
+   "extrait": "Verjat Louis Victor Emile (1857-1933) (photographe, attribué à)"
+  },
+  {
+   "reference": "04240000618",
+   "titre": "Château d'Amboise",
+   "musee_code": "M0424",
+   "musee": "musée Adrien Mentienne",
+   "ville": "Bry-sur-Marne",
+   "code": "attribue",
+   "extrait": "Verjat Louis Victor Emile (1857-1933) (photographe, attribué à)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-08-05T18:41:37+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

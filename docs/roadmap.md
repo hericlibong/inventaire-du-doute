@@ -5,6 +5,160 @@ Chaque ⏸ est un point de validation utilisateur : on s'y arrête.
 
 ---
 
+## ★ PLAN DE FINALISATION (ouvert le 2026-08-07) — cap actuel
+
+> **Corrections issues de la demonstration publiee (2026-08-10)** : le suivi
+> operationnel des adaptations mobiles, du footer, de la navigation et de l'accueil vit
+> dans [`roadmap-corrections-demo.md`](roadmap-corrections-demo.md). Ce document complete
+> F3/F5 avant la verification finale F6 et la fusion F7.
+
+Le volume 1 est complet sur le fond : les données, les profils et les reproductions sont
+arrêtés. **Ce qui reste relève de la finition et de la mise en publication.** Plan en sept
+phases, fixé par l'utilisateur.
+
+**Trois règles de conduite, non négociables :**
+> 1. **Aucun nouveau chantier.** On ne rouvre ni les données, ni les portraits, ni la
+>    recherche de reproductions.
+> 2. **Une phase à la fois.** On ne travaille pas deux phases en parallèle.
+> 3. **En phase 3, on procède élément par élément** : montrer le défaut observé, poser une
+>    question ciblée, proposer deux options au plus, attendre la décision, appliquer ce qui
+>    est validé — jamais une série de corrections d'un bloc.
+
+Les contrôles sont proportionnés à chaque changement ; **le contrôle exhaustif est réservé
+à la phase 6**. Ni fusion ni déploiement avant la phase 7. La branche
+`refactor/analyse-maitres` reste séparée et n'est pas fusionnée.
+
+- [x] **F1 — Réaligner la roadmap et les documents de suivi** (2026-08-07). Aucun changement
+      d'interface. Travaux réellement faits marqués comme tels (Présentation, Méthode,
+      profils, reproductions) ; tâches ouvertes isolées ; blocages de publication distingués
+      des améliorations ; historique daté conservé sans réécriture ; journal rattrapé du
+      4 au 7 août.
+- [x] **F2 — Revoir l'accueil** (2026-08-08). Les trois sujets sont traités.
+      1. **Titre du volume tranché** : « Volume 1 — Autour des maîtres » est CONSERVÉ
+         (décision utilisateur). Le mot y garde son sens relationnel — les œuvres autour du
+         maître —, conforme à la règle du 2026-08-02 ; l'interface continue de dire
+         « artistes » pour désigner les personnes. **C3 est soldé**, par une justification
+         et non par un changement.
+      2. **Texte remplacé en entier**, sur le texte de l'utilisateur repris tel quel : le nom
+         d'un artiste peut accompagner une œuvre sans que le musée la lui attribue
+         directement ; ce volume explore ces liens. Sans énumération de mentions, sans
+         commencer par « Dans Joconde ». Chiffres sortis des phrases en information autonome
+         (« 102 artistes · 6 081 notices », lus dans les données). Source complétée :
+         « Source : Joconde, catalogue collectif des musées de France. » **C5 est soldé.**
+      3. **Composition revue** : colonne élargie (les deux bornes de 34 % et 23 caractères
+         hachaient les phrases), largeurs passées en unités relatives à la fenêtre — l'aplat
+         sombre est une forme de l'illustration, il suit l'écran et non la police —, voile
+         local étendu à l'ordinateur pour garantir la lisibilité quel que soit le recadrage,
+         séparateur de milliers rendu visible, et navigation ramenée sur un axe commun.
+      **Renommage public** : « Présentation » devient « Le projet », aux quatre endroits qui
+      désignent la page.
+      **Les adresses suivent** : `/presentation` → **`/projet`**, `/les-presque` →
+      **`/artistes`**. Les libellés publics ne changent pas. Trois redirections permanentes
+      (308) conservent les anciennes URL, `/echelle` comprise. Les ancres survivent — un
+      fragment n'est jamais envoyé au serveur. Le nom interne « presque » n'est pas
+      pourchassé : il ne s'affiche nulle part.
+      Vérifié à 1440, 1280, 1920 et 390 px, plus un écran court (390 × 640) : un seul écran,
+      aucun débordement, contrastes de 8,4:1 à 14,2:1. 306 tests Python, 16 tests front,
+      build statique OK, redirections vérifiées sans boucle.
+      **Une règle héritée de plus est tombée** (elle relève de **C2**) : « l'aplat sombre est
+      étroit, trois lignes courtes maximum » était faux, et avait plafonné la réécriture.
+- [ ] **F3 — Finitions visuelles, point par point.** Périmètre non arrêté.
+      **Points ouverts, à traiter séparément :**
+      - [x] **M1 — FAIT le 2026-08-09.** La page Méthode dit désormais, dans « Ce que
+            couvrent les chiffres », que les titres sont reproduits tels qu'ils apparaissent
+            dans Joconde et pourquoi leur casse n'est pas corrigée. Un paragraphe intégré à
+            la sous-section existante, sans encadré ni nouveau titre. Décision et chiffres :
+            decisions.md, 2026-08-08 (nonies bis).
+      - [x] **A2 — RÉSOLU le 2026-08-08.** Chaque onglet déclare le panneau qu'il commande
+            (`aria-controls`, identifiants), le panneau déclare l'onglet qui le nomme
+            (`role="tabpanel"`, `aria-labelledby`). Un seul onglet dans l'ordre de
+            tabulation ; flèches gauche/droite avec bouclage, Début et Fin. Souris et
+            apparence inchangées.
+      - [x] **A1 — RÉSOLU le 2026-08-08.** Tabindex tournant : **un seul artiste dans
+            l'ordre de tabulation** (le sélectionné, ou le premier de la liste filtrée) —
+            Tab s'arrête une fois au lieu de 102. Les flèches haut/bas circulent avec
+            bouclage, Début et Fin vont aux extrémités, Entrée ou Espace choisit (les
+            boutons natifs s'en chargent). Le focus reste visible dans la liste défilante
+            (`scrollIntoView` au plus près). Recherche, tri, souris et toucher inchangés.
+      Sujets pressentis :
+      marges et rythme vertical · navigation · panneaux et états interactifs · cartes et
+      listes d'œuvres · carte des musées · états sans image · affichage mobile · cohérence
+      visuelle entre les quatre pages publiques. Reprend **C11** (longueur des pages sur
+      mobile) et **C2** (règles héritées qui décrivent mal ce qu'on regarde).
+- [x] **F4 — CLOSE le 2026-08-09** (reprenait **É3**). Trois passes : les textes communs de
+      l'exploration (une faute de syntaxe, le bloc des copies passé en œuvres, deux
+      formulations reprises, le bloc « à part » masqué quand il n'y a rien à écarter) ; les
+      **102 lignes biographiques**, contrôlées sur la forme et croisées avec les dates de
+      Joconde — **aucune erreur** ; le contrôle « notice / œuvre », qui solde **C6** pour
+      cette page. Quatre libellés simplifiés en clôture. Deux cas conservés à dessein :
+      Peter Hawke sans nationalité, Henry Hennault sans siècle.
+- [x] **F5 — Préparation technique au déploiement, terminée le 2026-08-11** : langue du
+      document en `fr` ; couvertures en JPEG 82 (−91 %, PNG retirés) ; avertissements de
+      build examinés ; **rubrique « Avant / après » retirée de la production** (route et
+      données), sans redirection — l'URL n'a jamais circulé, et l'exploration reste en
+      réserve pour un volet ultérieur ; favicon, titres, descriptions, Open Graph, image
+      de partage, sitemap, `robots.txt` et chemin GitHub Pages en place.
+      Relevé initial : Relevé fait le 2026-08-07, à traiter :
+      **`lang="en"` dans `web/src/app.html`** (à passer en `fr`) · **favicon Svelte par
+      défaut** (`$lib/assets/favicon.svg`, seule balise du `svelte:head` du layout) ·
+      **aucun titre ni description de page** (seule `/presentation` a un `svelte:head`
+      propre) · métadonnées de partage et leur image · **sort de la route `/revisions`**,
+      restée en place · avertissements de build qui gênent réellement · poids des images de
+      couverture · compatibilité avec l'hébergement et le chemin de déploiement retenus.
+- [x] **DÉMONSTRATION TECHNIQUE — GitHub Pages** (publiée le 2026-08-10, avant F6/F7).
+      Publication en *Project Page* depuis ce dépôt,
+      à `https://hericlibong.github.io/inventaire-du-doute/` : rien n'est copié dans le
+      dépôt du site personnel. Elle sert à voir le site en ligne, dans ses vraies
+      conditions de chemin, avant la vérification finale.
+      **Ce qu'elle a demandé** : `paths.base` lu dans `BASE_PATH` (appliqué au seul build de
+      publication, le développement reste à la racine de localhost) ; tous les chemins
+      absolus repris — chargements `/data/…`, navigation, marque, détection de route active,
+      portraits ; `trailingSlash: 'always'` pour que GitHub Pages serve des dossiers avec
+      `index.html` ; un `404.html` ; un workflow `.github/workflows/pages.yml`.
+      **Réglage manuel, une fois** : Settings → Pages → Source → **GitHub Actions**.
+      La démonstration a été servie depuis `feat/profils-et-images`. Le workflow est
+      désormais préparé pour publier `main` après la fusion F7, sans changer l'adresse.
+- [x] **F6 — Vérification finale, terminée le 2026-08-11** (phase 8 ouverte le 2026-08-02) :
+      routes et redirections · liens internes et externes · filtres et combinaisons ·
+      clavier et toucher · mobile et ordinateur · images, crédits et licences · tests ·
+      build statique · cohérence des chiffres publics · README et documents vivants.
+      **306 tests Python et tests front au vert**, build avec le sous-chemin de publication
+      réussi, quatre routes publiques et trois redirections générées, 209 reproductions
+      indexées présentes, chiffres et liens du README contrôlés. Aucun blocage réel relevé ;
+      les limites éditoriales et documentaires sont exposées dans le site et le README.
+- [ ] **F7 — Fusion et déploiement**, après validation finale seulement : état de la branche,
+      fusion des seuls travaux validés dans `main`, build de publication, déploiement,
+      vérification de la version réellement en ligne.
+
+### Ce qui bloque la publication, et ce qui peut attendre
+
+**Bloquant** — rien ne se publie tant que ce n'est pas traité :
+- ~~C5 / F2 — le texte de l'accueil~~ : **soldé le 2026-08-08**.
+- ~~C3 / F2 — le titre du volume~~ : **tranché le 2026-08-08**, « Autour des maîtres » conservé.
+- **C1** — la passe éditoriale sur les textes publiés, pour les pages traitées en F2 et F4.
+- **F5** — langue du document, favicon, titres et descriptions : une page publiée sans cela
+  est mal indexée et mal partagée.
+- **F6** — la vérification finale.
+
+**Non bloquant, assumé si le temps manque** :
+- **C11** — longueur des pages sur mobile (le sommaire par ancres est en place depuis le
+  2026-08-04, c'est lui qui rendait la longueur pénible).
+- **C2** — recherche d'autres règles héritées mal décrites : travail d'hygiène, sans effet
+  visible pour le lecteur.
+- **C6** — vérification page par page de « notice » / « œuvre » : la règle est tranchée
+  (2026-08-03), il ne reste qu'un contrôle de cohérence, prévu en F4 et F6.
+- Le sort de `/revisions` : une décision, pas un défaut.
+
+### Projet connexe après publication
+
+Une future **webapp interactive**, construite dans un projet séparé à partir des exports
+fiabilisés, est cadrée dans [`projet-webapp-interactive.md`](projet-webapp-interactive.md).
+Elle ne fait pas partie de F5 à F7 et ne doit pas rouvrir le chantier actuel. Le dépôt
+présent reste la source de vérité pour le traitement, la classification et les chiffres ;
+la future interface consommera un contrat de données versionné.
+
+---
+
 ## ★ EN COURS (2026-08-02) — Volume 1 : Autour des maîtres
 
 Objectif : publier un premier volume autonome, consacré aux artistes dont le nom apparaît
@@ -19,33 +173,246 @@ fusion finale.
       arbitré : la visualisation des mentions est conservable, la matrice des profils et la
       comparaison nationale sont abandonnées. La branche `refactor/analyse-maitres` reste
       intacte, jamais reportée en bloc.
-- [ ] **Phase 1 — Élargir la liste des artistes** (branche `data/maitres-lot-2`). Instruire
-      un lot borné de formes « à examiner » du registre, par notices prudentes décroissantes.
-      Vérification systématique, jamais fondée sur la notoriété : graphies regroupées,
-      identité de la personne, homonymes et ateliers séparés, seuil de dix références
-      distinctes, témoins réels et tests. Registre mis à jour avec les états exacts.
-- [ ] ⏸ **POINT DE CONTRÔLE 1** — rapport de lot, avant toute modification du front public.
-- [ ] **Phase 2 — Filtrer les œuvres par musée** dans l'onglet Œuvres : menu construit à
-      partir des seuls musées concernés par l'artiste affiché, effectifs indiqués, combinaison
-      avec le filtre par mention, compteur et pagination recalculés.
-- [ ] **Phase 3 — Relier musées et œuvres** : depuis la carte, ouvrir la liste des œuvres du
-      musée choisi, artiste conservé. Un seul système de filtrage, état partagé ou paramètres
-      d'URL, et le chemin inverse lisible.
-- [ ] **Phase 4 — Construire la page Présentation** : du nom lu sous une œuvre au corpus,
-      Joconde et les formulations prudentes, la sélection expliquée en clair, les chiffres du
-      volume, puis l'entrée dans l'exploration. Reprise sélective du prototype (export, tests,
-      première visualisation seulement).
-- [ ] **Phase 5 — Alléger « Explorer les maîtres »** : retirer la longue introduction, entrer
-      directement dans le répertoire, renvoyer discrètement vers la Présentation.
-- [ ] **Phase 6 — Adapter l'accueil** : affiche conservée, titre du volume, quelques chiffres
-      dynamiques, deux accès (Présentation, Explorer).
-- [ ] **Phase 7 — Finaliser la navigation** : Accueil · Présentation · Explorer les maîtres ·
-      Méthode. « Comprendre les mentions » quitte la navigation, son URL est redirigée.
-- [ ] ⏸ **POINT DE CONTRÔLE 2** — captures desktop et mobile des six écrans, fil éditorial,
-      chiffres publics, limites restantes. Avant fusion.
+- [x] **Phase 1 — Élargir la liste des artistes** (2026-08-02, branche `data/maitres-lot-2`).
+      Lot borné aux **50 formes du registre portant au moins 25 notices prudentes** (77 % des
+      notices restant à instruire). Relevé en une passe par `src/instruit_lot.py` : graphies,
+      musées, domaines, dates écrites par les musées, références. Test d'identité en trois
+      questions tranchées sur la source. **40 personnes retenues, 10 formes écartées avec
+      leur motif** ; 39 des 40 entrent dans le volume (voir le point de contrôle). Un
+      mécanisme ajouté, l'égalité stricte
+      « = », pour le seul Jacques-Louis David. 21 témoins réels et 35 cas unitaires de plus.
+      Chiffres : donnees.md ; arbitrages : decisions.md (bis à quinquies).
+- [x] ⏸ **POINT DE CONTRÔLE 1 — validé le 2026-08-02**, avec deux arbitrages :
+      1. **Barla hors périmètre** du volume, sans sortir du registre ni des totaux nationaux.
+         Un cinquième statut, « hors périmètre », avec motif publié ; ce n'est **pas** un faux
+         positif. Le volume publie donc **102 artistes** et **6 081 notices distinctes**
+         (24,8 % du doute national, 32 % hors monoculture).
+      2. **L'interface dit « artistes »**, plus « maîtres » — sauf pour décrire la relation
+         d'une œuvre à un artiste (atelier, école, entourage). L'effectif sort des titres et
+         se lit dans les données.
+- [x] **Phase 2 — Filtrer les œuvres par musée** (2026-08-02, branche
+      `feat/filtre-musee-oeuvres`). Liste native bornée aux musées qui conservent une œuvre
+      concernée de l'artiste affiché, effectif à côté du nom, tri par valeur décroissante,
+      reconstruite au changement d'artiste. **Deux filtres emboîtés** — le musée délimite, la
+      mention découpe à l'intérieur — pour qu'aucune puce n'annonce un nombre qu'elle ne rend
+      pas. Compteur, pagination et retour à la première page recalculés à chaque changement ;
+      état vide avec « Tout afficher ». `musee_code` (Muséofile) ajouté à l'export des œuvres,
+      avec l'invariant « œuvres par musée = points de la carte ». L'état du filtre vit dans la
+      page, prêt pour la phase 3. Vérifié au navigateur, desktop et mobile 390 px.
+- [x] **Phase 3 — Relier musées et œuvres** (2026-08-02). Tous les points de la carte se
+      choisissent (souris, toucher, Entrée, Espace) et ouvrent un **panneau persistant** au
+      flanc : nom, compte, formules, et l'action « Voir les N œuvres conservées dans ce musée »
+      — jamais dans l'infobulle, qui s'efface. L'action ouvre « Œuvres » avec le musée filtré,
+      artiste conservé. Accord au singulier prévu. **Le lien POP du musée à une seule notice
+      est conservé**, déplacé du point vers le panneau. L'action figure aussi dans la mention
+      hors cadre. Un seul état filtre (`museeActif`, dans la page) ; le point choisi est une
+      sélection de lecture. Trajet inverse vérifié au navigateur, desktop et mobile 390 px.
+      **Correction du même jour** : la règle « pas de carte en dessous de deux musées »
+      (2026-07-12) est supprimée — **tous les artistes ont leur carte**, y compris les 32 qui
+      n'ont qu'un musée. La carte est un repère géographique, pas un graphique de répartition
+      (decisions.md, octies).
+- [x] **Phase 4 — Construire la page Présentation** (2026-08-02, route `/presentation`).
+      Six temps : la notice réelle et ses mots exacts (Rembrandt, atelier, au Louvre — choix
+      déclaré, champs relus dans l'export et contrôlés) · du cas au volume · les chiffres
+      essentiels · **le texte de la sélection réécrit en trois blocs** (seuil · vérification
+      avec des cas réels · ce que la liste ne dit pas) · la visualisation **« Les mentions les
+      plus fréquentes »** · l'entrée dans l'exploration. **Pas de scrollytelling.** Reprise
+      sélective du prototype ; la ventilation par artiste et le comptage national par mention
+      ont quitté l'export avec les vues abandonnées. Invariants devenus relationnels, plus
+      aucun effectif figé. 290 tests au vert, desktop et mobile 390 px vérifiés.
+      **Reste à faire en phase 7** : mettre la page dans la navigation.
+- [x] **Phase 5 — Alléger « Explorer les artistes »** (2026-08-02). Introduction de deux
+      paragraphes retirée : elle réexpliquait ce que la Présentation dit désormais. Restent le
+      titre, le renvoi discret « Comment ces artistes ont-ils été sélectionnés ? » (vers
+      `/presentation`, plus vers la Méthode) et la sélection. Le répertoire commence à 249 px
+      du haut : l'outil entier tient sans défiler. La ligne de prudence part sans rien perdre
+      — le pied de page du site la porte déjà sur toutes les pages. L'effectif d'artistes
+      quitte cette page, il se lit sur la Présentation. Desktop et mobile 390 px vérifiés.
+- [x] **Phase 6 — Adapter l'accueil** (2026-08-02). Affiche conservée, un seul écran. Titre
+      du volume ajouté sous le nom du site. **Le total national (24 507) quitte la
+      couverture** — il demande une explication que l'accueil n'a pas à porter, et il vit sur
+      la Présentation ; la couverture porte les chiffres DU VOLUME, lus depuis
+      `corpus_maitres.json`. Slogan court, trois lignes : la zone sombre de l'affiche est
+      étroite, une phrase de plus et le texte devient illisible sur l'illustration (vérifié,
+      puis resserré). « Présentation » ouvre la navigation de couverture, « Explorer les
+      artistes » reste l'entrée principale. Desktop 1440 px et mobile 390 px vérifiés.
+- [x] **Phase 7 — Finaliser la navigation** (2026-08-02, `b40319c`). Quatre entrées,
+      identiques dans le bandeau et sur la couverture : Accueil · Présentation · Explorer les
+      artistes · Méthode. « Comprendre les mentions » sort ; **ses définitions des huit
+      mentions déménagent sur la Présentation**, sous le graphique qui les compte — elles
+      n'existaient nulle part ailleurs. `/echelle` redirige en 308 vers `/presentation` ; les
+      deux liens de la Méthode sont repointés. **Le mécanisme « à venir » est supprimé**
+      (champ `prete`, branche inerte), pas seulement ses entrées.
+- [x] ⏸ **POINT DE CONTRÔLE 2 — fait le 2026-08-03** (`08fbf78`), mené comme un **audit
+      préalable** et non comme une validation : douze captures (six écrans × desktop 1440 px
+      et mobile 390 px), pages longues capturées en entier. Le fil éditorial et les chiffres
+      tiennent ; **l'application n'est pas publiable en l'état** (constat utilisateur, partagé).
+      Six corrections de plus au registre, dont une bloquante. **Aucune fusion proposée.**
+      C7 à C10 corrigés dans la foulée (2026-08-03, `2b9e7d4`).
+### ✍ CHANTIER ÉDITORIAL FINAL (ouvert le 2026-08-03)
+
+Dernier chantier avant la phase 8. Il traite la copie publiée, de bout en bout, et solde
+l'essentiel du registre ci-dessous, au premier chef **C1** (tous les textes sont une première
+écriture, jamais retravaillée).
+
+**Règle de conduite du chantier, posée par l'utilisateur et non négociable :**
+
+> **Chaque tâche fait l'objet d'une discussion et d'un cadrage avec l'utilisateur AVANT son
+> lancement. Aucune proposition de texte, aucune implémentation ne doit être anticipée.**
+
+Autrement dit : on ne rédige rien tant que la tâche n'est pas cadrée, et on ne prend pas
+d'avance sur la tâche suivante. L'ordre ci-dessous est celui du travail, pas une liste de
+souhaits — la règle de vocabulaire vient en premier parce que tout le reste en dépend, et
+l'accueil en dernier parce qu'il résume ce que les autres pages auront fixé.
+
+- [x] **É1 — Règle d'emploi de « notice » et « œuvre » : TRANCHÉE le 2026-08-03** par
+      l'utilisateur, avant ouverture de la tâche. C'est une convention de registre — « notice »
+      côté méthode et données, « œuvre » côté lecteur —, sans remplacement mécanique.
+      Écrite dans decisions.md (2026-08-03 bis). **C6 n'est plus bloquant** : il ne reste
+      qu'une vérification de cohérence lors de la revue de chaque page.
+- [~] **É2 — Revoir la page Présentation. EN COURS** sur la branche
+      `feat/page-presentation` (26 commits au 2026-08-04). Faits, dans l'ordre :
+      l'ouverture en deux questions et ses resserrements ; les deux exemples de notices
+      (chapô commun, renvoi vers Méthode #doute) ; « Comment ces artistes ont été choisis »
+      ramené à un paragraphe ; la section chiffrée refondue (bandeau + graphique en trois
+      zones désignables, voir decisions.md 2026-08-04) ; le glossaire détaché ; le sommaire
+      par ancres, devenu un composant partagé avec la page Méthode (2026-08-04 bis).
+      **Les trois points en attente sont tranchés le 2026-08-05** (decisions.md du jour) :
+      la précaution sous le graphique ne nomme plus de direction de l'écran ; le bandeau de
+      titre entre dans la colonne de contenu, sur cette page ET sur Méthode ; le glossaire
+      garde les en-têtes du graphique et porte l'annotation de chaque zone.
+      **Reste à faire** : la relecture de fond des textes de la page, qui relève de **C1**.
+      **Mise à jour du 2026-08-07 : É2 est CLOSE.** La page a reçu ses trois arbitrages le
+      2026-08-05 (`a53301d`) puis le bandeau de titre et le sommaire partagé. La relecture
+      de fond reste due au titre de **C1**, avec les autres pages, et non comme un reliquat
+      de cette tâche.
+- [ ] **É3 — Revoir les textes de l'exploration des artistes.** → devient **F4**.
+- [x] **É4 — Revoir la page Méthode. FAITE**, en deux temps : la refonte de la page en six
+      questions, sept paliers, mergée le 2026-07-31 (`ecf8054`) — quatre visuels, provenance
+      mesurée, repères dans une page longue ; puis quatre reprises rédactionnelles les 4 et
+      5 août (decisions.md du 2026-08-05, bis à sexies) : réglages communs avec la page
+      Présentation, « Comment une attribution incertaine est-elle indiquée dans Joconde ? »,
+      « Que comptons-nous, et comment ? », « Comment la liste des artistes a-t-elle été
+      établie ? », et la fermeture sur « Limites et sources ».
+      Constaté a posteriori le 2026-08-07 : la case n'avait jamais été cochée, le travail
+      ayant été mené sur sa propre branche avant l'ouverture du chantier éditorial.
+- [ ] **É5 — Régler les questions éditoriales transversales**, notamment le titre du volume.
+      Recoupe **C3**. → traité dans **F2**, dont c'est le premier sujet.
+- [ ] **É6 — Revoir la page d'accueil, en dernier.** Traite **C5**. → devient **F2**.
+
+**Deux volets menés hors chantier éditorial, terminés au 2026-08-07 :**
+- [x] **Profils et portraits** (branche `feat/profils-et-images`, 2026-08-05 → 06). Les
+      **102 artistes sur 102** ont leur ligne de repérage (**C4**) ; **73 portraits** intégrés,
+      crédit et licence sous l'image. Pour les **29 sans portrait, on n'affiche rien** — ni
+      image de remplacement, ni mention d'absence (decisions.md, 2026-08-06 octies). Trois
+      demandes d'autorisation et un dessin restent du ressort de l'utilisateur : ils ne
+      bloquent rien.
+- [x] **Reproductions d'œuvres** (2026-08-06 → 07). **209 œuvres illustrées.** Commons par
+      identifiant, puis Gallica, puis le fonds d'imagerie de Commons. **La recherche est
+      close** : le Louvre n'accorde pas de licence ouverte sur ses photographies, Limédia est
+      inaccessible aux outils, et les deux tiers des œuvres sans image sont des objets uniques
+      dans des musées qui ne versent rien (donnees.md et decisions.md du 2026-08-07).
+
+---
+
+### ✎ REGISTRE DES CORRECTIONS — à traiter avant la fusion
+
+Ouvert le 2026-08-02 à la demande de l'utilisateur. Tout ce qui est repéré en chemin et
+volontairement remis à plus tard s'inscrit ICI, et **rien n'en sort sans avoir été traité**.
+Le registre est relu au point de contrôle 2, et les corrections sont portées en phase 8.
+
+- [ ] **C1 — Les textes publiés doivent être retravaillés.** → traité page par page dans
+      **F2** (fait le 2026-08-08) et **F4** ; les pages « Le projet » et Méthode ont été
+      reprises entre le 4 et le 5 août et n'attendent plus qu'une relecture de confort.
+      BLOQUANT pour les pages reprises. Toute la copie écrite pendant les
+      phases 0 à 7 est une PREMIÈRE ÉCRITURE : titres, chapôs, phrases de lecture des
+      graphiques, intitulés, textes de la page Présentation, notes d'unité. Elle est juste sur
+      le fond et vérifiée sur les chiffres, mais elle n'a pas été retravaillée. Prévoir une
+      passe éditoriale complète, page par page, avant publication — registre journalistique
+      sobre (CLAUDE.md), phrases courtes, aucune formule creuse, et surtout la relecture à voix
+      haute qui n'a pas eu lieu.
+- [x] **C5 — RÉSOLU le 2026-08-08** (F2, sujet 2) : texte remplacé en entier, sur le texte
+      de l'utilisateur, chiffres sortis des phrases et source complétée. Voir decisions.md du
+      jour. Constat d'origine conservé ci-dessous. Verdict utilisateur du
+      2026-08-02 : « dans l'état actuel il ne veut rien dire, c'est totalement incohérent,
+      abstrait et non publiable ». Ce qui ne va pas, pour que la réécriture parte de quelque
+      chose : « Quand le musée n'est pas sûr, il l'écrit » énonce une généralité sans dire de
+      quoi ni de qui ; « 102 artistes, 6 081 notices où il l'a écrit » répète le verbe de la
+      ligne précédente et laisse le lecteur sans image ; « une enquête dans les données des
+      musées » est une formule de dossier de presse, pas une accroche. Rien là-dedans ne
+      donne à voir une œuvre, un nom, une hésitation. L'affiche doit faire entrer, pas
+      résumer. **À réécrire d'un bloc, avec la contrainte de forme connue** : trois lignes
+      courtes maximum, la zone sombre de l'affiche étant étroite (decisions.md, undecies).
+- [x] **C6 — SOLDÉ pour l'exploration le 2026-08-09.** Le bloc des copies comptait en
+      notices à côté d'un total en œuvres ; un lien renvoyait encore à une « fiche publique ».
+      Balayage du texte rendu des trois onglets : toutes les occurrences restantes de
+      « notice » désignent des pages POP. Contrôle des autres pages : **F6**. (statut bloquant RETIRÉ le
+      2026-08-03 : c'est une convention, pas un défaut — decisions.md, 2026-08-03 bis).
+      **« notice »** pour la méthode, les données et les explications techniques ;
+      **« œuvre »** pour l'interface, les légendes, les bulles et les textes destinés au
+      lecteur ; **aucun remplacement mécanique**. Il reste à vérifier, au moment où chaque
+      page est revue, que le mot employé correspond bien au registre de la page. Constat
+      d'origine, qui reste à trancher au cas par cas :
+      Relevé à l'audit du 2026-08-03. Pour un seul artiste, la même quantité change de nom
+      d'un onglet à l'autre : le bandeau dit « 310 **œuvres** sont associées à son nom », le
+      graphique « part parmi les **œuvres** concernées », l'onglet Œuvres « 310 **œuvres**
+      portent une mention prudente » — mais la carte dit « 276 **notices** concernées », le
+      bloc des copies « 354 **notices** », et la Présentation comme l'accueil comptent en
+      **notices**. Pire, dans le panneau de la carte, les deux mots se suivent : « 276 notices
+      concernées » puis « Voir les 276 **œuvres** conservées dans ce musée ». Le projet a une
+      règle stricte là-dessus (une notice n'est pas une œuvre, et le site ne compte pas des
+      œuvres) : c'est elle qui n'est pas tenue. **À trancher une fois pour toutes et à
+      appliquer partout, avant toute publication.**
+- [x] **C7 — RÉSOLU le 2026-08-03.** L'effectif s'affiche au-dessus de la recherche, sur
+      ordinateur, dans le registre UI du répertoire (« 102 artistes »). La valeur vient de
+      `artistes.json`, jamais d'un nombre écrit à la main — vérifié en comparant l'affichage à
+      la longueur du tableau chargé. Pas de doublon sur mobile, où le bouton de repli la porte
+      déjà.
+- [x] **C8 — RÉSOLU le 2026-08-03.** Choisir un point ferme l'infobulle de survol : le
+      panneau prend le relais, seul. Vérifié — au survol, un élément flottant sur la carte ;
+      après le clic, zéro, et le panneau est ouvert. Le titre de la vue n'est plus recouvert.
+- [x] **C9 — RÉSOLU le 2026-08-03.** Le lieu disparaît des entrées quand un filtre par musée
+      est actif, et revient dès qu'on le retire. Vérifié : 0 mention répétée avec le filtre,
+      8 sans.
+- [x] **C10 — RÉSOLU le 2026-08-03.** Le cadre vide est remplacé par une mention brève en
+      tête de la colonne du média : **220 px de hauteur → 20 px**. Les entrées qui portent une
+      image ne bougent pas (gabarit 176 × 220 px, inchangé), et les titres restent alignés sur
+      une seule abscisse d'une entrée à l'autre.
+- [~] **C11 — Longueur des pages sur mobile.** → **F3**. NON BLOQUANT. Mesuré au 2026-08-03 : Méthode **9 294 px**,
+      Présentation **6 175 px**, onglet Œuvres filtré 3 299 px. **Le sommaire manquant est
+      traité** : la Présentation a le même rail que la Méthode depuis le 2026-08-04, et le
+      mécanisme est devenu un composant partagé (`lib/SommaireAncres.svelte`). Reste la
+      longueur elle-même, à reprendre avec la passe éditoriale (C1).
+- [ ] **C2 — Chercher les règles héritées qui décrivent mal ce qu'on regarde.** → **F3**, au
+      fil des éléments examinés. NON BLOQUANT. **Une deuxième trouvée le 2026-08-08** :
+      « l'aplat sombre de l'affiche est étroit, trois lignes courtes maximum » — il fait en
+      réalité 700 × 620 px, et cette règle avait plafonné la réécriture de l'accueil pendant
+      trois semaines. Une première avait été
+      trouvée et corrigée le 2026-08-02 : « pas de carte en dessous de deux musées », qui
+      traitait un repère géographique comme un graphique de répartition. Le défaut n'était pas
+      dans le seuil mais dans la description. En chercher d'autres du même ordre.
+- [x] **C3 — TRANCHÉ le 2026-08-08** (F2, sujet 1) : « Autour des maîtres » est CONSERVÉ, la
+      cohabitation est assumée et justifiée, elle n'est pas une incohérence. Constat
+      d'origine conservé. L'interface dit « Explorer les
+      artistes » ; le volume s'intitule « Autour des maîtres ». Ici « maître » se lit dans son
+      sens relationnel (les œuvres autour du maître), ce qui reste conforme à la règle du
+      2026-08-02 — mais la cohabitation mérite un arbitrage.
+- [x] **C4 — RÉSOLU le 2026-08-06.** Les 39 artistes du lot 2 ont leur ligne de repérage :
+      `editorial-maitres.js` couvre les **102 sur 102**, vérifié par comparaison avec
+      `artistes.json` (0 manquante, 0 clé orpheline). Méthode dans decisions.md du jour —
+      Joconde d'abord (elle date 31 des 39 dans son champ auteur), notice d'autorité ensuite
+      et seulement si les dates concordent, rien sinon. Gabarit étendu à « actif entre X
+      et Y » (Hennault) et « après Y » (Willermet). Un homonyme écarté par le musée
+      conservateur : Charles du Ry, vers 1568-1655, et non l'architecte de Kassel.
+
+---
+
 - [ ] **Phase 8 — Vérification et publication** : chiffres, combinaisons de filtres, liens,
       images et crédits, mobile, clavier, tests, build, routes et redirections, docs à jour,
-      fusion des seules branches validées.
+      **registre des corrections soldé**, fusion des seules branches validées.
+      **Reprise le 2026-08-07 sous le nom de F6 (vérification) et F7 (fusion et
+      déploiement)**, dans le plan de finalisation en tête de document. Le contenu ne change
+      pas ; s'y ajoute la préparation technique au déploiement, isolée en **F5**.
 
 ---
 
@@ -179,7 +546,55 @@ et préparation SEULEMENT (front non touché, aucune image téléchargée à ce 
       image fiable ; P347 reste la seule source sûre, total réutilisable **inchangé à 184**.
       Tests + bilan `commons_bilan.json` à jour. `commons_match.py` (parser/comparaison
       dimensions, testés).
-- Réserve : les autres statuts (145 exacts sans image, 47 candidats inventaire faibles, 792
+- [x] **Extension au corpus complet — phase 4, temps 1 : Commons** (2026-08-06). La recherche
+      de juillet portait sur **3 668 références**, le corpus des 63 artistes d'alors ; les
+      **2 413 références du lot 2 n'avaient jamais été examinées**. Métadonnées régénérées
+      (6 081 réf., inventaire à 100 %), puis passe P347 sur tout le corpus.
+      **Rendement : 22 correspondances exactes de plus, 8 images — 0,9 %**, quand le premier
+      lot en donnait 9 %. Total : **351 exactes, 192 images ouvertes** (+8), 159 exactes sans
+      image, 47 candidats faibles sur 25 réf.
+      **L'apport ne va PAS au lot 2** : sept des huit images sont des Jacques-Louis David
+      (corpus initial, enrichi sur Wikidata depuis juillet), une seule concerne un artiste du
+      lot 2 (Nicasius Bernaerts). Les huit ont été contrôlées à l'œil, une par une.
+      **Conclusion : Commons est épuisé pour ce corpus.** Les musées du lot 2 — musée de
+      l'Image d'Épinal en tête, 519 œuvres sans reproduction — relèvent de l'imagerie
+      populaire, quasi absente de Wikidata. La suite passe par les bibliothèques numériques
+      (Gallica) et les collections ouvertes de musées.
+- [x] **Phase 4, temps 2 : Gallica** (2026-08-06) — `src/build_gallica.py`. Périmètre : les
+      **355 œuvres sans image dont Joconde nomme Pellerin comme éditeur**, c'est-à-dire
+      l'imagerie populaire, seule matière que Gallica puisse rendre ici.
+      **14 exactes, 0 candidate, 255 refusées, 86 introuvables** → **206 œuvres illustrées**.
+      Ces images montrent **un autre exemplaire du même tirage**, jamais la feuille décrite
+      par la notice : la mention est écrite sous l'image. Premier motif de refus : le musée
+      conserve plusieurs notices du même titre, l'exemplaire visé serait indéterminé.
+      Les quatorze ont été contrôlées à l'œil ; toutes portent la mention Pellerin imprimée.
+      États normalisés `exacte / candidate / refusee / introuvable` dans
+      `gallica_correspondances.{json,csv}`.
+- [x] **Phase 4, temps 3 : les autres bibliothèques et les collections de musées**
+      (2026-08-07) — `src/build_imagerie_commons.py`, `docs/donnees.md`, decisions.md du jour.
+      Cinq sources instruites pour les artistes du lot 2 :
+      **Louvre écarté** — la question laissée ouverte ici est tranchée, et dans le même sens
+      que l'audit POP : ses photographies ne sont pas sous licence ouverte (usage privé,
+      muséographique, scientifique ou pédagogique ; toute autre diffusion sur demande écrite).
+      Seul le texte des notices est en Licence Ouverte. 461 dessins du lot 2 restent sans image.
+      **Limédia galeries écarté** — licence ouverte annoncée sur le domaine public, mais site
+      protégé par une vérification anti-robot. Même règle que Geneanet : on ne contourne pas.
+      **Fonds d'imagerie sur Commons retenu** — catégorie « Images d'Épinal » et ses
+      sous-catégories moissonnées (1 507 fichiers, tous sous licence ouverte). Sur 465 estampes :
+      **4 exactes, 289 refusées, 182 introuvables** → **3 images nouvelles, 209 œuvres illustrées**.
+      Onze rapprochements regardés un par un, **dix écartés** malgré un titre juste.
+      **Le numéro de planche entre dans la méthode** : `Precisions_inscriptions` ajouté aux
+      métadonnées, 410 des 465 estampes portent leur numéro ; c'est un discriminant, jamais
+      une clé (chaque maison a sa numérotation). 13 tests, `tests/test_imagerie_commons.py`.
+      **Constat de clôture** : les deux tiers des œuvres sans image sont des objets uniques
+      (dessins, photographies anciennes) dans des musées qui ne versent rien sous licence
+      ouverte — vérifié sur les onze musées concernés. La recherche d'images est close pour
+      ce corpus, sauf ouverture nouvelle d'une institution.
+- [ ] **Reste possible : Paris Musées** — API sous clé, à demander (démarche utilisateur, comme
+      les autorisations de portraits). Donnerait les photographies de Jersey de la Maison de
+      Victor Hugo en CC0, à confronter aux 52 notices de Vacquerie et Charles Hugo au musée
+      d'Orsay — autre tirage du même négatif, avec la mention qui s'impose.
+- Réserve : les autres statuts (159 exacts sans image, 47 candidats inventaire faibles, 792
   `unknown` POP / Levier A) restent hors affichage — matière pour un prochain lot si on le décide.
 
 ---

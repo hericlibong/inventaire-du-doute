@@ -16,6 +16,7 @@ Usage : uv run pytest
 import csv
 import json
 import sys
+from collections import Counter
 from pathlib import Path
 
 import pytest
@@ -101,12 +102,81 @@ CAS_IDENTITE = [
     ("CORNEILLE DE LYON", "Corneille de Lyon", "distinct de Corneille Michel-Ange"),
     ("PIPPI Giulio", "Jules Romain", "Giulio Pippi dit Jules Romain"),
     ("JOYANT Jules Romain", None, "homonyme écarté"),
+
+    # --- lot 2 (2026-08-02) : l'égalité stricte « = », le nom nu et rien d'autre
+    ("David (1748-1825) (attribué à)", "Jacques-Louis David", "le maître"),
+    ("DAVID Jacques-Louis", "Jacques-Louis David", "son état civil"),
+    ("DAVID D'ANGERS Pierre-Jean", None, "le sculpteur, 1 363 mentions certaines"),
+    ("DAVID Gérard (attribué à)", None, "le primitif flamand"),
+    ("DAVID Jérôme (?)", None, "le graveur"),
+    ("DAVID Michel-Antoine", None, "encore un autre"),
+    ("TENIERS David (attribué à)", "David Téniers", "David en prénom, déjà retenu"),
+    # --- lot 2 : les graphies rapprochées, vérifiées sur les dates du musée
+    ("PINOT Charles François (dessinateur, attribué à)", "Charles François Pinot",
+     "sa graphie longue"),
+    ("PINOT Charles (dessinateur, attribué à)", "Charles François Pinot",
+     "sa graphie courte, mêmes dates (1817-1874)"),
+    ("IMAGERIE PINOT-SAGAIRE", None, "la raison sociale, pas l'homme"),
+    ("Ensfelder Eugène (1836-1876) (attribué à)", "Charles Eugène Ensfelder",
+     "« Eugène » et « Charles Eugène » ont les mêmes dates"),
+    ("HOGENBERG Frans", "Frans Hogenberg", "sa graphie flamande"),
+    ("HOGENBERG Nicolas", None, "un autre graveur de la famille"),
+    ("COTER Colijn de", "Colijn de Coter", "l'ordre inverse du même nom"),
+    # --- lot 2 : les parents séparés, jamais fusionnés
+    ("DUTHOIT Louis (?)", "Louis Duthoit", "le frère cadet"),
+    ("DUTHOIT Aimé (?)", "Aimé Duthoit", "le frère aîné"),
+    ("PASSE Crispin I Van de (?, graveur)", "Crispin de Passe l'Ancien", "le père"),
+    ("PASSE Crispin II Van de (?, graveur)", "Crispin de Passe le Jeune",
+     "le fils : « I » ne capture pas « II »"),
+    ("TURPIN DE CRISSE Lancelot Théodore Comte de (?)", "Turpin de Crissé",
+     "le fils, retenu"),
+    ("TURPIN DE CRISSE Père (?, dessinateur)", None,
+     "le père, désigné par son seul rang de famille"),
+    ("ALLEAUME Ludovic", None, "son frère"),
+    ("POLLAIUOLO Piero", None, "son frère"),
+    ("HUGO Charles (?)", "Charles Hugo", "le fils photographe"),
+    ("HUGO Victor", None, "le père écrivain"),
+    # --- lot 2 : ce qui n'est pas une personne, ou pas une personne nommée
+    ("MELLET Jules Fils (?)", None, "atelier de famille, aucun prénom individualisant"),
+    ("PELLERIN (imprimeur, éditeur, attribué à)", None, "l'imagerie d'Épinal"),
+    ("MOGHOLE DE MURSHIDABAD (école)", None, "une école régionale"),
+    ("PETER (attribué à)", None, "un nom sans prénom"),
+    ("VARADY A (attribué à)", None, "un prénom réduit à une initiale"),
+    ("BUQUET (atelier)", None, "un nom nu et un atelier"),
+    ("Prévost (atelier)", None, "un nom nu et un atelier"),
+    ("Barla Jean-Baptiste (1817-1896) (attribué à)", None,
+     "identifié, mais hors du périmètre du volume (voir test_hors_perimetre)"),
+    ("BARLA Antoinette", None, "une autre Barla"),
 ]
 
 
 @pytest.mark.parametrize("segment,attendu,motif", CAS_IDENTITE)
 def test_identite(segment, attendu, motif):
     assert _trouve_maitre(_pivot(segment)) == attendu, motif
+
+
+# --------------------------------------------------------------------------
+# 1 bis. Hors périmètre : identifié, compté, mais pas dans le volume
+# --------------------------------------------------------------------------
+
+def test_hors_perimetre_reste_identifie():
+    """Une personne hors périmètre n'est PAS un faux positif : les exports du
+    volume l'ignorent, le registre la retrouve et la compte (2026-08-02)."""
+    from build_artistes import (HORS_PERIMETRE, MOTIF_HORS_PERIMETRE,
+                                TOUTES_PERSONNES)
+    segment = "Barla Jean-Baptiste (1817-1896) (attribué à)"
+    assert _trouve_maitre(_pivot(segment)) is None, "absent du volume"
+    assert _trouve_maitre(_pivot(segment), TOUTES_PERSONNES) == \
+        "Jean-Baptiste Barla", "mais bien identifié par le registre"
+    # chaque sortie de périmètre porte un motif publiable, comme les écarts
+    assert all(m.strip() for m in MOTIF_HORS_PERIMETRE.values())
+    assert len(HORS_PERIMETRE) == len(MOTIF_HORS_PERIMETRE)
+
+
+def test_hors_perimetre_absent_de_la_table_du_volume():
+    """Aucune personne hors périmètre ne doit se glisser dans MAITRES."""
+    from build_artistes import MAITRES, MOTIF_HORS_PERIMETRE
+    assert not {n for n, *_ in MAITRES} & set(MOTIF_HORS_PERIMETRE)
 
 
 # --------------------------------------------------------------------------
@@ -178,13 +248,21 @@ CAS_STATUT = [
     ("CARRACCI L'UN DES", "CARRACCI l'un des (attribué à)", "écarté",
      "mention collective"),
     ("A", "Attribué à", "écarté", "la mention ne porte aucun nom"),
-    # ceux-là restent OUVERTS : rien dans les données ne permet de les retirer
+    # --- instruits au lot 2 (2026-08-02) : la réponse est écrite, dans un sens
+    # comme dans l'autre
     ("BARLA JEAN-BAPTISTE", "Barla Jean-Baptiste (1817-1896) (attribué à)",
-     "à instruire", "fonds local massif, mais c'est une personne"),
-    ("DAVID", "David (1748-1825) (attribué à)", "à instruire",
-     "probablement Jacques-Louis David : à vérifier, pas à écarter"),
-    ("MELLET JULES FILS", "MELLET Jules Fils (?)", "à instruire",
-     "« fils » désigne une personne d'une dynastie, pas un atelier"),
+     "hors périmètre", "identifié et compté, mais hors de l'angle du volume"),
+    ("DAVID", "David (1748-1825) (attribué à)", "retenu",
+     "Jacques-Louis David, pris par égalité stricte"),
+    ("MELLET JULES FILS", "MELLET Jules Fils (?)", "écarté",
+     "instruit puis écarté : les mêmes notices nomment les trois Mellet"),
+    ("PELLERIN", "Pellerin (imprimeur, éditeur, attribué à)", "écarté",
+     "instruit puis écarté : une raison sociale"),
+    # celui-là reste OUVERT : rien dans les données ne permet de le retirer, et
+    # il n'a pas encore été regardé
+    ("CASTIGLIONE GIOVANNI BENEDETTO",
+     "Castiglione Giovanni Benedetto (1609-1664) (attribué à)",
+     "à instruire", "sous le seuil du lot 2, jamais examiné"),
 ]
 
 
@@ -273,3 +351,38 @@ def test_reference_reelle(ligne):
     categorie, famille, _ = resolu[attendu]
     assert categorie == ligne["categorie_attendue"], ligne["motif"]
     assert famille == (ligne["famille_attendue"] or None), ligne["motif"]
+
+
+# --------------------------------------------------------------------------
+# 4. Position d'un musée (2026-08-05)
+# --------------------------------------------------------------------------
+# Joconde publie parfois plusieurs positions sous le même code Muséofile : 59
+# musées sur 548 au 2026-08-05. Tant que le pipeline retenait la première
+# rencontrée, le musée Goya de Castres s'affichait dans la Manche sur la fiche
+# de Ribera — et le même musée pouvait sauter d'une fiche à l'autre. Les cas
+# ci-dessous sont les valeurs RÉELLES relevées dans la base ce jour-là.
+
+def test_coord_musee_retient_la_position_majoritaire():
+    """Castres : 1 114 notices dans le Tarn, 143 dans la Manche."""
+    from build_artistes import coord_du_musee
+    retenue = coord_du_musee(Counter({"43.604813, 2.239888": 1114,
+                                      "49.15731, -1.236823": 143}))
+    assert retenue == "43.604813, 2.239888"
+
+
+def test_coord_musee_regroupe_les_positions_voisines():
+    """Chantilly : la position isolée est la plus fréquente (6 567), mais les
+    deux écritures de Chantilly totalisent 7 049 — c'est la grappe qui compte,
+    sinon le musée Condé part en Lot-et-Garonne."""
+    from build_artistes import coord_du_musee
+    retenue = coord_du_musee(Counter({
+        "44.204302, 0.648652": 6567,
+        "49.19397, 2.48522": 4348,
+        "49.19413375188932, 2.485123295821842": 2701}))
+    assert retenue.startswith("49.19")
+
+
+def test_coord_musee_sans_position_utilisable():
+    from build_artistes import coord_du_musee
+    assert coord_du_musee(Counter({"nan": 12})) is None
+    assert coord_du_musee(Counter()) is None

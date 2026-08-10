@@ -24,6 +24,7 @@
   {
    "reference": "000PE014608",
    "titre": "SUJET PASTORAL",
+   "musee_code": "M0913",
    "musee": "musée des beaux-arts",
    "ville": "Marseille",
    "code": "attribue",
@@ -32,6 +33,7 @@
   {
    "reference": "000PE021910",
    "titre": "SACRIFICE A PRIAPE",
+   "musee_code": "M0065",
    "musee": "musée des beaux-arts",
    "ville": "Bordeaux",
    "code": "ecole_de",
@@ -40,6 +42,7 @@
   {
    "reference": "50510032134",
    "titre": "Château fortifié sur un rocher",
+   "musee_code": "M5051",
    "musee": "musée de l'Ecole nationale supérieure des beaux-arts",
    "ville": "Paris",
    "code": "attribue",
@@ -48,6 +51,7 @@
   {
    "reference": "50350209861",
    "titre": "Paysage avec un berger guidant un cavalier appuyé sur sa lance",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -56,6 +60,7 @@
   {
    "reference": "50350209825",
    "titre": "La Chasse de Méléagre et Atalante",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -64,6 +69,7 @@
   {
    "reference": "07430005253",
    "titre": "Putto",
+   "musee_code": "M0743",
    "musee": "musée des Beaux-Arts",
    "ville": "Nantes",
    "code": "genre_de",
@@ -72,6 +78,7 @@
   {
    "reference": "07430005266",
    "titre": "Putto",
+   "musee_code": "M0743",
    "musee": "musée des Beaux-Arts",
    "ville": "Nantes",
    "code": "genre_de",
@@ -80,6 +87,7 @@
   {
    "reference": "50350037169",
    "titre": "Six études de têtes casquées et une étude de femme à mi-corps...",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -88,6 +96,7 @@
   {
    "reference": "50350043225",
    "titre": "Cheval marin, vu de profil vers la droite",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -96,6 +105,7 @@
   {
    "reference": "50350043226",
    "titre": "Serpent enroulé sur lui-même",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -104,6 +114,7 @@
   {
    "reference": "50350043227",
    "titre": "Etudes de figures",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -112,6 +123,7 @@
   {
    "reference": "50350209843",
    "titre": "Flore et Zéphyr",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -120,6 +132,7 @@
   {
    "reference": "50350209832",
    "titre": "Renaud enchaîné pendant son sommeil",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -128,6 +141,7 @@
   {
    "reference": "50350209833",
    "titre": "Le Frappement du rocher",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -136,6 +150,7 @@
   {
    "reference": "50350209847",
    "titre": "Hercule consultant l'oracle de Delphes",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -144,6 +159,7 @@
   {
    "reference": "50350209849",
    "titre": "Trois études d'autels et d'un vase antiques",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -152,6 +168,7 @@
   {
    "reference": "50350209848",
    "titre": "Hercule enlève Déjanire",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -160,6 +177,7 @@
   {
    "reference": "50350209862",
    "titre": "Bacchanale",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -168,6 +186,7 @@
   {
    "reference": "50350209839",
    "titre": "L'Assomption de la Vierge",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -176,6 +195,7 @@
   {
    "reference": "50350209864",
    "titre": "Quatre amours cueillant des pommes",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -184,6 +204,7 @@
   {
    "reference": "50350209850",
    "titre": "Etudes de vases et autels antiques",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -192,6 +213,7 @@
   {
    "reference": "50350209826",
    "titre": "Deux putti, l'un debout et l'autre à genoux",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -200,6 +222,7 @@
   {
    "reference": "50350209910",
    "titre": "Hercule et Omphale",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -208,6 +231,7 @@
   {
    "reference": "50350209912",
    "titre": "Bacchanale ou Les Rites de Mutinus ou Offrandes à Priape",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -216,6 +240,7 @@
   {
    "reference": "50350209911",
    "titre": "Paysage",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -224,6 +249,7 @@
   {
    "reference": "50350209845",
    "titre": "Vénus ou nymphe endormie entourée de trois amours",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -232,6 +258,7 @@
   {
    "reference": "50350209851",
    "titre": "Etudes de têtes et de personnages",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -240,6 +267,7 @@
   {
    "reference": "50350209846",
    "titre": "La Nourriture de Bacchus",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -248,6 +276,7 @@
   {
    "reference": "50350209852",
    "titre": "Feuille d'études",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -256,6 +285,7 @@
   {
    "reference": "50350209831",
    "titre": "La Crucifixion",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -264,6 +294,7 @@
   {
    "reference": "50350209827",
    "titre": "Un homme à genoux dans une barque tient un enfant",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -272,6 +303,7 @@
   {
    "reference": "50350209844",
    "titre": "Jupiter et Antiope",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -280,6 +312,7 @@
   {
    "reference": "50350209842",
    "titre": "Pastorale",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -288,6 +321,7 @@
   {
    "reference": "50350209840",
    "titre": "Le Ravissement de saint Paul",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -296,6 +330,7 @@
   {
    "reference": "50350209838",
    "titre": "La Crucifixion",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -304,6 +339,7 @@
   {
    "reference": "50350209841",
    "titre": "Saint Denis effrayant ses boureaux et deux croquis préparatoires",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -312,6 +348,7 @@
   {
    "reference": "50350209854",
    "titre": "Etude d'après un décor antique",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -320,6 +357,7 @@
   {
    "reference": "50350209865",
    "titre": "Paysage avec une tour dominant un torrent",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -328,6 +366,7 @@
   {
    "reference": "50350209828",
    "titre": "Paysage avec une ferme maison entourée de petits arbres sur une colline",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -336,6 +375,7 @@
   {
    "reference": "50350216042",
    "titre": "Etude d'un autel antique",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -344,6 +384,7 @@
   {
    "reference": "50350503367",
    "titre": "Etude d'après un groupe antique",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -352,6 +393,7 @@
   {
    "reference": "50350503366",
    "titre": "Esquisse d'un paysage",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -360,6 +402,7 @@
   {
    "reference": "50350503376",
    "titre": "Etudes de bras, de pieds et petits croquis",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -368,6 +411,7 @@
   {
    "reference": "01320016773",
    "titre": "Jésus remettant les clés à saint Pierre",
+   "musee_code": "M0132",
    "musee": "musée Bonaparte",
    "ville": "Auxonne",
    "code": "ecole_de",
@@ -376,6 +420,7 @@
   {
    "reference": "01320016774",
    "titre": "Le Crucifiement",
+   "musee_code": "M0132",
    "musee": "musée Bonaparte",
    "ville": "Auxonne",
    "code": "ecole_de",
@@ -384,6 +429,7 @@
   {
    "reference": "07290022377",
    "titre": "Saint Denis ; Saint Denis l'Aéropagite couronné par un ange",
+   "musee_code": "M0729",
    "musee": "musée des beaux-arts",
    "ville": "Rouen",
    "code": "attribue",
@@ -397,12 +443,13 @@
     "licence": "Public domain",
     "licence_url": "",
     "source": "https://commons.wikimedia.org/wiki/File:Saint_Denis_l%27Ar%C3%A9opagite_couronn%C3%A9_par_un_ange_-_Poussin_-_MBA_Rouen.jpg",
-    "verifie_le": "2026-07-29"
+    "verifie_le": "2026-08-06"
    }
   },
   {
    "reference": "05120002906",
    "titre": "Etudes de casques antiques",
+   "musee_code": "M0512",
    "musee": "musée des Beaux-Arts",
    "ville": "Nancy",
    "code": "attribue",
@@ -411,6 +458,7 @@
   {
    "reference": "M0341000308",
    "titre": "Moïse sauvé des eaux",
+   "musee_code": "M0341",
    "musee": "musée Sarret de Grozon",
    "ville": "Arbois",
    "code": "genre_de",
@@ -418,7 +466,7 @@
   }
  ],
  "version_donnee": "2026-07-01",
- "date_generation": "2026-07-28T14:49:21+00:00",
+ "date_generation": "2026-08-05T18:41:37+00:00",
  "source": "Collections des musées de France : base Joconde",
  "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
 }

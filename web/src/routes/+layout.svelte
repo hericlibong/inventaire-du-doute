@@ -1,66 +1,88 @@
 <script>
 	import '$lib/styles/tokens.css';
 	import '$lib/styles/fonts.css';
-	import favicon from '$lib/assets/favicon.svg';
 	import { page } from '$app/stores';
+	import { base } from '$app/paths';
+	import { Globe, Mail } from '@lucide/svelte';
+	import SiGithub from '@icons-pack/svelte-simple-icons/icons/SiGithub';
 
 	let { children } = $props();
 
+	// Le site est publié dans un SOUS-RÉPERTOIRE sur GitHub Pages : `pathname` vaut
+	// alors « /inventaire-du-doute/artistes/ » et non « /artistes ». On le dépouille
+	// de son préfixe une fois pour toutes, et tout le reste raisonne sur des routes
+	// internes, comme avant (2026-08-10). Le slash final vient de
+	// `trailingSlash: 'always'`, nécessaire à GitHub Pages ; il est retiré ici pour
+	// que les comparaisons restent celles d'origine.
+	const route = $derived(
+		($page.url.pathname.slice(base.length) || '/').replace(/(.)\/$/, '$1')
+	);
+
 	// Page courante = accueil sur « / » exact, sinon préfixe de la route.
-	const estActif = (href) =>
-		href === '/' ? $page.url.pathname === '/' : $page.url.pathname.startsWith(href);
+	const estActif = (href) => (href === '/' ? route === '/' : route.startsWith(href));
 
 	// L'accueil est une couverture pleine page : la coquille (masthead) y est masquée.
-	const estAccueil = $derived($page.url.pathname === '/');
+	const estAccueil = $derived(route === '/');
 
 	// Routes en PLEINE LARGEUR (direction « affiche ») : accueil + pages refondues.
 	// Elles gèrent leurs propres gouttières ; les pages pas encore refondues gardent
-	// la colonne centrée. On étend cette liste à chaque chantier (C3, C4).
+	// la colonne centrée.
 	const estPleine = $derived(
-		$page.url.pathname === '/' ||
-			$page.url.pathname.startsWith('/les-presque') ||
-			$page.url.pathname.startsWith('/echelle') ||
-			$page.url.pathname.startsWith('/methode')
+		route === '/' ||
+			route.startsWith('/projet') ||
+			route.startsWith('/artistes') ||
+			route.startsWith('/methode')
 	);
 
-	// Navigation publique recentrée à QUATRE entrées actives (architecture-
-	// editoriale.md §2). Les rubriques en réserve (Les révisions, La carte) ne
-	// figurent plus ici : leur code et leurs données restent au dépôt, mais elles
-	// sont sorties de la nav publique tant qu'elles ne sont pas intégrées à la
-	// publication recentrée. Le champ `prete` (et la branche « à venir ») est
-	// conservé pour de futures entrées.
+	// Les rubriques en réserve (Les révisions, La carte) ne figurent pas ici : leur
+	// code et leurs données restent au dépôt, hors de la navigation publique tant
+	// qu'elles ne sont pas publiées — elles seront la matière d'autres volumes.
+	//
+	// Navigation publique du volume 1 : trois entrées dans l'ordre de lecture.
+	// « Méthode » a rejoint le footer après observation de la démonstration mobile :
+	// elle reste accessible partout et depuis les renvois contextuels, sans mettre
+	// au même rang l'outil principal et sa documentation. « Comprendre les mentions »
+	// en est sortie auparavant — ses
+	// définitions ont rejoint « Le projet », sous le graphique qui les compte, et
+	// son ancienne URL redirige.
+	//
+	// Le champ `prete` et la branche « à venir » ont été SUPPRIMÉS avec elle. Ils
+	// permettaient d'afficher une rubrique non publiée en lien inerte ; la consigne
+	// est de ne pas annoncer les volumes suivants de cette façon. Retirer le
+	// mécanisme, et pas seulement les entrées, évite qu'il resserve un jour.
 	const briques = [
-		{ titre: 'Accueil', href: '/', prete: true },
-		{ titre: 'Explorer les maîtres', href: '/les-presque', prete: true },
-		{ titre: 'Comprendre les mentions', href: '/echelle', prete: true },
-		{ titre: 'Méthode', href: '/methode', prete: true }
+		{ titre: 'Accueil', href: '/' },
+		// Libellé public renommé le 2026-08-08 : « Le projet » dit de quoi la page
+		// parle, quand « Présentation » ne disait que ce qu'elle est. La route ne
+		// bouge pas — elle a circulé.
+		{ titre: 'Le projet', href: '/projet' },
+		{ titre: 'Explorer les artistes', href: '/artistes' }
 	];
 </script>
 
 <svelte:head>
-	<link rel="icon" href={favicon} />
+	<!-- Monogramme « Id » en Fraunces vectorisée, sur l'aplat navy de la couverture
+	     (2026-08-10). Il remplace le logo Svelte livré par défaut, qui aurait mis la
+	     marque du framework dans l'onglet et les favoris. Les tracés sont dans le
+	     SVG : aucune webfont n'est chargée pour l'afficher. -->
+	<link rel="icon" href="{base}/favicon.svg" type="image/svg+xml" />
 </svelte:head>
 
 {#if !estAccueil}
 <header>
 	<!-- Charte v2 : bandeau navy (registre de la couverture), texte ivoire. -->
 	<div class="masthead">
-		<a class="marque" href="/">L'inventaire du doute</a>
+		<a class="marque" href="{base}/">L'inventaire du doute</a>
 		<nav aria-label="Navigation principale">
 			<ul>
 				{#each briques as brique (brique.href)}
 					<li>
-						{#if brique.prete}
-							<a
-								href={brique.href}
-								class:actif={estActif(brique.href)}
-								aria-current={estActif(brique.href) ? 'page' : undefined}
-							>
-								{brique.titre}
-							</a>
-						{:else}
-							<span class="a-venir" title="À venir">{brique.titre}</span>
-						{/if}
+						<a
+							href="{base}{brique.href}"
+							aria-current={estActif(brique.href) ? 'page' : undefined}
+						>
+							{brique.titre}
+						</a>
 					</li>
 				{/each}
 			</ul>
@@ -73,17 +95,46 @@
 	{@render children()}
 </main>
 
-{#if !estAccueil}
-<footer>
-	<p>
-		Source unique : base Joconde (Ministère de la Culture), Licence Ouverte 2.0.
-		Ce projet n'authentifie aucune œuvre — il restitue ce que les musées ont
-		eux-mêmes publié.
-	</p>
+<footer class:accueil={estAccueil}>
+	<div class="footer-interieur">
+		<div class="footer-identite">
+			<p class="footer-auteur"><span>Auteur&nbsp;:</span> Héric Libong</p>
+			<div class="footer-contacts" aria-label="Coordonnées et liens du projet">
+				<a href="mailto:hericlibong@gmail.com">
+					<Mail size={15} strokeWidth={1.7} aria-hidden="true" />
+					<span>hericlibong@gmail.com</span>
+				</a>
+				<a href="https://hericlibong.github.io/">
+					<Globe size={15} strokeWidth={1.7} aria-hidden="true" />
+					<span>Site web</span>
+				</a>
+				<a
+					class="lien-icone"
+					href="https://github.com/hericlibong/inventaire-du-doute"
+					aria-label="Dépôt GitHub du projet"
+					title="Dépôt GitHub du projet"
+				>
+					<SiGithub size={16} title="GitHub" />
+				</a>
+			</div>
+			<p class="footer-methode">
+				<a href="{base}/methode">Méthode, sources et limites</a>
+			</p>
+		</div>
+	</div>
 </footer>
-{/if}
 
 <style>
+	/* Le header étant fixé en tête, une ancre atteinte par un lien du sommaire
+	   arriverait SOUS lui. `scroll-padding-top` réserve sa hauteur sur le conteneur
+	   de défilement : 4,5 rem couvre le bandeau d'une ligne, 7,5 rem celui de deux
+	   lignes sur petit écran. Les pages qui posent déjà un `scroll-margin-top` sur
+	   leurs titres s'y ajoutent — c'est voulu : mieux vaut un titre qui respire
+	   qu'un titre à demi caché. */
+	:global(html) {
+		scroll-padding-top: 4.5rem;
+	}
+
 	:global(body) {
 		margin: 0;
 		background: var(--couleur-fond);
@@ -123,8 +174,19 @@
 	/* --- Coquille « inventaire » (palier 2). Filet d'accent en tête, masthead
 	   aligné sur la colonne de contenu, nav en petites capitales. --- */
 	/* Bandeau de tête « affiche » : aplat navy, pleine largeur, texte ivoire. */
+	/* Header FIXÉ EN TÊTE (2026-08-08, phase 3). Il reste dans le flux — `sticky` et
+	   non `fixed` : la page n'a donc aucune compensation de hauteur à faire, et le
+	   pied de page comme les ancres continuent de se comporter normalement.
+	   Le fond reste l'aplat navy de la couverture, PLEINEMENT opaque : du texte
+	   éditorial qui défile dessous doit disparaître, pas transparaître. Pas de flou,
+	   pas d'ombre portée — seulement un filet clair très discret, qui suffit à poser
+	   le bandeau au-dessus du contenu. */
 	header {
+		position: sticky;
+		top: 0;
+		z-index: 20;
 		background: var(--cadre-fond);
+		border-bottom: 1px solid rgba(238, 240, 243, 0.12);
 	}
 
 	.masthead {
@@ -157,31 +219,47 @@
 		font-family: var(--police-ui);
 	}
 
-	nav a,
-	.a-venir {
-		font-size: var(--taille-xs);
-		text-transform: uppercase;
-		letter-spacing: 0.07em;
-		font-weight: 500;
-		text-decoration: none;
+	/* Le MENU n'est pas un lien éditorial : il ne porte donc pas le soulignement
+	   permanent adopté le 2026-08-08 pour le texte courant (charte § 9). Ici, la
+	   position dans le bandeau suffit à dire qu'on peut cliquer ; c'est l'état
+	   ACTIF qui a besoin d'un signe, pas la nature du lien.
+	   Le filet vit sous le libellé seul (le lien est en ligne) : ni bouton, ni
+	   pastille, ni carte. */
+	nav a {
+		display: inline-block;
+		padding-bottom: 2px;
 		color: var(--cadre-encre-douce);
-		padding-bottom: 3px;
+		text-decoration: none;
 		border-bottom: 2px solid transparent;
+		transition: color 140ms ease, border-color 140ms ease;
 	}
 
 	nav a:hover {
 		color: var(--cadre-encre);
+		border-bottom-color: rgba(238, 240, 243, 0.35);
 	}
 
-	nav a.actif {
+	/* Rubrique courante : deux signes, la graisse et le filet d'accent. La couleur
+	   seule ne suffirait pas. L'état vient d'`aria-current`, jamais d'une classe
+	   décorative posée à part. */
+	nav a[aria-current='page'] {
 		color: var(--cadre-encre);
+		font-weight: 600;
 		border-bottom-color: var(--accent-vermillon);
 	}
 
-	.a-venir {
-		opacity: 0.4;
-		cursor: default;
+	nav a:focus-visible {
+		outline: 2px solid var(--cadre-encre);
+		outline-offset: 3px;
+		border-radius: 2px;
 	}
+
+	@media (prefers-reduced-motion: reduce) {
+		nav a {
+			transition: none;
+		}
+	}
+
 
 	main {
 		max-width: var(--largeur-max);
@@ -205,9 +283,120 @@
 		margin-top: var(--espace-6);
 	}
 
-	footer p {
+	/* La couverture touche directement son cadre inférieur. La marge générale du
+	   footer créait ici seulement une bande blanche sans fonction. */
+	footer.accueil {
+		margin-top: 0;
+	}
+
+	.footer-interieur {
 		max-width: var(--largeur-max);
 		margin: 0 auto;
 		padding: var(--espace-5) var(--espace-5);
+	}
+
+	.footer-auteur,
+	.footer-methode {
+		margin: 0;
+	}
+
+	.footer-auteur {
+		font-family: var(--police-ui);
+		font-size: var(--taille-xs);
+		font-weight: 500;
+		color: var(--cadre-encre);
+	}
+
+	.footer-auteur span {
+		color: var(--cadre-encre-douce);
+		font-weight: 400;
+	}
+
+	.footer-contacts {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 0.3rem var(--espace-3);
+		margin-top: 0.4rem;
+	}
+
+	.footer-contacts a {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.35rem;
+		min-height: 2rem;
+		padding: 0.15rem 0.25rem;
+		border-radius: 3px;
+		color: var(--cadre-encre-douce);
+		font-size: var(--taille-xs);
+		line-height: 1.2;
+		text-decoration: none;
+	}
+
+	.footer-contacts a:hover {
+		background: rgba(255, 255, 255, 0.07);
+		color: var(--cadre-encre);
+	}
+
+	.footer-contacts a:focus-visible {
+		outline: 2px solid var(--cadre-encre);
+		outline-offset: 2px;
+	}
+
+	.footer-contacts .lien-icone {
+		width: 2rem;
+		justify-content: center;
+		padding-inline: 0;
+	}
+
+	.footer-methode {
+		margin-top: 0.2rem;
+		font-family: var(--police-ui);
+		font-size: var(--taille-xs);
+	}
+
+	.footer-methode a {
+		color: var(--cadre-encre-douce);
+		text-decoration-color: rgba(255, 255, 255, 0.35);
+		text-decoration-thickness: 1px;
+		text-underline-offset: 0.2em;
+	}
+
+	.footer-methode a:hover,
+	.footer-methode a:focus-visible {
+		color: var(--cadre-encre);
+		text-decoration-color: currentColor;
+	}
+
+	/* Petit écran : les quatre entrées et le nom du projet ne tiennent pas sur une
+	   ligne — « Explorer les artistes » fait à lui seul la moitié de la largeur. Le
+	   bandeau passe donc sobrement sur DEUX lignes, le nom au-dessus, le menu
+	   dessous, tous deux calés à gauche. Pas de menu escamotable : quatre entrées se
+	   montrent, elles ne se cachent pas derrière un bouton. */
+	@media (max-width: 620px) {
+		.masthead {
+			flex-direction: column;
+			align-items: flex-start;
+			gap: var(--espace-3);
+			padding: var(--espace-3) var(--espace-4);
+		}
+
+		.marque {
+			font-size: var(--taille-m);
+		}
+
+		nav ul {
+			gap: var(--espace-3) var(--espace-4);
+			font-size: var(--taille-s);
+		}
+
+		/* Le bandeau à deux lignes est plus haut : les ancres réservent d'autant. */
+		:global(html) {
+			scroll-padding-top: 7.5rem;
+		}
+
+		.footer-interieur {
+			padding: var(--espace-5) var(--espace-4);
+		}
 	}
 </style>

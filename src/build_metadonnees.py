@@ -37,13 +37,20 @@ CHAMPS = {
     "millesime": "Millesime_de_creation",
     "date_creation": "Date_creation",
     "epoque": "Epoque",
+    # Ce que le musée a relevé SUR la planche : titre gravé, mentions d'éditeur
+    # et surtout le NUMÉRO de la planche (« IMAGERIE D'EPINAL, N.°551 »). Sur
+    # l'imagerie populaire, ce numéro est le seul élément qui distingue deux
+    # feuilles de même titre éditées par deux maisons concurrentes. Ajoutés le
+    # 2026-08-07 pour l'appariement des estampes (cf. build_imagerie_commons.py).
+    "inscriptions": "Inscription",
+    "precisions_inscriptions": "Precisions_inscriptions",
 }
 
 csv.field_size_limit(min(sys.maxsize, 2**31 - 1))
 
 
 def references_publiees() -> set:
-    """Les références uniques présentes dans les 63 fiches d'œuvres."""
+    """Les références uniques présentes dans les fiches d'œuvres."""
     refs = set()
     for chemin in glob.glob(str(DOSSIER_OEUVRES / "*.json")):
         for o in json.load(open(chemin, encoding="utf-8"))["oeuvres"]:

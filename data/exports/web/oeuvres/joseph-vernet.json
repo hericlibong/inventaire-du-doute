@@ -36,6 +36,7 @@
   {
    "reference": "00000077065",
    "titre": "DEUX HOMMES ASSIS",
+   "musee_code": "M0776",
    "musee": "musée municipal",
    "ville": "La Roche-sur-Yon",
    "code": "attribue",
@@ -44,6 +45,7 @@
   {
    "reference": "00000077064",
    "titre": "GENTILHOMME",
+   "musee_code": "M0776",
    "musee": "musée municipal",
    "ville": "La Roche-sur-Yon",
    "code": "attribue",
@@ -52,6 +54,7 @@
   {
    "reference": "000PE016353",
    "titre": "MARINE",
+   "musee_code": "M0917",
    "musee": "musée Grobet-Labadié",
    "ville": "Marseille",
    "code": "ecole_de",
@@ -60,6 +63,7 @@
   {
    "reference": "06380004681",
    "titre": "MARINE, SOLEIL COUCHANT",
+   "musee_code": "M0638",
    "musee": "musée des beaux-arts",
    "ville": "Valenciennes",
    "code": "maniere_de",
@@ -68,6 +72,7 @@
   {
    "reference": "01720000111",
    "titre": "Vue d'Avignon",
+   "musee_code": "M0172",
    "musee": "musée des ursulines",
    "ville": "Mâcon",
    "code": "genre_de",
@@ -76,6 +81,7 @@
   {
    "reference": "50350504918",
    "titre": "Ruines",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -84,6 +90,7 @@
   {
    "reference": "10480004941",
    "titre": "Marine",
+   "musee_code": "M1048",
    "musee": "musée des beaux-arts",
    "ville": "Chambéry",
    "code": "atelier_de",
@@ -92,6 +99,7 @@
   {
    "reference": "01370004899",
    "titre": "La Roche percée",
+   "musee_code": "M0137",
    "musee": "musée des beaux-arts",
    "ville": "Dijon",
    "code": "attribue",
@@ -100,6 +108,7 @@
   {
    "reference": "50130000342",
    "titre": "L'Orage",
+   "musee_code": "M5013",
    "musee": "musée national du château de Fontainebleau",
    "ville": "Fontainebleau",
    "code": "point_interrogation",
@@ -108,6 +117,7 @@
   {
    "reference": "04000001600",
    "titre": "Marine : entrée d'un port",
+   "musee_code": "M0400",
    "musee": "musée Lambinet",
    "ville": "Versailles",
    "code": "attribue",
@@ -116,6 +126,7 @@
   {
    "reference": "000PE023518",
    "titre": "MARINE, EFFET DE NUIT",
+   "musee_code": "M0065",
    "musee": "musée des beaux-arts",
    "ville": "Bordeaux",
    "code": "attribue",
@@ -124,6 +135,7 @@
   {
    "reference": "000PE023519",
    "titre": "PORT DE MER AU SOLEIL COUCHANT",
+   "musee_code": "M0065",
    "musee": "musée des beaux-arts",
    "ville": "Bordeaux",
    "code": "attribue",
@@ -132,6 +144,7 @@
   {
    "reference": "000PE023516",
    "titre": "TEMPETE",
+   "musee_code": "M0065",
    "musee": "musée des beaux-arts",
    "ville": "Bordeaux",
    "code": "ecole_de",
@@ -140,6 +153,7 @@
   {
    "reference": "07430007254",
    "titre": "Paysage",
+   "musee_code": "M0743",
    "musee": "musée des Beaux-Arts",
    "ville": "Nantes",
    "code": "attribue",
@@ -148,6 +162,7 @@
   {
    "reference": "07430005280",
    "titre": "La tempête sur le phare",
+   "musee_code": "M0743",
    "musee": "musée des Beaux-Arts",
    "ville": "Nantes",
    "code": "atelier_de",
@@ -156,6 +171,7 @@
   {
    "reference": "50110000527",
    "titre": "L'Arbre sur la falaise",
+   "musee_code": "M5011",
    "musee": "musée national Magnin",
    "ville": "Dijon",
    "code": "ecole_de",
@@ -164,6 +180,7 @@
   {
    "reference": "50130000512",
    "titre": "Marine avec deux pêcheurs tirant un filet",
+   "musee_code": "M5013",
    "musee": "musée national du château de Fontainebleau",
    "ville": "Fontainebleau",
    "code": "genre_de",
@@ -172,6 +189,7 @@
   {
    "reference": "07480012486",
    "titre": "Incendie nocturne dans un port (recto) ; Construction dans un fort (verso) ; Entrée d'un port, lever de soleil (ancien titre)",
+   "musee_code": "M0748",
    "musee": "musée des beaux-arts et galerie David-d'Angers",
    "ville": "Angers",
    "code": "suiveur_de",
@@ -180,6 +198,7 @@
   {
    "reference": "07480012487",
    "titre": "Un port de mer au clair de lune (verso) ; Entrée d'un fort (recto)",
+   "musee_code": "M0748",
    "musee": "musée des beaux-arts et galerie David-d'Angers",
    "ville": "Angers",
    "code": "suiveur_de",
@@ -188,6 +207,7 @@
   {
    "reference": "M0491001439",
    "titre": "Xerxès",
+   "musee_code": "M0491",
    "musee": "musée Hyacinthe Rigaud",
    "ville": "Perpignan",
    "code": "point_interrogation",
@@ -196,6 +216,7 @@
   {
    "reference": "02650001146",
    "titre": "Bord de mer avec falaise percée",
+   "musee_code": "M0265",
    "musee": "musée des beaux-arts",
    "ville": "Tours",
    "code": "ecole_de",
@@ -204,6 +225,7 @@
   {
    "reference": "03110041569",
    "titre": "Marine",
+   "musee_code": "M0311",
    "musee": "musée des Beaux-Arts de Saint-Denis",
    "ville": "Reims",
    "code": "attribue",
@@ -212,6 +234,7 @@
   {
    "reference": "M0794012647",
    "titre": "Berline attelée",
+   "musee_code": "M0794",
    "musee": "musée municipal",
    "ville": "Soissons",
    "code": "attribue",
@@ -220,6 +243,7 @@
   {
    "reference": "04000013429",
    "titre": "Le bosquet de la salle de Bal",
+   "musee_code": "M0400",
    "musee": "musée Lambinet",
    "ville": "Versailles",
    "code": "attribue",
@@ -228,6 +252,7 @@
   {
    "reference": "04000013437",
    "titre": "La pièce d'eau des Suisses et l'Orangerie",
+   "musee_code": "M0400",
    "musee": "musée Lambinet",
    "ville": "Versailles",
    "code": "attribue",
@@ -236,6 +261,7 @@
   {
    "reference": "04000013425",
    "titre": "Le bassin de Neptune et d'Amphitrite",
+   "musee_code": "M0400",
    "musee": "musée Lambinet",
    "ville": "Versailles",
    "code": "attribue",
@@ -244,6 +270,7 @@
   {
    "reference": "04000013428",
    "titre": "Le bosquet de la Colonnade",
+   "musee_code": "M0400",
    "musee": "musée Lambinet",
    "ville": "Versailles",
    "code": "attribue",
@@ -252,6 +279,7 @@
   {
    "reference": "04000013408",
    "titre": "Le Grand Trianon, vu de l'extrémité nord du Grand Canal",
+   "musee_code": "M0400",
    "musee": "musée Lambinet",
    "ville": "Versailles",
    "code": "attribue",
@@ -260,6 +288,7 @@
   {
    "reference": "04000013431",
    "titre": "Le bosquet de l'Obélisque",
+   "musee_code": "M0400",
    "musee": "musée Lambinet",
    "ville": "Versailles",
    "code": "attribue",
@@ -268,6 +297,7 @@
   {
    "reference": "04000013426",
    "titre": "Le petit Trianon",
+   "musee_code": "M0400",
    "musee": "musée Lambinet",
    "ville": "Versailles",
    "code": "attribue",
@@ -276,6 +306,7 @@
   {
    "reference": "04000013427",
    "titre": "Le bosquet des Dômes",
+   "musee_code": "M0400",
    "musee": "musée Lambinet",
    "ville": "Versailles",
    "code": "attribue",
@@ -284,6 +315,7 @@
   {
    "reference": "04000013438",
    "titre": "Le parterre d'Eau et les bassins des fleuves",
+   "musee_code": "M0400",
    "musee": "musée Lambinet",
    "ville": "Versailles",
    "code": "attribue",
@@ -292,6 +324,7 @@
   {
    "reference": "04000013439",
    "titre": "Le parterre du Nord avec vue de la fontaine de la pyramide",
+   "musee_code": "M0400",
    "musee": "musée Lambinet",
    "ville": "Versailles",
    "code": "attribue",
@@ -300,6 +333,7 @@
   {
    "reference": "04000013430",
    "titre": "Le parterre d'Eau et la façade du château",
+   "musee_code": "M0400",
    "musee": "musée Lambinet",
    "ville": "Versailles",
    "code": "attribue",
@@ -308,6 +342,7 @@
   {
    "reference": "04000013441",
    "titre": "La grille d'honneur, la place d'Armes, la Petite Écurie et la Grande Écurie",
+   "musee_code": "M0400",
    "musee": "musée Lambinet",
    "ville": "Versailles",
    "code": "attribue",
@@ -316,6 +351,7 @@
   {
    "reference": "04000013432",
    "titre": "Le Grand Canal avec vue sur le château",
+   "musee_code": "M0400",
    "musee": "musée Lambinet",
    "ville": "Versailles",
    "code": "attribue",
@@ -324,6 +360,7 @@
   {
    "reference": "04000013440",
    "titre": "Le bassin d'Apollon, avec vue sur le Grand Canal",
+   "musee_code": "M0400",
    "musee": "musée Lambinet",
    "ville": "Versailles",
    "code": "attribue",
@@ -332,6 +369,7 @@
   {
    "reference": "04000013433",
    "titre": "Le château vu de la place d'Armes",
+   "musee_code": "M0400",
    "musee": "musée Lambinet",
    "ville": "Versailles",
    "code": "attribue",
@@ -340,6 +378,7 @@
   {
    "reference": "04000013434",
    "titre": "Le Grand Trianon, côté entrée",
+   "musee_code": "M0400",
    "musee": "musée Lambinet",
    "ville": "Versailles",
    "code": "attribue",
@@ -348,6 +387,7 @@
   {
    "reference": "04000013435",
    "titre": "Le bassin d'Apollon, avec vue sur le château",
+   "musee_code": "M0400",
    "musee": "musée Lambinet",
    "ville": "Versailles",
    "code": "attribue",
@@ -356,6 +396,7 @@
   {
    "reference": "04000013436",
    "titre": "Le bassin de Latone",
+   "musee_code": "M0400",
    "musee": "musée Lambinet",
    "ville": "Versailles",
    "code": "attribue",
@@ -364,6 +405,7 @@
   {
    "reference": "M0949001606",
    "titre": "Marine, port sous un clair de lune (titre factice) Port de mer ; effet de lune (catalogue 1900)",
+   "musee_code": "M0949",
    "musee": "bibliothèque-musée Inguimbertine",
    "ville": "Carpentras",
    "code": "attribue",
@@ -371,7 +413,7 @@
   }
  ],
  "version_donnee": "2026-07-01",
- "date_generation": "2026-07-28T14:49:21+00:00",
+ "date_generation": "2026-08-05T18:41:37+00:00",
  "source": "Collections des musées de France : base Joconde",
  "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
 }

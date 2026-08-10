@@ -24,6 +24,7 @@
   {
    "reference": "00000060663",
    "titre": "MARIE-MADELEINE",
+   "musee_code": "M0619",
    "musee": "musée de la Chartreuse",
    "ville": "Douai",
    "code": "ecole_de",
@@ -32,6 +33,7 @@
   {
    "reference": "00000060665",
    "titre": "ANGE DE L'ANNONCIATION",
+   "musee_code": "M0619",
    "musee": "musée de la Chartreuse",
    "ville": "Douai",
    "code": "ecole_de",
@@ -40,6 +42,7 @@
   {
    "reference": "00000060667",
    "titre": "CINQ ANGES",
+   "musee_code": "M0619",
    "musee": "musée de la Chartreuse",
    "ville": "Douai",
    "code": "ecole_de",
@@ -48,6 +51,7 @@
   {
    "reference": "00000060666",
    "titre": "CINQ ANGES",
+   "musee_code": "M0619",
    "musee": "musée de la Chartreuse",
    "ville": "Douai",
    "code": "ecole_de",
@@ -56,6 +60,7 @@
   {
    "reference": "00000060664",
    "titre": "VIERGE DE L'ANNONCIATION",
+   "musee_code": "M0619",
    "musee": "musée de la Chartreuse",
    "ville": "Douai",
    "code": "ecole_de",
@@ -64,6 +69,7 @@
   {
    "reference": "000PE023498",
    "titre": "Sainte Famille avec le petit Saint Jean-Baptiste et Saint François d'Assise",
+   "musee_code": "M0065",
    "musee": "musée des beaux-arts",
    "ville": "Bordeaux",
    "code": "atelier_de",
@@ -77,12 +83,13 @@
     "licence": "Public domain",
     "licence_url": "",
     "source": "https://commons.wikimedia.org/wiki/File:Bordeaux_-_Sainte_Famille_avec_le_petit_saint_Jean-Baptiste_et_saint_Fran%C3%A7ois_d%27Assise_02.jpg",
-    "verifie_le": "2026-07-29"
+    "verifie_le": "2026-08-06"
    }
   },
   {
    "reference": "50350102094",
    "titre": "Mariage de la Vierge",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -91,6 +98,7 @@
   {
    "reference": "50350200021",
    "titre": "La Vierge, l'Enfant Jésus, sainte Lucie et sainte Catherine",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -99,6 +107,7 @@
   {
    "reference": "50350200823",
    "titre": "Figure assise, tenant un objet de la main droite",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -107,6 +116,7 @@
   {
    "reference": "50350002971",
    "titre": "Feuille d'études de grottesques",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -115,6 +125,7 @@
   {
    "reference": "50350002970",
    "titre": "Vision de saint Romuald",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -123,6 +134,7 @@
   {
    "reference": "50350002972",
    "titre": "Etudes de grottesques pour une décoration murale",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -131,6 +143,7 @@
   {
    "reference": "50350002959",
    "titre": "Etudes pour un roi mage ; adoration des mages ; trois têtes d'hommes",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -139,6 +152,7 @@
   {
    "reference": "50350002958",
    "titre": "Adoration des Mages",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -147,6 +161,7 @@
   {
    "reference": "50350002969",
    "titre": "Une femme ailée assise sur des nuages",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -155,6 +170,7 @@
   {
    "reference": "50350002966",
    "titre": "Vue d'un ermitage avec plusieurs moines",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -163,6 +179,7 @@
   {
    "reference": "50350001276",
    "titre": "Figures, d'après le Jugement Dernier à la Chapelle Sixtine",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -171,6 +188,7 @@
   {
    "reference": "50350002987",
    "titre": "Le Mariage mystique de sainte Catherine",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -179,6 +197,7 @@
   {
    "reference": "50350002974",
    "titre": "Vue d'un village sur une colline",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -187,6 +206,7 @@
   {
    "reference": "50350002965",
    "titre": "Un Pape debout, revêtu de ses habits pontificaux",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -195,6 +215,7 @@
   {
    "reference": "50350002988",
    "titre": "La Sainte Famille, le petit saint Jean et sainte Elisabeth",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -203,6 +224,7 @@
   {
    "reference": "50350002973",
    "titre": "Etudes de grottesques pour une partie de plafond",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -211,6 +233,7 @@
   {
    "reference": "50350003671",
    "titre": "Le triomphe de Neptune",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -219,6 +242,7 @@
   {
    "reference": "06190001274",
    "titre": "Cinq anges",
+   "musee_code": "M0619",
    "musee": "musée de la Chartreuse",
    "ville": "Douai",
    "code": "ecole_de",
@@ -227,6 +251,7 @@
   {
    "reference": "06190001273",
    "titre": "Ange de l'Annonciation",
+   "musee_code": "M0619",
    "musee": "musée de la Chartreuse",
    "ville": "Douai",
    "code": "ecole_de",
@@ -235,6 +260,7 @@
   {
    "reference": "M0457000885",
    "titre": "Sans désignation",
+   "musee_code": "M0457",
    "musee": "musée des beaux-arts",
    "ville": "Nîmes",
    "code": "entourage_de",
@@ -242,7 +268,7 @@
   }
  ],
  "version_donnee": "2026-07-01",
- "date_generation": "2026-07-28T14:49:21+00:00",
+ "date_generation": "2026-08-05T18:41:37+00:00",
  "source": "Collections des musées de France : base Joconde",
  "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
 }

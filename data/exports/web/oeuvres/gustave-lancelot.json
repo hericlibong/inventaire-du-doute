@@ -1,0 +1,305 @@
+{
+ "slug": "gustave-lancelot",
+ "nom": "Gustave Lancelot",
+ "doute": 32,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 32
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "00000082144",
+   "titre": "LA PORTE DE CRONCELS VUE DE L'INTERIEUR A TROYES",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "LANCELOT Gustave (attribué)"
+  },
+  {
+   "reference": "00000082141",
+   "titre": "TROYES VUE PRISE VERS LA TOUR DE LA VICOMTE (?)",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "LANCELOT Gustave (attribué)"
+  },
+  {
+   "reference": "00000082096",
+   "titre": "RUE DE LA CITE A TROYES, FACADE D'UNE MAISON",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "LANCELOT Gustave (attribué)"
+  },
+  {
+   "reference": "00000082137",
+   "titre": "FACADE DE MAISONS TROYENNE (?)",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "LANCELOT Gustave (attribué)"
+  },
+  {
+   "reference": "00000082228",
+   "titre": "EPI DE TOITURE",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "LANCELOT Gustave (attribué)"
+  },
+  {
+   "reference": "00000082140",
+   "titre": "COUR INTERIEURE DE MAISON HOTEL DE CHAPELAINE (?) A TROYES",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "LANCELOT Gustave (attribué)"
+  },
+  {
+   "reference": "00000082086",
+   "titre": "CLOITRE DE SAINT-MARTIN-ES-AIRES A TROYES",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "LANCELOT Gustave (attribué)"
+  },
+  {
+   "reference": "00000082155",
+   "titre": "MAISONS RUE DES CHANGES A TROYES",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "LANCELOT Gustave (attribué)"
+  },
+  {
+   "reference": "00000082150",
+   "titre": "RUE TURENNE A TROYES",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "LANCELOT Gustave (attribué)"
+  },
+  {
+   "reference": "00000082157",
+   "titre": "RUE DES QUINZE-VINGT A TROYES",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "LANCELOT Gustave (attribué)"
+  },
+  {
+   "reference": "00000082136",
+   "titre": "MAISON A TROYES (?) A APPAREILLAGE EN DAMIER",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "LANCELOT Gustave (attribué)"
+  },
+  {
+   "reference": "00000082180",
+   "titre": "LE CHATEAU DE CHAMOY",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "LANCELOT Gustave (attribué)"
+  },
+  {
+   "reference": "00000082229",
+   "titre": "EPI DE FAITAGE TROYES (?)",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "LANCELOT Gustave (attribué)"
+  },
+  {
+   "reference": "00000082152",
+   "titre": "MAISON DE L'ORFEVRE RUE CHAMPEAUX A TROYES",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "LANCELOT Gustave (attribué)"
+  },
+  {
+   "reference": "00000082153",
+   "titre": "FACADE DE L'HOTEL D'AULTRUY A TROYES",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "LANCELOT Gustave (attribué)"
+  },
+  {
+   "reference": "00000082145",
+   "titre": "PLACE AUDIFFRED A TROYES",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "LANCELOT Gustave (attribué)"
+  },
+  {
+   "reference": "00000082123",
+   "titre": "AISSELIER ET BOIS SCULPTE RUE DE LA VIERGE A TROYES",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "LANCELOT Gustave (attribué)"
+  },
+  {
+   "reference": "00000082147",
+   "titre": "PORTE D'ENTREE DU COLLEGE PITHOU VUE DE LA RUE CLAUDE HUEZ A TROYES",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "LANCELOT Gustave (attribué)"
+  },
+  {
+   "reference": "00000082149",
+   "titre": "LA PORTE SAINT-JACQUES A TROYES",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "LANCELOT Gustave (attribué)"
+  },
+  {
+   "reference": "00000082107",
+   "titre": "FRISES DE BOIS SCULPTE",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "LANCELOT Gustave (attribué)"
+  },
+  {
+   "reference": "00000082085",
+   "titre": "COUR INTERIEURE DE SAINT-MARTIN-ES-AIRES A TROYES",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "LANCELOT Gustave (attribué)"
+  },
+  {
+   "reference": "00000082135",
+   "titre": "MAISONS RUE DE LA TANNERIE (?) A TROYES",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "LANCELOT Gustave (attribué)"
+  },
+  {
+   "reference": "00000082146",
+   "titre": "TOURELLE DU PETIT CREDO RUE EMILE ZOLA A TROYES",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "LANCELOT Gustave (attribué)"
+  },
+  {
+   "reference": "00000082143",
+   "titre": "FACADE DE MAISON TROYENNE (?) A APPAREILLAGE CHAMPENOIS",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "LANCELOT Gustave (attribué)"
+  },
+  {
+   "reference": "00000082148",
+   "titre": "RUE DU DAUPHIN A TROYES",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "LANCELOT Gustave (attribué)"
+  },
+  {
+   "reference": "00000082156",
+   "titre": "RUE DE LA CITE A TROYES",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "LANCELOT Gustave (attribué)"
+  },
+  {
+   "reference": "00000082181",
+   "titre": "SAINT-JEAN DE BONNEVAL, L'ANCIENNE PORTE FORTIFIEE",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "LANCELOT Gustave (attribué)"
+  },
+  {
+   "reference": "00000082098",
+   "titre": "DEUX TETES DE POUTRE PROVENANT DE LA RUE DU CLOITRE SAINT-ETIENNE ET RUE DU GENERAL SAUSSIER A TROYES, AU VERSO EMPEREUR DRAPE DANS UN COSTUME ROMAIN",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "LANCELOT Gustave (attribué)"
+  },
+  {
+   "reference": "00000082151",
+   "titre": "MAISON DES RELIGIEUSES FRANCISCAINES RUE MITANTIER A TROYES",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "LANCELOT Gustave (attribué)"
+  },
+  {
+   "reference": "00000082154",
+   "titre": "MAISON HERBIN TABUTANT DEMOLIE A TROYES",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "LANCELOT Gustave (attribué)"
+  },
+  {
+   "reference": "00000082169",
+   "titre": "RUE TURENNE A TROYES CHEVET DE SAINT-PANTALEON ET HOTEL MOLE DISPARU AUJOURD'HUI",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "LANCELOT Gustave (attribué)"
+  },
+  {
+   "reference": "00000082139",
+   "titre": "MAISONS A APPAREILLAGE DE BRIQUE ORNEE D'ANGELOTS AVEC CHEVET D'EGLISE",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "LANCELOT Gustave (attribué)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-08-05T18:41:37+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

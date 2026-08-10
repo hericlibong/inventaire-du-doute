@@ -32,6 +32,7 @@
   {
    "reference": "000PE019530",
    "titre": "SAINT SEBASTIEN",
+   "musee_code": "M0629",
    "musee": "musée des Beaux-Arts",
    "ville": "Lille",
    "code": "attribue",
@@ -40,6 +41,7 @@
   {
    "reference": "000PE021940",
    "titre": "LA VIERGE DE DOULEUR",
+   "musee_code": "M0065",
    "musee": "musée des beaux-arts",
    "ville": "Bordeaux",
    "code": "ecole_de",
@@ -48,6 +50,7 @@
   {
    "reference": "000PE026177",
    "titre": "LE RAVISSEMENT DE LA MADELEINE",
+   "musee_code": "M0065",
    "musee": "musée des beaux-arts",
    "ville": "Bordeaux",
    "code": "point_interrogation",
@@ -56,6 +59,7 @@
   {
    "reference": "000PE031402",
    "titre": "ECCE HOMO",
+   "musee_code": "M0116",
    "musee": "musée Crozatier",
    "ville": "Le Puy-en-Velay",
    "code": "attribue",
@@ -64,6 +68,7 @@
   {
    "reference": "00000103010",
    "titre": "JUDITH TENANT LA TETE D'HOLOPHERNE",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -72,6 +77,7 @@
   {
    "reference": "00000103030",
    "titre": "LE SOMMEIL DE L'ENFANT JESUS",
+   "musee_code": "M0121",
    "musee": "musée d'art Roger-Quillot",
    "ville": "Clermont-Ferrand",
    "code": "ecole_de",
@@ -80,6 +86,7 @@
   {
    "reference": "00000103009",
    "titre": "LA CHARITE ROMAINE,dit aussi CIMON ET PERO",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -88,6 +95,7 @@
   {
    "reference": "50350005971",
    "titre": "Saint Sébastien à la colonne",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -96,6 +104,7 @@
   {
    "reference": "50350005966",
    "titre": "Saint Jean et l'Enfant  jouant sous le regard de la Vierge et saint Joseph",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -104,6 +113,7 @@
   {
    "reference": "50350006036",
    "titre": "Saint Jérôme en prières dans le désert",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -112,6 +122,7 @@
   {
    "reference": "50350005979",
    "titre": "Angelot tenant une couronne, volant, vu par en-dessous",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -120,6 +131,7 @@
   {
    "reference": "50350205770",
    "titre": "La mort d'Hercule",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -128,6 +140,7 @@
   {
    "reference": "50350005978",
    "titre": "Enfant nu, couché sur un lit, et étude de jambe droite nue",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -136,6 +149,7 @@
   {
    "reference": "50350005969",
    "titre": "Buste de saint Jean-Baptiste regardant une crucifix",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -144,6 +158,7 @@
   {
    "reference": "50350006047",
    "titre": "Homme debout, vêtu en costume oriental",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -152,6 +167,7 @@
   {
    "reference": "50350005988",
    "titre": "Demi-figure de jeune homme assis, tenant un livre, et écrivant",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -160,6 +176,7 @@
   {
    "reference": "50350005967",
    "titre": "Vierge à l'Enfant, adorés par saint François et saint Jean-Baptiste",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -168,6 +185,7 @@
   {
    "reference": "50350006038",
    "titre": "Deux enfants nus, assis, tenant des cordes",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -176,6 +194,7 @@
   {
    "reference": "50350006034",
    "titre": "Apparition de la Vierge à l'Enfant à deux saintes",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -184,6 +203,7 @@
   {
    "reference": "50350006031",
    "titre": "Vierge à l'Enfant",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -192,6 +212,7 @@
   {
    "reference": "50350006040",
    "titre": "Sibylle assise, tenant un livre",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -200,6 +221,7 @@
   {
    "reference": "50350005972",
    "titre": "Un évêque debout, vu de face, lisant",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -208,6 +230,7 @@
   {
    "reference": "50350005975",
    "titre": "Andromède",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -216,6 +239,7 @@
   {
    "reference": "50350005986",
    "titre": "Saint Sébastien",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -224,6 +248,7 @@
   {
    "reference": "50350005977",
    "titre": "Enfant nu, endormi sur le dos",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -232,6 +257,7 @@
   {
    "reference": "50350005965",
    "titre": "Loth et ses deux filles",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -240,6 +266,7 @@
   {
    "reference": "50350006046",
    "titre": "L'Amour debout, et reprise des deux pieds",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -248,6 +275,7 @@
   {
    "reference": "50350006035",
    "titre": "Un peintre assis, regardant un tableau placé sur une table",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -256,6 +284,7 @@
   {
    "reference": "50350006045",
    "titre": "Enfant nu, couché sur le dos, en raccourci",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -264,6 +293,7 @@
   {
    "reference": "50350006041",
    "titre": "Deux angelots dans les nuages",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -272,6 +302,7 @@
   {
    "reference": "50350005980",
    "titre": "Angelot volant, vu par en-dessous",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -280,6 +311,7 @@
   {
    "reference": "50350005985",
    "titre": "Saint Jérôme dans le désert",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -288,6 +320,7 @@
   {
    "reference": "50350006042",
    "titre": "Hercule soutenant le monde",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -296,6 +329,7 @@
   {
    "reference": "50350006030",
    "titre": "Vierge à l'Enfant",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -304,6 +338,7 @@
   {
    "reference": "50350006029",
    "titre": "Vierge à l'Enfant",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -312,6 +347,7 @@
   {
    "reference": "50350006044",
    "titre": "Un jeune garçon jouant avec un chat",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -320,6 +356,7 @@
   {
    "reference": "50350102803",
    "titre": "La Vierge jouant avec l'Enfant",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -328,6 +365,7 @@
   {
    "reference": "50350006032",
    "titre": "L'Enfant debout sur les genoux de la Vierge, tenant une petite croix",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -336,6 +374,7 @@
   {
    "reference": "50350006043",
    "titre": "Deux prophètes",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -344,6 +383,7 @@
   {
    "reference": "50350005987",
    "titre": "Demi-figure d'un enfant nu, de dos",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -352,6 +392,7 @@
   {
    "reference": "50350006048",
    "titre": "Un jeune peintre décorant un objet",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -360,6 +401,7 @@
   {
    "reference": "50350006039",
    "titre": "Deux anges conversant, en buste",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -368,6 +410,7 @@
   {
    "reference": "50350006037",
    "titre": "Sainte Catherine d'Alexandrie en prières",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -376,6 +419,7 @@
   {
    "reference": "50350005968",
    "titre": "La Résurrection de Lazare",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -384,6 +428,7 @@
   {
    "reference": "07430004969",
    "titre": "La Charité chrétienne",
+   "musee_code": "M0743",
    "musee": "musée des Beaux-Arts",
    "ville": "Nantes",
    "code": "atelier_de",
@@ -392,6 +437,7 @@
   {
    "reference": "50350500984",
    "titre": "Fragment d'une tête de femme et annotations chiffrées",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -400,6 +446,7 @@
   {
    "reference": "01320016849",
    "titre": "Sainte Cécile",
+   "musee_code": "M0132",
    "musee": "musée Bonaparte",
    "ville": "Auxonne",
    "code": "ecole_de",
@@ -408,6 +455,7 @@
   {
    "reference": "M0491001245",
    "titre": "Tête de Saint Sébastien",
+   "musee_code": "M0491",
    "musee": "musée Hyacinthe Rigaud",
    "ville": "Perpignan",
    "code": "attribue",
@@ -416,6 +464,7 @@
   {
    "reference": "06770000303",
    "titre": "Saint Pierre pleurant sa faute",
+   "musee_code": "M0677",
    "musee": "musée Thomas-Henry",
    "ville": "Cherbourg-en-Cotentin",
    "code": "maniere_de",
@@ -424,6 +473,7 @@
   {
    "reference": "06190001403",
    "titre": "La Sybille delphique",
+   "musee_code": "M0619",
    "musee": "musée de la Chartreuse",
    "ville": "Douai",
    "code": "ecole_de",
@@ -432,6 +482,7 @@
   {
    "reference": "06190001404",
    "titre": "Jupiter et Junon",
+   "musee_code": "M0619",
    "musee": "musée de la Chartreuse",
    "ville": "Douai",
    "code": "ecole_de",
@@ -440,6 +491,7 @@
   {
    "reference": "06190001144",
    "titre": "Le Massacre des Innocents",
+   "musee_code": "M0619",
    "musee": "musée de la Chartreuse",
    "ville": "Douai",
    "code": "genre_de",
@@ -448,6 +500,7 @@
   {
    "reference": "06190001733",
    "titre": "Enfant au réveil",
+   "musee_code": "M0619",
    "musee": "musée de la Chartreuse",
    "ville": "Douai",
    "code": "genre_de",
@@ -456,6 +509,7 @@
   {
    "reference": "M0121003074",
    "titre": "La sainte Famille contemplant l'Enfant Jésus endormi",
+   "musee_code": "M0121",
    "musee": "musée d'art Roger-Quillot",
    "ville": "Clermont-Ferrand",
    "code": "ecole_de",
@@ -464,6 +518,7 @@
   {
    "reference": "01370014226",
    "titre": "Diane",
+   "musee_code": "M0137",
    "musee": "musée des beaux-arts",
    "ville": "Dijon",
    "code": "genre_de",
@@ -477,12 +532,13 @@
     "licence": "Public domain",
     "licence_url": "",
     "source": "https://commons.wikimedia.org/wiki/File:Reni_-_Genre_de_-_Diane,_CA_713.jpg",
-    "verifie_le": "2026-07-29"
+    "verifie_le": "2026-08-06"
    }
   },
   {
    "reference": "01370014223",
    "titre": "La Madeleine",
+   "musee_code": "M0137",
    "musee": "musée des beaux-arts",
    "ville": "Dijon",
    "code": "maniere_de",
@@ -491,6 +547,7 @@
   {
    "reference": "03110042175",
    "titre": "La Vierge et l'Enfant Jésus",
+   "musee_code": "M0311",
    "musee": "musée des Beaux-Arts de Reims",
    "ville": "Reims",
    "code": "attribue",
@@ -499,6 +556,7 @@
   {
    "reference": "09940009040",
    "titre": "Etude d'une tête d'homme barbu",
+   "musee_code": "M0994",
    "musee": "musée de Grenoble",
    "ville": "Grenoble",
    "code": "attribue",
@@ -507,6 +565,7 @@
   {
    "reference": "08940005128",
    "titre": "Sainte Madeleine en extase (titre factice)",
+   "musee_code": "M0894",
    "musee": "musée Granet",
    "ville": "Aix-en-Provence",
    "code": "ecole_de",
@@ -520,12 +579,13 @@
     "licence": "Public domain",
     "licence_url": "",
     "source": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_Granet_-_Sainte_Madeleine_en_extase.jpg",
-    "verifie_le": "2026-07-29"
+    "verifie_le": "2026-08-06"
    }
   },
   {
    "reference": "06190023719",
    "titre": "Enfant au réveil",
+   "musee_code": "M0619",
    "musee": "musée de la Chartreuse",
    "ville": "Douai",
    "code": "genre_de",
@@ -533,7 +593,7 @@
   }
  ],
  "version_donnee": "2026-07-01",
- "date_generation": "2026-07-28T14:49:21+00:00",
+ "date_generation": "2026-08-05T18:41:37+00:00",
  "source": "Collections des musées de France : base Joconde",
  "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
 }

@@ -538,5 +538,130 @@
     "source": "https://commons.wikimedia.org/wiki/File:Sandro_Botticelli_Self-portrait_ca_1475.jpg",
     "wikidata": "https://www.wikidata.org/wiki/Q5669",
     "regard": "gauche"
+  },
+  "Charles Normand": {
+    "fichier": "/portraits/charles-normand.jpg",
+    "auteur": "Charles Victor Normand / d'après Julie Ribault",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Charles_Normand_(1765-1840)_(engraving_by_C_V_Normand_after_Julie_Ribault)_(cropped).jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q2959914",
+    "regard": "gauche"
+  },
+  "Giacinto Calandrucci": {
+    "fichier": "/portraits/giacinto-calandrucci.jpg",
+    "auteur": "Giacinto Calandrucci",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Giacinto_Calandrucci_-_Self-portrait_-_NMH_617-1863_-_Nationalmuseum.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q957255",
+    "regard": "gauche"
+  },
+  "Auguste Vacquerie": {
+    "fichier": "/portraits/auguste-vacquerie.jpg",
+    "auteur": "Nadar",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Auguste_Vacquerie_01.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q940439",
+    "regard": "gauche"
+  },
+  "Turpin de Crissé": {
+    "fichier": "/portraits/turpin-de-crisse.jpg",
+    "auteur": "Bouchet Louis-André-Gabriel",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Bouchet_Louis-Andr%C3%A9-Gabriel_Portrait_du_comte_Lancelot_Turpin_de_Criss%C3%A9_(vers_1807).jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q3216954",
+    "regard": "gauche"
+  },
+  "Charles Hugo": {
+    "fichier": "/portraits/charles-hugo.jpg",
+    "auteur": "Nadar",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Charles_Hugo_Nadar_avant_1870.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q663856",
+    "regard": "gauche"
+  },
+  "Crispin de Passe l'Ancien": {
+    "fichier": "/portraits/crispin-de-passe-l-ancien.jpg",
+    "auteur": "Crispijn van de Passe I",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Self_portrait_of_Crispijn_van_de_Passe_I.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q140096",
+    "regard": "gauche"
+  },
+  "Antonio del Pollaiuolo": {
+    "fichier": "/portraits/antonio-del-pollaiuolo.jpg",
+    "auteur": "Giorgio Vasari",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:072_le_vite,_antonio_pollaiuolo.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q318640",
+    "regard": "gauche"
+  },
+  "Jacques-Louis David": {
+    "fichier": "/portraits/jacques-louis-david.jpg",
+    "auteur": "Jacques-Louis David",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:David_Self_Portrait.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q83155",
+    "regard": "gauche"
+  },
+  "Georges Ferdinand Bigot": {
+    "fichier": "/portraits/georges-ferdinand-bigot.jpg",
+    "auteur": "auteur inconnu",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Bigot1882.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q1135613",
+    "regard": "gauche"
+  },
+  "Aimé Duthoit": {
+    "fichier": "/portraits/aime-duthoit.jpg",
+    "auteur": "auteur inconnu",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Aim%C3%A9_et_Louis_Duthoit_01.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q19849903",
+    "regard": "gauche",
+    "recadrage": "planche des deux frères, moitié gauche",
+    "reproduction": "Bycro"
+  },
+  "Louis Duthoit": {
+    "fichier": "/portraits/louis-duthoit.jpg",
+    "auteur": "auteur inconnu",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Aim%C3%A9_et_Louis_Duthoit_01.jpg",
+    "wikidata": "https://www.wikidata.org/wiki/Q19849909",
+    "regard": "gauche",
+    "recadrage": "planche des deux frères, moitié droite",
+    "reproduction": "Bycro"
+  },
+  "Alexandre Clausel": {
+    "fichier": "/portraits/alexandre-clausel.jpg",
+    "auteur": "Alexandre Clausel",
+    "licence": "domaine public",
+    "licence_url": "",
+    "source": "https://troyes-en-champagne.blogspot.com/2013/12/alexandre-jean-pierre-clausel-1802-1884.html",
+    "wikidata": "https://www.wikidata.org/wiki/Q52154652",
+    "regard": "gauche",
+    "source_nom": "Troyes-en-Champagne",
+    "reproduction": "phototypie Louvrier"
+  },
+  "Charles Eugène Ensfelder": {
+    "fichier": "/portraits/charles-eugene-ensfelder.jpg",
+    "auteur": "auteur inconnu",
+    "licence": "domaine public",
+    "licence_url": "",
+    "source": "https://gw.geneanet.org/whelmlinger?lang=fr&n=ensfelder&p=charles+eugene",
+    "wikidata": "",
+    "regard": "gauche",
+    "source_nom": "Geneanet",
+    "recadrage": "cadré sur le buste ; la photographie est en pied"
   }
 }

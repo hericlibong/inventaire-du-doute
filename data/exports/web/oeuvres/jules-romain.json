@@ -28,6 +28,7 @@
   {
    "reference": "00000068540",
    "titre": "Homme portant un enfant et femme assise sur une barque",
+   "musee_code": "M5011",
    "musee": "musée national Magnin",
    "ville": "Dijon",
    "code": "attribue",
@@ -36,6 +37,7 @@
   {
    "reference": "000PE014633",
    "titre": "PORTRAIT DE MICHEL ANGE",
+   "musee_code": "M0913",
    "musee": "musée des beaux-arts",
    "ville": "Marseille",
    "code": "attribue",
@@ -44,6 +46,7 @@
   {
    "reference": "000PE025545",
    "titre": "VENUS ET VULCAIN",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -57,12 +60,13 @@
     "licence": "Public domain",
     "licence_url": "",
     "source": "https://commons.wikimedia.org/wiki/File:V%C3%A9nus_et_Vulcain,_Romano_(Louvre_INV_424)_04.jpg",
-    "verifie_le": "2026-07-29"
+    "verifie_le": "2026-08-06"
    }
   },
   {
    "reference": "00000107086",
    "titre": "L'Amour réveillant Psyché",
+   "musee_code": "M5052",
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "point_interrogation",
@@ -71,6 +75,7 @@
   {
    "reference": "50350112082",
    "titre": "Femme nue, s'approchant d'un homme attaché sur un lit pour le tuer",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -79,6 +84,7 @@
   {
    "reference": "50350100795",
    "titre": "Actéon venant de surprendre Diane, se transforme en cerf",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -87,6 +93,7 @@
   {
    "reference": "50350100801",
    "titre": "Homme occupé à pilonner",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -95,6 +102,7 @@
   {
    "reference": "50350100802",
    "titre": "Vase richement orné soutenu par trois chèvres",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -103,6 +111,7 @@
   {
    "reference": "50350100796",
    "titre": "L'enlèvement d'Hylas par les nymphes",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -111,6 +120,7 @@
   {
    "reference": "50350112079",
    "titre": "Silène endormi",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -119,6 +129,7 @@
   {
    "reference": "50350500567",
    "titre": "Buste d'homme barbu, de profil",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -127,6 +138,7 @@
   {
    "reference": "50350100799",
    "titre": "Femme assise, regardant vers la gauche",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -135,6 +147,7 @@
   {
    "reference": "50350112077",
    "titre": "Orphée charmant Pluton et Proserpine de sa lyre",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -143,6 +156,7 @@
   {
    "reference": "50350214257",
    "titre": "Un évangéliste écrivant, avec un ange à ses côtés",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -151,6 +165,7 @@
   {
    "reference": "50350100800",
    "titre": "Chargement de deux galères",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -159,6 +174,7 @@
   {
    "reference": "50350100791",
    "titre": "Buste de Moïse tenant les tables de la loi",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -167,6 +183,7 @@
   {
    "reference": "50350100786",
    "titre": "Deux femmes tenant un écusson, décoration pour le haut d'une porte",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -175,6 +192,7 @@
   {
    "reference": "50350100997",
    "titre": "Bacchante remplissant un vase, satyre buvant, devant un vaisselier",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -183,6 +201,7 @@
   {
    "reference": "50350228400",
    "titre": "Tête de femme, de profil, vers la gauche",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -191,6 +210,7 @@
   {
    "reference": "50350100735",
    "titre": "Un sacrificateur conduisant un taureau et tenant un flambeau de la main",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -199,6 +219,7 @@
   {
    "reference": "50350100798",
    "titre": "Femme demi nue, appuyée contre un tronc d'arbre",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -207,6 +228,7 @@
   {
    "reference": "50350100984",
    "titre": "Enlèvement de Ganymède",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -215,6 +237,7 @@
   {
    "reference": "50350100998",
    "titre": "Préparation d'un festin",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -223,6 +246,7 @@
   {
    "reference": "50350100720",
    "titre": "Femme assise, endormie près d'un lion couché sur le globe terrestre",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -231,6 +255,7 @@
   {
    "reference": "50350100725",
    "titre": "Sirène allaitant ses petits",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -239,6 +264,7 @@
   {
    "reference": "50350201197",
    "titre": "Aigle entre deux arbres portant les armoiries d'un cardinal, et des griffons",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -247,6 +273,7 @@
   {
    "reference": "50350100687",
    "titre": "Le Dieu Janus, bifrons, tenant une clé",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -255,6 +282,7 @@
   {
    "reference": "50350100774",
    "titre": "Femme accueillant un aigle qui lui apporte un lapin",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -263,6 +291,7 @@
   {
    "reference": "50350201207",
    "titre": "Quatre masques",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -271,6 +300,7 @@
   {
    "reference": "50350107452",
    "titre": "Martyre d'une sainte",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -279,6 +309,7 @@
   {
    "reference": "50350100664",
    "titre": "La Présentation de la Vierge au Temple",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -287,6 +318,7 @@
   {
    "reference": "50350100701",
    "titre": "Mercure précédant deux jeunes femmes qui portent des fleurs",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -295,6 +327,7 @@
   {
    "reference": "50350201216",
    "titre": "Marteau de porte formé par deux têtes de faune, avec une flûte de Pan",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -303,6 +336,7 @@
   {
    "reference": "50350200355",
    "titre": "Apollon assis, tenant sa lyre à côté de lui",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -311,6 +345,7 @@
   {
    "reference": "50350100996",
    "titre": "L'Amour endormi, tenant des pavots dans la main gauche",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -319,6 +354,7 @@
   {
    "reference": "50350100986",
    "titre": "La Vierge, l'Enfant Jésus et saint Laurent avec saint Michel peseur d'âmes",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -327,6 +363,7 @@
   {
    "reference": "50350200108",
    "titre": "Lamentation sur le Christ mort",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -335,6 +372,7 @@
   {
    "reference": "50350112212",
    "titre": "Bacchanale",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -343,6 +381,7 @@
   {
    "reference": "50350100995",
    "titre": "Silène, tenant une couronne, est porté dans un drap par deux hommes",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -351,6 +390,7 @@
   {
    "reference": "50350100999",
    "titre": "Satyres et bacchante",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -359,6 +399,7 @@
   {
    "reference": "50350100781",
    "titre": "Une anesse et son ânon",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -367,6 +408,7 @@
   {
    "reference": "50350100666",
    "titre": "Rencontre de sainte Elisabeth et de Zacharie à la porte dorée",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -375,6 +417,7 @@
   {
    "reference": "50350100987",
    "titre": "La Vierge, l'Enfant avec saint Georges et sainte Catherine d'Alexandrie",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -383,6 +426,7 @@
   {
    "reference": "50350100690",
    "titre": "L'Amour près de Psyché à sa toilette",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -391,6 +435,7 @@
   {
    "reference": "50350100703",
    "titre": "Psyché implorant l'assistance de Junon",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -399,6 +444,7 @@
   {
    "reference": "50350100693",
    "titre": "Pan, Hyménée et les amours président à l'union de Vénus et d'Adonis",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -407,6 +453,7 @@
   {
    "reference": "50350112085",
    "titre": "Mars et Vénus se tenant embrassés sur un lit",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -415,6 +462,7 @@
   {
    "reference": "50350100722",
    "titre": "Deux femmes nues, lavant du linge",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -423,6 +471,7 @@
   {
    "reference": "50350112086",
    "titre": "Mars, Vénus et l'Amour forgeant ses flèches",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -431,6 +480,7 @@
   {
    "reference": "50350100989",
    "titre": "Descente de croix",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -439,6 +489,7 @@
   {
    "reference": "50350100994",
    "titre": "Sous un énorme taureau dans le ciel, Silène soutenu par des satyres",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -447,6 +498,7 @@
   {
    "reference": "50350100719",
    "titre": "Une femme tient la tête d'un homme qu'elle vient de décapiter",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -455,6 +507,7 @@
   {
    "reference": "50350101004",
    "titre": "L'Hiver",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -463,6 +516,7 @@
   {
    "reference": "50350200356",
    "titre": "Apollon nu, assis tenant sa lyre",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -471,6 +525,7 @@
   {
    "reference": "50350101005",
    "titre": "Tête d'homme barbu, aux cheveux ébouriffés",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -479,6 +534,7 @@
   {
    "reference": "50350100765",
    "titre": "Trois soldats à cheval",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -487,6 +543,7 @@
   {
    "reference": "50350100990",
    "titre": "Sainte Cécile, tenant  un orgue",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -495,6 +552,7 @@
   {
    "reference": "50350100983",
    "titre": "Plusieurs anges sur des nuages",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -503,6 +561,7 @@
   {
    "reference": "50350107472",
    "titre": "L'Adoration des bergers",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -511,6 +570,7 @@
   {
    "reference": "50350100667",
    "titre": "L'Adoration des bergers",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -519,6 +579,7 @@
   {
    "reference": "50350100778",
    "titre": "Cavalier oriental, de profil",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -527,6 +588,7 @@
   {
    "reference": "50350100985",
    "titre": "L'Enfant prenant le sein de la Vierge, et saint Jean lui montrant un oiseau",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -535,6 +597,7 @@
   {
    "reference": "50350101001",
    "titre": "Gestes de Scipion : triomphe de Scipion et les boeufs conduits au sacrifice",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -543,6 +606,7 @@
   {
    "reference": "50350100794",
    "titre": "Apollon et Minerve mettant les vices en fuite",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -551,6 +615,7 @@
   {
    "reference": "50350100792",
    "titre": "La Vierge assise jouant avec l'Enfant Jésus",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -559,6 +624,7 @@
   {
    "reference": "50350100793",
    "titre": "Vierge à l'Enfant avec saint Benoît et saint Jean l'Evangéliste",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -567,6 +633,7 @@
   {
    "reference": "50350500566",
    "titre": "Feuille d'études",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -575,6 +642,7 @@
   {
    "reference": "50350101000",
    "titre": "Les forges de Vulcain",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -583,6 +651,7 @@
   {
    "reference": "50350101002",
    "titre": "Bataille : groupe de guerriers à pied et à cheval",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -591,6 +660,7 @@
   {
    "reference": "50350100993",
    "titre": "Bacchus assis sur un banc dans une barque entourée de tritons",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -599,6 +669,7 @@
   {
    "reference": "50350200779",
    "titre": "Femme assise donnant le sein à un enfant",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -607,6 +678,7 @@
   {
    "reference": "50350205864",
    "titre": "Etude de frise animalière (lion et serpents)",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
@@ -615,6 +687,7 @@
   {
    "reference": "50350205865",
    "titre": "Frise animalière",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
@@ -623,6 +696,7 @@
   {
    "reference": "50350205863",
    "titre": "Etude d'animaux (lion et serpents)",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
@@ -631,6 +705,7 @@
   {
    "reference": "50350507675",
    "titre": "Le Festin chez Syphax",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -639,6 +714,7 @@
   {
    "reference": "50350506406",
    "titre": "Le Combat du Tessin",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -647,6 +723,7 @@
   {
    "reference": "50350508999",
    "titre": "L'Arrivée en Afrique",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -655,6 +732,7 @@
   {
    "reference": "02110002437",
    "titre": "Deux amants",
+   "musee_code": "M0211",
    "musee": "musée des beaux-arts",
    "ville": "Rennes",
    "code": "ecole_de",
@@ -663,6 +741,7 @@
   {
    "reference": "02110002511",
    "titre": "Combat de chevaux marins",
+   "musee_code": "M0211",
    "musee": "musée des beaux-arts",
    "ville": "Rennes",
    "code": "entourage_de",
@@ -670,7 +749,7 @@
   }
  ],
  "version_donnee": "2026-07-01",
- "date_generation": "2026-07-28T14:49:21+00:00",
+ "date_generation": "2026-08-05T18:41:37+00:00",
  "source": "Collections des musées de France : base Joconde",
  "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
 }

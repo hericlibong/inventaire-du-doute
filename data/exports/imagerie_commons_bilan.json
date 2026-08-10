@@ -1,0 +1,23 @@
+{
+ "date": "2026-08-07",
+ "perimetre": "estampes d'imagerie populaire sans reproduction",
+ "fonds_commons": {
+  "categories_racines": [
+   "Category:Images d'Épinal"
+  ],
+  "fichiers": 1507,
+  "sous_licence_ouverte": 1507
+ },
+ "oeuvres_examinees": 481,
+ "par_etat": {
+  "refusee": 289,
+  "introuvable": 182,
+  "exacte": 4,
+  "candidate": 6
+ },
+ "regle_du_numero": "le numéro de planche départage des candidates trouvées par le titre ; il ne désigne jamais une image à lui seul, chaque maison ayant sa propre numérotation",
+ "regle_d_indetermination": "deux notices de même titre et de même numéro ne sont appariées ni l'une ni l'autre",
+ "confirmees_a_l_oeil": 1,
+ "a_verifier": 0,
+ "mention_obligatoire": "autre exemplaire du même tirage (Wikimedia Commons)"
+}

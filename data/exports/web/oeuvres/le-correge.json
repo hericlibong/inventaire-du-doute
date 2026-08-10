@@ -20,6 +20,7 @@
   {
    "reference": "000PE014737",
    "titre": "FIGURE ALLEGORIQUE",
+   "musee_code": "M0913",
    "musee": "musée des beaux-arts",
    "ville": "Marseille",
    "code": "attribue",
@@ -28,6 +29,7 @@
   {
    "reference": "000PE026927",
    "titre": "PORTRAIT DE JEUNE HOMME",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "point_interrogation",
@@ -41,12 +43,13 @@
     "licence": "Public domain",
     "licence_url": "",
     "source": "https://commons.wikimedia.org/wiki/File:Parmigianino_-_Portrait_of_a_Young_man.jpg",
-    "verifie_le": "2026-07-29"
+    "verifie_le": "2026-08-06"
    }
   },
   {
    "reference": "00000060728",
    "titre": "VIERGE A L'ENFANT ET SAINT JEROME",
+   "musee_code": "M0619",
    "musee": "musée de la Chartreuse",
    "ville": "Douai",
    "code": "ecole_de",
@@ -55,6 +58,7 @@
   {
    "reference": "50350500864",
    "titre": "Texte manuscrit",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -63,6 +67,7 @@
   {
    "reference": "50350500863",
    "titre": "Texte manuscrit",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -71,6 +76,7 @@
   {
    "reference": "50350008316",
    "titre": "Tête de jeune garçon, de face, et naissance de l'épaule de profil",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -79,6 +85,7 @@
   {
    "reference": "50350008289",
    "titre": "Vierge avec l'Enfant sur ses genoux",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -87,6 +94,7 @@
   {
    "reference": "50350008296",
    "titre": "Vénus portée par trois amours",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -95,6 +103,7 @@
   {
    "reference": "50350008297",
    "titre": "Une femme et un enfant endormis à terre, et des amours volant",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -103,6 +112,7 @@
   {
    "reference": "50350008304",
    "titre": "Trois enfants soutenant une draperie et un quatrième assis de dos",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -111,6 +121,7 @@
   {
    "reference": "50350008317",
    "titre": "Tête de jeune garçon regardant à gauche",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -119,6 +130,7 @@
   {
    "reference": "50350008315",
    "titre": "Tête de jeune garçon, vue de trois quarts et tournée vers la droite",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -127,6 +139,7 @@
   {
    "reference": "50350008301",
    "titre": "La Charité",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -135,6 +148,7 @@
   {
    "reference": "50350008413",
    "titre": "Quatre têtes de jeunes femmes",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -143,6 +157,7 @@
   {
    "reference": "50350008410",
    "titre": "Vieil homme se crouvrant d'une draperie",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -151,6 +166,7 @@
   {
    "reference": "50350008407",
    "titre": "Demi-figure de femme assise",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -159,6 +175,7 @@
   {
    "reference": "50350008400",
    "titre": "Figure de Dieu dans un tondo : Eole ?",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -167,6 +184,7 @@
   {
    "reference": "50350008412",
    "titre": "Anges",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -175,6 +193,7 @@
   {
    "reference": "50350008406",
    "titre": "Deux esquisses : figure d'homme debout, de trois quarts et bas de visage",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -183,6 +202,7 @@
   {
    "reference": "50350008405",
    "titre": "Un ange debout, tourné vers la droite tenant des fleurs au-dessus de la tête",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -191,6 +211,7 @@
   {
    "reference": "50350008404",
    "titre": "Psyché découvrant  l'Amour endormi",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -199,6 +220,7 @@
   {
    "reference": "50350008411",
    "titre": "Femme nue, assise, endormie, vue de face",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -207,6 +229,7 @@
   {
    "reference": "50350008409",
    "titre": "Jeune homme ailé maitrisant un lion",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -215,6 +238,7 @@
   {
    "reference": "50350008408",
    "titre": "Tête de femme, de trois quarts vers la droite",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -223,6 +247,7 @@
   {
    "reference": "M0277002661",
    "titre": "Portrait de jeune homme",
+   "musee_code": "M0277",
    "musee": "musée municipal",
    "ville": "Vendôme",
    "code": "point_interrogation",
@@ -230,7 +255,7 @@
   }
  ],
  "version_donnee": "2026-07-01",
- "date_generation": "2026-07-28T14:49:21+00:00",
+ "date_generation": "2026-08-05T18:41:37+00:00",
  "source": "Collections des musées de France : base Joconde",
  "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
 }

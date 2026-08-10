@@ -2,7 +2,7 @@
 // projet (architecture-editoriale.md §5). SOURCE UNIQUE du regroupement des huit
 // mentions en trois zones de proximité, avec un titre et une courte annotation
 // éditoriale par zone. Réutilisée par le graphique (onglet Profil) et par la future
-// rubrique « Comprendre les mentions ».
+// page « Présentation ».
 //
 // On ne redéfinit AUCUN libellé de mention ici : les labels et couleurs restent
 // dans familles-public.js (couche publique unique). Ce module ne fait que

@@ -20,6 +20,7 @@
   {
    "reference": "000PE001267",
    "titre": "NAPOLEON 1ER EN COSTUME DE SACRE",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -33,12 +34,13 @@
     "licence": "Public domain",
     "licence_url": "",
     "source": "https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_Gerard_-_Napoleon_I_in_Coronation_Robes.jpeg",
-    "verifie_le": "2026-07-29"
+    "verifie_le": "2026-08-06"
    }
   },
   {
    "reference": "50160000047",
    "titre": "Portrait de Napoléon en costume du sacre",
+   "musee_code": "M5016",
    "musee": "musée national des châteaux de Malmaison et de Bois Préau",
    "ville": "Rueil-Malmaison",
    "code": "atelier_de",
@@ -47,6 +49,7 @@
   {
    "reference": "50350502854",
    "titre": "Couple",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -55,6 +58,7 @@
   {
    "reference": "05620000673",
    "titre": "Portrait de Jules de Résséguier, en uniforme",
+   "musee_code": "M0562",
    "musee": "musée des Augustins",
    "ville": "Toulouse",
    "code": "attribue",
@@ -63,6 +67,7 @@
   {
    "reference": "50110001207",
    "titre": "Portrait de l'impératrice Marie-Louise",
+   "musee_code": "M5011",
    "musee": "musée national Magnin",
    "ville": "Dijon",
    "code": "attribue",
@@ -71,6 +76,7 @@
   {
    "reference": "M0809006860",
    "titre": "Portrait de femme",
+   "musee_code": "M0809",
    "musee": "musée d'art et d'archéologie",
    "ville": "Senlis",
    "code": "entourage_de",
@@ -79,6 +85,7 @@
   {
    "reference": "50130000192",
    "titre": "Napoléon en costume du sacre",
+   "musee_code": "M5013",
    "musee": "musée national du château de Fontainebleau",
    "ville": "Fontainebleau",
    "code": "atelier_de",
@@ -92,12 +99,13 @@
     "licence": "Public domain",
     "licence_url": "",
     "source": "https://commons.wikimedia.org/wiki/File:Napoleon_in_Coronation_Robes_by_Fran%C3%A7ois_G%C3%A9rard.jpg",
-    "verifie_le": "2026-07-29"
+    "verifie_le": "2026-08-06"
    }
   },
   {
    "reference": "50130000187",
    "titre": "Portrait du Docteur Dubois, médecin-accoucheur de l'Impératrice Marie-Louise",
+   "musee_code": "M5013",
    "musee": "musée national du château de Fontainebleau",
    "ville": "Fontainebleau",
    "code": "atelier_de",
@@ -106,6 +114,7 @@
   {
    "reference": "50130000180",
    "titre": "Napoléon en costume du sacre",
+   "musee_code": "M5013",
    "musee": "musée national du château de Fontainebleau",
    "ville": "Fontainebleau",
    "code": "atelier_de",
@@ -119,12 +128,13 @@
     "licence": "Public domain",
     "licence_url": "",
     "source": "https://commons.wikimedia.org/wiki/File:Napoleon_;_keizer_der_Fransen.jpg",
-    "verifie_le": "2026-07-29"
+    "verifie_le": "2026-08-06"
    }
   },
   {
    "reference": "50130000179",
    "titre": "Marie-Julie, reine d'Espagne et ses deux filles Zénaïde et Charlotte",
+   "musee_code": "M5013",
    "musee": "musée national du château de Fontainebleau",
    "ville": "Fontainebleau",
    "code": "atelier_de",
@@ -138,12 +148,13 @@
     "licence": "Public domain",
     "licence_url": "",
     "source": "https://commons.wikimedia.org/wiki/File:Bonaparte_Julie_by_Wicar.JPG",
-    "verifie_le": "2026-07-29"
+    "verifie_le": "2026-08-06"
    }
   },
   {
    "reference": "50130000182",
    "titre": "Madame Mère",
+   "musee_code": "M5013",
    "musee": "musée national du château de Fontainebleau",
    "ville": "Fontainebleau",
    "code": "atelier_de",
@@ -152,6 +163,7 @@
   {
    "reference": "M0517000081",
    "titre": "Hector Lemaire (titre de l'inventaire) ; Portrait d'Hector Lemaire (titre d'usage)",
+   "musee_code": "M0517",
    "musee": "musée barrois",
    "ville": "Bar-le-Duc",
    "code": "attribue",
@@ -165,12 +177,13 @@
     "licence": "CC BY-SA 3.0",
     "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "source": "https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_G%C3%A9rard-Portrait_d%27Hector_Lemaire-Mus%C3%A9e_barrois.jpg",
-    "verifie_le": "2026-07-29"
+    "verifie_le": "2026-08-06"
    }
   },
   {
    "reference": "02470000174",
    "titre": "Portrait de la reine Hortense",
+   "musee_code": "M0247",
    "musee": "musée Bertrand",
    "ville": "Châteauroux",
    "code": "attribue",
@@ -184,12 +197,13 @@
     "licence": "Public domain",
     "licence_url": "",
     "source": "https://commons.wikimedia.org/wiki/File:Portrait_de_la_reine_Hortense_-_Mus%C3%A9e_Bertrand_Ch%C3%A2teauroux.jpg",
-    "verifie_le": "2026-07-29"
+    "verifie_le": "2026-08-06"
    }
   },
   {
    "reference": "03110042044",
    "titre": "Napoléon 1er",
+   "musee_code": "M0311",
    "musee": "musée des Beaux-Arts de Reims",
    "ville": "Reims",
    "code": "atelier_de",
@@ -198,6 +212,7 @@
   {
    "reference": "07140011320",
    "titre": "Charles Ferdinand Louis-Philippe Emmanuel d'Orléans",
+   "musee_code": "M0714",
    "musee": "musée Louis Philippe",
    "ville": "Eu",
    "code": "entourage_de",
@@ -206,6 +221,7 @@
   {
    "reference": "M0332013024",
    "titre": "Portrait de jeune femme",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -214,6 +230,7 @@
   {
    "reference": "M0332013092",
    "titre": "Etude pour une femme turque se reposant sur des coussins (recto) ; Femme debout, drapée, le sein dénudé (verso)",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -222,6 +239,7 @@
   {
    "reference": "M0332013093",
    "titre": "Une femme nue assise et une femme nue couchée avec un enfant",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -230,6 +248,7 @@
   {
    "reference": "M0332014157",
    "titre": "Portrait d'homme dans un fauteuil",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -238,6 +257,7 @@
   {
    "reference": "M0332014165",
    "titre": "Officier, de face, la main sur un canon (recto) ; portrait de cardinal (verso)",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -246,6 +266,7 @@
   {
    "reference": "M0332014167",
    "titre": "Portrait d'homme assis à son bureau",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -254,6 +275,7 @@
   {
    "reference": "M0332014169",
    "titre": "Portrait d'homme assis",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -262,6 +284,7 @@
   {
    "reference": "M0332014171",
    "titre": "Portrait d'homme assis, une épée au côté droit",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -270,6 +293,7 @@
   {
    "reference": "M0332014174",
    "titre": "Portrait d'homme assis",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -278,6 +302,7 @@
   {
    "reference": "M0332014175",
    "titre": "Portrait d'homme assis",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -286,6 +311,7 @@
   {
    "reference": "M0332014176",
    "titre": "Portrait d'homme assis",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -294,6 +320,7 @@
   {
    "reference": "M0332014178",
    "titre": "Portrait d'homme assis tenant des gants",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -302,6 +329,7 @@
   {
    "reference": "M0332014183",
    "titre": "Portrait d'homme assis (recto et verso)",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -310,6 +338,7 @@
   {
    "reference": "M0332014186",
    "titre": "Portrait d'homme",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -318,6 +347,7 @@
   {
    "reference": "M0332014187",
    "titre": "Portrait d'homme tenant un chapeau",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -326,6 +356,7 @@
   {
    "reference": "M0332013090",
    "titre": "Etude d'une danseuse d'après un vase antique",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -334,6 +365,7 @@
   {
    "reference": "M0332013094",
    "titre": "Jeune femme assise endormie",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -342,6 +374,7 @@
   {
    "reference": "M0332013106",
    "titre": "Portrait d'homme assis à son bureau",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -350,6 +383,7 @@
   {
    "reference": "M0332013111",
    "titre": "Portrait d'homme assis à son bureau",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -358,6 +392,7 @@
   {
    "reference": "M0332014158",
    "titre": "Portrait d'homme assis dans un fauteuil",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -366,6 +401,7 @@
   {
    "reference": "M0332014159",
    "titre": "Portrait d'homme assis dans un fauteuil",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -374,6 +410,7 @@
   {
    "reference": "M0332014180",
    "titre": "Portrait d'homme debout",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -382,6 +419,7 @@
   {
    "reference": "M0332014182",
    "titre": "Portrait d'homme debout appuyé à un bureau",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -390,6 +428,7 @@
   {
    "reference": "M0332012327",
    "titre": "Cavalier sur un cheval (Henri IV à cheval ?)",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -398,6 +437,7 @@
   {
    "reference": "M0332013087",
    "titre": "Portrait de femme",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -406,6 +446,7 @@
   {
    "reference": "M0332013091",
    "titre": "Croquis d'une femme assise ou femme à sa toilette (recto) ; Etude d'architecture intérieure (verso)",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -414,6 +455,7 @@
   {
    "reference": "M0332013095",
    "titre": "Femme debout, drapée et laurée",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -422,6 +464,7 @@
   {
    "reference": "M0332013104",
    "titre": "Feuille de croquis",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -430,6 +473,7 @@
   {
    "reference": "M0332013107",
    "titre": "Portrait d'homme assis à son bureau",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -438,6 +482,7 @@
   {
    "reference": "M0332013108",
    "titre": "Deux études d'homme assis à son bureau",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -446,6 +491,7 @@
   {
    "reference": "M0332013110",
    "titre": "Portrait d'homme assis",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -454,6 +500,7 @@
   {
    "reference": "M0332014156",
    "titre": "Portrait d'homme assis",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -462,6 +509,7 @@
   {
    "reference": "M0332014163",
    "titre": "Officier debout",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -470,6 +518,7 @@
   {
    "reference": "M0332014166",
    "titre": "Portrait d'homme debout",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -478,6 +527,7 @@
   {
    "reference": "M0332014173",
    "titre": "Portrait d'homme assis",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -486,6 +536,7 @@
   {
    "reference": "M0332014185",
    "titre": "Portrait d'homme assis, le bras gauche reposant sur une table",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -494,6 +545,7 @@
   {
    "reference": "M0332013088",
    "titre": "Etude d'homme nu debout (Pâris?)",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -502,6 +554,7 @@
   {
    "reference": "M0332013105",
    "titre": "Feuille de croquis (recto et verso)",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -510,6 +563,7 @@
   {
    "reference": "M0332013109",
    "titre": "Portrait d'homme assis à son bureau",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -518,6 +572,7 @@
   {
    "reference": "M0332014160",
    "titre": "Portrait d'homme assis sur une banquette",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -526,6 +581,7 @@
   {
    "reference": "M0332014161",
    "titre": "Portrait d'homme assis dans un fauteuil",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -534,6 +590,7 @@
   {
    "reference": "M0332014162",
    "titre": "Un officier debout près d'un canon",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -542,6 +599,7 @@
   {
    "reference": "M0332014164",
    "titre": "Officier, debout, de face",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -550,6 +608,7 @@
   {
    "reference": "M0332014168",
    "titre": "Portrait d'homme assis",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -558,6 +617,7 @@
   {
    "reference": "M0332014172",
    "titre": "Portrait d'homme assis, tenant une canne dans la main gauche",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -566,6 +626,7 @@
   {
    "reference": "M0332014177",
    "titre": "Portrait de femme portant un chapeau",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -574,6 +635,7 @@
   {
    "reference": "M0332014179",
    "titre": "Portrait d'homme debout dans un encadrement de fenêtre",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -582,6 +644,7 @@
   {
    "reference": "M0332014181",
    "titre": "Portrait d'homme debout",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -590,6 +653,7 @@
   {
    "reference": "M0332014184",
    "titre": "Portrait d'homme assis",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -598,6 +662,7 @@
   {
    "reference": "M0332012902",
    "titre": "Une fête champêtre dans le parc d'un château",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -605,7 +670,7 @@
   }
  ],
  "version_donnee": "2026-07-01",
- "date_generation": "2026-07-28T14:49:21+00:00",
+ "date_generation": "2026-08-05T18:41:37+00:00",
  "source": "Collections des musées de France : base Joconde",
  "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
 }

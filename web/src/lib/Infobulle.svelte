@@ -83,13 +83,16 @@
 		transform: translate(-50%, calc(-100% - 10px));
 		width: max-content;
 		min-width: 13rem;
-		max-width: 17rem;
+		max-width: min(17rem, calc(100% - 1rem));
 		padding: 0;
 		overflow: hidden;
-		background: #fff;
-		border: 1px solid var(--couleur-trait);
+		/* Finition du 2026-08-08 : fond très légèrement translucide (96 %), bordure
+		   plus fine et plus chaude, ombre adoucie. Le TEXTE reste à pleine opacité —
+		   c'est le panneau qui s'allège, jamais sa lisibilité. */
+		background: rgba(255, 253, 249, 0.96);
+		border: 1px solid rgba(198, 186, 168, 0.75);
 		border-radius: 5px;
-		box-shadow: 0 4px 14px rgba(43, 30, 20, 0.16);
+		box-shadow: 0 3px 10px rgba(43, 30, 20, 0.1);
 		pointer-events: none;
 		text-align: left;
 	}
@@ -107,7 +110,7 @@
 		min-width: 0;
 		max-width: 100%;
 		margin: 0.4rem 0 0.2rem;
-		box-shadow: 0 2px 8px rgba(43, 30, 20, 0.12);
+		box-shadow: 0 2px 6px rgba(43, 30, 20, 0.08);
 	}
 
 	.tooltip.dessous {
@@ -152,8 +155,10 @@
 		color: var(--couleur-encre);
 	}
 
+	/* Un peu plus d'air entre la mesure et l'explication : deux registres
+	   différents, ils ne doivent pas se lire comme un paragraphe (2026-08-08). */
 	.tt-corps {
-		margin: 0.25rem 0 0;
+		margin: 0.45rem 0 0;
 		padding: 0 0.65rem;
 		font-size: 0.82rem;
 		line-height: 1.35;

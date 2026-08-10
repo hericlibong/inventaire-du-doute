@@ -1,0 +1,755 @@
+{
+ "slug": "charles-francois-pinot",
+ "nom": "Charles François Pinot",
+ "doute": 82,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 82
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "M0537007970",
+   "titre": "PIRAME ET THISBE. N°.883. (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "PINOT Charles (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537017582",
+   "titre": "PIRAME ET THISBE (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "PINOT Charles (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537008156",
+   "titre": "ADOLESCENCE DE PAUL ET VIRGINIE. / N° 2. / N°.120. (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "PINOT Charles (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537008158",
+   "titre": "HISTOIRE DE PAUL ET VIRGINIE. N°.23. (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "PINOT Charles (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537008157",
+   "titre": "ENFANCE DE PAUL ET VIRGINIE. / N°.119. (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "PINOT Charles (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537008136",
+   "titre": "PIRAME ET THISBE. N°.883. (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "PINOT Charles (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537007968",
+   "titre": "PIRAME ET THISBE. N°6. (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "PINOT Charles (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537007954",
+   "titre": "HISTOIRE DE PAUL ET VIRGINIE. (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "PINOT Charles (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537007749",
+   "titre": "ENFANCE DE PAUL ET VIRGINIE. / N°.1. / N°.119. (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "PINOT Charles (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537007952",
+   "titre": "ADOLESCENCE DE PAUL ET VIRGINIE. / N° 2. / N°.120. (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "PINOT Charles (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537007969",
+   "titre": "PIRAME ET THISBÉ(titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "PINOT Charles (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537043941",
+   "titre": "N°. 31. / BATAILLE DE REICHOFFEN. (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537038121",
+   "titre": "LE CHAT BOTTÉ. (CONTE DE FÉES.) 557 (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537045961",
+   "titre": "NOEL. N°. 71. (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537028803",
+   "titre": "BATAILLE DE REICHOFFEN. N°.958. (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537052973",
+   "titre": "HISTOIRE D'ÉDOUARD dit le PETIT LOUVETEAU N°.434. (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537003099",
+   "titre": "Actualité, N°.10. / Voilà ce diable de MICMAK en train de nettoyer la Confédération Asthmatique... (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "PINOT Charles François (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537003107",
+   "titre": "LE HULAN ET LA PAYSANNE. (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (attribué à)"
+  },
+  {
+   "reference": "M0537044376",
+   "titre": "ALPHABET MASCARADE. N°. 651. (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537036438",
+   "titre": "LE PRINCE MIRLITON. (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537005937",
+   "titre": "HISTOIRE D'EDOUARD DIT LE PETIT LOUVETEUAU N°.474. (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "PINOT Charles François (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537036355",
+   "titre": "PRISE DE SAARBRUCK. N°. 28. (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537004705",
+   "titre": "LE ROI DAGOBERT. (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537004800",
+   "titre": "MONSIEUR ET MADAME DENIS. / Souvenirs de deux vieux époux. (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537017171",
+   "titre": "LE CHAT DE LA MÈRE MICHEL (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537046230",
+   "titre": "VIVE L'AMOUR ! VIVE LE VIN ! (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537007991",
+   "titre": "LE CHEMIN DE FER. N°.624. (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537027468",
+   "titre": "TIJL UILENSPIEGEL (titre inscrit, néerl.) ; Till l’espiègle. (titre factice)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537027469",
+   "titre": "DE GESCHIEDENIS VAN ROBINSON CRUSOE (titre inscrit, néerl.) ; L’histoire de Robinson Crusoé. (titre factice)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537004715",
+   "titre": "LE CHAT DE LA MÈRE MICHEL. (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537040563",
+   "titre": "SCÈNES VILLAGEOISES ET TRAVAUX CHAMPÊTRES. / 540 (titre inscrit, fr., all.)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537040562",
+   "titre": "SCÈNES VILLAGEOISES ET TRAVAUX CHAMPÊTRES. / 539 (titre inscrit, fr., all.)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537017872",
+   "titre": "DE JAPANSCHE HOND (titre inscrit, néerl.) ; Le chien du Japon (titre factice)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537003096",
+   "titre": "Actualité, N°.9. MELCHISEDECK. (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537017623",
+   "titre": "LE MEUNIER, SON FILS ET L'ANE. (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537006062",
+   "titre": "M. DUCROQUET EN CHEMIN DE FER. (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537018337",
+   "titre": "FABLES DE LA FONTAINE / LE CHEVAL ET LE LOUP / Le Renard et les Raisins / Le Loup et la Cigogne (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537029139",
+   "titre": "FABLES / DE / LAFONTAINE N°.6. (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537027466",
+   "titre": "DE GESCHIEDENIS VAN JACOB DE GOEDE ZOON (titre inscrit, néerl.) ; Histoire de Jacques, le bon fils. (titre factice)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537027507",
+   "titre": "Martha, de goede Kleine Huishoudster (titre inscrit, néerl.) ; Marthe la bonne petite ménagère. (titre factice)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537007842",
+   "titre": "N.°11. / LE GRAND OGRE ALLEMAND. (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537017345",
+   "titre": "CADET ROUSSELLE. (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537025098",
+   "titre": "CADET ROUSSELLE (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537017272",
+   "titre": "LE ROI DAGOBERT (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537017273",
+   "titre": "LE ROI DAGOBERT (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537001788",
+   "titre": "LES DEGRÉS DES AGES DE L'HOMME. (titre inscrit fr., all.)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537027560",
+   "titre": "HOND EN KAT, OF DE SLECHTE BUREN (titre inscrit, néerl.) ; Chien et chat ou les mauvais voisins (titre factice)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537043716",
+   "titre": "CADET ROUSSELLE. (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537045844",
+   "titre": "Actualité. N°. 30. / Guillaume s'en va t'en guerre, mironton, ton, ton, mirontaine !!! (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537053035",
+   "titre": "CADET ROUSSELLE. N°.261. (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537017871",
+   "titre": "GESCHIEDENIS VAN ALI-BABA EN DE 40 ROOVERS (titre inscrit, néerl.) ; L’histoire de Ali-Baba et les 40 voleurs (titre factice)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537026208",
+   "titre": "MARTHE LA BONNE PETITE MENAGERE. (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537026207",
+   "titre": "MARTHE LA BONNE PETITE MENAGERE. (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537038128",
+   "titre": "BETJE DE GOEDE HUISHOUDSTER. (titre inscrit, néerl.) ; MARTHE LA BONNE PETITE MENAGÈRE (titre traduit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537048453",
+   "titre": "LES COURSES DE LA MARCHE. N°.. 58 (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537005994",
+   "titre": "LE CHEVAL ENCHANTÉ (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537070838",
+   "titre": "HISTOIRE DE RIQUET A LA HOUPPE (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537015753",
+   "titre": "LE LOUP, / LA CHEVRE / ET LES BIQUETS / - 7e SERIE  - (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537070835",
+   "titre": "Le lOUP, la Chèvre et les Biquets (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537061445",
+   "titre": "NOUVEAU THÉÂTRE PORTATIF À RAINURES. / FOND DE FORÊT (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537061403",
+   "titre": "NOUVEAU THÉÂTRE PORTATIF À RAINURES. / PALAIS (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537017296",
+   "titre": "L'ECOLE DE VILLAGE (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537004532",
+   "titre": "GUERNADIER / QUE TU M'AFFLIGES. N°.933. (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537045900",
+   "titre": "GUERNADIER / QUE TU M'AFFLIGES. / N°. 30. (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537003196",
+   "titre": "GARIBALDI ET SES VOLONTAIRES / Combattant les Prussiens. N°.957. (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537004732",
+   "titre": "LE PRINCE MIRLITON. N°.511. (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537007855",
+   "titre": "AH VOUS DIRAI-JE MAMAN. N°.265. (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537007818",
+   "titre": "LE CHAT DE LA MÈRE MICHEL. N°.259. (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537026857",
+   "titre": "ÉPISODE DE LA BATAILLE DE SAINT-PRIVAT (près Metz) (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537028660",
+   "titre": "COMPÈRE GUILLERI. N° 275 (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537017259",
+   "titre": "ALPHABET MASCARADE (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537045889",
+   "titre": "LE CHAT DE LA MÈRE MICHEL. N°. 12. (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537061818",
+   "titre": "Pantins : L'OGRE (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537053048",
+   "titre": "COMPÈRE GUILLERI. N°.932. (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537053037",
+   "titre": "LE ROI DAGOBERT. N°.939. (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537021306",
+   "titre": "LA MARSEILLAISE / Hymne patriotique. N°.921. (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537028664",
+   "titre": "LE CHAT DE LA MERE MICHEL. N° 923 (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537003532",
+   "titre": "SIÈGE ET BOMBARDEMENT DE STRASBOURG. (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537006003",
+   "titre": "HISTOIRE DE COCO LE SINGE D'AMERIQUE. N°.508. (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537006049",
+   "titre": "FLEURETTE ou la Petite Bouquetière des Alpes (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537006004",
+   "titre": "HISTOIRE DE COCO LE SINGE D'AMERIQUE. (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  },
+  {
+   "reference": "M0537004028",
+   "titre": "LES APPOINTEMENTS DE L'EX FAMILLE IMPERIALE / ET DES GROS FONCTIONNAIRES DE L'EMPIRE. N°.655 (titre inscrit)",
+   "musee_code": "M0537",
+   "musee": "musée de l'image",
+   "ville": "Epinal",
+   "code": "attribue",
+   "extrait": "Pinot Charles François (1817-1874) (dessinateur, attribué à)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-08-05T18:41:37+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

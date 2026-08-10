@@ -28,6 +28,7 @@
   {
    "reference": "000PE014035",
    "titre": "TAUREAU POURSUIVI PAR DES CHIENS",
+   "musee_code": "M0913",
    "musee": "musée des beaux-arts",
    "ville": "Marseille",
    "code": "attribue",
@@ -36,6 +37,7 @@
   {
    "reference": "000PE022152",
    "titre": "VENUS ENDORMIE ENTRE DEUX AMOURS",
+   "musee_code": "M0065",
    "musee": "musée des beaux-arts",
    "ville": "Bordeaux",
    "code": "attribue",
@@ -44,6 +46,7 @@
   {
    "reference": "000PE025528",
    "titre": "UN CONCERT",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "point_interrogation",
@@ -57,12 +60,13 @@
     "licence": "Public domain",
     "licence_url": "",
     "source": "https://commons.wikimedia.org/wiki/File:Un_concert_-_Mus%C3%A9e_du_Louvre_Peintures_INV_56_;_MR_106.jpg",
-    "verifie_le": "2026-07-29"
+    "verifie_le": "2026-08-06"
    }
   },
   {
    "reference": "000PE025531",
    "titre": "LE CHRIST APPARAISSANT A LA MADELEINE",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -71,6 +75,7 @@
   {
    "reference": "000PE025529",
    "titre": "LA CHASSE DE DIANE",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -79,6 +84,7 @@
   {
    "reference": "000PE025530",
    "titre": "LUCRECE ET TARQUIN",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -87,6 +93,7 @@
   {
    "reference": "00000074374",
    "titre": "HERCULE AU REPOS",
+   "musee_code": "M0594",
    "musee": "musée Goya",
    "ville": "Castres",
    "code": "attribue",
@@ -95,6 +102,7 @@
   {
    "reference": "00000093479",
    "titre": "ENLEVEMENT D'EUROPE",
+   "musee_code": "M0619",
    "musee": "musée de la Chartreuse",
    "ville": "Douai",
    "code": "atelier_de",
@@ -103,6 +111,7 @@
   {
    "reference": "10500005806",
    "titre": "Enlèvement de Déjanire",
+   "musee_code": "M1048",
    "musee": "musée des beaux-arts",
    "ville": "Chambéry",
    "code": "atelier_de",
@@ -111,6 +120,7 @@
   {
    "reference": "00980001231",
    "titre": "Un Philosophe",
+   "musee_code": "M0098",
    "musee": "musée des Beaux-Arts",
    "ville": "Pau",
    "code": "attribue",
@@ -124,12 +134,13 @@
     "licence": "Public domain",
     "licence_url": "",
     "source": "https://commons.wikimedia.org/wiki/File:Ma%C3%AEtre_de_l%27Annonce_aux_bergers_-_Philosophe.jpg",
-    "verifie_le": "2026-07-29"
+    "verifie_le": "2026-08-06"
    }
   },
   {
    "reference": "M0347001249",
    "titre": "Lucrèce",
+   "musee_code": "M0347",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Dole",
    "code": "attribue",
@@ -138,6 +149,7 @@
   {
    "reference": "50350104053",
    "titre": "La Vierge et l'Enfant sur des nuages entourées de saints",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -146,6 +158,7 @@
   {
    "reference": "50350006731",
    "titre": "Jésus mort pleuré par les Saintes Femmes et par les anges",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -154,6 +167,7 @@
   {
    "reference": "50350012710",
    "titre": "Le martyre de saint Barthélémy",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -162,6 +176,7 @@
   {
    "reference": "50350006730",
    "titre": "Saint Jean-Baptiste prêchant",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -170,6 +185,7 @@
   {
    "reference": "50350006732",
    "titre": "L'Assomption de la Vierge",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -178,6 +194,7 @@
   {
    "reference": "50350006733",
    "titre": "Figures du Parnasse",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -186,6 +203,7 @@
   {
    "reference": "50350502039",
    "titre": "Annotations chiffrées",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -194,6 +212,7 @@
   {
    "reference": "50350203658",
    "titre": "Dragon, évêque et figure allégorique sur des nuages, entourée d'anges",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -202,6 +221,7 @@
   {
    "reference": "50350103797",
    "titre": "Judith mettant la tête d'Holopherne dans le sac tenu par sa servante",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -210,6 +230,7 @@
   {
    "reference": "50350103796",
    "titre": "Homme ranimant une femme évanouie",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -218,6 +239,7 @@
   {
    "reference": "50350103781",
    "titre": "Suzanne et les vieillards",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -226,6 +248,7 @@
   {
    "reference": "50350103800",
    "titre": "Judith mettant la tête d'Holopherne dans le sac tenu par sa servante",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -234,6 +257,7 @@
   {
    "reference": "50350204643",
    "titre": "Consécration d'un évêque",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -242,6 +266,7 @@
   {
    "reference": "50350104311",
    "titre": "La Sainte Famille, avec le petit saint Jean et sainte Elisabeth",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -250,6 +275,7 @@
   {
    "reference": "50130000291",
    "titre": "TRIOMPHE D'AMPHITRITE",
+   "musee_code": "M5013",
    "musee": "musée national du château de Fontainebleau",
    "ville": "Fontainebleau",
    "code": "ecole_de",
@@ -258,6 +284,7 @@
   {
    "reference": "50130000293",
    "titre": "DIANE ET CALLISTO",
+   "musee_code": "M5013",
    "musee": "musée national du château de Fontainebleau",
    "ville": "Fontainebleau",
    "code": "ecole_de",
@@ -266,6 +293,7 @@
   {
    "reference": "50130000292",
    "titre": "PAN ET SYRINX",
+   "musee_code": "M5013",
    "musee": "musée national du château de Fontainebleau",
    "ville": "Fontainebleau",
    "code": "ecole_de",
@@ -274,6 +302,7 @@
   {
    "reference": "07480012416",
    "titre": "Combat de cavalerie",
+   "musee_code": "M0748",
    "musee": "musée des beaux-arts et galerie David-d'Angers",
    "ville": "Angers",
    "code": "point_interrogation",
@@ -282,6 +311,7 @@
   {
    "reference": "01500000115",
    "titre": "Mort de sainte Claire ; Mort de sainte Thérèse d'Avila (Titre ancien)",
+   "musee_code": "M0150",
    "musee": "musée d'Art et d'Histoire Romain Rolland",
    "ville": "Clamecy",
    "code": "attribue",
@@ -290,6 +320,7 @@
   {
    "reference": "06190001735",
    "titre": "Enlèvement d'Europe",
+   "musee_code": "M0619",
    "musee": "musée de la Chartreuse",
    "ville": "Douai",
    "code": "atelier_de",
@@ -298,6 +329,7 @@
   {
    "reference": "M0121002493",
    "titre": "La mort de Cléopâtre",
+   "musee_code": "M0121",
    "musee": "musée d'art Roger-Quillot",
    "ville": "Clermont-Ferrand",
    "code": "atelier_de",
@@ -306,6 +338,7 @@
   {
    "reference": "03290005077",
    "titre": "Apparition de Jésus à Marie-Madeleine",
+   "musee_code": "M0329",
    "musee": "musée d’ethnographie corse",
    "ville": "Bastia",
    "code": "point_interrogation",
@@ -319,12 +352,13 @@
     "licence": "CC BY 3.0",
     "licence_url": "https://creativecommons.org/licenses/by/3.0",
     "source": "https://commons.wikimedia.org/wiki/File:Luca_giordano,_noli_me_tangere,_1650-1700_ca.jpg",
-    "verifie_le": "2026-07-29"
+    "verifie_le": "2026-08-06"
    }
   },
   {
    "reference": "05120002092",
    "titre": "Conversion de saint Paul ; Saint Paul terrassé sur le chemin de Damas",
+   "musee_code": "M0512",
    "musee": "musée des Beaux-Arts",
    "ville": "Nancy",
    "code": "attribue",
@@ -333,6 +367,7 @@
   {
    "reference": "01760000049",
    "titre": "La communion des apôtres",
+   "musee_code": "M0176",
    "musee": "musée eucharistique du Hiéron",
    "ville": "Paray-le-Monial",
    "code": "atelier_de",
@@ -341,6 +376,7 @@
   {
    "reference": "09940008933",
    "titre": "Enée et Anchise fuyant Troie ; Enée et Anchise fuyant avec Ascorye (Ancien titre)",
+   "musee_code": "M0994",
    "musee": "musée de Grenoble",
    "ville": "Grenoble",
    "code": "attribue",
@@ -349,6 +385,7 @@
   {
    "reference": "09940067267",
    "titre": "Scène de Bacchanale",
+   "musee_code": "M0994",
    "musee": "musée de Grenoble",
    "ville": "Grenoble",
    "code": "attribue",
@@ -357,6 +394,7 @@
   {
    "reference": "09940009120",
    "titre": "Sainte Thérèse d'Avila ; Sainte Marie-Madeleine (Ancien titre)",
+   "musee_code": "M0994",
    "musee": "musée de Grenoble",
    "ville": "Grenoble",
    "code": "attribue",
@@ -365,6 +403,7 @@
   {
    "reference": "08940004909",
    "titre": "L'enlèvement d'Hélène",
+   "musee_code": "M0894",
    "musee": "musée Granet",
    "ville": "Aix-en-Provence",
    "code": "atelier_de",
@@ -378,12 +417,13 @@
     "licence": "Public domain",
     "licence_url": "",
     "source": "https://commons.wikimedia.org/wiki/File:Giuseppe_Simonelli_-_L%27enl%C3%A8vement_d%27H%C3%A9l%C3%A8ne_02.jpg",
-    "verifie_le": "2026-07-29"
+    "verifie_le": "2026-08-06"
    }
   },
   {
    "reference": "08940005176",
    "titre": "Saint François Xavier présidant la construction d'un édifice ; Construction d'un édifice sous la direction de saint François Xavier",
+   "musee_code": "M0894",
    "musee": "musée Granet",
    "ville": "Aix-en-Provence",
    "code": "atelier_de",
@@ -397,12 +437,13 @@
     "licence": "Public domain",
     "licence_url": "",
     "source": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_Granet_-_Saint_Fran%C3%A7ois_Xavier_pr%C3%A9sidant_la_construction_d%27un_%C3%A9difice_02.jpg",
-    "verifie_le": "2026-07-29"
+    "verifie_le": "2026-08-06"
    }
   },
   {
    "reference": "M0341000402",
    "titre": "Angélique et Médor",
+   "musee_code": "M0341",
    "musee": "musée Sarret de Grozon",
    "ville": "Arbois",
    "code": "genre_de",
@@ -411,6 +452,7 @@
   {
    "reference": "M0536000446",
    "titre": "Denys de Syracuse",
+   "musee_code": "M0536",
    "musee": "musée départemental d'art ancien et contemporain",
    "ville": "Epinal",
    "code": "attribue",
@@ -418,7 +460,7 @@
   }
  ],
  "version_donnee": "2026-07-01",
- "date_generation": "2026-07-28T14:49:21+00:00",
+ "date_generation": "2026-08-05T18:41:37+00:00",
  "source": "Collections des musées de France : base Joconde",
  "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
 }

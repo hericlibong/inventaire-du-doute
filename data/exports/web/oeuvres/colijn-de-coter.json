@@ -1,0 +1,264 @@
+{
+ "slug": "colijn-de-coter",
+ "nom": "Colijn de Coter",
+ "doute": 27,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 2
+  },
+  {
+   "code": "entourage_de",
+   "notices": 25
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "50030009049",
+   "titre": "Légende de saint Etienne (scène 01 et 02) : Désignation et ordination des premiers diacres de l'Eglise, parmi lesquels Etienne",
+   "musee_code": "M5003",
+   "musee": "musée du Moyen Age - thermes et hôtel de Cluny",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "COLYN DE COTER (entourage)"
+  },
+  {
+   "reference": "50030005912",
+   "titre": "Tenture de l'Honneur : la Mort de l'Honneur",
+   "musee_code": "M5003",
+   "musee": "musée du Moyen Age - thermes et hôtel de Cluny",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "COLYN DE COTER (entourage)"
+  },
+  {
+   "reference": "50030003307",
+   "titre": "Légende de saint Etienne (scène 05) : Scandale des docteurs",
+   "musee_code": "M5003",
+   "musee": "musée du Moyen Age - thermes et hôtel de Cluny",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "COLYN DE COTER (entourage)"
+  },
+  {
+   "reference": "50030027493",
+   "titre": "Bataille et embarquement",
+   "musee_code": "M5003",
+   "musee": "musée du Moyen Age - thermes et hôtel de Cluny",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "COLYN DE COTER (entourage)"
+  },
+  {
+   "reference": "50030021630",
+   "titre": "Légende de saint Etienne (scène 13) : Découverte du corps",
+   "musee_code": "M5003",
+   "musee": "musée du Moyen Age - thermes et hôtel de Cluny",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "COLYN DE COTER (entourage)"
+  },
+  {
+   "reference": "50030021677",
+   "titre": "Légende de saint Etienne (scène 21) : Eudoxie demande le transport du corps à côté de celui de saint Laurent",
+   "musee_code": "M5003",
+   "musee": "musée du Moyen Age - thermes et hôtel de Cluny",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "COLYN DE COTER (entourage)"
+  },
+  {
+   "reference": "50030026699",
+   "titre": "Tenture de l'Honneur : les Parques",
+   "musee_code": "M5003",
+   "musee": "musée du Moyen Age - thermes et hôtel de Cluny",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "COLYN DE COTER (entourage)"
+  },
+  {
+   "reference": "50030021678",
+   "titre": "Légende de saint Etienne (scène 22) : Les gens de Constantinople sont empêchés par miracle de reprendre le corps",
+   "musee_code": "M5003",
+   "musee": "musée du Moyen Age - thermes et hôtel de Cluny",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "COLYN DE COTER (entourage)"
+  },
+  {
+   "reference": "50030021540",
+   "titre": "Légende de saint Etienne (scène 06) : Saint Etienne mené au supplice",
+   "musee_code": "M5003",
+   "musee": "musée du Moyen Age - thermes et hôtel de Cluny",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "COLYN DE COTER (entourage)"
+  },
+  {
+   "reference": "50030021698",
+   "titre": "Légende de saint Etienne (scène 15, 16, 17) : Une noble femme de Constantinople ramène le corps de son mari, mort à Jérusalem, et emporte par erreur celui de saint Etienne",
+   "musee_code": "M5003",
+   "musee": "musée du Moyen Age - thermes et hôtel de Cluny",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "COLYN DE COTER (entourage)"
+  },
+  {
+   "reference": "50030021531",
+   "titre": "Légende de saint Etienne (scène 03) : Dispute avec les docteurs juifs",
+   "musee_code": "M5003",
+   "musee": "musée du Moyen Age - thermes et hôtel de Cluny",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "COLYN DE COTER (entourage)"
+  },
+  {
+   "reference": "50030021679",
+   "titre": "Légende de saint Etienne (scène 18) : Miracle des mules rétives qui indiquent où doit être enseveli le corps de saint Etienne",
+   "musee_code": "M5003",
+   "musee": "musée du Moyen Age - thermes et hôtel de Cluny",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "COLYN DE COTER (entourage)"
+  },
+  {
+   "reference": "50030021541",
+   "titre": "Légende de saint Etienne (scène 07) : Le martyre de saint Etienne",
+   "musee_code": "M5003",
+   "musee": "musée du Moyen Age - thermes et hôtel de Cluny",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "COLYN DE COTER (entourage)"
+  },
+  {
+   "reference": "50030021532",
+   "titre": "Légende de saint Etienne (scène 04) : Saint Etienne amené au consistoire",
+   "musee_code": "M5003",
+   "musee": "musée du Moyen Age - thermes et hôtel de Cluny",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "COLYN DE COTER (entourage)"
+  },
+  {
+   "reference": "50030021626",
+   "titre": "Légende de saint Etienne (scène 09) : Gamaliel ensevelit le saint",
+   "musee_code": "M5003",
+   "musee": "musée du Moyen Age - thermes et hôtel de Cluny",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "COLYN DE COTER (entourage)"
+  },
+  {
+   "reference": "50030021672",
+   "titre": "Légende de saint Etienne (scène 23) : Le corps de saint Laurent fait miraculeusement place auprès de lui à celui de saint Etienne et les anges chantent 'Felix Roma !'",
+   "musee_code": "M5003",
+   "musee": "musée du Moyen Age - thermes et hôtel de Cluny",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "COLYN DE COTER (entourage)"
+  },
+  {
+   "reference": "50030021629",
+   "titre": "Légende de saint Etienne (scène 12) : Fouilles ordonnées par l'évêque de Jérusalem",
+   "musee_code": "M5003",
+   "musee": "musée du Moyen Age - thermes et hôtel de Cluny",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "COLYN DE COTER (entourage)"
+  },
+  {
+   "reference": "50030021625",
+   "titre": "Légende de saint Etienne (scène 08) : Le corps du martyre exposé aux bêtes",
+   "musee_code": "M5003",
+   "musee": "musée du Moyen Age - thermes et hôtel de Cluny",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "COLYN DE COTER (entourage)"
+  },
+  {
+   "reference": "50030021628",
+   "titre": "Légende de saint Etienne (scène 11) : Lucien avertit l'évêque de Jérusalem",
+   "musee_code": "M5003",
+   "musee": "musée du Moyen Age - thermes et hôtel de Cluny",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "COLYN DE COTER (entourage)"
+  },
+  {
+   "reference": "50030021627",
+   "titre": "Légende de saint Etienne (scène 10) : Trois siècles après, Gamaliel apparaît au prêtre Lucien",
+   "musee_code": "M5003",
+   "musee": "musée du Moyen Age - thermes et hôtel de Cluny",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "COLYN DE COTER (entourage)"
+  },
+  {
+   "reference": "50030021674",
+   "titre": "Légende de saint Etienne (scène 19) : Eudoxia, fille de l'empereur réclame le corps du saint",
+   "musee_code": "M5003",
+   "musee": "musée du Moyen Age - thermes et hôtel de Cluny",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "COLYN DE COTER (entourage)"
+  },
+  {
+   "reference": "50030026701",
+   "titre": "Tenture de l'Honneur : le Triomphe de l'Honneur",
+   "musee_code": "M5003",
+   "musee": "musée du Moyen Age - thermes et hôtel de Cluny",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "COLYN DE COTER (entourage)"
+  },
+  {
+   "reference": "50030021676",
+   "titre": "Légende de saint Etienne (scène 20) : Le corps est accueilli par le pape et déposé en l'église Saint-Pierre de Rome",
+   "musee_code": "M5003",
+   "musee": "musée du Moyen Age - thermes et hôtel de Cluny",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "COLYN DE COTER (entourage)"
+  },
+  {
+   "reference": "50030021631",
+   "titre": "Légende de saint Etienne (scène 14) : Transport du corps",
+   "musee_code": "M5003",
+   "musee": "musée du Moyen Age - thermes et hôtel de Cluny",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "COLYN DE COTER (entourage)"
+  },
+  {
+   "reference": "5003e009049",
+   "titre": "Légende de saint Etienne",
+   "musee_code": "M5003",
+   "musee": "musée du Moyen Age - thermes et hôtel de Cluny",
+   "ville": "Paris",
+   "code": "entourage_de",
+   "extrait": "COLYN DE COTER (entourage)"
+  },
+  {
+   "reference": "01610012058",
+   "titre": "Pêche miraculeuse (ou Conversion de saint Pierre)",
+   "musee_code": "M0161",
+   "musee": "Le Panoptique d'Autun, musée Rolin",
+   "ville": "Autun",
+   "code": "attribue",
+   "extrait": "COTER Colijn de (peintre, attribué à)"
+  },
+  {
+   "reference": "01610012059",
+   "titre": "Le supplice de l'huile bouillante de saint Jean",
+   "musee_code": "M0161",
+   "musee": "Le Panoptique d'Autun, musée Rolin",
+   "ville": "Autun",
+   "code": "attribue",
+   "extrait": "COTER Colijn de (peintre, attribué à)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-08-05T18:41:37+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

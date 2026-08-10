@@ -28,6 +28,7 @@
   {
    "reference": "000PE008806",
    "titre": "TETE DE VIEILLARD",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -36,6 +37,7 @@
   {
    "reference": "000PE008787",
    "titre": "Anne d'Autriche (1601-1666) , reine de France",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -49,12 +51,13 @@
     "licence": "Public domain",
     "licence_url": "",
     "source": "https://commons.wikimedia.org/wiki/File:After_Rubens_-_Anne_of_Austria,_Queen_of_France_-_Louvre_INV_1794.jpg",
-    "verifie_le": "2026-07-29"
+    "verifie_le": "2026-08-06"
    }
   },
   {
    "reference": "000PE013090",
    "titre": "INCONNU",
+   "musee_code": "M5077",
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "ecole_de",
@@ -63,6 +66,7 @@
   {
    "reference": "000PE014412",
    "titre": "ISABELLE BRANDT DIT AUTREFOIS HELENE FOURMENT",
+   "musee_code": "M0913",
    "musee": "musée des beaux-arts",
    "ville": "Marseille",
    "code": "atelier_de",
@@ -76,12 +80,13 @@
     "licence": "Public domain",
     "licence_url": "",
     "source": "https://commons.wikimedia.org/wiki/File:Rubens_Portrait_de_femme.jpg",
-    "verifie_le": "2026-07-29"
+    "verifie_le": "2026-08-06"
    }
   },
   {
    "reference": "000PE016975",
    "titre": "SAINT FRANCOIS EN EXTASE",
+   "musee_code": "M0629",
    "musee": "musée des Beaux-Arts",
    "ville": "Lille",
    "code": "atelier_de",
@@ -95,12 +100,13 @@
     "licence": "Public domain",
     "licence_url": "",
     "source": "https://commons.wikimedia.org/wiki/File:Lille_Pdba_Rubens_st_francois.JPG",
-    "verifie_le": "2026-07-29"
+    "verifie_le": "2026-08-06"
    }
   },
   {
    "reference": "000PE017014",
    "titre": "CHASSE AU SANGLIER",
+   "musee_code": "M0629",
    "musee": "musée des Beaux-Arts",
    "ville": "Lille",
    "code": "ecole_de",
@@ -109,6 +115,7 @@
   {
    "reference": "000PE017012",
    "titre": "SAINT BONAVENTURE",
+   "musee_code": "M0629",
    "musee": "musée des Beaux-Arts",
    "ville": "Lille",
    "code": "atelier_de",
@@ -122,12 +129,13 @@
     "licence": "Public domain",
     "licence_url": "",
     "source": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_rubens_st_bonaventure.jpg",
-    "verifie_le": "2026-07-29"
+    "verifie_le": "2026-08-06"
    }
   },
   {
    "reference": "000PE022064",
    "titre": "VILLAGEOIS DANSANT DANS LA CAMPAGNE",
+   "musee_code": "M0065",
    "musee": "musée des beaux-arts",
    "ville": "Bordeaux",
    "code": "ecole_de",
@@ -136,6 +144,7 @@
   {
    "reference": "000PE029518",
    "titre": "LA SAGESSE TERRASSANT L'ENVIE",
+   "musee_code": "M0134",
    "musee": "musée des Beaux-Arts",
    "ville": "Beaune",
    "code": "ecole_de",
@@ -144,6 +153,7 @@
   {
    "reference": "00000055053",
    "titre": "ALBERT, ARCHIDUC D'AUTRICHE",
+   "musee_code": "M0729",
    "musee": "musée des beaux-arts",
    "ville": "Rouen",
    "code": "atelier_de",
@@ -152,6 +162,7 @@
   {
    "reference": "00000055054",
    "titre": "ISABELLE, FEMME DE L'ARCHIDUC ALBERT D'AUTRICHE",
+   "musee_code": "M0729",
    "musee": "musée des beaux-arts",
    "ville": "Rouen",
    "code": "atelier_de",
@@ -160,6 +171,7 @@
   {
    "reference": "00000062803",
    "titre": "ETUDE D'UN SUJET ALLEGORIQUE",
+   "musee_code": "M0207",
    "musee": "musée des beaux-arts",
    "ville": "Quimper",
    "code": "maniere_de",
@@ -168,6 +180,7 @@
   {
    "reference": "00000104760",
    "titre": "Cavalier",
+   "musee_code": "M5052",
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
@@ -181,12 +194,13 @@
     "licence": "Public domain",
     "licence_url": "",
     "source": "https://commons.wikimedia.org/wiki/File:Cavalier_-_d%27apr%C3%A8s_Rubens_-_Mus%C3%A9e_Cond%C3%A9.jpeg",
-    "verifie_le": "2026-07-29"
+    "verifie_le": "2026-08-06"
    }
   },
   {
    "reference": "00000106961",
    "titre": "Etude pour un rapt de femme",
+   "musee_code": "M5052",
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "ecole_de",
@@ -195,6 +209,7 @@
   {
    "reference": "50350110557",
    "titre": "Héro et Léandre",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -203,6 +218,7 @@
   {
    "reference": "50350110464",
    "titre": "Etude d'arbres",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -211,6 +227,7 @@
   {
    "reference": "50350110509",
    "titre": "Patriarche et ses petits-enfants",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -219,6 +236,7 @@
   {
    "reference": "50350110606",
    "titre": "L'archange Michel terrassant le démon",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -227,6 +245,7 @@
   {
    "reference": "50350110357",
    "titre": "L'Elévation du Christ en Croix",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -235,6 +254,7 @@
   {
    "reference": "50350110575",
    "titre": "Tête d'enfant pleurant",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -243,6 +263,7 @@
   {
    "reference": "50350106654",
    "titre": "Saint Georges terrassant le dragon",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -251,6 +272,7 @@
   {
    "reference": "50350110552",
    "titre": "Saint François d'Assise en prière",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -259,6 +281,7 @@
   {
    "reference": "50350110612",
    "titre": "Mariage mystique de sainte Catherine",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -267,6 +290,7 @@
   {
    "reference": "50350110388",
    "titre": "Etudes : Déjanire, nymphes et Hercule revêtant la tunique de Nessus",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -275,6 +299,7 @@
   {
    "reference": "50350110607",
    "titre": "Jésus-Christ descendu de la Croix",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -283,6 +308,7 @@
   {
    "reference": "50350110387",
    "titre": "Diane surprise au bain",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -291,6 +317,7 @@
   {
    "reference": "50350110360",
    "titre": "Jésus-Christ et Simon assis",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -299,6 +326,7 @@
   {
    "reference": "50350110466",
    "titre": "Etude de tête pour une Madeleine repentante",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -307,6 +335,7 @@
   {
    "reference": "50350106659",
    "titre": "Vénus accroupie",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -315,6 +344,7 @@
   {
    "reference": "50350110526",
    "titre": "Etude de vieillard nu, la jambe droite et le bras gauche levés",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -323,6 +353,7 @@
   {
    "reference": "50350106705",
    "titre": "Présentation de la Vierge au Temple",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -331,6 +362,7 @@
   {
    "reference": "50350110610",
    "titre": "Les trois Grâces",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -339,6 +371,7 @@
   {
    "reference": "50350110477",
    "titre": "Glorification de la Paix",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -347,6 +380,7 @@
   {
    "reference": "50350031820",
    "titre": "Portrait de jeune dame",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -355,6 +389,7 @@
   {
    "reference": "50350026082",
    "titre": "Tête de femme, vue de face",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -363,6 +398,7 @@
   {
    "reference": "50350026083",
    "titre": "Marsyas attaché",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -371,6 +407,7 @@
   {
    "reference": "50350106597",
    "titre": "Glaucus et Scylla",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -379,6 +416,7 @@
   {
    "reference": "50350026085",
    "titre": "La maison Becelaar, près d'Ypres",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -387,6 +425,7 @@
   {
    "reference": "50350107023",
    "titre": "Sainte Thérèse entourée d'anges",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -395,6 +434,7 @@
   {
    "reference": "50350106358",
    "titre": "Homme assis, jouant du violon",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -403,6 +443,7 @@
   {
    "reference": "50350106938",
    "titre": "Trois études d'un homme portant un lourd trophée",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -411,6 +452,7 @@
   {
    "reference": "50350106931",
    "titre": "Hercule et Omphale",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -419,6 +461,7 @@
   {
    "reference": "50350107017",
    "titre": "Etude d'une tête d'enfant, vue de face, en raccourci",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -427,6 +470,7 @@
   {
    "reference": "50350110372",
    "titre": "Tête de faune riant",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -435,6 +479,7 @@
   {
    "reference": "50350110359",
    "titre": "Descente du Saint-Esprit",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -443,6 +488,7 @@
   {
    "reference": "50350110381",
    "titre": "Sainte Trinité",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -451,6 +497,7 @@
   {
    "reference": "50350110350",
    "titre": "Tête de vieillard aux cheveux hirsutes",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -459,6 +506,7 @@
   {
    "reference": "50350110349",
    "titre": "L'Enfant sur les genoux de la Vierge",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -467,6 +515,7 @@
   {
    "reference": "50350110089",
    "titre": "Jeune homme coiffé d'un chapeau aux larges bords relevés",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -475,6 +524,7 @@
   {
    "reference": "50350110172",
    "titre": "Tête de vieille femme, vue de profil",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -483,6 +533,7 @@
   {
    "reference": "50350110379",
    "titre": "Paysage vallonné avec les maisons d'un hameau",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -491,6 +542,7 @@
   {
    "reference": "50350115123",
    "titre": "Suzanne au bain surprise par les deux vieillards",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -499,6 +551,7 @@
   {
    "reference": "50350110371",
    "titre": "Trois études d'une tête de femme souriant, d'enfant et de vieillard",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -507,6 +560,7 @@
   {
    "reference": "50350110390",
    "titre": "Cheval attelé ; reprise de la tête",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -515,6 +569,7 @@
   {
    "reference": "50350110391",
    "titre": "Cheval attelé, une tête et une croupe de cheval",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -523,6 +578,7 @@
   {
    "reference": "50350500245",
    "titre": "Deux personnages",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -531,6 +587,7 @@
   {
    "reference": "50350500242",
    "titre": "Deux études d'enfant",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -539,6 +596,7 @@
   {
    "reference": "07430007027",
    "titre": "Allégorie de la paix",
+   "musee_code": "M0743",
    "musee": "musée des Beaux-Arts",
    "ville": "Nantes",
    "code": "ecole_de",
@@ -547,6 +605,7 @@
   {
    "reference": "07430007020",
    "titre": "Têtes d'étude",
+   "musee_code": "M0743",
    "musee": "musée des Beaux-Arts",
    "ville": "Nantes",
    "code": "ecole_de",
@@ -555,6 +614,7 @@
   {
    "reference": "50350500241",
    "titre": "Croquis",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -563,6 +623,7 @@
   {
    "reference": "50350110502",
    "titre": "Etude d'un cavalier ; fragment de la chute de saint Paul",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -571,6 +632,7 @@
   {
    "reference": "50350110562",
    "titre": "Paysage avec un cours d'eau",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -579,6 +641,7 @@
   {
    "reference": "50350110561",
    "titre": "Douze figures d'enfants jouant",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -587,6 +650,7 @@
   {
    "reference": "50350110554",
    "titre": "Vieillard inclinant la tête vers la gauche",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -595,6 +659,7 @@
   {
    "reference": "50350110555",
    "titre": "Groupe de trois nymphes",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -603,6 +668,7 @@
   {
    "reference": "50350110565",
    "titre": "Evêque ressuscitant un mort",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -611,6 +677,7 @@
   {
    "reference": "50350110582",
    "titre": "Frontispice pour l'ouvrage de P. Ribadineira et H. Rosweydus",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -619,6 +686,7 @@
   {
    "reference": "50350110584",
    "titre": "Buste d'homme, vu de face, coiffé d'un turban",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -627,6 +695,7 @@
   {
    "reference": "50350110593",
    "titre": "Eve donnant la pomme à Adam",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -635,6 +704,7 @@
   {
    "reference": "50350110583",
    "titre": "Chute de saint Paul",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -643,6 +713,7 @@
   {
    "reference": "50350110576",
    "titre": "Homme, femme et deux enfants nus, dans une grotte",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -651,6 +722,7 @@
   {
    "reference": "50350110571",
    "titre": "Tête de vieillard, vue de trois quarts, tournée vers la droite",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -659,6 +731,7 @@
   {
    "reference": "50350110448",
    "titre": "La Circoncision",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -667,6 +740,7 @@
   {
    "reference": "50350110564",
    "titre": "Evêque guérissant un possédé",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -675,6 +749,7 @@
   {
    "reference": "50350110580",
    "titre": "Homme caressant une femme",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -683,6 +758,7 @@
   {
    "reference": "50350110425",
    "titre": "Sacrifice au dieu Pan",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -691,6 +767,7 @@
   {
    "reference": "50350110590",
    "titre": "Vierge à l'Enfant Jésus, et sainte Elisabeth",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -699,6 +776,7 @@
   {
    "reference": "50350110506",
    "titre": "Jésus-Christ confiant ses brebis à saint Pierre",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -707,6 +785,7 @@
   {
    "reference": "50350110447",
    "titre": "Allégorie en l'honneur du cardinal Cinzio Aldobrandini",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -715,6 +794,7 @@
   {
    "reference": "50350110573",
    "titre": "La Cène, effet de nuit",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -723,6 +803,7 @@
   {
    "reference": "50350110570",
    "titre": "Enfant nu debout, étendant le bras gauche",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -731,6 +812,7 @@
   {
    "reference": "50350110597",
    "titre": "Pietà",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -739,6 +821,7 @@
   {
    "reference": "50350110516",
    "titre": "Etude d'angelot",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -747,6 +830,7 @@
   {
    "reference": "50350110556",
    "titre": "Vénus et l'Amour",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -755,6 +839,7 @@
   {
    "reference": "50350110405",
    "titre": "Salomé apportant la tête de saint Jean-Baptiste à Hérodiade",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -763,6 +848,7 @@
   {
    "reference": "50350110465",
    "titre": "Six études de têtes de Silène",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -771,6 +857,7 @@
   {
    "reference": "50350110553",
    "titre": "Portrait de Tiziano Vecellio, en buste de trois quarts à droite",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -779,6 +866,7 @@
   {
    "reference": "50350110468",
    "titre": "Guirlande de fruits et de fleurs animées d'oiseaux et d'amours",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -787,6 +875,7 @@
   {
    "reference": "50350110473",
    "titre": "Eve donnant le fruit défendu à Adam",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -795,6 +884,7 @@
   {
    "reference": "50350110501",
    "titre": "Chute de saint Paul",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -803,6 +893,7 @@
   {
    "reference": "50350110579",
    "titre": "Tête de dominicain",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -811,6 +902,7 @@
   {
    "reference": "50350110596",
    "titre": "Sainte Marie Madeleine lavant les pieds du Christ mort",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -819,6 +911,7 @@
   {
    "reference": "50350110449",
    "titre": "Etude pour un chasseur nu, debout, et deux chiens",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -827,6 +920,7 @@
   {
    "reference": "50350110568",
    "titre": "Assomption de la Vierge",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -835,6 +929,7 @@
   {
    "reference": "50350110469",
    "titre": "Jacob partant avec Rachel",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -843,6 +938,7 @@
   {
    "reference": "50350110496",
    "titre": "Sainte Famille",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -851,6 +947,7 @@
   {
    "reference": "50350110586",
    "titre": "Saint François en prière",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -859,6 +956,7 @@
   {
    "reference": "50350110569",
    "titre": "Vierge à l'Enfant entourés d'anges",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -867,6 +965,7 @@
   {
    "reference": "50350110616",
    "titre": "Etude d'un enfant nu, assis, et tête de la même figure",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -875,6 +974,7 @@
   {
    "reference": "50350110602",
    "titre": "Vierge Marie soignant le Christ",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -883,6 +983,7 @@
   {
    "reference": "50350110624",
    "titre": "Tête de chérubin en pleurs",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -891,6 +992,7 @@
   {
    "reference": "50350110619",
    "titre": "La pêche miraculeuse",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -899,6 +1001,7 @@
   {
    "reference": "50350110626",
    "titre": "Etude d'un diable, deux damnés et deux têtes",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -907,6 +1010,7 @@
   {
    "reference": "50350110623",
    "titre": "Martyre de sainte Agathe",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -915,6 +1019,7 @@
   {
    "reference": "50350110622",
    "titre": "Etude pour une Adoration des bergers",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -923,6 +1028,7 @@
   {
    "reference": "50350110600",
    "titre": "Etude d'une tête d'Hercule",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -931,6 +1037,7 @@
   {
    "reference": "50350110615",
    "titre": "Feuille d'études de cupidons",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -939,6 +1046,7 @@
   {
    "reference": "50350110613",
    "titre": "Tête de jeune femme au regard sevère",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -947,6 +1055,7 @@
   {
    "reference": "50350110621",
    "titre": "Etude pour Sainte Marie Madeleine pénitente",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -955,6 +1064,7 @@
   {
    "reference": "02110002198",
    "titre": "Femme nue",
+   "musee_code": "M0211",
    "musee": "musée des beaux-arts",
    "ville": "Rennes",
    "code": "ecole_de",
@@ -963,6 +1073,7 @@
   {
    "reference": "02110002200",
    "titre": "La Marquise de Mantoue ; Tête de femme",
+   "musee_code": "M0211",
    "musee": "musée des beaux-arts",
    "ville": "Rennes",
    "code": "ecole_de",
@@ -971,6 +1082,7 @@
   {
    "reference": "M0271000139",
    "titre": "Allégorie du Bon Gouvernement de la France, dit autrefois Portrait allégorique de Marie de Médicis",
+   "musee_code": "M0271",
    "musee": "château musées",
    "ville": "Blois",
    "code": "suiveur_de",
@@ -979,6 +1091,7 @@
   {
    "reference": "M0332000980",
    "titre": "Allégorie avec une vue d'Anvers",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "atelier_de",
@@ -992,12 +1105,13 @@
     "licence": "Public domain",
     "licence_url": "",
     "source": "https://commons.wikimedia.org/wiki/File:All%C3%A9gorie_de_la_prise_d%27Anvers_-_Peter_Paul_Rubens_-_MBAB_896.1.114.jpg",
-    "verifie_le": "2026-07-29"
+    "verifie_le": "2026-08-06"
    }
   },
   {
    "reference": "07290022368",
    "titre": "Portrait de vieillard",
+   "musee_code": "M0729",
    "musee": "musée des beaux-arts",
    "ville": "Rouen",
    "code": "atelier_de",
@@ -1006,6 +1120,7 @@
   {
    "reference": "06190000089",
    "titre": "La Vocation de saint Matthieu",
+   "musee_code": "M0619",
    "musee": "musée de la Chartreuse",
    "ville": "Douai",
    "code": "atelier_de",
@@ -1014,6 +1129,7 @@
   {
    "reference": "06190001376",
    "titre": "Martyre de Saint Adrien",
+   "musee_code": "M0619",
    "musee": "musée de la Chartreuse",
    "ville": "Douai",
    "code": "ecole_de",
@@ -1022,6 +1138,7 @@
   {
    "reference": "05620001275",
    "titre": "La Vierge, l'enfant Jésus et saint Jean",
+   "musee_code": "M0562",
    "musee": "musée des Augustins",
    "ville": "Toulouse",
    "code": "ecole_de",
@@ -1030,6 +1147,7 @@
   {
    "reference": "07760001538",
    "titre": "Femme et fillette",
+   "musee_code": "M0776",
    "musee": "musée municipal",
    "ville": "La Roche-sur-Yon",
    "code": "attribue",
@@ -1038,6 +1156,7 @@
   {
    "reference": "50110001607",
    "titre": "La Mort d'Achille",
+   "musee_code": "M5011",
    "musee": "musée national Magnin",
    "ville": "Dijon",
    "code": "atelier_de",
@@ -1051,12 +1170,13 @@
     "licence": "Public domain",
     "licence_url": "",
     "source": "https://commons.wikimedia.org/wiki/File:La_Mort_d%27Achille_-_Anonyme_-_MM_1938E168.jpg",
-    "verifie_le": "2026-07-29"
+    "verifie_le": "2026-08-06"
    }
   },
   {
    "reference": "02470000028",
    "titre": "Le banquet de Térée",
+   "musee_code": "M0247",
    "musee": "musée Bertrand",
    "ville": "Châteauroux",
    "code": "attribue",
@@ -1065,6 +1185,7 @@
   {
    "reference": "08940004679",
    "titre": "La Nature parée par les Trois Grâces",
+   "musee_code": "M0894",
    "musee": "musée Granet",
    "ville": "Aix-en-Provence",
    "code": "ecole_de",
@@ -1072,7 +1193,7 @@
   }
  ],
  "version_donnee": "2026-07-01",
- "date_generation": "2026-07-28T14:49:21+00:00",
+ "date_generation": "2026-08-05T18:41:37+00:00",
  "source": "Collections des musées de France : base Joconde",
  "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
 }

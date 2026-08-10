@@ -3,26 +3,26 @@
  "lexique": "markers.py v2 (famille_segment) — unité : référence Joconde unique",
  "unite": "reference",
  "totaux": {
-  "appartenances_doute": 3674,
-  "notices_doute": 3668,
-  "appartenances_propre": 34898,
-  "notices_propre": 34598,
-  "appartenances_copie": 6778,
-  "notices_copie": 6767,
-  "notices_partagees": 6,
+  "appartenances_doute": 6238,
+  "notices_doute": 6081,
+  "appartenances_propre": 43981,
+  "notices_propre": 43285,
+  "appartenances_copie": 6918,
+  "notices_copie": 6889,
+  "notices_partagees": 157,
   "familles_notices": {
-   "attribue": 1580,
-   "point_interrogation": 50,
-   "ecole_de": 1291,
-   "atelier_de": 360,
-   "entourage_de": 105,
+   "attribue": 3384,
+   "point_interrogation": 352,
+   "ecole_de": 1343,
+   "atelier_de": 553,
+   "entourage_de": 167,
    "suiveur_de": 18,
    "maniere_de": 211,
    "genre_de": 54
   },
   "niveaux_notices": {
-   "1": 1630,
-   "2": 1774,
+   "1": 3736,
+   "2": 2081,
    "3": 265
   }
  },
@@ -54,6 +54,370 @@
    ]
   },
   {
+   "reference": "02860008204",
+   "maitres": [
+    {
+     "nom": "Crispin de Passe l'Ancien",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Crispin de Passe le Jeune",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "02860008207",
+   "maitres": [
+    {
+     "nom": "Crispin de Passe l'Ancien",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Crispin de Passe le Jeune",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "02860008208",
+   "maitres": [
+    {
+     "nom": "Crispin de Passe l'Ancien",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Crispin de Passe le Jeune",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "02860008229",
+   "maitres": [
+    {
+     "nom": "Crispin de Passe l'Ancien",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Crispin de Passe le Jeune",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "02860008230",
+   "maitres": [
+    {
+     "nom": "Crispin de Passe l'Ancien",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Crispin de Passe le Jeune",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "02860008231",
+   "maitres": [
+    {
+     "nom": "Crispin de Passe l'Ancien",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Crispin de Passe le Jeune",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "02860008232",
+   "maitres": [
+    {
+     "nom": "Crispin de Passe l'Ancien",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Crispin de Passe le Jeune",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "02860008233",
+   "maitres": [
+    {
+     "nom": "Crispin de Passe l'Ancien",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Crispin de Passe le Jeune",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "02860008239",
+   "maitres": [
+    {
+     "nom": "Crispin de Passe l'Ancien",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Crispin de Passe le Jeune",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "02860008240",
+   "maitres": [
+    {
+     "nom": "Crispin de Passe l'Ancien",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Crispin de Passe le Jeune",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "02860008241",
+   "maitres": [
+    {
+     "nom": "Crispin de Passe l'Ancien",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Crispin de Passe le Jeune",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "02860008245",
+   "maitres": [
+    {
+     "nom": "Crispin de Passe l'Ancien",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Crispin de Passe le Jeune",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "02860008247",
+   "maitres": [
+    {
+     "nom": "Crispin de Passe l'Ancien",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Crispin de Passe le Jeune",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "02860008249",
+   "maitres": [
+    {
+     "nom": "Crispin de Passe l'Ancien",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Crispin de Passe le Jeune",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "02860008251",
+   "maitres": [
+    {
+     "nom": "Crispin de Passe l'Ancien",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Crispin de Passe le Jeune",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "02860008252",
+   "maitres": [
+    {
+     "nom": "Crispin de Passe l'Ancien",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Crispin de Passe le Jeune",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "02860008254",
+   "maitres": [
+    {
+     "nom": "Crispin de Passe l'Ancien",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Crispin de Passe le Jeune",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "02860008255",
+   "maitres": [
+    {
+     "nom": "Crispin de Passe l'Ancien",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Crispin de Passe le Jeune",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "02860008257",
+   "maitres": [
+    {
+     "nom": "Crispin de Passe l'Ancien",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Crispin de Passe le Jeune",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "02860008258",
+   "maitres": [
+    {
+     "nom": "Crispin de Passe l'Ancien",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Crispin de Passe le Jeune",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "02860008259",
+   "maitres": [
+    {
+     "nom": "Crispin de Passe l'Ancien",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Crispin de Passe le Jeune",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "02860008260",
+   "maitres": [
+    {
+     "nom": "Crispin de Passe l'Ancien",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Crispin de Passe le Jeune",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "02860008261",
+   "maitres": [
+    {
+     "nom": "Crispin de Passe l'Ancien",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Crispin de Passe le Jeune",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "02860008262",
+   "maitres": [
+    {
+     "nom": "Crispin de Passe l'Ancien",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Crispin de Passe le Jeune",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "02860008264",
+   "maitres": [
+    {
+     "nom": "Crispin de Passe l'Ancien",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Crispin de Passe le Jeune",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "02860008265",
+   "maitres": [
+    {
+     "nom": "Crispin de Passe l'Ancien",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Crispin de Passe le Jeune",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "02860008266",
+   "maitres": [
+    {
+     "nom": "Crispin de Passe l'Ancien",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Crispin de Passe le Jeune",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "02860008268",
+   "maitres": [
+    {
+     "nom": "Crispin de Passe l'Ancien",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Crispin de Passe le Jeune",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
    "reference": "07480012416",
    "maitres": [
     {
@@ -76,6 +440,1215 @@
     {
      "nom": "Sébastien Bourdon",
      "famille": "ecole_de"
+    }
+   ]
+  },
+  {
+   "reference": "08120003441",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003443",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003446",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003486",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003546",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003548",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003682",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003684",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003688",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003690",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003692",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003694",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003696",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003698",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003704",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003706",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003708",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003710",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003712",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003718",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003720",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003724",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003726",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003728",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003730",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003734",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003736",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003738",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003742",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003744",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003746",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003748",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003752",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003766",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003770",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003772",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003776",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003790",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003800",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003804",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003808",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003810",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003812",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003814",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003816",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003818",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003822",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003824",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003825",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003828",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003830",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003832",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003834",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003836",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003838",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003844",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003846",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003848",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003850",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003854",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003856",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003858",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003860",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003862",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003864",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003866",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120003868",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120004205",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120004209",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120004211",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120004215",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120004217",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120004219",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120004221",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120004225",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120004227",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120004229",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120004231",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120004233",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120004235",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120004237",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120004239",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120004241",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120004243",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120004245",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120004247",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120004249",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120004251",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120004253",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120004262",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120004280",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120004282",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "08120004475",
+   "maitres": [
+    {
+     "nom": "Aimé Duthoit",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Louis Duthoit",
+     "famille": "point_interrogation"
     }
    ]
   },
@@ -104,10 +1677,400 @@
      "famille": "point_interrogation"
     }
    ]
+  },
+  {
+   "reference": "M5060000128",
+   "maitres": [
+    {
+     "nom": "Auguste Vacquerie",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Charles Hugo",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "M5060000129",
+   "maitres": [
+    {
+     "nom": "Auguste Vacquerie",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Charles Hugo",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "M5060000130",
+   "maitres": [
+    {
+     "nom": "Auguste Vacquerie",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Charles Hugo",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "M5060000131",
+   "maitres": [
+    {
+     "nom": "Auguste Vacquerie",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Charles Hugo",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "M5060000132",
+   "maitres": [
+    {
+     "nom": "Auguste Vacquerie",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Charles Hugo",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "M5060000133",
+   "maitres": [
+    {
+     "nom": "Auguste Vacquerie",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Charles Hugo",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "M5060000134",
+   "maitres": [
+    {
+     "nom": "Auguste Vacquerie",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Charles Hugo",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "M5060000135",
+   "maitres": [
+    {
+     "nom": "Auguste Vacquerie",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Charles Hugo",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "M5060000136",
+   "maitres": [
+    {
+     "nom": "Auguste Vacquerie",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Charles Hugo",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "M5060000137",
+   "maitres": [
+    {
+     "nom": "Auguste Vacquerie",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Charles Hugo",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "M5060000248",
+   "maitres": [
+    {
+     "nom": "Auguste Vacquerie",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Charles Hugo",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "M5060000249",
+   "maitres": [
+    {
+     "nom": "Auguste Vacquerie",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Charles Hugo",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "M5060000250",
+   "maitres": [
+    {
+     "nom": "Auguste Vacquerie",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Charles Hugo",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "M5060000251",
+   "maitres": [
+    {
+     "nom": "Auguste Vacquerie",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Charles Hugo",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "M5060000252",
+   "maitres": [
+    {
+     "nom": "Auguste Vacquerie",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Charles Hugo",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "M5060000253",
+   "maitres": [
+    {
+     "nom": "Auguste Vacquerie",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Charles Hugo",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "M5060000254",
+   "maitres": [
+    {
+     "nom": "Auguste Vacquerie",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Charles Hugo",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "M5060000255",
+   "maitres": [
+    {
+     "nom": "Auguste Vacquerie",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Charles Hugo",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "M5060000256",
+   "maitres": [
+    {
+     "nom": "Auguste Vacquerie",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Charles Hugo",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "M5060000257",
+   "maitres": [
+    {
+     "nom": "Auguste Vacquerie",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Charles Hugo",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "M5060000258",
+   "maitres": [
+    {
+     "nom": "Auguste Vacquerie",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Charles Hugo",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "M5060000259",
+   "maitres": [
+    {
+     "nom": "Auguste Vacquerie",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Charles Hugo",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "M5060000260",
+   "maitres": [
+    {
+     "nom": "Auguste Vacquerie",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Charles Hugo",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "M5060000261",
+   "maitres": [
+    {
+     "nom": "Auguste Vacquerie",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Charles Hugo",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "M5060000262",
+   "maitres": [
+    {
+     "nom": "Auguste Vacquerie",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Charles Hugo",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "M5060000263",
+   "maitres": [
+    {
+     "nom": "Auguste Vacquerie",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Charles Hugo",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "M5060000264",
+   "maitres": [
+    {
+     "nom": "Auguste Vacquerie",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Charles Hugo",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "M5060000265",
+   "maitres": [
+    {
+     "nom": "Auguste Vacquerie",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Charles Hugo",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "M5060000266",
+   "maitres": [
+    {
+     "nom": "Auguste Vacquerie",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Charles Hugo",
+     "famille": "point_interrogation"
+    }
+   ]
+  },
+  {
+   "reference": "M5060000267",
+   "maitres": [
+    {
+     "nom": "Auguste Vacquerie",
+     "famille": "point_interrogation"
+    },
+    {
+     "nom": "Charles Hugo",
+     "famille": "point_interrogation"
+    }
+   ]
   }
  ],
  "version_donnee": "2026-07-01",
- "date_generation": "2026-07-28T14:49:21+00:00",
+ "date_generation": "2026-08-05T18:41:37+00:00",
  "source": "Collections des musées de France : base Joconde",
  "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb",
  "niveaux": {
@@ -174,8 +2137,8 @@
      "code": "M5031",
      "nom": "musée du Louvre",
      "ville": "Paris",
-     "lat": 48.8599,
-     "lon": 2.34093,
+     "lat": 48.86079,
+     "lon": 2.33782,
      "doute": 276,
      "niveaux": [
       37,
@@ -323,8 +2286,8 @@
      "code": "M0748",
      "nom": "musée des beaux-arts et galerie David-d'Angers",
      "ville": "Angers",
-     "lat": 47.46913,
-     "lon": -0.55437,
+     "lat": 47.46966,
+     "lon": -0.55549,
      "doute": 2,
      "niveaux": [
       2,
@@ -598,6 +2561,181 @@
    ]
   },
   {
+   "nom": "Alexandre Clausel",
+   "slug": "alexandre-clausel",
+   "propre": 158,
+   "doute": 295,
+   "copie": 1,
+   "musees": 1,
+   "nb_musees_doute": 1,
+   "musee_principal": {
+    "code": "M0303",
+    "nom": "musée des beaux-arts et d’archéologie",
+    "doute": 295,
+    "part": 1.0
+   },
+   "doute_sans_musee": 0,
+   "niveaux": [
+    295,
+    0,
+    0
+   ],
+   "familles": [
+    {
+     "code": "attribue",
+     "libelle": "attribué à",
+     "niveau": 1,
+     "notices": 295
+    }
+   ],
+   "exemple_copie": {
+    "reference": "03030005989",
+    "titre": "Troyes, la porte du château des comtes de Champagne",
+    "musee": "musée des beaux-arts et d’archéologie",
+    "ville": "Troyes",
+    "extrait": "CLAUSEL Alexandre (d'après)"
+   },
+   "musees_doute": [
+    {
+     "code": "M0303",
+     "nom": "musée des beaux-arts et d’archéologie",
+     "ville": "Troyes",
+     "lat": 48.30064,
+     "lon": 4.08003,
+     "doute": 295,
+     "niveaux": [
+      295,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 295
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Charles Normand",
+   "slug": "charles-normand",
+   "propre": 55,
+   "doute": 244,
+   "copie": 1,
+   "musees": 5,
+   "nb_musees_doute": 1,
+   "musee_principal": {
+    "code": "M5031",
+    "nom": "musée du Louvre",
+    "doute": 244,
+    "part": 1.0
+   },
+   "doute_sans_musee": 0,
+   "niveaux": [
+    244,
+    0,
+    0
+   ],
+   "familles": [
+    {
+     "code": "attribue",
+     "libelle": "attribué à",
+     "niveau": 1,
+     "notices": 244
+    }
+   ],
+   "exemple_copie": {
+    "reference": "07010003516",
+    "titre": "Des chasseurs trouvent le squelette de Milon de Crotone",
+    "musee": "musée Municipal",
+    "ville": "Bernay",
+    "extrait": "NORMAND Charles Pierre Joseph (graveur, d'après)"
+   },
+   "musees_doute": [
+    {
+     "code": "M5031",
+     "nom": "musée du Louvre",
+     "ville": "Paris",
+     "lat": 48.86079,
+     "lon": 2.33782,
+     "doute": 244,
+     "niveaux": [
+      244,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 244
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Léon Tirode",
+   "slug": "leon-tirode",
+   "propre": 21,
+   "doute": 231,
+   "copie": 0,
+   "musees": 2,
+   "nb_musees_doute": 1,
+   "musee_principal": {
+    "code": "M0332",
+    "nom": "musée des beaux-arts et d'archéologie",
+    "doute": 231,
+    "part": 1.0
+   },
+   "doute_sans_musee": 0,
+   "niveaux": [
+    230,
+    1,
+    0
+   ],
+   "familles": [
+    {
+     "code": "attribue",
+     "libelle": "attribué à",
+     "niveau": 1,
+     "notices": 230
+    },
+    {
+     "code": "entourage_de",
+     "libelle": "entourage de",
+     "niveau": 2,
+     "notices": 1
+    }
+   ],
+   "exemple_copie": null,
+   "musees_doute": [
+    {
+     "code": "M0332",
+     "nom": "musée des beaux-arts et d'archéologie",
+     "ville": "Besançon",
+     "lat": 47.24005,
+     "lon": 6.02294,
+     "doute": 231,
+     "niveaux": [
+      230,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 230
+      },
+      {
+       "code": "entourage_de",
+       "notices": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
    "nom": "Ingres",
    "slug": "ingres",
    "propre": 4462,
@@ -772,8 +2910,8 @@
      "code": "M5031",
      "nom": "musée du Louvre",
      "ville": "Paris",
-     "lat": 48.8599,
-     "lon": 2.34093,
+     "lat": 48.86079,
+     "lon": 2.33782,
      "doute": 191,
      "niveaux": [
       69,
@@ -1022,8 +3160,8 @@
      "code": "M5052",
      "nom": "musée Condé",
      "ville": "Chantilly",
-     "lat": 44.2043,
-     "lon": 0.64865,
+     "lat": 49.19397,
+     "lon": 2.48522,
      "doute": 3,
      "niveaux": [
       0,
@@ -1175,8 +3313,8 @@
      "code": "M0277",
      "nom": "musée municipal",
      "ville": "Vendôme",
-     "lat": 47.79211,
-     "lon": 1.06451,
+     "lat": 47.79741,
+     "lon": 1.06087,
      "doute": 1,
      "niveaux": [
       0,
@@ -1192,6 +3330,137 @@
      "oeuvre_unique": {
       "reference": "M0277002250",
       "titre": "L'homme au casque d'or"
+     }
+    }
+   ]
+  },
+  {
+   "nom": "Louis Morinet",
+   "slug": "louis-morinet",
+   "propre": 83,
+   "doute": 168,
+   "copie": 0,
+   "musees": 2,
+   "nb_musees_doute": 1,
+   "musee_principal": {
+    "code": "M0537",
+    "nom": "musée de l'image",
+    "doute": 168,
+    "part": 1.0
+   },
+   "doute_sans_musee": 0,
+   "niveaux": [
+    168,
+    0,
+    0
+   ],
+   "familles": [
+    {
+     "code": "attribue",
+     "libelle": "attribué à",
+     "niveau": 1,
+     "notices": 168
+    }
+   ],
+   "exemple_copie": null,
+   "musees_doute": [
+    {
+     "code": "M0537",
+     "nom": "musée de l'image",
+     "ville": "Epinal",
+     "lat": 48.18363,
+     "lon": 6.44599,
+     "doute": 168,
+     "niveaux": [
+      168,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 168
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Giacinto Calandrucci",
+   "slug": "giacinto-calandrucci",
+   "propre": 639,
+   "doute": 158,
+   "copie": 0,
+   "musees": 3,
+   "nb_musees_doute": 2,
+   "musee_principal": {
+    "code": "M5031",
+    "nom": "musée du Louvre",
+    "doute": 157,
+    "part": 0.994
+   },
+   "doute_sans_musee": 0,
+   "niveaux": [
+    1,
+    157,
+    0
+   ],
+   "familles": [
+    {
+     "code": "attribue",
+     "libelle": "attribué à",
+     "niveau": 1,
+     "notices": 1
+    },
+    {
+     "code": "atelier_de",
+     "libelle": "atelier (qualificatif, beaux-arts)",
+     "niveau": 2,
+     "notices": 157
+    }
+   ],
+   "exemple_copie": null,
+   "musees_doute": [
+    {
+     "code": "M5031",
+     "nom": "musée du Louvre",
+     "ville": "Paris",
+     "lat": 48.86079,
+     "lon": 2.33782,
+     "doute": 157,
+     "niveaux": [
+      0,
+      157,
+      0
+     ],
+     "familles": [
+      {
+       "code": "atelier_de",
+       "notices": 157
+      }
+     ]
+    },
+    {
+     "code": "M0994",
+     "nom": "musée de Grenoble",
+     "ville": "Grenoble",
+     "lat": 45.19403,
+     "lon": 5.73209,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "09940004682",
+      "titre": "Vierge à l'enfant"
      }
     }
    ]
@@ -1312,6 +3581,57 @@
       "reference": "02110002116",
       "titre": "Trois figures d'hommes nus"
      }
+    }
+   ]
+  },
+  {
+   "nom": "Georges Ferdinand Bigot",
+   "slug": "georges-ferdinand-bigot",
+   "propre": 110,
+   "doute": 125,
+   "copie": 0,
+   "musees": 3,
+   "nb_musees_doute": 1,
+   "musee_principal": {
+    "code": "M0537",
+    "nom": "musée de l'image",
+    "doute": 125,
+    "part": 1.0
+   },
+   "doute_sans_musee": 0,
+   "niveaux": [
+    125,
+    0,
+    0
+   ],
+   "familles": [
+    {
+     "code": "attribue",
+     "libelle": "attribué à",
+     "niveau": 1,
+     "notices": 125
+    }
+   ],
+   "exemple_copie": null,
+   "musees_doute": [
+    {
+     "code": "M0537",
+     "nom": "musée de l'image",
+     "ville": "Epinal",
+     "lat": 48.18363,
+     "lon": 6.44599,
+     "doute": 125,
+     "niveaux": [
+      125,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 125
+      }
+     ]
     }
    ]
   },
@@ -1444,8 +3764,8 @@
      "code": "M5052",
      "nom": "musée Condé",
      "ville": "Chantilly",
-     "lat": 49.19413,
-     "lon": 2.48512,
+     "lat": 49.19397,
+     "lon": 2.48522,
      "doute": 2,
      "niveaux": [
       0,
@@ -1803,6 +4123,67 @@
    ]
   },
   {
+   "nom": "Léon Fort",
+   "slug": "leon-fort",
+   "propre": 63,
+   "doute": 107,
+   "copie": 0,
+   "musees": 1,
+   "nb_musees_doute": 1,
+   "musee_principal": {
+    "code": "M0435",
+    "nom": "musée d'Art et d'Histoire Louis Senlecq",
+    "doute": 107,
+    "part": 1.0
+   },
+   "doute_sans_musee": 0,
+   "niveaux": [
+    107,
+    0,
+    0
+   ],
+   "familles": [
+    {
+     "code": "attribue",
+     "libelle": "attribué à",
+     "niveau": 1,
+     "notices": 106
+    },
+    {
+     "code": "point_interrogation",
+     "libelle": "? (point d'interrogation)",
+     "niveau": 1,
+     "notices": 1
+    }
+   ],
+   "exemple_copie": null,
+   "musees_doute": [
+    {
+     "code": "M0435",
+     "nom": "musée d'Art et d'Histoire Louis Senlecq",
+     "ville": "L'Isle-Adam",
+     "lat": 49.11228,
+     "lon": 2.21638,
+     "doute": 107,
+     "niveaux": [
+      107,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 106
+      },
+      {
+       "code": "point_interrogation",
+       "notices": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
    "nom": "François Clouet",
    "slug": "francois-clouet",
    "propre": 73,
@@ -1872,8 +4253,8 @@
      "code": "M5052",
      "nom": "musée Condé",
      "ville": "Chantilly",
-     "lat": 44.2043,
-     "lon": 0.64865,
+     "lat": 49.19397,
+     "lon": 2.48522,
      "doute": 83,
      "niveaux": [
       2,
@@ -1953,8 +4334,8 @@
      "code": "M0748",
      "nom": "musée des beaux-arts et galerie David-d'Angers",
      "ville": "Angers",
-     "lat": 47.46913,
-     "lon": -0.55437,
+     "lat": 47.46966,
+     "lon": -0.55549,
      "doute": 2,
      "niveaux": [
       0,
@@ -2295,8 +4676,8 @@
      "code": "M0748",
      "nom": "musée des beaux-arts et galerie David-d'Angers",
      "ville": "Angers",
-     "lat": 47.46913,
-     "lon": -0.55437,
+     "lat": 47.46966,
+     "lon": -0.55549,
      "doute": 1,
      "niveaux": [
       1,
@@ -2318,8 +4699,8 @@
      "code": "M0677",
      "nom": "musée Thomas-Henry",
      "ville": "Cherbourg-en-Cotentin",
-     "lat": 49.6371,
-     "lon": -1.62306,
+     "lat": 49.63845,
+     "lon": -1.62544,
      "doute": 1,
      "niveaux": [
       1,
@@ -2359,6 +4740,118 @@
       "reference": "04450000740",
       "titre": "Judith tenant la tête d'Holopherne"
      }
+    }
+   ]
+  },
+  {
+   "nom": "Louis Duthoit",
+   "slug": "louis-duthoit",
+   "propre": 362,
+   "doute": 94,
+   "copie": 0,
+   "musees": 3,
+   "nb_musees_doute": 1,
+   "musee_principal": {
+    "code": "M0812",
+    "nom": "musée de Picardie",
+    "doute": 94,
+    "part": 1.0
+   },
+   "doute_sans_musee": 0,
+   "niveaux": [
+    94,
+    0,
+    0
+   ],
+   "familles": [
+    {
+     "code": "attribue",
+     "libelle": "attribué à",
+     "niveau": 1,
+     "notices": 1
+    },
+    {
+     "code": "point_interrogation",
+     "libelle": "? (point d'interrogation)",
+     "niveau": 1,
+     "notices": 93
+    }
+   ],
+   "exemple_copie": null,
+   "musees_doute": [
+    {
+     "code": "M0812",
+     "nom": "musée de Picardie",
+     "ville": "Amiens",
+     "lat": 49.89041,
+     "lon": 2.29597,
+     "doute": 94,
+     "niveaux": [
+      94,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      },
+      {
+       "code": "point_interrogation",
+       "notices": 93
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Aimé Duthoit",
+   "slug": "aime-duthoit",
+   "propre": 346,
+   "doute": 93,
+   "copie": 0,
+   "musees": 1,
+   "nb_musees_doute": 1,
+   "musee_principal": {
+    "code": "M0812",
+    "nom": "musée de Picardie",
+    "doute": 93,
+    "part": 1.0
+   },
+   "doute_sans_musee": 0,
+   "niveaux": [
+    93,
+    0,
+    0
+   ],
+   "familles": [
+    {
+     "code": "point_interrogation",
+     "libelle": "? (point d'interrogation)",
+     "niveau": 1,
+     "notices": 93
+    }
+   ],
+   "exemple_copie": null,
+   "musees_doute": [
+    {
+     "code": "M0812",
+     "nom": "musée de Picardie",
+     "ville": "Amiens",
+     "lat": 49.89041,
+     "lon": 2.29597,
+     "doute": 93,
+     "niveaux": [
+      93,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "point_interrogation",
+       "notices": 93
+      }
+     ]
     }
    ]
   },
@@ -2465,8 +4958,8 @@
      "code": "M5052",
      "nom": "musée Condé",
      "ville": "Chantilly",
-     "lat": 44.2043,
-     "lon": 0.64865,
+     "lat": 49.19397,
+     "lon": 2.48522,
      "doute": 8,
      "niveaux": [
       0,
@@ -2660,8 +5153,8 @@
      "code": "M0748",
      "nom": "musée des beaux-arts et galerie David-d'Angers",
      "ville": "Angers",
-     "lat": 47.46913,
-     "lon": -0.55437,
+     "lat": 47.46966,
+     "lon": -0.55549,
      "doute": 1,
      "niveaux": [
       1,
@@ -2923,8 +5416,8 @@
      "code": "M5031",
      "nom": "musée du Louvre",
      "ville": "Paris",
-     "lat": 48.8599,
-     "lon": 2.34093,
+     "lat": 48.86079,
+     "lon": 2.33782,
      "doute": 71,
      "niveaux": [
       71,
@@ -3049,8 +5542,8 @@
      "code": "M5052",
      "nom": "musée Condé",
      "ville": "Chantilly",
-     "lat": 44.2043,
-     "lon": 0.64865,
+     "lat": 49.19397,
+     "lon": 2.48522,
      "doute": 1,
      "niveaux": [
       1,
@@ -3113,6 +5606,63 @@
       "reference": "07980002321",
       "titre": "L'apparition de la Vierge et de l'Enfant Jésus à saint Hyacinthe (Titre original)"
      }
+    }
+   ]
+  },
+  {
+   "nom": "Charles François Pinot",
+   "slug": "charles-francois-pinot",
+   "propre": 205,
+   "doute": 82,
+   "copie": 2,
+   "musees": 4,
+   "nb_musees_doute": 1,
+   "musee_principal": {
+    "code": "M0537",
+    "nom": "musée de l'image",
+    "doute": 82,
+    "part": 1.0
+   },
+   "doute_sans_musee": 0,
+   "niveaux": [
+    82,
+    0,
+    0
+   ],
+   "familles": [
+    {
+     "code": "attribue",
+     "libelle": "attribué à",
+     "niveau": 1,
+     "notices": 82
+    }
+   ],
+   "exemple_copie": {
+    "reference": "M0537039819",
+    "titre": "L'EMPOISONNEUSE HÉLÈNE JÉGADO, / Accusée d'avoir attenté à la vie de 37 personnes dont 25 ont succombé. (titre inscrit)",
+    "musee": "musée de l'image",
+    "ville": "Epinal",
+    "extrait": "Pinot Charles François (1817-1874) (dessinateur, d'après)"
+   },
+   "musees_doute": [
+    {
+     "code": "M0537",
+     "nom": "musée de l'image",
+     "ville": "Epinal",
+     "lat": 48.18363,
+     "lon": 6.44599,
+     "doute": 82,
+     "niveaux": [
+      82,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 82
+      }
+     ]
     }
    ]
   },
@@ -3383,8 +5933,8 @@
      "code": "M5052",
      "nom": "musée Condé",
      "ville": "Chantilly",
-     "lat": 44.2043,
-     "lon": 0.64865,
+     "lat": 49.19397,
+     "lon": 2.48522,
      "doute": 1,
      "niveaux": [
       1,
@@ -3761,8 +6311,8 @@
      "code": "M5052",
      "nom": "musée Condé",
      "ville": "Chantilly",
-     "lat": 44.2043,
-     "lon": 0.64865,
+     "lat": 49.19397,
+     "lon": 2.48522,
      "doute": 1,
      "niveaux": [
       1,
@@ -3996,8 +6546,8 @@
      "code": "M5031",
      "nom": "musée du Louvre",
      "ville": "Paris",
-     "lat": 48.8599,
-     "lon": 2.34093,
+     "lat": 48.86079,
+     "lon": 2.33782,
      "doute": 17,
      "niveaux": [
       1,
@@ -4605,8 +7155,8 @@
      "code": "M5013",
      "nom": "musée national du château de Fontainebleau",
      "ville": "Fontainebleau",
-     "lat": 48.40281,
-     "lon": 2.69686,
+     "lat": 48.39866,
+     "lon": 2.70176,
      "doute": 5,
      "niveaux": [
       0,
@@ -4647,8 +7197,8 @@
      "code": "M5016",
      "nom": "musée national des châteaux de Malmaison et de Bois Préau",
      "ville": "Rueil-Malmaison",
-     "lat": 48.87333,
-     "lon": 2.1689,
+     "lat": 48.87274,
+     "lon": 2.16909,
      "doute": 1,
      "niveaux": [
       0,
@@ -5023,8 +7573,8 @@
      "code": "M5031",
      "nom": "musée du Louvre",
      "ville": "Paris",
-     "lat": 48.8599,
-     "lon": 2.34093,
+     "lat": 48.86079,
+     "lon": 2.33782,
      "doute": 63,
      "niveaux": [
       51,
@@ -5344,8 +7894,8 @@
      "code": "M0677",
      "nom": "musée Thomas-Henry",
      "ville": "Cherbourg-en-Cotentin",
-     "lat": 49.6371,
-     "lon": -1.62306,
+     "lat": 49.63845,
+     "lon": -1.62544,
      "doute": 1,
      "niveaux": [
       0,
@@ -5431,6 +7981,57 @@
       "reference": "08940005128",
       "titre": "Sainte Madeleine en extase (titre factice)"
      }
+    }
+   ]
+  },
+  {
+   "nom": "André Marie Florentin Giraud",
+   "slug": "andre-marie-florentin-giraud",
+   "propre": 6,
+   "doute": 59,
+   "copie": 0,
+   "musees": 1,
+   "nb_musees_doute": 1,
+   "musee_principal": {
+    "code": "M0116",
+    "nom": "musée Crozatier",
+    "doute": 59,
+    "part": 1.0
+   },
+   "doute_sans_musee": 0,
+   "niveaux": [
+    59,
+    0,
+    0
+   ],
+   "familles": [
+    {
+     "code": "attribue",
+     "libelle": "attribué à",
+     "niveau": 1,
+     "notices": 59
+    }
+   ],
+   "exemple_copie": null,
+   "musees_doute": [
+    {
+     "code": "M0116",
+     "nom": "musée Crozatier",
+     "ville": "Le Puy-en-Velay",
+     "lat": 45.03867,
+     "lon": 3.88346,
+     "doute": 59,
+     "niveaux": [
+      59,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 59
+      }
+     ]
     }
    ]
   },
@@ -5548,8 +8149,8 @@
      "code": "M5052",
      "nom": "musée Condé",
      "ville": "Chantilly",
-     "lat": 44.2043,
-     "lon": 0.64865,
+     "lat": 49.19397,
+     "lon": 2.48522,
      "doute": 1,
      "niveaux": [
       1,
@@ -5739,8 +8340,8 @@
      "code": "M5031",
      "nom": "musée du Louvre",
      "ville": "Paris",
-     "lat": 48.8599,
-     "lon": 2.34093,
+     "lat": 48.86079,
+     "lon": 2.33782,
      "doute": 19,
      "niveaux": [
       1,
@@ -5904,8 +8505,8 @@
      "code": "M0329",
      "nom": "musée d’ethnographie corse",
      "ville": "Bastia",
-     "lat": null,
-     "lon": null,
+     "lat": 42.69315,
+     "lon": 9.45058,
      "doute": 2,
      "niveaux": [
       0,
@@ -6490,8 +9091,8 @@
      "code": "M0776",
      "nom": "musée municipal",
      "ville": "La Roche-sur-Yon",
-     "lat": 46.67017,
-     "lon": -1.43123,
+     "lat": 46.66927,
+     "lon": -1.42883,
      "doute": 1,
      "niveaux": [
       1,
@@ -6817,6 +9418,124 @@
    ]
   },
   {
+   "nom": "Auguste Vacquerie",
+   "slug": "auguste-vacquerie",
+   "propre": 406,
+   "doute": 48,
+   "copie": 0,
+   "musees": 3,
+   "nb_musees_doute": 1,
+   "musee_principal": {
+    "code": "M5060",
+    "nom": "musée d'Orsay",
+    "doute": 48,
+    "part": 1.0
+   },
+   "doute_sans_musee": 0,
+   "niveaux": [
+    48,
+    0,
+    0
+   ],
+   "familles": [
+    {
+     "code": "attribue",
+     "libelle": "attribué à",
+     "niveau": 1,
+     "notices": 18
+    },
+    {
+     "code": "point_interrogation",
+     "libelle": "? (point d'interrogation)",
+     "niveau": 1,
+     "notices": 30
+    }
+   ],
+   "exemple_copie": null,
+   "musees_doute": [
+    {
+     "code": "M5060",
+     "nom": "musée d'Orsay",
+     "ville": "Paris",
+     "lat": 48.85916,
+     "lon": 2.32367,
+     "doute": 48,
+     "niveaux": [
+      48,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 18
+      },
+      {
+       "code": "point_interrogation",
+       "notices": 30
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Charles Eugène Ensfelder",
+   "slug": "charles-eugene-ensfelder",
+   "propre": 42,
+   "doute": 48,
+   "copie": 1,
+   "musees": 4,
+   "nb_musees_doute": 1,
+   "musee_principal": {
+    "code": "M0537",
+    "nom": "musée de l'image",
+    "doute": 48,
+    "part": 1.0
+   },
+   "doute_sans_musee": 0,
+   "niveaux": [
+    48,
+    0,
+    0
+   ],
+   "familles": [
+    {
+     "code": "attribue",
+     "libelle": "attribué à",
+     "niveau": 1,
+     "notices": 48
+    }
+   ],
+   "exemple_copie": {
+    "reference": "5002E011245",
+    "titre": "ALMANACH DES POSTES / 1875 / L'ARBRE DE NOEL (titre inscrit)",
+    "musee": "musée des civilisations de l'Europe et de la Méditerranée",
+    "ville": "Marseille",
+    "extrait": "Ensfelder Eugène (1836-1876) (d'après)"
+   },
+   "musees_doute": [
+    {
+     "code": "M0537",
+     "nom": "musée de l'image",
+     "ville": "Epinal",
+     "lat": 48.18363,
+     "lon": 6.44599,
+     "doute": 48,
+     "niveaux": [
+      48,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 48
+      }
+     ]
+    }
+   ]
+  },
+  {
    "nom": "Adolph Menzel",
    "slug": "adolph-menzel",
    "propre": 12,
@@ -6850,8 +9569,8 @@
      "code": "M5031",
      "nom": "musée du Louvre",
      "ville": "Paris",
-     "lat": 48.8599,
-     "lon": 2.34093,
+     "lat": 48.86079,
+     "lon": 2.33782,
      "doute": 47,
      "niveaux": [
       0,
@@ -6931,8 +9650,8 @@
      "code": "M5031",
      "nom": "musée du Louvre",
      "ville": "Paris",
-     "lat": 48.8599,
-     "lon": 2.34093,
+     "lat": 48.86079,
+     "lon": 2.33782,
      "doute": 21,
      "niveaux": [
       6,
@@ -7972,8 +10691,8 @@
      "code": "M5031",
      "nom": "musée du Louvre",
      "ville": "Paris",
-     "lat": 48.8599,
-     "lon": 2.34093,
+     "lat": 48.86079,
+     "lon": 2.33782,
      "doute": 35,
      "niveaux": [
       2,
@@ -8110,8 +10829,8 @@
      "code": "M0329",
      "nom": "musée d’ethnographie corse",
      "ville": "Bastia",
-     "lat": null,
-     "lon": null,
+     "lat": 42.69315,
+     "lon": 9.45058,
      "doute": 1,
      "niveaux": [
       0,
@@ -8264,8 +10983,8 @@
      "code": "M5077",
      "nom": "musée national des châteaux de Versailles et de Trianon",
      "ville": "Versailles",
-     "lat": 48.80081,
-     "lon": 2.12307,
+     "lat": 48.80454,
+     "lon": 2.13405,
      "doute": 11,
      "niveaux": [
       2,
@@ -8295,8 +11014,8 @@
      "code": "M5031",
      "nom": "musée du Louvre",
      "ville": "Paris",
-     "lat": 48.8599,
-     "lon": 2.34093,
+     "lat": 48.86079,
+     "lon": 2.33782,
      "doute": 9,
      "niveaux": [
       7,
@@ -8425,8 +11144,8 @@
      "code": "M5052",
      "nom": "musée Condé",
      "ville": "Chantilly",
-     "lat": 44.2043,
-     "lon": 0.64865,
+     "lat": 49.19397,
+     "lon": 2.48522,
      "doute": 1,
      "niveaux": [
       1,
@@ -8798,6 +11517,143 @@
    ]
   },
   {
+   "nom": "François Georgin",
+   "slug": "francois-georgin",
+   "propre": 567,
+   "doute": 43,
+   "copie": 9,
+   "musees": 9,
+   "nb_musees_doute": 2,
+   "musee_principal": {
+    "code": "M0537",
+    "nom": "musée de l'image",
+    "doute": 42,
+    "part": 0.977
+   },
+   "doute_sans_musee": 0,
+   "niveaux": [
+    43,
+    0,
+    0
+   ],
+   "familles": [
+    {
+     "code": "attribue",
+     "libelle": "attribué à",
+     "niveau": 1,
+     "notices": 42
+    },
+    {
+     "code": "point_interrogation",
+     "libelle": "? (point d'interrogation)",
+     "niveau": 1,
+     "notices": 1
+    }
+   ],
+   "exemple_copie": {
+    "reference": "5002E002220",
+    "titre": "CHACUN SON METIER (titre inscrit)",
+    "musee": "musée des civilisations de l'Europe et de la Méditerranée",
+    "ville": "Marseille",
+    "extrait": "Georgin François (1801-1863) (d'après)"
+   },
+   "musees_doute": [
+    {
+     "code": "M0537",
+     "nom": "musée de l'image",
+     "ville": "Epinal",
+     "lat": 48.18363,
+     "lon": 6.44599,
+     "doute": 42,
+     "niveaux": [
+      42,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 42
+      }
+     ]
+    },
+    {
+     "code": "M5002",
+     "nom": "musée des civilisations de l'Europe et de la Méditerranée",
+     "ville": "Marseille",
+     "lat": 43.2969,
+     "lon": 5.36107,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "point_interrogation",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "5002E001385",
+      "titre": "CANTIQUES SPIRITUELS. / NOTRE-DAME DE FOURVIERE. (titre inscrit)"
+     }
+    }
+   ]
+  },
+  {
+   "nom": "Louis Verjat",
+   "slug": "louis-verjat",
+   "propre": 0,
+   "doute": 43,
+   "copie": 0,
+   "musees": 1,
+   "nb_musees_doute": 1,
+   "musee_principal": {
+    "code": "M0424",
+    "nom": "musée Adrien Mentienne",
+    "doute": 43,
+    "part": 1.0
+   },
+   "doute_sans_musee": 0,
+   "niveaux": [
+    43,
+    0,
+    0
+   ],
+   "familles": [
+    {
+     "code": "attribue",
+     "libelle": "attribué à",
+     "niveau": 1,
+     "notices": 43
+    }
+   ],
+   "exemple_copie": null,
+   "musees_doute": [
+    {
+     "code": "M0424",
+     "nom": "musée Adrien Mentienne",
+     "ville": "Bry-sur-Marne",
+     "lat": 48.83522,
+     "lon": 2.51983,
+     "doute": 43,
+     "niveaux": [
+      43,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 43
+      }
+     ]
+    }
+   ]
+  },
+  {
    "nom": "Luca Giordano",
    "slug": "luca-giordano",
    "propre": 79,
@@ -9102,8 +11958,8 @@
      "code": "M0748",
      "nom": "musée des beaux-arts et galerie David-d'Angers",
      "ville": "Angers",
-     "lat": 47.46913,
-     "lon": -0.55437,
+     "lat": 47.46966,
+     "lon": -0.55549,
      "doute": 1,
      "niveaux": [
       1,
@@ -9171,8 +12027,8 @@
      "code": "M0329",
      "nom": "musée d’ethnographie corse",
      "ville": "Bastia",
-     "lat": null,
-     "lon": null,
+     "lat": 42.69315,
+     "lon": 9.45058,
      "doute": 1,
      "niveaux": [
       1,
@@ -9467,8 +12323,8 @@
      "code": "M0748",
      "nom": "musée des beaux-arts et galerie David-d'Angers",
      "ville": "Angers",
-     "lat": 47.46913,
-     "lon": -0.55437,
+     "lat": 47.46966,
+     "lon": -0.55549,
      "doute": 2,
      "niveaux": [
       0,
@@ -9761,6 +12617,96 @@
    ]
   },
   {
+   "nom": "Peter Hawke",
+   "slug": "peter-hawke",
+   "propre": 117,
+   "doute": 42,
+   "copie": 9,
+   "musees": 2,
+   "nb_musees_doute": 2,
+   "musee_principal": {
+    "code": "M0748",
+    "nom": "musée des beaux-arts et galerie David-d'Angers",
+    "doute": 41,
+    "part": 0.976
+   },
+   "doute_sans_musee": 0,
+   "niveaux": [
+    42,
+    0,
+    0
+   ],
+   "familles": [
+    {
+     "code": "attribue",
+     "libelle": "attribué à",
+     "niveau": 1,
+     "notices": 22
+    },
+    {
+     "code": "point_interrogation",
+     "libelle": "? (point d'interrogation)",
+     "niveau": 1,
+     "notices": 20
+    }
+   ],
+   "exemple_copie": {
+    "reference": "07480011556",
+    "titre": "Tour de la Haute-Chaîne",
+    "musee": "musée des beaux-arts et galerie David-d'Angers",
+    "ville": "Angers",
+    "extrait": "HAWKE Peter (dessinateur, d'après)"
+   },
+   "musees_doute": [
+    {
+     "code": "M0748",
+     "nom": "musée des beaux-arts et galerie David-d'Angers",
+     "ville": "Angers",
+     "lat": 47.46966,
+     "lon": -0.55549,
+     "doute": 41,
+     "niveaux": [
+      41,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 21
+      },
+      {
+       "code": "point_interrogation",
+       "notices": 20
+      }
+     ]
+    },
+    {
+     "code": "M0745",
+     "nom": "musée Dobrée",
+     "ville": "Nantes",
+     "lat": 47.21179,
+     "lon": -1.56612,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "07450066079",
+      "titre": "Vitrail des Cordeliers"
+     }
+    }
+   ]
+  },
+  {
    "nom": "Hyacinthe Rigaud",
    "slug": "hyacinthe-rigaud",
    "propre": 193,
@@ -10007,8 +12953,8 @@
      "code": "M5052",
      "nom": "musée Condé",
      "ville": "Chantilly",
-     "lat": 44.2043,
-     "lon": 0.64865,
+     "lat": 49.19397,
+     "lon": 2.48522,
      "doute": 1,
      "niveaux": [
       1,
@@ -10653,8 +13599,8 @@
      "code": "M5031",
      "nom": "musée du Louvre",
      "ville": "Paris",
-     "lat": 48.8599,
-     "lon": 2.34093,
+     "lat": 48.86079,
+     "lon": 2.33782,
      "doute": 35,
      "niveaux": [
       33,
@@ -10680,8 +13626,8 @@
      "code": "M5052",
      "nom": "musée Condé",
      "ville": "Chantilly",
-     "lat": 49.19413,
-     "lon": 2.48512,
+     "lat": 49.19397,
+     "lon": 2.48522,
      "doute": 2,
      "niveaux": [
       2,
@@ -10740,6 +13686,108 @@
       "reference": "09940006847",
       "titre": "Paysage ; Ferme dans un paysage (Ancien titre)"
      }
+    }
+   ]
+  },
+  {
+   "nom": "Auguste Alleaume",
+   "slug": "auguste-alleaume",
+   "propre": 10,
+   "doute": 39,
+   "copie": 0,
+   "musees": 1,
+   "nb_musees_doute": 1,
+   "musee_principal": {
+    "code": "M0766",
+    "nom": "musée du Vieux-Château",
+    "doute": 39,
+    "part": 1.0
+   },
+   "doute_sans_musee": 0,
+   "niveaux": [
+    39,
+    0,
+    0
+   ],
+   "familles": [
+    {
+     "code": "attribue",
+     "libelle": "attribué à",
+     "niveau": 1,
+     "notices": 39
+    }
+   ],
+   "exemple_copie": null,
+   "musees_doute": [
+    {
+     "code": "M0766",
+     "nom": "musée du Vieux-Château",
+     "ville": "Laval",
+     "lat": 48.06865,
+     "lon": -0.77221,
+     "doute": 39,
+     "niveaux": [
+      39,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 39
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Antoine Gabriel Willermet",
+   "slug": "antoine-gabriel-willermet",
+   "propre": 50,
+   "doute": 39,
+   "copie": 0,
+   "musees": 1,
+   "nb_musees_doute": 1,
+   "musee_principal": {
+    "code": "M5019",
+    "nom": "musée national de la céramique",
+    "doute": 39,
+    "part": 1.0
+   },
+   "doute_sans_musee": 0,
+   "niveaux": [
+    39,
+    0,
+    0
+   ],
+   "familles": [
+    {
+     "code": "attribue",
+     "libelle": "attribué à",
+     "niveau": 1,
+     "notices": 39
+    }
+   ],
+   "exemple_copie": null,
+   "musees_doute": [
+    {
+     "code": "M5019",
+     "nom": "musée national de la céramique",
+     "ville": "Sèvres",
+     "lat": 48.81704,
+     "lon": 2.20573,
+     "doute": 39,
+     "niveaux": [
+      39,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 39
+      }
+     ]
     }
    ]
   },
@@ -10884,8 +13932,8 @@
      "code": "M5052",
      "nom": "musée Condé",
      "ville": "Chantilly",
-     "lat": 44.2043,
-     "lon": 0.64865,
+     "lat": 49.19397,
+     "lon": 2.48522,
      "doute": 1,
      "niveaux": [
       1,
@@ -11501,8 +14549,8 @@
      "code": "M5052",
      "nom": "musée Condé",
      "ville": "Chantilly",
-     "lat": 44.2043,
-     "lon": 0.64865,
+     "lat": 49.19397,
+     "lon": 2.48522,
      "doute": 1,
      "niveaux": [
       0,
@@ -11701,8 +14749,8 @@
      "code": "M5031",
      "nom": "musée du Louvre",
      "ville": "Paris",
-     "lat": 48.8599,
-     "lon": 2.34093,
+     "lat": 48.86079,
+     "lon": 2.33782,
      "doute": 27,
      "niveaux": [
       25,
@@ -11834,6 +14882,130 @@
    ]
   },
   {
+   "nom": "Turpin de Crissé",
+   "slug": "turpin-de-crisse",
+   "propre": 387,
+   "doute": 34,
+   "copie": 1,
+   "musees": 10,
+   "nb_musees_doute": 1,
+   "musee_principal": {
+    "code": "M0748",
+    "nom": "musée des beaux-arts et galerie David-d'Angers",
+    "doute": 34,
+    "part": 1.0
+   },
+   "doute_sans_musee": 0,
+   "niveaux": [
+    34,
+    0,
+    0
+   ],
+   "familles": [
+    {
+     "code": "point_interrogation",
+     "libelle": "? (point d'interrogation)",
+     "niveau": 1,
+     "notices": 34
+    }
+   ],
+   "exemple_copie": {
+    "reference": "M0277002715",
+    "titre": "La Porte Saint-Georges à Vendôme",
+    "musee": "musée municipal",
+    "ville": "Vendôme",
+    "extrait": "TURPIN DE CRISSE Lancelot Théodore (dessinateur, d'après)"
+   },
+   "musees_doute": [
+    {
+     "code": "M0748",
+     "nom": "musée des beaux-arts et galerie David-d'Angers",
+     "ville": "Angers",
+     "lat": 47.46966,
+     "lon": -0.55549,
+     "doute": 34,
+     "niveaux": [
+      34,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "point_interrogation",
+       "notices": 34
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Charles Hugo",
+   "slug": "charles-hugo",
+   "propre": 348,
+   "doute": 34,
+   "copie": 1,
+   "musees": 5,
+   "nb_musees_doute": 1,
+   "musee_principal": {
+    "code": "M5060",
+    "nom": "musée d'Orsay",
+    "doute": 34,
+    "part": 1.0
+   },
+   "doute_sans_musee": 0,
+   "niveaux": [
+    34,
+    0,
+    0
+   ],
+   "familles": [
+    {
+     "code": "attribue",
+     "libelle": "attribué à",
+     "niveau": 1,
+     "notices": 4
+    },
+    {
+     "code": "point_interrogation",
+     "libelle": "? (point d'interrogation)",
+     "niveau": 1,
+     "notices": 30
+    }
+   ],
+   "exemple_copie": {
+    "reference": "M0332013315",
+    "titre": "Victor Hugo sur le rocher des Proscrits à Jersey",
+    "musee": "musée des beaux-arts et d'archéologie",
+    "ville": "Besançon",
+    "extrait": "Hugo Charles (1826-1871) (d'après , photographe)"
+   },
+   "musees_doute": [
+    {
+     "code": "M5060",
+     "nom": "musée d'Orsay",
+     "ville": "Paris",
+     "lat": 48.85916,
+     "lon": 2.32367,
+     "doute": 34,
+     "niveaux": [
+      34,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 4
+      },
+      {
+       "code": "point_interrogation",
+       "notices": 30
+      }
+     ]
+    }
+   ]
+  },
+  {
    "nom": "Polidoro Caldara",
    "slug": "polidoro-caldara",
    "propre": 130,
@@ -11912,8 +15084,8 @@
      "code": "M5052",
      "nom": "musée Condé",
      "ville": "Chantilly",
-     "lat": 44.2043,
-     "lon": 0.64865,
+     "lat": 49.19397,
+     "lon": 2.48522,
      "doute": 2,
      "niveaux": [
       2,
@@ -12003,8 +15175,8 @@
      "code": "M5031",
      "nom": "musée du Louvre",
      "ville": "Paris",
-     "lat": 48.8599,
-     "lon": 2.34093,
+     "lat": 48.86079,
+     "lon": 2.33782,
      "doute": 12,
      "niveaux": [
       6,
@@ -12292,6 +15464,249 @@
      "oeuvre_unique": {
       "reference": "08940004481",
       "titre": "Paysage d'Italie avec un berger et diverses figures vêtues à l'antique"
+     }
+    }
+   ]
+  },
+  {
+   "nom": "Gustave Lancelot",
+   "slug": "gustave-lancelot",
+   "propre": 120,
+   "doute": 32,
+   "copie": 0,
+   "musees": 1,
+   "nb_musees_doute": 1,
+   "musee_principal": {
+    "code": "M0303",
+    "nom": "musée des beaux-arts et d’archéologie",
+    "doute": 32,
+    "part": 1.0
+   },
+   "doute_sans_musee": 0,
+   "niveaux": [
+    32,
+    0,
+    0
+   ],
+   "familles": [
+    {
+     "code": "attribue",
+     "libelle": "attribué à",
+     "niveau": 1,
+     "notices": 32
+    }
+   ],
+   "exemple_copie": null,
+   "musees_doute": [
+    {
+     "code": "M0303",
+     "nom": "musée des beaux-arts et d’archéologie",
+     "ville": "Troyes",
+     "lat": 48.30064,
+     "lon": 4.08003,
+     "doute": 32,
+     "niveaux": [
+      32,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 32
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Charles du Ry",
+   "slug": "charles-du-ry",
+   "propre": 1,
+   "doute": 32,
+   "copie": 0,
+   "musees": 1,
+   "nb_musees_doute": 1,
+   "musee_principal": {
+    "code": "M5031",
+    "nom": "musée du Louvre",
+    "doute": 32,
+    "part": 1.0
+   },
+   "doute_sans_musee": 0,
+   "niveaux": [
+    32,
+    0,
+    0
+   ],
+   "familles": [
+    {
+     "code": "attribue",
+     "libelle": "attribué à",
+     "niveau": 1,
+     "notices": 32
+    }
+   ],
+   "exemple_copie": null,
+   "musees_doute": [
+    {
+     "code": "M5031",
+     "nom": "musée du Louvre",
+     "ville": "Paris",
+     "lat": 48.86079,
+     "lon": 2.33782,
+     "doute": 32,
+     "niveaux": [
+      32,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 32
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Odilon Roche",
+   "slug": "odilon-roche",
+   "propre": 6,
+   "doute": 32,
+   "copie": 0,
+   "musees": 5,
+   "nb_musees_doute": 1,
+   "musee_principal": {
+    "code": "M5044",
+    "nom": "musée Rodin",
+    "doute": 32,
+    "part": 1.0
+   },
+   "doute_sans_musee": 0,
+   "niveaux": [
+    32,
+    0,
+    0
+   ],
+   "familles": [
+    {
+     "code": "point_interrogation",
+     "libelle": "? (point d'interrogation)",
+     "niveau": 1,
+     "notices": 32
+    }
+   ],
+   "exemple_copie": null,
+   "musees_doute": [
+    {
+     "code": "M5044",
+     "nom": "musée Rodin",
+     "ville": "Paris",
+     "lat": 48.85587,
+     "lon": 2.31598,
+     "doute": 32,
+     "niveaux": [
+      32,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "point_interrogation",
+       "notices": 32
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Frans Hogenberg",
+   "slug": "frans-hogenberg",
+   "propre": 134,
+   "doute": 32,
+   "copie": 4,
+   "musees": 9,
+   "nb_musees_doute": 2,
+   "musee_principal": {
+    "code": "M5017",
+    "nom": "musée national du château de Pau",
+    "doute": 31,
+    "part": 0.969
+   },
+   "doute_sans_musee": 0,
+   "niveaux": [
+    0,
+    32,
+    0
+   ],
+   "familles": [
+    {
+     "code": "ecole_de",
+     "libelle": "école de",
+     "niveau": 2,
+     "notices": 22
+    },
+    {
+     "code": "entourage_de",
+     "libelle": "entourage de",
+     "niveau": 2,
+     "notices": 10
+    }
+   ],
+   "exemple_copie": {
+    "reference": "50170000626",
+    "titre": "L'attentat et le supplice de Jean Châtel (titre factice) ; Konig Heinrich von Navarra ... verwundert (titre complet: Konig Heinrich von Navarra wird von Castell verwundert.)",
+    "musee": "musée national du château de Pau",
+    "ville": "Pau",
+    "extrait": "HOGENBERG François (d'après)"
+   },
+   "musees_doute": [
+    {
+     "code": "M5017",
+     "nom": "musée national du château de Pau",
+     "ville": "Pau",
+     "lat": 43.2947,
+     "lon": -0.37438,
+     "doute": 31,
+     "niveaux": [
+      0,
+      31,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 21
+      },
+      {
+       "code": "entourage_de",
+       "notices": 10
+      }
+     ]
+    },
+    {
+     "code": "M0710",
+     "nom": "maison des templiers",
+     "ville": "Caudebec-en-Caux",
+     "lat": 49.52535,
+     "lon": 0.72597,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "M0710000210",
+      "titre": "Le duc de Parme vient au secours de la ville de Rouen, 10 mai 1592"
      }
     }
    ]
@@ -12594,6 +16009,57 @@
    ]
   },
   {
+   "nom": "Nicolaus Hoffmann",
+   "slug": "nicolaus-hoffmann",
+   "propre": 3,
+   "doute": 30,
+   "copie": 0,
+   "musees": 2,
+   "nb_musees_doute": 1,
+   "musee_principal": {
+    "code": "M5008",
+    "nom": "musée franco-américain du château de Blérancourt",
+    "doute": 30,
+    "part": 1.0
+   },
+   "doute_sans_musee": 0,
+   "niveaux": [
+    0,
+    30,
+    0
+   ],
+   "familles": [
+    {
+     "code": "atelier_de",
+     "libelle": "atelier (qualificatif, beaux-arts)",
+     "niveau": 2,
+     "notices": 30
+    }
+   ],
+   "exemple_copie": null,
+   "musees_doute": [
+    {
+     "code": "M5008",
+     "nom": "musée franco-américain du château de Blérancourt",
+     "ville": "Blérancourt",
+     "lat": 49.52181,
+     "lon": 3.15299,
+     "doute": 30,
+     "niveaux": [
+      0,
+      30,
+      0
+     ],
+     "familles": [
+      {
+       "code": "atelier_de",
+       "notices": 30
+      }
+     ]
+    }
+   ]
+  },
+  {
    "nom": "Corneille de Lyon",
    "slug": "corneille-de-lyon",
    "propre": 11,
@@ -12657,8 +16123,8 @@
      "code": "M5077",
      "nom": "musée national des châteaux de Versailles et de Trianon",
      "ville": "Versailles",
-     "lat": 48.80081,
-     "lon": 2.12307,
+     "lat": 48.80454,
+     "lon": 2.13405,
      "doute": 12,
      "niveaux": [
       1,
@@ -12703,8 +16169,8 @@
      "code": "M5052",
      "nom": "musée Condé",
      "ville": "Chantilly",
-     "lat": 44.2043,
-     "lon": 0.64865,
+     "lat": 49.19397,
+     "lon": 2.48522,
      "doute": 6,
      "niveaux": [
       2,
@@ -12916,8 +16382,8 @@
      "code": "M5052",
      "nom": "musée Condé",
      "ville": "Chantilly",
-     "lat": 44.2043,
-     "lon": 0.64865,
+     "lat": 49.19397,
+     "lon": 2.48522,
      "doute": 1,
      "niveaux": [
       1,
@@ -12939,8 +16405,8 @@
      "code": "M0748",
      "nom": "musée des beaux-arts et galerie David-d'Angers",
      "ville": "Angers",
-     "lat": 47.46913,
-     "lon": -0.55437,
+     "lat": 47.46966,
+     "lon": -0.55549,
      "doute": 1,
      "niveaux": [
       1,
@@ -12980,6 +16446,399 @@
       "reference": "01760000025",
       "titre": "Saint Hyacinthe sauvant la statue de la Vierge"
      }
+    }
+   ]
+  },
+  {
+   "nom": "Nicasius Bernaerts",
+   "slug": "nicasius-bernaerts",
+   "propre": 11,
+   "doute": 29,
+   "copie": 0,
+   "musees": 9,
+   "nb_musees_doute": 3,
+   "musee_principal": {
+    "code": "M5013",
+    "nom": "musée national du château de Fontainebleau",
+    "doute": 15,
+    "part": 0.517
+   },
+   "doute_sans_musee": 0,
+   "niveaux": [
+    29,
+    0,
+    0
+   ],
+   "familles": [
+    {
+     "code": "attribue",
+     "libelle": "attribué à",
+     "niveau": 1,
+     "notices": 29
+    }
+   ],
+   "exemple_copie": null,
+   "musees_doute": [
+    {
+     "code": "M5013",
+     "nom": "musée national du château de Fontainebleau",
+     "ville": "Fontainebleau",
+     "lat": 48.39866,
+     "lon": 2.70176,
+     "doute": 15,
+     "niveaux": [
+      15,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 15
+      }
+     ]
+    },
+    {
+     "code": "M5031",
+     "nom": "musée du Louvre",
+     "ville": "Paris",
+     "lat": 48.86079,
+     "lon": 2.33782,
+     "doute": 13,
+     "niveaux": [
+      13,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 13
+      }
+     ]
+    },
+    {
+     "code": "M0562",
+     "nom": "musée des Augustins",
+     "ville": "Toulouse",
+     "lat": 43.60056,
+     "lon": 1.4459,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "05620000495",
+      "titre": "Le poulailler"
+     }
+    }
+   ]
+  },
+  {
+   "nom": "Crispin de Passe l'Ancien",
+   "slug": "crispin-de-passe-l-ancien",
+   "propre": 71,
+   "doute": 29,
+   "copie": 21,
+   "musees": 6,
+   "nb_musees_doute": 2,
+   "musee_principal": {
+    "code": "M0286",
+    "nom": "musée des beaux-arts",
+    "doute": 28,
+    "part": 0.966
+   },
+   "doute_sans_musee": 0,
+   "niveaux": [
+    29,
+    0,
+    0
+   ],
+   "familles": [
+    {
+     "code": "point_interrogation",
+     "libelle": "? (point d'interrogation)",
+     "niveau": 1,
+     "notices": 29
+    }
+   ],
+   "exemple_copie": {
+    "reference": "00130131110",
+    "titre": "Emblemata saecularia (planche 50) ; IPSA ADEO MORTI VEL FORMOSISSIMA CEDUNT",
+    "musee": "cabinet des estampes et des dessins",
+    "ville": "Strasbourg",
+    "extrait": "VAN DE PASSE Crispin I (d'après)"
+   },
+   "musees_doute": [
+    {
+     "code": "M0286",
+     "nom": "musée des beaux-arts",
+     "ville": "Orléans",
+     "lat": 47.90157,
+     "lon": 1.90861,
+     "doute": 28,
+     "niveaux": [
+      28,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "point_interrogation",
+       "notices": 28
+      }
+     ]
+    },
+    {
+     "code": "M5017",
+     "nom": "musée national du château de Pau",
+     "ville": "Pau",
+     "lat": 43.2947,
+     "lon": -0.37438,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "point_interrogation",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "50170009530",
+      "titre": "Hugo Grotius"
+     }
+    }
+   ]
+  },
+  {
+   "nom": "Crispin de Passe le Jeune",
+   "slug": "crispin-de-passe-le-jeune",
+   "propre": 5,
+   "doute": 28,
+   "copie": 18,
+   "musees": 3,
+   "nb_musees_doute": 1,
+   "musee_principal": {
+    "code": "M0286",
+    "nom": "musée des beaux-arts",
+    "doute": 28,
+    "part": 1.0
+   },
+   "doute_sans_musee": 0,
+   "niveaux": [
+    28,
+    0,
+    0
+   ],
+   "familles": [
+    {
+     "code": "point_interrogation",
+     "libelle": "? (point d'interrogation)",
+     "niveau": 1,
+     "notices": 28
+    }
+   ],
+   "exemple_copie": {
+    "reference": "02860008269",
+    "titre": "Mariage d'Enée et Lavinia",
+    "musee": "musée des beaux-arts",
+    "ville": "Orléans",
+    "extrait": "PASSE Crispin II Van de (?, inventeur, d'après, éditeur)"
+   },
+   "musees_doute": [
+    {
+     "code": "M0286",
+     "nom": "musée des beaux-arts",
+     "ville": "Orléans",
+     "lat": 47.90157,
+     "lon": 1.90861,
+     "doute": 28,
+     "niveaux": [
+      28,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "point_interrogation",
+       "notices": 28
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Amable Louis Crapelet",
+   "slug": "amable-louis-crapelet",
+   "propre": 177,
+   "doute": 28,
+   "copie": 0,
+   "musees": 5,
+   "nb_musees_doute": 1,
+   "musee_principal": {
+    "code": "M0917",
+    "nom": "musée Grobet-Labadié",
+    "doute": 28,
+    "part": 1.0
+   },
+   "doute_sans_musee": 0,
+   "niveaux": [
+    28,
+    0,
+    0
+   ],
+   "familles": [
+    {
+     "code": "attribue",
+     "libelle": "attribué à",
+     "niveau": 1,
+     "notices": 28
+    }
+   ],
+   "exemple_copie": null,
+   "musees_doute": [
+    {
+     "code": "M0917",
+     "nom": "musée Grobet-Labadié",
+     "ville": "Marseille",
+     "lat": 43.30341,
+     "lon": 5.39287,
+     "doute": 28,
+     "niveaux": [
+      28,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 28
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Auguste Beuret",
+   "slug": "auguste-beuret",
+   "propre": 0,
+   "doute": 28,
+   "copie": 0,
+   "musees": 1,
+   "nb_musees_doute": 1,
+   "musee_principal": {
+    "code": "M5044",
+    "nom": "musée Rodin",
+    "doute": 28,
+    "part": 1.0
+   },
+   "doute_sans_musee": 0,
+   "niveaux": [
+    28,
+    0,
+    0
+   ],
+   "familles": [
+    {
+     "code": "point_interrogation",
+     "libelle": "? (point d'interrogation)",
+     "niveau": 1,
+     "notices": 28
+    }
+   ],
+   "exemple_copie": null,
+   "musees_doute": [
+    {
+     "code": "M5044",
+     "nom": "musée Rodin",
+     "ville": "Paris",
+     "lat": 48.85587,
+     "lon": 2.31598,
+     "doute": 28,
+     "niveaux": [
+      28,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "point_interrogation",
+       "notices": 28
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Jean-Charles François Leloy",
+   "slug": "jean-charles-francois-leloy",
+   "propre": 1777,
+   "doute": 28,
+   "copie": 0,
+   "musees": 4,
+   "nb_musees_doute": 1,
+   "musee_principal": {
+    "code": "M5019",
+    "nom": "musée national de la céramique",
+    "doute": 28,
+    "part": 1.0
+   },
+   "doute_sans_musee": 0,
+   "niveaux": [
+    28,
+    0,
+    0
+   ],
+   "familles": [
+    {
+     "code": "attribue",
+     "libelle": "attribué à",
+     "niveau": 1,
+     "notices": 19
+    },
+    {
+     "code": "point_interrogation",
+     "libelle": "? (point d'interrogation)",
+     "niveau": 1,
+     "notices": 9
+    }
+   ],
+   "exemple_copie": null,
+   "musees_doute": [
+    {
+     "code": "M5019",
+     "nom": "musée national de la céramique",
+     "ville": "Sèvres",
+     "lat": 48.81704,
+     "lon": 2.20573,
+     "doute": 28,
+     "niveaux": [
+      28,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 19
+      },
+      {
+       "code": "point_interrogation",
+       "notices": 9
+      }
+     ]
     }
    ]
   },
@@ -13068,8 +16927,8 @@
      "code": "M5052",
      "nom": "musée Condé",
      "ville": "Chantilly",
-     "lat": 44.2043,
-     "lon": 0.64865,
+     "lat": 49.19397,
+     "lon": 2.48522,
      "doute": 5,
      "niveaux": [
       3,
@@ -13152,8 +17011,8 @@
      "code": "M5013",
      "nom": "musée national du château de Fontainebleau",
      "ville": "Fontainebleau",
-     "lat": 48.40281,
-     "lon": 2.69686,
+     "lat": 48.39866,
+     "lon": 2.70176,
      "doute": 1,
      "niveaux": [
       0,
@@ -13193,6 +17052,133 @@
       "reference": "M0332002913",
       "titre": "Copie d'après une statue antique de Junon (recto) ; plusieurs études d'une figure casquée et esquisse d'un homme debout (verso)"
      }
+    }
+   ]
+  },
+  {
+   "nom": "Joseph Hussenot",
+   "slug": "joseph-hussenot",
+   "propre": 46,
+   "doute": 27,
+   "copie": 0,
+   "musees": 3,
+   "nb_musees_doute": 1,
+   "musee_principal": {
+    "code": "M0537",
+    "nom": "musée de l'image",
+    "doute": 27,
+    "part": 1.0
+   },
+   "doute_sans_musee": 0,
+   "niveaux": [
+    27,
+    0,
+    0
+   ],
+   "familles": [
+    {
+     "code": "attribue",
+     "libelle": "attribué à",
+     "niveau": 1,
+     "notices": 27
+    }
+   ],
+   "exemple_copie": null,
+   "musees_doute": [
+    {
+     "code": "M0537",
+     "nom": "musée de l'image",
+     "ville": "Epinal",
+     "lat": 48.18363,
+     "lon": 6.44599,
+     "doute": 27,
+     "niveaux": [
+      27,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 27
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Colijn de Coter",
+   "slug": "colijn-de-coter",
+   "propre": 4,
+   "doute": 27,
+   "copie": 0,
+   "musees": 4,
+   "nb_musees_doute": 2,
+   "musee_principal": {
+    "code": "M5003",
+    "nom": "musée du Moyen Age - thermes et hôtel de Cluny",
+    "doute": 25,
+    "part": 0.926
+   },
+   "doute_sans_musee": 0,
+   "niveaux": [
+    2,
+    25,
+    0
+   ],
+   "familles": [
+    {
+     "code": "attribue",
+     "libelle": "attribué à",
+     "niveau": 1,
+     "notices": 2
+    },
+    {
+     "code": "entourage_de",
+     "libelle": "entourage de",
+     "niveau": 2,
+     "notices": 25
+    }
+   ],
+   "exemple_copie": null,
+   "musees_doute": [
+    {
+     "code": "M5003",
+     "nom": "musée du Moyen Age - thermes et hôtel de Cluny",
+     "ville": "Paris",
+     "lat": 48.85044,
+     "lon": 2.34455,
+     "doute": 25,
+     "niveaux": [
+      0,
+      25,
+      0
+     ],
+     "familles": [
+      {
+       "code": "entourage_de",
+       "notices": 25
+      }
+     ]
+    },
+    {
+     "code": "M0161",
+     "nom": "Le Panoptique d'Autun, musée Rolin",
+     "ville": "Autun",
+     "lat": 46.94572,
+     "lon": 4.29922,
+     "doute": 2,
+     "niveaux": [
+      2,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 2
+      }
+     ]
     }
    ]
   },
@@ -13798,6 +17784,799 @@
    ]
   },
   {
+   "nom": "Antonio del Pollaiuolo",
+   "slug": "antonio-del-pollaiuolo",
+   "propre": 10,
+   "doute": 26,
+   "copie": 4,
+   "musees": 5,
+   "nb_musees_doute": 1,
+   "musee_principal": {
+    "code": "M5031",
+    "nom": "musée du Louvre",
+    "doute": 26,
+    "part": 1.0
+   },
+   "doute_sans_musee": 0,
+   "niveaux": [
+    3,
+    23,
+    0
+   ],
+   "familles": [
+    {
+     "code": "attribue",
+     "libelle": "attribué à",
+     "niveau": 1,
+     "notices": 3
+    },
+    {
+     "code": "ecole_de",
+     "libelle": "école de",
+     "niveau": 2,
+     "notices": 23
+    }
+   ],
+   "exemple_copie": {
+    "reference": "50410000638",
+    "titre": "Copie d'après un dessin de Pollaiuolo : Le martyre de saint Sébastien (détail)",
+    "musee": "musée Gustave Moreau",
+    "ville": "Paris",
+    "extrait": "POLLAIUOLO Antonio di (d'après)"
+   },
+   "musees_doute": [
+    {
+     "code": "M5031",
+     "nom": "musée du Louvre",
+     "ville": "Paris",
+     "lat": 48.86079,
+     "lon": 2.33782,
+     "doute": 26,
+     "niveaux": [
+      3,
+      23,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 3
+      },
+      {
+       "code": "ecole_de",
+       "notices": 23
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Henry Hennault",
+   "slug": "henry-hennault",
+   "propre": 29,
+   "doute": 26,
+   "copie": 0,
+   "musees": 1,
+   "nb_musees_doute": 1,
+   "musee_principal": {
+    "code": "M0537",
+    "nom": "musée de l'image",
+    "doute": 26,
+    "part": 1.0
+   },
+   "doute_sans_musee": 0,
+   "niveaux": [
+    26,
+    0,
+    0
+   ],
+   "familles": [
+    {
+     "code": "attribue",
+     "libelle": "attribué à",
+     "niveau": 1,
+     "notices": 26
+    }
+   ],
+   "exemple_copie": null,
+   "musees_doute": [
+    {
+     "code": "M0537",
+     "nom": "musée de l'image",
+     "ville": "Epinal",
+     "lat": 48.18363,
+     "lon": 6.44599,
+     "doute": 26,
+     "niveaux": [
+      26,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 26
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Israël Henriet",
+   "slug": "israel-henriet",
+   "propre": 937,
+   "doute": 26,
+   "copie": 0,
+   "musees": 18,
+   "nb_musees_doute": 3,
+   "musee_principal": {
+    "code": "M0657",
+    "nom": "musée des beaux-arts",
+    "doute": 18,
+    "part": 0.692
+   },
+   "doute_sans_musee": 0,
+   "niveaux": [
+    26,
+    0,
+    0
+   ],
+   "familles": [
+    {
+     "code": "attribue",
+     "libelle": "attribué à",
+     "niveau": 1,
+     "notices": 1
+    },
+    {
+     "code": "point_interrogation",
+     "libelle": "? (point d'interrogation)",
+     "niveau": 1,
+     "notices": 25
+    }
+   ],
+   "exemple_copie": null,
+   "musees_doute": [
+    {
+     "code": "M0657",
+     "nom": "musée des beaux-arts",
+     "ville": "Caen",
+     "lat": 49.18615,
+     "lon": -0.36122,
+     "doute": 18,
+     "niveaux": [
+      18,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "point_interrogation",
+       "notices": 18
+      }
+     ]
+    },
+    {
+     "code": "M0286",
+     "nom": "musée des beaux-arts",
+     "ville": "Orléans",
+     "lat": 47.90157,
+     "lon": 1.90861,
+     "doute": 7,
+     "niveaux": [
+      7,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "point_interrogation",
+       "notices": 7
+      }
+     ]
+    },
+    {
+     "code": "M0172",
+     "nom": "musée des ursulines",
+     "ville": "Mâcon",
+     "lat": 46.30751,
+     "lon": 4.83316,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "01720000218",
+      "titre": "Partie de la Ville de Mascon"
+     }
+    }
+   ]
+  },
+  {
+   "nom": "René Ackermann",
+   "slug": "rene-ackermann",
+   "propre": 222,
+   "doute": 26,
+   "copie": 0,
+   "musees": 4,
+   "nb_musees_doute": 2,
+   "musee_principal": {
+    "code": "M0022",
+    "nom": "musée Westercamp",
+    "doute": 25,
+    "part": 0.962
+   },
+   "doute_sans_musee": 0,
+   "niveaux": [
+    26,
+    0,
+    0
+   ],
+   "familles": [
+    {
+     "code": "attribue",
+     "libelle": "attribué à",
+     "niveau": 1,
+     "notices": 26
+    }
+   ],
+   "exemple_copie": null,
+   "musees_doute": [
+    {
+     "code": "M0022",
+     "nom": "musée Westercamp",
+     "ville": "Wissembourg",
+     "lat": 49.03881,
+     "lon": 7.94434,
+     "doute": 25,
+     "niveaux": [
+      25,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 25
+      }
+     ]
+    },
+    {
+     "code": "M0537",
+     "nom": "musée de l'image",
+     "ville": "Epinal",
+     "lat": 48.18363,
+     "lon": 6.44599,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "M0537070475",
+      "titre": "Die drei Sprachen. N°= 1030. (titre inscrit all.) ; les trois langues (titre factice)"
+     }
+    }
+   ]
+  },
+  {
+   "nom": "Louis Hertig",
+   "slug": "louis-hertig",
+   "propre": 375,
+   "doute": 26,
+   "copie": 1,
+   "musees": 2,
+   "nb_musees_doute": 1,
+   "musee_principal": {
+    "code": "M0332",
+    "nom": "musée des beaux-arts et d'archéologie",
+    "doute": 26,
+    "part": 1.0
+   },
+   "doute_sans_musee": 0,
+   "niveaux": [
+    0,
+    26,
+    0
+   ],
+   "familles": [
+    {
+     "code": "entourage_de",
+     "libelle": "entourage de",
+     "niveau": 2,
+     "notices": 26
+    }
+   ],
+   "exemple_copie": {
+    "reference": "M0144001024",
+    "titre": "GENLIS - Monument aux Morts de la Guerre 1914-1918 (titre inscrit )",
+    "musee": "musée municipal",
+    "ville": "Nuits-Saint-Georges",
+    "extrait": "HERTIG Louis (sculpteur, d'après)"
+   },
+   "musees_doute": [
+    {
+     "code": "M0332",
+     "nom": "musée des beaux-arts et d'archéologie",
+     "ville": "Besançon",
+     "lat": 47.24005,
+     "lon": 6.02294,
+     "doute": 26,
+     "niveaux": [
+      0,
+      26,
+      0
+     ],
+     "familles": [
+      {
+       "code": "entourage_de",
+       "notices": 26
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Jacques-Louis David",
+   "slug": "jacques-louis-david",
+   "propre": 1180,
+   "doute": 26,
+   "copie": 67,
+   "musees": 73,
+   "nb_musees_doute": 17,
+   "musee_principal": {
+    "code": "M5031",
+    "nom": "musée du Louvre",
+    "doute": 7,
+    "part": 0.269
+   },
+   "doute_sans_musee": 0,
+   "niveaux": [
+    13,
+    13,
+    0
+   ],
+   "familles": [
+    {
+     "code": "attribue",
+     "libelle": "attribué à",
+     "niveau": 1,
+     "notices": 13
+    },
+    {
+     "code": "ecole_de",
+     "libelle": "école de",
+     "niveau": 2,
+     "notices": 7
+    },
+    {
+     "code": "atelier_de",
+     "libelle": "atelier (qualificatif, beaux-arts)",
+     "niveau": 2,
+     "notices": 6
+    }
+   ],
+   "exemple_copie": {
+    "reference": "000PE005008",
+    "titre": "Le premier consul franchissant le mont Saint-Bernard, 20 mai 1800",
+    "musee": "musée national des châteaux de Versailles et de Trianon",
+    "ville": "Versailles",
+    "extrait": "David (1748-1825) (d'après)"
+   },
+   "musees_doute": [
+    {
+     "code": "M5031",
+     "nom": "musée du Louvre",
+     "ville": "Paris",
+     "lat": 48.86079,
+     "lon": 2.33782,
+     "doute": 7,
+     "niveaux": [
+      2,
+      5,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 2
+      },
+      {
+       "code": "ecole_de",
+       "notices": 3
+      },
+      {
+       "code": "atelier_de",
+       "notices": 2
+      }
+     ]
+    },
+    {
+     "code": "M5011",
+     "nom": "musée national Magnin",
+     "ville": "Dijon",
+     "lat": 47.32096,
+     "lon": 5.04219,
+     "doute": 3,
+     "niveaux": [
+      2,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 2
+      },
+      {
+       "code": "atelier_de",
+       "notices": 1
+      }
+     ]
+    },
+    {
+     "code": "M0917",
+     "nom": "musée Grobet-Labadié",
+     "ville": "Marseille",
+     "lat": 43.30341,
+     "lon": 5.39287,
+     "doute": 2,
+     "niveaux": [
+      1,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      },
+      {
+       "code": "ecole_de",
+       "notices": 1
+      }
+     ]
+    },
+    {
+     "code": "M0303",
+     "nom": "musée des beaux-arts et d’archéologie",
+     "ville": "Troyes",
+     "lat": 48.30064,
+     "lon": 4.08003,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "00000082203",
+      "titre": "ANTOINETTE GABRIELLE CHARPENTIER (?-1793)"
+     }
+    },
+    {
+     "code": "M0770",
+     "nom": "musée de Tessé",
+     "ville": "Le Mans",
+     "lat": 48.01112,
+     "lon": 0.20375,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "000PE009869",
+      "titre": "PORTRAIT DE FAMILLE ; DIT AUTREFOIS MICHEL GERARD, MEMBRE DE L ASSEMBLEE NATIONALE EN 1789, ET SA FAMILLE"
+     }
+    },
+    {
+     "code": "M5077",
+     "nom": "musée national des châteaux de Versailles et de Trianon",
+     "ville": "Versailles",
+     "lat": 48.80454,
+     "lon": 2.13405,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "000PE011119",
+      "titre": "CAMILLE DESMOULINS, SA FEMME LUCILE ET LEUR FILS ?"
+     }
+    },
+    {
+     "code": "M0065",
+     "nom": "musée des beaux-arts",
+     "ville": "Bordeaux",
+     "lat": 44.83806,
+     "lon": -0.57941,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "ecole_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "000PE022029",
+      "titre": "LE TESTAMENT D'EUDAMIDAS"
+     }
+    },
+    {
+     "code": "M0729",
+     "nom": "musée des beaux-arts",
+     "ville": "Rouen",
+     "lat": 49.44496,
+     "lon": 1.09391,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "000PE029798",
+      "titre": "PORTRAIT DU DOCTEUR DELZEUZE ENFANT"
+     }
+    },
+    {
+     "code": "M0619",
+     "nom": "musée de la Chartreuse",
+     "ville": "Douai",
+     "lat": 50.3744,
+     "lon": 3.07548,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "00000060782",
+      "titre": "PORTRAIT PRESUME DE MME DE CARAMAN-CHIMAY (EX TALLIEN)"
+     }
+    },
+    {
+     "code": "M1048",
+     "nom": "musée des beaux-arts",
+     "ville": "Chambéry",
+     "lat": 45.5679,
+     "lon": 5.91931,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "atelier_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "10480007470",
+      "titre": "Portrait de petite fille"
+     }
+    },
+    {
+     "code": "M0776",
+     "nom": "musée municipal",
+     "ville": "La Roche-sur-Yon",
+     "lat": 46.66927,
+     "lon": -1.42883,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "000PE024447",
+      "titre": "Portrait de Napoléon"
+     }
+    },
+    {
+     "code": "M0289",
+     "nom": "musée municipal",
+     "ville": "Pithiviers",
+     "lat": 48.17252,
+     "lon": 2.255,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "M0289002529",
+      "titre": "Tête de vieillard barbu de trois quarts face vers la droite."
+     }
+    },
+    {
+     "code": "M0963",
+     "nom": "musée de Brou",
+     "ville": "Bourg-en-Bresse",
+     "lat": 46.19655,
+     "lon": 5.23652,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "09630004568",
+      "titre": "Mort d'Hector ; Mort de Germanicus (titre ancien erroné)"
+     }
+    },
+    {
+     "code": "M5013",
+     "nom": "musée national du château de Fontainebleau",
+     "ville": "Fontainebleau",
+     "lat": 48.39866,
+     "lon": 2.70176,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "50130000151",
+      "titre": "Portrait d'homme"
+     }
+    },
+    {
+     "code": "M0353",
+     "nom": "musée de la Grande Saline",
+     "ville": "Salins-les-Bains",
+     "lat": 46.93724,
+     "lon": 5.87668,
+     "doute": 1,
+     "niveaux": [
+      1,
+      0,
+      0
+     ],
+     "familles": [
+      {
+       "code": "attribue",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "M0352002998",
+      "titre": "Etude faite sous le premier Empire, tête de guerrier"
+     }
+    },
+    {
+     "code": "M0445",
+     "nom": "Palais-musée des Archevêques de Narbonne",
+     "ville": "Narbonne",
+     "lat": 43.18417,
+     "lon": 3.00427,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "atelier_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "04450000139",
+      "titre": "Le bon Samaritain"
+     }
+    },
+    {
+     "code": "M0311",
+     "nom": "musée des Beaux-Arts de Reims",
+     "ville": "Reims",
+     "lat": 49.25344,
+     "lon": 4.03092,
+     "doute": 1,
+     "niveaux": [
+      0,
+      1,
+      0
+     ],
+     "familles": [
+      {
+       "code": "atelier_de",
+       "notices": 1
+      }
+     ],
+     "oeuvre_unique": {
+      "reference": "03110005074",
+      "titre": "La mort de Marat (titre attribué) ; Marat expirant (autre titre) ; Marat assassiné (autre titre)"
+     }
+    }
+   ]
+  },
+  {
    "nom": "Le Corrège",
    "slug": "le-correge",
    "propre": 82,
@@ -14039,8 +18818,8 @@
      "code": "M5077",
      "nom": "musée national des châteaux de Versailles et de Trianon",
      "ville": "Versailles",
-     "lat": 48.80081,
-     "lon": 2.12307,
+     "lat": 48.80454,
+     "lon": 2.13405,
      "doute": 3,
      "niveaux": [
       1,
@@ -14380,8 +19159,8 @@
      "code": "M0748",
      "nom": "musée des beaux-arts et galerie David-d'Angers",
      "ville": "Angers",
-     "lat": 47.46913,
-     "lon": -0.55437,
+     "lat": 47.46966,
+     "lon": -0.55549,
      "doute": 1,
      "niveaux": [
       1,
@@ -14953,8 +19732,8 @@
      "code": "M5077",
      "nom": "musée national des châteaux de Versailles et de Trianon",
      "ville": "Versailles",
-     "lat": 48.80081,
-     "lon": 2.12307,
+     "lat": 48.80454,
+     "lon": 2.13405,
      "doute": 4,
      "niveaux": [
       4,
@@ -15241,8 +20020,8 @@
      "code": "M5077",
      "nom": "musée national des châteaux de Versailles et de Trianon",
      "ville": "Versailles",
-     "lat": 48.80081,
-     "lon": 2.12307,
+     "lat": 48.80454,
+     "lon": 2.13405,
      "doute": 2,
      "niveaux": [
       2,
@@ -15283,8 +20062,8 @@
      "code": "M5052",
      "nom": "musée Condé",
      "ville": "Chantilly",
-     "lat": 44.2043,
-     "lon": 0.64865,
+     "lat": 49.19397,
+     "lon": 2.48522,
      "doute": 2,
      "niveaux": [
       2,
@@ -15539,8 +20318,8 @@
      "code": "M0715",
      "nom": "Les Pêcheries, musée de Fécamp",
      "ville": "Fécamp",
-     "lat": null,
-     "lon": null,
+     "lat": 49.76175,
+     "lon": 0.36808,
      "doute": 1,
      "niveaux": [
       1,
@@ -15630,8 +20409,8 @@
      "code": "M5031",
      "nom": "musée du Louvre",
      "ville": "Paris",
-     "lat": 48.8599,
-     "lon": 2.34093,
+     "lat": 48.86079,
+     "lon": 2.33782,
      "doute": 13,
      "niveaux": [
       5,
@@ -15907,8 +20686,8 @@
      "code": "M0594",
      "nom": "musée Goya",
      "ville": "Castres",
-     "lat": 49.15731,
-     "lon": -1.23682,
+     "lat": 43.60481,
+     "lon": 2.23989,
      "doute": 2,
      "niveaux": [
       1,
@@ -15930,8 +20709,8 @@
      "code": "M0677",
      "nom": "musée Thomas-Henry",
      "ville": "Cherbourg-en-Cotentin",
-     "lat": 49.6371,
-     "lon": -1.62306,
+     "lat": 49.63845,
+     "lon": -1.62544,
      "doute": 2,
      "niveaux": [
       0,
@@ -16248,8 +21027,8 @@
      "code": "M5031",
      "nom": "musée du Louvre",
      "ville": "Paris",
-     "lat": 48.8599,
-     "lon": 2.34093,
+     "lat": 48.86079,
+     "lon": 2.33782,
      "doute": 16,
      "niveaux": [
       0,
@@ -16271,8 +21050,8 @@
      "code": "M5052",
      "nom": "musée Condé",
      "ville": "Chantilly",
-     "lat": 44.2043,
-     "lon": 0.64865,
+     "lat": 49.19397,
+     "lon": 2.48522,
      "doute": 2,
      "niveaux": [
       0,
@@ -16574,8 +21353,8 @@
      "code": "M5031",
      "nom": "musée du Louvre",
      "ville": "Paris",
-     "lat": 48.8599,
-     "lon": 2.34093,
+     "lat": 48.86079,
+     "lon": 2.33782,
      "doute": 11,
      "niveaux": [
       1,
@@ -16852,8 +21631,8 @@
      "code": "M5052",
      "nom": "musée Condé",
      "ville": "Chantilly",
-     "lat": 44.2043,
-     "lon": 0.64865,
+     "lat": 49.19397,
+     "lon": 2.48522,
      "doute": 1,
      "niveaux": [
       0,
@@ -16987,8 +21766,8 @@
      "code": "M5052",
      "nom": "musée Condé",
      "ville": "Chantilly",
-     "lat": 44.2043,
-     "lon": 0.64865,
+     "lat": 49.19397,
+     "lon": 2.48522,
      "doute": 2,
      "niveaux": [
       1,

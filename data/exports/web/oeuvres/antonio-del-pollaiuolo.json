@@ -1,0 +1,255 @@
+{
+ "slug": "antonio-del-pollaiuolo",
+ "nom": "Antonio del Pollaiuolo",
+ "doute": 26,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 3
+  },
+  {
+   "code": "ecole_de",
+   "notices": 23
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "50350215478",
+   "titre": "Jeune homme nu debout, la main gauche tendue vers la droite",
+   "musee_code": "M5031",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "POLLAIUOLO Antonio (école)"
+  },
+  {
+   "reference": "50350215483",
+   "titre": "Jeune florentin en haut-de-chausses et mantelet, tourné vers la droite",
+   "musee_code": "M5031",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "POLLAIUOLO Antonio (école)"
+  },
+  {
+   "reference": "50350215490",
+   "titre": "Homme nu tenant un voile, debout, vu de dos, la main droite soulevée",
+   "musee_code": "M5031",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "POLLAIUOLO Antonio (école)"
+  },
+  {
+   "reference": "50350215481",
+   "titre": "Homme nu debout, vu de dos, la main droite posée sur une massue",
+   "musee_code": "M5031",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "POLLAIUOLO Antonio (école)"
+  },
+  {
+   "reference": "50350215477",
+   "titre": "Jeune homme debout, vêtu d'une tunique et d'un manteau",
+   "musee_code": "M5031",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "POLLAIUOLO Antonio (école)"
+  },
+  {
+   "reference": "50350215489",
+   "titre": "Jeune florentin debout, vu de dos, tourné de trois-quarts vers la gauche",
+   "musee_code": "M5031",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "POLLAIUOLO Antonio (école)"
+  },
+  {
+   "reference": "50350215479",
+   "titre": "Deux hommes en prière, debout, drapés.",
+   "musee_code": "M5031",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "POLLAIUOLO Antonio (école)"
+  },
+  {
+   "reference": "50350215469",
+   "titre": "Tête de jeune homme vu de trois-quarts et coiffé d'un bonnet",
+   "musee_code": "M5031",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "POLLAIUOLO Antonio (école)"
+  },
+  {
+   "reference": "50350215476",
+   "titre": "Jeune homme nu assis sur un coffre tenant un linge entre ses mains",
+   "musee_code": "M5031",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "POLLAIUOLO Antonio (école)"
+  },
+  {
+   "reference": "50350215472",
+   "titre": "Jeune homme debout portant son coeur sur un plateau",
+   "musee_code": "M5031",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "POLLAIUOLO Antonio (école)"
+  },
+  {
+   "reference": "50350215486",
+   "titre": "Saint drapé debout, des flammes dansent dans sa main droite tendue",
+   "musee_code": "M5031",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "POLLAIUOLO Antonio (école)"
+  },
+  {
+   "reference": "50350215487",
+   "titre": "Homme nu, les mains jointes, debout, vu de trois quarts vers la gauche",
+   "musee_code": "M5031",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "POLLAIUOLO Antonio (école)"
+  },
+  {
+   "reference": "50350215484",
+   "titre": "Jeune apprenti florentin assis, tenant un livre",
+   "musee_code": "M5031",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "POLLAIUOLO Antonio (école)"
+  },
+  {
+   "reference": "50350215473",
+   "titre": "Homme nu debout, vu de trois-quarts et tendant le bras gauche",
+   "musee_code": "M5031",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "POLLAIUOLO Antonio (école)"
+  },
+  {
+   "reference": "50350215475",
+   "titre": "Jeune homme nu debout, la main gauche appuyée sur une herse",
+   "musee_code": "M5031",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "POLLAIUOLO Antonio (école)"
+  },
+  {
+   "reference": "50350215480",
+   "titre": "Saint François en extase, à genoux",
+   "musee_code": "M5031",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "POLLAIUOLO Antonio (école)"
+  },
+  {
+   "reference": "50350215485",
+   "titre": "Jeune florentin debout, tourné vers la gauche et enveloppé dans un manteau",
+   "musee_code": "M5031",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "POLLAIUOLO Antonio (école)"
+  },
+  {
+   "reference": "50350215474",
+   "titre": "Jeune homme nu debout, tourné vers la droite et tenant un linge",
+   "musee_code": "M5031",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "POLLAIUOLO Antonio (école)"
+  },
+  {
+   "reference": "50350215471",
+   "titre": "Jeune apprenti florentin, assis de trois-quarts vers la droite",
+   "musee_code": "M5031",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "POLLAIUOLO Antonio (école)"
+  },
+  {
+   "reference": "50350215491",
+   "titre": "Bas du corps d'un homme nu, vu de profil vers la droite",
+   "musee_code": "M5031",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "POLLAIUOLO Antonio (école)"
+  },
+  {
+   "reference": "50350215482",
+   "titre": "Jeune homme habillé à la florentine, debout, de profil vers la gauche",
+   "musee_code": "M5031",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "POLLAIUOLO Antonio (école)"
+  },
+  {
+   "reference": "50350215488",
+   "titre": "Homme nun les bras croisés, debout et tourné de trois-quarts vers la gauche",
+   "musee_code": "M5031",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "POLLAIUOLO Antonio (école)"
+  },
+  {
+   "reference": "50350215470",
+   "titre": "Tête de jeune homme vu de trois-quarts, les yeux baissés",
+   "musee_code": "M5031",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "POLLAIUOLO Antonio (école)"
+  },
+  {
+   "reference": "50350228333",
+   "titre": "Homme coiffé d'un bonnet, drapé dans un grand manteau, assis à terre",
+   "musee_code": "M5031",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "POLLAIUOLO Antonio (attribué à)"
+  },
+  {
+   "reference": "50350003538",
+   "titre": "Deux hommes nus, debout, tenant une massue et un bouclier",
+   "musee_code": "M5031",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "POLLAIUOLO Antonio (attribué à)"
+  },
+  {
+   "reference": "50350002128",
+   "titre": "Hercule portant sa massue et un bouclier",
+   "musee_code": "M5031",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "POLLAIUOLO Antonio (attribué à)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-08-05T18:41:37+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

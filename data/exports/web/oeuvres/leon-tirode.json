@@ -1,0 +1,2100 @@
+{
+ "slug": "leon-tirode",
+ "nom": "Léon Tirode",
+ "doute": 231,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 230
+  },
+  {
+   "code": "entourage_de",
+   "notices": 1
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "M0332051015",
+   "titre": "Bateaux de pêche",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051016",
+   "titre": "Bateaux de pêche avec trois pêcheurs",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051021",
+   "titre": "Bateaux de pêche",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051023",
+   "titre": "Paysage côtier : roches et mer",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051003",
+   "titre": "Portrait d'homme en tenue de magistrat posant dans l'atelier du peintre Léon Tirode",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051009",
+   "titre": "Femme allongée dans un lit",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051014",
+   "titre": "Bateaux de pêche",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051006",
+   "titre": "Double portrait d'un ecclésiastique en soutane, le chanoine Hubert Mourot (1866-1948) posant dans l'atelier du peintre Léon Tirode",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051007",
+   "titre": "Portrait d'un homme en costume militaire et d'une femme assise posant dans l'atelier du peintre Léon Tirode",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051008",
+   "titre": "Portrait d'une femme assise posant dans l'atelier du peintre Léon Tirode",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051010",
+   "titre": "Femme agenouillée nettoyant le sol",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051018",
+   "titre": "Bateaux de pêche avec quatre pêcheurs",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051020",
+   "titre": "Bateaux de pêche avec un pêcheur",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051022",
+   "titre": "Bateaux de pêche au port. Au premier plan, un homme vu de dos debout sur le quai",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051024",
+   "titre": "Paysage rocheux",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051002",
+   "titre": "Portrait d'homme en tenue de magistrat posant dans l'atelier du peintre Léon Tirode",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051004",
+   "titre": "Double portrait d'un ecclésiastique en soutane, le chanoine Hubert Mourot (1866-1948) posant dans l'atelier du peintre Léon Tirode",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051005",
+   "titre": "Double portrait d'un ecclésiastique en soutane, le chanoine Hubert Mourot (1866-1948) posant dans l'atelier du peintre Léon Tirode",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051012",
+   "titre": "Le conseil municipal de Besançon en 1918",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051017",
+   "titre": "Bateaux de pêche",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051019",
+   "titre": "Pêcheurs sur un quai",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051027",
+   "titre": "Petit garçon posant dans l'atelier",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051029",
+   "titre": "Petit garçon posant avec son chien dans l'atelier",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051034",
+   "titre": "Trois femmes et deux hommes dont Léon Tirode réunis autour d'une table",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "entourage_de",
+   "extrait": "Tirode Léon (1873-1956) (entourage)"
+  },
+  {
+   "reference": "M0332051035",
+   "titre": "Famille posant dans un champ : deux femmes, trois enfants et un chien",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051036",
+   "titre": "Jeune homme portant un enfant sur ses épaules",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051040",
+   "titre": "Portrait de jeune garçon en buste",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051053",
+   "titre": "Portrait d'homme en costume de moine, vu en pied",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051059",
+   "titre": "Portrait de groupe : quatre jeunes femmes entourant un jeune homme en habit militaire",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051084",
+   "titre": "Portrait d'une femme assise dans l'atelier, posant à côté d'un tableau",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051093",
+   "titre": "Portrait d'homme en costume, jambes croisées, assis dans un fauteuil",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051098",
+   "titre": "Portrait d'un homme en costume militaire et d'une femme assise posant dans l'atelier du peintre Léon Tirode",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051104",
+   "titre": "Femme accroupie, vue de dos, à côté d'une corbeille de linge",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051041",
+   "titre": "Portrait flou de jeune homme assis dans un fauteuil de jardin",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051042",
+   "titre": "Portrait d'enfant tenant une peluche dans les bras",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051043",
+   "titre": "Portrait de femme vue en buste",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051048",
+   "titre": "Portrait de jeune homme, mains croisées, vu de face",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051049",
+   "titre": "Portrait d'homme en costume de moine, vu en pied",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051057",
+   "titre": "Portrait d'une femme et de trois hommes âgés posant dans un jardin",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051060",
+   "titre": "Portrait de groupe : six personnes posant dans un jardin",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051076",
+   "titre": "Double portrait d'une femme assise dans un fauteuil",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051077",
+   "titre": "Double portrait d'une femme assise dans un fauteuil",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051081",
+   "titre": "Double portrait en miroir d'une femme assise dans l'atelier",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051092",
+   "titre": "Portrait d'homme en costume rayé, jambes croisées, posant dans l'atelier",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051100",
+   "titre": "Militaires français en costumes et képis",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051101",
+   "titre": "Portrait de femme en train d'écrire ou de dessiner, posant dans l'atelier",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051103",
+   "titre": "Modèle souriant, à demi nue, un bras autour d'un vase, posant dans l'atelier",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051025",
+   "titre": "Anfractuosité rocheuse",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051026",
+   "titre": "Paysage rocheux avec chevalet posé sur la gauche",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051028",
+   "titre": "Petit garçon posant dans l'atelier",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051030",
+   "titre": "Petit garçon posant avec son chien dans l'atelier",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051032",
+   "titre": "Petit garçon posant avec son chien dans l'atelier",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051033",
+   "titre": "Petit garçon posant avec son chien dans l'atelier",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051037",
+   "titre": "Portrait d'enfant souriant assis dans la paille",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051038",
+   "titre": "Portrait d'enfant assis dans l'herbe",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051039",
+   "titre": "Portrait de jeune fille en buste",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051044",
+   "titre": "Portrait de femme assise dans un fauteuil de jardin",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051054",
+   "titre": "Portrait de deux enfants déguisés avec des couronnes de feuillages",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051056",
+   "titre": "Portrait de groupe de sept jeunes gens et enfants",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051058",
+   "titre": "Portrait de groupe : cinq femmes et deux enfants",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051078",
+   "titre": "Double portrait d'une femme assise dans un fauteuil",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051079",
+   "titre": "Double portrait d'une femme assise dans un fauteuil",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051080",
+   "titre": "Double portrait d'une femme assise dans un fauteuil",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051082",
+   "titre": "Double portrait d'une femme assise (côté gauche) et d'une autre femme debout (côté droit) dans l'atelier",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051085",
+   "titre": "Portrait d'une femme en robe de soirée assise dans l'atelier, posant à devant un tableau",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051087",
+   "titre": "Portrait peint représentant une femme debout en robe de soirée",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051088",
+   "titre": "Portrait d'homme âgé et barbu posant dans l'atelier",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051089",
+   "titre": "Portrait d'homme âgé et barbu posant dans l'atelier",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051094",
+   "titre": "Portrait d'homme en costume, jambes croisées, assis dans un fauteuil",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051096",
+   "titre": "Portrait peint d'un d'homme en costume, jambes croisées, assis dans un fauteuil",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051097",
+   "titre": "Portrait d'un homme en costume militaire et d'une femme assise posant dans l'atelier du peintre Léon Tirode",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051099",
+   "titre": "Trois jeunes enfants, dont deux dans un fauteuil en rotin, posant devant une maison",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051102",
+   "titre": "Modèle souriant, épaule nue, le menton dans la main droite, posant dans l'atelier",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051105",
+   "titre": "Femme debout, vue de dos, portant une bassine de la main gauche et du linge sous son bras droit",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051031",
+   "titre": "Petit garçon posant avec son chien dans l'atelier",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051045",
+   "titre": "Portrait de jeune homme aux yeux clairs, vu de face",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051046",
+   "titre": "Portrait de jeune homme à lunettes, vu de face",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051047",
+   "titre": "Portrait d'homme âgé, à moustache, vu en buste",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051055",
+   "titre": "Portrait de groupe de sept jeunes garçons",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051083",
+   "titre": "Portrait d'une femme assise dans l'atelier, les épaules nues entourées d'une étole de fourrure",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051086",
+   "titre": "Portrait d'une femme en robe de soirée posant debout dans l'atelier",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051090",
+   "titre": "Portrait d'homme moustachu posant dans l'atelier",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051091",
+   "titre": "Double portrait d'homme assis à une table de travail",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051095",
+   "titre": "Portrait peint d'un d'homme en costume, jambes croisées, assis dans un fauteuil",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051106",
+   "titre": "Femme nue, vue de dos, les bras levés, posant dans l'atelier",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051112",
+   "titre": "Façades de bâtiments",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051115",
+   "titre": "Homme au croisement de la rue des Prêtres Saint-Séverin dans le 5e arrondissement de Paris",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051123",
+   "titre": "La fontaine de l'Observatoire au jardin du Luxembourg",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051125",
+   "titre": "Personnages assis autour d'un bassin avec des gerbes d'eau dans un parc public",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051126",
+   "titre": "Bassin avec gerbes d'eau dans un parc",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051134",
+   "titre": "Femme et petite fille se promenant dans les jardins du Luxembourg",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051135",
+   "titre": "Promeneurs dans les jardins du Luxembourg",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051139",
+   "titre": "Groupe de nourrices et enfants dans les jardins du Luxembourg",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051140",
+   "titre": "Hommes et femmes attablés sous les arbres dans les jardins du Luxembourg",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051150",
+   "titre": "Jeune femme en promenade dans un parc",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051157",
+   "titre": "Petite fille courant dans un parc",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051163",
+   "titre": "Chariot tiré par un cheval sur un quai de Seine à Paris",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051167",
+   "titre": "Femme debout dans un bateau amarré en bord de Seine",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051173",
+   "titre": "Bateaux et usines en bord de Seine",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051119",
+   "titre": "L'abbaye d'Acey à Vitreux dans le Jura",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051122",
+   "titre": "Passants devant la fontaine de l'Observatoire au jardin du Luxembourg",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051127",
+   "titre": "Bassin avec gerbe d'eau dans un parc",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051136",
+   "titre": "Enfants faisant naviguer des bateaux sur un bassin dans les jardins du Luxembourg",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051143",
+   "titre": "Femmes et petites filles autour d'un banc dans les jardins du Luxembourg",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051145",
+   "titre": "Femmes et enfants dans les jardins du Luxembourg",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051154",
+   "titre": "Rue de Paris pavoisée",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051159",
+   "titre": "Charrette tirée par un cheval sur un quai en bord de Seine, les tours de Notre-Dame de Paris en arrière-plan",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051164",
+   "titre": "Berge d'une rivière ou d'un fleuve ; Homme et chevaux attelés sur un quai",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051165",
+   "titre": "Groupe de femmes et d'enfants se reposant en bord de Seine, avec le pont de Sully en arrière-plan",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051174",
+   "titre": "Chantier en banlieue parisienne (aménagement des bords de Seine ?)",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051175",
+   "titre": "Chantier en banlieue parisienne (aménagement des bords de Seine ?)",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051177",
+   "titre": "Paysage avec immeubles et usines en arrière-plan",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051111",
+   "titre": "Façades de bâtiments",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051113",
+   "titre": "Vue de l'Hôtel de Sens, rue du Figuier, dans le 4e arrondissement de Paris",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051114",
+   "titre": "Hôtel du Jura et église Saint-Séverin rue des Prêtres Saint-Séverin à Paris",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051116",
+   "titre": "Fontaine de l'Archevêché et abside de Notre-Dame de Paris",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051117",
+   "titre": "Façade sud de Notre-Dame de Paris",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051118",
+   "titre": "La flèche de la cathédrale Notre-Dame au bout de la rue Frédéric Sauton dans le 5e arrondissement de Paris",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051124",
+   "titre": "Bassin des quatre nymphes à Versailles",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051137",
+   "titre": "Jeune femme, les poings sur les hanches, posant près d'un bassin dans les jardins du Luxembourg",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051138",
+   "titre": "Jeunes femmes, dont l'une tient un tableau à la main, dans les jardins du Luxembourg",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051142",
+   "titre": "Groupe de nourrices et enfants dans les jardins du Luxembourg",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051144",
+   "titre": "Hommes et femmes attablés sous les arbres dans les jardins du Luxembourg",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051148",
+   "titre": "Femmes, hommes et nourrice dans une allée des jardins du Luxembourg",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051149",
+   "titre": "Nourrice et enfants dans une allée des jardins du Luxembourg",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051152",
+   "titre": "Petites filles en promenade dans un parc",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051153",
+   "titre": "Nourrices et enfants dans un parc, avec en arrière-plan le Bal Bullier",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051156",
+   "titre": "Homme servant un couple en terrasse d'un café",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051160",
+   "titre": "Le chevet de Notre-Dame de Paris vu depuis les quais",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051166",
+   "titre": "Femme debout dans un bateau amarré en bord de Seine",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051169",
+   "titre": "Homme assis au bord d'un quai de Seine, avec le Pont Marie en arrière-plan",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051170",
+   "titre": "Bateau sur la Seine avec le pont de Sully en arrière-plan",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051171",
+   "titre": "Chantier naval en bord de Seine",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051107",
+   "titre": "Femme nue sortant d'une baignoire",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051120",
+   "titre": "La fontaine de l'Observatoire au jardin du Luxembourg",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051121",
+   "titre": "Femme et enfants devant la fontaine de l'Observatoire au jardin du Luxembourg",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051128",
+   "titre": "Personnages se promenant dans un parc, près d'un bassin avec gerbe d'eau",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051129",
+   "titre": "Parc du Trianon à Versailles",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051141",
+   "titre": "Groupe de nourrices et enfants dans les jardins du Luxembourg",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051146",
+   "titre": "Groupe de promeneuses dans les jardins du Luxembourg",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051147",
+   "titre": "Femmes, hommes, nourrices et enfants dans une allée des jardins du Luxembourg",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051151",
+   "titre": "Petites filles jouant dans un parc",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051155",
+   "titre": "Nourrices et enfants près du monument fontaine Eugène Delacroix au jardin du Luxembourg",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051158",
+   "titre": "Nourrice tenant un enfant dans les bras",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051161",
+   "titre": "Femme accoudée au parapet d'un quai, regardant vers le chevet de Notre-Dame de Paris",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051162",
+   "titre": "Deux femmes accoudées au parapet d'un quai, le chevet de Notre-Dame de Paris en arrière-plan",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051168",
+   "titre": "Deux péniches amarrées en bord de Seine",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051172",
+   "titre": "Hommes en train de charger des bateaux à quai à Paris",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051176",
+   "titre": "Chantier en banlieue parisienne (aménagement des bords de Seine ?)",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051182",
+   "titre": "Petit port de la Seine, quai Henri IV, 4e arrondissement de Paris, avec un homme marchant sur le quai",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051179",
+   "titre": "Petit port de la Seine, quai Henri IV, 4e arrondissement de Paris",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051181",
+   "titre": "Petit port de la Seine, quai Henri IV, 4e arrondissement de Paris",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051184",
+   "titre": "Chariots tirés par des chevaux en bord de Seine à Paris",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051189",
+   "titre": "Quai de Seine à Paris",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051190",
+   "titre": "Quai de Seine à Paris, avec le Pont Neuf en arrière-plan",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051196",
+   "titre": "Fresque peinte par Emile Isenbart au palais de justice de Besançon",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051206",
+   "titre": "Femmes et enfant posant autour d'une table en extérieur",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051208",
+   "titre": "Paysage aux grands arbres",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051209",
+   "titre": "Chemin de Casamène à Besançon, au bord du Doubs",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051215",
+   "titre": "Le Doubs aux alentours de Besançon, le soir",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051216",
+   "titre": "Prairie avec village et collines au lointain",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051218",
+   "titre": "Paysage avec collines et rivière (Bords du Doubs ?)",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051221",
+   "titre": "Femme assise sur un tronc d'arbre couché, au bord d'un chemin forestier",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051225",
+   "titre": "Paysage avec arbres et rivière",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051230",
+   "titre": "Les gorges du Doubs à Maison Monsieur - Le Pavillon Libellule",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051231",
+   "titre": "Le Doubs à Maison Monsieur",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051239",
+   "titre": "Pâturages avec clôture, muret en pierre et conifères",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051246",
+   "titre": "Vaches pâturant autour d'un bâtiment de ferme",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051185",
+   "titre": "Chantier en bord de Seine à Paris",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051187",
+   "titre": "Chantier en bord de Seine à Paris avec chariots tirés par des chevaux",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051191",
+   "titre": "Bateaux amarrés en bord de Seine",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051204",
+   "titre": "Photographie de quatre paysages peints",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051223",
+   "titre": "Paysage avec barques amarrées en bordure de rivière",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051228",
+   "titre": "Arbres se reflétant dans un cours d'eau",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051232",
+   "titre": "Vue du Doubs",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051233",
+   "titre": "Le Doubs serpentant entre des rochers",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051234",
+   "titre": "Femme sur un chemin de terre à l'orée d'une forêt",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051238",
+   "titre": "Chemin en campagne bordé par un mur en pierre",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051240",
+   "titre": "Croix en pierre au milieu des champs",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051241",
+   "titre": "Vaches pâturant au bord du Doubs",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051242",
+   "titre": "Vallée avec conifères",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051248",
+   "titre": "Femme jouant avec des chèvres ; Femme âgée s'occupant de chèvres",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051249",
+   "titre": "Deux femmes avec des chevreaux",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051180",
+   "titre": "Petit port de la Seine, quai Henri IV, 4e arrondissement de Paris",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051199",
+   "titre": "Portrait de femme en buste, épaules dénudées",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051201",
+   "titre": "Tableau représentant une Vierge en prière",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051203",
+   "titre": "Photographie du tableau \"Le vieux graveur\" dans l'atelier de Léon Tirode",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051210",
+   "titre": "Bords du Doubs à Besançon",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051214",
+   "titre": "Le Doubs aux alentours de Besançon",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051227",
+   "titre": "Arbres se reflétant dans un cours d'eau",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051229",
+   "titre": "Femme accroupie au bord d'une rivière",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051245",
+   "titre": "Bâtiment de ferme et abreuvoir en bordure de forêt",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051183",
+   "titre": "Chargement de troncs d'arbres sur les quais de Seine à Paris",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051186",
+   "titre": "Homme se reposant à proximité d'un chantier en bord de Seine à Paris",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051188",
+   "titre": "Hommes travaillant sur un chantier en bord de Seine à Paris avec chariots tirés par des chevaux",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051197",
+   "titre": "Fresque peinte par Emile Isenbart au palais de justice de Besançon",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051205",
+   "titre": "Photographie de cinq paysages peints",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051207",
+   "titre": "Femmes et enfant posant autour d'une table en extérieur",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051211",
+   "titre": "Paysage vallonné avec maisons isolées et cheminée d'usine",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051212",
+   "titre": "Le Doubs aux alentours de Besançon",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051213",
+   "titre": "Le Doubs aux alentours de Besançon",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051217",
+   "titre": "Paysage valloné avec rivière en contrebas",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051219",
+   "titre": "Paysage de prairies et de forêt",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051220",
+   "titre": "Bords de rivière (le Doubs ?)",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051222",
+   "titre": "Chemin forestier entre deux éperons rocheux",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051224",
+   "titre": "Paysage avec barques amarrées en bordure de rivière",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051226",
+   "titre": "Paysage de collines avec un grand arbre au centre",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051235",
+   "titre": "Bâtiments sur les bords du Doubs",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051236",
+   "titre": "Bâtiments sur les bords du Doubs",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051237",
+   "titre": "Voie ferrée au bord du Doubs",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051243",
+   "titre": "Vaches pâturant au bord du Doubs",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051244",
+   "titre": "Chevaux dans une prairie autour d'une cabane en bois à l'orée d'une forêt",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051247",
+   "titre": "Femme jouant avec des chèvres ; Femme âgée s'occupant de chèvres",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051258",
+   "titre": "Deux jeunes femmes posant devant une maison",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051261",
+   "titre": "Paysage avec menhirs en Bretagne",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051262",
+   "titre": "Paysage avec menhirs en Bretagne",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051263",
+   "titre": "Ruines de Montfaucon",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051266",
+   "titre": "Femme tenant un bébé debout sur ses genoux",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051267",
+   "titre": "Femme au chapeau tenant un bébé debout sur ses genoux",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051253",
+   "titre": "Femme dans la cour d'une ferme versant du lait devant un puits",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051254",
+   "titre": "Femme sur un escalier et femmes et enfants assis à terre (clichés superposés)",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051256",
+   "titre": "un homme, deux femmes et deux jeunes filles posant dans la campagne autour d'un mur en pierres",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051260",
+   "titre": "Portrait de groupe autour d'un banc devant une maison",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051264",
+   "titre": "Ouvrier agricole en sabots posant avec une fourche",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051255",
+   "titre": "Vue urbaine sur un quai",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051257",
+   "titre": "Deux fillettes en robes à tissu écossais posant dans la campagne",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051259",
+   "titre": "Un homme et une jeune femme posant devant une maison",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051250",
+   "titre": "Femme avec chèvres et chevreau",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051251",
+   "titre": "Femme avec un chevreau dans les bras",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051252",
+   "titre": "Petite fille devant une fenêtre sermonnée par un personnage à gauche",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  },
+  {
+   "reference": "M0332051265",
+   "titre": "Femme en costume de bain, sur des rochers, regardant au loin la mer et un port",
+   "musee_code": "M0332",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Besançon",
+   "code": "attribue",
+   "extrait": "Tirode Léon (1873-1956) (attribué à)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-08-05T18:41:37+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

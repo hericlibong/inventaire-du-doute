@@ -1,0 +1,269 @@
+{
+ "slug": "crispin-de-passe-le-jeune",
+ "nom": "Crispin de Passe le Jeune",
+ "doute": 28,
+ "familles": [
+  {
+   "code": "point_interrogation",
+   "notices": 28
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "02860008255",
+   "titre": "Persée et Andromède",
+   "musee_code": "M0286",
+   "musee": "musée des beaux-arts",
+   "ville": "Orléans",
+   "code": "point_interrogation",
+   "extrait": "PASSE Crispin II Van de (?, graveur)"
+  },
+  {
+   "reference": "02860008264",
+   "titre": "Enée assiégeant Laurente",
+   "musee_code": "M0286",
+   "musee": "musée des beaux-arts",
+   "ville": "Orléans",
+   "code": "point_interrogation",
+   "extrait": "PASSE Crispin II Van de (?, inventeur, éditeur)"
+  },
+  {
+   "reference": "02860008239",
+   "titre": "Meurtre d'Abimelech et des prêtres",
+   "musee_code": "M0286",
+   "musee": "musée des beaux-arts",
+   "ville": "Orléans",
+   "code": "point_interrogation",
+   "extrait": "PASSE Crispin II Van de (?, graveur)"
+  },
+  {
+   "reference": "02860008232",
+   "titre": "Un couple dans une cuisine préparant du poisson",
+   "musee_code": "M0286",
+   "musee": "musée des beaux-arts",
+   "ville": "Orléans",
+   "code": "point_interrogation",
+   "extrait": "PASSE Crispin II Van de (?, graveur, imprimeur)"
+  },
+  {
+   "reference": "02860008230",
+   "titre": "Les  Vierges folles",
+   "musee_code": "M0286",
+   "musee": "musée des beaux-arts",
+   "ville": "Orléans",
+   "code": "point_interrogation",
+   "extrait": "PASSE Crispin II Van de (? ,graveur, imprimeur)"
+  },
+  {
+   "reference": "02860008207",
+   "titre": "Nativité",
+   "musee_code": "M0286",
+   "musee": "musée des beaux-arts",
+   "ville": "Orléans",
+   "code": "point_interrogation",
+   "extrait": "PASSE Crispin II Van de (?, inventeur, graveur)"
+  },
+  {
+   "reference": "02860008245",
+   "titre": "Les Armes d'Achille",
+   "musee_code": "M0286",
+   "musee": "musée des beaux-arts",
+   "ville": "Orléans",
+   "code": "point_interrogation",
+   "extrait": "PASSE Crispin II Van de (?, inventeur, graveur)"
+  },
+  {
+   "reference": "02860008257",
+   "titre": "Loup marin contre les troupeaux de Pelée",
+   "musee_code": "M0286",
+   "musee": "musée des beaux-arts",
+   "ville": "Orléans",
+   "code": "point_interrogation",
+   "extrait": "PASSE Crispin II Van de (?, inventeur, graveur)"
+  },
+  {
+   "reference": "02860008260",
+   "titre": "Fronstispice de L'Enéide de Virgile",
+   "musee_code": "M0286",
+   "musee": "musée des beaux-arts",
+   "ville": "Orléans",
+   "code": "point_interrogation",
+   "extrait": "PASSE Crispin II Van de (?, inventeur, graveur, éditeur)"
+  },
+  {
+   "reference": "02860008268",
+   "titre": "Enée combattant Turnus",
+   "musee_code": "M0286",
+   "musee": "musée des beaux-arts",
+   "ville": "Orléans",
+   "code": "point_interrogation",
+   "extrait": "PASSE Crispin II Van de (?, inventeur, graveur, éditeur)"
+  },
+  {
+   "reference": "02860008249",
+   "titre": "Progné et Philomèle",
+   "musee_code": "M0286",
+   "musee": "musée des beaux-arts",
+   "ville": "Orléans",
+   "code": "point_interrogation",
+   "extrait": "PASSE Crispin II Van de (?, inventeur, graveur)"
+  },
+  {
+   "reference": "02860008266",
+   "titre": "Jupiter, Junon et Vénus surplombant des combats",
+   "musee_code": "M0286",
+   "musee": "musée des beaux-arts",
+   "ville": "Orléans",
+   "code": "point_interrogation",
+   "extrait": "PASSE Crispin II Van de (?, inventeur, graveur, éditeur)"
+  },
+  {
+   "reference": "02860008247",
+   "titre": "Ravissement de Proserpine",
+   "musee_code": "M0286",
+   "musee": "musée des beaux-arts",
+   "ville": "Orléans",
+   "code": "point_interrogation",
+   "extrait": "PASSE Crispin II Van de (?, inventeur, graveur)"
+  },
+  {
+   "reference": "02860008231",
+   "titre": "Un couple d'amants tenant un oiseau",
+   "musee_code": "M0286",
+   "musee": "musée des beaux-arts",
+   "ville": "Orléans",
+   "code": "point_interrogation",
+   "extrait": "PASSE Crispin II Van de (?, graveur)"
+  },
+  {
+   "reference": "02860008229",
+   "titre": "Alexandre Farnèse",
+   "musee_code": "M0286",
+   "musee": "musée des beaux-arts",
+   "ville": "Orléans",
+   "code": "point_interrogation",
+   "extrait": "PASSE Crispin II Van de (?, inventeur, graveur)"
+  },
+  {
+   "reference": "02860008251",
+   "titre": "Méléagre et Atalante",
+   "musee_code": "M0286",
+   "musee": "musée des beaux-arts",
+   "ville": "Orléans",
+   "code": "point_interrogation",
+   "extrait": "PASSE Crispin II Van de (?, inventeur, graveur)"
+  },
+  {
+   "reference": "02860008241",
+   "titre": "Les Saintes femmes au tombeau",
+   "musee_code": "M0286",
+   "musee": "musée des beaux-arts",
+   "ville": "Orléans",
+   "code": "point_interrogation",
+   "extrait": "PASSE Crispin II Van de (?, graveur, éditeur)"
+  },
+  {
+   "reference": "02860008254",
+   "titre": "La supplice de Marsyas",
+   "musee_code": "M0286",
+   "musee": "musée des beaux-arts",
+   "ville": "Orléans",
+   "code": "point_interrogation",
+   "extrait": "PASSE Crispin II Van de (?, inventeur, graveur)"
+  },
+  {
+   "reference": "02860008240",
+   "titre": "Ezéchiel",
+   "musee_code": "M0286",
+   "musee": "musée des beaux-arts",
+   "ville": "Orléans",
+   "code": "point_interrogation",
+   "extrait": "PASSE Crispin II Van de (?, graveur)"
+  },
+  {
+   "reference": "02860008252",
+   "titre": "Métamorphose d'Appulus en olivier sauvage",
+   "musee_code": "M0286",
+   "musee": "musée des beaux-arts",
+   "ville": "Orléans",
+   "code": "point_interrogation",
+   "extrait": "PASSE Crispin II Van de (?, inventeur, graveur)"
+  },
+  {
+   "reference": "02860008262",
+   "titre": "Enée raconte à Didon la chute de Troie",
+   "musee_code": "M0286",
+   "musee": "musée des beaux-arts",
+   "ville": "Orléans",
+   "code": "point_interrogation",
+   "extrait": "PASSE Crispin II Van de (?, inventeur, graveur, éditeur)"
+  },
+  {
+   "reference": "02860008258",
+   "titre": "La Métamorphose de Io",
+   "musee_code": "M0286",
+   "musee": "musée des beaux-arts",
+   "ville": "Orléans",
+   "code": "point_interrogation",
+   "extrait": "PASSE Crispin II Van de (?, inventeur, graveur)"
+  },
+  {
+   "reference": "02860008208",
+   "titre": "Sangliers, vaches et bergers dans un paysage",
+   "musee_code": "M0286",
+   "musee": "musée des beaux-arts",
+   "ville": "Orléans",
+   "code": "point_interrogation",
+   "extrait": "PASSE Crispin II Van de (?, inventeur, graveur)"
+  },
+  {
+   "reference": "02860008261",
+   "titre": "Didon accueille Enée",
+   "musee_code": "M0286",
+   "musee": "musée des beaux-arts",
+   "ville": "Orléans",
+   "code": "point_interrogation",
+   "extrait": "PASSE Crispin II Van de (?, inventeur, graveur, éditeur)"
+  },
+  {
+   "reference": "02860008204",
+   "titre": "La Métamorphose de Callisto",
+   "musee_code": "M0286",
+   "musee": "musée des beaux-arts",
+   "ville": "Orléans",
+   "code": "point_interrogation",
+   "extrait": "PASSE Crispin II Van de (?, inventeur, graveur)"
+  },
+  {
+   "reference": "02860008233",
+   "titre": "Allégorie du Temps et de la Misère",
+   "musee_code": "M0286",
+   "musee": "musée des beaux-arts",
+   "ville": "Orléans",
+   "code": "point_interrogation",
+   "extrait": "PASSE Crispin II Van de (?, graveur, éditeur)"
+  },
+  {
+   "reference": "02860008265",
+   "titre": "Ascagne et Enée au siège de Laurente",
+   "musee_code": "M0286",
+   "musee": "musée des beaux-arts",
+   "ville": "Orléans",
+   "code": "point_interrogation",
+   "extrait": "PASSE Crispin II Van de (?, inventeur, graveur, éditeur)"
+  },
+  {
+   "reference": "02860008259",
+   "titre": "Trois bergers en conversation, un faune les observant",
+   "musee_code": "M0286",
+   "musee": "musée des beaux-arts",
+   "ville": "Orléans",
+   "code": "point_interrogation",
+   "extrait": "PASSE Crispin II Van de (?, inventeur, graveur)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-08-05T18:41:37+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

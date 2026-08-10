@@ -11,9 +11,9 @@ Message central porté par cette vue (docs/donnees.md 2026-07-15) :
 > que dans l'ensemble de Joconde : 35 % contre 7,6 %. C'est ce contraste qui
 > porte la section « Vue d'ensemble » — pas un renversement de hiérarchie.
 
-Les clés se nommaient `dans_27` / `hors_27` : la liste comptant désormais
-63 maîtres instruits (temps 5, 2026-07-22), elles s'appellent `dans_liste` /
-`hors_liste`. Un nom de champ qui fige un effectif devient faux au premier ajout.
+Les clés se nommaient `dans_27` / `hors_27` : la liste ayant grandi (27, puis 63,
+puis 103 au lot du 2026-08-02), elles s'appellent `dans_liste` / `hors_liste`. Un
+nom de champ qui fige un effectif devient faux au premier ajout.
 
 Garde-fous méthodologiques (repris du rapport de reconnaissance) :
 - Les familles PEUVENT SE RECOUVRIR (une notice porte parfois plusieurs formules)
@@ -117,10 +117,12 @@ def main():
     ]
 
     # --- Totaux : appartenances ET notices distinctes ---
-    # Six notices nomment DEUX maîtres retenus (artistes.json →
-    # references_partagees). La somme des profils vaut donc 3 674 quand les
-    # références distinctes ne sont que 3 668. « hors liste » se déduit de
-    # l'UNION, jamais de la somme (decisions.md, 2026-07-22 ter).
+    # Des notices nomment DEUX artistes retenus (artistes.json →
+    # references_partagees) : 6 avec les 63 premiers, 157 depuis le lot du
+    # 2026-08-02, où les musées nomment souvent deux frères sur la même notice.
+    # La somme des profils dépasse donc les références distinctes d'autant.
+    # « hors liste » se déduit de l'UNION, jamais de la somme (decisions.md,
+    # 2026-07-22 ter).
     app = artistes["totaux"]["appartenances_doute"]
     notices = artistes["totaux"]["notices_doute"]
     assert app == sum(a["doute"] for a in artistes["artistes"]), \

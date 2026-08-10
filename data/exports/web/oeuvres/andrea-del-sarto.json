@@ -24,6 +24,7 @@
   {
    "reference": "000PE014694",
    "titre": "SAINT JEAN L'EVANGELISTE",
+   "musee_code": "M0913",
    "musee": "musée des beaux-arts",
    "ville": "Marseille",
    "code": "attribue",
@@ -32,6 +33,7 @@
   {
    "reference": "M0347001723",
    "titre": "Tête de femme : Le Silence",
+   "musee_code": "M0347",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Dole",
    "code": "point_interrogation",
@@ -40,6 +42,7 @@
   {
    "reference": "50350002407",
    "titre": "Dragon dévorant un serpent",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -48,6 +51,7 @@
   {
    "reference": "50350002408",
    "titre": "Cavalier revêtu d'une armure",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -56,6 +60,7 @@
   {
    "reference": "50350507598",
    "titre": "Main gauche, vue de profil",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -64,6 +69,7 @@
   {
    "reference": "50350507596",
    "titre": "Bras gauche et partie d'un corps d'une figure drapée",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -72,6 +78,7 @@
   {
    "reference": "50350507600",
    "titre": "Main droite posée à plat",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -80,6 +87,7 @@
   {
    "reference": "50350507597",
    "titre": "Draperie d'une figure assise",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -88,6 +96,7 @@
   {
    "reference": "50350507599",
    "titre": "Deux études du corps d'un enfant : un angelot (?)",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -96,6 +105,7 @@
   {
    "reference": "50350002370",
    "titre": "Etude de draperie",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -104,6 +114,7 @@
   {
    "reference": "50350002419",
    "titre": "Main vue de trois quarts",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -112,6 +123,7 @@
   {
    "reference": "50350002326",
    "titre": "Sainte Conversation : Vierge à l'Enfant avec deux saints",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -120,6 +132,7 @@
   {
    "reference": "50350002365",
    "titre": "Une main vue de dessus",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -128,6 +141,7 @@
   {
    "reference": "50350002366",
    "titre": "Etude d'un avant bras et d'une main tenant un objet",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -136,6 +150,7 @@
   {
    "reference": "50350002374",
    "titre": "Etude de la moitié gauche d'une draperie pour une figure debout",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -144,6 +159,7 @@
   {
    "reference": "50350002388",
    "titre": "Etude d'un bras gauche nu, tendu vers la droite",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -152,6 +168,7 @@
   {
    "reference": "50350002375",
    "titre": "Etude de draperie pour une figure assise",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -160,6 +177,7 @@
   {
    "reference": "50350002413",
    "titre": "Etude pour une main droite",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -168,6 +186,7 @@
   {
    "reference": "50350002376",
    "titre": "Etude de draperie pour une figure assise, tournée vers la droite",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -176,6 +195,7 @@
   {
    "reference": "50350002386",
    "titre": "Visage d'homme, de face",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -184,6 +204,7 @@
   {
    "reference": "50350002364",
    "titre": "Une tête de femme et une main",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -192,6 +213,7 @@
   {
    "reference": "50350002361",
    "titre": "Deux mains",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -200,6 +222,7 @@
   {
    "reference": "50350002358",
    "titre": "Une main tenant un objet",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -208,6 +231,7 @@
   {
    "reference": "50350002406",
    "titre": "Homme debout drapé coiffé d'un turban, tourné à gauche, jambe droite pliée",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -216,6 +240,7 @@
   {
    "reference": "50350002411",
    "titre": "Femme debout, portant des instruments nécessaires pour dévider",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -224,6 +249,7 @@
   {
    "reference": "50350002377",
    "titre": "Etude de draperie pour une figure à genoux",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -232,6 +258,7 @@
   {
    "reference": "50350002401",
    "titre": "Etude de draperie pour un bras",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -240,6 +267,7 @@
   {
    "reference": "50350002412",
    "titre": "Etude d'une main à demi fermée, vue de dessus",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -248,6 +276,7 @@
   {
    "reference": "50350002369",
    "titre": "Etude d'un bras drapé",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -256,6 +285,7 @@
   {
    "reference": "50350002383",
    "titre": "Etude d'un bras droit nu, plié",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -264,6 +294,7 @@
   {
    "reference": "50350002362",
    "titre": "Une main tendue en avant vers la gauche",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -272,6 +303,7 @@
   {
    "reference": "50350002385",
    "titre": "Etude d'un bras nu, tendu, tenant une épée",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -280,6 +312,7 @@
   {
    "reference": "50350002373",
    "titre": "Etude de draperie d'une figure, sans la tête",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -288,6 +321,7 @@
   {
    "reference": "50350002380",
    "titre": "Bras et épaule droite d'une demi-figure d'homme nu",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -296,6 +330,7 @@
   {
    "reference": "50350002381",
    "titre": "Etude d'un pied droit",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -304,6 +339,7 @@
   {
    "reference": "50350002416",
    "titre": "Main aux doigts pliés, de face",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -312,6 +348,7 @@
   {
    "reference": "50350002415",
    "titre": "Main fermée vue du dessus, l'index tendu",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -320,6 +357,7 @@
   {
    "reference": "50350002421",
    "titre": "Etude d'une main gauche ouverte",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -328,6 +366,7 @@
   {
    "reference": "50350002384",
    "titre": "Etude d'un bras droit nu",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -336,6 +375,7 @@
   {
    "reference": "50350002363",
    "titre": "Une main à demi-ployée",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -344,6 +384,7 @@
   {
    "reference": "50350002382",
    "titre": "Les jambes et cuisses d'un homme nu debout",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -352,6 +393,7 @@
   {
    "reference": "50350002378",
    "titre": "Etude de draperie pour une figure assise",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -360,6 +402,7 @@
   {
    "reference": "50350002420",
    "titre": "Une main ouverte, vue de dessous",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -368,6 +411,7 @@
   {
    "reference": "50350002417",
    "titre": "Main fermée tenant un bâton",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -376,6 +420,7 @@
   {
    "reference": "50350002414",
    "titre": "Etude pour deux mains",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -384,6 +429,7 @@
   {
    "reference": "50350002422",
    "titre": "Main à demi-fermée vue de dessus",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -392,6 +438,7 @@
   {
    "reference": "50350002418",
    "titre": "Main vue de profil, l'index pointé",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -400,6 +447,7 @@
   {
    "reference": "50350002360",
    "titre": "Enfant nu couché sur un coussin, endormi",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -408,6 +456,7 @@
   {
    "reference": "50350002423",
    "titre": "Main, vue du dessus, pouce et index écartés",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -416,6 +465,7 @@
   {
    "reference": "50350002379",
    "titre": "Etude de draperie pour un bras plié",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -424,6 +474,7 @@
   {
    "reference": "50350002367",
    "titre": "Etude d'un bras drapé",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -432,6 +483,7 @@
   {
    "reference": "50350002368",
    "titre": "Etude d'un bras drapé",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -440,6 +492,7 @@
   {
    "reference": "50350002471",
    "titre": "Deux enfants, l'un à genoux et l'autre endormi",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -448,6 +501,7 @@
   {
    "reference": "50350113696",
    "titre": "Homme barbu, drapé, coiffé d'un turban, écrivant",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -456,6 +510,7 @@
   {
    "reference": "50350003640",
    "titre": "Demi-figure d'homme, vêtu de la robe de citoyen de la République de Florence",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -464,6 +519,7 @@
   {
    "reference": "50350102025",
    "titre": "Dieu le Père en gloire",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -472,6 +528,7 @@
   {
    "reference": "50350113697",
    "titre": "Etude de deux saints religieux",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -480,6 +537,7 @@
   {
    "reference": "50350200897",
    "titre": "Quatre hommes barbus, de profil, sur des degrés, et femme de face",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -488,6 +546,7 @@
   {
    "reference": "50350200720",
    "titre": "Enfant nu, courant, les bras ouverts : un ange (?)",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -496,6 +555,7 @@
   {
    "reference": "50350145087",
    "titre": "Vierge à l'Enfant  (fragment)",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -504,6 +564,7 @@
   {
    "reference": "50350500087",
    "titre": "Détail d'un plan (?)",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -512,6 +573,7 @@
   {
    "reference": "50350508654",
    "titre": "Trace d'esquisse",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -520,6 +582,7 @@
   {
    "reference": "M0341000307",
    "titre": "Portrait d'un médecin",
+   "musee_code": "M0341",
    "musee": "musée Sarret de Grozon",
    "ville": "Arbois",
    "code": "genre_de",
@@ -527,7 +590,7 @@
   }
  ],
  "version_donnee": "2026-07-01",
- "date_generation": "2026-07-28T14:49:21+00:00",
+ "date_generation": "2026-08-05T18:41:37+00:00",
  "source": "Collections des musées de France : base Joconde",
  "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
 }

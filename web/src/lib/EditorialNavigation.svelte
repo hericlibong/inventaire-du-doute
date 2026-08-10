@@ -1,34 +1,49 @@
 <script>
 	// Navigation de la couverture d'accueil (révision 2026-07-18) : des CARTOUCHES
 	// éditoriaux intégrés à la fiche claire — rectangles sombres (bleu-encre), texte
-	// ivoire, angles quasi droits, largeur adaptée au texte, légèrement décalés. Pas
-	// de boutons arrondis, pas d'ombre, pas d'icône. « Explorer les maîtres » = entrée
+	// ivoire, angles quasi droits, largeur adaptée au texte, alignés sur un axe commun
+	// (2026-08-08). Pas de boutons arrondis, pas d'ombre, pas d'icône. « Explorer les artistes » = entrée
 	// principale (plus large, plus lourde, accent cobalt, cible généreuse). Routes
-	// réelles (dont /echelle = « Comprendre les mentions »).
+	// réelles. « Comprendre les mentions » (/echelle) est sortie de la navigation en
+	// phase 7 : ses définitions ont rejoint « Le projet », son URL redirige.
 	import { page } from '$app/stores';
+	import { base } from '$app/paths';
 
-	// `decal` = décalage horizontal irrégulier (les liens n'ont ni la même largeur ni
-	// un alignement de menu classique). Ils semblent appartenir aux rectangles de
-	// l'illustration.
 	// Pas de lien « Accueil » : cette navigation ne s'affiche QUE sur la couverture
 	// d'accueil (LandingCover) — un lien vers la page où l'on se trouve déjà est inutile
 	// (retrait demandé le 2026-07-18). Les autres pages ont « Accueil » dans le header.
+	// « Le projet » ouvre la marche depuis le 2026-08-02 (phase 6) : c'est la porte
+	// de qui arrive sans rien savoir. Le libellé public était « Présentation » jusqu'au
+	// 2026-08-08 ; il dit maintenant de quoi la page parle, et non ce qu'elle est.
+	// L'adresse a suivi le libellé le 2026-08-08 : `/projet`. L'ancienne redirige en 308,
+	// car elle a circulé et une URL publiée ne disparaît pas.
+	// « Explorer les artistes » reste l'entrée PRINCIPALE — c'est l'application elle-même,
+	// et on doit pouvoir y aller directement sans passer par la lecture.
+	//
+	// `decal` a disparu le 2026-08-08 : les trois liens partaient en escalier, ce qui
+	// obligeait l'œil à suivre un zigzag sans raison. Ils partent désormais d'un axe
+	// commun ; la différence de rang se lit sur la taille et la couleur du cartouche,
+	// pas sur sa position.
 	const liens = [
-		{ href: '/les-presque', label: 'Explorer les maîtres', principal: true, decal: '0rem' },
-		{ href: '/echelle', label: 'Comprendre les mentions', decal: '2.8rem' },
-		{ href: '/methode', label: 'Méthode', decal: '1.1rem' }
+		{ href: '/projet', label: 'Le projet' },
+		{ href: '/artistes', label: 'Explorer les artistes', principal: true }
 	];
 
-	const courant = (href) =>
-		href === '/' ? $page.url.pathname === '/' : $page.url.pathname.startsWith(href);
+	// Même dépouillement du chemin de base que dans le layout : les routes se
+	// comparent entre elles, jamais avec le préfixe de publication (2026-08-10).
+	const route = $derived(
+		($page.url.pathname.slice(base.length) || '/').replace(/(.)\/$/, '$1')
+	);
+
+	const courant = (href) => (href === '/' ? route === '/' : route.startsWith(href));
 </script>
 
 <nav class="ednav" aria-label="Navigation principale">
 	<ul>
 		{#each liens as l (l.href)}
-			<li style="--decal: {l.decal}">
+			<li>
 				<a
-					href={l.href}
+					href="{base}{l.href}"
 					class:principal={l.principal}
 					aria-current={courant(l.href) ? 'page' : undefined}
 				>
@@ -50,8 +65,11 @@
 		gap: clamp(0.5rem, 1.6vh, 0.95rem);
 	}
 
+	/* Un seul axe de départ : les cartouches s'alignent à gauche (2026-08-08). La
+	   hiérarchie se lit sur la taille et la couleur du cartouche, jamais sur un
+	   décalage horizontal — un zigzag ne dit rien et fait travailler l'œil. */
 	li {
-		margin-left: var(--decal);
+		margin-left: 0;
 	}
 
 	a {

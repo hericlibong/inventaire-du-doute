@@ -1,0 +1,273 @@
+{
+ "slug": "jean-charles-francois-leloy",
+ "nom": "Jean-Charles François Leloy",
+ "doute": 28,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 19
+  },
+  {
+   "code": "point_interrogation",
+   "notices": 9
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "50190035668",
+   "titre": "Eléments décoratifs [ Glacière à chimères du service de la chevalerie]",
+   "musee_code": "M5019",
+   "musee": "musée national de la céramique",
+   "ville": "Sèvres",
+   "code": "point_interrogation",
+   "extrait": "LELOY Jean Charles François (auteur, ?)"
+  },
+  {
+   "reference": "50190035765",
+   "titre": "Eléments décoratifs [Assiette du service Rinceaux du Palais de Fontainebleau ]",
+   "musee_code": "M5019",
+   "musee": "musée national de la céramique",
+   "ville": "Sèvres",
+   "code": "point_interrogation",
+   "extrait": "LELOY Jean Charles François (auteur, ?)"
+  },
+  {
+   "reference": "50190035877",
+   "titre": "Eléments décoratifs [Assiette]",
+   "musee_code": "M5019",
+   "musee": "musée national de la céramique",
+   "ville": "Sèvres",
+   "code": "point_interrogation",
+   "extrait": "LELOY Jean Charles François (auteur, ?)"
+  },
+  {
+   "reference": "50190035610",
+   "titre": "Elément décoratif",
+   "musee_code": "M5019",
+   "musee": "musée national de la céramique",
+   "ville": "Sèvres",
+   "code": "point_interrogation",
+   "extrait": "LELOY Jean Charles François (auteur, ?)"
+  },
+  {
+   "reference": "50190035555",
+   "titre": "Eléments décoratifs [Vase Oeuf]",
+   "musee_code": "M5019",
+   "musee": "musée national de la céramique",
+   "ville": "Sèvres",
+   "code": "point_interrogation",
+   "extrait": "LELOY Jean Charles François (auteur, ?)"
+  },
+  {
+   "reference": "50190035646",
+   "titre": "Eléments du service des départements",
+   "musee_code": "M5019",
+   "musee": "musée national de la céramique",
+   "ville": "Sèvres",
+   "code": "point_interrogation",
+   "extrait": "LELOY Jean Charles François (auteur, ?)"
+  },
+  {
+   "reference": "50190035848",
+   "titre": "Eléments décoratifs [Bordure d'assiette du service Paysage]",
+   "musee_code": "M5019",
+   "musee": "musée national de la céramique",
+   "ville": "Sèvres",
+   "code": "point_interrogation",
+   "extrait": "LELOY Jean Charles François (auteur, ?)"
+  },
+  {
+   "reference": "50190035766",
+   "titre": "Eléments décoratifs [Assiette du service Rinceaux du Palais de Fontainebleau ]",
+   "musee_code": "M5019",
+   "musee": "musée national de la céramique",
+   "ville": "Sèvres",
+   "code": "point_interrogation",
+   "extrait": "LELOY Jean Charles François (auteur, ?)"
+  },
+  {
+   "reference": "50190035645",
+   "titre": "Eléments du service des départements",
+   "musee_code": "M5019",
+   "musee": "musée national de la céramique",
+   "ville": "Sèvres",
+   "code": "point_interrogation",
+   "extrait": "LELOY Jean Charles François (auteur, ?)"
+  },
+  {
+   "reference": "50190036152",
+   "titre": "Plateau",
+   "musee_code": "M5019",
+   "musee": "musée national de la céramique",
+   "ville": "Sèvres",
+   "code": "attribue",
+   "extrait": "LELOY Jean Charles François (attribué à)"
+  },
+  {
+   "reference": "50190037016",
+   "titre": "Elément décoratif [ Frise]",
+   "musee_code": "M5019",
+   "musee": "musée national de la céramique",
+   "ville": "Sèvres",
+   "code": "attribue",
+   "extrait": "LELOY Jean Charles François (attribué à)"
+  },
+  {
+   "reference": "50190037010",
+   "titre": "Eléments décoratifs [ Frises du service Forestier ?]",
+   "musee_code": "M5019",
+   "musee": "musée national de la céramique",
+   "ville": "Sèvres",
+   "code": "attribue",
+   "extrait": "LELOY Jean Charles François (attribué à)"
+  },
+  {
+   "reference": "50190036901",
+   "titre": "Jardinière [Socle]",
+   "musee_code": "M5019",
+   "musee": "musée national de la céramique",
+   "ville": "Sèvres",
+   "code": "attribue",
+   "extrait": "LELOY Jean Charles François (attribué à)"
+  },
+  {
+   "reference": "50190039904",
+   "titre": "Eléments décoratifs [Frises]",
+   "musee_code": "M5019",
+   "musee": "musée national de la céramique",
+   "ville": "Sèvres",
+   "code": "attribue",
+   "extrait": "LELOY Jean Charles François (attribué à)"
+  },
+  {
+   "reference": "50190039906",
+   "titre": "Eléments décoratifs [Frises pour tasses A.B.]",
+   "musee_code": "M5019",
+   "musee": "musée national de la céramique",
+   "ville": "Sèvres",
+   "code": "attribue",
+   "extrait": "LELOY Jean Charles François (attribué à)"
+  },
+  {
+   "reference": "50190039908",
+   "titre": "Eléments décoratifs [Frises]",
+   "musee_code": "M5019",
+   "musee": "musée national de la céramique",
+   "ville": "Sèvres",
+   "code": "attribue",
+   "extrait": "LELOY Jean Charles François (attribué à)"
+  },
+  {
+   "reference": "50190039448",
+   "titre": "Eléments décoratifs [Attributs, Minerve]",
+   "musee_code": "M5019",
+   "musee": "musée national de la céramique",
+   "ville": "Sèvres",
+   "code": "attribue",
+   "extrait": "LELOY Jean Charles François (attribué à)"
+  },
+  {
+   "reference": "50190039903",
+   "titre": "Eléments décoratifs [Frises]",
+   "musee_code": "M5019",
+   "musee": "musée national de la céramique",
+   "ville": "Sèvres",
+   "code": "attribue",
+   "extrait": "LELOY Jean Charles François (attribué à)"
+  },
+  {
+   "reference": "50190039861",
+   "titre": "Eléments décoratifs [Frises]",
+   "musee_code": "M5019",
+   "musee": "musée national de la céramique",
+   "ville": "Sèvres",
+   "code": "attribue",
+   "extrait": "LELOY Jean Charles François (attribué à)"
+  },
+  {
+   "reference": "50190039913",
+   "titre": "Elément décoratif [Frise]",
+   "musee_code": "M5019",
+   "musee": "musée national de la céramique",
+   "ville": "Sèvres",
+   "code": "attribue",
+   "extrait": "LELOY Jean Charles François (attribué à)"
+  },
+  {
+   "reference": "50190039625",
+   "titre": "Elément décoratif [Attribut]",
+   "musee_code": "M5019",
+   "musee": "musée national de la céramique",
+   "ville": "Sèvres",
+   "code": "attribue",
+   "extrait": "LELOY Jean Charles François (attribué à)"
+  },
+  {
+   "reference": "50190039446",
+   "titre": "Eléments décoratifs [Attributs]",
+   "musee_code": "M5019",
+   "musee": "musée national de la céramique",
+   "ville": "Sèvres",
+   "code": "attribue",
+   "extrait": "LELOY Jean Charles François (attribué à)"
+  },
+  {
+   "reference": "50190039907",
+   "titre": "Eléments décoratifs [Frises]",
+   "musee_code": "M5019",
+   "musee": "musée national de la céramique",
+   "ville": "Sèvres",
+   "code": "attribue",
+   "extrait": "LELOY Jean Charles François (attribué à)"
+  },
+  {
+   "reference": "50190039905",
+   "titre": "Eléments décoratifs [Frises]",
+   "musee_code": "M5019",
+   "musee": "musée national de la céramique",
+   "ville": "Sèvres",
+   "code": "attribue",
+   "extrait": "LELOY Jean Charles François (attribué à)"
+  },
+  {
+   "reference": "50190040186",
+   "titre": "Elément décoratif [Frise]",
+   "musee_code": "M5019",
+   "musee": "musée national de la céramique",
+   "ville": "Sèvres",
+   "code": "attribue",
+   "extrait": "LELOY Jean Charles François (attribué à)"
+  },
+  {
+   "reference": "50190040662",
+   "titre": "Eléments décoratifs [Frise]",
+   "musee_code": "M5019",
+   "musee": "musée national de la céramique",
+   "ville": "Sèvres",
+   "code": "attribue",
+   "extrait": "LELOY Jean Charles François (attribué à)"
+  },
+  {
+   "reference": "50190040661",
+   "titre": "Eléments décoratifs [Frise]",
+   "musee_code": "M5019",
+   "musee": "musée national de la céramique",
+   "ville": "Sèvres",
+   "code": "attribue",
+   "extrait": "LELOY Jean Charles François (attribué à)"
+  },
+  {
+   "reference": "50190040663",
+   "titre": "Eléments décoratifs",
+   "musee_code": "M5019",
+   "musee": "musée national de la céramique",
+   "ville": "Sèvres",
+   "code": "attribue",
+   "extrait": "LELOY Jean Charles François (attribué à)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-08-05T18:41:37+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

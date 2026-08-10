@@ -18,7 +18,8 @@
 	// profil lisible ET garde une échelle commune et fixe, la comparaison portant
 	// sur la FORME du profil. Le volume, lui, n'est pas perdu : il est écrit dans le
 	// bandeau, classé dans le répertoire, et donné en nombre exact dans chaque
-	// infobulle (« 30 œuvres sur 37 — 81 % »).
+	// infobulle (« 30 œuvres sur 37 — 81 % »). Le lot du 2026-08-02 a confirmé le
+	// choix : l'écart entre profils va désormais de 11 à 295 œuvres.
 	let { maitre } = $props();
 
 	// Axe X ordonné par distance narrative au maître (docs/typologie.md), labels
@@ -63,7 +64,7 @@
 		return { id: t.id, titre: t.titre, x1, x2, cx: (x1 + x2) / 2, premier: i === 0 };
 	});
 
-	// Graduations fixes, identiques sur les 63 fiches : un quart, la moitié, etc.
+	// Graduations fixes, identiques sur toutes les fiches : un quart, la moitié, etc.
 	const graduations = [25, 50, 75, 100];
 
 	const points = $derived(
@@ -75,8 +76,8 @@
 				x: colonneX(i),
 				cy: y(fam.notices),
 				notices: fam.notices,
-				tt: tooltipFamille(f.code, maitre.nom, fam.notices),
-				resume: resumeFamille(f.code, maitre.nom, fam.notices)
+				tt: tooltipFamille(f.code, maitre.nom, fam.notices, maitre.doute),
+				resume: resumeFamille(f.code, maitre.nom, fam.notices, maitre.doute)
 			};
 		}).filter(Boolean)
 	);
@@ -87,8 +88,8 @@
 	//   temporaire  — survol ou focus (souris/clavier), refermé au départ / au blur ;
 	//   selectionne — clic, Entrée, Espace ou toucher : persistant jusqu'à un second
 	//                 appui, une autre sélection, Échap ou un appui extérieur.
-	// `ancre` dit OÙ placer l'infobulle : au POINT (défaut) ou, si le point est hors
-	// de la fenêtre (mobile, légende sous le graphe), sous la MENTION de la légende.
+	// L'infobulle reste toujours attachée au POINT. Sur mobile, sa position est
+	// bornée par le cadre du graphique au lieu d'être déplacée loin de sa donnée.
 	// Le tooltip <title> SVG natif reste abandonné (décision 2026-07-10).
 	let regardEl;
 	let svgEl;
@@ -108,25 +109,31 @@
 		interaction ? points.find((p) => p.code === interaction.code) ?? null : null
 	);
 
-	// Position de l'infobulle : TOUJOURS les coordonnées réelles du point dans le
-	// SVG. Exception (repli mobile) : si le point est hors de la fenêtre et que
-	// l'activation vient de la légende, on ancre sous la mention (ancre = legende).
-	function positionner(code, source) {
+	// Position de l'infobulle à partir des coordonnées réelles du point. Sa largeur
+	// maximale est anticipée pour borner son centre et empêcher tout débordement
+	// horizontal, y compris sur les points situés aux extrémités de l'axe.
+	function positionner(code) {
 		const circle = svgEl?.querySelector(`circle[data-code="${code}"]`);
 		if (!circle || !regardEl) return { ancre: 'point', x: 0, y: 0, dessous: false };
 		const c = circle.getBoundingClientRect();
 		const hote = regardEl.getBoundingClientRect();
-		const visible = c.top >= 0 && c.bottom <= window.innerHeight;
-		if (source === 'legende' && !visible) return { ancre: 'legende' };
+		const marge = 8;
+		const largeurInfobulle = Math.min(272, Math.max(208, hote.width - marge * 2));
+		const demiLargeur = largeurInfobulle / 2;
+		const centrePoint = c.left + c.width / 2 - hote.left;
+		const x = Math.min(
+			Math.max(centrePoint, demiLargeur + marge),
+			hote.width - demiLargeur - marge
+		);
 		const y = c.top - hote.top;
-		return { ancre: 'point', x: c.left + c.width / 2 - hote.left, y, dessous: y < 90 };
+		return { ancre: 'point', x, y, dessous: y < 110 };
 	}
 
 	// Ouvre (ou remplace) l'interaction. Un SURVOL n'écrase jamais une sélection.
 	function ouvrir(code, mode, source) {
 		if (!present(code)) return;
 		if (mode === 'temporaire' && interaction?.mode === 'selectionne') return;
-		interaction = { code, mode, source, ...positionner(code, source) };
+		interaction = { code, mode, source, ...positionner(code) };
 	}
 
 	// Ferme une activation TEMPORAIRE seulement (départ souris / perte de focus) :
@@ -201,9 +208,9 @@
 		     graduations, aligné à gauche — dans le registre des titres de territoire,
 		     et sans texte tourné supplémentaire. Il nomme le dénominateur (les œuvres
 		     concernées) sans évoquer un degré de certitude. -->
-		<p class="axe-y-titre">(%) Part parmi les œuvres concernées</p>
+		<p class="axe-y-titre">Part des œuvres concernées (%)</p>
 		<svg bind:this={svgEl} viewBox="0 0 380 300" class="graphe" role="img"
-			aria-label="Graphique des mentions de doute pour {maitre.nom}, en trois territoires de proximité (au plus près, autour du maître, dans son influence). Axe vertical : part des œuvres concernées, de 0 à 100 %, échelle commune à tous les maîtres">
+			aria-label="Graphique des mentions de doute pour {maitre.nom}, en trois territoires de proximité (au plus près, autour du maître, dans son influence). Axe vertical : part des œuvres concernées, de 0 à 100 %, échelle commune à tous les artistes">
 			<!-- Bandes de territoire (fond très léger) : posées EN PREMIER, sous tout le
 			     reste. Contiguës, sans marge ni cadre → une seule ligne de proximité,
 			     pas trois blocs séparés. -->
@@ -344,11 +351,6 @@
 									></span>
 									<span class="mention-label">{FAMILLE_PUBLIC[code].label}</span>
 								</button>
-								<!-- Repli mobile : quand le point est hors de la fenêtre, l'infobulle
-								     s'affiche EN FLUX, sous la mention active. -->
-								{#if interaction?.ancre === 'legende' && interaction.code === code && pointActif}
-									<Infobulle tt={pointActif.tt} enFlux />
-								{/if}
 							{:else}
 								<!-- Mention absente : ni bouton, ni focus, ni curseur d'interaction ;
 								     libellé atténué + indication accessible. -->
@@ -643,13 +645,37 @@
 
 	@container (max-width: 30rem) {
 		.territoires {
-			flex-direction: column;
-			gap: var(--espace-3);
+			display: grid;
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+			gap: 0.45rem;
 		}
-		/* Sans cela, le flex-grow du palier précédent étire chaque zone en HAUTEUR
-		   une fois la liste repassée en colonne (filets de couleur démesurés). */
+
 		.zone {
-			flex: 0 0 auto;
+			min-width: 0;
+			padding-left: 0.35rem;
+			border-left-width: 2px;
+		}
+
+		.zone-titre {
+			font-size: 0.58rem;
+			line-height: 1.2;
+			letter-spacing: 0.02em;
+		}
+
+		.zone-mentions {
+			gap: 0.08rem;
+		}
+
+		.mention {
+			gap: 0.25rem;
+			padding: 0.08rem 0.12rem;
+			font-size: 0.7rem;
+			line-height: 1.25;
+		}
+
+		.pastille {
+			width: 0.45rem;
+			height: 0.45rem;
 		}
 	}
 </style>

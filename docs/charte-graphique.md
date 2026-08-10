@@ -123,6 +123,11 @@ pas un catalogue abstrait. Chaque primitive reste agnostique du dossier.
      visuel, et conclusion que le graphique vient ensuite détailler ;
   3. **récit chiffré** en corps de lecture (volume, part, musées) ;
   4. **repère méthodologique** en petit corps atténué, après un filet fin.
+  **Sans portrait, la colonne de gauche n'existe pas** (2026-08-06) : le texte prend la
+  largeur des deux colonnes réunies. Ni image de remplacement, ni mention d'absence —
+  une image posée à l'emplacement du visage affirmerait, sur la fiche d'un artiste dont
+  les œuvres ne lui sont pas directement attribuées, ce que le texte refuse d'affirmer ;
+  et l'absence n'a pas à être commentée. Vingt-neuf fiches sur cent deux sont dans ce cas.
   Les nombres sont **intégrés aux phrases** : graisse 600 + `--accent-cobalt` + chiffres
   elzéviriens, jamais plus grands que le texte. Phrases **générées** (`artistes.json` +
   champ `citation` de `familles-public.js`) : égalités citées toutes, ordre `ORDRE_FAMILLES` ;
@@ -178,7 +183,10 @@ placard : `GalaxieMaitre` (abandonné).
 > données**, jamais écrit en dur : il est passé de 27 à **63** le 2026-07-22 et bougera à
 > chaque lot de maîtres instruits. L'appellation « Les
 > presque » est **abandonnée dans les textes publics** ; elle ne subsiste que comme
-> **nom de code interne** (docs, route `/les-presque`, fichiers, exports — non renommés).
+> **nom de code interne** (docs, fichiers, exports — non renommés). **La route publique,
+> elle, est passée à `/artistes` le 2026-08-08** ; `/les-presque` redirige en 308. Le nom
+> interne n'a pas été pourchassé pour autant : un refactor sans bénéfice visible n'en
+> est pas un.
 > La page s'ouvre en **deux temps** : (1) entrée éditoriale (titre + texte, deux colonnes
 > sur ordinateur, sans encadré, prudence en note discrète), puis (2) exploration
 > introduite par l'intitulé **« Choisir un artiste »**, détachée par un **filet + de
@@ -210,3 +218,240 @@ Petites étapes, validation à chaque palier :
 - **Règle d'or** : un dossier ajoute une palette sémantique et de la copie
   éditoriale, mais **réutilise le cadre et les primitives** — jamais de reskin par
   dossier.
+
+## 8. Patron « carte + panneau » — arrêté le 2026-08-06
+
+**À reprendre tel quel dans les prochains volets.** Ce patron a été mis au point sur
+la carte des musées d'une fiche d'artiste (`CarteMaitre.svelte`) ; il vaut pour toute
+carte qui répond à la question « où ». Ce qui suit n'est pas un récit de ce qui a été
+fait, c'est la règle à appliquer.
+
+### Ce que la carte dit, et ne dit pas
+- Une carte de ce projet est un **repère géographique**, jamais un graphique de
+  répartition et jamais une comparaison entre lieux. Un point = un lieu, présence.
+- **Tous les points ont la même taille.** Une taille proportionnelle rendrait un
+  « gros cercle » incomparable d'une fiche à l'autre et gonflerait les petits volumes.
+  Le combien se lit dans le panneau, jamais dans l'aire d'un cercle.
+- **La carte existe même à un seul point.** Un point unique situe aussi sûrement que
+  vingt ; l'échelle ne bouge pas, la projection est calée sur le fond, jamais sur les
+  points.
+- Le fond (régions, contours) est une **illustration** : aplat quasi nul, filet gris
+  pâle, aucune donnée, aucune tuile en ligne.
+- Les points qui se recouvrent sont **écartés au plus près de leur vraie position**
+  (`geo.js`, `ecarterPoints`) : aucun point n'en cache un autre.
+
+### Un seul espace d'information
+- **Pas d'infobulle.** Rien ne suit le pointeur, rien ne se superpose à la carte. Une
+  bulle s'efface au premier mouvement, recouvre le titre, et n'existe pas au toucher.
+- Le **panneau au flanc** porte tout : le compte, la ventilation, les liens, la
+  fermeture. C'est le seul endroit où l'information s'écrit.
+- **Le survol n'informe pas, il annonce.** Il dit « ce point se choisit », rien d'autre.
+
+### Les quatre états du point
+| État | Ce qu'on voit |
+|---|---|
+| repos | opacité 0,82, contour blanc 1,1 px |
+| survol | ×1,5, contour 2 px, pleine opacité, curseur `pointer` ; les autres points tombent à 0,55 |
+| focus clavier | **exactement le même retour**, plus l'anneau de focus (2 px encre, offset 3 px) |
+| choisi | cerne d'encre 2,4 px, pleine opacité — le seul état **persistant** |
+
+- L'agrandissement passe par une **transformation** (`transform-box: fill-box`,
+  `transform-origin: center`), pas par le rayon : `r` s'anime irrégulièrement d'un
+  navigateur à l'autre.
+- Transition 0,12 s, supprimée sous `prefers-reduced-motion`.
+- L'atténuation des autres points reste **légère** : elle détache le point visé sans
+  effacer la répartition, qui est le sujet de la carte.
+
+### Le panneau
+- **Deux zones.** En-tête sur aplat `--surface-entete` pleine largeur (nom en gras,
+  lieu dessous en `--taille-xs` encre douce), filet dessous ; corps sur
+  `--surface-carte`. Le retrait appartient à chaque zone, pas au panneau —
+  `overflow: hidden` fait suivre les angles arrondis à l'aplat.
+- **Prévoir les noms longs** : `overflow-wrap: anywhere` dans l'en-tête (le plus long
+  du corpus fait 84 signes).
+- Le gris de l'en-tête est **neutre**. Jamais une couleur de la boîte de pigments :
+  elle appartient aux catégories, elle ne décore rien.
+- Ordre du corps : le compte · la ventilation (triée par valeur, pastille de la
+  couleur stable) · l'action · le lien externe éventuel · « Fermer ».
+
+### Le comportement
+- Le panneau s'ouvre au **clic, à Entrée, à Espace et au toucher** — un point est
+  `role="button"`, `tabindex="0"`, avec un `aria-label` qui dit d'avance tout ce que
+  le panneau contiendra.
+- **Choisir n'est pas un bascule** : choisir deux fois le même lieu ne referme pas.
+  Au toucher, un second appui involontaire effaçait ce qu'on venait d'ouvrir.
+- Choisir un autre lieu **remplace** le contenu. Seul « Fermer » ferme.
+- Changer d'entité (d'artiste, de dossier) referme le panneau : une clé de lieu ne
+  vaut que dans le contexte où elle a été choisie.
+- **Sans sélection**, le flanc porte deux lignes : ce que représente un point, puis
+  l'invitation à en choisir un. Jamais un mode d'emploi du survol.
+- Sur petit écran (≤ 720 px), la grille se replie et **le panneau passe sous la carte**.
+
+### Le vocabulaire
+- Côté lecteur, on parle d'**œuvres**, jamais de notices (É1, 2026-08-03). L'unité de
+  calcul ne change pas pour autant.
+- Le titre de la vue pose une question de lieu : « Où sont conservées ces œuvres ? ».
+- Les intitulés d'action s'accordent : « Voir l'œuvre conservée dans ce musée » /
+  « Voir les N œuvres conservées dans ce musée ».
+
+### Les positions, côté données
+- **Une position par lieu, valable partout.** Joconde publie parfois plusieurs
+  positions sous le même code : on regroupe les positions voisines (< 15 km), on garde
+  la grappe qui porte le plus de notices, puis la plus fréquente dedans
+  (`build_artistes.coord_du_musee`). Jamais « la première rencontrée » : le lieu se
+  mettrait à changer de place d'une fiche à l'autre.
+- **Contrôler avant de publier** : `uv run python src/audit_geoloc.py` compare chaque
+  position au centre de sa commune (référence de contrôle, jamais de données). À
+  lancer après chaque lot.
+
+### Le panneau et ses actions (complément du 2026-08-08)
+- **En-tête** : nom du musée affirmé, ville dessous et plus discrète, **croix de fermeture
+  au coin** — jamais un lien « Fermer » en bout de contenu. Vrai bouton, cible de 28 px,
+  `aria-label="Fermer le panneau"`, **cible de 44 px** — la taille d'un doigt —, absorbée
+  par des marges négatives pour qu'elle ne pousse pas l'en-tête. Le symbole, lui, reste
+  petit. Filet fin entre l'en-tête et le corps.
+- **Corps** : le nombre d'œuvres se lit **avant** la ventilation qui le détaille. Les
+  effectifs des mentions occupent une **colonne fixe à droite** : ils s'alignent d'une ligne
+  à l'autre et se comparent sans être cherchés.
+- **Les mentions sont une information**, jamais des commandes : ni boutons, ni filtres.
+- **Les actions sont des LIGNES, pas des blocs.** Un filet ouvre la zone en bas du
+  panneau ; chaque ligne se clique sur toute sa largeur et se sépare de la suivante par un
+  trait plus clair. Ni aplat plein, ni contour individuel : dans un panneau de dix lignes,
+  deux rectangles pleins pèsent plus que tout le reste.
+- **La principale est en cobalt, un peu plus grasse** ; la seconde plus discrète, sans
+  jamais paraître grisée. Survol : fond cobalt à 7 %. Ce sont des commandes — elles ne
+  prennent pas le soulignement permanent des liens éditoriaux (§ 9).
+- **Une petite icône à droite dit où l'on va** : un chevron « › » pour rester dans la page,
+  une flèche oblique « ↗ » pour sortir du site. Des caractères, pas des fichiers : le projet
+  n'a pas de jeu d'icônes et n'en ajoutera pas une dépendance pour deux glyphes.
+- **Le lien vers la notice publique n'existe qu'au singulier** : à plusieurs œuvres, il n'y
+  a pas UNE notice à ouvrir.
+- **Fermeture** : la croix ou `Échap`, et **le focus retourne au point** d'où l'on vient.
+- **Sur mobile**, le panneau se place **sous** la carte, jamais par-dessus.
+
+## 9. Liens éditoriaux — arrêté le 2026-08-08
+
+Le bleu cobalt (`--accent-cobalt`) **sert deux choses à la fois**, et c'est assumé : il
+signale une **information importante** (les nombres dans une phrase — « 310 œuvres »,
+« 19 musées ») et un **lien**. C'est un choix de l'utilisateur, pris le 2026-08-08 contre
+la solution qui aurait réservé la couleur aux liens.
+
+Il en découle une règle, non négociable : **la distinction ne repose jamais sur la seule
+couleur.**
+
+- **Un lien éditorial dans du texte est souligné en permanence**, dès l'état de repos.
+  Soulignement natif (`text-decoration`), 1 px, couleur cobalt à 45 %, décalé de `0.18em`
+  pour épargner les jambages.
+- **Au survol et au focus**, le trait s'épaissit à 2 px et passe au cobalt plein. On
+  n'utilise pas de `border-bottom` : il déplacerait le texte en s'épaississant.
+- **Les nombres mis en valeur restent en cobalt et en gras, jamais soulignés.** Le trait
+  devient ainsi le seul signe de ce qui se clique.
+- **Ce qui a déjà son propre traitement visuel n'est pas souligné** : onglets, boutons,
+  cartouches de la couverture, appels à l'action sur aplat plein (`.entree`), sommaire par
+  ancres, navigation. Un bouton n'a pas besoin d'un trait pour se signaler.
+- **Les flèches ne sont pas une convention** : celle qui suivait « Comment ces artistes
+  ont-ils été sélectionnés ? » a été retirée parce qu'elle n'ajoutait rien après un point
+  d'interrogation. Les autres — appels à l'action, renvois vers une fiche externe — sont
+  conservées.
+
+Portée : pages « Le projet », « Méthode » et « Explorer les artistes » (`.tete a`,
+`.contenu a`, le renvoi de l'exploration). Récit daté : decisions.md, 2026-08-08 bis.
+
+## 10. Le ruban de composition (répertoire) — arrêté le 2026-08-08
+
+Dans le répertoire des artistes, chaque ligne porte un **ruban court** qui montre la
+répartition des mentions de cet artiste — et **rien d'autre**.
+
+- **La quantité n'est pas dans le ruban.** Elle est portée par le nombre affiché à droite
+  du nom et par l'ordre du classement. Le ruban a donc **la même longueur pour tous**,
+  quel que soit l'effectif.
+- **Il est court et calé à gauche** : 96 px, soit moins d'un tiers de la colonne. Il ne
+  rejoint jamais le nombre. C'est cette distance qui l'empêche d'être lu comme une jauge —
+  une bande qui remplit sa ligne se lit toujours comme un remplissage.
+- **Ses segments sont détachés** (1,5 px de blanc, coins de 1 px). Une barre de progression
+  est continue ; celle-ci ne l'est pas.
+- **Plancher de visibilité : 3 px par mention présente**, l'excédent étant repris au
+  prorata sur les segments majoritaires. Écart assumé et déclaré : sans lui, une mention
+  à 0,6 % — le « nom (?) » de Charles Le Brun — occuperait 0,6 pixel, c'est-à-dire rien.
+  La hiérarchie entre mentions n'est jamais modifiée.
+- **Aucune interaction.** Le ruban est décoratif (`aria-hidden`), sans `role`, sans
+  `tabindex`, sans infobulle. Le répertoire est un outil de recherche et de sélection :
+  la seule cible cliquable d'une ligne est la ligne elle-même.
+- Couleurs et ordre des mentions : ceux de la charte, identiques au graphique du profil.
+
+Récit daté : decisions.md, 2026-08-08 ter.
+
+## 11. Les trois commandes d'une visualisation — arrêté le 2026-08-08
+
+Quand une visualisation offre plusieurs vues, celles-ci se présentent en **groupe de
+boutons contigus**, et non en barre d'onglets soulignée.
+
+- **Aucun filet horizontal ne se prolonge au-delà du dernier bouton.** Un filet qui court
+  sur toute la largeur attire l'œil plus que les commandes elles-mêmes et se lit comme un
+  séparateur de section. C'est ce qui a fait échouer la première version.
+- **Une seule bordure fine cerne le groupe**, des **filets verticaux** séparent les
+  boutons, et rien ne les espace : c'est la contiguïté qui les désigne comme un ensemble
+  de commandes.
+- **Angles droits ou presque** (2 px au plus), **aucune ombre, aucune icône, aucune
+  pastille, aucun texte d'explication.**
+- **L'actif porte un aplat cobalt franc**, texte clair, graisse renforcée. Rien ne déborde
+  du groupe.
+- **Les inactifs gardent un fond clair et l'encre pleine** : un onglet non sélectionné est
+  un choix disponible, jamais un élément désactivé.
+- **Survol** : cobalt à 10 %, texte cobalt. **Focus** : anneau posé à l'intérieur de la
+  cible (`outline-offset` négatif), pour qu'il ne chevauche pas les boutons voisins.
+- **Cible d'au moins 44 px de haut**, y compris au toucher.
+- **La largeur ne bouge jamais au changement d'onglet.** La graisse de l'actif étant plus
+  forte, chaque bouton réserve en permanence la place de son propre libellé en gras — un
+  double invisible, de hauteur nulle (`::after { content: attr(data-label) }`). Sans cela,
+  le groupe se redimensionne à chaque clic et la page tressaute.
+- **Sur ordinateur**, le groupe s'ajuste à ses libellés et s'aligne sur le début de la zone
+  de visualisation. **Sur mobile**, il prend toute la largeur et les boutons se la
+  partagent à parts égales, sur une seule ligne, sans troncature.
+- Balisage inchangé : `tablist`, `tab`, `aria-selected`. **Jamais un second système d'état.**
+
+Récit daté : decisions.md, 2026-08-08 quinquies.
+
+## 12. Le bandeau de navigation — arrêté le 2026-08-08
+
+- **Fixé en tête, dans le flux** : `position: sticky`, jamais `fixed`. La page n'a donc
+  aucune hauteur à compenser, et le pied comme les ancres se comportent normalement.
+- **Fond pleinement opaque** (l'aplat navy de la couverture) : du texte qui défile dessous
+  doit disparaître, pas transparaître. **Ni flou, ni ombre portée** — un simple filet clair
+  à 12 % suffit à poser le bandeau au-dessus du contenu.
+- **Le menu n'est pas un lien éditorial** : il ne porte donc **pas** le soulignement
+  permanent du texte courant (§ 9). Sa position dans le bandeau dit déjà qu'on peut
+  cliquer ; c'est l'état actif qui a besoin d'un signe, pas la nature du lien.
+- **Rubrique courante** : deux signes, la graisse et un **filet d'accent vermillon sous le
+  libellé seul** — jamais un bouton plein, une pastille ou une carte. L'état vient
+  d'`aria-current="page"`, jamais d'une classe décorative posée en parallèle.
+- **Survol** : texte en ivoire plein et filet gris discret. **Focus** : anneau ivoire net,
+  posé autour du libellé.
+- **Les ancres réservent la hauteur du bandeau** : `scroll-padding-top` sur `html`, 4,5 rem
+  sur ordinateur et 7,5 rem quand le bandeau passe à deux lignes. Un titre atteint par le
+  sommaire ne doit jamais arriver sous le header.
+- **Sous 620 px**, le nom et le menu passent sobrement sur deux lignes, calés à gauche.
+  **Pas de menu escamotable** : quatre entrées se montrent, elles ne se cachent pas.
+
+Récit daté : decisions.md, 2026-08-08 octies.
+
+## 13. Listes longues et groupes de commandes au clavier — arrêté le 2026-08-08
+
+Toute liste de plus d'une dizaine d'éléments interactifs, et tout groupe de commandes
+(onglets, segments), suit le **tabindex tournant** :
+
+- **un seul élément est atteignable par `Tab`** — celui qui est sélectionné, ou le premier
+  si la sélection ne fait pas partie de la liste affichée. `Tab` traverse le groupe d'un
+  coup au lieu de s'y arrêter autant de fois qu'il compte d'éléments ;
+- **les flèches circulent à l'intérieur**, avec bouclage aux extrémités ; `Début` et `Fin`
+  y vont directement ;
+- **dans un groupe d'onglets, les flèches sélectionnent** en même temps qu'elles déplacent :
+  on veut voir défiler les vues et s'arrêter sur la bonne ;
+- **dans une liste de contenus, elles ne font que déplacer le focus.** Sélectionner à chaque
+  flèche rechargerait une fiche par touche. C'est `Entrée` ou `Espace` qui choisit — et sur
+  de vrais `<button>`, le navigateur s'en charge déjà ;
+- **l'élément focalisé reste visible** si la liste défile (`scrollIntoView({ block: 'nearest' })`,
+  qui ne fait pas sauter la page autour) ;
+- l'écoute clavier se pose **sur le conteneur**, jamais sur chaque élément.
+
+Récit daté : decisions.md, 2026-08-08 (terdecies et quaterdecies).

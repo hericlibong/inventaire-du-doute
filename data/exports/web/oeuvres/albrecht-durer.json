@@ -24,6 +24,7 @@
   {
    "reference": "00000055631",
    "titre": "UN FAUCONNIER ; PAYSAN AU COQ",
+   "musee_code": "M0116",
    "musee": "musée Crozatier",
    "ville": "Le Puy-en-Velay",
    "code": "attribue",
@@ -32,6 +33,7 @@
   {
    "reference": "50350228319",
    "titre": "Vierge assise tenant l'Enfant sur ses genoux",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -40,6 +42,7 @@
   {
    "reference": "50350500150",
    "titre": "Saint Jean Evangéliste",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -48,6 +51,7 @@
   {
    "reference": "50350109124",
    "titre": "Jésus-Christ apparaissant à la Sainte Vierge",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -56,6 +60,7 @@
   {
    "reference": "50350109007",
    "titre": "Le Christ entre les deux larrons sur le Mont Golgotha",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -64,6 +69,7 @@
   {
    "reference": "50350108822",
    "titre": "L'apôtre saint Pierre",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -72,6 +78,7 @@
   {
    "reference": "50350109002",
    "titre": "Le Christ succombant sous le poids de la croix",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -80,6 +87,7 @@
   {
    "reference": "50350108596",
    "titre": "Saint François recevant les stigmates",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -88,6 +96,7 @@
   {
    "reference": "50350108569",
    "titre": "Adoration des Mages",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -96,6 +105,7 @@
   {
    "reference": "50350108893",
    "titre": "Groupe de cinq hommes armés",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -104,6 +114,7 @@
   {
    "reference": "50350108823",
    "titre": "Saint Jean l'évangéliste",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -112,6 +123,7 @@
   {
    "reference": "50350108600",
    "titre": "Crucifixion",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -120,6 +132,7 @@
   {
    "reference": "02110002354",
    "titre": "La Messe des anges ; Croquis à la plume coloré, composition allégorique et indescriptible (titre ancien) ; Dessin allégorique (titre ancien)",
+   "musee_code": "M0211",
    "musee": "musée des beaux-arts",
    "ville": "Rennes",
    "code": "attribue",
@@ -128,6 +141,7 @@
   {
    "reference": "02860007456",
    "titre": "Saint Pierre",
+   "musee_code": "M0286",
    "musee": "musée des beaux-arts",
    "ville": "Orléans",
    "code": "point_interrogation",
@@ -136,6 +150,7 @@
   {
    "reference": "07450090930",
    "titre": "Crucifix ou pommeau d'épée de l'empereur Maximilien Premier",
+   "musee_code": "M0745",
    "musee": "musée Dobrée",
    "ville": "Nantes",
    "code": "attribue",
@@ -144,6 +159,7 @@
   {
    "reference": "07450090971",
    "titre": "La Sainte-Face de Jésus-Christ",
+   "musee_code": "M0745",
    "musee": "musée Dobrée",
    "ville": "Nantes",
    "code": "attribue",
@@ -152,6 +168,7 @@
   {
    "reference": "07450090959",
    "titre": "Les huit Saints-Patrons d'Autriche",
+   "musee_code": "M0745",
    "musee": "musée Dobrée",
    "ville": "Nantes",
    "code": "attribue",
@@ -160,6 +177,7 @@
   {
    "reference": "07450090962",
    "titre": "La Vierge à la porte",
+   "musee_code": "M0745",
    "musee": "musée Dobrée",
    "ville": "Nantes",
    "code": "attribue",
@@ -168,6 +186,7 @@
   {
    "reference": "03110042003",
    "titre": "Tableau de dévotion",
+   "musee_code": "M0311",
    "musee": "musée des Beaux-Arts de Reims",
    "ville": "Reims",
    "code": "genre_de",
@@ -175,7 +194,7 @@
   }
  ],
  "version_donnee": "2026-07-01",
- "date_generation": "2026-07-28T14:49:21+00:00",
+ "date_generation": "2026-08-05T18:41:37+00:00",
  "source": "Collections des musées de France : base Joconde",
  "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
 }

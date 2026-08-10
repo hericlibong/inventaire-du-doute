@@ -2,6 +2,396 @@
 
 Notes au fil de l'eau. Une entrée par séance de travail, les plus récentes en haut.
 
+## 2026-08-08 — Deux corrections sur la fiche d'artiste
+
+Les onglets d'abord, et il a fallu s'y reprendre. La première version faisait une barre :
+trois libellés posés sur un filet qui courait jusqu'au bout de la page. Elle regroupait
+mieux, mais le filet attirait l'œil plus que les commandes et se lisait comme un séparateur
+de section. Verdict de l'utilisateur : ça ne donne toujours pas envie de cliquer. La
+deuxième version supprime le filet et fait ce qu'il fallait faire d'emblée — trois boutons
+contigus, cernés d'une bordure, l'actif sur aplat cobalt.
+
+Un piège s'y cachait : l'onglet actif est en gras, les autres non. Sans précaution, le
+groupe change de largeur à chaque clic et la page tressaute. Chaque bouton réserve donc en
+permanence la place de son propre libellé en gras, par un double invisible. Mesure faite
+après coup : position et dimensions strictement identiques d'un onglet à l'autre.
+
+Le bandeau ensuite. Le portrait et sa légende fixaient toute la hauteur, le texte s'arrêtait
+76 px plus haut, et les onglets démarraient donc en fonction de l'image plutôt que du
+contenu. Le portrait est resserré — 14,5 rem au lieu de 16, l'image 13 au lieu de 15 — et
+son crédit, jusque-là centré sur trois lignes, s'aligne sur le bord gauche de l'image. Les
+deux colonnes se terminent maintenant à la même hauteur, à zéro pixel près.
+
+Le vrai gain est sur mobile. On empilait un portrait pleine largeur, sa légende, puis le
+nom : il fallait descendre près de 400 px pour savoir de qui parlait la fiche. Portrait et
+nom passent côte à côte, les informations reprennent dessous, et les onglets remontent
+d'environ 450 px.
+
+Vérifié sur cinq cas, dont un nom long, un nom d'état civil et un artiste sans portrait —
+pour ces derniers, rien ne change : ni image de remplacement, ni mention d'absence.
+
+## 2026-08-08 — L'accueil, et une contrainte qui n'existait pas
+
+Le texte de la couverture est remplacé. Celui d'avant énonçait que « quand le musée n'est pas
+sûr, il l'écrit », ce qui ne dit ni de quoi ni de qui il s'agit ; l'utilisateur, qui l'avait
+déjà jugé non publiable en août, a fini par dire qu'il ne le comprenait plus lui-même. Le
+nouveau est de lui, et il nomme les choses : le nom d'un artiste peut accompagner une œuvre
+sans que le musée la lui attribue directement.
+
+Le plus instructif n'est pas le texte, c'est ce qui l'empêchait. Depuis trois semaines, le
+code répétait que l'aplat sombre de l'illustration est étroit et n'accepte que trois lignes
+courtes. C'est faux : il fait environ 700 × 620 px sur un écran de 1440, et le texte n'en
+occupait qu'un tiers. La colonne était bornée deux fois, à 34 % et à 23 caractères, et les
+phrases se cassaient en lignes de trois mots. Une règle écrite une fois, jamais revérifiée,
+avait servi de plafond à toutes les réécritures suivantes. C'est exactement ce que la
+correction C2 cherche depuis le 2 août.
+
+Le réglage qui a suivi mérite aussi d'être noté, parce que je m'y suis pris à l'envers
+d'abord. J'ai mesuré la frontière du sombre au pixel près et calé le texte dessus : impeccable
+à 1440, cassé à 1280, où l'image s'affiche entière et où la fin des paragraphes retombait sur
+le clair. Caler du texte sur une forme irrégulière ne tient jamais au-delà du format testé.
+La bonne réponse était de garantir le fond — le voile local déjà utilisé sur mobile, étendu à
+l'ordinateur en deux fois plus léger — et de borner les largeurs en unités d'écran, puisque
+l'aplat est une forme de l'image et suit la fenêtre, pas la police.
+
+Deux détails encore. Les chiffres sortent des phrases et deviennent une ligne autonome, sous
+un filet ; et le séparateur de milliers, une espace fine insécable, se refermait tellement
+dans la police de titre qu'on lisait « 6081 ». La navigation, elle, ne descend plus en
+escalier : trois cartouches sur un axe commun, la hiérarchie portée par la taille et la
+couleur.
+
+« Présentation » s'appelle maintenant « Le projet ». Le libellé disait ce que la page est,
+il dit ce dont elle parle. Le remplacement n'a pas été mécanique : sur la page Méthode,
+« La Présentation au Temple » est un titre d'œuvre.
+
+Les adresses ont suivi dans la foulée. `/presentation` devient `/projet`, et `/les-presque`
+devient `/artistes` — celle-là traînait depuis le début, c'était le nom de travail de la
+rubrique, « les presque », pour les œuvres presque attribuées. Elle n'a jamais rien dit à
+personne, alors que la page s'appelle « Explorer les artistes » depuis trois semaines. Les
+anciennes URL ne disparaissent pas pour autant : trois redirections permanentes, `/echelle`
+comprise, qui pointait sur l'ancienne adresse. Les ancres, elles, se débrouillent seules — un
+fragment n'est jamais envoyé au serveur.
+
+Le nom interne, en revanche, n'a pas été pourchassé. Les fichiers et les identifiants qui
+portent encore « presque » ne s'affichent nulle part ; les renommer aurait fait un gros diff
+et aucune différence.
+
+## 2026-08-07 — Le journal reprend, et le cap change
+
+Ce journal s'était arrêté au 3 août, alors que le travail, lui, a continué quatre jours de
+plus. Voici ce qui s'est passé entre-temps, dans l'ordre, avant d'entrer dans la
+finalisation.
+
+**Les 4 et 5 août, les deux pages de texte ont été reprises.** La Présentation a reçu ses
+chiffres clés, sa section chiffrée en trois zones désignables, et un sommaire par ancres
+devenu un composant partagé avec la Méthode. Trois points en attente ont été tranchés le
+5 : la précaution sous le graphique ne nomme plus de direction de l'écran — règle générale,
+aucun texte publié ne dit hauteur, largeur ni colonne de gauche, parce que l'affichage
+bascule et le texte non ; le bandeau de titre entre dans la colonne de contenu ; le
+glossaire porte l'annotation de chaque zone. La page Méthode a suivi le même chemin, en
+quatre reprises.
+
+**Les 5 et 6 août, la carte des musées a été close.** Une position par musée, stable sur
+toutes les fiches, et surtout un seul espace d'information : le survol annonce, il
+n'informe plus. Les règles ont été remontées dans la charte graphique plutôt que laissées
+dans un récit daté — c'est le premier patron réutilisable, « carte + panneau ».
+
+**Le 6 août, les profils et les portraits.** Les 102 artistes ont leur ligne de repérage,
+73 ont un portrait. Pour les 29 autres, on n'affiche rien : ni image de remplacement, ni
+phrase disant l'absence. J'avais ajouté cette phrase de moi-même sur une fiche témoin ;
+elle a été refusée, et à juste titre — elle n'avait pas été demandée.
+
+**Les 6 et 7 août, les reproductions d'œuvres, et leur point final.** Commons rejoué sur le
+corpus complet, puis Gallica, puis le fonds d'imagerie de Commons : 209 œuvres illustrées.
+La recherche est close, et ce qui la clôt mérite d'être dit — le Louvre n'accorde pas de
+licence ouverte sur ses photographies, Limédia est fermé aux outils, et les deux tiers des
+œuvres sans image sont des dessins ou des photographies anciennes conservés en un seul
+exemplaire par des musées qui ne versent rien. Pour un dessin, il n'existe pas d'autre
+exemplaire.
+
+**La dernière séance a coûté trop cher pour ce qu'elle a rapporté** : près de cinquante
+minutes pour trois images. J'avais pourtant le chiffre avant de commencer — un sondage
+donnait deux résultats sur quinze — et j'ai construit au lieu de m'arrêter et de le dire.
+Règle posée pour la suite : avant toute collecte, sonder, annoncer le rendement attendu,
+et attendre le feu vert.
+
+**Le cap change aujourd'hui.** Le fond est arrêté ; on entre dans la finition, en sept
+phases, jusqu'à la publication. Rien ne rouvre les données, les portraits ni les images.
+
+## 2026-08-07 — Phase 1 : remettre les documents en face du travail
+
+Première phase du plan de finalisation, et la seule sans une ligne d'interface modifiée :
+mettre la roadmap en conformité avec ce qui existe réellement.
+
+Deux tâches étaient faites sans être cochées. La page Méthode, d'abord : refondue le
+31 juillet en six questions, puis reprise quatre fois les 4 et 5 août — la case était
+restée vide parce que le travail avait été mené sur sa propre branche, avant l'ouverture du
+chantier éditorial. La page Présentation ensuite, dont les trois derniers points ont été
+tranchés le 5 août ; ce qu'il lui reste n'est pas un reliquat de la tâche, c'est la
+relecture de confort due à toutes les pages.
+
+Le reste est un tri. Ce qui bloque la publication tient en cinq lignes : le texte de
+l'accueil, le titre du volume, la relecture des pages qui vont être reprises, les réglages
+techniques d'une page publiable — langue du document, favicon, titres —, et la vérification
+finale. Ce qui peut attendre est nommé comme tel, et assumé : la longueur des pages sur
+mobile, la chasse aux règles héritées mal décrites, le contrôle mot à mot de « notice » et
+« œuvre ». Un point n'est ni l'un ni l'autre : le sort de la route `/revisions` est une
+décision à prendre, pas un défaut à corriger.
+
+Relevé technique fait au passage, pour que la phase 5 parte de faits : le document est
+déclaré en anglais, le favicon est encore celui de Svelte, et aucune page ne porte de titre
+propre — le layout n'a qu'une balise d'icône dans son en-tête.
+
+## 2026-08-03 — Audit avant fusion : ce que douze captures ont montré
+
+Point de contrôle 2, mené comme un audit et non comme une validation : les six écrans, en
+grand écran et en 390 px, capturés en entier et regardés un par un.
+
+Le fil éditorial tient. On entre par l'affiche, on comprend le sujet sur une notice réelle,
+on voit comment les artistes ont été choisis, et on entre dans l'outil. Les chiffres sont
+justes et tous lus dans les données. Aucun débordement horizontal nulle part, aucune erreur
+JavaScript pendant les parcours.
+
+Ce n'est pas ce qui compte. Ce que l'audit a trouvé, c'est un défaut qui traverse toute
+l'application et qu'aucune vérification automatique ne pouvait attraper : **le même nombre
+n'a pas le même nom selon l'endroit où on le lit**. Le bandeau d'un artiste annonce
+« 310 œuvres », sa carte « 276 notices concernées », son bloc de copies « 354 notices », et
+la page de présentation compte en notices. Dans le panneau de la carte, les deux mots se
+suivent à une ligne d'intervalle. Or le projet a une règle explicite là-dessus depuis des
+semaines — une notice n'est pas une œuvre, et le site ne prétend pas compter des œuvres.
+Elle n'est pas tenue. Tant qu'elle ne l'est pas, rien ne se publie.
+
+Le reste est du même ordre : des choses qui ne se voient qu'en regardant. Le compteur
+d'artistes a disparu de l'écran sur ordinateur — c'est moi qui l'ai retiré en allégeant la
+page, sans voir qu'il ne restait affiché que sur mobile. L'infobulle de la carte se
+superpose au panneau au moment même où on clique, et recouvre le titre. Le nom du musée se
+répète sous chacune des six œuvres quand on a justement filtré par ce musée. Et sur un fonds
+sans reproductions, la liste devient une colonne de cadres vides.
+
+Onze corrections au registre, dont une bloquante. L'application n'est pas publiable, et le
+dire est le seul résultat utile de cet audit.
+
+## 2026-08-03 — Une page sans marges, et pourquoi je ne l'avais pas vue
+
+La page de présentation s'étalait d'un bord à l'autre de l'écran. Sur un grand moniteur, des
+lignes de texte de deux mille pixels : illisible. C'est moi qui l'avais cassée la veille, en
+basculant la route en « pleine largeur » pour qu'elle gère ses propres gouttières — sans lui
+en donner. Elle n'avait plus de limite du tout.
+
+Ce que je n'avais pas vu, et la raison est instructive : toutes mes vérifications s'étaient
+faites à 1280 px, où la page tient encore par ses seuls paddings. Le défaut n'apparaît qu'au
+delà. Une largeur de contrôle ne suffit pas quand on touche à une enveloppe.
+
+Elle reprend maintenant l'enveloppe d'« Explorer les artistes », à l'identique — même largeur
+maximale, même centrage, mêmes gouttières. Mesuré aux trois largeurs : même bord gauche, même
+point de départ du texte. Passer d'une page à l'autre ne doit pas donner l'impression de
+changer de site.
+
+Au passage, les blocs larges de la page se bornaient chacun où bon leur semblait, et le
+graphique nulle part. Ils ont maintenant une seule limite commune. Le texte courant, lui,
+garde sa mesure étroite : c'est ce qui se lit, pas ce qui s'aligne.
+
+## 2026-08-02 (phase 7) — Quatre entrées, et un déménagement qu'on a failli oublier
+
+La navigation finale tient en quatre mots : Accueil, Présentation, Explorer les artistes,
+Méthode. « Comprendre les mentions » s'en va — sa comparaison chiffrée doublonnait une vue
+déjà abandonnée, son graphique est passé sur la Présentation.
+
+Sauf qu'en relisant la page avant de la supprimer, on est tombé sur ce qu'elle portait
+vraiment : les définitions des huit mentions, une à une. « Sorti de son atelier, pas forcément
+de sa main. » « Son style, auteur inconnu. » Ces phrases n'existaient nulle part ailleurs sur
+le site. Les retirer, c'était enlever au lecteur le seul endroit où il apprend ce que veut
+dire « de son école ». Elles sont maintenant sous le graphique qui les compte, sur la
+Présentation — exactement là où la question se pose.
+
+Le reste est de l'hygiène : l'ancienne adresse redirige au lieu de tomber en erreur, les deux
+liens de la Méthode qui la citaient sont repointés, et le bandeau a perdu son mécanisme
+« à venir ». Ce dernier point n'était pas demandé au pied de la lettre — la consigne disait de
+ne pas afficher les volumes suivants en liens inertes. Mais le code savait le faire, et un
+code qui sait faire une chose interdite finit par la faire.
+
+## 2026-08-02 (phase 6) — L'accueil dit enfin quel volume on ouvre
+
+L'affiche annonçait un chiffre : 24 507 notices prudentes dans Joconde. Vrai, frappant, et
+impossible à comprendre sans trois paragraphes d'explication — sur le versement volontaire des
+musées, sur le fonds de Nice qui en représente un quart, sur ce que « notice » veut dire. Un
+accueil n'a pas à porter ça. Le chiffre est parti sur la page Présentation, qui l'explique là
+où c'est sa place. La couverture porte maintenant les chiffres du volume : 102 artistes,
+6 081 notices.
+
+Et elle dit ce qu'on ouvre — « Volume 1 — Autour des maîtres », sous le titre. Le site en
+publiera d'autres ; autant l'annoncer tout de suite.
+
+Leçon de mise en page, apprise en la vérifiant : la première version du texte était trop
+longue. Deux lignes tombaient hors de l'aplat sombre, sur l'illustration claire, où elles
+devenaient illisibles. Rien à voir avec le goût — la zone sombre de l'affiche est étroite et
+recule vers le bas de la composition. Le texte tient en trois lignes courtes, et le composant
+le dit maintenant en commentaire, pour la prochaine fois.
+
+## 2026-08-02 (phase 5) — Retirer deux paragraphes, gagner une page
+
+L'introduction d'« Explorer les artistes » racontait Joconde et les formulations prudentes,
+au-dessus de la liste. C'était utile tant que rien d'autre ne le faisait. Depuis la page
+Présentation, qui le fait mieux et plus longuement, ces deux paragraphes ne servaient plus
+qu'à retarder l'outil.
+
+Ils sont partis. Restent le titre, une ligne discrète — « Comment ces artistes ont-ils été
+sélectionnés ? » — et la sélection. Le répertoire commence maintenant à 249 pixels du haut :
+sur un écran ordinaire, on voit d'un coup la liste des artistes à gauche, le profil du premier
+à droite, et ses trois onglets. Plus rien à faire défiler avant de commencer.
+
+Une ligne a disparu au passage, celle qui rappelait que le projet ne réattribue aucune œuvre.
+Vérification faite avant de la retirer : le pied de page du site la porte déjà, sur toutes les
+pages, et la Présentation la reprend. Rien n'est perdu — c'était une redite, pas une garantie.
+
+## 2026-08-02 (phase 4) — Une page qui commence par un tableau, pas par un chiffre
+
+La page de présentation existe. Elle ne s'ouvre pas sur 6 081 notices ni sur un graphique :
+elle s'ouvre sur un portrait du Louvre dont le titre dit déjà tout, « Portrait de jeune homme,
+dit autrefois : Portrait de Titus », et sur la ligne que le musée a écrite en face du nom de
+l'auteur — « Rembrandt (1606-1669) (atelier, dit) ». Le nom est là, la réserve aussi. On peut
+partir de là.
+
+Le morceau difficile était ailleurs : expliquer comment ces artistes ont été choisis. Le texte
+qui existait annonçait « un artiste connu et au moins dix notices ». Ce n'était plus vrai
+depuis l'instruction du lot, et ça ne l'avait jamais tout à fait été. Tout est réécrit, en
+trois blocs qui portent chacun leur nom : le seuil, la vérification, et ce que la liste ne dit
+pas. Avec des cas réels dans le deuxième, parce qu'une règle de sélection ne se comprend qu'à
+ses refus : « Peter » et « Prévost », des noms de famille tout seuls ; « Varady A », une
+initiale ; « Pellerin », une imprimerie ; les trois Mellet, nommés ensemble sur chacun de
+leurs dessins. Et le contre-exemple, les frères Duthoit, que le musée nomme côte à côte et qui
+gardent chacun leur fiche — parce que là, on sait qui est qui.
+
+Du prototype de la veille, on n'a repris que ce qui était dit : le générateur d'export, ses
+tests, et une visualisation sur trois. Elle s'appelait « Le corpus » ; elle s'appelle
+maintenant « Les mentions les plus fréquentes », ce qui a l'avantage de vouloir dire quelque
+chose. Les deux autres vues ne sont pas revenues, et ce qui les nourrissait a quitté l'export
+avec elles. Un fichier qui ne contient plus la donnée d'une vue abandonnée est le meilleur
+garde-fou contre son retour.
+
+Dernière chose, apprise à nos dépens : les tests de cet export figeaient quatre chiffres —
+3 668, 3 669, 3 674, 63. Tous faux en vingt-quatre heures. Un test qui fige un effectif ne
+protège rien, il oblige seulement à le réécrire. Ce qui doit tenir, ce sont les relations
+entre les nombres, pas les nombres.
+
+## 2026-08-02 (correction) — Tout le monde a droit à sa carte
+
+Une règle traînait depuis juillet : en dessous de deux musées, pas de carte, une phrase à la
+place. Le raisonnement se tenait à l'époque — un seul point ne montre pas une répartition.
+Il ne tient plus, et il ne tenait déjà pas : cette carte n'a jamais été un graphique de
+répartition, c'est un repère géographique. Un point unique dit quelque chose de très clair,
+« c'est là et nulle part ailleurs », et c'est justement le cas le plus parlant pour les fonds
+locaux entrés hier. Trente-deux artistes sur cent deux étaient privés de carte pour une raison
+qui décrivait mal ce qu'on regarde.
+
+Supprimée. Et l'échelle ne bouge pas : le cadre est calé sur le fond de carte, pas sur les
+points — la carte de Clausel, un point à Troyes, occupe exactement le même espace que celle de
+Le Brun et ses dix-neuf musées.
+
+## 2026-08-02 (phase 3) — La carte cesse d'être un cul-de-sac
+
+On avait une carte qui montrait d'où viennent les notices, et une liste d'œuvres qu'on pouvait
+filtrer par musée. Les deux ne se parlaient pas. C'est fait : on choisit un point, et une
+action propose « Voir les 276 œuvres conservées dans ce musée ». Un clic, on est dans la liste,
+déjà filtrée, sur le même artiste.
+
+Le vrai sujet était de savoir où mettre ce lien. La carte affichait déjà ses chiffres au
+survol, dans une infobulle. Y glisser l'action aurait été le plus simple — et impraticable :
+une infobulle disparaît dès qu'on bouge la souris, on ne peut pas viser un lien dedans. Il a
+donc fallu séparer deux gestes qui se ressemblent : passer sur un point (ça renseigne, ça
+s'efface) et le choisir (ça reste, ça engage). Le panneau qui s'ouvre au flanc porte le nom du
+musée, son compte, ses formules, et les liens.
+
+Effet de bord bienvenu : les points à une seule œuvre étaient jusqu'ici des liens directs vers
+la fiche publique, et les autres n'étaient cliquables nulle part. Deux comportements pour un
+même rond, sans rien qui les distingue à l'œil. Maintenant tous se choisissent pareil, et le
+lien vers la fiche publique attend dans le panneau, où on peut vraiment cliquer dessus.
+
+Reste un détail qui n'en est pas un : trente de nos trente-neuf nouveaux artistes n'ont qu'un
+seul musée, donc pas de carte du tout — une phrase à la place. L'action est là aussi. Sinon on
+aurait construit un chemin réservé aux artistes les mieux dotés.
+
+## 2026-08-02 (phase 2) — Où sont ces œuvres ? Le filtre par musée
+
+L'onglet Œuvres savait dire « quelles œuvres, sous quelle formule ». Il ne savait pas dire
+« où ». C'est fait : une liste déroulante des musées qui conservent une œuvre concernée de
+l'artiste affiché, chacun avec son compte, du plus fourni au moins fourni. Charles Le Brun :
+Louvre 276, Besançon 7, Versailles 4, et seize autres derrière.
+
+La question intéressante n'était pas comment ajouter le filtre, mais ce que devenaient les
+chiffres quand on en met deux. Les puces de mention annonçaient « attribué à 52 » pour
+l'artiste entier. Une fois Besançon choisi, cliquer dessus n'aurait rendu que 6 œuvres. Un
+nombre affiché qui ne tient pas sa promesse, c'est exactement ce que la charte du projet
+interdit. Les deux filtres sont donc emboîtés : le musée délimite, la mention découpe à
+l'intérieur, et les puces se recomptent. À Besançon, Le Brun affiche « Toutes 7 · Attribué à 6
+· Nom suivi d'un ? 1 ». Chaque nombre est vrai.
+
+Deuxième décision, invisible mais structurante : le musée filtré n'appartient pas à l'onglet.
+Il vit dans la page. Parce qu'à la phase suivante, on cliquera un point sur la carte pour
+ouvrir la liste des œuvres de ce musée — et un état rangé dans un onglet démonté serait effacé
+au moment précis où on en a besoin.
+
+Il a fallu pour cela que chaque œuvre porte le code Muséofile de son musée, comme la carte le
+fait déjà. Rapprocher par le nom aurait marché neuf fois sur dix : il y a une trentaine de
+« musée des beaux-arts » en France. Un invariant vérifie maintenant, à chaque export, que les
+œuvres comptées par musée disent la même chose que les points de la carte.
+
+## 2026-08-02 (fin) — Barla sort du cadre, et le site cesse de dire « maîtres »
+
+Les deux questions laissées à l'utilisateur sont tranchées, et les deux réponses disent la
+même chose : un chiffre juste n'est pas forcément un chiffre à sa place.
+
+Barla reste. Il reste dans le registre, avec ses 5 791 notices, son identité vérifiée et ses
+dates. Il reste dans le total national de 24 507, et dans le « hors ce cas » qu'on publie à
+côté depuis un an. Ce qui change, c'est qu'il n'entre pas dans ce volume-ci. Il a fallu créer
+un état pour ça — **« hors périmètre »** — parce qu'aucun des trois existants ne convenait :
+il n'est pas retenu, il n'est pas à examiner, et surtout il n'est pas écarté. L'écart veut
+dire « ce n'est pas quelqu'un » ; ici, c'est quelqu'un, le compte est bon, mais six mille
+planches de champignons notées « attribué à » d'un bout à l'autre d'une collection, ce n'est
+pas une hésitation sur l'auteur d'un tableau. La page Méthode le dit maintenant en toutes
+lettres, avec la précision qui compte : ce n'est pas une erreur repérée, c'est un autre sujet.
+
+L'autre décision est un mot. Le site disait « Explorer les 63 maîtres ». Il dit « Explorer les
+artistes ». Le nombre sort du titre — un effectif dans un titre devient faux au lot suivant —
+et « maîtres » sort de tout ce qui désigne des personnes. Le mot ne disparaît pas pour autant :
+il garde le seul emploi où il est exact, celui des musées eux-mêmes, quand il décrit la
+distance d'une œuvre à une main. L'atelier du maître, son école, son entourage. C'est même le
+cœur du sujet — on n'allait pas le retirer de là.
+
+## 2026-08-02 (suite) — Quarante artistes de plus, et une liste qui change de nature
+
+On avait 234 noms en attente dans le registre, jamais regardés. On en a pris les cinquante
+plus lourds et on les a instruits un par un, dans l'ordre du nombre de notices — pas dans
+l'ordre de la célébrité. C'est tout le sujet : la première liste avait été composée à la main,
+et personne n'avait vérifié qui d'autre, dans la base, portait autant de mentions prudentes.
+
+Quarante ont passé le test, dix ont été écartés avec un motif écrit. Les motifs sont plus
+instructifs que les retenus. « PETER », « BUQUET », « Prévost » : un nom de famille tout seul,
+impossible de dire qui. « VARADY A » : une initiale. « Pellerin » : une imprimerie. « MOGHOLE
+DE MURSHIDABAD » : une école régionale que notre tri automatique avait laissé passer pour
+quelqu'un. Et les trois Mellet, à Vitré, qui portent exactement les mêmes quarante et une
+notices — le musée nomme le père et les deux fils sur chaque dessin, sans trancher. Trois
+profils identiques pour un seul geste : on les a laissés dehors.
+
+Le plus beau cas est celui de Turpin de Crissé. Une notice nomme le père deux fois, le fils
+une fois, et Hubert Robert « d'après ». Le fils a un nom entier, des dates, une identité : il
+entre. Le père n'est appelé que « Père » : il reste dehors, sur la même notice.
+
+Deux choses sont apparues qu'on n'avait pas prévues. D'abord, les notices que deux artistes se
+partagent passent de six à cent cinquante-sept — parce que les musées nomment souvent **deux
+frères** avec un point d'interrogation chacun. Les Duthoit à Amiens, les Passe à Orléans,
+Charles Hugo et Auguste Vacquerie à Orsay. Le doute n'y porte pas sur « est-ce lui ? » mais
+sur « lequel des deux ? ». C'est un sujet à part entière, et il n'était pas visible avec les
+63 premiers.
+
+Ensuite, la liste ne ressemble plus à ce qu'elle était. Trente des quarante nouveaux n'ont
+leur doute écrit que dans un seul musée. Ce ne sont plus des maîtres qu'on retrouve partout,
+ce sont des fonds locaux : Épinal, Troyes, Besançon, Amiens, Laval, Le Puy. Et Barla, à Nice,
+avec ses 5 791 planches, pèse à lui seul la moitié du volume. Il est une personne, la
+vérification est formelle — mais il écrasera n'importe quel graphique. Ces deux points
+remontent à l'utilisateur : ce sont des choix éditoriaux, pas des questions de méthode.
+(Tranchés le jour même — voir l'entrée suivante.)
+
 ## 2026-08-02 — Le site devient un volume, et le prototype passe à la trappe (aux deux tiers)
 
 On avait construit un instrument d'analyse à trois vues sur les artistes déjà publiés. On l'a

@@ -1,0 +1,2672 @@
+{
+ "slug": "alexandre-clausel",
+ "nom": "Alexandre Clausel",
+ "doute": 295,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 295
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "00000082499",
+   "titre": "PORTAIL SCULPTE DU PRIEURE DE SAINT-QUENTIN",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "CLAUSEL Alexandre (attribué)"
+  },
+  {
+   "reference": "M0303004659",
+   "titre": "Troyes, mail de Chaillouet et pont Saint-Jacques",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303006005",
+   "titre": "Troyes, le pont des Fileurs près de la vanne du Pouce",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004619",
+   "titre": "Troyes, maison Mahieu",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004572",
+   "titre": "Troyes, quai des Jacobins pris du pont de la Tannerie",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004656",
+   "titre": "Rosières, château",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004653",
+   "titre": "Troyes, prieuré Saint-Quentin",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004641",
+   "titre": "Troyes, restauration du chevet de la cathédrale Saint-Pierre Saint-Paul",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004621",
+   "titre": "Troyes, tombeau de Paillot de Montabert",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004617",
+   "titre": "Troyes, faubourg de Croncels avec la chapelle Saint-Gilles",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004614",
+   "titre": "Troyes, ancien prieuré de Saint-Quentin",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004657",
+   "titre": "Rosières, château",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303006004",
+   "titre": "Troyes, le pont des Fileurs",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004630",
+   "titre": "Pont-Sainte-Marie et le quartier du Labourat",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004620",
+   "titre": "Troyes, maison de M. Argence",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004618",
+   "titre": "Troyes, maison en bord de rivière",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004615",
+   "titre": "Troyes, hôtel de l'Arquebuse",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004612",
+   "titre": "Chaumières près de Troyes",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004658",
+   "titre": "Rosières, château",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004655",
+   "titre": "Rosières, entrée du château",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004652",
+   "titre": "Troyes, prieuré Saint-Quentin",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004616",
+   "titre": "Troyes, pont sur la Seine",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004611",
+   "titre": "Maison recouverte de lierre",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004610",
+   "titre": "Troyes, la Seine et un moulin",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004609",
+   "titre": "Saint-Julien-les-Villas, rive gauche du déversoir",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004603",
+   "titre": "La seine près de Saint-Julien-les-Villas ?",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004600",
+   "titre": "Troyes, moulin",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303007293",
+   "titre": "Rosières, château",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004495",
+   "titre": "Troyes, la Seine à l'abreuvoir du pont Saint-Jacques",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004484",
+   "titre": "Troyes, arbres du passage du Saut Périlleux",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004480",
+   "titre": "Troyes, le canal de Nervaux et le moulin de la Tour, boulevard Danton",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303007279",
+   "titre": "Troyes, tombeau de Paillot de Montabert",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303007272",
+   "titre": "Troyes, le passage du Noyer-aux-Enfants après le déblai des terres, effet de jour",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303007270",
+   "titre": "Troyes, une allée du mail de Chaillouet",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004472",
+   "titre": "Troyes, le prieuré Saint-Quentin et la cathédrale",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004471",
+   "titre": "Troyes, prieuré Saint-Quentin",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303007268",
+   "titre": "Troyes,  grand orme du pont Saint-Dominique, effet d'été",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303007264",
+   "titre": "Troyes, maisons au bord de la Seine, près de l'école de Natation",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004498",
+   "titre": "Troyes, la route de Chaillouet en venant du faubourg Saint-Jacques",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004494",
+   "titre": "Troyes, la Seine à l'abreuvoir du pont Saint-Jacques",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004493",
+   "titre": "Troyes, grands ormes près du pont Saint-Jacques",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004491",
+   "titre": "Troyes, allée de grands platanes près du pont Saint-Jacques",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004482",
+   "titre": "Troyes, le Meldançon au fond l'église Saint-Nizier",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004481",
+   "titre": "Troyes, le ru de Nervaux le long de la rue Boucher de Perthes",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303007277",
+   "titre": "Troyes, bord de Seine arboré",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303007276",
+   "titre": "Troyes, l'hôtel Petit-Camusat, maison Greau et un puits",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004479",
+   "titre": "Troyes, arbres du fossé près de l'église Saint-Nicolas",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004478",
+   "titre": "Troyes, emplacement du rempart détruit près de l'église Saint-Nicolas",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004475",
+   "titre": "Troyes, vue du canal quai Dampierre",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004470",
+   "titre": "Troyes, la place du Préau",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303007266",
+   "titre": "Troyes, allée de grands platanes près du pont Saint-Jacques",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004608",
+   "titre": "Saint-Julien-les-Villas : le déversoir",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004607",
+   "titre": "La Seine aux environs de Troyes",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004604",
+   "titre": "Bord de Seine près de Troyes",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004602",
+   "titre": "La Seine à Saint-Julien ?",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303007292",
+   "titre": "Rosières, parc du château",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004492",
+   "titre": "Troyes, les grands ormes près du pont Saint-Jacques",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303007285",
+   "titre": "Sauvageonne, bois sculpté provenant de l'Hôtel du Sauvage à Troyes",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303007281",
+   "titre": "La Seine aux environs de Troyes",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004487",
+   "titre": "Troyes, pont Saint-Jacques et bureau de l'octroi vus du Pied de cochon",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004486",
+   "titre": "Troyes, maisons au bord de la Seine quai de l'Abattoir",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004485",
+   "titre": "Troyes, vue des arbres et passage couvert à l'intérieur de la ville",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004483",
+   "titre": "Troyes, passage couvert du Saut-Périlleux",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303007278",
+   "titre": "Troyes, restauration du chevet de la cathédrale Saint-Pierre Saint-Paul",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303007273",
+   "titre": "Troyes, poterne du pont de la Paix",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004476",
+   "titre": "Troyes, reste de remparts et maisons en bois, boulevard du 14 Juillet, près des tourelles des Moulins-Neufs",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004473",
+   "titre": "Troyes, le moulin du Meldançon",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303006229",
+   "titre": "Troyes, tourelles de Croncels et mail des Blanchisseurs",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303007265",
+   "titre": "Troyes, maisons au bord de la Seine, près de l'école de Natation",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004606",
+   "titre": "La Seine près de Saint-Julien-les-Villas ?",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004605",
+   "titre": "La Seine aux environs de Troyes",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004601",
+   "titre": "Saint-Julien-les-Villas, déversoir",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303007291",
+   "titre": "Rosières, parc du château",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004499",
+   "titre": "Troyes, le pont Gournay près du pont de la Paix",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004497",
+   "titre": "Troyes, la Seine et le vieux rempart pris du pont Saint-Jacques",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004496",
+   "titre": "Troyes, la Seine et le mail de Chaillouet près du pont Saint-Jacques",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004490",
+   "titre": "Troyes, tête du pont Saint-Jacques pris du Pied de cochon",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303007284",
+   "titre": "Attila et Saint-Loup, bas-relief en bois sculpté",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303007280",
+   "titre": "Troyes, les Archives départementales près du jardin de la Préfecture",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303007271",
+   "titre": "Troyes, ancienne construction rurale au Pied de Cochon, quartier du Vouldy",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004477",
+   "titre": "Troyes, Halle au blé rue Urbain IV et basilique Saint-Urbain",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004474",
+   "titre": "Troyes, le canal et la cathédrale",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303007269",
+   "titre": "Troyes, la cathédrale vue du cloître Saint-Etienne",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303007263",
+   "titre": "Troyes, maisons au bord de la Seine, près de l'école de Natation",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004503",
+   "titre": "Troyes, poterne du pont de la Paix",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004469",
+   "titre": "Troyes, bassin du canal et place du Préau",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004468",
+   "titre": "Troyes, la cathédrale vue du nord",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303007259",
+   "titre": "Troyes, vue des arbres et passage couvert à l'intérieur de la ville",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303007257",
+   "titre": "Troyes, promenade dans l'ancien fossé entre le théâtre et le fort Chevreuse, actuel jardin de la vallée suisse",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004455",
+   "titre": "Troyes, abreuvoir de Croncels et vue oblique du rempart et des tourelles à l'intérieur de la ville",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004453",
+   "titre": "Troyes, promenade dans l'ancien fossé entre le théâtre et le fort Chevreuse, actuel jardin de la vallée suisse",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004452",
+   "titre": "Troyes, la tour Charlemagne prise du fort Bouy, effet d'automne",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303007247",
+   "titre": "Troyes, emplacement du rempart près de l'église Saint-Nicolas",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303007241",
+   "titre": "Troyes, place du Marché aux Oignons",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004444",
+   "titre": "Troyes, l'église de la Madeleine vue des toits",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004441",
+   "titre": "Troyes, rue Turenne et chevet de l'église Saint-Pantaléon",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004440",
+   "titre": "Troyes, rue Turenne et chevet de Saint-Pantaléon",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303007237",
+   "titre": "Troyes, la rue de la Trinité et la façade de l'hôtel de Mauroy",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303007262",
+   "titre": "Troyes, maisons au bord de la Seine quai de l'Abattoir",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004502",
+   "titre": "Troyes, déversoir du gouffre et le pont de la Paix",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004501",
+   "titre": "Troyes, tour Hercule et pont de la Paix pris du pont du Vouldy",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004463",
+   "titre": "Troyes, abreuvoir dans le faubourg Croncels",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303007256",
+   "titre": "Troyes, le chevet de Saint-Pantaléon, rue Turenne",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303007252",
+   "titre": "Troyes, la cathédrale vue du rempart de Ryoteuse près du cloître Saint-Etienne",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303007250",
+   "titre": "Troyes, la porte du Beffroi avec l'octroi",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004457",
+   "titre": "Troyes, mail de Croncels pris du déversoir de Croncels",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004450",
+   "titre": "Troyes, passage du Saut-Périlleux",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303007249",
+   "titre": "Troyes, reste de remparts et maisons en bois, boulevard du 14 Juillet, près des tourelles des Moulins-Neufs",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303007248",
+   "titre": "Troyes, fossé du rempart près de l'église Saint-Nicolas",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303007240",
+   "titre": "Troyes, porte de l'ancien prieuré de Saint-Quentin",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004446",
+   "titre": "Troyes, le chevet de la basilique Saint-Urbain vu de la place dela Préfecture",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303007261",
+   "titre": "Troyes, maisons au bord de la Seine quai de l'Abattoir",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303007260",
+   "titre": "Troyes, vue des arbres et passage couvert à l'intérieur de la ville",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004500",
+   "titre": "Troyes, usine à gaz de Gournay et les teintureries du Vouldy prises du pont de Gournay",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303007251",
+   "titre": "Troyes, bassin du canal et place du Préau",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004454",
+   "titre": "Troyes, plantation de  frênes du fort Chevreuse à la porte du Beffroi",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303007246",
+   "titre": "Troyes, fossé, pont  et maison de l'octroi de la porte du Beffroi",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004443",
+   "titre": "Troyes, l'église de la Madeleine",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303007239",
+   "titre": "Troyes, pignons de maisons rue de la Trinité",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004504",
+   "titre": "Troyes, pont de la chaussée du Vouldy",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004467",
+   "titre": "Troyes, la cathédrale vue du quartier bas",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004465",
+   "titre": "Troyes, fossé entre le théâtre et le fort Chevreuse pris du fort Chevreuse",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004464",
+   "titre": "Troyes, la caserne de l'Oratoire vue à travers les grands platanes de Croncels",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004462",
+   "titre": "Troyes, quartier Croncels",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004461",
+   "titre": "Troyes, pont de la Tannerie pris en venant de Croncels",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004449",
+   "titre": "Troyes, fossé du rempart près de l'église Saint-Nicolas",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004445",
+   "titre": "Troyes, la basilique Saint-Urbain vue de la place de la Préfecture",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004043",
+   "titre": "Troyes, église Saint-Pantaléon : La Trinité, albâtre du 16e siècle",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004041",
+   "titre": "Scènes de la vie de saint Joachim par Jacques Juliot, predelle de retable, abbaye de Larivour",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004040",
+   "titre": "Troyes, tympan du prieuré Saint-Quentin",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303007238",
+   "titre": "Troyes, la rue du Palais de Justice",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303007234",
+   "titre": "Troyes, la place Saint-Rémi",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303007233",
+   "titre": "Troyes, place du Marché aux Oignons",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004032",
+   "titre": "Deux têtes d'anges, bois sculpté",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004391",
+   "titre": "Troyes, maisons anciennes",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004390",
+   "titre": "Troyes, la cour de l'ancien collège Pithou",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004030",
+   "titre": "Ange tenant un écu lisse vu de profil, bois sculpté",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303007229",
+   "titre": "Troyes, portail latéral de l'église Saint-Nizier",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004429",
+   "titre": "Troyes vue des toits, quartier Saussier",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004427",
+   "titre": "Troyes vue des toits, quartier Saussier",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004420",
+   "titre": "Troyes vu des toits",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004387",
+   "titre": "Troyes, rue de la Cité et arrière de l'église Saint-Nizier",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004025",
+   "titre": "Sainte-Savine, rue principale en travaux",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303005455",
+   "titre": "Troyes, façade de l'église Saint-Martin-es-Vignes",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303005454",
+   "titre": "Troyes, tour Barbazan et passage du Joli-Saut",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303007235",
+   "titre": "Troyes, la rue Passerat et la place du marché aux Trapans",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004439",
+   "titre": "Troyes vue des toits, rue Général de Gaulle, au loin les faubourgs",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004438",
+   "titre": "Troyes vue des toits de l'extérieur du bouchon",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004437",
+   "titre": "Troyes vue des toits avec la cathédrale dans le fond",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004434",
+   "titre": "Troyes vue des toits, quartier Saussier",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004430",
+   "titre": "Troyes vue des toits, quartier Saussier",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004397",
+   "titre": "Troyes, l'église Saint-Urbain vue de la place de la Préfecture",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004394",
+   "titre": "Troyes, hôtel d'Autruy",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004422",
+   "titre": "Troyes vu des toits",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004029",
+   "titre": "Ange tenant un écu lisse vu de face, bois sculpté",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004028",
+   "titre": "Christ bénissant dans une niche, bois sculpté",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004386",
+   "titre": "Troyes, passage du Saut-Périlleux sur le rû Cordé",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004384",
+   "titre": "Troyes, rue Urbain IV",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004024",
+   "titre": "Sainte-Savine, rue principale animée",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004381",
+   "titre": "Troyes, Meldançon vers la Planche-Clément",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004419",
+   "titre": "Troyes, quartier de la Madeleine vu des toits",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004415",
+   "titre": "Troyes, Hôtel de ville côté cour",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303007236",
+   "titre": "Troyes, la rue de la Trinité et la façade de l'hôtel de Mauroy",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303007232",
+   "titre": "Troyes, maison \"A la Tourelle\"",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004435",
+   "titre": "Troyes, église de la Madeleine",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004432",
+   "titre": "Troyes vue d'en haut, église Saint-Jean",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004031",
+   "titre": "Ange vue de profil, bois sculpté",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004421",
+   "titre": "Troyes vu des toits",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004385",
+   "titre": "Troyes, rue Urbain IV",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004023",
+   "titre": "Sainte-Savine, rue principale en sortant de Troyes",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004382",
+   "titre": "Troyes, canal de la Planche-Clément",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004380",
+   "titre": "Troyes, le Meldançon pris depuis la Planche-Clément",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004418",
+   "titre": "Troyes, quartier de la Madeleine vu des toits",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004436",
+   "titre": "Troyes vue des toits",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004433",
+   "titre": "Troyes vue des toits avec l'hôtel des Angoiselles",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004399",
+   "titre": "Troyes, rue Mitantier et portail nord de la cathédrale",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004431",
+   "titre": "Troyes vue des toits avec l'église Saint-Jean",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004396",
+   "titre": "Troyes, le chevet de l'église Saint-Jean",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004395",
+   "titre": "Troyes, chevet de l'église Saint-Jean",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004392",
+   "titre": "Troyes, maisons à pan de bois",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004428",
+   "titre": "Troyes vue des toits, quartier Saint-Jean",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004426",
+   "titre": "Troyes vue des toits, Croncels",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004425",
+   "titre": "Troyes vue des toits, hôtel de Vauluisant",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004424",
+   "titre": "Troyes vue des toits, Saint-Pantaléon et l'hôtel de Vauluisant",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004423",
+   "titre": "Troyes vue des toits et l'église Saint-Pantaléon",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004388",
+   "titre": "Troyes, le Saut-Périlleux sur le rû Cordé à l'interieur de la ville",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004027",
+   "titre": "Sauvageonne,  bois sculpté  provenant de l'Hôtel du Sauvage à Troyes",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004383",
+   "titre": "Troyes, le Meldançon",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004416",
+   "titre": "Troyes, vue de la tour de l'église de la Madeleine",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004413",
+   "titre": "Troyes, console d'angle d'une maison place du Marché au pain",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004414",
+   "titre": "Troyes, la façade de l'hôtel de ville",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004411",
+   "titre": "Troyes, cour de l'hôtel de Mauroy",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004374",
+   "titre": "Troyes, pignons de maisons rue de la Trinité",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004373",
+   "titre": "Troyes, pignons de maisons rue de la Trinité",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004371",
+   "titre": "Troyes, rue de la Trinité",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004011",
+   "titre": "Rosières, parc du château",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004409",
+   "titre": "Troyes, cour intérieure d'une maison",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004404",
+   "titre": "Troyes, école Vincent Malot rue Mitantier",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004403",
+   "titre": "Troyes, maisons anciennes",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004009",
+   "titre": "Rosières, parc du château",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004006",
+   "titre": "Flagellation du Christ, bas-relief",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004365",
+   "titre": "Troyes, la place Saint-Rémi",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004005",
+   "titre": "Le Baiser de Judas, bas-relief",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004003",
+   "titre": "Attila et Saint-Loup, bas-relief (?)",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004001",
+   "titre": "Vierge à l'Enfant, scuplture",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004378",
+   "titre": "Troyes, la rue Général de Gaulle, au loin l'église de la Madeleine",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004410",
+   "titre": "Troyes, cour de l' hôtel de Mauroy",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004377",
+   "titre": "Troyes, la rue Général de Gaulle avec la flèche de l'église de la Madeleine",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004402",
+   "titre": "Troyes, rue de la Monnaie",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004368",
+   "titre": "Troyes, la rue Passerat et la place du marché aux Trapans",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004400",
+   "titre": "Troyes, vue des toits au fond l'église de la Madeleine",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004366",
+   "titre": "Troyes, la place Saint-Rémi",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004361",
+   "titre": "Troyes, hôtel de l'Election",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004379",
+   "titre": "Troyes, la rue Général de Gaulle et au fond, l'église de la Madeleine",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004372",
+   "titre": "Troyes, rue du Palais de Justice",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004010",
+   "titre": "Rosières, parc du château",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004407",
+   "titre": "Troyes, passage du Saut-Périlleux pris de la Vanne du pouce",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004406",
+   "titre": "Troyes, porte d’eau du Saut-Périlleux depuis le pont Saint Quentin et vanne du Pouce à gauche",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004369",
+   "titre": "Troyes, la place du marché aux Trapans",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004008",
+   "titre": "Le repas chez Simon, bas-relief",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004007",
+   "titre": "Scène biblique avec Jésus, bas-relief",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004363",
+   "titre": "Troyes, rue Kléber",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004412",
+   "titre": "Troyes, ange au phylactère à l'angle de la rue des Quinze-Vingt et de la rue du Général de Gaulle",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004376",
+   "titre": "Troyes, rue Urbain IV au fond chevet de l'église Saint-Jean",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004375",
+   "titre": "Troyes, pignons de maisons rue de la Trinité",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004012",
+   "titre": "Rosières, cours d'eau dans le parc du château",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004370",
+   "titre": "Troyes, rue de la Trinité et facade de l'hôtel de Mauroy",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004408",
+   "titre": "Troyes, passage du Saut-Périlleux d'après un ancien dessin",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004405",
+   "titre": "Troyes, passage du Saut-Périlleux",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004401",
+   "titre": "Troyes, vue des toits au fond l'église de la Madeleine",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004367",
+   "titre": "Troyes, la place Saint-Rémi",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004364",
+   "titre": "Troyes, angle de la rue de Molesne",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004362",
+   "titre": "Troyes, Rue Turenne",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004002",
+   "titre": "Attila et Saint-Loup, bas-relief en bois sculpté",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004360",
+   "titre": "Troyes, maison du Chapeau vert",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004000",
+   "titre": "Assomption de la Vierge, sculpture",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004359",
+   "titre": "Troyes, Café des Changes près du Marché au pain",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004353",
+   "titre": "Troyes, hôtel de Chapelaines rue de Turenne",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004349",
+   "titre": "Troyes, hôtel de Marisy",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004346",
+   "titre": "Troyes, maisons à pans de bois rue du Petit-Crédo",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004345",
+   "titre": "Troyes, maison \"A la Tourelle\"",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004340",
+   "titre": "Troyes, escalier d'entrée de l'hôtel de Vauluisant",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004332",
+   "titre": "Troyes, portail sud de l'église Saint-Nicolas",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004331",
+   "titre": "Troyes, église Saint-Nicolas et porte aux Mystres",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004355",
+   "titre": "Troyes, rue de l'Epicerie et place des Quatre Vents",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004343",
+   "titre": "Troyes, maison \"A la Tourelle\"",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004339",
+   "titre": "Troyes, porche latéral de l'église Saint-Urbain",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004337",
+   "titre": "Troyes, porte de l'ancien prieuré de Saint-Quentin",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004335",
+   "titre": "Troyes, portail ouest de l'église Saint-Nizier",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004299",
+   "titre": "Troyes, tour Barbazan au début des démolitions",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004358",
+   "titre": "Troyes, petite place rue Emile Zola",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004356",
+   "titre": "Troyes, place du Marché aux Oignons",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004354",
+   "titre": "Troyes, rue de l'Epicerie prise de la place du Marché aux Oignons",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004352",
+   "titre": "Troyes, hôtel de Chapelaines rue Turenne",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004350",
+   "titre": "Troyes, tourelle de l'hôtel de Marisy",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004348",
+   "titre": "Troyes, hôtel de Marisy",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004342",
+   "titre": "Troyes, porche d'entrée de l'hôtel de Vauluisant",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004341",
+   "titre": "Troyes, entrée de l'hôtel de Vauluisant",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004336",
+   "titre": "Troyes, porte de l'ancien prieuré de Saint-Quentin",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004334",
+   "titre": "Troyes, portail nord de l'église Saint-Nizier",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004333",
+   "titre": "Troyes, portail latéral de l'église Saint-Nizier",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004298",
+   "titre": "Troyes, tour Barbazan au début des démolitions",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004357",
+   "titre": "Troyes, la place du marché au Pain",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004351",
+   "titre": "Troyes, hôtel de Chapelaines",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004347",
+   "titre": "Troyes, maison de l'Orfèvre",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004344",
+   "titre": "Troyes, Rue du Petit-Crédo et place de la Banque",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004291",
+   "titre": "Troyes, porte du Beffroi",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004293",
+   "titre": "Troyes, tour Barbazan et Joli-Saut",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004329",
+   "titre": "Troyes, porte latérale de l'église Saint-Nicolas",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004327",
+   "titre": "Troyes, cloître de Saint-Martin-es-Aires",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004326",
+   "titre": "Troyes, cloître de Saint-Martin-es-Aires",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004325",
+   "titre": "Troyes, cloître de Saint-Martin-es-Aires",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004323",
+   "titre": "Troyes, cloître de Saint-Martin-es-Aires",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004317",
+   "titre": "Troyes, portail de la cathédrale Saint-Pierre Saint-Paul",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004313",
+   "titre": "Troyes, intérieur du rempart près de la tour Hercule",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004312",
+   "titre": "Troyes, les tourelles de la porte de Croncels",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004307",
+   "titre": "Troyes, Courtine, tour Charlemagne et vanne du Pouce",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004306",
+   "titre": "Troyes, la tour Charlemagne",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004300",
+   "titre": "Troyes, tour Barbazan, pont Saint-Georges et pont du Noyer-aux-Enfants",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004297",
+   "titre": "Troyes, la tour Barbazan démantelée",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004320",
+   "titre": "Troyes, portail latéral de l'église de la Madeleine",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004311",
+   "titre": "Troyes, le bouillon de Croncels, vue prise sur le mail de la Grande Tannerie",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004310",
+   "titre": "Troyes, la porte de Croncels",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004301",
+   "titre": "Troyes, la tour Barbazan, le rempart et l'intérieur du Noyer-aux-Enfants",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004660",
+   "titre": "Troyes, mail de Chaillouet",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004330",
+   "titre": "Troyes, porte latérale de l'église Saint-Nicolas",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004292",
+   "titre": "Troyes, la tour Barbazan et le passage du Noyer-aux-Enfants",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004321",
+   "titre": "Troyes, portail latéral de l'église de la Madeleine",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004318",
+   "titre": "Troyes, portail de la cathédrale Saint-Pierre Saint-paul",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004308",
+   "titre": "Troyes, tourelles de Croncels et mail des Blanchisseurs",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004302",
+   "titre": "Troyes, la tour Charlemagne et le Joli-Saut pris du rempart de Nervaux",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d'archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004328",
+   "titre": "Troyes, porte de l'église Saint-Nicolas",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004324",
+   "titre": "Troyes, cloître de Saint-Martin-es-Aires",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004319",
+   "titre": "Troyes, portail nord de la cathédrale Saint-Pierre Saint-Paul",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  },
+  {
+   "reference": "M0303004314",
+   "titre": "Troyes, extérieur du rempart, tour Hercule et pont de la Paix",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "Clausel Alexandre (1802-1884) (attribué à)"
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-08-05T18:41:37+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

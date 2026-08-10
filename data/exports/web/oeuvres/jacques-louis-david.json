@@ -1,0 +1,336 @@
+{
+ "slug": "jacques-louis-david",
+ "nom": "Jacques-Louis David",
+ "doute": 26,
+ "familles": [
+  {
+   "code": "attribue",
+   "notices": 13
+  },
+  {
+   "code": "ecole_de",
+   "notices": 7
+  },
+  {
+   "code": "atelier_de",
+   "notices": 6
+  }
+ ],
+ "oeuvres": [
+  {
+   "reference": "00000082203",
+   "titre": "ANTOINETTE GABRIELLE CHARPENTIER (?-1793)",
+   "musee_code": "M0303",
+   "musee": "musée des beaux-arts et d’archéologie",
+   "ville": "Troyes",
+   "code": "attribue",
+   "extrait": "David (1748-1825) (attribué à)"
+  },
+  {
+   "reference": "000PE000824",
+   "titre": "Bélisaire demandant l'aumône",
+   "musee_code": "M5031",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "David (1748-1825) (attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE000824.jpg",
+    "credit": "Own work",
+    "creator": "Jacques-Louis David",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Louvre_david_belisaire_reconnu.JPG",
+    "verifie_le": "2026-08-06"
+   }
+  },
+  {
+   "reference": "000PE000843",
+   "titre": "Les trois dames de Gand",
+   "musee_code": "M5031",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "attribue",
+   "extrait": "David (1748-1825) (attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE000843.jpg",
+    "credit": "https://i.pinimg.com/564x/3c/ae/4d/3cae4db6b8f73ca4af976add7e886cd8.jpg",
+    "creator": "Presumably Jacques-Louis David",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Les_Trois_Dames_de_Gand_-_J.L._David.jpg",
+    "verifie_le": "2026-08-06"
+   }
+  },
+  {
+   "reference": "000PE000844",
+   "titre": "Portrait du Conventionnel Jean-Baptiste Milhaud",
+   "musee_code": "M5031",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "David (1748-1825) (école)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE000844.jpg",
+    "credit": "Own work Rama",
+    "creator": "Circle of Jacques-Louis David / Attributed to Jean-François Garneray",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Jean-Baptiste_Milhaud_IMG_2318.JPG",
+    "verifie_le": "2026-08-06"
+   }
+  },
+  {
+   "reference": "000PE000841",
+   "titre": "Marat assassiné",
+   "musee_code": "M5031",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "David (1748-1825) (atelier)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE000841.jpg",
+    "credit": "photo Shonagon 2025-05-28",
+    "creator": "Workshop of Jacques-Louis David",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Marat_assassin%C3%A9_-_Jacques-Louis_David_-_Mus%C3%A9e_du_Louvre_Peintures_RF_1945_2.jpg",
+    "verifie_le": "2026-08-06"
+   }
+  },
+  {
+   "reference": "000PE000842",
+   "titre": "Léonidas aux Thermopyles",
+   "musee_code": "M5031",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "atelier_de",
+   "extrait": "David (1748-1825) (atelier)"
+  },
+  {
+   "reference": "000PE009869",
+   "titre": "PORTRAIT DE FAMILLE ; DIT AUTREFOIS MICHEL GERARD, MEMBRE DE L ASSEMBLEE NATIONALE EN 1789, ET SA FAMILLE",
+   "musee_code": "M0770",
+   "musee": "musée de Tessé",
+   "ville": "Le Mans",
+   "code": "ecole_de",
+   "extrait": "David (1748-1825) (école)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/000PE009869.jpg",
+    "credit": "http://1.bp.blogspot.com/_A8XgY7cWYaI/TMMWhyvA6oI/AAAAAAAAGfY/Xqtyo3r88Hc/s1600/Famille-lemans.JPG",
+    "creator": "Circle of Jacques-Louis David",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Le_conventionnel_Michel_G%C3%A9rard_et_sa_famille.jpg",
+    "verifie_le": "2026-08-06"
+   }
+  },
+  {
+   "reference": "000PE011119",
+   "titre": "CAMILLE DESMOULINS, SA FEMME LUCILE ET LEUR FILS ?",
+   "musee_code": "M5077",
+   "musee": "musée national des châteaux de Versailles et de Trianon",
+   "ville": "Versailles",
+   "code": "ecole_de",
+   "extrait": "David (1748-1825) (école)"
+  },
+  {
+   "reference": "000PE016154",
+   "titre": "PORTRAIT DE NAPOLEON",
+   "musee_code": "M0917",
+   "musee": "musée Grobet-Labadié",
+   "ville": "Marseille",
+   "code": "attribue",
+   "extrait": "David (1748-1825) (attribué à)"
+  },
+  {
+   "reference": "000PE016153",
+   "titre": "PORTRAIT DE FEMME",
+   "musee_code": "M0917",
+   "musee": "musée Grobet-Labadié",
+   "ville": "Marseille",
+   "code": "ecole_de",
+   "extrait": "David (1748-1825) (école)"
+  },
+  {
+   "reference": "000PE022029",
+   "titre": "LE TESTAMENT D'EUDAMIDAS",
+   "musee_code": "M0065",
+   "musee": "musée des beaux-arts",
+   "ville": "Bordeaux",
+   "code": "ecole_de",
+   "extrait": "David (1748-1825) (école)"
+  },
+  {
+   "reference": "000PE029798",
+   "titre": "PORTRAIT DU DOCTEUR DELZEUZE ENFANT",
+   "musee_code": "M0729",
+   "musee": "musée des beaux-arts",
+   "ville": "Rouen",
+   "code": "attribue",
+   "extrait": "David (1748-1825) (attribué à)"
+  },
+  {
+   "reference": "00000060782",
+   "titre": "PORTRAIT PRESUME DE MME DE CARAMAN-CHIMAY (EX TALLIEN)",
+   "musee_code": "M0619",
+   "musee": "musée de la Chartreuse",
+   "ville": "Douai",
+   "code": "attribue",
+   "extrait": "David (1748-1825) (attribué à)"
+  },
+  {
+   "reference": "50350016266",
+   "titre": "Trépied",
+   "musee_code": "M5031",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "David (1748-1825) (école)"
+  },
+  {
+   "reference": "50350015927",
+   "titre": "Jeune femme assise, sur une table le visage de face, le corps de profil",
+   "musee_code": "M5031",
+   "musee": "musée du Louvre",
+   "ville": "Paris",
+   "code": "ecole_de",
+   "extrait": "David (1748-1825) (école)"
+  },
+  {
+   "reference": "10480007470",
+   "titre": "Portrait de petite fille",
+   "musee_code": "M1048",
+   "musee": "musée des beaux-arts",
+   "ville": "Chambéry",
+   "code": "atelier_de",
+   "extrait": "David (1748-1825) (atelier)"
+  },
+  {
+   "reference": "000PE024447",
+   "titre": "Portrait de Napoléon",
+   "musee_code": "M0776",
+   "musee": "musée municipal",
+   "ville": "La Roche-sur-Yon",
+   "code": "attribue",
+   "extrait": "David (1748-1825) (attribué à)"
+  },
+  {
+   "reference": "50110001215",
+   "titre": "Baignades à Rome",
+   "musee_code": "M5011",
+   "musee": "musée national Magnin",
+   "ville": "Dijon",
+   "code": "atelier_de",
+   "extrait": "David (1748-1825) (atelier)"
+  },
+  {
+   "reference": "50110000614",
+   "titre": "Portrait présumé de Jean-Germain Drouais ; Portrait de Jean-Germain Drouais (ancien titre)",
+   "musee_code": "M5011",
+   "musee": "musée national Magnin",
+   "ville": "Dijon",
+   "code": "attribue",
+   "extrait": "David (1748-1825) (attribué à)"
+  },
+  {
+   "reference": "50110000317",
+   "titre": "Saint Roch implorant la Vierge pour les pestiférés",
+   "musee_code": "M5011",
+   "musee": "musée national Magnin",
+   "ville": "Dijon",
+   "code": "attribue",
+   "extrait": "David (1748-1825) (peintre, attribué à)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/50110000317.jpg",
+    "credit": "https://www.photo.rmn.fr/archive/19-522101-2C6NU0AXPAOF2.html",
+    "creator": "Jacques-Louis David",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:David_-_Saint_Roch_implorant_la_Vierge_pour_les_pestif%C3%A9r%C3%A9s_(esquisse),_1780.jpg",
+    "verifie_le": "2026-08-06"
+   }
+  },
+  {
+   "reference": "M0289002529",
+   "titre": "Tête de vieillard barbu de trois quarts face vers la droite.",
+   "musee_code": "M0289",
+   "musee": "musée municipal",
+   "ville": "Pithiviers",
+   "code": "attribue",
+   "extrait": "David (1748-1825) (attribué à)"
+  },
+  {
+   "reference": "09630004568",
+   "titre": "Mort d'Hector ; Mort de Germanicus (titre ancien erroné)",
+   "musee_code": "M0963",
+   "musee": "musée de Brou",
+   "ville": "Bourg-en-Bresse",
+   "code": "attribue",
+   "extrait": "David (1748-1825) (attribué à)"
+  },
+  {
+   "reference": "50130000151",
+   "titre": "Portrait d'homme",
+   "musee_code": "M5013",
+   "musee": "musée national du château de Fontainebleau",
+   "ville": "Fontainebleau",
+   "code": "attribue",
+   "extrait": "David (1748-1825) (attribué à)"
+  },
+  {
+   "reference": "M0352002998",
+   "titre": "Etude faite sous le premier Empire, tête de guerrier",
+   "musee_code": "M0353",
+   "musee": "musée de la Grande Saline",
+   "ville": "Salins-les-Bains",
+   "code": "attribue",
+   "extrait": "David (1748-1825) (attribué à)"
+  },
+  {
+   "reference": "04450000139",
+   "titre": "Le bon Samaritain",
+   "musee_code": "M0445",
+   "musee": "Palais-musée des Archevêques de Narbonne",
+   "ville": "Narbonne",
+   "code": "atelier_de",
+   "extrait": "David (1748-1825) (atelier)"
+  },
+  {
+   "reference": "03110005074",
+   "titre": "La mort de Marat (titre attribué) ; Marat expirant (autre titre) ; Marat assassiné (autre titre)",
+   "musee_code": "M0311",
+   "musee": "musée des Beaux-Arts de Reims",
+   "ville": "Reims",
+   "code": "atelier_de",
+   "extrait": "David (1748-1825) (atelier, peintre)",
+   "image": {
+    "statut": "open",
+    "source_type": "wikimedia_commons",
+    "url": "oeuvres/03110005074.jpg",
+    "credit": "Musée des Beaux-Arts, Reims",
+    "creator": "Jacques-Louis David",
+    "licence": "Public domain",
+    "licence_url": "",
+    "source": "https://commons.wikimedia.org/wiki/File:DAVID_Jacques-Louis_(Atelier_de)_La_Mort_de_Marat_Huile_sur_toile.jpg",
+    "verifie_le": "2026-08-06"
+   }
+  }
+ ],
+ "version_donnee": "2026-07-01",
+ "date_generation": "2026-08-05T18:41:37+00:00",
+ "source": "Collections des musées de France : base Joconde",
+ "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
+}

@@ -1,0 +1,12 @@
+{
+ "date": "2026-08-06",
+ "perimetre": "œuvres sans image dont Joconde nomme Pellerin comme éditeur",
+ "oeuvres_examinees": 355,
+ "par_etat": {
+  "refusee": 255,
+  "introuvable": 86,
+  "exacte": 14
+ },
+ "regle": "un titre porté par plusieurs notices du musée n'est jamais apparié : l'exemplaire visé serait indéterminé",
+ "mention_obligatoire": "autre exemplaire du même tirage (BnF / Gallica)"
+}

@@ -25,6 +25,7 @@ Usage : uv run python src/build_artistes.py  (~2 min)
 """
 
 import json
+import math
 import re
 import unicodedata
 from collections import Counter, defaultdict
@@ -216,7 +217,130 @@ MAITRES = [
     ("Le Pérugin",          ["VANNUCCI PIETRO", "PERUGIN"], []),
     # Alessandro Filipepi, dit Sandro Botticelli.
     ("Botticelli",          ["BOTTICELLI", "FILIPEPI"], []),
+
+    # -- LOT 2 DU 2026-08-02 : 40 personnes retenues sur les 50 formes du registre
+    # qui portaient au moins 25 notices prudentes et restaient « à instruire ».
+    # Instruction par notices décroissantes, jamais par notoriété. Le test
+    # d'identité tient en trois questions, toutes tranchées sur la source :
+    #   1. le musée écrit-il un prénom entier (ni initiale, ni « Père », ni nom nu) ?
+    #   2. un homonyme porte-t-il des notices prudentes sous une graphie que les
+    #      motifs prendraient ?
+    #   3. les graphies rapprochées portent-elles les mêmes dates de vie ?
+    # Les dix formes écartées et leur motif : registre_maitres.py (ÉCARTÉS
+    # INSTRUITS) et docs/donnees.md, 2026-08-02.
+    #
+    # Jean-Baptiste Barla est instruit et identifié, mais il est HORS PÉRIMÈTRE de
+    # ce volume — voir HORS_PERIMETRE, plus bas.
+    ("Alexandre Clausel",   ["CLAUSEL ALEXANDRE"], []),
+    # Charles Pierre Joseph Normand : les autres Normand de la base (Achille,
+    # Augustin, Michel, Charles Victor) ne portent aucune notice prudente et le
+    # motif complet ne les prend pas.
+    ("Charles Normand",     ["NORMAND CHARLES PIERRE JOSEPH"], []),
+    ("Léon Tirode",         ["TIRODE LEON"], []),
+    ("Louis Morinet",       ["MORINET LOUIS GEORGES ALBERT"], []),
+    # Giacinto seul : Giovanni Battista Calandrucci écarté par la précision.
+    ("Giacinto Calandrucci", ["CALANDRUCCI GIACINTO"], []),
+    ("Georges Ferdinand Bigot", ["BIGOT GEORGES-FERDINAND",
+                                 "BIGOT GEORGES FERDINAND"], []),
+    # Léon Fort : Siméon Fort et Louis Fort sont d'autres hommes, sans notice
+    # prudente ; « FORT-VOUILLON » est une manufacture.
+    ("Léon Fort",           ["FORT LEON"], []),
+    # Les frères Duthoit, d'Amiens : le musée écrit leurs dates (Louis 1807-1874,
+    # Aimé 1803-1869) et les nomme ENSEMBLE sur 93 de leurs notices — l'hésitation
+    # porte sur lequel des deux. Deux personnes, deux profils, une part commune
+    # que l'union des notices ne compte qu'une fois.
+    ("Louis Duthoit",       ["DUTHOIT LOUIS"], []),
+    ("Aimé Duthoit",        ["DUTHOIT AIME"], []),
+    # « PINOT Charles François » et « PINOT Charles » portent les mêmes dates
+    # (1817-1874) et ne partagent aucune notice : deux graphies d'un seul imagier.
+    # L'imagerie « Pinot & Sagaire » est une raison sociale, laissée dehors.
+    ("Charles François Pinot", ["PINOT CHARLES"], []),
+    ("André Marie Florentin Giraud", ["GIRAUD ANDRE MARIE FLORENTIN",
+                                      "GIRAUD MARIE ANDRE FLORENTIN"], []),
+    ("Auguste Vacquerie",   ["VACQUERIE AUGUSTE"], []),
+    ("François Georgin",    ["GEORGIN FRANCOIS"], []),
+    ("Louis Verjat",        ["VERJAT LOUIS VICTOR EMILE"], []),
+    # Peter Hawke : John Hawke n'est pas lui.
+    ("Peter Hawke",         ["HAWKE PETER"], []),
+    # Auguste seul : Ludovic Alleaume, son frère, est écarté par la précision.
+    ("Auguste Alleaume",    ["ALLEAUME AUGUSTE"], []),
+    ("Antoine Gabriel Willermet", ["WILLERMET ANTOINE GABRIEL"], []),
+    # Le fils, Lancelot-Théodore (1782-1859). Le père, que le musée n'appelle que
+    # « TURPIN DE CRISSE Père », reste dehors : son identité n'est pas écrite, et
+    # 34 de ses 35 notices nomment déjà le fils.
+    ("Turpin de Crissé",    ["TURPIN DE CRISSE LANCELOT THEODORE",
+                             "TURPIN DE CRISSE LANCELOT-THEODORE"],
+                            ["HENRI ROLAND"]),
+    # Le fils de Victor Hugo, photographe à Jersey ; le père (2 504 mentions
+    # certaines) et Georges Victor Hugo sont écartés par la précision du motif.
+    ("Charles Hugo",        ["HUGO CHARLES"], []),
+    ("Gustave Lancelot",    ["LANCELOT GUSTAVE"], []),
+    ("Charles du Ry",       ["RY CHARLES DU"], []),
+    ("Odilon Roche",        ["ROCHE ODILON"], []),
+    # Frans Hogenberg, sous ses trois graphies ; Nicolas, Abraham et Remigius
+    # Hogenberg sont d'autres graveurs de la famille.
+    ("Frans Hogenberg",     ["HOGENBERG FRANCOIS", "HOGENBERG FRANS",
+                             "HOGENBERG FRANZ"], []),
+    # « Charles Eugène », « Eugène » et « Charles » Ensfelder portent les mêmes
+    # dates (1836-1876) et ne partagent aucune notice : un seul dessinateur.
+    ("Charles Eugène Ensfelder", ["ENSFELDER"], []),
+    # Nicolaus seul : Martin Hoffmann est un autre homme, avec ses propres notices.
+    ("Nicolaus Hoffmann",   ["HOFFMANN NICOLAUS"], []),
+    ("Nicasius Bernaerts",  ["BERNAERTS NICASIUS"], []),
+    # Les deux Crispin de Passe, le père et le fils, distingués par le chiffre
+    # que Joconde écrit après le prénom. Comme les Duthoit, ils sont nommés
+    # ensemble sur 28 notices : le musée hésite entre les deux générations.
+    ("Crispin de Passe l'Ancien", ["PASSE CRISPIN I VAN DE",
+                                   "VAN DE PASSE CRISPIN I"], []),
+    ("Crispin de Passe le Jeune", ["PASSE CRISPIN II VAN DE",
+                                   "VAN DE PASSE CRISPIN II"], []),
+    ("Amable Louis Crapelet", ["CRAPELET AMABLE LOUIS",
+                               "CRAPELET LOUIS AMABLE"], []),
+    ("Auguste Beuret",      ["BEURET AUGUSTE"], []),
+    ("Jean-Charles François Leloy", ["LELOY JEAN CHARLES FRANCOIS",
+                                     "LELOY JEAN-CHARLES-FRANCOIS"], []),
+    ("Joseph Hussenot",     ["HUSSENOT JOSEPH"], []),
+    # Antonio seul : son frère Piero del Pollaiuolo est écarté par la précision.
+    ("Antonio del Pollaiuolo", ["POLLAIUOLO ANTONIO"], []),
+    ("Henry Hennault",      ["HENNAULT HENRY"], []),
+    ("Israël Henriet",      ["HENRIET ISRAEL", "ISRAEL HENRIET"], []),
+    # René Ackermann : Rudolf, Charles et Johann Adam Ackermann sont d'autres
+    # hommes ; « Ackermann & Co » est une raison sociale.
+    ("René Ackermann",      ["ACKERMANN RENE"], []),
+    ("Louis Hertig",        ["HERTIG LOUIS"], []),
+    ("Colijn de Coter",     ["COLYN DE COTER", "COTER COLIJN DE",
+                             "DE COTER COLIJN"], []),
+    # Jacques-Louis David. Ses notices prudentes portent toutes « David
+    # (1748-1825) », donc le pivot « DAVID » nu : seule l'égalité stricte le prend
+    # sans ramasser David d'Angers, Gérard David ou Jérôme David. Ambiguïté
+    # résiduelle assumée et documentée : « David (éditeur) », une trentaine de
+    # mentions CERTAINES, tombe aussi dans le motif — aucune notice prudente.
+    ("Jacques-Louis David", ["=DAVID", "DAVID JACQUES-LOUIS",
+                             "DAVID JACQUES LOUIS", "DAVID JACQUE-LOUIS"], []),
 ]
+
+# Personnes instruites, identifiées, correctement comptées — et HORS PÉRIMÈTRE du
+# volume 1 (décision utilisateur, 2026-08-02).
+#
+# Ce ne sont PAS des faux positifs, et il faut le dire à chaque fois qu'on en
+# parle : l'identité est établie, le comptage est juste, les notices restent dans
+# les statistiques nationales (24 507), qui ne dépendent pas de cette table. Elles
+# sortent du volume parce que leur fonds n'entre pas dans son angle éditorial —
+# les attributions artistiques.
+#
+# La quatrième valeur est le motif. Il est publiable tel quel, comme les motifs
+# d'écart : une sortie de périmètre non motivée serait une sélection opaque.
+HORS_PERIMETRE = [
+    ("Jean-Baptiste Barla", ["BARLA JEAN-BAPTISTE"], [],
+     "fonds botanique sériel, concentré dans un seul musée, hors de l'angle "
+     "éditorial du volume consacré aux attributions artistiques"),
+]
+
+# Toutes les personnes instruites, périmètre compris ou non. Sert au registre,
+# qui doit prouver que Barla a bien été identifié et compté — jamais aux exports
+# du volume, qui ne connaissent que MAITRES.
+TOUTES_PERSONNES = MAITRES + [(n, i, e) for n, i, e, _ in HORS_PERIMETRE]
+MOTIF_HORS_PERIMETRE = {n: m for n, _i, _e, m in HORS_PERIMETRE}
 
 LIBELLES_NIVEAUX = {1: "Presque lui", 2: "Autour de lui", 3: "Son style, sans lui"}
 LIBELLE_FAMILLE = {f.code: f.libelle for f in markers.FAMILLES}
@@ -257,14 +381,31 @@ def _mot_entier(motif: str, pivot: str) -> bool:
     « NOM Prénom » : sans cette ancre, « Raphaël » se rattache à Raphaël Collin ou
     Anton Raphael Mengs, et « Michel-Ange » à Corneille Michel-Ange
     (donnees.md, 2026-07-21). L'ancre n'est posée que là où elle est nécessaire :
-    « ÉCOLE DE PRIMATICCIO » doit rester pris, le nom n'y est pas en tête."""
+    « ÉCOLE DE PRIMATICCIO » doit rester pris, le nom n'y est pas en tête.
+
+    Un motif préfixé de « = » exige le nom TOUT ENTIER, rien de plus (lot 2,
+    2026-08-02). Il ne sert qu'à un cas, mais un cas qu'aucun autre outil ne
+    résout : Jacques-Louis David signe ses notices « David (1748-1825) », soit
+    le pivot « DAVID » tout court. L'ancre ne suffit pas — elle prendrait aussi
+    David d'Angers, Gérard David, Jérôme David et une soixantaine d'autres, et
+    il faudrait les nommer un par un pour les écarter. L'égalité stricte prend
+    le nom nu et lui seul. Les dates, qui distingueraient les homonymes, sont
+    entre parenthèses : la normalisation les a déjà retirées."""
+    if motif.startswith("="):
+        return pivot == motif[1:]
     if motif.startswith("^"):
         return re.match(rf"{re.escape(motif[1:])}\b", pivot) is not None
     return re.search(rf"\b{re.escape(motif)}\b", pivot) is not None
 
 
-def _trouve_maitre(pivot: str):
-    for nom, inclus, exclus in MAITRES:
+def _trouve_maitre(pivot: str, table=None):
+    """Le nom de la personne que désigne ce pivot, ou None.
+
+    `table` vaut MAITRES par défaut — les personnes DU VOLUME. Le registre passe
+    TOUTES_PERSONNES pour retrouver aussi celles qui sont hors périmètre : il doit
+    prouver qu'elles ont été identifiées et comptées, pas les faire disparaître.
+    """
+    for nom, inclus, exclus in (MAITRES if table is None else table):
         if any(_mot_entier(e, pivot) for e in exclus):
             continue
         if any(_mot_entier(i, pivot) for i in inclus):
@@ -322,7 +463,7 @@ def _exemple(ref, titre, musee, ville, segment) -> dict:
     }
 
 
-def _oeuvre(ref, titre, musee, ville, famille, segment) -> dict:
+def _oeuvre(ref, titre, code, musee, ville, famille, segment) -> dict:
     """Une œuvre de doute pour l'onglet « Œuvres » : le nécessaire pour la lister
     et ouvrir sa fiche POP. `code` est la famille RETENUE par le pipeline (le
     front ne re-classe jamais) ; `extrait` est le segment publié tel quel par le
@@ -330,6 +471,13 @@ def _oeuvre(ref, titre, musee, ville, famille, segment) -> dict:
     return {
         "reference": ref,
         "titre": titre if isinstance(titre, str) else None,
+        # `musee_code` est le code Muséofile — la CLÉ du musée, celle que porte
+        # déjà la carte du profil (`musees_doute`). Elle est exportée depuis le
+        # 2026-08-02 pour que le filtre par musée de l'onglet « Œuvres » et les
+        # points de la carte désignent le même objet : deux noms de musée
+        # identiques dans deux villes ne doivent jamais se confondre, et le lien
+        # carte → œuvres ne doit pas se rejouer par rapprochement de libellés.
+        "musee_code": code if isinstance(code, str) and code.strip() else None,
         "musee": musee if isinstance(musee, str) else None,
         "ville": ville if isinstance(ville, str) else None,
         "code": famille,
@@ -350,7 +498,53 @@ def _lat_lon(valeur):
     return round(lat, 5), round(lon, 5)
 
 
-def resout_reference(auteur: str, en_beaux_arts: bool = True) -> dict:
+def coord_du_musee(comptes: dict) -> str | None:
+    """Coordonnée retenue pour UN musée, à partir de toutes celles que ses notices
+    publient (valeur brute -> nombre de notices).
+
+    Joconde donne parfois plusieurs positions sous le même code Muséofile : 59
+    musées sur 548 au 2026-08-05, dont 11 avec plus de 100 km d'écart. Le musée
+    Goya de Castres est publié 1 114 fois dans le Tarn et 143 fois dans la Manche.
+    Tant qu'on retenait la première rencontrée, le point sautait d'une fiche à
+    l'autre selon l'ordre du fichier — et pouvait tomber sur la position minoritaire.
+
+    Règle, sans source extérieure : on regroupe d'abord les positions VOISINES
+    (moins de 15 km), on garde la grappe qui porte le plus de notices, puis dans
+    celle-ci la position la plus fréquente. Le regroupement est nécessaire : le
+    musée Condé est publié 6 567 fois dans le Lot-et-Garonne, contre 4 348 + 2 701
+    fois à Chantilly sous deux écritures — la simple majorité l'aurait déplacé.
+    """
+    points = [(v, n, _lat_lon(v)) for v, n in comptes.items()]
+    points = [(v, n, p) for v, n, p in points if p[0] is not None]
+    if not points:
+        return None
+
+    grappes: list[list] = []
+    for v, n, (lat, lon) in sorted(points, key=lambda x: -x[1]):
+        for g in grappes:
+            if _distance_km(lat, lon, g[0][2], g[0][3]) < 15:
+                g.append((v, n, lat, lon))
+                break
+        else:
+            grappes.append([(v, n, lat, lon)])
+
+    meilleure = max(grappes, key=lambda g: sum(n for _v, n, _la, _lo in g))
+    return max(meilleure, key=lambda e: e[1])[0]
+
+
+def _distance_km(lat1, lon1, lat2, lon2) -> float:
+    """Distance orthodromique, en kilomètres. Sert au seul regroupement des
+    positions d'un même musée — aucune distance n'est publiée."""
+    rayon = 6371
+    dlat, dlon = math.radians(lat2 - lat1), math.radians(lon2 - lon1)
+    a = (math.sin(dlat / 2) ** 2
+         + math.cos(math.radians(lat1)) * math.cos(math.radians(lat2))
+         * math.sin(dlon / 2) ** 2)
+    return 2 * rayon * math.asin(math.sqrt(a))
+
+
+def resout_reference(auteur: str, en_beaux_arts: bool = True,
+                     table=None) -> dict:
     """Ce qu'UNE référence dit de chaque maître, résolu en un seul verdict.
 
     Renvoie {maître: (categorie, famille, segment)} — famille et segment valent
@@ -358,13 +552,15 @@ def resout_reference(auteur: str, en_beaux_arts: bool = True) -> dict:
     `Auteur` peut nommer le même homme dans plusieurs segments, sous plusieurs
     graphies et avec plusieurs formules ; la référence ne pèse qu'une fois par
     maître, dans la catégorie la plus prudente et la famille la plus explicite.
-    Isolée de main() pour être testable sans le CSV (tests/test_artistes.py)."""
+    Isolée de main() pour être testable sans le CSV (tests/test_artistes.py).
+    `table` est passée telle quelle à `_trouve_maitre` : le registre y met
+    TOUTES_PERSONNES, les exports du volume laissent le défaut."""
     vus = {}  # maître -> {categories: set, familles: {code: segment}, copie: segment}
     for segment in auteur.split(";"):
         segment = segment.strip()
         if not segment:
             continue
-        nom = _trouve_maitre(_pivot(segment))
+        nom = _trouve_maitre(_pivot(segment), table)
         if nom is None:
             continue
         categorie, famille = markers.famille_segment(segment, en_beaux_arts)
@@ -435,6 +631,17 @@ def _ecrire_oeuvres(artistes: list, agg: dict, meta: dict) -> int:
         # ajoutées que dans la branche « doute »), on le réaffirme ici.
         assert "d_apres" not in obtenu and "copie" not in obtenu, \
             f"une copie s'est glissée dans la liste ({art['nom']})"
+        # Le filtre par musée de l'onglet « Œuvres » compte les œuvres ; la carte
+        # du profil affiche `musees_doute`. Les deux doivent dire la même chose,
+        # musée par musée, sinon le lecteur lit deux chiffres différents pour le
+        # même point (invariant posé le 2026-08-02, phase 2).
+        par_musee = Counter(o["musee_code"] for o in oeuvres if o["musee_code"])
+        attendu_musees = {m["code"]: m["doute"] for m in art["musees_doute"]}
+        assert dict(par_musee) == attendu_musees, \
+            f"œuvres par musée ≠ carte du profil ({art['nom']})"
+        assert sum(1 for o in oeuvres if not o["musee_code"]) == \
+            art["doute_sans_musee"], \
+            f"œuvres sans musée ≠ doute_sans_musee ({art['nom']})"
 
         fichier = {
             "slug": art["slug"],
@@ -469,6 +676,11 @@ def main() -> None:
     fam_refs = defaultdict(set)      # famille -> références distinctes
     niv_refs = defaultdict(set)      # niveau  -> références distinctes
     partagees = {}                   # référence -> [(maître, famille), …]
+    # Positions publiées pour chaque musée, sur TOUTE la base : code Muséofile ->
+    # {valeur brute du champ « coordonnees » -> nombre de notices}. Comptées avant
+    # tout filtre, pour que le choix ne dépende ni du maître ni de l'ordre de
+    # lecture (voir coord_du_musee).
+    coords_musee = defaultdict(Counter)
 
     morceaux = pd.read_csv(CHEMIN_CSV, sep="|", usecols=COLONNES, dtype=str,
                            chunksize=TAILLE_MORCEAU)
@@ -479,6 +691,8 @@ def main() -> None:
             morceau["Code_Museofile"], morceau["Nom_officiel_musee"],
             morceau["Ville"], morceau["Titre"], morceau["coordonnees"],
         ):
+            if isinstance(code, str) and code.strip() and isinstance(coord, str):
+                coords_musee[code][coord] += 1
             if not isinstance(aut, str):
                 continue
             # Une référence, un poids, par maître : la résolution (catégorie la
@@ -540,9 +754,21 @@ def main() -> None:
                     # a déjà résolu la référence en UNE famille) : pas de doublon
                     # possible, la référence servira de clé de liste côté front.
                     a["oeuvres"].append(
-                        _oeuvre(ref, titre, musee, ville, famille, segment))
+                        _oeuvre(ref, titre, code, musee, ville, famille,
+                                segment))
         print(f"\r  {total:,} notices lues".replace(",", " "), end="", flush=True)
     print()
+
+    # UNE position par musée, valable pour toutes les fiches (2026-08-05). Le point
+    # d'un musée ne doit pas dépendre de l'artiste qu'on regarde ni de l'ordre du
+    # fichier : la règle est dans coord_du_musee.
+    retenues = {code: coord_du_musee(comptes)
+                for code, comptes in coords_musee.items()}
+    ecartes = sum(1 for code, comptes in coords_musee.items()
+                  if len(comptes) > 1 and retenues[code] != comptes.most_common(1)[0][0])
+    print(f"  {len(coords_musee)} musées géolocalisés, "
+          f"{sum(1 for c in coords_musee.values() if len(c) > 1)} à positions multiples "
+          f"({ecartes} où la plus fréquente n'a pas été retenue)")
 
     artistes = []
     for nom, *_ in MAITRES:
@@ -556,7 +782,10 @@ def main() -> None:
             fam_liste = [{"code": c, "notices": md["familles"][c]}
                          for c in markers.DOUTE_PAR_NIVEAU if c in md["familles"]]
             niveaux = [md["niveaux"][1], md["niveaux"][2], md["niveaux"][3]]
-            lat, lon = _lat_lon(md["coord"])
+            # Position du musée : la même sur toutes les fiches, choisie une fois
+            # pour toutes sur l'ensemble de ses notices (coord_du_musee). Repli sur
+            # la position rencontrée si le code n'a rien donné.
+            lat, lon = _lat_lon(retenues.get(code, md["coord"]))
             # Invariants de comptage par musée : aucune ambiguïté possible.
             assert sum(f["notices"] for f in fam_liste) == md["doute"], \
                 f"familles ≠ doute ({nom} / {code})"

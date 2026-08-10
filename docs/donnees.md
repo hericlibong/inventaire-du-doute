@@ -3,6 +3,275 @@
 Tout ce qu'on apprend sur la base Joconde au fil du projet : structure, pièges,
 chiffres vérifiés. Chaque constat indique sa date et comment il a été obtenu.
 
+## Les inscriptions relevées par les musées portent le numéro de planche (2026-08-07)
+
+Constat fait en cherchant des reproductions pour les artistes du lot 2. Le champ
+`Precisions_inscriptions` contient le **relevé de ce qui est imprimé sur l'objet** :
+mentions d'imprimeur, position sur la feuille, texte des légendes — et, sur l'imagerie
+populaire, le numéro de la planche.
+
+| Sur les 465 estampes du corpus | |
+|---|---|
+| Numéro de planche relevé | **410** |
+| Sans numéro | 55 |
+
+La graphie varie autant que les feuilles : « N°551 », « N.°551 », « N° 1883 », « N.°.23. ».
+Le point se glisse aussi bien avant le degré qu'après — un extracteur qui ne prévoit que
+`N°` en manque la majorité (erreur commise et corrigée le jour même).
+
+**Le numéro appartient à une maison, pas à une image.** Pellerin, Pinot-Sagaire,
+Olivier-Pinot et Gangel & Didion numérotent chacun leur série : le n° 102 des uns n'a rien
+à voir avec le n° 102 des autres. Il départage donc des candidates trouvées par le titre,
+mais ne désigne jamais une image à lui seul.
+
+**Le même titre ne désigne pas la même planche.** Une image populaire se réédite pendant un
+siècle. Trois notices du musée de l'Image s'intitulent « Notre-Dame de Bon-Secours » : n° 1883
+chez Pellerin, n° 1119 chez Olivier-Pinot, n° 102 chez Pinot-Sagaire. Et la mention
+d'imprimeur date le tirage : « Fabrique de PELLERIN, Imprimeur-Libraire » précède 1860,
+« PELLERIN & Cie » lui succède.
+
+**Le fonds du musée est tardif, les fonds numérisés sont anciens.** C'est ce qui explique
+l'échec des rapprochements. Relevé sur les notices du musée de l'Image :
+
+| Mention d'imprimeur relevée par le musée | Notices |
+|---|---|
+| Pellerin & Cie (après 1860) | **213** |
+| Pinot, Pinot-Sagaire, Olivier-Pinot | 47 |
+| Fabrique de Pellerin (avant 1860) | 33 |
+
+Les planches que la BnF et Commons ont numérisées sont, elles, majoritairement des tirages
+anciens. Les deux fonds se croisent peu, et rarement sur la même édition.
+
+**Le musée conserve souvent plusieurs exemplaires de la même planche** : sept notices pour
+le n° 771, six pour le n° 774, cinq pour le n° 770. Quand titre et numéro coïncident sur
+plusieurs notices, aucune reproduction ne peut leur être rattachée — on ne saurait pas
+laquelle elle montre.
+
+## Aucun musée du lot 2 n'a versé ses collections en licence ouverte (2026-08-07)
+
+Vérification menée sur les onze musées qui portent les plus gros blocs d'œuvres sans
+reproduction, en cherchant leurs catégories sur Wikimedia Commons. Aucun versement
+institutionnel : les catégories comptent quelques dizaines de fichiers, essentiellement des
+photographies de bâtiments et quelques œuvres célèbres. À titre de comparaison, un tel
+versement existe ailleurs — les Musées de la Haute-Saône ont publié leurs collections sur
+Commons en CC BY-SA, nommées par code Muséofile.
+
+Conséquence directe : **les deux tiers des œuvres sans image du lot 2 sont hors d'atteinte**.
+Ce sont des objets uniques — 461 dessins au Louvre, 294 photographies d'Alexandre Clausel à
+Troyes, 257 de Léon Tirode à Besançon, 107 dessins de Léon Fort à L'Isle-Adam, 94 des frères
+Duthoit à Amiens. Aucune bibliothèque tierce ne les détient : pour un dessin, il n'existe
+pas d'« autre exemplaire ».
+
+## Joconde date et qualifie ses auteurs, dans le champ auteur (2026-08-06)
+
+Constat fait en cherchant à documenter les 39 artistes du lot 2. **Le champ auteur ne porte
+pas qu'un nom** : les musées y glissent, entre parenthèses, les dates de la personne et son
+métier — « Georgin François (1801-1863) (graveur) », « Hussenot Joseph (1827-1896)
+(dessinateur, attribué à) ». La convention des qualificatifs d'attribution, déjà connue et
+exploitée (`MODERNO (attribué)`), en cache donc une seconde, biographique.
+
+Relevé sur les graphies des 39 artistes du lot 2, via `lot_instruction.json` :
+
+| Ce que Joconde donne | Artistes concernés |
+|---|---|
+| Dates de vie | **31 sur 39** |
+| Métier | **26 sur 39** |
+| Ni l'un ni l'autre | 5 (Fort, Willermet, Crapelet, du Ry, Beuret) |
+
+Trois formes rencontrées, toutes exploitables :
+- **dates pleines** — « Clausel Alexandre (1802-1884) », 404 notices ;
+- **dates avec doute assumé** — « De Coter Colijn (1455?-1539?) », le musée écrit lui-même
+  son incertitude, comme il le fait pour les attributions ;
+- **période d'activité seule** — « Hennault Henry (actif 1891-1901) », quand les dates de
+  vie sont inconnues.
+
+**Portée.** C'est la source la plus proche du corpus et **le seul arbitre interne face aux
+homonymes** : elle a départagé cinq Nicolaus Hoffmann (Joconde dit 1740-1823 → Q43131556)
+et deux René Ackermann (1853-1913 → l'imprimeur de Wissembourg, pas l'artiste né en 1923).
+Elle reste une donnée déclarative du musée, non vérifiée par le projet : elle sert à
+**situer** un artiste, jamais à corriger une notice.
+
+**Divergences avec les notices d'autorité**, relevées sur les 31 artistes datés — quatre
+cas, tous de faible amplitude :
+
+| Artiste | Joconde | Wikidata / autorité | Retenu |
+|---|---|---|---|
+| Aimé Duthoit | 1803-1869 | 1805-1869 | 1803-1869 (musée) |
+| Frans Hogenberg | 1535-1592 | 1535-1590 | 1535-1590 (plus courant) |
+| Colijn de Coter | 1455?-1539? | 1450-1530 | vers 1455 – vers 1539 |
+| Antonio del Pollaiuolo | 1433-1498 | 1429-1498 | vers 1433-1498 |
+
+Les deux derniers sont des artistes anciens dont les dates sont discutées partout : le
+« vers » du gabarit couvre exactement ce cas.
+
+**Piège d'outillage, à ne pas refaire.** Un premier rapprochement nom → graphies procédait
+par mots communs : « Charles du Ry » héritait des dates de « Jean-Charles François Leloy »
+et du surnom de « Charles Hugo ». Le rapprochement doit passer par la table `MAITRES` et
+`_trouve_maitre` de `build_artistes.py` — celles qui comptent déjà les notices. Le
+correctif a fait passer les artistes datés de 27 à 31.
+
+## Le lot 2 du 2026-08-02 : 50 formes examinées, 40 personnes retenues
+
+Le registre `candidats_maitres.csv` laissait **234 formes « à instruire »**. Le lot est borné
+aux **50 qui portent au moins 25 notices prudentes** : un cinquième des formes restantes, mais
+**77 % des notices** encore à instruire (8 679 sur 11 241). Sous 25, le nombre de formes double
+tous les cinq points quand leur poids s'effondre — la médiane tombe de 34 à 13 notices.
+
+Instruction par notices décroissantes, jamais par notoriété. Relevé produit par
+`src/instruit_lot.py` en une passe : toutes les graphies d'une racine de nom, leurs musées,
+leurs domaines, les dates écrites par les musées et les références elles-mêmes.
+
+### Le test d'identité appliqué, en trois questions
+
+Chacune se tranche sur la source, sans jugement sur l'artiste :
+
+1. **le musée écrit-il un prénom entier ?** Ni initiale (« VARADY A »), ni rang de famille
+   seul (« TURPIN DE CRISSE Père »), ni nom nu (« PETER », « BUQUET », « Prévost ») ;
+2. **un homonyme porte-t-il des notices prudentes sous une graphie que les motifs
+   prendraient ?** Si oui, le motif est resserré ou le candidat écarté ;
+3. **les graphies rapprochées portent-elles les mêmes dates de vie ?** C'est le seul indice
+   d'identité présent dans la source, et il tranche : « ENSFELDER Charles Eugène » et
+   « ENSFELDER Eugène » portent tous deux **1836-1876**, sans partager une seule notice —
+   un seul homme sous deux graphies. Idem pour « PINOT Charles François » et « PINOT
+   Charles » (**1817-1874**).
+
+### Ce que le lot ajoute
+
+**40 personnes instruites et retenues**, dont **39 entrent dans le volume** : Jean-Baptiste
+Barla est identifié et compté, mais **hors périmètre** (décision du 2026-08-02, plus bas).
+
+La liste publique passe donc de 63 à **102 artistes**, et de 3 668 à **6 081 notices
+distinctes** — soit **24,8 %** du doute national (24 507) contre 15 % auparavant, et 32 % du
+doute hors monoculture (18 716). La somme des profils vaut 6 238 appartenances.
+
+Le tableau ci-dessous donne les chiffres de tous les instruits, Barla compris : c'est le
+registre, pas le volume.
+
+| Artiste | prudentes | certaines | musées où le doute est écrit | musées où il apparaît |
+|---|---:|---:|---:|---:|
+| Jean-Baptiste Barla *(hors périmètre)* | 5 791 | 22 | 1 | 1 |
+| Alexandre Clausel | 295 | 158 | 1 | 1 |
+| Charles Normand | 244 | 55 | 1 | 5 |
+| Léon Tirode | 231 | 21 | 1 | 2 |
+| Louis Morinet | 168 | 83 | 1 | 2 |
+| Giacinto Calandrucci | 158 | 639 | 2 | 3 |
+| Georges Ferdinand Bigot | 125 | 110 | 1 | 3 |
+| Léon Fort | 107 | 63 | 1 | 1 |
+| Louis Duthoit | 94 | 362 | 1 | 3 |
+| Aimé Duthoit | 93 | 346 | 1 | 1 |
+| Charles François Pinot | 82 | 205 | 1 | 4 |
+| André Marie Florentin Giraud | 59 | 6 | 1 | 1 |
+| Auguste Vacquerie | 48 | 406 | 1 | 3 |
+| Charles Eugène Ensfelder | 48 | 42 | 1 | 4 |
+| François Georgin | 43 | 567 | 2 | 9 |
+| Louis Verjat | 43 | 0 | 1 | 1 |
+| Peter Hawke | 42 | 117 | 2 | 2 |
+| Auguste Alleaume | 39 | 10 | 1 | 1 |
+| Antoine Gabriel Willermet | 39 | 50 | 1 | 1 |
+| Turpin de Crissé | 34 | 387 | 1 | 10 |
+| Charles Hugo | 34 | 348 | 1 | 5 |
+| Gustave Lancelot | 32 | 120 | 1 | 1 |
+| Charles du Ry | 32 | 1 | 1 | 1 |
+| Odilon Roche | 32 | 6 | 1 | 5 |
+| Frans Hogenberg | 32 | 134 | 2 | 9 |
+| Nicolaus Hoffmann | 30 | 3 | 1 | 2 |
+| Nicasius Bernaerts | 29 | 11 | 3 | 9 |
+| Crispin de Passe l'Ancien | 29 | 71 | 2 | 6 |
+| Crispin de Passe le Jeune | 28 | 5 | 1 | 3 |
+| Amable Louis Crapelet | 28 | 177 | 1 | 5 |
+| Auguste Beuret | 28 | 0 | 1 | 1 |
+| Jean-Charles François Leloy | 28 | 1 777 | 1 | 4 |
+| Joseph Hussenot | 27 | 46 | 1 | 3 |
+| Colijn de Coter | 27 | 4 | 2 | 4 |
+| Antonio del Pollaiuolo | 26 | 10 | 1 | 5 |
+| Henry Hennault | 26 | 29 | 1 | 1 |
+| Israël Henriet | 26 | 937 | 3 | 18 |
+| René Ackermann | 26 | 222 | 2 | 4 |
+| Louis Hertig | 26 | 375 | 1 | 2 |
+| Jacques-Louis David | 26 | 1 180 | 17 | 73 |
+
+### Ce lot ne ressemble pas au premier
+
+**Trente artistes sur quarante n'ont leur doute écrit que dans un seul musée**, et dix-neuf
+portent plus de mentions prudentes que d'attributions certaines. Les 63 premiers étaient des
+noms dispersés dans des dizaines de musées ; ceux-ci sont, pour l'essentiel, des **fonds
+locaux** : le muséum de Nice, le musée de l'image d'Épinal, Troyes, Besançon, Amiens, Laval,
+Le Puy-en-Velay. Le doute n'y est pas une hésitation d'expert sur un tableau, c'est une
+prudence appliquée à un fonds entier.
+
+L'exception est **Jacques-Louis David** : 26 notices prudentes, mais dans **17 musées**, et il
+apparaît dans 73. C'est le seul du lot dont le doute soit vraiment national.
+
+### Trois notices pour deux artistes, et ce que ça veut dire
+
+Les notices partagées passent de **6 à 157**. Ce n'est pas un défaut de comptage : c'est un
+phénomène que le lot fait apparaître. Sur les mêmes notices, le musée nomme **deux membres
+d'une même famille**, chacun suivi d'un « ? » — il ne sait pas lequel des deux :
+
+- **Louis et Aimé Duthoit**, à Amiens : 93 notices communes sur 94 et 93 ;
+- **Crispin de Passe l'Ancien et le Jeune**, à Orléans : 28 communes sur 29 et 28 ;
+- **Charles Hugo et Auguste Vacquerie**, à Orsay : les photographies de Jersey, attribuées à
+  l'un ou à l'autre.
+
+Chaque profil compte la notice une fois ; l'union ne la compte qu'une fois pour tous. La
+somme des profils (6 238) dépasse donc les notices distinctes (6 081) de 157 exactement.
+
+### Les dix formes écartées, et pourquoi
+
+| Forme | notices | motif |
+|---|---:|---|
+| MELLET Jacques Père | 41 | atelier de famille : les mêmes 41 notices nomment les trois Mellet |
+| MELLET Jules Fils | 41 | idem — aucun prénom n'individualise |
+| MELLET Henri Fils | 41 | idem |
+| PETER | 41 | nom sans prénom : plusieurs Peter dans la base |
+| PELLERIN | 37 | raison sociale (imagerie d'Épinal), pas une personne |
+| TURPIN DE CRISSE Père | 35 | désigné par son seul rang de famille ; 34 de ses 35 notices nomment le fils, retenu à son nom |
+| BUQUET | 32 | nom nu et mention « atelier » ; plusieurs Buquet dans la base |
+| MOGHOLE DE MURSHIDABAD | 32 | école régionale, pas une personne |
+| VARADY | 28 | prénom réduit à une initiale (« VARADY A ») |
+| Prévost | 26 | nom nu et mention « atelier » ; plusieurs Prévost dans la base |
+
+Le cas Turpin est le plus net : une même notice (`07480000137`) nomme le père deux fois, le
+fils une fois, et Hubert Robert « d'après ». Seul le fils, que le musée nomme entièrement,
+entre dans la liste.
+
+À ces dix s'ajoute « IMAGERIE PELLERIN » (11 notices), instruite dans le même mouvement et
+écartée pour le même motif.
+
+### État du registre après le lot
+
+Sur les **330 formes** qui atteignent le seuil de dix notices prudentes :
+
+| État | avant le lot | après | ce qui a bougé |
+|---|---:|---:|---|
+| retenu | 74 | **115** | les 39 personnes du volume, plus deux graphies rattachées (« PINOT Charles », « ENSFELDER Eugène ») |
+| hors périmètre | — | **1** | Barla : identifié et compté, hors de l'angle du volume |
+| écarté | 22 | **33** | les 10 formes du lot, plus « IMAGERIE PELLERIN » |
+| à instruire | 234 | **181** | reste 2 562 notices, médiane 13 par forme |
+
+`data/exports/candidats_maitres.csv` porte l'état et le motif de chacune ;
+`data/exports/maitres_instruits.csv` porte le comptage des 103 personnes instruites, avec son
+lot et sa colonne `perimetre` (« volume 1 » ou « hors périmètre »).
+
+### Le cas Barla, tranché : identifié, compté, hors périmètre
+
+Jean-Baptiste Barla (1817-1896) est une personne établie : botaniste niçois, cofondateur en
+1846 du muséum d'histoire naturelle de Nice, à qui il a légué sa bibliothèque et environ
+6 000 aquarelles. Ses 5 791 notices prudentes passent le test d'identité sans réserve.
+
+Mais elles sont **un seul geste de catalogue répété** — le constat du 2026-07-05 n'a pas
+changé — et elles auraient pesé **49 % du volume**, dix-huit fois le premier profil.
+
+**Décision du 2026-08-02 : il sort du périmètre du volume, sans sortir du registre ni des
+totaux nationaux.** Statut « hors périmètre », motif publié : fonds botanique sériel,
+concentré dans un seul musée, hors de l'angle éditorial du volume — les attributions
+artistiques. **Ce n'est pas un faux positif** : l'identité est établie, le comptage est juste,
+et le site continue de publier ses notices dans le total de 24 507 et dans la monoculture
+divulguée. Ce qui est écrit à Nice n'est pas une hésitation sur l'auteur d'une œuvre d'art.
+
+Sans lui, le profil le plus fourni du volume est Charles Le Brun (310 notices) et le plus
+mince le Titien (11) : un écart de 1 à 28, lisible sur une échelle commune.
+
 ## Droits photo des œuvres : audit POP (2026-07-29)
 
 Question : peut-on afficher une reproduction dans l'onglet « Œuvres » ? On a lu, pour les

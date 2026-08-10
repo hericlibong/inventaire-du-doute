@@ -28,6 +28,7 @@
   {
    "reference": "000PE024742",
    "titre": "LA VIERGE A L'ENFANT EN GLOIRE AVEC SAINT ANTOINE ABBE ET SAINTE LUCIE",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -41,12 +42,13 @@
     "licence": "Public domain",
     "licence_url": "",
     "source": "https://commons.wikimedia.org/wiki/File:Baldelli,_Francesco_-_La_Vierge_%C3%A0_l%27Enfant_en_gloire_avec_saint_Antoine_abb%C3%A9_et_sainte_Lucie,_1590,_INV_93_;_MR_46.jpg",
-    "verifie_le": "2026-07-29"
+    "verifie_le": "2026-08-06"
    }
   },
   {
    "reference": "000PE032199",
    "titre": "LA VIERGE ET L'ENFANT AVEC SAINT JOSEPH ET LE PETIT SAINT JEAN-BAPTISTE",
+   "musee_code": "M0303",
    "musee": "musée des beaux-arts et d’archéologie",
    "ville": "Troyes",
    "code": "attribue",
@@ -55,6 +57,7 @@
   {
    "reference": "00000060736",
    "titre": "L'ADORATION DES BERGERS",
+   "musee_code": "M0619",
    "musee": "musée de la Chartreuse",
    "ville": "Douai",
    "code": "point_interrogation",
@@ -63,6 +66,7 @@
   {
    "reference": "50350100083",
    "titre": "Etude de paysanne tenant deux poules dans un panier",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -71,6 +75,7 @@
   {
    "reference": "50350100082",
    "titre": "Deux études de vieillard barbu, et étude d'une vieille femme, de profil",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -79,6 +84,7 @@
   {
    "reference": "50350100071",
    "titre": "Deux anges musiciens",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -87,6 +93,7 @@
   {
    "reference": "50350100094",
    "titre": "Tête d'enfant inclinée vers la gauche",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -95,6 +102,7 @@
   {
    "reference": "50350202067",
    "titre": "Trois études de têtes de femme",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -103,6 +111,7 @@
   {
    "reference": "50350201218",
    "titre": "Salvator mundi",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -111,6 +120,7 @@
   {
    "reference": "50350500447",
    "titre": "Croquis d'une main, et traits",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -119,6 +129,7 @@
   {
    "reference": "50350201588",
    "titre": "Etude d'une figure d'apôtre",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -127,6 +138,7 @@
   {
    "reference": "50350201583",
    "titre": "Evangéliste assis écrivant sur ses genoux",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -135,6 +147,7 @@
   {
    "reference": "50350201584",
    "titre": "Evangéliste assis écrivant sur ses genoux",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -143,6 +156,7 @@
   {
    "reference": "50350201585",
    "titre": "Saint Jean à Patmos",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -151,6 +165,7 @@
   {
    "reference": "50350100102",
    "titre": "Adoration des bergers",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -159,6 +174,7 @@
   {
    "reference": "50350100091",
    "titre": "Tête de femme endormie",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -167,6 +183,7 @@
   {
    "reference": "50350100087",
    "titre": "Tête de jeune femme souriante et regardant vers le bas",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -175,6 +192,7 @@
   {
    "reference": "50350100088",
    "titre": "Tête de jeune femme inclinée vers la gauche",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -183,6 +201,7 @@
   {
    "reference": "50350100090",
    "titre": "Tête de femme, de profil, tournée vers la droite",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -191,6 +210,7 @@
   {
    "reference": "50350100095",
    "titre": "Tête d'homme presque chauve, barbu, de trois quarts, regardant le spectateur",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -199,6 +219,7 @@
   {
    "reference": "50350100092",
    "titre": "Tête d'ange ou d'enfant vu de face, regardant vers le bas",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -207,6 +228,7 @@
   {
    "reference": "50350100081",
    "titre": "Trois études d'un enfant au sein, et études de draperies et de pieds",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -215,6 +237,7 @@
   {
    "reference": "50350200077",
    "titre": "Un ange présentant le calice à Jésus au Jardin des oliviers",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -223,6 +246,7 @@
   {
    "reference": "50350100093",
    "titre": "Deux têtes d'enfants, l'une vue de face, l'autre par derrière",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -231,6 +255,7 @@
   {
    "reference": "50350100084",
    "titre": "Jeune homme courbé, maniant une pelle",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -239,6 +264,7 @@
   {
    "reference": "50350100076",
    "titre": "Le Christ donnant les clés à saint Pierre",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -247,6 +273,7 @@
   {
    "reference": "50350100098",
    "titre": "Tête de vieillard barbu vue de face, le regard fixé en bas",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -255,6 +282,7 @@
   {
    "reference": "50350100074",
    "titre": "La Vierge à l'Enfant avec le petit saint Jean et saint Joseph",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -263,6 +291,7 @@
   {
    "reference": "50350100089",
    "titre": "Tête de jeune femme, vue de profil, tournée vers la droite",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -271,6 +300,7 @@
   {
    "reference": "50350201035",
    "titre": "Etude de deux pieds, l'un contre l'autre",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -279,6 +309,7 @@
   {
    "reference": "50350145076",
    "titre": "Fragment d'une Montée au Calvaire",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -287,6 +318,7 @@
   {
    "reference": "50350100080",
    "titre": "Jeune femme tenant une bassine, à mi-corps, la tête tournée vers l'arrière",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -295,6 +327,7 @@
   {
    "reference": "50350102479",
    "titre": "La Sainte Famille avec saint Jean et sainte Elisabeth",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -303,6 +336,7 @@
   {
    "reference": "02110002126",
    "titre": "Tête d'enfant",
+   "musee_code": "M0211",
    "musee": "musée des beaux-arts",
    "ville": "Rennes",
    "code": "maniere_de",
@@ -311,6 +345,7 @@
   {
    "reference": "05120001189",
    "titre": "L'Annonciation",
+   "musee_code": "M0512",
    "musee": "musée des Beaux-Arts",
    "ville": "Nancy",
    "code": "atelier_de",
@@ -319,6 +354,7 @@
   {
    "reference": "09940008766",
    "titre": "Feuille d'études ; Personnages (Ancien titre)",
+   "musee_code": "M0994",
    "musee": "musée de Grenoble",
    "ville": "Grenoble",
    "code": "attribue",
@@ -327,6 +363,7 @@
   {
    "reference": "09940009208",
    "titre": "Saint Jérôme pénitent ; Saint Jérôme en prière (Ancien titre)",
+   "musee_code": "M0994",
    "musee": "musée de Grenoble",
    "ville": "Grenoble",
    "code": "attribue",
@@ -335,6 +372,7 @@
   {
    "reference": "M0332002641",
    "titre": "Tête d'enfant ou de jeune homme",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
@@ -342,7 +380,7 @@
   }
  ],
  "version_donnee": "2026-07-01",
- "date_generation": "2026-07-28T14:49:21+00:00",
+ "date_generation": "2026-08-05T18:41:37+00:00",
  "source": "Collections des musées de France : base Joconde",
  "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
 }

@@ -23,12 +23,14 @@ Usage : uv run python src/build_exports.py  (~3 min)
 
 import hashlib
 import json
+from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
 import pandas as pd
 
 import markers
+from build_artistes import coord_du_musee
 from config import CHEMIN_CSV, CHEMIN_NOMENCLATURE, DOSSIER_EXPORTS, URL_CSV, chemin_releve
 
 DOSSIER_WEB = DOSSIER_EXPORTS / "web"
@@ -155,7 +157,8 @@ def main() -> None:
     total = 0
     total_auteur = 0
     familles = {f.code: 0 for f in markers.FAMILLES}
-    par_musee = []  # agrégats partiels (un par morceau), recollés à la fin
+    par_musee = []
+    positions = defaultdict(Counter)   # code musée -> position brute -> notices  # agrégats partiels (un par morceau), recollés à la fin
 
     morceaux = pd.read_csv(
         CHEMIN_CSV, sep="|", usecols=COLONNES, dtype=str, chunksize=TAILLE_MORCEAU
@@ -189,6 +192,13 @@ def main() -> None:
             "copie": det[CODES_COPIE].any(axis=1).astype(int),
             "revision": det[CODES_REVISION].any(axis=1).astype(int),
         }).dropna(subset=["code"])
+        # Positions publiées, comptées une à une : un même musée en porte parfois
+        # plusieurs dans Joconde, et « la première rencontrée » tombait sur la
+        # minoritaire (le musée Goya de Castres se retrouvait dans la Manche).
+        # Voir build_artistes.coord_du_musee, règle commune aux deux exports.
+        for code_musee, position in zip(agg["code"], agg["coord"]):
+            if isinstance(position, str):
+                positions[code_musee][position] += 1
         par_musee.append(agg.groupby("code", as_index=False).agg(
             nom=("nom", "first"), ville=("ville", "first"),
             departement=("departement", "first"), region=("region", "first"),
@@ -207,6 +217,9 @@ def main() -> None:
         niv1=("niv1", "sum"), niv2=("niv2", "sum"), niv3=("niv3", "sum"),
         copie=("copie", "sum"), revision=("revision", "sum"),
     )
+    # UNE position par musée, choisie sur l'ensemble de ses notices (2026-08-05).
+    musees["coord"] = musees["code"].map(
+        {code: coord_du_musee(comptes) for code, comptes in positions.items()})
 
     DOSSIER_WEB.mkdir(parents=True, exist_ok=True)
 

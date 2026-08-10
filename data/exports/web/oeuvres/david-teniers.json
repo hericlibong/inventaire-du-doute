@@ -36,6 +36,7 @@
   {
    "reference": "000PE008889",
    "titre": "CORPS DE GARDE DE SINGES MILITAIRES",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -44,6 +45,7 @@
   {
    "reference": "000PE008890",
    "titre": "CHATS AMENES DEVANT UN TRIBUNAL MILITAIRE DE SINGES",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -52,6 +54,7 @@
   {
    "reference": "000PE008864",
    "titre": "LA KERMESSE",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -60,6 +63,7 @@
   {
    "reference": "000PE008824",
    "titre": "SINGES AU CORPS DE GARDE",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -68,6 +72,7 @@
   {
    "reference": "000PE008863",
    "titre": "Les bulles de savon",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
@@ -81,12 +86,13 @@
     "licence": "Public domain",
     "licence_url": "",
     "source": "https://commons.wikimedia.org/wiki/File:Jan_van_Kessel_(I)_and_David_Teniers_(II)_(attributed_to)_-_Soap_bubbles,_allegory_of_Vanitas.jpg",
-    "verifie_le": "2026-07-29"
+    "verifie_le": "2026-08-06"
    }
   },
   {
    "reference": "000PE017071",
    "titre": "INTERIEUR RUSTIQUE",
+   "musee_code": "M0629",
    "musee": "musée des Beaux-Arts",
    "ville": "Lille",
    "code": "attribue",
@@ -95,6 +101,7 @@
   {
    "reference": "000PE017072",
    "titre": "L'ODORAT",
+   "musee_code": "M0629",
    "musee": "musée des Beaux-Arts",
    "ville": "Lille",
    "code": "atelier_de",
@@ -103,6 +110,7 @@
   {
    "reference": "000PE017069",
    "titre": "DEPART POUR LE SABBAT",
+   "musee_code": "M0629",
    "musee": "musée des Beaux-Arts",
    "ville": "Lille",
    "code": "atelier_de",
@@ -111,6 +119,7 @@
   {
    "reference": "000PE017073",
    "titre": "JOUEURS DE BOULES",
+   "musee_code": "M0629",
    "musee": "musée des Beaux-Arts",
    "ville": "Lille",
    "code": "ecole_de",
@@ -119,6 +128,7 @@
   {
    "reference": "000PE020721",
    "titre": "LA PECHE",
+   "musee_code": "M0629",
    "musee": "musée des Beaux-Arts",
    "ville": "Lille",
    "code": "attribue",
@@ -127,6 +137,7 @@
   {
    "reference": "000PE021329",
    "titre": "Intérieur d'alchimiste",
+   "musee_code": "M0657",
    "musee": "musée des beaux-arts",
    "ville": "Caen",
    "code": "ecole_de",
@@ -135,6 +146,7 @@
   {
    "reference": "000PE021645",
    "titre": "Visite de la reine de Saba au roi Salomon",
+   "musee_code": "M0657",
    "musee": "musée des beaux-arts",
    "ville": "Caen",
    "code": "attribue",
@@ -143,6 +155,7 @@
   {
    "reference": "000PE021644",
    "titre": "Joueurs de palet dans un paysage hivernal",
+   "musee_code": "M0657",
    "musee": "musée des beaux-arts",
    "ville": "Caen",
    "code": "attribue",
@@ -151,6 +164,7 @@
   {
    "reference": "000PE026159",
    "titre": "PAYSAGE AVEC ANIMAUX ET PERSONNAGES",
+   "musee_code": "M0065",
    "musee": "musée des beaux-arts",
    "ville": "Bordeaux",
    "code": "attribue",
@@ -159,6 +173,7 @@
   {
    "reference": "00000062933",
    "titre": "PAYSAGE AVEC FIGURES",
+   "musee_code": "M0207",
    "musee": "musée des beaux-arts",
    "ville": "Quimper",
    "code": "maniere_de",
@@ -167,6 +182,7 @@
   {
    "reference": "00000094623",
    "titre": "JOUEURS DE CARTES DANS UN CABARET",
+   "musee_code": "M0211",
    "musee": "musée des beaux-arts",
    "ville": "Rennes",
    "code": "attribue",
@@ -175,6 +191,7 @@
   {
    "reference": "50350500356",
    "titre": "Deux études de têtes, et étude d'un singe maitre d'école fouettant un élève",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -183,6 +200,7 @@
   {
    "reference": "M0347001325",
    "titre": "La Tentation de saint Antoine",
+   "musee_code": "M0347",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Dole",
    "code": "genre_de",
@@ -191,6 +209,7 @@
   {
    "reference": "M0347001326",
    "titre": "Fête Flamande",
+   "musee_code": "M0347",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Dole",
    "code": "genre_de",
@@ -199,6 +218,7 @@
   {
    "reference": "M0347001327",
    "titre": "Laitière dans une étable ; Intérieur d'étable (autre titre)",
+   "musee_code": "M0347",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Dole",
    "code": "genre_de",
@@ -207,6 +227,7 @@
   {
    "reference": "M0347001754",
    "titre": "La danse à l'auberge",
+   "musee_code": "M0347",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Dole",
    "code": "genre_de",
@@ -215,6 +236,7 @@
   {
    "reference": "M0347001753",
    "titre": "Scène d'auberge avec fumeur, joueuse de cartes, buveurs et danseuses",
+   "musee_code": "M0347",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Dole",
    "code": "genre_de",
@@ -223,6 +245,7 @@
   {
    "reference": "10480006517",
    "titre": "Scène de taverne",
+   "musee_code": "M1048",
    "musee": "musée des beaux-arts",
    "ville": "Chambéry",
    "code": "maniere_de",
@@ -231,6 +254,7 @@
   {
    "reference": "10480006522",
    "titre": "Paysage",
+   "musee_code": "M1048",
    "musee": "musée des beaux-arts",
    "ville": "Chambéry",
    "code": "maniere_de",
@@ -239,6 +263,7 @@
   {
    "reference": "10480004597",
    "titre": "Scène champêtre",
+   "musee_code": "M1048",
    "musee": "musée des beaux-arts",
    "ville": "Chambéry",
    "code": "atelier_de",
@@ -247,6 +272,7 @@
   {
    "reference": "50130000465",
    "titre": "Fête de village ; Les joueurs de boule",
+   "musee_code": "M5013",
    "musee": "musée national du château de Fontainebleau",
    "ville": "Fontainebleau",
    "code": "attribue",
@@ -255,6 +281,7 @@
   {
    "reference": "04000000116",
    "titre": "Homme fumant la pipe",
+   "musee_code": "M0400",
    "musee": "musée Lambinet",
    "ville": "Versailles",
    "code": "atelier_de",
@@ -263,6 +290,7 @@
   {
    "reference": "04000000110",
    "titre": "Intérieur de cabaret",
+   "musee_code": "M0400",
    "musee": "musée Lambinet",
    "ville": "Versailles",
    "code": "attribue",
@@ -271,6 +299,7 @@
   {
    "reference": "04000000120",
    "titre": "Homme assis tenant une cruche",
+   "musee_code": "M0400",
    "musee": "musée Lambinet",
    "ville": "Versailles",
    "code": "atelier_de",
@@ -279,6 +308,7 @@
   {
    "reference": "07430007134",
    "titre": "Intérieur de tabagie",
+   "musee_code": "M0743",
    "musee": "musée des Beaux-Arts",
    "ville": "Nantes",
    "code": "genre_de",
@@ -287,6 +317,7 @@
   {
    "reference": "07430007012",
    "titre": "Sainte Thérèse d'Avilla en prières",
+   "musee_code": "M0743",
    "musee": "musée des Beaux-Arts",
    "ville": "Nantes",
    "code": "atelier_de",
@@ -295,6 +326,7 @@
   {
    "reference": "07430007025",
    "titre": "L'arracheur de dents",
+   "musee_code": "M0743",
    "musee": "musée des Beaux-Arts",
    "ville": "Nantes",
    "code": "genre_de",
@@ -303,6 +335,7 @@
   {
    "reference": "07430007081",
    "titre": "Intérieur de cabaret",
+   "musee_code": "M0743",
    "musee": "musée des Beaux-Arts",
    "ville": "Nantes",
    "code": "genre_de",
@@ -311,6 +344,7 @@
   {
    "reference": "07430007011",
    "titre": "Intérieur de tabagie",
+   "musee_code": "M0743",
    "musee": "musée des Beaux-Arts",
    "ville": "Nantes",
    "code": "genre_de",
@@ -319,6 +353,7 @@
   {
    "reference": "07430007089",
    "titre": "L'arracheur de dents, ou le dentiste",
+   "musee_code": "M0743",
    "musee": "musée des Beaux-Arts",
    "ville": "Nantes",
    "code": "genre_de",
@@ -327,6 +362,7 @@
   {
    "reference": "000PE023455",
    "titre": "SCENE CHAMPETRE",
+   "musee_code": "M0065",
    "musee": "musée des beaux-arts",
    "ville": "Bordeaux",
    "code": "ecole_de",
@@ -335,6 +371,7 @@
   {
    "reference": "000PE023453",
    "titre": "PAYSAGE, LE DEPART",
+   "musee_code": "M0065",
    "musee": "musée des beaux-arts",
    "ville": "Bordeaux",
    "code": "ecole_de",
@@ -343,6 +380,7 @@
   {
    "reference": "000PE023457",
    "titre": "PAYSAGE FLAMAND",
+   "musee_code": "M0065",
    "musee": "musée des beaux-arts",
    "ville": "Bordeaux",
    "code": "ecole_de",
@@ -351,6 +389,7 @@
   {
    "reference": "000PE023456",
    "titre": "SCENE CHAMPETRE",
+   "musee_code": "M0065",
    "musee": "musée des beaux-arts",
    "ville": "Bordeaux",
    "code": "ecole_de",
@@ -359,6 +398,7 @@
   {
    "reference": "000PE023452",
    "titre": "Buveur",
+   "musee_code": "M0065",
    "musee": "musée des beaux-arts",
    "ville": "Bordeaux",
    "code": "ecole_de",
@@ -367,6 +407,7 @@
   {
    "reference": "06650001640",
    "titre": "Intérieur de Cabaret",
+   "musee_code": "M0665",
    "musee": "musée d'Art et d'Histoire",
    "ville": "Lisieux",
    "code": "ecole_de",
@@ -375,6 +416,7 @@
   {
    "reference": "50350110752",
    "titre": "Singes forains",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -383,6 +425,7 @@
   {
    "reference": "50350110736",
    "titre": "Trois fumeurs dans un intérieur",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -391,6 +434,7 @@
   {
    "reference": "50350110746",
    "titre": "Singe peintre dans son atelier",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -399,6 +443,7 @@
   {
    "reference": "50350110749",
    "titre": "Cinq hommes discutant dans un cabaret de village",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -407,6 +452,7 @@
   {
    "reference": "50350110748",
    "titre": "Singe médecin",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -415,6 +461,7 @@
   {
    "reference": "50350110743",
    "titre": "Singe maître d'école",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -423,6 +470,7 @@
   {
    "reference": "50350110750",
    "titre": "Bal des singes",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -431,6 +479,7 @@
   {
    "reference": "50350110741",
    "titre": "Singe maître d'école",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -439,6 +488,7 @@
   {
    "reference": "50350110745",
    "titre": "Bal des singes",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -447,6 +497,7 @@
   {
    "reference": "50350110747",
    "titre": "Joueur de violon au cabaret",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -455,6 +506,7 @@
   {
    "reference": "50350110751",
    "titre": "Singe maître d'école, la correction",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -463,6 +515,7 @@
   {
    "reference": "50110001641",
    "titre": "Paysage",
+   "musee_code": "M5011",
    "musee": "musée national Magnin",
    "ville": "Dijon",
    "code": "attribue",
@@ -471,6 +524,7 @@
   {
    "reference": "03070007836",
    "titre": "Mendiant",
+   "musee_code": "M0307",
    "musee": "musée municipal",
    "ville": "Châlons-en-Champagne",
    "code": "atelier_de",
@@ -479,6 +533,7 @@
   {
    "reference": "01610000091",
    "titre": "Le jeu des singes dans le monde",
+   "musee_code": "M0161",
    "musee": "musée Rolin",
    "ville": "Autun",
    "code": "attribue",
@@ -487,6 +542,7 @@
   {
    "reference": "00190086863",
    "titre": "Les fumeurs de pipe",
+   "musee_code": "M0019",
    "musee": "musée des Beaux-Arts",
    "ville": "Strasbourg",
    "code": "suiveur_de",
@@ -495,6 +551,7 @@
   {
    "reference": "00190086745",
    "titre": "Joueurs de quilles",
+   "musee_code": "M0019",
    "musee": "musée des Beaux-Arts",
    "ville": "Strasbourg",
    "code": "suiveur_de",
@@ -503,6 +560,7 @@
   {
    "reference": "00190023064",
    "titre": "Paysage avec bergers et troupeau",
+   "musee_code": "M0019",
    "musee": "musée des Beaux-Arts",
    "ville": "Strasbourg",
    "code": "attribue",
@@ -516,12 +574,13 @@
     "licence": "Public domain",
     "licence_url": "",
     "source": "https://commons.wikimedia.org/wiki/File:Teniers_II,_Paysage_avec_bergers_et_troupeau.jpg",
-    "verifie_le": "2026-07-29"
+    "verifie_le": "2026-08-06"
    }
   },
   {
    "reference": "02110002187",
    "titre": "Singes dans une cuisine",
+   "musee_code": "M0211",
    "musee": "musée des beaux-arts",
    "ville": "Rennes",
    "code": "attribue",
@@ -530,6 +589,7 @@
   {
    "reference": "M0332001260",
    "titre": "Cour de ferme",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "genre_de",
@@ -538,6 +598,7 @@
   {
    "reference": "M0332001232",
    "titre": "Fête villageoise ; personnages dansant devant une auberge",
+   "musee_code": "M0332",
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "genre_de",
@@ -551,12 +612,13 @@
     "licence": "Public domain",
     "licence_url": "",
     "source": "https://commons.wikimedia.org/wiki/File:F%C3%AAte_villageoise_-_dapr%C3%A8s_David_II_Teniers_-_MBAB_896.1.306.jpg",
-    "verifie_le": "2026-07-29"
+    "verifie_le": "2026-08-06"
    }
   },
   {
    "reference": "06190000092",
    "titre": "Partie de tric trac",
+   "musee_code": "M0619",
    "musee": "musée de la Chartreuse",
    "ville": "Douai",
    "code": "ecole_de",
@@ -565,6 +627,7 @@
   {
    "reference": "06190000063",
    "titre": "Paysage avec figures",
+   "musee_code": "M0619",
    "musee": "musée de la Chartreuse",
    "ville": "Douai",
    "code": "genre_de",
@@ -573,6 +636,7 @@
   {
    "reference": "06190001298",
    "titre": "Gros Temps ; Marine ; Paysage avec figures ( ?, autre titre)",
+   "musee_code": "M0619",
    "musee": "musée de la Chartreuse",
    "ville": "Douai",
    "code": "ecole_de",
@@ -581,6 +645,7 @@
   {
    "reference": "07010001983",
    "titre": "Intérieur, fumeurs et musiciens",
+   "musee_code": "M0701",
    "musee": "musée Municipal",
    "ville": "Bernay",
    "code": "attribue",
@@ -589,6 +654,7 @@
   {
    "reference": "05120000046",
    "titre": "Le Torrent",
+   "musee_code": "M0512",
    "musee": "musée des Beaux-Arts",
    "ville": "Nancy",
    "code": "attribue",
@@ -597,6 +663,7 @@
   {
    "reference": "01160003232",
    "titre": "Une Tabagie (Le titre correspond mal à la scène d'intérieur représentant des musiciens.)",
+   "musee_code": "M0116",
    "musee": "musée Crozatier",
    "ville": "Le Puy-en-Velay",
    "code": "attribue",
@@ -605,6 +672,7 @@
   {
    "reference": "03110007347",
    "titre": "Fête de village (catalogue Loriquet)",
+   "musee_code": "M0311",
    "musee": "musée des Beaux-Arts de Reims",
    "ville": "Reims",
    "code": "attribue",
@@ -613,6 +681,7 @@
   {
    "reference": "03110042464",
    "titre": "Joueurs dans une auberge",
+   "musee_code": "M0311",
    "musee": "musée des Beaux-Arts de Reims",
    "ville": "Reims",
    "code": "attribue",
@@ -621,6 +690,7 @@
   {
    "reference": "09940140170",
    "titre": "Scènes de rue",
+   "musee_code": "M0994",
    "musee": "musée de Grenoble",
    "ville": "Grenoble",
    "code": "attribue",
@@ -629,6 +699,7 @@
   {
    "reference": "04450000862",
    "titre": "Le jeu de boules",
+   "musee_code": "M0445",
    "musee": "Palais-musée des Archevêques de Narbonne",
    "ville": "Narbonne",
    "code": "entourage_de",
@@ -637,6 +708,7 @@
   {
    "reference": "04450000864",
    "titre": "Le tir à l'arc",
+   "musee_code": "M0445",
    "musee": "Palais-musée des Archevêques de Narbonne",
    "ville": "Narbonne",
    "code": "entourage_de",
@@ -644,7 +716,7 @@
   }
  ],
  "version_donnee": "2026-07-01",
- "date_generation": "2026-07-28T14:49:21+00:00",
+ "date_generation": "2026-08-05T18:41:37+00:00",
  "source": "Collections des musées de France : base Joconde",
  "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
 }

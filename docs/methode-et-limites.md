@@ -63,6 +63,22 @@ L'onglet montre **toutes les œuvres concernées** par le maître — pas une
 sélection —, filtrables par mention et paginées. Rien n'est choisi à la main :
 ni tri éditorial, ni recherche de la « meilleure » pièce.
 
+**Une exception, déclarée : les deux notices montrées sur la page « Présentation »**
+(2026-08-02, portées à deux le 2026-08-04). Celles-là sont choisies :
+
+- « Portrait de jeune homme, dit autrefois : Portrait de Titus », musée du Louvre, champ
+  auteur « Rembrandt (1606-1669) (atelier, dit) » — référence Joconde `000PE008564` ;
+- « Cheval au galop », musée des beaux-arts de Chambéry, champ auteur « GERICAULT Théodore
+  (attribué à) » — référence Joconde `10480003953`.
+
+Un article s'ouvre sur des cas, pas sur un tirage au sort ; ce qui doit rester non trié, ce
+sont les listes exhaustives, qu'une sélection pourrait flatter. Le choix est écrit dans
+`src/build_corpus_maitres.py`, et les champs affichés sont RELUS dans l'export des œuvres à
+chaque génération : si l'une de ces notices change de formulation, perd sa reproduction
+réutilisable ou disparaît de la base, la génération échoue au lieu de publier un exemple
+périmé. Les deux reproductions viennent de Wikimedia Commons, rattachées par identifiant
+Joconde, domaine public, créditées sous l'image.
+
 - La citation entre guillemets est le **contenu exact du champ auteur** de la
   notice (verbatim, capitales et abréviations comprises).
 - Chaque œuvre renvoie à sa **fiche publique sur POP**, qui vit sa vie
@@ -72,7 +88,7 @@ ni tri éditorial, ni recherche de la « meilleure » pièce.
   C'est un ordre d'affichage, jamais une hiérarchie de doute
   (decisions.md, 2026-07-29).
 
-## Les reproductions d'œuvres (Wikimedia Commons)
+## Les reproductions d'œuvres (Wikimedia Commons, Gallica)
 
 Une reproduction n'est affichée que si sa réutilisation est **explicitement
 permise** et si elle est rattachée **avec certitude** à la notice.
@@ -83,8 +99,37 @@ permise** et si elle est rattachée **avec certitude** à la notice.
 - **D'où viennent celles qui sont montrées ?** De **Wikimedia Commons**, en ne
   retenant que les fichiers sous **domaine public, CC0, CC BY ou CC BY-SA**. Le
   rattachement se fait par l'**identifiant Joconde** (via Wikidata), jamais par
-  une ressemblance de titre ou de musée. **184 œuvres** sur les 3 668 en ont une
-  à ce jour (bilan : `data/exports/images_bilan.json`).
+  une ressemblance de titre ou de musée. **192 œuvres** en ont une à ce jour
+  (bilan : `data/exports/images_bilan.json`). En comptant les estampes venues de
+  Gallica et du fonds d'imagerie, **209 œuvres sont illustrées**.
+- **Quatorze estampes populaires viennent de Gallica**, et elles portent une
+  réserve écrite sous l'image : **« autre exemplaire du même tirage »**. Une
+  planche d'Épinal a été imprimée à des milliers d'exemplaires ; le musée
+  conserve le sien, la Bibliothèque nationale le sien — souvent reconnaissable à
+  son tampon de dépôt légal. Ce n'est donc pas la feuille décrite par la notice,
+  et l'application ne le laisse pas croire. Le rattachement exige le titre
+  inscrit **et** l'éditeur Pellerin **et** des dates compatibles ; **si le musée
+  conserve plusieurs notices du même titre, aucune image n'est affichée** —
+  l'exemplaire visé serait indéterminé. Les dimensions et la technique varient
+  normalement d'un exemplaire à l'autre : elles ne servent pas de preuve.
+- **Trois estampes de plus viennent du fonds d'imagerie déjà versé sur
+  Wikimedia Commons**, avec la même réserve écrite. Elles sont rattachées par le
+  **numéro imprimé sur la planche**, que le musée relève dans sa notice
+  (« Imagerie d'Épinal, n° 631 ») : chaque maison ayant sa propre numérotation,
+  ce numéro départage deux feuilles de même titre, mais n'en désigne jamais une
+  à lui seul — le titre doit concorder aussi.
+- **Onze rapprochements ont été regardés un par un, et dix ont été écartés**,
+  alors qu'ils portaient tous le bon titre. Une image populaire se réédite
+  pendant un siècle : la même composition ressort chez un concurrent, avec un
+  autre numéro et une autre adresse d'imprimeur. Une planche de « Cadet
+  Rousselle » numérotée 384 ne peut pas illustrer une notice qui en annonce 518.
+- **La recherche de reproductions s'arrête là.** Les deux tiers des œuvres qui
+  n'en ont pas sont des dessins et des photographies anciennes, conservés en un
+  seul exemplaire dans des musées de région. Pour un dessin, il n'existe pas
+  d'« autre exemplaire » : la seule source possible est le musée qui le conserve,
+  et aucun de ceux-là ne publie ses images sous licence ouverte. Les
+  photographies du musée du Louvre, elles, ne sont pas librement réutilisables :
+  seul le texte de ses notices l'est.
 - L'appariement par **numéro d'inventaire** a été tenté puis écarté : recoupé
   avec les dimensions relevées sur Wikidata, il n'a produit aucune
   correspondance assez solide — mais il a évité d'afficher 162 fausses

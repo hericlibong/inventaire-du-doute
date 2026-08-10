@@ -20,6 +20,7 @@
   {
    "reference": "00000107026",
    "titre": "Un archer et un arbalétrier",
+   "musee_code": "M5052",
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
@@ -28,6 +29,7 @@
   {
    "reference": "00000107027",
    "titre": "Pythagore",
+   "musee_code": "M5052",
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
@@ -36,6 +38,7 @@
   {
    "reference": "50350228334",
    "titre": "Saint Marc debout",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -44,6 +47,7 @@
   {
    "reference": "50350112025",
    "titre": "Trois figures de femmes, debout",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -52,6 +56,7 @@
   {
    "reference": "50350500780",
    "titre": "Feuille d'études de figures, et de deux petites croix",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -60,6 +65,7 @@
   {
    "reference": "50350101616",
    "titre": "Groupe de six figures, regardant vers la droite",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -68,6 +74,7 @@
   {
    "reference": "50350101636",
    "titre": "jeune homme, debout, drapé, la main droite sur les hanches",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -76,6 +83,7 @@
   {
    "reference": "50350101615",
    "titre": "L'Ascension du Christ",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -84,6 +92,7 @@
   {
    "reference": "50350101629",
    "titre": "Dieu bénissant, tenant le Globe, entouré d'anges",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -92,6 +101,7 @@
   {
    "reference": "50350003404",
    "titre": "Tête de femme, vue de trois quarts",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -100,6 +110,7 @@
   {
    "reference": "50350003555",
    "titre": "Un ange tenant un long lacet qui l'enserre et le fait se plier en deux",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -108,6 +119,7 @@
   {
    "reference": "50350101632",
    "titre": "Sainte Famille avec saint Jean-Baptiste et saint Jérôme",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -116,6 +128,7 @@
   {
    "reference": "50350101622",
    "titre": "L'ange de l'Annonciation",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -124,6 +137,7 @@
   {
    "reference": "50350112026",
    "titre": "Jésus et saint Jean, enfants",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
@@ -132,6 +146,7 @@
   {
    "reference": "50350003556",
    "titre": "Un ange les ailes déployées, tirant sur une fine corde",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -140,6 +155,7 @@
   {
    "reference": "50350101625",
    "titre": "Figure de Vierge agenouillée, les mains jointes",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -148,6 +164,7 @@
   {
    "reference": "50350500781",
    "titre": "Etudes de muscles (?) ou d'un drapé (?)",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -156,6 +173,7 @@
   {
    "reference": "50350228343",
    "titre": "Etude d'ange priant et marchant vers la gauche",
+   "musee_code": "M5031",
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
@@ -164,6 +182,7 @@
   {
    "reference": "M0289002516",
    "titre": "Evêque drapé avec un aigle à ses pieds (titre factice)",
+   "musee_code": "M0289",
    "musee": "musée municipal",
    "ville": "Pithiviers",
    "code": "attribue",
@@ -172,6 +191,7 @@
   {
    "reference": "01610001107",
    "titre": "Vierge à l'Enfant",
+   "musee_code": "M0161",
    "musee": "musée Rolin",
    "ville": "Autun",
    "code": "ecole_de",
@@ -180,6 +200,7 @@
   {
    "reference": "06570008170",
    "titre": "Le Christ au tombeau ; Déploration sur le corps du Christ",
+   "musee_code": "M0657",
    "musee": "musée des beaux-arts",
    "ville": "Caen",
    "code": "attribue",
@@ -187,7 +208,7 @@
   }
  ],
  "version_donnee": "2026-07-01",
- "date_generation": "2026-07-28T14:49:21+00:00",
+ "date_generation": "2026-08-05T18:41:37+00:00",
  "source": "Collections des musées de France : base Joconde",
  "url_source": "https://www.data.gouv.fr/api/1/datasets/r/7e3307c2-f2ff-455c-bbca-bb6f11aec7bb"
 }

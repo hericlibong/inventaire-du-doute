@@ -18,7 +18,7 @@
 //   — égalité d'effectif en tête : citer les mentions à égalité, au pluriel ;
 //   — 1re mention ≥ 60 % : la citer seule ;
 //   — sinon 1re + 2e ≥ 70 % ET 2e ≥ 20 % : citer les deux ;
-//   — sinon : réparties, sans qu'une seule ne s'impose.
+//   — sinon : réparties, sans qu'une seule s'impose.
 // Tous les pourcentages sont arrondis à l'entier (Math.round).
 
 const NB = ' '; // espace insécable
@@ -80,5 +80,5 @@ export function phraseRepartition(familles, total, { label, ordre }) {
 	}
 
 	// 3c. Dispersé.
-	return 'Les œuvres concernées se répartissent entre plusieurs mentions, sans qu’une seule ne s’impose.';
+	return 'Les œuvres concernées se répartissent entre plusieurs mentions, sans qu’une seule s’impose.';
 }

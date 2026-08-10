@@ -100,7 +100,7 @@ def _nom_fichier_commons(url_p18: str) -> str:
 # Chargement local
 # --------------------------------------------------------------------------
 def charger_inventaire() -> dict:
-    """ref -> {artistes:[…], musee, ville, titre} depuis les 63 fiches."""
+    """ref -> {artistes:[…], musee, ville, titre} depuis les fiches d'œuvres."""
     import glob
     inv = {}
     for chemin in glob.glob(str(DOSSIER_OEUVRES / "*.json")):

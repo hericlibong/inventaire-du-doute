@@ -1,9 +1,10 @@
 {
  "seuil": 10,
  "formes_au_seuil": 330,
- "retenues": 74,
- "ecartees": 22,
- "a_instruire": 234,
- "maitres_retenus": 63,
- "date_generation": "2026-07-22T10:33:08+00:00"
+ "retenues": 115,
+ "hors_perimetre": 1,
+ "ecartees": 33,
+ "a_instruire": 181,
+ "maitres_retenus": 102,
+ "date_generation": "2026-08-02T14:46:19+00:00"
 }
