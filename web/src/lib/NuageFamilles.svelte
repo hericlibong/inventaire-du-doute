@@ -88,8 +88,8 @@
 	//   temporaire  — survol ou focus (souris/clavier), refermé au départ / au blur ;
 	//   selectionne — clic, Entrée, Espace ou toucher : persistant jusqu'à un second
 	//                 appui, une autre sélection, Échap ou un appui extérieur.
-	// `ancre` dit OÙ placer l'infobulle : au POINT (défaut) ou, si le point est hors
-	// de la fenêtre (mobile, légende sous le graphe), sous la MENTION de la légende.
+	// L'infobulle reste toujours attachée au POINT. Sur mobile, sa position est
+	// bornée par le cadre du graphique au lieu d'être déplacée loin de sa donnée.
 	// Le tooltip <title> SVG natif reste abandonné (décision 2026-07-10).
 	let regardEl;
 	let svgEl;
@@ -109,25 +109,31 @@
 		interaction ? points.find((p) => p.code === interaction.code) ?? null : null
 	);
 
-	// Position de l'infobulle : TOUJOURS les coordonnées réelles du point dans le
-	// SVG. Exception (repli mobile) : si le point est hors de la fenêtre et que
-	// l'activation vient de la légende, on ancre sous la mention (ancre = legende).
-	function positionner(code, source) {
+	// Position de l'infobulle à partir des coordonnées réelles du point. Sa largeur
+	// maximale est anticipée pour borner son centre et empêcher tout débordement
+	// horizontal, y compris sur les points situés aux extrémités de l'axe.
+	function positionner(code) {
 		const circle = svgEl?.querySelector(`circle[data-code="${code}"]`);
 		if (!circle || !regardEl) return { ancre: 'point', x: 0, y: 0, dessous: false };
 		const c = circle.getBoundingClientRect();
 		const hote = regardEl.getBoundingClientRect();
-		const visible = c.top >= 0 && c.bottom <= window.innerHeight;
-		if (source === 'legende' && !visible) return { ancre: 'legende' };
+		const marge = 8;
+		const largeurInfobulle = Math.min(272, Math.max(208, hote.width - marge * 2));
+		const demiLargeur = largeurInfobulle / 2;
+		const centrePoint = c.left + c.width / 2 - hote.left;
+		const x = Math.min(
+			Math.max(centrePoint, demiLargeur + marge),
+			hote.width - demiLargeur - marge
+		);
 		const y = c.top - hote.top;
-		return { ancre: 'point', x: c.left + c.width / 2 - hote.left, y, dessous: y < 90 };
+		return { ancre: 'point', x, y, dessous: y < 110 };
 	}
 
 	// Ouvre (ou remplace) l'interaction. Un SURVOL n'écrase jamais une sélection.
 	function ouvrir(code, mode, source) {
 		if (!present(code)) return;
 		if (mode === 'temporaire' && interaction?.mode === 'selectionne') return;
-		interaction = { code, mode, source, ...positionner(code, source) };
+		interaction = { code, mode, source, ...positionner(code) };
 	}
 
 	// Ferme une activation TEMPORAIRE seulement (départ souris / perte de focus) :
@@ -289,23 +295,12 @@
 		<!-- Infobulle ancrée AU POINT (cas normal). Le contenu accessible passe par
 		     l'aria-label du point. -->
 		{#if pointActif && interaction?.ancre === 'point'}
-			<div class="infobulle-point">
-				<Infobulle
-					tt={pointActif.tt}
-					x={interaction.x}
-					y={interaction.y}
-					dessous={interaction.dessous}
-				/>
-			</div>
-		{/if}
-
-		<!-- Sur mobile, le même contenu devient un panneau en flux : il ne peut ni
-		     sortir de l'écran ni masquer le tracé. Il reste piloté par l'état partagé
-		     du point et de la légende. -->
-		{#if pointActif}
-			<div class="detail-mobile">
-				<Infobulle tt={pointActif.tt} enFlux />
-			</div>
+			<Infobulle
+				tt={pointActif.tt}
+				x={interaction.x}
+				y={interaction.y}
+				dessous={interaction.dessous}
+			/>
 		{/if}
 
 		<!-- Précaution de lecture (2026-07-27) : petit corps, atténué, italique, avec un
@@ -324,14 +319,13 @@
 	<!-- Pas de phrase d'introduction (retirée le 2026-07-25) : les trois intitulés
 	     de territoire et la légende suffisent à expliquer l'organisation. -->
 	<div class="cle">
-		<p class="cle-mobile-titre">Choisir une mention</p>
 		<ol class="territoires">
 			{#each TERRITOIRES as t (t.id)}
 				<li class="zone" data-zone={t.id}>
 					<!-- Les titres de territoire NE sont PAS interactifs (seules les huit
 					     mentions le sont). -->
 					<span class="zone-titre">{t.titre}</span>
-					<div class="zone-mentions">
+					<span class="zone-mentions">
 						{#each t.codes as code (code)}
 							{#if present(code)}
 								<!-- Mention présente : vrai bouton, symétrique du point. Survol/focus
@@ -357,13 +351,6 @@
 									></span>
 									<span class="mention-label">{FAMILLE_PUBLIC[code].label}</span>
 								</button>
-								<!-- Repli mobile : quand le point est hors de la fenêtre, l'infobulle
-								     s'affiche EN FLUX, sous la mention active. -->
-								{#if interaction?.ancre === 'legende' && interaction.code === code && pointActif}
-									<div class="detail-legende">
-										<Infobulle tt={pointActif.tt} enFlux />
-									</div>
-								{/if}
 							{:else}
 								<!-- Mention absente : ni bouton, ni focus, ni curseur d'interaction ;
 								     libellé atténué + indication accessible. -->
@@ -377,7 +364,7 @@
 								</span>
 							{/if}
 						{/each}
-					</div>
+					</span>
 				</li>
 			{/each}
 		</ol>
@@ -388,13 +375,6 @@
 <style>
 	.nuage {
 		margin: 0;
-	}
-
-	/* Les deux rendus d'information sont exclusifs selon la largeur : bulle ancree
-	   sur grand ecran, panneau en flux sur mobile. */
-	.detail-mobile,
-	.cle-mobile-titre {
-		display: none;
 	}
 
 	/* --- En-tête : le graphe est le portrait d'un artiste, il porte son nom. --- */
@@ -664,64 +644,38 @@
 	}
 
 	@container (max-width: 30rem) {
-		/* La commande vient avant le tracé. Les huit mentions tiennent dans une grille
-		   compacte : l'utilisateur agit et voit le point réagir dans la même fenêtre. */
-		.cle {
-			order: -1;
-		}
-
-		.cle-mobile-titre {
-			display: block;
-			margin: 0 0 var(--espace-2);
-			font-family: var(--police-ui);
-			font-size: 0.7rem;
-			font-weight: 700;
-			letter-spacing: 0.06em;
-			text-transform: uppercase;
-			color: var(--couleur-encre-douce);
-		}
-
 		.territoires {
 			display: grid;
-			grid-template-columns: repeat(2, minmax(0, 1fr));
-			gap: 0.4rem;
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+			gap: 0.45rem;
 		}
 
-		/* Les territoires restent écrits dans le graphique. Ici, leurs conteneurs
-		   s'effacent pour former une seule grille de commandes. */
 		.zone {
-			display: contents;
+			min-width: 0;
+			padding-left: 0.35rem;
+			border-left-width: 2px;
 		}
 
 		.zone-titre {
-			display: none;
+			font-size: 0.58rem;
+			line-height: 1.2;
+			letter-spacing: 0.02em;
 		}
 
 		.zone-mentions {
-			display: contents;
+			gap: 0.08rem;
 		}
 
 		.mention {
-			min-height: 2.4rem;
-			padding: 0.45rem 0.55rem;
-			border: 1px solid var(--couleur-trait);
-			background: var(--couleur-surface, #fffdf9);
+			gap: 0.25rem;
+			padding: 0.08rem 0.12rem;
+			font-size: 0.7rem;
+			line-height: 1.25;
 		}
 
-		.mention.active {
-			border-color: var(--couleur-encre-douce);
-		}
-
-		/* Aucune bulle positionnée en absolu sur petit écran : c'est elle qui sortait
-		   du viewport dans la démonstration. */
-		.infobulle-point,
-		.detail-legende {
-			display: none;
-		}
-
-		.detail-mobile {
-			display: block;
-			margin: 0.35rem 0 var(--espace-2);
+		.pastille {
+			width: 0.45rem;
+			height: 0.45rem;
 		}
 	}
 </style>

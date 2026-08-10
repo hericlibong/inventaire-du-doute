@@ -262,44 +262,30 @@
 	/* --- Composition verticale (mobile + tablette portrait) : titre en haut,
 	   nav sur la fiche basse. Même condition que la <source> mobile ci-dessus. --- */
 	@media (max-width: 767px), (orientation: portrait) and (max-width: 1024px) {
-		/* Le cadrage vertical d'origine plaçait le visage exactement sous le bloc
-		   éditorial. Un léger agrandissement ancré à gauche le décale vers la partie
-		   droite de l'affiche, où il reste visible sans fabriquer une seconde image. */
+		/* Le texte et le visage ne se disputent plus le même espace. Le haut de
+		   l'affiche prolonge l'aplat sombre de l'image ; le bitmap commence ensuite,
+		   sans agrandissement ni voile, et garde son sujet dans la moitié basse. */
+		.fond {
+			background: #111923;
+		}
+
 		.fond img {
-			width: 118%;
+			inset: 47% 0 auto;
+			width: 100%;
+			height: auto;
 			max-width: none;
-			object-position: left center;
+			object-fit: contain;
+			object-position: center top;
 		}
 
 		.titre {
 			top: 4%;
 			left: 6%;
-			/* 88 % : le texte a besoin de la largeur, et le voile local le suit
-			   désormais jusqu'au bout. À 66 %, « VOLUME 1 — AUTOUR DES MAÎTRES »
-			   débordait sur l'illustration claire et sa fin devenait illisible
-			   (constat du 2026-08-07). */
-			max-width: 64%;
+			max-width: 88%;
 		}
-		/* Correction de contraste LOCALE derrière le bloc titre (le bitmap est réduit
-		   sur petit écran, l'aplat sombre ne descend pas assez). Dégradé feutré en
-		   haut/bas (mask) : pas un voile uniforme sur l'image.
-		   Le fondu à droite s'arrêtait à 88 % et laissait les fins de ligne sur le
-		   clair ; il tient maintenant jusqu'au bord, et le voile est un peu plus dense
-		   pour que la source, en petit corps gris, reste lisible. */
+
 		.titre::before {
-			content: '';
-			position: absolute;
-			z-index: -1;
-			inset: -0.6rem -1.2rem -1rem -1.6rem;
-			pointer-events: none;
-			background: linear-gradient(
-				100deg,
-				rgba(17, 25, 35, 0.86),
-				rgba(17, 25, 35, 0.78) 62%,
-				rgba(17, 25, 35, 0.6) 100%
-			);
-			-webkit-mask-image: linear-gradient(to bottom, transparent, #000 8%, #000 94%, transparent);
-			mask-image: linear-gradient(to bottom, transparent, #000 8%, #000 94%, transparent);
+			display: none;
 		}
 		.titre h1 {
 			font-size: clamp(2.4rem, 12vw, 3.6rem);

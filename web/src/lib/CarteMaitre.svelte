@@ -121,6 +121,9 @@
 	// panneau. Rien d'autre ne s'affiche au passage de la souris.
 	let choisi = $state(null); // code Muséofile
 	const musee = $derived(points.find((p) => p.code === choisi) ?? null);
+	let sceneEl = $state();
+	let popupEl = $state();
+	let popup = $state({ left: 0, top: 0, flecheX: 24, placement: 'dessous', pret: false });
 
 	// Changer d'artiste referme le panneau : un code de musée ne vaut que pour
 	// l'artiste où il a été choisi.
@@ -129,11 +132,65 @@
 		choisi = null;
 	});
 
-	// Choisir un musée REMPLACE le contenu du panneau. Choisir deux fois le même ne
-	// le referme pas : seul « Fermer » ferme (2026-08-06) — sur un écran tactile,
-	// un second appui involontaire faisait disparaître ce qu'on venait d'ouvrir.
+	// Sur mobile, le panneau devient une bulle attachée au point. Sa position est
+	// calculée après son rendu réel : les musées à une œuvre et ceux à plusieurs
+	// œuvres n'ont pas la même hauteur.
+	function positionnerPopup(code = choisi) {
+		if (!code || !sceneEl || !popupEl || !window.matchMedia('(max-width: 720px)').matches) return;
+		const pointEl = sceneEl.querySelector(`[data-point="${CSS.escape(code)}"]`);
+		if (!pointEl) return;
+
+		const sceneRect = sceneEl.getBoundingClientRect();
+		const pointRect = pointEl.getBoundingClientRect();
+		const largeur = popupEl.offsetWidth;
+		const hauteur = popupEl.offsetHeight;
+		const marge = 8;
+		const ecart = 12;
+		const xPoint = pointRect.left + pointRect.width / 2 - sceneRect.left;
+		const yPoint = pointRect.top + pointRect.height / 2 - sceneRect.top;
+		const left = Math.min(Math.max(xPoint - largeur / 2, marge), sceneRect.width - largeur - marge);
+		const placeHaut = yPoint - ecart;
+		const placeBas = sceneRect.height - yPoint - ecart;
+		const placement = placeHaut >= hauteur || placeHaut >= placeBas ? 'dessus' : 'dessous';
+		const topBrut = placement === 'dessus' ? yPoint - hauteur - ecart : yPoint + ecart;
+		// La bulle peut dépasser légèrement du dessin : la contraindre au rectangle
+		// de la carte la rabattait sur les points du sud à 320 px. La scène n'est pas
+		// rognée, et le contrôle de fenêtre ci-dessous garantit sa visibilité.
+		const top = topBrut;
+
+		popup = {
+			left,
+			top,
+			flecheX: Math.min(Math.max(xPoint - left, 14), largeur - 14),
+			placement,
+			pret: true
+		};
+
+		// Le point et la bulle se déplacent ensemble avec la page. On ne défile que
+		// lorsque l'ensemble sortirait effectivement de la fenêtre visible.
+		requestAnimationFrame(() => {
+			const rect = popupEl?.getBoundingClientRect();
+			if (!rect) return;
+			const hautVisible = 108;
+			const basVisible = window.innerHeight - 12;
+			if (rect.top < hautVisible) {
+				window.scrollBy({ top: rect.top - hautVisible, behavior: 'auto' });
+			} else if (rect.bottom > basVisible) {
+				window.scrollBy({ top: rect.bottom - basVisible, behavior: 'auto' });
+			}
+		});
+	}
+
+	function programmerPopup(code = choisi) {
+		if (!code || !window.matchMedia('(max-width: 720px)').matches) return;
+		popup.pret = false;
+		requestAnimationFrame(() => requestAnimationFrame(() => positionnerPopup(code)));
+	}
+
+	// Choisir un musée remplace le contenu sans refermer un second appui.
 	function choisir(code) {
 		choisi = code;
+		programmerPopup(code);
 	}
 
 	// Fermeture : la croix ou Échap. Le focus retourne AU POINT d'où l'on vient —
@@ -158,15 +215,67 @@
 			choisir(code);
 		}
 	}
+
+	function auRedimensionnement() {
+		if (choisi) programmerPopup(choisi);
+	}
 </script>
 
-<svelte:window onkeydown={auClavierPage} />
+<svelte:window onkeydown={auClavierPage} onresize={auRedimensionnement} />
+
+{#snippet panneauMusee()}
+	<div class="panneau-musee" role="group" aria-label="Musée choisi">
+		<header class="panneau-entete">
+			<div class="entete-texte">
+				<p class="panneau-nom">{musee.nom}</p>
+				<p class="panneau-ville">{musee.ville}</p>
+			</div>
+			<button type="button" class="fermer" aria-label="Fermer le panneau" onclick={fermerPanneau}>
+				<span aria-hidden="true">×</span>
+			</button>
+		</header>
+		<div class="panneau-corps">
+			<p class="panneau-compte">{concernees(musee.doute)}</p>
+			{#if musee.oeuvreUnique?.titre}
+				<p class="oeuvre-unique">{musee.oeuvreUnique.titre}</p>
+			{/if}
+			<ul class="panneau-mentions">
+				{#each musee.lignes as l (l.label)}
+					<li>
+						<span class="pastille" style="background: {l.couleur}"></span>
+						<span class="mention-label">{l.label}</span>
+						<span class="mention-n">{l.valeur}</span>
+					</li>
+				{/each}
+			</ul>
+			<div class="panneau-actions">
+				{#if onVoirOeuvres}
+					<button type="button" class="ligne-action interne" onclick={() => onVoirOeuvres(musee.code)}>
+						<span>{voirOeuvres(musee.doute)}</span>
+						<span class="fleche" aria-hidden="true">›</span>
+					</button>
+				{/if}
+				{#if musee.oeuvreUnique}
+					<a
+						class="ligne-action externe"
+						href={lienPop(musee.oeuvreUnique.reference)}
+						target="_blank"
+						rel="noreferrer"
+					>
+						<span>Consulter la notice sur POP</span>
+						<span class="fleche" aria-hidden="true">↗</span>
+					</a>
+				{/if}
+			</div>
+		</div>
+	</div>
+{/snippet}
 
 <figure class="carte">
 	<figcaption class="titre">Où sont conservées ces œuvres&nbsp;?</figcaption>
 
 	<div class="agencement">
-		<div class="scene">
+		<div class="scene" bind:this={sceneEl}>
 			<svg viewBox="0 0 {W} {H}" role="img" aria-label="Carte des musées de France conservant des œuvres où le nom de {maitre.nom} est accompagné d’une formulation prudente">
 				<!-- Fond régions : illustration discrète, aucune donnée. -->
 				{#each regions as d, i (i)}
@@ -193,84 +302,24 @@
 					/>
 				{/each}
 			</svg>
-
+			{#if musee}
+				<div
+					class="popup-mobile"
+					class:dessus={popup.placement === 'dessus'}
+					class:pret={popup.pret}
+					bind:this={popupEl}
+					style="left: {popup.left}px; top: {popup.top}px; --fleche-x: {popup.flecheX}px"
+				>
+					{@render panneauMusee()}
+				</div>
+			{/if}
 		</div>
 
-		<div class="flanc">
+		<div class="flanc" class:avec-selection={musee}>
 			<!-- Panneau du musée choisi : le seul endroit où vivent les liens. Il
 			     remplace la légende tant qu'un musée est choisi. -->
 			{#if musee}
-				<div class="panneau-musee" role="group" aria-label="Musée choisi">
-					<!-- En-tête : qui l'on regarde, et de quoi sortir. Fond gris neutre
-					     pleine largeur, filet dessous — le corps garde son blanc-papier. -->
-					<header class="panneau-entete">
-						<div class="entete-texte">
-							<p class="panneau-nom">{musee.nom}</p>
-							<p class="panneau-ville">{musee.ville}</p>
-						</div>
-						<!-- La croix remplace le lien « Fermer » (2026-08-08) : la fermeture
-						     d'un panneau se met à son coin, pas au bout de son contenu. Vrai
-						     bouton, cible confortable, nom accessible en toutes lettres. -->
-						<button
-							type="button"
-							class="fermer"
-							aria-label="Fermer le panneau"
-							onclick={fermerPanneau}
-						>
-							<span aria-hidden="true">×</span>
-						</button>
-					</header>
-					<div class="panneau-corps">
-						<p class="panneau-compte">{concernees(musee.doute)}</p>
-
-						<!-- Musée à une seule œuvre : son titre, dans la graphie exacte publiée
-						     par le musée — aucune normalisation (decisions.md, 2026-08-08). -->
-						{#if musee.oeuvreUnique?.titre}
-							<p class="oeuvre-unique">{musee.oeuvreUnique.titre}</p>
-						{/if}
-
-						<!-- Les mentions sont une INFORMATION : ni boutons, ni filtres. -->
-						<ul class="panneau-mentions">
-							{#each musee.lignes as l (l.label)}
-								<li>
-									<span class="pastille" style="background: {l.couleur}"></span>
-									<span class="mention-label">{l.label}</span>
-									<span class="mention-n">{l.valeur}</span>
-								</li>
-							{/each}
-						</ul>
-
-						<!-- Actions en LIGNES, au bas du panneau (2026-08-08 bis) : des boutons
-						     rectangulaires y faisaient deux blocs pleins dans un panneau de dix
-						     lignes. Un filet ouvre la zone, chaque ligne se clique sur toute sa
-						     largeur, et une petite icône dit où l'on va : un chevron pour rester
-						     ici, une flèche oblique pour sortir du site.
-						     La sémantique ne bouge pas : l'action interne change un onglet et un
-						     filtre, c'est un <button> ; la notice publique est ailleurs, c'est un
-						     <a href>. -->
-						<div class="panneau-actions">
-							{#if onVoirOeuvres}
-								<button type="button" class="ligne-action interne" onclick={() => onVoirOeuvres(musee.code)}>
-									<span>{voirOeuvres(musee.doute)}</span>
-									<span class="fleche" aria-hidden="true">›</span>
-								</button>
-							{/if}
-							<!-- Le lien POP n'a de sens qu'au singulier : à plusieurs œuvres, il n'y
-							     a pas UNE notice à ouvrir. -->
-							{#if musee.oeuvreUnique}
-								<a
-									class="ligne-action externe"
-									href={lienPop(musee.oeuvreUnique.reference)}
-									target="_blank"
-									rel="noreferrer"
-								>
-									<span>Consulter la notice sur POP</span>
-									<span class="fleche" aria-hidden="true">↗</span>
-								</a>
-							{/if}
-						</div>
-					</div>
-				</div>
+				<div class="panneau-desktop">{@render panneauMusee()}</div>
 			{:else}
 				<!-- Aucun musée choisi : ce que le point représente, et ce qu'on peut en
 				     faire. Plus de mode d'emploi du survol — il n'affiche plus rien. -->
@@ -340,6 +389,10 @@
 		position: relative; /* repère du tooltip positionné en absolu */
 	}
 
+	.popup-mobile {
+		display: none;
+	}
+
 	.flanc {
 		position: sticky;
 		top: var(--espace-4);
@@ -354,27 +407,52 @@
 			position: static;
 		}
 
-		/* Sur mobile, le panneau ne doit pas apparaître après toute la hauteur de la
-		   carte. Il devient une feuille basse immédiatement visible, sans masquer le
-		   contexte par un fond plein. Son propre contenu défile si nécessaire. */
-		.flanc .panneau-musee {
-			position: fixed;
-			z-index: 30;
-			left: max(0.75rem, env(safe-area-inset-left));
-			right: max(0.75rem, env(safe-area-inset-right));
-			bottom: max(0.75rem, env(safe-area-inset-bottom));
-			max-height: min(24rem, 58dvh);
-			overflow-x: hidden;
-			overflow-y: auto;
-			box-shadow: 0 0.75rem 2.2rem rgba(43, 30, 20, 0.2);
+		.panneau-desktop,
+		.flanc.avec-selection {
+			display: none;
 		}
 
-		/* Le nom du musée et la fermeture restent accessibles quand un panneau long
-		   défile. */
-		.panneau-entete {
-			position: sticky;
-			top: 0;
-			z-index: 1;
+		/* Sur mobile, le détail reste dans la carte et près du point choisi. Il ne
+		   devient ni une feuille fixe ni un second écran. */
+		.popup-mobile {
+			display: block;
+			position: absolute;
+			z-index: 20;
+			width: min(14.5rem, calc(100% - 1rem));
+			opacity: 0;
+			pointer-events: none;
+			transition: opacity 0.1s ease-out;
+		}
+
+		.popup-mobile.pret {
+			opacity: 1;
+			pointer-events: auto;
+		}
+
+		.popup-mobile::after {
+			content: '';
+			position: absolute;
+			left: var(--fleche-x);
+			top: -6px;
+			transform: translateX(-50%);
+			border-right: 6px solid transparent;
+			border-bottom: 6px solid rgba(255, 253, 249, 0.95);
+			border-left: 6px solid transparent;
+		}
+
+		.popup-mobile.dessus::after {
+			top: auto;
+			bottom: -6px;
+			border-top: 6px solid rgba(255, 253, 249, 0.95);
+			border-bottom: 0;
+		}
+
+		.popup-mobile .panneau-musee {
+			max-height: min(15rem, calc(100dvh - 8rem));
+			overflow-x: hidden;
+			overflow-y: auto;
+			background: rgba(255, 253, 249, 0.95);
+			box-shadow: 0 0.45rem 1.25rem rgba(43, 30, 20, 0.16);
 		}
 	}
 
@@ -734,5 +812,51 @@
 		font-style: italic;
 		line-height: 1.45;
 		color: var(--couleur-encre-douce);
+	}
+
+	/* La bulle mobile garde le même contenu que le panneau latéral, mais resserré
+	   pour rester un détail lié au point et non une fenêtre dans la fenêtre. */
+	@media (max-width: 720px) {
+		.popup-mobile .panneau-entete {
+			position: sticky;
+			top: 0;
+			z-index: 1;
+			padding: 0.45rem 0.55rem;
+			background: rgba(242, 239, 233, 0.97);
+		}
+
+		.popup-mobile .fermer {
+			width: 2.25rem;
+			height: 2.25rem;
+			margin: -0.55rem -0.45rem -0.55rem 0;
+		}
+
+		.popup-mobile .panneau-corps {
+			gap: 0.28rem;
+			padding: 0.5rem 0.55rem;
+		}
+
+		.popup-mobile .panneau-nom,
+		.popup-mobile .panneau-compte,
+		.popup-mobile .oeuvre-unique {
+			font-size: 0.78rem;
+		}
+
+		.popup-mobile .oeuvre-unique {
+			line-height: 1.25;
+		}
+
+		.popup-mobile .panneau-mentions,
+		.popup-mobile .ligne-action {
+			font-size: 0.72rem;
+		}
+
+		.popup-mobile .panneau-actions {
+			margin-top: 0.15rem;
+		}
+
+		.popup-mobile .ligne-action {
+			padding: 0.35rem 0.08rem;
+		}
 	}
 </style>

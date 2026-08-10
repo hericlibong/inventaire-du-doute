@@ -83,7 +83,7 @@
 		transform: translate(-50%, calc(-100% - 10px));
 		width: max-content;
 		min-width: 13rem;
-		max-width: 17rem;
+		max-width: min(17rem, calc(100% - 1rem));
 		padding: 0;
 		overflow: hidden;
 		/* Finition du 2026-08-08 : fond très légèrement translucide (96 %), bordure

@@ -3,6 +3,8 @@
 	import '$lib/styles/fonts.css';
 	import { page } from '$app/stores';
 	import { base } from '$app/paths';
+	import { Globe, Mail } from '@lucide/svelte';
+	import SiGithub from '@icons-pack/svelte-simple-icons/icons/SiGithub';
 
 	let { children } = $props();
 
@@ -93,22 +95,32 @@
 	{@render children()}
 </main>
 
-<footer>
+<footer class:accueil={estAccueil}>
 	<div class="footer-interieur">
 		<div class="footer-identite">
-			<p class="footer-auteur">Un projet de Héric Libong</p>
-			<p class="footer-liens">
-				<a href="mailto:heric.afrimages@gmail.com">E-mail</a>
-				<a href="https://hericlibong.github.io/">Portfolio</a>
-				<a href="https://github.com/hericlibong/inventaire-du-doute">GitHub</a>
+			<p class="footer-auteur"><span>Auteur&nbsp;:</span> Héric Libong</p>
+			<div class="footer-contacts" aria-label="Coordonnées et liens du projet">
+				<a href="mailto:hericlibong@gmail.com">
+					<Mail size={15} strokeWidth={1.7} aria-hidden="true" />
+					<span>hericlibong@gmail.com</span>
+				</a>
+				<a href="https://hericlibong.github.io/">
+					<Globe size={15} strokeWidth={1.7} aria-hidden="true" />
+					<span>Site web</span>
+				</a>
+				<a
+					class="lien-icone"
+					href="https://github.com/hericlibong/inventaire-du-doute"
+					aria-label="Dépôt GitHub du projet"
+					title="Dépôt GitHub du projet"
+				>
+					<SiGithub size={16} title="GitHub" />
+				</a>
+			</div>
+			<p class="footer-methode">
 				<a href="{base}/methode">Méthode, sources et limites</a>
 			</p>
 		</div>
-		<p class="footer-source">
-			Source unique : base Joconde (Ministère de la Culture), Licence Ouverte 2.0.
-			Ce projet n'authentifie aucune œuvre : il restitue ce que les musées ont
-			eux-mêmes publié.
-		</p>
 	</div>
 </footer>
 
@@ -271,48 +283,89 @@
 		margin-top: var(--espace-6);
 	}
 
+	/* La couverture touche directement son cadre inférieur. La marge générale du
+	   footer créait ici seulement une bande blanche sans fonction. */
+	footer.accueil {
+		margin-top: 0;
+	}
+
 	.footer-interieur {
 		max-width: var(--largeur-max);
 		margin: 0 auto;
 		padding: var(--espace-5) var(--espace-5);
-		display: grid;
-		grid-template-columns: minmax(15rem, 0.8fr) minmax(20rem, 1.2fr);
-		gap: var(--espace-5);
-		align-items: start;
 	}
 
 	.footer-auteur,
-	.footer-liens,
-	.footer-source {
+	.footer-methode {
 		margin: 0;
 	}
 
 	.footer-auteur {
-		font-family: var(--police-titre);
-		font-size: var(--taille-m);
-		font-weight: 600;
+		font-family: var(--police-ui);
+		font-size: var(--taille-xs);
+		font-weight: 500;
 		color: var(--cadre-encre);
 	}
 
-	.footer-liens {
+	.footer-auteur span {
+		color: var(--cadre-encre-douce);
+		font-weight: 400;
+	}
+
+	.footer-contacts {
 		display: flex;
+		align-items: center;
 		flex-wrap: wrap;
-		gap: 0.35rem var(--espace-4);
-		margin-top: var(--espace-2);
+		gap: 0.3rem var(--espace-3);
+		margin-top: 0.4rem;
 	}
 
-	.footer-liens a {
+	.footer-contacts a {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.35rem;
+		min-height: 2rem;
+		padding: 0.15rem 0.25rem;
+		border-radius: 3px;
+		color: var(--cadre-encre-douce);
+		font-size: var(--taille-xs);
+		line-height: 1.2;
+		text-decoration: none;
+	}
+
+	.footer-contacts a:hover {
+		background: rgba(255, 255, 255, 0.07);
 		color: var(--cadre-encre);
-		text-underline-offset: 0.18em;
 	}
 
-	.footer-liens a:hover,
-	.footer-liens a:focus-visible {
-		text-decoration-thickness: 2px;
+	.footer-contacts a:focus-visible {
+		outline: 2px solid var(--cadre-encre);
+		outline-offset: 2px;
 	}
 
-	.footer-source {
-		line-height: 1.55;
+	.footer-contacts .lien-icone {
+		width: 2rem;
+		justify-content: center;
+		padding-inline: 0;
+	}
+
+	.footer-methode {
+		margin-top: 0.2rem;
+		font-family: var(--police-ui);
+		font-size: var(--taille-xs);
+	}
+
+	.footer-methode a {
+		color: var(--cadre-encre-douce);
+		text-decoration-color: rgba(255, 255, 255, 0.35);
+		text-decoration-thickness: 1px;
+		text-underline-offset: 0.2em;
+	}
+
+	.footer-methode a:hover,
+	.footer-methode a:focus-visible {
+		color: var(--cadre-encre);
+		text-decoration-color: currentColor;
 	}
 
 	/* Petit écran : les quatre entrées et le nom du projet ne tiennent pas sur une
@@ -343,8 +396,6 @@
 		}
 
 		.footer-interieur {
-			grid-template-columns: 1fr;
-			gap: var(--espace-4);
 			padding: var(--espace-5) var(--espace-4);
 		}
 	}
