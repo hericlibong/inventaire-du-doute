@@ -35,7 +35,7 @@ branche. La fusion dans `main` reste reservee a la cloture de F6/F7.
   - commande compacte persistante sur mobile ;
   - section active visible et defilement fluide.
   - composant commun applique aussi a la Methode, sans second systeme d'ancres.
-- [ ] **G4 — Liens d'action de la page Le projet**
+- [x] **G4 — Liens d'action de la page Le projet**
   - actions POP harmonisees avec l'onglet Oeuvres ;
   - liens editoriaux internes conserves comme liens de lecture.
 - [x] **G5 — Accueil mobile**

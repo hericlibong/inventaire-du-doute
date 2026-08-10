@@ -182,8 +182,13 @@
 						<p>{EXPLICATION[e.mention]}</p>
 
 						<p class="renvoi">
-							<a href={lienPop(e.reference)} target="_blank" rel="noopener">
-								Consulter la notice complète sur POP&nbsp;→
+							<a
+								class="action-pop"
+								href={lienPop(e.reference)}
+								target="_blank"
+								rel="noopener"
+							>
+								Voir la notice sur POP
 							</a>
 						</p>
 					</div>
@@ -610,6 +615,29 @@
 	   d'entre eux — il lui faut donc plus d'air que sous un bloc de notice. */
 	.renvoi-methode {
 		margin-top: var(--espace-5);
+	}
+
+	/* Une notice POP est une action vers une fiche externe, pas une continuation du
+	   texte. Même traitement secondaire que dans l'onglet Œuvres : contour léger,
+	   sans flèche ni aplat répété. Les renvois internes restent des liens de lecture. */
+	.action-pop {
+		display: inline-block;
+		padding: 0.5rem 0.75rem;
+		border: 1px solid color-mix(in srgb, var(--accent-cobalt) 45%, transparent);
+		border-radius: 2px;
+		color: var(--accent-cobalt);
+		background: transparent;
+		text-decoration: none;
+	}
+
+	.action-pop:hover {
+		border-color: var(--accent-cobalt);
+		background: color-mix(in srgb, var(--accent-cobalt) 8%, transparent);
+	}
+
+	.action-pop:focus-visible {
+		outline: 2px solid var(--accent-cobalt);
+		outline-offset: 2px;
 	}
 
 	.entree {
