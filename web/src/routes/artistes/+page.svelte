@@ -35,6 +35,7 @@
 	];
 
 	let groupeOnglets = $state(null);
+	let ficheEl = $state(null);
 
 	// Navigation dans le groupe d'onglets (A2, 2026-08-08). Les flèches déplacent
 	// ET sélectionnent : sur un jeu d'onglets, c'est le comportement attendu — on
@@ -64,6 +65,25 @@
 	$effect(() => {
 		selection;
 		museeActif = null;
+	});
+
+	// Sur mobile, choisir un autre artiste depuis le répertoire repliable ne doit
+	// pas conserver la position verticale de la fiche précédente. La vue active est
+	// conservée, mais sa nouvelle fiche revient à son point de départ et reçoit le
+	// focus : le changement est visible et annoncé au clavier.
+	let selectionPrecedente = selection;
+	$effect(() => {
+		const nom = selection;
+		if (nom === selectionPrecedente) return;
+		selectionPrecedente = nom;
+		if (!window.matchMedia('(max-width: 720px)').matches) return;
+		queueMicrotask(() => {
+			ficheEl?.focus({ preventScroll: true });
+			ficheEl?.scrollIntoView({
+				block: 'start',
+				behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'
+			});
+		});
 	});
 
 	// Carte → œuvres (phase 3) : le musée choisi sur la carte devient le filtre de
@@ -108,7 +128,12 @@
 
 		<!-- COLONNE DROITE : profil de l'artiste — portrait/identité + chiffres, onglets,
 		     contenu de l'onglet actif. Le graphe et ses interactions sont inchangés. -->
-		<div class="colonne-droite">
+		<div
+			class="colonne-droite"
+			bind:this={ficheEl}
+			tabindex="-1"
+			aria-label={maitre ? `Fiche de ${maitre.nom}` : 'Fiche de l’artiste'}
+		>
 			{#if maitre}
 				<BandeauMaitre {maitre} portrait={portraits[maitre.nom]} />
 
@@ -262,6 +287,10 @@
 		min-width: 0;
 	}
 
+	.colonne-droite:focus {
+		outline: none;
+	}
+
 	/* Onglets soulignés, actif en cobalt. */
 	/* LES TROIS COMMANDES DE LA VISUALISATION (2026-08-08, deuxième version).
 	   La première tentative avait fait une barre : un filet courant sur toute la
@@ -369,6 +398,10 @@
 			max-height: none;
 			overflow: visible;
 			padding-right: 0;
+		}
+
+		.colonne-droite {
+			scroll-margin-top: 7.5rem;
 		}
 
 		/* Le groupe prend toute la largeur disponible, les trois boutons se la

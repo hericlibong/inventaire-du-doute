@@ -64,9 +64,11 @@ branche. La fusion dans `main` reste reservee a la cloture de F6/F7.
   - composition textuelle compacte sur mobile ;
   - oeuvres illustrees prioritaires ;
   - filtres, pagination et lightbox verifies.
-- [ ] **M5 — Changement d'artiste**
+- [x] **M5 — Changement d'artiste**
   - retour au debut de la fiche ou de l'onglet actif ;
   - aucune position verticale heritee de l'artiste precedent.
+  - sur mobile, la nouvelle fiche recoit le focus et la vue active est conservee ;
+  - la reduction des animations supprime le defilement anime.
 
 ## Images - chantier parallele
 
