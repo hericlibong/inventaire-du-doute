@@ -55,10 +55,11 @@ branche. La fusion dans `main` reste reservee a la cloture de F6/F7.
   - bandeau compact quand le grand portrait sort de l'ecran ;
   - nom de l'artiste et onglets toujours accessibles ;
   - aucun grand portrait fixe qui occuperait l'ecran.
-- [ ] **M3 — Carte et panneau de musee**
+- [x] **M3 — Carte et panneau de musee**
   - panneau lateral conserve sur ordinateur ;
   - panneau immediatement visible depuis le bas de l'ecran sur mobile ;
   - fermeture, focus et retour du focus verifies.
+  - feuille mobile verifiee a 320, 390 et 430 px, avec defilement interne borne.
 - [ ] **M4 — Oeuvres sans reproduction**
   - composition textuelle compacte sur mobile ;
   - oeuvres illustrees prioritaires ;

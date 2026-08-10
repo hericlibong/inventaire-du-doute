@@ -353,6 +353,29 @@
 		.flanc {
 			position: static;
 		}
+
+		/* Sur mobile, le panneau ne doit pas apparaître après toute la hauteur de la
+		   carte. Il devient une feuille basse immédiatement visible, sans masquer le
+		   contexte par un fond plein. Son propre contenu défile si nécessaire. */
+		.flanc .panneau-musee {
+			position: fixed;
+			z-index: 30;
+			left: max(0.75rem, env(safe-area-inset-left));
+			right: max(0.75rem, env(safe-area-inset-right));
+			bottom: max(0.75rem, env(safe-area-inset-bottom));
+			max-height: min(24rem, 58dvh);
+			overflow-x: hidden;
+			overflow-y: auto;
+			box-shadow: 0 0.75rem 2.2rem rgba(43, 30, 20, 0.2);
+		}
+
+		/* Le nom du musée et la fermeture restent accessibles quand un panneau long
+		   défile. */
+		.panneau-entete {
+			position: sticky;
+			top: 0;
+			z-index: 1;
+		}
 	}
 
 	svg {
