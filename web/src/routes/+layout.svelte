@@ -36,8 +36,11 @@
 	// code et leurs données restent au dépôt, hors de la navigation publique tant
 	// qu'elles ne sont pas publiées — elles seront la matière d'autres volumes.
 	//
-	// Navigation publique FINALE du volume 1 (phase 7, 2026-08-02) : quatre entrées,
-	// dans l'ordre de lecture. « Comprendre les mentions » en est sortie — ses
+	// Navigation publique du volume 1 : trois entrées dans l'ordre de lecture.
+	// « Méthode » a rejoint le footer après observation de la démonstration mobile :
+	// elle reste accessible partout et depuis les renvois contextuels, sans mettre
+	// au même rang l'outil principal et sa documentation. « Comprendre les mentions »
+	// en est sortie auparavant — ses
 	// définitions ont rejoint « Le projet », sous le graphique qui les compte, et
 	// son ancienne URL redirige.
 	//
@@ -51,8 +54,7 @@
 		// parle, quand « Présentation » ne disait que ce qu'elle est. La route ne
 		// bouge pas — elle a circulé.
 		{ titre: 'Le projet', href: '/projet' },
-		{ titre: 'Explorer les artistes', href: '/artistes' },
-		{ titre: 'Méthode', href: '/methode' }
+		{ titre: 'Explorer les artistes', href: '/artistes' }
 	];
 </script>
 
@@ -91,15 +93,24 @@
 	{@render children()}
 </main>
 
-{#if !estAccueil}
 <footer>
-	<p>
-		Source unique : base Joconde (Ministère de la Culture), Licence Ouverte 2.0.
-		Ce projet n'authentifie aucune œuvre — il restitue ce que les musées ont
-		eux-mêmes publié.
-	</p>
+	<div class="footer-interieur">
+		<div class="footer-identite">
+			<p class="footer-auteur">Un projet de Héric Libong</p>
+			<p class="footer-liens">
+				<a href="mailto:heric.afrimages@gmail.com">E-mail</a>
+				<a href="https://hericlibong.github.io/">Portfolio</a>
+				<a href="https://github.com/hericlibong/inventaire-du-doute">GitHub</a>
+				<a href="{base}/methode">Méthode, sources et limites</a>
+			</p>
+		</div>
+		<p class="footer-source">
+			Source unique : base Joconde (Ministère de la Culture), Licence Ouverte 2.0.
+			Ce projet n'authentifie aucune œuvre : il restitue ce que les musées ont
+			eux-mêmes publié.
+		</p>
+	</div>
 </footer>
-{/if}
 
 <style>
 	/* Le header étant fixé en tête, une ancre atteinte par un lien du sommaire
@@ -260,10 +271,48 @@
 		margin-top: var(--espace-6);
 	}
 
-	footer p {
+	.footer-interieur {
 		max-width: var(--largeur-max);
 		margin: 0 auto;
 		padding: var(--espace-5) var(--espace-5);
+		display: grid;
+		grid-template-columns: minmax(15rem, 0.8fr) minmax(20rem, 1.2fr);
+		gap: var(--espace-5);
+		align-items: start;
+	}
+
+	.footer-auteur,
+	.footer-liens,
+	.footer-source {
+		margin: 0;
+	}
+
+	.footer-auteur {
+		font-family: var(--police-titre);
+		font-size: var(--taille-m);
+		font-weight: 600;
+		color: var(--cadre-encre);
+	}
+
+	.footer-liens {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.35rem var(--espace-4);
+		margin-top: var(--espace-2);
+	}
+
+	.footer-liens a {
+		color: var(--cadre-encre);
+		text-underline-offset: 0.18em;
+	}
+
+	.footer-liens a:hover,
+	.footer-liens a:focus-visible {
+		text-decoration-thickness: 2px;
+	}
+
+	.footer-source {
+		line-height: 1.55;
 	}
 
 	/* Petit écran : les quatre entrées et le nom du projet ne tiennent pas sur une
@@ -291,6 +340,12 @@
 		/* Le bandeau à deux lignes est plus haut : les ancres réservent d'autant. */
 		:global(html) {
 			scroll-padding-top: 7.5rem;
+		}
+
+		.footer-interieur {
+			grid-template-columns: 1fr;
+			gap: var(--espace-4);
+			padding: var(--espace-5) var(--espace-4);
 		}
 	}
 </style>

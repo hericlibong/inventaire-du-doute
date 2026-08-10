@@ -20,13 +20,13 @@ branche. La fusion dans `main` reste reservee a la cloture de F6/F7.
 
 ## Lot 1 - Structure generale du site
 
-- [ ] **G1 — Footer global et identite du projet**
+- [x] **G1 — Footer global et identite du projet**
   - nom de l'auteur ;
   - adresse electronique ;
   - portfolio ;
   - depot GitHub ;
   - source, licence et acces a la Methode.
-- [ ] **G2 — Navigation principale**
+- [x] **G2 — Navigation principale**
   - conserver Accueil, Le projet et Explorer les artistes ;
   - deplacer Methode dans le footer sous « Methode, sources et limites » ;
   - conserver les renvois contextuels vers la Methode.

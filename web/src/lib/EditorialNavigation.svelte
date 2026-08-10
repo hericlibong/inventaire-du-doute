@@ -26,8 +26,7 @@
 	// pas sur sa position.
 	const liens = [
 		{ href: '/projet', label: 'Le projet' },
-		{ href: '/artistes', label: 'Explorer les artistes', principal: true },
-		{ href: '/methode', label: 'Méthode' }
+		{ href: '/artistes', label: 'Explorer les artistes', principal: true }
 	];
 
 	// Même dépouillement du chemin de base que dans le layout : les routes se
