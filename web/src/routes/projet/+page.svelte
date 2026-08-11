@@ -107,17 +107,17 @@
 		<p class="kicker">Volume 1 — Autour des maîtres</p>
 		<h1>Qu'est-ce que L'inventaire du doute&nbsp;?</h1>
 		<p class="ouverture-texte">
-			L'inventaire du doute est un site éditorial et interactif fondé sur les données de
+			«&nbsp;L'Inventaire du doute&nbsp;» est un site éditorial et interactif fondé sur les données de la
 			<a
 				href="https://www.data.gouv.fr/fr/datasets/collections-des-musees-de-france-base-joconde/"
 				target="_blank"
-				rel="noopener">base Joconde</a>,
-			le catalogue collectif des collections des musées de France. Dans la version analysée,
-			Joconde rassemble plus d'un million de notices. Parmi elles,
+				rel="noopener">base Joconde</a>, le catalogue collectif des collections des musées de France.
+			Dans la version sur laquelle nous avons travaillé, Joconde rassemble plus d'un million de
+			notices d'œuvres d'art. Parmi elles,
 			<strong>{nombre(niveaux.doute_total)}</strong>, soit <strong>{tauxDoute}&nbsp;%</strong>,
-			indiquent une incertitude ou une réserve sur l'auteur d'une œuvre. Le projet organise
-			ces informations pour permettre de les consulter et de les explorer, sans chercher à
-			authentifier ni à réattribuer les œuvres.
+			indiquent qu'il y a une incertitude ou une réserve sur l'auteur d'une œuvre. Ce projet
+			organise ces informations pour permettre de les consulter et de les explorer, sans chercher
+			à authentifier ni à réattribuer les œuvres.
 		</p>
 	</header>
 
