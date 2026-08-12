@@ -30,6 +30,11 @@ CHAMPS = {
     "auteur": "Auteur",                          # formulation exacte (qualificatifs)
     "musee": "Nom_officiel_musee",
     "ville": "Ville",
+    # Identifiant stable de l'institution. Le NOM ne l'est pas : le même musée
+    # de Troyes s'écrit « d'archéologie » et « d’archéologie » selon la notice,
+    # et se dédouble dès qu'on regroupe par nom. Ajouté le 2026-08-12 pour les
+    # demandes d'autorisation (cf. build_demandes_autorisation.py).
+    "code_museofile": "Code_Museofile",
     "domaine": "Domaine",                        # type d'objet (peinture, dessin…)
     "denomination": "Denomination",
     "technique": "Materiaux_techniques",

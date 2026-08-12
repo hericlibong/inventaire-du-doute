@@ -4,36 +4,58 @@ Chaque décision est datée et motivée. Les plus récentes en haut.
 
 ## 2026-08-12 — Les demandes d'autorisation d'images, adressées par interlocuteur
 
-Reprise du « Levier A » différé le 2026-07-29. Rien n'est reclassé : l'audit des droits
-photo tient, et on ne fait que le trier par destinataire du courrier
-(`src/build_demandes_autorisation.py`, liste et courrier type dans
-`docs/demandes-autorisation.md`).
+Reprise du « Levier A » différé le 2026-07-29 : établir la liste des institutions à
+solliciter pour publier une reproduction (`src/build_demandes_autorisation.py`, liste et
+courrier type dans `docs/demandes-autorisation.md`).
 
-**Trois traitements, pas un.** Les 792 notices `unknown` sont le seul gisement où écrire
+**L'audit de juillet ne couvrait plus le site, et c'est la première correction.** Il portait
+sur 3 668 notices, celles des 69 artistes alors publiés ; le site en publie 102, soit
+6 081 notices. **2 413 notices n'avaient jamais été examinées**, dont 2 144 avec une image
+sur POP. Un sondage de 100 d'entre elles a chiffré le rendement avant de lancer — 72 % de
+crédit musée sans licence, 28 % de RMN — puis `build_images.py` a été rejoué : le cache a
+évité de relire les 3 370 déjà connues, et 2 144 notices ont été ajoutées. La règle de
+classement n'a pas bougé, seul le périmètre. Nouveau bilan : **2 322 `unknown`,
+3 192 `restricted`, 567 `unavailable`, et toujours zéro `open`** — le constat de juillet
+tient sur un corpus près de deux fois plus grand.
+
+**Le périmètre est celui du site, pas celui de la base.** Joconde compte 24 507 notices
+prudentes ; on ne demande une image que pour ce qu'on publie. Élargir la liste supposerait
+d'abord élargir le site, et c'est une autre décision.
+
+**Trois traitements, pas un.** Les 2 322 notices `unknown` sont le seul gisement où écrire
 sert à quelque chose : un crédit est publié, aucune licence ne l'est, et seul le musée peut
-trancher. Les 2 568 notices dont le crédit nomme une **agence** (RMN-Grand Palais pour
+trancher. Les 3 163 notices dont le crédit nomme une **agence** (RMN-Grand Palais pour
 l'essentiel, Bridgeman pour quatre) sont retirées des demandes aux musées : l'établissement
 ne détient pas ces droits, lui écrire est une démarche perdue — c'est un interlocuteur
-unique et une négociation tarifée, à décider séparément. Les 298 `unavailable` ne se
+unique et une négociation tarifée, à décider séparément. Les 567 `unavailable` ne se
 demandent pas : il n'y a pas de photographie. Le rattachement se fait sur le **crédit, pas
-sur le statut** : une dizaine de notices « soumises à autorisation » relèvent du musée
-lui-même (Besançon, Dole, Cherbourg, Auxonne, Bry-sur-Marne) et rejoignent son courrier.
-Total : **802 notices, 93 institutions**.
+sur le statut** : 39 notices « soumises à autorisation » relèvent du musée lui-même (38 à
+Besançon) et rejoignent son courrier. Total : **2 351 notices, 97 institutions**.
 
-**Dix courriers font 63 % du corpus, deux en font 43 %** — Montauban (210) et Besançon
-(131). À l'autre bout, 34 institutions n'ont qu'une notice : la longue traîne ne vaut pas
-un courrier chacune, et le classement du CSV sert à s'arrêter où l'on veut.
+**Le classement change du tout au tout, et le premier destinataire manquait.** Le musée de
+l'image d'Épinal (M0537, 519 notices d'imagerie populaire) et le musée de Troyes (M0303,
+295) étaient absents de la première liste ; Besançon triple. Cinq courriers couvrent 64 %
+du corpus, dix en couvrent 77 %. À l'autre bout, 32 institutions n'ont qu'une notice : la
+longue traîne ne vaut pas un courrier chacune, et le classement du CSV sert à s'arrêter où
+l'on veut.
+
+**On regroupe sur le code Muséofile, jamais sur le nom.** Troyes s'écrit « d'archéologie »
+et « d’archéologie » selon la notice — apostrophe droite contre apostrophe typographique,
+même code. Regroupé par nom, le musée se dédoublait en 165 + 129 notices et deux courriers
+partaient à la même adresse. `build_metadonnees.py` reprend donc `Code_Museofile`, et le nom
+affiché n'est plus qu'une étiquette (la graphie majoritaire).
 
 **Le crédit nomme un photographe, pas un service, dans la majorité des cas** (« © Roumagnac
 Guy », « GUENAT Pierre », « Art Shooting »). Le musée reste le point d'entrée, mais la
 réponse peut être « nous ne détenons pas les droits » : le courrier type demande donc
 explicitement l'interlocuteur à défaut de l'autorisation.
 
-**Un code parasite dans `musees.json`.** Une seconde entrée « musée du Louvre, Paris »
-(6 notices) porte comme code Muséofile l'intitulé « mode d'acquisition particulier », un
-champ Joconde recopié au mauvais endroit en amont du front. Le script ne retient que les
-codes de la forme `M` + chiffres et garde l'entrée la mieux fournie ; le défaut lui-même
-reste à corriger dans l'export.
+**La pièce jointe s'identifie par le numéro d'inventaire**, renseigné pour les 2 351
+notices, et non par le titre : 96 notices n'ont aucun intitulé (des dessins d'Ingres).
+
+Constat de passage, à corriger ailleurs : dans `musees.json`, une seconde entrée « musée du
+Louvre, Paris » porte comme code Muséofile l'intitulé « mode d'acquisition particulier », un
+champ Joconde recopié au mauvais endroit en amont du front.
 
 Le cadrage du 2026-08-06 tient : ces demandes portent sur **les œuvres de Joconde**, et
 c'est l'utilisateur qui les mène. Les quatre demandes de portraits et la clé d'API Paris

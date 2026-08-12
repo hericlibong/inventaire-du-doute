@@ -32,7 +32,6 @@ from pathlib import Path
 
 EXPORTS = Path("data/exports")
 SOURCE = EXPORTS / "images_oeuvres.csv"
-MUSEES = EXPORTS / "web" / "musees.json"
 METADONNEES = EXPORTS / "oeuvres_metadonnees.json"
 SORTIE_INSTITUTIONS = EXPORTS / "demandes_autorisation.csv"
 SORTIE_NOTICES = EXPORTS / "demandes_autorisation_notices.csv"
@@ -51,34 +50,28 @@ def est_agence(credit: str) -> bool:
     return any(mot in _norm(credit) for mot in AGENCES)
 
 
-def codes_museofile() -> dict:
-    """Rattache (nom, ville) au code Muséofile, qui ouvre la fiche de contact.
+def est_code(code: str) -> bool:
+    """Un code Muséofile est un M suivi de chiffres.
 
-    Deux prudences : on n'accepte qu'un code de la forme M + chiffres (la base
-    contient au moins un code parasite, un intitulé de champ Joconde recopié à
-    sa place), et à nom et ville égaux on garde l'entrée la plus fournie.
+    Le contrôle n'est pas décoratif : l'export des musées contient au moins un
+    code parasite — l'intitulé « mode d'acquisition particulier » recopié à la
+    place du code, sur une seconde entrée « musée du Louvre ».
     """
-    codes: dict = {}
-    volumes: dict = {}
-    for musee in json.loads(MUSEES.read_text(encoding="utf-8")):
-        code = musee.get("code_museofile") or ""
-        if not re.fullmatch(r"M\d+", code):
-            continue
-        cle = (_norm(musee.get("nom") or ""), _norm(musee.get("ville") or ""))
-        if musee.get("notices_versees", 0) >= volumes.get(cle, -1):
-            codes[cle] = code
-            volumes[cle] = musee.get("notices_versees", 0)
-    return codes
+    return bool(re.fullmatch(r"M\d+", code or ""))
 
 
 def main() -> None:
     lignes = list(csv.DictReader(SOURCE.open(encoding="utf-8")))
-    codes = codes_museofile()
-    # Le titre manque sur 97 notices (des dessins d'Ingres sans intitulé) : le
-    # numéro d'inventaire est de toute façon ce qui identifie l'œuvre au musée.
+    # Le titre manque sur une centaine de notices (des dessins d'Ingres sans
+    # intitulé) ; le numéro d'inventaire, lui, est renseigné partout, et c'est
+    # de toute façon ce qui identifie l'œuvre au musée. Ce fichier porte aussi
+    # le code Muséofile, seul identifiant stable de l'institution.
     metadonnees = json.loads(METADONNEES.read_text(encoding="utf-8"))
 
-    groupes = defaultdict(lambda: {"notices": [], "credits": Counter(), "artistes": Counter()})
+    groupes = defaultdict(
+        lambda: {"notices": [], "credits": Counter(), "artistes": Counter(),
+                 "noms": Counter(), "villes": Counter()}
+    )
     agence = {"notices": [], "credits": Counter()}
 
     for ligne in lignes:
@@ -88,9 +81,18 @@ def main() -> None:
             agence["notices"].append(ligne)
             agence["credits"][ligne["credit"].strip()] += 1
             continue
-        entree = groupes[(ligne["musee"], ligne["ville"])]
+        fiche = metadonnees.get(ligne["reference"], {})
+        code = fiche.get("code_museofile", "")
+        # On regroupe sur le CODE, jamais sur le nom : le musée de Troyes
+        # s'écrit « d'archéologie » et « d’archéologie » selon la notice, et se
+        # dédoublait en deux destinataires. À défaut de code, le nom fait office
+        # de clé — c'est le cas de deux institutions.
+        cle = code if est_code(code) else f"{ligne['musee']} — {ligne['ville']}"
+        entree = groupes[cle]
         entree["notices"].append(ligne)
         entree["credits"][ligne["credit"].strip() or "(crédit vide)"] += 1
+        entree["noms"][ligne["musee"]] += 1
+        entree["villes"][ligne["ville"]] += 1
         for artiste in ligne["artistes"].split("|"):
             if artiste.strip():
                 entree["artistes"][artiste.strip()] += 1
@@ -113,14 +115,14 @@ def main() -> None:
                 "exemple_notice_pop",
             ]
         )
-        for rang, ((musee, ville), entree) in enumerate(classement, start=1):
+        for rang, (cle, entree) in enumerate(classement, start=1):
             statuts = Counter(n["statut"] for n in entree["notices"])
             plume.writerow(
                 [
                     rang,
-                    musee,
-                    ville,
-                    codes.get((_norm(musee), _norm(ville)), ""),
+                    entree["noms"].most_common(1)[0][0],
+                    entree["villes"].most_common(1)[0][0],
+                    cle if est_code(cle) else "",
                     len(entree["notices"]),
                     statuts["unknown"],
                     statuts["restricted"],
@@ -146,7 +148,9 @@ def main() -> None:
                 "notice_pop",
             ]
         )
-        for (musee, ville), entree in classement:
+        for cle, entree in classement:
+            musee = entree["noms"].most_common(1)[0][0]
+            ville = entree["villes"].most_common(1)[0][0]
             for notice in sorted(entree["notices"], key=lambda n: n["titre"]):
                 fiche = metadonnees.get(notice["reference"], {})
                 plume.writerow(
@@ -166,8 +170,10 @@ def main() -> None:
 
     total = sum(len(e["notices"]) for _, e in classement)
     print(f"{len(classement)} institutions à solliciter, {total} notices")
-    for (musee, ville), entree in classement[:10]:
-        print(f"  {len(entree['notices']):4d}  {musee} — {ville}")
+    for cle, entree in classement[:12]:
+        nom = entree["noms"].most_common(1)[0][0]
+        ville = entree["villes"].most_common(1)[0][0]
+        print(f"  {len(entree['notices']):4d}  {nom} — {ville} ({cle})")
     print(f"\nHors périmètre musée (agences photo) : {len(agence['notices'])} notices")
     for credit, nombre in agence["credits"].most_common(5):
         print(f"  {nombre:5d}  {credit}")

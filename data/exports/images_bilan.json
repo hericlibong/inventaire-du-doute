@@ -1,95 +1,138 @@
 {
- "date": "2026-07-29",
- "total_references": 3668,
+ "date": "2026-08-12",
+ "total_references": 6081,
  "par_statut": {
-  "restricted": 2578,
-  "unknown": 792,
-  "unavailable": 298
+  "restricted": 3192,
+  "unknown": 2322,
+  "unavailable": 567
  },
  "par_musee": {
   "musée du Louvre": {
-   "restricted": 2342,
-   "unavailable": 75,
-   "unknown": 18
+   "restricted": 2809,
+   "unavailable": 78,
+   "unknown": 27
+  },
+  "musée des beaux-arts et d'archéologie": {
+   "unknown": 480,
+   "restricted": 47,
+   "unavailable": 3
+  },
+  "musée de l'image": {
+   "unknown": 519
+  },
+  "musée des beaux-arts": {
+   "unknown": 183,
+   "unavailable": 77,
+   "restricted": 7
   },
   "musée Ingres Bourdelle": {
    "unknown": 210,
    "unavailable": 6
   },
-  "musée des beaux-arts": {
-   "unknown": 127,
-   "unavailable": 77,
-   "restricted": 7
-  },
-  "musée des beaux-arts et d'archéologie": {
-   "restricted": 21,
-   "unknown": 120,
-   "unavailable": 3
+  "musée des beaux-arts et d’archéologie": {
+   "unavailable": 42,
+   "unknown": 166
   },
   "musée Condé": {
    "restricted": 110,
    "unknown": 16
+  },
+  "musée d'Art et d'Histoire Louis Senlecq": {
+   "unavailable": 107
+  },
+  "musée de Picardie": {
+   "unknown": 97
+  },
+  "musée des beaux-arts et galerie David-d'Angers": {
+   "unknown": 87
   },
   "musée des Beaux-Arts": {
    "unavailable": 17,
    "unknown": 46,
    "restricted": 8
   },
+  "musée Crozatier": {
+   "unknown": 65,
+   "unavailable": 3
+  },
+  "musée national de la céramique": {
+   "unknown": 67
+  },
   "musée national des châteaux de Versailles et de Trianon": {
-   "restricted": 38,
+   "restricted": 39,
    "unknown": 6,
    "unavailable": 17
   },
+  "musée Rodin": {
+   "unknown": 28,
+   "unavailable": 33
+  },
+  "musée d'Orsay": {
+   "restricted": 53
+  },
+  "musée Grobet-Labadié": {
+   "unavailable": 46,
+   "unknown": 2
+  },
+  "musée Adrien Mentienne": {
+   "restricted": 1,
+   "unknown": 43
+  },
   "musée de la Chartreuse": {
    "unavailable": 34,
-   "unknown": 7
+   "unknown": 8
+  },
+  "musée du Vieux-Château": {
+   "unavailable": 41
+  },
+  "musée national du château de Pau": {
+   "unknown": 15,
+   "restricted": 18,
+   "unavailable": 1
+  },
+  "musée national du château de Fontainebleau": {
+   "restricted": 26,
+   "unavailable": 7
+  },
+  "musée franco-américain du château de Blérancourt": {
+   "unavailable": 16,
+   "restricted": 14
+  },
+  "musée national Magnin": {
+   "restricted": 19,
+   "unavailable": 6,
+   "unknown": 1
   },
   "musée Lambinet": {
    "unknown": 25
   },
-  "musée national Magnin": {
-   "restricted": 16,
-   "unavailable": 6,
-   "unknown": 1
+  "musée du Moyen Age - thermes et hôtel de Cluny": {
+   "unknown": 3,
+   "restricted": 22
+  },
+  "musée Westercamp": {
+   "unknown": 25
   },
   "musée municipal": {
-   "unknown": 19
-  },
-  "musée Grobet-Labadié": {
-   "unavailable": 16,
-   "unknown": 2
-  },
-  "musée national du château de Fontainebleau": {
-   "restricted": 14,
-   "unavailable": 3
+   "unknown": 21
   },
   "musée de Grenoble": {
-   "unknown": 16
-  },
-  "musée des beaux-arts et galerie David-d'Angers": {
-   "unknown": 12
+   "unknown": 16,
+   "unavailable": 1
   },
   "musée Rolin": {
    "unknown": 11
   },
+  "musée des Augustins": {
+   "unknown": 10
+  },
   "musée Granet": {
    "unknown": 10
   },
-  "musée Crozatier": {
-   "unknown": 6,
-   "unavailable": 3
-  },
-  "musée des Augustins": {
-   "unknown": 9
-  },
-  "musée des beaux-arts et d’archéologie": {
-   "unavailable": 8,
-   "unknown": 1
-  },
   "musée de Tessé": {
    "unavailable": 7,
-   "restricted": 1,
-   "unknown": 1
+   "unknown": 2,
+   "restricted": 1
   },
   "musée d'art Roger-Quillot": {
    "unknown": 7,
@@ -108,20 +151,23 @@
   "musée des Beaux-Arts de Saint-Denis": {
    "unknown": 8
   },
+  "musée des Beaux-Arts de Reims": {
+   "unknown": 7
+  },
   "musée Hyacinthe Rigaud": {
    "unknown": 7
   },
-  "musée des Beaux-Arts de Reims": {
-   "unknown": 6
-  },
   "musée des ursulines": {
-   "unknown": 4,
+   "unknown": 5,
    "unavailable": 1
   },
-  "musée d'art et d'histoire Saint-Germain": {
+  "Palais-musée des Archevêques de Narbonne": {
+   "unknown": 6
+  },
+  "musée Dobrée": {
    "unknown": 5
   },
-  "Palais-musée des Archevêques de Narbonne": {
+  "musée d'art et d'histoire Saint-Germain": {
    "unknown": 5
   },
   "musée Louis Philippe": {
@@ -130,9 +176,6 @@
   },
   "musée Thomas-Henry": {
    "restricted": 5
-  },
-  "musée Dobrée": {
-   "unknown": 4
   },
   "musée du Petit Palais": {
    "restricted": 4
@@ -158,6 +201,9 @@
   "musée d'Art et d'Histoire Romain Rolland": {
    "unknown": 3
   },
+  "Le Panoptique d'Autun, musée Rolin": {
+   "unknown": 3
+  },
   "musée Fragonard": {
    "unknown": 3
   },
@@ -176,15 +222,8 @@
   "château musées": {
    "unknown": 3
   },
-  "musée de Picardie": {
-   "unknown": 3
-  },
   "musée de la faïence Frédéric Blandin": {
    "unknown": 2
-  },
-  "musée national du château de Pau": {
-   "restricted": 1,
-   "unknown": 1
   },
   "musée barrois": {
    "unknown": 2
@@ -201,11 +240,12 @@
   "bibliothèque-musée Inguimbertine": {
    "unknown": 2
   },
+  "musée de Brou": {
+   "unknown": 1,
+   "unavailable": 1
+  },
   "musée Bonnat-Helleu, musée des Beaux-Arts de Bayonne": {
    "restricted": 2
-  },
-  "musée du Vieux-Château": {
-   "unavailable": 2
   },
   "musée de la Princerie": {
    "unknown": 2
@@ -228,8 +268,8 @@
   "musée Municipal": {
    "unknown": 1
   },
-  "Le Panoptique d'Autun, musée Rolin": {
-   "unknown": 1
+  "musée des civilisations de l'Europe et de la Méditerranée": {
+   "unavailable": 1
   },
   "musée national des châteaux de Malmaison et de Bois Préau": {
    "restricted": 1
@@ -237,11 +277,11 @@
   "musée d'art et d'archéologie": {
    "unknown": 1
   },
-  "Viséum-musée de la lunette (collections du musée de la lunette et du musée Jourdain)": {
+  "maison des templiers": {
    "unknown": 1
   },
-  "musée d'Orsay": {
-   "restricted": 1
+  "Viséum-musée de la lunette (collections du musée de la lunette et du musée Jourdain)": {
+   "unknown": 1
   },
   "musée d'Allard": {
    "unknown": 1
@@ -249,8 +289,8 @@
   "musée d'art, histoire et archéologie d'Évreux": {
    "unknown": 1
   },
-  "musée Adrien Mentienne": {
-   "restricted": 1
+  "musée de la Grande Saline": {
+   "unknown": 1
   },
   "musée de la vénerie": {
    "unknown": 1
@@ -273,14 +313,8 @@
   "musée Boucher de Perthes": {
    "unavailable": 1
   },
-  "musée Rodin": {
-   "unknown": 1
-  },
   "musée du domaine départemental de Sceaux": {
    "unknown": 1
-  },
-  "musée de Brou": {
-   "unavailable": 1
   },
   "musée du temps": {
    "unknown": 1
@@ -294,6 +328,16 @@
    "unavailable": 25,
    "restricted": 265,
    "unknown": 20
+  },
+  "Alexandre Clausel": {
+   "unavailable": 1,
+   "unknown": 294
+  },
+  "Charles Normand": {
+   "restricted": 244
+  },
+  "Léon Tirode": {
+   "unknown": 231
   },
   "Ingres": {
    "restricted": 3,
@@ -310,15 +354,28 @@
    "restricted": 167,
    "unavailable": 10
   },
+  "Louis Morinet": {
+   "unknown": 168
+  },
+  "Giacinto Calandrucci": {
+   "restricted": 157,
+   "unavailable": 1
+  },
   "Michel-Ange": {
    "restricted": 140,
    "unavailable": 7,
    "unknown": 1
   },
+  "Georges Ferdinand Bigot": {
+   "unknown": 125
+  },
   "Rubens": {
    "restricted": 97,
    "unknown": 13,
    "unavailable": 11
+  },
+  "Léon Fort": {
+   "unavailable": 107
   },
   "François Clouet": {
    "restricted": 93,
@@ -329,6 +386,12 @@
    "unavailable": 4,
    "restricted": 92,
    "unknown": 5
+  },
+  "Louis Duthoit": {
+   "unknown": 94
+  },
+  "Aimé Duthoit": {
+   "unknown": 93
   },
   "Annibale Carracci": {
    "unavailable": 8,
@@ -344,6 +407,9 @@
    "unknown": 7,
    "unavailable": 2,
    "restricted": 74
+  },
+  "Charles François Pinot": {
+   "unknown": 82
   },
   "Rodin": {
    "unknown": 2,
@@ -382,6 +448,9 @@
    "unknown": 12,
    "unavailable": 7
   },
+  "André Marie Florentin Giraud": {
+   "unknown": 59
+  },
   "Perino del Vaga": {
    "unavailable": 2,
    "restricted": 54
@@ -400,6 +469,12 @@
    "restricted": 24,
    "unavailable": 12,
    "unknown": 13
+  },
+  "Auguste Vacquerie": {
+   "restricted": 48
+  },
+  "Charles Eugène Ensfelder": {
+   "unknown": 48
   },
   "Nicolas Poussin": {
    "unavailable": 2,
@@ -431,6 +506,13 @@
    "restricted": 37,
    "unknown": 6
   },
+  "François Georgin": {
+   "unavailable": 1,
+   "unknown": 42
+  },
+  "Louis Verjat": {
+   "unknown": 43
+  },
   "Pierre Mignard": {
    "restricted": 20,
    "unknown": 13,
@@ -446,6 +528,9 @@
    "restricted": 23,
    "unknown": 16
   },
+  "Peter Hawke": {
+   "unknown": 42
+  },
   "Hyacinthe Rigaud": {
    "restricted": 9,
    "unavailable": 16,
@@ -455,6 +540,12 @@
    "restricted": 5,
    "unavailable": 10,
    "unknown": 25
+  },
+  "Antoine Gabriel Willermet": {
+   "unknown": 39
+  },
+  "Auguste Alleaume": {
+   "unavailable": 39
   },
   "Domenico Campagnola": {
    "unknown": 2,
@@ -479,53 +570,125 @@
    "unknown": 4,
    "unavailable": 1
   },
+  "Charles Hugo": {
+   "restricted": 34
+  },
   "Luca Cambiaso": {
    "restricted": 29,
    "unknown": 5
+  },
+  "Turpin de Crissé": {
+   "unknown": 34
   },
   "Polidoro Caldara": {
    "restricted": 29,
    "unavailable": 2,
    "unknown": 2
   },
+  "Charles du Ry": {
+   "restricted": 32
+  },
+  "Frans Hogenberg": {
+   "restricted": 17,
+   "unknown": 14,
+   "unavailable": 1
+  },
   "Gaspard Dughet": {
    "unavailable": 6,
    "unknown": 14,
    "restricted": 12
+  },
+  "Gustave Lancelot": {
+   "unavailable": 32
+  },
+  "Odilon Roche": {
+   "unavailable": 32
   },
   "Fragonard": {
    "restricted": 13,
    "unavailable": 6,
    "unknown": 11
   },
+  "Nicolaus Hoffmann": {
+   "unavailable": 16,
+   "restricted": 14
+  },
   "Corneille de Lyon": {
    "unknown": 10,
    "restricted": 12,
    "unavailable": 7
   },
+  "Crispin de Passe l'Ancien": {
+   "unknown": 29
+  },
   "Francesco Vanni": {
    "restricted": 24,
    "unknown": 5
+  },
+  "Nicasius Bernaerts": {
+   "unavailable": 6,
+   "unknown": 10,
+   "restricted": 13
+  },
+  "Amable Louis Crapelet": {
+   "unavailable": 28
+  },
+  "Auguste Beuret": {
+   "unknown": 27,
+   "unavailable": 1
+  },
+  "Crispin de Passe le Jeune": {
+   "unknown": 28
+  },
+  "Jean-Charles François Leloy": {
+   "unknown": 28
+  },
+  "Colijn de Coter": {
+   "unknown": 5,
+   "restricted": 22
+  },
+  "Joseph Hussenot": {
+   "unknown": 27
   },
   "Raphaël": {
    "restricted": 13,
    "unknown": 8,
    "unavailable": 6
   },
+  "Antonio del Pollaiuolo": {
+   "restricted": 26
+  },
   "Giorgio Vasari": {
    "unavailable": 7,
    "unknown": 2,
    "restricted": 17
+  },
+  "Henry Hennault": {
+   "unknown": 26
+  },
+  "Israël Henriet": {
+   "unknown": 26
+  },
+  "Jacques-Louis David": {
+   "unavailable": 4,
+   "restricted": 11,
+   "unknown": 11
   },
   "Laurent de La Hyre": {
    "unavailable": 19,
    "unknown": 2,
    "restricted": 5
   },
+  "Louis Hertig": {
+   "restricted": 26
+  },
   "Philippe de Champaigne": {
    "unknown": 9,
    "restricted": 13,
    "unavailable": 4
+  },
+  "René Ackermann": {
+   "unknown": 26
   },
   "Le Corrège": {
    "unavailable": 2,
@@ -652,122 +815,138 @@
   ],
   "unknown": [
    {
-    "reference": "00000055631",
-    "credit": "",
+    "reference": "08120003824",
+    "credit": "© Teissedre, © Comdesimages",
     "licence": "",
-    "musee": "musée Crozatier",
-    "raison": "crédit photographique absent"
-   },
-   {
-    "reference": "02110002354",
-    "credit": "© Jean-Manuel Salingue",
-    "licence": "",
-    "musee": "musée des beaux-arts",
+    "musee": "musée de Picardie",
     "raison": "crédit sans licence explicite"
    },
    {
-    "reference": "02860007456",
-    "credit": "Orléans, musée des beaux-arts © cliché François LAUGINIE",
+    "reference": "08120003682",
+    "credit": "© Henin ; © Comdesimages",
     "licence": "",
-    "musee": "musée des beaux-arts",
+    "musee": "musée de Picardie",
     "raison": "crédit sans licence explicite"
    },
    {
-    "reference": "07450090930",
-    "credit": "© Christian Letertre",
+    "reference": "08120003696",
+    "credit": "© Teissedre, © Comdesimages",
     "licence": "",
-    "musee": "musée Dobrée",
+    "musee": "musée de Picardie",
     "raison": "crédit sans licence explicite"
    },
    {
-    "reference": "07450090971",
-    "credit": "© Arkênum (société)",
+    "reference": "08120003742",
+    "credit": "© Henin",
     "licence": "",
-    "musee": "musée Dobrée",
+    "musee": "musée de Picardie",
     "raison": "crédit sans licence explicite"
    },
    {
-    "reference": "07450090959",
-    "credit": "© Arkênum (société)",
+    "reference": "08120003712",
+    "credit": "© Teissedre, © Comdesimages",
     "licence": "",
-    "musee": "musée Dobrée",
+    "musee": "musée de Picardie",
     "raison": "crédit sans licence explicite"
    },
    {
-    "reference": "07450090962",
-    "credit": "© Arkênum (société)",
+    "reference": "08120003694",
+    "credit": "© Teissedre ; © Comdesimages",
     "licence": "",
-    "musee": "musée Dobrée",
+    "musee": "musée de Picardie",
     "raison": "crédit sans licence explicite"
    },
    {
-    "reference": "03110042003",
-    "credit": "© Christian DEVLEESCHAUWER",
+    "reference": "08120003706",
+    "credit": "© Teissedre, © Comdesimages",
     "licence": "",
-    "musee": "musée des Beaux-Arts de Reims",
+    "musee": "musée de Picardie",
+    "raison": "crédit sans licence explicite"
+   },
+   {
+    "reference": "08120003790",
+    "credit": "© Teissedre ; © Comdesimages",
+    "licence": "",
+    "musee": "musée de Picardie",
     "raison": "crédit sans licence explicite"
    }
   ],
   "unavailable": [
    {
-    "reference": "000PE014694",
+    "reference": "00000082499",
     "credit": "",
     "licence": "",
-    "musee": "musée des beaux-arts",
+    "musee": "musée des beaux-arts et d’archéologie",
     "raison": "aucune image sur POP"
    },
    {
-    "reference": "50350508654",
+    "reference": "000DE011331",
     "credit": "",
     "licence": "",
-    "musee": "musée du Louvre",
+    "musee": "musée Grobet-Labadié",
     "raison": "aucune image sur POP"
    },
    {
-    "reference": "000DE006899",
+    "reference": "000DE011327",
     "credit": "",
     "licence": "",
-    "musee": "musée des beaux-arts",
+    "musee": "musée Grobet-Labadié",
     "raison": "aucune image sur POP"
    },
    {
-    "reference": "000PE014197",
+    "reference": "000DE011324",
     "credit": "",
     "licence": "",
-    "musee": "musée des beaux-arts",
+    "musee": "musée Grobet-Labadié",
     "raison": "aucune image sur POP"
    },
    {
-    "reference": "000PE029379",
+    "reference": "000DE011317",
     "credit": "",
     "licence": "",
-    "musee": "musée des Beaux-Arts",
+    "musee": "musée Grobet-Labadié",
     "raison": "aucune image sur POP"
    },
    {
-    "reference": "00000060729",
+    "reference": "000DE011325",
     "credit": "",
     "licence": "",
-    "musee": "musée de la Chartreuse",
+    "musee": "musée Grobet-Labadié",
     "raison": "aucune image sur POP"
    },
    {
-    "reference": "00000102970",
+    "reference": "000DE011323",
     "credit": "",
     "licence": "",
-    "musee": "musée des beaux-arts",
+    "musee": "musée Grobet-Labadié",
     "raison": "aucune image sur POP"
    },
    {
-    "reference": "50350500944",
+    "reference": "000DE011318",
     "credit": "",
     "licence": "",
-    "musee": "musée du Louvre",
+    "musee": "musée Grobet-Labadié",
     "raison": "aucune image sur POP"
    }
   ]
  },
  "credits_non_reconnus": [
+  [
+   "Protte Jean-Marie, musée des beaux-arts et d'archéologie",
+   269
+  ],
+  [
+   "© Musée des beaux-arts et d'archéologie, Besançon",
+   234
+  ],
+  [
+   "musée de l'Image - Ville d'Épinal / cliché H. Rouyer",
+   181
+  ],
+  [
+   "musée de l'Image - Ville d'Épinal / cliché E. Erfani",
+   124
+  ],
   [
    "© Roumagnac Guy",
    112
@@ -777,16 +956,52 @@
    96
   ],
   [
+   "© P David ; © Angers, musées d'Angers",
+   85
+  ],
+  [
+   "© M. de Giovanni, B. Chain - Le Studio Numérique",
+   67
+  ],
+  [
    "GUENAT Pierre",
    56
+  ],
+  [
+   "© Henin, © Comdesimages",
+   38
+  ],
+  [
+   "Orléans, musée des beaux-arts © cliché François LAUGINIE",
+   36
+  ],
+  [
+   "musée de l’Image - Ville d'Épinal / cliché E. Erfani",
+   36
   ],
   [
    "© GUENAT Pierre",
    34
   ],
   [
+   "musée de l’Image – Ville d’Épinal / cliché E. Erfani",
+   31
+  ],
+  [
+   "© Jean de Calan",
+   27
+  ],
+  [
+   "© Teissedre, © Comdesimages",
+   24
+  ],
+  [
    "© Jean-Manuel Salingue",
    23
+  ],
+  [
+   "musée de l’image - Ville d'Épinal / cliché E. Erfani",
+   22
   ],
   [
    "© musées de Besançon ; GUENAT Pierre",
@@ -797,15 +1012,47 @@
    19
   ],
   [
+   "Belle Carole, musée des beaux-arts et d'archéologie",
+   17
+  ],
+  [
+   "musée de l’Image - Ville d'Épinal / photo Claude Philippot",
+   17
+  ],
+  [
    "© Ville de Grenoble / Musée de Grenoble-J.L. Lacroix",
    16
+  ],
+  [
+   "musée de l'image - Ville d'Épinal / cliché H. Rouyer",
+   16
+  ],
+  [
+   "© C2RMF",
+   16
+  ],
+  [
+   "© BIFULCO Ambre",
+   16
+  ],
+  [
+   "musée de l'Image - Ville d'Épinal",
+   15
+  ],
+  [
+   "© Lysiane Gauthier",
+   13
   ],
   [
    "© Christian DEVLEESCHAUWER",
    12
   ],
   [
-   "© Lysiane Gauthier",
+   "musée de l’Image - Ville d'Épinal /  photo Claude Philippot",
+   12
+  ],
+  [
+   "RMN-Grand Palais",
    12
   ],
   [
@@ -813,7 +1060,19 @@
    11
   ],
   [
-   "© P David ; © Angers, musées d'Angers",
+   "musée de l’Image – Ville d’Épinal / cliché H. Rouyer",
+   11
+  ],
+  [
+   "© Teissedre ; © Comdesimages",
+   10
+  ],
+  [
+   "musée de l'image - Ville d'Épinal / cliché E. Erfani",
+   10
+  ],
+  [
+   "©Laura Fernandez/Musée national et domaine du château de Pau",
    10
   ],
   [
@@ -825,19 +1084,19 @@
    9
   ],
   [
-   "RMN-Grand Palais",
+   "© VELTEN Laetitia",
    9
   ],
   [
-   "© C2RMF",
-   9
-  ],
-  [
-   "© Carole Loisel ; © Catherine Lancien",
-   7
+   "musée de l’Image - Ville d'Épinal",
+   8
   ],
   [
    "Bouchayer, Giroud",
+   8
+  ],
+  [
+   "© Carole Loisel ; © Catherine Lancien",
    7
   ],
   [
@@ -849,12 +1108,20 @@
    7
   ],
   [
-   "© ALMODOVAR, Claude",
+   "musée des beaux-arts et d'archéologie",
    6
   ],
   [
    "© musée de la Roche-sur-Yon",
-   5
+   6
+  ],
+  [
+   "musée de l'image - Ville d'Épinal / cliché T. Lécrivain",
+   6
+  ],
+  [
+   "© ALMODOVAR, Claude",
+   6
   ],
   [
    "© Musée des Beaux-arts, Nîmes",
@@ -873,6 +1140,14 @@
    5
   ],
   [
+   "© Henin ; © Comdesimages",
+   4
+  ],
+  [
+   "© Jeanneteau, Marc, © Henin, © Comdesimages",
+   4
+  ],
+  [
    "Gérard Blot",
    4
   ],
@@ -882,6 +1157,10 @@
   ],
   [
    "© Claude Almodovar / musée Granet, Ville d'Aix-en-Provence",
+   4
+  ],
+  [
+   "musée de l’Image - Ville d'Épinal / cliché C. Bayeuil",
    4
   ],
   [
@@ -897,8 +1176,16 @@
    4
   ],
   [
+   "musée de l'Image, cliché H. Rouyer",
+   4
+  ],
+  [
    "Cécile Clos",
    4
+  ],
+  [
+   "© Henin",
+   3
   ],
   [
    "© Arkênum (société)",
@@ -937,11 +1224,23 @@
    3
   ],
   [
+   "B.M.C.",
+   3
+  ],
+  [
    "© Mélanie Demarle",
    3
   ],
   [
+   "© Jean-Yves Chermeux",
+   3
+  ],
+  [
    "© Service photographique des Musées de Strasbourg, © BACHER",
+   3
+  ],
+  [
+   "© LEPAGE Jean",
    3
   ],
   [
@@ -961,11 +1260,15 @@
    3
   ],
   [
-   "© Musée des beaux-arts et d'archéologie, Besançon",
+   "Musée du Louvre",
    3
   ],
   [
    "Musée des Beaux-Arts de Caen, cliché Patricia Touzard",
+   3
+  ],
+  [
+   "© Matthieu Dussauge ; © musée d'Art et d'Histoire - Pithiviers",
    3
   ],
   [
@@ -977,7 +1280,23 @@
    3
   ],
   [
-   "Orléans, musée des beaux-arts © cliché François LAUGINIE",
+   "© Henin, © Teissedre ; © Comdesimages",
+   2
+  ],
+  [
+   "© Jeanneteau Marc, © Henin, © Comdesimages",
+   2
+  ],
+  [
+   "© Teissedre, © Henin",
+   2
+  ],
+  [
+   "© Teissedre, © Henin, © Comdesimages",
+   2
+  ],
+  [
+   "Carole Bell, Ville de Troyes",
    2
   ],
   [
@@ -1009,6 +1328,10 @@
    2
   ],
   [
+   "Photo (C) RMN-Grand Palais (musée de Cluny - musée national du Moyen-Âge) / Jean-Gilles Berizzi",
+   2
+  ],
+  [
    "RMN-Grand Palais ; René-Gabriel Ojéda",
    2
   ],
@@ -1033,10 +1356,6 @@
    2
   ],
   [
-   "© LEPAGE Jean",
-   2
-  ],
-  [
    "musées de la ville de Rouen",
    2
   ],
@@ -1053,11 +1372,19 @@
    2
   ],
   [
+   "musée de l'Image - Ville d'Épinal / cliché T. Lécrivain",
+   2
+  ],
+  [
    "© François Jay - musée des beaux-arts de Dijon",
    2
   ],
   [
    "© Christelle Rochette",
+   2
+  ],
+  [
+   "musée de l’image – Ville d’Épinal / cliché H. Rouyer",
    2
   ],
   [
@@ -1069,11 +1396,11 @@
    2
   ],
   [
-   "© musée Jean de La Fontaine de Château-Thierry",
+   "© Musées de Mâcon",
    2
   ],
   [
-   "© Matthieu Dussauge ; © musée d'Art et d'Histoire - Pithiviers",
+   "© musée Jean de La Fontaine de Château-Thierry",
    2
   ],
   [
@@ -1089,7 +1416,15 @@
    2
   ],
   [
+   "musée de l'image,   Essy ERFANI",
+   2
+  ],
+  [
    "Jean André Bertozzi / ADGAP",
+   2
+  ],
+  [
+   "DELORME",
    2
   ],
   [
@@ -1111,6 +1446,18 @@
   [
    "© Castres ; musée Goya, photographe : Pascal Bru",
    2
+  ],
+  [
+   "© Teissedre, © Henin ; © Comdesimages",
+   1
+  ],
+  [
+   "© Teissedre",
+   1
+  ],
+  [
+   "© Teissedre,  © Comdesimages",
+   1
   ],
   [
    "© Christian Letertre",
@@ -1165,11 +1512,35 @@
    1
   ],
   [
+   "© musée de l'Image - Ville d'Épinal / cliché H. Rouyer",
+   1
+  ],
+  [
+   "musée de l’image - Ville d'Épinal / cliché C. Bayeuil",
+   1
+  ],
+  [
+   "musée de l'Image - Ville d'Épinal / cliché C. Simon et H. Rouyer",
+   1
+  ],
+  [
+   "musée de l’Image - Ville d'Épinal / cliché A. Bourgois",
+   1
+  ],
+  [
+   "musée de l’Image - Ville d'Épinal / cliché Y. Retournard",
+   1
+  ],
+  [
    "© service photographique de l'école nationale supérieure des beaux-arts",
    1
   ],
   [
    "© Pierre Plattier, Clamecy, Musée d'Art et d'Histoire Romain Rolland",
+   1
+  ],
+  [
+   "Photo (C) RMN-Grand Palais (musée de Cluny - musée national du Moyen-Âge) / Gérard Blot / Christian Jean",
    1
   ],
   [
@@ -1225,19 +1596,23 @@
    1
   ],
   [
-   "© Jean-Yves Chermeux",
-   1
-  ],
-  [
-   "B.M.C.",
-   1
-  ],
-  [
    "Stéphane Ramillon",
    1
   ],
   [
    "RMN-Grand Palais - Domaine de Chantilly",
+   1
+  ],
+  [
+   "musée de l’image - Ville d'Épinal / cliché H. Rouyer",
+   1
+  ],
+  [
+   "(C) Photo RMN ©René-Gabriel Ojéda",
+   1
+  ],
+  [
+   "© E. Marelle",
    1
   ],
   [
@@ -1253,6 +1628,22 @@
    1
   ],
   [
+   "musée de l'Image - ville d'Épinal / cliché H. Rouyer",
+   1
+  ],
+  [
+   "musée de l'Image- Ville d'Épinal",
+   1
+  ],
+  [
+   "musée de l'Image -Ville d'Épinal / cliché E. Erfani",
+   1
+  ],
+  [
+   "musée de l'Image - Ville d'Epinal / cliché E. Erfani",
+   1
+  ],
+  [
    "© WALTEFAUGLE Nicolas",
    1
   ],
@@ -1261,15 +1652,15 @@
    1
   ],
   [
-   "Musée du Louvre",
-   1
-  ],
-  [
    "© Ville de Clermont-Ferrand MARQ",
    1
   ],
   [
    "© Musée des Beaux-Arts de Reims",
+   1
+  ],
+  [
+   "musée de l’Image - Ville d'Épinal / Scan Spinal Images",
    1
   ],
   [
@@ -1301,7 +1692,31 @@
    1
   ],
   [
+   "Orléans, musée des beaux-arts © cliché S. BARRET/G. PRETRE",
+   1
+  ],
+  [
+   "© Alain Basset",
+   1
+  ],
+  [
+   "© Musée de la Grande Saline, Salins-les-Bains ; Justine Sève",
+   1
+  ],
+  [
+   "© Christian Devleeschauwer",
+   1
+  ],
+  [
    "Lysiane Gauthier",
+   1
+  ],
+  [
+   "musée de l’Image – Ville d’Épinal / cliché T. Lécrivain",
+   1
+  ],
+  [
+   "musée de l’Image - Ville d'Épinal / cliché S. Daongam",
    1
   ],
   [
@@ -1334,6 +1749,18 @@
   ],
   [
    "© CHRISTIAN DEVLEESCHAUWER",
+   1
+  ],
+  [
+   "musée de l'Image - Ville d'Épinal / cliché H. Rouyer et E. Erfani",
+   1
+  ],
+  [
+   "m0usée de l'Image - Ville d'Épinal / cliché H. Rouyer",
+   1
+  ],
+  [
+   "musée de l'Image - Ville d'Épinal / E. Erfani",
    1
   ],
   [
@@ -1385,6 +1812,10 @@
    1
   ],
   [
+   "© Chantal Hémon",
+   1
+  ],
+  [
    "Hugo Maertens, Bruges",
    1
   ],
@@ -1402,10 +1833,6 @@
   ],
   [
    "© Musée Lambinet",
-   1
-  ],
-  [
-   "© Musées de Mâcon",
    1
   ],
   [
@@ -1450,10 +1877,6 @@
   ],
   [
    "© Jean de Calan ; © musée Rodin",
-   1
-  ],
-  [
-   "DELORME",
    1
   ],
   [
