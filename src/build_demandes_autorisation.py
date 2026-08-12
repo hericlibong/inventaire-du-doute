@@ -26,11 +26,18 @@ découper par musée pour la pièce jointe).
 import csv
 import json
 import re
+import sys
 import unicodedata
+import urllib.request
 from collections import Counter, defaultdict
 from pathlib import Path
 
 EXPORTS = Path("data/exports")
+# Répertoire des Musées de France (base Muséofile, Licence Ouverte) : il donne
+# l'adresse postale, le téléphone et le site de chaque institution. C'est ce qui
+# transforme une liste de noms en liste de destinataires.
+MUSEOFILE = Path("data/cache/museofile.csv")
+URL_MUSEOFILE = "https://ministere-culture.s3.sbg.io.cloud.ovh.net/POP/museofile.csv"
 SOURCE = EXPORTS / "images_oeuvres.csv"
 METADONNEES = EXPORTS / "oeuvres_metadonnees.json"
 SORTIE_INSTITUTIONS = EXPORTS / "demandes_autorisation.csv"
@@ -60,8 +67,23 @@ def est_code(code: str) -> bool:
     return bool(re.fullmatch(r"M\d+", code or ""))
 
 
+def coordonnees() -> dict:
+    """Adresse, téléphone et site de chaque musée, indexés par code Muséofile."""
+    if not MUSEOFILE.exists():
+        print("Téléchargement de la base Muséofile…")
+        MUSEOFILE.parent.mkdir(parents=True, exist_ok=True)
+        urllib.request.urlretrieve(URL_MUSEOFILE, MUSEOFILE)
+    csv.field_size_limit(min(sys.maxsize, 2**31 - 1))
+    with MUSEOFILE.open(encoding="utf-8", newline="") as fichier:
+        return {
+            row["Identifiant"].strip(): row
+            for row in csv.DictReader(fichier, delimiter="|")
+        }
+
+
 def main() -> None:
     lignes = list(csv.DictReader(SOURCE.open(encoding="utf-8")))
+    contacts = coordonnees()
     # Le titre manque sur une centaine de notices (des dessins d'Ingres sans
     # intitulé) ; le numéro d'inventaire, lui, est renseigné partout, et c'est
     # de toute façon ce qui identifie l'œuvre au musée. Ce fichier porte aussi
@@ -107,6 +129,11 @@ def main() -> None:
                 "musee",
                 "ville",
                 "code_museofile",
+                "adresse",
+                "code_postal",
+                "commune",
+                "telephone",
+                "site",
                 "notices",
                 "sans_licence",
                 "soumises_a_autorisation",
@@ -117,12 +144,23 @@ def main() -> None:
         )
         for rang, (cle, entree) in enumerate(classement, start=1):
             statuts = Counter(n["statut"] for n in entree["notices"])
+            fiche = contacts.get(cle, {})
+            # Le « lieu » précise le bâtiment (« abbaye Saint-Loup », « hôtel
+            # Biron ») : il fait partie de l'adresse postale.
+            rue = " ".join(
+                p.strip() for p in (fiche.get("Adresse", ""), fiche.get("Lieu", "")) if p.strip()
+            )
             plume.writerow(
                 [
                     rang,
                     entree["noms"].most_common(1)[0][0],
                     entree["villes"].most_common(1)[0][0],
                     cle if est_code(cle) else "",
+                    rue,
+                    fiche.get("Code_postal", ""),
+                    fiche.get("Ville", ""),
+                    fiche.get("Telephone", ""),
+                    fiche.get("URL", ""),
                     len(entree["notices"]),
                     statuts["unknown"],
                     statuts["restricted"],
