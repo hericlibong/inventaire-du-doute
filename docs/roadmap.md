@@ -523,8 +523,22 @@ et préparation SEULEMENT (front non touché, aucune image téléchargée à ce 
       3 668 notices, classé en 5 statuts (`src/images_classify.py`, testé). **0 `open`** :
       2 578 `restricted` (RMN « utilisation soumise à autorisation »), 792 `unknown` (crédits
       nominatifs), 298 `unavailable`. Livrables `images_oeuvres.{csv,json}`, `images_bilan.json`.
-- [ ] **Levier A — autorisations individuelles** (792 `unknown`, surtout musées municipaux) :
-      **différé** (travail de contact hors code), documenté, mobilisable plus tard.
+- [x] **Audit POP rejoué sur le corpus complet** (2026-08-12). L'extension au lot 2 avait été
+      faite pour Commons le 2026-08-06, **pas pour l'audit des crédits** : 2 413 notices
+      publiées n'avaient jamais été examinées, dont 2 144 avec image. Sondage préalable de 100
+      (72 % de crédit musée sans licence, 28 % de RMN), puis relance avec cache. Nouveau bilan
+      sur 6 081 notices : **toujours 0 `open`**, 3 192 `restricted`, **2 322 `unknown`**,
+      567 `unavailable`.
+- [x] **Levier A — liste des institutions à solliciter** (2026-08-12). Regroupement des
+      2 322 `unknown` par **code Muséofile** (jamais par nom : l'apostrophe dédoublait Troyes),
+      les crédits d'agence retirés des demandes aux musées → **2 351 notices, 97 institutions**,
+      cinq courriers pour 64 % du corpus, Épinal (519) en tête. Liste, chiffres et **courrier
+      type** dans `docs/demandes-autorisation.md` ; `src/build_demandes_autorisation.py` ;
+      livrables `demandes_autorisation.csv` et `demandes_autorisation_notices.csv` (pièce
+      jointe par musée, identifiée par numéro d'inventaire).
+- [ ] **Envoi des demandes** — appartient à l'utilisateur (cadrage du 2026-08-06). Hors code.
+      La négociation avec la **RMN-Grand Palais** (3 163 notices, interlocuteur unique, tarifée)
+      reste une décision à part.
 - [x] **Reproductions ouvertes Wikimedia Commons / Wikidata** — appariement strict :
       P347 (identifiant Joconde) → **exact** ; inventaire + institution → **candidat** ;
       inventaire seul / autre institution → **rejeté**. Droits lus via l'API Commons. Modules

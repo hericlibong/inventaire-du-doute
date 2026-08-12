@@ -93,9 +93,13 @@ Joconde, domaine public, créditées sous l'image.
 Une reproduction n'est affichée que si sa réutilisation est **explicitement
 permise** et si elle est rattachée **avec certitude** à la notice.
 
-- **Pourquoi pas les images de POP ?** Les crédits photographiques des
-  3 668 notices ont été vérifiés sur POP : **aucune** n'est sous licence ouverte
-  (l'essentiel est de la RMN, « utilisation soumise à autorisation »).
+- **Pourquoi pas les images de POP ?** Les crédits photographiques ont été
+  vérifiés sur POP notice par notice — les 5 514 notices du corpus qui portent
+  une image, sur 6 081 : **aucune** n'est sous licence ouverte (l'essentiel est
+  de la RMN, « utilisation soumise à autorisation » ; le reste nomme un
+  photographe sans dire à quelles conditions on peut le reprendre). Vérifié une
+  première fois en juillet sur les 63 premiers artistes, refait le 2026-08-12
+  sur le corpus complet : le résultat est le même.
 - **D'où viennent celles qui sont montrées ?** De **Wikimedia Commons**, en ne
   retenant que les fichiers sous **domaine public, CC0, CC BY ou CC BY-SA**. Le
   rattachement se fait par l'**identifiant Joconde** (via Wikidata), jamais par

@@ -302,6 +302,41 @@ voir decisions.md). Aucun échec réseau (3 370 notices lues, toutes HTTP 200). 
 Conséquence : on cherche les reproductions ouvertes **ailleurs**, sur Wikimedia Commons /
 Wikidata (méthode ci-dessous).
 
+### Rejoué sur le corpus complet (2026-08-12)
+
+Les chiffres ci-dessus décrivent le corpus des 63 artistes de juillet. L'extension au lot 2
+avait été faite pour Commons le 2026-08-06 mais **pas pour l'audit des crédits** :
+**2 413 des 6 081 notices publiées n'avaient jamais été examinées**, dont 2 144 avec une
+image sur POP. Un sondage de 100 d'entre elles a chiffré le rendement avant de relancer —
+72 % de crédit musée sans licence, 28 % de RMN. Relance de `build_images.py` : le cache a
+évité de relire les 3 370 notices déjà connues, 2 144 ont été ajoutées, aucun échec réseau.
+La règle de classement n'a pas changé, seul le périmètre.
+
+| statut | 3 668 notices (63 artistes) | **6 081 notices (102 artistes)** |
+|---|---:|---:|
+| `open` | 0 | **0** |
+| `authorized` | 0 | 0 |
+| `restricted` | 2 578 | **3 192** |
+| `unknown` | 792 | **2 322** |
+| `unavailable` | 298 | **567** |
+
+**Le constat central tient sur un corpus près de deux fois plus grand : zéro photographie
+sous licence ouverte.** Deux enseignements nouveaux :
+
+- **Les crédits d'agence et les crédits de musée ne se distinguent pas par le statut mais
+  par le texte du crédit.** 3 163 notices nomment la RMN-Grand Palais (ou Bridgeman, pour
+  quatre) : le musée ne détient pas ces droits, et 39 notices « soumises à autorisation »
+  relèvent au contraire du musée lui-même (38 à Besançon). Écrire au bon interlocuteur
+  suppose de lire le crédit, pas le statut.
+- **Le nom d'un musée n'est pas un identifiant.** Le musée des beaux-arts et d'archéologie de
+  Troyes s'écrit « d'archéologie » sur 129 notices et « d’archéologie » sur 165 — apostrophe
+  droite contre apostrophe typographique, même code Muséofile M0303. Tout regroupement
+  d'institutions se fait sur `Code_Museofile`, désormais repris par `build_metadonnees.py`.
+
+Les 2 322 `unknown` sont regroupés par institution dans
+`docs/demandes-autorisation.md` : **2 351 notices à demander, 97 institutions**, dont
+519 au musée de l'image d'Épinal, 388 à Besançon, 295 à Troyes et 210 à Montauban.
+
 ## Reproductions ouvertes sur Wikimedia Commons / Wikidata (2026-07-29)
 
 Pour les 3 668 références, on cherche une reproduction Commons **réutilisable** et **rattachée
