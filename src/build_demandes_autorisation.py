@@ -126,7 +126,8 @@ def main() -> None:
         plume.writerow(
             [
                 "rang",
-                "musee",
+                "destinataire",
+                "nature",
                 "ville",
                 "code_museofile",
                 "adresse",
@@ -142,6 +143,30 @@ def main() -> None:
                 "exemple_notice_pop",
             ]
         )
+        # L'agence photo est le PREMIER destinataire de la liste, avant tous les
+        # musées : c'est le crédit le plus fréquent du corpus, et une seule
+        # demande le couvre. L'exclure de la liste des adresses, comme on l'a
+        # d'abord fait, laissait le plus gros interlocuteur invisible.
+        plume.writerow(
+            [
+                0,
+                "RMN-Grand Palais (agence photographique)",
+                "agence photo",
+                "Paris",
+                "",
+                "254-256 rue de Bercy",
+                "75577",
+                "Paris Cedex 12",
+                "01 40 13 48 00",
+                "https://www.photo.rmn.fr",
+                len(agence["notices"]),
+                "",
+                len(agence["notices"]),
+                " | ".join(credit for credit, _ in agence["credits"].most_common(2)),
+                "",
+                agence["notices"][0]["notice_pop"],
+            ]
+        )
         for rang, (cle, entree) in enumerate(classement, start=1):
             statuts = Counter(n["statut"] for n in entree["notices"])
             fiche = contacts.get(cle, {})
@@ -154,6 +179,7 @@ def main() -> None:
                 [
                     rang,
                     entree["noms"].most_common(1)[0][0],
+                    "musée",
                     entree["villes"].most_common(1)[0][0],
                     cle if est_code(cle) else "",
                     rue,
@@ -186,10 +212,15 @@ def main() -> None:
                 "notice_pop",
             ]
         )
-        for cle, entree in classement:
-            musee = entree["noms"].most_common(1)[0][0]
-            ville = entree["villes"].most_common(1)[0][0]
-            for notice in sorted(entree["notices"], key=lambda n: n["titre"]):
+        # Les notices de l'agence d'abord, sous son nom : c'est une pièce jointe
+        # comme les autres, pour un destinataire comme les autres.
+        blocs = [("RMN-Grand Palais", "Paris", agence["notices"])]
+        blocs += [
+            (e["noms"].most_common(1)[0][0], e["villes"].most_common(1)[0][0], e["notices"])
+            for _, e in classement
+        ]
+        for musee, ville, notices in blocs:
+            for notice in sorted(notices, key=lambda n: n["titre"]):
                 fiche = metadonnees.get(notice["reference"], {})
                 plume.writerow(
                     [
@@ -207,7 +238,8 @@ def main() -> None:
                 )
 
     total = sum(len(e["notices"]) for _, e in classement)
-    print(f"{len(classement)} institutions à solliciter, {total} notices")
+    print(f"1 agence photo ({len(agence['notices'])} notices) + "
+          f"{len(classement)} musées ({total} notices)")
     for cle, entree in classement[:12]:
         nom = entree["noms"].most_common(1)[0][0]
         ville = entree["villes"].most_common(1)[0][0]

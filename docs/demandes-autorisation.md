@@ -74,6 +74,7 @@ est le premier destinataire du projet, avec ses 519 notices d'imagerie populaire
 
 | Rang | Institution | Ville | Muséofile | Notices | Crédit dominant |
 |---|---|---|---|---|---|
+| **0** | **RMN-Grand Palais**, agence photographique (`photo.rmn.fr`) | Paris | — | **3 163** | © Réunion des musées nationaux – utilisation soumise à autorisation |
 | 1 | musée de l'image | Épinal | M0537 | 519 | musée de l'Image – Ville d'Épinal / cliché H. Rouyer |
 | 2 | musée des beaux-arts et d'archéologie | Besançon | M0332 | 388 | © Musée des beaux-arts et d'archéologie ; GUENAT Pierre |
 | 3 | musée des beaux-arts et d'archéologie | Troyes | M0303 | 295 | Protte Jean-Marie ; Belle Carole |
