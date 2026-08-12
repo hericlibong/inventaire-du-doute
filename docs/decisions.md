@@ -2,6 +2,43 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-12 — Les demandes d'autorisation d'images, adressées par interlocuteur
+
+Reprise du « Levier A » différé le 2026-07-29. Rien n'est reclassé : l'audit des droits
+photo tient, et on ne fait que le trier par destinataire du courrier
+(`src/build_demandes_autorisation.py`, liste et courrier type dans
+`docs/demandes-autorisation.md`).
+
+**Trois traitements, pas un.** Les 792 notices `unknown` sont le seul gisement où écrire
+sert à quelque chose : un crédit est publié, aucune licence ne l'est, et seul le musée peut
+trancher. Les 2 568 notices dont le crédit nomme une **agence** (RMN-Grand Palais pour
+l'essentiel, Bridgeman pour quatre) sont retirées des demandes aux musées : l'établissement
+ne détient pas ces droits, lui écrire est une démarche perdue — c'est un interlocuteur
+unique et une négociation tarifée, à décider séparément. Les 298 `unavailable` ne se
+demandent pas : il n'y a pas de photographie. Le rattachement se fait sur le **crédit, pas
+sur le statut** : une dizaine de notices « soumises à autorisation » relèvent du musée
+lui-même (Besançon, Dole, Cherbourg, Auxonne, Bry-sur-Marne) et rejoignent son courrier.
+Total : **802 notices, 93 institutions**.
+
+**Dix courriers font 63 % du corpus, deux en font 43 %** — Montauban (210) et Besançon
+(131). À l'autre bout, 34 institutions n'ont qu'une notice : la longue traîne ne vaut pas
+un courrier chacune, et le classement du CSV sert à s'arrêter où l'on veut.
+
+**Le crédit nomme un photographe, pas un service, dans la majorité des cas** (« © Roumagnac
+Guy », « GUENAT Pierre », « Art Shooting »). Le musée reste le point d'entrée, mais la
+réponse peut être « nous ne détenons pas les droits » : le courrier type demande donc
+explicitement l'interlocuteur à défaut de l'autorisation.
+
+**Un code parasite dans `musees.json`.** Une seconde entrée « musée du Louvre, Paris »
+(6 notices) porte comme code Muséofile l'intitulé « mode d'acquisition particulier », un
+champ Joconde recopié au mauvais endroit en amont du front. Le script ne retient que les
+codes de la forme `M` + chiffres et garde l'entrée la mieux fournie ; le défaut lui-même
+reste à corriger dans l'export.
+
+Le cadrage du 2026-08-06 tient : ces demandes portent sur **les œuvres de Joconde**, et
+c'est l'utilisateur qui les mène. Les quatre demandes de portraits et la clé d'API Paris
+Musées sont rappelées en annexe du document, sans être mêlées à la liste.
+
 ## 2026-08-10 — Une démonstration en ligne, avant la vérification finale
 
 Le site se publie sur **GitHub Pages, en Project Page**, à
