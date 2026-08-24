@@ -4,9 +4,13 @@
 
 	// PAGE « PRÉSENTATION » du volume 1 — phase 4 (2026-08-02).
 	//
-	// Cinq temps, dans cet ordre : ce qu'est le projet et ce que contient ce volet ·
-	// des exemples de notices réelles · comment ces artistes ont été choisis · les
-	// mots que les musées emploient · l'entrée dans l'exploration.
+	// Le parcours suit l'ordre dans lequel on comprend, réordonné le 2026-08-24 :
+	// COMPRENDRE (ce qu'est le projet, ce que contient ce volet) · VOIR (comment une
+	// réserve apparaît dans une fiche) · SAISIR L'INTÉRÊT (à quoi sert l'inventaire)
+	// · puis seulement EXAMINER (comment les artistes ont été choisis, les mentions
+	// en chiffres, les mots que les musées emploient) · et l'entrée dans
+	// l'exploration. Les usages fermaient la page, après le glossaire : on
+	// n'apprenait à quoi tout cela sert qu'une fois la méthode traversée.
 	//
 	// Le titre « Ce n'est pas un cas isolé » et ses deux paragraphes ont été retirés
 	// le 2026-08-04 : ils redisaient Joconde, la réserve d'attribution et l'objet du
@@ -70,18 +74,23 @@
 		FAMILLE_PUBLIC[code].montrerMention ? FAMILLE_PUBLIC[code].mention('un artiste') : null;
 
 	// Les huit sections de la page, dans l'ordre de lecture. Identifiants stables et
-	// sans accents : ils entrent dans l'URL et peuvent être partagés. Les libellés
-	// du rail sont ceux des titres, raccourcis pour les deux questions — un rail de
-	// 16 rem ne tient pas « Qu'est-ce que L'inventaire du doute ? ». Les titres
-	// complets restent dans le h1 et les h2, seuls textes publiés.
+	// sans accents : ils entrent dans l'URL et peuvent être partagés — d'où le
+	// réordonnancement du 2026-08-24, qui déplace des ENTRÉES et jamais des ancres.
+	// Les libellés du rail sont ceux des titres, raccourcis quand le titre est long —
+	// un rail de 16 rem ne tient ni « Qu'est-ce que L'inventaire du doute ? » ni
+	// « Comment une réserve apparaît dans une fiche Joconde ». Les titres complets
+	// restent dans le h1 et les h2, seuls textes publiés.
+	//
+	// ⚠ L'ordre de ce tableau doit suivre l'ordre du DOM : SommaireAncres mesure les
+	// sections dans l'ordre reçu et allume la dernière passée sous son seuil.
 	const sommaire = [
 		['le-projet', 'L’inventaire du doute'],
 		['ce-volet', 'Ce premier volet'],
-		['exemples', 'Exemples de notices Joconde'],
+		['exemples', 'Comprendre une fiche Joconde'],
+		['usages', 'À quoi sert cet inventaire ?'],
 		['selection', 'Comment ces artistes ont été choisis'],
 		['chiffres', 'Les mentions en chiffres'],
 		['definitions', 'Ce que ces mots veulent dire'],
-		['usages', 'À quoi sert cet inventaire ?'],
 		['explorer', 'Explorer, artiste par artiste']
 	];
 </script>
@@ -90,10 +99,11 @@
 
 
 <div class="page">
-	<!-- OUVERTURE : deux blocs séparés, deux questions. Le premier définit le site,
-	     présente Joconde et situe le doute dans la version analysée de la base. Le second
-	     présente l'outil interactif consacré aux artistes. Tous les effectifs et le taux
-	     viennent des exports : rien n'est écrit en dur dans le texte. -->
+	<!-- OUVERTURE : deux blocs séparés, deux questions. Le premier pose le sujet,
+	     présente Joconde et situe la réserve dans la version analysée de la base.
+	     Le second dit quels artistes ce volet retient et à quelles conditions.
+	     Le taux et les effectifs viennent des exports : rien n'est écrit en dur,
+	     à la seule exception du seuil, en toutes lettres (voir la section). -->
 	<div class="grille">
 	<!-- Le bandeau de titre est la PREMIÈRE section du sommaire. Il vit DANS la
 	     grille depuis le 2026-08-05, en tête de la colonne de contenu : la page n'a
@@ -140,35 +150,51 @@
 	<SommaireAncres sections={sommaire} ancreHaut="le-projet" />
 
 	<div class="contenu">
+	<!-- 2. CE QUE CONTIENT LE VOLET — réécrit le 2026-08-24, texte de l'utilisateur.
+	     Ce qu'il remplace décrivait l'outil (« un outil interactif d'exploration »)
+	     et redonnait les deux effectifs. Il dit maintenant QUI est retenu et à
+	     quelles conditions : la règle de la page Méthode, en français courant.
+	     AUCUN CHIFFRE ici (règle du 2026-08-04, tenue) : les artistes et les fiches
+	     ne se comptent qu'à « Les mentions en chiffres ».
+	     ⚠ Le seuil est donc écrit en toutes lettres — « au moins dix fiches ». C'est
+	     la seule valeur en dur de la page ; elle vaut `registre.seuil`. Si le seuil
+	     change, cette phrase doit changer avec lui. -->
 	<section class="ouverture" id="ce-volet" tabindex="-1">
 		<h2>Que présente ce premier volet&nbsp;?</h2>
 		<p class="ouverture-texte">
-			Ce premier volet propose un outil interactif d'exploration consacré aux artistes dont
-			le nom apparaît régulièrement avec une réserve d'attribution. Il réunit actuellement
-			<strong>{nombre(u.nb_artistes)} artistes</strong> et
-			<strong>{nombre(u.notices_distinctes)} notices</strong>. Pour chacun, le lecteur peut
-			comparer les formulations employées, parcourir les œuvres concernées et voir dans quels
-			musées elles sont conservées. D'autres volets pourront explorer différentes formes de
-			doute présentes dans Joconde.
+			Ce premier volume est consacré aux artistes dont le nom apparaît dans au moins dix
+			fiches comportant une réserve sur l'auteur, une fois les différentes écritures
+			regroupées et les identités vérifiées. Les copies «&nbsp;d'après&nbsp;» sont comptées
+			séparément.
+		</p>
+		<p class="ouverture-texte">
+			La liste est publiée progressivement&nbsp;: d'autres noms repérés restent encore à
+			examiner.
 		</p>
 	</section>
 
-	<!-- EXEMPLES DE NOTICES (2026-08-04) : même structure pour chacun — image,
-	     titre, musée, champ Auteur au mot près, UNE phrase d'explication, lien POP.
-	     Aucune carte décorative, aucun récit. Le titre n'annonce pas de compte : il
-	     survit à l'ajout ou au retrait d'un exemple.
-	     Ce que les exemples ont en commun est dit UNE FOIS, en chapô (2026-08-04) :
-	     la phrase « le musée renseigne ainsi le champ consacré à l'auteur » était
-	     répétée à l'identique sous chaque titre, et ne disait pas COMMENT. Le chapô
-	     nomme le champ reproduit et dit ce qui accompagne le nom, pour que la
-	     citation qui suit se lise sans explication ; chaque exemple ne garde plus
-	     que ce qui lui est propre. Chapô écrit par l'utilisateur, repris tel quel.
-	     ⚠ Il annonce DEUX exemples : à modifier si la liste en gagne ou en perd un. -->
+	<!-- 3. COMMENT UNE RÉSERVE APPARAÎT DANS UNE FICHE — même structure pour chaque
+	     exemple : image, titre, musée, champ Auteur au mot près, UNE phrase
+	     d'explication, lien vers la fiche complète. Aucune carte décorative, aucun
+	     récit. Le titre n'annonce pas de compte : il survit à l'ajout ou au retrait
+	     d'un exemple.
+	     Titre et chapô réécrits le 2026-08-24 (texte de l'utilisateur). Ce qu'ils
+	     remplacent — « Exemples de notices Joconde » — nommait un objet de catalogue
+	     et supposait qu'on sache ce qu'est une notice. La section explique désormais
+	     ce qu'est une FICHE Joconde avant de montrer ce qu'on y lit ; le mot
+	     « notice » reste en place partout où il désigne l'objet manipulé.
+	     Ce que les exemples ont en commun est dit UNE FOIS, en chapô : la phrase
+	     « le musée renseigne ainsi le champ consacré à l'auteur » était répétée à
+	     l'identique sous chaque titre, et ne disait pas COMMENT. Chaque exemple ne
+	     garde plus que ce qui lui est propre.
+	     ⚠ Le chapô annonce DEUX exemples : à modifier si la liste en gagne ou en
+	     perd un. -->
 	<section class="notices-exemples" id="exemples" tabindex="-1">
-		<h2>Exemples de notices Joconde</h2>
+		<h2>Comment une réserve apparaît dans une fiche Joconde</h2>
 		<p class="texte">
-			Les deux exemples ci-dessous reproduisent le champ «&nbsp;Auteur&nbsp;» de Joconde.
-			Le nom de l'artiste est accompagné d'une réserve inscrite dans la notice.
+			Dans Joconde, les informations sur une œuvre ou un ensemble sont regroupées dans une
+			fiche. L'Inventaire du doute examine la partie consacrée à l'auteur. Les deux exemples
+			ci-dessous montrent comment les musées y indiquent une réserve.
 		</p>
 
 		<div class="liste-exemples">
@@ -205,7 +231,7 @@
 								target="_blank"
 								rel="noopener"
 							>
-								Voir la notice sur POP
+								Voir la fiche complète sur POP
 							</a>
 						</p>
 					</div>
@@ -215,119 +241,23 @@
 
 		<!-- Vers la section de la page Méthode qui décrit ce que ces exemples montrent :
 		     « Comment le doute s'écrit dans Joconde » (#doute), celle qui porte le schéma
-		     du champ Auteur. Ancre directe, pas le haut de la page. -->
+		     du champ Auteur. Ancre directe, pas le haut de la page. Le libellé a été
+		     mis au registre de la section le 2026-08-24 ; la cible n'a pas bougé. -->
 		<p class="renvoi renvoi-methode">
 			<a href="{base}/methode#doute">
-				Plus d'informations sur le traitement des notices&nbsp;→
+				Comment les fiches sont analysées&nbsp;→
 			</a>
 		</p>
 	</section>
 
-	<!-- 3. LA SÉLECTION (réécrite le 2026-08-04, texte de l'utilisateur) : UN SEUL
-	     paragraphe, puis le renvoi vers la méthode. Il remplace les trois blocs
-	     « seuil · vérification · ce que la liste ne dit pas », dont le détail vit
-	     désormais sur la seule page Méthode. Les trois chiffres restent lus dans les
-	     exports : le seuil vient du registre, l'effectif et les notices du corpus. -->
-	<section class="selection" id="selection" tabindex="-1">
-		<h2>Comment ces artistes ont été choisis</h2>
-		<p class="texte">
-			Cette sélection a été construite en filtrant et en classant les notices de
-			Joconde&nbsp;: elle réunit les artistes dont le nom apparaît dans au moins
-			<strong>{registre.seuil} notices</strong> comportant une réserve sur l'auteur.
-			Ce seuil permet de disposer de plusieurs cas à examiner pour chacun. Les
-			différentes écritures d'un même nom ont été regroupées, puis chaque identité a
-			été vérifiée afin de rattacher les notices au bon artiste.
-		</p>
-		<p class="renvoi">
-			<a href="{base}/methode#les-maitres">Le détail de la méthode et ses limites&nbsp;→</a>
-		</p>
-	</section>
-
-	<!-- 4. LES MENTIONS EN CHIFFRES : le bandeau, puis le graphique -------------
-	     Déplacement du 2026-08-04. Les trois chiffres vivaient plus haut, seuls
-	     dans leur propre section, et donnaient l'ampleur avant qu'on sache de quoi
-	     elle était l'ampleur. Ils n'existent plus qu'ICI, sous le titre et devant
-	     le graphique qui détaille les mêmes notices.
-	     Le TITRE de la section est désormais porté par la page, plus par le
-	     composant : c'est lui qui coiffe le bandeau ET le graphique.
-	     ⚠ RÈGLE : les trois chiffres du volet (artistes, notices, part du total)
-	     ne se disent qu'ICI. Les paragraphes d'ouverture et de sélection les
-	     répétaient ; ils ont été allégés le 2026-08-04. Un chiffre répété d'un
-	     bloc à l'autre se lit comme un chiffre différent. -->
-	<section class="graphique" id="chiffres" tabindex="-1">
-		<h2>Les mentions en chiffres</h2>
-
-		<ul class="chiffres">
-			<li>
-				<b>{nombre(u.nb_artistes)}</b>
-				<span>artistes dont le nom porte une réserve dans au moins {registre.seuil} notices</span>
-			</li>
-			<li>
-				<b>{nombre(u.notices_distinctes)}</b>
-				<span>notices concernées, dans les musées de France</span>
-			</li>
-			<li>
-				<b>{partVolume}&nbsp;%</b>
-				<span>
-					des notices prudentes repérées dans Joconde&nbsp;: le reste
-					({nombre(niveaux.doute_total - u.notices_distinctes)} notices) ne nomme pas
-					ces artistes-là
-				</span>
-			</li>
-		</ul>
-
-		<MentionsFrequentes {corpus} />
-	</section>
-
-	<!-- LE GLOSSAIRE, détaché de la section chiffrée le 2026-08-04 : il se lisait
-	     comme une seconde légende du graphique, alors que c'est le SEUL endroit du
-	     site où les huit mentions sont définies. Un filet et une respiration l'en
-	     séparent ; le chapô ne renvoie plus à « l'ordre du graphique ». Les huit
-	     définitions elles-mêmes ne sont pas retouchées. -->
-	<section class="glossaire" id="definitions" tabindex="-1">
-		<h2>Ce que ces mots veulent dire</h2>
-		<p class="texte">
-			Les huit mentions employées par les musées, définies une à une. La couleur de chacune
-			est la même partout sur le site.
-		</p>
-		<div class="zones">
-			{#each TERRITOIRES as t (t.id)}
-				<div class="zone">
-					<h3>{t.titre}</h3>
-					<!-- Les trois en-têtes sont VOLONTAIREMENT celles du graphique : c'est ce
-					     qui fait comprendre que le glossaire définit les groupes qu'on vient de
-					     voir (source unique, territoires.js). L'annotation de zone, écrite là
-					     depuis longtemps mais affichée nulle part sur cette page, évite que la
-					     reprise soit une copie sèche : elle dit en une ligne ce que le groupe
-					     recouvre, avant les définitions mention par mention (2026-08-05). -->
-					<p class="annotation">{t.annotation}</p>
-					<dl>
-						{#each t.codes as code (code)}
-							<div class="entree-mention">
-								<dt>
-									<span class="pastille" style="background: {FAMILLE_PUBLIC[code].couleur}"></span>
-									{FAMILLE_PUBLIC[code].label}
-								</dt>
-								<dd>
-									{FAMILLE_PUBLIC[code].corps}
-									{#if formuleType(code)}
-										<span class="formule">
-											Elle s'écrit par exemple «&nbsp;{formuleType(code)}&nbsp;».
-										</span>
-									{/if}
-								</dd>
-							</div>
-						{/each}
-					</dl>
-				</div>
-			{/each}
-		</div>
-	</section>
-
-	<!-- CE QUE L'INVENTAIRE PERMET DE FAIRE : après les définitions, lorsque le
-	     lecteur connaît les données et leur vocabulaire, et juste avant l'appel à
-	     explorer. Une liste d'usages concrets remplace un nouveau texte de
-	     présentation générale. -->
+	<!-- 4. CE QUE L'INVENTAIRE PERMET DE FAIRE — remonté ici le 2026-08-24. Il
+	     fermait la page, après le glossaire : on n'apprenait à quoi tout cela sert
+	     qu'une fois la méthode et les chiffres traversés, donc trop tard. Il suit
+	     maintenant les exemples, au moment où le lecteur vient de voir de ses yeux
+	     ce qu'est une réserve — comprendre, voir, saisir l'intérêt, puis seulement
+	     examiner la sélection, les chiffres et le vocabulaire.
+	     Le contenu de la section n'a pas changé : une liste d'usages concrets, pas
+	     un nouveau texte de présentation générale. -->
 	<section class="usages" id="usages" tabindex="-1">
 		<h2>À quoi peut servir cet inventaire&nbsp;?</h2>
 		<ol class="usages-liste">
@@ -381,7 +311,108 @@
 		</ol>
 	</section>
 
-	<!-- 5. LA SUITE ------------------------------------------------------------ -->
+	<!-- 5. LA SÉLECTION (réécrite le 2026-08-04, texte de l'utilisateur) : UN SEUL
+	     paragraphe, puis le renvoi vers la méthode. Il remplace les trois blocs
+	     « seuil · vérification · ce que la liste ne dit pas », dont le détail vit
+	     désormais sur la seule page Méthode. Les trois chiffres restent lus dans les
+	     exports : le seuil vient du registre, l'effectif et les notices du corpus. -->
+	<section class="selection" id="selection" tabindex="-1">
+		<h2>Comment ces artistes ont été choisis</h2>
+		<p class="texte">
+			Cette sélection a été construite en filtrant et en classant les notices de
+			Joconde&nbsp;: elle réunit les artistes dont le nom apparaît dans au moins
+			<strong>{registre.seuil} notices</strong> comportant une réserve sur l'auteur.
+			Ce seuil permet de disposer de plusieurs cas à examiner pour chacun. Les
+			différentes écritures d'un même nom ont été regroupées, puis chaque identité a
+			été vérifiée afin de rattacher les notices au bon artiste.
+		</p>
+		<p class="renvoi">
+			<a href="{base}/methode#les-maitres">Le détail de la méthode et ses limites&nbsp;→</a>
+		</p>
+	</section>
+
+	<!-- 6. LES MENTIONS EN CHIFFRES : le bandeau, puis le graphique -------------
+	     Déplacement du 2026-08-04. Les trois chiffres vivaient plus haut, seuls
+	     dans leur propre section, et donnaient l'ampleur avant qu'on sache de quoi
+	     elle était l'ampleur. Ils n'existent plus qu'ICI, sous le titre et devant
+	     le graphique qui détaille les mêmes notices.
+	     Le TITRE de la section est désormais porté par la page, plus par le
+	     composant : c'est lui qui coiffe le bandeau ET le graphique.
+	     ⚠ RÈGLE : les trois chiffres du volet (artistes, notices, part du total)
+	     ne se disent qu'ICI. Les paragraphes d'ouverture et de sélection les
+	     répétaient ; ils ont été allégés le 2026-08-04. Un chiffre répété d'un
+	     bloc à l'autre se lit comme un chiffre différent. -->
+	<section class="graphique" id="chiffres" tabindex="-1">
+		<h2>Les mentions en chiffres</h2>
+
+		<ul class="chiffres">
+			<li>
+				<b>{nombre(u.nb_artistes)}</b>
+				<span>artistes dont le nom porte une réserve dans au moins {registre.seuil} notices</span>
+			</li>
+			<li>
+				<b>{nombre(u.notices_distinctes)}</b>
+				<span>notices concernées, dans les musées de France</span>
+			</li>
+			<li>
+				<b>{partVolume}&nbsp;%</b>
+				<span>
+					des notices prudentes repérées dans Joconde&nbsp;: le reste
+					({nombre(niveaux.doute_total - u.notices_distinctes)} notices) ne nomme pas
+					ces artistes-là
+				</span>
+			</li>
+		</ul>
+
+		<MentionsFrequentes {corpus} />
+	</section>
+
+	<!-- 7. LE GLOSSAIRE, détaché de la section chiffrée le 2026-08-04 : il se lisait
+	     comme une seconde légende du graphique, alors que c'est le SEUL endroit du
+	     site où les huit mentions sont définies. Un filet et une respiration l'en
+	     séparent ; le chapô ne renvoie plus à « l'ordre du graphique ». Les huit
+	     définitions elles-mêmes ne sont pas retouchées. -->
+	<section class="glossaire" id="definitions" tabindex="-1">
+		<h2>Ce que ces mots veulent dire</h2>
+		<p class="texte">
+			Les huit mentions employées par les musées, définies une à une. La couleur de chacune
+			est la même partout sur le site.
+		</p>
+		<div class="zones">
+			{#each TERRITOIRES as t (t.id)}
+				<div class="zone">
+					<h3>{t.titre}</h3>
+					<!-- Les trois en-têtes sont VOLONTAIREMENT celles du graphique : c'est ce
+					     qui fait comprendre que le glossaire définit les groupes qu'on vient de
+					     voir (source unique, territoires.js). L'annotation de zone, écrite là
+					     depuis longtemps mais affichée nulle part sur cette page, évite que la
+					     reprise soit une copie sèche : elle dit en une ligne ce que le groupe
+					     recouvre, avant les définitions mention par mention (2026-08-05). -->
+					<p class="annotation">{t.annotation}</p>
+					<dl>
+						{#each t.codes as code (code)}
+							<div class="entree-mention">
+								<dt>
+									<span class="pastille" style="background: {FAMILLE_PUBLIC[code].couleur}"></span>
+									{FAMILLE_PUBLIC[code].label}
+								</dt>
+								<dd>
+									{FAMILLE_PUBLIC[code].corps}
+									{#if formuleType(code)}
+										<span class="formule">
+											Elle s'écrit par exemple «&nbsp;{formuleType(code)}&nbsp;».
+										</span>
+									{/if}
+								</dd>
+							</div>
+						{/each}
+					</dl>
+				</div>
+			{/each}
+		</div>
+	</section>
+
+	<!-- 8. LA SUITE ------------------------------------------------------------ -->
 	<section class="suite" id="explorer" tabindex="-1">
 		<h2>Explorer, artiste par artiste</h2>
 		<p class="texte">
@@ -737,7 +768,7 @@
 		color: var(--couleur-encre-douce);
 	}
 
-	/* --- 4 bis. Le glossaire des huit mentions -------------------------------
+	/* --- 7. Le glossaire des huit mentions -------------------------------
 	   Il ne prolonge pas la section chiffrée : un filet et une respiration franche
 	   marquent le changement de nature (des définitions, plus des mesures). */
 	.glossaire {

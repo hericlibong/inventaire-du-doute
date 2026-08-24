@@ -2,6 +2,39 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-24 — « Le projet » suit le parcours du lecteur, pas celui de la fabrication
+
+La page présentait **l'utilité du projet après les sections méthodologiques** : il fallait
+traverser la sélection des artistes, le graphique des mentions et le glossaire avant
+d'apprendre à quoi tout cela pouvait servir. Un lecteur qui décroche avant n'a jamais lu la
+réponse à la seule question qu'il se pose.
+
+**La section des usages remonte donc juste après les exemples**, et l'ordre suit désormais la
+manière dont on comprend : comprendre (le sujet, ce que contient le volet), voir (comment une
+réserve apparaît dans une fiche), saisir l'intérêt (à quoi sert l'inventaire), puis seulement
+examiner (comment les artistes ont été choisis, les mentions en chiffres, ce que ces mots
+veulent dire), avant l'entrée dans l'exploration. Les ancres n'ont pas bougé : `usages` reste
+`usages`, seul son rang change, dans le DOM comme dans le rail de sommaire.
+
+**Le texte du premier volet est aligné sur la Méthode.** Il décrivait un outil et redonnait
+deux effectifs déjà dits ailleurs ; il énonce maintenant la règle de constitution de la liste —
+seuil de dix fiches, regroupement des différentes écritures d'un nom, vérification des
+identités, copies « d'après » comptées séparément — et le fait que la liste est publiée
+progressivement. Sans aucun chiffre : les effectifs ne se disent qu'à « Les mentions en
+chiffres ». Le seuil y figure donc en toutes lettres, seule valeur en dur de la page, signalée
+comme telle dans le code. La section correspondante de la page Méthode n'est pas touchée.
+
+**La section des exemples explique une « fiche Joconde » en langage courant.** « Exemples de
+notices Joconde » nommait un objet de catalogue et supposait qu'on sache ce qu'est une notice ;
+le titre dit maintenant ce qu'on va y voir, et le chapô dit d'abord ce qu'est une fiche. Deux
+libellés de liens suivent le même registre : « Voir la fiche complète sur POP » et « Comment
+les fiches sont analysées », l'un et l'autre vers les mêmes URL qu'avant.
+
+**Les données, les calculs, le graphique, le glossaire et les deux exemples — œuvres, images,
+crédits, extraits du champ Auteur, explications, liens POP — restent inchangés.** Le mot
+« notice » n'a pas été remplacé mécaniquement : il reste en place partout où il désigne l'objet
+manipulé, y compris dans les classes CSS et les commentaires techniques.
+
 ## 2026-08-24 — L'ouverture de « Le projet » définit le sujet, pas le site
 
 Lors d'une présentation orale, deux formules de l'ouverture ont bloqué la compréhension :
