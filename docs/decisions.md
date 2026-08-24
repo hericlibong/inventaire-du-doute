@@ -2,6 +2,29 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-24 — La couverture ne dit plus « notices », elle dit « œuvres concernées »
+
+Le mot **notice** bloquait la compréhension immédiate de l'accueil. C'est du vocabulaire de
+catalogue : pour un visiteur qui arrive, « 6 081 notices » ne désigne rien de visible, et il
+fallait déjà connaître le sujet pour deviner ce qui était compté. La première phrase, elle,
+parlait de « liens » entre le nom d'un artiste et une œuvre — une abstraction de même nature.
+
+Le texte de couverture est donc réécrit pour nommer d'abord ce que font les musées, puis ce
+que le volume permet de faire : « Les musées de France n'attribuent pas toujours une œuvre à
+un artiste avec certitude. Ils signalent cette réserve dans leur catalogue. » Le compteur
+devient « artistes · œuvres concernées ».
+
+**Le changement est limité à la couverture.** Aucun remplacement global de « notice » par
+« œuvre » : le mot reste juste partout où il désigne l'objet réellement manipulé, et la page
+**Méthode** continue d'expliquer que l'unité technique de calcul est la notice Joconde. On ne
+lit pas non plus « œuvres distinctes » : les données ne garantissent pas strictement qu'une
+notice égale une œuvre, et le mot « concernées » dit ce qu'on affiche sans promettre un
+dénombrement d'objets.
+
+Les deux valeurs restent lues dans `corpus_maitres.json` (`web/src/routes/+page.js`), jamais
+écrites en dur. Le titre, le sous-titre de volume, la source, la navigation, l'illustration et
+la direction graphique ne bougent pas.
+
 ## 2026-08-12 — Les demandes d'autorisation d'images, adressées par interlocuteur
 
 Reprise du « Levier A » différé le 2026-07-29 : établir la liste des institutions à

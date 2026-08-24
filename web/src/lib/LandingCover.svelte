@@ -38,18 +38,24 @@
 		/>
 	</picture>
 
-	<!-- Bloc éditorial de la couverture. Réécrit le 2026-08-08 (phase 2 de la
-	     finalisation), sur le texte de l'utilisateur, repris tel quel.
-	     Ce qu'il remplace disait « Quand le musée n'est pas sûr, il l'écrit » —
-	     une généralité qui ne nommait ni de quoi ni de qui il s'agit, et que
-	     l'utilisateur lui-même ne comprenait plus.
-	     Trois règles portées par ce texte :
+	<!-- Bloc éditorial de la couverture. Réécrit le 2026-08-24 sur le texte de
+	     l'utilisateur, repris tel quel.
+	     Ce qu'il remplace parlait de « liens » entre le nom d'un artiste et une
+	     œuvre : abstrait, il demandait de connaître déjà le sujet pour être compris.
+	     Le nouveau texte dit d'abord ce que font les musées, puis ce que le volume
+	     permet de faire.
+	     Règles conservées :
 	       · il ne commence PAS par « Dans Joconde » — on comprend le sujet avant
 	         d'apprendre le nom de la source ;
 	       · il n'énumère AUCUNE mention (« attribué à », « de son atelier »…) :
 	         leur explication appartient à la page « Le projet » ;
-	       · les chiffres deviennent une information autonome, sortie des phrases,
-	         chaque nombre restant collé à son unité.
+	       · les chiffres restent une information autonome, sortie des phrases,
+	         chaque nombre collé à son unité.
+	     Le mot « notice » a quitté la couverture le 2026-08-24 : c'est du vocabulaire
+	     de catalogue, et il bloquait la compréhension immédiate. Le compteur dit
+	     « œuvres concernées ». L'unité technique de calcul reste la notice Joconde —
+	     la page « Méthode » l'explique, et le reste de l'application garde le mot là
+	     où il est juste.
 	     Les deux valeurs sont lues dans corpus_maitres.json (+page.js), jamais
 	     écrites en dur. -->
 	<div class="titre">
@@ -58,13 +64,13 @@
 
 		<div class="phrases">
 			<p class="e1">
-				Le nom d’un artiste peut accompagner une œuvre sans que le musée la lui
-				attribue directement.
+				Les musées de France n’attribuent pas toujours une œuvre à un artiste avec
+				certitude. Ils signalent cette réserve dans leur catalogue.
 			</p>
 			<p class="e2">
-				Ce premier volume explore ces liens autour de {nombre(artistes)} artistes :
-				les œuvres concernées, la manière dont elles sont décrites et les musées qui
-				les conservent.
+				Ce premier volume permet d’explorer les œuvres concernées, artiste par
+				artiste, et de voir comment elles sont décrites et dans quels musées elles
+				sont conservées.
 			</p>
 		</div>
 
@@ -74,7 +80,7 @@
 		<p class="chiffres">
 			<span class="paire"><span class="chiffre">{enVedette(artistes)}</span> artistes</span>
 			<span class="sep" aria-hidden="true">·</span>
-			<span class="paire"><span class="chiffre">{enVedette(notices)}</span> notices</span>
+			<span class="paire"><span class="chiffre">{enVedette(notices)}</span> œuvres concernées</span>
 		</p>
 
 		<p class="source">Source : Joconde, catalogue collectif des musées de France.</p>
@@ -135,7 +141,7 @@
 		content: '';
 		position: absolute;
 		z-index: -1;
-		inset: -1rem -3rem -1.5rem -2rem;
+		inset: -1rem -3rem -3rem -2rem;
 		pointer-events: none;
 		background: linear-gradient(
 			100deg,
@@ -143,8 +149,13 @@
 			rgba(17, 25, 35, 0.42) 58%,
 			rgba(17, 25, 35, 0) 92%
 		);
-		-webkit-mask-image: linear-gradient(to bottom, transparent, #000 6%, #000 90%, transparent);
-		mask-image: linear-gradient(to bottom, transparent, #000 6%, #000 90%, transparent);
+		/* Le texte de couverture réécrit le 2026-08-24 est plus long de deux lignes :
+		   la ligne « Source » descend d'environ 70 px et tombait dans le fondu bas du
+		   voile, donc sur le clair de l'illustration. La marge basse du voile est
+		   allongée (1,5 → 3 rem) et le fondu commence plus tard : il se déroule
+		   entièrement SOUS le dernier texte, sans arête visible. */
+		-webkit-mask-image: linear-gradient(to bottom, transparent, #000 6%, #000 92%, transparent);
+		mask-image: linear-gradient(to bottom, transparent, #000 6%, #000 92%, transparent);
 	}
 
 	.titre h1 {
