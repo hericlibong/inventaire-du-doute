@@ -106,18 +106,34 @@
 	<header class="tete" id="le-projet" tabindex="-1">
 		<p class="kicker">Volume 1 — Autour des maîtres</p>
 		<h1>Qu'est-ce que L'inventaire du doute&nbsp;?</h1>
+		<!-- Ouverture réécrite le 2026-08-24, sur le texte de l'utilisateur, repris tel
+		     quel. Ce qu'elle remplace se définissait d'abord comme « un site éditorial et
+		     interactif » et parlait de « notices d'œuvres d'art » : en présentation, ces
+		     deux formules ont bloqué la compréhension avant même que le sujet soit posé.
+		     L'ouverture énonce maintenant le sujet — les musées ne savent pas toujours
+		     qui a créé une œuvre —, puis l'ampleur, puis ce que le projet en fait.
+		     Le lien porte sur le seul mot « Joconde », et la base est présentée comme le
+		     catalogue en ligne des collections des musées de France.
+		     Les deux chiffres restent lus dans les exports, jamais écrits en dur ; ni eux
+		     ni leur calcul ne bougent. -->
 		<p class="ouverture-texte">
-			«&nbsp;L'Inventaire du doute&nbsp;» est un site éditorial et interactif fondé sur les données de la
+			Les musées ne savent pas toujours avec certitude qui a créé une œuvre. Dans
 			<a
 				href="https://www.data.gouv.fr/fr/datasets/collections-des-musees-de-france-base-joconde/"
 				target="_blank"
-				rel="noopener">base Joconde</a>, le catalogue collectif des collections des musées de France.
-			Dans la version sur laquelle nous avons travaillé, Joconde rassemble plus d'un million de
-			notices d'œuvres d'art. Parmi elles,
-			<strong>{nombre(niveaux.doute_total)}</strong>, soit <strong>{tauxDoute}&nbsp;%</strong>,
-			indiquent qu'il y a une incertitude ou une réserve sur l'auteur d'une œuvre. Ce projet
-			organise ces informations pour permettre de les consulter et de les explorer, sans chercher
-			à authentifier ni à réattribuer les œuvres.
+				rel="noopener">Joconde</a>, le catalogue en ligne des collections des musées de France,
+			ils utilisent des expressions comme « attribué à », « atelier de » ou
+			« école de » pour le signaler.
+		</p>
+		<p class="ouverture-texte">
+			La version étudiée réunit plus d'un million de fiches décrivant des œuvres ou des
+			ensembles. <strong>{nombre(niveaux.doute_total)}</strong> d'entre elles, soit
+			<strong>{tauxDoute}&nbsp;%</strong>, comportent une réserve sur l'auteur.
+		</p>
+		<p class="ouverture-texte">
+			L'Inventaire du doute rassemble ces informations pour permettre d'explorer les œuvres
+			concernées, les artistes auxquels elles sont associées et les musées qui les conservent.
+			Il restitue ce que les musées ont publié sans chercher à trancher l'identité de l'auteur.
 		</p>
 	</header>
 

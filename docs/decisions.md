@@ -2,6 +2,26 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-24 — L'ouverture de « Le projet » définit le sujet, pas le site
+
+Lors d'une présentation orale, deux formules de l'ouverture ont bloqué la compréhension :
+**« notice d'œuvre »**, qui suppose de connaître le vocabulaire des catalogues, et la
+définition du projet comme **« site éditorial et interactif »**, qui décrit le contenant avant
+de dire de quoi il parle. L'auditeur devait attendre la troisième phrase pour savoir de quoi
+il s'agissait.
+
+L'ouverture énonce désormais le sujet dès la première phrase — les musées ne savent pas
+toujours avec certitude qui a créé une œuvre —, puis l'ampleur, puis ce que le projet en fait.
+**Joconde y est présentée comme le catalogue en ligne des collections des musées de France**,
+et le lien porte sur ce seul mot. Dans cette ouverture, **« fiches décrivant des œuvres ou des
+ensembles » remplace « notices d'œuvres d'art »** : une notice Joconde peut décrire un objet
+comme un ensemble, et « fiche » se comprend sans glossaire.
+
+**Les chiffres et leur mode de calcul ne changent pas.** Les 24 507 notices prudentes
+et le taux de 2,4 % restent lus dans les exports, jamais écrits en dur, et la page **Méthode**
+continue d'exposer l'unité de calcul. Le changement est limité à ce texte d'ouverture : le mot
+« notice » reste en place partout ailleurs dans la page et dans le projet.
+
 ## 2026-08-24 — La couverture ne dit plus « notices », elle dit « œuvres concernées »
 
 Le mot **notice** bloquait la compréhension immédiate de l'accueil. C'est du vocabulaire de
