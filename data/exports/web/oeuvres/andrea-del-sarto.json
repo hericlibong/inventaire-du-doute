@@ -37,7 +37,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Dole",
    "code": "point_interrogation",
-   "extrait": "SARTO Andrea del (?, manière de)"
+   "extrait": "SARTO Andrea del (?, manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0347001723.jpg",
+    "credit": "Jean-Loup Mathieu (Eurêka) - utilisation soumise à autorisation ; studio Chechillot",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0347001723",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350002407",
@@ -46,7 +56,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350002407.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350002407",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350002408",
@@ -55,7 +75,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350002408.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350002408",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350507598",
@@ -64,7 +94,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350507598.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350507598",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350507596",
@@ -73,7 +113,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350507596.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350507596",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350507600",
@@ -82,7 +132,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350507600.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350507600",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350507597",
@@ -91,7 +151,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350507597.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350507597",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350507599",
@@ -100,7 +170,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350507599.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350507599",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350002370",
@@ -109,7 +189,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350002370.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350002370",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350002419",
@@ -118,7 +208,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350002419.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350002419",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350002326",
@@ -127,7 +227,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "SARTO Andrea del (attribué à)"
+   "extrait": "SARTO Andrea del (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350002326.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350002326",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350002365",
@@ -136,7 +246,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350002365.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350002365",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350002366",
@@ -145,7 +265,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350002366.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350002366",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350002374",
@@ -154,7 +284,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350002374.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350002374",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350002388",
@@ -163,7 +303,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350002388.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350002388",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350002375",
@@ -172,7 +322,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350002375.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350002375",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350002413",
@@ -181,7 +341,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350002413.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350002413",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350002376",
@@ -190,7 +360,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350002376.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350002376",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350002386",
@@ -199,7 +379,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350002386.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350002386",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350002364",
@@ -208,7 +398,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350002364.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350002364",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350002361",
@@ -217,7 +417,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350002361.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350002361",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350002358",
@@ -226,7 +436,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350002358.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350002358",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350002406",
@@ -235,7 +455,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350002406.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350002406",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350002411",
@@ -244,7 +474,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350002411.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350002411",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350002377",
@@ -253,7 +493,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350002377.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350002377",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350002401",
@@ -262,7 +512,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350002401.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350002401",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350002412",
@@ -271,7 +531,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350002412.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350002412",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350002369",
@@ -280,7 +550,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350002369.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350002369",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350002383",
@@ -289,7 +569,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350002383.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350002383",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350002362",
@@ -298,7 +588,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350002362.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350002362",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350002385",
@@ -307,7 +607,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350002385.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350002385",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350002373",
@@ -316,7 +626,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350002373.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350002373",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350002380",
@@ -325,7 +645,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350002380.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350002380",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350002381",
@@ -334,7 +664,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350002381.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350002381",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350002416",
@@ -343,7 +683,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350002416.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350002416",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350002415",
@@ -352,7 +702,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350002415.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350002415",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350002421",
@@ -361,7 +721,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350002421.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350002421",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350002384",
@@ -370,7 +740,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350002384.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350002384",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350002363",
@@ -379,7 +759,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350002363.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350002363",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350002382",
@@ -388,7 +778,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350002382.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350002382",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350002378",
@@ -397,7 +797,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350002378.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350002378",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350002420",
@@ -406,7 +816,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350002420.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350002420",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350002417",
@@ -415,7 +835,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350002417.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350002417",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350002414",
@@ -424,7 +854,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350002414.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350002414",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350002422",
@@ -433,7 +873,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350002422.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350002422",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350002418",
@@ -442,7 +892,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350002418.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350002418",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350002360",
@@ -451,7 +911,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350002360.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350002360",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350002423",
@@ -460,7 +930,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350002423.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350002423",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350002379",
@@ -469,7 +949,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350002379.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350002379",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350002367",
@@ -478,7 +968,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350002367.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350002367",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350002368",
@@ -487,7 +987,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350002368.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350002368",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350002471",
@@ -496,7 +1006,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350002471.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350002471",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350113696",
@@ -505,7 +1025,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "SARTO Andrea del (attribué à)"
+   "extrait": "SARTO Andrea del (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350113696.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350113696",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350003640",
@@ -514,7 +1044,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350003640.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350003640",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350102025",
@@ -523,7 +1063,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350102025.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350102025",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350113697",
@@ -532,7 +1082,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "SARTO Andrea del (attribué à)"
+   "extrait": "SARTO Andrea del (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350113697.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350113697",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350200897",
@@ -541,7 +1101,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350200897.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350200897",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350200720",
@@ -550,7 +1120,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350200720.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350200720",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350145087",
@@ -559,7 +1139,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350145087.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350145087",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350500087",
@@ -568,7 +1158,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "SARTO Andrea del (école)"
+   "extrait": "SARTO Andrea del (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350500087.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350500087",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350508654",
@@ -586,7 +1186,17 @@
    "musee": "musée Sarret de Grozon",
    "ville": "Arbois",
    "code": "genre_de",
-   "extrait": "Andrea Del Sarto (1486-1531) (genre de)"
+   "extrait": "Andrea Del Sarto (1486-1531) (genre de)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0341000307.jpg",
+    "credit": "© musée Sarret de Grozon, Arbois ; © Henri Bertand",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0341000307",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   }
  ],
  "version_donnee": "2026-07-01",

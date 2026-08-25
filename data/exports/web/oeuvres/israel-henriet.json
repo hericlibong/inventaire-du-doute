@@ -20,7 +20,17 @@
    "musee": "musée des ursulines",
    "ville": "Mâcon",
    "code": "attribue",
-   "extrait": "HENRIET Israël (attribué à, graveur)"
+   "extrait": "HENRIET Israël (attribué à, graveur)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/01720000218.jpg",
+    "credit": "© Musées de Mâcon",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/01720000218",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "02860008454",
@@ -29,7 +39,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Orléans",
    "code": "point_interrogation",
-   "extrait": "HENRIET Israël (éditeur, ?)"
+   "extrait": "HENRIET Israël (éditeur, ?)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/02860008454.jpg",
+    "credit": "Orléans, musée des beaux-arts © cliché François LAUGINIE",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/02860008454",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "02860008453",
@@ -38,7 +58,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Orléans",
    "code": "point_interrogation",
-   "extrait": "HENRIET Israël (?, éditeur)"
+   "extrait": "HENRIET Israël (?, éditeur)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/02860008453.jpg",
+    "credit": "Orléans, musée des beaux-arts © cliché François LAUGINIE",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/02860008453",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "02860008401",
@@ -47,7 +77,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Orléans",
    "code": "point_interrogation",
-   "extrait": "HENRIET Israël (?, éditeur)"
+   "extrait": "HENRIET Israël (?, éditeur)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/02860008401.jpg",
+    "credit": "Orléans, musée des beaux-arts © cliché S. BARRET/G. PRETRE",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/02860008401",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "02860008456",
@@ -56,7 +96,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Orléans",
    "code": "point_interrogation",
-   "extrait": "HENRIET Israël (?, éditeur)"
+   "extrait": "HENRIET Israël (?, éditeur)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/02860008456.jpg",
+    "credit": "Orléans, musée des beaux-arts © cliché François LAUGINIE",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/02860008456",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "02860008397",
@@ -65,7 +115,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Orléans",
    "code": "point_interrogation",
-   "extrait": "Henriet Israël (1590?-1661) (?, graveur)"
+   "extrait": "Henriet Israël (1590?-1661) (?, graveur)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/02860008397.jpg",
+    "credit": "Orléans, musée des beaux-arts © cliché François LAUGINIE",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/02860008397",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "02860008398",
@@ -74,7 +134,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Orléans",
    "code": "point_interrogation",
-   "extrait": "Henriet Israël (1590?-1661) (éditeur, ?)"
+   "extrait": "Henriet Israël (1590?-1661) (éditeur, ?)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/02860008398.jpg",
+    "credit": "Orléans, musée des beaux-arts © cliché François LAUGINIE",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/02860008398",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "02860008465",
@@ -83,7 +153,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Orléans",
    "code": "point_interrogation",
-   "extrait": "HENRIET Israël (éditeur, ?)"
+   "extrait": "HENRIET Israël (éditeur, ?)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/02860008465.jpg",
+    "credit": "Orléans, musée des beaux-arts © cliché François LAUGINIE",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/02860008465",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "06570019011",
@@ -92,7 +172,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Caen",
    "code": "point_interrogation",
-   "extrait": "Henriet Israël (1607-1661) (graveur, ?)"
+   "extrait": "Henriet Israël (1607-1661) (graveur, ?)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06570019011.jpg",
+    "credit": "",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06570019011",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "06570019013",
@@ -101,7 +191,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Caen",
    "code": "point_interrogation",
-   "extrait": "Henriet Israël (1607-1661) (graveur, ?)"
+   "extrait": "Henriet Israël (1607-1661) (graveur, ?)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06570019013.jpg",
+    "credit": "",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06570019013",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "06570019014",
@@ -110,7 +210,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Caen",
    "code": "point_interrogation",
-   "extrait": "Henriet Israël (1607-1661) (graveur, ?)"
+   "extrait": "Henriet Israël (1607-1661) (graveur, ?)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06570019014.jpg",
+    "credit": "",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06570019014",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "06570019016",
@@ -119,7 +229,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Caen",
    "code": "point_interrogation",
-   "extrait": "Henriet Israël (1607-1661) (graveur, ?)"
+   "extrait": "Henriet Israël (1607-1661) (graveur, ?)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06570019016.jpg",
+    "credit": "",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06570019016",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "06570019017",
@@ -128,7 +248,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Caen",
    "code": "point_interrogation",
-   "extrait": "Henriet Israël (1607-1661) (graveur, ?)"
+   "extrait": "Henriet Israël (1607-1661) (graveur, ?)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06570019017.jpg",
+    "credit": "",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06570019017",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "06570019020",
@@ -137,7 +267,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Caen",
    "code": "point_interrogation",
-   "extrait": "Henriet Israël (1607-1661) (graveur, ?)"
+   "extrait": "Henriet Israël (1607-1661) (graveur, ?)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06570019020.jpg",
+    "credit": "",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06570019020",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "06570019021",
@@ -146,7 +286,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Caen",
    "code": "point_interrogation",
-   "extrait": "Henriet Israël (1607-1661) (graveur, ?)"
+   "extrait": "Henriet Israël (1607-1661) (graveur, ?)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06570019021.jpg",
+    "credit": "",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06570019021",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "06570019023",
@@ -155,7 +305,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Caen",
    "code": "point_interrogation",
-   "extrait": "Henriet Israël (1607-1661) (graveur, ?)"
+   "extrait": "Henriet Israël (1607-1661) (graveur, ?)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06570019023.jpg",
+    "credit": "",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06570019023",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "06570019018",
@@ -164,7 +324,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Caen",
    "code": "point_interrogation",
-   "extrait": "Henriet Israël (1607-1661) (graveur, ?)"
+   "extrait": "Henriet Israël (1607-1661) (graveur, ?)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06570019018.jpg",
+    "credit": "",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06570019018",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "06570019019",
@@ -173,7 +343,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Caen",
    "code": "point_interrogation",
-   "extrait": "Henriet Israël (1607-1661) (graveur, ?)"
+   "extrait": "Henriet Israël (1607-1661) (graveur, ?)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06570019019.jpg",
+    "credit": "",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06570019019",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "06570019022",
@@ -182,7 +362,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Caen",
    "code": "point_interrogation",
-   "extrait": "Henriet Israël (1607-1661) (graveur, ?)"
+   "extrait": "Henriet Israël (1607-1661) (graveur, ?)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06570019022.jpg",
+    "credit": "",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06570019022",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "06570019024",
@@ -191,7 +381,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Caen",
    "code": "point_interrogation",
-   "extrait": "Henriet Israël (1607-1661) (graveur, ?)"
+   "extrait": "Henriet Israël (1607-1661) (graveur, ?)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06570019024.jpg",
+    "credit": "",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06570019024",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "06570019012",
@@ -200,7 +400,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Caen",
    "code": "point_interrogation",
-   "extrait": "Henriet Israël (1607-1661) (graveur, ?)"
+   "extrait": "Henriet Israël (1607-1661) (graveur, ?)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06570019012.jpg",
+    "credit": "",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06570019012",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "06570019015",
@@ -209,7 +419,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Caen",
    "code": "point_interrogation",
-   "extrait": "Henriet Israël (1607-1661) (graveur, ?)"
+   "extrait": "Henriet Israël (1607-1661) (graveur, ?)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06570019015.jpg",
+    "credit": "",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06570019015",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "06570019070",
@@ -218,7 +438,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Caen",
    "code": "point_interrogation",
-   "extrait": "Henriet Israël (1607-1661) (graveur, ?)"
+   "extrait": "Henriet Israël (1607-1661) (graveur, ?)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06570019070.jpg",
+    "credit": "",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06570019070",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "06570019067",
@@ -227,7 +457,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Caen",
    "code": "point_interrogation",
-   "extrait": "Henriet Israël (1607-1661) (graveur, ?)"
+   "extrait": "Henriet Israël (1607-1661) (graveur, ?)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06570019067.jpg",
+    "credit": "",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06570019067",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "06570019069",
@@ -236,7 +476,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Caen",
    "code": "point_interrogation",
-   "extrait": "Henriet Israël (1607-1661) (graveur, ?)"
+   "extrait": "Henriet Israël (1607-1661) (graveur, ?)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06570019069.jpg",
+    "credit": "",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06570019069",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "06570019068",
@@ -245,7 +495,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Caen",
    "code": "point_interrogation",
-   "extrait": "Henriet Israël (1607-1661) (graveur, ?)"
+   "extrait": "Henriet Israël (1607-1661) (graveur, ?)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06570019068.jpg",
+    "credit": "",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06570019068",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   }
  ],
  "version_donnee": "2026-07-01",

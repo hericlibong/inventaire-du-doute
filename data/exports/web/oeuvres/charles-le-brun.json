@@ -82,7 +82,17 @@
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE008955.jpg",
+    "credit": "© Gérard Blot ; Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE008955",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE013144",
@@ -156,7 +166,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Bordeaux",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE025251.jpg",
+    "credit": "© L. Gauthier",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE025251",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE026535",
@@ -214,7 +234,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Rouen",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/00000058404.jpg",
+    "credit": "© Carole Loisel ; © Catherine Lancien",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/00000058404",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00000104553",
@@ -223,7 +253,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
-   "extrait": "LE BRUN Charles (atelier)"
+   "extrait": "LE BRUN Charles (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/00000104553.jpg",
+    "credit": "© Gérard Blot ; Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/00000104553",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE011526",
@@ -232,7 +272,17 @@
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "attribue",
-   "extrait": "LE BRUN Charles (attribué)"
+   "extrait": "LE BRUN Charles (attribué)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE011526.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE011526",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE011536",
@@ -241,7 +291,17 @@
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE011536.jpg",
+    "credit": "© Gérard Blot ; Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE011536",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208139",
@@ -250,7 +310,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208139.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208139",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208107",
@@ -259,7 +329,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208107.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208107",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208110",
@@ -268,7 +348,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208110.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208110",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208102",
@@ -277,7 +367,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208102.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208102",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208091",
@@ -286,7 +386,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208091.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208091",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208093",
@@ -295,7 +405,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208093.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208093",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208099",
@@ -304,7 +424,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208099.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208099",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208113",
@@ -313,7 +443,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208113.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208113",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208111",
@@ -322,7 +462,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208111.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208111",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208026",
@@ -331,7 +481,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208026.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208026",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208064",
@@ -340,7 +500,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208064.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208064",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208100",
@@ -349,7 +519,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208100.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208100",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208104",
@@ -358,7 +538,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208104.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208104",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350207993",
@@ -367,7 +557,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350207993.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350207993",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350207998",
@@ -376,7 +576,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350207998.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350207998",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208076",
@@ -385,7 +595,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208076.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208076",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208019",
@@ -394,7 +614,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208019.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208019",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208015",
@@ -403,7 +633,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208015.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208015",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208055",
@@ -412,7 +652,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208055.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208055",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208081",
@@ -421,7 +671,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208081.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208081",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350207997",
@@ -430,7 +690,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350207997.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350207997",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208017",
@@ -439,7 +709,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208017.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208017",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208037",
@@ -448,7 +728,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208037.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208037",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208011",
@@ -457,7 +747,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208011.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208011",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208018",
@@ -466,7 +766,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208018.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208018",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208086",
@@ -475,7 +785,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208086.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208086",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208010",
@@ -484,7 +804,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208010.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208010",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208027",
@@ -493,7 +823,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208027.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208027",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208063",
@@ -502,7 +842,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208063.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208063",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208059",
@@ -511,7 +861,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208059.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208059",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208058",
@@ -520,7 +880,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208058.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208058",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208057",
@@ -529,7 +899,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208057.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208057",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208073",
@@ -538,7 +918,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208073.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208073",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350207992",
@@ -547,7 +937,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350207992.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350207992",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208065",
@@ -556,7 +956,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208065.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208065",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208052",
@@ -565,7 +975,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208052.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208052",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350207996",
@@ -574,7 +994,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350207996.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350207996",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208106",
@@ -583,7 +1013,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208106.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208106",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208028",
@@ -592,7 +1032,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208028.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208028",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350207820",
@@ -601,7 +1051,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "LE BRUN Charles (attribué à)"
+   "extrait": "LE BRUN Charles (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350207820.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350207820",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208095",
@@ -610,7 +1070,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208095.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208095",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208030",
@@ -619,7 +1089,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208030.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208030",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208035",
@@ -628,7 +1108,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208035.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208035",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208031",
@@ -637,7 +1127,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208031.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208031",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208045",
@@ -646,7 +1146,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208045.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208045",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208169",
@@ -655,7 +1165,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208169.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208169",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208033",
@@ -664,7 +1184,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208033.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208033",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208145",
@@ -673,7 +1203,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208145.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208145",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208108",
@@ -682,7 +1222,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208108.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208108",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350207995",
@@ -691,7 +1241,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350207995.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350207995",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350207994",
@@ -700,7 +1260,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350207994.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350207994",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208042",
@@ -709,7 +1279,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208042.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208042",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350207830",
@@ -718,7 +1298,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "LE BRUN Charles (attribué à)"
+   "extrait": "LE BRUN Charles (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350207830.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350207830",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350507912",
@@ -790,7 +1380,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208192.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208192",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208201",
@@ -799,7 +1399,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208201.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208201",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208191",
@@ -808,7 +1418,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208191.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208191",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208196",
@@ -817,7 +1437,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208196.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208196",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208197",
@@ -826,7 +1456,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208197.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208197",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208190",
@@ -835,7 +1475,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208190.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208190",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208204",
@@ -844,7 +1494,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208204.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208204",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208199",
@@ -853,7 +1513,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208199.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208199",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208202",
@@ -862,7 +1532,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208202.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208202",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208203",
@@ -871,7 +1551,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208203.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208203",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208205",
@@ -880,7 +1570,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208205.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208205",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208198",
@@ -889,7 +1589,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208198.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208198",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208041",
@@ -898,7 +1608,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208041.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208041",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208034",
@@ -907,7 +1627,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208034.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208034",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208044",
@@ -916,7 +1646,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208044.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208044",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208036",
@@ -925,7 +1665,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208036.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208036",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208001",
@@ -934,7 +1684,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208001.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208001",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208078",
@@ -943,7 +1703,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208078.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208078",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208085",
@@ -952,7 +1722,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208085.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208085",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208069",
@@ -961,7 +1741,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208069.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208069",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208087",
@@ -970,7 +1760,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208087.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208087",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208047",
@@ -979,7 +1779,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208047.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208047",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350207986",
@@ -988,7 +1798,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350207986.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350207986",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350207989",
@@ -997,7 +1817,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350207989.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350207989",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208038",
@@ -1006,7 +1836,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208038.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208038",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350207838",
@@ -1015,7 +1855,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "LE BRUN Charles (attribué à)"
+   "extrait": "LE BRUN Charles (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350207838.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350207838",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208088",
@@ -1024,7 +1874,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208088.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208088",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208012",
@@ -1033,7 +1893,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208012.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208012",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208056",
@@ -1042,7 +1912,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208056.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208056",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208053",
@@ -1051,7 +1931,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208053.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208053",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208005",
@@ -1060,7 +1950,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208005.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208005",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208062",
@@ -1069,7 +1969,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208062.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208062",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208068",
@@ -1078,7 +1988,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208068.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208068",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208082",
@@ -1087,7 +2007,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208082.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208082",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350207999",
@@ -1096,7 +2026,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350207999.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350207999",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208050",
@@ -1105,7 +2045,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208050.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208050",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208077",
@@ -1114,7 +2064,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208077.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208077",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208074",
@@ -1123,7 +2083,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208074.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208074",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208066",
@@ -1132,7 +2102,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208066.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208066",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208072",
@@ -1141,7 +2121,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208072.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208072",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208002",
@@ -1150,7 +2140,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208002.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208002",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350207990",
@@ -1159,7 +2159,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350207990.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350207990",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208022",
@@ -1168,7 +2178,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208022.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208022",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208080",
@@ -1177,7 +2197,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208080.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208080",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208049",
@@ -1186,7 +2216,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208049.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208049",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350207991",
@@ -1195,7 +2235,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350207991.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350207991",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208025",
@@ -1204,7 +2254,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208025.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208025",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208048",
@@ -1213,7 +2273,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208048.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208048",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350207839",
@@ -1222,7 +2292,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "LE BRUN Charles (attribué à)"
+   "extrait": "LE BRUN Charles (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350207839.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350207839",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350207840",
@@ -1231,7 +2311,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "LE BRUN Charles (attribué à)"
+   "extrait": "LE BRUN Charles (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350207840.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350207840",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208060",
@@ -1240,7 +2330,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208060.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208060",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208003",
@@ -1249,7 +2349,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208003.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208003",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208084",
@@ -1258,7 +2368,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208084.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208084",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208008",
@@ -1267,7 +2387,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208008.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208008",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208023",
@@ -1276,7 +2406,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208023.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208023",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208007",
@@ -1285,7 +2425,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208007.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208007",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208021",
@@ -1294,7 +2444,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208021.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208021",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208071",
@@ -1303,7 +2463,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208071.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208071",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208070",
@@ -1312,7 +2482,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208070.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208070",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208079",
@@ -1321,7 +2501,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208079.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208079",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350207988",
@@ -1330,7 +2520,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350207988.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350207988",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208020",
@@ -1339,7 +2539,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208020.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208020",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208067",
@@ -1348,7 +2558,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208067.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208067",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208039",
@@ -1357,7 +2577,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208039.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208039",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208029",
@@ -1366,7 +2596,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208029.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208029",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208043",
@@ -1375,7 +2615,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208043.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208043",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208016",
@@ -1384,7 +2634,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208016.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208016",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208075",
@@ -1393,7 +2653,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208075.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208075",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208014",
@@ -1402,7 +2672,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208014.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208014",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350207837",
@@ -1411,7 +2691,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "LE BRUN Charles (attribué à)"
+   "extrait": "LE BRUN Charles (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350207837.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350207837",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208004",
@@ -1420,7 +2710,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208004.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208004",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208051",
@@ -1429,7 +2729,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208051.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208051",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208006",
@@ -1438,7 +2748,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208006.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208006",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208013",
@@ -1447,7 +2767,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208013.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208013",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350207836",
@@ -1456,7 +2786,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "LE BRUN Charles (attribué à)"
+   "extrait": "LE BRUN Charles (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350207836.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350207836",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208061",
@@ -1465,7 +2805,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208061.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208061",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208000",
@@ -1474,7 +2824,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208000.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208000",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208083",
@@ -1483,7 +2843,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208083.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208083",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208009",
@@ -1492,7 +2862,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208009.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208009",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350207987",
@@ -1501,7 +2881,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350207987.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350207987",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070000146",
@@ -1530,7 +2920,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208040.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208040",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208112",
@@ -1539,7 +2939,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208112.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208112",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208024",
@@ -1548,7 +2958,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208024.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208024",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208054",
@@ -1566,7 +2986,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208032.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208032",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208090",
@@ -1575,7 +3005,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208090.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208090",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350503082",
@@ -1584,7 +3024,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350503082.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350503082",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350503089",
@@ -1593,7 +3043,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350503089.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350503089",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350503078",
@@ -1602,7 +3062,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350503078.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350503078",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350503092",
@@ -1611,7 +3081,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "LE BRUN Charles (attribué à)"
+   "extrait": "LE BRUN Charles (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350503092.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350503092",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350503088",
@@ -1620,7 +3100,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "LE BRUN Charles (attribué à)"
+   "extrait": "LE BRUN Charles (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350503088.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350503088",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350503081",
@@ -1629,7 +3119,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350503081.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350503081",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350503077",
@@ -1638,7 +3138,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "LE BRUN Charles (attribué à)"
+   "extrait": "LE BRUN Charles (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350503077.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350503077",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350503076",
@@ -1647,7 +3157,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350503076.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350503076",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350503091",
@@ -1656,7 +3176,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "LE BRUN Charles (attribué à)"
+   "extrait": "LE BRUN Charles (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350503091.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350503091",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350503083",
@@ -1665,7 +3195,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350503083.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350503083",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350503084",
@@ -1674,7 +3214,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350503084.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350503084",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350503090",
@@ -1683,7 +3233,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350503090.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350503090",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350207798",
@@ -1692,7 +3252,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "LE BRUN Charles (attribué à)"
+   "extrait": "LE BRUN Charles (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350207798.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350207798",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350207809",
@@ -1701,7 +3271,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "LE BRUN Charles (attribué à)"
+   "extrait": "LE BRUN Charles (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350207809.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350207809",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350207813",
@@ -1710,7 +3290,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "LE BRUN Charles (attribué à)"
+   "extrait": "LE BRUN Charles (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350207813.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350207813",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350207814",
@@ -1719,7 +3309,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "LE BRUN Charles (attribué à)"
+   "extrait": "LE BRUN Charles (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350207814.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350207814",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350207810",
@@ -1728,7 +3328,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "LE BRUN Charles (attribué à)"
+   "extrait": "LE BRUN Charles (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350207810.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350207810",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350207811",
@@ -1737,7 +3347,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "LE BRUN Charles (attribué à)"
+   "extrait": "LE BRUN Charles (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350207811.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350207811",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350207812",
@@ -1746,7 +3366,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "LE BRUN Charles (attribué à)"
+   "extrait": "LE BRUN Charles (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350207812.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350207812",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350512992",
@@ -1782,7 +3412,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208178.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208178",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208150",
@@ -1791,7 +3431,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208150.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208150",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208161",
@@ -1800,7 +3450,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208161.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208161",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208176",
@@ -1809,7 +3469,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208176.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208176",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208146",
@@ -1818,7 +3488,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208146.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208146",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208174",
@@ -1827,7 +3507,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208174.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208174",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208180",
@@ -1836,7 +3526,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208180.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208180",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208185",
@@ -1845,7 +3545,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208185.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208185",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208147",
@@ -1854,7 +3564,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208147.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208147",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208149",
@@ -1863,7 +3583,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208149.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208149",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208172",
@@ -1872,7 +3602,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208172.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208172",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208156",
@@ -1881,7 +3621,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208156.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208156",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208187",
@@ -1890,7 +3640,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208187.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208187",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208140",
@@ -1899,7 +3659,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208140.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208140",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208151",
@@ -1908,7 +3678,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208151.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208151",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208171",
@@ -1917,7 +3697,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208171.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208171",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208168",
@@ -1926,7 +3716,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208168.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208168",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208170",
@@ -1935,7 +3735,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208170.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208170",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208136",
@@ -1944,7 +3754,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208136.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208136",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208142",
@@ -1953,7 +3773,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208142.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208142",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208181",
@@ -1962,7 +3792,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208181.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208181",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208148",
@@ -1971,7 +3811,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208148.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208148",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208162",
@@ -1980,7 +3830,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208162.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208162",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208153",
@@ -1989,7 +3849,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208153.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208153",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208182",
@@ -1998,7 +3868,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208182.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208182",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208154",
@@ -2007,7 +3887,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208154.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208154",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208138",
@@ -2016,7 +3906,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208138.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208138",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208177",
@@ -2025,7 +3925,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208177.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208177",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208155",
@@ -2034,7 +3944,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208155.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208155",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208186",
@@ -2043,7 +3963,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208186.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208186",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208157",
@@ -2052,7 +3982,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208157.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208157",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208159",
@@ -2061,7 +4001,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208159.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208159",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208173",
@@ -2070,7 +4020,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208173.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208173",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208189",
@@ -2079,7 +4039,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208189.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208189",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208144",
@@ -2088,7 +4058,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208144.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208144",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208160",
@@ -2097,7 +4077,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208160.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208160",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208175",
@@ -2106,7 +4096,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208175.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208175",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208165",
@@ -2115,7 +4115,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208165.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208165",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208167",
@@ -2124,7 +4134,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208167.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208167",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208152",
@@ -2133,7 +4153,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208152.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208152",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208158",
@@ -2142,7 +4172,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208158.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208158",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208137",
@@ -2151,7 +4191,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208137.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208137",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208188",
@@ -2160,7 +4210,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208188.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208188",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208166",
@@ -2169,7 +4229,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208166.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208166",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208184",
@@ -2178,7 +4248,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208184.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208184",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208163",
@@ -2187,7 +4267,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208163.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208163",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208141",
@@ -2196,7 +4286,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208141.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208141",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208183",
@@ -2205,7 +4305,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208183.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208183",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208143",
@@ -2214,7 +4324,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208143.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208143",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208179",
@@ -2223,7 +4343,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208179.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208179",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208164",
@@ -2232,7 +4362,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208164.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208164",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350207817",
@@ -2241,7 +4381,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "LE BRUN Charles (attribué à)"
+   "extrait": "LE BRUN Charles (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350207817.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350207817",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350207822",
@@ -2250,7 +4400,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "LE BRUN Charles (attribué à)"
+   "extrait": "LE BRUN Charles (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350207822.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350207822",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350207826",
@@ -2259,7 +4419,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "LE BRUN Charles (attribué à)"
+   "extrait": "LE BRUN Charles (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350207826.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350207826",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350207816",
@@ -2268,7 +4438,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "LE BRUN Charles (attribué à)"
+   "extrait": "LE BRUN Charles (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350207816.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350207816",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350207827",
@@ -2277,7 +4457,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "LE BRUN Charles (attribué à)"
+   "extrait": "LE BRUN Charles (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350207827.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350207827",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350207815",
@@ -2286,7 +4476,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "LE BRUN Charles (attribué à)"
+   "extrait": "LE BRUN Charles (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350207815.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350207815",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350207829",
@@ -2295,7 +4495,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "LE BRUN Charles (attribué à)"
+   "extrait": "LE BRUN Charles (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350207829.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350207829",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350207824",
@@ -2304,7 +4514,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "LE BRUN Charles (attribué à)"
+   "extrait": "LE BRUN Charles (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350207824.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350207824",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350207818",
@@ -2313,7 +4533,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "LE BRUN Charles (attribué à)"
+   "extrait": "LE BRUN Charles (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350207818.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350207818",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208105",
@@ -2322,7 +4552,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208105.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208105",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208124",
@@ -2331,7 +4571,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208124.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208124",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350207834",
@@ -2340,7 +4590,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "LE BRUN Charles (attribué à)"
+   "extrait": "LE BRUN Charles (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350207834.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350207834",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208125",
@@ -2349,7 +4609,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208125.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208125",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350207821",
@@ -2358,7 +4628,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "LE BRUN Charles (attribué à)"
+   "extrait": "LE BRUN Charles (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350207821.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350207821",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208128",
@@ -2367,7 +4647,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208128.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208128",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350207828",
@@ -2376,7 +4666,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "LE BRUN Charles (attribué à)"
+   "extrait": "LE BRUN Charles (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350207828.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350207828",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350207831",
@@ -2385,7 +4685,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "LE BRUN Charles (attribué à)"
+   "extrait": "LE BRUN Charles (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350207831.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350207831",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350207819",
@@ -2394,7 +4704,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "LE BRUN Charles (attribué à)"
+   "extrait": "LE BRUN Charles (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350207819.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350207819",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350207825",
@@ -2403,7 +4723,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "LE BRUN Charles (attribué à)"
+   "extrait": "LE BRUN Charles (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350207825.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350207825",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208092",
@@ -2412,7 +4742,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208092.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208092",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208121",
@@ -2421,7 +4761,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208121.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208121",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350207823",
@@ -2430,7 +4780,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "LE BRUN Charles (attribué à)"
+   "extrait": "LE BRUN Charles (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350207823.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350207823",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208116",
@@ -2439,7 +4799,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208116.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208116",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208114",
@@ -2448,7 +4818,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208114.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208114",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208132",
@@ -2457,7 +4837,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208132.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208132",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208118",
@@ -2466,7 +4856,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208118.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208118",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208126",
@@ -2475,7 +4875,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208126.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208126",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208127",
@@ -2484,7 +4894,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208127.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208127",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208117",
@@ -2493,7 +4913,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208117.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208117",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208089",
@@ -2502,7 +4932,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208089.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208089",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208123",
@@ -2511,7 +4951,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208123.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208123",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208094",
@@ -2520,7 +4970,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208094.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208094",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208134",
@@ -2529,7 +4989,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208134.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208134",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208103",
@@ -2538,7 +5008,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208103.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208103",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208119",
@@ -2547,7 +5027,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208119.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208119",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208135",
@@ -2556,7 +5046,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208135.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208135",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350207835",
@@ -2565,7 +5065,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "LE BRUN Charles (attribué à)"
+   "extrait": "LE BRUN Charles (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350207835.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350207835",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208120",
@@ -2574,7 +5084,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208120.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208120",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208130",
@@ -2583,7 +5103,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208130.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208130",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208115",
@@ -2592,7 +5122,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208115.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208115",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208096",
@@ -2601,7 +5141,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208096.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208096",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350207832",
@@ -2610,7 +5160,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "LE BRUN Charles (attribué à)"
+   "extrait": "LE BRUN Charles (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350207832.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350207832",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208133",
@@ -2619,7 +5179,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208133.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208133",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208122",
@@ -2628,7 +5198,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208122.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208122",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208101",
@@ -2637,7 +5217,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208101.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208101",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208098",
@@ -2646,7 +5236,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208098.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208098",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350207833",
@@ -2655,7 +5255,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "LE BRUN Charles (attribué à)"
+   "extrait": "LE BRUN Charles (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350207833.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350207833",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208109",
@@ -2664,7 +5274,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208109.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208109",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208131",
@@ -2673,7 +5293,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208131.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208131",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208129",
@@ -2682,7 +5312,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208129.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208129",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50130000351",
@@ -2691,7 +5331,17 @@
    "musee": "musée national du château de Fontainebleau",
    "ville": "Fontainebleau",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50130000351.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50130000351",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "5013M000350",
@@ -2700,7 +5350,17 @@
    "musee": "musée national du château de Fontainebleau",
    "ville": "Fontainebleau",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/5013M000350.jpg",
+    "credit": "Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/5013M000350",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "07480011131",
@@ -2709,7 +5369,17 @@
    "musee": "musée des beaux-arts et galerie David-d'Angers",
    "ville": "Angers",
    "code": "point_interrogation",
-   "extrait": "LE BRUN Charles (?, peintre)"
+   "extrait": "LE BRUN Charles (?, peintre)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/07480011131.jpg",
+    "credit": "© P David ; © Angers, musées d'Angers",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/07480011131",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "08030000617",
@@ -2727,7 +5397,17 @@
    "musee": "musée des beaux-arts et galerie David-d'Angers",
    "ville": "Angers",
    "code": "attribue",
-   "extrait": "Le Brun Charles (attribué)"
+   "extrait": "Le Brun Charles (attribué)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/07480012030.jpg",
+    "credit": "© P David ; © Angers, musées d'Angers",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/07480012030",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "02110002697",
@@ -2736,7 +5416,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Rennes",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/02110002697.jpg",
+    "credit": "© Louis Deschamps",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/02110002697",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "02110002696",
@@ -2745,7 +5435,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Rennes",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/02110002696.jpg",
+    "credit": "© Jean-Manuel Salingue",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/02110002696",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "02110002698",
@@ -2754,7 +5454,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Rennes",
    "code": "ecole_de",
-   "extrait": "LE BRUN Charles (école)"
+   "extrait": "LE BRUN Charles (école)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/02110002698.jpg",
+    "credit": "© Louis Deschamps",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/02110002698",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0332003880",
@@ -2763,7 +5473,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
-   "extrait": "LE BRUN Charles (attribué à) (dessinateur)"
+   "extrait": "LE BRUN Charles (attribué à) (dessinateur)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0332003880.jpg",
+    "credit": "© musées de Besançon ; GUENAT Pierre",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0332003880",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "01840000018",
@@ -2772,7 +5492,17 @@
    "musee": "musée d'art et d'histoire Saint-Germain",
    "ville": "Auxerre",
    "code": "attribue",
-   "extrait": "LE BRUN Charles (attribué)"
+   "extrait": "LE BRUN Charles (attribué)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/01840000018.jpg",
+    "credit": "Berry Emmanuel, musées d'Auxerre",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/01840000018",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0332012143",
@@ -2781,7 +5511,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
-   "extrait": "LE BRUN Charles (attribué à) (dessinateur)"
+   "extrait": "LE BRUN Charles (attribué à) (dessinateur)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0332012143.jpg",
+    "credit": "© musées de Besançon ; GUENAT Pierre",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0332012143",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0332012146",
@@ -2790,7 +5530,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "point_interrogation",
-   "extrait": "LE BRUN Charles (?) (dessinateur)"
+   "extrait": "LE BRUN Charles (?) (dessinateur)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0332012146.jpg",
+    "credit": "© musées de Besançon ; GUENAT Pierre",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0332012146",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0332012185",
@@ -2799,7 +5549,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
-   "extrait": "LE BRUN Charles (attribué à)"
+   "extrait": "LE BRUN Charles (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0332012185.jpg",
+    "credit": "© musées de Besançon ; GUENAT Pierre",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0332012185",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0332012186",
@@ -2808,7 +5568,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
-   "extrait": "LE BRUN Charles (attribué à) (dessinateur)"
+   "extrait": "LE BRUN Charles (attribué à) (dessinateur)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0332012186.jpg",
+    "credit": "© musées de Besançon ; GUENAT Pierre",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0332012186",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0332011058",
@@ -2817,7 +5587,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
-   "extrait": "LE BRUN Charles (attribué à, dessinateur)"
+   "extrait": "LE BRUN Charles (attribué à, dessinateur)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0332011058.jpg",
+    "credit": "© musées de Besançon ; GUENAT Pierre",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0332011058",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0332011069",
@@ -2826,7 +5606,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
-   "extrait": "LE BRUN Charles (attribué à) (dessinateur)"
+   "extrait": "LE BRUN Charles (attribué à) (dessinateur)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0332011069.jpg",
+    "credit": "© musées de Besançon ; GUENAT Pierre",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0332011069",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "01160005166",
@@ -2835,7 +5625,17 @@
    "musee": "musée Crozatier",
    "ville": "Le Puy-en-Velay",
    "code": "attribue",
-   "extrait": "LE BRUN Charles (attribué à)"
+   "extrait": "LE BRUN Charles (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/01160005166.jpg",
+    "credit": "(c) musée Crozatier, Luc Olivier",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/01160005166",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "09940080570",
@@ -2844,7 +5644,17 @@
    "musee": "musée de Grenoble",
    "ville": "Grenoble",
    "code": "attribue",
-   "extrait": "Le Brun Charles (attribué à)"
+   "extrait": "Le Brun Charles (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/09940080570.jpg",
+    "credit": "© Ville de Grenoble / Musée de Grenoble-J.L. Lacroix",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/09940080570",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0457000773",
@@ -2853,7 +5663,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Nîmes",
    "code": "attribue",
-   "extrait": "Le Brun Charles (1619-1690) (attribué à)"
+   "extrait": "Le Brun Charles (1619-1690) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0457000773.jpg",
+    "credit": "© Musée des Beaux-arts, Nîmes",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0457000773",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   }
  ],
  "version_donnee": "2026-07-01",

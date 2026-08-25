@@ -152,7 +152,17 @@
    "musee": "musée des Beaux-Arts",
    "ville": "Lille",
    "code": "ecole_de",
-   "extrait": "Rembrandt (1606-1669) (école, dit)"
+   "extrait": "Rembrandt (1606-1669) (école, dit)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE017723.jpg",
+    "credit": "© C2RMF",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE017723",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE021338",
@@ -179,7 +189,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Bordeaux",
    "code": "ecole_de",
-   "extrait": "Rembrandt (1606-1669) (école, dit)"
+   "extrait": "Rembrandt (1606-1669) (école, dit)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE025747.jpg",
+    "credit": "© L. Gauthier",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE025747",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00000058429",
@@ -262,7 +282,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "ecole_de",
-   "extrait": "Rembrandt (1606-1669) (école)"
+   "extrait": "Rembrandt (1606-1669) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520000840.jpg",
+    "credit": "© R.G. Ojeda ; © Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520000840",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520000843",
@@ -271,7 +301,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "ecole_de",
-   "extrait": "Rembrandt (1606-1669) (école)"
+   "extrait": "Rembrandt (1606-1669) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520000843.jpg",
+    "credit": "© R.G. Ojeda ; © Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520000843",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520000845",
@@ -280,7 +320,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "ecole_de",
-   "extrait": "Rembrandt (1606-1669) (école)"
+   "extrait": "Rembrandt (1606-1669) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520000845.jpg",
+    "credit": "© R.G. Ojeda ; © Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520000845",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107790",
@@ -289,7 +339,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107790.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107790",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107803",
@@ -298,7 +358,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107803.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107803",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107392",
@@ -307,7 +377,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107392.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107392",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107770",
@@ -316,7 +396,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107770.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107770",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107823",
@@ -325,7 +415,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107823.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107823",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107775",
@@ -334,7 +434,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107775.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107775",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107769",
@@ -343,7 +453,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107769.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107769",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107820",
@@ -352,7 +472,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107820.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107820",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107791",
@@ -361,7 +491,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107791.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107791",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107856",
@@ -370,7 +510,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107856.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107856",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107858",
@@ -379,7 +529,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107858.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107858",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107772",
@@ -388,7 +548,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107772.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107772",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107752",
@@ -397,7 +567,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107752.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107752",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107765",
@@ -406,7 +586,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107765.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107765",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107813",
@@ -415,7 +605,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107813.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107813",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107811",
@@ -424,7 +624,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107811.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107811",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107795",
@@ -433,7 +643,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107795.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107795",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107829",
@@ -442,7 +662,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107829.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107829",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107853",
@@ -451,7 +681,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107853.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107853",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107777",
@@ -460,7 +700,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107777.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107777",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107816",
@@ -469,7 +719,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107816.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107816",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107814",
@@ -478,7 +738,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107814.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107814",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107818",
@@ -487,7 +757,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107818.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107818",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107778",
@@ -496,7 +776,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107778.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107778",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107798",
@@ -505,7 +795,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107798.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107798",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107802",
@@ -514,7 +814,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107802.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107802",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107799",
@@ -523,7 +833,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107799.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107799",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107809",
@@ -532,7 +852,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107809.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107809",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107837",
@@ -541,7 +871,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107837.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107837",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107846",
@@ -550,7 +890,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107846.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107846",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107804",
@@ -559,7 +909,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107804.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107804",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107314",
@@ -568,7 +928,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107314.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107314",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107845",
@@ -577,7 +947,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107845.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107845",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107838",
@@ -586,7 +966,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107838.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107838",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107768",
@@ -595,7 +985,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107768.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107768",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107849",
@@ -604,7 +1004,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107849.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107849",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107779",
@@ -613,7 +1023,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107779.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107779",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107792",
@@ -622,7 +1042,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107792.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107792",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107815",
@@ -631,7 +1061,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107815.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107815",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107842",
@@ -640,7 +1080,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107842.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107842",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107828",
@@ -649,7 +1099,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107828.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107828",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107807",
@@ -658,7 +1118,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107807.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107807",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107817",
@@ -667,7 +1137,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107817.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107817",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107826",
@@ -676,7 +1156,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107826.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107826",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107764",
@@ -685,7 +1175,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107764.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107764",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107827",
@@ -694,7 +1194,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107827.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107827",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107774",
@@ -703,7 +1213,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107774.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107774",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107806",
@@ -712,7 +1232,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107806.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107806",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107808",
@@ -721,7 +1251,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107808.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107808",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107749",
@@ -730,7 +1270,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107749.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107749",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107762",
@@ -739,7 +1289,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107762.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107762",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107773",
@@ -748,7 +1308,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107773.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107773",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107789",
@@ -757,7 +1327,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107789.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107789",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107830",
@@ -766,7 +1346,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107830.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107830",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107812",
@@ -775,7 +1365,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107812.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107812",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107761",
@@ -784,7 +1384,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107761.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107761",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107854",
@@ -793,7 +1403,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107854.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107854",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107859",
@@ -802,7 +1422,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107859.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107859",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107754",
@@ -811,7 +1441,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107754.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107754",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107800",
@@ -820,7 +1460,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107800.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107800",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107833",
@@ -829,7 +1479,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107833.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107833",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107771",
@@ -838,7 +1498,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107771.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107771",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107884",
@@ -847,7 +1517,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107884.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107884",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107776",
@@ -856,7 +1536,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107776.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107776",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107788",
@@ -865,7 +1555,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107788.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107788",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107797",
@@ -874,7 +1574,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107797.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107797",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107506",
@@ -883,7 +1593,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107506.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107506",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107810",
@@ -892,7 +1612,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107810.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107810",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107783",
@@ -901,7 +1631,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107783.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107783",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350018495",
@@ -910,7 +1650,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350018495.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350018495",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350018580",
@@ -919,7 +1669,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "Rembrandt (1606-1669) (école)"
+   "extrait": "Rembrandt (1606-1669) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350018580.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350018580",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107805",
@@ -928,7 +1688,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107805.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107805",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107819",
@@ -937,7 +1707,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107819.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107819",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107841",
@@ -946,7 +1726,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107841.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107841",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107801",
@@ -955,7 +1745,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107801.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107801",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350018456",
@@ -964,7 +1764,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350018456.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350018456",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107796",
@@ -973,7 +1783,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107796.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107796",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107782",
@@ -982,7 +1802,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107782.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107782",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107867",
@@ -991,7 +1821,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107867.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107867",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350500413",
@@ -1000,7 +1840,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350500413.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350500413",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107822",
@@ -1009,7 +1859,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107822.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107822",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350018418",
@@ -1018,7 +1878,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350018418.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350018418",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107873",
@@ -1027,7 +1897,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107873.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107873",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350228423",
@@ -1036,7 +1916,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350228423.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350228423",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350018471",
@@ -1045,7 +1935,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350018471.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350018471",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350018432",
@@ -1054,7 +1954,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350018432.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350018432",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350018490",
@@ -1063,7 +1973,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350018490.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350018490",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107870",
@@ -1072,7 +1992,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107870.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107870",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350228416",
@@ -1081,7 +2011,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350228416.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350228416",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107864",
@@ -1090,7 +2030,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107864.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107864",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107863",
@@ -1099,7 +2049,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107863.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107863",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350228404",
@@ -1108,7 +2068,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350228404.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350228404",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350228421",
@@ -1117,7 +2087,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350228421.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350228421",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350018449",
@@ -1126,7 +2106,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350018449.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350018449",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350018499",
@@ -1135,7 +2125,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350018499.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350018499",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350018451",
@@ -1144,7 +2144,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350018451.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350018451",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350018494",
@@ -1153,7 +2163,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350018494.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350018494",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350018488",
@@ -1162,7 +2182,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350018488.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350018488",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350018492",
@@ -1171,7 +2201,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350018492.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350018492",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350108308",
@@ -1180,7 +2220,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350108308.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350108308",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350108419",
@@ -1189,7 +2239,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350108419.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350108419",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350018422",
@@ -1198,7 +2258,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350018422.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350018422",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107885",
@@ -1207,7 +2277,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107885.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107885",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350219823",
@@ -1216,7 +2296,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350219823.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350219823",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350018501",
@@ -1225,7 +2315,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350018501.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350018501",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350018479",
@@ -1234,7 +2334,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350018479.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350018479",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350112233",
@@ -1243,7 +2353,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350112233.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350112233",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350228418",
@@ -1252,7 +2372,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350228418.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350228418",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350018419",
@@ -1261,7 +2391,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350018419.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350018419",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107862",
@@ -1270,7 +2410,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107862.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107862",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350018454",
@@ -1279,7 +2429,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350018454.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350018454",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350018417",
@@ -1288,7 +2448,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350018417.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350018417",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350030848",
@@ -1297,7 +2467,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350030848.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350030848",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350018460",
@@ -1306,7 +2486,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350018460.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350018460",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350018410",
@@ -1315,7 +2505,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350018410.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350018410",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350018474",
@@ -1324,7 +2524,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350018474.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350018474",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350228420",
@@ -1333,7 +2543,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350228420.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350228420",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350018462",
@@ -1342,7 +2562,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350018462.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350018462",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350018463",
@@ -1351,7 +2581,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350018463.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350018463",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350018450",
@@ -1360,7 +2600,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350018450.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350018450",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350230678",
@@ -1369,7 +2619,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350230678.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350230678",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350018415",
@@ -1378,7 +2638,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350018415.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350018415",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107886",
@@ -1387,7 +2657,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107886.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107886",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107883",
@@ -1396,7 +2676,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107883.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107883",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350018472",
@@ -1405,7 +2695,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350018472.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350018472",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350018476",
@@ -1414,7 +2714,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350018476.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350018476",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350018502",
@@ -1423,7 +2733,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350018502.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350018502",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350018486",
@@ -1432,7 +2752,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350018486.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350018486",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350018435",
@@ -1441,7 +2771,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350018435.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350018435",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350018444",
@@ -1450,7 +2790,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350018444.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350018444",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350030847",
@@ -1459,7 +2809,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350030847.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350030847",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350018497",
@@ -1468,7 +2828,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350018497.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350018497",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350018433",
@@ -1477,7 +2847,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350018433.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350018433",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350112272",
@@ -1486,7 +2866,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350112272.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350112272",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350018491",
@@ -1495,7 +2885,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350018491.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350018491",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107871",
@@ -1504,7 +2904,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107871.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107871",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350018459",
@@ -1513,7 +2923,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350018459.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350018459",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107880",
@@ -1522,7 +2942,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107880.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107880",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350114866",
@@ -1531,7 +2961,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350114866.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350114866",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350018500",
@@ -1540,7 +2980,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350018500.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350018500",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350018485",
@@ -1549,7 +2999,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350018485.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350018485",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350018441",
@@ -1558,7 +3018,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350018441.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350018441",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350018438",
@@ -1567,7 +3037,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350018438.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350018438",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107872",
@@ -1576,7 +3056,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107872.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107872",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107876",
@@ -1585,7 +3075,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107876.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107876",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350018483",
@@ -1594,7 +3094,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350018483.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350018483",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350018434",
@@ -1603,7 +3113,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350018434.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350018434",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350018489",
@@ -1612,7 +3132,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350018489.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350018489",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107861",
@@ -1621,7 +3151,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107861.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107861",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350108260",
@@ -1630,7 +3170,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350108260.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350108260",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350018498",
@@ -1639,7 +3189,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350018498.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350018498",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107874",
@@ -1648,7 +3208,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107874.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107874",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107879",
@@ -1657,7 +3227,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107879.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107879",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107887",
@@ -1666,7 +3246,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107887.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107887",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107852",
@@ -1675,7 +3265,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107852.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107852",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107507",
@@ -1684,7 +3284,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107507.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107507",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107847",
@@ -1693,7 +3303,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107847.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107847",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107509",
@@ -1702,7 +3322,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107509.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107509",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350018461",
@@ -1711,7 +3341,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350018461.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350018461",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107793",
@@ -1720,7 +3360,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "Rembrandt (1606-1669) (manière de)"
+   "extrait": "Rembrandt (1606-1669) (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107793.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107793",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107875",
@@ -1767,7 +3417,17 @@
    "musee": "musée municipal",
    "ville": "Vendôme",
    "code": "ecole_de",
-   "extrait": "Rembrandt (1606-1669) (dit, école)"
+   "extrait": "Rembrandt (1606-1669) (dit, école)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0277002250.jpg",
+    "credit": "© Anaïs Bonin",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0277002250",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0332003707",
@@ -1776,7 +3436,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
-   "extrait": "Rembrandt (1606-1669) (attribué à)"
+   "extrait": "Rembrandt (1606-1669) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0332003707.jpg",
+    "credit": "© GUENAT Pierre",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0332003707",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0332003716",
@@ -1785,7 +3455,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "entourage_de",
-   "extrait": "Rembrandt (1606-1669) (entourage de)"
+   "extrait": "Rembrandt (1606-1669) (entourage de)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0332003716.jpg",
+    "credit": "© GUENAT Pierre",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0332003716",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0332003417",
@@ -1794,7 +3474,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "entourage_de",
-   "extrait": "Rembrandt (1606-1669) (entourage de)"
+   "extrait": "Rembrandt (1606-1669) (entourage de)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0332003417.jpg",
+    "credit": "© GUENAT Pierre",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0332003417",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   }
  ],
  "version_donnee": "2026-07-01",

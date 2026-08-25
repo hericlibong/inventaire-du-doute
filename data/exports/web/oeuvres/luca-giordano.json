@@ -41,7 +41,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Bordeaux",
    "code": "attribue",
-   "extrait": "GIORDANO Luca (attribué)"
+   "extrait": "GIORDANO Luca (attribué)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE022152.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation © A. Danvers",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE022152",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE025528",
@@ -70,7 +80,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
-   "extrait": "GIORDANO Luca (atelier)"
+   "extrait": "GIORDANO Luca (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE025531.jpg",
+    "credit": "© J.G. Berizzi#Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE025531",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE025529",
@@ -79,7 +99,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
-   "extrait": "GIORDANO Luca (atelier)"
+   "extrait": "GIORDANO Luca (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE025529.jpg",
+    "credit": "© Gérard Blot#Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE025529",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE025530",
@@ -88,7 +118,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
-   "extrait": "GIORDANO Luca (atelier)"
+   "extrait": "GIORDANO Luca (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE025530.jpg",
+    "credit": "Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE025530",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00000074374",
@@ -97,7 +137,17 @@
    "musee": "musée Goya",
    "ville": "Castres",
    "code": "attribue",
-   "extrait": "GIORDANO Luca (attribué)"
+   "extrait": "GIORDANO Luca (attribué)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/00000074374.jpg",
+    "credit": "© Castres, musée Goya",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/00000074374",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00000093479",
@@ -115,7 +165,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Chambéry",
    "code": "atelier_de",
-   "extrait": "GIORDANO Luca (atelier)"
+   "extrait": "GIORDANO Luca (atelier)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/10500005806.jpg",
+    "credit": "Bouchayer Jean ; Giroud Jean-Claude",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/10500005806",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00980001231",
@@ -144,7 +204,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Dole",
    "code": "attribue",
-   "extrait": "GIORDANO Luca (attribué à)"
+   "extrait": "GIORDANO Luca (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0347001249.jpg",
+    "credit": "© Jean-Loup Mathieu (Eurêka) - utilisation soumise à autorisation ; studio Chechillot",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0347001249",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350104053",
@@ -153,7 +223,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
-   "extrait": "GIORDANO Luca (atelier)"
+   "extrait": "GIORDANO Luca (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350104053.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350104053",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350006731",
@@ -162,7 +242,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "GIORDANO Luca (attribué à)"
+   "extrait": "GIORDANO Luca (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350006731.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350006731",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350012710",
@@ -171,7 +261,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
-   "extrait": "GIORDANO Luca (atelier)"
+   "extrait": "GIORDANO Luca (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350012710.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350012710",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350006730",
@@ -180,7 +280,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "GIORDANO Luca (attribué à)"
+   "extrait": "GIORDANO Luca (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350006730.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350006730",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350006732",
@@ -189,7 +299,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "GIORDANO Luca (attribué à)"
+   "extrait": "GIORDANO Luca (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350006732.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350006732",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350006733",
@@ -198,7 +318,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "GIORDANO Luca (attribué à)"
+   "extrait": "GIORDANO Luca (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350006733.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350006733",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350502039",
@@ -207,7 +337,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "GIORDANO Luca (attribué à)"
+   "extrait": "GIORDANO Luca (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350502039.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350502039",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350203658",
@@ -216,7 +356,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
-   "extrait": "GIORDANO Luca (atelier)"
+   "extrait": "GIORDANO Luca (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350203658.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350203658",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350103797",
@@ -225,7 +375,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "GIORDANO Luca (attribué à)"
+   "extrait": "GIORDANO Luca (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350103797.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350103797",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350103796",
@@ -234,7 +394,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "GIORDANO Luca (attribué à)"
+   "extrait": "GIORDANO Luca (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350103796.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350103796",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350103781",
@@ -243,7 +413,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "GIORDANO Luca (attribué à)"
+   "extrait": "GIORDANO Luca (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350103781.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350103781",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350103800",
@@ -252,7 +432,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "GIORDANO Luca (attribué à)"
+   "extrait": "GIORDANO Luca (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350103800.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350103800",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350204643",
@@ -261,7 +451,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "GIORDANO Luca (attribué à)"
+   "extrait": "GIORDANO Luca (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350204643.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350204643",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350104311",
@@ -270,7 +470,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "GIORDANO Luca (attribué à)"
+   "extrait": "GIORDANO Luca (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350104311.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350104311",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50130000291",
@@ -279,7 +489,17 @@
    "musee": "musée national du château de Fontainebleau",
    "ville": "Fontainebleau",
    "code": "ecole_de",
-   "extrait": "GIORDANO Luca (école)"
+   "extrait": "GIORDANO Luca (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50130000291.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation © Gérard Blot",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50130000291",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50130000293",
@@ -288,7 +508,17 @@
    "musee": "musée national du château de Fontainebleau",
    "ville": "Fontainebleau",
    "code": "ecole_de",
-   "extrait": "GIORDANO Luca (école)"
+   "extrait": "GIORDANO Luca (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50130000293.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation © Gérard Blot",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50130000293",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50130000292",
@@ -297,7 +527,17 @@
    "musee": "musée national du château de Fontainebleau",
    "ville": "Fontainebleau",
    "code": "ecole_de",
-   "extrait": "GIORDANO Luca (école)"
+   "extrait": "GIORDANO Luca (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50130000292.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation © Gérard Blot",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50130000292",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "07480012416",
@@ -306,7 +546,17 @@
    "musee": "musée des beaux-arts et galerie David-d'Angers",
    "ville": "Angers",
    "code": "point_interrogation",
-   "extrait": "GIORDANO Luca (?)"
+   "extrait": "GIORDANO Luca (?)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/07480012416.jpg",
+    "credit": "© P David ; © Angers, musées d'Angers",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/07480012416",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "01500000115",
@@ -315,7 +565,17 @@
    "musee": "musée d'Art et d'Histoire Romain Rolland",
    "ville": "Clamecy",
    "code": "attribue",
-   "extrait": "GIORDANO Luca (attribué à)"
+   "extrait": "GIORDANO Luca (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/01500000115.jpg",
+    "credit": "© Emmanuel Darnault, Clamecy, Musée d'Art et d'Histoire Romain Rolland",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/01500000115",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06190001735",
@@ -333,7 +593,17 @@
    "musee": "musée d'art Roger-Quillot",
    "ville": "Clermont-Ferrand",
    "code": "atelier_de",
-   "extrait": "Giordano Luca (1632-1705) (atelier)"
+   "extrait": "Giordano Luca (1632-1705) (atelier)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0121002493.jpg",
+    "credit": "Ville de Clermont-Ferrand MARQ ; Thibaut Mazen",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0121002493",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "03290005077",
@@ -362,7 +632,17 @@
    "musee": "musée des Beaux-Arts",
    "ville": "Nancy",
    "code": "attribue",
-   "extrait": "GIORDANO Luca (attribué)"
+   "extrait": "GIORDANO Luca (attribué)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/05120002092.jpg",
+    "credit": "Maertens",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/05120002092",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "01760000049",
@@ -371,7 +651,17 @@
    "musee": "musée eucharistique du Hiéron",
    "ville": "Paray-le-Monial",
    "code": "atelier_de",
-   "extrait": "GIORDANO Luca (atelier)"
+   "extrait": "GIORDANO Luca (atelier)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/01760000049.jpg",
+    "credit": "© Chaintreuil Laurent",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/01760000049",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "09940008933",
@@ -380,7 +670,17 @@
    "musee": "musée de Grenoble",
    "ville": "Grenoble",
    "code": "attribue",
-   "extrait": "Giordano Luca (attribué à)"
+   "extrait": "Giordano Luca (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/09940008933.jpg",
+    "credit": "© Ville de Grenoble / Musée de Grenoble-J.L. Lacroix",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/09940008933",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "09940067267",
@@ -389,7 +689,17 @@
    "musee": "musée de Grenoble",
    "ville": "Grenoble",
    "code": "attribue",
-   "extrait": "Giordano Luca (attribué à)"
+   "extrait": "Giordano Luca (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/09940067267.jpg",
+    "credit": "© Ville de Grenoble / Musée de Grenoble-J.L. Lacroix",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/09940067267",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "09940009120",
@@ -398,7 +708,17 @@
    "musee": "musée de Grenoble",
    "ville": "Grenoble",
    "code": "attribue",
-   "extrait": "Giordano Luca (attribué à)"
+   "extrait": "Giordano Luca (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/09940009120.jpg",
+    "credit": "© Ville de Grenoble / Musée de Grenoble-J.L. Lacroix",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/09940009120",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "08940004909",
@@ -447,7 +767,17 @@
    "musee": "musée Sarret de Grozon",
    "ville": "Arbois",
    "code": "genre_de",
-   "extrait": "Giordano Luca (1632-1705) (genre de)"
+   "extrait": "Giordano Luca (1632-1705) (genre de)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0341000402.jpg",
+    "credit": "© musée Sarret de Grozon, Arbois ; © Henri Bertand",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0341000402",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0536000446",
@@ -456,7 +786,17 @@
    "musee": "musée départemental d'art ancien et contemporain",
    "ville": "Epinal",
    "code": "attribue",
-   "extrait": "Giordano Luca (1632-1705) (attribué à)"
+   "extrait": "Giordano Luca (1632-1705) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0536000446.jpg",
+    "credit": "© Claude Philippot",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0536000446",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   }
  ],
  "version_donnee": "2026-07-01",

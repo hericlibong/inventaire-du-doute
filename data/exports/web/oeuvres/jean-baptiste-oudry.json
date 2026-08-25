@@ -51,7 +51,17 @@
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "attribue",
-   "extrait": "OUDRY Jean-Baptiste (attribué)"
+   "extrait": "OUDRY Jean-Baptiste (attribué)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE009116.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE009116",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE009117",
@@ -60,7 +70,17 @@
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "attribue",
-   "extrait": "OUDRY Jean-Baptiste (attribué)"
+   "extrait": "OUDRY Jean-Baptiste (attribué)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE009117.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE009117",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE009115",
@@ -69,7 +89,17 @@
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "attribue",
-   "extrait": "OUDRY Jean-Baptiste (attribué)"
+   "extrait": "OUDRY Jean-Baptiste (attribué)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE009115.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE009115",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE009118",
@@ -78,7 +108,17 @@
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "attribue",
-   "extrait": "OUDRY Jean-Baptiste (attribué)"
+   "extrait": "OUDRY Jean-Baptiste (attribué)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE009118.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE009118",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE016302",
@@ -96,7 +136,17 @@
    "musee": "MUDO - musée de l'Oise",
    "ville": "Beauvais",
    "code": "attribue",
-   "extrait": "OUDRY Jean-Baptiste (attribué)"
+   "extrait": "OUDRY Jean-Baptiste (attribué)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE026574.jpg",
+    "credit": "RMN-Grand Palais",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE026574",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350209366",
@@ -105,7 +155,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "OUDRY Jean-Baptiste (attribué à)"
+   "extrait": "OUDRY Jean-Baptiste (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350209366.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350209366",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50130000377",
@@ -114,7 +174,17 @@
    "musee": "musée national du château de Fontainebleau",
    "ville": "Fontainebleau",
    "code": "attribue",
-   "extrait": "OUDRY Jean-Baptiste (attribué)"
+   "extrait": "OUDRY Jean-Baptiste (attribué)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50130000377.jpg",
+    "credit": "© Gérard Blot ; © Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50130000377",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50130000371",
@@ -123,7 +193,17 @@
    "musee": "musée national du château de Fontainebleau",
    "ville": "Fontainebleau",
    "code": "attribue",
-   "extrait": "OUDRY Jean-Baptiste (attribué, ?)"
+   "extrait": "OUDRY Jean-Baptiste (attribué, ?)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50130000371.jpg",
+    "credit": "© BONNET Gérard ; © Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50130000371",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50130000359",
@@ -132,7 +212,17 @@
    "musee": "musée national du château de Fontainebleau",
    "ville": "Fontainebleau",
    "code": "attribue",
-   "extrait": "OUDRY Jean-Baptiste (attribué)"
+   "extrait": "OUDRY Jean-Baptiste (attribué)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50130000359.jpg",
+    "credit": "© BONNET Gérard ; © Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50130000359",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "07840001178",
@@ -141,7 +231,17 @@
    "musee": "musée Jean de la Fontaine",
    "ville": "Château-Thierry",
    "code": "attribue",
-   "extrait": "OUDRY Jean-Baptiste (attribué)"
+   "extrait": "OUDRY Jean-Baptiste (attribué)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/07840001178.jpg",
+    "credit": "© musée Jean de La Fontaine de Château-Thierry",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/07840001178",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "07840001180",
@@ -150,7 +250,17 @@
    "musee": "musée Jean de la Fontaine",
    "ville": "Château-Thierry",
    "code": "attribue",
-   "extrait": "OUDRY Jean-Baptiste (attribué à)"
+   "extrait": "OUDRY Jean-Baptiste (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/07840001180.jpg",
+    "credit": "© musée Jean de La Fontaine de Château-Thierry",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/07840001180",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350100099",
@@ -159,7 +269,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "OUDRY Jean-Baptiste (attribué à)"
+   "extrait": "OUDRY Jean-Baptiste (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350100099.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350100099",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350111559",
@@ -168,7 +288,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "OUDRY Jean-Baptiste (attribué à)"
+   "extrait": "OUDRY Jean-Baptiste (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350111559.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350111559",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350112369",
@@ -177,7 +307,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "OUDRY Jean-Baptiste (attribué à)"
+   "extrait": "OUDRY Jean-Baptiste (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350112369.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350112369",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350228357",
@@ -186,7 +326,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "OUDRY Jean-Baptiste (attribué à)"
+   "extrait": "OUDRY Jean-Baptiste (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350228357.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350228357",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350508085",
@@ -195,7 +345,17 @@
    "musee": "musée Bonnat-Helleu, musée des Beaux-Arts de Bayonne",
    "ville": "Bayonne",
    "code": "ecole_de",
-   "extrait": "OUDRY Jean-Baptiste (école)"
+   "extrait": "OUDRY Jean-Baptiste (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350508085.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation © Gérard Blot",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350508085",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00650013590",
@@ -224,7 +384,17 @@
    "musee": "musée Adrien Mentienne",
    "ville": "Bry-sur-Marne",
    "code": "attribue",
-   "extrait": "OUDRY Jean-Baptiste (Atelier) (peintre, attribué à)"
+   "extrait": "OUDRY Jean-Baptiste (Atelier) (peintre, attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/04240000024.jpg",
+    "credit": "© Mathieu Lombard (utilisation soumise à autorisation)",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/04240000024",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0810004977",
@@ -233,7 +403,17 @@
    "musee": "musée de la vénerie",
    "ville": "Senlis",
    "code": "attribue",
-   "extrait": "OUDRY Jean-Baptiste (attribué)"
+   "extrait": "OUDRY Jean-Baptiste (attribué)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0810004977.jpg",
+    "credit": "© Musées de Senlis",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0810004977",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   }
  ],
  "version_donnee": "2026-07-01",

@@ -56,7 +56,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE000507.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation © Franck Raux",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE000507",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE000505",
@@ -243,7 +253,17 @@
    "musee": "musée national du château de Pau",
    "ville": "Pau",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/00000060285.jpg",
+    "credit": "© René-Gabriel Ojéda ; © Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/00000060285",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00000061523",
@@ -252,7 +272,17 @@
    "musee": "musée des beaux-arts et galerie David-d'Angers",
    "ville": "Angers",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/00000061523.jpg",
+    "credit": "© C2RMF",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/00000061523",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00000061524",
@@ -261,7 +291,17 @@
    "musee": "musée des beaux-arts et galerie David-d'Angers",
    "ville": "Angers",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/00000061524.jpg",
+    "credit": "© C2RMF",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/00000061524",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00000077135",
@@ -410,7 +450,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "point_interrogation",
-   "extrait": "CLOUET François (?)"
+   "extrait": "CLOUET François (?)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/00000106881.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/00000106881",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00000106900",
@@ -419,7 +469,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/00000106900.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/00000106900",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00000106874",
@@ -428,7 +488,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/00000106874.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/00000106874",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00000106894",
@@ -437,7 +507,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/00000106894.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/00000106894",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00000106816",
@@ -446,7 +526,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/00000106816.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/00000106816",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00000106893",
@@ -455,7 +545,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/00000106893.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/00000106893",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00000106872",
@@ -464,7 +564,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/00000106872.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/00000106872",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00000106891",
@@ -473,7 +583,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/00000106891.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/00000106891",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00000106896",
@@ -482,7 +602,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/00000106896.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/00000106896",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350111493",
@@ -511,7 +641,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "CLOUET François (attribué à)"
+   "extrait": "CLOUET François (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350011376.jpg",
+    "credit": "© Musée du Louvre, M. Beck-Coppola",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350011376",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520004893",
@@ -520,7 +660,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520004893.jpg",
+    "credit": "© Réunion des musées nationaux ; © René-Gabriel Ojéda - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520004893",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001594",
@@ -529,7 +679,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001594.jpg",
+    "credit": "© René-Gabriel Ojéda, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001594",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001602",
@@ -538,7 +698,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001602.jpg",
+    "credit": "© Harry Bréjat, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001602",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001628",
@@ -547,7 +717,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001628.jpg",
+    "credit": "© René-Gabriel Ojéda, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001628",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001598",
@@ -556,7 +736,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001598.jpg",
+    "credit": "© Harry Bréjat, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001598",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001604",
@@ -565,7 +755,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001604.jpg",
+    "credit": "© Harry Bréjat, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001604",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001622",
@@ -574,7 +774,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001622.jpg",
+    "credit": "© René-Gabriel Ojéda, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001622",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001633",
@@ -583,7 +793,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001633.jpg",
+    "credit": "© René-Gabriel Ojéda, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001633",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001629",
@@ -592,7 +812,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001629.jpg",
+    "credit": "© Harry Bréjat, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001629",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001635",
@@ -601,7 +831,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001635.jpg",
+    "credit": "© Harry Bréjat, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001635",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001425",
@@ -610,7 +850,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001425.jpg",
+    "credit": "© René-Gabriel Ojéda, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001425",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001442",
@@ -619,7 +869,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001442.jpg",
+    "credit": "© René-Gabriel Ojéda, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001442",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001407",
@@ -628,7 +888,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001407.jpg",
+    "credit": "© René-Gabriel Ojéda, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001407",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001600",
@@ -637,7 +907,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001600.jpg",
+    "credit": "© Harry Bréjat, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001600",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001464",
@@ -646,7 +926,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001464.jpg",
+    "credit": "© René-Gabriel Ojéda, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001464",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001367",
@@ -655,7 +945,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001367.jpg",
+    "credit": "© René-Gabriel Ojéda, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001367",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001428",
@@ -664,7 +964,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001428.jpg",
+    "credit": "© René-Gabriel Ojéda, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001428",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001419",
@@ -673,7 +983,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001419.jpg",
+    "credit": "© René-Gabriel Ojéda, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001419",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001359",
@@ -682,7 +1002,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001359.jpg",
+    "credit": "© René-Gabriel Ojéda, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001359",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001404",
@@ -691,7 +1021,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001404.jpg",
+    "credit": "© René-Gabriel Ojéda, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001404",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001599",
@@ -700,7 +1040,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001599.jpg",
+    "credit": "© Harry Bréjat, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001599",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001450",
@@ -709,7 +1059,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001450.jpg",
+    "credit": "© René-Gabriel Ojéda, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001450",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001445",
@@ -718,7 +1078,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001445.jpg",
+    "credit": "© René-Gabriel Ojéda, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001445",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001386",
@@ -727,7 +1097,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001386.jpg",
+    "credit": "© René-Gabriel Ojéda, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001386",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001392",
@@ -736,7 +1116,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001392.jpg",
+    "credit": "© René-Gabriel Ojéda, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001392",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001503",
@@ -745,7 +1135,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001503.jpg",
+    "credit": "© René-Gabriel Ojéda, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001503",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001393",
@@ -754,7 +1154,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001393.jpg",
+    "credit": "© René-Gabriel Ojéda, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001393",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001363",
@@ -763,7 +1173,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001363.jpg",
+    "credit": "© René-Gabriel Ojéda, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001363",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001584",
@@ -772,7 +1192,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001584.jpg",
+    "credit": "© Harry Bréjat, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001584",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001352",
@@ -781,7 +1211,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001352.jpg",
+    "credit": "© René-Gabriel Ojéda, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001352",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001505",
@@ -790,7 +1230,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (auteur, atelier)"
+   "extrait": "CLOUET François (auteur, atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001505.jpg",
+    "credit": "Photo © RMN-Grand Palais (domaine de Chantilly) / René-Gabriel Ojéda - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001505",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001369",
@@ -799,7 +1249,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001369.jpg",
+    "credit": "© René-Gabriel Ojéda, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001369",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001395",
@@ -808,7 +1268,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001395.jpg",
+    "credit": "© René-Gabriel Ojéda, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001395",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001391",
@@ -817,7 +1287,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001391.jpg",
+    "credit": "© René-Gabriel Ojéda, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001391",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001431",
@@ -826,7 +1306,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001431.jpg",
+    "credit": "© René-Gabriel Ojéda, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001431",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001383",
@@ -835,7 +1325,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001383.jpg",
+    "credit": "© René-Gabriel Ojéda, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001383",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001418",
@@ -844,7 +1344,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001418.jpg",
+    "credit": "© René-Gabriel Ojéda, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001418",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001375",
@@ -853,7 +1363,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001375.jpg",
+    "credit": "© Thierry Le Mage, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001375",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001354",
@@ -862,7 +1382,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001354.jpg",
+    "credit": "© René-Gabriel Ojéda, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001354",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001585",
@@ -871,7 +1401,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001585.jpg",
+    "credit": "© Harry Bréjat, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001585",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001432",
@@ -880,7 +1420,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001432.jpg",
+    "credit": "© René-Gabriel Ojéda, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001432",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001358",
@@ -889,7 +1439,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001358.jpg",
+    "credit": "© René-Gabriel Ojéda, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001358",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001578",
@@ -898,7 +1458,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001578.jpg",
+    "credit": "© Harry Bréjat, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001578",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001388",
@@ -907,7 +1477,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001388.jpg",
+    "credit": "© René-Gabriel Ojéda, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001388",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001443",
@@ -916,7 +1496,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001443.jpg",
+    "credit": "© René-Gabriel Ojéda, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001443",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001483",
@@ -925,7 +1515,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001483.jpg",
+    "credit": "© René-Gabriel Ojéda, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001483",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001353",
@@ -934,7 +1534,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001353.jpg",
+    "credit": "© René-Gabriel Ojéda, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001353",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001355",
@@ -943,7 +1553,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001355.jpg",
+    "credit": "© René-Gabriel Ojéda, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001355",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001366",
@@ -952,7 +1572,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001366.jpg",
+    "credit": "© René-Gabriel Ojéda, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001366",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001351",
@@ -961,7 +1591,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001351.jpg",
+    "credit": "© René-Gabriel Ojéda, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001351",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001499",
@@ -970,7 +1610,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001499.jpg",
+    "credit": "© René-Gabriel Ojéda, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001499",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001361",
@@ -979,7 +1629,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001361.jpg",
+    "credit": "© René-Gabriel Ojéda, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001361",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001574",
@@ -988,7 +1648,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001574.jpg",
+    "credit": "© Harry Bréjat, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001574",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001400",
@@ -997,7 +1667,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001400.jpg",
+    "credit": "© René-Gabriel Ojéda, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001400",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001430",
@@ -1006,7 +1686,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001430.jpg",
+    "credit": "© René-Gabriel Ojéda, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001430",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520005002",
@@ -1015,7 +1705,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520005002.jpg",
+    "credit": "© René-Gabriel Ojéda, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520005002",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001365",
@@ -1024,7 +1724,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001365.jpg",
+    "credit": "© René-Gabriel Ojéda, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001365",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001399",
@@ -1033,7 +1743,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001399.jpg",
+    "credit": "© René-Gabriel Ojéda, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001399",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001465",
@@ -1042,7 +1762,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001465.jpg",
+    "credit": "© René-Gabriel Ojéda, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001465",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001587",
@@ -1051,7 +1781,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001587.jpg",
+    "credit": "© Harry Bréjat, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001587",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001402",
@@ -1060,7 +1800,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001402.jpg",
+    "credit": "© René-Gabriel Ojéda, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001402",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001495",
@@ -1069,7 +1819,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001495.jpg",
+    "credit": "© René-Gabriel Ojéda, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001495",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001493",
@@ -1078,7 +1838,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001493.jpg",
+    "credit": "© René-Gabriel Ojéda, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001493",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001368",
@@ -1087,7 +1857,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001368.jpg",
+    "credit": "© René-Gabriel Ojéda, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001368",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001364",
@@ -1096,7 +1876,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001364.jpg",
+    "credit": "© René-Gabriel Ojéda, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001364",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520001403",
@@ -1105,7 +1895,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CLOUET François (atelier)"
+   "extrait": "CLOUET François (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001403.jpg",
+    "credit": "© René-Gabriel Ojéda, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001403",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50170002821",
@@ -1114,7 +1914,17 @@
    "musee": "musée national du château de Pau",
    "ville": "Pau",
    "code": "suiveur_de",
-   "extrait": "CLOUET François (peintre, suiveur)"
+   "extrait": "CLOUET François (peintre, suiveur)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50170002821.jpg",
+    "credit": "© Jean-Yves Chermeux",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50170002821",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "07290021285",
@@ -1123,7 +1933,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Rouen",
    "code": "ecole_de",
-   "extrait": "CLOUET François (école)"
+   "extrait": "CLOUET François (école)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/07290021285.jpg",
+    "credit": "musées de la ville de Rouen",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/07290021285",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "01610012066",
@@ -1132,7 +1952,17 @@
    "musee": "Le Panoptique d'Autun, musée Rolin",
    "ville": "Autun",
    "code": "attribue",
-   "extrait": "CLOUET François (peintre, attribué à)"
+   "extrait": "CLOUET François (peintre, attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/01610012066.jpg",
+    "credit": "B.M.C.",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/01610012066",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0457001362",
@@ -1141,7 +1971,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Nîmes",
    "code": "attribue",
-   "extrait": "CLOUET François (Attribué à)"
+   "extrait": "CLOUET François (Attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0457001362.jpg",
+    "credit": "Stéphane Ramillon",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0457001362",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50520015179",
@@ -1150,7 +1990,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "Clouet François (1520?-1572) (atelier)"
+   "extrait": "Clouet François (1520?-1572) (atelier)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520015179.jpg",
+    "credit": "RMN-Grand Palais - Domaine de Chantilly",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520015179",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0332001041",

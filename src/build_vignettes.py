@@ -12,7 +12,14 @@ Produit :
   - data/exports/web/images_index.json            (référence -> métadonnées image) ;
   - fusion de `image` dans data/exports/web/oeuvres/<slug>.json (front).
 
-Cache résumable (data/cache/commons_thumbs.json) + vignette déjà écrite = sautée.
+Cache des miniatures Commons : data/cache/commons_thumbs.json.
+
+REPRISE (2026-08-24). Une vignette déjà écrite n'est retéléchargée que si elle
+ne peut plus être réutilisée. « Réutilisable » veut dire trois choses à la fois,
+et la présence du fichier n'en est qu'une (voir `fichier_reutilisable`) :
+le fichier s'ouvre et se décode entièrement, l'index précédent atteste qu'il
+vient bien de la source qu'on veut lui donner, et il a été produit avec le
+profil d'encodage demandé. Sans ces trois conditions, on retélécharge.
 
 Usage : uv run python src/build_vignettes.py
 """
@@ -20,10 +27,13 @@ Usage : uv run python src/build_vignettes.py
 import glob
 import io
 import json
+import os
+import sys
 import time
 import urllib.parse
 import urllib.request
 from datetime import date
+from pathlib import Path
 
 from PIL import Image
 
@@ -32,6 +42,9 @@ from config import DOSSIER_EXPORTS, RACINE
 CORRESP = DOSSIER_EXPORTS / "commons_correspondances.json"
 CORRESP_GALLICA = DOSSIER_EXPORTS / "gallica_correspondances.json"
 CORRESP_IMAGERIE = DOSSIER_EXPORTS / "imagerie_commons_correspondances.json"
+# Registre d'audit des images POP (build_images.py). LECTURE SEULE : ce chantier
+# n'y écrit jamais, il en recopie le statut, le crédit et la date de contrôle.
+REGISTRE_POP = DOSSIER_EXPORTS / "images_oeuvres.json"
 DOSSIER_OEUVRES = DOSSIER_EXPORTS / "web" / "oeuvres"
 DOSSIER_IMG = DOSSIER_EXPORTS / "web" / "oeuvres_img"
 INDEX = DOSSIER_EXPORTS / "web" / "images_index.json"
@@ -44,15 +57,47 @@ _INDEX_PRECEDENT: dict = {}
 
 COMMONS_API = "https://commons.wikimedia.org/w/api.php"
 UA = "inventaire-du-doute/1.0 (projet data-journalisme ; contact hericlibong@gmail.com)"
+# Paramètres des reproductions OUVERTES (Commons, Gallica). Ils ne bougent pas :
+# les 209 vignettes déjà produites avec eux ne doivent jamais être ré-encodées.
 LARGEUR = 900        # largeur maximale de la vignette (px)
 QUALITE = 82         # qualité JPEG
 PAUSE = 1.0          # Wikimedia limite le rendu des miniatures (HTTP 429)
+
+# Paramètres POP, SÉPARÉS des précédents (plan du chantier, §3.1). Les changer ne
+# régénère que les vignettes POP : les vignettes ouvertes n'en dépendent pas.
+# Profil D, arrêté le 2026-08-25 après la sonde de l'étape 2 : il garde les
+# 800 px du profil B — la définition qui compte dans la lightbox — et descend la
+# qualité à 75. Sur les images les plus détaillées, les recadrages à 100 % n'ont
+# montré aucune différence perceptible avec la qualité 78, pour 6,6 % de poids en
+# moins. Mesuré : 77,8 Ko de moyenne, soit environ 404 Mo pour les 5 326 images.
+LARGEUR_POP = 800
+QUALITE_POP = 75
+PAUSE_POP = 0.2      # POP sert des fichiers statiques : pas de limite de rythme
+
+# Identifiant de profil inscrit dans l'index, pour les seules entrées POP. Les
+# entrées Commons et Gallica n'en portent pas : leur profil est celui du script,
+# et `None` les décrit exactement. C'est ce qui fait qu'un changement de profil
+# POP ne les concerne pas.
+PROFIL_POP = f"pop-{LARGEUR_POP}-{QUALITE_POP}"
 
 
 def _get(url: str) -> bytes:
     # Backoff sur 429 (« too many requests ») et erreurs transitoires : Wikimedia
     # borne le rythme du rendu des miniatures.
-    req = urllib.request.Request(url, headers={"User-Agent": UA})
+    # Certaines URLs d'images POP contiennent des espaces, des parenthèses ou
+    # des caractères Unicode dans leur chemin. `urllib` refuse ces URLs brutes
+    # avant même d'envoyer la requête. On encode uniquement le chemin, la requête
+    # et le fragment, en préservant les séquences `%xx` déjà présentes et les
+    # séparateurs propres à chaque partie de l'URL.
+    parties = urllib.parse.urlsplit(url)
+    url_requete = urllib.parse.urlunsplit((
+        parties.scheme,
+        parties.netloc,
+        urllib.parse.quote(parties.path, safe="/%:@"),
+        urllib.parse.quote(parties.query, safe="=&%:@/?+;,"),
+        urllib.parse.quote(parties.fragment, safe="%:@/?+"),
+    ))
+    req = urllib.request.Request(url_requete, headers={"User-Agent": UA})
     for essai in range(5):
         try:
             with urllib.request.urlopen(req, timeout=90) as r:
@@ -101,21 +146,105 @@ def urls_miniatures(fichiers: list) -> dict:
     return cache
 
 
-def optimiser(donnees: bytes, chemin_sortie) -> None:
+def jpeg_valide(chemin) -> bool:
+    """Le fichier s'ouvre ET se décode entièrement.
+
+    `verify()` ne suffit pas : il contrôle l'en-tête, pas les données. Un JPEG
+    coupé en cours d'écriture garde un en-tête valide et ne se révèle qu'au
+    décodage. On décode donc pour de bon, et on laisse `LOAD_TRUNCATED_IMAGES`
+    à sa valeur par défaut — sans quoi Pillow compléterait silencieusement
+    l'image tronquée au lieu de la refuser.
+    """
+    try:
+        with Image.open(chemin) as im:
+            im.load()
+        return True
+    except Exception:
+        return False
+
+
+def fichier_reutilisable(ref: str, source_voulue: str, profil_voulu=None) -> bool:
+    """La vignette déjà sur le disque peut-elle servir telle quelle ?
+
+    Trois conditions, et la présence du fichier n'en est qu'une. Le piège que
+    ce contrôle ferme : les vignettes portent toutes le nom `<reference>.jpg`,
+    sans marque de provenance. Si une référence change de source — c'est prévu
+    pour les estampes qui passeront de Commons à POP — le fichier existant
+    resterait en place et l'index lui donnerait pourtant le crédit et le lien de
+    la NOUVELLE source. Une fausse attribution, exactement ce que le crédit est
+    censé empêcher.
+
+    L'état de référence est l'index précédent (`images_index.json`, versionné) :
+    lui seul dit de quelle source vient chaque fichier. Aucun second registre
+    n'est tenu à côté, qui pourrait diverger de celui-là.
+
+    `profil_voulu` vaut None pour Commons et Gallica : leurs entrées n'en
+    portent pas, et `None == None` les déclare à jour. Changer le profil POP ne
+    peut donc pas les atteindre.
+    """
+    sortie = DOSSIER_IMG / f"{ref}.jpg"
+    if not sortie.exists():
+        return False
+    precedent = _INDEX_PRECEDENT.get(ref)
+    if precedent is None:
+        # Fichier orphelin : rien n'atteste d'où il vient. On refait plutôt que
+        # de lui prêter une provenance qu'on ne peut pas vérifier.
+        print(f"    ↻ {ref} : origine non attestée par l'index — régénérée")
+        return False
+    if precedent.get("source_type") != source_voulue:
+        print(f"    ↻ {ref} : {precedent.get('source_type')} → {source_voulue}")
+        return False
+    if precedent.get("profil") != profil_voulu:
+        print(f"    ↻ {ref} : profil {precedent.get('profil')} → {profil_voulu}")
+        return False
+    if not jpeg_valide(sortie):
+        print(f"    ↻ {ref} : fichier illisible ou tronqué — régénérée")
+        return False
+    return True
+
+
+def nettoyer_temporaires() -> int:
+    """Retire les `.jpg.tmp` laissés par une exécution interrompue."""
+    restes = list(DOSSIER_IMG.glob("*.jpg.tmp")) if DOSSIER_IMG.exists() else []
+    for reste in restes:
+        reste.unlink(missing_ok=True)
+    if restes:
+        print(f"{len(restes)} fichier(s) temporaire(s) d'une exécution interrompue retiré(s).")
+    return len(restes)
+
+
+def optimiser(donnees: bytes, chemin_sortie, largeur: int = LARGEUR,
+              qualite: int = QUALITE) -> None:
     """Ouvre l'image téléchargée, aplatit la transparence sur blanc, borne la
-    largeur, ré-encode en JPEG optimisé (métadonnées retirées)."""
-    im = Image.open(io.BytesIO(donnees))
-    if im.mode in ("RGBA", "LA", "P"):
-        im = im.convert("RGBA")
-        fond = Image.new("RGB", im.size, (255, 255, 255))
-        fond.paste(im, mask=im.split()[-1])
-        im = fond
-    else:
-        im = im.convert("RGB")
-    if im.width > LARGEUR:
-        h = round(im.height * LARGEUR / im.width)
-        im = im.resize((LARGEUR, h), Image.LANCZOS)
-    im.save(chemin_sortie, "JPEG", quality=QUALITE, optimize=True, progressive=True)
+    largeur, ré-encode en JPEG optimisé (métadonnées retirées).
+
+    L'écriture est ATOMIQUE (2026-08-24) : le JPEG est produit à côté, relu pour
+    vérifier qu'il se décode, et seulement alors mis en place par `os.replace`.
+    Une interruption, un disque plein ou une image source corrompue ne peuvent
+    donc plus laisser une vignette à moitié écrite — que la reprise prendrait
+    pour un fichier valide et ne referait jamais. En cas d'échec, le fichier
+    précédent reste intact.
+    """
+    temporaire = chemin_sortie.parent / (chemin_sortie.name + ".tmp")
+    try:
+        im = Image.open(io.BytesIO(donnees))
+        if im.mode in ("RGBA", "LA", "P"):
+            im = im.convert("RGBA")
+            fond = Image.new("RGB", im.size, (255, 255, 255))
+            fond.paste(im, mask=im.split()[-1])
+            im = fond
+        else:
+            im = im.convert("RGB")
+        if im.width > largeur:
+            h = round(im.height * largeur / im.width)
+            im = im.resize((largeur, h), Image.LANCZOS)
+        im.save(temporaire, "JPEG", quality=qualite, optimize=True, progressive=True)
+        if not jpeg_valide(temporaire):
+            raise OSError("le JPEG produit ne se relit pas")
+        os.replace(temporaire, chemin_sortie)
+    except Exception:
+        temporaire.unlink(missing_ok=True)
+        raise
 
 
 def date_de_controle(ref: str, defaut: str) -> str:
@@ -128,9 +257,11 @@ def date_de_controle(ref: str, defaut: str) -> str:
     return _INDEX_PRECEDENT.get(ref, {}).get("verifie_le") or defaut
 
 
-def main() -> None:
+def main(references=None) -> None:
     global _INDEX_PRECEDENT
     _INDEX_PRECEDENT = json.loads(INDEX.read_text(encoding="utf-8")) if INDEX.exists() else {}
+    DOSSIER_IMG.mkdir(parents=True, exist_ok=True)
+    nettoyer_temporaires()
     recs = json.load(open(CORRESP, encoding="utf-8"))
     retenus = [r for r in recs
                if r["match_status"] == "exact" and r["rights_status"] == "open"
@@ -149,7 +280,7 @@ def main() -> None:
     for ref, r in sorted(par_ref.items()):
         sortie = DOSSIER_IMG / f"{ref}.jpg"
         url = thumbs.get(r["commons_file"]) or r["file_url"]
-        if not sortie.exists():
+        if not fichier_reutilisable(ref, "wikimedia_commons"):
             try:
                 optimiser(_get(url), sortie)
                 telecharges += 1
@@ -170,6 +301,12 @@ def main() -> None:
             "source": r["source_page_url"],
             "verifie_le": r["verified_at"],
         }
+    # PRIORITÉ ÉDITORIALE : Commons exact → POP → autre exemplaire. POP passe
+    # donc AVANT Gallica et l'imagerie Commons. Cet ordre est indispensable aux
+    # relances : une entrée déjà passée de Gallica à POP doit être présente dans
+    # l'index avant que la passe Gallica arrive, sinon celle-ci réécrirait son
+    # ancien JPEG sous le même nom.
+    ajouter_pop(index, references)
     ajouter_gallica(index)
     ajouter_imagerie_commons(index)
 
@@ -204,7 +341,7 @@ def ajouter_gallica(index: dict) -> int:
         if ref in index:
             continue
         sortie = DOSSIER_IMG / f"{ref}.jpg"
-        if not sortie.exists():
+        if not fichier_reutilisable(ref, "gallica_bnf"):
             try:
                 optimiser(_get(r["image_url"]), sortie)
                 ajoutees += 1
@@ -254,7 +391,7 @@ def ajouter_imagerie_commons(index: dict) -> int:
         if ref in index:
             continue
         sortie = DOSSIER_IMG / f"{ref}.jpg"
-        if not sortie.exists():
+        if not fichier_reutilisable(ref, "wikimedia_commons"):
             try:
                 optimiser(_get(r["image_url"]), sortie)
                 ajoutees += 1
@@ -277,6 +414,169 @@ def ajouter_imagerie_commons(index: dict) -> int:
         }
     print(f"{ajoutees} nouvelles vignettes d'imagerie Commons.")
     return ajoutees
+
+
+def metadonnees_pop(ref: str, valeur: dict) -> dict:
+    """Entrée publique d'une image POP, construite à un seul endroit."""
+    return {
+        "statut": valeur["statut"],
+        "source_type": "pop_joconde",
+        "url": f"oeuvres/{ref}.jpg",
+        "credit": valeur.get("credit") or "",
+        "licence": "",
+        "source": valeur["notice_pop"],
+        "profil": PROFIL_POP,
+        "verifie_le": valeur.get("verifie_le", ""),
+    }
+
+
+def conserver_pop_hors_lot(index: dict, registre: dict, demandees: set) -> int:
+    """Préserve les entrées POP précédentes qu'un lot limité ne rejoue pas.
+
+    `main()` reconstruit l'index à zéro. Sans cette étape, `--lot` retirerait de
+    l'index et des fiches toutes les images POP qui ne figurent pas dans le lot,
+    tout en laissant leurs JPEG orphelins sur le disque. Une image hors lot qui
+    n'est plus réutilisable bloque l'exécution : un lot partiel ne doit ni la
+    régénérer en cachette, ni l'effacer silencieusement.
+    """
+    conservees = []
+    invalides = []
+    for ref, precedente in _INDEX_PRECEDENT.items():
+        if precedente.get("source_type") != "pop_joconde":
+            continue
+        if ref in demandees or ref in index:
+            continue
+        valeur = registre.get(ref)
+        if not valeur or not valeur.get("image"):
+            invalides.append(ref)
+            continue
+        if not fichier_reutilisable(ref, "pop_joconde", PROFIL_POP):
+            invalides.append(ref)
+            continue
+        conservees.append((ref, valeur))
+
+    if invalides:
+        refs = ", ".join(sorted(invalides)[:8])
+        suite = "…" if len(invalides) > 8 else ""
+        raise RuntimeError(
+            "lot partiel impossible : image(s) POP hors lot à régénérer "
+            f"({refs}{suite})"
+        )
+
+    for ref, valeur in conservees:
+        index[ref] = metadonnees_pop(ref, valeur)
+    return len(conservees)
+
+
+def ajouter_pop(index: dict, references=None) -> dict:
+    """Ajoute les reproductions POP après Commons exact, avant les replis.
+
+    Elle applique la priorité arrêtée au §4 du plan, qui ne se lit pas sur la
+    provenance mais sur CE QUE L'IMAGE MONTRE :
+
+      1. une image Commons qui montre l'objet même du musée reste en place ;
+      2. POP complète les autres références quand une image est disponible ;
+      3. Gallica ou l'imagerie Commons ne passent qu'ensuite, pour les références
+         encore vides — elles servent de repli quand POP est absent ou en échec.
+
+    `references` limite l'exécution à un sous-ensemble (lot témoin, reprise
+    d'un lot en échec). `None` traite tout le corpus : c'est le mode de
+    production, et il ne demande aucune réécriture.
+
+    L'ORDRE DES OPÉRATIONS est le point délicat. L'entrée d'index n'est
+    remplacée qu'APRÈS un téléchargement et un encodage réussis. Si POP échoue :
+    l'ancien JPEG reste (l'écriture est atomique), l'ancienne entrée Commons ou
+    Gallica reste, et une référence encore sans image n'en reçoit aucune —
+    l'œuvre garde son emplacement vide dans la fiche. Jamais d'entrée qui
+    décrirait un fichier absent ou un fichier venu d'ailleurs.
+    """
+    if not REGISTRE_POP.exists():
+        raise FileNotFoundError(f"registre POP introuvable : {REGISTRE_POP}")
+    registre = json.loads(REGISTRE_POP.read_text(encoding="utf-8"))
+
+    candidates = sorted(r for r, v in registre.items() if v.get("image"))
+    if references is not None:
+        demandees = set(references)
+        conservees = conserver_pop_hors_lot(index, registre, demandees)
+        candidates = [r for r in candidates if r in demandees]
+        absentes = demandees - set(registre)
+        sans_image = {r for r in demandees if r in registre and not registre[r].get("image")}
+        for ref in sorted(absentes | sans_image):
+            print(f"    · {ref} : aucune image POP au registre")
+
+    print(f"{len(candidates)} référence(s) POP à examiner"
+          + (" (lot restreint)." if references is not None else "."))
+
+    DOSSIER_IMG.mkdir(parents=True, exist_ok=True)
+    bilan = {
+        "ajoutees": 0,
+        "remplacees": 0,
+        "reutilisees": 0,
+        "conservees_hors_lot": conservees if references is not None else 0,
+        "ignorees": 0,
+        "echecs": [],
+    }
+    for ref in candidates:
+        entree = index.get(ref)
+        # Une reproduction ouverte qui montre l'objet du musée n'est jamais
+        # remplacée. Seule une entrée « autre exemplaire » cède la place.
+        if entree is not None and not entree.get("exemplaire_autre"):
+            bilan["ignorees"] += 1
+            continue
+
+        v = registre[ref]
+        precedente = _INDEX_PRECEDENT.get(ref, {})
+        remplacement = (entree is not None
+                         or precedente.get("exemplaire_autre") is True)
+        source_remplacee = (entree or precedente).get("source_type")
+        sortie = DOSSIER_IMG / f"{ref}.jpg"
+        reutilisable = fichier_reutilisable(ref, "pop_joconde", PROFIL_POP)
+        if not reutilisable:
+            try:
+                optimiser(_get(v["image"]), sortie, LARGEUR_POP, QUALITE_POP)
+            except Exception as ex:
+                # Rien n'est touché : ni le fichier (écriture atomique), ni
+                # l'entrée d'index, qui reste celle d'avant ou n'existe pas.
+                bilan["echecs"].append({"reference": ref, "erreur": str(ex)[:120]})
+                print(f"    ⚠ {ref} : {str(ex)[:80]}")
+                continue
+            time.sleep(PAUSE_POP)
+
+        index[ref] = metadonnees_pop(ref, v)
+        precedente_pop = (_INDEX_PRECEDENT.get(ref, {}).get("source_type")
+                           == "pop_joconde")
+        if reutilisable and precedente_pop:
+            bilan["reutilisees"] += 1
+        elif remplacement:
+            bilan["remplacees"] += 1
+            print(f"    ⇄ {ref} : {source_remplacee} → pop_joconde")
+        else:
+            bilan["ajoutees"] += 1
+
+    print(f"{bilan['ajoutees']} nouvelle(s) vignette(s) POP, "
+          f"{bilan['remplacees']} remplacement(s), "
+          f"{bilan['reutilisees']} réutilisée(s), "
+          f"{bilan['conservees_hors_lot']} conservée(s) hors lot, "
+          f"{bilan['ignorees']} référence(s) laissée(s) à leur source ouverte, "
+          f"{len(bilan['echecs'])} échec(s).")
+    return bilan
+
+
+def lot_demande(arguments) -> set | None:
+    """`--lot <fichier>` : une référence par ligne, `#` pour un commentaire.
+
+    Sert au lot témoin et, plus tard, à rejouer un lot d'échecs. Sans l'option,
+    le pipeline traite tout le corpus : la restriction est un argument de plus,
+    pas une branche parallèle à entretenir.
+    """
+    if not arguments:
+        return None
+    if len(arguments) != 2 or arguments[0] != "--lot":
+        raise SystemExit("usage : build_vignettes.py [--lot <fichier>]")
+    chemin = Path(arguments[1])
+    refs = {ligne.split("#")[0].strip()
+            for ligne in chemin.read_text(encoding="utf-8").splitlines()}
+    return {r for r in refs if r}
 
 
 def fusionner_dans_oeuvres(index: dict) -> int:
@@ -303,4 +603,4 @@ def fusionner_dans_oeuvres(index: dict) -> int:
 
 
 if __name__ == "__main__":
-    main()
+    main(lot_demande(sys.argv[1:]))

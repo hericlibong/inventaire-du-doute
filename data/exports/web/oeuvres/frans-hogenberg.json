@@ -20,7 +20,17 @@
    "musee": "musée national du château de Pau",
    "ville": "Pau",
    "code": "ecole_de",
-   "extrait": "HOGENBERG François (graveur, école)"
+   "extrait": "HOGENBERG François (graveur, école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50170003231.jpg",
+    "credit": "© Réunion des musées nationaux, René-Gabriel Ojéda - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50170003231",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50170003230",
@@ -29,7 +39,17 @@
    "musee": "musée national du château de Pau",
    "ville": "Pau",
    "code": "ecole_de",
-   "extrait": "HOGENBERG François (graveur, école)"
+   "extrait": "HOGENBERG François (graveur, école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50170003230.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50170003230",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50170003229",
@@ -38,7 +58,17 @@
    "musee": "musée national du château de Pau",
    "ville": "Pau",
    "code": "ecole_de",
-   "extrait": "HOGENBERG François (graveur, école)"
+   "extrait": "HOGENBERG François (graveur, école)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50170003229.jpg",
+    "credit": "© Jean-Yves Chermeux",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50170003229",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50170005761",
@@ -47,7 +77,17 @@
    "musee": "musée national du château de Pau",
    "ville": "Pau",
    "code": "ecole_de",
-   "extrait": "HOGENBERG François (graveur, école)"
+   "extrait": "HOGENBERG François (graveur, école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50170005761.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation, René-Gabriel Ojéda",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50170005761",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50170005877",
@@ -56,7 +96,17 @@
    "musee": "musée national du château de Pau",
    "ville": "Pau",
    "code": "entourage_de",
-   "extrait": "HOGENBERG François (graveur, entourage)"
+   "extrait": "HOGENBERG François (graveur, entourage)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50170005877.jpg",
+    "credit": "©Laura Fernandez/Musée national et domaine du château de Pau",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50170005877",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50170005759",
@@ -65,7 +115,17 @@
    "musee": "musée national du château de Pau",
    "ville": "Pau",
    "code": "ecole_de",
-   "extrait": "HOGENBERG François (graveur, école)"
+   "extrait": "HOGENBERG François (graveur, école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50170005759.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation, René-Gabriel Ojéda",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50170005759",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50170005753",
@@ -74,7 +134,17 @@
    "musee": "musée national du château de Pau",
    "ville": "Pau",
    "code": "ecole_de",
-   "extrait": "HOGENBERG François (graveur, école)"
+   "extrait": "HOGENBERG François (graveur, école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50170005753.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation, René-Gabriel Ojéda",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50170005753",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50170005755",
@@ -83,7 +153,17 @@
    "musee": "musée national du château de Pau",
    "ville": "Pau",
    "code": "ecole_de",
-   "extrait": "HOGENBERG François (graveur, école)"
+   "extrait": "HOGENBERG François (graveur, école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50170005755.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation, René-Gabriel Ojéda",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50170005755",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50170005297",
@@ -92,7 +172,17 @@
    "musee": "musée national du château de Pau",
    "ville": "Pau",
    "code": "entourage_de",
-   "extrait": "HOGENBERG François (graveur, entourage)"
+   "extrait": "HOGENBERG François (graveur, entourage)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50170005297.jpg",
+    "credit": "(C) Photo RMN ©René-Gabriel Ojéda",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50170005297",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50170005767",
@@ -101,7 +191,17 @@
    "musee": "musée national du château de Pau",
    "ville": "Pau",
    "code": "ecole_de",
-   "extrait": "HOGENBERG François (graveur, école)"
+   "extrait": "HOGENBERG François (graveur, école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50170005767.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation, René-Gabriel Ojéda",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50170005767",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50170005765",
@@ -110,7 +210,17 @@
    "musee": "musée national du château de Pau",
    "ville": "Pau",
    "code": "ecole_de",
-   "extrait": "HOGENBERG François (graveur, école)"
+   "extrait": "HOGENBERG François (graveur, école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50170005765.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation, René-Gabriel Ojéda",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50170005765",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50170005812",
@@ -119,7 +229,17 @@
    "musee": "musée national du château de Pau",
    "ville": "Pau",
    "code": "ecole_de",
-   "extrait": "HOGENBERG François (graveur, école)"
+   "extrait": "HOGENBERG François (graveur, école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50170005812.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation, René-Gabriel Ojéda",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50170005812",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50170005885",
@@ -128,7 +248,17 @@
    "musee": "musée national du château de Pau",
    "ville": "Pau",
    "code": "entourage_de",
-   "extrait": "HOGENBERG François (graveur, entourage)"
+   "extrait": "HOGENBERG François (graveur, entourage)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50170005885.jpg",
+    "credit": "©Laura Fernandez/Musée national et domaine du château de Pau",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50170005885",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50170005747",
@@ -137,7 +267,17 @@
    "musee": "musée national du château de Pau",
    "ville": "Pau",
    "code": "ecole_de",
-   "extrait": "HOGENBERG François (graveur, école)"
+   "extrait": "HOGENBERG François (graveur, école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50170005747.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation, René-Gabriel Ojéda",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50170005747",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50170005845",
@@ -146,7 +286,17 @@
    "musee": "musée national du château de Pau",
    "ville": "Pau",
    "code": "entourage_de",
-   "extrait": "HOGENBERG François (graveur, entourage)"
+   "extrait": "HOGENBERG François (graveur, entourage)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50170005845.jpg",
+    "credit": "©Laura Fernandez/Musée national et domaine du château de Pau",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50170005845",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50170005757",
@@ -155,7 +305,17 @@
    "musee": "musée national du château de Pau",
    "ville": "Pau",
    "code": "ecole_de",
-   "extrait": "HOGENBERG François (graveur, école)"
+   "extrait": "HOGENBERG François (graveur, école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50170005757.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation, René-Gabriel Ojéda",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50170005757",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50170005849",
@@ -164,7 +324,17 @@
    "musee": "musée national du château de Pau",
    "ville": "Pau",
    "code": "entourage_de",
-   "extrait": "HOGENBERG François (graveur, entourage)"
+   "extrait": "HOGENBERG François (graveur, entourage)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50170005849.jpg",
+    "credit": "©Laura Fernandez/Musée national et domaine du château de Pau",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50170005849",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50170005898",
@@ -173,7 +343,17 @@
    "musee": "musée national du château de Pau",
    "ville": "Pau",
    "code": "entourage_de",
-   "extrait": "HOGENBERG François (graveur, entourage)"
+   "extrait": "HOGENBERG François (graveur, entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50170005898.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation, René-Gabriel Ojéda",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50170005898",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50170005833",
@@ -182,7 +362,17 @@
    "musee": "musée national du château de Pau",
    "ville": "Pau",
    "code": "ecole_de",
-   "extrait": "HOGENBERG François (graveur, école)"
+   "extrait": "HOGENBERG François (graveur, école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50170005833.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation, René-Gabriel Ojéda",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50170005833",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50170005836",
@@ -191,7 +381,17 @@
    "musee": "musée national du château de Pau",
    "ville": "Pau",
    "code": "ecole_de",
-   "extrait": "HOGENBERG François (graveur, école)"
+   "extrait": "HOGENBERG François (graveur, école)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50170005836.jpg",
+    "credit": "©Laura Fernandez/Musée national et domaine du château de Pau",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50170005836",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50170005901",
@@ -209,7 +409,17 @@
    "musee": "musée national du château de Pau",
    "ville": "Pau",
    "code": "entourage_de",
-   "extrait": "HOGENBERG François (graveur, entourage)"
+   "extrait": "HOGENBERG François (graveur, entourage)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50170005739.jpg",
+    "credit": "©Laura Fernandez/Musée national et domaine du château de Pau",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50170005739",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50170005896",
@@ -218,7 +428,17 @@
    "musee": "musée national du château de Pau",
    "ville": "Pau",
    "code": "entourage_de",
-   "extrait": "HOGENBERG François (graveur, entourage)"
+   "extrait": "HOGENBERG François (graveur, entourage)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50170005896.jpg",
+    "credit": "©Laura Fernandez/Musée national et domaine du château de Pau",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50170005896",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50170005763",
@@ -227,7 +447,17 @@
    "musee": "musée national du château de Pau",
    "ville": "Pau",
    "code": "ecole_de",
-   "extrait": "HOGENBERG François (graveur, école)"
+   "extrait": "HOGENBERG François (graveur, école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50170005763.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation, René-Gabriel Ojéda",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50170005763",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50170005843",
@@ -236,7 +466,17 @@
    "musee": "musée national du château de Pau",
    "ville": "Pau",
    "code": "ecole_de",
-   "extrait": "HOGENBERG François (graveur, école)"
+   "extrait": "HOGENBERG François (graveur, école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50170005843.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation, René-Gabriel Ojéda",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50170005843",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50170005749",
@@ -245,7 +485,17 @@
    "musee": "musée national du château de Pau",
    "ville": "Pau",
    "code": "ecole_de",
-   "extrait": "HOGENBERG François (graveur, école)"
+   "extrait": "HOGENBERG François (graveur, école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50170005749.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation, René-Gabriel Ojéda",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50170005749",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50170005851",
@@ -254,7 +504,17 @@
    "musee": "musée national du château de Pau",
    "ville": "Pau",
    "code": "entourage_de",
-   "extrait": "HOGENBERG François (graveur, entourage)"
+   "extrait": "HOGENBERG François (graveur, entourage)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50170005851.jpg",
+    "credit": "©Laura Fernandez/Musée national et domaine du château de Pau",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50170005851",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50170005838",
@@ -263,7 +523,17 @@
    "musee": "musée national du château de Pau",
    "ville": "Pau",
    "code": "ecole_de",
-   "extrait": "HOGENBERG François (graveur, école)"
+   "extrait": "HOGENBERG François (graveur, école)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50170005838.jpg",
+    "credit": "©Laura Fernandez/Musée national et domaine du château de Pau",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50170005838",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50170005911",
@@ -272,7 +542,17 @@
    "musee": "musée national du château de Pau",
    "ville": "Pau",
    "code": "ecole_de",
-   "extrait": "HOGENBERG François (graveur, école)"
+   "extrait": "HOGENBERG François (graveur, école)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50170005911.jpg",
+    "credit": "©Laura Fernandez/Musée national et domaine du château de Pau",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50170005911",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50170005751",
@@ -281,7 +561,17 @@
    "musee": "musée national du château de Pau",
    "ville": "Pau",
    "code": "ecole_de",
-   "extrait": "HOGENBERG François (graveur, école)"
+   "extrait": "HOGENBERG François (graveur, école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50170005751.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation, René-Gabriel Ojéda",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50170005751",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50170005890",
@@ -290,7 +580,17 @@
    "musee": "musée national du château de Pau",
    "ville": "Pau",
    "code": "ecole_de",
-   "extrait": "HOGENBERG François (graveur, école)"
+   "extrait": "HOGENBERG François (graveur, école)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50170005890.jpg",
+    "credit": "",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50170005890",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M0710000210",
@@ -299,7 +599,17 @@
    "musee": "maison des templiers",
    "ville": "Caudebec-en-Caux",
    "code": "ecole_de",
-   "extrait": "HOGENBERG François (graveur, école)"
+   "extrait": "HOGENBERG François (graveur, école)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0710000210.jpg",
+    "credit": "© E. Marelle",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0710000210",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   }
  ],
  "version_donnee": "2026-07-01",

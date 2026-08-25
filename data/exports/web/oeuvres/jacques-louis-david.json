@@ -113,7 +113,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
-   "extrait": "David (1748-1825) (atelier)"
+   "extrait": "David (1748-1825) (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE000842.jpg",
+    "credit": "© Gérard Blot#Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE000842",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "000PE009869",
@@ -142,7 +152,17 @@
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "ecole_de",
-   "extrait": "David (1748-1825) (école)"
+   "extrait": "David (1748-1825) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE011119.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE011119",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "000PE016154",
@@ -169,7 +189,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Bordeaux",
    "code": "ecole_de",
-   "extrait": "David (1748-1825) (école)"
+   "extrait": "David (1748-1825) (école)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE022029.jpg",
+    "credit": "© Lysiane Gauthier",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE022029",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "000PE029798",
@@ -178,7 +208,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Rouen",
    "code": "attribue",
-   "extrait": "David (1748-1825) (attribué à)"
+   "extrait": "David (1748-1825) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE029798.jpg",
+    "credit": "RMN-Grand Palais",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE029798",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "00000060782",
@@ -187,7 +227,17 @@
    "musee": "musée de la Chartreuse",
    "ville": "Douai",
    "code": "attribue",
-   "extrait": "David (1748-1825) (attribué à)"
+   "extrait": "David (1748-1825) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/00000060782.jpg",
+    "credit": "RMN-Grand Palais",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/00000060782",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50350016266",
@@ -196,7 +246,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "David (1748-1825) (école)"
+   "extrait": "David (1748-1825) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350016266.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350016266",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50350015927",
@@ -205,7 +265,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "David (1748-1825) (école)"
+   "extrait": "David (1748-1825) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350015927.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350015927",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "10480007470",
@@ -214,7 +284,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Chambéry",
    "code": "atelier_de",
-   "extrait": "David (1748-1825) (atelier)"
+   "extrait": "David (1748-1825) (atelier)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/10480007470.jpg",
+    "credit": "Bouchayer, Giroud",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/10480007470",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "000PE024447",
@@ -223,7 +303,17 @@
    "musee": "musée municipal",
    "ville": "La Roche-sur-Yon",
    "code": "attribue",
-   "extrait": "David (1748-1825) (attribué à)"
+   "extrait": "David (1748-1825) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE024447.jpg",
+    "credit": "© musée de la Roche-sur-Yon",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE024447",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50110001215",
@@ -232,7 +322,17 @@
    "musee": "musée national Magnin",
    "ville": "Dijon",
    "code": "atelier_de",
-   "extrait": "David (1748-1825) (atelier)"
+   "extrait": "David (1748-1825) (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50110001215.jpg",
+    "credit": "© Thierry Le Mage ; © Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50110001215",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50110000614",
@@ -241,7 +341,17 @@
    "musee": "musée national Magnin",
    "ville": "Dijon",
    "code": "attribue",
-   "extrait": "David (1748-1825) (attribué à)"
+   "extrait": "David (1748-1825) (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50110000614.jpg",
+    "credit": "© R.G. Ojeda ; © Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50110000614",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50110000317",
@@ -270,7 +380,17 @@
    "musee": "musée municipal",
    "ville": "Pithiviers",
    "code": "attribue",
-   "extrait": "David (1748-1825) (attribué à)"
+   "extrait": "David (1748-1825) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0289002529.jpg",
+    "credit": "© Matthieu Dussauge ; © musée d'Art et d'Histoire - Pithiviers",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0289002529",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "09630004568",
@@ -279,7 +399,17 @@
    "musee": "musée de Brou",
    "ville": "Bourg-en-Bresse",
    "code": "attribue",
-   "extrait": "David (1748-1825) (attribué à)"
+   "extrait": "David (1748-1825) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/09630004568.jpg",
+    "credit": "© Alain Basset",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/09630004568",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50130000151",
@@ -297,7 +427,17 @@
    "musee": "musée de la Grande Saline",
    "ville": "Salins-les-Bains",
    "code": "attribue",
-   "extrait": "David (1748-1825) (attribué à)"
+   "extrait": "David (1748-1825) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0352002998.jpg",
+    "credit": "© Musée de la Grande Saline, Salins-les-Bains ; Justine Sève",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0352002998",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "04450000139",
@@ -306,7 +446,17 @@
    "musee": "Palais-musée des Archevêques de Narbonne",
    "ville": "Narbonne",
    "code": "atelier_de",
-   "extrait": "David (1748-1825) (atelier)"
+   "extrait": "David (1748-1825) (atelier)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/04450000139.jpg",
+    "credit": "© LEPAGE Jean",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/04450000139",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "03110005074",

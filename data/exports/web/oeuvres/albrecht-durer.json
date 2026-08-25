@@ -28,7 +28,17 @@
    "musee": "musée Crozatier",
    "ville": "Le Puy-en-Velay",
    "code": "attribue",
-   "extrait": "DURER Albrecht (attribué)"
+   "extrait": "DURER Albrecht (attribué)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/00000055631.jpg",
+    "credit": "",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/00000055631",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350228319",
@@ -37,7 +47,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "DURER Albrecht (attribué à)"
+   "extrait": "DURER Albrecht (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350228319.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350228319",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350500150",
@@ -46,7 +66,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "DURER Albrecht (école)"
+   "extrait": "DURER Albrecht (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350500150.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350500150",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350109124",
@@ -55,7 +85,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "DURER Albrecht (école)"
+   "extrait": "DURER Albrecht (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350109124.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350109124",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350109007",
@@ -64,7 +104,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "DURER Albrecht (école)"
+   "extrait": "DURER Albrecht (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350109007.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350109007",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350108822",
@@ -73,7 +123,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "DURER Albrecht (école)"
+   "extrait": "DURER Albrecht (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350108822.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350108822",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350109002",
@@ -82,7 +142,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "DURER Albrecht (école)"
+   "extrait": "DURER Albrecht (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350109002.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350109002",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350108596",
@@ -91,7 +161,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "DURER Albrecht (école)"
+   "extrait": "DURER Albrecht (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350108596.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350108596",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350108569",
@@ -100,7 +180,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "DURER Albrecht (école)"
+   "extrait": "DURER Albrecht (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350108569.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350108569",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350108893",
@@ -109,7 +199,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "DURER Albrecht (école)"
+   "extrait": "DURER Albrecht (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350108893.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350108893",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350108823",
@@ -118,7 +218,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "DURER Albrecht (école)"
+   "extrait": "DURER Albrecht (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350108823.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350108823",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350108600",
@@ -127,7 +237,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "DURER Albrecht (école)"
+   "extrait": "DURER Albrecht (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350108600.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350108600",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "02110002354",
@@ -136,7 +256,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Rennes",
    "code": "attribue",
-   "extrait": "DURER Albrecht (attribué à)"
+   "extrait": "DURER Albrecht (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/02110002354.jpg",
+    "credit": "© Jean-Manuel Salingue",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/02110002354",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "02860007456",
@@ -145,7 +275,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Orléans",
    "code": "point_interrogation",
-   "extrait": "DURER Albrecht (?, graveur)"
+   "extrait": "DURER Albrecht (?, graveur)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/02860007456.jpg",
+    "credit": "Orléans, musée des beaux-arts © cliché François LAUGINIE",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/02860007456",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "07450090930",
@@ -154,7 +294,17 @@
    "musee": "musée Dobrée",
    "ville": "Nantes",
    "code": "attribue",
-   "extrait": "DÜRER Albrecht (attribué à, graveur)"
+   "extrait": "DÜRER Albrecht (attribué à, graveur)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/07450090930.jpg",
+    "credit": "© Christian Letertre",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/07450090930",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "07450090971",
@@ -163,7 +313,17 @@
    "musee": "musée Dobrée",
    "ville": "Nantes",
    "code": "attribue",
-   "extrait": "DÜRER Albrecht (attribué à, graveur)"
+   "extrait": "DÜRER Albrecht (attribué à, graveur)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/07450090971.jpg",
+    "credit": "© Arkênum (société)",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/07450090971",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "07450090959",
@@ -172,7 +332,17 @@
    "musee": "musée Dobrée",
    "ville": "Nantes",
    "code": "attribue",
-   "extrait": "DÜRER Albrecht (graveur, attribué à)"
+   "extrait": "DÜRER Albrecht (graveur, attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/07450090959.jpg",
+    "credit": "© Arkênum (société)",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/07450090959",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "07450090962",
@@ -181,7 +351,17 @@
    "musee": "musée Dobrée",
    "ville": "Nantes",
    "code": "attribue",
-   "extrait": "DÜRER Albrecht (attribué à, graveur)"
+   "extrait": "DÜRER Albrecht (attribué à, graveur)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/07450090962.jpg",
+    "credit": "© Arkênum (société)",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/07450090962",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "03110042003",
@@ -190,7 +370,17 @@
    "musee": "musée des Beaux-Arts de Reims",
    "ville": "Reims",
    "code": "genre_de",
-   "extrait": "DÜRER Albrecht (genre de)"
+   "extrait": "DÜRER Albrecht (genre de)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/03110042003.jpg",
+    "credit": "© Christian DEVLEESCHAUWER",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/03110042003",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   }
  ],
  "version_donnee": "2026-07-01",

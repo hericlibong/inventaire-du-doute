@@ -297,7 +297,17 @@
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "atelier_de",
-   "extrait": "Corneille de Lyon (1500?-1575) (atelier)"
+   "extrait": "Corneille de Lyon (1500?-1575) (atelier)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE007583.jpg",
+    "credit": "RMN-Grand Palais ; Gérard Blot",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE007583",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE007610",
@@ -444,7 +454,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Dijon",
    "code": "maniere_de",
-   "extrait": "Corneille de Lyon (1500?-1575) (manière de)"
+   "extrait": "Corneille de Lyon (1500?-1575) (manière de)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/01370001106.jpg",
+    "credit": "Jay",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/01370001106",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070000081",
@@ -493,7 +513,17 @@
    "musee": "musée de la Chartreuse",
    "ville": "Douai",
    "code": "point_interrogation",
-   "extrait": "Corneille De Lyon (1510-1575) (?, copiste)"
+   "extrait": "Corneille De Lyon (1510-1575) (?, copiste)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06190023766.jpg",
+    "credit": "",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06190023766",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   }
  ],
  "version_donnee": "2026-07-01",

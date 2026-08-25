@@ -100,7 +100,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Bordeaux",
    "code": "ecole_de",
-   "extrait": "BOILLY Louis Léopold (école)"
+   "extrait": "BOILLY Louis Léopold (école)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE020200.jpg",
+    "credit": "© Lysiane Gauthier",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE020200",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE020556",
@@ -118,7 +128,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Bordeaux",
    "code": "attribue",
-   "extrait": "BOILLY Louis Léopold (attribué)"
+   "extrait": "BOILLY Louis Léopold (attribué)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE025719.jpg",
+    "credit": "© Lysiane Gauthier",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE025719",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE029582",
@@ -154,7 +174,17 @@
    "musee": "musée national Magnin",
    "ville": "Dijon",
    "code": "ecole_de",
-   "extrait": "BOILLY Louis Léopold (peintre, école)"
+   "extrait": "BOILLY Louis Léopold (peintre, école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50110000611.jpg",
+    "credit": "© R.G. Ojéda ; © Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50110000611",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350036918",
@@ -163,7 +193,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "BOILLY Louis Léopold (attribué à)"
+   "extrait": "BOILLY Louis Léopold (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350036918.jpg",
+    "credit": "© Musée du Louvre, M. Beck-Coppola",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350036918",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "10480001058",
@@ -172,7 +212,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Chambéry",
    "code": "atelier_de",
-   "extrait": "BOILLY Louis Léopold (atelier)"
+   "extrait": "BOILLY Louis Léopold (atelier)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/10480001058.jpg",
+    "credit": "Bouchayer",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/10480001058",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "04000006641",
@@ -181,7 +231,17 @@
    "musee": "musée Lambinet",
    "ville": "Versailles",
    "code": "attribue",
-   "extrait": "BOILLY Louis Léopold (attribué à)"
+   "extrait": "BOILLY Louis Léopold (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/04000006641.jpg",
+    "credit": "© Dufrene Gérard",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/04000006641",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "07290021901",
@@ -190,7 +250,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Rouen",
    "code": "attribue",
-   "extrait": "BOILLY Louis Léopold (attribué à)"
+   "extrait": "BOILLY Louis Léopold (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/07290021901.jpg",
+    "credit": "Carole Loisel ; Catherine Lancien",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/07290021901",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "01370000380",
@@ -199,7 +269,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Dijon",
    "code": "attribue",
-   "extrait": "BOILLY Louis Léopold (attribué à)"
+   "extrait": "BOILLY Louis Léopold (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/01370000380.jpg",
+    "credit": "© Jay",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/01370000380",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "01370000383",
@@ -208,7 +288,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Dijon",
    "code": "attribue",
-   "extrait": "BOILLY Louis Léopold (attribué à)"
+   "extrait": "BOILLY Louis Léopold (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/01370000383.jpg",
+    "credit": "© Dijon, musée des beaux-arts",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/01370000383",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "01840000132",
@@ -217,7 +307,17 @@
    "musee": "musée d'art et d'histoire Saint-Germain",
    "ville": "Auxerre",
    "code": "attribue",
-   "extrait": "BOILLY Louis Léopold (attribué)"
+   "extrait": "BOILLY Louis Léopold (attribué)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/01840000132.jpg",
+    "credit": "musées d'Auxerre",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/01840000132",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "03110041532",
@@ -246,7 +346,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "genre_de",
-   "extrait": "Boilly Louis-Léopold (1761-1845) (genre de)"
+   "extrait": "Boilly Louis-Léopold (1761-1845) (genre de)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0332000855.jpg",
+    "credit": "© GUENAT Pierre",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0332000855",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   }
  ],
  "version_donnee": "2026-07-01",

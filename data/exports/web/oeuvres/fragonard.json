@@ -28,7 +28,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)"
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE001196.jpg",
+    "credit": "Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE001196",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE001195",
@@ -37,7 +47,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)"
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE001195.jpg",
+    "credit": "© Gérard Blot ; Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE001195",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE001197",
@@ -46,7 +66,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)"
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE001197.jpg",
+    "credit": "© Gérard Blot ; Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE001197",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE001198",
@@ -82,7 +112,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)"
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE013394.jpg",
+    "credit": "© A. Dequier ; © M. Bard",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE013394",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE014072",
@@ -118,7 +158,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Bordeaux",
    "code": "ecole_de",
-   "extrait": "Fragonard Jean-Honoré (1732-1806) (école)"
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (école)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE023112.jpg",
+    "credit": "© Lysiane Gauthier",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE023112",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070000115",
@@ -127,7 +177,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "maniere_de",
-   "extrait": "Fragonard Jean-Honoré (1732-1806) (manière de)"
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (manière de)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070000115.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070000115",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350030737",
@@ -136,7 +196,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)"
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350030737.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350030737",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350030735",
@@ -145,7 +215,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)"
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350030735.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350030735",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350030738",
@@ -154,7 +234,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)"
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350030738.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350030738",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350502833",
@@ -163,7 +253,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)"
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350502833.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350502833",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350231283",
@@ -172,7 +272,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)"
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350231283.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350231283",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350228306",
@@ -181,7 +291,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "Fragonard Jean-Honoré (1732-1806) (école)"
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350228306.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350228306",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350035040",
@@ -190,7 +310,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)"
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350035040.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350035040",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350030736",
@@ -199,7 +329,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)"
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350030736.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350030736",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350212407",
@@ -208,7 +348,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)"
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350212407.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350212407",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "10480007491",
@@ -217,7 +367,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Chambéry",
    "code": "attribue",
-   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)"
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/10480007491.jpg",
+    "credit": "Bouchayer, Giroud",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/10480007491",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50110001194",
@@ -226,7 +386,17 @@
    "musee": "musée national Magnin",
    "ville": "Dijon",
    "code": "genre_de",
-   "extrait": "Fragonard Jean-Honoré (1732-1806) (genre de)"
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (genre de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50110001194.jpg",
+    "credit": "© Thierry Le Mage ; © Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50110001194",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "07290021230",
@@ -235,7 +405,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Rouen",
    "code": "ecole_de",
-   "extrait": "Fragonard Jean-Honoré (1732-1806) (école)"
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (école)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/07290021230.jpg",
+    "credit": "© Carole Loisel ; © Catherine Lancien",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/07290021230",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "07290022334",
@@ -244,7 +424,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Rouen",
    "code": "attribue",
-   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)"
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/07290022334.jpg",
+    "credit": "© Maxime Resse, musées de la ville de Rouen",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/07290022334",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "08760010792",
@@ -253,7 +443,17 @@
    "musee": "musée Fragonard",
    "ville": "Grasse",
    "code": "attribue",
-   "extrait": "Fragonard Jean-Honoré (1732-1806) (peintre, attribué à)"
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (peintre, attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/08760010792.jpg",
+    "credit": "© Carlo Barbiero, photographe, coll. musée Fragonard, Grasse - France",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/08760010792",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "08760049019",
@@ -262,7 +462,17 @@
    "musee": "musée Fragonard",
    "ville": "Grasse",
    "code": "attribue",
-   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)"
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/08760049019.jpg",
+    "credit": "© Coll. musée Fragonard, Grasse - France",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/08760049019",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "08760049403",
@@ -271,7 +481,17 @@
    "musee": "musée Fragonard",
    "ville": "Grasse",
    "code": "attribue",
-   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à, dessinateur)"
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à, dessinateur)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/08760049403.jpg",
+    "credit": "© Jacques Penon, photographe, coll. musée Fragonard, Grasse France",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/08760049403",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0536001628",
@@ -280,7 +500,17 @@
    "musee": "musée départemental d'art ancien et contemporain",
    "ville": "Epinal",
    "code": "attribue",
-   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)"
+   "extrait": "Fragonard Jean-Honoré (1732-1806) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0536001628.jpg",
+    "credit": "© Claude Philippot",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0536001628",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "04450000713",
@@ -289,7 +519,17 @@
    "musee": "Palais-musée des Archevêques de Narbonne",
    "ville": "Narbonne",
    "code": "attribue",
-   "extrait": "FRAGONARD Jean Honoré (ancienne attribution, attribué)"
+   "extrait": "FRAGONARD Jean Honoré (ancienne attribution, attribué)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/04450000713.jpg",
+    "credit": "© PAITRAULT Angélique",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/04450000713",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   }
  ],
  "version_donnee": "2026-07-01",

@@ -20,7 +20,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "Lorrain Claude (1600-1682) (attribué à)"
+   "extrait": "Lorrain Claude (1600-1682) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE001257.jpg",
+    "credit": "RMN-Grand Palais",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE001257",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE013398",
@@ -29,7 +39,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "Lorrain Claude (1600-1682) (attribué à)"
+   "extrait": "Lorrain Claude (1600-1682) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE013398.jpg",
+    "credit": "RMN-Grand Palais",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE013398",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE026586",
@@ -47,7 +67,17 @@
    "musee": "musée de l'Ecole nationale supérieure des beaux-arts",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "Lorrain Claude (1600-1682) (attribué à)"
+   "extrait": "Lorrain Claude (1600-1682) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50510010862.jpg",
+    "credit": "© service photographique de l'école nationale supérieure des beaux-arts",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50510010862",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350030729",
@@ -56,7 +86,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "Lorrain Claude (1600-1682) (attribué à)"
+   "extrait": "Lorrain Claude (1600-1682) (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350030729.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350030729",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350030727",
@@ -65,7 +105,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "Lorrain Claude (1600-1682) (attribué à)"
+   "extrait": "Lorrain Claude (1600-1682) (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350030727.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350030727",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350212463",
@@ -74,7 +124,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "Lorrain Claude (1600-1682) (attribué à)"
+   "extrait": "Lorrain Claude (1600-1682) (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350212463.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350212463",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350030731",
@@ -83,7 +143,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "Lorrain Claude (1600-1682) (attribué à)"
+   "extrait": "Lorrain Claude (1600-1682) (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350030731.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350030731",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350030728",
@@ -92,7 +162,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "Lorrain Claude (1600-1682) (attribué à)"
+   "extrait": "Lorrain Claude (1600-1682) (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350030728.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350030728",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350030926",
@@ -101,7 +181,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "Lorrain Claude (1600-1682) (attribué à)"
+   "extrait": "Lorrain Claude (1600-1682) (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350030926.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350030926",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350030733",
@@ -110,7 +200,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "Lorrain Claude (1600-1682) (attribué à)"
+   "extrait": "Lorrain Claude (1600-1682) (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350030733.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350030733",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350212467",
@@ -119,7 +219,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "Lorrain Claude (1600-1682) (attribué à)"
+   "extrait": "Lorrain Claude (1600-1682) (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350212467.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350212467",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350212466",
@@ -128,7 +238,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "Lorrain Claude (1600-1682) (attribué à)"
+   "extrait": "Lorrain Claude (1600-1682) (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350212466.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350212466",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350212464",
@@ -137,7 +257,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "Lorrain Claude (1600-1682) (attribué à)"
+   "extrait": "Lorrain Claude (1600-1682) (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350212464.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350212464",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350030730",
@@ -146,7 +276,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "Lorrain Claude (1600-1682) (attribué à)"
+   "extrait": "Lorrain Claude (1600-1682) (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350030730.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350030730",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350030732",
@@ -155,7 +295,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "Lorrain Claude (1600-1682) (attribué à)"
+   "extrait": "Lorrain Claude (1600-1682) (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350030732.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350030732",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350212468",
@@ -164,7 +314,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "Lorrain Claude (1600-1682) (attribué à)"
+   "extrait": "Lorrain Claude (1600-1682) (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350212468.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350212468",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00650004285",
@@ -173,7 +333,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Bordeaux",
    "code": "ecole_de",
-   "extrait": "Lorrain Claude (1600-1682) (école)"
+   "extrait": "Lorrain Claude (1600-1682) (école)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/00650004285.jpg",
+    "credit": "© Lysiane Gauthier",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/00650004285",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "07120002024",
@@ -182,7 +352,17 @@
    "musee": "Château-musée",
    "ville": "Dieppe",
    "code": "attribue",
-   "extrait": "Lorrain Claude (1600-1682) (attribué à)"
+   "extrait": "Lorrain Claude (1600-1682) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/07120002024.jpg",
+    "credit": "",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/07120002024",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "01500000075",
@@ -191,7 +371,17 @@
    "musee": "musée d'Art et d'Histoire Romain Rolland",
    "ville": "Clamecy",
    "code": "ecole_de",
-   "extrait": "Lorrain Claude (1600-1682)  (école)"
+   "extrait": "Lorrain Claude (1600-1682)  (école)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/01500000075.jpg",
+    "credit": "© Pierre Plattier, Clamecy, Musée d'Art et d'Histoire Romain Rolland",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/01500000075",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   }
  ],
  "version_donnee": "2026-07-01",

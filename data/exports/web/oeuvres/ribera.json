@@ -61,7 +61,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "RIBERA Jusepe de  (attribué)"
+   "extrait": "RIBERA Jusepe de  (attribué)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070000233.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070000233",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350103953",
@@ -70,7 +80,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "RIBERA Jusepe de (attribué à)"
+   "extrait": "RIBERA Jusepe de (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350103953.jpg",
+    "credit": "Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350103953",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350205910",
@@ -79,7 +99,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "genre_de",
-   "extrait": "RIBERA Jusepe de (genre de)"
+   "extrait": "RIBERA Jusepe de (genre de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350205910.jpg",
+    "credit": "Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350205910",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350205921",
@@ -88,7 +118,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "genre_de",
-   "extrait": "RIBERA Jusepe de (genre de)"
+   "extrait": "RIBERA Jusepe de (genre de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350205921.jpg",
+    "credit": "Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350205921",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "08120003377",
@@ -117,7 +157,17 @@
    "musee": "musée de Picardie",
    "ville": "Amiens",
    "code": "attribue",
-   "extrait": "RIBERA Jusepe de (attribué à)"
+   "extrait": "RIBERA Jusepe de (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/08120003379.jpg",
+    "credit": "© Jeanneteau Marc",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/08120003379",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "05940000300",
@@ -126,7 +176,17 @@
    "musee": "musée Goya",
    "ville": "Castres",
    "code": "ecole_de",
-   "extrait": "RIBERA Jusepe de (école)"
+   "extrait": "RIBERA Jusepe de (école)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/05940000300.jpg",
+    "credit": "© Castres ; musée Goya, photographe : Pascal Bru",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/05940000300",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "05940000296",
@@ -155,7 +215,17 @@
    "musee": "musée Thomas-Henry",
    "ville": "Cherbourg-en-Cotentin",
    "code": "entourage_de",
-   "extrait": "RIBERA Jusepe de (entourage de)"
+   "extrait": "RIBERA Jusepe de (entourage de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06770002729.jpg",
+    "credit": "Daniel Sohier - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06770002729",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06770002726",
@@ -164,7 +234,17 @@
    "musee": "musée Thomas-Henry",
    "ville": "Cherbourg-en-Cotentin",
    "code": "entourage_de",
-   "extrait": "RIBERA Jusepe de (entourage de)"
+   "extrait": "RIBERA Jusepe de (entourage de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06770002726.jpg",
+    "credit": "Daniel Sohier - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06770002726",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0332001175",
@@ -240,7 +320,17 @@
    "musee": "musée de Tessé",
    "ville": "Le Mans",
    "code": "entourage_de",
-   "extrait": "RIBERA José De (entourage de)"
+   "extrait": "RIBERA José De (entourage de)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/07700010824.jpg",
+    "credit": "",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/07700010824",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "04450000800",
@@ -249,7 +339,17 @@
    "musee": "Palais-musée des Archevêques de Narbonne",
    "ville": "Narbonne",
    "code": "attribue",
-   "extrait": "RIBERA Jusepe de (ancienne attribution, attribué)"
+   "extrait": "RIBERA Jusepe de (ancienne attribution, attribué)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/04450000800.jpg",
+    "credit": "© Photographer:Fouinoflex",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/04450000800",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0381002079",
@@ -258,7 +358,17 @@
    "musee": "château musée de Nemours",
    "ville": "Nemours",
    "code": "attribue",
-   "extrait": "RIBERA de José (attr. à) (peintre)"
+   "extrait": "RIBERA de José (attr. à) (peintre)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0381002079.jpg",
+    "credit": "© François Lauginie",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0381002079",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0536000515",
@@ -267,7 +377,17 @@
    "musee": "musée départemental d'art ancien et contemporain",
    "ville": "Epinal",
    "code": "entourage_de",
-   "extrait": "Ribera Jusepe de (1591-1652) (entourage de)"
+   "extrait": "Ribera Jusepe de (1591-1652) (entourage de)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0536000515.jpg",
+    "credit": "© Claude Philippot",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0536000515",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   }
  ],
  "version_donnee": "2026-07-01",

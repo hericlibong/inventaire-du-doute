@@ -20,7 +20,17 @@
    "musee": "musée d'Orsay",
    "ville": "Paris",
    "code": "point_interrogation",
-   "extrait": "HUGO Charles (?)"
+   "extrait": "HUGO Charles (?)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M5060000255.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation ; © Patrice Schmid",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M5060000255",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M5060000249",
@@ -29,7 +39,17 @@
    "musee": "musée d'Orsay",
    "ville": "Paris",
    "code": "point_interrogation",
-   "extrait": "HUGO Charles (?)"
+   "extrait": "HUGO Charles (?)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M5060000249.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation ; © Patrice Schmid",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M5060000249",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M5060000254",
@@ -38,7 +58,17 @@
    "musee": "musée d'Orsay",
    "ville": "Paris",
    "code": "point_interrogation",
-   "extrait": "HUGO Charles (?)"
+   "extrait": "HUGO Charles (?)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M5060000254.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation ; © Patrice Schmid",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M5060000254",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M5060000257",
@@ -47,7 +77,17 @@
    "musee": "musée d'Orsay",
    "ville": "Paris",
    "code": "point_interrogation",
-   "extrait": "HUGO Charles (?)"
+   "extrait": "HUGO Charles (?)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M5060000257.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation ; © Patrice Schmid",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M5060000257",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M5060000262",
@@ -56,7 +96,17 @@
    "musee": "musée d'Orsay",
    "ville": "Paris",
    "code": "point_interrogation",
-   "extrait": "HUGO Charles (?)"
+   "extrait": "HUGO Charles (?)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M5060000262.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation ; © Patrice Schmid",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M5060000262",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M5060000128",
@@ -65,7 +115,17 @@
    "musee": "musée d'Orsay",
    "ville": "Paris",
    "code": "point_interrogation",
-   "extrait": "HUGO Charles (?)"
+   "extrait": "HUGO Charles (?)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M5060000128.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation ; © Patrice Schmid",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M5060000128",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M5060000264",
@@ -74,7 +134,17 @@
    "musee": "musée d'Orsay",
    "ville": "Paris",
    "code": "point_interrogation",
-   "extrait": "HUGO Charles (?)"
+   "extrait": "HUGO Charles (?)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M5060000264.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation ; © Patrice Schmid",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M5060000264",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M5060000126",
@@ -83,7 +153,17 @@
    "musee": "musée d'Orsay",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "HUGO Charles (attribué à)"
+   "extrait": "HUGO Charles (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M5060000126.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation ; © Patrice Schmid",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M5060000126",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M5060000256",
@@ -92,7 +172,17 @@
    "musee": "musée d'Orsay",
    "ville": "Paris",
    "code": "point_interrogation",
-   "extrait": "HUGO Charles (?)"
+   "extrait": "HUGO Charles (?)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M5060000256.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation ; © Patrice Schmid",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M5060000256",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M5060000265",
@@ -101,7 +191,17 @@
    "musee": "musée d'Orsay",
    "ville": "Paris",
    "code": "point_interrogation",
-   "extrait": "HUGO Charles (?)"
+   "extrait": "HUGO Charles (?)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M5060000265.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation ; © Patrice Schmid",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M5060000265",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M5060000263",
@@ -110,7 +210,17 @@
    "musee": "musée d'Orsay",
    "ville": "Paris",
    "code": "point_interrogation",
-   "extrait": "HUGO Charles (?)"
+   "extrait": "HUGO Charles (?)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M5060000263.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation ; © Patrice Schmid",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M5060000263",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M5060000250",
@@ -119,7 +229,17 @@
    "musee": "musée d'Orsay",
    "ville": "Paris",
    "code": "point_interrogation",
-   "extrait": "HUGO Charles (?)"
+   "extrait": "HUGO Charles (?)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M5060000250.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation ; © Patrice Schmid",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M5060000250",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M5060000259",
@@ -128,7 +248,17 @@
    "musee": "musée d'Orsay",
    "ville": "Paris",
    "code": "point_interrogation",
-   "extrait": "HUGO Charles (?)"
+   "extrait": "HUGO Charles (?)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M5060000259.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation ; © Patrice Schmid",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M5060000259",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M5060000136",
@@ -137,7 +267,17 @@
    "musee": "musée d'Orsay",
    "ville": "Paris",
    "code": "point_interrogation",
-   "extrait": "HUGO Charles (?)"
+   "extrait": "HUGO Charles (?)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M5060000136.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation ; © Patrice Schmid",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M5060000136",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M5060000253",
@@ -146,7 +286,17 @@
    "musee": "musée d'Orsay",
    "ville": "Paris",
    "code": "point_interrogation",
-   "extrait": "HUGO Charles (?)"
+   "extrait": "HUGO Charles (?)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M5060000253.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation ; © Patrice Schmid",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M5060000253",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M5060000251",
@@ -155,7 +305,17 @@
    "musee": "musée d'Orsay",
    "ville": "Paris",
    "code": "point_interrogation",
-   "extrait": "HUGO Charles (?)"
+   "extrait": "HUGO Charles (?)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M5060000251.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation ; © Patrice Schmid",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M5060000251",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M5060000133",
@@ -164,7 +324,17 @@
    "musee": "musée d'Orsay",
    "ville": "Paris",
    "code": "point_interrogation",
-   "extrait": "HUGO Charles (?)"
+   "extrait": "HUGO Charles (?)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M5060000133.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation ; © Patrice Schmid",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M5060000133",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M5060000127",
@@ -173,7 +343,17 @@
    "musee": "musée d'Orsay",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "HUGO Charles (attribué à)"
+   "extrait": "HUGO Charles (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M5060000127.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation ; © Patrice Schmid",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M5060000127",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M5060000137",
@@ -182,7 +362,17 @@
    "musee": "musée d'Orsay",
    "ville": "Paris",
    "code": "point_interrogation",
-   "extrait": "HUGO Charles (?)"
+   "extrait": "HUGO Charles (?)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M5060000137.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation ; © Patrice Schmid",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M5060000137",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M5060000261",
@@ -191,7 +381,17 @@
    "musee": "musée d'Orsay",
    "ville": "Paris",
    "code": "point_interrogation",
-   "extrait": "HUGO Charles (?)"
+   "extrait": "HUGO Charles (?)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M5060000261.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation ; © Patrice Schmid",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M5060000261",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M5060000248",
@@ -200,7 +400,17 @@
    "musee": "musée d'Orsay",
    "ville": "Paris",
    "code": "point_interrogation",
-   "extrait": "HUGO Charles (?)"
+   "extrait": "HUGO Charles (?)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M5060000248.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation ; © Patrice Schmid",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M5060000248",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M5060000125",
@@ -209,7 +419,17 @@
    "musee": "musée d'Orsay",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "HUGO Charles (attribué à)"
+   "extrait": "HUGO Charles (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M5060000125.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation ; © Patrice Schmid",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M5060000125",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M5060000130",
@@ -218,7 +438,17 @@
    "musee": "musée d'Orsay",
    "ville": "Paris",
    "code": "point_interrogation",
-   "extrait": "HUGO Charles (?)"
+   "extrait": "HUGO Charles (?)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M5060000130.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation ; © Patrice Schmid",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M5060000130",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M5060000124",
@@ -227,7 +457,17 @@
    "musee": "musée d'Orsay",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "HUGO Charles (attribué à)"
+   "extrait": "HUGO Charles (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M5060000124.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation ; © Patrice Schmid",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M5060000124",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M5060000131",
@@ -236,7 +476,17 @@
    "musee": "musée d'Orsay",
    "ville": "Paris",
    "code": "point_interrogation",
-   "extrait": "HUGO Charles (?)"
+   "extrait": "HUGO Charles (?)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M5060000131.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation ; © Patrice Schmid",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M5060000131",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M5060000129",
@@ -245,7 +495,17 @@
    "musee": "musée d'Orsay",
    "ville": "Paris",
    "code": "point_interrogation",
-   "extrait": "HUGO Charles (?)"
+   "extrait": "HUGO Charles (?)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M5060000129.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation ; © Patrice Schmid",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M5060000129",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M5060000266",
@@ -254,7 +514,17 @@
    "musee": "musée d'Orsay",
    "ville": "Paris",
    "code": "point_interrogation",
-   "extrait": "HUGO Charles (?)"
+   "extrait": "HUGO Charles (?)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M5060000266.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation ; © Patrice Schmid",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M5060000266",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M5060000258",
@@ -263,7 +533,17 @@
    "musee": "musée d'Orsay",
    "ville": "Paris",
    "code": "point_interrogation",
-   "extrait": "HUGO Charles (?)"
+   "extrait": "HUGO Charles (?)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M5060000258.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation ; © Patrice Schmid",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M5060000258",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M5060000135",
@@ -272,7 +552,17 @@
    "musee": "musée d'Orsay",
    "ville": "Paris",
    "code": "point_interrogation",
-   "extrait": "HUGO Charles (?)"
+   "extrait": "HUGO Charles (?)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M5060000135.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation ; © Patrice Schmid",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M5060000135",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M5060000260",
@@ -281,7 +571,17 @@
    "musee": "musée d'Orsay",
    "ville": "Paris",
    "code": "point_interrogation",
-   "extrait": "HUGO Charles (?)"
+   "extrait": "HUGO Charles (?)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M5060000260.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation ; © Patrice Schmid",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M5060000260",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M5060000267",
@@ -290,7 +590,17 @@
    "musee": "musée d'Orsay",
    "ville": "Paris",
    "code": "point_interrogation",
-   "extrait": "HUGO Charles (?)"
+   "extrait": "HUGO Charles (?)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M5060000267.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation ; © Patrice Schmid",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M5060000267",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M5060000134",
@@ -299,7 +609,17 @@
    "musee": "musée d'Orsay",
    "ville": "Paris",
    "code": "point_interrogation",
-   "extrait": "HUGO Charles (?)"
+   "extrait": "HUGO Charles (?)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M5060000134.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation ; © Patrice Schmid",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M5060000134",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M5060000252",
@@ -308,7 +628,17 @@
    "musee": "musée d'Orsay",
    "ville": "Paris",
    "code": "point_interrogation",
-   "extrait": "HUGO Charles (?)"
+   "extrait": "HUGO Charles (?)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M5060000252.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation ; © Patrice Schmid",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M5060000252",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M5060000132",
@@ -317,7 +647,17 @@
    "musee": "musée d'Orsay",
    "ville": "Paris",
    "code": "point_interrogation",
-   "extrait": "HUGO Charles (?)"
+   "extrait": "HUGO Charles (?)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M5060000132.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation ; © Patrice Schmid",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M5060000132",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   }
  ],
  "version_donnee": "2026-07-01",

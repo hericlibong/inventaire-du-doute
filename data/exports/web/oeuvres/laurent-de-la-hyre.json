@@ -33,7 +33,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Rouen",
    "code": "atelier_de",
-   "extrait": "LA HYRE Laurent de (atelier)"
+   "extrait": "LA HYRE Laurent de (atelier)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE029833.jpg",
+    "credit": "© Carole Loisel ; © Catherine Lancien",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE029833",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00000056500",
@@ -42,7 +52,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Rouen",
    "code": "ecole_de",
-   "extrait": "LA HYRE Laurent de (école)"
+   "extrait": "LA HYRE Laurent de (école)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/00000056500.jpg",
+    "credit": "© Carole Loisel ; © Catherine Lancien",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/00000056500",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00000093350",
@@ -80,7 +100,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "LA HYRE Laurent de (attribué à)"
+   "extrait": "LA HYRE Laurent de (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350213339.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350213339",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350213340",
@@ -89,7 +119,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "LA HYRE Laurent de (attribué à)"
+   "extrait": "LA HYRE Laurent de (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350213340.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350213340",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350110006",
@@ -98,7 +138,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "LA HYRE Laurent de (école)"
+   "extrait": "LA HYRE Laurent de (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350110006.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350110006",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350213341",
@@ -107,7 +157,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "LA HYRE Laurent de (attribué à)"
+   "extrait": "LA HYRE Laurent de (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350213341.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350213341",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350013309",

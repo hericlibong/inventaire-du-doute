@@ -72,7 +72,17 @@
    "musee": "musée des Beaux-Arts",
    "ville": "Lille",
    "code": "attribue",
-   "extrait": "ROSA Salvatore (attribué)"
+   "extrait": "ROSA Salvatore (attribué)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE019554.jpg",
+    "credit": "Photo © RMN-Grand Palais Hervé Lewandowski",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE019554",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE022211",
@@ -90,7 +100,17 @@
    "musee": "musée national Magnin",
    "ville": "Dijon",
    "code": "ecole_de",
-   "extrait": "ROSA Salvatore (école)"
+   "extrait": "ROSA Salvatore (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/00000069088.jpg",
+    "credit": "© Thierry Le Mage ; © Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/00000069088",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070000244",
@@ -99,7 +119,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "ROSA Salvator (attribué)"
+   "extrait": "ROSA Salvator (attribué)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070000244.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070000244",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "07430004698",
@@ -108,7 +138,17 @@
    "musee": "musée des Beaux-Arts",
    "ville": "Nantes",
    "code": "attribue",
-   "extrait": "ROSA Salvatore (attribué à)"
+   "extrait": "ROSA Salvatore (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/07430004698.jpg",
+    "credit": "C. CLOS",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/07430004698",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "07430007265",
@@ -117,7 +157,17 @@
    "musee": "musée des Beaux-Arts",
    "ville": "Nantes",
    "code": "suiveur_de",
-   "extrait": "ROSA Salvatore (suiveur)"
+   "extrait": "ROSA Salvatore (suiveur)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/07430007265.jpg",
+    "credit": "Alain Guillard",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/07430007265",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "07430005048",
@@ -126,7 +176,17 @@
    "musee": "musée des Beaux-Arts",
    "ville": "Nantes",
    "code": "genre_de",
-   "extrait": "ROSA Salvatore (genre de)"
+   "extrait": "ROSA Salvatore (genre de)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/07430005048.jpg",
+    "credit": "C. CLOS",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/07430005048",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "07430005144",
@@ -135,7 +195,17 @@
    "musee": "musée des Beaux-Arts",
    "ville": "Nantes",
    "code": "suiveur_de",
-   "extrait": "ROSA Salvatore (suiveur)"
+   "extrait": "ROSA Salvatore (suiveur)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/07430005144.jpg",
+    "credit": "Alain Guillard",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/07430005144",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "07430005474",
@@ -144,7 +214,17 @@
    "musee": "musée des Beaux-Arts",
    "ville": "Nantes",
    "code": "genre_de",
-   "extrait": "ROSA Salvatore (genre de)"
+   "extrait": "ROSA Salvatore (genre de)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/07430005474.jpg",
+    "credit": "Alain Guillard",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/07430005474",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350102565",
@@ -153,7 +233,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "ROSA Salvator (école)"
+   "extrait": "ROSA Salvator (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350102565.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350102565",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350102553",
@@ -162,7 +252,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "ROSA Salvator (école)"
+   "extrait": "ROSA Salvator (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350102553.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350102553",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350102555",
@@ -171,7 +271,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "ROSA Salvator (école)"
+   "extrait": "ROSA Salvator (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350102555.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350102555",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350102556",
@@ -180,7 +290,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "ROSA Salvator (école)"
+   "extrait": "ROSA Salvator (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350102556.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350102556",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350102554",
@@ -189,7 +309,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "ROSA Salvator (école)"
+   "extrait": "ROSA Salvator (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350102554.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350102554",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350102558",
@@ -198,7 +328,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "ROSA Salvator (école)"
+   "extrait": "ROSA Salvator (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350102558.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350102558",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350102559",
@@ -207,7 +347,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "ROSA Salvator (école)"
+   "extrait": "ROSA Salvator (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350102559.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350102559",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350102560",
@@ -216,7 +366,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "ROSA Salvator (école)"
+   "extrait": "ROSA Salvator (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350102560.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350102560",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350102557",
@@ -225,7 +385,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "ROSA Salvator (école)"
+   "extrait": "ROSA Salvator (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350102557.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350102557",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350102564",
@@ -234,7 +404,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "ROSA Salvator (école)"
+   "extrait": "ROSA Salvator (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350102564.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350102564",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350104268",
@@ -243,7 +423,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "ROSA Salvator (école)"
+   "extrait": "ROSA Salvator (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350104268.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350104268",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107920",
@@ -252,7 +442,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "ROSA Salvator (école)"
+   "extrait": "ROSA Salvator (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107920.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107920",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350104132",
@@ -261,7 +461,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "ROSA Salvator (école)"
+   "extrait": "ROSA Salvator (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350104132.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350104132",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350102561",
@@ -270,7 +480,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "ROSA Salvator (école)"
+   "extrait": "ROSA Salvator (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350102561.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350102561",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350104267",
@@ -279,7 +499,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "ROSA Salvator (école)"
+   "extrait": "ROSA Salvator (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350104267.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350104267",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070000245",
@@ -297,7 +527,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "ROSA Salvator (école)"
+   "extrait": "ROSA Salvator (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350006887.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350006887",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350006885",
@@ -306,7 +546,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "ROSA Salvator (école)"
+   "extrait": "ROSA Salvator (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350006885.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350006885",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350006882",
@@ -315,7 +565,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "ROSA Salvator (école)"
+   "extrait": "ROSA Salvator (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350006882.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350006882",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350031884",
@@ -324,7 +584,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "ROSA Salvator (attribué à)"
+   "extrait": "ROSA Salvator (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350031884.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350031884",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "01500000132",
@@ -333,7 +603,17 @@
    "musee": "musée d'Art et d'Histoire Romain Rolland",
    "ville": "Clamecy",
    "code": "ecole_de",
-   "extrait": "ROSA Salvator (école)"
+   "extrait": "ROSA Salvator (école)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/01500000132.jpg",
+    "credit": "© Emmanuel Berry, Clamecy, Musée d'Art et d'Histoire Romain Rolland",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/01500000132",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00980001731",
@@ -342,7 +622,17 @@
    "musee": "musée des Beaux-Arts",
    "ville": "Pau",
    "code": "attribue",
-   "extrait": "ROSA Salvatore (attribué à)"
+   "extrait": "ROSA Salvatore (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/00980001731.jpg",
+    "credit": "© SEGURA",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/00980001731",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06190001372",
@@ -369,7 +659,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
-   "extrait": "ROSA Salvator (attribué à)"
+   "extrait": "ROSA Salvator (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0332012963.jpg",
+    "credit": "© musées de Besançon ; GUENAT Pierre",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0332012963",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0332003871",
@@ -378,7 +678,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
-   "extrait": "ROSA Salvator (attribué à)"
+   "extrait": "ROSA Salvator (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0332003871.jpg",
+    "credit": "© musées de Besançon ; GUENAT Pierre",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0332003871",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0332003875",
@@ -387,7 +697,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
-   "extrait": "ROSA Salvator (attribué à)"
+   "extrait": "ROSA Salvator (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0332003875.jpg",
+    "credit": "© musées de Besançon ; GUENAT Pierre",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0332003875",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0332003877",
@@ -396,7 +716,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
-   "extrait": "ROSA Salvator (attribué à)"
+   "extrait": "ROSA Salvator (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0332003877.jpg",
+    "credit": "© musées de Besançon ; GUENAT Pierre",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0332003877",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0332003869",
@@ -405,7 +735,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
-   "extrait": "ROSA Salvator (attribué à)"
+   "extrait": "ROSA Salvator (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0332003869.jpg",
+    "credit": "© musées de Besançon ; GUENAT Pierre",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0332003869",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "03290005065",
@@ -414,7 +754,17 @@
    "musee": "musée d’ethnographie corse",
    "ville": "Bastia",
    "code": "suiveur_de",
-   "extrait": "ROSA Salvator (suiveur)"
+   "extrait": "ROSA Salvator (suiveur)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/03290005065.jpg",
+    "credit": "© JAMBERT ; JA.Bertozzi-ADGAP",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/03290005065",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "03290006927",
@@ -423,7 +773,17 @@
    "musee": "musée d’ethnographie corse",
    "ville": "Bastia",
    "code": "suiveur_de",
-   "extrait": "ROSA Salvator (suiveur)"
+   "extrait": "ROSA Salvator (suiveur)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/03290006927.jpg",
+    "credit": "© JAMBERT ; Jean André Bertozzi / ADGAP",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/03290006927",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0332003873",
@@ -432,7 +792,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
-   "extrait": "ROSA Salvator (attribué à)"
+   "extrait": "ROSA Salvator (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0332003873.jpg",
+    "credit": "© musées de Besançon ; GUENAT Pierre",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0332003873",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "08940004449",
@@ -521,7 +891,17 @@
    "musee": "musée départemental d'art ancien et contemporain",
    "ville": "Epinal",
    "code": "maniere_de",
-   "extrait": "Rosa Salvator (1615-1673) (manière de)"
+   "extrait": "Rosa Salvator (1615-1673) (manière de)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0536000553.jpg",
+    "credit": "© Imatec Lionel AUDINET-Daniel CHAUBARD",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0536000553",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   }
  ],
  "version_donnee": "2026-07-01",

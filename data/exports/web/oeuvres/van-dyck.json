@@ -60,7 +60,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "point_interrogation",
-   "extrait": "DYCK Anton Van (?)"
+   "extrait": "DYCK Anton Van (?)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE008806.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE008806",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE008917",
@@ -69,7 +79,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "DYCK Anton Van (école)"
+   "extrait": "DYCK Anton Van (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE008917.jpg",
+    "credit": "Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE008917",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE008895",
@@ -150,7 +170,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Rennes",
    "code": "ecole_de",
-   "extrait": "DYCK Anton Van (école)"
+   "extrait": "DYCK Anton Van (école)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/00000075736.jpg",
+    "credit": "© C2RMF",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/00000075736",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00000075735",
@@ -159,7 +189,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Rennes",
    "code": "ecole_de",
-   "extrait": "DYCK Anton Van (école)"
+   "extrait": "DYCK Anton Van (école)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/00000075735.jpg",
+    "credit": "© Jean-Manuel Salingue",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/00000075735",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350106904",
@@ -168,7 +208,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "DYCK Antoon van (école)"
+   "extrait": "DYCK Antoon van (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350106904.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350106904",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350107016",
@@ -177,7 +227,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "DYCK Antoon van (école)"
+   "extrait": "DYCK Antoon van (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350107016.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350107016",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350110086",
@@ -186,7 +246,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "DYCK Antoon van (école)"
+   "extrait": "DYCK Antoon van (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350110086.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350110086",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350110479",
@@ -195,7 +265,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "DYCK Antoon van (école)"
+   "extrait": "DYCK Antoon van (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350110479.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350110479",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350110102",
@@ -204,7 +284,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "DYCK Antoon van (école)"
+   "extrait": "DYCK Antoon van (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350110102.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350110102",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350110106",
@@ -213,7 +303,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "DYCK Antoon van (école)"
+   "extrait": "DYCK Antoon van (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350110106.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350110106",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350500244",
@@ -222,7 +322,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "DYCK Antoon van (école)"
+   "extrait": "DYCK Antoon van (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350500244.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350500244",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350110074",
@@ -231,7 +341,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "DYCK Antoon van (attribué à)"
+   "extrait": "DYCK Antoon van (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350110074.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350110074",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350110103",
@@ -240,7 +360,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "DYCK Antoon van (école)"
+   "extrait": "DYCK Antoon van (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350110103.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350110103",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350110105",
@@ -249,7 +379,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "DYCK Antoon van (école)"
+   "extrait": "DYCK Antoon van (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350110105.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350110105",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350110075",
@@ -258,7 +398,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "DYCK Antoon van (attribué à)"
+   "extrait": "DYCK Antoon van (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350110075.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350110075",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350110104",
@@ -267,7 +417,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "DYCK Antoon van (école)"
+   "extrait": "DYCK Antoon van (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350110104.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350110104",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "07140001031",
@@ -316,7 +476,17 @@
    "musee": "musée des Augustins",
    "ville": "Toulouse",
    "code": "ecole_de",
-   "extrait": "DYCK Anton Van (école)"
+   "extrait": "DYCK Anton Van (école)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/05620001257.jpg",
+    "credit": "Daniel Martin",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/05620001257",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070000105",
@@ -334,7 +504,17 @@
    "musee": "musée national Magnin",
    "ville": "Dijon",
    "code": "genre_de",
-   "extrait": "DYCK Anton Van (peintre, genre de)"
+   "extrait": "DYCK Anton Van (peintre, genre de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50110001610.jpg",
+    "credit": "(C) RMN-Grand Palais (musée Magnin) / Stéphane Maréchalle ; utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50110001610",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00190022486",
@@ -343,7 +523,17 @@
    "musee": "musée des Beaux-Arts",
    "ville": "Strasbourg",
    "code": "suiveur_de",
-   "extrait": "DYCK Antoon van (suiveur)"
+   "extrait": "DYCK Antoon van (suiveur)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/00190022486.jpg",
+    "credit": "© Service photographique des Musées de Strasbourg, © BACHER",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/00190022486",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00190022485",
@@ -352,7 +542,17 @@
    "musee": "musée des Beaux-Arts",
    "ville": "Strasbourg",
    "code": "suiveur_de",
-   "extrait": "DYCK Antoon van (suiveur)"
+   "extrait": "DYCK Antoon van (suiveur)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/00190022485.jpg",
+    "credit": "© Service photographique des Musées de Strasbourg, © BACHER",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/00190022485",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00190022478",
@@ -381,7 +581,17 @@
    "musee": "musée Thomas-Henry",
    "ville": "Cherbourg-en-Cotentin",
    "code": "attribue",
-   "extrait": "Van Dyck Anton (1599-1641) (attribué à, peintre)"
+   "extrait": "Van Dyck Anton (1599-1641) (attribué à, peintre)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06770000214.jpg",
+    "credit": "© Daniel Sohier - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06770000214",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "07290021505",
@@ -390,7 +600,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Rouen",
    "code": "atelier_de",
-   "extrait": "DYCK Anton Van (atelier)"
+   "extrait": "DYCK Anton Van (atelier)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/07290021505.jpg",
+    "credit": "Carole Loisel ; Catherine Lancien",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/07290021505",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06190001780",
@@ -399,7 +619,17 @@
    "musee": "musée de la Chartreuse",
    "ville": "Douai",
    "code": "ecole_de",
-   "extrait": "DYCK Anton Van (école)"
+   "extrait": "DYCK Anton Van (école)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06190001780.jpg",
+    "credit": "musée de la Chartreuse à Douai",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06190001780",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06190006480",
@@ -417,7 +647,17 @@
    "musee": "musée Léon Dierx",
    "ville": "Saint-Denis de La Réunion",
    "code": "atelier_de",
-   "extrait": "Van Dyck Anton (1599-1641) (atelier)"
+   "extrait": "Van Dyck Anton (1599-1641) (atelier)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/10690003855.jpg",
+    "credit": "© Jean-Pierre Woaye-Hune",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/10690003855",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "03110042522",
@@ -426,7 +666,17 @@
    "musee": "musée des Beaux-Arts de Saint-Denis",
    "ville": "Reims",
    "code": "attribue",
-   "extrait": "VAN DYCK Anton (peintre, attribué à)"
+   "extrait": "VAN DYCK Anton (peintre, attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/03110042522.jpg",
+    "credit": "© Christian DEVLEESCHAUWER",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/03110042522",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "03030002149",
@@ -435,7 +685,17 @@
    "musee": "musée des beaux-arts et d’archéologie",
    "ville": "Troyes",
    "code": "atelier_de",
-   "extrait": "Van Dyck Anton (1599-1641) (atelier)"
+   "extrait": "Van Dyck Anton (1599-1641) (atelier)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/03030002149.jpg",
+    "credit": "© Troyes ; musée des beaux-arts et d'archéologie",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/03030002149",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06570017304",
@@ -444,7 +704,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Caen",
    "code": "attribue",
-   "extrait": "Van Dyck Antoon (1599-1641) (attribué à)"
+   "extrait": "Van Dyck Antoon (1599-1641) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06570017304.jpg",
+    "credit": "Musée des Beaux-Arts de Caen, cliché Patricia Touzard",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06570017304",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0457000769",
@@ -453,7 +723,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Nîmes",
    "code": "attribue",
-   "extrait": "Van Dyck Anton (1599-1641) (attribué à)"
+   "extrait": "Van Dyck Anton (1599-1641) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0457000769.jpg",
+    "credit": "Musée des Beaux-arts, Nîmes",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0457000769",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0332003039",
@@ -462,7 +742,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
-   "extrait": "Van Dyck Anton (1599-1641) (attribué à)"
+   "extrait": "Van Dyck Anton (1599-1641) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0332003039.jpg",
+    "credit": "© GUENAT Pierre",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0332003039",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0332003041",
@@ -471,7 +761,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
-   "extrait": "Van Dyck Anton (1599-1641) (attribué à)"
+   "extrait": "Van Dyck Anton (1599-1641) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0332003041.jpg",
+    "credit": "© GUENAT Pierre",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0332003041",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0332003657",
@@ -480,7 +780,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
-   "extrait": "Van Dyck Anton (1599-1641) (attribué à)"
+   "extrait": "Van Dyck Anton (1599-1641) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0332003657.jpg",
+    "credit": "© GUENAT Pierre",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0332003657",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06210000190",
@@ -489,7 +799,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Dunkerque",
    "code": "atelier_de",
-   "extrait": "Van Dyck Anton (1599-1641) (atelier)"
+   "extrait": "Van Dyck Anton (1599-1641) (atelier)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06210000190.jpg",
+    "credit": "© Jacques QUECQ D'HENRIPRÊT. (Photographe) ; © Rodolphe VANDEZANDE",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06210000190",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   }
  ],
  "version_donnee": "2026-07-01",

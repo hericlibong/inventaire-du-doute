@@ -90,7 +90,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Dijon",
    "code": "attribue",
-   "extrait": "DUGHET Gaspard (attribué)"
+   "extrait": "DUGHET Gaspard (attribué)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/01370005322.jpg",
+    "credit": "© Dijon, musée des beaux-arts",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/01370005322",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070000098",
@@ -99,7 +109,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "DUGHET Gaspard (attribué)"
+   "extrait": "DUGHET Gaspard (attribué)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070000098.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070000098",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070000361",
@@ -108,7 +128,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "maniere_de",
-   "extrait": "DUGHET Gaspard (manière de)"
+   "extrait": "DUGHET Gaspard (manière de)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070000361.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070000361",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350100245",
@@ -117,7 +147,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "DUGHET Gaspard (attribué à)"
+   "extrait": "DUGHET Gaspard (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350100245.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350100245",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350100247",
@@ -126,7 +166,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "DUGHET Gaspard (attribué à)"
+   "extrait": "DUGHET Gaspard (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350100247.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350100247",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350100246",
@@ -135,7 +185,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "DUGHET Gaspard (attribué à)"
+   "extrait": "DUGHET Gaspard (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350100246.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350100246",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350100242",
@@ -144,7 +204,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "DUGHET Gaspard (attribué à)"
+   "extrait": "DUGHET Gaspard (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350100242.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350100242",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350100251",
@@ -153,7 +223,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "DUGHET Gaspard (école)"
+   "extrait": "DUGHET Gaspard (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350100251.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350100251",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350100243",
@@ -162,7 +242,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "DUGHET Gaspard (attribué à)"
+   "extrait": "DUGHET Gaspard (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350100243.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350100243",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350100250",
@@ -171,7 +261,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "DUGHET Gaspard (école)"
+   "extrait": "DUGHET Gaspard (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350100250.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350100250",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350013037",
@@ -180,7 +280,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "DUGHET Gaspard (école)"
+   "extrait": "DUGHET Gaspard (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350013037.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350013037",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350100249",
@@ -189,7 +299,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "DUGHET Gaspard (école)"
+   "extrait": "DUGHET Gaspard (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350100249.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350100249",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350100244",
@@ -198,7 +318,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "DUGHET Gaspard (attribué à)"
+   "extrait": "DUGHET Gaspard (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350100244.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350100244",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350100252",
@@ -207,7 +337,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "DUGHET Gaspard (école)"
+   "extrait": "DUGHET Gaspard (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350100252.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350100252",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350100248",
@@ -216,7 +356,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "DUGHET Gaspard (école)"
+   "extrait": "DUGHET Gaspard (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350100248.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350100248",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "07430005637",
@@ -225,7 +375,17 @@
    "musee": "musée des Beaux-Arts",
    "ville": "Nantes",
    "code": "genre_de",
-   "extrait": "DUGHET Gaspard (genre de)"
+   "extrait": "DUGHET Gaspard (genre de)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/07430005637.jpg",
+    "credit": "Alain Guillard",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/07430005637",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0350002026",
@@ -234,7 +394,17 @@
    "musee": "Viséum-musée de la lunette (collections du musée de la lunette et du musée Jourdain)",
    "ville": "Hauts de Bienne",
    "code": "entourage_de",
-   "extrait": "DUGHET Gaspard (dit) POUSSIN Gaspard (entourage de)"
+   "extrait": "DUGHET Gaspard (dit) POUSSIN Gaspard (entourage de)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0350002026.jpg",
+    "credit": "© musée de la Lunette",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0350002026",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070000099",
@@ -243,7 +413,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "maniere_de",
-   "extrait": "DUGHET Gaspard (manière de)"
+   "extrait": "DUGHET Gaspard (manière de)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070000099.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070000099",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070000100",
@@ -252,7 +432,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "maniere_de",
-   "extrait": "DUGHET Gaspard (manière de)"
+   "extrait": "DUGHET Gaspard (manière de)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070000100.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070000100",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0332004793",
@@ -261,7 +451,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "point_interrogation",
-   "extrait": "DUGHET Gaspard (?, dessinateur)"
+   "extrait": "DUGHET Gaspard (?, dessinateur)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0332004793.jpg",
+    "credit": "© musées de Besançon ; GUENAT Pierre",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0332004793",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0332003669",
@@ -270,7 +470,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
-   "extrait": "DUGHET Gaspard (attribué à) (dessinateur)"
+   "extrait": "DUGHET Gaspard (attribué à) (dessinateur)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0332003669.jpg",
+    "credit": "© musées de Besançon ; GUENAT Pierre",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0332003669",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "01840000027",
@@ -279,7 +489,17 @@
    "musee": "musée d'art et d'histoire Saint-Germain",
    "ville": "Auxerre",
    "code": "attribue",
-   "extrait": "DUGHET Gaspard (attribué)"
+   "extrait": "DUGHET Gaspard (attribué)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/01840000027.jpg",
+    "credit": "Berry Emmanuel, musées d'Auxerre",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/01840000027",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "01840000028",
@@ -288,7 +508,17 @@
    "musee": "musée d'art et d'histoire Saint-Germain",
    "ville": "Auxerre",
    "code": "attribue",
-   "extrait": "DUGHET Gaspard (attribué)"
+   "extrait": "DUGHET Gaspard (attribué)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/01840000028.jpg",
+    "credit": "Berry Emmanuel, musées d'Auxerre",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/01840000028",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "10310026673",
@@ -297,7 +527,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Lyon",
    "code": "genre_de",
-   "extrait": "Dughet Gaspard (1615-1675) (genre de, peintre)"
+   "extrait": "Dughet Gaspard (1615-1675) (genre de, peintre)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/10310026673.jpg",
+    "credit": "© Image © Lyon MBA – Photo Louis Houdus",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/10310026673",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0381001606",
@@ -306,7 +546,17 @@
    "musee": "château musée de Nemours",
    "ville": "Nemours",
    "code": "attribue",
-   "extrait": "DUGHET Gaspard (attribué à) (dessinateur)"
+   "extrait": "DUGHET Gaspard (attribué à) (dessinateur)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0381001606.jpg",
+    "credit": "© château musée de Nemours",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0381001606",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "08940004481",

@@ -20,7 +20,17 @@
    "musee": "musée du Moyen Age - thermes et hôtel de Cluny",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "COLYN DE COTER (entourage)"
+   "extrait": "COLYN DE COTER (entourage)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50030009049.jpg",
+    "credit": "Photo (C) RMN-Grand Palais (musée de Cluny - musée national du Moyen-Âge) / Jean-Gilles Berizzi",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50030009049",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50030005912",
@@ -29,7 +39,17 @@
    "musee": "musée du Moyen Age - thermes et hôtel de Cluny",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "COLYN DE COTER (entourage)"
+   "extrait": "COLYN DE COTER (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50030005912.jpg",
+    "credit": "© BLOT Gérard ; © BERIZZI J.G. ; © Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50030005912",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50030003307",
@@ -38,7 +58,17 @@
    "musee": "musée du Moyen Age - thermes et hôtel de Cluny",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "COLYN DE COTER (entourage)"
+   "extrait": "COLYN DE COTER (entourage)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50030003307.jpg",
+    "credit": "Photo (C) RMN-Grand Palais (musée de Cluny - musée national du Moyen-Âge) / Jean-Gilles Berizzi",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50030003307",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50030027493",
@@ -47,7 +77,17 @@
    "musee": "musée du Moyen Age - thermes et hôtel de Cluny",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "COLYN DE COTER (entourage)"
+   "extrait": "COLYN DE COTER (entourage)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50030027493.jpg",
+    "credit": "Photo (C) RMN-Grand Palais (musée de Cluny - musée national du Moyen-Âge) / Gérard Blot / Christian Jean",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50030027493",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50030021630",
@@ -56,7 +96,17 @@
    "musee": "musée du Moyen Age - thermes et hôtel de Cluny",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "COLYN DE COTER (entourage)"
+   "extrait": "COLYN DE COTER (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50030021630.jpg",
+    "credit": "© BERIZZI J.G. ; © Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50030021630",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50030021677",
@@ -65,7 +115,17 @@
    "musee": "musée du Moyen Age - thermes et hôtel de Cluny",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "COLYN DE COTER (entourage)"
+   "extrait": "COLYN DE COTER (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50030021677.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50030021677",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50030026699",
@@ -74,7 +134,17 @@
    "musee": "musée du Moyen Age - thermes et hôtel de Cluny",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "COLYN DE COTER (entourage)"
+   "extrait": "COLYN DE COTER (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50030026699.jpg",
+    "credit": "© BLOT Gérard ; © Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50030026699",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50030021678",
@@ -83,7 +153,17 @@
    "musee": "musée du Moyen Age - thermes et hôtel de Cluny",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "COLYN DE COTER (entourage)"
+   "extrait": "COLYN DE COTER (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50030021678.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50030021678",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50030021540",
@@ -92,7 +172,17 @@
    "musee": "musée du Moyen Age - thermes et hôtel de Cluny",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "COLYN DE COTER (entourage)"
+   "extrait": "COLYN DE COTER (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50030021540.jpg",
+    "credit": "© BERIZZI J.G. ; © Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50030021540",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50030021698",
@@ -101,7 +191,17 @@
    "musee": "musée du Moyen Age - thermes et hôtel de Cluny",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "COLYN DE COTER (entourage)"
+   "extrait": "COLYN DE COTER (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50030021698.jpg",
+    "credit": "© BLOT Gérard ; © MAERTENS, Hugo ; © BERIZZI J.G. ; © Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50030021698",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50030021531",
@@ -110,7 +210,17 @@
    "musee": "musée du Moyen Age - thermes et hôtel de Cluny",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "COLYN DE COTER (entourage)"
+   "extrait": "COLYN DE COTER (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50030021531.jpg",
+    "credit": "© BLOT Gérard ; © Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50030021531",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50030021679",
@@ -119,7 +229,17 @@
    "musee": "musée du Moyen Age - thermes et hôtel de Cluny",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "COLYN DE COTER (entourage)"
+   "extrait": "COLYN DE COTER (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50030021679.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50030021679",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50030021541",
@@ -128,7 +248,17 @@
    "musee": "musée du Moyen Age - thermes et hôtel de Cluny",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "COLYN DE COTER (entourage)"
+   "extrait": "COLYN DE COTER (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50030021541.jpg",
+    "credit": "© BERIZZI J.G. ; © Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50030021541",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50030021532",
@@ -137,7 +267,17 @@
    "musee": "musée du Moyen Age - thermes et hôtel de Cluny",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "COLYN DE COTER (entourage)"
+   "extrait": "COLYN DE COTER (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50030021532.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50030021532",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50030021626",
@@ -146,7 +286,17 @@
    "musee": "musée du Moyen Age - thermes et hôtel de Cluny",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "COLYN DE COTER (entourage)"
+   "extrait": "COLYN DE COTER (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50030021626.jpg",
+    "credit": "© BERIZZI J.G. ; © Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50030021626",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50030021672",
@@ -155,7 +305,17 @@
    "musee": "musée du Moyen Age - thermes et hôtel de Cluny",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "COLYN DE COTER (entourage)"
+   "extrait": "COLYN DE COTER (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50030021672.jpg",
+    "credit": "© BERIZZI J.G. ; © Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50030021672",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50030021629",
@@ -164,7 +324,17 @@
    "musee": "musée du Moyen Age - thermes et hôtel de Cluny",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "COLYN DE COTER (entourage)"
+   "extrait": "COLYN DE COTER (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50030021629.jpg",
+    "credit": "© BERIZZI J.G. ; © Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50030021629",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50030021625",
@@ -173,7 +343,17 @@
    "musee": "musée du Moyen Age - thermes et hôtel de Cluny",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "COLYN DE COTER (entourage)"
+   "extrait": "COLYN DE COTER (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50030021625.jpg",
+    "credit": "© BERIZZI J.G. ; © Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50030021625",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50030021628",
@@ -182,7 +362,17 @@
    "musee": "musée du Moyen Age - thermes et hôtel de Cluny",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "COLYN DE COTER (entourage)"
+   "extrait": "COLYN DE COTER (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50030021628.jpg",
+    "credit": "© BERIZZI J.G. ; © Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50030021628",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50030021627",
@@ -191,7 +381,17 @@
    "musee": "musée du Moyen Age - thermes et hôtel de Cluny",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "COLYN DE COTER (entourage)"
+   "extrait": "COLYN DE COTER (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50030021627.jpg",
+    "credit": "© BERIZZI J.G. ; © Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50030021627",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50030021674",
@@ -200,7 +400,17 @@
    "musee": "musée du Moyen Age - thermes et hôtel de Cluny",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "COLYN DE COTER (entourage)"
+   "extrait": "COLYN DE COTER (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50030021674.jpg",
+    "credit": "© BERIZZI J.G. ; © BLOT Gérard ; © Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50030021674",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50030026701",
@@ -209,7 +419,17 @@
    "musee": "musée du Moyen Age - thermes et hôtel de Cluny",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "COLYN DE COTER (entourage)"
+   "extrait": "COLYN DE COTER (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50030026701.jpg",
+    "credit": "© BLOT Gérard ; © Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50030026701",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50030021676",
@@ -218,7 +438,17 @@
    "musee": "musée du Moyen Age - thermes et hôtel de Cluny",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "COLYN DE COTER (entourage)"
+   "extrait": "COLYN DE COTER (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50030021676.jpg",
+    "credit": "© BERIZZI J.G. ; © BLOT Gérard ; © Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50030021676",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "50030021631",
@@ -227,7 +457,17 @@
    "musee": "musée du Moyen Age - thermes et hôtel de Cluny",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "COLYN DE COTER (entourage)"
+   "extrait": "COLYN DE COTER (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50030021631.jpg",
+    "credit": "© BERIZZI J.G. ; © Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50030021631",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "5003e009049",
@@ -236,7 +476,17 @@
    "musee": "musée du Moyen Age - thermes et hôtel de Cluny",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "COLYN DE COTER (entourage)"
+   "extrait": "COLYN DE COTER (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/5003e009049.jpg",
+    "credit": "© BLOT Gérard ; © BERIZZI J.G. ; © MAERTENS Hugo ; © Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/5003e009049",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "01610012058",
@@ -245,7 +495,17 @@
    "musee": "Le Panoptique d'Autun, musée Rolin",
    "ville": "Autun",
    "code": "attribue",
-   "extrait": "COTER Colijn de (peintre, attribué à)"
+   "extrait": "COTER Colijn de (peintre, attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/01610012058.jpg",
+    "credit": "B.M.C.",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/01610012058",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "01610012059",
@@ -254,7 +514,17 @@
    "musee": "Le Panoptique d'Autun, musée Rolin",
    "ville": "Autun",
    "code": "attribue",
-   "extrait": "COTER Colijn de (peintre, attribué à)"
+   "extrait": "COTER Colijn de (peintre, attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/01610012059.jpg",
+    "credit": "B.M.C.",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/01610012059",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   }
  ],
  "version_donnee": "2026-07-01",

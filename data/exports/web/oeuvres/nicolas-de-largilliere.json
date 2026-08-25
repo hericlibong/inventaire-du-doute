@@ -40,7 +40,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
-   "extrait": "LARGILLIERE Nicolas de (atelier)"
+   "extrait": "LARGILLIERE Nicolas de (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE001687.jpg",
+    "credit": "Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE001687",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE007962",
@@ -49,7 +59,17 @@
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "point_interrogation",
-   "extrait": "LARGILLIERE Nicolas de (?)"
+   "extrait": "LARGILLIERE Nicolas de (?)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE007962.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE007962",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE009756",
@@ -85,7 +105,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Marseille",
    "code": "attribue",
-   "extrait": "LARGILLIERE Nicolas de (attribué à)"
+   "extrait": "LARGILLIERE Nicolas de (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE013909.jpg",
+    "credit": "RMN-Grand Palais",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE013909",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE016248",
@@ -154,7 +184,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Rouen",
    "code": "attribue",
-   "extrait": "LARGILLIERE Nicolas de (attribué)"
+   "extrait": "LARGILLIERE Nicolas de (attribué)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/00000058402.jpg",
+    "credit": "© Carole Loisel ; © Catherine Lancien",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/00000058402",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0347001435",
@@ -163,7 +203,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Dole",
    "code": "genre_de",
-   "extrait": "LARGILLIERE Nicolas de (genre de)"
+   "extrait": "LARGILLIERE Nicolas de (genre de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0347001435.jpg",
+    "credit": "© Jean -Loup Mathieu (Eurêka) ; studio Chechillot ; Catherine Scheck - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0347001435",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "07430005647",
@@ -172,7 +222,17 @@
    "musee": "musée des Beaux-Arts",
    "ville": "Nantes",
    "code": "atelier_de",
-   "extrait": "LARGILLIERE Nicolas de (atelier)"
+   "extrait": "LARGILLIERE Nicolas de (atelier)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/07430005647.jpg",
+    "credit": "Alain Guillard",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/07430005647",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0525000544",
@@ -181,7 +241,17 @@
    "musee": "musée de la Princerie",
    "ville": "Verdun",
    "code": "attribue",
-   "extrait": "Largillière Nicolas de (1656-1746) (attribué à)"
+   "extrait": "Largillière Nicolas de (1656-1746) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0525000544.jpg",
+    "credit": "© Jean-Marie Perraux",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0525000544",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0525000559",
@@ -190,7 +260,17 @@
    "musee": "musée de la Princerie",
    "ville": "Verdun",
    "code": "attribue",
-   "extrait": "Largillière Nicolas de (1656-1746) (attribué à)"
+   "extrait": "Largillière Nicolas de (1656-1746) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0525000559.jpg",
+    "credit": "© Jean-Marie Perraux",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0525000559",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0811000051",
@@ -199,7 +279,17 @@
    "musee": "Le Beffroi - musée Boucher de Perthes - Manessier",
    "ville": "Abbeville",
    "code": "atelier_de",
-   "extrait": "LARGILLIERE Nicolas de (atelier)"
+   "extrait": "LARGILLIERE Nicolas de (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0811000051.jpg",
+    "credit": "Jean-Gilles Berizzi ; Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0811000051",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0811000050",
@@ -208,7 +298,17 @@
    "musee": "Le Beffroi - musée Boucher de Perthes - Manessier",
    "ville": "Abbeville",
    "code": "atelier_de",
-   "extrait": "LARGILLIERE Nicolas de (atelier)"
+   "extrait": "LARGILLIERE Nicolas de (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0811000050.jpg",
+    "credit": "Jean-Gilles Berizzi ; Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0811000050",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "01610009748",
@@ -217,7 +317,17 @@
    "musee": "musée Rolin",
    "ville": "Autun",
    "code": "maniere_de",
-   "extrait": "LARGILLIERE Nicolas de (manière de)"
+   "extrait": "LARGILLIERE Nicolas de (manière de)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/01610009748.jpg",
+    "credit": "© Claudine Massard",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/01610009748",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "01610009747",
@@ -226,7 +336,17 @@
    "musee": "musée Rolin",
    "ville": "Autun",
    "code": "maniere_de",
-   "extrait": "LARGILLIERE Nicolas de (manière de)"
+   "extrait": "LARGILLIERE Nicolas de (manière de)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/01610009747.jpg",
+    "credit": "© Claudine Massard",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/01610009747",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "07290020599",
@@ -235,7 +355,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Rouen",
    "code": "ecole_de",
-   "extrait": "LARGILLIERE Nicolas de (école)"
+   "extrait": "LARGILLIERE Nicolas de (école)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/07290020599.jpg",
+    "credit": "© Carole Loisel ; © Catherine Lancien",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/07290020599",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "05620001274",
@@ -264,7 +394,17 @@
    "musee": "musée départemental d'art ancien et contemporain",
    "ville": "Epinal",
    "code": "entourage_de",
-   "extrait": "Largillière Nicolas de (1656-1746) (entourage de)"
+   "extrait": "Largillière Nicolas de (1656-1746) (entourage de)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0536000447.jpg",
+    "credit": "© PHILIPPOT Claude",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0536000447",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0536000395",
@@ -273,7 +413,17 @@
    "musee": "musée départemental d'art ancien et contemporain",
    "ville": "Epinal",
    "code": "entourage_de",
-   "extrait": "Largillière Nicolas de (1656-1746) (entourage de)"
+   "extrait": "Largillière Nicolas de (1656-1746) (entourage de)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0536000395.jpg",
+    "credit": "© PHILIPPOT Claude",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0536000395",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "07150000274",
@@ -282,7 +432,17 @@
    "musee": "Les Pêcheries, musée de Fécamp",
    "ville": "Fécamp",
    "code": "attribue",
-   "extrait": "LARGILLIERE, DE Nicolas (attribué à)"
+   "extrait": "LARGILLIERE, DE Nicolas (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/07150000274.jpg",
+    "credit": "",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/07150000274",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   }
  ],
  "version_donnee": "2026-07-01",

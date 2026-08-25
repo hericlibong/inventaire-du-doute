@@ -92,7 +92,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
-   "extrait": "Champaigne Philippe de (1602-1674) (atelier)"
+   "extrait": "Champaigne Philippe de (1602-1674) (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE000380.jpg",
+    "credit": "Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE000380",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE000383",
@@ -101,7 +111,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "Champaigne Philippe de (1602-1674) (attribué à)"
+   "extrait": "Champaigne Philippe de (1602-1674) (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE000383.jpg",
+    "credit": "Mathieu Rabeau ; Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE000383",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE000379",
@@ -130,7 +150,17 @@
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "attribue",
-   "extrait": "Champaigne Philippe de (1602-1674) (attribué à)"
+   "extrait": "Champaigne Philippe de (1602-1674) (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE007087.jpg",
+    "credit": "Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE007087",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE007789",
@@ -228,7 +258,17 @@
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "atelier_de",
-   "extrait": "Champaigne Philippe de (1602-1674) (atelier)"
+   "extrait": "Champaigne Philippe de (1602-1674) (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE012171.jpg",
+    "credit": "D. Arnaudet ; G. Blot ; Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE012171",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE012115",
@@ -257,7 +297,17 @@
    "musee": "musée Louis Philippe",
    "ville": "Eu",
    "code": "ecole_de",
-   "extrait": "CHAMPAIGNE Philippe de (école)"
+   "extrait": "CHAMPAIGNE Philippe de (école)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/07140001370.jpg",
+    "credit": "© DUGUE François, © musée Louis Philippe d'Eu, 2002",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/07140001370",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070000079",
@@ -275,7 +325,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "CHAMPAIGNE Philippe de (attribué à)"
+   "extrait": "CHAMPAIGNE Philippe de (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350110011.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350110011",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350110005",
@@ -284,7 +344,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "CHAMPAIGNE Philippe de (école)"
+   "extrait": "CHAMPAIGNE Philippe de (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350110005.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350110005",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "07840001197",
@@ -293,7 +363,17 @@
    "musee": "musée Jean de la Fontaine",
    "ville": "Château-Thierry",
    "code": "attribue",
-   "extrait": "CHAMPAIGNE Philippe de (attribué à)"
+   "extrait": "CHAMPAIGNE Philippe de (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/07840001197.jpg",
+    "credit": "musée Jean de La Fontaine de Château-Thierry",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/07840001197",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0271000337",
@@ -302,7 +382,17 @@
    "musee": "château musées",
    "ville": "Blois",
    "code": "attribue",
-   "extrait": "CHAMPAIGNE Philippe de (attribué à)"
+   "extrait": "CHAMPAIGNE Philippe de (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0271000337.jpg",
+    "credit": "© Château de Blois / F. Lauginie, 2008",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0271000337",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06190001179",
@@ -320,7 +410,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
-   "extrait": "CHAMPAIGNE Philippe de (attribué à)"
+   "extrait": "CHAMPAIGNE Philippe de (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0332003814.jpg",
+    "credit": "© musées de Besançon ; GUENAT Pierre",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0332003814",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "03110000287",
@@ -329,7 +429,17 @@
    "musee": "musée des Beaux-Arts de Saint-Denis",
    "ville": "Reims",
    "code": "attribue",
-   "extrait": "CHAMPAIGNE Philippe De (peintre, attribué à)"
+   "extrait": "CHAMPAIGNE Philippe De (peintre, attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/03110000287.jpg",
+    "credit": "© Christian DEVLEESCHAUWER",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/03110000287",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "07140009137",
@@ -338,7 +448,17 @@
    "musee": "musée Louis Philippe",
    "ville": "Eu",
    "code": "entourage_de",
-   "extrait": "CHAMPAIGNE Philippe De (entourage)"
+   "extrait": "CHAMPAIGNE Philippe De (entourage)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/07140009137.jpg",
+    "credit": "",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/07140009137",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "07140009138",
@@ -347,7 +467,17 @@
    "musee": "musée Louis Philippe",
    "ville": "Eu",
    "code": "entourage_de",
-   "extrait": "CHAMPAIGNE Philippe De (entourage)"
+   "extrait": "CHAMPAIGNE Philippe De (entourage)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/07140009138.jpg",
+    "credit": "",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/07140009138",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0332006700",

@@ -156,7 +156,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "CARRACCI Annibale (atelier)"
+   "extrait": "CARRACCI Annibale (atelier)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/00000077353.jpg",
+    "credit": "© musée Condé",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/00000077353",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00000102970",
@@ -254,7 +264,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "CARRACCI Annibale (attribué à)"
+   "extrait": "CARRACCI Annibale (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004041.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004041",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004470",
@@ -263,7 +283,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "CARRACCI Annibale (entourage)"
+   "extrait": "CARRACCI Annibale (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004470.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004470",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004048",
@@ -272,7 +302,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "CARRACCI Annibale (entourage)"
+   "extrait": "CARRACCI Annibale (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004048.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004048",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350000220",
@@ -281,7 +321,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "CARRACCI Annibale (entourage)"
+   "extrait": "CARRACCI Annibale (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350000220.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350000220",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004435",
@@ -290,7 +340,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "CARRACCI Annibale (entourage)"
+   "extrait": "CARRACCI Annibale (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004435.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004435",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004052",
@@ -299,7 +359,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "CARRACCI Annibale (entourage)"
+   "extrait": "CARRACCI Annibale (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004052.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004052",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004461",
@@ -308,7 +378,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "CARRACCI Annibale (entourage)"
+   "extrait": "CARRACCI Annibale (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004461.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004461",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004463",
@@ -317,7 +397,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "CARRACCI Annibale (entourage)"
+   "extrait": "CARRACCI Annibale (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004463.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004463",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004043",
@@ -326,7 +416,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "CARRACCI Annibale (entourage)"
+   "extrait": "CARRACCI Annibale (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004043.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004043",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004050",
@@ -335,7 +435,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "CARRACCI Annibale (entourage)"
+   "extrait": "CARRACCI Annibale (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004050.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004050",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004057",
@@ -344,7 +454,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "CARRACCI Annibale (entourage)"
+   "extrait": "CARRACCI Annibale (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004057.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004057",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004443",
@@ -353,7 +473,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "CARRACCI Annibale (entourage)"
+   "extrait": "CARRACCI Annibale (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004443.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004443",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004096",
@@ -362,7 +492,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "CARRACCI Annibale (entourage)"
+   "extrait": "CARRACCI Annibale (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004096.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004096",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004064",
@@ -371,7 +511,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "CARRACCI Annibale (entourage)"
+   "extrait": "CARRACCI Annibale (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004064.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004064",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350102639",
@@ -380,7 +530,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "CARRACCI Annibale (attribué à)"
+   "extrait": "CARRACCI Annibale (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350102639.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350102639",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350103034",
@@ -389,7 +549,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "CARRACCI Annibale (attribué à)"
+   "extrait": "CARRACCI Annibale (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350103034.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350103034",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004430",
@@ -398,7 +568,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "CARRACCI Annibale (entourage)"
+   "extrait": "CARRACCI Annibale (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004430.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004430",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004468",
@@ -407,7 +587,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "CARRACCI Annibale (entourage)"
+   "extrait": "CARRACCI Annibale (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004468.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004468",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004465",
@@ -416,7 +606,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "CARRACCI Annibale (entourage)"
+   "extrait": "CARRACCI Annibale (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004465.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004465",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004446",
@@ -425,7 +625,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "CARRACCI Annibale (entourage)"
+   "extrait": "CARRACCI Annibale (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004446.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004446",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004040",
@@ -434,7 +644,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "CARRACCI Annibale (entourage)"
+   "extrait": "CARRACCI Annibale (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004040.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004040",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004458",
@@ -443,7 +663,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "CARRACCI Annibale (entourage)"
+   "extrait": "CARRACCI Annibale (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004458.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004458",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004453",
@@ -452,7 +682,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "CARRACCI Annibale (attribué à)"
+   "extrait": "CARRACCI Annibale (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004453.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004453",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350000221",
@@ -461,7 +701,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "CARRACCI Annibale (entourage)"
+   "extrait": "CARRACCI Annibale (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350000221.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350000221",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004054",
@@ -470,7 +720,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "CARRACCI Annibale (entourage)"
+   "extrait": "CARRACCI Annibale (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004054.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004054",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004429",
@@ -479,7 +739,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "CARRACCI Annibale (attribué à)"
+   "extrait": "CARRACCI Annibale (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004429.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004429",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004456",
@@ -488,7 +758,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "CARRACCI Annibale (entourage)"
+   "extrait": "CARRACCI Annibale (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004456.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004456",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004039",
@@ -497,7 +777,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "CARRACCI Annibale (attribué à)"
+   "extrait": "CARRACCI Annibale (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004039.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004039",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004432",
@@ -506,7 +796,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "CARRACCI Annibale (entourage)"
+   "extrait": "CARRACCI Annibale (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004432.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004432",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004042",
@@ -515,7 +815,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "CARRACCI Annibale (entourage)"
+   "extrait": "CARRACCI Annibale (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004042.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004042",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004460",
@@ -524,7 +834,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "CARRACCI Annibale (entourage)"
+   "extrait": "CARRACCI Annibale (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004460.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004460",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004474",
@@ -533,7 +853,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "CARRACCI Annibale (entourage)"
+   "extrait": "CARRACCI Annibale (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004474.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004474",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004047",
@@ -542,7 +872,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "CARRACCI Annibale (entourage)"
+   "extrait": "CARRACCI Annibale (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004047.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004047",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004462",
@@ -551,7 +891,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "CARRACCI Annibale (entourage)"
+   "extrait": "CARRACCI Annibale (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004462.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004462",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004469",
@@ -560,7 +910,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "CARRACCI Annibale (entourage)"
+   "extrait": "CARRACCI Annibale (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004469.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004469",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004454",
@@ -569,7 +929,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "CARRACCI Annibale (entourage)"
+   "extrait": "CARRACCI Annibale (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004454.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004454",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350104874",
@@ -578,7 +948,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "CARRACCI Annibale (entourage)"
+   "extrait": "CARRACCI Annibale (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350104874.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350104874",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004428",
@@ -587,7 +967,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "CARRACCI Annibale (entourage)"
+   "extrait": "CARRACCI Annibale (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004428.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004428",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004055",
@@ -596,7 +986,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "CARRACCI Annibale (entourage)"
+   "extrait": "CARRACCI Annibale (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004055.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004055",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004455",
@@ -605,7 +1005,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "CARRACCI Annibale (entourage)"
+   "extrait": "CARRACCI Annibale (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004455.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004455",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004066",
@@ -614,7 +1024,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "CARRACCI Annibale (entourage)"
+   "extrait": "CARRACCI Annibale (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004066.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004066",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004431",
@@ -623,7 +1043,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "CARRACCI Annibale (entourage)"
+   "extrait": "CARRACCI Annibale (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004431.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004431",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004467",
@@ -632,7 +1062,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "CARRACCI Annibale (entourage)"
+   "extrait": "CARRACCI Annibale (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004467.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004467",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004445",
@@ -641,7 +1081,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "CARRACCI Annibale (entourage)"
+   "extrait": "CARRACCI Annibale (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004445.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004445",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004434",
@@ -650,7 +1100,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "CARRACCI Annibale (entourage)"
+   "extrait": "CARRACCI Annibale (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004434.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004434",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004051",
@@ -659,7 +1119,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "CARRACCI Annibale (entourage)"
+   "extrait": "CARRACCI Annibale (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004051.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004051",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004464",
@@ -668,7 +1138,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "CARRACCI Annibale (attribué à)"
+   "extrait": "CARRACCI Annibale (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004464.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004464",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004466",
@@ -677,7 +1157,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "CARRACCI Annibale (entourage)"
+   "extrait": "CARRACCI Annibale (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004466.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004466",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004433",
@@ -686,7 +1176,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "CARRACCI Annibale (entourage)"
+   "extrait": "CARRACCI Annibale (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004433.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004433",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004058",
@@ -695,7 +1195,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "CARRACCI Annibale (entourage)"
+   "extrait": "CARRACCI Annibale (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004058.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004058",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004053",
@@ -704,7 +1214,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "CARRACCI Annibale (entourage)"
+   "extrait": "CARRACCI Annibale (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004053.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004053",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004437",
@@ -713,7 +1233,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "CARRACCI Annibale (entourage)"
+   "extrait": "CARRACCI Annibale (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004437.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004437",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350500944",
@@ -749,7 +1279,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "CARRACCI Annibale (entourage)"
+   "extrait": "CARRACCI Annibale (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004452.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004452",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004451",
@@ -758,7 +1298,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "CARRACCI Annibale (entourage)"
+   "extrait": "CARRACCI Annibale (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004451.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004451",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004439",
@@ -767,7 +1317,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "CARRACCI Annibale (entourage)"
+   "extrait": "CARRACCI Annibale (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004439.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004439",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004438",
@@ -776,7 +1336,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "CARRACCI Annibale (entourage)"
+   "extrait": "CARRACCI Annibale (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004438.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004438",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004440",
@@ -785,7 +1355,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "CARRACCI Annibale (entourage)"
+   "extrait": "CARRACCI Annibale (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004440.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004440",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "07430005039",
@@ -814,7 +1394,17 @@
    "musee": "musée des Augustins",
    "ville": "Toulouse",
    "code": "attribue",
-   "extrait": "CARRACCI Annibale (attribué, école)"
+   "extrait": "CARRACCI Annibale (attribué, école)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/05620001443.jpg",
+    "credit": "Bernard Delorme",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/05620001443",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50110000194",
@@ -823,7 +1413,17 @@
    "musee": "musée national Magnin",
    "ville": "Dijon",
    "code": "genre_de",
-   "extrait": "CARRACCI Annibale (genre de)"
+   "extrait": "CARRACCI Annibale (genre de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50110000194.jpg",
+    "credit": "© René-Gabriel Ojéda ; © Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50110000194",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350004442",
@@ -832,7 +1432,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "CARRACCI Annibale (entourage)"
+   "extrait": "CARRACCI Annibale (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350004442.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350004442",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0332005161",
@@ -841,7 +1451,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
-   "extrait": "CARRACCI Annibale (attribué à) (dessinateur)"
+   "extrait": "CARRACCI Annibale (attribué à) (dessinateur)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0332005161.jpg",
+    "credit": "© GUENAT Pierre - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0332005161",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0332005162",
@@ -850,7 +1470,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
-   "extrait": "CARRACCI Annibale (attribué à)"
+   "extrait": "CARRACCI Annibale (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0332005162.jpg",
+    "credit": "© GUENAT Pierre - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0332005162",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0332002740",
@@ -859,7 +1489,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
-   "extrait": "CARRACCI Annibale (attribué à)"
+   "extrait": "CARRACCI Annibale (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0332002740.jpg",
+    "credit": "© GUENAT Pierre - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0332002740",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0332002736",
@@ -868,7 +1508,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
-   "extrait": "CARRACCI Annibale (attribué à)"
+   "extrait": "CARRACCI Annibale (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0332002736.jpg",
+    "credit": "© GUENAT Pierre - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0332002736",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0332005163",
@@ -877,7 +1527,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
-   "extrait": "CARRACCI Annibale (attribué à) (dessinateur)"
+   "extrait": "CARRACCI Annibale (attribué à) (dessinateur)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0332005163.jpg",
+    "credit": "© GUENAT Pierre - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0332005163",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "07480012427",
@@ -886,7 +1546,17 @@
    "musee": "musée des beaux-arts et galerie David-d'Angers",
    "ville": "Angers",
    "code": "point_interrogation",
-   "extrait": "CARRACCI Annibale (?, dessinateur)"
+   "extrait": "CARRACCI Annibale (?, dessinateur)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/07480012427.jpg",
+    "credit": "© P David ; © Angers, musées d'Angers",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/07480012427",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0491001011",
@@ -895,7 +1565,17 @@
    "musee": "musée Hyacinthe Rigaud",
    "ville": "Perpignan",
    "code": "attribue",
-   "extrait": "Carracci Annibale (1560-1609) (attribué à)"
+   "extrait": "Carracci Annibale (1560-1609) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0491001011.jpg",
+    "credit": "© Ville de Perpignan. Musée d'art Hyacinthe Rigaud - Pascale Marchesan",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0491001011",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "02860008133",
@@ -904,7 +1584,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Orléans",
    "code": "point_interrogation",
-   "extrait": "CARRACCI Annibale (inventeur, ?)"
+   "extrait": "CARRACCI Annibale (inventeur, ?)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/02860008133.jpg",
+    "credit": "Orléans, musée des beaux-arts © cliché François LAUGINIE",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/02860008133",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   }
  ],
  "version_donnee": "2026-07-01",

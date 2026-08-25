@@ -24,7 +24,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "RIGAU Y ROS Hyacinthe (attribué)"
+   "extrait": "RIGAU Y ROS Hyacinthe (attribué)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE002384.jpg",
+    "credit": "Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE002384",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE005334",
@@ -33,7 +43,17 @@
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "atelier_de",
-   "extrait": "RIGAUD Hyacinthe (atelier)"
+   "extrait": "RIGAUD Hyacinthe (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE005334.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation © Gérard Blot",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE005334",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE007183",
@@ -51,7 +71,17 @@
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "ecole_de",
-   "extrait": "RIGAU Y ROS Hyacinthe (école)"
+   "extrait": "RIGAU Y ROS Hyacinthe (école)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE007218.jpg",
+    "credit": "RMN-Grand Palais",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE007218",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE007945",
@@ -78,7 +108,17 @@
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "ecole_de",
-   "extrait": "RIGAU Y ROS Hyacinthe (école)"
+   "extrait": "RIGAU Y ROS Hyacinthe (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE008015.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE008015",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE007938",
@@ -127,7 +167,17 @@
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "ecole_de",
-   "extrait": "RIGAU Y ROS Hyacinthe (école)"
+   "extrait": "RIGAU Y ROS Hyacinthe (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE007932.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation © Droits réservés",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE007932",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE009680",
@@ -165,7 +215,17 @@
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "ecole_de",
-   "extrait": "RIGAU Y ROS Hyacinthe (école)"
+   "extrait": "RIGAU Y ROS Hyacinthe (école)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE011340.jpg",
+    "credit": "RMN-Grand Palais",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE011340",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE011337",
@@ -210,7 +270,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Marseille",
    "code": "attribue",
-   "extrait": "RIGAU Y ROS Hyacinthe (attribué à)"
+   "extrait": "RIGAU Y ROS Hyacinthe (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE014522.jpg",
+    "credit": "Claude Almodovar ; Michel Vialle",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE014522",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE016322",
@@ -255,7 +325,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Caen",
    "code": "attribue",
-   "extrait": "RIGAUD Hyacinthe (attribué à)"
+   "extrait": "RIGAUD Hyacinthe (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE021397.jpg",
+    "credit": "Musée des Beaux-Arts de Caen, cliché Patricia Touzard",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE021397",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00000056019",
@@ -302,7 +382,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "RIGAUD Hyacinthe (attribué à)"
+   "extrait": "RIGAUD Hyacinthe (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350035112.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350035112",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350210070",
@@ -311,7 +401,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "RIGAUD Hyacinthe (attribué à)"
+   "extrait": "RIGAUD Hyacinthe (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350210070.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350210070",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350210071",
@@ -320,7 +420,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "RIGAUD Hyacinthe (attribué à)"
+   "extrait": "RIGAUD Hyacinthe (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350210071.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350210071",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "04520000001",
@@ -347,7 +457,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Chambéry",
    "code": "atelier_de",
-   "extrait": "RIGAUD Hyacinthe (atelier)"
+   "extrait": "RIGAUD Hyacinthe (atelier)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/10480002158.jpg",
+    "credit": "Giroud",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/10480002158",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE023379",
@@ -356,7 +476,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Bordeaux",
    "code": "atelier_de",
-   "extrait": "RIGAUD Hyacinthe (atelier)"
+   "extrait": "RIGAUD Hyacinthe (atelier)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE023379.jpg",
+    "credit": "© Lysiane Gauthier",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE023379",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "07840001024",
@@ -365,7 +495,17 @@
    "musee": "musée Jean de la Fontaine",
    "ville": "Château-Thierry",
    "code": "atelier_de",
-   "extrait": "RIGAUD Hyacinthe (atelier)"
+   "extrait": "RIGAUD Hyacinthe (atelier)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/07840001024.jpg",
+    "credit": "musée Jean de La Fontaine de Château-Thierry",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/07840001024",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "07290022339",
@@ -374,7 +514,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Rouen",
    "code": "atelier_de",
-   "extrait": "RIGAUD Hyacinthe (atelier)"
+   "extrait": "RIGAUD Hyacinthe (atelier)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/07290022339.jpg",
+    "credit": "© Hélène Thomas, musées de la ville de Rouen",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/07290022339",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0121003071",
@@ -383,7 +533,17 @@
    "musee": "musée d'art Roger-Quillot",
    "ville": "Clermont-Ferrand",
    "code": "atelier_de",
-   "extrait": "Rigaud Hyacinthe (1659-1743) (atelier)"
+   "extrait": "Rigaud Hyacinthe (1659-1743) (atelier)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0121003071.jpg",
+    "credit": "Ville de Clermont-Ferrand MARQ ;  JC SERGERE",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0121003071",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0517000065",
@@ -392,7 +552,17 @@
    "musee": "musée barrois",
    "ville": "Bar-le-Duc",
    "code": "attribue",
-   "extrait": "Rigaud Hyacinthe (1659-1743) (attribué à)"
+   "extrait": "Rigaud Hyacinthe (1659-1743) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0517000065.jpg",
+    "credit": "musée barrois, Bar-le-Duc",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0517000065",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "01370006641",
@@ -401,7 +571,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Dijon",
    "code": "atelier_de",
-   "extrait": "RIGAUD Hyacinthe (atelier)"
+   "extrait": "RIGAUD Hyacinthe (atelier)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/01370006641.jpg",
+    "credit": "© Jay",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/01370006641",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "10160000824",
@@ -430,7 +610,17 @@
    "musee": "musée d'art, histoire et archéologie d'Évreux",
    "ville": "Évreux",
    "code": "atelier_de",
-   "extrait": "Rigaud Hyacinthe (1659-1743) (atelier)"
+   "extrait": "Rigaud Hyacinthe (1659-1743) (atelier)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/07030017687.jpg",
+    "credit": "© Musée d'art, histoire et archéologie, Evreux",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/07030017687",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0949000353",
@@ -439,7 +629,17 @@
    "musee": "bibliothèque-musée Inguimbertine",
    "ville": "Carpentras",
    "code": "atelier_de",
-   "extrait": "Rigaud Hyacinthe (1659-1743) (atelier)"
+   "extrait": "Rigaud Hyacinthe (1659-1743) (atelier)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0949000353.jpg",
+    "credit": "Bruno Preschesmisky",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0949000353",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   }
  ],
  "version_donnee": "2026-07-01",

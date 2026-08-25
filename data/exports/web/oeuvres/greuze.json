@@ -52,7 +52,17 @@
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "ecole_de",
-   "extrait": "GREUZE Jean-Baptiste (école)"
+   "extrait": "GREUZE Jean-Baptiste (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE011085.jpg",
+    "credit": "© Gérard Blot ; Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE011085",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE014011",
@@ -115,7 +125,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Rennes",
    "code": "attribue",
-   "extrait": "GREUZE Jean-Baptiste (attribué)"
+   "extrait": "GREUZE Jean-Baptiste (attribué)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/00000075396.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation © Adélaïde Beaudoin",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/00000075396",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00000075395",
@@ -162,7 +182,17 @@
    "musee": "musée Greuze - hôtel-Dieu",
    "ville": "Tournus",
    "code": "attribue",
-   "extrait": "GREUZE Jean-Baptiste (attribué)"
+   "extrait": "GREUZE Jean-Baptiste (attribué)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/01810000044.jpg",
+    "credit": "© Christelle Rochette",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/01810000044",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "01810000043",
@@ -171,7 +201,17 @@
    "musee": "musée Greuze - hôtel-Dieu",
    "ville": "Tournus",
    "code": "attribue",
-   "extrait": "GREUZE Jean-Baptiste (attribué)"
+   "extrait": "GREUZE Jean-Baptiste (attribué)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/01810000043.jpg",
+    "credit": "© Christelle Rochette",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/01810000043",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350212824",
@@ -180,7 +220,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "GREUZE Jean-Baptiste (attribué à)"
+   "extrait": "GREUZE Jean-Baptiste (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350212824.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350212824",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350029132",
@@ -189,7 +239,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "GREUZE Jean-Baptiste (manière de)"
+   "extrait": "GREUZE Jean-Baptiste (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350029132.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350029132",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350013458",
@@ -198,7 +258,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "GREUZE Jean-Baptiste (école)"
+   "extrait": "GREUZE Jean-Baptiste (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350013458.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350013458",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350029128",
@@ -207,7 +277,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "GREUZE Jean-Baptiste (manière de)"
+   "extrait": "GREUZE Jean-Baptiste (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350029128.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350029128",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350031531",
@@ -216,7 +296,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "GREUZE Jean-Baptiste (école)"
+   "extrait": "GREUZE Jean-Baptiste (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350031531.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350031531",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350212820",
@@ -225,7 +315,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "GREUZE Jean-Baptiste (attribué à)"
+   "extrait": "GREUZE Jean-Baptiste (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350212820.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350212820",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350212822",
@@ -234,7 +334,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "GREUZE Jean-Baptiste (attribué à)"
+   "extrait": "GREUZE Jean-Baptiste (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350212822.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350212822",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350212819",
@@ -243,7 +353,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "GREUZE Jean-Baptiste (attribué à)"
+   "extrait": "GREUZE Jean-Baptiste (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350212819.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350212819",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350029129",
@@ -252,7 +372,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "GREUZE Jean-Baptiste (manière de)"
+   "extrait": "GREUZE Jean-Baptiste (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350029129.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350029129",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350029131",
@@ -261,7 +391,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "GREUZE Jean-Baptiste (manière de)"
+   "extrait": "GREUZE Jean-Baptiste (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350029131.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350029131",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350212826",
@@ -270,7 +410,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "GREUZE Jean-Baptiste (attribué à)"
+   "extrait": "GREUZE Jean-Baptiste (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350212826.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350212826",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350029127",
@@ -279,7 +429,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "GREUZE Jean-Baptiste (manière de)"
+   "extrait": "GREUZE Jean-Baptiste (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350029127.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350029127",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350212821",
@@ -288,7 +448,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "GREUZE Jean-Baptiste (attribué à)"
+   "extrait": "GREUZE Jean-Baptiste (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350212821.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350212821",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350228316",
@@ -297,7 +467,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "GREUZE Jean-Baptiste (attribué à)"
+   "extrait": "GREUZE Jean-Baptiste (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350228316.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350228316",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350212823",
@@ -306,7 +486,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "GREUZE Jean-Baptiste (attribué à)"
+   "extrait": "GREUZE Jean-Baptiste (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350212823.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350212823",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350212827",
@@ -315,7 +505,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "GREUZE Jean-Baptiste (attribué à)"
+   "extrait": "GREUZE Jean-Baptiste (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350212827.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350212827",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350029137",
@@ -324,7 +524,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "GREUZE Jean-Baptiste (manière de)"
+   "extrait": "GREUZE Jean-Baptiste (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350029137.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350029137",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350212825",
@@ -333,7 +543,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "GREUZE Jean-Baptiste (attribué à)"
+   "extrait": "GREUZE Jean-Baptiste (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350212825.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350212825",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350030818",
@@ -342,7 +562,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "GREUZE Jean-Baptiste (attribué à)"
+   "extrait": "GREUZE Jean-Baptiste (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350030818.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350030818",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350030817",
@@ -351,7 +581,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "GREUZE Jean-Baptiste (attribué à)"
+   "extrait": "GREUZE Jean-Baptiste (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350030817.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350030817",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350145323",
@@ -360,7 +600,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "GREUZE Jean-Baptiste (attribué à)"
+   "extrait": "GREUZE Jean-Baptiste (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350145323.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350145323",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "10480006080",
@@ -369,7 +619,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Chambéry",
    "code": "ecole_de",
-   "extrait": "Greuze Jean-Baptiste (1725-1805) (école)"
+   "extrait": "Greuze Jean-Baptiste (1725-1805) (école)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/10480006080.jpg",
+    "credit": "Bouchayer, Giroud",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/10480006080",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000DE006760",
@@ -405,7 +665,17 @@
    "musee": "musée national Magnin",
    "ville": "Dijon",
    "code": "genre_de",
-   "extrait": "GREUZE Jean-Baptiste (peintre, genre de)"
+   "extrait": "GREUZE Jean-Baptiste (peintre, genre de)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50110000416.jpg",
+    "credit": "",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50110000416",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "01610001204",
@@ -414,7 +684,17 @@
    "musee": "musée Rolin",
    "ville": "Autun",
    "code": "attribue",
-   "extrait": "GREUZE Jean-Baptiste (attribué à)"
+   "extrait": "GREUZE Jean-Baptiste (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/01610001204.jpg",
+    "credit": "© Stéphane Prost",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/01610001204",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "08030002721",
@@ -432,7 +712,17 @@
    "musee": "musée municipal",
    "ville": "La Roche-sur-Yon",
    "code": "attribue",
-   "extrait": "GREUZE Jean-Baptiste (attribué à, dessinateur)"
+   "extrait": "GREUZE Jean-Baptiste (attribué à, dessinateur)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/07760001112.jpg",
+    "credit": "© musée de la Roche-sur-Yon",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/07760001112",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0332000543",
@@ -441,7 +731,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
-   "extrait": "Greuze Jean-Baptiste (1725-1805) (attribué à)"
+   "extrait": "Greuze Jean-Baptiste (1725-1805) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0332000543.jpg",
+    "credit": "GUENAT Pierre",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0332000543",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0332011679",
@@ -450,7 +750,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
-   "extrait": "Greuze Jean-Baptiste (1725-1805) (attribué à)"
+   "extrait": "Greuze Jean-Baptiste (1725-1805) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0332011679.jpg",
+    "credit": "GUENAT Pierre",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0332011679",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0332011678",
@@ -459,7 +769,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
-   "extrait": "Greuze Jean-Baptiste (1725-1805) (attribué à)"
+   "extrait": "Greuze Jean-Baptiste (1725-1805) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0332011678.jpg",
+    "credit": "GUENAT Pierre",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0332011678",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0332006709",
@@ -468,7 +788,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "ecole_de",
-   "extrait": "Greuze Jean-Baptiste (1725-1805) (école)"
+   "extrait": "Greuze Jean-Baptiste (1725-1805) (école)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0332006709.jpg",
+    "credit": "© Musée des beaux-arts et d'archéologie, Besançon",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0332006709",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "01710114791",
@@ -477,7 +807,17 @@
    "musee": "musée municipal",
    "ville": "Louhans-Châteaurenaud",
    "code": "attribue",
-   "extrait": "Greuze Jean-Baptiste (1725-1805) (attribué à)"
+   "extrait": "Greuze Jean-Baptiste (1725-1805) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/01710114791.jpg",
+    "credit": "© Ecomusée de la Bresse bourguignonne",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/01710114791",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0536030527",
@@ -486,7 +826,17 @@
    "musee": "musée départemental d'art ancien et contemporain",
    "ville": "Epinal",
    "code": "maniere_de",
-   "extrait": "Greuze Jean-Baptiste (1725-1805) (manière de)"
+   "extrait": "Greuze Jean-Baptiste (1725-1805) (manière de)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0536030527.jpg",
+    "credit": "© Claude Philippot",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0536030527",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   }
  ],
  "version_donnee": "2026-07-01",

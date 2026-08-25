@@ -56,7 +56,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
-   "extrait": "Boucher François (1703-1770) (atelier)"
+   "extrait": "Boucher François (1703-1770) (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE000204.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation © René-Gabriel Ojéda",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE000204",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE000205",
@@ -92,7 +102,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Rennes",
    "code": "ecole_de",
-   "extrait": "Boucher François (1703-1770) (école)"
+   "extrait": "Boucher François (1703-1770) (école)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000DE016661.jpg",
+    "credit": "",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000DE016661",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE013054",
@@ -101,7 +121,17 @@
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "ecole_de",
-   "extrait": "Boucher François (1703-1770) (école)"
+   "extrait": "Boucher François (1703-1770) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE013054.jpg",
+    "credit": "© Gérard Blot ; Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE013054",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE013616",
@@ -119,7 +149,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Bordeaux",
    "code": "point_interrogation",
-   "extrait": "Boucher François (1703-1770) (?)"
+   "extrait": "Boucher François (1703-1770) (?)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE020181.jpg",
+    "credit": "© L. Gauthier",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE020181",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE020930",
@@ -128,7 +168,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Caen",
    "code": "ecole_de",
-   "extrait": "Boucher François (1703-1770) (école)"
+   "extrait": "Boucher François (1703-1770) (école)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE020930.jpg",
+    "credit": "© Musée des Beaux-Arts de Caen, cliché Ernest Le Deley",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE020930",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00000060723",
@@ -146,7 +196,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "point_interrogation",
-   "extrait": "Boucher François (1703-1770) (? )"
+   "extrait": "Boucher François (1703-1770) (? )",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50520001106.jpg",
+    "credit": "© R.G. Ojeda ; © Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50520001106",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350010788",
@@ -155,7 +215,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "Boucher François (1703-1770) (école)"
+   "extrait": "Boucher François (1703-1770) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350010788.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350010788",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350010791",
@@ -164,7 +234,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "Boucher François (1703-1770) (école)"
+   "extrait": "Boucher François (1703-1770) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350010791.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350010791",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350010800",
@@ -173,7 +253,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "Boucher François (1703-1770) (école)"
+   "extrait": "Boucher François (1703-1770) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350010800.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350010800",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350010766",
@@ -182,7 +272,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "Boucher François (1703-1770) (attribué à)"
+   "extrait": "Boucher François (1703-1770) (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350010766.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350010766",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350010785",
@@ -191,7 +291,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "Boucher François (1703-1770) (école)"
+   "extrait": "Boucher François (1703-1770) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350010785.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350010785",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350502272",
@@ -200,7 +310,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "Boucher François (1703-1770) (école)"
+   "extrait": "Boucher François (1703-1770) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350502272.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350502272",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350010807",
@@ -209,7 +329,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "Boucher François (1703-1770) (école)"
+   "extrait": "Boucher François (1703-1770) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350010807.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350010807",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350031530",
@@ -218,7 +348,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "Boucher François (1703-1770) (école)"
+   "extrait": "Boucher François (1703-1770) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350031530.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350031530",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350010787",
@@ -227,7 +367,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "Boucher François (1703-1770) (école)"
+   "extrait": "Boucher François (1703-1770) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350010787.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350010787",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350010769",
@@ -236,7 +386,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "Boucher François (1703-1770) (attribué à)"
+   "extrait": "Boucher François (1703-1770) (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350010769.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350010769",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350010790",
@@ -245,7 +405,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "Boucher François (1703-1770) (école)"
+   "extrait": "Boucher François (1703-1770) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350010790.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350010790",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350228310",
@@ -254,7 +424,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "Boucher François (1703-1770) (attribué à)"
+   "extrait": "Boucher François (1703-1770) (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350228310.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350228310",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350010795",
@@ -263,7 +443,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "Boucher François (1703-1770) (école)"
+   "extrait": "Boucher François (1703-1770) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350010795.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350010795",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350010784",
@@ -272,7 +462,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "Boucher François (1703-1770) (école)"
+   "extrait": "Boucher François (1703-1770) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350010784.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350010784",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350010789",
@@ -281,7 +481,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "Boucher François (1703-1770) (école)"
+   "extrait": "Boucher François (1703-1770) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350010789.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350010789",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350010805",
@@ -290,7 +500,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "Boucher François (1703-1770) (école)"
+   "extrait": "Boucher François (1703-1770) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350010805.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350010805",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350010804",
@@ -299,7 +519,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "Boucher François (1703-1770) (école)"
+   "extrait": "Boucher François (1703-1770) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350010804.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350010804",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350010809",
@@ -308,7 +538,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "Boucher François (1703-1770) (école)"
+   "extrait": "Boucher François (1703-1770) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350010809.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350010809",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350010798",
@@ -317,7 +557,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "Boucher François (1703-1770) (école)"
+   "extrait": "Boucher François (1703-1770) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350010798.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350010798",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350010797",
@@ -326,7 +576,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "Boucher François (1703-1770) (école)"
+   "extrait": "Boucher François (1703-1770) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350010797.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350010797",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350010799",
@@ -335,7 +595,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "Boucher François (1703-1770) (école)"
+   "extrait": "Boucher François (1703-1770) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350010799.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350010799",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350010806",
@@ -344,7 +614,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "Boucher François (1703-1770) (école)"
+   "extrait": "Boucher François (1703-1770) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350010806.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350010806",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350010796",
@@ -353,7 +633,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "Boucher François (1703-1770) (école)"
+   "extrait": "Boucher François (1703-1770) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350010796.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350010796",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350010810",
@@ -362,7 +652,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "Boucher François (1703-1770) (école)"
+   "extrait": "Boucher François (1703-1770) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350010810.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350010810",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350205662",
@@ -371,7 +671,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "Boucher François (1703-1770) (école)"
+   "extrait": "Boucher François (1703-1770) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350205662.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350205662",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350010793",
@@ -380,7 +690,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "Boucher François (1703-1770) (école)"
+   "extrait": "Boucher François (1703-1770) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350010793.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350010793",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350010801",
@@ -389,7 +709,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "Boucher François (1703-1770) (école)"
+   "extrait": "Boucher François (1703-1770) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350010801.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350010801",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350010803",
@@ -398,7 +728,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "Boucher François (1703-1770) (école)"
+   "extrait": "Boucher François (1703-1770) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350010803.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350010803",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350010808",
@@ -407,7 +747,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "Boucher François (1703-1770) (école)"
+   "extrait": "Boucher François (1703-1770) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350010808.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350010808",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350010770",
@@ -416,7 +766,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "Boucher François (1703-1770) (attribué à)"
+   "extrait": "Boucher François (1703-1770) (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350010770.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350010770",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350010767",
@@ -425,7 +785,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "Boucher François (1703-1770) (attribué à)"
+   "extrait": "Boucher François (1703-1770) (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350010767.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350010767",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350010792",
@@ -434,7 +804,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "Boucher François (1703-1770) (école)"
+   "extrait": "Boucher François (1703-1770) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350010792.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350010792",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350010794",
@@ -443,7 +823,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "Boucher François (1703-1770) (école)"
+   "extrait": "Boucher François (1703-1770) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350010794.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350010794",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350010802",
@@ -452,7 +842,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "Boucher François (1703-1770) (école)"
+   "extrait": "Boucher François (1703-1770) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350010802.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350010802",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350010786",
@@ -461,7 +861,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "Boucher François (1703-1770) (école)"
+   "extrait": "Boucher François (1703-1770) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350010786.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350010786",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350010771",
@@ -470,7 +880,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "Boucher François (1703-1770) (attribué à)"
+   "extrait": "Boucher François (1703-1770) (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350010771.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350010771",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350010811",
@@ -488,7 +908,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "Boucher François (1703-1770) (attribué à)"
+   "extrait": "Boucher François (1703-1770) (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350017852.jpg",
+    "credit": "© Michel Urtardo, Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350017852",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "04000000182",
@@ -497,7 +927,17 @@
    "musee": "musée Lambinet",
    "ville": "Versailles",
    "code": "atelier_de",
-   "extrait": "Boucher François (1703-1770) (atelier)"
+   "extrait": "Boucher François (1703-1770) (atelier)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/04000000182.jpg",
+    "credit": "Musée Lambinet, Ville de Versailles",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/04000000182",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "07430005700",
@@ -506,7 +946,17 @@
    "musee": "musée des Beaux-Arts",
    "ville": "Nantes",
    "code": "attribue",
-   "extrait": "Boucher François (1703-1770) (attribué à)"
+   "extrait": "Boucher François (1703-1770) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/07430005700.jpg",
+    "credit": "Gérard Blot",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/07430005700",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "01550005410",
@@ -515,7 +965,17 @@
    "musee": "musée de la faïence Frédéric Blandin",
    "ville": "Nevers",
    "code": "genre_de",
-   "extrait": "Boucher François (1703-1770) (genre de)"
+   "extrait": "Boucher François (1703-1770) (genre de)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/01550005410.jpg",
+    "credit": "© Marc Cherasse",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/01550005410",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "01370000458",
@@ -524,7 +984,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Dijon",
    "code": "atelier_de",
-   "extrait": "Boucher François (1703-1770) (atelier, auteur)"
+   "extrait": "Boucher François (1703-1770) (atelier, auteur)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/01370000458.jpg",
+    "credit": "© Jay",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/01370000458",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0121004507",
@@ -533,7 +1003,17 @@
    "musee": "musée d'art Roger-Quillot",
    "ville": "Clermont-Ferrand",
    "code": "atelier_de",
-   "extrait": "Boucher François (1703-1770) (atelier)"
+   "extrait": "Boucher François (1703-1770) (atelier)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0121004507.jpg",
+    "credit": "© J.C. Sergère, musée d'art Roger-Quilliot",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0121004507",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0121004505",
@@ -542,7 +1022,17 @@
    "musee": "musée d'art Roger-Quillot",
    "ville": "Clermont-Ferrand",
    "code": "atelier_de",
-   "extrait": "Boucher François (1703-1770) (atelier)"
+   "extrait": "Boucher François (1703-1770) (atelier)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0121004505.jpg",
+    "credit": "© J.C. Sergère, musée d'art Roger-Quilliot",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0121004505",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0491000988",
@@ -551,7 +1041,17 @@
    "musee": "musée Hyacinthe Rigaud",
    "ville": "Perpignan",
    "code": "attribue",
-   "extrait": "Boucher François (1703-1770) (attribué à)"
+   "extrait": "Boucher François (1703-1770) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0491000988.jpg",
+    "credit": "© Claire Muchir",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0491000988",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06290000982",
@@ -560,7 +1060,17 @@
    "musee": "musée des Beaux-Arts",
    "ville": "Lille",
    "code": "attribue",
-   "extrait": "Boucher François (1703-1770) (attribué à)"
+   "extrait": "Boucher François (1703-1770) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06290000982.jpg",
+    "credit": "© GERONDAL, © QUECQ D'HENRIPRET",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06290000982",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06290006029",
@@ -569,7 +1079,17 @@
    "musee": "musée des Beaux-Arts",
    "ville": "Lille",
    "code": "attribue",
-   "extrait": "Boucher François (1703-1770) (attribué à)"
+   "extrait": "Boucher François (1703-1770) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06290006029.jpg",
+    "credit": "© DUBUISSON, © QUECQ D'HENRIPRET, © LEWANDOWSKI",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06290006029",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0121003026",
@@ -578,7 +1098,17 @@
    "musee": "musée d'art Roger-Quillot",
    "ville": "Clermont-Ferrand",
    "code": "ecole_de",
-   "extrait": "Boucher François (1703-1770) (école)"
+   "extrait": "Boucher François (1703-1770) (école)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0121003026.jpg",
+    "credit": "Ville de Clermont-Ferrand MARQ",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0121003026",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "05030002954",
@@ -587,7 +1117,17 @@
    "musee": "musée d'Art et d'Archéologie",
    "ville": "Guéret",
    "code": "attribue",
-   "extrait": "Boucher François (1703-1770) (dessinateur, attribué à)"
+   "extrait": "Boucher François (1703-1770) (dessinateur, attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/05030002954.jpg",
+    "credit": "© Réunion des musées nationaux-Grand Palais/Benoît Touchard",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/05030002954",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "01720007382",
@@ -596,7 +1136,17 @@
    "musee": "musée des ursulines",
    "ville": "Mâcon",
    "code": "attribue",
-   "extrait": "Boucher François (1703-1770) (attribué)"
+   "extrait": "Boucher François (1703-1770) (attribué)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/01720007382.jpg",
+    "credit": "© musées de Mâcon",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/01720007382",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "01720007384",
@@ -605,7 +1155,17 @@
    "musee": "musée des ursulines",
    "ville": "Mâcon",
    "code": "attribue",
-   "extrait": "Boucher François (1703-1770) (attribué à)"
+   "extrait": "Boucher François (1703-1770) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/01720007384.jpg",
+    "credit": "© musées de Mâcon",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/01720007384",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0332001486",
@@ -614,7 +1174,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
-   "extrait": "Boucher François (1703-1770) (attribué à)"
+   "extrait": "Boucher François (1703-1770) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0332001486.jpg",
+    "credit": "© GUENAT Pierre",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0332001486",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0457000827",
@@ -623,7 +1193,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Nîmes",
    "code": "attribue",
-   "extrait": "Boucher François (1703-1770) (attribué à)"
+   "extrait": "Boucher François (1703-1770) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0457000827.jpg",
+    "credit": "Musée des Beaux-arts, Nîmes",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0457000827",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0457000737",
@@ -632,7 +1212,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Nîmes",
    "code": "attribue",
-   "extrait": "BOUCHER François (attribué à)"
+   "extrait": "BOUCHER François (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0457000737.jpg",
+    "credit": "© Musée des Beaux-arts, Nîmes",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0457000737",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0332011640",
@@ -641,7 +1231,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "entourage_de",
-   "extrait": "Boucher François (1703-1770) (entourage)"
+   "extrait": "Boucher François (1703-1770) (entourage)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0332011640.jpg",
+    "credit": "GUENAT Pierre",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0332011640",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0332011641",
@@ -650,7 +1250,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "entourage_de",
-   "extrait": "Boucher François (1703-1770) (entourage)"
+   "extrait": "Boucher François (1703-1770) (entourage)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0332011641.jpg",
+    "credit": "GUENAT Pierre",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0332011641",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0332011648",
@@ -659,7 +1269,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "entourage_de",
-   "extrait": "Boucher François (1703-1770) (entourage)"
+   "extrait": "Boucher François (1703-1770) (entourage)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0332011648.jpg",
+    "credit": "GUENAT Pierre",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0332011648",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0332013025",
@@ -668,7 +1288,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
-   "extrait": "Boucher François (1703-1770) (attribué à)"
+   "extrait": "Boucher François (1703-1770) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0332013025.jpg",
+    "credit": "© GUENAT Pierre",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0332013025",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0332013050",
@@ -677,7 +1307,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
-   "extrait": "Boucher François (1703-1770) (attribué à)"
+   "extrait": "Boucher François (1703-1770) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0332013050.jpg",
+    "credit": "© GUENAT Pierre",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0332013050",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0332013282",
@@ -686,7 +1326,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
-   "extrait": "Boucher François (1703-1770) (attribué à)"
+   "extrait": "Boucher François (1703-1770) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0332013282.jpg",
+    "credit": "© GUENAT Pierre",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0332013282",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0332012279",
@@ -695,7 +1345,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
-   "extrait": "Boucher François (1703-1770) (attribué à)"
+   "extrait": "Boucher François (1703-1770) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0332012279.jpg",
+    "credit": "© GUENAT Pierre",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0332012279",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0332013281",
@@ -704,7 +1364,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
-   "extrait": "Boucher François (1703-1770) (attribué à)"
+   "extrait": "Boucher François (1703-1770) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0332013281.jpg",
+    "credit": "© GUENAT Pierre",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0332013281",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06190023890",
@@ -722,7 +1392,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Nîmes",
    "code": "attribue",
-   "extrait": "Boucher François (1703-1770) (attribué à)"
+   "extrait": "Boucher François (1703-1770) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/00457000809.jpg",
+    "credit": "© Musée des Beaux-arts, Nîmes",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/00457000809",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0457000753",
@@ -731,7 +1411,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Nîmes",
    "code": "attribue",
-   "extrait": "Boucher François (1703-1770) (attribué à)"
+   "extrait": "Boucher François (1703-1770) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0457000753.jpg",
+    "credit": "© Musée des Beaux-arts, Nîmes",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0457000753",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0457000810",
@@ -740,7 +1430,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Nîmes",
    "code": "attribue",
-   "extrait": "Boucher François (1703-1770) (attribué à)"
+   "extrait": "Boucher François (1703-1770) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0457000810.jpg",
+    "credit": "Musée des beaux-arts, Ville de Nîmes.",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0457000810",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   }
  ],
  "version_donnee": "2026-07-01",

@@ -32,7 +32,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
-   "extrait": "VECELLIO Tiziano (atelier)"
+   "extrait": "VECELLIO Tiziano (atelier)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE027124.jpg",
+    "credit": "© C2RMF",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE027124",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE027125",
@@ -81,7 +91,17 @@
    "musee": "musée Condé",
    "ville": "Chantilly",
    "code": "atelier_de",
-   "extrait": "VECELLIO Tiziano (atelier)"
+   "extrait": "VECELLIO Tiziano (atelier)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/00000107129.jpg",
+    "credit": "© Lynda Frénois",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/00000107129",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350228332",
@@ -90,7 +110,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "VECELLIO Tiziano (attribué à)"
+   "extrait": "VECELLIO Tiziano (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350228332.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350228332",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350228331",
@@ -99,7 +129,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "VECELLIO Tiziano (attribué à)"
+   "extrait": "VECELLIO Tiziano (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350228331.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350228331",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350007955",
@@ -108,7 +148,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "VECELLIO Tiziano (entourage)"
+   "extrait": "VECELLIO Tiziano (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350007955.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350007955",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350202230",
@@ -117,7 +167,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "entourage_de",
-   "extrait": "VECELLIO Tiziano (entourage)"
+   "extrait": "VECELLIO Tiziano (entourage)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350202230.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350202230",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE023475",
@@ -126,7 +186,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Bordeaux",
    "code": "attribue",
-   "extrait": "VECELLIO Tiziano (attribué)"
+   "extrait": "VECELLIO Tiziano (attribué)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE023475.jpg",
+    "credit": "© C2RMF",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE023475",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "05620000355",
@@ -135,7 +205,17 @@
    "musee": "musée des Augustins",
    "ville": "Toulouse",
    "code": "suiveur_de",
-   "extrait": "VECELLIO Tiziano (suiveur)"
+   "extrait": "VECELLIO Tiziano (suiveur)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/05620000355.jpg",
+    "credit": "Bernard Delorme",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/05620000355",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0333000715",

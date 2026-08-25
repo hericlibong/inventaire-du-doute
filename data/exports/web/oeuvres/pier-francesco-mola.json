@@ -44,7 +44,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "genre_de",
-   "extrait": "MOLA Pier Francesco (genre de)"
+   "extrait": "MOLA Pier Francesco (genre de)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070000172.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070000172",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350005433",
@@ -53,7 +63,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "MOLA Pier Francesco (attribué à)"
+   "extrait": "MOLA Pier Francesco (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350005433.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350005433",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350005417",
@@ -62,7 +82,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "MOLA Pier Francesco (attribué à)"
+   "extrait": "MOLA Pier Francesco (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350005417.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350005417",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350005405",
@@ -71,7 +101,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "MOLA Pier Francesco (attribué à)"
+   "extrait": "MOLA Pier Francesco (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350005405.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350005405",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350005415",
@@ -80,7 +120,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "MOLA Pier Francesco (attribué à)"
+   "extrait": "MOLA Pier Francesco (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350005415.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350005415",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350101062",
@@ -89,7 +139,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "MOLA Pier Francesco (attribué à)"
+   "extrait": "MOLA Pier Francesco (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350101062.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350101062",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350005411",
@@ -98,7 +158,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "MOLA Pier Francesco (attribué à)"
+   "extrait": "MOLA Pier Francesco (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350005411.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350005411",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350005395",
@@ -107,7 +177,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "MOLA Pier Francesco (attribué à)"
+   "extrait": "MOLA Pier Francesco (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350005395.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350005395",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350005396",
@@ -116,7 +196,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "MOLA Pier Francesco (attribué à)"
+   "extrait": "MOLA Pier Francesco (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350005396.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350005396",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350005434",
@@ -125,7 +215,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "MOLA Pier Francesco (attribué à)"
+   "extrait": "MOLA Pier Francesco (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350005434.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350005434",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350005410",
@@ -134,7 +234,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "MOLA Pier Francesco (attribué à)"
+   "extrait": "MOLA Pier Francesco (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350005410.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350005410",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350104352",
@@ -143,7 +253,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "MOLA Pier Francesco (attribué à)"
+   "extrait": "MOLA Pier Francesco (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350104352.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350104352",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "07430007264",
@@ -152,7 +272,17 @@
    "musee": "musée des Beaux-Arts",
    "ville": "Nantes",
    "code": "genre_de",
-   "extrait": "MOLA Pier Francesco (genre de)"
+   "extrait": "MOLA Pier Francesco (genre de)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/07430007264.jpg",
+    "credit": "C. CLOS",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/07430007264",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "01370013320",
@@ -161,7 +291,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Dijon",
    "code": "attribue",
-   "extrait": "MOLA Pier Francesco (attribué à)"
+   "extrait": "MOLA Pier Francesco (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/01370013320.jpg",
+    "credit": "© François Jay - musée des beaux-arts de Dijon",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/01370013320",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "01550000959",
@@ -170,7 +310,17 @@
    "musee": "musée de la faïence Frédéric Blandin",
    "ville": "Nevers",
    "code": "attribue",
-   "extrait": "MOLA Pier Francesco (attribué à)"
+   "extrait": "MOLA Pier Francesco (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/01550000959.jpg",
+    "credit": "© Michenet",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/01550000959",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "07480012416",
@@ -179,7 +329,17 @@
    "musee": "musée des beaux-arts et galerie David-d'Angers",
    "ville": "Angers",
    "code": "point_interrogation",
-   "extrait": "MOLA Pier Francesco (?)"
+   "extrait": "MOLA Pier Francesco (?)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/07480012416.jpg",
+    "credit": "© P David ; © Angers, musées d'Angers",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/07480012416",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "02110002278",
@@ -188,7 +348,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Rennes",
    "code": "attribue",
-   "extrait": "MOLA Pier Francesco (attribué à)"
+   "extrait": "MOLA Pier Francesco (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/02110002278.jpg",
+    "credit": "© Jean-Manuel Salingue",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/02110002278",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "01370014020",
@@ -197,7 +367,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Dijon",
    "code": "attribue",
-   "extrait": "MOLA Pier Francesco (attribué, ?, suite de)"
+   "extrait": "MOLA Pier Francesco (attribué, ?, suite de)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/01370014020.jpg",
+    "credit": "© Jay",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/01370014020",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "01370014942",
@@ -206,7 +386,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Dijon",
    "code": "attribue",
-   "extrait": "MOLA Pier Francesco (attribué, suite de)"
+   "extrait": "MOLA Pier Francesco (attribué, suite de)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/01370014942.jpg",
+    "credit": "© Dijon, musée des beaux-arts",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/01370014942",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "03110041486",
@@ -275,7 +465,17 @@
    "musee": "musée de Grenoble",
    "ville": "Grenoble",
    "code": "attribue",
-   "extrait": "Mola Pier Francesco (attribué à)"
+   "extrait": "Mola Pier Francesco (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/09940008544.jpg",
+    "credit": "© Ville de Grenoble / Musée de Grenoble-J.L. Lacroix",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/09940008544",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   }
  ],
  "version_donnee": "2026-07-01",

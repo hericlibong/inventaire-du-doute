@@ -48,7 +48,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "BOURDON Sébastien (attribué)"
+   "extrait": "BOURDON Sébastien (attribué)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE000240.jpg",
+    "credit": "RMN-Grand Palais ; Tony Querrec",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE000240",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE000239",
@@ -57,7 +67,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "BOURDON Sébastien (attribué)"
+   "extrait": "BOURDON Sébastien (attribué)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE000239.jpg",
+    "credit": "Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE000239",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE007801",
@@ -66,7 +86,17 @@
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "attribue",
-   "extrait": "BOURDON Sébastien (attribué)"
+   "extrait": "BOURDON Sébastien (attribué)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE007801.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE007801",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE007744",
@@ -75,7 +105,17 @@
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "ecole_de",
-   "extrait": "BOURDON Sébastien (école)"
+   "extrait": "BOURDON Sébastien (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE007744.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation © Gérard Blot",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE007744",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE031115",
@@ -93,7 +133,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Rennes",
    "code": "attribue",
-   "extrait": "BOURDON Sébastien (attribué)"
+   "extrait": "BOURDON Sébastien (attribué)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/00000075259.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation © Adélaïde Beaudoin",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/00000075259",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE011673",
@@ -102,7 +152,17 @@
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "ecole_de",
-   "extrait": "BOURDON Sébastien (école)"
+   "extrait": "BOURDON Sébastien (école)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE011673.jpg",
+    "credit": "RMN-Grand Palais ; Franck Raux",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE011673",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350102149",
@@ -111,7 +171,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "BOURDON Sébastien (attribué à)"
+   "extrait": "BOURDON Sébastien (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350102149.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350102149",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350011022",
@@ -120,7 +190,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "BOURDON Sébastien (attribué à)"
+   "extrait": "BOURDON Sébastien (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350011022.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350011022",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350011021",
@@ -129,7 +209,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "BOURDON Sébastien (attribué à)"
+   "extrait": "BOURDON Sébastien (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350011021.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350011021",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350011023",
@@ -138,7 +228,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "BOURDON Sébastien (attribué à)"
+   "extrait": "BOURDON Sébastien (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350011023.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350011023",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350011029",
@@ -147,7 +247,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "BOURDON Sébastien (école)"
+   "extrait": "BOURDON Sébastien (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350011029.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350011029",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "07430005686",
@@ -156,7 +266,17 @@
    "musee": "musée des Beaux-Arts",
    "ville": "Nantes",
    "code": "genre_de",
-   "extrait": "BOURDON Sébastien (genre de)"
+   "extrait": "BOURDON Sébastien (genre de)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/07430005686.jpg",
+    "credit": "Alain Guillard",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/07430005686",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "01610001172",
@@ -165,7 +285,17 @@
    "musee": "musée Rolin",
    "ville": "Autun",
    "code": "attribue",
-   "extrait": "BOURDON Sébastien (attribué à)"
+   "extrait": "BOURDON Sébastien (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/01610001172.jpg",
+    "credit": "© Stéphane Prost",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/01610001172",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "01610001170",
@@ -174,7 +304,17 @@
    "musee": "musée Rolin",
    "ville": "Autun",
    "code": "attribue",
-   "extrait": "BOURDON Sébastien (attribué à)"
+   "extrait": "BOURDON Sébastien (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/01610001170.jpg",
+    "credit": "© Stéphane Prost",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/01610001170",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "01610001169",
@@ -183,7 +323,17 @@
    "musee": "musée Rolin",
    "ville": "Autun",
    "code": "attribue",
-   "extrait": "BOURDON Sébastien (attribué à)"
+   "extrait": "BOURDON Sébastien (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/01610001169.jpg",
+    "credit": "© Stéphane Prost",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/01610001169",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "01610001173",
@@ -192,7 +342,17 @@
    "musee": "musée Rolin",
    "ville": "Autun",
    "code": "attribue",
-   "extrait": "BOURDON Sébastien (attribué à)"
+   "extrait": "BOURDON Sébastien (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/01610001173.jpg",
+    "credit": "© Stéphane Prost",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/01610001173",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "01610001174",
@@ -201,7 +361,17 @@
    "musee": "musée Rolin",
    "ville": "Autun",
    "code": "attribue",
-   "extrait": "BOURDON Sébastien (attribué à)"
+   "extrait": "BOURDON Sébastien (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/01610001174.jpg",
+    "credit": "© Stéphane Prost",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/01610001174",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "01610001171",
@@ -210,7 +380,17 @@
    "musee": "musée Rolin",
    "ville": "Autun",
    "code": "attribue",
-   "extrait": "BOURDON Sébastien (attribué à)"
+   "extrait": "BOURDON Sébastien (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/01610001171.jpg",
+    "credit": "© Stéphane Prost",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/01610001171",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "08120021739",
@@ -248,7 +428,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Rennes",
    "code": "ecole_de",
-   "extrait": "BOURDON Sébastien (école)"
+   "extrait": "BOURDON Sébastien (école)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/02110002605.jpg",
+    "credit": "© Louis Deschamps",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/02110002605",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0332011954",
@@ -257,7 +447,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "point_interrogation",
-   "extrait": "BOURDON Sébastien (cercle de, ?)"
+   "extrait": "BOURDON Sébastien (cercle de, ?)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0332011954.jpg",
+    "credit": "© musées de Besançon ; GUENAT Pierre",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0332011954",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0332001449",
@@ -266,7 +466,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
-   "extrait": "BOURDON Sébastien (attribué, genre de)"
+   "extrait": "BOURDON Sébastien (attribué, genre de)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0332001449.jpg",
+    "credit": "© GUENAT Pierre",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0332001449",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   }
  ],
  "version_donnee": "2026-07-01",

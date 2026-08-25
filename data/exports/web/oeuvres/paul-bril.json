@@ -45,7 +45,17 @@
    "musee": "musée des Beaux-Arts",
    "ville": "Valenciennes",
    "code": "genre_de",
-   "extrait": "BRIL Paul (genre de)"
+   "extrait": "BRIL Paul (genre de)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06380000486.jpg",
+    "credit": "© Claude Thériez",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06380000486",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350500227",
@@ -63,7 +73,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "BRIL Paul (école)"
+   "extrait": "BRIL Paul (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350030449.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350030449",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350105578",
@@ -72,7 +92,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "BRIL Paul (manière de)"
+   "extrait": "BRIL Paul (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350105578.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350105578",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350105582",
@@ -81,7 +111,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "BRIL Paul (manière de)"
+   "extrait": "BRIL Paul (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350105582.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350105582",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350105870",
@@ -90,7 +130,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "BRIL Paul (école)"
+   "extrait": "BRIL Paul (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350105870.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350105870",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350105583",
@@ -99,7 +149,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "BRIL Paul (manière de)"
+   "extrait": "BRIL Paul (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350105583.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350105583",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350109962",
@@ -108,7 +168,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "BRIL Paul (manière de)"
+   "extrait": "BRIL Paul (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350109962.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350109962",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350109957",
@@ -117,7 +187,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "maniere_de",
-   "extrait": "BRIL Paul (manière de)"
+   "extrait": "BRIL Paul (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350109957.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350109957",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350109961",
@@ -126,7 +206,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "BRIL Paul (attribué à)"
+   "extrait": "BRIL Paul (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350109961.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350109961",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350109966",
@@ -135,7 +225,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "BRIL Paul (attribué à)"
+   "extrait": "BRIL Paul (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350109966.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350109966",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350109967",
@@ -144,7 +244,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "BRIL Paul (attribué à)"
+   "extrait": "BRIL Paul (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350109967.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350109967",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350109971",
@@ -153,7 +263,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "BRIL Paul (attribué à)"
+   "extrait": "BRIL Paul (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350109971.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350109971",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350109972",
@@ -162,7 +282,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "BRIL Paul (attribué à)"
+   "extrait": "BRIL Paul (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350109972.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350109972",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0347000650",
@@ -189,7 +319,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Dole",
    "code": "genre_de",
-   "extrait": "BRIL Paul  (genre de)"
+   "extrait": "BRIL Paul  (genre de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0347000652.jpg",
+    "credit": "© Jean-Loup Mathieu (Eurêka) - utilisation soumise à autorisation ; © musée des beaux-arts de Dole",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0347000652",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0347000653",
@@ -198,7 +338,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Dole",
    "code": "genre_de",
-   "extrait": "BRIL Paul (genre de)"
+   "extrait": "BRIL Paul (genre de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0347000653.jpg",
+    "credit": "© Jean-Loup Mathieu (Eurêka) - utilisation soumise à autorisation ; © musée des beaux-arts de Dole",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0347000653",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "02110003533",
@@ -207,7 +357,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Rennes",
    "code": "attribue",
-   "extrait": "BRIL Paul (attribué à)"
+   "extrait": "BRIL Paul (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/02110003533.jpg",
+    "credit": "© Jean-Manuel Salingue",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/02110003533",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "05620001288",
@@ -216,7 +376,17 @@
    "musee": "musée des Augustins",
    "ville": "Toulouse",
    "code": "ecole_de",
-   "extrait": "BRIL Paul (école)"
+   "extrait": "BRIL Paul (école)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/05620001288.jpg",
+    "credit": "",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/05620001288",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50110001601",
@@ -225,7 +395,17 @@
    "musee": "musée national Magnin",
    "ville": "Dijon",
    "code": "suiveur_de",
-   "extrait": "BRIL Paul (peintre, suiveur)"
+   "extrait": "BRIL Paul (peintre, suiveur)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50110001601.jpg",
+    "credit": "© Réunion des musées nationaux-Grand Palais (musée Magnin) / Stéphane Maréchalle ; utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50110001601",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   }
  ],
  "version_donnee": "2026-07-01",

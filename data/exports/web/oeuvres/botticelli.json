@@ -28,7 +28,17 @@
    "musee": "musée du Petit Palais",
    "ville": "Avignon",
    "code": "ecole_de",
-   "extrait": "BOTTICELLI Sandro (dit, école)"
+   "extrait": "BOTTICELLI Sandro (dit, école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE012507.jpg",
+    "credit": "© René-Gabriel Ojéda ; Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE012507",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE012506",
@@ -37,7 +47,17 @@
    "musee": "musée du Petit Palais",
    "ville": "Avignon",
    "code": "ecole_de",
-   "extrait": "BOTTICELLI Sandro (dit, école)"
+   "extrait": "BOTTICELLI Sandro (dit, école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE012506.jpg",
+    "credit": "© René-Gabriel Ojéda ; Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE012506",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE012743",
@@ -46,7 +66,17 @@
    "musee": "musée du Petit Palais",
    "ville": "Avignon",
    "code": "ecole_de",
-   "extrait": "BOTTICELLI Sandro (dit, école)"
+   "extrait": "BOTTICELLI Sandro (dit, école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE012743.jpg",
+    "credit": "© René-Gabriel Ojéda ; Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE012743",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE016579",
@@ -55,7 +85,17 @@
    "musee": "musée du Petit Palais",
    "ville": "Avignon",
    "code": "ecole_de",
-   "extrait": "BOTTICELLI Sandro (dit, école)"
+   "extrait": "BOTTICELLI Sandro (dit, école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE016579.jpg",
+    "credit": "© René-Gabriel Ojéda ; Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE016579",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE019574",
@@ -84,7 +124,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "BOTTICELLI Sandro (dit, école)"
+   "extrait": "BOTTICELLI Sandro (dit, école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE024717.jpg",
+    "credit": "© Hervé Lewandowski#Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE024717",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE024762",
@@ -113,7 +163,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "BOTTICELLI Sandro (dit, école)"
+   "extrait": "BOTTICELLI Sandro (dit, école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE024763.jpg",
+    "credit": "Réunion des musées nationaux – utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE024763",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00000077305",
@@ -142,7 +202,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "BOTTICELLI Sandro (dit, école)"
+   "extrait": "BOTTICELLI Sandro (dit, école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350001834.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350001834",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350003539",
@@ -151,7 +221,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "BOTTICELLI Sandro (dit, école)"
+   "extrait": "BOTTICELLI Sandro (dit, école)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350003539.jpg",
+    "credit": "© RMN-Grand Palais (musée du Louvre) / Thierry Le Mage",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350003539",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350001185",
@@ -160,7 +240,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "BOTTICELLI Sandro (dit, école)"
+   "extrait": "BOTTICELLI Sandro (dit, école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350001185.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350001185",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350001184",
@@ -169,7 +259,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "BOTTICELLI Sandro (dit, école)"
+   "extrait": "BOTTICELLI Sandro (dit, école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350001184.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350001184",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350001186",
@@ -178,7 +278,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "BOTTICELLI Sandro (dit, école)"
+   "extrait": "BOTTICELLI Sandro (dit, école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350001186.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350001186",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06190001319",
@@ -187,7 +297,17 @@
    "musee": "musée de la Chartreuse",
    "ville": "Douai",
    "code": "ecole_de",
-   "extrait": "FILIPEPI Alessandro Mariano (école)"
+   "extrait": "FILIPEPI Alessandro Mariano (école)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06190001319.jpg",
+    "credit": "© musée de la Chartreuse à Douai",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06190001319",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06190001320",
@@ -205,7 +325,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "attribue",
-   "extrait": "Botticelli Sandro (1444-1510) (attribué à)"
+   "extrait": "Botticelli Sandro (1444-1510) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0332002781.jpg",
+    "credit": "© GUENAT Pierre",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0332002781",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   }
  ],
  "version_donnee": "2026-07-01",

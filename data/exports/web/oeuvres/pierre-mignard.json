@@ -52,7 +52,17 @@
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "ecole_de",
-   "extrait": "MIGNARD Pierre (école)"
+   "extrait": "MIGNARD Pierre (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE005362.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE005362",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE005357",
@@ -61,7 +71,17 @@
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "attribue",
-   "extrait": "MIGNARD Pierre (attribué)"
+   "extrait": "MIGNARD Pierre (attribué)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE005357.jpg",
+    "credit": "© Arnaudet ; Réunion des musées nationaux (Château de Versailles) - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE005357",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE006526",
@@ -130,7 +150,17 @@
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "ecole_de",
-   "extrait": "MIGNARD Pierre (école)"
+   "extrait": "MIGNARD Pierre (école)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE007139.jpg",
+    "credit": "RMN-Grand Palais",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE007139",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE011341",
@@ -159,7 +189,17 @@
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "ecole_de",
-   "extrait": "MIGNARD Pierre (école)"
+   "extrait": "MIGNARD Pierre (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE012086.jpg",
+    "credit": "© Gérard Blot ; Réunion des musées nationaux (Château de Versailles) - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE012086",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE013357",
@@ -168,7 +208,17 @@
    "musee": "musée national des châteaux de Versailles et de Trianon",
    "ville": "Versailles",
    "code": "ecole_de",
-   "extrait": "MIGNARD Pierre (école)"
+   "extrait": "MIGNARD Pierre (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE013357.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE013357",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE013802",
@@ -231,7 +281,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "MIGNARD Pierre (attribué)"
+   "extrait": "MIGNARD Pierre (attribué)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE018034.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE018034",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00000055990",
@@ -316,7 +376,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "genre_de",
-   "extrait": "MIGNARD Pierre (genre de)"
+   "extrait": "MIGNARD Pierre (genre de)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070000167.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070000167",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070000168",
@@ -325,7 +395,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "genre_de",
-   "extrait": "MIGNARD Pierre (genre de)"
+   "extrait": "MIGNARD Pierre (genre de)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070000168.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070000168",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070000166",
@@ -334,7 +414,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "atelier_de",
-   "extrait": "MIGNARD Pierre (atelier)"
+   "extrait": "MIGNARD Pierre (atelier)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070000166.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070000166",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350209198",
@@ -343,7 +433,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "MIGNARD Pierre (attribué à)"
+   "extrait": "MIGNARD Pierre (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350209198.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350209198",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350209197",
@@ -352,7 +452,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "MIGNARD Pierre (attribué à)"
+   "extrait": "MIGNARD Pierre (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350209197.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350209197",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350209199",
@@ -361,7 +471,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "MIGNARD Pierre (attribué à)"
+   "extrait": "MIGNARD Pierre (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350209199.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350209199",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350209200",
@@ -370,7 +490,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "MIGNARD Pierre (attribué à)"
+   "extrait": "MIGNARD Pierre (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350209200.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350209200",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350209195",
@@ -379,7 +509,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "MIGNARD Pierre (attribué à)"
+   "extrait": "MIGNARD Pierre (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350209195.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350209195",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350209196",
@@ -388,7 +528,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "MIGNARD Pierre (attribué à)"
+   "extrait": "MIGNARD Pierre (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350209196.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350209196",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208866",
@@ -397,7 +547,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
-   "extrait": "MIGNARD Pierre (atelier)"
+   "extrait": "MIGNARD Pierre (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208866.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208866",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350208864",
@@ -406,7 +566,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
-   "extrait": "MIGNARD Pierre (atelier)"
+   "extrait": "MIGNARD Pierre (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350208864.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350208864",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "04000001398",
@@ -415,7 +585,17 @@
    "musee": "musée Lambinet",
    "ville": "Versailles",
    "code": "atelier_de",
-   "extrait": "MIGNARD Pierre (atelier)"
+   "extrait": "MIGNARD Pierre (atelier)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/04000001398.jpg",
+    "credit": "© Musée Lambinet",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/04000001398",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "01720000928",
@@ -444,7 +624,17 @@
    "musee": "château musées",
    "ville": "Blois",
    "code": "attribue",
-   "extrait": "MIGNARD Pierre (attribué à)"
+   "extrait": "MIGNARD Pierre (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0271000077.jpg",
+    "credit": "© Château de Blois / F. Lauginie, 2008",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0271000077",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "07290022367",
@@ -453,7 +643,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Rouen",
    "code": "ecole_de",
-   "extrait": "MIGNARD Pierre (école)"
+   "extrait": "MIGNARD Pierre (école)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/07290022367.jpg",
+    "credit": "© Rouen, musée des beaux-arts",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/07290022367",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0003020239",
@@ -482,7 +682,17 @@
    "musee": "musée du Château des Rohan",
    "ville": "Saverne",
    "code": "atelier_de",
-   "extrait": "MIGNARD Pierre (atelier)"
+   "extrait": "MIGNARD Pierre (atelier)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0012000004.jpg",
+    "credit": "© cliché inventaire général (Commission régionale d’Inventaire Grand Est)",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0012000004",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "08870000079",
@@ -491,7 +701,17 @@
    "musee": "musée du palais Lascaris",
    "ville": "Nice",
    "code": "atelier_de",
-   "extrait": "MIGNARD Pierre (atelier, peintre)"
+   "extrait": "MIGNARD Pierre (atelier, peintre)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/08870000079.jpg",
+    "credit": "© Ville de Nice, Palais Lascaris, Umberto Leone",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/08870000079",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "03110000174",
@@ -520,7 +740,17 @@
    "musee": "musée des Beaux-Arts de Saint-Denis",
    "ville": "Reims",
    "code": "attribue",
-   "extrait": "MIGNARD Pierre (attribué à, atelier)"
+   "extrait": "MIGNARD Pierre (attribué à, atelier)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/03110002336.jpg",
+    "credit": "© Christian DEVLEESCHAUWER",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/03110002336",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   }
  ],
  "version_donnee": "2026-07-01",

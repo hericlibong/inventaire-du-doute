@@ -40,7 +40,17 @@
    "musee": "musée municipal",
    "ville": "La Roche-sur-Yon",
    "code": "attribue",
-   "extrait": "VERNET Joseph (attribué)"
+   "extrait": "VERNET Joseph (attribué)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/00000077065.jpg",
+    "credit": "© musée de la Roche-sur-Yon",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/00000077065",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00000077064",
@@ -49,7 +59,17 @@
    "musee": "musée municipal",
    "ville": "La Roche-sur-Yon",
    "code": "attribue",
-   "extrait": "VERNET Joseph (attribué)"
+   "extrait": "VERNET Joseph (attribué)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/00000077064.jpg",
+    "credit": "© musée de la Roche-sur-Yon",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/00000077064",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE016353",
@@ -67,7 +87,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Valenciennes",
    "code": "maniere_de",
-   "extrait": "VERNET Joseph (manière de)"
+   "extrait": "VERNET Joseph (manière de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06380004681.jpg",
+    "credit": "Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06380004681",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "01720000111",
@@ -94,7 +124,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Chambéry",
    "code": "atelier_de",
-   "extrait": "Vernet Joseph (1714-1789) (atelier)"
+   "extrait": "Vernet Joseph (1714-1789) (atelier)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/10480004941.jpg",
+    "credit": "Bouchayer, Giroud",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/10480004941",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "01370004899",
@@ -103,7 +143,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Dijon",
    "code": "attribue",
-   "extrait": "VERNET Joseph (attribué à)"
+   "extrait": "VERNET Joseph (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/01370004899.jpg",
+    "credit": "© Dijon, musée des beaux-arts",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/01370004899",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50130000342",
@@ -121,7 +171,17 @@
    "musee": "musée Lambinet",
    "ville": "Versailles",
    "code": "attribue",
-   "extrait": "VERNET Joseph (attribué à)"
+   "extrait": "VERNET Joseph (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/04000001600.jpg",
+    "credit": "Musée Lambinet, Ville de Versailles",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/04000001600",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE023518",
@@ -130,7 +190,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Bordeaux",
    "code": "attribue",
-   "extrait": "VERNET Joseph (attribué)"
+   "extrait": "VERNET Joseph (attribué)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE023518.jpg",
+    "credit": "© L. Gauthier",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE023518",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE023519",
@@ -139,7 +209,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Bordeaux",
    "code": "attribue",
-   "extrait": "VERNET Joseph (attribué)"
+   "extrait": "VERNET Joseph (attribué)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE023519.jpg",
+    "credit": "© Lysiane Gauthier",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE023519",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE023516",
@@ -148,7 +228,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Bordeaux",
    "code": "ecole_de",
-   "extrait": "VERNET Joseph (école)"
+   "extrait": "VERNET Joseph (école)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE023516.jpg",
+    "credit": "© L. Gauthier",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE023516",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "07430007254",
@@ -157,7 +247,17 @@
    "musee": "musée des Beaux-Arts",
    "ville": "Nantes",
    "code": "attribue",
-   "extrait": "VERNET Claude Joseph (attribué à)"
+   "extrait": "VERNET Claude Joseph (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/07430007254.jpg",
+    "credit": "Gérard Blot",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/07430007254",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "07430005280",
@@ -166,7 +266,17 @@
    "musee": "musée des Beaux-Arts",
    "ville": "Nantes",
    "code": "atelier_de",
-   "extrait": "VERNET Claude Joseph (atelier)"
+   "extrait": "VERNET Claude Joseph (atelier)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/07430005280.jpg",
+    "credit": "Gérard Blot",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/07430005280",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50110000527",
@@ -175,7 +285,17 @@
    "musee": "musée national Magnin",
    "ville": "Dijon",
    "code": "ecole_de",
-   "extrait": "VERNET Joseph (peintre, école)"
+   "extrait": "VERNET Joseph (peintre, école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50110000527.jpg",
+    "credit": "© Réunion des musées nationaux-Grand Palais (musée Magnin) / Michel Urtado ; utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50110000527",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50130000512",
@@ -193,7 +313,17 @@
    "musee": "musée des beaux-arts et galerie David-d'Angers",
    "ville": "Angers",
    "code": "suiveur_de",
-   "extrait": "VERNET Claude Joseph (suiveur)"
+   "extrait": "VERNET Claude Joseph (suiveur)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/07480012486.jpg",
+    "credit": "© P David ; © Angers, musées d'Angers",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/07480012486",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "07480012487",
@@ -202,7 +332,17 @@
    "musee": "musée des beaux-arts et galerie David-d'Angers",
    "ville": "Angers",
    "code": "suiveur_de",
-   "extrait": "VERNET Claude Joseph (suiveur)"
+   "extrait": "VERNET Claude Joseph (suiveur)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/07480012487.jpg",
+    "credit": "© P David ; © Angers, musées d'Angers",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/07480012487",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0491001439",
@@ -211,7 +351,17 @@
    "musee": "musée Hyacinthe Rigaud",
    "ville": "Perpignan",
    "code": "point_interrogation",
-   "extrait": "VERNET Claude Joseph (?)"
+   "extrait": "VERNET Claude Joseph (?)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0491001439.jpg",
+    "credit": "© Claire Muchir, ville de Perpignan",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0491001439",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "02650001146",
@@ -220,7 +370,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Tours",
    "code": "ecole_de",
-   "extrait": "Vernet Joseph (1714-1789) (école)"
+   "extrait": "Vernet Joseph (1714-1789) (école)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/02650001146.jpg",
+    "credit": "© musée des beaux-arts de Tours",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/02650001146",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "03110041569",
@@ -229,7 +389,17 @@
    "musee": "musée des Beaux-Arts de Saint-Denis",
    "ville": "Reims",
    "code": "attribue",
-   "extrait": "VERNET Joseph (attribué à, peintre)"
+   "extrait": "VERNET Joseph (attribué à, peintre)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/03110041569.jpg",
+    "credit": "© Christian DEVLEESCHAUWER",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/03110041569",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0794012647",
@@ -238,7 +408,17 @@
    "musee": "musée municipal",
    "ville": "Soissons",
    "code": "attribue",
-   "extrait": "Vernet Joseph (1714-1789) (attribué à)"
+   "extrait": "Vernet Joseph (1714-1789) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0794012647.jpg",
+    "credit": "© musée municipal de Soissons",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0794012647",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "04000013429",
@@ -247,7 +427,17 @@
    "musee": "musée Lambinet",
    "ville": "Versailles",
    "code": "attribue",
-   "extrait": "Vernet Joseph (1714-1789) (attribué à)"
+   "extrait": "Vernet Joseph (1714-1789) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/04000013429.jpg",
+    "credit": "Art Shooting",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/04000013429",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "04000013437",
@@ -256,7 +446,17 @@
    "musee": "musée Lambinet",
    "ville": "Versailles",
    "code": "attribue",
-   "extrait": "Vernet Joseph (1714-1789) (attribué à)"
+   "extrait": "Vernet Joseph (1714-1789) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/04000013437.jpg",
+    "credit": "Art Shooting",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/04000013437",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "04000013425",
@@ -265,7 +465,17 @@
    "musee": "musée Lambinet",
    "ville": "Versailles",
    "code": "attribue",
-   "extrait": "Vernet Joseph (1714-1789) (attribué à)"
+   "extrait": "Vernet Joseph (1714-1789) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/04000013425.jpg",
+    "credit": "Art Shooting",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/04000013425",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "04000013428",
@@ -274,7 +484,17 @@
    "musee": "musée Lambinet",
    "ville": "Versailles",
    "code": "attribue",
-   "extrait": "Vernet Joseph (1714-1789) (attribué à)"
+   "extrait": "Vernet Joseph (1714-1789) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/04000013428.jpg",
+    "credit": "Art Shooting",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/04000013428",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "04000013408",
@@ -283,7 +503,17 @@
    "musee": "musée Lambinet",
    "ville": "Versailles",
    "code": "attribue",
-   "extrait": "Vernet Joseph (1714-1789) (attribué à)"
+   "extrait": "Vernet Joseph (1714-1789) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/04000013408.jpg",
+    "credit": "Art Shooting",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/04000013408",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "04000013431",
@@ -292,7 +522,17 @@
    "musee": "musée Lambinet",
    "ville": "Versailles",
    "code": "attribue",
-   "extrait": "Vernet Joseph (1714-1789) (attribué à)"
+   "extrait": "Vernet Joseph (1714-1789) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/04000013431.jpg",
+    "credit": "Art Shooting",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/04000013431",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "04000013426",
@@ -301,7 +541,17 @@
    "musee": "musée Lambinet",
    "ville": "Versailles",
    "code": "attribue",
-   "extrait": "Vernet Joseph (1714-1789) (attribué à)"
+   "extrait": "Vernet Joseph (1714-1789) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/04000013426.jpg",
+    "credit": "Art Shooting",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/04000013426",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "04000013427",
@@ -310,7 +560,17 @@
    "musee": "musée Lambinet",
    "ville": "Versailles",
    "code": "attribue",
-   "extrait": "Vernet Joseph (1714-1789) (attribué à)"
+   "extrait": "Vernet Joseph (1714-1789) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/04000013427.jpg",
+    "credit": "Art Shooting",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/04000013427",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "04000013438",
@@ -319,7 +579,17 @@
    "musee": "musée Lambinet",
    "ville": "Versailles",
    "code": "attribue",
-   "extrait": "Vernet Joseph (1714-1789) (attribué à)"
+   "extrait": "Vernet Joseph (1714-1789) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/04000013438.jpg",
+    "credit": "Art Shooting",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/04000013438",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "04000013439",
@@ -328,7 +598,17 @@
    "musee": "musée Lambinet",
    "ville": "Versailles",
    "code": "attribue",
-   "extrait": "Vernet Joseph (1714-1789) (attribué à)"
+   "extrait": "Vernet Joseph (1714-1789) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/04000013439.jpg",
+    "credit": "Art Shooting",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/04000013439",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "04000013430",
@@ -337,7 +617,17 @@
    "musee": "musée Lambinet",
    "ville": "Versailles",
    "code": "attribue",
-   "extrait": "Vernet Joseph (1714-1789) (attribué à)"
+   "extrait": "Vernet Joseph (1714-1789) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/04000013430.jpg",
+    "credit": "Art Shooting",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/04000013430",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "04000013441",
@@ -346,7 +636,17 @@
    "musee": "musée Lambinet",
    "ville": "Versailles",
    "code": "attribue",
-   "extrait": "Vernet Joseph (1714-1789) (attribué à)"
+   "extrait": "Vernet Joseph (1714-1789) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/04000013441.jpg",
+    "credit": "Art Shooting",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/04000013441",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "04000013432",
@@ -355,7 +655,17 @@
    "musee": "musée Lambinet",
    "ville": "Versailles",
    "code": "attribue",
-   "extrait": "Vernet Joseph (1714-1789) (attribué à)"
+   "extrait": "Vernet Joseph (1714-1789) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/04000013432.jpg",
+    "credit": "Art Shooting",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/04000013432",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "04000013440",
@@ -364,7 +674,17 @@
    "musee": "musée Lambinet",
    "ville": "Versailles",
    "code": "attribue",
-   "extrait": "Vernet Joseph (1714-1789) (attribué à)"
+   "extrait": "Vernet Joseph (1714-1789) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/04000013440.jpg",
+    "credit": "Art Shooting",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/04000013440",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "04000013433",
@@ -373,7 +693,17 @@
    "musee": "musée Lambinet",
    "ville": "Versailles",
    "code": "attribue",
-   "extrait": "Vernet Joseph (1714-1789) (attribué à)"
+   "extrait": "Vernet Joseph (1714-1789) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/04000013433.jpg",
+    "credit": "Art Shooting",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/04000013433",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "04000013434",
@@ -382,7 +712,17 @@
    "musee": "musée Lambinet",
    "ville": "Versailles",
    "code": "attribue",
-   "extrait": "Vernet Joseph (1714-1789) (attribué à)"
+   "extrait": "Vernet Joseph (1714-1789) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/04000013434.jpg",
+    "credit": "Art Shooting",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/04000013434",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "04000013435",
@@ -391,7 +731,17 @@
    "musee": "musée Lambinet",
    "ville": "Versailles",
    "code": "attribue",
-   "extrait": "Vernet Joseph (1714-1789) (attribué à)"
+   "extrait": "Vernet Joseph (1714-1789) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/04000013435.jpg",
+    "credit": "Art Shooting",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/04000013435",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "04000013436",
@@ -400,7 +750,17 @@
    "musee": "musée Lambinet",
    "ville": "Versailles",
    "code": "attribue",
-   "extrait": "Vernet Joseph (1714-1789) (attribué à)"
+   "extrait": "Vernet Joseph (1714-1789) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/04000013436.jpg",
+    "credit": "Art Shooting",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/04000013436",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0949001606",
@@ -409,7 +769,17 @@
    "musee": "bibliothèque-musée Inguimbertine",
    "ville": "Carpentras",
    "code": "attribue",
-   "extrait": "Vernet Joseph (1714-1789) (attribué à)"
+   "extrait": "Vernet Joseph (1714-1789) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0949001606.jpg",
+    "credit": "Bruno Preschesmisky",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0949001606",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   }
  ],
  "version_donnee": "2026-07-01",

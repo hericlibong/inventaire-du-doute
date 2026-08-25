@@ -24,7 +24,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
-   "extrait": "INGRES Jean Auguste Dominique (atelier)"
+   "extrait": "INGRES Jean Auguste Dominique (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE001570.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation © Gérard Blot",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE001570",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE016750",
@@ -62,7 +72,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "atelier_de",
-   "extrait": "INGRES Jean Auguste Dominique (atelier)"
+   "extrait": "INGRES Jean Auguste Dominique (atelier)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070001463.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070001463",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070001464",
@@ -71,7 +91,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "atelier_de",
-   "extrait": "INGRES Jean Auguste Dominique (atelier)"
+   "extrait": "INGRES Jean Auguste Dominique (atelier)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070001464.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070001464",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070001453",
@@ -80,7 +110,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070001453.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070001453",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070001454",
@@ -149,7 +189,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "atelier_de",
-   "extrait": "INGRES Jean Auguste Dominique (atelier)"
+   "extrait": "INGRES Jean Auguste Dominique (atelier)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070001460.jpg",
+    "credit": "© Guy Roumagnac",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070001460",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070002128",
@@ -158,7 +208,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070002128.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070002128",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070001465",
@@ -167,7 +227,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "atelier_de",
-   "extrait": "INGRES Jean Auguste Dominique (atelier)"
+   "extrait": "INGRES Jean Auguste Dominique (atelier)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070001465.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070001465",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070001458",
@@ -176,7 +246,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "atelier_de",
-   "extrait": "INGRES Jean Auguste Dominique (atelier)"
+   "extrait": "INGRES Jean Auguste Dominique (atelier)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070001458.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070001458",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070001457",
@@ -185,7 +265,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "atelier_de",
-   "extrait": "INGRES Jean Auguste Dominique (atelier)"
+   "extrait": "INGRES Jean Auguste Dominique (atelier)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070001457.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070001457",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070001461",
@@ -194,7 +284,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "atelier_de",
-   "extrait": "INGRES Jean Auguste Dominique (atelier)"
+   "extrait": "INGRES Jean Auguste Dominique (atelier)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070001461.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070001461",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350022056",
@@ -203,7 +303,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350022056.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350022056",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350015740",
@@ -212,7 +322,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350015740.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350015740",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070003323",
@@ -221,7 +341,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "point_interrogation",
-   "extrait": "INGRES Jean Auguste Dominique (?)"
+   "extrait": "INGRES Jean Auguste Dominique (?)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070003323.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070003323",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009319",
@@ -230,7 +360,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009319.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009319",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009337",
@@ -239,7 +379,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009337.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009337",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009441",
@@ -248,7 +398,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009441.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009441",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009305",
@@ -257,7 +417,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009305.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009305",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009450",
@@ -266,7 +436,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009450.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009450",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009323",
@@ -275,7 +455,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009323.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009323",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009410",
@@ -284,7 +474,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009410.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009410",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009409",
@@ -293,7 +493,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009409.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009409",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009445",
@@ -302,7 +512,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009445.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009445",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009356",
@@ -311,7 +531,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009356.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009356",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009313",
@@ -320,7 +550,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009313.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009313",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009362",
@@ -329,7 +569,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009362.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009362",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009427",
@@ -338,7 +588,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009427.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009427",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009293",
@@ -347,7 +607,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009293.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009293",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009342",
@@ -356,7 +626,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009342.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009342",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009338",
@@ -365,7 +645,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009338.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009338",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009440",
@@ -374,7 +664,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009440.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009440",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009328",
@@ -383,7 +683,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009328.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009328",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009449",
@@ -392,7 +702,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009449.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009449",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009443",
@@ -401,7 +721,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009443.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009443",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009355",
@@ -410,7 +740,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009355.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009355",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009434",
@@ -419,7 +759,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009434.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009434",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009359",
@@ -428,7 +778,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009359.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009359",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009336",
@@ -437,7 +797,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009336.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009336",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009318",
@@ -446,7 +816,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009318.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009318",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009425",
@@ -455,7 +835,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009425.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009425",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009428",
@@ -464,7 +854,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009428.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009428",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009306",
@@ -473,7 +873,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009306.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009306",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009332",
@@ -482,7 +892,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009332.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009332",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009311",
@@ -491,7 +911,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009311.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009311",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009404",
@@ -500,7 +930,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009404.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009404",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009451",
@@ -509,7 +949,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009451.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009451",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009442",
@@ -518,7 +968,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009442.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009442",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009341",
@@ -527,7 +987,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009341.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009341",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009361",
@@ -536,7 +1006,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009361.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009361",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009307",
@@ -545,7 +1025,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009307.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009307",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009304",
@@ -554,7 +1044,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009304.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009304",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009320",
@@ -563,7 +1063,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009320.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009320",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009334",
@@ -572,7 +1082,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009334.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009334",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009426",
@@ -581,7 +1101,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009426.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009426",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009444",
@@ -590,7 +1120,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009444.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009444",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009292",
@@ -599,7 +1139,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009292.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009292",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009430",
@@ -608,7 +1158,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009430.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009430",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009340",
@@ -617,7 +1177,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009340.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009340",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009329",
@@ -626,7 +1196,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009329.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009329",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009314",
@@ -635,7 +1215,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009314.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009314",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009295",
@@ -644,7 +1234,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009295.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009295",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009309",
@@ -653,7 +1253,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009309.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009309",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009360",
@@ -662,7 +1272,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009360.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009360",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009294",
@@ -671,7 +1291,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009294.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009294",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009312",
@@ -680,7 +1310,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009312.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009312",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009357",
@@ -689,7 +1329,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009357.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009357",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009448",
@@ -698,7 +1348,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009448.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009448",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009316",
@@ -707,7 +1367,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009316.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009316",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009438",
@@ -716,7 +1386,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009438.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009438",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009330",
@@ -725,7 +1405,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009330.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009330",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009331",
@@ -734,7 +1424,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009331.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009331",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009291",
@@ -743,7 +1443,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009291.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009291",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009447",
@@ -752,7 +1462,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009447.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009447",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009358",
@@ -761,7 +1481,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009358.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009358",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009317",
@@ -770,7 +1500,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009317.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009317",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009327",
@@ -779,7 +1519,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009327.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009327",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009446",
@@ -788,7 +1538,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009446.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009446",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009297",
@@ -797,7 +1557,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009297.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009297",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009403",
@@ -806,7 +1576,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009403.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009403",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009432",
@@ -815,7 +1595,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009432.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009432",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009429",
@@ -824,7 +1614,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009429.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009429",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009433",
@@ -833,7 +1633,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009433.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009433",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009324",
@@ -842,7 +1652,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009324.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009324",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009343",
@@ -851,7 +1671,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009343.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009343",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009333",
@@ -860,7 +1690,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009333.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009333",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009315",
@@ -869,7 +1709,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009315.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009315",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009437",
@@ -878,7 +1728,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009437.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009437",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009326",
@@ -887,7 +1747,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009326.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009326",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009321",
@@ -896,7 +1766,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009321.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009321",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009308",
@@ -905,7 +1785,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009308.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009308",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009435",
@@ -914,7 +1804,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009435.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009435",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009436",
@@ -923,7 +1823,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009436.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009436",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009290",
@@ -932,7 +1842,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009290.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009290",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009405",
@@ -941,7 +1861,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009405.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009405",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009335",
@@ -950,7 +1880,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009335.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009335",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009439",
@@ -959,7 +1899,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009439.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009439",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009325",
@@ -968,7 +1918,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009325.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009325",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009310",
@@ -977,7 +1937,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009310.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009310",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009322",
@@ -986,7 +1956,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009322.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009322",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070009339",
@@ -995,7 +1975,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070009339.jpg",
+    "credit": "© Roumagnac Guy",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070009339",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052567",
@@ -1004,7 +1994,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052567.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052567",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052257",
@@ -1013,7 +2013,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052257.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052257",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052394",
@@ -1022,7 +2032,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052394.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052394",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052079",
@@ -1031,7 +2051,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052079.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052079",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052118",
@@ -1040,7 +2070,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052118.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052118",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052131",
@@ -1049,7 +2089,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052131.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052131",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052062",
@@ -1058,7 +2108,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052062.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052062",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052245",
@@ -1067,7 +2127,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052245.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052245",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052472",
@@ -1076,7 +2146,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052472.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052472",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052557",
@@ -1085,7 +2165,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052557.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052557",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052297",
@@ -1103,7 +2193,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052491.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052491",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052225",
@@ -1112,7 +2212,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052225.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052225",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052239",
@@ -1121,7 +2231,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052239.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052239",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052070",
@@ -1130,7 +2250,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052070.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052070",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052253",
@@ -1139,7 +2269,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052253.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052253",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052468",
@@ -1148,7 +2288,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052468.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052468",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052563",
@@ -1157,7 +2307,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052563.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052563",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052104",
@@ -1166,7 +2326,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052104.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052104",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052072",
@@ -1175,7 +2345,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052072.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052072",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052474",
@@ -1184,7 +2364,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052474.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052474",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052516",
@@ -1193,7 +2383,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052516.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052516",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052561",
@@ -1202,7 +2402,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052561.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052561",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052139",
@@ -1211,7 +2421,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052139.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052139",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052414",
@@ -1220,7 +2440,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052414.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052414",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052215",
@@ -1229,7 +2459,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052215.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052215",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052287",
@@ -1238,7 +2478,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052287.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052287",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052076",
@@ -1247,7 +2497,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052076.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052076",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052211",
@@ -1256,7 +2516,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052211.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052211",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052375",
@@ -1265,7 +2535,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052375.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052375",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052377",
@@ -1274,7 +2554,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052377.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052377",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052094",
@@ -1283,7 +2573,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052094.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052094",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052068",
@@ -1292,7 +2592,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052068.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052068",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052261",
@@ -1301,7 +2611,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052261.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052261",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052084",
@@ -1310,7 +2630,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052084.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052084",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052078",
@@ -1319,7 +2649,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052078.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052078",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052221",
@@ -1328,7 +2668,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052221.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052221",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052143",
@@ -1337,7 +2687,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052143.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052143",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052100",
@@ -1346,7 +2706,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052100.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052100",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052475",
@@ -1355,7 +2725,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052475.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052475",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052088",
@@ -1364,7 +2744,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052088.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052088",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052056",
@@ -1373,7 +2763,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052056.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052056",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052048",
@@ -1382,7 +2782,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052048.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052048",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052470",
@@ -1391,7 +2801,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052470.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052470",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052213",
@@ -1400,7 +2820,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052213.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052213",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052478",
@@ -1409,7 +2839,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052478.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052478",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052054",
@@ -1418,7 +2858,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052054.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052054",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052541",
@@ -1427,7 +2877,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052541.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052541",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052480",
@@ -1436,7 +2896,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052480.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052480",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052086",
@@ -1445,7 +2915,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052086.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052086",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052135",
@@ -1454,7 +2934,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052135.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052135",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052133",
@@ -1463,7 +2953,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052133.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052133",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052543",
@@ -1472,7 +2972,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052543.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052543",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052237",
@@ -1481,7 +2991,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052237.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052237",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052483",
@@ -1490,7 +3010,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052483.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052483",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052379",
@@ -1499,7 +3029,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052379.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052379",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052277",
@@ -1508,7 +3048,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052277.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052277",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052141",
@@ -1517,7 +3067,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052141.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052141",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052145",
@@ -1526,7 +3086,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052145.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052145",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052112",
@@ -1535,7 +3105,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052112.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052112",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052393",
@@ -1544,7 +3124,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052393.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052393",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052412",
@@ -1553,7 +3143,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052412.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052412",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052255",
@@ -1562,7 +3162,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052255.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052255",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052398",
@@ -1571,7 +3181,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052398.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052398",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052223",
@@ -1580,7 +3200,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052223.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052223",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052066",
@@ -1589,7 +3219,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052066.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052066",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052396",
@@ -1598,7 +3238,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052396.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052396",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052074",
@@ -1607,7 +3257,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052074.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052074",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052504",
@@ -1616,7 +3276,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052504.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052504",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052539",
@@ -1625,7 +3295,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052539.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052539",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052247",
@@ -1634,7 +3314,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052247.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052247",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052410",
@@ -1643,7 +3333,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052410.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052410",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052251",
@@ -1652,7 +3352,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052251.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052251",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052106",
@@ -1661,7 +3371,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052106.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052106",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052502",
@@ -1670,7 +3390,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052502.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052502",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052110",
@@ -1679,7 +3409,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052110.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052110",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052114",
@@ -1688,7 +3428,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052114.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052114",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052064",
@@ -1697,7 +3447,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052064.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052064",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052249",
@@ -1706,7 +3466,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052249.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052249",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052120",
@@ -1715,7 +3485,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052120.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052120",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052129",
@@ -1724,7 +3504,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052129.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052129",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052127",
@@ -1733,7 +3523,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052127.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052127",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052137",
@@ -1742,7 +3542,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052137.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052137",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052259",
@@ -1751,7 +3561,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052259.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052259",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052233",
@@ -1760,7 +3580,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052233.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052233",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052383",
@@ -1769,7 +3599,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052383.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052383",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052219",
@@ -1778,7 +3618,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052219.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052219",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052406",
@@ -1796,7 +3646,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070043334.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070043334",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052092",
@@ -1805,7 +3665,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052092.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052092",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052102",
@@ -1814,7 +3684,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052102.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052102",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052058",
@@ -1823,7 +3703,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052058.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052058",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070046416",
@@ -1841,7 +3731,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052082.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052082",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052096",
@@ -1850,7 +3750,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052096.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052096",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070052283",
@@ -1859,7 +3769,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070052283.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070052283",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070043338",
@@ -1868,7 +3788,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070043338.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070043338",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070043332",
@@ -1877,7 +3807,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070043332.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070043332",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06070043336",
@@ -1886,7 +3826,17 @@
    "musee": "musée Ingres Bourdelle",
    "ville": "Montauban",
    "code": "attribue",
-   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à"
+   "extrait": "Ingres Jean-Auguste-Dominique (1780-1867) attribué à",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06070043336.jpg",
+    "credit": "© Jeanneteau Marc ; © musée de Montauban",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06070043336",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   }
  ],
  "version_donnee": "2026-07-01",

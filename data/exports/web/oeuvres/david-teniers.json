@@ -49,7 +49,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "Téniers David (1610-1690) (école)"
+   "extrait": "Téniers David (1610-1690) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE008890.jpg",
+    "credit": "Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE008890",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE008864",
@@ -58,7 +68,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
-   "extrait": "Téniers David (1610-1690) (atelier)"
+   "extrait": "Téniers David (1610-1690) (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE008864.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation © Thierry Le Mage",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE008864",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE008824",
@@ -67,7 +87,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "atelier_de",
-   "extrait": "TENIERS le Jeune (atelier)"
+   "extrait": "TENIERS le Jeune (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE008824.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation © René-Gabriel Ojéda",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE008824",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE008863",
@@ -114,7 +144,17 @@
    "musee": "musée des Beaux-Arts",
    "ville": "Lille",
    "code": "atelier_de",
-   "extrait": "Téniers David (1610-1690) (atelier)"
+   "extrait": "Téniers David (1610-1690) (atelier)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE017069.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation © Jacques Quecq d'Henripret",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE017069",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE017073",
@@ -123,7 +163,17 @@
    "musee": "musée des Beaux-Arts",
    "ville": "Lille",
    "code": "ecole_de",
-   "extrait": "Téniers David (1610-1690) (école)"
+   "extrait": "Téniers David (1610-1690) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE017073.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation © René-Gabriel Ojéda",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE017073",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE020721",
@@ -150,7 +200,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Caen",
    "code": "attribue",
-   "extrait": "Téniers David (1610-1690) (attribué à)"
+   "extrait": "Téniers David (1610-1690) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE021645.jpg",
+    "credit": "Musée des Beaux-Arts de Caen, cliché Martine Seyve",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE021645",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE021644",
@@ -159,7 +219,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Caen",
    "code": "attribue",
-   "extrait": "Téniers David (1610-1690) (attribué à)"
+   "extrait": "Téniers David (1610-1690) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE021644.jpg",
+    "credit": "Musée des Beaux-Arts de Caen, cliché Martine Seyve",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE021644",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE026159",
@@ -168,7 +238,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Bordeaux",
    "code": "attribue",
-   "extrait": "Téniers David (1610-1690) (attribué à)"
+   "extrait": "Téniers David (1610-1690) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE026159.jpg",
+    "credit": "© Lysiane Gauthier",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE026159",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00000062933",
@@ -186,7 +266,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Rennes",
    "code": "attribue",
-   "extrait": "Téniers David (1610-1690) (attribué à)"
+   "extrait": "Téniers David (1610-1690) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/00000094623.jpg",
+    "credit": "© musée des beaux-arts de Rennes",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/00000094623",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350500356",
@@ -195,7 +285,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "Téniers David (1610-1690) (école)"
+   "extrait": "Téniers David (1610-1690) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350500356.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350500356",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0347001325",
@@ -213,7 +313,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Dole",
    "code": "genre_de",
-   "extrait": "Téniers David (1610-1690) (genre de)"
+   "extrait": "Téniers David (1610-1690) (genre de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0347001326.jpg",
+    "credit": "Jean-Loup Mathieu (Eurêka) - utilisation soumise à autorisation ; musée des beaux-arts de Dole",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0347001326",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0347001327",
@@ -222,7 +332,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Dole",
    "code": "genre_de",
-   "extrait": "Téniers David (1610-1690) (genre de)"
+   "extrait": "Téniers David (1610-1690) (genre de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0347001327.jpg",
+    "credit": "© Jean-Loup Mathieu (Eurêka) - utilisation soumise à autorisation ; © musée des beaux-arts de Dole",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0347001327",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0347001754",
@@ -231,7 +351,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Dole",
    "code": "genre_de",
-   "extrait": "Téniers David (1610-1690) (genre de)"
+   "extrait": "Téniers David (1610-1690) (genre de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0347001754.jpg",
+    "credit": "© Jean-Loup Mathieu (Eurêka) - utilisation soumise à autorisation ; © musée des beaux-arts de Dole",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0347001754",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0347001753",
@@ -240,7 +370,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Dole",
    "code": "genre_de",
-   "extrait": "Téniers David (1610-1690) (genre de)"
+   "extrait": "Téniers David (1610-1690) (genre de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0347001753.jpg",
+    "credit": "© Jean-Loup Mathieu (Eurêka) - utilisation soumise à autorisation ; © musée des beaux-arts de Dole",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0347001753",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "10480006517",
@@ -249,7 +389,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Chambéry",
    "code": "maniere_de",
-   "extrait": "Téniers David (1610-1690) (manière de)"
+   "extrait": "Téniers David (1610-1690) (manière de)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/10480006517.jpg",
+    "credit": "Bouchayer, Giroud",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/10480006517",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "10480006522",
@@ -258,7 +408,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Chambéry",
    "code": "maniere_de",
-   "extrait": "Téniers David (1610-1690) (manière de)"
+   "extrait": "Téniers David (1610-1690) (manière de)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/10480006522.jpg",
+    "credit": "Bouchayer, Giroud",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/10480006522",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "10480004597",
@@ -267,7 +427,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Chambéry",
    "code": "atelier_de",
-   "extrait": "Téniers David (1610-1690) (atelier)"
+   "extrait": "Téniers David (1610-1690) (atelier)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/10480004597.jpg",
+    "credit": "Bouchayer, Giroud",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/10480004597",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50130000465",
@@ -276,7 +446,17 @@
    "musee": "musée national du château de Fontainebleau",
    "ville": "Fontainebleau",
    "code": "attribue",
-   "extrait": "Téniers David (1610-1690) (attribué à)"
+   "extrait": "Téniers David (1610-1690) (attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50130000465.jpg",
+    "credit": "© Gérard Blot ; © Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50130000465",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "04000000116",
@@ -285,7 +465,17 @@
    "musee": "musée Lambinet",
    "ville": "Versailles",
    "code": "atelier_de",
-   "extrait": "Téniers David (1610-1690) (atelier)"
+   "extrait": "Téniers David (1610-1690) (atelier)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/04000000116.jpg",
+    "credit": "Chatel Thierry",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/04000000116",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "04000000110",
@@ -294,7 +484,17 @@
    "musee": "musée Lambinet",
    "ville": "Versailles",
    "code": "attribue",
-   "extrait": "Téniers David (1610-1690) (attribué à)"
+   "extrait": "Téniers David (1610-1690) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/04000000110.jpg",
+    "credit": "Art Shooting",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/04000000110",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "04000000120",
@@ -303,7 +503,17 @@
    "musee": "musée Lambinet",
    "ville": "Versailles",
    "code": "atelier_de",
-   "extrait": "Téniers David (1610-1690) (atelier)"
+   "extrait": "Téniers David (1610-1690) (atelier)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/04000000120.jpg",
+    "credit": "Chatel Thierry",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/04000000120",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "07430007134",
@@ -312,7 +522,17 @@
    "musee": "musée des Beaux-Arts",
    "ville": "Nantes",
    "code": "genre_de",
-   "extrait": "Téniers David (1610-1690) (genre de)"
+   "extrait": "Téniers David (1610-1690) (genre de)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/07430007134.jpg",
+    "credit": "Alain Guillard",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/07430007134",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "07430007012",
@@ -321,7 +541,17 @@
    "musee": "musée des Beaux-Arts",
    "ville": "Nantes",
    "code": "atelier_de",
-   "extrait": "Téniers David (1610-1690) (atelier)"
+   "extrait": "Téniers David (1610-1690) (atelier)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/07430007012.jpg",
+    "credit": "Alain Guillard",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/07430007012",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "07430007025",
@@ -339,7 +569,17 @@
    "musee": "musée des Beaux-Arts",
    "ville": "Nantes",
    "code": "genre_de",
-   "extrait": "Téniers David (1610-1690) (genre de)"
+   "extrait": "Téniers David (1610-1690) (genre de)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/07430007081.jpg",
+    "credit": "C. CLOS",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/07430007081",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "07430007011",
@@ -366,7 +606,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Bordeaux",
    "code": "ecole_de",
-   "extrait": "Téniers David (1610-1690) (école)"
+   "extrait": "Téniers David (1610-1690) (école)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE023455.jpg",
+    "credit": "© Lysiane Gauthier",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE023455",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE023453",
@@ -375,7 +625,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Bordeaux",
    "code": "ecole_de",
-   "extrait": "Téniers David (1610-1690) (école)"
+   "extrait": "Téniers David (1610-1690) (école)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE023453.jpg",
+    "credit": "© L. Gauthier",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE023453",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE023457",
@@ -384,7 +644,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Bordeaux",
    "code": "ecole_de",
-   "extrait": "Téniers David (1610-1690) (école)"
+   "extrait": "Téniers David (1610-1690) (école)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE023457.jpg",
+    "credit": "© L. Gauthier",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE023457",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE023456",
@@ -393,7 +663,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Bordeaux",
    "code": "ecole_de",
-   "extrait": "Téniers David (1610-1690) (école)"
+   "extrait": "Téniers David (1610-1690) (école)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE023456.jpg",
+    "credit": "© Lysiane Gauthier",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE023456",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "000PE023452",
@@ -402,7 +682,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Bordeaux",
    "code": "ecole_de",
-   "extrait": "Téniers David (1610-1690) (école)"
+   "extrait": "Téniers David (1610-1690) (école)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/000PE023452.jpg",
+    "credit": "© Lysiane Gauthier",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/000PE023452",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06650001640",
@@ -411,7 +701,17 @@
    "musee": "musée d'Art et d'Histoire",
    "ville": "Lisieux",
    "code": "ecole_de",
-   "extrait": "Téniers David (1582-1649) (école)"
+   "extrait": "Téniers David (1582-1649) (école)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06650001640.jpg",
+    "credit": "© agence Vallini",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06650001640",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350110752",
@@ -420,7 +720,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "Téniers David (1610-1690) (école)"
+   "extrait": "Téniers David (1610-1690) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350110752.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350110752",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350110736",
@@ -429,7 +739,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "Téniers David (1610-1690) (école)"
+   "extrait": "Téniers David (1610-1690) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350110736.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350110736",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350110746",
@@ -438,7 +758,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "Téniers David (1610-1690) (école)"
+   "extrait": "Téniers David (1610-1690) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350110746.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350110746",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350110749",
@@ -447,7 +777,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "Téniers David (1610-1690) (école)"
+   "extrait": "Téniers David (1610-1690) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350110749.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350110749",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350110748",
@@ -456,7 +796,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "Téniers David (1610-1690) (école)"
+   "extrait": "Téniers David (1610-1690) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350110748.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350110748",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350110743",
@@ -465,7 +815,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "Téniers David (1610-1690) (école)"
+   "extrait": "Téniers David (1610-1690) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350110743.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350110743",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350110750",
@@ -474,7 +834,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "Téniers David (1610-1690) (école)"
+   "extrait": "Téniers David (1610-1690) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350110750.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350110750",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350110741",
@@ -483,7 +853,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "Téniers David (1610-1690) (école)"
+   "extrait": "Téniers David (1610-1690) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350110741.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350110741",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350110745",
@@ -492,7 +872,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "Téniers David (1610-1690) (école)"
+   "extrait": "Téniers David (1610-1690) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350110745.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350110745",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350110747",
@@ -501,7 +891,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "Téniers David (1610-1690) (école)"
+   "extrait": "Téniers David (1610-1690) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350110747.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350110747",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50350110751",
@@ -510,7 +910,17 @@
    "musee": "musée du Louvre",
    "ville": "Paris",
    "code": "ecole_de",
-   "extrait": "Téniers David (1610-1690) (école)"
+   "extrait": "Téniers David (1610-1690) (école)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50350110751.jpg",
+    "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50350110751",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "50110001641",
@@ -519,7 +929,17 @@
    "musee": "musée national Magnin",
    "ville": "Dijon",
    "code": "attribue",
-   "extrait": "Téniers David (1610-1690) (peintre, attribué à)"
+   "extrait": "Téniers David (1610-1690) (peintre, attribué à)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/50110001641.jpg",
+    "credit": "(C) RMN-Grand Palais (musée Magnin) / Stéphane Maréchalle ; utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/50110001641",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "03070007836",
@@ -528,7 +948,17 @@
    "musee": "musée municipal",
    "ville": "Châlons-en-Champagne",
    "code": "atelier_de",
-   "extrait": "Téniers David (1610-1690) (atelier)"
+   "extrait": "Téniers David (1610-1690) (atelier)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/03070007836.jpg",
+    "credit": "© Maillot Hervé",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/03070007836",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "01610000091",
@@ -537,7 +967,17 @@
    "musee": "musée Rolin",
    "ville": "Autun",
    "code": "attribue",
-   "extrait": "Téniers David (1610-1690) (attribué à)"
+   "extrait": "Téniers David (1610-1690) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/01610000091.jpg",
+    "credit": "Stéphane Prost",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/01610000091",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00190086863",
@@ -546,7 +986,17 @@
    "musee": "musée des Beaux-Arts",
    "ville": "Strasbourg",
    "code": "suiveur_de",
-   "extrait": "Téniers David (1610-1690) (suiveur)"
+   "extrait": "Téniers David (1610-1690) (suiveur)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/00190086863.jpg",
+    "credit": "Service photographique des Musées de Strasbourg",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/00190086863",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00190086745",
@@ -555,7 +1005,17 @@
    "musee": "musée des Beaux-Arts",
    "ville": "Strasbourg",
    "code": "suiveur_de",
-   "extrait": "Téniers David (1610-1690) (suiveur)"
+   "extrait": "Téniers David (1610-1690) (suiveur)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/00190086745.jpg",
+    "credit": "Service photographique des Musées de Strasbourg",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/00190086745",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "00190023064",
@@ -584,7 +1044,17 @@
    "musee": "musée des beaux-arts",
    "ville": "Rennes",
    "code": "attribue",
-   "extrait": "Téniers David (1610-1690) (attribué à)"
+   "extrait": "Téniers David (1610-1690) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/02110002187.jpg",
+    "credit": "© Jean-Manuel Salingue",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/02110002187",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0332001260",
@@ -593,7 +1063,17 @@
    "musee": "musée des beaux-arts et d'archéologie",
    "ville": "Besançon",
    "code": "genre_de",
-   "extrait": "Téniers David (1610-1690) (genre de)"
+   "extrait": "Téniers David (1610-1690) (genre de)",
+   "image": {
+    "statut": "restricted",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0332001260.jpg",
+    "credit": "© GUENAT Pierre - utilisation soumise à autorisation",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0332001260",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "M0332001232",
@@ -631,7 +1111,17 @@
    "musee": "musée de la Chartreuse",
    "ville": "Douai",
    "code": "genre_de",
-   "extrait": "Teniers David II Dit Le Jeune (1610 - 1690) (genre de)"
+   "extrait": "Teniers David II Dit Le Jeune (1610 - 1690) (genre de)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/06190000063.jpg",
+    "credit": "musée de la Chartreuse à Douai",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/06190000063",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "06190001298",
@@ -649,7 +1139,17 @@
    "musee": "musée Municipal",
    "ville": "Bernay",
    "code": "attribue",
-   "extrait": "Téniers David (1610-1690) (attribué à)"
+   "extrait": "Téniers David (1610-1690) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/07010001983.jpg",
+    "credit": "©, musée des beaux-arts, Ville de Bernay",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/07010001983",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "05120000046",
@@ -658,7 +1158,17 @@
    "musee": "musée des Beaux-Arts",
    "ville": "Nancy",
    "code": "attribue",
-   "extrait": "Téniers David (1610-1690) (attribué à)"
+   "extrait": "Téniers David (1610-1690) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/05120000046.jpg",
+    "credit": "Mangin",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/05120000046",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "01160003232",
@@ -667,7 +1177,17 @@
    "musee": "musée Crozatier",
    "ville": "Le Puy-en-Velay",
    "code": "attribue",
-   "extrait": "Téniers David (1610-1690) (attribué à)"
+   "extrait": "Téniers David (1610-1690) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/01160003232.jpg",
+    "credit": "(c) musée Crozatier, Luc Olivier",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/01160003232",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "03110007347",
@@ -676,7 +1196,17 @@
    "musee": "musée des Beaux-Arts de Reims",
    "ville": "Reims",
    "code": "attribue",
-   "extrait": "Téniers David (1610-1690) (attribué à)"
+   "extrait": "Téniers David (1610-1690) (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/03110007347.jpg",
+    "credit": "© Christian DEVLEESCHAUWER",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/03110007347",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "03110042464",
@@ -685,7 +1215,17 @@
    "musee": "musée des Beaux-Arts de Reims",
    "ville": "Reims",
    "code": "attribue",
-   "extrait": "Téniers David (1610-1690) (peintre, attribué à)"
+   "extrait": "Téniers David (1610-1690) (peintre, attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/03110042464.jpg",
+    "credit": "© Christian DEVLEESCHAUWER",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/03110042464",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "09940140170",
@@ -694,7 +1234,17 @@
    "musee": "musée de Grenoble",
    "ville": "Grenoble",
    "code": "attribue",
-   "extrait": "Teniers Le Jeune David II (attribué à)"
+   "extrait": "Teniers Le Jeune David II (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/09940140170.jpg",
+    "credit": "© Ville de Grenoble / Musée de Grenoble-J.L. Lacroix",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/09940140170",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "04450000862",
@@ -703,7 +1253,17 @@
    "musee": "Palais-musée des Archevêques de Narbonne",
    "ville": "Narbonne",
    "code": "entourage_de",
-   "extrait": "TENIERS David II (entourage de)"
+   "extrait": "TENIERS David II (entourage de)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/04450000862.jpg",
+    "credit": "© LEPAGE Jean",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/04450000862",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   },
   {
    "reference": "04450000864",
@@ -712,7 +1272,17 @@
    "musee": "Palais-musée des Archevêques de Narbonne",
    "ville": "Narbonne",
    "code": "entourage_de",
-   "extrait": "TENIERS David II (entourage de)"
+   "extrait": "TENIERS David II (entourage de)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/04450000864.jpg",
+    "credit": "© LEPAGE Jean",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/04450000864",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-07-29"
+   }
   }
  ],
  "version_donnee": "2026-07-01",

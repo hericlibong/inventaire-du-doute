@@ -16,7 +16,17 @@
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
-   "extrait": "Hennault Henry (attribué à)"
+   "extrait": "Hennault Henry (attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0537001348.jpg",
+    "credit": "musée de l'Image - Ville d'Épinal / cliché H. Rouyer",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0537001348",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M0537001345",
@@ -25,7 +35,17 @@
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
-   "extrait": "Hennault Henry (dessinateur, attribué à)"
+   "extrait": "Hennault Henry (dessinateur, attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0537001345.jpg",
+    "credit": "musée de l'Image - Ville d'Épinal / cliché H. Rouyer",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0537001345",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M0537043004",
@@ -36,17 +56,14 @@
    "code": "attribue",
    "extrait": "Hennault Henry (dessinateur, attribué à)",
    "image": {
-    "statut": "open",
-    "source_type": "gallica_bnf",
+    "statut": "unknown",
+    "source_type": "pop_joconde",
     "url": "oeuvres/M0537043004.jpg",
-    "credit": "Bibliothèque nationale de France",
-    "creator": "",
-    "licence": "domaine public",
-    "licence_url": "",
-    "source": "https://gallica.bnf.fr/ark:/12148/btv1b69389431",
-    "exemplaire_autre": true,
-    "titre_source": "Imagerie d'Epinal. N° 340, Remède contre le spleen : [estampe]",
-    "verifie_le": "2026-08-06"
+    "credit": "musée de l’Image - Ville d'Épinal / cliché E. Erfani",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0537043004",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
    }
   },
   {
@@ -58,17 +75,14 @@
    "code": "attribue",
    "extrait": "Hennault Henry (dessinateur, attribué à)",
    "image": {
-    "statut": "open",
-    "source_type": "gallica_bnf",
+    "statut": "unknown",
+    "source_type": "pop_joconde",
     "url": "oeuvres/M0537043037.jpg",
-    "credit": "Bibliothèque nationale de France",
-    "creator": "",
-    "licence": "domaine public",
-    "licence_url": "",
-    "source": "https://gallica.bnf.fr/ark:/12148/btv1b6938993x",
-    "exemplaire_autre": true,
-    "titre_source": "Imagerie d'Epinal. N° 350, Les métamorphoses de Toto à l'exposition d'Anvers : [estampe]",
-    "verifie_le": "2026-08-06"
+    "credit": "musée de l’image - Ville d'Épinal / cliché E. Erfani",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0537043037",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
    }
   },
   {
@@ -80,17 +94,14 @@
    "code": "attribue",
    "extrait": "HENNAULT Henry (dessinateur, attribué à)",
    "image": {
-    "statut": "open",
-    "source_type": "gallica_bnf",
+    "statut": "unknown",
+    "source_type": "pop_joconde",
     "url": "oeuvres/M0537043126.jpg",
-    "credit": "Bibliothèque nationale de France",
-    "creator": "",
-    "licence": "domaine public",
-    "licence_url": "",
-    "source": "https://gallica.bnf.fr/ark:/12148/btv1b69388213",
-    "exemplaire_autre": true,
-    "titre_source": "Imagerie d'Epinal. N° 377, Pour une petite souris ! : [estampe]",
-    "verifie_le": "2026-08-06"
+    "credit": "musée de l’Image - Ville d'Épinal / cliché E. Erfani",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0537043126",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
    }
   },
   {
@@ -100,7 +111,17 @@
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
-   "extrait": "Hennault Henry (dessinateur, attribué à)"
+   "extrait": "Hennault Henry (dessinateur, attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0537027572.jpg",
+    "credit": "musée de l'Image - Ville d'Épinal / cliché E. Erfani",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0537027572",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M0537007874",
@@ -109,7 +130,17 @@
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
-   "extrait": "Hennault Henry (actif 1891-1901) (dessinateur, attribué à)"
+   "extrait": "Hennault Henry (actif 1891-1901) (dessinateur, attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0537007874.jpg",
+    "credit": "musée de l'image - Ville d'Épinal / cliché H. Rouyer",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0537007874",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M0537026546",
@@ -118,7 +149,17 @@
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
-   "extrait": "Hennault Henry (actif 1891-1901) (dessinateur, attribué à)"
+   "extrait": "Hennault Henry (actif 1891-1901) (dessinateur, attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0537026546.jpg",
+    "credit": "musée de l’Image - Ville d'Épinal",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0537026546",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M0537007654",
@@ -127,7 +168,17 @@
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
-   "extrait": "Hennault Henry (actif 1891-1901) (dessinateur, attribué à)"
+   "extrait": "Hennault Henry (actif 1891-1901) (dessinateur, attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0537007654.jpg",
+    "credit": "musée de l'image - Ville d'Épinal / cliché T. Lécrivain",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0537007654",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M0537007711",
@@ -136,7 +187,17 @@
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
-   "extrait": "Hennault Henry (actif 1891-1901) (dessinateur, attribué à)"
+   "extrait": "Hennault Henry (actif 1891-1901) (dessinateur, attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0537007711.jpg",
+    "credit": "musée de l'image - Ville d'Épinal / cliché T. Lécrivain",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0537007711",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M0537026523",
@@ -145,7 +206,17 @@
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
-   "extrait": "Hennault Henry (actif 1891-1901) (dessinateur, attribué à)"
+   "extrait": "Hennault Henry (actif 1891-1901) (dessinateur, attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0537026523.jpg",
+    "credit": "musée de l’Image - Ville d'Épinal / Scan Spinal Images",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0537026523",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M0537007690",
@@ -154,7 +225,17 @@
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
-   "extrait": "Hennault Henry (actif 1891-1901) (dessinateur, attribué à)"
+   "extrait": "Hennault Henry (actif 1891-1901) (dessinateur, attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0537007690.jpg",
+    "credit": "musée de l'image - Ville d'Épinal / cliché T. Lécrivain",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0537007690",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M0537026200",
@@ -163,7 +244,17 @@
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
-   "extrait": "Hennault Henry (actif 1891-1901) (dessinateur, attribué à)"
+   "extrait": "Hennault Henry (actif 1891-1901) (dessinateur, attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0537026200.jpg",
+    "credit": "musée de l’Image - Ville d'Épinal",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0537026200",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M0537026297",
@@ -172,7 +263,17 @@
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
-   "extrait": "Hennault Henry (actif 1891-1901) (dessinateur, attribué à)"
+   "extrait": "Hennault Henry (actif 1891-1901) (dessinateur, attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0537026297.jpg",
+    "credit": "musée de l’Image - Ville d'Épinal",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0537026297",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M0537026839",
@@ -181,7 +282,17 @@
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
-   "extrait": "Hennault Henry (actif 1891-1901) (dessinateur, attribué à)"
+   "extrait": "Hennault Henry (actif 1891-1901) (dessinateur, attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0537026839.jpg",
+    "credit": "musée de l'image - Ville d'Épinal / cliché E. Erfani",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0537026839",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M0537027578",
@@ -190,7 +301,17 @@
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
-   "extrait": "Hennault Henry (actif 1891-1901) (dessinateur, attribué à)"
+   "extrait": "Hennault Henry (actif 1891-1901) (dessinateur, attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0537027578.jpg",
+    "credit": "musée de l'image - Ville d'Épinal / cliché E. Erfani",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0537027578",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M0537007689",
@@ -199,7 +320,17 @@
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
-   "extrait": "Hennault Henry (actif 1891-1901) (dessinateur, attribué à)"
+   "extrait": "Hennault Henry (actif 1891-1901) (dessinateur, attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0537007689.jpg",
+    "credit": "musée de l'image - Ville d'Épinal / cliché T. Lécrivain",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0537007689",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M0537007673",
@@ -208,7 +339,17 @@
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
-   "extrait": "Hennault Henry (actif 1891-1901) (dessinateur, attribué à)"
+   "extrait": "Hennault Henry (actif 1891-1901) (dessinateur, attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0537007673.jpg",
+    "credit": "musée de l'image - Ville d'Épinal / cliché H. Rouyer",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0537007673",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M0537007653",
@@ -217,7 +358,17 @@
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
-   "extrait": "Hennault Henry (actif 1891-1901) (dessinateur, attribué à)"
+   "extrait": "Hennault Henry (actif 1891-1901) (dessinateur, attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0537007653.jpg",
+    "credit": "musée de l'image - Ville d'Épinal / cliché T. Lécrivain",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0537007653",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M0537043137",
@@ -228,17 +379,14 @@
    "code": "attribue",
    "extrait": "Hennault Henry (actif 1891-1901) (dessinateur, attribué à)",
    "image": {
-    "statut": "open",
-    "source_type": "gallica_bnf",
+    "statut": "unknown",
+    "source_type": "pop_joconde",
     "url": "oeuvres/M0537043137.jpg",
-    "credit": "Bibliothèque nationale de France",
-    "creator": "",
-    "licence": "domaine public",
-    "licence_url": "",
-    "source": "https://gallica.bnf.fr/ark:/12148/btv1b6938825r",
-    "exemplaire_autre": true,
-    "titre_source": "Imagerie d'Epinal. N° 381, Aventures de deux petits moineaux : [estampe]",
-    "verifie_le": "2026-08-06"
+    "credit": "musée de l’image – Ville d’Épinal / cliché H. Rouyer",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0537043137",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
    }
   },
   {
@@ -248,7 +396,17 @@
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
-   "extrait": "Hennault Henry (actif 1891-1901) (dessinateur, attribué à)"
+   "extrait": "Hennault Henry (actif 1891-1901) (dessinateur, attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0537026201.jpg",
+    "credit": "musée de l’Image - Ville d'Épinal",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0537026201",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M0537027580",
@@ -257,7 +415,17 @@
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
-   "extrait": "Hennault Henry (actif 1891-1901) (dessinateur, attribué à)"
+   "extrait": "Hennault Henry (actif 1891-1901) (dessinateur, attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0537027580.jpg",
+    "credit": "musée de l’image - Ville d'Épinal / cliché E. Erfani",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0537027580",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M0537007577",
@@ -266,7 +434,17 @@
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
-   "extrait": "Hennault Henry (actif 1891-1901) (dessinateur, attribué à)"
+   "extrait": "Hennault Henry (actif 1891-1901) (dessinateur, attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0537007577.jpg",
+    "credit": "musée de l'image - Ville d'Épinal / cliché T. Lécrivain",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0537007577",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M0537026533",
@@ -277,17 +455,14 @@
    "code": "attribue",
    "extrait": "Hennault Henry (actif 1891-1901) (dessinateur, attribué à)",
    "image": {
-    "statut": "open",
-    "source_type": "wikimedia_commons",
+    "statut": "unknown",
+    "source_type": "pop_joconde",
     "url": "oeuvres/M0537026533.jpg",
-    "credit": "Bibliothèque nationale de France",
-    "creator": "",
-    "licence": "Public domain",
-    "licence_url": "",
-    "source": "https://commons.wikimedia.org/wiki/File%3AS%C3%A9rie_aux_armes_d%27Epinal._N%C2%B0_122%2C_Histoires_%26_sc%C3%A8nes_humoristiques%2C_contes_moraux%2C_merveilleux._Lecture_%26_pot-au-feu_-_estampe_-_btv1b69388109.jpg",
-    "exemplaire_autre": true,
-    "titre_source": "Série aux armes d'Epinal. N° 122, Histoires & scènes humoristiques, contes moraux, merveilleux. Lecture & pot-au-feu - estampe - btv1b69388109.jpg",
-    "verifie_le": "2026-08-07"
+    "credit": "musée de l’Image - Ville d'Épinal",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0537026533",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
    }
   },
   {
@@ -297,7 +472,17 @@
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
-   "extrait": "Hennault Henry (actif 1891-1901) (dessinateur, attribué à)"
+   "extrait": "Hennault Henry (actif 1891-1901) (dessinateur, attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0537026534.jpg",
+    "credit": "musée de l’Image - Ville d'Épinal",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0537026534",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   },
   {
    "reference": "M0537027911",
@@ -306,7 +491,17 @@
    "musee": "musée de l'image",
    "ville": "Epinal",
    "code": "attribue",
-   "extrait": "Hennault Henry (actif 1891-1901) (dessinateur, attribué à)"
+   "extrait": "Hennault Henry (actif 1891-1901) (dessinateur, attribué à)",
+   "image": {
+    "statut": "unknown",
+    "source_type": "pop_joconde",
+    "url": "oeuvres/M0537027911.jpg",
+    "credit": "musée de l’image – Ville d’Épinal / cliché H. Rouyer",
+    "licence": "",
+    "source": "https://pop.culture.gouv.fr/notice/joconde/M0537027911",
+    "profil": "pop-800-75",
+    "verifie_le": "2026-08-12"
+   }
   }
  ],
  "version_donnee": "2026-07-01",
