@@ -392,17 +392,20 @@
 	<p>
 		Les données proviennent de Joconde et sont diffusées sous
 		<a href="https://www.etalab.gouv.fr/licence-ouverte-open-licence/" target="_blank" rel="noopener">{prov.licence}</a>.
-		Les photographies présentes sur
-		<a href="https://pop.culture.gouv.fr/conditions-generales-utilisation" target="_blank" rel="noopener">POP</a>
-		ne sont pas réutilisées lorsqu'aucune autorisation explicite ne le permet.
+		Les reproductions affichées proviennent en majorité de
+		<a href="https://pop.culture.gouv.fr/conditions-generales-utilisation" target="_blank" rel="noopener">POP</a>.
+		Elles restent la propriété des musées et des photographes qui les ont réalisées&nbsp;:
+		leur crédit figure sous chaque image, et POP n'y associe pas de licence de
+		réutilisation. Elles sont montrées ici pour donner à voir les œuvres décrites, sans
+		que cela vaille autorisation de les reprendre ailleurs.
 	</p>
 	<p>
-		Les portraits et les reproductions affichés dans l'application proviennent
-		principalement de
-		<a href="https://commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia" target="_blank" rel="noopener">Wikimedia Commons</a>.
-		Chaque image est utilisée selon la licence indiquée sur sa page source et rapprochée
-		d'une notice Joconde à partir d'éléments concordants, comme le titre, le musée ou le
-		numéro d'inventaire. Sa source et son statut juridique sont indiqués dans l'interface.
+		Une petite partie des reproductions, ainsi que les portraits d'artistes, viennent de
+		<a href="https://commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia" target="_blank" rel="noopener">Wikimedia Commons</a>
+		et de Gallica. Celles-là sont utilisées selon la licence indiquée sur leur page
+		source. Chaque image est rapprochée d'une notice Joconde à partir d'éléments
+		concordants, comme le titre, le musée ou le numéro d'inventaire. Sa source est
+		indiquée sous l'image.
 	</p>
 
 	<!-- Visuel nº 4 (palier 4) : capture RÉELLE de l'interface, recadrée sur une
