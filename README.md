@@ -60,8 +60,8 @@ fréquence parmi les œuvres concernées, jamais un degré de certitude.
 ### Œuvres
 
 La liste restitue la formulation publiée par le musée. Elle peut être filtrée par famille
-d'attribution et par établissement. Lorsqu'une reproduction réutilisable a pu être reliée
-avec certitude à la notice, elle peut être examinée en grand.
+d'attribution et par établissement. Lorsqu'une reproduction a pu être reliée avec
+certitude à la notice, elle peut être examinée en grand.
 
 ![Onglet Œuvres : filtres par musée et par mention, reproductions disponibles et formulations originales.](docs/captures/oeuvres-reproductions.png)
 
@@ -97,18 +97,22 @@ et complétés par [`docs/methode-et-limites.md`](docs/methode-et-limites.md).
 
 ## Images
 
-Les données descriptives de Joconde sont ouvertes, mais cela ne donne pas automatiquement
-le droit de réutiliser les photographies associées aux notices POP.
+Les données descriptives de Joconde sont ouvertes ; les photographies associées aux
+notices ne le sont pas. À ce jour, le site affiche :
 
-Le site n'affiche donc que des fichiers dont le statut a été vérifié individuellement. À ce
-jour, il comprend :
-
-- **209 reproductions d'œuvres** : 195 provenant de Wikimedia Commons et 14 de Gallica ;
+- **5 516 reproductions d'œuvres** : 5 324 provenant des fiches POP, 192 de Wikimedia
+  Commons ;
 - **73 portraits d'artistes** provenant de Wikimedia Commons.
 
-Chaque fichier est conservé localement avec sa source, son crédit et sa licence. Une
-reproduction n'est retenue que si sa correspondance avec la notice Joconde est établie ;
-une ressemblance de titre ou de dimensions ne suffit pas.
+Les reproductions venues de POP restent la propriété des musées et des photographes qui
+les ont réalisées. Leur crédit est affiché sous chaque image, et POP n'y associe aucune
+licence de réutilisation : les montrer ici ne vaut pas autorisation de les reprendre
+ailleurs. Les images de Wikimedia Commons sont utilisées selon la licence indiquée sur
+leur page source.
+
+Chaque fichier est conservé localement avec sa source et son crédit. Une reproduction
+n'est retenue que si sa correspondance avec la notice Joconde est établie ; une
+ressemblance de titre ou de dimensions ne suffit pas.
 
 ## Limites
 
@@ -119,8 +123,8 @@ une ressemblance de titre ou de dimensions ne suffit pas.
 - Les chiffres ne permettent pas de comparer la qualité du travail des musées.
 - Le projet ne détermine pas l'auteur véritable des œuvres et n'émet aucun avis sur leur
   attribution ou leur valeur marchande.
-- L'absence de reproduction indique une limite de réutilisation ou de correspondance, pas
-  l'absence d'une image dans la notice originale.
+- L'absence de reproduction signifie que la notice d'origine n'en propose pas, ou que le
+  fichier annoncé n'a pas pu être récupéré — pas que l'œuvre n'a jamais été photographiée.
 
 ## Architecture
 
@@ -162,8 +166,9 @@ nécessaire en production.
   [Licence Ouverte 2.0](https://www.data.gouv.fr/pages/legal/licences/etalab-2.0).
 - **Fond cartographique** : ADMIN EXPRESS COG 2018, IGN,
   Licence Ouverte / Etalab.
-- **Images** : domaine public, Creative Commons ou conditions de réutilisation indiquées
-  sous chaque fichier ; les crédits et liens de source sont affichés dans le site.
+- **Images** : en majorité des photographies diffusées par POP, propriété des musées et
+  des photographes, sans licence de réutilisation ; le reste en domaine public ou sous
+  Creative Commons. Les crédits et les liens de source sont affichés sous chaque image.
 - **Code et contenus éditoriaux** : aucune licence de réutilisation n'est actuellement
   accordée. Sauf mention contraire, tous droits réservés — © 2026 Héric Libong. La mise à
   disposition publique du dépôt ne vaut pas autorisation de réutilisation.
