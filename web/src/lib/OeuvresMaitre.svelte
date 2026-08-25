@@ -4,7 +4,7 @@
 	import ChoixMusee from '$lib/ChoixMusee.svelte';
 	import CreditImage from '$lib/CreditImage.svelte';
 	import LightboxOeuvre from '$lib/LightboxOeuvre.svelte';
-	import { lienPop, oeuvres as motOeuvres } from '$lib/joconde.js';
+	import { lienPop } from '$lib/joconde.js';
 	import { FAMILLE_PUBLIC, ORDRE_FAMILLES } from '$lib/familles-public.js';
 	import { fenetrePagination } from '$lib/pagination.js';
 
@@ -407,36 +407,6 @@
 				</nav>
 			{/if}
 		{/if}
-	{/if}
-
-	<!-- Copies « d'après », à part : des copies assumées, pas des doutes. Hors gamme
-	     du doute (couleur neutre), jamais mêlées aux entrées.
-	     Le bloc ne s'affiche QUE s'il y a quelque chose à mettre à part (2026-08-09) :
-	     il annonçait « 0 œuvres portent la mention d'après » chez les 26 artistes qui
-	     n'ont aucune copie. Un bloc intitulé « à part » n'a pas de sens quand il n'y
-	     a rien à écarter, et une ligne pour dire zéro occupe la place d'une ligne
-	     utile. -->
-	{#if maitre.copie > 0}
-	<div class="bande-copie">
-		<p class="copie-texte">
-			À part&nbsp;: <strong>{motOeuvres(maitre.copie)}</strong>
-			porte{maitre.copie === 1 ? '' : 'nt'} la mention «&nbsp;d'après
-			{maitre.nom}&nbsp;» — des copies assumées, pas des attributions incertaines.
-		</p>
-		{#if maitre.exemple_copie}
-			<p class="copie-exemple">
-				Par exemple&nbsp;: {maitre.exemple_copie.titre ?? 'Sans titre'}
-				{#if lieu(maitre.exemple_copie)}({lieu(maitre.exemple_copie)}){/if}
-				— «&nbsp;{maitre.exemple_copie.extrait}&nbsp;» ·
-				<!-- Le lien mène à la MÊME page que le bouton de chaque œuvre, et porte
-				     donc le même nom (2026-08-25). Il s'appelait « notice », par accord
-				     avec la phrase de pied qui annonçait « les notices sur POP » ; les
-				     deux ont changé ensemble. Deux noms pour une seule page, à deux lignes
-				     d'intervalle, resteraient le vrai défaut à éviter. -->
-				<a href={lienPop(maitre.exemple_copie.reference)} target="_blank" rel="noopener">fiche complète sur POP</a>
-			</p>
-		{/if}
-	</div>
 	{/if}
 
 	<!-- Mention technique, petit corps, écrite une seule fois. -->
@@ -869,28 +839,6 @@
 	.ellipse {
 		padding: 0 0.2rem;
 		color: var(--couleur-encre-douce);
-	}
-
-	/* Copies « d'après » : bloc distinct, couleur neutre, filet à gauche. */
-	.bande-copie {
-		margin-top: var(--espace-5);
-		padding-left: var(--espace-4);
-		border-left: 3px solid var(--couleur-copie);
-	}
-
-	.copie-texte {
-		margin: 0;
-		font-size: var(--taille-base);
-	}
-
-	.copie-exemple {
-		margin: 0.4rem 0 0;
-		font-size: var(--taille-s);
-		color: var(--couleur-encre-douce);
-	}
-
-	.copie-exemple a {
-		color: inherit;
 	}
 
 	.mention-pop {
