@@ -359,7 +359,7 @@
 							{#if lieu(o) && !musee}<p class="lieu">{lieu(o)}</p>{/if}
 							<p class="verbatim" style="border-left-color: {fam(o.code).couleur}">«&nbsp;{o.extrait}&nbsp;»</p>
 							<a class="lien-fiche" href={lienPop(o.reference)} target="_blank" rel="noopener">
-								Voir la notice sur POP
+								Voir la fiche complète sur POP
 							</a>
 						</div>
 					</li>
@@ -428,10 +428,12 @@
 				Par exemple&nbsp;: {maitre.exemple_copie.titre ?? 'Sans titre'}
 				{#if lieu(maitre.exemple_copie)}({lieu(maitre.exemple_copie)}){/if}
 				— «&nbsp;{maitre.exemple_copie.extrait}&nbsp;» ·
-				<!-- « notice » et non « fiche publique » (2026-08-09) : c'est un lien vers
-				     POP, et la phrase qui suit annonce déjà « les notices sur POP ». Deux
-				     noms pour la même page, à deux lignes d'intervalle. -->
-				<a href={lienPop(maitre.exemple_copie.reference)} target="_blank" rel="noopener">notice</a>
+				<!-- Le lien mène à la MÊME page que le bouton de chaque œuvre, et porte
+				     donc le même nom (2026-08-25). Il s'appelait « notice », par accord
+				     avec la phrase de pied qui annonçait « les notices sur POP » ; les
+				     deux ont changé ensemble. Deux noms pour une seule page, à deux lignes
+				     d'intervalle, resteraient le vrai défaut à éviter. -->
+				<a href={lienPop(maitre.exemple_copie.reference)} target="_blank" rel="noopener">fiche complète sur POP</a>
 			</p>
 		{/if}
 	</div>
@@ -439,7 +441,7 @@
 
 	<!-- Mention technique, petit corps, écrite une seule fois. -->
 	<p class="mention-pop">
-		Les liens ouvrent les notices sur POP, la plateforme ouverte du patrimoine.
+		Les liens ouvrent les fiches complètes sur POP, la plateforme ouverte du patrimoine.
 	</p>
 </section>
 
@@ -709,7 +711,7 @@
 	}
 
 	/* Crédit : UNE ligne discrète sous la vignette. Liens accessibles mais atténués,
-	   jamais le traitement du lien principal « Voir la fiche publique sur POP ». */
+	   jamais le traitement du lien principal « Voir la fiche complète sur POP ». */
 	.corps {
 		min-width: 0;
 	}

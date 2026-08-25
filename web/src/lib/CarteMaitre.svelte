@@ -262,7 +262,7 @@
 						target="_blank"
 						rel="noreferrer"
 					>
-						<span>Consulter la notice sur POP</span>
+						<span>Voir la fiche complète sur POP</span>
 						<span class="fleche" aria-hidden="true">↗</span>
 					</a>
 				{/if}
