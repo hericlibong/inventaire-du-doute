@@ -115,7 +115,11 @@
 			<header class="intro">
 				<h1>Explorer les artistes</h1>
 				<p class="renvoi">
-					<a href="{base}/projet">
+					<!-- Ancre directe (2026-08-25) : le lien posait une question précise et
+					     retombait en haut de « Le projet », à charge pour le lecteur de
+					     retrouver la réponse parmi huit sections. Il vise maintenant celle
+					     qui répond — « Comment ces artistes ont été choisis » (#selection). -->
+					<a href="{base}/projet#selection">
 						Comment ces artistes ont-ils été sélectionnés&nbsp;?
 					</a>
 				</p>
