@@ -57,7 +57,7 @@
 			</p>
 			<p class="explication">{e.explication}</p>
 			<p class="renvoi">
-				<a href={e.pop} target="_blank" rel="noopener">Consulter la notice sur POP&nbsp;→</a>
+				<a href={e.pop} target="_blank" rel="noopener">Voir la fiche complète sur POP&nbsp;→</a>
 			</p>
 		</li>
 	{/each}

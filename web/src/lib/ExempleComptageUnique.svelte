@@ -44,7 +44,7 @@
 	</div>
 
 	<p class="renvoi">
-		<a href={POP} target="_blank" rel="noopener">Consulter la notice sur POP&nbsp;→</a>
+		<a href={POP} target="_blank" rel="noopener">Voir la fiche complète sur POP&nbsp;→</a>
 	</p>
 </div>
 
