@@ -48,6 +48,7 @@ REGISTRE_POP = DOSSIER_EXPORTS / "images_oeuvres.json"
 DOSSIER_OEUVRES = DOSSIER_EXPORTS / "web" / "oeuvres"
 DOSSIER_IMG = DOSSIER_EXPORTS / "web" / "oeuvres_img"
 INDEX = DOSSIER_EXPORTS / "web" / "images_index.json"
+ARTISTES = DOSSIER_EXPORTS / "web" / "artistes.json"
 DOSSIER_CACHE = RACINE / "data" / "cache"
 CACHE_THUMBS = DOSSIER_CACHE / "commons_thumbs.json"
 
@@ -314,6 +315,7 @@ def main(references=None) -> None:
     print(f"{len(index)} entrées → {INDEX.name} ; {telecharges} nouvelles vignettes.")
 
     fusionner_dans_oeuvres(index)
+    fusionner_dans_artistes(index)
 
 
 def ajouter_gallica(index: dict) -> int:
@@ -577,6 +579,51 @@ def lot_demande(arguments) -> set | None:
     refs = {ligne.split("#")[0].strip()
             for ligne in chemin.read_text(encoding="utf-8").splitlines()}
     return {r for r in refs if r}
+
+
+def fusionner_dans_artistes(index: dict) -> int:
+    """Attache `image` aux œuvres uniques des musées, dans artistes.json.
+
+    L'onglet « Musées » ouvre un panneau par établissement. Quand le musée ne
+    conserve qu'UNE œuvre concernée, `build_artistes.py` y joint déjà sa
+    référence et son titre ; il lui manquait sa reproduction pour que le panneau
+    montre l'œuvre au lieu de la nommer seulement.
+
+    L'image est recopiée ICI plutôt que lue à la volée par le front : l'index
+    complet pèse près de 2 Mio pour 5 516 entrées, et la page Artistes n'a pas à
+    le télécharger pour afficher au plus une vignette par panneau. Les quelques
+    centaines d'entrées jointes ne coûtent presque rien dans un fichier déjà
+    chargé.
+
+    Même contrat que `fusionner_dans_oeuvres` : les métadonnées sont recopiées
+    telles quelles, et une image dont la référence a quitté l'index est retirée.
+    Un musée à plusieurs œuvres n'a pas d'`oeuvre_unique` et reste donc
+    intouché — la condition est vérifiée en plus sur `doute`, pour que la règle
+    soit lisible ici et non déduite d'un autre script.
+    """
+    if not ARTISTES.exists():
+        return 0
+    d = json.loads(ARTISTES.read_text(encoding="utf-8"))
+    total = 0
+    change = False
+    for artiste in d.get("artistes", []):
+        for musee in artiste.get("musees_doute", []):
+            unique = musee.get("oeuvre_unique")
+            if not unique or musee.get("doute") != 1:
+                continue
+            img = index.get(unique.get("reference"))
+            if img and unique.get("image") != img:
+                unique["image"] = img
+                change = True
+                total += 1
+            elif not img and "image" in unique:
+                del unique["image"]
+                change = True
+    if change:
+        ARTISTES.write_text(json.dumps(d, ensure_ascii=False, indent=1),
+                            encoding="utf-8")
+    print(f"{total} œuvre(s) unique(s) de musée enrichie(s) d'une image.")
+    return total
 
 
 def fusionner_dans_oeuvres(index: dict) -> int:

@@ -2371,7 +2371,17 @@
      ],
      "oeuvre_unique": {
       "reference": "000PE025251",
-      "titre": "BACCHUS ET ARIANE"
+      "titre": "BACCHUS ET ARIANE",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/000PE025251.jpg",
+       "credit": "© L. Gauthier",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/000PE025251",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -2417,7 +2427,18 @@
      ],
      "oeuvre_unique": {
       "reference": "000PE033165",
-      "titre": "L'ERECTION DE LA CROIX"
+      "titre": "L'ERECTION DE LA CROIX",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/000PE033165.jpg",
+       "credit": "https://pop.culture.gouv.fr/_next/image?url=https%3A%2F%2Fpopcorn-prd-perf-assets.s3.gra.io.cloud.ovh.net%2Fjoconde%2F03030001461%2F1461-1.jpg&w=3840&q=75",
+       "creator": "Charles Le Brun",
+       "licence": "Public domain",
+       "licence_url": "",
+       "source": "https://commons.wikimedia.org/wiki/File:L%27%C3%89l%C3%A9vation_de_la_Croix,_par_Charles_Le_Brun.jpg",
+       "verifie_le": "2026-08-06"
+      }
      }
     },
     {
@@ -2440,7 +2461,18 @@
      ],
      "oeuvre_unique": {
       "reference": "06070000146",
-      "titre": "Allégorie à la gloire de Louis XIV"
+      "titre": "Allégorie à la gloire de Louis XIV",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/06070000146.jpg",
+       "credit": "Own work",
+       "creator": "Didier Descouens",
+       "licence": "Public domain",
+       "licence_url": "",
+       "source": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_Ingres-Bourdelle_-_All%C3%A9gorie_%C3%A0_la_gloire_de_Louis_XIV_-_Charles_Le_Brun_-_Joconde06070000146.jpg",
+       "verifie_le": "2026-08-06"
+      }
      }
     },
     {
@@ -2486,7 +2518,17 @@
      ],
      "oeuvre_unique": {
       "reference": "01840000018",
-      "titre": "Le massacre des Innocents"
+      "titre": "Le massacre des Innocents",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/01840000018.jpg",
+       "credit": "Berry Emmanuel, musées d'Auxerre",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/01840000018",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -2509,7 +2551,17 @@
      ],
      "oeuvre_unique": {
       "reference": "01160005166",
-      "titre": "Christ en croix"
+      "titre": "Christ en croix",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/01160005166.jpg",
+       "credit": "(c) musée Crozatier, Luc Olivier",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/01160005166",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -2532,7 +2584,17 @@
      ],
      "oeuvre_unique": {
       "reference": "09940080570",
-      "titre": "L'Ordre rétabli dans les finances ; Dessin préparatoire pour la Galerie des Glaces à Versailles (Titre attribué)"
+      "titre": "L'Ordre rétabli dans les finances ; Dessin préparatoire pour la Galerie des Glaces à Versailles (Titre attribué)",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/09940080570.jpg",
+       "credit": "© Ville de Grenoble / Musée de Grenoble-J.L. Lacroix",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/09940080570",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -2555,7 +2617,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0457000773",
-      "titre": "Sans désignation"
+      "titre": "Sans désignation",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0457000773.jpg",
+       "credit": "© Musée des Beaux-arts, Nîmes",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0457000773",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     }
    ]
@@ -3018,7 +3090,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0289002511",
-      "titre": "Religieux en adoration aux pieds d'une Vierge dans les nuages (titre factice)"
+      "titre": "Religieux en adoration aux pieds d'une Vierge dans les nuages (titre factice)",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0289002511.jpg",
+       "credit": "© Matthieu Dussauge",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0289002511",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -3041,7 +3123,17 @@
      ],
      "oeuvre_unique": {
       "reference": "06190001401",
-      "titre": "La Belle Paule"
+      "titre": "La Belle Paule",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/06190001401.jpg",
+       "credit": "musée de la Chartreuse à Douai",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/06190001401",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     }
    ]
@@ -3237,7 +3329,17 @@
      ],
      "oeuvre_unique": {
       "reference": "000PE017723",
-      "titre": "SALOMON SACRIFIANT AUX IDOLES"
+      "titre": "SALOMON SACRIFIANT AUX IDOLES",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/000PE017723.jpg",
+       "credit": "© C2RMF",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/000PE017723",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -3260,7 +3362,17 @@
      ],
      "oeuvre_unique": {
       "reference": "000PE025747",
-      "titre": "ETUDE DE NEGRE"
+      "titre": "ETUDE DE NEGRE",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/000PE025747.jpg",
+       "credit": "© L. Gauthier",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/000PE025747",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -3306,7 +3418,18 @@
      ],
      "oeuvre_unique": {
       "reference": "00190022506",
-      "titre": "Portrait d'homme ; Portrait de vieillard"
+      "titre": "Portrait d'homme ; Portrait de vieillard",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/00190022506.jpg",
+       "credit": "Own work",
+       "creator": "Follower of Rembrandt",
+       "licence": "Public domain",
+       "licence_url": "",
+       "source": "https://commons.wikimedia.org/wiki/File:Portrait_of_a_man_mg_0072.jpg",
+       "verifie_le": "2026-08-06"
+      }
      }
     },
     {
@@ -3329,7 +3452,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0277002250",
-      "titre": "L'homme au casque d'or"
+      "titre": "L'homme au casque d'or",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0277002250.jpg",
+       "credit": "© Anaïs Bonin",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0277002250",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     }
    ]
@@ -3556,7 +3689,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0347001723",
-      "titre": "Tête de femme : Le Silence"
+      "titre": "Tête de femme : Le Silence",
+      "image": {
+       "statut": "restricted",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0347001723.jpg",
+       "credit": "Jean-Loup Mathieu (Eurêka) - utilisation soumise à autorisation ; studio Chechillot",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0347001723",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -3579,7 +3722,17 @@
      ],
      "oeuvre_unique": {
       "reference": "02110002116",
-      "titre": "Trois figures d'hommes nus"
+      "titre": "Trois figures d'hommes nus",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/02110002116.jpg",
+       "credit": "© Jean-Manuel Salingue",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/02110002116",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     }
    ]
@@ -3887,7 +4040,18 @@
      ],
      "oeuvre_unique": {
       "reference": "000PE014412",
-      "titre": "ISABELLE BRANDT DIT AUTREFOIS HELENE FOURMENT"
+      "titre": "ISABELLE BRANDT DIT AUTREFOIS HELENE FOURMENT",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/000PE014412.jpg",
+       "credit": "Own work",
+       "creator": "Peter Paul Rubens",
+       "licence": "Public domain",
+       "licence_url": "",
+       "source": "https://commons.wikimedia.org/wiki/File:Rubens_Portrait_de_femme.jpg",
+       "verifie_le": "2026-08-06"
+      }
      }
     },
     {
@@ -3910,7 +4074,17 @@
      ],
      "oeuvre_unique": {
       "reference": "000PE022064",
-      "titre": "VILLAGEOIS DANSANT DANS LA CAMPAGNE"
+      "titre": "VILLAGEOIS DANSANT DANS LA CAMPAGNE",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/000PE022064.jpg",
+       "credit": "© L. Gauthier",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/000PE022064",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -3979,7 +4153,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0271000139",
-      "titre": "Allégorie du Bon Gouvernement de la France, dit autrefois Portrait allégorique de Marie de Médicis"
+      "titre": "Allégorie du Bon Gouvernement de la France, dit autrefois Portrait allégorique de Marie de Médicis",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0271000139.jpg",
+       "credit": "© Château de Blois / F. Lauginie, 2008",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0271000139",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -4002,7 +4186,18 @@
      ],
      "oeuvre_unique": {
       "reference": "M0332000980",
-      "titre": "Allégorie avec une vue d'Anvers"
+      "titre": "Allégorie avec une vue d'Anvers",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/M0332000980.jpg",
+       "credit": "Œuvre appartenant au Musée des Beaux Arts de Besançon",
+       "creator": "Peter Paul Rubens",
+       "licence": "Public domain",
+       "licence_url": "",
+       "source": "https://commons.wikimedia.org/wiki/File:All%C3%A9gorie_de_la_prise_d%27Anvers_-_Peter_Paul_Rubens_-_MBAB_896.1.114.jpg",
+       "verifie_le": "2026-08-06"
+      }
      }
     },
     {
@@ -4025,7 +4220,17 @@
      ],
      "oeuvre_unique": {
       "reference": "05620001275",
-      "titre": "La Vierge, l'enfant Jésus et saint Jean"
+      "titre": "La Vierge, l'enfant Jésus et saint Jean",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/05620001275.jpg",
+       "credit": "DELORME",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/05620001275",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -4048,7 +4253,17 @@
      ],
      "oeuvre_unique": {
       "reference": "07760001538",
-      "titre": "Femme et fillette"
+      "titre": "Femme et fillette",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/07760001538.jpg",
+       "credit": "© musée de la Roche-sur-Yon",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/07760001538",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -4071,7 +4286,18 @@
      ],
      "oeuvre_unique": {
       "reference": "50110001607",
-      "titre": "La Mort d'Achille"
+      "titre": "La Mort d'Achille",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/50110001607.jpg",
+       "credit": "Œuvre appartenant au Musée Magnin",
+       "creator": "Unknown author Unknown author",
+       "licence": "Public domain",
+       "licence_url": "",
+       "source": "https://commons.wikimedia.org/wiki/File:La_Mort_d%27Achille_-_Anonyme_-_MM_1938E168.jpg",
+       "verifie_le": "2026-08-06"
+      }
      }
     },
     {
@@ -4094,7 +4320,17 @@
      ],
      "oeuvre_unique": {
       "reference": "02470000028",
-      "titre": "Le banquet de Térée"
+      "titre": "Le banquet de Térée",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/02470000028.jpg",
+       "credit": "© Vincent Escudero, Musée Bertrand",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/02470000028",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -4117,7 +4353,17 @@
      ],
      "oeuvre_unique": {
       "reference": "08940004679",
-      "titre": "La Nature parée par les Trois Grâces"
+      "titre": "La Nature parée par les Trois Grâces",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/08940004679.jpg",
+       "credit": "© Claude Almodovar / musée Granet, Ville d'Aix-en-Provence",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/08940004679",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     }
    ]
@@ -4369,7 +4615,17 @@
      ],
      "oeuvre_unique": {
       "reference": "07290021285",
-      "titre": "Portrait de Jacqueline de Rohan, duchesse de Longueville"
+      "titre": "Portrait de Jacqueline de Rohan, duchesse de Longueville",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/07290021285.jpg",
+       "credit": "musées de la ville de Rouen",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/07290021285",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -4392,7 +4648,17 @@
      ],
      "oeuvre_unique": {
       "reference": "01610012066",
-      "titre": "Portrait d'homme"
+      "titre": "Portrait d'homme",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/01610012066.jpg",
+       "credit": "B.M.C.",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/01610012066",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -4415,7 +4681,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0457001362",
-      "titre": "Buste de femme"
+      "titre": "Buste de femme",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0457001362.jpg",
+       "credit": "Stéphane Ramillon",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0457001362",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -4438,7 +4714,18 @@
      ],
      "oeuvre_unique": {
       "reference": "M0332001041",
-      "titre": "Portrait présumé de François II (1544-1560)"
+      "titre": "Portrait présumé de François II (1544-1560)",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/M0332001041.jpg",
+       "credit": "Own work",
+       "creator": "Photo taken by User:Arnaud 25",
+       "licence": "Public domain",
+       "licence_url": "",
+       "source": "https://commons.wikimedia.org/wiki/File:Francois_II_de_France_enfant.jpg",
+       "verifie_le": "2026-08-06"
+      }
      }
     }
    ]
@@ -4600,7 +4887,17 @@
      ],
      "oeuvre_unique": {
       "reference": "000PE026153",
-      "titre": "BERTHOLDE COUVANT LES OEUFS DE L'OIE"
+      "titre": "BERTHOLDE COUVANT LES OEUFS DE L'OIE",
+      "image": {
+       "statut": "restricted",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/000PE026153.jpg",
+       "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation © A. Danvers",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/000PE026153",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -4623,7 +4920,17 @@
      ],
      "oeuvre_unique": {
       "reference": "00000094658",
-      "titre": "TETE D'ETUDE"
+      "titre": "TETE D'ETUDE",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/00000094658.jpg",
+       "credit": "© Jean-Manuel Salingue",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/00000094658",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -4692,7 +4999,17 @@
      ],
      "oeuvre_unique": {
       "reference": "07480012421",
-      "titre": "Saint François adorant l'enfant"
+      "titre": "Saint François adorant l'enfant",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/07480012421.jpg",
+       "credit": "© P David ; © Angers, musées d'Angers",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/07480012421",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -4715,7 +5032,17 @@
      ],
      "oeuvre_unique": {
       "reference": "06770000317",
-      "titre": "Valfrin secourant Tancrède en présence d' Herminie"
+      "titre": "Valfrin secourant Tancrède en présence d' Herminie",
+      "image": {
+       "statut": "restricted",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/06770000317.jpg",
+       "credit": "© Daniel Sohier - utilisation soumise à autorisation",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/06770000317",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -4738,7 +5065,17 @@
      ],
      "oeuvre_unique": {
       "reference": "04450000740",
-      "titre": "Judith tenant la tête d'Holopherne"
+      "titre": "Judith tenant la tête d'Holopherne",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/04450000740.jpg",
+       "credit": "© Catherine LAUTHELIN",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/04450000740",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     }
    ]
@@ -5100,7 +5437,18 @@
      ],
      "oeuvre_unique": {
       "reference": "07430005039",
-      "titre": "La Sainte Famille avec saint Jean-Baptiste et sainte Elisabeth"
+      "titre": "La Sainte Famille avec saint Jean-Baptiste et sainte Elisabeth",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/07430005039.jpg",
+       "credit": "[1]",
+       "creator": "Annibale Carracci",
+       "licence": "Public domain",
+       "licence_url": "",
+       "source": "https://commons.wikimedia.org/wiki/File:Annibale_Carracci_Nantes.jpg",
+       "verifie_le": "2026-08-06"
+      }
      }
     },
     {
@@ -5123,7 +5471,17 @@
      ],
      "oeuvre_unique": {
       "reference": "05620001443",
-      "titre": "Apollon"
+      "titre": "Apollon",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/05620001443.jpg",
+       "credit": "Bernard Delorme",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/05620001443",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -5146,7 +5504,17 @@
      ],
      "oeuvre_unique": {
       "reference": "50110000194",
-      "titre": "Bords de rivière avec pêcheur"
+      "titre": "Bords de rivière avec pêcheur",
+      "image": {
+       "statut": "restricted",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/50110000194.jpg",
+       "credit": "© René-Gabriel Ojéda ; © Réunion des musées nationaux - utilisation soumise à autorisation",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/50110000194",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -5169,7 +5537,17 @@
      ],
      "oeuvre_unique": {
       "reference": "07480012427",
-      "titre": "Le repos pendant la fuite ; Allégorie (autre titre)"
+      "titre": "Le repos pendant la fuite ; Allégorie (autre titre)",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/07480012427.jpg",
+       "credit": "© P David ; © Angers, musées d'Angers",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/07480012427",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -5192,7 +5570,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0491001011",
-      "titre": "Etude de têtes d’apôtres"
+      "titre": "Etude de têtes d’apôtres",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0491001011.jpg",
+       "credit": "© Ville de Perpignan. Musée d'art Hyacinthe Rigaud - Pascale Marchesan",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0491001011",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -5215,7 +5603,17 @@
      ],
      "oeuvre_unique": {
       "reference": "02860008133",
-      "titre": "Vénus et l'Amour endormi"
+      "titre": "Vénus et l'Amour endormi",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/02860008133.jpg",
+       "credit": "Orléans, musée des beaux-arts © cliché François LAUGINIE",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/02860008133",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     }
    ]
@@ -5353,7 +5751,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0491000982",
-      "titre": "Enfant"
+      "titre": "Enfant",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0491000982.jpg",
+       "credit": "© Claire Muchir, ville de Perpignan",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0491000982",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     }
    ]
@@ -5512,7 +5920,18 @@
      ],
      "oeuvre_unique": {
       "reference": "000PE019544",
-      "titre": "LA DEPLORATION DU CHRIST"
+      "titre": "LA DEPLORATION DU CHRIST",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/000PE019544.jpg",
+       "credit": "Own work",
+       "creator": "Anonyme (Anciens Pays-Bas du Sud)",
+       "licence": "Public domain",
+       "licence_url": "",
+       "source": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_pays_bas_sud_deploration_du_christ.jpg",
+       "verifie_le": "2026-08-06"
+      }
      }
     },
     {
@@ -5535,7 +5954,17 @@
      ],
      "oeuvre_unique": {
       "reference": "01720000929",
-      "titre": "Vierge à l'enfant debout"
+      "titre": "Vierge à l'enfant debout",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/01720000929.jpg",
+       "credit": "© Jean-Claude Culas - Musées de Mâcon",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/01720000929",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -5558,7 +5987,17 @@
      ],
      "oeuvre_unique": {
       "reference": "50520000014",
-      "titre": "Présentation de la Vierge au temple ; croquis au verso"
+      "titre": "Présentation de la Vierge au temple ; croquis au verso",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/50520000014.jpg",
+       "credit": "© Lynda Frénois",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/50520000014",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -5581,7 +6020,17 @@
      ],
      "oeuvre_unique": {
       "reference": "02860008133",
-      "titre": "Vénus et l'Amour endormi"
+      "titre": "Vénus et l'Amour endormi",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/02860008133.jpg",
+       "credit": "Orléans, musée des beaux-arts © cliché François LAUGINIE",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/02860008133",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -5604,7 +6053,17 @@
      ],
      "oeuvre_unique": {
       "reference": "07980002321",
-      "titre": "L'apparition de la Vierge et de l'Enfant Jésus à saint Hyacinthe (Titre original)"
+      "titre": "L'apparition de la Vierge et de l'Enfant Jésus à saint Hyacinthe (Titre original)",
+      "image": {
+       "statut": "restricted",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/07980002321.jpg",
+       "credit": "© Réunion des musées nationaux-Grand Palais (MUDO - Musée de l'Oise) / René-Gabriel Ojéda - Utilisation des photographies soumise à autorisation",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/07980002321",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     }
    ]
@@ -5741,7 +6200,17 @@
      ],
      "oeuvre_unique": {
       "reference": "000DE017259",
-      "titre": "FEMME NUE DE DOS, UN GENOU EN TERRE ET LES BRAS ECARTES"
+      "titre": "FEMME NUE DE DOS, UN GENOU EN TERRE ET LES BRAS ECARTES",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/000DE017259.jpg",
+       "credit": "© Jean de Calan ; © musée Rodin",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/000DE017259",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -5764,7 +6233,17 @@
      ],
      "oeuvre_unique": {
       "reference": "04170004811",
-      "titre": "Mascaron ornant le buffet d'eau de la cascade (Inventaire)"
+      "titre": "Mascaron ornant le buffet d'eau de la cascade (Inventaire)",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/04170004811.jpg",
+       "credit": "",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/04170004811",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     }
    ]
@@ -5949,7 +6428,17 @@
      ],
      "oeuvre_unique": {
       "reference": "00000107086",
-      "titre": "L'Amour réveillant Psyché"
+      "titre": "L'Amour réveillant Psyché",
+      "image": {
+       "statut": "restricted",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/00000107086.jpg",
+       "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/00000107086",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     }
    ]
@@ -6212,7 +6701,17 @@
      ],
      "oeuvre_unique": {
       "reference": "000DE016661",
-      "titre": "AMOUR"
+      "titre": "AMOUR",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/000DE016661.jpg",
+       "credit": "",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/000DE016661",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -6235,7 +6734,17 @@
      ],
      "oeuvre_unique": {
       "reference": "000PE013054",
-      "titre": "La diseuse de bonne aventure"
+      "titre": "La diseuse de bonne aventure",
+      "image": {
+       "statut": "restricted",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/000PE013054.jpg",
+       "credit": "© Gérard Blot ; Réunion des musées nationaux - utilisation soumise à autorisation",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/000PE013054",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -6281,7 +6790,17 @@
      ],
      "oeuvre_unique": {
       "reference": "000PE020181",
-      "titre": "L'ADORATION DES BERGERS"
+      "titre": "L'ADORATION DES BERGERS",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/000PE020181.jpg",
+       "credit": "© L. Gauthier",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/000PE020181",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -6304,7 +6823,17 @@
      ],
      "oeuvre_unique": {
       "reference": "000PE020930",
-      "titre": "Mercure confiant le jeune Bacchus aux nymphes du mont Nysa"
+      "titre": "Mercure confiant le jeune Bacchus aux nymphes du mont Nysa",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/000PE020930.jpg",
+       "credit": "© Musée des Beaux-Arts de Caen, cliché Ernest Le Deley",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/000PE020930",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -6327,7 +6856,17 @@
      ],
      "oeuvre_unique": {
       "reference": "50520001106",
-      "titre": "Portrait de Jean-Antoine Watteau (1684-1721)"
+      "titre": "Portrait de Jean-Antoine Watteau (1684-1721)",
+      "image": {
+       "statut": "restricted",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/50520001106.jpg",
+       "credit": "© R.G. Ojeda ; © Réunion des musées nationaux - utilisation soumise à autorisation",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/50520001106",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -6350,7 +6889,17 @@
      ],
      "oeuvre_unique": {
       "reference": "04000000182",
-      "titre": "Erigone vaincue"
+      "titre": "Erigone vaincue",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/04000000182.jpg",
+       "credit": "Musée Lambinet, Ville de Versailles",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/04000000182",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -6373,7 +6922,17 @@
      ],
      "oeuvre_unique": {
       "reference": "07430005700",
-      "titre": "Amours dans les nuages"
+      "titre": "Amours dans les nuages",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/07430005700.jpg",
+       "credit": "Gérard Blot",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/07430005700",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -6396,7 +6955,17 @@
      ],
      "oeuvre_unique": {
       "reference": "01550005410",
-      "titre": "Allégorie de l'été"
+      "titre": "Allégorie de l'été",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/01550005410.jpg",
+       "credit": "© Marc Cherasse",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/01550005410",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -6419,7 +6988,17 @@
      ],
      "oeuvre_unique": {
       "reference": "01370000458",
-      "titre": "La Baigneuse surprise ; Le Fleuve Scamandre (autre titre)"
+      "titre": "La Baigneuse surprise ; Le Fleuve Scamandre (autre titre)",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/01370000458.jpg",
+       "credit": "© Jay",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/01370000458",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -6442,7 +7021,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0491000988",
-      "titre": "Un jeune enfant"
+      "titre": "Un jeune enfant",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0491000988.jpg",
+       "credit": "© Claire Muchir",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0491000988",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -6465,7 +7054,17 @@
      ],
      "oeuvre_unique": {
       "reference": "05030002954",
-      "titre": "Jeune femme drapée entraînée par deux hommes"
+      "titre": "Jeune femme drapée entraînée par deux hommes",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/05030002954.jpg",
+       "credit": "© Réunion des musées nationaux-Grand Palais/Benoît Touchard",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/05030002954",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     }
    ]
@@ -6895,7 +7494,17 @@
      ],
      "oeuvre_unique": {
       "reference": "50130000465",
-      "titre": "Fête de village ; Les joueurs de boule"
+      "titre": "Fête de village ; Les joueurs de boule",
+      "image": {
+       "statut": "restricted",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/50130000465.jpg",
+       "credit": "© Gérard Blot ; © Réunion des musées nationaux - utilisation soumise à autorisation",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/50130000465",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -6918,7 +7527,17 @@
      ],
      "oeuvre_unique": {
       "reference": "06650001640",
-      "titre": "Intérieur de Cabaret"
+      "titre": "Intérieur de Cabaret",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/06650001640.jpg",
+       "credit": "© agence Vallini",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/06650001640",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -6941,7 +7560,17 @@
      ],
      "oeuvre_unique": {
       "reference": "50110001641",
-      "titre": "Paysage"
+      "titre": "Paysage",
+      "image": {
+       "statut": "restricted",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/50110001641.jpg",
+       "credit": "(C) RMN-Grand Palais (musée Magnin) / Stéphane Maréchalle ; utilisation soumise à autorisation",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/50110001641",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -6964,7 +7593,17 @@
      ],
      "oeuvre_unique": {
       "reference": "03070007836",
-      "titre": "Mendiant"
+      "titre": "Mendiant",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/03070007836.jpg",
+       "credit": "© Maillot Hervé",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/03070007836",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -6987,7 +7626,17 @@
      ],
      "oeuvre_unique": {
       "reference": "01610000091",
-      "titre": "Le jeu des singes dans le monde"
+      "titre": "Le jeu des singes dans le monde",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/01610000091.jpg",
+       "credit": "Stéphane Prost",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/01610000091",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -7010,7 +7659,17 @@
      ],
      "oeuvre_unique": {
       "reference": "07010001983",
-      "titre": "Intérieur, fumeurs et musiciens"
+      "titre": "Intérieur, fumeurs et musiciens",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/07010001983.jpg",
+       "credit": "©, musée des beaux-arts, Ville de Bernay",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/07010001983",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -7033,7 +7692,17 @@
      ],
      "oeuvre_unique": {
       "reference": "05120000046",
-      "titre": "Le Torrent"
+      "titre": "Le Torrent",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/05120000046.jpg",
+       "credit": "Mangin",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/05120000046",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -7056,7 +7725,17 @@
      ],
      "oeuvre_unique": {
       "reference": "01160003232",
-      "titre": "Une Tabagie (Le titre correspond mal à la scène d'intérieur représentant des musiciens.)"
+      "titre": "Une Tabagie (Le titre correspond mal à la scène d'intérieur représentant des musiciens.)",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/01160003232.jpg",
+       "credit": "(c) musée Crozatier, Luc Olivier",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/01160003232",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -7079,7 +7758,17 @@
      ],
      "oeuvre_unique": {
       "reference": "09940140170",
-      "titre": "Scènes de rue"
+      "titre": "Scènes de rue",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/09940140170.jpg",
+       "credit": "© Ville de Grenoble / Musée de Grenoble-J.L. Lacroix",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/09940140170",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     }
    ]
@@ -7213,7 +7902,17 @@
      ],
      "oeuvre_unique": {
       "reference": "50160000047",
-      "titre": "Portrait de Napoléon en costume du sacre"
+      "titre": "Portrait de Napoléon en costume du sacre",
+      "image": {
+       "statut": "restricted",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/50160000047.jpg",
+       "credit": "© Arnaudet ; © Réunion des musées nationaux - utilisation soumise à autorisation",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/50160000047",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -7236,7 +7935,17 @@
      ],
      "oeuvre_unique": {
       "reference": "05620000673",
-      "titre": "Portrait de Jules de Résséguier, en uniforme"
+      "titre": "Portrait de Jules de Résséguier, en uniforme",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/05620000673.jpg",
+       "credit": "Daniel Martin",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/05620000673",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -7259,7 +7968,17 @@
      ],
      "oeuvre_unique": {
       "reference": "50110001207",
-      "titre": "Portrait de l'impératrice Marie-Louise"
+      "titre": "Portrait de l'impératrice Marie-Louise",
+      "image": {
+       "statut": "restricted",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/50110001207.jpg",
+       "credit": "© Thierry Le Mage ; © Réunion des musées nationaux - utilisation soumise à autorisation",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/50110001207",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -7282,7 +8001,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0809006860",
-      "titre": "Portrait de femme"
+      "titre": "Portrait de femme",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0809006860.jpg",
+       "credit": "© Musées de Senlis",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0809006860",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -7305,7 +8034,18 @@
      ],
      "oeuvre_unique": {
       "reference": "M0517000081",
-      "titre": "Hector Lemaire (titre de l'inventaire) ; Portrait d'Hector Lemaire (titre d'usage)"
+      "titre": "Hector Lemaire (titre de l'inventaire) ; Portrait d'Hector Lemaire (titre d'usage)",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/M0517000081.jpg",
+       "credit": "Own work",
+       "creator": "Ji-Elle",
+       "licence": "CC BY-SA 3.0",
+       "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+       "source": "https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_G%C3%A9rard-Portrait_d%27Hector_Lemaire-Mus%C3%A9e_barrois.jpg",
+       "verifie_le": "2026-08-06"
+      }
      }
     },
     {
@@ -7328,7 +8068,18 @@
      ],
      "oeuvre_unique": {
       "reference": "02470000174",
-      "titre": "Portrait de la reine Hortense"
+      "titre": "Portrait de la reine Hortense",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/02470000174.jpg",
+       "credit": "Musée Bertrand Châteauroux [1]",
+       "creator": "François Gérard / Robert Lefèvre",
+       "licence": "Public domain",
+       "licence_url": "",
+       "source": "https://commons.wikimedia.org/wiki/File:Portrait_de_la_reine_Hortense_-_Mus%C3%A9e_Bertrand_Ch%C3%A2teauroux.jpg",
+       "verifie_le": "2026-08-06"
+      }
      }
     },
     {
@@ -7351,7 +8102,17 @@
      ],
      "oeuvre_unique": {
       "reference": "03110042044",
-      "titre": "Napoléon 1er"
+      "titre": "Napoléon 1er",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/03110042044.jpg",
+       "credit": "© Christian DEVLEESCHAUWER",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/03110042044",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -7499,7 +8260,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0347001723",
-      "titre": "Tête de femme : Le Silence"
+      "titre": "Tête de femme : Le Silence",
+      "image": {
+       "statut": "restricted",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0347001723.jpg",
+       "credit": "Jean-Loup Mathieu (Eurêka) - utilisation soumise à autorisation ; studio Chechillot",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0347001723",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -7522,7 +8293,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0341000307",
-      "titre": "Portrait d'un médecin"
+      "titre": "Portrait d'un médecin",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0341000307.jpg",
+       "credit": "© musée Sarret de Grozon, Arbois ; © Henri Bertand",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0341000307",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     }
    ]
@@ -7795,7 +8576,17 @@
      ],
      "oeuvre_unique": {
       "reference": "000PE019530",
-      "titre": "SAINT SEBASTIEN"
+      "titre": "SAINT SEBASTIEN",
+      "image": {
+       "statut": "restricted",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/000PE019530.jpg",
+       "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation © Franck Raux",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/000PE019530",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -7841,7 +8632,17 @@
      ],
      "oeuvre_unique": {
       "reference": "07430004969",
-      "titre": "La Charité chrétienne"
+      "titre": "La Charité chrétienne",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/07430004969.jpg",
+       "credit": "Gérard Blot",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/07430004969",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -7864,7 +8665,17 @@
      ],
      "oeuvre_unique": {
       "reference": "01320016849",
-      "titre": "Sainte Cécile"
+      "titre": "Sainte Cécile",
+      "image": {
+       "statut": "restricted",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/01320016849.jpg",
+       "credit": "© Bruno FRANCOIS - utilisation soumise à autorisation",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/01320016849",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -7887,7 +8698,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0491001245",
-      "titre": "Tête de Saint Sébastien"
+      "titre": "Tête de Saint Sébastien",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0491001245.jpg",
+       "credit": "© Ville de Perpignan. Musée d'art Hyacinthe Rigaud - Pascale Marchesan",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0491001245",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -7910,7 +8731,17 @@
      ],
      "oeuvre_unique": {
       "reference": "06770000303",
-      "titre": "Saint Pierre pleurant sa faute"
+      "titre": "Saint Pierre pleurant sa faute",
+      "image": {
+       "statut": "restricted",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/06770000303.jpg",
+       "credit": "© Daniel Sohier - utilisation soumise à autorisation",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/06770000303",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -7933,7 +8764,17 @@
      ],
      "oeuvre_unique": {
       "reference": "03110042175",
-      "titre": "La Vierge et l'Enfant Jésus"
+      "titre": "La Vierge et l'Enfant Jésus",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/03110042175.jpg",
+       "credit": "© Musée des Beaux-Arts de Reims",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/03110042175",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -7956,7 +8797,17 @@
      ],
      "oeuvre_unique": {
       "reference": "09940009040",
-      "titre": "Etude d'une tête d'homme barbu"
+      "titre": "Etude d'une tête d'homme barbu",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/09940009040.jpg",
+       "credit": "© Ville de Grenoble / Musée de Grenoble-J.L. Lacroix",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/09940009040",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -7979,7 +8830,18 @@
      ],
      "oeuvre_unique": {
       "reference": "08940005128",
-      "titre": "Sainte Madeleine en extase (titre factice)"
+      "titre": "Sainte Madeleine en extase (titre factice)",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/08940005128.jpg",
+       "credit": "Own work , Tylwyth Eldar , 2024-03-09 13:22:06",
+       "creator": "Attributed to Francesco di Maria",
+       "licence": "Public domain",
+       "licence_url": "",
+       "source": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_Granet_-_Sainte_Madeleine_en_extase.jpg",
+       "verifie_le": "2026-08-06"
+      }
      }
     }
    ]
@@ -8165,7 +9027,18 @@
      ],
      "oeuvre_unique": {
       "reference": "00000077334",
-      "titre": "LA SAINTE FAMILLE"
+      "titre": "LA SAINTE FAMILLE",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/00000077334.jpg",
+       "credit": "Own work",
+       "creator": "Workshop of Perino del Vaga",
+       "licence": "CC BY 4.0",
+       "licence_url": "https://creativecommons.org/licenses/by/4.0",
+       "source": "https://commons.wikimedia.org/wiki/File:Ch%C3%A2teau_de_Chantilly,_Perin_del_Vaga,_the_Holy_family.JPG",
+       "verifie_le": "2026-08-06"
+      }
      }
     }
    ]
@@ -8563,7 +9436,17 @@
      ],
      "oeuvre_unique": {
       "reference": "000PE019554",
-      "titre": "PAYSAGE"
+      "titre": "PAYSAGE",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/000PE019554.jpg",
+       "credit": "Photo © RMN-Grand Palais Hervé Lewandowski",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/000PE019554",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -8609,7 +9492,17 @@
      ],
      "oeuvre_unique": {
       "reference": "00000069088",
-      "titre": "Paysage avec soldats au bord d'un lac dans un site montagneux"
+      "titre": "Paysage avec soldats au bord d'un lac dans un site montagneux",
+      "image": {
+       "statut": "restricted",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/00000069088.jpg",
+       "credit": "© Thierry Le Mage ; © Réunion des musées nationaux - utilisation soumise à autorisation",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/00000069088",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -8632,7 +9525,17 @@
      ],
      "oeuvre_unique": {
       "reference": "01500000132",
-      "titre": "Paysage : rochers et torrent"
+      "titre": "Paysage : rochers et torrent",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/01500000132.jpg",
+       "credit": "© Emmanuel Berry, Clamecy, Musée d'Art et d'Histoire Romain Rolland",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/01500000132",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -8655,7 +9558,17 @@
      ],
      "oeuvre_unique": {
       "reference": "00980001731",
-      "titre": "Un abordage"
+      "titre": "Un abordage",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/00980001731.jpg",
+       "credit": "© SEGURA",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/00980001731",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -8678,7 +9591,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0536000553",
-      "titre": "Paysage"
+      "titre": "Paysage",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0536000553.jpg",
+       "credit": "© Imatec Lionel AUDINET-Daniel CHAUBARD",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0536000553",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     }
    ]
@@ -9038,7 +9961,17 @@
      ],
      "oeuvre_unique": {
       "reference": "10480006080",
-      "titre": "Tête d'enfant"
+      "titre": "Tête d'enfant",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/10480006080.jpg",
+       "credit": "Bouchayer, Giroud",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/10480006080",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -9061,7 +9994,17 @@
      ],
      "oeuvre_unique": {
       "reference": "01610001204",
-      "titre": "Portrait de Johann-Georg Wille ; Portrait d'homme (autre titre)"
+      "titre": "Portrait de Johann-Georg Wille ; Portrait d'homme (autre titre)",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/01610001204.jpg",
+       "credit": "© Stéphane Prost",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/01610001204",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -9107,7 +10050,17 @@
      ],
      "oeuvre_unique": {
       "reference": "07760001112",
-      "titre": "Buste de femme de dos"
+      "titre": "Buste de femme de dos",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/07760001112.jpg",
+       "credit": "© musée de la Roche-sur-Yon",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/07760001112",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -9130,7 +10083,17 @@
      ],
      "oeuvre_unique": {
       "reference": "01710114791",
-      "titre": null
+      "titre": null,
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/01710114791.jpg",
+       "credit": "© Ecomusée de la Bresse bourguignonne",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/01710114791",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -9153,7 +10116,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0536030527",
-      "titre": "Portrait d'une paysanne dormant"
+      "titre": "Portrait d'une paysanne dormant",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0536030527.jpg",
+       "credit": "© Claude Philippot",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0536030527",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     }
    ]
@@ -9320,7 +10293,17 @@
      ],
      "oeuvre_unique": {
       "reference": "000PE021910",
-      "titre": "SACRIFICE A PRIAPE"
+      "titre": "SACRIFICE A PRIAPE",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/000PE021910.jpg",
+       "credit": "© L. Gauthier",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/000PE021910",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -9366,7 +10349,18 @@
      ],
      "oeuvre_unique": {
       "reference": "07290022377",
-      "titre": "Saint Denis ; Saint Denis l'Aéropagite couronné par un ange"
+      "titre": "Saint Denis ; Saint Denis l'Aéropagite couronné par un ange",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/07290022377.jpg",
+       "credit": "Cliché Carole Loisel, Catherine Lancien / Joconde",
+       "creator": "Nicolas Poussin",
+       "licence": "Public domain",
+       "licence_url": "",
+       "source": "https://commons.wikimedia.org/wiki/File:Saint_Denis_l%27Ar%C3%A9opagite_couronn%C3%A9_par_un_ange_-_Poussin_-_MBA_Rouen.jpg",
+       "verifie_le": "2026-08-06"
+      }
      }
     },
     {
@@ -9389,7 +10383,17 @@
      ],
      "oeuvre_unique": {
       "reference": "05120002906",
-      "titre": "Etudes de casques antiques"
+      "titre": "Etudes de casques antiques",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/05120002906.jpg",
+       "credit": "© Philippot",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/05120002906",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -9412,7 +10416,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0341000308",
-      "titre": "Moïse sauvé des eaux"
+      "titre": "Moïse sauvé des eaux",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0341000308.jpg",
+       "credit": "© musée Sarret de Grozon, Arbois ; © Henri Bertand",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0341000308",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     }
    ]
@@ -9838,7 +10852,18 @@
      ],
      "oeuvre_unique": {
       "reference": "000PE023056",
-      "titre": "L'Homme à la figue"
+      "titre": "L'Homme à la figue",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/000PE023056.jpg",
+       "credit": "https://mba.caen.fr/sites/mba/files/2019-11/VOUET%20Simon%2C%20Jeune%20homme%20%C3%A0%20la%20figue%20Inv.182.jpg",
+       "creator": "Simon Vouet",
+       "licence": "Public domain",
+       "licence_url": "",
+       "source": "https://commons.wikimedia.org/wiki/File:L%27Homme_%C3%A0_la_figue.jpg",
+       "verifie_le": "2026-08-06"
+      }
      }
     },
     {
@@ -9884,7 +10909,17 @@
      ],
      "oeuvre_unique": {
       "reference": "01810000027",
-      "titre": "La Présentation au temple ; Simeon ou le nunc dimitis. (ancien titre)"
+      "titre": "La Présentation au temple ; Simeon ou le nunc dimitis. (ancien titre)",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/01810000027.jpg",
+       "credit": "Laurent Chaintreuil",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/01810000027",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -9907,7 +10942,18 @@
      ],
      "oeuvre_unique": {
       "reference": "50110000275",
-      "titre": "Cérès, déesse des moissons"
+      "titre": "Cérès, déesse des moissons",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/50110000275.jpg",
+       "credit": "blogspot.com",
+       "creator": "Circle of Simon Vouet",
+       "licence": "Public domain",
+       "licence_url": "",
+       "source": "https://commons.wikimedia.org/wiki/File:Vouet,_Simon%3F_-_C%C3%A9r%C3%A8s,_d%C3%A9esse_des_moissons_-_17th_century.jpg",
+       "verifie_le": "2026-08-06"
+      }
      }
     },
     {
@@ -9930,7 +10976,17 @@
      ],
      "oeuvre_unique": {
       "reference": "03070000188",
-      "titre": "Sainte tenant la palme du martyre"
+      "titre": "Sainte tenant la palme du martyre",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/03070000188.jpg",
+       "credit": "© Maillot Hervé",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/03070000188",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -9953,7 +11009,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0345000311",
-      "titre": "Femme jouant du tambour basque"
+      "titre": "Femme jouant du tambour basque",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0345000311.jpg",
+       "credit": "musée des beaux arts de Lons le Saunier",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0345000311",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -9976,7 +11042,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0072003317",
-      "titre": "Sainte Madeleine"
+      "titre": "Sainte Madeleine",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0072003317.jpg",
+       "credit": "© Libourne ; musée des beaux-arts et d'archéologie",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0072003317",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -9999,7 +11075,18 @@
      ],
      "oeuvre_unique": {
       "reference": "07290021974",
-      "titre": "Adoration des Bergers"
+      "titre": "Adoration des Bergers",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/07290021974.jpg",
+       "credit": "\"L'Adoration des bergers\", anonyme, vers 1635-1640. Rouen, musée des beaux-arts.",
+       "creator": "Grégory Lejeune",
+       "licence": "CC0",
+       "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+       "source": "https://commons.wikimedia.org/wiki/File:%22L%27Adoration_des_bergers%22,_anonyme,_vers_1635-1640._Rouen,_mus%C3%A9e_des_beaux-arts._(36311888415).jpg",
+       "verifie_le": "2026-08-06"
+      }
      }
     },
     {
@@ -10022,7 +11109,17 @@
      ],
      "oeuvre_unique": {
       "reference": "01370014859",
-      "titre": "Portrait d'un artiste ou d'un collectionneur"
+      "titre": "Portrait d'un artiste ou d'un collectionneur",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/01370014859.jpg",
+       "credit": "© Dijon, musée des beaux-arts",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/01370014859",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     }
    ]
@@ -10337,7 +11434,18 @@
      ],
      "oeuvre_unique": {
       "reference": "07140001031",
-      "titre": "Marie de Médicis, reine de France + 1642 (Titre manuscrit)"
+      "titre": "Marie de Médicis, reine de France + 1642 (Titre manuscrit)",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/07140001031.jpg",
+       "credit": "Joconde database : entry 07140001031",
+       "creator": "17th century copy of original by Anthony van Dyck (1599-1641)",
+       "licence": "Public domain",
+       "licence_url": "",
+       "source": "https://commons.wikimedia.org/wiki/File:Marie_de_Medici_-_Van_Dyck.jpg",
+       "verifie_le": "2026-08-06"
+      }
      }
     },
     {
@@ -10383,7 +11491,17 @@
      ],
      "oeuvre_unique": {
       "reference": "50110001610",
-      "titre": "La Vierge à l'Enfant"
+      "titre": "La Vierge à l'Enfant",
+      "image": {
+       "statut": "restricted",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/50110001610.jpg",
+       "credit": "(C) RMN-Grand Palais (musée Magnin) / Stéphane Maréchalle ; utilisation soumise à autorisation",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/50110001610",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -10406,7 +11524,17 @@
      ],
      "oeuvre_unique": {
       "reference": "06770000214",
-      "titre": "Méléagre présentant à Atalante la hure du sanglier de Calydon"
+      "titre": "Méléagre présentant à Atalante la hure du sanglier de Calydon",
+      "image": {
+       "statut": "restricted",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/06770000214.jpg",
+       "credit": "© Daniel Sohier - utilisation soumise à autorisation",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/06770000214",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -10429,7 +11557,17 @@
      ],
      "oeuvre_unique": {
       "reference": "07290021505",
-      "titre": "Portrait d'une dame âgée de 43 ans"
+      "titre": "Portrait d'une dame âgée de 43 ans",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/07290021505.jpg",
+       "credit": "Carole Loisel ; Catherine Lancien",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/07290021505",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -10452,7 +11590,17 @@
      ],
      "oeuvre_unique": {
       "reference": "10690003855",
-      "titre": "Copie d'après atelier de Van Dick, Portrait de Van Opstal (titre factice) ; Ancien titre : L'Homme à la fraise"
+      "titre": "Copie d'après atelier de Van Dick, Portrait de Van Opstal (titre factice) ; Ancien titre : L'Homme à la fraise",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/10690003855.jpg",
+       "credit": "© Jean-Pierre Woaye-Hune",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/10690003855",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -10475,7 +11623,17 @@
      ],
      "oeuvre_unique": {
       "reference": "03110042522",
-      "titre": "Étude de tête (titre attribué)"
+      "titre": "Étude de tête (titre attribué)",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/03110042522.jpg",
+       "credit": "© Christian DEVLEESCHAUWER",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/03110042522",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -10498,7 +11656,17 @@
      ],
      "oeuvre_unique": {
       "reference": "03030002149",
-      "titre": "Portrait de Béatrice de Cusance (1614-1663)"
+      "titre": "Portrait de Béatrice de Cusance (1614-1663)",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/03030002149.jpg",
+       "credit": "© Troyes ; musée des beaux-arts et d'archéologie",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/03030002149",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -10521,7 +11689,17 @@
      ],
      "oeuvre_unique": {
       "reference": "06570017304",
-      "titre": "Érasme"
+      "titre": "Érasme",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/06570017304.jpg",
+       "credit": "Musée des Beaux-Arts de Caen, cliché Patricia Touzard",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/06570017304",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -10544,7 +11722,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0457000769",
-      "titre": "Sans désignation"
+      "titre": "Sans désignation",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0457000769.jpg",
+       "credit": "Musée des Beaux-arts, Nîmes",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0457000769",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -10567,7 +11755,17 @@
      ],
      "oeuvre_unique": {
       "reference": "06210000190",
-      "titre": "Achille parmi les filles de Lycodème (Titre) ; Achille se trahit devant Ulysse (Ancien titre)"
+      "titre": "Achille parmi les filles de Lycodème (Titre) ; Achille se trahit devant Ulysse (Ancien titre)",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/06210000190.jpg",
+       "credit": "© Jacques QUECQ D'HENRIPRÊT. (Photographe) ; © Rodolphe VANDEZANDE",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/06210000190",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     }
    ]
@@ -10776,7 +11974,17 @@
      ],
      "oeuvre_unique": {
       "reference": "000PE019516",
-      "titre": "LA MORT DE SAINT JOSEPH"
+      "titre": "LA MORT DE SAINT JOSEPH",
+      "image": {
+       "statut": "restricted",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/000PE019516.jpg",
+       "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation © Thierry Le Mage",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/000PE019516",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -10799,7 +12007,17 @@
      ],
      "oeuvre_unique": {
       "reference": "00000069056",
-      "titre": "La Vierge lisant entourée d'anges"
+      "titre": "La Vierge lisant entourée d'anges",
+      "image": {
+       "statut": "restricted",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/00000069056.jpg",
+       "credit": "© Thierry Le Mage ; © Réunion des musées nationaux - utilisation soumise à autorisation",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/00000069056",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -10822,7 +12040,17 @@
      ],
      "oeuvre_unique": {
       "reference": "10500001218",
-      "titre": "Vierge à l'Enfant avec Saint-Jean Baptiste"
+      "titre": "Vierge à l'Enfant avec Saint-Jean Baptiste",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/10500001218.jpg",
+       "credit": "Giroud Jean-Claude ; Bouchayer Jean",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/10500001218",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -10845,7 +12073,18 @@
      ],
      "oeuvre_unique": {
       "reference": "03290008037",
-      "titre": "Loth et ses filles"
+      "titre": "Loth et ses filles",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/03290008037.jpg",
+       "credit": "Own work",
+       "creator": "Sailko",
+       "licence": "CC BY 3.0",
+       "licence_url": "https://creativecommons.org/licenses/by/3.0",
+       "source": "https://commons.wikimedia.org/wiki/File:Cerchia_di_pompeo_batoni,_lot_e_le_figlie,_xviii_secolo.jpg",
+       "verifie_le": "2026-08-06"
+      }
      }
     },
     {
@@ -10868,7 +12107,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0332010269",
-      "titre": "La Sainte Famille avec saint Jean-Baptiste"
+      "titre": "La Sainte Famille avec saint Jean-Baptiste",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0332010269.jpg",
+       "credit": "© CHATELAIN Eric",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0332010269",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -10891,7 +12140,18 @@
      ],
      "oeuvre_unique": {
       "reference": "08940004673",
-      "titre": "L'Adoration des Mages (titre d'usage)"
+      "titre": "L'Adoration des Mages (titre d'usage)",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/08940004673.jpg",
+       "credit": "Own work , Tylwyth Eldar , 2024-03-09 13:25:19",
+       "creator": "Attributed to Giuseppe Bartolomeo Chiari",
+       "licence": "Public domain",
+       "licence_url": "",
+       "source": "https://commons.wikimedia.org/wiki/File:Giuseppe_Bartolomeo_Chiari_-_L%27Adoration_des_Mages_02.jpg",
+       "verifie_le": "2026-08-06"
+      }
      }
     },
     {
@@ -10914,7 +12174,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0536000542",
-      "titre": "L'École d'Athènes"
+      "titre": "L'École d'Athènes",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0536000542.jpg",
+       "credit": "© Claude Philippot",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0536000542",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     }
    ]
@@ -11160,7 +12430,18 @@
      ],
      "oeuvre_unique": {
       "reference": "00000077245",
-      "titre": "Dame inconnue"
+      "titre": "Dame inconnue",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/00000077245.jpg",
+       "credit": "photo.rmn.fr",
+       "creator": "Attributed to Pierre Mignard I",
+       "licence": "Public domain",
+       "licence_url": "",
+       "source": "https://commons.wikimedia.org/wiki/File:Portrait_d%27une_dame_inconnue_-_Mignard_-_Mus%C3%A9e_Cond%C3%A9.jpg",
+       "verifie_le": "2026-08-06"
+      }
      }
     },
     {
@@ -11206,7 +12487,17 @@
      ],
      "oeuvre_unique": {
       "reference": "04000001398",
-      "titre": "La famille du Grand Dauphin"
+      "titre": "La famille du Grand Dauphin",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/04000001398.jpg",
+       "credit": "© Musée Lambinet",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/04000001398",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -11229,7 +12520,18 @@
      ],
      "oeuvre_unique": {
       "reference": "01720000928",
-      "titre": "Madame de Montespan et ses enfants"
+      "titre": "Madame de Montespan et ses enfants",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/01720000928.jpg",
+       "credit": "https://www.culture.gouv.fr/Wave/image/joconde/0375/m017204_0003965_p.jpg",
+       "creator": "Attributed to Pierre Mignard I",
+       "licence": "Public domain",
+       "licence_url": "",
+       "source": "https://commons.wikimedia.org/wiki/File:Madame_de_Maintenon_avec_Vexin_et_Maine,_Mignard.jpg",
+       "verifie_le": "2026-08-06"
+      }
      }
     },
     {
@@ -11252,7 +12554,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0271000077",
-      "titre": "Hélène Ferrand, marquise de Saint Germain Beaupré"
+      "titre": "Hélène Ferrand, marquise de Saint Germain Beaupré",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0271000077.jpg",
+       "credit": "© Château de Blois / F. Lauginie, 2008",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0271000077",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -11275,7 +12587,17 @@
      ],
      "oeuvre_unique": {
       "reference": "07290022367",
-      "titre": "Tête de Christ"
+      "titre": "Tête de Christ",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/07290022367.jpg",
+       "credit": "© Rouen, musée des beaux-arts",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/07290022367",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -11298,7 +12620,18 @@
      ],
      "oeuvre_unique": {
       "reference": "M0003020239",
-      "titre": "Godefroy de Bouillon soigné par l'ange (titre d'usage)"
+      "titre": "Godefroy de Bouillon soigné par l'ange (titre d'usage)",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/M0003020239.jpg",
+       "credit": "http://webmuseo.com/ws/musees-parc-vosges-nord/app/file/download/_0014514.jpg?key=6acf71zd3kllbz4hb9kj3lm00g5f1id6u&lang=fr",
+       "creator": "Pierre Mignard I",
+       "licence": "Public domain",
+       "licence_url": "",
+       "source": "https://commons.wikimedia.org/wiki/File:Pierre_Mignard,_Godefroy_de_Bouillon_soign%C3%A9_par_un_ange.jpg",
+       "verifie_le": "2026-08-06"
+      }
      }
     },
     {
@@ -11321,7 +12654,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0012000004",
-      "titre": "Portrait du roi Louis XIV"
+      "titre": "Portrait du roi Louis XIV",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0012000004.jpg",
+       "credit": "© cliché inventaire général (Commission régionale d’Inventaire Grand Est)",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0012000004",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -11344,7 +12687,17 @@
      ],
      "oeuvre_unique": {
       "reference": "08870000079",
-      "titre": "Portrait du Maréchal de Catinat de la Fauconnerie"
+      "titre": "Portrait du Maréchal de Catinat de la Fauconnerie",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/08870000079.jpg",
+       "credit": "© Ville de Nice, Palais Lascaris, Umberto Leone",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/08870000079",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     }
    ]
@@ -11465,7 +12818,17 @@
      ],
      "oeuvre_unique": {
       "reference": "05620000350",
-      "titre": "Combat de cavalerie"
+      "titre": "Combat de cavalerie",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/05620000350.jpg",
+       "credit": "Bernard Delorme",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/05620000350",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -11488,7 +12851,18 @@
      ],
      "oeuvre_unique": {
       "reference": "50110001654",
-      "titre": "Combat de Pyrrhus contre les Romains"
+      "titre": "Combat de Pyrrhus contre les Romains",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/50110001654.jpg",
+       "credit": "Own work",
+       "creator": "Arnaud 25",
+       "licence": "CC BY-SA 4.0",
+       "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+       "source": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_Magnin_009.jpg",
+       "verifie_le": "2026-08-06"
+      }
      }
     },
     {
@@ -11511,7 +12885,17 @@
      ],
      "oeuvre_unique": {
       "reference": "02340000148",
-      "titre": "Combat d'éléphant contre rhinocéros"
+      "titre": "Combat d'éléphant contre rhinocéros",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/02340000148.jpg",
+       "credit": "© Susana Pereira Tavares ; musée Charles VII",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/02340000148",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     }
    ]
@@ -11859,7 +13243,17 @@
      ],
      "oeuvre_unique": {
       "reference": "000PE022152",
-      "titre": "VENUS ENDORMIE ENTRE DEUX AMOURS"
+      "titre": "VENUS ENDORMIE ENTRE DEUX AMOURS",
+      "image": {
+       "statut": "restricted",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/000PE022152.jpg",
+       "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation © A. Danvers",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/000PE022152",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -11882,7 +13276,17 @@
      ],
      "oeuvre_unique": {
       "reference": "00000074374",
-      "titre": "HERCULE AU REPOS"
+      "titre": "HERCULE AU REPOS",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/00000074374.jpg",
+       "credit": "© Castres, musée Goya",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/00000074374",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -11905,7 +13309,17 @@
      ],
      "oeuvre_unique": {
       "reference": "10500005806",
-      "titre": "Enlèvement de Déjanire"
+      "titre": "Enlèvement de Déjanire",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/10500005806.jpg",
+       "credit": "Bouchayer Jean ; Giroud Jean-Claude",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/10500005806",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -11928,7 +13342,18 @@
      ],
      "oeuvre_unique": {
       "reference": "00980001231",
-      "titre": "Un Philosophe"
+      "titre": "Un Philosophe",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/00980001231.jpg",
+       "credit": "Own work , Tylwyth Eldar , 2018-10-29 15:24:50",
+       "creator": "Maître de l'Annonce aux Bergers",
+       "licence": "Public domain",
+       "licence_url": "",
+       "source": "https://commons.wikimedia.org/wiki/File:Ma%C3%AEtre_de_l%27Annonce_aux_bergers_-_Philosophe.jpg",
+       "verifie_le": "2026-08-06"
+      }
      }
     },
     {
@@ -11951,7 +13376,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0347001249",
-      "titre": "Lucrèce"
+      "titre": "Lucrèce",
+      "image": {
+       "statut": "restricted",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0347001249.jpg",
+       "credit": "© Jean-Loup Mathieu (Eurêka) - utilisation soumise à autorisation ; studio Chechillot",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0347001249",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -11974,7 +13409,17 @@
      ],
      "oeuvre_unique": {
       "reference": "07480012416",
-      "titre": "Combat de cavalerie"
+      "titre": "Combat de cavalerie",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/07480012416.jpg",
+       "credit": "© P David ; © Angers, musées d'Angers",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/07480012416",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -11997,7 +13442,17 @@
      ],
      "oeuvre_unique": {
       "reference": "01500000115",
-      "titre": "Mort de sainte Claire ; Mort de sainte Thérèse d'Avila (Titre ancien)"
+      "titre": "Mort de sainte Claire ; Mort de sainte Thérèse d'Avila (Titre ancien)",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/01500000115.jpg",
+       "credit": "© Emmanuel Darnault, Clamecy, Musée d'Art et d'Histoire Romain Rolland",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/01500000115",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -12020,7 +13475,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0121002493",
-      "titre": "La mort de Cléopâtre"
+      "titre": "La mort de Cléopâtre",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0121002493.jpg",
+       "credit": "Ville de Clermont-Ferrand MARQ ; Thibaut Mazen",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0121002493",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -12043,7 +13508,18 @@
      ],
      "oeuvre_unique": {
       "reference": "03290005077",
-      "titre": "Apparition de Jésus à Marie-Madeleine"
+      "titre": "Apparition de Jésus à Marie-Madeleine",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/03290005077.jpg",
+       "credit": "Own work",
+       "creator": "Sailko",
+       "licence": "CC BY 3.0",
+       "licence_url": "https://creativecommons.org/licenses/by/3.0",
+       "source": "https://commons.wikimedia.org/wiki/File:Luca_giordano,_noli_me_tangere,_1650-1700_ca.jpg",
+       "verifie_le": "2026-08-06"
+      }
      }
     },
     {
@@ -12066,7 +13542,17 @@
      ],
      "oeuvre_unique": {
       "reference": "05120002092",
-      "titre": "Conversion de saint Paul ; Saint Paul terrassé sur le chemin de Damas"
+      "titre": "Conversion de saint Paul ; Saint Paul terrassé sur le chemin de Damas",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/05120002092.jpg",
+       "credit": "Maertens",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/05120002092",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -12089,7 +13575,17 @@
      ],
      "oeuvre_unique": {
       "reference": "01760000049",
-      "titre": "La communion des apôtres"
+      "titre": "La communion des apôtres",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/01760000049.jpg",
+       "credit": "© Chaintreuil Laurent",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/01760000049",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -12112,7 +13608,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0341000402",
-      "titre": "Angélique et Médor"
+      "titre": "Angélique et Médor",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0341000402.jpg",
+       "credit": "© musée Sarret de Grozon, Arbois ; © Henri Bertand",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0341000402",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -12135,7 +13641,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0536000446",
-      "titre": "Denys de Syracuse"
+      "titre": "Denys de Syracuse",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0536000446.jpg",
+       "credit": "© Claude Philippot",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0536000446",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     }
    ]
@@ -12381,7 +13897,17 @@
      ],
      "oeuvre_unique": {
       "reference": "06380004681",
-      "titre": "MARINE, SOLEIL COUCHANT"
+      "titre": "MARINE, SOLEIL COUCHANT",
+      "image": {
+       "statut": "restricted",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/06380004681.jpg",
+       "credit": "Réunion des musées nationaux - utilisation soumise à autorisation",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/06380004681",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -12450,7 +13976,17 @@
      ],
      "oeuvre_unique": {
       "reference": "10480004941",
-      "titre": "Marine"
+      "titre": "Marine",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/10480004941.jpg",
+       "credit": "Bouchayer, Giroud",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/10480004941",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -12473,7 +14009,17 @@
      ],
      "oeuvre_unique": {
       "reference": "01370004899",
-      "titre": "La Roche percée"
+      "titre": "La Roche percée",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/01370004899.jpg",
+       "credit": "© Dijon, musée des beaux-arts",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/01370004899",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -12496,7 +14042,17 @@
      ],
      "oeuvre_unique": {
       "reference": "50110000527",
-      "titre": "L'Arbre sur la falaise"
+      "titre": "L'Arbre sur la falaise",
+      "image": {
+       "statut": "restricted",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/50110000527.jpg",
+       "credit": "© Réunion des musées nationaux-Grand Palais (musée Magnin) / Michel Urtado ; utilisation soumise à autorisation",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/50110000527",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -12519,7 +14075,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0491001439",
-      "titre": "Xerxès"
+      "titre": "Xerxès",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0491001439.jpg",
+       "credit": "© Claire Muchir, ville de Perpignan",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0491001439",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -12542,7 +14108,17 @@
      ],
      "oeuvre_unique": {
       "reference": "02650001146",
-      "titre": "Bord de mer avec falaise percée"
+      "titre": "Bord de mer avec falaise percée",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/02650001146.jpg",
+       "credit": "© musée des beaux-arts de Tours",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/02650001146",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -12565,7 +14141,17 @@
      ],
      "oeuvre_unique": {
       "reference": "03110041569",
-      "titre": "Marine"
+      "titre": "Marine",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/03110041569.jpg",
+       "credit": "© Christian DEVLEESCHAUWER",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/03110041569",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -12588,7 +14174,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0794012647",
-      "titre": "Berline attelée"
+      "titre": "Berline attelée",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0794012647.jpg",
+       "credit": "© musée municipal de Soissons",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0794012647",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -12611,7 +14207,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0949001606",
-      "titre": "Marine, port sous un clair de lune (titre factice) Port de mer ; effet de lune (catalogue 1900)"
+      "titre": "Marine, port sous un clair de lune (titre factice) Port de mer ; effet de lune (catalogue 1900)",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0949001606.jpg",
+       "credit": "Bruno Preschesmisky",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0949001606",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     }
    ]
@@ -12701,7 +14307,17 @@
      ],
      "oeuvre_unique": {
       "reference": "07450066079",
-      "titre": "Vitrail des Cordeliers"
+      "titre": "Vitrail des Cordeliers",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/07450066079.jpg",
+       "credit": "© Chantal Hémon",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/07450066079",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-08-12"
+      }
      }
     }
    ]
@@ -12923,7 +14539,18 @@
      ],
      "oeuvre_unique": {
       "reference": "000PE009680",
-      "titre": "PORTRAIT DU MARECHAL DE TESSE (1650-1725)"
+      "titre": "PORTRAIT DU MARECHAL DE TESSE (1650-1725)",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/000PE009680.jpg",
+       "credit": "Musée des Beaux-arts du Mans",
+       "creator": "Hyacinthe Rigaud",
+       "licence": "Public domain",
+       "licence_url": "",
+       "source": "https://commons.wikimedia.org/wiki/File:Le_mar%C3%A9chal_de_Tess%C3%A9.JPG",
+       "verifie_le": "2026-08-06"
+      }
      }
     },
     {
@@ -12969,7 +14596,18 @@
      ],
      "oeuvre_unique": {
       "reference": "00000077264",
-      "titre": "PORTRAIT D'HOMME"
+      "titre": "PORTRAIT D'HOMME",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/00000077264.jpg",
+       "credit": "photo.rmn.fr",
+       "creator": "Attributed to Hyacinthe Rigaud",
+       "licence": "Public domain",
+       "licence_url": "",
+       "source": "https://commons.wikimedia.org/wiki/File:Portrait_d%27homme_-_Hyacinthe_Rigaud_-Mus%C3%A9e_Cond%C3%A9.jpg",
+       "verifie_le": "2026-08-06"
+      }
      }
     },
     {
@@ -12992,7 +14630,17 @@
      ],
      "oeuvre_unique": {
       "reference": "10480002158",
-      "titre": "Louis XV enfant"
+      "titre": "Louis XV enfant",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/10480002158.jpg",
+       "credit": "Giroud",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/10480002158",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -13015,7 +14663,17 @@
      ],
      "oeuvre_unique": {
       "reference": "000PE023379",
-      "titre": "Trois études de cuirasses"
+      "titre": "Trois études de cuirasses",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/000PE023379.jpg",
+       "credit": "© Lysiane Gauthier",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/000PE023379",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -13038,7 +14696,17 @@
      ],
      "oeuvre_unique": {
       "reference": "07840001024",
-      "titre": "Jean de La Fontaine"
+      "titre": "Jean de La Fontaine",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/07840001024.jpg",
+       "credit": "musée Jean de La Fontaine de Château-Thierry",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/07840001024",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -13061,7 +14729,17 @@
      ],
      "oeuvre_unique": {
       "reference": "07290022339",
-      "titre": "Etude de cuirasse"
+      "titre": "Etude de cuirasse",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/07290022339.jpg",
+       "credit": "© Hélène Thomas, musées de la ville de Rouen",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/07290022339",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -13084,7 +14762,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0121003071",
-      "titre": "Portrait de Mademoiselle de Charolais (ou de Blois)"
+      "titre": "Portrait de Mademoiselle de Charolais (ou de Blois)",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0121003071.jpg",
+       "credit": "Ville de Clermont-Ferrand MARQ ;  JC SERGERE",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0121003071",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -13107,7 +14795,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0517000065",
-      "titre": "Portrait d'Alexis Piron (titre de l'inventaire, titre erroné) ; Portrait d'Antoine Coysevox (titre d'usage)"
+      "titre": "Portrait d'Alexis Piron (titre de l'inventaire, titre erroné) ; Portrait d'Antoine Coysevox (titre d'usage)",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0517000065.jpg",
+       "credit": "musée barrois, Bar-le-Duc",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0517000065",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -13130,7 +14828,18 @@
      ],
      "oeuvre_unique": {
       "reference": "10160000824",
-      "titre": "René François de Beauvau du Rivau"
+      "titre": "René François de Beauvau du Rivau",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/10160000824.jpg",
+       "credit": "HyacintheRigaud.com [1]",
+       "creator": "Hyacinthe Rigaud",
+       "licence": "Public domain",
+       "licence_url": "",
+       "source": "https://commons.wikimedia.org/wiki/File:Hyacinthe_Rigaud_-_Ren%C3%A9_Fran%C3%A7ois_de_Beauvau_du_Rivau.jpg",
+       "verifie_le": "2026-08-06"
+      }
      }
     },
     {
@@ -13153,7 +14862,17 @@
      ],
      "oeuvre_unique": {
       "reference": "07030017687",
-      "titre": "Portrait d'Emmanuel-Théodose de la Tour d'Auvergne, Duc, d'Albert et de Bouillon"
+      "titre": "Portrait d'Emmanuel-Théodose de la Tour d'Auvergne, Duc, d'Albert et de Bouillon",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/07030017687.jpg",
+       "credit": "© Musée d'art, histoire et archéologie, Evreux",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/07030017687",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -13176,7 +14895,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0949000353",
-      "titre": "Portrait de l'abbé de Rancé"
+      "titre": "Portrait de l'abbé de Rancé",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0949000353.jpg",
+       "credit": "Bruno Preschesmisky",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0949000353",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     }
    ]
@@ -13329,7 +15058,17 @@
      ],
      "oeuvre_unique": {
       "reference": "000PE001307",
-      "titre": "LIONS COUCHES"
+      "titre": "LIONS COUCHES",
+      "image": {
+       "statut": "restricted",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/000PE001307.jpg",
+       "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation © Gérard Blot",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/000PE001307",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -13398,7 +15137,18 @@
      ],
      "oeuvre_unique": {
       "reference": "50110000738",
-      "titre": "Tête de jeune homme"
+      "titre": "Tête de jeune homme",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/50110000738.jpg",
+       "credit": "https://www.pop.culture.gouv.fr/",
+       "creator": "Attributed to Théodore Géricault",
+       "licence": "Public domain",
+       "licence_url": "",
+       "source": "https://commons.wikimedia.org/wiki/File:GERICAULT_Th%C3%A9odore_(peintre,_attribu%C3%A9_%C3%A0)_-_T%C3%AAte_de_jeune_homme,_1810_vers.jpg",
+       "verifie_le": "2026-08-06"
+      }
      }
     },
     {
@@ -13421,7 +15171,17 @@
      ],
      "oeuvre_unique": {
       "reference": "06070001420",
-      "titre": "Académie d'homme"
+      "titre": "Académie d'homme",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/06070001420.jpg",
+       "credit": "© Roumagnac Guy",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/06070001420",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -13444,7 +15204,18 @@
      ],
      "oeuvre_unique": {
       "reference": "10480003953",
-      "titre": "Cheval au galop"
+      "titre": "Cheval au galop",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/10480003953.jpg",
+       "credit": "https://pop-perf-assets.s3.gra.io.cloud.ovh.net/joconde/10480003953/0000669.jpg",
+       "creator": "Théodore Géricault",
+       "licence": "Public domain",
+       "licence_url": "",
+       "source": "https://commons.wikimedia.org/wiki/File:Cheval_au_galop,_par_Th%C3%A9odore_G%C3%A9ricault.jpg",
+       "verifie_le": "2026-08-06"
+      }
      }
     },
     {
@@ -13490,7 +15261,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0289002599",
-      "titre": "Cheval debout de profil vers la gauche (titre factice)"
+      "titre": "Cheval debout de profil vers la gauche (titre factice)",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0289002599.jpg",
+       "credit": "© Matthieu Dussauge",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0289002599",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -13513,7 +15294,18 @@
      ],
      "oeuvre_unique": {
       "reference": "03110005881",
-      "titre": "Napoléon donnant un ordre à un officier supérieur des Guides"
+      "titre": "Napoléon donnant un ordre à un officier supérieur des Guides",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/03110005881.jpg",
+       "credit": "Musée des Beaux-Arts, Reims",
+       "creator": "Théodore Géricault",
+       "licence": "Public domain",
+       "licence_url": "",
+       "source": "https://commons.wikimedia.org/wiki/File:G%C3%89RICAULT_Th%C3%A9odore_(Attribu%C3%A9_%C3%A0)_Napol%C3%A9on_donnant_un_ordre_%C3%A0_un_officier_sup%C3%A9rieur_des_Guides_Huile_sur_toile.jpg",
+       "verifie_le": "2026-08-06"
+      }
      }
     },
     {
@@ -13536,7 +15328,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0121001933",
-      "titre": "Étude de tête d'homme"
+      "titre": "Étude de tête d'homme",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0121001933.jpg",
+       "credit": "Ville de Clermont-Ferrand MARQ",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0121001933",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     }
    ]
@@ -13661,7 +15463,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0332002755",
-      "titre": "Etudes de femmes nues vues de dos"
+      "titre": "Etudes de femmes nues vues de dos",
+      "image": {
+       "statut": "restricted",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0332002755.jpg",
+       "credit": "© GUENAT Pierre - utilisation soumise à autorisation",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0332002755",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -13684,7 +15496,17 @@
      ],
      "oeuvre_unique": {
       "reference": "09940006847",
-      "titre": "Paysage ; Ferme dans un paysage (Ancien titre)"
+      "titre": "Paysage ; Ferme dans un paysage (Ancien titre)",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/09940006847.jpg",
+       "credit": "© Ville de Grenoble / Musée de Grenoble-J.L. Lacroix",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/09940006847",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     }
    ]
@@ -13948,7 +15770,17 @@
      ],
      "oeuvre_unique": {
       "reference": "00000107133",
-      "titre": "Scène d'allégence d'un chef d'armée envers un personnage en armes"
+      "titre": "Scène d'allégence d'un chef d'armée envers un personnage en armes",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/00000107133.jpg",
+       "credit": "© Lynda Frénois",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/00000107133",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -13971,7 +15803,17 @@
      ],
      "oeuvre_unique": {
       "reference": "06570009240",
-      "titre": "La Vierge et l'Enfant entourés d'anges ; Triomphe de la Vierge"
+      "titre": "La Vierge et l'Enfant entourés d'anges ; Triomphe de la Vierge",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/06570009240.jpg",
+       "credit": "Musée des Beaux-Arts de Caen, cliché Patricia Touzard",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/06570009240",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -14017,7 +15859,17 @@
      ],
      "oeuvre_unique": {
       "reference": "01370014810",
-      "titre": "La Résurrection de Lazare"
+      "titre": "La Résurrection de Lazare",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/01370014810.jpg",
+       "credit": "© Dijon, musée des beaux-arts",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/01370014810",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -14040,7 +15892,17 @@
      ],
      "oeuvre_unique": {
       "reference": "01160004688",
-      "titre": "L'Annonciation"
+      "titre": "L'Annonciation",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/01160004688.jpg",
+       "credit": "(c) musée Crozatier, Luc Olivier",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/01160004688",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     }
    ]
@@ -14217,7 +16079,17 @@
      ],
      "oeuvre_unique": {
       "reference": "02110002126",
-      "titre": "Tête d'enfant"
+      "titre": "Tête d'enfant",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/02110002126.jpg",
+       "credit": "© Jean-Manuel Salingue",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/02110002126",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -14240,7 +16112,17 @@
      ],
      "oeuvre_unique": {
       "reference": "05120001189",
-      "titre": "L'Annonciation"
+      "titre": "L'Annonciation",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/05120001189.jpg",
+       "credit": "Mangin",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/05120001189",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -14263,7 +16145,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0332002641",
-      "titre": "Tête d'enfant ou de jeune homme"
+      "titre": "Tête d'enfant ou de jeune homme",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0332002641.jpg",
+       "credit": "© GUENAT Pierre",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0332002641",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     }
    ]
@@ -14413,7 +16305,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0491000943",
-      "titre": "Tête de vieillard"
+      "titre": "Tête de vieillard",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0491000943.jpg",
+       "credit": "© Claire Muchir, ville de Perpignan",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0491000943",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     }
    ]
@@ -14519,7 +16421,18 @@
      ],
      "oeuvre_unique": {
       "reference": "000PE019542",
-      "titre": "Le Christ pleure par la Vierge et deux anges"
+      "titre": "Le Christ pleure par la Vierge et deux anges",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/000PE019542.jpg",
+       "credit": "Own work",
+       "creator": "Paolo Veronese and workshop",
+       "licence": "Public domain",
+       "licence_url": "",
+       "source": "https://commons.wikimedia.org/wiki/File:Lille_Pdba_veronese_christ_anges.JPG",
+       "verifie_le": "2026-08-06"
+      }
      }
     },
     {
@@ -14542,7 +16455,17 @@
      ],
      "oeuvre_unique": {
       "reference": "000PE023078",
-      "titre": "PORTRAIT DE LA FEMME DU DOGE GIUSTINANI"
+      "titre": "PORTRAIT DE LA FEMME DU DOGE GIUSTINANI",
+      "image": {
+       "statut": "restricted",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/000PE023078.jpg",
+       "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation © A. Danvers",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/000PE023078",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -14565,7 +16488,18 @@
      ],
      "oeuvre_unique": {
       "reference": "00000077344",
-      "titre": "MARS ET VENUS"
+      "titre": "MARS ET VENUS",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/00000077344.jpg",
+       "credit": "Own work",
+       "creator": "Sailko",
+       "licence": "CC BY-SA 3.0",
+       "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+       "source": "https://commons.wikimedia.org/wiki/File:Veronese,_marte_e_venere.JPG",
+       "verifie_le": "2026-08-06"
+      }
      }
     },
     {
@@ -14588,7 +16522,17 @@
      ],
      "oeuvre_unique": {
       "reference": "10500004947",
-      "titre": "Portrait de jeune femme"
+      "titre": "Portrait de jeune femme",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/10500004947.jpg",
+       "credit": "Giroud Jean-Claude ; Bouchayer Jean",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/10500004947",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -14634,7 +16578,18 @@
      ],
      "oeuvre_unique": {
       "reference": "03290005067",
-      "titre": "Vénus et Mars"
+      "titre": "Vénus et Mars",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/03290005067.jpg",
+       "credit": "Own work",
+       "creator": "Sailko",
+       "licence": "CC BY 3.0",
+       "licence_url": "https://creativecommons.org/licenses/by/3.0",
+       "source": "https://commons.wikimedia.org/wiki/File:Pietro_della_vecchia,_venere_e_marte,_1640_ca.jpg",
+       "verifie_le": "2026-08-06"
+      }
      }
     },
     {
@@ -14657,7 +16612,17 @@
      ],
      "oeuvre_unique": {
       "reference": "01370014322",
-      "titre": "La Vierge apparaissant à saint Antoine, saint Paul ermite, saint Paul et saint Pierre"
+      "titre": "La Vierge apparaissant à saint Antoine, saint Paul ermite, saint Paul et saint Pierre",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/01370014322.jpg",
+       "credit": "© Dijon, musée des beaux-arts",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/01370014322",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -14680,7 +16645,17 @@
      ],
      "oeuvre_unique": {
       "reference": "01760000021",
-      "titre": "Le Repas à Emmaüs"
+      "titre": "Le Repas à Emmaüs",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/01760000021.jpg",
+       "credit": "© Chaintreuil Laurent",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/01760000021",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     }
    ]
@@ -14807,7 +16782,17 @@
      ],
      "oeuvre_unique": {
       "reference": "00000068495",
-      "titre": "LE MARIAGE MYSTIQUE DE SAINTE CATHERINE"
+      "titre": "LE MARIAGE MYSTIQUE DE SAINTE CATHERINE",
+      "image": {
+       "statut": "restricted",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/00000068495.jpg",
+       "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation ; © René-Gabriel Ojéda",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/00000068495",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -14830,7 +16815,17 @@
      ],
      "oeuvre_unique": {
       "reference": "50350508137",
-      "titre": "UNE FEMME AVEC TROIS ENFANTS"
+      "titre": "UNE FEMME AVEC TROIS ENFANTS",
+      "image": {
+       "statut": "restricted",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/50350508137.jpg",
+       "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation © René-Gabriel Ojéda",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/50350508137",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -14853,7 +16848,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0491001006",
-      "titre": "Le martyre de Saint Jean l'Evangéliste"
+      "titre": "Le martyre de Saint Jean l'Evangéliste",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0491001006.jpg",
+       "credit": "© Ville de Perpignan. Musée d'art Hyacinthe Rigaud - Pascale Marchesan",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0491001006",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -14876,7 +16881,17 @@
      ],
      "oeuvre_unique": {
       "reference": "03290005058",
-      "titre": "Jésus guérissant un aveugle"
+      "titre": "Jésus guérissant un aveugle",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/03290005058.jpg",
+       "credit": "© Edith Weigel",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/03290005058",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     }
    ]
@@ -15371,7 +17386,17 @@
      ],
      "oeuvre_unique": {
       "reference": "07430005637",
-      "titre": "Paysage animé"
+      "titre": "Paysage animé",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/07430005637.jpg",
+       "credit": "Alain Guillard",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/07430005637",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -15394,7 +17419,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0350002026",
-      "titre": "Paysage avec pêcheurs"
+      "titre": "Paysage avec pêcheurs",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0350002026.jpg",
+       "credit": "© musée de la Lunette",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0350002026",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -15417,7 +17452,17 @@
      ],
      "oeuvre_unique": {
       "reference": "10310026673",
-      "titre": "Paysage avec bergers"
+      "titre": "Paysage avec bergers",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/10310026673.jpg",
+       "credit": "© Image © Lyon MBA – Photo Louis Houdus",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/10310026673",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -15440,7 +17485,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0381001606",
-      "titre": "Paysage italien"
+      "titre": "Paysage italien",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0381001606.jpg",
+       "credit": "© château musée de Nemours",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0381001606",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -15463,7 +17518,18 @@
      ],
      "oeuvre_unique": {
       "reference": "08940004481",
-      "titre": "Paysage d'Italie avec un berger et diverses figures vêtues à l'antique"
+      "titre": "Paysage d'Italie avec un berger et diverses figures vêtues à l'antique",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/08940004481.jpg",
+       "credit": "Own work , Tylwyth Eldar , 2024-03-09 13:59:51",
+       "creator": "Attributed to Gaspard Dughet",
+       "licence": "Public domain",
+       "licence_url": "",
+       "source": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_Granet_-_Paysage_d%27Italie_avec_un_berger_et_diverses_figures_v%C3%AAtues_%C3%A0_l%27antique.jpg",
+       "verifie_le": "2026-08-06"
+      }
      }
     }
    ]
@@ -15706,7 +17772,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0710000210",
-      "titre": "Le duc de Parme vient au secours de la ville de Rouen, 10 mai 1592"
+      "titre": "Le duc de Parme vient au secours de la ville de Rouen, 10 mai 1592",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0710000210.jpg",
+       "credit": "© E. Marelle",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0710000210",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-08-12"
+      }
      }
     }
    ]
@@ -15888,7 +17964,17 @@
      ],
      "oeuvre_unique": {
       "reference": "000PE023112",
-      "titre": "Joueur de flûte"
+      "titre": "Joueur de flûte",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/000PE023112.jpg",
+       "credit": "© Lysiane Gauthier",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/000PE023112",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -15911,7 +17997,17 @@
      ],
      "oeuvre_unique": {
       "reference": "06070000115",
-      "titre": "Sainte Famille"
+      "titre": "Sainte Famille",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/06070000115.jpg",
+       "credit": "© Roumagnac Guy",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/06070000115",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -15934,7 +18030,17 @@
      ],
      "oeuvre_unique": {
       "reference": "10480007491",
-      "titre": "Le Jeu de la palette"
+      "titre": "Le Jeu de la palette",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/10480007491.jpg",
+       "credit": "Bouchayer, Giroud",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/10480007491",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -15957,7 +18063,17 @@
      ],
      "oeuvre_unique": {
       "reference": "50110001194",
-      "titre": "Le petit montreur de singe savant"
+      "titre": "Le petit montreur de singe savant",
+      "image": {
+       "statut": "restricted",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/50110001194.jpg",
+       "credit": "© Thierry Le Mage ; © Réunion des musées nationaux - utilisation soumise à autorisation",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/50110001194",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -15980,7 +18096,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0536001628",
-      "titre": "Le Coche d’eau (recto) ; Personnage de dos drapé d’une cape (verso)"
+      "titre": "Le Coche d’eau (recto) ; Personnage de dos drapé d’une cape (verso)",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0536001628.jpg",
+       "credit": "© Claude Philippot",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0536001628",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -16003,7 +18129,17 @@
      ],
      "oeuvre_unique": {
       "reference": "04450000713",
-      "titre": "La délivrance de saint Pierre"
+      "titre": "La délivrance de saint Pierre",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/04450000713.jpg",
+       "credit": "© PAITRAULT Angélique",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/04450000713",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     }
    ]
@@ -16208,7 +18344,17 @@
      ],
      "oeuvre_unique": {
       "reference": "01370001106",
-      "titre": "Portrait d'homme"
+      "titre": "Portrait d'homme",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/01370001106.jpg",
+       "credit": "Jay",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/01370001106",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -16231,7 +18377,18 @@
      ],
      "oeuvre_unique": {
       "reference": "06070000081",
-      "titre": "Portrait d'homme"
+      "titre": "Portrait d'homme",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/06070000081.jpg",
+       "credit": "Musée Ingres [1]",
+       "creator": "Attributed to Corneille de Lyon",
+       "licence": "Public domain",
+       "licence_url": "",
+       "source": "https://commons.wikimedia.org/wiki/File:Corneille_de_Lyon_-_Portrait_d%27homme_-_Mus%C3%A9e_Ingres.jpg",
+       "verifie_le": "2026-08-06"
+      }
      }
     },
     {
@@ -16254,7 +18411,18 @@
      ],
      "oeuvre_unique": {
       "reference": "05120007536",
-      "titre": "Portrait d'homme à la barbe grisonnante"
+      "titre": "Portrait d'homme à la barbe grisonnante",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/05120007536.jpg",
+       "credit": "Musée des Beaux-Arts de Nancy [1]",
+       "creator": "Corneille de Lyon",
+       "licence": "Public domain",
+       "licence_url": "",
+       "source": "https://commons.wikimedia.org/wiki/File:Corneille_de_Lyon_-_Portrait_d%27homme_-_Inv_758_MBA_Nancy.jpg",
+       "verifie_le": "2026-08-06"
+      }
      }
     },
     {
@@ -16277,7 +18445,17 @@
      ],
      "oeuvre_unique": {
       "reference": "06190023766",
-      "titre": "Portrait de Catherine de Médicis"
+      "titre": "Portrait de Catherine de Médicis",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/06190023766.jpg",
+       "credit": "",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/06190023766",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     }
    ]
@@ -16398,7 +18576,17 @@
      ],
      "oeuvre_unique": {
       "reference": "50520000014",
-      "titre": "Présentation de la Vierge au temple ; croquis au verso"
+      "titre": "Présentation de la Vierge au temple ; croquis au verso",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/50520000014.jpg",
+       "credit": "© Lynda Frénois",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/50520000014",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -16421,7 +18609,17 @@
      ],
      "oeuvre_unique": {
       "reference": "07480012396",
-      "titre": "La Vierge et l'Enfant ; La Vierge et l'Enfant avec sainte Anne (Ancien titre)"
+      "titre": "La Vierge et l'Enfant ; La Vierge et l'Enfant avec sainte Anne (Ancien titre)",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/07480012396.jpg",
+       "credit": "© P David ; © Angers, musées d'Angers",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/07480012396",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -16444,7 +18642,17 @@
      ],
      "oeuvre_unique": {
       "reference": "01760000025",
-      "titre": "Saint Hyacinthe sauvant la statue de la Vierge"
+      "titre": "Saint Hyacinthe sauvant la statue de la Vierge",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/01760000025.jpg",
+       "credit": "© Chaintreuil Laurent",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/01760000025",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     }
    ]
@@ -16537,7 +18745,17 @@
      ],
      "oeuvre_unique": {
       "reference": "05620000495",
-      "titre": "Le poulailler"
+      "titre": "Le poulailler",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/05620000495.jpg",
+       "credit": "DELORME",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/05620000495",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-08-12"
+      }
      }
     }
    ]
@@ -16617,7 +18835,17 @@
      ],
      "oeuvre_unique": {
       "reference": "50170009530",
-      "titre": "Hugo Grotius"
+      "titre": "Hugo Grotius",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/50170009530.jpg",
+       "credit": "© Jean-Yves Chermeux",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/50170009530",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-08-12"
+      }
      }
     }
    ]
@@ -17004,7 +19232,17 @@
      ],
      "oeuvre_unique": {
       "reference": "000PE009022",
-      "titre": "SAINT JEAN L'EVANGELISTE A PATMOS"
+      "titre": "SAINT JEAN L'EVANGELISTE A PATMOS",
+      "image": {
+       "statut": "restricted",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/000PE009022.jpg",
+       "credit": "© D. Arnaudet ; G. Blot ; Réunion des musées nationaux - utilisation soumise à autorisation",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/000PE009022",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -17027,7 +19265,17 @@
      ],
      "oeuvre_unique": {
       "reference": "50130000415",
-      "titre": "Portrait d'homme vêtu de noir"
+      "titre": "Portrait d'homme vêtu de noir",
+      "image": {
+       "statut": "restricted",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/50130000415.jpg",
+       "credit": "Réunion des musées nationaux - utilisation soumise à autorisation",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/50130000415",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -17050,7 +19298,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0332002913",
-      "titre": "Copie d'après une statue antique de Junon (recto) ; plusieurs études d'une figure casquée et esquisse d'un homme debout (verso)"
+      "titre": "Copie d'après une statue antique de Junon (recto) ; plusieurs études d'une figure casquée et esquisse d'un homme debout (verso)",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0332002913.jpg",
+       "credit": "© GUENAT Pierre",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0332002913",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     }
    ]
@@ -17377,7 +19635,18 @@
      ],
      "oeuvre_unique": {
       "reference": "000PE000384",
-      "titre": "PORTRAIT D'HOMME ; DIT AUTREFOIS PORTRAIT DU DUC DE ROANNEZ"
+      "titre": "PORTRAIT D'HOMME ; DIT AUTREFOIS PORTRAIT DU DUC DE ROANNEZ",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/000PE000384.jpg",
+       "credit": "Own work",
+       "creator": "Didier Descouens",
+       "licence": "Public domain",
+       "licence_url": "",
+       "source": "https://commons.wikimedia.org/wiki/File:(Agen)_Portrait_d%27Etienne_Delafons_-_Philippe_de_Champaigne_-_Mus%C3%A9e_des_Beaux-Arts_d%27Agen.jpg",
+       "verifie_le": "2026-08-06"
+      }
      }
     },
     {
@@ -17423,7 +19692,17 @@
      ],
      "oeuvre_unique": {
       "reference": "07840001197",
-      "titre": "Cardinal de Richelieu (Paris, 1585 - 1642)"
+      "titre": "Cardinal de Richelieu (Paris, 1585 - 1642)",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/07840001197.jpg",
+       "credit": "musée Jean de La Fontaine de Château-Thierry",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/07840001197",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -17446,7 +19725,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0271000337",
-      "titre": "Allégorie à la Providence royale"
+      "titre": "Allégorie à la Providence royale",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0271000337.jpg",
+       "credit": "© Château de Blois / F. Lauginie, 2008",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0271000337",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -17492,7 +19781,17 @@
      ],
      "oeuvre_unique": {
       "reference": "03110000287",
-      "titre": "Portrait de Nicolas Hénin de Cuvillers (titre attribué)"
+      "titre": "Portrait de Nicolas Hénin de Cuvillers (titre attribué)",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/03110000287.jpg",
+       "credit": "© Christian DEVLEESCHAUWER",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/03110000287",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     }
    ]
@@ -17755,7 +20054,18 @@
      ],
      "oeuvre_unique": {
       "reference": "000PE023498",
-      "titre": "Sainte Famille avec le petit Saint Jean-Baptiste et Saint François d'Assise"
+      "titre": "Sainte Famille avec le petit Saint Jean-Baptiste et Saint François d'Assise",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/000PE023498.jpg",
+       "credit": "Own work , Tylwyth Eldar , 2024-10-30 11:51:07",
+       "creator": "Workshop of Giorgio Vasari",
+       "licence": "Public domain",
+       "licence_url": "",
+       "source": "https://commons.wikimedia.org/wiki/File:Bordeaux_-_Sainte_Famille_avec_le_petit_saint_Jean-Baptiste_et_saint_Fran%C3%A7ois_d%27Assise_02.jpg",
+       "verifie_le": "2026-08-06"
+      }
      }
     },
     {
@@ -17778,7 +20088,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0457000885",
-      "titre": "Sans désignation"
+      "titre": "Sans désignation",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0457000885.jpg",
+       "credit": "© Musée des Beaux-arts, Nîmes",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0457000885",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     }
    ]
@@ -17995,7 +20315,17 @@
      ],
      "oeuvre_unique": {
       "reference": "01720000218",
-      "titre": "Partie de la Ville de Mascon"
+      "titre": "Partie de la Ville de Mascon",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/01720000218.jpg",
+       "credit": "© Musées de Mâcon",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/01720000218",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-08-12"
+      }
      }
     }
    ]
@@ -18069,7 +20399,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0537070475",
-      "titre": "Die drei Sprachen. N°= 1030. (titre inscrit all.) ; les trois langues (titre factice)"
+      "titre": "Die drei Sprachen. N°= 1030. (titre inscrit all.) ; les trois langues (titre factice)",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0537070475.jpg",
+       "credit": "musée de l'Image - Ville d'Épinal / cliché H. Rouyer",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0537070475",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-08-12"
+      }
      }
     }
    ]
@@ -18295,7 +20635,18 @@
      ],
      "oeuvre_unique": {
       "reference": "000PE009869",
-      "titre": "PORTRAIT DE FAMILLE ; DIT AUTREFOIS MICHEL GERARD, MEMBRE DE L ASSEMBLEE NATIONALE EN 1789, ET SA FAMILLE"
+      "titre": "PORTRAIT DE FAMILLE ; DIT AUTREFOIS MICHEL GERARD, MEMBRE DE L ASSEMBLEE NATIONALE EN 1789, ET SA FAMILLE",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/000PE009869.jpg",
+       "credit": "http://1.bp.blogspot.com/_A8XgY7cWYaI/TMMWhyvA6oI/AAAAAAAAGfY/Xqtyo3r88Hc/s1600/Famille-lemans.JPG",
+       "creator": "Circle of Jacques-Louis David",
+       "licence": "Public domain",
+       "licence_url": "",
+       "source": "https://commons.wikimedia.org/wiki/File:Le_conventionnel_Michel_G%C3%A9rard_et_sa_famille.jpg",
+       "verifie_le": "2026-08-06"
+      }
      }
     },
     {
@@ -18318,7 +20669,17 @@
      ],
      "oeuvre_unique": {
       "reference": "000PE011119",
-      "titre": "CAMILLE DESMOULINS, SA FEMME LUCILE ET LEUR FILS ?"
+      "titre": "CAMILLE DESMOULINS, SA FEMME LUCILE ET LEUR FILS ?",
+      "image": {
+       "statut": "restricted",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/000PE011119.jpg",
+       "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/000PE011119",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-08-12"
+      }
      }
     },
     {
@@ -18341,7 +20702,17 @@
      ],
      "oeuvre_unique": {
       "reference": "000PE022029",
-      "titre": "LE TESTAMENT D'EUDAMIDAS"
+      "titre": "LE TESTAMENT D'EUDAMIDAS",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/000PE022029.jpg",
+       "credit": "© Lysiane Gauthier",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/000PE022029",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-08-12"
+      }
      }
     },
     {
@@ -18364,7 +20735,17 @@
      ],
      "oeuvre_unique": {
       "reference": "000PE029798",
-      "titre": "PORTRAIT DU DOCTEUR DELZEUZE ENFANT"
+      "titre": "PORTRAIT DU DOCTEUR DELZEUZE ENFANT",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/000PE029798.jpg",
+       "credit": "RMN-Grand Palais",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/000PE029798",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-08-12"
+      }
      }
     },
     {
@@ -18387,7 +20768,17 @@
      ],
      "oeuvre_unique": {
       "reference": "00000060782",
-      "titre": "PORTRAIT PRESUME DE MME DE CARAMAN-CHIMAY (EX TALLIEN)"
+      "titre": "PORTRAIT PRESUME DE MME DE CARAMAN-CHIMAY (EX TALLIEN)",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/00000060782.jpg",
+       "credit": "RMN-Grand Palais",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/00000060782",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-08-12"
+      }
      }
     },
     {
@@ -18410,7 +20801,17 @@
      ],
      "oeuvre_unique": {
       "reference": "10480007470",
-      "titre": "Portrait de petite fille"
+      "titre": "Portrait de petite fille",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/10480007470.jpg",
+       "credit": "Bouchayer, Giroud",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/10480007470",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-08-12"
+      }
      }
     },
     {
@@ -18433,7 +20834,17 @@
      ],
      "oeuvre_unique": {
       "reference": "000PE024447",
-      "titre": "Portrait de Napoléon"
+      "titre": "Portrait de Napoléon",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/000PE024447.jpg",
+       "credit": "© musée de la Roche-sur-Yon",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/000PE024447",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-08-12"
+      }
      }
     },
     {
@@ -18456,7 +20867,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0289002529",
-      "titre": "Tête de vieillard barbu de trois quarts face vers la droite."
+      "titre": "Tête de vieillard barbu de trois quarts face vers la droite.",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0289002529.jpg",
+       "credit": "© Matthieu Dussauge ; © musée d'Art et d'Histoire - Pithiviers",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0289002529",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-08-12"
+      }
      }
     },
     {
@@ -18479,7 +20900,17 @@
      ],
      "oeuvre_unique": {
       "reference": "09630004568",
-      "titre": "Mort d'Hector ; Mort de Germanicus (titre ancien erroné)"
+      "titre": "Mort d'Hector ; Mort de Germanicus (titre ancien erroné)",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/09630004568.jpg",
+       "credit": "© Alain Basset",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/09630004568",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-08-12"
+      }
      }
     },
     {
@@ -18525,7 +20956,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0352002998",
-      "titre": "Etude faite sous le premier Empire, tête de guerrier"
+      "titre": "Etude faite sous le premier Empire, tête de guerrier",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0352002998.jpg",
+       "credit": "© Musée de la Grande Saline, Salins-les-Bains ; Justine Sève",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0352002998",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-08-12"
+      }
      }
     },
     {
@@ -18548,7 +20989,17 @@
      ],
      "oeuvre_unique": {
       "reference": "04450000139",
-      "titre": "Le bon Samaritain"
+      "titre": "Le bon Samaritain",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/04450000139.jpg",
+       "credit": "© LEPAGE Jean",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/04450000139",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-08-12"
+      }
      }
     },
     {
@@ -18571,7 +21022,18 @@
      ],
      "oeuvre_unique": {
       "reference": "03110005074",
-      "titre": "La mort de Marat (titre attribué) ; Marat expirant (autre titre) ; Marat assassiné (autre titre)"
+      "titre": "La mort de Marat (titre attribué) ; Marat expirant (autre titre) ; Marat assassiné (autre titre)",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/03110005074.jpg",
+       "credit": "Musée des Beaux-Arts, Reims",
+       "creator": "Jacques-Louis David",
+       "licence": "Public domain",
+       "licence_url": "",
+       "source": "https://commons.wikimedia.org/wiki/File:DAVID_Jacques-Louis_(Atelier_de)_La_Mort_de_Marat_Huile_sur_toile.jpg",
+       "verifie_le": "2026-08-06"
+      }
      }
     }
    ]
@@ -18713,7 +21175,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0277002661",
-      "titre": "Portrait de jeune homme"
+      "titre": "Portrait de jeune homme",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0277002661.jpg",
+       "credit": "© Susana Pereira Tavares",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0277002661",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     }
    ]
@@ -18926,7 +21398,17 @@
      ],
      "oeuvre_unique": {
       "reference": "07430005686",
-      "titre": "Paysage historique"
+      "titre": "Paysage historique",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/07430005686.jpg",
+       "credit": "Alain Guillard",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/07430005686",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -18949,7 +21431,18 @@
      ],
      "oeuvre_unique": {
       "reference": "08120021739",
-      "titre": "Soldats jouant aux cartes dans un corps de gardes"
+      "titre": "Soldats jouant aux cartes dans un corps de gardes",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/08120021739.jpg",
+       "credit": "Crédit photo : Jeanneteau Marc Joconde Pop",
+       "creator": "Sébastien Bourdon",
+       "licence": "CC BY-SA 4.0",
+       "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+       "source": "https://commons.wikimedia.org/wiki/File:Bourdon_S%C3%A9bastien,_Soldat_jouant_aux_cartes_dans_un_corps_de_gardes,_vers_1640.jpg",
+       "verifie_le": "2026-08-06"
+      }
      }
     },
     {
@@ -19106,7 +21599,17 @@
      ],
      "oeuvre_unique": {
       "reference": "06070000172",
-      "titre": "Paysage avec chartreux"
+      "titre": "Paysage avec chartreux",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/06070000172.jpg",
+       "credit": "© Roumagnac Guy",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/06070000172",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -19129,7 +21632,17 @@
      ],
      "oeuvre_unique": {
       "reference": "07430007264",
-      "titre": "Paysage avec deux moines"
+      "titre": "Paysage avec deux moines",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/07430007264.jpg",
+       "credit": "C. CLOS",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/07430007264",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -19152,7 +21665,17 @@
      ],
      "oeuvre_unique": {
       "reference": "01550000959",
-      "titre": "Le repos de la Sainte Famille"
+      "titre": "Le repos de la Sainte Famille",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/01550000959.jpg",
+       "credit": "© Michenet",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/01550000959",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -19175,7 +21698,17 @@
      ],
      "oeuvre_unique": {
       "reference": "07480012416",
-      "titre": "Combat de cavalerie"
+      "titre": "Combat de cavalerie",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/07480012416.jpg",
+       "credit": "© P David ; © Angers, musées d'Angers",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/07480012416",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -19198,7 +21731,17 @@
      ],
      "oeuvre_unique": {
       "reference": "02110002278",
-      "titre": "La mort de Saphira"
+      "titre": "La mort de Saphira",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/02110002278.jpg",
+       "credit": "© Jean-Manuel Salingue",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/02110002278",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -19221,7 +21764,18 @@
      ],
      "oeuvre_unique": {
       "reference": "M0457000323",
-      "titre": "Abel mort ; La mort d'Abel"
+      "titre": "Abel mort ; La mort d'Abel",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/M0457000323.jpg",
+       "credit": "Own work , Finoskov , 2017-01-14 16:25:03",
+       "creator": "Pier Francesco Mola",
+       "licence": "Public domain",
+       "licence_url": "",
+       "source": "https://commons.wikimedia.org/wiki/File:N%C3%AEmes,Beaux_Arts169,Mort_d%27Abel.jpg",
+       "verifie_le": "2026-08-06"
+      }
      }
     },
     {
@@ -19244,7 +21798,17 @@
      ],
      "oeuvre_unique": {
       "reference": "09940008544",
-      "titre": "Baptême du Christ"
+      "titre": "Baptême du Christ",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/09940008544.jpg",
+       "credit": "© Ville de Grenoble / Musée de Grenoble-J.L. Lacroix",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/09940008544",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     }
    ]
@@ -19495,7 +22059,17 @@
      ],
      "oeuvre_unique": {
       "reference": "50110000611",
-      "titre": "Portrait du général Jacquin"
+      "titre": "Portrait du général Jacquin",
+      "image": {
+       "statut": "restricted",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/50110000611.jpg",
+       "credit": "© R.G. Ojéda ; © Réunion des musées nationaux - utilisation soumise à autorisation",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/50110000611",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -19518,7 +22092,17 @@
      ],
      "oeuvre_unique": {
       "reference": "50350036918",
-      "titre": "Portrait d'Evariste Parny"
+      "titre": "Portrait d'Evariste Parny",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/50350036918.jpg",
+       "credit": "© Musée du Louvre, M. Beck-Coppola",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/50350036918",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -19541,7 +22125,17 @@
      ],
      "oeuvre_unique": {
       "reference": "10480001058",
-      "titre": "Portrait de jeune homme"
+      "titre": "Portrait de jeune homme",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/10480001058.jpg",
+       "credit": "Bouchayer",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/10480001058",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -19564,7 +22158,17 @@
      ],
      "oeuvre_unique": {
       "reference": "04000006641",
-      "titre": "Arrestation de Charlotte Corday"
+      "titre": "Arrestation de Charlotte Corday",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/04000006641.jpg",
+       "credit": "© Dufrene Gérard",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/04000006641",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -19587,7 +22191,17 @@
      ],
      "oeuvre_unique": {
       "reference": "07290021901",
-      "titre": "La promenade aux Tuileries"
+      "titre": "La promenade aux Tuileries",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/07290021901.jpg",
+       "credit": "Carole Loisel ; Catherine Lancien",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/07290021901",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -19610,7 +22224,17 @@
      ],
      "oeuvre_unique": {
       "reference": "01840000132",
-      "titre": "Le marquis de Louvois"
+      "titre": "Le marquis de Louvois",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/01840000132.jpg",
+       "credit": "musées d'Auxerre",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/01840000132",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -19633,7 +22257,18 @@
      ],
      "oeuvre_unique": {
       "reference": "03110041532",
-      "titre": "Ah ! Le Voilà ! ; Le chien commissionnaire"
+      "titre": "Ah ! Le Voilà ! ; Le chien commissionnaire",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/03110041532.jpg",
+       "credit": "Musée des Beaux-Arts, Reims",
+       "creator": "Henri Nicolas van Gorp (c.1756-1820) (Attribué à)",
+       "licence": "Public domain",
+       "licence_url": "",
+       "source": "https://commons.wikimedia.org/wiki/File:VAN_GORP_Henri_Nicolas_(Attribu%C3%A9_%C3%A0)_Ah_!_Le_Voil%C3%A0_!_Huile_sur_toile.jpg",
+       "verifie_le": "2026-08-06"
+      }
      }
     },
     {
@@ -19656,7 +22291,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0332000855",
-      "titre": "Portrait de jeune homme"
+      "titre": "Portrait de jeune homme",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0332000855.jpg",
+       "credit": "© GUENAT Pierre",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0332000855",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     }
    ]
@@ -19847,7 +22492,17 @@
      ],
      "oeuvre_unique": {
       "reference": "000PE026574",
-      "titre": "PAYSAGE"
+      "titre": "PAYSAGE",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/000PE026574.jpg",
+       "credit": "RMN-Grand Palais",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/000PE026574",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -19870,7 +22525,17 @@
      ],
      "oeuvre_unique": {
       "reference": "50350508085",
-      "titre": "HUIT CHIENS DANS UN PAYSAGE"
+      "titre": "HUIT CHIENS DANS UN PAYSAGE",
+      "image": {
+       "statut": "restricted",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/50350508085.jpg",
+       "credit": "© Réunion des musées nationaux - utilisation soumise à autorisation © Gérard Blot",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/50350508085",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -19893,7 +22558,18 @@
      ],
      "oeuvre_unique": {
       "reference": "00650013590",
-      "titre": "Comédiens italiens dans un parc"
+      "titre": "Comédiens italiens dans un parc",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/00650013590.jpg",
+       "credit": "Own work",
+       "creator": "Tylwyth Eldar",
+       "licence": "CC BY-SA 4.0",
+       "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+       "source": "https://commons.wikimedia.org/wiki/File:Atelier_de_Jean-Baptiste_Oudry_-_Com%C3%A9diens_italiens_dans_un_parc_02.jpg",
+       "verifie_le": "2026-08-06"
+      }
      }
     },
     {
@@ -19916,7 +22592,17 @@
      ],
      "oeuvre_unique": {
       "reference": "04240000024",
-      "titre": "Portrait de Madame du Laurent"
+      "titre": "Portrait de Madame du Laurent",
+      "image": {
+       "statut": "restricted",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/04240000024.jpg",
+       "credit": "© Mathieu Lombard (utilisation soumise à autorisation)",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/04240000024",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -19939,7 +22625,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0810004977",
-      "titre": "Tête de loup"
+      "titre": "Tête de loup",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0810004977.jpg",
+       "credit": "© Musées de Senlis",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0810004977",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     }
    ]
@@ -20196,7 +22892,17 @@
      ],
      "oeuvre_unique": {
       "reference": "000PE001687",
-      "titre": "LE PRESIDENT DE LAMOIGNON (1617-1677)"
+      "titre": "LE PRESIDENT DE LAMOIGNON (1617-1677)",
+      "image": {
+       "statut": "restricted",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/000PE001687.jpg",
+       "credit": "Réunion des musées nationaux - utilisation soumise à autorisation",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/000PE001687",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -20219,7 +22925,17 @@
      ],
      "oeuvre_unique": {
       "reference": "000PE013909",
-      "titre": "PORTRAIT D'UN GENTILHOMME"
+      "titre": "PORTRAIT D'UN GENTILHOMME",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/000PE013909.jpg",
+       "credit": "RMN-Grand Palais",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/000PE013909",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -20242,7 +22958,18 @@
      ],
      "oeuvre_unique": {
       "reference": "000PE016248",
-      "titre": "PORTRAIT DE JEUNE DAME"
+      "titre": "PORTRAIT DE JEUNE DAME",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/000PE016248.jpg",
+       "credit": "Own work , Robert Valette , 2010-01-30",
+       "creator": "Attributed to Nicolas de Largillière",
+       "licence": "CC BY-SA 4.0",
+       "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+       "source": "https://commons.wikimedia.org/wiki/File:Femme_en_buste_par_Largilli%C3%A8re.jpg",
+       "verifie_le": "2026-08-06"
+      }
      }
     },
     {
@@ -20265,7 +22992,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0347001435",
-      "titre": "Portrait d'homme à mi-corps"
+      "titre": "Portrait d'homme à mi-corps",
+      "image": {
+       "statut": "restricted",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0347001435.jpg",
+       "credit": "© Jean -Loup Mathieu (Eurêka) ; studio Chechillot ; Catherine Scheck - utilisation soumise à autorisation",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0347001435",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -20288,7 +23025,17 @@
      ],
      "oeuvre_unique": {
       "reference": "07430005647",
-      "titre": "Portrait de Jacques II Stuart, roi d'Ecosse"
+      "titre": "Portrait de Jacques II Stuart, roi d'Ecosse",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/07430005647.jpg",
+       "credit": "Alain Guillard",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/07430005647",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -20311,7 +23058,18 @@
      ],
      "oeuvre_unique": {
       "reference": "05620001274",
-      "titre": "Thomyris reine des Massagètes ; Thomyris, reine des Massagetes fait plonger la tête de Cyrus dans un vase rempli de sang"
+      "titre": "Thomyris reine des Massagètes ; Thomyris, reine des Massagetes fait plonger la tête de Cyrus dans un vase rempli de sang",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/05620001274.jpg",
+       "credit": "https://www.pop.culture.gouv.fr/notice/joconde/05620001274",
+       "creator": "Nicolas de Largillière",
+       "licence": "Public domain",
+       "licence_url": "",
+       "source": "https://commons.wikimedia.org/wiki/File:Largilli%C3%A8re_-_Thomyris_reine_des_Massag%C3%A8tes,_1718_vers.jpg",
+       "verifie_le": "2026-08-06"
+      }
      }
     },
     {
@@ -20334,7 +23092,17 @@
      ],
      "oeuvre_unique": {
       "reference": "07150000274",
-      "titre": "Portrait présumé du peintre Jean-Baptiste Jouvenet"
+      "titre": "Portrait présumé du peintre Jean-Baptiste Jouvenet",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/07150000274.jpg",
+       "credit": "",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/07150000274",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     }
    ]
@@ -20502,7 +23270,17 @@
      ],
      "oeuvre_unique": {
       "reference": "06380000486",
-      "titre": "Paysage avec Tobie et l'Ange"
+      "titre": "Paysage avec Tobie et l'Ange",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/06380000486.jpg",
+       "credit": "© Claude Thériez",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/06380000486",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -20525,7 +23303,17 @@
      ],
      "oeuvre_unique": {
       "reference": "02110003533",
-      "titre": "Paysage"
+      "titre": "Paysage",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/02110003533.jpg",
+       "credit": "© Jean-Manuel Salingue",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/02110003533",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -20548,7 +23336,17 @@
      ],
      "oeuvre_unique": {
       "reference": "05620001288",
-      "titre": "Paysage"
+      "titre": "Paysage",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/05620001288.jpg",
+       "credit": "",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/05620001288",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -20571,7 +23369,17 @@
      ],
      "oeuvre_unique": {
       "reference": "50110001601",
-      "titre": "Paysage avec cours d'eau et figures diverses"
+      "titre": "Paysage avec cours d'eau et figures diverses",
+      "image": {
+       "statut": "restricted",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/50110001601.jpg",
+       "credit": "© Réunion des musées nationaux-Grand Palais (musée Magnin) / Stéphane Maréchalle ; utilisation soumise à autorisation",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/50110001601",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     }
    ]
@@ -20786,7 +23594,18 @@
      ],
      "oeuvre_unique": {
       "reference": "00980000808",
-      "titre": "Saint Jérôme"
+      "titre": "Saint Jérôme",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/00980000808.jpg",
+       "credit": "Own work , Tylwyth Eldar , 2018-10-29 15:27:59",
+       "creator": "Jusepe de Ribera",
+       "licence": "Public domain",
+       "licence_url": "",
+       "source": "https://commons.wikimedia.org/wiki/File:Jusepe_de_Ribera_-_Saint_J%C3%A9r%C3%B4me.jpg",
+       "verifie_le": "2026-08-06"
+      }
      }
     },
     {
@@ -20809,7 +23628,17 @@
      ],
      "oeuvre_unique": {
       "reference": "06070000233",
-      "titre": "Saint Jérôme lisant"
+      "titre": "Saint Jérôme lisant",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/06070000233.jpg",
+       "credit": "© Roumagnac Guy",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/06070000233",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -20832,7 +23661,18 @@
      ],
      "oeuvre_unique": {
       "reference": "M0332001175",
-      "titre": "Philosophe ou Architecte ; Héraclite (?)"
+      "titre": "Philosophe ou Architecte ; Héraclite (?)",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/M0332001175.jpg",
+       "credit": "Œuvre appartenant au Musée des Beaux Arts de Besançon",
+       "creator": "Jusepe de Ribera (attrib.)",
+       "licence": "Public domain",
+       "licence_url": "",
+       "source": "https://commons.wikimedia.org/wiki/File:L%27Architecte_-_Jusepe_de_Ribera_-_MBAB_896.1.119.jpg",
+       "verifie_le": "2026-08-06"
+      }
      }
     },
     {
@@ -20878,7 +23718,18 @@
      ],
      "oeuvre_unique": {
       "reference": "01840000081",
-      "titre": "Une fileuse"
+      "titre": "Une fileuse",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/01840000081.jpg",
+       "credit": "https://www.pop.culture.gouv.fr/notice/joconde/01840000081",
+       "creator": "Attributed to Jusepe de Ribera",
+       "licence": "Public domain",
+       "licence_url": "",
+       "source": "https://commons.wikimedia.org/wiki/File:Ribera_(attribu%C3%A9)_-_Une_fileuse,_1835.1.10_;_835.1.10.jpg",
+       "verifie_le": "2026-08-06"
+      }
      }
     },
     {
@@ -20901,7 +23752,17 @@
      ],
      "oeuvre_unique": {
       "reference": "07700010824",
-      "titre": "Saint Jean l'Evangéliste ; Saint Jean écrivant l'Apocalypse"
+      "titre": "Saint Jean l'Evangéliste ; Saint Jean écrivant l'Apocalypse",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/07700010824.jpg",
+       "credit": "",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/07700010824",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -20924,7 +23785,17 @@
      ],
      "oeuvre_unique": {
       "reference": "04450000800",
-      "titre": "Mendiant recroquevillé"
+      "titre": "Mendiant recroquevillé",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/04450000800.jpg",
+       "credit": "© Photographer:Fouinoflex",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/04450000800",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -20947,7 +23818,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0381002079",
-      "titre": "Portrait d'homme"
+      "titre": "Portrait d'homme",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0381002079.jpg",
+       "credit": "© François Lauginie",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0381002079",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -20970,7 +23851,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0536000515",
-      "titre": "Saint Jérôme et l’ange sonnant la trompette du Jugement dernier"
+      "titre": "Saint Jérôme et l’ange sonnant la trompette du Jugement dernier",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0536000515.jpg",
+       "credit": "© Claude Philippot",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0536000515",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     }
    ]
@@ -21085,7 +23976,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0289002516",
-      "titre": "Evêque drapé avec un aigle à ses pieds (titre factice)"
+      "titre": "Evêque drapé avec un aigle à ses pieds (titre factice)",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0289002516.jpg",
+       "credit": "© Matthieu Dussauge ; © musée d'Art et d'Histoire - Pithiviers",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0289002516",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -21108,7 +24009,17 @@
      ],
      "oeuvre_unique": {
       "reference": "01610001107",
-      "titre": "Vierge à l'Enfant"
+      "titre": "Vierge à l'Enfant",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/01610001107.jpg",
+       "credit": "Stéphane Prost",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/01610001107",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -21131,7 +24042,17 @@
      ],
      "oeuvre_unique": {
       "reference": "06570008170",
-      "titre": "Le Christ au tombeau ; Déploration sur le corps du Christ"
+      "titre": "Le Christ au tombeau ; Déploration sur le corps du Christ",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/06570008170.jpg",
+       "credit": "Musée des Beaux-Arts de Caen, cliché Martine Seyve",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/06570008170",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     }
    ]
@@ -21221,7 +24142,17 @@
      ],
      "oeuvre_unique": {
       "reference": "50510010862",
-      "titre": "Etude d'arbres"
+      "titre": "Etude d'arbres",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/50510010862.jpg",
+       "credit": "© service photographique de l'école nationale supérieure des beaux-arts",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/50510010862",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -21244,7 +24175,17 @@
      ],
      "oeuvre_unique": {
       "reference": "00650004285",
-      "titre": "Paysage"
+      "titre": "Paysage",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/00650004285.jpg",
+       "credit": "© Lysiane Gauthier",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/00650004285",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -21267,7 +24208,17 @@
      ],
      "oeuvre_unique": {
       "reference": "07120002024",
-      "titre": "Marine"
+      "titre": "Marine",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/07120002024.jpg",
+       "credit": "",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/07120002024",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -21290,7 +24241,17 @@
      ],
      "oeuvre_unique": {
       "reference": "01500000075",
-      "titre": "Marine : vue d'un port"
+      "titre": "Marine : vue d'un port",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/01500000075.jpg",
+       "credit": "© Pierre Plattier, Clamecy, Musée d'Art et d'Histoire Romain Rolland",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/01500000075",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     }
    ]
@@ -21411,7 +24372,17 @@
      ],
      "oeuvre_unique": {
       "reference": "00000055631",
-      "titre": "UN FAUCONNIER ; PAYSAN AU COQ"
+      "titre": "UN FAUCONNIER ; PAYSAN AU COQ",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/00000055631.jpg",
+       "credit": "",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/00000055631",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -21434,7 +24405,17 @@
      ],
      "oeuvre_unique": {
       "reference": "02110002354",
-      "titre": "La Messe des anges ; Croquis à la plume coloré, composition allégorique et indescriptible (titre ancien) ; Dessin allégorique (titre ancien)"
+      "titre": "La Messe des anges ; Croquis à la plume coloré, composition allégorique et indescriptible (titre ancien) ; Dessin allégorique (titre ancien)",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/02110002354.jpg",
+       "credit": "© Jean-Manuel Salingue",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/02110002354",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -21457,7 +24438,17 @@
      ],
      "oeuvre_unique": {
       "reference": "02860007456",
-      "titre": "Saint Pierre"
+      "titre": "Saint Pierre",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/02860007456.jpg",
+       "credit": "Orléans, musée des beaux-arts © cliché François LAUGINIE",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/02860007456",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -21480,7 +24471,17 @@
      ],
      "oeuvre_unique": {
       "reference": "03110042003",
-      "titre": "Tableau de dévotion"
+      "titre": "Tableau de dévotion",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/03110042003.jpg",
+       "credit": "© Christian DEVLEESCHAUWER",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/03110042003",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     }
    ]
@@ -21624,7 +24625,18 @@
      ],
      "oeuvre_unique": {
       "reference": "000PE019574",
-      "titre": "La Vierge et l'Enfant"
+      "titre": "La Vierge et l'Enfant",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/000PE019574.jpg",
+       "credit": "Own work",
+       "creator": "Workshop of Sandro Botticelli",
+       "licence": "Public domain",
+       "licence_url": "",
+       "source": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_botticelli_ecole_vierge_enfant.jpg",
+       "verifie_le": "2026-08-06"
+      }
      }
     },
     {
@@ -21647,7 +24659,18 @@
      ],
      "oeuvre_unique": {
       "reference": "00000077305",
-      "titre": "L'AUTOMNE OU ALLEGORIE CONTRE L'ABUS DU VIN"
+      "titre": "L'AUTOMNE OU ALLEGORIE CONTRE L'ABUS DU VIN",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/00000077305.jpg",
+       "credit": "Château de Chantilly (Oise) - Musée Condé - La Tribune , Patrick from Compiègne, France, 2012-10-28 13:33",
+       "creator": "Workshop of Sandro Botticelli",
+       "licence": "CC BY-SA 2.0",
+       "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+       "source": "https://commons.wikimedia.org/wiki/File:L%27Automne_-_Ch%C3%A2teau_de_Chantilly_(Oise)_-_Mus%C3%A9e_Cond%C3%A9_-_La_Tribune.jpg",
+       "verifie_le": "2026-08-06"
+      }
      }
     },
     {
@@ -21670,7 +24693,17 @@
      ],
      "oeuvre_unique": {
       "reference": "M0332002781",
-      "titre": "Étude pour Pétrarque"
+      "titre": "Étude pour Pétrarque",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/M0332002781.jpg",
+       "credit": "© GUENAT Pierre",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/M0332002781",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     }
    ]
@@ -21805,7 +24838,17 @@
      ],
      "oeuvre_unique": {
       "reference": "000PE023475",
-      "titre": "LE CHRIST ET LA FEMME ADULTERE"
+      "titre": "LE CHRIST ET LA FEMME ADULTERE",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/000PE023475.jpg",
+       "credit": "© C2RMF",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/000PE023475",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -21828,7 +24871,17 @@
      ],
      "oeuvre_unique": {
       "reference": "05620000355",
-      "titre": "Sainte Famille"
+      "titre": "Sainte Famille",
+      "image": {
+       "statut": "unknown",
+       "source_type": "pop_joconde",
+       "url": "oeuvres/05620000355.jpg",
+       "credit": "Bernard Delorme",
+       "licence": "",
+       "source": "https://pop.culture.gouv.fr/notice/joconde/05620000355",
+       "profil": "pop-800-75",
+       "verifie_le": "2026-07-29"
+      }
      }
     },
     {
@@ -21851,7 +24904,18 @@
      ],
      "oeuvre_unique": {
       "reference": "M0333000715",
-      "titre": "Portrait de Nicolas Perrenot de Granvelle"
+      "titre": "Portrait de Nicolas Perrenot de Granvelle",
+      "image": {
+       "statut": "open",
+       "source_type": "wikimedia_commons",
+       "url": "oeuvres/M0333000715.jpg",
+       "credit": "Time museum",
+       "creator": "Attributed to Titian",
+       "licence": "Public domain",
+       "licence_url": "",
+       "source": "https://commons.wikimedia.org/wiki/File:Le_Titien_(attribu%C3%A9_%C3%A0)_%E2%80%93_Portrait_de_Nicolas_Perrenot_de_Granvelle_%E2%80%93_Mus%C3%A9e_du_Temps,_Besan%C3%A7on.jpeg",
+       "verifie_le": "2026-08-06"
+      }
      }
     }
    ]

@@ -469,6 +469,11 @@ def test_main_place_pop_avant_les_sources_alternatives(tmp_path, monkeypatch):
     monkeypatch.setattr(bv, "CORRESP", correspondances)
     monkeypatch.setattr(bv, "INDEX", tmp_path / "images_index.json")
     monkeypatch.setattr(bv, "DOSSIER_IMG", tmp_path / "images")
+    # `main()` écrit dans des chemins de PRODUCTION : tout test qui l'appelle doit
+    # les détourner, sans exception. Sans cette ligne, la fusion dans artistes.json
+    # tournait sur le vrai export avec l'index vide de ce test, et en retirait les
+    # images des œuvres uniques de musée.
+    monkeypatch.setattr(bv, "ARTISTES", tmp_path / "artistes.json")
 
     ordre = []
     monkeypatch.setattr(
@@ -565,3 +570,96 @@ def test_absence_du_registre_pop_bloque_l_execution(atelier, tmp_path, monkeypat
     monkeypatch.setattr(bv, "REGISTRE_POP", tmp_path / "absent.json")
     with pytest.raises(FileNotFoundError, match="registre POP introuvable"):
         bv.ajouter_pop({})
+
+
+# --- enrichissement des œuvres uniques de musée (artistes.json) ----------------
+#
+# Le panneau « Musées » montre l'œuvre quand le musée n'en conserve qu'une. Son
+# image est recopiée dans artistes.json par le pipeline, et non lue à la volée
+# côté navigateur : l'index complet pèse près de 2 Mio, la page Artistes n'a pas
+# à le charger pour afficher au plus une vignette par panneau.
+
+IMG_A = {"statut": "unknown", "source_type": "pop_joconde",
+         "url": "oeuvres/REF-A.jpg", "credit": "© L. Gauthier", "licence": "",
+         "source": "https://pop.culture.gouv.fr/notice/joconde/REF-A",
+         "profil": "pop-800-75", "verifie_le": "2026-07-29"}
+
+
+def artistes_fictifs():
+    """Un corpus minimal : un musée à œuvre unique, un autre à plusieurs œuvres."""
+    return {"artistes": [{"nom": "Témoin", "musees_doute": [
+        {"code": "M1", "doute": 1, "oeuvre_unique": {"reference": "REF-A", "titre": "Bacchus"}},
+        {"code": "M2", "doute": 12},
+    ]}]}
+
+
+@pytest.fixture
+def corpus_artistes(tmp_path, monkeypatch):
+    chemin = tmp_path / "artistes.json"
+    chemin.write_text(json.dumps(artistes_fictifs(), ensure_ascii=False), encoding="utf-8")
+    monkeypatch.setattr(bv, "ARTISTES", chemin)
+    return chemin
+
+
+def lire(chemin):
+    return json.loads(chemin.read_text(encoding="utf-8"))["artistes"][0]["musees_doute"]
+
+
+def test_oeuvre_unique_recoit_son_image(corpus_artistes):
+    total = bv.fusionner_dans_artistes({"REF-A": IMG_A})
+    assert total == 1
+    assert lire(corpus_artistes)[0]["oeuvre_unique"]["image"] == IMG_A
+
+
+def test_metadonnees_recopiees_sans_reformulation(corpus_artistes):
+    """L'entrée doit être IDENTIQUE à celle de l'index : même crédit, même
+    licence vide, même statut. Rien n'est recalculé au passage."""
+    bv.fusionner_dans_artistes({"REF-A": IMG_A})
+    assert lire(corpus_artistes)[0]["oeuvre_unique"]["image"] == IMG_A
+
+
+def test_reference_absente_de_l_index_reste_sans_image(corpus_artistes):
+    """Les 77 œuvres uniques sans reproduction : aucune clé `image`, donc aucun
+    cadre vide à afficher."""
+    assert bv.fusionner_dans_artistes({}) == 0
+    assert "image" not in lire(corpus_artistes)[0]["oeuvre_unique"]
+
+
+def test_image_obsolete_est_retiree(corpus_artistes):
+    bv.fusionner_dans_artistes({"REF-A": IMG_A})
+    assert "image" in lire(corpus_artistes)[0]["oeuvre_unique"]
+    bv.fusionner_dans_artistes({})          # la référence a quitté l'index
+    assert "image" not in lire(corpus_artistes)[0]["oeuvre_unique"]
+
+
+def test_musee_a_plusieurs_oeuvres_reste_intouche(corpus_artistes):
+    bv.fusionner_dans_artistes({"REF-A": IMG_A})
+    multi = lire(corpus_artistes)[1]
+    assert "oeuvre_unique" not in multi
+    assert "image" not in multi
+
+
+def test_doute_incoherent_n_est_pas_enrichi(tmp_path, monkeypatch):
+    """Garde-fou : une `oeuvre_unique` sur un musée dont `doute` n'est pas 1
+    serait une donnée contradictoire. On ne l'illustre pas."""
+    chemin = tmp_path / "artistes.json"
+    chemin.write_text(json.dumps({"artistes": [{"nom": "X", "musees_doute": [
+        {"code": "M3", "doute": 4, "oeuvre_unique": {"reference": "REF-A", "titre": "T"}}]}]},
+        ensure_ascii=False), encoding="utf-8")
+    monkeypatch.setattr(bv, "ARTISTES", chemin)
+    assert bv.fusionner_dans_artistes({"REF-A": IMG_A}) == 0
+    assert "image" not in lire(chemin)[0]["oeuvre_unique"]
+
+
+def test_execution_reproductible(corpus_artistes):
+    """Rejouer le pipeline sans changement ne doit rien réécrire : le second
+    passage compte zéro enrichissement et le fichier reste identique."""
+    bv.fusionner_dans_artistes({"REF-A": IMG_A})
+    avant = corpus_artistes.read_bytes()
+    assert bv.fusionner_dans_artistes({"REF-A": IMG_A}) == 0
+    assert corpus_artistes.read_bytes() == avant
+
+
+def test_fichier_absent_ne_fait_pas_echouer(tmp_path, monkeypatch):
+    monkeypatch.setattr(bv, "ARTISTES", tmp_path / "inexistant.json")
+    assert bv.fusionner_dans_artistes({"REF-A": IMG_A}) == 0

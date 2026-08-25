@@ -17,7 +17,29 @@
 	import { base } from '$app/paths';
 	import { nombre, lienPop } from '$lib/joconde.js';
 	import { FAMILLE_PUBLIC } from '$lib/familles-public.js';
+	import CreditImage from '$lib/CreditImage.svelte';
+	import LightboxOeuvre from '$lib/LightboxOeuvre.svelte';
 	import { estProjetable, creerProjection, creerChemin, normaliserFond, ecarterPoints } from '$lib/geo.js';
+
+	// Agrandissement de la vignette du panneau (2026-08-25). MÊME composant que
+	// l'onglet « Œuvres » : la lightbox, son piège à focus, sa fermeture au clavier
+	// et son crédit vivent à un seul endroit. On n'ouvre que des images déjà
+	// retenues par le pipeline et déjà servies localement.
+	// `ouvreurAgrandi` retient la vignette d'où l'on vient, pour lui rendre le
+	// focus à la fermeture — sans quoi le clavier repartirait du haut de la page.
+	let agrandie = $state(null);
+	let ouvreurAgrandi = null;
+
+	function agrandir(oeuvre, event) {
+		ouvreurAgrandi = event?.currentTarget ?? null;
+		agrandie = oeuvre;
+	}
+
+	function refermerAgrandi() {
+		agrandie = null;
+		ouvreurAgrandi?.focus();
+		ouvreurAgrandi = null;
+	}
 
 	// `onVoirOeuvres(code)` remonte à la page le musée choisi : elle pose le filtre
 	// et bascule sur l'onglet « Œuvres ». La carte ne filtre rien elle-même — il n'y
@@ -203,6 +225,12 @@
 	}
 
 	function auClavierPage(event) {
+		// La lightbox ouverte GARDE Échap pour elle (2026-08-25). Sans ce test, une
+		// seule frappe fermait l'agrandissement ET le panneau du musée : le lecteur
+		// qui referme le zoom perdait la fiche qu'il était en train de lire, et le
+		// focus repartait sur le point de la carte au lieu de revenir à la vignette.
+		// La lightbox se ferme elle-même sur Échap ; la carte n'a rien à y ajouter.
+		if (agrandie) return;
 		if (choisi && event.key === 'Escape') {
 			event.preventDefault();
 			fermerPanneau();
@@ -238,6 +266,41 @@
 			<p class="panneau-compte">{concernees(musee.doute)}</p>
 			{#if musee.oeuvreUnique?.titre}
 				<p class="oeuvre-unique">{musee.oeuvreUnique.titre}</p>
+			{/if}
+			<!-- Reproduction de l'œuvre, quand le musée n'en conserve qu'UNE et qu'elle
+			     est illustrée (2026-08-25). Elle relie le point géographique à ce qu'il
+			     représente : le panneau montre l'œuvre au lieu de seulement la nommer.
+			     Rien n'est ajouté dans les autres cas — un musée à plusieurs œuvres n'a
+			     pas d'œuvre unique à montrer, et une œuvre sans reproduction ne reçoit
+			     PAS de cadre vide : un emplacement gris n'apprend rien et alourdit un
+			     panneau qui doit rester bref.
+			     L'image vient de `oeuvre_unique.image`, recopiée dans artistes.json par
+			     le pipeline. Le front ne charge pas l'index des 5 516 entrées (1,8 Mio)
+			     pour afficher au plus une vignette. -->
+			{#if musee.oeuvreUnique?.image}
+				{@const oeuvre = musee.oeuvreUnique}
+				{@const autre = oeuvre.image.exemplaire_autre === true}
+				<figure class="vignette-figure">
+					<!-- Bouton et non lien : l'agrandissement est une action locale. Le
+					     lien vers la source reste dans le crédit, où l'exige l'attribution. -->
+					<button
+						class="vignette"
+						type="button"
+						onclick={(e) => agrandir(oeuvre, e)}
+						aria-label="Agrandir la reproduction : {oeuvre.titre ?? 'œuvre'}"
+					>
+						<img
+							src="{base}/{oeuvre.image.url}"
+							alt={autre
+								? `Autre exemplaire du même tirage : ${oeuvre.titre ?? 'œuvre'}`
+								: `Reproduction : ${oeuvre.titre ?? 'œuvre'}`}
+							loading="lazy"
+						/>
+					</button>
+					<figcaption>
+						<CreditImage image={oeuvre.image} />
+					</figcaption>
+				</figure>
 			{/if}
 			<ul class="panneau-mentions">
 				{#each musee.lignes as l (l.label)}
@@ -319,7 +382,14 @@
 			<!-- Panneau du musée choisi : le seul endroit où vivent les liens. Il
 			     remplace la légende tant qu'un musée est choisi. -->
 			{#if musee}
-				<div class="panneau-desktop">{@render panneauMusee()}</div>
+				<!-- `illustre` élargit LÉGÈREMENT le panneau, et lui seul : la grille et
+				     donc la carte ne bougent pas, les points ne se déplacent pas au clic.
+				     Le gain est pris dans la gouttière existante (var(--espace-6) = 2,5rem),
+				     à moitié seulement, pour qu'aucun chevauchement ne soit possible. Les
+				     panneaux sans image gardent exactement leur largeur actuelle. -->
+				<div class="panneau-desktop" class:illustre={musee.oeuvreUnique?.image}>
+					{@render panneauMusee()}
+				</div>
 			{:else}
 				<!-- Aucun musée choisi : ce que le point représente, et ce qu'on peut en
 				     faire. Plus de mode d'emploi du survol — il n'affiche plus rien. -->
@@ -361,6 +431,13 @@
 		</p>
 	{/if}
 </figure>
+
+<!-- Agrandissement : même composant que l'onglet « Œuvres », posé HORS de la
+     <figure> car il se place en position fixe sur toute la fenêtre. Il n'ouvre
+     que l'image déjà affichée en vignette ; il ne va rien chercher ailleurs. -->
+{#if agrandie}
+	<LightboxOeuvre oeuvre={agrandie} fermer={refermerAgrandi} />
+{/if}
 
 <style>
 	/* Direction B : la carte occupe l'espace. Plus de colonne bornée à 32 rem —
@@ -454,6 +531,17 @@
 			background: rgba(255, 253, 249, 0.95);
 			box-shadow: 0 0.45rem 1.25rem rgba(43, 30, 20, 0.16);
 		}
+
+		/* Le panneau illustré défile : la bulle garde sa taille, la vignette ne
+		   repousse donc ni « Voir l'œuvre », ni le lien POP, ni la croix de
+		   fermeture — qui reste dans l'en-tête, atteignable en remontant.
+		   Le plafond passe à 22 rem pour qu'une image et une action tiennent
+		   ensemble dans le premier écran de la bulle, sans jamais dépasser la
+		   hauteur disponible. */
+		.popup-mobile .panneau-musee:has(.vignette) {
+			max-height: min(22rem, calc(100dvh - 6rem));
+		}
+
 	}
 
 	svg {
@@ -548,6 +636,61 @@
 		border: 1px solid var(--couleur-trait);
 		border-radius: var(--rayon-s);
 		overflow: hidden;
+	}
+
+	/* --- Reproduction de l'œuvre unique (2026-08-25) -------------------------
+	   Présence assumée mais bornée : assez grande pour qu'on reconnaisse l'œuvre,
+	   assez petite pour que le panneau reste un panneau et non une fiche d'œuvre.
+	   La hauteur est plafonnée plutôt que fixée : une image très verticale ne
+	   pousse pas les mentions et les actions hors de vue.
+	   `contain` sur un fond neutre : proportions gardées, jamais de rognage ni de
+	   déformation, quel que soit le format d'origine. */
+	.vignette-figure {
+		margin: var(--espace-3) 0 0;
+	}
+
+	.vignette {
+		display: block;
+		width: 100%;
+		padding: 0;
+		border: 1px solid var(--couleur-trait);
+		border-radius: var(--rayon-s);
+		background: var(--surface-entete);
+		cursor: zoom-in;
+		overflow: hidden;
+	}
+
+	.vignette img {
+		display: block;
+		width: 100%;
+		max-height: 11rem;
+		object-fit: contain;
+		transition: transform 160ms ease;
+	}
+
+	/* Signe d'agrandissement au survol, identique à celui de l'onglet « Œuvres » :
+	   l'image avance très légèrement, rien ne se déplace autour. */
+	.vignette:hover img,
+	.vignette:focus-visible img {
+		transform: scale(1.02);
+	}
+
+	.vignette:focus-visible {
+		outline: var(--focus-anneau);
+		outline-offset: 2px;
+	}
+
+	.vignette-figure figcaption {
+		margin-top: 0.35rem;
+	}
+
+	/* Le panneau illustré gagne un peu de largeur, PRIS DANS LA GOUTTIÈRE, jamais
+	   sur la carte : la grille `.agencement` n'est pas touchée, donc la projection
+	   et les points restent immobiles quand on choisit un musée. La moitié de la
+	   gouttière seulement, pour qu'aucun chevauchement ne soit possible. */
+	.panneau-desktop.illustre {
+		width: calc(100% + var(--espace-5));
+		margin-left: calc(-1 * var(--espace-5));
 	}
 
 	/* En-tête : le nom, la ville dessous, la croix au coin. Le filet le sépare du
@@ -817,6 +960,14 @@
 	/* La bulle mobile garde le même contenu que le panneau latéral, mais resserré
 	   pour rester un détail lié au point et non une fenêtre dans la fenêtre. */
 	@media (max-width: 720px) {
+		/* Image plus basse dans la bulle : elle reste identifiable sans manger la
+		   place des actions. Cette règle vit ICI, et non dans le premier bloc
+		   mobile plus haut : celui-ci précède la déclaration de `.vignette img`,
+		   et à spécificité égale c'est la dernière déclarée qui l'emporte. */
+		.vignette img {
+			max-height: 8rem;
+		}
+
 		.popup-mobile .panneau-entete {
 			position: sticky;
 			top: 0;
