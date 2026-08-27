@@ -16,10 +16,16 @@
 	// déclencheur. Le focus est RÉEL sur chaque option (tabindex -1 + focus()),
 	// plutôt qu'un `aria-activedescendant` : moins d'état à tenir, et le navigateur
 	// fait défiler la liste tout seul.
-	import { oeuvres as motOeuvres } from '$lib/joconde.js';
+	import { oeuvres as motOeuvres, musees as motMusees } from '$lib/joconde.js';
 
-	// musees : [{ code, nom, ville, n }] · total : œuvres toutes provenances
+	// musees : [{ code, nom, ville, n }] — déjà bornés au périmètre courant par
+	// l'appelant · total : œuvres de ce périmètre, toutes provenances
 	// valeur : code Muséofile ou null · choisir : (code|null) => void
+	//
+	// Le composant ne filtre toujours rien : il reçoit une liste et un total, il
+	// les affiche. Depuis le 2026-08-27 cette liste suit la mention active, ce qui
+	// ne change rien ici sinon le libellé de la première option, qui dit désormais
+	// combien de musées elle lève.
 	let { musees, total, valeur = null, choisir } = $props();
 
 	let ouvert = $state(false);
@@ -27,13 +33,25 @@
 	let declencheur = $state(null);
 	let liste = $state(null);
 
-	// « Tous les musées » est une option comme les autres, en tête.
+	// « Tous les musées » est une option comme les autres, en tête. Elle porte le
+	// nombre de musées du périmètre — l'accord (« 1 musée » / « 12 musées ») passe
+	// par joconde.js, jamais par un `${n} musées` brut.
 	const options = $derived([
-		{ code: null, nom: 'Tous les musées', ville: '', n: total },
+		{ code: null, nom: 'Tous les musées', ville: '', n: total, combien: musees.length },
 		...musees
 	]);
 	const courant = $derived(options.find((o) => o.code === valeur) ?? options[0]);
-	const libelle = (o) => (o.ville ? `${o.nom}, ${o.ville}` : o.nom);
+	// Nom affiché : « musée, ville » pour un établissement, « Tous les musées (12) »
+	// pour l'option générale.
+	const libelle = (o) =>
+		o.code === null ? `${o.nom} (${o.combien})` : o.ville ? `${o.nom}, ${o.ville}` : o.nom;
+
+	// Libellé accessible : l'option générale annonce ses deux nombres en toutes
+	// lettres, la parenthèse ne se lisant pas d'elle-même.
+	const libelleAccessible = (o) =>
+		o.code === null
+			? `${o.nom}, ${motMusees(o.combien)}, ${motOeuvres(o.n)}`
+			: `${libelle(o)}, ${motOeuvres(o.n)}`;
 
 	function ouvrir() {
 		ouvert = true;
@@ -107,6 +125,7 @@
 		bind:this={declencheur}
 		aria-haspopup="listbox"
 		aria-expanded={ouvert}
+		aria-label="Musée : {libelleAccessible(courant)}"
 		onclick={() => (ouvert ? fermer() : ouvrir())}
 		onkeydown={auClavierDeclencheur}
 	>
@@ -131,7 +150,7 @@
 					aria-selected={o.code === valeur}
 					class:choisi={o.code === valeur}
 					class:tous={o.code === null}
-					aria-label="{libelle(o)}, {motOeuvres(o.n)}"
+					aria-label={libelleAccessible(o)}
 					onclick={() => prendre(o.code)}
 				>
 					<!-- La coche double la graisse et le fond : l'état choisi ne repose

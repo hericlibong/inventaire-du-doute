@@ -2,6 +2,45 @@
 
 Chaque décision est datée et motivée. Les plus récentes en haut.
 
+## 2026-08-27 — Onglet Œuvres : les deux commandes de filtre se répondent
+
+Dans l'onglet **Œuvres** de la page Artistes, les puces de formulation filtraient bien la
+liste, mais le menu des musées continuait d'être calculé sur la totalité des œuvres de
+l'artiste. Chez Charles Le Brun, choisir « Attribué à » ramenait la liste à 52 œuvres pendant
+que le menu proposait toujours ses 19 musées avec les effectifs des 310. La commande annonçait
+donc un périmètre différent de la liste qu'elle est censée filtrer — et le lecteur pouvait
+choisir un musée qui ne conserve rien de cette formulation.
+
+**Chaque commande est désormais calculée dans le contexte de l'autre**, jamais sur le résultat
+final :
+
+- le **menu des musées** voit les œuvres de la formulation active, sans le musée actif : il ne
+  propose que les musées concernés, avec leur effectif dans ce périmètre ;
+- les **puces de formulation** voient les œuvres du musée actif, sans la formulation active
+  (comportement déjà en place, conservé) ;
+- la **liste affichée** est l'intersection des deux choix.
+
+Enchaîner les deux filtres l'un derrière l'autre aurait fait qu'un filtre se masque lui-même :
+une fois un musée choisi, il serait resté le seul proposé.
+
+**L'option générale du menu dit maintenant ce qu'elle lève** : « Tous les musées (10) —
+52 œuvres ». Les deux nombres viennent des données ; l'accord (« 1 musée » / « 12 musées »,
+« 1 œuvre » / « 52 œuvres ») passe par les fonctions de `joconde.js`, et le libellé accessible
+énonce les deux nombres en toutes lettres, la parenthèse ne se lisant pas d'elle-même. Une
+œuvre sans code Muséofile reste comptée dans le total, mais ne crée aucune entrée de musée.
+
+**Compatibilité entre les deux choix** : changer de formulation garde le musée s'il conserve au
+moins une œuvre de cette formulation, sinon le musée revient à « Tous les musées » plutôt que
+de laisser une liste vide. Le bouton « Toutes » ne retire que la formulation ; « Retirer ce
+filtre » et le retour au périmètre complet fonctionnent comme avant.
+
+Les trois périmètres sont écrits dans un module de fonctions pures,
+`web/src/lib/filtres-oeuvres.js`, testé (`web/tests/filtres-oeuvres.test.js`) : c'est le seul
+endroit où le croisement est décidé. `ChoixMusee.svelte` reste une surface d'affichage — il
+reçoit une liste et un total, il ne filtre rien. L'état `museeActif` partagé avec la carte, le
+chargement à la demande, l'ordre des œuvres, la pagination et son recentrage, le clavier et le
+rendu mobile sont inchangés.
+
 ## 2026-08-24 — « Le projet » suit le parcours du lecteur, pas celui de la fabrication
 
 La page présentait **l'utilité du projet après les sections méthodologiques** : il fallait

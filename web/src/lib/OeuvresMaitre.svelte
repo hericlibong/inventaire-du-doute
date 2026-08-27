@@ -7,6 +7,12 @@
 	import { lienPop } from '$lib/joconde.js';
 	import { FAMILLE_PUBLIC, ORDRE_FAMILLES } from '$lib/familles-public.js';
 	import { fenetrePagination } from '$lib/pagination.js';
+	import {
+		regrouperMusees,
+		filtrerParFamille,
+		filtrerParMusee,
+		museeCompatible
+	} from '$lib/filtres-oeuvres.js';
 
 	// Onglet « Œuvres » (refonte 2026-07-28) : la TOTALITÉ des œuvres concernées
 	// par le maître, pas quelques exemples. Le fichier oeuvres/<slug>.json est
@@ -105,38 +111,30 @@
 		})
 	);
 
-	// Menu des musées : ceux qui conservent au moins une œuvre concernée de CET
-	// artiste, jamais les autres. Effectif à côté du nom, tri par valeur
-	// décroissante (CLAUDE.md), départage alphabétique pour que l'ordre soit
-	// stable. La liste se refait toute seule quand l'artiste change, puisqu'elle
-	// dérive du fichier chargé.
-	const musees = $derived(
-		Object.values(
-			oeuvres.reduce((acc, o) => {
-				if (!o.musee_code) return acc;
-				const m = (acc[o.musee_code] ??= {
-					code: o.musee_code,
-					nom: o.musee,
-					ville: o.ville,
-					n: 0
-				});
-				m.n += 1;
-				return acc;
-			}, {})
-		).sort((a, b) => b.n - a.n || (a.nom ?? '').localeCompare(b.nom ?? '', 'fr'))
-	);
+	// Tous les musées qui conservent au moins une œuvre concernée de CET artiste,
+	// jamais les autres. Sert de garde-fou (un code venu d'ailleurs ne doit pas
+	// vider la liste en silence) et décide de l'affichage même de la commande. La
+	// liste se refait toute seule quand l'artiste change, puisqu'elle dérive du
+	// fichier chargé.
+	const tousMusees = $derived(regrouperMusees(oeuvres));
 
-	// Le musée choisi, s'il concerne bien l'artiste affiché (garde-fou : un code
-	// venu d'ailleurs ne doit pas vider la liste en silence).
-	const musee = $derived(musees.find((m) => m.code === museeActif) ?? null);
+	// Le musée choisi, s'il concerne bien l'artiste affiché.
+	const musee = $derived(tousMusees.find((m) => m.code === museeActif) ?? null);
 
-	// DEUX FILTRES EMBOÎTÉS, dans cet ordre : le musée d'abord, la mention ensuite.
-	// C'est ce qui permet aux puces de mention d'annoncer un nombre exact — une
+	// DEUX FILTRES CROISÉS, chacun calculé dans le contexte de l'autre
+	// (filtres-oeuvres.js). Le menu des musées voit les œuvres de la mention
+	// active ; les puces de mention voient les œuvres du musée actif. Chaque
+	// commande annonce donc des nombres exacts pour le geste qu'elle propose — une
 	// puce « attribué à 276 » qui ne rendrait que 3 œuvres une fois un musée choisi
-	// serait un chiffre faux (CLAUDE.md : toute quantité affichée doit être lisible).
-	const oeuvresMusee = $derived(
-		musee ? oeuvres.filter((o) => o.musee_code === musee.code) : oeuvres
-	);
+	// serait un chiffre faux (CLAUDE.md : toute quantité affichée doit être
+	// lisible), et un menu qui proposerait 19 musées quand la mention n'en concerne
+	// que 10 le serait tout autant.
+	const oeuvresFamille = $derived(filtrerParFamille(oeuvres, familleActive));
+	const oeuvresMusee = $derived(filtrerParMusee(oeuvres, musee?.code ?? null));
+
+	// Menu des musées : ceux, et seulement ceux, présents dans la mention active,
+	// avec leur effectif dans ce périmètre.
+	const musees = $derived(regrouperMusees(oeuvresFamille));
 
 	// Puces de filtre : « Toutes » puis les mentions PRÉSENTES dans le périmètre
 	// courant, ordre public, avec leur effectif. Les mentions absentes ne
@@ -153,9 +151,8 @@
 		];
 	});
 
-	const oeuvresFiltrees = $derived(
-		familleActive ? oeuvresMusee.filter((o) => o.code === familleActive) : oeuvresMusee
-	);
+	// Liste affichée : l'intersection des deux choix.
+	const oeuvresFiltrees = $derived(filtrerParFamille(oeuvresMusee, familleActive));
 	const nbFiltre = $derived(oeuvresFiltrees.length);
 	const nbPages = $derived(Math.max(1, Math.ceil(nbFiltre / PAR_PAGE)));
 	// Bornes de la tranche affichée (la page est déjà remise à 1 aux changements).
@@ -173,9 +170,14 @@
 		hautListe?.focus({ preventScroll: true });
 	}
 
+	// Changer de mention garde le musée sélectionné s'il conserve au moins une
+	// œuvre de cette mention ; sinon il revient à « Tous les musées », faute de
+	// quoi la liste serait vide sans raison lisible. « Toutes » (code null) ne
+	// retire QUE la mention : un musée choisi reste choisi.
 	function choisirFamille(code) {
 		if (familleActive === code) return;
 		familleActive = code;
+		if (!museeCompatible(oeuvres, museeActif, code)) museeActif = null;
 		page = 1;
 		versHautListe();
 	}
@@ -187,10 +189,7 @@
 		const suivant = code || null;
 		if (museeActif === suivant) return;
 		museeActif = suivant;
-		const restantes = new Set(
-			(suivant ? oeuvres.filter((o) => o.musee_code === suivant) : oeuvres).map((o) => o.code)
-		);
-		if (familleActive && !restantes.has(familleActive)) familleActive = null;
+		if (!museeCompatible(oeuvres, suivant, familleActive)) familleActive = null;
 		page = 1;
 		versHautListe();
 	}
@@ -242,12 +241,15 @@
 		     cet artiste, chacun avec son effectif. La liste native a été remplacée le
 		     2026-08-08 par ChoixMusee : même geste, même fonction `choisirMusee`,
 		     mais une surface qui appartient à la page au lieu du gris du système. -->
-		{#if musees.length > 1 || musee}
+		{#if tousMusees.length > 1 || musee}
 			<div class="filtre-musee">
 				<span class="etiquette-musee" id="etiquette-musee">Musée</span>
+				<!-- Le menu ne propose que les musées de la mention active, avec leurs
+				     effectifs dans ce périmètre ; « Tous les musées » annonce combien de
+				     musées et combien d'œuvres ce périmètre représente. -->
 				<ChoixMusee
 					{musees}
-					total={oeuvres.length}
+					total={oeuvresFamille.length}
 					valeur={museeActif}
 					choisir={(code) => choisirMusee(code)}
 				/>
