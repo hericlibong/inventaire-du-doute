@@ -119,10 +119,13 @@
 			Les Musées ne connaissent pas toujours avec certitude les auteur.e.s des oeuvres qu'ils accrochent sur leurs murs.
 		</p>
 		<p class="ouverture-texte">
-			La base de données "Joconde", le catalogue en ligne des collections des musées de France, permet de donner aux visiteurs des préciseuses indications sur l'incertitude.
+			La base de données "<a
+				href="https://www.data.gouv.fr/fr/datasets/collections-des-musees-de-france-base-joconde/"
+				target="_blank"
+				rel="noopener">Joconde</a>", le catalogue en ligne des collections des musées de France, permet de donner aux visiteurs des préciseuses indications sur l'incertitude.
 		</p>
 		<p class="ouverture-texte">
-			C'est de là que viennent les expressions comme « attribué à », « atelier de » ou « école de » ... que l'on voit sur les fiches.
+			C'est de là que viennent les expressions comme « attribué à », « atelier de » ou « école de » que l'on voit sur les fiches.
 		</p>
 		<p class="ouverture-texte">
 			La version sur laquelle nous avons travaillé ici réunit plus d'un million de fiches d'oeuvres ou d'ensembles d'oeuvres.
