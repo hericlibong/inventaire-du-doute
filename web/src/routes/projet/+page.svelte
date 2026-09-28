@@ -102,8 +102,7 @@
 	<!-- OUVERTURE : deux blocs séparés, deux questions. Le premier pose le sujet,
 	     présente Joconde et situe la réserve dans la version analysée de la base.
 	     Le second dit quels artistes ce volet retient et à quelles conditions.
-	     Le taux et les effectifs viennent des exports : rien n'est écrit en dur,
-	     à la seule exception du seuil, en toutes lettres (voir la section). -->
+	     Le texte d’introduction est repris du fichier fourni par l’utilisateur. -->
 	<div class="grille">
 	<!-- Le bandeau de titre est la PREMIÈRE section du sommaire. Il vit DANS la
 	     grille depuis le 2026-08-05, en tête de la colonne de contenu : la page n'a
@@ -116,34 +115,23 @@
 	<header class="tete" id="le-projet" tabindex="-1">
 		<p class="kicker">Volume 1 — Autour des maîtres</p>
 		<h1>Qu'est-ce que L'inventaire du doute&nbsp;?</h1>
-		<!-- Ouverture réécrite le 2026-08-24, sur le texte de l'utilisateur, repris tel
-		     quel. Ce qu'elle remplace se définissait d'abord comme « un site éditorial et
-		     interactif » et parlait de « notices d'œuvres d'art » : en présentation, ces
-		     deux formules ont bloqué la compréhension avant même que le sujet soit posé.
-		     L'ouverture énonce maintenant le sujet — les musées ne savent pas toujours
-		     qui a créé une œuvre —, puis l'ampleur, puis ce que le projet en fait.
-		     Le lien porte sur le seul mot « Joconde », et la base est présentée comme le
-		     catalogue en ligne des collections des musées de France.
-		     Les deux chiffres restent lus dans les exports, jamais écrits en dur ; ni eux
-		     ni leur calcul ne bougent. -->
 		<p class="ouverture-texte">
-			Les musées ne savent pas toujours avec certitude qui a créé une œuvre. Dans
-			<a
-				href="https://www.data.gouv.fr/fr/datasets/collections-des-musees-de-france-base-joconde/"
-				target="_blank"
-				rel="noopener">Joconde</a>, le catalogue en ligne des collections des musées de France,
-			ils utilisent des expressions comme « attribué à », « atelier de » ou
-			« école de » pour le signaler.
+			Les Musées ne connaissent pas toujours avec certitude les auteur.e.s des oeuvres qu'ils accrochent sur leurs murs.
 		</p>
 		<p class="ouverture-texte">
-			La version étudiée réunit plus d'un million de fiches décrivant des œuvres ou des
-			ensembles. <strong>{nombre(niveaux.doute_total)}</strong> d'entre elles, soit
-			<strong>{tauxDoute}&nbsp;%</strong>, comportent une réserve sur l'auteur.
+			La base de données "Joconde", le catalogue en ligne des collections des musées de France, permet de donner aux visiteurs des préciseuses indications sur l'incertitude.
 		</p>
 		<p class="ouverture-texte">
-			L'Inventaire du doute rassemble ces informations pour permettre d'explorer les œuvres
-			concernées, les artistes auxquels elles sont associées et les musées qui les conservent.
-			Il restitue ce que les musées ont publié sans chercher à trancher l'identité de l'auteur.
+			C'est de là que viennent les expressions comme « attribué à », « atelier de » ou « école de » ... que l'on voit sur les fiches.
+		</p>
+		<p class="ouverture-texte">
+			La version sur laquelle nous avons travaillé ici réunit plus d'un million de fiches d'oeuvres ou d'ensembles d'oeuvres.
+		</p>
+		<p class="ouverture-texte">
+			24 507 d'entre elles, soit 2,4 %, comportent une réserve sur l'auteur.
+		</p>
+		<p class="ouverture-texte">
+			L'objectif de l'inventaire du doute est donc de ressembler ces informations afin d'explorer les oeuvres concernées, les artistes auxquelles elles sont associées et les musées qui les conservent.
 		</p>
 	</header>
 
