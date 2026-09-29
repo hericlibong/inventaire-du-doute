@@ -153,7 +153,7 @@
 	<section class="ouverture" id="ce-volet" tabindex="-1">
 		<h2>Que présente ce premier volet&nbsp;?</h2>
 		<p class="ouverture-texte">
-			Pour ce premier volet, nous avons sélectionné les artistes dont le nom apparaît au moins dans 10 fiches qui comportent une réserve sur l'auteur, quelle que soit la formulation. Cela représente environ 6 081 fiches, soit environ 1/4 des fiches concernées.
+			Pour ce premier volet, nous avons sélectionné les artistes dont le nom apparaît au moins dans 10 fiches qui comportent une réserve sur l'auteur, quelle que soit la formulation. Cela représente 6 081 fiches, soit environ 1/4 des fiches concernées.
 		</p>
 		<p class="ouverture-texte">
 			Cette liste d'artistes n'est donc pas complète. D'autres noms pourront y être associés.
