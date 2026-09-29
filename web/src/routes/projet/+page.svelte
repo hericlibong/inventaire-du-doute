@@ -116,13 +116,13 @@
 		<p class="kicker">Volume 1 — Autour des maîtres</p>
 		<h1>Qu'est-ce que L'inventaire du doute&nbsp;?</h1>
 		<p class="ouverture-texte">
-			Les Musées ne connaissent pas toujours avec certitude les auteur.e.s des oeuvres qu'ils accrochent sur leurs murs.
+			Les musées ne connaissent pas toujours avec certitude les auteur.e.s des œuvres qu'ils accrochent sur leurs murs.
 		</p>
 		<p class="ouverture-texte">
 			La base de données "<a
 				href="https://www.data.gouv.fr/fr/datasets/collections-des-musees-de-france-base-joconde/"
 				target="_blank"
-				rel="noopener">Joconde</a>", le catalogue en ligne des collections des musées de France, permet de donner aux visiteurs des préciseuses indications sur l'incertitude.
+				rel="noopener">Joconde</a>", le catalogue en ligne des collections des musées de France, permet de donner aux visiteurs de précieuses indications sur l'incertitude.
 		</p>
 		<p class="ouverture-texte">
 			C'est de là que viennent les expressions comme « attribué à », « atelier de » ou « école de » que l'on voit sur les fiches.
@@ -153,14 +153,10 @@
 	<section class="ouverture" id="ce-volet" tabindex="-1">
 		<h2>Que présente ce premier volet&nbsp;?</h2>
 		<p class="ouverture-texte">
-			Ce premier volume est consacré aux artistes dont le nom apparaît dans au moins dix
-			fiches comportant une réserve sur l'auteur, une fois les différentes écritures
-			regroupées et les identités vérifiées. Les copies «&nbsp;d'après&nbsp;» sont comptées
-			séparément.
+			Pour ce premier volet, nous avons sélectionné les artistes dont le nom apparaît au moins dans 10 fiches qui comportent une réserve sur l'auteur, quelle que soit la formulation. Cela représente environ 6 081 fiches, soit environ 1/4 des fiches concernées.
 		</p>
 		<p class="ouverture-texte">
-			La liste est publiée progressivement&nbsp;: d'autres noms repérés restent encore à
-			examiner.
+			Cette liste d'artistes n'est donc pas complète. D'autres noms pourront y être associés.
 		</p>
 	</section>
 
